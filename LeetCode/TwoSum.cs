@@ -26,15 +26,11 @@ public static class TwoSum
 {
     public static int[] GetResult(int[] nums, int target)
     {
-        for (var indexA = 0; indexA < nums.Length; indexA++)
+        for (var i = 0; i < nums.Length; i++)
         {
-            var a = nums[indexA];
-
-            for (var indexB = indexA + 1; indexB < nums.Length; indexB++)
+            for (var j = i + 1; j < nums.Length; j++)
             {
-                var b = nums[indexB];
-
-                if (a + b == target) return new[] { indexA, indexB };
+                if (nums[i] + nums[j] == target) return new[] { i, j };
             }
         }
 
