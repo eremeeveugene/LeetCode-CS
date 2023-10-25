@@ -24,16 +24,40 @@
 /// </summary>
 public static class TwoSum
 {
+    /// <summary>
+    ///     Time complexity - O (n^2)
+    ///     Space complexity - O (n)
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <param name="target"></param>
+    /// <returns></returns>
     public static int[] GetResult(int[] nums, int target)
     {
         for (var i = 0; i < nums.Length; i++)
-        {
-            for (var j = i + 1; j < nums.Length; j++)
-            {
-                if (nums[i] + nums[j] == target) return new[] { i, j };
-            }
-        }
+        for (var j = i + 1; j < nums.Length; j++)
+            if (nums[i] + nums[j] == target)
+                return new[] { i, j };
 
-        throw new InvalidOperationException();
+        return Array.Empty<int>();
+    }
+
+    /// <summary>
+    ///     Time complexity - O (n)
+    ///     Space complexity - O (n)
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <param name="target"></param>
+    /// <returns></returns>
+    public static int[] GetResultDictionary(int[] nums, int target)
+    {
+        var dictionary = new Dictionary<int, int>();
+
+        for (var i = 0; i < nums.Length; i++)
+            if (dictionary.TryGetValue(target - nums[i], out var value))
+                return new[] { value, i };
+            else
+                dictionary.TryAdd(nums[i], i);
+
+        return Array.Empty<int>();
     }
 }
