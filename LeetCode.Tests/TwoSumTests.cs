@@ -10,8 +10,10 @@ public class TwoSumTests
     [DataRow(new[] { 2, 5, 5, 11 }, 10, new[] { 1, 2 })]
     public void GetResult_ReturnsExpectedIndicesForGivenTarget(int[] nums, int target, int[] expectedResult)
     {
+        // Act
         var actualResult = TwoSum.GetResult(nums, target);
 
+        // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
@@ -22,8 +24,10 @@ public class TwoSumTests
     [DataRow(new[] { 2, 5, 5, 11 }, 10, new[] { 1, 2 })]
     public void GetResultDictionary_ReturnsExpectedIndicesForGivenTarget(int[] nums, int target, int[] expectedResult)
     {
+        // Act
         var actualResult = TwoSum.GetResultDictionary(nums, target);
 
+        // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

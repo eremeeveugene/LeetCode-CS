@@ -6,12 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="LeetCode.sln.DotSettings" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\LeetCode.Core\LeetCode.Core.csproj" />
-  </ItemGroup>
-
 </Project>

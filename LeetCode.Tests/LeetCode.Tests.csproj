@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LeetCode.Core\LeetCode.Core.csproj" />
     <ProjectReference Include="..\LeetCode\LeetCode.csproj" />
   </ItemGroup>
 

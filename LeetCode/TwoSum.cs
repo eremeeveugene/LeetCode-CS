@@ -26,7 +26,6 @@ public static class TwoSum
 {
     /// <summary>
     ///     Time complexity - O (n^2)
-    ///     Space complexity - O (n)
     /// </summary>
     /// <param name="nums"></param>
     /// <param name="target"></param>
@@ -43,7 +42,6 @@ public static class TwoSum
 
     /// <summary>
     ///     Time complexity - O (n)
-    ///     Space complexity - O (n)
     /// </summary>
     /// <param name="nums"></param>
     /// <param name="target"></param>
