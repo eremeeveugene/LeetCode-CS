@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Tests;
+﻿using LeetCode.RomanToIntegerTask;
+
+namespace LeetCode.Tests;
 
 [TestClass]
 public class RomanToIntegerTests

@@ -1,3 +1,5 @@
+using LeetCode.TwoSumTask;
+
 namespace LeetCode.Tests;
 
 [TestClass]
