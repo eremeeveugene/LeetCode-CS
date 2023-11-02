@@ -1,6 +1,6 @@
-using LeetCode.TwoSumTask;
+using LeetCode.Algorithms.TwoSumTask;
 
-namespace LeetCode.Tests;
+namespace LeetCode.Tests.Algorithms;
 
 [TestClass]
 public class TwoSumTests

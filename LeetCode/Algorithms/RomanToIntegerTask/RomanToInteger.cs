@@ -1,4 +1,4 @@
-﻿namespace LeetCode.RomanToIntegerTask;
+﻿namespace LeetCode.Algorithms.RomanToIntegerTask;
 
 public static class RomanToInteger
 {

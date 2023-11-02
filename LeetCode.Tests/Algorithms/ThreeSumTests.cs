@@ -1,8 +1,8 @@
-﻿using LeetCode.Core;
-using LeetCode.ThreeSumTask;
+﻿using LeetCode.Algorithms.ThreeSumTask;
+using LeetCode.Core;
 using Newtonsoft.Json;
 
-namespace LeetCode.Tests;
+namespace LeetCode.Tests.Algorithms;
 
 [TestClass]
 public class ThreeSumTests
@@ -29,8 +29,8 @@ public class ThreeSumTests
 
         Assert.AreEqual(expectedResult!.Length, actualResult.Count);
         Assert.IsTrue(expectedSet.SetEquals(actualSet));
-    }  
-    
+    }
+
     [TestMethod]
     [DataRow(new[] { -1, 0, 1, 2, -1, -4 }, "[[-1, -1, 2], [-1, 0, 1]]")]
     [DataRow(new[] { 0, 1, 1 }, "[]")]

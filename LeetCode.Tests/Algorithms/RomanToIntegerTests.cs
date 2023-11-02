@@ -1,6 +1,6 @@
-﻿using LeetCode.RomanToIntegerTask;
+﻿using LeetCode.Algorithms.RomanToIntegerTask;
 
-namespace LeetCode.Tests;
+namespace LeetCode.Tests.Algorithms;
 
 [TestClass]
 public class RomanToIntegerTests

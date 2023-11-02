@@ -1,4 +1,4 @@
-﻿namespace LeetCode.RomanToIntegerTask;
+﻿namespace LeetCode.Algorithms.RomanToIntegerTask;
 
 internal class SubtractiveRomanNumeral : RomanNumeral
 {

@@ -1,4 +1,4 @@
-﻿namespace LeetCode.TwoSumTask;
+﻿namespace LeetCode.Algorithms.TwoSumTask;
 
 /// <summary>
 ///     Two Sum
