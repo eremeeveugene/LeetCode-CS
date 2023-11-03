@@ -24,8 +24,8 @@ namespace LeetCode.Algorithms.ThreeSumTask;
 ///     Output: [[0,0,0]]
 ///     Explanation: The only possible triplet sums up to 0.
 ///     Constraints:
-///     3 less than or equal nums.length less than or equal 3000
-///     -105 less than or equal nums[i] less than or equal 105
+///     3 less than or equal to nums.length less than or equal to 3000
+///     -105 less than or equal to nums[i] less than or equal to 105
 /// </summary>
 public static class ThreeSum
 {

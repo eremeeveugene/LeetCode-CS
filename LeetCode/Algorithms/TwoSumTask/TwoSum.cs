@@ -17,9 +17,9 @@
 ///     Input: nums = [3,3], target = 6
 ///     Output: [0,1]
 ///     Constraints:
-///     2 less than or equal nums.length less than or equal 10^4
-///     -10^9 less than or equal nums[i] less than or equal 10^9
-///     -10^9 less than or equal target less than or equal 10^9
+///     2 less than or equal to nums.length less than or equal to 10^4
+///     -10^9 less than or equal to nums[i] less than or equal to 10^9
+///     -10^9 less than or equal to target less than or equal to 10^9
 ///     Only one valid answer exists
 /// </summary>
 public static class TwoSum
