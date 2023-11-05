@@ -3,6 +3,8 @@
 namespace LeetCode.Algorithms.ThreeSumTask;
 
 /// <summary>
+///     Three Sum
+///     https://leetcode.com/problems/3sum/description/
 ///     Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k,
 ///     and j != k, and nums[i] + nums[j] + nums[k] == 0.
 ///     Notice that the solution set must not contain duplicate triplets.
@@ -39,10 +41,10 @@ public static class ThreeSum
         var arraysWithDuplicates = new List<IList<int>>();
 
         for (var i = 0; i < nums.Length - 2; i++)
-            for (var j = i + 1; j < nums.Length - 1; j++)
-                for (var k = j + 1; k < nums.Length; k++)
-                    if (nums[i] + nums[j] + nums[k] == 0)
-                        arraysWithDuplicates.Add(new[] { nums[i], nums[j], nums[k] });
+        for (var j = i + 1; j < nums.Length - 1; j++)
+        for (var k = j + 1; k < nums.Length; k++)
+            if (nums[i] + nums[j] + nums[k] == 0)
+                arraysWithDuplicates.Add(new[] { nums[i], nums[j], nums[k] });
 
         var uniqueArrays = new HashSet<int[]>(new OrderInsensitiveIntArrayEqualityComparer());
 
@@ -77,17 +79,17 @@ public static class ThreeSum
                 switch (sum)
                 {
                     case 0:
-                        {
-                            result.Add(new List<int> { nums[i], nums[left], nums[right] });
+                    {
+                        result.Add(new List<int> { nums[i], nums[left], nums[right] });
 
-                            while (left < right && nums[left] == nums[left + 1]) left++;
-                            while (left < right && nums[right] == nums[right - 1]) right--;
+                        while (left < right && nums[left] == nums[left + 1]) left++;
+                        while (left < right && nums[right] == nums[right - 1]) right--;
 
-                            left++;
-                            right--;
+                        left++;
+                        right--;
 
-                            break;
-                        }
+                        break;
+                    }
                     case < 0:
                         left++;
                         break;
