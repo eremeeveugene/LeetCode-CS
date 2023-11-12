@@ -49,7 +49,7 @@ public static class MergeTwoSortedLists
 
                     previousNode = list2CurrentNode;
 
-                    if (headNode == null) headNode = list2CurrentNode;
+                    headNode ??= list2CurrentNode;
 
                     list2 = list2.next;
 
@@ -64,7 +64,7 @@ public static class MergeTwoSortedLists
 
                     previousNode = list1CurrentNode;
 
-                    if (headNode == null) headNode = list1CurrentNode;
+                    headNode ??= list1CurrentNode;
 
                     list1 = list1.next;
 
@@ -79,7 +79,7 @@ public static class MergeTwoSortedLists
 
                     previousNode = list1CurrentNode;
 
-                    if (headNode == null) headNode = list1CurrentNode;
+                    headNode ??= list1CurrentNode;
 
                     list1 = list1.next;
                 }
@@ -91,7 +91,7 @@ public static class MergeTwoSortedLists
 
                     previousNode = list2CurrentNode;
 
-                    if (headNode == null) headNode = list2CurrentNode;
+                    headNode ??= list2CurrentNode;
 
                     list2 = list2.next;
                 }
