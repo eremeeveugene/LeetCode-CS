@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Core;
+﻿namespace LeetCode.Core.EqualityComparers;
 
 public class OrderInsensitiveIntArrayEqualityComparer : IEqualityComparer<int[]>
 {
