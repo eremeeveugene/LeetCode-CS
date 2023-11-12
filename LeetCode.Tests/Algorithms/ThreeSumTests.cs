@@ -1,5 +1,6 @@
 ﻿using LeetCode.Algorithms.ThreeSumTask;
 using LeetCode.Core;
+using LeetCode.Core.EqualityComparers;
 using Newtonsoft.Json;
 
 namespace LeetCode.Tests.Algorithms;

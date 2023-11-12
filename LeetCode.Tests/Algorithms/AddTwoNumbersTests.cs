@@ -16,20 +16,12 @@ public class AddTwoNumbersTests
         // Arrange
         var list1 = array1.ToListNode();
         var list2 = array2.ToListNode();
-        var expectedResultList = expectedResultArray.ToListNode();
+        var expectedResult = expectedResultArray.ToListNode();
 
         // Act
-        var actualResultList = AddTwoNumbers.GetResult(list1, list2);
+        var actualResult = AddTwoNumbers.GetResult(list1, list2);
 
         // Assert
-        while (expectedResultList != null && actualResultList != null)
-        {
-            Assert.AreEqual(expectedResultList.val, actualResultList.val, "Values should be equal at each node.");
-            expectedResultList = expectedResultList.next;
-            actualResultList = actualResultList.next;
-        }
-
-        Assert.IsNull(expectedResultList, "Expected result should not have more nodes.");
-        Assert.IsNull(actualResultList, "Actual result should not have more nodes.");
+        AssertExtensions.AssertListNode(expectedResult, actualResult);
     }
 }

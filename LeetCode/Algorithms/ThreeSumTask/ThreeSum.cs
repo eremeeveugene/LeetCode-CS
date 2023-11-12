@@ -1,4 +1,4 @@
-﻿using LeetCode.Core;
+﻿using LeetCode.Core.EqualityComparers;
 
 namespace LeetCode.Algorithms.ThreeSumTask;
 
