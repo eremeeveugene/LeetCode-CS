@@ -13,7 +13,7 @@ public class ThreeSumTests
     [DataRow(new[] { 0, 0, 0 }, "[[0, 0, 0]]")]
     [DataRow(new[] { -3, -2, 1, 1, 2 }, "[[-3, 1, 2], [-2, 1, 1]]")]
     [DataRow(new[] { 3, 0, -2, -1, 1, 2 }, "[[-2, -1, 3],[-2, 0, 2],[-1, 0, 1]]")]
-    public void ThreeSum_GetResult_ReturnsExpectedIndicesForGivenTarget(int[] nums, string expectedResultJson)
+    public void ThreeSum_GetResult_ShouldReturnCorrectTripletsSet(int[] nums, string expectedResultJson)
     {
         // Arrange
         var expectedResult = JsonConvert.DeserializeObject<int[][]>(expectedResultJson);
@@ -37,7 +37,7 @@ public class ThreeSumTests
     [DataRow(new[] { 0, 0, 0 }, "[[0, 0, 0]]")]
     [DataRow(new[] { -3, -2, 1, 1, 2 }, "[[-3, 1, 2], [-2, 1, 1]]")]
     [DataRow(new[] { 3, 0, -2, -1, 1, 2 }, "[[-2, -1, 3], [-2, 0, 2], [-1, 0, 1]]")]
-    public void ThreeSum_GetResultTwoPointers_ReturnsExpectedIndicesForGivenTarget(int[] nums, string expectedResultJson)
+    public void ThreeSum_GetResultTwoPointers_ShouldReturnCorrectTripletsSet(int[] nums, string expectedResultJson)
     {
         // Arrange
         var expectedResult = JsonConvert.DeserializeObject<int[][]>(expectedResultJson);

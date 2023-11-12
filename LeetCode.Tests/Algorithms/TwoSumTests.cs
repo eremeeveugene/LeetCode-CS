@@ -10,7 +10,7 @@ public class TwoSumTests
     [DataRow(new[] { 3, 2, 4 }, 6, new[] { 1, 2 })]
     [DataRow(new[] { 3, 3 }, 6, new[] { 0, 1 })]
     [DataRow(new[] { 2, 5, 5, 11 }, 10, new[] { 1, 2 })]
-    public void TwoSum_GetResult_ReturnsExpectedIndicesForGivenTarget(int[] nums, int target, int[] expectedResult)
+    public void TwoSum_GetResult_ShouldReturnIndicesMatchingTargetSum(int[] nums, int target, int[] expectedResult)
     {
         // Act
         var actualResult = TwoSum.GetResult(nums, target);
@@ -24,7 +24,7 @@ public class TwoSumTests
     [DataRow(new[] { 3, 2, 4 }, 6, new[] { 1, 2 })]
     [DataRow(new[] { 3, 3 }, 6, new[] { 0, 1 })]
     [DataRow(new[] { 2, 5, 5, 11 }, 10, new[] { 1, 2 })]
-    public void TwoSum_GetResultDictionary_ReturnsExpectedIndicesForGivenTarget(int[] nums, int target, int[] expectedResult)
+    public void TwoSum_GetResultDictionary_ShouldReturnIndicesMatchingTargetSum(int[] nums, int target, int[] expectedResult)
     {
         // Act
         var actualResult = TwoSum.GetResultDictionary(nums, target);
