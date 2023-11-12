@@ -1,5 +1,6 @@
 ﻿using LeetCode.Algorithms.MergeTwoSortedListsTask;
 using LeetCode.Core;
+using LeetCode.Core.Extensions;
 
 namespace LeetCode.Tests.Algorithms;
 
@@ -15,9 +16,9 @@ public class MergeTwoSortedListsTests
         int[] expectedResultArray)
     {
         // Arrange
-        var list1 = array1.Reverse().Aggregate<int, ListNode?>(null, AggregateListNode);
-        var list2 = array2.Reverse().Aggregate<int, ListNode?>(null, AggregateListNode);
-        var expectedResultList = expectedResultArray.Reverse().Aggregate<int, ListNode?>(null, AggregateListNode);
+        var list1 = array1.ToListNode();
+        var list2 = array2.ToListNode();
+        var expectedResultList = expectedResultArray.ToListNode();
 
         // Act
         var actualResultList = MergeTwoSortedLists.GetResult(list1, list2);
@@ -32,10 +33,5 @@ public class MergeTwoSortedListsTests
 
         Assert.IsNull(expectedResultList, "Expected result should not have more nodes.");
         Assert.IsNull(actualResultList, "Actual result should not have more nodes.");
-    }
-
-    private static ListNode AggregateListNode(ListNode? next, int val)
-    {
-        return new ListNode(val, next);
     }
 }
