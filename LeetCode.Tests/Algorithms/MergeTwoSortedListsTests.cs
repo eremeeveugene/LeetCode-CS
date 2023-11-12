@@ -1,5 +1,4 @@
 ﻿using LeetCode.Algorithms.MergeTwoSortedListsTask;
-using LeetCode.Core;
 using LeetCode.Core.Extensions;
 
 namespace LeetCode.Tests.Algorithms;
