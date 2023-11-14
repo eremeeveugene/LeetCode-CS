@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Core.Extensions;
+﻿using LeetCode.Core.Models;
+
+namespace LeetCode.Core.Extensions;
 
 public static class ArrayExtensions
 {

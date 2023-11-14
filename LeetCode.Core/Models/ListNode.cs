@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Core;
+﻿namespace LeetCode.Core.Models;
 
 /// <summary>
 /// Definition for singly-linked list

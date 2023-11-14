@@ -1,4 +1,4 @@
-﻿using LeetCode.Core;
+﻿using LeetCode.Core.Models;
 
 namespace LeetCode.Algorithms.MergeTwoSortedListsTask;
 
