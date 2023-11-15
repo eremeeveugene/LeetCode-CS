@@ -16,7 +16,7 @@ public class TreeNode
         this.right = right;
     }
 
-    public static TreeNode BuildTree(int?[] nums)
+    public static TreeNode BuildTree(IList<int?> nums)
     {
         if (!nums.Any() || nums[0] == null) return new TreeNode();
 
@@ -26,12 +26,12 @@ public class TreeNode
         queue.Enqueue(root);
         int i = 1;
 
-        while (queue.Count > 0 && i < nums.Length)
+        while (queue.Count > 0 && i < nums.Count)
         {
             TreeNode current = queue.Dequeue();
 
             // Process the left child
-            if (i < nums.Length && nums[i].HasValue)
+            if (i < nums.Count && nums[i].HasValue)
             {
                 current.left = new TreeNode(nums[i].Value);
                 queue.Enqueue(current.left);
@@ -39,7 +39,7 @@ public class TreeNode
             i++;
 
             // Process the right child
-            if (i < nums.Length && nums[i].HasValue)
+            if (i < nums.Count && nums[i].HasValue)
             {
                 current.right = new TreeNode(nums[i].Value);
                 queue.Enqueue(current.right);
