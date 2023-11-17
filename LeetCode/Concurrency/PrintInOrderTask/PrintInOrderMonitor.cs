@@ -9,12 +9,10 @@ public class PrintInOrderMonitor
     {
         lock (_lock)
         {
-            while (_step != 1)
-                Monitor.Wait(_lock);
-
             printFirst();
 
             _step = 2;
+
             Monitor.PulseAll(_lock);
         }
     }
@@ -29,6 +27,7 @@ public class PrintInOrderMonitor
             printSecond();
 
             _step = 3;
+
             Monitor.PulseAll(_lock);
         }
     }
@@ -41,9 +40,6 @@ public class PrintInOrderMonitor
                 Monitor.Wait(_lock);
 
             printThird();
-
-            _step = 1;
-            Monitor.PulseAll(_lock);
         }
     }
 }
