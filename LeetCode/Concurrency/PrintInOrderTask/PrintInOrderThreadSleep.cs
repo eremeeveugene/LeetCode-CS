@@ -2,7 +2,7 @@
 
 public class PrintInOrderThreadSleep
 {
-    private const int ThreadTimeoutMs = 100;
+    private const int ThreadTimeoutMs = 10;
     private bool _isFirstPrinted;
     private bool _isSecondPrinted;
 

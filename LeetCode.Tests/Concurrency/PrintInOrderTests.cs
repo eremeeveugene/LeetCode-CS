@@ -5,14 +5,22 @@ namespace LeetCode.Tests.Concurrency;
 [TestClass]
 public class PrintInOrderTests
 {
-    private string _actualResult = string.Empty;
+    private const string First = "first";
+    private const string Second = "second";
+    private const string Third = "third";
+    private const string FirstSecondThird = First + Second + Third;
 
     [TestMethod]
-    [DataRow(new[] { 1, 2, 3 }, "firstsecondthird")]
-    [DataRow(new[] { 3, 2, 1 }, "firstsecondthird")]
-    [DataRow(new[] { 2, 3, 1 }, "firstsecondthird")]
-    public async Task PrintInOrderThreadSleep_ExecutesActionsInSequentialOrder(int[] nums, string expectedResult)
+    [DataRow(new[] { 1, 2, 3 })]
+    [DataRow(new[] { 2, 3, 1 })]
+    [DataRow(new[] { 3, 1, 2 })]
+    public async Task PrintInOrder_ThreadSleep_ExecutesActionsInSequentialOrder(int[] nums)
     {
+        // Arrange
+        var expectedResult = FirstSecondThird;
+        var actualResult = string.Empty;
+
+        // Act
         var printInOrder = new PrintInOrderThreadSleep();
 
         var tasks = new List<Task>();
@@ -21,33 +29,90 @@ public class PrintInOrderTests
             switch (num)
             {
                 case 1:
-                    tasks.Add(Task.Run(() => printInOrder.First(PrintFirst)));
+                    tasks.Add(Task.Run(() => printInOrder.First(() => actualResult += First)));
                     break;
                 case 2:
-                    tasks.Add(Task.Run(() => printInOrder.Second(PrintSecond)));
+                    tasks.Add(Task.Run(() => printInOrder.Second(() => actualResult += Second)));
                     break;
                 case 3:
-                    tasks.Add(Task.Run(() => printInOrder.Third(PrintThird)));
+                    tasks.Add(Task.Run(() => printInOrder.Third(() => actualResult += Third)));
                     break;
             }
 
         await Task.WhenAll(tasks);
 
-        Assert.AreEqual(expectedResult, _actualResult);
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
 
-    private void PrintFirst()
+    [TestMethod]
+    [DataRow(new[] { 1, 2, 3 })]
+    [DataRow(new[] { 2, 3, 1 })]
+    [DataRow(new[] { 3, 1, 2 })]
+    public async Task PrintInOrder_ManualResetEvent_ExecutesActionsInSequentialOrder(int[] nums)
     {
-        _actualResult += "first";
+        // Arrange
+        var expectedResult = FirstSecondThird;
+        var actualResult = string.Empty;
+
+        // Act
+        var printInOrder = new PrintInOrderManualResetEvent();
+
+        var tasks = new List<Task>();
+
+        foreach (var num in nums)
+            switch (num)
+            {
+                case 1:
+                    tasks.Add(Task.Run(() => printInOrder.First(() => actualResult += First)));
+                    break;
+                case 2:
+                    tasks.Add(Task.Run(() => printInOrder.Second(() => actualResult += Second)));
+                    break;
+                case 3:
+                    tasks.Add(Task.Run(() => printInOrder.Third(() => actualResult += Third)));
+                    break;
+            }
+
+        await Task.WhenAll(tasks);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
 
-    private void PrintSecond()
-    {
-        _actualResult += "second";
-    }
 
-    private void PrintThird()
+    [TestMethod]
+    [DataRow(new[] { 1, 2, 3 })]
+    [DataRow(new[] { 2, 3, 1 })]
+    [DataRow(new[] { 3, 1, 2 })]
+    public async Task PrintInOrder_AutoResetEvent_ExecutesActionsInSequentialOrder(int[] nums)
     {
-        _actualResult += "third";
+        // Arrange
+        var expectedResult = FirstSecondThird;
+        var actualResult = string.Empty;
+
+        // Act
+        var printInOrder = new PrintInOrderAutoResetEvent();
+
+        var tasks = new List<Task>();
+
+        foreach (var num in nums)
+            switch (num)
+            {
+                case 1:
+                    tasks.Add(Task.Run(() => printInOrder.First(() => actualResult += First)));
+                    break;
+                case 2:
+                    tasks.Add(Task.Run(() => printInOrder.Second(() => actualResult += Second)));
+                    break;
+                case 3:
+                    tasks.Add(Task.Run(() => printInOrder.Third(() => actualResult += Third)));
+                    break;
+            }
+
+        await Task.WhenAll(tasks);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
 }
