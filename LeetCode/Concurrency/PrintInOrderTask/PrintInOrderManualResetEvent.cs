@@ -2,28 +2,28 @@
 
 public class PrintInOrderManualResetEvent
 {
-    private static readonly ManualResetEvent FirstPrint = new(false);
-    private static readonly ManualResetEvent SecondPrint = new(false);
+    private readonly ManualResetEvent _firstPrint = new(false);
+    private readonly ManualResetEvent _secondPrint = new(false);
 
     public void First(Action printFirst)
     {
         printFirst();
 
-        FirstPrint.Set();
+        _firstPrint.Set();
     }
 
     public void Second(Action printSecond)
     {
-        FirstPrint.WaitOne();
+        _firstPrint.WaitOne();
 
         printSecond();
 
-        SecondPrint.Set();
+        _secondPrint.Set();
     }
 
     public void Third(Action printThird)
     {
-        SecondPrint.WaitOne();
+        _secondPrint.WaitOne();
 
         printThird();
     }
