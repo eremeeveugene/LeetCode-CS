@@ -7,20 +7,24 @@ public class PrintInOrderTaskCompletionSource
 
     public void First(Action printFirst)
     {
-        printFirst();
+        printFirst.Invoke();
+
         _firstPrint.SetResult();
     }
 
     public void Second(Action printSecond)
     {
         _firstPrint.Task.Wait();
-        printSecond();
+
+        printSecond.Invoke();
+
         _secondPrint.SetResult();
     }
 
     public void Third(Action printThird)
     {
         _secondPrint.Task.Wait();
-        printThird();
+
+        printThird.Invoke();
     }
 }

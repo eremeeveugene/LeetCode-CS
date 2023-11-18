@@ -7,7 +7,7 @@ public class PrintInOrderManualResetEvent
 
     public void First(Action printFirst)
     {
-        printFirst();
+        printFirst.Invoke();
 
         _firstPrint.Set();
     }
@@ -16,7 +16,7 @@ public class PrintInOrderManualResetEvent
     {
         _firstPrint.WaitOne();
 
-        printSecond();
+        printSecond.Invoke();
 
         _secondPrint.Set();
     }
@@ -25,6 +25,6 @@ public class PrintInOrderManualResetEvent
     {
         _secondPrint.WaitOne();
 
-        printThird();
+        printThird.Invoke();
     }
 }

@@ -7,7 +7,7 @@ public class PrintInOrderSemaphoreSlim
 
     public void First(Action printFirst)
     {
-        printFirst();
+        printFirst.Invoke();
 
         FirstPrint.Release();
     }
@@ -16,7 +16,7 @@ public class PrintInOrderSemaphoreSlim
     {
         FirstPrint.Wait();
 
-        printSecond();
+        printSecond.Invoke();
 
         SecondPrint.Release();
     }
@@ -25,6 +25,6 @@ public class PrintInOrderSemaphoreSlim
     {
         SecondPrint.Wait();
 
-        printThird();
+        printThird.Invoke();
     }
 }

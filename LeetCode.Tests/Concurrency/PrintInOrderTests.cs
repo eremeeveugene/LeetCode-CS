@@ -14,7 +14,7 @@ public class PrintInOrderTests
     [DataRow(new[] { 1, 2, 3 })]
     [DataRow(new[] { 2, 3, 1 })]
     [DataRow(new[] { 3, 1, 2 })]
-    public async Task PrintInOrder_ThreadSleep_ExecutesActionsInSequentialOrder(int[] nums)
+    public async Task PrintInOrder_ThreadSleep_ExecutesActionsInSequentialOrderAsync(int[] nums)
     {
         // Arrange
         var expectedResult = FirstSecondThird;
@@ -49,7 +49,7 @@ public class PrintInOrderTests
     [DataRow(new[] { 1, 2, 3 })]
     [DataRow(new[] { 2, 3, 1 })]
     [DataRow(new[] { 3, 1, 2 })]
-    public async Task PrintInOrder_ManualResetEvent_ExecutesActionsInSequentialOrder(int[] nums)
+    public async Task PrintInOrder_ManualResetEvent_ExecutesActionsInSequentialOrderAsync(int[] nums)
     {
         // Arrange
         var expectedResult = FirstSecondThird;
@@ -84,7 +84,7 @@ public class PrintInOrderTests
     [DataRow(new[] { 1, 2, 3 })]
     [DataRow(new[] { 2, 3, 1 })]
     [DataRow(new[] { 3, 1, 2 })]
-    public async Task PrintInOrder_AutoResetEvent_ExecutesActionsInSequentialOrder(int[] nums)
+    public async Task PrintInOrder_AutoResetEvent_ExecutesActionsInSequentialOrderAsync(int[] nums)
     {
         // Arrange
         var expectedResult = FirstSecondThird;
@@ -119,7 +119,7 @@ public class PrintInOrderTests
     [DataRow(new[] { 1, 2, 3 })]
     [DataRow(new[] { 2, 3, 1 })]
     [DataRow(new[] { 3, 1, 2 })]
-    public async Task PrintInOrder_Monitor_ExecutesActionsInSequentialOrder(int[] nums)
+    public async Task PrintInOrder_Monitor_ExecutesActionsInSequentialOrderAsync(int[] nums)
     {
         // Arrange
         var expectedResult = FirstSecondThird;
@@ -154,7 +154,7 @@ public class PrintInOrderTests
     [DataRow(new[] { 1, 2, 3 })]
     [DataRow(new[] { 2, 3, 1 })]
     [DataRow(new[] { 3, 1, 2 })]
-    public async Task PrintInOrder_SemaphoreSlim_ExecutesActionsInSequentialOrder(int[] nums)
+    public async Task PrintInOrder_SemaphoreSlim_ExecutesActionsInSequentialOrderAsync(int[] nums)
     {
         // Arrange
         var expectedResult = FirstSecondThird;
@@ -189,7 +189,7 @@ public class PrintInOrderTests
     [DataRow(new[] { 1, 2, 3 })]
     [DataRow(new[] { 2, 3, 1 })]
     [DataRow(new[] { 3, 1, 2 })]
-    public async Task PrintInOrder_TaskCompletionSource_ExecutesActionsInSequentialOrder(int[] nums)
+    public async Task PrintInOrder_TaskCompletionSource_ExecutesActionsInSequentialOrderAsync(int[] nums)
     {
         // Arrange
         var expectedResult = FirstSecondThird;

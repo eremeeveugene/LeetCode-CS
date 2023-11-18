@@ -7,7 +7,7 @@ public class PrintInOrderAutoResetEvent
 
     public void First(Action printFirst)
     {
-        printFirst();
+        printFirst.Invoke();
 
         FirstPrint.Set();
     }
@@ -16,7 +16,7 @@ public class PrintInOrderAutoResetEvent
     {
         FirstPrint.WaitOne();
 
-        printSecond();
+        printSecond.Invoke();
 
         SecondPrint.Set();
     }
@@ -25,6 +25,6 @@ public class PrintInOrderAutoResetEvent
     {
         SecondPrint.WaitOne();
 
-        printThird();
+        printThird.Invoke();
     }
 }
