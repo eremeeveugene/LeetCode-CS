@@ -9,27 +9,36 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Core.EqualityComparers;
+using LeetCode.Core.Models;
 
-public class OrderInsensitiveIntArrayEqualityComparer : IEqualityComparer<int[]>
+namespace LeetCode.Algorithms.BinaryTreeInorderTraversal;
+
+public static class BinaryTreeInorderTraversalRecursive
 {
-    private const int Seed = 13;
-    private const int Multiplier = 17;
-
-    public bool Equals(int[]? x, int[]? y)
+    public static IList<int>? GetResult(TreeNode? treeNode)
     {
-        if (x == null && y == null) return true;
+        if (treeNode == null) return new List<int>();
 
-        if (x == null || y == null) return false;
-
-        return x.OrderBy(a => a).SequenceEqual(y.OrderBy(b => b));
+        return InOrderTraversal(treeNode);
     }
 
-    public int GetHashCode(int[] array)
+    private static List<int> InOrderTraversal(TreeNode treeNode)
     {
-        unchecked
-        {
-            return array.OrderBy(a => a).Aggregate(Seed, (accumulator, value) => accumulator * Multiplier + value);
-        }
+        var res = new List<int>();
+
+        var left = new List<int>();
+
+        if (treeNode.Left != null) left = InOrderTraversal(treeNode.Left);
+
+        res.AddRange(left);
+        res.Add(treeNode.Val);
+
+        var right = new List<int>();
+
+        if (treeNode.Right != null) right = InOrderTraversal(treeNode.Right);
+
+        res.AddRange(right);
+
+        return res;
     }
 }

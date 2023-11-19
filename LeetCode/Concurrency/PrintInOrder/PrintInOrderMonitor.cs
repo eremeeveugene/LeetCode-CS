@@ -9,27 +9,48 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Core.EqualityComparers;
+namespace LeetCode.Concurrency.PrintInOrder;
 
-public class OrderInsensitiveIntArrayEqualityComparer : IEqualityComparer<int[]>
+public class PrintInOrderMonitor
 {
-    private const int Seed = 13;
-    private const int Multiplier = 17;
+    private readonly object _lock = new();
+    private int _step = 1;
 
-    public bool Equals(int[]? x, int[]? y)
+    public void First(Action printFirst)
     {
-        if (x == null && y == null) return true;
+        lock (_lock)
+        {
+            printFirst.Invoke();
 
-        if (x == null || y == null) return false;
+            _step = 2;
 
-        return x.OrderBy(a => a).SequenceEqual(y.OrderBy(b => b));
+            Monitor.PulseAll(_lock);
+        }
     }
 
-    public int GetHashCode(int[] array)
+    public void Second(Action printSecond)
     {
-        unchecked
+        lock (_lock)
         {
-            return array.OrderBy(a => a).Aggregate(Seed, (accumulator, value) => accumulator * Multiplier + value);
+            while (_step != 2)
+                Monitor.Wait(_lock);
+
+            printSecond.Invoke();
+
+            _step = 3;
+
+            Monitor.PulseAll(_lock);
+        }
+    }
+
+    public void Third(Action printThird)
+    {
+        lock (_lock)
+        {
+            while (_step != 3)
+                Monitor.Wait(_lock);
+
+            printThird.Invoke();
         }
     }
 }

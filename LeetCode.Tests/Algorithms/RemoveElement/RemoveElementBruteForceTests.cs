@@ -9,27 +9,25 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Core.EqualityComparers;
+using LeetCode.Algorithms.RemoveElement;
 
-public class OrderInsensitiveIntArrayEqualityComparer : IEqualityComparer<int[]>
+namespace LeetCode.Tests.Algorithms.RemoveElement;
+
+[TestClass]
+public class RemoveElementBruteForceTests
 {
-    private const int Seed = 13;
-    private const int Multiplier = 17;
-
-    public bool Equals(int[]? x, int[]? y)
+    [TestMethod]
+    [DataRow(new[] { 3, 2, 2, 3 }, 3, new[] { 2, 2, 3, 3 }, 2)]
+    [DataRow(new[] { 0, 1, 2, 2, 3, 0, 4, 2 }, 2, new[] { 0, 1, 3, 0, 4, 2, 2, 2 }, 5)]
+    public void RemoveElementBruteForce_GetResult_ShouldRemoveSpecifiedValueAndUpdateArrayLength(int[] actualNums,
+        int val,
+        int[] expectedNums, int expectedResult)
     {
-        if (x == null && y == null) return true;
+        // Act
+        var actualResult = RemoveElementBruteForce.GetResult(actualNums, val);
 
-        if (x == null || y == null) return false;
-
-        return x.OrderBy(a => a).SequenceEqual(y.OrderBy(b => b));
-    }
-
-    public int GetHashCode(int[] array)
-    {
-        unchecked
-        {
-            return array.OrderBy(a => a).Aggregate(Seed, (accumulator, value) => accumulator * Multiplier + value);
-        }
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedNums, actualNums);
     }
 }

@@ -9,27 +9,21 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Core.EqualityComparers;
+using LeetCode.Core.Models;
 
-public class OrderInsensitiveIntArrayEqualityComparer : IEqualityComparer<int[]>
+namespace LeetCode.Tests.Extensions;
+
+public static class AssertExtensions
 {
-    private const int Seed = 13;
-    private const int Multiplier = 17;
-
-    public bool Equals(int[]? x, int[]? y)
+    public static void AreListNodesEqual(ListNode? expectedList, ListNode? actualList)
     {
-        if (x == null && y == null) return true;
-
-        if (x == null || y == null) return false;
-
-        return x.OrderBy(a => a).SequenceEqual(y.OrderBy(b => b));
-    }
-
-    public int GetHashCode(int[] array)
-    {
-        unchecked
+        while (expectedList != null && actualList != null)
         {
-            return array.OrderBy(a => a).Aggregate(Seed, (accumulator, value) => accumulator * Multiplier + value);
+            Assert.AreEqual(expectedList.Val, actualList.Val, "Values should be equal at each node.");
+            expectedList = expectedList.Next;
+            actualList = actualList.Next;
         }
+
+        Assert.IsNull(actualList, "Actual result should not have more nodes.");
     }
 }

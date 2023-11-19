@@ -9,27 +9,24 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Core.EqualityComparers;
+using LeetCode.Algorithms.RomanToIntegerTask;
 
-public class OrderInsensitiveIntArrayEqualityComparer : IEqualityComparer<int[]>
+namespace LeetCode.Tests.Algorithms.RomanToInteger;
+
+[TestClass]
+public class RomanToIntegerIterativeTests
 {
-    private const int Seed = 13;
-    private const int Multiplier = 17;
-
-    public bool Equals(int[]? x, int[]? y)
+    [TestMethod]
+    [DataRow("III", 3)]
+    [DataRow("LVIII", 58)]
+    [DataRow("MCMXCIV", 1994)]
+    public void RomanToIntegerIterative_GetResult_ShouldConvertToCorrectIntegerValue(string romanString,
+        int expectedResult)
     {
-        if (x == null && y == null) return true;
+        // Act
+        var actualResult = RomanToIntegerIterative.GetResult(romanString);
 
-        if (x == null || y == null) return false;
-
-        return x.OrderBy(a => a).SequenceEqual(y.OrderBy(b => b));
-    }
-
-    public int GetHashCode(int[] array)
-    {
-        unchecked
-        {
-            return array.OrderBy(a => a).Aggregate(Seed, (accumulator, value) => accumulator * Multiplier + value);
-        }
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
 }
