@@ -9,7 +9,7 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.RomanToIntegerTask;
+using LeetCode.Algorithms.RomanToInteger.Iterative;
 
 namespace LeetCode.Tests.Algorithms.RomanToInteger;
 
