@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -23,12 +22,5 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal
-    - name: Test with Coverage
-      run: dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput='./results/'
-    - name: Create Results Directory
-      run: mkdir -p results
-    - name: Upload Coverage Result
-      uses: actions/upload-artifact@v3.1.3
-      with:
-        name: coverage-report
-        path: results/
+    - name: Code Coverage Summary
+      uses: irongut/CodeCoverageSummary@v1.3.0
