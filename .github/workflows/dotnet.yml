@@ -5,11 +5,9 @@ on:
     branches: [ "develop" ]
   pull_request:
     branches: [ "develop" ]
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
@@ -27,9 +25,10 @@ jobs:
       with:
         name: coverage-report
         path: LeetCode.Tests/results/
-    - name: Upload Coverage Report to Codecov
-      uses: codecov/codecov-action@v3
-      env:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        file: ./results/coverage.lcov
-        fail_ci_if_error: true
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./LeetCode.Tests/results/
+        publish_branch: develop
+        keep_files: true
