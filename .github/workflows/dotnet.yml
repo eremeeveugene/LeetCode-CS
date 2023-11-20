@@ -26,7 +26,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: coverage-report
-        path: ./results/
+        path: LeetCode.Tests/results/
     - name: Upload Coverage Report to Codecov
       uses: codecov/codecov-action@v3
       env:
