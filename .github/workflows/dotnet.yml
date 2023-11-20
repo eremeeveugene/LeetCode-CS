@@ -39,7 +39,7 @@ jobs:
       run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
     - name: Generate Coverage Report
-      run: reportgenerator "-reports:./LeetCode.Tests/results/coverage.info" "-targetdir:./LeetCode.Tests/results/coverage" "-reporttypes:Html"
+      run: reportgenerator "-reports:./LeetCode.Tests/results/coverage.info" "-targetdir:./LeetCode.Tests/results" "-reporttypes:Html"
       
     - name: Upload Coverage Report
       uses: actions/upload-artifact@v3
