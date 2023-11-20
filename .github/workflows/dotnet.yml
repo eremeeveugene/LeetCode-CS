@@ -24,6 +24,8 @@ jobs:
       run: dotnet build --no-restore
     - name: Test with Coverage
       run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput='./results/'
+    - name: Generate Coverage Report
+      run: reportgenerator "-reports:./LeetCode.Tests/results/coverage.cobertura.xml" "-targetdir:./LeetCode.Tests/results/coverage" "-reporttypes:Html"
     - name: Upload Coverage Report
       uses: actions/upload-artifact@v3
       with:
