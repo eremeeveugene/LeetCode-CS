@@ -39,13 +39,13 @@ jobs:
       run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
     - name: Generate Coverage Report
-      run: reportgenerator "-reports:./LeetCode.Tests/results/coverage.info" "-targetdir:./LeetCode.Tests/results" "-reporttypes:Html"
+      run: reportgenerator "-reports:./LeetCode.Tests/results/coverage.info" "-targetdir:./LeetCode.Tests/results/root" "-reporttypes:Html"
       
     - name: Upload Coverage Report
       uses: actions/upload-artifact@v3
       with:
         name: coverage-report
-        path: LeetCode.Tests/results/
+        path: LeetCode.Tests/results/root
         
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
