@@ -2,8 +2,6 @@
 
 ## Solutions to LeetCode tasks
 
-[![.NET](https://github.com/eremeeveugene/LeetCode/actions/workflows/dotnet.yml/badge.svg)](https://github.com/eremeeveugene/LeetCode/actions/workflows/dotnet.yml)
+[![.NET](https://github.com/eremeeveugene/LeetCode/actions/workflows/dotnet.yml/badge.svg)](https://github.com/eremeeveugene/LeetCod
 
-[![codecov](https://codecov.io/gh/eremeeveugene/LeetCode/branch/develop/graph/badge.svg)](https://codecov.io/gh/eremeeveugene/LeetCode)
-
-[![Coverage Report](https://img.shields.io/badge/coverage-report-blue)](https://your-username.github.io/your-repository/)
+[![Coverage Report](https://img.shields.io/badge/coverage-report-blue)](https://eremeeveugene.github.io/leetcode/)
