@@ -1,0 +1,1123 @@
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode.Core/Models/ListNode.cs
+FN:21,System.Void LeetCode.Core.Models.ListNode::.ctor(System.Int32,LeetCode.Core.Models.ListNode)
+FNDA:108,System.Void LeetCode.Core.Models.ListNode::.ctor(System.Int32,LeetCode.Core.Models.ListNode)
+DA:22,108
+DA:23,108
+DA:24,108
+DA:25,108
+DA:26,108
+LF:5
+LH:5
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode.Core/Models/TreeNode.cs
+FN:30,LeetCode.Core.Models.TreeNode LeetCode.Core.Models.TreeNode::BuildTree(System.Collections.Generic.IList`1<System.Nullable`1<System.Int32>>)
+FNDA:3,LeetCode.Core.Models.TreeNode LeetCode.Core.Models.TreeNode::BuildTree(System.Collections.Generic.IList`1<System.Nullable`1<System.Int32>>)
+DA:31,3
+DA:32,3
+DA:34,3
+DA:36,3
+DA:37,3
+DA:38,3
+DA:40,5
+DA:41,2
+DA:42,2
+DA:45,2
+DA:46,1
+DA:47,1
+DA:48,1
+DA:49,1
+DA:51,2
+DA:54,2
+DA:55,1
+DA:56,1
+DA:57,1
+DA:58,1
+DA:60,2
+DA:61,2
+DA:63,3
+DA:64,3
+BRDA:32,7,0,3
+BRDA:32,7,1,0
+BRDA:32,33,0,0
+BRDA:32,33,1,3
+BRDA:40,298,1,2
+BRDA:45,111,0,2
+BRDA:45,111,1,0
+BRDA:45,136,0,1
+BRDA:45,136,1,2
+BRDA:54,195,0,1
+BRDA:54,195,1,1
+BRDA:54,220,0,1
+BRDA:54,220,1,2
+BRDA:40,280,0,5
+BRDA:40,280,1,0
+BRDA:40,298,0,3
+FN:22,System.Void LeetCode.Core.Models.TreeNode::.ctor(System.Int32,LeetCode.Core.Models.TreeNode,LeetCode.Core.Models.TreeNode)
+FNDA:5,System.Void LeetCode.Core.Models.TreeNode::.ctor(System.Int32,LeetCode.Core.Models.TreeNode,LeetCode.Core.Models.TreeNode)
+DA:23,5
+DA:24,5
+DA:25,5
+DA:26,5
+DA:27,5
+DA:28,5
+LF:30
+LH:30
+BRF:16
+BRH:12
+FNF:2
+FNH:2
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode.Core/Extensions/ArrayExtensions.cs
+FN:18,LeetCode.Core.Models.ListNode LeetCode.Core.Extensions.ArrayExtensions::ToListNode(System.Int32[])
+FNDA:24,LeetCode.Core.Models.ListNode LeetCode.Core.Extensions.ArrayExtensions::ToListNode(System.Int32[])
+DA:19,24
+DA:20,99
+DA:21,24
+LF:3
+LH:3
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode.Core/Extensions/CharExtensions.cs
+FN:16,System.Int32 LeetCode.Core.Extensions.CharExtensions::ToInt(System.Char)
+FNDA:0,System.Int32 LeetCode.Core.Extensions.CharExtensions::ToInt(System.Char)
+DA:17,0
+DA:18,0
+DA:19,0
+LF:3
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode.Core/EqualityComparers/OrderInsensitiveIntArrayEqualityComparer.cs
+FN:19,System.Boolean LeetCode.Core.EqualityComparers.OrderInsensitiveIntArrayEqualityComparer::Equals(System.Int32[],System.Int32[])
+FNDA:18,System.Boolean LeetCode.Core.EqualityComparers.OrderInsensitiveIntArrayEqualityComparer::Equals(System.Int32[],System.Int32[])
+DA:20,18
+DA:21,18
+DA:23,18
+DA:25,126
+DA:26,18
+BRDA:21,2,0,0
+BRDA:21,2,1,18
+BRDA:21,13,0,0
+BRDA:21,13,1,18
+BRDA:23,20,0,18
+BRDA:23,20,1,0
+BRDA:23,31,0,0
+BRDA:23,31,1,18
+FN:28,System.Int32 LeetCode.Core.EqualityComparers.OrderInsensitiveIntArrayEqualityComparer::GetHashCode(System.Int32[])
+FNDA:58,System.Int32 LeetCode.Core.EqualityComparers.OrderInsensitiveIntArrayEqualityComparer::GetHashCode(System.Int32[])
+DA:29,58
+DA:31,58
+DA:32,406
+DA:34,58
+LF:9
+LH:9
+BRF:8
+BRH:4
+FNF:2
+FNH:2
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Concurrency/PrintInOrder/PrintInOrderAutoResetEvent.cs
+FN:19,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent::First(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent::First(System.Action)
+DA:20,3
+DA:21,3
+DA:23,3
+DA:24,3
+FN:26,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent::Second(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent::Second(System.Action)
+DA:27,3
+DA:28,3
+DA:30,3
+DA:32,3
+DA:33,3
+FN:35,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent::Third(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent::Third(System.Action)
+DA:36,3
+DA:37,3
+DA:39,3
+DA:40,3
+FN:15,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent::.ctor()
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent::.ctor()
+DA:16,3
+DA:17,3
+LF:15
+LH:15
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Concurrency/PrintInOrder/PrintInOrderManualResetEvent.cs
+FN:19,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent::First(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent::First(System.Action)
+DA:20,3
+DA:21,3
+DA:23,3
+DA:24,3
+FN:26,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent::Second(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent::Second(System.Action)
+DA:27,3
+DA:28,3
+DA:30,3
+DA:32,3
+DA:33,3
+FN:35,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent::Third(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent::Third(System.Action)
+DA:36,3
+DA:37,3
+DA:39,3
+DA:40,3
+FN:15,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent::.ctor()
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent::.ctor()
+DA:16,3
+DA:17,3
+LF:15
+LH:15
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Concurrency/PrintInOrder/PrintInOrderMonitor.cs
+FN:19,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor::First(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor::First(System.Action)
+DA:20,3
+DA:21,3
+DA:22,3
+DA:23,3
+DA:25,3
+DA:27,3
+DA:28,3
+DA:29,3
+FN:31,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor::Second(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor::Second(System.Action)
+DA:32,3
+DA:33,3
+DA:34,3
+DA:35,4
+DA:36,1
+DA:38,3
+DA:40,3
+DA:42,3
+DA:43,3
+DA:44,3
+BRDA:35,48,1,1
+BRDA:35,48,0,3
+FN:46,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor::Third(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor::Third(System.Action)
+DA:47,3
+DA:48,3
+DA:49,3
+DA:50,4
+DA:51,1
+DA:53,3
+DA:54,3
+DA:55,3
+BRDA:50,48,1,1
+BRDA:50,48,0,3
+FN:15,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor::.ctor()
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor::.ctor()
+DA:16,3
+DA:17,3
+LF:28
+LH:28
+BRF:4
+BRH:4
+FNF:4
+FNH:4
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Concurrency/PrintInOrder/PrintInOrderSemaphoreSlim.cs
+FN:19,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim::First(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim::First(System.Action)
+DA:20,3
+DA:21,3
+DA:23,3
+DA:24,3
+FN:26,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim::Second(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim::Second(System.Action)
+DA:27,3
+DA:28,3
+DA:30,3
+DA:32,3
+DA:33,3
+FN:35,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim::Third(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim::Third(System.Action)
+DA:36,3
+DA:37,3
+DA:39,3
+DA:40,3
+FN:15,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim::.ctor()
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim::.ctor()
+DA:16,3
+DA:17,3
+LF:15
+LH:15
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Concurrency/PrintInOrder/PrintInOrderTaskCompletionSource.cs
+FN:19,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource::First(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource::First(System.Action)
+DA:20,3
+DA:21,3
+DA:23,3
+DA:24,3
+FN:26,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource::Second(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource::Second(System.Action)
+DA:27,3
+DA:28,3
+DA:30,3
+DA:32,3
+DA:33,3
+FN:35,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource::Third(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource::Third(System.Action)
+DA:36,3
+DA:37,3
+DA:39,3
+DA:40,3
+FN:15,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource::.ctor()
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource::.ctor()
+DA:16,3
+DA:17,3
+LF:15
+LH:15
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Concurrency/PrintInOrder/PrintInOrderThreadSleep.cs
+FN:20,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep::First(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep::First(System.Action)
+DA:21,3
+DA:22,3
+DA:24,3
+DA:25,3
+FN:27,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep::Second(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep::Second(System.Action)
+DA:28,3
+DA:29,5
+DA:31,3
+DA:33,3
+DA:34,3
+BRDA:29,22,1,1
+BRDA:29,22,0,3
+FN:36,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep::Third(System.Action)
+FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep::Third(System.Action)
+DA:37,3
+DA:38,7
+DA:40,3
+DA:41,3
+BRDA:38,22,1,2
+BRDA:38,22,0,3
+LF:13
+LH:13
+BRF:4
+BRH:4
+FNF:3
+FNH:3
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Concurrency/FizzBuzzMultithreaded/FizzBuzzMultithreadedMonitorLock.cs
+FN:25,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::Fizz(System.Action)
+FNDA:5,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::Fizz(System.Action)
+DA:26,5
+DA:27,5
+DA:28,5
+DA:29,11
+DA:30,10
+DA:31,17
+DA:32,11
+DA:33,11
+DA:35,15
+DA:36,7
+DA:38,6
+DA:40,6
+DA:41,6
+DA:42,1
+DA:43,5
+BRDA:29,140,1,10
+BRDA:31,102,1,11
+BRDA:35,54,0,4
+BRDA:35,54,1,7
+BRDA:31,71,0,17
+BRDA:31,81,0,6
+BRDA:31,81,1,11
+BRDA:31,71,1,0
+BRDA:31,102,0,6
+BRDA:29,140,0,1
+FN:45,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::Buzz(System.Action)
+FNDA:5,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::Buzz(System.Action)
+DA:46,5
+DA:47,5
+DA:48,5
+DA:49,8
+DA:50,7
+DA:51,17
+DA:52,14
+DA:53,14
+DA:55,18
+DA:56,10
+DA:58,3
+DA:60,3
+DA:61,3
+DA:62,1
+DA:63,5
+BRDA:49,123,1,7
+BRDA:51,85,1,14
+BRDA:55,54,0,4
+BRDA:55,54,1,10
+BRDA:51,67,0,12
+BRDA:51,67,1,5
+BRDA:51,85,0,3
+BRDA:49,123,0,1
+FN:65,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::Fizzbuzz(System.Action)
+FNDA:5,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::Fizzbuzz(System.Action)
+DA:66,5
+DA:67,5
+DA:68,5
+DA:69,6
+DA:70,4
+DA:71,13
+DA:72,12
+DA:73,12
+DA:75,15
+DA:76,9
+DA:78,1
+DA:80,1
+DA:81,1
+DA:82,2
+DA:83,5
+BRDA:69,123,1,4
+BRDA:71,85,1,12
+BRDA:75,54,0,3
+BRDA:75,54,1,9
+BRDA:71,67,0,5
+BRDA:71,67,1,8
+BRDA:71,85,0,1
+BRDA:69,123,0,2
+FN:85,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::Number(System.Action`1<System.Int32>)
+FNDA:5,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::Number(System.Action`1<System.Int32>)
+DA:86,5
+DA:87,5
+DA:88,5
+DA:89,21
+DA:90,19
+DA:91,25
+DA:92,9
+DA:93,9
+DA:95,12
+DA:96,6
+DA:98,16
+DA:100,16
+DA:101,16
+DA:102,2
+DA:103,5
+BRDA:89,129,1,19
+BRDA:91,85,1,9
+BRDA:95,54,0,3
+BRDA:95,54,1,6
+BRDA:91,67,0,19
+BRDA:91,67,1,6
+BRDA:91,85,0,16
+BRDA:89,129,0,2
+FN:105,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::IncrementNumber()
+FNDA:26,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::IncrementNumber()
+DA:106,26
+DA:107,26
+DA:109,26
+DA:110,26
+FN:16,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::.ctor(System.Int32)
+FNDA:5,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::.ctor(System.Int32)
+DA:17,5
+DA:18,5
+DA:20,5
+DA:21,5
+DA:22,5
+DA:23,5
+LF:70
+LH:70
+BRF:34
+BRH:33
+FNF:6
+FNH:6
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Algorithms/TwoSum/TwoSumBruteForce.cs
+FN:45,System.Int32[] LeetCode.Algorithms.TwoSum.TwoSumBruteForce::GetResult(System.Int32[],System.Int32)
+FNDA:4,System.Int32[] LeetCode.Algorithms.TwoSum.TwoSumBruteForce::GetResult(System.Int32[],System.Int32)
+DA:46,4
+DA:47,12
+DA:48,22
+DA:49,9
+DA:50,4
+DA:52,0
+DA:53,4
+BRDA:47,72,1,6
+BRDA:48,56,1,9
+BRDA:49,23,0,4
+BRDA:49,23,1,5
+BRDA:48,56,0,2
+BRDA:47,72,0,0
+LF:7
+LH:6
+BRF:6
+BRH:5
+FNF:1
+FNH:1
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Algorithms/TwoSum/TwoSumDictionary.cs
+FN:45,System.Int32[] LeetCode.Algorithms.TwoSum.TwoSumDictionary::GetResult(System.Int32[],System.Int32)
+FNDA:4,System.Int32[] LeetCode.Algorithms.TwoSum.TwoSumDictionary::GetResult(System.Int32[],System.Int32)
+DA:46,4
+DA:47,4
+DA:49,20
+DA:50,10
+DA:51,4
+DA:53,6
+DA:55,0
+DA:56,4
+BRDA:49,71,1,10
+BRDA:50,26,0,4
+BRDA:50,26,1,6
+BRDA:49,71,0,0
+LF:8
+LH:7
+BRF:4
+BRH:3
+FNF:1
+FNH:1
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Algorithms/ThreeSum/ThreeSumBruteForce.cs
+FN:50,System.Collections.Generic.IList`1<System.Collections.Generic.IList`1<System.Int32>> LeetCode.Algorithms.ThreeSum.ThreeSumBruteForce::GetResult(System.Int32[])
+FNDA:5,System.Collections.Generic.IList`1<System.Collections.Generic.IList`1<System.Int32>> LeetCode.Algorithms.ThreeSum.ThreeSumBruteForce::GetResult(System.Int32[])
+DA:51,5
+DA:52,5
+DA:54,36
+DA:55,82
+DA:56,160
+DA:57,52
+DA:58,10
+DA:60,5
+DA:62,45
+DA:64,5
+DA:65,5
+BRDA:54,130,1,13
+BRDA:55,112,1,28
+BRDA:56,94,1,52
+BRDA:57,43,0,10
+BRDA:57,43,1,52
+BRDA:56,94,0,28
+BRDA:55,112,0,13
+BRDA:54,130,0,5
+BRDA:62,184,1,10
+BRDA:62,184,0,5
+LF:11
+LH:11
+BRF:10
+BRH:10
+FNF:1
+FNH:1
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Algorithms/ThreeSum/ThreeSumTwoPointers.cs
+FN:48,System.Collections.Generic.IList`1<System.Collections.Generic.IList`1<System.Int32>> LeetCode.Algorithms.ThreeSum.ThreeSumTwoPointers::GetResult(System.Int32[])
+FNDA:5,System.Collections.Generic.IList`1<System.Collections.Generic.IList`1<System.Int32>> LeetCode.Algorithms.ThreeSum.ThreeSumTwoPointers::GetResult(System.Int32[])
+DA:49,5
+DA:50,5
+DA:52,5
+DA:54,36
+DA:55,13
+DA:56,13
+DA:57,1
+DA:59,12
+DA:60,12
+DA:62,34
+DA:63,22
+DA:64,22
+DA:66,22
+DA:69,8
+DA:70,8
+DA:72,14
+DA:73,8
+DA:75,8
+DA:76,8
+DA:78,8
+DA:81,5
+DA:82,5
+DA:84,9
+DA:85,9
+DA:87,22
+DA:88,12
+DA:90,5
+DA:91,5
+BRDA:54,252,1,13
+BRDA:56,24,0,8
+BRDA:56,24,1,5
+BRDA:56,43,1,12
+BRDA:62,230,1,22
+BRDA:66,90,0,17
+BRDA:66,94,1,8
+BRDA:72,168,1,3
+BRDA:72,149,0,9
+BRDA:72,149,1,2
+BRDA:73,197,1,0
+BRDA:72,168,0,8
+BRDA:73,178,0,6
+BRDA:73,178,1,2
+BRDA:73,197,0,8
+BRDA:66,90,1,5
+BRDA:66,94,0,9
+BRDA:62,230,0,12
+BRDA:56,43,0,13
+BRDA:54,252,0,5
+LF:28
+LH:28
+BRF:20
+BRH:19
+FNF:1
+FNH:1
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Algorithms/RomanToInteger/Iterative/RomanNumeral.cs
+FN:23,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_Symbol()
+FNDA:83,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_Symbol()
+DA:24,83
+FN:24,System.Int32 LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_Value()
+FNDA:12,System.Int32 LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_Value()
+DA:25,12
+FN:26,LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_I()
+FNDA:1,LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_I()
+DA:27,1
+FN:27,LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_V()
+FNDA:1,LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_V()
+DA:28,1
+FN:28,LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_X()
+FNDA:1,LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_X()
+DA:29,1
+FN:29,LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_L()
+FNDA:1,LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_L()
+DA:30,1
+FN:30,LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_C()
+FNDA:1,LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_C()
+DA:31,1
+FN:31,LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_D()
+FNDA:1,LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_D()
+DA:32,1
+FN:32,LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_M()
+FNDA:1,LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_M()
+DA:33,1
+FN:34,System.Collections.Generic.List`1<LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral> LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_RomanNumerals()
+FNDA:9,System.Collections.Generic.List`1<LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral> LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::get_RomanNumerals()
+DA:35,9
+BRDA:35,6,0,1
+BRDA:35,6,1,9
+FN:37,System.String LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::ToString()
+FNDA:0,System.String LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::ToString()
+DA:38,0
+DA:39,0
+DA:40,0
+FN:42,System.Collections.Generic.List`1<LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral> LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::GetRomanNumerals()
+FNDA:1,System.Collections.Generic.List`1<LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral> LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::GetRomanNumerals()
+DA:43,1
+DA:44,1
+DA:45,1
+DA:46,1
+DA:47,1
+DA:48,1
+DA:49,1
+DA:50,1
+DA:51,1
+DA:52,1
+DA:53,1
+DA:54,1
+FN:17,System.Void LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::.ctor(LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol,System.Int32)
+FNDA:13,System.Void LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral::.ctor(LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol,System.Int32)
+DA:18,13
+DA:19,13
+DA:20,13
+DA:21,13
+DA:22,13
+LF:30
+LH:27
+BRF:2
+BRH:2
+FNF:13
+FNH:12
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Algorithms/RomanToInteger/Iterative/RomanSymbol.cs
+FN:20,System.Char LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_Char()
+FNDA:99,System.Char LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_Char()
+DA:21,99
+FN:22,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_I()
+FNDA:3,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_I()
+DA:23,3
+FN:23,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_V()
+FNDA:2,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_V()
+DA:24,2
+FN:24,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_X()
+FNDA:4,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_X()
+DA:25,4
+FN:25,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_L()
+FNDA:2,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_L()
+DA:26,2
+FN:26,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_C()
+FNDA:4,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_C()
+DA:27,4
+FN:27,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_D()
+FNDA:2,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_D()
+DA:28,2
+FN:28,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_M()
+FNDA:2,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::get_M()
+DA:29,2
+FN:31,System.String LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::ToString()
+FNDA:0,System.String LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::ToString()
+DA:32,0
+DA:33,0
+DA:34,0
+FN:36,System.Boolean LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::Equals(System.Object)
+FNDA:0,System.Boolean LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::Equals(System.Object)
+DA:37,0
+DA:38,0
+DA:40,0
+DA:41,0
+BRDA:38,14,0,0
+BRDA:38,14,1,0
+FN:43,System.Boolean LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::Equals(LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol)
+FNDA:0,System.Boolean LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::Equals(LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol)
+DA:44,0
+DA:45,0
+DA:46,0
+FN:48,System.Int32 LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::GetHashCode()
+FNDA:0,System.Int32 LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::GetHashCode()
+DA:49,0
+DA:50,0
+DA:51,0
+FN:15,System.Void LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::.ctor(System.Char)
+FNDA:19,System.Void LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol::.ctor(System.Char)
+DA:16,19
+DA:17,19
+DA:18,19
+DA:19,19
+LF:25
+LH:12
+BRF:2
+BRH:0
+FNF:13
+FNH:9
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Algorithms/RomanToInteger/Iterative/RomanToIntegerIterative.cs
+FN:55,System.Int32 LeetCode.Algorithms.RomanToInteger.Iterative.RomanToIntegerIterative::GetResult(System.String)
+FNDA:3,System.Int32 LeetCode.Algorithms.RomanToInteger.Iterative.RomanToIntegerIterative::GetResult(System.String)
+DA:56,3
+DA:57,3
+DA:59,30
+DA:60,12
+DA:61,12
+DA:62,12
+DA:64,12
+DA:65,76
+DA:67,12
+DA:68,3
+DA:69,3
+DA:70,3
+DA:71,3
+DA:73,9
+DA:74,28
+DA:75,9
+DA:76,12
+DA:78,15
+DA:79,3
+BRDA:59,144,1,12
+BRDA:67,77,0,3
+BRDA:67,77,1,9
+BRDA:59,144,0,3
+BRDA:65,25,0,16
+BRDA:65,25,1,48
+LF:19
+LH:19
+BRF:6
+BRH:6
+FNF:1
+FNH:1
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Algorithms/RomanToInteger/Iterative/SubtractiveRomanNumeral.cs
+FN:23,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_SecondSymbol()
+FNDA:16,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_SecondSymbol()
+DA:24,16
+FN:25,LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_IV()
+FNDA:1,LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_IV()
+DA:26,1
+FN:26,LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_IX()
+FNDA:1,LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_IX()
+DA:27,1
+FN:27,LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_XL()
+FNDA:1,LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_XL()
+DA:28,1
+FN:28,LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_XC()
+FNDA:1,LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_XC()
+DA:29,1
+FN:29,LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_CD()
+FNDA:1,LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_CD()
+DA:30,1
+FN:30,LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_CM()
+FNDA:1,LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_CM()
+DA:31,1
+FN:33,System.Collections.Generic.List`1<LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral> LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_SubtractiveRomanNumerals()
+FNDA:12,System.Collections.Generic.List`1<LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral> LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::get_SubtractiveRomanNumerals()
+DA:34,12
+BRDA:34,6,0,1
+BRDA:34,6,1,12
+FN:36,System.String LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::ToString()
+FNDA:0,System.String LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::ToString()
+DA:37,0
+DA:38,0
+DA:39,0
+BRDA:38,19,0,0
+BRDA:38,19,1,0
+FN:41,System.Collections.Generic.List`1<LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral> LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::GetSubtractiveRomanNumerals()
+FNDA:1,System.Collections.Generic.List`1<LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral> LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::GetSubtractiveRomanNumerals()
+DA:42,1
+DA:43,1
+DA:44,1
+DA:45,1
+DA:46,1
+DA:47,1
+DA:48,1
+DA:49,1
+DA:50,1
+DA:51,1
+DA:52,1
+FN:17,System.Void LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::.ctor(LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol,System.Int32)
+FNDA:6,System.Void LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral::.ctor(LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol,LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol,System.Int32)
+DA:18,6
+DA:19,6
+DA:20,6
+DA:21,6
+DA:22,6
+LF:27
+LH:24
+BRF:4
+BRH:2
+FNF:11
+FNH:10
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Algorithms/RemoveElement/RemoveElementBruteForce.cs
+FN:16,System.Int32 LeetCode.Algorithms.RemoveElement.RemoveElementBruteForce::GetResult(System.Int32[],System.Int32)
+FNDA:2,System.Int32 LeetCode.Algorithms.RemoveElement.RemoveElementBruteForce::GetResult(System.Int32[],System.Int32)
+DA:17,2
+DA:18,28
+DA:19,184
+DA:20,80
+DA:21,146
+DA:22,39
+DA:24,14
+DA:25,2
+BRDA:18,135,1,12
+BRDA:19,119,1,80
+BRDA:20,35,0,34
+BRDA:21,103,1,39
+BRDA:20,35,1,80
+BRDA:21,103,0,80
+BRDA:19,119,0,12
+BRDA:18,135,0,2
+LF:8
+LH:8
+BRF:8
+BRH:8
+FNF:1
+FNH:1
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Algorithms/PlusOne/PlusOneIncrementDigitArray.cs
+FN:47,System.Int32[] LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray::GetResult(System.Int32[])
+FNDA:7,System.Int32[] LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray::GetResult(System.Int32[])
+DA:48,7
+DA:49,7
+DA:51,7
+DA:53,26
+DA:54,11
+DA:55,6
+DA:56,6
+DA:57,6
+DA:58,6
+DA:60,5
+DA:61,5
+DA:62,5
+DA:63,5
+DA:66,7
+DA:67,2
+DA:68,2
+DA:69,2
+DA:70,2
+DA:71,5
+DA:72,7
+BRDA:53,80,1,11
+BRDA:54,38,0,6
+BRDA:54,38,1,5
+BRDA:53,80,0,7
+BRDA:66,90,0,2
+BRDA:66,90,1,5
+LF:20
+LH:20
+BRF:6
+BRH:6
+FNF:1
+FNH:1
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Algorithms/MergeTwoSortedLists/MergeTwoSortedListsLinear.cs
+FN:39,LeetCode.Core.Models.ListNode LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear::GetResult(LeetCode.Core.Models.ListNode,LeetCode.Core.Models.ListNode)
+FNDA:4,LeetCode.Core.Models.ListNode LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear::GetResult(LeetCode.Core.Models.ListNode,LeetCode.Core.Models.ListNode)
+DA:40,4
+DA:41,5
+DA:43,4
+DA:45,2
+DA:47,2
+DA:48,2
+DA:49,2
+DA:51,2
+DA:53,12
+DA:54,10
+DA:55,10
+DA:56,2
+DA:57,2
+DA:59,4
+DA:61,2
+DA:63,2
+DA:65,2
+DA:67,2
+DA:70,8
+DA:71,1
+DA:72,1
+DA:74,2
+DA:76,1
+DA:78,1
+DA:80,1
+DA:82,1
+DA:85,7
+DA:86,4
+DA:87,4
+DA:89,7
+DA:91,4
+DA:93,4
+DA:95,4
+DA:96,4
+DA:98,3
+DA:99,3
+DA:101,5
+DA:103,3
+DA:105,3
+DA:107,3
+DA:108,3
+DA:109,7
+DA:111,2
+DA:114,0
+DA:115,4
+BRDA:41,2,0,2
+BRDA:41,2,1,2
+BRDA:41,13,0,1
+BRDA:41,13,1,3
+BRDA:43,23,0,1
+BRDA:43,23,1,2
+BRDA:43,34,0,1
+BRDA:43,34,1,2
+BRDA:45,44,0,2
+BRDA:45,44,1,0
+BRDA:45,55,0,0
+BRDA:45,55,1,2
+BRDA:47,65,0,2
+BRDA:47,65,1,0
+BRDA:47,78,0,2
+BRDA:53,397,1,10
+BRDA:55,97,0,2
+BRDA:55,97,1,8
+BRDA:55,110,0,2
+BRDA:59,136,0,2
+BRDA:59,136,1,2
+BRDA:63,153,0,0
+BRDA:63,153,1,2
+BRDA:55,110,1,8
+BRDA:70,173,0,8
+BRDA:70,173,1,0
+BRDA:70,186,0,1
+BRDA:74,212,0,1
+BRDA:74,212,1,1
+BRDA:78,229,0,0
+BRDA:78,229,1,1
+BRDA:70,186,1,7
+BRDA:85,266,0,4
+BRDA:89,292,0,3
+BRDA:89,292,1,4
+BRDA:93,309,0,1
+BRDA:93,309,1,4
+BRDA:85,266,1,3
+BRDA:101,350,0,2
+BRDA:101,350,1,3
+BRDA:105,367,0,1
+BRDA:105,367,1,3
+BRDA:53,384,0,4
+BRDA:53,384,1,8
+BRDA:53,397,0,2
+BRDA:47,78,1,0
+LF:45
+LH:44
+BRF:46
+BRH:39
+FNF:1
+FNH:1
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Algorithms/BinaryTreeInorderTraversal/BinaryTreeInorderTraversalRecursive.cs
+FN:18,System.Collections.Generic.IList`1<System.Int32> LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive::GetResult(LeetCode.Core.Models.TreeNode)
+FNDA:3,System.Collections.Generic.IList`1<System.Int32> LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive::GetResult(LeetCode.Core.Models.TreeNode)
+DA:19,3
+DA:20,3
+DA:22,3
+DA:23,3
+BRDA:20,7,0,0
+BRDA:20,7,1,3
+FN:25,System.Collections.Generic.List`1<System.Int32> LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive::InOrderTraversal(LeetCode.Core.Models.TreeNode)
+FNDA:5,System.Collections.Generic.List`1<System.Int32> LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive::InOrderTraversal(LeetCode.Core.Models.TreeNode)
+DA:26,5
+DA:27,5
+DA:29,5
+DA:31,6
+DA:33,5
+DA:34,5
+DA:36,5
+DA:38,6
+DA:40,5
+DA:42,5
+DA:43,5
+BRDA:31,24,0,1
+BRDA:31,24,1,5
+BRDA:38,78,0,1
+BRDA:38,78,1,5
+LF:15
+LH:15
+BRF:6
+BRH:5
+FNF:2
+FNH:2
+end_of_record
+SF:/home/runner/work/LeetCode/LeetCode/LeetCode/Algorithms/AddTwoNumbers/AddTwoNumbersInPlaceCarry.cs
+FN:19,LeetCode.Core.Models.ListNode LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry::GetResultV2(LeetCode.Core.Models.ListNode,LeetCode.Core.Models.ListNode)
+FNDA:4,LeetCode.Core.Models.ListNode LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry::GetResultV2(LeetCode.Core.Models.ListNode,LeetCode.Core.Models.ListNode)
+DA:20,4
+DA:21,4
+DA:23,4
+DA:25,25
+DA:26,21
+DA:27,21
+DA:28,21
+DA:30,21
+DA:32,21
+DA:34,21
+DA:35,18
+DA:36,18
+DA:37,18
+DA:38,18
+DA:40,21
+DA:41,21
+DA:43,21
+DA:44,21
+DA:46,6
+DA:48,4
+DA:49,4
+BRDA:25,118,1,21
+BRDA:27,9,0,9
+BRDA:27,9,1,12
+BRDA:28,22,0,3
+BRDA:28,22,1,18
+BRDA:34,53,0,18
+BRDA:34,53,1,21
+BRDA:40,67,0,9
+BRDA:40,67,1,12
+BRDA:41,81,0,3
+BRDA:41,81,1,18
+BRDA:25,105,0,13
+BRDA:25,105,1,12
+BRDA:25,118,0,4
+BRDA:46,128,0,2
+BRDA:46,128,1,4
+FN:51,LeetCode.Core.Models.ListNode LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry::ReverseList(LeetCode.Core.Models.ListNode)
+FNDA:4,LeetCode.Core.Models.ListNode LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry::ReverseList(LeetCode.Core.Models.ListNode)
+DA:52,4
+DA:53,4
+DA:54,4
+DA:56,27
+DA:57,23
+DA:58,23
+DA:59,23
+DA:60,23
+DA:61,23
+DA:62,23
+DA:64,4
+DA:65,4
+BRDA:56,33,1,23
+BRDA:56,33,0,4
+FN:67,LeetCode.Core.Models.ListNode LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry::GetResult(LeetCode.Core.Models.ListNode,LeetCode.Core.Models.ListNode)
+FNDA:0,LeetCode.Core.Models.ListNode LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry::GetResult(LeetCode.Core.Models.ListNode,LeetCode.Core.Models.ListNode)
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:78,0
+DA:79,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:85,0
+DA:86,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:93,0
+DA:95,0
+DA:97,0
+DA:99,0
+DA:101,0
+DA:103,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:111,0
+DA:112,0
+DA:114,0
+DA:116,0
+DA:117,0
+BRDA:74,54,1,0
+BRDA:81,89,1,0
+BRDA:74,54,0,0
+BRDA:81,89,0,0
+BRDA:91,108,0,0
+BRDA:91,108,1,0
+BRDA:91,130,1,0
+BRDA:95,151,0,0
+BRDA:95,151,1,0
+BRDA:99,180,0,0
+BRDA:99,180,1,0
+BRDA:105,216,0,0
+BRDA:105,216,1,0
+BRDA:91,130,0,0
+BRDA:114,258,0,0
+BRDA:114,258,1,0
+LF:67
+LH:33
+BRF:34
+BRH:18
+FNF:3
+FNH:2
+end_of_record
