@@ -47,10 +47,13 @@ public static class TwoSumDictionary
         var dictionary = new Dictionary<int, int>();
 
         for (var i = 0; i < nums.Length; i++)
-            if (dictionary.TryGetValue(target - nums[i], out var value))
-                return new[] { value, i };
-            else
-                dictionary.TryAdd(nums[i], i);
+        {
+            var complement = target - nums[i];
+
+            if (dictionary.TryGetValue(complement, out var value)) return new[] { value, i };
+
+            if (!dictionary.ContainsKey(nums[i])) dictionary[nums[i]] = i;
+        }
 
         return Array.Empty<int>();
     }
