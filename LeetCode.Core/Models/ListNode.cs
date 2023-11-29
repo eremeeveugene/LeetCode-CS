@@ -16,12 +16,12 @@ namespace LeetCode.Core.Models;
 /// </summary>
 public class ListNode
 {
-    public ListNode? Next;
-    public int Val;
+    public ListNode? next;
+    public int val;
 
     public ListNode(int val = 0, ListNode? next = null)
     {
-        Val = val;
-        Next = next;
+        this.val = val;
+        this.next = next;
     }
 }

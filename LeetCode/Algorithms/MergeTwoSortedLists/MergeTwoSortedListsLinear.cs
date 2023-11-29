@@ -9,7 +9,11 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+#region
+
 using LeetCode.Core.Models;
+
+#endregion
 
 namespace LeetCode.Algorithms.MergeTwoSortedLists;
 
@@ -36,6 +40,12 @@ namespace LeetCode.Algorithms.MergeTwoSortedLists;
 /// </summary>
 public static class MergeTwoSortedListsLinear
 {
+    /// <summary>
+    ///     Time complexity - O (n + m)
+    /// </summary>
+    /// <param name="list1"></param>
+    /// <param name="list2"></param>
+    /// <returns></returns>
     public static ListNode? GetResult(ListNode? list1, ListNode? list2)
     {
         if (list1 == null && list2 == null) return null;
@@ -54,57 +64,57 @@ public static class MergeTwoSortedListsLinear
             {
                 if (list1 == null && list2 != null)
                 {
-                    var list2CurrentNode = new ListNode(list2.Val);
+                    var list2CurrentNode = new ListNode(list2.val);
 
-                    if (previousNode != null) previousNode.Next = list2CurrentNode;
+                    if (previousNode != null) previousNode.next = list2CurrentNode;
 
                     previousNode = list2CurrentNode;
 
                     headNode ??= list2CurrentNode;
 
-                    list2 = list2.Next;
+                    list2 = list2.next;
 
                     continue;
                 }
 
                 if (list1 != null && list2 == null)
                 {
-                    var list1CurrentNode = new ListNode(list1.Val);
+                    var list1CurrentNode = new ListNode(list1.val);
 
-                    if (previousNode != null) previousNode.Next = list1CurrentNode;
+                    if (previousNode != null) previousNode.next = list1CurrentNode;
 
                     previousNode = list1CurrentNode;
 
                     headNode ??= list1CurrentNode;
 
-                    list1 = list1.Next;
+                    list1 = list1.next;
 
                     continue;
                 }
 
-                if (list1.Val < list2.Val)
+                if (list1.val < list2.val)
                 {
-                    var list1CurrentNode = new ListNode(list1.Val);
+                    var list1CurrentNode = new ListNode(list1.val);
 
-                    if (previousNode != null) previousNode.Next = list1CurrentNode;
+                    if (previousNode != null) previousNode.next = list1CurrentNode;
 
                     previousNode = list1CurrentNode;
 
                     headNode ??= list1CurrentNode;
 
-                    list1 = list1.Next;
+                    list1 = list1.next;
                 }
                 else
                 {
-                    var list2CurrentNode = new ListNode(list2.Val);
+                    var list2CurrentNode = new ListNode(list2.val);
 
-                    if (previousNode != null) previousNode.Next = list2CurrentNode;
+                    if (previousNode != null) previousNode.next = list2CurrentNode;
 
                     previousNode = list2CurrentNode;
 
                     headNode ??= list2CurrentNode;
 
-                    list2 = list2.Next;
+                    list2 = list2.next;
                 }
             }
 
