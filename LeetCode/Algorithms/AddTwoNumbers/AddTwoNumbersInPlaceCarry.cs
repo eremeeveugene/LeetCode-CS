@@ -24,8 +24,8 @@ public static class AddTwoNumbersInPlaceCarry
 
         while (l1 != null || l2 != null)
         {
-            var val1 = l1?.Val ?? 0;
-            var val2 = l2?.Val ?? 0;
+            var val1 = l1?.val ?? 0;
+            var val2 = l2?.val ?? 0;
 
             var sum = val1 + val2 + carry;
 
@@ -37,8 +37,8 @@ public static class AddTwoNumbersInPlaceCarry
                 sum -= 10;
             }
 
-            l1 = l1?.Next;
-            l2 = l2?.Next;
+            l1 = l1?.next;
+            l2 = l2?.next;
 
             head = new ListNode(sum, head);
         }
@@ -55,8 +55,8 @@ public static class AddTwoNumbersInPlaceCarry
 
         while (current != null)
         {
-            var next = current.Next;
-            current.Next = prev;
+            var next = current.next;
+            current.next = prev;
             prev = current;
             current = next;
         }
@@ -73,16 +73,16 @@ public static class AddTwoNumbersInPlaceCarry
 
         while (l1 != null)
         {
-            list1.Add(l1.Val);
+            list1.Add(l1.val);
 
-            l1 = l1.Next;
+            l1 = l1.next;
         }
 
         while (l2 != null)
         {
-            list2.Add(l2.Val);
+            list2.Add(l2.val);
 
-            l2 = l2.Next;
+            l2 = l2.next;
         }
 
 

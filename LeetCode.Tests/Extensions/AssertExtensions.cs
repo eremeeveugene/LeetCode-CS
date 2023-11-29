@@ -19,9 +19,9 @@ public static class AssertExtensions
     {
         while (expectedList != null && actualList != null)
         {
-            Assert.AreEqual(expectedList.Val, actualList.Val, "Values should be equal at each node.");
-            expectedList = expectedList.Next;
-            actualList = actualList.Next;
+            Assert.AreEqual(expectedList.val, actualList.val, "Values should be equal at each node.");
+            expectedList = expectedList.next;
+            actualList = actualList.next;
         }
 
         Assert.IsNull(actualList, "Actual result should not have more nodes.");
