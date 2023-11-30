@@ -47,6 +47,8 @@ public static class ThreeSumTwoPointers
     /// <returns></returns>
     public static IList<IList<int>> GetResult(int[] nums)
     {
+        if (nums.Length < 3) return new List<IList<int>>();
+
         Array.Sort(nums);
 
         var result = new List<IList<int>>();
