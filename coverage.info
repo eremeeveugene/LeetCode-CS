@@ -218,12 +218,12 @@ FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor::Third(
 DA:47,3
 DA:48,3
 DA:49,3
-DA:50,4
-DA:51,1
+DA:50,5
+DA:51,2
 DA:53,3
 DA:54,3
 DA:55,3
-BRDA:50,48,1,1
+BRDA:50,48,1,2
 BRDA:50,48,0,3
 FN:15,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor::.ctor()
 FNDA:3,System.Void LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor::.ctor()
@@ -336,27 +336,27 @@ DA:26,5
 DA:27,5
 DA:28,5
 DA:29,11
-DA:30,10
-DA:31,20
-DA:32,14
-DA:33,14
-DA:35,18
-DA:36,10
+DA:30,9
+DA:31,15
+DA:32,9
+DA:33,9
+DA:35,12
+DA:36,6
 DA:38,6
 DA:40,6
 DA:41,6
-DA:42,1
+DA:42,2
 DA:43,5
-BRDA:29,140,1,10
-BRDA:31,102,1,14
-BRDA:35,54,0,4
-BRDA:35,54,1,10
-BRDA:31,71,0,20
-BRDA:31,81,0,7
-BRDA:31,81,1,13
+BRDA:29,140,1,9
+BRDA:31,102,1,9
+BRDA:35,54,0,3
+BRDA:35,54,1,6
+BRDA:31,71,0,15
+BRDA:31,81,0,6
+BRDA:31,81,1,9
 BRDA:31,71,1,0
 BRDA:31,102,0,6
-BRDA:29,140,0,1
+BRDA:29,140,0,2
 FN:45,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::Buzz(System.Action)
 FNDA:5,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::Buzz(System.Action)
 DA:46,5
@@ -378,8 +378,8 @@ BRDA:49,123,1,7
 BRDA:51,85,1,13
 BRDA:55,54,0,4
 BRDA:55,54,1,9
-BRDA:51,67,0,13
-BRDA:51,67,1,3
+BRDA:51,67,0,10
+BRDA:51,67,1,6
 BRDA:51,85,0,3
 BRDA:49,123,0,1
 FN:65,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::Fizzbuzz(System.Action)
@@ -403,8 +403,8 @@ BRDA:69,123,1,5
 BRDA:71,85,1,12
 BRDA:75,54,0,4
 BRDA:75,54,1,8
-BRDA:71,67,0,3
-BRDA:71,67,1,10
+BRDA:71,67,0,6
+BRDA:71,67,1,7
 BRDA:71,85,0,1
 BRDA:69,123,0,1
 FN:85,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::Number(System.Action`1<System.Int32>)
@@ -414,22 +414,22 @@ DA:87,5
 DA:88,5
 DA:89,21
 DA:90,19
-DA:91,24
-DA:92,8
-DA:93,8
-DA:95,11
-DA:96,5
+DA:91,26
+DA:92,10
+DA:93,10
+DA:95,13
+DA:96,7
 DA:98,16
 DA:100,16
 DA:101,16
 DA:102,2
 DA:103,5
 BRDA:89,129,1,19
-BRDA:91,85,1,8
+BRDA:91,85,1,10
 BRDA:95,54,0,3
-BRDA:95,54,1,5
-BRDA:91,67,0,18
-BRDA:91,67,1,6
+BRDA:95,54,1,7
+BRDA:91,67,0,19
+BRDA:91,67,1,7
 BRDA:91,85,0,16
 BRDA:89,129,0,2
 FN:105,System.Void LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock::IncrementNumber()
