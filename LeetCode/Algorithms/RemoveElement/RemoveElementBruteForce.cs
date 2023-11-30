@@ -11,8 +11,18 @@
 
 namespace LeetCode.Algorithms.RemoveElement;
 
+/// <summary>
+///     Remove Element
+///     https://leetcode.com/problems/remove-element/description/
+/// </summary>
 public static class RemoveElementBruteForce
 {
+    /// <summary>
+    ///     Time complexity - O (n^3)
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <param name="val"></param>
+    /// <returns></returns>
     public static int GetResult(int[] nums, int val)
     {
         for (var k = 0; k < nums.Length; k++)
