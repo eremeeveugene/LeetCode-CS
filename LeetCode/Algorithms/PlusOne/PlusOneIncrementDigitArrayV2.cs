@@ -42,7 +42,7 @@ namespace LeetCode.Algorithms.PlusOne;
 ///     0 less than or equal to digits[i] less than or equal to 9
 ///     digits does not contain any leading 0's.
 /// </summary>
-public static class PlusOneIncrementDigitArray
+public static class PlusOneIncrementDigitArrayV2
 {
     /// <summary>
     ///     Time complexity - O (n)
@@ -51,28 +51,19 @@ public static class PlusOneIncrementDigitArray
     /// <returns></returns>
     public static int[] GetResult(int[] digits)
     {
-        var carryDigit = 0;
-
-        digits[^1] += 1;
-
-        for (var index = digits.Length - 1; index >= 0; index--)
-            if (digits[index] + carryDigit > 9)
+        for (var i = digits.Length - 1; i >= 0; i--)
+        {
+            if (digits[i] < 9)
             {
-                digits[index] = 0;
-                carryDigit = 1;
-            }
-            else
-            {
-                digits[index] += carryDigit;
-                carryDigit = 0;
-                break;
+                digits[i]++;
+                return digits;
             }
 
-        if (carryDigit > 0)
-            return new[]
-            {
-                carryDigit
-            }.Concat(digits).ToArray();
-        return digits;
+            digits[i] = 0;
+        }
+
+        var newDigits = new int[digits.Length + 1];
+        newDigits[0] = 1;
+        return newDigits;
     }
 }
