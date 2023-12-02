@@ -1,7 +1,7 @@
 name: .NET
 
 on:
-  pull_request:
+  push:
     branches: [ "develop" ]
     
 jobs:
@@ -44,12 +44,3 @@ jobs:
       with:
         name: coverage-report
         path: LeetCode.Tests/results
-        
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./LeetCode.Tests/results/
-        publish_branch: gh-pages
-        clean: true
-        keep_files: true
