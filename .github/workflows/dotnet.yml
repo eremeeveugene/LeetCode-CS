@@ -31,24 +31,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: 8.x.x
-      - name: Restore dependencies
-        run: dotnet restore
       - name: Test with Coverage
         run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput='./results/'
       - name: Check Coverage Threshold
-        run: |
-          coverage=$(grep -Po 'Total\s+\|\s+\K\d+\.\d+(?=%)' ./LeetCode.Tests/results/coverage.info)
-          threshold=90
-            echo "Coverage: $coverage% / $threshold%"
-          if (( $(echo "$coverage < $threshold" | bc -l) )); then
-            echo "Coverage of $coverage% is below the required threshold of $threshold%"
-            exit 1
-          fi
+      run: |
+        diff-cover coverage.xml --compare-branch=origin/develop --fail-under=90
+        # coverage.xml is the coverage report from the current changes
+        # Adjust the command according to your setup and coverage report format
 
   upload-coverage:
     needs: test-with-coverage
