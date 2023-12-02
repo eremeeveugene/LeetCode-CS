@@ -19,11 +19,10 @@ jobs:
         run: dotnet restore
       - name: Build
         run: dotnet build --no-restore
-        
-  test-with-coverage:
+
+  tests:
     needs: build
     runs-on: ubuntu-latest
-  
     steps:
       - uses: actions/checkout@v3
       - name: Setup .NET
@@ -32,15 +31,27 @@ jobs:
           dotnet-version: '8.x'
       - name: Restore dependencies
         run: dotnet restore
-      - name: Build Test Project
-        run: dotnet build LeetCode.Tests/LeetCode.Tests.csproj --configuration Debug --no-restore
+      - name: Run Tests
+        run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal
+      
+  test-with-coverage:
+    needs: tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'
+      - name: Restore dependencies
+        run: dotnet restore
       - name: Test with Coverage
         run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput='./results/'
-  
 
   upload-coverage:
     needs: test-with-coverage
     runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
     steps:
       - uses: actions/checkout@v3
       - name: Upload Coverage Report
