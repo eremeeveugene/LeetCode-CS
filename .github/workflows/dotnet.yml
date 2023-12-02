@@ -69,12 +69,12 @@ jobs:
       - name: Install ReportGenerator
         run: dotnet tool install -g dotnet-reportgenerator-globaltool
       - name: Generate Detailed Coverage Report
-        run: reportgenerator -reports:'./results/coverage.cobertura.xml' -targetdir:'./coverage-report' -reporttypes:'HtmlInline_AzurePipelines;Cobertura'
+        run: reportgenerator -reports:'./LeetCode.Tests/results/coverage.cobertura.xml' -targetdir:'./coverage-report' -reporttypes:'HtmlInline_AzurePipelines;Cobertura'
       - name: Check Coverage for Current Changes
         run: |
           git fetch origin ${{ github.base_ref }}:${{ github.base_ref }}
           git diff --name-only ${{ github.base_ref }} | grep -E '\.cs$' > changed_files.txt
-          coverage=$(reportgenerator -reports:'./results/coverage.cobertura.xml' -targetdir:'./coverage-report' -reporttypes:'TextSummary' -assemblyfilters:'+LeetCode.Tests' -filefilters:'@changed_files.txt' | grep -Po 'Total Line coverage: \K\d+.\d+(?=%)')
+          coverage=$(reportgenerator -reports:'./LeetCode.Tests/results/coverage.cobertura.xml' -targetdir:'./coverage-report' -reporttypes:'TextSummary' -assemblyfilters:'+LeetCode.Tests' -filefilters:'@changed_files.txt' | grep -Po 'Total Line coverage: \K\d+.\d+(?=%)')
           echo "Coverage for changed files: $coverage%"
           if (( $(echo "$coverage < 90" | bc -l) )); then
             echo "Coverage of $coverage% for changed files is below the required threshold of 90%"
