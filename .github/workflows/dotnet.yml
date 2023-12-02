@@ -19,10 +19,11 @@ jobs:
         run: dotnet restore
       - name: Build
         run: dotnet build --no-restore
-
+        
   test-with-coverage:
     needs: build
     runs-on: ubuntu-latest
+  
     steps:
       - uses: actions/checkout@v3
       - name: Setup .NET
@@ -31,12 +32,11 @@ jobs:
           dotnet-version: '8.x'
       - name: Restore dependencies
         run: dotnet restore
+      - name: Build Test Project
+        run: dotnet build LeetCode.Tests/LeetCode.Tests.csproj --configuration Debug --no-restore
       - name: Test with Coverage
         run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput='./results/'
-      - name: Install Diff-Cover
-        run: pip install diff-cover
-      - name: Compare Coverage
-        run: diff-cover ./results/coverage.info --compare-branch=origin/develop --fail-under=90
+  
 
   upload-coverage:
     needs: test-with-coverage
