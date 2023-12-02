@@ -33,7 +33,7 @@ jobs:
     - name: Check Coverage Threshold
       id: check-coverage
       run: |
-        coverage=$(grep -Po 'Total\s+\|\s+\K\d+\.\d+(?=%)' ./results/coverage.info)
+        coverage=$(grep -Po 'Total\s+\|\s+\K\d+\.\d+(?=%)' ./LeetCode.Tests/results/coverage.info)
         threshold=90
         echo "Coverage: $coverage%"
         if (( $(echo "$coverage < $threshold" | bc -l) )); then
