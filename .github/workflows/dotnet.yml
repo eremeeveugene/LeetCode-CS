@@ -56,14 +56,14 @@ jobs:
 
   deploy:
     needs: upload-coverage
-      runs-on: ubuntu-latest
-        if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
-        steps:
-          - name: Deploy to GitHub Pages
-            uses: peaceiris/actions-gh-pages@v3
-            with:
-              github_token: ${{ secrets.GITHUB_TOKEN }}
-              publish_dir: ./LeetCode.Tests/results/
-              publish_branch: gh-pages
-              clean: true
-              keep_files: true
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+    steps:
+      - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./LeetCode.Tests/results/
+        publish_branch: gh-pages
+        clean: true
+        keep_files: true
