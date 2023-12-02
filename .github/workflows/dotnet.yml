@@ -1,6 +1,8 @@
-name: Coverage
+name: .NET
 
 on:
+  push:
+    branches: [ "develop" ]
   pull_request:
     branches: [ "develop" ]
     
@@ -15,23 +17,26 @@ jobs:
       
     steps:
     - uses: actions/checkout@v3
-    
+
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 8.x.x
-        
+
     - name: Restore dependencies
       run: dotnet restore
-      
+
     - name: Build
       run: dotnet build --no-restore
 
+  test-with-coverage:
+    needs: build
+    runs-on: ubuntu-latest
+    
     - name: Test with Coverage
       run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput='./results/'
-
+  
     - name: Check Coverage Threshold
-      id: check-coverage
       run: |
         coverage=$(grep -Po 'Total\s+\|\s+\K\d+\.\d+(?=%)' ./LeetCode.Tests/results/coverage.info)
         threshold=90
@@ -40,3 +45,25 @@ jobs:
           echo "Coverage of $coverage% is below the required threshold of $threshold%"
           exit 1
         fi
+
+  upload-coverage:
+    needs: test-with-coverage
+    - name: Upload Coverage Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report
+        path: LeetCode.Tests/results
+
+  deploy:
+    needs: upload-coverage
+      runs-on: ubuntu-latest
+        if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+        steps:
+          - name: Deploy to GitHub Pages
+            uses: peaceiris/actions-gh-pages@v3
+            with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              publish_dir: ./LeetCode.Tests/results/
+              publish_branch: gh-pages
+              clean: true
+              keep_files: true
