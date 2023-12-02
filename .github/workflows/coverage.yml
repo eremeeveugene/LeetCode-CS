@@ -28,4 +28,15 @@ jobs:
       run: dotnet build --no-restore
 
     - name: Test with Coverage
-      run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput='./results/' /p:Threshold=90 /p:ThresholdType=line /p:ThresholdStat=total
+      run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput='./results/'
+
+    - name: Check Coverage Threshold
+      id: check-coverage
+      run: |
+        coverage=$(grep -Po 'Total\s+\|\s+\K\d+\.\d+(?=%)' ./results/coverage.info)
+        threshold=90
+        echo "Coverage: $coverage%"
+        if (( $(echo "$coverage < $threshold" | bc -l) )); then
+          echo "Coverage of $coverage% is below the required threshold of $threshold%"
+          exit 1
+        fi
