@@ -50,7 +50,7 @@ jobs:
       - name: Run Tests
         run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal
 
-  test-with-coverage:
+  coverage:
     needs: tests
     runs-on: ubuntu-latest
     steps:
@@ -64,11 +64,25 @@ jobs:
         with:
           name: build-artifacts
           path: LeetCode.Tests
-      - name: Test with Coverage
+      - name: Generate Coverage Report
         run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput='./results/'
-
+      - name: Install ReportGenerator
+        run: dotnet tool install -g dotnet-reportgenerator-globaltool
+      - name: Generate Detailed Coverage Report
+        run: reportgenerator -reports:'./results/coverage.cobertura.xml' -targetdir:'./coverage-report' -reporttypes:'HtmlInline_AzurePipelines;Cobertura'
+      - name: Check Coverage for Current Changes
+        run: |
+          git fetch origin ${{ github.base_ref }}:${{ github.base_ref }}
+          git diff --name-only ${{ github.base_ref }} | grep -E '\.cs$' > changed_files.txt
+          coverage=$(reportgenerator -reports:'./results/coverage.cobertura.xml' -targetdir:'./coverage-report' -reporttypes:'TextSummary' -assemblyfilters:'+LeetCode.Tests' -filefilters:'@changed_files.txt' | grep -Po 'Total Line coverage: \K\d+.\d+(?=%)')
+          echo "Coverage for changed files: $coverage%"
+          if (( $(echo "$coverage < 90" | bc -l) )); then
+            echo "Coverage of $coverage% for changed files is below the required threshold of 90%"
+            exit 1
+          fi
+          
   upload-coverage:
-    needs: test-with-coverage
+    needs: coverage
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
     steps:
