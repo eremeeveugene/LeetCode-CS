@@ -44,7 +44,7 @@ jobs:
         run: |
         coverage=$(grep -Po 'Total\s+\|\s+\K\d+\.\d+(?=%)' ./LeetCode.Tests/results/coverage.info)
         threshold=90
-        echo "Coverage: $coverage% / $threshold%"
+          echo "Coverage: $coverage% / $threshold%"
         if (( $(echo "$coverage < $threshold" | bc -l) )); then
           echo "Coverage of $coverage% is below the required threshold of $threshold%"
           exit 1
