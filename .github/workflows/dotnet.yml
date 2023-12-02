@@ -15,10 +15,23 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.x'
+      - name: Cache NuGet packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/LeetCode.Tests/*.csproj') }}
+          restore-keys: ${{ runner.os }}-nuget-
       - name: Restore dependencies
         run: dotnet restore
       - name: Build
         run: dotnet build --no-restore
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts
+          path: |
+            LeetCode.Tests/bin
+            LeetCode.Tests/obj
 
   tests:
     needs: build
@@ -29,11 +42,14 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.x'
-      - name: Restore dependencies
-        run: dotnet restore
+      - name: Download build artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: build-artifacts
+          path: LeetCode.Tests
       - name: Run Tests
         run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal
-      
+
   test-with-coverage:
     needs: tests
     runs-on: ubuntu-latest
@@ -43,8 +59,11 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.x'
-      - name: Restore dependencies
-        run: dotnet restore
+      - name: Download build artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: build-artifacts
+          path: LeetCode.Tests
       - name: Test with Coverage
         run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput='./results/'
 
