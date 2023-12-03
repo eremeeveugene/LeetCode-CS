@@ -33,8 +33,25 @@ jobs:
             LeetCode.Tests/bin
             LeetCode.Tests/obj
 
-  coverage:
+  tests:
     needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'
+      - name: Download build artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: build-artifacts
+          path: LeetCode.Tests
+      - name: Run Tests
+        run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal
+   
+  coverage:
+    needs: tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -58,24 +75,7 @@ jobs:
             echo "Coverage is below 90%. It's at $coveragePercentage%"
             exit 1
           fi
-
-  tests:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '8.x'
-      - name: Download build artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: build-artifacts
-          path: LeetCode.Tests
-      - name: Run Tests
-        run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal
-          
+       
   upload-coverage:
     needs: coverage
     runs-on: ubuntu-latest
