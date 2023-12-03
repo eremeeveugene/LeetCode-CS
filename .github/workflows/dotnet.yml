@@ -9,49 +9,96 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
-    permissions:
-      contents: write
-      issues: write
-      pull-requests: write
-      
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 8.x.x
-        
-    - name: Restore dependencies
-      run: dotnet restore
-      
-    - name: Build
-      run: dotnet build --no-restore
-      
-    - name: Test with Coverage
-      run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput='./results/'
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'
+      - name: Cache NuGet packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/LeetCode.Tests/*.csproj') }}
+          restore-keys: ${{ runner.os }}-nuget-
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts
+          path: |
+            LeetCode.Tests/bin
+            LeetCode.Tests/obj
 
-    - name: Install ReportGenerator Tool
-      run: dotnet tool install --global dotnet-reportgenerator-globaltool
+  tests:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'
+      - name: Download build artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: build-artifacts
+          path: LeetCode.Tests
+      - name: Run Tests
+        run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal
+   
+  coverage:
+    needs: tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'
+      - name: Download build artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: build-artifacts
+          path: LeetCode.Tests
+      - name: Run Tests with Coverage
+        run: |
+          dotnet tool install --global coverlet.console
+          coverlet LeetCode.Tests/bin/Debug/net8.0/LeetCode.Tests.dll --target "dotnet" --targetargs "test LeetCode.Tests/LeetCode.Tests.csproj --no-build" --format opencover
+      - name: Check Coverage Percentage
+        run: |
+          coveragePercentage=$(awk '/Linecoverage:/{print $4}' coverage.opencover.xml | sed 's/%//')
+          if (( $(echo "$coveragePercentage < 90" | bc -l) )); then
+            echo "Coverage is below 90%. It's at $coveragePercentage%"
+            exit 1
+          fi
+       
+  upload-coverage:
+    needs: coverage
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+    steps:
+      - uses: actions/checkout@v3
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: LeetCode.Tests/results
 
-    - name: Add ReportGenerator to PATH
-      run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
-
-    - name: Generate Coverage Report
-      run: reportgenerator "-reports:./LeetCode.Tests/results/coverage.info" "-targetdir:./LeetCode.Tests/results" "-reporttypes:Html"
-      
-    - name: Upload Coverage Report
-      uses: actions/upload-artifact@v3
-      with:
-        name: coverage-report
-        path: LeetCode.Tests/results
-        
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./LeetCode.Tests/results/
-        publish_branch: gh-pages
-        clean: true
-        keep_files: true
+  deploy:
+    needs: upload-coverage
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./LeetCode.Tests/results/
+          publish_branch: gh-pages
+          clean: true
+          keep_files: true
