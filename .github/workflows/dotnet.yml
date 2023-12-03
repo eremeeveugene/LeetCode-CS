@@ -66,6 +66,8 @@ jobs:
           path: LeetCode.Tests
       - name: Generate Coverage Report
         run: dotnet test LeetCode.Tests/LeetCode.Tests.csproj --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput='./LeetCode.Tests/results/'
+      - name: List Coverage Report Directory
+        run: ls -l ./LeetCode.Tests/results/
       - name: Install ReportGenerator
         run: dotnet tool install -g dotnet-reportgenerator-globaltool
       - name: Generate Detailed Coverage Report
