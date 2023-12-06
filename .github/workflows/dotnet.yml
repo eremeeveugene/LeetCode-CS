@@ -21,9 +21,20 @@ jobs:
       - name: Build
         run: dotnet build --no-restore
         working-directory: src
-      - name: Run Tests with Coverage
-        run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
+      - name: Run Tests
+        run: dotnet test --no-build --verbosity normal
         working-directory: src
-      - name: Generate Coverage Report
-        run: reportgenerator -reports:**/coverage.cobertura.xml -targetdir:coveragereport -reporttypes:Html
+      - name: Install Coverlet
+        run: dotnet tool install --global coverlet.console
+      - name: Run Tests with Coverage for All Test Projects
+        run: find . -name '*.Tests.csproj' -exec bash -c 'testProject="{}"; coverlet "$testProject" --target "dotnet" --targetargs "test --no-build $testProject" --format opencover --merge-with coverage.json -o coverage.json'
+        working-directory: src
+      - name: Check Coverage Percentage
+        run: |
+          coveragePercentage=$(grep 'Linecoverage' coverage.json | sed -n 's/.*Linecoverage=\"\([0-9.]*\)%\".*/\1/p')
+          echo "Code Coverage: $coveragePercentage%"
+          if (( $(echo "$coveragePercentage < 90" | bc -l) )); then
+            echo "Coverage is below 90%. It's at $coveragePercentage%"
+            exit 1
+          fi
         working-directory: src
