@@ -27,7 +27,7 @@ jobs:
       - name: Install Coverlet
         run: dotnet tool install --global coverlet.console
       - name: Run Tests with Coverage for All Test Projects
-        run: find . -name '*.Tests.csproj' -exec bash -c 'testProject="{}"; coverlet "$testProject" --target "dotnet" --targetargs "test --no-build $testProject" --format opencover --merge-with coverage.json -o coverage.json'
+        run: find . -name '*.Tests.csproj' -exec bash -c 'testProject="{}"; coverlet "$testProject" --target "dotnet" --targetargs "test --no-build $testProject" --format opencover --merge-with coverage.json -o coverage.json' \;
         working-directory: src
       - name: Check Coverage Percentage
         run: |
