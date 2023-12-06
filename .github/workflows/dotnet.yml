@@ -44,12 +44,6 @@ jobs:
         with:
           name: coverage-report
           path: ${{ github.workspace }}/src/coverage
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
