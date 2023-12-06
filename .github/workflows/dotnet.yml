@@ -15,6 +15,8 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.x'
+      - name: Change to src Directory
+        run: cd src
       - name: Restore dependencies
         run: dotnet restore
       - name: Build

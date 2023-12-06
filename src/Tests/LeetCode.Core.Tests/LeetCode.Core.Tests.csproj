@@ -17,11 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LeetCode.Core\LeetCode.Core.csproj" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
+    <ProjectReference Include="..\..\LeetCode.Core\LeetCode.Core.csproj" />
   </ItemGroup>
 
 </Project>
