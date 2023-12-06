@@ -32,10 +32,12 @@ jobs:
         run: ls -R ./Tests/**/TestResults/
       - name: Generate Coverage Report
         run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
-      - name: List Coverage Report Files
-        run: ls -l coverage
-      - name: Upload Coverage Report
-        uses: actions/upload-artifact@v2
-        with:
-          name: coverage-report
-          path: ${{ github.workspace }}/src/coverage
+      - name: Check Coverage Percentage
+        run: |
+          coveragePercentage=$(awk '/Linecoverage:/{print $4}' coverage.opencover.xml | sed 's/%//')
+          if (( $(echo "$coveragePercentage < 90" | bc -l) )); then
+            echo "Coverage is below 90%. It's at $coveragePercentage%"
+            exit 1
+          else
+            echo "Coverage is above 90%. It's at $coveragePercentage%"
+          fi
