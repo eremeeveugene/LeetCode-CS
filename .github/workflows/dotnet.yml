@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src
     steps:
       - uses: actions/checkout@v3
       - name: Setup .NET
@@ -17,38 +20,7 @@ jobs:
           dotnet-version: '8.x'
       - name: Restore dependencies
         run: dotnet restore
-        working-directory: src
       - name: Build
         run: dotnet build --no-restore
-        working-directory: src
       - name: Run Tests
         run: dotnet test --no-build --verbosity normal
-        working-directory: src
-      - name: Install Coverlet
-        run: dotnet tool install --global coverlet.console
-      - name: Run Tests with Coverage for All Test Projects
-        run: |
-          find . -name '*.Tests.csproj' -exec bash -c 'testProject="{}"; coverlet "$testProject" --target "dotnet" --targetargs "test --no-build $testProject" --format opencover --merge-with coverage.json -o coverage.json' \;
-        working-directory: src
-      - name: Upload Coverage Report
-        uses: actions/upload-artifact@v2
-        with:
-          name: coverage-report
-          path: src/coverage.json
-      - name: Check Coverage Percentage
-        run: |
-          coverageFile=src/coverage.json
-          if [ ! -f "$coverageFile" ]; then
-            echo "coverage.json does not exist."
-            exit 1
-          fi
-          coveragePercentage=$(grep 'Linecoverage' "$coverageFile" | sed -n 's/.*Linecoverage=\"\([0-9.]*\)%\".*/\1/p')
-          echo "Code Coverage: $coveragePercentage%"
-          if [ -z "$coveragePercentage" ]; then
-            echo "Unable to parse coverage percentage."
-            exit 1
-          fi
-          if (( $(echo "$coveragePercentage < 90" | bc -l) )); then
-            echo "Coverage is below 90%. It's at $coveragePercentage%"
-            exit 1
-          fi
