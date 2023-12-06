@@ -21,10 +21,6 @@ jobs:
         run: dotnet build --no-restore
       - name: Run Tests
         run: dotnet test --no-build --verbosity normal
-      - name: Run Tests with Coverage
-        run: |
-          dotnet tool install --global coverlet.console
-          coverlet --target "dotnet" --targetargs --no-build" --format opencover
       - name: Install Coverlet
         run: dotnet tool install --global coverlet.console
       - name: Run Tests with Coverage for All Test Projects
