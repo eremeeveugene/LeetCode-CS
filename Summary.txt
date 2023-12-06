@@ -1,0 +1,48 @@
+Summary
+  Generated on: 12/06/2023 - 17:14:12
+  Coverage date: 12/06/2023 - 17:14:05 - 12/06/2023 - 17:14:08
+  Parser: MultiReport (2x Cobertura)
+  Assemblies: 2
+  Classes: 26
+  Files: 26
+  Line coverage: 90.0%
+  Covered lines: 509
+  Uncovered lines: 56
+  Coverable lines: 565
+  Total lines: 1588
+  Branch coverage: 82.5% (198 of 240)
+  Covered branches: 198
+  Total branches: 240
+  Method coverage: 91.9% (80 of 87)
+  Covered methods: 80
+  Total methods: 87
+
+LeetCode                                                                               89.1%
+  LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry                          49.2%
+  LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive  100.0%
+  LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                    97.7%
+  LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinearV2                 100.0%
+  LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray                              100.0%
+  LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArrayV2                            100.0%
+  LeetCode.Algorithms.RemoveElement.RemoveElementBruteForce                           100.0%
+  LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral                            90.0%
+  LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol                             48.0%
+  LeetCode.Algorithms.RomanToInteger.Iterative.RomanToIntegerIterative                100.0%
+  LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral                 88.8%
+  LeetCode.Algorithms.ThreeSum.ThreeSumBruteForce                                     100.0%
+  LeetCode.Algorithms.ThreeSum.ThreeSumTwoPointers                                    100.0%
+  LeetCode.Algorithms.TwoSum.TwoSumBruteForce                                          85.7%
+  LeetCode.Algorithms.TwoSum.TwoSumDictionary                                          90.0%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock         100.0%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                        100.0%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                      100.0%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                               100.0%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                         100.0%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                  100.0%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                           100.0%
+
+LeetCode.Core                                                                         100.0%
+  LeetCode.Core.EqualityComparers.OrderInsensitiveIntArrayEqualityComparer            100.0%
+  LeetCode.Core.Extensions.ArrayExtensions                                            100.0%
+  LeetCode.Core.Models.ListNode                                                       100.0%
+  LeetCode.Core.Models.TreeNode                                                       100.0%
