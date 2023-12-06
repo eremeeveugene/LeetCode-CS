@@ -43,3 +43,17 @@ jobs:
           else
             echo "Coverage is above 90%. It's at $coveragePercentage%"
           fi
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: ./results
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./results/
+          publish_branch: gh-pages
+          clean: true
+          keep_files: true
+      
