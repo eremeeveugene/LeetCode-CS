@@ -31,7 +31,7 @@ jobs:
       - name: List TestResults Files
         run: ls -R ./Tests/**/TestResults/
       - name: Generate Coverage Report
-        run: reportgenerator -reports:./src/Tests/**/TestResults/**/coverage.cobertura.xml -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
+        run: reportgenerator -reports:./Tests/**/TestResults/**/coverage.cobertura.xml -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
       - name: Upload Coverage Report
         uses: actions/upload-artifact@v2
         with:
