@@ -22,14 +22,10 @@ jobs:
         run: dotnet restore
       - name: Build
         run: dotnet build --no-restore
-      - name: Run Tests
-        run: dotnet test --no-build --verbosity normal
       - name: Run Tests with Coverage
         run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
       - name: Install Report Generator Tool
         run: dotnet tool install --global dotnet-reportgenerator-globaltool
-      - name: List TestResults Files
-        run: ls -R ./Tests/**/TestResults/
       - name: Generate Coverage Report
         run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -report types:"HtmlInline_AzurePipelines;Cobertura"
       - name: Generate Summary Report
