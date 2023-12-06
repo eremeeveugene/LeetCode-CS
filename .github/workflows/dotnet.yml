@@ -25,12 +25,7 @@ jobs:
         run: dotnet tool install --global coverlet.console
       - name: Run Tests with Coverage for All Test Projects
         run: |
-          find . -name '*.Tests.csproj' | while read testProject; do
-            testDll="${testProject/.csproj/.dll}"
-            testDllPath=${testDll/.\//./bin/Debug/net8.0/}
-            echo "Running coverage for $testProject"
-            coverlet "$testDllPath" --target "dotnet" --targetargs "test --no-build $testProject" --format opencover --merge-with coverage.json -o coverage.json
-          done
+          find . -name '*.Tests.csproj' -exec sh -c 'echo "Running coverage for {}"; coverlet "{}" --target "dotnet" --targetargs "test --no-build {}" --format opencover --merge-with coverage.json -o coverage.json' \;
       - name: Check Coverage Percentage
         run: |
           coveragePercentage=$(grep 'Linecoverage' coverage.json | sed -n 's/.*Linecoverage=\"\([0-9.]*\)%\".*/\1/p')
