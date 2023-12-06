@@ -1,0 +1,54 @@
+name: .NET
+
+on:
+  push:
+    branches: [ "develop" ]
+  pull_request:
+    branches: [ "develop" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore
+      - name: Run Tests with Coverage
+        run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
+      - name: Install Report Generator Tool
+        run: dotnet tool install --global dotnet-reportgenerator-globaltool
+      - name: Generate Coverage Report
+        run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -report types:"HtmlInline_AzurePipelines;Cobertura"
+      - name: Generate Summary Report
+        run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"TextSummary"
+      - name: Check Coverage Percentage
+        run: |
+          coveragePercentage=$(grep 'Line coverage:' coverage/Summary.txt | awk '{print $3}' | sed 's/%//')
+          if (( $(echo "$coveragePercentage < 90" | bc -l) )); then
+            echo "Coverage is below 90%. It's at $coveragePercentage%"
+            exit 1
+          else
+            echo "Coverage is above 90%. It's at $coveragePercentage%"
+          fi
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: ${{ github.workspace }}/src/coverage
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./src/coverage
+          publish_branch: gh-pages
+          keep_files: true
