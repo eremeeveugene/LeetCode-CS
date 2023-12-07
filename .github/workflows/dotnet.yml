@@ -14,6 +14,11 @@ jobs:
         working-directory: source
     steps:
       - uses: actions/checkout@v3
+      - name: Get .NET version from global.json
+        id: dotnet-version
+        run: |
+          DOTNET_VERSION=$(jq -r '.sdk.version' ../global.json)
+          echo "DOTNET_VERSION=$DOTNET_VERSION" >> $GITHUB_ENV
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
