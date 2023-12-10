@@ -50,7 +50,7 @@ public class TreeNode
     {
         if (!nums.Any() || nums[0] == null)
         {
-            return new TreeNode();
+            return new TreeNode(0);
         }
 
         TreeNode root = new TreeNode(nums[0]);

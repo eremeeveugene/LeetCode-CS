@@ -15,13 +15,13 @@ namespace LeetCode.Core.Helpers;
 
 public static class JsonConvertHelper<T>
 {
-    public static List<T?> ToList(string inputArrayJson)
+    public static List<T?> JsonArrayToList(string jsonArray)
     {
-        if (inputArrayJson == JsonHelper.EmptyArray)
+        if (jsonArray == JsonHelper.EmptyArray)
         {
-            return new List<T?> { default };
+            return new List<T?>();
         }
 
-        return JsonConvert.DeserializeObject<List<T?>>(inputArrayJson) ?? throw new InvalidOperationException();
+        return JsonConvert.DeserializeObject<List<T?>>(jsonArray) ?? throw new InvalidOperationException();
     }
 }
