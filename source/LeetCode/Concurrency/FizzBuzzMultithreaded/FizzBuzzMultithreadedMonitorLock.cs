@@ -12,8 +12,8 @@
 namespace LeetCode.Concurrency.FizzBuzzMultithreaded;
 
 /// <summary>
-/// Fizz Buzz Multithreaded
-/// https://leetcode.com/problems/fizz-buzz-multithreaded/description/
+///     Fizz Buzz Multithreaded
+///     https://leetcode.com/problems/fizz-buzz-multithreaded/description/
 /// </summary>
 public class FizzBuzzMultithreadedMonitorLock
 {
