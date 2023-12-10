@@ -10,45 +10,32 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BinaryTreeInorderTraversal;
+using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
-using Newtonsoft.Json;
 
 namespace LeetCode.Tests.Algorithms.BinaryTreeInorderTraversal;
 
 [TestClass]
 public class BinaryTreeInorderTraversalRecursiveTests
 {
-    private const string EmptyArray = "[]";
-
     [TestMethod]
     [DataRow("[1,null,2,3]", "[1,3,2]")]
     [DataRow("[1]", "[1]")]
-    [DataRow(EmptyArray, EmptyArray)]
+    [DataRow(JsonHelper.EmptyArray, JsonHelper.EmptyArray)]
     public void BinaryTreeInorderTraversalRecursive_GetResult_ReturnsCorrectSequenceFromBinaryTree(
         string inputArrayJson,
         string expectedArrayJson)
     {
         // Arrange
-        var expectedResult = Convert(expectedArrayJson);
-        var inputArray = Convert(inputArrayJson);
-        var inputNode = TreeNode.BuildTree(inputArray);
+        IList<int?> expectedResult = JsonConvertHelper<int?>.ToList(expectedArrayJson);
+        IList<int?> inputArray = JsonConvertHelper<int?>.ToList(inputArrayJson);
+        TreeNode inputNode = TreeNode.BuildTree(inputArray);
 
         // Act
-        var actualResult = BinaryTreeInorderTraversalRecursive.GetResult(inputNode);
+        IList<int> actualResult = BinaryTreeInorderTraversalRecursive.GetResult(inputNode);
 
         // Assert
         Assert.IsNotNull(actualResult);
         CollectionAssert.AreEqual(expectedResult.ToList(), actualResult.ToList());
-    }
-
-    private IList<int?> Convert(string inputArrayJson)
-    {
-        if (inputArrayJson == EmptyArray)
-            return new List<int?>
-            {
-                0
-            };
-
-        return JsonConvert.DeserializeObject<IList<int?>>(inputArrayJson) ?? throw new InvalidOperationException();
     }
 }

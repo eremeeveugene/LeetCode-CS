@@ -11,6 +11,7 @@
 
 using LeetCode.Algorithms.AddTwoNumbers;
 using LeetCode.Core.Extensions;
+using LeetCode.Core.Models;
 using LeetCode.Tests.Extensions;
 
 namespace LeetCode.Tests.Algorithms.AddTwoNumbers;
@@ -27,12 +28,12 @@ public class AddTwoNumbersInPlaceCarryTests
         int[] expectedResultArray)
     {
         // Arrange
-        var list1 = array1.ToListNode();
-        var list2 = array2.ToListNode();
-        var expectedResult = expectedResultArray.ToListNode();
+        ListNode? list1 = array1.ToListNode();
+        ListNode? list2 = array2.ToListNode();
+        ListNode? expectedResult = expectedResultArray.ToListNode();
 
         // Act
-        var actualResult = AddTwoNumbersInPlaceCarry.GetResult(list1, list2);
+        ListNode? actualResult = AddTwoNumbersInPlaceCarry.GetResult(list1, list2);
 
         // Assert
         AssertExtensions.AreListNodesEqual(expectedResult, actualResult);

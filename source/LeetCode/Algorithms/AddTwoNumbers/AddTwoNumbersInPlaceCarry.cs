@@ -26,16 +26,16 @@ public static class AddTwoNumbersInPlaceCarry
     /// <returns></returns>
     public static ListNode? GetResult(ListNode? l1, ListNode? l2)
     {
-        var carry = 0;
+        int carry = 0;
 
         ListNode? head = null;
 
         while (l1 != null || l2 != null)
         {
-            var val1 = l1?.val ?? 0;
-            var val2 = l2?.val ?? 0;
+            int val1 = l1?.val ?? 0;
+            int val2 = l2?.val ?? 0;
 
-            var sum = val1 + val2 + carry;
+            int sum = val1 + val2 + carry;
 
             carry = 0;
 
@@ -51,7 +51,10 @@ public static class AddTwoNumbersInPlaceCarry
             head = new ListNode(sum, head);
         }
 
-        if (carry > 0) head = new ListNode(1, head);
+        if (carry > 0)
+        {
+            head = new ListNode(1, head);
+        }
 
         return ListNode.Reverse(head);
     }

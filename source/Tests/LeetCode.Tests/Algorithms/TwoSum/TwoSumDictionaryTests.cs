@@ -25,7 +25,7 @@ public class TwoSumDictionaryTests
         int[] expectedResult)
     {
         // Act
-        var actualResult = TwoSumDictionary.GetResult(nums, target);
+        int[] actualResult = TwoSumDictionary.GetResult(nums, target);
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);

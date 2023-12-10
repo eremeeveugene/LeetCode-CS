@@ -54,15 +54,16 @@ public static class RomanToIntegerIterative
 {
     public static int GetResult(string romanString)
     {
-        var romanNumerals = new List<RomanNumeral>();
+        List<RomanNumeral> romanNumerals = new List<RomanNumeral>();
 
-        for (var i = 0; i < romanString.Length; i++)
+        for (int i = 0; i < romanString.Length; i++)
         {
-            var currentChar = romanString.ElementAt(i);
-            var nextChar = romanString.ElementAtOrDefault(i + 1);
+            char currentChar = romanString.ElementAt(i);
+            char nextChar = romanString.ElementAtOrDefault(i + 1);
 
-            var subtractiveRomanNumeral = SubtractiveRomanNumeral.SubtractiveRomanNumerals.FirstOrDefault(
-                s => s.Symbol.Char.Equals(currentChar) && s.SecondSymbol.Char.Equals(nextChar));
+            SubtractiveRomanNumeral? subtractiveRomanNumeral =
+                SubtractiveRomanNumeral.SubtractiveRomanNumerals.FirstOrDefault(
+                    s => s.Symbol.Char.Equals(currentChar) && s.SecondSymbol.Char.Equals(nextChar));
 
             if (subtractiveRomanNumeral != null)
             {

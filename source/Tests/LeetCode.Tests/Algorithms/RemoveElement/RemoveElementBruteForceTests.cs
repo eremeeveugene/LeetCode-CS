@@ -24,7 +24,7 @@ public class RemoveElementBruteForceTests
         int[] expectedNums, int expectedResult)
     {
         // Act
-        var actualResult = RemoveElementBruteForce.GetResult(actualNums, val);
+        int actualResult = RemoveElementBruteForce.GetResult(actualNums, val);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

@@ -31,11 +31,11 @@ public class ListNode
     public static ListNode? Reverse(ListNode? head)
     {
         ListNode? prev = null;
-        var current = head;
+        ListNode? current = head;
 
         while (current != null)
         {
-            var next = current.next;
+            ListNode? next = current.next;
             current.next = prev;
             prev = current;
             current = next;

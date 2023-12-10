@@ -48,17 +48,20 @@ public class TreeNode
 
     public static TreeNode BuildTree(IList<int?> nums)
     {
-        if (!nums.Any() || nums[0] == null) return new TreeNode();
+        if (!nums.Any() || nums[0] == null)
+        {
+            return new TreeNode();
+        }
 
-        var root = new TreeNode(nums[0]);
+        TreeNode root = new TreeNode(nums[0]);
 
-        var queue = new Queue<TreeNode>();
+        Queue<TreeNode> queue = new Queue<TreeNode>();
         queue.Enqueue(root);
-        var i = 1;
+        int i = 1;
 
         while (queue.Count > 0 && i < nums.Count)
         {
-            var current = queue.Dequeue();
+            TreeNode current = queue.Dequeue();
 
             // Process the left child
             if (i < nums.Count && nums[i].HasValue)

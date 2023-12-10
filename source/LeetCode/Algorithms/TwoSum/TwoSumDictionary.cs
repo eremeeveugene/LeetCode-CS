@@ -24,15 +24,21 @@ public static class TwoSumDictionary
     /// <returns></returns>
     public static int[] GetResult(int[] nums, int target)
     {
-        var dictionary = new Dictionary<int, int>();
+        Dictionary<int, int> dictionary = new Dictionary<int, int>();
 
-        for (var i = 0; i < nums.Length; i++)
+        for (int i = 0; i < nums.Length; i++)
         {
-            var complement = target - nums[i];
+            int complement = target - nums[i];
 
-            if (dictionary.TryGetValue(complement, out var value)) return new[] { value, i };
+            if (dictionary.TryGetValue(complement, out int value))
+            {
+                return new[] { value, i };
+            }
 
-            if (!dictionary.ContainsKey(nums[i])) dictionary[nums[i]] = i;
+            if (!dictionary.ContainsKey(nums[i]))
+            {
+                dictionary[nums[i]] = i;
+            }
         }
 
         return Array.Empty<int>();

@@ -23,9 +23,9 @@ public class ListNodeTests
     public void Constructor_ShouldSetVal_WhenOnlyValProvided(int expectedVal)
     {
         // Act
-        var node = new ListNode(expectedVal);
+        ListNode node = new ListNode(expectedVal);
 
-        var actualVal = node.val;
+        int actualVal = node.val;
 
         // Assert
         Assert.AreEqual(expectedVal, actualVal);
@@ -39,13 +39,13 @@ public class ListNodeTests
     public void Constructor_ShouldSetValAndNext_WhenBothProvided(int expectedVal)
     {
         // Arrange
-        var expectedNext = new ListNode(10);
+        ListNode expectedNext = new ListNode(10);
 
         // Act
-        var node = new ListNode(expectedVal, expectedNext);
+        ListNode node = new ListNode(expectedVal, expectedNext);
 
-        var actualVal = node.val;
-        var actualNext = node.next;
+        int actualVal = node.val;
+        ListNode? actualNext = node.next;
 
         // Assert
         Assert.AreEqual(expectedVal, actualVal);
@@ -59,9 +59,9 @@ public class ListNodeTests
         const int expectedVal = 0;
 
         // Act
-        var node = new ListNode();
+        ListNode node = new ListNode();
 
-        var actualVal = node.val;
+        int actualVal = node.val;
 
         // Assert
         Assert.AreEqual(expectedVal, actualVal);
