@@ -33,6 +33,7 @@ jobs:
         run: dotnet tool install -g dotnet-format
       - name: Check Code Style
         run: dotnet format --check --folder
+        working-directory: ./source
       - name: Install Report Generator Tool
         run: dotnet tool install --global dotnet-reportgenerator-globaltool
       - name: Generate Coverage Report
