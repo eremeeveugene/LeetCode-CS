@@ -32,7 +32,7 @@ public class AddTwoNumbersInPlaceCarryTests
         var expectedResult = expectedResultArray.ToListNode();
 
         // Act
-        var actualResult = AddTwoNumbersInPlaceCarry.GetResultV2(list1, list2);
+        var actualResult = AddTwoNumbersInPlaceCarry.GetResult(list1, list2);
 
         // Assert
         AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
