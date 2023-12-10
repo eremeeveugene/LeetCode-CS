@@ -16,7 +16,9 @@ namespace LeetCode.Core.Models;
 /// </summary>
 public class ListNode
 {
+    // ReSharper disable once InconsistentNaming
     public ListNode? next;
+    // ReSharper disable once InconsistentNaming
     public int val;
 
     public ListNode(int val = 0, ListNode? next = null)

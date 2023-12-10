@@ -12,7 +12,6 @@
 namespace LeetCode.Algorithms.RemoveElement;
 
 /// <summary>
-///     Remove Element
 ///     https://leetcode.com/problems/remove-element/description/
 /// </summary>
 public static class RemoveElementBruteForce

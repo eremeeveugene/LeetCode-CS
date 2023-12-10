@@ -11,6 +11,9 @@
 
 namespace LeetCode.Concurrency.PrintInOrder;
 
+/// <summary>
+///     https://leetcode.com/problems/print-in-order/description/
+/// </summary>
 public class PrintInOrderThreadSleep
 {
     private const int ThreadTimeoutMs = 10;

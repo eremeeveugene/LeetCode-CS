@@ -13,32 +13,33 @@ using LeetCode.Core.Models;
 
 namespace LeetCode.Algorithms.BinaryTreeInorderTraversal;
 
+/// <summary>
+///     https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+/// </summary>
 public static class BinaryTreeInorderTraversalRecursive
 {
-    public static IList<int>? GetResult(TreeNode? treeNode)
+    /// <summary>
+    ///     Time complexity - O (n)
+    /// </summary>
+    /// <param name="treeNode"></param>
+    /// <returns></returns>
+    public static IList<int> GetResult(TreeNode? treeNode)
     {
-        if (treeNode == null) return new List<int>();
+        var result = new List<int>();
 
-        return InOrderTraversal(treeNode);
+        InOrderTraversal(treeNode, result);
+
+        return result;
     }
 
-    private static List<int> InOrderTraversal(TreeNode treeNode)
+    private static void InOrderTraversal(TreeNode? treeNode, ICollection<int> result)
     {
-        var res = new List<int>();
+        if (treeNode == null) return;
 
-        var left = new List<int>();
+        if (treeNode.left != null) InOrderTraversal(treeNode.left, result);
 
-        if (treeNode.Left != null) left = InOrderTraversal(treeNode.Left);
+        result.Add(treeNode.val);
 
-        res.AddRange(left);
-        res.Add(treeNode.Val);
-
-        var right = new List<int>();
-
-        if (treeNode.Right != null) right = InOrderTraversal(treeNode.Right);
-
-        res.AddRange(right);
-
-        return res;
+        if (treeNode.right != null) InOrderTraversal(treeNode.right, result);
     }
 }
