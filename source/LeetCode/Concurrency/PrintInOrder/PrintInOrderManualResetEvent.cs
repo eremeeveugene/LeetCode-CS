@@ -13,7 +13,7 @@ namespace LeetCode.Concurrency.PrintInOrder;
 
 public class PrintInOrderManualResetEvent
 {
-    private readonly ManualResetEvent _firstPrint = new(false);
+    private readonly ManualResetEvent _firstPrint  = new(false);
     private readonly ManualResetEvent _secondPrint = new(false);
 
     public void First(Action printFirst)

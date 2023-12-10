@@ -59,12 +59,12 @@ public static class PlusOneIncrementDigitArray
             if (digits[index] + carryDigit > 9)
             {
                 digits[index] = 0;
-                carryDigit = 1;
+                carryDigit    = 1;
             }
             else
             {
                 digits[index] += carryDigit;
-                carryDigit = 0;
+                carryDigit    =  0;
                 break;
             }
 

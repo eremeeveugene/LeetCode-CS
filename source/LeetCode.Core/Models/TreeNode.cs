@@ -18,12 +18,12 @@ public class TreeNode
 {
     public TreeNode? Left;
     public TreeNode? Right;
-    public int Val;
+    public int       Val;
 
     public TreeNode(int val = 0, TreeNode? left = null, TreeNode? right = null)
     {
-        Val = val;
-        Left = left;
+        Val   = val;
+        Left  = left;
         Right = right;
     }
 

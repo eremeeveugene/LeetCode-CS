@@ -21,7 +21,7 @@ public static class AssertExtensions
         {
             Assert.AreEqual(expectedList.val, actualList.val, "Values should be equal at each node.");
             expectedList = expectedList.next;
-            actualList = actualList.next;
+            actualList   = actualList.next;
         }
 
         Assert.IsNull(actualList, "Actual result should not have more nodes.");

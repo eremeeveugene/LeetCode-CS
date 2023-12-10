@@ -17,17 +17,17 @@ namespace LeetCode.Tests.Concurrency.FizzBuzzMultithreaded;
 public class FizzBuzzMultithreadedMonitorLockTests
 {
     [TestMethod]
-    [DataRow(1, "1")]
-    [DataRow(2, "1, 2")]
-    [DataRow(3, "1, 2, fizz")]
-    [DataRow(5, "1, 2, fizz, 4, buzz")]
+    [DataRow(1,  "1")]
+    [DataRow(2,  "1, 2")]
+    [DataRow(3,  "1, 2, fizz")]
+    [DataRow(5,  "1, 2, fizz, 4, buzz")]
     [DataRow(15, "1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz")]
     public async Task FizzBuzzMultithreadedMonitorLock_ExecutesTasks_GeneratesCorrectSequence(int length,
-        string expectedResultJson)
+        string                                                                                    expectedResultJson)
     {
         // Arrange
         var expectedResult = DeserializeToList(expectedResultJson);
-        var actualResult = new List<object>();
+        var actualResult   = new List<object>();
 
         // Act
         var fizzBuzzMultithreaded = new FizzBuzzMultithreadedMonitorLock(length);
@@ -49,7 +49,7 @@ public class FizzBuzzMultithreadedMonitorLockTests
     private static List<object> DeserializeToList(string input)
     {
         var resultList = new List<object>();
-        var elements = input.Split(',');
+        var elements   = input.Split(',');
 
         foreach (var element in elements)
         {

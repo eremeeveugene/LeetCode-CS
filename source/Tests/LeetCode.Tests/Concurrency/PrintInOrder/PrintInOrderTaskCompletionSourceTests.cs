@@ -24,7 +24,7 @@ public class PrintInOrderTaskCompletionSourceTests : PrintInOrderTestsBase
     {
         // Arrange
         var expectedResult = FirstSecondThird;
-        var actualResult = string.Empty;
+        var actualResult   = string.Empty;
 
         // Act
         var printInOrder = new PrintInOrderTaskCompletionSource();

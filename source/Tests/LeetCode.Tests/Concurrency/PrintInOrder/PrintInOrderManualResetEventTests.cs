@@ -24,7 +24,7 @@ public class PrintInOrderManualResetEventTests : PrintInOrderTestsBase
     {
         // Arrange
         var expectedResult = FirstSecondThird;
-        var actualResult = string.Empty;
+        var actualResult   = string.Empty;
 
         // Act
         var printInOrder = new PrintInOrderManualResetEvent();

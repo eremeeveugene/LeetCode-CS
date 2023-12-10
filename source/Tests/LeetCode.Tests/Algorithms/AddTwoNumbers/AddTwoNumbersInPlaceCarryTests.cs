@@ -24,11 +24,11 @@ public class AddTwoNumbersInPlaceCarryTests
     [DataRow(new[] { 9, 9, 9, 9, 9, 9, 9 }, new[] { 9, 9, 9, 9 }, new[] { 8, 9, 9, 9, 0, 0, 0, 1 })]
     [DataRow(new[] { 9 }, new[] { 1, 9, 9, 9, 9, 9, 9, 9, 9, 9 }, new[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 })]
     public void AddTwoNumbersInPlaceCarry_GetResult_ShouldAddTwoLinkedListsCorrectly(int[] array1, int[] array2,
-        int[] expectedResultArray)
+        int[]                                                                              expectedResultArray)
     {
         // Arrange
-        var list1 = array1.ToListNode();
-        var list2 = array2.ToListNode();
+        var list1          = array1.ToListNode();
+        var list2          = array2.ToListNode();
         var expectedResult = expectedResultArray.ToListNode();
 
         // Act

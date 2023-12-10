@@ -13,9 +13,9 @@ namespace LeetCode.Concurrency.PrintInOrder;
 
 public class PrintInOrderThreadSleep
 {
-    private const int ThreadTimeoutMs = 10;
-    private bool _isFirstPrinted;
-    private bool _isSecondPrinted;
+    private const int  ThreadTimeoutMs = 10;
+    private       bool _isFirstPrinted;
+    private       bool _isSecondPrinted;
 
     public void First(Action printFirst)
     {

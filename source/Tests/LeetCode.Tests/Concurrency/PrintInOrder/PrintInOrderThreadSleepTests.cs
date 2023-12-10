@@ -24,7 +24,7 @@ public class PrintInOrderThreadSleepTests : PrintInOrderTestsBase
     {
         // Arrange
         var expectedResult = FirstSecondThird;
-        var actualResult = string.Empty;
+        var actualResult   = string.Empty;
 
         // Act
         var printInOrderThreadSleep = new PrintInOrderThreadSleep();

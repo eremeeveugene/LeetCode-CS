@@ -44,11 +44,11 @@ public class ListNodeTests
         // Act
         var node = new ListNode(expectedVal, expectedNext);
 
-        var actualVal = node.val;
+        var actualVal  = node.val;
         var actualNext = node.next;
 
         // Assert
-        Assert.AreEqual(expectedVal, actualVal);
+        Assert.AreEqual(expectedVal,  actualVal);
         Assert.AreEqual(expectedNext, actualNext);
     }
 

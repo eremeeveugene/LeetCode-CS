@@ -13,7 +13,7 @@ namespace LeetCode.Core.EqualityComparers;
 
 public class OrderInsensitiveIntArrayEqualityComparer : IEqualityComparer<int[]>
 {
-    private const int Seed = 13;
+    private const int Seed       = 13;
     private const int Multiplier = 17;
 
     public bool Equals(int[]? x, int[]? y)
