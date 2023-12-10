@@ -68,7 +68,6 @@ public static class ThreeSumTwoPointers
                 switch (sum)
                 {
                     case 0:
-                    {
                         result.Add(new List<int> { nums[i], nums[left], nums[right] });
 
                         while (left < right && nums[left] == nums[left + 1]) left++;
@@ -78,7 +77,6 @@ public static class ThreeSumTwoPointers
                         right--;
 
                         break;
-                    }
                     case < 0:
                         left++;
                         break;
