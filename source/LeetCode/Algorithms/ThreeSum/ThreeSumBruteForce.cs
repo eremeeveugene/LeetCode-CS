@@ -52,10 +52,10 @@ public static class ThreeSumBruteForce
         var arraysWithDuplicates = new List<IList<int>>();
 
         for (var i = 0; i < nums.Length - 2; i++)
-        for (var j = i + 1; j < nums.Length - 1; j++)
-        for (var k = j + 1; k < nums.Length; k++)
-            if (nums[i] + nums[j] + nums[k] == 0)
-                arraysWithDuplicates.Add(new[] { nums[i], nums[j], nums[k] });
+            for (var j = i + 1; j < nums.Length - 1; j++)
+                for (var k = j + 1; k < nums.Length; k++)
+                    if (nums[i] + nums[j] + nums[k] == 0)
+                        arraysWithDuplicates.Add(new[] { nums[i], nums[j], nums[k] });
 
         var uniqueArrays = new HashSet<int[]>(new OrderInsensitiveIntArrayEqualityComparer());
 

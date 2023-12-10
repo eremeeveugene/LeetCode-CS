@@ -24,7 +24,8 @@ public class BinaryTreeInorderTraversalRecursiveTests
     [DataRow("[1,null,2,3]", "[1,3,2]")]
     [DataRow("[1]", "[1]")]
     [DataRow(EmptyArray, EmptyArray)]
-    public void BinaryTreeInorderTraversalRecursive_GetResult_ReturnsCorrectSequenceFromBinaryTree(string inputArrayJson,
+    public void BinaryTreeInorderTraversalRecursive_GetResult_ReturnsCorrectSequenceFromBinaryTree(
+        string inputArrayJson,
         string expectedArrayJson)
     {
         // Arrange
