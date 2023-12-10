@@ -16,15 +16,20 @@ namespace LeetCode.Core.Models;
 /// </summary>
 public class TreeNode
 {
-    public TreeNode? Left;
-    public TreeNode? Right;
-    public int Val;
+    // ReSharper disable once InconsistentNaming
+    public TreeNode? left;
+
+    // ReSharper disable once InconsistentNaming
+    public TreeNode? right;
+
+    // ReSharper disable once InconsistentNaming
+    public int val;
 
     public TreeNode(int val = 0, TreeNode? left = null, TreeNode? right = null)
     {
-        Val = val;
-        Left = left;
-        Right = right;
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 
     public static TreeNode BuildTree(IList<int?> nums)
@@ -44,8 +49,8 @@ public class TreeNode
             // Process the left child
             if (i < nums.Count && nums[i].HasValue)
             {
-                current.Left = new TreeNode(nums[i].Value);
-                queue.Enqueue(current.Left);
+                current.left = new TreeNode(nums[i].Value);
+                queue.Enqueue(current.left);
             }
 
             i++;
@@ -53,8 +58,8 @@ public class TreeNode
             // Process the right child
             if (i < nums.Count && nums[i].HasValue)
             {
-                current.Right = new TreeNode(nums[i].Value);
-                queue.Enqueue(current.Right);
+                current.right = new TreeNode(nums[i].Value);
+                queue.Enqueue(current.right);
             }
 
             i++;
