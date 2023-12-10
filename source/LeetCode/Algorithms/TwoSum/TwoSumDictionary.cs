@@ -24,7 +24,7 @@ public static class TwoSumDictionary
     /// <returns></returns>
     public static int[] GetResult(int[] nums, int target)
     {
-        Dictionary<int, int> dictionary = new Dictionary<int, int>();
+        Dictionary<int, int> dictionary = new();
 
         for (int i = 0; i < nums.Length; i++)
         {

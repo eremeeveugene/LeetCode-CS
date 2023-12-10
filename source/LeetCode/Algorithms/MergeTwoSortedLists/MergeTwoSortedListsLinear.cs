@@ -51,7 +51,7 @@ public static class MergeTwoSortedListsLinear
             {
                 if (list1 == null && list2 != null)
                 {
-                    ListNode list2CurrentNode = new ListNode(list2.val);
+                    ListNode list2CurrentNode = new(list2.val);
 
                     if (previousNode != null)
                     {
@@ -66,7 +66,7 @@ public static class MergeTwoSortedListsLinear
                 }
                 else if (list1 != null && list2 == null)
                 {
-                    ListNode list1CurrentNode = new ListNode(list1.val);
+                    ListNode list1CurrentNode = new(list1.val);
 
                     if (previousNode != null)
                     {
@@ -84,7 +84,7 @@ public static class MergeTwoSortedListsLinear
                 {
                     if (list1.val < list2.val)
                     {
-                        ListNode list1CurrentNode = new ListNode(list1.val);
+                        ListNode list1CurrentNode = new(list1.val);
 
                         if (previousNode != null)
                         {
@@ -99,7 +99,7 @@ public static class MergeTwoSortedListsLinear
                     }
                     else
                     {
-                        ListNode list2CurrentNode = new ListNode(list2.val);
+                        ListNode list2CurrentNode = new(list2.val);
 
                         if (previousNode != null)
                         {

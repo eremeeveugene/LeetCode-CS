@@ -27,9 +27,9 @@ public class PrintInOrderTaskCompletionSourceTests : PrintInOrderTestsBase
         string actualResult = string.Empty;
 
         // Act
-        PrintInOrderTaskCompletionSource printInOrder = new PrintInOrderTaskCompletionSource();
+        PrintInOrderTaskCompletionSource printInOrder = new();
 
-        List<Task> tasks = new List<Task>();
+        List<Task> tasks = new();
 
         foreach (int num in nums)
         {

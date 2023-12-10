@@ -25,7 +25,7 @@ public static class BinaryTreeInorderTraversalRecursive
     /// <returns></returns>
     public static IList<int> GetResult(TreeNode? treeNode)
     {
-        List<int> result = new List<int>();
+        List<int> result = new();
 
         InOrderTraversal(treeNode, result);
 

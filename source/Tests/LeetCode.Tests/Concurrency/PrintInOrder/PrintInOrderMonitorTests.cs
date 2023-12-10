@@ -27,9 +27,9 @@ public class PrintInOrderMonitorTests : PrintInOrderTestsBase
         string actualResult = string.Empty;
 
         // Act
-        PrintInOrderMonitor printInOrder = new PrintInOrderMonitor();
+        PrintInOrderMonitor printInOrder = new();
 
-        List<Task> tasks = new List<Task>();
+        List<Task> tasks = new();
 
         foreach (int num in nums)
         {

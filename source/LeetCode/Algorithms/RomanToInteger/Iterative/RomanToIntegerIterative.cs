@@ -54,7 +54,7 @@ public static class RomanToIntegerIterative
 {
     public static int GetResult(string romanString)
     {
-        List<RomanNumeral> romanNumerals = new List<RomanNumeral>();
+        List<RomanNumeral> romanNumerals = new();
 
         for (int i = 0; i < romanString.Length; i++)
         {

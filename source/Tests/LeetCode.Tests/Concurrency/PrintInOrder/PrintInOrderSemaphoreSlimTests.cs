@@ -27,9 +27,9 @@ public class PrintInOrderSemaphoreSlimTests : PrintInOrderTestsBase
         string actualResult = string.Empty;
 
         // Act
-        PrintInOrderSemaphoreSlim printInOrder = new PrintInOrderSemaphoreSlim();
+        PrintInOrderSemaphoreSlim printInOrder = new();
 
-        List<Task> tasks = new List<Task>();
+        List<Task> tasks = new();
 
         foreach (int num in nums)
         {

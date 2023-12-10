@@ -27,9 +27,9 @@ public class PrintInOrderManualResetEventTests : PrintInOrderTestsBase
         string actualResult = string.Empty;
 
         // Act
-        PrintInOrderManualResetEvent printInOrder = new PrintInOrderManualResetEvent();
+        PrintInOrderManualResetEvent printInOrder = new();
 
-        List<Task> tasks = new List<Task>();
+        List<Task> tasks = new();
 
         foreach (int num in nums)
         {

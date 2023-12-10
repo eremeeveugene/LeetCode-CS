@@ -33,9 +33,9 @@ public class ThreeSumBruteForceTests
         IList<IList<int>> actualResult = ThreeSumBruteForce.GetResult(nums);
 
         // Assert
-        HashSet<int[]> expectedSet = new HashSet<int[]>(expectedResult!.Select(e => e.ToArray()),
+        HashSet<int[]> expectedSet = new(expectedResult!.Select(e => e.ToArray()),
             new OrderInsensitiveIntArrayEqualityComparer());
-        HashSet<int[]> actualSet = new HashSet<int[]>(actualResult.Select(a => a.ToArray()),
+        HashSet<int[]> actualSet = new(actualResult.Select(a => a.ToArray()),
             new OrderInsensitiveIntArrayEqualityComparer());
 
         Assert.AreEqual(expectedResult!.Length, actualResult.Count);

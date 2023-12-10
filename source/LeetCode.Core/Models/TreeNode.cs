@@ -53,9 +53,9 @@ public class TreeNode
             return new TreeNode(0);
         }
 
-        TreeNode root = new TreeNode(nums[0]);
+        TreeNode root = new(nums[0]);
 
-        Queue<TreeNode> queue = new Queue<TreeNode>();
+        Queue<TreeNode> queue = new();
         queue.Enqueue(root);
         int i = 1;
 

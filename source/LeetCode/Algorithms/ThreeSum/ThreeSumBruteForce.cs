@@ -25,7 +25,7 @@ public static class ThreeSumBruteForce
     /// <returns></returns>
     public static IList<IList<int>> GetResult(int[] nums)
     {
-        List<IList<int>> arraysWithDuplicates = new List<IList<int>>();
+        List<IList<int>> arraysWithDuplicates = new();
 
         for (int i = 0; i < nums.Length - 2; i++)
         {
@@ -41,7 +41,7 @@ public static class ThreeSumBruteForce
             }
         }
 
-        HashSet<int[]> uniqueArrays = new HashSet<int[]>(new OrderInsensitiveIntArrayEqualityComparer());
+        HashSet<int[]> uniqueArrays = new(new OrderInsensitiveIntArrayEqualityComparer());
 
         foreach (IList<int> array in arraysWithDuplicates)
         {

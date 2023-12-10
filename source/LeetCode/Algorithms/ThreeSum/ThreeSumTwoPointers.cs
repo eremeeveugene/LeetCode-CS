@@ -30,7 +30,7 @@ public static class ThreeSumTwoPointers
 
         Array.Sort(nums);
 
-        List<IList<int>> result = new List<IList<int>>();
+        List<IList<int>> result = new();
 
         for (int i = 0; i < nums.Length - 2; i++)
         {

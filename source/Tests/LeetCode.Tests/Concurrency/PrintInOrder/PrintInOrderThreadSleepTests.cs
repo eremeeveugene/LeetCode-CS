@@ -27,9 +27,9 @@ public class PrintInOrderThreadSleepTests : PrintInOrderTestsBase
         string actualResult = string.Empty;
 
         // Act
-        PrintInOrderThreadSleep printInOrderThreadSleep = new PrintInOrderThreadSleep();
+        PrintInOrderThreadSleep printInOrderThreadSleep = new();
 
-        List<Task> tasks = new List<Task>();
+        List<Task> tasks = new();
 
         foreach (int num in nums)
         {

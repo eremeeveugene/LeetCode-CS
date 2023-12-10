@@ -23,7 +23,7 @@ public class ListNodeTests
     public void Constructor_ShouldSetVal_WhenOnlyValProvided(int expectedVal)
     {
         // Act
-        ListNode node = new ListNode(expectedVal);
+        ListNode node = new(expectedVal);
 
         int actualVal = node.val;
 
@@ -39,10 +39,10 @@ public class ListNodeTests
     public void Constructor_ShouldSetValAndNext_WhenBothProvided(int expectedVal)
     {
         // Arrange
-        ListNode expectedNext = new ListNode(10);
+        ListNode expectedNext = new(10);
 
         // Act
-        ListNode node = new ListNode(expectedVal, expectedNext);
+        ListNode node = new(expectedVal, expectedNext);
 
         int actualVal = node.val;
         ListNode? actualNext = node.next;
@@ -59,7 +59,7 @@ public class ListNodeTests
         const int expectedVal = 0;
 
         // Act
-        ListNode node = new ListNode();
+        ListNode node = new();
 
         int actualVal = node.val;
 

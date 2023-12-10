@@ -36,7 +36,7 @@ public static class MergeTwoSortedListsLinearV2
             return list1;
         }
 
-        ListNode dummyHead = new ListNode();
+        ListNode dummyHead = new();
         ListNode? current = dummyHead;
 
         while (list1 != null && list2 != null)
