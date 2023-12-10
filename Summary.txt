@@ -1,38 +1,38 @@
 Summary
-  Generated on: 12/10/2023 - 14:47:28
-  Coverage date: 12/10/2023 - 14:47:05 - 12/10/2023 - 14:47:08
+  Generated on: 12/10/2023 - 16:29:30
+  Coverage date: 12/10/2023 - 16:29:11 - 12/10/2023 - 16:29:14
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 26
-  Files: 26
-  Line coverage: 90.0%
-  Covered lines: 504
-  Uncovered lines: 56
-  Coverable lines: 560
-  Total lines: 1421
-  Branch coverage: 82.9% (199 of 240)
-  Covered branches: 199
-  Total branches: 240
-  Method coverage: 91.9% (80 of 87)
-  Covered methods: 80
-  Total methods: 87
+  Classes: 27
+  Files: 27
+  Line coverage: 93.0%
+  Covered lines: 600
+  Uncovered lines: 45
+  Coverable lines: 645
+  Total lines: 1538
+  Branch coverage: 88.7% (206 of 232)
+  Covered branches: 206
+  Total branches: 232
+  Method coverage: 92.1% (82 of 89)
+  Covered methods: 82
+  Total methods: 89
 
-LeetCode                                                                               89.0%
-  LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry                          49.2%
-  LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive  100.0%
-  LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                    97.7%
-  LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinearV2                 100.0%
+LeetCode                                                                               93.7%
+  LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry                         100.0%
+  LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive   89.4%
+  LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                    95.4%
+  LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinearV2                  92.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray                              100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArrayV2                            100.0%
   LeetCode.Algorithms.RemoveElement.RemoveElementBruteForce                           100.0%
   LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral                            90.0%
-  LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol                             48.0%
+  LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol                             44.4%
   LeetCode.Algorithms.RomanToInteger.Iterative.RomanToIntegerIterative                100.0%
   LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral                 88.8%
   LeetCode.Algorithms.ThreeSum.ThreeSumBruteForce                                     100.0%
-  LeetCode.Algorithms.ThreeSum.ThreeSumTwoPointers                                    100.0%
-  LeetCode.Algorithms.TwoSum.TwoSumBruteForce                                          85.7%
-  LeetCode.Algorithms.TwoSum.TwoSumDictionary                                          90.0%
+  LeetCode.Algorithms.ThreeSum.ThreeSumTwoPointers                                     86.4%
+  LeetCode.Algorithms.TwoSum.TwoSumBruteForce                                          91.6%
+  LeetCode.Algorithms.TwoSum.TwoSumDictionary                                          93.3%
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock         100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                        100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                      100.0%
@@ -41,8 +41,9 @@ LeetCode                                                                        
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                  100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                           100.0%
 
-LeetCode.Core                                                                         100.0%
-  LeetCode.Core.EqualityComparers.OrderInsensitiveIntArrayEqualityComparer            100.0%
+LeetCode.Core                                                                          87.9%
+  LeetCode.Core.EqualityComparers.OrderInsensitiveIntArrayEqualityComparer             69.2%
   LeetCode.Core.Extensions.ArrayExtensions                                            100.0%
+  LeetCode.Core.Helpers.JsonConvertHelper<T>                                          100.0%
   LeetCode.Core.Models.ListNode                                                       100.0%
-  LeetCode.Core.Models.TreeNode                                                       100.0%
+  LeetCode.Core.Models.TreeNode                                                        86.3%
