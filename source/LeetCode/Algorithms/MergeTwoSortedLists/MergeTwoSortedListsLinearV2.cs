@@ -52,19 +52,19 @@ public static class MergeTwoSortedListsLinearV2
         if (list2 == null) return list1;
 
         var dummyHead = new ListNode();
-        var current   = dummyHead;
+        var current = dummyHead;
 
         while (list1 != null && list2 != null)
         {
             if (list1.val < list2.val)
             {
                 current.next = list1;
-                list1        = list1.next;
+                list1 = list1.next;
             }
             else
             {
                 current.next = list2;
-                list2        = list2.next;
+                list2 = list2.next;
             }
 
             current = current.next;

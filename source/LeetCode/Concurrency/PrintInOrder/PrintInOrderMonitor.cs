@@ -14,7 +14,7 @@ namespace LeetCode.Concurrency.PrintInOrder;
 public class PrintInOrderMonitor
 {
     private readonly object _lock = new();
-    private          int    _step = 1;
+    private int _step = 1;
 
     public void First(Action printFirst)
     {

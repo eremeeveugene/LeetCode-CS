@@ -59,10 +59,10 @@ public static class RomanToIntegerIterative
         for (var i = 0; i < romanString.Length; i++)
         {
             var currentChar = romanString.ElementAt(i);
-            var nextChar    = romanString.ElementAtOrDefault(i + 1);
+            var nextChar = romanString.ElementAtOrDefault(i + 1);
 
             var subtractiveRomanNumeral = SubtractiveRomanNumeral.SubtractiveRomanNumerals.FirstOrDefault(
-             s => s.Symbol.Char.Equals(currentChar) && s.SecondSymbol.Char.Equals(nextChar));
+                s => s.Symbol.Char.Equals(currentChar) && s.SecondSymbol.Char.Equals(nextChar));
 
             if (subtractiveRomanNumeral != null)
             {

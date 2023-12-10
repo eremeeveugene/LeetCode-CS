@@ -17,9 +17,9 @@ namespace LeetCode.Concurrency.FizzBuzzMultithreaded;
 /// </summary>
 public class FizzBuzzMultithreadedMonitorLock
 {
-    private readonly int    _length;
-    private readonly object _lock   = new();
-    private          int    _number = 1;
+    private readonly int _length;
+    private readonly object _lock = new();
+    private int _number = 1;
 
     public FizzBuzzMultithreadedMonitorLock(int length)
     {

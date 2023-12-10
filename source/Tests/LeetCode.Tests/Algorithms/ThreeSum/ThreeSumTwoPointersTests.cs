@@ -20,10 +20,10 @@ public class ThreeSumTwoPointersTests
 {
     [TestMethod]
     [DataRow(new[] { -1, 0, 1, 2, -1, -4 }, "[[-1, -1, 2], [-1, 0, 1]]")]
-    [DataRow(new[] { 0, 1, 1 },             "[]")]
-    [DataRow(new[] { 0, 0, 0 },             "[[0, 0, 0]]")]
-    [DataRow(new[] { -3, -2, 1, 1, 2 },     "[[-3, 1, 2], [-2, 1, 1]]")]
-    [DataRow(new[] { 3, 0, -2, -1, 1, 2 },  "[[-2, -1, 3], [-2, 0, 2], [-1, 0, 1]]")]
+    [DataRow(new[] { 0, 1, 1 }, "[]")]
+    [DataRow(new[] { 0, 0, 0 }, "[[0, 0, 0]]")]
+    [DataRow(new[] { -3, -2, 1, 1, 2 }, "[[-3, 1, 2], [-2, 1, 1]]")]
+    [DataRow(new[] { 3, 0, -2, -1, 1, 2 }, "[[-2, -1, 3], [-2, 0, 2], [-1, 0, 1]]")]
     public void ThreeSumTwoPointers_GetResult_ShouldReturnCorrectTripletsSet(int[] nums, string expectedResultJson)
     {
         // Arrange
@@ -34,9 +34,9 @@ public class ThreeSumTwoPointersTests
 
         // Assert
         var expectedSet = new HashSet<int[]>(expectedResult!.Select(e => e.ToArray()),
-                                             new OrderInsensitiveIntArrayEqualityComparer());
+            new OrderInsensitiveIntArrayEqualityComparer());
         var actualSet = new HashSet<int[]>(actualResult.Select(a => a.ToArray()),
-                                           new OrderInsensitiveIntArrayEqualityComparer());
+            new OrderInsensitiveIntArrayEqualityComparer());
 
         Assert.AreEqual(expectedResult!.Length, actualResult.Count);
         Assert.IsTrue(expectedSet.SetEquals(actualSet));

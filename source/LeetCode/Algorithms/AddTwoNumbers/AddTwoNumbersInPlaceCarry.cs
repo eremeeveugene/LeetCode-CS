@@ -86,7 +86,7 @@ public static class AddTwoNumbersInPlaceCarry
         }
 
 
-        for (var i = 0; ; i++)
+        for (var i = 0;; i++)
         {
             if (i >= list1.Count && i >= list2.Count) break;
 

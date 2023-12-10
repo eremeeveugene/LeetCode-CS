@@ -17,11 +17,11 @@ namespace LeetCode.Tests.Algorithms.RomanToInteger;
 public class RomanToIntegerIterativeTests
 {
     [TestMethod]
-    [DataRow("III",     3)]
-    [DataRow("LVIII",   58)]
+    [DataRow("III", 3)]
+    [DataRow("LVIII", 58)]
     [DataRow("MCMXCIV", 1994)]
     public void RomanToIntegerIterative_GetResult_ShouldConvertToCorrectIntegerValue(string romanString,
-        int                                                                                 expectedResult)
+        int expectedResult)
     {
         // Act
         var actualResult = RomanToIntegerIterative.GetResult(romanString);

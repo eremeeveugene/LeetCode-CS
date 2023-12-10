@@ -18,11 +18,11 @@ internal class RomanNumeral
     public RomanNumeral(RomanSymbol symbol, int value)
     {
         Symbol = symbol;
-        Value  = value;
+        Value = value;
     }
 
     public RomanSymbol Symbol { get; }
-    public int         Value  { get; }
+    public int Value { get; }
 
     public static RomanNumeral I => new(RomanSymbol.I, 1);
     public static RomanNumeral V => new(RomanSymbol.V, 5);

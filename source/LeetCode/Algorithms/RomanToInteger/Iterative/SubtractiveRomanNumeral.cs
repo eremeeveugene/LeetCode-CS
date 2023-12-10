@@ -16,7 +16,7 @@ internal class SubtractiveRomanNumeral : RomanNumeral
     private static List<SubtractiveRomanNumeral>? _subtractiveRomanNumerals;
 
     public SubtractiveRomanNumeral(RomanSymbol firstSymbol, RomanSymbol secondSymbol, int value) : base(firstSymbol,
-     value)
+        value)
     {
         SecondSymbol = secondSymbol;
     }
