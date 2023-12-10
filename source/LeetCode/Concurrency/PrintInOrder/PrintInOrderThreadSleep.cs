@@ -29,7 +29,10 @@ public class PrintInOrderThreadSleep
 
     public void Second(Action printSecond)
     {
-        while (!_isFirstPrinted) Thread.Sleep(ThreadTimeoutMs);
+        while (!_isFirstPrinted)
+        {
+            Thread.Sleep(ThreadTimeoutMs);
+        }
 
         printSecond.Invoke();
 
@@ -38,7 +41,10 @@ public class PrintInOrderThreadSleep
 
     public void Third(Action printThird)
     {
-        while (!_isSecondPrinted) Thread.Sleep(ThreadTimeoutMs);
+        while (!_isSecondPrinted)
+        {
+            Thread.Sleep(ThreadTimeoutMs);
+        }
 
         printThird.Invoke();
     }

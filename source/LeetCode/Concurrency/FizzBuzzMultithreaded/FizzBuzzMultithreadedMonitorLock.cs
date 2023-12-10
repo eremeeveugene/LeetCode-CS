@@ -35,7 +35,10 @@ public class FizzBuzzMultithreadedMonitorLock
                 {
                     Monitor.Wait(_lock);
 
-                    if (_number > _length) return;
+                    if (_number > _length)
+                    {
+                        return;
+                    }
                 }
 
                 printFizz.Invoke();
@@ -55,7 +58,10 @@ public class FizzBuzzMultithreadedMonitorLock
                 {
                     Monitor.Wait(_lock);
 
-                    if (_number > _length) return;
+                    if (_number > _length)
+                    {
+                        return;
+                    }
                 }
 
                 printBuzz.Invoke();
@@ -75,7 +81,10 @@ public class FizzBuzzMultithreadedMonitorLock
                 {
                     Monitor.Wait(_lock);
 
-                    if (_number > _length) return;
+                    if (_number > _length)
+                    {
+                        return;
+                    }
                 }
 
                 printFizzBuzz.Invoke();
@@ -95,7 +104,10 @@ public class FizzBuzzMultithreadedMonitorLock
                 {
                     Monitor.Wait(_lock);
 
-                    if (_number > _length) return;
+                    if (_number > _length)
+                    {
+                        return;
+                    }
                 }
 
                 printNumber.Invoke(_number);

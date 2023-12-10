@@ -24,7 +24,7 @@ public class RomanToIntegerIterativeTests
         int expectedResult)
     {
         // Act
-        var actualResult = RomanToIntegerIterative.GetResult(romanString);
+        int actualResult = RomanToIntegerIterative.GetResult(romanString);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

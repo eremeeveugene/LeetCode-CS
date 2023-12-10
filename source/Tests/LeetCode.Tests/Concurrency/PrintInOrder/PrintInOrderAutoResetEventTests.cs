@@ -23,15 +23,16 @@ public class PrintInOrderAutoResetEventTests : PrintInOrderTestsBase
     public async Task PrintInOrderAutoResetEvent_ExecutesTasksInOrder_ResultsInExpectedString(int[] nums)
     {
         // Arrange
-        var expectedResult = FirstSecondThird;
-        var actualResult = string.Empty;
+        string expectedResult = FirstSecondThird;
+        string actualResult = string.Empty;
 
         // Act
-        var printInOrder = new PrintInOrderAutoResetEvent();
+        PrintInOrderAutoResetEvent printInOrder = new();
 
-        var tasks = new List<Task>();
+        List<Task> tasks = new();
 
-        foreach (var num in nums)
+        foreach (int num in nums)
+        {
             switch (num)
             {
                 case 1:
@@ -44,6 +45,7 @@ public class PrintInOrderAutoResetEventTests : PrintInOrderTestsBase
                     tasks.Add(Task.Run(() => printInOrder.Third(() => actualResult += Third)));
                     break;
             }
+        }
 
         await Task.WhenAll(tasks);
 

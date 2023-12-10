@@ -9,33 +9,19 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Core.EqualityComparers;
+using Newtonsoft.Json;
 
-public class OrderInsensitiveIntArrayEqualityComparer : IEqualityComparer<int[]>
+namespace LeetCode.Core.Helpers;
+
+public static class JsonConvertHelper<T>
 {
-    private const int Seed = 13;
-    private const int Multiplier = 17;
-
-    public bool Equals(int[]? x, int[]? y)
+    public static List<T?> JsonArrayToList(string jsonArray)
     {
-        if (x == null && y == null)
+        if (jsonArray == JsonHelper.EmptyArray)
         {
-            return true;
+            return new List<T?>();
         }
 
-        if (x == null || y == null)
-        {
-            return false;
-        }
-
-        return x.OrderBy(a => a).SequenceEqual(y.OrderBy(b => b));
-    }
-
-    public int GetHashCode(int[] array)
-    {
-        unchecked
-        {
-            return array.OrderBy(a => a).Aggregate(Seed, (accumulator, value) => (accumulator * Multiplier) + value);
-        }
+        return JsonConvert.DeserializeObject<List<T?>>(jsonArray) ?? throw new InvalidOperationException();
     }
 }

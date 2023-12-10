@@ -23,11 +23,12 @@ public static class PlusOneIncrementDigitArray
     /// <returns></returns>
     public static int[] GetResult(int[] digits)
     {
-        var carryDigit = 0;
+        int carryDigit = 0;
 
         digits[^1] += 1;
 
-        for (var index = digits.Length - 1; index >= 0; index--)
+        for (int index = digits.Length - 1; index >= 0; index--)
+        {
             if (digits[index] + carryDigit > 9)
             {
                 digits[index] = 0;
@@ -39,12 +40,13 @@ public static class PlusOneIncrementDigitArray
                 carryDigit = 0;
                 break;
             }
+        }
 
         if (carryDigit > 0)
-            return new[]
-            {
-                carryDigit
-            }.Concat(digits).ToArray();
+        {
+            return new[] { carryDigit }.Concat(digits).ToArray();
+        }
+
         return digits;
     }
 }

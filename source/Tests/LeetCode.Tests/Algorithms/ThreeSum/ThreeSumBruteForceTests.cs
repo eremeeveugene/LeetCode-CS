@@ -27,15 +27,15 @@ public class ThreeSumBruteForceTests
     public void ThreeSumBruteForce_GetResult_ShouldReturnCorrectTripletsSet(int[] nums, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonConvert.DeserializeObject<int[][]>(expectedResultJson);
+        int[][]? expectedResult = JsonConvert.DeserializeObject<int[][]>(expectedResultJson);
 
         // Act
-        var actualResult = ThreeSumBruteForce.GetResult(nums);
+        IList<IList<int>> actualResult = ThreeSumBruteForce.GetResult(nums);
 
         // Assert
-        var expectedSet = new HashSet<int[]>(expectedResult!.Select(e => e.ToArray()),
+        HashSet<int[]> expectedSet = new(expectedResult!.Select(e => e.ToArray()),
             new OrderInsensitiveIntArrayEqualityComparer());
-        var actualSet = new HashSet<int[]>(actualResult.Select(a => a.ToArray()),
+        HashSet<int[]> actualSet = new(actualResult.Select(a => a.ToArray()),
             new OrderInsensitiveIntArrayEqualityComparer());
 
         Assert.AreEqual(expectedResult!.Length, actualResult.Count);

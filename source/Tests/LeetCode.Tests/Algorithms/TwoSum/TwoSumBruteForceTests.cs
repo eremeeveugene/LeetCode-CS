@@ -25,7 +25,7 @@ public class TwoSumBruteForceTests
         int[] expectedResult)
     {
         // Act
-        var actualResult = TwoSumBruteForce.GetResult(nums, target);
+        int[] actualResult = TwoSumBruteForce.GetResult(nums, target);
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);

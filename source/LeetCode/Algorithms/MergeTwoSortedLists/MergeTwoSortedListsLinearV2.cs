@@ -26,11 +26,18 @@ public static class MergeTwoSortedListsLinearV2
     /// <returns></returns>
     public static ListNode? GetResult(ListNode? list1, ListNode? list2)
     {
-        if (list1 == null) return list2;
-        if (list2 == null) return list1;
+        if (list1 == null)
+        {
+            return list2;
+        }
 
-        var dummyHead = new ListNode();
-        var current = dummyHead;
+        if (list2 == null)
+        {
+            return list1;
+        }
+
+        ListNode dummyHead = new();
+        ListNode? current = dummyHead;
 
         while (list1 != null && list2 != null)
         {

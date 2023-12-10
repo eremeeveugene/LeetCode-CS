@@ -36,7 +36,9 @@ public class PrintInOrderMonitor
         lock (_lock)
         {
             while (_step != 2)
+            {
                 Monitor.Wait(_lock);
+            }
 
             printSecond.Invoke();
 
@@ -51,7 +53,9 @@ public class PrintInOrderMonitor
         lock (_lock)
         {
             while (_step != 3)
+            {
                 Monitor.Wait(_lock);
+            }
 
             printThird.Invoke();
         }

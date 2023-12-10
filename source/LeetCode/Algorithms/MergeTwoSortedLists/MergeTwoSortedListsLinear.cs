@@ -26,11 +26,20 @@ public static class MergeTwoSortedListsLinear
     /// <returns></returns>
     public static ListNode? GetResult(ListNode? list1, ListNode? list2)
     {
-        if (list1 == null && list2 == null) return null;
+        if (list1 == null && list2 == null)
+        {
+            return null;
+        }
 
-        if (list1 == null && list2 != null) return list2;
+        if (list1 == null && list2 != null)
+        {
+            return list2;
+        }
 
-        if (list1 != null && list2 == null) return list1;
+        if (list1 != null && list2 == null)
+        {
+            return list1;
+        }
 
         if (list1 != null && list2 != null)
         {
@@ -42,39 +51,27 @@ public static class MergeTwoSortedListsLinear
             {
                 if (list1 == null && list2 != null)
                 {
-                    var list2CurrentNode = new ListNode(list2.val);
+                    ListNode list2CurrentNode = new(list2.val);
 
-                    if (previousNode != null) previousNode.next = list2CurrentNode;
+                    if (previousNode != null)
+                    {
+                        previousNode.next = list2CurrentNode;
+                    }
 
                     previousNode = list2CurrentNode;
 
                     headNode ??= list2CurrentNode;
 
                     list2 = list2.next;
-
-                    continue;
                 }
-
-                if (list1 != null && list2 == null)
+                else if (list1 != null && list2 == null)
                 {
-                    var list1CurrentNode = new ListNode(list1.val);
+                    ListNode list1CurrentNode = new(list1.val);
 
-                    if (previousNode != null) previousNode.next = list1CurrentNode;
-
-                    previousNode = list1CurrentNode;
-
-                    headNode ??= list1CurrentNode;
-
-                    list1 = list1.next;
-
-                    continue;
-                }
-
-                if (list1.val < list2.val)
-                {
-                    var list1CurrentNode = new ListNode(list1.val);
-
-                    if (previousNode != null) previousNode.next = list1CurrentNode;
+                    if (previousNode != null)
+                    {
+                        previousNode.next = list1CurrentNode;
+                    }
 
                     previousNode = list1CurrentNode;
 
@@ -82,17 +79,39 @@ public static class MergeTwoSortedListsLinear
 
                     list1 = list1.next;
                 }
-                else
+
+                else if (list2 != null && list1 != null)
                 {
-                    var list2CurrentNode = new ListNode(list2.val);
+                    if (list1.val < list2.val)
+                    {
+                        ListNode list1CurrentNode = new(list1.val);
 
-                    if (previousNode != null) previousNode.next = list2CurrentNode;
+                        if (previousNode != null)
+                        {
+                            previousNode.next = list1CurrentNode;
+                        }
 
-                    previousNode = list2CurrentNode;
+                        previousNode = list1CurrentNode;
 
-                    headNode ??= list2CurrentNode;
+                        headNode ??= list1CurrentNode;
 
-                    list2 = list2.next;
+                        list1 = list1.next;
+                    }
+                    else
+                    {
+                        ListNode list2CurrentNode = new(list2.val);
+
+                        if (previousNode != null)
+                        {
+                            previousNode.next = list2CurrentNode;
+                        }
+
+                        previousNode = list2CurrentNode;
+
+                        headNode ??= list2CurrentNode;
+
+                        list2 = list2.next;
+                    }
                 }
             }
 

@@ -25,7 +25,7 @@ public static class BinaryTreeInorderTraversalRecursive
     /// <returns></returns>
     public static IList<int> GetResult(TreeNode? treeNode)
     {
-        var result = new List<int>();
+        List<int> result = new();
 
         InOrderTraversal(treeNode, result);
 
@@ -34,12 +34,21 @@ public static class BinaryTreeInorderTraversalRecursive
 
     private static void InOrderTraversal(TreeNode? treeNode, ICollection<int> result)
     {
-        if (treeNode == null) return;
+        if (treeNode == null)
+        {
+            return;
+        }
 
-        if (treeNode.left != null) InOrderTraversal(treeNode.left, result);
+        if (treeNode.left != null)
+        {
+            InOrderTraversal(treeNode.left, result);
+        }
 
         result.Add(treeNode.val);
 
-        if (treeNode.right != null) InOrderTraversal(treeNode.right, result);
+        if (treeNode.right != null)
+        {
+            InOrderTraversal(treeNode.right, result);
+        }
     }
 }

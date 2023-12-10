@@ -18,6 +18,7 @@ public class ListNode
 {
     // ReSharper disable once InconsistentNaming
     public ListNode? next;
+
     // ReSharper disable once InconsistentNaming
     public int val;
 
@@ -25,5 +26,21 @@ public class ListNode
     {
         this.val = val;
         this.next = next;
+    }
+
+    public static ListNode? Reverse(ListNode? head)
+    {
+        ListNode? prev = null;
+        ListNode? current = head;
+
+        while (current != null)
+        {
+            ListNode? next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+
+        return prev;
     }
 }

@@ -27,15 +27,15 @@ public class ThreeSumTwoPointersTests
     public void ThreeSumTwoPointers_GetResult_ShouldReturnCorrectTripletsSet(int[] nums, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonConvert.DeserializeObject<int[][]>(expectedResultJson);
+        int[][]? expectedResult = JsonConvert.DeserializeObject<int[][]>(expectedResultJson);
 
         // Act
-        var actualResult = ThreeSumTwoPointers.GetResult(nums);
+        IList<IList<int>> actualResult = ThreeSumTwoPointers.GetResult(nums);
 
         // Assert
-        var expectedSet = new HashSet<int[]>(expectedResult!.Select(e => e.ToArray()),
+        HashSet<int[]> expectedSet = new(expectedResult!.Select(e => e.ToArray()),
             new OrderInsensitiveIntArrayEqualityComparer());
-        var actualSet = new HashSet<int[]>(actualResult.Select(a => a.ToArray()),
+        HashSet<int[]> actualSet = new(actualResult.Select(a => a.ToArray()),
             new OrderInsensitiveIntArrayEqualityComparer());
 
         Assert.AreEqual(expectedResult!.Length, actualResult.Count);

@@ -26,13 +26,13 @@ public class FizzBuzzMultithreadedMonitorLockTests
         string expectedResultJson)
     {
         // Arrange
-        var expectedResult = DeserializeToList(expectedResultJson);
-        var actualResult = new List<object>();
+        List<object> expectedResult = DeserializeToList(expectedResultJson);
+        List<object> actualResult = new();
 
         // Act
-        var fizzBuzzMultithreaded = new FizzBuzzMultithreadedMonitorLock(length);
+        FizzBuzzMultithreadedMonitorLock fizzBuzzMultithreaded = new(length);
 
-        var tasks = new List<Task>
+        List<Task> tasks = new()
         {
             Task.Run(() => fizzBuzzMultithreaded.Fizz(() => actualResult.Add("fizz"))),
             Task.Run(() => fizzBuzzMultithreaded.Buzz(() => actualResult.Add("buzz"))),
@@ -48,17 +48,21 @@ public class FizzBuzzMultithreadedMonitorLockTests
 
     private static List<object> DeserializeToList(string input)
     {
-        var resultList = new List<object>();
-        var elements = input.Split(',');
+        List<object> resultList = new();
+        string[] elements = input.Split(',');
 
-        foreach (var element in elements)
+        foreach (string element in elements)
         {
-            var trimmedElement = element.Trim();
+            string trimmedElement = element.Trim();
 
-            if (int.TryParse(trimmedElement, out var number))
+            if (int.TryParse(trimmedElement, out int number))
+            {
                 resultList.Add(number);
+            }
             else
+            {
                 resultList.Add(trimmedElement);
+            }
         }
 
         return resultList;

@@ -35,7 +35,10 @@ internal class RomanSymbol
 
     public override bool Equals(object? @object)
     {
-        if (@object is RomanSymbol romanSymbol) return Equals(romanSymbol);
+        if (@object is RomanSymbol romanSymbol)
+        {
+            return Equals(romanSymbol);
+        }
 
         return Equals(this, @object);
     }
