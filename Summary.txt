@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/10/2023 - 14:16:47
-  Coverage date: 12/10/2023 - 14:16:27 - 12/10/2023 - 14:16:30
+  Generated on: 12/10/2023 - 14:47:28
+  Coverage date: 12/10/2023 - 14:47:05 - 12/10/2023 - 14:47:08
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
   Classes: 26
   Files: 26
   Line coverage: 90.0%
-  Covered lines: 508
+  Covered lines: 504
   Uncovered lines: 56
-  Coverable lines: 564
-  Total lines: 1585
-  Branch coverage: 82.5% (198 of 240)
-  Covered branches: 198
+  Coverable lines: 560
+  Total lines: 1421
+  Branch coverage: 82.9% (199 of 240)
+  Covered branches: 199
   Total branches: 240
   Method coverage: 91.9% (80 of 87)
   Covered methods: 80
   Total methods: 87
 
-LeetCode                                                                               89.1%
+LeetCode                                                                               89.0%
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry                          49.2%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive  100.0%
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                    97.7%
