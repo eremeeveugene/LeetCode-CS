@@ -1,4 +1,4 @@
-name: .NET CI/CD Pipeline
+name: .NET
 
 on:
   push:
@@ -7,25 +7,18 @@ on:
     branches: [ "develop" ]
 
 jobs:
-  setup:
-    runs-on: ubuntu-latest
-    outputs:
-      dotnet-version: ${{ steps.dotnet-version.outputs.DOTNET_VERSION }}
-    steps:
-      - uses: actions/checkout@v3
-      - name: Get .NET version from global.json
-        id: dotnet-version
-        run: |
-          echo "::set-output name=DOTNET_VERSION::$(jq -r '.sdk.version' ../global.json)"
-
   build:
-    needs: setup
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: source
     steps:
       - uses: actions/checkout@v3
+      - name: Get .NET version from global.json
+        id: dotnet-version
+        run: |
+          DOTNET_VERSION=$(jq -r '.sdk.version' ../global.json)
+          echo "DOTNET_VERSION=$DOTNET_VERSION" >> $GITHUB_ENV
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
@@ -34,47 +27,12 @@ jobs:
         run: dotnet restore
       - name: Build
         run: dotnet build --no-restore
-
-  code_quality:
-    needs: setup
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: source
-    steps:
-      - uses: actions/checkout@v3
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: ${{ needs.setup.outputs.dotnet-version }}
+      - name: Run Tests with Coverage
+        run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
       - name: Install .NET Format tool
         run: dotnet tool install -g dotnet-format
       - name: Check Code Style
         run: dotnet format --verify-no-changes --verbosity diagnostic
-
-  tests_with_coverage:
-    needs: build
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: source
-    steps:
-      - uses: actions/checkout@v3
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: ${{ needs.setup.outputs.dotnet-version }}
-      - name: Run Tests with Coverage
-        run: dotnet test --verbosity normal --collect:"XPlat Code Coverage"
-
-  coverage_report:
-    needs: tests_with_coverage
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: source
-    steps:
-      - uses: actions/checkout@v3
       - name: Install Report Generator Tool
         run: dotnet tool install --global dotnet-reportgenerator-globaltool
       - name: Generate Coverage Report
@@ -95,16 +53,8 @@ jobs:
         with:
           name: coverage-report
           path: ${{ github.workspace }}/source/coverage
-
-  deploy:
-    needs: coverage_report
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: source
-    steps:
-      - uses: actions/checkout@v3
       - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
