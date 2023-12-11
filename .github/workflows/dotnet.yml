@@ -35,23 +35,8 @@ jobs:
       - name: Build
         run: dotnet build --no-restore
 
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: source
-    steps:
-      - uses: actions/checkout@v3
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: ${{ needs.setup.outputs.dotnet-version }}
-      - name: Run Tests with Coverage
-        run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
-
   code_quality:
-    needs: test
+    needs: setup
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -66,6 +51,21 @@ jobs:
         run: dotnet tool install -g dotnet-format
       - name: Check Code Style
         run: dotnet format --verify-no-changes --verbosity diagnostic
+
+  tests_with_coverage:
+    needs: build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: source
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ needs.setup.outputs.dotnet-version }}
+      - name: Run Tests with Coverage
+        run: dotnet test --verbosity normal --collect:"XPlat Code Coverage"
 
   coverage_report:
     needs: code_quality
