@@ -1,6 +1,6 @@
 Summary
-  Generated on: 12/10/2023 - 16:29:30
-  Coverage date: 12/10/2023 - 16:29:11 - 12/10/2023 - 16:29:14
+  Generated on: 12/11/2023 - 19:00:56
+  Coverage date: 12/11/2023 - 19:00:35 - 12/11/2023 - 19:00:38
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
   Classes: 27
