@@ -68,7 +68,7 @@ jobs:
         run: dotnet test --verbosity normal --collect:"XPlat Code Coverage"
 
   coverage_report:
-    needs: code_quality
+    needs: tests_with_coverage
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -99,7 +99,6 @@ jobs:
   deploy:
     needs: coverage_report
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
     defaults:
       run:
         working-directory: source
