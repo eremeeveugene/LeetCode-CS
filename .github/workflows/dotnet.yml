@@ -7,7 +7,7 @@ on:
     branches: [ "develop" ]
 
 jobs:
-  build:
+  pipeline:
     runs-on: ubuntu-latest
     defaults:
       run:
