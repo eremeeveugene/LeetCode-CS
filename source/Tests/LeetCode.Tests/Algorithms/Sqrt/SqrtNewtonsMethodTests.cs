@@ -9,21 +9,27 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.SearchInsertPosition;
+using LeetCode.Algorithms.Sqrt;
 
-namespace LeetCode.Tests.Algorithms.SearchInsertPosition;
+namespace LeetCode.Tests.Algorithms.Sqrt;
 
 [TestClass]
-public class SearchInsertPositionIterativeTests
+public class SqrtNewtonsMethodTests
 {
     [TestMethod]
-    [DataRow(new[] { 1, 3, 5, 6 }, 2, 1)]
-    [DataRow(new[] { 1, 3, 5, 6 }, 5, 2)]
-    [DataRow(new[] { 1, 3, 5, 6 }, 7, 4)]
-    public void SearchInsertPositionIterative_GetResult_ShouldReturnCorrectIndex(int[] nums, int target, int expectedResult)
+    [DataRow(0, 0)]
+    [DataRow(1, 1)]
+    [DataRow(2, 1)]
+    [DataRow(3, 1)]
+    [DataRow(4, 2)]
+    [DataRow(8, 2)]
+    [DataRow(10, 3)]
+    [DataRow(17, 4)]
+    [DataRow(2147395599, 46339)]
+    public void SqrtNewtonsMethod_GetResult_ShouldReturnCorrectIntegerSquareRoots(int x, int expectedResult)
     {
         // Act
-        int actualResult = SearchInsertPositionIterative.GetResult(nums, target);
+        int actualResult = SqrtNewtonsMethod.GetResult(x);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
