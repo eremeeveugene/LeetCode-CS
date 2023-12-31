@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/30/2023 - 19:01:32
-  Coverage date: 12/30/2023 - 19:01:16 - 12/30/2023 - 19:01:19
+  Generated on: 12/31/2023 - 08:49:16
+  Coverage date: 12/31/2023 - 08:48:56 - 12/31/2023 - 08:48:59
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 29
-  Files: 29
-  Line coverage: 93.0%
-  Covered lines: 607
+  Classes: 31
+  Files: 31
+  Line coverage: 93.4%
+  Covered lines: 642
   Uncovered lines: 45
-  Coverable lines: 652
-  Total lines: 1598
-  Branch coverage: 88.8% (208 of 234)
-  Covered branches: 208
-  Total branches: 234
-  Method coverage: 92.3% (84 of 91)
-  Covered methods: 84
-  Total methods: 91
+  Coverable lines: 687
+  Total lines: 1696
+  Branch coverage: 89.5% (222 of 248)
+  Covered branches: 222
+  Total branches: 248
+  Method coverage: 92.4% (86 of 93)
+  Covered methods: 86
+  Total methods: 93
 
-LeetCode                                                                               93.8%
+LeetCode                                                                               94.2%
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry                         100.0%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive   89.4%
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                    95.4%
@@ -31,6 +31,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral                 88.8%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionBinarySearch           100.0%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionIterative              100.0%
+  LeetCode.Algorithms.Sqrt.SqrtBinarySearch                                           100.0%
+  LeetCode.Algorithms.Sqrt.SqrtNewtonsMethod                                          100.0%
   LeetCode.Algorithms.ThreeSum.ThreeSumBruteForce                                     100.0%
   LeetCode.Algorithms.ThreeSum.ThreeSumTwoPointers                                     86.4%
   LeetCode.Algorithms.TwoSum.TwoSumBruteForce                                          91.6%
