@@ -1,29 +1,34 @@
 Summary
-  Generated on: 01/01/2024 - 19:26:11
-  Coverage date: 01/01/2024 - 19:25:52 - 01/01/2024 - 19:25:55
+  Generated on: 01/04/2024 - 18:24:48
+  Coverage date: 01/04/2024 - 18:24:29 - 01/04/2024 - 18:24:32
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 33
-  Files: 33
-  Line coverage: 93.5%
-  Covered lines: 658
-  Uncovered lines: 45
-  Coverable lines: 703
-  Total lines: 1766
-  Branch coverage: 89.6% (226 of 252)
-  Covered branches: 226
-  Total branches: 252
-  Method coverage: 92.6% (88 of 95)
-  Covered methods: 88
-  Total methods: 95
+  Classes: 38
+  Files: 38
+  Line coverage: 93.6%
+  Covered lines: 698
+  Uncovered lines: 47
+  Coverable lines: 745
+  Total lines: 1946
+  Branch coverage: 89.8% (239 of 266)
+  Covered branches: 239
+  Total branches: 266
+  Method coverage: 93% (93 of 100)
+  Covered methods: 93
+  Total methods: 100
 
-LeetCode                                                                               94.3%
+LeetCode                                                                               94.4%
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry                         100.0%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive   89.4%
   LeetCode.Algorithms.CountingBits.CountingBitsDynamicProgramming                     100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                              100.0%
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                    95.4%
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinearV2                  92.0%
+  LeetCode.Algorithms.MissingNumber.MissingNumberCumulativeSum                        100.0%
+  LeetCode.Algorithms.MissingNumber.MissingNumberIterativeSumAndSubtract              100.0%
+  LeetCode.Algorithms.MissingNumber.MissingNumberSortAndForSearch                     100.0%
+  LeetCode.Algorithms.MissingNumber.MissingNumberSortAndWhileSearch                   100.0%
+  LeetCode.Algorithms.MissingNumber.MissingNumberSumFormula                            71.4%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray                              100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArrayV2                            100.0%
   LeetCode.Algorithms.RemoveElement.RemoveElementBruteForce                           100.0%
