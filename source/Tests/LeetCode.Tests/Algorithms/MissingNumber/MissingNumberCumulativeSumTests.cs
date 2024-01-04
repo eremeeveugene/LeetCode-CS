@@ -14,7 +14,7 @@ using LeetCode.Algorithms.MissingNumber;
 namespace LeetCode.Tests.Algorithms.MissingNumber;
 
 [TestClass]
-public class MissingNumber1Tests
+public class MissingNumberCumulativeSumTests
 {
     [TestMethod]
     [DataRow(new[] { 3, 0, 1 }, 2)]
@@ -23,7 +23,7 @@ public class MissingNumber1Tests
     public void Test(int[] nums, int expectedResult)
     {
         // Act
-        int actualResult = MissingNumber1.GetResult(nums);
+        int actualResult = MissingNumberCumulativeSum.GetResult(nums);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

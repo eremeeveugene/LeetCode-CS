@@ -14,8 +14,13 @@ namespace LeetCode.Algorithms.MissingNumber;
 /// <summary>
 ///     https://leetcode.com/problems/missing-number/description/
 /// </summary>
-public static class MissingNumber1
+public static class MissingNumberSortAndForSearch
 {
+    /// <summary>
+    ///     Time complexity - O(n log n)
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <returns></returns>
     public static int GetResult(int[] nums)
     {
         Array.Sort(nums);
@@ -30,54 +35,4 @@ public static class MissingNumber1
 
         return nums.Length;
     }
-
-    //public static int GetResult(int[] nums)
-    //{
-    //    if (nums.Length == 0)
-    //    {
-    //        return 0;
-    //    }
-
-    //    var numsLength = nums.Length;
-
-    //    return numsLength * (numsLength + 1) / 2 - nums.Sum();
-    //}
-
-    //public static int GetResult(int[] nums)
-    //{
-    //    var sum = nums.Sum();
-
-    //    for (int i = 0; i < nums.Length + 1; i++)
-    //    {
-    //        sum -= i;
-    //    }
-
-    //    return -sum;
-    //}
-
-    //public static int GetResult(int[] nums)
-    //{
-    //    var sum = 0;
-
-    //    for (int i = 0; i < nums.Length + 1; i++)
-    //    {
-    //        sum += i;
-    //    }
-
-    //    return sum - nums.Sum();
-    //}
-
-    //public static int GetResult(int[] nums)
-    //{
-    //    List<int> orderedNums = nums.Order().ToList();
-
-    //    int i = 0;
-
-    //    while (i < nums.Length && orderedNums[i] == i)
-    //    {
-    //        i++;
-    //    }
-
-    //    return i;
-    //}
 }
