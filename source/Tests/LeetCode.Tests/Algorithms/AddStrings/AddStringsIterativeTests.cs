@@ -14,17 +14,17 @@ using LeetCode.Algorithms.AddStrings;
 namespace LeetCode.Tests.Algorithms.AddStrings;
 
 [TestClass]
-public class AddStrings1Tests
+public class AddStringsIterativeTests
 {
     [TestMethod]
     [DataRow("0", "0", "0")]
     [DataRow("11", "123", "134")]
     [DataRow("456", "77", "533")]
     [DataRow("3876620623801494171", "6529364523802684779", "10405985147604178950")]
-    public void Test(string num1, string num2, string expectedResult)
+    public void AddStringsIterative_GetResult_ShouldSumStringNumbersCorrectly(string num1, string num2, string expectedResult)
     {
         // Act
-        var actualResult = AddStrings1.GetResult(num1, num2);
+        var actualResult = AddStringsIterative.GetResult(num1, num2);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

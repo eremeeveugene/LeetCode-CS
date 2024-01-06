@@ -9,22 +9,25 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.CountingBits;
+using LeetCode.Algorithms.AddStrings;
 
-namespace LeetCode.Tests.Algorithms.CountingBits;
+namespace LeetCode.Tests.Algorithms.AddStrings;
 
 [TestClass]
-public class CountingBitsDynamicProgrammingTests
+public class AddStringsLinearTests
 {
     [TestMethod]
-    [DataRow(2, new[] { 0, 1, 1 })]
-    [DataRow(5, new[] { 0, 1, 1, 2, 1, 2 })]
-    public void CountingBitsDynamicProgramming_GetResult_ShouldReturnCorrectBitCounts(int n, int[] expectedResult)
+    [DataRow("0", "0", "0")]
+    [DataRow("11", "123", "134")]
+    [DataRow("456", "77", "533")]
+    [DataRow("3876620623801494171", "6529364523802684779", "10405985147604178950")]
+    public void AddStringsLinear_GetResult_ShouldSumStringNumbersCorrectly(string num1, string num2,
+        string expectedResult)
     {
         // Act
-        var actualResult = CountingBitsDynamicProgramming.GetResult(n);
+        var actualResult = AddStringsLinear.GetResult(num1, num2);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEqual(expectedResult, actualResult);
     }
 }

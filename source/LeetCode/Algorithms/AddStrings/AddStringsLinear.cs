@@ -9,63 +9,54 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using System.Globalization;
-using System.Text;
-
 namespace LeetCode.Algorithms.AddStrings;
 
 /// <summary>
 ///     https://leetcode.com/problems/add-strings/description/
 /// </summary>
-public static class AddStrings1
+public static class AddStringsLinear
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    /// </summary>
+    /// <param name="num1"></param>
+    /// <param name="num2"></param>
+    /// <returns></returns>
     public static string GetResult(string num1, string num2)
     {
-        var resultBuilder = new StringBuilder();
+        var len1 = num1.Length;
+        var len2 = num2.Length;
+
+        var result = new char[Math.Max(len1, len2) + 1];
 
         var carry = 0;
+        var index = result.Length - 1;
 
-        var num1Index = num1.Length;
-        var num2Index = num2.Length;
-
-        while (num1Index > 0 || num2Index > 0)
+        while (len1 > 0 || len2 > 0)
         {
-            double int1 = 0;
-            double int2 = 0;
+            var sum = carry;
 
-            if (num1Index > 0)
+            if (len1 > 0)
             {
-                int1 = char.GetNumericValue(num1[num1Index - 1]);
+                sum += (int)char.GetNumericValue(num1[--len1]);
             }
 
-            if (num2Index > 0)
+            if (len2 > 0)
             {
-                int2 = char.GetNumericValue(num2[num2Index - 1]);
+                sum += (int)char.GetNumericValue(num2[--len2]);
             }
 
-            var sum = int1 + int2 + carry;
-
-            if (sum > 9)
-            {
-                sum -= 10;
-                carry = 1;
-            }
-            else
-            {
-                carry = 0;
-            }
-
-            resultBuilder.Insert(0, sum.ToString(CultureInfo.InvariantCulture));
-
-            num1Index--;
-            num2Index--;
+            carry = sum / 10;
+            result[index--] = (char)((sum % 10) + '0');
         }
 
-        if (carry > 0)
+        if (carry <= 0)
         {
-            resultBuilder.Insert(0, carry.ToString());
+            return new string(result, index + 1, result.Length - index - 1);
         }
 
-        return resultBuilder.ToString();
+        result[index] = (char)(carry + '0');
+
+        return new string(result).TrimStart('0');
     }
 }
