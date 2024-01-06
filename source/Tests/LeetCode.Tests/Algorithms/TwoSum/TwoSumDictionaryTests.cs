@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -25,7 +25,7 @@ public class TwoSumDictionaryTests
         int[] expectedResult)
     {
         // Act
-        int[] actualResult = TwoSumDictionary.GetResult(nums, target);
+        var actualResult = TwoSumDictionary.GetResult(nums, target);
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);

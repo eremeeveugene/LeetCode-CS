@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -56,12 +56,12 @@ public static class RomanToIntegerIterative
     {
         List<RomanNumeral> romanNumerals = new();
 
-        for (int i = 0; i < romanString.Length; i++)
+        for (var i = 0; i < romanString.Length; i++)
         {
-            char currentChar = romanString.ElementAt(i);
-            char nextChar = romanString.ElementAtOrDefault(i + 1);
+            var currentChar = romanString.ElementAt(i);
+            var nextChar = romanString.ElementAtOrDefault(i + 1);
 
-            SubtractiveRomanNumeral? subtractiveRomanNumeral =
+            var subtractiveRomanNumeral =
                 SubtractiveRomanNumeral.SubtractiveRomanNumerals.FirstOrDefault(
                     s => s.Symbol.Char.Equals(currentChar) && s.SecondSymbol.Char.Equals(nextChar));
 

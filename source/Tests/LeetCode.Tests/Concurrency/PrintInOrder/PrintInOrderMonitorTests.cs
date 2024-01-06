@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -23,15 +23,15 @@ public class PrintInOrderMonitorTests : PrintInOrderTestsBase
     public async Task PrintInOrderMonitor_ExecutesTasksInOrder_ResultsInExpectedString(int[] nums)
     {
         // Arrange
-        string expectedResult = FirstSecondThird;
-        string actualResult = string.Empty;
+        var expectedResult = FirstSecondThird;
+        var actualResult = string.Empty;
 
         // Act
         PrintInOrderMonitor printInOrder = new();
 
         List<Task> tasks = new();
 
-        foreach (int num in nums)
+        foreach (var num in nums)
         {
             switch (num)
             {

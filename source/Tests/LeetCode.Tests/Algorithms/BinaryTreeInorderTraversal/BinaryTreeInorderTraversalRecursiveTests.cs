@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -29,10 +29,10 @@ public class BinaryTreeInorderTraversalRecursiveTests
         // Arrange
         IList<int?> expectedResult = JsonConvertHelper<int?>.JsonArrayToList(expectedArrayJson);
         IList<int?> inputArray = JsonConvertHelper<int?>.JsonArrayToList(inputArrayJson);
-        TreeNode inputNode = TreeNode.BuildTree(inputArray);
+        var inputNode = TreeNode.BuildTree(inputArray);
 
         // Act
-        IList<int> actualResult = BinaryTreeInorderTraversalRecursive.GetResult(inputNode);
+        var actualResult = BinaryTreeInorderTraversalRecursive.GetResult(inputNode);
 
         // Assert
         Assert.IsNotNull(actualResult);

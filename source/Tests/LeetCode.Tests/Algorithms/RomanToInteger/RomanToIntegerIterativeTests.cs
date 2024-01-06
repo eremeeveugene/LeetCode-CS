@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -24,7 +24,7 @@ public class RomanToIntegerIterativeTests
         int expectedResult)
     {
         // Act
-        int actualResult = RomanToIntegerIterative.GetResult(romanString);
+        var actualResult = RomanToIntegerIterative.GetResult(romanString);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

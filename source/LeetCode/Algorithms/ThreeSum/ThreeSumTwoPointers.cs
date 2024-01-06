@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -32,19 +32,19 @@ public static class ThreeSumTwoPointers
 
         List<IList<int>> result = new();
 
-        for (int i = 0; i < nums.Length - 2; i++)
+        for (var i = 0; i < nums.Length - 2; i++)
         {
             if (i > 0 && nums[i] == nums[i - 1])
             {
                 continue;
             }
 
-            int left = i + 1;
-            int right = nums.Length - 1;
+            var left = i + 1;
+            var right = nums.Length - 1;
 
             while (left < right)
             {
-                int sum = nums[i] + nums[left] + nums[right];
+                var sum = nums[i] + nums[left] + nums[right];
 
                 switch (sum)
                 {

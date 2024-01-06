@@ -19,10 +19,10 @@ public class CountingBitsDynamicProgrammingTests
     [TestMethod]
     [DataRow(2, new[] { 0, 1, 1 })]
     [DataRow(5, new[] { 0, 1, 1, 2, 1, 2 })]
-    public void Test(int n, int[] expectedResult)
+    public void CountingBitsDynamicProgramming_GetResult_ShouldReturnCorrectBitCounts(int n, int[] expectedResult)
     {
         // Act
-        int[] actualResult = CountingBitsDynamicProgramming.GetResult(n);
+        var actualResult = CountingBitsDynamicProgramming.GetResult(n);
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);

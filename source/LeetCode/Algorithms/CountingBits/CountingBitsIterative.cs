@@ -17,15 +17,15 @@ namespace LeetCode.Algorithms.CountingBits;
 public static class CountingBitsIterative
 {
     /// <summary>
-    /// Time complexity - O (n log n)
+    ///     Time complexity - O (n log n)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>
     public static int[] GetResult(int n)
     {
-        int[] result = new int[n + 1];
+        var result = new int[n + 1];
 
-        for (int i = 0; i < n + 1; i++)
+        for (var i = 0; i < n + 1; i++)
         {
             result[i] = Convert.ToString(i, 2).Count(b => b.Equals('1'));
         }

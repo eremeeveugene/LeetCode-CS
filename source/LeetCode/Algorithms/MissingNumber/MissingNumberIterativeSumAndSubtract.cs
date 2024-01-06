@@ -23,9 +23,9 @@ public static class MissingNumberIterativeSumAndSubtract
     /// <returns></returns>
     public static int GetResult(int[] nums)
     {
-        int sum = nums.Sum();
+        var sum = nums.Sum();
 
-        for (int i = 0; i < nums.Length + 1; i++)
+        for (var i = 0; i < nums.Length + 1; i++)
         {
             sum -= i;
         }

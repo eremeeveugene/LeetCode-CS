@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -24,9 +24,9 @@ public static class TwoSumBruteForce
     /// <returns></returns>
     public static int[] GetResult(int[] nums, int target)
     {
-        for (int i = 0; i < nums.Length; i++)
+        for (var i = 0; i < nums.Length; i++)
         {
-            for (int j = i + 1; j < nums.Length; j++)
+            for (var j = i + 1; j < nums.Length; j++)
             {
                 if (nums[i] + nums[j] == target)
                 {

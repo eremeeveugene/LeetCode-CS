@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -28,11 +28,11 @@ public static class SqrtNewtonsMethod
             return x;
         }
 
-        double xOld = x / 2.0;
+        var xOld = x / 2.0;
 
         while (true)
         {
-            double xNew = (xOld + (x / xOld)) / 2;
+            var xNew = (xOld + (x / xOld)) / 2;
 
             if (Math.Abs(xNew - xOld) < 1)
             {

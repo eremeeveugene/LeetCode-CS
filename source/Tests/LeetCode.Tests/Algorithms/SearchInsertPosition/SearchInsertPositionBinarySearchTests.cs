@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -20,10 +20,11 @@ public class SearchInsertPositionBinarySearchTests
     [DataRow(new[] { 1, 3, 5, 6 }, 2, 1)]
     [DataRow(new[] { 1, 3, 5, 6 }, 5, 2)]
     [DataRow(new[] { 1, 3, 5, 6 }, 7, 4)]
-    public void SearchInsertPositionBinarySearch_GetResult_ShouldReturnCorrectIndex(int[] nums, int target, int expectedResult)
+    public void SearchInsertPositionBinarySearch_GetResult_ShouldReturnCorrectIndex(int[] nums, int target,
+        int expectedResult)
     {
         // Act
-        int actualResult = SearchInsertPositionBinarySearch.GetResult(nums, target);
+        var actualResult = SearchInsertPositionBinarySearch.GetResult(nums, target);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

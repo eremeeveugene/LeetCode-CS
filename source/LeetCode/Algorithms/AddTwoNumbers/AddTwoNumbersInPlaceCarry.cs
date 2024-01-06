@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -26,16 +26,16 @@ public static class AddTwoNumbersInPlaceCarry
     /// <returns></returns>
     public static ListNode? GetResult(ListNode? l1, ListNode? l2)
     {
-        int carry = 0;
+        var carry = 0;
 
         ListNode? head = null;
 
         while (l1 != null || l2 != null)
         {
-            int val1 = l1?.val ?? 0;
-            int val2 = l2?.val ?? 0;
+            var val1 = l1?.val ?? 0;
+            var val2 = l2?.val ?? 0;
 
-            int sum = val1 + val2 + carry;
+            var sum = val1 + val2 + carry;
 
             carry = 0;
 

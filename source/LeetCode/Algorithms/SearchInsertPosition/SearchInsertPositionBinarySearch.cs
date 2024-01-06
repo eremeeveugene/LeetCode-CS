@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -24,7 +24,7 @@ public static class SearchInsertPositionBinarySearch
     /// <returns></returns>
     public static int GetResult(int[] nums, int target)
     {
-        int index = Array.BinarySearch(nums, target);
+        var index = Array.BinarySearch(nums, target);
 
         return index < 0 ? ~index : index;
     }

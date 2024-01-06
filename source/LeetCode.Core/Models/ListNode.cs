@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -31,11 +31,11 @@ public class ListNode
     public static ListNode? Reverse(ListNode? head)
     {
         ListNode? prev = null;
-        ListNode? current = head;
+        var current = head;
 
         while (current != null)
         {
-            ListNode? next = current.next;
+            var next = current.next;
             current.next = prev;
             prev = current;
             current = next;

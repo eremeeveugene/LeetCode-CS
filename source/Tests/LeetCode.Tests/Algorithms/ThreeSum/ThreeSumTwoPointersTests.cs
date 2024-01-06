@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -27,10 +27,10 @@ public class ThreeSumTwoPointersTests
     public void ThreeSumTwoPointers_GetResult_ShouldReturnCorrectTripletsSet(int[] nums, string expectedResultJson)
     {
         // Arrange
-        int[][]? expectedResult = JsonConvert.DeserializeObject<int[][]>(expectedResultJson);
+        var expectedResult = JsonConvert.DeserializeObject<int[][]>(expectedResultJson);
 
         // Act
-        IList<IList<int>> actualResult = ThreeSumTwoPointers.GetResult(nums);
+        var actualResult = ThreeSumTwoPointers.GetResult(nums);
 
         // Assert
         HashSet<int[]> expectedSet = new(expectedResult!.Select(e => e.ToArray()),

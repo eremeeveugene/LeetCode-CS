@@ -38,7 +38,7 @@ public class PlusOneIncrementDigitArrayV2Tests
         int[] digits, int[] expectedResult)
     {
         // Act
-        int[] actualResult = PlusOneIncrementDigitArrayV2.GetResult(digits);
+        var actualResult = PlusOneIncrementDigitArrayV2.GetResult(digits);
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);

@@ -9,27 +9,25 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.MissingNumber;
+using LeetCode.Algorithms.AddStrings;
 
-/// <summary>
-///     https://leetcode.com/problems/missing-number/description/
-/// </summary>
-public static class MissingNumberSumFormula
+namespace LeetCode.Tests.Algorithms.AddStrings;
+
+[TestClass]
+public class AddStringsLinearTests
 {
-    /// <summary>
-    ///     Time complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
-    public static int GetResult(int[] nums)
+    [TestMethod]
+    [DataRow("0", "0", "0")]
+    [DataRow("11", "123", "134")]
+    [DataRow("456", "77", "533")]
+    [DataRow("3876620623801494171", "6529364523802684779", "10405985147604178950")]
+    public void AddStringsLinear_GetResult_ShouldSumStringNumbersCorrectly(string num1, string num2,
+        string expectedResult)
     {
-        if (nums.Length == 0)
-        {
-            return 0;
-        }
+        // Act
+        var actualResult = AddStringsLinear.GetResult(num1, num2);
 
-        var numsLength = nums.Length;
-
-        return (numsLength * (numsLength + 1) / 2) - nums.Sum();
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
 }

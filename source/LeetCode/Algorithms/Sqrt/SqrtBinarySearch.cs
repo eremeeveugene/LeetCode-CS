@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -28,13 +28,13 @@ public static class SqrtBinarySearch
             return x;
         }
 
-        int start = 1;
-        int end = x;
-        int ans = 0;
+        var start = 1;
+        var end = x;
+        var ans = 0;
 
         while (start <= end)
         {
-            int mid = start + ((end - start) / 2);
+            var mid = start + ((end - start) / 2);
 
             if (mid <= x / mid)
             {
