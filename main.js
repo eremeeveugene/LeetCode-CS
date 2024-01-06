@@ -221,6 +221,8 @@ var assemblies = [
   {
     "name": "LeetCode",
     "classes": [
+      { "name": "LeetCode.Algorithms.AddStrings.AddStringsIterative", "rp": "LeetCode_AddStringsIterative.html", "cl": 36, "ucl": 0, "cal": 36, "tl": 75, "cb": 12, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.AddStrings.AddStringsLinear", "rp": "LeetCode_AddStringsLinear.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 62, "cb": 10, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry", "rp": "LeetCode_AddTwoNumbersInPlaceCarry.html", "cl": 24, "ucl": 0, "cal": 24, "tl": 61, "cb": 16, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive", "rp": "LeetCode_BinaryTreeInorderTraversalRecursive.html", "cl": 17, "ucl": 2, "cal": 19, "tl": 54, "cb": 5, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.CountingBits.CountingBitsDynamicProgramming", "rp": "LeetCode_CountingBitsDynamicProgramming.html", "cl": 8, "ucl": 0, "cal": 8, "tl": 35, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
