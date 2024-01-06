@@ -9,45 +9,45 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
 using System.Text;
 
 namespace LeetCode.Algorithms.AddStrings;
 
+/// <summary>
+///     https://leetcode.com/problems/add-strings/description/
+/// </summary>
 public static class AddStrings1
 {
     public static string GetResult(string num1, string num2)
     {
-        var resultBuilder = new StringBuilder();
-        
-        var carry = 0;
+        StringBuilder resultBuilder = new StringBuilder();
 
-        var num1Length = num1.Length;
-        var num2Length = num2.Length;
+        int carry = 0;
 
-        var length = num1Length > num2Length ? num1Length : num2Length;
+        int num1Index = num1.Length;
+        int num2Index = num2.Length;
 
-        for (int i = length - 1; i >= 0; i--)
+        while (num1Index > 0 || num2Index > 0)
         {
             double int1 = 0;
             double int2 = 0;
 
-            if (i < num1Length)
+            if (num1Index > 0)
             {
-                int1 = char.GetNumericValue(num1[i]);
-
+                int1 = char.GetNumericValue(num1[num1Index - 1]);
             }
 
-            if (i < num2Length)
+            if (num2Index > 0)
             {
-                int2 = char.GetNumericValue(num2[i]);
-
+                int2 = char.GetNumericValue(num2[num2Index - 1]);
             }
 
-            var sum = int1 + int2 + carry;
+            double sum = int1 + int2 + carry;
 
             if (sum > 9)
             {
-                sum -= 9;
+                sum -= 10;
                 carry = 1;
             }
             else
@@ -55,7 +55,15 @@ public static class AddStrings1
                 carry = 0;
             }
 
-            resultBuilder.Insert(0, sum.ToString());
+            resultBuilder.Insert(0, sum.ToString(CultureInfo.InvariantCulture));
+
+            num1Index--;
+            num2Index--;
+        }
+
+        if (carry > 0)
+        {
+            resultBuilder.Insert(0, carry.ToString());
         }
 
         return resultBuilder.ToString();
