@@ -23,7 +23,7 @@ public class MissingNumberSumFormulaTests
     public void Test(int[] nums, int expectedResult)
     {
         // Act
-        int actualResult = MissingNumberSumFormula.GetResult(nums);
+        var actualResult = MissingNumberSumFormula.GetResult(nums);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

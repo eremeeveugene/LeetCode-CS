@@ -23,7 +23,7 @@ public class MissingNumberIterativeSumAndSubtractTests
     public void Test(int[] nums, int expectedResult)
     {
         // Act
-        int actualResult = MissingNumberIterativeSumAndSubtract.GetResult(nums);
+        var actualResult = MissingNumberIterativeSumAndSubtract.GetResult(nums);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

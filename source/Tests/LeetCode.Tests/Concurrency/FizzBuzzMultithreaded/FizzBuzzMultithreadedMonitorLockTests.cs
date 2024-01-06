@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -26,7 +26,7 @@ public class FizzBuzzMultithreadedMonitorLockTests
         string expectedResultJson)
     {
         // Arrange
-        List<object> expectedResult = DeserializeToList(expectedResultJson);
+        var expectedResult = DeserializeToList(expectedResultJson);
         List<object> actualResult = new();
 
         // Act
@@ -49,13 +49,13 @@ public class FizzBuzzMultithreadedMonitorLockTests
     private static List<object> DeserializeToList(string input)
     {
         List<object> resultList = new();
-        string[] elements = input.Split(',');
+        var elements = input.Split(',');
 
-        foreach (string element in elements)
+        foreach (var element in elements)
         {
-            string trimmedElement = element.Trim();
+            var trimmedElement = element.Trim();
 
-            if (int.TryParse(trimmedElement, out int number))
+            if (int.TryParse(trimmedElement, out var number))
             {
                 resultList.Add(number);
             }

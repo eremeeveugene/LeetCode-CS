@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -26,11 +26,11 @@ public static class TwoSumDictionary
     {
         Dictionary<int, int> dictionary = new();
 
-        for (int i = 0; i < nums.Length; i++)
+        for (var i = 0; i < nums.Length; i++)
         {
-            int complement = target - nums[i];
+            var complement = target - nums[i];
 
-            if (dictionary.TryGetValue(complement, out int value))
+            if (dictionary.TryGetValue(complement, out var value))
             {
                 return new[] { value, i };
             }

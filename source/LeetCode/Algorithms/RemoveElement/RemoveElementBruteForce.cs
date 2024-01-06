@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -24,13 +24,13 @@ public static class RemoveElementBruteForce
     /// <returns></returns>
     public static int GetResult(int[] nums, int val)
     {
-        for (int k = 0; k < nums.Length; k++)
+        for (var k = 0; k < nums.Length; k++)
         {
-            for (int i = 0; i < nums.Length; i++)
+            for (var i = 0; i < nums.Length; i++)
             {
                 if (nums[i] == val)
                 {
-                    for (int j = i; j < nums.Length - 1; j++)
+                    for (var j = i; j < nums.Length - 1; j++)
                     {
                         (nums[j], nums[j + 1]) = (nums[j + 1], nums[j]);
                     }

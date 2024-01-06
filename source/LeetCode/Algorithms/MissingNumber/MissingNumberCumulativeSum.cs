@@ -23,9 +23,9 @@ public static class MissingNumberCumulativeSum
     /// <returns></returns>
     public static int GetResult(int[] nums)
     {
-        int sum = 0;
+        var sum = 0;
 
-        for (int i = 0; i < nums.Length + 1; i++)
+        for (var i = 0; i < nums.Length + 1; i++)
         {
             sum += i;
         }

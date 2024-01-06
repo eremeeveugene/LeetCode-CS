@@ -22,7 +22,7 @@ public class CountingBitsIterativeTests
     public void Test(int n, int[] expectedResult)
     {
         // Act
-        int[] actualResult = CountingBitsIterative.GetResult(n);
+        var actualResult = CountingBitsIterative.GetResult(n);
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);

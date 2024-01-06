@@ -22,7 +22,7 @@ public class CountingBitsDynamicProgrammingTests
     public void Test(int n, int[] expectedResult)
     {
         // Act
-        int[] actualResult = CountingBitsDynamicProgramming.GetResult(n);
+        var actualResult = CountingBitsDynamicProgramming.GetResult(n);
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);

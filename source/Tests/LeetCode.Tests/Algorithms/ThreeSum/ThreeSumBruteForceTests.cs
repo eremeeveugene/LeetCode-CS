@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -27,10 +27,10 @@ public class ThreeSumBruteForceTests
     public void ThreeSumBruteForce_GetResult_ShouldReturnCorrectTripletsSet(int[] nums, string expectedResultJson)
     {
         // Arrange
-        int[][]? expectedResult = JsonConvert.DeserializeObject<int[][]>(expectedResultJson);
+        var expectedResult = JsonConvert.DeserializeObject<int[][]>(expectedResultJson);
 
         // Act
-        IList<IList<int>> actualResult = ThreeSumBruteForce.GetResult(nums);
+        var actualResult = ThreeSumBruteForce.GetResult(nums);
 
         // Assert
         HashSet<int[]> expectedSet = new(expectedResult!.Select(e => e.ToArray()),

@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -27,11 +27,11 @@ public static class ThreeSumBruteForce
     {
         List<IList<int>> arraysWithDuplicates = new();
 
-        for (int i = 0; i < nums.Length - 2; i++)
+        for (var i = 0; i < nums.Length - 2; i++)
         {
-            for (int j = i + 1; j < nums.Length - 1; j++)
+            for (var j = i + 1; j < nums.Length - 1; j++)
             {
-                for (int k = j + 1; k < nums.Length; k++)
+                for (var k = j + 1; k < nums.Length; k++)
                 {
                     if (nums[i] + nums[j] + nums[k] == 0)
                     {
@@ -43,7 +43,7 @@ public static class ThreeSumBruteForce
 
         HashSet<int[]> uniqueArrays = new(new OrderInsensitiveIntArrayEqualityComparer());
 
-        foreach (IList<int> array in arraysWithDuplicates)
+        foreach (var array in arraysWithDuplicates)
         {
             uniqueArrays.Add(array.ToArray());
         }

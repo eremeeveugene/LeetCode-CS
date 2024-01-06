@@ -21,12 +21,12 @@ public static class AddStrings1
 {
     public static string GetResult(string num1, string num2)
     {
-        StringBuilder resultBuilder = new StringBuilder();
+        var resultBuilder = new StringBuilder();
 
-        int carry = 0;
+        var carry = 0;
 
-        int num1Index = num1.Length;
-        int num2Index = num2.Length;
+        var num1Index = num1.Length;
+        var num2Index = num2.Length;
 
         while (num1Index > 0 || num2Index > 0)
         {
@@ -43,7 +43,7 @@ public static class AddStrings1
                 int2 = char.GetNumericValue(num2[num2Index - 1]);
             }
 
-            double sum = int1 + int2 + carry;
+            var sum = int1 + int2 + carry;
 
             if (sum > 9)
             {

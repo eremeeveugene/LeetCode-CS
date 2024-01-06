@@ -23,7 +23,7 @@ public class MissingNumberSortAndForSearchTests
     public void Test(int[] nums, int expectedResult)
     {
         // Act
-        int actualResult = MissingNumberSortAndForSearch.GetResult(nums);
+        var actualResult = MissingNumberSortAndForSearch.GetResult(nums);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

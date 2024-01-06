@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -23,11 +23,11 @@ public static class PlusOneIncrementDigitArray
     /// <returns></returns>
     public static int[] GetResult(int[] digits)
     {
-        int carryDigit = 0;
+        var carryDigit = 0;
 
         digits[^1] += 1;
 
-        for (int index = digits.Length - 1; index >= 0; index--)
+        for (var index = digits.Length - 1; index >= 0; index--)
         {
             if (digits[index] + carryDigit > 9)
             {

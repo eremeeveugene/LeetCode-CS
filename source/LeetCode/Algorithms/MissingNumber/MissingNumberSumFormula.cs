@@ -28,7 +28,7 @@ public static class MissingNumberSumFormula
             return 0;
         }
 
-        int numsLength = nums.Length;
+        var numsLength = nums.Length;
 
         return (numsLength * (numsLength + 1) / 2) - nums.Sum();
     }

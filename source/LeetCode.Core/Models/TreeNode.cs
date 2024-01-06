@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -57,11 +57,11 @@ public class TreeNode
 
         Queue<TreeNode> queue = new();
         queue.Enqueue(root);
-        int i = 1;
+        var i = 1;
 
         while (queue.Count > 0 && i < nums.Count)
         {
-            TreeNode current = queue.Dequeue();
+            var current = queue.Dequeue();
 
             // Process the left child
             if (i < nums.Count && nums[i].HasValue)

@@ -25,7 +25,7 @@ public static class MissingNumberSortAndWhileSearch
     {
         Array.Sort(nums);
 
-        int i = 0;
+        var i = 0;
 
         while (i < nums.Length && nums[i] == i)
         {

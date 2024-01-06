@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2023 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -11,7 +11,6 @@
 
 using LeetCode.Algorithms.MergeTwoSortedLists;
 using LeetCode.Core.Extensions;
-using LeetCode.Core.Models;
 using LeetCode.Tests.Extensions;
 
 namespace LeetCode.Tests.Algorithms.MergeTwoSortedLists;
@@ -28,12 +27,12 @@ public class MergeTwoSortedListsLinearV2Tests
         int[] expectedResultArray)
     {
         // Arrange
-        ListNode? list1 = array1.ToListNode();
-        ListNode? list2 = array2.ToListNode();
-        ListNode? expectedResult = expectedResultArray.ToListNode();
+        var list1 = array1.ToListNode();
+        var list2 = array2.ToListNode();
+        var expectedResult = expectedResultArray.ToListNode();
 
         // Act
-        ListNode? actualResult = MergeTwoSortedListsLinearV2.GetResult(list1, list2);
+        var actualResult = MergeTwoSortedListsLinearV2.GetResult(list1, list2);
 
         // Assert
         AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
