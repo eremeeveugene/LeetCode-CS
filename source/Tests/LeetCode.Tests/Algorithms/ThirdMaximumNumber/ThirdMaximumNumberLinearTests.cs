@@ -25,7 +25,7 @@ public class ThirdMaximumNumberLinearTests
     [DataRow(new[] { 14 }, 14)]
     [DataRow(new[] { 1, 2, int.MinValue }, int.MinValue)]
     [DataRow(new[] { 1, int.MinValue, 2 }, int.MinValue)]
-    public void Test(int[] nums, int expectedResult)
+    public void ThirdMaximumNumberLinear_GetResult_ShouldReturnCorrectThirdMaximumOrMaximum(int[] nums, int expectedResult)
     {
         // Act
         var actualResult = ThirdMaximumNumberLinear.GetResult(nums);
