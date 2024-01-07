@@ -1,27 +1,30 @@
 Summary
-  Generated on: 01/06/2024 - 19:01:14
-  Coverage date: 01/06/2024 - 19:00:55 - 01/06/2024 - 19:00:58
+  Generated on: 01/07/2024 - 15:00:48
+  Coverage date: 01/07/2024 - 15:00:28 - 01/07/2024 - 15:00:31
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 46
-  Files: 46
-  Line coverage: 94.7%
-  Covered lines: 849
+  Classes: 49
+  Files: 49
+  Line coverage: 95.0%
+  Covered lines: 896
   Uncovered lines: 47
-  Coverable lines: 896
-  Total lines: 2380
-  Branch coverage: 91.8% (314 of 342)
-  Covered branches: 314
-  Total branches: 342
-  Method coverage: 93.5% (101 of 108)
-  Covered methods: 101
-  Total methods: 108
+  Coverable lines: 943
+  Total lines: 2507
+  Branch coverage: 92.3% (336 of 364)
+  Covered branches: 336
+  Total branches: 364
+  Method coverage: 93.6% (104 of 111)
+  Covered methods: 104
+  Total methods: 111
 
-LeetCode                                                                                                                                95.4%
+LeetCode                                                                                                                                95.6%
   LeetCode.Algorithms.AddStrings.AddStringsIterative                                                                                   100.0%
   LeetCode.Algorithms.AddStrings.AddStringsLinear                                                                                      100.0%
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry                                                                          100.0%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive                                                    89.4%
+  LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesBruteForce                                                                      100.0%
+  LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesMinimumTwoPrices                                                                100.0%
+  LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesSorting                                                                         100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsDynamicProgramming                                                                      100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                                                                               100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce              100.0%
