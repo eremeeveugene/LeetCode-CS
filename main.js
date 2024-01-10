@@ -221,6 +221,8 @@ var assemblies = [
   {
     "name": "LeetCode",
     "classes": [
+      { "name": "LeetCode.Algorithms.AddBinary.AddBinaryIterative", "rp": "LeetCode_AddBinaryIterative.html", "cl": 36, "ucl": 0, "cal": 36, "tl": 75, "cb": 12, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.AddBinary.AddBinaryLinear", "rp": "LeetCode_AddBinaryLinear.html", "cl": 24, "ucl": 2, "cal": 26, "tl": 64, "cb": 9, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.AddStrings.AddStringsIterative", "rp": "LeetCode_AddStringsIterative.html", "cl": 36, "ucl": 0, "cal": 36, "tl": 75, "cb": 12, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.AddStrings.AddStringsLinear", "rp": "LeetCode_AddStringsLinear.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 62, "cb": 10, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry", "rp": "LeetCode_AddTwoNumbersInPlaceCarry.html", "cl": 24, "ucl": 0, "cal": 24, "tl": 61, "cb": 16, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
