@@ -11,27 +11,27 @@
 
 using System.Text;
 
-namespace LeetCode.Algorithms.AddStrings;
+namespace LeetCode.Algorithms.AddBinary;
 
 /// <summary>
-///     https://leetcode.com/problems/add-strings/description/
+///     https://leetcode.com/problems/add-binary/description/
 /// </summary>
-public static class AddStringsIterative
+public static class AddBinaryIterative
 {
     /// <summary>
     ///     Time complexity - O(max(n1, n2))
     /// </summary>
-    /// <param name="num1"></param>
-    /// <param name="num2"></param>
+    /// <param name="a"></param>
+    /// <param name="b"></param>
     /// <returns></returns>
-    public static string GetResult(string num1, string num2)
+    public static string GetResult(string a, string b)
     {
         var resultBuilder = new StringBuilder();
 
         var carry = 0;
 
-        var num1Index = num1.Length;
-        var num2Index = num2.Length;
+        var num1Index = a.Length;
+        var num2Index = b.Length;
 
         while (num1Index > 0 || num2Index > 0)
         {
@@ -40,21 +40,21 @@ public static class AddStringsIterative
 
             if (num1Index > 0)
             {
-                val1 = (int)char.GetNumericValue(num1[num1Index - 1]);
+                val1 = (int)char.GetNumericValue(a[num1Index - 1]);
                 num1Index--;
             }
 
             if (num2Index > 0)
             {
-                val2 = (int)char.GetNumericValue(num2[num2Index - 1]);
+                val2 = (int)char.GetNumericValue(b[num2Index - 1]);
                 num2Index--;
             }
 
             var sum = val1 + val2 + carry;
 
-            if (sum > 9)
+            if (sum > 1)
             {
-                sum -= 10;
+                sum -= 2;
                 carry = 1;
             }
             else
