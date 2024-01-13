@@ -19,7 +19,7 @@ public class AddBinaryIterativeTests
     [TestMethod]
     [DataRow("11", "1", "100")]
     [DataRow("1010", "1011", "10101")]
-    public void AddBinaryIterative_GetResult_ShouldSumBinaryStringCorrectly(string a, string b, string expectedResult)
+    public void AddBinaryIterative_GetResult_WithVariousInputs_ReturnsCorrectSum(string a, string b, string expectedResult)
     {
         // Act
         var actualResult = AddBinaryIterative.GetResult(a, b);

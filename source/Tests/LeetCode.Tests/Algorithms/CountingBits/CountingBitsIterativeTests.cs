@@ -19,7 +19,7 @@ public class CountingBitsIterativeTests
     [TestMethod]
     [DataRow(2, new[] { 0, 1, 1 })]
     [DataRow(5, new[] { 0, 1, 1, 2, 1, 2 })]
-    public void CountingBitsIterative_GetResult_ShouldReturnCorrectBitCounts(int n, int[] expectedResult)
+    public void CountingBitsIterative_GetResult_WithNumber_ReturnsBitCountArray(int n, int[] expectedResult)
     {
         // Act
         var actualResult = CountingBitsIterative.GetResult(n);

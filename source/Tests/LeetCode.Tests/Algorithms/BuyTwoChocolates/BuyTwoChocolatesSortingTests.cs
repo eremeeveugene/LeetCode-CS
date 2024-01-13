@@ -22,8 +22,8 @@ public class BuyTwoChocolatesSortingTests
     [DataRow(new[] { 41, 1, 28, 2, 92, 97, 1, 87 }, 68, 66)]
     [DataRow(new[] { 98, 54, 6, 34, 66, 63, 52, 39 }, 62, 22)]
     [DataRow(new[] { 2, 12, 93, 52, 91, 86, 81, 1, 79, 64 }, 43, 40)]
-    public void BuyTwoChocolatesSorting_GetResult_ReturnsCorrectLeftoverMoney(int[] prices, int money,
-        int expectedResult)
+    public void BuyTwoChocolatesSorting_GetResult_WithPriceArrayAndBudget_ReturnsMaxChocolateValue(int[] prices,
+        int money, int expectedResult)
     {
         // Act
         var actualResult = BuyTwoChocolatesSorting.GetResult(prices, money);

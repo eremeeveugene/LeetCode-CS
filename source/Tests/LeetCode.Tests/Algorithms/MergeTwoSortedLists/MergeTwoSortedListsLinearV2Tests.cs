@@ -23,8 +23,8 @@ public class MergeTwoSortedListsLinearV2Tests
     [DataRow(new int[] { }, new int[] { }, new int[] { })]
     [DataRow(new int[] { }, new[] { 0 }, new[] { 0 })]
     [DataRow(new[] { -9, 3 }, new[] { 5, 7 }, new[] { -9, 3, 5, 7 })]
-    public void MergeTwoSortedListsLinear_GetResult_ShouldMergeAndMatchExpectedResult(int[] array1, int[] array2,
-        int[] expectedResultArray)
+    public void MergeTwoSortedListsLinearV2_GetResult_WithArrayInputsAsListNodes_ReturnsMergedSortedListNode(
+        int[] array1, int[] array2, int[] expectedResultArray)
     {
         // Arrange
         var list1 = array1.ToListNode();

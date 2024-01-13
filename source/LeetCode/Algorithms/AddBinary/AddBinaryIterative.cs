@@ -28,31 +28,31 @@ public static class AddBinaryIterative
     {
         var resultBuilder = new StringBuilder();
 
+        var num1Index = a.Length - 1;
+        var num2Index = b.Length - 1;
+
         var carry = 0;
 
-        var num1Index = a.Length;
-        var num2Index = b.Length;
-
-        while (num1Index > 0 || num2Index > 0)
+        while (num1Index >= 0 || num2Index >= 0)
         {
             var val1 = 0;
             var val2 = 0;
 
-            if (num1Index > 0)
+            if (num1Index >= 0)
             {
-                val1 = (int)char.GetNumericValue(a[num1Index - 1]);
+                val1 = (int)char.GetNumericValue(a[num1Index]);
                 num1Index--;
             }
 
-            if (num2Index > 0)
+            if (num2Index >= 0)
             {
-                val2 = (int)char.GetNumericValue(b[num2Index - 1]);
+                val2 = (int)char.GetNumericValue(b[num2Index]);
                 num2Index--;
             }
 
             var sum = val1 + val2 + carry;
 
-            if (sum > 1)
+            if (sum >= 2)
             {
                 sum -= 2;
                 carry = 1;

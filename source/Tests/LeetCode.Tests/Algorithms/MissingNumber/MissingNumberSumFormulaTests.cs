@@ -20,7 +20,7 @@ public class MissingNumberSumFormulaTests
     [DataRow(new[] { 3, 0, 1 }, 2)]
     [DataRow(new[] { 0, 1 }, 2)]
     [DataRow(new[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 }, 8)]
-    public void Test(int[] nums, int expectedResult)
+    public void MissingNumberSumFormula_GetResult_WithNumberArray_ReturnsMissingNumber(int[] nums, int expectedResult)
     {
         // Act
         var actualResult = MissingNumberSumFormula.GetResult(nums);

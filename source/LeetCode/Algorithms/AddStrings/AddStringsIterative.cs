@@ -28,31 +28,31 @@ public static class AddStringsIterative
     {
         var resultBuilder = new StringBuilder();
 
+        var num1Index = num1.Length - 1;
+        var num2Index = num2.Length - 1;
+
         var carry = 0;
 
-        var num1Index = num1.Length;
-        var num2Index = num2.Length;
-
-        while (num1Index > 0 || num2Index > 0)
+        while (num1Index >= 0 || num2Index >= 0)
         {
             var val1 = 0;
             var val2 = 0;
 
-            if (num1Index > 0)
+            if (num1Index >= 0)
             {
-                val1 = (int)char.GetNumericValue(num1[num1Index - 1]);
+                val1 = (int)char.GetNumericValue(num1[num1Index]);
                 num1Index--;
             }
 
-            if (num2Index > 0)
+            if (num2Index >= 0)
             {
-                val2 = (int)char.GetNumericValue(num2[num2Index - 1]);
+                val2 = (int)char.GetNumericValue(num2[num2Index]);
                 num2Index--;
             }
 
             var sum = val1 + val2 + carry;
 
-            if (sum > 9)
+            if (sum >= 10)
             {
                 sum -= 10;
                 carry = 1;

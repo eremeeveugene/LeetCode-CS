@@ -21,7 +21,7 @@ public class AddStringsIterativeTests
     [DataRow("11", "123", "134")]
     [DataRow("456", "77", "533")]
     [DataRow("3876620623801494171", "6529364523802684779", "10405985147604178950")]
-    public void AddStringsIterative_GetResult_ShouldSumStringNumbersCorrectly(string num1, string num2,
+    public void AddStringsIterative_GetResult_WithVariousStringNumbers_ReturnsCorrectSum(string num1, string num2,
         string expectedResult)
     {
         // Act

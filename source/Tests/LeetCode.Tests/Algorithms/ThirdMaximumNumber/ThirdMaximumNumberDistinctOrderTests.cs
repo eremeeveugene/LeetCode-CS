@@ -25,7 +25,7 @@ public class ThirdMaximumNumberDistinctOrderTests
     [DataRow(new[] { 14 }, 14)]
     [DataRow(new[] { 1, 2, int.MinValue }, int.MinValue)]
     [DataRow(new[] { 1, int.MinValue, 2 }, int.MinValue)]
-    public void ThirdMaximumNumberDistinctOrder_GetResult_ShouldReturnCorrectThirdMaximumOrMaximum(int[] nums,
+    public void ThirdMaximumNumberDistinctOrder_GetResult_WithNumberArray_ReturnsThirdMaxOrMaxNumber(int[] nums,
         int expectedResult)
     {
         // Act

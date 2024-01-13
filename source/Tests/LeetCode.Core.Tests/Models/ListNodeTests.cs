@@ -20,7 +20,7 @@ public class ListNodeTests
     [DataRow(0)]
     [DataRow(10)]
     [DataRow(100)]
-    public void Constructor_ShouldSetVal_WhenOnlyValProvided(int expectedVal)
+    public void ListNodeConstructor_WithVal_SetsValAndNextIsNull(int expectedVal)
     {
         // Act
         ListNode node = new(expectedVal);
@@ -36,7 +36,7 @@ public class ListNodeTests
     [DataRow(0)]
     [DataRow(10)]
     [DataRow(100)]
-    public void Constructor_ShouldSetValAndNext_WhenBothProvided(int expectedVal)
+    public void ListNodeConstructor_WithValAndNext_SetsValAndNextCorrectly(int expectedVal)
     {
         // Arrange
         ListNode expectedNext = new(10);
@@ -53,7 +53,7 @@ public class ListNodeTests
     }
 
     [TestMethod]
-    public void Constructor_ShouldSetValToZeroAndNextToNull_WhenNoParametersProvided()
+    public void ListNodeDefaultConstructor_SetsValToZeroAndNextToNull()
     {
         // Assert
         const int expectedVal = 0;

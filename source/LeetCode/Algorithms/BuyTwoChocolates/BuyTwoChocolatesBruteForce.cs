@@ -11,6 +11,9 @@
 
 namespace LeetCode.Algorithms.BuyTwoChocolates;
 
+/// <summary>
+///     https://leetcode.com/problems/buy-two-chocolates/description/
+/// </summary>
 public static class BuyTwoChocolatesBruteForce
 {
     /// <summary>

@@ -20,7 +20,7 @@ public class PrintInOrderThreadSleepTests : PrintInOrderTestsBase
     [DataRow(new[] { 1, 2, 3 })]
     [DataRow(new[] { 2, 3, 1 })]
     [DataRow(new[] { 3, 1, 2 })]
-    public async Task PrintInOrderThreadSleep_ExecutesTasksInOrder_ResultsInExpectedString(int[] nums)
+    public async Task PrintInOrderThreadSleep_ExecuteThreads_WithSpecificOrder_ReturnsOrderedOutput(int[] nums)
     {
         // Arrange
         var expectedResult = FirstSecondThird;

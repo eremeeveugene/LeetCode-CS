@@ -39,7 +39,7 @@ public static class AddTwoNumbersInPlaceCarry
 
             carry = 0;
 
-            if (sum > 9)
+            if (sum >= 10)
             {
                 carry = 1;
                 sum -= 10;

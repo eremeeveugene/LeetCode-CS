@@ -20,8 +20,8 @@ public class SearchInsertPositionBinarySearchTests
     [DataRow(new[] { 1, 3, 5, 6 }, 2, 1)]
     [DataRow(new[] { 1, 3, 5, 6 }, 5, 2)]
     [DataRow(new[] { 1, 3, 5, 6 }, 7, 4)]
-    public void SearchInsertPositionBinarySearch_GetResult_ShouldReturnCorrectIndex(int[] nums, int target,
-        int expectedResult)
+    public void SearchInsertPositionBinarySearch_GetResult_WithSortedArrayAndTarget_ReturnsCorrectInsertIndex(
+        int[] nums, int target, int expectedResult)
     {
         // Act
         var actualResult = SearchInsertPositionBinarySearch.GetResult(nums, target);

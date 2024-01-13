@@ -26,7 +26,7 @@ public class SqrtBinarySearchTests
     [DataRow(10, 3)]
     [DataRow(17, 4)]
     [DataRow(2147395599, 46339)]
-    public void SqrtBinarySearch_GetResult_ShouldReturnCorrectIntegerSquareRoots(int x, int expectedResult)
+    public void SqrtBinarySearch_GetResult_WithNumber_ReturnsSquareRoot(int x, int expectedResult)
     {
         // Act
         var actualResult = SqrtBinarySearch.GetResult(x);
