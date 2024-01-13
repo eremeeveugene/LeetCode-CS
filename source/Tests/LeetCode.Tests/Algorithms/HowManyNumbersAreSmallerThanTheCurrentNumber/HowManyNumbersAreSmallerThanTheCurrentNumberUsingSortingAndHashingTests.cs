@@ -21,7 +21,7 @@ public class HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashingT
     [DataRow(new[] { 6, 5, 4, 8 }, new[] { 2, 1, 0, 3 })]
     [DataRow(new[] { 7, 7, 7, 7 }, new[] { 0, 0, 0, 0 })]
     public void
-        HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing_GetResult_ReturnsCountOfSmallerNumbers(
+        HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing_GetResult_WithArray_ReturnsSmallerNumbersCount(
             int[] nums, int[] expectedResult)
     {
         // Act

@@ -20,7 +20,7 @@ public class RomanToIntegerIterativeTests
     [DataRow("III", 3)]
     [DataRow("LVIII", 58)]
     [DataRow("MCMXCIV", 1994)]
-    public void RomanToIntegerIterative_GetResult_ShouldConvertToCorrectIntegerValue(string romanString,
+    public void RomanToIntegerIterative_GetResult_WithRomanString_ReturnsEquivalentInteger(string romanString,
         int expectedResult)
     {
         // Act

@@ -22,9 +22,8 @@ public class BinaryTreeInorderTraversalRecursiveTests
     [DataRow("[1,null,2,3]", "[1,3,2]")]
     [DataRow("[1]", "[1]")]
     [DataRow(JsonHelper.EmptyArray, "[0]")]
-    public void BinaryTreeInorderTraversalRecursive_GetResult_ReturnsCorrectSequenceFromBinaryTree(
-        string inputArrayJson,
-        string expectedArrayJson)
+    public void BinaryTreeInorderTraversalRecursive_GetResult_WithJsonInputTrees_ReturnsCorrectInorderTraversalList(
+        string inputArrayJson, string expectedArrayJson)
     {
         // Arrange
         IList<int?> expectedResult = JsonConvertHelper<int?>.JsonArrayToList(expectedArrayJson);

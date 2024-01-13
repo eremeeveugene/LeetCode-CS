@@ -9,8 +9,6 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using System.Text;
-
 namespace LeetCode.Algorithms.AddBinary;
 
 /// <summary>
@@ -26,38 +24,40 @@ public static class AddBinaryLinear
     /// <returns></returns>
     public static string GetResult(string a, string b)
     {
-        var len1 = a.Length;
-        var len2 = b.Length;
+        var result = new char[Math.Max(a.Length, b.Length) + 1];
 
-        var result = new char[Math.Max(len1, len2) + 1];
+        var aIndex = a.Length - 1;
+        var bIndex = b.Length - 1;
+        var resultIndex = result.Length - 1;
 
         var carry = 0;
-        var index = result.Length - 1;
 
-        while (len1 > 0 || len2 > 0)
+        while (aIndex >= 0 || bIndex >= 0)
         {
             var sum = carry;
 
-            if (len1 > 0)
+            if (aIndex >= 0)
             {
-                sum += (int)char.GetNumericValue(a[--len1]);
+                sum += (int)char.GetNumericValue(a[aIndex]);
+                aIndex--;
             }
 
-            if (len2 > 0)
+            if (bIndex >= 0)
             {
-                sum += (int)char.GetNumericValue(b[--len2]);
+                sum += (int)char.GetNumericValue(b[bIndex]);
+                bIndex--;
             }
 
             carry = sum / 2;
-            result[index--] = (char)((sum % 2) + '0');
+            result[resultIndex--] = (char)((sum % 2) + '0');
         }
 
         if (carry <= 0)
         {
-            return new string(result, index + 1, result.Length - index - 1);
+            return new string(result, resultIndex + 1, result.Length - resultIndex - 1);
         }
 
-        result[index] = (char)(carry + '0');
+        result[resultIndex] = (char)(carry + '0');
 
         return new string(result).TrimStart('0');
     }

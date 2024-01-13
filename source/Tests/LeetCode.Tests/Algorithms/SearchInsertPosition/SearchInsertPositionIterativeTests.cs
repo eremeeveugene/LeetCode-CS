@@ -20,8 +20,8 @@ public class SearchInsertPositionIterativeTests
     [DataRow(new[] { 1, 3, 5, 6 }, 2, 1)]
     [DataRow(new[] { 1, 3, 5, 6 }, 5, 2)]
     [DataRow(new[] { 1, 3, 5, 6 }, 7, 4)]
-    public void SearchInsertPositionIterative_GetResult_ShouldReturnCorrectIndex(int[] nums, int target,
-        int expectedResult)
+    public void SearchInsertPositionIterative_GetResult_WithSortedArrayAndTarget_ReturnsCorrectInsertIndex(int[] nums,
+        int target, int expectedResult)
     {
         // Act
         var actualResult = SearchInsertPositionIterative.GetResult(nums, target);

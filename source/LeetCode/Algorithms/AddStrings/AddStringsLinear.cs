@@ -24,38 +24,40 @@ public static class AddStringsLinear
     /// <returns></returns>
     public static string GetResult(string num1, string num2)
     {
-        var len1 = num1.Length;
-        var len2 = num2.Length;
+        var result = new char[Math.Max(num1.Length, num2.Length) + 1];
 
-        var result = new char[Math.Max(len1, len2) + 1];
+        var num1Index = num1.Length - 1;
+        var num2Index = num2.Length - 1;
+        var resultIndex = result.Length - 1;
 
         var carry = 0;
-        var index = result.Length - 1;
 
-        while (len1 > 0 || len2 > 0)
+        while (num1Index >= 0 || num2Index >= 0)
         {
             var sum = carry;
 
-            if (len1 > 0)
+            if (num1Index >= 0)
             {
-                sum += (int)char.GetNumericValue(num1[--len1]);
+                sum += (int)char.GetNumericValue(num1[num1Index]);
+                num1Index--;
             }
 
-            if (len2 > 0)
+            if (num2Index >= 0)
             {
-                sum += (int)char.GetNumericValue(num2[--len2]);
+                sum += (int)char.GetNumericValue(num2[num2Index]);
+                num2Index--;
             }
 
             carry = sum / 10;
-            result[index--] = (char)((sum % 10) + '0');
+            result[resultIndex--] = (char)((sum % 10) + '0');
         }
 
         if (carry <= 0)
         {
-            return new string(result, index + 1, result.Length - index - 1);
+            return new string(result, resultIndex + 1, result.Length - resultIndex - 1);
         }
 
-        result[index] = (char)(carry + '0');
+        result[resultIndex] = (char)(carry + '0');
 
         return new string(result).TrimStart('0');
     }

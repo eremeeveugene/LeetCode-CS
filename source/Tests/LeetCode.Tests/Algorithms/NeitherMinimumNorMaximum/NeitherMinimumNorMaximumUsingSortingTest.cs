@@ -21,7 +21,7 @@ public class NeitherMinimumNorMaximumUsingSortingTest
     [DataRow(new[] { 1, 2 }, -1)]
     [DataRow(new[] { 2, 1, 3 }, 2)]
     [DataRow(new[] { 3, 30, 24 }, 24)]
-    public void NeitherMinimumNorMaximumUsingSorting_GetResult_ReturnsExpectedMiddleValue(int[] nums,
+    public void NeitherMinimumNorMaximumUsingSorting_GetResult_WithNumberArray_ReturnsNeitherMinNorMax(int[] nums,
         int expectedResult)
     {
         // Act

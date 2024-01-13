@@ -24,7 +24,8 @@ public class ThreeSumBruteForceTests
     [DataRow(new[] { 0, 0, 0 }, "[[0, 0, 0]]")]
     [DataRow(new[] { -3, -2, 1, 1, 2 }, "[[-3, 1, 2], [-2, 1, 1]]")]
     [DataRow(new[] { 3, 0, -2, -1, 1, 2 }, "[[-2, -1, 3],[-2, 0, 2],[-1, 0, 1]]")]
-    public void ThreeSumBruteForce_GetResult_ShouldReturnCorrectTripletsSet(int[] nums, string expectedResultJson)
+    public void ThreeSumBruteForce_GetResult_WithNumberArray_ReturnsZeroSumTriplets(int[] nums,
+        string expectedResultJson)
     {
         // Arrange
         var expectedResult = JsonConvert.DeserializeObject<int[][]>(expectedResultJson);

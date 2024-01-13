@@ -20,7 +20,7 @@ public class PrintInOrderMonitorTests : PrintInOrderTestsBase
     [DataRow(new[] { 1, 2, 3 })]
     [DataRow(new[] { 2, 3, 1 })]
     [DataRow(new[] { 3, 1, 2 })]
-    public async Task PrintInOrderMonitor_ExecutesTasksInOrder_ResultsInExpectedString(int[] nums)
+    public async Task PrintInOrderMonitor_ExecuteThreads_WithSpecificOrder_ReturnsOrderedOutput(int[] nums)
     {
         // Arrange
         var expectedResult = FirstSecondThird;

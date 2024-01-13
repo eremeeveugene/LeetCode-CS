@@ -19,7 +19,7 @@ public class AddBinaryLinearTests
     [TestMethod]
     [DataRow("11", "1", "100")]
     [DataRow("1010", "1011", "10101")]
-    public void AddBinaryLinear_GetResult_ShouldSumBinaryStringCorrectly(string a, string b, string expectedResult)
+    public void AddBinaryLinear_GetResult_WithBinaryInputs_ReturnsCorrectBinarySum(string a, string b, string expectedResult)
     {
         // Act
         var actualResult = AddBinaryLinear.GetResult(a, b);

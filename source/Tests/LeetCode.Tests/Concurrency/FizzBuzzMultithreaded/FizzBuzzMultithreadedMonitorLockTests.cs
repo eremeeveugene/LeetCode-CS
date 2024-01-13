@@ -22,7 +22,7 @@ public class FizzBuzzMultithreadedMonitorLockTests
     [DataRow(3, "1, 2, fizz")]
     [DataRow(5, "1, 2, fizz, 4, buzz")]
     [DataRow(15, "1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz")]
-    public async Task FizzBuzzMultithreadedMonitorLock_ExecutesTasks_GeneratesCorrectSequence(int length,
+    public async Task FizzBuzzMultithreadedMonitorLock_GetResult_WithLength_ReturnsFizzBuzzSequence(int length,
         string expectedResultJson)
     {
         // Arrange

@@ -11,6 +11,9 @@
 
 namespace LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 
+/// <summary>
+///     https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description/
+/// </summary>
 public static class HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing
 {
     /// <summary>
