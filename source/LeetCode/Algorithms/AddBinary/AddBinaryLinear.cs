@@ -9,8 +9,6 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using System.Text;
-
 namespace LeetCode.Algorithms.AddBinary;
 
 /// <summary>
