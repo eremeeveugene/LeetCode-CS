@@ -1,27 +1,29 @@
 Summary
-  Generated on: 01/10/2024 - 14:33:30
-  Coverage date: 01/10/2024 - 14:33:10 - 01/10/2024 - 14:33:13
+  Generated on: 01/13/2024 - 17:19:39
+  Coverage date: 01/13/2024 - 17:19:17 - 01/13/2024 - 17:19:20
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 51
-  Files: 51
-  Line coverage: 95.1%
-  Covered lines: 956
+  Classes: 53
+  Files: 53
+  Line coverage: 95.4%
+  Covered lines: 1026
   Uncovered lines: 49
-  Coverable lines: 1005
-  Total lines: 2646
-  Branch coverage: 92.4% (357 of 386)
-  Covered branches: 357
-  Total branches: 386
-  Method coverage: 93.8% (106 of 113)
-  Covered methods: 106
-  Total methods: 113
+  Coverable lines: 1075
+  Total lines: 2792
+  Branch coverage: 92.8% (379 of 408)
+  Covered branches: 379
+  Total branches: 408
+  Method coverage: 93.9% (108 of 115)
+  Covered methods: 108
+  Total methods: 115
 
-LeetCode                                                                                                                                95.7%
+LeetCode                                                                                                                                96.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.3%
   LeetCode.Algorithms.AddStrings.AddStringsIterative                                                                                   100.0%
   LeetCode.Algorithms.AddStrings.AddStringsLinear                                                                                      100.0%
+  LeetCode.Algorithms.AddToArrayFormOfInteger.AddToArrayFormOfIntegerDivision                                                          100.0%
+  LeetCode.Algorithms.AddToArrayFormOfInteger.AddToArrayFormOfIntegerSummation                                                         100.0%
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry                                                                          100.0%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive                                                    89.4%
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesBruteForce                                                                      100.0%
