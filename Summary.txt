@@ -1,23 +1,23 @@
 Summary
-  Generated on: 01/13/2024 - 18:28:33
-  Coverage date: 01/13/2024 - 18:28:12 - 01/13/2024 - 18:28:15
+  Generated on: 01/15/2024 - 17:50:32
+  Coverage date: 01/15/2024 - 17:50:10 - 01/15/2024 - 17:50:13
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 53
-  Files: 53
-  Line coverage: 95.4%
-  Covered lines: 1030
+  Classes: 55
+  Files: 55
+  Line coverage: 95.6%
+  Covered lines: 1070
   Uncovered lines: 49
-  Coverable lines: 1079
-  Total lines: 2773
-  Branch coverage: 92.8% (379 of 408)
-  Covered branches: 379
-  Total branches: 408
-  Method coverage: 93.9% (108 of 115)
-  Covered methods: 108
-  Total methods: 115
+  Coverable lines: 1119
+  Total lines: 2873
+  Branch coverage: 93.1% (393 of 422)
+  Covered branches: 393
+  Total branches: 422
+  Method coverage: 94% (110 of 117)
+  Covered methods: 110
+  Total methods: 117
 
-LeetCode                                                                                                                                96.0%
+LeetCode                                                                                                                                96.2%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddStrings.AddStringsIterative                                                                                   100.0%
@@ -33,6 +33,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                                                                               100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce              100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing  100.0%
+  LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayMergingAndSorting                                                               100.0%
+  LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayThreePointers                                                                   100.0%
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                                                                     95.4%
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinearV2                                                                   92.0%
   LeetCode.Algorithms.MissingNumber.MissingNumberCumulativeSum                                                                         100.0%
