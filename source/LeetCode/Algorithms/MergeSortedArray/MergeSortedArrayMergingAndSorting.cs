@@ -11,8 +11,18 @@
 
 namespace LeetCode.Algorithms.MergeSortedArray;
 
-public class MergeSortedArray1
+/// <summary>
+///     https://leetcode.com/problems/merge-sorted-array/description/
+/// </summary>
+public class MergeSortedArrayMergingAndSorting
 {
+    /// <summary>
+    ///     Time complexity - O((m+n)log(m+n))
+    /// </summary>
+    /// <param name="nums1"></param>
+    /// <param name="m"></param>
+    /// <param name="nums2"></param>
+    /// <param name="n"></param>
     public static void Merge(int[] nums1, int m, int[] nums2, int n)
     {
         if (m == 0)
@@ -28,8 +38,8 @@ public class MergeSortedArray1
             {
                 nums1[i] = nums2[j];
             }
-        }
 
-        Array.Sort(nums1);
+            Array.Sort(nums1);
+        }
     }
 }
