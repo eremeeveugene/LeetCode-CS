@@ -1,23 +1,23 @@
 Summary
-  Generated on: 01/15/2024 - 17:50:32
-  Coverage date: 01/15/2024 - 17:50:10 - 01/15/2024 - 17:50:13
+  Generated on: 01/15/2024 - 19:23:18
+  Coverage date: 01/15/2024 - 19:22:57 - 01/15/2024 - 19:23:00
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 55
-  Files: 55
-  Line coverage: 95.6%
-  Covered lines: 1070
+  Classes: 57
+  Files: 57
+  Line coverage: 95.7%
+  Covered lines: 1097
   Uncovered lines: 49
-  Coverable lines: 1119
-  Total lines: 2873
-  Branch coverage: 93.1% (393 of 422)
-  Covered branches: 393
-  Total branches: 422
-  Method coverage: 94% (110 of 117)
-  Covered methods: 110
-  Total methods: 117
+  Coverable lines: 1146
+  Total lines: 2961
+  Branch coverage: 93.2% (401 of 430)
+  Covered branches: 401
+  Total branches: 430
+  Method coverage: 94.1% (112 of 119)
+  Covered methods: 112
+  Total methods: 119
 
-LeetCode                                                                                                                                96.2%
+LeetCode                                                                                                                                96.3%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddStrings.AddStringsIterative                                                                                   100.0%
@@ -47,6 +47,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray                                                                               100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArrayV2                                                                             100.0%
   LeetCode.Algorithms.RemoveElement.RemoveElementBruteForce                                                                            100.0%
+  LeetCode.Algorithms.ReverseWordsInString3.ReverseWordsInString3WithCharArray                                                         100.0%
+  LeetCode.Algorithms.ReverseWordsInString3.ReverseWordsInString3WithStringBuilder                                                     100.0%
   LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral                                                                             90.0%
   LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol                                                                              44.4%
   LeetCode.Algorithms.RomanToInteger.Iterative.RomanToIntegerIterative                                                                 100.0%
