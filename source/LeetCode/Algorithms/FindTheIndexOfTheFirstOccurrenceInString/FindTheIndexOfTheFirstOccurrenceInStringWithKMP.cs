@@ -74,7 +74,7 @@ public static class FindTheIndexOfTheFirstOccurrenceInStringWithKMP
     {
         var length = needle.Length;
         var lps = new int[length];
-        
+
         lps[0] = 0;
 
         var len = 0;
