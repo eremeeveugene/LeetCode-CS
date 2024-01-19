@@ -1,23 +1,23 @@
 Summary
-  Generated on: 01/19/2024 - 09:59:20
-  Coverage date: 01/19/2024 - 09:58:59 - 01/19/2024 - 09:59:02
+  Generated on: 01/19/2024 - 11:09:15
+  Coverage date: 01/19/2024 - 11:08:54 - 01/19/2024 - 11:08:57
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 61
-  Files: 61
-  Line coverage: 95.8%
-  Covered lines: 1144
-  Uncovered lines: 49
-  Coverable lines: 1193
-  Total lines: 3118
-  Branch coverage: 93.4% (413 of 442)
-  Covered branches: 413
-  Total branches: 442
-  Method coverage: 94.3% (116 of 123)
-  Covered methods: 116
-  Total methods: 123
+  Classes: 63
+  Files: 63
+  Line coverage: 95.1%
+  Covered lines: 1195
+  Uncovered lines: 61
+  Coverable lines: 1256
+  Total lines: 3254
+  Branch coverage: 92.6% (430 of 464)
+  Covered branches: 430
+  Total branches: 464
+  Method coverage: 94.4% (119 of 126)
+  Covered methods: 119
+  Total methods: 126
 
-LeetCode                                                                                                                                96.4%
+LeetCode                                                                                                                                95.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddStrings.AddStringsIterative                                                                                   100.0%
@@ -31,6 +31,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesSorting                                                                         100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsDynamicProgramming                                                                      100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                                                                               100.0%
+  LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                     100.0%
+  LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithKMP                          80.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce              100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing  100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayMergingAndSorting                                                               100.0%
