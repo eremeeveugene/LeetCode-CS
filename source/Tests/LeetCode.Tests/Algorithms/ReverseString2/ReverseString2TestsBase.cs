@@ -13,11 +13,22 @@ using LeetCode.Algorithms.ReverseString2;
 
 namespace LeetCode.Tests.Algorithms.ReverseString2;
 
-[TestClass]
-public class ReverseString2WithStringBuilderTests : ReverseString2TestsBase
+public abstract class ReverseString2TestsBase
 {
-    protected override IReverseString2 GetSolution()
+    [TestMethod]
+    [DataRow("abcdefg", 2, "bacdfeg")]
+    [DataRow("abcd", 2, "bacd")]
+    public void ReverseStr_WithStringAndInterval_ReversesEveryKCharacters(string s, int k, string expectedResult)
     {
-        return new ReverseString2WithStringBuilder();
+        // Arrange
+        var solution = GetSolution();
+
+        // Act
+        var actualResult = solution.ReverseStr(s, k);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract IReverseString2 GetSolution();
 }

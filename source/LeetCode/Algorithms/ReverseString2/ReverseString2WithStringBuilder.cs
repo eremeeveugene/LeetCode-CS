@@ -13,10 +13,8 @@ using System.Text;
 
 namespace LeetCode.Algorithms.ReverseString2;
 
-/// <summary>
-///     https://leetcode.com/problems/reverse-string-ii/
-/// </summary>
-public static class ReverseString2WithStringBuilder
+/// <inheritdoc />
+public class ReverseString2WithStringBuilder : IReverseString2
 {
     /// <summary>
     ///     Time complexity - O(n)
@@ -24,7 +22,7 @@ public static class ReverseString2WithStringBuilder
     /// <param name="s"></param>
     /// <param name="k"></param>
     /// <returns></returns>
-    public static string ReverseStr(string s, int k)
+    public string ReverseStr(string s, int k)
     {
         var reverseStringBuilder = new StringBuilder();
 

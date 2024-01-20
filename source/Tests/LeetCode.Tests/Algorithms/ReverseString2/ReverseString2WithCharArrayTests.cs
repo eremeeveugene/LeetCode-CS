@@ -14,18 +14,10 @@ using LeetCode.Algorithms.ReverseString2;
 namespace LeetCode.Tests.Algorithms.ReverseString2;
 
 [TestClass]
-public class ReverseString2WithCharArrayTests
+public class ReverseString2WithCharArrayTests : ReverseString2TestsBase
 {
-    [TestMethod]
-    [DataRow("abcdefg", 2, "bacdfeg")]
-    [DataRow("abcd", 2, "bacd")]
-    public void ReverseString2WithCharArray_ReverseStr_WithStringAndInterval_ReturnsPartiallyReversedString(string s,
-        int k, string expectedResult)
+    protected override IReverseString2 GetSolution()
     {
-        // Act
-        var actualResult = ReverseString2WithCharArray.ReverseStr(s, k);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        return new ReverseString2WithCharArray();
     }
 }

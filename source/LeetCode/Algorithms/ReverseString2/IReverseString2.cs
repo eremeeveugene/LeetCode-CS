@@ -11,33 +11,10 @@
 
 namespace LeetCode.Algorithms.ReverseString2;
 
-/// <inheritdoc />
-public class ReverseString2WithCharArray : IReverseString2
+/// <summary>
+///     https://leetcode.com/problems/reverse-string-ii/
+/// </summary>
+public interface IReverseString2
 {
-    /// <summary>
-    ///     Time complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
-    public string ReverseStr(string s, int k)
-    {
-        var charArray = s.ToCharArray();
-
-        for (var start = 0; start < charArray.Length; start += 2 * k)
-        {
-            var i = start;
-            var j = Math.Min(start + k - 1, charArray.Length - 1);
-
-            while (i < j)
-            {
-                (charArray[i], charArray[j]) = (charArray[j], charArray[i]);
-
-                i++;
-                j--;
-            }
-        }
-
-        return new string(charArray);
-    }
+    string ReverseStr(string s, int k);
 }
