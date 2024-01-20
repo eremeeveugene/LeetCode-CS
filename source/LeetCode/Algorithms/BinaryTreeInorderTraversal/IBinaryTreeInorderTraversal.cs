@@ -9,15 +9,14 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.BinaryTreeInorderTraversal;
+using LeetCode.Core.Models;
 
-namespace LeetCode.Tests.Algorithms.BinaryTreeInorderTraversal;
+namespace LeetCode.Algorithms.BinaryTreeInorderTraversal;
 
-[TestClass]
-public class BinaryTreeInorderTraversalRecursiveTests : BinaryTreeInorderTraversalTestsBase
+/// <summary>
+///     https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+/// </summary>
+public interface IBinaryTreeInorderTraversal
 {
-    protected override IBinaryTreeInorderTraversal GetSolution()
-    {
-        return new BinaryTreeInorderTraversalRecursive();
-    }
+    IList<int> InorderTraversal(TreeNode treeNode);
 }
