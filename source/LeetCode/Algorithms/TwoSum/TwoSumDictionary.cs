@@ -22,7 +22,7 @@ public class TwoSumDictionary : ITwoSum
     /// <returns></returns>
     public int[] TwoSum(int[] nums, int target)
     {
-        Dictionary<int, int> dictionary = new();
+        var dictionary = new Dictionary<int, int>();
 
         for (var i = 0; i < nums.Length; i++)
         {
@@ -30,7 +30,7 @@ public class TwoSumDictionary : ITwoSum
 
             if (dictionary.TryGetValue(complement, out var value))
             {
-                return new[] { value, i };
+                return [value, i];
             }
 
             if (!dictionary.ContainsKey(nums[i]))
@@ -39,6 +39,6 @@ public class TwoSumDictionary : ITwoSum
             }
         }
 
-        return Array.Empty<int>();
+        return [];
     }
 }

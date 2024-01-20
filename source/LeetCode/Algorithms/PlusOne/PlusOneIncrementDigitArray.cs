@@ -40,6 +40,6 @@ public class PlusOneIncrementDigitArray : IPlusOne
             }
         }
 
-        return carryDigit > 0 ? new[] { carryDigit }.Concat(digits).ToArray() : digits;
+        return carryDigit > 0 ? new[] { carryDigit }.Union(digits).ToArray() : digits;
     }
 }

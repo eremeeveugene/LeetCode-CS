@@ -41,10 +41,7 @@ public class ThreeSumBruteForce : IThreeSum
 
         HashSet<int[]> uniqueArrays = new(new OrderInsensitiveIntArrayEqualityComparer());
 
-        foreach (var array in arraysWithDuplicates)
-        {
-            uniqueArrays.Add(array.ToArray());
-        }
+        uniqueArrays.UnionWith(arraysWithDuplicates.Select(array => array.ToArray()));
 
         return uniqueArrays.Cast<IList<int>>().ToList();
     }
