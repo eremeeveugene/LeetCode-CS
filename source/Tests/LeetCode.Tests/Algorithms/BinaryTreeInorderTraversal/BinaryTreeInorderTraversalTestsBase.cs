@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BinaryTreeInorderTraversal;
-using LeetCode.Algorithms.BuyTwoChocolates;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
@@ -39,5 +38,4 @@ public abstract class BinaryTreeInorderTraversalTestsBase<T> where T : IBinaryTr
         Assert.IsNotNull(actualResult);
         CollectionAssert.AreEqual(expectedResult.ToList(), actualResult.ToList());
     }
-
 }

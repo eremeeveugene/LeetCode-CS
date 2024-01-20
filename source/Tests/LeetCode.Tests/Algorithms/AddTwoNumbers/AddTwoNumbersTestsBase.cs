@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.AddTwoNumbers;
-using LeetCode.Algorithms.BuyTwoChocolates;
 using LeetCode.Core.Extensions;
 using LeetCode.Tests.Extensions;
 

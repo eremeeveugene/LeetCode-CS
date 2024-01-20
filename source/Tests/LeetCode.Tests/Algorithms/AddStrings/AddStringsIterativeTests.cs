@@ -16,5 +16,4 @@ namespace LeetCode.Tests.Algorithms.AddStrings;
 [TestClass]
 public class AddStringsIterativeTests : AddStringsTestsBase<AddStringsIterative>
 {
-    
 }

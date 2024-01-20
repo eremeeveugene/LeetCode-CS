@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.AddToArrayFormOfInteger;
-using LeetCode.Algorithms.AddTwoNumbers;
 
 namespace LeetCode.Tests.Algorithms.AddToArrayFormOfInteger;
 

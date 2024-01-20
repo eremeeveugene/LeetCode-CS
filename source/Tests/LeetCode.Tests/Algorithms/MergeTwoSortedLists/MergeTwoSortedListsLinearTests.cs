@@ -16,5 +16,4 @@ namespace LeetCode.Tests.Algorithms.MergeTwoSortedLists;
 [TestClass]
 public class MergeTwoSortedListsLinearTests : MergeTwoSortedListsTestsBase<MergeTwoSortedListsLinear>
 {
- 
 }

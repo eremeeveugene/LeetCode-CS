@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.AddBinary;
-using LeetCode.Algorithms.AddStrings;
 
 namespace LeetCode.Tests.Algorithms.AddBinary;
 

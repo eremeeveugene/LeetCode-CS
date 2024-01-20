@@ -13,7 +13,7 @@ using LeetCode.Algorithms.TwoSum;
 
 namespace LeetCode.Tests.Algorithms.TwoSum;
 
-public abstract class TwoSumTestsBase<T> where T: ITwoSum, new()
+public abstract class TwoSumTestsBase<T> where T : ITwoSum, new()
 {
     [TestMethod]
     [DataRow(new[] { 2, 7, 11, 15 }, 9, new[] { 0, 1 })]

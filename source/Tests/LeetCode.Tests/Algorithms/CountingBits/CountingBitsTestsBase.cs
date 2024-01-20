@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountingBits;
-using LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 
 namespace LeetCode.Tests.Algorithms.CountingBits;
 

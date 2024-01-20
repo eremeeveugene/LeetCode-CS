@@ -16,5 +16,4 @@ namespace LeetCode.Tests.Algorithms.BuyTwoChocolates;
 [TestClass]
 public class BuyTwoChocolatesMinimumTwoPricesTests : BuyTwoChocolatesTestsBase<BuyTwoChocolatesMinimumTwoPrices>
 {
-
 }

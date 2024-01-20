@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LongestCommonPrefix;
-using LeetCode.Algorithms.MergeSortedArray;
 
 namespace LeetCode.Tests.Algorithms.LongestCommonPrefix;
 

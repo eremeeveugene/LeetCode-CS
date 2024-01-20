@@ -36,14 +36,14 @@ internal class SubtractiveRomanNumeral(RomanSymbol firstSymbol, RomanSymbol seco
 
     private static List<SubtractiveRomanNumeral> GetSubtractiveRomanNumerals()
     {
-        return new List<SubtractiveRomanNumeral>
-        {
+        return
+        [
             IV,
             IX,
             XC,
             XL,
             CD,
             CM
-        };
+        ];
     }
 }

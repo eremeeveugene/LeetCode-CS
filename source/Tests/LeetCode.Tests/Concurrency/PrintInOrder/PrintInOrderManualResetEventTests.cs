@@ -16,5 +16,4 @@ namespace LeetCode.Tests.Concurrency.PrintInOrder;
 [TestClass]
 public class PrintInOrderManualResetEventTests : PrintInOrderTestsBase<PrintInOrderManualResetEvent>
 {
- 
 }

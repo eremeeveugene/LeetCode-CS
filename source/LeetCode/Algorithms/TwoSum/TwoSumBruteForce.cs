@@ -28,11 +28,11 @@ public class TwoSumBruteForce : ITwoSum
             {
                 if (nums[i] + nums[j] == target)
                 {
-                    return new[] { i, j };
+                    return [i, j];
                 }
             }
         }
 
-        return Array.Empty<int>();
+        return [];
     }
 }

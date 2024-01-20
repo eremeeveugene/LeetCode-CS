@@ -10,11 +10,11 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
-using LeetCode.Algorithms.LongestCommonPrefix;
 
 namespace LeetCode.Tests.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 
-public abstract class HowManyNumbersAreSmallerThanTheCurrentNumberTestsBase<T> where T : IHowManyNumbersAreSmallerThanTheCurrentNumber, new()
+public abstract class HowManyNumbersAreSmallerThanTheCurrentNumberTestsBase<T>
+    where T : IHowManyNumbersAreSmallerThanTheCurrentNumber, new()
 {
     [TestMethod]
     [DataRow(new[] { 8, 1, 2, 2, 3 }, new[] { 4, 0, 1, 1, 3 })]

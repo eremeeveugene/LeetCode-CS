@@ -16,5 +16,4 @@ namespace LeetCode.Tests.Algorithms.AddTwoNumbers;
 [TestClass]
 public class AddTwoNumbersInPlaceCarryTests : AddTwoNumbersTestsBase<AddTwoNumbersInPlaceCarry>
 {
- 
 }

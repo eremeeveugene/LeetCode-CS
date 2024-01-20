@@ -16,5 +16,4 @@ namespace LeetCode.Tests.Algorithms.AddToArrayFormOfInteger;
 [TestClass]
 public class AddToArrayFormOfIntegerSummationTests : AddToArrayFormOfIntegerTestsBase<AddToArrayFormOfIntegerSummation>
 {
-   
 }

@@ -16,5 +16,4 @@ namespace LeetCode.Tests.Algorithms.AddBinary;
 [TestClass]
 public class AddBinaryLinearTests : AddBinaryTestsBase<AddBinaryLinear>
 {
-   
 }

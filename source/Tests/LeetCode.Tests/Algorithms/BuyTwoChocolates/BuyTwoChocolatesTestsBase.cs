@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BuyTwoChocolates;
-using LeetCode.Algorithms.CountingBits;
 
 namespace LeetCode.Tests.Algorithms.BuyTwoChocolates;
 
