@@ -1,23 +1,23 @@
 Summary
-  Generated on: 01/19/2024 - 11:09:15
-  Coverage date: 01/19/2024 - 11:08:54 - 01/19/2024 - 11:08:57
+  Generated on: 01/20/2024 - 17:30:03
+  Coverage date: 01/20/2024 - 17:29:44 - 01/20/2024 - 17:29:47
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 63
-  Files: 63
-  Line coverage: 95.1%
-  Covered lines: 1195
-  Uncovered lines: 61
-  Coverable lines: 1256
-  Total lines: 3254
-  Branch coverage: 92.6% (430 of 464)
-  Covered branches: 430
-  Total branches: 464
-  Method coverage: 94.4% (119 of 126)
-  Covered methods: 119
-  Total methods: 126
+  Classes: 66
+  Files: 66
+  Line coverage: 95.3%
+  Covered lines: 1266
+  Uncovered lines: 62
+  Coverable lines: 1328
+  Total lines: 3423
+  Branch coverage: 92.8% (453 of 488)
+  Covered branches: 453
+  Total branches: 488
+  Method coverage: 94.6% (124 of 131)
+  Covered methods: 124
+  Total methods: 131
 
-LeetCode                                                                                                                                95.6%
+LeetCode                                                                                                                                95.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddStrings.AddStringsIterative                                                                                   100.0%
@@ -35,6 +35,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithKMP                          80.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce              100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing  100.0%
+  LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixBinarySearch                                                              100.0%
+  LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixDivideAndConquer                                                           96.1%
+  LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixHorizontalScanning                                                        100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayMergingAndSorting                                                               100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayThreePointers                                                                   100.0%
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                                                                     95.4%
