@@ -9,21 +9,28 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.SearchInsertPosition;
+using LeetCode.Algorithms.SearchInsertPosition;
 
-/// <inheritdoc />
-public class SearchInsertPositionBinarySearch : ISearchInsertPosition
+namespace LeetCode.Tests.Algorithms.SearchInsertPosition;
+
+public abstract class SearchInsertPositionTestsBase
 {
-    /// <summary>
-    ///     Time complexity - O (log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
-    public int SearchInsert(int[] nums, int target)
+    [TestMethod]
+    [DataRow(new[] { 1, 3, 5, 6 }, 2, 1)]
+    [DataRow(new[] { 1, 3, 5, 6 }, 5, 2)]
+    [DataRow(new[] { 1, 3, 5, 6 }, 7, 4)]
+    public void SearchInsert_WithSortedArrayAndTarget_ReturnsCorrectInsertionIndex(int[] nums, int target,
+        int expectedResult)
     {
-        var index = Array.BinarySearch(nums, target);
+        // Arrange
+        var solution = GetSolution();
 
-        return index < 0 ? ~index : index;
+        // Act
+        var actualResult = solution.SearchInsert(nums, target);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract ISearchInsertPosition GetSolution();
 }

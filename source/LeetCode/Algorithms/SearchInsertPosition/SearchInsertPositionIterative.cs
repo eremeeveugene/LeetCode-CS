@@ -11,10 +11,8 @@
 
 namespace LeetCode.Algorithms.SearchInsertPosition;
 
-/// <summary>
-///     https://leetcode.com/problems/search-insert-position/description/
-/// </summary>
-public static class SearchInsertPositionIterative
+/// <inheritdoc />
+public class SearchInsertPositionIterative : ISearchInsertPosition
 {
     /// <summary>
     ///     Time complexity - O (n)
@@ -22,7 +20,7 @@ public static class SearchInsertPositionIterative
     /// <param name="nums"></param>
     /// <param name="target"></param>
     /// <returns></returns>
-    public static int GetResult(int[] nums, int target)
+    public int SearchInsert(int[] nums, int target)
     {
         return nums.TakeWhile(t => t < target).Count();
     }

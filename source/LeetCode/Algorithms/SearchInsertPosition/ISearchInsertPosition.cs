@@ -11,19 +11,10 @@
 
 namespace LeetCode.Algorithms.SearchInsertPosition;
 
-/// <inheritdoc />
-public class SearchInsertPositionBinarySearch : ISearchInsertPosition
+/// <summary>
+///     https://leetcode.com/problems/search-insert-position/description/
+/// </summary>
+public interface ISearchInsertPosition
 {
-    /// <summary>
-    ///     Time complexity - O (log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
-    public int SearchInsert(int[] nums, int target)
-    {
-        var index = Array.BinarySearch(nums, target);
-
-        return index < 0 ? ~index : index;
-    }
+    int SearchInsert(int[] nums, int target);
 }

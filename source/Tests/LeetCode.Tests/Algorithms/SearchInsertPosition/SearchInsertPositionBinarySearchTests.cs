@@ -14,19 +14,10 @@ using LeetCode.Algorithms.SearchInsertPosition;
 namespace LeetCode.Tests.Algorithms.SearchInsertPosition;
 
 [TestClass]
-public class SearchInsertPositionBinarySearchTests
+public class SearchInsertPositionBinarySearchTests : SearchInsertPositionTestsBase
 {
-    [TestMethod]
-    [DataRow(new[] { 1, 3, 5, 6 }, 2, 1)]
-    [DataRow(new[] { 1, 3, 5, 6 }, 5, 2)]
-    [DataRow(new[] { 1, 3, 5, 6 }, 7, 4)]
-    public void SearchInsertPositionBinarySearch_GetResult_WithSortedArrayAndTarget_ReturnsCorrectInsertIndex(
-        int[] nums, int target, int expectedResult)
+    protected override ISearchInsertPosition GetSolution()
     {
-        // Act
-        var actualResult = SearchInsertPositionBinarySearch.GetResult(nums, target);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        return new SearchInsertPositionBinarySearch();
     }
 }
