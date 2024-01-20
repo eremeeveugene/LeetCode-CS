@@ -9,15 +9,14 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.MergeTwoSortedLists;
+using LeetCode.Core.Models;
 
-namespace LeetCode.Tests.Algorithms.MergeTwoSortedLists;
+namespace LeetCode.Algorithms.MergeTwoSortedLists;
 
-[TestClass]
-public class MergeTwoSortedListsLinearV2Tests : MergeTwoSortedListsTestsBase
+/// <summary>
+///     https://leetcode.com/problems/merge-two-sorted-lists/
+/// </summary>
+public interface IMergeTwoSortedLists
 {
-    protected override IMergeTwoSortedLists GetSolution()
-    {
-        return new MergeTwoSortedListsLinearV2();
-    }
+    ListNode? MergeTwoLists(ListNode? list1, ListNode? list2);
 }
