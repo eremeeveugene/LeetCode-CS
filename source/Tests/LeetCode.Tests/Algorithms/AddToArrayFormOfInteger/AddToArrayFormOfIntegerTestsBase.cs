@@ -13,7 +13,7 @@ using LeetCode.Algorithms.AddToArrayFormOfInteger;
 
 namespace LeetCode.Tests.Algorithms.AddToArrayFormOfInteger;
 
-public abstract class AddToArrayFormOfIntegerDivisionTestsBase
+public abstract class AddToArrayFormOfIntegerTestsBase
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 0, 0 }, 34, new[] { 1, 2, 3, 4 })]

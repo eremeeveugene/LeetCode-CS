@@ -9,15 +9,14 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.AddToArrayFormOfInteger;
+using LeetCode.Core.Models;
 
-namespace LeetCode.Tests.Algorithms.AddToArrayFormOfInteger;
+namespace LeetCode.Algorithms.AddTwoNumbers;
 
-[TestClass]
-public class AddToArrayFormOfIntegerSummationTests : AddToArrayFormOfIntegerTestsBase
+/// <summary>
+///     https://leetcode.com/problems/add-two-numbers/
+/// </summary>
+public interface IAddTwoNumbers
 {
-    protected override IAddToArrayFormOfInteger GetSolution()
-    {
-        return new AddToArrayFormOfIntegerSummation();
-    }
+    ListNode? AddTwoNumbers(ListNode? l1, ListNode? l2);
 }

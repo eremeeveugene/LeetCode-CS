@@ -14,7 +14,7 @@ using LeetCode.Algorithms.AddToArrayFormOfInteger;
 namespace LeetCode.Tests.Algorithms.AddToArrayFormOfInteger;
 
 [TestClass]
-public class AddToArrayFormOfIntegerDivisionTests : AddToArrayFormOfIntegerDivisionTestsBase
+public class AddToArrayFormOfIntegerDivisionTests : AddToArrayFormOfIntegerTestsBase
 {
     protected override IAddToArrayFormOfInteger GetSolution()
     {
