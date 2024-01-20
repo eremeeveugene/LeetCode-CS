@@ -27,18 +27,18 @@ public class FizzBuzzMultithreadedMonitorLockTests
     {
         // Arrange
         var expectedResult = DeserializeToList(expectedResultJson);
-        List<object> actualResult = new();
+        List<object> actualResult = [];
 
         // Act
         FizzBuzzMultithreadedMonitorLock fizzBuzzMultithreaded = new(length);
 
-        List<Task> tasks = new()
-        {
+        List<Task> tasks =
+        [
             Task.Run(() => fizzBuzzMultithreaded.Fizz(() => actualResult.Add("fizz"))),
             Task.Run(() => fizzBuzzMultithreaded.Buzz(() => actualResult.Add("buzz"))),
             Task.Run(() => fizzBuzzMultithreaded.Fizzbuzz(() => actualResult.Add("fizzbuzz"))),
             Task.Run(() => fizzBuzzMultithreaded.Number(n => actualResult.Add(n)))
-        };
+        ];
 
         await Task.WhenAll(tasks);
 
@@ -48,7 +48,7 @@ public class FizzBuzzMultithreadedMonitorLockTests
 
     private static List<object> DeserializeToList(string input)
     {
-        List<object> resultList = new();
+        List<object> resultList = [];
         var elements = input.Split(',');
 
         foreach (var element in elements)

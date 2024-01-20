@@ -9,15 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.AddToArrayFormOfInteger;
+namespace LeetCode.Algorithms.AddToArrayFormOfInteger;
 
-namespace LeetCode.Tests.Algorithms.AddToArrayFormOfInteger;
-
-[TestClass]
-public class AddToArrayFormOfIntegerSummationTests : AddToArrayFormOfIntegerDivisionTestsBase
+/// <summary>
+///     https://leetcode.com/problems/add-to-array-form-of-integer/description/
+/// </summary>
+public interface IAddToArrayFormOfInteger
 {
-    protected override IAddToArrayFormOfInteger GetSolution()
-    {
-        return new AddToArrayFormOfIntegerSummation();
-    }
+    IList<int> AddToArrayForm(int[] num, int k);
 }

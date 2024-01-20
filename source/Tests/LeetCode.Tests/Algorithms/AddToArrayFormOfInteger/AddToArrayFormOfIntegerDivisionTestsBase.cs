@@ -13,11 +13,23 @@ using LeetCode.Algorithms.AddToArrayFormOfInteger;
 
 namespace LeetCode.Tests.Algorithms.AddToArrayFormOfInteger;
 
-[TestClass]
-public class AddToArrayFormOfIntegerSummationTests : AddToArrayFormOfIntegerDivisionTestsBase
+public abstract class AddToArrayFormOfIntegerDivisionTestsBase
 {
-    protected override IAddToArrayFormOfInteger GetSolution()
+    [TestMethod]
+    [DataRow(new[] { 1, 2, 0, 0 }, 34, new[] { 1, 2, 3, 4 })]
+    [DataRow(new[] { 2, 7, 4 }, 181, new[] { 4, 5, 5 })]
+    [DataRow(new[] { 2, 1, 5 }, 806, new[] { 1, 0, 2, 1 })]
+    public void Test(int[] num, int k, int[] expectedResult)
     {
-        return new AddToArrayFormOfIntegerSummation();
+        // Arrange
+        var solution = GetSolution();
+
+        // Act
+        var actualResult = solution.AddToArrayForm(num, k);
+
+        // Assert
+        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
     }
+
+    protected abstract IAddToArrayFormOfInteger GetSolution();
 }
