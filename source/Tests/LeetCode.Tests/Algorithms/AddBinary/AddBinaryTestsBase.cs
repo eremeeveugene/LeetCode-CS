@@ -13,11 +13,22 @@ using LeetCode.Algorithms.AddBinary;
 
 namespace LeetCode.Tests.Algorithms.AddBinary;
 
-[TestClass]
-public class AddBinaryLinearTests : AddBinaryTestsBase
+public abstract class AddBinaryTestsBase
 {
-    protected override IAddBinary GetAddBinary()
+    [TestMethod]
+    [DataRow("11", "1", "100")]
+    [DataRow("1010", "1011", "10101")]
+    public void AddBinary_WithTwoBinaryStrings_ReturnsCorrectSum(string a, string b, string expectedResult)
     {
-        return new AddBinaryLinear();
+        // Arrange
+        var addBinary = GetAddBinary();
+
+        // Act
+        var actualResult = addBinary.AddBinary(a, b);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract IAddBinary GetAddBinary();
 }

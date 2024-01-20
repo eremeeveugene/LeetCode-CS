@@ -9,15 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.AddBinary;
+namespace LeetCode.Algorithms.AddBinary;
 
-namespace LeetCode.Tests.Algorithms.AddBinary;
-
-[TestClass]
-public class AddBinaryLinearTests : AddBinaryTestsBase
+/// <summary>
+///     https://leetcode.com/problems/add-binary/description/
+/// </summary>
+public interface IAddBinary
 {
-    protected override IAddBinary GetAddBinary()
-    {
-        return new AddBinaryLinear();
-    }
+    string AddBinary(string a, string b);
 }
