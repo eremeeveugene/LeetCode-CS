@@ -9,15 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.RemoveElement;
+namespace LeetCode.Algorithms.RemoveElement;
 
-namespace LeetCode.Tests.Algorithms.RemoveElement;
-
-[TestClass]
-public class RemoveElementBruteForceTests : RemoveElementTestsBase
+/// <summary>
+///     https://leetcode.com/problems/remove-element/description/
+/// </summary>
+public interface IRemoveElement
 {
-    protected override IRemoveElement GetSolution()
-    {
-        return new RemoveElementBruteForce();
-    }
+    int RemoveElement(int[] nums, int val);
 }

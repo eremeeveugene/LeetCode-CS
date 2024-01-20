@@ -13,11 +13,24 @@ using LeetCode.Algorithms.RemoveElement;
 
 namespace LeetCode.Tests.Algorithms.RemoveElement;
 
-[TestClass]
-public class RemoveElementBruteForceTests : RemoveElementTestsBase
+public abstract class RemoveElementTestsBase
 {
-    protected override IRemoveElement GetSolution()
+    [TestMethod]
+    [DataRow(new[] { 3, 2, 2, 3 }, 3, new[] { 2, 2, 3, 3 }, 2)]
+    [DataRow(new[] { 0, 1, 2, 2, 3, 0, 4, 2 }, 2, new[] { 0, 1, 3, 0, 4, 2, 2, 2 }, 5)]
+    public void RemoveElement_WithArrayAndValue_ReturnsModifiedArrayAndNewLength(int[] actualNums, int val,
+        int[] expectedNums, int expectedResult)
     {
-        return new RemoveElementBruteForce();
+        // Arrange
+        var solution = GetSolution();
+
+        // Act
+        var actualResult = solution.RemoveElement(actualNums, val);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedNums, actualNums);
     }
+
+    protected abstract IRemoveElement GetSolution();
 }
