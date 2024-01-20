@@ -12,14 +12,14 @@
 namespace LeetCode.Algorithms.MissingNumber;
 
 /// <inheritdoc />
-public static class MissingNumberSumFormula : IMissingNumber
+public class MissingNumberSumFormula : IMissingNumber
 {
     /// <summary>
     ///     Time complexity - O(n)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>
-    public static int GetResult(int[] nums)
+    public int MissingNumber(int[] nums)
     {
         if (nums.Length == 0)
         {

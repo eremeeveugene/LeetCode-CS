@@ -11,17 +11,15 @@
 
 namespace LeetCode.Algorithms.MissingNumber;
 
-/// <summary>
-///     https://leetcode.com/problems/missing-number/description/
-/// </summary>
-public static class MissingNumberSortAndForSearch
+/// <inheritdoc />
+public class MissingNumberSortAndForSearch : IMissingNumber
 {
     /// <summary>
     ///     Time complexity - O(n log n)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>
-    public static int GetResult(int[] nums)
+    public int MissingNumber(int[] nums)
     {
         Array.Sort(nums);
 
