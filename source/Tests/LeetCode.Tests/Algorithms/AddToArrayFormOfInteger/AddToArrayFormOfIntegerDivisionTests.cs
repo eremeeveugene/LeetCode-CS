@@ -14,10 +14,7 @@ using LeetCode.Algorithms.AddToArrayFormOfInteger;
 namespace LeetCode.Tests.Algorithms.AddToArrayFormOfInteger;
 
 [TestClass]
-public class AddToArrayFormOfIntegerDivisionTests : AddToArrayFormOfIntegerTestsBase
+public class AddToArrayFormOfIntegerDivisionTests : AddToArrayFormOfIntegerTestsBase<AddToArrayFormOfIntegerDivision>
 {
-    protected override IAddToArrayFormOfInteger GetSolution()
-    {
-        return new AddToArrayFormOfIntegerDivision();
-    }
+    
 }

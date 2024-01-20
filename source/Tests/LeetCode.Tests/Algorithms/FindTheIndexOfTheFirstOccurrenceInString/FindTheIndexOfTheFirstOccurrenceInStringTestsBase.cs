@@ -10,10 +10,11 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
+using LeetCode.Algorithms.LongestCommonPrefix;
 
 namespace LeetCode.Tests.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 
-public abstract class FindTheIndexOfTheFirstOccurrenceInStringTestsBase
+public abstract class FindTheIndexOfTheFirstOccurrenceInStringTestsBase<T> where T : IFindTheIndexOfTheFirstOccurrenceInString, new()
 {
     [TestMethod]
     [DataRow("sadbutsad", "sad", 0)]
@@ -22,7 +23,7 @@ public abstract class FindTheIndexOfTheFirstOccurrenceInStringTestsBase
         int expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.StrStr(haystack, needle);
@@ -30,6 +31,4 @@ public abstract class FindTheIndexOfTheFirstOccurrenceInStringTestsBase
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
     }
-
-    protected abstract IFindTheIndexOfTheFirstOccurrenceInString GetSolution();
 }

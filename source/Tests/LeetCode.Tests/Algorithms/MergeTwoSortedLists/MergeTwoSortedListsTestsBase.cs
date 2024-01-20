@@ -15,7 +15,7 @@ using LeetCode.Tests.Extensions;
 
 namespace LeetCode.Tests.Algorithms.MergeTwoSortedLists;
 
-public abstract class MergeTwoSortedListsTestsBase
+public abstract class MergeTwoSortedListsTestsBase<T> where T : IMergeTwoSortedLists, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 4 }, new[] { 1, 3, 4 }, new[] { 1, 1, 2, 3, 4, 4 })]
@@ -26,7 +26,7 @@ public abstract class MergeTwoSortedListsTestsBase
         int[] expectedResultArray)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         var list1 = array1.ToListNode();
         var list2 = array2.ToListNode();
@@ -38,6 +38,4 @@ public abstract class MergeTwoSortedListsTestsBase
         // Assert
         AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
     }
-
-    protected abstract IMergeTwoSortedLists GetSolution();
 }

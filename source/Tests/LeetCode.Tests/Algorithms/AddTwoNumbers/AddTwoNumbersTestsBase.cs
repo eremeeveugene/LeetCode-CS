@@ -10,12 +10,13 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.AddTwoNumbers;
+using LeetCode.Algorithms.BuyTwoChocolates;
 using LeetCode.Core.Extensions;
 using LeetCode.Tests.Extensions;
 
 namespace LeetCode.Tests.Algorithms.AddTwoNumbers;
 
-public abstract class AddTwoNumbersTestsBase
+public abstract class AddTwoNumbersTestsBase<T> where T : IAddTwoNumbers, new()
 {
     [TestMethod]
     [DataRow(new[] { 2, 4, 3 }, new[] { 5, 6, 4 }, new[] { 7, 0, 8 })]
@@ -26,7 +27,7 @@ public abstract class AddTwoNumbersTestsBase
         int[] expectedResultArray)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Arrange
         var list1 = array1.ToListNode();
@@ -39,6 +40,4 @@ public abstract class AddTwoNumbersTestsBase
         // Assert
         AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
     }
-
-    protected abstract IAddTwoNumbers GetSolution();
 }

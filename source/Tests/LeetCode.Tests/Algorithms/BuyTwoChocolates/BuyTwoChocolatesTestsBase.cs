@@ -10,10 +10,11 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BuyTwoChocolates;
+using LeetCode.Algorithms.CountingBits;
 
 namespace LeetCode.Tests.Algorithms.BuyTwoChocolates;
 
-public abstract class BuyTwoChocolatesTestsBase
+public abstract class BuyTwoChocolatesTestsBase<T> where T : IBuyTwoChocolates, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 2 }, 3, 0)]
@@ -24,7 +25,7 @@ public abstract class BuyTwoChocolatesTestsBase
     public void BuyChoco_WithPricesAndMoney_ReturnsExpectedResult(int[] prices, int money, int expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.BuyChoco(prices, money);
@@ -32,6 +33,4 @@ public abstract class BuyTwoChocolatesTestsBase
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
     }
-
-    protected abstract IBuyTwoChocolates GetSolution();
 }

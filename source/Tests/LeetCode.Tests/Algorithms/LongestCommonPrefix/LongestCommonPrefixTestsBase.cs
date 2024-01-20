@@ -10,10 +10,11 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LongestCommonPrefix;
+using LeetCode.Algorithms.MergeSortedArray;
 
 namespace LeetCode.Tests.Algorithms.LongestCommonPrefix;
 
-public abstract class LongestCommonPrefixTestsBase
+public abstract class LongestCommonPrefixTestsBase<T> where T : ILongestCommonPrefix, new()
 {
     [TestMethod]
     [DataRow(new[] { "" }, "")]
@@ -23,7 +24,7 @@ public abstract class LongestCommonPrefixTestsBase
     public void LongestCommonPrefix_GivenStringsArray_ReturnsCorrectCommonPrefix(string[] strs, string expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.LongestCommonPrefix(strs);
@@ -31,6 +32,4 @@ public abstract class LongestCommonPrefixTestsBase
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
     }
-
-    protected abstract ILongestCommonPrefix GetSolution();
 }

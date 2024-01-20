@@ -9,16 +9,11 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.RomanToInteger;
 using LeetCode.Algorithms.RomanToInteger.Iterative;
 
 namespace LeetCode.Tests.Algorithms.RomanToInteger;
 
 [TestClass]
-public class RomanToIntegerIterativeTests : RomanToIntegerTestsBase
+public class RomanToIntegerIterativeTests : RomanToIntegerTestsBase<RomanToIntegerIterative>
 {
-    protected override IRomanToInteger GetSolution()
-    {
-        return new RomanToIntegerIterative();
-    }
 }

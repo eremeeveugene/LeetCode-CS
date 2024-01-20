@@ -13,7 +13,7 @@ using LeetCode.Algorithms.ThirdMaximumNumber;
 
 namespace LeetCode.Tests.Algorithms.ThirdMaximumNumber;
 
-public abstract class ThirdMaximumNumberTestsBase
+public abstract class ThirdMaximumNumberTestsBase<T> where T : IThirdMaximumNumber, new()
 {
     [TestMethod]
     [DataRow(new[] { 3, 2, 1 }, 1)]
@@ -27,7 +27,7 @@ public abstract class ThirdMaximumNumberTestsBase
     public void ThirdMax_WithIntArray_ReturnsThirdMaximumOrMaximum(int[] nums, int expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.ThirdMax(nums);
@@ -35,6 +35,4 @@ public abstract class ThirdMaximumNumberTestsBase
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
     }
-
-    protected abstract IThirdMaximumNumber GetSolution();
 }

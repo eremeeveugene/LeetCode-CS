@@ -11,10 +11,8 @@
 
 namespace LeetCode.Algorithms.TwoSum;
 
-/// <summary>
-///     https://leetcode.com/problems/two-sum/description/
-/// </summary>
-public static class TwoSumBruteForce
+/// <inheritdoc />
+public class TwoSumBruteForce : ITwoSum
 {
     /// <summary>
     ///     Time complexity - O (n^2)
@@ -22,7 +20,7 @@ public static class TwoSumBruteForce
     /// <param name="nums"></param>
     /// <param name="target"></param>
     /// <returns></returns>
-    public static int[] GetResult(int[] nums, int target)
+    public int[] TwoSum(int[] nums, int target)
     {
         for (var i = 0; i < nums.Length; i++)
         {

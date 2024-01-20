@@ -14,10 +14,7 @@ using LeetCode.Algorithms.AddBinary;
 namespace LeetCode.Tests.Algorithms.AddBinary;
 
 [TestClass]
-public class AddBinaryLinearTests : AddBinaryTestsBase
+public class AddBinaryLinearTests : AddBinaryTestsBase<AddBinaryLinear>
 {
-    protected override IAddBinary GetSolution()
-    {
-        return new AddBinaryLinear();
-    }
+   
 }

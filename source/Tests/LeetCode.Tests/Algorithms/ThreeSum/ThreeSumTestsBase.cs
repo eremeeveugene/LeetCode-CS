@@ -15,7 +15,7 @@ using Newtonsoft.Json;
 
 namespace LeetCode.Tests.Algorithms.ThreeSum;
 
-public abstract class ThreeSumTestsBase
+public abstract class ThreeSumTestsBase<T> where T : IThreeSum, new()
 {
     [TestMethod]
     [DataRow(new[] { -1, 0, 1, 2, -1, -4 }, "[[-1, -1, 2], [-1, 0, 1]]")]
@@ -26,7 +26,7 @@ public abstract class ThreeSumTestsBase
     public void ThreeSum_WithIntArray_ReturnsTripletsThatSumToZero(int[] nums, string expectedResultJson)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         var expectedResult = JsonConvert.DeserializeObject<int[][]>(expectedResultJson);
 
@@ -42,6 +42,4 @@ public abstract class ThreeSumTestsBase
         Assert.AreEqual(expectedResult!.Length, actualResult.Count);
         Assert.IsTrue(expectedSet.SetEquals(actualSet));
     }
-
-    protected abstract IThreeSum GetSolution();
 }

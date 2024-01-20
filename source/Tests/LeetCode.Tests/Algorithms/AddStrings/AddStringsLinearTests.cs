@@ -14,10 +14,7 @@ using LeetCode.Algorithms.AddStrings;
 namespace LeetCode.Tests.Algorithms.AddStrings;
 
 [TestClass]
-public class AddStringsLinearTests : AddStringsTestsBase
+public class AddStringsLinearTests : AddStringsTestsBase<AddStringsLinear>
 {
-    protected override IAddStrings GetSolution()
-    {
-        return new AddStringsLinear();
-    }
+
 }

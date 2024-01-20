@@ -14,10 +14,7 @@ using LeetCode.Algorithms.MergeTwoSortedLists;
 namespace LeetCode.Tests.Algorithms.MergeTwoSortedLists;
 
 [TestClass]
-public class MergeTwoSortedListsLinearV2Tests : MergeTwoSortedListsTestsBase
+public class MergeTwoSortedListsLinearV2Tests : MergeTwoSortedListsTestsBase<MergeTwoSortedListsLinearV2>
 {
-    protected override IMergeTwoSortedLists GetSolution()
-    {
-        return new MergeTwoSortedListsLinearV2();
-    }
+    
 }

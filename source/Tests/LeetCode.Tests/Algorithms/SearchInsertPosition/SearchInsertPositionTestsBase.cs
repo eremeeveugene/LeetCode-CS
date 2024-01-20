@@ -13,7 +13,7 @@ using LeetCode.Algorithms.SearchInsertPosition;
 
 namespace LeetCode.Tests.Algorithms.SearchInsertPosition;
 
-public abstract class SearchInsertPositionTestsBase
+public abstract class SearchInsertPositionTestsBase<T> where T : ISearchInsertPosition, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 3, 5, 6 }, 2, 1)]
@@ -23,7 +23,7 @@ public abstract class SearchInsertPositionTestsBase
         int expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.SearchInsert(nums, target);
@@ -31,6 +31,4 @@ public abstract class SearchInsertPositionTestsBase
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
     }
-
-    protected abstract ISearchInsertPosition GetSolution();
 }

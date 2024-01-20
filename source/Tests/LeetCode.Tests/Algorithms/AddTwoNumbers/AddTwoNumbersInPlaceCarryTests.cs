@@ -14,10 +14,7 @@ using LeetCode.Algorithms.AddTwoNumbers;
 namespace LeetCode.Tests.Algorithms.AddTwoNumbers;
 
 [TestClass]
-public class AddTwoNumbersInPlaceCarryTests : AddTwoNumbersTestsBase
+public class AddTwoNumbersInPlaceCarryTests : AddTwoNumbersTestsBase<AddTwoNumbersInPlaceCarry>
 {
-    protected override IAddTwoNumbers GetSolution()
-    {
-        return new AddTwoNumbersInPlaceCarry();
-    }
+ 
 }

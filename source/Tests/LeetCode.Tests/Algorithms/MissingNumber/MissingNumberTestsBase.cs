@@ -13,16 +13,16 @@ using LeetCode.Algorithms.MissingNumber;
 
 namespace LeetCode.Tests.Algorithms.MissingNumber;
 
-public abstract class MissingNumberTestsBase
+public abstract class MissingNumberTestsBase<T> where T : IMissingNumber, new()
 {
     [TestMethod]
     [DataRow(new[] { 3, 0, 1 }, 2)]
     [DataRow(new[] { 0, 1 }, 2)]
     [DataRow(new[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 }, 8)]
-    public void Test(int[] nums, int expectedResult)
+    public void MissingNumber_WithIntArray_ReturnsMissingNumber(int[] nums, int expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.MissingNumber(nums);
@@ -30,6 +30,4 @@ public abstract class MissingNumberTestsBase
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
     }
-
-    protected abstract IMissingNumber GetSolution();
 }

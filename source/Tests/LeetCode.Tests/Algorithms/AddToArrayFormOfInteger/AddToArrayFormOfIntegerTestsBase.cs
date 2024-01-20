@@ -10,10 +10,11 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.AddToArrayFormOfInteger;
+using LeetCode.Algorithms.AddTwoNumbers;
 
 namespace LeetCode.Tests.Algorithms.AddToArrayFormOfInteger;
 
-public abstract class AddToArrayFormOfIntegerTestsBase
+public abstract class AddToArrayFormOfIntegerTestsBase<T> where T : IAddToArrayFormOfInteger, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 0, 0 }, 34, new[] { 1, 2, 3, 4 })]
@@ -22,7 +23,7 @@ public abstract class AddToArrayFormOfIntegerTestsBase
     public void AddToArrayForm_WithArrayAndInteger_ReturnsSumAsArray(int[] num, int k, int[] expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.AddToArrayForm(num, k);
@@ -30,6 +31,4 @@ public abstract class AddToArrayFormOfIntegerTestsBase
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
     }
-
-    protected abstract IAddToArrayFormOfInteger GetSolution();
 }

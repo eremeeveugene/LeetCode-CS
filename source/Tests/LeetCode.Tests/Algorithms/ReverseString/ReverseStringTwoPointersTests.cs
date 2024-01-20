@@ -14,10 +14,6 @@ using LeetCode.Algorithms.ReverseString;
 namespace LeetCode.Tests.Algorithms.ReverseString;
 
 [TestClass]
-public class ReverseStringTwoPointersTests : ReverseStringTestsBase
+public class ReverseStringTwoPointersTests : ReverseStringTestsBase<ReverseStringTwoPointers>
 {
-    protected override IReverseString GetSolution()
-    {
-        return new ReverseStringTwoPointers();
-    }
 }

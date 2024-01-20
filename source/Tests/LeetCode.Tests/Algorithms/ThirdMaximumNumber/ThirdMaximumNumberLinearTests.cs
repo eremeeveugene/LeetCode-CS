@@ -14,10 +14,6 @@ using LeetCode.Algorithms.ThirdMaximumNumber;
 namespace LeetCode.Tests.Algorithms.ThirdMaximumNumber;
 
 [TestClass]
-public class ThirdMaximumNumberLinearTests : ThirdMaximumNumberTestsBase
+public class ThirdMaximumNumberLinearTests : ThirdMaximumNumberTestsBase<ThirdMaximumNumberLinear>
 {
-    protected override IThirdMaximumNumber GetSolution()
-    {
-        return new ThirdMaximumNumberLinear();
-    }
 }

@@ -14,10 +14,6 @@ using LeetCode.Algorithms.Sqrt;
 namespace LeetCode.Tests.Algorithms.Sqrt;
 
 [TestClass]
-public class SqrtNewtonsMethodTests : SqrtTestsBase
+public class SqrtNewtonsMethodTests : SqrtTestsBase<SqrtNewtonsMethod>
 {
-    protected override ISqrt GetSolution()
-    {
-        return new SqrtNewtonsMethod();
-    }
 }

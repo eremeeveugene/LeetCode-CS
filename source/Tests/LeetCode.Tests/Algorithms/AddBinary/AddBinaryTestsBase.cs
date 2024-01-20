@@ -10,10 +10,11 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.AddBinary;
+using LeetCode.Algorithms.AddStrings;
 
 namespace LeetCode.Tests.Algorithms.AddBinary;
 
-public abstract class AddBinaryTestsBase
+public abstract class AddBinaryTestsBase<T> where T : IAddBinary, new()
 {
     [TestMethod]
     [DataRow("11", "1", "100")]
@@ -21,7 +22,7 @@ public abstract class AddBinaryTestsBase
     public void AddBinary_WithTwoBinaryStrings_ReturnsCorrectSum(string a, string b, string expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.AddBinary(a, b);
@@ -29,6 +30,4 @@ public abstract class AddBinaryTestsBase
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
     }
-
-    protected abstract IAddBinary GetSolution();
 }

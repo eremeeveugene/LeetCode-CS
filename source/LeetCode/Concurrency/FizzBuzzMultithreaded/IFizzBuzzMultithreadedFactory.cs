@@ -9,12 +9,9 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
+namespace LeetCode.Concurrency.FizzBuzzMultithreaded;
 
-namespace LeetCode.Tests.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
-
-[TestClass]
-public class FindTheIndexOfTheFirstOccurrenceInStringWithKMPTests : FindTheIndexOfTheFirstOccurrenceInStringTestsBase<FindTheIndexOfTheFirstOccurrenceInStringWithKMP>
+public interface IFizzBuzzMultithreadedFactory
 {
-   
+    IFizzBuzzMultithreaded Create(int length);
 }

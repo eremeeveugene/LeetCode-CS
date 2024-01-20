@@ -13,7 +13,7 @@ using LeetCode.Algorithms.RomanToInteger;
 
 namespace LeetCode.Tests.Algorithms.RomanToInteger;
 
-public abstract class RomanToIntegerTestsBase
+public abstract class RomanToIntegerTestsBase<T> where T : IRomanToInteger, new()
 {
     [TestMethod]
     [DataRow("III", 3)]
@@ -22,7 +22,7 @@ public abstract class RomanToIntegerTestsBase
     public void RomanToInt_WithRomanString_ConvertsToInteger(string romanString, int expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.RomanToInt(romanString);
@@ -30,6 +30,4 @@ public abstract class RomanToIntegerTestsBase
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
     }
-
-    protected abstract IRomanToInteger GetSolution();
 }

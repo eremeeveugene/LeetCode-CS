@@ -13,7 +13,7 @@ using LeetCode.Algorithms.RemoveElement;
 
 namespace LeetCode.Tests.Algorithms.RemoveElement;
 
-public abstract class RemoveElementTestsBase
+public abstract class RemoveElementTestsBase<T> where T : IRemoveElement, new()
 {
     [TestMethod]
     [DataRow(new[] { 3, 2, 2, 3 }, 3, new[] { 2, 2, 3, 3 }, 2)]
@@ -22,7 +22,7 @@ public abstract class RemoveElementTestsBase
         int[] expectedNums, int expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.RemoveElement(actualNums, val);
@@ -31,6 +31,4 @@ public abstract class RemoveElementTestsBase
         Assert.AreEqual(expectedResult, actualResult);
         CollectionAssert.AreEqual(expectedNums, actualNums);
     }
-
-    protected abstract IRemoveElement GetSolution();
 }

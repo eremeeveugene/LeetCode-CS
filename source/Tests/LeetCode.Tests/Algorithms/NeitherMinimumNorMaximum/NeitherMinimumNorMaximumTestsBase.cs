@@ -13,7 +13,7 @@ using LeetCode.Algorithms.NeitherMinimumNorMaximum;
 
 namespace LeetCode.Tests.Algorithms.NeitherMinimumNorMaximum;
 
-public abstract class NeitherMinimumNorMaximumTestsBase
+public abstract class NeitherMinimumNorMaximumTestsBase<T> where T : INeitherMinimumNorMaximum, new()
 {
     [TestMethod]
     [DataRow(new[] { 3, 2, 1, 4 }, 2)]
@@ -23,7 +23,7 @@ public abstract class NeitherMinimumNorMaximumTestsBase
     public void FindNonMinOrMax_WithIntArray_ReturnsNonExtremeValue(int[] nums, int expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.FindNonMinOrMax(nums);
@@ -31,6 +31,4 @@ public abstract class NeitherMinimumNorMaximumTestsBase
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
     }
-
-    protected abstract INeitherMinimumNorMaximum GetSolution();
 }

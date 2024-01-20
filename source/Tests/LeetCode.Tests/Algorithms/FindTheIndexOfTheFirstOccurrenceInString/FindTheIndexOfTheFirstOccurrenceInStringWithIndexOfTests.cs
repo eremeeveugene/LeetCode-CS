@@ -15,10 +15,7 @@ namespace LeetCode.Tests.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 
 [TestClass]
 public class
-    FindTheIndexOfTheFirstOccurrenceInStringWithIndexOfTests : FindTheIndexOfTheFirstOccurrenceInStringTestsBase
+    FindTheIndexOfTheFirstOccurrenceInStringWithIndexOfTests : FindTheIndexOfTheFirstOccurrenceInStringTestsBase<FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf>
 {
-    protected override IFindTheIndexOfTheFirstOccurrenceInString GetSolution()
-    {
-        return new FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf();
-    }
+  
 }

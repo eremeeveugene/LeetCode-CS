@@ -10,12 +10,13 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BinaryTreeInorderTraversal;
+using LeetCode.Algorithms.BuyTwoChocolates;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.BinaryTreeInorderTraversal;
 
-public abstract class BinaryTreeInorderTraversalTestsBase
+public abstract class BinaryTreeInorderTraversalTestsBase<T> where T : IBinaryTreeInorderTraversal, new()
 {
     [TestMethod]
     [DataRow("[1,null,2,3]", "[1,3,2]")]
@@ -25,7 +26,7 @@ public abstract class BinaryTreeInorderTraversalTestsBase
         string expectedArrayJson)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         IList<int?> expectedResult = JsonConvertHelper<int?>.JsonArrayToList(expectedArrayJson);
         IList<int?> inputArray = JsonConvertHelper<int?>.JsonArrayToList(inputArrayJson);
@@ -39,5 +40,4 @@ public abstract class BinaryTreeInorderTraversalTestsBase
         CollectionAssert.AreEqual(expectedResult.ToList(), actualResult.ToList());
     }
 
-    protected abstract IBinaryTreeInorderTraversal GetSolution();
 }

@@ -10,10 +10,11 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
+using LeetCode.Algorithms.LongestCommonPrefix;
 
 namespace LeetCode.Tests.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 
-public abstract class HowManyNumbersAreSmallerThanTheCurrentNumberTestsBase
+public abstract class HowManyNumbersAreSmallerThanTheCurrentNumberTestsBase<T> where T : IHowManyNumbersAreSmallerThanTheCurrentNumber, new()
 {
     [TestMethod]
     [DataRow(new[] { 8, 1, 2, 2, 3 }, new[] { 4, 0, 1, 1, 3 })]
@@ -22,7 +23,7 @@ public abstract class HowManyNumbersAreSmallerThanTheCurrentNumberTestsBase
     public void SmallerNumbersThanCurrent_WithIntArray_ReturnsCountsArray(int[] nums, int[] expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.SmallerNumbersThanCurrent(nums);
@@ -30,6 +31,4 @@ public abstract class HowManyNumbersAreSmallerThanTheCurrentNumberTestsBase
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
-
-    protected abstract IHowManyNumbersAreSmallerThanTheCurrentNumber GetSolution();
 }

@@ -15,10 +15,7 @@ namespace LeetCode.Tests.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber
 
 [TestClass]
 public class
-    HowManyNumbersAreSmallerThanTheCurrentNumberBruteForceTests : HowManyNumbersAreSmallerThanTheCurrentNumberTestsBase
+    HowManyNumbersAreSmallerThanTheCurrentNumberBruteForceTests : HowManyNumbersAreSmallerThanTheCurrentNumberTestsBase<
+    HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce>
 {
-    protected override IHowManyNumbersAreSmallerThanTheCurrentNumber GetSolution()
-    {
-        return new HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce();
-    }
 }

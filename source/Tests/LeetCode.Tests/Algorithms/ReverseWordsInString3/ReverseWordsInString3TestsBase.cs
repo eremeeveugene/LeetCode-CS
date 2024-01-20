@@ -13,7 +13,7 @@ using LeetCode.Algorithms.ReverseWordsInString3;
 
 namespace LeetCode.Tests.Algorithms.ReverseWordsInString3;
 
-public abstract class ReverseWordsInString3TestsBase
+public abstract class ReverseWordsInString3TestsBase<T> where T : IReverseWordsInString3, new()
 {
     [TestMethod]
     [DataRow("Let's take LeetCode contest", "s'teL ekat edoCteeL tsetnoc")]
@@ -21,7 +21,7 @@ public abstract class ReverseWordsInString3TestsBase
     public void ReverseWords_WithString_ReversesEachWord(string s, string expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.ReverseWords(s);
@@ -29,6 +29,4 @@ public abstract class ReverseWordsInString3TestsBase
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
     }
-
-    protected abstract IReverseWordsInString3 GetSolution();
 }

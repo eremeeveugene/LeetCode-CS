@@ -14,10 +14,6 @@ using LeetCode.Algorithms.MergeSortedArray;
 namespace LeetCode.Tests.Algorithms.MergeSortedArray;
 
 [TestClass]
-public class MergeSortedArrayMergingAndSortingTests : MergeSortedArrayTestsBase
+public class MergeSortedArrayMergingAndSortingTests : MergeSortedArrayTestsBase<MergeSortedArrayMergingAndSorting>
 {
-    protected override IMergeSortedArray GetSolution()
-    {
-        return new MergeSortedArrayMergingAndSorting();
-    }
 }

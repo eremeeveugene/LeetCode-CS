@@ -10,10 +10,11 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.AddStrings;
+using LeetCode.Algorithms.AddToArrayFormOfInteger;
 
 namespace LeetCode.Tests.Algorithms.AddStrings;
 
-public abstract class AddStringsTestsBase
+public abstract class AddStringsTestsBase<T> where T : IAddStrings, new()
 {
     [TestMethod]
     [DataRow("0", "0", "0")]
@@ -23,7 +24,7 @@ public abstract class AddStringsTestsBase
     public void AddStrings_WithNumericStrings_ReturnsSumAsString(string num1, string num2, string expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.AddStrings(num1, num2);
@@ -32,5 +33,4 @@ public abstract class AddStringsTestsBase
         Assert.AreEqual(expectedResult, actualResult);
     }
 
-    protected abstract IAddStrings GetSolution();
 }

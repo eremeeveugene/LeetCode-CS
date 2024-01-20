@@ -14,10 +14,7 @@ using LeetCode.Algorithms.BuyTwoChocolates;
 namespace LeetCode.Tests.Algorithms.BuyTwoChocolates;
 
 [TestClass]
-public class BuyTwoChocolatesBruteForceTests : BuyTwoChocolatesTestsBase
+public class BuyTwoChocolatesBruteForceTests : BuyTwoChocolatesTestsBase<BuyTwoChocolatesBruteForce>
 {
-    protected override IBuyTwoChocolates GetSolution()
-    {
-        return new BuyTwoChocolatesBruteForce();
-    }
+   
 }

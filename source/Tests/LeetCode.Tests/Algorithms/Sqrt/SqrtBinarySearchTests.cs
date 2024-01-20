@@ -14,10 +14,6 @@ using LeetCode.Algorithms.Sqrt;
 namespace LeetCode.Tests.Algorithms.Sqrt;
 
 [TestClass]
-public class SqrtBinarySearchTests : SqrtTestsBase
+public class SqrtBinarySearchTests : SqrtTestsBase<SqrtBinarySearch>
 {
-    protected override ISqrt GetSolution()
-    {
-        return new SqrtBinarySearch();
-    }
 }

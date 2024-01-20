@@ -9,12 +9,14 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
+namespace LeetCode.Concurrency.PrintInOrder;
 
-namespace LeetCode.Tests.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
-
-[TestClass]
-public class FindTheIndexOfTheFirstOccurrenceInStringWithKMPTests : FindTheIndexOfTheFirstOccurrenceInStringTestsBase<FindTheIndexOfTheFirstOccurrenceInStringWithKMP>
+/// <summary>
+///     https://leetcode.com/problems/print-in-order/description/
+/// </summary>
+public interface IPrintInOrder
 {
-   
+    void First(Action printFirst);
+    void Second(Action printFirst);
+    void Third(Action printFirst);
 }

@@ -14,10 +14,6 @@ using LeetCode.Algorithms.SearchInsertPosition;
 namespace LeetCode.Tests.Algorithms.SearchInsertPosition;
 
 [TestClass]
-public class SearchInsertPositionBinarySearchTests : SearchInsertPositionTestsBase
+public class SearchInsertPositionBinarySearchTests : SearchInsertPositionTestsBase<SearchInsertPositionBinarySearch>
 {
-    protected override ISearchInsertPosition GetSolution()
-    {
-        return new SearchInsertPositionBinarySearch();
-    }
 }

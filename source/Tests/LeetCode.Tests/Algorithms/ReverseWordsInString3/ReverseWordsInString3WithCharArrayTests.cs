@@ -14,10 +14,7 @@ using LeetCode.Algorithms.ReverseWordsInString3;
 namespace LeetCode.Tests.Algorithms.ReverseWordsInString3;
 
 [TestClass]
-public class ReverseWordsInString3WithCharArrayTests : ReverseWordsInString3TestsBase
+public class
+    ReverseWordsInString3WithCharArrayTests : ReverseWordsInString3TestsBase<ReverseWordsInString3WithCharArray>
 {
-    protected override IReverseWordsInString3 GetSolution()
-    {
-        return new ReverseWordsInString3WithCharArray();
-    }
 }

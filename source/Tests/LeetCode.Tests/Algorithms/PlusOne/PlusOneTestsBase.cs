@@ -13,7 +13,7 @@ using LeetCode.Algorithms.PlusOne;
 
 namespace LeetCode.Tests.Algorithms.PlusOne;
 
-public abstract class PlusOneTestsBase
+public abstract class PlusOneTestsBase<T> where T : IPlusOne, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 3 }, new[] { 1, 2, 4 })]
@@ -36,7 +36,7 @@ public abstract class PlusOneTestsBase
     public void PlusOne_WithDigitArray_ReturnsIncrementedNumberArray(int[] digits, int[] expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.PlusOne(digits);
@@ -44,6 +44,4 @@ public abstract class PlusOneTestsBase
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
-
-    protected abstract IPlusOne GetSolution();
 }

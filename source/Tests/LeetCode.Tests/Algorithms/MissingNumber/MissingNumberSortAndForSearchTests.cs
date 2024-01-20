@@ -14,10 +14,6 @@ using LeetCode.Algorithms.MissingNumber;
 namespace LeetCode.Tests.Algorithms.MissingNumber;
 
 [TestClass]
-public class MissingNumberSortAndForSearchTests : MissingNumberTestsBase
+public class MissingNumberSortAndForSearchTests : MissingNumberTestsBase<MissingNumberSortAndForSearch>
 {
-    protected override IMissingNumber GetSolution()
-    {
-        return new MissingNumberSortAndForSearch();
-    }
 }

@@ -10,10 +10,11 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountingBits;
+using LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 
 namespace LeetCode.Tests.Algorithms.CountingBits;
 
-public abstract class CountingBitsTestsBase
+public abstract class CountingBitsTestsBase<T> where T : ICountingBits, new()
 {
     [TestMethod]
     [DataRow(2, new[] { 0, 1, 1 })]
@@ -21,7 +22,7 @@ public abstract class CountingBitsTestsBase
     public void CountBits_WithNumber_ReturnsBitCountsUpToN(int n, int[] expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.CountBits(n);
@@ -29,6 +30,4 @@ public abstract class CountingBitsTestsBase
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
-
-    protected abstract ICountingBits GetSolution();
 }

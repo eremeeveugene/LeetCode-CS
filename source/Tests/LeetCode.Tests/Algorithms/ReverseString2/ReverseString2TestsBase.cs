@@ -13,7 +13,7 @@ using LeetCode.Algorithms.ReverseString2;
 
 namespace LeetCode.Tests.Algorithms.ReverseString2;
 
-public abstract class ReverseString2TestsBase
+public abstract class ReverseString2TestsBase<T> where T : IReverseString2, new()
 {
     [TestMethod]
     [DataRow("abcdefg", 2, "bacdfeg")]
@@ -21,7 +21,7 @@ public abstract class ReverseString2TestsBase
     public void ReverseStr_WithStringAndInterval_ReversesEveryKCharacters(string s, int k, string expectedResult)
     {
         // Arrange
-        var solution = GetSolution();
+        var solution = new T();
 
         // Act
         var actualResult = solution.ReverseStr(s, k);
@@ -29,6 +29,4 @@ public abstract class ReverseString2TestsBase
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
     }
-
-    protected abstract IReverseString2 GetSolution();
 }

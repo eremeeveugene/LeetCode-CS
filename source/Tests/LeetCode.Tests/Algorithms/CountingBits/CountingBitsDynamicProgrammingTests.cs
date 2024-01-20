@@ -14,10 +14,7 @@ using LeetCode.Algorithms.CountingBits;
 namespace LeetCode.Tests.Algorithms.CountingBits;
 
 [TestClass]
-public class CountingBitsDynamicProgrammingTests : CountingBitsTestsBase
+public class CountingBitsDynamicProgrammingTests : CountingBitsTestsBase<CountingBitsDynamicProgramming>
 {
-    protected override ICountingBits GetSolution()
-    {
-        return new CountingBitsDynamicProgramming();
-    }
+  
 }

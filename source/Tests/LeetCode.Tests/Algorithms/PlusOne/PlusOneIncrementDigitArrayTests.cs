@@ -14,10 +14,6 @@ using LeetCode.Algorithms.PlusOne;
 namespace LeetCode.Tests.Algorithms.PlusOne;
 
 [TestClass]
-public class PlusOneIncrementDigitArrayTests : PlusOneTestsBase
+public class PlusOneIncrementDigitArrayTests : PlusOneTestsBase<PlusOneIncrementDigitArray>
 {
-    protected override IPlusOne GetSolution()
-    {
-        return new PlusOneIncrementDigitArray();
-    }
 }

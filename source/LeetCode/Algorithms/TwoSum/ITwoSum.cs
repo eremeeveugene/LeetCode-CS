@@ -9,12 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
+namespace LeetCode.Algorithms.TwoSum;
 
-namespace LeetCode.Tests.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
-
-[TestClass]
-public class FindTheIndexOfTheFirstOccurrenceInStringWithKMPTests : FindTheIndexOfTheFirstOccurrenceInStringTestsBase<FindTheIndexOfTheFirstOccurrenceInStringWithKMP>
+/// <summary>
+///     https://leetcode.com/problems/two-sum/description/
+/// </summary>
+public interface ITwoSum
 {
-   
+    int[] TwoSum(int[] nums, int target);
 }

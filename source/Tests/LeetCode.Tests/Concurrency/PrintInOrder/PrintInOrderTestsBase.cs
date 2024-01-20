@@ -9,12 +9,49 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using LeetCode.Concurrency.PrintInOrder;
+
 namespace LeetCode.Tests.Concurrency.PrintInOrder;
 
-public abstract class PrintInOrderTestsBase
+public abstract class PrintInOrderTestsBase<T> where T : IPrintInOrder, new()
 {
-    protected const string First = "first";
-    protected const string Second = "second";
-    protected const string Third = "third";
-    protected const string FirstSecondThird = First + Second + Third;
+    private const string First = "first";
+    private const string Second = "second";
+    private const string Third = "third";
+
+    [TestMethod]
+    [DataRow(new[] { 1, 2, 3 })]
+    [DataRow(new[] { 2, 3, 1 })]
+    [DataRow(new[] { 3, 1, 2 })]
+    public async Task PrintInOrderThreadSleep_ExecuteTasksInVariableOrder_ProducesConsistentOrderedOutput(int[] nums)
+    {
+        // Arrange
+        const string expectedResult = First + Second + Third;
+        var actualResult = string.Empty;
+        var printInOrder = new T();
+
+        // Act
+        List<Task> tasks = [];
+
+        foreach (var num in nums)
+        {
+            switch (num)
+            {
+                case 1:
+                    tasks.Add(Task.Run(() => printInOrder.First(() => actualResult += First)));
+                    break;
+                case 2:
+                    tasks.Add(Task.Run(() => printInOrder.Second(() => actualResult += Second)));
+                    break;
+                case 3:
+                    tasks.Add(Task.Run(() => printInOrder.Third(() => actualResult += Third)));
+                    break;
+            }
+        }
+
+        await Task.WhenAll(tasks);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
+    }
 }

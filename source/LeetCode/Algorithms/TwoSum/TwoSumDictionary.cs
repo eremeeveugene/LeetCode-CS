@@ -11,10 +11,8 @@
 
 namespace LeetCode.Algorithms.TwoSum;
 
-/// <summary>
-///     https://leetcode.com/problems/two-sum/description/
-/// </summary>
-public static class TwoSumDictionary
+/// <inheritdoc />
+public class TwoSumDictionary : ITwoSum
 {
     /// <summary>
     ///     Time complexity - O (n)
@@ -22,7 +20,7 @@ public static class TwoSumDictionary
     /// <param name="nums"></param>
     /// <param name="target"></param>
     /// <returns></returns>
-    public static int[] GetResult(int[] nums, int target)
+    public int[] TwoSum(int[] nums, int target)
     {
         Dictionary<int, int> dictionary = new();
 
