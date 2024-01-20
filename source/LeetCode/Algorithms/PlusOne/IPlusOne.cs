@@ -9,15 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.PlusOne;
+namespace LeetCode.Algorithms.PlusOne;
 
-namespace LeetCode.Tests.Algorithms.PlusOne;
-
-[TestClass]
-public class PlusOneIncrementDigitArrayV2Tests : PlusOneTestsBase
+/// <summary>
+///     https://leetcode.com/problems/plus-one/
+/// </summary>
+public interface IPlusOne
 {
-    protected override IPlusOne GetSolution()
-    {
-        return new PlusOneIncrementDigitArrayV2();
-    }
+    int[] PlusOne(int[] digits);
 }
