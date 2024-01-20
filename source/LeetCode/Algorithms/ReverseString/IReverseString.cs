@@ -9,15 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.ReverseString;
+namespace LeetCode.Algorithms.ReverseString;
 
-namespace LeetCode.Tests.Algorithms.ReverseString;
-
-[TestClass]
-public class ReverseStringArrayReverseTests : ReverseStringTestsBase
+/// <summary>
+///     https://leetcode.com/problems/reverse-string/description/
+/// </summary>
+public interface IReverseString
 {
-    protected override IReverseString GetSolution()
-    {
-        return new ReverseStringArrayReverse();
-    }
+    void ReverseString(char[] s);
 }

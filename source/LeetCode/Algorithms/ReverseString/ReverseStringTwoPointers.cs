@@ -11,13 +11,14 @@
 
 namespace LeetCode.Algorithms.ReverseString;
 
-public static class ReverseStringTwoPointers
+/// <inheritdoc />
+public class ReverseStringTwoPointers : IReverseString
 {
     /// <summary>
     ///     Time complexity - O(n)
     /// </summary>
     /// <param name="s"></param>
-    public static void ReverseString(char[] s)
+    public void ReverseString(char[] s)
     {
         for (int i = 0, j = s.Length - 1; i < j; i++, j--)
         {
