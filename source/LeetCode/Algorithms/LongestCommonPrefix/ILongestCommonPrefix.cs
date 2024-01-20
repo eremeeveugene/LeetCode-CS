@@ -9,15 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.LongestCommonPrefix;
+namespace LeetCode.Algorithms.LongestCommonPrefix;
 
-namespace LeetCode.Tests.Algorithms.LongestCommonPrefix;
-
-[TestClass]
-public class LongestCommonPrefixBinarySearchTests : LongestCommonPrefixTestsBase
+/// <summary>
+///     https://leetcode.com/problems/longest-common-prefix/description/
+/// </summary>
+public interface ILongestCommonPrefix
 {
-    protected override ILongestCommonPrefix GetSolution()
-    {
-        return new LongestCommonPrefixBinarySearch();
-    }
+    string LongestCommonPrefix(string[] strs);
 }

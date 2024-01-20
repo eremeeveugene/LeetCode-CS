@@ -13,11 +13,24 @@ using LeetCode.Algorithms.LongestCommonPrefix;
 
 namespace LeetCode.Tests.Algorithms.LongestCommonPrefix;
 
-[TestClass]
-public class LongestCommonPrefixBinarySearchTests : LongestCommonPrefixTestsBase
+public abstract class LongestCommonPrefixTestsBase
 {
-    protected override ILongestCommonPrefix GetSolution()
+    [TestMethod]
+    [DataRow(new[] { "" }, "")]
+    [DataRow(new[] { "dog", "racecar", "car" }, "")]
+    [DataRow(new[] { "flower", "flow", "flight" }, "fl")]
+    [DataRow(new[] { "flower", "flower", "flower", "flower" }, "flower")]
+    public void LongestCommonPrefix_GivenStringsArray_ReturnsCorrectCommonPrefix(string[] strs, string expectedResult)
     {
-        return new LongestCommonPrefixBinarySearch();
+        // Arrange
+        var solution = GetSolution();
+
+        // Act
+        var actualResult = solution.LongestCommonPrefix(strs);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract ILongestCommonPrefix GetSolution();
 }
