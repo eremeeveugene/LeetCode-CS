@@ -14,24 +14,10 @@ using LeetCode.Algorithms.Sqrt;
 namespace LeetCode.Tests.Algorithms.Sqrt;
 
 [TestClass]
-public class SqrtBinarySearchTests
+public class SqrtBinarySearchTests : SqrtTestsBase
 {
-    [TestMethod]
-    [DataRow(0, 0)]
-    [DataRow(1, 1)]
-    [DataRow(2, 1)]
-    [DataRow(3, 1)]
-    [DataRow(4, 2)]
-    [DataRow(8, 2)]
-    [DataRow(10, 3)]
-    [DataRow(17, 4)]
-    [DataRow(2147395599, 46339)]
-    public void SqrtBinarySearch_GetResult_WithNumber_ReturnsSquareRoot(int x, int expectedResult)
+    protected override ISqrt GetSolution()
     {
-        // Act
-        var actualResult = SqrtBinarySearch.GetResult(x);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        return new SqrtBinarySearch();
     }
 }

@@ -11,41 +11,10 @@
 
 namespace LeetCode.Algorithms.Sqrt;
 
-/// <inheritdoc />
-public class SqrtBinarySearch : ISqrt
+/// <summary>
+///     https://leetcode.com/problems/sqrtx/description/
+/// </summary>
+public interface ISqrt
 {
-    /// <summary>
-    ///     Time complexity -  O (log n)
-    /// </summary>
-    /// <param name="x"></param>
-    /// <returns></returns>
-    public int MySqrt(int x)
-    {
-        if (x is 0 or 1)
-        {
-            return x;
-        }
-
-        var start = 1;
-        var end = x;
-        var ans = 0;
-
-        while (start <= end)
-        {
-            var mid = start + ((end - start) / 2);
-
-            if (mid <= x / mid)
-            {
-                start = mid + 1;
-
-                ans = mid;
-            }
-            else
-            {
-                end = mid - 1;
-            }
-        }
-
-        return ans;
-    }
+    int MySqrt(int x);
 }

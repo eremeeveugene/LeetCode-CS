@@ -9,43 +9,33 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.Sqrt;
+using LeetCode.Algorithms.Sqrt;
 
-/// <inheritdoc />
-public class SqrtBinarySearch : ISqrt
+namespace LeetCode.Tests.Algorithms.Sqrt;
+
+public abstract class SqrtTestsBase
 {
-    /// <summary>
-    ///     Time complexity -  O (log n)
-    /// </summary>
-    /// <param name="x"></param>
-    /// <returns></returns>
-    public int MySqrt(int x)
+    [TestMethod]
+    [DataRow(0, 0)]
+    [DataRow(1, 1)]
+    [DataRow(2, 1)]
+    [DataRow(3, 1)]
+    [DataRow(4, 2)]
+    [DataRow(8, 2)]
+    [DataRow(10, 3)]
+    [DataRow(17, 4)]
+    [DataRow(2147395599, 46339)]
+    public void MySqrt_WithInteger_CalculatesSquareRoot(int x, int expectedResult)
     {
-        if (x is 0 or 1)
-        {
-            return x;
-        }
+        // Arrange
+        var solution = GetSolution();
 
-        var start = 1;
-        var end = x;
-        var ans = 0;
+        // Act
+        var actualResult = solution.MySqrt(x);
 
-        while (start <= end)
-        {
-            var mid = start + ((end - start) / 2);
-
-            if (mid <= x / mid)
-            {
-                start = mid + 1;
-
-                ans = mid;
-            }
-            else
-            {
-                end = mid - 1;
-            }
-        }
-
-        return ans;
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract ISqrt GetSolution();
 }

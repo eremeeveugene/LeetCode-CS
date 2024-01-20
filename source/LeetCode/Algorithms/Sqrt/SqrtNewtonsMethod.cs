@@ -11,17 +11,15 @@
 
 namespace LeetCode.Algorithms.Sqrt;
 
-/// <summary>
-///     https://leetcode.com/problems/sqrtx/description/
-/// </summary>
-public static class SqrtNewtonsMethod
+/// <inheritdoc />
+public class SqrtNewtonsMethod : ISqrt
 {
     /// <summary>
     ///     Time complexity - O (1)
     /// </summary>
     /// <param name="x"></param>
     /// <returns></returns>
-    public static int GetResult(int x)
+    public int MySqrt(int x)
     {
         if (x is 0 or 1)
         {
