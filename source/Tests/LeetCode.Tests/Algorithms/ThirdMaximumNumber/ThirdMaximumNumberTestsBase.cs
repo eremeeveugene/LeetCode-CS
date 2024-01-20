@@ -13,11 +13,28 @@ using LeetCode.Algorithms.ThirdMaximumNumber;
 
 namespace LeetCode.Tests.Algorithms.ThirdMaximumNumber;
 
-[TestClass]
-public class ThirdMaximumNumberDistinctOrderTests : ThirdMaximumNumberTestsBase
+public abstract class ThirdMaximumNumberTestsBase
 {
-    protected override IThirdMaximumNumber GetSolution()
+    [TestMethod]
+    [DataRow(new[] { 3, 2, 1 }, 1)]
+    [DataRow(new[] { 1, 2 }, 2)]
+    [DataRow(new[] { 1, 1, 2 }, 2)]
+    [DataRow(new[] { 2, 2, 3, 1 }, 1)]
+    [DataRow(new[] { 2, 2, 3, 1 }, 1)]
+    [DataRow(new[] { 14 }, 14)]
+    [DataRow(new[] { 1, 2, int.MinValue }, int.MinValue)]
+    [DataRow(new[] { 1, int.MinValue, 2 }, int.MinValue)]
+    public void ThirdMax_WithIntArray_ReturnsThirdMaximumOrMaximum(int[] nums, int expectedResult)
     {
-        return new ThirdMaximumNumberDistinctOrder();
+        // Arrange
+        var solution = GetSolution();
+
+        // Act
+        var actualResult = solution.ThirdMax(nums);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract IThirdMaximumNumber GetSolution();
 }

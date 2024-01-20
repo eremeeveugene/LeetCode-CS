@@ -11,30 +11,15 @@
 
 namespace LeetCode.Algorithms.ThirdMaximumNumber;
 
-/// <inheritdoc />
-public class ThirdMaximumNumberDistinctOrder : IThirdMaximumNumber
+/// <summary>
+///     https://leetcode.com/problems/third-maximum-number/description/
+/// </summary>
+public interface IThirdMaximumNumber
 {
     /// <summary>
     ///     Time complexity - O (n log n)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>
-    public int ThirdMax(int[] nums)
-    {
-        var numsLength = nums.Length;
-
-        switch (numsLength)
-        {
-            case 1:
-                return nums[0];
-            case 2:
-                return Math.Max(nums[0], nums[1]);
-        }
-
-        var distinct = nums.Distinct().Order().ToArray();
-
-        var distinctLength = distinct.Length;
-
-        return distinctLength < 3 ? distinct.Last() : distinct[distinctLength - 3];
-    }
+    int ThirdMax(int[] nums);
 }

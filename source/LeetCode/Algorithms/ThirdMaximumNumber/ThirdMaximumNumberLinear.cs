@@ -11,17 +11,15 @@
 
 namespace LeetCode.Algorithms.ThirdMaximumNumber;
 
-/// <summary>
-///     https://leetcode.com/problems/third-maximum-number/description/
-/// </summary>
-public static class ThirdMaximumNumberLinear
+/// <inheritdoc />
+public class ThirdMaximumNumberLinear : IThirdMaximumNumber
 {
     /// <summary>
     ///     Time complexity - O (n)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>
-    public static int GetResult(int[] nums)
+    public int ThirdMax(int[] nums)
     {
         switch (nums.Length)
         {

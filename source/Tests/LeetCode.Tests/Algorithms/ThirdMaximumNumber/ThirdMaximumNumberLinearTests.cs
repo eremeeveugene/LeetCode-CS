@@ -14,24 +14,10 @@ using LeetCode.Algorithms.ThirdMaximumNumber;
 namespace LeetCode.Tests.Algorithms.ThirdMaximumNumber;
 
 [TestClass]
-public class ThirdMaximumNumberLinearTests
+public class ThirdMaximumNumberLinearTests : ThirdMaximumNumberTestsBase
 {
-    [TestMethod]
-    [DataRow(new[] { 3, 2, 1 }, 1)]
-    [DataRow(new[] { 1, 2 }, 2)]
-    [DataRow(new[] { 1, 1, 2 }, 2)]
-    [DataRow(new[] { 2, 2, 3, 1 }, 1)]
-    [DataRow(new[] { 2, 2, 3, 1 }, 1)]
-    [DataRow(new[] { 14 }, 14)]
-    [DataRow(new[] { 1, 2, int.MinValue }, int.MinValue)]
-    [DataRow(new[] { 1, int.MinValue, 2 }, int.MinValue)]
-    public void ThirdMaximumNumberLinear_GetResult_WithNumberArray_ReturnsThirdMaxOrMaxNumber(int[] nums,
-        int expectedResult)
+    protected override IThirdMaximumNumber GetSolution()
     {
-        // Act
-        var actualResult = ThirdMaximumNumberLinear.GetResult(nums);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        return new ThirdMaximumNumberLinear();
     }
 }
