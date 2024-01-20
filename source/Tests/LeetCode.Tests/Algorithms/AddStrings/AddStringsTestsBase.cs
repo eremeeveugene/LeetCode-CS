@@ -13,11 +13,24 @@ using LeetCode.Algorithms.AddStrings;
 
 namespace LeetCode.Tests.Algorithms.AddStrings;
 
-[TestClass]
-public class AddStringsIterativeTests : AddStringsTestsBase
+public abstract class AddStringsTestsBase
 {
-    protected override IAddStrings GetSolution()
+    [TestMethod]
+    [DataRow("0", "0", "0")]
+    [DataRow("11", "123", "134")]
+    [DataRow("456", "77", "533")]
+    [DataRow("3876620623801494171", "6529364523802684779", "10405985147604178950")]
+    public void AddStrings_WithNumericStrings_ReturnsSumAsString(string num1, string num2, string expectedResult)
     {
-        return new AddStringsIterative();
+        // Arrange
+        var solution = GetSolution();
+
+        // Act
+        var actualResult = solution.AddStrings(num1, num2);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract IAddStrings GetSolution();
 }

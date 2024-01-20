@@ -16,7 +16,7 @@ namespace LeetCode.Tests.Algorithms.AddBinary;
 [TestClass]
 public class AddBinaryIterativeTests : AddBinaryTestsBase
 {
-    protected override IAddBinary GetAddBinary()
+    protected override IAddBinary GetSolution()
     {
         return new AddBinaryIterative();
     }

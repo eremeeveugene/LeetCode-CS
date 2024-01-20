@@ -9,15 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.AddStrings;
+namespace LeetCode.Algorithms.AddStrings;
 
-namespace LeetCode.Tests.Algorithms.AddStrings;
-
-[TestClass]
-public class AddStringsIterativeTests : AddStringsTestsBase
+/// <summary>
+///     https://leetcode.com/problems/add-strings/description/
+/// </summary>
+public interface IAddStrings
 {
-    protected override IAddStrings GetSolution()
-    {
-        return new AddStringsIterative();
-    }
+    string AddStrings(string num1, string num2);
 }

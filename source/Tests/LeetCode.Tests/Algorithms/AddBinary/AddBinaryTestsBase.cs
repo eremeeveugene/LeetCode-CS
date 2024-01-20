@@ -21,14 +21,14 @@ public abstract class AddBinaryTestsBase
     public void AddBinary_WithTwoBinaryStrings_ReturnsCorrectSum(string a, string b, string expectedResult)
     {
         // Arrange
-        var addBinary = GetAddBinary();
+        var solution = GetSolution();
 
         // Act
-        var actualResult = addBinary.AddBinary(a, b);
+        var actualResult = solution.AddBinary(a, b);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
     }
 
-    protected abstract IAddBinary GetAddBinary();
+    protected abstract IAddBinary GetSolution();
 }
