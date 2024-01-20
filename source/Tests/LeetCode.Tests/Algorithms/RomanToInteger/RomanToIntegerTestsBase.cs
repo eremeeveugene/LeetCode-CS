@@ -10,15 +10,26 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RomanToInteger;
-using LeetCode.Algorithms.RomanToInteger.Iterative;
 
 namespace LeetCode.Tests.Algorithms.RomanToInteger;
 
-[TestClass]
-public class RomanToIntegerIterativeTests : RomanToIntegerTestsBase
+public abstract class RomanToIntegerTestsBase
 {
-    protected override IRomanToInteger GetSolution()
+    [TestMethod]
+    [DataRow("III", 3)]
+    [DataRow("LVIII", 58)]
+    [DataRow("MCMXCIV", 1994)]
+    public void RomanToInt_WithRomanString_ConvertsToInteger(string romanString, int expectedResult)
     {
-        return new RomanToIntegerIterative();
+        // Arrange
+        var solution = GetSolution();
+
+        // Act
+        var actualResult = solution.RomanToInt(romanString);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract IRomanToInteger GetSolution();
 }

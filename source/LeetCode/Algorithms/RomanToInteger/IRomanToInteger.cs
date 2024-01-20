@@ -9,16 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.RomanToInteger;
-using LeetCode.Algorithms.RomanToInteger.Iterative;
+namespace LeetCode.Algorithms.RomanToInteger;
 
-namespace LeetCode.Tests.Algorithms.RomanToInteger;
-
-[TestClass]
-public class RomanToIntegerIterativeTests : RomanToIntegerTestsBase
+/// <summary>
+///     https://leetcode.com/problems/roman-to-integer/
+/// </summary>
+public interface IRomanToInteger
 {
-    protected override IRomanToInteger GetSolution()
-    {
-        return new RomanToIntegerIterative();
-    }
+    int RomanToInt(string romanString);
 }
