@@ -9,15 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.MissingNumber;
+namespace LeetCode.Algorithms.MissingNumber;
 
-namespace LeetCode.Tests.Algorithms.MissingNumber;
-
-[TestClass]
-public class MissingNumberSumFormulaTests : MissingNumberTestsBase
+/// <summary>
+///     https://leetcode.com/problems/missing-number/description/
+/// </summary>
+public interface IMissingNumber
 {
-    protected override IMissingNumber GetSolution()
-    {
-        return new MissingNumberSumFormula();
-    }
+    int MissingNumber(int[] nums);
 }

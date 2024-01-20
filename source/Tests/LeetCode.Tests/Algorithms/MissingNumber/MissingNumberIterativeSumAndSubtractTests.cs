@@ -14,18 +14,10 @@ using LeetCode.Algorithms.MissingNumber;
 namespace LeetCode.Tests.Algorithms.MissingNumber;
 
 [TestClass]
-public class MissingNumberIterativeSumAndSubtractTests
+public class MissingNumberIterativeSumAndSubtractTests : MissingNumberTestsBase
 {
-    [TestMethod]
-    [DataRow(new[] { 3, 0, 1 }, 2)]
-    [DataRow(new[] { 0, 1 }, 2)]
-    [DataRow(new[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 }, 8)]
-    public void MissingNumberIterativeSumAndSubtract_GetResult_WithNumberArray_ReturnsMissingNumber(int[] nums, int expectedResult)
+    protected override IMissingNumber GetSolution()
     {
-        // Act
-        var actualResult = MissingNumberIterativeSumAndSubtract.GetResult(nums);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        return new MissingNumberIterativeSumAndSubtract();
     }
 }

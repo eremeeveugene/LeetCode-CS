@@ -11,10 +11,8 @@
 
 namespace LeetCode.Algorithms.MissingNumber;
 
-/// <summary>
-///     https://leetcode.com/problems/missing-number/description/
-/// </summary>
-public static class MissingNumberSumFormula
+/// <inheritdoc />
+public static class MissingNumberSumFormula : IMissingNumber
 {
     /// <summary>
     ///     Time complexity - O(n)
