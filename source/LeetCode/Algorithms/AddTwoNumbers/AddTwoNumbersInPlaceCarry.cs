@@ -13,6 +13,7 @@ using LeetCode.Core.Models;
 
 namespace LeetCode.Algorithms.AddTwoNumbers;
 
+/// <inheritdoc />
 public class AddTwoNumbersInPlaceCarry : IAddTwoNumbers
 {
     /// <summary>
