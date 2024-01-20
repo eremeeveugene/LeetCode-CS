@@ -9,15 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.CountingBits;
+namespace LeetCode.Algorithms.CountingBits;
 
-namespace LeetCode.Tests.Algorithms.CountingBits;
-
-[TestClass]
-public class CountingBitsIterativeTests : CountingBitsTestsBase
+/// <summary>
+///     https://leetcode.com/problems/counting-bits/description/
+/// </summary>
+public interface ICountingBits
 {
-    protected override ICountingBits GetSolution()
-    {
-        return new CountingBitsIterative();
-    }
+    int[] CountBits(int n);
 }

@@ -11,17 +11,15 @@
 
 namespace LeetCode.Algorithms.CountingBits;
 
-/// <summary>
-///     https://leetcode.com/problems/counting-bits/
-/// </summary>
-public static class CountingBitsDynamicProgramming
+/// <inheritdoc />
+public class CountingBitsDynamicProgramming : ICountingBits
 {
     /// <summary>
     ///     Time complexity - O (n)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>
-    public static int[] GetResult(int n)
+    public int[] CountBits(int n)
     {
         var result = new int[n + 1];
 

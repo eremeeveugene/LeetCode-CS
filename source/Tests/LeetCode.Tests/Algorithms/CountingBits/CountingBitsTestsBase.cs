@@ -13,11 +13,22 @@ using LeetCode.Algorithms.CountingBits;
 
 namespace LeetCode.Tests.Algorithms.CountingBits;
 
-[TestClass]
-public class CountingBitsIterativeTests : CountingBitsTestsBase
+public abstract class CountingBitsTestsBase
 {
-    protected override ICountingBits GetSolution()
+    [TestMethod]
+    [DataRow(2, new[] { 0, 1, 1 })]
+    [DataRow(5, new[] { 0, 1, 1, 2, 1, 2 })]
+    public void CountBits_WithNumber_ReturnsBitCountsUpToN(int n, int[] expectedResult)
     {
-        return new CountingBitsIterative();
+        // Arrange
+        var solution = GetSolution();
+
+        // Act
+        var actualResult = solution.CountBits(n);
+
+        // Assert
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract ICountingBits GetSolution();
 }

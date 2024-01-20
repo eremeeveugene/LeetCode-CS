@@ -14,17 +14,10 @@ using LeetCode.Algorithms.CountingBits;
 namespace LeetCode.Tests.Algorithms.CountingBits;
 
 [TestClass]
-public class CountingBitsDynamicProgrammingTests
+public class CountingBitsDynamicProgrammingTests : CountingBitsTestsBase
 {
-    [TestMethod]
-    [DataRow(2, new[] { 0, 1, 1 })]
-    [DataRow(5, new[] { 0, 1, 1, 2, 1, 2 })]
-    public void CountingBitsDynamicProgramming_GetResult_WithNumber_ReturnsBitCountArray(int n, int[] expectedResult)
+    protected override ICountingBits GetSolution()
     {
-        // Act
-        var actualResult = CountingBitsDynamicProgramming.GetResult(n);
-
-        // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        return new CountingBitsDynamicProgramming();
     }
 }
