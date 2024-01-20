@@ -9,29 +9,26 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.ReverseWordsInString3;
+using LeetCode.Algorithms.ReverseWordsInString3;
 
-/// <inheritdoc />
-public class ReverseWordsInString3WithCharArray : IReverseWordsInString3
+namespace LeetCode.Tests.Algorithms.ReverseWordsInString3;
+
+public abstract class ReverseWordsInString3TestsBase
 {
-    /// <summary>
-    ///     Time complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
-    public string ReverseWords(string s)
+    [TestMethod]
+    [DataRow("Let's take LeetCode contest", "s'teL ekat edoCteeL tsetnoc")]
+    [DataRow("Mr Ding", "rM gniD")]
+    public void ReverseWords_WithString_ReversesEachWord(string s, string expectedResult)
     {
-        var words = s.Split(' ');
+        // Arrange
+        var solution = GetSolution();
 
-        for (var i = 0; i < words.Length; i++)
-        {
-            var charArray = words[i].ToCharArray();
+        // Act
+        var actualResult = solution.ReverseWords(s);
 
-            Array.Reverse(charArray);
-
-            words[i] = new string(charArray);
-        }
-
-        return string.Join(' ', words);
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract IReverseWordsInString3 GetSolution();
 }

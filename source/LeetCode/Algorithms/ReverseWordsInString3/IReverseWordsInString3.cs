@@ -11,27 +11,10 @@
 
 namespace LeetCode.Algorithms.ReverseWordsInString3;
 
-/// <inheritdoc />
-public class ReverseWordsInString3WithCharArray : IReverseWordsInString3
+/// <summary>
+///     https://leetcode.com/problems/reverse-words-in-a-string-iii/description/
+/// </summary>
+public interface IReverseWordsInString3
 {
-    /// <summary>
-    ///     Time complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
-    public string ReverseWords(string s)
-    {
-        var words = s.Split(' ');
-
-        for (var i = 0; i < words.Length; i++)
-        {
-            var charArray = words[i].ToCharArray();
-
-            Array.Reverse(charArray);
-
-            words[i] = new string(charArray);
-        }
-
-        return string.Join(' ', words);
-    }
+    string ReverseWords(string s);
 }
