@@ -9,31 +9,28 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.NeitherMinimumNorMaximum;
+using LeetCode.Algorithms.NeitherMinimumNorMaximum;
 
-/// <inheritdoc />
-public class NeitherMinimumNorMaximumUsingMinMaxComparison : INeitherMinimumNorMaximum
+namespace LeetCode.Tests.Algorithms.NeitherMinimumNorMaximum;
+
+public abstract class NeitherMinimumNorMaximumTestsBase
 {
-    /// <summary>
-    ///     Time complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
-    public int FindNonMinOrMax(int[] nums)
+    [TestMethod]
+    [DataRow(new[] { 3, 2, 1, 4 }, 2)]
+    [DataRow(new[] { 1, 2 }, -1)]
+    [DataRow(new[] { 2, 1, 3 }, 2)]
+    [DataRow(new[] { 3, 30, 24 }, 24)]
+    public void FindNonMinOrMax_WithIntArray_ReturnsNonExtremeValue(int[] nums, int expectedResult)
     {
-        if (nums.Length < 3)
-        {
-            return -1;
-        }
+        // Arrange
+        var solution = GetSolution();
 
-        var min = Math.Min(nums[0], nums[1]);
-        var max = Math.Max(nums[0], nums[1]);
+        // Act
+        var actualResult = solution.FindNonMinOrMax(nums);
 
-        if (nums[2] > min && nums[2] < max)
-        {
-            return nums[2];
-        }
-
-        return nums[2] < min ? min : max;
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract INeitherMinimumNorMaximum GetSolution();
 }
