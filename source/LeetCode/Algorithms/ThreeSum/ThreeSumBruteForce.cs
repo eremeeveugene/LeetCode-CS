@@ -13,19 +13,17 @@ using LeetCode.Core.EqualityComparers;
 
 namespace LeetCode.Algorithms.ThreeSum;
 
-/// <summary>
-///     https://leetcode.com/problems/3sum/
-/// </summary>
-public static class ThreeSumBruteForce
+/// <inheritdoc />
+public class ThreeSumBruteForce : IThreeSum
 {
     /// <summary>
     ///     Time complexity - O (n^3)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>
-    public static IList<IList<int>> GetResult(int[] nums)
+    public IList<IList<int>> ThreeSum(int[] nums)
     {
-        List<IList<int>> arraysWithDuplicates = new();
+        List<IList<int>> arraysWithDuplicates = [];
 
         for (var i = 0; i < nums.Length - 2; i++)
         {

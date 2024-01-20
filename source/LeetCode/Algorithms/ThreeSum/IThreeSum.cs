@@ -9,15 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.ThreeSum;
+namespace LeetCode.Algorithms.ThreeSum;
 
-namespace LeetCode.Tests.Algorithms.ThreeSum;
-
-[TestClass]
-public class ThreeSumBruteForceTests : ThreeSumTestsBase
+/// <summary>
+///     https://leetcode.com/problems/3sum/
+/// </summary>
+public interface IThreeSum
 {
-    protected override IThreeSum GetSolution()
-    {
-        return new ThreeSumBruteForce();
-    }
+    IList<IList<int>> ThreeSum(int[] nums);
 }

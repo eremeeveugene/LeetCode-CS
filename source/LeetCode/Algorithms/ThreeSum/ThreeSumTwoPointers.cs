@@ -11,17 +11,15 @@
 
 namespace LeetCode.Algorithms.ThreeSum;
 
-/// <summary>
-///     https://leetcode.com/problems/3sum/
-/// </summary>
-public static class ThreeSumTwoPointers
+/// <inheritdoc />
+public class ThreeSumTwoPointers : IThreeSum
 {
     /// <summary>
     ///     Time complexity - O (n^2)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>
-    public static IList<IList<int>> GetResult(int[] nums)
+    public IList<IList<int>> ThreeSum(int[] nums)
     {
         if (nums.Length < 3)
         {
@@ -30,7 +28,7 @@ public static class ThreeSumTwoPointers
 
         Array.Sort(nums);
 
-        List<IList<int>> result = new();
+        List<IList<int>> result = [];
 
         for (var i = 0; i < nums.Length - 2; i++)
         {
