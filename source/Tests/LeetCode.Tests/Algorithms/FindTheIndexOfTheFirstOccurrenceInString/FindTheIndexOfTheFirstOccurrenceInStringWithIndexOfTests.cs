@@ -14,18 +14,11 @@ using LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 namespace LeetCode.Tests.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 
 [TestClass]
-public class FindTheIndexOfTheFirstOccurrenceInStringWithIndexOfTests
+public class
+    FindTheIndexOfTheFirstOccurrenceInStringWithIndexOfTests : FindTheIndexOfTheFirstOccurrenceInStringTestsBase
 {
-    [TestMethod]
-    [DataRow("sadbutsad", "sad", 0)]
-    [DataRow("leetcode", "leeto", -1)]
-    public void StrStr_WithHaystackAndNeedle_ReturnsCorrectIndexOrMinusOne(string haystack, string needle,
-        int expectedResult)
+    protected override IFindTheIndexOfTheFirstOccurrenceInString GetSolution()
     {
-        // Act
-        var actualResult = FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf.StrStr(haystack, needle);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        return new FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf();
     }
 }

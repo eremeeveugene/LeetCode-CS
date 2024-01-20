@@ -11,10 +11,8 @@
 
 namespace LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 
-/// <summary>
-///     https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/
-/// </summary>
-public static class FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf
+/// <inheritdoc />
+public class FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf : IFindTheIndexOfTheFirstOccurrenceInString
 {
     /// <summary>
     ///     Time complexity - O(n*m)
@@ -22,7 +20,7 @@ public static class FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf
     /// <param name="haystack"></param>
     /// <param name="needle"></param>
     /// <returns></returns>
-    public static int StrStr(string haystack, string needle)
+    public int StrStr(string haystack, string needle)
     {
         return haystack.IndexOf(needle, StringComparison.OrdinalIgnoreCase);
     }

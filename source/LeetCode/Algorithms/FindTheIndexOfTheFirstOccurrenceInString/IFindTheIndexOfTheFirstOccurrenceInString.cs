@@ -9,15 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
+namespace LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 
-namespace LeetCode.Tests.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
-
-[TestClass]
-public class FindTheIndexOfTheFirstOccurrenceInStringWithKMPTests : FindTheIndexOfTheFirstOccurrenceInStringTestsBase
+/// <summary>
+///     https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/
+/// </summary>
+public interface IFindTheIndexOfTheFirstOccurrenceInString
 {
-    protected override IFindTheIndexOfTheFirstOccurrenceInString GetSolution()
-    {
-        return new FindTheIndexOfTheFirstOccurrenceInStringWithKMP();
-    }
+    int StrStr(string haystack, string needle);
 }

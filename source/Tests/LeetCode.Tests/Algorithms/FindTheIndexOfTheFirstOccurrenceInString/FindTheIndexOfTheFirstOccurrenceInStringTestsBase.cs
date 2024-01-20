@@ -13,11 +13,23 @@ using LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 
 namespace LeetCode.Tests.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 
-[TestClass]
-public class FindTheIndexOfTheFirstOccurrenceInStringWithKMPTests : FindTheIndexOfTheFirstOccurrenceInStringTestsBase
+public abstract class FindTheIndexOfTheFirstOccurrenceInStringTestsBase
 {
-    protected override IFindTheIndexOfTheFirstOccurrenceInString GetSolution()
+    [TestMethod]
+    [DataRow("sadbutsad", "sad", 0)]
+    [DataRow("leetcode", "leeto", -1)]
+    public void StrStr_WithHaystackAndNeedle_ReturnsCorrectIndexOrMinusOne(string haystack, string needle,
+        int expectedResult)
     {
-        return new FindTheIndexOfTheFirstOccurrenceInStringWithKMP();
+        // Arrange
+        var solution = GetSolution();
+
+        // Act
+        var actualResult = solution.StrStr(haystack, needle);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract IFindTheIndexOfTheFirstOccurrenceInString GetSolution();
 }
