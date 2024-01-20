@@ -21,8 +21,8 @@ public abstract class BinaryTreeInorderTraversalTestsBase
     [DataRow("[1,null,2,3]", "[1,3,2]")]
     [DataRow("[1]", "[1]")]
     [DataRow(JsonHelper.EmptyArray, "[0]")]
-    public void BinaryTreeInorderTraversalRecursive_GetResult_WithJsonInputTrees_ReturnsCorrectInorderTraversalList(
-        string inputArrayJson, string expectedArrayJson)
+    public void InorderTraversal_WithBinaryTreeFromJson_ReturnsInorderTraversalList(string inputArrayJson,
+        string expectedArrayJson)
     {
         // Arrange
         var solution = GetSolution();
