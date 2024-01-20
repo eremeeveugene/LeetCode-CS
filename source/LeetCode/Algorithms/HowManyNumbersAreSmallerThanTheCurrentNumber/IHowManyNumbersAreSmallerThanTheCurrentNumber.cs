@@ -9,16 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
+namespace LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 
-namespace LeetCode.Tests.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
-
-[TestClass]
-public class
-    HowManyNumbersAreSmallerThanTheCurrentNumberBruteForceTests : HowManyNumbersAreSmallerThanTheCurrentNumberTestsBase
+/// <summary>
+///     https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description/
+/// </summary>
+public interface IHowManyNumbersAreSmallerThanTheCurrentNumber
 {
-    protected override IHowManyNumbersAreSmallerThanTheCurrentNumber GetSolution()
-    {
-        return new HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce();
-    }
+    int[] SmallerNumbersThanCurrent(int[] nums);
 }
