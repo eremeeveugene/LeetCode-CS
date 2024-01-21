@@ -1,23 +1,23 @@
 Summary
-  Generated on: 01/20/2024 - 17:30:03
-  Coverage date: 01/20/2024 - 17:29:44 - 01/20/2024 - 17:29:47
+  Generated on: 01/21/2024 - 08:11:17
+  Coverage date: 01/21/2024 - 08:10:57 - 01/21/2024 - 08:11:00
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 66
-  Files: 66
-  Line coverage: 95.3%
-  Covered lines: 1266
-  Uncovered lines: 62
-  Coverable lines: 1328
-  Total lines: 3423
-  Branch coverage: 92.8% (453 of 488)
-  Covered branches: 453
-  Total branches: 488
-  Method coverage: 94.6% (124 of 131)
-  Covered methods: 124
-  Total methods: 131
+  Classes: 67
+  Files: 67
+  Line coverage: 95.4%
+  Covered lines: 1243
+  Uncovered lines: 59
+  Coverable lines: 1302
+  Total lines: 3299
+  Branch coverage: 92.7% (451 of 486)
+  Covered branches: 451
+  Total branches: 486
+  Method coverage: 94.6% (125 of 132)
+  Covered methods: 125
+  Total methods: 132
 
-LeetCode                                                                                                                                95.8%
+LeetCode                                                                                                                                95.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddStrings.AddStringsIterative                                                                                   100.0%
@@ -58,10 +58,10 @@ LeetCode                                                                        
   LeetCode.Algorithms.ReverseString2.ReverseString2WithStringBuilder                                                                   100.0%
   LeetCode.Algorithms.ReverseWordsInString3.ReverseWordsInString3WithCharArray                                                         100.0%
   LeetCode.Algorithms.ReverseWordsInString3.ReverseWordsInString3WithStringBuilder                                                     100.0%
-  LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral                                                                             90.0%
-  LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol                                                                              44.4%
+  LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral                                                                             88.4%
+  LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol                                                                              37.5%
   LeetCode.Algorithms.RomanToInteger.Iterative.RomanToIntegerIterative                                                                 100.0%
-  LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral                                                                  88.8%
+  LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral                                                                  87.5%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionBinarySearch                                                            100.0%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionIterative                                                               100.0%
   LeetCode.Algorithms.Sqrt.SqrtBinarySearch                                                                                            100.0%
@@ -73,6 +73,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.TwoSum.TwoSumBruteForce                                                                                           91.6%
   LeetCode.Algorithms.TwoSum.TwoSumDictionary                                                                                           93.3%
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                          100.0%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLockFactory                                                   100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                         100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                       100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                100.0%
@@ -80,9 +81,9 @@ LeetCode                                                                        
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                   100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                            100.0%
 
-LeetCode.Core                                                                                                                           87.9%
+LeetCode.Core                                                                                                                           90.4%
   LeetCode.Core.EqualityComparers.OrderInsensitiveIntArrayEqualityComparer                                                              69.2%
   LeetCode.Core.Extensions.ArrayExtensions                                                                                             100.0%
   LeetCode.Core.Helpers.JsonConvertHelper<T>                                                                                           100.0%
   LeetCode.Core.Models.ListNode                                                                                                        100.0%
-  LeetCode.Core.Models.TreeNode                                                                                                         86.3%
+  LeetCode.Core.Models.TreeNode                                                                                                         91.6%
