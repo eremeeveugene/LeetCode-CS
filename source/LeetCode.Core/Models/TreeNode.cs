@@ -14,36 +14,23 @@ namespace LeetCode.Core.Models;
 /// <summary>
 ///     Definition for a binary tree node
 /// </summary>
-public class TreeNode
+public class TreeNode(int val = 0, TreeNode? left = null, TreeNode? right = null)
 {
     // ReSharper disable once InconsistentNaming
-    public TreeNode? left;
+    public TreeNode? left = left;
 
     // ReSharper disable once InconsistentNaming
-    public TreeNode? right;
+    public TreeNode? right = right;
 
     // ReSharper disable once InconsistentNaming
-    public int val;
+    public int val = val;
 
-    public TreeNode(int val = 0, TreeNode? left = null, TreeNode? right = null)
+    public TreeNode(int? val = null, TreeNode? left = null, TreeNode? right = null) : this(val ?? 0, left, right)
     {
-        this.val = val;
-        this.left = left;
-        this.right = right;
     }
 
-    public TreeNode(int? val = null, TreeNode? left = null, TreeNode? right = null)
+    public TreeNode() : this(0)
     {
-        this.val = val ?? 0;
-        this.left = left;
-        this.right = right;
-    }
-
-    public TreeNode()
-    {
-        val = 0;
-        left = null;
-        right = null;
     }
 
     public static TreeNode BuildTree(IList<int?> nums)

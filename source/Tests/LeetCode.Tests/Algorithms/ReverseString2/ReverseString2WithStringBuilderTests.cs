@@ -14,18 +14,6 @@ using LeetCode.Algorithms.ReverseString2;
 namespace LeetCode.Tests.Algorithms.ReverseString2;
 
 [TestClass]
-public class ReverseString2WithStringBuilderTests
+public class ReverseString2WithStringBuilderTests : ReverseString2TestsBase<ReverseString2WithStringBuilder>
 {
-    [TestMethod]
-    [DataRow("abcdefg", 2, "bacdfeg")]
-    [DataRow("abcd", 2, "bacd")]
-    public void ReverseString2WithStringBuilder_ReverseStr_WithStringAndInterval_ReturnsPartiallyReversedString(
-        string s, int k, string expectedResult)
-    {
-        // Act
-        var actualResult = ReverseString2WithStringBuilder.ReverseStr(s, k);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
-    }
 }

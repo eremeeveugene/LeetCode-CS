@@ -14,18 +14,6 @@ using LeetCode.Algorithms.ReverseString;
 namespace LeetCode.Tests.Algorithms.ReverseString;
 
 [TestClass]
-public class ReverseStringTwoPointersTests
+public class ReverseStringTwoPointersTests : ReverseStringTestsBase<ReverseStringTwoPointers>
 {
-    [TestMethod]
-    [DataRow(new[] { 'h', 'e', 'l', 'l', 'o' }, new[] { 'o', 'l', 'l', 'e', 'h' })]
-    [DataRow(new[] { 'H', 'a', 'n', 'n', 'a', 'h' }, new[] { 'h', 'a', 'n', 'n', 'a', 'H' })]
-    public void ReverseStringTwoPointers_ReverseString_WithCharArray_ReturnsReversedArray(char[] s,
-        char[] expectedResult)
-    {
-        // Act
-        ReverseStringTwoPointers.ReverseString(s);
-
-        // Assert
-        CollectionAssert.AreEqual(expectedResult, s);
-    }
 }

@@ -11,7 +11,8 @@
 
 namespace LeetCode.Algorithms.LongestCommonPrefix;
 
-public class LongestCommonPrefixDivideAndConquer
+/// <inheritdoc />
+public class LongestCommonPrefixDivideAndConquer : ILongestCommonPrefix
 {
     /// <summary>
     ///     Time complexity - O(S log n), where S is the sum of all characters in all strings
@@ -41,7 +42,7 @@ public class LongestCommonPrefixDivideAndConquer
         return string.Empty;
     }
 
-    private string GetLongestPrefix(string str1, string str2)
+    private static string GetLongestPrefix(string str1, string str2)
     {
         var minLength = Math.Min(str1.Length, str2.Length);
         var prefixLength = 0;

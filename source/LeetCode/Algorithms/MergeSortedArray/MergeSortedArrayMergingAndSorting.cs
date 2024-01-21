@@ -11,10 +11,8 @@
 
 namespace LeetCode.Algorithms.MergeSortedArray;
 
-/// <summary>
-///     https://leetcode.com/problems/merge-sorted-array/description/
-/// </summary>
-public class MergeSortedArrayMergingAndSorting
+/// <inheritdoc />
+public class MergeSortedArrayMergingAndSorting : IMergeSortedArray
 {
     /// <summary>
     ///     Time complexity - O((m+n)log(m+n))
@@ -23,7 +21,7 @@ public class MergeSortedArrayMergingAndSorting
     /// <param name="m"></param>
     /// <param name="nums2"></param>
     /// <param name="n"></param>
-    public static void Merge(int[] nums1, int m, int[] nums2, int n)
+    public void Merge(int[] nums1, int m, int[] nums2, int n)
     {
         if (m == 0)
         {

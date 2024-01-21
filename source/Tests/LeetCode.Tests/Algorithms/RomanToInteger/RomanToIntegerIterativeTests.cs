@@ -14,19 +14,6 @@ using LeetCode.Algorithms.RomanToInteger.Iterative;
 namespace LeetCode.Tests.Algorithms.RomanToInteger;
 
 [TestClass]
-public class RomanToIntegerIterativeTests
+public class RomanToIntegerIterativeTests : RomanToIntegerTestsBase<RomanToIntegerIterative>
 {
-    [TestMethod]
-    [DataRow("III", 3)]
-    [DataRow("LVIII", 58)]
-    [DataRow("MCMXCIV", 1994)]
-    public void RomanToIntegerIterative_GetResult_WithRomanString_ReturnsEquivalentInteger(string romanString,
-        int expectedResult)
-    {
-        // Act
-        var actualResult = RomanToIntegerIterative.GetResult(romanString);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
-    }
 }

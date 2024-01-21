@@ -11,18 +11,12 @@
 
 namespace LeetCode.Algorithms.RomanToInteger.Iterative;
 
-internal class RomanNumeral
+internal class RomanNumeral(RomanSymbol symbol, int value)
 {
     private static List<RomanNumeral>? _romanNumerals;
 
-    public RomanNumeral(RomanSymbol symbol, int value)
-    {
-        Symbol = symbol;
-        Value = value;
-    }
-
-    public RomanSymbol Symbol { get; }
-    public int Value { get; }
+    public RomanSymbol Symbol { get; } = symbol;
+    public int Value { get; } = value;
 
     public static RomanNumeral I => new(RomanSymbol.I, 1);
     public static RomanNumeral V => new(RomanSymbol.V, 5);

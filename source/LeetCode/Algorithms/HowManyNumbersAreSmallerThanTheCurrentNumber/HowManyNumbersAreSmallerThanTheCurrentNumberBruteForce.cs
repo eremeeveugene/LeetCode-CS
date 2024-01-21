@@ -11,17 +11,15 @@
 
 namespace LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 
-/// <summary>
-///     https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description/
-/// </summary>
-public static class HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce
+/// <inheritdoc />
+public class HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce : IHowManyNumbersAreSmallerThanTheCurrentNumber
 {
     /// <summary>
     ///     Time complexity - O(n^2)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>
-    public static int[] GetResult(int[] nums)
+    public int[] SmallerNumbersThanCurrent(int[] nums)
     {
         var result = new int[nums.Length];
 

@@ -13,10 +13,8 @@ using LeetCode.Core.Models;
 
 namespace LeetCode.Algorithms.MergeTwoSortedLists;
 
-/// <summary>
-///     https://leetcode.com/problems/merge-two-sorted-lists/
-/// </summary>
-public static class MergeTwoSortedListsLinearV2
+/// <inheritdoc />
+public class MergeTwoSortedListsLinearV2 : IMergeTwoSortedLists
 {
     /// <summary>
     ///     Time complexity - O (n + m)
@@ -24,7 +22,7 @@ public static class MergeTwoSortedListsLinearV2
     /// <param name="list1"></param>
     /// <param name="list2"></param>
     /// <returns></returns>
-    public static ListNode? GetResult(ListNode? list1, ListNode? list2)
+    public ListNode? MergeTwoLists(ListNode? list1, ListNode? list2)
     {
         if (list1 == null)
         {

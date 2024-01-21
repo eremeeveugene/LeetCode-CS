@@ -11,10 +11,8 @@
 
 namespace LeetCode.Concurrency.PrintInOrder;
 
-/// <summary>
-///     https://leetcode.com/problems/print-in-order/description/
-/// </summary>
-public class PrintInOrderTaskCompletionSource
+/// <inheritdoc />
+public class PrintInOrderTaskCompletionSource : IPrintInOrder
 {
     private readonly TaskCompletionSource _firstPrint = new();
     private readonly TaskCompletionSource _secondPrint = new();

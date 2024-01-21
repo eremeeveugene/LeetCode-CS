@@ -14,24 +14,6 @@ using LeetCode.Algorithms.ThirdMaximumNumber;
 namespace LeetCode.Tests.Algorithms.ThirdMaximumNumber;
 
 [TestClass]
-public class ThirdMaximumNumberDistinctOrderTests
+public class ThirdMaximumNumberDistinctOrderTests : ThirdMaximumNumberTestsBase<ThirdMaximumNumberDistinctOrder>
 {
-    [TestMethod]
-    [DataRow(new[] { 3, 2, 1 }, 1)]
-    [DataRow(new[] { 1, 2 }, 2)]
-    [DataRow(new[] { 1, 1, 2 }, 2)]
-    [DataRow(new[] { 2, 2, 3, 1 }, 1)]
-    [DataRow(new[] { 2, 2, 3, 1 }, 1)]
-    [DataRow(new[] { 14 }, 14)]
-    [DataRow(new[] { 1, 2, int.MinValue }, int.MinValue)]
-    [DataRow(new[] { 1, int.MinValue, 2 }, int.MinValue)]
-    public void ThirdMaximumNumberDistinctOrder_GetResult_WithNumberArray_ReturnsThirdMaxOrMaxNumber(int[] nums,
-        int expectedResult)
-    {
-        // Act
-        var actualResult = ThirdMaximumNumberDistinctOrder.GetResult(nums);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
-    }
 }

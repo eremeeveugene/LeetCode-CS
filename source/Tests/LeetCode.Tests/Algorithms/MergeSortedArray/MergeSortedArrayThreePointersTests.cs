@@ -14,20 +14,6 @@ using LeetCode.Algorithms.MergeSortedArray;
 namespace LeetCode.Tests.Algorithms.MergeSortedArray;
 
 [TestClass]
-public class MergeSortedArrayThreePointersTests
+public class MergeSortedArrayThreePointersTests : MergeSortedArrayTestsBase<MergeSortedArrayThreePointers>
 {
-    [TestMethod]
-    [DataRow(new[] { 1, 2, 3, 0, 0, 0 }, 3, new[] { 2, 5, 6 }, 3, new[] { 1, 2, 2, 3, 5, 6 })]
-    [DataRow(new[] { 1 }, 1, new int[] { }, 0, new[] { 1 })]
-    [DataRow(new[] { 0 }, 0, new[] { 1 }, 1, new[] { 1 })]
-    [DataRow(new[] { 0, 0, 0, 0, 0 }, 0, new[] { 1, 2, 3, 4, 5 }, 5, new[] { 1, 2, 3, 4, 5 })]
-    public void MergeSortedArrayThreePointers_Merge_WithTwoSortedArrays_ReturnsMergedSortedArray(int[] nums1, int m,
-        int[] nums2, int n, int[] expectedResult)
-    {
-        // Act
-        MergeSortedArrayThreePointers.Merge(nums1, m, nums2, n);
-
-        // Assert
-        CollectionAssert.AreEqual(expectedResult, nums1);
-    }
 }

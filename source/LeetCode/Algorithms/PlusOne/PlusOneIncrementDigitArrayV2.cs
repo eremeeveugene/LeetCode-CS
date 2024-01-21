@@ -11,17 +11,15 @@
 
 namespace LeetCode.Algorithms.PlusOne;
 
-/// <summary>
-///     https://leetcode.com/problems/plus-one/
-/// </summary>
-public static class PlusOneIncrementDigitArrayV2
+/// <inheritdoc />
+public class PlusOneIncrementDigitArrayV2 : IPlusOne
 {
     /// <summary>
     ///     Time complexity - O (n)
     /// </summary>
     /// <param name="digits"></param>
     /// <returns></returns>
-    public static int[] GetResult(int[] digits)
+    public int[] PlusOne(int[] digits)
     {
         for (var i = digits.Length - 1; i >= 0; i--)
         {
@@ -35,7 +33,9 @@ public static class PlusOneIncrementDigitArrayV2
         }
 
         var newDigits = new int[digits.Length + 1];
+
         newDigits[0] = 1;
+
         return newDigits;
     }
 }

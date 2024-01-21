@@ -11,17 +11,15 @@
 
 namespace LeetCode.Algorithms.MissingNumber;
 
-/// <summary>
-///     https://leetcode.com/problems/missing-number/description/
-/// </summary>
-public static class MissingNumberIterativeSumAndSubtract
+/// <inheritdoc />
+public class MissingNumberIterativeSumAndSubtract : IMissingNumber
 {
     /// <summary>
     ///     Time complexity - O(n)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>
-    public static int GetResult(int[] nums)
+    public int MissingNumber(int[] nums)
     {
         var sum = nums.Sum();
 

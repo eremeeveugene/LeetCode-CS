@@ -11,14 +11,9 @@
 
 namespace LeetCode.Algorithms.RomanToInteger.Iterative;
 
-internal class RomanSymbol
+internal class RomanSymbol(char @char)
 {
-    public RomanSymbol(char @char)
-    {
-        Char = @char;
-    }
-
-    public char Char { get; }
+    public char Char { get; } = @char;
 
     public static RomanSymbol I => new(RomanChars.I);
     public static RomanSymbol V => new(RomanChars.V);

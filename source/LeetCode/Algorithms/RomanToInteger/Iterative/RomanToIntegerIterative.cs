@@ -11,14 +11,12 @@
 
 namespace LeetCode.Algorithms.RomanToInteger.Iterative;
 
-/// <summary>
-///     https://leetcode.com/problems/roman-to-integer/description/
-/// </summary>
-public static class RomanToIntegerIterative
+/// <inheritdoc />
+public class RomanToIntegerIterative : IRomanToInteger
 {
-    public static int GetResult(string romanString)
+    public int RomanToInt(string romanString)
     {
-        List<RomanNumeral> romanNumerals = new();
+        List<RomanNumeral> romanNumerals = [];
 
         for (var i = 0; i < romanString.Length; i++)
         {

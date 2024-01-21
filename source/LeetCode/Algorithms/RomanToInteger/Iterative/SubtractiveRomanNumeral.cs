@@ -11,17 +11,13 @@
 
 namespace LeetCode.Algorithms.RomanToInteger.Iterative;
 
-internal class SubtractiveRomanNumeral : RomanNumeral
+internal class SubtractiveRomanNumeral(RomanSymbol firstSymbol, RomanSymbol secondSymbol, int value)
+    : RomanNumeral(firstSymbol,
+        value)
 {
     private static List<SubtractiveRomanNumeral>? _subtractiveRomanNumerals;
 
-    public SubtractiveRomanNumeral(RomanSymbol firstSymbol, RomanSymbol secondSymbol, int value) : base(firstSymbol,
-        value)
-    {
-        SecondSymbol = secondSymbol;
-    }
-
-    public RomanSymbol SecondSymbol { get; }
+    public RomanSymbol SecondSymbol { get; } = secondSymbol;
 
     public static SubtractiveRomanNumeral IV => new(RomanSymbol.I, RomanSymbol.V, 4);
     public static SubtractiveRomanNumeral IX => new(RomanSymbol.I, RomanSymbol.X, 9);
@@ -40,14 +36,14 @@ internal class SubtractiveRomanNumeral : RomanNumeral
 
     private static List<SubtractiveRomanNumeral> GetSubtractiveRomanNumerals()
     {
-        return new List<SubtractiveRomanNumeral>
-        {
+        return
+        [
             IV,
             IX,
             XC,
             XL,
             CD,
             CM
-        };
+        ];
     }
 }

@@ -11,17 +11,15 @@
 
 namespace LeetCode.Algorithms.CountingBits;
 
-/// <summary>
-///     https://leetcode.com/problems/counting-bits/
-/// </summary>
-public static class CountingBitsIterative
+/// <inheritdoc />
+public class CountingBitsIterative : ICountingBits
 {
     /// <summary>
     ///     Time complexity - O (n log n)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>
-    public static int[] GetResult(int n)
+    public int[] CountBits(int n)
     {
         var result = new int[n + 1];
 

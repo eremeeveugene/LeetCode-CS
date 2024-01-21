@@ -13,10 +13,8 @@ using System.Text;
 
 namespace LeetCode.Algorithms.AddBinary;
 
-/// <summary>
-///     https://leetcode.com/problems/add-binary/description/
-/// </summary>
-public static class AddBinaryIterative
+/// <inheritdoc />
+public class AddBinaryIterative : IAddBinary
 {
     /// <summary>
     ///     Time complexity - O(max(n1, n2))
@@ -24,7 +22,7 @@ public static class AddBinaryIterative
     /// <param name="a"></param>
     /// <param name="b"></param>
     /// <returns></returns>
-    public static string GetResult(string a, string b)
+    public string AddBinary(string a, string b)
     {
         var resultBuilder = new StringBuilder();
 

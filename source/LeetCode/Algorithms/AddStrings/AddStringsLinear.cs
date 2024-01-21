@@ -11,10 +11,8 @@
 
 namespace LeetCode.Algorithms.AddStrings;
 
-/// <summary>
-///     https://leetcode.com/problems/add-strings/description/
-/// </summary>
-public static class AddStringsLinear
+/// <inheritdoc />
+public class AddStringsLinear : IAddStrings
 {
     /// <summary>
     ///     Time complexity - O(n)
@@ -22,7 +20,7 @@ public static class AddStringsLinear
     /// <param name="num1"></param>
     /// <param name="num2"></param>
     /// <returns></returns>
-    public static string GetResult(string num1, string num2)
+    public string AddStrings(string num1, string num2)
     {
         var result = new char[Math.Max(num1.Length, num2.Length) + 1];
 

@@ -13,26 +13,24 @@ using LeetCode.Core.Models;
 
 namespace LeetCode.Algorithms.BinaryTreeInorderTraversal;
 
-/// <summary>
-///     https://leetcode.com/problems/binary-tree-inorder-traversal/description/
-/// </summary>
-public static class BinaryTreeInorderTraversalRecursive
+/// <inheritdoc />
+public class BinaryTreeInorderTraversalRecursive : IBinaryTreeInorderTraversal
 {
     /// <summary>
     ///     Time complexity - O (n)
     /// </summary>
     /// <param name="treeNode"></param>
     /// <returns></returns>
-    public static IList<int> GetResult(TreeNode? treeNode)
+    public IList<int> InorderTraversal(TreeNode? treeNode)
     {
-        List<int> result = new();
+        List<int> result = [];
 
-        InOrderTraversal(treeNode, result);
+        InorderTraversal(treeNode, result);
 
         return result;
     }
 
-    private static void InOrderTraversal(TreeNode? treeNode, ICollection<int> result)
+    private static void InorderTraversal(TreeNode? treeNode, ICollection<int> result)
     {
         if (treeNode == null)
         {
@@ -41,14 +39,14 @@ public static class BinaryTreeInorderTraversalRecursive
 
         if (treeNode.left != null)
         {
-            InOrderTraversal(treeNode.left, result);
+            InorderTraversal(treeNode.left, result);
         }
 
         result.Add(treeNode.val);
 
         if (treeNode.right != null)
         {
-            InOrderTraversal(treeNode.right, result);
+            InorderTraversal(treeNode.right, result);
         }
     }
 }

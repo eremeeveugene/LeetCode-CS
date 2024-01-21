@@ -13,10 +13,8 @@ using System.Text;
 
 namespace LeetCode.Algorithms.AddStrings;
 
-/// <summary>
-///     https://leetcode.com/problems/add-strings/description/
-/// </summary>
-public static class AddStringsIterative
+/// <inheritdoc />
+public class AddStringsIterative : IAddStrings
 {
     /// <summary>
     ///     Time complexity - O(max(n1, n2))
@@ -24,7 +22,7 @@ public static class AddStringsIterative
     /// <param name="num1"></param>
     /// <param name="num2"></param>
     /// <returns></returns>
-    public static string GetResult(string num1, string num2)
+    public string AddStrings(string num1, string num2)
     {
         var resultBuilder = new StringBuilder();
 

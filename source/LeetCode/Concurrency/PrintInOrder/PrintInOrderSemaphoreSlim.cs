@@ -11,10 +11,8 @@
 
 namespace LeetCode.Concurrency.PrintInOrder;
 
-/// <summary>
-///     https://leetcode.com/problems/print-in-order/description/
-/// </summary>
-public class PrintInOrderSemaphoreSlim
+/// <inheritdoc />
+public class PrintInOrderSemaphoreSlim : IPrintInOrder
 {
     private readonly SemaphoreSlim _firstPrint = new(0, 1);
     private readonly SemaphoreSlim _secondPrint = new(0, 1);

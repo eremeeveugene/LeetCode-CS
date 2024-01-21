@@ -11,10 +11,8 @@
 
 namespace LeetCode.Algorithms.ReverseString2;
 
-/// <summary>
-///     https://leetcode.com/problems/reverse-string-ii/
-/// </summary>
-public static class ReverseString2WithCharArray
+/// <inheritdoc />
+public class ReverseString2WithCharArray : IReverseString2
 {
     /// <summary>
     ///     Time complexity - O(n)
@@ -22,7 +20,7 @@ public static class ReverseString2WithCharArray
     /// <param name="s"></param>
     /// <param name="k"></param>
     /// <returns></returns>
-    public static string ReverseStr(string s, int k)
+    public string ReverseStr(string s, int k)
     {
         var charArray = s.ToCharArray();
 

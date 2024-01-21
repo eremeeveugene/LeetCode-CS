@@ -11,10 +11,8 @@
 
 namespace LeetCode.Algorithms.BuyTwoChocolates;
 
-/// <summary>
-///     https://leetcode.com/problems/buy-two-chocolates/description/
-/// </summary>
-public static class BuyTwoChocolatesSorting
+/// <inheritdoc />
+public class BuyTwoChocolatesSorting : IBuyTwoChocolates
 {
     /// <summary>
     ///     Time complexity - O(n log n)
@@ -22,7 +20,7 @@ public static class BuyTwoChocolatesSorting
     /// <param name="prices"></param>
     /// <param name="money"></param>
     /// <returns></returns>
-    public static int GetResult(int[] prices, int money)
+    public int BuyChoco(int[] prices, int money)
     {
         Array.Sort(prices);
 

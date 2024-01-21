@@ -11,10 +11,8 @@
 
 namespace LeetCode.Algorithms.SearchInsertPosition;
 
-/// <summary>
-///     https://leetcode.com/problems/search-insert-position/description/
-/// </summary>
-public static class SearchInsertPositionBinarySearch
+/// <inheritdoc />
+public class SearchInsertPositionBinarySearch : ISearchInsertPosition
 {
     /// <summary>
     ///     Time complexity - O (log n)
@@ -22,7 +20,7 @@ public static class SearchInsertPositionBinarySearch
     /// <param name="nums"></param>
     /// <param name="target"></param>
     /// <returns></returns>
-    public static int GetResult(int[] nums, int target)
+    public int SearchInsert(int[] nums, int target)
     {
         var index = Array.BinarySearch(nums, target);
 

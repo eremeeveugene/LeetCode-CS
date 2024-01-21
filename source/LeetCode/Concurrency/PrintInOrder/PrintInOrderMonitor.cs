@@ -11,10 +11,8 @@
 
 namespace LeetCode.Concurrency.PrintInOrder;
 
-/// <summary>
-///     https://leetcode.com/problems/print-in-order/description/
-/// </summary>
-public class PrintInOrderMonitor
+/// <inheritdoc />
+public class PrintInOrderMonitor : IPrintInOrder
 {
     private readonly object _lock = new();
     private int _step = 1;

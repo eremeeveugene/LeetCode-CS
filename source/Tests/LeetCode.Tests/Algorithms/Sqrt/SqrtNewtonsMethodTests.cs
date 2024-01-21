@@ -14,24 +14,6 @@ using LeetCode.Algorithms.Sqrt;
 namespace LeetCode.Tests.Algorithms.Sqrt;
 
 [TestClass]
-public class SqrtNewtonsMethodTests
+public class SqrtNewtonsMethodTests : SqrtTestsBase<SqrtNewtonsMethod>
 {
-    [TestMethod]
-    [DataRow(0, 0)]
-    [DataRow(1, 1)]
-    [DataRow(2, 1)]
-    [DataRow(3, 1)]
-    [DataRow(4, 2)]
-    [DataRow(8, 2)]
-    [DataRow(10, 3)]
-    [DataRow(17, 4)]
-    [DataRow(2147395599, 46339)]
-    public void SqrtNewtonsMethod_GetResult_WithNumber_ReturnsSquareRoot(int x, int expectedResult)
-    {
-        // Act
-        var actualResult = SqrtNewtonsMethod.GetResult(x);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
-    }
 }

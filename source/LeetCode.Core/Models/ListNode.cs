@@ -14,19 +14,13 @@ namespace LeetCode.Core.Models;
 /// <summary>
 ///     Definition for singly-linked list
 /// </summary>
-public class ListNode
+public class ListNode(int val = 0, ListNode? next = null)
 {
     // ReSharper disable once InconsistentNaming
-    public ListNode? next;
+    public ListNode? next = next;
 
     // ReSharper disable once InconsistentNaming
-    public int val;
-
-    public ListNode(int val = 0, ListNode? next = null)
-    {
-        this.val = val;
-        this.next = next;
-    }
+    public int val = val;
 
     public static ListNode? Reverse(ListNode? head)
     {

@@ -11,7 +11,8 @@
 
 namespace LeetCode.Algorithms.LongestCommonPrefix;
 
-public class LongestCommonPrefixBinarySearch
+/// <inheritdoc />
+public class LongestCommonPrefixBinarySearch : ILongestCommonPrefix
 {
     /// <summary>
     ///     Time complexity - O(S log n), where S is the sum of all characters in all strings
@@ -43,7 +44,7 @@ public class LongestCommonPrefixBinarySearch
         return strs[0][..longestPrefixIndex];
     }
 
-    private bool IsCommonPrefix(IReadOnlyList<string> strs, int length)
+    private static bool IsCommonPrefix(IReadOnlyList<string> strs, int length)
     {
         var str1 = strs[0][..length];
         for (var i = 1; i < strs.Count; i++)

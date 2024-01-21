@@ -14,17 +14,6 @@ using LeetCode.Algorithms.AddBinary;
 namespace LeetCode.Tests.Algorithms.AddBinary;
 
 [TestClass]
-public class AddBinaryIterativeTests
+public class AddBinaryIterativeTests : AddBinaryTestsBase<AddBinaryIterative>
 {
-    [TestMethod]
-    [DataRow("11", "1", "100")]
-    [DataRow("1010", "1011", "10101")]
-    public void AddBinaryIterative_GetResult_WithVariousInputs_ReturnsCorrectSum(string a, string b, string expectedResult)
-    {
-        // Act
-        var actualResult = AddBinaryIterative.GetResult(a, b);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
-    }
 }

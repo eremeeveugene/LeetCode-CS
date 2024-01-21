@@ -14,18 +14,7 @@ using LeetCode.Algorithms.ReverseWordsInString3;
 namespace LeetCode.Tests.Algorithms.ReverseWordsInString3;
 
 [TestClass]
-public class ReverseWordsInString3WithCharArrayTests
+public class
+    ReverseWordsInString3WithCharArrayTests : ReverseWordsInString3TestsBase<ReverseWordsInString3WithCharArray>
 {
-    [TestMethod]
-    [DataRow("Let's take LeetCode contest", "s'teL ekat edoCteeL tsetnoc")]
-    [DataRow("Mr Ding", "rM gniD")]
-    public void ReverseWordsInString3WithCharArray_ReverseWords_WithStringInput_ReturnsReversedWords(string s,
-        string expectedResult)
-    {
-        // Act
-        var actualResult = ReverseWordsInString3WithCharArray.ReverseWords(s);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
-    }
 }

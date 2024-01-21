@@ -14,19 +14,8 @@ using LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 namespace LeetCode.Tests.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 
 [TestClass]
-public class HowManyNumbersAreSmallerThanTheCurrentNumberBruteForceTests
+public class
+    HowManyNumbersAreSmallerThanTheCurrentNumberBruteForceTests : HowManyNumbersAreSmallerThanTheCurrentNumberTestsBase<
+    HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce>
 {
-    [TestMethod]
-    [DataRow(new[] { 8, 1, 2, 2, 3 }, new[] { 4, 0, 1, 1, 3 })]
-    [DataRow(new[] { 6, 5, 4, 8 }, new[] { 2, 1, 0, 3 })]
-    [DataRow(new[] { 7, 7, 7, 7 }, new[] { 0, 0, 0, 0 })]
-    public void HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce_GetResult_WithArray_ReturnsSmallerNumbersCount(
-        int[] nums, int[] expectedResult)
-    {
-        // Act
-        var actualResult = HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce.GetResult(nums);
-
-        // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
-    }
 }

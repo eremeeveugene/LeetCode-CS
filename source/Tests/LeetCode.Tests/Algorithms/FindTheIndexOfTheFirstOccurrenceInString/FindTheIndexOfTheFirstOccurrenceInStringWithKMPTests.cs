@@ -14,18 +14,7 @@ using LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 namespace LeetCode.Tests.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 
 [TestClass]
-public class FindTheIndexOfTheFirstOccurrenceInStringWithKMPTests
+public class FindTheIndexOfTheFirstOccurrenceInStringWithKMPTests : FindTheIndexOfTheFirstOccurrenceInStringTestsBase<
+    FindTheIndexOfTheFirstOccurrenceInStringWithKMP>
 {
-    [TestMethod]
-    [DataRow("sadbutsad", "sad", 0)]
-    [DataRow("leetcode", "leeto", -1)]
-    public void StrStr_WithHaystackAndNeedle_ReturnsCorrectIndexOrMinusOne(string haystack, string needle,
-        int expectedResult)
-    {
-        // Act
-        var actualResult = FindTheIndexOfTheFirstOccurrenceInStringWithKMP.StrStr(haystack, needle);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
-    }
 }

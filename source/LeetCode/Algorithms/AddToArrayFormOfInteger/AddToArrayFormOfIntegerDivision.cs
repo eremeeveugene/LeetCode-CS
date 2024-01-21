@@ -11,10 +11,8 @@
 
 namespace LeetCode.Algorithms.AddToArrayFormOfInteger;
 
-/// <summary>
-///     https://leetcode.com/problems/add-to-array-form-of-integer/description/
-/// </summary>
-public static class AddToArrayFormOfIntegerDivision
+/// <inheritdoc />
+public class AddToArrayFormOfIntegerDivision : IAddToArrayFormOfInteger
 {
     /// <summary>
     ///     Time complexity - O(max(n1, n2))
@@ -22,7 +20,7 @@ public static class AddToArrayFormOfIntegerDivision
     /// <param name="num"></param>
     /// <param name="k"></param>
     /// <returns></returns>
-    public static IList<int> GetResult(int[] num, int k)
+    public IList<int> AddToArrayForm(int[] num, int k)
     {
         var result = new List<int>();
 

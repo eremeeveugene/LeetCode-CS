@@ -14,17 +14,6 @@ using LeetCode.Algorithms.CountingBits;
 namespace LeetCode.Tests.Algorithms.CountingBits;
 
 [TestClass]
-public class CountingBitsIterativeTests
+public class CountingBitsIterativeTests : CountingBitsTestsBase<CountingBitsIterative>
 {
-    [TestMethod]
-    [DataRow(2, new[] { 0, 1, 1 })]
-    [DataRow(5, new[] { 0, 1, 1, 2, 1, 2 })]
-    public void CountingBitsIterative_GetResult_WithNumber_ReturnsBitCountArray(int n, int[] expectedResult)
-    {
-        // Act
-        var actualResult = CountingBitsIterative.GetResult(n);
-
-        // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
-    }
 }

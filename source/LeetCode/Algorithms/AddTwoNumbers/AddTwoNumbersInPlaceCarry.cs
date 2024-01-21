@@ -13,10 +13,8 @@ using LeetCode.Core.Models;
 
 namespace LeetCode.Algorithms.AddTwoNumbers;
 
-/// <summary>
-///     https://leetcode.com/problems/add-two-numbers/
-/// </summary>
-public static class AddTwoNumbersInPlaceCarry
+/// <inheritdoc />
+public class AddTwoNumbersInPlaceCarry : IAddTwoNumbers
 {
     /// <summary>
     ///     Time complexity - O (n)
@@ -24,7 +22,7 @@ public static class AddTwoNumbersInPlaceCarry
     /// <param name="l1"></param>
     /// <param name="l2"></param>
     /// <returns></returns>
-    public static ListNode? GetResult(ListNode? l1, ListNode? l2)
+    public ListNode? AddTwoNumbers(ListNode? l1, ListNode? l2)
     {
         var carry = 0;
 

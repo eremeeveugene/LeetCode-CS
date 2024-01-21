@@ -14,19 +14,6 @@ using LeetCode.Algorithms.SearchInsertPosition;
 namespace LeetCode.Tests.Algorithms.SearchInsertPosition;
 
 [TestClass]
-public class SearchInsertPositionIterativeTests
+public class SearchInsertPositionIterativeTests : SearchInsertPositionTestsBase<SearchInsertPositionIterative>
 {
-    [TestMethod]
-    [DataRow(new[] { 1, 3, 5, 6 }, 2, 1)]
-    [DataRow(new[] { 1, 3, 5, 6 }, 5, 2)]
-    [DataRow(new[] { 1, 3, 5, 6 }, 7, 4)]
-    public void SearchInsertPositionIterative_GetResult_WithSortedArrayAndTarget_ReturnsCorrectInsertIndex(int[] nums,
-        int target, int expectedResult)
-    {
-        // Act
-        var actualResult = SearchInsertPositionIterative.GetResult(nums, target);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
-    }
 }

@@ -11,17 +11,15 @@
 
 namespace LeetCode.Algorithms.NeitherMinimumNorMaximum;
 
-/// <summary>
-///     https://leetcode.com/problems/neither-minimum-nor-maximum/description/
-/// </summary>
-public static class NeitherMinimumNorMaximumUsingMinMaxComparison
+/// <inheritdoc />
+public class NeitherMinimumNorMaximumUsingMinMaxComparison : INeitherMinimumNorMaximum
 {
     /// <summary>
     ///     Time complexity - O(1)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>
-    public static int GetResult(int[] nums)
+    public int FindNonMinOrMax(int[] nums)
     {
         if (nums.Length < 3)
         {

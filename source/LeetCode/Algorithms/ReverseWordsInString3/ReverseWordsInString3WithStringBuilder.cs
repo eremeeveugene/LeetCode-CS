@@ -13,17 +13,15 @@ using System.Text;
 
 namespace LeetCode.Algorithms.ReverseWordsInString3;
 
-/// <summary>
-///     https://leetcode.com/problems/reverse-words-in-a-string-iii/description/
-/// </summary>
-public static class ReverseWordsInString3WithStringBuilder
+/// <inheritdoc />
+public class ReverseWordsInString3WithStringBuilder : IReverseWordsInString3
 {
     /// <summary>
     ///     Time complexity - O(n)
     /// </summary>
     /// <param name="s"></param>
     /// <returns></returns>
-    public static string ReverseWords(string s)
+    public string ReverseWords(string s)
     {
         var words = s.Split(' ');
 

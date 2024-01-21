@@ -11,10 +11,8 @@
 
 namespace LeetCode.Concurrency.PrintInOrder;
 
-/// <summary>
-///     https://leetcode.com/problems/print-in-order/description/
-/// </summary>
-public class PrintInOrderThreadSleep
+/// <inheritdoc />
+public class PrintInOrderThreadSleep : IPrintInOrder
 {
     private const int ThreadTimeoutMs = 10;
     private bool _isFirstPrinted;

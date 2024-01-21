@@ -11,10 +11,8 @@
 
 namespace LeetCode.Algorithms.AddBinary;
 
-/// <summary>
-///     https://leetcode.com/problems/add-binary/description/
-/// </summary>
-public static class AddBinaryLinear
+/// <inheritdoc />
+public class AddBinaryLinear : IAddBinary
 {
     /// <summary>
     ///     Time complexity - O(max(n1, n2))
@@ -22,7 +20,7 @@ public static class AddBinaryLinear
     /// <param name="a"></param>
     /// <param name="b"></param>
     /// <returns></returns>
-    public static string GetResult(string a, string b)
+    public string AddBinary(string a, string b)
     {
         var result = new char[Math.Max(a.Length, b.Length) + 1];
 

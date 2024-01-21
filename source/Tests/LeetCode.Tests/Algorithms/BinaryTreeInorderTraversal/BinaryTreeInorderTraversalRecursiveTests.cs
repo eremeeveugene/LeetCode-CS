@@ -10,31 +10,11 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BinaryTreeInorderTraversal;
-using LeetCode.Core.Helpers;
-using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.BinaryTreeInorderTraversal;
 
 [TestClass]
-public class BinaryTreeInorderTraversalRecursiveTests
+public class
+    BinaryTreeInorderTraversalRecursiveTests : BinaryTreeInorderTraversalTestsBase<BinaryTreeInorderTraversalRecursive>
 {
-    [TestMethod]
-    [DataRow("[1,null,2,3]", "[1,3,2]")]
-    [DataRow("[1]", "[1]")]
-    [DataRow(JsonHelper.EmptyArray, "[0]")]
-    public void BinaryTreeInorderTraversalRecursive_GetResult_WithJsonInputTrees_ReturnsCorrectInorderTraversalList(
-        string inputArrayJson, string expectedArrayJson)
-    {
-        // Arrange
-        IList<int?> expectedResult = JsonConvertHelper<int?>.JsonArrayToList(expectedArrayJson);
-        IList<int?> inputArray = JsonConvertHelper<int?>.JsonArrayToList(inputArrayJson);
-        var inputNode = TreeNode.BuildTree(inputArray);
-
-        // Act
-        var actualResult = BinaryTreeInorderTraversalRecursive.GetResult(inputNode);
-
-        // Assert
-        Assert.IsNotNull(actualResult);
-        CollectionAssert.AreEqual(expectedResult.ToList(), actualResult.ToList());
-    }
 }

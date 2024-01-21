@@ -14,18 +14,6 @@ using LeetCode.Algorithms.ReverseString;
 namespace LeetCode.Tests.Algorithms.ReverseString;
 
 [TestClass]
-public class ReverseStringArrayReverseTests
+public class ReverseStringArrayReverseTests : ReverseStringTestsBase<ReverseStringArrayReverse>
 {
-    [TestMethod]
-    [DataRow(new[] { 'h', 'e', 'l', 'l', 'o' }, new[] { 'o', 'l', 'l', 'e', 'h' })]
-    [DataRow(new[] { 'H', 'a', 'n', 'n', 'a', 'h' }, new[] { 'h', 'a', 'n', 'n', 'a', 'H' })]
-    public void ReverseStringArrayReverse_ReverseString_WithCharArray_ReturnsReversedArray(char[] s,
-        char[] expectedResult)
-    {
-        // Act
-        ReverseStringArrayReverse.ReverseString(s);
-
-        // Assert
-        CollectionAssert.AreEqual(expectedResult, s);
-    }
 }

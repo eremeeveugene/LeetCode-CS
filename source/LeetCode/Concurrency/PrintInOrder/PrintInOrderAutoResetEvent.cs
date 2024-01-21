@@ -11,10 +11,8 @@
 
 namespace LeetCode.Concurrency.PrintInOrder;
 
-/// <summary>
-///     https://leetcode.com/problems/print-in-order/description/
-/// </summary>
-public class PrintInOrderAutoResetEvent
+/// <inheritdoc />
+public class PrintInOrderAutoResetEvent : IPrintInOrder
 {
     private readonly AutoResetEvent _firstPrint = new(false);
     private readonly AutoResetEvent _secondPrint = new(false);
