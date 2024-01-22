@@ -1,23 +1,23 @@
 Summary
-  Generated on: 01/21/2024 - 19:13:27
-  Coverage date: 01/21/2024 - 19:13:06 - 01/21/2024 - 19:13:09
+  Generated on: 01/22/2024 - 20:14:28
+  Coverage date: 01/22/2024 - 20:14:08 - 01/22/2024 - 20:14:12
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 69
-  Files: 69
-  Line coverage: 95.2%
-  Covered lines: 1272
+  Classes: 71
+  Files: 71
+  Line coverage: 95.4%
+  Covered lines: 1310
   Uncovered lines: 63
-  Coverable lines: 1335
-  Total lines: 3397
-  Branch coverage: 92.2% (467 of 506)
-  Covered branches: 467
-  Total branches: 506
-  Method coverage: 94.7% (127 of 134)
-  Covered methods: 127
-  Total methods: 134
+  Coverable lines: 1373
+  Total lines: 3494
+  Branch coverage: 92.4% (490 of 530)
+  Covered branches: 490
+  Total branches: 530
+  Method coverage: 94.8% (130 of 137)
+  Covered methods: 130
+  Total methods: 137
 
-LeetCode                                                                                                                                95.5%
+LeetCode                                                                                                                                95.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddStrings.AddStringsIterative                                                                                   100.0%
@@ -74,6 +74,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ThreeSum.ThreeSumTwoPointers                                                                                      86.4%
   LeetCode.Algorithms.TwoSum.TwoSumBruteForce                                                                                           91.6%
   LeetCode.Algorithms.TwoSum.TwoSumDictionary                                                                                           93.3%
+  LeetCode.Algorithms.ValidParentheses.ValidParenthesesStackDictionary                                                                 100.0%
+  LeetCode.Algorithms.ValidParentheses.ValidParenthesesStackSwitch                                                                     100.0%
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                          100.0%
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLockFactory                                                   100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                         100.0%
