@@ -13,23 +13,5 @@ using LeetCode.Algorithms.ValidParentheses;
 
 namespace LeetCode.Tests.Algorithms.ValidParentheses;
 
-public abstract class ValidParenthesesTestsBase<T> where T : IValidParentheses, new()
-{
-    [TestMethod]
-    [DataRow("()", true)]
-    [DataRow("()[]{}", true)]
-    [DataRow("(]", false)]
-    [DataRow("{[]}", true)]
-    [DataRow("[[[[]]]]", true)]
-    public void IsValid_GivenParentheses_ReturnsExpectedValidity(string s, bool expectedResult)
-    {
-        // Arrange
-        var solution = new T();
-
-        // Act
-        var actualResult = solution.IsValid(s);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
-    }
-}
+[TestClass]
+public class ValidParenthesesStackDictionaryTests : ValidParenthesesTestsBase<ValidParenthesesStackDictionary>;

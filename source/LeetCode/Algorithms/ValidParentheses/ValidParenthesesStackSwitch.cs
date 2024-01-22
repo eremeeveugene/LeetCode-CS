@@ -12,36 +12,41 @@
 namespace LeetCode.Algorithms.ValidParentheses;
 
 /// <inheritdoc />
-public class ValidParentheses1 : IValidParentheses
+public class ValidParenthesesStackSwitch : IValidParentheses
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    /// </summary>
+    /// <param name="s"></param>
+    /// <returns></returns>
     public bool IsValid(string s)
     {
-        var charsQueue = new Stack<char>();
+        var parenthesesStack = new Stack<char>();
 
         foreach (var c in s)
         {
-            if (charsQueue.Count == 0)
+            if (parenthesesStack.Count == 0)
             {
-                charsQueue.Push(c);
+                parenthesesStack.Push(c);
             }
             else
             {
-                switch (charsQueue.Peek())
+                switch (parenthesesStack.Peek())
                 {
                     case '(' when c == ')':
                     case '{' when c == '}':
                     case '[' when c == ']':
-                        charsQueue.Pop();
+                        parenthesesStack.Pop();
                         break;
                     case '(':
                     case '{':
                     case '[':
-                        charsQueue.Push(c);
+                        parenthesesStack.Push(c);
                         break;
                 }
             }
         }
 
-        return charsQueue.Count == 0;
+        return parenthesesStack.Count == 0;
     }
 }

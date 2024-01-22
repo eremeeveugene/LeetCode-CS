@@ -14,6 +14,4 @@ using LeetCode.Algorithms.ValidParentheses;
 namespace LeetCode.Tests.Algorithms.ValidParentheses;
 
 [TestClass]
-public class ValidParentheses1Tests : ValidParenthesesTestsBase<ValidParentheses1>
-{
-}
+public class ValidParenthesesStackSwitchTests : ValidParenthesesTestsBase<ValidParenthesesStackSwitch>;
