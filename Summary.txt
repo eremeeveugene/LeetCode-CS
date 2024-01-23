@@ -1,23 +1,23 @@
 Summary
-  Generated on: 01/22/2024 - 20:14:28
-  Coverage date: 01/22/2024 - 20:14:08 - 01/22/2024 - 20:14:12
+  Generated on: 01/23/2024 - 19:37:53
+  Coverage date: 01/23/2024 - 19:37:28 - 01/23/2024 - 19:37:31
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 71
-  Files: 71
+  Classes: 73
+  Files: 73
   Line coverage: 95.4%
-  Covered lines: 1310
+  Covered lines: 1327
   Uncovered lines: 63
-  Coverable lines: 1373
-  Total lines: 3494
-  Branch coverage: 92.4% (490 of 530)
-  Covered branches: 490
-  Total branches: 530
-  Method coverage: 94.8% (130 of 137)
-  Covered methods: 130
-  Total methods: 137
+  Coverable lines: 1390
+  Total lines: 3531
+  Branch coverage: 92.5% (496 of 536)
+  Covered branches: 496
+  Total branches: 536
+  Method coverage: 94.9% (132 of 139)
+  Covered methods: 132
+  Total methods: 139
 
-LeetCode                                                                                                                                95.6%
+LeetCode                                                                                                                                95.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddStrings.AddStringsIterative                                                                                   100.0%
@@ -35,6 +35,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithKMP                          80.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce              100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing  100.0%
+  LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordReverseIteration                                                                100.0%
+  LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordTrimSplit                                                                       100.0%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixBinarySearch                                                              100.0%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixDivideAndConquer                                                           96.1%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixHorizontalScanning                                                        100.0%
