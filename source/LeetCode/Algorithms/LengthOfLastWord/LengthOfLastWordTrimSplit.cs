@@ -9,38 +9,18 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
+namespace LeetCode.Algorithms.LengthOfLastWord;
 
 /// <inheritdoc />
-public class
-    HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing : IHowManyNumbersAreSmallerThanTheCurrentNumber
+public class LengthOfLastWordTrimSplit : ILengthOfLastWord
 {
     /// <summary>
-    ///     Time complexity - O(n log n)
+    ///     Time complexity - O(n)
     /// </summary>
-    /// <param name="nums"></param>
+    /// <param name="s"></param>
     /// <returns></returns>
-    public int[] SmallerNumbersThanCurrent(int[] nums)
+    public int LengthOfLastWord(string s)
     {
-        var sortedNums = nums.Order().ToArray();
-
-        var ranks = new Dictionary<int, int>();
-
-        for (var i = 0; i < sortedNums.Length; i++)
-        {
-            if (!ranks.ContainsKey(sortedNums[i]))
-            {
-                ranks[sortedNums[i]] = i;
-            }
-        }
-
-        var result = new int[nums.Length];
-
-        for (var i = 0; i < nums.Length; i++)
-        {
-            result[i] = ranks[nums[i]];
-        }
-
-        return result;
+        return s.TrimEnd().Split(' ').Last().Length;
     }
 }
