@@ -22,16 +22,14 @@ public class LengthOfLastWordReverseIteration : ILengthOfLastWord
     public int LengthOfLastWord(string s)
     {
         var length = 0;
-        var wordStarted = false;
 
         for (var i = s.Length - 1; i >= 0; i--)
         {
             if (s[i] != ' ')
             {
-                wordStarted = true;
                 length++;
             }
-            else if (wordStarted)
+            else if (length > 0)
             {
                 break;
             }

@@ -21,6 +21,6 @@ public class LengthOfLastWordTrimSplit : ILengthOfLastWord
     /// <returns></returns>
     public int LengthOfLastWord(string s)
     {
-        return s.Trim().Split(' ').Last().Length;
+        return s.TrimEnd().Split(' ').Last().Length;
     }
 }
