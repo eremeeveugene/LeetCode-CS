@@ -21,7 +21,7 @@ public abstract class HappyNumberTestsBase<T> where T : IHappyNumber, new()
     [DataRow(3, false)]
     [DataRow(7, true)]
     [DataRow(19, true)]
-    public void Test(int s, bool expectedResult)
+    public void IsHappy_GivenNumber_ReturnsExpectedHappinessStatus(int s, bool expectedResult)
     {
         // Arrange
         var solution = new T();
