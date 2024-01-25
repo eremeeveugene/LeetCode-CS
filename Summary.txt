@@ -1,25 +1,27 @@
 Summary
-  Generated on: 01/23/2024 - 19:37:53
-  Coverage date: 01/23/2024 - 19:37:28 - 01/23/2024 - 19:37:31
+  Generated on: 01/25/2024 - 19:54:37
+  Coverage date: 01/25/2024 - 19:54:08 - 01/25/2024 - 19:54:12
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 73
-  Files: 73
-  Line coverage: 95.4%
-  Covered lines: 1327
+  Classes: 75
+  Files: 75
+  Line coverage: 95.5%
+  Covered lines: 1340
   Uncovered lines: 63
-  Coverable lines: 1390
-  Total lines: 3531
-  Branch coverage: 92.5% (496 of 536)
-  Covered branches: 496
-  Total branches: 536
-  Method coverage: 94.9% (132 of 139)
-  Covered methods: 132
-  Total methods: 139
+  Coverable lines: 1403
+  Total lines: 3593
+  Branch coverage: 92.5% (500 of 540)
+  Covered branches: 500
+  Total branches: 540
+  Method coverage: 95% (134 of 141)
+  Covered methods: 134
+  Total methods: 141
 
 LeetCode                                                                                                                                95.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
+  LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                   100.0%
+  LeetCode.Algorithms.AddDigits.AddDigitsIterative                                                                                     100.0%
   LeetCode.Algorithms.AddStrings.AddStringsIterative                                                                                   100.0%
   LeetCode.Algorithms.AddStrings.AddStringsLinear                                                                                      100.0%
   LeetCode.Algorithms.AddToArrayFormOfInteger.AddToArrayFormOfIntegerDivision                                                          100.0%
