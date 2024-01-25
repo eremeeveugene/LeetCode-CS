@@ -9,9 +9,23 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.AddDigits;
+namespace LeetCode.Algorithms.AddDigits;
 
-namespace LeetCode.Tests.Algorithms.AddDigits;
+/// <inheritdoc />
+public class AddDigitsIterative : IAddDigits
+{
+    /// <summary>
+    ///     Time complexity - O(log(n))
+    /// </summary>
+    /// <param name="num"></param>
+    /// <returns></returns>
+    public int AddDigits(int num)
+    {
+        while (num > 9)
+        {
+            num = num.ToString().Sum(c => (int)char.GetNumericValue(c));
+        }
 
-[TestClass]
-public class AddDigits1Tests : AddDigitsTestsBase<AddDigits1>;
+        return num;
+    }
+}
