@@ -12,10 +12,13 @@
 namespace LeetCode.Algorithms.HappyNumber;
 
 /// <inheritdoc />
-public class HappyNumber1 : IHappyNumber
+public class HappyNumberHashSetNumbers : IHappyNumber
 {
-    private readonly HashSet<int> _hashSet = [];
-
+    /// <summary>
+    ///     Time complexity - O(log n)
+    /// </summary>
+    /// <param name="n"></param>
+    /// <returns></returns>
     public bool IsHappy(int n)
     {
         if (n == 1)
@@ -23,16 +26,28 @@ public class HappyNumber1 : IHappyNumber
             return true;
         }
 
-        while (n > 1)
-        {
-            n = n.ToString().Sum(c => (int)Math.Pow(char.GetNumericValue(c), 2));
+        var hashSet = new HashSet<int>();
 
-            if (!_hashSet.Add(n))
-            {
-                break;
-            }
+        while (n > 1 && !hashSet.Contains(n))
+        {
+            hashSet.Add(n);
+            n = GetNext(n);
         }
 
         return n == 1;
+    }
+
+    private static int GetNext(int n)
+    {
+        var sum = 0;
+
+        while (n > 0)
+        {
+            var digit = n % 10;
+            sum += digit * digit;
+            n /= 10;
+        }
+
+        return sum;
     }
 }
