@@ -1,23 +1,23 @@
 Summary
-  Generated on: 01/25/2024 - 19:54:37
-  Coverage date: 01/25/2024 - 19:54:08 - 01/25/2024 - 19:54:12
+  Generated on: 01/25/2024 - 19:54:56
+  Coverage date: 01/25/2024 - 19:54:30 - 01/25/2024 - 19:54:33
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 75
-  Files: 75
-  Line coverage: 95.5%
-  Covered lines: 1340
+  Classes: 77
+  Files: 77
+  Line coverage: 95.6%
+  Covered lines: 1374
   Uncovered lines: 63
-  Coverable lines: 1403
-  Total lines: 3593
-  Branch coverage: 92.5% (500 of 540)
-  Covered branches: 500
-  Total branches: 540
-  Method coverage: 95% (134 of 141)
-  Covered methods: 134
-  Total methods: 141
+  Coverable lines: 1437
+  Total lines: 3685
+  Branch coverage: 92.7% (514 of 554)
+  Covered branches: 514
+  Total branches: 554
+  Method coverage: 95.1% (137 of 144)
+  Covered methods: 137
+  Total methods: 144
 
-LeetCode                                                                                                                                95.7%
+LeetCode                                                                                                                                95.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                   100.0%
@@ -35,6 +35,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                                                                               100.0%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                     100.0%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithKMP                          80.0%
+  LeetCode.Algorithms.HappyNumber.HappyNumberHashSetChars                                                                              100.0%
+  LeetCode.Algorithms.HappyNumber.HappyNumberHashSetNumbers                                                                            100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce              100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing  100.0%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordReverseIteration                                                                100.0%
