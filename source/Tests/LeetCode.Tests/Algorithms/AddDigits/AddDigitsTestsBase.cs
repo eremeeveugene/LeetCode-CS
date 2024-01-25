@@ -18,7 +18,7 @@ public abstract class AddDigitsTestsBase<T> where T : IAddDigits, new()
     [TestMethod]
     [DataRow(0, 0)]
     [DataRow(38, 2)]
-    public void Test(int num, int expectedResult)
+    public void AddDigits_WhenCalledWithNumber_ReturnsExpectedDigitSum(int num, int expectedResult)
     {
         // Arrange
         var solution = new T();
