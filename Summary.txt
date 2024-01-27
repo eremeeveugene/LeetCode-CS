@@ -1,23 +1,23 @@
 Summary
-  Generated on: 01/27/2024 - 13:28:27
-  Coverage date: 01/27/2024 - 13:28:06 - 01/27/2024 - 13:28:10
+  Generated on: 01/27/2024 - 16:22:57
+  Coverage date: 01/27/2024 - 16:22:37 - 01/27/2024 - 16:22:40
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 83
-  Files: 83
-  Line coverage: 95.9%
-  Covered lines: 1497
+  Classes: 85
+  Files: 85
+  Line coverage: 96.0%
+  Covered lines: 1542
   Uncovered lines: 63
-  Coverable lines: 1560
-  Total lines: 4004
-  Branch coverage: 93.2% (556 of 596)
-  Covered branches: 556
-  Total branches: 596
-  Method coverage: 95.4% (147 of 154)
-  Covered methods: 147
-  Total methods: 154
+  Coverable lines: 1605
+  Total lines: 4113
+  Branch coverage: 93.4% (574 of 614)
+  Covered branches: 574
+  Total branches: 614
+  Method coverage: 95.5% (149 of 156)
+  Covered methods: 149
+  Total methods: 156
 
-LeetCode                                                                                                                                96.2%
+LeetCode                                                                                                                                96.3%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                   100.0%
@@ -43,6 +43,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetNumbers                                                                            100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce              100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing  100.0%
+  LeetCode.Algorithms.IsomorphicStrings.IsomorphicStringsDictionary                                                                    100.0%
+  LeetCode.Algorithms.IsomorphicStrings.IsomorphicStringsTwoDictionaries                                                               100.0%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordReverseIteration                                                                100.0%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordTrimSplit                                                                       100.0%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixBinarySearch                                                              100.0%
