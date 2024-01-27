@@ -12,32 +12,33 @@
 namespace LeetCode.Algorithms.ClimbingStairs;
 
 /// <inheritdoc />
-public class ClimbingStairs1 : IClimbingStairs
+public class ClimbingStairsIterativeFibonacci : IClimbingStairs
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    /// </summary>
+    /// <param name="n"></param>
+    /// <returns></returns>
     public int ClimbStairs(int n)
     {
-        var count = 0;
-
-        var i = 1;
-
-        while (i < n)
+        switch (n)
         {
-            
-
-            var sum = 0;
-
-            var a = 1;
-
-            var b = 2;
-
-            while (sum <= 6)
-            {
-                sum += 1;
-
-                count++;
-            }
+            case 1:
+                return 1;
+            case 2:
+                return 2;
         }
 
-        return count;
+        var step1 = 1;
+        var step2 = 1;
+
+        for (var i = 2; i < n + 1; i++)
+        {
+            var step3 = step1 + step2;
+            step1 = step2;
+            step2 = step3;
+        }
+
+        return step2;
     }
 }

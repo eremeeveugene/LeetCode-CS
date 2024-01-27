@@ -14,6 +14,4 @@ using LeetCode.Algorithms.ClimbingStairs;
 namespace LeetCode.Tests.Algorithms.ClimbingStairs;
 
 [TestClass]
-public class ClimbingStairs1Tests : ClimbingStairsTestsBase<ClimbingStairs1>
-{
-}
+public class ClimbingStairsDynamicProgrammingTests : ClimbingStairsTestsBase<ClimbingStairsDynamicProgramming>;
