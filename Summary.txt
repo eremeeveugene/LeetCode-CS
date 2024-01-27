@@ -1,23 +1,23 @@
 Summary
-  Generated on: 01/25/2024 - 19:54:56
-  Coverage date: 01/25/2024 - 19:54:30 - 01/25/2024 - 19:54:33
+  Generated on: 01/27/2024 - 12:02:03
+  Coverage date: 01/27/2024 - 12:01:44 - 01/27/2024 - 12:01:47
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 77
-  Files: 77
+  Classes: 79
+  Files: 79
   Line coverage: 95.6%
-  Covered lines: 1374
+  Covered lines: 1401
   Uncovered lines: 63
-  Coverable lines: 1437
-  Total lines: 3685
-  Branch coverage: 92.7% (514 of 554)
-  Covered branches: 514
-  Total branches: 554
-  Method coverage: 95.1% (137 of 144)
-  Covered methods: 137
-  Total methods: 144
+  Coverable lines: 1464
+  Total lines: 3773
+  Branch coverage: 92.9% (526 of 566)
+  Covered branches: 526
+  Total branches: 566
+  Method coverage: 95.2% (139 of 146)
+  Covered methods: 139
+  Total methods: 146
 
-LeetCode                                                                                                                                95.8%
+LeetCode                                                                                                                                95.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                   100.0%
@@ -31,6 +31,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesBruteForce                                                                      100.0%
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesMinimumTwoPrices                                                                100.0%
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesSorting                                                                         100.0%
+  LeetCode.Algorithms.ClimbingStairs.ClimbingStairsDynamicProgramming                                                                  100.0%
+  LeetCode.Algorithms.ClimbingStairs.ClimbingStairsIterativeFibonacci                                                                  100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsDynamicProgramming                                                                      100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                                                                               100.0%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                     100.0%
