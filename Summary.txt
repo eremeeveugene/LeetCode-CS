@@ -1,23 +1,23 @@
 Summary
-  Generated on: 01/27/2024 - 12:45:55
-  Coverage date: 01/27/2024 - 12:45:32 - 01/27/2024 - 12:45:35
+  Generated on: 01/27/2024 - 13:28:27
+  Coverage date: 01/27/2024 - 13:28:06 - 01/27/2024 - 13:28:10
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 81
-  Files: 81
-  Line coverage: 95.8%
-  Covered lines: 1445
+  Classes: 83
+  Files: 83
+  Line coverage: 95.9%
+  Covered lines: 1497
   Uncovered lines: 63
-  Coverable lines: 1508
-  Total lines: 3880
-  Branch coverage: 93% (536 of 576)
-  Covered branches: 536
-  Total branches: 576
-  Method coverage: 95.3% (143 of 150)
-  Covered methods: 143
-  Total methods: 150
+  Coverable lines: 1560
+  Total lines: 4004
+  Branch coverage: 93.2% (556 of 596)
+  Covered branches: 556
+  Total branches: 596
+  Method coverage: 95.4% (147 of 154)
+  Covered methods: 147
+  Total methods: 154
 
-LeetCode                                                                                                                                96.0%
+LeetCode                                                                                                                                96.2%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                   100.0%
@@ -59,6 +59,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MissingNumber.MissingNumberSumFormula                                                                             71.4%
   LeetCode.Algorithms.NeitherMinimumNorMaximum.NeitherMinimumNorMaximumUsingMinMaxComparison                                           100.0%
   LeetCode.Algorithms.NeitherMinimumNorMaximum.NeitherMinimumNorMaximumUsingSorting                                                    100.0%
+  LeetCode.Algorithms.NthTribonacciNumber.NthTribonacciNumberIterative                                                                 100.0%
+  LeetCode.Algorithms.NthTribonacciNumber.NthTribonacciNumberMatrixExponentiation                                                      100.0%
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByConvertingToString                                                             85.0%
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByReversingDigits                                                                92.3%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray                                                                               100.0%
