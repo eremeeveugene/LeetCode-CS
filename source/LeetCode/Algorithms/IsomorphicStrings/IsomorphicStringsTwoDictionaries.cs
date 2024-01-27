@@ -30,22 +30,28 @@ public class IsomorphicStringsTwoDictionaries : IIsomorphicStrings
             var sChar = s[i];
             var tChar = t[i];
 
-            if (!sDictionary.TryAdd(sChar, tChar))
+            if (sDictionary.TryGetValue(sChar, out var mappedTChar))
             {
-                if (sDictionary[sChar] != tChar)
+                if (mappedTChar != tChar)
                 {
                     return false;
                 }
             }
-
-            if (tDictionary.TryAdd(tChar, sChar))
+            else
             {
-                continue;
+                sDictionary[sChar] = tChar;
             }
 
-            if (tDictionary[tChar] != sChar)
+            if (tDictionary.TryGetValue(tChar, out var mappedSChar))
             {
-                return false;
+                if (mappedSChar != sChar)
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                tDictionary[tChar] = sChar;
             }
         }
 
