@@ -1,23 +1,23 @@
 Summary
-  Generated on: 01/27/2024 - 16:22:57
-  Coverage date: 01/27/2024 - 16:22:37 - 01/27/2024 - 16:22:40
+  Generated on: 01/27/2024 - 17:05:01
+  Coverage date: 01/27/2024 - 17:04:39 - 01/27/2024 - 17:04:43
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 85
-  Files: 85
-  Line coverage: 96.0%
-  Covered lines: 1542
+  Classes: 87
+  Files: 87
+  Line coverage: 96.1%
+  Covered lines: 1574
   Uncovered lines: 63
-  Coverable lines: 1605
-  Total lines: 4113
-  Branch coverage: 93.4% (574 of 614)
-  Covered branches: 574
-  Total branches: 614
-  Method coverage: 95.5% (149 of 156)
-  Covered methods: 149
-  Total methods: 156
+  Coverable lines: 1637
+  Total lines: 4200
+  Branch coverage: 93.6% (586 of 626)
+  Covered branches: 586
+  Total branches: 626
+  Method coverage: 95.5% (151 of 158)
+  Covered methods: 151
+  Total methods: 158
 
-LeetCode                                                                                                                                96.3%
+LeetCode                                                                                                                                96.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                   100.0%
@@ -50,6 +50,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixBinarySearch                                                              100.0%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixDivideAndConquer                                                           96.1%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixHorizontalScanning                                                        100.0%
+  LeetCode.Algorithms.MajorityElement.MajorityElementDictionary                                                                        100.0%
+  LeetCode.Algorithms.MajorityElement.MajorityElementDistinctCount                                                                     100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayMergingAndSorting                                                               100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayThreePointers                                                                   100.0%
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                                                                     95.4%
