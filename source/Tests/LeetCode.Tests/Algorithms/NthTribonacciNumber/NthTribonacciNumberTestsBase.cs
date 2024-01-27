@@ -9,33 +9,28 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.FibonacciNumber;
+using LeetCode.Algorithms.NthTribonacciNumber;
 
-/// <inheritdoc />
-public class FibonacciNumberIterative : IFibonacciNumber
+namespace LeetCode.Tests.Algorithms.NthTribonacciNumber;
+
+public abstract class NthTribonacciNumberTestsBase<T> where T : INthTribonacciNumber, new()
 {
-    /// <summary>
-    ///     Time complexity - O(n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
-    public int Fib(int n)
+    [TestMethod]
+    [DataRow(0, 0)]
+    [DataRow(1, 1)]
+    [DataRow(2, 1)]
+    [DataRow(3, 2)]
+    [DataRow(4, 4)]
+    [DataRow(25, 1389537)]
+    public void Tribonacci_WithInputN_ReturnsExpectedValue(int n, int expectedResult)
     {
-        if (n <= 1)
-        {
-            return n;
-        }
+        // Arrange
+        var solution = new T();
 
-        var a = 0;
-        var b = 1;
+        // Act
+        var actualResult = solution.Tribonacci(n);
 
-        for (var i = 2; i <= n; i++)
-        {
-            var c = a + b;
-            a = b;
-            b = c;
-        }
-
-        return b;
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
 }

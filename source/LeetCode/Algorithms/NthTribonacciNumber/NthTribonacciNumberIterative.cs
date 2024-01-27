@@ -9,33 +9,39 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.FibonacciNumber;
+namespace LeetCode.Algorithms.NthTribonacciNumber;
 
 /// <inheritdoc />
-public class FibonacciNumberIterative : IFibonacciNumber
+public class NthTribonacciNumberIterative : INthTribonacciNumber
 {
     /// <summary>
     ///     Time complexity - O(n)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>
-    public int Fib(int n)
+    public int Tribonacci(int n)
     {
-        if (n <= 1)
+        switch (n)
         {
-            return n;
+            case 0:
+                return 0;
+            case 1:
+            case 2:
+                return 1;
         }
 
         var a = 0;
         var b = 1;
+        var c = 1;
 
-        for (var i = 2; i <= n; i++)
+        for (var i = 3; i <= n; i++)
         {
-            var c = a + b;
+            var d = a + b + c;
             a = b;
             b = c;
+            c = d;
         }
 
-        return b;
+        return c;
     }
 }
