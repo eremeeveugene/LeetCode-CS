@@ -1,21 +1,21 @@
 Summary
-  Generated on: 01/28/2024 - 11:43:25
-  Coverage date: 01/28/2024 - 11:43:04 - 01/28/2024 - 11:43:07
+  Generated on: 01/29/2024 - 18:49:12
+  Coverage date: 01/29/2024 - 18:48:46 - 01/29/2024 - 18:48:49
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 89
-  Files: 89
+  Classes: 91
+  Files: 91
   Line coverage: 96.2%
-  Covered lines: 1623
+  Covered lines: 1637
   Uncovered lines: 63
-  Coverable lines: 1686
-  Total lines: 4310
-  Branch coverage: 93.8% (608 of 648)
-  Covered branches: 608
-  Total branches: 648
-  Method coverage: 95.6% (154 of 161)
-  Covered methods: 154
-  Total methods: 161
+  Coverable lines: 1700
+  Total lines: 4372
+  Branch coverage: 93.8% (612 of 652)
+  Covered branches: 612
+  Total branches: 652
+  Method coverage: 95.7% (156 of 163)
+  Covered methods: 156
+  Total methods: 163
 
 LeetCode                                                                                                                                96.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
@@ -82,6 +82,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral                                                                  87.5%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionBinarySearch                                                            100.0%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionIterative                                                               100.0%
+  LeetCode.Algorithms.SingleNumber.SingleNumberHashSet                                                                                 100.0%
+  LeetCode.Algorithms.SingleNumber.SingleNumberXor                                                                                     100.0%
   LeetCode.Algorithms.Sqrt.SqrtBinarySearch                                                                                            100.0%
   LeetCode.Algorithms.Sqrt.SqrtNewtonsMethod                                                                                           100.0%
   LeetCode.Algorithms.ThirdMaximumNumber.ThirdMaximumNumberDistinctOrder                                                               100.0%
