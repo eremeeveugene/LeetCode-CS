@@ -1,21 +1,21 @@
 Summary
-  Generated on: 01/30/2024 - 18:11:12
-  Coverage date: 01/30/2024 - 18:10:51 - 01/30/2024 - 18:10:55
+  Generated on: 01/30/2024 - 19:40:03
+  Coverage date: 01/30/2024 - 19:39:37 - 01/30/2024 - 19:39:41
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 95
-  Files: 95
+  Classes: 96
+  Files: 96
   Line coverage: 96.4%
-  Covered lines: 1687
+  Covered lines: 1699
   Uncovered lines: 63
-  Coverable lines: 1750
-  Total lines: 4520
-  Branch coverage: 93.9% (626 of 666)
-  Covered branches: 626
-  Total branches: 666
-  Method coverage: 95.8% (160 of 167)
-  Covered methods: 160
-  Total methods: 167
+  Coverable lines: 1762
+  Total lines: 4560
+  Branch coverage: 94% (630 of 670)
+  Covered branches: 630
+  Total branches: 670
+  Method coverage: 95.8% (161 of 168)
+  Covered methods: 161
+  Total methods: 168
 
 LeetCode                                                                                                                                96.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
@@ -39,6 +39,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberMatrixExponentiation                                                              100.0%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                     100.0%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithKMP                          80.0%
+  LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor.FindTheOriginalArrayOfPrefixXorIterative                                         100.0%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetChars                                                                              100.0%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetNumbers                                                                            100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce              100.0%
