@@ -1,23 +1,23 @@
 Summary
-  Generated on: 01/30/2024 - 19:40:03
-  Coverage date: 01/30/2024 - 19:39:37 - 01/30/2024 - 19:39:41
+  Generated on: 01/30/2024 - 20:02:26
+  Coverage date: 01/30/2024 - 20:02:02 - 01/30/2024 - 20:02:05
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 96
-  Files: 96
+  Classes: 97
+  Files: 97
   Line coverage: 96.4%
-  Covered lines: 1699
+  Covered lines: 1708
   Uncovered lines: 63
-  Coverable lines: 1762
-  Total lines: 4560
-  Branch coverage: 94% (630 of 670)
-  Covered branches: 630
-  Total branches: 670
-  Method coverage: 95.8% (161 of 168)
-  Covered methods: 161
-  Total methods: 168
+  Coverable lines: 1771
+  Total lines: 4596
+  Branch coverage: 94% (632 of 672)
+  Covered branches: 632
+  Total branches: 672
+  Method coverage: 95.8% (162 of 169)
+  Covered methods: 162
+  Total methods: 169
 
-LeetCode                                                                                                                                96.6%
+LeetCode                                                                                                                                96.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                   100.0%
@@ -35,6 +35,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ClimbingStairs.ClimbingStairsIterativeFibonacci                                                                  100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsDynamicProgramming                                                                      100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                                                                               100.0%
+  LeetCode.Algorithms.DecodeXORedArray.DecodeXORedArrayIterative                                                                       100.0%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberIterative                                                                         100.0%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberMatrixExponentiation                                                              100.0%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                     100.0%
