@@ -9,25 +9,28 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor;
+namespace LeetCode.Algorithms.DecodeXORedArray;
 
-namespace LeetCode.Tests.Algorithms.FindTheOriginalArrayOfPrefixXor;
-
-public abstract class FindTheOriginalArrayOfPrefixXorTestsBase<T> where T : IFindTheOriginalArrayOfPrefixXor, new()
+/// <inheritdoc />
+public class DecodeXORedArrayIterative : IDecodeXORedArray
 {
-    [TestMethod]
-    [DataRow(new[] { 5, 2, 0, 3, 1 }, new[] { 5, 7, 2, 3, 2 })]
-    [DataRow(new[] { 13 }, new[] { 13 })]
-    [DataRow(new[] { 13 }, new[] { 13 })]
-    public void FindArray_GivenPrefArray_ReturnsExpectedArray(int[] pref, int[] expectedResult)
+    /// <summary>
+    ///     Time complexity - O(n)
+    /// </summary>
+    /// <param name="encoded"></param>
+    /// <param name="first"></param>
+    /// <returns></returns>
+    public int[] Decode(int[] encoded, int first)
     {
-        // Arrange
-        var solution = new T();
+        var result = new int[encoded.Length + 1];
 
-        // Act
-        var actualResult = solution.FindArray(pref);
+        result[0] = first;
 
-        // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        for (var i = 0; i < encoded.Length; i++)
+        {
+            result[i + 1] = result[i] ^ encoded[i];
+        }
+
+        return result;
     }
 }
