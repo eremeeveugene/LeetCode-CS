@@ -9,24 +9,23 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR;
+using LeetCode.Algorithms.CalculateMoneyInLeetcodeBank;
 
-namespace LeetCode.Tests.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR;
+namespace LeetCode.Tests.Algorithms.CalculateMoneyInLeetcodeBank;
 
-public abstract class CountTripletsThatCanFormTwoArraysOfEqualXORTestsBase<T>
-    where T : ICountTripletsThatCanFormTwoArraysOfEqualXOR, new()
+public abstract class CalculateMoneyInLeetcodeBankTestsBase<T> where T : ICalculateMoneyInLeetcodeBank, new()
 {
     [TestMethod]
-    [DataRow(new[] { 2, 3, 1, 6, 7 }, 4)]
-    [DataRow(new[] { 1, 1, 1, 1, 1 }, 10)]
-    [DataRow(new[] { 1, 1, 1, 1, 1 }, 10)]
-    public void CountTriplets_GivenArray_ReturnsExpectedTripletCount(int[] arr, int expectedResult)
+    [DataRow(4, 10)]
+    [DataRow(10, 37)]
+    [DataRow(20, 96)]
+    public void TotalMoney_WithInputN_ReturnsExpectedTotal(int n, int expectedResult)
     {
         // Arrange
         var solution = new T();
 
         // Act
-        var actualResult = solution.CountTriplets(arr);
+        var actualResult = solution.TotalMoney(n);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
