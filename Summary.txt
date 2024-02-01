@@ -1,23 +1,23 @@
 Summary
-  Generated on: 02/01/2024 - 17:19:54
-  Coverage date: 02/01/2024 - 17:19:28 - 02/01/2024 - 17:19:32
+  Generated on: 02/01/2024 - 17:46:40
+  Coverage date: 02/01/2024 - 17:46:14 - 02/01/2024 - 17:46:18
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 101
-  Files: 101
-  Line coverage: 96.5%
-  Covered lines: 1750
-  Uncovered lines: 63
-  Coverable lines: 1813
-  Total lines: 4740
-  Branch coverage: 94.1% (644 of 684)
-  Covered branches: 644
-  Total branches: 684
-  Method coverage: 95.9% (166 of 173)
-  Covered methods: 166
-  Total methods: 173
+  Classes: 102
+  Files: 102
+  Line coverage: 96.3%
+  Covered lines: 1762
+  Uncovered lines: 66
+  Coverable lines: 1828
+  Total lines: 4787
+  Branch coverage: 93.8% (653 of 696)
+  Covered branches: 653
+  Total branches: 696
+  Method coverage: 95.9% (167 of 174)
+  Covered methods: 167
+  Total methods: 174
 
-LeetCode                                                                                                                                96.7%
+LeetCode                                                                                                                                96.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                   100.0%
@@ -40,6 +40,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                                                                               100.0%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                 100.0%
   LeetCode.Algorithms.DecodeXORedArray.DecodeXORedArrayIterative                                                                       100.0%
+  LeetCode.Algorithms.DistributeMoneyToMaximumChildren.DistributeMoneyToMaximumChildrenLinear                                           80.0%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberIterative                                                                         100.0%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberMatrixExponentiation                                                              100.0%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                     100.0%
