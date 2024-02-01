@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/01/2024 - 17:46:40
-  Coverage date: 02/01/2024 - 17:46:14 - 02/01/2024 - 17:46:18
+  Generated on: 02/01/2024 - 17:56:57
+  Coverage date: 02/01/2024 - 17:56:36 - 02/01/2024 - 17:56:39
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 102
-  Files: 102
+  Classes: 103
+  Files: 103
   Line coverage: 96.3%
-  Covered lines: 1762
+  Covered lines: 1765
   Uncovered lines: 66
-  Coverable lines: 1828
-  Total lines: 4787
+  Coverable lines: 1831
+  Total lines: 4814
   Branch coverage: 93.8% (653 of 696)
   Covered branches: 653
   Total branches: 696
-  Method coverage: 95.9% (167 of 174)
-  Covered methods: 167
-  Total methods: 174
+  Method coverage: 96% (168 of 175)
+  Covered methods: 168
+  Total methods: 175
 
 LeetCode                                                                                                                                96.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
@@ -45,6 +45,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberMatrixExponentiation                                                              100.0%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                     100.0%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithKMP                          80.0%
+  LeetCode.Algorithms.FindTheMaximumAchievableNumber.FindTheMaximumAchievableNumberLinear                                              100.0%
   LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor.FindTheOriginalArrayOfPrefixXorIterative                                         100.0%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetChars                                                                              100.0%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetNumbers                                                                            100.0%
