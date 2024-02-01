@@ -1,21 +1,21 @@
 Summary
-  Generated on: 01/31/2024 - 17:57:26
-  Coverage date: 01/31/2024 - 17:57:01 - 01/31/2024 - 17:57:04
+  Generated on: 02/01/2024 - 17:19:54
+  Coverage date: 02/01/2024 - 17:19:28 - 02/01/2024 - 17:19:32
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 100
-  Files: 100
+  Classes: 101
+  Files: 101
   Line coverage: 96.5%
-  Covered lines: 1747
+  Covered lines: 1750
   Uncovered lines: 63
-  Coverable lines: 1810
-  Total lines: 4713
+  Coverable lines: 1813
+  Total lines: 4740
   Branch coverage: 94.1% (644 of 684)
   Covered branches: 644
   Total branches: 684
-  Method coverage: 95.9% (165 of 172)
-  Covered methods: 165
-  Total methods: 172
+  Method coverage: 95.9% (166 of 173)
+  Covered methods: 166
+  Total methods: 173
 
 LeetCode                                                                                                                                96.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
@@ -26,6 +26,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.AddStrings.AddStringsLinear                                                                                      100.0%
   LeetCode.Algorithms.AddToArrayFormOfInteger.AddToArrayFormOfIntegerDivision                                                          100.0%
   LeetCode.Algorithms.AddToArrayFormOfInteger.AddToArrayFormOfIntegerSummation                                                         100.0%
+  LeetCode.Algorithms.AddTwoIntegers.AddTwoIntegersMath                                                                                100.0%
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry                                                                          100.0%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive                                                    89.4%
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesBruteForce                                                                      100.0%
