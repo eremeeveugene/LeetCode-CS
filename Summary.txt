@@ -1,23 +1,23 @@
 Summary
-  Generated on: 02/01/2024 - 17:56:57
-  Coverage date: 02/01/2024 - 17:56:36 - 02/01/2024 - 17:56:39
+  Generated on: 02/01/2024 - 18:49:12
+  Coverage date: 02/01/2024 - 18:48:45 - 02/01/2024 - 18:48:48
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 103
-  Files: 103
-  Line coverage: 96.3%
-  Covered lines: 1765
+  Classes: 106
+  Files: 106
+  Line coverage: 96.4%
+  Covered lines: 1797
   Uncovered lines: 66
-  Coverable lines: 1831
-  Total lines: 4814
-  Branch coverage: 93.8% (653 of 696)
-  Covered branches: 653
-  Total branches: 696
-  Method coverage: 96% (168 of 175)
-  Covered methods: 168
-  Total methods: 175
+  Coverable lines: 1863
+  Total lines: 4922
+  Branch coverage: 93.9% (663 of 706)
+  Covered branches: 663
+  Total branches: 706
+  Method coverage: 96% (172 of 179)
+  Covered methods: 172
+  Total methods: 179
 
-LeetCode                                                                                                                                96.6%
+LeetCode                                                                                                                                96.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                   100.0%
@@ -73,6 +73,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.NeitherMinimumNorMaximum.NeitherMinimumNorMaximumUsingSorting                                                    100.0%
   LeetCode.Algorithms.NthTribonacciNumber.NthTribonacciNumberIterative                                                                 100.0%
   LeetCode.Algorithms.NthTribonacciNumber.NthTribonacciNumberMatrixExponentiation                                                      100.0%
+  LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsDictionary                                                                    100.0%
+  LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsGroupBy                                                                       100.0%
+  LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsIterative                                                                     100.0%
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByConvertingToString                                                             85.0%
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByReversingDigits                                                                92.3%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray                                                                               100.0%
