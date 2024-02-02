@@ -9,30 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.CountOfMatchesInTournament;
+using LeetCode.Algorithms.CountOfMatchesInTournament;
 
-/// <inheritdoc />
-public class CountOfMatchesInTournamentIterative : ICountOfMatchesInTournament
-{
-    /// <summary>
-    /// Time complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
-    public int NumberOfMatches(int n)
-    {
-        return n - 1;
-        //var numberOfMatches = 0;
+namespace LeetCode.Tests.Algorithms.CountOfMatchesInTournament;
 
-        //while (n > 1)
-        //{
-        //    var roundMatches = n / 2;
-
-        //    numberOfMatches += roundMatches;
-
-        //    n -= roundMatches;
-        //}
-
-        //return numberOfMatches;
-    }
-}
+[TestClass]
+public class
+    CountOfMatchesInTournamentConstantTests : CountOfMatchesInTournamentTestsBase<CountOfMatchesInTournamentConstant>;

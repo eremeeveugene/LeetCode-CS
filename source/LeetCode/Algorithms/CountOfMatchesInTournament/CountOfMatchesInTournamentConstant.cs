@@ -12,27 +12,15 @@
 namespace LeetCode.Algorithms.CountOfMatchesInTournament;
 
 /// <inheritdoc />
-public class CountOfMatchesInTournamentIterative : ICountOfMatchesInTournament
+public class CountOfMatchesInTournamentConstant : ICountOfMatchesInTournament
 {
     /// <summary>
-    /// Time complexity - O(1)
+    ///     Time complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>
     public int NumberOfMatches(int n)
     {
         return n - 1;
-        //var numberOfMatches = 0;
-
-        //while (n > 1)
-        //{
-        //    var roundMatches = n / 2;
-
-        //    numberOfMatches += roundMatches;
-
-        //    n -= roundMatches;
-        //}
-
-        //return numberOfMatches;
     }
 }
