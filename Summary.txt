@@ -1,23 +1,23 @@
 Summary
-  Generated on: 02/02/2024 - 19:08:54
-  Coverage date: 02/02/2024 - 19:08:31 - 02/02/2024 - 19:08:35
+  Generated on: 02/02/2024 - 20:20:38
+  Coverage date: 02/02/2024 - 20:20:11 - 02/02/2024 - 20:20:14
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 117
-  Files: 117
+  Classes: 119
+  Files: 119
   Line coverage: 96.6%
-  Covered lines: 1885
+  Covered lines: 1920
   Uncovered lines: 66
-  Coverable lines: 1951
-  Total lines: 5289
-  Branch coverage: 94% (679 of 722)
-  Covered branches: 679
-  Total branches: 722
-  Method coverage: 96.3% (183 of 190)
-  Covered methods: 183
-  Total methods: 190
+  Coverable lines: 1986
+  Total lines: 5380
+  Branch coverage: 94.1% (689 of 732)
+  Covered branches: 689
+  Total branches: 732
+  Method coverage: 96.3% (185 of 192)
+  Covered methods: 185
+  Total methods: 192
 
-LeetCode                                                                                                                                96.8%
+LeetCode                                                                                                                                96.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                   100.0%
@@ -65,6 +65,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixHorizontalScanning                                                        100.0%
   LeetCode.Algorithms.MajorityElement.MajorityElementDictionary                                                                        100.0%
   LeetCode.Algorithms.MajorityElement.MajorityElementDistinctCount                                                                     100.0%
+  LeetCode.Algorithms.Maximum69Number.Maximum69NumberIterative                                                                         100.0%
+  LeetCode.Algorithms.Maximum69Number.Maximum69NumberString                                                                            100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayMergingAndSorting                                                               100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayThreePointers                                                                   100.0%
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                                                                     95.4%
