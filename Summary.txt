@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/01/2024 - 18:49:12
-  Coverage date: 02/01/2024 - 18:48:45 - 02/01/2024 - 18:48:48
+  Generated on: 02/02/2024 - 15:53:13
+  Coverage date: 02/02/2024 - 15:52:52 - 02/02/2024 - 15:52:56
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 106
-  Files: 106
+  Classes: 107
+  Files: 107
   Line coverage: 96.4%
-  Covered lines: 1797
+  Covered lines: 1802
   Uncovered lines: 66
-  Coverable lines: 1863
-  Total lines: 4922
+  Coverable lines: 1868
+  Total lines: 4951
   Branch coverage: 93.9% (663 of 706)
   Covered branches: 663
   Total branches: 706
-  Method coverage: 96% (172 of 179)
-  Covered methods: 172
-  Total methods: 179
+  Method coverage: 96.1% (173 of 180)
+  Covered methods: 173
+  Total methods: 180
 
 LeetCode                                                                                                                                96.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
@@ -36,6 +36,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CalculateMoneyInLeetcodeBank.CalculateMoneyInLeetcodeBankIterative                                               100.0%
   LeetCode.Algorithms.ClimbingStairs.ClimbingStairsDynamicProgramming                                                                  100.0%
   LeetCode.Algorithms.ClimbingStairs.ClimbingStairsIterativeFibonacci                                                                  100.0%
+  LeetCode.Algorithms.ConvertTheTemperature.ConvertTheTemperatureMath                                                                  100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsDynamicProgramming                                                                      100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                                                                               100.0%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                 100.0%
