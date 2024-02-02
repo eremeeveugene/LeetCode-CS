@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/02/2024 - 20:20:38
-  Coverage date: 02/02/2024 - 20:20:11 - 02/02/2024 - 20:20:14
+  Generated on: 02/02/2024 - 20:35:58
+  Coverage date: 02/02/2024 - 20:35:36 - 02/02/2024 - 20:35:39
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 119
-  Files: 119
+  Classes: 120
+  Files: 120
   Line coverage: 96.6%
-  Covered lines: 1920
+  Covered lines: 1923
   Uncovered lines: 66
-  Coverable lines: 1986
-  Total lines: 5380
+  Coverable lines: 1989
+  Total lines: 5407
   Branch coverage: 94.1% (689 of 732)
   Covered branches: 689
   Total branches: 732
-  Method coverage: 96.3% (185 of 192)
-  Covered methods: 185
-  Total methods: 192
+  Method coverage: 96.3% (186 of 193)
+  Covered methods: 186
+  Total methods: 193
 
 LeetCode                                                                                                                                96.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
@@ -32,6 +32,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesBruteForce                                                                      100.0%
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesMinimumTwoPrices                                                                100.0%
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesSorting                                                                         100.0%
+  LeetCode.Algorithms.CalculateDelayedArrivalTime.CalculateDelayedArrivalTimeConstant                                                  100.0%
   LeetCode.Algorithms.CalculateMoneyInLeetcodeBank.CalculateMoneyInLeetcodeBankArithmeticSequence                                      100.0%
   LeetCode.Algorithms.CalculateMoneyInLeetcodeBank.CalculateMoneyInLeetcodeBankIterative                                               100.0%
   LeetCode.Algorithms.ClimbingStairs.ClimbingStairsDynamicProgramming                                                                  100.0%
