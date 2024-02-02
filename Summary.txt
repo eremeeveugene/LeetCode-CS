@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/02/2024 - 18:18:56
-  Coverage date: 02/02/2024 - 18:18:34 - 02/02/2024 - 18:18:37
+  Generated on: 02/02/2024 - 18:28:38
+  Coverage date: 02/02/2024 - 18:28:16 - 02/02/2024 - 18:28:20
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 114
-  Files: 114
+  Classes: 115
+  Files: 115
   Line coverage: 96.5%
-  Covered lines: 1860
+  Covered lines: 1868
   Uncovered lines: 66
-  Coverable lines: 1926
-  Total lines: 5187
-  Branch coverage: 94% (675 of 718)
-  Covered branches: 675
-  Total branches: 718
-  Method coverage: 96.2% (180 of 187)
-  Covered methods: 180
-  Total methods: 187
+  Coverable lines: 1934
+  Total lines: 5215
+  Branch coverage: 94% (677 of 720)
+  Covered branches: 677
+  Total branches: 720
+  Method coverage: 96.2% (181 of 188)
+  Covered methods: 181
+  Total methods: 188
 
 LeetCode                                                                                                                                96.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
@@ -119,6 +119,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ValidPalindrome2.ValidPalindrome2TwoPointers                                                                     100.0%
   LeetCode.Algorithms.ValidParentheses.ValidParenthesesStackDictionary                                                                 100.0%
   LeetCode.Algorithms.ValidParentheses.ValidParenthesesStackSwitch                                                                     100.0%
+  LeetCode.Algorithms.XOROperationInAnArray.XOROperationInAnArrayIterative                                                             100.0%
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                          100.0%
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLockFactory                                                   100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                         100.0%
