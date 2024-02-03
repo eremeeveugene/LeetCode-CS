@@ -14,6 +14,11 @@ namespace LeetCode.Algorithms.FindThePivotInteger;
 /// <inheritdoc />
 public class FindThePivotIntegerConstant : IFindThePivotInteger
 {
+    /// <summary>
+    ///     Time complexity - O(1)
+    /// </summary>
+    /// <param name="n"></param>
+    /// <returns></returns>
     public int PivotInteger(int n)
     {
         var t = Math.Sqrt(n * (n + 1) / 2.0);

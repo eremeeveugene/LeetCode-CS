@@ -14,6 +14,11 @@ namespace LeetCode.Algorithms.FindThePivotInteger;
 /// <inheritdoc />
 public class FindThePivotIntegerIterative : IFindThePivotInteger
 {
+    /// <summary>
+    ///     Time complexity - O(n log n)
+    /// </summary>
+    /// <param name="n"></param>
+    /// <returns></returns>
     public int PivotInteger(int n)
     {
         var left = 1;
