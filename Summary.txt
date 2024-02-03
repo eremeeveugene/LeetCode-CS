@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/03/2024 - 17:50:27
-  Coverage date: 02/03/2024 - 17:50:04 - 02/03/2024 - 17:50:08
+  Generated on: 02/03/2024 - 19:08:24
+  Coverage date: 02/03/2024 - 19:08:03 - 02/03/2024 - 19:08:06
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 122
-  Files: 122
+  Classes: 123
+  Files: 123
   Line coverage: 96.7%
-  Covered lines: 1957
+  Covered lines: 1966
   Uncovered lines: 66
-  Coverable lines: 2023
-  Total lines: 5499
-  Branch coverage: 94.2% (699 of 742)
-  Covered branches: 699
-  Total branches: 742
-  Method coverage: 96.4% (189 of 196)
-  Covered methods: 189
-  Total methods: 196
+  Coverable lines: 2032
+  Total lines: 5534
+  Branch coverage: 94.2% (701 of 744)
+  Covered branches: 701
+  Total branches: 744
+  Method coverage: 96.4% (190 of 197)
+  Covered methods: 190
+  Total methods: 197
 
 LeetCode                                                                                                                                96.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
@@ -29,6 +29,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.AddTwoIntegers.AddTwoIntegersMath                                                                                100.0%
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry                                                                          100.0%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive                                                    89.4%
+  LeetCode.Algorithms.BuildArrayFromPermutation.BuildArrayFromPermutationIterative                                                     100.0%
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesBruteForce                                                                      100.0%
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesMinimumTwoPrices                                                                100.0%
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesSorting                                                                         100.0%
