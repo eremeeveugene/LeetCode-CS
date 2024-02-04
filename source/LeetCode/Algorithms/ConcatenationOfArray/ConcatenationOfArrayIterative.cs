@@ -11,6 +11,7 @@
 
 namespace LeetCode.Algorithms.ConcatenationOfArray;
 
+/// <inheritdoc />
 public class ConcatenationOfArrayIterative : IConcatenationOfArray
 {
     /// <summary>
