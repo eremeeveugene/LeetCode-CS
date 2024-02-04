@@ -11,8 +11,14 @@
 
 namespace LeetCode.Algorithms.ConcatenationOfArray;
 
+/// <inheritdoc />
 public class ConcatenationOfArrayConcat : IConcatenationOfArray
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <returns></returns>
     public int[] GetConcatenation(int[] nums)
     {
         return [.. nums, .. nums];
