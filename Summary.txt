@@ -1,23 +1,23 @@
 Summary
-  Generated on: 02/03/2024 - 19:08:24
-  Coverage date: 02/03/2024 - 19:08:03 - 02/03/2024 - 19:08:06
+  Generated on: 02/04/2024 - 18:12:00
+  Coverage date: 02/04/2024 - 18:11:38 - 02/04/2024 - 18:11:41
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 123
-  Files: 123
+  Classes: 125
+  Files: 125
   Line coverage: 96.7%
-  Covered lines: 1966
+  Covered lines: 1978
   Uncovered lines: 66
-  Coverable lines: 2032
-  Total lines: 5534
-  Branch coverage: 94.2% (701 of 744)
-  Covered branches: 701
-  Total branches: 744
-  Method coverage: 96.4% (190 of 197)
-  Covered methods: 190
-  Total methods: 197
+  Coverable lines: 2044
+  Total lines: 5587
+  Branch coverage: 94.2% (707 of 750)
+  Covered branches: 707
+  Total branches: 750
+  Method coverage: 96.4% (192 of 199)
+  Covered methods: 192
+  Total methods: 199
 
-LeetCode                                                                                                                                96.9%
+LeetCode                                                                                                                                97.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                         92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                   100.0%
@@ -38,6 +38,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CalculateMoneyInLeetcodeBank.CalculateMoneyInLeetcodeBankIterative                                               100.0%
   LeetCode.Algorithms.ClimbingStairs.ClimbingStairsDynamicProgramming                                                                  100.0%
   LeetCode.Algorithms.ClimbingStairs.ClimbingStairsIterativeFibonacci                                                                  100.0%
+  LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayConcat                                                                  100.0%
+  LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayIterative                                                               100.0%
   LeetCode.Algorithms.ConvertTheTemperature.ConvertTheTemperatureMath                                                                  100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsDynamicProgramming                                                                      100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                                                                               100.0%
