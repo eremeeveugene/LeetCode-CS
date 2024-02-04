@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/04/2024 - 18:12:00
-  Coverage date: 02/04/2024 - 18:11:38 - 02/04/2024 - 18:11:41
+  Generated on: 02/04/2024 - 19:10:42
+  Coverage date: 02/04/2024 - 19:10:17 - 02/04/2024 - 19:10:20
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 125
-  Files: 125
+  Classes: 126
+  Files: 126
   Line coverage: 96.7%
-  Covered lines: 1978
+  Covered lines: 1990
   Uncovered lines: 66
-  Coverable lines: 2044
-  Total lines: 5587
-  Branch coverage: 94.2% (707 of 750)
-  Covered branches: 707
-  Total branches: 750
-  Method coverage: 96.4% (192 of 199)
-  Covered methods: 192
-  Total methods: 199
+  Coverable lines: 2056
+  Total lines: 5626
+  Branch coverage: 94.2% (711 of 754)
+  Covered branches: 711
+  Total branches: 754
+  Method coverage: 96.5% (193 of 200)
+  Covered methods: 193
+  Total methods: 200
 
 LeetCode                                                                                                                                97.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
@@ -108,6 +108,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral                                                                  87.5%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionBinarySearch                                                            100.0%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionIterative                                                               100.0%
+  LeetCode.Algorithms.ShuffleTheArray.ShuffleTheArrayIterative                                                                         100.0%
   LeetCode.Algorithms.SingleNumber.SingleNumberHashSet                                                                                 100.0%
   LeetCode.Algorithms.SingleNumber.SingleNumberXor                                                                                     100.0%
   LeetCode.Algorithms.SingleNumber2.SingleNumber2Bitwise                                                                               100.0%
