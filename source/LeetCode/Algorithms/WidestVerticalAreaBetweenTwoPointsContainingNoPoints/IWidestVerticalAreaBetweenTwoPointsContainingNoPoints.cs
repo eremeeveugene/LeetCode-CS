@@ -9,29 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using Newtonsoft.Json;
+namespace LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints;
 
-namespace LeetCode.Core.Helpers;
-
-public static class JsonConvertHelper<T>
+/// <summary>
+///     https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description/
+/// </summary>
+public interface IWidestVerticalAreaBetweenTwoPointsContainingNoPoints
 {
-    public static List<T?> JsonArrayToList(string jsonArray)
-    {
-        if (jsonArray == JsonHelper.EmptyArray)
-        {
-            return [];
-        }
-
-        return JsonConvert.DeserializeObject<List<T?>>(jsonArray) ?? throw new InvalidOperationException();
-    }
-
-    public static T[][] JsonArrayToJaggedArray(string jsonArray)
-    {
-        if (jsonArray == JsonHelper.EmptyArray)
-        {
-            return [];
-        }
-
-        return JsonConvert.DeserializeObject<T[][]>(jsonArray) ?? throw new InvalidOperationException();
-    }
+    int MaxWidthOfVerticalArea(int[][] points);
 }
