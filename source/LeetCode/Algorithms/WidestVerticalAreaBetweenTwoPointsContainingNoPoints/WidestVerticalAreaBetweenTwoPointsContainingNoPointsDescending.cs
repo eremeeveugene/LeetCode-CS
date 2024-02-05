@@ -23,9 +23,7 @@ public class
     /// <returns></returns>
     public int MaxWidthOfVerticalArea(int[][] points)
     {
-        var xValues = points.Select(p => p[0]).ToArray();
-
-        Array.Sort(xValues);
+        var xValues = points.Select(p => p[0]).OrderDescending().ToArray();
 
         var maxWidth = 0;
 
