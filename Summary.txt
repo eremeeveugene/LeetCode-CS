@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/04/2024 - 19:12:57
-  Coverage date: 02/04/2024 - 19:12:29 - 02/04/2024 - 19:12:33
+  Generated on: 02/05/2024 - 15:04:56
+  Coverage date: 02/05/2024 - 15:04:30 - 02/05/2024 - 15:04:34
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 126
-  Files: 126
-  Line coverage: 96.7%
-  Covered lines: 1990
+  Classes: 128
+  Files: 128
+  Line coverage: 96.8%
+  Covered lines: 2018
   Uncovered lines: 66
-  Coverable lines: 2056
-  Total lines: 5633
-  Branch coverage: 94.2% (711 of 754)
-  Covered branches: 711
-  Total branches: 754
-  Method coverage: 96.5% (193 of 200)
-  Covered methods: 193
-  Total methods: 200
+  Coverable lines: 2084
+  Total lines: 5715
+  Branch coverage: 94.3% (723 of 766)
+  Covered branches: 723
+  Total branches: 766
+  Method coverage: 96.5% (195 of 202)
+  Covered methods: 195
+  Total methods: 202
 
 LeetCode                                                                                                                                97.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                     100.0%
@@ -58,6 +58,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor.FindTheOriginalArrayOfPrefixXorIterative                                         100.0%
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerConstant                                                                  100.0%
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerIterative                                                                 100.0%
+  LeetCode.Algorithms.FindWordsContainingCharacter.FindWordsContainingCharacterDictionary                                              100.0%
+  LeetCode.Algorithms.FindWordsContainingCharacter.FindWordsContainingCharacterIterative                                               100.0%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetChars                                                                              100.0%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetNumbers                                                                            100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce              100.0%
