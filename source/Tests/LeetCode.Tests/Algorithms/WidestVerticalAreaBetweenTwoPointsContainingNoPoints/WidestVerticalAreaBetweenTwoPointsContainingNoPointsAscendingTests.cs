@@ -9,29 +9,11 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using Newtonsoft.Json;
+using LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints;
 
-namespace LeetCode.Core.Helpers;
+namespace LeetCode.Tests.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints;
 
-public static class JsonConvertHelper<T>
-{
-    public static List<T?> JsonArrayToList(string jsonArray)
-    {
-        if (jsonArray == JsonHelper.EmptyArray)
-        {
-            return [];
-        }
-
-        return JsonConvert.DeserializeObject<List<T?>>(jsonArray) ?? throw new InvalidOperationException();
-    }
-
-    public static T[][] JsonArrayToJaggedArray(string jsonArray)
-    {
-        if (jsonArray == JsonHelper.EmptyArray)
-        {
-            return [];
-        }
-
-        return JsonConvert.DeserializeObject<T[][]>(jsonArray) ?? throw new InvalidOperationException();
-    }
-}
+[TestClass]
+public class WidestVerticalAreaBetweenTwoPointsContainingNoPointsAscendingTests :
+    WidestVerticalAreaBetweenTwoPointsContainingNoPointsTestsBase<
+        WidestVerticalAreaBetweenTwoPointsContainingNoPointsAscending>;
