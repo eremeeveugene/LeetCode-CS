@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/05/2024 - 17:07:58
-  Coverage date: 02/05/2024 - 17:07:32 - 02/05/2024 - 17:07:36
+  Generated on: 02/06/2024 - 17:54:56
+  Coverage date: 02/06/2024 - 17:54:34 - 02/06/2024 - 17:54:37
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 131
-  Files: 131
-  Line coverage: 96.7%
-  Covered lines: 2052
+  Classes: 133
+  Files: 133
+  Line coverage: 96.8%
+  Covered lines: 2069
   Uncovered lines: 68
-  Coverable lines: 2120
-  Total lines: 5837
-  Branch coverage: 94.2% (733 of 778)
-  Covered branches: 733
-  Total branches: 778
-  Method coverage: 96.6% (199 of 206)
-  Covered methods: 199
-  Total methods: 206
+  Coverable lines: 2137
+  Total lines: 5905
+  Branch coverage: 94.2% (737 of 782)
+  Covered branches: 737
+  Total branches: 782
+  Method coverage: 96.6% (201 of 208)
+  Covered methods: 201
+  Total methods: 208
 
 LeetCode                                                                                                                                    97.1%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -47,6 +47,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountOfMatchesInTournament.CountOfMatchesInTournamentIterative                                                       100.0%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                     100.0%
   LeetCode.Algorithms.DecodeXORedArray.DecodeXORedArrayIterative                                                                           100.0%
+  LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressReplace                                                                     100.0%
+  LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressStringBuilder                                                               100.0%
   LeetCode.Algorithms.DistributeMoneyToMaximumChildren.DistributeMoneyToMaximumChildrenLinear                                               80.0%
   LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceConstant                                100.0%
   LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceIterative                               100.0%
