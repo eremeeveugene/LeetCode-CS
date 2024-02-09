@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/08/2024 - 13:09:33
-  Coverage date: 02/08/2024 - 13:09:10 - 02/08/2024 - 13:09:15
+  Generated on: 02/09/2024 - 18:30:02
+  Coverage date: 02/09/2024 - 18:29:39 - 02/09/2024 - 18:29:43
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 143
-  Files: 143
+  Classes: 144
+  Files: 144
   Line coverage: 96.9%
-  Covered lines: 2161
+  Covered lines: 2177
   Uncovered lines: 68
-  Coverable lines: 2229
-  Total lines: 6255
-  Branch coverage: 94.4% (767 of 812)
-  Covered branches: 767
-  Total branches: 812
-  Method coverage: 96.8% (212 of 219)
-  Covered methods: 212
-  Total methods: 219
+  Coverable lines: 2245
+  Total lines: 6298
+  Branch coverage: 94.4% (773 of 818)
+  Covered branches: 773
+  Total branches: 818
+  Method coverage: 96.8% (213 of 220)
+  Covered methods: 213
+  Total methods: 220
 
 LeetCode                                                                                                                                    97.2%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -107,6 +107,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsIterative                                                                         100.0%
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByConvertingToString                                                                 85.0%
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByReversingDigits                                                                    92.3%
+  LeetCode.Algorithms.PerfectSquares.PerfectSquaresIterative                                                                               100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray                                                                                   100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArrayV2                                                                                 100.0%
   LeetCode.Algorithms.RemoveElement.RemoveElementBruteForce                                                                                100.0%
