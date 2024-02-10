@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/10/2024 - 10:30:37
-  Coverage date: 02/10/2024 - 10:30:13 - 02/10/2024 - 10:30:17
+  Generated on: 02/10/2024 - 10:58:59
+  Coverage date: 02/10/2024 - 10:58:35 - 02/10/2024 - 10:58:39
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 144
-  Files: 144
+  Classes: 147
+  Files: 147
   Line coverage: 96.9%
-  Covered lines: 2177
-  Uncovered lines: 68
-  Coverable lines: 2245
-  Total lines: 6298
-  Branch coverage: 94.4% (773 of 818)
-  Covered branches: 773
-  Total branches: 818
-  Method coverage: 96.8% (213 of 220)
-  Covered methods: 213
-  Total methods: 220
+  Covered lines: 2229
+  Uncovered lines: 70
+  Coverable lines: 2299
+  Total lines: 6442
+  Branch coverage: 94.4% (793 of 840)
+  Covered branches: 793
+  Total branches: 840
+  Method coverage: 96.8% (216 of 223)
+  Covered methods: 216
+  Total methods: 223
 
 LeetCode                                                                                                                                    97.2%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -36,6 +36,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.CalculateDelayedArrivalTime.CalculateDelayedArrivalTimeConstant                                                      100.0%
   LeetCode.Algorithms.CalculateMoneyInLeetcodeBank.CalculateMoneyInLeetcodeBankArithmeticSequence                                          100.0%
   LeetCode.Algorithms.CalculateMoneyInLeetcodeBank.CalculateMoneyInLeetcodeBankIterative                                                   100.0%
+  LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentConcat                                        100.0%
+  LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentIterative                                      93.1%
+  LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentTwoPointers                                   100.0%
   LeetCode.Algorithms.ClimbingStairs.ClimbingStairsDynamicProgramming                                                                      100.0%
   LeetCode.Algorithms.ClimbingStairs.ClimbingStairsIterativeFibonacci                                                                      100.0%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayConcat                                                                      100.0%
