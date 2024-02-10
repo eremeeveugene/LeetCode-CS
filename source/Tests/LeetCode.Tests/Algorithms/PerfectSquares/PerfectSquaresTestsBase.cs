@@ -19,7 +19,7 @@ public abstract class PerfectSquaresTestsBase<T> where T : IPerfectSquares, new(
     [DataRow(3, 3)]
     [DataRow(12, 3)]
     [DataRow(13, 2)]
-    public void Test(int n, int expectedResult)
+    public void NumSquares_GivenNumber_ReturnsMinimumNumberOfPerfectSquares(int n, int expectedResult)
     {
         // Arrange
         var solution = new T();
