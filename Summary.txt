@@ -1,23 +1,23 @@
 Summary
-  Generated on: 02/10/2024 - 10:58:59
-  Coverage date: 02/10/2024 - 10:58:35 - 02/10/2024 - 10:58:39
+  Generated on: 02/10/2024 - 17:48:04
+  Coverage date: 02/10/2024 - 17:47:33 - 02/10/2024 - 17:47:37
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 147
-  Files: 147
-  Line coverage: 96.9%
-  Covered lines: 2229
+  Classes: 149
+  Files: 149
+  Line coverage: 97.0%
+  Covered lines: 2282
   Uncovered lines: 70
-  Coverable lines: 2299
-  Total lines: 6442
-  Branch coverage: 94.4% (793 of 840)
-  Covered branches: 793
-  Total branches: 840
-  Method coverage: 96.8% (216 of 223)
-  Covered methods: 216
-  Total methods: 223
+  Coverable lines: 2352
+  Total lines: 6551
+  Branch coverage: 94.3% (804 of 852)
+  Covered branches: 804
+  Total branches: 852
+  Method coverage: 96.9% (219 of 226)
+  Covered methods: 219
+  Total methods: 226
 
-LeetCode                                                                                                                                    97.2%
+LeetCode                                                                                                                                    97.3%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -36,6 +36,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CalculateDelayedArrivalTime.CalculateDelayedArrivalTimeConstant                                                      100.0%
   LeetCode.Algorithms.CalculateMoneyInLeetcodeBank.CalculateMoneyInLeetcodeBankArithmeticSequence                                          100.0%
   LeetCode.Algorithms.CalculateMoneyInLeetcodeBank.CalculateMoneyInLeetcodeBankIterative                                                   100.0%
+  LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramHashSet                                                       100.0%
+  LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramIterative                                                     100.0%
   LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentConcat                                        100.0%
   LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentIterative                                      93.1%
   LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentTwoPointers                                   100.0%
