@@ -1,23 +1,23 @@
 Summary
-  Generated on: 02/10/2024 - 18:28:45
-  Coverage date: 02/10/2024 - 18:28:21 - 02/10/2024 - 18:28:24
+  Generated on: 02/11/2024 - 10:06:01
+  Coverage date: 02/11/2024 - 10:05:38 - 02/11/2024 - 10:05:42
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 150
-  Files: 150
-  Line coverage: 97.0%
-  Covered lines: 2324
+  Classes: 152
+  Files: 152
+  Line coverage: 97.1%
+  Covered lines: 2356
   Uncovered lines: 70
-  Coverable lines: 2394
-  Total lines: 6623
-  Branch coverage: 94.3% (808 of 856)
-  Covered branches: 808
-  Total branches: 856
-  Method coverage: 96.9% (221 of 228)
-  Covered methods: 221
-  Total methods: 228
+  Coverable lines: 2426
+  Total lines: 6711
+  Branch coverage: 94.4% (818 of 866)
+  Covered branches: 818
+  Total branches: 866
+  Method coverage: 96.9% (223 of 230)
+  Covered methods: 223
+  Total methods: 230
 
-LeetCode                                                                                                                                    97.3%
+LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -50,6 +50,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                                                                                   100.0%
   LeetCode.Algorithms.CountOfMatchesInTournament.CountOfMatchesInTournamentConstant                                                        100.0%
   LeetCode.Algorithms.CountOfMatchesInTournament.CountOfMatchesInTournamentIterative                                                       100.0%
+  LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget.CountPairsWhoseSumIsLessThanTargetIterative                                       100.0%
+  LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget.CountPairsWhoseSumIsLessThanTargetSortTwoPointers                                 100.0%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                     100.0%
   LeetCode.Algorithms.DecodeXORedArray.DecodeXORedArrayIterative                                                                           100.0%
   LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressReplace                                                                     100.0%
