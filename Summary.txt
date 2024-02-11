@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/11/2024 - 10:50:11
-  Coverage date: 02/11/2024 - 10:49:48 - 02/11/2024 - 10:49:51
+  Generated on: 02/11/2024 - 18:08:28
+  Coverage date: 02/11/2024 - 18:07:58 - 02/11/2024 - 18:08:01
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 155
-  Files: 155
+  Classes: 157
+  Files: 157
   Line coverage: 97.1%
-  Covered lines: 2382
+  Covered lines: 2406
   Uncovered lines: 70
-  Coverable lines: 2452
-  Total lines: 6809
-  Branch coverage: 94.4% (822 of 870)
-  Covered branches: 822
-  Total branches: 870
-  Method coverage: 96.9% (226 of 233)
-  Covered methods: 226
-  Total methods: 233
+  Coverable lines: 2476
+  Total lines: 6885
+  Branch coverage: 94.5% (834 of 882)
+  Covered branches: 834
+  Total branches: 882
+  Method coverage: 97% (228 of 235)
+  Covered methods: 228
+  Total methods: 235
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -79,6 +79,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetNumbers                                                                                100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce                  100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing      100.0%
+  LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSet                                                               100.0%
+  LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysLinq                                                                  100.0%
   LeetCode.Algorithms.IsomorphicStrings.IsomorphicStringsDictionary                                                                        100.0%
   LeetCode.Algorithms.IsomorphicStrings.IsomorphicStringsTwoDictionaries                                                                   100.0%
   LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesHashSet                                                                               100.0%
