@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/11/2024 - 10:06:01
-  Coverage date: 02/11/2024 - 10:05:38 - 02/11/2024 - 10:05:42
+  Generated on: 02/11/2024 - 10:24:08
+  Coverage date: 02/11/2024 - 10:23:40 - 02/11/2024 - 10:23:44
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 152
-  Files: 152
+  Classes: 153
+  Files: 153
   Line coverage: 97.1%
-  Covered lines: 2356
+  Covered lines: 2362
   Uncovered lines: 70
-  Coverable lines: 2426
-  Total lines: 6711
+  Coverable lines: 2432
+  Total lines: 6741
   Branch coverage: 94.4% (818 of 866)
   Covered branches: 818
   Total branches: 866
-  Method coverage: 96.9% (223 of 230)
-  Covered methods: 223
-  Total methods: 230
+  Method coverage: 96.9% (224 of 231)
+  Covered methods: 224
+  Total methods: 231
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -139,6 +139,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SingleNumber3.SingleNumber3Bitwise                                                                                   100.0%
   LeetCode.Algorithms.SingleNumber3.SingleNumber3Dictionary                                                                                100.0%
   LeetCode.Algorithms.SmallestEvenMultiple.SmallestEvenMultipleConstant                                                                    100.0%
+  LeetCode.Algorithms.SortThePeople.SortThePeopleLinq                                                                                      100.0%
   LeetCode.Algorithms.Sqrt.SqrtBinarySearch                                                                                                100.0%
   LeetCode.Algorithms.Sqrt.SqrtNewtonsMethod                                                                                               100.0%
   LeetCode.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger.SubtractTheProductAndSumOfDigitsOfAnIntegerDivision                      100.0%
