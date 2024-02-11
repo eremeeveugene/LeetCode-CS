@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/11/2024 - 10:24:08
-  Coverage date: 02/11/2024 - 10:23:40 - 02/11/2024 - 10:23:44
+  Generated on: 02/11/2024 - 10:50:11
+  Coverage date: 02/11/2024 - 10:49:48 - 02/11/2024 - 10:49:51
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 153
-  Files: 153
+  Classes: 155
+  Files: 155
   Line coverage: 97.1%
-  Covered lines: 2362
+  Covered lines: 2382
   Uncovered lines: 70
-  Coverable lines: 2432
-  Total lines: 6741
-  Branch coverage: 94.4% (818 of 866)
-  Covered branches: 818
-  Total branches: 866
-  Method coverage: 96.9% (224 of 231)
-  Covered methods: 224
-  Total methods: 231
+  Coverable lines: 2452
+  Total lines: 6809
+  Branch coverage: 94.4% (822 of 870)
+  Covered branches: 822
+  Total branches: 870
+  Method coverage: 96.9% (226 of 233)
+  Covered methods: 226
+  Total methods: 233
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -139,6 +139,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.SingleNumber3.SingleNumber3Bitwise                                                                                   100.0%
   LeetCode.Algorithms.SingleNumber3.SingleNumber3Dictionary                                                                                100.0%
   LeetCode.Algorithms.SmallestEvenMultiple.SmallestEvenMultipleConstant                                                                    100.0%
+  LeetCode.Algorithms.SortArrayByIncreasingFrequency.SortArrayByIncreasingFrequencyDictionary                                              100.0%
+  LeetCode.Algorithms.SortArrayByIncreasingFrequency.SortArrayByIncreasingFrequencyLinq                                                    100.0%
   LeetCode.Algorithms.SortThePeople.SortThePeopleLinq                                                                                      100.0%
   LeetCode.Algorithms.Sqrt.SqrtBinarySearch                                                                                                100.0%
   LeetCode.Algorithms.Sqrt.SqrtNewtonsMethod                                                                                               100.0%
