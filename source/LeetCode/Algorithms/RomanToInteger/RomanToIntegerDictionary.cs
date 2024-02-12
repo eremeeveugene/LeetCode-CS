@@ -9,11 +9,28 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.RomanToInteger.Iterative;
+namespace LeetCode.Algorithms.RomanToInteger;
 
 /// <inheritdoc />
-public class RomanToIntegerIterative : IRomanToInteger
+public class RomanToIntegerDictionary : IRomanToInteger
 {
+    private readonly Dictionary<string, int> _romanIntegersDictionary = new()
+    {
+        { "IV", 4 },
+        { "IX", 9 },
+        { "XL", 40 },
+        { "XC", 90 },
+        { "CD", 400 },
+        { "CM", 900 },
+        { "I", 1 },
+        { "V", 5 },
+        { "X", 10 },
+        { "L", 50 },
+        { "C", 100 },
+        { "D", 500 },
+        { "M", 1000 }
+    };
+
     /// <summary>
     ///     Time complexity - O(n)
     /// </summary>
@@ -21,28 +38,28 @@ public class RomanToIntegerIterative : IRomanToInteger
     /// <returns></returns>
     public int RomanToInt(string romanString)
     {
-        List<RomanNumeral> romanNumerals = [];
+        var result = 0;
+        var i = 0;
 
-        for (var i = 0; i < romanString.Length; i++)
+        while (i < romanString.Length)
         {
-            var currentChar = romanString.ElementAt(i);
-            var nextChar = romanString.ElementAtOrDefault(i + 1);
-
-            var subtractiveRomanNumeral =
-                SubtractiveRomanNumeral.SubtractiveRomanNumerals.FirstOrDefault(
-                    s => s.Symbol.Char.Equals(currentChar) && s.SecondSymbol.Char.Equals(nextChar));
-
-            if (subtractiveRomanNumeral != null)
+            if (i < romanString.Length - 1 &&
+                _romanIntegersDictionary.TryGetValue(romanString.Substring(i, 2), out var value))
             {
-                romanNumerals.Add(subtractiveRomanNumeral);
-                i++;
+                result += value;
+                i += 2;
             }
             else
             {
-                romanNumerals.Add(RomanNumeral.RomanNumerals.First(s => s.Symbol.Char.Equals(currentChar)));
+                if (_romanIntegersDictionary.TryGetValue(romanString.Substring(i, 1), out var value1))
+                {
+                    result += value1;
+                }
+
+                i++;
             }
         }
 
-        return romanNumerals.Sum(romanNumeral => romanNumeral.Value);
+        return result;
     }
 }
