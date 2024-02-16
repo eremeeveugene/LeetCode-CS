@@ -29,10 +29,6 @@ public abstract class RemoveDuplicatesFromSortedArrayTestsBase<T> where T : IRem
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
-
-        for (var i = 0; i < actualResult; i++)
-        {
-            Assert.AreEqual(expectedNums[i], nums[i]);
-        }
+        CollectionAssert.AreEquivalent(expectedNums, nums.Take(actualResult).ToArray());
     }
 }

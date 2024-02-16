@@ -29,10 +29,6 @@ public abstract class RemoveElementTestsBase<T> where T : IRemoveElement, new()
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
-
-        for (var i = 0; i < actualResult; i++)
-        {
-            Assert.AreEqual(expectedNums[i], nums[i]);
-        }
+        CollectionAssert.AreEquivalent(expectedNums, nums.Take(actualResult).ToArray());
     }
 }
