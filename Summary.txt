@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/15/2024 - 19:04:30
-  Coverage date: 02/15/2024 - 19:04:04 - 02/15/2024 - 19:04:08
+  Generated on: 02/16/2024 - 20:05:28
+  Coverage date: 02/16/2024 - 20:04:59 - 02/16/2024 - 20:05:03
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 168
-  Files: 168
+  Classes: 169
+  Files: 169
   Line coverage: 97.2%
-  Covered lines: 2595
+  Covered lines: 2611
   Uncovered lines: 73
-  Coverable lines: 2668
-  Total lines: 7407
-  Branch coverage: 94.5% (887 of 938)
-  Covered branches: 887
-  Total branches: 938
-  Method coverage: 97.1% (242 of 249)
-  Covered methods: 242
-  Total methods: 249
+  Coverable lines: 2684
+  Total lines: 7453
+  Branch coverage: 94.5% (891 of 942)
+  Covered branches: 891
+  Total branches: 942
+  Method coverage: 97.2% (243 of 250)
+  Covered methods: 243
+  Total methods: 250
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -125,6 +125,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArrayV2                                                                                 100.0%
   LeetCode.Algorithms.RemoveDuplicatesFromSortedArray.RemoveDuplicatesFromSortedArrayIterative                                             100.0%
   LeetCode.Algorithms.RemoveElement.RemoveElementBruteForce                                                                                100.0%
+  LeetCode.Algorithms.RemoveElement.RemoveElementTwoPointers                                                                               100.0%
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternConcat                                                              100.0%
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternIterative                                                           100.0%
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternKMP                                                                  90.3%
