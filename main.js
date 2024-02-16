@@ -230,7 +230,8 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.AddToArrayFormOfInteger.AddToArrayFormOfIntegerDivision", "rp": "LeetCode_AddToArrayFormOfIntegerDivision.html", "cl": 32, "ucl": 0, "cal": 32, "tl": 67, "cb": 10, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.AddToArrayFormOfInteger.AddToArrayFormOfIntegerSummation", "rp": "LeetCode_AddToArrayFormOfIntegerSummation.html", "cl": 38, "ucl": 0, "cal": 38, "tl": 75, "cb": 12, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.AddTwoIntegers.AddTwoIntegersMath", "rp": "LeetCode_AddTwoIntegersMath.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 27, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry", "rp": "LeetCode_AddTwoNumbersInPlaceCarry.html", "cl": 24, "ucl": 0, "cal": 24, "tl": 59, "cb": 16, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry", "rp": "LeetCode_AddTwoNumbersInPlaceCarry.html", "cl": 24, "ucl": 0, "cal": 24, "tl": 60, "cb": 16, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersIterative", "rp": "LeetCode_AddTwoNumbersIterative.html", "cl": 23, "ucl": 0, "cal": 23, "tl": 55, "cb": 10, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.ArithmeticSubarrays.ArithmeticSubarraysHashSet", "rp": "LeetCode_ArithmeticSubarraysHashSet.html", "cl": 31, "ucl": 0, "cal": 31, "tl": 70, "cb": 11, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.ArithmeticSubarrays.ArithmeticSubarraysSort", "rp": "LeetCode_ArithmeticSubarraysSort.html", "cl": 21, "ucl": 0, "cal": 21, "tl": 55, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive", "rp": "LeetCode_BinaryTreeInorderTraversalRecursive.html", "cl": 17, "ucl": 2, "cal": 19, "tl": 52, "cb": 5, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -432,7 +433,7 @@ var riskHotspots = [
       { "value": 16, "exceeded": false },
     ]},
   {
-    "assembly": "LeetCode", "class": "LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry", "reportPath": "LeetCode_AddTwoNumbersInPlaceCarry.html", "methodName": "AddTwoNumbers(LeetCode.Core.Models.ListNode,LeetCode.Core.Models.ListNode)", "methodShortName": "AddTwoNumbers(...)", "fileIndex": 0, "line": 26,
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry", "reportPath": "LeetCode_AddTwoNumbersInPlaceCarry.html", "methodName": "AddTwoNumbers(LeetCode.Core.Models.ListNode,LeetCode.Core.Models.ListNode)", "methodShortName": "AddTwoNumbers(...)", "fileIndex": 0, "line": 27,
     "metrics": [
       { "value": 16, "exceeded": true },
       { "value": 16, "exceeded": false },
