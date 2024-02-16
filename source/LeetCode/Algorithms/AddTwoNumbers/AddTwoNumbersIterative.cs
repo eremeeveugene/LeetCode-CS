@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.AddTwoNumbers;
 
 /// <inheritdoc />
-public class AddTwoNumbersInPlaceCarry : IAddTwoNumbers
+public class AddTwoNumbersIterative : IAddTwoNumbers
 {
     /// <summary>
     ///     Time complexity - O(max(n, m))
@@ -25,36 +25,31 @@ public class AddTwoNumbersInPlaceCarry : IAddTwoNumbers
     /// <returns></returns>
     public ListNode? AddTwoNumbers(ListNode? l1, ListNode? l2)
     {
+        var dummyHead = new ListNode();
+        var current = dummyHead;
         var carry = 0;
 
-        ListNode? head = null;
-
-        while (l1 != null || l2 != null)
+        while (l1 != null || l2 != null || carry != 0)
         {
-            var val1 = l1?.val ?? 0;
-            var val2 = l2?.val ?? 0;
+            var sum = carry;
 
-            var sum = val1 + val2 + carry;
-
-            carry = 0;
-
-            if (sum >= 10)
+            if (l1 != null)
             {
-                carry = 1;
-                sum -= 10;
+                sum += l1.val;
+                l1 = l1.next;
             }
 
-            l1 = l1?.next;
-            l2 = l2?.next;
+            if (l2 != null)
+            {
+                sum += l2.val;
+                l2 = l2.next;
+            }
 
-            head = new ListNode(sum, head);
+            carry = sum / 10;
+            current.next = new ListNode(sum % 10);
+            current = current.next;
         }
 
-        if (carry > 0)
-        {
-            head = new ListNode(1, head);
-        }
-
-        return ListNode.Reverse(head);
+        return dummyHead.next;
     }
 }
