@@ -12,10 +12,10 @@
 namespace LeetCode.Algorithms.RemoveElement;
 
 /// <inheritdoc />
-public class RemoveElementBruteForce : IRemoveElement
+public class RemoveElementTwoPointers : IRemoveElement
 {
     /// <summary>
-    ///     Time complexity - O (n^3)
+    ///     Time complexity - O (n)
     ///     Space complexity - O (1)
     /// </summary>
     /// <param name="nums"></param>
@@ -23,22 +23,23 @@ public class RemoveElementBruteForce : IRemoveElement
     /// <returns></returns>
     public int RemoveElement(int[] nums, int val)
     {
-        for (var k = 0; k < nums.Length; k++)
-        {
-            for (var i = 0; i < nums.Length; i++)
-            {
-                if (nums[i] != val)
-                {
-                    continue;
-                }
+        var left = 0;
+        var right = nums.Length - 1;
 
-                for (var j = i; j < nums.Length - 1; j++)
-                {
-                    (nums[j], nums[j + 1]) = (nums[j + 1], nums[j]);
-                }
+        while (left <= right)
+        {
+            if (nums[left] == val)
+            {
+                (nums[left], nums[right]) = (nums[right], nums[left]);
+
+                right--;
+            }
+            else
+            {
+                left++;
             }
         }
 
-        return nums.Count(num => !num.Equals(val));
+        return left;
     }
 }

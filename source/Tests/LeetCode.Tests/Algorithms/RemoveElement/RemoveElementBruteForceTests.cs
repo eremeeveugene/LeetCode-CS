@@ -14,6 +14,4 @@ using LeetCode.Algorithms.RemoveElement;
 namespace LeetCode.Tests.Algorithms.RemoveElement;
 
 [TestClass]
-public class RemoveElementBruteForceTests : RemoveElementTestsBase<RemoveElementBruteForce>
-{
-}
+public class RemoveElementBruteForceTests : RemoveElementTestsBase<RemoveElementBruteForce>;
