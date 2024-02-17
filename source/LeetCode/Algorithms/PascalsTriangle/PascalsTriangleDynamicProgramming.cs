@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PascalsTriangle;
 
 /// <inheritdoc />
-public class PascalsTriangleIterative : IPascalsTriangle
+public class PascalsTriangleDynamicProgramming : IPascalsTriangle
 {
     /// <summary>
     ///     Time complexity - O(n^2)
