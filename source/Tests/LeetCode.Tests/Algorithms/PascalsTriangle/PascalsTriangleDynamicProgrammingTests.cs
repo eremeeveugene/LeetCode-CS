@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PascalsTriangle;
 namespace LeetCode.Tests.Algorithms.PascalsTriangle;
 
 [TestClass]
-public class PascalsTriangleDynamicProgrammingTests : PascalsTriangleTestsBase<PascalsTriangleIterative>;
+public class PascalsTriangleDynamicProgrammingTests : PascalsTriangleTestsBase<PascalsTriangleDynamicProgramming>;
