@@ -34,4 +34,14 @@ public static class JsonConvertHelper<T>
 
         return JsonConvert.DeserializeObject<T[][]>(jsonArray) ?? throw new InvalidOperationException();
     }
+
+    public static IList<IList<T>> JsonArrayToJaggedList(string jsonArray)
+    {
+        if (jsonArray == JsonHelper.EmptyArray)
+        {
+            return [];
+        }
+
+        return JsonConvert.DeserializeObject<IList<IList<T>>>(jsonArray) ?? throw new InvalidOperationException();
+    }
 }

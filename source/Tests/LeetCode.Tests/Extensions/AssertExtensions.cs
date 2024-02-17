@@ -26,4 +26,14 @@ public static class AssertExtensions
 
         Assert.IsNull(actualList, "Actual result should not have more nodes.");
     }
+
+    public static void AssertJaggedArrayEqual(IList<IList<int>> expected, IList<IList<int>> actual)
+    {
+        Assert.AreEqual(expected.Count, actual.Count, "The number of sub lists is different.");
+
+        for (var i = 0; i < expected.Count; i++)
+        {
+            CollectionAssert.AreEqual(expected[i].ToArray(), actual[i].ToArray(), $"Sublist {i} is different.");
+        }
+    }
 }
