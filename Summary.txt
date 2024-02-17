@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/17/2024 - 09:39:17
-  Coverage date: 02/17/2024 - 09:38:52 - 02/17/2024 - 09:38:56
+  Generated on: 02/17/2024 - 13:01:06
+  Coverage date: 02/17/2024 - 13:00:43 - 02/17/2024 - 13:00:46
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 171
-  Files: 171
-  Line coverage: 97.3%
-  Covered lines: 2651
-  Uncovered lines: 73
-  Coverable lines: 2724
-  Total lines: 7555
-  Branch coverage: 94.6% (907 of 958)
-  Covered branches: 907
-  Total branches: 958
-  Method coverage: 97.2% (245 of 252)
-  Covered methods: 245
-  Total methods: 252
+  Classes: 172
+  Files: 172
+  Line coverage: 97.2%
+  Covered lines: 2670
+  Uncovered lines: 75
+  Coverable lines: 2745
+  Total lines: 7609
+  Branch coverage: 94.5% (913 of 966)
+  Covered branches: 913
+  Total branches: 966
+  Method coverage: 97.2% (247 of 254)
+  Covered methods: 247
+  Total methods: 254
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -122,6 +122,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroIterative                                         100.0%
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByConvertingToString                                                                 85.0%
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByReversingDigits                                                                    92.3%
+  LeetCode.Algorithms.PascalsTriangle.PascalsTriangleDynamicProgramming                                                                    100.0%
   LeetCode.Algorithms.PerfectSquares.PerfectSquaresIterative                                                                               100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray                                                                                   100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArrayV2                                                                                 100.0%
@@ -185,9 +186,9 @@ LeetCode                                                                        
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                       100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                100.0%
 
-LeetCode.Core                                                                                                                               88.6%
+LeetCode.Core                                                                                                                               87.0%
   LeetCode.Core.EqualityComparers.OrderInsensitiveIntArrayEqualityComparer                                                                  69.2%
   LeetCode.Core.Extensions.ArrayExtensions                                                                                                 100.0%
-  LeetCode.Core.Helpers.JsonConvertHelper<T>                                                                                                83.3%
+  LeetCode.Core.Helpers.JsonConvertHelper<T>                                                                                                77.7%
   LeetCode.Core.Models.ListNode                                                                                                            100.0%
   LeetCode.Core.Models.TreeNode                                                                                                             91.6%
