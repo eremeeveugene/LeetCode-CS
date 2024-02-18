@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/18/2024 - 11:15:47
-  Coverage date: 02/18/2024 - 11:15:18 - 02/18/2024 - 11:15:23
+  Generated on: 02/18/2024 - 12:06:03
+  Coverage date: 02/18/2024 - 12:05:40 - 02/18/2024 - 12:05:45
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 174
-  Files: 174
-  Line coverage: 97.2%
-  Covered lines: 2701
+  Classes: 176
+  Files: 176
+  Line coverage: 97.3%
+  Covered lines: 2747
   Uncovered lines: 75
-  Coverable lines: 2776
-  Total lines: 7690
-  Branch coverage: 94.5% (917 of 970)
-  Covered branches: 917
-  Total branches: 970
-  Method coverage: 97.2% (249 of 256)
-  Covered methods: 249
-  Total methods: 256
+  Coverable lines: 2822
+  Total lines: 7804
+  Branch coverage: 94.6% (941 of 994)
+  Covered branches: 941
+  Total branches: 994
+  Method coverage: 97.2% (251 of 258)
+  Covered methods: 251
+  Total methods: 258
 
 LeetCode                                                                                                                                    97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -88,6 +88,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysLinq                                                                  100.0%
   LeetCode.Algorithms.IsomorphicStrings.IsomorphicStringsDictionary                                                                        100.0%
   LeetCode.Algorithms.IsomorphicStrings.IsomorphicStringsTwoDictionaries                                                                   100.0%
+  LeetCode.Algorithms.IsSubsequence.IsSubsequenceIterative                                                                                 100.0%
+  LeetCode.Algorithms.IsSubsequence.IsSubsequenceTwoPointers                                                                               100.0%
   LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesHashSet                                                                               100.0%
   LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesLinq                                                                                  100.0%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordReverseIteration                                                                    100.0%
