@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/18/2024 - 12:06:03
-  Coverage date: 02/18/2024 - 12:05:40 - 02/18/2024 - 12:05:45
+  Generated on: 02/19/2024 - 18:02:00
+  Coverage date: 02/19/2024 - 18:01:30 - 02/19/2024 - 18:01:35
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 176
-  Files: 176
+  Classes: 177
+  Files: 177
   Line coverage: 97.3%
-  Covered lines: 2747
+  Covered lines: 2750
   Uncovered lines: 75
-  Coverable lines: 2822
-  Total lines: 7804
+  Coverable lines: 2825
+  Total lines: 7831
   Branch coverage: 94.6% (941 of 994)
   Covered branches: 941
   Total branches: 994
-  Method coverage: 97.2% (251 of 258)
-  Covered methods: 251
-  Total methods: 258
+  Method coverage: 97.2% (252 of 259)
+  Covered methods: 252
+  Total methods: 259
 
 LeetCode                                                                                                                                    97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -64,6 +64,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DistributeMoneyToMaximumChildren.DistributeMoneyToMaximumChildrenLinear                                               80.0%
   LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceConstant                                100.0%
   LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceIterative                               100.0%
+  LeetCode.Algorithms.DivisorGame.DivisorGameDivisionRemainder                                                                             100.0%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberIterative                                                                             100.0%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberMatrixExponentiation                                                                  100.0%
   LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsContains                  100.0%
