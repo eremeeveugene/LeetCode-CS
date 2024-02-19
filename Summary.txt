@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/19/2024 - 18:02:00
-  Coverage date: 02/19/2024 - 18:01:30 - 02/19/2024 - 18:01:35
+  Generated on: 02/19/2024 - 20:23:12
+  Coverage date: 02/19/2024 - 20:22:50 - 02/19/2024 - 20:22:54
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 177
-  Files: 177
+  Classes: 178
+  Files: 178
   Line coverage: 97.3%
-  Covered lines: 2750
+  Covered lines: 2764
   Uncovered lines: 75
-  Coverable lines: 2825
-  Total lines: 7831
-  Branch coverage: 94.6% (941 of 994)
-  Covered branches: 941
-  Total branches: 994
-  Method coverage: 97.2% (252 of 259)
-  Covered methods: 252
-  Total methods: 259
+  Coverable lines: 2839
+  Total lines: 7874
+  Branch coverage: 94.6% (945 of 998)
+  Covered branches: 945
+  Total branches: 998
+  Method coverage: 97.3% (253 of 260)
+  Covered methods: 253
+  Total methods: 260
 
 LeetCode                                                                                                                                    97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -57,6 +57,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountOfMatchesInTournament.CountOfMatchesInTournamentIterative                                                       100.0%
   LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget.CountPairsWhoseSumIsLessThanTargetIterative                                       100.0%
   LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget.CountPairsWhoseSumIsLessThanTargetSortTwoPointers                                 100.0%
+  LeetCode.Algorithms.CountTheDigitsThatDivideNumber.CountTheDigitsThatDivideNumberIterative                                               100.0%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                     100.0%
   LeetCode.Algorithms.DecodeXORedArray.DecodeXORedArrayIterative                                                                           100.0%
   LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressReplace                                                                     100.0%
