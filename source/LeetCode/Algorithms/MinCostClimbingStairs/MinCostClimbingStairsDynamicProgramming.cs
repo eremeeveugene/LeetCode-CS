@@ -14,6 +14,12 @@ namespace LeetCode.Algorithms.MinCostClimbingStairs;
 /// <inheritdoc />
 public class MinCostClimbingStairsDynamicProgramming : IMinCostClimbingStairs
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
+    /// </summary>
+    /// <param name="cost"></param>
+    /// <returns></returns>
     public int MinCostClimbingStairs(int[] cost)
     {
         if (cost.Length == 0)
