@@ -24,6 +24,7 @@ public static class AssertExtensions
             actualList = actualList.next;
         }
 
+        Assert.IsNull(expectedList, "Expected result should not have more nodes.");
         Assert.IsNull(actualList, "Actual result should not have more nodes.");
     }
 
