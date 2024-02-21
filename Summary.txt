@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/20/2024 - 15:06:42
-  Coverage date: 02/20/2024 - 15:06:10 - 02/20/2024 - 15:06:15
+  Generated on: 02/21/2024 - 19:28:17
+  Coverage date: 02/21/2024 - 19:27:46 - 02/21/2024 - 19:27:50
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 181
-  Files: 181
+  Classes: 183
+  Files: 183
   Line coverage: 97.3%
-  Covered lines: 2803
+  Covered lines: 2830
   Uncovered lines: 77
-  Coverable lines: 2880
-  Total lines: 8003
-  Branch coverage: 94.6% (956 of 1010)
-  Covered branches: 956
-  Total branches: 1010
-  Method coverage: 97.3% (256 of 263)
-  Covered methods: 256
-  Total methods: 263
+  Coverable lines: 2907
+  Total lines: 8089
+  Branch coverage: 94.7% (966 of 1020)
+  Covered branches: 966
+  Total branches: 1020
+  Method coverage: 97.3% (258 of 265)
+  Covered methods: 258
+  Total methods: 265
 
 LeetCode                                                                                                                                    97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -136,6 +136,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray                                                                                   100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArrayV2                                                                                 100.0%
   LeetCode.Algorithms.RemoveDuplicatesFromSortedArray.RemoveDuplicatesFromSortedArrayIterative                                             100.0%
+  LeetCode.Algorithms.RemoveDuplicatesFromSortedList.RemoveDuplicatesFromSortedListIterative                                               100.0%
+  LeetCode.Algorithms.RemoveDuplicatesFromSortedList.RemoveDuplicatesFromSortedListIterativeReverse                                        100.0%
   LeetCode.Algorithms.RemoveElement.RemoveElementBruteForce                                                                                100.0%
   LeetCode.Algorithms.RemoveElement.RemoveElementTwoPointers                                                                               100.0%
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternConcat                                                              100.0%
