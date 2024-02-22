@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/21/2024 - 19:28:17
-  Coverage date: 02/21/2024 - 19:27:46 - 02/21/2024 - 19:27:50
+  Generated on: 02/22/2024 - 17:58:15
+  Coverage date: 02/22/2024 - 17:57:49 - 02/22/2024 - 17:57:52
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 183
-  Files: 183
-  Line coverage: 97.3%
-  Covered lines: 2830
-  Uncovered lines: 77
-  Coverable lines: 2907
-  Total lines: 8089
-  Branch coverage: 94.7% (966 of 1020)
-  Covered branches: 966
-  Total branches: 1020
-  Method coverage: 97.3% (258 of 265)
-  Covered methods: 258
-  Total methods: 265
+  Classes: 185
+  Files: 185
+  Line coverage: 97.4%
+  Covered lines: 2871
+  Uncovered lines: 75
+  Coverable lines: 2946
+  Total lines: 8189
+  Branch coverage: 94.9% (989 of 1042)
+  Covered branches: 989
+  Total branches: 1042
+  Method coverage: 97.3% (260 of 267)
+  Covered methods: 260
+  Total methods: 267
 
 LeetCode                                                                                                                                    97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -80,6 +80,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor.FindTheOriginalArrayOfPrefixXorIterative                                             100.0%
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerConstant                                                                      100.0%
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerIterative                                                                     100.0%
+  LeetCode.Algorithms.FindTheTownJudge.FindTheTownJudgeDictionary                                                                          100.0%
+  LeetCode.Algorithms.FindTheTownJudge.FindTheTownJudgeIterative                                                                           100.0%
   LeetCode.Algorithms.FindWordsContainingCharacter.FindWordsContainingCharacterDictionary                                                  100.0%
   LeetCode.Algorithms.FindWordsContainingCharacter.FindWordsContainingCharacterIterative                                                   100.0%
   LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationReplace                                                             100.0%
@@ -197,9 +199,9 @@ LeetCode                                                                        
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                       100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                100.0%
 
-LeetCode.Core                                                                                                                               87.0%
+LeetCode.Core                                                                                                                               89.4%
   LeetCode.Core.EqualityComparers.OrderInsensitiveIntArrayEqualityComparer                                                                  69.2%
   LeetCode.Core.Extensions.ArrayExtensions                                                                                                 100.0%
-  LeetCode.Core.Helpers.JsonConvertHelper<T>                                                                                                77.7%
+  LeetCode.Core.Helpers.JsonConvertHelper<T>                                                                                                88.8%
   LeetCode.Core.Models.ListNode                                                                                                            100.0%
   LeetCode.Core.Models.TreeNode                                                                                                             91.6%
