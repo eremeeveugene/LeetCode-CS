@@ -11,6 +11,7 @@
 
 namespace LeetCode.Algorithms.FindTheTownJudge;
 
+/// <inheritdoc />
 public class FindTheTownJudgeIterative : IFindTheTownJudge
 {
     /// <summary>
