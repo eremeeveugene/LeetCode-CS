@@ -28,10 +28,7 @@ public class CheapestFlightsWithinKStopsBellmanFord : ICheapestFlightsWithinKSto
     {
         var cost = new int[n];
 
-        for (var i = 0; i < n; i++)
-        {
-            cost[i] = int.MaxValue;
-        }
+        Array.Fill(cost, int.MaxValue);
 
         cost[src] = 0;
 
