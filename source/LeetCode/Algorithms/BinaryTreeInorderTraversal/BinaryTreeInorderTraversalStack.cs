@@ -23,6 +23,11 @@ public class BinaryTreeInorderTraversalStack : IBinaryTreeInorderTraversal
     /// <returns></returns>
     public IList<int> InorderTraversal(TreeNode? treeNode)
     {
+        if (treeNode == null)
+        {
+            return new List<int> { 0 };
+        }
+
         var result = new List<int>();
         var stack = new Stack<TreeNode>();
         var current = treeNode;

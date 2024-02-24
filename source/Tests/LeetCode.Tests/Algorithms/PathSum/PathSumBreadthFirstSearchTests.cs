@@ -9,14 +9,9 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Core.Models;
+using LeetCode.Algorithms.PathSum;
 
-namespace LeetCode.Algorithms.BinaryTreeInorderTraversal;
+namespace LeetCode.Tests.Algorithms.PathSum;
 
-/// <summary>
-///     https://leetcode.com/problems/binary-tree-inorder-traversal/description/
-/// </summary>
-public interface IBinaryTreeInorderTraversal
-{
-    IList<int> InorderTraversal(TreeNode? treeNode);
-}
+[TestClass]
+public class PathSumBreadthFirstSearchTests : PathSumTestsBase<PathSumBreadthFirstSearch>;

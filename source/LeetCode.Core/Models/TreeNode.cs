@@ -33,11 +33,11 @@ public class TreeNode(int val = 0, TreeNode? left = null, TreeNode? right = null
     {
     }
 
-    public static TreeNode BuildTree(IList<int?> nums)
+    public static TreeNode? BuildTree(IList<int?> nums)
     {
         if (!nums.Any() || nums[0] == null)
         {
-            return new TreeNode(0);
+            return null;
         }
 
         TreeNode root = new(nums[0]);

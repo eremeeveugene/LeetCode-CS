@@ -11,12 +11,12 @@
 
 using LeetCode.Core.Models;
 
-namespace LeetCode.Algorithms.BinaryTreeInorderTraversal;
+namespace LeetCode.Algorithms.PathSum;
 
 /// <summary>
-///     https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+///     https://leetcode.com/problems/path-sum/description/
 /// </summary>
-public interface IBinaryTreeInorderTraversal
+public interface IPathSum
 {
-    IList<int> InorderTraversal(TreeNode? treeNode);
+    bool HasPathSum(TreeNode? root, int targetSum);
 }

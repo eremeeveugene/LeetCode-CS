@@ -11,47 +11,35 @@
 
 using LeetCode.Core.Models;
 
-namespace LeetCode.Algorithms.BinaryTreeInorderTraversal;
+namespace LeetCode.Algorithms.PathSum;
 
 /// <inheritdoc />
-public class BinaryTreeInorderTraversalRecursive : IBinaryTreeInorderTraversal
+public class PathSumDepthFirstSearch : IPathSum
 {
     /// <summary>
-    ///     Time complexity - O (n)
+    ///     Time complexity - O(n)
+    ///     Space complexity O(log n) for a balanced tree and O(n) for a skewed tree.
     /// </summary>
-    /// <param name="treeNode"></param>
+    /// <param name="root"></param>
+    /// <param name="targetSum"></param>
     /// <returns></returns>
-    public IList<int> InorderTraversal(TreeNode? treeNode)
+    public bool HasPathSum(TreeNode? root, int targetSum)
     {
-        if (treeNode == null)
-        {
-            return new List<int> { 0 };
-        }
-
-        List<int> result = [];
-
-        InorderTraversal(treeNode, result);
-
-        return result;
+        return root != null && HasPathSum(root, targetSum, root.val);
     }
 
-    private static void InorderTraversal(TreeNode? treeNode, ICollection<int> result)
+    private static bool HasPathSum(TreeNode root, int targetSum, int currentSum)
     {
-        if (treeNode == null)
+        if (root.left == null && root.right == null && currentSum == targetSum)
         {
-            return;
+            return true;
         }
 
-        if (treeNode.left != null)
+        if (root.left != null && HasPathSum(root.left, targetSum, currentSum + root.left.val))
         {
-            InorderTraversal(treeNode.left, result);
+            return true;
         }
 
-        result.Add(treeNode.val);
-
-        if (treeNode.right != null)
-        {
-            InorderTraversal(treeNode.right, result);
-        }
+        return root.right != null && HasPathSum(root.right, targetSum, currentSum + root.right.val);
     }
 }
