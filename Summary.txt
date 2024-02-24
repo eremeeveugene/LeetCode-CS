@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/24/2024 - 11:20:27
-  Coverage date: 02/24/2024 - 11:20:01 - 02/24/2024 - 11:20:05
+  Generated on: 02/24/2024 - 12:02:28
+  Coverage date: 02/24/2024 - 12:02:01 - 02/24/2024 - 12:02:06
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 189
-  Files: 189
-  Line coverage: 97.5%
-  Covered lines: 2939
-  Uncovered lines: 75
-  Coverable lines: 3014
-  Total lines: 8386
-  Branch coverage: 95% (1030 of 1084)
-  Covered branches: 1030
-  Total branches: 1084
-  Method coverage: 97.4% (267 of 274)
-  Covered methods: 267
-  Total methods: 274
+  Classes: 191
+  Files: 191
+  Line coverage: 97.6%
+  Covered lines: 2985
+  Uncovered lines: 73
+  Coverable lines: 3058
+  Total lines: 8501
+  Branch coverage: 95.1% (1050 of 1104)
+  Covered branches: 1050
+  Total branches: 1104
+  Method coverage: 97.4% (271 of 278)
+  Covered methods: 271
+  Total methods: 278
 
 LeetCode                                                                                                                                    97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -137,6 +137,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.PascalsTriangle2.PascalsTriangle2DynamicProgramming                                                                  100.0%
   LeetCode.Algorithms.PathSum.PathSumBreadthFirstSearch                                                                                    100.0%
   LeetCode.Algorithms.PathSum.PathSumDepthFirstSearch                                                                                      100.0%
+  LeetCode.Algorithms.PathSum2.PathSum2DepthFirstSearch                                                                                    100.0%
+  LeetCode.Algorithms.PathSum2.PathSum2DepthFirstSearchOptimized                                                                           100.0%
   LeetCode.Algorithms.PerfectSquares.PerfectSquaresIterative                                                                               100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray                                                                                   100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArrayV2                                                                                 100.0%
@@ -202,10 +204,10 @@ LeetCode                                                                        
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                       100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                100.0%
 
-LeetCode.Core                                                                                                                               89.7%
+LeetCode.Core                                                                                                                               92.0%
   LeetCode.Core.EqualityComparers.OrderInsensitiveIntArrayEqualityComparer                                                                  69.2%
   LeetCode.Core.Extensions.ArrayExtensions                                                                                                 100.0%
-  LeetCode.Core.Helpers.JsonConvertHelper<T>                                                                                                88.8%
+  LeetCode.Core.Helpers.JsonConvertHelper<T>                                                                                               100.0%
   LeetCode.Core.Models.ListNode                                                                                                            100.0%
   LeetCode.Core.Models.NodeWithSum                                                                                                         100.0%
   LeetCode.Core.Models.TreeNode                                                                                                             91.6%
