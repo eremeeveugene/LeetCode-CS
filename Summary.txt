@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/24/2024 - 12:02:28
-  Coverage date: 02/24/2024 - 12:02:01 - 02/24/2024 - 12:02:06
+  Generated on: 02/24/2024 - 12:34:00
+  Coverage date: 02/24/2024 - 12:33:35 - 02/24/2024 - 12:33:39
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 191
-  Files: 191
+  Classes: 192
+  Files: 192
   Line coverage: 97.6%
-  Covered lines: 2985
+  Covered lines: 3010
   Uncovered lines: 73
-  Coverable lines: 3058
-  Total lines: 8501
-  Branch coverage: 95.1% (1050 of 1104)
-  Covered branches: 1050
-  Total branches: 1104
-  Method coverage: 97.4% (271 of 278)
-  Covered methods: 271
-  Total methods: 278
+  Coverable lines: 3083
+  Total lines: 8564
+  Branch coverage: 95.1% (1058 of 1112)
+  Covered branches: 1058
+  Total branches: 1112
+  Method coverage: 97.5% (273 of 280)
+  Covered methods: 273
+  Total methods: 280
 
 LeetCode                                                                                                                                    97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -34,6 +34,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.BestTimeToBuyAndSellStock.BestTimeToBuyAndSellStockDynamicProgramming                                                100.0%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive                                                        90.9%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalStack                                                           100.0%
+  LeetCode.Algorithms.BinaryTreePaths.BinaryTreePathsDepthFirstSearch                                                                      100.0%
   LeetCode.Algorithms.BuildArrayFromPermutation.BuildArrayFromPermutationIterative                                                         100.0%
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesBruteForce                                                                          100.0%
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesMinimumTwoPrices                                                                    100.0%
