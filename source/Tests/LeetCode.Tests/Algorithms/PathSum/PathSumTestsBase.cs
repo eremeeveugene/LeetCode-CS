@@ -9,33 +9,35 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.BinaryTreeInorderTraversal;
+using LeetCode.Algorithms.PathSum;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
-namespace LeetCode.Tests.Algorithms.BinaryTreeInorderTraversal;
+namespace LeetCode.Tests.Algorithms.PathSum;
 
-public abstract class BinaryTreeInorderTraversalTestsBase<T> where T : IBinaryTreeInorderTraversal, new()
+public abstract class PathSumTestsBase<T> where T : IPathSum, new()
 {
     [TestMethod]
-    [DataRow("[1,null,2,3]", "[1,3,2]")]
-    [DataRow("[1]", "[1]")]
-    [DataRow("[]", "[0]")]
-    public void InorderTraversal_WithBinaryTreeFromJson_ReturnsInorderTraversalList(string inputArrayJson,
-        string expectedArrayJson)
+    [DataRow("[5,4,8,11,null,13,4,7,2,null,null,null,1]", 22, true)]
+    [DataRow("[1,2,3]", 5, false)]
+    [DataRow("[]", 0, false)]
+    [DataRow("[1]", 1, true)]
+    [DataRow("[1,2]", 1, false)]
+    [DataRow("[1,2,null,3,null,4,null,5]", 6, false)]
+    [DataRow("[1,-2,-3,1,3,-2,null,-1]", -1, true)]
+    public void HasPathSum_GivenBinaryTreeAndTargetSum_ReturnsExpectedBoolean(string jsonRootArray, int targetSum,
+        bool expectedResult)
     {
         // Arrange
         var solution = new T();
 
-        IList<int?> expectedResult = JsonConvertHelper<int?>.JsonArrayToList(expectedArrayJson);
-        IList<int?> inputArray = JsonConvertHelper<int?>.JsonArrayToList(inputArrayJson);
-        var inputNode = TreeNode.BuildTree(inputArray);
+        IList<int?> rootArray = JsonConvertHelper<int?>.JsonArrayToList(jsonRootArray);
+        var root = TreeNode.BuildTree(rootArray);
 
         // Act
-        var actualResult = solution.InorderTraversal(inputNode);
+        var actualResult = solution.HasPathSum(root, targetSum);
 
         // Assert
-        Assert.IsNotNull(actualResult);
-        CollectionAssert.AreEqual(expectedResult.ToList(), actualResult.ToList());
+        Assert.AreEqual(expectedResult, actualResult);
     }
 }
