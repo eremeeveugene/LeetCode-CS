@@ -14,4 +14,4 @@ using LeetCode.Algorithms.BinaryTreePaths;
 namespace LeetCode.Tests.Algorithms.BinaryTreePaths;
 
 [TestClass]
-public class BinaryTreePaths1Tests : BinaryTreePathsTestsBase<BinaryTreePaths1>;
+public class BinaryTreePathsDepthFirstSearchTests : BinaryTreePathsTestsBase<BinaryTreePathsDepthFirstSearch>;
