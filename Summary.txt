@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/25/2024 - 11:27:09
-  Coverage date: 02/25/2024 - 11:26:44 - 02/25/2024 - 11:26:47
+  Generated on: 02/26/2024 - 18:03:50
+  Coverage date: 02/26/2024 - 18:03:24 - 02/26/2024 - 18:03:28
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 197
-  Files: 197
+  Classes: 198
+  Files: 198
   Line coverage: 97.5%
-  Covered lines: 3080
+  Covered lines: 3090
   Uncovered lines: 77
-  Coverable lines: 3157
-  Total lines: 8800
-  Branch coverage: 95% (1101 of 1158)
-  Covered branches: 1101
-  Total branches: 1158
-  Method coverage: 97.5% (279 of 286)
-  Covered methods: 279
-  Total methods: 286
+  Coverable lines: 3167
+  Total lines: 8839
+  Branch coverage: 95% (1103 of 1160)
+  Covered branches: 1103
+  Total branches: 1160
+  Method coverage: 97.5% (280 of 287)
+  Covered methods: 280
+  Total methods: 287
 
 LeetCode                                                                                                                                    97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -167,6 +167,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SameTree.SameTreeRecursive                                                                                           100.0%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionBinarySearch                                                                100.0%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionIterative                                                                   100.0%
+  LeetCode.Algorithms.ShuffleString.ShuffleStringIterative                                                                                 100.0%
   LeetCode.Algorithms.ShuffleTheArray.ShuffleTheArrayIterative                                                                             100.0%
   LeetCode.Algorithms.SingleNumber.SingleNumberHashSet                                                                                     100.0%
   LeetCode.Algorithms.SingleNumber.SingleNumberXor                                                                                         100.0%
