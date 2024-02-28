@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/27/2024 - 19:03:18
-  Coverage date: 02/27/2024 - 19:02:52 - 02/27/2024 - 19:02:56
+  Generated on: 02/28/2024 - 19:00:54
+  Coverage date: 02/28/2024 - 19:00:26 - 02/28/2024 - 19:00:29
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 199
-  Files: 199
-  Line coverage: 97.5%
-  Covered lines: 3110
-  Uncovered lines: 79
-  Coverable lines: 3189
-  Total lines: 8898
-  Branch coverage: 95% (1108 of 1166)
-  Covered branches: 1108
-  Total branches: 1166
-  Method coverage: 97.5% (282 of 289)
-  Covered methods: 282
-  Total methods: 289
+  Classes: 201
+  Files: 201
+  Line coverage: 97.4%
+  Covered lines: 3148
+  Uncovered lines: 81
+  Coverable lines: 3229
+  Total lines: 9006
+  Branch coverage: 94.8% (1127 of 1188)
+  Covered branches: 1127
+  Total branches: 1188
+  Method coverage: 97.6% (285 of 292)
+  Covered methods: 285
+  Total methods: 292
 
 LeetCode                                                                                                                                    97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -77,6 +77,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsDictionary                100.0%
   LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsIterative                 100.0%
   LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsSwitch                    100.0%
+  LeetCode.Algorithms.FindBottomLeftTreeValue.FindBottomLeftTreeValueBreadthFirst                                                           90.4%
+  LeetCode.Algorithms.FindBottomLeftTreeValue.FindBottomLeftTreeValueDepthFirst                                                            100.0%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                         100.0%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithKMP                              80.0%
   LeetCode.Algorithms.FindTheMaximumAchievableNumber.FindTheMaximumAchievableNumberLinear                                                  100.0%
