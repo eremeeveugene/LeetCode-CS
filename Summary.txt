@@ -1,23 +1,23 @@
 Summary
-  Generated on: 02/28/2024 - 19:00:54
-  Coverage date: 02/28/2024 - 19:00:26 - 02/28/2024 - 19:00:29
+  Generated on: 02/29/2024 - 17:45:23
+  Coverage date: 02/29/2024 - 17:44:52 - 02/29/2024 - 17:44:56
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 201
-  Files: 201
+  Classes: 202
+  Files: 202
   Line coverage: 97.4%
-  Covered lines: 3148
-  Uncovered lines: 81
-  Coverable lines: 3229
-  Total lines: 9006
-  Branch coverage: 94.8% (1127 of 1188)
-  Covered branches: 1127
-  Total branches: 1188
-  Method coverage: 97.6% (285 of 292)
-  Covered methods: 285
-  Total methods: 292
+  Covered lines: 3192
+  Uncovered lines: 85
+  Coverable lines: 3277
+  Total lines: 9100
+  Branch coverage: 94.8% (1149 of 1212)
+  Covered branches: 1149
+  Total branches: 1212
+  Method coverage: 97.6% (286 of 293)
+  Covered methods: 286
+  Total methods: 293
 
-LeetCode                                                                                                                                    97.6%
+LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -71,6 +71,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceConstant                                100.0%
   LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceIterative                               100.0%
   LeetCode.Algorithms.DivisorGame.DivisorGameDivisionRemainder                                                                             100.0%
+  LeetCode.Algorithms.EvenOddTree.EvenOddTreeBreadthFirst                                                                                   91.6%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberIterative                                                                             100.0%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberMatrixExponentiation                                                                  100.0%
   LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsContains                  100.0%
