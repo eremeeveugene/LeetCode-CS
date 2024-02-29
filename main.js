@@ -274,7 +274,7 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceConstant", "rp": "LeetCode_DivisibleAndNonDivisibleSumsDifferenceConstant.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 27, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceIterative", "rp": "LeetCode_DivisibleAndNonDivisibleSumsDifferenceIterative.html", "cl": 14, "ucl": 0, "cal": 14, "tl": 41, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.DivisorGame.DivisorGameDivisionRemainder", "rp": "LeetCode_DivisorGameDivisionRemainder.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 27, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "LeetCode.Algorithms.EvenOddTree.EvenOddTreeBreadthFirst", "rp": "LeetCode_EvenOddTreeBreadthFirst.html", "cl": 44, "ucl": 4, "cal": 48, "tl": 94, "cb": 22, "tb": 24, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.EvenOddTree.EvenOddTreeBreadthFirst", "rp": "LeetCode_EvenOddTreeBreadthFirst.html", "cl": 41, "ucl": 4, "cal": 45, "tl": 90, "cb": 22, "tb": 24, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.FibonacciNumber.FibonacciNumberIterative", "rp": "LeetCode_FibonacciNumberIterative.html", "cl": 14, "ucl": 0, "cal": 14, "tl": 41, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.FibonacciNumber.FibonacciNumberMatrixExponentiation", "rp": "LeetCode_FibonacciNumberMatrixExponentiation.html", "cl": 30, "ucl": 0, "cal": 30, "tl": 66, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsContains", "rp": "LeetCode_FinalValueOfVariableAfterPerformingOperationsContains.html", "cl": 14, "ucl": 0, "cal": 14, "tl": 40, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -455,7 +455,7 @@ var riskHotspots = [
   {
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.EvenOddTree.EvenOddTreeBreadthFirst", "reportPath": "LeetCode_EvenOddTreeBreadthFirst.html", "methodName": "IsEvenOddTree(LeetCode.Core.Models.TreeNode)", "methodShortName": "IsEvenOddTree(...)", "fileIndex": 0, "line": 27,
     "metrics": [
-      { "value": 24.33, "exceeded": true },
+      { "value": 24.4, "exceeded": true },
       { "value": 24, "exceeded": false },
     ]},
   {

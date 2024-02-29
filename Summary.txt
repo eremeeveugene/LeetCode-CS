@@ -1,15 +1,15 @@
 Summary
-  Generated on: 02/29/2024 - 17:45:23
-  Coverage date: 02/29/2024 - 17:44:52 - 02/29/2024 - 17:44:56
+  Generated on: 02/29/2024 - 17:52:11
+  Coverage date: 02/29/2024 - 17:51:41 - 02/29/2024 - 17:51:45
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
   Classes: 202
   Files: 202
   Line coverage: 97.4%
-  Covered lines: 3192
+  Covered lines: 3189
   Uncovered lines: 85
-  Coverable lines: 3277
-  Total lines: 9100
+  Coverable lines: 3274
+  Total lines: 9096
   Branch coverage: 94.8% (1149 of 1212)
   Covered branches: 1149
   Total branches: 1212
@@ -71,7 +71,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceConstant                                100.0%
   LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceIterative                               100.0%
   LeetCode.Algorithms.DivisorGame.DivisorGameDivisionRemainder                                                                             100.0%
-  LeetCode.Algorithms.EvenOddTree.EvenOddTreeBreadthFirst                                                                                   91.6%
+  LeetCode.Algorithms.EvenOddTree.EvenOddTreeBreadthFirst                                                                                   91.1%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberIterative                                                                             100.0%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberMatrixExponentiation                                                                  100.0%
   LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsContains                  100.0%
