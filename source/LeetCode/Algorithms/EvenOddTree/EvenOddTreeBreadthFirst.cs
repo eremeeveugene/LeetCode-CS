@@ -39,53 +39,49 @@ public class EvenOddTreeBreadthFirst : IEvenOddTree
 
         while (queue.Count > 0)
         {
-            var current = queue.Dequeue();
+            var (nodeLevel, node) = queue.Dequeue();
 
-            if (currentLevel != current.Item1)
+            if (currentLevel != nodeLevel)
             {
                 previousVal = 0;
-                currentLevel = current.Item1;
+                currentLevel = nodeLevel;
             }
 
-            if (current.Item1 % 2 == 0)
+            if (nodeLevel % 2 == 0)
             {
-                if (current.Item2.val % 2 == 0)
+                if (node.val % 2 == 0)
                 {
                     return false;
                 }
 
-                if (previousVal != 0 && current.Item2.val >= previousVal)
+                if (previousVal != 0 && node.val >= previousVal)
                 {
                     return false;
                 }
-
-                previousVal = current.Item2.val;
             }
             else
             {
-                if (current.Item2.val % 2 == 0)
-                {
-                    if (previousVal != 0 && current.Item2.val <= previousVal)
-                    {
-                        return false;
-                    }
-                }
-                else
+                if (node.val % 2 != 0)
                 {
                     return false;
                 }
 
-                previousVal = current.Item2.val;
+                if (previousVal != 0 && node.val <= previousVal)
+                {
+                    return false;
+                }
             }
 
-            if (current.Item2.right != null)
+            previousVal = node.val;
+
+            if (node.right != null)
             {
-                queue.Enqueue((current.Item1 + 1, current.Item2.right));
+                queue.Enqueue((nodeLevel + 1, node.right));
             }
 
-            if (current.Item2.left != null)
+            if (node.left != null)
             {
-                queue.Enqueue((current.Item1 + 1, current.Item2.left));
+                queue.Enqueue((nodeLevel + 1, node.left));
             }
         }
 
