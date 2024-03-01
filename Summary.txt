@@ -1,21 +1,21 @@
 Summary
-  Generated on: 02/29/2024 - 17:52:11
-  Coverage date: 02/29/2024 - 17:51:41 - 02/29/2024 - 17:51:45
+  Generated on: 03/01/2024 - 18:43:11
+  Coverage date: 03/01/2024 - 18:42:40 - 03/01/2024 - 18:42:43
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 202
-  Files: 202
+  Classes: 204
+  Files: 204
   Line coverage: 97.4%
-  Covered lines: 3189
+  Covered lines: 3207
   Uncovered lines: 85
-  Coverable lines: 3274
-  Total lines: 9096
-  Branch coverage: 94.8% (1149 of 1212)
-  Covered branches: 1149
-  Total branches: 1212
-  Method coverage: 97.6% (286 of 293)
-  Covered methods: 286
-  Total methods: 293
+  Coverable lines: 3292
+  Total lines: 9170
+  Branch coverage: 94.8% (1153 of 1216)
+  Covered branches: 1153
+  Total branches: 1216
+  Method coverage: 97.6% (288 of 295)
+  Covered methods: 288
+  Total methods: 295
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -115,6 +115,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberString                                                                                100.0%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinq                                        100.0%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinqSplit                                   100.0%
+  LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStringBuilder                                                           100.0%
+  LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStrings                                                                 100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayMergingAndSorting                                                                   100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayThreePointers                                                                       100.0%
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                                                                         95.4%
