@@ -1,21 +1,21 @@
 Summary
-  Generated on: 03/01/2024 - 18:43:11
-  Coverage date: 03/01/2024 - 18:42:40 - 03/01/2024 - 18:42:43
+  Generated on: 03/02/2024 - 10:16:18
+  Coverage date: 03/02/2024 - 10:15:50 - 03/02/2024 - 10:15:54
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 204
-  Files: 204
+  Classes: 207
+  Files: 207
   Line coverage: 97.4%
-  Covered lines: 3207
+  Covered lines: 3250
   Uncovered lines: 85
-  Coverable lines: 3292
-  Total lines: 9170
-  Branch coverage: 94.8% (1153 of 1216)
-  Covered branches: 1153
-  Total branches: 1216
-  Method coverage: 97.6% (288 of 295)
-  Covered methods: 288
-  Total methods: 295
+  Coverable lines: 3335
+  Total lines: 9295
+  Branch coverage: 94.8% (1165 of 1228)
+  Covered branches: 1165
+  Total branches: 1228
+  Method coverage: 97.6% (291 of 298)
+  Covered methods: 291
+  Total methods: 298
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -188,6 +188,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.SortThePeople.SortThePeopleLinq                                                                                      100.0%
   LeetCode.Algorithms.Sqrt.SqrtBinarySearch                                                                                                100.0%
   LeetCode.Algorithms.Sqrt.SqrtNewtonsMethod                                                                                               100.0%
+  LeetCode.Algorithms.SquaresOfSortedArray.SquaresOfSortedArrayIterative                                                                   100.0%
+  LeetCode.Algorithms.SquaresOfSortedArray.SquaresOfSortedArraySort                                                                        100.0%
+  LeetCode.Algorithms.SquaresOfSortedArray.SquaresOfSortedArrayTwoPointers                                                                 100.0%
   LeetCode.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger.SubtractTheProductAndSumOfDigitsOfAnIntegerDivision                      100.0%
   LeetCode.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger.SubtractTheProductAndSumOfDigitsOfAnIntegerString                        100.0%
   LeetCode.Algorithms.SumMultiples.SumMultiplesIterative                                                                                   100.0%
