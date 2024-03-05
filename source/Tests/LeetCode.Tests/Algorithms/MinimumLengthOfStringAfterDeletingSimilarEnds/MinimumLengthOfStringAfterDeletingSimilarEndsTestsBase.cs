@@ -20,7 +20,7 @@ public abstract class MinimumLengthOfStringAfterDeletingSimilarEndsTestsBase<T>
     [DataRow("ca", 2)]
     [DataRow("cabaabac", 0)]
     [DataRow("aabccabba", 3)]
-    [DataRow("bbbbbbbbbbbbbbbbbbb", 3)]
+    [DataRow("bbbbbbbbbbbbbbbbbbb", 0)]
     [DataRow(
         "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbacccabbabccaccbacaaccacacccaccbbbacaabbccbbcbcbcacacccccccbcbbabccaacaabacbbaccccbabbcbccccaccacaccbcbbcbcccabaaaabbbbbbbbbbbbbbb",
         109)]
