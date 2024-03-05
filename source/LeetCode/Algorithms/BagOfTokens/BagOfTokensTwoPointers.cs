@@ -38,7 +38,7 @@ public class BagOfTokensTwoPointers : IBagOfTokens
                 score++;
                 left++;
             }
-            else if (score >= 1 && left != right)
+            else if (score >= 1 && left < right)
             {
                 power += tokens[right];
                 score--;
@@ -46,7 +46,7 @@ public class BagOfTokensTwoPointers : IBagOfTokens
             }
             else
             {
-                left++;
+                break;
             }
         }
 
