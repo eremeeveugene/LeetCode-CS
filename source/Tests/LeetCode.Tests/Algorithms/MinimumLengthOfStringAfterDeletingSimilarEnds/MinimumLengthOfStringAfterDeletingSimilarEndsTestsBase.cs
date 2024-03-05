@@ -21,7 +21,9 @@ public abstract class MinimumLengthOfStringAfterDeletingSimilarEndsTestsBase<T>
     [DataRow("cabaabac", 0)]
     [DataRow("aabccabba", 3)]
     [DataRow("bbbbbbbbbbbbbbbbbbb", 3)]
-    [DataRow("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbacccabbabccaccbacaaccacacccaccbbbacaabbccbbcbcbcacacccccccbcbbabccaacaabacbbaccccbabbcbccccaccacaccbcbbcbcccabaaaabbbbbbbbbbbbbbb", 109)]
+    [DataRow(
+        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbacccabbabccaccbacaaccacacccaccbbbacaabbccbbcbcbcacacccccccbcbbabccaacaabacbbaccccbabbcbccccaccacaccbcbbcbcccabaaaabbbbbbbbbbbbbbb",
+        109)]
     public void MinimumLength_GivenString_ReturnsExpectedMinimumLength(string s, int expectedResult)
     {
         // Arrange
