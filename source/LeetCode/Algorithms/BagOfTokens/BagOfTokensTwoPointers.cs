@@ -12,10 +12,44 @@
 namespace LeetCode.Algorithms.BagOfTokens;
 
 /// <inheritdoc />
-public class BagOfTokens1 : IBagOfTokens
+public class BagOfTokensTwoPointers : IBagOfTokens
 {
+    /// <summary>
+    ///     Time complexity - O(n log n)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="tokens"></param>
+    /// <param name="power"></param>
+    /// <returns></returns>
     public int BagOfTokensScore(int[] tokens, int power)
     {
-        throw new NotImplementedException();
+        var score = 0;
+
+        Array.Sort(tokens);
+
+        var left = 0;
+        var right = tokens.Length - 1;
+
+        while (left <= right)
+        {
+            if (power >= tokens[left])
+            {
+                power -= tokens[left];
+                score++;
+                left++;
+            }
+            else if (score >= 1 && left != right)
+            {
+                power += tokens[right];
+                score--;
+                right--;
+            }
+            else
+            {
+                left++;
+            }
+        }
+
+        return score;
     }
 }

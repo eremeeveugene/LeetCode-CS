@@ -14,4 +14,4 @@ using LeetCode.Algorithms.BagOfTokens;
 namespace LeetCode.Tests.Algorithms.BagOfTokens;
 
 [TestClass]
-public class BagOfTokens1Tests : BagOfTokensTestsBase<BagOfTokens1>;
+public class BagOfTokensTwoPointersTests : BagOfTokensTestsBase<BagOfTokensTwoPointers>;
