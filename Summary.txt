@@ -1,21 +1,21 @@
 Summary
-  Generated on: 03/03/2024 - 11:15:25
-  Coverage date: 03/03/2024 - 11:14:59 - 03/03/2024 - 11:15:03
+  Generated on: 03/05/2024 - 14:58:23
+  Coverage date: 03/05/2024 - 14:57:57 - 03/05/2024 - 14:58:01
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 208
-  Files: 208
+  Classes: 209
+  Files: 209
   Line coverage: 97.4%
-  Covered lines: 3269
+  Covered lines: 3293
   Uncovered lines: 85
-  Coverable lines: 3354
-  Total lines: 9346
-  Branch coverage: 94.6% (1174 of 1240)
-  Covered branches: 1174
-  Total branches: 1240
-  Method coverage: 97.6% (292 of 299)
-  Covered methods: 292
-  Total methods: 299
+  Coverable lines: 3378
+  Total lines: 9401
+  Branch coverage: 94.7% (1182 of 1248)
+  Covered branches: 1182
+  Total branches: 1248
+  Method coverage: 97.6% (293 of 300)
+  Covered methods: 293
+  Total methods: 300
 
 LeetCode                                                                                                                                    97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -31,6 +31,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersIterative                                                                                 100.0%
   LeetCode.Algorithms.ArithmeticSubarrays.ArithmeticSubarraysHashSet                                                                       100.0%
   LeetCode.Algorithms.ArithmeticSubarrays.ArithmeticSubarraysSort                                                                          100.0%
+  LeetCode.Algorithms.BagOfTokens.BagOfTokensTwoPointers                                                                                   100.0%
   LeetCode.Algorithms.BestTimeToBuyAndSellStock.BestTimeToBuyAndSellStockDynamicProgramming                                                100.0%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive                                                        90.9%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalStack                                                           100.0%
