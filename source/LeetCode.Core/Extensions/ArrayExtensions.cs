@@ -19,4 +19,38 @@ public static class ArrayExtensions
     {
         return array.Reverse().Aggregate<int, ListNode?>(null, (next, val) => new ListNode(val, next));
     }
+
+    public static ListNode? ToCycledListNode(this int[] array, int cyclePosition)
+    {
+        var head = array.ToListNode();
+
+        if (head == null || cyclePosition < 0)
+        {
+            return head;
+        }
+
+        ListNode? lastNode = head, cycleNode = null;
+
+        for (var index = 0; lastNode.next != null; index++)
+        {
+            if (index == cyclePosition)
+            {
+                cycleNode = lastNode;
+            }
+
+            lastNode = lastNode.next;
+        }
+
+        if (cyclePosition == array.Length - 1)
+        {
+            cycleNode = lastNode;
+        }
+
+        if (cycleNode != null)
+        {
+            lastNode.next = cycleNode;
+        }
+
+        return head;
+    }
 }
