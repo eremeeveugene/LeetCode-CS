@@ -1,23 +1,23 @@
 Summary
-  Generated on: 03/05/2024 - 15:57:25
-  Coverage date: 03/05/2024 - 15:56:59 - 03/05/2024 - 15:57:03
+  Generated on: 03/06/2024 - 16:49:34
+  Coverage date: 03/06/2024 - 16:49:05 - 03/06/2024 - 16:49:09
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 210
-  Files: 210
-  Line coverage: 97.4%
-  Covered lines: 3310
-  Uncovered lines: 85
-  Coverable lines: 3395
-  Total lines: 9446
-  Branch coverage: 94.7% (1194 of 1260)
-  Covered branches: 1194
-  Total branches: 1260
-  Method coverage: 97.6% (294 of 301)
-  Covered methods: 294
-  Total methods: 301
+  Classes: 212
+  Files: 212
+  Line coverage: 97.3%
+  Covered lines: 3358
+  Uncovered lines: 91
+  Coverable lines: 3449
+  Total lines: 9574
+  Branch coverage: 94.4% (1218 of 1290)
+  Covered branches: 1218
+  Total branches: 1290
+  Method coverage: 97.6% (297 of 304)
+  Covered methods: 297
+  Total methods: 304
 
-LeetCode                                                                                                                                    97.6%
+LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -107,6 +107,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesLinq                                                                                  100.0%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordReverseIteration                                                                    100.0%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordTrimSplit                                                                           100.0%
+  LeetCode.Algorithms.LinkedListCycle.LinkedListCycleHashSet                                                                                92.8%
+  LeetCode.Algorithms.LinkedListCycle.LinkedListCycleTwoPointers                                                                            87.5%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixBinarySearch                                                                  100.0%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixDivideAndConquer                                                               96.1%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixHorizontalScanning                                                            100.0%
@@ -223,9 +225,9 @@ LeetCode                                                                        
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                       100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                100.0%
 
-LeetCode.Core                                                                                                                               92.0%
+LeetCode.Core                                                                                                                               91.0%
   LeetCode.Core.EqualityComparers.OrderInsensitiveIntArrayEqualityComparer                                                                  69.2%
-  LeetCode.Core.Extensions.ArrayExtensions                                                                                                 100.0%
+  LeetCode.Core.Extensions.ArrayExtensions                                                                                                  88.8%
   LeetCode.Core.Helpers.JsonConvertHelper<T>                                                                                               100.0%
   LeetCode.Core.Models.ListNode                                                                                                            100.0%
   LeetCode.Core.Models.NodeWithSum                                                                                                         100.0%
