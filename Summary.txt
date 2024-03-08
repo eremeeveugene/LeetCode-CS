@@ -1,21 +1,21 @@
 Summary
-  Generated on: 03/06/2024 - 16:49:34
-  Coverage date: 03/06/2024 - 16:49:05 - 03/06/2024 - 16:49:09
+  Generated on: 03/08/2024 - 11:35:54
+  Coverage date: 03/08/2024 - 11:35:22 - 03/08/2024 - 11:35:26
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 212
-  Files: 212
+  Classes: 214
+  Files: 214
   Line coverage: 97.3%
-  Covered lines: 3358
+  Covered lines: 3392
   Uncovered lines: 91
-  Coverable lines: 3449
-  Total lines: 9574
-  Branch coverage: 94.4% (1218 of 1290)
-  Covered branches: 1218
-  Total branches: 1290
-  Method coverage: 97.6% (297 of 304)
-  Covered methods: 297
-  Total methods: 304
+  Coverable lines: 3483
+  Total lines: 9662
+  Branch coverage: 94.4% (1230 of 1302)
+  Covered branches: 1230
+  Total branches: 1302
+  Method coverage: 97.7% (299 of 306)
+  Covered methods: 299
+  Total methods: 306
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -54,6 +54,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayConcat                                                                      100.0%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayIterative                                                                   100.0%
   LeetCode.Algorithms.ConvertTheTemperature.ConvertTheTemperatureMath                                                                      100.0%
+  LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionary                                        100.0%
+  LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionaryLinq                                    100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsDynamicProgramming                                                                          100.0%
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                                                                                   100.0%
   LeetCode.Algorithms.CountOfMatchesInTournament.CountOfMatchesInTournamentConstant                                                        100.0%
