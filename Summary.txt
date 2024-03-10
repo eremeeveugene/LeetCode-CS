@@ -1,18 +1,18 @@
 Summary
-  Generated on: 03/09/2024 - 15:39:04
-  Coverage date: 03/09/2024 - 15:38:34 - 03/09/2024 - 15:38:38
+  Generated on: 03/10/2024 - 14:38:23
+  Coverage date: 03/10/2024 - 14:37:50 - 03/10/2024 - 14:37:54
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
   Classes: 216
   Files: 216
   Line coverage: 97.2%
-  Covered lines: 3415
+  Covered lines: 3409
   Uncovered lines: 96
-  Coverable lines: 3511
-  Total lines: 9748
-  Branch coverage: 94.2% (1238 of 1314)
-  Covered branches: 1238
-  Total branches: 1314
+  Coverable lines: 3505
+  Total lines: 9742
+  Branch coverage: 94.1% (1234 of 1310)
+  Covered branches: 1234
+  Total branches: 1310
   Method coverage: 97.7% (301 of 308)
   Covered methods: 301
   Total methods: 308
@@ -100,7 +100,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce                  100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing      100.0%
   LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSet                                                               100.0%
-  LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysLinq                                                                  100.0%
+  LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSetIntersectWith                                                  100.0%
   LeetCode.Algorithms.IsomorphicStrings.IsomorphicStringsDictionary                                                                        100.0%
   LeetCode.Algorithms.IsomorphicStrings.IsomorphicStringsTwoDictionaries                                                                   100.0%
   LeetCode.Algorithms.IsSubsequence.IsSubsequenceIterative                                                                                 100.0%
