@@ -9,30 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.IntersectionOfTwoArrays;
+using LeetCode.Algorithms.IntersectionOfTwoArrays;
 
-/// <inheritdoc />
-public class IntersectionOfTwoArraysLinq : IIntersectionOfTwoArrays
-{
-    /// <summary>
-    ///     Time complexity - O(n + m)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <returns></returns>
-    public int[] Intersection(int[] nums1, int[] nums2)
-    {
-        var set1 = new HashSet<int>(nums1);
-        var intersection = new HashSet<int>();
+namespace LeetCode.Tests.Algorithms.IntersectionOfTwoArrays;
 
-        foreach (var num in nums2)
-        {
-            if (set1.Contains(num))
-            {
-                intersection.Add(num);
-            }
-        }
-
-        return [.. intersection];
-    }
-}
+[TestClass]
+public class IntersectionOfTwoArraysHashSetIntersectWithTests : IntersectionOfTwoArraysTestsBase<
+    IntersectionOfTwoArraysHashSetIntersectWith>;
