@@ -9,9 +9,24 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.IntersectionOfTwoArrays;
+namespace LeetCode.Algorithms.IntersectionOfTwoArrays;
 
-namespace LeetCode.Tests.Algorithms.IntersectionOfTwoArrays;
+/// <inheritdoc />
+public class IntersectionOfTwoArraysHashSetIntersectWith : IIntersectionOfTwoArrays
+{
+    /// <summary>
+    ///     Time complexity - O(n + m)
+    /// </summary>
+    /// <param name="nums1"></param>
+    /// <param name="nums2"></param>
+    /// <returns></returns>
+    public int[] Intersection(int[] nums1, int[] nums2)
+    {
+        var nums1HashSet = new HashSet<int>(nums1);
+        var nums2HashSet = new HashSet<int>(nums2);
 
-[TestClass]
-public class IntersectionOfTwoArraysLinqTests : IntersectionOfTwoArraysTestsBase<IntersectionOfTwoArraysLinq>;
+        nums1HashSet.IntersectWith(nums2HashSet);
+
+        return [.. nums1HashSet];
+    }
+}
