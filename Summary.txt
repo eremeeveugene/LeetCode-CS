@@ -1,21 +1,21 @@
 Summary
-  Generated on: 03/10/2024 - 14:38:23
-  Coverage date: 03/10/2024 - 14:37:50 - 03/10/2024 - 14:37:54
+  Generated on: 03/11/2024 - 16:33:13
+  Coverage date: 03/11/2024 - 16:32:45 - 03/11/2024 - 16:32:50
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 216
-  Files: 216
+  Classes: 217
+  Files: 217
   Line coverage: 97.2%
-  Covered lines: 3409
+  Covered lines: 3425
   Uncovered lines: 96
-  Coverable lines: 3505
-  Total lines: 9742
-  Branch coverage: 94.1% (1234 of 1310)
-  Covered branches: 1234
-  Total branches: 1310
-  Method coverage: 97.7% (301 of 308)
-  Covered methods: 301
-  Total methods: 308
+  Coverable lines: 3521
+  Total lines: 9788
+  Branch coverage: 94.2% (1236 of 1312)
+  Covered branches: 1236
+  Total branches: 1312
+  Method coverage: 97.7% (302 of 309)
+  Covered methods: 302
+  Total methods: 309
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -64,6 +64,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget.CountPairsWhoseSumIsLessThanTargetSortTwoPointers                                 100.0%
   LeetCode.Algorithms.CountTheDigitsThatDivideNumber.CountTheDigitsThatDivideNumberIterative                                               100.0%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                     100.0%
+  LeetCode.Algorithms.CustomSortString.CustomSortStringDictionarySorting                                                                   100.0%
   LeetCode.Algorithms.DecodeXORedArray.DecodeXORedArrayIterative                                                                           100.0%
   LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressReplace                                                                     100.0%
   LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressStringBuilder                                                               100.0%
