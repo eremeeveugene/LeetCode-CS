@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CustomSortString;
 
 /// <inheritdoc />
-public class CustomSortStringDictionary : ICustomSortString
+public class CustomSortStringDictionarySorting : ICustomSortString
 {
     /// <summary>
     ///     Time complexity - O (m log m + n)
