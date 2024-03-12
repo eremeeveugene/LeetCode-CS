@@ -368,6 +368,8 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.RemoveElement.RemoveElementBruteForce", "rp": "LeetCode_RemoveElementBruteForce.html", "cl": 16, "ucl": 0, "cal": 16, "tl": 44, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RemoveElement.RemoveElementTwoPointers", "rp": "LeetCode_RemoveElementTwoPointers.html", "cl": 16, "ucl": 0, "cal": 16, "tl": 45, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RemoveNthNodeFromEndOfList.RemoveNthNodeFromEndOfListTwoPointers", "rp": "LeetCode_RemoveNthNodeFromEndOfListTwoPointers.html", "cl": 19, "ucl": 0, "cal": 19, "tl": 51, "cb": 9, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce", "rp": "LeetCode_RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce.html", "cl": 36, "ucl": 4, "cal": 40, "tl": 86, "cb": 14, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListDictionary", "rp": "LeetCode_RemoveZeroSumConsecutiveNodesFromLinkedListDictionary.html", "cl": 20, "ucl": 0, "cal": 20, "tl": 53, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternConcat", "rp": "LeetCode_RepeatedSubstringPatternConcat.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 29, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternIterative", "rp": "LeetCode_RepeatedSubstringPatternIterative.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 42, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternKMP", "rp": "LeetCode_RepeatedSubstringPatternKMP.html", "cl": 28, "ucl": 3, "cal": 31, "tl": 64, "cb": 6, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -483,6 +485,12 @@ var riskHotspots = [
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithKMP", "reportPath": "LeetCode_FindTheIndexOfTheFirstOccurrenceInStringWithKMP.html", "methodName": "StrStr(System.String,System.String)", "methodShortName": "StrStr(...)", "fileIndex": 0, "line": 24,
     "metrics": [
       { "value": 16.46, "exceeded": true },
+      { "value": 16, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce", "reportPath": "LeetCode_RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce.html", "methodName": "RemoveZeroSumSublists(LeetCode.Core.Models.ListNode)", "methodShortName": "RemoveZeroSumSublists(...)", "fileIndex": 0, "line": 26,
+    "metrics": [
+      { "value": 16.26, "exceeded": true },
       { "value": 16, "exceeded": false },
     ]},
   {
