@@ -14,6 +14,13 @@ namespace LeetCode.Algorithms.BinarySubarraysWithSum;
 /// <inheritdoc />
 public class BinarySubarraysWithSumDictionary : IBinarySubarraysWithSum
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <param name="goal"></param>
+    /// <returns></returns>
     public int NumSubarraysWithSum(int[] nums, int goal)
     {
         var sumDictionary = new Dictionary<int, int> { [0] = 1 };
