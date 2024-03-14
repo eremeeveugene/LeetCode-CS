@@ -1,21 +1,21 @@
 Summary
-  Generated on: 03/13/2024 - 17:38:51
-  Coverage date: 03/13/2024 - 17:38:24 - 03/13/2024 - 17:38:28
+  Generated on: 03/14/2024 - 18:25:15
+  Coverage date: 03/14/2024 - 18:24:49 - 03/14/2024 - 18:24:52
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 220
-  Files: 220
+  Classes: 221
+  Files: 221
   Line coverage: 97.2%
-  Covered lines: 3490
+  Covered lines: 3507
   Uncovered lines: 100
-  Coverable lines: 3590
-  Total lines: 9963
-  Branch coverage: 94.1% (1258 of 1336)
-  Covered branches: 1258
-  Total branches: 1336
-  Method coverage: 97.7% (305 of 312)
-  Covered methods: 305
-  Total methods: 312
+  Coverable lines: 3607
+  Total lines: 10010
+  Branch coverage: 94.1% (1264 of 1342)
+  Covered branches: 1264
+  Total branches: 1342
+  Method coverage: 97.7% (306 of 313)
+  Covered methods: 306
+  Total methods: 313
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -34,6 +34,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ArrayPartition.ArrayPartitionSorting                                                                                 100.0%
   LeetCode.Algorithms.BagOfTokens.BagOfTokensTwoPointers                                                                                   100.0%
   LeetCode.Algorithms.BestTimeToBuyAndSellStock.BestTimeToBuyAndSellStockDynamicProgramming                                                100.0%
+  LeetCode.Algorithms.BinarySubarraysWithSum.BinarySubarraysWithSumDictionary                                                              100.0%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive                                                        90.9%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalStack                                                           100.0%
   LeetCode.Algorithms.BinaryTreePaths.BinaryTreePathsDepthFirstSearch                                                                      100.0%
