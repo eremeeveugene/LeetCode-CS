@@ -1,21 +1,21 @@
 Summary
-  Generated on: 03/16/2024 - 13:46:34
-  Coverage date: 03/16/2024 - 13:46:07 - 03/16/2024 - 13:46:11
+  Generated on: 03/17/2024 - 12:11:14
+  Coverage date: 03/17/2024 - 12:10:45 - 03/17/2024 - 12:10:50
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 222
-  Files: 222
+  Classes: 223
+  Files: 223
   Line coverage: 97.2%
-  Covered lines: 3521
+  Covered lines: 3543
   Uncovered lines: 100
-  Coverable lines: 3621
-  Total lines: 10051
-  Branch coverage: 94.2% (1270 of 1348)
-  Covered branches: 1270
-  Total branches: 1348
-  Method coverage: 97.7% (307 of 314)
-  Covered methods: 307
-  Total methods: 314
+  Coverable lines: 3643
+  Total lines: 10104
+  Branch coverage: 94.2% (1280 of 1358)
+  Covered branches: 1280
+  Total branches: 1358
+  Method coverage: 97.7% (308 of 315)
+  Covered methods: 308
+  Total methods: 315
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -103,6 +103,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetNumbers                                                                                100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce                  100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing      100.0%
+  LeetCode.Algorithms.InsertInterval.InsertIntervalIterative                                                                               100.0%
   LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSet                                                               100.0%
   LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSetIntersectWith                                                  100.0%
   LeetCode.Algorithms.IsomorphicStrings.IsomorphicStringsDictionary                                                                        100.0%
