@@ -1,21 +1,21 @@
 Summary
-  Generated on: 03/17/2024 - 12:11:14
-  Coverage date: 03/17/2024 - 12:10:45 - 03/17/2024 - 12:10:50
+  Generated on: 03/18/2024 - 09:46:04
+  Coverage date: 03/18/2024 - 09:45:35 - 03/18/2024 - 09:45:39
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 223
-  Files: 223
+  Classes: 224
+  Files: 224
   Line coverage: 97.2%
-  Covered lines: 3543
+  Covered lines: 3557
   Uncovered lines: 100
-  Coverable lines: 3643
-  Total lines: 10104
-  Branch coverage: 94.2% (1280 of 1358)
-  Covered branches: 1280
-  Total branches: 1358
-  Method coverage: 97.7% (308 of 315)
-  Covered methods: 308
-  Total methods: 315
+  Coverable lines: 3657
+  Total lines: 10148
+  Branch coverage: 94.2% (1284 of 1362)
+  Covered branches: 1284
+  Total branches: 1362
+  Method coverage: 97.7% (309 of 316)
+  Covered methods: 309
+  Total methods: 316
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -136,6 +136,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueTwoPointers                                                                      77.7%
   LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds.MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers               100.0%
   LeetCode.Algorithms.MinimumNumberGame.MinimumNumberGameSorting                                                                           100.0%
+  LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons.MinimumNumberOfArrowsToBurstBalloonsIterative                                   100.0%
   LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits.MinimumSumOfFourDigitNumberAfterSplittingDigitsChars                 100.0%
   LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits.MinimumSumOfFourDigitNumberAfterSplittingDigitsNumbers               100.0%
   LeetCode.Algorithms.MissingNumber.MissingNumberCumulativeSum                                                                             100.0%
