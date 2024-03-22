@@ -356,6 +356,8 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsIterative", "rp": "LeetCode_NumberOfGoodPairsIterative.html", "cl": 14, "ucl": 0, "cal": 14, "tl": 39, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroBitwise", "rp": "LeetCode_NumberOfStepsToReduceNumberToZeroBitwise.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 28, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroIterative", "rp": "LeetCode_NumberOfStepsToReduceNumberToZeroIterative.html", "cl": 15, "ucl": 0, "cal": 15, "tl": 42, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListSlowFastPointers", "rp": "LeetCode_PalindromeLinkedListSlowFastPointers.html", "cl": 32, "ucl": 2, "cal": 34, "tl": 74, "cb": 15, "tb": 22, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListTwoPointers", "rp": "LeetCode_PalindromeLinkedListTwoPointers.html", "cl": 20, "ucl": 2, "cal": 22, "tl": 57, "cb": 8, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByConvertingToString", "rp": "LeetCode_PalindromeNumberByConvertingToString.html", "cl": 17, "ucl": 3, "cal": 20, "tl": 53, "cb": 8, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByReversingDigits", "rp": "LeetCode_PalindromeNumberByReversingDigits.html", "cl": 12, "ucl": 1, "cal": 13, "tl": 45, "cb": 8, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.PascalsTriangle.PascalsTriangleDynamicProgramming", "rp": "LeetCode_PascalsTriangleDynamicProgramming.html", "cl": 15, "ucl": 0, "cal": 15, "tl": 44, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -487,6 +489,12 @@ var riskHotspots = [
     "metrics": [
       { "value": 23.2, "exceeded": true },
       { "value": 22, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListSlowFastPointers", "reportPath": "LeetCode_PalindromeLinkedListSlowFastPointers.html", "methodName": "IsPalindrome(LeetCode.Core.Models.ListNode)", "methodShortName": "IsPalindrome(...)", "fileIndex": 0, "line": 26,
+    "metrics": [
+      { "value": 20.26, "exceeded": true },
+      { "value": 20, "exceeded": false },
     ]},
   {
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithKMP", "reportPath": "LeetCode_FindTheIndexOfTheFirstOccurrenceInStringWithKMP.html", "methodName": "StrStr(System.String,System.String)", "methodShortName": "StrStr(...)", "fileIndex": 0, "line": 24,
