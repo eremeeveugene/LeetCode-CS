@@ -1,23 +1,23 @@
 Summary
-  Generated on: 03/22/2024 - 19:27:38
-  Coverage date: 03/22/2024 - 19:27:11 - 03/22/2024 - 19:27:15
+  Generated on: 03/23/2024 - 12:38:26
+  Coverage date: 03/23/2024 - 12:37:58 - 03/23/2024 - 12:38:02
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 228
-  Files: 228
-  Line coverage: 97.2%
-  Covered lines: 3648
-  Uncovered lines: 104
-  Coverable lines: 3752
-  Total lines: 10377
-  Branch coverage: 93.8% (1319 of 1406)
-  Covered branches: 1319
-  Total branches: 1406
-  Method coverage: 97.8% (314 of 321)
-  Covered methods: 314
-  Total methods: 321
+  Classes: 229
+  Files: 229
+  Line coverage: 97.1%
+  Covered lines: 3678
+  Uncovered lines: 106
+  Coverable lines: 3784
+  Total lines: 10447
+  Branch coverage: 93.6% (1334 of 1424)
+  Covered branches: 1334
+  Total branches: 1424
+  Method coverage: 97.8% (315 of 322)
+  Covered methods: 315
+  Total methods: 322
 
-LeetCode                                                                                                                                    97.4%
+LeetCode                                                                                                                                    97.3%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -174,6 +174,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RemoveNthNodeFromEndOfList.RemoveNthNodeFromEndOfListTwoPointers                                                     100.0%
   LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce                     90.0%
   LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListDictionary                    100.0%
+  LeetCode.Algorithms.ReorderList.ReorderListTwoPointers                                                                                    93.7%
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternConcat                                                              100.0%
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternIterative                                                           100.0%
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternKMP                                                                  90.3%

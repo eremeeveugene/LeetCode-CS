@@ -377,6 +377,7 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.RemoveNthNodeFromEndOfList.RemoveNthNodeFromEndOfListTwoPointers", "rp": "LeetCode_RemoveNthNodeFromEndOfListTwoPointers.html", "cl": 19, "ucl": 0, "cal": 19, "tl": 51, "cb": 9, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce", "rp": "LeetCode_RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce.html", "cl": 36, "ucl": 4, "cal": 40, "tl": 86, "cb": 14, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListDictionary", "rp": "LeetCode_RemoveZeroSumConsecutiveNodesFromLinkedListDictionary.html", "cl": 20, "ucl": 0, "cal": 20, "tl": 53, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.ReorderList.ReorderListTwoPointers", "rp": "LeetCode_ReorderListTwoPointers.html", "cl": 30, "ucl": 2, "cal": 32, "tl": 70, "cb": 15, "tb": 18, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternConcat", "rp": "LeetCode_RepeatedSubstringPatternConcat.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 29, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternIterative", "rp": "LeetCode_RepeatedSubstringPatternIterative.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 42, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternKMP", "rp": "LeetCode_RepeatedSubstringPatternKMP.html", "cl": 28, "ucl": 3, "cal": 31, "tl": 64, "cb": 6, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -495,6 +496,12 @@ var riskHotspots = [
     "metrics": [
       { "value": 20.26, "exceeded": true },
       { "value": 20, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.ReorderList.ReorderListTwoPointers", "reportPath": "LeetCode_ReorderListTwoPointers.html", "methodName": "ReorderList(LeetCode.Core.Models.ListNode)", "methodShortName": "ReorderList(...)", "fileIndex": 0, "line": 25,
+    "metrics": [
+      { "value": 18.08, "exceeded": true },
+      { "value": 18, "exceeded": false },
     ]},
   {
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithKMP", "reportPath": "LeetCode_FindTheIndexOfTheFirstOccurrenceInStringWithKMP.html", "methodName": "StrStr(System.String,System.String)", "methodShortName": "StrStr(...)", "fileIndex": 0, "line": 24,
