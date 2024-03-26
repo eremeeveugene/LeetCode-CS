@@ -304,6 +304,8 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.FindTheTownJudge.FindTheTownJudgeIterative", "rp": "LeetCode_FindTheTownJudgeIterative.html", "cl": 22, "ucl": 0, "cal": 22, "tl": 56, "cb": 14, "tb": 14, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.FindWordsContainingCharacter.FindWordsContainingCharacterDictionary", "rp": "LeetCode_FindWordsContainingCharacterDictionary.html", "cl": 17, "ucl": 0, "cal": 17, "tl": 45, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.FindWordsContainingCharacter.FindWordsContainingCharacterIterative", "rp": "LeetCode_FindWordsContainingCharacterIterative.html", "cl": 11, "ucl": 0, "cal": 11, "tl": 37, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveHashSet", "rp": "LeetCode_FirstMissingPositiveHashSet.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 36, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveIterative", "rp": "LeetCode_FirstMissingPositiveIterative.html", "cl": 28, "ucl": 1, "cal": 29, "tl": 62, "cb": 15, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationReplace", "rp": "LeetCode_GoalParserInterpretationReplace.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 26, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationStringBuilder", "rp": "LeetCode_GoalParserInterpretationStringBuilder.html", "cl": 23, "ucl": 0, "cal": 23, "tl": 55, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.HappyNumber.HappyNumberHashSetChars", "rp": "LeetCode_HappyNumberHashSetChars.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 39, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -517,6 +519,12 @@ var riskHotspots = [
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce", "reportPath": "LeetCode_RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce.html", "methodName": "RemoveZeroSumSublists(LeetCode.Core.Models.ListNode)", "methodShortName": "RemoveZeroSumSublists(...)", "fileIndex": 0, "line": 26,
     "metrics": [
       { "value": 16.26, "exceeded": true },
+      { "value": 16, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveIterative", "reportPath": "LeetCode_FirstMissingPositiveIterative.html", "methodName": "FirstMissingPositive(System.Int32[])", "methodShortName": "FirstMissingPositive(...)", "fileIndex": 0, "line": 24,
+    "metrics": [
+      { "value": 16.01, "exceeded": true },
       { "value": 16, "exceeded": false },
     ]},
   {
