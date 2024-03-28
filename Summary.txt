@@ -1,21 +1,21 @@
 Summary
-  Generated on: 03/27/2024 - 16:44:47
-  Coverage date: 03/27/2024 - 16:44:21 - 03/27/2024 - 16:44:24
+  Generated on: 03/28/2024 - 11:30:27
+  Coverage date: 03/28/2024 - 11:29:57 - 03/28/2024 - 11:30:02
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 236
-  Files: 236
+  Classes: 238
+  Files: 238
   Line coverage: 97.1%
-  Covered lines: 3781
-  Uncovered lines: 110
-  Coverable lines: 3891
-  Total lines: 10755
-  Branch coverage: 93.6% (1371 of 1464)
-  Covered branches: 1371
-  Total branches: 1464
-  Method coverage: 97.8% (322 of 329)
-  Covered methods: 322
-  Total methods: 329
+  Covered lines: 3824
+  Uncovered lines: 113
+  Coverable lines: 3937
+  Total lines: 10868
+  Branch coverage: 93.6% (1386 of 1480)
+  Covered branches: 1386
+  Total branches: 1480
+  Method coverage: 97.8% (324 of 331)
+  Covered methods: 324
+  Total methods: 331
 
 LeetCode                                                                                                                                    97.3%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -120,6 +120,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesLinq                                                                                  100.0%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordReverseIteration                                                                    100.0%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordTrimSplit                                                                           100.0%
+  LeetCode.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency.LengthOfLongestSubarrayWithAtMostKFrequencyIterative                     100.0%
+  LeetCode.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency.LengthOfLongestSubarrayWithAtMostKFrequencyTwoPointers                    88.4%
   LeetCode.Algorithms.LinkedListCycle.LinkedListCycleHashSet                                                                                92.8%
   LeetCode.Algorithms.LinkedListCycle.LinkedListCycleTwoPointers                                                                            87.5%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixBinarySearch                                                                  100.0%
