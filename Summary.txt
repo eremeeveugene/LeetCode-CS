@@ -1,21 +1,21 @@
 Summary
-  Generated on: 03/30/2024 - 11:58:51
-  Coverage date: 03/30/2024 - 11:58:21 - 03/30/2024 - 11:58:26
+  Generated on: 03/30/2024 - 12:34:10
+  Coverage date: 03/30/2024 - 12:33:43 - 03/30/2024 - 12:33:47
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 241
-  Files: 241
+  Classes: 242
+  Files: 242
   Line coverage: 97.1%
-  Covered lines: 3905
+  Covered lines: 3920
   Uncovered lines: 113
-  Coverable lines: 4018
-  Total lines: 11062
-  Branch coverage: 93.7% (1416 of 1510)
-  Covered branches: 1416
-  Total branches: 1510
-  Method coverage: 97.9% (329 of 336)
-  Covered methods: 329
-  Total methods: 336
+  Coverable lines: 4033
+  Total lines: 11106
+  Branch coverage: 93.7% (1420 of 1514)
+  Covered branches: 1420
+  Total branches: 1514
+  Method coverage: 97.9% (330 of 337)
+  Covered methods: 330
+  Total methods: 337
 
 LeetCode                                                                                                                                    97.3%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -129,6 +129,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixBinarySearch                                                                  100.0%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixDivideAndConquer                                                               96.1%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixHorizontalScanning                                                            100.0%
+  LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters.LongestSubstringWithoutRepeatingCharactersSlidingWindow                   100.0%
   LeetCode.Algorithms.MajorityElement.MajorityElementDictionary                                                                            100.0%
   LeetCode.Algorithms.MajorityElement.MajorityElementDistinctCount                                                                         100.0%
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberIterative                                                                             100.0%
