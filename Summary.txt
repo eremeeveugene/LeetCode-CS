@@ -1,21 +1,21 @@
 Summary
-  Generated on: 03/29/2024 - 17:41:41
-  Coverage date: 03/29/2024 - 17:41:12 - 03/29/2024 - 17:41:16
+  Generated on: 03/30/2024 - 11:58:51
+  Coverage date: 03/30/2024 - 11:58:21 - 03/30/2024 - 11:58:26
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 240
-  Files: 240
+  Classes: 241
+  Files: 241
   Line coverage: 97.1%
-  Covered lines: 3879
+  Covered lines: 3905
   Uncovered lines: 113
-  Coverable lines: 3992
-  Total lines: 11001
-  Branch coverage: 93.7% (1408 of 1502)
-  Covered branches: 1408
-  Total branches: 1502
-  Method coverage: 97.9% (327 of 334)
-  Covered methods: 327
-  Total methods: 334
+  Coverable lines: 4018
+  Total lines: 11062
+  Branch coverage: 93.7% (1416 of 1510)
+  Covered branches: 1416
+  Total branches: 1510
+  Method coverage: 97.9% (329 of 336)
+  Covered methods: 329
+  Total methods: 336
 
 LeetCode                                                                                                                                    97.3%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -223,6 +223,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SquaresOfSortedArray.SquaresOfSortedArraySort                                                                        100.0%
   LeetCode.Algorithms.SquaresOfSortedArray.SquaresOfSortedArrayTwoPointers                                                                 100.0%
   LeetCode.Algorithms.SubarrayProductLessThanK.SubarrayProductLessThanKTwoPointers                                                         100.0%
+  LeetCode.Algorithms.SubarraysWithKDifferentIntegers.SubarraysWithKDifferentIntegersSlidingWindow                                         100.0%
   LeetCode.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger.SubtractTheProductAndSumOfDigitsOfAnIntegerDivision                      100.0%
   LeetCode.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger.SubtractTheProductAndSumOfDigitsOfAnIntegerString                        100.0%
   LeetCode.Algorithms.SumMultiples.SumMultiplesIterative                                                                                   100.0%
