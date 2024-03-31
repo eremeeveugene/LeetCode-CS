@@ -1,23 +1,23 @@
 Summary
-  Generated on: 03/31/2024 - 09:42:48
-  Coverage date: 03/31/2024 - 09:42:21 - 03/31/2024 - 09:42:25
+  Generated on: 03/31/2024 - 11:48:49
+  Coverage date: 03/31/2024 - 11:48:19 - 03/31/2024 - 11:48:24
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 245
-  Files: 245
+  Classes: 246
+  Files: 246
   Line coverage: 97.2%
-  Covered lines: 3957
+  Covered lines: 3983
   Uncovered lines: 113
-  Coverable lines: 4070
-  Total lines: 11231
-  Branch coverage: 93.8% (1432 of 1526)
-  Covered branches: 1432
-  Total branches: 1526
-  Method coverage: 97.9% (333 of 340)
-  Covered methods: 333
-  Total methods: 340
+  Coverable lines: 4096
+  Total lines: 11282
+  Branch coverage: 93.7% (1444 of 1540)
+  Covered branches: 1444
+  Total branches: 1540
+  Method coverage: 97.9% (334 of 341)
+  Covered methods: 334
+  Total methods: 341
 
-LeetCode                                                                                                                                    97.3%
+LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -69,6 +69,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget.CountPairsWhoseSumIsLessThanTargetSortTwoPointers                                 100.0%
   LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes.CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursive         100.0%
   LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes.CountSubarraysWhereMaxElementAppearsAtLeastKTimesSlidingWindow     100.0%
+  LeetCode.Algorithms.CountSubarraysWithFixedBounds.CountSubarraysWithFixedBoundsSlidingWindow                                             100.0%
   LeetCode.Algorithms.CountTheDigitsThatDivideNumber.CountTheDigitsThatDivideNumberIterative                                               100.0%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                     100.0%
   LeetCode.Algorithms.CustomSortString.CustomSortStringDictionarySorting                                                                   100.0%
