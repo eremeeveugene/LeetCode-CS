@@ -1,21 +1,21 @@
 Summary
-  Generated on: 03/30/2024 - 17:11:37
-  Coverage date: 03/30/2024 - 17:11:06 - 03/30/2024 - 17:11:10
+  Generated on: 03/31/2024 - 09:42:48
+  Coverage date: 03/31/2024 - 09:42:21 - 03/31/2024 - 09:42:25
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 244
-  Files: 244
+  Classes: 245
+  Files: 245
   Line coverage: 97.2%
-  Covered lines: 3943
+  Covered lines: 3957
   Uncovered lines: 113
-  Coverable lines: 4056
-  Total lines: 11186
-  Branch coverage: 93.8% (1426 of 1520)
-  Covered branches: 1426
-  Total branches: 1520
-  Method coverage: 97.9% (332 of 339)
-  Covered methods: 332
-  Total methods: 339
+  Coverable lines: 4070
+  Total lines: 11231
+  Branch coverage: 93.8% (1432 of 1526)
+  Covered branches: 1432
+  Total branches: 1526
+  Method coverage: 97.9% (333 of 340)
+  Covered methods: 333
+  Total methods: 340
 
 LeetCode                                                                                                                                    97.3%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -56,6 +56,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayConcat                                                                      100.0%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayIterative                                                                   100.0%
   LeetCode.Algorithms.ContainsDuplicate.ContainsDuplicateHashSet                                                                           100.0%
+  LeetCode.Algorithms.ContainsDuplicate2.ContainsDuplicate2Dictionary                                                                      100.0%
   LeetCode.Algorithms.ContiguousArray.ContiguousArrayDictionary                                                                            100.0%
   LeetCode.Algorithms.ConvertTheTemperature.ConvertTheTemperatureMath                                                                      100.0%
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionary                                        100.0%
