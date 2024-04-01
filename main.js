@@ -260,6 +260,8 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayIterative", "rp": "LeetCode_ConcatenationOfArrayIterative.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 34, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.ContainsDuplicate.ContainsDuplicateHashSet", "rp": "LeetCode_ContainsDuplicateHashSet.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 29, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.ContainsDuplicate2.ContainsDuplicate2Dictionary", "rp": "LeetCode_ContainsDuplicate2Dictionary.html", "cl": 14, "ucl": 0, "cal": 14, "tl": 45, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.ContainsDuplicate3.ContainsDuplicate3BruteForce", "rp": "LeetCode_ContainsDuplicate3BruteForce.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 40, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.ContainsDuplicate3.ContainsDuplicate3Dictionary", "rp": "LeetCode_ContainsDuplicate3Dictionary.html", "cl": 24, "ucl": 2, "cal": 26, "tl": 65, "cb": 17, "tb": 20, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.ContiguousArray.ContiguousArrayDictionary", "rp": "LeetCode_ContiguousArrayDictionary.html", "cl": 14, "ucl": 0, "cal": 14, "tl": 41, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.ConvertTheTemperature.ConvertTheTemperatureMath", "rp": "LeetCode_ConvertTheTemperatureMath.html", "cl": 5, "ucl": 0, "cal": 5, "tl": 29, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionary", "rp": "LeetCode_CountElementsWithMaximumFrequencyDictionary.html", "cl": 22, "ucl": 0, "cal": 22, "tl": 49, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -513,6 +515,12 @@ var riskHotspots = [
     "metrics": [
       { "value": 20.26, "exceeded": true },
       { "value": 20, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.ContainsDuplicate3.ContainsDuplicate3Dictionary", "reportPath": "LeetCode_ContainsDuplicate3Dictionary.html", "methodName": "ContainsNearbyAlmostDuplicate(System.Int32[],System.Int32,System.Int32)", "methodShortName": "ContainsNearbyAlmostDuplicate(...)", "fileIndex": 0, "line": 27,
+    "metrics": [
+      { "value": 18.21, "exceeded": true },
+      { "value": 18, "exceeded": false },
     ]},
   {
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.ReorderList.ReorderListTwoPointers", "reportPath": "LeetCode_ReorderListTwoPointers.html", "methodName": "ReorderList(LeetCode.Core.Models.ListNode)", "methodShortName": "ReorderList(...)", "fileIndex": 0, "line": 25,

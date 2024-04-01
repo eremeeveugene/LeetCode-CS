@@ -1,23 +1,23 @@
 Summary
-  Generated on: 03/31/2024 - 11:48:49
-  Coverage date: 03/31/2024 - 11:48:19 - 03/31/2024 - 11:48:24
+  Generated on: 04/01/2024 - 17:58:23
+  Coverage date: 04/01/2024 - 17:57:54 - 04/01/2024 - 17:57:59
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 246
-  Files: 246
+  Classes: 248
+  Files: 248
   Line coverage: 97.2%
-  Covered lines: 3983
-  Uncovered lines: 113
-  Coverable lines: 4096
-  Total lines: 11282
-  Branch coverage: 93.7% (1444 of 1540)
-  Covered branches: 1444
-  Total branches: 1540
-  Method coverage: 97.9% (334 of 341)
-  Covered methods: 334
-  Total methods: 341
+  Covered lines: 4019
+  Uncovered lines: 115
+  Coverable lines: 4134
+  Total lines: 11387
+  Branch coverage: 93.6% (1469 of 1568)
+  Covered branches: 1469
+  Total branches: 1568
+  Method coverage: 97.9% (337 of 344)
+  Covered methods: 337
+  Total methods: 344
 
-LeetCode                                                                                                                                    97.4%
+LeetCode                                                                                                                                    97.3%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -57,6 +57,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayIterative                                                                   100.0%
   LeetCode.Algorithms.ContainsDuplicate.ContainsDuplicateHashSet                                                                           100.0%
   LeetCode.Algorithms.ContainsDuplicate2.ContainsDuplicate2Dictionary                                                                      100.0%
+  LeetCode.Algorithms.ContainsDuplicate3.ContainsDuplicate3BruteForce                                                                      100.0%
+  LeetCode.Algorithms.ContainsDuplicate3.ContainsDuplicate3Dictionary                                                                       92.3%
   LeetCode.Algorithms.ContiguousArray.ContiguousArrayDictionary                                                                            100.0%
   LeetCode.Algorithms.ConvertTheTemperature.ConvertTheTemperatureMath                                                                      100.0%
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionary                                        100.0%
