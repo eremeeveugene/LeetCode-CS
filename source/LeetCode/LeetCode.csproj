@@ -11,6 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.TestPlatform.TestHost" Version="17.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\LeetCode.Core\LeetCode.Core.csproj" />
   </ItemGroup>
 
