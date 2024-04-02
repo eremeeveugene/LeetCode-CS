@@ -1,21 +1,21 @@
 Summary
-  Generated on: 04/01/2024 - 17:58:23
-  Coverage date: 04/01/2024 - 17:57:54 - 04/01/2024 - 17:57:59
+  Generated on: 04/02/2024 - 14:50:53
+  Coverage date: 04/02/2024 - 14:50:23 - 04/02/2024 - 14:50:28
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 248
-  Files: 248
+  Classes: 250
+  Files: 250
   Line coverage: 97.2%
-  Covered lines: 4019
-  Uncovered lines: 115
-  Coverable lines: 4134
-  Total lines: 11387
-  Branch coverage: 93.6% (1469 of 1568)
-  Covered branches: 1469
-  Total branches: 1568
-  Method coverage: 97.9% (337 of 344)
-  Covered methods: 337
-  Total methods: 344
+  Covered lines: 4069
+  Uncovered lines: 116
+  Coverable lines: 4185
+  Total lines: 11507
+  Branch coverage: 93.7% (1490 of 1590)
+  Covered branches: 1490
+  Total branches: 1590
+  Method coverage: 97.9% (339 of 346)
+  Covered methods: 339
+  Total methods: 346
 
 LeetCode                                                                                                                                    97.3%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -251,6 +251,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ValidParentheses.ValidParenthesesStackSwitch                                                                         100.0%
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsAscending   100.0%
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescending  100.0%
+  LeetCode.Algorithms.WordPattern.WordPatternDictionary                                                                                    100.0%
+  LeetCode.Algorithms.WordPattern.WordPatternTwoDictionaries                                                                                96.4%
   LeetCode.Algorithms.XOROperationInAnArray.XOROperationInAnArrayIterative                                                                 100.0%
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                              100.0%
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLockFactory                                                       100.0%
