@@ -1,23 +1,23 @@
 Summary
-  Generated on: 04/02/2024 - 14:50:53
-  Coverage date: 04/02/2024 - 14:50:23 - 04/02/2024 - 14:50:28
+  Generated on: 04/03/2024 - 19:45:00
+  Coverage date: 04/03/2024 - 19:44:28 - 04/03/2024 - 19:44:33
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 250
-  Files: 250
+  Classes: 251
+  Files: 251
   Line coverage: 97.2%
-  Covered lines: 4069
+  Covered lines: 4105
   Uncovered lines: 116
-  Coverable lines: 4185
-  Total lines: 11507
-  Branch coverage: 93.7% (1490 of 1590)
-  Covered branches: 1490
-  Total branches: 1590
-  Method coverage: 97.9% (339 of 346)
-  Covered methods: 339
-  Total methods: 346
+  Coverable lines: 4221
+  Total lines: 11585
+  Branch coverage: 93.8% (1520 of 1620)
+  Covered branches: 1520
+  Total branches: 1620
+  Method coverage: 97.9% (341 of 348)
+  Covered methods: 341
+  Total methods: 348
 
-LeetCode                                                                                                                                    97.3%
+LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -253,6 +253,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescending  100.0%
   LeetCode.Algorithms.WordPattern.WordPatternDictionary                                                                                    100.0%
   LeetCode.Algorithms.WordPattern.WordPatternTwoDictionaries                                                                                96.4%
+  LeetCode.Algorithms.WordSearch.WordSearchRecursive                                                                                       100.0%
   LeetCode.Algorithms.XOROperationInAnArray.XOROperationInAnArrayIterative                                                                 100.0%
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                              100.0%
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLockFactory                                                       100.0%

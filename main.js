@@ -456,6 +456,7 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescending", "rp": "LeetCode_WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescending.html", "cl": 13, "ucl": 0, "cal": 13, "tl": 42, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.WordPattern.WordPatternDictionary", "rp": "LeetCode_WordPatternDictionary.html", "cl": 23, "ucl": 0, "cal": 23, "tl": 57, "cb": 10, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.WordPattern.WordPatternTwoDictionaries", "rp": "LeetCode_WordPatternTwoDictionaries.html", "cl": 27, "ucl": 1, "cal": 28, "tl": 63, "cb": 11, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.WordSearch.WordSearchRecursive", "rp": "LeetCode_WordSearchRecursive.html", "cl": 36, "ucl": 0, "cal": 36, "tl": 78, "cb": 30, "tb": 30, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.XOROperationInAnArray.XOROperationInAnArrayIterative", "rp": "LeetCode_XOROperationInAnArrayIterative.html", "cl": 8, "ucl": 0, "cal": 8, "tl": 34, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock", "rp": "LeetCode_FizzBuzzMultithreadedMonitorLock.html", "cl": 75, "ucl": 0, "cal": 75, "tl": 118, "cb": 33, "tb": 34, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLockFactory", "rp": "LeetCode_FizzBuzzMultithreadedMonitorLockFactory.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 20, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -510,6 +511,12 @@ var riskHotspots = [
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.ThreeSum.ThreeSumTwoPointers", "reportPath": "LeetCode_ThreeSumTwoPointers.html", "methodName": "ThreeSum(System.Int32[])", "methodShortName": "ThreeSum(...)", "fileIndex": 0, "line": 23,
     "metrics": [
       { "value": 23.2, "exceeded": true },
+      { "value": 22, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.WordSearch.WordSearchRecursive", "reportPath": "LeetCode_WordSearchRecursive.html", "methodName": "Search(System.Collections.Generic.IReadOnlyList`1<System.Char[]>,System.String,System.Int32,System.Int32,System.Int32,System.Boolean[0...,0...])", "methodShortName": "Search(...)", "fileIndex": 0, "line": 48,
+    "metrics": [
+      { "value": 22, "exceeded": true },
       { "value": 22, "exceeded": false },
     ]},
   {
