@@ -1,21 +1,21 @@
 Summary
-  Generated on: 04/03/2024 - 19:45:00
-  Coverage date: 04/03/2024 - 19:44:28 - 04/03/2024 - 19:44:33
+  Generated on: 04/04/2024 - 11:38:49
+  Coverage date: 04/04/2024 - 11:38:21 - 04/04/2024 - 11:38:25
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 251
-  Files: 251
+  Classes: 252
+  Files: 252
   Line coverage: 97.2%
-  Covered lines: 4105
+  Covered lines: 4120
   Uncovered lines: 116
-  Coverable lines: 4221
-  Total lines: 11585
-  Branch coverage: 93.8% (1520 of 1620)
-  Covered branches: 1520
-  Total branches: 1620
-  Method coverage: 97.9% (341 of 348)
-  Covered methods: 341
-  Total methods: 348
+  Coverable lines: 4236
+  Total lines: 11635
+  Branch coverage: 93.8% (1526 of 1626)
+  Covered branches: 1526
+  Total branches: 1626
+  Method coverage: 97.9% (342 of 349)
+  Covered methods: 342
+  Total methods: 349
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -140,6 +140,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberIterative                                                                             100.0%
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberString                                                                                100.0%
   LeetCode.Algorithms.MaximumAverageSubarray1.MaximumAverageSubarray1SlidingWindow                                                         100.0%
+  LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses.MaximumNestingDepthOfTheParenthesesIterative                                     100.0%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinq                                        100.0%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinqSplit                                   100.0%
   LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStringBuilder                                                           100.0%
