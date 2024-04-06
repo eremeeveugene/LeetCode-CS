@@ -360,6 +360,8 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds.MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers", "rp": "LeetCode_MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers.html", "cl": 17, "ucl": 0, "cal": 17, "tl": 45, "cb": 12, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MinimumNumberGame.MinimumNumberGameSorting", "rp": "LeetCode_MinimumNumberGameSorting.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 37, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons.MinimumNumberOfArrowsToBurstBalloonsIterative", "rp": "LeetCode_MinimumNumberOfArrowsToBurstBalloonsIterative.html", "cl": 14, "ucl": 0, "cal": 14, "tl": 44, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStack", "rp": "LeetCode_MinimumRemoveToMakeValidParenthesesStack.html", "cl": 28, "ucl": 0, "cal": 28, "tl": 63, "cb": 14, "tb": 14, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStringBuilder", "rp": "LeetCode_MinimumRemoveToMakeValidParenthesesStringBuilder.html", "cl": 39, "ucl": 0, "cal": 39, "tl": 87, "cb": 16, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits.MinimumSumOfFourDigitNumberAfterSplittingDigitsChars", "rp": "LeetCode_MinimumSumOfFourDigitNumberAfterSplittingDigitsChars.html", "cl": 7, "ucl": 0, "cal": 7, "tl": 31, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits.MinimumSumOfFourDigitNumberAfterSplittingDigitsNumbers", "rp": "LeetCode_MinimumSumOfFourDigitNumberAfterSplittingDigitsNumbers.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 37, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MissingNumber.MissingNumberCumulativeSum", "rp": "LeetCode_MissingNumberCumulativeSum.html", "cl": 8, "ucl": 0, "cal": 8, "tl": 33, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -566,6 +568,12 @@ var riskHotspots = [
     ]},
   {
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.IsSubsequence.IsSubsequenceIterative", "reportPath": "LeetCode_IsSubsequenceIterative.html", "methodName": "IsSubsequence(System.String,System.String)", "methodShortName": "IsSubsequence(...)", "fileIndex": 0, "line": 25,
+    "metrics": [
+      { "value": 16, "exceeded": true },
+      { "value": 16, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStringBuilder", "reportPath": "LeetCode_MinimumRemoveToMakeValidParenthesesStringBuilder.html", "methodName": "MinRemoveToMakeValid(System.String)", "methodShortName": "MinRemoveToMakeValid(...)", "fileIndex": 0, "line": 26,
     "metrics": [
       { "value": 16, "exceeded": true },
       { "value": 16, "exceeded": false },
