@@ -1,23 +1,23 @@
 Summary
-  Generated on: 04/06/2024 - 10:20:07
-  Coverage date: 04/06/2024 - 10:19:38 - 04/06/2024 - 10:19:42
+  Generated on: 04/07/2024 - 09:24:57
+  Coverage date: 04/07/2024 - 09:24:27 - 04/07/2024 - 09:24:32
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 256
-  Files: 256
+  Classes: 257
+  Files: 257
   Line coverage: 97.3%
-  Covered lines: 4224
+  Covered lines: 4253
   Uncovered lines: 116
-  Coverable lines: 4340
-  Total lines: 11882
-  Branch coverage: 94% (1578 of 1678)
-  Covered branches: 1578
-  Total branches: 1678
-  Method coverage: 98% (346 of 353)
-  Covered methods: 346
-  Total methods: 353
+  Coverable lines: 4369
+  Total lines: 11949
+  Branch coverage: 94% (1590 of 1690)
+  Covered branches: 1590
+  Total branches: 1690
+  Method coverage: 98% (347 of 354)
+  Covered methods: 347
+  Total methods: 354
 
-LeetCode                                                                                                                                    97.4%
+LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -254,6 +254,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ValidPalindrome2.ValidPalindrome2TwoPointers                                                                         100.0%
   LeetCode.Algorithms.ValidParentheses.ValidParenthesesStackDictionary                                                                     100.0%
   LeetCode.Algorithms.ValidParentheses.ValidParenthesesStackSwitch                                                                         100.0%
+  LeetCode.Algorithms.ValidParenthesisString.ValidParenthesisStringIterative                                                               100.0%
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsAscending   100.0%
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescending  100.0%
   LeetCode.Algorithms.WordPattern.WordPatternDictionary                                                                                    100.0%
