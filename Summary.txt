@@ -1,21 +1,21 @@
 Summary
-  Generated on: 04/07/2024 - 09:24:57
-  Coverage date: 04/07/2024 - 09:24:27 - 04/07/2024 - 09:24:32
+  Generated on: 04/08/2024 - 16:34:31
+  Coverage date: 04/08/2024 - 16:34:03 - 04/08/2024 - 16:34:08
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 257
-  Files: 257
+  Classes: 259
+  Files: 259
   Line coverage: 97.3%
-  Covered lines: 4253
+  Covered lines: 4302
   Uncovered lines: 116
-  Coverable lines: 4369
-  Total lines: 11949
-  Branch coverage: 94% (1590 of 1690)
-  Covered branches: 1590
-  Total branches: 1690
-  Method coverage: 98% (347 of 354)
-  Covered methods: 347
-  Total methods: 354
+  Coverable lines: 4418
+  Total lines: 12061
+  Branch coverage: 94.1% (1612 of 1712)
+  Covered branches: 1612
+  Total branches: 1712
+  Method coverage: 98% (349 of 356)
+  Covered methods: 349
+  Total methods: 356
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -175,6 +175,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsIterative                                                                         100.0%
   LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroBitwise                                           100.0%
   LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroIterative                                         100.0%
+  LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch.NumberOfStudentsUnableToEatLunchIterative                                           100.0%
+  LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch.NumberOfStudentsUnableToEatLunchQueue                                               100.0%
   LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListSlowFastPointers                                                             94.1%
   LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListTwoPointers                                                                  90.9%
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByConvertingToString                                                                 85.0%
