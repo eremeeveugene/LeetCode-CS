@@ -1,21 +1,21 @@
 Summary
-  Generated on: 04/09/2024 - 18:01:33
-  Coverage date: 04/09/2024 - 18:01:05 - 04/09/2024 - 18:01:09
+  Generated on: 04/10/2024 - 16:09:00
+  Coverage date: 04/10/2024 - 16:08:32 - 04/10/2024 - 16:08:36
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 260
-  Files: 260
+  Classes: 261
+  Files: 261
   Line coverage: 97.3%
-  Covered lines: 4328
+  Covered lines: 4341
   Uncovered lines: 116
-  Coverable lines: 4444
-  Total lines: 12117
-  Branch coverage: 94.1% (1620 of 1720)
-  Covered branches: 1620
-  Total branches: 1720
-  Method coverage: 98% (350 of 357)
-  Covered methods: 350
-  Total methods: 357
+  Coverable lines: 4457
+  Total lines: 12152
+  Branch coverage: 94.1% (1624 of 1724)
+  Covered branches: 1624
+  Total branches: 1724
+  Method coverage: 98% (351 of 358)
+  Covered methods: 351
+  Total methods: 358
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -202,6 +202,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternConcat                                                              100.0%
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternIterative                                                           100.0%
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternKMP                                                                  90.3%
+  LeetCode.Algorithms.RevealCardsInIncreasingOrder.RevealCardsInIncreasingOrderQueue                                                       100.0%
   LeetCode.Algorithms.ReverseLinkedList.ReverseLinkedListIterative                                                                         100.0%
   LeetCode.Algorithms.ReverseString.ReverseStringArrayReverse                                                                              100.0%
   LeetCode.Algorithms.ReverseString.ReverseStringTwoPointers                                                                               100.0%
