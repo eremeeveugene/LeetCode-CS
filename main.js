@@ -398,6 +398,7 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.RemoveDuplicatesFromSortedList.RemoveDuplicatesFromSortedListIterativeReverse", "rp": "LeetCode_RemoveDuplicatesFromSortedListIterativeReverse.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 41, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RemoveElement.RemoveElementBruteForce", "rp": "LeetCode_RemoveElementBruteForce.html", "cl": 16, "ucl": 0, "cal": 16, "tl": 44, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RemoveElement.RemoveElementTwoPointers", "rp": "LeetCode_RemoveElementTwoPointers.html", "cl": 16, "ucl": 0, "cal": 16, "tl": 45, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.RemoveKDigits.RemoveKDigitsStack", "rp": "LeetCode_RemoveKDigitsStack.html", "cl": 30, "ucl": 0, "cal": 30, "tl": 67, "cb": 18, "tb": 20, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RemoveNthNodeFromEndOfList.RemoveNthNodeFromEndOfListTwoPointers", "rp": "LeetCode_RemoveNthNodeFromEndOfListTwoPointers.html", "cl": 19, "ucl": 0, "cal": 19, "tl": 51, "cb": 9, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce", "rp": "LeetCode_RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce.html", "cl": 36, "ucl": 4, "cal": 40, "tl": 86, "cb": 14, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListDictionary", "rp": "LeetCode_RemoveZeroSumConsecutiveNodesFromLinkedListDictionary.html", "cl": 20, "ucl": 0, "cal": 20, "tl": 53, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -533,6 +534,12 @@ var riskHotspots = [
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListSlowFastPointers", "reportPath": "LeetCode_PalindromeLinkedListSlowFastPointers.html", "methodName": "IsPalindrome(LeetCode.Core.Models.ListNode)", "methodShortName": "IsPalindrome(...)", "fileIndex": 0, "line": 26,
     "metrics": [
       { "value": 20.26, "exceeded": true },
+      { "value": 20, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.RemoveKDigits.RemoveKDigitsStack", "reportPath": "LeetCode_RemoveKDigitsStack.html", "methodName": "RemoveKdigits(System.String,System.Int32)", "methodShortName": "RemoveKdigits(...)", "fileIndex": 0, "line": 25,
+    "metrics": [
+      { "value": 20, "exceeded": true },
       { "value": 20, "exceeded": false },
     ]},
   {
