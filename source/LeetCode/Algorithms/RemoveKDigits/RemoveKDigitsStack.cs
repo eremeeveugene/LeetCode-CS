@@ -9,15 +9,25 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using System.Text;
-
 namespace LeetCode.Algorithms.RemoveKDigits;
 
 /// <inheritdoc />
 public class RemoveKDigitsStack : IRemoveKDigits
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
+    /// </summary>
+    /// <param name="num"></param>
+    /// <param name="k"></param>
+    /// <returns></returns>
     public string RemoveKdigits(string num, int k)
     {
+        if (k == num.Length)
+        {
+            return "0";
+        }
+
         var stack = new Stack<char>();
 
         foreach (var digit in num)
@@ -39,15 +49,19 @@ public class RemoveKDigitsStack : IRemoveKDigits
             k--;
         }
 
-        var stringBuilder = new StringBuilder();
+        var resultArray = stack.ToArray();
 
-        while (stack.Count > 0)
+        Array.Reverse(resultArray);
+
+        var startIndex = 0;
+
+        while (startIndex < resultArray.Length && resultArray[startIndex] == '0')
         {
-            stringBuilder.Insert(0, stack.Pop());
+            startIndex++;
         }
 
-        var result = stringBuilder.ToString().TrimStart('0');
-
-        return string.IsNullOrEmpty(result) ? "0" : result;
+        return startIndex == resultArray.Length
+            ? "0"
+            : new string(resultArray, startIndex, resultArray.Length - startIndex);
     }
 }
