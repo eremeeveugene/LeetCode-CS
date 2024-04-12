@@ -1,21 +1,21 @@
 Summary
-  Generated on: 04/11/2024 - 15:00:23
-  Coverage date: 04/11/2024 - 14:59:52 - 04/11/2024 - 14:59:57
+  Generated on: 04/12/2024 - 10:00:10
+  Coverage date: 04/12/2024 - 09:59:40 - 04/12/2024 - 09:59:45
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 262
-  Files: 262
+  Classes: 263
+  Files: 263
   Line coverage: 97.4%
-  Covered lines: 4371
+  Covered lines: 4403
   Uncovered lines: 116
-  Coverable lines: 4487
-  Total lines: 12219
-  Branch coverage: 94.1% (1642 of 1744)
-  Covered branches: 1642
-  Total branches: 1744
-  Method coverage: 98% (352 of 359)
-  Covered methods: 352
-  Total methods: 359
+  Coverable lines: 4519
+  Total lines: 12278
+  Branch coverage: 94.1% (1650 of 1752)
+  Covered branches: 1650
+  Total branches: 1752
+  Method coverage: 98% (353 of 360)
+  Covered methods: 353
+  Total methods: 360
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -252,6 +252,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ThreeSum.ThreeSumBruteForce                                                                                          100.0%
   LeetCode.Algorithms.ThreeSum.ThreeSumTwoPointers                                                                                          86.4%
   LeetCode.Algorithms.TimeNeededToBuyTickets.TimeNeededToBuyTicketsIterative                                                               100.0%
+  LeetCode.Algorithms.TrappingRainWater.TrappingRainWaterIterative                                                                         100.0%
   LeetCode.Algorithms.TwoSum.TwoSumBruteForce                                                                                               91.6%
   LeetCode.Algorithms.TwoSum.TwoSumDictionary                                                                                               93.3%
   LeetCode.Algorithms.UniqueMorseCodeWords.UniqueMorseCodeWordsHashSet                                                                     100.0%
