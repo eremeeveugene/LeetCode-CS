@@ -1,23 +1,23 @@
 Summary
-  Generated on: 04/13/2024 - 10:04:53
-  Coverage date: 04/13/2024 - 10:04:25 - 04/13/2024 - 10:04:29
+  Generated on: 04/14/2024 - 13:57:57
+  Coverage date: 04/14/2024 - 13:57:28 - 04/14/2024 - 13:57:34
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 264
-  Files: 264
+  Classes: 266
+  Files: 266
   Line coverage: 97.4%
-  Covered lines: 4432
-  Uncovered lines: 116
-  Coverable lines: 4548
-  Total lines: 12337
-  Branch coverage: 94.2% (1664 of 1766)
-  Covered branches: 1664
-  Total branches: 1766
-  Method coverage: 98% (354 of 361)
-  Covered methods: 354
-  Total methods: 361
+  Covered lines: 4475
+  Uncovered lines: 118
+  Coverable lines: 4593
+  Total lines: 12448
+  Branch coverage: 94.2% (1683 of 1786)
+  Covered branches: 1683
+  Total branches: 1786
+  Method coverage: 98% (356 of 363)
+  Covered methods: 356
+  Total methods: 363
 
-LeetCode                                                                                                                                    97.6%
+LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -245,6 +245,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger.SubtractTheProductAndSumOfDigitsOfAnIntegerString                        100.0%
   LeetCode.Algorithms.SumMultiples.SumMultiplesIterative                                                                                   100.0%
   LeetCode.Algorithms.SumMultiples.SumMultiplesMath                                                                                        100.0%
+  LeetCode.Algorithms.SumOfLeftLeaves.SumOfLeftLeavesBreadthFirstSearch                                                                     92.5%
+  LeetCode.Algorithms.SumOfLeftLeaves.SumOfLeftLeavesDepthFirstSearch                                                                      100.0%
   LeetCode.Algorithms.SymmetricTree.SymmetricTreeIterative                                                                                  92.5%
   LeetCode.Algorithms.SymmetricTree.SymmetricTreeRecursive                                                                                  86.6%
   LeetCode.Algorithms.TaskScheduler.TaskSchedulerDictionary                                                                                100.0%
