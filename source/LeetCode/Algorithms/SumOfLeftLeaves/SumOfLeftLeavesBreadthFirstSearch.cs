@@ -14,11 +14,11 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.SumOfLeftLeaves;
 
 /// <inheritdoc />
-public class SumOfLeftLeavesQueue : ISumOfLeftLeaves
+public class SumOfLeftLeavesBreadthFirstSearch : ISumOfLeftLeaves
 {
     /// <summary>
     ///     Time complexity - O(n)
-    ///     Space complexity - O(n) for skewed tree, O(log n) for balanced tree
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="root"></param>
     /// <returns></returns>

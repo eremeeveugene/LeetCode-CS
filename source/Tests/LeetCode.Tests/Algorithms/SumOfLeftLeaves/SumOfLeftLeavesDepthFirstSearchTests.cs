@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SumOfLeftLeaves;
 namespace LeetCode.Tests.Algorithms.SumOfLeftLeaves;
 
 [TestClass]
-public class SumOfLeftLeavesRecursionTests : SumOfLeftLeavesTestsBase<SumOfLeftLeavesRecursion>;
+public class SumOfLeftLeavesDepthFirstSearchTests : SumOfLeftLeavesTestsBase<SumOfLeftLeavesDepthFirstSearch>;
