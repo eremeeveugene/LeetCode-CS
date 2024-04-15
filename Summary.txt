@@ -1,21 +1,21 @@
 Summary
-  Generated on: 04/14/2024 - 13:57:57
-  Coverage date: 04/14/2024 - 13:57:28 - 04/14/2024 - 13:57:34
+  Generated on: 04/15/2024 - 13:23:52
+  Coverage date: 04/15/2024 - 13:23:23 - 04/15/2024 - 13:23:27
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 266
-  Files: 266
+  Classes: 268
+  Files: 268
   Line coverage: 97.4%
-  Covered lines: 4475
-  Uncovered lines: 118
-  Coverable lines: 4593
-  Total lines: 12448
-  Branch coverage: 94.2% (1683 of 1786)
-  Covered branches: 1683
-  Total branches: 1786
-  Method coverage: 98% (356 of 363)
-  Covered methods: 356
-  Total methods: 363
+  Covered lines: 4521
+  Uncovered lines: 120
+  Coverable lines: 4641
+  Total lines: 12569
+  Branch coverage: 94.1% (1703 of 1808)
+  Covered branches: 1703
+  Total branches: 1808
+  Method coverage: 98% (359 of 366)
+  Covered methods: 359
+  Total methods: 366
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -247,6 +247,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.SumMultiples.SumMultiplesMath                                                                                        100.0%
   LeetCode.Algorithms.SumOfLeftLeaves.SumOfLeftLeavesBreadthFirstSearch                                                                     92.5%
   LeetCode.Algorithms.SumOfLeftLeaves.SumOfLeftLeavesDepthFirstSearch                                                                      100.0%
+  LeetCode.Algorithms.SumRootToLeafNumbers.SumRootToLeafNumbersBreadthFirstSearch                                                           93.1%
+  LeetCode.Algorithms.SumRootToLeafNumbers.SumRootToLeafNumbersDepthFirstSearch                                                            100.0%
   LeetCode.Algorithms.SymmetricTree.SymmetricTreeIterative                                                                                  92.5%
   LeetCode.Algorithms.SymmetricTree.SymmetricTreeRecursive                                                                                  86.6%
   LeetCode.Algorithms.TaskScheduler.TaskSchedulerDictionary                                                                                100.0%
