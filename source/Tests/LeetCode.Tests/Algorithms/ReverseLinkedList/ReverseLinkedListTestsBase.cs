@@ -12,7 +12,7 @@
 using LeetCode.Algorithms.ReverseLinkedList;
 using LeetCode.Core.Extensions;
 using LeetCode.Core.Models;
-using LeetCode.Tests.Extensions;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ReverseLinkedList;
 

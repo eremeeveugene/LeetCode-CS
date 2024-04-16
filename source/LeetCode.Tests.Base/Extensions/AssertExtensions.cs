@@ -11,7 +11,7 @@
 
 using LeetCode.Core.Models;
 
-namespace LeetCode.Tests.Extensions;
+namespace LeetCode.Tests.Base.Extensions;
 
 public static class AssertExtensions
 {

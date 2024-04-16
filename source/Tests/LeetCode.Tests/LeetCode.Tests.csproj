@@ -25,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\LeetCode.Tests.Base\LeetCode.Tests.Base.csproj" />
     <ProjectReference Include="..\..\LeetCode\LeetCode.csproj" />
   </ItemGroup>
 

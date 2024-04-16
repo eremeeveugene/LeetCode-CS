@@ -12,7 +12,7 @@
 using LeetCode.Algorithms.PathSum2;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
-using LeetCode.Tests.Extensions;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.PathSum2;
 

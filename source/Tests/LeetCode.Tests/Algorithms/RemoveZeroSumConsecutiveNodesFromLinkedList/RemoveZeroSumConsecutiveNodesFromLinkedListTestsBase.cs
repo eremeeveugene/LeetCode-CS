@@ -11,7 +11,7 @@
 
 using LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList;
 using LeetCode.Core.Extensions;
-using LeetCode.Tests.Extensions;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList;
 

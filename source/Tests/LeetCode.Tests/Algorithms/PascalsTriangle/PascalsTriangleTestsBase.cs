@@ -11,7 +11,7 @@
 
 using LeetCode.Algorithms.PascalsTriangle;
 using LeetCode.Core.Helpers;
-using LeetCode.Tests.Extensions;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.PascalsTriangle;
 
