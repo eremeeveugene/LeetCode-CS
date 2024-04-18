@@ -324,6 +324,7 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.InsertInterval.InsertIntervalIterative", "rp": "LeetCode_InsertIntervalIterative.html", "cl": 22, "ucl": 0, "cal": 22, "tl": 53, "cb": 10, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSet", "rp": "LeetCode_IntersectionOfTwoArraysHashSet.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 38, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSetIntersectWith", "rp": "LeetCode_IntersectionOfTwoArraysHashSetIntersectWith.html", "cl": 6, "ucl": 0, "cal": 6, "tl": 32, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.IslandPerimeter.IslandPerimeterIterative", "rp": "LeetCode_IslandPerimeterIterative.html", "cl": 29, "ucl": 0, "cal": 29, "tl": 60, "cb": 22, "tb": 22, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.IsomorphicStrings.IsomorphicStringsDictionary", "rp": "LeetCode_IsomorphicStringsDictionary.html", "cl": 17, "ucl": 0, "cal": 17, "tl": 49, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.IsomorphicStrings.IsomorphicStringsTwoDictionaries", "rp": "LeetCode_IsomorphicStringsTwoDictionaries.html", "cl": 28, "ucl": 0, "cal": 28, "tl": 60, "cb": 10, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.IsSubsequence.IsSubsequenceIterative", "rp": "LeetCode_IsSubsequenceIterative.html", "cl": 27, "ucl": 0, "cal": 27, "tl": 63, "cb": 16, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -538,6 +539,12 @@ var riskHotspots = [
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.ThreeSum.ThreeSumTwoPointers", "reportPath": "LeetCode_ThreeSumTwoPointers.html", "methodName": "ThreeSum(System.Int32[])", "methodShortName": "ThreeSum(...)", "fileIndex": 0, "line": 23,
     "metrics": [
       { "value": 23.2, "exceeded": true },
+      { "value": 22, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.IslandPerimeter.IslandPerimeterIterative", "reportPath": "LeetCode_IslandPerimeterIterative.html", "methodName": "IslandPerimeter(System.Int32[][])", "methodShortName": "IslandPerimeter(...)", "fileIndex": 0, "line": 24,
+    "metrics": [
+      { "value": 22, "exceeded": true },
       { "value": 22, "exceeded": false },
     ]},
   {
