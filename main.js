@@ -381,6 +381,7 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsDictionary", "rp": "LeetCode_NumberOfGoodPairsDictionary.html", "cl": 11, "ucl": 0, "cal": 11, "tl": 36, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsGroupBy", "rp": "LeetCode_NumberOfGoodPairsGroupBy.html", "cl": 7, "ucl": 0, "cal": 7, "tl": 33, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsIterative", "rp": "LeetCode_NumberOfGoodPairsIterative.html", "cl": 14, "ucl": 0, "cal": 14, "tl": 39, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.NumberOfIslands.NumberOfIslandsIterative", "rp": "LeetCode_NumberOfIslandsIterative.html", "cl": 37, "ucl": 0, "cal": 37, "tl": 75, "cb": 22, "tb": 22, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroBitwise", "rp": "LeetCode_NumberOfStepsToReduceNumberToZeroBitwise.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 28, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroIterative", "rp": "LeetCode_NumberOfStepsToReduceNumberToZeroIterative.html", "cl": 15, "ucl": 0, "cal": 15, "tl": 42, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch.NumberOfStudentsUnableToEatLunchIterative", "rp": "LeetCode_NumberOfStudentsUnableToEatLunchIterative.html", "cl": 28, "ucl": 0, "cal": 28, "tl": 60, "cb": 14, "tb": 14, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -610,6 +611,12 @@ var riskHotspots = [
     ]},
   {
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStringBuilder", "reportPath": "LeetCode_MinimumRemoveToMakeValidParenthesesStringBuilder.html", "methodName": "MinRemoveToMakeValid(System.String)", "methodShortName": "MinRemoveToMakeValid(...)", "fileIndex": 0, "line": 26,
+    "metrics": [
+      { "value": 16, "exceeded": true },
+      { "value": 16, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.NumberOfIslands.NumberOfIslandsIterative", "reportPath": "LeetCode_NumberOfIslandsIterative.html", "methodName": "Find(System.Collections.Generic.IReadOnlyList`1<System.Char[]>,System.Int32,System.Int32)", "methodShortName": "Find(...)", "fileIndex": 0, "line": 46,
     "metrics": [
       { "value": 16, "exceeded": true },
       { "value": 16, "exceeded": false },

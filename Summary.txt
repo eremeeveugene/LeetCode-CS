@@ -1,21 +1,21 @@
 Summary
-  Generated on: 04/18/2024 - 19:49:13
-  Coverage date: 04/18/2024 - 19:48:26 - 04/18/2024 - 19:48:33
+  Generated on: 04/19/2024 - 13:39:35
+  Coverage date: 04/19/2024 - 13:39:01 - 04/19/2024 - 13:39:07
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 276
-  Files: 276
+  Classes: 277
+  Files: 277
   Line coverage: 97.2%
-  Covered lines: 4676
+  Covered lines: 4713
   Uncovered lines: 134
-  Coverable lines: 4810
-  Total lines: 12974
-  Branch coverage: 93.9% (1784 of 1898)
-  Covered branches: 1784
-  Total branches: 1898
-  Method coverage: 97.6% (372 of 381)
-  Covered methods: 372
-  Total methods: 381
+  Coverable lines: 4847
+  Total lines: 13049
+  Branch coverage: 94% (1806 of 1920)
+  Covered branches: 1806
+  Total branches: 1920
+  Method coverage: 97.6% (374 of 383)
+  Covered methods: 374
+  Total methods: 383
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -178,6 +178,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsDictionary                                                                        100.0%
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsGroupBy                                                                           100.0%
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsIterative                                                                         100.0%
+  LeetCode.Algorithms.NumberOfIslands.NumberOfIslandsIterative                                                                             100.0%
   LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroBitwise                                           100.0%
   LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroIterative                                         100.0%
   LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch.NumberOfStudentsUnableToEatLunchIterative                                           100.0%
