@@ -1,21 +1,21 @@
 Summary
-  Generated on: 04/19/2024 - 13:39:35
-  Coverage date: 04/19/2024 - 13:39:01 - 04/19/2024 - 13:39:07
+  Generated on: 04/19/2024 - 17:06:29
+  Coverage date: 04/19/2024 - 17:05:58 - 04/19/2024 - 17:06:05
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 277
-  Files: 277
+  Classes: 279
+  Files: 279
   Line coverage: 97.2%
-  Covered lines: 4713
-  Uncovered lines: 134
-  Coverable lines: 4847
-  Total lines: 13049
-  Branch coverage: 94% (1806 of 1920)
-  Covered branches: 1806
-  Total branches: 1920
-  Method coverage: 97.6% (374 of 383)
-  Covered methods: 374
-  Total methods: 383
+  Covered lines: 4749
+  Uncovered lines: 136
+  Coverable lines: 4885
+  Total lines: 13154
+  Branch coverage: 94% (1824 of 1940)
+  Covered branches: 1824
+  Total branches: 1940
+  Method coverage: 97.6% (377 of 386)
+  Covered methods: 377
+  Total methods: 386
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -147,6 +147,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberIterative                                                                             100.0%
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberString                                                                                100.0%
   LeetCode.Algorithms.MaximumAverageSubarray1.MaximumAverageSubarray1SlidingWindow                                                         100.0%
+  LeetCode.Algorithms.MaximumDepthOfBinaryTree.MaximumDepthOfBinaryTreeBreadthFirstSearch                                                   92.8%
+  LeetCode.Algorithms.MaximumDepthOfBinaryTree.MaximumDepthOfBinaryTreeDepthFirstSearch                                                    100.0%
   LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses.MaximumNestingDepthOfTheParenthesesIterative                                     100.0%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinq                                        100.0%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinqSplit                                   100.0%
