@@ -1,21 +1,21 @@
 Summary
-  Generated on: 04/20/2024 - 11:36:56
-  Coverage date: 04/20/2024 - 11:36:25 - 04/20/2024 - 11:36:32
+  Generated on: 04/20/2024 - 16:34:06
+  Coverage date: 04/20/2024 - 16:33:32 - 04/20/2024 - 16:33:39
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 282
-  Files: 282
+  Classes: 283
+  Files: 283
   Line coverage: 97.2%
-  Covered lines: 4842
+  Covered lines: 4855
   Uncovered lines: 138
-  Coverable lines: 4980
-  Total lines: 13363
-  Branch coverage: 94% (1874 of 1992)
-  Covered branches: 1874
-  Total branches: 1992
-  Method coverage: 97.7% (384 of 393)
-  Covered methods: 384
-  Total methods: 393
+  Coverable lines: 4993
+  Total lines: 13405
+  Branch coverage: 94% (1878 of 1996)
+  Covered branches: 1878
+  Total branches: 1996
+  Method coverage: 97.7% (385 of 394)
+  Covered methods: 385
+  Total methods: 394
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -106,6 +106,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                         100.0%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithKMP                              80.0%
   LeetCode.Algorithms.FindTheMaximumAchievableNumber.FindTheMaximumAchievableNumberLinear                                                  100.0%
+  LeetCode.Algorithms.FindTheMiddleIndexInArray.FindTheMiddleIndexInArrayIterative                                                         100.0%
   LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor.FindTheOriginalArrayOfPrefixXorIterative                                             100.0%
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerConstant                                                                      100.0%
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerIterative                                                                     100.0%
