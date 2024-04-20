@@ -14,6 +14,12 @@ namespace LeetCode.Algorithms.RunningSumOf1dArray;
 /// <inheritdoc />
 public class RunningSumOf1dArrayIterative : IRunningSumOf1dArray
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <returns></returns>
     public int[] RunningSum(int[] nums)
     {
         if (nums.Length <= 1)
