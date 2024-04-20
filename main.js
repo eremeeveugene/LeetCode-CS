@@ -300,6 +300,8 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsSwitch", "rp": "LeetCode_FinalValueOfVariableAfterPerformingOperationsSwitch.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 41, "cb": 10, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.FindAllDuplicatesInAnArray.FindAllDuplicatesInAnArrayHashSet", "rp": "LeetCode_FindAllDuplicatesInAnArrayHashSet.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 29, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.FindAllDuplicatesInAnArray.FindAllDuplicatesInAnArrayIterative", "rp": "LeetCode_FindAllDuplicatesInAnArrayIterative.html", "cl": 15, "ucl": 0, "cal": 15, "tl": 43, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.FindAllGroupOfFarmland.FindAllGroupOfFarmlandBruteForce", "rp": "LeetCode_FindAllGroupOfFarmlandBruteForce.html", "cl": 45, "ucl": 0, "cal": 45, "tl": 92, "cb": 26, "tb": 26, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.FindAllGroupOfFarmland.FindAllGroupOfFarmlandIterative", "rp": "LeetCode_FindAllGroupOfFarmlandIterative.html", "cl": 34, "ucl": 0, "cal": 34, "tl": 66, "cb": 18, "tb": 18, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.FindBottomLeftTreeValue.FindBottomLeftTreeValueBreadthFirst", "rp": "LeetCode_FindBottomLeftTreeValueBreadthFirst.html", "cl": 19, "ucl": 2, "cal": 21, "tl": 55, "cb": 8, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.FindBottomLeftTreeValue.FindBottomLeftTreeValueDepthFirst", "rp": "LeetCode_FindBottomLeftTreeValueDepthFirst.html", "cl": 19, "ucl": 0, "cal": 19, "tl": 53, "cb": 11, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberBruteForce", "rp": "LeetCode_FindTheDuplicateNumberBruteForce.html", "cl": 11, "ucl": 1, "cal": 12, "tl": 38, "cb": 5, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -602,6 +604,12 @@ var riskHotspots = [
     ]},
   {
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry", "reportPath": "LeetCode_AddTwoNumbersInPlaceCarry.html", "methodName": "AddTwoNumbers(LeetCode.Core.Models.ListNode,LeetCode.Core.Models.ListNode)", "methodShortName": "AddTwoNumbers(...)", "fileIndex": 0, "line": 27,
+    "metrics": [
+      { "value": 16, "exceeded": true },
+      { "value": 16, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.FindAllGroupOfFarmland.FindAllGroupOfFarmlandBruteForce", "reportPath": "LeetCode_FindAllGroupOfFarmlandBruteForce.html", "methodName": "FindFarmland(System.Collections.Generic.IReadOnlyList`1<System.Int32[]>,System.Collections.Generic.ICollection`1<System.Int32[]>,System.Int32,System.Int32,System.Int32,System.Int32)", "methodShortName": "FindFarmland(...)", "fileIndex": 0, "line": 45,
     "metrics": [
       { "value": 16, "exceeded": true },
       { "value": 16, "exceeded": false },
