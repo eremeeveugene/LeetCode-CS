@@ -1,21 +1,21 @@
 Summary
-  Generated on: 04/20/2024 - 16:49:48
-  Coverage date: 04/20/2024 - 16:49:18 - 04/20/2024 - 16:49:22
+  Generated on: 04/20/2024 - 17:29:07
+  Coverage date: 04/20/2024 - 17:28:35 - 04/20/2024 - 17:28:41
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 284
-  Files: 284
+  Classes: 286
+  Files: 286
   Line coverage: 97.2%
-  Covered lines: 4868
-  Uncovered lines: 138
-  Coverable lines: 5006
-  Total lines: 13447
-  Branch coverage: 94.1% (1882 of 2000)
-  Covered branches: 1882
-  Total branches: 2000
-  Method coverage: 97.7% (386 of 395)
-  Covered methods: 386
-  Total methods: 395
+  Covered lines: 4929
+  Uncovered lines: 140
+  Coverable lines: 5069
+  Total lines: 13595
+  Branch coverage: 94.1% (1907 of 2026)
+  Covered branches: 1907
+  Total branches: 2026
+  Method coverage: 97.7% (388 of 397)
+  Covered methods: 388
+  Total methods: 397
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -194,6 +194,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListTwoPointers                                                                  90.9%
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByConvertingToString                                                                 85.0%
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByReversingDigits                                                                    92.3%
+  LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumIterative                            95.1%
+  LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumSinglePass                          100.0%
   LeetCode.Algorithms.PascalsTriangle.PascalsTriangleDynamicProgramming                                                                    100.0%
   LeetCode.Algorithms.PascalsTriangle2.PascalsTriangle2DynamicProgramming                                                                  100.0%
   LeetCode.Algorithms.PathSum.PathSumBreadthFirstSearch                                                                                    100.0%

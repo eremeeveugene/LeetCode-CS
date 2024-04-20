@@ -397,6 +397,8 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListTwoPointers", "rp": "LeetCode_PalindromeLinkedListTwoPointers.html", "cl": 20, "ucl": 2, "cal": 22, "tl": 57, "cb": 8, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByConvertingToString", "rp": "LeetCode_PalindromeNumberByConvertingToString.html", "cl": 17, "ucl": 3, "cal": 20, "tl": 53, "cb": 8, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByReversingDigits", "rp": "LeetCode_PalindromeNumberByReversingDigits.html", "cl": 12, "ucl": 1, "cal": 13, "tl": 45, "cb": 8, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumIterative", "rp": "LeetCode_PartitionArrayIntoThreePartsWithEqualSumIterative.html", "cl": 39, "ucl": 2, "cal": 41, "tl": 92, "cb": 17, "tb": 18, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumSinglePass", "rp": "LeetCode_PartitionArrayIntoThreePartsWithEqualSumSinglePass.html", "cl": 22, "ucl": 0, "cal": 22, "tl": 56, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.PascalsTriangle.PascalsTriangleDynamicProgramming", "rp": "LeetCode_PascalsTriangleDynamicProgramming.html", "cl": 15, "ucl": 0, "cal": 15, "tl": 44, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.PascalsTriangle2.PascalsTriangle2DynamicProgramming", "rp": "LeetCode_PascalsTriangle2DynamicProgramming.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 33, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.PathSum.PathSumBreadthFirstSearch", "rp": "LeetCode_PathSumBreadthFirstSearch.html", "cl": 23, "ucl": 0, "cal": 23, "tl": 59, "cb": 14, "tb": 14, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -584,6 +586,12 @@ var riskHotspots = [
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.ReorderList.ReorderListTwoPointers", "reportPath": "LeetCode_ReorderListTwoPointers.html", "methodName": "ReorderList(LeetCode.Core.Models.ListNode)", "methodShortName": "ReorderList(...)", "fileIndex": 0, "line": 25,
     "metrics": [
       { "value": 18.08, "exceeded": true },
+      { "value": 18, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumIterative", "reportPath": "LeetCode_PartitionArrayIntoThreePartsWithEqualSumIterative.html", "methodName": "CanThreePartsEqualSum(System.Int32[])", "methodShortName": "CanThreePartsEqualSum(...)", "fileIndex": 0, "line": 24,
+    "metrics": [
+      { "value": 18.04, "exceeded": true },
       { "value": 18, "exceeded": false },
     ]},
   {
