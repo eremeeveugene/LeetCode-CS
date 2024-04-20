@@ -1,21 +1,21 @@
 Summary
-  Generated on: 04/20/2024 - 16:34:06
-  Coverage date: 04/20/2024 - 16:33:32 - 04/20/2024 - 16:33:39
+  Generated on: 04/20/2024 - 16:49:48
+  Coverage date: 04/20/2024 - 16:49:18 - 04/20/2024 - 16:49:22
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 283
-  Files: 283
+  Classes: 284
+  Files: 284
   Line coverage: 97.2%
-  Covered lines: 4855
+  Covered lines: 4868
   Uncovered lines: 138
-  Coverable lines: 4993
-  Total lines: 13405
-  Branch coverage: 94% (1878 of 1996)
-  Covered branches: 1878
-  Total branches: 1996
-  Method coverage: 97.7% (385 of 394)
-  Covered methods: 385
-  Total methods: 394
+  Coverable lines: 5006
+  Total lines: 13447
+  Branch coverage: 94.1% (1882 of 2000)
+  Covered branches: 1882
+  Total branches: 2000
+  Method coverage: 97.7% (386 of 395)
+  Covered methods: 386
+  Total methods: 395
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -101,6 +101,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindAllGroupOfFarmland.FindAllGroupOfFarmlandIterative                                                               100.0%
   LeetCode.Algorithms.FindBottomLeftTreeValue.FindBottomLeftTreeValueBreadthFirst                                                           90.4%
   LeetCode.Algorithms.FindBottomLeftTreeValue.FindBottomLeftTreeValueDepthFirst                                                            100.0%
+  LeetCode.Algorithms.FindPivotIndex.FindPivotIndexIterative                                                                               100.0%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberBruteForce                                                               91.6%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm                                            89.4%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                         100.0%
