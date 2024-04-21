@@ -41,9 +41,12 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [1920. Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/description/)
   - [1929. Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/description/)
   - [2235. Add Two Integers](https://leetcode.com/problems/add-two-integers/description/)
+  - [2444. Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/description/)
   - [2469. Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/description/)
   - [2651. Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/description/)
   - [2706. Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/description/)
+  - [2824. Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description/)
+  - [2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/description/)
   - [3005. Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/)
 
   </p>
