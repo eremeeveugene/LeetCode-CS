@@ -1,4 +1,4 @@
-# LeetCode Solutions
+# LeetCode C# Solutions
 
 ## Overview
 This repository contains solutions to LeetCode tasks, implemented in C#. You can check the latest build status via the badge below.
