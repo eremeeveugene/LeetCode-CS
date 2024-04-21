@@ -17,6 +17,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
   - [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)
   - [57. Insert Interval](https://leetcode.com/problems/insert-interval/description/)
+  - [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/description/)
   - [67. Add Binary](https://leetcode.com/problems/add-binary/description/)
   - [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/)
   - [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)
@@ -83,6 +84,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [2824. Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description/)
   - [2894. Divisible and Non-divisible Sums Difference](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/description/)
   - [2942. Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/description/)
+  - [2958. Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/description/)
   - [2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/description/)
   - [3005. Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/)
 
