@@ -35,6 +35,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [989. Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/description/)
   - [1630. Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/description/)
   - [1662. Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/)
+  - [1688. Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/description/)
   - [1716. Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/description/)
   - [1832. Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/description/)
   - [1920. Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/description/)
