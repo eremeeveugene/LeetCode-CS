@@ -15,6 +15,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 
   - [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
   - [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
+  - [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)
   - [67. Add Binary](https://leetcode.com/problems/add-binary/description/)
   - [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/)
   - [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)
@@ -36,6 +37,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [561. Array Partition](https://leetcode.com/problems/array-partition/description/)
   - [623. Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree/description/)
   - [724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/)
+  - [733. Flood Fill](https://leetcode.com/problems/flood-fill/description/)
   - [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
   - [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
   - [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/description/)
@@ -48,6 +50,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [1609. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/description/)
   - [1630. Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/description/)
   - [1662. Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/)
+  - [1678. Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/description/)
   - [1688. Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/description/)
   - [1716. Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/description/)
   - [1720. Decode XORed Array](https://leetcode.com/problems/decode-xored-array/description/)
