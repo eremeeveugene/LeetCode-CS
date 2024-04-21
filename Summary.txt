@@ -1,23 +1,23 @@
 Summary
-  Generated on: 04/20/2024 - 17:48:54
-  Coverage date: 04/20/2024 - 17:48:22 - 04/20/2024 - 17:48:29
+  Generated on: 04/21/2024 - 10:44:19
+  Coverage date: 04/21/2024 - 10:43:48 - 04/21/2024 - 10:43:54
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 287
-  Files: 287
-  Line coverage: 97.2%
-  Covered lines: 4937
-  Uncovered lines: 142
-  Coverable lines: 5079
-  Total lines: 13632
-  Branch coverage: 94% (1910 of 2030)
-  Covered branches: 1910
-  Total branches: 2030
-  Method coverage: 97.7% (389 of 398)
-  Covered methods: 389
-  Total methods: 398
+  Classes: 289
+  Files: 289
+  Line coverage: 97.1%
+  Covered lines: 4990
+  Uncovered lines: 146
+  Coverable lines: 5136
+  Total lines: 13765
+  Branch coverage: 94% (1932 of 2054)
+  Covered branches: 1932
+  Total branches: 2054
+  Method coverage: 97.7% (392 of 401)
+  Covered methods: 392
+  Total methods: 401
 
-LeetCode                                                                                                                                    97.5%
+LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -101,6 +101,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindAllGroupOfFarmland.FindAllGroupOfFarmlandIterative                                                               100.0%
   LeetCode.Algorithms.FindBottomLeftTreeValue.FindBottomLeftTreeValueBreadthFirst                                                           90.4%
   LeetCode.Algorithms.FindBottomLeftTreeValue.FindBottomLeftTreeValueDepthFirst                                                            100.0%
+  LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphBreadthFirstSearch                                                     93.9%
+  LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphDepthFirstSearch                                                       91.6%
   LeetCode.Algorithms.FindPivotIndex.FindPivotIndexIterative                                                                               100.0%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberBruteForce                                                               91.6%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm                                            89.4%
