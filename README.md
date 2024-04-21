@@ -14,6 +14,8 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   <p>
 
   - [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
+  - [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
+  - [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/)
   - [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
   - [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)
   - [57. Insert Interval](https://leetcode.com/problems/insert-interval/description/)
@@ -23,6 +25,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)
   - [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/)
   - [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
+  - [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)
   - [202. Happy Number](https://leetcode.com/problems/happy-number/description/)
   - [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/)
   - [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
