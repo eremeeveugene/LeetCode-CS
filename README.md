@@ -14,6 +14,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   <p>
 
   - [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
+  - [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
   - [67. Add Binary](https://leetcode.com/problems/add-binary/description/)
   - [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/)
   - [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)
@@ -63,6 +64,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [2591. Distribute Money to Maximum Children](https://leetcode.com/problems/distribute-money-to-maximum-children/description/)
   - [2651. Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/description/)
   - [2706. Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/description/)
+  - [2769. Find the Maximum Achievable Number](https://leetcode.com/problems/find-the-maximum-achievable-number/description/)
   - [2824. Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description/)
   - [2894. Divisible and Non-divisible Sums Difference](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/description/)
   - [2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/description/)
