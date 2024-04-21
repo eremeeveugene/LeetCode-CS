@@ -1,21 +1,21 @@
 Summary
-  Generated on: 04/21/2024 - 15:11:20
-  Coverage date: 04/21/2024 - 15:10:48 - 04/21/2024 - 15:10:55
+  Generated on: 04/21/2024 - 19:02:24
+  Coverage date: 04/21/2024 - 19:01:51 - 04/21/2024 - 19:01:58
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 289
-  Files: 289
+  Classes: 290
+  Files: 290
   Line coverage: 97.1%
-  Covered lines: 4990
-  Uncovered lines: 146
-  Coverable lines: 5136
-  Total lines: 13765
-  Branch coverage: 94% (1932 of 2054)
-  Covered branches: 1932
-  Total branches: 2054
-  Method coverage: 97.7% (392 of 401)
-  Covered methods: 392
-  Total methods: 401
+  Covered lines: 5024
+  Uncovered lines: 149
+  Coverable lines: 5173
+  Total lines: 13832
+  Branch coverage: 94% (1933 of 2056)
+  Covered branches: 1933
+  Total branches: 2056
+  Method coverage: 97.7% (394 of 403)
+  Covered methods: 394
+  Total methods: 403
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -89,6 +89,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceIterative                               100.0%
   LeetCode.Algorithms.DivisorGame.DivisorGameDivisionRemainder                                                                             100.0%
   LeetCode.Algorithms.EvenOddTree.EvenOddTreeBreadthFirst                                                                                   91.1%
+  LeetCode.Algorithms.ExcelSheetColumnNumber.ExcelSheetColumnNumberIterative                                                               100.0%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberIterative                                                                             100.0%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberMatrixExponentiation                                                                  100.0%
   LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsContains                  100.0%
@@ -297,7 +298,7 @@ LeetCode                                                                        
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                    100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                              100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                       100.0%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                100.0%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                 84.2%
 
 LeetCode.Core                                                                                                                               91.0%
   LeetCode.Core.EqualityComparers.OrderInsensitiveIntArrayEqualityComparer                                                                  69.2%
