@@ -44,6 +44,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)
   - [415. Add Strings](https://leetcode.com/problems/add-strings/description/)
   - [442. Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)
+  - [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/)
   - [463. Island Perimeter](https://leetcode.com/problems/island-perimeter/description/)
   - [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/)
   - [513. Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/description/)
@@ -76,6 +77,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [1688. Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/description/)
   - [1716. Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/description/)
   - [1720. Decode XORed Array](https://leetcode.com/problems/decode-xored-array/description/)
+  - [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/description/)
   - [1832. Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/description/)
   - [1920. Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/description/)
   - [1929. Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/description/)
@@ -91,6 +93,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [2485. Find the Pivot Integer](https://leetcode.com/problems/find-the-pivot-integer/description/)
   - [2520. Count the Digits That Divide a Number](https://leetcode.com/problems/count-the-digits-that-divide-a-number/description/)
   - [2535. Difference Between Element Sum and Digit Sum of an Array](https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/description/)
+  - [2540. Minimum Common Value](https://leetcode.com/problems/minimum-common-value/description/)
   - [2591. Distribute Money to Maximum Children](https://leetcode.com/problems/distribute-money-to-maximum-children/description/)
   - [2651. Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/description/)
   - [2706. Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/description/)
@@ -101,6 +104,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [2942. Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/description/)
   - [2958. Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/description/)
   - [2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/description/)
+  - [2974. Minimum Number Game](https://leetcode.com/problems/minimum-number-game/description/)
   - [3005. Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/)
 
   </p>
