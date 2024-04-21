@@ -41,6 +41,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/description/)
   - [948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/description/)
   - [989. Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/description/)
+  - [997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/description/)
   - [1025. Divisor Game](https://leetcode.com/problems/divisor-game/description/)
   - [1108. Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/description/)
   - [1442. Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/description/)
@@ -61,6 +62,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [2433. Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/description/)
   - [2444. Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/description/)
   - [2469. Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/description/)
+  - [2485. Find the Pivot Integer](https://leetcode.com/problems/find-the-pivot-integer/description/)
   - [2520. Count the Digits That Divide a Number](https://leetcode.com/problems/count-the-digits-that-divide-a-number/description/)
   - [2535. Difference Between Element Sum and Digit Sum of an Array](https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/description/)
   - [2591. Distribute Money to Maximum Children](https://leetcode.com/problems/distribute-money-to-maximum-children/description/)
@@ -69,6 +71,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [2769. Find the Maximum Achievable Number](https://leetcode.com/problems/find-the-maximum-achievable-number/description/)
   - [2824. Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description/)
   - [2894. Divisible and Non-divisible Sums Difference](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/description/)
+  - [2942. Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/description/)
   - [2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/description/)
   - [3005. Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/)
 
