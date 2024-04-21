@@ -42,7 +42,9 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [1929. Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/description/)
   - [2235. Add Two Integers](https://leetcode.com/problems/add-two-integers/description/)
   - [2444. Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/description/)
+  - 
   - [2469. Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/description/)
+  - [2520. Count the Digits That Divide a Number](https://leetcode.com/problems/count-the-digits-that-divide-a-number/description/)
   - [2651. Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/description/)
   - [2706. Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/description/)
   - [2824. Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description/)
