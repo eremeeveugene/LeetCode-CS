@@ -22,6 +22,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/description/)
   - [67. Add Binary](https://leetcode.com/problems/add-binary/description/)
   - [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/)
+  - [85. Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/description/)
   - [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)
   - [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/)
   - [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
