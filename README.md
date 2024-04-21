@@ -3,6 +3,9 @@
 ## Overview
 This repository contains solutions to LeetCode tasks, implemented in C#. You can check the latest build status via the badge below.
 
+Each solution in this repository is developed using Test-Driven Development (TDD), an approach that involves writing tests before the actual functional code. 
+TDD helps ensure that the code meets the expected outcomes and reduces bugs, making it ideal for algorithmic challenges where precision is key.
+
 [![.NET](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml/badge.svg)](https://github.com/eremeeveugene/leetcode)
 
 ## Solutions by Category
