@@ -24,6 +24,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [220. Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/description/)
   - [257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/)
   - [258. Add Digits](https://leetcode.com/problems/add-digits/description/)
+  - [338. Counting Bits](https://leetcode.com/problems/counting-bits/description/)
   - [415. Add Strings](https://leetcode.com/problems/add-strings/description/)
   - [525. Contiguous Array](https://leetcode.com/problems/contiguous-array/description/)
   - [561. Array Partition](https://leetcode.com/problems/array-partition/description/)
@@ -39,8 +40,10 @@ Below are the LeetCode problems sorted by category. Click on the category names 
   - [1920. Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/description/)
   - [1929. Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/description/)
   - [2235. Add Two Integers](https://leetcode.com/problems/add-two-integers/description/)
+  - [2469. Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/description/)
   - [2651. Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/description/)
   - [2706. Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/description/)
+  - [3005. Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/)
 
   </p>
 </details>
