@@ -183,8 +183,9 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 <details>
   <summary><strong>Concurrency</strong></summary>
   <p>
-
-  - More problems coming soon!
+    
+  - [1114. Print in Order](https://leetcode.com/problems/print-in-order/description/)
+  - [1195. Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded/description/)
 
   </p>
 </details>
