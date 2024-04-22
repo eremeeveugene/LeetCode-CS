@@ -104,6 +104,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/)
 - [733. Flood Fill](https://leetcode.com/problems/flood-fill/description/)
 - [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/)
+- [752. Open the Lock](https://leetcode.com/problems/open-the-lock/description/)
 - [771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/description/)
 - [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
 - [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
