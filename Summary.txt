@@ -1,23 +1,23 @@
 Summary
-  Generated on: 04/21/2024 - 19:02:24
-  Coverage date: 04/21/2024 - 19:01:51 - 04/21/2024 - 19:01:58
+  Generated on: 04/22/2024 - 11:13:18
+  Coverage date: 04/22/2024 - 11:12:47 - 04/22/2024 - 11:12:52
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 290
-  Files: 290
+  Classes: 291
+  Files: 291
   Line coverage: 97.1%
-  Covered lines: 5024
-  Uncovered lines: 149
-  Coverable lines: 5173
-  Total lines: 13832
-  Branch coverage: 94% (1933 of 2056)
-  Covered branches: 1933
-  Total branches: 2056
-  Method coverage: 97.7% (394 of 403)
-  Covered methods: 394
-  Total methods: 403
+  Covered lines: 5058
+  Uncovered lines: 146
+  Coverable lines: 5204
+  Total lines: 13902
+  Branch coverage: 94.1% (1948 of 2070)
+  Covered branches: 1948
+  Total branches: 2070
+  Method coverage: 97.7% (395 of 404)
+  Covered methods: 395
+  Total methods: 404
 
-LeetCode                                                                                                                                    97.4%
+LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -193,6 +193,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroIterative                                         100.0%
   LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch.NumberOfStudentsUnableToEatLunchIterative                                           100.0%
   LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch.NumberOfStudentsUnableToEatLunchQueue                                               100.0%
+  LeetCode.Algorithms.OpenTheLock.OpenTheLockBreadthFirstSearch                                                                            100.0%
   LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListSlowFastPointers                                                             94.1%
   LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListTwoPointers                                                                  90.9%
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByConvertingToString                                                                 85.0%
@@ -298,7 +299,7 @@ LeetCode                                                                        
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                    100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                              100.0%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                       100.0%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                 84.2%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                100.0%
 
 LeetCode.Core                                                                                                                               91.0%
   LeetCode.Core.EqualityComparers.OrderInsensitiveIntArrayEqualityComparer                                                                  69.2%
