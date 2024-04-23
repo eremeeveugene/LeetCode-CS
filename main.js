@@ -372,6 +372,8 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.MinCostClimbingStairs.MinCostClimbingStairsDynamicProgramming", "rp": "LeetCode_MinCostClimbingStairsDynamicProgramming.html", "cl": 11, "ucl": 2, "cal": 13, "tl": 42, "cb": 3, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueHashSet", "rp": "LeetCode_MinimumCommonValueHashSet.html", "cl": 9, "ucl": 1, "cal": 10, "tl": 38, "cb": 3, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueTwoPointers", "rp": "LeetCode_MinimumCommonValueTwoPointers.html", "cl": 14, "ucl": 4, "cal": 18, "tl": 48, "cb": 5, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.MinimumHeightTrees.MinimumHeightTreesBreadthFirstSearch", "rp": "LeetCode_MinimumHeightTreesBreadthFirstSearch.html", "cl": 59, "ucl": 0, "cal": 59, "tl": 107, "cb": 16, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.MinimumHeightTrees.MinimumHeightTreesLeafPruning", "rp": "LeetCode_MinimumHeightTreesLeafPruning.html", "cl": 38, "ucl": 2, "cal": 40, "tl": 79, "cb": 15, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds.MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers", "rp": "LeetCode_MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers.html", "cl": 17, "ucl": 0, "cal": 17, "tl": 45, "cb": 12, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MinimumNumberGame.MinimumNumberGameSorting", "rp": "LeetCode_MinimumNumberGameSorting.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 37, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons.MinimumNumberOfArrowsToBurstBalloonsIterative", "rp": "LeetCode_MinimumNumberOfArrowsToBurstBalloonsIterative.html", "cl": 14, "ucl": 0, "cal": 14, "tl": 44, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -610,6 +612,12 @@ var riskHotspots = [
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce", "reportPath": "LeetCode_RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce.html", "methodName": "RemoveZeroSumSublists(LeetCode.Core.Models.ListNode)", "methodShortName": "RemoveZeroSumSublists(...)", "fileIndex": 0, "line": 26,
     "metrics": [
       { "value": 16.26, "exceeded": true },
+      { "value": 16, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.MinimumHeightTrees.MinimumHeightTreesLeafPruning", "reportPath": "LeetCode_MinimumHeightTreesLeafPruning.html", "methodName": "FindMinHeightTrees(System.Int32,System.Int32[][])", "methodShortName": "FindMinHeightTrees(...)", "fileIndex": 0, "line": 25,
+    "metrics": [
+      { "value": 16.03, "exceeded": true },
       { "value": 16, "exceeded": false },
     ]},
   {
