@@ -77,6 +77,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [279. Perfect Squares](https://leetcode.com/problems/perfect-squares/description/)
 - [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/)
 - [290. Word Pattern](https://leetcode.com/problems/word-pattern/description/)
+- [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/)
 - [338. Counting Bits](https://leetcode.com/problems/counting-bits/description/)
 - [344. Reverse String](https://leetcode.com/problems/reverse-string/description/)
 - [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/)
