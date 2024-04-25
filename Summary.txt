@@ -1,21 +1,21 @@
 Summary
-  Generated on: 04/23/2024 - 13:03:01
-  Coverage date: 04/23/2024 - 13:02:25 - 04/23/2024 - 13:02:32
+  Generated on: 04/25/2024 - 13:09:11
+  Coverage date: 04/25/2024 - 13:08:38 - 04/25/2024 - 13:08:44
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 294
-  Files: 294
+  Classes: 296
+  Files: 296
   Line coverage: 97.1%
-  Covered lines: 5178
+  Covered lines: 5193
   Uncovered lines: 150
-  Coverable lines: 5328
-  Total lines: 14147
-  Branch coverage: 94.1% (1986 of 2110)
-  Covered branches: 1986
-  Total branches: 2110
-  Method coverage: 97.8% (401 of 410)
-  Covered methods: 401
-  Total methods: 410
+  Coverable lines: 5343
+  Total lines: 14208
+  Branch coverage: 94.1% (1990 of 2114)
+  Covered branches: 1990
+  Total branches: 2114
+  Method coverage: 97.8% (404 of 413)
+  Covered methods: 404
+  Total methods: 413
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -81,6 +81,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.DecodeXORedArray.DecodeXORedArrayIterative                                                                           100.0%
   LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressReplace                                                                     100.0%
   LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressStringBuilder                                                               100.0%
+  LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArray                                                                     100.0%
+  LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArrayFactory                                                              100.0%
   LeetCode.Algorithms.DiameterOfBinaryTree.DiameterOfBinaryTreeDepthFirst                                                                   90.9%
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayByDigitExtraction         100.0%
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayIterative                 100.0%
