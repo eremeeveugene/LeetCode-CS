@@ -1,23 +1,23 @@
 Summary
-  Generated on: 04/25/2024 - 13:09:11
-  Coverage date: 04/25/2024 - 13:08:38 - 04/25/2024 - 13:08:44
+  Generated on: 04/25/2024 - 15:19:52
+  Coverage date: 04/25/2024 - 15:19:18 - 04/25/2024 - 15:19:25
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 296
-  Files: 296
-  Line coverage: 97.1%
-  Covered lines: 5193
+  Classes: 297
+  Files: 297
+  Line coverage: 97.2%
+  Covered lines: 5209
   Uncovered lines: 150
-  Coverable lines: 5343
-  Total lines: 14208
-  Branch coverage: 94.1% (1990 of 2114)
-  Covered branches: 1990
-  Total branches: 2114
-  Method coverage: 97.8% (404 of 413)
-  Covered methods: 404
-  Total methods: 413
+  Coverable lines: 5359
+  Total lines: 14255
+  Branch coverage: 94.1% (1994 of 2118)
+  Covered branches: 1994
+  Total branches: 2118
+  Method coverage: 97.8% (405 of 414)
+  Covered methods: 405
+  Total methods: 414
 
-LeetCode                                                                                                                                    97.4%
+LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -148,6 +148,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixBinarySearch                                                                  100.0%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixDivideAndConquer                                                               96.1%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixHorizontalScanning                                                            100.0%
+  LeetCode.Algorithms.LongestIdealSubsequence.LongestIdealSubsequenceDynamicProgramming                                                    100.0%
   LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters.LongestSubstringWithoutRepeatingCharactersSlidingWindow                   100.0%
   LeetCode.Algorithms.MajorityElement.MajorityElementDictionary                                                                            100.0%
   LeetCode.Algorithms.MajorityElement.MajorityElementDistinctCount                                                                         100.0%
