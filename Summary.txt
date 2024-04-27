@@ -1,21 +1,21 @@
 Summary
-  Generated on: 04/26/2024 - 14:09:38
-  Coverage date: 04/26/2024 - 14:09:02 - 04/26/2024 - 14:09:09
+  Generated on: 04/27/2024 - 10:02:45
+  Coverage date: 04/27/2024 - 10:02:14 - 04/27/2024 - 10:02:19
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 298
-  Files: 298
+  Classes: 299
+  Files: 299
   Line coverage: 97.2%
-  Covered lines: 5250
+  Covered lines: 5288
   Uncovered lines: 150
-  Coverable lines: 5400
-  Total lines: 14327
-  Branch coverage: 94.1% (2008 of 2132)
-  Covered branches: 2008
-  Total branches: 2132
-  Method coverage: 97.8% (406 of 415)
-  Covered methods: 406
-  Total methods: 415
+  Coverable lines: 5438
+  Total lines: 14394
+  Branch coverage: 94.2% (2026 of 2150)
+  Covered branches: 2026
+  Total branches: 2150
+  Method coverage: 97.8% (407 of 416)
+  Covered methods: 407
+  Total methods: 416
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -123,6 +123,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveHashSet                                                                     100.0%
   LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveIterative                                                                    96.5%
   LeetCode.Algorithms.FloodFill.FloodFillIterative                                                                                         100.0%
+  LeetCode.Algorithms.FreedomTrail.FreedomTrailDynamicProgramming                                                                          100.0%
   LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationReplace                                                             100.0%
   LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationStringBuilder                                                       100.0%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetChars                                                                                  100.0%

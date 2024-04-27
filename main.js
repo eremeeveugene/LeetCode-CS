@@ -326,6 +326,7 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveHashSet", "rp": "LeetCode_FirstMissingPositiveHashSet.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 36, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveIterative", "rp": "LeetCode_FirstMissingPositiveIterative.html", "cl": 28, "ucl": 1, "cal": 29, "tl": 62, "cb": 15, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.FloodFill.FloodFillIterative", "rp": "LeetCode_FloodFillIterative.html", "cl": 17, "ucl": 0, "cal": 17, "tl": 52, "cb": 12, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.FreedomTrail.FreedomTrailDynamicProgramming", "rp": "LeetCode_FreedomTrailDynamicProgramming.html", "cl": 38, "ucl": 0, "cal": 38, "tl": 67, "cb": 18, "tb": 18, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationReplace", "rp": "LeetCode_GoalParserInterpretationReplace.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 26, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationStringBuilder", "rp": "LeetCode_GoalParserInterpretationStringBuilder.html", "cl": 23, "ucl": 0, "cal": 23, "tl": 55, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.HappyNumber.HappyNumberHashSetChars", "rp": "LeetCode_HappyNumberHashSetChars.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 39, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -604,6 +605,12 @@ var riskHotspots = [
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumIterative", "reportPath": "LeetCode_PartitionArrayIntoThreePartsWithEqualSumIterative.html", "methodName": "CanThreePartsEqualSum(System.Int32[])", "methodShortName": "CanThreePartsEqualSum(...)", "fileIndex": 0, "line": 24,
     "metrics": [
       { "value": 18.04, "exceeded": true },
+      { "value": 18, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.FreedomTrail.FreedomTrailDynamicProgramming", "reportPath": "LeetCode_FreedomTrailDynamicProgramming.html", "methodName": "FindRotateSteps(System.String,System.String)", "methodShortName": "FindRotateSteps(...)", "fileIndex": 0, "line": 18,
+    "metrics": [
+      { "value": 18, "exceeded": true },
       { "value": 18, "exceeded": false },
     ]},
   {
