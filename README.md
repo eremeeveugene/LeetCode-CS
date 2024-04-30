@@ -155,6 +155,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/description/)
 - [1832. Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/description/)
 - [1859. Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/description/)
+- [1915. Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings/description/)
 - [1920. Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/description/)
 - [1929. Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/description/)
 - [1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)
