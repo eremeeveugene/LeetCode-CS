@@ -1,23 +1,23 @@
 Summary
-  Generated on: 05/01/2024 - 15:20:52
-  Coverage date: 05/01/2024 - 15:20:21 - 05/01/2024 - 15:20:27
+  Generated on: 05/02/2024 - 11:54:19
+  Coverage date: 05/02/2024 - 11:53:48 - 05/02/2024 - 11:53:54
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 305
-  Files: 305
+  Classes: 307
+  Files: 307
   Line coverage: 97.3%
-  Covered lines: 5416
+  Covered lines: 5451
   Uncovered lines: 150
-  Coverable lines: 5566
-  Total lines: 14707
-  Branch coverage: 94.3% (2072 of 2196)
-  Covered branches: 2072
-  Total branches: 2196
-  Method coverage: 97.8% (415 of 424)
-  Covered methods: 415
-  Total methods: 424
+  Coverable lines: 5601
+  Total lines: 14802
+  Branch coverage: 94.3% (2082 of 2206)
+  Covered branches: 2082
+  Total branches: 2206
+  Method coverage: 97.8% (417 of 426)
+  Covered methods: 417
+  Total methods: 426
 
-LeetCode                                                                                                                                    97.5%
+LeetCode                                                                                                                                    97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -140,6 +140,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.IsSubsequence.IsSubsequenceTwoPointers                                                                               100.0%
   LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesHashSet                                                                               100.0%
   LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesLinq                                                                                  100.0%
+  LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeHashSet               100.0%
+  LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointers    100.0%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordReverseIteration                                                                    100.0%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordTrimSplit                                                                           100.0%
   LeetCode.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency.LengthOfLongestSubarrayWithAtMostKFrequencyIterative                     100.0%
