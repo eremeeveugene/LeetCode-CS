@@ -259,6 +259,8 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentTwoPointers", "rp": "LeetCode_CheckIfTwoStringArraysAreEquivalentTwoPointers.html", "cl": 22, "ucl": 0, "cal": 22, "tl": 54, "cb": 11, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.ClimbingStairs.ClimbingStairsDynamicProgramming", "rp": "LeetCode_ClimbingStairsDynamicProgramming.html", "cl": 13, "ucl": 0, "cal": 13, "tl": 44, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.ClimbingStairs.ClimbingStairsIterativeFibonacci", "rp": "LeetCode_ClimbingStairsIterativeFibonacci.html", "cl": 14, "ucl": 0, "cal": 14, "tl": 44, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.CompareVersionNumbers.CompareVersionNumbersIterative", "rp": "LeetCode_CompareVersionNumbersIterative.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 62, "cb": 12, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.CompareVersionNumbers.CompareVersionNumbersTwoPointers", "rp": "LeetCode_CompareVersionNumbersTwoPointers.html", "cl": 27, "ucl": 0, "cal": 27, "tl": 63, "cb": 16, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayConcat", "rp": "LeetCode_ConcatenationOfArrayConcat.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 26, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayIterative", "rp": "LeetCode_ConcatenationOfArrayIterative.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 34, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.ContainsDuplicate.ContainsDuplicateHashSet", "rp": "LeetCode_ContainsDuplicateHashSet.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 29, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -647,6 +649,12 @@ var riskHotspots = [
     ]},
   {
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry", "reportPath": "LeetCode_AddTwoNumbersInPlaceCarry.html", "methodName": "AddTwoNumbers(LeetCode.Core.Models.ListNode,LeetCode.Core.Models.ListNode)", "methodShortName": "AddTwoNumbers(...)", "fileIndex": 0, "line": 27,
+    "metrics": [
+      { "value": 16, "exceeded": true },
+      { "value": 16, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.CompareVersionNumbers.CompareVersionNumbersTwoPointers", "reportPath": "LeetCode_CompareVersionNumbersTwoPointers.html", "methodName": "CompareVersion(System.String,System.String)", "methodShortName": "CompareVersion(...)", "fileIndex": 0, "line": 25,
     "metrics": [
       { "value": 16, "exceeded": true },
       { "value": 16, "exceeded": false },
