@@ -1,21 +1,21 @@
 Summary
-  Generated on: 05/04/2024 - 10:02:05
-  Coverage date: 05/04/2024 - 10:01:30 - 05/04/2024 - 10:01:37
+  Generated on: 05/05/2024 - 11:31:25
+  Coverage date: 05/05/2024 - 11:30:55 - 05/05/2024 - 11:30:59
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 310
-  Files: 310
+  Classes: 312
+  Files: 312
   Line coverage: 97.3%
-  Covered lines: 5522
-  Uncovered lines: 150
-  Coverable lines: 5672
-  Total lines: 14977
-  Branch coverage: 94.4% (2114 of 2238)
-  Covered branches: 2114
-  Total branches: 2238
-  Method coverage: 97.9% (420 of 429)
-  Covered methods: 420
-  Total methods: 429
+  Covered lines: 5538
+  Uncovered lines: 152
+  Coverable lines: 5690
+  Total lines: 15049
+  Branch coverage: 94.3% (2122 of 2248)
+  Covered branches: 2122
+  Total branches: 2248
+  Method coverage: 97.9% (422 of 431)
+  Covered methods: 422
+  Total methods: 431
 
 LeetCode                                                                                                                                    97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -84,6 +84,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.DecodeXORedArray.DecodeXORedArrayIterative                                                                           100.0%
   LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressReplace                                                                     100.0%
   LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressStringBuilder                                                               100.0%
+  LeetCode.Algorithms.DeleteNodeInLinkedList.DeleteNodeInLinkedListIterative                                                               100.0%
+  LeetCode.Algorithms.DeleteNodeInLinkedList.DeleteNodeInLinkedListReassign                                                                 71.4%
   LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArray                                                                     100.0%
   LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArrayFactory                                                              100.0%
   LeetCode.Algorithms.DiameterOfBinaryTree.DiameterOfBinaryTreeDepthFirst                                                                   90.9%
