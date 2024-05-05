@@ -71,6 +71,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [220. Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/description/)
 - [228. Summary Ranges](https://leetcode.com/problems/summary-ranges/description/)
 - [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/)
+- [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)
 - [257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/)
 - [258. Add Digits](https://leetcode.com/problems/add-digits/description/)
 - [260. Single Number III](https://leetcode.com/problems/single-number-iii/description/)
