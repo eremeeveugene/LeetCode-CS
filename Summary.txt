@@ -1,21 +1,21 @@
 Summary
-  Generated on: 05/06/2024 - 12:08:57
-  Coverage date: 05/06/2024 - 12:08:23 - 05/06/2024 - 12:08:29
+  Generated on: 05/06/2024 - 12:51:19
+  Coverage date: 05/06/2024 - 12:50:44 - 05/06/2024 - 12:50:52
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 313
-  Files: 313
+  Classes: 315
+  Files: 315
   Line coverage: 97.3%
-  Covered lines: 5568
+  Covered lines: 5617
   Uncovered lines: 152
-  Coverable lines: 5720
-  Total lines: 15109
-  Branch coverage: 94.4% (2128 of 2254)
-  Covered branches: 2128
-  Total branches: 2254
-  Method coverage: 97.9% (424 of 433)
-  Covered methods: 424
-  Total methods: 433
+  Coverable lines: 5769
+  Total lines: 15228
+  Branch coverage: 94.4% (2150 of 2276)
+  Covered branches: 2150
+  Total branches: 2276
+  Method coverage: 97.9% (426 of 435)
+  Covered methods: 426
+  Total methods: 435
 
 LeetCode                                                                                                                                    97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -199,6 +199,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MissingNumber.MissingNumberSumFormula                                                                                 71.4%
   LeetCode.Algorithms.NeitherMinimumNorMaximum.NeitherMinimumNorMaximumUsingMinMaxComparison                                               100.0%
   LeetCode.Algorithms.NeitherMinimumNorMaximum.NeitherMinimumNorMaximumUsingSorting                                                        100.0%
+  LeetCode.Algorithms.NextGreaterElement1.NextGreaterElement1BruteForce                                                                    100.0%
+  LeetCode.Algorithms.NextGreaterElement1.NextGreaterElement1StackDictionary                                                               100.0%
   LeetCode.Algorithms.NthTribonacciNumber.NthTribonacciNumberIterative                                                                     100.0%
   LeetCode.Algorithms.NthTribonacciNumber.NthTribonacciNumberMatrixExponentiation                                                          100.0%
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsDictionary                                                                        100.0%
