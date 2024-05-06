@@ -92,6 +92,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/)
 - [459. Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/description/)
 - [463. Island Perimeter](https://leetcode.com/problems/island-perimeter/description/)
+- [496. Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/)
 - [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/)
 - [513. Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/description/)
 - [514. Freedom Trail](https://leetcode.com/problems/freedom-trail/description/)
