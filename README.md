@@ -48,6 +48,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/)
 - [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
 - [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/)
+- [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/)
 - [112. Path Sum](https://leetcode.com/problems/path-sum/description/)
 - [113. Path Sum II](https://leetcode.com/problems/path-sum-ii/description/)
 - [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/description/)
