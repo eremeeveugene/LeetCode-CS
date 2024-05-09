@@ -25,13 +25,13 @@ public class MaximizeHappinessOfSelectedChildrenIterative : IMaximizeHappinessOf
     {
         long result = 0;
 
-        Array.Sort(happiness, (a, b) => b.CompareTo(a));
+        Array.Sort(happiness);
 
         var i = 0;
 
         while (k > 0)
         {
-            var happinessValue = happiness[i] - i;
+            var happinessValue = happiness[happiness.Length - 1 - i] - i;
 
             if (happinessValue > 0)
             {
