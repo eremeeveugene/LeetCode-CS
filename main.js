@@ -350,6 +350,8 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.IsSubsequence.IsSubsequenceTwoPointers", "rp": "LeetCode_IsSubsequenceTwoPointers.html", "cl": 19, "ucl": 0, "cal": 19, "tl": 51, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesHashSet", "rp": "LeetCode_JewelsAndStonesHashSet.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 29, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesLinq", "rp": "LeetCode_JewelsAndStonesLinq.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 27, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.KthSmallestPrimeFraction.KthSmallestPrimeFractionBinarySearch", "rp": "LeetCode_KthSmallestPrimeFractionBinarySearch.html", "cl": 56, "ucl": 9, "cal": 65, "tl": 107, "cb": 19, "tb": 24, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.KthSmallestPrimeFraction.KthSmallestPrimeFractionBruteForce", "rp": "LeetCode_KthSmallestPrimeFractionBruteForce.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 40, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeHashSet", "rp": "LeetCode_LargestPositiveIntegerThatExistsWithItsNegativeHashSet.html", "cl": 15, "ucl": 0, "cal": 15, "tl": 43, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointers", "rp": "LeetCode_LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointers.html", "cl": 20, "ucl": 0, "cal": 20, "tl": 52, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordReverseIteration", "rp": "LeetCode_LengthOfLastWordReverseIteration.html", "cl": 14, "ucl": 0, "cal": 14, "tl": 40, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -575,6 +577,12 @@ var riskHotspots = [
     "metrics": [
       { "value": 26, "exceeded": true },
       { "value": 26, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.KthSmallestPrimeFraction.KthSmallestPrimeFractionBinarySearch", "reportPath": "LeetCode_KthSmallestPrimeFractionBinarySearch.html", "methodName": "KthSmallestPrimeFraction(System.Int32[],System.Int32)", "methodShortName": "KthSmallestPrimeFraction(...)", "fileIndex": 0, "line": 25,
+    "metrics": [
+      { "value": 25.53, "exceeded": true },
+      { "value": 24, "exceeded": false },
     ]},
   {
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.EvenOddTree.EvenOddTreeBreadthFirst", "reportPath": "LeetCode_EvenOddTreeBreadthFirst.html", "methodName": "IsEvenOddTree(LeetCode.Core.Models.TreeNode)", "methodShortName": "IsEvenOddTree(...)", "fileIndex": 0, "line": 27,
