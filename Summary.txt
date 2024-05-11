@@ -1,21 +1,21 @@
 Summary
-  Generated on: 05/10/2024 - 16:53:27
-  Coverage date: 05/10/2024 - 16:52:53 - 05/10/2024 - 16:52:57
+  Generated on: 05/11/2024 - 11:23:06
+  Coverage date: 05/11/2024 - 11:22:32 - 05/11/2024 - 11:22:40
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 324
-  Files: 324
+  Classes: 325
+  Files: 325
   Line coverage: 97.2%
-  Covered lines: 5862
+  Covered lines: 5887
   Uncovered lines: 165
-  Coverable lines: 6027
-  Total lines: 15800
-  Branch coverage: 94.3% (2234 of 2368)
-  Covered branches: 2234
-  Total branches: 2368
-  Method coverage: 97.9% (436 of 445)
-  Covered methods: 436
-  Total methods: 445
+  Coverable lines: 6052
+  Total lines: 15863
+  Branch coverage: 94.3% (2242 of 2376)
+  Covered branches: 2242
+  Total branches: 2376
+  Method coverage: 97.9% (437 of 446)
+  Covered methods: 437
+  Total methods: 446
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -185,6 +185,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinCostClimbingStairs.MinCostClimbingStairsDynamicProgramming                                                         84.6%
   LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueHashSet                                                                          90.0%
   LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueTwoPointers                                                                      77.7%
+  LeetCode.Algorithms.MinimumCostToHireKWorkers.MinimumCostToHireKWorkersPriorityQueue                                                     100.0%
   LeetCode.Algorithms.MinimumDepthOfBinaryTree.MinimumDepthOfBinaryTreeBreadthFirstSearch                                                   92.8%
   LeetCode.Algorithms.MinimumDepthOfBinaryTree.MinimumDepthOfBinaryTreeDepthFirstSearch                                                     92.3%
   LeetCode.Algorithms.MinimumFallingPathSum2.MinimumFallingPathSum2DynamicProgramming                                                      100.0%
