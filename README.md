@@ -22,6 +22,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
 - [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
 - [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/)
+- [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/)
 - [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
 - [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/)
 - [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/)
