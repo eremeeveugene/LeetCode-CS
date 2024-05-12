@@ -1,21 +1,21 @@
 Summary
-  Generated on: 05/11/2024 - 11:23:06
-  Coverage date: 05/11/2024 - 11:22:32 - 05/11/2024 - 11:22:40
+  Generated on: 05/12/2024 - 11:28:53
+  Coverage date: 05/12/2024 - 11:28:20 - 05/12/2024 - 11:28:26
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 325
-  Files: 325
+  Classes: 326
+  Files: 326
   Line coverage: 97.2%
-  Covered lines: 5887
+  Covered lines: 5905
   Uncovered lines: 165
-  Coverable lines: 6052
-  Total lines: 15863
-  Branch coverage: 94.3% (2242 of 2376)
-  Covered branches: 2242
-  Total branches: 2376
-  Method coverage: 97.9% (437 of 446)
-  Covered methods: 437
-  Total methods: 446
+  Coverable lines: 6070
+  Total lines: 15908
+  Branch coverage: 94.3% (2250 of 2384)
+  Covered branches: 2250
+  Total branches: 2384
+  Method coverage: 97.9% (438 of 447)
+  Covered methods: 438
+  Total methods: 447
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -149,6 +149,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesLinq                                                                                  100.0%
   LeetCode.Algorithms.KthSmallestPrimeFraction.KthSmallestPrimeFractionBinarySearch                                                         86.1%
   LeetCode.Algorithms.KthSmallestPrimeFraction.KthSmallestPrimeFractionBruteForce                                                          100.0%
+  LeetCode.Algorithms.LargestLocalValuesInMatrix.LargestLocalValuesInMatrixBruteForce                                                      100.0%
   LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeHashSet               100.0%
   LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointers    100.0%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordReverseIteration                                                                    100.0%
