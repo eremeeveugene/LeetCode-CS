@@ -176,6 +176,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2160. Minimum Sum of Four Digit Number After Splitting Digits](https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/description/)
 - [2235. Add Two Integers](https://leetcode.com/problems/add-two-integers/description/)
 - [2370. Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence/description/)
+- [2373. Largest Local Values in a Matrix](https://leetcode.com/problems/largest-local-values-in-a-matrix/description/)
 - [2413. Smallest Even Multiple](https://leetcode.com/problems/smallest-even-multiple/description/)
 - [2418. Sort the People](https://leetcode.com/problems/sort-the-people/description/)
 - [2433. Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/description/)
