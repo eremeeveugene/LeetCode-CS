@@ -20,6 +20,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1. Two Sum](https://leetcode.com/problems/two-sum/description/)
 - [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
 - [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
+- [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
 - [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
 - [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/)
 - [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/)
