@@ -382,6 +382,8 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinqSplit", "rp": "LeetCode_MaximumNumberOfWordsFoundInSentencesLinqSplit.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 26, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStringBuilder", "rp": "LeetCode_MaximumOddBinaryNumberStringBuilder.html", "cl": 14, "ucl": 0, "cal": 14, "tl": 45, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStrings", "rp": "LeetCode_MaximumOddBinaryNumberStrings.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 29, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysBinarySearch", "rp": "LeetCode_MedianOfTwoSortedArraysBinarySearch.html", "cl": 45, "ucl": 7, "cal": 52, "tl": 96, "cb": 19, "tb": 22, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysIterative", "rp": "LeetCode_MedianOfTwoSortedArraysIterative.html", "cl": 45, "ucl": 0, "cal": 45, "tl": 85, "cb": 20, "tb": 20, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayMergingAndSorting", "rp": "LeetCode_MergeSortedArrayMergingAndSorting.html", "cl": 16, "ucl": 0, "cal": 16, "tl": 43, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayThreePointers", "rp": "LeetCode_MergeSortedArrayThreePointers.html", "cl": 24, "ucl": 0, "cal": 24, "tl": 53, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear", "rp": "LeetCode_MergeTwoSortedListsLinear.html", "cl": 63, "ucl": 3, "cal": 66, "tl": 121, "cb": 42, "tb": 50, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -599,6 +601,12 @@ var riskHotspots = [
       { "value": 22, "exceeded": false },
     ]},
   {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysBinarySearch", "reportPath": "LeetCode_MedianOfTwoSortedArraysBinarySearch.html", "methodName": "FindMedianSortedArrays(System.Int32[],System.Int32[])", "methodShortName": "FindMedianSortedArrays(...)", "fileIndex": 0, "line": 25,
+    "metrics": [
+      { "value": 23.18, "exceeded": true },
+      { "value": 22, "exceeded": false },
+    ]},
+  {
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.IslandPerimeter.IslandPerimeterIterative", "reportPath": "LeetCode_IslandPerimeterIterative.html", "methodName": "IslandPerimeter(System.Int32[][])", "methodShortName": "IslandPerimeter(...)", "fileIndex": 0, "line": 24,
     "metrics": [
       { "value": 22, "exceeded": true },
@@ -614,6 +622,12 @@ var riskHotspots = [
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListSlowFastPointers", "reportPath": "LeetCode_PalindromeLinkedListSlowFastPointers.html", "methodName": "IsPalindrome(LeetCode.Core.Models.ListNode)", "methodShortName": "IsPalindrome(...)", "fileIndex": 0, "line": 26,
     "metrics": [
       { "value": 20.26, "exceeded": true },
+      { "value": 20, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysIterative", "reportPath": "LeetCode_MedianOfTwoSortedArraysIterative.html", "methodName": "FindMedianSortedArrays(System.Int32[],System.Int32[])", "methodShortName": "FindMedianSortedArrays(...)", "fileIndex": 0, "line": 25,
+    "metrics": [
+      { "value": 20, "exceeded": true },
       { "value": 20, "exceeded": false },
     ]},
   {
