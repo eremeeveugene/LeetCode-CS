@@ -87,6 +87,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/)
 - [326. Power of Three](https://leetcode.com/problems/power-of-three/description/)
 - [338. Counting Bits](https://leetcode.com/problems/counting-bits/description/)
+- [342. Power of Four](https://leetcode.com/problems/power-of-four/description/)
 - [344. Reverse String](https://leetcode.com/problems/reverse-string/description/)
 - [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/)
 - [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)

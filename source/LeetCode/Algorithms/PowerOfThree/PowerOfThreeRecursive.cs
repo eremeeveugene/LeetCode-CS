@@ -9,24 +9,29 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.PowerOfTwo;
+namespace LeetCode.Algorithms.PowerOfThree;
 
 /// <inheritdoc />
-public class PowerOfTwoLogarithms : IPowerOfTwo
+public class PowerOfThreeRecursive : IPowerOfThree
 {
     /// <summary>
-    ///     Time complexity - O(1)
-    ///     Space complexity - O(1)
+    ///     Time complexity - O(log n)
+    ///     Space complexity - O(log n)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>
-    public bool IsPowerOfTwo(int n)
+    public bool IsPowerOfThree(int n)
     {
-        if (n <= 0)
+        return n > 0 && GetIsPowerOfThree(n);
+    }
+
+    private static bool GetIsPowerOfThree(int n)
+    {
+        if (n == 1)
         {
-            return false;
+            return true;
         }
 
-        return Math.Log(n, 2) % 1 == 0;
+        return n % 3 == 0 && GetIsPowerOfThree(n / 3);
     }
 }
