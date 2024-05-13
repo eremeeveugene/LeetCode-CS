@@ -1,21 +1,21 @@
 Summary
-  Generated on: 05/13/2024 - 11:41:19
-  Coverage date: 05/13/2024 - 11:40:45 - 05/13/2024 - 11:40:51
+  Generated on: 05/13/2024 - 12:32:44
+  Coverage date: 05/13/2024 - 12:32:08 - 05/13/2024 - 12:32:14
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 338
-  Files: 338
+  Classes: 344
+  Files: 344
   Line coverage: 97.2%
-  Covered lines: 6091
+  Covered lines: 6139
   Uncovered lines: 174
-  Coverable lines: 6265
-  Total lines: 16462
-  Branch coverage: 94.4% (2328 of 2466)
-  Covered branches: 2328
-  Total branches: 2466
-  Method coverage: 98% (451 of 460)
-  Covered methods: 451
-  Total methods: 460
+  Coverable lines: 6313
+  Total lines: 16672
+  Branch coverage: 94.4% (2356 of 2494)
+  Covered branches: 2356
+  Total branches: 2494
+  Method coverage: 98% (460 of 469)
+  Covered methods: 460
+  Total methods: 469
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -240,14 +240,20 @@ LeetCode                                                                        
   LeetCode.Algorithms.PerfectSquares.PerfectSquaresIterative                                                                               100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray                                                                                   100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArrayV2                                                                                 100.0%
+  LeetCode.Algorithms.PowerOfFour.PowerOfFourBitwise                                                                                       100.0%
+  LeetCode.Algorithms.PowerOfFour.PowerOfFourIterative                                                                                     100.0%
+  LeetCode.Algorithms.PowerOfFour.PowerOfFourLogarithms                                                                                    100.0%
+  LeetCode.Algorithms.PowerOfFour.PowerOfFourRecursive                                                                                     100.0%
   LeetCode.Algorithms.PowerOfThree.PowerOfThreeDivisionRemainder                                                                           100.0%
   LeetCode.Algorithms.PowerOfThree.PowerOfThreeIterative                                                                                   100.0%
   LeetCode.Algorithms.PowerOfThree.PowerOfThreeLogarithms                                                                                  100.0%
+  LeetCode.Algorithms.PowerOfThree.PowerOfThreeRecursive                                                                                   100.0%
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoBinaryString                                                                                    100.0%
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoBitwise                                                                                         100.0%
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoDivisionRemainder                                                                               100.0%
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoIterative                                                                                       100.0%
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoLogarithms                                                                                      100.0%
+  LeetCode.Algorithms.PowerOfTwo.PowerOfTwoRecursive                                                                                       100.0%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksBruteForce                                                                                100.0%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksTuple                                                                                     100.0%
   LeetCode.Algorithms.RemoveDuplicatesFromSortedArray.RemoveDuplicatesFromSortedArrayIterative                                             100.0%
