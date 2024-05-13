@@ -12,10 +12,10 @@
 namespace LeetCode.Algorithms.PowerOfTwo;
 
 /// <inheritdoc />
-public class PowerOfTwoIterative : IPowerOfTwo
+public class PowerOfTwoLogarithms : IPowerOfTwo
 {
     /// <summary>
-    ///     Time complexity - O(log n)
+    ///     Time complexity - O(1)
     ///     Space complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
@@ -27,11 +27,8 @@ public class PowerOfTwoIterative : IPowerOfTwo
             return false;
         }
 
-        while (n % 2 == 0)
-        {
-            n /= 2;
-        }
+        var logResult = Math.Log10(n) / Math.Log10(2);
 
-        return n == 1;
+        return Math.Abs(logResult - Math.Round(logResult)) < double.Epsilon;
     }
 }
