@@ -492,6 +492,7 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.RomanToInteger.RomanToIntegerDictionary", "rp": "LeetCode_RomanToIntegerDictionary.html", "cl": 37, "ucl": 0, "cal": 37, "tl": 65, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.RunningSumOf1dArray.RunningSumOf1dArrayIterative", "rp": "LeetCode_RunningSumOf1dArrayIterative.html", "cl": 8, "ucl": 2, "cal": 10, "tl": 37, "cb": 3, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.SameTree.SameTreeRecursive", "rp": "LeetCode_SameTreeRecursive.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 45, "cb": 11, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.ScoreAfterFlippingMatrix.ScoreAfterFlippingMatrixIterative", "rp": "LeetCode_ScoreAfterFlippingMatrixIterative.html", "cl": 47, "ucl": 0, "cal": 47, "tl": 82, "cb": 22, "tb": 22, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionBinarySearch", "rp": "LeetCode_SearchInsertPositionBinarySearch.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 29, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionIterative", "rp": "LeetCode_SearchInsertPositionIterative.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 27, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.ShuffleString.ShuffleStringIterative", "rp": "LeetCode_ShuffleStringIterative.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 39, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -624,6 +625,12 @@ var riskHotspots = [
     ]},
   {
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.IslandPerimeter.IslandPerimeterIterative", "reportPath": "LeetCode_IslandPerimeterIterative.html", "methodName": "IslandPerimeter(System.Int32[][])", "methodShortName": "IslandPerimeter(...)", "fileIndex": 0, "line": 24,
+    "metrics": [
+      { "value": 22, "exceeded": true },
+      { "value": 22, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.ScoreAfterFlippingMatrix.ScoreAfterFlippingMatrixIterative", "reportPath": "LeetCode_ScoreAfterFlippingMatrixIterative.html", "methodName": "MatrixScore(System.Int32[][])", "methodShortName": "MatrixScore(...)", "fileIndex": 0, "line": 24,
     "metrics": [
       { "value": 22, "exceeded": true },
       { "value": 22, "exceeded": false },
