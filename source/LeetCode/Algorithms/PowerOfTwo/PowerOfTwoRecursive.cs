@@ -12,21 +12,26 @@
 namespace LeetCode.Algorithms.PowerOfTwo;
 
 /// <inheritdoc />
-public class PowerOfTwoLogarithms : IPowerOfTwo
+public class PowerOfTwoRecursive : IPowerOfTwo
 {
     /// <summary>
-    ///     Time complexity - O(1)
-    ///     Space complexity - O(1)
+    ///     Time complexity - O(log n)
+    ///     Space complexity - O(log n)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>
     public bool IsPowerOfTwo(int n)
     {
-        if (n <= 0)
+        return n > 0 && GetIsPowerOfTwo(n);
+    }
+
+    private static bool GetIsPowerOfTwo(int n)
+    {
+        if (n == 1)
         {
-            return false;
+            return true;
         }
 
-        return Math.Log(n, 2) % 1 == 0;
+        return n % 2 == 0 && GetIsPowerOfTwo(n / 2);
     }
 }

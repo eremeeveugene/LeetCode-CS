@@ -9,24 +9,29 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.PowerOfTwo;
+namespace LeetCode.Algorithms.PowerOfFour;
 
 /// <inheritdoc />
-public class PowerOfTwoLogarithms : IPowerOfTwo
+public class PowerOfFourIterative : IPowerOfFour
 {
     /// <summary>
-    ///     Time complexity - O(1)
+    ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>
-    public bool IsPowerOfTwo(int n)
+    public bool IsPowerOfFour(int n)
     {
         if (n <= 0)
         {
             return false;
         }
 
-        return Math.Log(n, 2) % 1 == 0;
+        while (n % 4 == 0)
+        {
+            n /= 4;
+        }
+
+        return n == 1;
     }
 }
