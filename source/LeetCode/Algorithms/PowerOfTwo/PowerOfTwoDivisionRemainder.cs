@@ -12,10 +12,10 @@
 namespace LeetCode.Algorithms.PowerOfTwo;
 
 /// <inheritdoc />
-public class PowerOfTwoIterative : IPowerOfTwo
+public class PowerOfTwoDivisionRemainder : IPowerOfTwo
 {
     /// <summary>
-    ///     Time complexity - O(log n)
+    ///     Time complexity - O(1)
     ///     Space complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
@@ -27,11 +27,6 @@ public class PowerOfTwoIterative : IPowerOfTwo
             return false;
         }
 
-        while (n % 2 == 0)
-        {
-            n /= 2;
-        }
-
-        return n == 1;
+        return Math.Pow(2, 32) % n == 0;
     }
 }
