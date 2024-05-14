@@ -1,21 +1,21 @@
 Summary
-  Generated on: 05/13/2024 - 13:20:53
-  Coverage date: 05/13/2024 - 13:20:21 - 05/13/2024 - 13:20:26
+  Generated on: 05/14/2024 - 11:29:19
+  Coverage date: 05/14/2024 - 11:28:48 - 05/14/2024 - 11:28:53
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 345
-  Files: 345
+  Classes: 346
+  Files: 346
   Line coverage: 97.2%
-  Covered lines: 6186
+  Covered lines: 6224
   Uncovered lines: 174
-  Coverable lines: 6360
-  Total lines: 16754
-  Branch coverage: 94.5% (2378 of 2516)
-  Covered branches: 2378
-  Total branches: 2516
-  Method coverage: 98% (461 of 470)
-  Covered methods: 461
-  Total methods: 470
+  Coverable lines: 6398
+  Total lines: 16831
+  Branch coverage: 94.5% (2400 of 2538)
+  Covered branches: 2400
+  Total branches: 2538
+  Method coverage: 98% (463 of 472)
+  Covered methods: 463
+  Total methods: 472
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -237,6 +237,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.PathSum.PathSumDepthFirstSearch                                                                                      100.0%
   LeetCode.Algorithms.PathSum2.PathSum2DepthFirstSearch                                                                                    100.0%
   LeetCode.Algorithms.PathSum2.PathSum2DepthFirstSearchOptimized                                                                           100.0%
+  LeetCode.Algorithms.PathWithMaximumGold.PathWithMaximumGoldRecursive                                                                     100.0%
   LeetCode.Algorithms.PerfectSquares.PerfectSquaresIterative                                                                               100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray                                                                                   100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArrayV2                                                                                 100.0%

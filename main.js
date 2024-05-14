@@ -440,6 +440,7 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.PathSum.PathSumDepthFirstSearch", "rp": "LeetCode_PathSumDepthFirstSearch.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 45, "cb": 14, "tb": 14, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.PathSum2.PathSum2DepthFirstSearch", "rp": "LeetCode_PathSum2DepthFirstSearch.html", "cl": 23, "ucl": 0, "cal": 23, "tl": 58, "cb": 11, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.PathSum2.PathSum2DepthFirstSearchOptimized", "rp": "LeetCode_PathSum2DepthFirstSearchOptimized.html", "cl": 21, "ucl": 0, "cal": 21, "tl": 57, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.PathWithMaximumGold.PathWithMaximumGoldRecursive", "rp": "LeetCode_PathWithMaximumGoldRecursive.html", "cl": 38, "ucl": 0, "cal": 38, "tl": 77, "cb": 22, "tb": 22, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.PerfectSquares.PerfectSquaresIterative", "rp": "LeetCode_PerfectSquaresIterative.html", "cl": 16, "ucl": 0, "cal": 16, "tl": 43, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray", "rp": "LeetCode_PlusOneIncrementDigitArray.html", "cl": 17, "ucl": 0, "cal": 17, "tl": 45, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArrayV2", "rp": "LeetCode_PlusOneIncrementDigitArrayV2.html", "cl": 13, "ucl": 0, "cal": 13, "tl": 41, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -739,6 +740,12 @@ var riskHotspots = [
     ]},
   {
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.NumberOfIslands.NumberOfIslandsIterative", "reportPath": "LeetCode_NumberOfIslandsIterative.html", "methodName": "Find(System.Collections.Generic.IReadOnlyList`1<System.Char[]>,System.Int32,System.Int32)", "methodShortName": "Find(...)", "fileIndex": 0, "line": 46,
+    "metrics": [
+      { "value": 16, "exceeded": true },
+      { "value": 16, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.PathWithMaximumGold.PathWithMaximumGoldRecursive", "reportPath": "LeetCode_PathWithMaximumGoldRecursive.html", "methodName": "GetMaximumGold(System.Collections.Generic.IReadOnlyList`1<System.Int32[]>,System.Int32,System.Int32,System.Int32)", "methodShortName": "GetMaximumGold(...)", "fileIndex": 0, "line": 44,
     "metrics": [
       { "value": 16, "exceeded": true },
       { "value": 16, "exceeded": false },
