@@ -1,21 +1,21 @@
 Summary
-  Generated on: 05/15/2024 - 13:26:42
-  Coverage date: 05/15/2024 - 13:26:07 - 05/15/2024 - 13:26:14
+  Generated on: 05/16/2024 - 11:34:34
+  Coverage date: 05/16/2024 - 11:34:00 - 05/16/2024 - 11:34:07
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 347
-  Files: 347
-  Line coverage: 97.2%
-  Covered lines: 6289
+  Classes: 348
+  Files: 348
+  Line coverage: 97.3%
+  Covered lines: 6316
   Uncovered lines: 175
-  Coverable lines: 6464
-  Total lines: 16944
-  Branch coverage: 94.6% (2443 of 2582)
-  Covered branches: 2443
-  Total branches: 2582
-  Method coverage: 98% (464 of 473)
-  Covered methods: 464
-  Total methods: 473
+  Coverable lines: 6491
+  Total lines: 17013
+  Branch coverage: 94.6% (2462 of 2602)
+  Covered branches: 2462
+  Total branches: 2602
+  Method coverage: 98.1% (466 of 475)
+  Covered methods: 466
+  Total methods: 475
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -97,6 +97,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DivisorGame.DivisorGameDivisionRemainder                                                                             100.0%
   LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList.DoubleNumberRepresentedAsLinkedListIterative                                     100.0%
   LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList.DoubleNumberRepresentedAsLinkedListStack                                         100.0%
+  LeetCode.Algorithms.EvaluateBooleanBinaryTree.EvaluateBooleanBinaryTreeDepthFirstSearch                                                  100.0%
   LeetCode.Algorithms.EvenOddTree.EvenOddTreeBreadthFirst                                                                                   91.1%
   LeetCode.Algorithms.ExcelSheetColumnNumber.ExcelSheetColumnNumberIterative                                                               100.0%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberIterative                                                                             100.0%

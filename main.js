@@ -300,6 +300,7 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.DivisorGame.DivisorGameDivisionRemainder", "rp": "LeetCode_DivisorGameDivisionRemainder.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 27, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList.DoubleNumberRepresentedAsLinkedListIterative", "rp": "LeetCode_DoubleNumberRepresentedAsLinkedListIterative.html", "cl": 44, "ucl": 0, "cal": 44, "tl": 85, "cb": 11, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList.DoubleNumberRepresentedAsLinkedListStack", "rp": "LeetCode_DoubleNumberRepresentedAsLinkedListStack.html", "cl": 31, "ucl": 0, "cal": 31, "tl": 70, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.EvaluateBooleanBinaryTree.EvaluateBooleanBinaryTreeDepthFirstSearch", "rp": "LeetCode_EvaluateBooleanBinaryTreeDepthFirstSearch.html", "cl": 27, "ucl": 0, "cal": 27, "tl": 69, "cb": 19, "tb": 20, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.EvenOddTree.EvenOddTreeBreadthFirst", "rp": "LeetCode_EvenOddTreeBreadthFirst.html", "cl": 41, "ucl": 4, "cal": 45, "tl": 90, "cb": 22, "tb": 24, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.ExcelSheetColumnNumber.ExcelSheetColumnNumberIterative", "rp": "LeetCode_ExcelSheetColumnNumberIterative.html", "cl": 37, "ucl": 0, "cal": 37, "tl": 67, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.FibonacciNumber.FibonacciNumberIterative", "rp": "LeetCode_FibonacciNumberIterative.html", "cl": 14, "ucl": 0, "cal": 14, "tl": 41, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -683,6 +684,12 @@ var riskHotspots = [
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumIterative", "reportPath": "LeetCode_PartitionArrayIntoThreePartsWithEqualSumIterative.html", "methodName": "CanThreePartsEqualSum(System.Int32[])", "methodShortName": "CanThreePartsEqualSum(...)", "fileIndex": 0, "line": 24,
     "metrics": [
       { "value": 18.04, "exceeded": true },
+      { "value": 18, "exceeded": false },
+    ]},
+  {
+    "assembly": "LeetCode", "class": "LeetCode.Algorithms.EvaluateBooleanBinaryTree.EvaluateBooleanBinaryTreeDepthFirstSearch", "reportPath": "LeetCode_EvaluateBooleanBinaryTreeDepthFirstSearch.html", "methodName": "GetTreeEvaluation(LeetCode.Core.Models.TreeNode)", "methodShortName": "GetTreeEvaluation(...)", "fileIndex": 0, "line": 34,
+    "metrics": [
+      { "value": 18, "exceeded": true },
       { "value": 18, "exceeded": false },
     ]},
   {
