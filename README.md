@@ -133,6 +133,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/description/)
 - [950. Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/description/)
 - [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/description/)
+- [979. Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree/description/)
 - [988. Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/description/)
 - [989. Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/description/)
 - [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/description/)
