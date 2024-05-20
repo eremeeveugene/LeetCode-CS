@@ -1,21 +1,21 @@
 Summary
-  Generated on: 05/20/2024 - 18:21:43
-  Coverage date: 05/20/2024 - 18:21:09 - 05/20/2024 - 18:21:16
+  Generated on: 05/20/2024 - 18:56:16
+  Coverage date: 05/20/2024 - 18:55:40 - 05/20/2024 - 18:55:48
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 353
-  Files: 353
+  Classes: 354
+  Files: 354
   Line coverage: 97.3%
-  Covered lines: 6381
+  Covered lines: 6403
   Uncovered lines: 177
-  Coverable lines: 6558
-  Total lines: 17233
-  Branch coverage: 94.6% (2483 of 2624)
-  Covered branches: 2483
-  Total branches: 2624
-  Method coverage: 98.1% (474 of 483)
-  Covered methods: 474
-  Total methods: 483
+  Coverable lines: 6580
+  Total lines: 17290
+  Branch coverage: 94.6% (2491 of 2632)
+  Covered branches: 2491
+  Total branches: 2632
+  Method coverage: 98.1% (475 of 484)
+  Covered methods: 475
+  Total methods: 484
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -41,6 +41,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive                                                        90.9%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalStack                                                           100.0%
   LeetCode.Algorithms.BinaryTreePaths.BinaryTreePathsDepthFirstSearch                                                                      100.0%
+  LeetCode.Algorithms.BinaryTreePreorderTraversal.BinaryTreePreorderTraversalDepthFirstSearch                                              100.0%
   LeetCode.Algorithms.BoatsToSavePeople.BoatsToSavePeopleTwoPointers                                                                       100.0%
   LeetCode.Algorithms.BuildArrayFromPermutation.BuildArrayFromPermutationIterative                                                         100.0%
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesBruteForce                                                                          100.0%
