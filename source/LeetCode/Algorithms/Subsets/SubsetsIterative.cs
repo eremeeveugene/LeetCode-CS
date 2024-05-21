@@ -30,11 +30,9 @@ public class SubsetsIterative : ISubsets
 
             for (var i = 0; i < size; i++)
             {
-                List<int> newSubset =
-                [
-                    ..subsets[i],
-                    num
-                ];
+                var newSubset = new List<int> { num };
+
+                newSubset.AddRange(subsets[i]);
 
                 subsets.Add(newSubset);
             }
