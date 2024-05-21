@@ -42,6 +42,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [67. Add Binary](https://leetcode.com/problems/add-binary/description/)
 - [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/description/)
 - [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/)
+- [78. Subsets](https://leetcode.com/problems/subsets/description/)
 - [79. Word Search](https://leetcode.com/problems/word-search/description/)
 - [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/)
 - [85. Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/description/)
