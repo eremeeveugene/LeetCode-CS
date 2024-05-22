@@ -18,8 +18,8 @@ namespace LeetCode.Tests.Algorithms.PalindromePartitioning;
 public abstract class PalindromePartitioningTestsBase<T> where T : IPalindromePartitioning, new()
 {
     [TestMethod]
-    [DataRow("a", "[[a]")]
-    [DataRow("aab", "[[a,a,b],[aa,b]]")]
+    [DataRow("a", "[[\"a\"]]")]
+    [DataRow("aab", "[[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]")]
     public void Partition_GivenString_ReturnsAllPossiblePalindromicPartitions(string s, string expectedResultJsonArray)
     {
         // Arrange
