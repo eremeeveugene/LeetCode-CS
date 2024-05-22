@@ -47,11 +47,22 @@ public static class AssertExtensions
             CollectionAssert.AreEquivalent(expected[i].ToArray(), actual[i].ToArray(), $"Sublist {i} is different.");
         }
     }
+
     public static void AssertJaggedArrayEqual(int[][] expected, int[][] actual)
     {
         Assert.AreEqual(expected.Length, actual.Length, "The number of sub lists is different.");
 
         for (var i = 0; i < expected.Length; i++)
+        {
+            CollectionAssert.AreEqual(expected[i].ToArray(), actual[i].ToArray(), $"Sublist {i} is different.");
+        }
+    }
+
+    public static void AssertJaggedArrayEqual(IList<IList<string>> expected, IList<IList<string>> actual)
+    {
+        Assert.AreEqual(expected.Count, actual.Count, "The number of sub lists is different.");
+
+        for (var i = 0; i < expected.Count; i++)
         {
             CollectionAssert.AreEqual(expected[i].ToArray(), actual[i].ToArray(), $"Sublist {i} is different.");
         }
