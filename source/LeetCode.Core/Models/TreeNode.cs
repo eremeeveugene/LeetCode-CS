@@ -38,7 +38,7 @@ public class TreeNode(int? val = null, TreeNode? left = null, TreeNode? right = 
         var root = new TreeNode(values[0]);
 
         var queue = new Queue<TreeNode>();
-        
+
         queue.Enqueue(root);
 
         var i = 1;
