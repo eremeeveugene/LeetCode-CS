@@ -68,6 +68,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)
 - [143. Reorder List](https://leetcode.com/problems/reorder-list/description/)
 - [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/)
+- [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)
 - [165. Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/description/)
 - [169. Majority Element](https://leetcode.com/problems/majority-element/description/)
 - [171. Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/description/)
