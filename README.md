@@ -115,6 +115,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/)
 - [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/)
 - [561. Array Partition](https://leetcode.com/problems/array-partition/description/)
+- [589. N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/description/)
 - [590. N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal/description/)
 - [621. Task Scheduler](https://leetcode.com/problems/task-scheduler/description/)
 - [623. Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree/description/)
