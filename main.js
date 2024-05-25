@@ -423,6 +423,8 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.MissingNumber.MissingNumberSortAndForSearch", "rp": "LeetCode_MissingNumberSortAndForSearch.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 36, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MissingNumber.MissingNumberSortAndWhileSearch", "rp": "LeetCode_MissingNumberSortAndWhileSearch.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 35, "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MissingNumber.MissingNumberSumFormula", "rp": "LeetCode_MissingNumberSumFormula.html", "cl": 5, "ucl": 2, "cal": 7, "tl": 33, "cb": 1, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.NaryTreePostorderTraversal.NaryTreePostorderTraversalStack", "rp": "LeetCode_NaryTreePostorderTraversalStack.html", "cl": 19, "ucl": 2, "cal": 21, "tl": 57, "cb": 7, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.NaryTreePostorderTraversal.NaryTreePostorderTraversalTwoStacks", "rp": "LeetCode_NaryTreePostorderTraversalTwoStacks.html", "cl": 25, "ucl": 2, "cal": 27, "tl": 65, "cb": 9, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.NeitherMinimumNorMaximum.NeitherMinimumNorMaximumUsingMinMaxComparison", "rp": "LeetCode_NeitherMinimumNorMaximumUsingMinMaxComparison.html", "cl": 11, "ucl": 0, "cal": 11, "tl": 39, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.NeitherMinimumNorMaximum.NeitherMinimumNorMaximumUsingSorting", "rp": "LeetCode_NeitherMinimumNorMaximumUsingSorting.html", "cl": 7, "ucl": 0, "cal": 7, "tl": 33, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.NextGreaterElement1.NextGreaterElement1BruteForce", "rp": "LeetCode_NextGreaterElement1BruteForce.html", "cl": 27, "ucl": 0, "cal": 27, "tl": 66, "cb": 12, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -582,8 +584,9 @@ var assemblies = [
       { "name": "LeetCode.Core.Extensions.ArrayExtensions", "rp": "LeetCode.Core_ArrayExtensions.html", "cl": 24, "ucl": 3, "cal": 27, "tl": 56, "cb": 10, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Core.Helpers.JsonConvertHelper<T>", "rp": "LeetCode.Core_JsonConvertHelper_1.html", "cl": 18, "ucl": 0, "cal": 18, "tl": 47, "cb": 9, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Core.Models.ListNode", "rp": "LeetCode.Core_ListNode.html", "cl": 15, "ucl": 0, "cal": 15, "tl": 40, "cb": 2, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Core.Models.Node", "rp": "LeetCode.Core_Node.html", "cl": 24, "ucl": 3, "cal": 27, "tl": 65, "cb": 9, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Core.Models.NodeWithSum", "rp": "LeetCode.Core_NodeWithSum.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 18, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "LeetCode.Core.Models.TreeNode", "rp": "LeetCode.Core_TreeNode.html", "cl": 33, "ucl": 3, "cal": 36, "tl": 74, "cb": 14, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Core.Models.TreeNode", "rp": "LeetCode.Core_TreeNode.html", "cl": 30, "ucl": 3, "cal": 33, "tl": 71, "cb": 14, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
     ]},
   {
     "name": "LeetCode.Tests.Base",
@@ -785,7 +788,7 @@ var riskHotspots = [
       { "value": 16, "exceeded": false },
     ]},
   {
-    "assembly": "LeetCode.Core", "class": "LeetCode.Core.Models.TreeNode", "reportPath": "LeetCode.Core_TreeNode.html", "methodName": "BuildTree(System.Collections.Generic.IList`1<System.Nullable`1<System.Int32>>)", "methodShortName": "BuildTree(...)", "fileIndex": 0, "line": 37,
+    "assembly": "LeetCode.Core", "class": "LeetCode.Core.Models.TreeNode", "reportPath": "LeetCode.Core_TreeNode.html", "methodName": "BuildTree(System.Collections.Generic.IList`1<System.Nullable`1<System.Int32>>)", "methodShortName": "BuildTree(...)", "fileIndex": 0, "line": 32,
     "metrics": [
       { "value": 16, "exceeded": true },
       { "value": 16, "exceeded": false },
