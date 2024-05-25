@@ -9,32 +9,14 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-// ReSharper disable InconsistentNaming
+using LeetCode.Core.Models;
 
-namespace LeetCode.Core.Models;
+namespace LeetCode.Algorithms.NaryTreePostorderTraversal;
 
 /// <summary>
-///     Definition for singly-linked list
+///     https://leetcode.com/problems/n-ary-tree-postorder-traversal/
 /// </summary>
-public class ListNode(int val = 0, ListNode? next = null)
+public interface INaryTreePostorderTraversal
 {
-    public ListNode? next = next;
-
-    public int val = val;
-
-    public static ListNode? Reverse(ListNode? head)
-    {
-        ListNode? prev = null;
-        var current = head;
-
-        while (current != null)
-        {
-            var next = current.next;
-            current.next = prev;
-            prev = current;
-            current = next;
-        }
-
-        return prev;
-    }
+    IList<int> Postorder(Node? root);
 }
