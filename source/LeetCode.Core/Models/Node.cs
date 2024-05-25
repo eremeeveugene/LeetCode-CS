@@ -14,53 +14,46 @@
 namespace LeetCode.Core.Models;
 
 /// <summary>
-///     Definition for a binary tree node
+///     Definition for an n-ary tree node
 /// </summary>
-public class TreeNode(int? val = null, TreeNode? left = null, TreeNode? right = null)
+public class Node(int? _val = null, IList<Node>? _children = null)
 {
-    public TreeNode? left = left;
+    public IList<Node>? children = _children;
 
-    public TreeNode? right = right;
+    public int val = _val ?? 0;
 
-    public int val = val ?? 0;
+    public Node() : this(0) { }
 
-    public TreeNode() : this(0)
+    public static Node? BuildTree(IList<int?> values)
     {
-    }
-
-    public static TreeNode? BuildTree(IList<int?> values)
-    {
-        if (!values.Any() || values[0] == null)
+        if (values.Count == 0 || values[0] == null)
         {
             return null;
         }
 
-        var root = new TreeNode(values[0]);
+        var root = new Node(values[0]);
 
-        var queue = new Queue<TreeNode>();
-        
+        var queue = new Queue<Node>();
+
         queue.Enqueue(root);
 
-        var i = 1;
+        var i = 2;
 
         while (queue.Count > 0 && i < values.Count)
         {
             var current = queue.Dequeue();
 
-            if (i < values.Count && values[i].HasValue)
+            current.children = new List<Node>();
+
+            while (i < values.Count && values[i] != null)
             {
-                current.left = new TreeNode(values[i]);
+                var child = new Node(values[i]);
 
-                queue.Enqueue(current.left);
-            }
+                current.children.Add(child);
 
-            i++;
+                queue.Enqueue(child);
 
-            if (i < values.Count && values[i].HasValue)
-            {
-                current.right = new TreeNode(values[i]);
-
-                queue.Enqueue(current.right);
+                i++;
             }
 
             i++;
@@ -68,4 +61,5 @@ public class TreeNode(int? val = null, TreeNode? left = null, TreeNode? right = 
 
         return root;
     }
+
 }
