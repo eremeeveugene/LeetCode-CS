@@ -1,21 +1,21 @@
 Summary
-  Generated on: 05/24/2024 - 11:55:41
-  Coverage date: 05/24/2024 - 11:55:06 - 05/24/2024 - 11:55:15
+  Generated on: 05/25/2024 - 12:38:28
+  Coverage date: 05/25/2024 - 12:37:53 - 05/25/2024 - 12:38:01
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 360
-  Files: 360
+  Classes: 362
+  Files: 362
   Line coverage: 97.3%
-  Covered lines: 6528
+  Covered lines: 6578
   Uncovered lines: 181
-  Coverable lines: 6709
-  Total lines: 17621
-  Branch coverage: 94.6% (2522 of 2664)
-  Covered branches: 2522
-  Total branches: 2664
-  Method coverage: 98.1% (488 of 497)
-  Covered methods: 488
-  Total methods: 497
+  Coverable lines: 6759
+  Total lines: 17743
+  Branch coverage: 94.7% (2540 of 2682)
+  Covered branches: 2540
+  Total branches: 2682
+  Method coverage: 98.1% (490 of 499)
+  Covered methods: 490
+  Total methods: 499
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -41,6 +41,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalRecursive                                                        90.9%
   LeetCode.Algorithms.BinaryTreeInorderTraversal.BinaryTreeInorderTraversalStack                                                           100.0%
   LeetCode.Algorithms.BinaryTreePaths.BinaryTreePathsDepthFirstSearch                                                                      100.0%
+  LeetCode.Algorithms.BinaryTreePostorderTraversal.BinaryTreePostorderTraversalStack                                                       100.0%
+  LeetCode.Algorithms.BinaryTreePostorderTraversal.BinaryTreePostorderTraversalTwoStacks                                                   100.0%
   LeetCode.Algorithms.BinaryTreePreorderTraversal.BinaryTreePreorderTraversalDepthFirstSearch                                              100.0%
   LeetCode.Algorithms.BoatsToSavePeople.BoatsToSavePeopleTwoPointers                                                                       100.0%
   LeetCode.Algorithms.BuildArrayFromPermutation.BuildArrayFromPermutationIterative                                                         100.0%
