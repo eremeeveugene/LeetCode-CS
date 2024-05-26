@@ -1,21 +1,21 @@
 Summary
-  Generated on: 05/26/2024 - 10:00:42
-  Coverage date: 05/26/2024 - 10:00:09 - 05/26/2024 - 10:00:17
+  Generated on: 05/26/2024 - 11:13:48
+  Coverage date: 05/26/2024 - 11:13:15 - 05/26/2024 - 11:13:23
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 372
-  Files: 372
+  Classes: 374
+  Files: 374
   Line coverage: 97.2%
-  Covered lines: 6743
+  Covered lines: 6769
   Uncovered lines: 194
-  Coverable lines: 6937
-  Total lines: 18255
-  Branch coverage: 94.5% (2596 of 2746)
-  Covered branches: 2596
-  Total branches: 2746
-  Method coverage: 98% (502 of 512)
-  Covered methods: 502
-  Total methods: 512
+  Coverable lines: 6963
+  Total lines: 18344
+  Branch coverage: 94.4% (2606 of 2758)
+  Covered branches: 2606
+  Total branches: 2758
+  Method coverage: 98% (504 of 514)
+  Covered methods: 504
+  Total methods: 514
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -151,6 +151,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.InsertInterval.InsertIntervalIterative                                                                               100.0%
   LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSet                                                               100.0%
   LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSetIntersectWith                                                  100.0%
+  LeetCode.Algorithms.IntersectionOfTwoLinkedLists.IntersectionOfTwoLinkedListsBruteForce                                                  100.0%
+  LeetCode.Algorithms.IntersectionOfTwoLinkedLists.IntersectionOfTwoLinkedListsTwoPointers                                                 100.0%
   LeetCode.Algorithms.IslandPerimeter.IslandPerimeterIterative                                                                             100.0%
   LeetCode.Algorithms.IsomorphicStrings.IsomorphicStringsDictionary                                                                        100.0%
   LeetCode.Algorithms.IsomorphicStrings.IsomorphicStringsTwoDictionaries                                                                   100.0%
