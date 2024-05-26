@@ -1,21 +1,21 @@
 Summary
-  Generated on: 05/25/2024 - 15:47:04
-  Coverage date: 05/25/2024 - 15:46:30 - 05/25/2024 - 15:46:37
+  Generated on: 05/26/2024 - 10:00:42
+  Coverage date: 05/26/2024 - 10:00:09 - 05/26/2024 - 10:00:17
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 368
-  Files: 368
-  Line coverage: 97.1%
-  Covered lines: 6704
+  Classes: 372
+  Files: 372
+  Line coverage: 97.2%
+  Covered lines: 6743
   Uncovered lines: 194
-  Coverable lines: 6898
-  Total lines: 18105
-  Branch coverage: 94.5% (2586 of 2736)
-  Covered branches: 2586
-  Total branches: 2736
-  Method coverage: 98% (497 of 507)
-  Covered methods: 497
-  Total methods: 507
+  Coverable lines: 6937
+  Total lines: 18255
+  Branch coverage: 94.5% (2596 of 2746)
+  Covered branches: 2596
+  Total branches: 2746
+  Method coverage: 98% (502 of 512)
+  Covered methods: 502
+  Total methods: 512
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -235,6 +235,10 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsGroupBy                                                                           100.0%
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsIterative                                                                         100.0%
   LeetCode.Algorithms.NumberOfIslands.NumberOfIslandsIterative                                                                             100.0%
+  LeetCode.Algorithms.NumberOfOneBits.NumberOfOneBitsBitwise                                                                               100.0%
+  LeetCode.Algorithms.NumberOfOneBits.NumberOfOneBitsBrianKernighan                                                                        100.0%
+  LeetCode.Algorithms.NumberOfOneBits.NumberOfOneBitsLookup                                                                                100.0%
+  LeetCode.Algorithms.NumberOfOneBits.NumberOfOneBitsString                                                                                100.0%
   LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroBitwise                                           100.0%
   LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroIterative                                         100.0%
   LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch.NumberOfStudentsUnableToEatLunchIterative                                           100.0%
