@@ -169,6 +169,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/description/)
 - [1528. Shuffle String](https://leetcode.com/problems/shuffle-string/description/)
 - [1544. Make The String Great](https://leetcode.com/problems/make-the-string-great/description/)
+- [1608. Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/description/)
 - [1609. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/description/)
 - [1614. Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/description/)
 - [1630. Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/description/)
