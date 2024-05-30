@@ -9,26 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Core.Models;
+using LeetCode.Algorithms.CountCompleteTreeNodes;
 
-namespace LeetCode.Algorithms.CountCompleteTreeNodes;
+namespace LeetCode.Tests.Algorithms.CountCompleteTreeNodes;
 
-/// <inheritdoc />
-public class CountCompleteTreeNodesRecursive : ICountCompleteTreeNodes
-{
-    /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(log n) for a balanced tree, O(n) for a skewed tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
-    public int CountNodes(TreeNode? root)
-    {
-        if (root == null)
-        {
-            return 0;
-        }
-
-        return CountNodes(root.left) + CountNodes(root.right) + 1;
-    }
-}
+[TestClass]
+public class CountCompleteTreeNodesDepthRecursiveTests :
+    CountCompleteTreeNodesTestsBase<CountCompleteTreeNodesDepthRecursive>;

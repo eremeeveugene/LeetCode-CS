@@ -14,10 +14,10 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.CountCompleteTreeNodes;
 
 /// <inheritdoc />
-public class CountCompleteTreeNodesRecursive : ICountCompleteTreeNodes
+public class CountCompleteTreeNodesDepthRecursive : ICountCompleteTreeNodes
 {
     /// <summary>
-    ///     Time complexity - O(n)
+    ///     Time complexity - O(log n)
     ///     Space complexity - O(log n) for a balanced tree, O(n) for a skewed tree
     /// </summary>
     /// <param name="root"></param>
@@ -29,6 +29,28 @@ public class CountCompleteTreeNodesRecursive : ICountCompleteTreeNodes
             return 0;
         }
 
+        var leftDepth = GetDepth(root, true);
+        var rightDepth = GetDepth(root, false);
+
+        if (leftDepth == rightDepth)
+        {
+            return (1 << leftDepth) - 1;
+        }
+
         return CountNodes(root.left) + CountNodes(root.right) + 1;
+    }
+
+    private static int GetDepth(TreeNode? node, bool left)
+    {
+        var depth = 0;
+
+        while (node != null)
+        {
+            depth++;
+
+            node = left ? node.left : node.right;
+        }
+
+        return depth;
     }
 }
