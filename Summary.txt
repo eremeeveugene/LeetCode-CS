@@ -1,21 +1,21 @@
 Summary
-  Generated on: 06/01/2024 - 07:13:39
-  Coverage date: 06/01/2024 - 07:13:05 - 06/01/2024 - 07:13:12
+  Generated on: 06/01/2024 - 08:07:15
+  Coverage date: 06/01/2024 - 08:06:41 - 06/01/2024 - 08:06:50
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 381
-  Files: 381
+  Classes: 382
+  Files: 382
   Line coverage: 97.2%
-  Covered lines: 6859
+  Covered lines: 6872
   Uncovered lines: 195
-  Coverable lines: 7054
-  Total lines: 18642
-  Branch coverage: 94.5% (2637 of 2790)
-  Covered branches: 2637
-  Total branches: 2790
-  Method coverage: 98% (512 of 522)
-  Covered methods: 512
-  Total methods: 522
+  Coverable lines: 7067
+  Total lines: 18682
+  Branch coverage: 94.5% (2641 of 2794)
+  Covered branches: 2641
+  Total branches: 2794
+  Method coverage: 98% (513 of 523)
+  Covered methods: 513
+  Total methods: 523
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -194,6 +194,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses.MaximumNestingDepthOfTheParenthesesIterative                                     100.0%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinq                                        100.0%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinqSplit                                   100.0%
+  LeetCode.Algorithms.MaximumNumberOfWordsYouCanType.MaximumNumberOfWordsYouCanTypeHashSet                                                 100.0%
   LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStringBuilder                                                           100.0%
   LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStrings                                                                 100.0%
   LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysBinarySearch                                                           86.5%
