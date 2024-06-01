@@ -1,21 +1,21 @@
 Summary
-  Generated on: 05/30/2024 - 13:42:38
-  Coverage date: 05/30/2024 - 13:42:06 - 05/30/2024 - 13:42:12
+  Generated on: 06/01/2024 - 07:13:39
+  Coverage date: 06/01/2024 - 07:13:05 - 06/01/2024 - 07:13:12
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 380
-  Files: 380
+  Classes: 381
+  Files: 381
   Line coverage: 97.2%
-  Covered lines: 6851
+  Covered lines: 6859
   Uncovered lines: 195
-  Coverable lines: 7046
-  Total lines: 18608
-  Branch coverage: 94.5% (2635 of 2788)
-  Covered branches: 2635
-  Total branches: 2788
-  Method coverage: 98% (511 of 521)
-  Covered methods: 511
-  Total methods: 521
+  Coverable lines: 7054
+  Total lines: 18642
+  Branch coverage: 94.5% (2637 of 2790)
+  Covered branches: 2637
+  Total branches: 2790
+  Method coverage: 98% (512 of 522)
+  Covered methods: 512
+  Total methods: 522
 
 LeetCode                                                                                                                                    97.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -319,6 +319,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RunningSumOf1dArray.RunningSumOf1dArrayIterative                                                                      80.0%
   LeetCode.Algorithms.SameTree.SameTreeRecursive                                                                                           100.0%
   LeetCode.Algorithms.ScoreAfterFlippingMatrix.ScoreAfterFlippingMatrixIterative                                                           100.0%
+  LeetCode.Algorithms.ScoreOfString.ScoreOfStringIterative                                                                                 100.0%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionBinarySearch                                                                100.0%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionIterative                                                                   100.0%
   LeetCode.Algorithms.ShuffleString.ShuffleStringIterative                                                                                 100.0%
