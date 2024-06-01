@@ -236,6 +236,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3005. Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/)
 - [3068. Find the Maximum Sum of Node Values](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/description/)
 - [3075. Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/description/)
+- [3110. Score of a String](https://leetcode.com/problems/score-of-a-string/description/)
 
   </p>
 </details>
