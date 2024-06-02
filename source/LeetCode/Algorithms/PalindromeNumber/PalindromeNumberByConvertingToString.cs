@@ -29,7 +29,10 @@ public class PalindromeNumberByConvertingToString : IPalindromeNumber
                 return true;
         }
 
-        if (x % 10 == 0) return false;
+        if (x % 10 == 0)
+        {
+            return false;
+        }
 
         var xString = x.ToString();
         var i = 0;
