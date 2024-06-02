@@ -36,6 +36,22 @@ public class RemoveDuplicatesFromSortedListIterativeReverse : IRemoveDuplicatesF
             head = head.next;
         }
 
-        return ListNode.Reverse(result);
+        return Reverse(result);
+    }
+
+    public static ListNode? Reverse(ListNode? head)
+    {
+        ListNode? prev = null;
+        var current = head;
+
+        while (current != null)
+        {
+            var next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+
+        return prev;
     }
 }

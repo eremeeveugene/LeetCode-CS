@@ -10,7 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList;
-using LeetCode.Core.Extensions;
+using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList;
@@ -27,8 +27,8 @@ public abstract class RemoveZeroSumConsecutiveNodesFromLinkedListTestsBase<T>
         // Arrange
         var solution = new T();
 
-        var head = headArray.ToListNode();
-        var expectedResult = expectedResultArray.ToListNode();
+        var head = ListNode.ToListNode(headArray);
+        var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         // Act
         var actualResult = solution.RemoveZeroSumSublists(head);

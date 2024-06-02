@@ -10,7 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.AddTwoNumbers;
-using LeetCode.Core.Extensions;
+using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.AddTwoNumbers;
@@ -26,10 +26,10 @@ public abstract class AddTwoNumbersTestsBase<T> where T : IAddTwoNumbers, new()
         int[] expectedResultArray)
     {
         // Arrange
-        var list1 = array1.ToListNode();
-        var list2 = array2.ToListNode();
+        var list1 = ListNode.ToListNode(array1);
+        var list2 = ListNode.ToListNode(array2);
 
-        var expectedResult = expectedResultArray.ToListNode();
+        var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();
 

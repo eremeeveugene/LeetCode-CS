@@ -10,7 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LinkedListCycle;
-using LeetCode.Core.Extensions;
+using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.LinkedListCycle;
 
@@ -30,7 +30,7 @@ public abstract class LinkedListCycleTestsBase<T> where T : ILinkedListCycle, ne
         bool expectedResult)
     {
         // Arrange
-        var head = headArray.ToCycledListNode(pos);
+        var head = ListNode.ToCycledListNode(headArray, pos);
 
         var solution = new T();
 

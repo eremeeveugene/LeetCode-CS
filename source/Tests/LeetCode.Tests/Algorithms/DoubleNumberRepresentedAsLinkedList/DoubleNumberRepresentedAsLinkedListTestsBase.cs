@@ -10,7 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList;
-using LeetCode.Core.Extensions;
+using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.DoubleNumberRepresentedAsLinkedList;
@@ -24,9 +24,9 @@ public abstract class DoubleNumberRepresentedAsLinkedListTestsBase<T>
     public void ListNode_DoubleIt_GivenListNode_ReturnsDoubledValuesListNode(int[] headArray, int[] expectedResultArray)
     {
         // Arrange
-        var head = headArray.ToListNode();
+        var head = ListNode.ToListNode(headArray);
 
-        var expectedResult = expectedResultArray.ToListNode();
+        var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();
 

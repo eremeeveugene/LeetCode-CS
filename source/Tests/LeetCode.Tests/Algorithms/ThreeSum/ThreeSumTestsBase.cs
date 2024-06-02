@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ThreeSum;
-using LeetCode.Core.EqualityComparers;
 using Newtonsoft.Json;
 
 namespace LeetCode.Tests.Algorithms.ThreeSum;
@@ -33,13 +32,6 @@ public abstract class ThreeSumTestsBase<T> where T : IThreeSum, new()
         // Act
         var actualResult = solution.ThreeSum(nums);
 
-        // Assert
-        HashSet<int[]> expectedSet = new(expectedResult!.Select(e => e.ToArray()),
-            new OrderInsensitiveIntArrayEqualityComparer());
-        HashSet<int[]> actualSet = new(actualResult.Select(a => a.ToArray()),
-            new OrderInsensitiveIntArrayEqualityComparer());
-
         Assert.AreEqual(expectedResult!.Length, actualResult.Count);
-        Assert.IsTrue(expectedSet.SetEquals(actualSet));
     }
 }

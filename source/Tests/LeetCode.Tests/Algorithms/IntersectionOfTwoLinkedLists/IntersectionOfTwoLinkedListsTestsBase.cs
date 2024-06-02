@@ -10,7 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.IntersectionOfTwoLinkedLists;
-using LeetCode.Core.Extensions;
+using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.IntersectionOfTwoLinkedLists;
@@ -31,23 +31,23 @@ public abstract class IntersectionOfTwoLinkedListsTestsBase<T> where T : IInters
         int[] intersectArray, int[] expectedResultArray)
     {
         // Arrange
-        var intersect = intersectArray.ToListNode();
+        var intersect = ListNode.ToListNode(intersectArray);
 
-        var headA = aHeadArray.ToListNode();
+        var headA = ListNode.ToListNode(aHeadArray);
 
         if (headA != null)
         {
             headA.next = intersect;
         }
 
-        var headB = bHeadArray.ToListNode();
+        var headB = ListNode.ToListNode(bHeadArray);
 
         if (headB != null)
         {
             headB.next = intersect;
         }
 
-        var expectedResult = expectedResultArray.ToListNode();
+        var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();
 

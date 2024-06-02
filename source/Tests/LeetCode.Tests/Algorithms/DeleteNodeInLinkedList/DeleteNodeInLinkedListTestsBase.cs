@@ -10,7 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DeleteNodeInLinkedList;
-using LeetCode.Core.Extensions;
+using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.DeleteNodeInLinkedList;
@@ -25,8 +25,8 @@ public abstract class DeleteNodeInLinkedListTestsBase<T> where T : IDeleteNodeIn
         int[] expectedResultArray)
     {
         // Arrange
-        var actualResult = actualResultArray.ToListNode();
-        var expectedResult = expectedResultArray.ToListNode();
+        var actualResult = ListNode.ToListNode(actualResultArray);
+        var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();
 
