@@ -18,6 +18,7 @@ namespace LeetCode.Tests.Algorithms.FindBottomLeftTreeValue;
 public abstract class FindBottomLeftTreeValueTestsBase<T> where T : IFindBottomLeftTreeValue, new()
 {
     [TestMethod]
+    [DataRow("[]", 0)]
     [DataRow("[2,1,3]", 1)]
     [DataRow("[1,2,3,4,null,5,6,null,null,7]", 7)]
     [DataRow("[1,null,1]", 1)]
@@ -26,7 +27,7 @@ public abstract class FindBottomLeftTreeValueTestsBase<T> where T : IFindBottomL
         int expectedResult)
     {
         // Arrange
-        IList<int?> arrayRoot = JsonConvertHelper<int?>.JsonArrayToList(jsonArrayRoot);
+        IList<int?> arrayRoot = JsonHelper<int?>.JsonArrayToList(jsonArrayRoot);
         var root = TreeNode.BuildTree(arrayRoot);
 
         var solution = new T();

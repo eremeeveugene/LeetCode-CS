@@ -10,7 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RemoveNodesFromLinkedList;
-using LeetCode.Core.Extensions;
+using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.RemoveNodesFromLinkedList;
@@ -28,9 +28,9 @@ public abstract class RemoveNodesFromLinkedListTestsBase<T> where T : IRemoveNod
     public void RemoveNodes_WithVariousLists_RemovesExpectedNodes(int[] headArray, int[] expectedResultArray)
     {
         // Arrange
-        var head = headArray.ToListNode();
+        var head = ListNode.ToListNode(headArray);
 
-        var expectedResult = expectedResultArray.ToListNode();
+        var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();
 
@@ -38,6 +38,6 @@ public abstract class RemoveNodesFromLinkedListTestsBase<T> where T : IRemoveNod
         var actualResult = solution.RemoveNodes(head);
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
+        ListNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

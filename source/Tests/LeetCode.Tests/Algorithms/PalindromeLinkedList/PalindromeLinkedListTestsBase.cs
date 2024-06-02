@@ -10,7 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.PalindromeLinkedList;
-using LeetCode.Core.Extensions;
+using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.PalindromeLinkedList;
 
@@ -19,10 +19,21 @@ public abstract class PalindromeLinkedListTestsBase<T> where T : IPalindromeLink
     [TestMethod]
     [DataRow(new[] { 1, 2, 2, 1 }, true)]
     [DataRow(new[] { 1, 2 }, false)]
+    [DataRow(new[] { 1 }, true)]
+    [DataRow(new[] { 1, 1 }, true)]
+    [DataRow(new[] { 1, 2, 3, 2, 1 }, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, false)]
+    [DataRow(new[] { 1, 0, 1 }, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 3, 2, 1 }, true)]
+    [DataRow(new[] { 1, 2, 3, 3, 2, 1 }, true)]
+    [DataRow(new[] { 1, 2, 2, 3 }, false)]
+    [DataRow(new[] { -1, -2, -2, -1 }, true)]
+    [DataRow(new[] { 0, 0, 0, 0 }, true)]
+    [DataRow(new[] { 1, 2, 1, 2 }, false)]
     public void IsPalindrome_LinkedList_ReturnsTrueIfPalindromeFalseOtherwise(int[] headArray, bool expectedResult)
     {
         // Arrange
-        var head = headArray.ToListNode();
+        var head = ListNode.ToListNode(headArray);
 
         var solution = new T();
 

@@ -21,6 +21,9 @@ public abstract class CheckIfTwoStringArraysAreEquivalentTestsBase<T>
     [DataRow(new[] { "a", "cb" }, new[] { "ab", "c" }, false)]
     [DataRow(new[] { "abc", "d", "defg" }, new[] { "abcddefg" }, true)]
     [DataRow(new[] { "ecxarwyyy", "ppf", "tdyayjd" }, new[] { "ecxarwyyyppft", "dyayj", "q" }, false)]
+    [DataRow(new[] { "a", "b", "c" }, new[] { "abc" }, true)]
+    [DataRow(new[] { "abc" }, new[] { "a", "b", "c" }, true)]
+    [DataRow(new[] { "abc" }, new[] { "ab", "d" }, false)]
     public void ArrayStringsAreEqual_GivenTwoStringArrays_ReturnsBooleanIndicatingEquality(string[] word1,
         string[] word2, bool expectedResult)
     {

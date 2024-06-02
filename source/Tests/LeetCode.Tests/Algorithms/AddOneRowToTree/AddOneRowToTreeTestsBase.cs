@@ -19,6 +19,7 @@ namespace LeetCode.Tests.Algorithms.AddOneRowToTree;
 public abstract class AddOneRowToTreeTestsBase<T> where T : IAddOneRowToTree, new()
 {
     [TestMethod]
+    [DataRow("[]", 0, 0, "[]")]
     [DataRow("[4,2,6,3,1,5]", 1, 2, "[4,1,1,2,null,null,6,3,1,5]")]
     [DataRow("[4,2,null,3,1]", 1, 3, "[4,2,null,1,1,3,null,null,1]")]
     [DataRow("[1,2,3,4,null,null,4,null,null,8,null,null,9]", 100, 1,
@@ -43,10 +44,10 @@ public abstract class AddOneRowToTreeTestsBase<T> where T : IAddOneRowToTree, ne
         int val, int depth, string expectedResultJsonArray)
     {
         // Arrange
-        var rootArray = JsonConvertHelper<int?>.JsonArrayToList(rootJsonArray);
+        var rootArray = JsonHelper<int?>.JsonArrayToList(rootJsonArray);
         var root = TreeNode.BuildTree(rootArray);
 
-        var expectedResultArray = JsonConvertHelper<int?>.JsonArrayToList(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int?>.JsonArrayToList(expectedResultJsonArray);
         var expectedResult = TreeNode.BuildTree(expectedResultArray);
 
         var solution = new T();
@@ -55,6 +56,6 @@ public abstract class AddOneRowToTreeTestsBase<T> where T : IAddOneRowToTree, ne
         var actualResult = solution.AddOneRow(root, val, depth);
 
         // Assert
-        TreeNodeAssertExtensions.AreEqual(expectedResult, actualResult);
+        TreeNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

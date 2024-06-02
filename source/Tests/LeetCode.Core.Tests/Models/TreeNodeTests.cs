@@ -9,29 +9,36 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.Permutations;
-using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Extensions;
+using LeetCode.Core.Models;
 
-namespace LeetCode.Tests.Algorithms.Permutations;
+namespace LeetCode.Core.Tests.Models;
 
-public abstract class PermutationsTestsBase<T> where T : IPermutations, new()
+[TestClass]
+public class TreeNodeTests
 {
     [TestMethod]
-    [DataRow(new[] { 0 }, "[[0]]")]
-    [DataRow(new[] { 0, 1 }, "[[0,1],[1,0]]")]
-    [DataRow(new[] { 0, 1, 2 }, "[[1,2,0],[1,0,2],[2,1,0],[2,0,1],[0,1,2],[0,2,1]]")]
-    public void Permute_WithDifferentArraySizes_ReturnsAllPermutations(int[] nums, string expectedResultJsonArray)
+    public void TreeNode_DefaultConstructor_SetsValToZero()
     {
-        // Arrange
-        var solution = new T();
-
-        var expectedResult = JsonHelper<int>.JsonArrayToJaggedList(expectedResultJsonArray);
-
         // Act
-        var actualResult = solution.Permute(nums);
+        var result = new TreeNode();
 
         // Assert
-        JaggedListAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreEqual(0, result.val);
+        Assert.IsNull(result.left);
+        Assert.IsNull(result.right);
+    }
+
+    [TestMethod]
+    public void TreeNode_ParameterizedConstructor_SetsProperties()
+    {
+        // Act
+        var leftNode = new TreeNode(1);
+        var rightNode = new TreeNode(2);
+        var result = new TreeNode(3, leftNode, rightNode);
+
+        // Assert
+        Assert.AreEqual(3, result.val);
+        Assert.AreEqual(leftNode, result.left);
+        Assert.AreEqual(rightNode, result.right);
     }
 }

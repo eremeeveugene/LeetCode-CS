@@ -23,6 +23,11 @@ public class MinimumHeightTreesBreadthFirstSearch : IMinimumHeightTrees
     /// <returns></returns>
     public IList<int> FindMinHeightTrees(int n, int[][] edges)
     {
+        if (n == 1)
+        {
+            return new List<int> { 0 };
+        }
+
         var nodesDictionary = GetNodesDictionary(edges);
 
         var maxNodeDepths = GetMaxNodeDepth(nodesDictionary);

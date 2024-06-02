@@ -10,7 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RemoveNthNodeFromEndOfList;
-using LeetCode.Core.Extensions;
+using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.RemoveNthNodeFromEndOfList;
@@ -26,9 +26,9 @@ public abstract class RemoveNthNodeFromEndOfListTestsBase<T> where T : IRemoveNt
         int[] expectedResultArray)
     {
         // Arrange
-        var head = headArray.ToListNode();
+        var head = ListNode.ToListNode(headArray);
 
-        var expectedResult = expectedResultArray.ToListNode();
+        var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();
 
@@ -36,6 +36,6 @@ public abstract class RemoveNthNodeFromEndOfListTestsBase<T> where T : IRemoveNt
         var actualResult = solution.RemoveNthFromEnd(head, n);
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
+        ListNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

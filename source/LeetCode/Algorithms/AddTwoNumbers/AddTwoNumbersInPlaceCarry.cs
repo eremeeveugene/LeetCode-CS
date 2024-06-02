@@ -55,6 +55,22 @@ public class AddTwoNumbersInPlaceCarry : IAddTwoNumbers
             head = new ListNode(1, head);
         }
 
-        return ListNode.Reverse(head);
+        return Reverse(head);
+    }
+
+    public static ListNode? Reverse(ListNode? head)
+    {
+        ListNode? prev = null;
+        var current = head;
+
+        while (current != null)
+        {
+            var next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+
+        return prev;
     }
 }

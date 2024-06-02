@@ -27,7 +27,7 @@ public abstract class MaximalRectangleTestsBase<T> where T : IMaximalRectangle, 
         // Arrange
         var solution = new T();
 
-        var matrix = JsonConvertHelper<char>.JsonArrayToJaggedArray(matrixJsonArray);
+        var matrix = JsonHelper<char>.JsonArrayToJaggedArray(matrixJsonArray);
 
         // Act
         var actualResult = solution.MaximalRectangle(matrix);

@@ -26,7 +26,7 @@ public abstract class MinimumNumberOfArrowsToBurstBalloonsTestsBase<T>
         int expectedResult)
     {
         // Arrange
-        var points = JsonConvertHelper<int>.JsonArrayToJaggedArray(pointsJsonArray);
+        var points = JsonHelper<int>.JsonArrayToJaggedArray(pointsJsonArray);
 
         var solution = new T();
 

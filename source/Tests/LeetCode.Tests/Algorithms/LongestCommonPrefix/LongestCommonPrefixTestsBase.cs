@@ -20,6 +20,16 @@ public abstract class LongestCommonPrefixTestsBase<T> where T : ILongestCommonPr
     [DataRow(new[] { "dog", "racecar", "car" }, "")]
     [DataRow(new[] { "flower", "flow", "flight" }, "fl")]
     [DataRow(new[] { "flower", "flower", "flower", "flower" }, "flower")]
+    [DataRow(new[] { "interview", "interrupt", "integrate", "integral" }, "inte")]
+    [DataRow(new[] { "interspecies", "interstellar", "interstate" }, "inters")]
+    [DataRow(new[] { "throne", "throne" }, "throne")]
+    [DataRow(new[] { "throne", "throne", "thro" }, "thro")]
+    [DataRow(new[] { "a", "b" }, "")]
+    [DataRow(new[] { "a" }, "a")]
+    [DataRow(new[] { "abcd" }, "abcd")]
+    [DataRow(new[] { "prefix", "pretext", "preference", "pre" }, "pre")]
+    [DataRow(new[] { "ab", "ab", "abc" }, "ab")]
+    [DataRow(new[] { "longest", "longer", "long", "longing" }, "long")]
     public void LongestCommonPrefix_GivenStringsArray_ReturnsCorrectCommonPrefix(string[] strs, string expectedResult)
     {
         // Arrange

@@ -24,7 +24,7 @@ public abstract class MinimumFallingPathSum2TestsBase<T> where T : IMinimumFalli
         // Arrange
         var solution = new T();
 
-        var grid = JsonConvertHelper<int>.JsonArrayToJaggedArray(gridJsonArray);
+        var grid = JsonHelper<int>.JsonArrayToJaggedArray(gridJsonArray);
 
         // Act
         var actualResult = solution.MinFallingPathSum(grid);

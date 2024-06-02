@@ -28,8 +28,8 @@ public abstract class InsertIntervalTestsBase<T> where T : IInsertInterval, new(
         int[] newInterval, string expectedResultJsonArray)
     {
         // Arrange
-        var intervals = JsonConvertHelper<int>.JsonArrayToJaggedArray(intervalsJsonArray);
-        var expectedResult = JsonConvertHelper<int>.JsonArrayToJaggedArray(expectedResultJsonArray);
+        var intervals = JsonHelper<int>.JsonArrayToJaggedArray(intervalsJsonArray);
+        var expectedResult = JsonHelper<int>.JsonArrayToJaggedArray(expectedResultJsonArray);
 
         var solution = new T();
 
@@ -37,6 +37,6 @@ public abstract class InsertIntervalTestsBase<T> where T : IInsertInterval, new(
         var actualResult = solution.Insert(intervals, newInterval);
 
         // Assert
-        AssertExtensions.AssertJaggedArrayEqual(expectedResult, actualResult);
+        JaggedArrayAssert.ArrayEqual(expectedResult, actualResult);
     }
 }

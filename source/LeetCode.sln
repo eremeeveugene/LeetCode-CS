@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCode.Core.Tests", "Test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCode.Tests", "Tests\LeetCode.Tests\LeetCode.Tests.csproj", "{E45FB1CF-8EFE-4F36-BEC3-DE009DFE8204}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Tests.Base", "LeetCode.Tests.Base\LeetCode.Tests.Base.csproj", "{222A4355-E36D-4252-A2CC-41E41A407DFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCode.Tests.Base", "Tests\LeetCode.Tests.Base\LeetCode.Tests.Base.csproj", "{1DF915D3-C3D1-41A6-A880-36AA25180447}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +37,10 @@ Global
 		{E45FB1CF-8EFE-4F36-BEC3-DE009DFE8204}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E45FB1CF-8EFE-4F36-BEC3-DE009DFE8204}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E45FB1CF-8EFE-4F36-BEC3-DE009DFE8204}.Release|Any CPU.Build.0 = Release|Any CPU
-		{222A4355-E36D-4252-A2CC-41E41A407DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{222A4355-E36D-4252-A2CC-41E41A407DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{222A4355-E36D-4252-A2CC-41E41A407DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{222A4355-E36D-4252-A2CC-41E41A407DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DF915D3-C3D1-41A6-A880-36AA25180447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF915D3-C3D1-41A6-A880-36AA25180447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF915D3-C3D1-41A6-A880-36AA25180447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DF915D3-C3D1-41A6-A880-36AA25180447}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,7 +48,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B88513BF-6B0E-4413-A0DD-B5E4B37BCB58} = {104AAE1C-88C3-4EC6-A1F9-E20C5BCF4468}
 		{E45FB1CF-8EFE-4F36-BEC3-DE009DFE8204} = {104AAE1C-88C3-4EC6-A1F9-E20C5BCF4468}
-		{222A4355-E36D-4252-A2CC-41E41A407DFC} = {104AAE1C-88C3-4EC6-A1F9-E20C5BCF4468}
+		{1DF915D3-C3D1-41A6-A880-36AA25180447} = {104AAE1C-88C3-4EC6-A1F9-E20C5BCF4468}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {870C967A-9232-4FC5-8D3A-BCB658F585EA}

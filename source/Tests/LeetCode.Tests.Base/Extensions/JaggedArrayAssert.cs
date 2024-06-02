@@ -9,9 +9,17 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.ThreeSum;
+namespace LeetCode.Tests.Base.Extensions;
 
-namespace LeetCode.Tests.Algorithms.ThreeSum;
+public static class JaggedArrayAssert
+{
+    public static void ArrayEqual<T>(T[][] expected, T[][] actual)
+    {
+        Assert.AreEqual(expected.Length, actual.Length, "The number of sub lists is different.");
 
-[TestClass]
-public class ThreeSumBruteForceTests : ThreeSumTestsBase<ThreeSumBruteForce>;
+        for (var i = 0; i < expected.Length; i++)
+        {
+            CollectionAssert.AreEqual(expected[i].ToArray(), actual[i].ToArray(), $"Sublist {i} is different.");
+        }
+    }
+}

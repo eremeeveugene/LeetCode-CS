@@ -31,7 +31,7 @@ public abstract class PathWithMaximumGoldTestsBase<T> where T : IPathWithMaximum
         // Arrange
         var solution = new T();
 
-        var grid = JsonConvertHelper<int>.JsonArrayToJaggedArray(gridJsonArray);
+        var grid = JsonHelper<int>.JsonArrayToJaggedArray(gridJsonArray);
 
         // Act
         var actualResult = solution.GetMaximumGold(grid);

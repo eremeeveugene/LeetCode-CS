@@ -10,7 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DeleteNodeInLinkedList;
-using LeetCode.Core.Extensions;
+using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.DeleteNodeInLinkedList;
@@ -18,14 +18,15 @@ namespace LeetCode.Tests.Algorithms.DeleteNodeInLinkedList;
 public abstract class DeleteNodeInLinkedListTestsBase<T> where T : IDeleteNodeInLinkedList, new()
 {
     [TestMethod]
+    [DataRow(new int[] { }, 0, new int[] { })]
     [DataRow(new[] { 4, 5, 1, 9 }, 5, new[] { 4, 1, 9 })]
     [DataRow(new[] { 4, 5, 1, 9 }, 1, new[] { 4, 5, 9 })]
     public void DeleteNode_WhenNodeExists_RemovesNodeFromList(int[] actualResultArray, int node,
         int[] expectedResultArray)
     {
         // Arrange
-        var actualResult = actualResultArray.ToListNode();
-        var expectedResult = expectedResultArray.ToListNode();
+        var actualResult = ListNode.ToListNode(actualResultArray);
+        var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();
 
@@ -45,6 +46,6 @@ public abstract class DeleteNodeInLinkedListTestsBase<T> where T : IDeleteNodeIn
         }
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
+        ListNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

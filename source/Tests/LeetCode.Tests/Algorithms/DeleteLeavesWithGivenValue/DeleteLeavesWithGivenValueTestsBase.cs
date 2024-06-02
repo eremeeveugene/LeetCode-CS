@@ -29,10 +29,10 @@ public abstract class DeleteLeavesWithGivenValueTestsBase<T> where T : IDeleteLe
         string expectedResultJsonArray)
     {
         // Arrange
-        IList<int?> rootArray = JsonConvertHelper<int?>.JsonArrayToList(rootJsonArray);
+        IList<int?> rootArray = JsonHelper<int?>.JsonArrayToList(rootJsonArray);
         var root = TreeNode.BuildTree(rootArray);
 
-        IList<int?> expectedResultArray = JsonConvertHelper<int?>.JsonArrayToList(expectedResultJsonArray);
+        IList<int?> expectedResultArray = JsonHelper<int?>.JsonArrayToList(expectedResultJsonArray);
         var expectedResult = TreeNode.BuildTree(expectedResultArray);
 
         var solution = new T();
@@ -41,6 +41,6 @@ public abstract class DeleteLeavesWithGivenValueTestsBase<T> where T : IDeleteLe
         var actualResult = solution.RemoveLeafNodes(root, target);
 
         // Assert
-        TreeNodeAssertExtensions.AreEqual(expectedResult, actualResult);
+        TreeNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

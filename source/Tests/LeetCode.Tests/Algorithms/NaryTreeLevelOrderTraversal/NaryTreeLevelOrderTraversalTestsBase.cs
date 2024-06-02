@@ -19,6 +19,7 @@ namespace LeetCode.Tests.Algorithms.NaryTreeLevelOrderTraversal;
 public abstract class NaryTreeLevelOrderTraversalTestsBase<T> where T : INaryTreeLevelOrderTraversal, new()
 {
     [TestMethod]
+    [DataRow("[]", "[]")]
     [DataRow("[1,null,3,2,4,null,5,6]", "[[1],[3,2,4],[5,6]]")]
     [DataRow("[1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]",
         "[[1],[2,3,4,5],[6,7,8,9,10],[11,12,13],[14]]")]
@@ -28,8 +29,8 @@ public abstract class NaryTreeLevelOrderTraversalTestsBase<T> where T : INaryTre
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonConvertHelper<int>.JsonArrayToJaggedList(expectedResultJsonArray);
-        var rootArray = JsonConvertHelper<int?>.JsonArrayToList(rootArrayJson);
+        var expectedResult = JsonHelper<int>.JsonArrayToJaggedList(expectedResultJsonArray);
+        var rootArray = JsonHelper<int?>.JsonArrayToList(rootArrayJson);
 
         var root = Node.BuildTree(rootArray);
 
@@ -37,6 +38,6 @@ public abstract class NaryTreeLevelOrderTraversalTestsBase<T> where T : INaryTre
         var actualResult = solution.LevelOrder(root);
 
         // Assert
-        AssertExtensions.AssertJaggedArrayEqual(expectedResult, actualResult);
+        JaggedListAssert.AreEqual(expectedResult, actualResult);
     }
 }

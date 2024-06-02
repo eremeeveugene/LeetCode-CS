@@ -25,8 +25,8 @@ public abstract class FloodFillTestsBase<T> where T : IFloodFill, new()
         int color, string expectedResultJsonArray)
     {
         // Arrange
-        var intervals = JsonConvertHelper<int>.JsonArrayToJaggedArray(imageJsonArray);
-        var expectedResult = JsonConvertHelper<int>.JsonArrayToJaggedArray(expectedResultJsonArray);
+        var intervals = JsonHelper<int>.JsonArrayToJaggedArray(imageJsonArray);
+        var expectedResult = JsonHelper<int>.JsonArrayToJaggedArray(expectedResultJsonArray);
 
         var solution = new T();
 
@@ -34,6 +34,6 @@ public abstract class FloodFillTestsBase<T> where T : IFloodFill, new()
         var actualResult = solution.FloodFill(intervals, sr, sc, color);
 
         // Assert
-        AssertExtensions.AssertJaggedArrayEqual(expectedResult, actualResult);
+        JaggedArrayAssert.ArrayEqual(expectedResult, actualResult);
     }
 }

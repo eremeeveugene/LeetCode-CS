@@ -30,27 +30,27 @@ public class PathSumBreadthFirstSearch : IPathSum
             return false;
         }
 
-        var queue = new Queue<NodeWithSum>();
+        var queue = new Queue<(TreeNode node, int sum)>();
 
-        queue.Enqueue(new NodeWithSum(root, root.val));
+        queue.Enqueue((root, root.val));
 
         while (queue.Count > 0)
         {
-            var current = queue.Dequeue();
+            var (currentNode, currentSum) = queue.Dequeue();
 
-            if (current.Node.left == null && current.Node.right == null && current.Sum == targetSum)
+            if (currentNode.left == null && currentNode.right == null && currentSum == targetSum)
             {
                 return true;
             }
 
-            if (current.Node.left != null)
+            if (currentNode.left != null)
             {
-                queue.Enqueue(new NodeWithSum(current.Node.left, current.Sum + current.Node.left.val));
+                queue.Enqueue((currentNode.left, currentSum + currentNode.left.val));
             }
 
-            if (current.Node.right != null)
+            if (currentNode.right != null)
             {
-                queue.Enqueue(new NodeWithSum(current.Node.right, current.Sum + current.Node.right.val));
+                queue.Enqueue((currentNode.right, currentSum + currentNode.right.val));
             }
         }
 

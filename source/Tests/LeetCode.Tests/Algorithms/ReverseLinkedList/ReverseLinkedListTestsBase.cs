@@ -10,7 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ReverseLinkedList;
-using LeetCode.Core.Extensions;
+using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ReverseLinkedList;
@@ -25,9 +25,9 @@ public abstract class ReverseLinkedListTestsBase<T> where T : IReverseLinkedList
         int[] expectedResultArray)
     {
         // Arrange
-        var head = headArray.ToListNode();
+        var head = ListNode.ToListNode(headArray);
 
-        var expectedResult = expectedResultArray.ToListNode();
+        var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();
 
@@ -35,6 +35,6 @@ public abstract class ReverseLinkedListTestsBase<T> where T : IReverseLinkedList
         var actualResult = solution.ReverseList(head);
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
+        ListNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

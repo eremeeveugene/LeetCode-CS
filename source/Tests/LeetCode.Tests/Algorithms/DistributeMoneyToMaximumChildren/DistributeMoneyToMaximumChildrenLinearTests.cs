@@ -14,6 +14,5 @@ using LeetCode.Algorithms.DistributeMoneyToMaximumChildren;
 namespace LeetCode.Tests.Algorithms.DistributeMoneyToMaximumChildren;
 
 [TestClass]
-public class
-    DistributeMoneyToMaximumChildrenLinearTests : DistributeMoneyToMaximumChildrenTestsBase<
+public class DistributeMoneyToMaximumChildrenLinearTests : DistributeMoneyToMaximumChildrenTestsBase<
     DistributeMoneyToMaximumChildrenLinear>;

@@ -9,10 +9,33 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Core.Models;
+using LeetCode.Core.Models;
 
-public class NodeWithSum(TreeNode node, int sum)
+namespace LeetCode.Core.Tests.Models;
+
+[TestClass]
+public class NodeTests
 {
-    public TreeNode Node { get; set; } = node;
-    public int Sum { get; set; } = sum;
+    [TestMethod]
+    public void Node_DefaultConstructor_SetsValToZero()
+    {
+        // Act
+        var result = new Node();
+
+        // Assert
+        Assert.AreEqual(0, result.val);
+        Assert.IsNull(result.children);
+    }
+
+    [TestMethod]
+    public void Node_ParameterizedConstructor_SetsProperties()
+    {
+        // Act
+        var children = new List<Node> { new(1), new(2) };
+        var result = new Node(3, children);
+
+        // Assert
+        Assert.AreEqual(3, result.val);
+        Assert.AreEqual(children, result.children);
+    }
 }

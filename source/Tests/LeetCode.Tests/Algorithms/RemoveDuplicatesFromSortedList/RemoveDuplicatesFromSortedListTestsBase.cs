@@ -10,7 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RemoveDuplicatesFromSortedList;
-using LeetCode.Core.Extensions;
+using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.RemoveDuplicatesFromSortedList;
@@ -27,13 +27,13 @@ public abstract class RemoveDuplicatesFromSortedListTestsBase<T> where T : IRemo
         // Arrange
         var solution = new T();
 
-        var head = headArray.ToListNode();
-        var expectedResult = expectedResultArray.ToListNode();
+        var head = ListNode.ToListNode(headArray);
+        var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         // Act
         var actualResult = solution.DeleteDuplicates(head);
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
+        ListNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

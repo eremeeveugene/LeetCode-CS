@@ -18,6 +18,7 @@ namespace LeetCode.Tests.Algorithms.DistributeCoinsInBinaryTree;
 public abstract class DistributeCoinsInBinaryTreeTestsBase<T> where T : IDistributeCoinsInBinaryTree, new()
 {
     [TestMethod]
+    [DataRow("[]", 0)]
     [DataRow("[1]", 0)]
     [DataRow(
         "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]",
@@ -34,7 +35,7 @@ public abstract class DistributeCoinsInBinaryTreeTestsBase<T> where T : IDistrib
         int expectedResult)
     {
         // Arrange
-        IList<int?> rootArray = JsonConvertHelper<int?>.JsonArrayToList(rootJsonArray);
+        IList<int?> rootArray = JsonHelper<int?>.JsonArrayToList(rootJsonArray);
         var root = TreeNode.BuildTree(rootArray);
 
         var solution = new T();

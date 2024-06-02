@@ -10,7 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ReorderList;
-using LeetCode.Core.Extensions;
+using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ReorderList;
@@ -23,9 +23,9 @@ public abstract class ReorderListTestsBase<T> where T : IReorderList, new()
     public void ReorderList_GivenHeadArray_ResultsInExpectedOrder(int[] headArray, int[] expectedResultArray)
     {
         // Arrange
-        var head = headArray.ToListNode();
+        var head = ListNode.ToListNode(headArray);
 
-        var expectedResult = expectedResultArray.ToListNode();
+        var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();
 
@@ -33,6 +33,6 @@ public abstract class ReorderListTestsBase<T> where T : IReorderList, new()
         solution.ReorderList(head);
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, head);
+        ListNodeAssert.AreEqual(expectedResult, head);
     }
 }

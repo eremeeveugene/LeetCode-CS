@@ -20,6 +20,17 @@ public abstract class DistributeMoneyToMaximumChildrenTestsBase<T> where T : IDi
     [DataRow(16, 2, 2)]
     [DataRow(4, 2, 0)]
     [DataRow(12, 3, 1)]
+    [DataRow(7, 1, 0)]
+    [DataRow(14, 2, 1)]
+    [DataRow(21, 3, 2)]
+    [DataRow(22, 3, 2)]
+    [DataRow(23, 3, 2)]
+    [DataRow(8, 2, 0)]
+    [DataRow(15, 2, 1)]
+    [DataRow(1, 2, -1)]
+    [DataRow(10, 5, 0)]
+    [DataRow(13, 2, 1)]
+    [DataRow(3, 5, -1)]
     public void DistMoney_WithVariousMoneyAndChildrenValues_ReturnsExpectedResults(int money, int children,
         int expectedResult)
     {

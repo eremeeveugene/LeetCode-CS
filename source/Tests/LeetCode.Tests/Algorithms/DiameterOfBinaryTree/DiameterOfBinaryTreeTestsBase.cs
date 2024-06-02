@@ -18,13 +18,14 @@ namespace LeetCode.Tests.Algorithms.DiameterOfBinaryTree;
 public abstract class DiameterOfBinaryTreeTestsBase<T> where T : IDiameterOfBinaryTree, new()
 {
     [TestMethod]
+    [DataRow("[]", 0)]
     [DataRow("[1,2,3,4,5]", 3)]
     [DataRow("[1,2]", 1)]
     public void DiameterOfBinaryTree_GivenJsonArrayRepresentation_ReturnsExpectedDiameter(string jsonArrayRoot,
         int expectedResult)
     {
         // Arrange
-        IList<int?> arrayRoot = JsonConvertHelper<int?>.JsonArrayToList(jsonArrayRoot);
+        IList<int?> arrayRoot = JsonHelper<int?>.JsonArrayToList(jsonArrayRoot);
         var root = TreeNode.BuildTree(arrayRoot);
 
         var solution = new T();

@@ -22,19 +22,42 @@ public class ListNode(int val = 0, ListNode? next = null)
 
     public int val = val;
 
-    public static ListNode? Reverse(ListNode? head)
+    public static ListNode? ToListNode(int[] array)
     {
-        ListNode? prev = null;
-        var current = head;
+        return array.Reverse().Aggregate<int, ListNode?>(null, (next, val) => new ListNode(val, next));
+    }
 
-        while (current != null)
+    public static ListNode? ToCycledListNode(int[] array, int cyclePosition)
+    {
+        var head = ToListNode(array);
+
+        if (head == null || cyclePosition < 0)
         {
-            var next = current.next;
-            current.next = prev;
-            prev = current;
-            current = next;
+            return head;
         }
 
-        return prev;
+        ListNode? lastNode = head, cycleNode = null;
+
+        for (var index = 0; lastNode.next != null; index++)
+        {
+            if (index == cyclePosition)
+            {
+                cycleNode = lastNode;
+            }
+
+            lastNode = lastNode.next;
+        }
+
+        if (cyclePosition == array.Length - 1)
+        {
+            cycleNode = lastNode;
+        }
+
+        if (cycleNode != null)
+        {
+            lastNode.next = cycleNode;
+        }
+
+        return head;
     }
 }
