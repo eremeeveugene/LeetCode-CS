@@ -9,25 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Core.Models;
-
 namespace LeetCode.Tests.Base.Extensions;
 
 public static class AssertExtensions
 {
-    public static void AreListNodesEqual(ListNode? expectedList, ListNode? actualList)
-    {
-        while (expectedList != null && actualList != null)
-        {
-            Assert.AreEqual(expectedList.val, actualList.val, "Values should be equal at each node.");
-            expectedList = expectedList.next;
-            actualList = actualList.next;
-        }
-
-        Assert.IsNull(expectedList, "Expected result should not have more nodes.");
-        Assert.IsNull(actualList, "Actual result should not have more nodes.");
-    }
-
     public static void AssertJaggedArrayEqual(IList<IList<int>> expected, IList<IList<int>> actual)
     {
         Assert.AreEqual(expected.Count, actual.Count, "The number of sub lists is different.");

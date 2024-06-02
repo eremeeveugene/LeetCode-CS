@@ -37,6 +37,6 @@ public abstract class MergeTwoSortedListsTestsBase<T> where T : IMergeTwoSortedL
         var actualResult = solution.MergeTwoLists(list1, list2);
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
+        ListNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

@@ -41,6 +41,6 @@ public abstract class DeleteLeavesWithGivenValueTestsBase<T> where T : IDeleteLe
         var actualResult = solution.RemoveLeafNodes(root, target);
 
         // Assert
-        TreeNodeAssertExtensions.AreEqual(expectedResult, actualResult);
+        TreeNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

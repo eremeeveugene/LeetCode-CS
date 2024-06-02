@@ -56,6 +56,6 @@ public abstract class AddOneRowToTreeTestsBase<T> where T : IAddOneRowToTree, ne
         var actualResult = solution.AddOneRow(root, val, depth);
 
         // Assert
-        TreeNodeAssertExtensions.AreEqual(expectedResult, actualResult);
+        TreeNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

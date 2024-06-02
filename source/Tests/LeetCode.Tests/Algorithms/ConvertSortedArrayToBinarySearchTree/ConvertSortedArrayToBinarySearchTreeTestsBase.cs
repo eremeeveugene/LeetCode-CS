@@ -34,6 +34,6 @@ public abstract class ConvertSortedArrayToBinarySearchTreeTestsBase<T>
         var actualResult = solution.SortedArrayToBST(nums);
 
         // Assert
-        TreeNodeAssertExtensions.AreEqual(expectedResult, actualResult);
+        TreeNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

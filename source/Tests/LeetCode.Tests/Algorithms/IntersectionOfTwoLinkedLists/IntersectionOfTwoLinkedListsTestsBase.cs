@@ -55,6 +55,6 @@ public abstract class IntersectionOfTwoLinkedListsTestsBase<T> where T : IInters
         var actualResult = solution.GetIntersectionNode(headA, headB);
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
+        ListNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

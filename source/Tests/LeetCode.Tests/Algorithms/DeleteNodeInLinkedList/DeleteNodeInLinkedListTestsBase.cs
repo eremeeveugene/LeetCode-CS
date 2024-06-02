@@ -46,6 +46,6 @@ public abstract class DeleteNodeInLinkedListTestsBase<T> where T : IDeleteNodeIn
         }
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
+        ListNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

@@ -9,31 +9,36 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList;
 using LeetCode.Core.Models;
-using LeetCode.Tests.Base.Extensions;
 
-namespace LeetCode.Tests.Algorithms.DoubleNumberRepresentedAsLinkedList;
+namespace LeetCode.Core.Tests.Models;
 
-public abstract class DoubleNumberRepresentedAsLinkedListTestsBase<T>
-    where T : IDoubleNumberRepresentedAsLinkedList, new()
+[TestClass]
+public class TreeNodeTests
 {
     [TestMethod]
-    [DataRow(new[] { 1, 8, 9 }, new[] { 3, 7, 8 })]
-    [DataRow(new[] { 9, 9, 9 }, new[] { 1, 9, 9, 8 })]
-    public void ListNode_DoubleIt_GivenListNode_ReturnsDoubledValuesListNode(int[] headArray, int[] expectedResultArray)
+    public void TreeNode_DefaultConstructor_SetsValToZero()
     {
-        // Arrange
-        var head = ListNode.ToListNode(headArray);
-
-        var expectedResult = ListNode.ToListNode(expectedResultArray);
-
-        var solution = new T();
-
         // Act
-        var actualResult = solution.DoubleIt(head);
+        var result = new TreeNode();
 
         // Assert
-        ListNodeAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEqual(0, result.val);
+        Assert.IsNull(result.left);
+        Assert.IsNull(result.right);
+    }
+
+    [TestMethod]
+    public void TreeNode_ParameterizedConstructor_SetsProperties()
+    {
+        // Act
+        var leftNode = new TreeNode(1);
+        var rightNode = new TreeNode(2);
+        var result = new TreeNode(3, leftNode, rightNode);
+
+        // Assert
+        Assert.AreEqual(3, result.val);
+        Assert.AreEqual(leftNode, result.left);
+        Assert.AreEqual(rightNode, result.right);
     }
 }

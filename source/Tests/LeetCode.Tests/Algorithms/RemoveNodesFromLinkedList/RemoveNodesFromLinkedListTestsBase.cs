@@ -38,6 +38,6 @@ public abstract class RemoveNodesFromLinkedListTestsBase<T> where T : IRemoveNod
         var actualResult = solution.RemoveNodes(head);
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
+        ListNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

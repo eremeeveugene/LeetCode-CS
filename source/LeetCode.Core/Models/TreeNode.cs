@@ -24,10 +24,6 @@ public class TreeNode(int? val = null, TreeNode? left = null, TreeNode? right = 
 
     public int val = val ?? 0;
 
-    public TreeNode() : this(0)
-    {
-    }
-
     public static TreeNode? BuildTree(IList<int?> values)
     {
         if (!values.Any() || values[0] == null)

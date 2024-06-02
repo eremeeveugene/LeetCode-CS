@@ -35,6 +35,6 @@ public abstract class ReverseLinkedListTestsBase<T> where T : IReverseLinkedList
         var actualResult = solution.ReverseList(head);
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
+        ListNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

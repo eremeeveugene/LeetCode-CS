@@ -27,6 +27,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\LeetCode.Core\LeetCode.Core.csproj" />
+    <ProjectReference Include="..\LeetCode.Tests.Base\LeetCode.Tests.Base.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
 </Project>

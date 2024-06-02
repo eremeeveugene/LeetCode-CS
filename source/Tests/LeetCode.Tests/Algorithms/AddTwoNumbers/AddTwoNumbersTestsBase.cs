@@ -37,6 +37,6 @@ public abstract class AddTwoNumbersTestsBase<T> where T : IAddTwoNumbers, new()
         var actualResult = solution.AddTwoNumbers(list1, list2);
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
+        ListNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

@@ -36,6 +36,6 @@ public abstract class RemoveNthNodeFromEndOfListTestsBase<T> where T : IRemoveNt
         var actualResult = solution.RemoveNthFromEnd(head, n);
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
+        ListNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

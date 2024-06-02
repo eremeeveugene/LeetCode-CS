@@ -34,6 +34,6 @@ public abstract class RemoveZeroSumConsecutiveNodesFromLinkedListTestsBase<T>
         var actualResult = solution.RemoveZeroSumSublists(head);
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
+        ListNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }

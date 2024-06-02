@@ -9,30 +9,22 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.ReorderList;
 using LeetCode.Core.Models;
-using LeetCode.Tests.Base.Extensions;
 
-namespace LeetCode.Tests.Algorithms.ReorderList;
+namespace LeetCode.Tests.Base.Extensions;
 
-public abstract class ReorderListTestsBase<T> where T : IReorderList, new()
+public static class ListNodeAssert
 {
-    [TestMethod]
-    [DataRow(new[] { 1, 2, 3, 4 }, new[] { 1, 4, 2, 3 })]
-    [DataRow(new[] { 1, 2, 3, 4, 5 }, new[] { 1, 5, 2, 4, 3 })]
-    public void ReorderList_GivenHeadArray_ResultsInExpectedOrder(int[] headArray, int[] expectedResultArray)
+    public static void AreEqual(ListNode? expectedList, ListNode? actualList)
     {
-        // Arrange
-        var head = ListNode.ToListNode(headArray);
+        while (expectedList != null && actualList != null)
+        {
+            Assert.AreEqual(expectedList.val, actualList.val, "Values should be equal at each node.");
+            expectedList = expectedList.next;
+            actualList = actualList.next;
+        }
 
-        var expectedResult = ListNode.ToListNode(expectedResultArray);
-
-        var solution = new T();
-
-        // Act
-        solution.ReorderList(head);
-
-        // Assert
-        ListNodeAssert.AreEqual(expectedResult, head);
+        Assert.IsNull(expectedList, "Expected result should not have more nodes.");
+        Assert.IsNull(actualList, "Actual result should not have more nodes.");
     }
 }

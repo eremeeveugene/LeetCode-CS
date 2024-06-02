@@ -34,6 +34,6 @@ public abstract class RemoveDuplicatesFromSortedListTestsBase<T> where T : IRemo
         var actualResult = solution.DeleteDuplicates(head);
 
         // Assert
-        AssertExtensions.AreListNodesEqual(expectedResult, actualResult);
+        ListNodeAssert.AreEqual(expectedResult, actualResult);
     }
 }
