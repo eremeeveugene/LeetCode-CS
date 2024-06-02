@@ -98,6 +98,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [338. Counting Bits](https://leetcode.com/problems/counting-bits/description/)
 - [342. Power of Four](https://leetcode.com/problems/power-of-four/description/)
 - [344. Reverse String](https://leetcode.com/problems/reverse-string/description/)
+- [345. Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/description/)
 - [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/)
 - [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)
 - [402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/)
