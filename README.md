@@ -9,6 +9,14 @@ TDD helps ensure that the code meets the expected outcomes and reduces bugs, mak
 
 [![.NET](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml/badge.svg)](https://github.com/eremeeveugene/leetcode)
 
+## Technologies Used
+
+- **.NET 8**: The latest version of the .NET framework for building and running applications.
+- **C#**: The programming language used to implement the solutions.
+- **MSTest**: A testing framework for .NET to write and run tests.
+- **Coverlet**: A code coverage library for .NET, used to collect coverage data and integrate with build tasks.
+- **ReportGenerator**: A tool to generate reports from the test coverage data.
+
 ## Solutions by Category
 
 Below are the LeetCode problems sorted by category. Click on the category names to explore the problems.
