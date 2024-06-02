@@ -19,6 +19,15 @@ public abstract class LongestPalindromicSubstringTestsBase<T> where T : ILongest
     [DataRow("babad", "aba")]
     [DataRow("cbbd", "bb")]
     [DataRow("babaddtattarrattatddetartrateedredividerb", "ddtattarrattatdd")]
+    [DataRow("a", "a")]
+    [DataRow("", "")]
+    [DataRow("ac", "c")]
+    [DataRow("racecar", "racecar")]
+    [DataRow("aa", "aa")]
+    [DataRow("abacdfgdcaba", "aba")]
+    [DataRow("bananas", "anana")]
+    [DataRow("forgeeksskeegfor", "geeksskeeg")]
+    [DataRow("aabb", "bb")]
     public void LongestPalindrome_GivenString_ReturnsLongestPalindromicSubstring(string s, string expectedResult)
     {
         // Arrange

@@ -17,9 +17,15 @@ namespace LeetCode.Tests.Algorithms.LinkedListCycle;
 public abstract class LinkedListCycleTestsBase<T> where T : ILinkedListCycle, new()
 {
     [TestMethod]
+    [DataRow(new int[] { }, -1, false)]
     [DataRow(new[] { 3, 2, 0, -4 }, 1, true)]
     [DataRow(new[] { 1, 2 }, 0, true)]
     [DataRow(new[] { 1 }, -1, false)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, -1, false)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 4, true)]
+    [DataRow(new[] { 1, 1, 1, 1, 1 }, 0, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, 2, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 0, true)]
     public void HasCycle_GivenLinkedList_ReturnsCorrectCycleDetectionOutcome(int[] headArray, int pos,
         bool expectedResult)
     {

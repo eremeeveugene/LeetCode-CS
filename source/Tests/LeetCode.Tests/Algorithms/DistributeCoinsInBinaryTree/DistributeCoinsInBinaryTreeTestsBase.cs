@@ -18,6 +18,7 @@ namespace LeetCode.Tests.Algorithms.DistributeCoinsInBinaryTree;
 public abstract class DistributeCoinsInBinaryTreeTestsBase<T> where T : IDistributeCoinsInBinaryTree, new()
 {
     [TestMethod]
+    [DataRow("[]", 0)]
     [DataRow("[1]", 0)]
     [DataRow(
         "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]",

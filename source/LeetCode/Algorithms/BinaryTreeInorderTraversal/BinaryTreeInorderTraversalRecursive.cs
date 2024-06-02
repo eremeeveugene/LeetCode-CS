@@ -35,13 +35,8 @@ public class BinaryTreeInorderTraversalRecursive : IBinaryTreeInorderTraversal
         return result;
     }
 
-    private static void InorderTraversal(TreeNode? treeNode, ICollection<int> result)
+    private static void InorderTraversal(TreeNode treeNode, ICollection<int> result)
     {
-        if (treeNode == null)
-        {
-            return;
-        }
-
         if (treeNode.left != null)
         {
             InorderTraversal(treeNode.left, result);

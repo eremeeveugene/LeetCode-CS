@@ -24,6 +24,14 @@ public abstract class MedianOfTwoSortedArraysTestsBase<T> where T : IMedianOfTwo
     [DataRow(new int[] { }, new[] { 1, 2, 3, 4, 5 }, 3)]
     [DataRow(new[] { 1000, 2000, 3000 }, new[] { 1500, 2500 }, 2000)]
     [DataRow(new[] { -5, -3, -1 }, new[] { -4, -2, 0 }, -2.5)]
+    [DataRow(new[] { 1 }, new[] { 2, 3, 4 }, 2.5)]
+    [DataRow(new[] { 1, 2 }, new[] { 3 }, 2)]
+    [DataRow(new[] { 1, 2, 3 }, new[] { 4, 5, 6, 7, 8 }, 4.5)]
+    [DataRow(new[] { 1, 3 }, new[] { 2, 4, 5 }, 3)]
+    [DataRow(new[] { 2 }, new[] { 1, 3, 4, 5 }, 3)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6 }, new[] { 7, 8, 9, 10 }, 5.5)]
+    [DataRow(new[] { -10, -5, 0, 5, 10 }, new[] { 1, 2, 3, 4 }, 2)]
+    [DataRow(new[] { int.MinValue, 0, int.MaxValue }, new[] { -1, 1 }, 0)]
     public void FindMedianSortedArrays_GivenTwoArrays_ReturnsCorrectMedianValue(int[] nums1, int[] nums2,
         double expectedResult)
     {

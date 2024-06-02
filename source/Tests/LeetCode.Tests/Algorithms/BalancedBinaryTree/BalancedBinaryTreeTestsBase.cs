@@ -18,9 +18,13 @@ namespace LeetCode.Tests.Algorithms.BalancedBinaryTree;
 public abstract class BalancedBinaryTreeTestsBase<T> where T : IBalancedBinaryTree, new()
 {
     [TestMethod]
+    [DataRow("[]", true)]
+    [DataRow("[1]", true)]
     [DataRow("[3,9,20,null,null,15,7]", true)]
     [DataRow("[1,2,2,3,3,null,null,4,4]", false)]
-    [DataRow("[]", true)]
+    [DataRow("[1,2,2,3,null,null,3,4,null,null,4]", false)]
+    [DataRow("[1,2,2,null,null,3,3,4,4]", false)]
+    [DataRow("[1,2,2,3,3,3,3]", true)]
     public void IsBalanced_TreeWithJsonInput_ReturnsExpectedBalancedStatus(string rootJsonArray, bool expectedResult)
     {
         // Arrange

@@ -23,6 +23,14 @@ public abstract class EvenOddTreeTestsBase<T> where T : IEvenOddTree, new()
     [DataRow("[1,10,4,3,null,7,9,12,8,6,null,null,2]", true)]
     [DataRow("[5,4,2,3,3,7]", false)]
     [DataRow("[5,9,1,3,5,7]", false)]
+    [DataRow("[1,2,3,4,5,6,7]", false)]
+    [DataRow("[1,10,4,3,null,7,9,12,8,6,null,null,3]", false)]
+    [DataRow("[1,3,2,4,5,6,7,8,9,10,11,12,13,14,15]", false)]
+    [DataRow("[1,10,4,3,2,7,9,12,8,6,null,null,2]", false)]
+    [DataRow("[5,10,4,3,null,7,9,12,8,6,2,1]", false)]
+    [DataRow("[5,10,4,3,null,7,9,12,8,6,2,0]", true)]
+    [DataRow("[1,10,4,3,2,7,9,12,8,6,null,null,2]", false)]
+    [DataRow("[1,3,2,6,4,6,4,12,8,6,null,null,2,1]", false)]
     public void IsEvenOddTree_GivenVariousTreeStructures_ReturnsExpectedBoolean(string jsonArrayRoot,
         bool expectedResult)
     {

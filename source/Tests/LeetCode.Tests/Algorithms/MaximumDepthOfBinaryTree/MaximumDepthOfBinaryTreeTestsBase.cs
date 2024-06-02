@@ -18,6 +18,7 @@ namespace LeetCode.Tests.Algorithms.MaximumDepthOfBinaryTree;
 public abstract class MaximumDepthOfBinaryTreeTestsBase<T> where T : IMaximumDepthOfBinaryTree, new()
 {
     [TestMethod]
+    [DataRow("[]", 0)]
     [DataRow("[3,9,20,null,null,15,7]", 3)]
     [DataRow("[1,null,2]", 2)]
     public void MaxDepth_GivenTreeWithDifferentConfigurations_ReturnsExpectedDepth(string rootArrayJson,

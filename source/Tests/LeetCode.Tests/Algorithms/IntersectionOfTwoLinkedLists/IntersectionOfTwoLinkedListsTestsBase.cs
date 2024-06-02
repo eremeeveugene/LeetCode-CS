@@ -21,6 +21,12 @@ public abstract class IntersectionOfTwoLinkedListsTestsBase<T> where T : IInters
     [DataRow(new[] { 4, 1 }, new[] { 5, 6, 1 }, new[] { 8, 4, 5 }, new[] { 8, 4, 5 })]
     [DataRow(new[] { 1, 9, 1 }, new[] { 3 }, new[] { 2, 4 }, new[] { 2, 4 })]
     [DataRow(new[] { 2, 6, 4 }, new[] { 1, 5 }, new int[] { }, new int[] { })]
+    [DataRow(new[] { 1, 2, 3 }, new[] { 4, 5 }, new[] { 6 }, new[] { 6 })]
+    [DataRow(new[] { 1 }, new[] { 2 }, new[] { 3, 4 }, new[] { 3, 4 })]
+    [DataRow(new int[] { }, new[] { 1, 2, 3 }, new int[] { }, new int[] { })]
+    [DataRow(new[] { 1, 2, 3 }, new int[] { }, new int[] { }, new int[] { })]
+    [DataRow(new int[] { }, new int[] { }, new int[] { }, new int[] { })]
+    [DataRow(new[] { 1, 2 }, new[] { 3, 4 }, new[] { 5, 6, 7 }, new[] { 5, 6, 7 })]
     public void GetIntersectionNode_WithTwoLinkedLists_ReturnsIntersectionNode(int[] aHeadArray, int[] bHeadArray,
         int[] intersectArray, int[] expectedResultArray)
     {

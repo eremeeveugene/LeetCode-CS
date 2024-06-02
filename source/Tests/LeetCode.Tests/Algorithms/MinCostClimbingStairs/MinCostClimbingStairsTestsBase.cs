@@ -16,6 +16,7 @@ namespace LeetCode.Tests.Algorithms.MinCostClimbingStairs;
 public abstract class MinCostClimbingStairsTestsBase<T> where T : IMinCostClimbingStairs, new()
 {
     [TestMethod]
+    [DataRow(new int[] { }, 0)]
     [DataRow(new[] { 10, 15, 20 }, 15)]
     [DataRow(new[] { 1, 100, 1, 1, 1, 100, 1, 1, 100, 1 }, 6)]
     [DataRow(new[] { 0, 0, 1, 2 }, 1)]

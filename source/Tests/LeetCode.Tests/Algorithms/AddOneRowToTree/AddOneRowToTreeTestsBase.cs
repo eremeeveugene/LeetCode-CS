@@ -19,6 +19,7 @@ namespace LeetCode.Tests.Algorithms.AddOneRowToTree;
 public abstract class AddOneRowToTreeTestsBase<T> where T : IAddOneRowToTree, new()
 {
     [TestMethod]
+    [DataRow("[]", 0, 0, "[]")]
     [DataRow("[4,2,6,3,1,5]", 1, 2, "[4,1,1,2,null,null,6,3,1,5]")]
     [DataRow("[4,2,null,3,1]", 1, 3, "[4,2,null,1,1,3,null,null,1]")]
     [DataRow("[1,2,3,4,null,null,4,null,null,8,null,null,9]", 100, 1,

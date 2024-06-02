@@ -18,6 +18,13 @@ public abstract class ContainsDuplicate3TestsBase<T> where T : IContainsDuplicat
     [TestMethod]
     [DataRow(new[] { 1, 2, 3, 1 }, 3, 0, true)]
     [DataRow(new[] { 1, 5, 9, 1, 5, 9 }, 2, 3, false)]
+    [DataRow(new[] { 1, 0, 1, 1 }, 1, 2, true)]
+    [DataRow(new[] { 1, 5, 9, 1, 5, 9 }, 2, 3, false)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6 }, 1, 0, false)]
+    [DataRow(new int[] { }, 2, 1, false)]
+    [DataRow(new[] { 1, 2, 3, 1 }, 0, 1, false)]
+    [DataRow(new[] { 1, 2, 3, 1 }, 2, -1, false)]
+    [DataRow(new[] { -1, -1 }, 1, 0, true)]
     public void ContainsNearbyAlmostDuplicate_WithIndexAndValueDifferences_ReturnsExpectedResult(int[] nums,
         int indexDiff, int valueDiff, bool expectedResult)
     {
