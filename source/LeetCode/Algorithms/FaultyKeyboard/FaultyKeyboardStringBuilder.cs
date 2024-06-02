@@ -16,6 +16,12 @@ namespace LeetCode.Algorithms.FaultyKeyboard;
 /// <inheritdoc />
 public class FaultyKeyboardStringBuilder : IFaultyKeyboard
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
+    /// </summary>
+    /// <param name="s"></param>
+    /// <returns></returns>
     public string FinalString(string s)
     {
         var stringBuilder = new StringBuilder();
