@@ -4,10 +4,11 @@
 
 ## Overview
 
-This repository contains solutions to LeetCode tasks, implemented in C#. You can check the latest build status via the badge below.
+This repository contains solutions to LeetCode tasks, implemented in C#. Each solution is developed using Test-Driven Development (TDD), an approach that involves writing tests before the actual functional code. TDD helps ensure that the code meets the expected outcomes and reduces bugs, making it ideal for algorithmic challenges where precision is key.
 
-Each solution in this repository is developed using Test-Driven Development (TDD), an approach that involves writing tests before the actual functional code.
-TDD helps ensure that the code meets the expected outcomes and reduces bugs, making it ideal for algorithmic challenges where precision is key.
+### Purpose
+
+The primary goal of this repository is to provide efficient and well-tested solutions to a wide range of LeetCode problems. It serves as a resource for developers looking to improve their problem-solving skills and understanding of algorithms using C#.
 
 ## Technologies Used
 
@@ -261,3 +262,11 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 
   </p>
 </details>
+
+## License
+
+This project is licensed under a custom license. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out to me via [GitHub](https://github.com/eremeeveugene).
