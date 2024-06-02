@@ -24,98 +24,37 @@ public class MergeTwoSortedListsLinear : IMergeTwoSortedLists
     /// <returns></returns>
     public ListNode? MergeTwoLists(ListNode? list1, ListNode? list2)
     {
-        if (list1 == null && list2 == null)
-        {
-            return null;
-        }
-
-        if (list1 == null && list2 != null)
+        if (list1 == null)
         {
             return list2;
         }
 
-        if (list1 != null && list2 == null)
+        if (list2 == null)
         {
             return list1;
         }
 
-        if (list1 != null && list2 != null)
+        ListNode dummyHead = new();
+        var current = dummyHead;
+
+        while (list1 != null && list2 != null)
         {
-            ListNode? headNode = null;
-
-            ListNode? previousNode = null;
-
-            while (list1 != null || list2 != null)
+            if (list1.val < list2.val)
             {
-                if (list1 == null && list2 != null)
-                {
-                    ListNode list2CurrentNode = new(list2.val);
-
-                    if (previousNode != null)
-                    {
-                        previousNode.next = list2CurrentNode;
-                    }
-
-                    previousNode = list2CurrentNode;
-
-                    headNode ??= list2CurrentNode;
-
-                    list2 = list2.next;
-                }
-                else if (list1 != null && list2 == null)
-                {
-                    ListNode list1CurrentNode = new(list1.val);
-
-                    if (previousNode != null)
-                    {
-                        previousNode.next = list1CurrentNode;
-                    }
-
-                    previousNode = list1CurrentNode;
-
-                    headNode ??= list1CurrentNode;
-
-                    list1 = list1.next;
-                }
-
-                else if (list2 != null && list1 != null)
-                {
-                    if (list1.val < list2.val)
-                    {
-                        ListNode list1CurrentNode = new(list1.val);
-
-                        if (previousNode != null)
-                        {
-                            previousNode.next = list1CurrentNode;
-                        }
-
-                        previousNode = list1CurrentNode;
-
-                        headNode ??= list1CurrentNode;
-
-                        list1 = list1.next;
-                    }
-                    else
-                    {
-                        ListNode list2CurrentNode = new(list2.val);
-
-                        if (previousNode != null)
-                        {
-                            previousNode.next = list2CurrentNode;
-                        }
-
-                        previousNode = list2CurrentNode;
-
-                        headNode ??= list2CurrentNode;
-
-                        list2 = list2.next;
-                    }
-                }
+                current.next = list1;
+                list1 = list1.next;
+            }
+            else
+            {
+                current.next = list2;
+                list2 = list2.next;
             }
 
-            return headNode;
+            current = current.next;
         }
 
-        return null;
+        current.next = list1 ?? list2;
+
+        return dummyHead.next;
     }
 }
