@@ -25,7 +25,7 @@ public abstract class PalindromePartitioningTestsBase<T> where T : IPalindromePa
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonConvertHelper<string>.JsonArrayToJaggedList(expectedResultJsonArray);
+        var expectedResult = JsonHelper<string>.JsonArrayToJaggedList(expectedResultJsonArray);
 
         // Act
         var actualResult = solution.Partition(s);

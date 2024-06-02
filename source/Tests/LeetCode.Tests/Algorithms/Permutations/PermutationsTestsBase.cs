@@ -26,7 +26,7 @@ public abstract class PermutationsTestsBase<T> where T : IPermutations, new()
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonConvertHelper<int>.JsonArrayToJaggedList(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.JsonArrayToJaggedList(expectedResultJsonArray);
 
         // Act
         var actualResult = solution.Permute(nums);

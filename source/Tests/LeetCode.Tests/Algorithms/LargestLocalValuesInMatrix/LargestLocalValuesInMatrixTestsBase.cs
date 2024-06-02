@@ -26,8 +26,8 @@ public abstract class LargestLocalValuesInMatrixTestsBase<T> where T : ILargestL
         // Arrange
         var solution = new T();
 
-        var grid = JsonConvertHelper<int>.JsonArrayToJaggedArray(gridJsonArray);
-        var expectedResult = JsonConvertHelper<int>.JsonArrayToJaggedArray(expectedResultJsonArray);
+        var grid = JsonHelper<int>.JsonArrayToJaggedArray(gridJsonArray);
+        var expectedResult = JsonHelper<int>.JsonArrayToJaggedArray(expectedResultJsonArray);
 
         // Act
         var actualResult = solution.LargestLocal(grid);

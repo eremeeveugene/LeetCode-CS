@@ -28,7 +28,7 @@ public abstract class SumRootToLeafNumbersTestsBase<T> where T : ISumRootToLeafN
         // Arrange
         var solution = new T();
 
-        IList<int?> rootArray = JsonConvertHelper<int?>.JsonArrayToList(jsonRootArray);
+        IList<int?> rootArray = JsonHelper<int?>.JsonArrayToList(jsonRootArray);
         var root = TreeNode.BuildTree(rootArray);
 
         // Act

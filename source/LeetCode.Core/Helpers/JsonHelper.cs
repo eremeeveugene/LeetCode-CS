@@ -9,9 +9,41 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using Newtonsoft.Json;
+
 namespace LeetCode.Core.Helpers;
 
-public static class JsonHelper
+public static class JsonHelper<T>
 {
     public const string EmptyArray = "[]";
+
+    public static List<T?> JsonArrayToList(string jsonArray)
+    {
+        if (jsonArray == EmptyArray)
+        {
+            return [];
+        }
+
+        return JsonConvert.DeserializeObject<List<T?>>(jsonArray) ?? throw new InvalidOperationException();
+    }
+
+    public static T[][] JsonArrayToJaggedArray(string jsonArray)
+    {
+        if (jsonArray == EmptyArray)
+        {
+            return [];
+        }
+
+        return JsonConvert.DeserializeObject<T[][]>(jsonArray) ?? throw new InvalidOperationException();
+    }
+
+    public static IList<IList<T>> JsonArrayToJaggedList(string jsonArray)
+    {
+        if (jsonArray == EmptyArray)
+        {
+            return [];
+        }
+
+        return JsonConvert.DeserializeObject<IList<IList<T>>>(jsonArray) ?? throw new InvalidOperationException();
+    }
 }

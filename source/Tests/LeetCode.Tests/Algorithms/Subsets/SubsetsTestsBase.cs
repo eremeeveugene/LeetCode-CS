@@ -25,7 +25,7 @@ public abstract class SubsetsTestsBase<T> where T : ISubsets, new()
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonConvertHelper<int>.JsonArrayToJaggedList(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.JsonArrayToJaggedList(expectedResultJsonArray);
 
         // Act
         var actualResult = solution.Subsets(nums);

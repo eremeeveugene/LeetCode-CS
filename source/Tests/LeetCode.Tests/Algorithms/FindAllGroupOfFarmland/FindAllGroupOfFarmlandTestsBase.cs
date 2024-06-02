@@ -28,11 +28,11 @@ public abstract class FindAllGroupOfFarmlandTestsBase<T> where T : IFindAllGroup
         string expectedResultJsonArray)
     {
         // Arrange
-        var expectedResult = JsonConvertHelper<int>.JsonArrayToJaggedArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.JsonArrayToJaggedArray(expectedResultJsonArray);
 
         var solution = new T();
 
-        var land = JsonConvertHelper<int>.JsonArrayToJaggedArray(landJsonArray);
+        var land = JsonHelper<int>.JsonArrayToJaggedArray(landJsonArray);
 
         // Act
         var actualResult = solution.FindFarmland(land);

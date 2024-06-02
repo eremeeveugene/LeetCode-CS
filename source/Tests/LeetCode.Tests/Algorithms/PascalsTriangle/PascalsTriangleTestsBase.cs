@@ -23,7 +23,7 @@ public abstract class PascalsTriangleTestsBase<T> where T : IPascalsTriangle, ne
     public void Generate_GivenNumRows_ReturnsPascalsTriangle(int numRows, string expectedJsonResult)
     {
         // Arrange
-        var expectedResult = JsonConvertHelper<int>.JsonArrayToJaggedList(expectedJsonResult);
+        var expectedResult = JsonHelper<int>.JsonArrayToJaggedList(expectedJsonResult);
 
         var solution = new T();
 

@@ -23,7 +23,7 @@ public abstract class WordSearchTestsBase<T> where T : IWordSearch, new()
     public void Exist_GivenBoardAndWord_ReturnsExpectedBoolean(string jsonBoard, string word, bool expectedResult)
     {
         // Arrange
-        var board = JsonConvertHelper<char>.JsonArrayToJaggedArray(jsonBoard);
+        var board = JsonHelper<char>.JsonArrayToJaggedArray(jsonBoard);
 
         var solution = new T();
 

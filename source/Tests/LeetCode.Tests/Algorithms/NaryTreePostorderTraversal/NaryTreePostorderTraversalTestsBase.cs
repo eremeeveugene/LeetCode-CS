@@ -27,8 +27,8 @@ public abstract class NaryTreePostorderTraversalTestsBase<T> where T : INaryTree
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonConvertHelper<int>.JsonArrayToList(expectedResultJsonArray);
-        var rootArray = JsonConvertHelper<int?>.JsonArrayToList(rootArrayJson);
+        var expectedResult = JsonHelper<int>.JsonArrayToList(expectedResultJsonArray);
+        var rootArray = JsonHelper<int?>.JsonArrayToList(rootArrayJson);
 
         var root = Node.BuildTree(rootArray);
 

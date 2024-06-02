@@ -27,7 +27,7 @@ public abstract class MaximumDepthOfBinaryTreeTestsBase<T> where T : IMaximumDep
         // Arrange
         var solution = new T();
 
-        IList<int?> rootArray = JsonConvertHelper<int?>.JsonArrayToList(rootArrayJson);
+        IList<int?> rootArray = JsonHelper<int?>.JsonArrayToList(rootArrayJson);
         var root = TreeNode.BuildTree(rootArray);
 
         // Act

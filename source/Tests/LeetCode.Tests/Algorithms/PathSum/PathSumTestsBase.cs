@@ -31,7 +31,7 @@ public abstract class PathSumTestsBase<T> where T : IPathSum, new()
         // Arrange
         var solution = new T();
 
-        IList<int?> rootArray = JsonConvertHelper<int?>.JsonArrayToList(jsonRootArray);
+        IList<int?> rootArray = JsonHelper<int?>.JsonArrayToList(jsonRootArray);
         var root = TreeNode.BuildTree(rootArray);
 
         // Act

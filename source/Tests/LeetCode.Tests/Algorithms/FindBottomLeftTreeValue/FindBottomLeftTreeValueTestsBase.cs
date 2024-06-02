@@ -27,7 +27,7 @@ public abstract class FindBottomLeftTreeValueTestsBase<T> where T : IFindBottomL
         int expectedResult)
     {
         // Arrange
-        IList<int?> arrayRoot = JsonConvertHelper<int?>.JsonArrayToList(jsonArrayRoot);
+        IList<int?> arrayRoot = JsonHelper<int?>.JsonArrayToList(jsonArrayRoot);
         var root = TreeNode.BuildTree(arrayRoot);
 
         var solution = new T();

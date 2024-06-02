@@ -26,7 +26,7 @@ public abstract class SumOfDistancesInTreeTestsBase<T> where T : ISumOfDistances
         // Arrange
         var solution = new T();
 
-        var edges = JsonConvertHelper<int>.JsonArrayToJaggedArray(edgesJsonArray);
+        var edges = JsonHelper<int>.JsonArrayToJaggedArray(edgesJsonArray);
 
         // Act
         var actualResult = solution.SumOfDistancesInTree(n, edges);
