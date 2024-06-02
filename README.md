@@ -278,7 +278,3 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 ## License
 
 This project is licensed under a custom license. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-If you have any questions or feedback, feel free to reach out to me via [GitHub](https://github.com/eremeeveugene).
