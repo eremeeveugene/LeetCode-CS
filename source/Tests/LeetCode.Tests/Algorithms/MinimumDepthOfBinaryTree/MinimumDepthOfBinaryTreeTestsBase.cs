@@ -18,6 +18,7 @@ namespace LeetCode.Tests.Algorithms.MinimumDepthOfBinaryTree;
 public abstract class MinimumDepthOfBinaryTreeTestsBase<T> where T : IMinimumDepthOfBinaryTree, new()
 {
     [TestMethod]
+    [DataRow("[]", 0)]
     [DataRow("[3,9,20,null,null,15,7]", 2)]
     [DataRow("[2,null,3,null,4,null,5,null,6]", 5)]
     public void MinDepth_GivenBinaryTreeAsJsonArray_ReturnsMinimumDepth(string rootJsonArray, int expectedResult)
