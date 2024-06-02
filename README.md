@@ -4,11 +4,15 @@
 
 ## Overview
 
-This repository contains solutions to LeetCode tasks, implemented in C#. Each solution is developed using Test-Driven Development (TDD), an approach that involves writing tests before the actual functional code. TDD helps ensure that the code meets the expected outcomes and reduces bugs, making it ideal for algorithmic challenges where precision is key.
+Welcome to my repository of LeetCode solutions, all implemented in C#. Each solution is crafted using Test-Driven Development (TDD). I start by writing the tests before diving into the actual code, ensuring the solutions meet expected outcomes and minimizing bugs. This method is perfect for tackling algorithmic challenges where precision is crucial.
 
-### Purpose
+## Purpose
 
-The primary goal of this repository is to provide efficient and well-tested solutions to a wide range of LeetCode problems. It serves as a resource for developers looking to improve their problem-solving skills and understanding of algorithms using C#.
+The primary goal of this repository is to improve my own skills and demonstrate my capabilities. I am focused on my growth and learning by providing efficient and well-tested solutions to a wide range of LeetCode problems.
+
+## Time and Space Complexity
+
+I analyze the time and space complexity using Big O notation for every algorithm solution in this repo. This analysis helps me understand the efficiency and scalability of each solution.
 
 ## Technologies Used
 
