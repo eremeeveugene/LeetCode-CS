@@ -1,13 +1,22 @@
 # LeetCode C# Solutions
 
+[![.NET](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml/badge.svg)](https://github.com/eremeeveugene/leetcode)
+
 ## Overview
 
-This repository contains solutions to LeetCode tasks, implemented in C#. You can check the latest build status via the badge below.
+This repository contains solutions to LeetCode tasks, implemented in C#. Each solution is developed using Test-Driven Development (TDD), an approach that involves writing tests before the actual functional code. TDD helps ensure that the code meets the expected outcomes and reduces bugs, making it ideal for algorithmic challenges where precision is key.
 
-Each solution in this repository is developed using Test-Driven Development (TDD), an approach that involves writing tests before the actual functional code.
-TDD helps ensure that the code meets the expected outcomes and reduces bugs, making it ideal for algorithmic challenges where precision is key.
+### Purpose
 
-[![.NET](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml/badge.svg)](https://github.com/eremeeveugene/leetcode)
+The primary goal of this repository is to provide efficient and well-tested solutions to a wide range of LeetCode problems. It serves as a resource for developers looking to improve their problem-solving skills and understanding of algorithms using C#.
+
+## Technologies Used
+
+- **.NET 8**: The latest version of the .NET framework for building and running applications.
+- **C#**: The programming language used to implement the solutions.
+- **MSTest**: A testing framework for .NET to write and run tests.
+- **Coverlet**: A code coverage library for .NET, used to collect coverage data and integrate with build tasks.
+- **ReportGenerator**: A tool to generate reports from the test coverage data.
 
 ## Solutions by Category
 
@@ -253,3 +262,11 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 
   </p>
 </details>
+
+## License
+
+This project is licensed under a custom license. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out to me via [GitHub](https://github.com/eremeeveugene).
