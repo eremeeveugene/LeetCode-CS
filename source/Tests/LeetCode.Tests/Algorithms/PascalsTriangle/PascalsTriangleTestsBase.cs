@@ -31,6 +31,6 @@ public abstract class PascalsTriangleTestsBase<T> where T : IPascalsTriangle, ne
         var actualResult = solution.Generate(numRows);
 
         // Assert
-        AssertExtensions.AssertJaggedArrayEqual(expectedResult, actualResult);
+        JaggedListAssert.AreEqual(expectedResult, actualResult);
     }
 }

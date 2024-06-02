@@ -46,6 +46,6 @@ public abstract class PathSum2TestsBase<T> where T : IPathSum2, new()
         var actualResult = solution.PathSum(root, targetSum);
 
         // Assert
-        AssertExtensions.AssertJaggedArrayEqual(expectedResult, actualResult);
+        JaggedListAssert.AreEqual(expectedResult, actualResult);
     }
 }

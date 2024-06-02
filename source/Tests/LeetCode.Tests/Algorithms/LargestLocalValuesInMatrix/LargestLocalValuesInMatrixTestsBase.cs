@@ -33,6 +33,6 @@ public abstract class LargestLocalValuesInMatrixTestsBase<T> where T : ILargestL
         var actualResult = solution.LargestLocal(grid);
 
         // Assert
-        AssertExtensions.AssertJaggedArrayEqual(expectedResult, actualResult);
+        JaggedArrayAssert.ArrayEqual(expectedResult, actualResult);
     }
 }

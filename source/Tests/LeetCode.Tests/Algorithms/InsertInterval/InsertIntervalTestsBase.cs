@@ -37,6 +37,6 @@ public abstract class InsertIntervalTestsBase<T> where T : IInsertInterval, new(
         var actualResult = solution.Insert(intervals, newInterval);
 
         // Assert
-        AssertExtensions.AssertJaggedArrayEqual(expectedResult, actualResult);
+        JaggedArrayAssert.ArrayEqual(expectedResult, actualResult);
     }
 }

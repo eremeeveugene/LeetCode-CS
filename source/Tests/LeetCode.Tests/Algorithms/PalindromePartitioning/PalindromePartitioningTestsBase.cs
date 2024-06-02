@@ -31,6 +31,6 @@ public abstract class PalindromePartitioningTestsBase<T> where T : IPalindromePa
         var actualResult = solution.Partition(s);
 
         // Assert
-        AssertExtensions.AssertJaggedArrayEqual(expectedResult, actualResult);
+        JaggedListAssert.AreEqual(expectedResult, actualResult);
     }
 }

@@ -38,6 +38,6 @@ public abstract class NaryTreeLevelOrderTraversalTestsBase<T> where T : INaryTre
         var actualResult = solution.LevelOrder(root);
 
         // Assert
-        AssertExtensions.AssertJaggedArrayEqual(expectedResult, actualResult);
+        JaggedListAssert.AreEqual(expectedResult, actualResult);
     }
 }
