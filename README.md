@@ -14,6 +14,10 @@ The primary goal of this repository is to improve my own skills and demonstrate 
 
 I analyze the time and space complexity using Big O notation for every algorithm solution in this repo. This analysis helps me understand the efficiency and scalability of each solution.
 
+## Code Coverage Report
+
+You can view the code coverage report [here](https://eremeeveugene.github.io/LeetCode-CS/).
+
 ## Technologies Used
 
 - **.NET 8**: The latest version of the .NET framework for building and running applications.
