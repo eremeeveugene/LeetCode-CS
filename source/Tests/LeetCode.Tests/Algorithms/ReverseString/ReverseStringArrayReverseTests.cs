@@ -14,6 +14,4 @@ using LeetCode.Algorithms.ReverseString;
 namespace LeetCode.Tests.Algorithms.ReverseString;
 
 [TestClass]
-public class ReverseStringArrayReverseTests : ReverseStringTestsBase<ReverseStringArrayReverse>
-{
-}
+public class ReverseStringArrayReverseTests : ReverseStringTestsBase<ReverseStringArrayReverse>;

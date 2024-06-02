@@ -14,6 +14,4 @@ using LeetCode.Algorithms.PalindromeNumber;
 namespace LeetCode.Tests.Algorithms.PalindromeNumber;
 
 [TestClass]
-public class PalindromeNumberByReversingDigitsTests : PalindromeNumberTestsBase<PalindromeNumberByReversingDigits>
-{
-}
+public class PalindromeNumberByReversingDigitsTests : PalindromeNumberTestsBase<PalindromeNumberByReversingDigits>;

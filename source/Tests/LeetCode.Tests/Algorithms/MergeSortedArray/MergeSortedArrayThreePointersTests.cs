@@ -14,6 +14,4 @@ using LeetCode.Algorithms.MergeSortedArray;
 namespace LeetCode.Tests.Algorithms.MergeSortedArray;
 
 [TestClass]
-public class MergeSortedArrayThreePointersTests : MergeSortedArrayTestsBase<MergeSortedArrayThreePointers>
-{
-}
+public class MergeSortedArrayThreePointersTests : MergeSortedArrayTestsBase<MergeSortedArrayThreePointers>;

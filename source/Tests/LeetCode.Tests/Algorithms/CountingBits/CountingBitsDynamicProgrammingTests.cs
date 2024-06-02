@@ -14,6 +14,4 @@ using LeetCode.Algorithms.CountingBits;
 namespace LeetCode.Tests.Algorithms.CountingBits;
 
 [TestClass]
-public class CountingBitsDynamicProgrammingTests : CountingBitsTestsBase<CountingBitsDynamicProgramming>
-{
-}
+public class CountingBitsDynamicProgrammingTests : CountingBitsTestsBase<CountingBitsDynamicProgramming>;

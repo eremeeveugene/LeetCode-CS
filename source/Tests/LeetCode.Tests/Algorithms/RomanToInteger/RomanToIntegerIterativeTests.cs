@@ -14,6 +14,4 @@ using LeetCode.Algorithms.RomanToInteger.Iterative;
 namespace LeetCode.Tests.Algorithms.RomanToInteger;
 
 [TestClass]
-public class RomanToIntegerIterativeTests : RomanToIntegerTestsBase<RomanToIntegerIterative>
-{
-}
+public class RomanToIntegerIterativeTests : RomanToIntegerTestsBase<RomanToIntegerIterative>;
