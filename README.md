@@ -18,6 +18,10 @@ I analyze the time and space complexity using Big O notation for every algorithm
 
 You can view the code coverage report [here](https://eremeeveugene.github.io/LeetCode-CS/).
 
+## LeetCode Profile
+
+Check out my [LeetCode profile](https://leetcode.com/u/eremeeveugene/) to see more about my problem-solving journey.
+
 ## Technologies Used
 
 - **.NET 8**: The latest version of the .NET framework for building and running applications.
