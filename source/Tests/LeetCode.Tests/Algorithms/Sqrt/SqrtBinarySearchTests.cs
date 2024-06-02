@@ -14,6 +14,4 @@ using LeetCode.Algorithms.Sqrt;
 namespace LeetCode.Tests.Algorithms.Sqrt;
 
 [TestClass]
-public class SqrtBinarySearchTests : SqrtTestsBase<SqrtBinarySearch>
-{
-}
+public class SqrtBinarySearchTests : SqrtTestsBase<SqrtBinarySearch>;

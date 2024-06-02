@@ -14,6 +14,4 @@ using LeetCode.Algorithms.ThreeSum;
 namespace LeetCode.Tests.Algorithms.ThreeSum;
 
 [TestClass]
-public class ThreeSumTwoPointersTests : ThreeSumTestsBase<ThreeSumTwoPointers>
-{
-}
+public class ThreeSumTwoPointersTests : ThreeSumTestsBase<ThreeSumTwoPointers>;

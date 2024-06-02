@@ -14,6 +14,4 @@ using LeetCode.Algorithms.LongestCommonPrefix;
 namespace LeetCode.Tests.Algorithms.LongestCommonPrefix;
 
 [TestClass]
-public class LongestCommonPrefixBinarySearchTests : LongestCommonPrefixTestsBase<LongestCommonPrefixBinarySearch>
-{
-}
+public class LongestCommonPrefixBinarySearchTests : LongestCommonPrefixTestsBase<LongestCommonPrefixBinarySearch>;

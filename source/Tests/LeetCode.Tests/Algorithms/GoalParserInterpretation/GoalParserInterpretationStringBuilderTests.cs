@@ -14,4 +14,6 @@ using LeetCode.Algorithms.GoalParserInterpretation;
 namespace LeetCode.Tests.Algorithms.GoalParserInterpretation;
 
 [TestClass]
-public class GoalParserInterpretationStringBuilderTests : GoalParserInterpretationTestsBase<GoalParserInterpretationStringBuilder>;
+public class
+    GoalParserInterpretationStringBuilderTests : GoalParserInterpretationTestsBase<
+    GoalParserInterpretationStringBuilder>;

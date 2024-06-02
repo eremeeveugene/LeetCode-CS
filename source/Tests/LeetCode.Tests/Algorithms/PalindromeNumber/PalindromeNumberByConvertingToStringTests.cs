@@ -14,6 +14,5 @@ using LeetCode.Algorithms.PalindromeNumber;
 namespace LeetCode.Tests.Algorithms.PalindromeNumber;
 
 [TestClass]
-public class PalindromeNumberByConvertingToStringTests : PalindromeNumberTestsBase<PalindromeNumberByConvertingToString>
-{
-}
+public class PalindromeNumberByConvertingToStringTests :
+    PalindromeNumberTestsBase<PalindromeNumberByConvertingToString>;

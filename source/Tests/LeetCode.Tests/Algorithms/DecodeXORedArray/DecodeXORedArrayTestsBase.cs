@@ -18,7 +18,8 @@ public abstract class DecodeXORedArrayTestsBase<T> where T : IDecodeXORedArray, 
     [TestMethod]
     [DataRow(new[] { 1, 2, 3 }, 1, new[] { 1, 0, 2, 1 })]
     [DataRow(new[] { 6, 2, 7, 3 }, 4, new[] { 4, 2, 0, 7, 4 })]
-    public void Decode_GivenEncodedArrayAndFirstElement_ReturnsExpectedDecodedArray(int[] encoded, int first, int[] expectedResult)
+    public void Decode_GivenEncodedArrayAndFirstElement_ReturnsExpectedDecodedArray(int[] encoded, int first,
+        int[] expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -15,6 +15,4 @@ namespace LeetCode.Tests.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 
 [TestClass]
 public class FindTheIndexOfTheFirstOccurrenceInStringWithKMPTests : FindTheIndexOfTheFirstOccurrenceInStringTestsBase<
-    FindTheIndexOfTheFirstOccurrenceInStringWithKMP>
-{
-}
+    FindTheIndexOfTheFirstOccurrenceInStringWithKMP>;

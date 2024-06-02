@@ -29,7 +29,10 @@ public class PalindromeNumberByReversingDigits : IPalindromeNumber
                 return true;
         }
 
-        if (x % 10 == 0) return false;
+        if (x % 10 == 0)
+        {
+            return false;
+        }
 
         var reversedHalf = 0;
 

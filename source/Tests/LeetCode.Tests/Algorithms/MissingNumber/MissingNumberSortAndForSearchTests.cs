@@ -14,6 +14,4 @@ using LeetCode.Algorithms.MissingNumber;
 namespace LeetCode.Tests.Algorithms.MissingNumber;
 
 [TestClass]
-public class MissingNumberSortAndForSearchTests : MissingNumberTestsBase<MissingNumberSortAndForSearch>
-{
-}
+public class MissingNumberSortAndForSearchTests : MissingNumberTestsBase<MissingNumberSortAndForSearch>;

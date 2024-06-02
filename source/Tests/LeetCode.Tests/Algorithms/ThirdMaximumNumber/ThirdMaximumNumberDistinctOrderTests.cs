@@ -14,6 +14,4 @@ using LeetCode.Algorithms.ThirdMaximumNumber;
 namespace LeetCode.Tests.Algorithms.ThirdMaximumNumber;
 
 [TestClass]
-public class ThirdMaximumNumberDistinctOrderTests : ThirdMaximumNumberTestsBase<ThirdMaximumNumberDistinctOrder>
-{
-}
+public class ThirdMaximumNumberDistinctOrderTests : ThirdMaximumNumberTestsBase<ThirdMaximumNumberDistinctOrder>;

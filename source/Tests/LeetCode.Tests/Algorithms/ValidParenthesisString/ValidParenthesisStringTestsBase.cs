@@ -25,7 +25,8 @@ public abstract class ValidParenthesisStringTestsBase<T> where T : IValidParenth
     [DataRow("((*)(*))()*(*)****((*(*)())*()((()**(**)", true)]
     [DataRow(")(*()(**(*)())*))())())*)()()*(((*)()))(**()*)**(*", false)]
     [DataRow(")))(*)**)))*)))))*)*(((()(((*())(***)**(**((()))()((*((()(((", false)]
-    [DataRow("(((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(())", false)]
+    [DataRow("(((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(())",
+        false)]
     public void CheckValidString_WithVariousStrings_ReturnsExpectedValidity(string s, bool expectedResult)
     {
         // Arrange

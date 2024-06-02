@@ -14,6 +14,4 @@ using LeetCode.Concurrency.PrintInOrder;
 namespace LeetCode.Tests.Concurrency.PrintInOrder;
 
 [TestClass]
-public class PrintInOrderTaskCompletionSourceTests : PrintInOrderTestsBase<PrintInOrderTaskCompletionSource>
-{
-}
+public class PrintInOrderTaskCompletionSourceTests : PrintInOrderTestsBase<PrintInOrderTaskCompletionSource>;

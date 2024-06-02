@@ -19,7 +19,9 @@ public abstract class MaximalRectangleTestsBase<T> where T : IMaximalRectangle, 
     [TestMethod]
     [DataRow("[[\"0\"]]", 0)]
     [DataRow("[[\"1\"]]", 1)]
-    [DataRow("[[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]", 6)]
+    [DataRow(
+        "[[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]",
+        6)]
     public void MaximalRectangle_GivenMatrix_ReturnsMaximalArea(string matrixJsonArray, int expectedResult)
     {
         // Arrange

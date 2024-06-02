@@ -14,6 +14,4 @@ using LeetCode.Concurrency.PrintInOrder;
 namespace LeetCode.Tests.Concurrency.PrintInOrder;
 
 [TestClass]
-public class PrintInOrderThreadSleepTests : PrintInOrderTestsBase<PrintInOrderThreadSleep>
-{
-}
+public class PrintInOrderThreadSleepTests : PrintInOrderTestsBase<PrintInOrderThreadSleep>;

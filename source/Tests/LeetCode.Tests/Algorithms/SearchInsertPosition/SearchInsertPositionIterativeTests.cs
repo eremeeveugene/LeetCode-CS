@@ -14,6 +14,4 @@ using LeetCode.Algorithms.SearchInsertPosition;
 namespace LeetCode.Tests.Algorithms.SearchInsertPosition;
 
 [TestClass]
-public class SearchInsertPositionIterativeTests : SearchInsertPositionTestsBase<SearchInsertPositionIterative>
-{
-}
+public class SearchInsertPositionIterativeTests : SearchInsertPositionTestsBase<SearchInsertPositionIterative>;

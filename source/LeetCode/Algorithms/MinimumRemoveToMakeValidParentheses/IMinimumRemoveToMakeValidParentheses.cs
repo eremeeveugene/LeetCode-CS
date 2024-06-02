@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses;
 
 /// <summary>
-/// https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
+///     https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
 /// </summary>
 public interface IMinimumRemoveToMakeValidParentheses
 {

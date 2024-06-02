@@ -19,7 +19,8 @@ public abstract class ValidPalindrome2TestsBase<T> where T : IValidPalindrome2, 
     [DataRow("aba", true)]
     [DataRow("abca", true)]
     [DataRow("abc", false)]
-    [DataRow("aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga", true)]
+    [DataRow("aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga",
+        true)]
     public void ValidPalindrome_WithStringInput_ReturnsBoolean(string s, bool expectedResult)
     {
         // Arrange

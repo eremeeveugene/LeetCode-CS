@@ -14,4 +14,5 @@ using LeetCode.Algorithms.NaryTreePostorderTraversal;
 namespace LeetCode.Tests.Algorithms.NaryTreePostorderTraversal;
 
 [TestClass]
-public class NaryTreePostorderTraversalTwoStacksTests : NaryTreePostorderTraversalTestsBase<NaryTreePostorderTraversalTwoStacks>;
+public class
+    NaryTreePostorderTraversalTwoStacksTests : NaryTreePostorderTraversalTestsBase<NaryTreePostorderTraversalTwoStacks>;
