@@ -1,21 +1,21 @@
 Summary
-  Generated on: 06/02/2024 - 11:36:25
-  Coverage date: 06/02/2024 - 11:35:51 - 06/02/2024 - 11:35:58
+  Generated on: 06/02/2024 - 11:50:35
+  Coverage date: 06/02/2024 - 11:49:59 - 06/02/2024 - 11:50:07
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
-  Classes: 384
-  Files: 384
+  Classes: 383
+  Files: 383
   Line coverage: 97.2%
-  Covered lines: 6926
-  Uncovered lines: 195
-  Coverable lines: 7121
-  Total lines: 18802
-  Branch coverage: 94.5% (2653 of 2806)
-  Covered branches: 2653
-  Total branches: 2806
-  Method coverage: 98% (516 of 526)
-  Covered methods: 516
-  Total methods: 526
+  Covered lines: 6863
+  Uncovered lines: 192
+  Coverable lines: 7055
+  Total lines: 18681
+  Branch coverage: 94.7% (2611 of 2756)
+  Covered branches: 2611
+  Total branches: 2756
+  Method coverage: 98% (515 of 525)
+  Covered methods: 515
+  Total methods: 525
 
 LeetCode                                                                                                                                    97.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -202,8 +202,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysIterative                                                             100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayMergingAndSorting                                                                   100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayThreePointers                                                                       100.0%
-  LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                                                                         95.4%
-  LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinearV2                                                                       92.0%
+  LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                                                                         92.0%
   LeetCode.Algorithms.MinCostClimbingStairs.MinCostClimbingStairsDynamicProgramming                                                         84.6%
   LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueHashSet                                                                          90.0%
   LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueTwoPointers                                                                      77.7%

@@ -405,8 +405,7 @@ var assemblies = [
       { "name": "LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysIterative", "rp": "LeetCode_MedianOfTwoSortedArraysIterative.html", "cl": 45, "ucl": 0, "cal": 45, "tl": 85, "cb": 20, "tb": 20, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayMergingAndSorting", "rp": "LeetCode_MergeSortedArrayMergingAndSorting.html", "cl": 16, "ucl": 0, "cal": 16, "tl": 43, "cb": 6, "tb": 6, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayThreePointers", "rp": "LeetCode_MergeSortedArrayThreePointers.html", "cl": 24, "ucl": 0, "cal": 24, "tl": 53, "cb": 8, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear", "rp": "LeetCode_MergeTwoSortedListsLinear.html", "cl": 63, "ucl": 3, "cal": 66, "tl": 121, "cb": 42, "tb": 50, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinearV2", "rp": "LeetCode_MergeTwoSortedListsLinearV2.html", "cl": 23, "ucl": 2, "cal": 25, "tl": 60, "cb": 11, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear", "rp": "LeetCode_MergeTwoSortedListsLinear.html", "cl": 23, "ucl": 2, "cal": 25, "tl": 60, "cb": 11, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MinCostClimbingStairs.MinCostClimbingStairsDynamicProgramming", "rp": "LeetCode_MinCostClimbingStairsDynamicProgramming.html", "cl": 11, "ucl": 2, "cal": 13, "tl": 42, "cb": 3, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueHashSet", "rp": "LeetCode_MinimumCommonValueHashSet.html", "cl": 9, "ucl": 1, "cal": 10, "tl": 38, "cb": 3, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueTwoPointers", "rp": "LeetCode_MinimumCommonValueTwoPointers.html", "cl": 14, "ucl": 4, "cal": 18, "tl": 48, "cb": 5, "tb": 8, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -626,12 +625,6 @@ var riskHotspotMetrics = [
 ];
 
 var riskHotspots = [
-  {
-    "assembly": "LeetCode", "class": "LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear", "reportPath": "LeetCode_MergeTwoSortedListsLinear.html", "methodName": "MergeTwoLists(LeetCode.Core.Models.ListNode,LeetCode.Core.Models.ListNode)", "methodShortName": "MergeTwoLists(...)", "fileIndex": 0, "line": 26,
-    "metrics": [
-      { "value": 50.24, "exceeded": true },
-      { "value": 50, "exceeded": true },
-    ]},
   {
     "assembly": "LeetCode", "class": "LeetCode.Algorithms.FindTheSafestPathInGrid.FindTheSafestPathInGridPriorityQueue", "reportPath": "LeetCode_FindTheSafestPathInGridPriorityQueue.html", "methodName": "MaximumSafenessFactor(System.Collections.Generic.IList`1<System.Collections.Generic.IList`1<System.Int32>>)", "methodShortName": "MaximumSafenessFactor(...)", "fileIndex": 0, "line": 18,
     "metrics": [
