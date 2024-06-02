@@ -1,6 +1,10 @@
+# Dual License
+
+## Open Source License (MIT License)
+
 MIT License
 
-Copyright (c) 2023 ｅｕｇｅｎｅ
+Copyright (c) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +23,19 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Proprietary License
+
+This software is the confidential and proprietary information of Eugene Eremeev
+(also known as Yevhenii Yeriemeieiv) ("Confidential Information"). You shall not
+disclose such Confidential Information and shall use it only in accordance with
+the terms of the license agreement you entered into with Eugene Eremeev (also
+known as Yevhenii Yeriemeieiv).
+
+The following additional conditions apply to any use, distribution, or reproduction of this software:
+
+1. You shall not disclose Confidential Information to any third party without the prior written consent of Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+2. You shall use Confidential Information solely for the purpose agreed upon in the license agreement and shall not use it for any other purpose.
+3. Any copies of the Software or substantial portions thereof must include the above copyright notice, this permission notice, and these additional terms.
+
+Failure to comply with these terms may result in termination of your rights to use the Software and legal action.
