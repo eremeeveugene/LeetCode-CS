@@ -1,15 +1,15 @@
 Summary
-  Generated on: 06/02/2024 - 12:42:16
-  Coverage date: 06/02/2024 - 12:41:42 - 06/02/2024 - 12:41:50
+  Generated on: 06/02/2024 - 13:09:45
+  Coverage date: 06/02/2024 - 13:09:12 - 06/02/2024 - 13:09:19
   Parser: MultiReport (2x Cobertura)
   Assemblies: 3
   Classes: 383
   Files: 383
   Line coverage: 97.2%
-  Covered lines: 6863
+  Covered lines: 6867
   Uncovered lines: 192
-  Coverable lines: 7055
-  Total lines: 18681
+  Coverable lines: 7059
+  Total lines: 18686
   Branch coverage: 94.7% (2611 of 2756)
   Covered branches: 2611
   Total branches: 2756
@@ -254,8 +254,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.OpenTheLock.OpenTheLockBreadthFirstSearch                                                                            100.0%
   LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListSlowFastPointers                                                             94.1%
   LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListTwoPointers                                                                  90.9%
-  LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByConvertingToString                                                                 85.0%
-  LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByReversingDigits                                                                    92.3%
+  LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByConvertingToString                                                                 86.3%
+  LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByReversingDigits                                                                    93.3%
   LeetCode.Algorithms.PalindromePartitioning.PalindromePartitioningBackTracking                                                            100.0%
   LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumIterative                            95.1%
   LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumSinglePass                          100.0%
