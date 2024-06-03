@@ -1,21 +1,21 @@
 Summary
-  Generated on: 06/02/2024 - 17:06:35
-  Coverage date: 06/02/2024 - 17:05:56 - 06/02/2024 - 17:06:05
+  Generated on: 06/03/2024 - 12:35:04
+  Coverage date: 06/03/2024 - 12:34:27 - 06/03/2024 - 12:34:38
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 381
-  Files: 381
+  Classes: 382
+  Files: 382
   Line coverage: 98.6%
-  Covered lines: 6930
+  Covered lines: 6943
   Uncovered lines: 95
-  Coverable lines: 7025
-  Total lines: 18591
-  Branch coverage: 97% (2652 of 2734)
-  Covered branches: 2652
-  Total branches: 2734
-  Method coverage: 98.6% (509 of 516)
-  Covered methods: 509
-  Total methods: 516
+  Coverable lines: 7038
+  Total lines: 18634
+  Branch coverage: 97% (2658 of 2740)
+  Covered branches: 2658
+  Total branches: 2740
+  Method coverage: 98.6% (510 of 517)
+  Covered methods: 510
+  Total methods: 517
 
 LeetCode                                                                                                                                    98.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -31,6 +31,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.AddTwoIntegers.AddTwoIntegersMath                                                                                    100.0%
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry                                                                              100.0%
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersIterative                                                                                 100.0%
+  LeetCode.Algorithms.AppendCharactersToStringToMakeSubsequence.AppendCharactersToStringToMakeSubsequenceTwoPointers                       100.0%
   LeetCode.Algorithms.ArithmeticSubarrays.ArithmeticSubarraysHashSet                                                                       100.0%
   LeetCode.Algorithms.ArithmeticSubarrays.ArithmeticSubarraysSort                                                                          100.0%
   LeetCode.Algorithms.ArrayPartition.ArrayPartitionSorting                                                                                 100.0%
