@@ -16,6 +16,7 @@ public class MissingNumberCumulativeSum : IMissingNumber
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>

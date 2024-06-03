@@ -14,6 +14,12 @@ namespace LeetCode.Algorithms.FindTheSafestPathInGrid;
 /// <inheritdoc />
 public class FindTheSafestPathInGridPriorityQueue : IFindTheSafestPathInGrid
 {
+    /// <summary>
+    ///     Time complexity - O(n^2 log n^2)
+    ///     Space complexity - O(n^2)
+    /// </summary>
+    /// <param name="grid"></param>
+    /// <returns></returns>
     public int MaximumSafenessFactor(IList<IList<int>> grid)
     {
         var n = grid.Count;

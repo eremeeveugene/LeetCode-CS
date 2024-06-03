@@ -16,6 +16,7 @@ public class CountPairsWhoseSumIsLessThanTargetSortTwoPointers : ICountPairsWhos
 {
     /// <summary>
     ///     Time complexity - O(n log n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="nums"></param>
     /// <param name="target"></param>

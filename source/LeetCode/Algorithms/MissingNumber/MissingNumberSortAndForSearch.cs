@@ -16,6 +16,7 @@ public class MissingNumberSortAndForSearch : IMissingNumber
 {
     /// <summary>
     ///     Time complexity - O(n log n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>

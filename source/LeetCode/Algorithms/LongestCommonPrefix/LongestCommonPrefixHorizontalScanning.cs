@@ -16,6 +16,7 @@ public class LongestCommonPrefixHorizontalScanning : ILongestCommonPrefix
 {
     /// <summary>
     ///     Time complexity - O(S), where S is the sum of all characters in all strings
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="strs"></param>
     /// <returns></returns>

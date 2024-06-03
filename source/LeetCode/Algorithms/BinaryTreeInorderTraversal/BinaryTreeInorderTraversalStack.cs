@@ -17,7 +17,8 @@ namespace LeetCode.Algorithms.BinaryTreeInorderTraversal;
 public class BinaryTreeInorderTraversalStack : IBinaryTreeInorderTraversal
 {
     /// <summary>
-    ///     Time complexity - O (n)
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="treeNode"></param>
     /// <returns></returns>

@@ -16,6 +16,7 @@ public class CheckIfTheSentenceIsPangramIterative : ICheckIfTheSentenceIsPangram
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="sentence"></param>
     /// <returns></returns>

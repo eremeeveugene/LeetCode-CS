@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits;
 public class MinimumSumOfFourDigitNumberAfterSplittingDigitsChars : IMinimumSumOfFourDigitNumberAfterSplittingDigits
 {
     /// <summary>
-    ///     Time complexity - O(1)
+    ///     Time complexity - O(n log n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="num"></param>
     /// <returns></returns>

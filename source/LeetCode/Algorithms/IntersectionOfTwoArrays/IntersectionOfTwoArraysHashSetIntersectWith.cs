@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.IntersectionOfTwoArrays;
 public class IntersectionOfTwoArraysHashSetIntersectWith : IIntersectionOfTwoArrays
 {
     /// <summary>
-    ///     Time complexity - O(n + m)
+    ///     Time complexity - O(n1 + n2 + min(n1, n2) + m)
+    ///     Space complexity - O(n1 + n2 + min(n1, n2))
     /// </summary>
     /// <param name="nums1"></param>
     /// <param name="nums2"></param>

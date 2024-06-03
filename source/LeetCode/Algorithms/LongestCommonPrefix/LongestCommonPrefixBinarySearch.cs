@@ -16,6 +16,7 @@ public class LongestCommonPrefixBinarySearch : ILongestCommonPrefix
 {
     /// <summary>
     ///     Time complexity - O(S log n), where S is the sum of all characters in all strings
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="strs"></param>
     /// <returns></returns>

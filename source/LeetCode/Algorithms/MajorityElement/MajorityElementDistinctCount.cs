@@ -16,6 +16,7 @@ public class MajorityElementDistinctCount : IMajorityElement
 {
     /// <summary>
     ///     Time complexity - O(n^2)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>

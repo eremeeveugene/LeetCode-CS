@@ -16,6 +16,7 @@ public class DivisibleAndNonDivisibleSumsDifferenceIterative : IDivisibleAndNonD
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
     /// <param name="m"></param>

@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.MergeSortedArray;
 public class MergeSortedArrayMergingAndSorting : IMergeSortedArray
 {
     /// <summary>
-    ///     Time complexity - O((m+n)log(m+n))
+    ///     Time complexity - O((m+n) log(m+n))
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="nums1"></param>
     /// <param name="m"></param>

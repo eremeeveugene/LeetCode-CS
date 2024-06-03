@@ -16,6 +16,7 @@ public class BuyTwoChocolatesBruteForce : IBuyTwoChocolates
 {
     /// <summary>
     ///     Time complexity - O(n^2)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="prices"></param>
     /// <param name="money"></param>

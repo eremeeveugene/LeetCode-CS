@@ -16,6 +16,7 @@ public class ConcatenationOfArrayIterative : IConcatenationOfArray
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>

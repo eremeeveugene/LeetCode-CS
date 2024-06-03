@@ -16,6 +16,7 @@ public class CalculateMoneyInLeetcodeBankIterative : ICalculateMoneyInLeetcodeBa
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>

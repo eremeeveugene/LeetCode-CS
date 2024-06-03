@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.Maximum69Number;
 public class Maximum69NumberIterative : IMaximum69Number
 {
     /// <summary>
-    ///     Time complexity - O(n)
+    ///     Time complexity - O(log n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="num"></param>
     /// <returns></returns>

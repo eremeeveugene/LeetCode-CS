@@ -14,6 +14,13 @@ namespace LeetCode.Algorithms.FreedomTrail;
 /// <inheritdoc />
 public class FreedomTrailDynamicProgramming : IFreedomTrail
 {
+    /// <summary>
+    ///     Time complexity - O(m * n^2)
+    ///     Space complexity - O(m * n)
+    /// </summary>
+    /// <param name="ring"></param>
+    /// <param name="key"></param>
+    /// <returns></returns>
     public int FindRotateSteps(string ring, string key)
     {
         int n = ring.Length, m = key.Length;

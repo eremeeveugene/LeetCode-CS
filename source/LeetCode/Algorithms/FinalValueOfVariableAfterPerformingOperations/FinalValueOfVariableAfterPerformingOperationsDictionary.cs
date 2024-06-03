@@ -21,6 +21,7 @@ public class FinalValueOfVariableAfterPerformingOperationsDictionary : IFinalVal
 
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="operations"></param>
     /// <returns></returns>

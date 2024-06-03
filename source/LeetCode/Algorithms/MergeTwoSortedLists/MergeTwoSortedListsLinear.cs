@@ -17,7 +17,8 @@ namespace LeetCode.Algorithms.MergeTwoSortedLists;
 public class MergeTwoSortedListsLinear : IMergeTwoSortedLists
 {
     /// <summary>
-    ///     Time complexity - O (n + m)
+    ///     Time complexity - O(n + m)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="list1"></param>
     /// <param name="list2"></param>

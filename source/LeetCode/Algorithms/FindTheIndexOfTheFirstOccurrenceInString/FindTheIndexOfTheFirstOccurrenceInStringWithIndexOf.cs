@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 public class FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf : IFindTheIndexOfTheFirstOccurrenceInString
 {
     /// <summary>
-    ///     Time complexity - O(n*m)
+    ///     Time complexity - O(n * m)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="haystack"></param>
     /// <param name="needle"></param>

@@ -46,6 +46,7 @@ public class CheckIfTheSentenceIsPangramHashSet : ICheckIfTheSentenceIsPangram
 
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="sentence"></param>
     /// <returns></returns>

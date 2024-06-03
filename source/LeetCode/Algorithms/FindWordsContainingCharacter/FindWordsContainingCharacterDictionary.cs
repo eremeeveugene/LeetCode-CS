@@ -15,7 +15,10 @@ namespace LeetCode.Algorithms.FindWordsContainingCharacter;
 public class FindWordsContainingCharacterDictionary : IFindWordsContainingCharacter
 {
     /// <summary>
-    ///     Time complexity - O(n)
+    ///     Time complexity - O(n * k), where n is the number of words in the words array, and k is the average number of
+    ///     unique characters per word
+    ///     Space complexity - O(n * k), where n is the number of words in the words array, and k is the average number of
+    ///     unique characters per word
     /// </summary>
     /// <param name="words"></param>
     /// <param name="x"></param>

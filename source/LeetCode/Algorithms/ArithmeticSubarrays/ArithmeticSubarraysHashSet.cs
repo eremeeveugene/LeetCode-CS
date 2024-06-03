@@ -16,6 +16,7 @@ public class ArithmeticSubarraysHashSet : IArithmeticSubarrays
 {
     /// <summary>
     ///     Time complexity - O(m * n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="nums"></param>
     /// <param name="l"></param>

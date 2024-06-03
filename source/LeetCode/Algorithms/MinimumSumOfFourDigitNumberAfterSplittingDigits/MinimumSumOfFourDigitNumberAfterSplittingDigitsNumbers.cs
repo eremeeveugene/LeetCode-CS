@@ -16,6 +16,7 @@ public class MinimumSumOfFourDigitNumberAfterSplittingDigitsNumbers : IMinimumSu
 {
     /// <summary>
     ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="num"></param>
     /// <returns></returns>

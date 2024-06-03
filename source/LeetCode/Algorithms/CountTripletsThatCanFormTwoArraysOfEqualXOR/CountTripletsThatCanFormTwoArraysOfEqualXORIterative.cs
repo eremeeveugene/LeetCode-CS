@@ -16,6 +16,7 @@ public class CountTripletsThatCanFormTwoArraysOfEqualXORIterative : ICountTriple
 {
     /// <summary>
     ///     Time complexity - O(n^2)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="arr"></param>
     /// <returns></returns>

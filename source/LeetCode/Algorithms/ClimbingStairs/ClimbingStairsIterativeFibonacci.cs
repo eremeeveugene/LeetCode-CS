@@ -16,6 +16,7 @@ public class ClimbingStairsIterativeFibonacci : IClimbingStairs
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>
@@ -35,6 +36,7 @@ public class ClimbingStairsIterativeFibonacci : IClimbingStairs
         for (var i = 2; i < n + 1; i++)
         {
             var step3 = step1 + step2;
+
             step1 = step2;
             step2 = step3;
         }

@@ -16,6 +16,7 @@ public class NthTribonacciNumberMatrixExponentiation : INthTribonacciNumber
 {
     /// <summary>
     ///     Time complexity - O(log n)
+    ///     Time complexity - O(log n)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>

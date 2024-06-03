@@ -16,6 +16,7 @@ public class DistributeMoneyToMaximumChildrenLinear : IDistributeMoneyToMaximumC
 {
     /// <summary>
     ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="money"></param>
     /// <param name="children"></param>

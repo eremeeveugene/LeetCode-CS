@@ -16,6 +16,7 @@ public class BuyTwoChocolatesSorting : IBuyTwoChocolates
 {
     /// <summary>
     ///     Time complexity - O(n log n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="prices"></param>
     /// <param name="money"></param>

@@ -16,6 +16,7 @@ public class FibonacciNumberMatrixExponentiation : IFibonacciNumber
 {
     /// <summary>
     ///     Time complexity - O(log n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>

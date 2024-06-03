@@ -16,6 +16,7 @@ public class FindTheOriginalArrayOfPrefixXorIterative : IFindTheOriginalArrayOfP
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="pref"></param>
     /// <returns></returns>
