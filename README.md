@@ -4,7 +4,7 @@
 
 ## Overview
 
-Welcome to my repository of LeetCode solutions, all implemented in C#. Each solution is implemented using Test-Driven Development (TDD) and follows the AAA (Arrange-Act-Assert) pattern. I start by writing the tests before diving into the actual code, ensuring the solutions meet expected outcomes and minimizing bugs. This method is perfect for tackling algorithmic challenges where precision is crucial.
+Welcome to my repository of LeetCode solutions, all implemented in C#. Each solution is implemented using **Test-Driven Development (TDD)** and follows the **AAA (Arrange-Act-Assert)** pattern. I start by writing the tests before diving into the actual code, ensuring the solutions meet expected outcomes and minimizing bugs. This method is perfect for tackling algorithmic challenges where precision is crucial.
 
 ## Purpose
 
