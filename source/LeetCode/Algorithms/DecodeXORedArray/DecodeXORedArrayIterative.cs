@@ -16,6 +16,7 @@ public class DecodeXORedArrayIterative : IDecodeXORedArray
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="encoded"></param>
     /// <param name="first"></param>

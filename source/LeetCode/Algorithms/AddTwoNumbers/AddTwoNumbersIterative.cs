@@ -17,8 +17,8 @@ namespace LeetCode.Algorithms.AddTwoNumbers;
 public class AddTwoNumbersIterative : IAddTwoNumbers
 {
     /// <summary>
-    ///     Time complexity - O(max(n, m))
-    ///     Space complexity - O(max(n, m))
+    ///     Time complexity - O(n + m), where n is the length of the list l1 and m is the length of the list l2
+    ///     Space complexity - O(max(n, m)), where n is the length of the list l1 and m is the length of the list l2
     /// </summary>
     /// <param name="l1"></param>
     /// <param name="l2"></param>

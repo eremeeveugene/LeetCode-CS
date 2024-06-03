@@ -18,6 +18,7 @@ public class GoalParserInterpretationStringBuilder : IGoalParserInterpretation
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="command"></param>
     /// <returns></returns>

@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent;
 public class CheckIfTwoStringArraysAreEquivalentIterative : ICheckIfTwoStringArraysAreEquivalent
 {
     /// <summary>
-    ///     Time complexity - O(n)
+    ///     Time complexity - O(n + m)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="word1"></param>
     /// <param name="word2"></param>

@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.IsomorphicStrings;
 public class IsomorphicStringsDictionary : IIsomorphicStrings
 {
     /// <summary>
-    ///     Time complexity - O(n^2)
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="s"></param>
     /// <param name="t"></param>
@@ -26,9 +27,9 @@ public class IsomorphicStringsDictionary : IIsomorphicStrings
 
         for (var i = 0; i < s.Length; i++)
         {
-            if (dictionary.ContainsKey(s[i]))
+            if (dictionary.TryGetValue(s[i], out var value))
             {
-                if (dictionary[s[i]].Equals(t[i]))
+                if (value.Equals(t[i]))
                 {
                     continue;
                 }

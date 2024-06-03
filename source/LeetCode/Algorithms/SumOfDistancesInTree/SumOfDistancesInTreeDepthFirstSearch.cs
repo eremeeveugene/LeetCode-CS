@@ -14,6 +14,13 @@ namespace LeetCode.Algorithms.SumOfDistancesInTree;
 /// <inheritdoc />
 public class SumOfDistancesInTreeDepthFirstSearch : ISumOfDistancesInTree
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
+    /// </summary>
+    /// <param name="n"></param>
+    /// <param name="edges"></param>
+    /// <returns></returns>
     public int[] SumOfDistancesInTree(int n, int[][] edges)
     {
         var graph = new List<int>[n];

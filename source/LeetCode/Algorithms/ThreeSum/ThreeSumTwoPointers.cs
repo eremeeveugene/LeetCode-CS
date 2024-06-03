@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.ThreeSum;
 public class ThreeSumTwoPointers : IThreeSum
 {
     /// <summary>
-    ///     Time complexity - O (n^2)
+    ///     Time complexity - O(n^2)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>

@@ -15,7 +15,7 @@ namespace LeetCode.Algorithms.IsSubsequence;
 public class IsSubsequenceTwoPointers : IIsSubsequence
 {
     /// <summary>
-    ///     Time complexity - O(n+m)
+    ///     Time complexity - O(n + m)
     ///     Space complexity - O(1)
     /// </summary>
     /// <param name="s"></param>

@@ -15,7 +15,7 @@ namespace LeetCode.Algorithms.MaximalRectangle;
 public class MaximalRectangleStack : IMaximalRectangle
 {
     /// <summary>
-    ///     Time complexity - O(n*m)
+    ///     Time complexity - O(n * m)
     ///     Space complexity - O(n)
     /// </summary>
     /// <param name="matrix"></param>

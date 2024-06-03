@@ -16,6 +16,7 @@ public class CheckIfTwoStringArraysAreEquivalentConcat : ICheckIfTwoStringArrays
 {
     /// <summary>
     ///     Time complexity - O(n + m)
+    ///     Space complexity - O(n + m)
     /// </summary>
     /// <param name="word1"></param>
     /// <param name="word2"></param>

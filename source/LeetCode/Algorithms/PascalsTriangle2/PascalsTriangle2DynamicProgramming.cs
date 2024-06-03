@@ -14,6 +14,12 @@ namespace LeetCode.Algorithms.PascalsTriangle2;
 /// <inheritdoc />
 public class PascalsTriangle2DynamicProgramming : IPascalsTriangle2
 {
+    /// <summary>
+    ///     Time complexity - O(rowIndex^2)
+    ///     Space complexity - O(rowIndex)
+    /// </summary>
+    /// <param name="rowIndex"></param>
+    /// <returns></returns>
     public IList<int> GetRow(int rowIndex)
     {
         var row = new List<int> { 1 };

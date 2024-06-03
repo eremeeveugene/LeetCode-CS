@@ -15,7 +15,7 @@ namespace LeetCode.Algorithms.CheapestFlightsWithinKStops;
 public class CheapestFlightsWithinKStopsBellmanFord : ICheapestFlightsWithinKStops
 {
     /// <summary>
-    ///     Time complexity - O (k * E)
+    ///     Time complexity - O (k * E), where k is the number of stops allowed and E is the number of edges(flights).
     ///     Space complexity - O (n)
     /// </summary>
     /// <param name="n"></param>

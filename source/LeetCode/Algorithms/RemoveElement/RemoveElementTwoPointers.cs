@@ -15,8 +15,8 @@ namespace LeetCode.Algorithms.RemoveElement;
 public class RemoveElementTwoPointers : IRemoveElement
 {
     /// <summary>
-    ///     Time complexity - O (n)
-    ///     Space complexity - O (1)
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="nums"></param>
     /// <param name="val"></param>

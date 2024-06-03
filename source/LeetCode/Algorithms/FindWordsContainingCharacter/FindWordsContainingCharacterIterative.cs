@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.FindWordsContainingCharacter;
 public class FindWordsContainingCharacterIterative : IFindWordsContainingCharacter
 {
     /// <summary>
-    ///     Time complexity - O(n)
+    ///     Time complexity - O(n * m)
+    ///     Time complexity - O(1)
     /// </summary>
     /// <param name="words"></param>
     /// <param name="x"></param>

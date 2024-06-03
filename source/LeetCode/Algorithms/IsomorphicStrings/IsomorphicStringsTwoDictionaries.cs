@@ -16,6 +16,7 @@ public class IsomorphicStringsTwoDictionaries : IIsomorphicStrings
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="s"></param>
     /// <param name="t"></param>

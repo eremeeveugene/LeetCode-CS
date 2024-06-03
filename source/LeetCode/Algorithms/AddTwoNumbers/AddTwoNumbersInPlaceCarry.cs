@@ -17,8 +17,8 @@ namespace LeetCode.Algorithms.AddTwoNumbers;
 public class AddTwoNumbersInPlaceCarry : IAddTwoNumbers
 {
     /// <summary>
-    ///     Time complexity - O(max(n, m))
-    ///     Space complexity - O(max(n, m))
+    ///     Time complexity - O(n + m), where n is the length of the list l1 and m is the length of the list l2
+    ///     Space complexity - O(max(n, m)), where n is the length of the list l1 and m is the length of the list l2
     /// </summary>
     /// <param name="l1"></param>
     /// <param name="l2"></param>
@@ -58,7 +58,7 @@ public class AddTwoNumbersInPlaceCarry : IAddTwoNumbers
         return Reverse(head);
     }
 
-    public static ListNode? Reverse(ListNode? head)
+    private static ListNode? Reverse(ListNode? head)
     {
         ListNode? prev = null;
         var current = head;

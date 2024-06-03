@@ -16,6 +16,7 @@ public class SortThePeopleLinq : ISortThePeople
 {
     /// <summary>
     ///     Time complexity - O(n log n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="names"></param>
     /// <param name="heights"></param>

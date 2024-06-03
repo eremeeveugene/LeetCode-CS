@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.SearchInsertPosition;
 public class SearchInsertPositionBinarySearch : ISearchInsertPosition
 {
     /// <summary>
-    ///     Time complexity - O (log n)
+    ///     Time complexity - O(log n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="nums"></param>
     /// <param name="target"></param>

@@ -16,6 +16,7 @@ public class HappyNumberHashSetChars : IHappyNumber
 {
     /// <summary>
     ///     Time complexity - O(log n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>

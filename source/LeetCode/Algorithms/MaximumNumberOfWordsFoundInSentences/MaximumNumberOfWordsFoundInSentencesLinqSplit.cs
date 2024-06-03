@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences;
 public class MaximumNumberOfWordsFoundInSentencesLinqSplit : IMaximumNumberOfWordsFoundInSentences
 {
     /// <summary>
-    ///     Time complexity - O(n + m)
+    ///     Time complexity - O(n * m)
+    ///     Space complexity - O(n * m)
     /// </summary>
     /// <param name="sentences"></param>
     /// <returns></returns>

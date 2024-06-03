@@ -16,6 +16,7 @@ public class FindThePivotIntegerIterative : IFindThePivotInteger
 {
     /// <summary>
     ///     Time complexity - O(n log n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>

@@ -18,7 +18,7 @@ public class AddOneRowToTreeDepthFirstSearch : IAddOneRowToTree
 {
     /// <summary>
     ///     Time complexity - O(n), where n is the number of nodes in the tree
-    ///     Space complexity - O(d), where d is the tree depth
+    ///     Space complexity - O(h), where h is the height of the tree
     /// </summary>
     /// <param name="root"></param>
     /// <param name="val"></param>

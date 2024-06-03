@@ -16,6 +16,7 @@ public class ClimbingStairsDynamicProgramming : IClimbingStairs
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>

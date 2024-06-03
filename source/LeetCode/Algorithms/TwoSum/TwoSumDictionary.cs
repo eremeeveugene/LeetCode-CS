@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.TwoSum;
 public class TwoSumDictionary : ITwoSum
 {
     /// <summary>
-    ///     Time complexity - O (n)
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="nums"></param>
     /// <param name="target"></param>

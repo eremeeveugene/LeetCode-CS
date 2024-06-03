@@ -15,9 +15,9 @@ namespace LeetCode.Algorithms.CustomSortString;
 public class CustomSortStringDictionarySorting : ICustomSortString
 {
     /// <summary>
-    ///     Time complexity - O (m log m + n)
-    ///     Space complexity -  O (n + n)
-    ///     Where m is the length of the 's' string and n is the length of the 'order' string
+    ///     Time complexity - O (m log m + n), where m is the length of the 's' string and n is the length of the 'order'
+    ///     string
+    ///     Space complexity -  O (n + n), where m is the length of the 's' string and n is the length of the 'order' string
     /// </summary>
     /// <param name="order"></param>
     /// <param name="s"></param>

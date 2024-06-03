@@ -13,6 +13,13 @@ namespace LeetCode.Algorithms.NumberOfWonderfulSubstrings;
 
 public class NumberOfWonderfulSubstringsDictionary : INumberOfWonderfulSubstrings
 {
+    /// <summary>
+    ///     Time complexity - O(n * k), where n is the length of the string and k is the number of characters in the alphabet
+    ///     (which is constant, k = 10)
+    ///     Space complexity - O(n)
+    /// </summary>
+    /// <param name="word"></param>
+    /// <returns></returns>
     public long WonderfulSubstrings(string word)
     {
         long count = 0;

@@ -15,14 +15,18 @@ namespace LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent;
 public class CheckIfTwoStringArraysAreEquivalentTwoPointers : ICheckIfTwoStringArraysAreEquivalent
 {
     /// <summary>
-    ///     Time complexity - O(n)
+    ///     Time complexity - O(n + m)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="word1"></param>
     /// <param name="word2"></param>
     /// <returns></returns>
     public bool ArrayStringsAreEqual(string[] word1, string[] word2)
     {
-        int wordIndex1 = 0, wordIndex2 = 0, charIndex1 = 0, charIndex2 = 0;
+        var wordIndex1 = 0;
+        var wordIndex2 = 0;
+        var charIndex1 = 0;
+        var charIndex2 = 0;
 
         while (wordIndex1 < word1.Length && wordIndex2 < word2.Length)
         {

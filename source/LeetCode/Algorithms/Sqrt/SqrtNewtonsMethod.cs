@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.Sqrt;
 public class SqrtNewtonsMethod : ISqrt
 {
     /// <summary>
-    ///     Time complexity - O (1)
+    ///     Time complexity - O(log x)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="x"></param>
     /// <returns></returns>

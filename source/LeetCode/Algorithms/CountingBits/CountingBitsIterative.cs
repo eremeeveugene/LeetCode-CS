@@ -16,6 +16,7 @@ public class CountingBitsIterative : ICountingBits
 {
     /// <summary>
     ///     Time complexity - O (n log n)
+    ///     Space complexity - O (n log n)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>

@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.JewelsAndStones;
 public class JewelsAndStonesHashSet : IJewelsAndStones
 {
     /// <summary>
-    ///     Time complexity - O(n+m)
+    ///     Time complexity - O(n + m), where m is the length of the jewels string and n is the length of the stones string
+    ///     Space complexity - O(m), where m is the length of the jewels string
     /// </summary>
     /// <param name="jewels"></param>
     /// <param name="stones"></param>

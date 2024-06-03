@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.CountingBits;
 public class CountingBitsDynamicProgramming : ICountingBits
 {
     /// <summary>
-    ///     Time complexity - O (n)
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>

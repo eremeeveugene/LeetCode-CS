@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.PalindromeNumber;
 public class PalindromeNumberByConvertingToString : IPalindromeNumber
 {
     /// <summary>
-    ///     Time complexity - O(n)
+    ///     Time complexity - O(d), where d is the number of digits in the integer x
+    ///     Space complexity - O(d), where d is the number of digits in the integer x
     /// </summary>
     /// <param name="x"></param>
     /// <returns></returns>

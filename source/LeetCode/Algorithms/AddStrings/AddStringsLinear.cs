@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.AddStrings;
 public class AddStringsLinear : IAddStrings
 {
     /// <summary>
-    ///     Time complexity - O(n)
+    ///     Time complexity - O(max(n, m))
+    ///     Space complexity - O(max(n, m))
     /// </summary>
     /// <param name="num1"></param>
     /// <param name="num2"></param>

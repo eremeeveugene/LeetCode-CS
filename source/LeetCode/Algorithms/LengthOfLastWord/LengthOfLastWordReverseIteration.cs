@@ -16,6 +16,7 @@ public class LengthOfLastWordReverseIteration : ILengthOfLastWord
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="s"></param>
     /// <returns></returns>

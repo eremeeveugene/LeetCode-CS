@@ -17,8 +17,8 @@ namespace LeetCode.Algorithms.MinimumDepthOfBinaryTree;
 public class MinimumDepthOfBinaryTreeDepthFirstSearch : IMinimumDepthOfBinaryTree
 {
     /// <summary>
-    ///     Time complexity - O (n)
-    ///     Space complexity - O (n)
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="root"></param>
     /// <returns></returns>

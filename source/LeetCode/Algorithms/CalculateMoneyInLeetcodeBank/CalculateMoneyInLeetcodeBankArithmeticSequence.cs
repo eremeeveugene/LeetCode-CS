@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.CalculateMoneyInLeetcodeBank;
 public class CalculateMoneyInLeetcodeBankArithmeticSequence : ICalculateMoneyInLeetcodeBank
 {
     /// <summary>
-    ///     Time complexity - O(n)
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>
@@ -25,6 +26,7 @@ public class CalculateMoneyInLeetcodeBankArithmeticSequence : ICalculateMoneyInL
         var remainingDays = n % 7;
 
         var sumFullWeeks = 0;
+
         for (var week = 1; week <= fullWeeks; week++)
         {
             sumFullWeeks += 7 * ((2 * week) + ((7 - 1) * 1)) / 2;

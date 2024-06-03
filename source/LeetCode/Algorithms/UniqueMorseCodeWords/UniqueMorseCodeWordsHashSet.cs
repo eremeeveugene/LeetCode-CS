@@ -48,6 +48,7 @@ public class UniqueMorseCodeWordsHashSet : IUniqueMorseCodeWords
 
     /// <summary>
     ///     Time complexity - O(n * m)
+    ///     Space complexity - O(n * m)
     /// </summary>
     /// <param name="words"></param>
     /// <returns></returns>

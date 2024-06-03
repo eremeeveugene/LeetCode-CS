@@ -16,6 +16,7 @@ public class FindTheMaximumAchievableNumberLinear : IFindTheMaximumAchievableNum
 {
     /// <summary>
     ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="num"></param>
     /// <param name="t"></param>

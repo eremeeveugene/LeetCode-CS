@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.PlusOne;
 public class PlusOneIncrementDigitArray : IPlusOne
 {
     /// <summary>
-    ///     Time complexity - O (n)
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="digits"></param>
     /// <returns></returns>

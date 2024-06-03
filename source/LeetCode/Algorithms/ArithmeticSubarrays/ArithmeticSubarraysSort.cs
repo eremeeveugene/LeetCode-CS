@@ -16,6 +16,7 @@ public class ArithmeticSubarraysSort : IArithmeticSubarrays
 {
     /// <summary>
     ///     Time complexity - O(m * n log n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="nums"></param>
     /// <param name="l"></param>

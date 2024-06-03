@@ -15,7 +15,10 @@ namespace LeetCode.Algorithms.AddToArrayFormOfInteger;
 public class AddToArrayFormOfIntegerDivision : IAddToArrayFormOfInteger
 {
     /// <summary>
-    ///     Time complexity - O(max(n1, n2))
+    ///     Time complexity - O(max(n, log k)), where n is the length of the array num and log k is the number of digits in the
+    ///     integer k
+    ///     Space complexity - O(max(n, log k)), where n is the length of the array num and log k is the number of digits in
+    ///     the integer k
     /// </summary>
     /// <param name="num"></param>
     /// <param name="k"></param>

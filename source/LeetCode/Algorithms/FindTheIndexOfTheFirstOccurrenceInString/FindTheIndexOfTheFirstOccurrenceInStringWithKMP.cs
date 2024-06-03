@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 public class FindTheIndexOfTheFirstOccurrenceInStringWithKMP : IFindTheIndexOfTheFirstOccurrenceInString
 {
     /// <summary>
-    ///     Time complexity - O(n+m)
+    ///     Time complexity - O(n + m)
+    ///     Space complexity - O(m)
     /// </summary>
     /// <param name="haystack"></param>
     /// <param name="needle"></param>

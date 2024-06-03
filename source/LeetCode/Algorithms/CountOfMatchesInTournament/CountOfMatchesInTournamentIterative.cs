@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.CountOfMatchesInTournament;
 public class CountOfMatchesInTournamentIterative : ICountOfMatchesInTournament
 {
     /// <summary>
-    ///     Time complexity - O(n)
+    ///     Time complexity - O(log n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>

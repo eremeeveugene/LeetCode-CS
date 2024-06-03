@@ -15,7 +15,7 @@ namespace LeetCode.Algorithms.FloodFill;
 public class FloodFillIterative : IFloodFill
 {
     /// <summary>
-    ///     Time complexity - O(n*m)
+    ///     Time complexity - O(n * m)
     ///     Space complexity - O(n)
     /// </summary>
     /// <param name="image"></param>

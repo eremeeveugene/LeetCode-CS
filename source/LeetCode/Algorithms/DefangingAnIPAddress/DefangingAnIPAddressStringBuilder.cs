@@ -18,6 +18,7 @@ public class DefangingAnIPAddressStringBuilder : IDefangingAnIPAddress
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="address"></param>
     /// <returns></returns>

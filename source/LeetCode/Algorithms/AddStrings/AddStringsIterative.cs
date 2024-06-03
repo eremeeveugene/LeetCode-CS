@@ -17,7 +17,8 @@ namespace LeetCode.Algorithms.AddStrings;
 public class AddStringsIterative : IAddStrings
 {
     /// <summary>
-    ///     Time complexity - O(max(n1, n2))
+    ///     Time complexity - O(max(n, m))
+    ///     Space complexity - O(max(n, m))
     /// </summary>
     /// <param name="num1"></param>
     /// <param name="num2"></param>

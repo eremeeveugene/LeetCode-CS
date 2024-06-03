@@ -16,6 +16,7 @@ public class SingleNumber2Bitwise : ISingleNumber2
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>

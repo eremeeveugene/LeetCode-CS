@@ -16,6 +16,7 @@ public class DivisibleAndNonDivisibleSumsDifferenceConstant : IDivisibleAndNonDi
 {
     /// <summary>
     ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
     /// <param name="m"></param>

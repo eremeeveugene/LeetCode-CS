@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.AddBinary;
 public class AddBinaryLinear : IAddBinary
 {
     /// <summary>
-    ///     Time complexity - O(max(n1, n2))
+    ///     Time complexity - O(max(n, m)), where n is the length of string a and is the length of string b
+    ///     Space complexity - O(max(n, m)), where n is the length of string a and is the length of string b
     /// </summary>
     /// <param name="a"></param>
     /// <param name="b"></param>

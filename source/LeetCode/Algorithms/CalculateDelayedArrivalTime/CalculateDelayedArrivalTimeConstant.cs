@@ -16,6 +16,7 @@ public class CalculateDelayedArrivalTimeConstant : ICalculateDelayedArrivalTime
 {
     /// <summary>
     ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="arrivalTime"></param>
     /// <param name="delayedTime"></param>

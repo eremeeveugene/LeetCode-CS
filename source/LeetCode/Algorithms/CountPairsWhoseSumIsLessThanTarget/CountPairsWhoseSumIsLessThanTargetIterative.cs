@@ -16,6 +16,7 @@ public class CountPairsWhoseSumIsLessThanTargetIterative : ICountPairsWhoseSumIs
 {
     /// <summary>
     ///     Time complexity - O(n^2)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="nums"></param>
     /// <param name="target"></param>

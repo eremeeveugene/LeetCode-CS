@@ -16,6 +16,7 @@ public class FindThePivotIntegerConstant : IFindThePivotInteger
 {
     /// <summary>
     ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>
