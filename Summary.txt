@@ -1,15 +1,15 @@
 Summary
-  Generated on: 6/3/2024 - 2:25:19 PM
-  Coverage date: 6/3/2024 - 2:24:16 PM - 6/3/2024 - 2:24:25 PM
+  Generated on: 6/3/2024 - 6:41:02 PM
+  Coverage date: 6/3/2024 - 6:40:13 PM - 6/3/2024 - 6:40:19 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
   Classes: 382
   Files: 382
   Line coverage: 98.6%
-  Covered lines: 6943
+  Covered lines: 6945
   Uncovered lines: 95
-  Coverable lines: 7038
-  Total lines: 18634
+  Coverable lines: 7040
+  Total lines: 18867
   Branch coverage: 97% (2658 of 2740)
   Covered branches: 2658
   Total branches: 2740
@@ -316,9 +316,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.RichestCustomerWealth.RichestCustomerWealthLinq                                                                      100.0%
   LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral                                                                                 88.4%
   LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol                                                                                  37.5%
-  LeetCode.Algorithms.RomanToInteger.Iterative.RomanToIntegerIterative                                                                     100.0%
   LeetCode.Algorithms.RomanToInteger.Iterative.SubtractiveRomanNumeral                                                                      87.5%
   LeetCode.Algorithms.RomanToInteger.RomanToIntegerDictionary                                                                              100.0%
+  LeetCode.Algorithms.RomanToInteger.RomanToIntegerIterative                                                                               100.0%
   LeetCode.Algorithms.RunningSumOf1dArray.RunningSumOf1dArrayIterative                                                                      80.0%
   LeetCode.Algorithms.SameTree.SameTreeRecursive                                                                                           100.0%
   LeetCode.Algorithms.ScoreAfterFlippingMatrix.ScoreAfterFlippingMatrixIterative                                                           100.0%
