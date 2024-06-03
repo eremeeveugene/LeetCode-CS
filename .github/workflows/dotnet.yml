@@ -8,51 +8,64 @@ on:
 
 jobs:
   pipeline:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     defaults:
       run:
         working-directory: source
     steps:
       - uses: actions/checkout@v3
+      
       - name: Get .NET version from global.json
         id: dotnet-version
         run: |
-          DOTNET_VERSION=$(jq -r '.sdk.version' ../global.json)
-          echo "DOTNET_VERSION=$DOTNET_VERSION" >> $GITHUB_ENV
+          $dotnetVersion = (Get-Content -Raw -Path "../global.json" | ConvertFrom-Json).sdk.version
+          echo "DOTNET_VERSION=$dotnetVersion" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+      
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: ${{ needs.setup.outputs.dotnet-version }}
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+      
       - name: Restore dependencies
         run: dotnet restore
+      
       - name: Build
         run: dotnet build --no-restore
+      
       - name: Run Tests with Coverage
         run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
+      
       - name: Install .NET Format tool
         run: dotnet tool install -g dotnet-format
+      
       - name: Check Code Style
         run: dotnet format --verify-no-changes --verbosity diagnostic
+      
       - name: Install Report Generator Tool
         run: dotnet tool install --global dotnet-reportgenerator-globaltool
+      
       - name: Generate Coverage Report
-        run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -report types:"HtmlInline_AzurePipelines;Cobertura"
+        run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
+      
       - name: Generate Summary Report
         run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"TextSummary"
+      
       - name: Check Coverage Percentage
         run: |
-          coveragePercentage=$(grep 'Line coverage:' coverage/Summary.txt | awk '{print $3}' | sed 's/%//')
-          if (( $(echo "$coveragePercentage < 90" | bc -l) )); then
-            echo "Coverage is below 90%. It's at $coveragePercentage%"
+          $coveragePercentage = (Get-Content -Path "coverage/Summary.txt" | Select-String -Pattern 'Line coverage:' | ForEach-Object { $_ -match '(\d+\.\d+)%' | Out-Null; $matches[1] })
+          if ($coveragePercentage -lt 90) {
+            Write-Error "Coverage is below 90%. It's at $coveragePercentage%"
             exit 1
-          else
-            echo "Coverage is above 90%. It's at $coveragePercentage%"
-          fi
+          } else {
+            Write-Output "Coverage is above 90%. It's at $coveragePercentage%"
+          }
+      
       - name: Upload Coverage Report
         uses: actions/upload-artifact@v3
         with:
           name: coverage-report
           path: ${{ github.workspace }}/source/coverage
+      
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
         uses: peaceiris/actions-gh-pages@v3
