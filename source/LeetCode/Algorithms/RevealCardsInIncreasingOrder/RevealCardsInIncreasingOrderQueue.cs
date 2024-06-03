@@ -14,6 +14,12 @@ namespace LeetCode.Algorithms.RevealCardsInIncreasingOrder;
 /// <inheritdoc />
 public class RevealCardsInIncreasingOrderQueue : IRevealCardsInIncreasingOrder
 {
+    /// <summary>
+    ///     Time complexity - O(n log n)
+    ///     Space complexity - O(n)
+    /// </summary>
+    /// <param name="deck"></param>
+    /// <returns></returns>
     public int[] DeckRevealedIncreasing(int[] deck)
     {
         Array.Sort(deck);

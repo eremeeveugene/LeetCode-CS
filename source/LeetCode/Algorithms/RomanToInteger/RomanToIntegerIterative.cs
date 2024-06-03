@@ -9,13 +9,16 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.RomanToInteger.Iterative;
+using LeetCode.Algorithms.RomanToInteger.Iterative;
+
+namespace LeetCode.Algorithms.RomanToInteger;
 
 /// <inheritdoc />
 public class RomanToIntegerIterative : IRomanToInteger
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="romanString"></param>
     /// <returns></returns>
@@ -28,9 +31,8 @@ public class RomanToIntegerIterative : IRomanToInteger
             var currentChar = romanString.ElementAt(i);
             var nextChar = romanString.ElementAtOrDefault(i + 1);
 
-            var subtractiveRomanNumeral =
-                SubtractiveRomanNumeral.SubtractiveRomanNumerals.FirstOrDefault(
-                    s => s.Symbol.Char.Equals(currentChar) && s.SecondSymbol.Char.Equals(nextChar));
+            var subtractiveRomanNumeral = SubtractiveRomanNumeral.SubtractiveRomanNumerals.FirstOrDefault(
+                s => s.Symbol.Char.Equals(currentChar) && s.SecondSymbol.Char.Equals(nextChar));
 
             if (subtractiveRomanNumeral != null)
             {

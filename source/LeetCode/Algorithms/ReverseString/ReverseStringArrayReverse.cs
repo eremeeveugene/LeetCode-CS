@@ -16,6 +16,7 @@ public class ReverseStringArrayReverse : IReverseString
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="s"></param>
     public void ReverseString(char[] s)

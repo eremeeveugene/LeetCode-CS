@@ -14,6 +14,12 @@ namespace LeetCode.Algorithms.TrappingRainWater;
 /// <inheritdoc />
 public class TrappingRainWaterIterative : ITrappingRainWater
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="height"></param>
+    /// <returns></returns>
     public int Trap(int[] height)
     {
         var result = 0;

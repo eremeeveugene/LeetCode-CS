@@ -33,6 +33,7 @@ public class RomanToIntegerDictionary : IRomanToInteger
 
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="romanString"></param>
     /// <returns></returns>

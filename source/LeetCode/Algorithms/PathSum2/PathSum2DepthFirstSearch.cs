@@ -18,7 +18,7 @@ public class PathSum2DepthFirstSearch : IPathSum2
 {
     /// <summary>
     ///     Time complexity - O(n log n)
-    ///     Space complexity - O(n*h)
+    ///     Space complexity - O(n * h)
     /// </summary>
     /// <param name="root"></param>
     /// <param name="targetSum"></param>

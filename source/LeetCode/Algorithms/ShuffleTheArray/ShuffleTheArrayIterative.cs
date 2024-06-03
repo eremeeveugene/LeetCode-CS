@@ -16,6 +16,7 @@ public class ShuffleTheArrayIterative : IShuffleTheArray
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="nums"></param>
     /// <param name="n"></param>

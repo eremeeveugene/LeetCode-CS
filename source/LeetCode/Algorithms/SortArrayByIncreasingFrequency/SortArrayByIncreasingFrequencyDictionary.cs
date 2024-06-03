@@ -16,6 +16,7 @@ public class SortArrayByIncreasingFrequencyDictionary : ISortArrayByIncreasingFr
 {
     /// <summary>
     ///     Time complexity - O(n log n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>

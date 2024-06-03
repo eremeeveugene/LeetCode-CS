@@ -16,6 +16,12 @@ namespace LeetCode.Algorithms.RemoveNodesFromLinkedList;
 /// <inheritdoc />
 public class RemoveNodesFromLinkedListIterative : IRemoveNodesFromLinkedList
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="head"></param>
+    /// <returns></returns>
     public ListNode? RemoveNodes(ListNode? head)
     {
         head = Reverse(head);

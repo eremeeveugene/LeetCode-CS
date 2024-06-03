@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger;
 public class SubtractTheProductAndSumOfDigitsOfAnIntegerDivision : ISubtractTheProductAndSumOfDigitsOfAnInteger
 {
     /// <summary>
-    ///     Time complexity - O(n)
+    ///     Time complexity - O(d), where d is the number of digits in the integer n
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>

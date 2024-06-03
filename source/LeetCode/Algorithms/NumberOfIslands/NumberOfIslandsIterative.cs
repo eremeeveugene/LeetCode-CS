@@ -15,8 +15,8 @@ namespace LeetCode.Algorithms.NumberOfIslands;
 public class NumberOfIslandsIterative : INumberOfIslands
 {
     /// <summary>
-    ///     Time complexity - O(n*m)
-    ///     Space complexity - O(n*m)
+    ///     Time complexity - O(n * m)
+    ///     Space complexity - O(n * m)
     /// </summary>
     /// <param name="grid"></param>
     /// <returns></returns>

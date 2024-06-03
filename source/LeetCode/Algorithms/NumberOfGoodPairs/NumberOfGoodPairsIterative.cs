@@ -16,6 +16,7 @@ public class NumberOfGoodPairsIterative : INumberOfGoodPairs
 {
     /// <summary>
     ///     Time complexity - O(n^2)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>

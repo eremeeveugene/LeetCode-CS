@@ -17,7 +17,7 @@ public class OpenTheLockBreadthFirstSearch : IOpenTheLock
     private const string Start = "0000";
 
     /// <summary>
-    ///     Time complexity - O(n*m)
+    ///     Time complexity - O(n * m)
     ///     Space complexity - O(n)
     /// </summary>
     /// <param name="deadends"></param>

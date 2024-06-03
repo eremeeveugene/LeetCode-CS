@@ -16,6 +16,7 @@ public class RichestCustomerWealthLinq : IRichestCustomerWealth
 {
     /// <summary>
     ///     Time complexity - O(n * m)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="accounts"></param>
     /// <returns></returns>

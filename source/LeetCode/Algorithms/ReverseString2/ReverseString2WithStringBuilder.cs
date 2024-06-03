@@ -18,6 +18,7 @@ public class ReverseString2WithStringBuilder : IReverseString2
 {
     /// <summary>
     ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="s"></param>
     /// <param name="k"></param>

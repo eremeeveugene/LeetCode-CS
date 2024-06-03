@@ -16,6 +16,7 @@ public class PerfectSquaresIterative : IPerfectSquares
 {
     /// <summary>
     ///     Time complexity - O(n sqrt(n))
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>
