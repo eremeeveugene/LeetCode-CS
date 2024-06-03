@@ -14,13 +14,17 @@ The primary goal of this repository is to improve my own skills and demonstrate 
 
 I analyze the time and space complexity using Big O notation for every algorithm solution in this repo. This analysis helps me understand the efficiency and scalability of each solution.
 
+## Automation Jobs
+
+I've created automation jobs for this repository to streamline the development process. These jobs are defined in the `dotnet.yml` file and include steps for building the project, running tests with coverage, checking code style, and generating and uploading coverage reports. The jobs run on every push and pull request to the `develop` branch.
+
 ## Code Coverage Report
 
 You can view the code coverage report [here](https://eremeeveugene.github.io/LeetCode-CS/).
 
 ## LeetCode Profile
 
-Check out my [LeetCode profile](https://leetcode.com/u/eremeeveugene/) to see more about my problem-solving journey.
+Check out my [LeetCode](https://leetcode.com/u/eremeeveugene/) profile to see more about my problem-solving journey.
 
 ## Technologies Used
 
