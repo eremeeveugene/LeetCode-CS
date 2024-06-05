@@ -28,8 +28,8 @@ public abstract class BinaryTreePreorderTraversalTestsBase<T> where T : IBinaryT
         // Arrange
         var solution = new T();
 
-        IList<int?> expectedResult = JsonHelper<int?>.JsonArrayToList(expectedResultArrayJson);
-        IList<int?> rootArray = JsonHelper<int?>.JsonArrayToList(rootArrayJson);
+        var expectedResult = JsonHelper<int?>.JsonArrayToList(expectedResultArrayJson);
+        var rootArray = JsonHelper<int?>.JsonArrayToList(rootArrayJson);
         var inputNode = TreeNode.BuildTree(rootArray);
 
         // Act

@@ -176,6 +176,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [989. Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/description/)
 - [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/description/)
 - [997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/description/)
+- [1002. Find Common Characters](https://leetcode.com/problems/find-common-characters/description/)
 - [1013. Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/description/)
 - [1025. Divisor Game](https://leetcode.com/problems/divisor-game/description/)
 - [1108. Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/description/)

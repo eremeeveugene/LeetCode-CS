@@ -25,7 +25,7 @@ public abstract class DiameterOfBinaryTreeTestsBase<T> where T : IDiameterOfBina
         int expectedResult)
     {
         // Arrange
-        IList<int?> arrayRoot = JsonHelper<int?>.JsonArrayToList(jsonArrayRoot);
+        var arrayRoot = JsonHelper<int?>.JsonArrayToList(jsonArrayRoot);
         var root = TreeNode.BuildTree(arrayRoot);
 
         var solution = new T();

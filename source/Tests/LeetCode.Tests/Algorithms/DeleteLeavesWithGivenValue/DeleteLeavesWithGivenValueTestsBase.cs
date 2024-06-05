@@ -29,10 +29,10 @@ public abstract class DeleteLeavesWithGivenValueTestsBase<T> where T : IDeleteLe
         string expectedResultJsonArray)
     {
         // Arrange
-        IList<int?> rootArray = JsonHelper<int?>.JsonArrayToList(rootJsonArray);
+        var rootArray = JsonHelper<int?>.JsonArrayToList(rootJsonArray);
         var root = TreeNode.BuildTree(rootArray);
 
-        IList<int?> expectedResultArray = JsonHelper<int?>.JsonArrayToList(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int?>.JsonArrayToList(expectedResultJsonArray);
         var expectedResult = TreeNode.BuildTree(expectedResultArray);
 
         var solution = new T();
