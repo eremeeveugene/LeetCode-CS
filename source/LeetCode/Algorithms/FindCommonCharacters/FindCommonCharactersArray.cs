@@ -15,49 +15,42 @@ namespace LeetCode.Algorithms.FindCommonCharacters;
 public class FindCommonCharactersArray : IFindCommonCharacters
 {
     /// <summary>
-    ///     Time complexity - O(n * L), where n is the number of words and L is the average length of the words
-    ///     Space complexity - O(1)
+    ///     Time complexity - O(n * m), where n is the number of words and m is the maximum length of the words
+    ///     Space complexity - O(n * m), where n is the number of words and m is the maximum length of the words
     /// </summary>
     /// <param name="words"></param>
     /// <returns></returns>
     public IList<string> CommonChars(string[] words)
     {
-        var result = words[0].ToArray();
+        var minFrequency = new int[26];
+
+        Array.Fill(minFrequency, int.MaxValue);
 
         foreach (var word in words)
         {
-            var wordDictionary = new Dictionary<char, int>();
+            var charCount = new int[26];
 
-            foreach (var c in word.Where(c => !wordDictionary.TryAdd(c, 1)))
+            foreach (var c in word)
             {
-                wordDictionary[c]++;
+                charCount[c - 'a']++;
             }
 
-            for (var i = 0; i < result.Length; i++)
+            for (var i = 0; i < 26; i++)
             {
-                if (result[i] == ' ')
-                {
-                    continue;
-                }
-
-                if (wordDictionary.TryGetValue(result[i], out var value))
-                {
-                    if (value > 0)
-                    {
-                        wordDictionary[result[i]] = --value;
-                    }
-                    else
-                    {
-                        result[i] = ' ';
-                    }
-                }
-                else
-                {
-                    result[i] = ' ';
-                }
+                minFrequency[i] = Math.Min(minFrequency[i], charCount[i]);
             }
         }
 
-        return result.Where(c => c != ' ').Select(c => c.ToString()).ToArray();
+        var commonChars = new List<string>();
+
+        for (var i = 0; i < 26; i++)
+        {
+            for (var j = 0; j < minFrequency[i]; j++)
+            {
+                commonChars.Add(((char)(i + 'a')).ToString());
+            }
+        }
+
+        return commonChars;
     }
 }

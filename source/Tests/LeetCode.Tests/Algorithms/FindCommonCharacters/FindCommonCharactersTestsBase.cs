@@ -25,6 +25,8 @@ public abstract class FindCommonCharactersTestsBase<T> where T : IFindCommonChar
     [DataRow(new[] { "abc", "def", "ghi" }, "[]")]
     [DataRow(new[] { "a" }, "[\"a\"]")]
     [DataRow(new[] { "abc", "abc", "abc" }, "[\"a\",\"b\",\"c\"]")]
+    [DataRow(new[] { "daaccccd", "adacbdda", "abddbaba", "bacbcbcb", "bdaaaddc", "cdadacba", "bacbdcda", "bacdaacd" },
+        "[\"a\"]")]
     public void CommonChars_WithGivenWordsArray_ReturnsCommonCharacters(string[] words, string expectedResultJsonArray)
     {
         // Arrange
@@ -36,6 +38,6 @@ public abstract class FindCommonCharactersTestsBase<T> where T : IFindCommonChar
         var actualResult = solution.CommonChars(words);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult.ToList(), actualResult.ToList());
+        CollectionAssert.AreEquivalent(expectedResult.ToList(), actualResult.ToList());
     }
 }

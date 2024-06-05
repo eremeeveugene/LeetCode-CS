@@ -15,16 +15,16 @@ namespace LeetCode.Algorithms.FindCommonCharacters;
 public class FindCommonCharactersDictionary : IFindCommonCharacters
 {
     /// <summary>
-    ///     Time complexity - O(n * L), where n is the number of words and L is the average length of the words
-    ///     Space complexity - O(L), L is the average length of the words
+    ///     Time complexity - O(n * m), where n is the number of words and m is the maximum length of the words
+    ///     Space complexity - O(m), m is the maximum length of the words
     /// </summary>
     /// <param name="words"></param>
     /// <returns></returns>
     public IList<string> CommonChars(string[] words)
     {
-        var result = words[0].ToArray();
+        var commonChars = words[0].ToList();
 
-        foreach (var word in words)
+        foreach (var word in words.Skip(1))
         {
             var wordDictionary = new Dictionary<char, int>();
 
@@ -33,31 +33,26 @@ public class FindCommonCharactersDictionary : IFindCommonCharacters
                 wordDictionary[c]++;
             }
 
-            for (var i = 0; i < result.Length; i++)
-            {
-                if (result[i] == ' ')
-                {
-                    continue;
-                }
+            var charsToRemove = new List<char>();
 
-                if (wordDictionary.TryGetValue(result[i], out var value))
+            foreach (var c in commonChars)
+            {
+                if (wordDictionary.TryGetValue(c, out var count) && count > 0)
                 {
-                    if (value > 0)
-                    {
-                        wordDictionary[result[i]] = --value;
-                    }
-                    else
-                    {
-                        result[i] = ' ';
-                    }
+                    wordDictionary[c]--;
                 }
                 else
                 {
-                    result[i] = ' ';
+                    charsToRemove.Add(c);
                 }
+            }
+
+            foreach (var charToRemove in charsToRemove)
+            {
+                commonChars.Remove(charToRemove);
             }
         }
 
-        return result.Where(c => c != ' ').Select(c => c.ToString()).ToArray();
+        return commonChars.Select(c => c.ToString()).ToList();
     }
 }
