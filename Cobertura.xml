@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9865056818181818" branch-rate="0.9700729927007299" lines-covered="6945" lines-valid="7040" branches-covered="2658" branches-valid="2740" complexity="2857" version="0" timestamp="1717440061">
+<coverage line-rate="0.9866121758737317" branch-rate="0.9703113685734974" lines-covered="7001" lines-valid="7096" branches-covered="2680" branches-valid="2762" complexity="2879" version="0" timestamp="1717564368">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.9867828612926652" branch-rate="0.972263868065967" complexity="2779">
+    <package name="LeetCode" line-rate="0.9868894971906066" branch-rate="0.9724907063197026" complexity="2801">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -7751,6 +7751,138 @@
             <line number="43" hits="10" branch="false" />
             <line number="45" hits="2" branch="false" />
             <line number="46" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.LongestPalindrome.LongestPalindromeArray" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\LongestPalindrome\LongestPalindromeArray.cs" line-rate="1" branch-rate="1" complexity="10">
+          <methods>
+            <method name="LongestPalindrome" signature="(System.String)" line-rate="1" branch-rate="1" complexity="10">
+              <lines>
+                <line number="24" hits="6" branch="false" />
+                <line number="25" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="26" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+                <line number="30" hits="5" branch="false" />
+                <line number="32" hits="2041" branch="true" condition-coverage="100% (2/2)" />
+                <line number="33" hits="1013" branch="false" />
+                <line number="34" hits="1013" branch="false" />
+                <line number="35" hits="1013" branch="false" />
+                <line number="37" hits="5" branch="false" />
+                <line number="38" hits="5" branch="false" />
+                <line number="40" hits="1295" branch="true" condition-coverage="100% (2/2)" />
+                <line number="41" hits="640" branch="false" />
+                <line number="42" hits="640" branch="true" condition-coverage="100% (2/2)" />
+                <line number="43" hits="619" branch="false" />
+                <line number="44" hits="619" branch="false" />
+                <line number="45" hits="619" branch="false" />
+                <line number="47" hits="21" branch="false" />
+                <line number="48" hits="21" branch="false" />
+                <line number="49" hits="21" branch="false" />
+                <line number="50" hits="21" branch="false" />
+                <line number="51" hits="640" branch="false" />
+                <line number="53" hits="5" branch="true" condition-coverage="100% (2/2)" />
+                <line number="54" hits="4" branch="false" />
+                <line number="55" hits="4" branch="false" />
+                <line number="56" hits="4" branch="false" />
+                <line number="58" hits="5" branch="false" />
+                <line number="59" hits="6" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="6" branch="false" />
+            <line number="25" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="26" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+            <line number="30" hits="5" branch="false" />
+            <line number="32" hits="2041" branch="true" condition-coverage="100% (2/2)" />
+            <line number="33" hits="1013" branch="false" />
+            <line number="34" hits="1013" branch="false" />
+            <line number="35" hits="1013" branch="false" />
+            <line number="37" hits="5" branch="false" />
+            <line number="38" hits="5" branch="false" />
+            <line number="40" hits="1295" branch="true" condition-coverage="100% (2/2)" />
+            <line number="41" hits="640" branch="false" />
+            <line number="42" hits="640" branch="true" condition-coverage="100% (2/2)" />
+            <line number="43" hits="619" branch="false" />
+            <line number="44" hits="619" branch="false" />
+            <line number="45" hits="619" branch="false" />
+            <line number="47" hits="21" branch="false" />
+            <line number="48" hits="21" branch="false" />
+            <line number="49" hits="21" branch="false" />
+            <line number="50" hits="21" branch="false" />
+            <line number="51" hits="640" branch="false" />
+            <line number="53" hits="5" branch="true" condition-coverage="100% (2/2)" />
+            <line number="54" hits="4" branch="false" />
+            <line number="55" hits="4" branch="false" />
+            <line number="56" hits="4" branch="false" />
+            <line number="58" hits="5" branch="false" />
+            <line number="59" hits="6" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.LongestPalindrome.LongestPalindromeDictionary" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\LongestPalindrome\LongestPalindromeDictionary.cs" line-rate="1" branch-rate="1" complexity="12">
+          <methods>
+            <method name="LongestPalindrome" signature="(System.String)" line-rate="1" branch-rate="1" complexity="12">
+              <lines>
+                <line number="24" hits="6" branch="false" />
+                <line number="25" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="26" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+                <line number="30" hits="5" branch="false" />
+                <line number="32" hits="2982" branch="true" condition-coverage="100% (4/4)" />
+                <line number="33" hits="977" branch="false" />
+                <line number="34" hits="977" branch="false" />
+                <line number="35" hits="977" branch="false" />
+                <line number="37" hits="5" branch="false" />
+                <line number="38" hits="5" branch="false" />
+                <line number="40" hits="87" branch="true" condition-coverage="100% (2/2)" />
+                <line number="41" hits="36" branch="false" />
+                <line number="42" hits="36" branch="true" condition-coverage="100% (2/2)" />
+                <line number="43" hits="15" branch="false" />
+                <line number="44" hits="15" branch="false" />
+                <line number="45" hits="15" branch="false" />
+                <line number="47" hits="21" branch="false" />
+                <line number="48" hits="21" branch="false" />
+                <line number="49" hits="21" branch="false" />
+                <line number="50" hits="21" branch="false" />
+                <line number="51" hits="36" branch="false" />
+                <line number="53" hits="5" branch="true" condition-coverage="100% (2/2)" />
+                <line number="54" hits="4" branch="false" />
+                <line number="55" hits="4" branch="false" />
+                <line number="56" hits="4" branch="false" />
+                <line number="58" hits="5" branch="false" />
+                <line number="59" hits="6" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="6" branch="false" />
+            <line number="25" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="26" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+            <line number="30" hits="5" branch="false" />
+            <line number="32" hits="2982" branch="true" condition-coverage="100% (4/4)" />
+            <line number="33" hits="977" branch="false" />
+            <line number="34" hits="977" branch="false" />
+            <line number="35" hits="977" branch="false" />
+            <line number="37" hits="5" branch="false" />
+            <line number="38" hits="5" branch="false" />
+            <line number="40" hits="87" branch="true" condition-coverage="100% (2/2)" />
+            <line number="41" hits="36" branch="false" />
+            <line number="42" hits="36" branch="true" condition-coverage="100% (2/2)" />
+            <line number="43" hits="15" branch="false" />
+            <line number="44" hits="15" branch="false" />
+            <line number="45" hits="15" branch="false" />
+            <line number="47" hits="21" branch="false" />
+            <line number="48" hits="21" branch="false" />
+            <line number="49" hits="21" branch="false" />
+            <line number="50" hits="21" branch="false" />
+            <line number="51" hits="36" branch="false" />
+            <line number="53" hits="5" branch="true" condition-coverage="100% (2/2)" />
+            <line number="54" hits="4" branch="false" />
+            <line number="55" hits="4" branch="false" />
+            <line number="56" hits="4" branch="false" />
+            <line number="58" hits="5" branch="false" />
+            <line number="59" hits="6" branch="false" />
           </lines>
         </class>
         <class name="LeetCode.Algorithms.LongestPalindromicSubstring.LongestPalindromicSubstringTwoPointers" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\LongestPalindromicSubstring\LongestPalindromicSubstringTwoPointers.cs" line-rate="1" branch-rate="1" complexity="12">

@@ -1,21 +1,21 @@
 Summary
-  Generated on: 6/3/2024 - 6:41:02 PM
-  Coverage date: 6/3/2024 - 6:40:13 PM - 6/3/2024 - 6:40:19 PM
+  Generated on: 6/5/2024 - 5:12:49 AM
+  Coverage date: 6/5/2024 - 5:11:57 AM - 6/5/2024 - 5:12:04 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 382
-  Files: 382
+  Classes: 384
+  Files: 384
   Line coverage: 98.6%
-  Covered lines: 6945
+  Covered lines: 7001
   Uncovered lines: 95
-  Coverable lines: 7040
-  Total lines: 18867
-  Branch coverage: 97% (2658 of 2740)
-  Covered branches: 2658
-  Total branches: 2740
-  Method coverage: 98.6% (510 of 517)
-  Covered methods: 510
-  Total methods: 517
+  Coverable lines: 7096
+  Total lines: 18987
+  Branch coverage: 97% (2680 of 2762)
+  Covered branches: 2680
+  Total branches: 2762
+  Method coverage: 98.6% (512 of 519)
+  Covered methods: 512
+  Total methods: 519
 
 LeetCode                                                                                                                                    98.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -180,6 +180,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixDivideAndConquer                                                               96.1%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixHorizontalScanning                                                            100.0%
   LeetCode.Algorithms.LongestIdealSubsequence.LongestIdealSubsequenceDynamicProgramming                                                    100.0%
+  LeetCode.Algorithms.LongestPalindrome.LongestPalindromeArray                                                                             100.0%
+  LeetCode.Algorithms.LongestPalindrome.LongestPalindromeDictionary                                                                        100.0%
   LeetCode.Algorithms.LongestPalindromicSubstring.LongestPalindromicSubstringTwoPointers                                                   100.0%
   LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters.LongestSubstringWithoutRepeatingCharactersSlidingWindow                   100.0%
   LeetCode.Algorithms.MajorityElement.MajorityElementDictionary                                                                            100.0%
