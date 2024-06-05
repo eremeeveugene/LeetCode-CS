@@ -1,21 +1,21 @@
 Summary
-  Generated on: 6/5/2024 - 5:12:49 AM
-  Coverage date: 6/5/2024 - 5:11:57 AM - 6/5/2024 - 5:12:04 AM
+  Generated on: 6/5/2024 - 4:31:39 PM
+  Coverage date: 6/5/2024 - 4:31:04 PM - 6/5/2024 - 4:31:09 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 384
-  Files: 384
+  Classes: 386
+  Files: 386
   Line coverage: 98.6%
-  Covered lines: 7001
+  Covered lines: 7053
   Uncovered lines: 95
-  Coverable lines: 7096
-  Total lines: 18987
-  Branch coverage: 97% (2680 of 2762)
-  Covered branches: 2680
-  Total branches: 2762
-  Method coverage: 98.6% (512 of 519)
-  Covered methods: 512
-  Total methods: 519
+  Coverable lines: 7148
+  Total lines: 19101
+  Branch coverage: 97% (2704 of 2786)
+  Covered branches: 2704
+  Total branches: 2786
+  Method coverage: 98.6% (514 of 521)
+  Covered methods: 514
+  Total methods: 521
 
 LeetCode                                                                                                                                    98.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -124,6 +124,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindAllGroupOfFarmland.FindAllGroupOfFarmlandIterative                                                               100.0%
   LeetCode.Algorithms.FindBottomLeftTreeValue.FindBottomLeftTreeValueBreadthFirst                                                          100.0%
   LeetCode.Algorithms.FindBottomLeftTreeValue.FindBottomLeftTreeValueDepthFirst                                                            100.0%
+  LeetCode.Algorithms.FindCommonCharacters.FindCommonCharactersArray                                                                       100.0%
+  LeetCode.Algorithms.FindCommonCharacters.FindCommonCharactersDictionary                                                                  100.0%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphBreadthFirstSearch                                                     93.9%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphDepthFirstSearch                                                       91.6%
   LeetCode.Algorithms.FindPivotIndex.FindPivotIndexIterative                                                                               100.0%
