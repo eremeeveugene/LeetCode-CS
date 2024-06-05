@@ -9,33 +9,33 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.BinaryTreeInorderTraversal;
+using LeetCode.Algorithms.FindCommonCharacters;
 using LeetCode.Core.Helpers;
-using LeetCode.Core.Models;
 
-namespace LeetCode.Tests.Algorithms.BinaryTreeInorderTraversal;
+namespace LeetCode.Tests.Algorithms.FindCommonCharacters;
 
-public abstract class BinaryTreeInorderTraversalTestsBase<T> where T : IBinaryTreeInorderTraversal, new()
+public abstract class FindCommonCharactersTestsBase<T> where T : IFindCommonCharacters, new()
 {
     [TestMethod]
-    [DataRow("[1,null,2,3]", "[1,3,2]")]
-    [DataRow("[1]", "[1]")]
-    [DataRow("[]", "[0]")]
-    public void InorderTraversal_WithBinaryTreeFromJson_ReturnsInorderTraversalList(string inputArrayJson,
-        string expectedArrayJson)
+    [DataRow(new[] { "bella" }, "[\"b\",\"e\",\"l\",\"l\",\"a\"]")]
+    [DataRow(new[] { "bella", "label", "roller" }, "[\"e\",\"l\",\"l\"]")]
+    [DataRow(new[] { "cool", "lock", "cook" }, "[\"c\",\"o\"]")]
+    [DataRow(new[] { "a", "a", "a" }, "[\"a\"]")]
+    [DataRow(new[] { "", "", "" }, "[]")]
+    [DataRow(new[] { "abc", "def", "ghi" }, "[]")]
+    [DataRow(new[] { "a" }, "[\"a\"]")]
+    [DataRow(new[] { "abc", "abc", "abc" }, "[\"a\",\"b\",\"c\"]")]
+    public void CommonChars_WithGivenWordsArray_ReturnsCommonCharacters(string[] words, string expectedResultJsonArray)
     {
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonHelper<int?>.JsonArrayToList(expectedArrayJson);
-        var inputArray = JsonHelper<int?>.JsonArrayToList(inputArrayJson);
-        var inputNode = TreeNode.BuildTree(inputArray);
+        var expectedResult = JsonHelper<string>.JsonArrayToList(expectedResultJsonArray);
 
         // Act
-        var actualResult = solution.InorderTraversal(inputNode);
+        var actualResult = solution.CommonChars(words);
 
         // Assert
-        Assert.IsNotNull(actualResult);
         CollectionAssert.AreEqual(expectedResult.ToList(), actualResult.ToList());
     }
 }

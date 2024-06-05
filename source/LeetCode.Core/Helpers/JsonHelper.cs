@@ -17,7 +17,7 @@ public static class JsonHelper<T>
 {
     public const string EmptyArray = "[]";
 
-    public static List<T?> JsonArrayToList(string jsonArray)
+    public static IList<T?> JsonArrayToList(string jsonArray)
     {
         if (jsonArray == EmptyArray)
         {
