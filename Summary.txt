@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/5/2024 - 4:31:39 PM
-  Coverage date: 6/5/2024 - 4:31:04 PM - 6/5/2024 - 4:31:09 PM
+  Generated on: 6/6/2024 - 6:52:00 PM
+  Coverage date: 6/6/2024 - 6:51:23 PM - 6/6/2024 - 6:51:28 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 386
-  Files: 386
+  Classes: 388
+  Files: 388
   Line coverage: 98.6%
-  Covered lines: 7053
+  Covered lines: 7118
   Uncovered lines: 95
-  Coverable lines: 7148
-  Total lines: 19101
-  Branch coverage: 97% (2704 of 2786)
-  Covered branches: 2704
-  Total branches: 2786
-  Method coverage: 98.6% (514 of 521)
-  Covered methods: 514
-  Total methods: 521
+  Coverable lines: 7213
+  Total lines: 19237
+  Branch coverage: 97% (2732 of 2814)
+  Covered branches: 2732
+  Total branches: 2814
+  Method coverage: 98.6% (516 of 523)
+  Covered methods: 516
+  Total methods: 523
 
-LeetCode                                                                                                                                    98.6%
+LeetCode                                                                                                                                    98.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -151,6 +151,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.GetEqualSubstringsWithinBudget.GetEqualSubstringsWithinBudgetSlidingWindow                                           100.0%
   LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationReplace                                                             100.0%
   LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationStringBuilder                                                       100.0%
+  LeetCode.Algorithms.HandOfStraights.HandOfStraightsDictionary                                                                            100.0%
+  LeetCode.Algorithms.HandOfStraights.HandOfStraightsSortedDictionary                                                                      100.0%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetChars                                                                                  100.0%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetNumbers                                                                                100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce                  100.0%
