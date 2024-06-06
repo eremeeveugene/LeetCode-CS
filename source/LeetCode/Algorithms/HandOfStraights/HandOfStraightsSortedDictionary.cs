@@ -28,31 +28,31 @@ public class HandOfStraightsSortedDictionary : IHandOfStraights
             return false;
         }
 
-        var dictionary = new SortedDictionary<int, int>();
+        var cardsDictionary = new SortedDictionary<int, int>();
 
         foreach (var card in hand)
         {
-            if (!dictionary.TryAdd(card, 1))
+            if (!cardsDictionary.TryAdd(card, 1))
             {
-                dictionary[card]++;
+                cardsDictionary[card]++;
             }
         }
 
-        while (dictionary.Count > 0)
+        while (cardsDictionary.Count > 0)
         {
-            var current = dictionary.First().Key;
+            var firstCard = cardsDictionary.First().Key;
 
             for (var i = 0; i < groupSize; i++)
             {
-                if (dictionary.ContainsKey(current + i))
+                var currentCard = firstCard + i;
+
+                if (cardsDictionary.TryGetValue(currentCard, out var value))
                 {
-                    if (dictionary[current + i] > 1)
+                    cardsDictionary[currentCard] = --value;
+
+                    if (value == 0)
                     {
-                        dictionary[current + i]--;
-                    }
-                    else
-                    {
-                        dictionary.Remove(current + i);
+                        cardsDictionary.Remove(currentCard);
                     }
                 }
                 else
