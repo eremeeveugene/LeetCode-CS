@@ -164,6 +164,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
 - [804. Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/description/)
 - [834. Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/description/)
+- [846. Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 - [857. Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/description/)
 - [861. Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/description/)
 - [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/)
