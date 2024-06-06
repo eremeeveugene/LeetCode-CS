@@ -50,11 +50,13 @@ public class HandOfStraightsDictionary : IHandOfStraights
 
                 if (cardsDictionary.TryGetValue(currentCard, out var value))
                 {
-                    cardsDictionary[currentCard] = --value;
-
-                    if (value == 0)
+                    if (value == 1)
                     {
                         cardsDictionary.Remove(currentCard);
+                    }
+                    else
+                    {
+                        cardsDictionary[currentCard] = value - 1;
                     }
                 }
                 else

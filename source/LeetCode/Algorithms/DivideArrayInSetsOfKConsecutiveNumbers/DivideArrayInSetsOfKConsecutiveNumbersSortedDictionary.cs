@@ -9,52 +9,45 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.HandOfStraights;
+namespace LeetCode.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers;
 
 /// <inheritdoc />
-public class HandOfStraightsSortedDictionary : IHandOfStraights
+public class DivideArrayInSetsOfKConsecutiveNumbersSortedDictionary : IDivideArrayInSetsOfKConsecutiveNumbers
 {
-    /// <summary>
-    ///     Time complexity - O(n log n)
-    ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="hand"></param>
-    /// <param name="groupSize"></param>
-    /// <returns></returns>
-    public bool IsNStraightHand(int[] hand, int groupSize)
+    public bool IsPossibleDivide(int[] nums, int k)
     {
-        if (hand.Length % groupSize != 0)
+        if (nums.Length % k != 0)
         {
             return false;
         }
 
-        var cardsDictionary = new SortedDictionary<int, int>();
+        var numsDictionary = new SortedDictionary<int, int>();
 
-        foreach (var card in hand)
+        foreach (var num in nums)
         {
-            if (!cardsDictionary.TryAdd(card, 1))
+            if (!numsDictionary.TryAdd(num, 1))
             {
-                cardsDictionary[card]++;
+                numsDictionary[num]++;
             }
         }
 
-        while (cardsDictionary.Count > 0)
+        while (numsDictionary.Count > 0)
         {
-            var firstCard = cardsDictionary.First().Key;
+            var firstNum = numsDictionary.First().Key;
 
-            for (var i = 0; i < groupSize; i++)
+            for (var i = 0; i < k; i++)
             {
-                var currentCard = firstCard + i;
+                var currentNum = firstNum + i;
 
-                if (cardsDictionary.TryGetValue(currentCard, out var value))
+                if (numsDictionary.TryGetValue(currentNum, out var value))
                 {
                     if (value == 1)
                     {
-                        cardsDictionary.Remove(currentCard);
+                        numsDictionary.Remove(currentNum);
                     }
                     else
                     {
-                        cardsDictionary[currentCard] = value - 1;
+                        numsDictionary[currentNum] = value - 1;
                     }
                 }
                 else
