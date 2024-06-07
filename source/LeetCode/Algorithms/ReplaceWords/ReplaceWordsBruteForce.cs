@@ -12,13 +12,12 @@
 namespace LeetCode.Algorithms.ReplaceWords;
 
 /// <inheritdoc />
-public class ReplaceWordsSorting : IReplaceWords
+public class ReplaceWordsBruteForce : IReplaceWords
 {
     /// <summary>
-    ///     Time complexity - O(n log n + k * n * L), where n is the number of words in the dictionary, k is the number of
-    ///     words in the sentence, and L is the length of the longest word
-    ///     Space complexity - O(n + k), where n is the number of words in the dictionary, k is the number of words in the
-    ///     sentence
+    ///     Time complexity - O(m + n log n + k * n * L), where n is the number of words in the dictionary, m is the length of
+    ///     the sentence, k is the number of words in the sentence, and L is the length of the longest word
+    ///     Space complexity - O(m + n), where n is the number of words in the dictionary, m is the length of the sentence
     /// </summary>
     /// <param name="dictionary"></param>
     /// <param name="sentence"></param>
@@ -27,12 +26,9 @@ public class ReplaceWordsSorting : IReplaceWords
     {
         var words = sentence.Split(' ');
 
-        var resultWords = new string[words.Length];
-
         for (var i = 0; i < words.Length; i++)
         {
             var word = words[i];
-            var isFound = false;
 
             foreach (var dictionaryWord in dictionary.Order())
             {
@@ -41,19 +37,12 @@ public class ReplaceWordsSorting : IReplaceWords
                     continue;
                 }
 
-                resultWords[i] = dictionaryWord;
-
-                isFound = true;
+                words[i] = dictionaryWord;
 
                 break;
             }
-
-            if (!isFound)
-            {
-                resultWords[i] = word;
-            }
         }
 
-        return string.Join(' ', resultWords);
+        return string.Join(' ', words);
     }
 }
