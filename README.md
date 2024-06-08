@@ -141,6 +141,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/)
 - [513. Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/description/)
 - [514. Freedom Trail](https://leetcode.com/problems/freedom-trail/description/)
+- [523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/description/)
 - [525. Contiguous Array](https://leetcode.com/problems/contiguous-array/description/)
 - [541. Reverse String II](https://leetcode.com/problems/reverse-string-ii/description/)
 - [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/)
