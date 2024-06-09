@@ -11,10 +11,10 @@
 
 using LeetCode.Core.Models;
 
-namespace LeetCode.Algorithms.InvertBinaryTree;
+namespace LeetCode.Algorithms.ReverseOddLevelsOfBinaryTree;
 
 /// <inheritdoc />
-public class InvertBinaryTreeDepthFirstSearchRecursive : IInvertBinaryTree
+public class ReverseOddLevelsOfBinaryTreeStackDepthFirstSearch : IReverseOddLevelsOfBinaryTree
 {
     /// <summary>
     ///     Time complexity - O(n)
@@ -22,28 +22,37 @@ public class InvertBinaryTreeDepthFirstSearchRecursive : IInvertBinaryTree
     /// </summary>
     /// <param name="root"></param>
     /// <returns></returns>
-    public TreeNode? InvertTree(TreeNode? root)
+    public TreeNode? ReverseOddLevels(TreeNode? root)
     {
-        if (root == null)
+        if (root?.left == null || root.right == null)
         {
-            return null;
+            return root;
         }
 
-        Invert(root);
+        var stack = new Stack<(TreeNode left, TreeNode right, int level)>();
+
+        stack.Push((root.left, root.right, 1));
+
+        while (stack.Count > 0)
+        {
+            var (left, right, level) = stack.Pop();
+
+            if (level % 2 == 1)
+            {
+                (left.val, right.val) = (right.val, left.val);
+            }
+
+            if (left.left != null && right.right != null)
+            {
+                stack.Push((left.left, right.right, level + 1));
+            }
+
+            if (left.right != null && right.left != null)
+            {
+                stack.Push((left.right, right.left, level + 1));
+            }
+        }
 
         return root;
-    }
-
-    private void Invert(TreeNode? root)
-    {
-        if (root == null)
-        {
-            return;
-        }
-
-        (root.left, root.right) = (root.right, root.left);
-
-        InvertTree(root.left);
-        InvertTree(root.right);
     }
 }
