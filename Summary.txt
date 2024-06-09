@@ -1,21 +1,21 @@
 Summary
-  Generated on: 6/8/2024 - 4:55:42 PM
-  Coverage date: 6/8/2024 - 4:55:05 PM - 6/8/2024 - 4:55:11 PM
+  Generated on: 6/9/2024 - 12:45:21 PM
+  Coverage date: 6/9/2024 - 12:44:42 PM - 6/9/2024 - 12:44:49 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 394
-  Files: 394
-  Line coverage: 98.7%
-  Covered lines: 7276
-  Uncovered lines: 95
-  Coverable lines: 7371
-  Total lines: 19597
-  Branch coverage: 97.1% (2796 of 2878)
-  Covered branches: 2796
-  Total branches: 2878
-  Method coverage: 98.6% (524 of 531)
-  Covered methods: 524
-  Total methods: 531
+  Classes: 396
+  Files: 396
+  Line coverage: 98.6%
+  Covered lines: 7306
+  Uncovered lines: 98
+  Coverable lines: 7404
+  Total lines: 19697
+  Branch coverage: 97.1% (2803 of 2886)
+  Covered branches: 2803
+  Total branches: 2886
+  Method coverage: 98.6% (526 of 533)
+  Covered methods: 526
+  Total methods: 533
 
 LeetCode                                                                                                                                    98.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -359,6 +359,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.SquaresOfSortedArray.SquaresOfSortedArraySort                                                                        100.0%
   LeetCode.Algorithms.SquaresOfSortedArray.SquaresOfSortedArrayTwoPointers                                                                 100.0%
   LeetCode.Algorithms.SubarrayProductLessThanK.SubarrayProductLessThanKTwoPointers                                                         100.0%
+  LeetCode.Algorithms.SubarraySumsDivisibleByK.SubarraySumsDivisibleByKArray                                                               100.0%
+  LeetCode.Algorithms.SubarraySumsDivisibleByK.SubarraySumsDivisibleByKDictionary                                                           85.0%
   LeetCode.Algorithms.SubarraysWithKDifferentIntegers.SubarraysWithKDifferentIntegersSlidingWindow                                         100.0%
   LeetCode.Algorithms.Subsets.SubsetsIterative                                                                                             100.0%
   LeetCode.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger.SubtractTheProductAndSumOfDigitsOfAnIntegerDivision                      100.0%

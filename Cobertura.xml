@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9871116537783204" branch-rate="0.9715079916608756" lines-covered="7276" lines-valid="7371" branches-covered="2796" branches-valid="2878" complexity="2997" version="0" timestamp="1717865741">
+<coverage line-rate="0.9867639113992437" branch-rate="0.9712404712404712" lines-covered="7306" lines-valid="7404" branches-covered="2803" branches-valid="2886" complexity="3005" version="0" timestamp="1717937120">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.987389135254989" branch-rate="0.9736279401282965" complexity="2919">
+    <package name="LeetCode" line-rate="0.9870326941647124" branch-rate="0.9733475479744137" complexity="2927">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -16277,6 +16277,92 @@
             <line number="50" hits="3" branch="false" />
           </lines>
         </class>
+        <class name="LeetCode.Algorithms.SubarraySumsDivisibleByK.SubarraySumsDivisibleByKArray" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\SubarraySumsDivisibleByK\SubarraySumsDivisibleByKArray.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="SubarraysDivByK" signature="(System.Int32[],System.Int32)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="25" hits="9" branch="false" />
+                <line number="26" hits="9" branch="false" />
+                <line number="28" hits="9" branch="false" />
+                <line number="30" hits="9" branch="false" />
+                <line number="32" hits="9" branch="false" />
+                <line number="34" hits="69" branch="true" condition-coverage="100% (2/2)" />
+                <line number="35" hits="21" branch="false" />
+                <line number="36" hits="21" branch="false" />
+                <line number="38" hits="21" branch="false" />
+                <line number="40" hits="21" branch="false" />
+                <line number="41" hits="21" branch="false" />
+                <line number="43" hits="9" branch="false" />
+                <line number="44" hits="9" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="9" branch="false" />
+            <line number="26" hits="9" branch="false" />
+            <line number="28" hits="9" branch="false" />
+            <line number="30" hits="9" branch="false" />
+            <line number="32" hits="9" branch="false" />
+            <line number="34" hits="69" branch="true" condition-coverage="100% (2/2)" />
+            <line number="35" hits="21" branch="false" />
+            <line number="36" hits="21" branch="false" />
+            <line number="38" hits="21" branch="false" />
+            <line number="40" hits="21" branch="false" />
+            <line number="41" hits="21" branch="false" />
+            <line number="43" hits="9" branch="false" />
+            <line number="44" hits="9" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.SubarraySumsDivisibleByK.SubarraySumsDivisibleByKDictionary" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\SubarraySumsDivisibleByK\SubarraySumsDivisibleByKDictionary.cs" line-rate="0.85" branch-rate="0.8333333333333334" complexity="6">
+          <methods>
+            <method name="SubarraysDivByK" signature="(System.Int32[],System.Int32)" line-rate="0.85" branch-rate="0.8333333333333334" complexity="6">
+              <lines>
+                <line number="25" hits="9" branch="false" />
+                <line number="26" hits="9" branch="false" />
+                <line number="28" hits="9" branch="false" />
+                <line number="30" hits="9" branch="false" />
+                <line number="32" hits="69" branch="true" condition-coverage="100% (2/2)" />
+                <line number="33" hits="21" branch="false" />
+                <line number="34" hits="21" branch="false" />
+                <line number="36" hits="21" branch="false" />
+                <line number="38" hits="21" branch="true" condition-coverage="50% (1/2)" />
+                <line number="39" hits="0" branch="false" />
+                <line number="40" hits="0" branch="false" />
+                <line number="41" hits="0" branch="false" />
+                <line number="43" hits="21" branch="true" condition-coverage="100% (2/2)" />
+                <line number="44" hits="3" branch="false" />
+                <line number="45" hits="3" branch="false" />
+                <line number="48" hits="18" branch="false" />
+                <line number="50" hits="18" branch="false" />
+                <line number="51" hits="18" branch="false" />
+                <line number="53" hits="9" branch="false" />
+                <line number="54" hits="9" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="9" branch="false" />
+            <line number="26" hits="9" branch="false" />
+            <line number="28" hits="9" branch="false" />
+            <line number="30" hits="9" branch="false" />
+            <line number="32" hits="69" branch="true" condition-coverage="100% (2/2)" />
+            <line number="33" hits="21" branch="false" />
+            <line number="34" hits="21" branch="false" />
+            <line number="36" hits="21" branch="false" />
+            <line number="38" hits="21" branch="true" condition-coverage="50% (1/2)" />
+            <line number="39" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="41" hits="0" branch="false" />
+            <line number="43" hits="21" branch="true" condition-coverage="100% (2/2)" />
+            <line number="44" hits="3" branch="false" />
+            <line number="45" hits="3" branch="false" />
+            <line number="48" hits="18" branch="false" />
+            <line number="50" hits="18" branch="false" />
+            <line number="51" hits="18" branch="false" />
+            <line number="53" hits="9" branch="false" />
+            <line number="54" hits="9" branch="false" />
+          </lines>
+        </class>
         <class name="LeetCode.Algorithms.SubarraysWithKDifferentIntegers.SubarraysWithKDifferentIntegersSlidingWindow" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\SubarraysWithKDifferentIntegers\SubarraysWithKDifferentIntegersSlidingWindow.cs" line-rate="1" branch-rate="1" complexity="9">
           <methods>
             <method name="SubarraysWithKDistinct" signature="(System.Int32[],System.Int32)" line-rate="1" branch-rate="1" complexity="1">
@@ -18311,18 +18397,18 @@
                 <line number="68" hits="5" branch="false" />
                 <line number="69" hits="5" branch="false" />
                 <line number="70" hits="6" branch="true" condition-coverage="100% (2/2)" />
-                <line number="71" hits="4" branch="false" />
-                <line number="72" hits="11" branch="true" condition-coverage="100% (4/4)" />
-                <line number="73" hits="10" branch="false" />
-                <line number="74" hits="10" branch="false" />
-                <line number="76" hits="10" branch="true" condition-coverage="100% (2/2)" />
-                <line number="77" hits="3" branch="false" />
-                <line number="78" hits="3" branch="false" />
+                <line number="71" hits="5" branch="false" />
+                <line number="72" hits="12" branch="true" condition-coverage="100% (4/4)" />
+                <line number="73" hits="11" branch="false" />
+                <line number="74" hits="11" branch="false" />
+                <line number="76" hits="11" branch="true" condition-coverage="100% (2/2)" />
+                <line number="77" hits="4" branch="false" />
+                <line number="78" hits="4" branch="false" />
                 <line number="80" hits="7" branch="false" />
                 <line number="82" hits="1" branch="false" />
                 <line number="84" hits="1" branch="false" />
                 <line number="85" hits="1" branch="false" />
-                <line number="86" hits="2" branch="false" />
+                <line number="86" hits="1" branch="false" />
                 <line number="87" hits="5" branch="false" />
               </lines>
             </method>
@@ -18405,18 +18491,18 @@
             <line number="68" hits="5" branch="false" />
             <line number="69" hits="5" branch="false" />
             <line number="70" hits="6" branch="true" condition-coverage="100% (2/2)" />
-            <line number="71" hits="4" branch="false" />
-            <line number="72" hits="11" branch="true" condition-coverage="100% (4/4)" />
-            <line number="73" hits="10" branch="false" />
-            <line number="74" hits="10" branch="false" />
-            <line number="76" hits="10" branch="true" condition-coverage="100% (2/2)" />
-            <line number="77" hits="3" branch="false" />
-            <line number="78" hits="3" branch="false" />
+            <line number="71" hits="5" branch="false" />
+            <line number="72" hits="12" branch="true" condition-coverage="100% (4/4)" />
+            <line number="73" hits="11" branch="false" />
+            <line number="74" hits="11" branch="false" />
+            <line number="76" hits="11" branch="true" condition-coverage="100% (2/2)" />
+            <line number="77" hits="4" branch="false" />
+            <line number="78" hits="4" branch="false" />
             <line number="80" hits="7" branch="false" />
             <line number="82" hits="1" branch="false" />
             <line number="84" hits="1" branch="false" />
             <line number="85" hits="1" branch="false" />
-            <line number="86" hits="2" branch="false" />
+            <line number="86" hits="1" branch="false" />
             <line number="87" hits="5" branch="false" />
             <line number="90" hits="5" branch="false" />
             <line number="91" hits="5" branch="false" />
@@ -18580,10 +18666,10 @@
                 <line number="33" hits="3" branch="false" />
                 <line number="34" hits="3" branch="false" />
                 <line number="35" hits="3" branch="false" />
-                <line number="36" hits="5" branch="true" condition-coverage="100% (2/2)" />
-                <line number="37" hits="2" branch="false" />
-                <line number="38" hits="2" branch="false" />
-                <line number="39" hits="2" branch="false" />
+                <line number="36" hits="4" branch="true" condition-coverage="100% (2/2)" />
+                <line number="37" hits="1" branch="false" />
+                <line number="38" hits="1" branch="false" />
+                <line number="39" hits="1" branch="false" />
                 <line number="41" hits="3" branch="false" />
                 <line number="43" hits="3" branch="false" />
                 <line number="45" hits="3" branch="false" />
@@ -18596,10 +18682,10 @@
                 <line number="50" hits="3" branch="false" />
                 <line number="51" hits="3" branch="false" />
                 <line number="52" hits="3" branch="false" />
-                <line number="53" hits="6" branch="true" condition-coverage="100% (2/2)" />
-                <line number="54" hits="3" branch="false" />
-                <line number="55" hits="3" branch="false" />
-                <line number="56" hits="3" branch="false" />
+                <line number="53" hits="7" branch="true" condition-coverage="100% (2/2)" />
+                <line number="54" hits="4" branch="false" />
+                <line number="55" hits="4" branch="false" />
+                <line number="56" hits="4" branch="false" />
                 <line number="58" hits="3" branch="false" />
                 <line number="59" hits="3" branch="false" />
                 <line number="60" hits="3" branch="false" />
@@ -18626,10 +18712,10 @@
             <line number="33" hits="3" branch="false" />
             <line number="34" hits="3" branch="false" />
             <line number="35" hits="3" branch="false" />
-            <line number="36" hits="5" branch="true" condition-coverage="100% (2/2)" />
-            <line number="37" hits="2" branch="false" />
-            <line number="38" hits="2" branch="false" />
-            <line number="39" hits="2" branch="false" />
+            <line number="36" hits="4" branch="true" condition-coverage="100% (2/2)" />
+            <line number="37" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="39" hits="1" branch="false" />
             <line number="41" hits="3" branch="false" />
             <line number="43" hits="3" branch="false" />
             <line number="45" hits="3" branch="false" />
@@ -18638,10 +18724,10 @@
             <line number="50" hits="3" branch="false" />
             <line number="51" hits="3" branch="false" />
             <line number="52" hits="3" branch="false" />
-            <line number="53" hits="6" branch="true" condition-coverage="100% (2/2)" />
-            <line number="54" hits="3" branch="false" />
-            <line number="55" hits="3" branch="false" />
-            <line number="56" hits="3" branch="false" />
+            <line number="53" hits="7" branch="true" condition-coverage="100% (2/2)" />
+            <line number="54" hits="4" branch="false" />
+            <line number="55" hits="4" branch="false" />
+            <line number="56" hits="4" branch="false" />
             <line number="58" hits="3" branch="false" />
             <line number="59" hits="3" branch="false" />
             <line number="60" hits="3" branch="false" />
