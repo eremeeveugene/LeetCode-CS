@@ -11,10 +11,10 @@
 
 using LeetCode.Core.Models;
 
-namespace LeetCode.Algorithms.InvertBinaryTree;
+namespace LeetCode.Algorithms.ReverseOddLevelsOfBinaryTree;
 
 /// <inheritdoc />
-public class InvertBinaryTreeDepthFirstSearchRecursive : IInvertBinaryTree
+public class ReverseOddLevelsOfBinaryTreeRecursiveDepthFirstSearch : IReverseOddLevelsOfBinaryTree
 {
     /// <summary>
     ///     Time complexity - O(n)
@@ -22,28 +22,33 @@ public class InvertBinaryTreeDepthFirstSearchRecursive : IInvertBinaryTree
     /// </summary>
     /// <param name="root"></param>
     /// <returns></returns>
-    public TreeNode? InvertTree(TreeNode? root)
+    public TreeNode? ReverseOddLevels(TreeNode? root)
     {
         if (root == null)
         {
             return null;
         }
 
-        Invert(root);
+        Reverse(root.left, root.right, 1);
 
         return root;
     }
 
-    private void Invert(TreeNode? root)
+    private static void Reverse(TreeNode? left, TreeNode? right, int level)
     {
-        if (root == null)
+        if (left == null || right == null)
         {
             return;
         }
 
-        (root.left, root.right) = (root.right, root.left);
+        if (level % 2 == 1)
+        {
+            (left.val, right.val) = (right.val, left.val);
+        }
 
-        InvertTree(root.left);
-        InvertTree(root.right);
+        level++;
+
+        Reverse(left.left, right.right, level);
+        Reverse(left.right, right.left, level);
     }
 }
