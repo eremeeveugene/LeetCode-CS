@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/9/2024 - 4:56:29 PM
-  Coverage date: 6/9/2024 - 4:55:49 PM - 6/9/2024 - 4:55:55 PM
+  Generated on: 6/10/2024 - 10:55:34 AM
+  Coverage date: 6/10/2024 - 10:54:55 AM - 6/10/2024 - 10:55:01 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 402
-  Files: 402
+  Classes: 404
+  Files: 404
   Line coverage: 98.6%
-  Covered lines: 7428
+  Covered lines: 7455
   Uncovered lines: 100
-  Coverable lines: 7528
-  Total lines: 20026
-  Branch coverage: 97.1% (2866 of 2950)
-  Covered branches: 2866
-  Total branches: 2950
-  Method coverage: 98.7% (534 of 541)
-  Covered methods: 534
-  Total methods: 541
+  Coverable lines: 7555
+  Total lines: 20110
+  Branch coverage: 97.1% (2874 of 2958)
+  Covered branches: 2874
+  Total branches: 2958
+  Method coverage: 98.7% (536 of 543)
+  Covered methods: 536
+  Total methods: 543
 
-LeetCode                                                                                                                                    98.6%
+LeetCode                                                                                                                                    98.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -158,6 +158,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.HandOfStraights.HandOfStraightsSortedDictionary                                                                      100.0%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetChars                                                                                  100.0%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetNumbers                                                                                100.0%
+  LeetCode.Algorithms.HeightChecker.HeightCheckerCounting                                                                                  100.0%
+  LeetCode.Algorithms.HeightChecker.HeightCheckerSorting                                                                                   100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce                  100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing      100.0%
   LeetCode.Algorithms.InsertInterval.InsertIntervalIterative                                                                               100.0%
