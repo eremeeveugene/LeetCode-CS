@@ -1,21 +1,21 @@
 Summary
-  Generated on: 6/10/2024 - 10:55:34 AM
-  Coverage date: 6/10/2024 - 10:54:55 AM - 6/10/2024 - 10:55:01 AM
+  Generated on: 6/12/2024 - 2:13:25 PM
+  Coverage date: 6/12/2024 - 2:12:46 PM - 6/12/2024 - 2:12:51 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 404
-  Files: 404
+  Classes: 407
+  Files: 407
   Line coverage: 98.6%
-  Covered lines: 7455
+  Covered lines: 7519
   Uncovered lines: 100
-  Coverable lines: 7555
-  Total lines: 20110
-  Branch coverage: 97.1% (2874 of 2958)
-  Covered branches: 2874
-  Total branches: 2958
-  Method coverage: 98.7% (536 of 543)
-  Covered methods: 536
-  Total methods: 543
+  Coverable lines: 7619
+  Total lines: 20237
+  Branch coverage: 97.1% (2896 of 2980)
+  Covered branches: 2896
+  Total branches: 2980
+  Method coverage: 98.7% (539 of 546)
+  Covered methods: 539
+  Total methods: 546
 
 LeetCode                                                                                                                                    98.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -158,7 +158,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.HandOfStraights.HandOfStraightsSortedDictionary                                                                      100.0%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetChars                                                                                  100.0%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetNumbers                                                                                100.0%
-  LeetCode.Algorithms.HeightChecker.HeightCheckerCounting                                                                                  100.0%
+  LeetCode.Algorithms.HeightChecker.HeightCheckerCountingSort                                                                              100.0%
   LeetCode.Algorithms.HeightChecker.HeightCheckerSorting                                                                                   100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce                  100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing      100.0%
@@ -301,6 +301,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoRecursive                                                                                       100.0%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksBruteForce                                                                                100.0%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksTuple                                                                                     100.0%
+  LeetCode.Algorithms.RelativeSortArray.RelativeSortArrayCountingSort                                                                      100.0%
+  LeetCode.Algorithms.RelativeSortArray.RelativeSortArrayDictionarySorting                                                                 100.0%
+  LeetCode.Algorithms.RelativeSortArray.RelativeSortArrayTwoLoopsSorting                                                                   100.0%
   LeetCode.Algorithms.RemoveDuplicatesFromSortedArray.RemoveDuplicatesFromSortedArrayIterative                                             100.0%
   LeetCode.Algorithms.RemoveDuplicatesFromSortedList.RemoveDuplicatesFromSortedListIterative                                               100.0%
   LeetCode.Algorithms.RemoveDuplicatesFromSortedList.RemoveDuplicatesFromSortedListIterativeReverse                                        100.0%
