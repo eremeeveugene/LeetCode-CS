@@ -186,6 +186,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1025. Divisor Game](https://leetcode.com/problems/divisor-game/description/)
 - [1051. Height Checker](https://leetcode.com/problems/height-checker/description/)
 - [1108. Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/description/)
+- [1122. Relative Sort Array](https://leetcode.com/problems/relative-sort-array/description/)
 - [1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/description/)
 - [1171. Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/description/)
 - [1185. Day of the Week](https://leetcode.com/problems/day-of-the-week/description/)
