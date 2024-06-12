@@ -14,4 +14,4 @@ using LeetCode.Algorithms.HeightChecker;
 namespace LeetCode.Tests.Algorithms.HeightChecker;
 
 [TestClass]
-public class HeightCheckerCountingTests : HeightCheckerTestsBase<HeightCheckerCounting>;
+public class HeightCheckerCountingSortTests : HeightCheckerTestsBase<HeightCheckerCountingSort>;
