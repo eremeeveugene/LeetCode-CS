@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/12/2024 - 2:13:25 PM
-  Coverage date: 6/12/2024 - 2:12:46 PM - 6/12/2024 - 2:12:51 PM
+  Generated on: 6/12/2024 - 2:40:35 PM
+  Coverage date: 6/12/2024 - 2:39:56 PM - 6/12/2024 - 2:40:02 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 407
-  Files: 407
-  Line coverage: 98.6%
-  Covered lines: 7519
-  Uncovered lines: 100
-  Coverable lines: 7619
-  Total lines: 20237
-  Branch coverage: 97.1% (2896 of 2980)
-  Covered branches: 2896
-  Total branches: 2980
-  Method coverage: 98.7% (539 of 546)
-  Covered methods: 539
-  Total methods: 546
+  Classes: 410
+  Files: 410
+  Line coverage: 98.3%
+  Covered lines: 7540
+  Uncovered lines: 124
+  Coverable lines: 7664
+  Total lines: 20337
+  Branch coverage: 96.7% (2902 of 2998)
+  Covered branches: 2902
+  Total branches: 2998
+  Method coverage: 98.5% (541 of 549)
+  Covered methods: 541
+  Total methods: 549
 
-LeetCode                                                                                                                                    98.7%
+LeetCode                                                                                                                                    98.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -360,6 +360,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.SmallestStringStartingFromLeaf.SmallestStringStartingFromLeafDepthFirstSearch                                        100.0%
   LeetCode.Algorithms.SortArrayByIncreasingFrequency.SortArrayByIncreasingFrequencyDictionary                                              100.0%
   LeetCode.Algorithms.SortArrayByIncreasingFrequency.SortArrayByIncreasingFrequencyLinq                                                    100.0%
+  LeetCode.Algorithms.SortColors.SortColorsCountingSort                                                                                      0.0%
+  LeetCode.Algorithms.SortColors.SortColorsSorting                                                                                         100.0%
+  LeetCode.Algorithms.SortColors.SortColorsThreePointers                                                                                   100.0%
   LeetCode.Algorithms.SortingTheSentence.SortingTheSentenceIterative                                                                       100.0%
   LeetCode.Algorithms.SortThePeople.SortThePeopleLinq                                                                                      100.0%
   LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX.SpecialArrayWithXElementsGreaterThanOrEqualXBruteForce                  100.0%
