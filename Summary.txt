@@ -1,21 +1,21 @@
 Summary
-  Generated on: 6/12/2024 - 2:40:35 PM
-  Coverage date: 6/12/2024 - 2:39:56 PM - 6/12/2024 - 2:40:02 PM
+  Generated on: 6/13/2024 - 7:35:24 PM
+  Coverage date: 6/13/2024 - 7:34:45 PM - 6/13/2024 - 7:34:51 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 410
-  Files: 410
+  Classes: 412
+  Files: 412
   Line coverage: 98.3%
-  Covered lines: 7540
+  Covered lines: 7565
   Uncovered lines: 124
-  Coverable lines: 7664
-  Total lines: 20337
-  Branch coverage: 96.7% (2902 of 2998)
-  Covered branches: 2902
-  Total branches: 2998
-  Method coverage: 98.5% (541 of 549)
-  Covered methods: 541
-  Total methods: 549
+  Coverable lines: 7689
+  Total lines: 20400
+  Branch coverage: 96.8% (2908 of 3004)
+  Covered branches: 2908
+  Total branches: 3004
+  Method coverage: 98.5% (543 of 551)
+  Covered methods: 543
+  Total methods: 551
 
 LeetCode                                                                                                                                    98.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -230,6 +230,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds.MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers               100.0%
   LeetCode.Algorithms.MinimumNumberGame.MinimumNumberGameSorting                                                                           100.0%
   LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons.MinimumNumberOfArrowsToBurstBalloonsIterative                                   100.0%
+  LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone.MinimumNumberOfMovesToSeatEveryoneCountingSort                                    100.0%
+  LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone.MinimumNumberOfMovesToSeatEveryoneSorting                                         100.0%
   LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK.MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeBits         100.0%
   LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK.MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeString       100.0%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStack                                         100.0%
