@@ -11,6 +11,7 @@
 
 namespace LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK;
 
+/// <inheritdoc />
 public class MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeString :
     IMinimumNumberOfOperationsToMakeArrayXOREqualToK
 {
