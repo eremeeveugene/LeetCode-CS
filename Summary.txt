@@ -1,21 +1,21 @@
 Summary
-  Generated on: 6/13/2024 - 7:35:24 PM
-  Coverage date: 6/13/2024 - 7:34:45 PM - 6/13/2024 - 7:34:51 PM
+  Generated on: 6/14/2024 - 10:30:30 AM
+  Coverage date: 6/14/2024 - 10:29:52 AM - 6/14/2024 - 10:29:57 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 412
-  Files: 412
+  Classes: 414
+  Files: 414
   Line coverage: 98.3%
-  Covered lines: 7565
+  Covered lines: 7601
   Uncovered lines: 124
-  Coverable lines: 7689
-  Total lines: 20400
-  Branch coverage: 96.8% (2908 of 3004)
-  Covered branches: 2908
-  Total branches: 3004
-  Method coverage: 98.5% (543 of 551)
-  Covered methods: 543
-  Total methods: 551
+  Coverable lines: 7725
+  Total lines: 20477
+  Branch coverage: 96.8% (2918 of 3014)
+  Covered branches: 2918
+  Total branches: 3014
+  Method coverage: 98.5% (545 of 553)
+  Covered methods: 545
+  Total methods: 553
 
 LeetCode                                                                                                                                    98.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -227,6 +227,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumFallingPathSum2.MinimumFallingPathSum2DynamicProgramming                                                      100.0%
   LeetCode.Algorithms.MinimumHeightTrees.MinimumHeightTreesBreadthFirstSearch                                                              100.0%
   LeetCode.Algorithms.MinimumHeightTrees.MinimumHeightTreesLeafPruning                                                                     100.0%
+  LeetCode.Algorithms.MinimumIncrementToMakeArrayUnique.MinimumIncrementToMakeArrayUniqueCounting                                          100.0%
+  LeetCode.Algorithms.MinimumIncrementToMakeArrayUnique.MinimumIncrementToMakeArrayUniqueSorting                                           100.0%
   LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds.MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers               100.0%
   LeetCode.Algorithms.MinimumNumberGame.MinimumNumberGameSorting                                                                           100.0%
   LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons.MinimumNumberOfArrowsToBurstBalloonsIterative                                   100.0%
