@@ -108,6 +108,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/description/)
 - [220. Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/description/)
 - [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/description/)
+- [225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/)
 - [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/)
 - [228. Summary Ranges](https://leetcode.com/problems/summary-ranges/description/)
 - [231. Power of Two](https://leetcode.com/problems/power-of-two/description/)
