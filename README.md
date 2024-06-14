@@ -173,6 +173,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [861. Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/description/)
 - [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/)
 - [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/description/)
+- [945. Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/description/)
 - [948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/description/)
 - [950. Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/description/)
 - [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/description/)
