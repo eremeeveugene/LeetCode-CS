@@ -1,21 +1,21 @@
 Summary
-  Generated on: 6/14/2024 - 10:30:30 AM
-  Coverage date: 6/14/2024 - 10:29:52 AM - 6/14/2024 - 10:29:57 AM
+  Generated on: 6/14/2024 - 5:37:28 PM
+  Coverage date: 6/14/2024 - 5:36:50 PM - 6/14/2024 - 5:36:55 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 414
-  Files: 414
-  Line coverage: 98.3%
-  Covered lines: 7601
+  Classes: 416
+  Files: 416
+  Line coverage: 98.4%
+  Covered lines: 7647
   Uncovered lines: 124
-  Coverable lines: 7725
-  Total lines: 20477
-  Branch coverage: 96.8% (2918 of 3014)
-  Covered branches: 2918
-  Total branches: 3014
-  Method coverage: 98.5% (545 of 553)
-  Covered methods: 545
-  Total methods: 553
+  Coverable lines: 7771
+  Total lines: 20596
+  Branch coverage: 96.8% (2932 of 3028)
+  Covered branches: 2932
+  Total branches: 3028
+  Method coverage: 98.5% (555 of 563)
+  Covered methods: 555
+  Total methods: 563
 
 LeetCode                                                                                                                                    98.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -162,6 +162,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.HeightChecker.HeightCheckerSorting                                                                                   100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce                  100.0%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing      100.0%
+  LeetCode.Algorithms.ImplementStackUsingQueues.ImplementStackUsingQueuesOneQueue                                                          100.0%
+  LeetCode.Algorithms.ImplementStackUsingQueues.ImplementStackUsingQueuesTwoQueues                                                         100.0%
   LeetCode.Algorithms.InsertInterval.InsertIntervalIterative                                                                               100.0%
   LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSet                                                               100.0%
   LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSetIntersectWith                                                  100.0%
