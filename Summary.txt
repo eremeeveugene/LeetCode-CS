@@ -1,21 +1,21 @@
 Summary
-  Generated on: 6/16/2024 - 10:50:39 AM
-  Coverage date: 6/16/2024 - 10:50:02 AM - 6/16/2024 - 10:50:06 AM
+  Generated on: 6/17/2024 - 1:35:11 PM
+  Coverage date: 6/17/2024 - 1:34:13 PM - 6/17/2024 - 1:34:31 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 420
-  Files: 420
-  Line coverage: 98.3%
-  Covered lines: 7720
+  Classes: 423
+  Files: 423
+  Line coverage: 98.4%
+  Covered lines: 7778
   Uncovered lines: 126
-  Coverable lines: 7846
-  Total lines: 20788
-  Branch coverage: 96.8% (2955 of 3052)
-  Covered branches: 2955
-  Total branches: 3052
-  Method coverage: 98.6% (567 of 575)
-  Covered methods: 567
-  Total methods: 575
+  Coverable lines: 7904
+  Total lines: 20906
+  Branch coverage: 96.8% (2977 of 3074)
+  Covered branches: 2977
+  Total branches: 3074
+  Method coverage: 98.6% (571 of 579)
+  Covered methods: 571
+  Total methods: 579
 
 LeetCode                                                                                                                                    98.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -396,6 +396,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.SumOfDistancesInTree.SumOfDistancesInTreeDepthFirstSearch                                                            100.0%
   LeetCode.Algorithms.SumOfLeftLeaves.SumOfLeftLeavesBreadthFirstSearch                                                                     92.5%
   LeetCode.Algorithms.SumOfLeftLeaves.SumOfLeftLeavesDepthFirstSearch                                                                      100.0%
+  LeetCode.Algorithms.SumOfSquareNumbers.SumOfSquareNumbersBinarySearch                                                                    100.0%
+  LeetCode.Algorithms.SumOfSquareNumbers.SumOfSquareNumbersBruteForce                                                                      100.0%
+  LeetCode.Algorithms.SumOfSquareNumbers.SumOfSquareNumbersTwoPointers                                                                     100.0%
   LeetCode.Algorithms.SumRootToLeafNumbers.SumRootToLeafNumbersBreadthFirstSearch                                                           93.1%
   LeetCode.Algorithms.SumRootToLeafNumbers.SumRootToLeafNumbersDepthFirstSearch                                                            100.0%
   LeetCode.Algorithms.SymmetricTree.SymmetricTreeIterative                                                                                  92.5%

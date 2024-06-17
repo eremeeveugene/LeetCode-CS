@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9839408615855213" branch-rate="0.9682175622542595" lines-covered="7720" lines-valid="7846" branches-covered="2955" branches-valid="3052" complexity="3185" version="0" timestamp="1718535038">
+<coverage line-rate="0.9840587044534413" branch-rate="0.968445022771633" lines-covered="7778" lines-valid="7904" branches-covered="2977" branches-valid="3074" complexity="3207" version="0" timestamp="1718631310">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.984137303341568" branch-rate="0.9701342281879195" complexity="3107">
+    <package name="LeetCode" line-rate="0.9842560330365209" branch-rate="0.9703530979347101" complexity="3129">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -18099,6 +18099,156 @@
             <line number="49" hits="34" branch="false" />
           </lines>
         </class>
+        <class name="LeetCode.Algorithms.SumOfSquareNumbers.SumOfSquareNumbersBinarySearch" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\SumOfSquareNumbers\SumOfSquareNumbersBinarySearch.cs" line-rate="1" branch-rate="1" complexity="10">
+          <methods>
+            <method name="JudgeSquareSum" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="13" hits="11" branch="false" />
+                <line number="14" hits="14166" branch="true" condition-coverage="100% (2/2)" />
+                <line number="15" hits="7080" branch="false" />
+                <line number="16" hits="7080" branch="false" />
+                <line number="18" hits="7080" branch="true" condition-coverage="100% (2/2)" />
+                <line number="19" hits="8" branch="false" />
+                <line number="20" hits="8" branch="false" />
+                <line number="22" hits="7072" branch="false" />
+                <line number="24" hits="3" branch="false" />
+                <line number="25" hits="11" branch="false" />
+              </lines>
+            </method>
+            <method name="BinarySearch" signature="(System.Int64,System.Int64,System.Int32)" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="28" hits="7080" branch="false" />
+                <line number="29" hits="225945" branch="false" />
+                <line number="30" hits="225945" branch="false" />
+                <line number="31" hits="225945" branch="true" condition-coverage="100% (2/2)" />
+                <line number="32" hits="7072" branch="false" />
+                <line number="33" hits="7072" branch="false" />
+                <line number="36" hits="218873" branch="false" />
+                <line number="38" hits="218873" branch="true" condition-coverage="100% (2/2)" />
+                <line number="39" hits="8" branch="false" />
+                <line number="40" hits="8" branch="false" />
+                <line number="43" hits="218865" branch="true" condition-coverage="100% (2/2)" />
+                <line number="44" hits="157633" branch="false" />
+                <line number="45" hits="157633" branch="false" />
+                <line number="47" hits="157633" branch="false" />
+                <line number="50" hits="61232" branch="false" />
+                <line number="51" hits="61232" branch="false" />
+                <line number="52" hits="7080" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="11" branch="false" />
+            <line number="14" hits="14166" branch="true" condition-coverage="100% (2/2)" />
+            <line number="15" hits="7080" branch="false" />
+            <line number="16" hits="7080" branch="false" />
+            <line number="18" hits="7080" branch="true" condition-coverage="100% (2/2)" />
+            <line number="19" hits="8" branch="false" />
+            <line number="20" hits="8" branch="false" />
+            <line number="22" hits="7072" branch="false" />
+            <line number="24" hits="3" branch="false" />
+            <line number="25" hits="11" branch="false" />
+            <line number="28" hits="7080" branch="false" />
+            <line number="29" hits="225945" branch="false" />
+            <line number="30" hits="225945" branch="false" />
+            <line number="31" hits="225945" branch="true" condition-coverage="100% (2/2)" />
+            <line number="32" hits="7072" branch="false" />
+            <line number="33" hits="7072" branch="false" />
+            <line number="36" hits="218873" branch="false" />
+            <line number="38" hits="218873" branch="true" condition-coverage="100% (2/2)" />
+            <line number="39" hits="8" branch="false" />
+            <line number="40" hits="8" branch="false" />
+            <line number="43" hits="218865" branch="true" condition-coverage="100% (2/2)" />
+            <line number="44" hits="157633" branch="false" />
+            <line number="45" hits="157633" branch="false" />
+            <line number="47" hits="157633" branch="false" />
+            <line number="50" hits="61232" branch="false" />
+            <line number="51" hits="61232" branch="false" />
+            <line number="52" hits="7080" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.SumOfSquareNumbers.SumOfSquareNumbersBruteForce" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\SumOfSquareNumbers\SumOfSquareNumbersBruteForce.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="JudgeSquareSum" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="13" hits="11" branch="false" />
+                <line number="14" hits="14166" branch="true" condition-coverage="100% (2/2)" />
+                <line number="15" hits="7080" branch="false" />
+                <line number="16" hits="654440768" branch="true" condition-coverage="100% (2/2)" />
+                <line number="17" hits="327213312" branch="false" />
+                <line number="18" hits="327213312" branch="true" condition-coverage="100% (2/2)" />
+                <line number="19" hits="8" branch="false" />
+                <line number="20" hits="8" branch="false" />
+                <line number="22" hits="327213304" branch="false" />
+                <line number="23" hits="7072" branch="false" />
+                <line number="25" hits="3" branch="false" />
+                <line number="26" hits="11" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="11" branch="false" />
+            <line number="14" hits="14166" branch="true" condition-coverage="100% (2/2)" />
+            <line number="15" hits="7080" branch="false" />
+            <line number="16" hits="654440768" branch="true" condition-coverage="100% (2/2)" />
+            <line number="17" hits="327213312" branch="false" />
+            <line number="18" hits="327213312" branch="true" condition-coverage="100% (2/2)" />
+            <line number="19" hits="8" branch="false" />
+            <line number="20" hits="8" branch="false" />
+            <line number="22" hits="327213304" branch="false" />
+            <line number="23" hits="7072" branch="false" />
+            <line number="25" hits="3" branch="false" />
+            <line number="26" hits="11" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.SumOfSquareNumbers.SumOfSquareNumbersTwoPointers" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\SumOfSquareNumbers\SumOfSquareNumbersTwoPointers.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="JudgeSquareSum" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="13" hits="11" branch="false" />
+                <line number="14" hits="11" branch="false" />
+                <line number="15" hits="11" branch="false" />
+                <line number="17" hits="7623" branch="true" condition-coverage="100% (2/2)" />
+                <line number="18" hits="7620" branch="false" />
+                <line number="19" hits="7620" branch="false" />
+                <line number="21" hits="7620" branch="true" condition-coverage="100% (2/2)" />
+                <line number="22" hits="8" branch="false" />
+                <line number="23" hits="8" branch="false" />
+                <line number="26" hits="7612" branch="true" condition-coverage="100% (2/2)" />
+                <line number="27" hits="542" branch="false" />
+                <line number="28" hits="542" branch="false" />
+                <line number="29" hits="542" branch="false" />
+                <line number="31" hits="7070" branch="false" />
+                <line number="32" hits="7070" branch="false" />
+                <line number="33" hits="7070" branch="false" />
+                <line number="34" hits="7612" branch="false" />
+                <line number="36" hits="3" branch="false" />
+                <line number="37" hits="11" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="11" branch="false" />
+            <line number="14" hits="11" branch="false" />
+            <line number="15" hits="11" branch="false" />
+            <line number="17" hits="7623" branch="true" condition-coverage="100% (2/2)" />
+            <line number="18" hits="7620" branch="false" />
+            <line number="19" hits="7620" branch="false" />
+            <line number="21" hits="7620" branch="true" condition-coverage="100% (2/2)" />
+            <line number="22" hits="8" branch="false" />
+            <line number="23" hits="8" branch="false" />
+            <line number="26" hits="7612" branch="true" condition-coverage="100% (2/2)" />
+            <line number="27" hits="542" branch="false" />
+            <line number="28" hits="542" branch="false" />
+            <line number="29" hits="542" branch="false" />
+            <line number="31" hits="7070" branch="false" />
+            <line number="32" hits="7070" branch="false" />
+            <line number="33" hits="7070" branch="false" />
+            <line number="34" hits="7612" branch="false" />
+            <line number="36" hits="3" branch="false" />
+            <line number="37" hits="11" branch="false" />
+          </lines>
+        </class>
         <class name="LeetCode.Algorithms.SumRootToLeafNumbers.SumRootToLeafNumbersBreadthFirstSearch" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\SumRootToLeafNumbers\SumRootToLeafNumbersBreadthFirstSearch.cs" line-rate="0.9310344827586207" branch-rate="0.9166666666666666" complexity="12">
           <methods>
             <method name="SumNumbers" signature="(LeetCode.Core.Models.TreeNode)" line-rate="0.9310344827586207" branch-rate="0.9166666666666666" complexity="12">
@@ -19878,10 +20028,10 @@
                 <line number="50" hits="3" branch="false" />
                 <line number="51" hits="3" branch="false" />
                 <line number="52" hits="3" branch="false" />
-                <line number="53" hits="5" branch="true" condition-coverage="100% (2/2)" />
-                <line number="54" hits="2" branch="false" />
-                <line number="55" hits="2" branch="false" />
-                <line number="56" hits="2" branch="false" />
+                <line number="53" hits="7" branch="true" condition-coverage="100% (2/2)" />
+                <line number="54" hits="4" branch="false" />
+                <line number="55" hits="4" branch="false" />
+                <line number="56" hits="4" branch="false" />
                 <line number="58" hits="3" branch="false" />
                 <line number="59" hits="3" branch="false" />
                 <line number="60" hits="3" branch="false" />
@@ -19920,10 +20070,10 @@
             <line number="50" hits="3" branch="false" />
             <line number="51" hits="3" branch="false" />
             <line number="52" hits="3" branch="false" />
-            <line number="53" hits="5" branch="true" condition-coverage="100% (2/2)" />
-            <line number="54" hits="2" branch="false" />
-            <line number="55" hits="2" branch="false" />
-            <line number="56" hits="2" branch="false" />
+            <line number="53" hits="7" branch="true" condition-coverage="100% (2/2)" />
+            <line number="54" hits="4" branch="false" />
+            <line number="55" hits="4" branch="false" />
+            <line number="56" hits="4" branch="false" />
             <line number="58" hits="3" branch="false" />
             <line number="59" hits="3" branch="false" />
             <line number="60" hits="3" branch="false" />
@@ -20058,10 +20208,10 @@
             <method name="Third" signature="(System.Action)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
                 <line number="41" hits="3" branch="false" />
-                <line number="42" hits="6" branch="true" condition-coverage="100% (2/2)" />
-                <line number="43" hits="3" branch="false" />
-                <line number="44" hits="3" branch="false" />
-                <line number="45" hits="3" branch="false" />
+                <line number="42" hits="5" branch="true" condition-coverage="100% (2/2)" />
+                <line number="43" hits="2" branch="false" />
+                <line number="44" hits="2" branch="false" />
+                <line number="45" hits="2" branch="false" />
                 <line number="47" hits="3" branch="false" />
                 <line number="48" hits="3" branch="false" />
               </lines>
@@ -20081,10 +20231,10 @@
             <line number="37" hits="3" branch="false" />
             <line number="38" hits="3" branch="false" />
             <line number="41" hits="3" branch="false" />
-            <line number="42" hits="6" branch="true" condition-coverage="100% (2/2)" />
-            <line number="43" hits="3" branch="false" />
-            <line number="44" hits="3" branch="false" />
-            <line number="45" hits="3" branch="false" />
+            <line number="42" hits="5" branch="true" condition-coverage="100% (2/2)" />
+            <line number="43" hits="2" branch="false" />
+            <line number="44" hits="2" branch="false" />
+            <line number="45" hits="2" branch="false" />
             <line number="47" hits="3" branch="false" />
             <line number="48" hits="3" branch="false" />
           </lines>
