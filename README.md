@@ -97,6 +97,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)
 - [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)
 - [165. Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/description/)
+- [168. Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/)
 - [169. Majority Element](https://leetcode.com/problems/majority-element/description/)
 - [171. Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/description/)
 - [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/)
