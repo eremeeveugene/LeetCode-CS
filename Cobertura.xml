@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9840587044534413" branch-rate="0.968445022771633" lines-covered="7778" lines-valid="7904" branches-covered="2977" branches-valid="3074" complexity="3207" version="0" timestamp="1718631310">
+<coverage line-rate="0.9840768355870088" branch-rate="0.9684655396618985" lines-covered="7787" lines-valid="7913" branches-covered="2979" branches-valid="3076" complexity="3209" version="0" timestamp="1718722170">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.9842560330365209" branch-rate="0.9703530979347101" complexity="3129">
+    <package name="LeetCode" line-rate="0.9842742974993555" branch-rate="0.9703728362183754" complexity="3131">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -4525,6 +4525,34 @@
             <line number="63" hits="34" branch="false" />
             <line number="65" hits="12" branch="false" />
             <line number="66" hits="12" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.ExcelSheetColumnTitle.ExcelSheetColumnTitleIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\ExcelSheetColumnTitle\ExcelSheetColumnTitleIterative.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="ConvertToTitle" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="15" hits="3" branch="false" />
+                <line number="16" hits="3" branch="false" />
+                <line number="18" hits="8" branch="true" condition-coverage="100% (2/2)" />
+                <line number="19" hits="5" branch="false" />
+                <line number="20" hits="5" branch="false" />
+                <line number="22" hits="5" branch="false" />
+                <line number="23" hits="5" branch="false" />
+                <line number="25" hits="3" branch="false" />
+                <line number="26" hits="3" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="3" branch="false" />
+            <line number="16" hits="3" branch="false" />
+            <line number="18" hits="8" branch="true" condition-coverage="100% (2/2)" />
+            <line number="19" hits="5" branch="false" />
+            <line number="20" hits="5" branch="false" />
+            <line number="22" hits="5" branch="false" />
+            <line number="23" hits="5" branch="false" />
+            <line number="25" hits="3" branch="false" />
+            <line number="26" hits="3" branch="false" />
           </lines>
         </class>
         <class name="LeetCode.Algorithms.FaultyKeyboard.FaultyKeyboardStringBuilder" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\FaultyKeyboard\FaultyKeyboardStringBuilder.cs" line-rate="1" branch-rate="1" complexity="6">
@@ -20028,10 +20056,10 @@
                 <line number="50" hits="3" branch="false" />
                 <line number="51" hits="3" branch="false" />
                 <line number="52" hits="3" branch="false" />
-                <line number="53" hits="7" branch="true" condition-coverage="100% (2/2)" />
-                <line number="54" hits="4" branch="false" />
-                <line number="55" hits="4" branch="false" />
-                <line number="56" hits="4" branch="false" />
+                <line number="53" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="54" hits="3" branch="false" />
+                <line number="55" hits="3" branch="false" />
+                <line number="56" hits="3" branch="false" />
                 <line number="58" hits="3" branch="false" />
                 <line number="59" hits="3" branch="false" />
                 <line number="60" hits="3" branch="false" />
@@ -20070,10 +20098,10 @@
             <line number="50" hits="3" branch="false" />
             <line number="51" hits="3" branch="false" />
             <line number="52" hits="3" branch="false" />
-            <line number="53" hits="7" branch="true" condition-coverage="100% (2/2)" />
-            <line number="54" hits="4" branch="false" />
-            <line number="55" hits="4" branch="false" />
-            <line number="56" hits="4" branch="false" />
+            <line number="53" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="54" hits="3" branch="false" />
+            <line number="55" hits="3" branch="false" />
+            <line number="56" hits="3" branch="false" />
             <line number="58" hits="3" branch="false" />
             <line number="59" hits="3" branch="false" />
             <line number="60" hits="3" branch="false" />
