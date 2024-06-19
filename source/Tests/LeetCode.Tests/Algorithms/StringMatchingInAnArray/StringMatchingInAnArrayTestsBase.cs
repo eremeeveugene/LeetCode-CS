@@ -17,6 +17,6 @@ public abstract class StringMatchingInAnArrayTestsBase<T> where T : IStringMatch
         var actualResult = solution.StringMatching(words);
 
         // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
     }
 }
