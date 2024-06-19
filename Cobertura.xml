@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9840768355870088" branch-rate="0.9684655396618985" lines-covered="7787" lines-valid="7913" branches-covered="2979" branches-valid="3076" complexity="3209" version="0" timestamp="1718722170">
+<coverage line-rate="0.9840828701364326" branch-rate="0.9684860298895387" lines-covered="7790" lines-valid="7916" branches-covered="2981" branches-valid="3078" complexity="3211" version="0" timestamp="1718811569">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.9842742974993555" branch-rate="0.9703728362183754" complexity="3131">
+    <package name="LeetCode" line-rate="0.9842803762401753" branch-rate="0.9703925482368596" complexity="3133">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -17451,6 +17451,22 @@
             <line number="42" hits="10" branch="false" />
             <line number="44" hits="2" branch="false" />
             <line number="45" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.StringMatchingInAnArray.StringMatchingInAnArrayBruteForce" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\StringMatchingInAnArray\StringMatchingInAnArrayBruteForce.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="StringMatching" signature="(System.String[])" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="13" hits="3" branch="false" />
+                <line number="14" hits="40" branch="true" condition-coverage="100% (2/2)" />
+                <line number="15" hits="3" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="3" branch="false" />
+            <line number="14" hits="40" branch="true" condition-coverage="100% (2/2)" />
+            <line number="15" hits="3" branch="false" />
           </lines>
         </class>
         <class name="LeetCode.Algorithms.SubarrayProductLessThanK.SubarrayProductLessThanKTwoPointers" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\SubarrayProductLessThanK\SubarrayProductLessThanKTwoPointers.cs" line-rate="1" branch-rate="1" complexity="6">
