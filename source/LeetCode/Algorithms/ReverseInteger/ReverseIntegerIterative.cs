@@ -11,6 +11,7 @@
 
 namespace LeetCode.Algorithms.ReverseInteger;
 
+/// <inheritdoc />
 public class ReverseIntegerIterative : IReverseInteger
 {
     /// <summary>
