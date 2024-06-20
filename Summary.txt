@@ -1,21 +1,21 @@
 Summary
-  Generated on: 6/19/2024 - 3:39:30 PM
-  Coverage date: 6/19/2024 - 3:38:39 PM - 6/19/2024 - 3:38:57 PM
+  Generated on: 6/20/2024 - 2:02:16 PM
+  Coverage date: 6/20/2024 - 2:01:24 PM - 6/20/2024 - 2:01:41 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 425
-  Files: 425
+  Classes: 426
+  Files: 426
   Line coverage: 98.4%
-  Covered lines: 7790
+  Covered lines: 7799
   Uncovered lines: 126
-  Coverable lines: 7916
-  Total lines: 20949
-  Branch coverage: 96.8% (2981 of 3078)
-  Covered branches: 2981
-  Total branches: 3078
-  Method coverage: 98.6% (573 of 581)
-  Covered methods: 573
-  Total methods: 581
+  Coverable lines: 7925
+  Total lines: 20975
+  Branch coverage: 96.8% (2983 of 3080)
+  Covered branches: 2983
+  Total branches: 3080
+  Method coverage: 98.6% (574 of 582)
+  Covered methods: 574
+  Total methods: 582
 
 LeetCode                                                                                                                                    98.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -333,6 +333,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ReplaceWords.ReplaceWordsHashSet                                                                                     100.0%
   LeetCode.Algorithms.ReplaceWords.ReplaceWordsTrieNode                                                                                    100.0%
   LeetCode.Algorithms.RevealCardsInIncreasingOrder.RevealCardsInIncreasingOrderQueue                                                       100.0%
+  LeetCode.Algorithms.ReverseBits.ReverseBitsIterative                                                                                     100.0%
   LeetCode.Algorithms.ReverseInteger.ReverseIntegerIterative                                                                               100.0%
   LeetCode.Algorithms.ReverseLinkedList.ReverseLinkedListIterative                                                                         100.0%
   LeetCode.Algorithms.ReverseOddLevelsOfBinaryTree.ReverseOddLevelsOfBinaryTreeBreadthFirstSearch                                          100.0%
