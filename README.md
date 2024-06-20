@@ -100,6 +100,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [168. Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/)
 - [169. Majority Element](https://leetcode.com/problems/majority-element/description/)
 - [171. Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/description/)
+- [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/)
 - [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/)
 - [200. Number of Islands](https://leetcode.com/problems/number-of-islands/description/)
 - [202. Happy Number](https://leetcode.com/problems/happy-number/description/)
