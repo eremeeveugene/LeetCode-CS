@@ -1,21 +1,21 @@
 Summary
-  Generated on: 6/20/2024 - 2:02:16 PM
-  Coverage date: 6/20/2024 - 2:01:24 PM - 6/20/2024 - 2:01:41 PM
+  Generated on: 6/21/2024 - 4:08:39 PM
+  Coverage date: 6/21/2024 - 4:07:40 PM - 6/21/2024 - 4:08:05 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 426
-  Files: 426
+  Classes: 427
+  Files: 427
   Line coverage: 98.4%
-  Covered lines: 7799
+  Covered lines: 7810
   Uncovered lines: 126
-  Coverable lines: 7925
-  Total lines: 20975
-  Branch coverage: 96.8% (2983 of 3080)
-  Covered branches: 2983
-  Total branches: 3080
-  Method coverage: 98.6% (574 of 582)
-  Covered methods: 574
-  Total methods: 582
+  Coverable lines: 7936
+  Total lines: 21002
+  Branch coverage: 96.8% (2987 of 3084)
+  Covered branches: 2987
+  Total branches: 3084
+  Method coverage: 98.6% (575 of 583)
+  Covered methods: 575
+  Total methods: 583
 
 LeetCode                                                                                                                                    98.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -250,6 +250,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MissingNumber.MissingNumberSortAndForSearch                                                                          100.0%
   LeetCode.Algorithms.MissingNumber.MissingNumberSortAndWhileSearch                                                                        100.0%
   LeetCode.Algorithms.MissingNumber.MissingNumberSumFormula                                                                                100.0%
+  LeetCode.Algorithms.MoveZeroes.MoveZeroesTwoPointers                                                                                     100.0%
   LeetCode.Algorithms.NaryTreeLevelOrderTraversal.NaryTreeLevelOrderTraversalBreadthFirstSearch                                            100.0%
   LeetCode.Algorithms.NaryTreePostorderTraversal.NaryTreePostorderTraversalStack                                                           100.0%
   LeetCode.Algorithms.NaryTreePostorderTraversal.NaryTreePostorderTraversalTwoStacks                                                       100.0%
