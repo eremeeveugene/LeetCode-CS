@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/21/2024 - 4:08:39 PM
-  Coverage date: 6/21/2024 - 4:07:40 PM - 6/21/2024 - 4:08:05 PM
+  Generated on: 6/22/2024 - 12:01:09 PM
+  Coverage date: 6/22/2024 - 12:00:16 PM - 6/22/2024 - 12:00:34 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 427
-  Files: 427
-  Line coverage: 98.4%
-  Covered lines: 7810
-  Uncovered lines: 126
-  Coverable lines: 7936
-  Total lines: 21002
-  Branch coverage: 96.8% (2987 of 3084)
-  Covered branches: 2987
-  Total branches: 3084
-  Method coverage: 98.6% (575 of 583)
-  Covered methods: 575
-  Total methods: 583
+  Classes: 430
+  Files: 430
+  Line coverage: 98.3%
+  Covered lines: 7873
+  Uncovered lines: 132
+  Coverable lines: 8005
+  Total lines: 21146
+  Branch coverage: 96.7% (3018 of 3118)
+  Covered branches: 3018
+  Total branches: 3118
+  Method coverage: 98.6% (578 of 586)
+  Covered methods: 578
+  Total methods: 586
 
-LeetCode                                                                                                                                    98.4%
+LeetCode                                                                                                                                    98.3%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -309,6 +309,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoIterative                                                                                       100.0%
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoLogarithms                                                                                      100.0%
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoRecursive                                                                                       100.0%
+  LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTBreadthFirstSearch                                                                         92.0%
+  LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTDepthFirstSearchQueue                                                                      92.0%
+  LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTDepthFirstSearchRecursive                                                                  89.4%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksBruteForce                                                                                100.0%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksTuple                                                                                     100.0%
   LeetCode.Algorithms.RelativeSortArray.RelativeSortArrayCountingSort                                                                      100.0%
