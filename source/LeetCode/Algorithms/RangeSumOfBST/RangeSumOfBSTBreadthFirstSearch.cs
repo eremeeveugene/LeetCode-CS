@@ -7,7 +7,7 @@ public class RangeSumOfBSTBreadthFirstSearch : IRangeSumOfBST
 {
     /// <summary>
     ///     Time complexity - O(n)
-    ///     Space complexity - O(h), where h is the height of the tree
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="root"></param>
     /// <param name="low"></param>
@@ -22,13 +22,13 @@ public class RangeSumOfBSTBreadthFirstSearch : IRangeSumOfBST
 
         var result = 0;
 
-        var stack = new Stack<TreeNode>();
+        var queue = new Queue<TreeNode>();
 
-        stack.Push(root);
+        queue.Enqueue(root);
 
-        while (stack.Count > 0)
+        while (queue.Count > 0)
         {
-            var treeNode = stack.Pop();
+            var treeNode = queue.Dequeue();
 
             if (treeNode.val >= low && treeNode.val <= high)
             {
@@ -37,12 +37,12 @@ public class RangeSumOfBSTBreadthFirstSearch : IRangeSumOfBST
 
             if (treeNode.left != null)
             {
-                stack.Push(treeNode.left);
+                queue.Enqueue(treeNode.left);
             }
 
             if (treeNode.right != null)
             {
-                stack.Push(treeNode.right);
+                queue.Enqueue(treeNode.right);
             }
         }
 

@@ -3,11 +3,11 @@
 namespace LeetCode.Algorithms.RangeSumOfBST;
 
 /// <inheritdoc />
-public class RangeSumOfBSTDepthFirstSearchQueue : IRangeSumOfBST
+public class RangeSumOfBSTDepthFirstSearchStack : IRangeSumOfBST
 {
     /// <summary>
     ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
+    ///     Space complexity - O(h), where h is the height of the tree
     /// </summary>
     /// <param name="root"></param>
     /// <param name="low"></param>
@@ -22,13 +22,13 @@ public class RangeSumOfBSTDepthFirstSearchQueue : IRangeSumOfBST
 
         var result = 0;
 
-        var queue = new Queue<TreeNode>();
+        var stack = new Stack<TreeNode>();
 
-        queue.Enqueue(root);
+        stack.Push(root);
 
-        while (queue.Count > 0)
+        while (stack.Count > 0)
         {
-            var treeNode = queue.Dequeue();
+            var treeNode = stack.Pop();
 
             if (treeNode.val >= low && treeNode.val <= high)
             {
@@ -37,12 +37,12 @@ public class RangeSumOfBSTDepthFirstSearchQueue : IRangeSumOfBST
 
             if (treeNode.left != null)
             {
-                queue.Enqueue(treeNode.left);
+                stack.Push(treeNode.left);
             }
 
             if (treeNode.right != null)
             {
-                queue.Enqueue(treeNode.right);
+                stack.Push(treeNode.right);
             }
         }
 
