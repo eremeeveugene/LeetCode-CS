@@ -1,21 +1,21 @@
 Summary
-  Generated on: 6/22/2024 - 12:01:09 PM
-  Coverage date: 6/22/2024 - 12:00:16 PM - 6/22/2024 - 12:00:34 PM
+  Generated on: 6/23/2024 - 4:08:54 PM
+  Coverage date: 6/23/2024 - 4:08:02 PM - 6/23/2024 - 4:08:20 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 430
-  Files: 430
+  Classes: 432
+  Files: 432
   Line coverage: 98.3%
-  Covered lines: 7873
+  Covered lines: 7923
   Uncovered lines: 132
-  Coverable lines: 8005
-  Total lines: 21146
-  Branch coverage: 96.7% (3018 of 3118)
-  Covered branches: 3018
-  Total branches: 3118
-  Method coverage: 98.6% (578 of 586)
-  Covered methods: 578
-  Total methods: 586
+  Coverable lines: 8055
+  Total lines: 21244
+  Branch coverage: 96.8% (3044 of 3144)
+  Covered branches: 3044
+  Total branches: 3144
+  Method coverage: 98.6% (580 of 588)
+  Covered methods: 580
+  Total methods: 588
 
 LeetCode                                                                                                                                    98.3%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -167,6 +167,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ImplementQueueUsingStacks.ImplementQueueUsingStacksTwoStacks                                                         100.0%
   LeetCode.Algorithms.ImplementStackUsingQueues.ImplementStackUsingQueuesOneQueue                                                          100.0%
   LeetCode.Algorithms.ImplementStackUsingQueues.ImplementStackUsingQueuesTwoQueues                                                         100.0%
+  LeetCode.Algorithms.IncreasingDecreasingString.IncreasingDecreasingStringCountingSort                                                    100.0%
+  LeetCode.Algorithms.IncreasingDecreasingString.IncreasingDecreasingStringDictionary                                                      100.0%
   LeetCode.Algorithms.InsertInterval.InsertIntervalIterative                                                                               100.0%
   LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSet                                                               100.0%
   LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSetIntersectWith                                                  100.0%
@@ -310,8 +312,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoLogarithms                                                                                      100.0%
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoRecursive                                                                                       100.0%
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTBreadthFirstSearch                                                                         92.0%
-  LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTDepthFirstSearchQueue                                                                      92.0%
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTDepthFirstSearchRecursive                                                                  89.4%
+  LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTDepthFirstSearchStack                                                                      92.0%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksBruteForce                                                                                100.0%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksTuple                                                                                     100.0%
   LeetCode.Algorithms.RelativeSortArray.RelativeSortArrayCountingSort                                                                      100.0%
