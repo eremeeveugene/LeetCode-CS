@@ -1,21 +1,21 @@
 Summary
-  Generated on: 6/23/2024 - 4:08:54 PM
-  Coverage date: 6/23/2024 - 4:08:02 PM - 6/23/2024 - 4:08:20 PM
+  Generated on: 6/24/2024 - 10:44:51 AM
+  Coverage date: 6/24/2024 - 10:43:58 AM - 6/24/2024 - 10:44:16 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 432
-  Files: 432
+  Classes: 435
+  Files: 435
   Line coverage: 98.3%
-  Covered lines: 7923
+  Covered lines: 7998
   Uncovered lines: 132
-  Coverable lines: 8055
-  Total lines: 21244
-  Branch coverage: 96.8% (3044 of 3144)
-  Covered branches: 3044
-  Total branches: 3144
-  Method coverage: 98.6% (580 of 588)
-  Covered methods: 580
-  Total methods: 588
+  Coverable lines: 8130
+  Total lines: 21393
+  Branch coverage: 96.8% (3072 of 3172)
+  Covered branches: 3072
+  Total branches: 3172
+  Method coverage: 98.6% (584 of 592)
+  Covered methods: 584
+  Total methods: 592
 
 LeetCode                                                                                                                                    98.3%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -132,6 +132,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindCommonCharacters.FindCommonCharactersDictionary                                                                  100.0%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphBreadthFirstSearch                                                     93.9%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphDepthFirstSearch                                                       91.6%
+  LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeBreadthFirstSearch                                              100.0%
+  LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchRecursive                                       100.0%
+  LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchStack                                           100.0%
   LeetCode.Algorithms.FindPivotIndex.FindPivotIndexIterative                                                                               100.0%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberBruteForce                                                               91.6%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm                                            89.4%
