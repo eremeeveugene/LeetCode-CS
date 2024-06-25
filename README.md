@@ -215,6 +215,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1404. Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/description/)
 - [1408. String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)
 - [1442. Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/description/)
+- [1464. Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/description/)
 - [1470. Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/description/)
 - [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/description/)
 - [1486. XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/description/)
