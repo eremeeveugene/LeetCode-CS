@@ -1,7 +1,7 @@
 ﻿namespace LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray;
 
 /// <inheritdoc />
-public class MaximumProductOfTwoElementsInAnArraySecondBiggest : IMaximumProductOfTwoElementsInAnArray
+public class MaximumProductOfTwoElementsInAnArraySecondMax : IMaximumProductOfTwoElementsInAnArray
 {
     /// <summary>
     ///     Time complexity - O(n)
@@ -11,22 +11,22 @@ public class MaximumProductOfTwoElementsInAnArraySecondBiggest : IMaximumProduct
     /// <returns></returns>
     public int MaxProduct(int[] nums)
     {
-        var biggest = 0;
-        var secondBiggest = 0;
+        var firstMax = 0;
+        var secondMax = 0;
 
         foreach (var num in nums)
         {
-            if (num > biggest)
+            if (num > firstMax)
             {
-                secondBiggest = biggest;
-                biggest = num;
+                secondMax = firstMax;
+                firstMax = num;
             }
             else
             {
-                secondBiggest = Math.Max(secondBiggest, num);
+                secondMax = Math.Max(secondMax, num);
             }
         }
 
-        return (biggest - 1) * (secondBiggest - 1);
+        return (firstMax - 1) * (secondMax - 1);
     }
 }
