@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/24/2024 - 10:44:51 AM
-  Coverage date: 6/24/2024 - 10:43:58 AM - 6/24/2024 - 10:44:16 AM
+  Generated on: 6/25/2024 - 5:55:30 PM
+  Coverage date: 6/25/2024 - 5:54:40 PM - 6/25/2024 - 5:54:56 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 435
-  Files: 435
+  Classes: 438
+  Files: 438
   Line coverage: 98.3%
-  Covered lines: 7998
+  Covered lines: 8029
   Uncovered lines: 132
-  Coverable lines: 8130
-  Total lines: 21393
-  Branch coverage: 96.8% (3072 of 3172)
-  Covered branches: 3072
-  Total branches: 3172
-  Method coverage: 98.6% (584 of 592)
-  Covered methods: 584
-  Total methods: 592
+  Coverable lines: 8161
+  Total lines: 21469
+  Branch coverage: 96.8% (3080 of 3180)
+  Covered branches: 3080
+  Total branches: 3180
+  Method coverage: 98.6% (587 of 595)
+  Covered methods: 587
+  Total methods: 595
 
-LeetCode                                                                                                                                    98.3%
+LeetCode                                                                                                                                    98.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -223,6 +223,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumNumberOfWordsYouCanType.MaximumNumberOfWordsYouCanTypeHashSet                                                 100.0%
   LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStringBuilder                                                           100.0%
   LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStrings                                                                 100.0%
+  LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArrayBruteForce                                  100.0%
+  LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArraySecondMax                                   100.0%
+  LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArraySorting                                     100.0%
   LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysBinarySearch                                                           92.3%
   LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysIterative                                                             100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayMergingAndSorting                                                                   100.0%
