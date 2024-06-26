@@ -58,13 +58,6 @@ jobs:
             exit 1
           } else {
             Write-Output "Coverage is above 90%. It's at $coveragePercentage%"
-          }
-      
-      - name: Upload Coverage Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-report
-          path: ${{ github.workspace }}/source/coverage
       
       - name: Clean up previous reports in gh-pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
@@ -78,8 +71,15 @@ jobs:
           git commit -m "Clean up previous reports"
           git push origin gh-pages
       
+      - name: Upload Coverage Report
+        if: github.event_name == 'pull_request' && github.event.pull_request.merged == true && github.ref == 'refs/heads/develop'
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: ${{ github.workspace }}/source/coverage
+      
       - name: Deploy to GitHub Pages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+        if: github.event_name == 'pull_request' && github.event.pull_request.merged == true && github.ref == 'refs/heads/develop'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
