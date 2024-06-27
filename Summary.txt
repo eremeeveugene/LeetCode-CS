@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/26/2024 - 4:22:00 PM
-  Coverage date: 6/26/2024 - 4:21:09 PM - 6/26/2024 - 4:21:27 PM
+  Generated on: 6/27/2024 - 7:51:00 PM
+  Coverage date: 6/27/2024 - 7:50:10 PM - 6/27/2024 - 7:50:26 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 438
-  Files: 438
-  Line coverage: 98.3%
-  Covered lines: 8029
-  Uncovered lines: 132
-  Coverable lines: 8161
-  Total lines: 21469
-  Branch coverage: 96.8% (3080 of 3180)
-  Covered branches: 3080
-  Total branches: 3180
-  Method coverage: 98.6% (587 of 595)
-  Covered methods: 587
-  Total methods: 595
+  Classes: 440
+  Files: 440
+  Line coverage: 98.6%
+  Covered lines: 8076
+  Uncovered lines: 109
+  Coverable lines: 8185
+  Total lines: 21526
+  Branch coverage: 97.1% (3104 of 3194)
+  Covered branches: 3104
+  Total branches: 3194
+  Method coverage: 98.8% (590 of 597)
+  Covered methods: 590
+  Total methods: 597
 
-LeetCode                                                                                                                                    98.4%
+LeetCode                                                                                                                                    98.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                             92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                       100.0%
@@ -128,6 +128,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindAllGroupOfFarmland.FindAllGroupOfFarmlandIterative                                                               100.0%
   LeetCode.Algorithms.FindBottomLeftTreeValue.FindBottomLeftTreeValueBreadthFirst                                                          100.0%
   LeetCode.Algorithms.FindBottomLeftTreeValue.FindBottomLeftTreeValueDepthFirst                                                            100.0%
+  LeetCode.Algorithms.FindCenterOfStarGraph.FindCenterOfStarGraphDictionary                                                                 94.4%
+  LeetCode.Algorithms.FindCenterOfStarGraph.FindCenterOfStarGraphTwoEdges                                                                  100.0%
   LeetCode.Algorithms.FindCommonCharacters.FindCommonCharactersArray                                                                       100.0%
   LeetCode.Algorithms.FindCommonCharacters.FindCommonCharactersDictionary                                                                  100.0%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphBreadthFirstSearch                                                     93.9%
@@ -384,7 +386,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SmallestStringStartingFromLeaf.SmallestStringStartingFromLeafDepthFirstSearch                                        100.0%
   LeetCode.Algorithms.SortArrayByIncreasingFrequency.SortArrayByIncreasingFrequencyDictionary                                              100.0%
   LeetCode.Algorithms.SortArrayByIncreasingFrequency.SortArrayByIncreasingFrequencyLinq                                                    100.0%
-  LeetCode.Algorithms.SortColors.SortColorsCountingSort                                                                                      0.0%
+  LeetCode.Algorithms.SortColors.SortColorsCountingSort                                                                                    100.0%
   LeetCode.Algorithms.SortColors.SortColorsSorting                                                                                         100.0%
   LeetCode.Algorithms.SortColors.SortColorsThreePointers                                                                                   100.0%
   LeetCode.Algorithms.SortingTheSentence.SortingTheSentenceIterative                                                                       100.0%
