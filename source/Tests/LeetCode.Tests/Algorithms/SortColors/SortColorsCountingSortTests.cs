@@ -3,4 +3,4 @@
 namespace LeetCode.Tests.Algorithms.SortColors;
 
 [TestClass]
-public class SortColorsCountingSortTests : SortColorsTestsBase<SortColorsSorting>;
+public class SortColorsCountingSortTests : SortColorsTestsBase<SortColorsCountingSort>;

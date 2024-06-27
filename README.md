@@ -237,6 +237,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1716. Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/description/)
 - [1720. Decode XORed Array](https://leetcode.com/problems/decode-xored-array/description/)
 - [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/description/)
+- [1791. Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/description/)
 - [1832. Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/description/)
 - [1859. Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/description/)
 - [1863. Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/description/)
