@@ -165,6 +165,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [648. Replace Words](https://leetcode.com/problems/replace-words/description/)
 - [678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/)
 - [680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/description/)
+- [704. Binary Search](https://leetcode.com/problems/binary-search/description/)
 - [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/description/)
 - [724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/)
 - [733. Flood Fill](https://leetcode.com/problems/flood-fill/description/)
