@@ -19,13 +19,13 @@ public class BinarySearchUpperBound : IBinarySearch
         {
             var mid = left + ((right - left) / 2);
 
-            if (nums[mid] <= target)
+            if (nums[mid] > target)
             {
-                left = mid + 1;
+                right = mid;
             }
             else
             {
-                right = mid;
+                left = mid + 1;
             }
         }
 

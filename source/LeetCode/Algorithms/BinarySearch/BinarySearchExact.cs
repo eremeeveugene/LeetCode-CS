@@ -15,7 +15,7 @@ public class BinarySearchExact : IBinarySearch
         var left = 0;
         var right = nums.Length - 1;
 
-        while (left <= right)
+        while (right > left)
         {
             var mid = left + ((right - left) / 2);
 
