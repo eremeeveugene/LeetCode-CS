@@ -1,21 +1,21 @@
 Summary
-  Generated on: 6/29/2024 - 2:13:45 PM
-  Coverage date: 6/29/2024 - 2:12:53 PM - 6/29/2024 - 2:13:11 PM
+  Generated on: 6/30/2024 - 9:28:29 AM
+  Coverage date: 6/30/2024 - 9:27:37 AM - 6/30/2024 - 9:27:55 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 444
-  Files: 444
+  Classes: 446
+  Files: 446
   Line coverage: 98.6%
-  Covered lines: 8153
+  Covered lines: 8201
   Uncovered lines: 109
-  Coverable lines: 8262
-  Total lines: 21683
-  Branch coverage: 97.1% (3130 of 3222)
-  Covered branches: 3130
-  Total branches: 3222
-  Method coverage: 98.8% (594 of 601)
-  Covered methods: 594
-  Total methods: 601
+  Coverable lines: 8310
+  Total lines: 21773
+  Branch coverage: 97.1% (3148 of 3240)
+  Covered branches: 3148
+  Total branches: 3240
+  Method coverage: 98.8% (596 of 603)
+  Covered methods: 596
+  Total methods: 603
 
 LeetCode                                                                                                                                    98.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -180,6 +180,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.InsertInterval.InsertIntervalIterative                                                                               100.0%
   LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSet                                                               100.0%
   LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSetIntersectWith                                                  100.0%
+  LeetCode.Algorithms.IntersectionOfTwoArrays2.IntersectionOfTwoArrays2Dictionary                                                          100.0%
+  LeetCode.Algorithms.IntersectionOfTwoArrays2.IntersectionOfTwoArrays2Sorting                                                             100.0%
   LeetCode.Algorithms.IntersectionOfTwoLinkedLists.IntersectionOfTwoLinkedListsBruteForce                                                  100.0%
   LeetCode.Algorithms.IntersectionOfTwoLinkedLists.IntersectionOfTwoLinkedListsTwoPointers                                                 100.0%
   LeetCode.Algorithms.InvertBinaryTree.InvertBinaryTreeBreadthFirstSearch                                                                  100.0%
