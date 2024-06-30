@@ -133,6 +133,8 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [344. Reverse String](https://leetcode.com/problems/reverse-string/description/)
 - [345. Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/description/)
 - [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/)
+- [350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/)
+- [367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/description/)
 - [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)
 - [402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/)
 - [404. Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/description/)
