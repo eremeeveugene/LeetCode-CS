@@ -1,21 +1,21 @@
 Summary
-  Generated on: 6/30/2024 - 9:28:29 AM
-  Coverage date: 6/30/2024 - 9:27:37 AM - 6/30/2024 - 9:27:55 AM
+  Generated on: 7/1/2024 - 9:09:58 AM
+  Coverage date: 7/1/2024 - 9:09:07 AM - 7/1/2024 - 9:09:24 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 446
-  Files: 446
+  Classes: 447
+  Files: 447
   Line coverage: 98.6%
-  Covered lines: 8201
+  Covered lines: 8218
   Uncovered lines: 109
-  Coverable lines: 8310
-  Total lines: 21773
-  Branch coverage: 97.1% (3148 of 3240)
-  Covered branches: 3148
-  Total branches: 3240
-  Method coverage: 98.8% (596 of 603)
-  Covered methods: 596
-  Total methods: 603
+  Coverable lines: 8327
+  Total lines: 21808
+  Branch coverage: 97.1% (3154 of 3246)
+  Covered branches: 3154
+  Total branches: 3246
+  Method coverage: 98.8% (597 of 604)
+  Covered methods: 597
+  Total methods: 604
 
 LeetCode                                                                                                                                    98.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -429,6 +429,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.TheNumberOfBeautifulSubsets.TheNumberOfBeautifulSubsetsBacktracking                                                  100.0%
   LeetCode.Algorithms.ThirdMaximumNumber.ThirdMaximumNumberDistinctOrder                                                                   100.0%
   LeetCode.Algorithms.ThirdMaximumNumber.ThirdMaximumNumberLinear                                                                          100.0%
+  LeetCode.Algorithms.ThreeConsecutiveOdds.ThreeConsecutiveOddsCounting                                                                    100.0%
   LeetCode.Algorithms.ThreeSum.ThreeSumTwoPointers                                                                                          86.4%
   LeetCode.Algorithms.TimeNeededToBuyTickets.TimeNeededToBuyTicketsIterative                                                               100.0%
   LeetCode.Algorithms.TrappingRainWater.TrappingRainWaterIterative                                                                         100.0%
