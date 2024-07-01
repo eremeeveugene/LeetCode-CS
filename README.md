@@ -222,6 +222,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1470. Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/description/)
 - [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/description/)
 - [1486. XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/description/)
+- [1500. Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/description/)
 - [1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/description/)
 - [1528. Shuffle String](https://leetcode.com/problems/shuffle-string/description/)
 - [1544. Make The String Great](https://leetcode.com/problems/make-the-string-great/description/)
