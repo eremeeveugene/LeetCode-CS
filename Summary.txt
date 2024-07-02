@@ -1,21 +1,21 @@
 Summary
-  Generated on: 7/1/2024 - 9:09:58 AM
-  Coverage date: 7/1/2024 - 9:09:07 AM - 7/1/2024 - 9:09:24 AM
+  Generated on: 7/2/2024 - 3:47:07 PM
+  Coverage date: 7/2/2024 - 3:46:16 PM - 7/2/2024 - 3:46:32 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 447
-  Files: 447
+  Classes: 448
+  Files: 448
   Line coverage: 98.6%
-  Covered lines: 8218
+  Covered lines: 8225
   Uncovered lines: 109
-  Coverable lines: 8327
-  Total lines: 21808
+  Coverable lines: 8334
+  Total lines: 21842
   Branch coverage: 97.1% (3154 of 3246)
   Covered branches: 3154
   Total branches: 3246
-  Method coverage: 98.8% (597 of 604)
-  Covered methods: 597
-  Total methods: 604
+  Method coverage: 98.8% (598 of 605)
+  Covered methods: 598
+  Total methods: 605
 
 LeetCode                                                                                                                                    98.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                         100.0%
@@ -141,6 +141,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchRecursive                                       100.0%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchStack                                           100.0%
   LeetCode.Algorithms.FindPivotIndex.FindPivotIndexIterative                                                                               100.0%
+  LeetCode.Algorithms.FindTheDifferenceOfTwoArrays.FindTheDifferenceOfTwoArraysHashSet                                                     100.0%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberBruteForce                                                               91.6%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm                                            89.4%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                         100.0%

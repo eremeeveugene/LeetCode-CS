@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9869100516392458" branch-rate="0.9716574245224893" lines-covered="8218" lines-valid="8327" branches-covered="3154" branches-valid="3246" complexity="3380" version="0" timestamp="1719824997">
+<coverage line-rate="0.9869210463162947" branch-rate="0.9716574245224893" lines-covered="8225" lines-valid="8334" branches-covered="3154" branches-valid="3246" complexity="3381" version="0" timestamp="1719935226">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.987151248164464" branch-rate="0.9735349716446124" complexity="3302">
+    <package name="LeetCode" line-rate="0.9871622447731997" branch-rate="0.9735349716446124" complexity="3303">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -5917,6 +5917,30 @@
             <line number="38" hits="7" branch="false" />
             <line number="40" hits="1" branch="false" />
             <line number="41" hits="3" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.FindTheDifferenceOfTwoArrays.FindTheDifferenceOfTwoArraysHashSet" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\FindTheDifferenceOfTwoArrays\FindTheDifferenceOfTwoArraysHashSet.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="FindDifference" signature="(System.Int32[],System.Int32[])" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="2" branch="false" />
+                <line number="26" hits="2" branch="false" />
+                <line number="27" hits="2" branch="false" />
+                <line number="29" hits="8" branch="false" />
+                <line number="30" hits="7" branch="false" />
+                <line number="32" hits="2" branch="false" />
+                <line number="33" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="2" branch="false" />
+            <line number="26" hits="2" branch="false" />
+            <line number="27" hits="2" branch="false" />
+            <line number="29" hits="8" branch="false" />
+            <line number="30" hits="7" branch="false" />
+            <line number="32" hits="2" branch="false" />
+            <line number="33" hits="2" branch="false" />
           </lines>
         </class>
         <class name="LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberBruteForce" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\FindTheDuplicateNumber\FindTheDuplicateNumberBruteForce.cs" line-rate="0.9166666666666666" branch-rate="0.8333333333333334" complexity="6">
@@ -21118,10 +21142,10 @@
                 <line number="50" hits="3" branch="false" />
                 <line number="51" hits="3" branch="false" />
                 <line number="52" hits="3" branch="false" />
-                <line number="53" hits="5" branch="true" condition-coverage="100% (2/2)" />
-                <line number="54" hits="2" branch="false" />
-                <line number="55" hits="2" branch="false" />
-                <line number="56" hits="2" branch="false" />
+                <line number="53" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="54" hits="3" branch="false" />
+                <line number="55" hits="3" branch="false" />
+                <line number="56" hits="3" branch="false" />
                 <line number="58" hits="3" branch="false" />
                 <line number="59" hits="3" branch="false" />
                 <line number="60" hits="3" branch="false" />
@@ -21160,10 +21184,10 @@
             <line number="50" hits="3" branch="false" />
             <line number="51" hits="3" branch="false" />
             <line number="52" hits="3" branch="false" />
-            <line number="53" hits="5" branch="true" condition-coverage="100% (2/2)" />
-            <line number="54" hits="2" branch="false" />
-            <line number="55" hits="2" branch="false" />
-            <line number="56" hits="2" branch="false" />
+            <line number="53" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="54" hits="3" branch="false" />
+            <line number="55" hits="3" branch="false" />
+            <line number="56" hits="3" branch="false" />
             <line number="58" hits="3" branch="false" />
             <line number="59" hits="3" branch="false" />
             <line number="60" hits="3" branch="false" />
@@ -21298,10 +21322,10 @@
             <method name="Third" signature="(System.Action)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
                 <line number="41" hits="3" branch="false" />
-                <line number="42" hits="6" branch="true" condition-coverage="100% (2/2)" />
-                <line number="43" hits="3" branch="false" />
-                <line number="44" hits="3" branch="false" />
-                <line number="45" hits="3" branch="false" />
+                <line number="42" hits="5" branch="true" condition-coverage="100% (2/2)" />
+                <line number="43" hits="2" branch="false" />
+                <line number="44" hits="2" branch="false" />
+                <line number="45" hits="2" branch="false" />
                 <line number="47" hits="3" branch="false" />
                 <line number="48" hits="3" branch="false" />
               </lines>
@@ -21321,10 +21345,10 @@
             <line number="37" hits="3" branch="false" />
             <line number="38" hits="3" branch="false" />
             <line number="41" hits="3" branch="false" />
-            <line number="42" hits="6" branch="true" condition-coverage="100% (2/2)" />
-            <line number="43" hits="3" branch="false" />
-            <line number="44" hits="3" branch="false" />
-            <line number="45" hits="3" branch="false" />
+            <line number="42" hits="5" branch="true" condition-coverage="100% (2/2)" />
+            <line number="43" hits="2" branch="false" />
+            <line number="44" hits="2" branch="false" />
+            <line number="45" hits="2" branch="false" />
             <line number="47" hits="3" branch="false" />
             <line number="48" hits="3" branch="false" />
           </lines>
@@ -21357,12 +21381,12 @@
             </method>
             <method name="JsonArrayToJaggedList" signature="(System.String)" line-rate="1" branch-rate="0.75" complexity="4">
               <lines>
-                <line number="41" hits="39" branch="false" />
-                <line number="42" hits="39" branch="true" condition-coverage="100% (2/2)" />
+                <line number="41" hits="41" branch="false" />
+                <line number="42" hits="41" branch="true" condition-coverage="100% (2/2)" />
                 <line number="43" hits="9" branch="false" />
                 <line number="44" hits="9" branch="false" />
-                <line number="47" hits="30" branch="true" condition-coverage="50% (1/2)" />
-                <line number="48" hits="39" branch="false" />
+                <line number="47" hits="32" branch="true" condition-coverage="50% (1/2)" />
+                <line number="48" hits="41" branch="false" />
               </lines>
             </method>
           </methods>
@@ -21379,12 +21403,12 @@
             <line number="34" hits="10" branch="false" />
             <line number="37" hits="122" branch="true" condition-coverage="50% (1/2)" />
             <line number="38" hits="132" branch="false" />
-            <line number="41" hits="39" branch="false" />
-            <line number="42" hits="39" branch="true" condition-coverage="100% (2/2)" />
+            <line number="41" hits="41" branch="false" />
+            <line number="42" hits="41" branch="true" condition-coverage="100% (2/2)" />
             <line number="43" hits="9" branch="false" />
             <line number="44" hits="9" branch="false" />
-            <line number="47" hits="30" branch="true" condition-coverage="50% (1/2)" />
-            <line number="48" hits="39" branch="false" />
+            <line number="47" hits="32" branch="true" condition-coverage="50% (1/2)" />
+            <line number="48" hits="41" branch="false" />
           </lines>
         </class>
         <class name="LeetCode.Core.Models.ListNode" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\Models\ListNode.cs" line-rate="1" branch-rate="1" complexity="14">
@@ -21655,13 +21679,13 @@
           <methods>
             <method name="AreEqual" signature="(System.Collections.Generic.IList`1&lt;System.Collections.Generic.IList`1&lt;T&gt;&gt;,System.Collections.Generic.IList`1&lt;System.Collections.Generic.IList`1&lt;T&gt;&gt;)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="17" hits="33" branch="false" />
-                <line number="18" hits="33" branch="false" />
-                <line number="20" hits="156" branch="true" condition-coverage="100% (2/2)" />
-                <line number="21" hits="45" branch="false" />
-                <line number="22" hits="45" branch="false" />
-                <line number="23" hits="45" branch="false" />
-                <line number="24" hits="33" branch="false" />
+                <line number="17" hits="35" branch="false" />
+                <line number="18" hits="35" branch="false" />
+                <line number="20" hits="168" branch="true" condition-coverage="100% (2/2)" />
+                <line number="21" hits="49" branch="false" />
+                <line number="22" hits="49" branch="false" />
+                <line number="23" hits="49" branch="false" />
+                <line number="24" hits="35" branch="false" />
               </lines>
             </method>
             <method name="AreEquivalent" signature="(System.Collections.Generic.IList`1&lt;System.Collections.Generic.IList`1&lt;T&gt;&gt;,System.Collections.Generic.IList`1&lt;System.Collections.Generic.IList`1&lt;T&gt;&gt;)" line-rate="1" branch-rate="1" complexity="2">
@@ -21677,13 +21701,13 @@
             </method>
           </methods>
           <lines>
-            <line number="17" hits="33" branch="false" />
-            <line number="18" hits="33" branch="false" />
-            <line number="20" hits="156" branch="true" condition-coverage="100% (2/2)" />
-            <line number="21" hits="45" branch="false" />
-            <line number="22" hits="45" branch="false" />
-            <line number="23" hits="45" branch="false" />
-            <line number="24" hits="33" branch="false" />
+            <line number="17" hits="35" branch="false" />
+            <line number="18" hits="35" branch="false" />
+            <line number="20" hits="168" branch="true" condition-coverage="100% (2/2)" />
+            <line number="21" hits="49" branch="false" />
+            <line number="22" hits="49" branch="false" />
+            <line number="23" hits="49" branch="false" />
+            <line number="24" hits="35" branch="false" />
             <line number="27" hits="3" branch="false" />
             <line number="28" hits="3" branch="false" />
             <line number="30" hits="24" branch="true" condition-coverage="100% (2/2)" />
