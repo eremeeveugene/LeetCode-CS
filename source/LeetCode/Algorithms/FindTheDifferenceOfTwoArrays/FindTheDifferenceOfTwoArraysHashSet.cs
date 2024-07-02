@@ -23,27 +23,12 @@ public class FindTheDifferenceOfTwoArraysHashSet : IFindTheDifferenceOfTwoArrays
     /// <returns></returns>
     public IList<IList<int>> FindDifference(int[] nums1, int[] nums2)
     {
-        return new List<IList<int>> { FindDifferenceArray(nums1, nums2), FindDifferenceArray(nums2, nums1) };
-    }
+        var set1 = new HashSet<int>(nums1);
+        var set2 = new HashSet<int>(nums2);
 
-    private static int[] FindDifferenceArray(IEnumerable<int> nums1, IEnumerable<int> nums2)
-    {
-        var nums1HashSet = new HashSet<int>();
-        var nums2HashSet = new HashSet<int>();
+        var result1 = set1.Where(num => !set2.Contains(num)).ToList();
+        var result2 = set2.Where(num => !set1.Contains(num)).ToList();
 
-        foreach (var num2 in nums2)
-        {
-            nums2HashSet.Add(num2);
-        }
-
-        foreach (var num1 in nums1)
-        {
-            if (!nums2HashSet.Contains(num1))
-            {
-                nums1HashSet.Add(num1);
-            }
-        }
-
-        return [.. nums1HashSet];
+        return new List<IList<int>> { result1, result2 };
     }
 }
