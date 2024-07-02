@@ -14,6 +14,13 @@ namespace LeetCode.Algorithms.FindTheDifferenceOfTwoArrays;
 /// <inheritdoc />
 public class FindTheDifferenceOfTwoArraysHashSet : IFindTheDifferenceOfTwoArrays
 {
+    /// <summary>
+    ///     Time complexity - O(m+n)
+    ///     Space complexity - O(m+n)
+    /// </summary>
+    /// <param name="nums1"></param>
+    /// <param name="nums2"></param>
+    /// <returns></returns>
     public IList<IList<int>> FindDifference(int[] nums1, int[] nums2)
     {
         return new List<IList<int>> { FindDifferenceArray(nums1, nums2), FindDifferenceArray(nums2, nums1) };
@@ -21,6 +28,7 @@ public class FindTheDifferenceOfTwoArraysHashSet : IFindTheDifferenceOfTwoArrays
 
     private static int[] FindDifferenceArray(IEnumerable<int> nums1, IEnumerable<int> nums2)
     {
+        var nums1HashSet = new HashSet<int>();
         var nums2HashSet = new HashSet<int>();
 
         foreach (var num2 in nums2)
@@ -28,16 +36,14 @@ public class FindTheDifferenceOfTwoArraysHashSet : IFindTheDifferenceOfTwoArrays
             nums2HashSet.Add(num2);
         }
 
-        var nums1Result = new HashSet<int>();
-
         foreach (var num1 in nums1)
         {
             if (!nums2HashSet.Contains(num1))
             {
-                nums1Result.Add(num1);
+                nums1HashSet.Add(num1);
             }
         }
 
-        return [.. nums1Result];
+        return [.. nums1HashSet];
     }
 }
