@@ -32,11 +32,13 @@ public class MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesSorting 
 
         var minDifference = int.MaxValue;
 
-        for (int left = 0, right = minDifference - 4; left < 4; left++, right++)
+        for (var left = 0; left < 4; left++)
         {
+            var right = nums.Length - 4 + left;
+
             minDifference = Math.Min(minDifference, nums[right] - nums[left]);
         }
 
-        return nums.Max() - nums.Min();
+        return minDifference;
     }
 }
