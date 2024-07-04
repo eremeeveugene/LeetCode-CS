@@ -1,21 +1,21 @@
 Summary
-  Generated on: 7/3/2024 - 4:52:40 PM
-  Coverage date: 7/3/2024 - 4:51:46 PM - 7/3/2024 - 4:52:05 PM
+  Generated on: 7/4/2024 - 2:12:07 PM
+  Coverage date: 7/4/2024 - 2:11:16 PM - 7/4/2024 - 2:11:33 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 449
-  Files: 449
+  Classes: 451
+  Files: 451
   Line coverage: 98.6%
-  Covered lines: 8238
-  Uncovered lines: 109
-  Coverable lines: 8347
-  Total lines: 21886
-  Branch coverage: 97.1% (3158 of 3250)
-  Covered branches: 3158
-  Total branches: 3250
-  Method coverage: 98.8% (599 of 606)
-  Covered methods: 599
-  Total methods: 606
+  Covered lines: 8280
+  Uncovered lines: 111
+  Coverable lines: 8391
+  Total lines: 22001
+  Branch coverage: 97.1% (3189 of 3284)
+  Covered branches: 3189
+  Total branches: 3284
+  Method coverage: 98.8% (601 of 608)
+  Covered methods: 601
+  Total methods: 608
 
 LeetCode                                                                                                                                               98.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -236,6 +236,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArraySorting                                                100.0%
   LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysBinarySearch                                                                      92.3%
   LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysIterative                                                                        100.0%
+  LeetCode.Algorithms.MergeNodesInBetweenZeros.MergeNodesInBetweenZerosIterative                                                                       91.3%
+  LeetCode.Algorithms.MergeNodesInBetweenZeros.MergeNodesInBetweenZerosRecursive                                                                      100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayMergingAndSorting                                                                              100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayThreePointers                                                                                  100.0%
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                                                                                   100.0%
