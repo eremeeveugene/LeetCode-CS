@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/4/2024 - 2:12:07 PM
-  Coverage date: 7/4/2024 - 2:11:16 PM - 7/4/2024 - 2:11:33 PM
+  Generated on: 7/5/2024 - 6:20:58 PM
+  Coverage date: 7/5/2024 - 6:20:07 PM - 7/5/2024 - 6:20:24 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 451
-  Files: 451
+  Classes: 452
+  Files: 452
   Line coverage: 98.6%
-  Covered lines: 8280
-  Uncovered lines: 111
-  Coverable lines: 8391
-  Total lines: 22001
-  Branch coverage: 97.1% (3189 of 3284)
-  Covered branches: 3189
-  Total branches: 3284
-  Method coverage: 98.8% (601 of 608)
-  Covered methods: 601
-  Total methods: 608
+  Covered lines: 8309
+  Uncovered lines: 113
+  Coverable lines: 8422
+  Total lines: 22069
+  Branch coverage: 97% (3206 of 3304)
+  Covered branches: 3206
+  Total branches: 3304
+  Method coverage: 98.8% (602 of 609)
+  Covered methods: 602
+  Total methods: 609
 
-LeetCode                                                                                                                                               98.7%
+LeetCode                                                                                                                                               98.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                  100.0%
@@ -149,6 +149,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheMaximumAchievableNumber.FindTheMaximumAchievableNumberLinear                                                             100.0%
   LeetCode.Algorithms.FindTheMaximumSumOfNodeValues.FindTheMaximumSumOfNodeValuesIterative                                                            100.0%
   LeetCode.Algorithms.FindTheMiddleIndexInArray.FindTheMiddleIndexInArrayIterative                                                                    100.0%
+  LeetCode.Algorithms.FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsIterative   93.5%
   LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor.FindTheOriginalArrayOfPrefixXorIterative                                                        100.0%
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerConstant                                                                                 100.0%
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerIterative                                                                                100.0%
