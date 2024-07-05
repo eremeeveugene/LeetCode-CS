@@ -16,4 +16,4 @@ namespace LeetCode.Tests.Algorithms.FindTheMinimumAndMaximumNumberOfNodesBetween
 [TestClass]
 public class FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsIterativeTests :
     FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsTestsBase<
-        FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints1>;
+        FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsIterative>;
