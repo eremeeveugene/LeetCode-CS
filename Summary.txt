@@ -1,21 +1,21 @@
 Summary
-  Generated on: 7/5/2024 - 6:20:58 PM
-  Coverage date: 7/5/2024 - 6:20:07 PM - 7/5/2024 - 6:20:24 PM
+  Generated on: 7/6/2024 - 9:39:11 AM
+  Coverage date: 7/6/2024 - 9:38:19 AM - 7/6/2024 - 9:38:36 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 452
-  Files: 452
+  Classes: 454
+  Files: 454
   Line coverage: 98.6%
-  Covered lines: 8309
+  Covered lines: 8342
   Uncovered lines: 113
-  Coverable lines: 8422
-  Total lines: 22069
-  Branch coverage: 97% (3206 of 3304)
-  Covered branches: 3206
-  Total branches: 3304
-  Method coverage: 98.8% (602 of 609)
-  Covered methods: 602
-  Total methods: 609
+  Coverable lines: 8455
+  Total lines: 22163
+  Branch coverage: 97% (3216 of 3314)
+  Covered branches: 3216
+  Total branches: 3314
+  Method coverage: 98.8% (604 of 611)
+  Covered methods: 604
+  Total methods: 611
 
 LeetCode                                                                                                                                               98.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -306,6 +306,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumSinglePass                                     100.0%
   LeetCode.Algorithms.PascalsTriangle.PascalsTriangleDynamicProgramming                                                                               100.0%
   LeetCode.Algorithms.PascalsTriangle2.PascalsTriangle2DynamicProgramming                                                                             100.0%
+  LeetCode.Algorithms.PassThePillow.PassThePillowMath                                                                                                 100.0%
+  LeetCode.Algorithms.PassThePillow.PassThePillowSimulation                                                                                           100.0%
   LeetCode.Algorithms.PathSum.PathSumBreadthFirstSearch                                                                                               100.0%
   LeetCode.Algorithms.PathSum.PathSumDepthFirstSearch                                                                                                 100.0%
   LeetCode.Algorithms.PathSum2.PathSum2DepthFirstSearch                                                                                               100.0%
