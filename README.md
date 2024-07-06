@@ -279,6 +279,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2520. Count the Digits That Divide a Number](https://leetcode.com/problems/count-the-digits-that-divide-a-number/description/)
 - [2535. Difference Between Element Sum and Digit Sum of an Array](https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/description/)
 - [2540. Minimum Common Value](https://leetcode.com/problems/minimum-common-value/description/)
+- [2582. Pass the Pillow](https://leetcode.com/problems/pass-the-pillow/description/)
 - [2591. Distribute Money to Maximum Children](https://leetcode.com/problems/distribute-money-to-maximum-children/description/)
 - [2597. The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/description/)
 - [2651. Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/description/)
