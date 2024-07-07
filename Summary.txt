@@ -1,21 +1,21 @@
 Summary
-  Generated on: 7/6/2024 - 9:39:11 AM
-  Coverage date: 7/6/2024 - 9:38:19 AM - 7/6/2024 - 9:38:36 AM
+  Generated on: 7/7/2024 - 9:16:20 AM
+  Coverage date: 7/7/2024 - 9:15:29 AM - 7/7/2024 - 9:15:46 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 454
-  Files: 454
+  Classes: 455
+  Files: 455
   Line coverage: 98.6%
-  Covered lines: 8342
+  Covered lines: 8352
   Uncovered lines: 113
-  Coverable lines: 8455
-  Total lines: 22163
-  Branch coverage: 97% (3216 of 3314)
-  Covered branches: 3216
-  Total branches: 3314
-  Method coverage: 98.8% (604 of 611)
-  Covered methods: 604
-  Total methods: 611
+  Coverable lines: 8465
+  Total lines: 22202
+  Branch coverage: 97% (3218 of 3316)
+  Covered branches: 3218
+  Total branches: 3316
+  Method coverage: 98.8% (605 of 612)
+  Covered methods: 605
+  Total methods: 612
 
 LeetCode                                                                                                                                               98.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -449,6 +449,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ValidParentheses.ValidParenthesesStackSwitch                                                                                    100.0%
   LeetCode.Algorithms.ValidParenthesisString.ValidParenthesisStringIterative                                                                          100.0%
   LeetCode.Algorithms.ValidPerfectSquare.ValidPerfectSquareBinarySearch                                                                               100.0%
+  LeetCode.Algorithms.WaterBottles.WaterBottlesSimulation                                                                                             100.0%
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsAscending              100.0%
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescending             100.0%
   LeetCode.Algorithms.WordPattern.WordPatternDictionary                                                                                               100.0%
