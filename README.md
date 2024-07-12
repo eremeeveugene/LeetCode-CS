@@ -118,6 +118,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/)
 - [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/)
 - [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)
+- [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)
 - [257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/)
 - [258. Add Digits](https://leetcode.com/problems/add-digits/description/)
 - [260. Single Number III](https://leetcode.com/problems/single-number-iii/description/)
