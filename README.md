@@ -128,6 +128,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
 - [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/)
 - [290. Word Pattern](https://leetcode.com/problems/word-pattern/description/)
+- [303. Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/description/)
 - [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/)
 - [326. Power of Three](https://leetcode.com/problems/power-of-three/description/)
 - [338. Counting Bits](https://leetcode.com/problems/counting-bits/description/)
