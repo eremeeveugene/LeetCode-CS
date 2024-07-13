@@ -1,21 +1,21 @@
 Summary
-  Generated on: 7/12/2024 - 5:10:11 PM
-  Coverage date: 7/12/2024 - 5:09:17 PM - 7/12/2024 - 5:09:35 PM
+  Generated on: 7/13/2024 - 2:43:28 PM
+  Coverage date: 7/13/2024 - 2:42:37 PM - 7/13/2024 - 2:42:54 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 459
-  Files: 459
+  Classes: 463
+  Files: 463
   Line coverage: 98.5%
-  Covered lines: 8400
+  Covered lines: 8426
   Uncovered lines: 120
-  Coverable lines: 8520
-  Total lines: 22379
-  Branch coverage: 96.9% (3243 of 3344)
-  Covered branches: 3243
-  Total branches: 3344
-  Method coverage: 98.8% (609 of 616)
-  Covered methods: 609
-  Total methods: 616
+  Coverable lines: 8546
+  Total lines: 22494
+  Branch coverage: 96.9% (3247 of 3348)
+  Covered branches: 3247
+  Total branches: 3348
+  Method coverage: 98.8% (615 of 622)
+  Covered methods: 615
+  Total methods: 622
 
 LeetCode                                                                                                                                               98.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -335,6 +335,10 @@ LeetCode                                                                        
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTBreadthFirstSearch                                                                                    92.0%
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTDepthFirstSearchRecursive                                                                             89.4%
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTDepthFirstSearchStack                                                                                 92.0%
+  LeetCode.Algorithms.RangeSumQueryImmutable.RangeSumQueryImmutableBruteForce                                                                         100.0%
+  LeetCode.Algorithms.RangeSumQueryImmutable.RangeSumQueryImmutableBruteForceFactory                                                                  100.0%
+  LeetCode.Algorithms.RangeSumQueryImmutable.RangeSumQueryImmutablePrefixSum                                                                          100.0%
+  LeetCode.Algorithms.RangeSumQueryImmutable.RangeSumQueryImmutablePrefixSumFactory                                                                   100.0%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksBruteForce                                                                                           100.0%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksTuple                                                                                                100.0%
   LeetCode.Algorithms.RelativeSortArray.RelativeSortArrayCountingSort                                                                                 100.0%
