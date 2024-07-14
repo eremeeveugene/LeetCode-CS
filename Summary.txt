@@ -1,21 +1,21 @@
 Summary
-  Generated on: 7/13/2024 - 2:43:28 PM
-  Coverage date: 7/13/2024 - 2:42:37 PM - 7/13/2024 - 2:42:54 PM
+  Generated on: 7/14/2024 - 6:35:23 PM
+  Coverage date: 7/14/2024 - 6:34:30 PM - 7/14/2024 - 6:34:48 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 463
-  Files: 463
+  Classes: 464
+  Files: 464
   Line coverage: 98.5%
-  Covered lines: 8426
+  Covered lines: 8444
   Uncovered lines: 120
-  Coverable lines: 8546
-  Total lines: 22494
-  Branch coverage: 96.9% (3247 of 3348)
-  Covered branches: 3247
-  Total branches: 3348
-  Method coverage: 98.8% (615 of 622)
-  Covered methods: 615
-  Total methods: 622
+  Coverable lines: 8564
+  Total lines: 22542
+  Branch coverage: 96.9% (3253 of 3354)
+  Covered branches: 3253
+  Total branches: 3354
+  Method coverage: 98.8% (616 of 623)
+  Covered methods: 616
+  Total methods: 623
 
 LeetCode                                                                                                                                               98.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -202,6 +202,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LargestLocalValuesInMatrix.LargestLocalValuesInMatrixBruteForce                                                                 100.0%
   LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeHashSet                          100.0%
   LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointers               100.0%
+  LeetCode.Algorithms.LeftAndRightSumDifferences.LeftAndRightSumDifferencesPrefixSum                                                                  100.0%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordReverseIteration                                                                               100.0%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordTrimSplit                                                                                      100.0%
   LeetCode.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency.LengthOfLongestSubarrayWithAtMostKFrequencyIterative                                100.0%
