@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9859878561419897" branch-rate="0.969886702444842" lines-covered="8444" lines-valid="8564" branches-covered="3253" branches-valid="3354" complexity="3493" version="0" timestamp="1720982121">
+<coverage line-rate="0.9859285963484126" branch-rate="0.9696969696969697" lines-covered="8478" lines-valid="8599" branches-covered="3264" branches-valid="3366" complexity="3505" version="0" timestamp="1721129777">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.9862052562730408" branch-rate="0.9716636197440585" complexity="3415">
+    <package name="LeetCode" line-rate="0.9861440075793463" branch-rate="0.9714632665452337" complexity="3427">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -3487,6 +3487,86 @@
             <line number="43" hits="15" branch="false" />
             <line number="45" hits="3" branch="false" />
             <line number="46" hits="3" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.CreateBinaryTreeFromDescriptions.CreateBinaryTreeFromDescriptionsDictionary" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\CreateBinaryTreeFromDescriptions\CreateBinaryTreeFromDescriptionsDictionary.cs" line-rate="0.9714285714285714" branch-rate="0.9166666666666666" complexity="12">
+          <methods>
+            <method name="CreateBinaryTree" signature="(System.Int32[][])" line-rate="0.9714285714285714" branch-rate="0.9166666666666666" complexity="12">
+              <lines>
+                <line number="26" hits="2" branch="false" />
+                <line number="27" hits="2" branch="false" />
+                <line number="28" hits="2" branch="false" />
+                <line number="30" hits="22" branch="true" condition-coverage="100% (2/2)" />
+                <line number="31" hits="8" branch="false" />
+                <line number="32" hits="8" branch="false" />
+                <line number="33" hits="8" branch="false" />
+                <line number="34" hits="8" branch="false" />
+                <line number="36" hits="8" branch="true" condition-coverage="100% (2/2)" />
+                <line number="37" hits="3" branch="false" />
+                <line number="38" hits="3" branch="false" />
+                <line number="39" hits="3" branch="false" />
+                <line number="41" hits="8" branch="true" condition-coverage="100% (2/2)" />
+                <line number="42" hits="7" branch="false" />
+                <line number="43" hits="7" branch="false" />
+                <line number="44" hits="7" branch="false" />
+                <line number="46" hits="8" branch="false" />
+                <line number="47" hits="8" branch="false" />
+                <line number="49" hits="8" branch="true" condition-coverage="100% (2/2)" />
+                <line number="50" hits="5" branch="false" />
+                <line number="51" hits="5" branch="false" />
+                <line number="52" hits="5" branch="false" />
+                <line number="54" hits="3" branch="false" />
+                <line number="55" hits="3" branch="false" />
+                <line number="56" hits="3" branch="false" />
+                <line number="58" hits="8" branch="false" />
+                <line number="59" hits="8" branch="false" />
+                <line number="61" hits="14" branch="true" condition-coverage="50% (1/2)" />
+                <line number="62" hits="5" branch="false" />
+                <line number="63" hits="5" branch="true" condition-coverage="100% (2/2)" />
+                <line number="64" hits="2" branch="false" />
+                <line number="65" hits="2" branch="false" />
+                <line number="67" hits="3" branch="false" />
+                <line number="69" hits="0" branch="false" />
+                <line number="70" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="2" branch="false" />
+            <line number="27" hits="2" branch="false" />
+            <line number="28" hits="2" branch="false" />
+            <line number="30" hits="22" branch="true" condition-coverage="100% (2/2)" />
+            <line number="31" hits="8" branch="false" />
+            <line number="32" hits="8" branch="false" />
+            <line number="33" hits="8" branch="false" />
+            <line number="34" hits="8" branch="false" />
+            <line number="36" hits="8" branch="true" condition-coverage="100% (2/2)" />
+            <line number="37" hits="3" branch="false" />
+            <line number="38" hits="3" branch="false" />
+            <line number="39" hits="3" branch="false" />
+            <line number="41" hits="8" branch="true" condition-coverage="100% (2/2)" />
+            <line number="42" hits="7" branch="false" />
+            <line number="43" hits="7" branch="false" />
+            <line number="44" hits="7" branch="false" />
+            <line number="46" hits="8" branch="false" />
+            <line number="47" hits="8" branch="false" />
+            <line number="49" hits="8" branch="true" condition-coverage="100% (2/2)" />
+            <line number="50" hits="5" branch="false" />
+            <line number="51" hits="5" branch="false" />
+            <line number="52" hits="5" branch="false" />
+            <line number="54" hits="3" branch="false" />
+            <line number="55" hits="3" branch="false" />
+            <line number="56" hits="3" branch="false" />
+            <line number="58" hits="8" branch="false" />
+            <line number="59" hits="8" branch="false" />
+            <line number="61" hits="14" branch="true" condition-coverage="50% (1/2)" />
+            <line number="62" hits="5" branch="false" />
+            <line number="63" hits="5" branch="true" condition-coverage="100% (2/2)" />
+            <line number="64" hits="2" branch="false" />
+            <line number="65" hits="2" branch="false" />
+            <line number="67" hits="3" branch="false" />
+            <line number="69" hits="0" branch="false" />
+            <line number="70" hits="2" branch="false" />
           </lines>
         </class>
         <class name="LeetCode.Algorithms.CustomSortString.CustomSortStringDictionarySorting" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\CustomSortString\CustomSortStringDictionarySorting.cs" line-rate="1" branch-rate="1" complexity="2">
@@ -21950,10 +22030,10 @@
             <method name="Third" signature="(System.Action)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
                 <line number="41" hits="3" branch="false" />
-                <line number="42" hits="6" branch="true" condition-coverage="100% (2/2)" />
-                <line number="43" hits="3" branch="false" />
-                <line number="44" hits="3" branch="false" />
-                <line number="45" hits="3" branch="false" />
+                <line number="42" hits="5" branch="true" condition-coverage="100% (2/2)" />
+                <line number="43" hits="2" branch="false" />
+                <line number="44" hits="2" branch="false" />
+                <line number="45" hits="2" branch="false" />
                 <line number="47" hits="3" branch="false" />
                 <line number="48" hits="3" branch="false" />
               </lines>
@@ -21973,10 +22053,10 @@
             <line number="37" hits="3" branch="false" />
             <line number="38" hits="3" branch="false" />
             <line number="41" hits="3" branch="false" />
-            <line number="42" hits="6" branch="true" condition-coverage="100% (2/2)" />
-            <line number="43" hits="3" branch="false" />
-            <line number="44" hits="3" branch="false" />
-            <line number="45" hits="3" branch="false" />
+            <line number="42" hits="5" branch="true" condition-coverage="100% (2/2)" />
+            <line number="43" hits="2" branch="false" />
+            <line number="44" hits="2" branch="false" />
+            <line number="45" hits="2" branch="false" />
             <line number="47" hits="3" branch="false" />
             <line number="48" hits="3" branch="false" />
           </lines>
@@ -21989,22 +22069,22 @@
           <methods>
             <method name="JsonArrayToList" signature="(System.String)" line-rate="1" branch-rate="0.75" complexity="4">
               <lines>
-                <line number="21" hits="403" branch="false" />
-                <line number="22" hits="403" branch="true" condition-coverage="100% (2/2)" />
+                <line number="21" hits="405" branch="false" />
+                <line number="22" hits="405" branch="true" condition-coverage="100% (2/2)" />
                 <line number="23" hits="53" branch="false" />
                 <line number="24" hits="53" branch="false" />
-                <line number="27" hits="350" branch="true" condition-coverage="50% (1/2)" />
-                <line number="28" hits="403" branch="false" />
+                <line number="27" hits="352" branch="true" condition-coverage="50% (1/2)" />
+                <line number="28" hits="405" branch="false" />
               </lines>
             </method>
             <method name="JsonArrayToJaggedArray" signature="(System.String)" line-rate="1" branch-rate="0.75" complexity="4">
               <lines>
-                <line number="31" hits="132" branch="false" />
-                <line number="32" hits="132" branch="true" condition-coverage="100% (2/2)" />
+                <line number="31" hits="134" branch="false" />
+                <line number="32" hits="134" branch="true" condition-coverage="100% (2/2)" />
                 <line number="33" hits="10" branch="false" />
                 <line number="34" hits="10" branch="false" />
-                <line number="37" hits="122" branch="true" condition-coverage="50% (1/2)" />
-                <line number="38" hits="132" branch="false" />
+                <line number="37" hits="124" branch="true" condition-coverage="50% (1/2)" />
+                <line number="38" hits="134" branch="false" />
               </lines>
             </method>
             <method name="JsonArrayToJaggedList" signature="(System.String)" line-rate="1" branch-rate="0.75" complexity="4">
@@ -22019,18 +22099,18 @@
             </method>
           </methods>
           <lines>
-            <line number="21" hits="403" branch="false" />
-            <line number="22" hits="403" branch="true" condition-coverage="100% (2/2)" />
+            <line number="21" hits="405" branch="false" />
+            <line number="22" hits="405" branch="true" condition-coverage="100% (2/2)" />
             <line number="23" hits="53" branch="false" />
             <line number="24" hits="53" branch="false" />
-            <line number="27" hits="350" branch="true" condition-coverage="50% (1/2)" />
-            <line number="28" hits="403" branch="false" />
-            <line number="31" hits="132" branch="false" />
-            <line number="32" hits="132" branch="true" condition-coverage="100% (2/2)" />
+            <line number="27" hits="352" branch="true" condition-coverage="50% (1/2)" />
+            <line number="28" hits="405" branch="false" />
+            <line number="31" hits="134" branch="false" />
+            <line number="32" hits="134" branch="true" condition-coverage="100% (2/2)" />
             <line number="33" hits="10" branch="false" />
             <line number="34" hits="10" branch="false" />
-            <line number="37" hits="122" branch="true" condition-coverage="50% (1/2)" />
-            <line number="38" hits="132" branch="false" />
+            <line number="37" hits="124" branch="true" condition-coverage="50% (1/2)" />
+            <line number="38" hits="134" branch="false" />
             <line number="41" hits="41" branch="false" />
             <line number="42" hits="41" branch="true" condition-coverage="100% (2/2)" />
             <line number="43" hits="9" branch="false" />
@@ -22193,74 +22273,74 @@
           <methods>
             <method name="BuildTree" signature="(System.Collections.Generic.IList`1&lt;System.Nullable`1&lt;System.Int32&gt;&gt;)" line-rate="1" branch-rate="0.875" complexity="16">
               <lines>
-                <line number="28" hits="346" branch="false" />
-                <line number="29" hits="346" branch="true" condition-coverage="100% (4/4)" />
+                <line number="28" hits="348" branch="false" />
+                <line number="29" hits="348" branch="true" condition-coverage="100% (4/4)" />
                 <line number="30" hits="41" branch="false" />
                 <line number="31" hits="41" branch="false" />
-                <line number="34" hits="305" branch="false" />
-                <line number="36" hits="305" branch="false" />
-                <line number="38" hits="305" branch="false" />
-                <line number="40" hits="305" branch="false" />
-                <line number="42" hits="1431" branch="true" condition-coverage="75% (3/4)" />
-                <line number="43" hits="1126" branch="false" />
-                <line number="44" hits="1126" branch="false" />
-                <line number="46" hits="1126" branch="true" condition-coverage="75% (3/4)" />
-                <line number="47" hits="887" branch="false" />
-                <line number="48" hits="887" branch="false" />
-                <line number="50" hits="887" branch="false" />
-                <line number="51" hits="887" branch="false" />
-                <line number="53" hits="1126" branch="false" />
-                <line number="55" hits="1126" branch="true" condition-coverage="100% (4/4)" />
-                <line number="56" hits="740" branch="false" />
-                <line number="57" hits="740" branch="false" />
-                <line number="59" hits="740" branch="false" />
-                <line number="60" hits="740" branch="false" />
-                <line number="62" hits="1126" branch="false" />
-                <line number="63" hits="1126" branch="false" />
-                <line number="65" hits="305" branch="false" />
-                <line number="66" hits="346" branch="false" />
+                <line number="34" hits="307" branch="false" />
+                <line number="36" hits="307" branch="false" />
+                <line number="38" hits="307" branch="false" />
+                <line number="40" hits="307" branch="false" />
+                <line number="42" hits="1439" branch="true" condition-coverage="75% (3/4)" />
+                <line number="43" hits="1132" branch="false" />
+                <line number="44" hits="1132" branch="false" />
+                <line number="46" hits="1132" branch="true" condition-coverage="75% (3/4)" />
+                <line number="47" hits="892" branch="false" />
+                <line number="48" hits="892" branch="false" />
+                <line number="50" hits="892" branch="false" />
+                <line number="51" hits="892" branch="false" />
+                <line number="53" hits="1132" branch="false" />
+                <line number="55" hits="1132" branch="true" condition-coverage="100% (4/4)" />
+                <line number="56" hits="743" branch="false" />
+                <line number="57" hits="743" branch="false" />
+                <line number="59" hits="743" branch="false" />
+                <line number="60" hits="743" branch="false" />
+                <line number="62" hits="1132" branch="false" />
+                <line number="63" hits="1132" branch="false" />
+                <line number="65" hits="307" branch="false" />
+                <line number="66" hits="348" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.Nullable`1&lt;System.Int32&gt;,LeetCode.Core.Models.TreeNode,LeetCode.Core.Models.TreeNode)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="2003" branch="false" />
-                <line number="21" hits="2003" branch="false" />
-                <line number="23" hits="2003" branch="false" />
-                <line number="25" hits="2003" branch="false" />
+                <line number="19" hits="2023" branch="false" />
+                <line number="21" hits="2023" branch="false" />
+                <line number="23" hits="2023" branch="false" />
+                <line number="25" hits="2023" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="19" hits="2003" branch="false" />
-            <line number="21" hits="2003" branch="false" />
-            <line number="23" hits="2003" branch="false" />
-            <line number="25" hits="2003" branch="false" />
-            <line number="28" hits="346" branch="false" />
-            <line number="29" hits="346" branch="true" condition-coverage="100% (4/4)" />
+            <line number="19" hits="2023" branch="false" />
+            <line number="21" hits="2023" branch="false" />
+            <line number="23" hits="2023" branch="false" />
+            <line number="25" hits="2023" branch="false" />
+            <line number="28" hits="348" branch="false" />
+            <line number="29" hits="348" branch="true" condition-coverage="100% (4/4)" />
             <line number="30" hits="41" branch="false" />
             <line number="31" hits="41" branch="false" />
-            <line number="34" hits="305" branch="false" />
-            <line number="36" hits="305" branch="false" />
-            <line number="38" hits="305" branch="false" />
-            <line number="40" hits="305" branch="false" />
-            <line number="42" hits="1431" branch="true" condition-coverage="75% (3/4)" />
-            <line number="43" hits="1126" branch="false" />
-            <line number="44" hits="1126" branch="false" />
-            <line number="46" hits="1126" branch="true" condition-coverage="75% (3/4)" />
-            <line number="47" hits="887" branch="false" />
-            <line number="48" hits="887" branch="false" />
-            <line number="50" hits="887" branch="false" />
-            <line number="51" hits="887" branch="false" />
-            <line number="53" hits="1126" branch="false" />
-            <line number="55" hits="1126" branch="true" condition-coverage="100% (4/4)" />
-            <line number="56" hits="740" branch="false" />
-            <line number="57" hits="740" branch="false" />
-            <line number="59" hits="740" branch="false" />
-            <line number="60" hits="740" branch="false" />
-            <line number="62" hits="1126" branch="false" />
-            <line number="63" hits="1126" branch="false" />
-            <line number="65" hits="305" branch="false" />
-            <line number="66" hits="346" branch="false" />
+            <line number="34" hits="307" branch="false" />
+            <line number="36" hits="307" branch="false" />
+            <line number="38" hits="307" branch="false" />
+            <line number="40" hits="307" branch="false" />
+            <line number="42" hits="1439" branch="true" condition-coverage="75% (3/4)" />
+            <line number="43" hits="1132" branch="false" />
+            <line number="44" hits="1132" branch="false" />
+            <line number="46" hits="1132" branch="true" condition-coverage="75% (3/4)" />
+            <line number="47" hits="892" branch="false" />
+            <line number="48" hits="892" branch="false" />
+            <line number="50" hits="892" branch="false" />
+            <line number="51" hits="892" branch="false" />
+            <line number="53" hits="1132" branch="false" />
+            <line number="55" hits="1132" branch="true" condition-coverage="100% (4/4)" />
+            <line number="56" hits="743" branch="false" />
+            <line number="57" hits="743" branch="false" />
+            <line number="59" hits="743" branch="false" />
+            <line number="60" hits="743" branch="false" />
+            <line number="62" hits="1132" branch="false" />
+            <line number="63" hits="1132" branch="false" />
+            <line number="65" hits="307" branch="false" />
+            <line number="66" hits="348" branch="false" />
           </lines>
         </class>
       </classes>
@@ -22379,46 +22459,46 @@
           <methods>
             <method name="AreEqual" signature="(LeetCode.Core.Models.TreeNode,LeetCode.Core.Models.TreeNode)" line-rate="0.8333333333333334" branch-rate="0.8" complexity="10">
               <lines>
-                <line number="19" hits="88" branch="false" />
-                <line number="20" hits="88" branch="false" />
-                <line number="21" hits="88" branch="false" />
-                <line number="23" hits="1170" branch="true" condition-coverage="100% (2/2)" />
-                <line number="24" hits="1082" branch="false" />
-                <line number="25" hits="1082" branch="false" />
-                <line number="27" hits="1082" branch="true" condition-coverage="100% (4/4)" />
-                <line number="28" hits="585" branch="false" />
-                <line number="29" hits="585" branch="false" />
-                <line number="32" hits="497" branch="true" condition-coverage="50% (2/4)" />
+                <line number="19" hits="90" branch="false" />
+                <line number="20" hits="90" branch="false" />
+                <line number="21" hits="90" branch="false" />
+                <line number="23" hits="1194" branch="true" condition-coverage="100% (2/2)" />
+                <line number="24" hits="1104" branch="false" />
+                <line number="25" hits="1104" branch="false" />
+                <line number="27" hits="1104" branch="true" condition-coverage="100% (4/4)" />
+                <line number="28" hits="597" branch="false" />
+                <line number="29" hits="597" branch="false" />
+                <line number="32" hits="507" branch="true" condition-coverage="50% (2/4)" />
                 <line number="33" hits="0" branch="false" />
                 <line number="34" hits="0" branch="false" />
                 <line number="35" hits="0" branch="false" />
-                <line number="37" hits="497" branch="false" />
-                <line number="39" hits="497" branch="false" />
-                <line number="40" hits="497" branch="false" />
-                <line number="41" hits="497" branch="false" />
-                <line number="42" hits="88" branch="false" />
+                <line number="37" hits="507" branch="false" />
+                <line number="39" hits="507" branch="false" />
+                <line number="40" hits="507" branch="false" />
+                <line number="41" hits="507" branch="false" />
+                <line number="42" hits="90" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="19" hits="88" branch="false" />
-            <line number="20" hits="88" branch="false" />
-            <line number="21" hits="88" branch="false" />
-            <line number="23" hits="1170" branch="true" condition-coverage="100% (2/2)" />
-            <line number="24" hits="1082" branch="false" />
-            <line number="25" hits="1082" branch="false" />
-            <line number="27" hits="1082" branch="true" condition-coverage="100% (4/4)" />
-            <line number="28" hits="585" branch="false" />
-            <line number="29" hits="585" branch="false" />
-            <line number="32" hits="497" branch="true" condition-coverage="50% (2/4)" />
+            <line number="19" hits="90" branch="false" />
+            <line number="20" hits="90" branch="false" />
+            <line number="21" hits="90" branch="false" />
+            <line number="23" hits="1194" branch="true" condition-coverage="100% (2/2)" />
+            <line number="24" hits="1104" branch="false" />
+            <line number="25" hits="1104" branch="false" />
+            <line number="27" hits="1104" branch="true" condition-coverage="100% (4/4)" />
+            <line number="28" hits="597" branch="false" />
+            <line number="29" hits="597" branch="false" />
+            <line number="32" hits="507" branch="true" condition-coverage="50% (2/4)" />
             <line number="33" hits="0" branch="false" />
             <line number="34" hits="0" branch="false" />
             <line number="35" hits="0" branch="false" />
-            <line number="37" hits="497" branch="false" />
-            <line number="39" hits="497" branch="false" />
-            <line number="40" hits="497" branch="false" />
-            <line number="41" hits="497" branch="false" />
-            <line number="42" hits="88" branch="false" />
+            <line number="37" hits="507" branch="false" />
+            <line number="39" hits="507" branch="false" />
+            <line number="40" hits="507" branch="false" />
+            <line number="41" hits="507" branch="false" />
+            <line number="42" hits="90" branch="false" />
           </lines>
         </class>
       </classes>

@@ -1,21 +1,21 @@
 Summary
-  Generated on: 7/14/2024 - 6:35:23 PM
-  Coverage date: 7/14/2024 - 6:34:30 PM - 7/14/2024 - 6:34:48 PM
+  Generated on: 7/16/2024 - 11:36:18 AM
+  Coverage date: 7/16/2024 - 11:35:25 AM - 7/16/2024 - 11:35:43 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 464
-  Files: 464
+  Classes: 465
+  Files: 465
   Line coverage: 98.5%
-  Covered lines: 8444
-  Uncovered lines: 120
-  Coverable lines: 8564
-  Total lines: 22542
-  Branch coverage: 96.9% (3253 of 3354)
-  Covered branches: 3253
-  Total branches: 3354
-  Method coverage: 98.8% (616 of 623)
-  Covered methods: 616
-  Total methods: 623
+  Covered lines: 8478
+  Uncovered lines: 121
+  Coverable lines: 8599
+  Total lines: 22613
+  Branch coverage: 96.9% (3264 of 3366)
+  Covered branches: 3264
+  Total branches: 3366
+  Method coverage: 98.8% (617 of 624)
+  Covered methods: 617
+  Total methods: 624
 
 LeetCode                                                                                                                                               98.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -92,6 +92,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountTheDigitsThatDivideNumber.CountTheDigitsThatDivideNumberIterative                                                          100.0%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                                100.0%
   LeetCode.Algorithms.CrawlerLogFolder.CrawlerLogFolderSimulation                                                                                     100.0%
+  LeetCode.Algorithms.CreateBinaryTreeFromDescriptions.CreateBinaryTreeFromDescriptionsDictionary                                                      97.1%
   LeetCode.Algorithms.CustomSortString.CustomSortStringDictionarySorting                                                                              100.0%
   LeetCode.Algorithms.DayOfTheWeek.DayOfTheWeekDateTime                                                                                               100.0%
   LeetCode.Algorithms.DayOfTheWeek.DayOfTheWeekMath                                                                                                   100.0%
