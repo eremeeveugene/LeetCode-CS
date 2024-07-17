@@ -40,4 +40,68 @@ public static class TreeNodeAssert
             queue.Enqueue((expected.right, actual.right));
         }
     }
+
+    public static void AreEqual(IList<TreeNode?>? expectedTrees, IList<TreeNode>? actualTrees)
+    {
+        if (expectedTrees == null && actualTrees == null)
+        {
+            return;
+        }
+
+        if (expectedTrees == null || actualTrees == null)
+        {
+            Assert.Fail("One of the tree lists is null while the other is not.");
+        }
+
+        Assert.AreEqual(expectedTrees.Count, actualTrees.Count, "Tree lists should have the same number of elements.");
+
+        for (var i = 0; i < expectedTrees.Count; i++)
+        {
+            AreEqual(expectedTrees[i], actualTrees[i]);
+        }
+    }
+
+    public static void AreEquivalent(IList<TreeNode?>? expectedTrees, IList<TreeNode>? actualTrees)
+    {
+        if (expectedTrees == null && actualTrees == null)
+        {
+            return;
+        }
+
+        if (expectedTrees == null || actualTrees == null)
+        {
+            Assert.Fail("One of the tree lists is null while the other is not.");
+        }
+
+        Assert.AreEqual(expectedTrees.Count, actualTrees.Count, "Tree lists should have the same number of elements.");
+
+        var expectedQueue = new Queue<TreeNode?>(expectedTrees);
+        var actualQueue = new Queue<TreeNode?>(actualTrees);
+
+        while (expectedQueue.Count > 0)
+        {
+            var expectedTree = expectedQueue.Dequeue();
+            var matchFound = false;
+
+            foreach (var actualTree in actualQueue)
+            {
+                try
+                {
+                    AreEqual(expectedTree, actualTree);
+                    actualQueue = new Queue<TreeNode?>(actualQueue.Where(t => t != actualTree));
+                    matchFound = true;
+                    break;
+                }
+                catch
+                {
+                    // Ignore and continue searching for a match
+                }
+            }
+
+            if (!matchFound)
+            {
+                Assert.Fail("No matching tree found in the actual collection for the expected tree.");
+            }
+        }
+    }
 }
