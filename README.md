@@ -231,6 +231,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/description/)
 - [1518. Water Bottles](https://leetcode.com/problems/water-bottles/description/)
 - [1528. Shuffle String](https://leetcode.com/problems/shuffle-string/description/)
+- [1530. Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/description/)
 - [1544. Make The String Great](https://leetcode.com/problems/make-the-string-great/description/)
 - [1598. Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/description/)
 - [1608. Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/description/)
