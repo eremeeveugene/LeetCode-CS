@@ -1,21 +1,21 @@
 Summary
-  Generated on: 7/17/2024 - 3:30:49 PM
-  Coverage date: 7/17/2024 - 3:29:50 PM - 7/17/2024 - 3:30:13 PM
+  Generated on: 7/19/2024 - 4:09:24 PM
+  Coverage date: 7/19/2024 - 4:08:29 PM - 7/19/2024 - 4:08:48 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 468
-  Files: 468
+  Classes: 469
+  Files: 469
   Line coverage: 98.3%
-  Covered lines: 8626
+  Covered lines: 8659
   Uncovered lines: 143
-  Coverable lines: 8769
-  Total lines: 22927
-  Branch coverage: 96.6% (3343 of 3460)
-  Covered branches: 3343
-  Total branches: 3460
-  Method coverage: 98.7% (622 of 630)
-  Covered methods: 622
-  Total methods: 630
+  Coverable lines: 8802
+  Total lines: 23000
+  Branch coverage: 96.6% (3357 of 3474)
+  Covered branches: 3357
+  Total branches: 3474
+  Method coverage: 98.7% (624 of 632)
+  Covered methods: 624
+  Total methods: 632
 
 LeetCode                                                                                                                                               98.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -288,6 +288,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NextGreaterElement1.NextGreaterElement1StackDictionary                                                                          100.0%
   LeetCode.Algorithms.NthTribonacciNumber.NthTribonacciNumberIterative                                                                                100.0%
   LeetCode.Algorithms.NthTribonacciNumber.NthTribonacciNumberMatrixExponentiation                                                                     100.0%
+  LeetCode.Algorithms.NumberOfGoodLeafNodesPairs.NumberOfGoodLeafNodesPairsDepthFirstSearch                                                           100.0%
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsDictionary                                                                                   100.0%
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsGroupBy                                                                                      100.0%
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsIterative                                                                                    100.0%
