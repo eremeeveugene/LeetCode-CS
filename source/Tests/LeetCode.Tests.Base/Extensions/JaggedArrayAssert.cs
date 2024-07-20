@@ -13,13 +13,23 @@ namespace LeetCode.Tests.Base.Extensions;
 
 public static class JaggedArrayAssert
 {
-    public static void ArrayEqual<T>(T[][] expected, T[][] actual)
+    public static void AreEqual<T>(T[][] expected, T[][] actual)
     {
         Assert.AreEqual(expected.Length, actual.Length, "The number of sub lists is different.");
 
         for (var i = 0; i < expected.Length; i++)
         {
             CollectionAssert.AreEqual(expected[i].ToArray(), actual[i].ToArray(), $"Sublist {i} is different.");
+        }
+    }
+
+    public static void AreEquivalent<T>(T[][] expected, T[][] actual)
+    {
+        Assert.AreEqual(expected.Length, actual.Length, "The number of sub lists is different.");
+
+        for (var i = 0; i < expected.Length; i++)
+        {
+            CollectionAssert.AreEquivalent(expected[i].ToArray(), actual[i].ToArray(), $"Sublist {i} is different.");
         }
     }
 }

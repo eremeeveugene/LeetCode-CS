@@ -9,32 +9,28 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.InsertInterval;
+using LeetCode.Algorithms.FindValidMatrixGivenRowAndColumnSums;
 using LeetCode.Core.Helpers;
 using LeetCode.Tests.Base.Extensions;
 
-namespace LeetCode.Tests.Algorithms.InsertInterval;
+namespace LeetCode.Tests.Algorithms.FindValidMatrixGivenRowAndColumnSums;
 
-public abstract class InsertIntervalTestsBase<T> where T : IInsertInterval, new()
+public abstract class FindValidMatrixGivenRowAndColumnSumsTestsBase<T>
+    where T : IFindValidMatrixGivenRowAndColumnSums, new()
 {
     [TestMethod]
-    [DataRow("[]", new[] { 2, 5 }, "[[2, 5]]")]
-    [DataRow("[[1,3],[6,9]]", new[] { 2, 5 }, "[[1,5],[6,9]]")]
-    [DataRow("[[1,2],[3,5],[6,7],[8,10],[12,16]]", new[] { 4, 8 }, "[[1,2],[3,10],[12,16]]")]
-    [DataRow("[[1,5]]", new[] { 6, 8 }, "[[1,5],[6,8]]")]
-    [DataRow("[[1,5]]", new[] { 0, 0 }, "[[0,0],[1,5]]")]
-    [DataRow("[[3,5],[12,15]]", new[] { 6, 6 }, "[[3,5],[6,6],[12,15]]")]
-    public void Insert_GivenIntervalsAndNewInterval_MergesOrAddsIntervalAsExpected(string intervalsJsonArray,
-        int[] newInterval, string expectedResultJsonArray)
+    [DataRow(new[] { 3, 8 }, new[] { 4, 7 }, "[[3,0],[1,7]]")]
+    [DataRow(new[] { 5, 7, 10 }, new[] { 8, 6, 8 }, "[[5,0,0],[3,4,0],[0,2,8]]")]
+    public void RestoreMatrix_WithGivenRowAndColumnSums_ReturnsRestoredMatrix(int[] rowSum, int[] colSum,
+        string expectedResultJsonArray)
     {
         // Arrange
-        var intervals = JsonHelper<int>.JsonArrayToJaggedArray(intervalsJsonArray);
         var expectedResult = JsonHelper<int>.JsonArrayToJaggedArray(expectedResultJsonArray);
 
         var solution = new T();
 
         // Act
-        var actualResult = solution.Insert(intervals, newInterval);
+        var actualResult = solution.RestoreMatrix(rowSum, colSum);
 
         // Assert
         JaggedArrayAssert.AreEqual(expectedResult, actualResult);

@@ -38,6 +38,6 @@ public abstract class FindAllGroupOfFarmlandTestsBase<T> where T : IFindAllGroup
         var actualResult = solution.FindFarmland(land);
 
         // Assert
-        JaggedArrayAssert.ArrayEqual(expectedResult, actualResult);
+        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
     }
 }
