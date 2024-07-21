@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/20/2024 - 1:52:06 PM
-  Coverage date: 7/20/2024 - 1:51:13 PM - 7/20/2024 - 1:51:30 PM
+  Generated on: 7/21/2024 - 11:32:37 AM
+  Coverage date: 7/21/2024 - 11:31:45 AM - 7/21/2024 - 11:32:02 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 472
-  Files: 472
-  Line coverage: 98.3%
-  Covered lines: 8715
-  Uncovered lines: 150
-  Coverable lines: 8865
-  Total lines: 23159
-  Branch coverage: 96.5% (3375 of 3494)
-  Covered branches: 3375
-  Total branches: 3494
-  Method coverage: 98.5% (627 of 636)
-  Covered methods: 627
-  Total methods: 636
+  Classes: 475
+  Files: 475
+  Line coverage: 98.2%
+  Covered lines: 8787
+  Uncovered lines: 156
+  Coverable lines: 8943
+  Total lines: 23351
+  Branch coverage: 96.4% (3413 of 3540)
+  Covered branches: 3413
+  Total branches: 3540
+  Method coverage: 98.5% (630 of 639)
+  Covered methods: 630
+  Total methods: 639
 
-LeetCode                                                                                                                                               98.6%
+LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                  100.0%
@@ -140,6 +140,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindCenterOfStarGraph.FindCenterOfStarGraphTwoEdges                                                                             100.0%
   LeetCode.Algorithms.FindCommonCharacters.FindCommonCharactersArray                                                                                  100.0%
   LeetCode.Algorithms.FindCommonCharacters.FindCommonCharactersDictionary                                                                             100.0%
+  LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeBreadthFirstSearch          91.1%
+  LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchRecursive  100.0%
+  LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStack       91.1%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphBreadthFirstSearch                                                                93.9%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphDepthFirstSearch                                                                  91.6%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeBreadthFirstSearch                                                         100.0%
