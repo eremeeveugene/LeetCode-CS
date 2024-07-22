@@ -10,9 +10,17 @@ Welcome to my repository of LeetCode solutions, all implemented in C#. Each solu
 
 The primary goal of this repository is to improve my own skills and demonstrate my capabilities. I am focused on my growth and learning by providing efficient and well-tested solutions to a wide range of LeetCode problems.
 
+## Technologies Used
+
+- **[.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)**: The latest version of the .NET platform for building and running applications.
+- **[C# 12](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12)**: The programming language used to implement the solutions.
+- **[MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)**: A testing framework for .NET to write and run tests.
+- **[Coverlet](https://github.com/coverlet-coverage/coverlet)**: A code coverage library for .NET that collects coverage data and integrates with build tasks.
+- **[ReportGenerator](https://reportgenerator.io/)**: A tool to generate reports from the test coverage data.
+
 ## Time and Space Complexity
 
-I analyze the time and space complexity using Big O notation for every algorithm solution in this repo. This analysis helps me understand the efficiency and scalability of each solution.
+I analyze the time and space complexity using Big O notation for every algorithm solution in this repo. This analysis helps me understand each solution's efficiency and scalability.
 
 ## Automation Jobs
 
@@ -25,14 +33,6 @@ You can view the code coverage report [here](https://eremeeveugene.github.io/Lee
 ## LeetCode Profile
 
 Check out my [LeetCode](https://leetcode.com/u/eremeeveugene/) profile to see more about my problem-solving journey.
-
-## Technologies Used
-
-- **.NET 8**: The latest version of the .NET framework for building and running applications.
-- **C#**: The programming language used to implement the solutions.
-- **MSTest**: A testing framework for .NET to write and run tests.
-- **Coverlet**: A code coverage library for .NET, used to collect coverage data and integrate with build tasks.
-- **ReportGenerator**: A tool to generate reports from the test coverage data.
 
 ## Solutions by Category
 
