@@ -1,21 +1,21 @@
 Summary
-  Generated on: 7/22/2024 - 6:03:16 PM
-  Coverage date: 7/22/2024 - 6:02:21 PM - 7/22/2024 - 6:02:39 PM
+  Generated on: 7/23/2024 - 1:38:32 PM
+  Coverage date: 7/23/2024 - 1:37:38 PM - 7/23/2024 - 1:37:56 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 476
-  Files: 476
+  Classes: 477
+  Files: 477
   Line coverage: 98.2%
-  Covered lines: 8790
+  Covered lines: 8819
   Uncovered lines: 156
-  Coverable lines: 8946
-  Total lines: 23378
-  Branch coverage: 96.4% (3413 of 3540)
-  Covered branches: 3413
-  Total branches: 3540
-  Method coverage: 98.5% (631 of 640)
-  Covered methods: 631
-  Total methods: 640
+  Coverable lines: 8975
+  Total lines: 23446
+  Branch coverage: 96.4% (3427 of 3554)
+  Covered branches: 3427
+  Total branches: 3554
+  Method coverage: 98.5% (632 of 641)
+  Covered methods: 632
+  Total methods: 641
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -389,6 +389,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ReverseString.ReverseStringTwoPointers                                                                                          100.0%
   LeetCode.Algorithms.ReverseString2.ReverseString2WithCharArray                                                                                      100.0%
   LeetCode.Algorithms.ReverseString2.ReverseString2WithStringBuilder                                                                                  100.0%
+  LeetCode.Algorithms.ReverseSubstringsBetweenEachPairOfParentheses.ReverseSubstringsBetweenEachPairOfParenthesesStack                                100.0%
   LeetCode.Algorithms.ReverseVowelsOfString.ReverseVowelsOfStringTwoPointers                                                                          100.0%
   LeetCode.Algorithms.ReverseWordsInString3.ReverseWordsInString3WithCharArray                                                                        100.0%
   LeetCode.Algorithms.ReverseWordsInString3.ReverseWordsInString3WithStringBuilder                                                                    100.0%
