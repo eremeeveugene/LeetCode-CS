@@ -27,7 +27,7 @@ public class SortAnArrayMergeSort : ISortAnArray
         return nums;
     }
 
-    private static void SortArray(int[] array, int left, int right)
+    private static void SortArray(IList<int> array, int left, int right)
     {
         if (left >= right)
         {
@@ -41,32 +41,31 @@ public class SortAnArrayMergeSort : ISortAnArray
         Merge(array, left, middle, right);
     }
 
-    private static void Merge(int[] array, int left, int middle, int right)
+    private static void Merge(IList<int> array, int left, int middle, int right)
     {
         var leftSize = middle - left + 1;
         var rightSize = right - middle;
 
-        var leftArray = new int[leftSize];
-        var rightArray = new int[rightSize];
+        var leftArray = array.Skip(left).Take(leftSize).ToArray();
+        var rightArray = array.Skip(middle + 1).Take(rightSize).ToArray();
 
-        Array.Copy(array, left, leftArray, 0, leftSize);
-        Array.Copy(array, middle + 1, rightArray, 0, rightSize);
-
-        int i = 0, j = 0, k = left;
+        var i = 0;
+        var j = 0;
+        var k = left;
 
         while (i < leftSize && j < rightSize)
         {
-            if (leftArray[i] <= rightArray[j])
-            {
-                array[k] = leftArray[i];
-
-                i++;
-            }
-            else
+            if (leftArray[i] > rightArray[j])
             {
                 array[k] = rightArray[j];
 
                 j++;
+            }
+            else
+            {
+                array[k] = leftArray[i];
+
+                i++;
             }
 
             k++;
