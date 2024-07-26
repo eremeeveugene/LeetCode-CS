@@ -146,6 +146,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [414. Third Maximum Number](https://leetcode.com/problems/third-maximum-number/description/)
 - [415. Add Strings](https://leetcode.com/problems/add-strings/description/)
 - [429. N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/description/)
+- [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/description/)
 - [442. Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)
 - [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/)
 - [459. Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/description/)
