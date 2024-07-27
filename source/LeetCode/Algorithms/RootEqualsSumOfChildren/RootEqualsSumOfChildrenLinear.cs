@@ -16,6 +16,12 @@ namespace LeetCode.Algorithms.RootEqualsSumOfChildren;
 /// <inheritdoc />
 public class RootEqualsSumOfChildrenLinear : IRootEqualsSumOfChildren
 {
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="root"></param>
+    /// <returns></returns>
     public bool CheckTree(TreeNode root)
     {
         return root.val == root.left!.val + root.right!.val;
