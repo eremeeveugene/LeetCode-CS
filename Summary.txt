@@ -1,21 +1,21 @@
 Summary
-  Generated on: 7/27/2024 - 8:46:23 AM
-  Coverage date: 7/27/2024 - 8:45:28 AM - 7/27/2024 - 8:45:46 AM
+  Generated on: 7/28/2024 - 11:52:19 AM
+  Coverage date: 7/28/2024 - 11:51:23 AM - 7/28/2024 - 11:51:42 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 486
-  Files: 486
+  Classes: 489
+  Files: 489
   Line coverage: 98.2%
-  Covered lines: 8975
-  Uncovered lines: 161
-  Coverable lines: 9136
-  Total lines: 23883
-  Branch coverage: 96.4% (3469 of 3598)
-  Covered branches: 3469
-  Total branches: 3598
-  Method coverage: 98.6% (645 of 654)
-  Covered methods: 645
-  Total methods: 654
+  Covered lines: 9033
+  Uncovered lines: 165
+  Coverable lines: 9198
+  Total lines: 24046
+  Branch coverage: 96.3% (3497 of 3628)
+  Covered branches: 3497
+  Total branches: 3628
+  Method coverage: 98.6% (648 of 657)
+  Covered methods: 648
+  Total methods: 657
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -407,6 +407,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.SameTree.SameTreeRecursive                                                                                                      100.0%
   LeetCode.Algorithms.ScoreAfterFlippingMatrix.ScoreAfterFlippingMatrixIterative                                                                      100.0%
   LeetCode.Algorithms.ScoreOfString.ScoreOfStringIterative                                                                                            100.0%
+  LeetCode.Algorithms.SearchInBinarySearchTree.SearchInBinarySearchTreeBreadthFirstSearch                                                              92.8%
+  LeetCode.Algorithms.SearchInBinarySearchTree.SearchInBinarySearchTreeDepthFirstSearchRecursive                                                      100.0%
+  LeetCode.Algorithms.SearchInBinarySearchTree.SearchInBinarySearchTreeDepthFirstSearchStack                                                           92.8%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionBinarySearch                                                                           100.0%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionIterative                                                                              100.0%
   LeetCode.Algorithms.ShuffleString.ShuffleStringIterative                                                                                            100.0%
