@@ -17,8 +17,8 @@ namespace LeetCode.Algorithms.SearchInBinarySearchTree;
 public class SearchInBinarySearchTreeBreadthFirstSearch : ISearchInBinarySearchTree
 {
     /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
+    ///     Time complexity - O(n) for a skewed tree, O(log n) for a balanced tree
+    ///     Space complexity - O(n) for a skewed tree, O(log n) for a balanced tree
     /// </summary>
     /// <param name="root"></param>
     /// <param name="val"></param>
