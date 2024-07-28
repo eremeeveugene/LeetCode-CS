@@ -43,14 +43,19 @@ public class SearchInBinarySearchTreeBreadthFirstSearch : ISearchInBinarySearchT
                 return node;
             }
 
-            if (node.left != null)
+            if (node.val < val)
             {
-                queue.Enqueue(node.left);
+                if (node.right != null)
+                {
+                    queue.Enqueue(node.right);
+                }
             }
-
-            if (node.right != null)
+            else
             {
-                queue.Enqueue(node.right);
+                if (node.left != null)
+                {
+                    queue.Enqueue(node.left);
+                }
             }
         }
 

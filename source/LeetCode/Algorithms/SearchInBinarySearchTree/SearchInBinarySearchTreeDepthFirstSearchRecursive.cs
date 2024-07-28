@@ -30,11 +30,6 @@ public class SearchInBinarySearchTreeDepthFirstSearchRecursive : ISearchInBinary
             return null;
         }
 
-        if (root.val == val)
-        {
-            return root;
-        }
-
-        return SearchBST(root.left, val) ?? SearchBST(root.right, val);
+        return root.val == val ? root : SearchBST(root.val < val ? root.right : root.left, val);
     }
 }

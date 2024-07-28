@@ -43,14 +43,19 @@ public class SearchInBinarySearchTreeDepthFirstSearchStack : ISearchInBinarySear
                 return node;
             }
 
-            if (node.left != null)
+            if (node.val < val)
             {
-                stack.Push(node.left);
+                if (node.right != null)
+                {
+                    stack.Push(node.right);
+                }
             }
-
-            if (node.right != null)
+            else
             {
-                stack.Push(node.right);
+                if (node.left != null)
+                {
+                    stack.Push(node.left);
+                }
             }
         }
 
