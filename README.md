@@ -321,6 +321,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3068. Find the Maximum Sum of Node Values](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/description/)
 - [3075. Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/description/)
 - [3110. Score of a String](https://leetcode.com/problems/score-of-a-string/description/)
+- [3190. Find Minimum Operations to Make All Elements Divisible by Three](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/description/)
 
   </p>
 </details>
