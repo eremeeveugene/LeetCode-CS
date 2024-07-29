@@ -1,21 +1,21 @@
 Summary
-  Generated on: 7/28/2024 - 11:52:19 AM
-  Coverage date: 7/28/2024 - 11:51:23 AM - 7/28/2024 - 11:51:42 AM
+  Generated on: 7/29/2024 - 7:00:01 PM
+  Coverage date: 7/29/2024 - 6:59:05 PM - 7/29/2024 - 6:59:24 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 489
-  Files: 489
+  Classes: 490
+  Files: 490
   Line coverage: 98.2%
-  Covered lines: 9033
+  Covered lines: 9036
   Uncovered lines: 165
-  Coverable lines: 9198
-  Total lines: 24046
+  Coverable lines: 9201
+  Total lines: 24074
   Branch coverage: 96.3% (3497 of 3628)
   Covered branches: 3497
   Total branches: 3628
-  Method coverage: 98.6% (648 of 657)
-  Covered methods: 648
-  Total methods: 657
+  Method coverage: 98.6% (649 of 658)
+  Covered methods: 649
+  Total methods: 658
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -148,6 +148,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStack       91.1%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphBreadthFirstSearch                                                                93.9%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphDepthFirstSearch                                                                  91.6%
+  LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree.FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterative          100.0%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeBreadthFirstSearch                                                         100.0%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchRecursive                                                  100.0%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchStack                                                      100.0%
