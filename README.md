@@ -139,6 +139,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/)
 - [350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/)
 - [367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/description/)
+- [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/)
 - [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)
 - [402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/)
 - [404. Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/description/)
