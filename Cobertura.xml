@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9820671666123247" branch-rate="0.9638919514884233" lines-covered="9036" lines-valid="9201" branches-covered="3497" branches-valid="3628" complexity="3774" version="0" timestamp="1722279600">
+<coverage line-rate="0.9820944112859469" branch-rate="0.9639515685195377" lines-covered="9050" lines-valid="9215" branches-covered="3503" branches-valid="3634" complexity="3780" version="0" timestamp="1722349266">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.9853219170465918" branch-rate="0.969971671388102" complexity="3670">
+    <package name="LeetCode" line-rate="0.9853447318752082" branch-rate="0.9700226244343891" complexity="3676">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -7673,6 +7673,44 @@
             <line number="58" hits="15" branch="false" />
             <line number="60" hits="4" branch="false" />
             <line number="61" hits="12" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.FirstUniqueCharacterInString.FirstUniqueCharacterInStringIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\FirstUniqueCharacterInString\FirstUniqueCharacterInStringIterative.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="FirstUniqChar" signature="(System.String)" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="24" hits="3" branch="false" />
+                <line number="25" hits="3" branch="false" />
+                <line number="27" hits="57" branch="true" condition-coverage="100% (2/2)" />
+                <line number="28" hits="24" branch="false" />
+                <line number="29" hits="24" branch="false" />
+                <line number="30" hits="24" branch="false" />
+                <line number="32" hits="18" branch="true" condition-coverage="100% (2/2)" />
+                <line number="33" hits="8" branch="false" />
+                <line number="34" hits="8" branch="true" condition-coverage="100% (2/2)" />
+                <line number="35" hits="2" branch="false" />
+                <line number="36" hits="2" branch="false" />
+                <line number="38" hits="6" branch="false" />
+                <line number="40" hits="1" branch="false" />
+                <line number="41" hits="3" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="3" branch="false" />
+            <line number="25" hits="3" branch="false" />
+            <line number="27" hits="57" branch="true" condition-coverage="100% (2/2)" />
+            <line number="28" hits="24" branch="false" />
+            <line number="29" hits="24" branch="false" />
+            <line number="30" hits="24" branch="false" />
+            <line number="32" hits="18" branch="true" condition-coverage="100% (2/2)" />
+            <line number="33" hits="8" branch="false" />
+            <line number="34" hits="8" branch="true" condition-coverage="100% (2/2)" />
+            <line number="35" hits="2" branch="false" />
+            <line number="36" hits="2" branch="false" />
+            <line number="38" hits="6" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="41" hits="3" branch="false" />
           </lines>
         </class>
         <class name="LeetCode.Algorithms.FloodFill.FloodFillIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\FloodFill\FloodFillIterative.cs" line-rate="1" branch-rate="1" complexity="12">
@@ -23222,10 +23260,10 @@
                 <line number="50" hits="3" branch="false" />
                 <line number="51" hits="3" branch="false" />
                 <line number="52" hits="3" branch="false" />
-                <line number="53" hits="7" branch="true" condition-coverage="100% (2/2)" />
-                <line number="54" hits="4" branch="false" />
-                <line number="55" hits="4" branch="false" />
-                <line number="56" hits="4" branch="false" />
+                <line number="53" hits="5" branch="true" condition-coverage="100% (2/2)" />
+                <line number="54" hits="2" branch="false" />
+                <line number="55" hits="2" branch="false" />
+                <line number="56" hits="2" branch="false" />
                 <line number="58" hits="3" branch="false" />
                 <line number="59" hits="3" branch="false" />
                 <line number="60" hits="3" branch="false" />
@@ -23264,10 +23302,10 @@
             <line number="50" hits="3" branch="false" />
             <line number="51" hits="3" branch="false" />
             <line number="52" hits="3" branch="false" />
-            <line number="53" hits="7" branch="true" condition-coverage="100% (2/2)" />
-            <line number="54" hits="4" branch="false" />
-            <line number="55" hits="4" branch="false" />
-            <line number="56" hits="4" branch="false" />
+            <line number="53" hits="5" branch="true" condition-coverage="100% (2/2)" />
+            <line number="54" hits="2" branch="false" />
+            <line number="55" hits="2" branch="false" />
+            <line number="56" hits="2" branch="false" />
             <line number="58" hits="3" branch="false" />
             <line number="59" hits="3" branch="false" />
             <line number="60" hits="3" branch="false" />
@@ -23402,10 +23440,10 @@
             <method name="Third" signature="(System.Action)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
                 <line number="41" hits="3" branch="false" />
-                <line number="42" hits="5" branch="true" condition-coverage="100% (2/2)" />
-                <line number="43" hits="2" branch="false" />
-                <line number="44" hits="2" branch="false" />
-                <line number="45" hits="2" branch="false" />
+                <line number="42" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="43" hits="3" branch="false" />
+                <line number="44" hits="3" branch="false" />
+                <line number="45" hits="3" branch="false" />
                 <line number="47" hits="3" branch="false" />
                 <line number="48" hits="3" branch="false" />
               </lines>
@@ -23425,10 +23463,10 @@
             <line number="37" hits="3" branch="false" />
             <line number="38" hits="3" branch="false" />
             <line number="41" hits="3" branch="false" />
-            <line number="42" hits="5" branch="true" condition-coverage="100% (2/2)" />
-            <line number="43" hits="2" branch="false" />
-            <line number="44" hits="2" branch="false" />
-            <line number="45" hits="2" branch="false" />
+            <line number="42" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="43" hits="3" branch="false" />
+            <line number="44" hits="3" branch="false" />
+            <line number="45" hits="3" branch="false" />
             <line number="47" hits="3" branch="false" />
             <line number="48" hits="3" branch="false" />
           </lines>
