@@ -1,21 +1,21 @@
 Summary
-  Generated on: 7/30/2024 - 2:21:08 PM
-  Coverage date: 7/30/2024 - 2:20:13 PM - 7/30/2024 - 2:20:31 PM
+  Generated on: 7/31/2024 - 4:46:13 PM
+  Coverage date: 7/31/2024 - 4:45:10 PM - 7/31/2024 - 4:45:37 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 491
-  Files: 491
+  Classes: 492
+  Files: 492
   Line coverage: 98.2%
-  Covered lines: 9050
+  Covered lines: 9070
   Uncovered lines: 165
-  Coverable lines: 9215
-  Total lines: 24116
-  Branch coverage: 96.3% (3503 of 3634)
-  Covered branches: 3503
-  Total branches: 3634
-  Method coverage: 98.6% (650 of 659)
-  Covered methods: 650
-  Total methods: 659
+  Coverable lines: 9235
+  Total lines: 24169
+  Branch coverage: 96.4% (3509 of 3640)
+  Covered branches: 3509
+  Total branches: 3640
+  Method coverage: 98.6% (652 of 661)
+  Covered methods: 652
+  Total methods: 661
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -266,6 +266,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumDepthOfBinaryTree.MinimumDepthOfBinaryTreeBreadthFirstSearch                                                             100.0%
   LeetCode.Algorithms.MinimumDepthOfBinaryTree.MinimumDepthOfBinaryTreeDepthFirstSearch                                                               100.0%
   LeetCode.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesSorting  100.0%
+  LeetCode.Algorithms.MinimumDistanceBetweenBSTNodes.MinimumDistanceBetweenBSTNodesDepthFirstSearch                                                   100.0%
   LeetCode.Algorithms.MinimumFallingPathSum2.MinimumFallingPathSum2DynamicProgramming                                                                 100.0%
   LeetCode.Algorithms.MinimumHeightTrees.MinimumHeightTreesBreadthFirstSearch                                                                         100.0%
   LeetCode.Algorithms.MinimumHeightTrees.MinimumHeightTreesLeafPruning                                                                                100.0%
