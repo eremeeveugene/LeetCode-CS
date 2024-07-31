@@ -1,21 +1,21 @@
 Summary
-  Generated on: 7/31/2024 - 4:46:13 PM
-  Coverage date: 7/31/2024 - 4:45:10 PM - 7/31/2024 - 4:45:37 PM
+  Generated on: 7/31/2024 - 4:56:27 PM
+  Coverage date: 7/31/2024 - 4:55:32 PM - 7/31/2024 - 4:55:49 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 492
-  Files: 492
+  Classes: 493
+  Files: 493
   Line coverage: 98.2%
-  Covered lines: 9070
+  Covered lines: 9090
   Uncovered lines: 165
-  Coverable lines: 9235
-  Total lines: 24169
-  Branch coverage: 96.4% (3509 of 3640)
-  Covered branches: 3509
-  Total branches: 3640
-  Method coverage: 98.6% (652 of 661)
-  Covered methods: 652
-  Total methods: 661
+  Coverable lines: 9255
+  Total lines: 24222
+  Branch coverage: 96.4% (3515 of 3646)
+  Covered branches: 3515
+  Total branches: 3646
+  Method coverage: 98.6% (654 of 663)
+  Covered methods: 654
+  Total methods: 663
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -260,6 +260,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayThreePointers                                                                                  100.0%
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                                                                                   100.0%
   LeetCode.Algorithms.MinCostClimbingStairs.MinCostClimbingStairsDynamicProgramming                                                                   100.0%
+  LeetCode.Algorithms.MinimumAbsoluteDifferenceInBST.MinimumAbsoluteDifferenceInBSTDepthFirstSearch                                                   100.0%
   LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueHashSet                                                                                    100.0%
   LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueTwoPointers                                                                                100.0%
   LeetCode.Algorithms.MinimumCostToHireKWorkers.MinimumCostToHireKWorkersPriorityQueue                                                                100.0%
