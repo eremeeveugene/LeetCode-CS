@@ -181,6 +181,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/)
 - [752. Open the Lock](https://leetcode.com/problems/open-the-lock/description/)
 - [771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/description/)
+- [783. Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/)
 - [786. K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/description/)
 - [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
 - [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
