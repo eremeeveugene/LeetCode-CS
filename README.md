@@ -160,6 +160,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [514. Freedom Trail](https://leetcode.com/problems/freedom-trail/description/)
 - [523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/description/)
 - [525. Contiguous Array](https://leetcode.com/problems/contiguous-array/description/)
+- [530. Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/)
 - [541. Reverse String II](https://leetcode.com/problems/reverse-string-ii/description/)
 - [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/)
 - [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/)
