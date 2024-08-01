@@ -306,6 +306,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2597. The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/description/)
 - [2651. Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/description/)
 - [2652. Sum Multiples](https://leetcode.com/problems/sum-multiples/description/)
+- [2678. Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens/description/)
 - [2706. Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/description/)
 - [2733. Neither Minimum nor Maximum](https://leetcode.com/problems/neither-minimum-nor-maximum/description/)
 - [2769. Find the Maximum Achievable Number](https://leetcode.com/problems/find-the-maximum-achievable-number/description/)

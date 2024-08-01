@@ -9,38 +9,19 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.NumberOfStepsToReduceNumberInBinaryRepresentationToOne;
+namespace LeetCode.Algorithms.NumberOfSeniorCitizens;
 
 /// <inheritdoc />
-public class NumberOfStepsToReduceNumberInBinaryRepresentationToOneGreedy :
-    INumberOfStepsToReduceNumberInBinaryRepresentationToOne
+public class NumberOfSeniorCitizensStringParsing : INumberOfSeniorCitizens
 {
     /// <summary>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
     /// </summary>
-    /// <param name="s"></param>
+    /// <param name="details"></param>
     /// <returns></returns>
-    public int NumSteps(string s)
+    public int CountSeniors(string[] details)
     {
-        var steps = 0;
-
-        var carry = 0;
-
-        for (var i = s.Length - 1; i > 0; i--)
-        {
-            if ((s[i] - '0' + carry) % 2 == 0)
-            {
-                steps++;
-            }
-            else
-            {
-                steps += 2;
-
-                carry = 1;
-            }
-        }
-
-        return steps + carry;
+        return details.Count(detail => int.Parse(detail.Substring(11, 2)) > 60);
     }
 }
