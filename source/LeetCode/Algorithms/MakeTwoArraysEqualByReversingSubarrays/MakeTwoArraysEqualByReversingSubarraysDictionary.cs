@@ -42,7 +42,7 @@ public class MakeTwoArraysEqualByReversingSubarraysDictionary : IMakeTwoArraysEq
                     return false;
                 }
 
-                targetDictionary[arrKey] = --targetValue;
+                targetDictionary[arrKey] = targetValue - 1;
             }
             else
             {
