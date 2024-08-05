@@ -33,8 +33,6 @@ public class KthDistinctStringInAnArrayDictionary : IKthDistinctStringInAnArray
             }
         }
 
-        var distinctCount = 0;
-
         foreach (var item in arr)
         {
             if (countDictionary[item] != 1)
@@ -42,9 +40,9 @@ public class KthDistinctStringInAnArrayDictionary : IKthDistinctStringInAnArray
                 continue;
             }
 
-            distinctCount++;
+            k--;
 
-            if (distinctCount == k)
+            if (k == 0)
             {
                 return item;
             }
