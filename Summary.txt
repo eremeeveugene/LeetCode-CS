@@ -1,21 +1,21 @@
 Summary
-  Generated on: 8/5/2024 - 1:35:58 PM
-  Coverage date: 8/5/2024 - 1:35:02 PM - 8/5/2024 - 1:35:22 PM
+  Generated on: 8/6/2024 - 11:13:16 AM
+  Coverage date: 8/6/2024 - 11:12:21 AM - 8/6/2024 - 11:12:40 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 500
-  Files: 500
+  Classes: 503
+  Files: 503
   Line coverage: 98.1%
-  Covered lines: 9187
+  Covered lines: 9290
   Uncovered lines: 172
-  Coverable lines: 9359
-  Total lines: 24533
-  Branch coverage: 96.3% (3554 of 3688)
-  Covered branches: 3554
-  Total branches: 3688
-  Method coverage: 98.6% (661 of 670)
-  Covered methods: 661
-  Total methods: 670
+  Coverable lines: 9462
+  Total lines: 24752
+  Branch coverage: 96.4% (3602 of 3736)
+  Covered branches: 3602
+  Total branches: 3736
+  Method coverage: 98.6% (664 of 673)
+  Covered methods: 664
+  Total methods: 673
 
 LeetCode                                                                                                                                               98.4%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -261,6 +261,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.MergeNodesInBetweenZeros.MergeNodesInBetweenZerosRecursive                                                                      100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayMergingAndSorting                                                                              100.0%
   LeetCode.Algorithms.MergeSortedArray.MergeSortedArrayThreePointers                                                                                  100.0%
+  LeetCode.Algorithms.MergeTwoBinaryTrees.MergeTwoBinaryTreesBreadthFirstSearch                                                                       100.0%
+  LeetCode.Algorithms.MergeTwoBinaryTrees.MergeTwoBinaryTreesDepthFirstSearchRecursive                                                                100.0%
+  LeetCode.Algorithms.MergeTwoBinaryTrees.MergeTwoBinaryTreesDepthFirstSearchStack                                                                    100.0%
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                                                                                   100.0%
   LeetCode.Algorithms.MinCostClimbingStairs.MinCostClimbingStairsDynamicProgramming                                                                   100.0%
   LeetCode.Algorithms.MinimumAbsoluteDifferenceInBST.MinimumAbsoluteDifferenceInBSTDepthFirstSearch                                                   100.0%
