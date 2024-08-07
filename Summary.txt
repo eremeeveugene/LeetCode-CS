@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/6/2024 - 11:13:16 AM
-  Coverage date: 8/6/2024 - 11:12:21 AM - 8/6/2024 - 11:12:40 AM
+  Generated on: 8/7/2024 - 7:17:38 PM
+  Coverage date: 8/7/2024 - 7:16:43 PM - 8/7/2024 - 7:17:01 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 503
-  Files: 503
-  Line coverage: 98.1%
-  Covered lines: 9290
+  Classes: 505
+  Files: 505
+  Line coverage: 98.2%
+  Covered lines: 9438
   Uncovered lines: 172
-  Coverable lines: 9462
-  Total lines: 24752
-  Branch coverage: 96.4% (3602 of 3736)
-  Covered branches: 3602
-  Total branches: 3736
-  Method coverage: 98.6% (664 of 673)
-  Covered methods: 664
-  Total methods: 673
+  Coverable lines: 9610
+  Total lines: 24985
+  Branch coverage: 96.4% (3632 of 3766)
+  Covered branches: 3632
+  Total branches: 3766
+  Method coverage: 98.6% (669 of 678)
+  Covered methods: 669
+  Total methods: 678
 
-LeetCode                                                                                                                                               98.4%
+LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                  100.0%
@@ -195,6 +195,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.IncreasingDecreasingString.IncreasingDecreasingStringCountingSort                                                               100.0%
   LeetCode.Algorithms.IncreasingDecreasingString.IncreasingDecreasingStringDictionary                                                                 100.0%
   LeetCode.Algorithms.InsertInterval.InsertIntervalIterative                                                                                          100.0%
+  LeetCode.Algorithms.IntegerToEnglishWords.IntegerToEnglishWordsIterative                                                                            100.0%
+  LeetCode.Algorithms.IntegerToEnglishWords.IntegerToEnglishWordsRecursive                                                                            100.0%
   LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSet                                                                          100.0%
   LeetCode.Algorithms.IntersectionOfTwoArrays.IntersectionOfTwoArraysHashSetIntersectWith                                                             100.0%
   LeetCode.Algorithms.IntersectionOfTwoArrays2.IntersectionOfTwoArrays2Dictionary                                                                     100.0%
