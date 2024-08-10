@@ -1,21 +1,21 @@
 Summary
-  Generated on: 8/8/2024 - 6:43:59 PM
-  Coverage date: 8/8/2024 - 6:43:04 PM - 8/8/2024 - 6:43:22 PM
+  Generated on: 8/10/2024 - 1:40:03 PM
+  Coverage date: 8/10/2024 - 1:39:09 PM - 8/10/2024 - 1:39:27 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 506
-  Files: 506
+  Classes: 507
+  Files: 507
   Line coverage: 98.2%
-  Covered lines: 9477
+  Covered lines: 9520
   Uncovered lines: 172
-  Coverable lines: 9649
-  Total lines: 25067
-  Branch coverage: 96.4% (3653 of 3788)
-  Covered branches: 3653
-  Total branches: 3788
-  Method coverage: 98.6% (670 of 679)
-  Covered methods: 670
-  Total methods: 679
+  Coverable lines: 9692
+  Total lines: 25150
+  Branch coverage: 96.4% (3678 of 3814)
+  Covered branches: 3678
+  Total branches: 3814
+  Method coverage: 98.6% (672 of 681)
+  Covered methods: 672
+  Total methods: 681
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -235,6 +235,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestPalindromicSubstring.LongestPalindromicSubstringTwoPointers                                                              100.0%
   LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters.LongestSubstringWithoutRepeatingCharactersSlidingWindow                              100.0%
   LeetCode.Algorithms.LuckyNumbersInMatrix.LuckyNumbersInMatrixBruteForce                                                                             100.0%
+  LeetCode.Algorithms.MagicSquaresInGrid.MagicSquaresInGridBruteForce                                                                                 100.0%
   LeetCode.Algorithms.MajorityElement.MajorityElementDictionary                                                                                       100.0%
   LeetCode.Algorithms.MajorityElement.MajorityElementDistinctCount                                                                                    100.0%
   LeetCode.Algorithms.MakeTheStringGreat.MakeTheStringGreatIterative                                                                                  100.0%
