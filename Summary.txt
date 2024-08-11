@@ -1,21 +1,21 @@
 Summary
-  Generated on: 8/10/2024 - 5:42:17 PM
-  Coverage date: 8/10/2024 - 5:41:24 PM - 8/10/2024 - 5:41:41 PM
+  Generated on: 8/11/2024 - 3:46:32 PM
+  Coverage date: 8/11/2024 - 3:45:36 PM - 8/11/2024 - 3:45:54 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 508
-  Files: 508
+  Classes: 510
+  Files: 510
   Line coverage: 98.2%
-  Covered lines: 9578
+  Covered lines: 9709
   Uncovered lines: 172
-  Coverable lines: 9750
-  Total lines: 25257
-  Branch coverage: 96.4% (3714 of 3850)
-  Covered branches: 3714
-  Total branches: 3850
-  Method coverage: 98.6% (674 of 683)
-  Covered methods: 674
-  Total methods: 683
+  Coverable lines: 9881
+  Total lines: 25489
+  Branch coverage: 96.5% (3776 of 3912)
+  Covered branches: 3776
+  Total branches: 3912
+  Method coverage: 98.6% (681 of 690)
+  Covered methods: 681
+  Total methods: 690
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -285,6 +285,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds.MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers                          100.0%
   LeetCode.Algorithms.MinimumNumberGame.MinimumNumberGameSorting                                                                                      100.0%
   LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons.MinimumNumberOfArrowsToBurstBalloonsIterative                                              100.0%
+  LeetCode.Algorithms.MinimumNumberOfDaysToDisconnectIsland.MinimumNumberOfDaysToDisconnectIslandBruteForceCopyArray                                  100.0%
+  LeetCode.Algorithms.MinimumNumberOfDaysToDisconnectIsland.MinimumNumberOfDaysToDisconnectIslandBruteForceVisitedArray                               100.0%
   LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone.MinimumNumberOfMovesToSeatEveryoneCountingSort                                               100.0%
   LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone.MinimumNumberOfMovesToSeatEveryoneSorting                                                    100.0%
   LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK.MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeBits                    100.0%
