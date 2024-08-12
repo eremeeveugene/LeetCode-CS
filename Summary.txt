@@ -1,21 +1,21 @@
 Summary
-  Generated on: 8/11/2024 - 3:46:32 PM
-  Coverage date: 8/11/2024 - 3:45:36 PM - 8/11/2024 - 3:45:54 PM
+  Generated on: 8/12/2024 - 6:49:00 PM
+  Coverage date: 8/12/2024 - 6:48:02 PM - 8/12/2024 - 6:48:21 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 510
-  Files: 510
+  Classes: 516
+  Files: 516
   Line coverage: 98.2%
-  Covered lines: 9709
+  Covered lines: 9783
   Uncovered lines: 172
-  Coverable lines: 9881
-  Total lines: 25489
-  Branch coverage: 96.5% (3776 of 3912)
-  Covered branches: 3776
-  Total branches: 3912
-  Method coverage: 98.6% (681 of 690)
-  Covered methods: 681
-  Total methods: 690
+  Coverable lines: 9955
+  Total lines: 25712
+  Branch coverage: 96.5% (3796 of 3932)
+  Covered branches: 3796
+  Total branches: 3932
+  Method coverage: 98.7% (691 of 700)
+  Covered methods: 691
+  Total methods: 700
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -214,6 +214,12 @@ LeetCode                                                                        
   LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesHashSet                                                                                          100.0%
   LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesLinq                                                                                             100.0%
   LeetCode.Algorithms.KthDistinctStringInAnArray.KthDistinctStringInAnArrayDictionary                                                                 100.0%
+  LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamPriorityQueue                                                                100.0%
+  LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamPriorityQueueFactory                                                         100.0%
+  LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedArray                                                                  100.0%
+  LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedArrayFactory                                                           100.0%
+  LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedList                                                                   100.0%
+  LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedListFactory                                                            100.0%
   LeetCode.Algorithms.KthSmallestPrimeFraction.KthSmallestPrimeFractionBinarySearch                                                                   100.0%
   LeetCode.Algorithms.KthSmallestPrimeFraction.KthSmallestPrimeFractionBruteForce                                                                     100.0%
   LeetCode.Algorithms.LargestLocalValuesInMatrix.LargestLocalValuesInMatrixBruteForce                                                                 100.0%

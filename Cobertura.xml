@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9825928549741929" branch-rate="0.9652351738241309" lines-covered="9709" lines-valid="9881" branches-covered="3776" branches-valid="3912" complexity="4064" version="0" timestamp="1723391191">
+<coverage line-rate="0.982722250125565" branch-rate="0.965412004069176" lines-covered="9783" lines-valid="9955" branches-covered="3796" branches-valid="3932" complexity="4089" version="0" timestamp="1723488538">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.9856301044143492" branch-rate="0.9708966963817515" complexity="3960">
+    <package name="LeetCode" line-rate="0.9857392018056838" branch-rate="0.9710485133020345" complexity="3985">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -9941,6 +9941,230 @@
             <line number="49" hits="2" branch="false" />
             <line number="51" hits="1" branch="false" />
             <line number="52" hits="3" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamPriorityQueue" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\KthLargestElementInStream\KthLargestElementInStreamPriorityQueue.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="Add" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="37" hits="71" branch="false" />
+                <line number="38" hits="71" branch="true" condition-coverage="100% (2/2)" />
+                <line number="39" hits="26" branch="false" />
+                <line number="40" hits="26" branch="false" />
+                <line number="41" hits="26" branch="false" />
+                <line number="42" hits="45" branch="true" condition-coverage="100% (2/2)" />
+                <line number="43" hits="29" branch="false" />
+                <line number="44" hits="29" branch="false" />
+                <line number="45" hits="29" branch="false" />
+                <line number="46" hits="29" branch="false" />
+                <line number="48" hits="71" branch="false" />
+                <line number="49" hits="71" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Collections.Generic.IEnumerable`1&lt;System.Int32&gt;)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="18" hits="10" branch="false" />
+                <line number="20" hits="10" branch="false" />
+                <line number="21" hits="10" branch="false" />
+                <line number="22" hits="10" branch="false" />
+                <line number="24" hits="90" branch="true" condition-coverage="100% (2/2)" />
+                <line number="25" hits="30" branch="false" />
+                <line number="26" hits="30" branch="false" />
+                <line number="27" hits="30" branch="false" />
+                <line number="28" hits="10" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="10" branch="false" />
+            <line number="20" hits="10" branch="false" />
+            <line number="21" hits="10" branch="false" />
+            <line number="22" hits="10" branch="false" />
+            <line number="24" hits="90" branch="true" condition-coverage="100% (2/2)" />
+            <line number="25" hits="30" branch="false" />
+            <line number="26" hits="30" branch="false" />
+            <line number="27" hits="30" branch="false" />
+            <line number="28" hits="10" branch="false" />
+            <line number="37" hits="71" branch="false" />
+            <line number="38" hits="71" branch="true" condition-coverage="100% (2/2)" />
+            <line number="39" hits="26" branch="false" />
+            <line number="40" hits="26" branch="false" />
+            <line number="41" hits="26" branch="false" />
+            <line number="42" hits="45" branch="true" condition-coverage="100% (2/2)" />
+            <line number="43" hits="29" branch="false" />
+            <line number="44" hits="29" branch="false" />
+            <line number="45" hits="29" branch="false" />
+            <line number="46" hits="29" branch="false" />
+            <line number="48" hits="71" branch="false" />
+            <line number="49" hits="71" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamPriorityQueueFactory" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\KthLargestElementInStream\KthLargestElementInStreamPriorityQueueFactory.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="Create" signature="(System.Int32,System.Int32[])" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="10" branch="false" />
+                <line number="18" hits="10" branch="false" />
+                <line number="19" hits="10" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="10" branch="false" />
+            <line number="18" hits="10" branch="false" />
+            <line number="19" hits="10" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedArray" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\KthLargestElementInStream\KthLargestElementInStreamSortedArray.cs" line-rate="1" branch-rate="1" complexity="10">
+          <methods>
+            <method name="Add" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="52" hits="41" branch="false" />
+                <line number="53" hits="294" branch="true" condition-coverage="100% (2/2)" />
+                <line number="54" hits="106" branch="false" />
+                <line number="55" hits="106" branch="true" condition-coverage="100% (2/2)" />
+                <line number="56" hits="72" branch="false" />
+                <line number="57" hits="72" branch="false" />
+                <line number="58" hits="72" branch="false" />
+                <line number="59" hits="106" branch="false" />
+                <line number="61" hits="41" branch="false" />
+                <line number="62" hits="41" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Int32[])" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="20" hits="10" branch="false" />
+                <line number="21" hits="10" branch="false" />
+                <line number="22" hits="10" branch="false" />
+                <line number="24" hits="10" branch="false" />
+                <line number="26" hits="10" branch="false" />
+                <line number="28" hits="10" branch="true" condition-coverage="100% (2/2)" />
+                <line number="29" hits="8" branch="false" />
+                <line number="30" hits="47" branch="false" />
+                <line number="32" hits="8" branch="false" />
+                <line number="34" hits="31" branch="true" condition-coverage="100% (4/4)" />
+                <line number="35" hits="23" branch="false" />
+                <line number="36" hits="23" branch="false" />
+                <line number="38" hits="23" branch="false" />
+                <line number="39" hits="23" branch="false" />
+                <line number="40" hits="8" branch="false" />
+                <line number="42" hits="10" branch="false" />
+                <line number="43" hits="10" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="10" branch="false" />
+            <line number="21" hits="10" branch="false" />
+            <line number="22" hits="10" branch="false" />
+            <line number="24" hits="10" branch="false" />
+            <line number="26" hits="10" branch="false" />
+            <line number="28" hits="10" branch="true" condition-coverage="100% (2/2)" />
+            <line number="29" hits="8" branch="false" />
+            <line number="30" hits="47" branch="false" />
+            <line number="32" hits="8" branch="false" />
+            <line number="34" hits="31" branch="true" condition-coverage="100% (4/4)" />
+            <line number="35" hits="23" branch="false" />
+            <line number="36" hits="23" branch="false" />
+            <line number="38" hits="23" branch="false" />
+            <line number="39" hits="23" branch="false" />
+            <line number="40" hits="8" branch="false" />
+            <line number="42" hits="10" branch="false" />
+            <line number="43" hits="10" branch="false" />
+            <line number="52" hits="41" branch="false" />
+            <line number="53" hits="294" branch="true" condition-coverage="100% (2/2)" />
+            <line number="54" hits="106" branch="false" />
+            <line number="55" hits="106" branch="true" condition-coverage="100% (2/2)" />
+            <line number="56" hits="72" branch="false" />
+            <line number="57" hits="72" branch="false" />
+            <line number="58" hits="72" branch="false" />
+            <line number="59" hits="106" branch="false" />
+            <line number="61" hits="41" branch="false" />
+            <line number="62" hits="41" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedArrayFactory" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\KthLargestElementInStream\KthLargestElementInStreamSortedArrayFactory.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="Create" signature="(System.Int32,System.Int32[])" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="10" branch="false" />
+                <line number="18" hits="10" branch="false" />
+                <line number="19" hits="10" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="10" branch="false" />
+            <line number="18" hits="10" branch="false" />
+            <line number="19" hits="10" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedList" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\KthLargestElementInStream\KthLargestElementInStreamSortedList.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="Add" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="41" branch="false" />
+                <line number="27" hits="41" branch="false" />
+                <line number="29" hits="41" branch="false" />
+                <line number="30" hits="41" branch="false" />
+              </lines>
+            </method>
+            <method name="Insert" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="33" hits="41" branch="false" />
+                <line number="34" hits="206" branch="true" condition-coverage="100% (2/2)" />
+                <line number="35" hits="88" branch="false" />
+                <line number="36" hits="88" branch="false" />
+                <line number="38" hits="88" branch="true" condition-coverage="100% (2/2)" />
+                <line number="39" hits="62" branch="false" />
+                <line number="40" hits="62" branch="false" />
+                <line number="43" hits="26" branch="false" />
+                <line number="45" hits="26" branch="false" />
+                <line number="48" hits="15" branch="false" />
+                <line number="49" hits="41" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.Collections.Generic.IEnumerable`1&lt;System.Int32&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="10" branch="false" />
+                <line number="17" hits="10" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="10" branch="false" />
+            <line number="17" hits="10" branch="false" />
+            <line number="26" hits="41" branch="false" />
+            <line number="27" hits="41" branch="false" />
+            <line number="29" hits="41" branch="false" />
+            <line number="30" hits="41" branch="false" />
+            <line number="33" hits="41" branch="false" />
+            <line number="34" hits="206" branch="true" condition-coverage="100% (2/2)" />
+            <line number="35" hits="88" branch="false" />
+            <line number="36" hits="88" branch="false" />
+            <line number="38" hits="88" branch="true" condition-coverage="100% (2/2)" />
+            <line number="39" hits="62" branch="false" />
+            <line number="40" hits="62" branch="false" />
+            <line number="43" hits="26" branch="false" />
+            <line number="45" hits="26" branch="false" />
+            <line number="48" hits="15" branch="false" />
+            <line number="49" hits="41" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedListFactory" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\KthLargestElementInStream\KthLargestElementInStreamSortedListFactory.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="Create" signature="(System.Int32,System.Int32[])" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="10" branch="false" />
+                <line number="18" hits="10" branch="false" />
+                <line number="19" hits="10" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="10" branch="false" />
+            <line number="18" hits="10" branch="false" />
+            <line number="19" hits="10" branch="false" />
           </lines>
         </class>
         <class name="LeetCode.Algorithms.KthSmallestPrimeFraction.KthSmallestPrimeFractionBinarySearch" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\KthSmallestPrimeFraction\KthSmallestPrimeFractionBinarySearch.cs" line-rate="1" branch-rate="0.9583333333333334" complexity="24">
