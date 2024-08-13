@@ -37,12 +37,11 @@ public class CombinationSum2Backtracking : ICombinationSum2
     {
         switch (remain)
         {
-            case < 0:
-                break;
             case 0:
                 result.Add(new List<int>(tempList));
+
                 break;
-            default:
+            case > 0:
                 {
                     for (var i = start; i < candidates.Count; i++)
                     {
