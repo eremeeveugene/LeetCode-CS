@@ -50,6 +50,11 @@ public class CombinationSum2Backtracking : ICombinationSum2
                             continue;
                         }
 
+                        if (candidates[i] > remain)
+                        {
+                            break;
+                        }
+
                         tempList.Add(candidates[i]);
 
                         Backtrack(result, tempList, candidates, remain - candidates[i], i + 1);
