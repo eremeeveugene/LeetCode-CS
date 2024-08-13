@@ -59,6 +59,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [27. Remove Element](https://leetcode.com/problems/remove-element/description/)
 - [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
 - [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/description/)
+- [40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/)
 - [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)
 - [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)
 - [46. Permutations](https://leetcode.com/problems/permutations/description/)

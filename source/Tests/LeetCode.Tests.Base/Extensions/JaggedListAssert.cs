@@ -27,9 +27,17 @@ public static class JaggedListAssert
     {
         Assert.AreEqual(expected.Count, actual.Count, "The number of sub lists is different.");
 
-        for (var i = 0; i < expected.Count; i++)
+        var sortedExpected = expected
+            .Select(sublist => sublist.OrderBy(x => x).ToList())
+            .OrderBy(sublist => string.Join(",", sublist)).ToList();
+
+        var sortedActual = actual
+            .Select(sublist => sublist.OrderBy(x => x).ToList())
+            .OrderBy(sublist => string.Join(",", sublist)).ToList();
+
+        for (var i = 0; i < sortedExpected.Count; i++)
         {
-            CollectionAssert.AreEquivalent(expected[i].ToArray(), actual[i].ToArray(), $"Sublist {i} is different.");
+            CollectionAssert.AreEquivalent(sortedExpected[i], sortedActual[i], $"Sublist {i} is different.");
         }
     }
 }
