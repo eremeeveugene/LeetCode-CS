@@ -195,6 +195,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [840. Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid/description/)
 - [846. Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 - [857. Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/description/)
+- [860. Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)
 - [861. Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/description/)
 - [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/)
 - [885. Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/description/)
