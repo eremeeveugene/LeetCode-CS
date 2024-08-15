@@ -1,21 +1,21 @@
 Summary
-  Generated on: 8/15/2024 - 11:29:11 AM
-  Coverage date: 8/15/2024 - 11:28:16 AM - 8/15/2024 - 11:28:34 AM
+  Generated on: 8/15/2024 - 1:16:36 PM
+  Coverage date: 8/15/2024 - 1:15:37 PM - 8/15/2024 - 1:15:58 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 518
-  Files: 518
+  Classes: 519
+  Files: 519
   Line coverage: 98.2%
-  Covered lines: 9837
+  Covered lines: 9868
   Uncovered lines: 174
-  Coverable lines: 10011
-  Total lines: 25852
-  Branch coverage: 96.5% (3834 of 3972)
-  Covered branches: 3834
-  Total branches: 3972
-  Method coverage: 98.7% (694 of 703)
-  Covered methods: 694
-  Total methods: 703
+  Coverable lines: 10042
+  Total lines: 25918
+  Branch coverage: 96.5% (3842 of 3980)
+  Covered branches: 3842
+  Total branches: 3980
+  Method coverage: 98.7% (696 of 705)
+  Covered methods: 696
+  Total methods: 705
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -149,6 +149,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStack       91.1%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphBreadthFirstSearch                                                                93.9%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphDepthFirstSearch                                                                  91.6%
+  LeetCode.Algorithms.FindKthSmallestPairDistance.FindKthSmallestPairDistanceBinarySearchWithSlidingWindow                                            100.0%
   LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree.FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterative          100.0%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeBreadthFirstSearch                                                         100.0%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchRecursive                                                  100.0%
