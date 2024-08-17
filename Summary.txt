@@ -1,21 +1,21 @@
 Summary
-  Generated on: 8/17/2024 - 12:58:33 PM
-  Coverage date: 8/17/2024 - 12:57:38 PM - 8/17/2024 - 12:57:57 PM
+  Generated on: 8/17/2024 - 1:57:07 PM
+  Coverage date: 8/17/2024 - 1:56:10 PM - 8/17/2024 - 1:56:30 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 520
-  Files: 520
+  Classes: 522
+  Files: 522
   Line coverage: 98.2%
-  Covered lines: 9895
+  Covered lines: 9923
   Uncovered lines: 174
-  Coverable lines: 10069
-  Total lines: 25977
-  Branch coverage: 96.5% (3852 of 3990)
-  Covered branches: 3852
-  Total branches: 3990
-  Method coverage: 98.7% (697 of 706)
-  Covered methods: 697
-  Total methods: 706
+  Coverable lines: 10097
+  Total lines: 26061
+  Branch coverage: 96.5% (3858 of 3996)
+  Covered branches: 3858
+  Total branches: 3996
+  Method coverage: 98.7% (699 of 708)
+  Covered methods: 699
+  Total methods: 708
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -258,6 +258,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumAverageSubarray1.MaximumAverageSubarray1SlidingWindow                                                                    100.0%
   LeetCode.Algorithms.MaximumDepthOfBinaryTree.MaximumDepthOfBinaryTreeBreadthFirstSearch                                                             100.0%
   LeetCode.Algorithms.MaximumDepthOfBinaryTree.MaximumDepthOfBinaryTreeDepthFirstSearch                                                               100.0%
+  LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysBruteForce                                                                       100.0%
+  LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysGreedy                                                                           100.0%
   LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses.MaximumNestingDepthOfTheParenthesesIterative                                                100.0%
   LeetCode.Algorithms.MaximumNumberOfPointsWithCost.MaximumNumberOfPointsWithCostDynamicProgramming                                                   100.0%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinq                                                   100.0%
