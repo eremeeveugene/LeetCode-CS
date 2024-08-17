@@ -280,6 +280,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1920. Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/description/)
 - [1929. Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/description/)
 - [1935. Maximum Number of Words You Can Type](https://leetcode.com/problems/maximum-number-of-words-you-can-type/description/)
+- [1937. Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/description/)
 - [1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)
 - [1991. Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array/description/)
 - [1992. Find All Groups of Farmland](https://leetcode.com/problems/find-all-groups-of-farmland/description/)
