@@ -24,20 +24,16 @@ public class MaximumDistanceInArraysGreedy : IMaximumDistanceInArrays
     {
         var maxDistance = 0;
 
-        var min = int.MaxValue;
-        var max = int.MinValue;
+        var max = arrays[0][arrays[0].Count - 1];
+        var min = arrays[0][0];
 
-        for (var i = 0; i < arrays.Count; i++)
+        for (var i = 1; i < arrays.Count; i++)
         {
-            var array = arrays[i];
-            var currentMin = array[0];
-            var currentMax = array[^1];
+            var currentMin = arrays[i][0];
+            var currentMax = arrays[i][^1];
 
-            if (i > 0)
-            {
-                maxDistance = Math.Max(maxDistance, Math.Abs(currentMax - min));
-                maxDistance = Math.Max(maxDistance, Math.Abs(max - currentMin));
-            }
+            maxDistance = Math.Max(maxDistance, Math.Abs(currentMax - min));
+            maxDistance = Math.Max(maxDistance, Math.Abs(max - currentMin));
 
             min = Math.Min(min, currentMin);
             max = Math.Max(max, currentMax);
