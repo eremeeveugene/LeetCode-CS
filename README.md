@@ -124,6 +124,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [258. Add Digits](https://leetcode.com/problems/add-digits/description/)
 - [260. Single Number III](https://leetcode.com/problems/single-number-iii/description/)
 - [263. Ugly Number](https://leetcode.com/problems/ugly-number/description/)
+- [264. Ugly Number II](https://leetcode.com/problems/ugly-number-ii/description/)
 - [268. Missing Number](https://leetcode.com/problems/missing-number/description/)
 - [273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words/description/)
 - [279. Perfect Squares](https://leetcode.com/problems/perfect-squares/description/)
