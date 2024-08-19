@@ -22,14 +22,14 @@ public abstract class BinaryTreePreorderTraversalTestsBase<T> where T : IBinaryT
     [DataRow("[1]", "[1]")]
     [DataRow("[1,null,2,3]", "[1,2,3]")]
     [DataRow("[1,2,3,4,5,6,7,8,9]", "[1,2,4,8,9,5,3,6,7]")]
-    public void PreorderTraversal_WithVariousTreeStructures_ReturnsExpectedTraversal(string rootArrayJson,
-        string expectedResultArrayJson)
+    public void PreorderTraversal_WithVariousTreeStructures_ReturnsExpectedTraversal(string rootJsonArray,
+        string expectedResultJsonArray)
     {
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonHelper<int?>.JsonArrayToList(expectedResultArrayJson);
-        var rootArray = JsonHelper<int?>.JsonArrayToList(rootArrayJson);
+        var expectedResult = JsonHelper<int?>.DeserializeToList(expectedResultJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToList(rootJsonArray);
         var inputNode = TreeNode.BuildTree(rootArray);
 
         // Act

@@ -13,7 +13,7 @@ public abstract class FindCenterOfStarGraphTestsBase<T> where T : IFindCenterOfS
         // Arrange
         var solution = new T();
 
-        var edges = JsonHelper<int>.JsonArrayToJaggedArray(edgesJsonArray);
+        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJsonArray);
 
         // Act
         var actualResult = solution.FindCenter(edges);

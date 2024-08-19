@@ -26,7 +26,7 @@ public abstract class CombinationSum2TestsBase<T> where T : ICombinationSum2, ne
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonHelper<int>.JsonArrayToJaggedList(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedList(expectedResultJsonArray);
 
         // Act
         var actualResult = solution.CombinationSum2(candidates, target);

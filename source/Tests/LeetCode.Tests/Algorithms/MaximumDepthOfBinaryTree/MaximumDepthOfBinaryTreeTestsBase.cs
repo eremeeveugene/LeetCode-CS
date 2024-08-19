@@ -21,13 +21,13 @@ public abstract class MaximumDepthOfBinaryTreeTestsBase<T> where T : IMaximumDep
     [DataRow("[]", 0)]
     [DataRow("[3,9,20,null,null,15,7]", 3)]
     [DataRow("[1,null,2]", 2)]
-    public void MaxDepth_GivenTreeWithDifferentConfigurations_ReturnsExpectedDepth(string rootArrayJson,
+    public void MaxDepth_GivenTreeWithDifferentConfigurations_ReturnsExpectedDepth(string rootJsonArray,
         int expectedResult)
     {
         // Arrange
         var solution = new T();
 
-        var rootArray = JsonHelper<int?>.JsonArrayToList(rootArrayJson);
+        var rootArray = JsonHelper<int?>.DeserializeToList(rootJsonArray);
         var root = TreeNode.BuildTree(rootArray);
 
         // Act

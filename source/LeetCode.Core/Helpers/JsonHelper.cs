@@ -15,35 +15,27 @@ namespace LeetCode.Core.Helpers;
 
 public static class JsonHelper<T>
 {
-    public const string EmptyArray = "[]";
-
-    public static IList<T?> JsonArrayToList(string jsonArray)
+    public static T[] DeserializeToArray(string jsonArray)
     {
-        if (jsonArray == EmptyArray)
-        {
-            return [];
-        }
-
-        return JsonConvert.DeserializeObject<List<T?>>(jsonArray) ?? throw new InvalidOperationException();
+        return JsonConvert.DeserializeObject<T[]>(jsonArray) ??
+               throw new JsonException("Failed to deserialize array.");
     }
 
-    public static T[][] JsonArrayToJaggedArray(string jsonArray)
+    public static IList<T> DeserializeToList(string jsonArray)
     {
-        if (jsonArray == EmptyArray)
-        {
-            return [];
-        }
-
-        return JsonConvert.DeserializeObject<T[][]>(jsonArray) ?? throw new InvalidOperationException();
+        return JsonConvert.DeserializeObject<List<T>>(jsonArray) ??
+               throw new JsonException("Failed to deserialize list.");
     }
 
-    public static IList<IList<T>> JsonArrayToJaggedList(string jsonArray)
+    public static T[][] DeserializeToJaggedArray(string jsonArray)
     {
-        if (jsonArray == EmptyArray)
-        {
-            return [];
-        }
+        return JsonConvert.DeserializeObject<T[][]>(jsonArray) ??
+               throw new JsonException("Failed to deserialize jagged array.");
+    }
 
-        return JsonConvert.DeserializeObject<IList<IList<T>>>(jsonArray) ?? throw new InvalidOperationException();
+    public static IList<IList<T>> DeserializeToJaggedList(string jsonArray)
+    {
+        return JsonConvert.DeserializeObject<IList<IList<T>>>(jsonArray) ??
+               throw new JsonException("Failed to deserialize jagged list.");
     }
 }

@@ -28,13 +28,13 @@ public abstract class MergeTwoBinaryTreesTestsBase<T> where T : IMergeTwoBinaryT
         string expectedResultJsonArray)
     {
         // Arrange
-        var root1Array = JsonHelper<int?>.JsonArrayToList(root1JsonArray);
+        var root1Array = JsonHelper<int?>.DeserializeToList(root1JsonArray);
         var root1 = TreeNode.BuildTree(root1Array);
 
-        var root2Array = JsonHelper<int?>.JsonArrayToList(root2JsonArray);
+        var root2Array = JsonHelper<int?>.DeserializeToList(root2JsonArray);
         var root2 = TreeNode.BuildTree(root2Array);
 
-        var expectedResultArray = JsonHelper<int?>.JsonArrayToList(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int?>.DeserializeToList(expectedResultJsonArray);
         var expectedResult = TreeNode.BuildTree(expectedResultArray);
 
         var solution = new T();

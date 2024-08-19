@@ -23,7 +23,7 @@ public abstract class RichestCustomerWealthTestsBase<T> where T : IRichestCustom
     public void MaximumWealth_WithJsonAccounts_ReturnsMaximumWealth(string jsonAccounts, int expectedResult)
     {
         // Arrange
-        var accounts = JsonHelper<int>.JsonArrayToJaggedArray(jsonAccounts);
+        var accounts = JsonHelper<int>.DeserializeToJaggedArray(jsonAccounts);
 
         var solution = new T();
 

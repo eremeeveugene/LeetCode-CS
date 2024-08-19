@@ -23,14 +23,14 @@ public abstract class NaryTreeLevelOrderTraversalTestsBase<T> where T : INaryTre
     [DataRow("[1,null,3,2,4,null,5,6]", "[[1],[3,2,4],[5,6]]")]
     [DataRow("[1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]",
         "[[1],[2,3,4,5],[6,7,8,9,10],[11,12,13],[14]]")]
-    public void LevelOrder_WithGivenBinaryTree_ReturnsCorrectLevelOrderTraversal(string rootArrayJson,
+    public void LevelOrder_WithGivenBinaryTree_ReturnsCorrectLevelOrderTraversal(string rootJsonArray,
         string expectedResultJsonArray)
     {
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonHelper<int>.JsonArrayToJaggedList(expectedResultJsonArray);
-        var rootArray = JsonHelper<int?>.JsonArrayToList(rootArrayJson);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedList(expectedResultJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToList(rootJsonArray);
 
         var root = Node.BuildTree(rootArray);
 

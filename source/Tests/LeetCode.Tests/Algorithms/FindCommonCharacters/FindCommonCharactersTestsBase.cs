@@ -32,7 +32,7 @@ public abstract class FindCommonCharactersTestsBase<T> where T : IFindCommonChar
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonHelper<string>.JsonArrayToList(expectedResultJsonArray);
+        var expectedResult = JsonHelper<string>.DeserializeToList(expectedResultJsonArray);
 
         // Act
         var actualResult = solution.CommonChars(words);

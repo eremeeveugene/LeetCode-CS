@@ -24,7 +24,7 @@ public abstract class FindTheSafestPathInGridTestsBase<T> where T : IFindTheSafe
         int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int>.JsonArrayToJaggedList(gridJsonArray);
+        var grid = JsonHelper<int>.DeserializeToJaggedList(gridJsonArray);
 
         var solution = new T();
 

@@ -27,7 +27,7 @@ public abstract class SpiralMatrix3TestsBase<T> where T : ISpiralMatrix3, new()
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonHelper<int>.JsonArrayToJaggedArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
 
         // Act
         var actualResult = solution.SpiralMatrixIII(rows, cols, rStart, cStart);

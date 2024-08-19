@@ -33,7 +33,7 @@ public abstract class MinimumHeightTreesTestsBase<T> where T : IMinimumHeightTre
         // Arrange
         var solution = new T();
 
-        var edges = JsonHelper<int>.JsonArrayToJaggedArray(edgesJsonArray);
+        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJsonArray);
 
         // Act
         var actualResult = solution.FindMinHeightTrees(n, edges);

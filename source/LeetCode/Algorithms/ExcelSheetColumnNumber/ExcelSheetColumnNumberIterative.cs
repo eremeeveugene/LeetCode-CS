@@ -50,9 +50,6 @@ public class ExcelSheetColumnNumberIterative : IExcelSheetColumnNumber
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
     /// </summary>
-    /// <param name="columnTitle"></param>
-    /// <returns></returns>
-    /// <exception cref="NotImplementedException"></exception>
     public int TitleToNumber(string columnTitle)
     {
         var number = 0;

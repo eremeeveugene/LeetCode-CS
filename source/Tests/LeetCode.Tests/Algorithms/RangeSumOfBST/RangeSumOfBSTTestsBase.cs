@@ -15,7 +15,7 @@ public abstract class RangeSumOfBSTTestsBase<T> where T : IRangeSumOfBST, new()
         // Arrange
         var solution = new T();
 
-        var rootArray = JsonHelper<int?>.JsonArrayToList(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToList(rootJsonArray);
         var root = TreeNode.BuildTree(rootArray);
 
         // Act

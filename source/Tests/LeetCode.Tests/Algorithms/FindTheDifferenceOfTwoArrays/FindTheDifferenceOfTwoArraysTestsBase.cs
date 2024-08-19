@@ -26,7 +26,7 @@ public abstract class FindTheDifferenceOfTwoArraysTestsBase<T> where T : IFindTh
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonHelper<int>.JsonArrayToJaggedList(jsonExpectedResult);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedList(jsonExpectedResult);
 
         // Act
         var actualResult = solution.FindDifference(nums1, nums2);

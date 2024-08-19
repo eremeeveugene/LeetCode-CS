@@ -25,7 +25,7 @@ public abstract class FindIfPathExistsInGraphTestsBase<T> where T : IFindIfPathE
         // Arrange
         var solution = new T();
 
-        var edges = JsonHelper<int>.JsonArrayToJaggedArray(edgesJsonArray);
+        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJsonArray);
 
         // Act
         var actualResult = solution.ValidPath(n, edges, source, destination);

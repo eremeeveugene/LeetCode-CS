@@ -25,7 +25,7 @@ public abstract class FindValidMatrixGivenRowAndColumnSumsTestsBase<T>
         string expectedResultJsonArray)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.JsonArrayToJaggedArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
 
         var solution = new T();
 

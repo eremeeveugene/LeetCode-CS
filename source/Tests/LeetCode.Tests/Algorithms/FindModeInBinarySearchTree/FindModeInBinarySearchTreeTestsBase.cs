@@ -26,7 +26,7 @@ public abstract class FindModeInBinarySearchTreeTestsBase<T> where T : IFindMode
         // Arrange
         var solution = new T();
 
-        var rootArray = JsonHelper<int?>.JsonArrayToList(rootArrayJson);
+        var rootArray = JsonHelper<int?>.DeserializeToList(rootJsonArray);
         var root = TreeNode.BuildTree(rootArray);
 
         // Act

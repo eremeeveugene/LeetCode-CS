@@ -33,7 +33,7 @@ public abstract class MaximumNumberOfPointsWithCostTestsBase<T> where T : IMaxim
         // Arrange
         var solution = new T();
 
-        var points = JsonHelper<int>.JsonArrayToJaggedArray(pointsJsonArray);
+        var points = JsonHelper<int>.DeserializeToJaggedArray(pointsJsonArray);
 
         // Act
         var actualResult = solution.MaxPoints(points);
