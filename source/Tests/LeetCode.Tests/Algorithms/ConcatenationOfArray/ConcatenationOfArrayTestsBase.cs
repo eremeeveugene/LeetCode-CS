@@ -10,17 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ConcatenationOfArray;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ConcatenationOfArray;
 
 public abstract class ConcatenationOfArrayTestsBase<T> where T : IConcatenationOfArray, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 2, 1 }, new[] { 1, 2, 1, 1, 2, 1 })]
-    [DataRow(new[] { 1, 3, 2, 1 }, new[] { 1, 3, 2, 1, 1, 3, 2, 1 })]
-    public void GetConcatenation_WithInputArray_ReturnsConcatenatedArray(int[] nums, int[] expectedResult)
+    [DataRow("[1, 2, 1]", "[1, 2, 1, 1, 2, 1]")]
+    [DataRow("[1, 3, 2, 1]", "[1, 3, 2, 1, 1, 3, 2, 1]")]
+    public void GetConcatenation_WithInputArray_ReturnsConcatenatedArray(string numsJsonArray,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+
         var solution = new T();
 
         // Act

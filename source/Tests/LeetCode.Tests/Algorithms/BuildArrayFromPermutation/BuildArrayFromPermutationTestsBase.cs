@@ -10,17 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BuildArrayFromPermutation;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.BuildArrayFromPermutation;
 
 public abstract class BuildArrayFromPermutationTestsBase<T> where T : IBuildArrayFromPermutation, new()
 {
     [TestMethod]
-    [DataRow(new[] { 0, 2, 1, 5, 3, 4 }, new[] { 0, 1, 2, 4, 5, 3 })]
-    [DataRow(new[] { 5, 0, 1, 2, 3, 4 }, new[] { 4, 5, 0, 1, 2, 3 })]
-    public void BuildArray_WithInputPermutation_ReturnsExpectedPermutationArray(int[] nums, int[] expectedResult)
+    [DataRow("[0, 2, 1, 5, 3, 4]", "[0, 1, 2, 4, 5, 3]")]
+    [DataRow("[5, 0, 1, 2, 3, 4]", "[4, 5, 0, 1, 2, 3]")]
+    public void BuildArray_WithInputPermutation_ReturnsExpectedPermutationArray(string numsJsonArray,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+
         var solution = new T();
 
         // Act

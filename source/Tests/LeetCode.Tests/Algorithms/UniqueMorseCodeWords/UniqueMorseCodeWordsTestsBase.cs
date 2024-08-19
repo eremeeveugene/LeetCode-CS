@@ -10,18 +10,21 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.UniqueMorseCodeWords;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.UniqueMorseCodeWords;
 
 public abstract class UniqueMorseCodeWordsTestsBase<T> where T : IUniqueMorseCodeWords, new()
 {
     [TestMethod]
-    [DataRow(new[] { "gin", "zen", "gig", "msg" }, 2)]
-    [DataRow(new[] { "a" }, 1)]
-    public void UniqueMorseRepresentations_GivenWordsArray_ReturnsCountOfUniqueRepresentations(string[] words,
+    [DataRow("[\"gin\", \"zen\", \"gig\", \"msg\"]", 2)]
+    [DataRow("[\"a\"]", 1)]
+    public void UniqueMorseRepresentations_GivenWordsArray_ReturnsCountOfUniqueRepresentations(string wordsJsonArray,
         int expectedResult)
     {
         // Arrange
+        var words = JsonHelper<string>.DeserializeToArray(wordsJsonArray);
+
         var solution = new T();
 
         // Act

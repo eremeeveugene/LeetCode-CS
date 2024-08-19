@@ -10,22 +10,24 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BoatsToSavePeople;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.BoatsToSavePeople;
 
 public abstract class BoatsToSavePeopleTestsBase<T> where T : IBoatsToSavePeople, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 2 }, 3, 1)]
-    [DataRow(new[] { 3, 2, 2, 1 }, 3, 3)]
-    [DataRow(new[] { 3, 5, 3, 4 }, 5, 4)]
-    [DataRow(new[] { 11, 2, 8, 1 }, 11, 3)]
-    [DataRow(new[] { 11, 2, 2, 8, 8 }, 11, 3)]
-    [DataRow(new[] { 3, 2, 3, 2, 2 }, 6, 3)]
-    public void NumRescueBoats_GivenPeopleAndLimit_ReturnsExpectedNumberOfBoats(int[] people, int limit,
+    [DataRow("[1, 2]", 3, 1)]
+    [DataRow("[3, 2, 2, 1]", 3, 3)]
+    [DataRow("[3, 5, 3, 4]", 5, 4)]
+    [DataRow("[11, 2, 8, 1]", 11, 3)]
+    [DataRow("[11, 2, 2, 8, 8]", 11, 3)]
+    [DataRow("[3, 2, 3, 2, 2]", 6, 3)]
+    public void NumRescueBoats_GivenPeopleAndLimit_ReturnsExpectedNumberOfBoats(string peopleJsonArray, int limit,
         int expectedResult)
     {
         // Arrange
+        var people = JsonHelper<int>.DeserializeToArray(peopleJsonArray);
         var solution = new T();
 
         // Act
