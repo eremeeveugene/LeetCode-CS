@@ -225,6 +225,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1110. Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/description/)
 - [1122. Relative Sort Array](https://leetcode.com/problems/relative-sort-array/description/)
 - [1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/description/)
+- [1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/description/)
 - [1171. Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/description/)
 - [1185. Day of the Week](https://leetcode.com/problems/day-of-the-week/description/)
 - [1190. Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/description/)
