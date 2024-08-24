@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9831428017826003" branch-rate="0.9658476658476658" lines-covered="10148" lines-valid="10322" branches-covered="3931" branches-valid="4070" complexity="4229" version="0" timestamp="1724515006">
+<coverage line-rate="0.9831542259657275" branch-rate="0.9658476658476658" lines-covered="10155" lines-valid="10329" branches-covered="3931" branches-valid="4070" complexity="4230" version="0" timestamp="1724516349">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.9860506529481599" branch-rate="0.9712121212121212" complexity="4113">
+    <package name="LeetCode" line-rate="0.9860603064755313" branch-rate="0.9712121212121212" complexity="4114">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -2641,6 +2641,30 @@
             <line number="59" hits="114" branch="false" />
             <line number="61" hits="4" branch="false" />
             <line number="62" hits="8" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.ComplementOfBase10Integer.ComplementOfBase10IntegerBitwise" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\ComplementOfBase10Integer\ComplementOfBase10IntegerBitwise.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="BitwiseComplement" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="16" branch="false" />
+                <line number="25" hits="16" branch="false" />
+                <line number="27" hits="16" branch="false" />
+                <line number="29" hits="16" branch="false" />
+                <line number="31" hits="16" branch="false" />
+                <line number="33" hits="16" branch="false" />
+                <line number="34" hits="16" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="16" branch="false" />
+            <line number="25" hits="16" branch="false" />
+            <line number="27" hits="16" branch="false" />
+            <line number="29" hits="16" branch="false" />
+            <line number="31" hits="16" branch="false" />
+            <line number="33" hits="16" branch="false" />
+            <line number="34" hits="16" branch="false" />
           </lines>
         </class>
         <class name="LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayConcat" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\ConcatenationOfArray\ConcatenationOfArrayConcat.cs" line-rate="1" branch-rate="1" complexity="1">

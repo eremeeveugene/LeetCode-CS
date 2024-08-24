@@ -1,21 +1,21 @@
 Summary
-  Generated on: 8/24/2024 - 3:56:47 PM
-  Coverage date: 8/24/2024 - 3:55:43 PM - 8/24/2024 - 3:56:05 PM
+  Generated on: 8/24/2024 - 4:19:10 PM
+  Coverage date: 8/24/2024 - 4:18:06 PM - 8/24/2024 - 4:18:29 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 531
-  Files: 531
+  Classes: 532
+  Files: 532
   Line coverage: 98.3%
-  Covered lines: 10148
+  Covered lines: 10155
   Uncovered lines: 174
-  Coverable lines: 10322
-  Total lines: 26589
+  Coverable lines: 10329
+  Total lines: 26624
   Branch coverage: 96.5% (3931 of 4070)
   Covered branches: 3931
   Total branches: 4070
-  Method coverage: 98.7% (710 of 719)
-  Covered methods: 710
-  Total methods: 719
+  Method coverage: 98.7% (711 of 720)
+  Covered methods: 711
+  Total methods: 720
 
 LeetCode                                                                                                                                               98.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -70,6 +70,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CombinationSum2.CombinationSum2Backtracking                                                                                     100.0%
   LeetCode.Algorithms.CompareVersionNumbers.CompareVersionNumbersIterative                                                                            100.0%
   LeetCode.Algorithms.CompareVersionNumbers.CompareVersionNumbersTwoPointers                                                                          100.0%
+  LeetCode.Algorithms.ComplementOfBase10Integer.ComplementOfBase10IntegerBitwise                                                                      100.0%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayConcat                                                                                 100.0%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayIterative                                                                              100.0%
   LeetCode.Algorithms.ContainsDuplicate.ContainsDuplicateHashSet                                                                                      100.0%
