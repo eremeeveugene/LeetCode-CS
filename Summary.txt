@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/24/2024 - 1:12:48 PM
-  Coverage date: 8/24/2024 - 1:11:50 PM - 8/24/2024 - 1:12:10 PM
+  Generated on: 8/24/2024 - 3:08:31 PM
+  Coverage date: 8/24/2024 - 3:07:27 PM - 8/24/2024 - 3:07:50 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 528
-  Files: 528
+  Classes: 529
+  Files: 529
   Line coverage: 98.3%
-  Covered lines: 10094
+  Covered lines: 10132
   Uncovered lines: 174
-  Coverable lines: 10268
-  Total lines: 26434
-  Branch coverage: 96.5% (3911 of 4050)
-  Covered branches: 3911
-  Total branches: 4050
-  Method coverage: 98.7% (706 of 715)
-  Covered methods: 706
-  Total methods: 715
+  Coverable lines: 10306
+  Total lines: 26517
+  Branch coverage: 96.5% (3927 of 4066)
+  Covered branches: 3927
+  Total branches: 4066
+  Method coverage: 98.7% (708 of 717)
+  Covered methods: 708
+  Total methods: 717
 
-LeetCode                                                                                                                                               98.5%
+LeetCode                                                                                                                                               98.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                  100.0%
@@ -155,6 +155,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchRecursive                                                  100.0%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchStack                                                      100.0%
   LeetCode.Algorithms.FindPivotIndex.FindPivotIndexIterative                                                                                          100.0%
+  LeetCode.Algorithms.FindTheClosestPalindrome.FindTheClosestPalindromeIterative                                                                      100.0%
   LeetCode.Algorithms.FindTheDifferenceOfTwoArrays.FindTheDifferenceOfTwoArraysHashSet                                                                100.0%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberBruteForce                                                                          91.6%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm                                                       89.4%
