@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9831166310886862" branch-rate="0.9658140678799804" lines-covered="10132" lines-valid="10306" branches-covered="3927" branches-valid="4066" complexity="4224" version="0" timestamp="1724512109">
+<coverage line-rate="0.9831428017826003" branch-rate="0.9658476658476658" lines-covered="10148" lines-valid="10322" branches-covered="3931" branches-valid="4070" complexity="4229" version="0" timestamp="1724515006">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.9860285374554102" branch-rate="0.9711830131445905" complexity="4108">
+    <package name="LeetCode" line-rate="0.9860506529481599" branch-rate="0.9712121212121212" complexity="4113">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -15999,6 +15999,58 @@
             <line number="77" hits="14" branch="false" />
           </lines>
         </class>
+        <class name="LeetCode.Algorithms.NumberComplement.NumberComplementBitwise" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\NumberComplement\NumberComplementBitwise.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="FindComplement" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="16" branch="false" />
+                <line number="25" hits="16" branch="false" />
+                <line number="27" hits="16" branch="false" />
+                <line number="29" hits="16" branch="false" />
+                <line number="31" hits="16" branch="false" />
+                <line number="33" hits="16" branch="false" />
+                <line number="34" hits="16" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="16" branch="false" />
+            <line number="25" hits="16" branch="false" />
+            <line number="27" hits="16" branch="false" />
+            <line number="29" hits="16" branch="false" />
+            <line number="31" hits="16" branch="false" />
+            <line number="33" hits="16" branch="false" />
+            <line number="34" hits="16" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.NumberComplement.NumberComplementString" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\NumberComplement\NumberComplementString.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="FindComplement" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="26" hits="16" branch="false" />
+                <line number="27" hits="16" branch="false" />
+                <line number="28" hits="16" branch="false" />
+                <line number="30" hits="348" branch="true" condition-coverage="100% (2/2)" />
+                <line number="31" hits="150" branch="false" />
+                <line number="32" hits="150" branch="true" condition-coverage="100% (2/2)" />
+                <line number="33" hits="150" branch="false" />
+                <line number="35" hits="16" branch="false" />
+                <line number="36" hits="16" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="16" branch="false" />
+            <line number="27" hits="16" branch="false" />
+            <line number="28" hits="16" branch="false" />
+            <line number="30" hits="348" branch="true" condition-coverage="100% (2/2)" />
+            <line number="31" hits="150" branch="false" />
+            <line number="32" hits="150" branch="true" condition-coverage="100% (2/2)" />
+            <line number="33" hits="150" branch="false" />
+            <line number="35" hits="16" branch="false" />
+            <line number="36" hits="16" branch="false" />
+          </lines>
+        </class>
         <class name="LeetCode.Algorithms.NumberOfGoodLeafNodesPairs.NumberOfGoodLeafNodesPairsDepthFirstSearch" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\NumberOfGoodLeafNodesPairs\NumberOfGoodLeafNodesPairsDepthFirstSearch.cs" line-rate="1" branch-rate="1" complexity="15">
           <methods>
             <method name="CountPairs" signature="(LeetCode.Core.Models.TreeNode,System.Int32)" line-rate="1" branch-rate="1" complexity="1">
@@ -25605,18 +25657,18 @@
                 <line number="68" hits="5" branch="false" />
                 <line number="69" hits="5" branch="false" />
                 <line number="70" hits="6" branch="true" condition-coverage="100% (2/2)" />
-                <line number="71" hits="5" branch="false" />
-                <line number="72" hits="12" branch="true" condition-coverage="100% (4/4)" />
-                <line number="73" hits="11" branch="false" />
-                <line number="74" hits="11" branch="false" />
-                <line number="76" hits="11" branch="true" condition-coverage="100% (2/2)" />
-                <line number="77" hits="4" branch="false" />
-                <line number="78" hits="4" branch="false" />
+                <line number="71" hits="4" branch="false" />
+                <line number="72" hits="11" branch="true" condition-coverage="100% (4/4)" />
+                <line number="73" hits="10" branch="false" />
+                <line number="74" hits="10" branch="false" />
+                <line number="76" hits="10" branch="true" condition-coverage="100% (2/2)" />
+                <line number="77" hits="3" branch="false" />
+                <line number="78" hits="3" branch="false" />
                 <line number="80" hits="7" branch="false" />
                 <line number="82" hits="1" branch="false" />
                 <line number="84" hits="1" branch="false" />
                 <line number="85" hits="1" branch="false" />
-                <line number="86" hits="1" branch="false" />
+                <line number="86" hits="2" branch="false" />
                 <line number="87" hits="5" branch="false" />
               </lines>
             </method>
@@ -25699,18 +25751,18 @@
             <line number="68" hits="5" branch="false" />
             <line number="69" hits="5" branch="false" />
             <line number="70" hits="6" branch="true" condition-coverage="100% (2/2)" />
-            <line number="71" hits="5" branch="false" />
-            <line number="72" hits="12" branch="true" condition-coverage="100% (4/4)" />
-            <line number="73" hits="11" branch="false" />
-            <line number="74" hits="11" branch="false" />
-            <line number="76" hits="11" branch="true" condition-coverage="100% (2/2)" />
-            <line number="77" hits="4" branch="false" />
-            <line number="78" hits="4" branch="false" />
+            <line number="71" hits="4" branch="false" />
+            <line number="72" hits="11" branch="true" condition-coverage="100% (4/4)" />
+            <line number="73" hits="10" branch="false" />
+            <line number="74" hits="10" branch="false" />
+            <line number="76" hits="10" branch="true" condition-coverage="100% (2/2)" />
+            <line number="77" hits="3" branch="false" />
+            <line number="78" hits="3" branch="false" />
             <line number="80" hits="7" branch="false" />
             <line number="82" hits="1" branch="false" />
             <line number="84" hits="1" branch="false" />
             <line number="85" hits="1" branch="false" />
-            <line number="86" hits="1" branch="false" />
+            <line number="86" hits="2" branch="false" />
             <line number="87" hits="5" branch="false" />
             <line number="90" hits="5" branch="false" />
             <line number="91" hits="5" branch="false" />
