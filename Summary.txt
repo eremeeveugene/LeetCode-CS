@@ -1,21 +1,21 @@
 Summary
-  Generated on: 8/21/2024 - 6:02:28 PM
-  Coverage date: 8/21/2024 - 6:01:29 PM - 8/21/2024 - 6:01:47 PM
+  Generated on: 8/24/2024 - 1:12:48 PM
+  Coverage date: 8/24/2024 - 1:11:50 PM - 8/24/2024 - 1:12:10 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 527
-  Files: 527
-  Line coverage: 98.2%
-  Covered lines: 10045
+  Classes: 528
+  Files: 528
+  Line coverage: 98.3%
+  Covered lines: 10094
   Uncovered lines: 174
-  Coverable lines: 10219
-  Total lines: 26339
-  Branch coverage: 96.5% (3894 of 4032)
-  Covered branches: 3894
-  Total branches: 4032
-  Method coverage: 98.7% (704 of 713)
-  Covered methods: 704
-  Total methods: 713
+  Coverable lines: 10268
+  Total lines: 26434
+  Branch coverage: 96.5% (3911 of 4050)
+  Covered branches: 3911
+  Total branches: 4050
+  Method coverage: 98.7% (706 of 715)
+  Covered methods: 706
+  Total methods: 715
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -178,6 +178,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveIterative                                                                              100.0%
   LeetCode.Algorithms.FirstUniqueCharacterInString.FirstUniqueCharacterInStringIterative                                                              100.0%
   LeetCode.Algorithms.FloodFill.FloodFillIterative                                                                                                    100.0%
+  LeetCode.Algorithms.FractionAdditionAndSubtraction.FractionAdditionAndSubtractionSimulation                                                         100.0%
   LeetCode.Algorithms.FreedomTrail.FreedomTrailDynamicProgramming                                                                                     100.0%
   LeetCode.Algorithms.GetEqualSubstringsWithinBudget.GetEqualSubstringsWithinBudgetSlidingWindow                                                      100.0%
   LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationReplace                                                                        100.0%
