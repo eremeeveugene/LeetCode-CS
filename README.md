@@ -205,6 +205,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [857. Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/description/)
 - [860. Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)
 - [861. Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/description/)
+- [877. Stone Game](https://leetcode.com/problems/stone-game/description/)
 - [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/)
 - [885. Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/description/)
 - [912. Sort an Array](https://leetcode.com/problems/sort-an-array/description/)
