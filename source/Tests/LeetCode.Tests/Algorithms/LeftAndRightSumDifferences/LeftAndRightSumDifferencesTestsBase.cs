@@ -10,17 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LeftAndRightSumDifferences;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LeftAndRightSumDifferences;
 
 public abstract class LeftAndRightSumDifferencesTestsBase<T> where T : ILeftAndRightSumDifferences, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1 }, new[] { 0 })]
-    [DataRow(new[] { 10, 4, 8, 3 }, new[] { 15, 1, 11, 22 })]
-    public void LeftRightDifference_WithGivenNumbers_ReturnsCorrectDifferences(int[] nums, int[] expectedResult)
+    [DataRow("[1]", "[0]")]
+    [DataRow("[10, 4, 8, 3]", "[15, 1, 11, 22]")]
+    public void LeftRightDifference_WithGivenNumbers_ReturnsCorrectDifferences(string numsJsonArray,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+
         var solution = new T();
 
         // Act
