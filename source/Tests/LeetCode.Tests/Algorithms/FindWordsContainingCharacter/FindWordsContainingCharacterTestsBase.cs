@@ -10,19 +10,23 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindWordsContainingCharacter;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindWordsContainingCharacter;
 
 public abstract class FindWordsContainingCharacterTestsBase<T> where T : IFindWordsContainingCharacter, new()
 {
     [TestMethod]
-    [DataRow(new[] { "leet", "code" }, 'e', new[] { 0, 1 })]
-    [DataRow(new[] { "abc", "bcd", "aaaa", "cbc" }, 'a', new[] { 0, 2 })]
-    [DataRow(new[] { "abc", "bcd", "aaaa", "cbc" }, 'z', new int[] { })]
-    public void FindWordsContaining_WithArrayOfWordsAndChar_ReturnsIndicesOfWordsContainingChar(string[] words, char x,
-        IList<int> expectedResult)
+    [DataRow("[\"leet\", \"code\"]", 'e', "[0, 1]")]
+    [DataRow("[\"abc\", \"bcd\", \"aaaa\", \"cbc\"]", 'a', "[0, 2]")]
+    [DataRow("[\"abc\", \"bcd\", \"aaaa\", \"cbc\"]", 'z', "[]")]
+    public void FindWordsContaining_WithArrayOfWordsAndChar_ReturnsIndicesOfWordsContainingChar(string wordsJsonArray,
+        char x, string expectedResultJsonArray)
     {
         // Arrange
+        var words = JsonHelper<string>.DeserializeToArray(wordsJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToList(expectedResultJsonArray);
+
         var solution = new T();
 
         // Act

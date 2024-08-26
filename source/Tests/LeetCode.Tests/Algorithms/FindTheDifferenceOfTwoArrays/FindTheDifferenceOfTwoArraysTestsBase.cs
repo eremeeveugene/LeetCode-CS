@@ -18,15 +18,17 @@ namespace LeetCode.Tests.Algorithms.FindTheDifferenceOfTwoArrays;
 public abstract class FindTheDifferenceOfTwoArraysTestsBase<T> where T : IFindTheDifferenceOfTwoArrays, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 2, 3 }, new[] { 2, 4, 6 }, "[[1,3],[4,6]]")]
-    [DataRow(new[] { 1, 2, 3, 3 }, new[] { 1, 1, 2, 2 }, "[[3],[]]")]
-    public void FindDifference_GivenTwoArrays_ReturnsDifferenceInJaggedArray(int[] nums1, int[] nums2,
-        string jsonExpectedResult)
+    [DataRow("[1, 2, 3]", "[2, 4, 6]", "[[1,3],[4,6]]")]
+    [DataRow("[1, 2, 3, 3]", "[1, 1, 2, 2]", "[[3],[]]")]
+    public void FindDifference_GivenTwoArrays_ReturnsDifferenceInJaggedArray(string nums1JsonArray,
+        string nums2JsonArray, string jsonExpectedResult)
     {
         // Arrange
-        var solution = new T();
-
+        var nums1 = JsonHelper<int>.DeserializeToArray(nums1JsonArray);
+        var nums2 = JsonHelper<int>.DeserializeToArray(nums2JsonArray);
         var expectedResult = JsonHelper<int>.DeserializeToJaggedList(jsonExpectedResult);
+
+        var solution = new T();
 
         // Act
         var actualResult = solution.FindDifference(nums1, nums2);

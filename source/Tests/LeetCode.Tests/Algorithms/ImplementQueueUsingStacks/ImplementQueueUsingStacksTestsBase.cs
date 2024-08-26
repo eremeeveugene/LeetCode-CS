@@ -1,4 +1,16 @@
-﻿using LeetCode.Algorithms.ImplementQueueUsingStacks;
+﻿// --------------------------------------------------------------------------------
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// All Rights Reserved.
+// --------------------------------------------------------------------------------
+// This software is the confidential and proprietary information of Eugene Eremeev
+// (also known as Yevhenii Yeriemeieiv) ("Confidential Information"). You shall not
+// disclose such Confidential Information and shall use it only in accordance with
+// the terms of the license agreement you entered into with Eugene Eremeev (also
+// known as Yevhenii Yeriemeieiv).
+// --------------------------------------------------------------------------------
+
+using LeetCode.Algorithms.ImplementQueueUsingStacks;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ImplementQueueUsingStacks;
 
@@ -18,12 +30,16 @@ public abstract class ImplementQueueUsingStacksTestsBase<T> where T : IImplement
     }
 
     [TestMethod]
-    [DataRow(new[] { 1, 2, 3 }, new[] { 1, 2, 3 })]
-    [DataRow(new[] { 5, 10, 15 }, new[] { 5, 10, 15 })]
-    [DataRow(new int[0], new int[0])]
-    public void Pop_RemovesElementsFromQueue_QueueBecomesEmpty(int[] pushElements, int[] popExpected)
+    [DataRow("[1, 2, 3]", "[1, 2, 3]")]
+    [DataRow("[5, 10, 15]", "[5, 10, 15]")]
+    [DataRow("[]", "[]")]
+    public void Pop_RemovesElementsFromQueue_QueueBecomesEmpty(string pushElementsJsonArray,
+        string popExpectedJsonArray)
     {
         // Arrange
+        var pushElements = JsonHelper<int>.DeserializeToArray(pushElementsJsonArray);
+        var popExpected = JsonHelper<int>.DeserializeToArray(popExpectedJsonArray);
+
         var solution = new T();
 
         // Act
@@ -42,11 +58,13 @@ public abstract class ImplementQueueUsingStacksTestsBase<T> where T : IImplement
     }
 
     [TestMethod]
-    [DataRow(new[] { 1, 2, 3 }, 1)]
-    [DataRow(new[] { 5, 10, 15 }, 5)]
-    public void Peek_ReturnsFirstElementWithoutRemovingIt(int[] pushElements, int expectedPeek)
+    [DataRow("[1, 2, 3]", 1)]
+    [DataRow("[5, 10, 15]", 5)]
+    public void Peek_ReturnsFirstElementWithoutRemovingIt(string pushElementsJsonArray, int expectedPeek)
     {
         // Arrange
+        var pushElements = JsonHelper<int>.DeserializeToArray(pushElementsJsonArray);
+
         var solution = new T();
 
         // Act

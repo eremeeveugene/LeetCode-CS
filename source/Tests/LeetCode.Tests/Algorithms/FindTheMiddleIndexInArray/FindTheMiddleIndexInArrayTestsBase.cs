@@ -10,18 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTheMiddleIndexInArray;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindTheMiddleIndexInArray;
 
 public abstract class FindTheMiddleIndexInArrayTestsBase<T> where T : IFindTheMiddleIndexInArray, new()
 {
     [TestMethod]
-    [DataRow(new[] { 2, 3, -1, 8, 4 }, 3)]
-    [DataRow(new[] { 1, -1, 4 }, 2)]
-    [DataRow(new[] { 2, 5 }, -1)]
-    public void FindMiddleIndex_GivenArray_ReturnsExpectedMiddleIndexOrMinusOne(int[] nums, int expectedResult)
+    [DataRow("[2, 3, -1, 8, 4]", 3)]
+    [DataRow("[1, -1, 4]", 2)]
+    [DataRow("[2, 5]", -1)]
+    public void FindMiddleIndex_GivenArray_ReturnsExpectedMiddleIndexOrMinusOne(string numsJsonArray,
+        int expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         var solution = new T();
 
         // Act

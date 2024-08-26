@@ -1,17 +1,31 @@
-﻿using LeetCode.Algorithms.ImplementStackUsingQueues;
+﻿// --------------------------------------------------------------------------------
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// All Rights Reserved.
+// --------------------------------------------------------------------------------
+// This software is the confidential and proprietary information of Eugene Eremeev
+// (also known as Yevhenii Yeriemeieiv) ("Confidential Information"). You shall not
+// disclose such Confidential Information and shall use it only in accordance with
+// the terms of the license agreement you entered into with Eugene Eremeev (also
+// known as Yevhenii Yeriemeieiv).
+// --------------------------------------------------------------------------------
+
+using LeetCode.Algorithms.ImplementStackUsingQueues;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ImplementStackUsingQueues;
 
 public abstract class ImplementStackUsingQueuesTestsBase<T> where T : IImplementStackUsingQueues, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 2, 3 }, 3, 3, 2)]
-    [DataRow(new[] { 5, 10, 15, 20 }, 20, 20, 15)]
-    [DataRow(new[] { 42 }, 42, 42, null)]
-    public void PushPopTop_WithVariousElements_ReturnsExpectedTopAndPopValues(int[] pushElements, int topExpected,
-        int popExpected, int? popAfterTopExpected)
+    [DataRow("[1, 2, 3]", 3, 3, 2)]
+    [DataRow("[5, 10, 15, 20]", 20, 20, 15)]
+    [DataRow("[42]", 42, 42, null)]
+    public void PushPopTop_WithVariousElements_ReturnsExpectedTopAndPopValues(string pushElementsJsonArray,
+        int topExpected, int popExpected, int? popAfterTopExpected)
     {
         // Arrange
+        var pushElements = JsonHelper<int>.DeserializeToArray(pushElementsJsonArray);
+
         var solution = new T();
 
         // Act
@@ -44,12 +58,16 @@ public abstract class ImplementStackUsingQueuesTestsBase<T> where T : IImplement
     }
 
     [TestMethod]
-    [DataRow(new[] { 1, 2, 3 }, new[] { 3, 2, 1 })]
-    [DataRow(new[] { 5, 10, 15 }, new[] { 15, 10, 5 })]
-    [DataRow(new int[0], new int[0])]
-    public void MultiplePushAndPop_WithVariousElements_ReturnsElementsInLIFOOrder(int[] pushElements, int[] popExpected)
+    [DataRow("[1, 2, 3]", "[3, 2, 1]")]
+    [DataRow("[5, 10, 15]", "[15, 10, 5]")]
+    [DataRow("[]", "[]")]
+    public void MultiplePushAndPop_WithVariousElements_ReturnsElementsInLIFOOrder(string pushElementsJsonArray,
+        string popExpectedJsonArray)
     {
         // Arrange
+        var pushElements = JsonHelper<int>.DeserializeToArray(pushElementsJsonArray);
+        var popExpected = JsonHelper<int>.DeserializeToArray(popExpectedJsonArray);
+
         var solution = new T();
 
         // Act
