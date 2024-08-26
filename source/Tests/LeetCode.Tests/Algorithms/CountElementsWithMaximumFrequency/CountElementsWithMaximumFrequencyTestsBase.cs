@@ -10,17 +10,20 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountElementsWithMaximumFrequency;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountElementsWithMaximumFrequency;
 
 public abstract class CountElementsWithMaximumFrequencyTestsBase<T> where T : ICountElementsWithMaximumFrequency, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 2, 2, 3, 1, 4 }, 4)]
-    [DataRow(new[] { 1, 2, 3, 4, 5 }, 5)]
-    public void MaxFrequencyElements_GivenArray_ReturnsMaximumElementFrequency(int[] nums, int expectedResult)
+    [DataRow("[1, 2, 2, 3, 1, 4]", 4)]
+    [DataRow("[1, 2, 3, 4, 5]", 5)]
+    public void MaxFrequencyElements_GivenArray_ReturnsMaximumElementFrequency(string numsJsonArray, int expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         var solution = new T();
 
         // Act
