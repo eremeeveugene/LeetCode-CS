@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes;
 
@@ -17,11 +18,14 @@ public abstract class CountSubarraysWhereMaxElementAppearsAtLeastKTimesTestsBase
     where T : ICountSubarraysWhereMaxElementAppearsAtLeastKTimes, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 3, 2, 3, 3 }, 2, 6)]
-    [DataRow(new[] { 1, 4, 2, 1 }, 3, 0)]
-    public void CountSubarrays_GivenArrayAndThreshold_ReturnsExpectedCount(int[] nums, int k, int expectedResult)
+    [DataRow("[1, 3, 2, 3, 3]", 2, 6)]
+    [DataRow("[1, 4, 2, 1]", 3, 0)]
+    public void CountSubarrays_GivenArrayAndThreshold_ReturnsExpectedCount(string numsJsonArray, int k,
+        int expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         var solution = new T();
 
         // Act

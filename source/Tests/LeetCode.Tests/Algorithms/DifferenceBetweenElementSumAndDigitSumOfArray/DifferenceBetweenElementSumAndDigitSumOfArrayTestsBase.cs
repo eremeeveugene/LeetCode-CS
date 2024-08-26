@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray;
 
@@ -17,11 +18,13 @@ public abstract class DifferenceBetweenElementSumAndDigitSumOfArrayTestsBase<T>
     where T : IDifferenceBetweenElementSumAndDigitSumOfArray, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 15, 6, 3 }, 9)]
-    [DataRow(new[] { 1, 2, 3, 4 }, 0)]
-    public void DifferenceOfSum_GivenArray_ReturnsExpectedDifference(int[] nums, int expectedResult)
+    [DataRow("[1, 15, 6, 3]", 9)]
+    [DataRow("[1, 2, 3, 4]", 0)]
+    public void DifferenceOfSum_GivenArray_ReturnsExpectedDifference(string numsJsonArray, int expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         var solution = new T();
 
         // Act
