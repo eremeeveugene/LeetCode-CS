@@ -261,6 +261,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1508. Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/description/)
 - [1509. Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/description/)
 - [1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/description/)
+- [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/description/)
 - [1518. Water Bottles](https://leetcode.com/problems/water-bottles/description/)
 - [1528. Shuffle String](https://leetcode.com/problems/shuffle-string/description/)
 - [1530. Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/description/)
