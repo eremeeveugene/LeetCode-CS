@@ -1,21 +1,21 @@
 Summary
-  Generated on: 8/26/2024 - 11:17:18 AM
-  Coverage date: 8/26/2024 - 11:16:16 AM - 8/26/2024 - 11:16:36 AM
+  Generated on: 8/27/2024 - 4:45:30 PM
+  Coverage date: 8/27/2024 - 4:44:27 PM - 8/27/2024 - 4:44:48 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 537
-  Files: 537
-  Line coverage: 98.3%
-  Covered lines: 10237
-  Uncovered lines: 176
-  Coverable lines: 10413
-  Total lines: 26853
-  Branch coverage: 96.5% (3964 of 4104)
-  Covered branches: 3964
-  Total branches: 4104
-  Method coverage: 98.7% (716 of 725)
-  Covered methods: 716
-  Total methods: 725
+  Classes: 540
+  Files: 540
+  Line coverage: 98.2%
+  Covered lines: 10318
+  Uncovered lines: 180
+  Coverable lines: 10498
+  Total lines: 27066
+  Branch coverage: 96.5% (4004 of 4148)
+  Covered branches: 4004
+  Total branches: 4148
+  Method coverage: 98.7% (721 of 730)
+  Covered methods: 721
+  Total methods: 730
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -365,6 +365,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.PathSum2.PathSum2DepthFirstSearch                                                                                               100.0%
   LeetCode.Algorithms.PathSum2.PathSum2DepthFirstSearchOptimized                                                                                      100.0%
   LeetCode.Algorithms.PathWithMaximumGold.PathWithMaximumGoldRecursive                                                                                100.0%
+  LeetCode.Algorithms.PathWithMaximumProbability.PathWithMaximumProbabilityBase                                                                       100.0%
+  LeetCode.Algorithms.PathWithMaximumProbability.PathWithMaximumProbabilityDepthFirstSearch                                                            93.5%
+  LeetCode.Algorithms.PathWithMaximumProbability.PathWithMaximumProbabilityDijkstra                                                                    93.9%
   LeetCode.Algorithms.PerfectSquares.PerfectSquaresIterative                                                                                          100.0%
   LeetCode.Algorithms.Permutations.PermutationsBacktracking                                                                                           100.0%
   LeetCode.Algorithms.PlusOne.PlusOneIncrementDigitArray                                                                                              100.0%
