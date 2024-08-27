@@ -26,14 +26,9 @@ public class PathWithMaximumProbabilityDijkstra : PathWithMaximumProbabilityBase
     /// <returns></returns>
     public override double MaxProbability(int n, int[][] edges, double[] successProbability, int startNode, int endNode)
     {
-        if (edges.Length == 0 || successProbability.Length == 0)
+        if (edges.Length == 0 || successProbability.Length == 0 || startNode == endNode)
         {
-            return 0;
-        }
-
-        if (startNode == endNode)
-        {
-            return 1.0;
+            return startNode == endNode ? 1.0 : 0;
         }
 
         var edgesDictionary = GetEdgesDictionary(edges, successProbability);
@@ -43,6 +38,12 @@ public class PathWithMaximumProbabilityDijkstra : PathWithMaximumProbabilityBase
             return 0;
         }
 
+        return GetMaxProbability(edgesDictionary, n, startNode, endNode);
+    }
+
+    private static double GetMaxProbability(Dictionary<int, List<(int Node, double Probability)>> edgesDictionary,
+        int n, int startNode, int endNode)
+    {
         var probabilityNodesPriorityQueue = new PriorityQueue<(double Probability, int Node), double>();
 
         probabilityNodesPriorityQueue.Enqueue((1.0, startNode), -1.0);

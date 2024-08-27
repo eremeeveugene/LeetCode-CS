@@ -26,14 +26,9 @@ public class PathWithMaximumProbabilityDepthFirstSearch : PathWithMaximumProbabi
     /// <returns></returns>
     public override double MaxProbability(int n, int[][] edges, double[] successProbability, int startNode, int endNode)
     {
-        if (edges.Length == 0 || successProbability.Length == 0)
+        if (edges.Length == 0 || successProbability.Length == 0 || startNode == endNode)
         {
-            return 0;
-        }
-
-        if (startNode == endNode)
-        {
-            return 1.0;
+            return startNode == endNode ? 1.0 : 0;
         }
 
         var edgesDictionary = GetEdgesDictionary(edges, successProbability);
@@ -45,7 +40,6 @@ public class PathWithMaximumProbabilityDepthFirstSearch : PathWithMaximumProbabi
 
         return GetMaxProbability(edgesDictionary, [startNode], startNode, endNode, 0);
     }
-
 
     private static double GetMaxProbability(Dictionary<int, List<(int Node, double Probability)>> edgesDictionary,
         HashSet<int> visitedEdges, int currentNode, int endNode, double probability)
