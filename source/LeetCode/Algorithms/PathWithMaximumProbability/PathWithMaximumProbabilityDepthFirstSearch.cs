@@ -15,7 +15,7 @@ namespace LeetCode.Algorithms.PathWithMaximumProbability;
 public class PathWithMaximumProbabilityDepthFirstSearch : PathWithMaximumProbabilityBase
 {
     /// <summary>
-    ///     Time complexity - O(m), where m is the number of edges
+    ///     Time complexity - O(m + n), where m is the number of edges and n is the number of nodes
     ///     Space complexity - O(m + n), where m is the number of edges and n is the number of nodes
     /// </summary>
     /// <param name="n"></param>

@@ -16,6 +16,13 @@ public abstract class PathWithMaximumProbabilityBase : IPathWithMaximumProbabili
     public abstract double MaxProbability(int n, int[][] edges, double[] successProbability, int startNode,
         int endNode);
 
+    /// <summary>
+    ///     Time Complexity - O(n), where n is the number of edges
+    ///     Time Complexity - O(n + m), where n is the number of edges and m is the number of edges
+    /// </summary>
+    /// <param name="edges"></param>
+    /// <param name="successProbability"></param>
+    /// <returns></returns>
     protected static Dictionary<int, List<(int Node, double Probability)>> GetEdgesDictionary(int[][] edges,
         double[] successProbability)
     {
