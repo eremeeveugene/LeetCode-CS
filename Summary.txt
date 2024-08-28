@@ -1,21 +1,21 @@
 Summary
-  Generated on: 8/27/2024 - 4:45:30 PM
-  Coverage date: 8/27/2024 - 4:44:27 PM - 8/27/2024 - 4:44:48 PM
+  Generated on: 8/28/2024 - 1:32:48 PM
+  Coverage date: 8/28/2024 - 1:31:47 PM - 8/28/2024 - 1:32:08 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 540
-  Files: 540
+  Classes: 541
+  Files: 541
   Line coverage: 98.2%
-  Covered lines: 10318
+  Covered lines: 10347
   Uncovered lines: 180
-  Coverable lines: 10498
-  Total lines: 27066
-  Branch coverage: 96.5% (4004 of 4148)
-  Covered branches: 4004
-  Total branches: 4148
-  Method coverage: 98.7% (721 of 730)
-  Covered methods: 721
-  Total methods: 730
+  Coverable lines: 10527
+  Total lines: 27131
+  Branch coverage: 96.5% (4024 of 4168)
+  Covered branches: 4024
+  Total branches: 4168
+  Method coverage: 98.7% (723 of 732)
+  Covered methods: 723
+  Total methods: 732
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -94,6 +94,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes.CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursive                    100.0%
   LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes.CountSubarraysWhereMaxElementAppearsAtLeastKTimesSlidingWindow                100.0%
   LeetCode.Algorithms.CountSubarraysWithFixedBounds.CountSubarraysWithFixedBoundsSlidingWindow                                                        100.0%
+  LeetCode.Algorithms.CountSubIslands.CountSubIslandsDepthFirstSearch                                                                                 100.0%
   LeetCode.Algorithms.CountTheDigitsThatDivideNumber.CountTheDigitsThatDivideNumberIterative                                                          100.0%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                                100.0%
   LeetCode.Algorithms.CrawlerLogFolder.CrawlerLogFolderSimulation                                                                                     100.0%
