@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9829011114277572" branch-rate="0.9654510556621881" lines-covered="10347" lines-valid="10527" branches-covered="4024" branches-valid="4168" complexity="4329" version="0" timestamp="1724851967">
+<coverage line-rate="0.9829577731490248" branch-rate="0.9655172413793104" lines-covered="10382" lines-valid="10562" branches-covered="4032" branches-valid="4176" complexity="4339" version="0" timestamp="1724947054">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.9857461456414235" branch-rate="0.9706752094627895" complexity="4213">
+    <package name="LeetCode" line-rate="0.9857943563973715" branch-rate="0.97073290703394" complexity="4223">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -15457,6 +15457,102 @@
             <line number="33" hits="4" branch="false" />
           </lines>
         </class>
+        <class name="LeetCode.Algorithms.MostStonesRemovedWithSameRowOrColumn.MostStonesRemovedWithSameRowOrColumnUnionFind" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\MostStonesRemovedWithSameRowOrColumn\MostStonesRemovedWithSameRowOrColumnUnionFind.cs" line-rate="1" branch-rate="1" complexity="10">
+          <methods>
+            <method name="RemoveStones" signature="(System.Int32[][])" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="13" hits="9" branch="false" />
+                <line number="14" hits="9" branch="false" />
+                <line number="16" hits="139" branch="true" condition-coverage="100% (2/2)" />
+                <line number="17" hits="56" branch="false" />
+                <line number="18" hits="56" branch="false" />
+                <line number="19" hits="56" branch="false" />
+                <line number="21" hits="9" branch="false" />
+                <line number="22" hits="9" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ComponentCount" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="36" hits="247" branch="false" />
+              </lines>
+            </method>
+            <method name="Find" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="39" hits="169" branch="false" />
+                <line number="40" hits="169" branch="true" condition-coverage="100% (2/2)" />
+                <line number="41" hits="66" branch="false" />
+                <line number="42" hits="66" branch="false" />
+                <line number="44" hits="66" branch="false" />
+                <line number="45" hits="66" branch="false" />
+                <line number="47" hits="169" branch="true" condition-coverage="100% (2/2)" />
+                <line number="48" hits="112" branch="false" />
+                <line number="49" hits="112" branch="false" />
+                <line number="52" hits="57" branch="false" />
+                <line number="53" hits="169" branch="false" />
+              </lines>
+            </method>
+            <method name="Union" signature="(System.Int32,System.Int32)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="56" hits="56" branch="false" />
+                <line number="57" hits="56" branch="false" />
+                <line number="58" hits="56" branch="false" />
+                <line number="60" hits="56" branch="true" condition-coverage="100% (2/2)" />
+                <line number="61" hits="3" branch="false" />
+                <line number="62" hits="3" branch="false" />
+                <line number="65" hits="53" branch="false" />
+                <line number="67" hits="53" branch="false" />
+                <line number="68" hits="56" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="9" branch="false" />
+                <line number="29" hits="9" branch="false" />
+                <line number="30" hits="9" branch="false" />
+                <line number="31" hits="9" branch="false" />
+                <line number="33" hits="9" branch="false" />
+                <line number="34" hits="9" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="9" branch="false" />
+            <line number="14" hits="9" branch="false" />
+            <line number="16" hits="139" branch="true" condition-coverage="100% (2/2)" />
+            <line number="17" hits="56" branch="false" />
+            <line number="18" hits="56" branch="false" />
+            <line number="19" hits="56" branch="false" />
+            <line number="21" hits="9" branch="false" />
+            <line number="22" hits="9" branch="false" />
+            <line number="27" hits="9" branch="false" />
+            <line number="29" hits="9" branch="false" />
+            <line number="30" hits="9" branch="false" />
+            <line number="31" hits="9" branch="false" />
+            <line number="33" hits="9" branch="false" />
+            <line number="34" hits="9" branch="false" />
+            <line number="36" hits="247" branch="false" />
+            <line number="39" hits="169" branch="false" />
+            <line number="40" hits="169" branch="true" condition-coverage="100% (2/2)" />
+            <line number="41" hits="66" branch="false" />
+            <line number="42" hits="66" branch="false" />
+            <line number="44" hits="66" branch="false" />
+            <line number="45" hits="66" branch="false" />
+            <line number="47" hits="169" branch="true" condition-coverage="100% (2/2)" />
+            <line number="48" hits="112" branch="false" />
+            <line number="49" hits="112" branch="false" />
+            <line number="52" hits="57" branch="false" />
+            <line number="53" hits="169" branch="false" />
+            <line number="56" hits="56" branch="false" />
+            <line number="57" hits="56" branch="false" />
+            <line number="58" hits="56" branch="false" />
+            <line number="60" hits="56" branch="true" condition-coverage="100% (2/2)" />
+            <line number="61" hits="3" branch="false" />
+            <line number="62" hits="3" branch="false" />
+            <line number="65" hits="53" branch="false" />
+            <line number="67" hits="53" branch="false" />
+            <line number="68" hits="56" branch="false" />
+          </lines>
+        </class>
         <class name="LeetCode.Algorithms.MoveZeroes.MoveZeroesTwoPointers" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\MoveZeroes\MoveZeroesTwoPointers.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="MoveZeroes" signature="(System.Int32[])" line-rate="1" branch-rate="1" complexity="4">
@@ -26693,12 +26789,12 @@
             </method>
             <method name="JsonArrayToJaggedArray" signature="(System.String)" line-rate="1" branch-rate="0.75" complexity="4">
               <lines>
-                <line number="31" hits="199" branch="false" />
-                <line number="32" hits="199" branch="true" condition-coverage="100% (2/2)" />
+                <line number="31" hits="208" branch="false" />
+                <line number="32" hits="208" branch="true" condition-coverage="100% (2/2)" />
                 <line number="33" hits="12" branch="false" />
                 <line number="34" hits="12" branch="false" />
-                <line number="37" hits="187" branch="true" condition-coverage="50% (1/2)" />
-                <line number="38" hits="199" branch="false" />
+                <line number="37" hits="196" branch="true" condition-coverage="50% (1/2)" />
+                <line number="38" hits="208" branch="false" />
               </lines>
             </method>
             <method name="JsonArrayToJaggedList" signature="(System.String)" line-rate="1" branch-rate="0.75" complexity="4">
@@ -26719,12 +26815,12 @@
             <line number="24" hits="83" branch="false" />
             <line number="27" hits="447" branch="true" condition-coverage="50% (1/2)" />
             <line number="28" hits="530" branch="false" />
-            <line number="31" hits="199" branch="false" />
-            <line number="32" hits="199" branch="true" condition-coverage="100% (2/2)" />
+            <line number="31" hits="208" branch="false" />
+            <line number="32" hits="208" branch="true" condition-coverage="100% (2/2)" />
             <line number="33" hits="12" branch="false" />
             <line number="34" hits="12" branch="false" />
-            <line number="37" hits="187" branch="true" condition-coverage="50% (1/2)" />
-            <line number="38" hits="199" branch="false" />
+            <line number="37" hits="196" branch="true" condition-coverage="50% (1/2)" />
+            <line number="38" hits="208" branch="false" />
             <line number="41" hits="49" branch="false" />
             <line number="42" hits="49" branch="true" condition-coverage="100% (2/2)" />
             <line number="43" hits="9" branch="false" />
