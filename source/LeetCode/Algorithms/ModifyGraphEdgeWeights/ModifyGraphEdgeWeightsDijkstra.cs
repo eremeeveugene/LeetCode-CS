@@ -65,24 +65,14 @@ public class ModifyGraphEdgeWeightsDijkstra : IModifyGraphEdgeWeights
     private static void Dijkstra(List<Edge>[] adjacencyEdges, int[][] edges, int[,] distances, int source,
         int difference, int run)
     {
-        var edgeDistances = new SortedSet<EdgeDistance>(Comparer<EdgeDistance>.Create((a, b) =>
-            a.Distance != b.Distance ? a.Distance.CompareTo(b.Distance) : a.Edge.Node.CompareTo(b.Edge.Node)))
-        {
-            new(new Edge(source, -1), 0)
-        };
+        var edgeDistancesPriorityQueue = new PriorityQueue<EdgeDistance, int>();
 
+        edgeDistancesPriorityQueue.Enqueue(new EdgeDistance(new Edge(source, -1), 0), 0);
         distances[source, run] = 0;
 
-        while (edgeDistances.Count > 0)
+        while (edgeDistancesPriorityQueue.Count > 0)
         {
-            var current = edgeDistances.Min;
-
-            if (current == null)
-            {
-                continue;
-            }
-
-            edgeDistances.Remove(current);
+            var current = edgeDistancesPriorityQueue.Dequeue();
 
             if (current.Distance > distances[current.Edge.Node, run])
             {
@@ -108,16 +98,15 @@ public class ModifyGraphEdgeWeightsDijkstra : IModifyGraphEdgeWeights
                     }
                 }
 
-                if (distances[edge.Node, run] <= distances[current.Edge.Node, run] + weight)
+                var newDistance = distances[current.Edge.Node, run] + weight;
+
+                if (distances[edge.Node, run] <= newDistance)
                 {
                     continue;
                 }
 
-                edgeDistances.RemoveWhere(x => x.Edge.Node == edge.Node);
-
-                distances[edge.Node, run] = distances[current.Edge.Node, run] + weight;
-
-                edgeDistances.Add(new EdgeDistance(edge, distances[edge.Node, run]));
+                distances[edge.Node, run] = newDistance;
+                edgeDistancesPriorityQueue.Enqueue(new EdgeDistance(edge, newDistance), newDistance);
             }
         }
     }
