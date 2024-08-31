@@ -72,6 +72,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [75. Sort Colors](https://leetcode.com/problems/sort-colors/)
 - [78. Subsets](https://leetcode.com/problems/subsets/description/)
 - [79. Word Search](https://leetcode.com/problems/word-search/description/)
+- [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/)
 - [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/)
 - [85. Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/description/)
 - [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/)
