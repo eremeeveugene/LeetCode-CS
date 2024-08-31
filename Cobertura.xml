@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.983352144469526" branch-rate="0.9657794676806084" lines-covered="10455" lines-valid="10632" branches-covered="4064" branches-valid="4208" complexity="4373" version="0" timestamp="1725027011">
+<coverage line-rate="0.983227136431784" branch-rate="0.9656560871624822" lines-covered="10493" lines-valid="10672" branches-covered="4077" branches-valid="4222" complexity="4387" version="0" timestamp="1725112426">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.9855058552505279" branch-rate="0.970473401659346" complexity="4257">
+    <package name="LeetCode" line-rate="0.9853700516351118" branch-rate="0.9703307392996109" complexity="4271">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -19667,6 +19667,106 @@
             <line number="40" hits="2" branch="false" />
           </lines>
         </class>
+        <class name="LeetCode.Algorithms.RemoveDuplicatesFromSortedArray2.RemoveDuplicatesFromSortedArray2Dictionary" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\RemoveDuplicatesFromSortedArray2\RemoveDuplicatesFromSortedArray2Dictionary.cs" line-rate="1" branch-rate="1" complexity="8">
+          <methods>
+            <method name="RemoveDuplicates" signature="(System.Int32[])" line-rate="1" branch-rate="1" complexity="8">
+              <lines>
+                <line number="13" hits="2" branch="false" />
+                <line number="14" hits="2" branch="false" />
+                <line number="16" hits="2" branch="false" />
+                <line number="17" hits="2" branch="false" />
+                <line number="19" hits="17" branch="true" condition-coverage="100% (2/2)" />
+                <line number="20" hits="15" branch="false" />
+                <line number="21" hits="15" branch="true" condition-coverage="100% (2/2)" />
+                <line number="22" hits="7" branch="false" />
+                <line number="23" hits="7" branch="false" />
+                <line number="25" hits="7" branch="false" />
+                <line number="28" hits="8" branch="true" condition-coverage="100% (2/2)" />
+                <line number="29" hits="5" branch="false" />
+                <line number="30" hits="5" branch="false" />
+                <line number="32" hits="5" branch="false" />
+                <line number="33" hits="5" branch="false" />
+                <line number="35" hits="3" branch="false" />
+                <line number="36" hits="26" branch="true" condition-coverage="100% (2/2)" />
+                <line number="37" hits="10" branch="false" />
+                <line number="38" hits="10" branch="false" />
+                <line number="39" hits="10" branch="false" />
+                <line number="41" hits="3" branch="false" />
+                <line number="42" hits="3" branch="false" />
+                <line number="43" hits="8" branch="false" />
+                <line number="45" hits="2" branch="false" />
+                <line number="46" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="2" branch="false" />
+            <line number="14" hits="2" branch="false" />
+            <line number="16" hits="2" branch="false" />
+            <line number="17" hits="2" branch="false" />
+            <line number="19" hits="17" branch="true" condition-coverage="100% (2/2)" />
+            <line number="20" hits="15" branch="false" />
+            <line number="21" hits="15" branch="true" condition-coverage="100% (2/2)" />
+            <line number="22" hits="7" branch="false" />
+            <line number="23" hits="7" branch="false" />
+            <line number="25" hits="7" branch="false" />
+            <line number="28" hits="8" branch="true" condition-coverage="100% (2/2)" />
+            <line number="29" hits="5" branch="false" />
+            <line number="30" hits="5" branch="false" />
+            <line number="32" hits="5" branch="false" />
+            <line number="33" hits="5" branch="false" />
+            <line number="35" hits="3" branch="false" />
+            <line number="36" hits="26" branch="true" condition-coverage="100% (2/2)" />
+            <line number="37" hits="10" branch="false" />
+            <line number="38" hits="10" branch="false" />
+            <line number="39" hits="10" branch="false" />
+            <line number="41" hits="3" branch="false" />
+            <line number="42" hits="3" branch="false" />
+            <line number="43" hits="8" branch="false" />
+            <line number="45" hits="2" branch="false" />
+            <line number="46" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.RemoveDuplicatesFromSortedArray2.RemoveDuplicatesFromSortedArray2TwoPointers" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\RemoveDuplicatesFromSortedArray2\RemoveDuplicatesFromSortedArray2TwoPointers.cs" line-rate="0.8666666666666667" branch-rate="0.8333333333333334" complexity="6">
+          <methods>
+            <method name="RemoveDuplicates" signature="(System.Int32[])" line-rate="0.8666666666666667" branch-rate="0.8333333333333334" complexity="6">
+              <lines>
+                <line number="13" hits="2" branch="false" />
+                <line number="14" hits="2" branch="true" condition-coverage="50% (1/2)" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="19" hits="2" branch="false" />
+                <line number="21" hits="26" branch="true" condition-coverage="100% (2/2)" />
+                <line number="22" hits="11" branch="false" />
+                <line number="23" hits="11" branch="true" condition-coverage="100% (2/2)" />
+                <line number="24" hits="3" branch="false" />
+                <line number="25" hits="3" branch="false" />
+                <line number="28" hits="8" branch="false" />
+                <line number="30" hits="8" branch="false" />
+                <line number="31" hits="8" branch="false" />
+                <line number="33" hits="2" branch="false" />
+                <line number="34" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="2" branch="false" />
+            <line number="14" hits="2" branch="true" condition-coverage="50% (1/2)" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="19" hits="2" branch="false" />
+            <line number="21" hits="26" branch="true" condition-coverage="100% (2/2)" />
+            <line number="22" hits="11" branch="false" />
+            <line number="23" hits="11" branch="true" condition-coverage="100% (2/2)" />
+            <line number="24" hits="3" branch="false" />
+            <line number="25" hits="3" branch="false" />
+            <line number="28" hits="8" branch="false" />
+            <line number="30" hits="8" branch="false" />
+            <line number="31" hits="8" branch="false" />
+            <line number="33" hits="2" branch="false" />
+            <line number="34" hits="2" branch="false" />
+          </lines>
+        </class>
         <class name="LeetCode.Algorithms.RemoveDuplicatesFromSortedList.RemoveDuplicatesFromSortedListIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\RemoveDuplicatesFromSortedList\RemoveDuplicatesFromSortedListIterative.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="DeleteDuplicates" signature="(LeetCode.Core.Models.ListNode)" line-rate="1" branch-rate="1" complexity="4">
@@ -26437,18 +26537,18 @@
                 <line number="68" hits="5" branch="false" />
                 <line number="69" hits="5" branch="false" />
                 <line number="70" hits="6" branch="true" condition-coverage="100% (2/2)" />
-                <line number="71" hits="4" branch="false" />
-                <line number="72" hits="11" branch="true" condition-coverage="100% (4/4)" />
-                <line number="73" hits="10" branch="false" />
-                <line number="74" hits="10" branch="false" />
-                <line number="76" hits="10" branch="true" condition-coverage="100% (2/2)" />
-                <line number="77" hits="3" branch="false" />
-                <line number="78" hits="3" branch="false" />
+                <line number="71" hits="5" branch="false" />
+                <line number="72" hits="12" branch="true" condition-coverage="100% (4/4)" />
+                <line number="73" hits="11" branch="false" />
+                <line number="74" hits="11" branch="false" />
+                <line number="76" hits="11" branch="true" condition-coverage="100% (2/2)" />
+                <line number="77" hits="4" branch="false" />
+                <line number="78" hits="4" branch="false" />
                 <line number="80" hits="7" branch="false" />
                 <line number="82" hits="1" branch="false" />
                 <line number="84" hits="1" branch="false" />
                 <line number="85" hits="1" branch="false" />
-                <line number="86" hits="2" branch="false" />
+                <line number="86" hits="1" branch="false" />
                 <line number="87" hits="5" branch="false" />
               </lines>
             </method>
@@ -26531,18 +26631,18 @@
             <line number="68" hits="5" branch="false" />
             <line number="69" hits="5" branch="false" />
             <line number="70" hits="6" branch="true" condition-coverage="100% (2/2)" />
-            <line number="71" hits="4" branch="false" />
-            <line number="72" hits="11" branch="true" condition-coverage="100% (4/4)" />
-            <line number="73" hits="10" branch="false" />
-            <line number="74" hits="10" branch="false" />
-            <line number="76" hits="10" branch="true" condition-coverage="100% (2/2)" />
-            <line number="77" hits="3" branch="false" />
-            <line number="78" hits="3" branch="false" />
+            <line number="71" hits="5" branch="false" />
+            <line number="72" hits="12" branch="true" condition-coverage="100% (4/4)" />
+            <line number="73" hits="11" branch="false" />
+            <line number="74" hits="11" branch="false" />
+            <line number="76" hits="11" branch="true" condition-coverage="100% (2/2)" />
+            <line number="77" hits="4" branch="false" />
+            <line number="78" hits="4" branch="false" />
             <line number="80" hits="7" branch="false" />
             <line number="82" hits="1" branch="false" />
             <line number="84" hits="1" branch="false" />
             <line number="85" hits="1" branch="false" />
-            <line number="86" hits="2" branch="false" />
+            <line number="86" hits="1" branch="false" />
             <line number="87" hits="5" branch="false" />
             <line number="90" hits="5" branch="false" />
             <line number="91" hits="5" branch="false" />

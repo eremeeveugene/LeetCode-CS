@@ -1,21 +1,21 @@
 Summary
-  Generated on: 8/30/2024 - 2:10:13 PM
-  Coverage date: 8/30/2024 - 2:08:51 PM - 8/30/2024 - 2:09:14 PM
+  Generated on: 8/31/2024 - 1:53:47 PM
+  Coverage date: 8/31/2024 - 1:52:45 PM - 8/31/2024 - 1:53:07 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 543
-  Files: 543
+  Classes: 545
+  Files: 545
   Line coverage: 98.3%
-  Covered lines: 10455
-  Uncovered lines: 177
-  Coverable lines: 10632
-  Total lines: 27318
-  Branch coverage: 96.5% (4064 of 4208)
-  Covered branches: 4064
-  Total branches: 4208
-  Method coverage: 98.9% (733 of 741)
-  Covered methods: 733
-  Total methods: 741
+  Covered lines: 10493
+  Uncovered lines: 179
+  Coverable lines: 10672
+  Total lines: 27400
+  Branch coverage: 96.5% (4077 of 4222)
+  Covered branches: 4077
+  Total branches: 4222
+  Method coverage: 98.9% (735 of 743)
+  Covered methods: 735
+  Total methods: 743
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -406,6 +406,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.RelativeSortArray.RelativeSortArrayDictionarySorting                                                                            100.0%
   LeetCode.Algorithms.RelativeSortArray.RelativeSortArrayTwoLoopsSorting                                                                              100.0%
   LeetCode.Algorithms.RemoveDuplicatesFromSortedArray.RemoveDuplicatesFromSortedArrayIterative                                                        100.0%
+  LeetCode.Algorithms.RemoveDuplicatesFromSortedArray2.RemoveDuplicatesFromSortedArray2Dictionary                                                     100.0%
+  LeetCode.Algorithms.RemoveDuplicatesFromSortedArray2.RemoveDuplicatesFromSortedArray2TwoPointers                                                     86.6%
   LeetCode.Algorithms.RemoveDuplicatesFromSortedList.RemoveDuplicatesFromSortedListIterative                                                          100.0%
   LeetCode.Algorithms.RemoveDuplicatesFromSortedList.RemoveDuplicatesFromSortedListIterativeReverse                                                   100.0%
   LeetCode.Algorithms.RemoveElement.RemoveElementBruteForce                                                                                           100.0%
