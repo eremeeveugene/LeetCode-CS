@@ -4,7 +4,7 @@
 public class RemoveDuplicatesFromSortedArray2TwoPointers : IRemoveDuplicatesFromSortedArray2
 {
     /// <summary>
-    ///     Time complexity - O(n^2)
+    ///     Time complexity - O(n)
     ///     Space complexity - O(1)
     /// </summary>
     /// <param name="nums"></param>
