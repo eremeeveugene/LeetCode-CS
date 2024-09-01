@@ -18,6 +18,13 @@ The primary goal of this repository is to improve my own skills and demonstrate 
 - **[Coverlet](https://github.com/coverlet-coverage/coverlet)**: A code coverage library for .NET that collects coverage data and integrates with build tasks.
 - **[ReportGenerator](https://reportgenerator.io/)**: A tool to generate reports from the test coverage data.
 
+## Tools
+
+For developing and testing the solutions in this repository, I use the following tools:
+
+- **[Visual Studio 2022](https://visualstudio.microsoft.com/vs/)**: The integrated development environment (IDE) where I write, debug, and run my C# code. It provides a comprehensive set of features for efficient coding and debugging, making it my go-to tool for .NET development.
+- **[ReSharper](https://www.jetbrains.com/resharper/)**: A Visual Studio extension that enhances the development experience with advanced code analysis, refactoring tools, and productivity features. ReSharper helps me ensure my code is clean, optimized, and follows best practices.
+
 ## Time and Space Complexity
 
 I analyze the time and space complexity using Big O notation for every algorithm solution in this repo. This analysis helps me understand each solution's efficiency and scalability.
