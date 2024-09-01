@@ -1,21 +1,21 @@
 Summary
-  Generated on: 8/31/2024 - 1:53:47 PM
-  Coverage date: 8/31/2024 - 1:52:45 PM - 8/31/2024 - 1:53:07 PM
+  Generated on: 9/1/2024 - 10:24:15 AM
+  Coverage date: 9/1/2024 - 10:23:05 AM - 9/1/2024 - 10:23:27 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 545
-  Files: 545
+  Classes: 546
+  Files: 546
   Line coverage: 98.3%
-  Covered lines: 10493
+  Covered lines: 10508
   Uncovered lines: 179
-  Coverable lines: 10672
-  Total lines: 27400
-  Branch coverage: 96.5% (4077 of 4222)
-  Covered branches: 4077
-  Total branches: 4222
-  Method coverage: 98.9% (735 of 743)
-  Covered methods: 735
-  Total methods: 743
+  Coverable lines: 10687
+  Total lines: 27435
+  Branch coverage: 96.5% (4083 of 4228)
+  Covered branches: 4083
+  Total branches: 4228
+  Method coverage: 98.9% (736 of 744)
+  Covered methods: 736
+  Total methods: 744
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -79,6 +79,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ContainsDuplicate3.ContainsDuplicate3Dictionary                                                                                 100.0%
   LeetCode.Algorithms.ContiguousArray.ContiguousArrayDictionary                                                                                       100.0%
   LeetCode.Algorithms.ContinuousSubarraySum.ContinuousSubarraySumDictionary                                                                           100.0%
+  LeetCode.Algorithms.Convert1DArrayInto2DArray.Convert1DArrayInto2DArraySimulation                                                                   100.0%
   LeetCode.Algorithms.ConvertSortedArrayToBinarySearchTree.ConvertSortedArrayToBinarySearchTreeRecursive                                              100.0%
   LeetCode.Algorithms.ConvertTheTemperature.ConvertTheTemperatureMath                                                                                 100.0%
   LeetCode.Algorithms.CountCompleteTreeNodes.CountCompleteTreeNodesDepthRecursive                                                                     100.0%
