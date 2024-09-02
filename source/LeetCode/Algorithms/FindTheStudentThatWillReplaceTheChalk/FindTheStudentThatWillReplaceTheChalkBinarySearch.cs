@@ -24,16 +24,16 @@ public class FindTheStudentThatWillReplaceTheChalkBinarySearch : IFindTheStudent
         return GetStudentIndex(prefixSum, k % prefixSum[^1]);
     }
 
-    private static int GetStudentIndex(long[] arr, long remainder)
+    private static int GetStudentIndex(long[] prefixSum, long remainder)
     {
         var left = 0;
-        var right = arr.Length - 1;
+        var right = prefixSum.Length - 1;
 
         while (left < right)
         {
             var mid = left + ((right - left) / 2);
 
-            if (arr[mid] <= remainder)
+            if (prefixSum[mid] <= remainder)
             {
                 left = mid + 1;
             }
