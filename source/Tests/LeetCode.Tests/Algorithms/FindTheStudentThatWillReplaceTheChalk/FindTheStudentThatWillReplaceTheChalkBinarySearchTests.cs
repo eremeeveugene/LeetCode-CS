@@ -1,0 +1,7 @@
+﻿using LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk;
+
+namespace LeetCode.Tests.Algorithms.FindTheStudentThatWillReplaceTheChalk;
+
+[TestClass]
+public class FindTheStudentThatWillReplaceTheChalkBinarySearchTests : FindTheStudentThatWillReplaceTheChalkTestsBase<
+    FindTheStudentThatWillReplaceTheChalkBinarySearch>;
