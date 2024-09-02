@@ -1,21 +1,21 @@
 Summary
-  Generated on: 9/1/2024 - 4:48:59 PM
-  Coverage date: 9/1/2024 - 4:48:05 PM - 9/1/2024 - 4:48:26 PM
+  Generated on: 9/2/2024 - 10:59:11 AM
+  Coverage date: 9/2/2024 - 10:58:09 AM - 9/2/2024 - 10:58:30 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 546
-  Files: 546
+  Classes: 548
+  Files: 548
   Line coverage: 98.3%
-  Covered lines: 10508
+  Covered lines: 10551
   Uncovered lines: 179
-  Coverable lines: 10687
-  Total lines: 27435
-  Branch coverage: 96.5% (4083 of 4228)
-  Covered branches: 4083
-  Total branches: 4228
-  Method coverage: 98.9% (736 of 744)
-  Covered methods: 736
-  Total methods: 744
+  Coverable lines: 10730
+  Total lines: 27523
+  Branch coverage: 96.5% (4095 of 4240)
+  Covered branches: 4095
+  Total branches: 4240
+  Method coverage: 98.9% (739 of 747)
+  Covered methods: 739
+  Total methods: 747
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -172,6 +172,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerConstant                                                                                 100.0%
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerIterative                                                                                100.0%
   LeetCode.Algorithms.FindTheSafestPathInGrid.FindTheSafestPathInGridPriorityQueue                                                                     98.4%
+  LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk.FindTheStudentThatWillReplaceTheChalkBinarySearch                                         100.0%
+  LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk.FindTheStudentThatWillReplaceTheChalkPrefixSum                                            100.0%
   LeetCode.Algorithms.FindTheTownJudge.FindTheTownJudgeDictionary                                                                                     100.0%
   LeetCode.Algorithms.FindTheTownJudge.FindTheTownJudgeIterative                                                                                      100.0%
   LeetCode.Algorithms.FindValidMatrixGivenRowAndColumnSums.FindValidMatrixGivenRowAndColumnSumsBruteForce                                             100.0%
