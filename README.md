@@ -215,6 +215,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [860. Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)
 - [861. Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/description/)
 - [877. Stone Game](https://leetcode.com/problems/stone-game/description/)
+- [874. Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/description/)
 - [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/)
 - [885. Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/description/)
 - [912. Sort an Array](https://leetcode.com/problems/sort-an-array/description/)
