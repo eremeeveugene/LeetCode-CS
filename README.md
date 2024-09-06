@@ -369,6 +369,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3075. Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/description/)
 - [3110. Score of a String](https://leetcode.com/problems/score-of-a-string/description/)
 - [3190. Find Minimum Operations to Make All Elements Divisible by Three](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/description/)
+- [3217. Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/description/)
 
   </p>
 </details>
