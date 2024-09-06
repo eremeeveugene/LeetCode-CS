@@ -25,7 +25,7 @@ public class DeleteNodeFromLinkedListPresentInArrayBinarySearch : IDeleteNodeFro
 
         var node = dummyHead;
 
-        while (node is { next: not null })
+        while (node?.next != null)
         {
             if (BinarySearch(nums, node.next.val))
             {

@@ -25,7 +25,7 @@ public class DeleteNodeFromLinkedListPresentInArrayHashSet : IDeleteNodeFromLink
 
         var node = dummyHead;
 
-        while (node is { next: not null })
+        while (node?.next != null)
         {
             if (numsHashSet.Contains(node.next.val))
             {
