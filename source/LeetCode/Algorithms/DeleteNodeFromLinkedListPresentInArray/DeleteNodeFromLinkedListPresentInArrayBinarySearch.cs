@@ -14,9 +14,15 @@ public class DeleteNodeFromLinkedListPresentInArrayBinarySearch : IDeleteNodeFro
     /// <returns></returns>
     public ListNode? ModifiedList(int[] nums, ListNode? head)
     {
+        if (nums.Length == 0)
+        {
+            return head;
+        }
+
         Array.Sort(nums);
 
         var dummyHead = new ListNode(0, head);
+
         var node = dummyHead;
 
         while (node is { next: not null })
