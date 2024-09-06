@@ -1,21 +1,21 @@
 Summary
-  Generated on: 9/5/2024 - 1:57:13 PM
-  Coverage date: 9/5/2024 - 1:56:10 PM - 9/5/2024 - 1:56:30 PM
+  Generated on: 9/6/2024 - 1:09:07 PM
+  Coverage date: 9/6/2024 - 1:08:08 PM - 9/6/2024 - 1:08:29 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 551
-  Files: 551
-  Line coverage: 98.2%
-  Covered lines: 10648
+  Classes: 553
+  Files: 553
+  Line coverage: 98.3%
+  Covered lines: 10705
   Uncovered lines: 185
-  Coverable lines: 10833
-  Total lines: 27726
-  Branch coverage: 96.5% (4135 of 4283)
-  Covered branches: 4135
-  Total branches: 4283
-  Method coverage: 98.9% (743 of 751)
-  Covered methods: 743
-  Total methods: 751
+  Coverable lines: 10890
+  Total lines: 27837
+  Branch coverage: 96.5% (4155 of 4305)
+  Covered branches: 4155
+  Total branches: 4305
+  Method coverage: 98.9% (746 of 754)
+  Covered methods: 746
+  Total methods: 754
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -107,6 +107,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressReplace                                                                                100.0%
   LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressStringBuilder                                                                          100.0%
   LeetCode.Algorithms.DeleteLeavesWithGivenValue.DeleteLeavesWithGivenValueDepthFirstSearch                                                           100.0%
+  LeetCode.Algorithms.DeleteNodeFromLinkedListPresentInArray.DeleteNodeFromLinkedListPresentInArrayBinarySearch                                       100.0%
+  LeetCode.Algorithms.DeleteNodeFromLinkedListPresentInArray.DeleteNodeFromLinkedListPresentInArrayHashSet                                            100.0%
   LeetCode.Algorithms.DeleteNodeInLinkedList.DeleteNodeInLinkedListIterative                                                                          100.0%
   LeetCode.Algorithms.DeleteNodeInLinkedList.DeleteNodeInLinkedListReassign                                                                            71.4%
   LeetCode.Algorithms.DeleteNodesAndReturnForest.DeleteNodesAndReturnForestBreadthFirstSearch                                                         100.0%
