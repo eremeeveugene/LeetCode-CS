@@ -328,6 +328,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/description/)
 - [2235. Add Two Integers](https://leetcode.com/problems/add-two-integers/description/)
 - [2236. Root Equals Sum of Children](https://leetcode.com/problems/root-equals-sum-of-children/description/)
+- [2326. Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/description/)
 - [2331. Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree/description/)
 - [2370. Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence/description/)
 - [2373. Largest Local Values in a Matrix](https://leetcode.com/problems/largest-local-values-in-a-matrix/description/)
