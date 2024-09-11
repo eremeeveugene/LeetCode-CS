@@ -1,21 +1,21 @@
 Summary
-  Generated on: 9/11/2024 - 11:57:47 AM
-  Coverage date: 9/11/2024 - 11:56:46 AM - 9/11/2024 - 11:57:06 AM
+  Generated on: 9/11/2024 - 12:31:01 PM
+  Coverage date: 9/11/2024 - 12:29:58 PM - 9/11/2024 - 12:30:18 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 559
-  Files: 559
+  Classes: 560
+  Files: 560
   Line coverage: 98.3%
-  Covered lines: 10910
+  Covered lines: 10932
   Uncovered lines: 185
-  Coverable lines: 11095
-  Total lines: 28245
-  Branch coverage: 96.5% (4238 of 4390)
-  Covered branches: 4238
-  Total branches: 4390
-  Method coverage: 98.9% (755 of 763)
-  Covered methods: 755
-  Total methods: 763
+  Coverable lines: 11117
+  Total lines: 28301
+  Branch coverage: 96.5% (4242 of 4394)
+  Covered branches: 4242
+  Total branches: 4394
+  Method coverage: 98.9% (757 of 765)
+  Covered methods: 757
+  Total methods: 765
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -206,6 +206,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ImplementStackUsingQueues.ImplementStackUsingQueuesTwoQueues                                                                    100.0%
   LeetCode.Algorithms.IncreasingDecreasingString.IncreasingDecreasingStringCountingSort                                                               100.0%
   LeetCode.Algorithms.IncreasingDecreasingString.IncreasingDecreasingStringDictionary                                                                 100.0%
+  LeetCode.Algorithms.InsertGreatestCommonDivisorsInLinkedList.InsertGreatestCommonDivisorsInLinkedListSimulation                                     100.0%
   LeetCode.Algorithms.InsertInterval.InsertIntervalIterative                                                                                          100.0%
   LeetCode.Algorithms.IntegerToEnglishWords.IntegerToEnglishWordsIterative                                                                            100.0%
   LeetCode.Algorithms.IntegerToEnglishWords.IntegerToEnglishWordsRecursive                                                                            100.0%
