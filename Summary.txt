@@ -1,21 +1,21 @@
 Summary
-  Generated on: 9/14/2024 - 9:54:13 AM
-  Coverage date: 9/14/2024 - 9:53:12 AM - 9/14/2024 - 9:53:32 AM
+  Generated on: 9/14/2024 - 11:01:02 AM
+  Coverage date: 9/14/2024 - 11:00:02 AM - 9/14/2024 - 11:00:22 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 564
-  Files: 564
+  Classes: 565
+  Files: 565
   Line coverage: 98.3%
-  Covered lines: 10984
+  Covered lines: 11007
   Uncovered lines: 185
-  Coverable lines: 11169
-  Total lines: 28468
-  Branch coverage: 96.5% (4264 of 4416)
-  Covered branches: 4264
-  Total branches: 4416
-  Method coverage: 98.9% (761 of 769)
-  Covered methods: 761
-  Total methods: 769
+  Coverable lines: 11192
+  Total lines: 28520
+  Branch coverage: 96.5% (4270 of 4422)
+  Covered branches: 4270
+  Total branches: 4422
+  Method coverage: 98.9% (762 of 770)
+  Covered methods: 762
+  Total methods: 770
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -257,6 +257,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestPalindrome.LongestPalindromeArray                                                                                        100.0%
   LeetCode.Algorithms.LongestPalindrome.LongestPalindromeDictionary                                                                                   100.0%
   LeetCode.Algorithms.LongestPalindromicSubstring.LongestPalindromicSubstringTwoPointers                                                              100.0%
+  LeetCode.Algorithms.LongestSubarrayWithMaximumBitwiseAND.LongestSubarrayWithMaximumBitwiseANDIterative                                              100.0%
   LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters.LongestSubstringWithoutRepeatingCharactersSlidingWindow                              100.0%
   LeetCode.Algorithms.LuckyNumbersInMatrix.LuckyNumbersInMatrixBruteForce                                                                             100.0%
   LeetCode.Algorithms.MagicSquaresInGrid.MagicSquaresInGridBruteForce                                                                                 100.0%
