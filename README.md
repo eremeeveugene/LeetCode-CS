@@ -338,6 +338,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2413. Smallest Even Multiple](https://leetcode.com/problems/smallest-even-multiple/description/)
 - [2415. Reverse Odd Levels of Binary Tree](https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/description/)
 - [2418. Sort the People](https://leetcode.com/problems/sort-the-people/description/)
+- [2419. Longest Subarray With Maximum Bitwise AND](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/description/)
 - [2433. Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/description/)
 - [2441. Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/description/)
 - [2444. Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/description/)
