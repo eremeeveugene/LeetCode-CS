@@ -260,6 +260,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1365. How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description/)
 - [1367. Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/description/)
 - [1370. Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string/description/)
+- [1371. Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/description/)
 - [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/description/)
 - [1380. Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/description/)
 - [1404. Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/description/)
