@@ -1,21 +1,21 @@
 Summary
-  Generated on: 9/15/2024 - 11:32:39 AM
-  Coverage date: 9/15/2024 - 11:31:41 AM - 9/15/2024 - 11:32:00 AM
+  Generated on: 9/15/2024 - 4:17:41 PM
+  Coverage date: 9/15/2024 - 4:16:38 PM - 9/15/2024 - 4:16:57 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 566
-  Files: 566
+  Classes: 568
+  Files: 568
   Line coverage: 98.3%
-  Covered lines: 11032
-  Uncovered lines: 185
-  Coverable lines: 11217
-  Total lines: 28578
-  Branch coverage: 96.5% (4278 of 4430)
-  Covered branches: 4278
-  Total branches: 4430
-  Method coverage: 98.9% (763 of 771)
-  Covered methods: 763
-  Total methods: 771
+  Covered lines: 11078
+  Uncovered lines: 187
+  Coverable lines: 11265
+  Total lines: 28689
+  Branch coverage: 96.5% (4297 of 4450)
+  Covered branches: 4297
+  Total branches: 4450
+  Method coverage: 98.9% (765 of 773)
+  Covered methods: 765
+  Total methods: 773
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -163,6 +163,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchRecursive                                                  100.0%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchStack                                                      100.0%
   LeetCode.Algorithms.FindPivotIndex.FindPivotIndexIterative                                                                                          100.0%
+  LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayBinarySearch                                                92.5%
+  LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayIterative                                                  100.0%
   LeetCode.Algorithms.FindTheClosestPalindrome.FindTheClosestPalindromeIterative                                                                      100.0%
   LeetCode.Algorithms.FindTheDifferenceOfTwoArrays.FindTheDifferenceOfTwoArraysHashSet                                                                100.0%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberBruteForce                                                                          91.6%
