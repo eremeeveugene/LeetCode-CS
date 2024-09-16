@@ -258,6 +258,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1310. XOR Queries of a Subarray](https://leetcode.com/problems/xor-queries-of-a-subarray/description/)
 - [1323. Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/description/)
 - [1325. Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/description/)
+- [1331. Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/description/)
 - [1342. Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/description/)
 - [1365. How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description/)
 - [1367. Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/description/)
