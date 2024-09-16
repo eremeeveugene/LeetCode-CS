@@ -9,24 +9,23 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses;
+using LeetCode.Algorithms.UniqueNumberOfOccurrences;
 
-namespace LeetCode.Tests.Algorithms.MaximumNestingDepthOfTheParentheses;
+namespace LeetCode.Tests.Algorithms.UniqueNumberOfOccurrences;
 
-public abstract class MaximumNestingDepthOfTheParenthesesTestsBase<T>
-    where T : IMaximumNestingDepthOfTheParentheses, new()
+public abstract class UniqueNumberOfOccurrencesTestsBase<T> where T : IUniqueNumberOfOccurrences, new()
 {
     [TestMethod]
-    [DataRow("(1+(2*3)+((8)/4))+1", 3)]
-    [DataRow("(1)+((2))+(((3)))", 3)]
-    [DataRow("1+(2*3)/(2-1)", 1)]
-    public void MaxDepth_WithMathematicalExpression_ReturnsMaximumNestingDepth(string s, double expectedResult)
+    [DataRow(new[] { 1, 2 }, false)]
+    [DataRow(new[] { 1, 2, 2, 1, 1, 3 }, true)]
+    [DataRow(new[] { -3, 0, 1, -3, 1, 1, 1, -3, 10, 0 }, true)]
+    public void UniqueOccurrences_WithIntegerArray_ReturnsIfOccurrencesAreUnique(int[] arr, bool expectedResult)
     {
         // Arrange
         var solution = new T();
 
         // Act
-        var actualResult = solution.MaxDepth(s);
+        var actualResult = solution.UniqueOccurrences(arr);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

@@ -9,26 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses;
+namespace LeetCode.Algorithms.UniqueNumberOfOccurrences;
 
-namespace LeetCode.Tests.Algorithms.MaximumNestingDepthOfTheParentheses;
-
-public abstract class MaximumNestingDepthOfTheParenthesesTestsBase<T>
-    where T : IMaximumNestingDepthOfTheParentheses, new()
+/// <summary>
+///     https://leetcode.com/problems/unique-number-of-occurrences/
+/// </summary>
+public interface IUniqueNumberOfOccurrences
 {
-    [TestMethod]
-    [DataRow("(1+(2*3)+((8)/4))+1", 3)]
-    [DataRow("(1)+((2))+(((3)))", 3)]
-    [DataRow("1+(2*3)/(2-1)", 1)]
-    public void MaxDepth_WithMathematicalExpression_ReturnsMaximumNestingDepth(string s, double expectedResult)
-    {
-        // Arrange
-        var solution = new T();
-
-        // Act
-        var actualResult = solution.MaxDepth(s);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
-    }
+    bool UniqueOccurrences(int[] arr);
 }

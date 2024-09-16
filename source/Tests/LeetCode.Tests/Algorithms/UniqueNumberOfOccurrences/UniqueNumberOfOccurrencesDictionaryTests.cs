@@ -9,26 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses;
+using LeetCode.Algorithms.UniqueNumberOfOccurrences;
 
-namespace LeetCode.Tests.Algorithms.MaximumNestingDepthOfTheParentheses;
+namespace LeetCode.Tests.Algorithms.UniqueNumberOfOccurrences;
 
-public abstract class MaximumNestingDepthOfTheParenthesesTestsBase<T>
-    where T : IMaximumNestingDepthOfTheParentheses, new()
-{
-    [TestMethod]
-    [DataRow("(1+(2*3)+((8)/4))+1", 3)]
-    [DataRow("(1)+((2))+(((3)))", 3)]
-    [DataRow("1+(2*3)/(2-1)", 1)]
-    public void MaxDepth_WithMathematicalExpression_ReturnsMaximumNestingDepth(string s, double expectedResult)
-    {
-        // Arrange
-        var solution = new T();
-
-        // Act
-        var actualResult = solution.MaxDepth(s);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
-    }
-}
+[TestClass]
+public class UniqueNumberOfOccurrencesDictionaryTests :
+    UniqueNumberOfOccurrencesTestsBase<UniqueNumberOfOccurrencesDictionary>;
