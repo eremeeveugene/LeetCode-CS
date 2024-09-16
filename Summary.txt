@@ -1,21 +1,21 @@
 Summary
-  Generated on: 9/16/2024 - 12:28:48 PM
-  Coverage date: 9/16/2024 - 12:27:46 PM - 9/16/2024 - 12:28:05 PM
+  Generated on: 9/16/2024 - 3:27:48 PM
+  Coverage date: 9/16/2024 - 3:26:51 PM - 9/16/2024 - 3:27:11 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 571
-  Files: 571
+  Classes: 572
+  Files: 572
   Line coverage: 98.3%
-  Covered lines: 11127
+  Covered lines: 11154
   Uncovered lines: 187
-  Coverable lines: 11314
-  Total lines: 28824
-  Branch coverage: 96.5% (4314 of 4468)
-  Covered branches: 4314
-  Total branches: 4468
-  Method coverage: 98.9% (768 of 776)
-  Covered methods: 768
-  Total methods: 776
+  Coverable lines: 11341
+  Total lines: 28886
+  Branch coverage: 96.5% (4328 of 4482)
+  Covered branches: 4328
+  Total branches: 4482
+  Method coverage: 98.9% (769 of 777)
+  Covered methods: 769
+  Total methods: 777
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -32,6 +32,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry                                                                                         100.0%
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersIterative                                                                                            100.0%
   LeetCode.Algorithms.AppendCharactersToStringToMakeSubsequence.AppendCharactersToStringToMakeSubsequenceTwoPointers                                  100.0%
+  LeetCode.Algorithms.ApplyDiscountToPrices.ApplyDiscountToPricesIterative                                                                            100.0%
   LeetCode.Algorithms.ArithmeticSubarrays.ArithmeticSubarraysHashSet                                                                                  100.0%
   LeetCode.Algorithms.ArithmeticSubarrays.ArithmeticSubarraysSort                                                                                     100.0%
   LeetCode.Algorithms.ArrangingCoins.ArrangingCoinsBinarySearch                                                                                       100.0%
