@@ -19,7 +19,8 @@ public abstract class MinimumFallingPathSum2TestsBase<T> where T : IMinimumFalli
     [TestMethod]
     [DataRow("[[1,2,3],[4,5,6],[7,8,9]]", 13)]
     [DataRow("[[7]]", 7)]
-    public void Test(string gridJsonArray, int expectedResult)
+    public void MinFallingPathSum_WithGridJsonArray_ReturnsMinimumFallingPathSum(string gridJsonArray,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();
