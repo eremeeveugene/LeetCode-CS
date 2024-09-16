@@ -69,6 +69,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/)
 - [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)
 - [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)
+- [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/description/)
 - [46. Permutations](https://leetcode.com/problems/permutations/description/)
 - [57. Insert Interval](https://leetcode.com/problems/insert-interval/description/)
 - [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/description/)
