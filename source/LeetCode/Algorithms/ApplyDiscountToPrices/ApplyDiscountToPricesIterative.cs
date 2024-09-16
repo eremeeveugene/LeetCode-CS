@@ -17,8 +17,8 @@ namespace LeetCode.Algorithms.ApplyDiscountToPrices;
 public class ApplyDiscountToPricesIterative : IApplyDiscountToPrices
 {
     /// <summary>
-    ///     Time complexity - O(n), where n is the length of the input sentence
-    ///     Space complexity - O(k), where k is the number of words in the sentence
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="sentence"></param>
     /// <param name="discount"></param>
@@ -31,11 +31,18 @@ public class ApplyDiscountToPricesIterative : IApplyDiscountToPrices
 
         for (var i = 0; i < words.Length; i++)
         {
-            if (words[i][0] == '$' && !words[i].Contains('e') && double.TryParse(words[i].AsSpan(1), out var number))
+            if (words[i].StartsWith('$') && double.TryParse(words[i].AsSpan(1), out var number))
             {
-                var discountedPrice = number - (number * discount / 100);
+                if (words[i].AsSpan(1).Contains('e'))
+                {
+                    resultStringBuilder.Append(words[i]);
+                }
+                else
+                {
+                    var discountedPrice = number - (number * discount / 100);
 
-                resultStringBuilder.Append($"${discountedPrice:F2}");
+                    resultStringBuilder.Append($"${discountedPrice:F2}");
+                }
             }
             else
             {
