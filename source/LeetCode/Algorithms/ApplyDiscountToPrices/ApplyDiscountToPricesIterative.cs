@@ -25,15 +25,17 @@ public class ApplyDiscountToPricesIterative : IApplyDiscountToPrices
     /// <returns></returns>
     public string DiscountPrices(string sentence, int discount)
     {
-        var words = sentence.Split(' ');
+        var resultStringBuilder = new StringBuilder(sentence.Length);
 
-        var resultStringBuilder = new StringBuilder();
+        var words = sentence.Split(' ');
 
         for (var i = 0; i < words.Length; i++)
         {
-            if (words[i].StartsWith('$') && double.TryParse(words[i].AsSpan(1), out var number))
+            if (words[i].StartsWith('$') && words[i].Length > 1 && double.TryParse(words[i].AsSpan(1), out var number))
             {
-                if (words[i].AsSpan(1).Contains('e'))
+                var pricePart = words[i].AsSpan(1);
+
+                if (pricePart.Length > 1 && pricePart[1] == 'e')
                 {
                     resultStringBuilder.Append(words[i]);
                 }
