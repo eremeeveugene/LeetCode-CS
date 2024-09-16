@@ -1,21 +1,21 @@
 Summary
-  Generated on: 9/16/2024 - 3:27:48 PM
-  Coverage date: 9/16/2024 - 3:26:51 PM - 9/16/2024 - 3:27:11 PM
+  Generated on: 9/16/2024 - 4:06:05 PM
+  Coverage date: 9/16/2024 - 4:05:02 PM - 9/16/2024 - 4:05:22 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 572
-  Files: 572
+  Classes: 573
+  Files: 573
   Line coverage: 98.3%
-  Covered lines: 11154
+  Covered lines: 11166
   Uncovered lines: 187
-  Coverable lines: 11341
-  Total lines: 28886
-  Branch coverage: 96.5% (4328 of 4482)
-  Covered branches: 4328
-  Total branches: 4482
-  Method coverage: 98.9% (769 of 777)
-  Covered methods: 769
-  Total methods: 777
+  Coverable lines: 11353
+  Total lines: 28925
+  Branch coverage: 96.5% (4332 of 4486)
+  Covered branches: 4332
+  Total branches: 4486
+  Method coverage: 98.9% (770 of 778)
+  Covered methods: 770
+  Total methods: 778
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -555,6 +555,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.UglyNumber2.UglyNumber2DynamicProgramming                                                                                       100.0%
   LeetCode.Algorithms.UglyNumber2.UglyNumber2PriorityQueue                                                                                            100.0%
   LeetCode.Algorithms.UniqueMorseCodeWords.UniqueMorseCodeWordsHashSet                                                                                100.0%
+  LeetCode.Algorithms.UniqueNumberOfOccurrences.UniqueNumberOfOccurrencesDictionary                                                                   100.0%
   LeetCode.Algorithms.ValidAnagram.ValidAnagramDictionary                                                                                              90.4%
   LeetCode.Algorithms.ValidAnagram.ValidAnagramSorting                                                                                                100.0%
   LeetCode.Algorithms.ValidPalindrome.ValidPalindromeTwoPointers                                                                                      100.0%
