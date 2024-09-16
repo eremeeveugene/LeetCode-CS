@@ -1,21 +1,21 @@
 Summary
-  Generated on: 9/15/2024 - 4:17:41 PM
-  Coverage date: 9/15/2024 - 4:16:38 PM - 9/15/2024 - 4:16:57 PM
+  Generated on: 9/16/2024 - 12:28:48 PM
+  Coverage date: 9/16/2024 - 12:27:46 PM - 9/16/2024 - 12:28:05 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 568
-  Files: 568
+  Classes: 571
+  Files: 571
   Line coverage: 98.3%
-  Covered lines: 11078
+  Covered lines: 11127
   Uncovered lines: 187
-  Coverable lines: 11265
-  Total lines: 28689
-  Branch coverage: 96.5% (4297 of 4450)
-  Covered branches: 4297
-  Total branches: 4450
-  Method coverage: 98.9% (765 of 773)
-  Covered methods: 765
-  Total methods: 773
+  Coverable lines: 11314
+  Total lines: 28824
+  Branch coverage: 96.5% (4314 of 4468)
+  Covered branches: 4314
+  Total branches: 4468
+  Method coverage: 98.9% (768 of 776)
+  Covered methods: 768
+  Total methods: 776
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -329,6 +329,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits.MinimumSumOfFourDigitNumberAfterSplittingDigitsChars                            100.0%
   LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits.MinimumSumOfFourDigitNumberAfterSplittingDigitsNumbers                          100.0%
   LeetCode.Algorithms.MinimumSwapsToGroupAll1Together2.MinimumSwapsToGroupAll1Together2SlidingWindow                                                   93.1%
+  LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceBase                                                                                 100.0%
+  LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceBucketSort                                                                           100.0%
+  LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceSorting                                                                              100.0%
   LeetCode.Algorithms.MissingNumber.MissingNumberCumulativeSum                                                                                        100.0%
   LeetCode.Algorithms.MissingNumber.MissingNumberIterativeSumAndSubtract                                                                              100.0%
   LeetCode.Algorithms.MissingNumber.MissingNumberSortAndForSearch                                                                                     100.0%
