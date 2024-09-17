@@ -10,20 +10,25 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MergeSortedArray;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MergeSortedArray;
 
 public abstract class MergeSortedArrayTestsBase<T> where T : IMergeSortedArray, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 2, 3, 0, 0, 0 }, 3, new[] { 2, 5, 6 }, 3, new[] { 1, 2, 2, 3, 5, 6 })]
-    [DataRow(new[] { 1 }, 1, new int[] { }, 0, new[] { 1 })]
-    [DataRow(new[] { 0 }, 0, new[] { 1 }, 1, new[] { 1 })]
-    [DataRow(new[] { 0, 0, 0, 0, 0 }, 0, new[] { 1, 2, 3, 4, 5 }, 5, new[] { 1, 2, 3, 4, 5 })]
-    public void Merge_WithTwoArraysAndSizes_MergesAndSortsIntoFirstArray(int[] nums1, int m, int[] nums2, int n,
-        int[] expectedResult)
+    [DataRow("[1,2,3,0,0,0]", 3, "[2,5,6]", 3, "[1,2,2,3,5,6]")]
+    [DataRow("[1]", 1, "[]", 0, "[1]")]
+    [DataRow("[0]", 0, "[1]", 1, "[1]")]
+    [DataRow("[0,0,0,0,0]", 0, "[1,2,3,4,5]", 5, "[1,2,3,4,5]")]
+    public void Merge_WithTwoArraysAndSizes_MergesAndSortsIntoFirstArray(string nums1JsonArray, int m,
+        string nums2JsonArray, int n, string expectedResultJsonArray)
     {
         // Arrange
+        var nums1 = JsonHelper<int>.DeserializeToArray(nums1JsonArray);
+        var nums2 = JsonHelper<int>.DeserializeToArray(nums2JsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+
         var solution = new T();
 
         // Act
