@@ -10,19 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.TaskScheduler;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.TaskScheduler;
 
 public abstract class TaskSchedulerTestsBase<T> where T : ITaskScheduler, new()
 {
     [TestMethod]
-    [DataRow(new[] { 'A', 'A', 'A', 'B', 'B', 'B' }, 2, 8)]
-    [DataRow(new[] { 'A', 'C', 'A', 'B', 'D', 'B' }, 1, 6)]
-    [DataRow(new[] { 'A', 'A', 'A', 'B', 'B', 'B' }, 3, 10)]
-    public void LeastInterval_GivenTasksAndCooldownPeriod_ReturnsMinimumIntervalsNeeded(char[] tasks, int n,
+    [DataRow("['A','A','A','B','B','B']", 2, 8)]
+    [DataRow("['A','C','A','B','D','B']", 1, 6)]
+    [DataRow("['A','A','A','B','B','B']", 3, 10)]
+    public void LeastInterval_GivenTasksAndCooldownPeriod_ReturnsMinimumIntervalsNeeded(string tasksJsonArray, int n,
         int expectedResult)
     {
         // Arrange
+        var tasks = JsonHelper<char>.DeserializeToArray(tasksJsonArray);
+
         var solution = new T();
 
         // Act
