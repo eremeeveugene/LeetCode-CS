@@ -10,29 +10,35 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RangeSumQueryImmutable;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.RangeSumQueryImmutable;
 
 public abstract class RangeSumQueryImmutableTestsBase<T> where T : IRangeSumQueryImmutableFactory, new()
 {
     [TestMethod]
-    [DataRow(new[] { -2, 0, 3, -5, 2, -1 }, new[] { 0, 2, 0 }, new[] { 2, 5, 5 }, new[] { 1, -1, -3 })]
-    public void SumRangeQuery_WithGivenArrays_ReturnsCorrectSumRange(int[] nums, int[] lefts, int[] rights,
-        int[] expectedResults)
+    [DataRow("[-2,0,3,-5,2,-1]", "[0,2,0]", "[2,5,5]", "[1,-1,-3]")]
+    public void SumRangeQuery_WithGivenArrays_ReturnsCorrectSumRange(string numsJsonArray, string leftsJsonArray,
+        string rightsJsonArray, string expectedResultJsonArray)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var lefts = JsonHelper<int>.DeserializeToArray(leftsJsonArray);
+        var rights = JsonHelper<int>.DeserializeToArray(rightsJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+
         var rangeSumQueryImmutableFactory = new T();
         var rangeSumQueryImmutable = rangeSumQueryImmutableFactory.Create(nums);
 
         // Act
-        var actualResults = new int[expectedResults.Length];
+        var actualResult = new int[expectedResult.Length];
 
-        for (var i = 0; i < actualResults.Length; i++)
+        for (var i = 0; i < actualResult.Length; i++)
         {
-            actualResults[i] = rangeSumQueryImmutable.SumRange(lefts[i], rights[i]);
+            actualResult[i] = rangeSumQueryImmutable.SumRange(lefts[i], rights[i]);
         }
 
         // Assert
-        CollectionAssert.AreEqual(actualResults, expectedResults);
+        CollectionAssert.AreEqual(actualResult, expectedResult);
     }
 }

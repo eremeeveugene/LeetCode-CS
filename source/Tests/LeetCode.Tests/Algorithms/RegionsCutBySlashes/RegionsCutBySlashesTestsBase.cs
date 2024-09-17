@@ -10,29 +10,26 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RegionsCutBySlashes;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.RegionsCutBySlashes;
 
 public abstract class RegionsCutBySlashesTestsBase<T> where T : IRegionsCutBySlashes, new()
 {
     [TestMethod]
-    [DataRow(new[] { " /", "  " }, 1)]
-    [DataRow(new[] { " /", "/ " }, 2)]
-    [DataRow(new[] { @"/\", @"\/" }, 5)]
-    [DataRow(new[] { @"/\/\", @"\/\/", @"/\/\", @"\/\\" }, 12)]
-    [DataRow(new[] { "   ", "   ", "   " }, 1)]
-    [DataRow(new[] { @" /\", @" \/", @"\  " }, 4)]
+    [DataRow("[\" /\",\"  \"]", 1)]
+    [DataRow("[\" /\",\"/ \"]", 2)]
+    [DataRow("[\"/\\\\\",\"\\\\/\"]", 5)]
+    [DataRow("[\"   \",\"   \",\"   \"]", 1)]
+    [DataRow("[\" /\\\\\",\" \\\\/\",\"\\\\  \"]", 4)]
     [DataRow(
-        new[]
-        {
-            @"/\/\  /\/\  /\/\", @"/\/\  /\/\  /\/\", @"/\/\  /\/\  /\/\", @"/\/\  /\/\  /\/\", @"/\/\  /\/\  /\/\",
-            @"/\/\  /\/\  /\/\", @"/\/\  /\/\  /\/\", @"/\/\  /\/\  /\/\", @"/\/\  /\/\  /\/\", @"/\/\  /\/\  /\/\",
-            @"/\/\  /\/\  /\/\", @"/\/\  /\/\  /\/\", @"/\/\  /\/\  /\/\", @"/\/\  /\/\  /\/\", @"/\/\  /\/\  /\/\",
-            @"/\/\  /\/\  /\/\"
-        }, 12)]
-    public void RegionsBySlashes_WithDifferentGrids_ReturnsRegionCount(string[] grid, int expectedResult)
+        "[\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\"]",
+        12)]
+    public void RegionsBySlashes_WithDifferentGrids_ReturnsRegionCount(string gridJsonArray, int expectedResult)
     {
         // Arrange
+        var grid = JsonHelper<string>.DeserializeToArray(gridJsonArray);
+
         var solution = new T();
 
         // Act
