@@ -18,7 +18,7 @@ public abstract class ValidPerfectSquareTestsBase<T> where T : IValidPerfectSqua
     [TestMethod]
     [DataRow(16, true)]
     [DataRow(14, false)]
-    [DataRow(2147483647, false)]
+    [DataRow(int.MaxValue, false)]
     public void IsPerfectSquare_GivenNumber_ReturnsWhetherNumberIsPerfectSquare(int num, bool expectedResult)
     {
         // Arrange

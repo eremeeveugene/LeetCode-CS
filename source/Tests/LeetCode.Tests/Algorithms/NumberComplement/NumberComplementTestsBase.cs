@@ -31,7 +31,7 @@ public abstract class NumberComplementTestsBase<T> where T : INumberComplement, 
     [DataRow(911, 112)]
     [DataRow(1073741824, 1073741823)]
     [DataRow(2100003647, 47480000)]
-    [DataRow(2147483647, 0)]
+    [DataRow(int.MaxValue, 0)]
     public void FindComplement_WithGivenNumber_ReturnsBitwiseComplement(int num, int expectedResult)
     {
         // Arrange

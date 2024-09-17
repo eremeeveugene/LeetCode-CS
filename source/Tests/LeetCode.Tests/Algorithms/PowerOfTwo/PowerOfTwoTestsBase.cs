@@ -21,7 +21,7 @@ public abstract class PowerOfTwoTestsBase<T> where T : IPowerOfTwo, new()
     [DataRow(16, true)]
     [DataRow(3, false)]
     [DataRow(8, true)]
-    [DataRow(-2147483648, false)]
+    [DataRow(int.MinValue, false)]
     public void IsPowerOfTwo_WithNumber_ReturnsTrueIfPowerOfTwoElseFalse(int n, bool expectedResult)
     {
         // Arrange
