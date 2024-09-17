@@ -1,21 +1,21 @@
 Summary
-  Generated on: 9/16/2024 - 6:36:05 PM
-  Coverage date: 9/16/2024 - 6:35:01 PM - 9/16/2024 - 6:35:21 PM
+  Generated on: 9/17/2024 - 9:56:18 AM
+  Coverage date: 9/17/2024 - 9:55:14 AM - 9/17/2024 - 9:55:35 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 577
-  Files: 577
+  Classes: 579
+  Files: 579
   Line coverage: 98.3%
-  Covered lines: 11282
+  Covered lines: 11319
   Uncovered lines: 190
-  Coverable lines: 11472
-  Total lines: 29198
-  Branch coverage: 96.5% (4377 of 4534)
-  Covered branches: 4377
-  Total branches: 4534
-  Method coverage: 98.9% (775 of 783)
-  Covered methods: 775
-  Total methods: 783
+  Coverable lines: 11509
+  Total lines: 29291
+  Branch coverage: 96.5% (4393 of 4550)
+  Covered branches: 4393
+  Total branches: 4550
+  Method coverage: 98.9% (777 of 785)
+  Covered methods: 777
+  Total methods: 785
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -558,6 +558,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.UglyNumber.UglyNumberMath                                                                                                        72.2%
   LeetCode.Algorithms.UglyNumber2.UglyNumber2DynamicProgramming                                                                                       100.0%
   LeetCode.Algorithms.UglyNumber2.UglyNumber2PriorityQueue                                                                                            100.0%
+  LeetCode.Algorithms.UncommonWordsFromTwoSentences.UncommonWordsFromTwoSentencesDictionary                                                           100.0%
+  LeetCode.Algorithms.UncommonWordsFromTwoSentences.UncommonWordsFromTwoSentencesHashSet                                                              100.0%
   LeetCode.Algorithms.UniqueMorseCodeWords.UniqueMorseCodeWordsHashSet                                                                                100.0%
   LeetCode.Algorithms.UniqueNumberOfOccurrences.UniqueNumberOfOccurrencesDictionary                                                                   100.0%
   LeetCode.Algorithms.ValidAnagram.ValidAnagramDictionary                                                                                              90.4%
