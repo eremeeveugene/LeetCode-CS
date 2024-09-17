@@ -10,19 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.NeitherMinimumNorMaximum;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.NeitherMinimumNorMaximum;
 
 public abstract class NeitherMinimumNorMaximumTestsBase<T> where T : INeitherMinimumNorMaximum, new()
 {
     [TestMethod]
-    [DataRow(new[] { 3, 2, 1, 4 }, 2)]
-    [DataRow(new[] { 1, 2 }, -1)]
-    [DataRow(new[] { 2, 1, 3 }, 2)]
-    [DataRow(new[] { 3, 30, 24 }, 24)]
-    public void FindNonMinOrMax_WithIntArray_ReturnsNonExtremeValue(int[] nums, int expectedResult)
+    [DataRow("[3,2,1,4]", 2)]
+    [DataRow("[1,2]", -1)]
+    [DataRow("[2,1,3]", 2)]
+    [DataRow("[3,30,24]", 24)]
+    public void FindNonMinOrMax_WithIntArray_ReturnsNonExtremeValue(string numsJsonArray, int expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         var solution = new T();
 
         // Act

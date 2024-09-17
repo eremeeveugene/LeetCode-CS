@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfMovesToSeatEveryone;
 
@@ -17,13 +18,16 @@ public abstract class MinimumNumberOfMovesToSeatEveryoneTestsBase<T>
     where T : IMinimumNumberOfMovesToSeatEveryone, new()
 {
     [TestMethod]
-    [DataRow(new[] { 3, 1, 5 }, new[] { 2, 7, 4 }, 4)]
-    [DataRow(new[] { 4, 1, 5, 9 }, new[] { 1, 3, 2, 6 }, 7)]
-    [DataRow(new[] { 2, 2, 6, 6 }, new[] { 1, 3, 2, 6 }, 4)]
-    public void MinMovesToSeat_WithGivenSeatsAndStudents_ReturnsExpectedResult(int[] seats, int[] students,
-        int expectedResult)
+    [DataRow("[3,1,5]", "[2,7,4]", 4)]
+    [DataRow("[4,1,5,9]", "[1,3,2,6]", 7)]
+    [DataRow("[2,2,6,6]", "[1,3,2,6]", 4)]
+    public void MinMovesToSeat_WithGivenSeatsAndStudents_ReturnsExpectedResult(string seatsJsonArray,
+        string studentsJsonArray, int expectedResult)
     {
         // Arrange
+        var seats = JsonHelper<int>.DeserializeToArray(seatsJsonArray);
+        var students = JsonHelper<int>.DeserializeToArray(studentsJsonArray);
+
         var solution = new T();
 
         // Act
