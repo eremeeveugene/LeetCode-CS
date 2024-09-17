@@ -18,16 +18,17 @@ namespace LeetCode.Tests.Algorithms.LinkedListInBinaryTree;
 public abstract class LinkedListInBinaryTreeTestsBase<T> where T : ILinkedListInBinaryTree, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1 }, "[1]", true)]
-    [DataRow(new[] { 4, 2, 8 }, "[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]", true)]
-    [DataRow(new[] { 1, 4, 2, 6 }, "[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]", true)]
-    [DataRow(new[] { 1, 4, 2, 6, 8 }, "[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]", false)]
-    [DataRow(new[] { 1, 10 }, "[1,null,1,10,1,9]", true)]
-    [DataRow(new[] { 2, 2, 1 }, "[2,null,2,null,2,null,1]", true)]
-    public void IsSubPath_WithLinkedListAndBinaryTree_ReturnsIfLinkedListIsSubPath(int[] headArray,
+    [DataRow("[1]", "[1]", true)]
+    [DataRow("[4,2,8]", "[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]", true)]
+    [DataRow("[1,4,2,6]", "[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]", true)]
+    [DataRow("[1,4,2,6,8]", "[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]", false)]
+    [DataRow("[1,10]", "[1,null,1,10,1,9]", true)]
+    [DataRow("[2,2,1]", "[2,null,2,null,2,null,1]", true)]
+    public void IsSubPath_WithLinkedListAndBinaryTree_ReturnsIfLinkedListIsSubPath(string headJsonArray,
         string rootJsonArray, bool expectedResult)
     {
         // Arrange
+        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
         var head = ListNode.ToListNode(headArray) ?? throw new InvalidOperationException(
             $"Failed to convert headArray to ListNode. Input array: [{string.Join(",", headArray)}]");
 
