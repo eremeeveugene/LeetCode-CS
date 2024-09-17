@@ -17,9 +17,6 @@ namespace LeetCode.Tests.Algorithms.TrappingRainWater;
 public abstract class TrappingRainWaterTestsBase<T> where T : ITrappingRainWater, new()
 {
     [TestMethod]
-    [DataRow(new[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 }, 6)]
-    [DataRow(new[] { 4, 2, 0, 3, 2, 5 }, 9)]
-    public void Trap_WithHeightsArray_ReturnsTrappedWaterAmount(int[] height, int expectedResult)
     [DataRow("[0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]", 6)]
     [DataRow("[4, 2, 0, 3, 2, 5]", 9)]
     public void Trap_WithHeightArray_ReturnsTrappedWaterAmount(string heightJsonArray, int expectedResult)

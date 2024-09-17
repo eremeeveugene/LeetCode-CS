@@ -1,4 +1,15 @@
-﻿using LeetCode.Algorithms.SpiralMatrix4;
+﻿// --------------------------------------------------------------------------------
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// All Rights Reserved.
+// --------------------------------------------------------------------------------
+// This software is the confidential and proprietary information of Eugene Eremeev
+// (also known as Yevhenii Yeriemeieiv) ("Confidential Information"). You shall not
+// disclose such Confidential Information and shall use it only in accordance with
+// the terms of the license agreement you entered into with Eugene Eremeev (also
+// known as Yevhenii Yeriemeieiv).
+// --------------------------------------------------------------------------------
+
+using LeetCode.Algorithms.SpiralMatrix4;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
@@ -19,7 +30,7 @@ public abstract class SpiralMatrix4TestsBase<T> where T : ISpiralMatrix4, new()
         var head = ListNode.ToListNode(headArray) ??
                    throw new InvalidOperationException(
                        $"Conversion of headArray to ListNode failed for test input {string.Join(",", headArray)}.");
-        var expectedResult = JsonHelper<int>.JsonArrayToJaggedArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
 
         var solution = new T();
 

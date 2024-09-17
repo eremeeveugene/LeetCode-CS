@@ -1,4 +1,15 @@
-﻿using LeetCode.Algorithms.WalkingRobotSimulation;
+﻿// --------------------------------------------------------------------------------
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// All Rights Reserved.
+// --------------------------------------------------------------------------------
+// This software is the confidential and proprietary information of Eugene Eremeev
+// (also known as Yevhenii Yeriemeieiv) ("Confidential Information"). You shall not
+// disclose such Confidential Information and shall use it only in accordance with
+// the terms of the license agreement you entered into with Eugene Eremeev (also
+// known as Yevhenii Yeriemeieiv).
+// --------------------------------------------------------------------------------
+
+using LeetCode.Algorithms.WalkingRobotSimulation;
 using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.WalkingRobotSimulation;
@@ -18,7 +29,7 @@ public abstract class WalkingRobotSimulationTestsBase<T> where T : IWalkingRobot
         int expectedResult)
     {
         // Arrange
-        var obstacles = JsonHelper<int>.JsonArrayToJaggedArray(obstaclesJsonArray);
+        var obstacles = JsonHelper<int>.DeserializeToJaggedArray(obstaclesJsonArray);
 
         var solution = new T();
 
