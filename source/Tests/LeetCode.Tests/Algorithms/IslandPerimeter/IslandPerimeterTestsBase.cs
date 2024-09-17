@@ -23,7 +23,7 @@ public abstract class IslandPerimeterTestsBase<T> where T : IIslandPerimeter, ne
     public void IslandPerimeter_GivenGrid_ReturnsCorrectPerimeter(string gridJsonArray, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int>.JsonArrayToJaggedArray(gridJsonArray);
+        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJsonArray);
 
         var solution = new T();
 

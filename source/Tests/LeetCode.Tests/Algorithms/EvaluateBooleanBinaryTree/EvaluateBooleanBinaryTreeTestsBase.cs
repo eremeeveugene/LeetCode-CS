@@ -30,7 +30,7 @@ public abstract class EvaluateBooleanBinaryTreeTestsBase<T> where T : IEvaluateB
         bool expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.JsonArrayToList(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToList(rootJsonArray);
         var root = TreeNode.BuildTree(rootArray);
 
         var solution = new T();

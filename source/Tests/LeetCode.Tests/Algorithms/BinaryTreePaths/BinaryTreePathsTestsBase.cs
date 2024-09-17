@@ -18,14 +18,17 @@ namespace LeetCode.Tests.Algorithms.BinaryTreePaths;
 public abstract class BinaryTreePathsTestsBase<T> where T : IBinaryTreePaths, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,null,5]", new[] { "1->2->5", "1->3" })]
-    [DataRow("[1]", new[] { "1" })]
-    public void BinaryTreePaths_GivenTreeInJson_ReturnsAllRootToLeafPaths(string jsonRootArray, string[] expectedResult)
+    [DataRow("[1,2,3,null,5]", "[\"1->2->5\", \"1->3\"]")]
+    [DataRow("[1]", "[\"1\"]")]
+    public void BinaryTreePaths_GivenTreeInJson_ReturnsAllRootToLeafPaths(string jsonRootArray,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJsonArray);
+
         var solution = new T();
 
-        var rootArray = JsonHelper<int?>.JsonArrayToList(jsonRootArray);
+        var rootArray = JsonHelper<int?>.DeserializeToList(jsonRootArray);
         var root = TreeNode.BuildTree(rootArray);
 
         // Act

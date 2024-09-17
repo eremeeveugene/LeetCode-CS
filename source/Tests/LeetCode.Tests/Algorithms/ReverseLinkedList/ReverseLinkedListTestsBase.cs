@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ReverseLinkedList;
+using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -18,15 +19,16 @@ namespace LeetCode.Tests.Algorithms.ReverseLinkedList;
 public abstract class ReverseLinkedListTestsBase<T> where T : IReverseLinkedList, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 2, 3, 4, 5 }, new[] { 5, 4, 3, 2, 1 })]
-    [DataRow(new[] { 1, 2 }, new[] { 2, 1 })]
-    [DataRow(new int[] { }, new int[] { })]
-    public void ReverseList_WithVariousHeadArrays_ReturnsExpectedReversedList(int[] headArray,
-        int[] expectedResultArray)
+    [DataRow("[]", "[]")]
+    [DataRow("[1,2]", "[2,1]")]
+    [DataRow("[1,2,3,4,5]", "[5,4,3,2,1]")]
+    public void ReverseList_WithVariousHeadArrays_ReturnsExpectedReversedList(string headJsonArray,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
         var head = ListNode.ToListNode(headArray);
-
+        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

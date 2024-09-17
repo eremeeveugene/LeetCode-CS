@@ -10,19 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ContainsDuplicate2;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ContainsDuplicate2;
 
 public abstract class ContainsDuplicate2TestsBase<T> where T : IContainsDuplicate2, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 2, 3, 1 }, 3, true)]
-    [DataRow(new[] { 1, 0, 1, 1 }, 1, true)]
-    [DataRow(new[] { 1, 2, 3, 1, 2, 3 }, 2, false)]
-    public void ContainsNearbyDuplicate_WithGivenRange_ChecksForDuplicatesWithinRange(int[] nums, int k,
+    [DataRow("[1, 2, 3, 1]", 3, true)]
+    [DataRow("[1, 0, 1, 1]", 1, true)]
+    [DataRow("[1, 2, 3, 1, 2, 3]", 2, false)]
+    public void ContainsNearbyDuplicate_WithGivenRange_ChecksForDuplicatesWithinRange(string numsJsonArray, int k,
         bool expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         var solution = new T();
 
         // Act

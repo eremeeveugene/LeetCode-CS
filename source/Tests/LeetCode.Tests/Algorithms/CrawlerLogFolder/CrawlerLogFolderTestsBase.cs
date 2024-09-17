@@ -10,18 +10,21 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CrawlerLogFolder;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CrawlerLogFolder;
 
 public abstract class CrawlerLogFolderTestsBase<T> where T : ICrawlerLogFolder, new()
 {
     [TestMethod]
-    [DataRow(new[] { "d1/", "../", "../", "../" }, 0)]
-    [DataRow(new[] { "d1/", "d2/", "../", "d21/", "./" }, 2)]
-    [DataRow(new[] { "d1/", "d2/", "./", "d3/", "../", "d31/" }, 3)]
-    public void MinOperations_GivenLogsArray_ReturnsMinOperationsCount(string[] logs, int expectedResult)
+    [DataRow("[\"d1/\", \"../\", \"../\", \"../\"]", 0)]
+    [DataRow("[\"d1/\", \"d2/\", \"../\", \"d21/\", \"./\"]", 2)]
+    [DataRow("[\"d1/\", \"d2/\", \"./\", \"d3/\", \"../\", \"d31/\"]", 3)]
+    public void MinOperations_GivenLogsArray_ReturnsMinOperationsCount(string logsJsonArray, int expectedResult)
     {
         // Arrange
+        var logs = JsonHelper<string>.DeserializeToArray(logsJsonArray);
+
         var solution = new T();
 
         // Act

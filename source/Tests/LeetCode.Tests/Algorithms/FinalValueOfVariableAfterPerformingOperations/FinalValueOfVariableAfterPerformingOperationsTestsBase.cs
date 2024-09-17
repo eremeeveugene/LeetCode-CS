@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FinalValueOfVariableAfterPerformingOperations;
 
@@ -17,13 +18,15 @@ public abstract class FinalValueOfVariableAfterPerformingOperationsTestsBase<T>
     where T : IFinalValueOfVariableAfterPerformingOperations, new()
 {
     [TestMethod]
-    [DataRow(new[] { "--X", "X++", "X++" }, 1)]
-    [DataRow(new[] { "++X", "++X", "X++" }, 3)]
-    [DataRow(new[] { "X++", "++X", "--X", "X--" }, 0)]
-    public void FinalValueAfterOperations_GivenOperationsArray_ReturnsExpectedFinalValue(string[] sentences,
+    [DataRow("[\"--X\", \"X++\", \"X++\"]", 1)]
+    [DataRow("[\"++X\", \"++X\", \"X++\"]", 3)]
+    [DataRow("[\"X++\", \"++X\", \"--X\", \"X--\"]", 0)]
+    public void FinalValueAfterOperations_GivenOperationsArray_ReturnsExpectedFinalValue(string sentencesJsonArray,
         int expectedResult)
     {
         // Arrange
+        var sentences = JsonHelper<string>.DeserializeToArray(sentencesJsonArray);
+
         var solution = new T();
 
         // Act

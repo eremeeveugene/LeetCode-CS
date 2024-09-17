@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Concurrency.PrintInOrder;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Concurrency.PrintInOrder;
 
@@ -20,12 +21,15 @@ public abstract class PrintInOrderTestsBase<T> where T : IPrintInOrder, new()
     private const string Third = "third";
 
     [TestMethod]
-    [DataRow(new[] { 1, 2, 3 })]
-    [DataRow(new[] { 2, 3, 1 })]
-    [DataRow(new[] { 3, 1, 2 })]
-    public async Task PrintInOrderThreadSleep_ExecuteTasksInVariableOrder_ProducesConsistentOrderedOutput(int[] nums)
+    [DataRow("[1, 2, 3]")]
+    [DataRow("[2, 3, 1]")]
+    [DataRow("[3, 1, 2]")]
+    public async Task PrintInOrderThreadSleep_ExecuteTasksInVariableOrder_ProducesConsistentOrderedOutput(
+        string numsJsonArray)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         const string expectedResult = First + Second + Third;
         var actualResult = string.Empty;
         var printInOrder = new T();

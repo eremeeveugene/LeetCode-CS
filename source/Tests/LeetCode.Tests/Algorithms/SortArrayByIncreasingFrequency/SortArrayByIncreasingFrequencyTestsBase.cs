@@ -10,18 +10,23 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SortArrayByIncreasingFrequency;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SortArrayByIncreasingFrequency;
 
 public abstract class SortArrayByIncreasingFrequencyTestsBase<T> where T : ISortArrayByIncreasingFrequency, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 1, 2, 2, 2, 3 }, new[] { 3, 1, 1, 2, 2, 2 })]
-    [DataRow(new[] { 2, 3, 1, 3, 2 }, new[] { 1, 3, 3, 2, 2 })]
-    [DataRow(new[] { -1, 1, -6, 4, 5, -6, 1, 4, 1 }, new[] { 5, -1, 4, 4, -6, -6, 1, 1, 1 })]
-    public void FrequencySort_GivenNumsArray_ReturnsArraySortedByFrequency(int[] nums, int[] expectedResult)
+    [DataRow("[1,1,2,2,2,3]", "[3,1,1,2,2,2]")]
+    [DataRow("[2,3,1,3,2]", "[1,3,3,2,2]")]
+    [DataRow("[-1,1,-6,4,5,-6,1,4,1]", "[5,-1,4,4,-6,-6,1,1,1]")]
+    public void FrequencySort_GivenNumsArray_ReturnsArraySortedByFrequency(string numsJsonArray,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+
         var solution = new T();
 
         // Act

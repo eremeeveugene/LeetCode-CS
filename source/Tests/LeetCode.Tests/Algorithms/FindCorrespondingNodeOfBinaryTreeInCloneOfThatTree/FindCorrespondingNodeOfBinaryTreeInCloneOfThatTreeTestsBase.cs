@@ -27,9 +27,9 @@ public abstract class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeTestsBas
         int expectedResultValue)
     {
         // Arrange
-        var treeArray = JsonHelper<int?>.JsonArrayToList(treeJsonArray);
-        var original = TreeNode.BuildTree(treeArray) ?? throw new InvalidOperationException();
-        var cloned = TreeNode.BuildTree(treeArray) ?? throw new InvalidOperationException();
+        var treeArray = JsonHelper<int?>.DeserializeToList(treeJsonArray);
+        var original = TreeNode.BuildNonNullTree(treeArray);
+        var cloned = TreeNode.BuildNonNullTree(treeArray);
 
         TreeNode? target = null;
 

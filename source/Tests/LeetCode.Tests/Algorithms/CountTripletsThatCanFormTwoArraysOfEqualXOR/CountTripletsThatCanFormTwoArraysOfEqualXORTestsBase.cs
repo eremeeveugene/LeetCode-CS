@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR;
 
@@ -17,12 +18,14 @@ public abstract class CountTripletsThatCanFormTwoArraysOfEqualXORTestsBase<T>
     where T : ICountTripletsThatCanFormTwoArraysOfEqualXOR, new()
 {
     [TestMethod]
-    [DataRow(new[] { 2, 3, 1, 6, 7 }, 4)]
-    [DataRow(new[] { 1, 1, 1, 1, 1 }, 10)]
-    [DataRow(new[] { 1, 1, 1, 1, 1 }, 10)]
-    public void CountTriplets_GivenArray_ReturnsExpectedTripletCount(int[] arr, int expectedResult)
+    [DataRow("[2, 3, 1, 6, 7]", 4)]
+    [DataRow("[1, 1, 1, 1, 1]", 10)]
+    [DataRow("[1, 1, 1, 1, 1]", 10)]
+    public void CountTriplets_GivenArray_ReturnsExpectedTripletCount(string arrJsonArray, int expectedResult)
     {
         // Arrange
+        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+
         var solution = new T();
 
         // Act

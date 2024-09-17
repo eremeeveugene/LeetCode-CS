@@ -20,12 +20,14 @@ public abstract class ConvertSortedArrayToBinarySearchTreeTestsBase<T>
     where T : IConvertSortedArrayToBinarySearchTree, new()
 {
     [TestMethod]
-    [DataRow(new[] { -10, -3, 0, 5, 9 }, "[0,-10,5,null,-3,null,9]")]
-    [DataRow(new[] { 1, 3 }, "[1,null,3]")]
-    public void SortedArrayToBST_WithArrayInput_ReturnsBalancedBST(int[] nums, string expectedResultJsonArray)
+    [DataRow("[-10, -3, 0, 5, 9]", "[0,-10,5,null,-3,null,9]")]
+    [DataRow("[1, 3]", "[1,null,3]")]
+    public void SortedArrayToBST_WithArrayInput_ReturnsBalancedBST(string numsJsonArray, string expectedResultJsonArray)
     {
         // Arrange
-        var expectedResultArray = JsonHelper<int?>.JsonArrayToList(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
+        var expectedResultArray = JsonHelper<int?>.DeserializeToList(expectedResultJsonArray);
         var expectedResult = TreeNode.BuildTree(expectedResultArray);
 
         var solution = new T();

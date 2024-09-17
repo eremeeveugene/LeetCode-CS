@@ -26,7 +26,7 @@ public abstract class MaximumDistanceInArraysTestsBase<T> where T : IMaximumDist
         // Arrange
         var solution = new T();
 
-        var arrays = JsonHelper<int>.JsonArrayToJaggedList(arraysJsonArray);
+        var arrays = JsonHelper<int>.DeserializeToJaggedList(arraysJsonArray);
 
         // Act
         var actualResult = solution.MaxDistance(arrays);

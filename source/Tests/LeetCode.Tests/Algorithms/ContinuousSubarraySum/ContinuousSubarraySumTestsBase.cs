@@ -10,19 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ContinuousSubarraySum;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ContinuousSubarraySum;
 
 public abstract class ContinuousSubarraySumTestsBase<T> where T : IContinuousSubarraySum, new()
 {
     [TestMethod]
-    [DataRow(new[] { 23, 2, 4, 6, 7 }, 6, true)]
-    [DataRow(new[] { 23, 2, 6, 4, 7 }, 6, true)]
-    [DataRow(new[] { 23, 2, 6, 4, 7 }, 13, false)]
-    public void CheckSubarraySum_GivenArrayAndK_ReturnsIfSubarraySumIsMultipleOfK(int[] nums, int k,
+    [DataRow("[23, 2, 4, 6, 7]", 6, true)]
+    [DataRow("[23, 2, 6, 4, 7]", 6, true)]
+    [DataRow("[23, 2, 6, 4, 7]", 13, false)]
+    public void CheckSubarraySum_GivenArrayAndK_ReturnsIfSubarraySumIsMultipleOfK(string numsJsonArray, int k,
         bool expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         var solution = new T();
 
         // Act

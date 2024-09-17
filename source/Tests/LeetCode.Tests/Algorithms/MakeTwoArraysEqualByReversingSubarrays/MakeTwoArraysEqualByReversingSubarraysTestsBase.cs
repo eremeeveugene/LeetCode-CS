@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MakeTwoArraysEqualByReversingSubarrays;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MakeTwoArraysEqualByReversingSubarrays;
 
@@ -17,12 +18,16 @@ public abstract class MakeTwoArraysEqualByReversingSubarraysTestsBase<T>
     where T : IMakeTwoArraysEqualByReversingSubarrays, new()
 {
     [TestMethod]
-    [DataRow(new[] { 7 }, new[] { 7 }, true)]
-    [DataRow(new[] { 1, 2, 3, 4 }, new[] { 2, 4, 1, 3 }, true)]
-    [DataRow(new[] { 3, 7, 9 }, new[] { 3, 7, 11 }, false)]
-    public void CanBeEqual_GivenTargetAndArray_ReturnsIfTheyCanBeEqual(int[] target, int[] arr, bool expectedResult)
+    [DataRow("[7]", "[7]", true)]
+    [DataRow("[1,2,3,4]", "[2,4,1,3]", true)]
+    [DataRow("[3,7,9]", "[3,7,11]", false)]
+    public void CanBeEqual_GivenTargetAndArray_ReturnsIfTheyCanBeEqual(string targetJsonArray, string arrJsonArray,
+        bool expectedResult)
     {
         // Arrange
+        var target = JsonHelper<int>.DeserializeToArray(targetJsonArray);
+        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+
         var solution = new T();
 
         // Act

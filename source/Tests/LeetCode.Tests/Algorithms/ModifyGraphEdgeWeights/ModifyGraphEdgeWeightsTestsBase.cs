@@ -1,4 +1,15 @@
-﻿using LeetCode.Algorithms.ModifyGraphEdgeWeights;
+﻿// --------------------------------------------------------------------------------
+// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// All Rights Reserved.
+// --------------------------------------------------------------------------------
+// This software is the confidential and proprietary information of Eugene Eremeev
+// (also known as Yevhenii Yeriemeieiv) ("Confidential Information"). You shall not
+// disclose such Confidential Information and shall use it only in accordance with
+// the terms of the license agreement you entered into with Eugene Eremeev (also
+// known as Yevhenii Yeriemeieiv).
+// --------------------------------------------------------------------------------
+
+using LeetCode.Algorithms.ModifyGraphEdgeWeights;
 using LeetCode.Core.Helpers;
 using LeetCode.Tests.Base.Extensions;
 
@@ -14,8 +25,8 @@ public abstract class ModifyGraphEdgeWeightsTestsBase<T> where T : IModifyGraphE
         int destination, int target, string expectedResultJsonArray)
     {
         // Arrange
-        var edges = JsonHelper<int>.JsonArrayToJaggedArray(edgesJsonArray);
-        var expectedResult = JsonHelper<int>.JsonArrayToJaggedArray(expectedResultJsonArray);
+        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
 
         var solution = new T();
 

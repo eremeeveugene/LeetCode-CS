@@ -10,18 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindKthSmallestPairDistance;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindKthSmallestPairDistance;
 
 public abstract class FindKthSmallestPairDistanceTestsBase<T> where T : IFindKthSmallestPairDistance, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 3, 1 }, 1, 0)]
-    [DataRow(new[] { 1, 1, 1 }, 2, 0)]
-    [DataRow(new[] { 1, 6, 1 }, 3, 5)]
-    public void SmallestDistancePair_GivenArrayAndK_ReturnsExpectedDistance(int[] nums, int k, int expectedResult)
+    [DataRow("[1, 3, 1]", 1, 0)]
+    [DataRow("[1, 1, 1]", 2, 0)]
+    [DataRow("[1, 6, 1]", 3, 5)]
+    public void SmallestDistancePair_GivenArrayAndK_ReturnsExpectedDistance(string numsJsonArray, int k,
+        int expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         var solution = new T();
 
         // Act

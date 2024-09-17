@@ -20,7 +20,7 @@ public abstract class ReverseIntegerTestsBase<T> where T : IReverseInteger, new(
     [DataRow(-123, -321)]
     [DataRow(120, 21)]
     [DataRow(1534236469, 0)]
-    [DataRow(-2147483648, 0)]
+    [DataRow(int.MinValue, 0)]
     public void Reverse_IntegerInput_ReturnsExpectedReversedInteger(int x, int expectedResult)
     {
         // Arrange

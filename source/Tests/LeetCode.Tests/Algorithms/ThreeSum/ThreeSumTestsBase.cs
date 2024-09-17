@@ -10,28 +10,29 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ThreeSum;
-using Newtonsoft.Json;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ThreeSum;
 
 public abstract class ThreeSumTestsBase<T> where T : IThreeSum, new()
 {
     [TestMethod]
-    [DataRow(new[] { -1, 0, 1, 2, -1, -4 }, "[[-1, -1, 2], [-1, 0, 1]]")]
-    [DataRow(new[] { 0, 1, 1 }, "[]")]
-    [DataRow(new[] { 0, 0, 0 }, "[[0, 0, 0]]")]
-    [DataRow(new[] { -3, -2, 1, 1, 2 }, "[[-3, 1, 2], [-2, 1, 1]]")]
-    [DataRow(new[] { 3, 0, -2, -1, 1, 2 }, "[[-2, -1, 3],[-2, 0, 2],[-1, 0, 1]]")]
-    public void ThreeSum_WithIntArray_ReturnsTripletsThatSumToZero(int[] nums, string expectedResultJson)
+    [DataRow("[-1, 0, 1, 2, -1, -4]", "[[-1, -1, 2], [-1, 0, 1]]")]
+    [DataRow("[ 0, 1, 1]", "[]")]
+    [DataRow("[0, 0, 0]", "[[0, 0, 0]]")]
+    [DataRow("[-3, -2, 1, 1, 2]", "[[-3, 1, 2], [-2, 1, 1]]")]
+    [DataRow("[3, 0, -2, -1, 1, 2]", "[[-2, -1, 3],[-2, 0, 2],[-1, 0, 1]]")]
+    public void ThreeSum_WithIntArray_ReturnsTripletsThatSumToZero(string numsJsonArray, string expectedResultJsonArray)
     {
         // Arrange
-        var solution = new T();
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
 
-        var expectedResult = JsonConvert.DeserializeObject<int[][]>(expectedResultJson);
+        var solution = new T();
 
         // Act
         var actualResult = solution.ThreeSum(nums);
 
-        Assert.AreEqual(expectedResult!.Length, actualResult.Count);
+        Assert.AreEqual(expectedResult.Length, actualResult.Count);
     }
 }

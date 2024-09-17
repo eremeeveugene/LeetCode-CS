@@ -10,17 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumNumberGame;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberGame;
 
 public abstract class MinimumNumberGameTestsBase<T> where T : IMinimumNumberGame, new()
 {
     [TestMethod]
-    [DataRow(new[] { 5, 4, 2, 3 }, new[] { 3, 2, 5, 4 })]
-    [DataRow(new[] { 2, 5 }, new[] { 5, 2 })]
-    public void NumberGame_GivenCostArray_ReturnsExpectedRearrangedArray(int[] cost, int[] expectedResult)
+    [DataRow("[5, 4, 2, 3]", "[3, 2, 5, 4]")]
+    [DataRow("[2, 5]", "[5, 2]")]
+    public void NumberGame_GivenCostArray_ReturnsExpectedRearrangedArray(string costJsonArray,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var cost = JsonHelper<int>.DeserializeToArray(costJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+
         var solution = new T();
 
         // Act

@@ -17,17 +17,18 @@ namespace LeetCode.Tests.Algorithms.FindTheMaximumSumOfNodeValues;
 public abstract class FindTheMaximumSumOfNodeValuesTestsBase<T> where T : IFindTheMaximumSumOfNodeValues, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 2, 1 }, 3, "[[0,1],[0,2]]", 6)]
-    [DataRow(new[] { 2, 3 }, 7, "[[0,1]]", 9)]
-    [DataRow(new[] { 7, 7, 7, 7, 7, 7 }, 3, "[[0,1],[0,2],[0,3],[0,4],[0,5]]", 42)]
-    [DataRow(new[] { 24, 78, 1, 97, 44 }, 6, "[[0,2],[1,2],[4,2],[3,4]]", 260)]
-    public void MaximumValueSum_WithVariousInputs_ReturnsExpectedResult(int[] nums, int k, string edgesJsonArray,
-        long expectedResult)
+    [DataRow("[1, 2, 1]", 3, "[[0,1],[0,2]]", 6)]
+    [DataRow("[2, 3]", 7, "[[0,1]]", 9)]
+    [DataRow("[7, 7, 7, 7, 7, 7]", 3, "[[0,1],[0,2],[0,3],[0,4],[0,5]]", 42)]
+    [DataRow("[24, 78, 1, 97, 44]", 6, "[[0,2],[1,2],[4,2],[3,4]]", 260)]
+    public void MaximumValueSum_WithVariousInputs_ReturnsExpectedResult(string numsJsonArray, int k,
+        string edgesJsonArray, long expectedResult)
     {
         // Arrange
-        var solution = new T();
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJsonArray);
 
-        var edges = JsonHelper<int>.JsonArrayToJaggedArray(edgesJsonArray);
+        var solution = new T();
 
         // Act
         var actualResult = solution.MaximumValueSum(nums, k, edges);

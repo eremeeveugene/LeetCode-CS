@@ -10,18 +10,23 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RankTransformOfAnArray;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.RankTransformOfAnArray;
 
 public abstract class RankTransformOfAnArrayTestsBase<T> where T : IRankTransformOfAnArray, new()
 {
     [TestMethod]
-    [DataRow(new[] { 40, 10, 20, 30 }, new[] { 4, 1, 2, 3 })]
-    [DataRow(new[] { 100, 100, 100 }, new[] { 1, 1, 1 })]
-    [DataRow(new[] { 37, 12, 28, 9, 100, 56, 80, 5, 12 }, new[] { 5, 3, 4, 2, 8, 6, 7, 1, 3 })]
-    public void ArrayRankTransform_WithUnsortedArray_ReturnsRankedArray(int[] arr, int[] expectedResult)
+    [DataRow("[40,10,20,30]", "[4,1,2,3]")]
+    [DataRow("[100,100,100]", "[1,1,1]")]
+    [DataRow("[37,12,28,9,100,56,80,5,12]", "[5,3,4,2,8,6,7,1,3]")]
+    public void ArrayRankTransform_WithUnsortedArray_ReturnsRankedArray(string arrJsonArray,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+
         var solution = new T();
 
         // Act

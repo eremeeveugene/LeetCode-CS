@@ -10,17 +10,20 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BestTimeToBuyAndSellStock;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.BestTimeToBuyAndSellStock;
 
 public abstract class BestTimeToBuyAndSellStockTestsBase<T> where T : IBestTimeToBuyAndSellStock, new()
 {
     [TestMethod]
-    [DataRow(new[] { 7, 1, 5, 3, 6, 4 }, 5)]
-    [DataRow(new[] { 7, 6, 4, 3, 1 }, 0)]
-    public void MaxProfit_GivenPriceArray_ReturnsMaximumProfit(int[] prices, int expectedResult)
+    [DataRow("[7, 1, 5, 3, 6, 4]", 5)]
+    [DataRow("[7, 6, 4, 3, 1]", 0)]
+    public void MaxProfit_GivenPriceArray_ReturnsMaximumProfit(string pricesJsonArray, int expectedResult)
     {
         // Arrange
+        var prices = JsonHelper<int>.DeserializeToArray(pricesJsonArray);
+
         var solution = new T();
 
         // Act

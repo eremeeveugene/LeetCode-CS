@@ -12,10 +12,11 @@
 using LeetCode.Core.Models;
 
 namespace LeetCode.Algorithms.DeleteNodesAndReturnForest;
+
 /// <summary>
-/// https://leetcode.com/problems/delete-nodes-and-return-forest/
+///     https://leetcode.com/problems/delete-nodes-and-return-forest/
 /// </summary>
 public interface IDeleteNodesAndReturnForest
 {
-    IList<TreeNode> DelNodes(TreeNode? root, int[] to_delete);
+    IList<TreeNode> DelNodes(TreeNode? root, int[] toDelete);
 }

@@ -18,15 +18,17 @@ namespace LeetCode.Tests.Algorithms.Permutations;
 public abstract class PermutationsTestsBase<T> where T : IPermutations, new()
 {
     [TestMethod]
-    [DataRow(new[] { 0 }, "[[0]]")]
-    [DataRow(new[] { 0, 1 }, "[[0,1],[1,0]]")]
-    [DataRow(new[] { 0, 1, 2 }, "[[1,2,0],[1,0,2],[2,1,0],[2,0,1],[0,1,2],[0,2,1]]")]
-    public void Permute_WithDifferentArraySizes_ReturnsAllPermutations(int[] nums, string expectedResultJsonArray)
+    [DataRow("[0]", "[[0]]")]
+    [DataRow("[0,1]", "[[0,1],[1,0]]")]
+    [DataRow("[0,1,2]", "[[1,2,0],[1,0,2],[2,1,0],[2,0,1],[0,1,2],[0,2,1]]")]
+    public void Permute_WithDifferentArraySizes_ReturnsAllPermutations(string numsJsonArray,
+        string expectedResultJsonArray)
     {
         // Arrange
-        var solution = new T();
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedList(expectedResultJsonArray);
 
-        var expectedResult = JsonHelper<int>.JsonArrayToJaggedList(expectedResultJsonArray);
+        var solution = new T();
 
         // Act
         var actualResult = solution.Permute(nums);

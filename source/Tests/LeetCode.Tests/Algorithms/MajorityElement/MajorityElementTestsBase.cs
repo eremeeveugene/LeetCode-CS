@@ -10,17 +10,20 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MajorityElement;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MajorityElement;
 
 public abstract class MajorityElementTestsBase<T> where T : IMajorityElement, new()
 {
     [TestMethod]
-    [DataRow(new[] { 3, 2, 3 }, 3)]
-    [DataRow(new[] { 2, 2, 1, 1, 1, 2, 2 }, 2)]
-    public void MajorityElement_WithIntegerArray_ReturnsMajorityElement(int[] nums, int expectedResult)
+    [DataRow("[3,2,3]", 3)]
+    [DataRow("[2,2,1,1,1,2,2]", 2)]
+    public void MajorityElement_WithIntegerArray_ReturnsMajorityElement(string numsJsonArray, int expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         var solution = new T();
 
         // Act

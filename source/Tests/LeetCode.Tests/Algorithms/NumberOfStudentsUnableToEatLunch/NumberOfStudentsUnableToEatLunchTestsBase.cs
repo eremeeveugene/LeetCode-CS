@@ -10,18 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.NumberOfStudentsUnableToEatLunch;
 
 public abstract class NumberOfStudentsUnableToEatLunchTestsBase<T> where T : INumberOfStudentsUnableToEatLunch, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 1, 0, 0 }, new[] { 0, 1, 0, 1 }, 0)]
-    [DataRow(new[] { 1, 1, 1, 0, 0, 1 }, new[] { 1, 0, 0, 0, 1, 1 }, 3)]
-    public void CountStudents_WithStudentsAndSandwichesArray_ReturnsUnsatisfiedStudentsCount(int[] students,
-        int[] sandwiches, int expectedResult)
+    [DataRow("[1,1,0,0]", "[0,1,0,1]", 0)]
+    [DataRow("[1,1,1,0,0,1]", "[1,0,0,0,1,1]", 3)]
+    public void CountStudents_WithStudentsAndSandwichesArray_ReturnsUnsatisfiedStudentsCount(string studentsJsonArray,
+        string sandwichesJsonArray, int expectedResult)
     {
         // Arrange
+        var students = JsonHelper<int>.DeserializeToArray(studentsJsonArray);
+        var sandwiches = JsonHelper<int>.DeserializeToArray(sandwichesJsonArray);
+
         var solution = new T();
 
         // Act

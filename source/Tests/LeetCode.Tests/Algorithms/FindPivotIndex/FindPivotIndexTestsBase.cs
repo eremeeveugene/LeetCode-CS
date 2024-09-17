@@ -10,18 +10,21 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindPivotIndex;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindPivotIndex;
 
 public abstract class FindPivotIndexTestsBase<T> where T : IFindPivotIndex, new()
 {
     [TestMethod]
-    [DataRow(new[] { 2, 3, -1, 8, 4 }, 3)]
-    [DataRow(new[] { 1, -1, 4 }, 2)]
-    [DataRow(new[] { 2, 5 }, -1)]
-    public void PivotIndex_GivenArray_ReturnsExpectedIndexOrMinusOne(int[] nums, int expectedResult)
+    [DataRow("[2, 3, -1, 8, 4]", 3)]
+    [DataRow("[1, -1, 4]", 2)]
+    [DataRow("[2, 5]", -1)]
+    public void PivotIndex_GivenArray_ReturnsExpectedIndexOrMinusOne(string numsJsonArray, int expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         var solution = new T();
 
         // Act

@@ -10,18 +10,21 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ShuffleString;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ShuffleString;
 
 public abstract class ShuffleStringTestsBase<T> where T : IShuffleString, new()
 {
     [TestMethod]
-    [DataRow("codeleet", new[] { 4, 5, 6, 7, 0, 2, 1, 3 }, "leetcode")]
-    [DataRow("abc", new[] { 0, 1, 2 }, "abc")]
-    public void RestoreString_WhenGivenStringAndIndicesArray_RearrangesToExpectedString(string s, int[] indices,
-        string expectedResult)
+    [DataRow("codeleet", "[4,5,6,7,0,2,1,3]", "leetcode")]
+    [DataRow("abc", "[0,1,2]", "abc")]
+    public void RestoreString_WhenGivenStringAndIndicesArray_RearrangesToExpectedString(string s,
+        string indicesJsonArray, string expectedResult)
     {
         // Arrange
+        var indices = JsonHelper<int>.DeserializeToArray(indicesJsonArray);
+
         var solution = new T();
 
         // Act

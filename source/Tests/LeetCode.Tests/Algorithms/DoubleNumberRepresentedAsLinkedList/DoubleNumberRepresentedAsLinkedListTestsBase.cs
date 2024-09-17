@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList;
+using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,13 +20,16 @@ public abstract class DoubleNumberRepresentedAsLinkedListTestsBase<T>
     where T : IDoubleNumberRepresentedAsLinkedList, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 8, 9 }, new[] { 3, 7, 8 })]
-    [DataRow(new[] { 9, 9, 9 }, new[] { 1, 9, 9, 8 })]
-    public void ListNode_DoubleIt_GivenListNode_ReturnsDoubledValuesListNode(int[] headArray, int[] expectedResultArray)
+    [DataRow("[1, 8, 9]", "[3, 7, 8]")]
+    [DataRow("[9, 9, 9]", "[1, 9, 9, 8]")]
+    public void ListNode_DoubleIt_GivenListNode_ReturnsDoubledValuesListNode(string headJsonArray,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
         var head = ListNode.ToListNode(headArray);
 
+        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

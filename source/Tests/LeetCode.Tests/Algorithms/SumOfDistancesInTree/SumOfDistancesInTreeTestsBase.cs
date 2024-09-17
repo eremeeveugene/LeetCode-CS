@@ -17,16 +17,17 @@ namespace LeetCode.Tests.Algorithms.SumOfDistancesInTree;
 public abstract class SumOfDistancesInTreeTestsBase<T> where T : ISumOfDistancesInTree, new()
 {
     [TestMethod]
-    [DataRow(6, "[[0,1],[0,2],[2,3],[2,4],[2,5]]", new[] { 8, 12, 6, 10, 10, 10 })]
-    [DataRow(1, "[]", new[] { 0 })]
-    [DataRow(2, "[[1,0]]", new[] { 1, 1 })]
+    [DataRow(6, "[[0,1],[0,2],[2,3],[2,4],[2,5]]", "[8,12,6,10,10,10]")]
+    [DataRow(1, "[]", "[0]")]
+    [DataRow(2, "[[1,0]]", "[1,1]")]
     public void SumOfDistancesInTree_GivenNumberOfNodesAndEdges_ReturnsDistanceSumsArray(int n, string edgesJsonArray,
-        int[] expectedResult)
+        string expectedResultJsonArray)
     {
         // Arrange
-        var solution = new T();
+        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
 
-        var edges = JsonHelper<int>.JsonArrayToJaggedArray(edgesJsonArray);
+        var solution = new T();
 
         // Act
         var actualResult = solution.SumOfDistancesInTree(n, edges);

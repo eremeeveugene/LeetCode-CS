@@ -10,18 +10,23 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SortThePeople;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SortThePeople;
 
 public abstract class SortThePeopleTestsBase<T> where T : ISortThePeople, new()
 {
     [TestMethod]
-    [DataRow(new[] { "Mary", "John", "Emma" }, new[] { 180, 165, 170 }, new[] { "Mary", "Emma", "John" })]
-    [DataRow(new[] { "Alice", "Bob", "Bob" }, new[] { 155, 185, 150 }, new[] { "Bob", "Alice", "Bob" })]
-    public void SortPeople_WithNamesAndHeights_ReturnsSortedNamesByHeight(string[] names, int[] heights,
-        string[] expectedResult)
+    [DataRow("[\"Mary\",\"John\",\"Emma\"]", "[180,165,170]", "[\"Mary\",\"Emma\",\"John\"]")]
+    [DataRow("[\"Alice\",\"Bob\",\"Bob\"]", "[155,185,150]", "[\"Bob\",\"Alice\",\"Bob\"]")]
+    public void SortPeople_WithNamesAndHeights_ReturnsSortedNamesByHeight(string namesJsonArray,
+        string heightsJsonArray, string expectedResultJsonArray)
     {
         // Arrange
+        var names = JsonHelper<string>.DeserializeToArray(namesJsonArray);
+        var heights = JsonHelper<int>.DeserializeToArray(heightsJsonArray);
+        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJsonArray);
+
         var solution = new T();
 
         // Act

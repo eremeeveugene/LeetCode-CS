@@ -23,11 +23,11 @@ public abstract class FindBottomLeftTreeValueTestsBase<T> where T : IFindBottomL
     [DataRow("[1,2,3,4,null,5,6,null,null,7]", 7)]
     [DataRow("[1,null,1]", 1)]
     [DataRow("[1,2,3,4,null,5,6,null,null,7, null, 8, 9, null, null, null, null, null, 10]", 10)]
-    public void FindBottomLeftValue_GivenBinaryTreeJsonArray_ReturnsBottomLeftValue(string jsonArrayRoot,
+    public void FindBottomLeftValue_GivenBinaryTreeJsonArray_ReturnsBottomLeftValue(string rootJsonArray,
         int expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper<int?>.JsonArrayToList(jsonArrayRoot);
+        var arrayRoot = JsonHelper<int?>.DeserializeToList(rootJsonArray);
         var root = TreeNode.BuildTree(arrayRoot);
 
         var solution = new T();

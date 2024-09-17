@@ -10,19 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountTheNumberOfConsistentStrings;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountTheNumberOfConsistentStrings;
 
 public abstract class CountTheNumberOfConsistentStringsTestsBase<T> where T : ICountTheNumberOfConsistentStrings, new()
 {
     [TestMethod]
-    [DataRow("ab", new[] { "ad", "bd", "aaab", "baa", "badab" }, 2)]
-    [DataRow("abc", new[] { "a", "b", "c", "ab", "ac", "bc", "abc" }, 7)]
-    [DataRow("cad", new[] { "cc", "acd", "b", "ba", "bac", "bad", "ac", "d" }, 4)]
+    [DataRow("ab", "[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]", 2)]
+    [DataRow("abc", "[\"a\",\"b\",\"c\",\"ab\",\"ac\",\"bc\",\"abc\"]", 7)]
+    [DataRow("cad", "[\"cc\",\"acd\",\"b\",\"ba\",\"bac\",\"bad\",\"ac\",\"d\"]", 4)]
     public void CountConsistentStrings_WithAllowedCharactersAndWords_ReturnsNumberOfConsistentStrings(string allowed,
-        string[] words, int expectedResult)
+        string wordsJsonArray, int expectedResult)
     {
         // Arrange
+        var words = JsonHelper<string>.DeserializeToArray(wordsJsonArray);
+
         var solution = new T();
 
         // Act

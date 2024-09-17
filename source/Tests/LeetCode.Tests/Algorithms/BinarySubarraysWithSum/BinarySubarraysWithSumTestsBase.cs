@@ -10,18 +10,21 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BinarySubarraysWithSum;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.BinarySubarraysWithSum;
 
 public abstract class BinarySubarraysWithSumTestsBase<T> where T : IBinarySubarraysWithSum, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 0, 1, 0, 1 }, 2, 4)]
-    [DataRow(new[] { 0, 0, 0, 0, 0 }, 0, 15)]
-    public void NumSubarraysWithSum_GivenBinaryArrayAndGoal_ReturnsExpectedCount(int[] nums, int goal,
+    [DataRow("[1, 0, 1, 0, 1]", 2, 4)]
+    [DataRow("[0, 0, 0, 0, 0]", 0, 15)]
+    public void NumSubarraysWithSum_GivenBinaryArrayAndGoal_ReturnsExpectedCount(string numsJsonArray, int goal,
         int expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         var solution = new T();
 
         // Act

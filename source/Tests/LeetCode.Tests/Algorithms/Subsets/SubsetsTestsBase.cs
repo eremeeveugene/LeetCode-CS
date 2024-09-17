@@ -18,14 +18,16 @@ namespace LeetCode.Tests.Algorithms.Subsets;
 public abstract class SubsetsTestsBase<T> where T : ISubsets, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 2, 3 }, "[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]")]
-    [DataRow(new[] { 0 }, "[[],[0]]")]
-    public void Subsets_GivenArrayOfNumbers_ReturnsAllPossibleSubsets(int[] nums, string expectedResultJsonArray)
+    [DataRow("[1,2,3]", "[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]")]
+    [DataRow("[0]", "[[],[0]]")]
+    public void Subsets_GivenArrayOfNumbers_ReturnsAllPossibleSubsets(string numsJsonArray,
+        string expectedResultJsonArray)
     {
         // Arrange
-        var solution = new T();
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedList(expectedResultJsonArray);
 
-        var expectedResult = JsonHelper<int>.JsonArrayToJaggedList(expectedResultJsonArray);
+        var solution = new T();
 
         // Act
         var actualResult = solution.Subsets(nums);

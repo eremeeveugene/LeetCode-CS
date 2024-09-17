@@ -10,17 +10,21 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ConvertTheTemperature;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ConvertTheTemperature;
 
 public abstract class ConvertTheTemperatureTestsBase<T> where T : IConvertTheTemperature, new()
 {
     [TestMethod]
-    [DataRow(36.50, new[] { 309.65000, 97.70000 })]
-    [DataRow(122.11, new[] { 395.26000, 251.79800 })]
-    public void ConvertTemperature_GivenCelsius_ReturnsExpectedTemperatureArray(double celsius, double[] expectedResult)
+    [DataRow(36.50, "[309.65000, 97.70000]")]
+    [DataRow(122.11, "[395.26000, 251.79800]")]
+    public void ConvertTemperature_GivenCelsius_ReturnsExpectedTemperatureArray(double celsius,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var expectedResult = JsonHelper<double>.DeserializeToArray(expectedResultJsonArray);
+
         var solution = new T();
 
         // Act

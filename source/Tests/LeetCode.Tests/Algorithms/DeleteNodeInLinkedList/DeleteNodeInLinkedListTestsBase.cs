@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DeleteNodeInLinkedList;
+using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -18,13 +19,17 @@ namespace LeetCode.Tests.Algorithms.DeleteNodeInLinkedList;
 public abstract class DeleteNodeInLinkedListTestsBase<T> where T : IDeleteNodeInLinkedList, new()
 {
     [TestMethod]
-    [DataRow(new int[] { }, 0, new int[] { })]
-    [DataRow(new[] { 4, 5, 1, 9 }, 5, new[] { 4, 1, 9 })]
-    [DataRow(new[] { 4, 5, 1, 9 }, 1, new[] { 4, 5, 9 })]
-    public void DeleteNode_WhenNodeExists_RemovesNodeFromList(int[] actualResultArray, int node,
-        int[] expectedResultArray)
+    [DataRow("[]", 0, "[]")]
+    [DataRow("[4, 5, 1, 9]", 5, "[4, 1, 9]")]
+    [DataRow("[4, 5, 1, 9]", 1, "[4, 5, 9]")]
+    public void DeleteNode_WhenNodeExists_RemovesNodeFromList(string actualResultJsonArray, int node,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var actualResultArray = JsonHelper<int>.DeserializeToArray(actualResultJsonArray);
+        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+
+
         var actualResult = ListNode.ToListNode(actualResultArray);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 

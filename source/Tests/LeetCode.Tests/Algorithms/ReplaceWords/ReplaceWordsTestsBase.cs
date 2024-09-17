@@ -10,22 +10,25 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ReplaceWords;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ReplaceWords;
 
 public abstract class ReplaceWordsTestsBase<T> where T : IReplaceWords, new()
 {
     [TestMethod]
-    [DataRow(new[] { "cat", "bat", "rat" }, "the cattle was rattled by the battery", "the cat was rat by the bat")]
-    [DataRow(new[] { "a", "b", "c" }, "aadsfasf absbs bbab cadsfafs", "a a b c")]
-    [DataRow(new[] { "a" }, "aaaaaa aa aaa a", "a a a a")]
-    [DataRow(new[] { "a", "ab", "abc" }, "abc ab a abcde", "a a a a")]
-    [DataRow(new[] { "prefix", "pre", "suff", "suffi" }, "prefixes and suffixes", "pre and suff")]
-    [DataRow(new[] { "longest", "longer", "long" }, "this is a long long word", "this is a long long word")]
-    public void ReplaceWords_WithDictionaryAndSentence_ReturnsCorrectlyReplacedSentence(string[] dictionaryArray,
+    [DataRow("[\"cat\",\"bat\",\"rat\"]", "the cattle was rattled by the battery", "the cat was rat by the bat")]
+    [DataRow("[\"a\",\"b\",\"c\"]", "aadsfasf absbs bbab cadsfafs", "a a b c")]
+    [DataRow("[\"a\"]", "aaaaaa aa aaa a", "a a a a")]
+    [DataRow("[\"a\",\"ab\",\"abc\"]", "abc ab a abcde", "a a a a")]
+    [DataRow("[\"prefix\",\"pre\",\"suff\",\"suffi\"]", "prefixes and suffixes", "pre and suff")]
+    [DataRow("[\"longest\",\"longer\",\"long\"]", "this is a long long word", "this is a long long word")]
+    public void ReplaceWords_WithDictionaryAndSentence_ReturnsCorrectlyReplacedSentence(string dictionaryJsonArray,
         string sentence, string expectedResult)
     {
         // Arrange
+        var dictionaryArray = JsonHelper<string>.DeserializeToArray(dictionaryJsonArray);
+
         var solution = new T();
 
         // Act

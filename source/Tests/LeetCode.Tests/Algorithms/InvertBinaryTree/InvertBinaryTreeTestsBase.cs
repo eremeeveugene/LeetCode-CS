@@ -29,10 +29,10 @@ public abstract class InvertBinaryTreeTestsBase<T> where T : IInvertBinaryTree, 
     public void InvertTree_GivenBinaryTree_ReturnsInvertedTree(string rootJsonArray, string expectedResultJsonArray)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.JsonArrayToList(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToList(rootJsonArray);
         var root = TreeNode.BuildTree(rootArray);
 
-        var expectedResultArray = JsonHelper<int?>.JsonArrayToList(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int?>.DeserializeToList(expectedResultJsonArray);
         var expectedResult = TreeNode.BuildTree(expectedResultArray);
 
         var solution = new T();

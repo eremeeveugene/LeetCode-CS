@@ -17,22 +17,26 @@ namespace LeetCode.Tests.Algorithms.FindCommonCharacters;
 public abstract class FindCommonCharactersTestsBase<T> where T : IFindCommonCharacters, new()
 {
     [TestMethod]
-    [DataRow(new[] { "bella" }, "[\"b\",\"e\",\"l\",\"l\",\"a\"]")]
-    [DataRow(new[] { "bella", "label", "roller" }, "[\"e\",\"l\",\"l\"]")]
-    [DataRow(new[] { "cool", "lock", "cook" }, "[\"c\",\"o\"]")]
-    [DataRow(new[] { "a", "a", "a" }, "[\"a\"]")]
-    [DataRow(new[] { "", "", "" }, "[]")]
-    [DataRow(new[] { "abc", "def", "ghi" }, "[]")]
-    [DataRow(new[] { "a" }, "[\"a\"]")]
-    [DataRow(new[] { "abc", "abc", "abc" }, "[\"a\",\"b\",\"c\"]")]
-    [DataRow(new[] { "daaccccd", "adacbdda", "abddbaba", "bacbcbcb", "bdaaaddc", "cdadacba", "bacbdcda", "bacdaacd" },
+    [DataRow("[\"bella\"]", "[\"b\",\"e\",\"l\",\"l\",\"a\"]")]
+    [DataRow("[\"bella\", \"label\", \"roller\"]", "[\"e\",\"l\",\"l\"]")]
+    [DataRow("[\"cool\", \"lock\", \"cook\"]", "[\"c\",\"o\"]")]
+    [DataRow("[\"a\", \"a\", \"a\"]", "[\"a\"]")]
+    [DataRow("[\"\", \"\", \"\"]", "[]")]
+    [DataRow("[\"abc\", \"def\", \"ghi\"]", "[]")]
+    [DataRow("[\"a\"]", "[\"a\"]")]
+    [DataRow("[\"abc\", \"abc\", \"abc\"]", "[\"a\",\"b\",\"c\"]")]
+    [DataRow(
+        "[\"daaccccd\", \"adacbdda\", \"abddbaba\", \"bacbcbcb\", \"bdaaaddc\", \"cdadacba\", \"bacbdcda\", \"bacdaacd\"]",
         "[\"a\"]")]
-    public void CommonChars_WithGivenWordsArray_ReturnsCommonCharacters(string[] words, string expectedResultJsonArray)
+    public void CommonChars_WithGivenWordsArray_ReturnsCommonCharacters(string wordsJsonArray,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var words = JsonHelper<string>.DeserializeToArray(wordsJsonArray);
+
         var solution = new T();
 
-        var expectedResult = JsonHelper<string>.JsonArrayToList(expectedResultJsonArray);
+        var expectedResult = JsonHelper<string>.DeserializeToList(expectedResultJsonArray);
 
         // Act
         var actualResult = solution.CommonChars(words);
