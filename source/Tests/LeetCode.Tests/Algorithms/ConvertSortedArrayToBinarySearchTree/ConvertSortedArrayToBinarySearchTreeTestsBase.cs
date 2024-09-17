@@ -27,8 +27,8 @@ public abstract class ConvertSortedArrayToBinarySearchTreeTestsBase<T>
         // Arrange
         var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
 
-        var expectedResultArray = JsonHelper<int?>.DeserializeToList(expectedResultJsonArray);
-        var expectedResult = TreeNode.BuildTree(expectedResultArray);
+        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();
 

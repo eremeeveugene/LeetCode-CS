@@ -28,8 +28,8 @@ public abstract class BalancedBinaryTreeTestsBase<T> where T : IBalancedBinaryTr
     public void IsBalanced_TreeWithJsonInput_ReturnsExpectedBalancedStatus(string rootJsonArray, bool expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToList(rootJsonArray);
-        var root = TreeNode.BuildTree(rootArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();
 

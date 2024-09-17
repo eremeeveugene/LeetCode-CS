@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SpiralMatrix4;
+using LeetCode.Core.Exceptions;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
@@ -27,9 +28,7 @@ public abstract class SpiralMatrix4TestsBase<T> where T : ISpiralMatrix4, new()
     {
         // Arrange
         var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
-        var head = ListNode.ToListNode(headArray) ??
-                   throw new InvalidOperationException(
-                       $"Conversion of headArray to ListNode failed for test input {string.Join(",", headArray)}.");
+        var head = ListNode.ToListNode(headArray) ?? throw new ListNodeBuildException();
         var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
 
         var solution = new T();

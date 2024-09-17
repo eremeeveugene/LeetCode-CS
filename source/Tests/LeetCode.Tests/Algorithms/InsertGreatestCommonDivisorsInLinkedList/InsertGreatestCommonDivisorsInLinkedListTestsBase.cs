@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.InsertGreatestCommonDivisorsInLinkedList;
+using LeetCode.Core.Exceptions;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
@@ -27,7 +28,7 @@ public abstract class InsertGreatestCommonDivisorsInLinkedListTestsBase<T>
     {
         // Arrange
         var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
-        var head = ListNode.ToListNode(headArray) ?? throw new InvalidOperationException();
+        var head = ListNode.ToListNode(headArray) ?? throw new ListNodeBuildException();
         var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 

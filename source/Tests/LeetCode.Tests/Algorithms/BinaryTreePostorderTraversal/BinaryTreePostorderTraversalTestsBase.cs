@@ -28,8 +28,8 @@ public abstract class BinaryTreePostorderTraversalTestsBase<T> where T : IBinary
         var solution = new T();
 
         var expectedResult = JsonHelper<int?>.DeserializeToList(expectedResultJsonArray);
-        var rootArray = JsonHelper<int?>.DeserializeToList(rootJsonArray);
-        var root = TreeNode.BuildTree(rootArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var root = TreeNode.ToTreeNode(rootArray);
 
         // Act
         var actualResult = solution.PostorderTraversal(root);

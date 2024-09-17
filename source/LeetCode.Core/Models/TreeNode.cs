@@ -24,22 +24,9 @@ public class TreeNode(int? val = null, TreeNode? left = null, TreeNode? right = 
 
     public int val = val ?? 0;
 
-    public static TreeNode BuildNonNullTree(IList<int?> values)
+    public static TreeNode? ToTreeNode(int?[] values)
     {
-        var tree = BuildTree(values);
-
-        if (tree == null)
-        {
-            throw new InvalidOperationException(
-                "The tree cannot be null. The provided list did not produce a valid tree.");
-        }
-
-        return tree;
-    }
-
-    public static TreeNode? BuildTree(IList<int?> values)
-    {
-        if (!values.Any() || values[0] == null)
+        if (values.Length == 0 || values[0] == null)
         {
             return null;
         }
@@ -52,11 +39,11 @@ public class TreeNode(int? val = null, TreeNode? left = null, TreeNode? right = 
 
         var i = 1;
 
-        while (queue.Count > 0 && i < values.Count)
+        while (queue.Count > 0 && i < values.Length)
         {
             var current = queue.Dequeue();
 
-            if (i < values.Count && values[i].HasValue)
+            if (i < values.Length && values[i].HasValue)
             {
                 current.left = new TreeNode(values[i]);
 
@@ -65,7 +52,7 @@ public class TreeNode(int? val = null, TreeNode? left = null, TreeNode? right = 
 
             i++;
 
-            if (i < values.Count && values[i].HasValue)
+            if (i < values.Length && values[i].HasValue)
             {
                 current.right = new TreeNode(values[i]);
 

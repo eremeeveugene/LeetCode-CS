@@ -29,8 +29,8 @@ public abstract class BinaryTreePreorderTraversalTestsBase<T> where T : IBinaryT
         var solution = new T();
 
         var expectedResult = JsonHelper<int?>.DeserializeToList(expectedResultJsonArray);
-        var rootArray = JsonHelper<int?>.DeserializeToList(rootJsonArray);
-        var inputNode = TreeNode.BuildTree(rootArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var inputNode = TreeNode.ToTreeNode(rootArray);
 
         // Act
         var actualResult = solution.PreorderTraversal(inputNode);

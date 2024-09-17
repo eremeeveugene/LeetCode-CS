@@ -28,8 +28,8 @@ public abstract class BinaryTreePathsTestsBase<T> where T : IBinaryTreePaths, ne
 
         var solution = new T();
 
-        var rootArray = JsonHelper<int?>.DeserializeToList(jsonRootArray);
-        var root = TreeNode.BuildTree(rootArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(jsonRootArray);
+        var root = TreeNode.ToTreeNode(rootArray);
 
         // Act
         var actualResult = solution.BinaryTreePaths(root);

@@ -24,9 +24,9 @@ public class Node(int? _val = null, IList<Node>? _children = null)
 
     public Node() : this(0) { }
 
-    public static Node? BuildTree(IList<int?> values)
+    public static Node? ToNode(int?[] values)
     {
-        if (values.Count == 0 || values[0] == null)
+        if (values.Length == 0 || values[0] == null)
         {
             return null;
         }
@@ -39,13 +39,13 @@ public class Node(int? _val = null, IList<Node>? _children = null)
 
         var i = 2;
 
-        while (queue.Count > 0 && i < values.Count)
+        while (queue.Count > 0 && i < values.Length)
         {
             var current = queue.Dequeue();
 
-            current.children = new List<Node>();
+            current.children = [];
 
-            while (i < values.Count && values[i] != null)
+            while (i < values.Length && values[i] != null)
             {
                 var child = new Node(values[i]);
 
