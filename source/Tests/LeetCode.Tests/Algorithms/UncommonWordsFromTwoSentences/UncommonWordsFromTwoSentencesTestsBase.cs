@@ -25,7 +25,7 @@ public abstract class UncommonWordsFromTwoSentencesTestsBase<T> where T : IUncom
         string expectedResultJsonArray)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJsonArray);
 
         var solution = new T();
 
