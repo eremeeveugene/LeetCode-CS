@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX;
 
@@ -17,12 +18,14 @@ public abstract class SpecialArrayWithXElementsGreaterThanOrEqualXTestsBase<T>
     where T : ISpecialArrayWithXElementsGreaterThanOrEqualX, new()
 {
     [TestMethod]
-    [DataRow(new[] { 3, 5 }, 2)]
-    [DataRow(new[] { 0, 0 }, -1)]
-    [DataRow(new[] { 0, 4, 3, 0, 4 }, 3)]
-    public void SpecialArray_GivenArrayOfIntegers_ReturnsExpectedResult(int[] nums, int expectedResult)
+    [DataRow("[3,5]", 2)]
+    [DataRow("[0,0]", -1)]
+    [DataRow("[0,4,3,0,4]", 3)]
+    public void SpecialArray_GivenArrayOfIntegers_ReturnsExpectedResult(string numsJsonArray, int expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         var solution = new T();
 
         // Act

@@ -10,17 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SquaresOfSortedArray;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SquaresOfSortedArray;
 
 public abstract class SquaresOfSortedArrayTestsBase<T> where T : ISquaresOfSortedArray, new()
 {
     [TestMethod]
-    [DataRow(new[] { -4, -1, 0, 3, 10 }, new[] { 0, 1, 9, 16, 100 })]
-    [DataRow(new[] { -7, -3, 2, 3, 11 }, new[] { 4, 9, 9, 49, 121 })]
-    public void SortedSquares_GivenArrayOfIntegers_ReturnsSortedArrayOfSquares(int[] nums, int[] expectedResult)
+    [DataRow("[-4,-1,0,3,10]", "[0,1,9,16,100]")]
+    [DataRow("[-7,-3,2,3,11]", "[4,9,9,49,121]")]
+    public void SortedSquares_GivenArrayOfIntegers_ReturnsSortedArrayOfSquares(string numsJsonArray,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+
         var solution = new T();
 
         // Act

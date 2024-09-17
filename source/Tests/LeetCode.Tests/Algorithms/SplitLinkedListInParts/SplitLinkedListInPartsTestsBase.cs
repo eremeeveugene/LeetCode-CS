@@ -19,13 +19,14 @@ namespace LeetCode.Tests.Algorithms.SplitLinkedListInParts;
 public abstract class SplitLinkedListInPartsTestsBase<T> where T : ISplitLinkedListInParts, new()
 {
     [TestMethod]
-    [DataRow(new int[] { }, 5, "[[],[],[],[],[]]")]
-    [DataRow(new[] { 1, 2, 3 }, 5, "[[1],[2],[3],[],[]]")]
-    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 3, "[[1,2,3,4],[5,6,7],[8,9,10]]")]
-    public void SplitListToParts_WithHeadArrayAndK_ReturnsListOfParts(int[] headArray, int k,
+    [DataRow("[]", 5, "[[],[],[],[],[]]")]
+    [DataRow("[1,2,3]", 5, "[[1],[2],[3],[],[]]")]
+    [DataRow("[1,2,3,4,5,6,7,8,9,10]", 3, "[[1,2,3,4],[5,6,7],[8,9,10]]")]
+    public void SplitListToParts_WithHeadArrayAndK_ReturnsListOfParts(string headJsonArray, int k,
         string expectedResultJsonArray)
     {
         // Arrange
+        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
         var head = ListNode.ToListNode(headArray);
 
         var expectedResultJaggedArray = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);

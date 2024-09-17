@@ -10,18 +10,23 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.StringMatchingInAnArray;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.StringMatchingInAnArray;
 
 public abstract class StringMatchingInAnArrayTestsBase<T> where T : IStringMatchingInAnArray, new()
 {
     [TestMethod]
-    [DataRow(new[] { "mass", "as", "hero", "superhero" }, new[] { "as", "hero" })]
-    [DataRow(new[] { "leetcode", "et", "code" }, new[] { "et", "code" })]
-    [DataRow(new[] { "blue", "green", "bu" }, new string[] { })]
-    public void StringMatching_WithArrayOfWords_ReturnsMatchingSubstrings(string[] words, string[] expectedResult)
+    [DataRow("[\"mass\",\"as\",\"hero\",\"superhero\"]", "[\"as\",\"hero\"]")]
+    [DataRow("[\"leetcode\",\"et\",\"code\"]", "[\"et\",\"code\"]")]
+    [DataRow("[\"blue\",\"green\",\"bu\"]", "[]")]
+    public void StringMatching_WithArrayOfWords_ReturnsMatchingSubstrings(string wordsJsonArray,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var words = JsonHelper<string>.DeserializeToArray(wordsJsonArray);
+        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJsonArray);
+
         var solution = new T();
 
         // Act

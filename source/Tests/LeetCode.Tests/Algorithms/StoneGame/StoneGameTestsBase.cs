@@ -10,17 +10,20 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.StoneGame;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.StoneGame;
 
 public abstract class StoneGameTestsBase<T> where T : IStoneGame, new()
 {
     [TestMethod]
-    [DataRow(new[] { 5, 3, 4, 5 }, true)]
-    [DataRow(new[] { 3, 7, 2, 3 }, true)]
-    public void StoneGame_WithGivenPiles_ReturnsTrueWhenFirstPlayerWins(int[] piles, bool expectedResult)
+    [DataRow("[5,3,4,5]", true)]
+    [DataRow("[3,7,2,3]", true)]
+    public void StoneGame_WithGivenPiles_ReturnsTrueWhenFirstPlayerWins(string pilesJsonArray, bool expectedResult)
     {
         // Arrange
+        var piles = JsonHelper<int>.DeserializeToArray(pilesJsonArray);
+
         var solution = new T();
 
         // Act
