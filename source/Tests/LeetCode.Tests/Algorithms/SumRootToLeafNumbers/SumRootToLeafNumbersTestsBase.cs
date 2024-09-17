@@ -26,10 +26,10 @@ public abstract class SumRootToLeafNumbersTestsBase<T> where T : ISumRootToLeafN
         int expectedResult)
     {
         // Arrange
-        var solution = new T();
+        var rootArray = JsonHelper<int?>.DeserializeToArray(jsonRootArray);
+        var root = TreeNode.ToTreeNode(rootArray);
 
-        var rootArray = JsonHelper<int?>.DeserializeToList(jsonRootArray);
-        var root = TreeNode.BuildTree(rootArray);
+        var solution = new T();
 
         // Act
         var actualResult = solution.SumNumbers(root);

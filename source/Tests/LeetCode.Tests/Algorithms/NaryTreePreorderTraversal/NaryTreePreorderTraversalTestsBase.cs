@@ -25,12 +25,11 @@ public abstract class NaryTreePreorderTraversalTestsBase<T> where T : INaryTreeP
         string expectedResultJsonArray)
     {
         // Arrange
-        var solution = new T();
-
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var root = Node.ToNode(rootArray);
         var expectedResult = JsonHelper<int>.DeserializeToList(expectedResultJsonArray);
-        var rootArray = JsonHelper<int?>.DeserializeToList(rootJsonArray);
 
-        var root = Node.BuildTree(rootArray);
+        var solution = new T();
 
         // Act
         var actualResult = solution.Preorder(root);

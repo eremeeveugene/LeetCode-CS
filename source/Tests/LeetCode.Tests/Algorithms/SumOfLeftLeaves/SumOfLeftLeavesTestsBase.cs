@@ -26,8 +26,8 @@ public abstract class SumOfLeftLeavesTestsBase<T> where T : ISumOfLeftLeaves, ne
     public void SumOfLeftLeaves_GivenTreeRoot_ReturnsSumOfLeftLeafValues(string rootJsonArray, int expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper<int?>.DeserializeToList(rootJsonArray);
-        var root = TreeNode.BuildTree(arrayRoot);
+        var arrayRoot = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var root = TreeNode.ToTreeNode(arrayRoot);
 
         var solution = new T();
 

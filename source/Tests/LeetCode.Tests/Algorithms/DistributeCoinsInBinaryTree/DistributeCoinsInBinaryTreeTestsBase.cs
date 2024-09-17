@@ -35,8 +35,8 @@ public abstract class DistributeCoinsInBinaryTreeTestsBase<T> where T : IDistrib
         int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToList(rootJsonArray);
-        var root = TreeNode.BuildTree(rootArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();
 
