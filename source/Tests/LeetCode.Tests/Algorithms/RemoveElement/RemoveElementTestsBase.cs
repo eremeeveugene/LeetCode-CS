@@ -10,18 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RemoveElement;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.RemoveElement;
 
 public abstract class RemoveElementTestsBase<T> where T : IRemoveElement, new()
 {
     [TestMethod]
-    [DataRow(new[] { 3, 2, 2, 3 }, 3, new[] { 2, 2 }, 2)]
-    [DataRow(new[] { 0, 1, 2, 2, 3, 0, 4, 2 }, 2, new[] { 0, 1, 4, 0, 3 }, 5)]
-    public void RemoveElement_WithArrayAndValue_ReturnsModifiedArrayAndNewLength(int[] nums, int val,
-        int[] expectedNums, int expectedResult)
+    [DataRow("[3,2,2,3]", 3, "[2,2]", 2)]
+    [DataRow("[0,1,2,2,3,0,4,2]", 2, "[0,1,4,0,3]", 5)]
+    public void RemoveElement_WithArrayAndValue_ReturnsModifiedArrayAndNewLength(string numsJsonArray, int val,
+        string expectedNumsJsonArray, int expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var expectedNums = JsonHelper<int>.DeserializeToArray(expectedNumsJsonArray);
+
         var solution = new T();
 
         // Act

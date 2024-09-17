@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RemoveNthNodeFromEndOfList;
+using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -18,16 +19,17 @@ namespace LeetCode.Tests.Algorithms.RemoveNthNodeFromEndOfList;
 public abstract class RemoveNthNodeFromEndOfListTestsBase<T> where T : IRemoveNthNodeFromEndOfList, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 2, 3, 4, 5 }, 2, new[] { 1, 2, 3, 5 })]
-    [DataRow(new[] { 1 }, 1, new int[] { })]
-    [DataRow(new[] { 1, 2 }, 1, new[] { 1 })]
-    [DataRow(new[] { 1, 2 }, 2, new[] { 2 })]
-    public void RemoveNthFromEnd_WhenCalled_RemovesNthNodeFromEndAndReturnsCorrectList(int[] headArray, int n,
-        int[] expectedResultArray)
+    [DataRow("[1,2,3,4,5]", 2, "[1,2,3,5]")]
+    [DataRow("[1]", 1, "[]")]
+    [DataRow("[1,2]", 1, "[1]")]
+    [DataRow("[1,2]", 2, "[2]")]
+    public void RemoveNthFromEnd_WhenCalled_RemovesNthNodeFromEndAndReturnsCorrectList(string headJsonArray, int n,
+        string expectedResultJsonArray)
     {
         // Arrange
+        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
         var head = ListNode.ToListNode(headArray);
-
+        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();
