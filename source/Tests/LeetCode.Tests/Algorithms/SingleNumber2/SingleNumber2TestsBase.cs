@@ -10,17 +10,20 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SingleNumber2;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SingleNumber2;
 
 public abstract class SingleNumber2TestsBase<T> where T : ISingleNumber2, new()
 {
     [TestMethod]
-    [DataRow(new[] { 2, 2, 3, 2 }, 3)]
-    [DataRow(new[] { 0, 1, 0, 1, 0, 1, 99 }, 99)]
-    public void SingleNumber_WithIntegerArray_ReturnsUniqueNumber(int[] nums, int expectedResult)
+    [DataRow("[2,2,3,2]", 3)]
+    [DataRow("[0,1,0,1,0,1,99]", 99)]
+    public void SingleNumber_WithIntegerArray_ReturnsUniqueNumber(string numsJsonArray, int expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         var solution = new T();
 
         // Act
