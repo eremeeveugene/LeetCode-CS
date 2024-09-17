@@ -10,19 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RangeSumOfSortedSubarraySums;
+using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.RangeSumOfSortedSubarraySums;
 
 public abstract class RangeSumOfSortedSubarraySumsTestsBase<T> where T : IRangeSumOfSortedSubarraySums, new()
 {
     [TestMethod]
-    [DataRow(new[] { 1, 2, 3, 4 }, 4, 1, 5, 13)]
-    [DataRow(new[] { 1, 2, 3, 4 }, 4, 3, 4, 6)]
-    [DataRow(new[] { 1, 2, 3, 4 }, 4, 1, 10, 50)]
-    public void RangeSum_WithValidInputs_ReturnsCorrectSubarraySum(int[] nums, int n, int left, int right,
+    [DataRow("[1,2,3,4]", 4, 1, 5, 13)]
+    [DataRow("[1,2,3,4]", 4, 3, 4, 6)]
+    [DataRow("[1,2,3,4]", 4, 1, 10, 50)]
+    public void RangeSum_WithValidInputs_ReturnsCorrectSubarraySum(string numsJsonArray, int n, int left, int right,
         int expectedResult)
     {
         // Arrange
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+
         var solution = new T();
 
         // Act
