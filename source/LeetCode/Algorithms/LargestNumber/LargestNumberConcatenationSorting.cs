@@ -9,8 +9,6 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using System.Text;
-
 namespace LeetCode.Algorithms.LargestNumber;
 
 /// <inheritdoc />
@@ -25,22 +23,10 @@ public class LargestNumberConcatenationSorting : ILargestNumber
     /// <returns></returns>
     public string LargestNumber(int[] nums)
     {
-        var numsAsStrings = nums.Select(n => n.ToString()).ToArray();
+        var numsStrings = nums.Select(n => n.ToString()).ToArray();
 
-        Array.Sort(numsAsStrings, (a, b) => string.Compare(b + a, a + b, StringComparison.Ordinal));
+        Array.Sort(numsStrings, (a, b) => string.Compare(b + a, a + b, StringComparison.Ordinal));
 
-        if (numsAsStrings[0] == "0")
-        {
-            return "0";
-        }
-
-        var resultStringBuilder = new StringBuilder();
-
-        foreach (var num in numsAsStrings)
-        {
-            resultStringBuilder.Append(num);
-        }
-
-        return resultStringBuilder.ToString();
+        return numsStrings[0] == "0" ? "0" : string.Join("", numsStrings);
     }
 }
