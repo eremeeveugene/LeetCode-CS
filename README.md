@@ -118,6 +118,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/)
 - [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/)
 - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)
+- [214. Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/description/)
 - [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
 - [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/description/)
 - [220. Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/description/)
