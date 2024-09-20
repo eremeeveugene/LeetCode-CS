@@ -1,21 +1,21 @@
 Summary
-  Generated on: 9/18/2024 - 12:14:15 PM
-  Coverage date: 9/18/2024 - 12:12:49 PM - 9/18/2024 - 12:13:07 PM
+  Generated on: 9/20/2024 - 1:47:05 PM
+  Coverage date: 9/20/2024 - 1:46:04 PM - 9/20/2024 - 1:46:23 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 583
-  Files: 583
+  Classes: 585
+  Files: 585
   Line coverage: 98.2%
-  Covered lines: 11349
-  Uncovered lines: 202
-  Coverable lines: 11551
-  Total lines: 30077
-  Branch coverage: 96.5% (4404 of 4562)
-  Covered branches: 4404
-  Total branches: 4562
-  Method coverage: 98.4% (781 of 793)
-  Covered methods: 781
-  Total methods: 793
+  Covered lines: 11407
+  Uncovered lines: 204
+  Coverable lines: 11611
+  Total lines: 30207
+  Branch coverage: 96.4% (4428 of 4590)
+  Covered branches: 4428
+  Total branches: 4590
+  Method coverage: 98.4% (784 of 796)
+  Covered methods: 784
+  Total methods: 796
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -123,6 +123,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.DiameterOfBinaryTree.DiameterOfBinaryTreeDepthFirst                                                                             100.0%
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayByDigitExtraction                    100.0%
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayIterative                            100.0%
+  LeetCode.Algorithms.DifferentWaysToAddParentheses.DifferentWaysToAddParenthesesDictionary                                                            97.0%
+  LeetCode.Algorithms.DifferentWaysToAddParentheses.DifferentWaysToAddParenthesesRecursive                                                             96.1%
   LeetCode.Algorithms.DistributeCoinsInBinaryTree.DistributeCoinsInBinaryTreeDepthFirstSearch                                                         100.0%
   LeetCode.Algorithms.DistributeMoneyToMaximumChildren.DistributeMoneyToMaximumChildrenLinear                                                          93.3%
   LeetCode.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers.DivideArrayInSetsOfKConsecutiveNumbersDictionary                                         100.0%
