@@ -22,29 +22,27 @@ public class LexicographicalNumbersRecursive : ILexicographicalNumbers
     /// <returns></returns>
     public IList<int> LexicalOrder(int n)
     {
-        return LexicalOrder(1, int.Min(9, n), n);
-    }
-
-    private static List<int> LexicalOrder(int currentNumber, int targetNumber, int maxNumber)
-    {
         var result = new List<int>();
 
+        LexicalOrder(1, Math.Min(9, n), n, result);
+
+        return result;
+    }
+
+    private static void LexicalOrder(int currentNumber, int targetNumber, int maxNumber, List<int> numbers)
+    {
         while (currentNumber <= targetNumber)
         {
-            result.Add(currentNumber);
+            numbers.Add(currentNumber);
 
             var nextNumber = currentNumber * 10;
 
             if (nextNumber <= maxNumber)
             {
-                var nextNumbers = LexicalOrder(nextNumber, int.Min(nextNumber + 9, maxNumber), maxNumber);
-
-                result.AddRange(nextNumbers);
+                LexicalOrder(nextNumber, Math.Min(nextNumber + 9, maxNumber), maxNumber, numbers);
             }
 
             currentNumber++;
         }
-
-        return result;
     }
 }
