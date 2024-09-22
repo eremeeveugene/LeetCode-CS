@@ -1,21 +1,21 @@
 Summary
-  Generated on: 9/21/2024 - 11:02:23 AM
-  Coverage date: 9/21/2024 - 11:01:18 AM - 9/21/2024 - 11:01:38 AM
+  Generated on: 9/22/2024 - 10:12:40 AM
+  Coverage date: 9/22/2024 - 10:11:35 AM - 9/22/2024 - 10:11:55 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 588
-  Files: 588
+  Classes: 589
+  Files: 589
   Line coverage: 98.2%
-  Covered lines: 11473
+  Covered lines: 11503
   Uncovered lines: 204
-  Coverable lines: 11677
-  Total lines: 30371
-  Branch coverage: 96.4% (4450 of 4612)
-  Covered branches: 4450
-  Total branches: 4612
-  Method coverage: 98.5% (788 of 800)
-  Covered methods: 788
-  Total methods: 800
+  Coverable lines: 11707
+  Total lines: 30435
+  Branch coverage: 96.4% (4456 of 4618)
+  Covered branches: 4456
+  Total branches: 4618
+  Method coverage: 98.5% (790 of 802)
+  Covered methods: 790
+  Total methods: 802
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -242,6 +242,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedArrayFactory                                                           100.0%
   LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedList                                                                   100.0%
   LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedListFactory                                                            100.0%
+  LeetCode.Algorithms.KthSmallestInLexicographicalOrder.KthSmallestInLexicographicalOrderPrefixTree                                                   100.0%
   LeetCode.Algorithms.KthSmallestPrimeFraction.KthSmallestPrimeFractionBinarySearch                                                                   100.0%
   LeetCode.Algorithms.KthSmallestPrimeFraction.KthSmallestPrimeFractionBruteForce                                                                     100.0%
   LeetCode.Algorithms.LargestLocalValuesInMatrix.LargestLocalValuesInMatrixBruteForce                                                                 100.0%
