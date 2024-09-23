@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using LeetCode.Core.Models;
+
 namespace LeetCode.Algorithms.ReplaceWords;
 
 /// <inheritdoc />
@@ -25,33 +27,15 @@ public class ReplaceWordsTrieNode : IReplaceWords
     /// <returns></returns>
     public string ReplaceWords(IList<string> dictionary, string sentence)
     {
-        TrieNode root = new();
-
-        foreach (var word in dictionary)
-        {
-            var current = root;
-
-            foreach (var c in word)
-            {
-                if (!current.Children.TryGetValue(c, out var value))
-                {
-                    value = new TrieNode();
-
-                    current.Children[c] = value;
-                }
-
-                current = value;
-            }
-
-            current.Word = word;
-        }
+        var trie = new Trie(dictionary);
 
         var words = sentence.Split(' ');
 
         for (var i = 0; i < words.Length; i++)
         {
             var word = words[i];
-            var current = root;
+
+            var current = trie.Root;
 
             foreach (var c in word.TakeWhile(c => current.Children.ContainsKey(c) && current.Word == null))
             {
@@ -65,12 +49,5 @@ public class ReplaceWordsTrieNode : IReplaceWords
         }
 
         return string.Join(' ', words);
-    }
-
-    internal class TrieNode
-    {
-        public Dictionary<char, TrieNode> Children = [];
-
-        public string? Word { get; set; }
     }
 }
