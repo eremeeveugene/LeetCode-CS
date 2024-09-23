@@ -372,6 +372,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2678. Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens/description/)
 - [2699. Modify Graph Edge Weights](https://leetcode.com/problems/modify-graph-edge-weights/description/)
 - [2706. Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/description/)
+- [2707. Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/description/)
 - [2733. Neither Minimum nor Maximum](https://leetcode.com/problems/neither-minimum-nor-maximum/description/)
 - [2769. Find the Maximum Achievable Number](https://leetcode.com/problems/find-the-maximum-achievable-number/description/)
 - [2807. Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/description/)
