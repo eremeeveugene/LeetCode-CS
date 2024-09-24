@@ -9,8 +9,6 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Core.Models;
-
 namespace LeetCode.Algorithms.ExtraCharactersInString;
 
 /// <inheritdoc />
@@ -53,5 +51,49 @@ public class ExtraCharactersInStringDynamicProgrammingTrie : IExtraCharactersInS
         }
 
         return dp[0];
+    }
+
+    private class Trie
+    {
+        public Trie(IEnumerable<string> words)
+        {
+            AddRange(words);
+        }
+
+        public TrieNode Root { get; } = new();
+
+        private void Add(string word)
+        {
+            var node = Root;
+
+            foreach (var c in word)
+            {
+                if (!node.Children.TryGetValue(c, out var value))
+                {
+                    value = new TrieNode();
+
+                    node.Children[c] = value;
+                }
+
+                node = value;
+            }
+
+            node.Word = word;
+        }
+
+        private void AddRange(IEnumerable<string> words)
+        {
+            foreach (var word in words)
+            {
+                Add(word);
+            }
+        }
+    }
+
+    private class TrieNode
+    {
+        public Dictionary<char, TrieNode> Children { get; } = [];
+
+        public string? Word { get; set; }
     }
 }
