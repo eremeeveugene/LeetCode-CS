@@ -12,8 +12,8 @@
 namespace LeetCode.Algorithms.FindTheLongestSubstringContainingVowelsInEvenCounts;
 
 /// <inheritdoc />
-public class
-    FindTheLongestSubstringContainingVowelsInEvenCountsBitmasking : IFindTheLongestSubstringContainingVowelsInEvenCounts
+public class FindTheLongestSubstringContainingVowelsInEvenCountsBitmasking :
+    IFindTheLongestSubstringContainingVowelsInEvenCounts
 {
     /// <summary>
     ///     Time complexity - O(n)

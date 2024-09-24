@@ -9,41 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Core.Models;
+namespace LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix;
 
-public class Trie
+/// <summary>
+///     https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/description/
+/// </summary>
+public interface IFindTheLengthOfTheLongestCommonPrefix
 {
-    public Trie(IEnumerable<string> words)
-    {
-        AddRange(words);
-    }
-
-    public TrieNode Root { get; } = new();
-
-    public void Add(string word)
-    {
-        var node = Root;
-
-        foreach (var c in word)
-        {
-            if (!node.Children.TryGetValue(c, out var value))
-            {
-                value = new TrieNode();
-
-                node.Children[c] = value;
-            }
-
-            node = value;
-        }
-
-        node.Word = word;
-    }
-
-    public void AddRange(IEnumerable<string> words)
-    {
-        foreach (var word in words)
-        {
-            Add(word);
-        }
-    }
+    int LongestCommonPrefix(int[] arr1, int[] arr2);
 }

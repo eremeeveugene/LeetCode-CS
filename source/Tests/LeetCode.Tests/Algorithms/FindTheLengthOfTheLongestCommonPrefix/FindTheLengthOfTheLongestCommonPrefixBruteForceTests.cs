@@ -9,11 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Core.Models;
+using LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix;
 
-public class TrieNode
-{
-    public Dictionary<char, TrieNode> Children { get; } = [];
+namespace LeetCode.Tests.Algorithms.FindTheLengthOfTheLongestCommonPrefix;
 
-    public string? Word { get; set; }
-}
+[TestClass]
+public class FindTheLengthOfTheLongestCommonPrefixBruteForceTests :
+    FindTheLengthOfTheLongestCommonPrefixTestsBase<FindTheLengthOfTheLongestCommonPrefixBruteForce>;
