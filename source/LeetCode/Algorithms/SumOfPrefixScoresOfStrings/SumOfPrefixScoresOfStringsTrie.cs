@@ -101,7 +101,9 @@ public class SumOfPrefixScoresOfStringsTrie : ISumOfPrefixScoresOfStrings
 
     private class TrieNode
     {
-        public readonly TrieNode?[] Children = new TrieNode['z' - 'a' + 1];
+        private const int ChildrenCount = 'z' - 'a' + 1;
+
+        public readonly TrieNode?[] Children = new TrieNode[ChildrenCount];
 
         public int Count { get; set; }
     }
