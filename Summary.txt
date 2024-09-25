@@ -1,21 +1,21 @@
 Summary
-  Generated on: 9/24/2024 - 3:09:51 PM
-  Coverage date: 9/24/2024 - 3:08:42 PM - 9/24/2024 - 3:09:01 PM
+  Generated on: 9/25/2024 - 1:19:28 PM
+  Coverage date: 9/25/2024 - 1:18:24 PM - 9/25/2024 - 1:18:43 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 594
-  Files: 594
+  Classes: 595
+  Files: 595
   Line coverage: 98.2%
-  Covered lines: 11669
-  Uncovered lines: 204
-  Coverable lines: 11873
-  Total lines: 30810
-  Branch coverage: 96.4% (4505 of 4670)
-  Covered branches: 4505
-  Total branches: 4670
-  Method coverage: 98.5% (811 of 823)
-  Covered methods: 811
-  Total methods: 823
+  Covered lines: 11719
+  Uncovered lines: 206
+  Coverable lines: 11925
+  Total lines: 30920
+  Branch coverage: 96.4% (4516 of 4682)
+  Covered branches: 4516
+  Total branches: 4682
+  Method coverage: 98.5% (818 of 830)
+  Covered methods: 818
+  Total methods: 830
 
 LeetCode                                                                                                                                               98.5%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -549,6 +549,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SumOfDistancesInTree.SumOfDistancesInTreeDepthFirstSearch                                                                       100.0%
   LeetCode.Algorithms.SumOfLeftLeaves.SumOfLeftLeavesBreadthFirstSearch                                                                                92.5%
   LeetCode.Algorithms.SumOfLeftLeaves.SumOfLeftLeavesDepthFirstSearch                                                                                 100.0%
+  LeetCode.Algorithms.SumOfPrefixScoresOfStrings.SumOfPrefixScoresOfStringsTrie                                                                        96.1%
   LeetCode.Algorithms.SumOfSquareNumbers.SumOfSquareNumbersBinarySearch                                                                               100.0%
   LeetCode.Algorithms.SumOfSquareNumbers.SumOfSquareNumbersBruteForce                                                                                 100.0%
   LeetCode.Algorithms.SumOfSquareNumbers.SumOfSquareNumbersTwoPointers                                                                                100.0%
