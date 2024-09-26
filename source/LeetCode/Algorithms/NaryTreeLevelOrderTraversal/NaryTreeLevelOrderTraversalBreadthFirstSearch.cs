@@ -26,7 +26,7 @@ public class NaryTreeLevelOrderTraversalBreadthFirstSearch : INaryTreeLevelOrder
     {
         if (root == null)
         {
-            return new List<IList<int>>();
+            return [];
         }
 
         var result = new List<IList<int>>();
