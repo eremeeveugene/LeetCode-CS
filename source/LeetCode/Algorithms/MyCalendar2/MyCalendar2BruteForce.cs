@@ -19,7 +19,7 @@ public class MyCalendar2BruteForce : IMyCalendar2
 
     /// <summary>
     ///     Time complexity - O(n)
-    ///     Space complexity - O(n^2)
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="start"></param>
     /// <param name="end"></param>
