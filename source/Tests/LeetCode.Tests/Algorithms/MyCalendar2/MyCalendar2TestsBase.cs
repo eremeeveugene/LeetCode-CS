@@ -9,16 +9,16 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.MyCalendar1;
+using LeetCode.Algorithms.MyCalendar2;
 using LeetCode.Core.Helpers;
 
-namespace LeetCode.Tests.Algorithms.MyCalendar1;
+namespace LeetCode.Tests.Algorithms.MyCalendar2;
 
-public abstract class MyCalendar1TestsBase<T> where T : IMyCalendar1, new()
+public abstract class MyCalendar2TestsBase<T> where T : IMyCalendar2, new()
 {
     [TestMethod]
-    [DataRow("[10,15,20]", "[20,25,30]", "[true,false,true]")]
-    public void Book_WithStartAndEndTimes_ReturnsBookingResults(string startJsonArray, string endJsonArray,
+    [DataRow("[10,50,10,5,5,25]", "[20,60,40,15,10,55]", "[true,true,true,false,true,true]")]
+    public void Book_WithMultipleBookings_ReturnsOverlapResults(string startJsonArray, string endJsonArray,
         string expectedResultJsonArray)
     {
         // Arrange
