@@ -28,21 +28,14 @@ public class MyCalendar2BruteForce : IMyCalendar2
     {
         var newItem = new Item(start, end);
 
-        if (_overlapItems.Any(overlapItem =>
-                Math.Max(newItem.Start, overlapItem.Start) < Math.Min(newItem.End, overlapItem.End)))
+        if (_overlapItems.Any(overlapItem => start < overlapItem.End && end > overlapItem.Start))
         {
             return false;
         }
 
-        foreach (var item in _items)
+        foreach (var item in _items.Where(item => start < item.End && end > item.Start))
         {
-            var overlapStart = Math.Max(newItem.Start, item.Start);
-            var overlapEnd = Math.Min(newItem.End, item.End);
-
-            if (overlapStart < overlapEnd)
-            {
-                _overlapItems.Add(new Item(overlapStart, overlapEnd));
-            }
+            _overlapItems.Add(new Item(Math.Max(start, item.Start), Math.Min(end, item.End)));
         }
 
         _items.Add(newItem);
