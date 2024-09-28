@@ -15,8 +15,8 @@ namespace LeetCode.Algorithms.DesignCircularDeque;
 public class DesignCircularDequeLinkedList(int k) : IDesignCircularDeque
 {
     private int _count;
-    private DequeNode? _frontNode = new();
-    private DequeNode? _rearNode = new();
+    private DequeNode? _frontNode;
+    private DequeNode? _rearNode;
 
     /// <summary>
     ///     Time complexity - O(1)
@@ -39,7 +39,7 @@ public class DesignCircularDequeLinkedList(int k) : IDesignCircularDeque
         }
         else
         {
-            _frontNode.Previous = new DequeNode(value, _frontNode);
+            _frontNode.Previous = new DequeNode(value) { Next = _frontNode };
 
             _frontNode = _frontNode.Previous;
         }
@@ -70,7 +70,7 @@ public class DesignCircularDequeLinkedList(int k) : IDesignCircularDeque
         }
         else
         {
-            _rearNode.Next = new DequeNode(value, _frontNode);
+            _rearNode.Next = new DequeNode(value) { Previous = _rearNode };
 
             _rearNode = _rearNode.Next;
         }
@@ -100,6 +100,11 @@ public class DesignCircularDequeLinkedList(int k) : IDesignCircularDeque
         else
         {
             _frontNode = _frontNode?.Next;
+
+            if (_frontNode != null)
+            {
+                _frontNode.Previous = null;
+            }
         }
 
         _count--;
@@ -127,6 +132,11 @@ public class DesignCircularDequeLinkedList(int k) : IDesignCircularDeque
         else
         {
             _rearNode = _rearNode?.Previous;
+
+            if (_rearNode != null)
+            {
+                _rearNode.Next = null;
+            }
         }
 
         _count--;
@@ -184,11 +194,11 @@ public class DesignCircularDequeLinkedList(int k) : IDesignCircularDeque
         return _count == k;
     }
 
-    private class DequeNode(int value = 0, DequeNode? next = null, DequeNode? previous = null)
+    private class DequeNode(int value)
     {
-        public DequeNode? Previous { get; set; } = previous;
+        public DequeNode? Previous { get; set; }
 
-        public DequeNode? Next { get; set; } = next;
+        public DequeNode? Next { get; set; }
 
         public int Value { get; } = value;
     }
