@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/28/2024 - 1:03:40 PM
-  Coverage date: 9/28/2024 - 1:02:33 PM - 9/28/2024 - 1:02:53 PM
+  Generated on: 9/29/2024 - 1:01:07 PM
+  Coverage date: 9/29/2024 - 1:00:08 PM - 9/29/2024 - 1:00:27 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 599
-  Files: 599
-  Line coverage: 97.9%
-  Covered lines: 11818
-  Uncovered lines: 243
-  Coverable lines: 12061
-  Total lines: 31258
-  Branch coverage: 96.1% (4546 of 4730)
-  Covered branches: 4546
-  Total branches: 4730
-  Method coverage: 98.4% (842 of 855)
-  Covered methods: 842
-  Total methods: 855
+  Classes: 600
+  Files: 600
+  Line coverage: 97.8%
+  Covered lines: 11909
+  Uncovered lines: 263
+  Coverable lines: 12172
+  Total lines: 31459
+  Branch coverage: 95.9% (4573 of 4768)
+  Covered branches: 4573
+  Total branches: 4768
+  Method coverage: 98.5% (856 of 869)
+  Covered methods: 856
+  Total methods: 869
 
-LeetCode                                                                                                                                               98.2%
+LeetCode                                                                                                                                               98.1%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                  100.0%
@@ -31,6 +31,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.AddTwoIntegers.AddTwoIntegersMath                                                                                               100.0%
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry                                                                                         100.0%
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersIterative                                                                                            100.0%
+  LeetCode.Algorithms.AllOneDataStructure.AllOneDataStructureLinkedList                                                                                81.9%
   LeetCode.Algorithms.AppendCharactersToStringToMakeSubsequence.AppendCharactersToStringToMakeSubsequenceTwoPointers                                  100.0%
   LeetCode.Algorithms.ApplyDiscountToPrices.ApplyDiscountToPricesIterative                                                                            100.0%
   LeetCode.Algorithms.ArithmeticSubarrays.ArithmeticSubarraysHashSet                                                                                  100.0%
