@@ -11,9 +11,7 @@
 
 namespace LeetCode.Algorithms.AppendCharactersToStringToMakeSubsequence;
 
-/// <summary>
-///     https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/
-/// </summary>
+/// <inheritdoc />
 public class AppendCharactersToStringToMakeSubsequenceTwoPointers : IAppendCharactersToStringToMakeSubsequence
 {
     /// <summary>
