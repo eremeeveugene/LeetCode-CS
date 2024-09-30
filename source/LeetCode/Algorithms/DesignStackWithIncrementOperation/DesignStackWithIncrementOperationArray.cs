@@ -17,6 +17,11 @@ public class DesignStackWithIncrementOperationArray(int maxSize) : IDesignStackW
     private readonly int[] _stackArray = new int[maxSize];
     private int _topIndex = -1;
 
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="x"></param>
     public void Push(int x)
     {
         if (_topIndex >= _stackArray.Length - 1)
@@ -29,21 +34,30 @@ public class DesignStackWithIncrementOperationArray(int maxSize) : IDesignStackW
         _stackArray[_topIndex] = x;
     }
 
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <returns></returns>
     public int Pop()
     {
-        if (_topIndex >= 0)
+        if (_topIndex < 0)
         {
-            return _stackArray[_topIndex--];
+            return -1;
         }
 
-        return -1;
+        return _stackArray[_topIndex--];
     }
 
+    /// <summary>
+    ///     Time complexity - O(min(k,n))
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="k"></param>
+    /// <param name="val"></param>
     public void Increment(int k, int val)
     {
-        var limit = Math.Min(k, _topIndex + 1);
-
-        for (var i = 0; i < limit; i++)
+        for (var i = 0; i < Math.Min(k, _topIndex + 1); i++)
         {
             _stackArray[i] += val;
         }
