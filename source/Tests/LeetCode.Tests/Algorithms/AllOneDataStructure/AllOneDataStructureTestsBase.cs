@@ -34,12 +34,12 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         "[\"inc\",\"inc\",\"inc\",\"inc\",\"inc\",\"dec\",\"dec\",\"getMaxKey\",\"getMinKey\"]",
         "[\"a\",\"b\",\"c\",\"d\",\"c\",\"c\",\"c\",null,null]",
         "[\"a\",\"d\"]")]
-    public void IncDecAndGetKeyMethods_WithVariousOperations_ReturnsMaxAndMinKeys(string methodsJson, string argsJson,
+    public void IncDecAndGetKeyMethods_WithVariousOperations_ReturnsMaxAndMinKeys(string methodsJsonArray, string argsJsonArray,
         string expectedResultsJsonArray)
     {
         // Arrange
-        var methods = JsonHelper<string>.DeserializeToArray(methodsJson);
-        var args = JsonHelper<string>.DeserializeToArray(argsJson);
+        var methods = JsonHelper<string>.DeserializeToArray(methodsJsonArray);
+        var args = JsonHelper<string>.DeserializeToArray(argsJsonArray);
         var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultsJsonArray);
 
         var solution = new T();

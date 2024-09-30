@@ -24,21 +24,21 @@ public abstract class DesignCircularDequeTestsBase<T> where T : IDesignCircularD
         // Arrange
         var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJson);
 
-        var designCircularDequeFactory = new T();
-        var designCircularDeque = designCircularDequeFactory.Create(k);
+        var solutionFactory = new T();
+        var solution = solutionFactory.Create(k);
 
         // Act
         var actualResult = new List<object>
         {
-            designCircularDeque.InsertLast(1),
-            designCircularDeque.InsertLast(2),
-            designCircularDeque.InsertFront(3),
-            designCircularDeque.InsertFront(4),
-            designCircularDeque.GetRear(),
-            designCircularDeque.IsFull(),
-            designCircularDeque.DeleteLast(),
-            designCircularDeque.InsertFront(4),
-            designCircularDeque.GetFront()
+            solution.InsertLast(1),
+            solution.InsertLast(2),
+            solution.InsertFront(3),
+            solution.InsertFront(4),
+            solution.GetRear(),
+            solution.IsFull(),
+            solution.DeleteLast(),
+            solution.InsertFront(4),
+            solution.GetFront()
         };
 
         // Assert
