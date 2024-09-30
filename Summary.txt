@@ -1,21 +1,21 @@
 Summary
-  Generated on: 9/29/2024 - 1:01:07 PM
-  Coverage date: 9/29/2024 - 1:00:08 PM - 9/29/2024 - 1:00:27 PM
+  Generated on: 9/30/2024 - 12:07:21 PM
+  Coverage date: 9/30/2024 - 12:06:20 PM - 9/30/2024 - 12:06:40 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 600
-  Files: 600
+  Classes: 604
+  Files: 604
   Line coverage: 97.8%
-  Covered lines: 11909
+  Covered lines: 11983
   Uncovered lines: 263
-  Coverable lines: 12172
-  Total lines: 31459
-  Branch coverage: 95.9% (4573 of 4768)
-  Covered branches: 4573
-  Total branches: 4768
-  Method coverage: 98.5% (856 of 869)
-  Covered methods: 856
-  Total methods: 869
+  Coverable lines: 12246
+  Total lines: 31670
+  Branch coverage: 95.9% (4591 of 4786)
+  Covered branches: 4591
+  Total branches: 4786
+  Method coverage: 98.5% (870 of 883)
+  Covered methods: 870
+  Total methods: 883
 
 LeetCode                                                                                                                                               98.1%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -123,6 +123,10 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArrayFactory                                                                         100.0%
   LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedList                                                                                62.3%
   LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedListFactory                                                                        100.0%
+  LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArray                                                        100.0%
+  LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArrayFactory                                                 100.0%
+  LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedList                                                   100.0%
+  LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedListFactory                                            100.0%
   LeetCode.Algorithms.DiameterOfBinaryTree.DiameterOfBinaryTreeDepthFirst                                                                             100.0%
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayByDigitExtraction                    100.0%
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayIterative                            100.0%
