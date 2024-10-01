@@ -287,6 +287,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1470. Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/description/)
 - [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/description/)
 - [1486. XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/description/)
+- [1497. Check If Array Pairs Are Divisible by k](https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/description/)
 - [1500. Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/description/)
 - [1508. Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/description/)
 - [1509. Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/description/)
