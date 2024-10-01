@@ -16,7 +16,7 @@ public class CheckIfArrayPairsAreDivisibleByKDictionary : ICheckIfArrayPairsAreD
 {
     /// <summary>
     ///     Time complexity - O(n)
-    ///     Space complexity - O(k), where k is the number of unique values
+    ///     Space complexity - O(n)
     /// </summary>
     /// <param name="arr"></param>
     /// <param name="k"></param>
