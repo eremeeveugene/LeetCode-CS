@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/1/2024 - 11:28:15 AM
-  Coverage date: 10/1/2024 - 11:27:24 AM - 10/1/2024 - 11:27:44 AM
+  Generated on: 10/2/2024 - 8:26:49 AM
+  Coverage date: 10/2/2024 - 8:25:50 AM - 10/2/2024 - 8:26:09 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 607
-  Files: 607
+  Classes: 609
+  Files: 609
   Line coverage: 97.8%
-  Covered lines: 12053
+  Covered lines: 12067
   Uncovered lines: 265
-  Coverable lines: 12318
-  Total lines: 31847
-  Branch coverage: 95.9% (4622 of 4818)
-  Covered branches: 4622
-  Total branches: 4818
-  Method coverage: 98.5% (875 of 888)
-  Covered methods: 875
-  Total methods: 888
+  Coverable lines: 12332
+  Total lines: 31915
+  Branch coverage: 95.8% (4624 of 4822)
+  Covered branches: 4624
+  Total branches: 4822
+  Method coverage: 98.5% (878 of 891)
+  Covered methods: 878
+  Total methods: 891
 
 LeetCode                                                                                                                                               98.1%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -130,6 +130,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArrayFactory                                                 100.0%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedList                                                   100.0%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedListFactory                                            100.0%
+  LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict.DetermineIfTwoEventsHaveConflictNumberComparison                                               100.0%
+  LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict.DetermineIfTwoEventsHaveConflictStringComparison                                               100.0%
   LeetCode.Algorithms.DiameterOfBinaryTree.DiameterOfBinaryTreeDepthFirst                                                                             100.0%
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayByDigitExtraction                    100.0%
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayIterative                            100.0%
