@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/2/2024 - 8:26:49 AM
-  Coverage date: 10/2/2024 - 8:25:50 AM - 10/2/2024 - 8:26:09 AM
+  Generated on: 10/2/2024 - 9:57:23 AM
+  Coverage date: 10/2/2024 - 9:56:31 AM - 10/2/2024 - 9:56:50 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 609
-  Files: 609
+  Classes: 611
+  Files: 611
   Line coverage: 97.8%
-  Covered lines: 12067
-  Uncovered lines: 265
-  Coverable lines: 12332
-  Total lines: 31915
-  Branch coverage: 95.8% (4624 of 4822)
-  Covered branches: 4624
-  Total branches: 4822
-  Method coverage: 98.5% (878 of 891)
-  Covered methods: 878
-  Total methods: 891
+  Covered lines: 12125
+  Uncovered lines: 269
+  Coverable lines: 12394
+  Total lines: 32086
+  Branch coverage: 95.8% (4638 of 4840)
+  Covered branches: 4638
+  Total branches: 4840
+  Method coverage: 98.5% (892 of 905)
+  Covered methods: 892
+  Total methods: 905
 
-LeetCode                                                                                                                                               98.1%
+LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                  100.0%
@@ -230,6 +230,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ImplementQueueUsingStacks.ImplementQueueUsingStacksTwoStacks                                                                    100.0%
   LeetCode.Algorithms.ImplementStackUsingQueues.ImplementStackUsingQueuesOneQueue                                                                     100.0%
   LeetCode.Algorithms.ImplementStackUsingQueues.ImplementStackUsingQueuesTwoQueues                                                                    100.0%
+  LeetCode.Algorithms.ImplementTrie.ImplementTrieArray                                                                                                 92.3%
+  LeetCode.Algorithms.ImplementTrie.ImplementTrieDictionary                                                                                            94.4%
   LeetCode.Algorithms.IncreasingDecreasingString.IncreasingDecreasingStringCountingSort                                                               100.0%
   LeetCode.Algorithms.IncreasingDecreasingString.IncreasingDecreasingStringDictionary                                                                 100.0%
   LeetCode.Algorithms.InsertGreatestCommonDivisorsInLinkedList.InsertGreatestCommonDivisorsInLinkedListSimulation                                     100.0%
