@@ -299,6 +299,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1530. Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/description/)
 - [1544. Make The String Great](https://leetcode.com/problems/make-the-string-great/description/)
 - [1568. Minimum Number of Days to Disconnect Island](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/description/)
+- [1590. Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p/description/)
 - [1598. Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/description/)
 - [1605. Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/description/)
 - [1608. Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/description/)
