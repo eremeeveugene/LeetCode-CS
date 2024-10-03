@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/2/2024 - 11:09:16 AM
-  Coverage date: 10/2/2024 - 11:08:22 AM - 10/2/2024 - 11:08:43 AM
+  Generated on: 10/3/2024 - 11:05:09 AM
+  Coverage date: 10/3/2024 - 11:04:15 AM - 10/3/2024 - 11:04:36 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 613
-  Files: 613
+  Classes: 614
+  Files: 614
   Line coverage: 97.8%
-  Covered lines: 12207
+  Covered lines: 12228
   Uncovered lines: 271
-  Coverable lines: 12478
-  Total lines: 32249
-  Branch coverage: 95.8% (4668 of 4872)
-  Covered branches: 4668
-  Total branches: 4872
-  Method coverage: 98.5% (902 of 915)
-  Covered methods: 902
-  Total methods: 915
+  Coverable lines: 12499
+  Total lines: 32305
+  Branch coverage: 95.7% (4675 of 4880)
+  Covered branches: 4675
+  Total branches: 4880
+  Method coverage: 98.5% (903 of 916)
+  Covered methods: 903
+  Total methods: 916
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -295,6 +295,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MagicSquaresInGrid.MagicSquaresInGridBruteForce                                                                                 100.0%
   LeetCode.Algorithms.MajorityElement.MajorityElementDictionary                                                                                       100.0%
   LeetCode.Algorithms.MajorityElement.MajorityElementDistinctCount                                                                                    100.0%
+  LeetCode.Algorithms.MakeSumDivisibleByP.MakeSumDivisibleByPPrefixSum                                                                                100.0%
   LeetCode.Algorithms.MakeTheStringGreat.MakeTheStringGreatIterative                                                                                  100.0%
   LeetCode.Algorithms.MakeTheStringGreat.MakeTheStringGreatStringBuilder                                                                              100.0%
   LeetCode.Algorithms.MakeTwoArraysEqualByReversingSubarrays.MakeTwoArraysEqualByReversingSubarraysDictionary                                          78.2%
