@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/3/2024 - 11:05:09 AM
-  Coverage date: 10/3/2024 - 11:04:15 AM - 10/3/2024 - 11:04:36 AM
+  Generated on: 10/4/2024 - 11:03:23 AM
+  Coverage date: 10/4/2024 - 11:02:30 AM - 10/4/2024 - 11:02:51 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 614
-  Files: 614
+  Classes: 616
+  Files: 616
   Line coverage: 97.8%
-  Covered lines: 12228
-  Uncovered lines: 271
-  Coverable lines: 12499
-  Total lines: 32305
-  Branch coverage: 95.7% (4675 of 4880)
-  Covered branches: 4675
-  Total branches: 4880
-  Method coverage: 98.5% (903 of 916)
-  Covered methods: 903
-  Total methods: 916
+  Covered lines: 12272
+  Uncovered lines: 273
+  Coverable lines: 12545
+  Total lines: 32422
+  Branch coverage: 95.7% (4688 of 4894)
+  Covered branches: 4688
+  Total branches: 4894
+  Method coverage: 98.5% (905 of 918)
+  Covered methods: 905
+  Total methods: 918
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -143,6 +143,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.DistributeMoneyToMaximumChildren.DistributeMoneyToMaximumChildrenLinear                                                          93.3%
   LeetCode.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers.DivideArrayInSetsOfKConsecutiveNumbersDictionary                                         100.0%
   LeetCode.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers.DivideArrayInSetsOfKConsecutiveNumbersSortedDictionary                                   100.0%
+  LeetCode.Algorithms.DividePlayersIntoTeamsOfEqualSkill.DividePlayersIntoTeamsOfEqualSkillDictionary                                                  92.3%
+  LeetCode.Algorithms.DividePlayersIntoTeamsOfEqualSkill.DividePlayersIntoTeamsOfEqualSkillSorting                                                    100.0%
   LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceConstant                                           100.0%
   LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceIterative                                          100.0%
   LeetCode.Algorithms.DivisorGame.DivisorGameDivisionRemainder                                                                                        100.0%
