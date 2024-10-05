@@ -4,7 +4,7 @@
 
 ## Overview
 
-Welcome to my repository of LeetCode solutions, all implemented in C#. Each solution is implemented using **Test-Driven Development (TDD)** and follows the **AAA (Arrange-Act-Assert)** pattern. I start by writing the tests before diving into the actual code, ensuring the solutions meet expected outcomes and minimizing bugs. This method is perfect for tackling algorithmic challenges where precision is crucial.
+Welcome to my collection of LeetCode solutions, all written in C#. Each solution is developed using Test-Driven Development (TDD), with a focus on the AAA (Arrange-Act-Assert) testing pattern. By writing tests first, I ensure my code is both reliable and efficient, minimizing bugs and verifying that each solution meets its expected outcome. This disciplined approach is ideal for solving algorithmic challenges where accuracy and performance are key.
 
 ## Purpose
 
@@ -189,6 +189,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/)
 - [561. Array Partition](https://leetcode.com/problems/array-partition/description/)
 - [564. Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome/description/)
+- [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
 - [589. N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/description/)
 - [590. N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal/description/)
 - [592. Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction/description/)
