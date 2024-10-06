@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/6/2024 - 11:02:34 AM
-  Coverage date: 10/6/2024 - 11:01:39 AM - 10/6/2024 - 11:01:59 AM
+  Generated on: 10/6/2024 - 12:10:57 PM
+  Coverage date: 10/6/2024 - 12:10:03 PM - 10/6/2024 - 12:10:22 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 619
-  Files: 619
+  Classes: 622
+  Files: 622
   Line coverage: 97.8%
-  Covered lines: 12366
+  Covered lines: 12391
   Uncovered lines: 277
-  Coverable lines: 12643
-  Total lines: 32629
-  Branch coverage: 95.7% (4726 of 4934)
-  Covered branches: 4726
-  Total branches: 4934
-  Method coverage: 98.5% (910 of 923)
-  Covered methods: 910
-  Total methods: 923
+  Coverable lines: 12668
+  Total lines: 32733
+  Branch coverage: 95.7% (4733 of 4942)
+  Covered branches: 4733
+  Total branches: 4942
+  Method coverage: 98.5% (913 of 926)
+  Covered methods: 913
+  Total methods: 926
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -588,6 +588,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.ThreeConsecutiveOdds.ThreeConsecutiveOddsCounting                                                                               100.0%
   LeetCode.Algorithms.ThreeSum.ThreeSumTwoPointers                                                                                                     86.4%
   LeetCode.Algorithms.TimeNeededToBuyTickets.TimeNeededToBuyTicketsIterative                                                                          100.0%
+  LeetCode.Algorithms.ToLowerCase.ToLowerCaseArray                                                                                                    100.0%
+  LeetCode.Algorithms.ToLowerCase.ToLowerCaseBuiltIn                                                                                                  100.0%
+  LeetCode.Algorithms.ToLowerCase.ToLowerCaseStringBuilder                                                                                            100.0%
   LeetCode.Algorithms.TrappingRainWater.TrappingRainWaterIterative                                                                                    100.0%
   LeetCode.Algorithms.TwoKeysKeyboard.TwoKeysKeyboardPrimeFactorization                                                                               100.0%
   LeetCode.Algorithms.TwoKeysKeyboard.TwoKeysKeyboardSimulation                                                                                       100.0%
