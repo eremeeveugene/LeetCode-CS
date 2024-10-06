@@ -9,33 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.ToLowerCase;
+namespace LeetCode.Algorithms.CapitalizeTheTitle;
 
-/// <inheritdoc />
-public class ToLowerCaseArray : IToLowerCase
+/// <summary>
+///     https://leetcode.com/problems/capitalize-the-title/
+/// </summary>
+public interface ICapitalizeTheTitle
 {
-    /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
-    public string ToLowerCase(string s)
-    {
-        var result = new char[s.Length];
-
-        for (var i = 0; i < s.Length; i++)
-        {
-            if (s[i] >= 'A' && s[i] <= 'Z')
-            {
-                result[i] = (char)(s[i] + 32);
-            }
-            else
-            {
-                result[i] = s[i];
-            }
-        }
-
-        return new string(result);
-    }
+    string CapitalizeTitle(string title);
 }

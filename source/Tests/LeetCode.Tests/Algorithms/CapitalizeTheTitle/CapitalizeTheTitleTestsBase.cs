@@ -9,33 +9,25 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.ToLowerCase;
+using LeetCode.Algorithms.CapitalizeTheTitle;
 
-/// <inheritdoc />
-public class ToLowerCaseArray : IToLowerCase
+namespace LeetCode.Tests.Algorithms.CapitalizeTheTitle;
+
+public abstract class CapitalizeTheTitleTestsBase<T> where T : ICapitalizeTheTitle, new()
 {
-    /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
-    public string ToLowerCase(string s)
+    [TestMethod]
+    [DataRow("capiTalIze tHe titLe", "Capitalize The Title")]
+    [DataRow("First leTTeR of EACH Word", "First Letter of Each Word")]
+    [DataRow("i lOve leetcode", "i Love Leetcode")]
+    public void CapitalizeTitle_GivenTitle_ReturnsCorrectlyCapitalizedTitle(string title, string expectedResult)
     {
-        var result = new char[s.Length];
+        // Arrange
+        var solution = new T();
 
-        for (var i = 0; i < s.Length; i++)
-        {
-            if (s[i] >= 'A' && s[i] <= 'Z')
-            {
-                result[i] = (char)(s[i] + 32);
-            }
-            else
-            {
-                result[i] = s[i];
-            }
-        }
+        // Act
+        var actualResult = solution.CapitalizeTitle(title);
 
-        return new string(result);
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
 }
