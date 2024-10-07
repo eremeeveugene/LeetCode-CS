@@ -385,6 +385,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2651. Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/description/)
 - [2652. Sum Multiples](https://leetcode.com/problems/sum-multiples/description/)
 - [2678. Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens/description/)
+- [2696. Minimum String Length After Removing Substrings](https://leetcode.com/problems/minimum-string-length-after-removing-substrings/description/)
 - [2699. Modify Graph Edge Weights](https://leetcode.com/problems/modify-graph-edge-weights/description/)
 - [2706. Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/description/)
 - [2707. Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/description/)
