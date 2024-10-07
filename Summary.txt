@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/6/2024 - 1:18:30 PM
-  Coverage date: 10/6/2024 - 1:17:32 PM - 10/6/2024 - 1:17:51 PM
+  Generated on: 10/7/2024 - 12:58:07 PM
+  Coverage date: 10/7/2024 - 12:57:14 PM - 10/7/2024 - 12:57:34 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 624
-  Files: 624
+  Classes: 625
+  Files: 625
   Line coverage: 97.8%
-  Covered lines: 12434
+  Covered lines: 12453
   Uncovered lines: 277
-  Coverable lines: 12711
-  Total lines: 32843
-  Branch coverage: 95.7% (4745 of 4954)
-  Covered branches: 4745
-  Total branches: 4954
-  Method coverage: 98.6% (916 of 929)
-  Covered methods: 916
-  Total methods: 929
+  Coverable lines: 12730
+  Total lines: 32897
+  Branch coverage: 95.7% (4759 of 4968)
+  Covered branches: 4759
+  Total branches: 4968
+  Method coverage: 98.6% (917 of 930)
+  Covered methods: 917
+  Total methods: 930
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -360,6 +360,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK.MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeString                  100.0%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStack                                                    100.0%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStringBuilder                                            100.0%
+  LeetCode.Algorithms.MinimumStringLengthAfterRemovingSubstrings.MinimumStringLengthAfterRemovingSubstringsStack                                      100.0%
   LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits.MinimumSumOfFourDigitNumberAfterSplittingDigitsChars                            100.0%
   LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits.MinimumSumOfFourDigitNumberAfterSplittingDigitsNumbers                          100.0%
   LeetCode.Algorithms.MinimumSwapsToGroupAll1Together2.MinimumSwapsToGroupAll1Together2SlidingWindow                                                   93.1%
