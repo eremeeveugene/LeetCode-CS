@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/7/2024 - 12:58:07 PM
-  Coverage date: 10/7/2024 - 12:57:14 PM - 10/7/2024 - 12:57:34 PM
+  Generated on: 10/8/2024 - 6:26:25 PM
+  Coverage date: 10/8/2024 - 6:25:30 PM - 10/8/2024 - 6:25:51 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 625
-  Files: 625
+  Classes: 626
+  Files: 626
   Line coverage: 97.8%
-  Covered lines: 12453
+  Covered lines: 12470
   Uncovered lines: 277
-  Coverable lines: 12730
-  Total lines: 32897
-  Branch coverage: 95.7% (4759 of 4968)
-  Covered branches: 4759
-  Total branches: 4968
-  Method coverage: 98.6% (917 of 930)
-  Covered methods: 917
-  Total methods: 930
+  Coverable lines: 12747
+  Total lines: 32941
+  Branch coverage: 95.7% (4765 of 4974)
+  Covered branches: 4765
+  Total branches: 4974
+  Method coverage: 98.6% (918 of 931)
+  Covered methods: 918
+  Total methods: 931
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -358,6 +358,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone.MinimumNumberOfMovesToSeatEveryoneSorting                                                    100.0%
   LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK.MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeBits                    100.0%
   LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK.MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeString                  100.0%
+  LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced.MinimumNumberOfSwapsToMakeTheStringBalancedIterative                                100.0%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStack                                                    100.0%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStringBuilder                                            100.0%
   LeetCode.Algorithms.MinimumStringLengthAfterRemovingSubstrings.MinimumStringLengthAfterRemovingSubstringsStack                                      100.0%
