@@ -24,21 +24,21 @@ public class MinimumAddToMakeParenthesesValidIterative : IMinimumAddToMakeParent
     {
         var minAdd = 0;
 
-        var openParenthesisCount = 0;
+        var openCount = 0;
 
         foreach (var c in s)
         {
             if (c == '(')
             {
-                openParenthesisCount++;
+                openCount++;
 
                 minAdd++;
             }
             else
             {
-                if (openParenthesisCount > 0)
+                if (openCount > 0)
                 {
-                    openParenthesisCount--;
+                    openCount--;
 
                     minAdd--;
                 }
@@ -49,6 +49,6 @@ public class MinimumAddToMakeParenthesesValidIterative : IMinimumAddToMakeParent
             }
         }
 
-        return Math.Abs(minAdd);
+        return minAdd;
     }
 }
