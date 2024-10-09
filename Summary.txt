@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/8/2024 - 6:26:25 PM
-  Coverage date: 10/8/2024 - 6:25:30 PM - 10/8/2024 - 6:25:51 PM
+  Generated on: 10/9/2024 - 9:23:34 AM
+  Coverage date: 10/9/2024 - 9:22:31 AM - 10/9/2024 - 9:22:52 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 626
-  Files: 626
+  Classes: 627
+  Files: 627
   Line coverage: 97.8%
-  Covered lines: 12470
+  Covered lines: 12493
   Uncovered lines: 277
-  Coverable lines: 12747
-  Total lines: 32941
-  Branch coverage: 95.7% (4765 of 4974)
-  Covered branches: 4765
-  Total branches: 4974
-  Method coverage: 98.6% (918 of 931)
-  Covered methods: 918
-  Total methods: 931
+  Coverable lines: 12770
+  Total lines: 32995
+  Branch coverage: 95.8% (4771 of 4980)
+  Covered branches: 4771
+  Total branches: 4980
+  Method coverage: 98.6% (919 of 932)
+  Covered methods: 919
+  Total methods: 932
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -335,6 +335,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                                                                                   100.0%
   LeetCode.Algorithms.MinCostClimbingStairs.MinCostClimbingStairsDynamicProgramming                                                                   100.0%
   LeetCode.Algorithms.MinimumAbsoluteDifferenceInBST.MinimumAbsoluteDifferenceInBSTDepthFirstSearch                                                   100.0%
+  LeetCode.Algorithms.MinimumAddToMakeParenthesesValid.MinimumAddToMakeParenthesesValidIterative                                                      100.0%
   LeetCode.Algorithms.MinimumBitFlipsToConvertNumber.MinimumBitFlipsToConvertNumberBitwise                                                            100.0%
   LeetCode.Algorithms.MinimumBitFlipsToConvertNumber.MinimumBitFlipsToConvertNumberPopCount                                                           100.0%
   LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueHashSet                                                                                    100.0%
