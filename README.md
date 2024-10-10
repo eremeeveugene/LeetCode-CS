@@ -389,6 +389,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2678. Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens/description/)
 - [2696. Minimum String Length After Removing Substrings](https://leetcode.com/problems/minimum-string-length-after-removing-substrings/description/)
 - [2699. Modify Graph Edge Weights](https://leetcode.com/problems/modify-graph-edge-weights/description/)
+- [2703. Return Length of Arguments Passed](https://leetcode.com/problems/return-length-of-arguments-passed/description/)
 - [2706. Buy Two Chocolates](https://leetcode.com/problems/buy-two-chocolates/description/)
 - [2707. Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/description/)
 - [2733. Neither Minimum nor Maximum](https://leetcode.com/problems/neither-minimum-nor-maximum/description/)
