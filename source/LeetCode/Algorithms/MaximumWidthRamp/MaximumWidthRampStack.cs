@@ -34,11 +34,21 @@ public class MaximumWidthRampStack : IMaximumWidthRamp
 
         var ramp = 0;
 
-        for (var j = nums.Length - 1; j >= 0; j--)
+        for (var i = nums.Length - 1; i >= 0; i--)
         {
-            while (stack.Count > 0 && nums[j] >= nums[stack.Peek()])
+            if (i <= ramp)
             {
-                ramp = Math.Max(ramp, j - stack.Pop());
+                break;
+            }
+
+            while (stack.Count > 0 && nums[i] >= nums[stack.Peek()])
+            {
+                ramp = Math.Max(ramp, i - stack.Pop());
+            }
+
+            if (stack.Count == 0)
+            {
+                break;
             }
         }
 
