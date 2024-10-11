@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/10/2024 - 5:30:13 PM
-  Coverage date: 10/10/2024 - 5:29:08 PM - 10/10/2024 - 5:29:28 PM
+  Generated on: 10/11/2024 - 11:22:42 AM
+  Coverage date: 10/11/2024 - 11:21:51 AM - 10/11/2024 - 11:22:10 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 628
-  Files: 628
-  Line coverage: 97.8%
-  Covered lines: 12516
-  Uncovered lines: 279
-  Coverable lines: 12795
-  Total lines: 33052
-  Branch coverage: 95.7% (4785 of 4996)
-  Covered branches: 4785
-  Total branches: 4996
-  Method coverage: 98.6% (920 of 933)
-  Covered methods: 920
-  Total methods: 933
+  Classes: 630
+  Files: 630
+  Line coverage: 97.7%
+  Covered lines: 12577
+  Uncovered lines: 283
+  Coverable lines: 12860
+  Total lines: 33198
+  Branch coverage: 95.7% (4806 of 5020)
+  Covered branches: 4806
+  Total branches: 5020
+  Method coverage: 98.6% (926 of 939)
+  Covered methods: 926
+  Total methods: 939
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -589,6 +589,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.SymmetricTree.SymmetricTreeRecursive                                                                                             86.6%
   LeetCode.Algorithms.TaskScheduler.TaskSchedulerDictionary                                                                                           100.0%
   LeetCode.Algorithms.TheNumberOfBeautifulSubsets.TheNumberOfBeautifulSubsetsBacktracking                                                             100.0%
+  LeetCode.Algorithms.TheNumberOfTheSmallestUnoccupiedChair.TheNumberOfTheSmallestUnoccupiedChairPriorityQueue                                         95.6%
+  LeetCode.Algorithms.TheNumberOfTheSmallestUnoccupiedChair.TheNumberOfTheSmallestUnoccupiedChairSortedSet                                             92.8%
   LeetCode.Algorithms.ThirdMaximumNumber.ThirdMaximumNumberDistinctOrder                                                                              100.0%
   LeetCode.Algorithms.ThirdMaximumNumber.ThirdMaximumNumberLinear                                                                                     100.0%
   LeetCode.Algorithms.ThreeConsecutiveOdds.ThreeConsecutiveOddsCounting                                                                               100.0%
