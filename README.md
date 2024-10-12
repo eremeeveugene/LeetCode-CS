@@ -235,6 +235,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/)
 - [884. Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/description/)
 - [885. Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/description/)
+- [896. Monotonic Array](https://leetcode.com/problems/monotonic-array/description/)
 - [912. Sort an Array](https://leetcode.com/problems/sort-an-array/description/)
 - [921. Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/)
 - [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/description/)
