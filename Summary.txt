@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/12/2024 - 12:09:51 PM
-  Coverage date: 10/12/2024 - 12:08:45 PM - 10/12/2024 - 12:09:05 PM
+  Generated on: 10/12/2024 - 1:41:59 PM
+  Coverage date: 10/12/2024 - 1:40:57 PM - 10/12/2024 - 1:41:18 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 634
-  Files: 634
+  Classes: 635
+  Files: 635
   Line coverage: 97.8%
-  Covered lines: 12653
+  Covered lines: 12669
   Uncovered lines: 283
-  Coverable lines: 12936
-  Total lines: 33400
-  Branch coverage: 95.7% (4834 of 5048)
-  Covered branches: 4834
-  Total branches: 5048
-  Method coverage: 98.6% (930 of 943)
-  Covered methods: 930
-  Total methods: 943
+  Coverable lines: 12952
+  Total lines: 33443
+  Branch coverage: 95.7% (4840 of 5054)
+  Covered branches: 4840
+  Total branches: 5054
+  Method coverage: 98.6% (931 of 944)
+  Covered methods: 931
+  Total methods: 944
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -380,6 +380,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MissingNumber.MissingNumberSortAndWhileSearch                                                                                   100.0%
   LeetCode.Algorithms.MissingNumber.MissingNumberSumFormula                                                                                           100.0%
   LeetCode.Algorithms.ModifyGraphEdgeWeights.ModifyGraphEdgeWeightsDijkstra                                                                            94.2%
+  LeetCode.Algorithms.MonotonicArray.MonotonicArrayIterative                                                                                          100.0%
   LeetCode.Algorithms.MostStonesRemovedWithSameRowOrColumn.MostStonesRemovedWithSameRowOrColumnUnionFind                                              100.0%
   LeetCode.Algorithms.MoveZeroes.MoveZeroesTwoPointers                                                                                                100.0%
   LeetCode.Algorithms.MultiplyStrings.MultiplyStringsBigInteger                                                                                       100.0%
