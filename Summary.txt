@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/13/2024 - 11:58:23 AM
-  Coverage date: 10/13/2024 - 11:57:30 AM - 10/13/2024 - 11:57:50 AM
+  Generated on: 10/13/2024 - 12:45:07 PM
+  Coverage date: 10/13/2024 - 12:44:03 PM - 10/13/2024 - 12:44:26 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 636
-  Files: 636
-  Line coverage: 97.8%
-  Covered lines: 12711
-  Uncovered lines: 283
-  Coverable lines: 12994
-  Total lines: 33521
-  Branch coverage: 95.7% (4852 of 5066)
-  Covered branches: 4852
-  Total branches: 5066
-  Method coverage: 98.6% (932 of 945)
-  Covered methods: 932
-  Total methods: 945
+  Classes: 638
+  Files: 638
+  Line coverage: 97.7%
+  Covered lines: 12728
+  Uncovered lines: 287
+  Coverable lines: 13015
+  Total lines: 33598
+  Branch coverage: 95.7% (4860 of 5076)
+  Covered branches: 4860
+  Total branches: 5076
+  Method coverage: 98.6% (934 of 947)
+  Covered methods: 934
+  Total methods: 947
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -192,6 +192,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayBinarySearch                                                92.5%
   LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayIterative                                                  100.0%
   LeetCode.Algorithms.FindTheClosestPalindrome.FindTheClosestPalindromeIterative                                                                      100.0%
+  LeetCode.Algorithms.FindTheDifference.FindTheDifferenceBitwise                                                                                      100.0%
+  LeetCode.Algorithms.FindTheDifference.FindTheDifferenceDictionary                                                                                    76.4%
   LeetCode.Algorithms.FindTheDifferenceOfTwoArrays.FindTheDifferenceOfTwoArraysHashSet                                                                100.0%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberBruteForce                                                                          91.6%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm                                                       89.4%
