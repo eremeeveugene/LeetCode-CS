@@ -158,6 +158,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [383. Ransom Note](https://leetcode.com/problems/ransom-note/description/)
 - [386. Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/description/)
 - [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/)
+- [389. Find the Difference](https://leetcode.com/problems/find-the-difference/description/)
 - [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)
 - [402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/)
 - [404. Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/description/)

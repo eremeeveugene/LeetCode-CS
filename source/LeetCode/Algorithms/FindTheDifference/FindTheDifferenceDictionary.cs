@@ -9,26 +9,39 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.FindTheDifferenceOfTwoArrays;
+namespace LeetCode.Algorithms.FindTheDifference;
 
 /// <inheritdoc />
-public class FindTheDifferenceOfTwoArraysHashSet : IFindTheDifferenceOfTwoArrays
+public class FindTheDifferenceDictionary : IFindTheDifference
 {
     /// <summary>
-    ///     Time complexity - O(m + n)
-    ///     Space complexity - O(m + n)
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
     /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
+    /// <param name="s"></param>
+    /// <param name="t"></param>
     /// <returns></returns>
-    public IList<IList<int>> FindDifference(int[] nums1, int[] nums2)
+    public char FindTheDifference(string s, string t)
     {
-        var set1 = new HashSet<int>(nums1);
-        var set2 = new HashSet<int>(nums2);
+        var sDictionary = new Dictionary<char, int>();
 
-        var result1 = set1.Where(num => !set2.Contains(num)).ToList();
-        var result2 = set2.Where(num => !set1.Contains(num)).ToList();
+        foreach (var sItem in s.Where(sItem => !sDictionary.TryAdd(sItem, 1)))
+        {
+            sDictionary[sItem]++;
+        }
 
-        return new List<IList<int>> { result1, result2 };
+        foreach (var tItem in t)
+        {
+            if (sDictionary.TryGetValue(tItem, out var tItemValue) && tItemValue > 0)
+            {
+                sDictionary[tItem]--;
+            }
+            else
+            {
+                return tItem;
+            }
+        }
+
+        return (char)0;
     }
 }
