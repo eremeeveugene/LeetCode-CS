@@ -9,26 +9,25 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.FindTheDifferenceOfTwoArrays;
+using LeetCode.Algorithms.FindTheDifference;
 
-/// <inheritdoc />
-public class FindTheDifferenceOfTwoArraysHashSet : IFindTheDifferenceOfTwoArrays
+namespace LeetCode.Tests.Algorithms.FindTheDifference;
+
+public abstract class FindTheDifferenceTestsBase<T> where T : IFindTheDifference, new()
 {
-    /// <summary>
-    ///     Time complexity - O(m + n)
-    ///     Space complexity - O(m + n)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <returns></returns>
-    public IList<IList<int>> FindDifference(int[] nums1, int[] nums2)
+    [TestMethod]
+    [DataRow("abcd", "abcde", 'e')]
+    [DataRow("", "y", 'y')]
+    [DataRow("a", "aa", 'a')]
+    public void FindTheDifference_WithTwoStrings_ReturnsExtraCharacter(string s, string t, char expectedResult)
     {
-        var set1 = new HashSet<int>(nums1);
-        var set2 = new HashSet<int>(nums2);
+        // Arrange
+        var solution = new T();
 
-        var result1 = set1.Where(num => !set2.Contains(num)).ToList();
-        var result2 = set2.Where(num => !set1.Contains(num)).ToList();
+        // Act
+        var actualResult = solution.FindTheDifference(s, t);
 
-        return new List<IList<int>> { result1, result2 };
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
 }
