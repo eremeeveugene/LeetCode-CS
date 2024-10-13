@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/12/2024 - 1:41:59 PM
-  Coverage date: 10/12/2024 - 1:40:57 PM - 10/12/2024 - 1:41:18 PM
+  Generated on: 10/13/2024 - 11:58:23 AM
+  Coverage date: 10/13/2024 - 11:57:30 AM - 10/13/2024 - 11:57:50 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 635
-  Files: 635
+  Classes: 636
+  Files: 636
   Line coverage: 97.8%
-  Covered lines: 12669
+  Covered lines: 12711
   Uncovered lines: 283
-  Coverable lines: 12952
-  Total lines: 33443
-  Branch coverage: 95.7% (4840 of 5054)
-  Covered branches: 4840
-  Total branches: 5054
-  Method coverage: 98.6% (931 of 944)
-  Covered methods: 931
-  Total methods: 944
+  Coverable lines: 12994
+  Total lines: 33521
+  Branch coverage: 95.7% (4852 of 5066)
+  Covered branches: 4852
+  Total branches: 5066
+  Method coverage: 98.6% (932 of 945)
+  Covered methods: 932
+  Total methods: 945
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -541,6 +541,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SingleNumber3.SingleNumber3Bitwise                                                                                              100.0%
   LeetCode.Algorithms.SingleNumber3.SingleNumber3Dictionary                                                                                           100.0%
   LeetCode.Algorithms.SmallestEvenMultiple.SmallestEvenMultipleConstant                                                                               100.0%
+  LeetCode.Algorithms.SmallestRangeCoveringElementsFromKLists.SmallestRangeCoveringElementsFromKListsSortingWithSlidingWindow                         100.0%
   LeetCode.Algorithms.SmallestStringStartingFromLeaf.SmallestStringStartingFromLeafDepthFirstSearch                                                   100.0%
   LeetCode.Algorithms.SortAnArray.SortAnArrayBubbleSort                                                                                               100.0%
   LeetCode.Algorithms.SortAnArray.SortAnArrayMergeSort                                                                                                 89.3%
