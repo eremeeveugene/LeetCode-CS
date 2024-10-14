@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/13/2024 - 12:45:07 PM
-  Coverage date: 10/13/2024 - 12:44:03 PM - 10/13/2024 - 12:44:26 PM
+  Generated on: 10/14/2024 - 10:54:43 AM
+  Coverage date: 10/14/2024 - 10:53:43 AM - 10/14/2024 - 10:54:02 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 638
-  Files: 638
+  Classes: 639
+  Files: 639
   Line coverage: 97.7%
-  Covered lines: 12728
+  Covered lines: 12744
   Uncovered lines: 287
-  Coverable lines: 13015
-  Total lines: 33598
-  Branch coverage: 95.7% (4860 of 5076)
-  Covered branches: 4860
-  Total branches: 5076
-  Method coverage: 98.6% (934 of 947)
-  Covered methods: 934
-  Total methods: 947
+  Coverable lines: 13031
+  Total lines: 33647
+  Branch coverage: 95.7% (4864 of 5080)
+  Covered branches: 4864
+  Total branches: 5080
+  Method coverage: 98.6% (935 of 948)
+  Covered methods: 935
+  Total methods: 948
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -309,6 +309,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MakeTwoArraysEqualByReversingSubarrays.MakeTwoArraysEqualByReversingSubarraysDictionary                                          78.2%
   LeetCode.Algorithms.MakeTwoArraysEqualByReversingSubarrays.MakeTwoArraysEqualByReversingSubarraysSorting                                            100.0%
   LeetCode.Algorithms.MaximalRectangle.MaximalRectangleStack                                                                                          100.0%
+  LeetCode.Algorithms.MaximalScoreAfterApplyingKOperations.MaximalScoreAfterApplyingKOperationsPriorityQueue                                          100.0%
   LeetCode.Algorithms.MaximizeHappinessOfSelectedChildren.MaximizeHappinessOfSelectedChildrenIterative                                                100.0%
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberIterative                                                                                        100.0%
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberString                                                                                           100.0%
