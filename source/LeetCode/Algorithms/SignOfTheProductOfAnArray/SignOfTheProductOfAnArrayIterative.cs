@@ -31,14 +31,7 @@ public class SignOfTheProductOfAnArrayIterative : ISignOfTheProductOfAnArray
                 return 0;
             }
 
-            if (Math.Sign(num * sign) > 0)
-            {
-                sign = 1;
-            }
-            else
-            {
-                sign = -1;
-            }
+            sign = Math.Sign(num * sign);
         }
 
         return sign;
