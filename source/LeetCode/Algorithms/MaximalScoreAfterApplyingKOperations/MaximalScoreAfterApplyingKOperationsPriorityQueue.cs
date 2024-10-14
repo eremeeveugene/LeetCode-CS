@@ -24,11 +24,11 @@ public class MaximalScoreAfterApplyingKOperationsPriorityQueue : IMaximalScoreAf
     /// <returns></returns>
     public long MaxKelements(int[] nums, int k)
     {
-        var priorityQueue = new PriorityQueue<int, int>(Comparer<int>.Create((a, b) => b.CompareTo(a)));
+        var priorityQueue = new PriorityQueue<int, int>();
 
         foreach (var num in nums)
         {
-            priorityQueue.Enqueue(num, num);
+            priorityQueue.Enqueue(num, -num);
         }
 
         long result = 0;
@@ -41,7 +41,7 @@ public class MaximalScoreAfterApplyingKOperationsPriorityQueue : IMaximalScoreAf
 
             var newElement = (int)Math.Ceiling(maxElement / 3.0);
 
-            priorityQueue.Enqueue(newElement, newElement);
+            priorityQueue.Enqueue(newElement, -newElement);
         }
 
         return result;
