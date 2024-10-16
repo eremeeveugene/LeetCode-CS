@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/16/2024 - 10:34:58 AM
-  Coverage date: 10/16/2024 - 10:33:54 AM - 10/16/2024 - 10:34:15 AM
+  Generated on: 10/16/2024 - 12:39:36 PM
+  Coverage date: 10/16/2024 - 12:38:16 PM - 10/16/2024 - 12:38:45 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 642
-  Files: 642
+  Classes: 643
+  Files: 643
   Line coverage: 97.8%
-  Covered lines: 12807
+  Covered lines: 12822
   Uncovered lines: 287
-  Coverable lines: 13094
-  Total lines: 33812
-  Branch coverage: 95.7% (4892 of 5108)
-  Covered branches: 4892
-  Total branches: 5108
-  Method coverage: 98.6% (938 of 951)
-  Covered methods: 938
-  Total methods: 951
+  Coverable lines: 13109
+  Total lines: 33856
+  Branch coverage: 95.7% (4896 of 5112)
+  Covered branches: 4896
+  Total branches: 5112
+  Method coverage: 98.6% (939 of 952)
+  Covered methods: 939
+  Total methods: 952
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -68,6 +68,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKArray                                                          100.0%
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKDictionary                                                      92.3%
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKTwoPointers                                                    100.0%
+  LeetCode.Algorithms.CheckIfItIsStraightLine.CheckIfItIsStraightLineIterative                                                                        100.0%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramHashSet                                                                  100.0%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramIterative                                                                100.0%
   LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentConcat                                                   100.0%
