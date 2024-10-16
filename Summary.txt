@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/15/2024 - 1:03:30 PM
-  Coverage date: 10/15/2024 - 1:02:07 PM - 10/15/2024 - 1:02:54 PM
+  Generated on: 10/16/2024 - 10:34:58 AM
+  Coverage date: 10/16/2024 - 10:33:54 AM - 10/16/2024 - 10:34:15 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 641
-  Files: 641
+  Classes: 642
+  Files: 642
   Line coverage: 97.8%
-  Covered lines: 12768
+  Covered lines: 12807
   Uncovered lines: 287
-  Coverable lines: 13055
-  Total lines: 33729
-  Branch coverage: 95.7% (4872 of 5088)
-  Covered branches: 4872
-  Total branches: 5088
-  Method coverage: 98.6% (937 of 950)
-  Covered methods: 937
-  Total methods: 950
+  Coverable lines: 13094
+  Total lines: 33812
+  Branch coverage: 95.7% (4892 of 5108)
+  Covered branches: 4892
+  Total branches: 5108
+  Method coverage: 98.6% (938 of 951)
+  Covered methods: 938
+  Total methods: 951
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -293,6 +293,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixBinarySearch                                                                             100.0%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixDivideAndConquer                                                                          96.1%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixHorizontalScanning                                                                       100.0%
+  LeetCode.Algorithms.LongestHappyString.LongestHappyStringGreedy                                                                                     100.0%
   LeetCode.Algorithms.LongestIdealSubsequence.LongestIdealSubsequenceDynamicProgramming                                                               100.0%
   LeetCode.Algorithms.LongestPalindrome.LongestPalindromeArray                                                                                        100.0%
   LeetCode.Algorithms.LongestPalindrome.LongestPalindromeDictionary                                                                                   100.0%
