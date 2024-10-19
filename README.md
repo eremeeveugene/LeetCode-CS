@@ -208,6 +208,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [670. Maximum Swap](https://leetcode.com/problems/maximum-swap/description/)
 - [678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/)
 - [680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/description/)
+- [682. Baseball Game](https://leetcode.com/problems/baseball-game/description/)
 - [700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/description/)
 - [703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)
 - [704. Binary Search](https://leetcode.com/problems/binary-search/description/)
