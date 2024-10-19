@@ -14,6 +14,12 @@ namespace LeetCode.Algorithms.BaseballGame;
 /// <inheritdoc />
 public class BaseballGameIterative : IBaseballGame
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
+    /// </summary>
+    /// <param name="operations"></param>
+    /// <returns></returns>
     public int CalPoints(string[] operations)
     {
         var scores = new List<int>();
