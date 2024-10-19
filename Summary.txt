@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/18/2024 - 11:07:57 AM
-  Coverage date: 10/18/2024 - 11:07:00 AM - 10/18/2024 - 11:07:21 AM
+  Generated on: 10/19/2024 - 10:18:10 AM
+  Coverage date: 10/19/2024 - 10:17:08 AM - 10/19/2024 - 10:17:27 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 645
-  Files: 645
+  Classes: 647
+  Files: 647
   Line coverage: 97.8%
-  Covered lines: 12859
-  Uncovered lines: 287
-  Coverable lines: 13146
-  Total lines: 33958
-  Branch coverage: 95.7% (4908 of 5124)
-  Covered branches: 4908
-  Total branches: 5124
-  Method coverage: 98.6% (942 of 955)
-  Covered methods: 942
-  Total methods: 955
+  Covered lines: 12891
+  Uncovered lines: 289
+  Coverable lines: 13180
+  Total lines: 34059
+  Branch coverage: 95.7% (4921 of 5138)
+  Covered branches: 4921
+  Total branches: 5138
+  Method coverage: 98.6% (945 of 958)
+  Covered methods: 945
+  Total methods: 958
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -184,6 +184,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStack       91.1%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphBreadthFirstSearch                                                                93.9%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphDepthFirstSearch                                                                  91.6%
+  LeetCode.Algorithms.FindKthBitInNthBinaryString.FindKthBitInNthBinaryStringBruteForce                                                               100.0%
+  LeetCode.Algorithms.FindKthBitInNthBinaryString.FindKthBitInNthBinaryStringRecursive                                                                 87.5%
   LeetCode.Algorithms.FindKthSmallestPairDistance.FindKthSmallestPairDistanceBinarySearchWithSlidingWindow                                            100.0%
   LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree.FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterative          100.0%
   LeetCode.Algorithms.FindMissingObservations.FindMissingObservationsMath                                                                             100.0%
