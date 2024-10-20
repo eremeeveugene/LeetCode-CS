@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/19/2024 - 12:15:27 PM
-  Coverage date: 10/19/2024 - 12:14:17 PM - 10/19/2024 - 12:14:37 PM
+  Generated on: 10/20/2024 - 12:32:37 PM
+  Coverage date: 10/20/2024 - 12:31:28 PM - 10/20/2024 - 12:31:48 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 648
-  Files: 648
+  Classes: 649
+  Files: 649
   Line coverage: 97.8%
-  Covered lines: 12907
+  Covered lines: 12940
   Uncovered lines: 289
-  Coverable lines: 13196
-  Total lines: 34107
-  Branch coverage: 95.7% (4929 of 5146)
-  Covered branches: 4929
-  Total branches: 5146
-  Method coverage: 98.6% (946 of 959)
-  Covered methods: 946
-  Total methods: 959
+  Coverable lines: 13229
+  Total lines: 34186
+  Branch coverage: 95.8% (4951 of 5168)
+  Covered branches: 4951
+  Total branches: 5168
+  Method coverage: 98.6% (947 of 960)
+  Covered methods: 947
+  Total methods: 960
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -435,6 +435,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByConvertingToString                                                                           100.0%
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByReversingDigits                                                                              100.0%
   LeetCode.Algorithms.PalindromePartitioning.PalindromePartitioningBackTracking                                                                       100.0%
+  LeetCode.Algorithms.ParsingBooleanExpression.ParsingBooleanExpressionRecursive                                                                      100.0%
   LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumIterative                                       95.1%
   LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumSinglePass                                     100.0%
   LeetCode.Algorithms.PascalsTriangle.PascalsTriangleDynamicProgramming                                                                               100.0%
