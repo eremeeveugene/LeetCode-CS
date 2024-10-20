@@ -261,6 +261,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1013. Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/description/)
 - [1025. Divisor Game](https://leetcode.com/problems/divisor-game/description/)
 - [1051. Height Checker](https://leetcode.com/problems/height-checker/description/)
+- [1106. Parsing A Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression/description/)
 - [1108. Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/description/)
 - [1110. Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/description/)
 - [1122. Relative Sort Array](https://leetcode.com/problems/relative-sort-array/description/)
