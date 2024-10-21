@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/20/2024 - 12:32:37 PM
-  Coverage date: 10/20/2024 - 12:31:28 PM - 10/20/2024 - 12:31:48 PM
+  Generated on: 10/21/2024 - 10:52:49 AM
+  Coverage date: 10/21/2024 - 10:51:44 AM - 10/21/2024 - 10:52:04 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 649
-  Files: 649
+  Classes: 650
+  Files: 650
   Line coverage: 97.8%
-  Covered lines: 12940
+  Covered lines: 12960
   Uncovered lines: 289
-  Coverable lines: 13229
-  Total lines: 34186
-  Branch coverage: 95.8% (4951 of 5168)
-  Covered branches: 4951
-  Total branches: 5168
-  Method coverage: 98.6% (947 of 960)
-  Covered methods: 947
-  Total methods: 960
+  Coverable lines: 13249
+  Total lines: 34241
+  Branch coverage: 95.8% (4957 of 5174)
+  Covered branches: 4957
+  Total branches: 5174
+  Method coverage: 98.6% (949 of 962)
+  Covered methods: 949
+  Total methods: 962
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -573,6 +573,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SpiralMatrix3.SpiralMatrix3Simulation                                                                                           100.0%
   LeetCode.Algorithms.SpiralMatrix4.SpiralMatrix4Simulation                                                                                           100.0%
   LeetCode.Algorithms.SplitLinkedListInParts.SplitLinkedListInPartsIterative                                                                          100.0%
+  LeetCode.Algorithms.SplitStringIntoTheMaxNumberOfUniqueSubstrings.SplitStringIntoTheMaxNumberOfUniqueSubstringsBacktracking                         100.0%
   LeetCode.Algorithms.Sqrt.SqrtBinarySearch                                                                                                           100.0%
   LeetCode.Algorithms.Sqrt.SqrtNewtonsMethod                                                                                                          100.0%
   LeetCode.Algorithms.SquaresOfSortedArray.SquaresOfSortedArrayIterative                                                                              100.0%
