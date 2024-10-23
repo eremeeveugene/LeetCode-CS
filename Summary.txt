@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/21/2024 - 11:17:28 AM
-  Coverage date: 10/21/2024 - 11:16:34 AM - 10/21/2024 - 11:16:54 AM
+  Generated on: 10/23/2024 - 11:08:08 AM
+  Coverage date: 10/23/2024 - 11:07:07 AM - 10/23/2024 - 11:07:26 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 652
-  Files: 652
+  Classes: 653
+  Files: 653
   Line coverage: 97.8%
-  Covered lines: 12974
+  Covered lines: 13022
   Uncovered lines: 289
-  Coverable lines: 13263
-  Total lines: 34309
-  Branch coverage: 95.8% (4961 of 5178)
-  Covered branches: 4961
-  Total branches: 5178
-  Method coverage: 98.6% (951 of 964)
-  Covered methods: 951
-  Total methods: 964
+  Coverable lines: 13311
+  Total lines: 34397
+  Branch coverage: 95.8% (4981 of 5198)
+  Covered branches: 4981
+  Total branches: 5198
+  Method coverage: 98.6% (952 of 965)
+  Covered methods: 952
+  Total methods: 965
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -113,6 +113,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountTheNumberOfConsistentStrings.CountTheNumberOfConsistentStringsArray                                                        100.0%
   LeetCode.Algorithms.CountTheNumberOfConsistentStrings.CountTheNumberOfConsistentStringsHashSet                                                      100.0%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                                100.0%
+  LeetCode.Algorithms.CousinsInBinaryTree2.CousinsInBinaryTree2BreadthFirstSearch                                                                     100.0%
   LeetCode.Algorithms.CrawlerLogFolder.CrawlerLogFolderSimulation                                                                                     100.0%
   LeetCode.Algorithms.CreateBinaryTreeFromDescriptions.CreateBinaryTreeFromDescriptionsDictionary                                                      97.1%
   LeetCode.Algorithms.CustomSortString.CustomSortStringDictionarySorting                                                                              100.0%
