@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/23/2024 - 11:08:08 AM
-  Coverage date: 10/23/2024 - 11:07:07 AM - 10/23/2024 - 11:07:26 AM
+  Generated on: 10/23/2024 - 12:10:32 PM
+  Coverage date: 10/23/2024 - 12:09:19 PM - 10/23/2024 - 12:09:38 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 653
-  Files: 653
+  Classes: 654
+  Files: 654
   Line coverage: 97.8%
-  Covered lines: 13022
-  Uncovered lines: 289
-  Coverable lines: 13311
-  Total lines: 34397
-  Branch coverage: 95.8% (4981 of 5198)
-  Covered branches: 4981
-  Total branches: 5198
-  Method coverage: 98.6% (952 of 965)
-  Covered methods: 952
-  Total methods: 965
+  Covered lines: 13052
+  Uncovered lines: 291
+  Coverable lines: 13343
+  Total lines: 34469
+  Branch coverage: 95.8% (4992 of 5210)
+  Covered branches: 4992
+  Total branches: 5210
+  Method coverage: 98.6% (953 of 966)
+  Covered methods: 953
+  Total methods: 966
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -277,6 +277,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedArrayFactory                                                           100.0%
   LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedList                                                                   100.0%
   LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedListFactory                                                            100.0%
+  LeetCode.Algorithms.KthLargestSumInBinaryTree.KthLargestSumInBinaryTreeBreadthFirstSearch                                                            93.7%
   LeetCode.Algorithms.KthSmallestInLexicographicalOrder.KthSmallestInLexicographicalOrderPrefixTree                                                   100.0%
   LeetCode.Algorithms.KthSmallestPrimeFraction.KthSmallestPrimeFractionBinarySearch                                                                   100.0%
   LeetCode.Algorithms.KthSmallestPrimeFraction.KthSmallestPrimeFractionBruteForce                                                                     100.0%
