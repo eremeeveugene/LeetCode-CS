@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/23/2024 - 12:10:32 PM
-  Coverage date: 10/23/2024 - 12:09:19 PM - 10/23/2024 - 12:09:38 PM
+  Generated on: 10/24/2024 - 5:53:56 PM
+  Coverage date: 10/24/2024 - 5:52:52 PM - 10/24/2024 - 5:53:12 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 654
-  Files: 654
+  Classes: 655
+  Files: 655
   Line coverage: 97.8%
-  Covered lines: 13052
+  Covered lines: 13065
   Uncovered lines: 291
-  Coverable lines: 13343
-  Total lines: 34469
-  Branch coverage: 95.8% (4992 of 5210)
-  Covered branches: 4992
-  Total branches: 5210
-  Method coverage: 98.6% (953 of 966)
-  Covered methods: 953
-  Total methods: 966
+  Coverable lines: 13356
+  Total lines: 34515
+  Branch coverage: 95.8% (5007 of 5226)
+  Covered branches: 5007
+  Total branches: 5226
+  Method coverage: 98.6% (954 of 967)
+  Covered methods: 954
+  Total methods: 967
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -228,6 +228,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveHashSet                                                                                100.0%
   LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveIterative                                                                              100.0%
   LeetCode.Algorithms.FirstUniqueCharacterInString.FirstUniqueCharacterInStringIterative                                                              100.0%
+  LeetCode.Algorithms.FlipEquivalentBinaryTrees.FlipEquivalentBinaryTreesRecursive                                                                    100.0%
   LeetCode.Algorithms.FloodFill.FloodFillIterative                                                                                                    100.0%
   LeetCode.Algorithms.FractionAdditionAndSubtraction.FractionAdditionAndSubtractionSimulation                                                         100.0%
   LeetCode.Algorithms.FreedomTrail.FreedomTrailDynamicProgramming                                                                                     100.0%
