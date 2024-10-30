@@ -1,21 +1,21 @@
 Summary
-  Generated on: 10/24/2024 - 5:53:56 PM
-  Coverage date: 10/24/2024 - 5:52:52 PM - 10/24/2024 - 5:53:12 PM
+  Generated on: 10/30/2024 - 4:48:46 PM
+  Coverage date: 10/30/2024 - 4:47:51 PM - 10/30/2024 - 4:48:11 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 655
-  Files: 655
+  Classes: 656
+  Files: 656
   Line coverage: 97.8%
-  Covered lines: 13065
+  Covered lines: 13087
   Uncovered lines: 291
-  Coverable lines: 13356
-  Total lines: 34515
-  Branch coverage: 95.8% (5007 of 5226)
-  Covered branches: 5007
-  Total branches: 5226
-  Method coverage: 98.6% (954 of 967)
-  Covered methods: 954
-  Total methods: 967
+  Coverable lines: 13378
+  Total lines: 34569
+  Branch coverage: 95.8% (5017 of 5236)
+  Covered branches: 5017
+  Total branches: 5236
+  Method coverage: 98.6% (955 of 968)
+  Covered methods: 955
+  Total methods: 968
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -504,6 +504,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RemoveLinkedListElements.RemoveLinkedListElementsRecursive                                                                      100.0%
   LeetCode.Algorithms.RemoveNodesFromLinkedList.RemoveNodesFromLinkedListIterative                                                                    100.0%
   LeetCode.Algorithms.RemoveNthNodeFromEndOfList.RemoveNthNodeFromEndOfListTwoPointers                                                                100.0%
+  LeetCode.Algorithms.RemoveSubFoldersFromTheFilesystem.RemoveSubFoldersFromTheFilesystemHashSet                                                      100.0%
   LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce                                90.0%
   LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListDictionary                               100.0%
   LeetCode.Algorithms.ReorderList.ReorderListTwoPointers                                                                                               93.7%
