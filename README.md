@@ -197,6 +197,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [592. Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction/description/)
 - [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/description/)
 - [621. Task Scheduler](https://leetcode.com/problems/task-scheduler/description/)
+- [622. Design Circular Queue](https://leetcode.com/problems/design-circular-queue/description/)
 - [623. Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree/description/)
 - [624. Maximum Distance in Arrays](https://leetcode.com/problems/maximum-distance-in-arrays/description/)
 - [632. Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/)
