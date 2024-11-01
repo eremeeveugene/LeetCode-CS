@@ -1,21 +1,21 @@
 Summary
-  Generated on: 11/1/2024 - 10:09:51 AM
-  Coverage date: 11/1/2024 - 10:08:51 AM - 11/1/2024 - 10:09:12 AM
+  Generated on: 11/1/2024 - 11:38:02 AM
+  Coverage date: 11/1/2024 - 11:37:00 AM - 11/1/2024 - 11:37:21 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 657
-  Files: 657
-  Line coverage: 97.8%
-  Covered lines: 13110
-  Uncovered lines: 291
-  Coverable lines: 13401
-  Total lines: 34627
-  Branch coverage: 95.8% (5023 of 5242)
-  Covered branches: 5023
-  Total branches: 5242
-  Method coverage: 98.6% (956 of 969)
-  Covered methods: 956
-  Total methods: 969
+  Classes: 659
+  Files: 659
+  Line coverage: 97.7%
+  Covered lines: 13161
+  Uncovered lines: 297
+  Coverable lines: 13458
+  Total lines: 34756
+  Branch coverage: 95.7% (5034 of 5256)
+  Covered branches: 5034
+  Total branches: 5256
+  Method coverage: 98.6% (967 of 980)
+  Covered methods: 967
+  Total methods: 980
 
 LeetCode                                                                                                                                               98.0%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -135,6 +135,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArrayFactory                                                                         100.0%
   LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedList                                                                                62.3%
   LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedListFactory                                                                        100.0%
+  LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedList                                                                                88.8%
+  LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedListFactory                                                                        100.0%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArray                                                        100.0%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArrayFactory                                                 100.0%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedList                                                   100.0%
