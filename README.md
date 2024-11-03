@@ -229,6 +229,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [786. K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/description/)
 - [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
 - [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
+- [796. Rotate String](https://leetcode.com/problems/rotate-string/description/)
 - [804. Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/description/)
 - [834. Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/description/)
 - [840. Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid/description/)
