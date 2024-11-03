@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/1/2024 - 11:38:02 AM
-  Coverage date: 11/1/2024 - 11:37:00 AM - 11/1/2024 - 11:37:21 AM
+  Generated on: 11/3/2024 - 8:18:17 AM
+  Coverage date: 11/3/2024 - 8:17:12 AM - 11/3/2024 - 8:17:32 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 659
-  Files: 659
-  Line coverage: 97.7%
-  Covered lines: 13161
-  Uncovered lines: 297
-  Coverable lines: 13458
-  Total lines: 34756
-  Branch coverage: 95.7% (5034 of 5256)
-  Covered branches: 5034
-  Total branches: 5256
-  Method coverage: 98.6% (967 of 980)
-  Covered methods: 967
-  Total methods: 980
+  Classes: 661
+  Files: 661
+  Line coverage: 97.5%
+  Covered lines: 13292
+  Uncovered lines: 334
+  Coverable lines: 13626
+  Total lines: 35141
+  Branch coverage: 95.5% (5060 of 5296)
+  Covered branches: 5060
+  Total branches: 5296
+  Method coverage: 98.6% (984 of 997)
+  Covered methods: 984
+  Total methods: 997
 
-LeetCode                                                                                                                                               98.0%
+LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                  100.0%
@@ -137,6 +137,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedListFactory                                                                        100.0%
   LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedList                                                                                88.8%
   LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedListFactory                                                                        100.0%
+  LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueLinkedList                                                                  73.8%
+  LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueList                                                                        90.4%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArray                                                        100.0%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArrayFactory                                                 100.0%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedList                                                   100.0%
