@@ -15,11 +15,15 @@ namespace LeetCode.Algorithms.DesignCircularQueue;
 public class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
 {
     private int _count;
-
     private Node? _front;
-
     private Node? _rear;
 
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public bool EnQueue(int value)
     {
         if (IsFull())
@@ -34,11 +38,11 @@ public class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
         }
         else
         {
-            var nextNode = new Node(value);
+            var node = new Node(value);
 
-            _rear.Next = nextNode;
+            _rear.Next = node;
 
-            _rear = nextNode;
+            _rear = node;
         }
 
         _count++;
@@ -46,6 +50,11 @@ public class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
         return true;
     }
 
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <returns></returns>
     public bool DeQueue()
     {
         if (IsEmpty())
@@ -70,6 +79,11 @@ public class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
         return true;
     }
 
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <returns></returns>
     public int Front()
     {
         if (_front == null)
@@ -80,6 +94,11 @@ public class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
         return _front.Value;
     }
 
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <returns></returns>
     public int Rear()
     {
         if (_rear == null)
@@ -90,11 +109,21 @@ public class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
         return _rear.Value;
     }
 
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <returns></returns>
     public bool IsEmpty()
     {
         return _count == 0;
     }
 
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <returns></returns>
     public bool IsFull()
     {
         return _count == k;
