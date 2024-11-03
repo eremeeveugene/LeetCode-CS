@@ -37,7 +37,7 @@ public abstract class DesignCircularQueueTestsBase<T> where T : IDesignCircularQ
         "[\"IsEmpty\", \"IsFull\", \"EnQueue\", \"DeQueue\"]",
         "[0, 0, 1, 0]",
         "[true, true, false, false]")]
-    public void CircularQueueOperations_WithGivenCapacityAndOperations_ReturnsExpectedResults(int k,
+    public void CircularQueueOperations_WithGivenCapacityAndOperations_PerformsCorrectly(int k,
         string operationsJsonArray, string argumentsJsonArray, string expectedResultJsonArray)
     {
         // Arrange
@@ -74,7 +74,7 @@ public abstract class DesignCircularQueueTestsBase<T> where T : IDesignCircularQ
                     actualResult.Add(solution.IsEmpty());
                     break;
                 default:
-                    throw new InvalidOperationException();
+                    throw new ArgumentOutOfRangeException($"Unexpected operation '{operations[i]}' at index {i}.");
             }
         }
 
