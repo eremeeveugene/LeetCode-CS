@@ -1,21 +1,21 @@
 Summary
-  Generated on: 11/3/2024 - 9:05:56 AM
-  Coverage date: 11/3/2024 - 9:04:57 AM - 11/3/2024 - 9:05:17 AM
+  Generated on: 11/4/2024 - 8:18:19 AM
+  Coverage date: 11/4/2024 - 8:17:13 AM - 11/4/2024 - 8:17:33 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 663
-  Files: 663
+  Classes: 664
+  Files: 664
   Line coverage: 97.5%
-  Covered lines: 13301
+  Covered lines: 13323
   Uncovered lines: 334
-  Coverable lines: 13635
-  Total lines: 35202
-  Branch coverage: 95.5% (5062 of 5300)
-  Covered branches: 5062
-  Total branches: 5300
-  Method coverage: 98.7% (987 of 1000)
-  Covered methods: 987
-  Total methods: 1000
+  Coverable lines: 13657
+  Total lines: 35256
+  Branch coverage: 95.5% (5070 of 5308)
+  Covered branches: 5070
+  Total branches: 5308
+  Method coverage: 98.7% (988 of 1001)
+  Covered methods: 988
+  Total methods: 1001
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -596,6 +596,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.StoneGame.StoneGameMathematical                                                                                                 100.0%
   LeetCode.Algorithms.StoneGame2.StoneGame2DynamicProgramming                                                                                         100.0%
   LeetCode.Algorithms.StrangePrinter.StrangePrinterDynamicProgramming                                                                                  92.3%
+  LeetCode.Algorithms.StringCompression3.StringCompression3StringBuilder                                                                              100.0%
   LeetCode.Algorithms.StringMatchingInAnArray.StringMatchingInAnArrayBruteForce                                                                       100.0%
   LeetCode.Algorithms.SubarrayProductLessThanK.SubarrayProductLessThanKTwoPointers                                                                    100.0%
   LeetCode.Algorithms.SubarraySumsDivisibleByK.SubarraySumsDivisibleByKArray                                                                          100.0%
