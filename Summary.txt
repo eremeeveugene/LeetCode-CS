@@ -1,21 +1,21 @@
 Summary
-  Generated on: 11/4/2024 - 12:34:28 PM
-  Coverage date: 11/4/2024 - 12:33:26 PM - 11/4/2024 - 12:33:47 PM
+  Generated on: 11/6/2024 - 12:00:29 PM
+  Coverage date: 11/6/2024 - 11:59:25 AM - 11/6/2024 - 11:59:45 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 665
-  Files: 665
+  Classes: 666
+  Files: 666
   Line coverage: 97.5%
-  Covered lines: 13334
+  Covered lines: 13345
   Uncovered lines: 336
-  Coverable lines: 13670
-  Total lines: 35298
-  Branch coverage: 95.5% (5075 of 5314)
-  Covered branches: 5075
-  Total branches: 5314
-  Method coverage: 98.7% (989 of 1002)
-  Covered methods: 989
-  Total methods: 1002
+  Coverable lines: 13681
+  Total lines: 35330
+  Branch coverage: 95.5% (5079 of 5318)
+  Covered branches: 5079
+  Total branches: 5318
+  Method coverage: 98.7% (990 of 1003)
+  Covered methods: 990
+  Total methods: 1003
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -377,6 +377,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds.MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers                          100.0%
   LeetCode.Algorithms.MinimumNumberGame.MinimumNumberGameSorting                                                                                      100.0%
   LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons.MinimumNumberOfArrowsToBurstBalloonsIterative                                              100.0%
+  LeetCode.Algorithms.MinimumNumberOfChangesToMakeBinaryStringBeautiful.MinimumNumberOfChangesToMakeBinaryStringBeautifulGreedy                       100.0%
   LeetCode.Algorithms.MinimumNumberOfDaysToDisconnectIsland.MinimumNumberOfDaysToDisconnectIslandBruteForceCopyArray                                  100.0%
   LeetCode.Algorithms.MinimumNumberOfDaysToDisconnectIsland.MinimumNumberOfDaysToDisconnectIslandBruteForceVisitedArray                               100.0%
   LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone.MinimumNumberOfMovesToSeatEveryoneCountingSort                                               100.0%
