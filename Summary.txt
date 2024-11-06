@@ -1,21 +1,21 @@
 Summary
-  Generated on: 11/6/2024 - 12:00:29 PM
-  Coverage date: 11/6/2024 - 11:59:25 AM - 11/6/2024 - 11:59:45 AM
+  Generated on: 11/6/2024 - 4:55:23 PM
+  Coverage date: 11/6/2024 - 4:54:29 PM - 11/6/2024 - 4:54:49 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 666
-  Files: 666
+  Classes: 668
+  Files: 668
   Line coverage: 97.5%
-  Covered lines: 13345
-  Uncovered lines: 336
-  Coverable lines: 13681
-  Total lines: 35330
-  Branch coverage: 95.5% (5079 of 5318)
-  Covered branches: 5079
-  Total branches: 5318
-  Method coverage: 98.7% (990 of 1003)
-  Covered methods: 990
-  Total methods: 1003
+  Covered lines: 13406
+  Uncovered lines: 338
+  Coverable lines: 13744
+  Total lines: 35472
+  Branch coverage: 95.5% (5102 of 5342)
+  Covered branches: 5102
+  Total branches: 5342
+  Method coverage: 98.7% (994 of 1007)
+  Covered methods: 994
+  Total methods: 1007
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -190,6 +190,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeBreadthFirstSearch          91.1%
   LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchRecursive  100.0%
   LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStack       91.1%
+  LeetCode.Algorithms.FindIfArrayCanBeSorted.FindIfArrayCanBeSortedBubbleSort                                                                         100.0%
+  LeetCode.Algorithms.FindIfArrayCanBeSorted.FindIfArrayCanBeSortedTwoPass                                                                             94.4%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphBreadthFirstSearch                                                                93.9%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphDepthFirstSearch                                                                  91.6%
   LeetCode.Algorithms.FindKthBitInNthBinaryString.FindKthBitInNthBinaryStringBruteForce                                                               100.0%
