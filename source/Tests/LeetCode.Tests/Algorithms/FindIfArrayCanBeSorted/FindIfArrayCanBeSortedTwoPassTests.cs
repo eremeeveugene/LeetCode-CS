@@ -9,30 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.MinimumNumberOfChangesToMakeBinaryStringBeautiful;
+using LeetCode.Algorithms.FindIfArrayCanBeSorted;
 
-/// <inheritdoc />
-public class MinimumNumberOfChangesToMakeBinaryStringBeautifulGreedy :
-    IMinimumNumberOfChangesToMakeBinaryStringBeautiful
-{
-    /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
-    public int MinChanges(string s)
-    {
-        var result = 0;
+namespace LeetCode.Tests.Algorithms.FindIfArrayCanBeSorted;
 
-        for (var i = 0; i < s.Length - 1; i += 2)
-        {
-            if (s[i] != s[i + 1])
-            {
-                result++;
-            }
-        }
-
-        return result;
-    }
-}
+[TestClass]
+public class FindIfArrayCanBeSortedTwoPassTests :
+    FindIfArrayCanBeSortedTestsBase<FindIfArrayCanBeSortedTwoPass>;
