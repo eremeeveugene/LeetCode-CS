@@ -1,21 +1,21 @@
 Summary
-  Generated on: 11/7/2024 - 1:16:30 PM
-  Coverage date: 11/7/2024 - 1:15:33 PM - 11/7/2024 - 1:15:53 PM
+  Generated on: 11/8/2024 - 8:35:56 AM
+  Coverage date: 11/8/2024 - 8:34:58 AM - 11/8/2024 - 8:35:18 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 669
-  Files: 669
+  Classes: 671
+  Files: 671
   Line coverage: 97.5%
-  Covered lines: 13415
+  Covered lines: 13448
   Uncovered lines: 338
-  Coverable lines: 13753
-  Total lines: 35508
-  Branch coverage: 95.5% (5104 of 5344)
-  Covered branches: 5104
-  Total branches: 5344
-  Method coverage: 98.7% (995 of 1008)
-  Covered methods: 995
-  Total methods: 1008
+  Coverable lines: 13786
+  Total lines: 35605
+  Branch coverage: 95.5% (5114 of 5354)
+  Covered branches: 5114
+  Total branches: 5354
+  Method coverage: 98.7% (997 of 1010)
+  Covered methods: 997
+  Total methods: 1010
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -348,6 +348,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArraySorting                                                100.0%
   LeetCode.Algorithms.MaximumSwap.MaximumSwapGreedy                                                                                                   100.0%
   LeetCode.Algorithms.MaximumWidthRamp.MaximumWidthRampStack                                                                                           92.0%
+  LeetCode.Algorithms.MaximumXORForEachQuery.MaximumXORForEachQueryBitMasking                                                                         100.0%
+  LeetCode.Algorithms.MaximumXORForEachQuery.MaximumXORForEachQueryBruteForce                                                                         100.0%
   LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysBinarySearch                                                                      92.3%
   LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysIterative                                                                        100.0%
   LeetCode.Algorithms.MergeNodesInBetweenZeros.MergeNodesInBetweenZerosIterative                                                                       91.3%
