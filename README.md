@@ -341,6 +341,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1791. Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/description/)
 - [1813. Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/description/)
 - [1822. Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/description/)
+- [1829. Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/description/)
 - [1832. Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/description/)
 - [1859. Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/description/)
 - [1863. Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/description/)
