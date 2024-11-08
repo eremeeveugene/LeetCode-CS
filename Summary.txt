@@ -1,21 +1,21 @@
 Summary
-  Generated on: 11/8/2024 - 8:35:56 AM
-  Coverage date: 11/8/2024 - 8:34:58 AM - 11/8/2024 - 8:35:18 AM
+  Generated on: 11/8/2024 - 7:20:14 PM
+  Coverage date: 11/8/2024 - 7:19:16 PM - 11/8/2024 - 7:19:36 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 671
-  Files: 671
+  Classes: 672
+  Files: 672
   Line coverage: 97.5%
-  Covered lines: 13448
-  Uncovered lines: 338
-  Coverable lines: 13786
-  Total lines: 35605
-  Branch coverage: 95.5% (5114 of 5354)
-  Covered branches: 5114
-  Total branches: 5354
-  Method coverage: 98.7% (997 of 1010)
-  Covered methods: 997
-  Total methods: 1010
+  Covered lines: 13460
+  Uncovered lines: 340
+  Coverable lines: 13800
+  Total lines: 35649
+  Branch coverage: 95.5% (5119 of 5360)
+  Covered branches: 5119
+  Total branches: 5360
+  Method coverage: 98.7% (998 of 1011)
+  Covered methods: 998
+  Total methods: 1011
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -63,6 +63,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CalculateMoneyInLeetcodeBank.CalculateMoneyInLeetcodeBankArithmeticSequence                                                     100.0%
   LeetCode.Algorithms.CalculateMoneyInLeetcodeBank.CalculateMoneyInLeetcodeBankIterative                                                              100.0%
   LeetCode.Algorithms.CanIWin.CanIWinDynamicProgramming                                                                                               100.0%
+  LeetCode.Algorithms.CanMakeArithmeticProgressionFromSequence.CanMakeArithmeticProgressionFromSequenceSorting                                         85.7%
   LeetCode.Algorithms.CapitalizeTheTitle.CapitalizeTheTitleArray                                                                                      100.0%
   LeetCode.Algorithms.CapitalizeTheTitle.CapitalizeTheTitleStringBuilder                                                                              100.0%
   LeetCode.Algorithms.CheapestFlightsWithinKStops.CheapestFlightsWithinKStopsBellmanFord                                                              100.0%
