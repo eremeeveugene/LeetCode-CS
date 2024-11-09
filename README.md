@@ -417,6 +417,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2651. Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/description/)
 - [2652. Sum Multiples](https://leetcode.com/problems/sum-multiples/description/)
 - [2678. Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens/description/)
+- [2684. Maximum Number of Moves in a Grid](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/description/)
 - [2696. Minimum String Length After Removing Substrings](https://leetcode.com/problems/minimum-string-length-after-removing-substrings/description/)
 - [2699. Modify Graph Edge Weights](https://leetcode.com/problems/modify-graph-edge-weights/description/)
 - [2703. Return Length of Arguments Passed](https://leetcode.com/problems/return-length-of-arguments-passed/description/)
