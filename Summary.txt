@@ -1,21 +1,21 @@
 Summary
-  Generated on: 11/9/2024 - 10:36:13 AM
-  Coverage date: 11/9/2024 - 10:35:20 AM - 11/9/2024 - 10:35:40 AM
+  Generated on: 11/9/2024 - 11:43:22 AM
+  Coverage date: 11/9/2024 - 11:42:29 AM - 11/9/2024 - 11:42:50 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 674
-  Files: 674
+  Classes: 675
+  Files: 675
   Line coverage: 97.5%
-  Covered lines: 13483
+  Covered lines: 13516
   Uncovered lines: 342
-  Coverable lines: 13825
-  Total lines: 35734
-  Branch coverage: 95.4% (5134 of 5376)
-  Covered branches: 5134
-  Total branches: 5376
-  Method coverage: 98.7% (1000 of 1013)
-  Covered methods: 1000
-  Total methods: 1013
+  Coverable lines: 13858
+  Total lines: 35804
+  Branch coverage: 95.5% (5156 of 5398)
+  Covered branches: 5156
+  Total branches: 5398
+  Method coverage: 98.7% (1002 of 1015)
+  Covered methods: 1002
+  Total methods: 1015
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -338,6 +338,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysBruteForce                                                                       100.0%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysGreedy                                                                           100.0%
   LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses.MaximumNestingDepthOfTheParenthesesIterative                                                100.0%
+  LeetCode.Algorithms.MaximumNumberOfMovesInGrid.MaximumNumberOfMovesInGridDynamicProgramming                                                         100.0%
   LeetCode.Algorithms.MaximumNumberOfPointsWithCost.MaximumNumberOfPointsWithCostDynamicProgramming                                                   100.0%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinq                                                   100.0%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinqSplit                                              100.0%
