@@ -445,6 +445,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3043. Find the Length of the Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/description/)
 - [3068. Find the Maximum Sum of Node Values](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/description/)
 - [3075. Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/description/)
+- [3097. Shortest Subarray With OR at Least K II](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/description/)
 - [3110. Score of a String](https://leetcode.com/problems/score-of-a-string/description/)
 - [3133. Minimum Array End](https://leetcode.com/problems/minimum-array-end/description/)
 - [3163. String Compression III](https://leetcode.com/problems/string-compression-iii/description/)
