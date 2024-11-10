@@ -1,21 +1,21 @@
 Summary
-  Generated on: 11/9/2024 - 11:43:22 AM
-  Coverage date: 11/9/2024 - 11:42:29 AM - 11/9/2024 - 11:42:50 AM
+  Generated on: 11/10/2024 - 12:10:28 PM
+  Coverage date: 11/10/2024 - 12:09:24 PM - 11/10/2024 - 12:09:44 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 675
-  Files: 675
+  Classes: 676
+  Files: 676
   Line coverage: 97.5%
-  Covered lines: 13516
+  Covered lines: 13554
   Uncovered lines: 342
-  Coverable lines: 13858
-  Total lines: 35804
-  Branch coverage: 95.5% (5156 of 5398)
-  Covered branches: 5156
-  Total branches: 5398
-  Method coverage: 98.7% (1002 of 1015)
-  Covered methods: 1002
-  Total methods: 1015
+  Coverable lines: 13896
+  Total lines: 35879
+  Branch coverage: 95.5% (5171 of 5414)
+  Covered branches: 5171
+  Total branches: 5414
+  Method coverage: 98.7% (1005 of 1018)
+  Covered methods: 1005
+  Total methods: 1018
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -568,6 +568,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SentenceSimilarity3.SentenceSimilarity3TwoPointers                                                                              100.0%
   LeetCode.Algorithms.SeparateBlackAndWhiteBalls.SeparateBlackAndWhiteBallsTwoPointers                                                                100.0%
   LeetCode.Algorithms.ShortestPalindrome.ShortestPalindromeTwoPointers                                                                                100.0%
+  LeetCode.Algorithms.ShortestSubarrayWithORAtLeastK2.ShortestSubarrayWithORAtLeastK2SlidingWindow                                                    100.0%
   LeetCode.Algorithms.ShuffleString.ShuffleStringIterative                                                                                            100.0%
   LeetCode.Algorithms.ShuffleTheArray.ShuffleTheArrayIterative                                                                                        100.0%
   LeetCode.Algorithms.SignOfTheProductOfAnArray.SignOfTheProductOfAnArrayIterative                                                                    100.0%
