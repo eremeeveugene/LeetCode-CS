@@ -318,6 +318,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1544. Make The String Great](https://leetcode.com/problems/make-the-string-great/description/)
 - [1545. Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/description/)
 - [1568. Minimum Number of Days to Disconnect Island](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/description/)
+- [1572. Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/description/)
 - [1590. Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p/description/)
 - [1593. Split a String Into the Max Number of Unique Substrings](https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/description/)
 - [1598. Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/description/)
