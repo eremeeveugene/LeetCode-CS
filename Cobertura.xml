@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9757978911612766" branch-rate="0.9553144538433248" lines-covered="13789" lines-valid="14131" branches-covered="5195" branches-valid="5438" complexity="5693" version="0" timestamp="1731438928">
+<coverage line-rate="0.9758491631946896" branch-rate="0.9550788412174551" lines-covered="13819" lines-valid="14161" branches-covered="5209" branches-valid="5454" complexity="5709" version="0" timestamp="1731750285">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.978113750899928" branch-rate="0.9588809613218175" complexity="5571">
+    <package name="LeetCode" line-rate="0.9781609195402299" branch-rate="0.958629726694122" complexity="5587">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -29739,6 +29739,76 @@
             <line number="60" hits="12" branch="false" />
           </lines>
         </class>
+        <class name="LeetCode.Algorithms.ShortestSubarrayToBeRemovedToMakeArraySorted.ShortestSubarrayToBeRemovedToMakeArraySortedTwoPointers" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\ShortestSubarrayToBeRemovedToMakeArraySorted\ShortestSubarrayToBeRemovedToMakeArraySortedTwoPointers.cs" line-rate="1" branch-rate="0.875" complexity="16">
+          <methods>
+            <method name="FindLengthOfShortestSubarray" signature="(System.Int32[])" line-rate="1" branch-rate="0.875" complexity="16">
+              <lines>
+                <line number="24" hits="3" branch="false" />
+                <line number="25" hits="3" branch="false" />
+                <line number="27" hits="8" branch="true" condition-coverage="100% (4/4)" />
+                <line number="28" hits="5" branch="false" />
+                <line number="29" hits="5" branch="false" />
+                <line number="30" hits="5" branch="false" />
+                <line number="32" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="33" hits="1" branch="false" />
+                <line number="34" hits="1" branch="false" />
+                <line number="37" hits="2" branch="false" />
+                <line number="39" hits="4" branch="true" condition-coverage="75% (3/4)" />
+                <line number="40" hits="2" branch="false" />
+                <line number="41" hits="2" branch="false" />
+                <line number="42" hits="2" branch="false" />
+                <line number="44" hits="2" branch="false" />
+                <line number="46" hits="2" branch="false" />
+                <line number="47" hits="2" branch="false" />
+                <line number="49" hits="9" branch="true" condition-coverage="75% (3/4)" />
+                <line number="50" hits="7" branch="false" />
+                <line number="51" hits="7" branch="true" condition-coverage="100% (2/2)" />
+                <line number="52" hits="3" branch="false" />
+                <line number="53" hits="3" branch="false" />
+                <line number="55" hits="3" branch="false" />
+                <line number="56" hits="3" branch="false" />
+                <line number="58" hits="4" branch="false" />
+                <line number="59" hits="4" branch="false" />
+                <line number="60" hits="4" branch="false" />
+                <line number="61" hits="7" branch="false" />
+                <line number="63" hits="2" branch="false" />
+                <line number="64" hits="3" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="3" branch="false" />
+            <line number="25" hits="3" branch="false" />
+            <line number="27" hits="8" branch="true" condition-coverage="100% (4/4)" />
+            <line number="28" hits="5" branch="false" />
+            <line number="29" hits="5" branch="false" />
+            <line number="30" hits="5" branch="false" />
+            <line number="32" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="33" hits="1" branch="false" />
+            <line number="34" hits="1" branch="false" />
+            <line number="37" hits="2" branch="false" />
+            <line number="39" hits="4" branch="true" condition-coverage="75% (3/4)" />
+            <line number="40" hits="2" branch="false" />
+            <line number="41" hits="2" branch="false" />
+            <line number="42" hits="2" branch="false" />
+            <line number="44" hits="2" branch="false" />
+            <line number="46" hits="2" branch="false" />
+            <line number="47" hits="2" branch="false" />
+            <line number="49" hits="9" branch="true" condition-coverage="75% (3/4)" />
+            <line number="50" hits="7" branch="false" />
+            <line number="51" hits="7" branch="true" condition-coverage="100% (2/2)" />
+            <line number="52" hits="3" branch="false" />
+            <line number="53" hits="3" branch="false" />
+            <line number="55" hits="3" branch="false" />
+            <line number="56" hits="3" branch="false" />
+            <line number="58" hits="4" branch="false" />
+            <line number="59" hits="4" branch="false" />
+            <line number="60" hits="4" branch="false" />
+            <line number="61" hits="7" branch="false" />
+            <line number="63" hits="2" branch="false" />
+            <line number="64" hits="3" branch="false" />
+          </lines>
+        </class>
         <class name="LeetCode.Algorithms.ShortestSubarrayWithORAtLeastK2.ShortestSubarrayWithORAtLeastK2SlidingWindow" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\ShortestSubarrayWithORAtLeastK2\ShortestSubarrayWithORAtLeastK2SlidingWindow.cs" line-rate="1" branch-rate="0.9375" complexity="16">
           <methods>
             <method name="MinimumSubarrayLength" signature="(System.Int32[],System.Int32)" line-rate="1" branch-rate="0.875" complexity="8">
@@ -35570,10 +35640,10 @@
                 <line number="50" hits="3" branch="false" />
                 <line number="51" hits="3" branch="false" />
                 <line number="52" hits="3" branch="false" />
-                <line number="53" hits="5" branch="true" condition-coverage="100% (2/2)" />
-                <line number="54" hits="2" branch="false" />
-                <line number="55" hits="2" branch="false" />
-                <line number="56" hits="2" branch="false" />
+                <line number="53" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="54" hits="3" branch="false" />
+                <line number="55" hits="3" branch="false" />
+                <line number="56" hits="3" branch="false" />
                 <line number="58" hits="3" branch="false" />
                 <line number="59" hits="3" branch="false" />
                 <line number="60" hits="3" branch="false" />
@@ -35612,10 +35682,10 @@
             <line number="50" hits="3" branch="false" />
             <line number="51" hits="3" branch="false" />
             <line number="52" hits="3" branch="false" />
-            <line number="53" hits="5" branch="true" condition-coverage="100% (2/2)" />
-            <line number="54" hits="2" branch="false" />
-            <line number="55" hits="2" branch="false" />
-            <line number="56" hits="2" branch="false" />
+            <line number="53" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="54" hits="3" branch="false" />
+            <line number="55" hits="3" branch="false" />
+            <line number="56" hits="3" branch="false" />
             <line number="58" hits="3" branch="false" />
             <line number="59" hits="3" branch="false" />
             <line number="60" hits="3" branch="false" />
@@ -35750,10 +35820,10 @@
             <method name="Third" signature="(System.Action)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
                 <line number="41" hits="3" branch="false" />
-                <line number="42" hits="7" branch="true" condition-coverage="100% (2/2)" />
-                <line number="43" hits="4" branch="false" />
-                <line number="44" hits="4" branch="false" />
-                <line number="45" hits="4" branch="false" />
+                <line number="42" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="43" hits="3" branch="false" />
+                <line number="44" hits="3" branch="false" />
+                <line number="45" hits="3" branch="false" />
                 <line number="47" hits="3" branch="false" />
                 <line number="48" hits="3" branch="false" />
               </lines>
@@ -35773,10 +35843,10 @@
             <line number="37" hits="3" branch="false" />
             <line number="38" hits="3" branch="false" />
             <line number="41" hits="3" branch="false" />
-            <line number="42" hits="7" branch="true" condition-coverage="100% (2/2)" />
-            <line number="43" hits="4" branch="false" />
-            <line number="44" hits="4" branch="false" />
-            <line number="45" hits="4" branch="false" />
+            <line number="42" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="43" hits="3" branch="false" />
+            <line number="44" hits="3" branch="false" />
+            <line number="45" hits="3" branch="false" />
             <line number="47" hits="3" branch="false" />
             <line number="48" hits="3" branch="false" />
           </lines>
@@ -35841,10 +35911,10 @@
           <methods>
             <method name="DeserializeToArray" signature="(System.String)" line-rate="1" branch-rate="0.5" complexity="2">
               <lines>
-                <line number="19" hits="2671" branch="false" />
-                <line number="20" hits="2671" branch="true" condition-coverage="50% (1/2)" />
-                <line number="21" hits="2671" branch="false" />
-                <line number="22" hits="2671" branch="false" />
+                <line number="19" hits="2674" branch="false" />
+                <line number="20" hits="2674" branch="true" condition-coverage="50% (1/2)" />
+                <line number="21" hits="2674" branch="false" />
+                <line number="22" hits="2674" branch="false" />
               </lines>
             </method>
             <method name="DeserializeToList" signature="(System.String)" line-rate="1" branch-rate="0.5" complexity="2">
@@ -35873,10 +35943,10 @@
             </method>
           </methods>
           <lines>
-            <line number="19" hits="2671" branch="false" />
-            <line number="20" hits="2671" branch="true" condition-coverage="50% (1/2)" />
-            <line number="21" hits="2671" branch="false" />
-            <line number="22" hits="2671" branch="false" />
+            <line number="19" hits="2674" branch="false" />
+            <line number="20" hits="2674" branch="true" condition-coverage="50% (1/2)" />
+            <line number="21" hits="2674" branch="false" />
+            <line number="22" hits="2674" branch="false" />
             <line number="25" hits="78" branch="false" />
             <line number="26" hits="78" branch="true" condition-coverage="50% (1/2)" />
             <line number="27" hits="78" branch="false" />
