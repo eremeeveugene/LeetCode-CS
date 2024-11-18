@@ -330,6 +330,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1630. Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/description/)
 - [1636. Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/description/)
 - [1637. Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description/)
+- [1652. Defuse the Bomb](https://leetcode.com/problems/defuse-the-bomb/description/)
 - [1656. Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/description/)
 - [1662. Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/)
 - [1670. Design Front Middle Back Queue](https://leetcode.com/problems/design-front-middle-back-queue/description/)
