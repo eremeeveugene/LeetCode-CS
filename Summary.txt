@@ -1,21 +1,21 @@
 Summary
-  Generated on: 11/26/2024 - 7:19:49 PM
-  Coverage date: 11/26/2024 - 7:18:52 PM - 11/26/2024 - 7:19:13 PM
+  Generated on: 11/27/2024 - 3:38:22 PM
+  Coverage date: 11/27/2024 - 3:37:05 PM - 11/27/2024 - 3:37:25 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 685
-  Files: 685
+  Classes: 686
+  Files: 686
   Line coverage: 97.6%
-  Covered lines: 14264
+  Covered lines: 14293
   Uncovered lines: 344
-  Coverable lines: 14608
-  Total lines: 36877
-  Branch coverage: 95.5% (5236 of 5482)
-  Covered branches: 5236
-  Total branches: 5482
-  Method coverage: 98.7% (1016 of 1029)
-  Covered methods: 1016
-  Total methods: 1029
+  Coverable lines: 14637
+  Total lines: 36940
+  Branch coverage: 95.5% (5255 of 5502)
+  Covered branches: 5255
+  Total branches: 5502
+  Method coverage: 98.7% (1017 of 1030)
+  Covered methods: 1017
+  Total methods: 1030
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -235,6 +235,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheTownJudge.FindTheTownJudgeIterative                                                                                      100.0%
   LeetCode.Algorithms.FindValidMatrixGivenRowAndColumnSums.FindValidMatrixGivenRowAndColumnSumsBruteForce                                             100.0%
   LeetCode.Algorithms.FindValidMatrixGivenRowAndColumnSums.FindValidMatrixGivenRowAndColumnSumsGreedy                                                 100.0%
+  LeetCode.Algorithms.FindWinnerOnTicTacToeGame.FindWinnerOnTicTacToeGameSimulation                                                                   100.0%
   LeetCode.Algorithms.FindWordsContainingCharacter.FindWordsContainingCharacterDictionary                                                             100.0%
   LeetCode.Algorithms.FindWordsContainingCharacter.FindWordsContainingCharacterIterative                                                              100.0%
   LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveHashSet                                                                                100.0%
