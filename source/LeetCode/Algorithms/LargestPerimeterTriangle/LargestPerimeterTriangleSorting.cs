@@ -24,11 +24,13 @@ public class LargestPerimeterTriangleSorting : ILargestPerimeterTriangle
     {
         Array.Sort(nums);
 
-        for (var i = nums.Length - 3; i >= 0; i--)
+        for (var i = nums.Length - 1; i >= 2; i--)
         {
-            if (nums[i] + nums[i + 1] > nums[i + 2])
+            var ab = nums[i - 2] + nums[i - 1];
+
+            if (ab > nums[i])
             {
-                return nums[i] + nums[i + 1] + nums[i + 2];
+                return nums[i] + ab;
             }
         }
 
