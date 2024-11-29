@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9765171684073998" branch-rate="0.9551235465116279" lines-covered="14305" lines-valid="14649" branches-covered="5257" branches-valid="5504" complexity="5761" version="0" timestamp="1732821633">
+<coverage line-rate="0.9765731408335603" branch-rate="0.9552374048568322" lines-covered="14340" lines-valid="14684" branches-covered="5271" branches-valid="5518" complexity="5775" version="0" timestamp="1732879632">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.9787617990005553" branch-rate="0.9586424332344213" complexity="5639">
+    <package name="LeetCode" line-rate="0.9788132659419788" branch-rate="0.9587495375508694" complexity="5653">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -15617,6 +15617,96 @@
             <line number="28" hits="35" branch="false" />
             <line number="30" hits="8" branch="true" condition-coverage="100% (2/2)" />
             <line number="31" hits="8" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.LargestPerimeterTriangle.LargestPerimeterTriangleCountingSort" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\LargestPerimeterTriangle\LargestPerimeterTriangleCountingSort.cs" line-rate="1" branch-rate="1" complexity="10">
+          <methods>
+            <method name="LargestPerimeter" signature="(System.Int32[])" line-rate="1" branch-rate="1" complexity="10">
+              <lines>
+                <line number="24" hits="2" branch="false" />
+                <line number="25" hits="2" branch="false" />
+                <line number="27" hits="2" branch="false" />
+                <line number="29" hits="20" branch="true" condition-coverage="100% (2/2)" />
+                <line number="30" hits="7" branch="false" />
+                <line number="31" hits="7" branch="false" />
+                <line number="32" hits="7" branch="false" />
+                <line number="34" hits="2" branch="false" />
+                <line number="36" hits="2" branch="false" />
+                <line number="38" hits="32" branch="true" condition-coverage="100% (2/2)" />
+                <line number="39" hits="14" branch="false" />
+                <line number="40" hits="21" branch="true" condition-coverage="100% (2/2)" />
+                <line number="41" hits="7" branch="false" />
+                <line number="42" hits="7" branch="false" />
+                <line number="43" hits="7" branch="false" />
+                <line number="44" hits="14" branch="false" />
+                <line number="46" hits="8" branch="true" condition-coverage="100% (2/2)" />
+                <line number="47" hits="3" branch="false" />
+                <line number="48" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="49" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="52" hits="2" branch="false" />
+                <line number="54" hits="1" branch="false" />
+                <line number="55" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="2" branch="false" />
+            <line number="25" hits="2" branch="false" />
+            <line number="27" hits="2" branch="false" />
+            <line number="29" hits="20" branch="true" condition-coverage="100% (2/2)" />
+            <line number="30" hits="7" branch="false" />
+            <line number="31" hits="7" branch="false" />
+            <line number="32" hits="7" branch="false" />
+            <line number="34" hits="2" branch="false" />
+            <line number="36" hits="2" branch="false" />
+            <line number="38" hits="32" branch="true" condition-coverage="100% (2/2)" />
+            <line number="39" hits="14" branch="false" />
+            <line number="40" hits="21" branch="true" condition-coverage="100% (2/2)" />
+            <line number="41" hits="7" branch="false" />
+            <line number="42" hits="7" branch="false" />
+            <line number="43" hits="7" branch="false" />
+            <line number="44" hits="14" branch="false" />
+            <line number="46" hits="8" branch="true" condition-coverage="100% (2/2)" />
+            <line number="47" hits="3" branch="false" />
+            <line number="48" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="49" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="52" hits="2" branch="false" />
+            <line number="54" hits="1" branch="false" />
+            <line number="55" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.LargestPerimeterTriangle.LargestPerimeterTriangleSorting" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\LargestPerimeterTriangle\LargestPerimeterTriangleSorting.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="LargestPerimeter" signature="(System.Int32[])" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="24" hits="2" branch="false" />
+                <line number="25" hits="2" branch="false" />
+                <line number="27" hits="8" branch="true" condition-coverage="100% (2/2)" />
+                <line number="28" hits="3" branch="false" />
+                <line number="29" hits="3" branch="false" />
+                <line number="31" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="32" hits="1" branch="false" />
+                <line number="33" hits="1" branch="false" />
+                <line number="35" hits="2" branch="false" />
+                <line number="37" hits="1" branch="false" />
+                <line number="38" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="2" branch="false" />
+            <line number="25" hits="2" branch="false" />
+            <line number="27" hits="8" branch="true" condition-coverage="100% (2/2)" />
+            <line number="28" hits="3" branch="false" />
+            <line number="29" hits="3" branch="false" />
+            <line number="31" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="32" hits="1" branch="false" />
+            <line number="33" hits="1" branch="false" />
+            <line number="35" hits="2" branch="false" />
+            <line number="37" hits="1" branch="false" />
+            <line number="38" hits="2" branch="false" />
           </lines>
         </class>
         <class name="LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeHashSet" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\LargestPositiveIntegerThatExistsWithItsNegative\LargestPositiveIntegerThatExistsWithItsNegativeHashSet.cs" line-rate="1" branch-rate="1" complexity="4">
@@ -36870,10 +36960,10 @@
             <method name="Third" signature="(System.Action)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
                 <line number="41" hits="3" branch="false" />
-                <line number="42" hits="6" branch="true" condition-coverage="100% (2/2)" />
-                <line number="43" hits="3" branch="false" />
-                <line number="44" hits="3" branch="false" />
-                <line number="45" hits="3" branch="false" />
+                <line number="42" hits="7" branch="true" condition-coverage="100% (2/2)" />
+                <line number="43" hits="4" branch="false" />
+                <line number="44" hits="4" branch="false" />
+                <line number="45" hits="4" branch="false" />
                 <line number="47" hits="3" branch="false" />
                 <line number="48" hits="3" branch="false" />
               </lines>
@@ -36893,10 +36983,10 @@
             <line number="37" hits="3" branch="false" />
             <line number="38" hits="3" branch="false" />
             <line number="41" hits="3" branch="false" />
-            <line number="42" hits="6" branch="true" condition-coverage="100% (2/2)" />
-            <line number="43" hits="3" branch="false" />
-            <line number="44" hits="3" branch="false" />
-            <line number="45" hits="3" branch="false" />
+            <line number="42" hits="7" branch="true" condition-coverage="100% (2/2)" />
+            <line number="43" hits="4" branch="false" />
+            <line number="44" hits="4" branch="false" />
+            <line number="45" hits="4" branch="false" />
             <line number="47" hits="3" branch="false" />
             <line number="48" hits="3" branch="false" />
           </lines>
@@ -36961,10 +37051,10 @@
           <methods>
             <method name="DeserializeToArray" signature="(System.String)" line-rate="1" branch-rate="0.5" complexity="2">
               <lines>
-                <line number="19" hits="2690" branch="false" />
-                <line number="20" hits="2690" branch="true" condition-coverage="50% (1/2)" />
-                <line number="21" hits="2690" branch="false" />
-                <line number="22" hits="2690" branch="false" />
+                <line number="19" hits="2694" branch="false" />
+                <line number="20" hits="2694" branch="true" condition-coverage="50% (1/2)" />
+                <line number="21" hits="2694" branch="false" />
+                <line number="22" hits="2694" branch="false" />
               </lines>
             </method>
             <method name="DeserializeToList" signature="(System.String)" line-rate="1" branch-rate="0.5" complexity="2">
@@ -36993,10 +37083,10 @@
             </method>
           </methods>
           <lines>
-            <line number="19" hits="2690" branch="false" />
-            <line number="20" hits="2690" branch="true" condition-coverage="50% (1/2)" />
-            <line number="21" hits="2690" branch="false" />
-            <line number="22" hits="2690" branch="false" />
+            <line number="19" hits="2694" branch="false" />
+            <line number="20" hits="2694" branch="true" condition-coverage="50% (1/2)" />
+            <line number="21" hits="2694" branch="false" />
+            <line number="22" hits="2694" branch="false" />
             <line number="25" hits="78" branch="false" />
             <line number="26" hits="78" branch="true" condition-coverage="50% (1/2)" />
             <line number="27" hits="78" branch="false" />

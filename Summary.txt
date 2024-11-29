@@ -1,21 +1,21 @@
 Summary
-  Generated on: 11/28/2024 - 7:20:34 PM
-  Coverage date: 11/28/2024 - 7:19:18 PM - 11/28/2024 - 7:19:38 PM
+  Generated on: 11/29/2024 - 11:27:13 AM
+  Coverage date: 11/29/2024 - 11:26:00 AM - 11/29/2024 - 11:26:21 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 687
-  Files: 687
+  Classes: 689
+  Files: 689
   Line coverage: 97.6%
-  Covered lines: 14305
+  Covered lines: 14340
   Uncovered lines: 344
-  Coverable lines: 14649
-  Total lines: 36981
-  Branch coverage: 95.5% (5257 of 5504)
-  Covered branches: 5257
-  Total branches: 5504
-  Method coverage: 98.7% (1018 of 1031)
-  Covered methods: 1018
-  Total methods: 1031
+  Coverable lines: 14684
+  Total lines: 37076
+  Branch coverage: 95.5% (5271 of 5518)
+  Covered branches: 5271
+  Total branches: 5518
+  Method coverage: 98.7% (1020 of 1033)
+  Covered methods: 1020
+  Total methods: 1033
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -299,6 +299,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.LargestCombinationWithBitwiseANDGreaterThanZero.LargestCombinationWithBitwiseANDGreaterThanZeroIterative                        100.0%
   LeetCode.Algorithms.LargestLocalValuesInMatrix.LargestLocalValuesInMatrixBruteForce                                                                 100.0%
   LeetCode.Algorithms.LargestNumber.LargestNumberConcatenationSorting                                                                                 100.0%
+  LeetCode.Algorithms.LargestPerimeterTriangle.LargestPerimeterTriangleCountingSort                                                                   100.0%
+  LeetCode.Algorithms.LargestPerimeterTriangle.LargestPerimeterTriangleSorting                                                                        100.0%
   LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeHashSet                          100.0%
   LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointers               100.0%
   LeetCode.Algorithms.LeftAndRightSumDifferences.LeftAndRightSumDifferencesPrefixSum                                                                  100.0%
