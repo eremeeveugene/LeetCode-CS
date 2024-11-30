@@ -78,6 +78,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [67. Add Binary](https://leetcode.com/problems/add-binary/description/)
 - [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/description/)
 - [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/)
+- [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/)
 - [75. Sort Colors](https://leetcode.com/problems/sort-colors/)
 - [78. Subsets](https://leetcode.com/problems/subsets/description/)
 - [79. Word Search](https://leetcode.com/problems/word-search/description/)
