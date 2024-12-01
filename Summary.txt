@@ -1,21 +1,21 @@
 Summary
-  Generated on: 11/30/2024 - 10:22:36 AM
-  Coverage date: 11/30/2024 - 10:21:26 AM - 11/30/2024 - 10:21:47 AM
+  Generated on: 12/1/2024 - 12:31:13 PM
+  Coverage date: 12/1/2024 - 12:29:57 PM - 12/1/2024 - 12:30:17 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 691
-  Files: 691
+  Classes: 693
+  Files: 693
   Line coverage: 97.6%
-  Covered lines: 14422
+  Covered lines: 14462
   Uncovered lines: 344
-  Coverable lines: 14766
-  Total lines: 37221
-  Branch coverage: 95.5% (5315 of 5562)
-  Covered branches: 5315
-  Total branches: 5562
-  Method coverage: 98.7% (1022 of 1035)
-  Covered methods: 1022
-  Total methods: 1035
+  Coverable lines: 14806
+  Total lines: 37321
+  Branch coverage: 95.5% (5335 of 5582)
+  Covered branches: 5335
+  Total branches: 5582
+  Method coverage: 98.7% (1024 of 1037)
+  Covered methods: 1024
+  Total methods: 1037
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -72,6 +72,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKDictionary                                                      92.3%
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKTwoPointers                                                    100.0%
   LeetCode.Algorithms.CheckIfItIsStraightLine.CheckIfItIsStraightLineIterative                                                                        100.0%
+  LeetCode.Algorithms.CheckIfNAndItsDoubleExist.CheckIfNAndItsDoubleExistDictionary                                                                   100.0%
+  LeetCode.Algorithms.CheckIfNAndItsDoubleExist.CheckIfNAndItsDoubleExistHashSet                                                                      100.0%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramHashSet                                                                  100.0%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramIterative                                                                100.0%
   LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentConcat                                                   100.0%
