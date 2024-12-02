@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/2/2024 - 10:39:27 AM
-  Coverage date: 12/2/2024 - 10:38:07 AM - 12/2/2024 - 10:38:28 AM
+  Generated on: 12/2/2024 - 5:01:19 PM
+  Coverage date: 12/2/2024 - 5:00:22 PM - 12/2/2024 - 5:00:43 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 694
-  Files: 694
+  Classes: 695
+  Files: 695
   Line coverage: 97.6%
-  Covered lines: 14472
+  Covered lines: 14488
   Uncovered lines: 344
-  Coverable lines: 14816
-  Total lines: 37359
-  Branch coverage: 95.5% (5339 of 5586)
-  Covered branches: 5339
-  Total branches: 5586
-  Method coverage: 98.7% (1025 of 1038)
-  Covered methods: 1025
-  Total methods: 1038
+  Coverable lines: 14832
+  Total lines: 37407
+  Branch coverage: 95.5% (5345 of 5592)
+  Covered branches: 5345
+  Total branches: 5592
+  Method coverage: 98.7% (1026 of 1039)
+  Covered methods: 1026
+  Total methods: 1039
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -583,6 +583,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SeparateBlackAndWhiteBalls.SeparateBlackAndWhiteBallsTwoPointers                                                                100.0%
   LeetCode.Algorithms.SetMatrixZeroes.SetMatrixZeroesArrayMarkers                                                                                     100.0%
   LeetCode.Algorithms.SetMatrixZeroes.SetMatrixZeroesInPlace                                                                                          100.0%
+  LeetCode.Algorithms.ShortestDistanceToTargetStringInCircularArray.ShortestDistanceToTargetStringInCircularArrayIterative                            100.0%
   LeetCode.Algorithms.ShortestPalindrome.ShortestPalindromeTwoPointers                                                                                100.0%
   LeetCode.Algorithms.ShortestSubarrayToBeRemovedToMakeArraySorted.ShortestSubarrayToBeRemovedToMakeArraySortedTwoPointers                            100.0%
   LeetCode.Algorithms.ShortestSubarrayWithORAtLeastK2.ShortestSubarrayWithORAtLeastK2SlidingWindow                                                    100.0%
