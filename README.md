@@ -305,6 +305,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1405. Longest Happy String](https://leetcode.com/problems/longest-happy-string/description/)
 - [1408. String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)
 - [1442. Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/description/)
+- [1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence](https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/description/)
 - [1460. Make Two Arrays Equal by Reversing Subarrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/description/)
 - [1464. Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/description/)
 - [1470. Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/description/)
