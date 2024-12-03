@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/3/2024 - 12:10:26 PM
-  Coverage date: 12/3/2024 - 12:09:07 PM - 12/3/2024 - 12:09:27 PM
+  Generated on: 12/3/2024 - 12:54:40 PM
+  Coverage date: 12/3/2024 - 12:53:14 PM - 12/3/2024 - 12:53:34 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 696
-  Files: 696
+  Classes: 697
+  Files: 697
   Line coverage: 97.6%
-  Covered lines: 14502
+  Covered lines: 14526
   Uncovered lines: 344
-  Coverable lines: 14846
-  Total lines: 37453
-  Branch coverage: 95.5% (5351 of 5598)
-  Covered branches: 5351
-  Total branches: 5598
-  Method coverage: 98.7% (1027 of 1040)
-  Covered methods: 1027
-  Total methods: 1040
+  Coverable lines: 14870
+  Total lines: 37511
+  Branch coverage: 95.5% (5365 of 5612)
+  Covered branches: 5365
+  Total branches: 5612
+  Method coverage: 98.7% (1028 of 1041)
+  Covered methods: 1028
+  Total methods: 1041
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -653,6 +653,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SumRootToLeafNumbers.SumRootToLeafNumbersDepthFirstSearch                                                                       100.0%
   LeetCode.Algorithms.SymmetricTree.SymmetricTreeIterative                                                                                             92.5%
   LeetCode.Algorithms.SymmetricTree.SymmetricTreeRecursive                                                                                             86.6%
+  LeetCode.Algorithms.TakeKOfEachCharacterFromLeftAndRight.TakeKOfEachCharacterFromLeftAndRightSlidingWindow                                          100.0%
   LeetCode.Algorithms.TaskScheduler.TaskSchedulerDictionary                                                                                           100.0%
   LeetCode.Algorithms.TheNumberOfBeautifulSubsets.TheNumberOfBeautifulSubsetsBacktracking                                                             100.0%
   LeetCode.Algorithms.TheNumberOfTheSmallestUnoccupiedChair.TheNumberOfTheSmallestUnoccupiedChairPriorityQueue                                         95.6%
