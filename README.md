@@ -447,6 +447,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2812. Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/description/)
 - [2816. Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/description/)
 - [2824. Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description/)
+- [2825. Make String a Subsequence Using Cyclic Increments](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/description/)
 - [2864. Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/description/)
 - [2894. Divisible and Non-divisible Sums Difference](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/description/)
 - [2938. Separate Black and White Balls](https://leetcode.com/problems/separate-black-and-white-balls/description/)
