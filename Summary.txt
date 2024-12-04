@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/3/2024 - 12:54:40 PM
-  Coverage date: 12/3/2024 - 12:53:14 PM - 12/3/2024 - 12:53:34 PM
+  Generated on: 12/4/2024 - 12:52:38 PM
+  Coverage date: 12/4/2024 - 12:51:19 PM - 12/4/2024 - 12:51:41 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 697
-  Files: 697
+  Classes: 698
+  Files: 698
   Line coverage: 97.6%
-  Covered lines: 14526
-  Uncovered lines: 344
-  Coverable lines: 14870
-  Total lines: 37511
-  Branch coverage: 95.5% (5365 of 5612)
-  Covered branches: 5365
-  Total branches: 5612
-  Method coverage: 98.7% (1028 of 1041)
-  Covered methods: 1028
-  Total methods: 1041
+  Covered lines: 14541
+  Uncovered lines: 346
+  Coverable lines: 14887
+  Total lines: 37558
+  Branch coverage: 95.5% (5378 of 5626)
+  Covered branches: 5378
+  Total branches: 5626
+  Method coverage: 98.7% (1029 of 1042)
+  Covered methods: 1029
+  Total methods: 1042
 
-LeetCode                                                                                                                                               97.9%
+LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                  100.0%
@@ -333,6 +333,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MagicSquaresInGrid.MagicSquaresInGridBruteForce                                                                                 100.0%
   LeetCode.Algorithms.MajorityElement.MajorityElementDictionary                                                                                       100.0%
   LeetCode.Algorithms.MajorityElement.MajorityElementDistinctCount                                                                                    100.0%
+  LeetCode.Algorithms.MakeStringSubsequenceUsingCyclicIncrements.MakeStringSubsequenceUsingCyclicIncrementsTwoPointers                                 88.2%
   LeetCode.Algorithms.MakeSumDivisibleByP.MakeSumDivisibleByPPrefixSum                                                                                100.0%
   LeetCode.Algorithms.MakeTheStringGreat.MakeTheStringGreatIterative                                                                                  100.0%
   LeetCode.Algorithms.MakeTheStringGreat.MakeTheStringGreatStringBuilder                                                                              100.0%
