@@ -424,6 +424,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2530. Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/description/)
 - [2535. Difference Between Element Sum and Digit Sum of an Array](https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/description/)
 - [2540. Minimum Common Value](https://leetcode.com/problems/minimum-common-value/description/)
+- [2554. Maximum Number of Integers to Choose From a Range I](https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i/description/)
 - [2574. Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences/description/)
 - [2582. Pass the Pillow](https://leetcode.com/problems/pass-the-pillow/description/)
 - [2583. Kth Largest Sum in a Binary Tree](https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/description/)
