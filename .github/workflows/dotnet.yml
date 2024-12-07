@@ -18,13 +18,16 @@ jobs:
       - name: Get .NET version from global.json
         id: dotnet-version
         run: |
-          $dotnetVersion = (Get-Content -Raw -Path "$(System.DefaultWorkingDirectory)/global.json" | ConvertFrom-Json).sdk.version
+          $dotnetVersion = (Get-Content -Raw -Path "$env:GITHUB_WORKSPACE/global.json" | ConvertFrom-Json).sdk.version
           echo "DOTNET_VERSION=$dotnetVersion" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Clear .NET cache
+        run: dotnet nuget locals all --clear
 
       - name: Restore dependencies
         run: dotnet restore
@@ -36,7 +39,10 @@ jobs:
         run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
 
       - name: Install .NET Format tool
-        run: dotnet tool install -g dotnet-format
+        run: dotnet tool install -g dotnet-format --no-cache
+
+      - name: Add .NET tools to PATH
+        run: echo "$HOME/.dotnet/tools" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
 
       - name: Check Code Style
         run: dotnet format --verify-no-changes --verbosity diagnostic
