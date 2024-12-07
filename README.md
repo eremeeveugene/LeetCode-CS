@@ -351,6 +351,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1716. Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/description/)
 - [1720. Decode XORed Array](https://leetcode.com/problems/decode-xored-array/description/)
 - [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/description/)
+- [1760. Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/description/)
 - [1768. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/description/)
 - [1791. Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/description/)
 - [1813. Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/description/)
