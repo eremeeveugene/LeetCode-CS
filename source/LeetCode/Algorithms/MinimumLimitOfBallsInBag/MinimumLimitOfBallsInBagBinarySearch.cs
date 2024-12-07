@@ -26,23 +26,21 @@ public class MinimumLimitOfBallsInBagBinarySearch : IMinimumLimitOfBallsInBag
         var left = 1;
         var right = nums.Max();
 
-        var result = right;
-
-        while (left <= right)
+        while (left < right)
         {
             var mid = left + ((right - left) / 2);
+            var count = nums.Sum(num => (num - 1) / mid);
 
-            if (nums.Where(num => num > mid).Sum(num => (num - 1) / mid) <= maxOperations)
-            {
-                result = mid;
-                right = mid - 1;
-            }
-            else
+            if (count > maxOperations)
             {
                 left = mid + 1;
             }
+            else
+            {
+                right = mid;
+            }
         }
 
-        return result;
+        return left;
     }
 }
