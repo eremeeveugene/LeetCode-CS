@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/7/2024 - 4:14:13 PM
-  Coverage date: 12/7/2024 - 4:12:56 PM - 12/7/2024 - 4:13:18 PM
+  Generated on: 12/7/2024 - 5:21:46 PM
+  Coverage date: 12/7/2024 - 5:20:31 PM - 12/7/2024 - 5:20:54 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 701
-  Files: 701
+  Classes: 702
+  Files: 702
   Line coverage: 97.5%
-  Covered lines: 14592
+  Covered lines: 14609
   Uncovered lines: 370
-  Coverable lines: 14962
-  Total lines: 37739
-  Branch coverage: 95.3% (5415 of 5680)
-  Covered branches: 5415
-  Total branches: 5680
-  Method coverage: 98.6% (1031 of 1045)
-  Covered methods: 1031
-  Total methods: 1045
+  Coverable lines: 14979
+  Total lines: 37785
+  Branch coverage: 95.3% (5419 of 5684)
+  Covered branches: 5419
+  Total branches: 5684
+  Method coverage: 98.6% (1032 of 1046)
+  Covered methods: 1032
+  Total methods: 1046
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -399,6 +399,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumIncrementToMakeArrayUnique.MinimumIncrementToMakeArrayUniqueCounting                                                     100.0%
   LeetCode.Algorithms.MinimumIncrementToMakeArrayUnique.MinimumIncrementToMakeArrayUniqueSorting                                                      100.0%
   LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds.MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers                          100.0%
+  LeetCode.Algorithms.MinimumLimitOfBallsInBag.MinimumLimitOfBallsInBagBinarySearch                                                                   100.0%
   LeetCode.Algorithms.MinimumNumberGame.MinimumNumberGameSorting                                                                                      100.0%
   LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons.MinimumNumberOfArrowsToBurstBalloonsIterative                                              100.0%
   LeetCode.Algorithms.MinimumNumberOfChangesToMakeBinaryStringBeautiful.MinimumNumberOfChangesToMakeBinaryStringBeautifulGreedy                       100.0%
