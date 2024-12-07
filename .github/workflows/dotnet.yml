@@ -26,6 +26,15 @@ jobs:
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --no-restore
+
+      - name: Run Tests with Coverage
+        run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
+
       - name: Verify dotnet installation
         run: dotnet --info
 
