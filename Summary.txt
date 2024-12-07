@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/6/2024 - 1:12:57 PM
-  Coverage date: 12/6/2024 - 1:11:59 PM - 12/6/2024 - 1:12:21 PM
+  Generated on: 12/7/2024 - 4:14:13 PM
+  Coverage date: 12/7/2024 - 4:12:56 PM - 12/7/2024 - 4:13:18 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 699
-  Files: 699
-  Line coverage: 97.6%
-  Covered lines: 14558
-  Uncovered lines: 346
-  Coverable lines: 14904
-  Total lines: 37609
-  Branch coverage: 95.5% (5384 of 5632)
-  Covered branches: 5384
-  Total branches: 5632
-  Method coverage: 98.7% (1030 of 1043)
-  Covered methods: 1030
-  Total methods: 1043
+  Classes: 701
+  Files: 701
+  Line coverage: 97.5%
+  Covered lines: 14592
+  Uncovered lines: 370
+  Coverable lines: 14962
+  Total lines: 37739
+  Branch coverage: 95.3% (5415 of 5680)
+  Covered branches: 5415
+  Total branches: 5680
+  Method coverage: 98.6% (1031 of 1045)
+  Covered methods: 1031
+  Total methods: 1045
 
-LeetCode                                                                                                                                               97.8%
+LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                  100.0%
@@ -32,7 +32,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.AddTwoIntegers.AddTwoIntegersMath                                                                                               100.0%
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersInPlaceCarry                                                                                         100.0%
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersIterative                                                                                            100.0%
-  LeetCode.Algorithms.AllOneDataStructure.AllOneDataStructureLinkedList                                                                                81.9%
+  LeetCode.Algorithms.AllOneDataStructure.AllOneDataStructureLinkedList                                                                                68.4%
   LeetCode.Algorithms.AppendCharactersToStringToMakeSubsequence.AppendCharactersToStringToMakeSubsequenceTwoPointers                                  100.0%
   LeetCode.Algorithms.ApplyDiscountToPrices.ApplyDiscountToPricesIterative                                                                            100.0%
   LeetCode.Algorithms.ArithmeticSubarrays.ArithmeticSubarraysHashSet                                                                                  100.0%
@@ -246,6 +246,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveHashSet                                                                                100.0%
   LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveIterative                                                                              100.0%
   LeetCode.Algorithms.FirstUniqueCharacterInString.FirstUniqueCharacterInStringIterative                                                              100.0%
+  LeetCode.Algorithms.FlipColumnsForMaximumNumberOfEqualRows.FlipColumnsForMaximumNumberOfEqualRowsDictionary                                         100.0%
   LeetCode.Algorithms.FlipEquivalentBinaryTrees.FlipEquivalentBinaryTreesRecursive                                                                    100.0%
   LeetCode.Algorithms.FloodFill.FloodFillIterative                                                                                                    100.0%
   LeetCode.Algorithms.FractionAdditionAndSubtraction.FractionAdditionAndSubtractionSimulation                                                         100.0%
@@ -426,6 +427,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MonotonicArray.MonotonicArrayIterative                                                                                          100.0%
   LeetCode.Algorithms.MostBeautifulItemForEachQuery.MostBeautifulItemForEachQueryBinarySearch                                                         100.0%
   LeetCode.Algorithms.MostStonesRemovedWithSameRowOrColumn.MostStonesRemovedWithSameRowOrColumnUnionFind                                              100.0%
+  LeetCode.Algorithms.MovePiecesToObtainString.MovePiecesToObtainStringTwoPointers                                                                     78.0%
   LeetCode.Algorithms.MoveZeroes.MoveZeroesTwoPointers                                                                                                100.0%
   LeetCode.Algorithms.MultiplyStrings.MultiplyStringsBigInteger                                                                                       100.0%
   LeetCode.Algorithms.MultiplyStrings.MultiplyStringsIterative                                                                                        100.0%
