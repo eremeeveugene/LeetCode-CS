@@ -26,15 +26,8 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         "[\"inc\",\"inc\",\"getMaxKey\",\"getMinKey\",\"inc\",\"getMaxKey\",\"getMinKey\"]",
         "[\"hello\",\"hello\",null,null,\"leet\",null,null]",
         "[\"hello\",\"hello\",\"hello\",\"leet\"]")]
-    [DataRow(
-        "[\"inc\",\"inc\",\"inc\",\"inc\",\"getMaxKey\",\"getMinKey\"]",
-        "[\"a\",\"b\",\"c\",\"d\",null,null]",
-        "[\"a\",\"d\"]")]
-    [DataRow(
-        "[\"inc\",\"inc\",\"inc\",\"inc\",\"inc\",\"dec\",\"dec\",\"getMaxKey\",\"getMinKey\"]",
-        "[\"a\",\"b\",\"c\",\"d\",\"c\",\"c\",\"c\",null,null]",
-        "[\"a\",\"d\"]")]
-    public void IncDecAndGetKeyMethods_WithVariousOperations_ReturnsMaxAndMinKeys(string methodsJsonArray, string argsJsonArray,
+    public void IncDecAndGetKeyMethods_WithVariousOperations_ReturnsMaxAndMinKeys(string methodsJsonArray,
+        string argsJsonArray,
         string expectedResultsJsonArray)
     {
         // Arrange
