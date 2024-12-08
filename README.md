@@ -172,6 +172,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [440. K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/)
 - [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/description/)
 - [442. Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)
+- [445. Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/)
 - [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/)
 - [459. Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/description/)
 - [463. Island Perimeter](https://leetcode.com/problems/island-perimeter/description/)
