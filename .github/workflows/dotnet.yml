@@ -43,14 +43,14 @@ jobs:
       - name: Restore .NET Tools
         run: dotnet tool restore
 
-      - name: Verify .NET tools availability
+      - name: Verify Report Generator Tool
         run: |
           dotnet tool list -g
-          where dotnet-format
+          where reportgenerator
+          reportgenerator --version
 
       - name: Check Code Style
         run: |
-          sleep 5
           dotnet format --verify-no-changes --verbosity diagnostic
 
       - name: Generate Coverage Report
