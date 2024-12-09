@@ -51,6 +51,9 @@ jobs:
       - name: Check Code Style
         run: dotnet format --verify-no-changes --verbosity diagnostic
 
+      - name: Install Report Generator Tool
+        run: dotnet tool install --global dotnet-reportgenerator-globaltool
+        
       - name: Generate Coverage Report
         run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
 
