@@ -8,7 +8,7 @@ on:
 
 jobs:
   pipeline:
-    runs-on: windows-2019
+    runs-on: windows-latest
     defaults:
       run:
         working-directory: source
@@ -22,6 +22,9 @@ jobs:
         with:
           global-json-file: ${{ github.workspace }}/global.json
 
+      - name: Display .NET Info
+        run: dotnet --info
+
       - name: Restore dependencies
         run: dotnet restore
 
@@ -32,14 +35,27 @@ jobs:
         run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
 
       - name: Install .NET Format tool
-        run: dotnet tool install -g dotnet-format
+        run: dotnet tool install --global dotnet-format
+
+      - name: Add .NET tools to PATH
+        run: |
+          echo "::add-path::${{ env.USERPROFILE }}\.dotnet\tools"
+          echo "Updated PATH is $env:PATH"
+      
+      - name: Check if dotnet-format is available
+        run: |
+          which dotnet-format
+          dotnet tool list --global
 
       - name: Check Code Style
         run: dotnet format --verify-no-changes --verbosity diagnostic
 
       - name: Install Report Generator Tool
         run: dotnet tool install --global dotnet-reportgenerator-globaltool
-        
+
+      - name: Add .NET tools to PATH (Report Generator)
+        run: echo "::add-path::${{ env.USERPROFILE }}\.dotnet\tools"
+
       - name: Generate Coverage Report
         run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
 
