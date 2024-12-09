@@ -40,24 +40,22 @@ jobs:
       - name: Run Tests with Coverage
         run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
 
-      - name: Restore .NET Tools
-        run: dotnet tool restore
+      - name: Install .NET Format tool
+        run: dotnet tool install -g dotnet-format --no-cache
 
-      - name: Verify Report Generator Tool
+      - name: Verify .NET tools availability
         run: |
           dotnet tool list -g
-          where reportgenerator
           reportgenerator --version
 
       - name: Check Code Style
-        run: |
-          dotnet format --verify-no-changes --verbosity diagnostic
+        run: dotnet format --verify-no-changes --verbosity diagnostic
 
       - name: Generate Coverage Report
-        run: dotnet tool run reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
+        run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
 
       - name: Generate Summary Report
-        run: dotnet tool run reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"TextSummary"
+        run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"TextSummary"
 
       - name: Check Coverage Percentage
         run: |
