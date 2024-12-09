@@ -46,6 +46,7 @@ jobs:
       - name: Verify .NET tools availability
         run: |
           dotnet tool list -g
+          where dotnet-format
           reportgenerator --version
 
       - name: Check Code Style
