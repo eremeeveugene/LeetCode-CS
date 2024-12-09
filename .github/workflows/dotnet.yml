@@ -22,15 +22,6 @@ jobs:
         with:
           global-json-file: ${{ github.workspace }}/global.json
 
-      - name: Verify .NET CLI availability
-        run: |
-          dotnet --version
-          dotnet --list-sdks
-          where dotnet
-
-      - name: Clear .NET cache
-        run: dotnet nuget locals all --clear
-
       - name: Restore dependencies
         run: dotnet restore
 
@@ -41,13 +32,7 @@ jobs:
         run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
 
       - name: Install .NET Format tool
-        run: dotnet tool install -g dotnet-format --no-cache
-
-      - name: Verify .NET tools availability
-        run: |
-          dotnet tool list -g
-          where dotnet-format
-          reportgenerator --version
+        run: dotnet tool install -g dotnet-format
 
       - name: Check Code Style
         run: dotnet format --verify-no-changes --verbosity diagnostic
