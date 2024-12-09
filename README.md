@@ -471,6 +471,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3097. Shortest Subarray With OR at Least K II](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/description/)
 - [3110. Score of a String](https://leetcode.com/problems/score-of-a-string/description/)
 - [3133. Minimum Array End](https://leetcode.com/problems/minimum-array-end/description/)
+- [3152. Special Array II](https://leetcode.com/problems/special-array-ii/description/)
 - [3163. String Compression III](https://leetcode.com/problems/string-compression-iii/description/)
 - [3190. Find Minimum Operations to Make All Elements Divisible by Three](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/description/)
 - [3217. Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/description/)
