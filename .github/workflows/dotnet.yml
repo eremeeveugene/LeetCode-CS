@@ -17,16 +17,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Get .NET version from global.json
-        id: dotnet-version
-        run: |
-          $dotnetVersion = (Get-Content -Raw -Path "$env:GITHUB_WORKSPACE/global.json" | ConvertFrom-Json).sdk.version
-          echo "DOTNET_VERSION=$dotnetVersion" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
-
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: ${{ env.DOTNET_VERSION }}
+          global-json-file: ${{ github.workspace }}/global.json
 
       - name: Verify .NET CLI availability
         run: |
@@ -46,13 +40,8 @@ jobs:
       - name: Run Tests with Coverage
         run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
 
-      - name: Add .NET tools to PATH
-        run: |
-          echo "$HOME/.dotnet/tools" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
-          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
-
-      - name: Install .NET Format tool
-        run: dotnet tool install -g dotnet-format --no-cache
+      - name: Restore .NET Tools
+        run: dotnet tool restore
 
       - name: Verify .NET tools availability
         run: |
@@ -60,16 +49,15 @@ jobs:
           where dotnet-format
 
       - name: Check Code Style
-        run: dotnet format --verify-no-changes --verbosity diagnostic
-
-      - name: Install Report Generator Tool
-        run: dotnet tool install --global dotnet-reportgenerator-globaltool
+        run: |
+          sleep 5
+          dotnet format --verify-no-changes --verbosity diagnostic
 
       - name: Generate Coverage Report
-        run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
+        run: dotnet tool run reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
 
       - name: Generate Summary Report
-        run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"TextSummary"
+        run: dotnet tool run reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"TextSummary"
 
       - name: Check Coverage Percentage
         run: |
