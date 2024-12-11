@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/10/2024 - 2:54:37 PM
-  Coverage date: 12/10/2024 - 2:53:43 PM - 12/10/2024 - 2:54:04 PM
+  Generated on: 12/11/2024 - 2:57:26 PM
+  Coverage date: 12/11/2024 - 2:56:32 PM - 12/11/2024 - 2:56:53 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 707
-  Files: 707
+  Classes: 709
+  Files: 709
   Line coverage: 97.5%
-  Covered lines: 14754
-  Uncovered lines: 370
-  Coverable lines: 15124
-  Total lines: 38108
-  Branch coverage: 95.3% (5472 of 5738)
-  Covered branches: 5472
-  Total branches: 5738
-  Method coverage: 98.6% (1039 of 1053)
-  Covered methods: 1039
-  Total methods: 1053
+  Covered lines: 14791
+  Uncovered lines: 374
+  Coverable lines: 15165
+  Total lines: 38214
+  Branch coverage: 95.3% (5484 of 5752)
+  Covered branches: 5484
+  Total branches: 5752
+  Method coverage: 98.6% (1041 of 1055)
+  Covered methods: 1041
+  Total methods: 1055
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -350,6 +350,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberIterative                                                                                        100.0%
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberString                                                                                           100.0%
   LeetCode.Algorithms.MaximumAverageSubarray1.MaximumAverageSubarray1SlidingWindow                                                                    100.0%
+  LeetCode.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation.MaximumBeautyOfAnArrayAfterApplyingOperationDifferenceArray                         90.0%
+  LeetCode.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation.MaximumBeautyOfAnArrayAfterApplyingOperationLineSweep                               90.4%
   LeetCode.Algorithms.MaximumDepthOfBinaryTree.MaximumDepthOfBinaryTreeBreadthFirstSearch                                                             100.0%
   LeetCode.Algorithms.MaximumDepthOfBinaryTree.MaximumDepthOfBinaryTreeDepthFirstSearch                                                               100.0%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysBruteForce                                                                       100.0%
