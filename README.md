@@ -447,6 +447,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2707. Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/description/)
 - [2733. Neither Minimum nor Maximum](https://leetcode.com/problems/neither-minimum-nor-maximum/description/)
 - [2769. Find the Maximum Achievable Number](https://leetcode.com/problems/find-the-maximum-achievable-number/description/)
+- [2779. Maximum Beauty of an Array After Applying Operation](https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/description/)
 - [2807. Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/description/)
 - [2810. Faulty Keyboard](https://leetcode.com/problems/faulty-keyboard/description/)
 - [2812. Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/description/)
