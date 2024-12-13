@@ -22,28 +22,33 @@ public class SpiralMatrixSimulation : ISpiralMatrix
     /// <returns></returns>
     public IList<int> SpiralOrder(int[][] matrix)
     {
-        var spiralMatrix = new List<int>(matrix.Length);
-
         var rows = matrix.Length;
-        var cols = matrix[0].Length;
+        var columns = matrix[0].Length;
 
-        var top = 0;
+        var spiralMatrix = new int[rows * columns];
+        var spiralMatrixIndex = 0;
+
         var left = 0;
+        var top = 0;
+        var right = columns - 1;
         var bottom = rows - 1;
-        var right = cols - 1;
 
         while (top <= bottom && left <= right)
         {
             for (var j = left; j <= right; j++)
             {
-                spiralMatrix.Add(matrix[top][j]);
+                spiralMatrix[spiralMatrixIndex] = matrix[top][j];
+
+                spiralMatrixIndex++;
             }
 
             top++;
 
             for (var i = top; i <= bottom; i++)
             {
-                spiralMatrix.Add(matrix[i][right]);
+                spiralMatrix[spiralMatrixIndex] = matrix[i][right];
+
+                spiralMatrixIndex++;
             }
 
             right--;
@@ -52,7 +57,9 @@ public class SpiralMatrixSimulation : ISpiralMatrix
             {
                 for (var j = right; j >= left; j--)
                 {
-                    spiralMatrix.Add(matrix[bottom][j]);
+                    spiralMatrix[spiralMatrixIndex] = matrix[bottom][j];
+
+                    spiralMatrixIndex++;
                 }
 
                 bottom--;
@@ -62,7 +69,9 @@ public class SpiralMatrixSimulation : ISpiralMatrix
             {
                 for (var i = bottom; i >= top; i--)
                 {
-                    spiralMatrix.Add(matrix[i][left]);
+                    spiralMatrix[spiralMatrixIndex] = matrix[i][left];
+
+                    spiralMatrixIndex++;
                 }
 
                 left++;
