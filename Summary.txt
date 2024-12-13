@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/12/2024 - 6:04:59 PM
-  Coverage date: 12/12/2024 - 6:04:04 PM - 12/12/2024 - 6:04:25 PM
+  Generated on: 12/13/2024 - 5:32:43 PM
+  Coverage date: 12/13/2024 - 5:31:29 PM - 12/13/2024 - 5:31:51 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 710
-  Files: 710
+  Classes: 711
+  Files: 711
   Line coverage: 97.5%
-  Covered lines: 14811
+  Covered lines: 14835
   Uncovered lines: 374
-  Coverable lines: 15185
-  Total lines: 38267
-  Branch coverage: 95.3% (5490 of 5758)
-  Covered branches: 5490
-  Total branches: 5758
-  Method coverage: 98.6% (1042 of 1056)
-  Covered methods: 1042
-  Total methods: 1056
+  Coverable lines: 15209
+  Total lines: 38322
+  Branch coverage: 95.3% (5498 of 5766)
+  Covered branches: 5498
+  Total branches: 5766
+  Method coverage: 98.6% (1043 of 1057)
+  Covered methods: 1043
+  Total methods: 1057
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -214,6 +214,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchRecursive                                                  100.0%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchStack                                                      100.0%
   LeetCode.Algorithms.FindPivotIndex.FindPivotIndexIterative                                                                                          100.0%
+  LeetCode.Algorithms.FindScoreOfAnArrayAfterMarkingAllElements.FindScoreOfAnArrayAfterMarkingAllElementsSorting                                      100.0%
   LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayBinarySearch                                                92.5%
   LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayIterative                                                  100.0%
   LeetCode.Algorithms.FindTheClosestPalindrome.FindTheClosestPalindromeIterative                                                                      100.0%
