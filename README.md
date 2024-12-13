@@ -434,6 +434,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2582. Pass the Pillow](https://leetcode.com/problems/pass-the-pillow/description/)
 - [2583. Kth Largest Sum in a Binary Tree](https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/description/)
 - [2591. Distribute Money to Maximum Children](https://leetcode.com/problems/distribute-money-to-maximum-children/description/)
+- [2593. Find Score of an Array After Marking All Elements](https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/description/)
 - [2597. The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/description/)
 - [2601. Prime Subtraction Operation](https://leetcode.com/problems/prime-subtraction-operation/description/)
 - [2641. Cousins in Binary Tree II](https://leetcode.com/problems/cousins-in-binary-tree-ii/description/)
