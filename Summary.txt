@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/13/2024 - 5:32:43 PM
-  Coverage date: 12/13/2024 - 5:31:29 PM - 12/13/2024 - 5:31:51 PM
+  Generated on: 12/13/2024 - 7:09:22 PM
+  Coverage date: 12/13/2024 - 7:08:18 PM - 12/13/2024 - 7:08:39 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 711
-  Files: 711
+  Classes: 712
+  Files: 712
   Line coverage: 97.5%
-  Covered lines: 14835
+  Covered lines: 14879
   Uncovered lines: 374
-  Coverable lines: 15209
-  Total lines: 38322
-  Branch coverage: 95.3% (5498 of 5766)
-  Covered branches: 5498
-  Total branches: 5766
-  Method coverage: 98.6% (1043 of 1057)
-  Covered methods: 1043
-  Total methods: 1057
+  Coverable lines: 15253
+  Total lines: 38405
+  Branch coverage: 95.3% (5514 of 5782)
+  Covered branches: 5514
+  Total branches: 5782
+  Method coverage: 98.6% (1044 of 1058)
+  Covered methods: 1044
+  Total methods: 1058
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -628,6 +628,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SpecialArray2.SpecialArray2PrefixSum                                                                                            100.0%
   LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX.SpecialArrayWithXElementsGreaterThanOrEqualXBruteForce                             100.0%
   LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX.SpecialArrayWithXElementsGreaterThanOrEqualXSorting                                 92.3%
+  LeetCode.Algorithms.SpiralMatrix.SpiralMatrixSimulation                                                                                             100.0%
   LeetCode.Algorithms.SpiralMatrix3.SpiralMatrix3Simulation                                                                                           100.0%
   LeetCode.Algorithms.SpiralMatrix4.SpiralMatrix4Simulation                                                                                           100.0%
   LeetCode.Algorithms.SplitLinkedListInParts.SplitLinkedListInPartsIterative                                                                          100.0%
