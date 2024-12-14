@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/13/2024 - 7:09:22 PM
-  Coverage date: 12/13/2024 - 7:08:18 PM - 12/13/2024 - 7:08:39 PM
+  Generated on: 12/14/2024 - 12:12:49 PM
+  Coverage date: 12/14/2024 - 12:11:42 PM - 12/14/2024 - 12:12:04 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 712
-  Files: 712
+  Classes: 713
+  Files: 713
   Line coverage: 97.5%
-  Covered lines: 14879
-  Uncovered lines: 374
-  Coverable lines: 15253
-  Total lines: 38405
-  Branch coverage: 95.3% (5514 of 5782)
-  Covered branches: 5514
-  Total branches: 5782
-  Method coverage: 98.6% (1044 of 1058)
-  Covered methods: 1044
-  Total methods: 1058
+  Covered lines: 14910
+  Uncovered lines: 376
+  Coverable lines: 15286
+  Total lines: 38478
+  Branch coverage: 95.3% (5522 of 5792)
+  Covered branches: 5522
+  Total branches: 5792
+  Method coverage: 98.6% (1045 of 1059)
+  Covered methods: 1045
+  Total methods: 1059
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -97,6 +97,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ContainsDuplicate3.ContainsDuplicate3BruteForce                                                                                 100.0%
   LeetCode.Algorithms.ContainsDuplicate3.ContainsDuplicate3Dictionary                                                                                 100.0%
   LeetCode.Algorithms.ContiguousArray.ContiguousArrayDictionary                                                                                       100.0%
+  LeetCode.Algorithms.ContinuousSubarrays.ContinuousSubarraysTwoPointers                                                                               93.9%
   LeetCode.Algorithms.ContinuousSubarraySum.ContinuousSubarraySumDictionary                                                                           100.0%
   LeetCode.Algorithms.Convert1DArrayInto2DArray.Convert1DArrayInto2DArraySimulation                                                                   100.0%
   LeetCode.Algorithms.ConvertSortedArrayToBinarySearchTree.ConvertSortedArrayToBinarySearchTreeRecursive                                              100.0%
