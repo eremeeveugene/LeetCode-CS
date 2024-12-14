@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/14/2024 - 12:12:49 PM
-  Coverage date: 12/14/2024 - 12:11:42 PM - 12/14/2024 - 12:12:04 PM
+  Generated on: 12/14/2024 - 4:40:26 PM
+  Coverage date: 12/14/2024 - 4:39:29 PM - 12/14/2024 - 4:39:49 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 713
-  Files: 713
+  Classes: 714
+  Files: 714
   Line coverage: 97.5%
-  Covered lines: 14910
-  Uncovered lines: 376
-  Coverable lines: 15286
-  Total lines: 38478
-  Branch coverage: 95.3% (5522 of 5792)
-  Covered branches: 5522
-  Total branches: 5792
-  Method coverage: 98.6% (1045 of 1059)
-  Covered methods: 1045
-  Total methods: 1059
+  Covered lines: 14933
+  Uncovered lines: 379
+  Coverable lines: 15312
+  Total lines: 38551
+  Branch coverage: 95.3% (5537 of 5809)
+  Covered branches: 5537
+  Total branches: 5809
+  Method coverage: 98.6% (1046 of 1060)
+  Covered methods: 1046
+  Total methods: 1060
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -574,6 +574,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ReverseWordsInString3.ReverseWordsInString3WithCharArray                                                                        100.0%
   LeetCode.Algorithms.ReverseWordsInString3.ReverseWordsInString3WithStringBuilder                                                                    100.0%
   LeetCode.Algorithms.RichestCustomerWealth.RichestCustomerWealthLinq                                                                                 100.0%
+  LeetCode.Algorithms.RobotBoundedInCircle.RobotBoundedInCircleSimulation                                                                              88.4%
   LeetCode.Algorithms.RobotReturnToOrigin.RobotReturnToOriginSimulation                                                                                88.2%
   LeetCode.Algorithms.RomanToInteger.Iterative.RomanNumeral                                                                                            88.4%
   LeetCode.Algorithms.RomanToInteger.Iterative.RomanSymbol                                                                                             37.5%
