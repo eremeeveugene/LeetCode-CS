@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/14/2024 - 4:40:26 PM
-  Coverage date: 12/14/2024 - 4:39:29 PM - 12/14/2024 - 4:39:49 PM
+  Generated on: 12/14/2024 - 6:02:41 PM
+  Coverage date: 12/14/2024 - 6:01:45 PM - 12/14/2024 - 6:02:07 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 714
-  Files: 714
+  Classes: 715
+  Files: 715
   Line coverage: 97.5%
-  Covered lines: 14933
+  Covered lines: 14945
   Uncovered lines: 379
-  Coverable lines: 15312
-  Total lines: 38551
-  Branch coverage: 95.3% (5537 of 5809)
-  Covered branches: 5537
-  Total branches: 5809
-  Method coverage: 98.6% (1046 of 1060)
-  Covered methods: 1046
-  Total methods: 1060
+  Coverable lines: 15324
+  Total lines: 38591
+  Branch coverage: 95.3% (5543 of 5815)
+  Covered branches: 5543
+  Total branches: 5815
+  Method coverage: 98.6% (1047 of 1061)
+  Covered methods: 1047
+  Total methods: 1061
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -626,6 +626,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SortTheJumbledNumbers.SortTheJumbledNumbersSortingArray                                                                         100.0%
   LeetCode.Algorithms.SortTheJumbledNumbers.SortTheJumbledNumbersSortingDictionary                                                                    100.0%
   LeetCode.Algorithms.SortThePeople.SortThePeopleLinq                                                                                                 100.0%
+  LeetCode.Algorithms.SpecialArray.SpecialArrayIterative                                                                                              100.0%
   LeetCode.Algorithms.SpecialArray2.SpecialArray2BruteForce                                                                                           100.0%
   LeetCode.Algorithms.SpecialArray2.SpecialArray2PrefixSum                                                                                            100.0%
   LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX.SpecialArrayWithXElementsGreaterThanOrEqualXBruteForce                             100.0%
