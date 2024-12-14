@@ -270,6 +270,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1009. Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/description/)
 - [1013. Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/description/)
 - [1025. Divisor Game](https://leetcode.com/problems/divisor-game/description/)
+- [1041. Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/description/)
 - [1051. Height Checker](https://leetcode.com/problems/height-checker/description/)
 - [1072. Flip Columns For Maximum Number of Equal Rows](https://leetcode.com/problems/flip-columns-for-maximum-number-of-equal-rows/description/)
 - [1106. Parsing A Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression/description/)
