@@ -357,6 +357,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1760. Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/description/)
 - [1768. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/description/)
 - [1791. Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/description/)
+- [1792. Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/description/)
 - [1813. Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/description/)
 - [1822. Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/description/)
 - [1829. Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/description/)
