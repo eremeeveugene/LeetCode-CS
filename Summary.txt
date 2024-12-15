@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/14/2024 - 6:02:41 PM
-  Coverage date: 12/14/2024 - 6:01:45 PM - 12/14/2024 - 6:02:07 PM
+  Generated on: 12/15/2024 - 7:04:56 PM
+  Coverage date: 12/15/2024 - 7:03:47 PM - 12/15/2024 - 7:04:09 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 715
-  Files: 715
+  Classes: 716
+  Files: 716
   Line coverage: 97.5%
-  Covered lines: 14945
+  Covered lines: 14975
   Uncovered lines: 379
-  Coverable lines: 15324
-  Total lines: 38591
-  Branch coverage: 95.3% (5543 of 5815)
-  Covered branches: 5543
-  Total branches: 5815
-  Method coverage: 98.6% (1047 of 1061)
-  Covered methods: 1047
-  Total methods: 1061
+  Coverable lines: 15354
+  Total lines: 38660
+  Branch coverage: 95.3% (5549 of 5821)
+  Covered branches: 5549
+  Total branches: 5821
+  Method coverage: 98.6% (1049 of 1063)
+  Covered methods: 1049
+  Total methods: 1063
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -351,6 +351,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximizeHappinessOfSelectedChildren.MaximizeHappinessOfSelectedChildrenIterative                                                100.0%
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberIterative                                                                                        100.0%
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberString                                                                                           100.0%
+  LeetCode.Algorithms.MaximumAveragePassRatio.MaximumAveragePassRatioPriorityQueue                                                                    100.0%
   LeetCode.Algorithms.MaximumAverageSubarray1.MaximumAverageSubarray1SlidingWindow                                                                    100.0%
   LeetCode.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation.MaximumBeautyOfAnArrayAfterApplyingOperationDifferenceArray                         90.0%
   LeetCode.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation.MaximumBeautyOfAnArrayAfterApplyingOperationLineSweep                               90.4%
