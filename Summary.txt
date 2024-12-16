@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/15/2024 - 7:04:56 PM
-  Coverage date: 12/15/2024 - 7:03:47 PM - 12/15/2024 - 7:04:09 PM
+  Generated on: 12/16/2024 - 12:40:07 PM
+  Coverage date: 12/16/2024 - 12:39:02 PM - 12/16/2024 - 12:39:24 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 716
-  Files: 716
+  Classes: 718
+  Files: 718
   Line coverage: 97.5%
-  Covered lines: 14975
+  Covered lines: 15011
   Uncovered lines: 379
-  Coverable lines: 15354
-  Total lines: 38660
-  Branch coverage: 95.3% (5549 of 5821)
-  Covered branches: 5549
-  Total branches: 5821
-  Method coverage: 98.6% (1049 of 1063)
-  Covered methods: 1049
-  Total methods: 1063
+  Coverable lines: 15390
+  Total lines: 38760
+  Branch coverage: 95.3% (5561 of 5833)
+  Covered branches: 5561
+  Total branches: 5833
+  Method coverage: 98.6% (1051 of 1065)
+  Covered methods: 1051
+  Total methods: 1065
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -184,6 +184,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FaultyKeyboard.FaultyKeyboardStringBuilder                                                                                      100.0%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberIterative                                                                                        100.0%
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberMatrixExponentiation                                                                             100.0%
+  LeetCode.Algorithms.FinalArrayStateAfterKMultiplicationOperations.FinalArrayStateAfterKMultiplicationOperationsGreedy                               100.0%
+  LeetCode.Algorithms.FinalArrayStateAfterKMultiplicationOperations.FinalArrayStateAfterKMultiplicationOperationsPriorityQueue                        100.0%
   LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsContains                             100.0%
   LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsDictionary                           100.0%
   LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsIterative                            100.0%
