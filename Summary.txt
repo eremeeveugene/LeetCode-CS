@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/16/2024 - 12:40:07 PM
-  Coverage date: 12/16/2024 - 12:39:02 PM - 12/16/2024 - 12:39:24 PM
+  Generated on: 12/17/2024 - 4:49:11 PM
+  Coverage date: 12/17/2024 - 4:47:24 PM - 12/17/2024 - 4:48:25 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 718
-  Files: 718
+  Classes: 720
+  Files: 720
   Line coverage: 97.5%
-  Covered lines: 15011
+  Covered lines: 15083
   Uncovered lines: 379
-  Coverable lines: 15390
-  Total lines: 38760
-  Branch coverage: 95.3% (5561 of 5833)
-  Covered branches: 5561
-  Total branches: 5833
-  Method coverage: 98.6% (1051 of 1065)
-  Covered methods: 1051
-  Total methods: 1065
+  Coverable lines: 15462
+  Total lines: 38921
+  Branch coverage: 95.3% (5595 of 5867)
+  Covered branches: 5595
+  Total branches: 5867
+  Method coverage: 98.6% (1053 of 1067)
+  Covered methods: 1053
+  Total methods: 1067
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -92,6 +92,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ComplementOfBase10Integer.ComplementOfBase10IntegerBitwise                                                                      100.0%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayConcat                                                                                 100.0%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayIterative                                                                              100.0%
+  LeetCode.Algorithms.ConstructStringWithRepeatLimit.ConstructStringWithRepeatLimitGreedy                                                             100.0%
+  LeetCode.Algorithms.ConstructStringWithRepeatLimit.ConstructStringWithRepeatLimitPriorityQueue                                                      100.0%
   LeetCode.Algorithms.ContainsDuplicate.ContainsDuplicateHashSet                                                                                      100.0%
   LeetCode.Algorithms.ContainsDuplicate2.ContainsDuplicate2Dictionary                                                                                 100.0%
   LeetCode.Algorithms.ContainsDuplicate3.ContainsDuplicate3BruteForce                                                                                 100.0%
