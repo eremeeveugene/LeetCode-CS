@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/18/2024 - 1:37:12 PM
-  Coverage date: 12/18/2024 - 1:36:14 PM - 12/18/2024 - 1:36:36 PM
+  Generated on: 12/18/2024 - 3:41:25 PM
+  Coverage date: 12/18/2024 - 3:40:16 PM - 12/18/2024 - 3:40:38 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 722
-  Files: 722
+  Classes: 724
+  Files: 724
   Line coverage: 97.5%
-  Covered lines: 15108
+  Covered lines: 15158
   Uncovered lines: 379
-  Coverable lines: 15487
-  Total lines: 39002
-  Branch coverage: 95.3% (5607 of 5879)
-  Covered branches: 5607
-  Total branches: 5879
-  Method coverage: 98.6% (1055 of 1069)
-  Covered methods: 1055
-  Total methods: 1069
+  Coverable lines: 15537
+  Total lines: 39119
+  Branch coverage: 95.3% (5619 of 5891)
+  Covered branches: 5619
+  Total branches: 5891
+  Method coverage: 98.6% (1057 of 1071)
+  Covered methods: 1057
+  Total methods: 1071
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -692,6 +692,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ToLowerCase.ToLowerCaseBuiltIn                                                                                                  100.0%
   LeetCode.Algorithms.ToLowerCase.ToLowerCaseStringBuilder                                                                                            100.0%
   LeetCode.Algorithms.TrappingRainWater.TrappingRainWaterIterative                                                                                    100.0%
+  LeetCode.Algorithms.TwoBestNonOverlappingEvents.TwoBestNonOverlappingEventsBinarySearch                                                             100.0%
+  LeetCode.Algorithms.TwoBestNonOverlappingEvents.TwoBestNonOverlappingEventsPriorityQueue                                                            100.0%
   LeetCode.Algorithms.TwoKeysKeyboard.TwoKeysKeyboardPrimeFactorization                                                                               100.0%
   LeetCode.Algorithms.TwoKeysKeyboard.TwoKeysKeyboardSimulation                                                                                       100.0%
   LeetCode.Algorithms.TwoSum.TwoSumBruteForce                                                                                                          91.6%
