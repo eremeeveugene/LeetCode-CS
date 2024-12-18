@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/17/2024 - 4:49:11 PM
-  Coverage date: 12/17/2024 - 4:47:24 PM - 12/17/2024 - 4:48:25 PM
+  Generated on: 12/18/2024 - 1:37:12 PM
+  Coverage date: 12/18/2024 - 1:36:14 PM - 12/18/2024 - 1:36:36 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 720
-  Files: 720
+  Classes: 722
+  Files: 722
   Line coverage: 97.5%
-  Covered lines: 15083
+  Covered lines: 15108
   Uncovered lines: 379
-  Coverable lines: 15462
-  Total lines: 38921
-  Branch coverage: 95.3% (5595 of 5867)
-  Covered branches: 5595
-  Total branches: 5867
-  Method coverage: 98.6% (1053 of 1067)
-  Covered methods: 1053
-  Total methods: 1067
+  Coverable lines: 15487
+  Total lines: 39002
+  Branch coverage: 95.3% (5607 of 5879)
+  Covered branches: 5607
+  Total branches: 5879
+  Method coverage: 98.6% (1055 of 1069)
+  Covered methods: 1055
+  Total methods: 1069
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -188,6 +188,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FibonacciNumber.FibonacciNumberMatrixExponentiation                                                                             100.0%
   LeetCode.Algorithms.FinalArrayStateAfterKMultiplicationOperations.FinalArrayStateAfterKMultiplicationOperationsGreedy                               100.0%
   LeetCode.Algorithms.FinalArrayStateAfterKMultiplicationOperations.FinalArrayStateAfterKMultiplicationOperationsPriorityQueue                        100.0%
+  LeetCode.Algorithms.FinalPricesWithSpecialDiscountInShop.FinalPricesWithSpecialDiscountInShopBruteForce                                             100.0%
+  LeetCode.Algorithms.FinalPricesWithSpecialDiscountInShop.FinalPricesWithSpecialDiscountInShopStack                                                  100.0%
   LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsContains                             100.0%
   LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsDictionary                           100.0%
   LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations.FinalValueOfVariableAfterPerformingOperationsIterative                            100.0%
