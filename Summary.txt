@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/18/2024 - 3:41:25 PM
-  Coverage date: 12/18/2024 - 3:40:16 PM - 12/18/2024 - 3:40:38 PM
+  Generated on: 12/20/2024 - 12:51:11 PM
+  Coverage date: 12/20/2024 - 12:50:03 PM - 12/20/2024 - 12:50:25 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 724
-  Files: 724
+  Classes: 725
+  Files: 725
   Line coverage: 97.5%
-  Covered lines: 15158
+  Covered lines: 15171
   Uncovered lines: 379
-  Coverable lines: 15537
-  Total lines: 39119
-  Branch coverage: 95.3% (5619 of 5891)
-  Covered branches: 5619
-  Total branches: 5891
-  Method coverage: 98.6% (1057 of 1071)
-  Covered methods: 1057
-  Total methods: 1071
+  Coverable lines: 15550
+  Total lines: 39159
+  Branch coverage: 95.3% (5623 of 5895)
+  Covered branches: 5623
+  Total branches: 5895
+  Method coverage: 98.6% (1058 of 1072)
+  Covered methods: 1058
+  Total methods: 1072
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                    100.0%
@@ -352,6 +352,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MakeTwoArraysEqualByReversingSubarrays.MakeTwoArraysEqualByReversingSubarraysDictionary                                          78.2%
   LeetCode.Algorithms.MakeTwoArraysEqualByReversingSubarrays.MakeTwoArraysEqualByReversingSubarraysSorting                                            100.0%
   LeetCode.Algorithms.MatrixDiagonalSum.MatrixDiagonalSumIterative                                                                                    100.0%
+  LeetCode.Algorithms.MaxChunksToMakeSorted.MaxChunksToMakeSortedIterative                                                                            100.0%
   LeetCode.Algorithms.MaximalRectangle.MaximalRectangleStack                                                                                          100.0%
   LeetCode.Algorithms.MaximalScoreAfterApplyingKOperations.MaximalScoreAfterApplyingKOperationsPriorityQueue                                          100.0%
   LeetCode.Algorithms.MaximizeHappinessOfSelectedChildren.MaximizeHappinessOfSelectedChildrenIterative                                                100.0%
