@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/22/2024 - 11:53:37 AM
-  Coverage date: 12/22/2024 - 11:52:30 AM - 12/22/2024 - 11:52:51 AM
+  Generated on: 12/22/2024 - 4:29:03 PM
+  Coverage date: 12/22/2024 - 4:27:55 PM - 12/22/2024 - 4:28:17 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 726
-  Files: 726
+  Classes: 727
+  Files: 727
   Line coverage: 97.5%
-  Covered lines: 15188
+  Covered lines: 15224
   Uncovered lines: 379
-  Coverable lines: 15567
-  Total lines: 39205
-  Branch coverage: 95.3% (5630 of 5903)
-  Covered branches: 5630
-  Total branches: 5903
-  Method coverage: 98.6% (1059 of 1073)
-  Covered methods: 1059
-  Total methods: 1073
+  Coverable lines: 15603
+  Total lines: 39282
+  Branch coverage: 95.3% (5642 of 5915)
+  Covered branches: 5642
+  Total branches: 5915
+  Method coverage: 98.6% (1061 of 1075)
+  Covered methods: 1061
+  Total methods: 1075
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -369,6 +369,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysGreedy                                                                             100%
   LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses.MaximumNestingDepthOfTheParenthesesIterative                                                  100%
   LeetCode.Algorithms.MaximumNumberOfIntegersToChooseFromRange1.MaximumNumberOfIntegersToChooseFromRange1HashSet                                        100%
+  LeetCode.Algorithms.MaximumNumberOfKDivisibleComponents.MaximumNumberOfKDivisibleComponentsDepthFirstSearch                                           100%
   LeetCode.Algorithms.MaximumNumberOfMovesInGrid.MaximumNumberOfMovesInGridDynamicProgramming                                                           100%
   LeetCode.Algorithms.MaximumNumberOfPointsWithCost.MaximumNumberOfPointsWithCostDynamicProgramming                                                     100%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinq                                                     100%
