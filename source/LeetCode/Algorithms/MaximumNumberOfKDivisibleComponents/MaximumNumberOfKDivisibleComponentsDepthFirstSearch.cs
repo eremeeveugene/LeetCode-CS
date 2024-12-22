@@ -15,8 +15,8 @@ namespace LeetCode.Algorithms.MaximumNumberOfKDivisibleComponents;
 public class MaximumNumberOfKDivisibleComponentsDepthFirstSearch : IMaximumNumberOfKDivisibleComponents
 {
     /// <summary>
-    ///     Time complexity - O(n * m)
-    ///     Space complexity - O(n * m)
+    ///     Time complexity - O(n + m)
+    ///     Space complexity - O(n + m)
     /// </summary>
     /// <param name="n"></param>
     /// <param name="edges"></param>
