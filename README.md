@@ -425,6 +425,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2446. Determine if Two Events Have Conflict](https://leetcode.com/problems/determine-if-two-events-have-conflict/description/)
 - [2461. Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/)
 - [2469. Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/description/)
+- [2471. Minimum Number of Operations to Sort a Binary Tree by Level](https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/description/)
 - [2485. Find the Pivot Integer](https://leetcode.com/problems/find-the-pivot-integer/description/)
 - [2486. Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/description/)
 - [2487. Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/description/)
