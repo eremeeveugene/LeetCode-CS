@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/22/2024 - 4:29:03 PM
-  Coverage date: 12/22/2024 - 4:27:55 PM - 12/22/2024 - 4:28:17 PM
+  Generated on: 12/23/2024 - 5:30:47 PM
+  Coverage date: 12/23/2024 - 5:29:41 PM - 12/23/2024 - 5:30:02 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 727
-  Files: 727
+  Classes: 728
+  Files: 728
   Line coverage: 97.5%
-  Covered lines: 15224
+  Covered lines: 15275
   Uncovered lines: 379
-  Coverable lines: 15603
-  Total lines: 39282
-  Branch coverage: 95.3% (5642 of 5915)
-  Covered branches: 5642
-  Total branches: 5915
-  Method coverage: 98.6% (1061 of 1075)
-  Covered methods: 1061
-  Total methods: 1075
+  Coverable lines: 15654
+  Total lines: 39376
+  Branch coverage: 95.4% (5662 of 5935)
+  Covered branches: 5662
+  Total branches: 5935
+  Method coverage: 98.6% (1062 of 1076)
+  Covered methods: 1062
+  Total methods: 1076
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -426,6 +426,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone.MinimumNumberOfMovesToSeatEveryoneSorting                                                      100%
   LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK.MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeBits                      100%
   LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK.MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeString                    100%
+  LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel.MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch               100%
   LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced.MinimumNumberOfSwapsToMakeTheStringBalancedIterative                                  100%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStack                                                      100%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStringBuilder                                              100%
