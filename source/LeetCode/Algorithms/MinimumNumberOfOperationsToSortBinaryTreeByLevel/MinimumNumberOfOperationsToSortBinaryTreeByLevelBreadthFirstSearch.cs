@@ -14,7 +14,8 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel;
 
 /// <inheritdoc />
-public class MinimumNumberOfOperationsToSortBinaryTreeByLevelQueue : IMinimumNumberOfOperationsToSortBinaryTreeByLevel
+public class MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch :
+    IMinimumNumberOfOperationsToSortBinaryTreeByLevel
 {
     /// <summary>
     ///     Time complexity - O(n log n)
