@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/24/2024 - 2:39:53 PM
-  Coverage date: 12/24/2024 - 2:38:47 PM - 12/24/2024 - 2:39:09 PM
+  Generated on: 12/24/2024 - 5:25:50 PM
+  Coverage date: 12/24/2024 - 5:24:45 PM - 12/24/2024 - 5:25:07 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 729
-  Files: 729
+  Classes: 732
+  Files: 732
   Line coverage: 97.5%
-  Covered lines: 15318
+  Covered lines: 15351
   Uncovered lines: 379
-  Coverable lines: 15697
-  Total lines: 39460
-  Branch coverage: 95.4% (5674 of 5947)
-  Covered branches: 5674
-  Total branches: 5947
-  Method coverage: 98.7% (1065 of 1079)
-  Covered methods: 1065
-  Total methods: 1079
+  Coverable lines: 15730
+  Total lines: 39564
+  Branch coverage: 95.4% (5684 of 5957)
+  Covered branches: 5684
+  Total branches: 5957
+  Method coverage: 98.7% (1070 of 1084)
+  Covered methods: 1070
+  Total methods: 1084
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -149,7 +149,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArray                                                                                  100%
   LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArrayFactory                                                                           100%
   LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedList                                                                                62.3%
-  LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedListFactory                                                                          100%
+  LeetCode.Algorithms.DesignCircularDeque.GuessNumberHigherOrLowerFactory                                                                               100%
   LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedList                                                                                88.8%
   LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedListFactory                                                                          100%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueLinkedList                                                                  73.8%
@@ -267,6 +267,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.GetEqualSubstringsWithinBudget.GetEqualSubstringsWithinBudgetSlidingWindow                                                        100%
   LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationReplace                                                                          100%
   LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationStringBuilder                                                                    100%
+  LeetCode.Algorithms.GuessNumberHigherOrLower.GuessNumberHigherOrLower                                                                                 100%
+  LeetCode.Algorithms.GuessNumberHigherOrLower.GuessNumberHigherOrLowerBinarySearch                                                                     100%
+  LeetCode.Algorithms.GuessNumberHigherOrLower.GuessNumberHigherOrLowerBinarySearchFactory                                                              100%
   LeetCode.Algorithms.HandOfStraights.HandOfStraightsDictionary                                                                                         100%
   LeetCode.Algorithms.HandOfStraights.HandOfStraightsSortedDictionary                                                                                   100%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetChars                                                                                               100%
