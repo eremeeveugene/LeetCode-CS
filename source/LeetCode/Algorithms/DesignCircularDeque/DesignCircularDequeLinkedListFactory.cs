@@ -11,7 +11,7 @@
 
 namespace LeetCode.Algorithms.DesignCircularDeque;
 
-public class DesignCircularDequeLinkedListFactory : IDesignCircularDequeFactory
+public class GuessNumberHigherOrLowerFactory : IDesignCircularDequeFactory
 {
     public IDesignCircularDeque Create(int k)
     {
