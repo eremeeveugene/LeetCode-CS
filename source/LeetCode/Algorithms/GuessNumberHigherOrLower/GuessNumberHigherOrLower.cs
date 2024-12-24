@@ -9,9 +9,25 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.DesignCircularDeque;
+namespace LeetCode.Algorithms.GuessNumberHigherOrLower;
 
-namespace LeetCode.Tests.Algorithms.DesignCircularDeque;
+public abstract class GuessNumberHigherOrLower(int pickedNumber) : IGuessNumberHigherOrLower
+{
+    public abstract int GuessNumber(int n);
 
-[TestClass]
-public class DesignCircularDequeLinkedListTests : DesignCircularDequeTestsBase<GuessNumberHigherOrLowerFactory>;
+    // ReSharper disable once InconsistentNaming
+    public int guess(int num)
+    {
+        if (num == pickedNumber)
+        {
+            return 0;
+        }
+
+        if (num < pickedNumber)
+        {
+            return 1;
+        }
+
+        return -1;
+    }
+}
