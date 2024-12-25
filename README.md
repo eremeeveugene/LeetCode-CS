@@ -186,6 +186,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/)
 - [513. Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/description/)
 - [514. Freedom Trail](https://leetcode.com/problems/freedom-trail/description/)
+- [515. Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/)
 - [523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/description/)
 - [525. Contiguous Array](https://leetcode.com/problems/contiguous-array/description/)
 - [530. Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/)
