@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindLongestSpecialSubstringThatOccursThrice1;
 namespace LeetCode.Tests.Algorithms.FindLongestSpecialSubstringThatOccursThrice1;
 
 [TestClass]
-public class FindLongestSpecialSubstringThatOccursThriceDictionaryTests :
-    FindLongestSpecialSubstringThatOccursThrice1TestsBase<FindLongestSpecialSubstringThatOccursThriceDictionary>;
+public class FindLongestSpecialSubstringThatOccursThrice1DictionaryTests :
+    FindLongestSpecialSubstringThatOccursThrice1TestsBase<FindLongestSpecialSubstringThatOccursThrice1Dictionary>;
