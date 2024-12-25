@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/25/2024 - 10:39:24 AM
-  Coverage date: 12/25/2024 - 10:38:19 AM - 12/25/2024 - 10:38:41 AM
+  Generated on: 12/25/2024 - 8:13:27 PM
+  Coverage date: 12/25/2024 - 8:12:20 PM - 12/25/2024 - 8:12:41 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 733
-  Files: 733
-  Line coverage: 97.5%
-  Covered lines: 15379
+  Classes: 736
+  Files: 736
+  Line coverage: 97.6%
+  Covered lines: 15432
   Uncovered lines: 379
-  Coverable lines: 15758
-  Total lines: 39622
-  Branch coverage: 95.4% (5694 of 5967)
-  Covered branches: 5694
-  Total branches: 5967
-  Method coverage: 98.7% (1071 of 1085)
-  Covered methods: 1071
-  Total methods: 1085
+  Coverable lines: 15811
+  Total lines: 39783
+  Branch coverage: 95.4% (5714 of 5987)
+  Covered branches: 5714
+  Total branches: 5987
+  Method coverage: 98.7% (1074 of 1088)
+  Covered methods: 1074
+  Total methods: 1088
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -370,6 +370,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation.MaximumBeautyOfAnArrayAfterApplyingOperationLineSweep                               90.4%
   LeetCode.Algorithms.MaximumDepthOfBinaryTree.MaximumDepthOfBinaryTreeBreadthFirstSearch                                                               100%
   LeetCode.Algorithms.MaximumDepthOfBinaryTree.MaximumDepthOfBinaryTreeDepthFirstSearch                                                                 100%
+  LeetCode.Algorithms.MaximumDepthOfNaryTree.MaximumDepthOfNaryTreeBreadthFirstSearch                                                                   100%
+  LeetCode.Algorithms.MaximumDepthOfNaryTree.MaximumDepthOfNaryTreeDepthFirstSearchRecursive                                                            100%
+  LeetCode.Algorithms.MaximumDepthOfNaryTree.MaximumDepthOfNaryTreeDepthFirstSearchStack                                                                100%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysBruteForce                                                                         100%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysGreedy                                                                             100%
   LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses.MaximumNestingDepthOfTheParenthesesIterative                                                  100%
