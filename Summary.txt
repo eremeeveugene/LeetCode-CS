@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/24/2024 - 5:25:50 PM
-  Coverage date: 12/24/2024 - 5:24:45 PM - 12/24/2024 - 5:25:07 PM
+  Generated on: 12/25/2024 - 10:39:24 AM
+  Coverage date: 12/25/2024 - 10:38:19 AM - 12/25/2024 - 10:38:41 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 732
-  Files: 732
+  Classes: 733
+  Files: 733
   Line coverage: 97.5%
-  Covered lines: 15351
+  Covered lines: 15379
   Uncovered lines: 379
-  Coverable lines: 15730
-  Total lines: 39564
-  Branch coverage: 95.4% (5684 of 5957)
-  Covered branches: 5684
-  Total branches: 5957
-  Method coverage: 98.7% (1070 of 1084)
-  Covered methods: 1070
-  Total methods: 1084
+  Coverable lines: 15758
+  Total lines: 39622
+  Branch coverage: 95.4% (5694 of 5967)
+  Covered branches: 5694
+  Total branches: 5967
+  Method coverage: 98.7% (1071 of 1085)
+  Covered methods: 1071
+  Total methods: 1085
 
-LeetCode                                                                                                                                               97.7%
+LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                    100%
@@ -215,7 +215,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindKthBitInNthBinaryString.FindKthBitInNthBinaryStringBruteForce                                                                 100%
   LeetCode.Algorithms.FindKthBitInNthBinaryString.FindKthBitInNthBinaryStringRecursive                                                                 87.5%
   LeetCode.Algorithms.FindKthSmallestPairDistance.FindKthSmallestPairDistanceBinarySearchWithSlidingWindow                                              100%
-  LeetCode.Algorithms.FindLongestSpecialSubstringThatOccursThrice1.FindLongestSpecialSubstringThatOccursThriceDictionary                                100%
+  LeetCode.Algorithms.FindLargestValueInEachTreeRow.FindLargestValueInEachTreeRowBreadthFirstSearch                                                     100%
+  LeetCode.Algorithms.FindLongestSpecialSubstringThatOccursThrice1.FindLongestSpecialSubstringThatOccursThrice1Dictionary                               100%
   LeetCode.Algorithms.FindMinimumDiameterAfterMergingTwoTrees.FindMinimumDiameterAfterMergingTwoTreesDepthFirstSearch                                   100%
   LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree.FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterative            100%
   LeetCode.Algorithms.FindMissingObservations.FindMissingObservationsMath                                                                               100%
