@@ -194,6 +194,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [541. Reverse String II](https://leetcode.com/problems/reverse-string-ii/description/)
 - [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/)
 - [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/)
+- [559. Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/)
 - [561. Array Partition](https://leetcode.com/problems/array-partition/description/)
 - [564. Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome/description/)
 - [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
