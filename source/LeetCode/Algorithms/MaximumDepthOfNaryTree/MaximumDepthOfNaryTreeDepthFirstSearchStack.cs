@@ -11,54 +11,47 @@
 
 using LeetCode.Core.Models;
 
-namespace LeetCode.Algorithms.FindLargestValueInEachTreeRow;
+namespace LeetCode.Algorithms.MaximumDepthOfNaryTree;
 
 /// <inheritdoc />
-public class FindLargestValueInEachTreeRowBreadthFirstSearch : IFindLargestValueInEachTreeRow
+public class MaximumDepthOfNaryTreeDepthFirstSearchStack : IMaximumDepthOfNaryTree
 {
     /// <summary>
     ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
+    ///     Space complexity - O(h), where h is the height of the tree
     /// </summary>
     /// <param name="root"></param>
     /// <returns></returns>
-    public IList<int> LargestValues(TreeNode? root)
+    public int MaxDepth(Node? root)
     {
         if (root == null)
         {
-            return [];
+            return 0;
         }
 
-        var result = new List<int>();
+        var maxDepth = 0;
 
-        var queue = new Queue<TreeNode>();
-        queue.Enqueue(root);
+        var stack = new Stack<(Node Node, int Depth)>();
 
-        while (queue.Count > 0)
+        stack.Push((root, 1));
+
+        while (stack.Count > 0)
         {
-            var maxValue = int.MinValue;
-            var levelSize = queue.Count;
+            var (node, depth) = stack.Pop();
 
-            for (var i = 0; i < levelSize; i++)
+            maxDepth = Math.Max(maxDepth, depth);
+
+            if (node.children == null)
             {
-                var node = queue.Dequeue();
-
-                maxValue = Math.Max(maxValue, node.val);
-
-                if (node.left != null)
-                {
-                    queue.Enqueue(node.left);
-                }
-
-                if (node.right != null)
-                {
-                    queue.Enqueue(node.right);
-                }
+                continue;
             }
 
-            result.Add(maxValue);
+            foreach (var childNode in node.children)
+            {
+                stack.Push((childNode, depth + 1));
+            }
         }
 
-        return result;
+        return maxDepth;
     }
 }

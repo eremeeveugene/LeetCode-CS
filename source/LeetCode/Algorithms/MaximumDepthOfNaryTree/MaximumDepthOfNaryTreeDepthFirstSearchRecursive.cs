@@ -11,54 +11,31 @@
 
 using LeetCode.Core.Models;
 
-namespace LeetCode.Algorithms.FindLargestValueInEachTreeRow;
+namespace LeetCode.Algorithms.MaximumDepthOfNaryTree;
 
 /// <inheritdoc />
-public class FindLargestValueInEachTreeRowBreadthFirstSearch : IFindLargestValueInEachTreeRow
+public class MaximumDepthOfNaryTreeDepthFirstSearchRecursive : IMaximumDepthOfNaryTree
 {
     /// <summary>
     ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
+    ///     Space complexity - O(h), where h is the height of the tree
     /// </summary>
     /// <param name="root"></param>
     /// <returns></returns>
-    public IList<int> LargestValues(TreeNode? root)
+    public int MaxDepth(Node? root)
     {
         if (root == null)
         {
-            return [];
+            return 0;
         }
 
-        var result = new List<int>();
+        var maxChildDepth = 0;
 
-        var queue = new Queue<TreeNode>();
-        queue.Enqueue(root);
-
-        while (queue.Count > 0)
+        if (root.children != null)
         {
-            var maxValue = int.MinValue;
-            var levelSize = queue.Count;
-
-            for (var i = 0; i < levelSize; i++)
-            {
-                var node = queue.Dequeue();
-
-                maxValue = Math.Max(maxValue, node.val);
-
-                if (node.left != null)
-                {
-                    queue.Enqueue(node.left);
-                }
-
-                if (node.right != null)
-                {
-                    queue.Enqueue(node.right);
-                }
-            }
-
-            result.Add(maxValue);
+            maxChildDepth = root.children.Select(MaxDepth).Prepend(maxChildDepth).Max();
         }
 
-        return result;
+        return maxChildDepth + 1;
     }
 }
