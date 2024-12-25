@@ -29,6 +29,13 @@ public class MaximumDepthOfNaryTreeDepthFirstSearchRecursive : IMaximumDepthOfNa
             return 0;
         }
 
-        return root.children == null ? 1 : root.children.Select(MaxDepth).Max();
+        var maxChildDepth = 0;
+
+        if (root.children != null)
+        {
+            maxChildDepth = root.children.Select(MaxDepth).Prepend(maxChildDepth).Max();
+        }
+
+        return maxChildDepth + 1;
     }
 }
