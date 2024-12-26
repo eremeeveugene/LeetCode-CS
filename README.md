@@ -180,6 +180,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [463. Island Perimeter](https://leetcode.com/problems/island-perimeter/description/)
 - [464. Can I Win](https://leetcode.com/problems/can-i-win/description/)
 - [476. Number Complement](https://leetcode.com/problems/number-complement/description/)
+- [494. Target Sum](https://leetcode.com/problems/target-sum/description/)
 - [496. Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/)
 - [501. Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/description/)
 - [506. Relative Ranks](https://leetcode.com/problems/relative-ranks/description/)
