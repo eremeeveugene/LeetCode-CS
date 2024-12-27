@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/26/2024 - 5:59:44 PM
-  Coverage date: 12/26/2024 - 5:58:38 PM - 12/26/2024 - 5:59:00 PM
+  Generated on: 12/27/2024 - 12:11:46 PM
+  Coverage date: 12/27/2024 - 12:10:37 PM - 12/27/2024 - 12:10:59 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 737
-  Files: 737
+  Classes: 739
+  Files: 739
   Line coverage: 97.6%
-  Covered lines: 15466
+  Covered lines: 15487
   Uncovered lines: 379
-  Coverable lines: 15845
-  Total lines: 39855
-  Branch coverage: 95.4% (5724 of 5997)
-  Covered branches: 5724
-  Total branches: 5997
-  Method coverage: 98.7% (1077 of 1091)
-  Covered methods: 1077
-  Total methods: 1091
+  Coverable lines: 15866
+  Total lines: 39929
+  Branch coverage: 95.4% (5730 of 6003)
+  Covered branches: 5730
+  Total branches: 6003
+  Method coverage: 98.7% (1079 of 1093)
+  Covered methods: 1079
+  Total methods: 1093
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -47,6 +47,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.BagOfTokens.BagOfTokensTwoPointers                                                                                                100%
   LeetCode.Algorithms.BalancedBinaryTree.BalancedBinaryTreeDepthFirstSearch                                                                             100%
   LeetCode.Algorithms.BaseballGame.BaseballGameIterative                                                                                                100%
+  LeetCode.Algorithms.BestSightseeingPair.BestSightseeingPairBruteForce                                                                                 100%
+  LeetCode.Algorithms.BestSightseeingPair.BestSightseeingPairGreedy                                                                                     100%
   LeetCode.Algorithms.BestTimeToBuyAndSellStock.BestTimeToBuyAndSellStockDynamicProgramming                                                             100%
   LeetCode.Algorithms.BinarySearch.BinarySearchExact                                                                                                    100%
   LeetCode.Algorithms.BinarySearch.BinarySearchLowerBound                                                                                               100%
