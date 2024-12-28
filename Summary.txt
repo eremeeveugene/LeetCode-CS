@@ -1,21 +1,21 @@
 Summary
-  Generated on: 12/27/2024 - 12:11:46 PM
-  Coverage date: 12/27/2024 - 12:10:37 PM - 12/27/2024 - 12:10:59 PM
+  Generated on: 12/28/2024 - 11:54:57 AM
+  Coverage date: 12/28/2024 - 11:53:50 AM - 12/28/2024 - 11:54:11 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 739
-  Files: 739
+  Classes: 740
+  Files: 740
   Line coverage: 97.6%
-  Covered lines: 15487
+  Covered lines: 15502
   Uncovered lines: 379
-  Coverable lines: 15866
-  Total lines: 39929
-  Branch coverage: 95.4% (5730 of 6003)
-  Covered branches: 5730
-  Total branches: 6003
-  Method coverage: 98.7% (1079 of 1093)
-  Covered methods: 1079
-  Total methods: 1093
+  Coverable lines: 15881
+  Total lines: 39973
+  Branch coverage: 95.4% (5736 of 6009)
+  Covered branches: 5736
+  Total branches: 6009
+  Method coverage: 98.7% (1080 of 1094)
+  Covered methods: 1080
+  Total methods: 1094
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -43,6 +43,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ArrangingCoins.ArrangingCoinsIterative                                                                                            100%
   LeetCode.Algorithms.ArrangingCoins.ArrangingCoinsMath                                                                                                 100%
   LeetCode.Algorithms.ArrayPartition.ArrayPartitionSorting                                                                                              100%
+  LeetCode.Algorithms.AssignCookies.AssignCookiesSorting                                                                                                100%
   LeetCode.Algorithms.AverageSalaryExcludingTheMinimumAndMaximumSalary.AverageSalaryExcludingTheMinimumAndMaximumSalaryIterative                        100%
   LeetCode.Algorithms.BagOfTokens.BagOfTokensTwoPointers                                                                                                100%
   LeetCode.Algorithms.BalancedBinaryTree.BalancedBinaryTreeDepthFirstSearch                                                                             100%
