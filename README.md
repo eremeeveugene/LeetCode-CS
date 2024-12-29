@@ -371,6 +371,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1829. Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/description/)
 - [1832. Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/description/)
 - [1859. Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/description/)
+- [1861. Rotating the Box](https://leetcode.com/problems/rotating-the-box/description/)
 - [1863. Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/description/)
 - [1894. Find the Student that Will Replace the Chalk](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/description/)
 - [1905. Count Sub Islands](https://leetcode.com/problems/count-sub-islands/description/)
