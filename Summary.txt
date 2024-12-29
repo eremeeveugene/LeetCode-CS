@@ -1,21 +1,23 @@
 Summary
-  Generated on: 12/28/2024 - 11:54:57 AM
-  Coverage date: 12/28/2024 - 11:53:50 AM - 12/28/2024 - 11:54:11 AM
+  Generated on: 12/29/2024 - 12:55:03 PM
+  Coverage date: 12/29/2024 - 12:53:21 PM - 12/29/2024 - 12:54:18 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 740
-  Files: 740
+  Classes: 741
+  Files: 741
   Line coverage: 97.6%
-  Covered lines: 15502
+  Covered lines: 15533
   Uncovered lines: 379
-  Coverable lines: 15881
-  Total lines: 39973
-  Branch coverage: 95.4% (5736 of 6009)
-  Covered branches: 5736
-  Total branches: 6009
-  Method coverage: 98.7% (1080 of 1094)
-  Covered methods: 1080
-  Total methods: 1094
+  Coverable lines: 15912
+  Total lines: 40038
+  Branch coverage: 95.4% (5750 of 6023)
+  Covered branches: 5750
+  Total branches: 6023
+  Method coverage: 98.7% (1081 of 1095)
+  Full method coverage: 20.5% (225 of 1095)
+  Covered methods: 1081
+  Fully covered methods: 225
+  Total methods: 1095
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -606,6 +608,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RootEqualsSumOfChildren.RootEqualsSumOfChildrenLinear                                                                             100%
   LeetCode.Algorithms.RotateString.RotateStringBruteForce                                                                                               100%
   LeetCode.Algorithms.RotateString.RotateStringConcatenation                                                                                            100%
+  LeetCode.Algorithms.RotatingTheBox.RotatingTheBoxMatrix                                                                                               100%
   LeetCode.Algorithms.RunningSumOf1dArray.RunningSumOf1dArrayIterative                                                                                   80%
   LeetCode.Algorithms.SameTree.SameTreeRecursive                                                                                                        100%
   LeetCode.Algorithms.ScoreAfterFlippingMatrix.ScoreAfterFlippingMatrixIterative                                                                        100%
