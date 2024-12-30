@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/29/2024 - 12:55:03 PM
-  Coverage date: 12/29/2024 - 12:53:21 PM - 12/29/2024 - 12:54:18 PM
+  Generated on: 12/30/2024 - 11:59:27 AM
+  Coverage date: 12/30/2024 - 11:58:28 AM - 12/30/2024 - 11:58:51 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 741
-  Files: 741
+  Classes: 742
+  Files: 742
   Line coverage: 97.6%
-  Covered lines: 15533
+  Covered lines: 15544
   Uncovered lines: 379
-  Coverable lines: 15912
-  Total lines: 40038
-  Branch coverage: 95.4% (5750 of 6023)
-  Covered branches: 5750
-  Total branches: 6023
-  Method coverage: 98.7% (1081 of 1095)
-  Full method coverage: 20.5% (225 of 1095)
-  Covered methods: 1081
+  Coverable lines: 15923
+  Total lines: 40078
+  Branch coverage: 95.4% (5754 of 6027)
+  Covered branches: 5754
+  Total branches: 6027
+  Method coverage: 98.7% (1082 of 1096)
+  Full method coverage: 20.5% (225 of 1096)
+  Covered methods: 1082
   Fully covered methods: 225
-  Total methods: 1095
+  Total methods: 1096
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -439,6 +439,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone.MinimumNumberOfMovesToSeatEveryoneSorting                                                      100%
   LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK.MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeBits                      100%
   LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK.MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeString                    100%
+  LeetCode.Algorithms.MinimumNumberOfOperationsToMakeElementsInArrayDistinct.MinimumNumberOfOperationsToMakeElementsInArrayDistinctIterative            100%
   LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel.MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch               100%
   LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced.MinimumNumberOfSwapsToMakeTheStringBalancedIterative                                  100%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStack                                                      100%
