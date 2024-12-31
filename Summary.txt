@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/30/2024 - 11:59:27 AM
-  Coverage date: 12/30/2024 - 11:58:28 AM - 12/30/2024 - 11:58:51 AM
+  Generated on: 12/31/2024 - 11:20:48 AM
+  Coverage date: 12/31/2024 - 11:19:44 AM - 12/31/2024 - 11:20:05 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 742
-  Files: 742
+  Classes: 743
+  Files: 743
   Line coverage: 97.6%
-  Covered lines: 15544
+  Covered lines: 15558
   Uncovered lines: 379
-  Coverable lines: 15923
-  Total lines: 40078
-  Branch coverage: 95.4% (5754 of 6027)
-  Covered branches: 5754
-  Total branches: 6027
-  Method coverage: 98.7% (1082 of 1096)
-  Full method coverage: 20.5% (225 of 1096)
-  Covered methods: 1082
+  Coverable lines: 15937
+  Total lines: 40119
+  Branch coverage: 95.4% (5758 of 6031)
+  Covered branches: 5758
+  Total branches: 6031
+  Method coverage: 98.7% (1083 of 1097)
+  Full method coverage: 20.5% (225 of 1097)
+  Covered methods: 1083
   Fully covered methods: 225
-  Total methods: 1096
+  Total methods: 1097
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -77,6 +77,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CapitalizeTheTitle.CapitalizeTheTitleArray                                                                                        100%
   LeetCode.Algorithms.CapitalizeTheTitle.CapitalizeTheTitleStringBuilder                                                                                100%
   LeetCode.Algorithms.CheapestFlightsWithinKStops.CheapestFlightsWithinKStopsBellmanFord                                                                100%
+  LeetCode.Algorithms.CheckBalancedString.CheckBalancedStringIterative                                                                                  100%
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKArray                                                            100%
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKDictionary                                                      92.3%
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKTwoPointers                                                      100%
