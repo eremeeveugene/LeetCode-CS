@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/31/2024 - 11:20:48 AM
-  Coverage date: 12/31/2024 - 11:19:44 AM - 12/31/2024 - 11:20:05 AM
+  Generated on: 1/1/2025 - 1:42:20 PM
+  Coverage date: 1/1/2025 - 1:41:09 PM - 1/1/2025 - 1:41:32 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 743
-  Files: 743
+  Classes: 744
+  Files: 744
   Line coverage: 97.6%
-  Covered lines: 15558
+  Covered lines: 15586
   Uncovered lines: 379
-  Coverable lines: 15937
-  Total lines: 40119
-  Branch coverage: 95.4% (5758 of 6031)
-  Covered branches: 5758
-  Total branches: 6031
-  Method coverage: 98.7% (1083 of 1097)
-  Full method coverage: 20.5% (225 of 1097)
-  Covered methods: 1083
+  Coverable lines: 15965
+  Total lines: 40179
+  Branch coverage: 95.4% (5768 of 6041)
+  Covered branches: 5768
+  Total branches: 6041
+  Method coverage: 98.7% (1084 of 1098)
+  Full method coverage: 20.4% (225 of 1098)
+  Covered methods: 1084
   Fully covered methods: 225
-  Total methods: 1097
+  Total methods: 1098
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -394,6 +394,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArrayBruteForce                                               100%
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArraySecondMax                                                100%
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArraySorting                                                  100%
+  LeetCode.Algorithms.MaximumScoreAfterSplittingString.MaximumScoreAfterSplittingStringIterative                                                        100%
   LeetCode.Algorithms.MaximumSumOfDistinctSubarraysWithLengthK.MaximumSumOfDistinctSubarraysWithLengthKSlidingWindow                                    100%
   LeetCode.Algorithms.MaximumSwap.MaximumSwapGreedy                                                                                                     100%
   LeetCode.Algorithms.MaximumWidthRamp.MaximumWidthRampStack                                                                                             92%
