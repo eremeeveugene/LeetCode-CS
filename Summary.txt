@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/1/2025 - 1:42:20 PM
-  Coverage date: 1/1/2025 - 1:41:09 PM - 1/1/2025 - 1:41:32 PM
+  Generated on: 1/2/2025 - 11:30:59 AM
+  Coverage date: 1/2/2025 - 11:30:01 AM - 1/2/2025 - 11:30:23 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 744
-  Files: 744
+  Classes: 745
+  Files: 745
   Line coverage: 97.6%
-  Covered lines: 15586
+  Covered lines: 15613
   Uncovered lines: 379
-  Coverable lines: 15965
-  Total lines: 40179
-  Branch coverage: 95.4% (5768 of 6041)
-  Covered branches: 5768
-  Total branches: 6041
-  Method coverage: 98.7% (1084 of 1098)
-  Full method coverage: 20.4% (225 of 1098)
-  Covered methods: 1084
-  Fully covered methods: 225
-  Total methods: 1098
+  Coverable lines: 15992
+  Total lines: 40230
+  Branch coverage: 95.4% (5776 of 6049)
+  Covered branches: 5776
+  Total branches: 6049
+  Method coverage: 98.7% (1086 of 1100)
+  Full method coverage: 20.5% (226 of 1100)
+  Covered methods: 1086
+  Fully covered methods: 226
+  Total methods: 1100
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -133,6 +133,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountTheNumberOfConsistentStrings.CountTheNumberOfConsistentStringsArray                                                          100%
   LeetCode.Algorithms.CountTheNumberOfConsistentStrings.CountTheNumberOfConsistentStringsHashSet                                                        100%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                                  100%
+  LeetCode.Algorithms.CountVowelStringsInRanges.CountVowelStringsInRangesPrefixSum                                                                      100%
   LeetCode.Algorithms.CousinsInBinaryTree2.CousinsInBinaryTree2BreadthFirstSearch                                                                       100%
   LeetCode.Algorithms.CrawlerLogFolder.CrawlerLogFolderSimulation                                                                                       100%
   LeetCode.Algorithms.CreateBinaryTreeFromDescriptions.CreateBinaryTreeFromDescriptionsDictionary                                                      97.1%
