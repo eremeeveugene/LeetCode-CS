@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/3/2025 - 8:38:55 AM
-  Coverage date: 1/3/2025 - 8:37:43 AM - 1/3/2025 - 8:38:06 AM
+  Generated on: 1/4/2025 - 11:04:42 AM
+  Coverage date: 1/4/2025 - 11:03:33 AM - 1/4/2025 - 11:03:55 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 746
-  Files: 746
+  Classes: 748
+  Files: 748
   Line coverage: 97.6%
-  Covered lines: 15632
+  Covered lines: 15693
   Uncovered lines: 379
-  Coverable lines: 16011
-  Total lines: 40279
-  Branch coverage: 95.4% (5782 of 6055)
-  Covered branches: 5782
-  Total branches: 6055
-  Method coverage: 98.7% (1087 of 1101)
-  Full method coverage: 20.5% (226 of 1101)
-  Covered methods: 1087
+  Coverable lines: 16072
+  Total lines: 40416
+  Branch coverage: 95.5% (5804 of 6077)
+  Covered branches: 5804
+  Total branches: 6077
+  Method coverage: 98.7% (1089 of 1103)
+  Full method coverage: 20.4% (226 of 1103)
+  Covered methods: 1089
   Fully covered methods: 226
-  Total methods: 1101
+  Total methods: 1103
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -727,6 +727,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.UglyNumber2.UglyNumber2PriorityQueue                                                                                              100%
   LeetCode.Algorithms.UncommonWordsFromTwoSentences.UncommonWordsFromTwoSentencesDictionary                                                             100%
   LeetCode.Algorithms.UncommonWordsFromTwoSentences.UncommonWordsFromTwoSentencesHashSet                                                                100%
+  LeetCode.Algorithms.UniqueLength3PalindromicSubsequences.UniqueLength3PalindromicSubsequencesBruteForce                                               100%
+  LeetCode.Algorithms.UniqueLength3PalindromicSubsequences.UniqueLength3PalindromicSubsequencesCounting                                                 100%
   LeetCode.Algorithms.UniqueMorseCodeWords.UniqueMorseCodeWordsHashSet                                                                                  100%
   LeetCode.Algorithms.UniqueNumberOfOccurrences.UniqueNumberOfOccurrencesDictionary                                                                     100%
   LeetCode.Algorithms.ValidAnagram.ValidAnagramDictionary                                                                                              90.4%
