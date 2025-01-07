@@ -366,6 +366,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/description/)
 - [1760. Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/description/)
 - [1768. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/description/)
+- [1769. Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/description/)
 - [1791. Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/description/)
 - [1792. Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/description/)
 - [1813. Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/description/)
