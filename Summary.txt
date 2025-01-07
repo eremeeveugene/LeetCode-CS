@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/5/2025 - 1:36:30 PM
-  Coverage date: 1/5/2025 - 1:35:20 PM - 1/5/2025 - 1:35:43 PM
+  Generated on: 1/7/2025 - 4:42:10 PM
+  Coverage date: 1/7/2025 - 4:40:22 PM - 1/7/2025 - 4:41:21 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 749
-  Files: 749
+  Classes: 751
+  Files: 751
   Line coverage: 97.6%
-  Covered lines: 15729
+  Covered lines: 15769
   Uncovered lines: 379
-  Coverable lines: 16108
-  Total lines: 40492
-  Branch coverage: 95.5% (5816 of 6089)
-  Covered branches: 5816
-  Total branches: 6089
-  Method coverage: 98.7% (1090 of 1104)
-  Full method coverage: 20.4% (226 of 1104)
-  Covered methods: 1090
+  Coverable lines: 16148
+  Total lines: 40592
+  Branch coverage: 95.5% (5832 of 6105)
+  Covered branches: 5832
+  Total branches: 6105
+  Method coverage: 98.7% (1092 of 1106)
+  Full method coverage: 20.4% (226 of 1106)
+  Covered methods: 1092
   Fully covered methods: 226
-  Total methods: 1104
+  Total methods: 1106
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -443,6 +443,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK.MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeBits                      100%
   LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK.MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeString                    100%
   LeetCode.Algorithms.MinimumNumberOfOperationsToMakeElementsInArrayDistinct.MinimumNumberOfOperationsToMakeElementsInArrayDistinctIterative            100%
+  LeetCode.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox.MinimumNumberOfOperationsToMoveAllBallsToEachBoxBruteForce                       100%
+  LeetCode.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox.MinimumNumberOfOperationsToMoveAllBallsToEachBoxTwoPass                          100%
   LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel.MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch               100%
   LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced.MinimumNumberOfSwapsToMakeTheStringBalancedIterative                                  100%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStack                                                      100%
