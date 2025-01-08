@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/7/2025 - 4:42:10 PM
-  Coverage date: 1/7/2025 - 4:40:22 PM - 1/7/2025 - 4:41:21 PM
+  Generated on: 1/8/2025 - 12:03:00 PM
+  Coverage date: 1/8/2025 - 12:01:48 PM - 1/8/2025 - 12:02:11 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 751
-  Files: 751
+  Classes: 752
+  Files: 752
   Line coverage: 97.6%
-  Covered lines: 15769
+  Covered lines: 15777
   Uncovered lines: 379
-  Coverable lines: 16148
-  Total lines: 40592
-  Branch coverage: 95.5% (5832 of 6105)
-  Covered branches: 5832
-  Total branches: 6105
-  Method coverage: 98.7% (1092 of 1106)
-  Full method coverage: 20.4% (226 of 1106)
-  Covered methods: 1092
+  Coverable lines: 16156
+  Total lines: 40626
+  Branch coverage: 95.5% (5834 of 6107)
+  Covered branches: 5834
+  Total branches: 6107
+  Method coverage: 98.7% (1093 of 1107)
+  Full method coverage: 20.4% (226 of 1107)
+  Covered methods: 1093
   Fully covered methods: 226
-  Total methods: 1106
+  Total methods: 1107
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -718,6 +718,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ToLowerCase.ToLowerCaseArray                                                                                                      100%
   LeetCode.Algorithms.ToLowerCase.ToLowerCaseBuiltIn                                                                                                    100%
   LeetCode.Algorithms.ToLowerCase.ToLowerCaseStringBuilder                                                                                              100%
+  LeetCode.Algorithms.TransformedArray.TransformedArrayIterative                                                                                        100%
   LeetCode.Algorithms.TrappingRainWater.TrappingRainWaterIterative                                                                                      100%
   LeetCode.Algorithms.TwoBestNonOverlappingEvents.TwoBestNonOverlappingEventsBinarySearch                                                               100%
   LeetCode.Algorithms.TwoBestNonOverlappingEvents.TwoBestNonOverlappingEventsPriorityQueue                                                              100%
