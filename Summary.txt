@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/8/2025 - 12:03:00 PM
-  Coverage date: 1/8/2025 - 12:01:48 PM - 1/8/2025 - 12:02:11 PM
+  Generated on: 1/9/2025 - 10:19:04 AM
+  Coverage date: 1/9/2025 - 10:17:57 AM - 1/9/2025 - 10:18:18 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 752
-  Files: 752
+  Classes: 753
+  Files: 753
   Line coverage: 97.6%
-  Covered lines: 15777
+  Covered lines: 15780
   Uncovered lines: 379
-  Coverable lines: 16156
-  Total lines: 40626
+  Coverable lines: 16159
+  Total lines: 40647
   Branch coverage: 95.5% (5834 of 6107)
   Covered branches: 5834
   Total branches: 6107
-  Method coverage: 98.7% (1093 of 1107)
-  Full method coverage: 20.4% (226 of 1107)
-  Covered methods: 1093
-  Fully covered methods: 226
-  Total methods: 1107
+  Method coverage: 98.7% (1094 of 1108)
+  Full method coverage: 20.4% (227 of 1108)
+  Covered methods: 1094
+  Fully covered methods: 227
+  Total methods: 1108
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -117,6 +117,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionaryLinq                                                 100%
   LeetCode.Algorithms.CountingBits.CountingBitsDynamicProgramming                                                                                       100%
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                                                                                                100%
+  LeetCode.Algorithms.CountingWordsWithGivenPrefix.CountingWordsWithGivenPrefixIterative                                                                100%
   LeetCode.Algorithms.CountNumberOfMaximumBitwiseORSubsets.CountNumberOfMaximumBitwiseORSubsetsBacktracking                                             100%
   LeetCode.Algorithms.CountOddNumbersInAnIntervalRange.CountOddNumbersInAnIntervalRangeMath                                                             100%
   LeetCode.Algorithms.CountOfMatchesInTournament.CountOfMatchesInTournamentConstant                                                                     100%
