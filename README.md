@@ -255,6 +255,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [885. Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/description/)
 - [896. Monotonic Array](https://leetcode.com/problems/monotonic-array/description/)
 - [912. Sort an Array](https://leetcode.com/problems/sort-an-array/description/)
+- [916. Word Subsets](https://leetcode.com/problems/word-subsets/description/)
 - [921. Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/)
 - [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/description/)
 - [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/description/)
