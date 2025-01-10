@@ -34,26 +34,30 @@ public class WordSubsetsFrequencyFiltering : IWordSubsets
             foreach (var c in word)
             {
                 tempFrequency[c - 'a']++;
-            }
 
-            for (var i = 0; i < maxCharFrequencies.Length; i++)
-            {
-                maxCharFrequencies[i] = Math.Max(maxCharFrequencies[i], tempFrequency[i]);
+                maxCharFrequencies[c - 'a'] = Math.Max(maxCharFrequencies[c - 'a'], tempFrequency[c - 'a']);
             }
         }
 
-        return words1.Where(word => IsUniversal(word, maxCharFrequencies)).ToArray();
-    }
+        var result = new List<string>();
 
-    private static bool IsUniversal(string word, int[] maxCharFrequencies)
-    {
-        var wordFrequency = new int[maxCharFrequencies.Length];
-
-        foreach (var c in word)
+        foreach (var word in words1)
         {
-            wordFrequency[c - 'a']++;
+            var wordFrequency = new int[maxCharFrequencies.Length];
+
+            foreach (var c in word)
+            {
+                wordFrequency[c - 'a']++;
+            }
+
+            if (wordFrequency.Where((t, i) => t < maxCharFrequencies[i]).Any())
+            {
+                continue;
+            }
+
+            result.Add(word);
         }
 
-        return !maxCharFrequencies.Where((t, i) => wordFrequency[i] < t).Any();
+        return result;
     }
 }
