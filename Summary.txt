@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/10/2025 - 5:00:37 PM
-  Coverage date: 1/10/2025 - 4:59:38 PM - 1/10/2025 - 5:00:01 PM
+  Generated on: 1/11/2025 - 12:25:31 PM
+  Coverage date: 1/11/2025 - 12:23:40 PM - 1/11/2025 - 12:24:43 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 754
-  Files: 754
+  Classes: 756
+  Files: 756
   Line coverage: 97.6%
-  Covered lines: 15806
-  Uncovered lines: 379
-  Coverable lines: 16185
-  Total lines: 40710
-  Branch coverage: 95.5% (5846 of 6119)
-  Covered branches: 5846
-  Total branches: 6119
-  Method coverage: 98.7% (1095 of 1109)
-  Full method coverage: 20.4% (227 of 1109)
-  Covered methods: 1095
+  Covered lines: 15824
+  Uncovered lines: 383
+  Coverable lines: 16207
+  Total lines: 40790
+  Branch coverage: 95.5% (5854 of 6129)
+  Covered branches: 5854
+  Total branches: 6129
+  Method coverage: 98.7% (1097 of 1111)
+  Full method coverage: 20.4% (227 of 1111)
+  Covered methods: 1097
   Fully covered methods: 227
-  Total methods: 1109
+  Total methods: 1111
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -99,6 +99,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ComplementOfBase10Integer.ComplementOfBase10IntegerBitwise                                                                        100%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayConcat                                                                                   100%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayIterative                                                                                100%
+  LeetCode.Algorithms.ConstructKPalindromeStrings.ConstructKPalindromeStringsFrequencyArray                                                            81.8%
+  LeetCode.Algorithms.ConstructKPalindromeStrings.ConstructKPalindromeStringsFrequencyDictionary                                                       81.8%
   LeetCode.Algorithms.ConstructStringWithRepeatLimit.ConstructStringWithRepeatLimitGreedy                                                               100%
   LeetCode.Algorithms.ConstructStringWithRepeatLimit.ConstructStringWithRepeatLimitPriorityQueue                                                        100%
   LeetCode.Algorithms.ContainsDuplicate.ContainsDuplicateHashSet                                                                                        100%
