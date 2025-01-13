@@ -1,0 +1,33 @@
+﻿// --------------------------------------------------------------------------------
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// All Rights Reserved.
+// --------------------------------------------------------------------------------
+// This software is the confidential and proprietary information of Eugene Eremeev
+// (also known as Yevhenii Yeriemeieiv) ("Confidential Information"). You shall not
+// disclose such Confidential Information and shall use it only in accordance with
+// the terms of the license agreement you entered into with Eugene Eremeev (also
+// known as Yevhenii Yeriemeieiv).
+// --------------------------------------------------------------------------------
+
+using LeetCode.Algorithms.MinimumLengthOfStringAfterOperations;
+
+namespace LeetCode.Tests.Algorithms.MinimumLengthOfStringAfterOperations;
+
+public abstract class MinimumLengthOfStringAfterOperationsTestsBase<T>
+    where T : IMinimumLengthOfStringAfterOperations, new()
+{
+    [TestMethod]
+    [DataRow("aa", 2)]
+    [DataRow("abaacbcbb", 5)]
+    public void MinimumLength_WithInputString_ReturnsMinimumLengthOfStringAfterOperations(string s, int expectedResult)
+    {
+        // Arrange
+        var solution = new T();
+
+        // Act
+        var actualResult = solution.MinimumLength(s);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
+    }
+}
