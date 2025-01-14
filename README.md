@@ -466,6 +466,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2641. Cousins in Binary Tree II](https://leetcode.com/problems/cousins-in-binary-tree-ii/description/)
 - [2651. Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/description/)
 - [2652. Sum Multiples](https://leetcode.com/problems/sum-multiples/description/)
+- [2657. Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/description/)
 - [2678. Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens/description/)
 - [2684. Maximum Number of Moves in a Grid](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/description/)
 - [2696. Minimum String Length After Removing Substrings](https://leetcode.com/problems/minimum-string-length-after-removing-substrings/description/)
