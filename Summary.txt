@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/13/2025 - 3:51:21 PM
-  Coverage date: 1/13/2025 - 3:50:04 PM - 1/13/2025 - 3:50:27 PM
+  Generated on: 1/14/2025 - 11:51:08 AM
+  Coverage date: 1/14/2025 - 11:50:01 AM - 1/14/2025 - 11:50:24 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 759
-  Files: 759
+  Classes: 761
+  Files: 761
   Line coverage: 97.6%
-  Covered lines: 15890
+  Covered lines: 15928
   Uncovered lines: 385
-  Coverable lines: 16275
-  Total lines: 40947
-  Branch coverage: 95.5% (5873 of 6149)
-  Covered branches: 5873
-  Total branches: 6149
-  Method coverage: 98.7% (1100 of 1114)
-  Full method coverage: 20.3% (227 of 1114)
-  Covered methods: 1100
+  Coverable lines: 16313
+  Total lines: 41045
+  Branch coverage: 95.5% (5885 of 6161)
+  Covered branches: 5885
+  Total branches: 6161
+  Method coverage: 98.7% (1102 of 1116)
+  Full method coverage: 20.3% (227 of 1116)
+  Covered methods: 1102
   Fully covered methods: 227
-  Total methods: 1114
+  Total methods: 1116
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -258,6 +258,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerConstant                                                                                   100%
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerIterative                                                                                  100%
   LeetCode.Algorithms.FindThePowerOfKSizeSubarrays1.FindThePowerOfKSizeSubarrays1ConsecutiveCount                                                      91.3%
+  LeetCode.Algorithms.FindThePrefixCommonArrayOfTwoArrays.FindThePrefixCommonArrayOfTwoArraysFrequencyArray                                             100%
+  LeetCode.Algorithms.FindThePrefixCommonArrayOfTwoArrays.FindThePrefixCommonArrayOfTwoArraysHashSet                                                    100%
   LeetCode.Algorithms.FindTheSafestPathInGrid.FindTheSafestPathInGridPriorityQueue                                                                     98.4%
   LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk.FindTheStudentThatWillReplaceTheChalkBinarySearch                                           100%
   LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk.FindTheStudentThatWillReplaceTheChalkPrefixSum                                              100%
