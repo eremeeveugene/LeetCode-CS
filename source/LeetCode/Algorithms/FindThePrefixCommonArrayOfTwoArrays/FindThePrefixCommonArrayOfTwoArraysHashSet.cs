@@ -25,21 +25,21 @@ public class FindThePrefixCommonArrayOfTwoArraysHashSet : IFindThePrefixCommonAr
     {
         var result = new int[a.Length];
         var seenHashSet = new HashSet<int>();
-        var commonCount = 0;
+        var count = 0;
 
         for (var i = 0; i < a.Length; i++)
         {
             if (!seenHashSet.Add(a[i]))
             {
-                commonCount++;
+                count++;
             }
 
             if (!seenHashSet.Add(b[i]))
             {
-                commonCount++;
+                count++;
             }
 
-            result[i] = commonCount;
+            result[i] = count;
         }
 
         return result;
