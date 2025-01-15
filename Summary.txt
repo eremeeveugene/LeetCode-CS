@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/14/2025 - 11:51:08 AM
-  Coverage date: 1/14/2025 - 11:50:01 AM - 1/14/2025 - 11:50:24 AM
+  Generated on: 1/15/2025 - 11:22:19 AM
+  Coverage date: 1/15/2025 - 11:21:19 AM - 1/15/2025 - 11:21:42 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 761
-  Files: 761
+  Classes: 762
+  Files: 762
   Line coverage: 97.6%
-  Covered lines: 15928
+  Covered lines: 15958
   Uncovered lines: 385
-  Coverable lines: 16313
-  Total lines: 41045
-  Branch coverage: 95.5% (5885 of 6161)
-  Covered branches: 5885
-  Total branches: 6161
-  Method coverage: 98.7% (1102 of 1116)
-  Full method coverage: 20.3% (227 of 1116)
-  Covered methods: 1102
+  Coverable lines: 16343
+  Total lines: 41115
+  Branch coverage: 95.5% (5898 of 6175)
+  Covered branches: 5898
+  Total branches: 6175
+  Method coverage: 98.7% (1104 of 1118)
+  Full method coverage: 20.3% (227 of 1118)
+  Covered methods: 1104
   Fully covered methods: 227
-  Total methods: 1116
+  Total methods: 1118
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -420,6 +420,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MergeTwoBinaryTrees.MergeTwoBinaryTreesDepthFirstSearchStack                                                                      100%
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                                                                                     100%
   LeetCode.Algorithms.MinCostClimbingStairs.MinCostClimbingStairsDynamicProgramming                                                                     100%
+  LeetCode.Algorithms.MinimizeXOR.MinimizeXORBitwise                                                                                                    100%
   LeetCode.Algorithms.MinimumAbsoluteDifferenceInBST.MinimumAbsoluteDifferenceInBSTDepthFirstSearch                                                     100%
   LeetCode.Algorithms.MinimumAddToMakeParenthesesValid.MinimumAddToMakeParenthesesValidIterative                                                        100%
   LeetCode.Algorithms.MinimumArrayEnd.MinimumArrayEndIterative                                                                                          100%
