@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/15/2025 - 11:22:19 AM
-  Coverage date: 1/15/2025 - 11:21:19 AM - 1/15/2025 - 11:21:42 AM
+  Generated on: 1/16/2025 - 4:31:33 PM
+  Coverage date: 1/16/2025 - 4:30:30 PM - 1/16/2025 - 4:30:47 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 762
-  Files: 762
+  Classes: 764
+  Files: 764
   Line coverage: 97.6%
-  Covered lines: 15958
-  Uncovered lines: 385
-  Coverable lines: 16343
-  Total lines: 41115
-  Branch coverage: 95.5% (5898 of 6175)
-  Covered branches: 5898
-  Total branches: 6175
-  Method coverage: 98.7% (1104 of 1118)
-  Full method coverage: 20.3% (227 of 1118)
-  Covered methods: 1104
+  Covered lines: 15981
+  Uncovered lines: 391
+  Coverable lines: 16372
+  Total lines: 41199
+  Branch coverage: 95.4% (5907 of 6187)
+  Covered branches: 5907
+  Total branches: 6187
+  Method coverage: 98.7% (1106 of 1120)
+  Full method coverage: 20.2% (227 of 1120)
+  Covered methods: 1106
   Fully covered methods: 227
-  Total methods: 1118
+  Total methods: 1120
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -63,6 +63,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.BinaryTreePostorderTraversal.BinaryTreePostorderTraversalStack                                                                    100%
   LeetCode.Algorithms.BinaryTreePostorderTraversal.BinaryTreePostorderTraversalTwoStacks                                                                100%
   LeetCode.Algorithms.BinaryTreePreorderTraversal.BinaryTreePreorderTraversalDepthFirstSearch                                                           100%
+  LeetCode.Algorithms.BitwiseXOROfAllPairings.BitwiseXOROfAllPairingsBruteForce                                                                         100%
+  LeetCode.Algorithms.BitwiseXOROfAllPairings.BitwiseXOROfAllPairingsIterative                                                                         66.6%
   LeetCode.Algorithms.BoatsToSavePeople.BoatsToSavePeopleTwoPointers                                                                                    100%
   LeetCode.Algorithms.BuildArrayFromPermutation.BuildArrayFromPermutationIterative                                                                      100%
   LeetCode.Algorithms.ButtonWithLongestPushTime.ButtonWithLongestPushTimeIterative                                                                      100%
