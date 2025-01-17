@@ -470,6 +470,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2652. Sum Multiples](https://leetcode.com/problems/sum-multiples/description/)
 - [2657. Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/description/)
 - [2678. Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens/description/)
+- [2683. Neighboring Bitwise XOR](https://leetcode.com/problems/neighboring-bitwise-xor/description/)
 - [2684. Maximum Number of Moves in a Grid](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/description/)
 - [2696. Minimum String Length After Removing Substrings](https://leetcode.com/problems/minimum-string-length-after-removing-substrings/description/)
 - [2699. Modify Graph Edge Weights](https://leetcode.com/problems/modify-graph-edge-weights/description/)
