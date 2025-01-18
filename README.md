@@ -309,6 +309,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1346. Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/description/)
 - [1365. How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description/)
 - [1367. Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/description/)
+- [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/description/)
 - [1370. Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string/description/)
 - [1371. Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/description/)
 - [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/description/)
