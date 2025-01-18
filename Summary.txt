@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/17/2025 - 12:26:55 PM
-  Coverage date: 1/17/2025 - 12:26:01 PM - 1/17/2025 - 12:26:19 PM
+  Generated on: 1/18/2025 - 5:15:40 PM
+  Coverage date: 1/18/2025 - 5:14:30 PM - 1/18/2025 - 5:14:47 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 765
-  Files: 765
+  Classes: 766
+  Files: 766
   Line coverage: 97.6%
-  Covered lines: 15989
+  Covered lines: 16041
   Uncovered lines: 391
-  Coverable lines: 16380
-  Total lines: 41233
-  Branch coverage: 95.4% (5909 of 6189)
-  Covered branches: 5909
-  Total branches: 6189
-  Method coverage: 98.7% (1107 of 1121)
-  Full method coverage: 20.2% (227 of 1121)
-  Covered methods: 1107
-  Fully covered methods: 227
-  Total methods: 1121
+  Coverable lines: 16432
+  Total lines: 41328
+  Branch coverage: 95.4% (5933 of 6213)
+  Covered branches: 5933
+  Total branches: 6213
+  Method coverage: 98.7% (1109 of 1123)
+  Full method coverage: 20.3% (228 of 1123)
+  Covered methods: 1109
+  Fully covered methods: 228
+  Total methods: 1123
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -431,6 +431,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueHashSet                                                                                      100%
   LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueTwoPointers                                                                                  100%
   LeetCode.Algorithms.MinimumCostToHireKWorkers.MinimumCostToHireKWorkersPriorityQueue                                                                  100%
+  LeetCode.Algorithms.MinimumCostToMakeAtLeastOneValidPathInGrid.MinimumCostToMakeAtLeastOneValidPathInGridBreadthFirstSearch                           100%
   LeetCode.Algorithms.MinimumDepthOfBinaryTree.MinimumDepthOfBinaryTreeBreadthFirstSearch                                                               100%
   LeetCode.Algorithms.MinimumDepthOfBinaryTree.MinimumDepthOfBinaryTreeDepthFirstSearch                                                                 100%
   LeetCode.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesSorting    100%
