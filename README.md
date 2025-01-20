@@ -521,6 +521,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3379. Transformed Array](https://leetcode.com/problems/transformed-array/description/)
 - [3386. Button with Longest Push Time](https://leetcode.com/problems/button-with-longest-push-time/description/)
 - [3396. Minimum Number of Operations to Make Elements in Array Distinct](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/description/)
+- [3427. Sum of Variable Length Subarrays](https://leetcode.com/problems/sum-of-variable-length-subarrays/description/)
 
   </p>
 </details>
