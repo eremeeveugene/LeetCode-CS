@@ -23,13 +23,15 @@ public class MaximumDifferenceBetweenAdjacentElementsInCircularArrayIterative :
     /// <returns></returns>
     public int MaxAdjacentDistance(int[] nums)
     {
-        var result = Math.Abs(nums[0] - nums[^1]);
+        var maxAdjacentDistance = Math.Abs(nums[0] - nums[^1]);
 
         for (var i = 0; i < nums.Length - 1; i++)
         {
-            result = Math.Max(result, Math.Abs(nums[i] - nums[i + 1]));
+            var adjacentDistance = Math.Abs(nums[i] - nums[i + 1]);
+
+            maxAdjacentDistance = Math.Max(maxAdjacentDistance, adjacentDistance);
         }
 
-        return result;
+        return maxAdjacentDistance;
     }
 }
