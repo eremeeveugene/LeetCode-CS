@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/20/2025 - 12:16:10 PM
-  Coverage date: 1/20/2025 - 12:15:03 PM - 1/20/2025 - 12:15:21 PM
+  Generated on: 1/21/2025 - 11:40:50 AM
+  Coverage date: 1/21/2025 - 11:39:55 AM - 1/21/2025 - 11:40:13 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 768
-  Files: 768
+  Classes: 769
+  Files: 769
   Line coverage: 97.6%
-  Covered lines: 16068
+  Covered lines: 16093
   Uncovered lines: 391
-  Coverable lines: 16459
-  Total lines: 41412
-  Branch coverage: 95.5% (5943 of 6223)
-  Covered branches: 5943
-  Total branches: 6223
-  Method coverage: 98.7% (1111 of 1125)
-  Full method coverage: 20.2% (228 of 1125)
-  Covered methods: 1111
+  Coverable lines: 16484
+  Total lines: 41471
+  Branch coverage: 95.5% (5949 of 6229)
+  Covered branches: 5949
+  Total branches: 6229
+  Method coverage: 98.7% (1112 of 1126)
+  Full method coverage: 20.2% (228 of 1126)
+  Covered methods: 1112
   Fully covered methods: 228
-  Total methods: 1125
+  Total methods: 1126
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -283,6 +283,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.GetEqualSubstringsWithinBudget.GetEqualSubstringsWithinBudgetSlidingWindow                                                        100%
   LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationReplace                                                                          100%
   LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationStringBuilder                                                                    100%
+  LeetCode.Algorithms.GridGame.GridGamePrefixSum                                                                                                        100%
   LeetCode.Algorithms.GuessNumberHigherOrLower.GuessNumberHigherOrLower                                                                                 100%
   LeetCode.Algorithms.GuessNumberHigherOrLower.GuessNumberHigherOrLowerBinarySearch                                                                     100%
   LeetCode.Algorithms.GuessNumberHigherOrLower.GuessNumberHigherOrLowerBinarySearchFactory                                                              100%
