@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/21/2025 - 11:40:50 AM
-  Coverage date: 1/21/2025 - 11:39:55 AM - 1/21/2025 - 11:40:13 AM
+  Generated on: 1/21/2025 - 12:08:20 PM
+  Coverage date: 1/21/2025 - 12:07:15 PM - 1/21/2025 - 12:07:32 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 769
-  Files: 769
+  Classes: 770
+  Files: 770
   Line coverage: 97.6%
-  Covered lines: 16093
+  Covered lines: 16102
   Uncovered lines: 391
-  Coverable lines: 16484
-  Total lines: 41471
-  Branch coverage: 95.5% (5949 of 6229)
-  Covered branches: 5949
-  Total branches: 6229
-  Method coverage: 98.7% (1112 of 1126)
-  Full method coverage: 20.2% (228 of 1126)
-  Covered methods: 1112
+  Coverable lines: 16493
+  Total lines: 41508
+  Branch coverage: 95.5% (5951 of 6231)
+  Covered branches: 5951
+  Total branches: 6231
+  Method coverage: 98.7% (1113 of 1127)
+  Full method coverage: 20.2% (228 of 1127)
+  Covered methods: 1113
   Fully covered methods: 228
-  Total methods: 1126
+  Total methods: 1127
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -389,6 +389,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumDepthOfNaryTree.MaximumDepthOfNaryTreeBreadthFirstSearch                                                                   100%
   LeetCode.Algorithms.MaximumDepthOfNaryTree.MaximumDepthOfNaryTreeDepthFirstSearchRecursive                                                            100%
   LeetCode.Algorithms.MaximumDepthOfNaryTree.MaximumDepthOfNaryTreeDepthFirstSearchStack                                                                100%
+  LeetCode.Algorithms.MaximumDifferenceBetweenAdjacentElementsInCircularArray.MaximumDifferenceBetweenAdjacentElementsInCircularArrayIterative          100%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysBruteForce                                                                         100%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysGreedy                                                                             100%
   LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses.MaximumNestingDepthOfTheParenthesesIterative                                                  100%
