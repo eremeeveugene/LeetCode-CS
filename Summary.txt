@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/21/2025 - 12:08:20 PM
-  Coverage date: 1/21/2025 - 12:07:15 PM - 1/21/2025 - 12:07:32 PM
+  Generated on: 1/23/2025 - 5:21:41 PM
+  Coverage date: 1/23/2025 - 5:20:11 PM - 1/23/2025 - 5:20:27 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 770
-  Files: 770
+  Classes: 771
+  Files: 771
   Line coverage: 97.6%
-  Covered lines: 16102
+  Covered lines: 16110
   Uncovered lines: 391
-  Coverable lines: 16493
-  Total lines: 41508
-  Branch coverage: 95.5% (5951 of 6231)
-  Covered branches: 5951
-  Total branches: 6231
-  Method coverage: 98.7% (1113 of 1127)
-  Full method coverage: 20.2% (228 of 1127)
-  Covered methods: 1113
+  Coverable lines: 16501
+  Total lines: 41545
+  Branch coverage: 95.5% (5953 of 6233)
+  Covered branches: 5953
+  Total branches: 6233
+  Method coverage: 98.7% (1114 of 1128)
+  Full method coverage: 20.2% (228 of 1128)
+  Covered methods: 1114
   Fully covered methods: 228
-  Total methods: 1127
+  Total methods: 1128
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -246,6 +246,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheDifferenceOfTwoArrays.FindTheDifferenceOfTwoArraysHashSet                                                                  100%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberBruteForce                                                                          91.6%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm                                                       89.4%
+  LeetCode.Algorithms.FindTheEncryptedString.FindTheEncryptedStringIterative                                                                            100%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                                      100%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithKMP                                           80%
   LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix.FindTheLengthOfTheLongestCommonPrefixBruteForce                                             100%
