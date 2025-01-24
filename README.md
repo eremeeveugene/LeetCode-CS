@@ -411,6 +411,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2116. Check if a Parentheses String Can Be Valid](https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/description/)
 - [2129. Capitalize the Title](https://leetcode.com/problems/capitalize-the-title/description/)
 - [2134. Minimum Swaps to Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/description/)
+- [2148. Count Elements With Strictly Smaller and Greater Elements ](https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/description/)
 - [2160. Minimum Sum of Four Digit Number After Splitting Digits](https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/description/)
 - [2181. Merge Nodes in Between Zeros](https://leetcode.com/problems/merge-nodes-in-between-zeros/description/)
 - [2182. Construct String With Repeat Limit](https://leetcode.com/problems/construct-string-with-repeat-limit/description/)
