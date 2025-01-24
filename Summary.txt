@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/23/2025 - 5:21:41 PM
-  Coverage date: 1/23/2025 - 5:20:11 PM - 1/23/2025 - 5:20:27 PM
+  Generated on: 1/24/2025 - 12:14:27 PM
+  Coverage date: 1/24/2025 - 12:13:33 PM - 1/24/2025 - 12:13:51 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 771
-  Files: 771
+  Classes: 772
+  Files: 772
   Line coverage: 97.6%
-  Covered lines: 16110
-  Uncovered lines: 391
-  Coverable lines: 16501
-  Total lines: 41545
-  Branch coverage: 95.5% (5953 of 6233)
-  Covered branches: 5953
-  Total branches: 6233
-  Method coverage: 98.7% (1114 of 1128)
-  Full method coverage: 20.2% (228 of 1128)
-  Covered methods: 1114
+  Covered lines: 16121
+  Uncovered lines: 393
+  Coverable lines: 16514
+  Total lines: 41587
+  Branch coverage: 95.4% (5958 of 6239)
+  Covered branches: 5958
+  Total branches: 6239
+  Method coverage: 98.7% (1115 of 1129)
+  Full method coverage: 20.1% (228 of 1129)
+  Covered methods: 1115
   Fully covered methods: 228
-  Total methods: 1128
+  Total methods: 1129
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -120,6 +120,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountCompleteTreeNodes.CountCompleteTreeNodesRecursive                                                                            100%
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionary                                                     100%
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionaryLinq                                                 100%
+  LeetCode.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements.CountElementsWithStrictlySmallerAndGreaterElementsIterative                   84.6%
   LeetCode.Algorithms.CountingBits.CountingBitsDynamicProgramming                                                                                       100%
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                                                                                                100%
   LeetCode.Algorithms.CountingWordsWithGivenPrefix.CountingWordsWithGivenPrefixIterative                                                                100%
