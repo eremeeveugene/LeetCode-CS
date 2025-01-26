@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/24/2025 - 12:14:27 PM
-  Coverage date: 1/24/2025 - 12:13:33 PM - 1/24/2025 - 12:13:51 PM
+  Generated on: 1/26/2025 - 11:34:36 AM
+  Coverage date: 1/26/2025 - 11:33:31 AM - 1/26/2025 - 11:33:48 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 772
-  Files: 772
+  Classes: 773
+  Files: 773
   Line coverage: 97.6%
-  Covered lines: 16121
+  Covered lines: 16136
   Uncovered lines: 393
-  Coverable lines: 16514
-  Total lines: 41587
-  Branch coverage: 95.4% (5958 of 6239)
-  Covered branches: 5958
-  Total branches: 6239
-  Method coverage: 98.7% (1115 of 1129)
-  Full method coverage: 20.1% (228 of 1129)
-  Covered methods: 1115
+  Coverable lines: 16529
+  Total lines: 41630
+  Branch coverage: 95.4% (5962 of 6243)
+  Covered branches: 5962
+  Total branches: 6243
+  Method coverage: 98.7% (1116 of 1130)
+  Full method coverage: 20.1% (228 of 1130)
+  Covered methods: 1116
   Fully covered methods: 228
-  Total methods: 1129
+  Total methods: 1130
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -130,6 +130,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountOfMatchesInTournament.CountOfMatchesInTournamentIterative                                                                    100%
   LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget.CountPairsWhoseSumIsLessThanTargetIterative                                                    100%
   LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget.CountPairsWhoseSumIsLessThanTargetSortTwoPointers                                              100%
+  LeetCode.Algorithms.CountPartitionsWithEvenSumDifference.CountPartitionsWithEvenSumDifferencePrefixSum                                                100%
   LeetCode.Algorithms.CountPrefixAndSuffixPairs1.CountPrefixAndSuffixPairs1StringComparison                                                             100%
   LeetCode.Algorithms.CountPrefixAndSuffixPairs1.CountPrefixAndSuffixPairs1Trie                                                                          97%
   LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes.CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursive                      100%
