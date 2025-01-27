@@ -11,10 +11,10 @@
 
 namespace LeetCode.Algorithms.DesignNeighborSumService;
 
-public class DesignNeighborSumService1Factory : IDesignNeighborSumServiceFactory
+public class DesignNeighborSumServiceDictionaryFactory : IDesignNeighborSumServiceFactory
 {
     public IDesignNeighborSumService Create(int[][] grid)
     {
-        return new DesignNeighborSumService1(grid);
+        return new DesignNeighborSumServiceDictionary(grid);
     }
 }
