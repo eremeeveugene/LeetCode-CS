@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/26/2025 - 11:34:36 AM
-  Coverage date: 1/26/2025 - 11:33:31 AM - 1/26/2025 - 11:33:48 AM
+  Generated on: 1/27/2025 - 12:52:25 PM
+  Coverage date: 1/27/2025 - 12:51:21 PM - 1/27/2025 - 12:51:39 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 773
-  Files: 773
+  Classes: 777
+  Files: 777
   Line coverage: 97.6%
-  Covered lines: 16136
-  Uncovered lines: 393
-  Coverable lines: 16529
-  Total lines: 41630
-  Branch coverage: 95.4% (5962 of 6243)
-  Covered branches: 5962
-  Total branches: 6243
-  Method coverage: 98.7% (1116 of 1130)
-  Full method coverage: 20.1% (228 of 1130)
-  Covered methods: 1116
-  Fully covered methods: 228
-  Total methods: 1130
+  Covered lines: 16250
+  Uncovered lines: 394
+  Coverable lines: 16644
+  Total lines: 41879
+  Branch coverage: 95.4% (6015 of 6301)
+  Covered branches: 6015
+  Total branches: 6301
+  Method coverage: 98.7% (1125 of 1139)
+  Full method coverage: 20.2% (231 of 1139)
+  Covered methods: 1125
+  Fully covered methods: 231
+  Total methods: 1139
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -169,6 +169,10 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedListFactory                                                                          100%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueLinkedList                                                                  73.8%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueList                                                                        90.4%
+  LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceBruteForce                                                                      98.1%
+  LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceBruteForceFactory                                                                100%
+  LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceDictionary                                                                       100%
+  LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceDictionaryFactory                                                                100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArray                                                          100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArrayFactory                                                   100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedList                                                     100%
