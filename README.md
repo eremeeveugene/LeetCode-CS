@@ -12,8 +12,8 @@ The primary goal of this repository is to improve my own skills and demonstrate 
 
 ## Technologies Used
 
-- **[.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)**: The latest version of the .NET platform for building and running applications.
-- **[C# 12](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12)**: The programming language used to implement the solutions.
+- **[.NET 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)**: The latest version of the .NET platform for building and running applications.
+- **[C# 13](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13)**: The programming language used to implement the solutions.
 - **[MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)**: A testing framework for .NET to write and run tests.
 - **[Coverlet](https://github.com/coverlet-coverage/coverlet)**: A code coverage library for .NET that collects coverage data and integrates with build tasks.
 - **[ReportGenerator](https://reportgenerator.io/)**: A tool to generate reports from the test coverage data.
@@ -508,6 +508,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3068. Find the Maximum Sum of Node Values](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/description/)
 - [3075. Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/description/)
 - [3097. Shortest Subarray With OR at Least K II](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/description/)
+- [3099. Harshad Number](https://leetcode.com/problems/harshad-number/description/)
 - [3110. Score of a String](https://leetcode.com/problems/score-of-a-string/description/)
 - [3133. Minimum Array End](https://leetcode.com/problems/minimum-array-end/description/)
 - [3151. Special Array I](https://leetcode.com/problems/special-array-i/description/)
