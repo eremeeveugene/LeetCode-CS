@@ -10,7 +10,7 @@ Welcome to my collection of LeetCode solutions, all written in C#. Each solution
 
 The primary goal of this repository is to improve my own skills and demonstrate my capabilities. I am focused on my growth and learning by providing efficient and well-tested solutions to a wide range of LeetCode problems.
 
-## Technologies Used
+## Technologies
 
 - **[.NET 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)**: The latest version of the .NET platform for building and running applications.
 - **[C# 13](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13)**: The programming language used to implement the solutions.
@@ -514,6 +514,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3151. Special Array I](https://leetcode.com/problems/special-array-i/description/)
 - [3152. Special Array II](https://leetcode.com/problems/special-array-ii/description/)
 - [3163. String Compression III](https://leetcode.com/problems/string-compression-iii/description/)
+- [3174. Clear Digits](https://leetcode.com/problems/clear-digits/description/)
 - [3190. Find Minimum Operations to Make All Elements Divisible by Three](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/description/)
 - [3203. Find Minimum Diameter After Merging Two Trees](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/description/)
 - [3210. Find the Encrypted String](https://leetcode.com/problems/find-the-encrypted-string/description/)
