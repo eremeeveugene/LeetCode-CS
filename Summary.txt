@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/28/2025 - 11:19:01 AM
-  Coverage date: 1/28/2025 - 11:18:02 AM - 1/28/2025 - 11:18:19 AM
+  Generated on: 1/29/2025 - 4:12:33 PM
+  Coverage date: 1/29/2025 - 4:11:24 PM - 1/29/2025 - 4:11:41 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 778
-  Files: 778
+  Classes: 779
+  Files: 779
   Line coverage: 97.6%
-  Covered lines: 16263
+  Covered lines: 16277
   Uncovered lines: 394
-  Coverable lines: 16657
-  Total lines: 41922
-  Branch coverage: 95.4% (6020 of 6307)
-  Covered branches: 6020
-  Total branches: 6307
-  Method coverage: 98.7% (1126 of 1140)
-  Full method coverage: 20.2% (231 of 1140)
-  Covered methods: 1126
+  Coverable lines: 16671
+  Total lines: 41965
+  Branch coverage: 95.4% (6024 of 6311)
+  Covered branches: 6024
+  Total branches: 6311
+  Method coverage: 98.7% (1127 of 1141)
+  Full method coverage: 20.2% (231 of 1141)
+  Covered methods: 1127
   Fully covered methods: 231
-  Total methods: 1140
+  Total methods: 1141
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -94,6 +94,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentTwoPointers                                                100%
   LeetCode.Algorithms.CheckIfWordOccursAsPrefixOfAnyWordInSentence.CheckIfWordOccursAsPrefixOfAnyWordInSentenceIterative                                100%
   LeetCode.Algorithms.CircularSentence.CircularSentenceIterative                                                                                       84.6%
+  LeetCode.Algorithms.ClearDigits.ClearDigitsStringBuilder                                                                                              100%
   LeetCode.Algorithms.ClimbingStairs.ClimbingStairsDynamicProgramming                                                                                   100%
   LeetCode.Algorithms.ClimbingStairs.ClimbingStairsIterativeFibonacci                                                                                   100%
   LeetCode.Algorithms.CombinationSum2.CombinationSum2Backtracking                                                                                       100%
