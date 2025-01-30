@@ -469,6 +469,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2597. The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/description/)
 - [2601. Prime Subtraction Operation](https://leetcode.com/problems/prime-subtraction-operation/description/)
 - [2641. Cousins in Binary Tree II](https://leetcode.com/problems/cousins-in-binary-tree-ii/description/)
+- [2643. Row With Maximum Ones](https://leetcode.com/problems/row-with-maximum-ones/description/)
 - [2651. Calculate Delayed Arrival Time](https://leetcode.com/problems/calculate-delayed-arrival-time/description/)
 - [2652. Sum Multiples](https://leetcode.com/problems/sum-multiples/description/)
 - [2657. Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/description/)
