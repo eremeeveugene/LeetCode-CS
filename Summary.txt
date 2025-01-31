@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/30/2025 - 10:41:27 AM
-  Coverage date: 1/30/2025 - 10:40:19 AM - 1/30/2025 - 10:40:36 AM
+  Generated on: 1/31/2025 - 11:38:10 AM
+  Coverage date: 1/31/2025 - 11:37:15 AM - 1/31/2025 - 11:37:34 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 780
-  Files: 780
+  Classes: 781
+  Files: 781
   Line coverage: 97.6%
-  Covered lines: 16291
+  Covered lines: 16314
   Uncovered lines: 394
-  Coverable lines: 16685
-  Total lines: 42008
-  Branch coverage: 95.4% (6028 of 6315)
-  Covered branches: 6028
-  Total branches: 6315
-  Method coverage: 98.7% (1128 of 1142)
-  Full method coverage: 20.2% (231 of 1142)
-  Covered methods: 1128
+  Coverable lines: 16708
+  Total lines: 42063
+  Branch coverage: 95.4% (6036 of 6323)
+  Covered branches: 6036
+  Total branches: 6323
+  Method coverage: 98.7% (1129 of 1143)
+  Full method coverage: 20.2% (231 of 1143)
+  Covered methods: 1129
   Fully covered methods: 231
-  Total methods: 1142
+  Total methods: 1143
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -138,6 +138,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes.CountSubarraysWhereMaxElementAppearsAtLeastKTimesSlidingWindow                  100%
   LeetCode.Algorithms.CountSubarraysWithFixedBounds.CountSubarraysWithFixedBoundsSlidingWindow                                                          100%
   LeetCode.Algorithms.CountSubIslands.CountSubIslandsDepthFirstSearch                                                                                   100%
+  LeetCode.Algorithms.CountSymmetricIntegers.CountSymmetricIntegersIterative                                                                            100%
   LeetCode.Algorithms.CountTheDigitsThatDivideNumber.CountTheDigitsThatDivideNumberIterative                                                            100%
   LeetCode.Algorithms.CountTheNumberOfConsistentStrings.CountTheNumberOfConsistentStringsArray                                                          100%
   LeetCode.Algorithms.CountTheNumberOfConsistentStrings.CountTheNumberOfConsistentStringsHashSet                                                        100%
