@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/31/2025 - 11:38:10 AM
-  Coverage date: 1/31/2025 - 11:37:15 AM - 1/31/2025 - 11:37:34 AM
+  Generated on: 2/1/2025 - 5:17:57 PM
+  Coverage date: 2/1/2025 - 5:16:45 PM - 2/1/2025 - 5:17:02 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 781
-  Files: 781
+  Classes: 782
+  Files: 782
   Line coverage: 97.6%
-  Covered lines: 16314
+  Covered lines: 16342
   Uncovered lines: 394
-  Coverable lines: 16708
-  Total lines: 42063
-  Branch coverage: 95.4% (6036 of 6323)
-  Covered branches: 6036
-  Total branches: 6323
-  Method coverage: 98.7% (1129 of 1143)
-  Full method coverage: 20.2% (231 of 1143)
-  Covered methods: 1129
-  Fully covered methods: 231
-  Total methods: 1143
+  Coverable lines: 16736
+  Total lines: 42125
+  Branch coverage: 95.4% (6046 of 6333)
+  Covered branches: 6046
+  Total branches: 6333
+  Method coverage: 98.7% (1131 of 1145)
+  Full method coverage: 20.2% (232 of 1145)
+  Covered methods: 1131
+  Fully covered methods: 232
+  Total methods: 1145
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -771,6 +771,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ValidParentheses.ValidParenthesesStackSwitch                                                                                      100%
   LeetCode.Algorithms.ValidParenthesisString.ValidParenthesisStringIterative                                                                            100%
   LeetCode.Algorithms.ValidPerfectSquare.ValidPerfectSquareBinarySearch                                                                                 100%
+  LeetCode.Algorithms.ValidWord.ValidWordIterative                                                                                                      100%
   LeetCode.Algorithms.WalkingRobotSimulation.WalkingRobotSimulationHashSet                                                                               90%
   LeetCode.Algorithms.WaterBottles.WaterBottlesSimulation                                                                                               100%
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsAscending                100%
