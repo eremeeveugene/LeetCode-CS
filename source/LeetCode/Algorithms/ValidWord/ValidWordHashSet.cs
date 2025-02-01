@@ -12,12 +12,26 @@
 namespace LeetCode.Algorithms.ValidWord;
 
 /// <inheritdoc />
-public class ValidWordIterative : IValidWord
+public class ValidWordHashSet : IValidWord
 {
+    private static readonly HashSet<char> Digits =
+    [
+        ..Enumerable.Range('0', 10).Select(c => (char)c)
+    ];
+
+    private static readonly HashSet<char> Letters =
+    [
+        ..Enumerable.Range('a', 26).Select(c => (char)c)
+            .Concat(Enumerable.Range('A', 26).Select(c => (char)c))
+    ];
+
     private static readonly HashSet<char> Vowels =
     [
-        'a', 'e', 'i', 'o', 'u'
+        'a', 'e', 'i', 'o', 'u',
+        'A', 'E', 'I', 'O', 'U'
     ];
+
+    private static readonly HashSet<char> Consonants = [..Letters.Except(Vowels)];
 
     /// <summary>
     ///     Time complexity - O(n)
@@ -37,24 +51,13 @@ public class ValidWordIterative : IValidWord
 
         foreach (var character in word)
         {
-            if (!char.IsLetterOrDigit(character))
+            if (!Letters.Contains(character) && !Digits.Contains(character))
             {
                 return false;
             }
 
-            if (char.IsDigit(character))
-            {
-                continue;
-            }
-
-            if (Vowels.Contains(char.ToLower(character)))
-            {
-                hasVowel = true;
-            }
-            else
-            {
-                hasConsonant = true;
-            }
+            hasVowel |= Vowels.Contains(character);
+            hasConsonant |= Consonants.Contains(character);
         }
 
         return hasVowel && hasConsonant;
