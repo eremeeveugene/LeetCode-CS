@@ -513,6 +513,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3099. Harshad Number](https://leetcode.com/problems/harshad-number/description/)
 - [3110. Score of a String](https://leetcode.com/problems/score-of-a-string/description/)
 - [3133. Minimum Array End](https://leetcode.com/problems/minimum-array-end/description/)
+- [3136. Valid Word](https://leetcode.com/problems/valid-word/description/)
 - [3151. Special Array I](https://leetcode.com/problems/special-array-i/description/)
 - [3152. Special Array II](https://leetcode.com/problems/special-array-ii/description/)
 - [3163. String Compression III](https://leetcode.com/problems/string-compression-iii/description/)
