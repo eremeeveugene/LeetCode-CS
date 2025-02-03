@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/2/2025 - 10:55:13 AM
-  Coverage date: 2/2/2025 - 10:54:10 AM - 2/2/2025 - 10:54:27 AM
+  Generated on: 2/3/2025 - 12:19:36 PM
+  Coverage date: 2/3/2025 - 12:18:33 PM - 2/3/2025 - 12:18:50 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 783
-  Files: 783
+  Classes: 784
+  Files: 784
   Line coverage: 97.6%
-  Covered lines: 16357
+  Covered lines: 16381
   Uncovered lines: 396
-  Coverable lines: 16753
-  Total lines: 42174
-  Branch coverage: 95.4% (6053 of 6341)
-  Covered branches: 6053
-  Total branches: 6341
-  Method coverage: 98.7% (1132 of 1146)
-  Full method coverage: 20.2% (232 of 1146)
-  Covered methods: 1132
+  Coverable lines: 16777
+  Total lines: 42227
+  Branch coverage: 95.4% (6059 of 6347)
+  Covered branches: 6059
+  Total branches: 6347
+  Method coverage: 98.7% (1133 of 1147)
+  Full method coverage: 20.2% (232 of 1147)
+  Covered methods: 1133
   Fully covered methods: 232
-  Total methods: 1146
+  Total methods: 1147
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -372,6 +372,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestPalindrome.LongestPalindromeArray                                                                                          100%
   LeetCode.Algorithms.LongestPalindrome.LongestPalindromeDictionary                                                                                     100%
   LeetCode.Algorithms.LongestPalindromicSubstring.LongestPalindromicSubstringTwoPointers                                                                100%
+  LeetCode.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubarray.LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayIterative              100%
   LeetCode.Algorithms.LongestSubarrayWithMaximumBitwiseAND.LongestSubarrayWithMaximumBitwiseANDIterative                                                100%
   LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters.LongestSubstringWithoutRepeatingCharactersSlidingWindow                                100%
   LeetCode.Algorithms.LuckyNumbersInMatrix.LuckyNumbersInMatrixBruteForce                                                                               100%
