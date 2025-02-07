@@ -521,6 +521,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3136. Valid Word](https://leetcode.com/problems/valid-word/description/)
 - [3151. Special Array I](https://leetcode.com/problems/special-array-i/description/)
 - [3152. Special Array II](https://leetcode.com/problems/special-array-ii/description/)
+- [3160. Find the Number of Distinct Colors Among the Balls](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/description/)
 - [3163. String Compression III](https://leetcode.com/problems/string-compression-iii/description/)
 - [3174. Clear Digits](https://leetcode.com/problems/clear-digits/description/)
 - [3190. Find Minimum Operations to Make All Elements Divisible by Three](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/description/)
