@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/7/2025 - 11:56:13 AM
-  Coverage date: 2/7/2025 - 11:55:06 AM - 2/7/2025 - 11:55:24 AM
+  Generated on: 2/8/2025 - 5:56:13 PM
+  Coverage date: 2/8/2025 - 5:55:06 PM - 2/8/2025 - 5:55:23 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 788
-  Files: 788
+  Classes: 790
+  Files: 790
   Line coverage: 97.6%
-  Covered lines: 16458
-  Uncovered lines: 396
-  Coverable lines: 16854
-  Total lines: 42426
-  Branch coverage: 95.4% (6087 of 6377)
-  Covered branches: 6087
-  Total branches: 6377
-  Method coverage: 98.7% (1137 of 1151)
-  Full method coverage: 20.1% (232 of 1151)
-  Covered methods: 1137
-  Fully covered methods: 232
-  Total methods: 1151
+  Covered lines: 16487
+  Uncovered lines: 401
+  Coverable lines: 16888
+  Total lines: 42519
+  Branch coverage: 95.4% (6099 of 6391)
+  Covered branches: 6099
+  Total branches: 6391
+  Method coverage: 98.7% (1141 of 1155)
+  Full method coverage: 20.2% (234 of 1155)
+  Covered methods: 1141
+  Fully covered methods: 234
+  Total methods: 1155
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -177,6 +177,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceBruteForceFactory                                                                100%
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceDictionary                                                                       100%
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceDictionaryFactory                                                                100%
+  LeetCode.Algorithms.DesignNumberContainerSystem.DesignNumberContainerSystemDictionary                                                                83.8%
+  LeetCode.Algorithms.DesignNumberContainerSystem.DesignNumberContainerSystemFactoryDictionary                                                          100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArray                                                          100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArrayFactory                                                   100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedList                                                     100%
