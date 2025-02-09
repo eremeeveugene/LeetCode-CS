@@ -434,6 +434,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2331. Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree/description/)
 - [2337. Move Pieces to Obtain a String](https://leetcode.com/problems/move-pieces-to-obtain-a-string/description/)
 - [2349. Design a Number Container System](https://leetcode.com/problems/design-a-number-container-system/description/)
+- [2364. Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/description/)
 - [2370. Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence/description/)
 - [2373. Largest Local Values in a Matrix](https://leetcode.com/problems/largest-local-values-in-a-matrix/description/)
 - [2381. Shifting Letters II](https://leetcode.com/problems/shifting-letters-ii/description/)
