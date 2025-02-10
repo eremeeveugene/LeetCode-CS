@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/9/2025 - 12:08:41 PM
-  Coverage date: 2/9/2025 - 12:07:44 PM - 2/9/2025 - 12:08:03 PM
+  Generated on: 2/10/2025 - 10:59:09 AM
+  Coverage date: 2/10/2025 - 10:58:04 AM - 2/10/2025 - 10:58:21 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 792
-  Files: 792
+  Classes: 793
+  Files: 793
   Line coverage: 97.6%
-  Covered lines: 16519
-  Uncovered lines: 401
-  Coverable lines: 16920
-  Total lines: 42610
-  Branch coverage: 95.4% (6109 of 6401)
-  Covered branches: 6109
-  Total branches: 6401
-  Method coverage: 98.7% (1143 of 1157)
-  Full method coverage: 20.2% (234 of 1157)
-  Covered methods: 1143
+  Covered lines: 16537
+  Uncovered lines: 404
+  Coverable lines: 16941
+  Total lines: 42660
+  Branch coverage: 95.4% (6118 of 6411)
+  Covered branches: 6118
+  Total branches: 6411
+  Method coverage: 98.7% (1144 of 1158)
+  Full method coverage: 20.2% (234 of 1158)
+  Covered methods: 1144
   Fully covered methods: 234
-  Total methods: 1157
+  Total methods: 1158
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -660,6 +660,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SearchInBinarySearchTree.SearchInBinarySearchTreeDepthFirstSearchStack                                                           92.8%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionBinarySearch                                                                             100%
   LeetCode.Algorithms.SearchInsertPosition.SearchInsertPositionIterative                                                                                100%
+  LeetCode.Algorithms.SecondLargestDigitInString.SecondLargestDigitInStringIterative                                                                   85.7%
   LeetCode.Algorithms.SentenceSimilarity3.SentenceSimilarity3TwoPointers                                                                                100%
   LeetCode.Algorithms.SeparateBlackAndWhiteBalls.SeparateBlackAndWhiteBallsTwoPointers                                                                  100%
   LeetCode.Algorithms.SetMatrixZeroes.SetMatrixZeroesArrayMarkers                                                                                       100%
