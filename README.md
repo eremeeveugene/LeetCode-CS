@@ -375,6 +375,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1790. Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/description/)
 - [1791. Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/description/)
 - [1792. Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/description/)
+- [1796. Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/description/)
 - [1800. Maximum Ascending Subarray Sum](https://leetcode.com/problems/maximum-ascending-subarray-sum/description/)
 - [1813. Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/description/)
 - [1822. Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/description/)
