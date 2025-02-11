@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/10/2025 - 10:59:09 AM
-  Coverage date: 2/10/2025 - 10:58:04 AM - 2/10/2025 - 10:58:21 AM
+  Generated on: 2/11/2025 - 2:00:10 PM
+  Coverage date: 2/11/2025 - 1:59:17 PM - 2/11/2025 - 1:59:34 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 793
-  Files: 793
+  Classes: 795
+  Files: 795
   Line coverage: 97.6%
-  Covered lines: 16537
+  Covered lines: 16580
   Uncovered lines: 404
-  Coverable lines: 16941
-  Total lines: 42660
-  Branch coverage: 95.4% (6118 of 6411)
-  Covered branches: 6118
-  Total branches: 6411
-  Method coverage: 98.7% (1144 of 1158)
-  Full method coverage: 20.2% (234 of 1158)
-  Covered methods: 1144
+  Coverable lines: 16984
+  Total lines: 42769
+  Branch coverage: 95.4% (6136 of 6429)
+  Covered branches: 6136
+  Total branches: 6429
+  Method coverage: 98.7% (1146 of 1160)
+  Full method coverage: 20.1% (234 of 1160)
+  Covered methods: 1146
   Fully covered methods: 234
-  Total methods: 1158
+  Total methods: 1160
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -599,6 +599,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.RelativeSortArray.RelativeSortArrayCountingSort                                                                                   100%
   LeetCode.Algorithms.RelativeSortArray.RelativeSortArrayDictionarySorting                                                                              100%
   LeetCode.Algorithms.RelativeSortArray.RelativeSortArrayTwoLoopsSorting                                                                                100%
+  LeetCode.Algorithms.RemoveAllOccurrencesOfSubstring.RemoveAllOccurrencesOfSubstringStack                                                              100%
+  LeetCode.Algorithms.RemoveAllOccurrencesOfSubstring.RemoveAllOccurrencesOfSubstringStringBuilder                                                      100%
   LeetCode.Algorithms.RemoveDuplicatesFromSortedArray.RemoveDuplicatesFromSortedArrayIterative                                                          100%
   LeetCode.Algorithms.RemoveDuplicatesFromSortedArray2.RemoveDuplicatesFromSortedArray2Dictionary                                                       100%
   LeetCode.Algorithms.RemoveDuplicatesFromSortedArray2.RemoveDuplicatesFromSortedArray2TwoPointers                                                     86.6%
