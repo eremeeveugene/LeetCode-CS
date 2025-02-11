@@ -386,6 +386,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1863. Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/description/)
 - [1894. Find the Student that Will Replace the Chalk](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/description/)
 - [1905. Count Sub Islands](https://leetcode.com/problems/count-sub-islands/description/)
+- [1910. Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/description/)
 - [1915. Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings/description/)
 - [1920. Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/description/)
 - [1929. Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/description/)
