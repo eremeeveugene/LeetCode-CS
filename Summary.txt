@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/11/2025 - 2:00:10 PM
-  Coverage date: 2/11/2025 - 1:59:17 PM - 2/11/2025 - 1:59:34 PM
+  Generated on: 2/12/2025 - 11:33:43 AM
+  Coverage date: 2/12/2025 - 11:32:42 AM - 2/12/2025 - 11:33:00 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 795
-  Files: 795
+  Classes: 797
+  Files: 797
   Line coverage: 97.6%
-  Covered lines: 16580
+  Covered lines: 16649
   Uncovered lines: 404
-  Coverable lines: 16984
-  Total lines: 42769
-  Branch coverage: 95.4% (6136 of 6429)
-  Covered branches: 6136
-  Total branches: 6429
-  Method coverage: 98.7% (1146 of 1160)
-  Full method coverage: 20.1% (234 of 1160)
-  Covered methods: 1146
+  Coverable lines: 17053
+  Total lines: 42907
+  Branch coverage: 95.4% (6156 of 6449)
+  Covered branches: 6156
+  Total branches: 6449
+  Method coverage: 98.7% (1150 of 1164)
+  Full method coverage: 20.1% (234 of 1164)
+  Covered methods: 1150
   Fully covered methods: 234
-  Total methods: 1160
+  Total methods: 1164
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -430,6 +430,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumWidthRamp.MaximumWidthRampStack                                                                                             92%
   LeetCode.Algorithms.MaximumXORForEachQuery.MaximumXORForEachQueryBitMasking                                                                           100%
   LeetCode.Algorithms.MaximumXORForEachQuery.MaximumXORForEachQueryBruteForce                                                                           100%
+  LeetCode.Algorithms.MaxSumOfPairWithEqualSumOfDigits.MaxSumOfPairWithEqualSumOfDigits1                                                                100%
+  LeetCode.Algorithms.MaxSumOfPairWithEqualSumOfDigits.MaxSumOfPairWithEqualSumOfDigitsDictionary                                                       100%
   LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysBinarySearch                                                                      92.3%
   LeetCode.Algorithms.MedianOfTwoSortedArrays.MedianOfTwoSortedArraysIterative                                                                          100%
   LeetCode.Algorithms.MergeNodesInBetweenZeros.MergeNodesInBetweenZerosIterative                                                                       91.3%
