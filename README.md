@@ -435,6 +435,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2326. Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/description/)
 - [2331. Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree/description/)
 - [2337. Move Pieces to Obtain a String](https://leetcode.com/problems/move-pieces-to-obtain-a-string/description/)
+- [2342. Max Sum of a Pair With Equal Sum of Digits](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/description/)
 - [2349. Design a Number Container System](https://leetcode.com/problems/design-a-number-container-system/description/)
 - [2364. Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/description/)
 - [2370. Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence/description/)
