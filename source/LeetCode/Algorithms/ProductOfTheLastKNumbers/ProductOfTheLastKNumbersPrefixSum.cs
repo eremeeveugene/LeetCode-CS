@@ -16,6 +16,11 @@ public class ProductOfTheLastKNumbersPrefixSum : IProductOfTheLastKNumbers
 {
     private readonly List<int> _products = [];
 
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(n)
+    /// </summary>
+    /// <param name="num"></param>
     public void Add(int num)
     {
         if (num == 0)
@@ -35,6 +40,12 @@ public class ProductOfTheLastKNumbersPrefixSum : IProductOfTheLastKNumbers
         }
     }
 
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="k"></param>
+    /// <returns></returns>
     public int GetProduct(int k)
     {
         if (k > _products.Count)
