@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/13/2025 - 1:06:01 PM
-  Coverage date: 2/13/2025 - 1:05:00 PM - 2/13/2025 - 1:05:17 PM
+  Generated on: 2/14/2025 - 12:46:32 PM
+  Coverage date: 2/14/2025 - 12:45:25 PM - 2/14/2025 - 12:45:43 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 798
-  Files: 798
+  Classes: 800
+  Files: 800
   Line coverage: 97.6%
-  Covered lines: 16666
+  Covered lines: 16694
   Uncovered lines: 404
-  Coverable lines: 17070
-  Total lines: 42956
-  Branch coverage: 95.4% (6162 of 6455)
-  Covered branches: 6162
-  Total branches: 6455
-  Method coverage: 98.7% (1151 of 1165)
-  Full method coverage: 20% (234 of 1165)
-  Covered methods: 1151
-  Fully covered methods: 234
-  Total methods: 1165
+  Coverable lines: 17098
+  Total lines: 43039
+  Branch coverage: 95.4% (6170 of 6463)
+  Covered branches: 6170
+  Total branches: 6463
+  Method coverage: 98.8% (1155 of 1169)
+  Full method coverage: 20.1% (236 of 1169)
+  Covered methods: 1155
+  Fully covered methods: 236
+  Total methods: 1169
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -585,6 +585,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoLogarithms                                                                                                   100%
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoRecursive                                                                                                    100%
   LeetCode.Algorithms.PrimeSubtractionOperation.PrimeSubtractionOperationIterative                                                                      100%
+  LeetCode.Algorithms.ProductOfTheLastKNumbers.ProductOfTheLastKNumbersPrefixSum                                                                        100%
+  LeetCode.Algorithms.ProductOfTheLastKNumbers.ProductOfTheLastKNumbersPrefixSumFactory                                                                 100%
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTBreadthFirstSearch                                                                                      92%
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTDepthFirstSearchRecursive                                                                             89.4%
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTDepthFirstSearchStack                                                                                   92%
