@@ -11,10 +11,10 @@
 
 namespace LeetCode.Algorithms.ProductOfTheLastKNumbers;
 
-public class ProductOfTheLastKNumbersListFactory : IProductOfTheLastKNumbersFactory
+public class ProductOfTheLastKNumbersPrefixSumFactory : IProductOfTheLastKNumbersFactory
 {
     public IProductOfTheLastKNumbers Create()
     {
-        return new ProductOfTheLastKNumbersList();
+        return new ProductOfTheLastKNumbersPrefixSum();
     }
 }

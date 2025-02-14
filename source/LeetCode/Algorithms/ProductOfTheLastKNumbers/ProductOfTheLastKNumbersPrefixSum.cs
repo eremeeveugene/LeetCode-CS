@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ProductOfTheLastKNumbers;
 
 /// <inheritdoc />
-public class ProductOfTheLastKNumbersList : IProductOfTheLastKNumbers
+public class ProductOfTheLastKNumbersPrefixSum : IProductOfTheLastKNumbers
 {
     private readonly List<int> _products = [];
 

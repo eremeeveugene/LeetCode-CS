@@ -14,4 +14,5 @@ using LeetCode.Algorithms.ProductOfTheLastKNumbers;
 namespace LeetCode.Tests.Algorithms.ProductOfTheLastKNumbers;
 
 [TestClass]
-public class ProductOfTheLastKNumbersListTests : ProductOfTheLastKNumbersTestsBase<ProductOfTheLastKNumbersListFactory>;
+public class ProductOfTheLastKNumbersPrefixSumTests :
+    ProductOfTheLastKNumbersTestsBase<ProductOfTheLastKNumbersPrefixSumFactory>;
