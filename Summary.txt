@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/14/2025 - 12:46:32 PM
-  Coverage date: 2/14/2025 - 12:45:25 PM - 2/14/2025 - 12:45:43 PM
+  Generated on: 2/15/2025 - 1:03:29 PM
+  Coverage date: 2/15/2025 - 1:02:26 PM - 2/15/2025 - 1:02:43 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 800
-  Files: 800
+  Classes: 801
+  Files: 801
   Line coverage: 97.6%
-  Covered lines: 16694
+  Covered lines: 16724
   Uncovered lines: 404
-  Coverable lines: 17098
-  Total lines: 43039
-  Branch coverage: 95.4% (6170 of 6463)
-  Covered branches: 6170
-  Total branches: 6463
-  Method coverage: 98.8% (1155 of 1169)
-  Full method coverage: 20.1% (236 of 1169)
-  Covered methods: 1155
+  Coverable lines: 17128
+  Total lines: 43106
+  Branch coverage: 95.4% (6182 of 6475)
+  Covered branches: 6182
+  Total branches: 6475
+  Method coverage: 98.8% (1157 of 1171)
+  Full method coverage: 20.1% (236 of 1171)
+  Covered methods: 1157
   Fully covered methods: 236
-  Total methods: 1169
+  Total methods: 1171
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -278,6 +278,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindThePowerOfKSizeSubarrays1.FindThePowerOfKSizeSubarrays1ConsecutiveCount                                                      91.3%
   LeetCode.Algorithms.FindThePrefixCommonArrayOfTwoArrays.FindThePrefixCommonArrayOfTwoArraysFrequencyArray                                             100%
   LeetCode.Algorithms.FindThePrefixCommonArrayOfTwoArrays.FindThePrefixCommonArrayOfTwoArraysHashSet                                                    100%
+  LeetCode.Algorithms.FindThePunishmentNumberOfInteger.FindThePunishmentNumberOfIntegerRecursive                                                        100%
   LeetCode.Algorithms.FindTheSafestPathInGrid.FindTheSafestPathInGridPriorityQueue                                                                     98.4%
   LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk.FindTheStudentThatWillReplaceTheChalkBinarySearch                                           100%
   LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk.FindTheStudentThatWillReplaceTheChalkPrefixSum                                              100%
