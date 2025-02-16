@@ -31,36 +31,38 @@ jobs:
       - name: Run Tests with Coverage
         run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
 
-      - name: Install .NET Format tool
-        run: dotnet tool install -g dotnet-format
+      - name: Restore .NET Tools
+        run: dotnet tool restore
 
       - name: Check Code Style
         run: dotnet format --verify-no-changes --verbosity diagnostic
 
-      - name: Install Report Generator Tool
-        run: dotnet tool install --global dotnet-reportgenerator-globaltool
-
       - name: Generate Coverage Report
-        run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
-
-      - name: Generate Summary Report
-        run: reportgenerator -reports:"./Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"TextSummary"
+        run: reportgenerator -reports:"../Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura;TextSummary"
 
       - name: Check Coverage Percentage
         run: |
-          $coveragePercentage = (Get-Content -Path "coverage/Summary.txt" | Select-String -Pattern 'Line coverage:' | ForEach-Object { $_ -match '(\d+\.\d+)%' | Out-Null; $matches[1] })
+          $coverageSummary = Get-Content -Path "coverage/Summary.txt"
+          $lineCoverage = $coverageSummary | Where-Object { $_ -match 'Line coverage:\s+([\d.]+)%' }
+          $coveragePercentage = [double]$matches[1]
+
           if ($coveragePercentage -lt 90) {
-            Write-Error "Coverage is below 90%. It's at $coveragePercentage%"
-            exit 1
+              Write-Error "Coverage is below 90%. It's at $coveragePercentage%"
+              exit 1
           } else {
-            Write-Output "Coverage is above 90%. It's at $coveragePercentage%"
+              Write-Output "Coverage is above 90%. It's at $coveragePercentage%"
           }
+
+      - name: Output Coverage Summary to GitHub Actions Summary
+        run: |
+          $summary = Get-Content -Path "coverage/Summary.txt" -Raw
+          $summary | Out-File -FilePath $env:GITHUB_STEP_SUMMARY
 
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./source/coverage
+          publish_dir: ${{ github.workspace }}/source/coverage
           publish_branch: gh-pages
           keep_files: true
