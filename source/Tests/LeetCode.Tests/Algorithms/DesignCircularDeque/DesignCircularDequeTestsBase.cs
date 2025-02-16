@@ -17,7 +17,7 @@ namespace LeetCode.Tests.Algorithms.DesignCircularDeque;
 public abstract class DesignCircularDequeTestsBase<T> where T : IDesignCircularDequeFactory, new()
 {
     [TestMethod]
-    [DataRow(3, "[true,true,true,false,2,true,true,true,4]")]
+    [DataRow(3, "[\"true\",\"true\",\"true\",\"false\",\"2\",\"true\",\"true\",\"true\",\"4\"]")]
     public void CircularDequeOperations_WithMultipleInsertsAndDeletions_ReturnsCorrectResults(int k,
         string expectedResultJson)
     {

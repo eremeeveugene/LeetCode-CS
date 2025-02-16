@@ -25,7 +25,7 @@ public abstract class NaryTreePostorderTraversalTestsBase<T> where T : INaryTree
     public void Postorder_GivenBinaryTree_ReturnsCorrectTraversal(string rootJsonArray, string expectedResultJsonArray)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToList(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
         var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
         var root = Node.ToNode(rootArray);
 
@@ -35,6 +35,6 @@ public abstract class NaryTreePostorderTraversalTestsBase<T> where T : INaryTree
         var actualResult = solution.Postorder(root);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult.ToArray(), actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
     }
 }

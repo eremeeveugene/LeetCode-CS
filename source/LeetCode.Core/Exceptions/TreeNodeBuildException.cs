@@ -9,8 +9,11 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Diagnostics.CodeAnalysis;
+
 namespace LeetCode.Core.Exceptions;
 
+[ExcludeFromCodeCoverage]
 public class TreeNodeBuildException : InvalidOperationException
 {
     private const string DefaultErrorMessage = "Failed to build TreeNode.";

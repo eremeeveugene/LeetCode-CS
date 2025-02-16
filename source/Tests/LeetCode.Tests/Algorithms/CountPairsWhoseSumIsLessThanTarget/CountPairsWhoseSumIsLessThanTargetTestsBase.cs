@@ -24,7 +24,7 @@ public abstract class CountPairsWhoseSumIsLessThanTargetTestsBase<T>
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToList(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
 
         var solution = new T();
 

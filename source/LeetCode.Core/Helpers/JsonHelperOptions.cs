@@ -13,23 +13,11 @@ using System.Text.Json;
 
 namespace LeetCode.Core.Helpers;
 
-public static class JsonHelper<T>
+internal static class JsonHelperOptions
 {
-    public static T[] DeserializeToArray(string jsonArray)
+    public static readonly JsonSerializerOptions Options = new()
     {
-        return JsonSerializer.Deserialize<T[]>(jsonArray, JsonHelperOptions.Options) ??
-               throw new JsonException("Failed to deserialize array.");
-    }
-
-    public static T[][] DeserializeToJaggedArray(string jsonArray)
-    {
-        return JsonSerializer.Deserialize<T[][]>(jsonArray, JsonHelperOptions.Options) ??
-               throw new JsonException("Failed to deserialize jagged array.");
-    }
-
-    public static IList<IList<T>> DeserializeToJaggedList(string jsonArray)
-    {
-        return JsonSerializer.Deserialize<IList<IList<T>>>(jsonArray, JsonHelperOptions.Options) ??
-               throw new JsonException("Failed to deserialize jagged list.");
-    }
+        AllowTrailingCommas = true,
+        PropertyNameCaseInsensitive = true
+    };
 }

@@ -22,7 +22,8 @@ public abstract class ImplementTrieTestsBase<T> where T : IImplementTrie, new()
 
     [TestMethod]
     [DataRow("[\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]",
-        "[\"apple\",\"apple\",\"app\",\"app\",\"app\",\"app\"]", "[\"true\",\"false\",\"true\",\"true\"]")]
+        "[\"apple\",\"apple\",\"app\",\"app\",\"app\",\"app\"]",
+        "[true,false,true,true]")]
     public void TrieOperations_WithMultipleCommands_ReturnsActionResults(string methodsJsonArray, string argsJsonArray,
         string expectedResultsJsonArray)
     {

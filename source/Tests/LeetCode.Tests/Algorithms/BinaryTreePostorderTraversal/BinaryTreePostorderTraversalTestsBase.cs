@@ -27,7 +27,7 @@ public abstract class BinaryTreePostorderTraversalTestsBase<T> where T : IBinary
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonHelper<int?>.DeserializeToList(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
         var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
         var root = TreeNode.ToTreeNode(rootArray);
 
@@ -36,6 +36,6 @@ public abstract class BinaryTreePostorderTraversalTestsBase<T> where T : IBinary
 
         // Assert
         Assert.IsNotNull(actualResult);
-        CollectionAssert.AreEqual(expectedResult.ToArray(), actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
     }
 }

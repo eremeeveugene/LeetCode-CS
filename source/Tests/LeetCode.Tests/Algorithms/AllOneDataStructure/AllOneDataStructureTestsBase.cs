@@ -22,13 +22,10 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
     private const string Dec = "dec";
 
     [TestMethod]
-    [DataRow(
-        "[\"inc\",\"inc\",\"getMaxKey\",\"getMinKey\",\"inc\",\"getMaxKey\",\"getMinKey\"]",
-        "[\"hello\",\"hello\",null,null,\"leet\",null,null]",
-        "[\"hello\",\"hello\",\"hello\",\"leet\"]")]
+    [DataRow("[\"inc\",\"inc\",\"getMaxKey\",\"getMinKey\",\"inc\",\"getMaxKey\",\"getMinKey\"]",
+        "[\"hello\",\"hello\",null,null,\"leet\",null,null]", "[\"hello\",\"hello\",\"hello\",\"leet\"]")]
     public void IncDecAndGetKeyMethods_WithVariousOperations_ReturnsMaxAndMinKeys(string methodsJsonArray,
-        string argsJsonArray,
-        string expectedResultsJsonArray)
+        string argsJsonArray, string expectedResultsJsonArray)
     {
         // Arrange
         var methods = JsonHelper<string>.DeserializeToArray(methodsJsonArray);

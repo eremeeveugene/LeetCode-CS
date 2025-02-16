@@ -24,42 +24,52 @@ public class TreeNode(int? val = null, TreeNode? left = null, TreeNode? right = 
 
     public int val = val ?? 0;
 
-    public static TreeNode? ToTreeNode(int?[] values)
+    public static TreeNode? ToTreeNode(IEnumerable<int?> values)
     {
-        if (values.Length == 0 || values[0] == null)
+        using var enumerator = values.GetEnumerator();
+
+        if (!enumerator.MoveNext() || enumerator.Current == null)
         {
             return null;
         }
 
-        var root = new TreeNode(values[0]);
-
+        var root = new TreeNode(enumerator.Current.Value);
         var queue = new Queue<TreeNode>();
-
         queue.Enqueue(root);
 
-        var i = 1;
-
-        while (queue.Count > 0 && i < values.Length)
+        while (queue.Count > 0)
         {
             var current = queue.Dequeue();
 
-            if (i < values.Length && values[i].HasValue)
+            if (enumerator.MoveNext())
             {
-                current.left = new TreeNode(values[i]);
+                if (enumerator.Current.HasValue)
+                {
+                    current.left = new TreeNode(enumerator.Current.Value);
 
-                queue.Enqueue(current.left);
+                    queue.Enqueue(current.left);
+                }
+            }
+            else
+            {
+                break;
             }
 
-            i++;
-
-            if (i < values.Length && values[i].HasValue)
+            if (enumerator.MoveNext())
             {
-                current.right = new TreeNode(values[i]);
+                if (!enumerator.Current.HasValue)
+                {
+                    continue;
+                }
+
+                current.right = new TreeNode(enumerator.Current.Value);
 
                 queue.Enqueue(current.right);
             }
-
-            i++;
+            else
+            {
+                break;
+            }
         }
 
         return root;

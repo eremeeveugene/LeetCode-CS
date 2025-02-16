@@ -34,6 +34,6 @@ public abstract class CombinationSum2TestsBase<T> where T : ICombinationSum2, ne
         var actualResult = solution.CombinationSum2(candidates, target);
 
         // Assert
-        JaggedListAssert.AreEquivalent(expectedResult, actualResult);
+        JaggedArrayAssert.AreEquivalent(expectedResult, actualResult);
     }
 }

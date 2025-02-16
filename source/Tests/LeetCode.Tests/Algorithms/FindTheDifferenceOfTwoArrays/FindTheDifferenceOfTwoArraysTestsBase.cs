@@ -34,6 +34,6 @@ public abstract class FindTheDifferenceOfTwoArraysTestsBase<T> where T : IFindTh
         var actualResult = solution.FindDifference(nums1, nums2);
 
         // Assert
-        JaggedListAssert.AreEqual(expectedResult, actualResult);
+        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
     }
 }

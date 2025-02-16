@@ -10,9 +10,11 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Core.Models;
+using System.Diagnostics.CodeAnalysis;
 
 namespace LeetCode.Tests.Base.Extensions;
 
+[ExcludeFromCodeCoverage]
 public static class ListNodeAssert
 {
     public static void AreEqual(IList<ListNode?> expectedLists, IList<ListNode?> actualLists)
