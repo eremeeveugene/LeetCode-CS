@@ -14,4 +14,5 @@ using LeetCode.Algorithms.DesignNeighborSumService;
 namespace LeetCode.Tests.Algorithms.DesignNeighborSumService;
 
 [TestClass]
-public class DesignNeighborSumServiceTests : DesignNeighborSumServiceTestsBase<DesignNeighborSumServiceDictionaryFactory>;
+public class
+    DesignNeighborSumServiceTests : DesignNeighborSumServiceTestsBase<DesignNeighborSumServiceDictionaryFactory>;
