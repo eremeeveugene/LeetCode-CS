@@ -31,14 +31,21 @@ jobs:
       - name: Run Tests with Coverage
         run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
 
-      - name: Restore .NET Tools
-        run: dotnet tool restore
+      - name: Install ReportGenerator
+        run: dotnet tool install --global dotnet-reportgenerator-globaltool
 
       - name: Check Code Style
         run: dotnet format --verify-no-changes --verbosity diagnostic
 
       - name: Generate Coverage Report
-        run: reportgenerator -reports:"../Tests/**/TestResults/**/coverage.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura;TextSummary"
+        run: |
+          reportgenerator -reports:"../Tests/**/TestResults/**/*.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura;TextSummary"
+
+      - name: Output Coverage Summary to GitHub Actions Summary
+        run: |
+          $summary = Get-Content -Path "coverage/Summary.txt" -Raw
+          $summary | Out-File -FilePath $env:GITHUB_STEP_SUMMARY
+        shell: pwsh
 
       - name: Check Coverage Percentage
         run: |
@@ -52,11 +59,7 @@ jobs:
           } else {
               Write-Output "Coverage is above 90%. It's at $coveragePercentage%"
           }
-
-      - name: Output Coverage Summary to GitHub Actions Summary
-        run: |
-          $summary = Get-Content -Path "coverage/Summary.txt" -Raw
-          $summary | Out-File -FilePath $env:GITHUB_STEP_SUMMARY
+        shell: pwsh
 
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
