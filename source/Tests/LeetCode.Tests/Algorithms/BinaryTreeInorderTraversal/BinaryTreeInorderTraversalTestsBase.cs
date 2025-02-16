@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -27,7 +27,7 @@ public abstract class BinaryTreeInorderTraversalTestsBase<T> where T : IBinaryTr
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonHelper<int?>.DeserializeToList(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
         var inputArray = JsonHelper<int?>.DeserializeToArray(inputJsonArray);
         var inputNode = TreeNode.ToTreeNode(inputArray);
 
@@ -36,6 +36,6 @@ public abstract class BinaryTreeInorderTraversalTestsBase<T> where T : IBinaryTr
 
         // Assert
         Assert.IsNotNull(actualResult);
-        CollectionAssert.AreEqual(expectedResult.ToList(), actualResult.ToList());
+        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
     }
 }

@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -34,6 +34,6 @@ public abstract class PermutationsTestsBase<T> where T : IPermutations, new()
         var actualResult = solution.Permute(nums);
 
         // Assert
-        JaggedListAssert.AreEquivalent(expectedResult, actualResult);
+        JaggedArrayAssert.AreEquivalent(expectedResult, actualResult);
     }
 }

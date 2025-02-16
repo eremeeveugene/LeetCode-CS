@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -35,8 +35,8 @@ public abstract class DeleteNodesAndReturnForestTestsBase<T> where T : IDeleteNo
         var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
         var root = TreeNode.ToTreeNode(rootArray);
         var toDelete = JsonHelper<int>.DeserializeToArray(toDeleteJsonArray);
-        var expectedResultArray = JsonHelper<List<int?>>.DeserializeToList(expectedResultJsonArray);
-        var expectedResult = expectedResultArray.Select(treeNode => TreeNode.ToTreeNode(treeNode.ToArray())).ToList();
+        var expectedResultArray = JsonHelper<int?>.DeserializeToJaggedList(expectedResultJsonArray);
+        var expectedResult = expectedResultArray.Select(treeNode => TreeNode.ToTreeNode(treeNode));
 
         var solution = new T();
 

@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -22,7 +22,8 @@ public abstract class ImplementTrieTestsBase<T> where T : IImplementTrie, new()
 
     [TestMethod]
     [DataRow("[\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]",
-        "[\"apple\",\"apple\",\"app\",\"app\",\"app\",\"app\"]", "[\"true\",\"false\",\"true\",\"true\"]")]
+        "[\"apple\",\"apple\",\"app\",\"app\",\"app\",\"app\"]",
+        "[true,false,true,true]")]
     public void TrieOperations_WithMultipleCommands_ReturnsActionResults(string methodsJsonArray, string argsJsonArray,
         string expectedResultsJsonArray)
     {

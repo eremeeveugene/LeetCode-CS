@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -9,8 +9,11 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Diagnostics.CodeAnalysis;
+
 namespace LeetCode.Core.Exceptions;
 
+[ExcludeFromCodeCoverage]
 public class ListNodeBuildException : InvalidOperationException
 {
     private const string DefaultErrorMessage = "Failed to build ListNode.";

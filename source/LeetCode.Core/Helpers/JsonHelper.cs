@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -9,7 +9,7 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using Newtonsoft.Json;
+using System.Text.Json;
 
 namespace LeetCode.Core.Helpers;
 
@@ -17,25 +17,19 @@ public static class JsonHelper<T>
 {
     public static T[] DeserializeToArray(string jsonArray)
     {
-        return JsonConvert.DeserializeObject<T[]>(jsonArray) ??
+        return JsonSerializer.Deserialize<T[]>(jsonArray, JsonHelperOptions.Options) ??
                throw new JsonException("Failed to deserialize array.");
-    }
-
-    public static IList<T> DeserializeToList(string jsonArray)
-    {
-        return JsonConvert.DeserializeObject<List<T>>(jsonArray) ??
-               throw new JsonException("Failed to deserialize list.");
     }
 
     public static T[][] DeserializeToJaggedArray(string jsonArray)
     {
-        return JsonConvert.DeserializeObject<T[][]>(jsonArray) ??
+        return JsonSerializer.Deserialize<T[][]>(jsonArray, JsonHelperOptions.Options) ??
                throw new JsonException("Failed to deserialize jagged array.");
     }
 
     public static IList<IList<T>> DeserializeToJaggedList(string jsonArray)
     {
-        return JsonConvert.DeserializeObject<IList<IList<T>>>(jsonArray) ??
+        return JsonSerializer.Deserialize<IList<IList<T>>>(jsonArray, JsonHelperOptions.Options) ??
                throw new JsonException("Failed to deserialize jagged list.");
     }
 }

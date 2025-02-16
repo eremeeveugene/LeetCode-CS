@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -31,6 +31,6 @@ public abstract class PascalsTriangleTestsBase<T> where T : IPascalsTriangle, ne
         var actualResult = solution.Generate(numRows);
 
         // Assert
-        JaggedListAssert.AreEqual(expectedResult, actualResult);
+        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
     }
 }

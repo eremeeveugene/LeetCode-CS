@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -36,7 +36,7 @@ public abstract class FindCommonCharactersTestsBase<T> where T : IFindCommonChar
 
         var solution = new T();
 
-        var expectedResult = JsonHelper<string>.DeserializeToList(expectedResultJsonArray);
+        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJsonArray);
 
         // Act
         var actualResult = solution.CommonChars(words);

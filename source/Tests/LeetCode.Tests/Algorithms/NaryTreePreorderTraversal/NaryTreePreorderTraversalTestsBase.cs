@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -27,7 +27,7 @@ public abstract class NaryTreePreorderTraversalTestsBase<T> where T : INaryTreeP
         // Arrange
         var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
         var root = Node.ToNode(rootArray);
-        var expectedResult = JsonHelper<int>.DeserializeToList(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
 
         var solution = new T();
 
@@ -35,6 +35,6 @@ public abstract class NaryTreePreorderTraversalTestsBase<T> where T : INaryTreeP
         var actualResult = solution.Preorder(root);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult.ToArray(), actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
     }
 }

@@ -547,6 +547,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3423. Maximum Difference Between Adjacent Elements in a Circular Array](https://leetcode.com/problems/maximum-difference-between-adjacent-elements-in-a-circular-array/description/)
 - [3427. Sum of Variable Length Subarrays](https://leetcode.com/problems/sum-of-variable-length-subarrays/description/)
 - [3432. Count Partitions with Even Sum Difference](https://leetcode.com/problems/count-partitions-with-even-sum-difference/description/)
+- [3452. Sum of Good Numbers](https://leetcode.com/problems/sum-of-good-numbers/description/)
 
   </p>
 </details>

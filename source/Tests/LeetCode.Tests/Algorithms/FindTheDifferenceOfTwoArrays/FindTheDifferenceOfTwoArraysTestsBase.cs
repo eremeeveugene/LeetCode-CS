@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -34,6 +34,6 @@ public abstract class FindTheDifferenceOfTwoArraysTestsBase<T> where T : IFindTh
         var actualResult = solution.FindDifference(nums1, nums2);
 
         // Assert
-        JaggedListAssert.AreEqual(expectedResult, actualResult);
+        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
     }
 }

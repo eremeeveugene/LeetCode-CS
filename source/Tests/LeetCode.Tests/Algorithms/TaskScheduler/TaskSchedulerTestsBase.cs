@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------
-// Copyright (C) 2024 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
 // This software is the confidential and proprietary information of Eugene Eremeev
@@ -17,9 +17,9 @@ namespace LeetCode.Tests.Algorithms.TaskScheduler;
 public abstract class TaskSchedulerTestsBase<T> where T : ITaskScheduler, new()
 {
     [TestMethod]
-    [DataRow("['A','A','A','B','B','B']", 2, 8)]
-    [DataRow("['A','C','A','B','D','B']", 1, 6)]
-    [DataRow("['A','A','A','B','B','B']", 3, 10)]
+    [DataRow("[\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"]", 2, 8)]
+    [DataRow("[\"A\",\"C\",\"A\",\"B\",\"D\",\"B\"]", 1, 6)]
+    [DataRow("[\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"]", 3, 10)]
     public void LeastInterval_GivenTasksAndCooldownPeriod_ReturnsMinimumIntervalsNeeded(string tasksJsonArray, int n,
         int expectedResult)
     {
