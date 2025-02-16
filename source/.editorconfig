@@ -14,6 +14,7 @@ tab_width = 2
 # Microsoft .NET properties
 csharp_new_line_before_members_in_object_initializers = false
 csharp_preferred_modifier_order = public, private, protected, internal, file, new, static, abstract, virtual, sealed, readonly, override, extern, unsafe, volatile, async, required:suggestion
+csharp_preserve_single_line_blocks = true
 csharp_style_expression_bodied_accessors = true:suggestion
 csharp_style_expression_bodied_properties = true:suggestion
 csharp_style_prefer_utf8_string_literals = true:suggestion
@@ -129,6 +130,7 @@ resharper_align_multiline_parameter = true
 resharper_align_multiple_declaration = true
 resharper_csharp_align_multiline_parameter = false
 resharper_csharp_align_multiple_declaration = false
+resharper_keep_existing_declaration_block_arrangement = false
 resharper_use_heuristics_for_body_style = true
 resharper_wrap_simple_property_style = single_line
 
