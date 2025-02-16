@@ -39,7 +39,7 @@ jobs:
 
       - name: Generate Coverage Report
         run: |
-          reportgenerator -reports:"../Tests/**/TestResults/**/*.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura;TextSummary"
+          reportgenerator -reports:"./Tests/**/TestResults/**/*.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura;TextSummary"
 
       - name: Output Coverage Summary to GitHub Actions Summary
         run: |
