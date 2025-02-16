@@ -20,8 +20,7 @@ public abstract class SumOfGoodNumbersTestsBase<T> where T : ISumOfGoodNumbers, 
     [DataRow("[1,3,2,1,5,4]", 2, 12)]
     [DataRow("[2,1]", 1, 2)]
     public void SumOfGoodNumbers_WithArrayAndThresholdK_ReturnsSumOfGoodNumbers(string numsJsonArray,
-        int k,
-        int expectedResult)
+        int k, int expectedResult)
     {
         // Arrange
         var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
