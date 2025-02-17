@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/16/2025 - 6:17:38 PM
-  Coverage date: 2/16/2025 - 6:16:39 PM - 2/16/2025 - 6:16:56 PM
+  Generated on: 2/17/2025 - 10:32:29 AM
+  Coverage date: 2/17/2025 - 10:31:26 AM - 2/17/2025 - 10:31:43 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 797
-  Files: 797
+  Classes: 798
+  Files: 798
   Line coverage: 97.8%
-  Covered lines: 16654
+  Covered lines: 16676
   Uncovered lines: 367
-  Coverable lines: 17021
-  Total lines: 42898
-  Branch coverage: 95.7% (6144 of 6417)
-  Covered branches: 6144
-  Total branches: 6417
-  Method coverage: 99.2% (1150 of 1159)
-  Full method coverage: 20.3% (236 of 1159)
-  Covered methods: 1150
+  Coverable lines: 17043
+  Total lines: 42957
+  Branch coverage: 95.7% (6150 of 6423)
+  Covered branches: 6150
+  Total branches: 6423
+  Method coverage: 99.2% (1152 of 1161)
+  Full method coverage: 20.3% (236 of 1161)
+  Covered methods: 1152
   Fully covered methods: 236
-  Total methods: 1159
+  Total methods: 1161
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -365,6 +365,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordTrimSplit                                                                                        100%
   LeetCode.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency.LengthOfLongestSubarrayWithAtMostKFrequencyIterative                                  100%
   LeetCode.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency.LengthOfLongestSubarrayWithAtMostKFrequencyTwoPointers                                100%
+  LeetCode.Algorithms.LetterTilePossibilities.LetterTilePossibilitiesRecursive                                                                          100%
   LeetCode.Algorithms.LexicographicalNumbers.LexicographicalNumbersIterative                                                                            100%
   LeetCode.Algorithms.LexicographicalNumbers.LexicographicalNumbersRecursive                                                                            100%
   LeetCode.Algorithms.LinkedListCycle.LinkedListCycleHashSet                                                                                            100%
