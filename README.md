@@ -282,6 +282,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1041. Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/description/)
 - [1051. Height Checker](https://leetcode.com/problems/height-checker/description/)
 - [1072. Flip Columns For Maximum Number of Equal Rows](https://leetcode.com/problems/flip-columns-for-maximum-number-of-equal-rows/description/)
+- [1079. Letter Tile Possibilities](https://leetcode.com/problems/letter-tile-possibilities/description/)
 - [1106. Parsing A Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression/description/)
 - [1108. Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/description/)
 - [1110. Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/description/)
