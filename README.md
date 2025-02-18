@@ -442,6 +442,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2364. Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/description/)
 - [2370. Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence/description/)
 - [2373. Largest Local Values in a Matrix](https://leetcode.com/problems/largest-local-values-in-a-matrix/description/)
+- [2375. Construct Smallest Number From DI String](https://leetcode.com/problems/construct-smallest-number-from-di-string/description/)
 - [2381. Shifting Letters II](https://leetcode.com/problems/shifting-letters-ii/description/)
 - [2406. Divide Intervals Into Minimum Number of Groups](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/description/)
 - [2409. Circular Sentence](https://leetcode.com/problems/circular-sentence/description/)
