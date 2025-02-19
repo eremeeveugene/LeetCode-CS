@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/18/2025 - 12:18:18 PM
-  Coverage date: 2/18/2025 - 12:17:25 PM - 2/18/2025 - 12:17:44 PM
+  Generated on: 2/19/2025 - 1:39:46 PM
+  Coverage date: 2/19/2025 - 1:38:41 PM - 2/19/2025 - 1:38:59 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 799
-  Files: 799
+  Classes: 801
+  Files: 801
   Line coverage: 97.8%
-  Covered lines: 16692
+  Covered lines: 16704
   Uncovered lines: 367
-  Coverable lines: 17059
-  Total lines: 43004
+  Coverable lines: 17071
+  Total lines: 43069
   Branch coverage: 95.7% (6158 of 6431)
   Covered branches: 6158
   Total branches: 6431
-  Method coverage: 99.2% (1153 of 1162)
-  Full method coverage: 20.3% (236 of 1162)
-  Covered methods: 1153
+  Method coverage: 99.2% (1155 of 1164)
+  Full method coverage: 20.2% (236 of 1164)
+  Covered methods: 1155
   Fully covered methods: 236
-  Total methods: 1162
+  Total methods: 1164
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -233,6 +233,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindCenterOfStarGraph.FindCenterOfStarGraphTwoEdges                                                                               100%
   LeetCode.Algorithms.FindCommonCharacters.FindCommonCharactersArray                                                                                    100%
   LeetCode.Algorithms.FindCommonCharacters.FindCommonCharactersDictionary                                                                               100%
+  LeetCode.Algorithms.FindCommonElementsBetweenTwoArrays.FindCommonElementsBetweenTwoArraysBruteForce                                                   100%
+  LeetCode.Algorithms.FindCommonElementsBetweenTwoArrays.FindCommonElementsBetweenTwoArraysHashSet                                                      100%
   LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeBreadthFirstSearch          91.1%
   LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchRecursive    100%
   LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStack       91.1%
