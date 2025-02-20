@@ -17,9 +17,9 @@ namespace LeetCode.Tests.Algorithms.FindUniqueBinaryString;
 public abstract class FindUniqueBinaryStringTestsBase<T> where T : IFindUniqueBinaryString, new()
 {
     [TestMethod]
-    [DataRow("[\"01\",\"10\"]", "11")]
-    [DataRow("[\"00\",\"01\"]", "11")]
-    [DataRow("[\"111\",\"011\",\"001\"]", "101")]
+    [DataRow("[\"01\",\"10\"]", "10")]
+    [DataRow("[\"00\",\"01\"]", "10")]
+    [DataRow("[\"111\",\"011\",\"001\"]", "000")]
     public void FindDifferentBinaryString_WithUniqueBinaryStrings_ReturnsMissingBinaryString(string numsJsonArray,
         string expectedResult)
     {
