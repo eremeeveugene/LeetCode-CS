@@ -399,6 +399,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1957. Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string/description/)
 - [1963. Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/description/)
 - [1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)
+- [1975. Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum/description/)
 - [1980. Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/description/)
 - [1991. Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array/description/)
 - [1992. Find All Groups of Farmland](https://leetcode.com/problems/find-all-groups-of-farmland/description/)
