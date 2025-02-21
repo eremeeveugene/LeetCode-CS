@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/20/2025 - 11:39:42 AM
-  Coverage date: 2/20/2025 - 11:38:45 AM - 2/20/2025 - 11:39:03 AM
+  Generated on: 2/21/2025 - 8:08:47 AM
+  Coverage date: 2/21/2025 - 8:07:41 AM - 2/21/2025 - 8:08:00 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 802
-  Files: 802
+  Classes: 803
+  Files: 803
   Line coverage: 97.8%
-  Covered lines: 16712
+  Covered lines: 16734
   Uncovered lines: 367
-  Coverable lines: 17079
-  Total lines: 43103
-  Branch coverage: 95.7% (6162 of 6435)
-  Covered branches: 6162
-  Total branches: 6435
-  Method coverage: 99.2% (1156 of 1165)
-  Full method coverage: 20.2% (236 of 1165)
-  Covered methods: 1156
+  Coverable lines: 17101
+  Total lines: 43154
+  Branch coverage: 95.7% (6170 of 6443)
+  Covered branches: 6170
+  Total branches: 6443
+  Method coverage: 99.2% (1157 of 1166)
+  Full method coverage: 20.2% (236 of 1166)
+  Covered methods: 1157
   Fully covered methods: 236
-  Total methods: 1165
+  Total methods: 1166
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -417,6 +417,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumDifferenceBetweenAdjacentElementsInCircularArray.MaximumDifferenceBetweenAdjacentElementsInCircularArrayIterative          100%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysBruteForce                                                                         100%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysGreedy                                                                             100%
+  LeetCode.Algorithms.MaximumMatrixSum.MaximumMatrixSumBruteForce                                                                                       100%
   LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses.MaximumNestingDepthOfTheParenthesesIterative                                                  100%
   LeetCode.Algorithms.MaximumNumberOfIntegersToChooseFromRange1.MaximumNumberOfIntegersToChooseFromRange1HashSet                                        100%
   LeetCode.Algorithms.MaximumNumberOfKDivisibleComponents.MaximumNumberOfKDivisibleComponentsDepthFirstSearch                                           100%
