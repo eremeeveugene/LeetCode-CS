@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/21/2025 - 3:53:02 PM
-  Coverage date: 2/21/2025 - 3:51:58 PM - 2/21/2025 - 3:52:16 PM
+  Generated on: 2/22/2025 - 1:54:35 PM
+  Coverage date: 2/22/2025 - 1:52:55 PM - 2/22/2025 - 1:53:53 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 807
-  Files: 807
+  Classes: 808
+  Files: 808
   Line coverage: 97.8%
-  Covered lines: 16787
+  Covered lines: 16824
   Uncovered lines: 367
-  Coverable lines: 17154
-  Total lines: 43326
-  Branch coverage: 95.7% (6184 of 6457)
-  Covered branches: 6184
-  Total branches: 6457
-  Method coverage: 99.2% (1163 of 1172)
-  Full method coverage: 20.4% (240 of 1172)
-  Covered methods: 1163
+  Coverable lines: 17191
+  Total lines: 43408
+  Branch coverage: 95.7% (6195 of 6469)
+  Covered branches: 6195
+  Total branches: 6469
+  Method coverage: 99.2% (1167 of 1176)
+  Full method coverage: 20.4% (240 of 1176)
+  Covered methods: 1167
   Fully covered methods: 240
-  Total methods: 1172
+  Total methods: 1176
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -609,6 +609,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RankTransformOfAnArray.RankTransformOfAnArrayDictionary                                                                           100%
   LeetCode.Algorithms.RansomNote.RansomNoteCounting                                                                                                     100%
   LeetCode.Algorithms.RansomNote.RansomNoteDictionary                                                                                                   100%
+  LeetCode.Algorithms.RecoverTreeFromPreorderTraversal.RecoverTreeFromPreorderTraversalDepthFirstSearch                                                 100%
   LeetCode.Algorithms.RegionsCutBySlashes.RegionsCutBySlashesDepthFirstSearch                                                                           100%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksBruteForce                                                                                             100%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksTuple                                                                                                  100%
