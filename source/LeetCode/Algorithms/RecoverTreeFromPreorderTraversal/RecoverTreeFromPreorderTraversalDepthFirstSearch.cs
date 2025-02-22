@@ -24,57 +24,57 @@ public class RecoverTreeFromPreorderTraversalDepthFirstSearch : IRecoverTreeFrom
     /// <returns></returns>
     public TreeNode RecoverFromPreorder(string traversal)
     {
-        var depth = 0;
+        var index = 0;
 
-        return Build(traversal, 0, ref depth)!;
+        return Build(traversal, 0, ref index)!;
     }
 
-    private static TreeNode? Build(string traversal, int currentDepth, ref int i)
+    private static TreeNode? Build(string traversal, int currentDepth, ref int index)
     {
-        if (i >= traversal.Length)
+        if (index >= traversal.Length)
         {
             return null;
         }
 
-        var depth = GetDepth(traversal, ref i);
+        var depth = GetDepth(traversal, ref index);
 
         if (depth != currentDepth)
         {
-            i -= depth;
+            index -= depth;
 
             return null;
         }
 
-        var value = GetValue(traversal, ref i);
-        var left = Build(traversal, currentDepth + 1, ref i);
-        var right = Build(traversal, currentDepth + 1, ref i);
+        var value = GetValue(traversal, ref index);
+        var left = Build(traversal, currentDepth + 1, ref index);
+        var right = Build(traversal, currentDepth + 1, ref index);
 
         return new TreeNode(value, left, right);
     }
 
-    private static int GetValue(string traversal, ref int i)
+    private static int GetValue(string traversal, ref int index)
     {
         var value = 0;
 
-        while (i < traversal.Length && char.IsDigit(traversal[i]))
+        while (index < traversal.Length && char.IsDigit(traversal[index]))
         {
             value *= 10;
-            value += traversal[i] - '0';
+            value += traversal[index] - '0';
 
-            i++;
+            index++;
         }
 
         return value;
     }
 
-    private static int GetDepth(string traversal, ref int i)
+    private static int GetDepth(string traversal, ref int index)
     {
         var depth = 0;
 
-        while (i < traversal.Length && traversal[i] == '-')
+        while (index < traversal.Length && traversal[index] == '-')
         {
             depth++;
-            i++;
+            index++;
         }
 
         return depth;
