@@ -253,6 +253,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/)
 - [884. Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/description/)
 - [885. Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/description/)
+- [889. Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/description/)
 - [896. Monotonic Array](https://leetcode.com/problems/monotonic-array/description/)
 - [912. Sort an Array](https://leetcode.com/problems/sort-an-array/description/)
 - [916. Word Subsets](https://leetcode.com/problems/word-subsets/description/)

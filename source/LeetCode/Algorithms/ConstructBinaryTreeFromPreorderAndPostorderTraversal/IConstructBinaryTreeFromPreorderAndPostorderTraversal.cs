@@ -1,0 +1,22 @@
+﻿// --------------------------------------------------------------------------------
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// All Rights Reserved.
+// --------------------------------------------------------------------------------
+// This software is the confidential and proprietary information of Eugene Eremeev
+// (also known as Yevhenii Yeriemeieiv) ("Confidential Information"). You shall not
+// disclose such Confidential Information and shall use it only in accordance with
+// the terms of the license agreement you entered into with Eugene Eremeev (also
+// known as Yevhenii Yeriemeieiv).
+// --------------------------------------------------------------------------------
+
+using LeetCode.Core.Models;
+
+namespace LeetCode.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTraversal;
+
+/// <summary>
+///     https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/description/
+/// </summary>
+public interface IConstructBinaryTreeFromPreorderAndPostorderTraversal
+{
+    TreeNode ConstructFromPrePost(int[] preorder, int[] postorder);
+}
