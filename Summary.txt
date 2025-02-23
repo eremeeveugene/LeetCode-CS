@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/22/2025 - 1:54:35 PM
-  Coverage date: 2/22/2025 - 1:52:55 PM - 2/22/2025 - 1:53:53 PM
+  Generated on: 2/23/2025 - 1:49:23 PM
+  Coverage date: 2/23/2025 - 1:48:22 PM - 2/23/2025 - 1:48:40 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 808
-  Files: 808
+  Classes: 809
+  Files: 809
   Line coverage: 97.8%
-  Covered lines: 16824
-  Uncovered lines: 367
-  Coverable lines: 17191
-  Total lines: 43408
-  Branch coverage: 95.7% (6195 of 6469)
-  Covered branches: 6195
-  Total branches: 6469
-  Method coverage: 99.2% (1167 of 1176)
-  Full method coverage: 20.4% (240 of 1176)
-  Covered methods: 1167
-  Fully covered methods: 240
-  Total methods: 1176
+  Covered lines: 16843
+  Uncovered lines: 369
+  Coverable lines: 17212
+  Total lines: 43468
+  Branch coverage: 95.7% (6200 of 6475)
+  Covered branches: 6200
+  Total branches: 6475
+  Method coverage: 99.2% (1169 of 1178)
+  Full method coverage: 20.4% (241 of 1178)
+  Covered methods: 1169
+  Fully covered methods: 241
+  Total methods: 1178
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -105,6 +105,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ComplementOfBase10Integer.ComplementOfBase10IntegerBitwise                                                                        100%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayConcat                                                                                   100%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayIterative                                                                                100%
+  LeetCode.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTraversal.ConstructBinaryTreeFromPreorderAndPostorderTraversalRecursive               90.4%
   LeetCode.Algorithms.ConstructKPalindromeStrings.ConstructKPalindromeStringsFrequencyArray                                                            81.8%
   LeetCode.Algorithms.ConstructKPalindromeStrings.ConstructKPalindromeStringsFrequencyDictionary                                                       81.8%
   LeetCode.Algorithms.ConstructSmallestNumberFromDIString.ConstructSmallestNumberFromDIStringStack                                                      100%
