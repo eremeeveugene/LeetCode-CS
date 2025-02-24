@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/23/2025 - 1:49:23 PM
-  Coverage date: 2/23/2025 - 1:48:22 PM - 2/23/2025 - 1:48:40 PM
+  Generated on: 2/24/2025 - 11:40:37 AM
+  Coverage date: 2/24/2025 - 11:39:31 AM - 2/24/2025 - 11:39:49 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 809
-  Files: 809
+  Classes: 810
+  Files: 810
   Line coverage: 97.8%
-  Covered lines: 16843
+  Covered lines: 16855
   Uncovered lines: 369
-  Coverable lines: 17212
-  Total lines: 43468
-  Branch coverage: 95.7% (6200 of 6475)
-  Covered branches: 6200
-  Total branches: 6475
-  Method coverage: 99.2% (1169 of 1178)
-  Full method coverage: 20.4% (241 of 1178)
-  Covered methods: 1169
+  Coverable lines: 17224
+  Total lines: 43507
+  Branch coverage: 95.7% (6204 of 6479)
+  Covered branches: 6204
+  Total branches: 6479
+  Method coverage: 99.2% (1170 of 1179)
+  Full method coverage: 20.4% (241 of 1179)
+  Covered methods: 1170
   Fully covered methods: 241
-  Total methods: 1178
+  Total methods: 1179
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -84,6 +84,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKArray                                                            100%
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKDictionary                                                      92.3%
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKTwoPointers                                                      100%
+  LeetCode.Algorithms.CheckIfDigitsAreEqualInStringAfterOperations1.CheckIfDigitsAreEqualInStringAfterOperations1Simulation                             100%
   LeetCode.Algorithms.CheckIfItIsStraightLine.CheckIfItIsStraightLineIterative                                                                          100%
   LeetCode.Algorithms.CheckIfNAndItsDoubleExist.CheckIfNAndItsDoubleExistDictionary                                                                     100%
   LeetCode.Algorithms.CheckIfNAndItsDoubleExist.CheckIfNAndItsDoubleExistHashSet                                                                        100%
