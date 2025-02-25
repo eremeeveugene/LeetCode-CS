@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/24/2025 - 11:40:37 AM
-  Coverage date: 2/24/2025 - 11:39:31 AM - 2/24/2025 - 11:39:49 AM
+  Generated on: 2/25/2025 - 5:36:40 PM
+  Coverage date: 2/25/2025 - 5:35:47 PM - 2/25/2025 - 5:36:06 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 810
-  Files: 810
+  Classes: 812
+  Files: 812
   Line coverage: 97.8%
-  Covered lines: 16855
+  Covered lines: 16892
   Uncovered lines: 369
-  Coverable lines: 17224
-  Total lines: 43507
-  Branch coverage: 95.7% (6204 of 6479)
-  Covered branches: 6204
-  Total branches: 6479
-  Method coverage: 99.2% (1170 of 1179)
-  Full method coverage: 20.4% (241 of 1179)
-  Covered methods: 1170
+  Coverable lines: 17261
+  Total lines: 43607
+  Branch coverage: 95.7% (6214 of 6489)
+  Covered branches: 6214
+  Total branches: 6489
+  Method coverage: 99.2% (1172 of 1181)
+  Full method coverage: 20.4% (241 of 1181)
+  Covered methods: 1172
   Fully covered methods: 241
-  Total methods: 1179
+  Total methods: 1181
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -552,6 +552,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroIterative                                                      100%
   LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch.NumberOfStudentsUnableToEatLunchIterative                                                        100%
   LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch.NumberOfStudentsUnableToEatLunchQueue                                                            100%
+  LeetCode.Algorithms.NumberOfSubArraysWithOddSum.NumberOfSubArraysWithOddSumBruteForce                                                                 100%
+  LeetCode.Algorithms.NumberOfSubArraysWithOddSum.NumberOfSubArraysWithOddSumPrefixSum                                                                  100%
   LeetCode.Algorithms.NumberOfWaysToSplitArray.NumberOfWaysToSplitArrayPrefixSum                                                                        100%
   LeetCode.Algorithms.NumberOfWonderfulSubstrings.NumberOfWonderfulSubstringsDictionary                                                                 100%
   LeetCode.Algorithms.OpenTheLock.OpenTheLockBreadthFirstSearch                                                                                         100%
