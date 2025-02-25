@@ -343,6 +343,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/description/)
 - [1518. Water Bottles](https://leetcode.com/problems/water-bottles/description/)
 - [1523. Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/description/)
+- [1524. Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/description/)
 - [1528. Shuffle String](https://leetcode.com/problems/shuffle-string/description/)
 - [1530. Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/description/)
 - [1544. Make The String Great](https://leetcode.com/problems/make-the-string-great/description/)
