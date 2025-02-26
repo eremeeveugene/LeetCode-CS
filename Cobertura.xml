@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9786223277909739" branch-rate="0.9576205886885498" lines-covered="16892" lines-valid="17261" branches-covered="6214" branches-valid="6489" complexity="6768" version="0" timestamp="1740505000">
+<coverage line-rate="0.9786557149467839" branch-rate="0.9576597382602001" lines-covered="16919" lines-valid="17288" branches-covered="6220" branches-valid="6495" complexity="6774" version="0" timestamp="1740572186">
   <sources>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode.Core\</source>
     <source>C:\</source>
     <source>D:\a\LeetCode-CS\LeetCode-CS\source\</source>
   </sources>
   <packages>
-    <package name="LeetCode" line-rate="0.9785397714019127" branch-rate="0.9579519006982157" complexity="6717">
+    <package name="LeetCode" line-rate="0.9785735080058224" branch-rate="0.9579910091458689" complexity="6723">
       <classes>
         <class name="LeetCode.Algorithms.AddBinary.AddBinaryIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\AddBinary\AddBinaryIterative.cs" line-rate="1" branch-rate="1" complexity="12">
           <methods>
@@ -21055,6 +21055,80 @@
             <line number="32" hits="16" branch="false" />
             <line number="34" hits="20" branch="false" />
             <line number="35" hits="20" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.MaximumAbsoluteSumOfAnySubarray.MaximumAbsoluteSumOfAnySubarrayBruteForce" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\MaximumAbsoluteSumOfAnySubarray\MaximumAbsoluteSumOfAnySubarrayBruteForce.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="MaxAbsoluteSum" signature="(System.Int32[])" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="24" hits="2" branch="false" />
+                <line number="25" hits="2" branch="false" />
+                <line number="27" hits="26" branch="true" condition-coverage="100% (2/2)" />
+                <line number="28" hits="11" branch="false" />
+                <line number="29" hits="11" branch="false" />
+                <line number="31" hits="94" branch="true" condition-coverage="100% (2/2)" />
+                <line number="32" hits="36" branch="false" />
+                <line number="33" hits="36" branch="false" />
+                <line number="35" hits="36" branch="false" />
+                <line number="36" hits="36" branch="false" />
+                <line number="37" hits="11" branch="false" />
+                <line number="39" hits="2" branch="false" />
+                <line number="40" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="2" branch="false" />
+            <line number="25" hits="2" branch="false" />
+            <line number="27" hits="26" branch="true" condition-coverage="100% (2/2)" />
+            <line number="28" hits="11" branch="false" />
+            <line number="29" hits="11" branch="false" />
+            <line number="31" hits="94" branch="true" condition-coverage="100% (2/2)" />
+            <line number="32" hits="36" branch="false" />
+            <line number="33" hits="36" branch="false" />
+            <line number="35" hits="36" branch="false" />
+            <line number="36" hits="36" branch="false" />
+            <line number="37" hits="11" branch="false" />
+            <line number="39" hits="2" branch="false" />
+            <line number="40" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="LeetCode.Algorithms.MaximumAbsoluteSumOfAnySubarray.MaximumAbsoluteSumOfAnySubarrayKadaneAlgorithm" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\MaximumAbsoluteSumOfAnySubarray\MaximumAbsoluteSumOfAnySubarrayKadaneAlgorithm.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MaxAbsoluteSum" signature="(System.Int32[])" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="24" hits="2" branch="false" />
+                <line number="25" hits="2" branch="false" />
+                <line number="26" hits="2" branch="false" />
+                <line number="27" hits="2" branch="false" />
+                <line number="28" hits="2" branch="false" />
+                <line number="30" hits="28" branch="true" condition-coverage="100% (2/2)" />
+                <line number="31" hits="11" branch="false" />
+                <line number="32" hits="11" branch="false" />
+                <line number="33" hits="11" branch="false" />
+                <line number="34" hits="11" branch="false" />
+                <line number="35" hits="11" branch="false" />
+                <line number="36" hits="11" branch="false" />
+                <line number="38" hits="2" branch="false" />
+                <line number="39" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="2" branch="false" />
+            <line number="25" hits="2" branch="false" />
+            <line number="26" hits="2" branch="false" />
+            <line number="27" hits="2" branch="false" />
+            <line number="28" hits="2" branch="false" />
+            <line number="30" hits="28" branch="true" condition-coverage="100% (2/2)" />
+            <line number="31" hits="11" branch="false" />
+            <line number="32" hits="11" branch="false" />
+            <line number="33" hits="11" branch="false" />
+            <line number="34" hits="11" branch="false" />
+            <line number="35" hits="11" branch="false" />
+            <line number="36" hits="11" branch="false" />
+            <line number="38" hits="2" branch="false" />
+            <line number="39" hits="2" branch="false" />
           </lines>
         </class>
         <class name="LeetCode.Algorithms.MaximumAscendingSubarraySum.MaximumAscendingSubarraySumIterative" filename="D:\a\LeetCode-CS\LeetCode-CS\source\LeetCode\Algorithms\MaximumAscendingSubarraySum\MaximumAscendingSubarraySumIterative.cs" line-rate="1" branch-rate="1" complexity="4">
@@ -43821,10 +43895,10 @@
           <methods>
             <method name="DeserializeToArray" signature="(System.String)" line-rate="1" branch-rate="0.5" complexity="2">
               <lines>
-                <line number="19" hits="3016" branch="false" />
-                <line number="20" hits="3016" branch="true" condition-coverage="50% (1/2)" />
-                <line number="21" hits="3016" branch="false" />
-                <line number="22" hits="3015" branch="false" />
+                <line number="19" hits="3020" branch="false" />
+                <line number="20" hits="3020" branch="true" condition-coverage="50% (1/2)" />
+                <line number="21" hits="3020" branch="false" />
+                <line number="22" hits="3019" branch="false" />
               </lines>
             </method>
             <method name="DeserializeToJaggedArray" signature="(System.String)" line-rate="1" branch-rate="0.5" complexity="2">
@@ -43845,10 +43919,10 @@
             </method>
           </methods>
           <lines>
-            <line number="19" hits="3016" branch="false" />
-            <line number="20" hits="3016" branch="true" condition-coverage="50% (1/2)" />
-            <line number="21" hits="3016" branch="false" />
-            <line number="22" hits="3015" branch="false" />
+            <line number="19" hits="3020" branch="false" />
+            <line number="20" hits="3020" branch="true" condition-coverage="50% (1/2)" />
+            <line number="21" hits="3020" branch="false" />
+            <line number="22" hits="3019" branch="false" />
             <line number="25" hits="346" branch="false" />
             <line number="26" hits="346" branch="true" condition-coverage="50% (1/2)" />
             <line number="27" hits="346" branch="false" />

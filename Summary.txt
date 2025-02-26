@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/25/2025 - 5:36:40 PM
-  Coverage date: 2/25/2025 - 5:35:47 PM - 2/25/2025 - 5:36:06 PM
+  Generated on: 2/26/2025 - 12:16:26 PM
+  Coverage date: 2/26/2025 - 12:15:15 PM - 2/26/2025 - 12:15:36 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 812
-  Files: 812
+  Classes: 814
+  Files: 814
   Line coverage: 97.8%
-  Covered lines: 16892
+  Covered lines: 16919
   Uncovered lines: 369
-  Coverable lines: 17261
-  Total lines: 43607
-  Branch coverage: 95.7% (6214 of 6489)
-  Covered branches: 6214
-  Total branches: 6489
-  Method coverage: 99.2% (1172 of 1181)
-  Full method coverage: 20.4% (241 of 1181)
-  Covered methods: 1172
+  Coverable lines: 17288
+  Total lines: 43688
+  Branch coverage: 95.7% (6220 of 6495)
+  Covered branches: 6220
+  Total branches: 6495
+  Method coverage: 99.2% (1174 of 1183)
+  Full method coverage: 20.3% (241 of 1183)
+  Covered methods: 1174
   Fully covered methods: 241
-  Total methods: 1181
+  Total methods: 1183
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -410,6 +410,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximizeHappinessOfSelectedChildren.MaximizeHappinessOfSelectedChildrenIterative                                                  100%
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberIterative                                                                                          100%
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberString                                                                                             100%
+  LeetCode.Algorithms.MaximumAbsoluteSumOfAnySubarray.MaximumAbsoluteSumOfAnySubarrayBruteForce                                                         100%
+  LeetCode.Algorithms.MaximumAbsoluteSumOfAnySubarray.MaximumAbsoluteSumOfAnySubarrayKadaneAlgorithm                                                    100%
   LeetCode.Algorithms.MaximumAscendingSubarraySum.MaximumAscendingSubarraySumIterative                                                                  100%
   LeetCode.Algorithms.MaximumAveragePassRatio.MaximumAveragePassRatioPriorityQueue                                                                      100%
   LeetCode.Algorithms.MaximumAverageSubarray1.MaximumAverageSubarray1SlidingWindow                                                                      100%
