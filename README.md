@@ -373,6 +373,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1716. Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/description/)
 - [1720. Decode XORed Array](https://leetcode.com/problems/decode-xored-array/description/)
 - [1726. Tuple with Same Product](https://leetcode.com/problems/tuple-with-same-product/description/)
+- [1749. Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/description/)
 - [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/description/)
 - [1752. Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/)
 - [1760. Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/description/)
