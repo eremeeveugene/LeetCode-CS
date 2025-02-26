@@ -15,4 +15,4 @@ namespace LeetCode.Tests.Algorithms.MaximumAbsoluteSumOfAnySubarray;
 
 [TestClass]
 public class MaximumAbsoluteSumOfAnySubarrayKadaneAlgorithmTests :
-    MaximumAbsoluteSumOfAnySubarrayTestsBase<MaximumAbsoluteSumOfAnySubarray1>;
+    MaximumAbsoluteSumOfAnySubarrayTestsBase<MaximumAbsoluteSumOfAnySubarrayKadaneAlgorithm>;
