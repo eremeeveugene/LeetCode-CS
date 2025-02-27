@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/26/2025 - 12:16:26 PM
-  Coverage date: 2/26/2025 - 12:15:15 PM - 2/26/2025 - 12:15:36 PM
+  Generated on: 2/27/2025 - 11:36:10 AM
+  Coverage date: 2/27/2025 - 11:34:58 AM - 2/27/2025 - 11:35:16 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 814
-  Files: 814
+  Classes: 815
+  Files: 815
   Line coverage: 97.8%
-  Covered lines: 16919
+  Covered lines: 16942
   Uncovered lines: 369
-  Coverable lines: 17288
-  Total lines: 43688
-  Branch coverage: 95.7% (6220 of 6495)
-  Covered branches: 6220
-  Total branches: 6495
-  Method coverage: 99.2% (1174 of 1183)
-  Full method coverage: 20.3% (241 of 1183)
-  Covered methods: 1174
+  Coverable lines: 17311
+  Total lines: 43745
+  Branch coverage: 95.7% (6227 of 6503)
+  Covered branches: 6227
+  Total branches: 6503
+  Method coverage: 99.2% (1175 of 1184)
+  Full method coverage: 20.3% (241 of 1184)
+  Covered methods: 1175
   Fully covered methods: 241
-  Total methods: 1183
+  Total methods: 1184
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -373,6 +373,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LemonadeChange.LemonadeChangeGreedy                                                                                                92%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordReverseIteration                                                                                 100%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordTrimSplit                                                                                        100%
+  LeetCode.Algorithms.LengthOfLongestFibonacciSubsequence.LengthOfLongestFibonacciSubsequenceDynamicProgramming                                         100%
   LeetCode.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency.LengthOfLongestSubarrayWithAtMostKFrequencyIterative                                  100%
   LeetCode.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency.LengthOfLongestSubarrayWithAtMostKFrequencyTwoPointers                                100%
   LeetCode.Algorithms.LetterTilePossibilities.LetterTilePossibilitiesRecursive                                                                          100%
