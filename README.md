@@ -550,6 +550,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3242. Design Neighbor Sum Service](https://leetcode.com/problems/design-neighbor-sum-service/description/)
 - [3254. Find the Power of K-Size Subarrays I](https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i/description/)
 - [3264. Final Array State After K Multiplication Operations I](https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-i/description/)
+- [3289. The Two Sneaky Numbers of Digitville](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/description/)
 - [3340. Check Balanced String](https://leetcode.com/problems/check-balanced-string/description/)
 - [3379. Transformed Array](https://leetcode.com/problems/transformed-array/description/)
 - [3386. Button with Longest Push Time](https://leetcode.com/problems/button-with-longest-push-time/description/)
