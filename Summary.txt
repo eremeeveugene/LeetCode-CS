@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/27/2025 - 11:36:10 AM
-  Coverage date: 2/27/2025 - 11:34:58 AM - 2/27/2025 - 11:35:16 AM
+  Generated on: 2/28/2025 - 10:41:24 AM
+  Coverage date: 2/28/2025 - 10:40:16 AM - 2/28/2025 - 10:40:34 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 815
-  Files: 815
+  Classes: 817
+  Files: 817
   Line coverage: 97.8%
-  Covered lines: 16942
+  Covered lines: 16973
   Uncovered lines: 369
-  Coverable lines: 17311
-  Total lines: 43745
-  Branch coverage: 95.7% (6227 of 6503)
-  Covered branches: 6227
-  Total branches: 6503
-  Method coverage: 99.2% (1175 of 1184)
-  Full method coverage: 20.3% (241 of 1184)
-  Covered methods: 1175
+  Coverable lines: 17342
+  Total lines: 43835
+  Branch coverage: 95.7% (6235 of 6511)
+  Covered branches: 6235
+  Total branches: 6511
+  Method coverage: 99.2% (1177 of 1186)
+  Full method coverage: 20.3% (241 of 1186)
+  Covered methods: 1177
   Fully covered methods: 241
-  Total methods: 1184
+  Total methods: 1186
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -775,6 +775,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.TheNumberOfBeautifulSubsets.TheNumberOfBeautifulSubsetsBacktracking                                                               100%
   LeetCode.Algorithms.TheNumberOfTheSmallestUnoccupiedChair.TheNumberOfTheSmallestUnoccupiedChairPriorityQueue                                         95.6%
   LeetCode.Algorithms.TheNumberOfTheSmallestUnoccupiedChair.TheNumberOfTheSmallestUnoccupiedChairSortedSet                                             92.8%
+  LeetCode.Algorithms.TheTwoSneakyNumbersOfDigitville.TheTwoSneakyNumbersOfDigitvilleArray                                                              100%
+  LeetCode.Algorithms.TheTwoSneakyNumbersOfDigitville.TheTwoSneakyNumbersOfDigitvilleHashSet                                                            100%
   LeetCode.Algorithms.ThirdMaximumNumber.ThirdMaximumNumberDistinctOrder                                                                                100%
   LeetCode.Algorithms.ThirdMaximumNumber.ThirdMaximumNumberLinear                                                                                       100%
   LeetCode.Algorithms.ThreeConsecutiveOdds.ThreeConsecutiveOddsCounting                                                                                 100%
