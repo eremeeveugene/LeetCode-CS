@@ -464,6 +464,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2441. Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/description/)
 - [2444. Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/description/)
 - [2446. Determine if Two Events Have Conflict](https://leetcode.com/problems/determine-if-two-events-have-conflict/description/)
+- [2460. Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/description/)
 - [2461. Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/)
 - [2469. Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/description/)
 - [2471. Minimum Number of Operations to Sort a Binary Tree by Level](https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/description/)
