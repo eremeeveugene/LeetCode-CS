@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/2/2025 - 2:48:19 PM
-  Coverage date: 3/2/2025 - 2:47:17 PM - 3/2/2025 - 2:47:35 PM
+  Generated on: 3/3/2025 - 12:37:17 PM
+  Coverage date: 3/3/2025 - 12:36:13 PM - 3/3/2025 - 12:36:31 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 820
-  Files: 820
+  Classes: 823
+  Files: 823
   Line coverage: 97.8%
-  Covered lines: 17053
+  Covered lines: 17142
   Uncovered lines: 372
-  Coverable lines: 17425
-  Total lines: 44020
-  Branch coverage: 95.7% (6264 of 6541)
-  Covered branches: 6264
-  Total branches: 6541
-  Method coverage: 99.2% (1180 of 1189)
-  Full method coverage: 20.2% (241 of 1189)
-  Covered methods: 1180
+  Coverable lines: 17514
+  Total lines: 44205
+  Branch coverage: 95.7% (6296 of 6573)
+  Covered branches: 6296
+  Total branches: 6573
+  Method coverage: 99.2% (1183 of 1192)
+  Full method coverage: 20.2% (241 of 1192)
+  Covered methods: 1183
   Fully covered methods: 241
-  Total methods: 1189
+  Total methods: 1192
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -569,6 +569,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.PalindromeNumber.PalindromeNumberByReversingDigits                                                                                100%
   LeetCode.Algorithms.PalindromePartitioning.PalindromePartitioningBackTracking                                                                         100%
   LeetCode.Algorithms.ParsingBooleanExpression.ParsingBooleanExpressionRecursive                                                                        100%
+  LeetCode.Algorithms.PartitionArrayAccordingToGivenPivot.PartitionArrayAccordingToGivenPivotDynamicLists                                               100%
+  LeetCode.Algorithms.PartitionArrayAccordingToGivenPivot.PartitionArrayAccordingToGivenPivotThreePass                                                  100%
+  LeetCode.Algorithms.PartitionArrayAccordingToGivenPivot.PartitionArrayAccordingToGivenPivotTwoPointers                                                100%
   LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumIterative                                       95.1%
   LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumSinglePass                                       100%
   LeetCode.Algorithms.PascalsTriangle.PascalsTriangleDynamicProgramming                                                                                 100%
