@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/3/2025 - 12:37:17 PM
-  Coverage date: 3/3/2025 - 12:36:13 PM - 3/3/2025 - 12:36:31 PM
+  Generated on: 3/4/2025 - 11:52:13 AM
+  Coverage date: 3/4/2025 - 11:51:13 AM - 3/4/2025 - 11:51:30 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 823
-  Files: 823
+  Classes: 825
+  Files: 825
   Line coverage: 97.8%
-  Covered lines: 17142
+  Covered lines: 17163
   Uncovered lines: 372
-  Coverable lines: 17514
-  Total lines: 44205
-  Branch coverage: 95.7% (6296 of 6573)
-  Covered branches: 6296
-  Total branches: 6573
-  Method coverage: 99.2% (1183 of 1192)
-  Full method coverage: 20.2% (241 of 1192)
-  Covered methods: 1183
+  Coverable lines: 17535
+  Total lines: 44279
+  Branch coverage: 95.7% (6304 of 6581)
+  Covered branches: 6304
+  Total branches: 6581
+  Method coverage: 99.2% (1185 of 1194)
+  Full method coverage: 20.1% (241 of 1194)
+  Covered methods: 1185
   Fully covered methods: 241
-  Total methods: 1192
+  Total methods: 1194
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -89,6 +89,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CheckIfItIsStraightLine.CheckIfItIsStraightLineIterative                                                                          100%
   LeetCode.Algorithms.CheckIfNAndItsDoubleExist.CheckIfNAndItsDoubleExistDictionary                                                                     100%
   LeetCode.Algorithms.CheckIfNAndItsDoubleExist.CheckIfNAndItsDoubleExistHashSet                                                                        100%
+  LeetCode.Algorithms.CheckIfNumberIsSumOfPowersOfThree.CheckIfNumberIsSumOfPowersOfThreeBase3Check                                                     100%
+  LeetCode.Algorithms.CheckIfNumberIsSumOfPowersOfThree.CheckIfNumberIsSumOfPowersOfThreeIterative                                                      100%
   LeetCode.Algorithms.CheckIfOneStringSwapCanMakeStringsEqual.CheckIfOneStringSwapCanMakeStringsEqualIterative                                          100%
   LeetCode.Algorithms.CheckIfParenthesesStringCanBeValid.CheckIfParenthesesStringCanBeValidGreedy                                                      92.8%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramHashSet                                                                    100%
