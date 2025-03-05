@@ -485,6 +485,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2559. Count Vowel Strings in Ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges/description/)
 - [2570. Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/description/)
 - [2574. Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences/description/)
+- [2579. Count Total Number of Colored Cells](https://leetcode.com/problems/count-total-number-of-colored-cells/description/)
 - [2582. Pass the Pillow](https://leetcode.com/problems/pass-the-pillow/description/)
 - [2583. Kth Largest Sum in a Binary Tree](https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/description/)
 - [2591. Distribute Money to Maximum Children](https://leetcode.com/problems/distribute-money-to-maximum-children/description/)
