@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/4/2025 - 11:52:13 AM
-  Coverage date: 3/4/2025 - 11:51:13 AM - 3/4/2025 - 11:51:30 AM
+  Generated on: 3/5/2025 - 2:58:53 PM
+  Coverage date: 3/5/2025 - 2:57:49 PM - 3/5/2025 - 2:58:07 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 825
-  Files: 825
+  Classes: 827
+  Files: 827
   Line coverage: 97.8%
-  Covered lines: 17163
+  Covered lines: 17174
   Uncovered lines: 372
-  Coverable lines: 17535
-  Total lines: 44279
-  Branch coverage: 95.7% (6304 of 6581)
-  Covered branches: 6304
-  Total branches: 6581
-  Method coverage: 99.2% (1185 of 1194)
-  Full method coverage: 20.1% (241 of 1194)
-  Covered methods: 1185
-  Fully covered methods: 241
-  Total methods: 1194
+  Coverable lines: 17546
+  Total lines: 44340
+  Branch coverage: 95.7% (6306 of 6583)
+  Covered branches: 6306
+  Total branches: 6583
+  Method coverage: 99.2% (1187 of 1196)
+  Full method coverage: 20.2% (242 of 1196)
+  Covered methods: 1187
+  Fully covered methods: 242
+  Total methods: 1196
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -152,6 +152,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountTheDigitsThatDivideNumber.CountTheDigitsThatDivideNumberIterative                                                            100%
   LeetCode.Algorithms.CountTheNumberOfConsistentStrings.CountTheNumberOfConsistentStringsArray                                                          100%
   LeetCode.Algorithms.CountTheNumberOfConsistentStrings.CountTheNumberOfConsistentStringsHashSet                                                        100%
+  LeetCode.Algorithms.CountTotalNumberOfColoredCells.CountTotalNumberOfColoredCellsIterative                                                            100%
+  LeetCode.Algorithms.CountTotalNumberOfColoredCells.CountTotalNumberOfColoredCellsMath                                                                 100%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                                  100%
   LeetCode.Algorithms.CountVowelStringsInRanges.CountVowelStringsInRangesPrefixSum                                                                      100%
   LeetCode.Algorithms.CousinsInBinaryTree2.CousinsInBinaryTree2BreadthFirstSearch                                                                       100%
