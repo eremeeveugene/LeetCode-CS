@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/5/2025 - 2:58:53 PM
-  Coverage date: 3/5/2025 - 2:57:49 PM - 3/5/2025 - 2:58:07 PM
+  Generated on: 3/6/2025 - 1:20:24 PM
+  Coverage date: 3/6/2025 - 1:19:16 PM - 3/6/2025 - 1:19:34 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 827
-  Files: 827
+  Classes: 829
+  Files: 829
   Line coverage: 97.8%
-  Covered lines: 17174
+  Covered lines: 17214
   Uncovered lines: 372
-  Coverable lines: 17546
-  Total lines: 44340
-  Branch coverage: 95.7% (6306 of 6583)
-  Covered branches: 6306
-  Total branches: 6583
-  Method coverage: 99.2% (1187 of 1196)
-  Full method coverage: 20.2% (242 of 1196)
-  Covered methods: 1187
+  Coverable lines: 17586
+  Total lines: 44439
+  Branch coverage: 95.7% (6316 of 6593)
+  Covered branches: 6316
+  Total branches: 6593
+  Method coverage: 99.2% (1189 of 1198)
+  Full method coverage: 20.2% (242 of 1198)
+  Covered methods: 1189
   Fully covered methods: 242
-  Total methods: 1196
+  Total methods: 1198
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -260,6 +260,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindLongestSpecialSubstringThatOccursThrice1.FindLongestSpecialSubstringThatOccursThrice1Dictionary                               100%
   LeetCode.Algorithms.FindMinimumDiameterAfterMergingTwoTrees.FindMinimumDiameterAfterMergingTwoTreesDepthFirstSearch                                   100%
   LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree.FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterative            100%
+  LeetCode.Algorithms.FindMissingAndRepeatedValues.FindMissingAndRepeatedValuesHashSet                                                                  100%
+  LeetCode.Algorithms.FindMissingAndRepeatedValues.FindMissingAndRepeatedValuesMath                                                                     100%
   LeetCode.Algorithms.FindMissingObservations.FindMissingObservationsMath                                                                               100%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeBreadthFirstSearch                                                           100%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchRecursive                                                    100%
