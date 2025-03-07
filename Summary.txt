@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/6/2025 - 1:20:24 PM
-  Coverage date: 3/6/2025 - 1:19:16 PM - 3/6/2025 - 1:19:34 PM
+  Generated on: 3/7/2025 - 4:33:30 PM
+  Coverage date: 3/7/2025 - 4:32:20 PM - 3/7/2025 - 4:32:38 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 829
-  Files: 829
+  Classes: 831
+  Files: 831
   Line coverage: 97.8%
-  Covered lines: 17214
-  Uncovered lines: 372
-  Coverable lines: 17586
-  Total lines: 44439
-  Branch coverage: 95.7% (6316 of 6593)
-  Covered branches: 6316
-  Total branches: 6593
-  Method coverage: 99.2% (1189 of 1198)
-  Full method coverage: 20.2% (242 of 1198)
-  Covered methods: 1189
+  Covered lines: 17295
+  Uncovered lines: 379
+  Coverable lines: 17674
+  Total lines: 44616
+  Branch coverage: 95.7% (6351 of 6633)
+  Covered branches: 6351
+  Total branches: 6633
+  Method coverage: 99.2% (1193 of 1202)
+  Full method coverage: 20.1% (242 of 1202)
+  Covered methods: 1193
   Fully covered methods: 242
-  Total methods: 1198
+  Total methods: 1202
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -103,6 +103,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ClearDigits.ClearDigitsStringBuilder                                                                                              100%
   LeetCode.Algorithms.ClimbingStairs.ClimbingStairsDynamicProgramming                                                                                   100%
   LeetCode.Algorithms.ClimbingStairs.ClimbingStairsIterativeFibonacci                                                                                   100%
+  LeetCode.Algorithms.ClosestPrimeNumbersInRange.ClosestPrimeNumbersInRangeBruteForce                                                                  90.2%
+  LeetCode.Algorithms.ClosestPrimeNumbersInRange.ClosestPrimeNumbersInRangeSieveOfEratosthenes                                                         93.6%
   LeetCode.Algorithms.CombinationSum2.CombinationSum2Backtracking                                                                                       100%
   LeetCode.Algorithms.CompareVersionNumbers.CompareVersionNumbersIterative                                                                              100%
   LeetCode.Algorithms.CompareVersionNumbers.CompareVersionNumbersTwoPointers                                                                            100%
