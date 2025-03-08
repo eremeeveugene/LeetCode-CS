@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/7/2025 - 4:33:30 PM
-  Coverage date: 3/7/2025 - 4:32:20 PM - 3/7/2025 - 4:32:38 PM
+  Generated on: 3/8/2025 - 3:50:20 PM
+  Coverage date: 3/8/2025 - 3:49:15 PM - 3/8/2025 - 3:49:33 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 831
-  Files: 831
+  Classes: 832
+  Files: 832
   Line coverage: 97.8%
-  Covered lines: 17295
+  Covered lines: 17322
   Uncovered lines: 379
-  Coverable lines: 17674
-  Total lines: 44616
-  Branch coverage: 95.7% (6351 of 6633)
-  Covered branches: 6351
-  Total branches: 6633
-  Method coverage: 99.2% (1193 of 1202)
-  Full method coverage: 20.1% (242 of 1202)
-  Covered methods: 1193
+  Coverable lines: 17701
+  Total lines: 44676
+  Branch coverage: 95.7% (6363 of 6645)
+  Covered branches: 6363
+  Total branches: 6645
+  Method coverage: 99.2% (1194 of 1203)
+  Full method coverage: 20.1% (242 of 1203)
+  Covered methods: 1194
   Fully covered methods: 242
-  Total methods: 1202
+  Total methods: 1203
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -510,6 +510,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel.MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch               100%
   LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced.MinimumNumberOfSwapsToMakeTheStringBalancedIterative                                  100%
   LeetCode.Algorithms.MinimumOperationsToExceedThresholdValue2.MinimumOperationsToExceedThresholdValue2PriorityQueue                                    100%
+  LeetCode.Algorithms.MinimumRecolorsToGetKConsecutiveBlackBlocks.MinimumRecolorsToGetKConsecutiveBlackBlocksSlidingWindow                              100%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStack                                                      100%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStringBuilder                                              100%
   LeetCode.Algorithms.MinimumStringLengthAfterRemovingSubstrings.MinimumStringLengthAfterRemovingSubstringsStack                                        100%
