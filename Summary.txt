@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/8/2025 - 3:50:20 PM
-  Coverage date: 3/8/2025 - 3:49:15 PM - 3/8/2025 - 3:49:33 PM
+  Generated on: 3/9/2025 - 2:51:37 PM
+  Coverage date: 3/9/2025 - 2:50:27 PM - 3/9/2025 - 2:50:45 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 832
-  Files: 832
+  Classes: 834
+  Files: 834
   Line coverage: 97.8%
-  Covered lines: 17322
+  Covered lines: 17362
   Uncovered lines: 379
-  Coverable lines: 17701
-  Total lines: 44676
-  Branch coverage: 95.7% (6363 of 6645)
-  Covered branches: 6363
-  Total branches: 6645
-  Method coverage: 99.2% (1194 of 1203)
-  Full method coverage: 20.1% (242 of 1203)
-  Covered methods: 1194
+  Coverable lines: 17741
+  Total lines: 44780
+  Branch coverage: 95.7% (6377 of 6659)
+  Covered branches: 6377
+  Total branches: 6659
+  Method coverage: 99.2% (1196 of 1205)
+  Full method coverage: 20% (242 of 1205)
+  Covered methods: 1196
   Fully covered methods: 242
-  Total methods: 1203
+  Total methods: 1205
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -37,6 +37,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.AddTwoNumbers2.AddTwoNumbers2Reverse                                                                                              100%
   LeetCode.Algorithms.AddTwoNumbers2.AddTwoNumbers2Stack                                                                                                100%
   LeetCode.Algorithms.AllOneDataStructure.AllOneDataStructureLinkedList                                                                                68.4%
+  LeetCode.Algorithms.AlternatingGroups2.AlternatingGroups2BruteForce                                                                                   100%
+  LeetCode.Algorithms.AlternatingGroups2.AlternatingGroups2SlidingWindow                                                                                100%
   LeetCode.Algorithms.AppendCharactersToStringToMakeSubsequence.AppendCharactersToStringToMakeSubsequenceTwoPointers                                    100%
   LeetCode.Algorithms.ApplyDiscountToPrices.ApplyDiscountToPricesIterative                                                                              100%
   LeetCode.Algorithms.ApplyOperationsToAnArray.ApplyOperationsToAnArrayTwoPointers                                                                      100%
