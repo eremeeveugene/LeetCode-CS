@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/9/2025 - 2:51:37 PM
-  Coverage date: 3/9/2025 - 2:50:27 PM - 3/9/2025 - 2:50:45 PM
+  Generated on: 3/10/2025 - 12:12:29 PM
+  Coverage date: 3/10/2025 - 12:11:25 PM - 3/10/2025 - 12:11:44 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 834
-  Files: 834
+  Classes: 835
+  Files: 835
   Line coverage: 97.8%
-  Covered lines: 17362
+  Covered lines: 17406
   Uncovered lines: 379
-  Coverable lines: 17741
-  Total lines: 44780
-  Branch coverage: 95.7% (6377 of 6659)
-  Covered branches: 6377
-  Total branches: 6659
-  Method coverage: 99.2% (1196 of 1205)
-  Full method coverage: 20% (242 of 1205)
-  Covered methods: 1196
-  Fully covered methods: 242
-  Total methods: 1205
+  Coverable lines: 17785
+  Total lines: 44868
+  Branch coverage: 95.7% (6401 of 6683)
+  Covered branches: 6401
+  Total branches: 6683
+  Method coverage: 99.2% (1199 of 1208)
+  Full method coverage: 20.1% (244 of 1208)
+  Covered methods: 1199
+  Fully covered methods: 244
+  Total methods: 1208
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -143,6 +143,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountOddNumbersInAnIntervalRange.CountOddNumbersInAnIntervalRangeMath                                                             100%
   LeetCode.Algorithms.CountOfMatchesInTournament.CountOfMatchesInTournamentConstant                                                                     100%
   LeetCode.Algorithms.CountOfMatchesInTournament.CountOfMatchesInTournamentIterative                                                                    100%
+  LeetCode.Algorithms.CountOfSubstringsContainingEveryVowelAndKConsonants2.CountOfSubstringsContainingEveryVowelAndKConsonants2SlidingWindow            100%
   LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget.CountPairsWhoseSumIsLessThanTargetIterative                                                    100%
   LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget.CountPairsWhoseSumIsLessThanTargetSortTwoPointers                                              100%
   LeetCode.Algorithms.CountPartitionsWithEvenSumDifference.CountPartitionsWithEvenSumDifferencePrefixSum                                                100%
