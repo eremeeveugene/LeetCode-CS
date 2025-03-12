@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/10/2025 - 12:12:29 PM
-  Coverage date: 3/10/2025 - 12:11:25 PM - 3/10/2025 - 12:11:44 PM
+  Generated on: 3/12/2025 - 3:43:02 PM
+  Coverage date: 3/12/2025 - 3:41:55 PM - 3/12/2025 - 3:42:14 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 835
-  Files: 835
+  Classes: 838
+  Files: 838
   Line coverage: 97.8%
-  Covered lines: 17406
+  Covered lines: 17454
   Uncovered lines: 379
-  Coverable lines: 17785
-  Total lines: 44868
-  Branch coverage: 95.7% (6401 of 6683)
-  Covered branches: 6401
-  Total branches: 6683
-  Method coverage: 99.2% (1199 of 1208)
-  Full method coverage: 20.1% (244 of 1208)
-  Covered methods: 1199
+  Coverable lines: 17833
+  Total lines: 45008
+  Branch coverage: 95.7% (6417 of 6701)
+  Covered branches: 6417
+  Total branches: 6701
+  Method coverage: 99.2% (1203 of 1212)
+  Full method coverage: 20.1% (244 of 1212)
+  Covered methods: 1203
   Fully covered methods: 244
-  Total methods: 1208
+  Total methods: 1212
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -430,6 +430,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumAverageSubarray1.MaximumAverageSubarray1SlidingWindow                                                                      100%
   LeetCode.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation.MaximumBeautyOfAnArrayAfterApplyingOperationDifferenceArray                           90%
   LeetCode.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation.MaximumBeautyOfAnArrayAfterApplyingOperationLineSweep                               90.4%
+  LeetCode.Algorithms.MaximumCountOfPositiveIntegerAndNegativeInteger.MaximumCountOfPositiveIntegerAndNegativeIntegerBinarySearch                       100%
+  LeetCode.Algorithms.MaximumCountOfPositiveIntegerAndNegativeInteger.MaximumCountOfPositiveIntegerAndNegativeIntegerBruteForce                         100%
+  LeetCode.Algorithms.MaximumCountOfPositiveIntegerAndNegativeInteger.MaximumCountOfPositiveIntegerAndNegativeIntegerCounting                           100%
   LeetCode.Algorithms.MaximumDepthOfBinaryTree.MaximumDepthOfBinaryTreeBreadthFirstSearch                                                               100%
   LeetCode.Algorithms.MaximumDepthOfBinaryTree.MaximumDepthOfBinaryTreeDepthFirstSearch                                                                 100%
   LeetCode.Algorithms.MaximumDepthOfNaryTree.MaximumDepthOfNaryTreeBreadthFirstSearch                                                                   100%
