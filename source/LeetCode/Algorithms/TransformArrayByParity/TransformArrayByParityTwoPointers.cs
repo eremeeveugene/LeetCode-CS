@@ -24,16 +24,16 @@ public class TransformArrayByParityTwoPointers : ITransformArrayByParity
     {
         var left = 0;
 
-        for (var i = 0; i < nums.Length; i++)
+        for (var right = 0; right < nums.Length; right++)
         {
-            nums[i] = nums[i] % 2 == 0 ? 0 : 1;
+            nums[right] = nums[right] % 2 == 0 ? 0 : 1;
 
-            if (nums[i] != 0)
+            if (nums[right] != 0)
             {
                 continue;
             }
 
-            (nums[i], nums[left]) = (nums[left], nums[i]);
+            (nums[right], nums[left]) = (nums[left], nums[right]);
 
             left++;
         }
