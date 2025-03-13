@@ -571,6 +571,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3432. Count Partitions with Even Sum Difference](https://leetcode.com/problems/count-partitions-with-even-sum-difference/description/)
 - [3452. Sum of Good Numbers](https://leetcode.com/problems/sum-of-good-numbers/description/)
 - [3461. Check If Digits Are Equal in String After Operations I](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/description/)
+- [3467. Transform Array by Parity](https://leetcode.com/problems/transform-array-by-parity/description/)
 
   </p>
 </details>
