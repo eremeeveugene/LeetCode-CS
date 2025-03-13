@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/12/2025 - 3:43:02 PM
-  Coverage date: 3/12/2025 - 3:41:55 PM - 3/12/2025 - 3:42:14 PM
+  Generated on: 3/13/2025 - 11:41:23 AM
+  Coverage date: 3/13/2025 - 11:40:12 AM - 3/13/2025 - 11:40:30 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 838
-  Files: 838
+  Classes: 840
+  Files: 840
   Line coverage: 97.8%
-  Covered lines: 17454
+  Covered lines: 17498
   Uncovered lines: 379
-  Coverable lines: 17833
-  Total lines: 45008
-  Branch coverage: 95.7% (6417 of 6701)
-  Covered branches: 6417
-  Total branches: 6701
-  Method coverage: 99.2% (1203 of 1212)
-  Full method coverage: 20.1% (244 of 1212)
-  Covered methods: 1203
+  Coverable lines: 17877
+  Total lines: 45112
+  Branch coverage: 95.7% (6433 of 6717)
+  Covered branches: 6433
+  Total branches: 6717
+  Method coverage: 99.2% (1205 of 1214)
+  Full method coverage: 20% (244 of 1214)
+  Covered methods: 1205
   Fully covered methods: 244
-  Total methods: 1212
+  Total methods: 1214
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -806,6 +806,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ToLowerCase.ToLowerCaseArray                                                                                                      100%
   LeetCode.Algorithms.ToLowerCase.ToLowerCaseBuiltIn                                                                                                    100%
   LeetCode.Algorithms.ToLowerCase.ToLowerCaseStringBuilder                                                                                              100%
+  LeetCode.Algorithms.TransformArrayByParity.TransformArrayByParityTwoPass                                                                              100%
+  LeetCode.Algorithms.TransformArrayByParity.TransformArrayByParityTwoPointers                                                                          100%
   LeetCode.Algorithms.TransformedArray.TransformedArrayIterative                                                                                        100%
   LeetCode.Algorithms.TrappingRainWater.TrappingRainWaterIterative                                                                                      100%
   LeetCode.Algorithms.TupleWithSameProduct.TupleWithSameProductDictionary                                                                               100%
