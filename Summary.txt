@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/13/2025 - 11:41:23 AM
-  Coverage date: 3/13/2025 - 11:40:12 AM - 3/13/2025 - 11:40:30 AM
+  Generated on: 3/14/2025 - 12:26:21 PM
+  Coverage date: 3/14/2025 - 12:25:09 PM - 3/14/2025 - 12:25:29 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 840
-  Files: 840
+  Classes: 841
+  Files: 841
   Line coverage: 97.8%
-  Covered lines: 17498
-  Uncovered lines: 379
-  Coverable lines: 17877
-  Total lines: 45112
-  Branch coverage: 95.7% (6433 of 6717)
-  Covered branches: 6433
-  Total branches: 6717
-  Method coverage: 99.2% (1205 of 1214)
-  Full method coverage: 20% (244 of 1214)
-  Covered methods: 1205
+  Covered lines: 17517
+  Uncovered lines: 380
+  Coverable lines: 17897
+  Total lines: 45165
+  Branch coverage: 95.7% (6442 of 6727)
+  Covered branches: 6442
+  Total branches: 6727
+  Method coverage: 99.2% (1206 of 1215)
+  Full method coverage: 20% (244 of 1215)
+  Covered methods: 1206
   Fully covered methods: 244
-  Total methods: 1214
+  Total methods: 1215
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -95,6 +95,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CheckIfNumberIsSumOfPowersOfThree.CheckIfNumberIsSumOfPowersOfThreeIterative                                                      100%
   LeetCode.Algorithms.CheckIfOneStringSwapCanMakeStringsEqual.CheckIfOneStringSwapCanMakeStringsEqualIterative                                          100%
   LeetCode.Algorithms.CheckIfParenthesesStringCanBeValid.CheckIfParenthesesStringCanBeValidGreedy                                                      92.8%
+  LeetCode.Algorithms.CheckIfStringIsPrefixOfArray.CheckIfStringIsPrefixOfArrayTwoPointers                                                               95%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramHashSet                                                                    100%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramIterative                                                                  100%
   LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentConcat                                                     100%
