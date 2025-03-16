@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/15/2025 - 1:26:22 PM
-  Coverage date: 3/15/2025 - 1:25:29 PM - 3/15/2025 - 1:25:47 PM
+  Generated on: 3/16/2025 - 10:58:49 AM
+  Coverage date: 3/16/2025 - 10:57:45 AM - 3/16/2025 - 10:58:03 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 842
-  Files: 842
+  Classes: 843
+  Files: 843
   Line coverage: 97.8%
-  Covered lines: 17542
+  Covered lines: 17556
   Uncovered lines: 380
-  Coverable lines: 17922
-  Total lines: 45219
-  Branch coverage: 95.7% (6452 of 6737)
-  Covered branches: 6452
-  Total branches: 6737
-  Method coverage: 99.2% (1207 of 1216)
-  Full method coverage: 20% (244 of 1216)
-  Covered methods: 1207
+  Coverable lines: 17936
+  Total lines: 45261
+  Branch coverage: 95.7% (6459 of 6745)
+  Covered branches: 6459
+  Total branches: 6745
+  Method coverage: 99.2% (1208 of 1217)
+  Full method coverage: 20% (244 of 1217)
+  Covered methods: 1208
   Fully covered methods: 244
-  Total methods: 1216
+  Total methods: 1217
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -459,6 +459,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumScoreAfterSplittingString.MaximumScoreAfterSplittingStringIterative                                                        100%
   LeetCode.Algorithms.MaximumSumOfDistinctSubarraysWithLengthK.MaximumSumOfDistinctSubarraysWithLengthKSlidingWindow                                    100%
   LeetCode.Algorithms.MaximumSwap.MaximumSwapGreedy                                                                                                     100%
+  LeetCode.Algorithms.MaximumUniqueSubarraySumAfterDeletion.MaximumUniqueSubarraySumAfterDeletionHashSet                                                100%
   LeetCode.Algorithms.MaximumWidthRamp.MaximumWidthRampStack                                                                                             92%
   LeetCode.Algorithms.MaximumXORForEachQuery.MaximumXORForEachQueryBitMasking                                                                           100%
   LeetCode.Algorithms.MaximumXORForEachQuery.MaximumXORForEachQueryBruteForce                                                                           100%
