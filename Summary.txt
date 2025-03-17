@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/16/2025 - 10:58:49 AM
-  Coverage date: 3/16/2025 - 10:57:45 AM - 3/16/2025 - 10:58:03 AM
+  Generated on: 3/17/2025 - 12:33:28 PM
+  Coverage date: 3/17/2025 - 12:32:35 PM - 3/17/2025 - 12:32:53 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 843
-  Files: 843
+  Classes: 846
+  Files: 846
   Line coverage: 97.8%
-  Covered lines: 17556
+  Covered lines: 17586
   Uncovered lines: 380
-  Coverable lines: 17936
-  Total lines: 45261
-  Branch coverage: 95.7% (6459 of 6745)
-  Covered branches: 6459
-  Total branches: 6745
-  Method coverage: 99.2% (1208 of 1217)
-  Full method coverage: 20% (244 of 1217)
-  Covered methods: 1208
+  Coverable lines: 17966
+  Total lines: 45369
+  Branch coverage: 95.7% (6469 of 6755)
+  Covered branches: 6469
+  Total branches: 6755
+  Method coverage: 99.2% (1211 of 1220)
+  Full method coverage: 20% (244 of 1220)
+  Covered methods: 1211
   Fully covered methods: 244
-  Total methods: 1217
+  Total methods: 1220
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -210,6 +210,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.DistributeMoneyToMaximumChildren.DistributeMoneyToMaximumChildrenLinear                                                          93.3%
   LeetCode.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers.DivideArrayInSetsOfKConsecutiveNumbersDictionary                                           100%
   LeetCode.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers.DivideArrayInSetsOfKConsecutiveNumbersSortedDictionary                                     100%
+  LeetCode.Algorithms.DivideArrayIntoEqualPairs.DivideArrayIntoEqualPairsArray                                                                          100%
+  LeetCode.Algorithms.DivideArrayIntoEqualPairs.DivideArrayIntoEqualPairsDictionary                                                                     100%
+  LeetCode.Algorithms.DivideArrayIntoEqualPairs.DivideArrayIntoEqualPairsHashSet                                                                        100%
   LeetCode.Algorithms.DivideIntervalsIntoMinimumNumberOfGroups.DivideIntervalsIntoMinimumNumberOfGroupsLineSweep                                        100%
   LeetCode.Algorithms.DivideIntervalsIntoMinimumNumberOfGroups.DivideIntervalsIntoMinimumNumberOfGroupsSorting                                          100%
   LeetCode.Algorithms.DividePlayersIntoTeamsOfEqualSkill.DividePlayersIntoTeamsOfEqualSkillDictionary                                                  92.3%
