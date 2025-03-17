@@ -12,26 +12,23 @@
 namespace LeetCode.Algorithms.DivideArrayIntoEqualPairs;
 
 /// <inheritdoc />
-public class DivideArrayIntoEqualPairsHashSet : IDivideArrayIntoEqualPairs
+public class DivideArrayIntoEqualPairsArray : IDivideArrayIntoEqualPairs
 {
     /// <summary>
     ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="nums"></param>
     /// <returns></returns>
     public bool DivideArray(int[] nums)
     {
-        var frequencyHashSet = new HashSet<int>();
+        var frequencies = new int[501];
 
         foreach (var num in nums)
         {
-            if (!frequencyHashSet.Add(num))
-            {
-                frequencyHashSet.Remove(num);
-            }
+            frequencies[num]++;
         }
 
-        return frequencyHashSet.Count == 0;
+        return frequencies.All(frequency => frequency % 2 == 0);
     }
 }

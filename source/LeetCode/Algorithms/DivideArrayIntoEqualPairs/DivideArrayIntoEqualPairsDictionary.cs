@@ -22,16 +22,16 @@ public class DivideArrayIntoEqualPairsDictionary : IDivideArrayIntoEqualPairs
     /// <returns></returns>
     public bool DivideArray(int[] nums)
     {
-        var countDictionary = new Dictionary<int, int>();
+        var frequencyDictionary = new Dictionary<int, int>();
 
         foreach (var num in nums)
         {
-            if (!countDictionary.TryAdd(num, 1))
+            if (!frequencyDictionary.TryAdd(num, 1))
             {
-                countDictionary[num]++;
+                frequencyDictionary[num]++;
             }
         }
 
-        return countDictionary.All(count => count.Value % 2 == 0);
+        return frequencyDictionary.Values.All(frequency => frequency % 2 == 0);
     }
 }

@@ -9,29 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.DivideArrayIntoEqualPairs;
+using LeetCode.Algorithms.DivideArrayIntoEqualPairs;
 
-/// <inheritdoc />
-public class DivideArrayIntoEqualPairsHashSet : IDivideArrayIntoEqualPairs
-{
-    /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
-    public bool DivideArray(int[] nums)
-    {
-        var frequencyHashSet = new HashSet<int>();
+namespace LeetCode.Tests.Algorithms.DivideArrayIntoEqualPairs;
 
-        foreach (var num in nums)
-        {
-            if (!frequencyHashSet.Add(num))
-            {
-                frequencyHashSet.Remove(num);
-            }
-        }
-
-        return frequencyHashSet.Count == 0;
-    }
-}
+[TestClass]
+public class DivideArrayIntoEqualPairsArrayTests :
+    DivideArrayIntoEqualPairsTestsBase<DivideArrayIntoEqualPairsArray>;
