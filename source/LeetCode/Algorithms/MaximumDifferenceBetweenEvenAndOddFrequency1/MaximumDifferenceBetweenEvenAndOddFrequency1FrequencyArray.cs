@@ -1,0 +1,55 @@
+﻿// --------------------------------------------------------------------------------
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// All Rights Reserved.
+// --------------------------------------------------------------------------------
+// This software is the confidential and proprietary information of Eugene Eremeev
+// (also known as Yevhenii Yeriemeieiv) ("Confidential Information"). You shall not
+// disclose such Confidential Information and shall use it only in accordance with
+// the terms of the license agreement you entered into with Eugene Eremeev (also
+// known as Yevhenii Yeriemeieiv).
+// --------------------------------------------------------------------------------
+
+namespace LeetCode.Algorithms.MaximumDifferenceBetweenEvenAndOddFrequency1;
+
+/// <inheritdoc />
+public class MaximumDifferenceBetweenEvenAndOddFrequency1FrequencyArray :
+    IMaximumDifferenceBetweenEvenAndOddFrequency1
+{
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="s"></param>
+    /// <returns></returns>
+    public int MaxDifference(string s)
+    {
+        var frequencyArray = new int['z' - 'a' + 1];
+
+        foreach (var c in s)
+        {
+            frequencyArray['z' - c]++;
+        }
+
+        var oddFrequency = int.MinValue;
+        var evenFrequency = int.MaxValue;
+
+        foreach (var frequency in frequencyArray)
+        {
+            if (frequency == 0)
+            {
+                continue;
+            }
+
+            if (frequency % 2 == 0)
+            {
+                evenFrequency = Math.Min(evenFrequency, frequency);
+            }
+            else
+            {
+                oddFrequency = Math.Max(oddFrequency, frequency);
+            }
+        }
+
+        return oddFrequency - evenFrequency;
+    }
+}
