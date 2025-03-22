@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/21/2025 - 12:24:10 PM
-  Coverage date: 3/21/2025 - 12:23:08 PM - 3/21/2025 - 12:23:26 PM
+  Generated on: 3/22/2025 - 5:44:48 PM
+  Coverage date: 3/22/2025 - 5:43:37 PM - 3/22/2025 - 5:43:56 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 848
-  Files: 848
+  Classes: 850
+  Files: 850
   Line coverage: 97.8%
-  Covered lines: 17616
+  Covered lines: 17659
   Uncovered lines: 380
-  Coverable lines: 17996
-  Total lines: 45455
-  Branch coverage: 95.7% (6479 of 6765)
-  Covered branches: 6479
-  Total branches: 6765
-  Method coverage: 99.2% (1213 of 1222)
-  Full method coverage: 19.9% (244 of 1222)
-  Covered methods: 1213
+  Coverable lines: 18039
+  Total lines: 45560
+  Branch coverage: 95.7% (6495 of 6781)
+  Covered branches: 6495
+  Total branches: 6781
+  Method coverage: 99.2% (1215 of 1224)
+  Full method coverage: 19.9% (244 of 1224)
+  Covered methods: 1215
   Fully covered methods: 244
-  Total methods: 1222
+  Total methods: 1224
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -443,6 +443,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumDepthOfNaryTree.MaximumDepthOfNaryTreeDepthFirstSearchRecursive                                                            100%
   LeetCode.Algorithms.MaximumDepthOfNaryTree.MaximumDepthOfNaryTreeDepthFirstSearchStack                                                                100%
   LeetCode.Algorithms.MaximumDifferenceBetweenAdjacentElementsInCircularArray.MaximumDifferenceBetweenAdjacentElementsInCircularArrayIterative          100%
+  LeetCode.Algorithms.MaximumDifferenceBetweenEvenAndOddFrequency1.MaximumDifferenceBetweenEvenAndOddFrequency1FrequencyArray                           100%
+  LeetCode.Algorithms.MaximumDifferenceBetweenEvenAndOddFrequency1.MaximumDifferenceBetweenEvenAndOddFrequency1FrequencyDictionary                      100%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysBruteForce                                                                         100%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysGreedy                                                                             100%
   LeetCode.Algorithms.MaximumMatrixSum.MaximumMatrixSumBruteForce                                                                                       100%
