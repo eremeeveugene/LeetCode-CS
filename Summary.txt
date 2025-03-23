@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/22/2025 - 5:44:48 PM
-  Coverage date: 3/22/2025 - 5:43:37 PM - 3/22/2025 - 5:43:56 PM
+  Generated on: 3/23/2025 - 12:08:56 PM
+  Coverage date: 3/23/2025 - 12:07:42 PM - 3/23/2025 - 12:08:02 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 850
-  Files: 850
+  Classes: 852
+  Files: 852
   Line coverage: 97.8%
-  Covered lines: 17659
-  Uncovered lines: 380
-  Coverable lines: 18039
-  Total lines: 45560
-  Branch coverage: 95.7% (6495 of 6781)
-  Covered branches: 6495
-  Total branches: 6781
-  Method coverage: 99.2% (1215 of 1224)
-  Full method coverage: 19.9% (244 of 1224)
-  Covered methods: 1215
+  Covered lines: 17733
+  Uncovered lines: 383
+  Coverable lines: 18116
+  Total lines: 45708
+  Branch coverage: 95.7% (6550 of 6841)
+  Covered branches: 6550
+  Total branches: 6841
+  Method coverage: 99.2% (1217 of 1226)
+  Full method coverage: 19.9% (244 of 1226)
+  Covered methods: 1217
   Fully covered methods: 244
-  Total methods: 1224
+  Total methods: 1226
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -835,6 +835,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.UniqueLength3PalindromicSubsequences.UniqueLength3PalindromicSubsequencesCounting                                                 100%
   LeetCode.Algorithms.UniqueMorseCodeWords.UniqueMorseCodeWordsHashSet                                                                                  100%
   LeetCode.Algorithms.UniqueNumberOfOccurrences.UniqueNumberOfOccurrencesDictionary                                                                     100%
+  LeetCode.Algorithms.UniqueThreeDigitEvenNumbers.UniqueThreeDigitEvenNumbersBruteForce                                                                 100%
+  LeetCode.Algorithms.UniqueThreeDigitEvenNumbers.UniqueThreeDigitEvenNumbersDigitsFrequency                                                           94.7%
   LeetCode.Algorithms.ValidAnagram.ValidAnagramDictionary                                                                                              90.4%
   LeetCode.Algorithms.ValidAnagram.ValidAnagramSorting                                                                                                  100%
   LeetCode.Algorithms.ValidPalindrome.ValidPalindromeTwoPointers                                                                                        100%
