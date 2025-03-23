@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/23/2025 - 12:47:48 PM
-  Coverage date: 3/23/2025 - 12:46:54 PM - 3/23/2025 - 12:47:13 PM
+  Generated on: 3/23/2025 - 3:34:23 PM
+  Coverage date: 3/23/2025 - 3:32:55 PM - 3/23/2025 - 3:33:35 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 854
-  Files: 854
+  Classes: 855
+  Files: 855
   Line coverage: 97.8%
-  Covered lines: 17762
+  Covered lines: 17779
   Uncovered lines: 383
-  Coverable lines: 18145
-  Total lines: 45792
-  Branch coverage: 95.7% (6560 of 6851)
-  Covered branches: 6560
-  Total branches: 6851
-  Method coverage: 99.2% (1219 of 1228)
-  Full method coverage: 19.8% (244 of 1228)
-  Covered methods: 1219
+  Coverable lines: 18162
+  Total lines: 45841
+  Branch coverage: 95.7% (6568 of 6859)
+  Covered branches: 6568
+  Total branches: 6859
+  Method coverage: 99.2% (1220 of 1229)
+  Full method coverage: 19.8% (244 of 1229)
+  Covered methods: 1220
   Fully covered methods: 244
-  Total methods: 1228
+  Total methods: 1229
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -523,6 +523,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel.MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch               100%
   LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced.MinimumNumberOfSwapsToMakeTheStringBalancedIterative                                  100%
   LeetCode.Algorithms.MinimumOperationsToExceedThresholdValue2.MinimumOperationsToExceedThresholdValue2PriorityQueue                                    100%
+  LeetCode.Algorithms.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1Greedy                 100%
   LeetCode.Algorithms.MinimumRecolorsToGetKConsecutiveBlackBlocks.MinimumRecolorsToGetKConsecutiveBlackBlocksSlidingWindow                              100%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStack                                                      100%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStringBuilder                                              100%
