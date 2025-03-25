@@ -571,6 +571,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3340. Check Balanced String](https://leetcode.com/problems/check-balanced-string/description/)
 - [3379. Transformed Array](https://leetcode.com/problems/transformed-array/description/)
 - [3386. Button with Longest Push Time](https://leetcode.com/problems/button-with-longest-push-time/description/)
+- [3394. Check if Grid can be Cut into Sections](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections/description/)
 - [3396. Minimum Number of Operations to Make Elements in Array Distinct](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/description/)
 - [3417. Zigzag Grid Traversal With Skip](https://leetcode.com/problems/zigzag-grid-traversal-with-skip/description/)
 - [3423. Maximum Difference Between Adjacent Elements in a Circular Array](https://leetcode.com/problems/maximum-difference-between-adjacent-elements-in-a-circular-array/description/)
