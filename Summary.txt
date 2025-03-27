@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/26/2025 - 12:09:09 PM
-  Coverage date: 3/26/2025 - 12:08:17 PM - 3/26/2025 - 12:08:36 PM
+  Generated on: 3/27/2025 - 2:38:00 PM
+  Coverage date: 3/27/2025 - 2:36:20 PM - 3/27/2025 - 2:37:19 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 858
-  Files: 858
-  Line coverage: 97.8%
-  Covered lines: 17840
+  Classes: 859
+  Files: 859
+  Line coverage: 97.9%
+  Covered lines: 17868
   Uncovered lines: 383
-  Coverable lines: 18223
-  Total lines: 46000
-  Branch coverage: 95.7% (6588 of 6879)
-  Covered branches: 6588
-  Total branches: 6879
-  Method coverage: 99.2% (1224 of 1233)
-  Full method coverage: 19.8% (245 of 1233)
-  Covered methods: 1224
+  Coverable lines: 18251
+  Total lines: 46062
+  Branch coverage: 95.7% (6598 of 6889)
+  Covered branches: 6598
+  Total branches: 6889
+  Method coverage: 99.2% (1225 of 1234)
+  Full method coverage: 19.8% (245 of 1234)
+  Covered methods: 1225
   Fully covered methods: 245
-  Total methods: 1233
+  Total methods: 1234
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -506,6 +506,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumHeightTrees.MinimumHeightTreesLeafPruning                                                                                  100%
   LeetCode.Algorithms.MinimumIncrementToMakeArrayUnique.MinimumIncrementToMakeArrayUniqueCounting                                                       100%
   LeetCode.Algorithms.MinimumIncrementToMakeArrayUnique.MinimumIncrementToMakeArrayUniqueSorting                                                        100%
+  LeetCode.Algorithms.MinimumIndexOfValidSplit.MinimumIndexOfValidSplitDictionary                                                                       100%
   LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds.MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers                            100%
   LeetCode.Algorithms.MinimumLengthOfStringAfterOperations.MinimumLengthOfStringAfterOperationsFrequencyArray                                           100%
   LeetCode.Algorithms.MinimumLengthOfStringAfterOperations.MinimumLengthOfStringAfterOperationsFrequencyDictionary                                      100%
