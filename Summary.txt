@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/29/2025 - 2:25:37 PM
-  Coverage date: 3/29/2025 - 2:23:57 PM - 3/29/2025 - 2:24:51 PM
+  Generated on: 3/30/2025 - 2:03:58 PM
+  Coverage date: 3/30/2025 - 2:03:00 PM - 3/30/2025 - 2:03:19 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 862
-  Files: 862
+  Classes: 863
+  Files: 863
   Line coverage: 97.8%
-  Covered lines: 17949
+  Covered lines: 17969
   Uncovered lines: 386
-  Coverable lines: 18335
-  Total lines: 46258
-  Branch coverage: 95.7% (6645 of 6937)
-  Covered branches: 6645
-  Total branches: 6937
-  Method coverage: 99.2% (1228 of 1237)
-  Full method coverage: 19.8% (245 of 1237)
-  Covered methods: 1228
+  Coverable lines: 18355
+  Total lines: 46311
+  Branch coverage: 95.7% (6651 of 6943)
+  Covered branches: 6651
+  Total branches: 6943
+  Method coverage: 99.2% (1229 of 1238)
+  Full method coverage: 19.7% (245 of 1238)
+  Covered methods: 1229
   Fully covered methods: 245
-  Total methods: 1237
+  Total methods: 1238
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -601,6 +601,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.PartitionArrayAccordingToGivenPivot.PartitionArrayAccordingToGivenPivotTwoPointers                                                100%
   LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumIterative                                       95.1%
   LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumSinglePass                                       100%
+  LeetCode.Algorithms.PartitionLabels.PartitionLabelsTwoPointers                                                                                        100%
   LeetCode.Algorithms.PascalsTriangle.PascalsTriangleDynamicProgramming                                                                                 100%
   LeetCode.Algorithms.PascalsTriangle2.PascalsTriangle2DynamicProgramming                                                                               100%
   LeetCode.Algorithms.PassThePillow.PassThePillowMath                                                                                                   100%
