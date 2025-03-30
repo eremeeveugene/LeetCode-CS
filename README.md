@@ -233,6 +233,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [733. Flood Fill](https://leetcode.com/problems/flood-fill/description/)
 - [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/)
 - [752. Open the Lock](https://leetcode.com/problems/open-the-lock/description/)
+- [763. Partition Labels](https://leetcode.com/problems/partition-labels/description/)
 - [769. Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted/description/)
 - [771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/description/)
 - [773. Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle/description/)
