@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/30/2025 - 2:03:58 PM
-  Coverage date: 3/30/2025 - 2:03:00 PM - 3/30/2025 - 2:03:19 PM
+  Generated on: 3/31/2025 - 10:26:25 AM
+  Coverage date: 3/31/2025 - 10:25:11 AM - 3/31/2025 - 10:25:29 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 863
-  Files: 863
+  Classes: 864
+  Files: 864
   Line coverage: 97.8%
-  Covered lines: 17969
+  Covered lines: 17978
   Uncovered lines: 386
-  Coverable lines: 18355
-  Total lines: 46311
-  Branch coverage: 95.7% (6651 of 6943)
-  Covered branches: 6651
-  Total branches: 6943
-  Method coverage: 99.2% (1229 of 1238)
-  Full method coverage: 19.7% (245 of 1238)
-  Covered methods: 1229
+  Coverable lines: 18364
+  Total lines: 46347
+  Branch coverage: 95.7% (6653 of 6945)
+  Covered branches: 6653
+  Total branches: 6945
+  Method coverage: 99.2% (1230 of 1239)
+  Full method coverage: 19.7% (245 of 1239)
+  Covered methods: 1230
   Fully covered methods: 245
-  Total methods: 1238
+  Total methods: 1239
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -497,6 +497,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueTwoPointers                                                                                  100%
   LeetCode.Algorithms.MinimumCostToHireKWorkers.MinimumCostToHireKWorkersPriorityQueue                                                                  100%
   LeetCode.Algorithms.MinimumCostToMakeAtLeastOneValidPathInGrid.MinimumCostToMakeAtLeastOneValidPathInGridBreadthFirstSearch                           100%
+  LeetCode.Algorithms.MinimumCostToReachEveryPosition.MinimumCostToReachEveryPositionGreedy                                                             100%
   LeetCode.Algorithms.MinimumDepthOfBinaryTree.MinimumDepthOfBinaryTreeBreadthFirstSearch                                                               100%
   LeetCode.Algorithms.MinimumDepthOfBinaryTree.MinimumDepthOfBinaryTreeDepthFirstSearch                                                                 100%
   LeetCode.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesSorting    100%
