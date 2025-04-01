@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/31/2025 - 10:26:25 AM
-  Coverage date: 3/31/2025 - 10:25:11 AM - 3/31/2025 - 10:25:29 AM
+  Generated on: 4/1/2025 - 11:24:10 AM
+  Coverage date: 4/1/2025 - 11:23:09 AM - 4/1/2025 - 11:23:28 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 864
-  Files: 864
-  Line coverage: 97.8%
-  Covered lines: 17978
+  Classes: 865
+  Files: 865
+  Line coverage: 97.9%
+  Covered lines: 18000
   Uncovered lines: 386
-  Coverable lines: 18364
-  Total lines: 46347
-  Branch coverage: 95.7% (6653 of 6945)
-  Covered branches: 6653
-  Total branches: 6945
-  Method coverage: 99.2% (1230 of 1239)
-  Full method coverage: 19.7% (245 of 1239)
-  Covered methods: 1230
+  Coverable lines: 18386
+  Total lines: 46401
+  Branch coverage: 95.7% (6659 of 6951)
+  Covered branches: 6659
+  Total branches: 6951
+  Method coverage: 99.2% (1231 of 1240)
+  Full method coverage: 19.7% (245 of 1240)
+  Covered methods: 1231
   Fully covered methods: 245
-  Total methods: 1239
+  Total methods: 1240
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -744,6 +744,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SmallestEvenMultiple.SmallestEvenMultipleConstant                                                                                 100%
   LeetCode.Algorithms.SmallestRangeCoveringElementsFromKLists.SmallestRangeCoveringElementsFromKListsSortingWithSlidingWindow                           100%
   LeetCode.Algorithms.SmallestStringStartingFromLeaf.SmallestStringStartingFromLeafDepthFirstSearch                                                     100%
+  LeetCode.Algorithms.SolvingQuestionsWithBrainpower.SolvingQuestionsWithBrainpowerDynamicProgramming                                                   100%
   LeetCode.Algorithms.SortAnArray.SortAnArrayBubbleSort                                                                                                 100%
   LeetCode.Algorithms.SortAnArray.SortAnArrayMergeSort                                                                                                 89.3%
   LeetCode.Algorithms.SortAnArray.SortAnArrayQuickSort                                                                                                  100%
