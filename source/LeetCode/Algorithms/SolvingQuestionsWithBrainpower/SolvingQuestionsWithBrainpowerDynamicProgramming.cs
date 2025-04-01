@@ -22,22 +22,29 @@ public class SolvingQuestionsWithBrainpowerDynamicProgramming : ISolvingQuestion
     /// <returns></returns>
     public long MostPoints(int[][] questions)
     {
-        var maximumPoints = new long[questions.Length + 1];
+        var maximumPoints = new long[questions.Length];
 
         for (var currentQuestionIndex = questions.Length - 1; currentQuestionIndex >= 0; currentQuestionIndex--)
         {
             var currentQuestionPoints = questions[currentQuestionIndex][0];
             var currentQuestionBrainpower = questions[currentQuestionIndex][1];
-            var nextQuestionIndex = currentQuestionIndex + currentQuestionBrainpower + 1;
+            var nextSolvableQuestionIndex = currentQuestionIndex + currentQuestionBrainpower + 1;
 
             long solvePoints = currentQuestionPoints;
 
-            if (nextQuestionIndex < questions.Length)
+            if (nextSolvableQuestionIndex < questions.Length)
             {
-                solvePoints += maximumPoints[nextQuestionIndex];
+                solvePoints += maximumPoints[nextSolvableQuestionIndex];
             }
 
-            var skipPoints = maximumPoints[currentQuestionIndex + 1];
+            long skipPoints = 0;
+
+            var nextQuestionIndex = currentQuestionIndex + 1;
+
+            if (nextQuestionIndex < questions.Length)
+            {
+                skipPoints += maximumPoints[nextQuestionIndex];
+            }
 
             maximumPoints[currentQuestionIndex] = Math.Max(solvePoints, skipPoints);
         }
