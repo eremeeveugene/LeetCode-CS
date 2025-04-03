@@ -30,7 +30,7 @@ public class MaximumValueOfAnOrderedTriplet1BruteForce : IMaximumValueOfAnOrdere
             {
                 for (var k = j + 1; k < nums.Length; k++)
                 {
-                    var tripletValue = (long) (nums[i] - nums[j]) * nums[k];
+                    var tripletValue = (long)(nums[i] - nums[j]) * nums[k];
 
                     maximumTripletValue = Math.Max(maximumTripletValue, tripletValue);
                 }
