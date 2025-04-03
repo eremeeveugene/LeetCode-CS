@@ -532,6 +532,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2864. Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/description/)
 - [2872. Maximum Number of K-Divisible Components](https://leetcode.com/problems/maximum-number-of-k-divisible-components/description/)
 - [2873. Maximum Value of an Ordered Triplet I](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i/description/)
+- [2874. Maximum Value of an Ordered Triplet II](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/description/)
 - [2894. Divisible and Non-divisible Sums Difference](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/description/)
 - [2938. Separate Black and White Balls](https://leetcode.com/problems/separate-black-and-white-balls/description/)
 - [2914. Minimum Number of Changes to Make Binary String Beautiful](https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/description/)

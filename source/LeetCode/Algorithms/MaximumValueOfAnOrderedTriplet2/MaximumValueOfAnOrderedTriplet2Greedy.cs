@@ -9,13 +9,13 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.MaximumValueOfAnOrderedTriplet1;
+namespace LeetCode.Algorithms.MaximumValueOfAnOrderedTriplet2;
 
 /// <inheritdoc />
-public class MaximumValueOfAnOrderedTriplet1BruteForce : IMaximumValueOfAnOrderedTriplet1
+public class MaximumValueOfAnOrderedTriplet2Greedy : IMaximumValueOfAnOrderedTriplet2
 {
     /// <summary>
-    ///     Time complexity - O(n^3)
+    ///     Time complexity - O(n)
     ///     Space complexity - O(1)
     /// </summary>
     /// <param name="nums"></param>
@@ -24,17 +24,15 @@ public class MaximumValueOfAnOrderedTriplet1BruteForce : IMaximumValueOfAnOrdere
     {
         long maximumTripletValue = 0;
 
-        for (var i = 0; i < nums.Length - 2; i++)
-        {
-            for (var j = i + 1; j < nums.Length - 1; j++)
-            {
-                for (var k = j + 1; k < nums.Length; k++)
-                {
-                    var tripletValue = (long) (nums[i] - nums[j]) * nums[k];
+        var maxI = 0;
+        long maxDifference = 0;
 
-                    maximumTripletValue = Math.Max(maximumTripletValue, tripletValue);
-                }
-            }
+        foreach (var num in nums)
+        {
+            maximumTripletValue = Math.Max(maximumTripletValue, maxDifference * num);
+
+            maxDifference = Math.Max(maxDifference, maxI - num);
+            maxI = Math.Max(maxI, num);
         }
 
         return maximumTripletValue;
