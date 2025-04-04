@@ -290,6 +290,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1108. Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/description/)
 - [1110. Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/description/)
 - [1122. Relative Sort Array](https://leetcode.com/problems/relative-sort-array/description/)
+- [1123. Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/description/)
 - [1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/description/)
 - [1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/description/)
 - [1171. Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/description/)
