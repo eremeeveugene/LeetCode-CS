@@ -1,25 +1,25 @@
 Summary
-  Generated on: 4/4/2025 - 4:27:34 PM
-  Coverage date: 4/4/2025 - 4:25:50 PM - 4/4/2025 - 4:26:47 PM
+  Generated on: 4/4/2025 - 4:39:53 PM
+  Coverage date: 4/4/2025 - 4:38:47 PM - 4/4/2025 - 4:39:05 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 869
-  Files: 869
+  Classes: 870
+  Files: 870
   Line coverage: 97.9%
-  Covered lines: 18053
+  Covered lines: 18067
   Uncovered lines: 386
-  Coverable lines: 18439
-  Total lines: 46570
-  Branch coverage: 95.8% (6675 of 6967)
-  Covered branches: 6675
-  Total branches: 6967
-  Method coverage: 99.2% (1236 of 1245)
-  Full method coverage: 19.7% (246 of 1245)
-  Covered methods: 1236
-  Fully covered methods: 246
-  Total methods: 1245
+  Coverable lines: 18453
+  Total lines: 46617
+  Branch coverage: 95.8% (6681 of 6973)
+  Covered branches: 6681
+  Total branches: 6973
+  Method coverage: 99.2% (1238 of 1247)
+  Full method coverage: 19.8% (247 of 1247)
+  Covered methods: 1238
+  Fully covered methods: 247
+  Total methods: 1247
 
-LeetCode                                                                                                                                               97.8%
+LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                    100%
@@ -748,6 +748,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SmallestEvenMultiple.SmallestEvenMultipleConstant                                                                                 100%
   LeetCode.Algorithms.SmallestRangeCoveringElementsFromKLists.SmallestRangeCoveringElementsFromKListsSortingWithSlidingWindow                           100%
   LeetCode.Algorithms.SmallestStringStartingFromLeaf.SmallestStringStartingFromLeafDepthFirstSearch                                                     100%
+  LeetCode.Algorithms.SmallestSubtreeWithAllTheDeepestNodes.SmallestSubtreeWithAllTheDeepestNodesDepthFirstSearch                                       100%
   LeetCode.Algorithms.SolvingQuestionsWithBrainpower.SolvingQuestionsWithBrainpowerDynamicProgramming                                                   100%
   LeetCode.Algorithms.SortAnArray.SortAnArrayBubbleSort                                                                                                 100%
   LeetCode.Algorithms.SortAnArray.SortAnArrayMergeSort                                                                                                 89.3%
