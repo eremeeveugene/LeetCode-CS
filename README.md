@@ -170,6 +170,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/description/)
 - [414. Third Maximum Number](https://leetcode.com/problems/third-maximum-number/description/)
 - [415. Add Strings](https://leetcode.com/problems/add-strings/description/)
+- [416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/description/)
 - [429. N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/description/)
 - [432. All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/)
 - [440. K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/)
