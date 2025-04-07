@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/7/2025 - 9:42:48 AM
-  Coverage date: 4/7/2025 - 9:41:35 AM - 4/7/2025 - 9:41:53 AM
+  Generated on: 4/7/2025 - 10:54:40 AM
+  Coverage date: 4/7/2025 - 10:53:28 AM - 4/7/2025 - 10:53:46 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 872
-  Files: 872
+  Classes: 873
+  Files: 873
   Line coverage: 97.9%
-  Covered lines: 18114
+  Covered lines: 18131
   Uncovered lines: 386
-  Coverable lines: 18500
-  Total lines: 46731
-  Branch coverage: 95.8% (6701 of 6993)
-  Covered branches: 6701
-  Total branches: 6993
-  Method coverage: 99.2% (1240 of 1249)
-  Full method coverage: 19.7% (247 of 1249)
-  Covered methods: 1240
+  Coverable lines: 18517
+  Total lines: 46779
+  Branch coverage: 95.8% (6709 of 7001)
+  Covered branches: 6709
+  Total branches: 7001
+  Method coverage: 99.2% (1241 of 1250)
+  Full method coverage: 19.7% (247 of 1250)
+  Covered methods: 1241
   Fully covered methods: 247
-  Total methods: 1249
+  Total methods: 1250
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -608,6 +608,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.PartitionArrayAccordingToGivenPivot.PartitionArrayAccordingToGivenPivotTwoPointers                                                100%
   LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumIterative                                       95.1%
   LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumSinglePass                                       100%
+  LeetCode.Algorithms.PartitionEqualSubsetSum.PartitionEqualSubsetSumDynamicProgramming                                                                 100%
   LeetCode.Algorithms.PartitionLabels.PartitionLabelsTwoPointers                                                                                        100%
   LeetCode.Algorithms.PascalsTriangle.PascalsTriangleDynamicProgramming                                                                                 100%
   LeetCode.Algorithms.PascalsTriangle2.PascalsTriangle2DynamicProgramming                                                                               100%
