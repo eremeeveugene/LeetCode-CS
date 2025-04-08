@@ -43,6 +43,6 @@ public class PartitionEqualSubsetSumDynamicProgramming : IPartitionEqualSubsetSu
             }
         }
 
-        return dp[target];
+        return dp[^1];
     }
 }
