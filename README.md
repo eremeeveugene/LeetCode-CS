@@ -581,6 +581,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3289. The Two Sneaky Numbers of Digitville](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/description/)
 - [3306. Count of Substrings Containing Every Vowel and K Consonants II](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/description/)
 - [3340. Check Balanced String](https://leetcode.com/problems/check-balanced-string/description/)
+- [3375. Minimum Operations to Make Array Values Equal to K](https://leetcode.com/problems/minimum-operations-to-make-array-values-equal-to-k/description/)
 - [3379. Transformed Array](https://leetcode.com/problems/transformed-array/description/)
 - [3386. Button with Longest Push Time](https://leetcode.com/problems/button-with-longest-push-time/description/)
 - [3394. Check if Grid can be Cut into Sections](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections/description/)
