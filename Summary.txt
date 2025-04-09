@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/8/2025 - 7:06:56 PM
-  Coverage date: 4/8/2025 - 7:05:50 PM - 4/8/2025 - 7:06:08 PM
+  Generated on: 4/9/2025 - 10:38:08 AM
+  Coverage date: 4/9/2025 - 10:36:32 AM - 4/9/2025 - 10:37:22 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 874
-  Files: 874
+  Classes: 876
+  Files: 876
   Line coverage: 97.9%
-  Covered lines: 18166
+  Covered lines: 18196
   Uncovered lines: 386
-  Coverable lines: 18552
-  Total lines: 46854
-  Branch coverage: 95.8% (6719 of 7011)
-  Covered branches: 6719
-  Total branches: 7011
-  Method coverage: 99.2% (1244 of 1253)
-  Full method coverage: 19.7% (247 of 1253)
-  Covered methods: 1244
+  Coverable lines: 18582
+  Total lines: 46946
+  Branch coverage: 95.8% (6733 of 7025)
+  Covered branches: 6733
+  Total branches: 7025
+  Method coverage: 99.2% (1246 of 1255)
+  Full method coverage: 19.6% (247 of 1255)
+  Covered methods: 1246
   Fully covered methods: 247
-  Total methods: 1253
+  Total methods: 1255
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -532,6 +532,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel.MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch               100%
   LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced.MinimumNumberOfSwapsToMakeTheStringBalancedIterative                                  100%
   LeetCode.Algorithms.MinimumOperationsToExceedThresholdValue2.MinimumOperationsToExceedThresholdValue2PriorityQueue                                    100%
+  LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK.MinimumOperationsToMakeArrayValuesEqualToKHashSet                                      100%
+  LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK.MinimumOperationsToMakeArrayValuesEqualToKSeenArray                                    100%
   LeetCode.Algorithms.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1Greedy                 100%
   LeetCode.Algorithms.MinimumOperationsToMakeUniValueGrid.MinimumOperationsToMakeUniValueGridSorting                                                    100%
   LeetCode.Algorithms.MinimumPairRemovalToSortArray1.MinimumPairRemovalToSortArray1Simulation                                                           100%
