@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/9/2025 - 10:38:08 AM
-  Coverage date: 4/9/2025 - 10:36:32 AM - 4/9/2025 - 10:37:22 AM
+  Generated on: 4/10/2025 - 9:54:56 AM
+  Coverage date: 4/10/2025 - 9:53:57 AM - 4/10/2025 - 9:54:15 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 876
-  Files: 876
+  Classes: 877
+  Files: 877
   Line coverage: 97.9%
-  Covered lines: 18196
+  Covered lines: 18199
   Uncovered lines: 386
-  Coverable lines: 18582
-  Total lines: 46946
+  Coverable lines: 18585
+  Total lines: 46975
   Branch coverage: 95.8% (6733 of 7025)
   Covered branches: 6733
   Total branches: 7025
-  Method coverage: 99.2% (1246 of 1255)
-  Full method coverage: 19.6% (247 of 1255)
-  Covered methods: 1246
-  Fully covered methods: 247
-  Total methods: 1255
+  Method coverage: 99.2% (1247 of 1256)
+  Full method coverage: 19.7% (248 of 1256)
+  Covered methods: 1247
+  Fully covered methods: 248
+  Total methods: 1256
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -438,6 +438,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumAverageSubarray1.MaximumAverageSubarray1SlidingWindow                                                                      100%
   LeetCode.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation.MaximumBeautyOfAnArrayAfterApplyingOperationDifferenceArray                           90%
   LeetCode.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation.MaximumBeautyOfAnArrayAfterApplyingOperationLineSweep                               90.4%
+  LeetCode.Algorithms.MaximumContainersOnShip.MaximumContainersOnShipMath                                                                               100%
   LeetCode.Algorithms.MaximumCountOfPositiveIntegerAndNegativeInteger.MaximumCountOfPositiveIntegerAndNegativeIntegerBinarySearch                       100%
   LeetCode.Algorithms.MaximumCountOfPositiveIntegerAndNegativeInteger.MaximumCountOfPositiveIntegerAndNegativeIntegerBruteForce                         100%
   LeetCode.Algorithms.MaximumCountOfPositiveIntegerAndNegativeInteger.MaximumCountOfPositiveIntegerAndNegativeIntegerCounting                           100%
