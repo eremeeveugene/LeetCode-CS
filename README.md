@@ -574,6 +574,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3208. Alternating Groups II](https://leetcode.com/problems/alternating-groups-ii/description/)
 - [3210. Find the Encrypted String](https://leetcode.com/problems/find-the-encrypted-string/description/)
 - [3217. Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/description/)
+- [3222. Find the Winning Player in Coin Game](https://leetcode.com/problems/find-the-winning-player-in-coin-game/description/)
 - [3223. Minimum Length of String After Operations](https://leetcode.com/problems/minimum-length-of-string-after-operations/description/)
 - [3242. Design Neighbor Sum Service](https://leetcode.com/problems/design-neighbor-sum-service/description/)
 - [3254. Find the Power of K-Size Subarrays I](https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i/description/)
