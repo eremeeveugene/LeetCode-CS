@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/10/2025 - 9:54:56 AM
-  Coverage date: 4/10/2025 - 9:53:57 AM - 4/10/2025 - 9:54:15 AM
+  Generated on: 4/12/2025 - 10:25:25 AM
+  Coverage date: 4/12/2025 - 10:24:25 AM - 4/12/2025 - 10:24:44 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 877
-  Files: 877
+  Classes: 879
+  Files: 879
   Line coverage: 97.9%
-  Covered lines: 18199
+  Covered lines: 18213
   Uncovered lines: 386
-  Coverable lines: 18585
-  Total lines: 46975
-  Branch coverage: 95.8% (6733 of 7025)
-  Covered branches: 6733
-  Total branches: 7025
-  Method coverage: 99.2% (1247 of 1256)
-  Full method coverage: 19.7% (248 of 1256)
-  Covered methods: 1247
+  Coverable lines: 18599
+  Total lines: 47042
+  Branch coverage: 95.8% (6740 of 7033)
+  Covered branches: 6740
+  Total branches: 7033
+  Method coverage: 99.2% (1249 of 1258)
+  Full method coverage: 19.7% (248 of 1258)
+  Covered methods: 1249
   Fully covered methods: 248
-  Total methods: 1256
+  Total methods: 1258
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -311,6 +311,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk.FindTheStudentThatWillReplaceTheChalkPrefixSum                                              100%
   LeetCode.Algorithms.FindTheTownJudge.FindTheTownJudgeDictionary                                                                                       100%
   LeetCode.Algorithms.FindTheTownJudge.FindTheTownJudgeIterative                                                                                        100%
+  LeetCode.Algorithms.FindTheWinningPlayerInCoinGame.FindTheWinningPlayerInCoinGameMath                                                                 100%
+  LeetCode.Algorithms.FindTheWinningPlayerInCoinGame.FindTheWinningPlayerInCoinGameSimulation                                                           100%
   LeetCode.Algorithms.FindUniqueBinaryString.FindUniqueBinaryStringIterative                                                                            100%
   LeetCode.Algorithms.FindValidMatrixGivenRowAndColumnSums.FindValidMatrixGivenRowAndColumnSumsBruteForce                                               100%
   LeetCode.Algorithms.FindValidMatrixGivenRowAndColumnSums.FindValidMatrixGivenRowAndColumnSumsGreedy                                                   100%
