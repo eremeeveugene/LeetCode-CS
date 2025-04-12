@@ -32,11 +32,13 @@ public class CountServersThatCommunicateCounting : ICountServersThatCommunicate
         {
             for (var j = 0; j < n; j++)
             {
-                if (grid[i][j] == 1)
+                if (grid[i][j] == 0)
                 {
-                    rowCount[i]++;
-                    colCount[j]++;
+                    continue;
                 }
+
+                rowCount[i]++;
+                colCount[j]++;
             }
         }
 
