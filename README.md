@@ -406,6 +406,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1910. Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/description/)
 - [1915. Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings/description/)
 - [1920. Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/description/)
+- [1922. Count Good Numbers](https://leetcode.com/problems/count-good-numbers/description/)
 - [1929. Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/description/)
 - [1935. Maximum Number of Words You Can Type](https://leetcode.com/problems/maximum-number-of-words-you-can-type/description/)
 - [1937. Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/description/)
