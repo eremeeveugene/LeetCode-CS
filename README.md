@@ -471,6 +471,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2375. Construct Smallest Number From DI String](https://leetcode.com/problems/construct-smallest-number-from-di-string/description/)
 - [2379. Minimum Recolors to Get K Consecutive Black Blocks](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/description/)
 - [2381. Shifting Letters II](https://leetcode.com/problems/shifting-letters-ii/description/)
+- [2401. Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/description/)
 - [2406. Divide Intervals Into Minimum Number of Groups](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/description/)
 - [2409. Circular Sentence](https://leetcode.com/problems/circular-sentence/description/)
 - [2413. Smallest Even Multiple](https://leetcode.com/problems/smallest-even-multiple/description/)
