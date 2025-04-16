@@ -296,6 +296,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1123. Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/description/)
 - [1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/description/)
 - [1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/description/)
+- [1154. Day of the Year](https://leetcode.com/problems/day-of-the-year/description/)
 - [1171. Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/description/)
 - [1185. Day of the Week](https://leetcode.com/problems/day-of-the-week/description/)
 - [1190. Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/description/)
