@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/15/2025 - 5:28:48 PM
-  Coverage date: 4/15/2025 - 5:27:43 PM - 4/15/2025 - 5:28:01 PM
+  Generated on: 4/16/2025 - 1:47:56 PM
+  Coverage date: 4/16/2025 - 1:46:50 PM - 4/16/2025 - 1:47:09 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 889
-  Files: 889
+  Classes: 891
+  Files: 891
   Line coverage: 97.9%
-  Covered lines: 18409
+  Covered lines: 18425
   Uncovered lines: 388
-  Coverable lines: 18797
-  Total lines: 47558
-  Branch coverage: 95.8% (6815 of 7109)
-  Covered branches: 6815
-  Total branches: 7109
-  Method coverage: 99.2% (1261 of 1270)
-  Full method coverage: 19.5% (248 of 1270)
-  Covered methods: 1261
-  Fully covered methods: 248
-  Total methods: 1270
+  Coverable lines: 18813
+  Total lines: 47627
+  Branch coverage: 95.8% (6819 of 7113)
+  Covered branches: 6819
+  Total branches: 7113
+  Method coverage: 99.2% (1264 of 1273)
+  Full method coverage: 19.6% (250 of 1273)
+  Covered methods: 1264
+  Fully covered methods: 250
+  Total methods: 1273
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -174,6 +174,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CustomSortString.CustomSortStringDictionarySorting                                                                                100%
   LeetCode.Algorithms.DayOfTheWeek.DayOfTheWeekDateTime                                                                                                 100%
   LeetCode.Algorithms.DayOfTheWeek.DayOfTheWeekMath                                                                                                     100%
+  LeetCode.Algorithms.DayOfTheYear.DayOfTheYearDateParse                                                                                                100%
+  LeetCode.Algorithms.DayOfTheYear.DayOfTheYearMath                                                                                                     100%
   LeetCode.Algorithms.DecodeXORedArray.DecodeXORedArrayIterative                                                                                        100%
   LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressReplace                                                                                  100%
   LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressStringBuilder                                                                            100%
