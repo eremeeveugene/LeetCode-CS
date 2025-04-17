@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/16/2025 - 2:46:56 PM
-  Coverage date: 4/16/2025 - 2:46:02 PM - 4/16/2025 - 2:46:22 PM
+  Generated on: 4/17/2025 - 5:40:58 PM
+  Coverage date: 4/17/2025 - 5:40:00 PM - 4/17/2025 - 5:40:19 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 892
-  Files: 892
+  Classes: 893
+  Files: 893
   Line coverage: 97.9%
-  Covered lines: 18447
+  Covered lines: 18461
   Uncovered lines: 388
-  Coverable lines: 18835
-  Total lines: 47676
-  Branch coverage: 95.8% (6827 of 7121)
-  Covered branches: 6827
-  Total branches: 7121
-  Method coverage: 99.2% (1265 of 1274)
-  Full method coverage: 19.6% (250 of 1274)
-  Covered methods: 1265
+  Coverable lines: 18849
+  Total lines: 47717
+  Branch coverage: 95.8% (6835 of 7129)
+  Covered branches: 6835
+  Total branches: 7129
+  Method coverage: 99.2% (1266 of 1275)
+  Full method coverage: 19.6% (250 of 1275)
+  Covered methods: 1266
   Fully covered methods: 250
-  Total methods: 1274
+  Total methods: 1275
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -137,6 +137,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionary                                                     100%
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionaryLinq                                                 100%
   LeetCode.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements.CountElementsWithStrictlySmallerAndGreaterElementsIterative                   84.6%
+  LeetCode.Algorithms.CountEqualAndDivisiblePairsInAnArray.CountEqualAndDivisiblePairsInAnArrayBruteForce                                               100%
   LeetCode.Algorithms.CountGoodNumbers.CountGoodNumbersFastExponentiation                                                                               100%
   LeetCode.Algorithms.CountGoodTriplets.CountGoodTripletsBruteForce                                                                                     100%
   LeetCode.Algorithms.CountGoodTriplets.CountGoodTripletsPrefixSum                                                                                     93.3%
