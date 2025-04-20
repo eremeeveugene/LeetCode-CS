@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/19/2025 - 7:03:36 PM
-  Coverage date: 4/19/2025 - 7:02:33 PM - 4/19/2025 - 7:02:51 PM
+  Generated on: 4/20/2025 - 1:56:59 PM
+  Coverage date: 4/20/2025 - 1:55:49 PM - 4/20/2025 - 1:56:08 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 895
-  Files: 895
+  Classes: 897
+  Files: 897
   Line coverage: 97.9%
-  Covered lines: 18523
+  Covered lines: 18559
   Uncovered lines: 388
-  Coverable lines: 18911
-  Total lines: 47838
-  Branch coverage: 95.8% (6841 of 7135)
-  Covered branches: 6841
-  Total branches: 7135
-  Method coverage: 99.2% (1269 of 1278)
-  Full method coverage: 19.7% (252 of 1278)
-  Covered methods: 1269
+  Coverable lines: 18947
+  Total lines: 47934
+  Branch coverage: 95.8% (6853 of 7147)
+  Covered branches: 6853
+  Total branches: 7147
+  Method coverage: 99.2% (1271 of 1280)
+  Full method coverage: 19.6% (252 of 1280)
+  Covered methods: 1271
   Fully covered methods: 252
-  Total methods: 1278
+  Total methods: 1280
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -669,6 +669,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.PrimeSubtractionOperation.PrimeSubtractionOperationIterative                                                                      100%
   LeetCode.Algorithms.ProductOfTheLastKNumbers.ProductOfTheLastKNumbersPrefixSum                                                                        100%
   LeetCode.Algorithms.ProductOfTheLastKNumbers.ProductOfTheLastKNumbersPrefixSumFactory                                                                 100%
+  LeetCode.Algorithms.RabbitsInForest.RabbitsInForestFrequencyArray                                                                                     100%
+  LeetCode.Algorithms.RabbitsInForest.RabbitsInForestFrequencyDictionary                                                                                100%
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTBreadthFirstSearch                                                                                      92%
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTDepthFirstSearchRecursive                                                                             89.4%
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTDepthFirstSearchStack                                                                                   92%
