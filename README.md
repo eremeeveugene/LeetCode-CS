@@ -240,6 +240,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [769. Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted/description/)
 - [771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/description/)
 - [773. Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle/description/)
+- [781. Rabbits in Forest](https://leetcode.com/problems/rabbits-in-forest/description/)
 - [783. Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/)
 - [786. K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/description/)
 - [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
