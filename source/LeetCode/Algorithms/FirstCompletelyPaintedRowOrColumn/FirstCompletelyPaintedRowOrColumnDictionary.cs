@@ -27,7 +27,7 @@ public class FirstCompletelyPaintedRowOrColumnDictionary : IFirstCompletelyPaint
 
         for (var i = 0; i < arr.Length; i++)
         {
-            numsDictionary[arr[i]] = i;
+            numsDictionary.Add(arr[i], i);
         }
 
         var result = int.MaxValue;
