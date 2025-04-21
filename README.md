@@ -446,6 +446,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2129. Capitalize the Title](https://leetcode.com/problems/capitalize-the-title/description/)
 - [2134. Minimum Swaps to Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/description/)
 - [2140. Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/description/)
+- [2145. Count the Hidden Sequences](https://leetcode.com/problems/count-the-hidden-sequences/description/)
 - [2148. Count Elements With Strictly Smaller and Greater Elements](https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/description/)
 - [2160. Minimum Sum of Four Digit Number After Splitting Digits](https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/description/)
 - [2161. Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/description/)
