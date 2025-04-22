@@ -599,6 +599,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3375. Minimum Operations to Make Array Values Equal to K](https://leetcode.com/problems/minimum-operations-to-make-array-values-equal-to-k/description/)
 - [3379. Transformed Array](https://leetcode.com/problems/transformed-array/description/)
 - [3386. Button with Longest Push Time](https://leetcode.com/problems/button-with-longest-push-time/description/)
+- [3392. Count Subarrays of Length Three With a Condition](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/description/)
 - [3394. Check if Grid can be Cut into Sections](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections/description/)
 - [3396. Minimum Number of Operations to Make Elements in Array Distinct](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/description/)
 - [3417. Zigzag Grid Traversal With Skip](https://leetcode.com/problems/zigzag-grid-traversal-with-skip/description/)
