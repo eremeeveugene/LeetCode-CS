@@ -330,6 +330,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/description/)
 - [1380. Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/description/)
 - [1381. Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/description/)
+- [1399. Count Largest Group](https://leetcode.com/problems/count-largest-group/description/)
 - [1400. Construct K Palindrome Strings](https://leetcode.com/problems/construct-k-palindrome-strings/description/)
 - [1404. Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/description/)
 - [1405. Longest Happy String](https://leetcode.com/problems/longest-happy-string/description/)
