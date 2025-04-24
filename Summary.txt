@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/23/2025 - 3:10:43 PM
-  Coverage date: 4/23/2025 - 3:09:34 PM - 4/23/2025 - 3:09:52 PM
+  Generated on: 4/24/2025 - 5:27:12 PM
+  Coverage date: 4/24/2025 - 5:26:12 PM - 4/24/2025 - 5:26:30 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 904
-  Files: 904
+  Classes: 906
+  Files: 906
   Line coverage: 97.9%
-  Covered lines: 18706
+  Covered lines: 18766
   Uncovered lines: 388
-  Coverable lines: 19094
-  Total lines: 48300
-  Branch coverage: 95.9% (6901 of 7195)
-  Covered branches: 6901
-  Total branches: 7195
-  Method coverage: 99.3% (1279 of 1288)
-  Full method coverage: 19.5% (252 of 1288)
-  Covered methods: 1279
+  Coverable lines: 19154
+  Total lines: 48432
+  Branch coverage: 95.9% (6921 of 7215)
+  Covered branches: 6921
+  Total branches: 7215
+  Method coverage: 99.3% (1281 of 1290)
+  Full method coverage: 19.5% (252 of 1290)
+  Covered methods: 1281
   Fully covered methods: 252
-  Total methods: 1288
+  Total methods: 1290
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -133,6 +133,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ConvertTheTemperature.ConvertTheTemperatureMath                                                                                   100%
   LeetCode.Algorithms.CountAndSay.CountAndSayIterative                                                                                                  100%
   LeetCode.Algorithms.CountAndSay.CountAndSayPrecomputed                                                                                                100%
+  LeetCode.Algorithms.CountCompleteSubarraysInAnArray.CountCompleteSubarraysInAnArrayFrequencyArray                                                     100%
+  LeetCode.Algorithms.CountCompleteSubarraysInAnArray.CountCompleteSubarraysInAnArrayFrequencyDictionary                                                100%
   LeetCode.Algorithms.CountCompleteTreeNodes.CountCompleteTreeNodesDepthRecursive                                                                       100%
   LeetCode.Algorithms.CountCompleteTreeNodes.CountCompleteTreeNodesRecursive                                                                            100%
   LeetCode.Algorithms.CountDaysWithoutMeetings.CountDaysWithoutMeetingsSorting                                                                          100%
