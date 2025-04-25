@@ -549,6 +549,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2824. Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description/)
 - [2825. Make String a Subsequence Using Cyclic Increments](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/description/)
 - [2843. Count Symmetric Integers](https://leetcode.com/problems/count-symmetric-integers/description/)
+- [2845. Count of Interesting Subarrays](https://leetcode.com/problems/count-of-interesting-subarrays/description/)
 - [2864. Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/description/)
 - [2872. Maximum Number of K-Divisible Components](https://leetcode.com/problems/maximum-number-of-k-divisible-components/description/)
 - [2873. Maximum Value of an Ordered Triplet I](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i/description/)
