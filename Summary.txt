@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/25/2025 - 1:25:47 PM
-  Coverage date: 4/25/2025 - 1:24:46 PM - 4/25/2025 - 1:25:05 PM
+  Generated on: 4/26/2025 - 11:38:09 AM
+  Coverage date: 4/26/2025 - 11:37:10 AM - 4/26/2025 - 11:37:28 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 907
-  Files: 907
+  Classes: 908
+  Files: 908
   Line coverage: 97.9%
-  Covered lines: 18792
+  Covered lines: 18811
   Uncovered lines: 388
-  Coverable lines: 19180
-  Total lines: 48491
-  Branch coverage: 95.9% (6929 of 7223)
-  Covered branches: 6929
-  Total branches: 7223
-  Method coverage: 99.3% (1282 of 1291)
-  Full method coverage: 19.5% (252 of 1291)
-  Covered methods: 1282
+  Coverable lines: 19199
+  Total lines: 48541
+  Branch coverage: 95.9% (6936 of 7231)
+  Covered branches: 6936
+  Total branches: 7231
+  Method coverage: 99.3% (1283 of 1292)
+  Full method coverage: 19.5% (252 of 1292)
+  Covered methods: 1283
   Fully covered methods: 252
-  Total methods: 1291
+  Total methods: 1292
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -437,6 +437,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestPalindrome.LongestPalindromeArray                                                                                          100%
   LeetCode.Algorithms.LongestPalindrome.LongestPalindromeDictionary                                                                                     100%
   LeetCode.Algorithms.LongestPalindromicSubstring.LongestPalindromicSubstringTwoPointers                                                                100%
+  LeetCode.Algorithms.LongestSquareStreakInAnArray.LongestSquareStreakInAnArrayHashSet                                                                  100%
   LeetCode.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubarray.LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayIterative              100%
   LeetCode.Algorithms.LongestSubarrayWithMaximumBitwiseAND.LongestSubarrayWithMaximumBitwiseANDIterative                                                100%
   LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters.LongestSubstringWithoutRepeatingCharactersSlidingWindow                                100%
