@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/26/2025 - 11:38:09 AM
-  Coverage date: 4/26/2025 - 11:37:10 AM - 4/26/2025 - 11:37:28 AM
+  Generated on: 4/27/2025 - 1:36:53 PM
+  Coverage date: 4/27/2025 - 1:35:48 PM - 4/27/2025 - 1:36:06 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 908
-  Files: 908
+  Classes: 909
+  Files: 909
   Line coverage: 97.9%
-  Covered lines: 18811
-  Uncovered lines: 388
-  Coverable lines: 19199
-  Total lines: 48541
-  Branch coverage: 95.9% (6936 of 7231)
-  Covered branches: 6936
-  Total branches: 7231
-  Method coverage: 99.3% (1283 of 1292)
-  Full method coverage: 19.5% (252 of 1292)
-  Covered methods: 1283
+  Covered lines: 18881
+  Uncovered lines: 395
+  Coverable lines: 19276
+  Total lines: 48681
+  Branch coverage: 95.9% (6975 of 7273)
+  Covered branches: 6975
+  Total branches: 7273
+  Method coverage: 99.3% (1285 of 1294)
+  Full method coverage: 19.4% (252 of 1294)
+  Covered methods: 1285
   Fully covered methods: 252
-  Total methods: 1292
+  Total methods: 1294
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -180,6 +180,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountTotalNumberOfColoredCells.CountTotalNumberOfColoredCellsIterative                                                            100%
   LeetCode.Algorithms.CountTotalNumberOfColoredCells.CountTotalNumberOfColoredCellsMath                                                                 100%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                                  100%
+  LeetCode.Algorithms.CountUnguardedCellsInTheGrid.CountUnguardedCellsInTheGridSimulation                                                              90.9%
   LeetCode.Algorithms.CountVowelStringsInRanges.CountVowelStringsInRangesPrefixSum                                                                      100%
   LeetCode.Algorithms.CousinsInBinaryTree2.CousinsInBinaryTree2BreadthFirstSearch                                                                       100%
   LeetCode.Algorithms.CrawlerLogFolder.CrawlerLogFolderSimulation                                                                                       100%
