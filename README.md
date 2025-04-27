@@ -462,6 +462,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2220. Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)
 - [2235. Add Two Integers](https://leetcode.com/problems/add-two-integers/description/)
 - [2236. Root Equals Sum of Children](https://leetcode.com/problems/root-equals-sum-of-children/description/)
+- [2257. Count Unguarded Cells in the Grid](https://leetcode.com/problems/count-unguarded-cells-in-the-grid/description/)
 - [2270. Number of Ways to Split Array](https://leetcode.com/problems/number-of-ways-to-split-array/description/)
 - [2275. Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/description/)
 - [2275. Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/description/)
