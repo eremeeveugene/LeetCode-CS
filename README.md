@@ -467,6 +467,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2275. Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/description/)
 - [2275. Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/description/)
 - [2288. Apply Discount to Prices](https://leetcode.com/problems/apply-discount-to-prices/description/)
+- [2302. Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/description/)
 - [2326. Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/description/)
 - [2331. Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree/description/)
 - [2337. Move Pieces to Obtain a String](https://leetcode.com/problems/move-pieces-to-obtain-a-string/description/)
