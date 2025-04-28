@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/27/2025 - 1:36:53 PM
-  Coverage date: 4/27/2025 - 1:35:48 PM - 4/27/2025 - 1:36:06 PM
+  Generated on: 4/28/2025 - 10:55:38 AM
+  Coverage date: 4/28/2025 - 10:54:34 AM - 4/28/2025 - 10:54:53 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 909
-  Files: 909
+  Classes: 911
+  Files: 911
   Line coverage: 97.9%
-  Covered lines: 18881
+  Covered lines: 18916
   Uncovered lines: 395
-  Coverable lines: 19276
-  Total lines: 48681
-  Branch coverage: 95.9% (6975 of 7273)
-  Covered branches: 6975
-  Total branches: 7273
-  Method coverage: 99.3% (1285 of 1294)
-  Full method coverage: 19.4% (252 of 1294)
-  Covered methods: 1285
+  Coverable lines: 19311
+  Total lines: 48780
+  Branch coverage: 95.8% (6986 of 7285)
+  Covered branches: 6986
+  Total branches: 7285
+  Method coverage: 99.3% (1287 of 1296)
+  Full method coverage: 19.4% (252 of 1296)
+  Covered methods: 1287
   Fully covered methods: 252
-  Total methods: 1294
+  Total methods: 1296
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -168,6 +168,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes.CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursive                      100%
   LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes.CountSubarraysWhereMaxElementAppearsAtLeastKTimesSlidingWindow                  100%
   LeetCode.Algorithms.CountSubarraysWithFixedBounds.CountSubarraysWithFixedBoundsSlidingWindow                                                          100%
+  LeetCode.Algorithms.CountSubarraysWithScoreLessThanK.CountSubarraysWithScoreLessThanKBruteForce                                                       100%
+  LeetCode.Algorithms.CountSubarraysWithScoreLessThanK.CountSubarraysWithScoreLessThanKSlidingWindow                                                    100%
   LeetCode.Algorithms.CountSubIslands.CountSubIslandsDepthFirstSearch                                                                                   100%
   LeetCode.Algorithms.CountSymmetricIntegers.CountSymmetricIntegersIterative                                                                            100%
   LeetCode.Algorithms.CountTheDigitsThatDivideNumber.CountTheDigitsThatDivideNumberIterative                                                            100%
