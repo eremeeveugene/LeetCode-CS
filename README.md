@@ -619,6 +619,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3483. Unique 3-Digit Even Numbers](https://leetcode.com/problems/unique-3-digit-even-numbers/description/)
 - [3487. Maximum Unique Subarray Sum After Deletion](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/description/)
 - [3492. Maximum Containers on a Ship](https://leetcode.com/problems/maximum-containers-on-a-ship/description/)
+- [3498. Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/description/)
 - [3502. Minimum Cost to Reach Every Position](https://leetcode.com/problems/minimum-cost-to-reach-every-position/description/)
 - [3507. Minimum Pair Removal to Sort Array I](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/description/)
 - [3516. Find Closest Person](https://leetcode.com/problems/find-closest-person/description/)
