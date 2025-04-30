@@ -1,0 +1,48 @@
+﻿// --------------------------------------------------------------------------------
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// All Rights Reserved.
+// --------------------------------------------------------------------------------
+// This software is the confidential and proprietary information of Eugene Eremeev
+// (also known as Yevhenii Yeriemeieiv) ("Confidential Information"). You shall not
+// disclose such Confidential Information and shall use it only in accordance with
+// the terms of the license agreement you entered into with Eugene Eremeev (also
+// known as Yevhenii Yeriemeieiv).
+// --------------------------------------------------------------------------------
+
+namespace LeetCode.Algorithms.FindNumbersWithEvenNumberOfDigits;
+
+/// <inheritdoc />
+public class FindNumbersWithEvenNumberOfDigitsExtractDigits : IFindNumbersWithEvenNumberOfDigits
+{
+    /// <summary>
+    ///     Time complexity - O(n log m)
+    ///     Space complexity - O(log m)
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <returns></returns>
+    public int FindNumbers(int[] nums)
+    {
+        var count = 0;
+
+        foreach (var num in nums)
+        {
+            var number = num;
+
+            var digits = 0;
+
+            while (number > 0)
+            {
+                number /= 10;
+
+                digits++;
+            }
+
+            if (digits % 2 == 0)
+            {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
