@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/29/2025 - 9:28:51 AM
-  Coverage date: 4/29/2025 - 9:27:40 AM - 4/29/2025 - 9:28:00 AM
+  Generated on: 4/30/2025 - 4:51:33 PM
+  Coverage date: 4/30/2025 - 4:50:29 PM - 4/30/2025 - 4:50:48 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 912
-  Files: 912
+  Classes: 914
+  Files: 914
   Line coverage: 97.9%
-  Covered lines: 18924
+  Covered lines: 18954
   Uncovered lines: 395
-  Coverable lines: 19319
-  Total lines: 48814
-  Branch coverage: 95.8% (6988 of 7287)
-  Covered branches: 6988
-  Total branches: 7287
-  Method coverage: 99.3% (1288 of 1297)
-  Full method coverage: 19.4% (252 of 1297)
-  Covered methods: 1288
+  Coverable lines: 19349
+  Total lines: 48900
+  Branch coverage: 95.8% (7012 of 7315)
+  Covered branches: 7012
+  Total branches: 7315
+  Method coverage: 99.3% (1290 of 1299)
+  Full method coverage: 19.3% (252 of 1299)
+  Covered methods: 1290
   Fully covered methods: 252
-  Total methods: 1297
+  Total methods: 1299
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -302,6 +302,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeBreadthFirstSearch                                                           100%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchRecursive                                                    100%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeDepthFirstSearchStack                                                        100%
+  LeetCode.Algorithms.FindNumbersWithEvenNumberOfDigits.FindNumbersWithEvenNumberOfDigitsExtractDigits                                                  100%
+  LeetCode.Algorithms.FindNumbersWithEvenNumberOfDigits.FindNumbersWithEvenNumberOfDigitsGreedy                                                         100%
   LeetCode.Algorithms.FindPivotIndex.FindPivotIndexIterative                                                                                            100%
   LeetCode.Algorithms.FindScoreOfAnArrayAfterMarkingAllElements.FindScoreOfAnArrayAfterMarkingAllElementsSorting                                        100%
   LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayBinarySearch                                                92.5%
