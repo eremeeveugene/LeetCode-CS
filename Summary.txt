@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/30/2025 - 4:51:33 PM
-  Coverage date: 4/30/2025 - 4:50:29 PM - 4/30/2025 - 4:50:48 PM
+  Generated on: 5/1/2025 - 3:30:27 PM
+  Coverage date: 5/1/2025 - 3:28:57 PM - 5/1/2025 - 3:29:45 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 914
-  Files: 914
+  Classes: 915
+  Files: 915
   Line coverage: 97.9%
-  Covered lines: 18954
-  Uncovered lines: 395
-  Coverable lines: 19349
-  Total lines: 48900
-  Branch coverage: 95.8% (7012 of 7315)
-  Covered branches: 7012
-  Total branches: 7315
-  Method coverage: 99.3% (1290 of 1299)
-  Full method coverage: 19.3% (252 of 1299)
-  Covered methods: 1290
+  Covered lines: 19004
+  Uncovered lines: 399
+  Coverable lines: 19403
+  Total lines: 49003
+  Branch coverage: 95.8% (7031 of 7337)
+  Covered branches: 7031
+  Total branches: 7337
+  Method coverage: 99.3% (1292 of 1301)
+  Full method coverage: 19.3% (252 of 1301)
+  Covered methods: 1292
   Fully covered methods: 252
-  Total methods: 1299
+  Total methods: 1301
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -491,6 +491,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumNumberOfKDivisibleComponents.MaximumNumberOfKDivisibleComponentsDepthFirstSearch                                           100%
   LeetCode.Algorithms.MaximumNumberOfMovesInGrid.MaximumNumberOfMovesInGridDynamicProgramming                                                           100%
   LeetCode.Algorithms.MaximumNumberOfPointsWithCost.MaximumNumberOfPointsWithCostDynamicProgramming                                                     100%
+  LeetCode.Algorithms.MaximumNumberOfTasksYouCanAssign.MaximumNumberOfTasksYouCanAssignLinkedList                                                      92.5%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinq                                                     100%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinqSplit                                                100%
   LeetCode.Algorithms.MaximumNumberOfWordsYouCanType.MaximumNumberOfWordsYouCanTypeHashSet                                                              100%
