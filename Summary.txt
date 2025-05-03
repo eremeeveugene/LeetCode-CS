@@ -1,23 +1,23 @@
 Summary
-  Generated on: 5/1/2025 - 3:30:27 PM
-  Coverage date: 5/1/2025 - 3:28:57 PM - 5/1/2025 - 3:29:45 PM
+  Generated on: 5/3/2025 - 12:27:15 PM
+  Coverage date: 5/3/2025 - 12:26:11 PM - 5/3/2025 - 12:26:29 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 915
-  Files: 915
+  Classes: 917
+  Files: 917
   Line coverage: 97.9%
-  Covered lines: 19004
+  Covered lines: 19077
   Uncovered lines: 399
-  Coverable lines: 19403
-  Total lines: 49003
-  Branch coverage: 95.8% (7031 of 7337)
-  Covered branches: 7031
-  Total branches: 7337
-  Method coverage: 99.3% (1292 of 1301)
-  Full method coverage: 19.3% (252 of 1301)
-  Covered methods: 1292
+  Coverable lines: 19476
+  Total lines: 49143
+  Branch coverage: 95.8% (7069 of 7375)
+  Covered branches: 7069
+  Total branches: 7375
+  Method coverage: 99.3% (1294 of 1303)
+  Full method coverage: 19.3% (252 of 1303)
+  Covered methods: 1294
   Fully covered methods: 252
-  Total methods: 1301
+  Total methods: 1303
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -686,6 +686,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.PrimeSubtractionOperation.PrimeSubtractionOperationIterative                                                                      100%
   LeetCode.Algorithms.ProductOfTheLastKNumbers.ProductOfTheLastKNumbersPrefixSum                                                                        100%
   LeetCode.Algorithms.ProductOfTheLastKNumbers.ProductOfTheLastKNumbersPrefixSumFactory                                                                 100%
+  LeetCode.Algorithms.PushDominoes.PushDominoesForceArray                                                                                               100%
+  LeetCode.Algorithms.PushDominoes.PushDominoesTwoPointers                                                                                              100%
   LeetCode.Algorithms.RabbitsInForest.RabbitsInForestFrequencyArray                                                                                     100%
   LeetCode.Algorithms.RabbitsInForest.RabbitsInForestFrequencyDictionary                                                                                100%
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTBreadthFirstSearch                                                                                      92%
