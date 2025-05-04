@@ -297,6 +297,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1110. Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/description/)
 - [1122. Relative Sort Array](https://leetcode.com/problems/relative-sort-array/description/)
 - [1123. Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/description/)
+- [1128. Number of Equivalent Domino Pairs](https://leetcode.com/problems/number-of-equivalent-domino-pairs/description/)
 - [1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/description/)
 - [1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/description/)
 - [1154. Day of the Year](https://leetcode.com/problems/day-of-the-year/description/)
