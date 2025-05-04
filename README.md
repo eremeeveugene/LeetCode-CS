@@ -282,6 +282,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/description/)
 - [997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/description/)
 - [1002. Find Common Characters](https://leetcode.com/problems/find-common-characters/description/)
+- [1007. Minimum Domino Rotations For Equal Row](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/description/)
 - [1009. Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/description/)
 - [1013. Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/description/)
 - [1014. Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/description/)
