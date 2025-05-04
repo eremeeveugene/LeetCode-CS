@@ -1,23 +1,23 @@
 Summary
-  Generated on: 5/3/2025 - 12:27:15 PM
-  Coverage date: 5/3/2025 - 12:26:11 PM - 5/3/2025 - 12:26:29 PM
+  Generated on: 5/4/2025 - 2:23:03 PM
+  Coverage date: 5/4/2025 - 2:22:09 PM - 5/4/2025 - 2:22:29 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 917
-  Files: 917
+  Classes: 919
+  Files: 919
   Line coverage: 97.9%
-  Covered lines: 19077
+  Covered lines: 19109
   Uncovered lines: 399
-  Coverable lines: 19476
-  Total lines: 49143
-  Branch coverage: 95.8% (7069 of 7375)
-  Covered branches: 7069
-  Total branches: 7375
-  Method coverage: 99.3% (1294 of 1303)
-  Full method coverage: 19.3% (252 of 1303)
-  Covered methods: 1294
-  Fully covered methods: 252
-  Total methods: 1303
+  Coverable lines: 19508
+  Total lines: 49234
+  Branch coverage: 95.8% (7075 of 7381)
+  Covered branches: 7075
+  Total branches: 7381
+  Method coverage: 99.3% (1296 of 1305)
+  Full method coverage: 89.5% (1169 of 1305)
+  Covered methods: 1296
+  Fully covered methods: 1169
+  Total methods: 1305
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -614,6 +614,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.NthTribonacciNumber.NthTribonacciNumberMatrixExponentiation                                                                       100%
   LeetCode.Algorithms.NumberComplement.NumberComplementBitwise                                                                                          100%
   LeetCode.Algorithms.NumberComplement.NumberComplementString                                                                                           100%
+  LeetCode.Algorithms.NumberOfEquivalentDominoPairs.NumberOfEquivalentDominoPairsFrequencyArray                                                         100%
+  LeetCode.Algorithms.NumberOfEquivalentDominoPairs.NumberOfEquivalentDominoPairsFrequencyDictionary                                                    100%
   LeetCode.Algorithms.NumberOfGoodLeafNodesPairs.NumberOfGoodLeafNodesPairsDepthFirstSearch                                                             100%
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsDictionary                                                                                     100%
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsGroupBy                                                                                        100%
