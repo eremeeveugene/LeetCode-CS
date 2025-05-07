@@ -1,23 +1,23 @@
 Summary
-  Generated on: 5/4/2025 - 3:13:16 PM
-  Coverage date: 5/4/2025 - 3:12:11 PM - 5/4/2025 - 3:12:30 PM
+  Generated on: 5/7/2025 - 6:13:07 PM
+  Coverage date: 5/7/2025 - 6:12:03 PM - 5/7/2025 - 6:12:21 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 920
-  Files: 920
+  Classes: 921
+  Files: 921
   Line coverage: 97.9%
-  Covered lines: 19135
-  Uncovered lines: 399
-  Coverable lines: 19534
-  Total lines: 49295
-  Branch coverage: 95.8% (7089 of 7395)
-  Covered branches: 7089
-  Total branches: 7395
-  Method coverage: 99.3% (1298 of 1307)
-  Full method coverage: 89.5% (1171 of 1307)
-  Covered methods: 1298
-  Fully covered methods: 1171
-  Total methods: 1307
+  Covered lines: 19172
+  Uncovered lines: 400
+  Coverable lines: 19572
+  Total lines: 49375
+  Branch coverage: 95.8% (7110 of 7417)
+  Covered branches: 7110
+  Total branches: 7417
+  Method coverage: 99.3% (1300 of 1309)
+  Full method coverage: 89.5% (1172 of 1309)
+  Covered methods: 1300
+  Fully covered methods: 1172
+  Total methods: 1309
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -296,6 +296,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindLongestSpecialSubstringThatOccursThrice1.FindLongestSpecialSubstringThatOccursThrice1Dictionary                               100%
   LeetCode.Algorithms.FindMinimumDiameterAfterMergingTwoTrees.FindMinimumDiameterAfterMergingTwoTreesDepthFirstSearch                                   100%
   LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree.FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterative            100%
+  LeetCode.Algorithms.FindMinimumTimeToReachLastRoom1.FindMinimumTimeToReachLastRoom1PriorityQueue                                                     97.3%
   LeetCode.Algorithms.FindMissingAndRepeatedValues.FindMissingAndRepeatedValuesHashSet                                                                  100%
   LeetCode.Algorithms.FindMissingAndRepeatedValues.FindMissingAndRepeatedValuesMath                                                                     100%
   LeetCode.Algorithms.FindMissingObservations.FindMissingObservationsMath                                                                               100%
