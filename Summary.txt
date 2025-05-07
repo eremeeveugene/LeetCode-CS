@@ -1,23 +1,23 @@
 Summary
-  Generated on: 5/7/2025 - 6:13:07 PM
-  Coverage date: 5/7/2025 - 6:12:03 PM - 5/7/2025 - 6:12:21 PM
+  Generated on: 5/7/2025 - 8:34:01 PM
+  Coverage date: 5/7/2025 - 8:32:48 PM - 5/7/2025 - 8:33:06 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 921
-  Files: 921
+  Classes: 922
+  Files: 922
   Line coverage: 97.9%
-  Covered lines: 19172
+  Covered lines: 19191
   Uncovered lines: 400
-  Coverable lines: 19572
-  Total lines: 49375
-  Branch coverage: 95.8% (7110 of 7417)
-  Covered branches: 7110
-  Total branches: 7417
-  Method coverage: 99.3% (1300 of 1309)
-  Full method coverage: 89.5% (1172 of 1309)
-  Covered methods: 1300
-  Fully covered methods: 1172
-  Total methods: 1309
+  Coverable lines: 19591
+  Total lines: 49424
+  Branch coverage: 95.8% (7116 of 7423)
+  Covered branches: 7116
+  Total branches: 7423
+  Method coverage: 99.3% (1301 of 1310)
+  Full method coverage: 89.5% (1173 of 1310)
+  Covered methods: 1301
+  Fully covered methods: 1173
+  Total methods: 1310
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -498,6 +498,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumNumberOfWordsYouCanType.MaximumNumberOfWordsYouCanTypeHashSet                                                              100%
   LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStringBuilder                                                                        100%
   LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStrings                                                                              100%
+  LeetCode.Algorithms.MaximumProductOfTwoDigits.MaximumProductOfTwoDigitsGreedy                                                                         100%
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArrayBruteForce                                               100%
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArraySecondMax                                                100%
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArraySorting                                                  100%
