@@ -9,10 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.FindMinimumTimeToReachLastRoom1;
+namespace LeetCode.Algorithms.FindMinimumTimeToReachLastRoom2;
 
 /// <inheritdoc />
-public class FindMinimumTimeToReachLastRoom1PriorityQueue : IFindMinimumTimeToReachLastRoom1
+public class FindMinimumTimeToReachLastRoom2PriorityQueue : IFindMinimumTimeToReachLastRoom2
 {
     private static readonly (int X, int Y)[] Directions = [(1, 0), (-1, 0), (0, 1), (0, -1)];
 
@@ -39,9 +39,9 @@ public class FindMinimumTimeToReachLastRoom1PriorityQueue : IFindMinimumTimeToRe
 
         visited[0, 0] = 0;
 
-        var priorityQueue = new PriorityQueue<(int X, int Y, int Time), int>();
+        var priorityQueue = new PriorityQueue<(int X, int Y, int Step, int Time), int>();
 
-        priorityQueue.Enqueue((0, 0, 0), 0);
+        priorityQueue.Enqueue((0, 0, 0, 0), 0);
 
         while (priorityQueue.Count > 0)
         {
@@ -62,7 +62,7 @@ public class FindMinimumTimeToReachLastRoom1PriorityQueue : IFindMinimumTimeToRe
                     continue;
                 }
 
-                var targetTime = Math.Max(item.Time, moveTime[targetX][targetY]) + 1;
+                var targetTime = Math.Max(item.Time, moveTime[targetX][targetY]) + (item.Step % 2 == 0 ? 1 : 2);
 
                 if (targetTime >= visited[targetX, targetY])
                 {
@@ -71,7 +71,7 @@ public class FindMinimumTimeToReachLastRoom1PriorityQueue : IFindMinimumTimeToRe
 
                 visited[targetX, targetY] = targetTime;
 
-                priorityQueue.Enqueue((targetX, targetY, targetTime), targetTime);
+                priorityQueue.Enqueue((targetX, targetY, item.Step + 1, targetTime), targetTime);
             }
         }
 
