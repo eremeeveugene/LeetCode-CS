@@ -1,23 +1,23 @@
 Summary
-  Generated on: 5/8/2025 - 12:02:20 PM
-  Coverage date: 5/8/2025 - 12:01:16 PM - 5/8/2025 - 12:01:35 PM
+  Generated on: 5/9/2025 - 10:47:37 AM
+  Coverage date: 5/9/2025 - 10:46:33 AM - 5/9/2025 - 10:46:51 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 923
-  Files: 923
+  Classes: 924
+  Files: 924
   Line coverage: 97.9%
-  Covered lines: 19228
+  Covered lines: 19236
   Uncovered lines: 401
-  Coverable lines: 19629
-  Total lines: 49504
-  Branch coverage: 95.8% (7139 of 7447)
-  Covered branches: 7139
-  Total branches: 7447
-  Method coverage: 99.3% (1303 of 1312)
-  Full method coverage: 89.4% (1174 of 1312)
-  Covered methods: 1303
-  Fully covered methods: 1174
-  Total methods: 1312
+  Coverable lines: 19637
+  Total lines: 49539
+  Branch coverage: 95.8% (7141 of 7449)
+  Covered branches: 7141
+  Total branches: 7449
+  Method coverage: 99.3% (1304 of 1313)
+  Full method coverage: 89.4% (1175 of 1313)
+  Covered methods: 1304
+  Fully covered methods: 1175
+  Total methods: 1313
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -572,6 +572,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel.MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch               100%
   LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced.MinimumNumberOfSwapsToMakeTheStringBalancedIterative                                  100%
   LeetCode.Algorithms.MinimumOperationsToExceedThresholdValue2.MinimumOperationsToExceedThresholdValue2PriorityQueue                                    100%
+  LeetCode.Algorithms.MinimumOperationsToMakeArraySumDivisibleByK.MinimumOperationsToMakeArraySumDivisibleByKGreedy                                     100%
   LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK.MinimumOperationsToMakeArrayValuesEqualToKHashSet                                      100%
   LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK.MinimumOperationsToMakeArrayValuesEqualToKSeenArray                                    100%
   LeetCode.Algorithms.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1Greedy                 100%
