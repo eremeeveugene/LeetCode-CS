@@ -1,23 +1,23 @@
 Summary
-  Generated on: 5/9/2025 - 10:47:37 AM
-  Coverage date: 5/9/2025 - 10:46:33 AM - 5/9/2025 - 10:46:51 AM
+  Generated on: 5/10/2025 - 2:35:08 PM
+  Coverage date: 5/10/2025 - 2:34:12 PM - 5/10/2025 - 2:34:32 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 924
-  Files: 924
+  Classes: 925
+  Files: 925
   Line coverage: 97.9%
-  Covered lines: 19236
+  Covered lines: 19269
   Uncovered lines: 401
-  Coverable lines: 19637
-  Total lines: 49539
-  Branch coverage: 95.8% (7141 of 7449)
-  Covered branches: 7141
-  Total branches: 7449
-  Method coverage: 99.3% (1304 of 1313)
-  Full method coverage: 89.4% (1175 of 1313)
-  Covered methods: 1304
-  Fully covered methods: 1175
-  Total methods: 1313
+  Coverable lines: 19670
+  Total lines: 49605
+  Branch coverage: 95.8% (7156 of 7465)
+  Covered branches: 7156
+  Total branches: 7465
+  Method coverage: 99.3% (1305 of 1314)
+  Full method coverage: 89.4% (1176 of 1314)
+  Covered methods: 1305
+  Fully covered methods: 1176
+  Total methods: 1314
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -547,6 +547,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesSorting    100%
   LeetCode.Algorithms.MinimumDistanceBetweenBSTNodes.MinimumDistanceBetweenBSTNodesDepthFirstSearch                                                     100%
   LeetCode.Algorithms.MinimumDominoRotationsForEqualRow.MinimumDominoRotationsForEqualRowGreedy                                                         100%
+  LeetCode.Algorithms.MinimumEqualSumOfTwoArraysAfterReplacingZeros.MinimumEqualSumOfTwoArraysAfterReplacingZerosGreedy                                 100%
   LeetCode.Algorithms.MinimumFallingPathSum2.MinimumFallingPathSum2DynamicProgramming                                                                   100%
   LeetCode.Algorithms.MinimumHeightTrees.MinimumHeightTreesBreadthFirstSearch                                                                           100%
   LeetCode.Algorithms.MinimumHeightTrees.MinimumHeightTreesLeafPruning                                                                                  100%
