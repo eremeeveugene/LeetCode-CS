@@ -25,13 +25,13 @@ public abstract class LinkedListInBinaryTreeTestsBase<T> where T : ILinkedListIn
     [DataRow("[1,4,2,6,8]", "[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]", false)]
     [DataRow("[1,10]", "[1,null,1,10,1,9]", true)]
     [DataRow("[2,2,1]", "[2,null,2,null,2,null,1]", true)]
-    public void IsSubPath_WithLinkedListAndBinaryTree_ReturnsIfLinkedListIsSubPath(string headJsonArray,
-        string rootJsonArray, bool expectedResult)
+    public void IsSubPath_WithLinkedListAndBinaryTree_ReturnsIfLinkedListIsSubPath(string headJson,
+        string rootJson, bool expectedResult)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
+        var headArray = JsonHelper<int>.DeserializeToArray(headJson);
         var head = ListNode.ToListNode(headArray) ?? throw new ListNodeBuildException();
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
 
         var solution = new T();

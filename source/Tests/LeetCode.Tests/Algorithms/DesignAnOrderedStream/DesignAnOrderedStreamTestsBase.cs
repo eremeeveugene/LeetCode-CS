@@ -10,31 +10,51 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignAnOrderedStream;
+using LeetCode.Core.Helpers;
+using LeetCode.Tests.Base.Exceptions;
+using System.Text.Json;
 
 namespace LeetCode.Tests.Algorithms.DesignAnOrderedStream;
 
-public abstract class DesignAnOrderedStreamTestsBase<T> where T : IDesignAnOrderedStreamArrayFactory, new()
+public abstract class DesignAnOrderedStreamTestsBase
 {
+    private const string Insert = "insert";
+
+    protected abstract IDesignAnOrderedStream GetDesignAnOrderedStream(int size);
+
     [TestMethod]
-    public void OrderedStream_InsertVariousIndexes_ReturnsExpectedOutput()
+    [DataRow(5, "[\"insert\",\"insert\",\"insert\",\"insert\",\"insert\"]",
+        "[[3, \"ccccc\"], [1, \"aaaaa\"], [2, \"bbbbb\"], [5, \"eeeee\"], [4, \"ddddd\"]]",
+        "[[], [\"aaaaa\"], [\"bbbbb\", \"ccccc\"], [], [\"ddddd\", \"eeeee\"]]")]
+    public void OrderedStream_InsertVariousIndexes_ReturnsValuesInIncreasingOrder(int size, string methodsJson,
+        string argumentsJson, string expectedResultJson)
     {
         // Arrange
-        var designAnOrderedStreamFactory = new T();
+        var methods = JsonHelper<string>.DeserializeToArray(methodsJson);
+        var arguments = JsonHelper<JsonElement>.DeserializeToJaggedArray(argumentsJson);
+        var expectedResult = JsonHelper<string>.DeserializeToJaggedArray(expectedResultJson);
+
+        var designAnOrderedStream = GetDesignAnOrderedStream(5);
 
         // Act 
-        var designAnOrderedStream = designAnOrderedStreamFactory.Create(5);
+        var actualResult = new List<string?[]>();
+
+        for (var i = 0; i < methods.Length; i++)
+        {
+            switch (methods[i])
+            {
+                case Insert:
+                    var idKey = arguments[i][0].GetInt32();
+                    var value = arguments[i][1].GetString()!;
+
+                    actualResult.Add(designAnOrderedStream.Insert(idKey, value).ToArray());
+                    break;
+                default:
+                    throw new UnexpectedMethodException(methods[i]);
+            }
+        }
 
         // Assert
-        CollectionAssert.AreEqual(new List<string>(), designAnOrderedStream.Insert(3, "ccccc").ToArray());
-
-        CollectionAssert.AreEqual(new List<string> { "aaaaa" }, designAnOrderedStream.Insert(1, "aaaaa").ToArray());
-
-        CollectionAssert.AreEqual(new List<string> { "bbbbb", "ccccc" },
-            designAnOrderedStream.Insert(2, "bbbbb").ToArray());
-
-        CollectionAssert.AreEqual(new List<string>(), designAnOrderedStream.Insert(5, "eeeee").ToArray());
-
-        CollectionAssert.AreEqual(new List<string> { "ddddd", "eeeee" },
-            designAnOrderedStream.Insert(4, "ddddd").ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

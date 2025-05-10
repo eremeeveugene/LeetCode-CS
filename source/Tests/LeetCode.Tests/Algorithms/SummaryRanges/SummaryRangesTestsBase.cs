@@ -19,12 +19,12 @@ public abstract class SummaryRangesTestsBase<T> where T : ISummaryRanges, new()
     [TestMethod]
     [DataRow("[0,1,2,4,5,7]", "[\"0->2\",\"4->5\",\"7\"]")]
     [DataRow("[0,2,3,4,6,8,9]", "[\"0\",\"2->4\",\"6\",\"8->9\"]")]
-    public void SummaryRanges_WithSequencesOfIntegers_ReturnsCorrectStringRanges(string numsJsonArray,
-        string expectedResultJsonArray)
+    public void SummaryRanges_WithSequencesOfIntegers_ReturnsCorrectStringRanges(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

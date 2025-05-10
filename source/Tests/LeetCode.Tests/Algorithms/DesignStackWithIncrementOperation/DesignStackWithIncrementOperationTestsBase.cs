@@ -27,12 +27,12 @@ public abstract class DesignStackWithIncrementOperationTestsBase<T>
         "[[1],[2],[],[2],[3],[4],[5,100],[2,100],[],[],[],[]]",
         "[2,103,202,201,-1]")]
     public void DataStructureOperations_WithMaxSizeAndCommands_ReturnsOperationResults(int maxSize,
-        string methodsJsonArray, string argsJsonArray, string expectedResultJsonArray)
+        string methodsJson, string argsJson, string expectedResultJson)
     {
         // Arrange
-        var methods = JsonHelper<string>.DeserializeToArray(methodsJsonArray);
-        var args = JsonHelper<int>.DeserializeToJaggedArray(argsJsonArray);
-        var expectedResult = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var methods = JsonHelper<string>.DeserializeToArray(methodsJson);
+        var args = JsonHelper<int>.DeserializeToJaggedArray(argsJson);
+        var expectedResult = JsonHelper<int?>.DeserializeToArray(expectedResultJson);
 
         var solutionFactory = new T();
         var solution = solutionFactory.Create(maxSize);

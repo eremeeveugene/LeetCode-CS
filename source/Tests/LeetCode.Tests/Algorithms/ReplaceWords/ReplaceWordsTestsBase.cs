@@ -23,11 +23,11 @@ public abstract class ReplaceWordsTestsBase<T> where T : IReplaceWords, new()
     [DataRow("[\"a\",\"ab\",\"abc\"]", "abc ab a abcde", "a a a a")]
     [DataRow("[\"prefix\",\"pre\",\"suff\",\"suffi\"]", "prefixes and suffixes", "pre and suff")]
     [DataRow("[\"longest\",\"longer\",\"long\"]", "this is a long long word", "this is a long long word")]
-    public void ReplaceWords_WithDictionaryAndSentence_ReturnsCorrectlyReplacedSentence(string dictionaryJsonArray,
+    public void ReplaceWords_WithDictionaryAndSentence_ReturnsCorrectlyReplacedSentence(string dictionaryJson,
         string sentence, string expectedResult)
     {
         // Arrange
-        var dictionaryArray = JsonHelper<string>.DeserializeToArray(dictionaryJsonArray);
+        var dictionaryArray = JsonHelper<string>.DeserializeToArray(dictionaryJson);
 
         var solution = new T();
 

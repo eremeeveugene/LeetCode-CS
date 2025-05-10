@@ -20,12 +20,12 @@ public abstract class SetMatrixZeroesTestsBase<T> where T : ISetMatrixZeroes, ne
     [TestMethod]
     [DataRow("[[1,1,1],[1,0,1],[1,1,1]]", "[[1,0,1],[0,0,0],[1,0,1]]")]
     [DataRow("[[0,1,2,0],[3,4,5,2],[1,3,1,5]]", "[[0,0,0,0],[0,4,5,0],[0,3,1,0]]")]
-    public void SetZeroes_WithMatrixContainingZeros_SetsEntireRowAndColumnToZero(string matrixJsonArray,
-        string expectedResultJsonArray)
+    public void SetZeroes_WithMatrixContainingZeros_SetsEntireRowAndColumnToZero(string matrixJson,
+        string expectedResultJson)
     {
         // Arrange
-        var matrix = JsonHelper<int>.DeserializeToJaggedArray(matrixJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
+        var matrix = JsonHelper<int>.DeserializeToJaggedArray(matrixJson);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJson);
 
         var solution = new T();
 

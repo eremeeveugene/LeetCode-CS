@@ -20,11 +20,11 @@ public abstract class CountElementsWithStrictlySmallerAndGreaterElementsTestsBas
     [TestMethod]
     [DataRow("[11,7,2,15]", 2)]
     [DataRow("[-3,3,3,90]", 2)]
-    public void CountElements_GivenArray_ReturnsCountOfElementsMatchingCriteria(string numsJsonArray,
+    public void CountElements_GivenArray_ReturnsCountOfElementsMatchingCriteria(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

@@ -20,11 +20,11 @@ public abstract class MinimumIndexOfValidSplitTestsBase<T> where T : IMinimumInd
     [DataRow("[1,2,2,2]", 2)]
     [DataRow("[2,1,3,1,1,1,7,1,2,1]", 4)]
     [DataRow("[3,3,3,3,7,2,2]", -1)]
-    public void MinimumIndex_WithMajorityElementInArray_ReturnsMinimumIndexOfValidSplit(string numsJsonArray,
+    public void MinimumIndex_WithMajorityElementInArray_ReturnsMinimumIndexOfValidSplit(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

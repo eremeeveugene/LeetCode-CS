@@ -19,10 +19,10 @@ public abstract class BestTimeToBuyAndSellStockTestsBase<T> where T : IBestTimeT
     [TestMethod]
     [DataRow("[7, 1, 5, 3, 6, 4]", 5)]
     [DataRow("[7, 6, 4, 3, 1]", 0)]
-    public void MaxProfit_GivenPriceArray_ReturnsMaximumProfit(string pricesJsonArray, int expectedResult)
+    public void MaxProfit_GivenPriceArray_ReturnsMaximumProfit(string pricesJson, int expectedResult)
     {
         // Arrange
-        var prices = JsonHelper<int>.DeserializeToArray(pricesJsonArray);
+        var prices = JsonHelper<int>.DeserializeToArray(pricesJson);
 
         var solution = new T();
 

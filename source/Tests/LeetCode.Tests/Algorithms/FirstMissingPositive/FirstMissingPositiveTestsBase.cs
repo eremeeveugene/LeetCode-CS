@@ -29,11 +29,11 @@ public abstract class FirstMissingPositiveTestsBase<T> where T : IFirstMissingPo
     [DataRow("[5, 3, 2, 1, 4]", 6)]
     [DataRow("[0, 2, 2, 1, 1]", 3)]
     [DataRow("[1, 1, 0, -1, -2]", 2)]
-    public void FirstMissingPositive_GivenArray_ReturnsFirstMissingPositiveInteger(string numsJsonArray,
+    public void FirstMissingPositive_GivenArray_ReturnsFirstMissingPositiveInteger(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

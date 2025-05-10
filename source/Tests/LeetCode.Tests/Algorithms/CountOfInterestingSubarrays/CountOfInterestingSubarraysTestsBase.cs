@@ -21,10 +21,10 @@ public abstract class CountOfInterestingSubarraysTestsBase<T> where T : ICountOf
     [DataRow("[3,1,9,6]", 3, 0, 2)]
     [DataRow("[11,12,21,31]", 10, 1, 5)]
     public void CountInterestingSubarrays_WithModuloAndTargetRemainder_ReturnsMatchingSubarrayCount(
-        string numsJsonArray, int modulo, int k, long expectedResult)
+        string numsJson, int modulo, int k, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

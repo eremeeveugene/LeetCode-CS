@@ -20,12 +20,12 @@ public abstract class FindMinimumDiameterAfterMergingTwoTreesTestsBase<T>
     [TestMethod]
     [DataRow("[[0,1],[0,2],[0,3]]", "[[0,1]]", 3)]
     [DataRow("[[0,1],[0,2],[0,3],[2,4],[2,5],[3,6],[2,7]]", "[[0,1],[0,2],[0,3],[2,4],[2,5],[3,6],[2,7]]", 5)]
-    public void MinimumDiameterAfterMerge_WithTwoGraphs_CalculatesMinimumDiameter(string edges1JsonArray,
-        string edges2JsonArray, int expectedResult)
+    public void MinimumDiameterAfterMerge_WithTwoGraphs_CalculatesMinimumDiameter(string edges1Json,
+        string edges2Json, int expectedResult)
     {
         // Arrange
-        var edges1 = JsonHelper<int>.DeserializeToJaggedArray(edges1JsonArray);
-        var edges2 = JsonHelper<int>.DeserializeToJaggedArray(edges2JsonArray);
+        var edges1 = JsonHelper<int>.DeserializeToJaggedArray(edges1Json);
+        var edges2 = JsonHelper<int>.DeserializeToJaggedArray(edges2Json);
 
         var solution = new T();
 

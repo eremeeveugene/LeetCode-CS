@@ -19,11 +19,11 @@ public abstract class ArrayPartitionTestsBase<T> where T : IArrayPartition, new(
     [TestMethod]
     [DataRow("[1, 4, 3, 2]", 4)]
     [DataRow("[6, 2, 6, 5, 1, 2]", 9)]
-    public void ArrayPairSum_GivenArrayOfIntegers_ReturnsMaximumSumOfMinPairsInEveryPair(string numsJsonArray,
+    public void ArrayPairSum_GivenArrayOfIntegers_ReturnsMaximumSumOfMinPairsInEveryPair(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

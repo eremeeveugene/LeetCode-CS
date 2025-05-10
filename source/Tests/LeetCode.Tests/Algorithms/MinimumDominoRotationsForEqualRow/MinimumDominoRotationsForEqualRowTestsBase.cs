@@ -20,12 +20,12 @@ public abstract class MinimumDominoRotationsForEqualRowTestsBase<T> where T : IM
     [DataRow("[2,1,2,4,2,2]", "[5,2,6,2,3,2]", 2)]
     [DataRow("[3,5,1,2,3]", "[3,6,3,3,4]", -1)]
     [DataRow("[1,2,1,1,1,2,2,2]", "[2,1,2,2,2,2,2,2]", 1)]
-    public void MinDominoRotations_WithTopAndBottomArrays_ReturnsMinimumRotationsOrMinusOne(string topsJsonArray,
-        string bottomsJsonArray, int expectedResult)
+    public void MinDominoRotations_WithTopAndBottomArrays_ReturnsMinimumRotationsOrMinusOne(string topsJson,
+        string bottomsJson, int expectedResult)
     {
         // Arrange
-        var tops = JsonHelper<int>.DeserializeToArray(topsJsonArray);
-        var bottoms = JsonHelper<int>.DeserializeToArray(bottomsJsonArray);
+        var tops = JsonHelper<int>.DeserializeToArray(topsJson);
+        var bottoms = JsonHelper<int>.DeserializeToArray(bottomsJson);
 
         var solution = new T();
 

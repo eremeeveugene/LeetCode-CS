@@ -21,13 +21,13 @@ public abstract class CreateBinaryTreeFromDescriptionsTestsBase<T> where T : ICr
     [TestMethod]
     [DataRow("[[20,15,1],[20,17,0],[50,20,1],[50,80,0],[80,19,1]]", "[50,20,80,15,17,19]")]
     [DataRow("[[1,2,1],[2,3,0],[3,4,1]]", "[1,2,null,null,3,4]")]
-    public void CreateBinaryTree_WithValidDescriptions_ReturnsCorrectTreeStructure(string descriptionsJsonArray,
-        string expectedResultJsonArray)
+    public void CreateBinaryTree_WithValidDescriptions_ReturnsCorrectTreeStructure(string descriptionsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
-        var descriptions = JsonHelper<int>.DeserializeToJaggedArray(descriptionsJsonArray);
+        var descriptions = JsonHelper<int>.DeserializeToJaggedArray(descriptionsJson);
 
         var solution = new T();
 

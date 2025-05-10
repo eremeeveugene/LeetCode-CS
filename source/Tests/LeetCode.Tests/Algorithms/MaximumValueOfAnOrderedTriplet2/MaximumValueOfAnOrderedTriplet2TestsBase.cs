@@ -21,11 +21,11 @@ public abstract class MaximumValueOfAnOrderedTriplet2TestsBase<T> where T : IMax
     [DataRow("[1,10,3,4,19]", 133)]
     [DataRow("[1,2,3]", 0)]
     [DataRow("[1000000,1,1000000]", 999999000000)]
-    public void MaximumTripletValue_WithIntegerArray_ReturnsMaximumTripletValue(string numsJsonArray,
+    public void MaximumTripletValue_WithIntegerArray_ReturnsMaximumTripletValue(string numsJson,
         long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

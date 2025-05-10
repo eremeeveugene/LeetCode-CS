@@ -21,11 +21,11 @@ public abstract class MinimumOperationsToMakeArraySumDivisibleByKTestsBase<T>
     [DataRow("[3,9,7]", 5, 4)]
     [DataRow("[4,1,3]", 4, 0)]
     [DataRow("[3,2]", 6, 5)]
-    public void MinOperations_WithNumArrayAndTargetValueK_ReturnsMinimumOperationCount(string numsJsonArray, int k,
+    public void MinOperations_WithNumArrayAndTargetValueK_ReturnsMinimumOperationCount(string numsJson, int k,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

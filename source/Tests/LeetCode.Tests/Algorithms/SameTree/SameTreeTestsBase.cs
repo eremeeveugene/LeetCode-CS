@@ -21,7 +21,7 @@ public abstract class SameTreeTestsBase<T> where T : ISameTree, new()
     [DataRow("[1,2,3]", "[1,2,3]", true)]
     [DataRow("[1,2]", "[1,null,2]", false)]
     [DataRow("[1,2,1]", "[1,1,2]", false)]
-    public void IsSameTree_GivenTwoBinaryTreesFromJsonArrays_ReturnsExpectedBoolean(string jsonArrayP,
+    public void IsSameTree_GivenTwoBinaryTreesFromJsons_ReturnsExpectedBoolean(string jsonArrayP,
         string jsonArrayQ, bool expectedResult)
     {
         // Arrange

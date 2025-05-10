@@ -20,12 +20,12 @@ public abstract class FinalArrayStateAfterKMultiplicationOperationsTestsBase<T>
     [TestMethod]
     [DataRow("[2,1,3,5,6]", 5, 2, "[8,4,6,5,6]")]
     [DataRow("[1,2]", 3, 4, "[16,8]")]
-    public void GetFinalState_WithArrayKAndMultiplier_ReturnsTransformedArray(string numsJsonArray, int k,
-        int multiplier, string expectedResultJsonArray)
+    public void GetFinalState_WithArrayKAndMultiplier_ReturnsTransformedArray(string numsJson, int k,
+        int multiplier, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

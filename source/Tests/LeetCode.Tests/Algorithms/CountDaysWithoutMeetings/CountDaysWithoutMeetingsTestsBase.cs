@@ -20,11 +20,11 @@ public abstract class CountDaysWithoutMeetingsTestsBase<T> where T : ICountDaysW
     [DataRow(10, "[[5,7],[1,3],[9,10]]", 2)]
     [DataRow(5, "[[2,4],[1,3]]", 1)]
     [DataRow(6, "[[1,6]]", 0)]
-    public void CountDays_WithTotalDaysAndMeetingRanges_ReturnsNumberOfFreeDays(int days, string meetingsJsonArray,
+    public void CountDays_WithTotalDaysAndMeetingRanges_ReturnsNumberOfFreeDays(int days, string meetingsJson,
         int expectedResult)
     {
         // Arrange
-        var meetings = JsonHelper<int>.DeserializeToJaggedArray(meetingsJsonArray);
+        var meetings = JsonHelper<int>.DeserializeToJaggedArray(meetingsJson);
 
         var solution = new T();
 

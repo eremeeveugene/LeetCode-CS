@@ -13,23 +13,48 @@ using System.Text.Json;
 
 namespace LeetCode.Core.Helpers;
 
+/// <summary>
+///     Provides JSON deserialization helpers for arrays and jagged collections of <typeparamref name="T" />.
+/// </summary>
 public static class JsonHelper<T>
 {
-    public static T[] DeserializeToArray(string jsonArray)
+    /// <summary>
+    ///     Deserializes the JSON in <paramref name="json" /> to a <see cref="T" />[].
+    /// </summary>
+    /// <param name="json"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    /// <exception cref="JsonException"></exception>
+    public static T[] DeserializeToArray(string json)
     {
-        return JsonSerializer.Deserialize<T[]>(jsonArray, JsonHelperOptions.Options) ??
-               throw new JsonException("Failed to deserialize array.");
+        return JsonSerializer.Deserialize<T[]>(json, JsonHelperOptions.Options)
+               ?? throw new JsonException("Failed to deserialize JSON array.");
     }
 
-    public static T[][] DeserializeToJaggedArray(string jsonArray)
+    /// <summary>
+    ///     Deserializes the JSON in <paramref name="json" /> to a jagged array of <see cref="T" />[][].
+    /// </summary>
+    /// <param name="json"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    /// <exception cref="JsonException"></exception>
+    public static T[][] DeserializeToJaggedArray(string json)
     {
-        return JsonSerializer.Deserialize<T[][]>(jsonArray, JsonHelperOptions.Options) ??
-               throw new JsonException("Failed to deserialize jagged array.");
+        return JsonSerializer.Deserialize<T[][]>(json, JsonHelperOptions.Options)
+               ?? throw new JsonException("Failed to deserialize JSON jagged array.");
     }
 
-    public static IList<IList<T>> DeserializeToJaggedList(string jsonArray)
+    /// <summary>
+    ///     Deserializes the JSON in <paramref name="json" /> to a jagged list of <see cref="T" /> (`IList&lt;IList&lt;T&gt;
+    ///     &gt;`).
+    /// </summary>
+    /// <param name="json"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    /// <exception cref="JsonException"></exception>
+    public static IList<IList<T>> DeserializeToJaggedList(string json)
     {
-        return JsonSerializer.Deserialize<IList<IList<T>>>(jsonArray, JsonHelperOptions.Options) ??
-               throw new JsonException("Failed to deserialize jagged list.");
+        return JsonSerializer.Deserialize<IList<IList<T>>>(json, JsonHelperOptions.Options)
+               ?? throw new JsonException("Failed to deserialize JSON jagged list.");
     }
 }

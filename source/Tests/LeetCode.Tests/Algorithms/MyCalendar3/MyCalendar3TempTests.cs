@@ -9,9 +9,9 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.DesignAnOrderedStream;
+using LeetCode.Algorithms.MyCalendar3;
 
-public interface IDesignAnOrderedStreamArrayFactory
-{
-    IDesignAnOrderedStream Create(int n);
-}
+namespace LeetCode.Tests.Algorithms.MyCalendar3;
+
+[TestClass]
+public class MyCalendar3TempTests : MyCalendar3TestsBase<MyCalendar3TempFactory>;

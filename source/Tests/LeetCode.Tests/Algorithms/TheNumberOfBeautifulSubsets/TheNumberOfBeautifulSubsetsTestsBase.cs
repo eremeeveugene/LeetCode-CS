@@ -27,10 +27,10 @@ public abstract class TheNumberOfBeautifulSubsetsTestsBase<T> where T : ITheNumb
         2, 9408)]
     [DataRow("[1000, 999, 998, 997, 996, 995, 994, 993, 992, 991, 990, 989, 988, 987, 986, 985, 984, 983, 982, 981]", 2,
         20735)]
-    public void BeautifulSubsets_WithNumsAndK_ReturnsExpectedResult(string numsJsonArray, int k, int expectedResult)
+    public void BeautifulSubsets_WithNumsAndK_ReturnsExpectedResult(string numsJson, int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

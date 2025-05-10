@@ -9,12 +9,14 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.DesignAnOrderedStream;
+using System.Diagnostics.CodeAnalysis;
 
-public class DesignAnOrderedStreamArrayFactory : IDesignAnOrderedStreamArrayFactory
+namespace LeetCode.Tests.Base.Exceptions;
+
+[ExcludeFromCodeCoverage]
+public class UnexpectedMethodException : InvalidOperationException
 {
-    public IDesignAnOrderedStream Create(int n)
+    public UnexpectedMethodException(string name) : base($"Unexpected method '{name}' at index.")
     {
-        return new DesignAnOrderedStreamArray(n);
     }
 }

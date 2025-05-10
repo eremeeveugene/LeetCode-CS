@@ -20,10 +20,10 @@ public abstract class CheckIfArrayIsSortedAndRotatedTestsBase<T> where T : IChec
     [DataRow("[3,4,5,1,2]", true)]
     [DataRow("[2,1,3,4]", false)]
     [DataRow("[1,2,3]", true)]
-    public void Check_GivenNums_ReturnsIfSortedOrRotated(string numsJsonArray, bool expectedResult)
+    public void Check_GivenNums_ReturnsIfSortedOrRotated(string numsJson, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

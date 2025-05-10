@@ -21,13 +21,13 @@ public abstract class XORQueriesOfSubarrayTestsBase<T> where T : IXORQueriesOfSu
     [DataRow("[4,8,2,10]", "[[2,3],[1,3],[0,0],[0,3]]", "[8,0,4,4]")]
     [DataRow("[16]", "[[0,0],[0,0],[0,0]]", "[16,16,16]")]
     [DataRow("[15,8,8,8,15]", "[[2,2],[3,3]]", "[8,8]")]
-    public void XorQueries_WithArrayAndQueries_ReturnsCorrectResults(string arrJsonArray, string queriesJsonArray,
-        string expectedResultJsonArray)
+    public void XorQueries_WithArrayAndQueries_ReturnsCorrectResults(string arrJson, string queriesJson,
+        string expectedResultJson)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
-        var queries = JsonHelper<int>.DeserializeToJaggedArray(queriesJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
+        var queries = JsonHelper<int>.DeserializeToJaggedArray(queriesJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

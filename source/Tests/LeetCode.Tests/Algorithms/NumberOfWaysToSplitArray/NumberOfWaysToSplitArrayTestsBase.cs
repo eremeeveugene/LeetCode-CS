@@ -19,11 +19,11 @@ public abstract class NumberOfWaysToSplitArrayTestsBase<T> where T : INumberOfWa
     [TestMethod]
     [DataRow("[10,4,-8,7]", 2)]
     [DataRow("[2,3,1,0]", 2)]
-    public void WaysToSplitArray_WithValidIntegerArray_ReturnsCorrectSplitCount(string numsJsonArray,
+    public void WaysToSplitArray_WithValidIntegerArray_ReturnsCorrectSplitCount(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

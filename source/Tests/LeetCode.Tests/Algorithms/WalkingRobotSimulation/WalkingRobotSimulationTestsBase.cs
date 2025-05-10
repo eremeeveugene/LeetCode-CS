@@ -25,12 +25,12 @@ public abstract class WalkingRobotSimulationTestsBase<T> where T : IWalkingRobot
     [DataRow("[1]", "[[2,2],[3,3]]", 1)]
     [DataRow("[9,-1,9,9,-2,9,9,-1,9,9,-2,9,9,9,-1,9,9,-2,9,9,-1,-1,9,9]", "[[10,10],[5,5],[8,8],[15,15],[20,20]]",
         8100)]
-    public void RobotSim_WithCommandsAndObstacles_ReturnsCorrectFinalDistance(string commandsJsonArray,
-        string obstaclesJsonArray, int expectedResult)
+    public void RobotSim_WithCommandsAndObstacles_ReturnsCorrectFinalDistance(string commandsJson,
+        string obstaclesJson, int expectedResult)
     {
         // Arrange
-        var commands = JsonHelper<int>.DeserializeToArray(commandsJsonArray);
-        var obstacles = JsonHelper<int>.DeserializeToJaggedArray(obstaclesJsonArray);
+        var commands = JsonHelper<int>.DeserializeToArray(commandsJson);
+        var obstacles = JsonHelper<int>.DeserializeToJaggedArray(obstaclesJson);
 
         var solution = new T();
 

@@ -21,13 +21,13 @@ public abstract class FlipEquivalentBinaryTreesTestsBase<T> where T : IFlipEquiv
     [DataRow("[]", "[]", true)]
     [DataRow("[]", "[1]", false)]
     [DataRow("[1,2,3,4,5,6,null,null,null,7,8]", "[1,3,2,null,6,4,5,null,null,null,null,8,7]", true)]
-    public void FlipEquiv_WithTwoTreeRoots_ReturnsIfTheyAreEquivalent(string root1JsonArray, string root2JsonArray,
+    public void FlipEquiv_WithTwoTreeRoots_ReturnsIfTheyAreEquivalent(string root1Json, string root2Json,
         bool expectedResult)
     {
         // Arrange
-        var root1Array = JsonHelper<int?>.DeserializeToArray(root1JsonArray);
+        var root1Array = JsonHelper<int?>.DeserializeToArray(root1Json);
         var root1 = TreeNode.ToTreeNode(root1Array);
-        var root2Array = JsonHelper<int?>.DeserializeToArray(root2JsonArray);
+        var root2Array = JsonHelper<int?>.DeserializeToArray(root2Json);
         var root2 = TreeNode.ToTreeNode(root2Array);
 
         var solution = new T();

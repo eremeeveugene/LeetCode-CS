@@ -21,13 +21,13 @@ public abstract class FindModeInBinarySearchTreeTestsBase<T> where T : IFindMode
     [DataRow("[]", "[]")]
     [DataRow("[0]", "[0]")]
     [DataRow("[1,null,2,2]", "[2]")]
-    public void FindMode_WithBinaryTree_ReturnsModeValues(string rootJsonArray,
-        string expectedResultJsonArray)
+    public void FindMode_WithBinaryTree_ReturnsModeValues(string rootJson,
+        string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

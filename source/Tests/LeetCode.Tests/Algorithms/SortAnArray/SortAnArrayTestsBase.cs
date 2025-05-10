@@ -19,11 +19,11 @@ public abstract class SortAnArrayTestsBase<T> where T : ISortAnArray, new()
     [TestMethod]
     [DataRow("[5,2,3,1]", "[1,2,3,5]")]
     [DataRow("[5,1,1,2,0,0]", "[0,0,1,1,2,5]")]
-    public void SortArray_WithUnsortedArray_ReturnsSortedArray(string numsJsonArray, string expectedResultJsonArray)
+    public void SortArray_WithUnsortedArray_ReturnsSortedArray(string numsJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

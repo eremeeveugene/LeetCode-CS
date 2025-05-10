@@ -22,10 +22,10 @@ public abstract class MinimumDistanceBetweenBSTNodesTestsBase<T> where T : IMini
     [DataRow("[4,2,6,1,3]", 1)]
     [DataRow("[1,0,48,null,null,12,49]", 1)]
     [DataRow("[90,69,null,49,89,null,52]", 1)]
-    public void MinDiffInBST_WithVariousBSTs_ReturnsMinimumDifference(string rootJsonArray, int expectedResult)
+    public void MinDiffInBST_WithVariousBSTs_ReturnsMinimumDifference(string rootJson, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
 
         var solution = new T();

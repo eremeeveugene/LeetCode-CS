@@ -22,12 +22,12 @@ public abstract class MaximalRectangleTestsBase<T> where T : IMaximalRectangle, 
     [DataRow(
         "[[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]",
         6)]
-    public void MaximalRectangle_GivenMatrix_ReturnsMaximalArea(string matrixJsonArray, int expectedResult)
+    public void MaximalRectangle_GivenMatrix_ReturnsMaximalArea(string matrixJson, int expectedResult)
     {
         // Arrange
         var solution = new T();
 
-        var matrix = JsonHelper<char>.DeserializeToJaggedArray(matrixJsonArray);
+        var matrix = JsonHelper<char>.DeserializeToJaggedArray(matrixJson);
 
         // Act
         var actualResult = solution.MaximalRectangle(matrix);

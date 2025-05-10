@@ -20,10 +20,10 @@ public abstract class FindTheDuplicateNumberTestsBase<T> where T : IFindTheDupli
     [DataRow("[1, 3, 4, 2, 2]", 2)]
     [DataRow("[3, 1, 3, 4, 2]", 3)]
     [DataRow("[3, 3, 3, 3, 3]", 3)]
-    public void FindDuplicate_GivenArray_ReturnsFirstDuplicate(string numsJsonArray, int expectedResult)
+    public void FindDuplicate_GivenArray_ReturnsFirstDuplicate(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

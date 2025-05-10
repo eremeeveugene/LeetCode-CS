@@ -26,11 +26,11 @@ public abstract class EvaluateBooleanBinaryTreeTestsBase<T> where T : IEvaluateB
     [DataRow("[2,3,1,1,2,null,null,null,null,0,1]", true)]
     [DataRow("[3,3,2,0,1,0,0]", false)]
     [DataRow("[3,3,2,2,3,3,3,0,1,0,0,1,0,0,0]", false)]
-    public void EvaluateTree_GivenJsonArrayTreeStructure_ReturnsBooleanEvaluationResult(string rootJsonArray,
+    public void EvaluateTree_GivenJsonTreeStructure_ReturnsBooleanEvaluationResult(string rootJson,
         bool expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();

@@ -20,10 +20,10 @@ public abstract class SignOfTheProductOfAnArrayTestsBase<T> where T : ISignOfThe
     [DataRow("[-1,-2,-3,-4,3,2,1]", 1)]
     [DataRow("[1,5,0,2,-3]", 0)]
     [DataRow("[-1,1,-1,1,-1]", -1)]
-    public void ArraySign_GivenArrayOfIntegers_ReturnsProductSign(string numsJsonArray, int expectedResult)
+    public void ArraySign_GivenArrayOfIntegers_ReturnsProductSign(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

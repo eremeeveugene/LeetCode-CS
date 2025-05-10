@@ -19,12 +19,12 @@ public abstract class LargestDivisibleSubsetTestsBase<T> where T : ILargestDivis
     [TestMethod]
     [DataRow("[1,2,3]", "[1,2]")]
     [DataRow("[1,2,4,8]", "[1,2,4,8]")]
-    public void LargestDivisibleSubset_WithArrayOfIntegers_ReturnsSubsetWhereEveryPairIsDivisible(string numsJsonArray,
-        string expectedResultJsonArray)
+    public void LargestDivisibleSubset_WithArrayOfIntegers_ReturnsSubsetWhereEveryPairIsDivisible(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

@@ -20,11 +20,11 @@ public abstract class SubarrayProductLessThanKTestsBase<T> where T : ISubarrayPr
     [DataRow("[10,5,2,6]", 100, 8)]
     [DataRow("[1,2,3]", 0, 0)]
     [DataRow("[1,1,1]", 2, 6)]
-    public void NumSubarrayProductLessThanK_GivenArrayAndThreshold_ReturnsCount(string numsJsonArray, int k,
+    public void NumSubarrayProductLessThanK_GivenArrayAndThreshold_ReturnsCount(string numsJson, int k,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

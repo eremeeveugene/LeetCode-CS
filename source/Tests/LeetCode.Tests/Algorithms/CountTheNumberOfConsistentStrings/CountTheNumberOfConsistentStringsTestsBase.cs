@@ -21,10 +21,10 @@ public abstract class CountTheNumberOfConsistentStringsTestsBase<T> where T : IC
     [DataRow("abc", "[\"a\",\"b\",\"c\",\"ab\",\"ac\",\"bc\",\"abc\"]", 7)]
     [DataRow("cad", "[\"cc\",\"acd\",\"b\",\"ba\",\"bac\",\"bad\",\"ac\",\"d\"]", 4)]
     public void CountConsistentStrings_WithAllowedCharactersAndWords_ReturnsNumberOfConsistentStrings(string allowed,
-        string wordsJsonArray, int expectedResult)
+        string wordsJson, int expectedResult)
     {
         // Arrange
-        var words = JsonHelper<string>.DeserializeToArray(wordsJsonArray);
+        var words = JsonHelper<string>.DeserializeToArray(wordsJson);
 
         var solution = new T();
 

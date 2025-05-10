@@ -25,10 +25,10 @@ public abstract class ThirdMaximumNumberTestsBase<T> where T : IThirdMaximumNumb
     [DataRow("[14]", 14)]
     [DataRow("[1, 2, -2147483648]", int.MinValue)]
     [DataRow("[1, -2147483648, 2]", int.MinValue)]
-    public void ThirdMax_WithIntArray_ReturnsThirdMaximumOrMaximum(string numsJsonArray, int expectedResult)
+    public void ThirdMax_WithIntArray_ReturnsThirdMaximumOrMaximum(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

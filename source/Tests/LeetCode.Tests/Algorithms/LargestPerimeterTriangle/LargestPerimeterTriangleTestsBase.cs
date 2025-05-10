@@ -19,10 +19,10 @@ public abstract class LargestPerimeterTriangleTestsBase<T> where T : ILargestPer
     [TestMethod]
     [DataRow("[2,1,2]", 5)]
     [DataRow("[1,2,1,10]", 0)]
-    public void LargestPerimeter_WithSideLengths_ReturnsCorrectPerimeterOrZero(string numsJsonArray, int expectedResult)
+    public void LargestPerimeter_WithSideLengths_ReturnsCorrectPerimeterOrZero(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

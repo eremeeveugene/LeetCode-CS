@@ -19,11 +19,11 @@ public abstract class SortColorsTestsBase<T> where T : ISortColors, new()
     [TestMethod]
     [DataRow("[2,0,2,1,1,0]", "[0,0,1,1,2,2]")]
     [DataRow("[2,0,1]", "[0,1,2]")]
-    public void SortColors_WithUnsortedArray_ReturnsSortedArray(string numsJsonArray, string expectedResultJsonArray)
+    public void SortColors_WithUnsortedArray_ReturnsSortedArray(string numsJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

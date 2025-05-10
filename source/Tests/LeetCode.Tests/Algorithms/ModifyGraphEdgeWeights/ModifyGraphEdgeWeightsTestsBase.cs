@@ -21,12 +21,12 @@ public abstract class ModifyGraphEdgeWeightsTestsBase<T> where T : IModifyGraphE
     [DataRow(3, "[[0,1,-1],[0,2,5]]", 0, 2, 6, "[]")]
     [DataRow(4, "[[1,0,4],[1,2,3],[2,3,5],[0,3,-1]]", 0, 2, 6, "[[1,0,4],[1,2,3],[2,3,5],[0,3,1]]")]
     [DataRow(5, "[[4,1,-1],[2,0,-1],[0,3,-1],[4,3,-1]]", 0, 1, 5, "[[4,1,1],[2,0,3],[0,3,3],[4,3,1]]")]
-    public void ModifiedGraphEdges_WithGivenParameters_ReturnsModifiedEdges(int n, string edgesJsonArray, int source,
-        int destination, int target, string expectedResultJsonArray)
+    public void ModifiedGraphEdges_WithGivenParameters_ReturnsModifiedEdges(int n, string edgesJson, int source,
+        int destination, int target, string expectedResultJson)
     {
         // Arrange
-        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
+        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJson);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJson);
 
         var solution = new T();
 

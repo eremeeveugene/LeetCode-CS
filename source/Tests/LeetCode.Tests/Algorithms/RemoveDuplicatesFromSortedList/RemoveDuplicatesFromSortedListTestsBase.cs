@@ -22,13 +22,13 @@ public abstract class RemoveDuplicatesFromSortedListTestsBase<T> where T : IRemo
     [DataRow("[0,0,0,0,0]", "[0]")]
     [DataRow("[1,1,2]", "[1,2]")]
     [DataRow("[1,1,2,3,3]", "[1,2,3]")]
-    public void DeleteDuplicates_GivenLinkedList_RemovesDuplicatesAndReturnsExpectedList(string headJsonArray,
-        string expectedResultJsonArray)
+    public void DeleteDuplicates_GivenLinkedList_RemovesDuplicatesAndReturnsExpectedList(string headJson,
+        string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
+        var headArray = JsonHelper<int>.DeserializeToArray(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

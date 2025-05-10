@@ -16,13 +16,7 @@ namespace LeetCode.Core.Exceptions;
 [ExcludeFromCodeCoverage]
 public class TreeNodeBuildException : InvalidOperationException
 {
-    private const string DefaultErrorMessage = "Failed to build TreeNode.";
-
-    public TreeNodeBuildException() : base(DefaultErrorMessage)
-    {
-    }
-
-    public TreeNodeBuildException(Exception innerException) : base(DefaultErrorMessage, innerException)
+    public TreeNodeBuildException() : base("Failed to build TreeNode.")
     {
     }
 }

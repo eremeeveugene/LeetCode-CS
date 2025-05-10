@@ -20,12 +20,12 @@ public abstract class SubsetsTestsBase<T> where T : ISubsets, new()
     [TestMethod]
     [DataRow("[1,2,3]", "[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]")]
     [DataRow("[0]", "[[],[0]]")]
-    public void Subsets_GivenArrayOfNumbers_ReturnsAllPossibleSubsets(string numsJsonArray,
-        string expectedResultJsonArray)
+    public void Subsets_GivenArrayOfNumbers_ReturnsAllPossibleSubsets(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedList(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedList(expectedResultJson);
 
         var solution = new T();
 

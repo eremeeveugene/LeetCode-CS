@@ -21,12 +21,12 @@ public abstract class FloodFillTestsBase<T> where T : IFloodFill, new()
     [DataRow("[[0,0,0],[0,0,0]]", 0, 0, 0, "[[0,0,0],[0,0,0]]")]
     [DataRow("[[0,0,0],[0,0,0]]", 1, 0, 2, "[[2,2,2,],[2,2,2]]")]
     [DataRow("[[1,1,1],[1,1,0],[1,0,1]]", 1, 1, 2, "[[2,2,2],[2,2,0],[2,0,1]]")]
-    public void FloodFill_WithInitialPositionAndNewColor_ReturnsModifiedImage(string imageJsonArray, int sr, int sc,
-        int color, string expectedResultJsonArray)
+    public void FloodFill_WithInitialPositionAndNewColor_ReturnsModifiedImage(string imageJson, int sr, int sc,
+        int color, string expectedResultJson)
     {
         // Arrange
-        var intervals = JsonHelper<int>.DeserializeToJaggedArray(imageJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
+        var intervals = JsonHelper<int>.DeserializeToJaggedArray(imageJson);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJson);
 
         var solution = new T();
 

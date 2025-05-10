@@ -24,15 +24,15 @@ public abstract class FindAllGroupOfFarmlandTestsBase<T> where T : IFindAllGroup
     [DataRow("[[0,1],[0,1]]", "[[0,1,1,1]]")]
     [DataRow("[[1,0,0],[0,1,1],[0,1,1]]", "[[0,0,0,0],[1,1,2,2]]")]
     [DataRow("[[0,0,0,0,0],[0,1,1,1,0],[0,1,1,1,0],[0,1,1,1,0],[0,0,0,0,0]]", "[[1,1,3,3]]")]
-    public void FindFarmland_GivenLandArray_ReturnsExpectedFarmBoundaries(string landJsonArray,
-        string expectedResultJsonArray)
+    public void FindFarmland_GivenLandArray_ReturnsExpectedFarmBoundaries(string landJson,
+        string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJson);
 
         var solution = new T();
 
-        var land = JsonHelper<int>.DeserializeToJaggedArray(landJsonArray);
+        var land = JsonHelper<int>.DeserializeToJaggedArray(landJson);
 
         // Act
         var actualResult = solution.FindFarmland(land);

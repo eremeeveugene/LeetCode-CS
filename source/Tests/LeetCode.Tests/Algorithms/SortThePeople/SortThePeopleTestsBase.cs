@@ -19,13 +19,13 @@ public abstract class SortThePeopleTestsBase<T> where T : ISortThePeople, new()
     [TestMethod]
     [DataRow("[\"Mary\",\"John\",\"Emma\"]", "[180,165,170]", "[\"Mary\",\"Emma\",\"John\"]")]
     [DataRow("[\"Alice\",\"Bob\",\"Bob\"]", "[155,185,150]", "[\"Bob\",\"Alice\",\"Bob\"]")]
-    public void SortPeople_WithNamesAndHeights_ReturnsSortedNamesByHeight(string namesJsonArray,
-        string heightsJsonArray, string expectedResultJsonArray)
+    public void SortPeople_WithNamesAndHeights_ReturnsSortedNamesByHeight(string namesJson,
+        string heightsJson, string expectedResultJson)
     {
         // Arrange
-        var names = JsonHelper<string>.DeserializeToArray(namesJsonArray);
-        var heights = JsonHelper<int>.DeserializeToArray(heightsJsonArray);
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJsonArray);
+        var names = JsonHelper<string>.DeserializeToArray(namesJson);
+        var heights = JsonHelper<int>.DeserializeToArray(heightsJson);
+        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

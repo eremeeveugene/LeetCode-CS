@@ -24,11 +24,11 @@ public abstract class MinimumTimeDifferenceTestsBase<T> where T : IMinimumTimeDi
     [DataRow("[\"00:00\",\"12:00\",\"23:59\"]", 1)]
     [DataRow("[\"02:45\",\"11:15\",\"18:30\",\"23:55\"]", 170)]
     [DataRow("[\"00:00\",\"12:34\",\"23:59\",\"03:21\",\"16:45\",\"07:30\",\"20:15\",\"22:22\"]", 1)]
-    public void FindMinDifference_GivenTimePoints_ReturnsMinimumDifference(string timePointsJsonArray,
+    public void FindMinDifference_GivenTimePoints_ReturnsMinimumDifference(string timePointsJson,
         int expectedResult)
     {
         // Arrange
-        var timePoints = JsonHelper<string>.DeserializeToArray(timePointsJsonArray);
+        var timePoints = JsonHelper<string>.DeserializeToArray(timePointsJson);
 
         var solution = new T();
 

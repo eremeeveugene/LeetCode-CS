@@ -19,11 +19,11 @@ public abstract class CountTheNumberOfGoodSubarraysTestsBase<T> where T : ICount
     [TestMethod]
     [DataRow("[1,1,1,1,1]", 10, 1)]
     [DataRow("[3,1,4,3,2,2,4]", 2, 4)]
-    public void CountGood_WithIntegerArrayAndK_ReturnsNumberOfGoodPairs(string numsJsonArray, int k,
+    public void CountGood_WithIntegerArrayAndK_ReturnsNumberOfGoodPairs(string numsJson, int k,
         long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

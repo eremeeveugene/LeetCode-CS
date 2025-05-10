@@ -21,11 +21,11 @@ public abstract class FindChampion2TestsBase<T> where T : IFindChampion2, new()
     [DataRow(2, "[]", -1)]
     [DataRow(3, "[[0,1],[1,2]]", 0)]
     [DataRow(4, "[[0,2],[1,3],[1,2]]", -1)]
-    public void FindChampion_WithNodeCountAndDirectedEdges_ReturnsChampionOrMinusOne(int n, string edgesJsonArray,
+    public void FindChampion_WithNodeCountAndDirectedEdges_ReturnsChampionOrMinusOne(int n, string edgesJson,
         int expectedResult)
     {
         // Arrange
-        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJsonArray);
+        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJson);
 
         var solution = new T();
 

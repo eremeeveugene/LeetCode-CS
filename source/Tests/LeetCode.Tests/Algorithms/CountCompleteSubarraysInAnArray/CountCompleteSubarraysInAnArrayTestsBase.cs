@@ -19,11 +19,11 @@ public abstract class CountCompleteSubarraysInAnArrayTestsBase<T> where T : ICou
     [TestMethod]
     [DataRow("[1,3,1,2,2]", 4)]
     [DataRow("[5,5,5,5]", 10)]
-    public void CountCompleteSubarrays_WithGivenArray_ReturnsNumberOfCompleteSubarrays(string numsJsonArray,
+    public void CountCompleteSubarrays_WithGivenArray_ReturnsNumberOfCompleteSubarrays(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

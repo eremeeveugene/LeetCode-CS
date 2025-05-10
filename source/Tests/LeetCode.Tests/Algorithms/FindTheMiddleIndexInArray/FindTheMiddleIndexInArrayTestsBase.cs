@@ -20,11 +20,11 @@ public abstract class FindTheMiddleIndexInArrayTestsBase<T> where T : IFindTheMi
     [DataRow("[2, 3, -1, 8, 4]", 3)]
     [DataRow("[1, -1, 4]", 2)]
     [DataRow("[2, 5]", -1)]
-    public void FindMiddleIndex_GivenArray_ReturnsExpectedMiddleIndexOrMinusOne(string numsJsonArray,
+    public void FindMiddleIndex_GivenArray_ReturnsExpectedMiddleIndexOrMinusOne(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

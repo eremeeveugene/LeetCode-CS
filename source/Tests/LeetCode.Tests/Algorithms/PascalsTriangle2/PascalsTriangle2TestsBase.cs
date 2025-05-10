@@ -20,10 +20,10 @@ public abstract class PascalsTriangle2TestsBase<T> where T : IPascalsTriangle2, 
     [DataRow(0, "[1]")]
     [DataRow(1, "[1,1]")]
     [DataRow(3, "[1,3,3,1]")]
-    public void GetRow_GivenRowIndex_ReturnsPascalsTriangleRow(int rowIndex, string expectedResultJsonArray)
+    public void GetRow_GivenRowIndex_ReturnsPascalsTriangleRow(int rowIndex, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

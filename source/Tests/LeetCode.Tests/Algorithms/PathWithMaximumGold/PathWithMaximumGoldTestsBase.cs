@@ -26,12 +26,12 @@ public abstract class PathWithMaximumGoldTestsBase<T> where T : IPathWithMaximum
     [DataRow(
         "[[0,0,0,0,0,0,11,0,0,98],[69,31,0,0,80,0,0,0,0,0],[0,0,0,0,0,34,0,0,0,0],[51,0,0,0,0,69,9,0,0,0],[0,44,91,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,83,0,0,49,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,74,6,0,59,0,0,0],[46,0,0,0,0,0,69,0,0,0]]",
         135)]
-    public void GetMaximumGold_WithGridJsonArray_ReturnsMaximumGoldCollected(string gridJsonArray, int expectedResult)
+    public void GetMaximumGold_WithGridJson_ReturnsMaximumGoldCollected(string gridJson, int expectedResult)
     {
         // Arrange
         var solution = new T();
 
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJsonArray);
+        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJson);
 
         // Act
         var actualResult = solution.GetMaximumGold(grid);

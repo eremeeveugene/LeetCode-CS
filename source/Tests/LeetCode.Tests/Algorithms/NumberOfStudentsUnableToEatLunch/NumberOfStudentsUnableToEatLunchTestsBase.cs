@@ -19,12 +19,12 @@ public abstract class NumberOfStudentsUnableToEatLunchTestsBase<T> where T : INu
     [TestMethod]
     [DataRow("[1,1,0,0]", "[0,1,0,1]", 0)]
     [DataRow("[1,1,1,0,0,1]", "[1,0,0,0,1,1]", 3)]
-    public void CountStudents_WithStudentsAndSandwichesArray_ReturnsUnsatisfiedStudentsCount(string studentsJsonArray,
-        string sandwichesJsonArray, int expectedResult)
+    public void CountStudents_WithStudentsAndSandwichesArray_ReturnsUnsatisfiedStudentsCount(string studentsJson,
+        string sandwichesJson, int expectedResult)
     {
         // Arrange
-        var students = JsonHelper<int>.DeserializeToArray(studentsJsonArray);
-        var sandwiches = JsonHelper<int>.DeserializeToArray(sandwichesJsonArray);
+        var students = JsonHelper<int>.DeserializeToArray(studentsJson);
+        var sandwiches = JsonHelper<int>.DeserializeToArray(sandwichesJson);
 
         var solution = new T();
 

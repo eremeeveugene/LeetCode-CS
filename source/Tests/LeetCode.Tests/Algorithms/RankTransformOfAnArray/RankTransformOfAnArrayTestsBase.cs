@@ -20,12 +20,12 @@ public abstract class RankTransformOfAnArrayTestsBase<T> where T : IRankTransfor
     [DataRow("[40,10,20,30]", "[4,1,2,3]")]
     [DataRow("[100,100,100]", "[1,1,1]")]
     [DataRow("[37,12,28,9,100,56,80,5,12]", "[5,3,4,2,8,6,7,1,3]")]
-    public void ArrayRankTransform_WithUnsortedArray_ReturnsRankedArray(string arrJsonArray,
-        string expectedResultJsonArray)
+    public void ArrayRankTransform_WithUnsortedArray_ReturnsRankedArray(string arrJson,
+        string expectedResultJson)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

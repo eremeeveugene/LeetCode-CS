@@ -20,11 +20,11 @@ public abstract class FindKthSmallestPairDistanceTestsBase<T> where T : IFindKth
     [DataRow("[1, 3, 1]", 1, 0)]
     [DataRow("[1, 1, 1]", 2, 0)]
     [DataRow("[1, 6, 1]", 3, 5)]
-    public void SmallestDistancePair_GivenArrayAndK_ReturnsExpectedDistance(string numsJsonArray, int k,
+    public void SmallestDistancePair_GivenArrayAndK_ReturnsExpectedDistance(string numsJson, int k,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

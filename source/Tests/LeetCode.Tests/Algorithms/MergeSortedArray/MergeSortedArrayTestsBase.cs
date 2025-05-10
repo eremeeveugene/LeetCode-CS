@@ -21,13 +21,13 @@ public abstract class MergeSortedArrayTestsBase<T> where T : IMergeSortedArray, 
     [DataRow("[1]", 1, "[]", 0, "[1]")]
     [DataRow("[0]", 0, "[1]", 1, "[1]")]
     [DataRow("[0,0,0,0,0]", 0, "[1,2,3,4,5]", 5, "[1,2,3,4,5]")]
-    public void Merge_WithTwoArraysAndSizes_MergesAndSortsIntoFirstArray(string nums1JsonArray, int m,
-        string nums2JsonArray, int n, string expectedResultJsonArray)
+    public void Merge_WithTwoArraysAndSizes_MergesAndSortsIntoFirstArray(string nums1Json, int m,
+        string nums2Json, int n, string expectedResultJson)
     {
         // Arrange
-        var nums1 = JsonHelper<int>.DeserializeToArray(nums1JsonArray);
-        var nums2 = JsonHelper<int>.DeserializeToArray(nums2JsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums1 = JsonHelper<int>.DeserializeToArray(nums1Json);
+        var nums2 = JsonHelper<int>.DeserializeToArray(nums2Json);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

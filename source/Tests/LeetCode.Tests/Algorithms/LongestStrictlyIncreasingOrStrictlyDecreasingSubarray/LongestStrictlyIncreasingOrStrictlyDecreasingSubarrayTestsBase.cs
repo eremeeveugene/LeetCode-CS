@@ -21,11 +21,11 @@ public abstract class LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayTests
     [DataRow("[1,4,3,3,2]", 2)]
     [DataRow("[3,3,3,3]", 1)]
     [DataRow("[3,2,1]", 3)]
-    public void LongestMonotonicSubarray_WithGivenNums_ReturnsLengthOfTheLongestMonotonicSubarray(string numsJsonArray,
+    public void LongestMonotonicSubarray_WithGivenNums_ReturnsLengthOfTheLongestMonotonicSubarray(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

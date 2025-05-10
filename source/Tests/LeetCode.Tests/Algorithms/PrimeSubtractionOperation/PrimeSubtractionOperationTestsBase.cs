@@ -20,11 +20,11 @@ public abstract class PrimeSubtractionOperationTestsBase<T> where T : IPrimeSubt
     [DataRow("[4,9,6,10]", true)]
     [DataRow("[6,8,11,12]", true)]
     [DataRow("[5,8,3]", false)]
-    public void PrimeSubOperation_WithInputArray_ReturnsTrueIfPrimeSubsequencePossible(string numsJsonArray,
+    public void PrimeSubOperation_WithInputArray_ReturnsTrueIfPrimeSubsequencePossible(string numsJson,
         bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

@@ -20,12 +20,12 @@ public abstract class PalindromePartitioningTestsBase<T> where T : IPalindromePa
     [TestMethod]
     [DataRow("a", "[[\"a\"]]")]
     [DataRow("aab", "[[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]")]
-    public void Partition_GivenString_ReturnsAllPossiblePalindromicPartitions(string s, string expectedResultJsonArray)
+    public void Partition_GivenString_ReturnsAllPossiblePalindromicPartitions(string s, string expectedResultJson)
     {
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonHelper<string>.DeserializeToJaggedList(expectedResultJsonArray);
+        var expectedResult = JsonHelper<string>.DeserializeToJaggedList(expectedResultJson);
 
         // Act
         var actualResult = solution.Partition(s);

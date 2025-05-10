@@ -19,13 +19,13 @@ public abstract class CountVowelStringsInRangesTestsBase<T> where T : ICountVowe
     [TestMethod]
     [DataRow("[\"aba\",\"bcb\",\"ece\",\"aa\",\"e\"]", "[[0,2],[1,4],[1,1]]", "[2,3,0]")]
     [DataRow("[\"a\",\"e\",\"i\"]", "[[0,2],[0,1],[2,2]]", "[3,2,1]")]
-    public void VowelStrings_WithWordsAndQueries_ModifiesWordsAccordingToQueries(string wordsJsonArray,
-        string queriesJsonArray, string expectedResultJsonArray)
+    public void VowelStrings_WithWordsAndQueries_ModifiesWordsAccordingToQueries(string wordsJson,
+        string queriesJson, string expectedResultJson)
     {
         // Arrange
-        var words = JsonHelper<string>.DeserializeToArray(wordsJsonArray);
-        var queries = JsonHelper<int>.DeserializeToJaggedArray(queriesJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var words = JsonHelper<string>.DeserializeToArray(wordsJson);
+        var queries = JsonHelper<int>.DeserializeToJaggedArray(queriesJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

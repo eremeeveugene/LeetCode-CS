@@ -20,10 +20,10 @@ public abstract class CountServersThatCommunicateTestsBase<T> where T : ICountSe
     [DataRow("[[1,0],[0,1]]", 0)]
     [DataRow("[[1,0],[1,1]]", 3)]
     [DataRow("[[1,1,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1]]", 4)]
-    public void CountServers_WithGridInput_ReturnsNumberOfCommunicatingServers(string numsJsonArray, int expectedResult)
+    public void CountServers_WithGridInput_ReturnsNumberOfCommunicatingServers(string numsJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(numsJsonArray);
+        var grid = JsonHelper<int>.DeserializeToJaggedArray(numsJson);
 
         var solution = new T();
 

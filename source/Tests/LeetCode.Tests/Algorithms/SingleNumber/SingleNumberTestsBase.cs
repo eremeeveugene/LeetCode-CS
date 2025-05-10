@@ -20,10 +20,10 @@ public abstract class SingleNumberTestsBase<T> where T : ISingleNumber, new()
     [DataRow("[2,2,1]", 1)]
     [DataRow("[4,1,2,1,2]", 4)]
     [DataRow("[1]", 1)]
-    public void SingleNumber_WithIntegerArray_ReturnsSingleNumber(string numsJsonArray, int expectedResult)
+    public void SingleNumber_WithIntegerArray_ReturnsSingleNumber(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

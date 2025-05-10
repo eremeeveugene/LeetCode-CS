@@ -27,12 +27,12 @@ public abstract class PathWithMaximumProbabilityTestsBase<T> where T : IPathWith
         "[0.1,0.2,0.5,0.6,0.3,0.7,0.8,0.9,0.4,0.5]", 0, 9, 0.03780)]
     [DataRow(15, "[[0,1],[0,2],[1,3],[2,4],[3,5],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14]]",
         "[0.4,0.5,0.6,0.7,0.3,0.9,0.2,0.1,0.8,0.9,0.7,0.6,0.5,0.4,0.3]", 0, 14, 0.00011)]
-    public void MaxProbability_GivenGraphAndProbabilities_ReturnsMaxProbability(int n, string edgesJsonArray,
-        string successProbabilityJsonArray, int startNode, int endNode, double expectedResult)
+    public void MaxProbability_GivenGraphAndProbabilities_ReturnsMaxProbability(int n, string edgesJson,
+        string successProbabilityJson, int startNode, int endNode, double expectedResult)
     {
         // Arrange
-        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJsonArray);
-        var successProbability = JsonHelper<double>.DeserializeToArray(successProbabilityJsonArray);
+        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJson);
+        var successProbability = JsonHelper<double>.DeserializeToArray(successProbabilityJson);
 
         var solution = new T();
 

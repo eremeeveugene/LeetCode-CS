@@ -21,13 +21,13 @@ public abstract class WordSubsetsTestsBase<T> where T : IWordSubsets, new()
         "[\"facebook\",\"google\",\"leetcode\"]")]
     [DataRow("[\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"]", "[\"l\",\"e\"]",
         "[\"apple\",\"google\",\"leetcode\"]")]
-    public void WordSubsets_WithWords1AndWords2_ReturnsMatchingSubset(string words1JsonArray, string words2JsonArray,
-        string expectedResultJsonArray)
+    public void WordSubsets_WithWords1AndWords2_ReturnsMatchingSubset(string words1Json, string words2Json,
+        string expectedResultJson)
     {
         // Arrange
-        var words1 = JsonHelper<string>.DeserializeToArray(words1JsonArray);
-        var words2 = JsonHelper<string>.DeserializeToArray(words2JsonArray);
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJsonArray);
+        var words1 = JsonHelper<string>.DeserializeToArray(words1Json);
+        var words2 = JsonHelper<string>.DeserializeToArray(words2Json);
+        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

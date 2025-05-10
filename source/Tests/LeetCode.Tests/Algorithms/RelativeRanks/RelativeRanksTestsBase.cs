@@ -19,12 +19,12 @@ public abstract class RelativeRanksTestsBase<T> where T : IRelativeRanks, new()
     [TestMethod]
     [DataRow("[5,4,3,2,1]", "[\"Gold Medal\",\"Silver Medal\",\"Bronze Medal\",\"4\",\"5\"]")]
     [DataRow("[10,3,8,9,4]", "[\"Gold Medal\",\"5\",\"Bronze Medal\",\"Silver Medal\",\"4\"]")]
-    public void FindRelativeRanks_GivenScores_ReturnsCorrespondingMedalsAndPositions(string scoreJsonArray,
-        string expectedResultJsonArray)
+    public void FindRelativeRanks_GivenScores_ReturnsCorrespondingMedalsAndPositions(string scoreJson,
+        string expectedResultJson)
     {
         // Arrange
-        var score = JsonHelper<int>.DeserializeToArray(scoreJsonArray);
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJsonArray);
+        var score = JsonHelper<int>.DeserializeToArray(scoreJson);
+        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

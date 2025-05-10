@@ -19,13 +19,13 @@ public abstract class IntersectionOfTwoArrays2TestsBase<T> where T : IIntersecti
     [TestMethod]
     [DataRow("[1, 2, 2, 1]", "[2, 2]", "[2, 2]")]
     [DataRow("[4, 9, 5]", "[9, 4, 9, 8, 4]", "[4, 9]")]
-    public void Intersect_WithTwoArrays_ReturnsCommonElements(string nums1JsonArray, string nums2JsonArray,
-        string expectedResultJsonArray)
+    public void Intersect_WithTwoArrays_ReturnsCommonElements(string nums1Json, string nums2Json,
+        string expectedResultJson)
     {
         // Arrange
-        var nums1 = JsonHelper<int>.DeserializeToArray(nums1JsonArray);
-        var nums2 = JsonHelper<int>.DeserializeToArray(nums2JsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums1 = JsonHelper<int>.DeserializeToArray(nums1Json);
+        var nums2 = JsonHelper<int>.DeserializeToArray(nums2Json);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

@@ -22,10 +22,10 @@ public abstract class SmallestStringStartingFromLeafTestsBase<T> where T : ISmal
     [DataRow("[25,1,3,1,3,0,2]", "adz")]
     [DataRow("[2,2,1,null,1,0,null,0]", "abc")]
     public void SmallestFromLeaf_WithDifferentTreeConfigurations_ReturnsSmallestLexicographicalStringFromLeaf(
-        string rootJsonArray, string? expectedResult)
+        string rootJson, string? expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var arrayRoot = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(arrayRoot);
 
         var solution = new T();

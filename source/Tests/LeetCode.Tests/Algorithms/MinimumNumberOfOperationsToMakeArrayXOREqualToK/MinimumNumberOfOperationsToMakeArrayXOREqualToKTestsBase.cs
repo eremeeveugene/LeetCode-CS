@@ -20,11 +20,11 @@ public abstract class MinimumNumberOfOperationsToMakeArrayXOREqualToKTestsBase<T
     [TestMethod]
     [DataRow("[2,1,3,4]", 1, 2)]
     [DataRow("[2,0,2,0]", 0, 0)]
-    public void MinOperations_WithNumsArrayAndK_ReturnsMinOperationsCount(string numsJsonArray, int k,
+    public void MinOperations_WithNumsArrayAndK_ReturnsMinOperationsCount(string numsJson, int k,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

@@ -21,11 +21,11 @@ public abstract class OpenTheLockTestsBase<T> where T : IOpenTheLock, new()
     [DataRow("[\"0201\",\"0101\",\"0102\",\"1212\",\"2002\"]", "0202", 6)]
     [DataRow("[\"8888\"]", "0009", 1)]
     [DataRow("[\"8887\",\"8889\",\"8878\",\"8898\",\"8788\",\"8988\",\"7888\",\"9888\"]", "8888", -1)]
-    public void OpenLock_GivenDeadendsAndTarget_ReturnsMinimumTurnsOrMinusOne(string deadendsJsonArray, string target,
+    public void OpenLock_GivenDeadendsAndTarget_ReturnsMinimumTurnsOrMinusOne(string deadendsJson, string target,
         int expectedResult)
     {
         // Arrange
-        var deadends = JsonHelper<string>.DeserializeToArray(deadendsJsonArray);
+        var deadends = JsonHelper<string>.DeserializeToArray(deadendsJson);
 
         var solution = new T();
 

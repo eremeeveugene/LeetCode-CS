@@ -26,11 +26,11 @@ public abstract class SubarraySumsDivisibleByKTestsBase<T> where T : ISubarraySu
     [DataRow("[-5,-10,5]", 5, 6)]
     [DataRow("[0,0,0]", 5, 6)]
     [DataRow("[1,2,3,4,5]", 1, 15)]
-    public void SubarraysDivByK_GivenArrayAndDivisor_ReturnsCountOfSubarraysDivisibleByK(string numsJsonArray, int k,
+    public void SubarraysDivByK_GivenArrayAndDivisor_ReturnsCountOfSubarraysDivisibleByK(string numsJson, int k,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

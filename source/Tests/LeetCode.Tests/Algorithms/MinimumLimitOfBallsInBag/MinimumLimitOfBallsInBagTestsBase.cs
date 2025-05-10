@@ -19,11 +19,11 @@ public abstract class MinimumLimitOfBallsInBagTestsBase<T> where T : IMinimumLim
     [TestMethod]
     [DataRow("[9]", 2, 3)]
     [DataRow("[2,4,8,2]", 4, 2)]
-    public void MinimumSize_WithNumsArrayAndMaxOperations_ReturnsMinimumPossibleSize(string numsJsonArray,
+    public void MinimumSize_WithNumsArrayAndMaxOperations_ReturnsMinimumPossibleSize(string numsJson,
         int maxOperations, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

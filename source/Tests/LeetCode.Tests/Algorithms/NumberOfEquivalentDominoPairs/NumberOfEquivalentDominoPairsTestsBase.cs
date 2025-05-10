@@ -20,11 +20,11 @@ public abstract class NumberOfEquivalentDominoPairsTestsBase<T> where T : INumbe
     [DataRow("[[1,2],[2,1],[3,4],[5,6]]", 1)]
     [DataRow("[[1,2],[1,2],[1,1],[1,2],[2,2]]", 3)]
     [DataRow("[[1,1],[2,2],[1,1],[1,2],[1,2],[1,1]]", 4)]
-    public void NumEquivDominoPairs_WithDominoPairsArray_ReturnsCorrectEquivalentPairCount(string dominoesJsonArray,
+    public void NumEquivDominoPairs_WithDominoPairsArray_ReturnsCorrectEquivalentPairCount(string dominoesJson,
         int expectedResult)
     {
         // Arrange
-        var dominoes = JsonHelper<int>.DeserializeToJaggedArray(dominoesJsonArray);
+        var dominoes = JsonHelper<int>.DeserializeToJaggedArray(dominoesJson);
 
         var solution = new T();
 

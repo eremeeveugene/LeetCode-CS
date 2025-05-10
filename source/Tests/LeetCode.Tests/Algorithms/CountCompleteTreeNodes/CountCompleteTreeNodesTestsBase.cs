@@ -22,10 +22,10 @@ public abstract class CountCompleteTreeNodesTestsBase<T> where T : ICountComplet
     [DataRow("[1]", 1)]
     [DataRow("[1,2,3,4]", 4)]
     [DataRow("[1,2,3,4,5,6]", 6)]
-    public void CountNodes_GivenJsonArrayOfTreeNodes_ReturnsCorrectNodeCount(string rootJsonArray, int expectedResult)
+    public void CountNodes_GivenJsonOfTreeNodes_ReturnsCorrectNodeCount(string rootJson, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();

@@ -20,12 +20,12 @@ public abstract class FindAllDuplicatesInAnArrayTestsBase<T> where T : IFindAllD
     [DataRow("[4, 3, 2, 7, 8, 2, 3, 1]", "[2, 3]")]
     [DataRow("[1, 1, 2]", "[1]")]
     [DataRow("[1]", "[]")]
-    public void FindDuplicates_WithInputArray_ReturnsExpectedDuplicates(string numsJsonArray,
-        string expectedResultJsonArray)
+    public void FindDuplicates_WithInputArray_ReturnsExpectedDuplicates(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

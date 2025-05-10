@@ -25,16 +25,16 @@ public abstract class FindElementsInContaminatedBinaryTreeTestsBase<T>
     [DataRow("[-1,null,-1]", "[\"find\",\"find\"]", "[[1],[2]]", "[false,true]")]
     [DataRow("[-1,-1,-1,-1,-1]", "[\"find\",\"find\",\"find\"]", "[[1],[3],[5]]", "[true,true,false]")]
     [DataRow("[-1,null,-1,-1,null,-1]", "[\"find\",\"find\",\"find\",\"find\"]", "[[2],[3],[4],[5]]", "[true,false,false,true]")]
-    public void Find_WithVariousTreeStructures_ReturnsIfElementsFound(string rootJsonArray, string methodsJsonArray,
-        string argumentsJsonArray, string expectedResultJsonArray)
+    public void Find_WithVariousTreeStructures_ReturnsIfElementsFound(string rootJson, string methodsJson,
+        string argumentsJson, string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
 
-        var methods = JsonHelper<string>.DeserializeToArray(methodsJsonArray);
-        var arguments = JsonHelper<int>.DeserializeToJaggedArray(argumentsJsonArray);
-        var expectedResult = JsonHelper<bool>.DeserializeToArray(expectedResultJsonArray);
+        var methods = JsonHelper<string>.DeserializeToArray(methodsJson);
+        var arguments = JsonHelper<int>.DeserializeToJaggedArray(argumentsJson);
+        var expectedResult = JsonHelper<bool>.DeserializeToArray(expectedResultJson);
 
         var solutionFactory = new T();
         var solution = solutionFactory.Create(root);

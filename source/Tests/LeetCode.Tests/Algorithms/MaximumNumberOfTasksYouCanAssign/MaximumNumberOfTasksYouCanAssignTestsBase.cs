@@ -22,12 +22,12 @@ public abstract class MaximumNumberOfTasksYouCanAssignTestsBase<T>
     [DataRow("[5,4]", "[0,0,0]", 1, 5, 1)]
     [DataRow("[10,15,30]", "[0,10,10,10,10]", 3, 10, 2)]
     [DataRow("[5,9,8,5,9]", "[1,6,4,2,6]", 1, 5, 3)]
-    public void MaxTaskAssign_WithGivenTasksWorkersPillsAndStrength_ReturnsMaxAssignableTasks(string tasksJsonArray,
-        string workersJsonArray, int pills, int strength, int expectedResult)
+    public void MaxTaskAssign_WithGivenTasksWorkersPillsAndStrength_ReturnsMaxAssignableTasks(string tasksJson,
+        string workersJson, int pills, int strength, int expectedResult)
     {
         // Arrange
-        var tasks = JsonHelper<int>.DeserializeToArray(tasksJsonArray);
-        var workers = JsonHelper<int>.DeserializeToArray(workersJsonArray);
+        var tasks = JsonHelper<int>.DeserializeToArray(tasksJson);
+        var workers = JsonHelper<int>.DeserializeToArray(workersJson);
 
         var solution = new T();
 

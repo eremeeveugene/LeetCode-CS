@@ -26,12 +26,12 @@ public abstract class InvertBinaryTreeTestsBase<T> where T : IInvertBinaryTree, 
     [DataRow("[4,2,7,1,3,6,9]", "[4,7,2,9,6,3,1]")]
     [DataRow("[4,2,7,1,3,null,9]", "[4,7,2,9,null,3,1]")]
     [DataRow("[4,2,7,1,3,6]", "[4,7,2,null,6,3,1]")]
-    public void InvertTree_GivenBinaryTree_ReturnsInvertedTree(string rootJsonArray, string expectedResultJsonArray)
+    public void InvertTree_GivenBinaryTree_ReturnsInvertedTree(string rootJson, string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();

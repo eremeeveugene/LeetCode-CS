@@ -19,13 +19,13 @@ public abstract class RelativeSortArrayTestsBase<T> where T : IRelativeSortArray
     [TestMethod]
     [DataRow("[2,3,1,3,2,4,6,7,9,2,19]", "[2,1,4,3,9,6]", "[2,2,2,1,4,3,3,9,6,7,19]")]
     [DataRow("[28,6,22,8,44,17]", "[22,28,8,6]", "[22,28,8,6,17,44]")]
-    public void RelativeSortArray_WithGivenArrays_ReturnsCorrectlySortedArray(string arr1JsonArray,
-        string arr2JsonArray, string expectedResultJsonArray)
+    public void RelativeSortArray_WithGivenArrays_ReturnsCorrectlySortedArray(string arr1Json,
+        string arr2Json, string expectedResultJson)
     {
         // Arrange
-        var arr1 = JsonHelper<int>.DeserializeToArray(arr1JsonArray);
-        var arr2 = JsonHelper<int>.DeserializeToArray(arr2JsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var arr1 = JsonHelper<int>.DeserializeToArray(arr1Json);
+        var arr2 = JsonHelper<int>.DeserializeToArray(arr2Json);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

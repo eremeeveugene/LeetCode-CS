@@ -22,11 +22,11 @@ public abstract class MinimumNumberOfArrowsToBurstBalloonsTestsBase<T>
     [DataRow("[[1,2],[3,4],[5,6],[7,8]]", 4)]
     [DataRow("[[1,2],[2,3],[3,4],[4,5]]", 2)]
     [DataRow("[[3,9],[7,12],[3,8],[6,8],[9,10],[2,9],[0,9],[3,9],[0,6],[2,8]]", 2)]
-    public void FindMinArrowShots_GivenDifferentPointCombinations_ReturnsMinimumArrowsRequired(string pointsJsonArray,
+    public void FindMinArrowShots_GivenDifferentPointCombinations_ReturnsMinimumArrowsRequired(string pointsJson,
         int expectedResult)
     {
         // Arrange
-        var points = JsonHelper<int>.DeserializeToJaggedArray(pointsJsonArray);
+        var points = JsonHelper<int>.DeserializeToJaggedArray(pointsJson);
 
         var solution = new T();
 

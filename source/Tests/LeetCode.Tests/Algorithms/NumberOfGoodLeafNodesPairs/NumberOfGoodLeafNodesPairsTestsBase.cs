@@ -21,11 +21,11 @@ public abstract class NumberOfGoodLeafNodesPairsTestsBase<T> where T : INumberOf
     [DataRow("[1,2,3,null,4]", 3, 1)]
     [DataRow("[1,2,3,4,5,6,7]", 3, 2)]
     [DataRow("[7,1,4,6,null,5,3,null,null,null,null,null,2]", 3, 1)]
-    public void CountPairs_WithTreeAndDistance_ReturnsCorrectNumberOfGoodLeafNodePairs(string rootJsonArray,
+    public void CountPairs_WithTreeAndDistance_ReturnsCorrectNumberOfGoodLeafNodePairs(string rootJson,
         int distance, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();

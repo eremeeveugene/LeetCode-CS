@@ -19,10 +19,10 @@ public abstract class ThreeConsecutiveOddsTestsBase<T> where T : IThreeConsecuti
     [TestMethod]
     [DataRow("[2, 6, 4, 1]", false)]
     [DataRow("[1, 2, 34, 3, 4, 5, 7, 23, 12]", true)]
-    public void ThreeConsecutiveOdds_WithVariousArrays_ReturnsExpectedResult(string arrJsonArray, bool expectedResult)
+    public void ThreeConsecutiveOdds_WithVariousArrays_ReturnsExpectedResult(string arrJson, bool expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
 
         var solution = new T();
 

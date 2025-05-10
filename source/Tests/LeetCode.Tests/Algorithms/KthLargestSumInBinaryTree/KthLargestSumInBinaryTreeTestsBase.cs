@@ -21,11 +21,11 @@ public abstract class KthLargestSumInBinaryTreeTestsBase<T> where T : IKthLarges
     [TestMethod]
     [DataRow("[5,8,9,2,1,3,7,4,6]", 2, 13)]
     [DataRow("[1,2,null,3]", 1, 3)]
-    public void KthLargestLevelSum_GivenTreeNodeArrayAndK_ReturnsCorrectLevelSum(string rootJsonArray, int k,
+    public void KthLargestLevelSum_GivenTreeNodeArrayAndK_ReturnsCorrectLevelSum(string rootJson, int k,
         long expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
 
         var solution = new T();

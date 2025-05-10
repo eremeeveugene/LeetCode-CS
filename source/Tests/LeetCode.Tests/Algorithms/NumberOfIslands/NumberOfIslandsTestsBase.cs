@@ -23,10 +23,10 @@ public abstract class NumberOfIslandsTestsBase<T> where T : INumberOfIslands, ne
     [DataRow(
         "[[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"1\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"1\",\"1\"]]",
         3)]
-    public void NumIslands_GivenJaggedArrayGrid_ReturnsNumberOfIslands(string gridJsonArray, int expectedResult)
+    public void NumIslands_GivenJaggedArrayGrid_ReturnsNumberOfIslands(string gridJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<char>.DeserializeToJaggedArray(gridJsonArray);
+        var grid = JsonHelper<char>.DeserializeToJaggedArray(gridJson);
 
         var solution = new T();
 

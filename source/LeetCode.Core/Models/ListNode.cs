@@ -16,11 +16,17 @@ namespace LeetCode.Core.Models;
 /// <summary>
 ///     Definition for singly-linked list
 /// </summary>
-public class ListNode(int val = 0, ListNode? next = null)
+public class ListNode
 {
-    public ListNode? next = next;
+    public ListNode? next;
 
-    public int val = val;
+    public int val;
+
+    public ListNode(int val = 0, ListNode? next = null)
+    {
+        this.next = next;
+        this.val = val;
+    }
 
     public static ListNode? ToListNode(int[] array)
     {

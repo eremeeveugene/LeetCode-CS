@@ -20,11 +20,11 @@ public abstract class CheckIfItIsStraightLineTestsBase<T> where T : ICheckIfItIs
     [DataRow("[[0,1],[2,4],[3,3]]", false)]
     [DataRow("[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]", true)]
     [DataRow("[[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]", false)]
-    public void CheckStraightLine_WithGivenCoordinates_ReturnsIfPointsFormStraightLine(string coordinatesJsonArray,
+    public void CheckStraightLine_WithGivenCoordinates_ReturnsIfPointsFormStraightLine(string coordinatesJson,
         bool expectedResult)
     {
         // Arrange
-        var coordinates = JsonHelper<int>.DeserializeToJaggedArray(coordinatesJsonArray);
+        var coordinates = JsonHelper<int>.DeserializeToJaggedArray(coordinatesJson);
 
         var solution = new T();
 

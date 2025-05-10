@@ -20,12 +20,12 @@ public abstract class ShuffleTheArrayTestsBase<T> where T : IShuffleTheArray, ne
     [DataRow("[2,5,1,3,4,7]", 3, "[2,3,5,4,1,7]")]
     [DataRow("[1,2,3,4,4,3,2,1]", 4, "[1,4,2,3,3,2,4,1]")]
     [DataRow("[1,1,2,2]", 2, "[1,2,1,2]")]
-    public void Shuffle_WithArrayAndSplitIndex_ReturnsShuffledArray(string numsJsonArray, int n,
-        string expectedResultJsonArray)
+    public void Shuffle_WithArrayAndSplitIndex_ReturnsShuffledArray(string numsJson, int n,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

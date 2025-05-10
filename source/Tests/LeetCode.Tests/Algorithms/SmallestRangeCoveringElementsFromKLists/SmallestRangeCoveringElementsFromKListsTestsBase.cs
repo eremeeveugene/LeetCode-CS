@@ -21,12 +21,12 @@ public abstract class SmallestRangeCoveringElementsFromKListsTestsBase<T>
     [DataRow("[[10],[11]]", "[10,11]")]
     [DataRow("[[4,10,15,24,26],[0,9,12,20],[5,18,22,30]]", "[20,24]")]
     [DataRow("[[1,2,3],[1,2,3],[1,2,3]]", "[1,1]")]
-    public void SmallestRange_WithNestedIntegerArrays_ReturnsCorrectRange(string numsJsonArray,
-        string expectedResultJsonArray)
+    public void SmallestRange_WithNestedIntegerArrays_ReturnsCorrectRange(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToJaggedList(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToJaggedList(numsJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

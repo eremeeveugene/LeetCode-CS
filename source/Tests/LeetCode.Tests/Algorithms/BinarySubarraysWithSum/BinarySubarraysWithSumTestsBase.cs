@@ -19,11 +19,11 @@ public abstract class BinarySubarraysWithSumTestsBase<T> where T : IBinarySubarr
     [TestMethod]
     [DataRow("[1, 0, 1, 0, 1]", 2, 4)]
     [DataRow("[0, 0, 0, 0, 0]", 0, 15)]
-    public void NumSubarraysWithSum_GivenBinaryArrayAndGoal_ReturnsExpectedCount(string numsJsonArray, int goal,
+    public void NumSubarraysWithSum_GivenBinaryArrayAndGoal_ReturnsExpectedCount(string numsJson, int goal,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

@@ -22,14 +22,14 @@ public abstract class SplitLinkedListInPartsTestsBase<T> where T : ISplitLinkedL
     [DataRow("[]", 5, "[[],[],[],[],[]]")]
     [DataRow("[1,2,3]", 5, "[[1],[2],[3],[],[]]")]
     [DataRow("[1,2,3,4,5,6,7,8,9,10]", 3, "[[1,2,3,4],[5,6,7],[8,9,10]]")]
-    public void SplitListToParts_WithHeadArrayAndK_ReturnsListOfParts(string headJsonArray, int k,
-        string expectedResultJsonArray)
+    public void SplitListToParts_WithHeadArrayAndK_ReturnsListOfParts(string headJson, int k,
+        string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
+        var headArray = JsonHelper<int>.DeserializeToArray(headJson);
         var head = ListNode.ToListNode(headArray);
 
-        var expectedResultJaggedArray = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
+        var expectedResultJaggedArray = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJson);
 
         var expectedResult = new ListNode?[k];
 

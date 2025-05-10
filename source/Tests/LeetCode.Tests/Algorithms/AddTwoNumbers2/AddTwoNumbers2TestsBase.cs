@@ -23,17 +23,17 @@ public abstract class AddTwoNumbers2TestsBase<T> where T : IAddTwoNumbers2, new(
     [DataRow("[0]", "[0]", "[0]")]
     [DataRow("[7,2,4,3]", "[5, 6, 4]", "[7,8,0,7]")]
     [DataRow("[2,4,3]", "[5, 6, 4]", "[8,0,7]")]
-    public void AddTwoNumbers_WithTwoLinkedLists_ReturnsSumAsLinkedList(string l1JsonArray, string l2JsonArray,
-        string expectedResultJsonArray)
+    public void AddTwoNumbers_WithTwoLinkedLists_ReturnsSumAsLinkedList(string l1Json, string l2Json,
+        string expectedResultJson)
     {
         // Arrange
-        var l1Array = JsonHelper<int>.DeserializeToArray(l1JsonArray);
+        var l1Array = JsonHelper<int>.DeserializeToArray(l1Json);
         var l1 = ListNode.ToListNode(l1Array) ?? throw new ListNodeBuildException();
 
-        var l2Array = JsonHelper<int>.DeserializeToArray(l2JsonArray);
+        var l2Array = JsonHelper<int>.DeserializeToArray(l2Json);
         var l2 = ListNode.ToListNode(l2Array) ?? throw new ListNodeBuildException();
 
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

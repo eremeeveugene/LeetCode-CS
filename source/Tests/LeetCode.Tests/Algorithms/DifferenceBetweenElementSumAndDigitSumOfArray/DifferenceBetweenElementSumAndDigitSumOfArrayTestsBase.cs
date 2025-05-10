@@ -20,10 +20,10 @@ public abstract class DifferenceBetweenElementSumAndDigitSumOfArrayTestsBase<T>
     [TestMethod]
     [DataRow("[1, 15, 6, 3]", 9)]
     [DataRow("[1, 2, 3, 4]", 0)]
-    public void DifferenceOfSum_GivenArray_ReturnsExpectedDifference(string numsJsonArray, int expectedResult)
+    public void DifferenceOfSum_GivenArray_ReturnsExpectedDifference(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

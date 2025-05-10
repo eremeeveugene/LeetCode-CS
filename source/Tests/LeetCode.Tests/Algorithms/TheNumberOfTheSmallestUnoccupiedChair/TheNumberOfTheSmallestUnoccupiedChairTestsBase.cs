@@ -24,11 +24,11 @@ public abstract class TheNumberOfTheSmallestUnoccupiedChairTestsBase<T>
     [DataRow(
         "[[33,35],[26,29],[9,28],[4,31],[8,10],[32,34],[15,24],[27,39],[14,36],[1,14],[25,39],[5,27],[6,15],[2,38],[19,36],[24,34],[3,26]]",
         0, 3)]
-    public void SmallestChair_WithSeatingTimesAndTargetFriend_ReturnsCorrectChair(string timesJsonArray,
+    public void SmallestChair_WithSeatingTimesAndTargetFriend_ReturnsCorrectChair(string timesJson,
         int targetFriend, int expectedResult)
     {
         // Arrange
-        var times = JsonHelper<int>.DeserializeToJaggedArray(timesJsonArray);
+        var times = JsonHelper<int>.DeserializeToJaggedArray(timesJson);
 
         var solution = new T();
 

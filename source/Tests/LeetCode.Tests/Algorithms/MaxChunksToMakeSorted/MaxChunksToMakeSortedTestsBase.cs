@@ -19,11 +19,11 @@ public abstract class MaxChunksToMakeSortedTestsBase<T> where T : IMaxChunksToMa
     [TestMethod]
     [DataRow("[4,3,2,1,0]", 1)]
     [DataRow("[1,0,2,3,4]", 4)]
-    public void MaxChunksToSorted_WithUnsortedArray_ReturnsMaximumNumberOfChunks(string arrJsonArray,
+    public void MaxChunksToSorted_WithUnsortedArray_ReturnsMaximumNumberOfChunks(string arrJson,
         int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
 
         var solution = new T();
 

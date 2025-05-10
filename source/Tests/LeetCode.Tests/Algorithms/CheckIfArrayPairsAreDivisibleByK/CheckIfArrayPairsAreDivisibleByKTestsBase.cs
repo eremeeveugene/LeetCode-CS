@@ -25,11 +25,11 @@ public abstract class CheckIfArrayPairsAreDivisibleByKTestsBase<T> where T : ICh
     [DataRow("[987654321,-987654321,765432100,-765432100]", 99999, true)]
     [DataRow("[-1,0,-2,2,-3,3]", 4, false)]
     [DataRow("[-2,-4,-9,-3,-1,-17]", 6, true)]
-    public void CanArrange_WithArrayAndDivisor_ReturnsIfPairsCanBeArranged(string arrJsonArray, int k,
+    public void CanArrange_WithArrayAndDivisor_ReturnsIfPairsCanBeArranged(string arrJson, int k,
         bool expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
 
         var solution = new T();
 

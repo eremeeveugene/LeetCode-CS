@@ -19,10 +19,10 @@ public abstract class CountNumberOfBadPairsTestsBase<T> where T : ICountNumberOf
     [TestMethod]
     [DataRow("[4,1,3,3]", 5)]
     [DataRow("[1,2,3,4,5]", 0)]
-    public void CountBadPairs_GivenArray_ReturnsCountOfBadPairs(string numsJsonArray, int expectedResult)
+    public void CountBadPairs_GivenArray_ReturnsCountOfBadPairs(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

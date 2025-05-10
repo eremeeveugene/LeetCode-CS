@@ -14,4 +14,10 @@ using LeetCode.Algorithms.DesignAnOrderedStream;
 namespace LeetCode.Tests.Algorithms.DesignAnOrderedStream;
 
 [TestClass]
-public class DesignAnOrderedStreamArrayTests : DesignAnOrderedStreamTestsBase<DesignAnOrderedStreamArrayFactory>;
+public class DesignAnOrderedStreamArrayTests : DesignAnOrderedStreamTestsBase
+{
+    protected override IDesignAnOrderedStream GetDesignAnOrderedStream(int size)
+    {
+        return new DesignAnOrderedStreamArray(size);
+    }
+}

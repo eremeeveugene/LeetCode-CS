@@ -24,15 +24,15 @@ public abstract class MergeTwoSortedListsTestsBase<T> where T : IMergeTwoSortedL
     [DataRow("[0]", "[]", "[0]")]
     [DataRow("[1,2,4]", "[1,3,4]", "[1,1,2,3,4,4]")]
     [DataRow("[-9,3]", "[5,7]", "[-9,3,5,7]")]
-    public void MergeTwoLists_WithTwoIntegerArrays_ReturnsMergedSortedLinkedList(string list1JsonArray,
-        string list2JsonArray, string expectedResultJsonArray)
+    public void MergeTwoLists_WithTwoIntegerArrays_ReturnsMergedSortedLinkedList(string list1Json,
+        string list2Json, string expectedResultJson)
     {
         // Arrange
-        var list1Array = JsonHelper<int>.DeserializeToArray(list1JsonArray);
+        var list1Array = JsonHelper<int>.DeserializeToArray(list1Json);
         var list1 = ListNode.ToListNode(list1Array);
-        var list2Array = JsonHelper<int>.DeserializeToArray(list2JsonArray);
+        var list2Array = JsonHelper<int>.DeserializeToArray(list2Json);
         var list2 = ListNode.ToListNode(list2Array);
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

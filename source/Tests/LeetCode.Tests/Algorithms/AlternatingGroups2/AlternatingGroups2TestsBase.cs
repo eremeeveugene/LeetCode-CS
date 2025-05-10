@@ -20,11 +20,11 @@ public abstract class AlternatingGroups2TestsBase<T> where T : IAlternatingGroup
     [DataRow("[0,1,0,1,0]", 3, 3)]
     [DataRow("[0,1,0,0,1,0,1]", 6, 2)]
     [DataRow("[1,1,0,1]", 4, 0)]
-    public void NumberOfAlternatingGroups_WithColorsAndK_ReturnsTheNumberOfAlternatingGroups(string colorsJsonArray,
+    public void NumberOfAlternatingGroups_WithColorsAndK_ReturnsTheNumberOfAlternatingGroups(string colorsJson,
         int k, int expectedResult)
     {
         // Arrange
-        var colors = JsonHelper<int>.DeserializeToArray(colorsJsonArray);
+        var colors = JsonHelper<int>.DeserializeToArray(colorsJson);
 
         var solution = new T();
 

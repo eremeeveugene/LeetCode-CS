@@ -23,13 +23,13 @@ public abstract class InsertGreatestCommonDivisorsInLinkedListTestsBase<T>
     [TestMethod]
     [DataRow("[7]", "[7]")]
     [DataRow("[18,6,10,3]", "[18,6,6,2,10,1,3]")]
-    public void InsertGreatestCommonDivisors_GivenLinkedList_ReturnsListWithGCDInserted(string headJsonArray,
-        string expectedResultJsonArray)
+    public void InsertGreatestCommonDivisors_GivenLinkedList_ReturnsListWithGCDInserted(string headJson,
+        string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
+        var headArray = JsonHelper<int>.DeserializeToArray(headJson);
         var head = ListNode.ToListNode(headArray) ?? throw new ListNodeBuildException();
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

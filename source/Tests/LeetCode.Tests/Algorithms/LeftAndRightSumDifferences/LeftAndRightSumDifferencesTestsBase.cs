@@ -19,12 +19,12 @@ public abstract class LeftAndRightSumDifferencesTestsBase<T> where T : ILeftAndR
     [TestMethod]
     [DataRow("[1]", "[0]")]
     [DataRow("[10, 4, 8, 3]", "[15, 1, 11, 22]")]
-    public void LeftRightDifference_WithGivenNumbers_ReturnsCorrectDifferences(string numsJsonArray,
-        string expectedResultJsonArray)
+    public void LeftRightDifference_WithGivenNumbers_ReturnsCorrectDifferences(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

@@ -19,10 +19,10 @@ public abstract class MaximumNumberOfMovesInGridTestsBase<T> where T : IMaximumN
     [TestMethod]
     [DataRow("[[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]", 3)]
     [DataRow("[[3,2,4],[2,1,9],[1,1,7]]", 0)]
-    public void MaxMoves_WithGridInput_ReturnsMaximumMoves(string gridJsonArray, int expectedResult)
+    public void MaxMoves_WithGridInput_ReturnsMaximumMoves(string gridJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJsonArray);
+        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJson);
 
         var solution = new T();
 

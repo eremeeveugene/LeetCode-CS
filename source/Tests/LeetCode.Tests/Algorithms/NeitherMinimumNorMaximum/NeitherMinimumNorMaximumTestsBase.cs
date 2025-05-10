@@ -21,10 +21,10 @@ public abstract class NeitherMinimumNorMaximumTestsBase<T> where T : INeitherMin
     [DataRow("[1,2]", -1)]
     [DataRow("[2,1,3]", 2)]
     [DataRow("[3,30,24]", 24)]
-    public void FindNonMinOrMax_WithIntArray_ReturnsNonExtremeValue(string numsJsonArray, int expectedResult)
+    public void FindNonMinOrMax_WithIntArray_ReturnsNonExtremeValue(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

@@ -21,12 +21,12 @@ public abstract class FindLargestValueInEachTreeRowTestsBase<T> where T : IFindL
     [DataRow("[]", "[]")]
     [DataRow("[1,2,3]", "[1,3]")]
     [DataRow("[1,3,2,5,3,null,9]", "[1,3,9]")]
-    public void LargestValues_WithTreeRoot_ReturnsListOfRowMaxima(string rootJsonArray, string expectedResultJsonArray)
+    public void LargestValues_WithTreeRoot_ReturnsListOfRowMaxima(string rootJson, string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

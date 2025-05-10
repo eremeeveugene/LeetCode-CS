@@ -20,14 +20,14 @@ public abstract class TwoOutOfThreeTestsBase<T> where T : ITwoOutOfThree, new()
     [DataRow("[1,1,3,2]", "[2,3]", "[3]", "[3,2]")]
     [DataRow("[3,1]", "[2,3]", "[1,2]", "[2,3,1]")]
     [DataRow("[1,2,2]", "[4,3,3]", "[5]", "[]")]
-    public void TwoOutOfThree_WithThreeIntegerArrays_ReturnsValuesPresentInAtLeastTwoArrays(string nums1JsonArray,
-        string nums2JsonArray, string nums3JsonArray, string expectedResultJsonArray)
+    public void TwoOutOfThree_WithThreeIntegerArrays_ReturnsValuesPresentInAtLeastTwoArrays(string nums1Json,
+        string nums2Json, string nums3Json, string expectedResultJson)
     {
         // Arrange
-        var nums1 = JsonHelper<int>.DeserializeToArray(nums1JsonArray);
-        var nums2 = JsonHelper<int>.DeserializeToArray(nums2JsonArray);
-        var nums3 = JsonHelper<int>.DeserializeToArray(nums3JsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums1 = JsonHelper<int>.DeserializeToArray(nums1Json);
+        var nums2 = JsonHelper<int>.DeserializeToArray(nums2Json);
+        var nums3 = JsonHelper<int>.DeserializeToArray(nums3Json);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

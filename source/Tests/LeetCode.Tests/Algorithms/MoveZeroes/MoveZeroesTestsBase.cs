@@ -20,11 +20,11 @@ public abstract class MoveZeroesTestsBase<T> where T : IMoveZeroes, new()
     [DataRow("[0]", "[0]")]
     [DataRow("[0,0,1]", "[1,0,0]")]
     [DataRow("[0,1,0,3,12]", "[1,3,12,0,0]")]
-    public void MoveZeroes_WhenCalled_MovesAllZeroesToEnd(string numsJsonArray, string expectedResultJsonArray)
+    public void MoveZeroes_WhenCalled_MovesAllZeroesToEnd(string numsJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

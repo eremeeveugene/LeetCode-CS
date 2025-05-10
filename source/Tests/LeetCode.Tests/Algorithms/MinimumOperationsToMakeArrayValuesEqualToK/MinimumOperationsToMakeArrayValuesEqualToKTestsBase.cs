@@ -21,11 +21,11 @@ public abstract class MinimumOperationsToMakeArrayValuesEqualToKTestsBase<T>
     [DataRow("[5,2,5,4,5]", 2, 2)]
     [DataRow("[2,1,2]", 2, -1)]
     [DataRow("[9,7,5,3]", 1, 4)]
-    public void MinOperations_WithArrayAndTargetK_ReturnsMinimumStepsOrMinusOne(string numsJsonArray, int k,
+    public void MinOperations_WithArrayAndTargetK_ReturnsMinimumStepsOrMinusOne(string numsJson, int k,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

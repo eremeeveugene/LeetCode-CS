@@ -21,10 +21,10 @@ public abstract class MinimumCostToMakeAtLeastOneValidPathInGridTestsBase<T>
     [DataRow("[[1,1,1,1],[2,2,2,2],[1,1,1,1],[2,2,2,2]]", 3)]
     [DataRow("[[1,1,3],[3,2,2],[1,1,4]]", 0)]
     [DataRow("[[1,2],[4,3]]", 1)]
-    public void MinCost_WithGridJsonArray_ReturnsMinimumCost(string gridJsonArray, int expectedResult)
+    public void MinCost_WithGridJson_ReturnsMinimumCost(string gridJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJsonArray);
+        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJson);
 
         var solution = new T();
 

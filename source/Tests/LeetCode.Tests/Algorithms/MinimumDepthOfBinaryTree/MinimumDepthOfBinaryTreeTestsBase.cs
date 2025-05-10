@@ -21,10 +21,10 @@ public abstract class MinimumDepthOfBinaryTreeTestsBase<T> where T : IMinimumDep
     [DataRow("[]", 0)]
     [DataRow("[3,9,20,null,null,15,7]", 2)]
     [DataRow("[2,null,3,null,4,null,5,null,6]", 5)]
-    public void MinDepth_GivenBinaryTreeAsJsonArray_ReturnsMinimumDepth(string rootJsonArray, int expectedResult)
+    public void MinDepth_GivenBinaryTreeAsJson_ReturnsMinimumDepth(string rootJson, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();

@@ -21,10 +21,10 @@ public abstract class MissingNumberTestsBase<T> where T : IMissingNumber, new()
     [DataRow("[3,0,1]", 2)]
     [DataRow("[0,1]", 2)]
     [DataRow("[9,6,4,2,3,5,7,0,1]", 8)]
-    public void MissingNumber_WithIntArray_ReturnsMissingNumber(string numsJsonArray, int expectedResult)
+    public void MissingNumber_WithIntArray_ReturnsMissingNumber(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

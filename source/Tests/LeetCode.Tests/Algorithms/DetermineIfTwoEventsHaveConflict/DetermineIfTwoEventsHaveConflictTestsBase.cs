@@ -20,12 +20,12 @@ public abstract class DetermineIfTwoEventsHaveConflictTestsBase<T> where T : IDe
     [DataRow("[\"01:15\",\"02:00\"]", "[\"02:00\",\"03:00\"]", true)]
     [DataRow("[\"01:00\",\"02:00\"]", "[\"01:20\",\"03:00\"]", true)]
     [DataRow("[\"10:00\",\"11:00\"]", "[\"14:00\",\"15:00\"]", false)]
-    public void HaveConflict_GivenTwoEventTimeRanges_ReturnsIfConflictExists(string event1JsonArray,
-        string event2JsonArray, bool expectedResult)
+    public void HaveConflict_GivenTwoEventTimeRanges_ReturnsIfConflictExists(string event1Json,
+        string event2Json, bool expectedResult)
     {
         // Arrange
-        var event1 = JsonHelper<string>.DeserializeToArray(event1JsonArray);
-        var event2 = JsonHelper<string>.DeserializeToArray(event2JsonArray);
+        var event1 = JsonHelper<string>.DeserializeToArray(event1Json);
+        var event2 = JsonHelper<string>.DeserializeToArray(event2Json);
 
         var solution = new T();
 

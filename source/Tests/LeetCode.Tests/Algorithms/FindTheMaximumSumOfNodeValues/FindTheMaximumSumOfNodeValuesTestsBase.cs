@@ -21,12 +21,12 @@ public abstract class FindTheMaximumSumOfNodeValuesTestsBase<T> where T : IFindT
     [DataRow("[2, 3]", 7, "[[0,1]]", 9)]
     [DataRow("[7, 7, 7, 7, 7, 7]", 3, "[[0,1],[0,2],[0,3],[0,4],[0,5]]", 42)]
     [DataRow("[24, 78, 1, 97, 44]", 6, "[[0,2],[1,2],[4,2],[3,4]]", 260)]
-    public void MaximumValueSum_WithVariousInputs_ReturnsExpectedResult(string numsJsonArray, int k,
-        string edgesJsonArray, long expectedResult)
+    public void MaximumValueSum_WithVariousInputs_ReturnsExpectedResult(string numsJson, int k,
+        string edgesJson, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJson);
 
         var solution = new T();
 

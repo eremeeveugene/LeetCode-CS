@@ -40,14 +40,14 @@ public abstract class AddOneRowToTreeTestsBase<T> where T : IAddOneRowToTree, ne
     [DataRow("[5,3,null,4,null,8,null,9]", 100, 4, "[5,3,null,4,null,100,100,8,null,null,null,9]")]
     [DataRow("[5,3,null,4,null,8,null,9]", 100, 5, "[5,3,null,4,null,8,null,100,100,9]")]
     [DataRow("[5,3,null,4,null,8,null,9]", 100, 6, "[5,3,null,4,null,8,null,9,null,100,100]")]
-    public void AddOneRow_AddsRowToBinaryTreeAtSpecifiedDepthAndValue_VerifiesTreeStructure(string rootJsonArray,
-        int val, int depth, string expectedResultJsonArray)
+    public void AddOneRow_AddsRowToBinaryTreeAtSpecifiedDepthAndValue_VerifiesTreeStructure(string rootJson,
+        int val, int depth, string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();

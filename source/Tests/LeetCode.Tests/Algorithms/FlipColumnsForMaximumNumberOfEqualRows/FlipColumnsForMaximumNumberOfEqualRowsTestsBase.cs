@@ -21,10 +21,10 @@ public abstract class FlipColumnsForMaximumNumberOfEqualRowsTestsBase<T>
     [DataRow("[[0,1],[1,1]]", 1)]
     [DataRow("[[0,1],[1,0]]", 2)]
     [DataRow("[[0,0,0],[0,0,1],[1,1,0]]", 2)]
-    public void MaxEqualRowsAfterFlips_WithMatrix_ReturnsMaxRowsAfterFlips(string matrixJsonArray, int expectedResult)
+    public void MaxEqualRowsAfterFlips_WithMatrix_ReturnsMaxRowsAfterFlips(string matrixJson, int expectedResult)
     {
         // Arrange
-        var matrix = JsonHelper<int>.DeserializeToJaggedArray(matrixJsonArray);
+        var matrix = JsonHelper<int>.DeserializeToJaggedArray(matrixJson);
 
         var solution = new T();
 

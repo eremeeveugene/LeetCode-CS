@@ -20,10 +20,10 @@ public abstract class FindWinnerOnTicTacToeGameTestsBase<T> where T : IFindWinne
     [DataRow("[[0,0],[2,0],[1,1],[2,1],[2,2]]", "A")]
     [DataRow("[[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]]", "B")]
     [DataRow("[[0,0],[1,1],[2,0],[1,0],[1,2],[2,1],[0,1],[0,2],[2,2]]", "Draw")]
-    public void Tictactoe_WithMoveSequence_ReturnsGameOutcome(string movesJsonArray, string expectedResult)
+    public void Tictactoe_WithMoveSequence_ReturnsGameOutcome(string movesJson, string expectedResult)
     {
         // Arrange
-        var moves = JsonHelper<int>.DeserializeToJaggedArray(movesJsonArray);
+        var moves = JsonHelper<int>.DeserializeToJaggedArray(movesJson);
 
         var solution = new T();
 

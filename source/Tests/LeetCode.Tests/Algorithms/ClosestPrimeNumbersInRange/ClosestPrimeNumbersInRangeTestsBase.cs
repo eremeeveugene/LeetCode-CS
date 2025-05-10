@@ -20,10 +20,10 @@ public abstract class ClosestPrimeNumbersInRangeTestsBase<T> where T : IClosestP
     [DataRow(10, 19, "[11,13]")]
     [DataRow(4, 6, "[-1,-1]")]
     public void ClosestPrimes_WithGivenRange_ReturnsClosestPrimePair(int left, int right,
-        string expectedResultJsonArray)
+        string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

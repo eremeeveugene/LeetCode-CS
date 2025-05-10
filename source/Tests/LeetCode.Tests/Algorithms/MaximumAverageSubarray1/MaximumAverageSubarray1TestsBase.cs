@@ -20,10 +20,10 @@ public abstract class MaximumAverageSubarray1TestsBase<T> where T : IMaximumAver
     [DataRow("[1,12,-5,-6,50,3]", 4, 12.75)]
     [DataRow("[5]", 1, 5)]
     [DataRow("[-1]", 1, -1)]
-    public void FindMaxAverage_GivenNumsAndK_ReturnsMaxAverage(string numsJsonArray, int k, double expectedResult)
+    public void FindMaxAverage_GivenNumsAndK_ReturnsMaxAverage(string numsJson, int k, double expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

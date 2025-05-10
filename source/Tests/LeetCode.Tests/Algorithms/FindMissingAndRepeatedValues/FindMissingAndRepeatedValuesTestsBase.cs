@@ -19,12 +19,12 @@ public abstract class FindMissingAndRepeatedValuesTestsBase<T> where T : IFindMi
     [TestMethod]
     [DataRow("[[1,3],[2,2]]", "[2,4]")]
     [DataRow("[[9,1,7],[8,9,2],[3,4,6]]", "[9,5]")]
-    public void FindMissingAndRepeatedValues_GivenGrid_ReturnsMissingAndRepeatedNumbers(string gridJsonArray,
-        string expectedResultJsonArray)
+    public void FindMissingAndRepeatedValues_GivenGrid_ReturnsMissingAndRepeatedNumbers(string gridJson,
+        string expectedResultJson)
     {
         // Arrange
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

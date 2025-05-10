@@ -38,12 +38,12 @@ public abstract class DesignCircularQueueTestsBase<T> where T : IDesignCircularQ
         "[0, 0, 1, 0]",
         "[true, true, false, false]")]
     public void CircularQueueOperations_WithGivenCapacityAndOperations_PerformsCorrectly(int k,
-        string operationsJsonArray, string argumentsJsonArray, string expectedResultJsonArray)
+        string operationsJson, string argumentsJson, string expectedResultJson)
     {
         // Arrange
-        var operations = JsonHelper<string>.DeserializeToArray(operationsJsonArray);
-        var arguments = JsonHelper<int>.DeserializeToArray(argumentsJsonArray);
-        var expectedResult = JsonHelper<object>.DeserializeToArray(expectedResultJsonArray);
+        var operations = JsonHelper<string>.DeserializeToArray(operationsJson);
+        var arguments = JsonHelper<int>.DeserializeToArray(argumentsJson);
+        var expectedResult = JsonHelper<object>.DeserializeToArray(expectedResultJson);
 
         var solutionFactory = new T();
         var solution = solutionFactory.Create(k);

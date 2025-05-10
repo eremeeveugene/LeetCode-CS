@@ -19,12 +19,12 @@ public abstract class MinimumNumberGameTestsBase<T> where T : IMinimumNumberGame
     [TestMethod]
     [DataRow("[5, 4, 2, 3]", "[3, 2, 5, 4]")]
     [DataRow("[2, 5]", "[5, 2]")]
-    public void NumberGame_GivenCostArray_ReturnsExpectedRearrangedArray(string costJsonArray,
-        string expectedResultJsonArray)
+    public void NumberGame_GivenCostArray_ReturnsExpectedRearrangedArray(string costJson,
+        string expectedResultJson)
     {
         // Arrange
-        var cost = JsonHelper<int>.DeserializeToArray(costJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var cost = JsonHelper<int>.DeserializeToArray(costJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

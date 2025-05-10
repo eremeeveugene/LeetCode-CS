@@ -24,13 +24,13 @@ public abstract class RemoveLinkedListElementsTestsBase<T> where T : IRemoveLink
     [DataRow("[1]", 0, "[1]")]
     [DataRow("[1,2,6,3,4,5,6]", 6, "[1,2,3,4,5]")]
     [DataRow("[7,7,7,7]", 7, "[]")]
-    public void RemoveElements_WithListAndTargetValue_ReturnsListWithoutTargetValue(string headJsonArray, int val,
-        string expectedResultJsonArray)
+    public void RemoveElements_WithListAndTargetValue_ReturnsListWithoutTargetValue(string headJson, int val,
+        string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
+        var headArray = JsonHelper<int>.DeserializeToArray(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

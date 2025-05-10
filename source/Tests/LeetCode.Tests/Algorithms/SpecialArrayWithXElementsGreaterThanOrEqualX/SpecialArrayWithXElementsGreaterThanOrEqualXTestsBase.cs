@@ -21,10 +21,10 @@ public abstract class SpecialArrayWithXElementsGreaterThanOrEqualXTestsBase<T>
     [DataRow("[3,5]", 2)]
     [DataRow("[0,0]", -1)]
     [DataRow("[0,4,3,0,4]", 3)]
-    public void SpecialArray_GivenArrayOfIntegers_ReturnsExpectedResult(string numsJsonArray, int expectedResult)
+    public void SpecialArray_GivenArrayOfIntegers_ReturnsExpectedResult(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

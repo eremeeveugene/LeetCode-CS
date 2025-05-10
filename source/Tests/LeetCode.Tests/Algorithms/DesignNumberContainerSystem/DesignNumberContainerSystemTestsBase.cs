@@ -23,13 +23,13 @@ public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignN
     [DataRow("[\"find\", \"change\", \"change\", \"change\", \"change\", \"find\", \"change\", \"find\"]",
         "[[10], [2, 10], [1, 10], [3, 10], [5, 10], [10], [1, 20], [10]]",
         "[-1, 1, 2]")]
-    public void NumberContainerSystem_WithChangeAndFindOperations_ExecutesOperations(string methodsJsonArray,
-        string argsJsonArray, string expectedResultJsonArray)
+    public void NumberContainerSystem_WithChangeAndFindOperations_ExecutesOperations(string methodsJson,
+        string argsJson, string expectedResultJson)
     {
         // Arrange
-        var methods = JsonHelper<string>.DeserializeToArray(methodsJsonArray);
-        var args = JsonHelper<int>.DeserializeToJaggedArray(argsJsonArray);
-        var expectedResult = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var methods = JsonHelper<string>.DeserializeToArray(methodsJson);
+        var args = JsonHelper<int>.DeserializeToJaggedArray(argsJson);
+        var expectedResult = JsonHelper<int?>.DeserializeToArray(expectedResultJson);
 
         var solutionFactory = new T();
         var solution = solutionFactory.Create();

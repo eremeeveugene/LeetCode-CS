@@ -26,12 +26,12 @@ public abstract class RemoveNodesFromLinkedListTestsBase<T> where T : IRemoveNod
     [DataRow("[9,8,7,6,5,4,3,2,1]", "[9,8,7,6,5,4,3,2,1]")]
     [DataRow("[1,2,3,1,2,3,1,2,3]", "[3,3,3]")]
     [DataRow("[3,2,1,3,2,1,3,2,1]", "[3,3,3,2,1]")]
-    public void RemoveNodes_WithVariousLists_RemovesExpectedNodes(string headJsonArray, string expectedResultJsonArray)
+    public void RemoveNodes_WithVariousLists_RemovesExpectedNodes(string headJson, string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
+        var headArray = JsonHelper<int>.DeserializeToArray(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

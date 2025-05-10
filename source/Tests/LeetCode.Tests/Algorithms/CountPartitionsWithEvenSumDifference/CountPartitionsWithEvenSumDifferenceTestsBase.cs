@@ -21,10 +21,10 @@ public abstract class CountPartitionsWithEvenSumDifferenceTestsBase<T>
     [DataRow("[1,2,2]", 0)]
     [DataRow("[2,4,6,8]", 3)]
     [DataRow("[10,10,3,7,6]", 4)]
-    public void CountPartitions_GivenNumsArray_ReturnsCorrectPartitionCount(string numsJsonArray, int expectedResult)
+    public void CountPartitions_GivenNumsArray_ReturnsCorrectPartitionCount(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

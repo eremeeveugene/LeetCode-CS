@@ -20,10 +20,10 @@ public abstract class FindMinimumTimeToReachLastRoom2TestsBase<T> where T : IFin
     [DataRow("[[0,1],[1,2]]", 4)]
     [DataRow("[[0,4],[4,4]]", 7)]
     [DataRow("[[0,0,0,0],[0,0,0,0]]", 6)]
-    public void MinTimeToReach_GivenMoveTimeMatrix_ReturnsMinimumTotalTime(string moveTimeJsonArray, int expectedResult)
+    public void MinTimeToReach_GivenMoveTimeMatrix_ReturnsMinimumTotalTime(string moveTimeJson, int expectedResult)
     {
         // Arrange
-        var moveTime = JsonHelper<int>.DeserializeToJaggedArray(moveTimeJsonArray);
+        var moveTime = JsonHelper<int>.DeserializeToJaggedArray(moveTimeJson);
 
         var solution = new T();
 

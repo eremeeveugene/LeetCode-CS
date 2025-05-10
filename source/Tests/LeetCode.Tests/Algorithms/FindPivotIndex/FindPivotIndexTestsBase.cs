@@ -20,10 +20,10 @@ public abstract class FindPivotIndexTestsBase<T> where T : IFindPivotIndex, new(
     [DataRow("[2, 3, -1, 8, 4]", 3)]
     [DataRow("[1, -1, 4]", 2)]
     [DataRow("[2, 5]", -1)]
-    public void PivotIndex_GivenArray_ReturnsExpectedIndexOrMinusOne(string numsJsonArray, int expectedResult)
+    public void PivotIndex_GivenArray_ReturnsExpectedIndexOrMinusOne(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

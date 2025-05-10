@@ -20,11 +20,11 @@ public abstract class UniqueNumberOfOccurrencesTestsBase<T> where T : IUniqueNum
     [DataRow("[1,2]", false)]
     [DataRow("[1,2,2,1,1,3]", true)]
     [DataRow("[-3,0,1,-3,1,1,1,-3,10,0]", true)]
-    public void UniqueOccurrences_WithIntegerArray_ReturnsIfOccurrencesAreUnique(string arrJsonArray,
+    public void UniqueOccurrences_WithIntegerArray_ReturnsIfOccurrencesAreUnique(string arrJson,
         bool expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
 
         var solution = new T();
 

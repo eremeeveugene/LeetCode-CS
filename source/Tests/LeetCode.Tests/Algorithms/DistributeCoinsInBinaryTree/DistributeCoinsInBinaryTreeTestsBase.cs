@@ -31,11 +31,11 @@ public abstract class DistributeCoinsInBinaryTreeTestsBase<T> where T : IDistrib
     [DataRow(
         "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100]",
         930)]
-    public void DistributeCoins_GivenTreeNodeJsonArray_ReturnsExpectedCoinDistribution(string rootJsonArray,
+    public void DistributeCoins_GivenTreeNodeJson_ReturnsExpectedCoinDistribution(string rootJson,
         int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();

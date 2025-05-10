@@ -21,11 +21,11 @@ public abstract class ShortestSubarrayToBeRemovedToMakeArraySortedTestsBase<T>
     [DataRow("[1,2,3,10,4,2,3,5]", 3)]
     [DataRow("[5,4,3,2,1]", 4)]
     [DataRow("[1,2,3]", 0)]
-    public void FindLengthOfShortestSubarray_GivenArray_ReturnsLengthOfShortestToBeRemoved(string arrJsonArray,
+    public void FindLengthOfShortestSubarray_GivenArray_ReturnsLengthOfShortestToBeRemoved(string arrJson,
         int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
 
         var solution = new T();
 

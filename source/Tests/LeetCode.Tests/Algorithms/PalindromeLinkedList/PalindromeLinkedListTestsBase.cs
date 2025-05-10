@@ -31,10 +31,10 @@ public abstract class PalindromeLinkedListTestsBase<T> where T : IPalindromeLink
     [DataRow("[-1,-2,-2,-1]", true)]
     [DataRow("[0,0,0,0]", true)]
     [DataRow("[1,2,1,2]", false)]
-    public void IsPalindrome_LinkedList_ReturnsTrueIfPalindromeFalseOtherwise(string headJsonArray, bool expectedResult)
+    public void IsPalindrome_LinkedList_ReturnsTrueIfPalindromeFalseOtherwise(string headJson, bool expectedResult)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
+        var headArray = JsonHelper<int>.DeserializeToArray(headJson);
         var head = ListNode.ToListNode(headArray);
 
         var solution = new T();

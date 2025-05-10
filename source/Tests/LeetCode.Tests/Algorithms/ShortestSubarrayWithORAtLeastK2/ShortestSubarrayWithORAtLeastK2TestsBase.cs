@@ -20,11 +20,11 @@ public abstract class ShortestSubarrayWithORAtLeastK2TestsBase<T> where T : ISho
     [DataRow("[1,2,3]", 2, 1)]
     [DataRow("[2,1,8]", 10, 3)]
     [DataRow("[1,2]", 0, 1)]
-    public void MinimumSubarrayLength_WithArrayAndTargetSum_ReturnsMinLengthOfSubarray(string numsJsonArray, int k,
+    public void MinimumSubarrayLength_WithArrayAndTargetSum_ReturnsMinLengthOfSubarray(string numsJson, int k,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

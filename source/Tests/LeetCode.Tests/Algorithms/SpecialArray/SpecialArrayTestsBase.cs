@@ -20,10 +20,10 @@ public abstract class SpecialArrayTestsBase<T> where T : ISpecialArray, new()
     [DataRow("[1]", true)]
     [DataRow("[2,1,4]", true)]
     [DataRow("[4,3,1,6]", false)]
-    public void IsArraySpecial_WithArrayInput_ReturnsWhetherArrayIsSpecial(string numsJsonArray, bool expectedResult)
+    public void IsArraySpecial_WithArrayInput_ReturnsWhetherArrayIsSpecial(string numsJson, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

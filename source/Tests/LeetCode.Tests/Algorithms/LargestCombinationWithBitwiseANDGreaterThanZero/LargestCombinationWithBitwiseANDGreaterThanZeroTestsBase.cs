@@ -20,13 +20,13 @@ public abstract class LargestCombinationWithBitwiseANDGreaterThanZeroTestsBase<T
     [TestMethod]
     [DataRow("[16,17,71,62,12,24,14]", 4)]
     [DataRow("[8,8]", 2)]
-    public void LargestCombination_GivenCandidatesArray_ReturnsMaxCombinationSize(string candidatesJsonArray,
+    public void LargestCombination_GivenCandidatesArray_ReturnsMaxCombinationSize(string candidatesJson,
         int expectedResult)
     {
         // Arrange
         var solution = new T();
 
-        var candidates = JsonHelper<int>.DeserializeToArray(candidatesJsonArray);
+        var candidates = JsonHelper<int>.DeserializeToArray(candidatesJson);
 
         // Act
         var actualResult = solution.LargestCombination(candidates);

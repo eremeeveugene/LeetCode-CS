@@ -25,11 +25,11 @@ public abstract class ContiguousArrayTestsBase<T> where T : IContiguousArray, ne
     [DataRow("[0, 1, 1, 0, 1, 1, 1, 0, 0]", 6)]
     [DataRow("[0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1]", 16)]
     [DataRow("[0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0]", 16)]
-    public void FindMaxLength_GivenArrayOfBinary_ReturnsLongestContiguousArrayLength(string numsJsonArray,
+    public void FindMaxLength_GivenArrayOfBinary_ReturnsLongestContiguousArrayLength(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

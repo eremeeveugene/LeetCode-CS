@@ -21,14 +21,14 @@ public abstract class BinaryTreePostorderTraversalTestsBase<T> where T : IBinary
     [DataRow("[1,null,2,3]", "[3,2,1]")]
     [DataRow("[]", "[]")]
     [DataRow("[1]", "[1]")]
-    public void PostorderTraversal_WithTreeNodes_ReturnsCorrectPostorderTraversal(string rootJsonArray,
-        string expectedResultJsonArray)
+    public void PostorderTraversal_WithTreeNodes_ReturnsCorrectPostorderTraversal(string rootJson,
+        string expectedResultJson)
     {
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var expectedResult = JsonHelper<int?>.DeserializeToArray(expectedResultJson);
+        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         // Act

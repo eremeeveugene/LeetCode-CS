@@ -21,14 +21,14 @@ public abstract class CountSubIslandsTestsBase<T> where T : ICountSubIslands, ne
         "[[1,1,1,0,0],[0,0,1,1,1],[0,1,0,0,0],[1,0,1,1,0],[0,1,0,1,0]]", 3)]
     [DataRow("[[1,0,1,0,1],[1,1,1,1,1],[0,0,0,0,0],[1,1,1,1,1],[1,0,1,0,1]]",
         "[[0,0,0,0,0],[1,1,1,1,1],[0,1,0,1,0],[0,1,0,1,0],[1,0,0,0,1]]", 2)]
-    public void CountSubIslands_GivenTwoGrids_ReturnsCorrectSubIslandCount(string grid1JsonArray, string grid2JsonArray,
+    public void CountSubIslands_GivenTwoGrids_ReturnsCorrectSubIslandCount(string grid1Json, string grid2Json,
         int expectedResult)
     {
         // Arrange
         var solution = new T();
 
-        var grid1 = JsonHelper<int>.DeserializeToJaggedArray(grid1JsonArray);
-        var grid2 = JsonHelper<int>.DeserializeToJaggedArray(grid2JsonArray);
+        var grid1 = JsonHelper<int>.DeserializeToJaggedArray(grid1Json);
+        var grid2 = JsonHelper<int>.DeserializeToJaggedArray(grid2Json);
 
         // Act
         var actualResult = solution.CountSubIslands(grid1, grid2);

@@ -22,12 +22,12 @@ public abstract class DeleteNodeInLinkedListTestsBase<T> where T : IDeleteNodeIn
     [DataRow("[]", 0, "[]")]
     [DataRow("[4, 5, 1, 9]", 5, "[4, 1, 9]")]
     [DataRow("[4, 5, 1, 9]", 1, "[4, 5, 9]")]
-    public void DeleteNode_WhenNodeExists_RemovesNodeFromList(string actualResultJsonArray, int node,
-        string expectedResultJsonArray)
+    public void DeleteNode_WhenNodeExists_RemovesNodeFromList(string actualResultJson, int node,
+        string expectedResultJson)
     {
         // Arrange
-        var actualResultArray = JsonHelper<int>.DeserializeToArray(actualResultJsonArray);
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var actualResultArray = JsonHelper<int>.DeserializeToArray(actualResultJson);
+        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
 
         var actualResult = ListNode.ToListNode(actualResultArray);

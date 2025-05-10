@@ -21,10 +21,10 @@ public abstract class DividePlayersIntoTeamsOfEqualSkillTestsBase<T>
     [DataRow("[3,2,5,1,3,4]", 22)]
     [DataRow("[3,4]", 12)]
     [DataRow("[1,1,2,3]", -1)]
-    public void DividePlayers_WithSkillArray_ReturnsTotalSkillSum(string skillJsonArray, long expectedResult)
+    public void DividePlayers_WithSkillArray_ReturnsTotalSkillSum(string skillJson, long expectedResult)
     {
         // Arrange
-        var skill = JsonHelper<int>.DeserializeToArray(skillJsonArray);
+        var skill = JsonHelper<int>.DeserializeToArray(skillJson);
 
         var solution = new T();
 

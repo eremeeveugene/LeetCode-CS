@@ -20,11 +20,11 @@ public abstract class ContainsDuplicate2TestsBase<T> where T : IContainsDuplicat
     [DataRow("[1, 2, 3, 1]", 3, true)]
     [DataRow("[1, 0, 1, 1]", 1, true)]
     [DataRow("[1, 2, 3, 1, 2, 3]", 2, false)]
-    public void ContainsNearbyDuplicate_WithGivenRange_ChecksForDuplicatesWithinRange(string numsJsonArray, int k,
+    public void ContainsNearbyDuplicate_WithGivenRange_ChecksForDuplicatesWithinRange(string numsJson, int k,
         bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

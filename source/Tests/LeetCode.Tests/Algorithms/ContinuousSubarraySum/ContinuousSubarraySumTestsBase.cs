@@ -20,11 +20,11 @@ public abstract class ContinuousSubarraySumTestsBase<T> where T : IContinuousSub
     [DataRow("[23, 2, 4, 6, 7]", 6, true)]
     [DataRow("[23, 2, 6, 4, 7]", 6, true)]
     [DataRow("[23, 2, 6, 4, 7]", 13, false)]
-    public void CheckSubarraySum_GivenArrayAndK_ReturnsIfSubarraySumIsMultipleOfK(string numsJsonArray, int k,
+    public void CheckSubarraySum_GivenArrayAndK_ReturnsIfSubarraySumIsMultipleOfK(string numsJson, int k,
         bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

@@ -23,14 +23,14 @@ public abstract class DesignNeighborSumServiceTestsBase<T>
     [TestMethod]
     [DataRow("[[0, 1, 2], [3, 4, 5], [6, 7, 8]]", "[\"adjacentSum\",\"adjacentSum\",\"diagonalSum\",\"diagonalSum\"]",
         "[[1],[4],[4],[8]]", "[6,16,16,4]")]
-    public void NeighborSum_WithAdjacentAndDiagonalSum_ReturnsSums(string gridJsonArray,
-        string methodsJsonArray, string argsJsonArray, string expectedResultJsonArray)
+    public void NeighborSum_WithAdjacentAndDiagonalSum_ReturnsSums(string gridJson,
+        string methodsJson, string argsJson, string expectedResultJson)
     {
         // Arrange
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJsonArray);
-        var methods = JsonHelper<string>.DeserializeToArray(methodsJsonArray);
-        var args = JsonHelper<int>.DeserializeToJaggedArray(argsJsonArray);
-        var expectedResult = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJson);
+        var methods = JsonHelper<string>.DeserializeToArray(methodsJson);
+        var args = JsonHelper<int>.DeserializeToJaggedArray(argsJson);
+        var expectedResult = JsonHelper<int?>.DeserializeToArray(expectedResultJson);
 
         var solutionFactory = new T();
         var solution = solutionFactory.Create(grid);

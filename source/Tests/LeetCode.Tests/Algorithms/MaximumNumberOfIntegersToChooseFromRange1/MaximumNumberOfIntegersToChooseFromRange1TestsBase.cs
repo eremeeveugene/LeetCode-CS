@@ -21,11 +21,11 @@ public abstract class MaximumNumberOfIntegersToChooseFromRange1TestsBase<T>
     [DataRow("[1,6,5]", 5, 6, 2)]
     [DataRow("[1,2,3,4,5,6,7]", 8, 1, 0)]
     [DataRow("[11]", 7, 50, 7)]
-    public void MaxCount_WithBannedArrayNAndMaxSum_ReturnsMaximumCount(string bannedJsonArray, int n, int maxSum,
+    public void MaxCount_WithBannedArrayNAndMaxSum_ReturnsMaximumCount(string bannedJson, int n, int maxSum,
         int expectedResult)
     {
         // Arrange
-        var banned = JsonHelper<int>.DeserializeToArray(bannedJsonArray);
+        var banned = JsonHelper<int>.DeserializeToArray(bannedJson);
 
         var solution = new T();
 

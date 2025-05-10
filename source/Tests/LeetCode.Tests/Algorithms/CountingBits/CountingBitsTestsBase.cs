@@ -19,10 +19,10 @@ public abstract class CountingBitsTestsBase<T> where T : ICountingBits, new()
     [TestMethod]
     [DataRow(2, "[0, 1, 1]")]
     [DataRow(5, "[0, 1, 1, 2, 1, 2]")]
-    public void CountBits_WithNumber_ReturnsBitCountsUpToN(int n, string expectedResultJsonArray)
+    public void CountBits_WithNumber_ReturnsBitCountsUpToN(int n, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

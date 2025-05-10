@@ -25,10 +25,10 @@ public abstract class RegionsCutBySlashesTestsBase<T> where T : IRegionsCutBySla
     [DataRow(
         "[\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\",\"/\\\\/\\\\  /\\\\/\\\\  /\\\\/\\\\\"]",
         12)]
-    public void RegionsBySlashes_WithDifferentGrids_ReturnsRegionCount(string gridJsonArray, int expectedResult)
+    public void RegionsBySlashes_WithDifferentGrids_ReturnsRegionCount(string gridJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<string>.DeserializeToArray(gridJsonArray);
+        var grid = JsonHelper<string>.DeserializeToArray(gridJson);
 
         var solution = new T();
 

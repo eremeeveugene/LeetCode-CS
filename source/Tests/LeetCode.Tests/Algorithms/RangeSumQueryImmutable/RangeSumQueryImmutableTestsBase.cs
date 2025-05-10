@@ -18,14 +18,14 @@ public abstract class RangeSumQueryImmutableTestsBase<T> where T : IRangeSumQuer
 {
     [TestMethod]
     [DataRow("[-2,0,3,-5,2,-1]", "[0,2,0]", "[2,5,5]", "[1,-1,-3]")]
-    public void SumRangeQuery_WithGivenArrays_ReturnsCorrectSumRange(string numsJsonArray, string leftsJsonArray,
-        string rightsJsonArray, string expectedResultJsonArray)
+    public void SumRangeQuery_WithGivenArrays_ReturnsCorrectSumRange(string numsJson, string leftsJson,
+        string rightsJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var lefts = JsonHelper<int>.DeserializeToArray(leftsJsonArray);
-        var rights = JsonHelper<int>.DeserializeToArray(rightsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var lefts = JsonHelper<int>.DeserializeToArray(leftsJson);
+        var rights = JsonHelper<int>.DeserializeToArray(rightsJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var rangeSumQueryImmutableFactory = new T();
         var rangeSumQueryImmutable = rangeSumQueryImmutableFactory.Create(nums);

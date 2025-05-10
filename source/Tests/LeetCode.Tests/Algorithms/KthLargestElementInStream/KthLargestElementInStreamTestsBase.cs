@@ -27,13 +27,13 @@ public abstract class KthLargestElementInStreamTestsBase<T> where T : IKthLarges
     [DataRow(2, "[100, 99, 98]", "[101, 102, 97]", "[100, 101, 101]")]
     [DataRow(5, "[1, 2, 3, 4, 5]", "[6, 7, 8, 9, 10]", "[2, 3, 4, 5, 6]")]
     [DataRow(3, "[-1, -2, -3, -4, -5]", "[-6, -7, -8, -9]", "[-3, -3, -3, -3]")]
-    public void Add_WhenCalledWithValues_ReturnsKthLargestElements(int k, string numsJsonArray, string valuesJsonArray,
-        string expectedResultJsonArray)
+    public void Add_WhenCalledWithValues_ReturnsKthLargestElements(int k, string numsJson, string valuesJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var values = JsonHelper<int>.DeserializeToArray(valuesJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var values = JsonHelper<int>.DeserializeToArray(valuesJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var kthLargestElementInStreamFactory = new T();
         var kthLargestElementInStream = kthLargestElementInStreamFactory.Create(k, nums);

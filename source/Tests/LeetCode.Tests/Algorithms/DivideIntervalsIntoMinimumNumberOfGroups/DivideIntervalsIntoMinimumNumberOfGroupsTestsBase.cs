@@ -20,10 +20,10 @@ public abstract class DivideIntervalsIntoMinimumNumberOfGroupsTestsBase<T>
     [TestMethod]
     [DataRow("[[5,10],[6,8],[1,5],[2,3],[1,10]]", 3)]
     [DataRow("[[1,3],[5,6],[8,10],[11,13]]", 1)]
-    public void MinGroups_GivenIntervals_ReturnsMinimumNumberOfGroups(string intervalsJsonArray, long expectedResult)
+    public void MinGroups_GivenIntervals_ReturnsMinimumNumberOfGroups(string intervalsJson, long expectedResult)
     {
         // Arrange
-        var intervals = JsonHelper<int>.DeserializeToJaggedArray(intervalsJsonArray);
+        var intervals = JsonHelper<int>.DeserializeToJaggedArray(intervalsJson);
 
         var solution = new T();
 

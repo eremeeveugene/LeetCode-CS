@@ -16,13 +16,7 @@ namespace LeetCode.Core.Exceptions;
 [ExcludeFromCodeCoverage]
 public class ListNodeBuildException : InvalidOperationException
 {
-    private const string DefaultErrorMessage = "Failed to build ListNode.";
-
-    public ListNodeBuildException() : base(DefaultErrorMessage)
-    {
-    }
-
-    public ListNodeBuildException(Exception innerException) : base(DefaultErrorMessage, innerException)
+    public ListNodeBuildException() : base("Failed to build ListNode.")
     {
     }
 }

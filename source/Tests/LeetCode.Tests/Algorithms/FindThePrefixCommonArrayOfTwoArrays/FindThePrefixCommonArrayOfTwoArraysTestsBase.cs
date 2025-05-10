@@ -20,13 +20,13 @@ public abstract class FindThePrefixCommonArrayOfTwoArraysTestsBase<T>
     [TestMethod]
     [DataRow("[2,3,1]", "[3,1,2]", "[0,1,3]")]
     [DataRow("[1,3,2,4]", "[3,1,2,4]", "[0,2,3,4]")]
-    public void FindThePrefixCommonArray_WithTwoIntegerArrays_ReturnsPrefixCommonCounts(string aJsonArray,
-        string bJsonArray, string expectedResultJsonArray)
+    public void FindThePrefixCommonArray_WithTwoIntegerArrays_ReturnsPrefixCommonCounts(string aJson,
+        string bJson, string expectedResultJson)
     {
         // Arrange
-        var a = JsonHelper<int>.DeserializeToArray(aJsonArray);
-        var b = JsonHelper<int>.DeserializeToArray(bJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var a = JsonHelper<int>.DeserializeToArray(aJson);
+        var b = JsonHelper<int>.DeserializeToArray(bJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

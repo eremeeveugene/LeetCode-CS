@@ -26,11 +26,11 @@ public abstract class ContainsDuplicate3TestsBase<T> where T : IContainsDuplicat
     [DataRow("[1, 2, 3, 1]", 0, 1, false)]
     [DataRow("[1, 2, 3, 1]", 2, -1, false)]
     [DataRow("[-1, -1]", 1, 0, true)]
-    public void ContainsNearbyAlmostDuplicate_WithIndexAndValueDifferences_ReturnsExpectedResult(string numsJsonArray,
+    public void ContainsNearbyAlmostDuplicate_WithIndexAndValueDifferences_ReturnsExpectedResult(string numsJson,
         int indexDiff, int valueDiff, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

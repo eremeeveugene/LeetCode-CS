@@ -21,11 +21,11 @@ public abstract class FinalValueOfVariableAfterPerformingOperationsTestsBase<T>
     [DataRow("[\"--X\", \"X++\", \"X++\"]", 1)]
     [DataRow("[\"++X\", \"++X\", \"X++\"]", 3)]
     [DataRow("[\"X++\", \"++X\", \"--X\", \"X--\"]", 0)]
-    public void FinalValueAfterOperations_GivenOperationsArray_ReturnsExpectedFinalValue(string sentencesJsonArray,
+    public void FinalValueAfterOperations_GivenOperationsArray_ReturnsExpectedFinalValue(string sentencesJson,
         int expectedResult)
     {
         // Arrange
-        var sentences = JsonHelper<string>.DeserializeToArray(sentencesJsonArray);
+        var sentences = JsonHelper<string>.DeserializeToArray(sentencesJson);
 
         var solution = new T();
 

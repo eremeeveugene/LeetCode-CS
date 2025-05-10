@@ -21,12 +21,12 @@ public abstract class FindTargetIndicesAfterSortingArrayTestsBase<T>
     [DataRow("[1,2,5,2,3]", 2, "[1,2]")]
     [DataRow("[1,2,5,2,3]", 3, "[3]")]
     [DataRow("[1,2,5,2,3]", 5, "[4]")]
-    public void TargetIndices_WithArrayAndTarget_ReturnsListOfTargetIndices(string numsJsonArray, int target,
-        string expectedResultJsonArray)
+    public void TargetIndices_WithArrayAndTarget_ReturnsListOfTargetIndices(string numsJson, int target,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
 
         var solution = new T();
 

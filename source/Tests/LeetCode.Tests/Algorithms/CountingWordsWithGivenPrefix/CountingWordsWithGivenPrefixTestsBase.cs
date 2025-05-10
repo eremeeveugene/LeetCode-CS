@@ -19,11 +19,11 @@ public abstract class CountingWordsWithGivenPrefixTestsBase<T> where T : ICounti
     [TestMethod]
     [DataRow("[\"pay\",\"attention\",\"practice\",\"attend\"]", "at", 2)]
     [DataRow("[\"leetcode\",\"win\",\"loops\",\"success\"]", "code", 0)]
-    public void PrefixCount_WithWordsArrayAndPrefix_ReturnsCountOfMatchingWords(string wordsJsonArray, string pref,
+    public void PrefixCount_WithWordsArrayAndPrefix_ReturnsCountOfMatchingWords(string wordsJson, string pref,
         int expectedResult)
     {
         // Arrange
-        var words = JsonHelper<string>.DeserializeToArray(wordsJsonArray);
+        var words = JsonHelper<string>.DeserializeToArray(wordsJson);
 
         var solution = new T();
 

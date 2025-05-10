@@ -22,10 +22,10 @@ public abstract class CheckIfNAndItsDoubleExistTestsBase<T> where T : ICheckIfNA
     [DataRow("[3,1,7,11]", false)]
     [DataRow("[-2,0,10,-19,4,6,-8]", false)]
     [DataRow("[-10,12,-20,-8,15]", true)]
-    public void CheckIfExist_WithArrayInput_ReturnsTrueIfAnyValueDoublesExist(string arrJsonArray, bool expectedResult)
+    public void CheckIfExist_WithArrayInput_ReturnsTrueIfAnyValueDoublesExist(string arrJson, bool expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
 
         var solution = new T();
 

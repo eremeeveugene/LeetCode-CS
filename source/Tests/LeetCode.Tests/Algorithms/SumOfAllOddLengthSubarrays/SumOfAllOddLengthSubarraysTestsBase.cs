@@ -20,11 +20,11 @@ public abstract class SumOfAllOddLengthSubarraysTestsBase<T> where T : ISumOfAll
     [DataRow("[1,2]", 3)]
     [DataRow("[1,4,2,5,3]", 58)]
     [DataRow("[10,11,12]", 66)]
-    public void SumOddLengthSubarrays_WithIntegersArray_ReturnsSumOfAllOddLengthSubarrays(string arrJsonArray,
+    public void SumOddLengthSubarrays_WithIntegersArray_ReturnsSumOfAllOddLengthSubarrays(string arrJson,
         int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
 
         var solution = new T();
 

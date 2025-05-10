@@ -20,11 +20,11 @@ public abstract class MaximumDifferenceBetweenAdjacentElementsInCircularArrayTes
     [TestMethod]
     [DataRow("[1,2,4]", 3)]
     [DataRow("[-5,-10,-5]", 5)]
-    public void MaxAdjacentDistance_WithInputArray_ReturnsLargestDifferenceBetweenAdjacentElements(string numsJsonArray,
+    public void MaxAdjacentDistance_WithInputArray_ReturnsLargestDifferenceBetweenAdjacentElements(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
 
         var solution = new T();
 

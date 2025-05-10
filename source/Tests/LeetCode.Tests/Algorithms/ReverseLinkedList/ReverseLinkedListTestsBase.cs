@@ -22,13 +22,13 @@ public abstract class ReverseLinkedListTestsBase<T> where T : IReverseLinkedList
     [DataRow("[]", "[]")]
     [DataRow("[1,2]", "[2,1]")]
     [DataRow("[1,2,3,4,5]", "[5,4,3,2,1]")]
-    public void ReverseList_WithVariousHeadArrays_ReturnsExpectedReversedList(string headJsonArray,
-        string expectedResultJsonArray)
+    public void ReverseList_WithVariousHeadArrays_ReturnsExpectedReversedList(string headJson,
+        string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
+        var headArray = JsonHelper<int>.DeserializeToArray(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

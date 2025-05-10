@@ -19,12 +19,12 @@ public abstract class RemoveDuplicatesFromSortedArray2TestsBase<T> where T : IRe
     [TestMethod]
     [DataRow("[1,1,1,2,2,3]", 5, "[1,1,2,2,3]")]
     [DataRow("[0,0,1,1,1,1,2,3,3]", 7, "[0,0,1,1,2,3,3]")]
-    public void RemoveDuplicates_WithSortedArray_ReturnsNewLengthAndModifiesArrayCorrectly(string numsJsonArray,
-        int expectedResult, string expectedNumsJsonArray)
+    public void RemoveDuplicates_WithSortedArray_ReturnsNewLengthAndModifiesArrayCorrectly(string numsJson,
+        int expectedResult, string expectedNumsJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedNums = JsonHelper<int>.DeserializeToArray(expectedNumsJsonArray);
+        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var expectedNums = JsonHelper<int>.DeserializeToArray(expectedNumsJson);
 
         var solution = new T();
 

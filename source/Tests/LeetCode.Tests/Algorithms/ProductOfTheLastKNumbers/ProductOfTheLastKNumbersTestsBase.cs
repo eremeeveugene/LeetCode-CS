@@ -23,14 +23,14 @@ public abstract class ProductOfTheLastKNumbersTestsBase<T> where T : IProductOfT
     [DataRow(
         "[\"add\",\"add\",\"add\",\"add\",\"add\",\"getProduct\",\"getProduct\",\"getProduct\",\"add\",\"getProduct\"]",
         "[[3],[0],[2],[5],[4],[2],[3],[4],[8],[2]]", "[20,40,0,32]")]
-    public void ProductArray_WithMethodCalls_ReturnsExpectedResults(string methodsJsonArray,
-        string argsJsonArray,
-        string expectedResultJsonArray)
+    public void ProductArray_WithMethodCalls_ReturnsExpectedResults(string methodsJson,
+        string argsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var methods = JsonHelper<string>.DeserializeToArray(methodsJsonArray);
-        var args = JsonHelper<int>.DeserializeToJaggedArray(argsJsonArray);
-        var expectedResult = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var methods = JsonHelper<string>.DeserializeToArray(methodsJson);
+        var args = JsonHelper<int>.DeserializeToJaggedArray(argsJson);
+        var expectedResult = JsonHelper<int?>.DeserializeToArray(expectedResultJson);
 
         var solutionFactory = new T();
         var solution = solutionFactory.Create();
