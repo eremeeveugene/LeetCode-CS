@@ -16,7 +16,7 @@ namespace LeetCode.Algorithms.DesignNeighborSumService;
 /// </summary>
 public interface IDesignNeighborSumService
 {
-    public int AdjacentSum(int value);
+    int AdjacentSum(int value);
 
-    public int DiagonalSum(int value);
+    int DiagonalSum(int value);
 }

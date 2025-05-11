@@ -9,12 +9,15 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.DesignNeighborSumService;
+using LeetCode.Algorithms.DesignNeighborSumService;
 
-public class DesignNeighborSumServiceBruteForceFactory : IDesignNeighborSumServiceFactory
+namespace LeetCode.Tests.Algorithms.DesignNeighborSumService;
+
+[TestClass]
+public class DesignNeighborSumServiceDictionaryTests : DesignNeighborSumServiceTestsBase
 {
-    public IDesignNeighborSumService Create(int[][] grid)
+    protected override IDesignNeighborSumService GetSolution(int[][] grid)
     {
-        return new DesignNeighborSumServiceBruteForce(grid);
+        return new DesignNeighborSumServiceDictionary(grid);
     }
 }

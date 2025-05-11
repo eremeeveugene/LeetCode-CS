@@ -27,8 +27,7 @@ public abstract class DesignCircularQueueTestsBase
     [TestMethod]
     [DataRow(3,
         "[\"enQueue\", \"enQueue\", \"enQueue\", \"enQueue\", \"rear\", \"isFull\", \"deQueue\", \"enQueue\", \"rear\"]",
-        "[[1], [2], [3], [4], [], [], [], [4], []]",
-        "[true, true, true, false, 3, true, true, true, 4]")]
+        "[[1], [2], [3], [4], [], [], [], [4], []]", "[true, true, true, false, 3, true, true, true, 4]")]
     public void DesignCircularQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(int k,
         string methodsJson, string argumentsJson, string expectedResultJson)
     {
@@ -73,5 +72,5 @@ public abstract class DesignCircularQueueTestsBase
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
-    protected abstract IDesignCircularQueue GetSolution(int size);
+    protected abstract IDesignCircularQueue GetSolution(int k);
 }

@@ -80,5 +80,5 @@ public abstract class DesignCircularDequeTestsBase
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
-    protected abstract IDesignCircularDeque GetSolution(int size);
+    protected abstract IDesignCircularDeque GetSolution(int k);
 }

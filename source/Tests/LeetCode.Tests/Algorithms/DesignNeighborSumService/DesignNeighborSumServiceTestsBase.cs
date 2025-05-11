@@ -14,8 +14,7 @@ using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DesignNeighborSumService;
 
-public abstract class DesignNeighborSumServiceTestsBase<T>
-    where T : IDesignNeighborSumServiceFactory, new()
+public abstract class DesignNeighborSumServiceTestsBase
 {
     private const string AdjacentSum = "adjacentSum";
     private const string DiagonalSum = "diagonalSum";
@@ -23,36 +22,29 @@ public abstract class DesignNeighborSumServiceTestsBase<T>
     [TestMethod]
     [DataRow("[[0, 1, 2], [3, 4, 5], [6, 7, 8]]", "[\"adjacentSum\",\"adjacentSum\",\"diagonalSum\",\"diagonalSum\"]",
         "[[1],[4],[4],[8]]", "[6,16,16,4]")]
-    public void NeighborSum_WithAdjacentAndDiagonalSum_ReturnsSums(string gridJson,
-        string methodsJson, string argsJson, string expectedResultJson)
+    public void DesignNeighborSumService_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        string gridJson, string methodsJson, string argumentsJson, string expectedResultJson)
     {
         // Arrange
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJson);
-        var methods = JsonHelper<string>.DeserializeToArray(methodsJson);
-        var args = JsonHelper<int>.DeserializeToJaggedArray(argsJson);
-        var expectedResult = JsonHelper<int?>.DeserializeToArray(expectedResultJson);
+        var grid = JsonHelper<int[][]>.Parse(gridJson);
+        var methods = JsonHelper<string[]>.Parse(methodsJson);
+        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
+        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
 
-        var solutionFactory = new T();
-        var solution = solutionFactory.Create(grid);
+        var solution = GetSolution(grid);
 
         // Act
-        var actualResult = new List<int>();
+        var actualResult = new List<object>();
 
         for (var i = 0; i < methods.Length; i++)
         {
-            var value = args[i][0];
-
             switch (methods[i])
             {
                 case AdjacentSum:
-                    var adjacentSum = solution.AdjacentSum(value);
-
-                    actualResult.Add(adjacentSum);
+                    actualResult.Add(solution.AdjacentSum((int)arguments[i][0]));
                     break;
                 case DiagonalSum:
-                    var diagonalSum = solution.DiagonalSum(value);
-
-                    actualResult.Add(diagonalSum);
+                    actualResult.Add(solution.DiagonalSum((int)arguments[i][0]));
                     break;
             }
         }
@@ -60,4 +52,6 @@ public abstract class DesignNeighborSumServiceTestsBase<T>
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract IDesignNeighborSumService GetSolution(int[][] grid);
 }

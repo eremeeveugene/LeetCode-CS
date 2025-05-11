@@ -12,8 +12,15 @@
 namespace LeetCode.Algorithms.DesignNeighborSumService;
 
 /// <inheritdoc />
-public class DesignNeighborSumServiceBruteForce(int[][] grid) : IDesignNeighborSumService
+public class DesignNeighborSumServiceBruteForce : IDesignNeighborSumService
 {
+    private readonly int[][] _grid;
+
+    public DesignNeighborSumServiceBruteForce(int[][] grid)
+    {
+        _grid = grid;
+    }
+
     /// <summary>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
@@ -28,22 +35,22 @@ public class DesignNeighborSumServiceBruteForce(int[][] grid) : IDesignNeighborS
 
         if (x > 0)
         {
-            sum += grid[x - 1][y];
+            sum += _grid[x - 1][y];
         }
 
-        if (x < grid.Length - 1)
+        if (x < _grid.Length - 1)
         {
-            sum += grid[x + 1][y];
+            sum += _grid[x + 1][y];
         }
 
         if (y > 0)
         {
-            sum += grid[x][y - 1];
+            sum += _grid[x][y - 1];
         }
 
-        if (y < grid[x].Length - 1)
+        if (y < _grid[x].Length - 1)
         {
-            sum += grid[x][y + 1];
+            sum += _grid[x][y + 1];
         }
 
         return sum;
@@ -63,22 +70,22 @@ public class DesignNeighborSumServiceBruteForce(int[][] grid) : IDesignNeighborS
 
         if (x > 0 && y > 0)
         {
-            sum += grid[x - 1][y - 1];
+            sum += _grid[x - 1][y - 1];
         }
 
-        if (x > 0 && y < grid[x].Length - 1)
+        if (x > 0 && y < _grid[x].Length - 1)
         {
-            sum += grid[x - 1][y + 1];
+            sum += _grid[x - 1][y + 1];
         }
 
-        if (x < grid.Length - 1 && y > 0)
+        if (x < _grid.Length - 1 && y > 0)
         {
-            sum += grid[x + 1][y - 1];
+            sum += _grid[x + 1][y - 1];
         }
 
-        if (x < grid.Length - 1 && y < grid.Length - 1)
+        if (x < _grid.Length - 1 && y < _grid.Length - 1)
         {
-            sum += grid[x + 1][y + 1];
+            sum += _grid[x + 1][y + 1];
         }
 
         return sum;
@@ -86,11 +93,11 @@ public class DesignNeighborSumServiceBruteForce(int[][] grid) : IDesignNeighborS
 
     private (int X, int Y) FindPosition(int value)
     {
-        for (var i = 0; i < grid.Length; i++)
+        for (var i = 0; i < _grid.Length; i++)
         {
-            for (var j = 0; j < grid[i].Length; j++)
+            for (var j = 0; j < _grid[i].Length; j++)
             {
-                if (grid[i][j] == value)
+                if (_grid[i][j] == value)
                 {
                     return (i, j);
                 }
