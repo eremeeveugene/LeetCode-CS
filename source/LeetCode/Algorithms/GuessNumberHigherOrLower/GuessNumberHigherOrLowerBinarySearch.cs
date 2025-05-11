@@ -11,8 +11,12 @@
 
 namespace LeetCode.Algorithms.GuessNumberHigherOrLower;
 
-public class GuessNumberHigherOrLowerBinarySearch(int pickedNumber) : GuessNumberHigherOrLower(pickedNumber)
+public class GuessNumberHigherOrLowerBinarySearch : GuessNumberHigherOrLower
 {
+    public GuessNumberHigherOrLowerBinarySearch(int pickedNumber) : base(pickedNumber)
+    {
+    }
+
     /// <summary>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)

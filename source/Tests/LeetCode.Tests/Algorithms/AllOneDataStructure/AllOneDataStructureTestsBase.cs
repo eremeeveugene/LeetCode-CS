@@ -22,30 +22,30 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
     private const string Dec = "dec";
 
     [TestMethod]
-    [DataRow("[\"inc\",\"inc\",\"getMaxKey\",\"getMinKey\",\"inc\",\"getMaxKey\",\"getMinKey\"]",
-        "[\"hello\",\"hello\",null,null,\"leet\",null,null]", "[\"hello\",\"hello\",\"hello\",\"leet\"]")]
+    [DataRow("[\"inc\", \"inc\", \"getMaxKey\", \"getMinKey\", \"inc\", \"getMaxKey\", \"getMinKey\"]",
+        "[[\"hello\"], [\"hello\"], [], [], [\"leet\"], [], []]", "[\"hello\", \"hello\", \"hello\", \"leet\"]")]
     public void IncDecAndGetKeyMethods_WithVariousOperations_ReturnsMaxAndMinKeys(string methodsJson,
-        string argsJson, string expectedResultsJson)
+        string argumentsJson, string expectedResultJson)
     {
         // Arrange
         var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var args = JsonHelper<string[]>.Parse(argsJson);
-        var expectedResult = JsonHelper<string[]>.Parse(expectedResultsJson);
+        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
+        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
 
         var solution = new T();
 
         // Act
-        var actualResult = new List<string>();
+        var actualResult = new List<object>();
 
         for (var i = 0; i < methods.Length; i++)
         {
             switch (methods[i])
             {
                 case Inc:
-                    solution.Inc(args[i]);
+                    solution.Inc((string)arguments[i][0]);
                     break;
                 case Dec:
-                    solution.Dec(args[i]);
+                    solution.Dec((string)arguments[i][0]);
                     break;
                 case GetMaxKey:
                     actualResult.Add(solution.GetMaxKey());

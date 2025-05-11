@@ -13,7 +13,7 @@ using LeetCode.Algorithms.GuessNumberHigherOrLower;
 
 namespace LeetCode.Tests.Algorithms.GuessNumberHigherOrLower;
 
-public abstract class GuessNumberHigherOrLowerTestsBase<T> where T : IGuessNumberHigherOrLowerFactory, new()
+public abstract class GuessNumberHigherOrLowerTestsBase
 {
     [TestMethod]
     [DataRow(1, 1, 1)]
@@ -22,13 +22,15 @@ public abstract class GuessNumberHigherOrLowerTestsBase<T> where T : IGuessNumbe
     public void GuessNumber_WithRangeAndPickedValue_ReturnsPickedValue(int n, int pickedNumber, int expectedResult)
     {
         // Arrange
-        var guessNumberHigherOrLowerFactory = new T();
-        var guessNumberHigherOrLower = guessNumberHigherOrLowerFactory.Create(pickedNumber);
+        var solution = GetSolution(pickedNumber);
 
         // Act
-        var actualResult = guessNumberHigherOrLower.GuessNumber(n);
+        var actualResult = solution.GuessNumber(n);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
     }
+
+
+    protected abstract IGuessNumberHigherOrLower GetSolution(int pickedNumber);
 }

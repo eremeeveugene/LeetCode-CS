@@ -14,5 +14,10 @@ using LeetCode.Algorithms.RangeSumQueryImmutable;
 namespace LeetCode.Tests.Algorithms.RangeSumQueryImmutable;
 
 [TestClass]
-public class RangeSumQueryImmutableBruteForceFactoryTests : RangeSumQueryImmutableTestsBase<
-    RangeSumQueryImmutableBruteForceFactory>;
+public class RangeSumQueryImmutableBruteForceFactoryTests : RangeSumQueryImmutableTestsBase
+{
+    protected override IRangeSumQueryImmutable GetSolution(int[] nums)
+    {
+        return new RangeSumQueryImmutableBruteForce(nums);
+    }
+}

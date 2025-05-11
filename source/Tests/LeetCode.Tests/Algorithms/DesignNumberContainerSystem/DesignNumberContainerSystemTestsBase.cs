@@ -11,10 +11,11 @@
 
 using LeetCode.Algorithms.DesignNumberContainerSystem;
 using LeetCode.Core.Helpers;
+using LeetCode.Tests.Base.Exceptions;
 
 namespace LeetCode.Tests.Algorithms.DesignNumberContainerSystem;
 
-public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignNumberContainerSystemFactory, new()
+public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignNumberContainerSystem, new()
 {
     private const string Change = "change";
     private const string Find = "find";
@@ -23,30 +24,31 @@ public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignN
     [DataRow("[\"find\", \"change\", \"change\", \"change\", \"change\", \"find\", \"change\", \"find\"]",
         "[[10], [2, 10], [1, 10], [3, 10], [5, 10], [10], [1, 20], [10]]",
         "[-1, 1, 2]")]
-    public void NumberContainerSystem_WithChangeAndFindOperations_ExecutesOperations(string methodsJson,
-        string argsJson, string expectedResultJson)
+    public void DesignNumberContainerSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        string methodsJson, string argumentsJson, string expectedResultJson)
     {
         // Arrange
         var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var args = JsonHelper<int[][]>.Parse(argsJson);
-        var expectedResult = JsonHelper<int?[]>.Parse(expectedResultJson);
+        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
+        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
 
-        var solutionFactory = new T();
-        var solution = solutionFactory.Create();
+        var solution = new T();
 
         // Act
-        var actualResult = new List<int>();
+        var actualResult = new List<object>();
 
         for (var i = 0; i < methods.Length; i++)
         {
             switch (methods[i])
             {
                 case Change:
-                    solution.Change(args[i][0], args[i][1]);
+                    solution.Change((int)arguments[i][0], (int)arguments[i][1]);
                     break;
                 case Find:
-                    actualResult.Add(solution.Find(args[i][0]));
+                    actualResult.Add(solution.Find((int)arguments[i][0]));
                     break;
+                default:
+                    throw new UnexpectedMethodException(methods[i]);
             }
         }
 

@@ -15,4 +15,4 @@ namespace LeetCode.Tests.Algorithms.DesignNumberContainerSystem;
 
 [TestClass]
 public class DesignNumberContainerSystemDictionaryTests :
-    DesignNumberContainerSystemTestsBase<DesignNumberContainerSystemFactoryDictionary>;
+    DesignNumberContainerSystemTestsBase<DesignNumberContainerSystemDictionary>;

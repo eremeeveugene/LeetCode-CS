@@ -11,11 +11,11 @@
 
 using LeetCode.Algorithms.DesignStackWithIncrementOperation;
 using LeetCode.Core.Helpers;
+using LeetCode.Tests.Base.Exceptions;
 
 namespace LeetCode.Tests.Algorithms.DesignStackWithIncrementOperation;
 
-public abstract class DesignStackWithIncrementOperationTestsBase<T>
-    where T : IDesignStackWithIncrementOperationFactory, new()
+public abstract class DesignStackWithIncrementOperationTestsBase
 {
     private const string Push = "push";
     private const string Pop = "pop";
@@ -26,37 +26,40 @@ public abstract class DesignStackWithIncrementOperationTestsBase<T>
         "[\"push\",\"push\",\"pop\",\"push\",\"push\",\"push\",\"increment\",\"increment\",\"pop\",\"pop\",\"pop\",\"pop\"]",
         "[[1],[2],[],[2],[3],[4],[5,100],[2,100],[],[],[],[]]",
         "[2,103,202,201,-1]")]
-    public void DataStructureOperations_WithMaxSizeAndCommands_ReturnsOperationResults(int maxSize,
-        string methodsJson, string argsJson, string expectedResultJson)
+    public void DesignStackWithIncrementOperation_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        int maxSize, string methodsJson, string argumentsJson, string expectedResultJson)
     {
         // Arrange
         var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var args = JsonHelper<int[][]>.Parse(argsJson);
-        var expectedResult = JsonHelper<int?[]>.Parse(expectedResultJson);
+        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
+        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
 
-        var solutionFactory = new T();
-        var solution = solutionFactory.Create(maxSize);
+        var solution = GetSolution(maxSize);
 
         // Act
-        var actualResult = new List<int>();
+        var actualResult = new List<object>();
 
         for (var i = 0; i < methods.Length; i++)
         {
             switch (methods[i])
             {
                 case Push:
-                    solution.Push(args[i][0]);
+                    solution.Push((int)arguments[i][0]);
                     break;
                 case Pop:
                     actualResult.Add(solution.Pop());
                     break;
                 case Increment:
-                    solution.Increment(args[i][0], args[i][1]);
+                    solution.Increment((int)arguments[i][0], (int)arguments[i][1]);
                     break;
+                default:
+                    throw new UnexpectedMethodException(methods[i]);
             }
         }
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract IDesignStackWithIncrementOperation GetSolution(int maxSize);
 }

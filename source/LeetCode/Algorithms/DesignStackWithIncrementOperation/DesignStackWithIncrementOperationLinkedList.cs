@@ -12,11 +12,17 @@
 namespace LeetCode.Algorithms.DesignStackWithIncrementOperation;
 
 /// <inheritdoc />
-public class DesignStackWithIncrementOperationLinkedList(int maxSize) : IDesignStackWithIncrementOperation
+public class DesignStackWithIncrementOperationLinkedList : IDesignStackWithIncrementOperation
 {
+    private readonly int _maxSize;
     private int _count;
     private Node? _headNode;
     private Node? _tailNode;
+
+    public DesignStackWithIncrementOperationLinkedList(int maxSize)
+    {
+        _maxSize = maxSize;
+    }
 
     /// <summary>
     ///     Time complexity - O(1)
@@ -25,7 +31,7 @@ public class DesignStackWithIncrementOperationLinkedList(int maxSize) : IDesignS
     /// <param name="x"></param>
     public void Push(int x)
     {
-        if (_count >= maxSize)
+        if (_count >= _maxSize)
         {
             return;
         }

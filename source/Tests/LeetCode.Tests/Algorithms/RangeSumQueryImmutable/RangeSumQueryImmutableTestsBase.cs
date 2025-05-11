@@ -11,34 +11,45 @@
 
 using LeetCode.Algorithms.RangeSumQueryImmutable;
 using LeetCode.Core.Helpers;
+using LeetCode.Tests.Base.Exceptions;
 
 namespace LeetCode.Tests.Algorithms.RangeSumQueryImmutable;
 
-public abstract class RangeSumQueryImmutableTestsBase<T> where T : IRangeSumQueryImmutableFactory, new()
+public abstract class RangeSumQueryImmutableTestsBase
 {
+    private const string SumRange = "sumRange";
+
     [TestMethod]
-    [DataRow("[-2,0,3,-5,2,-1]", "[0,2,0]", "[2,5,5]", "[1,-1,-3]")]
-    public void SumRange_WithGivenArrayAndRangeQueries_ReturnsSumForEachQuery(string numsJson, string leftsJson,
-        string rightsJson, string expectedResultJson)
+    [DataRow("[-2,0,3,-5,2,-1]", "[\"sumRange\", \"sumRange\", \"sumRange\"]", "[[0, 2], [2, 5], [0, 5]]", "[1,-1,-3]")]
+    public void SumRange_WithGivenArrayAndRangeQueries_ReturnsSumForEachQuery(string numsJson, string methodsJson,
+        string argumentsJson, string expectedResultJson)
     {
         // Arrange
         var nums = JsonHelper<int[]>.Parse(numsJson);
-        var lefts = JsonHelper<int[]>.Parse(leftsJson);
-        var rights = JsonHelper<int[]>.Parse(rightsJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var methods = JsonHelper<string[]>.Parse(methodsJson);
+        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
+        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
 
-        var rangeSumQueryImmutableFactory = new T();
-        var rangeSumQueryImmutable = rangeSumQueryImmutableFactory.Create(nums);
+        var solution = GetSolution(nums);
 
         // Act
-        var actualResult = new int[expectedResult.Length];
+        var actualResult = new List<object>();
 
-        for (var i = 0; i < actualResult.Length; i++)
+        for (var i = 0; i < methods.Length; i++)
         {
-            actualResult[i] = rangeSumQueryImmutable.SumRange(lefts[i], rights[i]);
+            switch (methods[i])
+            {
+                case SumRange:
+                    actualResult.Add(solution.SumRange((int)arguments[i][0], (int)arguments[i][1]));
+                    break;
+                default:
+                    throw new UnexpectedMethodException(methods[i]);
+            }
         }
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract IRangeSumQueryImmutable GetSolution(int[] nums);
 }
