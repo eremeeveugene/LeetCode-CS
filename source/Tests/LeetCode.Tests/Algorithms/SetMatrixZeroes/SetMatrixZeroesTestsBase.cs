@@ -33,6 +33,6 @@ public abstract class SetMatrixZeroesTestsBase<T> where T : ISetMatrixZeroes, ne
         solution.SetZeroes(matrix);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, matrix);
+        NestedCollectionAssert.AreEqual(expectedResult, matrix);
     }
 }

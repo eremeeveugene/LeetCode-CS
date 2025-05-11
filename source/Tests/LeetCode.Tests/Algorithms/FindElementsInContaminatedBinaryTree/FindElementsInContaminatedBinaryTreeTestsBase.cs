@@ -24,7 +24,8 @@ public abstract class FindElementsInContaminatedBinaryTreeTestsBase<T>
     [TestMethod]
     [DataRow("[-1,null,-1]", "[\"find\",\"find\"]", "[[1],[2]]", "[false,true]")]
     [DataRow("[-1,-1,-1,-1,-1]", "[\"find\",\"find\",\"find\"]", "[[1],[3],[5]]", "[true,true,false]")]
-    [DataRow("[-1,null,-1,-1,null,-1]", "[\"find\",\"find\",\"find\",\"find\"]", "[[2],[3],[4],[5]]", "[true,false,false,true]")]
+    [DataRow("[-1,null,-1,-1,null,-1]", "[\"find\",\"find\",\"find\",\"find\"]", "[[2],[3],[4],[5]]",
+        "[true,false,false,true]")]
     public void Find_WithVariousTreeStructures_ReturnsIfElementsFound(string rootJson, string methodsJson,
         string argumentsJson, string expectedResultJson)
     {

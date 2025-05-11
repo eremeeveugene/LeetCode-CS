@@ -34,6 +34,6 @@ public abstract class FloodFillTestsBase<T> where T : IFloodFill, new()
         var actualResult = solution.FloodFill(intervals, sr, sc, color);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

@@ -35,6 +35,6 @@ public abstract class FindValidMatrixGivenRowAndColumnSumsTestsBase<T>
         var actualResult = solution.RestoreMatrix(rowSum, colSum);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

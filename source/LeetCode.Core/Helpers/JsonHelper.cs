@@ -59,8 +59,8 @@ public static class JsonHelper<T>
     }
 
     /// <summary>
-    /// Deserializes a JSON string to the specified type <typeparamref name="T"/>.
-    /// Handles all primitive types, arrays, jagged arrays, dynamic objects, and dictionaries.
+    ///     Deserializes a JSON string to the specified type <typeparamref name="T" />.
+    ///     Handles all primitive types, arrays, jagged arrays, dynamic objects, and dictionaries.
     /// </summary>
     public static T Parse(string json)
     {
@@ -83,7 +83,9 @@ public static class JsonHelper<T>
         {
             using var doc = JsonDocument.Parse(json);
             if (doc.RootElement.ValueKind != JsonValueKind.Array)
+            {
                 throw new JsonException("Expected a jagged array at JSON root.");
+            }
 
             var jagged = doc.RootElement.EnumerateArray()
                 .Select(inner =>
@@ -117,8 +119,16 @@ public static class JsonHelper<T>
 
     private static object ConvertNumber(JsonElement element)
     {
-        if (element.TryGetInt32(out var i)) return i;
-        if (element.TryGetInt64(out var l)) return l;
+        if (element.TryGetInt32(out var i))
+        {
+            return i;
+        }
+
+        if (element.TryGetInt64(out var l))
+        {
+            return l;
+        }
+
         return element.GetDouble();
     }
 
@@ -129,6 +139,7 @@ public static class JsonHelper<T>
         {
             dict[prop.Name] = ConvertElement(prop.Value);
         }
+
         return dict;
     }
 }

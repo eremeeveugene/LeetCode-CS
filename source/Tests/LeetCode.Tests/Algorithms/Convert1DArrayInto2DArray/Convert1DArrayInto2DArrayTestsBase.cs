@@ -35,6 +35,6 @@ public abstract class Convert1DArrayInto2DArrayTestsBase<T> where T : IConvert1D
         var actualResult = solution.Construct2DArray(original, m, n);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

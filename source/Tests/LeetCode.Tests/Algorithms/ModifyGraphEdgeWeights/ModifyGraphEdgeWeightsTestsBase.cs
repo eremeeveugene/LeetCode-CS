@@ -34,6 +34,6 @@ public abstract class ModifyGraphEdgeWeightsTestsBase<T> where T : IModifyGraphE
         var actualResult = solution.ModifiedGraphEdges(n, edges, source, destination, target);
 
         // Assert
-        JaggedArrayAssert.AreEquivalent(expectedResult, actualResult);
+        NestedCollectionAssert.AreEquivalent(expectedResult, actualResult);
     }
 }

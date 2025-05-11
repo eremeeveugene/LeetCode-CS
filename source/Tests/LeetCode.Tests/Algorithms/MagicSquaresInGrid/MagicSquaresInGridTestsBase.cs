@@ -31,7 +31,7 @@ public abstract class MagicSquaresInGridTestsBase<T> where T : IMagicSquaresInGr
     {
         // Arrange
         var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJson);
-      
+
         var solution = new T();
 
         // Act

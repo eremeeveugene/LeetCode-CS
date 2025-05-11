@@ -34,6 +34,6 @@ public abstract class MergeTwo2DArraysBySummingValuesTestsBase<T> where T : IMer
         var actualResult = solution.MergeArrays(nums1, nums2);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

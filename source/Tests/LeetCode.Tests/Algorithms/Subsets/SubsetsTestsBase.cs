@@ -33,6 +33,6 @@ public abstract class SubsetsTestsBase<T> where T : ISubsets, new()
         var actualResult = solution.Subsets(nums);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

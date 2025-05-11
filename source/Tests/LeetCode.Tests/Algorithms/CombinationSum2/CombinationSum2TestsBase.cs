@@ -24,16 +24,15 @@ public abstract class CombinationSum2TestsBase<T> where T : ICombinationSum2, ne
         string candidatesJson, int target, string expectedResultJson)
     {
         // Arrange
-        var candidates = JsonHelper<int>.DeserializeToArray(candidatesJson);
+        var candidates = JsonHelper<int[]>.Parse(candidatesJson);
+        var expectedResult = JsonHelper<IList<IList<int>>>.Parse(expectedResultJson);
 
         var solution = new T();
-
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedList(expectedResultJson);
 
         // Act
         var actualResult = solution.CombinationSum2(candidates, target);
 
         // Assert
-        JaggedArrayAssert.AreEquivalent(expectedResult, actualResult);
+        NestedCollectionAssert.AreEquivalent(expectedResult, actualResult);
     }
 }

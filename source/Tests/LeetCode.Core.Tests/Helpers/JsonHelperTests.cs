@@ -41,7 +41,7 @@ public class JsonHelperTests
         var actualResult = JsonHelper<int>.DeserializeToJaggedArray("[[1,2],[3,4]]");
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
     [TestMethod]
@@ -54,7 +54,7 @@ public class JsonHelperTests
         var actualResult = JsonHelper<int>.DeserializeToJaggedList("[[1,2],[3,4]]");
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
     [TestMethod]

@@ -14,7 +14,7 @@ using System.Diagnostics.CodeAnalysis;
 namespace LeetCode.Tests.Base.Extensions;
 
 [ExcludeFromCodeCoverage]
-public static class JaggedArrayAssert
+public static class NestedCollectionAssert
 {
     public static void AreEqual<T>(IEnumerable<IEnumerable<T>> expected, IEnumerable<IEnumerable<T>> actual)
     {

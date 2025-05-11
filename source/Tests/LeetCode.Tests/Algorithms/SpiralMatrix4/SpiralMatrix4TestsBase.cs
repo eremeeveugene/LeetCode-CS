@@ -37,6 +37,6 @@ public abstract class SpiralMatrix4TestsBase<T> where T : ISpiralMatrix4, new()
         var actualResult = solution.SpiralMatrix(m, n, head);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

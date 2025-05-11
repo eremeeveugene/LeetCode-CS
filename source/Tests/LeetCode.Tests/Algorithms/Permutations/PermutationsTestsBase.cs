@@ -34,6 +34,6 @@ public abstract class PermutationsTestsBase<T> where T : IPermutations, new()
         var actualResult = solution.Permute(nums);
 
         // Assert
-        JaggedArrayAssert.AreEquivalent(expectedResult, actualResult);
+        NestedCollectionAssert.AreEquivalent(expectedResult, actualResult);
     }
 }

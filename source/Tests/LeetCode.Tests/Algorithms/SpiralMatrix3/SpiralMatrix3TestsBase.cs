@@ -33,6 +33,6 @@ public abstract class SpiralMatrix3TestsBase<T> where T : ISpiralMatrix3, new()
         var actualResult = solution.SpiralMatrixIII(rows, cols, rStart, cStart);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }
