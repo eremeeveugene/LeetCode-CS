@@ -23,7 +23,7 @@ public abstract class RemoveNthNodeFromEndOfListTestsBase<T> where T : IRemoveNt
     [DataRow("[1]", 1, "[]")]
     [DataRow("[1,2]", 1, "[1]")]
     [DataRow("[1,2]", 2, "[2]")]
-    public void RemoveNthFromEnd_WhenCalled_RemovesNthNodeFromEndAndReturnsCorrectList(string headJson, int n,
+    public void RemoveNthFromEnd_WithListAndPosition_RemovesNthNodeFromEndAndReturnsUpdatedList(string headJson, int n,
         string expectedResultJson)
     {
         // Arrange

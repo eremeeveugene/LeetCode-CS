@@ -18,7 +18,7 @@ public abstract class RangeSumQueryImmutableTestsBase<T> where T : IRangeSumQuer
 {
     [TestMethod]
     [DataRow("[-2,0,3,-5,2,-1]", "[0,2,0]", "[2,5,5]", "[1,-1,-3]")]
-    public void SumRangeQuery_WithGivenArrays_ReturnsCorrectSumRange(string numsJson, string leftsJson,
+    public void SumRange_WithGivenArrayAndRangeQueries_ReturnsSumForEachQuery(string numsJson, string leftsJson,
         string rightsJson, string expectedResultJson)
     {
         // Arrange

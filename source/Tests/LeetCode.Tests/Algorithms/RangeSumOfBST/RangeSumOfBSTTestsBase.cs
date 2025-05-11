@@ -20,7 +20,7 @@ public abstract class RangeSumOfBSTTestsBase<T> where T : IRangeSumOfBST, new()
     [TestMethod]
     [DataRow("[10,5,15,3,7,null,18]", 7, 15, 32)]
     [DataRow("[10,5,15,3,7,13,18,1,null,6]", 6, 10, 23)]
-    public void RangeSumBST_GivenTreeWithLowAndHighValues_ReturnsCorrectSum(string rootJson, int low, int high,
+    public void RangeSumBST_WithTreeAndInclusiveBounds_ReturnsSumOfValuesInRange(string rootJson, int low, int high,
         int expectedResult)
     {
         // Arrange

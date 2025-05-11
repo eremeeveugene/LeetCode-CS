@@ -23,7 +23,7 @@ public abstract class ReplaceWordsTestsBase<T> where T : IReplaceWords, new()
     [DataRow("[\"a\",\"ab\",\"abc\"]", "abc ab a abcde", "a a a a")]
     [DataRow("[\"prefix\",\"pre\",\"suff\",\"suffi\"]", "prefixes and suffixes", "pre and suff")]
     [DataRow("[\"longest\",\"longer\",\"long\"]", "this is a long long word", "this is a long long word")]
-    public void ReplaceWords_WithDictionaryAndSentence_ReturnsCorrectlyReplacedSentence(string dictionaryJson,
+    public void ReplaceWords_WithRootDictionaryAndSentence_ReplacesWordsWithShortestMatchingRoots(string dictionaryJson,
         string sentence, string expectedResult)
     {
         // Arrange
