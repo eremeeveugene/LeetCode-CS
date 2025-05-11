@@ -24,7 +24,7 @@ public abstract class CheckIfGridCanBeCutIntoSectionsTestsBase<T> where T : IChe
         string rectanglesJson, bool expectedResult)
     {
         // Arrange
-        var rectangles = JsonHelper<int>.DeserializeToJaggedArray(rectanglesJson);
+        var rectangles = JsonHelper<int[][]>.Parse(rectanglesJson);
 
         var solution = new T();
 

@@ -24,7 +24,7 @@ public abstract class GridGameTestsBase<T> where T : IGridGame, new()
         long expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJson);
+        var grid = JsonHelper<int[][]>.Parse(gridJson);
 
         var solution = new T();
 

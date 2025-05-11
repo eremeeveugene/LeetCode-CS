@@ -40,7 +40,7 @@ public abstract class MinimumNumberOfDaysToDisconnectIslandTestsBase<T>
         // Arrange
         var solution = new T();
 
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJson);
+        var grid = JsonHelper<int[][]>.Parse(gridJson);
 
         // Act
         var actualResult = solution.MinDays(grid);

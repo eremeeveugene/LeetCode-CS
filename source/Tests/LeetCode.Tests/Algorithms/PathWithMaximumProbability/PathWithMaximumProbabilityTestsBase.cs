@@ -31,8 +31,8 @@ public abstract class PathWithMaximumProbabilityTestsBase<T> where T : IPathWith
         string successProbabilityJson, int startNode, int endNode, double expectedResult)
     {
         // Arrange
-        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJson);
-        var successProbability = JsonHelper<double>.DeserializeToArray(successProbabilityJson);
+        var edges = JsonHelper<int[][]>.Parse(edgesJson);
+        var successProbability = JsonHelper<double[]>.Parse(successProbabilityJson);
 
         var solution = new T();
 

@@ -23,7 +23,7 @@ public abstract class FindMinimumTimeToReachLastRoom2TestsBase<T> where T : IFin
     public void MinTimeToReach_GivenMoveTimeMatrix_ReturnsMinimumTotalTime(string moveTimeJson, int expectedResult)
     {
         // Arrange
-        var moveTime = JsonHelper<int>.DeserializeToJaggedArray(moveTimeJson);
+        var moveTime = JsonHelper<int[][]>.Parse(moveTimeJson);
 
         var solution = new T();
 

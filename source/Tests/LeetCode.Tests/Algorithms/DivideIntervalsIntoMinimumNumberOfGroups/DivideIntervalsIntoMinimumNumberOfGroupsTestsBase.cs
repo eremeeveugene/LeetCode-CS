@@ -23,7 +23,7 @@ public abstract class DivideIntervalsIntoMinimumNumberOfGroupsTestsBase<T>
     public void MinGroups_GivenIntervals_ReturnsMinimumNumberOfGroups(string intervalsJson, long expectedResult)
     {
         // Arrange
-        var intervals = JsonHelper<int>.DeserializeToJaggedArray(intervalsJson);
+        var intervals = JsonHelper<int[][]>.Parse(intervalsJson);
 
         var solution = new T();
 

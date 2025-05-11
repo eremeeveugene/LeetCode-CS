@@ -34,8 +34,8 @@ public abstract class FindElementsInContaminatedBinaryTreeTestsBase<T>
         var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
 
         var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<int>.DeserializeToJaggedArray(argumentsJson);
-        var expectedResult = JsonHelper<bool>.DeserializeToArray(expectedResultJson);
+        var arguments = JsonHelper<int[][]>.Parse(argumentsJson);
+        var expectedResult = JsonHelper<bool[]>.Parse(expectedResultJson);
 
         var solutionFactory = new T();
         var solution = solutionFactory.Create(root);

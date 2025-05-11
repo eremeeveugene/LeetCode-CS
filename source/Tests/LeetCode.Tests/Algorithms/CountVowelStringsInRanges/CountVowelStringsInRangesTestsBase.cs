@@ -24,7 +24,7 @@ public abstract class CountVowelStringsInRangesTestsBase<T> where T : ICountVowe
     {
         // Arrange
         var words = JsonHelper<string[]>.Parse(wordsJson);
-        var queries = JsonHelper<int>.DeserializeToJaggedArray(queriesJson);
+        var queries = JsonHelper<int[][]>.Parse(queriesJson);
         var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();

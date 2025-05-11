@@ -20,19 +20,6 @@ namespace LeetCode.Core.Helpers;
 public static class JsonHelper<T>
 {
     /// <summary>
-    ///     Deserializes the JSON in <paramref name="json" /> to a <see cref="T" />[].
-    /// </summary>
-    /// <param name="json"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    /// <exception cref="JsonException"></exception>
-    public static T[] DeserializeToArray(string json)
-    {
-        return JsonSerializer.Deserialize<T[]>(json, JsonHelperOptions.Options)
-               ?? throw new JsonException("Failed to deserialize JSON array.");
-    }
-
-    /// <summary>
     ///     Deserializes the JSON in <paramref name="json" /> to a jagged array of <see cref="T" />[][].
     /// </summary>
     /// <param name="json"></param>

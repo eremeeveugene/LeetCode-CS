@@ -29,7 +29,7 @@ public abstract class SplitLinkedListInPartsTestsBase<T> where T : ISplitLinkedL
         var headArray = JsonHelper<int[]>.Parse(headJson);
         var head = ListNode.ToListNode(headArray);
 
-        var expectedResultJaggedArray = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJson);
+        var expectedResultJaggedArray = JsonHelper<int[][]>.Parse(expectedResultJson);
 
         var expectedResult = new ListNode?[k];
 

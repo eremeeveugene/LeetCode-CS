@@ -28,7 +28,7 @@ public abstract class TheNumberOfTheSmallestUnoccupiedChairTestsBase<T>
         int targetFriend, int expectedResult)
     {
         // Arrange
-        var times = JsonHelper<int>.DeserializeToJaggedArray(timesJson);
+        var times = JsonHelper<int[][]>.Parse(timesJson);
 
         var solution = new T();
 

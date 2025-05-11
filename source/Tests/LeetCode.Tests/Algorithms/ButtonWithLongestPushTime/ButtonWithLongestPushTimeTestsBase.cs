@@ -23,7 +23,7 @@ public abstract class ButtonWithLongestPushTimeTestsBase<T> where T : IButtonWit
         int expectedResult)
     {
         // Arrange
-        var events = JsonHelper<int>.DeserializeToJaggedArray(eventsJson);
+        var events = JsonHelper<int[][]>.Parse(eventsJson);
 
         var solution = new T();
 

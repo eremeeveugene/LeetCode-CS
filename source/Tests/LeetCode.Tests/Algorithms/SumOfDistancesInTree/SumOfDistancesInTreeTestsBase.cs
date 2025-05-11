@@ -24,7 +24,7 @@ public abstract class SumOfDistancesInTreeTestsBase<T> where T : ISumOfDistances
         string expectedResultJson)
     {
         // Arrange
-        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJson);
+        var edges = JsonHelper<int[][]>.Parse(edgesJson);
         var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();

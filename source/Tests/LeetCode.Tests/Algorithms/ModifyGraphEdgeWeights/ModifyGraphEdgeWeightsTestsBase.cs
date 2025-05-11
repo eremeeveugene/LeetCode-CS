@@ -25,8 +25,8 @@ public abstract class ModifyGraphEdgeWeightsTestsBase<T> where T : IModifyGraphE
         int destination, int target, string expectedResultJson)
     {
         // Arrange
-        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJson);
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJson);
+        var edges = JsonHelper<int[][]>.Parse(edgesJson);
+        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
 
         var solution = new T();
 

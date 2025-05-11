@@ -30,7 +30,7 @@ public abstract class ImplementTrieTestsBase<T> where T : IImplementTrie, new()
         // Arrange
         var methods = JsonHelper<string[]>.Parse(methodsJson);
         var args = JsonHelper<string[]>.Parse(argsJson);
-        var expectedResult = JsonHelper<bool>.DeserializeToArray(expectedResultsJson);
+        var expectedResult = JsonHelper<bool[]>.Parse(expectedResultsJson);
 
         var solution = new T();
 

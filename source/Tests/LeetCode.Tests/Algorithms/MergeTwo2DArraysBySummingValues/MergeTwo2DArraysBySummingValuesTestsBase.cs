@@ -24,9 +24,9 @@ public abstract class MergeTwo2DArraysBySummingValuesTestsBase<T> where T : IMer
         string expectedResultJson)
     {
         // Arrange
-        var nums1 = JsonHelper<int>.DeserializeToJaggedArray(nums1Json);
-        var nums2 = JsonHelper<int>.DeserializeToJaggedArray(nums2Json);
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJson);
+        var nums1 = JsonHelper<int[][]>.Parse(nums1Json);
+        var nums2 = JsonHelper<int[][]>.Parse(nums2Json);
+        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
 
         var solution = new T();
 

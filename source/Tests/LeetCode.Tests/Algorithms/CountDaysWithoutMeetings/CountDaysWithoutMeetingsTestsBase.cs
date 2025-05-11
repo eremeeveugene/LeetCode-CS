@@ -24,7 +24,7 @@ public abstract class CountDaysWithoutMeetingsTestsBase<T> where T : ICountDaysW
         int expectedResult)
     {
         // Arrange
-        var meetings = JsonHelper<int>.DeserializeToJaggedArray(meetingsJson);
+        var meetings = JsonHelper<int[][]>.Parse(meetingsJson);
 
         var solution = new T();
 

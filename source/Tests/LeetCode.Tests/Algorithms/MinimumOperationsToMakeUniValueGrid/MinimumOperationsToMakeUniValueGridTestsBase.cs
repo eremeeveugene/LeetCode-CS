@@ -25,7 +25,7 @@ public abstract class MinimumOperationsToMakeUniValueGridTestsBase<T>
         int x, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJson);
+        var grid = JsonHelper<int[][]>.Parse(gridJson);
 
         var solution = new T();
 

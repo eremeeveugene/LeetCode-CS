@@ -22,7 +22,7 @@ public abstract class MaximumMatrixSumTestsBase<T> where T : IMaximumMatrixSum, 
     public void MaxMatrixSum_WithMatrix_ReturnsMaximumSumAfterFlips(string matrixJson, long expectedResult)
     {
         // Arrange
-        var matrix = JsonHelper<int>.DeserializeToJaggedArray(matrixJson);
+        var matrix = JsonHelper<int[][]>.Parse(matrixJson);
 
         var solution = new T();
 

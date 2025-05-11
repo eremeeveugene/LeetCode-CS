@@ -24,8 +24,8 @@ public abstract class FindMinimumDiameterAfterMergingTwoTreesTestsBase<T>
         string edges2Json, int expectedResult)
     {
         // Arrange
-        var edges1 = JsonHelper<int>.DeserializeToJaggedArray(edges1Json);
-        var edges2 = JsonHelper<int>.DeserializeToJaggedArray(edges2Json);
+        var edges1 = JsonHelper<int[][]>.Parse(edges1Json);
+        var edges2 = JsonHelper<int[][]>.Parse(edges2Json);
 
         var solution = new T();
 

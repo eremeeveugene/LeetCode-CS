@@ -27,7 +27,7 @@ public abstract class Convert1DArrayInto2DArrayTestsBase<T> where T : IConvert1D
     {
         // Arrange
         var original = JsonHelper<int[]>.Parse(originalJson);
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJson);
+        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
 
         var solution = new T();
 

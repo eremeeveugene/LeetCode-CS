@@ -27,7 +27,7 @@ public abstract class CheapestFlightsWithinKStopsTestsBase<T> where T : ICheapes
         // Arrange
         var solution = new T();
 
-        var flights = JsonHelper<int>.DeserializeToJaggedArray(jsonFlights);
+        var flights = JsonHelper<int[][]>.Parse(jsonFlights);
 
         // Act
         var actualResult = solution.FindCheapestPrice(n, flights, src, dst, k);

@@ -24,7 +24,7 @@ public abstract class MinimumCostToMakeAtLeastOneValidPathInGridTestsBase<T>
     public void MinCost_WithGridJson_ReturnsMinimumCost(string gridJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJson);
+        var grid = JsonHelper<int[][]>.Parse(gridJson);
 
         var solution = new T();
 

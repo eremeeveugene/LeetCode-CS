@@ -26,7 +26,7 @@ public abstract class ThreeSumTestsBase<T> where T : IThreeSum, new()
     {
         // Arrange
         var nums = JsonHelper<int[]>.Parse(numsJson);
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJson);
+        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
 
         var solution = new T();
 

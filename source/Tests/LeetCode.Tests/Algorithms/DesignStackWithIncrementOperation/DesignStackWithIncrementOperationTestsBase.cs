@@ -31,7 +31,7 @@ public abstract class DesignStackWithIncrementOperationTestsBase<T>
     {
         // Arrange
         var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var args = JsonHelper<int>.DeserializeToJaggedArray(argsJson);
+        var args = JsonHelper<int[][]>.Parse(argsJson);
         var expectedResult = JsonHelper<int?[]>.Parse(expectedResultJson);
 
         var solutionFactory = new T();

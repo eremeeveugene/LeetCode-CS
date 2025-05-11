@@ -27,7 +27,7 @@ public abstract class CreateBinaryTreeFromDescriptionsTestsBase<T> where T : ICr
         // Arrange
         var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
-        var descriptions = JsonHelper<int>.DeserializeToJaggedArray(descriptionsJson);
+        var descriptions = JsonHelper<int[][]>.Parse(descriptionsJson);
 
         var solution = new T();
 

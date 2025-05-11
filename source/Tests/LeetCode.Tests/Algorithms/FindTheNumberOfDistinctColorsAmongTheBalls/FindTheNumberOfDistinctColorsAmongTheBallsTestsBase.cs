@@ -24,7 +24,7 @@ public abstract class FindTheNumberOfDistinctColorsAmongTheBallsTestsBase<T>
         string expectedResultJson)
     {
         // Arrange
-        var queries = JsonHelper<int>.DeserializeToJaggedArray(queriesJson);
+        var queries = JsonHelper<int[][]>.Parse(queriesJson);
         var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();

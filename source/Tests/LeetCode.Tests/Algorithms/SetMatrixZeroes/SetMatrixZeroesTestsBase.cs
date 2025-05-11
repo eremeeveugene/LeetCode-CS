@@ -24,8 +24,8 @@ public abstract class SetMatrixZeroesTestsBase<T> where T : ISetMatrixZeroes, ne
         string expectedResultJson)
     {
         // Arrange
-        var matrix = JsonHelper<int>.DeserializeToJaggedArray(matrixJson);
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJson);
+        var matrix = JsonHelper<int[][]>.Parse(matrixJson);
+        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
 
         var solution = new T();
 

@@ -24,7 +24,7 @@ public abstract class ShiftingLetters2TestsBase<T> where T : IShiftingLetters2, 
         string expectedResult)
     {
         // Arrange
-        var shifts = JsonHelper<int>.DeserializeToJaggedArray(shiftsJson);
+        var shifts = JsonHelper<int[][]>.Parse(shiftsJson);
 
         var solution = new T();
 

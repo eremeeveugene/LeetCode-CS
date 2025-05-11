@@ -23,7 +23,7 @@ public abstract class MatrixDiagonalSumTestsBase<T> where T : IMatrixDiagonalSum
     public void DiagonalSum_WithMatrix_ReturnsSumOfDiagonalElements(string matJson, int expectedResult)
     {
         // Arrange
-        var mat = JsonHelper<int>.DeserializeToJaggedArray(matJson);
+        var mat = JsonHelper<int[][]>.Parse(matJson);
 
         var solution = new T();
 

@@ -23,7 +23,7 @@ public abstract class SlidingPuzzleTestsBase<T> where T : ISlidingPuzzle, new()
     public void SlidingPuzzle_WithBoard_ReturnsMinimumMovesToSolve(string boardJson, int expectedResult)
     {
         // Arrange
-        var board = JsonHelper<int>.DeserializeToJaggedArray(boardJson);
+        var board = JsonHelper<int[][]>.Parse(boardJson);
 
         var solution = new T();
 
