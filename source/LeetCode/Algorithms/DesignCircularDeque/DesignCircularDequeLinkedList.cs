@@ -12,11 +12,17 @@
 namespace LeetCode.Algorithms.DesignCircularDeque;
 
 /// <inheritdoc />
-public class DesignCircularDequeLinkedList(int k) : IDesignCircularDeque
+public class DesignCircularDequeLinkedList : IDesignCircularDeque
 {
+    private readonly int _k;
     private int _count;
     private DequeNode? _frontNode;
     private DequeNode? _rearNode;
+
+    public DesignCircularDequeLinkedList(int k)
+    {
+        _k = k;
+    }
 
     /// <summary>
     ///     Time complexity - O(1)
@@ -191,7 +197,7 @@ public class DesignCircularDequeLinkedList(int k) : IDesignCircularDeque
     /// <returns></returns>
     public bool IsFull()
     {
-        return _count == k;
+        return _count == _k;
     }
 
     private class DequeNode(int value)

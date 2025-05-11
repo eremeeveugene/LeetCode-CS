@@ -16,8 +16,8 @@ namespace LeetCode.Tests.Algorithms.DesignCircularDeque;
 [TestClass]
 public class DesignCircularDequeLinkedListTests : DesignCircularDequeTestsBase
 {
-    protected override IDesignCircularDeque GetSolution(int size)
+    protected override IDesignCircularDeque GetSolution(int k)
     {
-        return new DesignCircularDequeLinkedList(size);
+        return new DesignCircularDequeLinkedList(k);
     }
 }

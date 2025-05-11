@@ -11,75 +11,67 @@
 
 using LeetCode.Algorithms.DesignCircularQueue;
 using LeetCode.Core.Helpers;
+using LeetCode.Tests.Base.Exceptions;
 
 namespace LeetCode.Tests.Algorithms.DesignCircularQueue;
 
-public abstract class DesignCircularQueueTestsBase<T> where T : IDesignCircularQueueFactory, new()
+public abstract class DesignCircularQueueTestsBase
 {
+    private const string EnQueue = "enQueue";
+    private const string DeQueue = "deQueue";
+    private const string IsEmpty = "isEmpty";
+    private const string IsFull = "isFull";
+    private const string Rear = "rear";
+    private const string Front = "front";
+
     [TestMethod]
     [DataRow(3,
-        "[\"EnQueue\", \"EnQueue\", \"EnQueue\", \"DeQueue\", \"EnQueue\", \"Rear\", \"Front\", \"IsFull\"]",
-        "[1, 2, 3, 0, 4, 0, 0, 0]",
-        "[true, true, true, true, true, 4, 2, true]")]
-    [DataRow(1,
-        "[\"EnQueue\", \"Rear\", \"IsFull\", \"DeQueue\", \"IsEmpty\"]",
-        "[1, 0, 0, 0, 0]",
-        "[true, 1, true, true, true]")]
-    [DataRow(5,
-        "[\"EnQueue\", \"EnQueue\", \"EnQueue\", \"EnQueue\", \"EnQueue\", \"IsFull\", \"Rear\", \"Front\", \"DeQueue\", \"DeQueue\", \"EnQueue\", \"Rear\"]",
-        "[1, 2, 3, 4, 5, 0, 0, 0, 0, 0, 6, 0]",
-        "[true, true, true, true, true, true, 5, 1, true, true, true, 6]")]
-    [DataRow(2,
-        "[\"EnQueue\", \"EnQueue\", \"IsFull\", \"DeQueue\", \"IsEmpty\", \"DeQueue\", \"IsEmpty\"]",
-        "[10, 20, 0, 0, 0, 0, 0]",
-        "[true, true, true, true, false, true, true]")]
-    [DataRow(0,
-        "[\"IsEmpty\", \"IsFull\", \"EnQueue\", \"DeQueue\"]",
-        "[0, 0, 1, 0]",
-        "[true, true, false, false]")]
-    public void CircularQueueOperations_WithGivenCapacityAndOperations_PerformsCorrectly(int k,
-        string operationsJson, string argumentsJson, string expectedResultJson)
+        "[\"enQueue\", \"enQueue\", \"enQueue\", \"enQueue\", \"rear\", \"isFull\", \"deQueue\", \"enQueue\", \"rear\"]",
+        "[[1], [2], [3], [4], [], [], [], [4], []]",
+        "[true, true, true, false, 3, true, true, true, 4]")]
+    public void DesignCircularQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(int k,
+        string methodsJson, string argumentsJson, string expectedResultJson)
     {
         // Arrange
-        var operations = JsonHelper<string>.DeserializeToArray(operationsJson);
-        var arguments = JsonHelper<int>.DeserializeToArray(argumentsJson);
-        var expectedResult = JsonHelper<object>.DeserializeToArray(expectedResultJson);
+        var methods = JsonHelper<string[]>.Parse(methodsJson);
+        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
+        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
 
-        var solutionFactory = new T();
-        var solution = solutionFactory.Create(k);
+        var solution = GetSolution(k);
 
         // Act
         var actualResult = new List<object>();
 
-        for (var i = 0; i < operations.Length; i++)
+        for (var i = 0; i < methods.Length; i++)
         {
-            switch (operations[i])
+            switch (methods[i])
             {
-                case "EnQueue":
-                    actualResult.Add(solution.EnQueue(arguments[i]));
+                case EnQueue:
+                    actualResult.Add(solution.EnQueue((int)arguments[i][0]));
                     break;
-                case "DeQueue":
+                case DeQueue:
                     actualResult.Add(solution.DeQueue());
                     break;
-                case "Front":
+                case Front:
                     actualResult.Add(solution.Front());
                     break;
-                case "Rear":
+                case Rear:
                     actualResult.Add(solution.Rear());
                     break;
-                case "IsFull":
+                case IsFull:
                     actualResult.Add(solution.IsFull());
                     break;
-                case "IsEmpty":
+                case IsEmpty:
                     actualResult.Add(solution.IsEmpty());
                     break;
                 default:
-                    throw new ArgumentOutOfRangeException($"Unexpected operation '{operations[i]}' at index {i}.");
+                    throw new UnexpectedMethodException(methods[i]);
             }
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult.Select(i => i.ToString()).ToArray(),
-            actualResult.Select(i => i.ToString()).ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract IDesignCircularQueue GetSolution(int size);
 }

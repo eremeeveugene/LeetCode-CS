@@ -30,7 +30,7 @@ public abstract class DesignCircularDequeTestsBase
     [DataRow(3,
         "[\"insertLast\", \"insertLast\", \"insertFront\", \"insertFront\", \"getRear\", \"isFull\", \"deleteLast\", \"insertFront\", \"getFront\"]",
         "[[1], [2], [3], [4], [], [], [], [4], []]", "[true, true, true, false, 2, true, true, true, 4]")]
-    public void MyCircularDeque_WithMixedOperations_ProcessesOperationsAccordingToSpecification(int k,
+    public void DesignCircularDeque_WithMixedOperations_ProcessesOperationsAccordingToSpecification(int k,
         string methodsJson, string argumentsJson, string expectedResultJson)
     {
         // Arrange
