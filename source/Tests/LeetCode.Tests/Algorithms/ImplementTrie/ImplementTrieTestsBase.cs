@@ -24,13 +24,13 @@ public abstract class ImplementTrieTestsBase<T> where T : IImplementTrie, new()
     [DataRow("[\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]",
         "[\"apple\",\"apple\",\"app\",\"app\",\"app\",\"app\"]",
         "[true,false,true,true]")]
-    public void TrieOperations_WithMultipleCommands_ReturnsActionResults(string methodsJsonArray, string argsJsonArray,
-        string expectedResultsJsonArray)
+    public void TrieOperations_WithMultipleCommands_ReturnsActionResults(string methodsJson, string argsJson,
+        string expectedResultsJson)
     {
         // Arrange
-        var methods = JsonHelper<string>.DeserializeToArray(methodsJsonArray);
-        var args = JsonHelper<string>.DeserializeToArray(argsJsonArray);
-        var expectedResult = JsonHelper<bool>.DeserializeToArray(expectedResultsJsonArray);
+        var methods = JsonHelper<string[]>.Parse(methodsJson);
+        var args = JsonHelper<string[]>.Parse(argsJson);
+        var expectedResult = JsonHelper<bool[]>.Parse(expectedResultsJson);
 
         var solution = new T();
 

@@ -20,12 +20,12 @@ public abstract class FindTheNumberOfDistinctColorsAmongTheBallsTestsBase<T>
     [TestMethod]
     [DataRow(4, "[[1,4],[2,5],[1,3],[3,4]]", "[1,2,2,3]")]
     [DataRow(4, "[[0,1],[1,2],[2,2],[3,4],[4,5]]", "[1,2,2,3,4]")]
-    public void QueryResults_WithLimitAndQueries_ReturnsQueryResults(int limit, string queriesJsonArray,
-        string expectedResultJsonArray)
+    public void QueryResults_WithLimitAndQueries_ReturnsQueryResults(int limit, string queriesJson,
+        string expectedResultJson)
     {
         // Arrange
-        var queries = JsonHelper<int>.DeserializeToJaggedArray(queriesJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var queries = JsonHelper<int[][]>.Parse(queriesJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

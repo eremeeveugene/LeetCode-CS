@@ -23,11 +23,11 @@ public abstract class MinimumNumberOfOperationsToSortBinaryTreeByLevelTestsBase<
     [DataRow("[1,2,3,4,5,6]", 0)]
     [DataRow("[1,3,2,7,6,5,4]", 3)]
     [DataRow("[1,4,3,7,6,8,5,null,null,null,null,9,null,10]", 3)]
-    public void MinimumOperations_WithBinaryTreeInput_ReturnsMinOperationsToSortLevelOrders(string rootJsonArray,
+    public void MinimumOperations_WithBinaryTreeInput_ReturnsMinOperationsToSortLevelOrders(string rootJson,
         int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
 
         var solution = new T();

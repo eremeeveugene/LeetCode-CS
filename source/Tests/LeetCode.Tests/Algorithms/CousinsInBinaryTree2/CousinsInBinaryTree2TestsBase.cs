@@ -22,13 +22,13 @@ public abstract class CousinsInBinaryTree2TestsBase<T> where T : ICousinsInBinar
     [TestMethod]
     [DataRow("[5,4,9,1,10,null,7]", "[0,0,0,7,7,null,11]")]
     [DataRow("[3,1,2]", "[0,0,0]")]
-    public void ReplaceValueInTree_GivenRootNode_ReturnsTreeWithReplacedValues(string rootJsonArray,
-        string expectedResultJsonArray)
+    public void ReplaceValueInTree_GivenRootNode_ReturnsTreeWithReplacedValues(string rootJson,
+        string expectedResultJson)
     {
         // Arrange
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
 
         var solution = new T();

@@ -21,12 +21,12 @@ public abstract class FinalPricesWithSpecialDiscountInShopTestsBase<T>
     [DataRow("[8,4,6,2,3]", "[4,2,4,2,3]")]
     [DataRow("[1,2,3,4,5]", "[1,2,3,4,5]")]
     [DataRow("[10,1,1,6]", "[9,0,1,6]")]
-    public void FinalPrices_WithPriceArray_ReturnsDiscountedPrices(string pricesJsonArray,
-        string expectedResultJsonArray)
+    public void FinalPrices_WithPriceArray_ReturnsDiscountedPrices(string pricesJson,
+        string expectedResultJson)
     {
         // Arrange
-        var prices = JsonHelper<int>.DeserializeToArray(pricesJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var prices = JsonHelper<int[]>.Parse(pricesJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

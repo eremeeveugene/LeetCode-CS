@@ -19,11 +19,11 @@ public abstract class DivideArrayIntoEqualPairsTestsBase<T> where T : IDivideArr
     [TestMethod]
     [DataRow("[3,2,3,2,2,2]", true)]
     [DataRow("[1,2,3,4]", false)]
-    public void DivideArray_WithGivenIntegerArray_ReturnsTrueIfPairsCanBeFormedOtherwiseFalse(string numsJsonArray,
+    public void DivideArray_WithGivenIntegerArray_ReturnsTrueIfPairsCanBeFormedOtherwiseFalse(string numsJson,
         bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

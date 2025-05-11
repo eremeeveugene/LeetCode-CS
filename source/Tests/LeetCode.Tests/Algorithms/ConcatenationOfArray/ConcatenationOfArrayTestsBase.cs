@@ -19,12 +19,12 @@ public abstract class ConcatenationOfArrayTestsBase<T> where T : IConcatenationO
     [TestMethod]
     [DataRow("[1, 2, 1]", "[1, 2, 1, 1, 2, 1]")]
     [DataRow("[1, 3, 2, 1]", "[1, 3, 2, 1, 1, 3, 2, 1]")]
-    public void GetConcatenation_WithInputArray_ReturnsConcatenatedArray(string numsJsonArray,
-        string expectedResultJsonArray)
+    public void GetConcatenation_WithInputArray_ReturnsConcatenatedArray(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

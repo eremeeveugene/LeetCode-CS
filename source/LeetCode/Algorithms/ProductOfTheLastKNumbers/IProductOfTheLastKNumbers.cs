@@ -17,5 +17,6 @@ namespace LeetCode.Algorithms.ProductOfTheLastKNumbers;
 public interface IProductOfTheLastKNumbers
 {
     void Add(int num);
+
     int GetProduct(int k);
 }

@@ -20,13 +20,13 @@ public abstract class FindTheDifferenceOfTwoArraysTestsBase<T> where T : IFindTh
     [TestMethod]
     [DataRow("[1, 2, 3]", "[2, 4, 6]", "[[1,3],[4,6]]")]
     [DataRow("[1, 2, 3, 3]", "[1, 1, 2, 2]", "[[3],[]]")]
-    public void FindDifference_GivenTwoArrays_ReturnsDifferenceInJaggedArray(string nums1JsonArray,
-        string nums2JsonArray, string jsonExpectedResult)
+    public void FindDifference_WithTwoIntegerArrays_ReturnsUniqueElementsInEachArray(string nums1Json,
+        string nums2Json, string jsonExpectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper<int>.DeserializeToArray(nums1JsonArray);
-        var nums2 = JsonHelper<int>.DeserializeToArray(nums2JsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedList(jsonExpectedResult);
+        var nums1 = JsonHelper<int[]>.Parse(nums1Json);
+        var nums2 = JsonHelper<int[]>.Parse(nums2Json);
+        var expectedResult = JsonHelper<IList<IList<int>>>.Parse(jsonExpectedResult);
 
         var solution = new T();
 
@@ -34,6 +34,6 @@ public abstract class FindTheDifferenceOfTwoArraysTestsBase<T> where T : IFindTh
         var actualResult = solution.FindDifference(nums1, nums2);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

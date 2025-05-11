@@ -21,12 +21,12 @@ public abstract class CanMakeArithmeticProgressionFromSequenceTestsBase<T>
     [DataRow("[3,5,1]", true)]
     [DataRow("[1,2,4]", false)]
     public void CanMakeArithmeticProgression_GivenArray_ReturnsWhetherArithmeticProgressionIsPossible(
-        string arrJsonArray, bool expectedResult)
+        string arrJson, bool expectedResult)
     {
         // Arrange
         var solution = new T();
 
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
 
         // Act
         var actualResult = solution.CanMakeArithmeticProgression(arr);

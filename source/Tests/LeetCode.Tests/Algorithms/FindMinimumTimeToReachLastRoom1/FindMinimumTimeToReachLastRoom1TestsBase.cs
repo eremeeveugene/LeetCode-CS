@@ -27,11 +27,11 @@ public abstract class FindMinimumTimeToReachLastRoom1TestsBase<T> where T : IFin
     [DataRow(
         "[[63,102,19,11,110,26,89,101,19],[7,17,119,94,44,3,30,111,54],[20,66,72,19,76,6,16,0,97],[7,48,113,22,14,100,99,91,60]]",
         93)]
-    public void MinTimeToReach_WithJaggedArrayOfMoveTimes_ReturnsMinimumTotalTime(string moveTimeJsonArray,
+    public void MinTimeToReach_WithMoveTimeMatrix_ReturnsMinimumTimeRequired(string moveTimeJson,
         int expectedResult)
     {
         // Arrange
-        var moveTime = JsonHelper<int>.DeserializeToJaggedArray(moveTimeJsonArray);
+        var moveTime = JsonHelper<int[][]>.Parse(moveTimeJson);
 
         var solution = new T();
 

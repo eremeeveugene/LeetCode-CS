@@ -21,12 +21,12 @@ public abstract class TwoSumTestsBase<T> where T : ITwoSum, new()
     [DataRow("[3, 2, 4]", 6, "[1, 2]")]
     [DataRow("[3, 3]", 6, "[0, 1]")]
     [DataRow("[2, 5, 5, 11]", 10, "[1, 2]")]
-    public void TwoSum_WithIntArrayAndTarget_ReturnsIndicesOfNumbersAddingToTarget(string numsJsonArray, int target,
-        string expectedResultJsonArray)
+    public void TwoSum_WithIntArrayAndTarget_ReturnsIndicesOfNumbersAddingToTarget(string numsJson, int target,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

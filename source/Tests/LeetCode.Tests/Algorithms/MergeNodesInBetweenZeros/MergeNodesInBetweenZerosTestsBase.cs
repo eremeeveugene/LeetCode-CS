@@ -22,13 +22,13 @@ public abstract class MergeNodesInBetweenZerosTestsBase<T> where T : IMergeNodes
     [DataRow("[0,3,1,0,4,5,2,0]", "[4,11]")]
     [DataRow("[0,1,0,3,0,2,2,0]", "[1,3,4]")]
     [DataRow("[0,200,300,0,400,500,0]", "[500,900]")]
-    public void MergeNodes_WithVariousHeadArrays_ReturnsCorrectMergedNodes(string headJsonArray,
-        string expectedResultJsonArray)
+    public void MergeNodes_WithZeroDelimitedValues_ReturnsListWithSegmentSums(string headJson,
+        string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
+        var headArray = JsonHelper<int[]>.Parse(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int[]>.Parse(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

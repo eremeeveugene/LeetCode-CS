@@ -21,11 +21,11 @@ public abstract class MinimumNumberOfOperationsToMakeElementsInArrayDistinctTest
     [DataRow("[1,2,3,4,2,3,3,5,7]", 2)]
     [DataRow("[4,5,6,4,4]", 2)]
     [DataRow("[6,7,8,9]", 0)]
-    public void MinimumOperations_GivenArrayOfNumbers_ReturnsMinimumOperationsCount(string numsJsonArray,
+    public void MinimumOperations_GivenArrayOfNumbers_ReturnsMinimumOperationsCount(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

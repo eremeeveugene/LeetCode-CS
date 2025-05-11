@@ -24,10 +24,10 @@ public abstract class DifferentWaysToAddParenthesesTestsBase<T> where T : IDiffe
     [DataRow("9-8+7-6+5-4",
         "[1,1,-1,9,-1,1,1,-1,-1,9,-1,9,-1,-1,1,1,3,-7,3,-13,-13,1,1,1,1,3,-11,3,1,-9,1,-9,-9,-7,3,-21,-7,1,1,3,-11,3]")]
     public void DiffWaysToCompute_WithExpression_ReturnsAllPossibleResults(string expression,
-        string expectedResultJsonArray)
+        string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

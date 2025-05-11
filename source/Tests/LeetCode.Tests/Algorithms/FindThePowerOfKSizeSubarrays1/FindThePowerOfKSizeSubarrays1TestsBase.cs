@@ -20,12 +20,12 @@ public abstract class FindThePowerOfKSizeSubarrays1TestsBase<T> where T : IFindT
     [DataRow("[1,2,3,4,3,2,5]", 3, "[3,4,-1,-1,-1]")]
     [DataRow("[2,2,2,2,2]", 4, "[-1,-1]")]
     [DataRow("[3,2,3,2,3,2]", 2, "[-1,3,-1,3,-1]")]
-    public void ResultsArray_WithInputArrayAndK_ReturnsTransformedArray(string numsJsonArray, int k,
-        string expectedResultJsonArray)
+    public void ResultsArray_WithInputArrayAndK_ReturnsTransformedArray(string numsJson, int k,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

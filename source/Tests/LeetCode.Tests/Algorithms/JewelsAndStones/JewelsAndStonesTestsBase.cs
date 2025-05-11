@@ -18,7 +18,7 @@ public abstract class JewelsAndStonesTestsBase<T> where T : IJewelsAndStones, ne
     [TestMethod]
     [DataRow("aA", "aAAbbbb", 3)]
     [DataRow("z", "ZZ", 0)]
-    public void NumJewelsInStones_WithJewelsAndStones_ReturnsCorrectCount(string jewels, string stones,
+    public void NumJewelsInStones_WithJewelsAndStones_ReturnsJewelCount(string jewels, string stones,
         int expectedResult)
     {
         // Arrange

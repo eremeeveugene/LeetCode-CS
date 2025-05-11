@@ -20,10 +20,10 @@ public abstract class NumberOfSubArraysWithOddSumTestsBase<T> where T : INumberO
     [DataRow("[1,3,5]", 4)]
     [DataRow("[2,4,6]", 0)]
     [DataRow("[1,2,3,4,5,6,7]", 16)]
-    public void NumOfSubarrays_WithGivenArray_ReturnsCountOfOddSumSubarrays(string arrJsonArray, int expectedResult)
+    public void NumOfSubarrays_WithGivenArray_ReturnsCountOfOddSumSubarrays(string arrJson, int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
 
         var solution = new T();
 

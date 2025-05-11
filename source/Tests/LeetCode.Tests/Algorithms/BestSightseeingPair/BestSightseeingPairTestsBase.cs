@@ -19,10 +19,10 @@ public abstract class BestSightseeingPairTestsBase<T> where T : IBestSightseeing
     [TestMethod]
     [DataRow("[1,2]", 2)]
     [DataRow("[8,1,5,2,6]", 11)]
-    public void MaxScoreSightseeingPair_WithValuesArray_ReturnsMaxScore(string valuesJsonArray, int expectedResult)
+    public void MaxScoreSightseeingPair_WithValuesArray_ReturnsMaxScore(string valuesJson, int expectedResult)
     {
         // Arrange
-        var values = JsonHelper<int>.DeserializeToArray(valuesJsonArray);
+        var values = JsonHelper<int[]>.Parse(valuesJson);
 
         var solution = new T();
 

@@ -19,13 +19,13 @@ public abstract class FindIfPathExistsInGraphTestsBase<T> where T : IFindIfPathE
     [TestMethod]
     [DataRow(3, "[[0,1],[1,2],[2,0]]", 0, 2, true)]
     [DataRow(6, "[[0,1],[0,2],[3,5],[5,4],[4,3]]", 0, 5, false)]
-    public void ValidPath_GivenNumberOfNodesEdgesSourceAndDestination_ReturnsExpectedBoolean(int n,
-        string edgesJsonArray, int source, int destination, bool expectedResult)
+    public void ValidPath_WithGraphAndSourceDestination_ReturnsWhetherPathExistsBetweenNodes(int n, string edgesJson,
+        int source, int destination, bool expectedResult)
     {
         // Arrange
         var solution = new T();
 
-        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJsonArray);
+        var edges = JsonHelper<int[][]>.Parse(edgesJson);
 
         // Act
         var actualResult = solution.ValidPath(n, edges, source, destination);

@@ -20,10 +20,10 @@ public abstract class SlidingPuzzleTestsBase<T> where T : ISlidingPuzzle, new()
     [DataRow("[[1,2,3],[4,0,5]]", 1)]
     [DataRow("[[1,2,3],[5,4,0]]", -1)]
     [DataRow("[[4,1,2],[5,0,3]]", 5)]
-    public void SlidingPuzzle_WithBoard_ReturnsMinimumMovesToSolve(string boardJsonArray, int expectedResult)
+    public void SlidingPuzzle_WithBoard_ReturnsMinimumMovesToSolve(string boardJson, int expectedResult)
     {
         // Arrange
-        var board = JsonHelper<int>.DeserializeToJaggedArray(boardJsonArray);
+        var board = JsonHelper<int[][]>.Parse(boardJson);
 
         var solution = new T();
 

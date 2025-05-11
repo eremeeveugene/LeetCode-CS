@@ -14,4 +14,10 @@ using LeetCode.Algorithms.DesignCircularQueue;
 namespace LeetCode.Tests.Algorithms.DesignCircularQueue;
 
 [TestClass]
-public class DesignCircularQueueLinkedListTests : DesignCircularQueueTestsBase<DesignCircularQueueLinkedListFactory>;
+public class DesignCircularQueueLinkedListTests : DesignCircularQueueTestsBase
+{
+    protected override IDesignCircularQueue GetSolution(int k)
+    {
+        return new DesignCircularQueueLinkedList(k);
+    }
+}

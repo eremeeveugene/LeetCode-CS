@@ -16,13 +16,20 @@ namespace LeetCode.Core.Models;
 /// <summary>
 ///     Definition for a binary tree node
 /// </summary>
-public class TreeNode(int? val = null, TreeNode? left = null, TreeNode? right = null)
+public class TreeNode
 {
-    public TreeNode? left = left;
+    public TreeNode? left;
 
-    public TreeNode? right = right;
+    public TreeNode? right;
 
-    public int val = val ?? 0;
+    public int val;
+
+    public TreeNode(int? val = null, TreeNode? left = null, TreeNode? right = null)
+    {
+        this.left = left;
+        this.right = right;
+        this.val = val ?? 0;
+    }
 
     public static TreeNode? ToTreeNode(IEnumerable<int?> values)
     {
@@ -35,6 +42,7 @@ public class TreeNode(int? val = null, TreeNode? left = null, TreeNode? right = 
 
         var root = new TreeNode(enumerator.Current.Value);
         var queue = new Queue<TreeNode>();
+
         queue.Enqueue(root);
 
         while (queue.Count > 0)

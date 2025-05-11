@@ -20,12 +20,12 @@ public abstract class RowWithMaximumOnesTestsBase<T> where T : IRowWithMaximumOn
     [DataRow("[[0,1],[1,0]]", "[0,1]")]
     [DataRow("[[0,0,0],[0,1,1]]", "[1,2]")]
     [DataRow("[[0,0],[1,1],[0,0]]", "[1,2]")]
-    public void RowAndMaximumOnes_WithMatrix_ReturnsRowIndexAndMaxOnesCount(string matJsonArray,
-        string expectedResultJsonArray)
+    public void RowAndMaximumOnes_WithMatrix_ReturnsRowIndexAndMaxOnesCount(string matJson,
+        string expectedResultJson)
     {
         // Arrange
-        var mat = JsonHelper<int>.DeserializeToJaggedArray(matJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var mat = JsonHelper<int[][]>.Parse(matJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

@@ -19,11 +19,11 @@ public abstract class TakeGiftsFromTheRichestPileTestsBase<T> where T : ITakeGif
     [TestMethod]
     [DataRow("[25,64,9,4,100]", 4, 29)]
     [DataRow("[1,1,1,1]", 4, 4)]
-    public void PickGifts_WithGiftArrayAndIterations_ReturnsTotalValueAfterKRemovals(string giftsJsonArray, int k,
+    public void PickGifts_WithGiftArrayAndIterations_ReturnsTotalValueAfterKRemovals(string giftsJson, int k,
         long expectedResult)
     {
         // Arrange
-        var gifts = JsonHelper<int>.DeserializeToArray(giftsJsonArray);
+        var gifts = JsonHelper<int[]>.Parse(giftsJson);
 
         var solution = new T();
 

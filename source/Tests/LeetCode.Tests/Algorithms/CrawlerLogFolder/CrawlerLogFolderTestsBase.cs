@@ -20,10 +20,10 @@ public abstract class CrawlerLogFolderTestsBase<T> where T : ICrawlerLogFolder, 
     [DataRow("[\"d1/\", \"../\", \"../\", \"../\"]", 0)]
     [DataRow("[\"d1/\", \"d2/\", \"../\", \"d21/\", \"./\"]", 2)]
     [DataRow("[\"d1/\", \"d2/\", \"./\", \"d3/\", \"../\", \"d31/\"]", 3)]
-    public void MinOperations_GivenLogsArray_ReturnsMinOperationsCount(string logsJsonArray, int expectedResult)
+    public void MinOperations_GivenLogsArray_ReturnsMinOperationsCount(string logsJson, int expectedResult)
     {
         // Arrange
-        var logs = JsonHelper<string>.DeserializeToArray(logsJsonArray);
+        var logs = JsonHelper<string[]>.Parse(logsJson);
 
         var solution = new T();
 

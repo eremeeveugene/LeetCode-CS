@@ -20,10 +20,10 @@ public abstract class FindMinimumOperationsToMakeAllElementsDivisibleByThreeTest
     [TestMethod]
     [DataRow("[1, 2, 3, 4]", 3)]
     [DataRow("[3, 6, 9]", 0)]
-    public void MinimumOperations_WithGivenNums_ReturnsMinimumOperationsCount(string numsJsonArray, int expectedResult)
+    public void MinimumOperations_WithGivenNums_ReturnsMinimumOperationsCount(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

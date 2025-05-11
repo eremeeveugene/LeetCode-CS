@@ -29,13 +29,13 @@ public abstract class ReverseOddLevelsOfBinaryTreeTestsBase<T> where T : IRevers
     [DataRow("[1,2,null,3,null,4,null,5]", "[1,2,null,3,null,4,null,5]")]
     [DataRow("[1,null,2,null,3,null,4,null,5]", "[1,null,2,null,3,null,4,null,5]")]
     [DataRow("[1,2,3,4,null,null,5,6,null,null,7]", "[1,3,2,4,null,null,5,7,null,null,6]")]
-    public void ReverseOddLevels_GivenTree_ReturnsTreeWithOddLevelsReversed(string rootJsonArray,
-        string expectedResultJsonArray)
+    public void ReverseOddLevels_GivenTree_ReturnsTreeWithOddLevelsReversed(string rootJson,
+        string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();

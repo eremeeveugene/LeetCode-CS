@@ -21,13 +21,13 @@ public abstract class DesignFrontMiddleBackQueueTestsBase<T> where T : IDesignFr
         "[\"PushFront\", \"PushBack\", \"PushMiddle\", \"PushMiddle\", \"PopFront\", \"PopMiddle\", \"PopMiddle\", \"PopBack\", \"PopFront\"]",
         "[1, 2, 3, 4, 0, 0, 0, 0, 0]",
         "[1, 3, 4, 2, -1]")]
-    public void DequeOperations_WithPushAndPopOperations_PerformsCorrectly(string operationsJsonArray,
-        string argumentsJsonArray, string expectedResultJsonArray)
+    public void DequeOperations_WithPushAndPopOperations_PerformsCorrectly(string operationsJson,
+        string argumentsJson, string expectedResultJson)
     {
         // Arrange
-        var operations = JsonHelper<string>.DeserializeToArray(operationsJsonArray);
-        var arguments = JsonHelper<int>.DeserializeToArray(argumentsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var operations = JsonHelper<string[]>.Parse(operationsJson);
+        var arguments = JsonHelper<int[]>.Parse(argumentsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

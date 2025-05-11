@@ -21,13 +21,12 @@ public abstract class NaryTreePreorderTraversalTestsBase<T> where T : INaryTreeP
     [DataRow("[1,null,3,2,4,null,5,6]", "[1,3,5,6,2,4]")]
     [DataRow("[1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]",
         "[1,2,3,6,7,11,14,4,8,12,5,9,13,10]")]
-    public void PreorderTraversal_WithVariousTreeStructures_ReturnsCorrectPreorderList(string rootJsonArray,
-        string expectedResultJsonArray)
+    public void Preorder_WithNaryTree_ReturnsPreorderTraversalOfNodes(string rootJson, string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = Node.ToNode(rootArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

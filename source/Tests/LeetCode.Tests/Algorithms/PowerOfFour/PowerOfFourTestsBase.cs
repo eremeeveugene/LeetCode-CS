@@ -26,7 +26,7 @@ public abstract class PowerOfFourTestsBase<T> where T : IPowerOfFour, new()
     [DataRow(16, true)]
     [DataRow(32, false)]
     [DataRow(64, true)]
-    public void IsPowerOfFour_GivenNumber_ReturnsExpectedBoolean(int n, bool expectedResult)
+    public void IsPowerOfFour_WithIntegerInput_ReturnsTrueIfInputIsPowerOfFour(int n, bool expectedResult)
     {
         // Arrange
         var solution = new T();

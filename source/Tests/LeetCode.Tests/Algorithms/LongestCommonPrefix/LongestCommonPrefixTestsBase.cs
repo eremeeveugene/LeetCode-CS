@@ -31,11 +31,11 @@ public abstract class LongestCommonPrefixTestsBase<T> where T : ILongestCommonPr
     [DataRow("[\"prefix\",\"pretext\",\"preference\",\"pre\"]", "pre")]
     [DataRow("[\"ab\",\"ab\",\"abc\"]", "ab")]
     [DataRow("[\"longest\",\"longer\",\"long\",\"longing\"]", "long")]
-    public void LongestCommonPrefix_GivenStringsArray_ReturnsCorrectCommonPrefix(string strsJsonArray,
+    public void LongestCommonPrefix_WithStringArray_ReturnsLongestCommonPrefix(string strsJson,
         string expectedResult)
     {
         // Arrange
-        var strs = JsonHelper<string>.DeserializeToArray(strsJsonArray);
+        var strs = JsonHelper<string[]>.Parse(strsJson);
 
         var solution = new T();
 

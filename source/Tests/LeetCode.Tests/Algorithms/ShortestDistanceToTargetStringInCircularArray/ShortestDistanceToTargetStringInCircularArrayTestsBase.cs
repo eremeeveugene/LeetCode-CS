@@ -22,10 +22,10 @@ public abstract class ShortestDistanceToTargetStringInCircularArrayTestsBase<T>
     [DataRow("[\"a\",\"b\",\"leetcode\"]", "leetcode", 0, 1)]
     [DataRow("[\"i\",\"eat\",\"leetcode\"]", "ate", 0, -1)]
     public void ClosetTarget_WithWordsArrayTargetAndStartIndex_ReturnsShortestDistanceToTargetString(
-        string wordsJsonArray, string target, int startIndex, int expectedResult)
+        string wordsJson, string target, int startIndex, int expectedResult)
     {
         // Arrange
-        var words = JsonHelper<string>.DeserializeToArray(wordsJsonArray);
+        var words = JsonHelper<string[]>.Parse(wordsJson);
 
         var solution = new T();
 

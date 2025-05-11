@@ -25,12 +25,12 @@ public abstract class FindTheLengthOfTheLongestCommonPrefixTestsBase<T>
     [DataRow("[1248,364524,73264823,2937935]", "[73249,94895,656324,239583,1249]", 3)]
     [DataRow("[123987, 567890, 234567, 890123, 456789]", "[908123, 456123, 789012, 234567]", 6)]
     [DataRow("[10987654, 123, 87654321, 654321]", "[109876, 1234567, 87654321, 654]", 8)]
-    public void LongestCommonPrefix_GivenTwoIntegerArrays_ReturnsLongestCommonPrefix(string arr1JsonArray,
-        string arr2JsonArray, int expectedResult)
+    public void LongestCommonPrefix_GivenTwoIntegerArrays_ReturnsLongestCommonPrefix(string arr1Json,
+        string arr2Json, int expectedResult)
     {
         // Arrange
-        var arr1 = JsonHelper<int>.DeserializeToArray(arr1JsonArray);
-        var arr2 = JsonHelper<int>.DeserializeToArray(arr2JsonArray);
+        var arr1 = JsonHelper<int[]>.Parse(arr1Json);
+        var arr2 = JsonHelper<int[]>.Parse(arr2Json);
 
         var solution = new T();
 

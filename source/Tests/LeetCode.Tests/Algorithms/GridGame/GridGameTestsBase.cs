@@ -20,11 +20,11 @@ public abstract class GridGameTestsBase<T> where T : IGridGame, new()
     [DataRow("[[2,5,4],[1,5,1]]", 4)]
     [DataRow("[[3,3,1],[8,5,2]]", 4)]
     [DataRow("[[1,3,1,15],[1,3,3,1]]", 7)]
-    public void GridGame_WithInputGrid_ReturnsPointsCollectedBySecondRobot(string gridJsonArray,
+    public void GridGame_WithInputGrid_ReturnsPointsCollectedBySecondRobot(string gridJson,
         long expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJsonArray);
+        var grid = JsonHelper<int[][]>.Parse(gridJson);
 
         var solution = new T();
 

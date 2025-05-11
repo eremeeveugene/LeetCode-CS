@@ -24,10 +24,10 @@ public abstract class LexicographicalNumbersTestsBase<T> where T : ILexicographi
     [DataRow(13, "[1,10,11,12,13,2,3,4,5,6,7,8,9]")]
     [DataRow(50,
         "[1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,24,25,26,27,28,29,3,30,31,32,33,34,35,36,37,38,39,4,40,41,42,43,44,45,46,47,48,49,5,50,6,7,8,9]")]
-    public void LexicalOrder_WithGivenN_ReturnsLexicographicallySortedArray(int n, string expectedResultJsonArray)
+    public void LexicalOrder_WithGivenN_ReturnsLexicographicallySortedArray(int n, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

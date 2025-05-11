@@ -21,12 +21,12 @@ public abstract class ReorderListTestsBase<T> where T : IReorderList, new()
     [TestMethod]
     [DataRow("[1,2,3,4]", "[1,4,2,3]")]
     [DataRow("[1,2,3,4,5]", "[1,5,2,4,3]")]
-    public void ReorderList_GivenHeadArray_ResultsInExpectedOrder(string headJsonArray, string expectedResultJsonArray)
+    public void ReorderList_GivenHeadArray_ResultsInExpectedOrder(string headJson, string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
+        var headArray = JsonHelper<int[]>.Parse(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int[]>.Parse(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

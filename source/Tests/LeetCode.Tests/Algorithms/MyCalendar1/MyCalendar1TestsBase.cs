@@ -18,13 +18,13 @@ public abstract class MyCalendar1TestsBase<T> where T : IMyCalendar1, new()
 {
     [TestMethod]
     [DataRow("[10,15,20]", "[20,25,30]", "[true,false,true]")]
-    public void Book_WithStartAndEndTimes_ReturnsBookingResults(string startJsonArray, string endJsonArray,
-        string expectedResultJsonArray)
+    public void Book_WithStartAndEndTimes_ReturnsBookingResults(string startJson, string endJson,
+        string expectedResultJson)
     {
         // Arrange
-        var start = JsonHelper<int>.DeserializeToArray(startJsonArray);
-        var end = JsonHelper<int>.DeserializeToArray(endJsonArray);
-        var expectedResult = JsonHelper<bool>.DeserializeToArray(expectedResultJsonArray);
+        var start = JsonHelper<int[]>.Parse(startJson);
+        var end = JsonHelper<int[]>.Parse(endJson);
+        var expectedResult = JsonHelper<bool[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

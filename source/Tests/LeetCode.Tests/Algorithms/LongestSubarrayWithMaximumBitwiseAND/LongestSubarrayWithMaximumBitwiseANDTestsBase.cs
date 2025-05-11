@@ -22,11 +22,11 @@ public abstract class LongestSubarrayWithMaximumBitwiseANDTestsBase<T>
     [DataRow("[1,2,3,3,2,2]", 2)]
     [DataRow("[311155,311155,311155,311155,311155,311155,311155,311155,201191,311155]", 8)]
     [DataRow("[378034,378034,378034]", 3)]
-    public void LongestSubarray_GivenArrayOfIntegers_ReturnsLengthOfLongestSubarray(string numsJsonArray,
+    public void LongestSubarray_GivenArrayOfIntegers_ReturnsLengthOfLongestSubarray(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

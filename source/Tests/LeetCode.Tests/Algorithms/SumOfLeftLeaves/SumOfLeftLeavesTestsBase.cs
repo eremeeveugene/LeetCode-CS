@@ -23,10 +23,10 @@ public abstract class SumOfLeftLeavesTestsBase<T> where T : ISumOfLeftLeaves, ne
     [DataRow("[0,2,4,1,null,3,-1,5,1,null,6,null,8]", 5)]
     [DataRow("[1,2,3,4,5]", 4)]
     [DataRow("[-9,-3,2,null,4,4,0,-6,null,-5]", -11)]
-    public void SumOfLeftLeaves_GivenTreeRoot_ReturnsSumOfLeftLeafValues(string rootJsonArray, int expectedResult)
+    public void SumOfLeftLeaves_GivenTreeRoot_ReturnsSumOfLeftLeafValues(string rootJson, int expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var arrayRoot = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(arrayRoot);
 
         var solution = new T();

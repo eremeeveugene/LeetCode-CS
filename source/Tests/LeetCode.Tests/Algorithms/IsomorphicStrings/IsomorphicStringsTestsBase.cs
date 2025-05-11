@@ -20,7 +20,8 @@ public abstract class IsomorphicStringsTestsBase<T> where T : IIsomorphicStrings
     [DataRow("foo", "bar", false)]
     [DataRow("paper", "title", true)]
     [DataRow("badc", "baba", false)]
-    public void IsIsomorphic_WithTwoStrings_ReturnsExpectedBoolean(string s, string t, bool expectedResult)
+    public void IsIsomorphic_WithTwoStrings_ReturnsTrueIfCharactersCanBeMappedOneToOne(string s, string t,
+        bool expectedResult)
     {
         // Arrange
         var solution = new T();

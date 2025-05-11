@@ -28,15 +28,15 @@ public abstract class FindCommonCharactersTestsBase<T> where T : IFindCommonChar
     [DataRow(
         "[\"daaccccd\", \"adacbdda\", \"abddbaba\", \"bacbcbcb\", \"bdaaaddc\", \"cdadacba\", \"bacbdcda\", \"bacdaacd\"]",
         "[\"a\"]")]
-    public void CommonChars_WithGivenWordsArray_ReturnsCommonCharacters(string wordsJsonArray,
-        string expectedResultJsonArray)
+    public void CommonChars_WithGivenWordsArray_ReturnsCommonCharacters(string wordsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var words = JsonHelper<string>.DeserializeToArray(wordsJsonArray);
+        var words = JsonHelper<string[]>.Parse(wordsJson);
 
         var solution = new T();
 
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
 
         // Act
         var actualResult = solution.CommonChars(words);

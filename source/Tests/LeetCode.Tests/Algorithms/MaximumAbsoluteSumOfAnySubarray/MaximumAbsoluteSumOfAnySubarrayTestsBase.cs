@@ -19,11 +19,11 @@ public abstract class MaximumAbsoluteSumOfAnySubarrayTestsBase<T> where T : IMax
     [TestMethod]
     [DataRow("[1,-3,2,3,-4]", 5)]
     [DataRow("[2,-5,1,-4,3,-2]", 8)]
-    public void MaxAbsoluteSum_GivenArrayOfIntegers_ReturnsMaxAbsoluteSubarraySum(string numsJsonArray,
+    public void MaxAbsoluteSum_GivenArrayOfIntegers_ReturnsMaxAbsoluteSubarraySum(string numsJson,
         double expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

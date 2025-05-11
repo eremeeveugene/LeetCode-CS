@@ -22,11 +22,11 @@ public abstract class ThreeSumTestsBase<T> where T : IThreeSum, new()
     [DataRow("[0, 0, 0]", "[[0, 0, 0]]")]
     [DataRow("[-3, -2, 1, 1, 2]", "[[-3, 1, 2], [-2, 1, 1]]")]
     [DataRow("[3, 0, -2, -1, 1, 2]", "[[-2, -1, 3],[-2, 0, 2],[-1, 0, 1]]")]
-    public void ThreeSum_WithIntArray_ReturnsTripletsThatSumToZero(string numsJsonArray, string expectedResultJsonArray)
+    public void ThreeSum_WithIntArray_ReturnsTripletsThatSumToZero(string numsJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
 
         var solution = new T();
 

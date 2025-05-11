@@ -19,12 +19,12 @@ public abstract class SpiralMatrixTestsBase<T> where T : ISpiralMatrix, new()
     [TestMethod]
     [DataRow("[[1,2,3],[4,5,6],[7,8,9]]", "[1,2,3,6,9,8,7,4,5]")]
     [DataRow("[[1,2,3,4],[5,6,7,8],[9,10,11,12]]", "[1,2,3,4,8,12,11,10,9,5,6,7]")]
-    public void SpiralOrder_With2DMatrix_ReturnsElementsInSpiralOrder(string matrixJsonArray,
-        string expectedResultJsonArray)
+    public void SpiralOrder_With2DMatrix_ReturnsElementsInSpiralOrder(string matrixJson,
+        string expectedResultJson)
     {
         // Arrange
-        var matrix = JsonHelper<int>.DeserializeToJaggedArray(matrixJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var matrix = JsonHelper<int[][]>.Parse(matrixJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

@@ -19,10 +19,10 @@ public abstract class MaximumMatrixSumTestsBase<T> where T : IMaximumMatrixSum, 
     [TestMethod]
     [DataRow("[[1,-1],[-1,1]]", 4)]
     [DataRow("[[1,2,3],[-1,-2,-3],[1,2,3]]", 16)]
-    public void MaxMatrixSum_WithMatrix_ReturnsMaximumSumAfterFlips(string matrixJsonArray, long expectedResult)
+    public void MaxMatrixSum_WithMatrix_ReturnsMaximumSumAfterFlips(string matrixJson, long expectedResult)
     {
         // Arrange
-        var matrix = JsonHelper<int>.DeserializeToJaggedArray(matrixJsonArray);
+        var matrix = JsonHelper<int[][]>.Parse(matrixJson);
 
         var solution = new T();
 

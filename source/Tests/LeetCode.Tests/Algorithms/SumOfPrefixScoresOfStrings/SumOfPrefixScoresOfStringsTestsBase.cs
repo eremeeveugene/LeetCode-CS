@@ -23,12 +23,12 @@ public abstract class SumOfPrefixScoresOfStringsTestsBase<T> where T : ISumOfPre
     [DataRow("[\"a\",\"b\",\"aa\",\"ab\"]", "[3,1,4,4]")]
     [DataRow("[\"abababab\",\"abab\",\"ab\",\"a\",\"babababa\",\"baba\",\"ba\",\"b\"]", "[15,11,7,4,15,11,7,4]")]
     [DataRow("[\"abababab\",\"abab\",\"ab\",\"a\",\"babababa\",\"baba\",\"ba\",\"b\"]", "[15,11,7,4,15,11,7,4]")]
-    public void SumPrefixScores_WithGivenWordsArray_ReturnsCorrectPrefixSums(string wordsJsonArray,
-        string expectedResultJsonArray)
+    public void SumPrefixScores_WithListOfWords_ReturnsSumOfScoresForAllPrefixesOfEachWord(string wordsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var words = JsonHelper<string>.DeserializeToArray(wordsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var words = JsonHelper<string[]>.Parse(wordsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

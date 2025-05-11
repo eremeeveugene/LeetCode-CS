@@ -20,12 +20,12 @@ public abstract class TheTwoSneakyNumbersOfDigitvilleTestsBase<T> where T : IThe
     [DataRow("[0,1,1,0]", "[0,1]")]
     [DataRow("[0,3,2,1,3,2]", "[2,3]")]
     [DataRow("[7,1,5,4,3,4,6,0,9,5,8,2]", "[4,5]")]
-    public void GetSneakyNumbers_GivenArrayOfNumbers_ReturnsSneakyNumbers(string numsJsonArray,
-        string expectedResultJsonArray)
+    public void GetSneakyNumbers_GivenArrayOfNumbers_ReturnsSneakyNumbers(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

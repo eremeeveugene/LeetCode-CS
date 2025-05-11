@@ -19,7 +19,8 @@ public abstract class TakeKOfEachCharacterFromLeftAndRightTestsBase<T>
     [TestMethod]
     [DataRow("aabaaaacaabc", 2, 8)]
     [DataRow("a", 1, -1)]
-    public void TakeCharacters_WithStringAndK_ReturnsCorrectIndexOrMinusOne(string s, int k, int expectedResult)
+    public void TakeCharacters_WithTargetCountFromEnds_ReturnsMinimumMinutesToCollectKOfEachCharacterOrMinusOne(
+        string s, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

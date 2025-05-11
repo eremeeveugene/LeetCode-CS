@@ -19,7 +19,8 @@ public abstract class SubtractTheProductAndSumOfDigitsOfAnIntegerTestsBase<T>
     [TestMethod]
     [DataRow(234, 15)]
     [DataRow(4421, 21)]
-    public void SubtractProductAndSum_WithSpecificInputs_ReturnsExpectedDifference(int n, int expectedResult)
+    public void SubtractProductAndSum_WithIntegerInput_ReturnsDifferenceBetweenDigitProductAndSum(int n,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();

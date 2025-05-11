@@ -22,10 +22,10 @@ public abstract class MinimizedMaximumOfProductsDistributedToAnyStoreTestsBase<T
     [DataRow(7, "[15,10,10]", 5)]
     [DataRow(1, "[100000]", 100000)]
     public void MinimizedMaximum_WithNumberOfStoresAndProductQuantities_ReturnsMinimumPossibleMaximum(int n,
-        string quantitiesJsonArray, int expectedResult)
+        string quantitiesJson, int expectedResult)
     {
         // Arrange
-        var quantities = JsonHelper<int>.DeserializeToArray(quantitiesJsonArray);
+        var quantities = JsonHelper<int[]>.Parse(quantitiesJson);
 
         var solution = new T();
 

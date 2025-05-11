@@ -13,22 +13,24 @@ using LeetCode.Algorithms.GuessNumberHigherOrLower;
 
 namespace LeetCode.Tests.Algorithms.GuessNumberHigherOrLower;
 
-public abstract class GuessNumberHigherOrLowerTestsBase<T> where T : IGuessNumberHigherOrLowerFactory, new()
+public abstract class GuessNumberHigherOrLowerTestsBase
 {
     [TestMethod]
     [DataRow(1, 1, 1)]
     [DataRow(2, 1, 1)]
     [DataRow(10, 6, 6)]
-    public void GuessNumber_WithRangeAndPickedNumber_ReturnsCorrectGuess(int n, int pickedNumber, int expectedResult)
+    public void GuessNumber_WithRangeAndPickedValue_ReturnsPickedValue(int n, int pickedNumber, int expectedResult)
     {
         // Arrange
-        var guessNumberHigherOrLowerFactory = new T();
-        var guessNumberHigherOrLower = guessNumberHigherOrLowerFactory.Create(pickedNumber);
+        var solution = GetSolution(pickedNumber);
 
         // Act
-        var actualResult = guessNumberHigherOrLower.GuessNumber(n);
+        var actualResult = solution.GuessNumber(n);
 
         // Assert
-        Assert.AreEqual(actualResult, expectedResult);
+        Assert.AreEqual(expectedResult, actualResult);
     }
+
+
+    protected abstract IGuessNumberHigherOrLower GetSolution(int pickedNumber);
 }

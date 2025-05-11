@@ -20,10 +20,10 @@ public abstract class AverageSalaryExcludingTheMinimumAndMaximumSalaryTestsBase<
     [TestMethod]
     [DataRow("[4000,3000,1000,2000]", 2500.00000)]
     [DataRow("[1000,2000,3000]", 2000.00000)]
-    public void Average_WithSalaryArray_ComputesCorrectAverage(string salaryJsonArray, double expectedResult)
+    public void Average_WithSalaryArray_ComputesCorrectAverage(string salaryJson, double expectedResult)
     {
         // Arrange
-        var salary = JsonHelper<int>.DeserializeToArray(salaryJsonArray);
+        var salary = JsonHelper<int[]>.Parse(salaryJson);
 
         var solution = new T();
 

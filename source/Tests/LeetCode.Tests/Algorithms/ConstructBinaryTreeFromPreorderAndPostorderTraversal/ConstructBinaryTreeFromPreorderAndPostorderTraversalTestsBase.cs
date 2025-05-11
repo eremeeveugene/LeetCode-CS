@@ -22,13 +22,13 @@ public abstract class ConstructBinaryTreeFromPreorderAndPostorderTraversalTestsB
     [TestMethod]
     [DataRow("[1]", "[1]", "[1]")]
     [DataRow("[1,2,4,5,3,6,7]", "[4,5,2,6,7,3,1]", "[1,2,3,4,5,6,7]")]
-    public void ConstructFromPrePost_WithPreorderAndPostorder_ReturnsBinaryTree(string preorderJsonArray,
-        string postorderJsonArray, string expectedResultJsonArray)
+    public void ConstructFromPrePost_WithPreorderAndPostorder_ReturnsBinaryTree(string preorderJson,
+        string postorderJson, string expectedResultJson)
     {
         // Arrange
-        var preorder = JsonHelper<int>.DeserializeToArray(preorderJsonArray);
-        var postorder = JsonHelper<int>.DeserializeToArray(postorderJsonArray);
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var preorder = JsonHelper<int[]>.Parse(preorderJson);
+        var postorder = JsonHelper<int[]>.Parse(postorderJson);
+        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();

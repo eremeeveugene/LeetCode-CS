@@ -20,11 +20,11 @@ public abstract class TwoBestNonOverlappingEventsTestsBase<T> where T : ITwoBest
     [DataRow("[[1,3,2],[4,5,2],[2,4,3]]", 4)]
     [DataRow("[[1,3,2],[4,5,2],[1,5,5]]", 5)]
     [DataRow("[[1,5,3],[1,5,1],[6,6,5]]", 8)]
-    public void MaxTwoEvents_WithJaggedArrayOfEvents_ReturnsMaxSumOfTwoNonOverlappingEvents(string eventsJsonArray,
+    public void MaxTwoEvents_WithEventStartEndAndValue_ReturnsMaximumValueFromNonOverlappingEvents(string eventsJson,
         int expectedResult)
     {
         // Arrange
-        var events = JsonHelper<int>.DeserializeToJaggedArray(eventsJsonArray);
+        var events = JsonHelper<int[][]>.Parse(eventsJson);
 
         var solution = new T();
 

@@ -20,10 +20,11 @@ public abstract class CountPrefixAndSuffixPairs1TestsBase<T> where T : ICountPre
     [DataRow("[\"a\",\"aba\",\"ababa\",\"aa\"]", 4)]
     [DataRow("[\"pa\",\"papa\",\"ma\",\"mama\"]", 2)]
     [DataRow("[\"abab\",\"ab\"]", 0)]
-    public void CountPrefixSuffixPairs_WithWordsArray_ReturnsCorrectCount(string wordsJsonArray, int expectedResult)
+    public void CountPrefixSuffixPairs_WithStringArray_ReturnsNumberOfValidPrefixAndSuffixPairs(string wordsJson,
+        int expectedResult)
     {
         // Arrange
-        var words = JsonHelper<string>.DeserializeToArray(wordsJsonArray);
+        var words = JsonHelper<string[]>.Parse(wordsJson);
 
         var solution = new T();
 

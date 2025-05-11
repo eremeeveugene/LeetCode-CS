@@ -19,10 +19,10 @@ public abstract class MaxSumOfPairWithEqualSumOfDigitsTestsBase<T> where T : IMa
     [TestMethod]
     [DataRow("[18,43,36,13,7]", 54)]
     [DataRow("[10,12,19,14]", -1)]
-    public void MaximumSum_GivenArrayOfNumbers_ReturnsLargestSumOfDigitPairs(string numsJsonArray, int expectedResult)
+    public void MaximumSum_GivenArrayOfNumbers_ReturnsLargestSumOfDigitPairs(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

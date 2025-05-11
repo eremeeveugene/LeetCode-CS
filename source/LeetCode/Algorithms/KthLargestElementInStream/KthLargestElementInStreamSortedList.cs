@@ -12,9 +12,16 @@
 namespace LeetCode.Algorithms.KthLargestElementInStream;
 
 /// <inheritdoc />
-public class KthLargestElementInStreamSortedList(int k, IEnumerable<int> nums) : IKthLargestElementInStream
+public class KthLargestElementInStreamSortedList : IKthLargestElementInStream
 {
-    private readonly List<int> _nums = [.. nums.OrderDescending()];
+    private readonly int _k;
+    private readonly List<int> _nums;
+
+    public KthLargestElementInStreamSortedList(int k, int[] nums)
+    {
+        _k = k;
+        _nums = [.. nums.OrderDescending()];
+    }
 
     /// <summary>
     ///     Time complexity - O(n)
@@ -26,7 +33,7 @@ public class KthLargestElementInStreamSortedList(int k, IEnumerable<int> nums) :
     {
         Insert(val);
 
-        return _nums.ElementAt(k - 1);
+        return _nums.ElementAt(_k - 1);
     }
 
     private void Insert(int val)

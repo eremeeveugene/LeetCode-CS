@@ -20,11 +20,11 @@ public abstract class MaximumSumOfDistinctSubarraysWithLengthKTestsBase<T>
     [TestMethod]
     [DataRow("[1,5,4,2,9,9,9]", 3, 15)]
     [DataRow("[4,4,4]", 3, 0)]
-    public void MaximumSubarraySum_WithArrayAndWindowSize_ReturnsMaximumSubarraySum(string numsJsonArray, int k,
+    public void MaximumSubarraySum_WithArrayAndWindowSize_ReturnsMaximumSubarraySum(string numsJson, int k,
         long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

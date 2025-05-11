@@ -21,11 +21,11 @@ public abstract class MinimumOperationsToMakeUniValueGridTestsBase<T>
     [DataRow("[[2,4],[6,8]]", 2, 4)]
     [DataRow("[[1,5],[2,3]]", 1, 5)]
     [DataRow("[[1,2],[3,4]]", 2, -1)]
-    public void MinOperations_WithGridAndOperationValue_ReturnsMinimumOperationsToMakeUniValueGrid(string gridJsonArray,
+    public void MinOperations_WithGridAndOperationValue_ReturnsMinimumOperationsToMakeUniValueGrid(string gridJson,
         int x, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJsonArray);
+        var grid = JsonHelper<int[][]>.Parse(gridJson);
 
         var solution = new T();
 

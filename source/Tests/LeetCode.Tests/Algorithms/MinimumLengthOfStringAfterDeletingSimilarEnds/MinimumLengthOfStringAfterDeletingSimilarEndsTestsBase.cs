@@ -24,7 +24,8 @@ public abstract class MinimumLengthOfStringAfterDeletingSimilarEndsTestsBase<T>
     [DataRow(
         "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbacccabbabccaccbacaaccacacccaccbbbacaabbccbbcbcbcacacccccccbcbbabccaacaabacbbaccccbabbcbccccaccacaccbcbbcbcccabaaaabbbbbbbbbbbbbbb",
         109)]
-    public void MinimumLength_GivenString_ReturnsExpectedMinimumLength(string s, int expectedResult)
+    public void MinimumLength_WithRepeatingPrefixSuffixPattern_ReturnsFinalLengthAfterAllDeletions(string s,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -21,13 +21,13 @@ public abstract class SearchInBinarySearchTreeTestsBase<T> where T : ISearchInBi
     [TestMethod]
     [DataRow("[4,2,7,1,3]", 2, "[2,1,3]")]
     [DataRow("[4,2,7,1,3]", 5, "[]")]
-    public void SearchBST_WithGivenRootAndValue_ReturnsSubtree(string rootJsonArray, int val,
-        string expectedResultJsonArray)
+    public void SearchBST_WithGivenRootAndValue_ReturnsSubtree(string rootJson, int val,
+        string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();

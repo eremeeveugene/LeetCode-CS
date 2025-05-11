@@ -33,10 +33,11 @@ public abstract class PartitionArrayIntoThreePartsWithEqualSumTestsBase<T>
     [DataRow("[1,2,3,4,5,6]", false)]
     [DataRow("[-3,3,-3,3,-3,3]", true)]
     [DataRow("[1,1,1,0,1,1,1,0,1,1,1]", true)]
-    public void CanThreePartsEqualSum_GivenArray_ReturnsExpectedBoolean(string arrJsonArray, bool expectedResult)
+    public void CanThreePartsEqualSum_WithIntegerArray_ReturnsTrueIfArrayCanBeSplitIntoThreeEqualSumParts(
+        string arrJson, bool expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
 
         var solution = new T();
 

@@ -20,12 +20,12 @@ public abstract class SortArrayByIncreasingFrequencyTestsBase<T> where T : ISort
     [DataRow("[1,1,2,2,2,3]", "[3,1,1,2,2,2]")]
     [DataRow("[2,3,1,3,2]", "[1,3,3,2,2]")]
     [DataRow("[-1,1,-6,4,5,-6,1,4,1]", "[5,-1,4,4,-6,-6,1,1,1]")]
-    public void FrequencySort_GivenNumsArray_ReturnsArraySortedByFrequency(string numsJsonArray,
-        string expectedResultJsonArray)
+    public void FrequencySort_GivenNumsArray_ReturnsArraySortedByFrequency(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

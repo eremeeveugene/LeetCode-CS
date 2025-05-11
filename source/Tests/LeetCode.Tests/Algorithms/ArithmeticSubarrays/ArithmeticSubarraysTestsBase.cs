@@ -24,14 +24,14 @@ public abstract class ArithmeticSubarraysTestsBase<T> where T : IArithmeticSubar
     [DataRow("[10, 1, 3, 5]", "[0, 1]", "[2, 3]", "[false, true]")]
     [DataRow("[1, 3, 5, 7, 9]", "[0, 1, 2]", "[4, 3, 4]", "[true, true, true]")]
     [DataRow("[1, 2, 4]", "[0, 1]", "[2, 2]", "[false, true]")]
-    public void CheckArithmeticSubarrays_WithVariousRanges_VerifiesIfSubarraysAreArithmetic(string numsJsonArray,
-        string lJsonArray, string rJsonArray, string expectedResultJsonArray)
+    public void CheckArithmeticSubarrays_WithVariousRanges_VerifiesIfSubarraysAreArithmetic(string numsJson,
+        string lJson, string rJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var l = JsonHelper<int>.DeserializeToArray(lJsonArray);
-        var r = JsonHelper<int>.DeserializeToArray(rJsonArray);
-        var expectedResult = JsonHelper<bool>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var l = JsonHelper<int[]>.Parse(lJson);
+        var r = JsonHelper<int[]>.Parse(rJson);
+        var expectedResult = JsonHelper<bool[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

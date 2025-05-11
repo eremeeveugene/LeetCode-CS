@@ -21,13 +21,13 @@ public abstract class FindValidMatrixGivenRowAndColumnSumsTestsBase<T>
     [TestMethod]
     [DataRow("[3, 8]", "[4, 7]", "[[3,0],[1,7]]")]
     [DataRow("[5, 7, 10]", "[8, 6, 8]", "[[5,0,0],[3,4,0],[0,2,8]]")]
-    public void RestoreMatrix_WithGivenRowAndColumnSums_ReturnsRestoredMatrix(string rowSumJsonArray,
-        string colSumJsonArray, string expectedResultJsonArray)
+    public void RestoreMatrix_WithGivenRowAndColumnSums_ReturnsRestoredMatrix(string rowSumJson,
+        string colSumJson, string expectedResultJson)
     {
         // Arrange
-        var rowSum = JsonHelper<int>.DeserializeToArray(rowSumJsonArray);
-        var colSum = JsonHelper<int>.DeserializeToArray(colSumJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
+        var rowSum = JsonHelper<int[]>.Parse(rowSumJson);
+        var colSum = JsonHelper<int[]>.Parse(colSumJson);
+        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
 
         var solution = new T();
 
@@ -35,6 +35,6 @@ public abstract class FindValidMatrixGivenRowAndColumnSumsTestsBase<T>
         var actualResult = solution.RestoreMatrix(rowSum, colSum);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

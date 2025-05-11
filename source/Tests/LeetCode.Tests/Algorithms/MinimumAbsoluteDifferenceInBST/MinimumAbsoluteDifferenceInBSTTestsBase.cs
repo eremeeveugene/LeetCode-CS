@@ -22,10 +22,10 @@ public abstract class MinimumAbsoluteDifferenceInBSTTestsBase<T> where T : IMini
     [DataRow("[4,2,6,1,3]", 1)]
     [DataRow("[1,0,48,null,null,12,49]", 1)]
     [DataRow("[90,69,null,49,89,null,52]", 1)]
-    public void GetMinimumDifference_GivenBST_ReturnsMinimumAbsoluteDifference(string rootJsonArray, int expectedResult)
+    public void GetMinimumDifference_GivenBST_ReturnsMinimumAbsoluteDifference(string rootJson, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
 
         var solution = new T();

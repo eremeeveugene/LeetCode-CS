@@ -19,11 +19,11 @@ public abstract class ContinuousSubarraysTestsBase<T> where T : IContinuousSubar
     [TestMethod]
     [DataRow("[5,4,2,4]", 8)]
     [DataRow("[1,2,3]", 6)]
-    public void ContinuousSubarrays_GivenArrayOfIntegers_ReturnsCountOfValidSubarrays(string numsJsonArray,
+    public void ContinuousSubarrays_GivenArrayOfIntegers_ReturnsCountOfValidSubarrays(string numsJson,
         long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

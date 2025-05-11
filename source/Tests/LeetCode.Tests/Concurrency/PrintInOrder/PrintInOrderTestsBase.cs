@@ -25,10 +25,10 @@ public abstract class PrintInOrderTestsBase<T> where T : IPrintInOrder, new()
     [DataRow("[2, 3, 1]")]
     [DataRow("[3, 1, 2]")]
     public async Task PrintInOrderThreadSleep_ExecuteTasksInVariableOrder_ProducesConsistentOrderedOutput(
-        string numsJsonArray)
+        string numsJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         const string expectedResult = First + Second + Third;
         var actualResult = string.Empty;

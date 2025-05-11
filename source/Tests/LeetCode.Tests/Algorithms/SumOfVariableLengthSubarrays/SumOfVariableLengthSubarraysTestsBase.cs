@@ -19,10 +19,10 @@ public abstract class SumOfVariableLengthSubarraysTestsBase<T> where T : ISumOfV
     [TestMethod]
     [DataRow("[2,3,1]", 11)]
     [DataRow("[3,1,1,2]", 13)]
-    public void SubarraySum_WithGivenArray_ReturnsMaximumSum(string numsJsonArray, int expectedResult)
+    public void SubarraySum_WithGivenArray_ReturnsMaximumSum(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

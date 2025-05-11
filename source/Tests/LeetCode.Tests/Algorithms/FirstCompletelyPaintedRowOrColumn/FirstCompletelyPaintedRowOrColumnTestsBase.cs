@@ -19,12 +19,12 @@ public abstract class FirstCompletelyPaintedRowOrColumnTestsBase<T> where T : IF
     [TestMethod]
     [DataRow("[1,3,4,2]", "[[1,4],[2,3]]", 2)]
     [DataRow("[2,8,7,4,1,3,5,6,9]", "[[3,2,5],[1,4,6],[8,7,9]]", 3)]
-    public void FirstCompleteIndex_WithSequenceAndMatrix_ReturnsFirstCompletedRowOrColumnIndex(string arrJsonArray,
-        string matJsonArray, int expectedResult)
+    public void FirstCompleteIndex_WithSequenceAndMatrix_ReturnsFirstCompletedRowOrColumnIndex(string arrJson,
+        string matJson, int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
-        var mat = JsonHelper<int>.DeserializeToJaggedArray(matJsonArray);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
+        var mat = JsonHelper<int[][]>.Parse(matJson);
 
         var solution = new T();
 

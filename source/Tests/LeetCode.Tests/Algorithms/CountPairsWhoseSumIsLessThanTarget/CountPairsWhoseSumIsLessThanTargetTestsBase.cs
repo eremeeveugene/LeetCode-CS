@@ -20,11 +20,11 @@ public abstract class CountPairsWhoseSumIsLessThanTargetTestsBase<T>
     [TestMethod]
     [DataRow("[-1, 1, 2, 3, 1]", 2, 3)]
     [DataRow("[-6, 2, 5, -2, -7, -1, 3]", -2, 10)]
-    public void CountPairs_WithNumsAndTarget_ReturnsExpectedPairCount(string numsJsonArray, int target,
+    public void CountPairs_WithArrayAndTarget_ReturnsNumberOfPairsWithSumLessThanTarget(string numsJson, int target,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

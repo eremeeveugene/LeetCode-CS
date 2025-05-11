@@ -19,11 +19,11 @@ public abstract class ReverseStringTestsBase<T> where T : IReverseString, new()
     [TestMethod]
     [DataRow("[\"h\",\"e\",\"l\",\"l\",\"o\"]", "[\"o\",\"l\",\"l\",\"e\",\"h\"]")]
     [DataRow("[\"H\",\"a\",\"n\",\"n\",\"a\",\"h\"]", "[\"h\",\"a\",\"n\",\"n\",\"a\",\"H\"]")]
-    public void ReverseString_WithCharArray_ReversesArrayInPlace(string sJsonArray, string expectedResultJsonArray)
+    public void ReverseString_WithCharArray_ReversesArrayInPlace(string sJson, string expectedResultJson)
     {
         // Arrange
-        var s = JsonHelper<char>.DeserializeToArray(sJsonArray);
-        var expectedResult = JsonHelper<char>.DeserializeToArray(expectedResultJsonArray);
+        var s = JsonHelper<char[]>.Parse(sJson);
+        var expectedResult = JsonHelper<char[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

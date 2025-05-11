@@ -21,7 +21,7 @@ public abstract class ReverseIntegerTestsBase<T> where T : IReverseInteger, new(
     [DataRow(120, 21)]
     [DataRow(1534236469, 0)]
     [DataRow(int.MinValue, 0)]
-    public void Reverse_IntegerInput_ReturnsExpectedReversedInteger(int x, int expectedResult)
+    public void Reverse_WithSigned32BitInteger_ReturnsReversedIntegerOrZeroIfOverflow(int x, int expectedResult)
     {
         // Arrange
         var solution = new T();

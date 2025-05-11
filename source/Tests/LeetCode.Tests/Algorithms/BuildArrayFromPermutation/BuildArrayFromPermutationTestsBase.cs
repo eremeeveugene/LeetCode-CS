@@ -19,12 +19,12 @@ public abstract class BuildArrayFromPermutationTestsBase<T> where T : IBuildArra
     [TestMethod]
     [DataRow("[0, 2, 1, 5, 3, 4]", "[0, 1, 2, 4, 5, 3]")]
     [DataRow("[5, 0, 1, 2, 3, 4]", "[4, 5, 0, 1, 2, 3]")]
-    public void BuildArray_WithInputPermutation_ReturnsExpectedPermutationArray(string numsJsonArray,
-        string expectedResultJsonArray)
+    public void BuildArray_WithPermutationInput_ReturnsTransformedArrayUsingSelfIndexing(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

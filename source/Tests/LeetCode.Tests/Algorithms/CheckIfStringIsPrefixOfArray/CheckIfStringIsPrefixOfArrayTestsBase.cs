@@ -21,10 +21,10 @@ public abstract class CheckIfStringIsPrefixOfArrayTestsBase<T> where T : ICheckI
     [DataRow("iloveleetcode", "[\"apples\",\"i\",\"love\",\"leetcode\"]", false)]
     [DataRow("a", "[\"aa\",\"aaaa\",\"banana\"]", false)]
     public void IsPrefixString_WithGivenStringAndWordsArray_ReturnsWhetherStringIsPrefixConcatenation(string s,
-        string wordsJsonArray, bool expectedResult)
+        string wordsJson, bool expectedResult)
     {
         // Arrange
-        var words = JsonHelper<string>.DeserializeToArray(wordsJsonArray);
+        var words = JsonHelper<string[]>.Parse(wordsJson);
 
         var solution = new T();
 

@@ -19,12 +19,12 @@ public abstract class AssignCookiesTestsBase<T> where T : IAssignCookies, new()
     [TestMethod]
     [DataRow("[1,2,3]", "[1]", 1)]
     [DataRow("[1,2]", "[1,2,3]", 2)]
-    public void FindContentChildren_WithGivenGreedyAndSizeArrays_ReturnsMaxSatisfiedChildren(string gJsonArray,
-        string sJsonArray, int expectedResult)
+    public void FindContentChildren_WithGivenGreedyAndSizeArrays_ReturnsMaxSatisfiedChildren(string gJson,
+        string sJson, int expectedResult)
     {
         // Arrange
-        var g = JsonHelper<int>.DeserializeToArray(gJsonArray);
-        var s = JsonHelper<int>.DeserializeToArray(sJsonArray);
+        var g = JsonHelper<int[]>.Parse(gJson);
+        var s = JsonHelper<int[]>.Parse(sJson);
 
         var solution = new T();
 

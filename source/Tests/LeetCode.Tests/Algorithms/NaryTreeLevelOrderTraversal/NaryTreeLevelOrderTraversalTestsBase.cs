@@ -23,12 +23,11 @@ public abstract class NaryTreeLevelOrderTraversalTestsBase<T> where T : INaryTre
     [DataRow("[1,null,3,2,4,null,5,6]", "[[1],[3,2,4],[5,6]]")]
     [DataRow("[1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]",
         "[[1],[2,3,4,5],[6,7,8,9,10],[11,12,13],[14]]")]
-    public void LevelOrder_WithGivenBinaryTree_ReturnsCorrectLevelOrderTraversal(string rootJsonArray,
-        string expectedResultJsonArray)
+    public void LevelOrder_WithNaryTree_ReturnsNodeValuesByLevel(string rootJson, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedList(expectedResultJsonArray);
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var expectedResult = JsonHelper<IList<IList<int>>>.Parse(expectedResultJson);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = Node.ToNode(rootArray);
 
         var solution = new T();
@@ -37,6 +36,6 @@ public abstract class NaryTreeLevelOrderTraversalTestsBase<T> where T : INaryTre
         var actualResult = solution.LevelOrder(root);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

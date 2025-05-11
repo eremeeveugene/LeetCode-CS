@@ -20,10 +20,10 @@ public abstract class PartitionEqualSubsetSumTestsBase<T> where T : IPartitionEq
     [DataRow("[1,5,11,5]", true)]
     [DataRow("[1,2,3,5]", false)]
     public void CanPartition_WithGivenIntegerArray_ReturnsWhetherItCanBePartitionedIntoEqualSumSubsets(
-        string numsJsonArray, bool expectedResult)
+        string numsJson, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

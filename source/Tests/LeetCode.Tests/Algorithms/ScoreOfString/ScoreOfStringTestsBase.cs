@@ -18,7 +18,8 @@ public abstract class ScoreOfStringTestsBase<T> where T : IScoreOfString, new()
     [TestMethod]
     [DataRow("hello", 13)]
     [DataRow("zaz", 50)]
-    public void ScoreOfString_GivenString_ReturnsCorrectScore(string s, int expectedResult)
+    public void ScoreOfString_WithInputString_ReturnsSumOfAbsoluteAsciiDifferencesBetweenAdjacentCharacters(string s,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();

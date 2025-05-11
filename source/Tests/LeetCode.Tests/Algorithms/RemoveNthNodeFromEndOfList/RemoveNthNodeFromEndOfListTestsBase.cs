@@ -23,13 +23,13 @@ public abstract class RemoveNthNodeFromEndOfListTestsBase<T> where T : IRemoveNt
     [DataRow("[1]", 1, "[]")]
     [DataRow("[1,2]", 1, "[1]")]
     [DataRow("[1,2]", 2, "[2]")]
-    public void RemoveNthFromEnd_WhenCalled_RemovesNthNodeFromEndAndReturnsCorrectList(string headJsonArray, int n,
-        string expectedResultJsonArray)
+    public void RemoveNthFromEnd_WithListAndPosition_RemovesNthNodeFromEndAndReturnsUpdatedList(string headJson, int n,
+        string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
+        var headArray = JsonHelper<int[]>.Parse(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int[]>.Parse(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

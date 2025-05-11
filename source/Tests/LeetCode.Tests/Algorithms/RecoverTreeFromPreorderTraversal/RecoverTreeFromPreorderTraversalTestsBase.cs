@@ -23,10 +23,10 @@ public abstract class RecoverTreeFromPreorderTraversalTestsBase<T> where T : IRe
     [DataRow("1-2--3---4-5--6---7", "[1,2,5,3,null,6,null,4,null,7]")]
     [DataRow("1-401--349---90--88", "[1,401,null,349,88,90]")]
     public void RecoverFromPreorder_WithTraversalString_ConstructsBinaryTree(string traversal,
-        string expectedResultJsonArray)
+        string expectedResultJson)
     {
         // Arrange
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();

@@ -15,4 +15,4 @@ namespace LeetCode.Tests.Algorithms.ProductOfTheLastKNumbers;
 
 [TestClass]
 public class ProductOfTheLastKNumbersPrefixSumTests :
-    ProductOfTheLastKNumbersTestsBase<ProductOfTheLastKNumbersPrefixSumFactory>;
+    ProductOfTheLastKNumbersTestsBase<ProductOfTheLastKNumbersPrefixSum>;

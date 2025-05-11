@@ -28,15 +28,15 @@ public abstract class DeleteNodesAndReturnForestTestsBase<T> where T : IDeleteNo
     [DataRow("[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "[3, 5, 7, 8, 9, 14]", "[[6,12,13],[15],[10],[11],[1,2,null,4]]")]
     [DataRow("[1,2,3,4,5,6,7,8,null,null,9,10,11,null,12]", "[2, 6, 8, 9, 11]",
         "[[4],[5],[10],[1,null,3,null,7,null,12]]")]
-    public void DelNodes_WithGivenNodesToDelete_ModifiesTreeCorrectly(string rootJsonArray, string toDeleteJsonArray,
-        string expectedResultJsonArray)
+    public void DelNodes_WithGivenNodesToDelete_ModifiesTreeCorrectly(string rootJson, string toDeleteJson,
+        string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var toDelete = JsonHelper<int>.DeserializeToArray(toDeleteJsonArray);
-        var expectedResultArray = JsonHelper<int?>.DeserializeToJaggedList(expectedResultJsonArray);
-        var expectedResult = expectedResultArray.Select(treeNode => TreeNode.ToTreeNode(treeNode));
+        var toDelete = JsonHelper<int[]>.Parse(toDeleteJson);
+        var expectedResultArray = JsonHelper<IList<IList<int?>>>.Parse(expectedResultJson);
+        var expectedResult = expectedResultArray.Select(TreeNode.ToTreeNode);
 
         var solution = new T();
 

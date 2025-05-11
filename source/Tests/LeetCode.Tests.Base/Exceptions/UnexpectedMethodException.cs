@@ -9,12 +9,14 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.DesignNeighborSumService;
+using System.Diagnostics.CodeAnalysis;
 
-public class DesignNeighborSumServiceBruteForceFactory : IDesignNeighborSumServiceFactory
+namespace LeetCode.Tests.Base.Exceptions;
+
+[ExcludeFromCodeCoverage]
+public class UnexpectedMethodException : InvalidOperationException
 {
-    public IDesignNeighborSumService Create(int[][] grid)
+    public UnexpectedMethodException(string name) : base($"Unexpected method '{name}' at index.")
     {
-        return new DesignNeighborSumServiceBruteForce(grid);
     }
 }

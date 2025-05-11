@@ -20,10 +20,10 @@ public abstract class MatrixDiagonalSumTestsBase<T> where T : IMatrixDiagonalSum
     [DataRow("[[1,2,3],[4,5,6],[7,8,9]]", 25)]
     [DataRow("[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]", 8)]
     [DataRow("[[5]]", 5)]
-    public void DiagonalSum_WithMatrix_ReturnsSumOfDiagonalElements(string matJsonArray, int expectedResult)
+    public void DiagonalSum_WithMatrix_ReturnsSumOfDiagonalElements(string matJson, int expectedResult)
     {
         // Arrange
-        var mat = JsonHelper<int>.DeserializeToJaggedArray(matJsonArray);
+        var mat = JsonHelper<int[][]>.Parse(matJson);
 
         var solution = new T();
 

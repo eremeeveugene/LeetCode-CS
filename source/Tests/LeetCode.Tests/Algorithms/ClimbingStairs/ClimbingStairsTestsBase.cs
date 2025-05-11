@@ -25,7 +25,7 @@ public abstract class ClimbingStairsTestsBase<T> where T : IClimbingStairs, new(
     [DataRow(7, 21)]
     [DataRow(8, 34)]
     [DataRow(9, 55)]
-    public void ClimbStairs_WithGivenN_ReturnsExpectedWaysToClimb(int n, int expectedResult)
+    public void ClimbStairs_WithNumberOfSteps_ReturnsTotalDistinctWaysToReachTop(int n, int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -12,10 +12,15 @@
 namespace LeetCode.Algorithms.DesignStackWithIncrementOperation;
 
 /// <inheritdoc />
-public class DesignStackWithIncrementOperationArray(int maxSize) : IDesignStackWithIncrementOperation
+public class DesignStackWithIncrementOperationArray : IDesignStackWithIncrementOperation
 {
-    private readonly int[] _stackArray = new int[maxSize];
+    private readonly int[] _stackArray;
     private int _topIndex = -1;
+
+    public DesignStackWithIncrementOperationArray(int maxSize)
+    {
+        _stackArray = new int[maxSize];
+    }
 
     /// <summary>
     ///     Time complexity - O(1)

@@ -23,10 +23,10 @@ public abstract class MinCostClimbingStairsTestsBase<T> where T : IMinCostClimbi
     [DataRow("[0,0,1,2]", 1)]
     [DataRow("[0,0,2,3]", 2)]
     [DataRow("[0,1,2,2]", 2)]
-    public void MinCostClimbingStairs_GivenCostArray_ReturnsMinimumCostToClimb(string costJsonArray, int expectedResult)
+    public void MinCostClimbingStairs_GivenCostArray_ReturnsMinimumCostToClimb(string costJson, int expectedResult)
     {
         // Arrange
-        var cost = JsonHelper<int>.DeserializeToArray(costJsonArray);
+        var cost = JsonHelper<int[]>.Parse(costJson);
 
         var solution = new T();
 

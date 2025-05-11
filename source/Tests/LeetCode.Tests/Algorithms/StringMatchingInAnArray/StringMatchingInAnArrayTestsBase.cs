@@ -20,12 +20,12 @@ public abstract class StringMatchingInAnArrayTestsBase<T> where T : IStringMatch
     [DataRow("[\"mass\",\"as\",\"hero\",\"superhero\"]", "[\"as\",\"hero\"]")]
     [DataRow("[\"leetcode\",\"et\",\"code\"]", "[\"et\",\"code\"]")]
     [DataRow("[\"blue\",\"green\",\"bu\"]", "[]")]
-    public void StringMatching_WithArrayOfWords_ReturnsMatchingSubstrings(string wordsJsonArray,
-        string expectedResultJsonArray)
+    public void StringMatching_WithArrayOfWords_ReturnsMatchingSubstrings(string wordsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var words = JsonHelper<string>.DeserializeToArray(wordsJsonArray);
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJsonArray);
+        var words = JsonHelper<string[]>.Parse(wordsJson);
+        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

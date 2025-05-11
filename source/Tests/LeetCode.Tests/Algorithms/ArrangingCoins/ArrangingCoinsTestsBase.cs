@@ -26,7 +26,7 @@ public abstract class ArrangingCoinsTestsBase<T> where T : IArrangingCoins, new(
     [DataRow(8, 3)]
     [DataRow(9, 3)]
     [DataRow(10, 4)]
-    public void ArrangeCoins_WithGivenNumberOfCoins_ReturnsCorrectNumberOfFullSteps(int n, int expectedResult)
+    public void ArrangeCoins_WithCoinCount_ReturnsNumberOfCompleteStaircaseRows(int n, int expectedResult)
     {
         // Arrange
         var solution = new T();

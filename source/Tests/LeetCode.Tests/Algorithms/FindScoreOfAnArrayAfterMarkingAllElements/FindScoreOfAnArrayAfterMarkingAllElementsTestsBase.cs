@@ -20,10 +20,10 @@ public abstract class FindScoreOfAnArrayAfterMarkingAllElements1<T>
     [TestMethod]
     [DataRow("[2,1,3,4,5,2]", 7)]
     [DataRow("[2,3,5,1,3,2]", 5)]
-    public void FindScore_WithIntegerArray_ReturnsScore(string numsJsonArray, long expectedResult)
+    public void FindScore_WithIntegerArray_ReturnsScore(string numsJson, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

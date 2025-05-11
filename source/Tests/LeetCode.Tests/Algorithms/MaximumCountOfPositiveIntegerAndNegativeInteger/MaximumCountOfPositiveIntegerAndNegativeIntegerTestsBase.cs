@@ -21,11 +21,11 @@ public abstract class MaximumCountOfPositiveIntegerAndNegativeIntegerTestsBase<T
     [DataRow("[-2,-1,-1,1,2,3]", 3)]
     [DataRow("[-3,-2,-1,0,0,1,2]", 3)]
     [DataRow("[5,20,66,1314]", 4)]
-    public void MaximumCount_GivenIntegerArray_ReturnsCountOfMaxPositiveOrNegativeNumbers(string numsJsonArray,
+    public void MaximumCount_GivenIntegerArray_ReturnsCountOfMaxPositiveOrNegativeNumbers(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

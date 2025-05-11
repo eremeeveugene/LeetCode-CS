@@ -20,11 +20,11 @@ public abstract class TaskSchedulerTestsBase<T> where T : ITaskScheduler, new()
     [DataRow("[\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"]", 2, 8)]
     [DataRow("[\"A\",\"C\",\"A\",\"B\",\"D\",\"B\"]", 1, 6)]
     [DataRow("[\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"]", 3, 10)]
-    public void LeastInterval_GivenTasksAndCooldownPeriod_ReturnsMinimumIntervalsNeeded(string tasksJsonArray, int n,
+    public void LeastInterval_GivenTasksAndCooldownPeriod_ReturnsMinimumIntervalsNeeded(string tasksJson, int n,
         int expectedResult)
     {
         // Arrange
-        var tasks = JsonHelper<char>.DeserializeToArray(tasksJsonArray);
+        var tasks = JsonHelper<char[]>.Parse(tasksJson);
 
         var solution = new T();
 

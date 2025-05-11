@@ -19,12 +19,12 @@ public abstract class RemoveElementTestsBase<T> where T : IRemoveElement, new()
     [TestMethod]
     [DataRow("[3,2,2,3]", 3, "[2,2]", 2)]
     [DataRow("[0,1,2,2,3,0,4,2]", 2, "[0,1,4,0,3]", 5)]
-    public void RemoveElement_WithArrayAndValue_ReturnsModifiedArrayAndNewLength(string numsJsonArray, int val,
-        string expectedNumsJsonArray, int expectedResult)
+    public void RemoveElement_WithArrayAndValue_ReturnsModifiedArrayAndNewLength(string numsJson, int val,
+        string expectedNumsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedNums = JsonHelper<int>.DeserializeToArray(expectedNumsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedNums = JsonHelper<int[]>.Parse(expectedNumsJson);
 
         var solution = new T();
 

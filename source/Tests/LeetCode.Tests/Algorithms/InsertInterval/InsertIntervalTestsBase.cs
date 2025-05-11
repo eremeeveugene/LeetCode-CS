@@ -24,13 +24,13 @@ public abstract class InsertIntervalTestsBase<T> where T : IInsertInterval, new(
     [DataRow("[[1,5]]", "[6,8]", "[[1,5],[6,8]]")]
     [DataRow("[[1,5]]", "[0,0]", "[[0,0],[1,5]]")]
     [DataRow("[[3,5],[12,15]]", "[6,6]", "[[3,5],[6,6],[12,15]]")]
-    public void Insert_GivenIntervalsAndNewInterval_MergesOrAddsIntervalAsExpected(string intervalsJsonArray,
-        string newIntervalJsonArray, string expectedResultJsonArray)
+    public void Insert_GivenIntervalsAndNewInterval_MergesOrAddsIntervalAsExpected(string intervalsJson,
+        string newIntervalJson, string expectedResultJson)
     {
         // Arrange
-        var intervals = JsonHelper<int>.DeserializeToJaggedArray(intervalsJsonArray);
-        var newInterval = JsonHelper<int>.DeserializeToArray(newIntervalJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
+        var intervals = JsonHelper<int[][]>.Parse(intervalsJson);
+        var newInterval = JsonHelper<int[]>.Parse(newIntervalJson);
+        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
 
         var solution = new T();
 
@@ -38,6 +38,6 @@ public abstract class InsertIntervalTestsBase<T> where T : IInsertInterval, new(
         var actualResult = solution.Insert(intervals, newInterval);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

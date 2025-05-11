@@ -19,13 +19,13 @@ public abstract class SpecialArray2TestsBase<T> where T : ISpecialArray2, new()
     [TestMethod]
     [DataRow("[3,4,1,2,6]", "[[0,4]]", "[false]")]
     [DataRow("[4,3,1,6]", "[[0,2],[2,3]]", "[false,true]")]
-    public void IsArraySpecial_WithNumsAndQueries_ReturnsCorrectBooleanArray(string numsJsonArray,
-        string queriesJsonArray, string expectedResultJsonArray)
+    public void IsArraySpecial_WithSubarrayQueries_ReturnsWhetherEachSubarrayHasAlternatingParity(string numsJson,
+        string queriesJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var queries = JsonHelper<int>.DeserializeToJaggedArray(queriesJsonArray);
-        var expectedResult = JsonHelper<bool>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var queries = JsonHelper<int[][]>.Parse(queriesJson);
+        var expectedResult = JsonHelper<bool[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

@@ -20,11 +20,11 @@ public abstract class ImplementStackUsingQueuesTestsBase<T> where T : IImplement
     [DataRow("[1, 2, 3]", 3, 3, 2)]
     [DataRow("[5, 10, 15, 20]", 20, 20, 15)]
     [DataRow("[42]", 42, 42, null)]
-    public void PushPopTop_WithVariousElements_ReturnsExpectedTopAndPopValues(string pushElementsJsonArray,
+    public void StackOperations_WithPushElements_VerifiesTopPopAndStateAfterPop(string pushElementsJson,
         int topExpected, int popExpected, int? popAfterTopExpected)
     {
         // Arrange
-        var pushElements = JsonHelper<int>.DeserializeToArray(pushElementsJsonArray);
+        var pushElements = JsonHelper<int[]>.Parse(pushElementsJson);
 
         var solution = new T();
 
@@ -61,12 +61,12 @@ public abstract class ImplementStackUsingQueuesTestsBase<T> where T : IImplement
     [DataRow("[1, 2, 3]", "[3, 2, 1]")]
     [DataRow("[5, 10, 15]", "[15, 10, 5]")]
     [DataRow("[]", "[]")]
-    public void MultiplePushAndPop_WithVariousElements_ReturnsElementsInLIFOOrder(string pushElementsJsonArray,
-        string popExpectedJsonArray)
+    public void MultiplePushAndPop_WithVariousElements_ReturnsElementsInLIFOOrder(string pushElementsJson,
+        string popExpectedJson)
     {
         // Arrange
-        var pushElements = JsonHelper<int>.DeserializeToArray(pushElementsJsonArray);
-        var popExpected = JsonHelper<int>.DeserializeToArray(popExpectedJsonArray);
+        var pushElements = JsonHelper<int[]>.Parse(pushElementsJson);
+        var popExpected = JsonHelper<int[]>.Parse(popExpectedJson);
 
         var solution = new T();
 
@@ -77,9 +77,9 @@ public abstract class ImplementStackUsingQueuesTestsBase<T> where T : IImplement
         }
 
         // Assert
-        foreach (var expected in popExpected)
+        foreach (var expectedResult in popExpected)
         {
-            Assert.AreEqual(expected, solution.Pop());
+            Assert.AreEqual(expectedResult, solution.Pop());
         }
 
         Assert.IsTrue(solution.Empty());

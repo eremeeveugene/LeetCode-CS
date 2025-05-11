@@ -21,11 +21,11 @@ public abstract class RootEqualsSumOfChildrenTestsBase<T> where T : IRootEqualsS
     [TestMethod]
     [DataRow("[10,4,6]", true)]
     [DataRow("[5,3,1]", false)]
-    public void CheckTree_WithThreeNodeTree_ReturnsIfRootValueEqualsSumOfChildren(string rootJsonArray,
+    public void CheckTree_WithThreeNodeTree_ReturnsIfRootValueEqualsSumOfChildren(string rootJson,
         bool expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
 
         var solution = new T();

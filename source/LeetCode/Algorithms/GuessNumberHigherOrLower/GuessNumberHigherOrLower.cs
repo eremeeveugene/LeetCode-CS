@@ -11,19 +11,26 @@
 
 namespace LeetCode.Algorithms.GuessNumberHigherOrLower;
 
-public abstract class GuessNumberHigherOrLower(int pickedNumber) : IGuessNumberHigherOrLower
+public abstract class GuessNumberHigherOrLower : IGuessNumberHigherOrLower
 {
+    private readonly int _pickedNumber;
+
+    protected GuessNumberHigherOrLower(int pickedNumber)
+    {
+        _pickedNumber = pickedNumber;
+    }
+
     public abstract int GuessNumber(int n);
 
     // ReSharper disable once InconsistentNaming
     public int guess(int num)
     {
-        if (num == pickedNumber)
+        if (num == _pickedNumber)
         {
             return 0;
         }
 
-        if (num < pickedNumber)
+        if (num < _pickedNumber)
         {
             return 1;
         }

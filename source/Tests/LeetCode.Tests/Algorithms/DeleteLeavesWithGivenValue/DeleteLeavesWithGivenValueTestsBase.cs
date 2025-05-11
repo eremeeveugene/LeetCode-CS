@@ -25,13 +25,13 @@ public abstract class DeleteLeavesWithGivenValueTestsBase<T> where T : IDeleteLe
     [DataRow("[1,2,null,2,null,2]", 2, "[1]")]
     [DataRow("[1,2,2,3,null,null,3,4,null,null,4,5,null,null,5,5,null,null,5,5,null,null,5,5,null,null,5]", 5,
         "[1,2,2,3,null,null,3,4,null,null,4]")]
-    public void RemoveLeafNodes_GivenTarget_RemovesAllLeafNodesWithTargetValue(string rootJsonArray, int target,
-        string expectedResultJsonArray)
+    public void RemoveLeafNodes_GivenTarget_RemovesAllLeafNodesWithTargetValue(string rootJson, int target,
+        string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();

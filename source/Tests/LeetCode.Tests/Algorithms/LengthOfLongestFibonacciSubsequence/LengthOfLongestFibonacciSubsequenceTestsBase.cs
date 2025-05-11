@@ -20,11 +20,11 @@ public abstract class LengthOfLongestFibonacciSubsequenceTestsBase<T>
     [TestMethod]
     [DataRow("[1,2,3,4,5,6,7,8]", 5)]
     [DataRow("[1,3,7,11,12,14,18]", 3)]
-    public void LenLongestFibSubseq_GivenIntegerArray_ReturnsMaxFibonacciSubsequenceLength(string arrJsonArray,
+    public void LenLongestFibSubseq_GivenIntegerArray_ReturnsMaxFibonacciSubsequenceLength(string arrJson,
         int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
 
         var solution = new T();
 

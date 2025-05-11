@@ -26,11 +26,11 @@ public abstract class FindTheStudentThatWillReplaceTheChalkTestsBase<T>
     [DataRow("[100000,1,100000,1,100000,1,100000,1,100000,1]", 500000, 8)]
     [DataRow("[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", 10, 10)]
     [DataRow("[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]", 1000000000, 0)]
-    public void ChalkReplacer_GivenChalkArrayAndKValue_ReturnsCorrectStudentIndex(string chalkJsonArray, int k,
+    public void ChalkReplacer_WithChalkArrayAndK_ReturnsIndexOfStudentReplacingChalk(string chalkJson, int k,
         int expectedResult)
     {
         // Arrange
-        var chalk = JsonHelper<int>.DeserializeToArray(chalkJsonArray);
+        var chalk = JsonHelper<int[]>.Parse(chalkJson);
 
         var solution = new T();
 

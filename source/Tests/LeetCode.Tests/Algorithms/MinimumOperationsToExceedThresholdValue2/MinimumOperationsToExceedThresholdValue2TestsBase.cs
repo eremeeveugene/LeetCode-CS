@@ -20,10 +20,10 @@ public abstract class MinimumOperationsToExceedThresholdValue2TestsBase<T>
     [TestMethod]
     [DataRow("[2,11,10,1,3]", 10, 2)]
     [DataRow("[1,1,2,4,9]", 20, 4)]
-    public void MinOperations_WithTargetSum_ReturnsMinimumOperations(string numsJsonArray, int k, int expectedResult)
+    public void MinOperations_WithTargetSum_ReturnsMinimumOperations(string numsJson, int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

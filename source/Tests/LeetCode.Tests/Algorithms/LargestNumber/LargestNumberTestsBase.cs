@@ -25,11 +25,11 @@ public abstract class LargestNumberTestsBase<T> where T : ILargestNumber, new()
     [DataRow("[121,12,120]", "12121120")]
     [DataRow("[1,11,111,1112]", "1112111111")]
     [DataRow("[999999,999999998,999999997]", "999999999999998999999997")]
-    public void LargestNumber_WithArrayOfIntegers_ReturnsMaxConcatenatedNumber(string numsJsonArray,
+    public void LargestNumber_WithArrayOfIntegers_ReturnsMaxConcatenatedNumber(string numsJson,
         string expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

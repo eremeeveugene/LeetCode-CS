@@ -27,12 +27,12 @@ public abstract class KthSmallestPrimeFractionTestsBase<T> where T : IKthSmalles
     [DataRow("[1, 2, 3, 5]", 6, "[2, 3]")]
     [DataRow("[1, 3, 5, 7, 11, 13]", 10, "[5, 11]")]
     [DataRow("[1, 2, 3, 5, 7, 11]", 15, "[5, 7]")]
-    public void KthSmallestPrimeFraction_GivenArrayAndK_ReturnsExpectedResult(string arrJsonArray, int k,
-        string expectedResultJsonArray)
+    public void KthSmallestPrimeFraction_WithSortedPrimesAndK_ReturnsKthSmallestFractionInFormOfNumeratorAndDenominator(
+        string arrJson, int k, string expectedResultJson)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

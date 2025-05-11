@@ -20,12 +20,12 @@ public abstract class MaximumXORForEachQueryTestsBase<T> where T : IMaximumXORFo
     [DataRow("[0,1,1,3]", 2, "[0,3,2,3]")]
     [DataRow("[2,3,4,7]", 3, "[5,2,6,5]")]
     [DataRow("[0,1,2,2,5,7]", 3, "[4,3,6,4,6,7]")]
-    public void GetMaximumXor_WithNumsArrayAndMaximumBit_ComputesXorValues(string numsJsonArray, int maximumBit,
-        string expectedResultJsonArray)
+    public void GetMaximumXor_WithNumsArrayAndMaximumBit_ComputesXorValues(string numsJson, int maximumBit,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

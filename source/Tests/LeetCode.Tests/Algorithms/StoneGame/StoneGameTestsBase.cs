@@ -19,10 +19,10 @@ public abstract class StoneGameTestsBase<T> where T : IStoneGame, new()
     [TestMethod]
     [DataRow("[5,3,4,5]", true)]
     [DataRow("[3,7,2,3]", true)]
-    public void StoneGame_WithGivenPiles_ReturnsTrueWhenFirstPlayerWins(string pilesJsonArray, bool expectedResult)
+    public void StoneGame_WithGivenPiles_ReturnsTrueWhenFirstPlayerWins(string pilesJson, bool expectedResult)
     {
         // Arrange
-        var piles = JsonHelper<int>.DeserializeToArray(pilesJsonArray);
+        var piles = JsonHelper<int[]>.Parse(pilesJson);
 
         var solution = new T();
 

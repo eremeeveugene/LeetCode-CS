@@ -20,10 +20,10 @@ public abstract class PartitionLabelsTestsBase<T> where T : IPartitionLabels, ne
     [DataRow("ababcbacadefegdehijhklij", "[9,7,8]")]
     [DataRow("eccbbbbdec", "[10]")]
     public void PartitionLabels_GivenString_ReturnsPartitionSizesWhereEachLetterAppearsOnce(string s,
-        string expectedResultJsonArray)
+        string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

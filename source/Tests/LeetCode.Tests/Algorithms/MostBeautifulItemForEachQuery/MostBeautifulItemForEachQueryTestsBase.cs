@@ -20,13 +20,13 @@ public abstract class MostBeautifulItemForEachQueryTestsBase<T> where T : IMostB
     [DataRow("[[1,2],[3,2],[2,4],[5,6],[3,5]]", "[1,2,3,4,5,6]", "[2,4,5,5,6,6]")]
     [DataRow("[[1,2],[1,2],[1,3],[1,4]]", "[1]", "[4]")]
     [DataRow("[[10,1000]]", "[5]", "[0]")]
-    public void MaximumBeauty_WithItemsAndQueries_CalculatesCorrectBeautyValues(string itemsJsonArray,
-        string queriesJsonArray, string expectedResultJsonArray)
+    public void MaximumBeauty_WithItemsAndQueries_CalculatesCorrectBeautyValues(string itemsJson,
+        string queriesJson, string expectedResultJson)
     {
         // Arrange
-        var items = JsonHelper<int>.DeserializeToJaggedArray(itemsJsonArray);
-        var queries = JsonHelper<int>.DeserializeToArray(queriesJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var items = JsonHelper<int[][]>.Parse(itemsJson);
+        var queries = JsonHelper<int[]>.Parse(queriesJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

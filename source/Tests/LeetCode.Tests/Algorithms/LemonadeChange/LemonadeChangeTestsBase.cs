@@ -24,10 +24,10 @@ public abstract class LemonadeChangeTestsBase<T> where T : ILemonadeChange, new(
     [DataRow(
         "[5, 5, 10, 5, 5, 10, 20, 5, 10, 20, 20, 10, 5, 10, 20, 20, 5, 5, 10, 20, 10, 5, 10, 5, 5, 10, 20, 5, 10, 20, 20, 10, 5, 10, 20, 20, 5, 5, 10, 20, 10, 5, 10, 5, 10, 5, 10, 5, 20, 20, 20, 10, 10, 5]",
         false)]
-    public void LemonadeChange_WithGivenBills_ReturnsIfChangeCanBeProvided(string billsJsonArray, bool expectedResult)
+    public void LemonadeChange_WithGivenBills_ReturnsIfChangeCanBeProvided(string billsJson, bool expectedResult)
     {
         // Arrange
-        var bills = JsonHelper<int>.DeserializeToArray(billsJsonArray);
+        var bills = JsonHelper<int[]>.Parse(billsJson);
 
         var solution = new T();
 

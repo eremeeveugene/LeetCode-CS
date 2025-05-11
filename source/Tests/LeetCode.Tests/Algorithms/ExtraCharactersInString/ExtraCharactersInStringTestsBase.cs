@@ -27,11 +27,11 @@ public abstract class ExtraCharactersInStringTestsBase<T> where T : IExtraCharac
     [DataRow("azvzulhlwxwobowijiyebeaskecvtjqwkmaqnvnaomaqnvf",
         "[\"na\",\"i\",\"edd\",\"wobow\",\"kecv\",\"b\",\"n\",\"or\",\"jj\",\"zul\",\"vk\",\"yeb\",\"qnfac\",\"azv\",\"grtjba\",\"yswmjn\",\"xowio\",\"u\",\"xi\",\"pcmatm\",\"maqnv\"]",
         15)]
-    public void MinExtraChar_WithStringAndDictionary_ReturnsMinExtraChars(string s, string dictionaryJsonArray,
+    public void MinExtraChar_WithStringAndDictionary_ReturnsMinExtraChars(string s, string dictionaryJson,
         int expectedResult)
     {
         // Arrange
-        var dictionary = JsonHelper<string>.DeserializeToArray(dictionaryJsonArray);
+        var dictionary = JsonHelper<string[]>.Parse(dictionaryJson);
 
         var solution = new T();
 

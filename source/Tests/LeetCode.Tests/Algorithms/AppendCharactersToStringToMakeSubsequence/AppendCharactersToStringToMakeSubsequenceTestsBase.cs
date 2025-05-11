@@ -28,7 +28,7 @@ public abstract class AppendCharactersToStringToMakeSubsequenceTestsBase<T>
     [DataRow("axbyczd", "abcd", 0)]
     [DataRow("vrykt", "rkge", 2)]
     [DataRow("coaching", "coding", 4)]
-    public void AppendCharacters_GivenSourceAndTargetStrings_ReturnsExpectedCharacterCount(string s, string t,
+    public void AppendCharacters_WithSourceAndTargetStrings_ReturnsMinCharsToAppendForSubsequence(string s, string t,
         int expectedResult)
     {
         // Arrange

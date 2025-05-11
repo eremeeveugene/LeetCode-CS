@@ -21,11 +21,11 @@ public abstract class UniqueThreeDigitEvenNumbersTestsBase<T> where T : IUniqueT
     [DataRow("[0,2,2]", 2)]
     [DataRow("[6,6,6]", 1)]
     [DataRow("[1,3,5]", 0)]
-    public void TotalNumbers_WithGivenDigitsArray_ReturnsUniqueThreeDigitEvenNumbers(string digitsJsonArray,
+    public void TotalNumbers_WithGivenDigitsArray_ReturnsUniqueThreeDigitEvenNumbers(string digitsJson,
         int expectedResult)
     {
         // Arrange
-        var digits = JsonHelper<int>.DeserializeToArray(digitsJsonArray);
+        var digits = JsonHelper<int[]>.Parse(digitsJson);
 
         var solution = new T();
 

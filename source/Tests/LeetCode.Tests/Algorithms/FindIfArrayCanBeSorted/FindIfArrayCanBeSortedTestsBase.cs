@@ -20,11 +20,11 @@ public abstract class FindIfArrayCanBeSortedTestsBase<T> where T : IFindIfArrayC
     [DataRow("[8,4,2,30,15]", true)]
     [DataRow("[1,2,3,4,5]", true)]
     [DataRow("[3,16,8,4,2]", false)]
-    public void CanSortArray_WithUnsortedOrSortedArray_ReturnsIfArrayCanBeSorted(string numsJsonArray,
+    public void CanSortArray_WithUnsortedOrSortedArray_ReturnsIfArrayCanBeSorted(string numsJson,
         bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

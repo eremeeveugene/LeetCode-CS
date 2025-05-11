@@ -32,11 +32,11 @@ public abstract class HandOfStraightsTestsBase<T> where T : IHandOfStraights, ne
     [DataRow("[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]", 4, false)]
     [DataRow("[3, 3, 2, 2, 1, 1]", 3, true)]
     [DataRow("[1, 2, 3, 5, 6, 7, 9, 10, 11]", 3, true)]
-    public void IsNStraightHand_GivenHandAndGroupSize_ReturnsExpectedResult(string handJsonArray, int groupSize,
-        bool expectedResult)
+    public void IsNStraightHand_WithCardHandAndGroupSize_ReturnsWhetherHandCanBeDividedIntoConsecutiveGroups(
+        string handJson, int groupSize, bool expectedResult)
     {
         // Arrange
-        var hand = JsonHelper<int>.DeserializeToArray(handJsonArray);
+        var hand = JsonHelper<int[]>.Parse(handJson);
 
         var solution = new T();
 

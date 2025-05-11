@@ -21,13 +21,13 @@ public abstract class FindCommonElementsBetweenTwoArraysTestsBase<T>
     [DataRow("[2,3,2]", "[1,2]", "[2,1]")]
     [DataRow("[4,3,2,3,1]", "[2,2,5,2,3,6]", "[3,4]")]
     [DataRow("[3,4,2,3]", "[1,5]", "[0,0]")]
-    public void FindIntersectionValues_WithTwoIntegerArrays_ReturnsIntersectionCounts(string nums1JsonArray,
-        string nums2JsonArray, string expectedResultJsonArray)
+    public void FindIntersectionValues_WithTwoIntegerArrays_ReturnsIntersectionCounts(string nums1Json,
+        string nums2Json, string expectedResultJson)
     {
         // Arrange
-        var nums1 = JsonHelper<int>.DeserializeToArray(nums1JsonArray);
-        var nums2 = JsonHelper<int>.DeserializeToArray(nums2JsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums1 = JsonHelper<int[]>.Parse(nums1Json);
+        var nums2 = JsonHelper<int[]>.Parse(nums2Json);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

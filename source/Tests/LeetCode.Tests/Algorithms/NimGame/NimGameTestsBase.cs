@@ -24,7 +24,7 @@ public abstract class NimGameTestsBase<T> where T : INimGame, new()
     [DataRow(6, true)]
     [DataRow(7, true)]
     [DataRow(8, false)]
-    public void CanWinNim_WithStartingNumber_ReturnsCorrectOutcome(int n, bool expectedResult)
+    public void CanWinNim_WithStoneCount_ReturnsIfPlayerCanWin(int n, bool expectedResult)
     {
         // Arrange
         var solution = new T();

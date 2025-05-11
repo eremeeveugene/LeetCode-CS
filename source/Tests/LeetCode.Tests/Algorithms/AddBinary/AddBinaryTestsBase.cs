@@ -19,7 +19,7 @@ public abstract class AddBinaryTestsBase<T> where T : IAddBinary, new()
     [DataRow("11", "1", "100")]
     [DataRow("1010", "1011", "10101")]
     [DataRow("110", "10", "1000")]
-    public void AddBinary_WithTwoBinaryStrings_ReturnsCorrectSum(string a, string b, string expectedResult)
+    public void AddBinary_WithTwoBinaryStrings_ReturnsBinarySumAsString(string a, string b, string expectedResult)
     {
         // Arrange
         var solution = new T();

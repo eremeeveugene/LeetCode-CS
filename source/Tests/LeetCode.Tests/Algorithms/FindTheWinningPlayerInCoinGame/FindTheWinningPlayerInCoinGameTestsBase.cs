@@ -18,7 +18,7 @@ public abstract class FindTheWinningPlayerInCoinGameTestsBase<T> where T : IFind
     [TestMethod]
     [DataRow(2, 7, "Alice")]
     [DataRow(4, 11, "Bob")]
-    public void WinningPlayer_WithGivenMoveCountsAndStones_ReturnsCorrectWinner(int x, int y, string expectedResult)
+    public void WinningPlayer_WithCoinCounts_ReturnsPlayerName(int x, int y, string expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -20,11 +20,11 @@ public abstract class MinimumPairRemovalToSortArray1TestsBase<T> where T : IMini
     [DataRow("[5,2,3,1]", 2)]
     [DataRow("[1,2,2]", 0)]
     [DataRow("[2,2,-1,3,-2,2,1,1,1,0,-1]", 9)]
-    public void MinimumPairRemoval_WithUnsortedArray_ReturnsMinimumNumberOfOperationsNeededToSort(string numsJsonArray,
+    public void MinimumPairRemoval_WithUnsortedArray_ReturnsMinimumNumberOfOperationsNeededToSort(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

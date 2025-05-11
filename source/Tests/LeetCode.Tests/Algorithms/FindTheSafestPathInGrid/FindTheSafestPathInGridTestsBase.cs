@@ -20,11 +20,10 @@ public abstract class FindTheSafestPathInGridTestsBase<T> where T : IFindTheSafe
     [DataRow("[[1,0,0],[0,0,0],[0,0,1]]", 0)]
     [DataRow("[[0,0,1],[0,0,0],[0,0,0]]", 2)]
     [DataRow("[[0,0,0,1],[0,0,0,0],[0,0,0,0],[1,0,0,0]]", 2)]
-    public void MaximumSafenessFactor_WithVariousGrids_ReturnsCorrectSafetyLevels(string gridJsonArray,
-        int expectedResult)
+    public void MaximumSafenessFactor_WithGridInput_ReturnsSafenessFactorForPath(string gridJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int>.DeserializeToJaggedList(gridJsonArray);
+        var grid = JsonHelper<IList<IList<int>>>.Parse(gridJson);
 
         var solution = new T();
 

@@ -21,12 +21,12 @@ public abstract class MakeTwoArraysEqualByReversingSubarraysTestsBase<T>
     [DataRow("[7]", "[7]", true)]
     [DataRow("[1,2,3,4]", "[2,4,1,3]", true)]
     [DataRow("[3,7,9]", "[3,7,11]", false)]
-    public void CanBeEqual_GivenTargetAndArray_ReturnsIfTheyCanBeEqual(string targetJsonArray, string arrJsonArray,
+    public void CanBeEqual_GivenTargetAndArray_ReturnsIfTheyCanBeEqual(string targetJson, string arrJson,
         bool expectedResult)
     {
         // Arrange
-        var target = JsonHelper<int>.DeserializeToArray(targetJsonArray);
-        var arr = JsonHelper<int>.DeserializeToArray(arrJsonArray);
+        var target = JsonHelper<int[]>.Parse(targetJson);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
 
         var solution = new T();
 

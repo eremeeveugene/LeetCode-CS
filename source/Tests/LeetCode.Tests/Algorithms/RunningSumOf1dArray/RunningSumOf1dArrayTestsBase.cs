@@ -20,12 +20,12 @@ public abstract class RunningSumOf1dArrayTestsBase<T> where T : IRunningSumOf1dA
     [DataRow("[1,2,3,4]", "[1,3,6,10]")]
     [DataRow("[1,1,1,1,1]", "[1,2,3,4,5]")]
     [DataRow("[3,1,2,10,1]", "[3,4,6,16,17]")]
-    public void RunningSum_GivenArrays_ReturnsCumulativeSumsPerElement(string numsJsonArray,
-        string expectedResultJsonArray)
+    public void RunningSum_GivenArrays_ReturnsCumulativeSumsPerElement(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

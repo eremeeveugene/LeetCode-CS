@@ -19,13 +19,13 @@ public abstract class MinimumFallingPathSum2TestsBase<T> where T : IMinimumFalli
     [TestMethod]
     [DataRow("[[1,2,3],[4,5,6],[7,8,9]]", 13)]
     [DataRow("[[7]]", 7)]
-    public void MinFallingPathSum_WithGridJsonArray_ReturnsMinimumFallingPathSum(string gridJsonArray,
+    public void MinFallingPathSum_WithGridJson_ReturnsMinimumFallingPathSum(string gridJson,
         int expectedResult)
     {
         // Arrange
         var solution = new T();
 
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJsonArray);
+        var grid = JsonHelper<int[][]>.Parse(gridJson);
 
         // Act
         var actualResult = solution.MinFallingPathSum(grid);

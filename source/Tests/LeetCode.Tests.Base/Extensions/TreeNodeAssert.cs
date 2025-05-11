@@ -19,27 +19,27 @@ public static class TreeNodeAssert
 {
     public static void AreEqual(TreeNode? expectedTree, TreeNode? actualTree)
     {
-        var queue = new Queue<(TreeNode? expected, TreeNode? actual)>();
+        var queue = new Queue<(TreeNode? expectedResult, TreeNode? actualResult)>();
         queue.Enqueue((expectedTree, actualTree));
 
         while (queue.Count > 0)
         {
-            var (expected, actual) = queue.Dequeue();
+            var (expectedResult, actualResult) = queue.Dequeue();
 
-            if (expected == null && actual == null)
+            if (expectedResult == null && actualResult == null)
             {
                 continue;
             }
 
-            if (expected == null || actual == null)
+            if (expectedResult == null || actualResult == null)
             {
                 Assert.Fail("One of the trees is null while the other is not.");
             }
 
-            Assert.AreEqual(expected.val, actual.val, "Values should be equal at each node.");
+            Assert.AreEqual(expectedResult.val, actualResult.val, "Values should be equal at each node.");
 
-            queue.Enqueue((expected.left, actual.left));
-            queue.Enqueue((expected.right, actual.right));
+            queue.Enqueue((expectedResult.left, actualResult.left));
+            queue.Enqueue((expectedResult.right, actualResult.right));
         }
     }
 

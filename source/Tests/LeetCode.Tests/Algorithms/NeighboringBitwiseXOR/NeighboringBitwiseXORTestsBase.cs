@@ -20,11 +20,11 @@ public abstract class NeighboringBitwiseXORTestsBase<T> where T : INeighboringBi
     [DataRow("[1,1,0]", true)]
     [DataRow("[1,1]", true)]
     [DataRow("[1,0]", false)]
-    public void DoesValidArrayExist_WithDerivedArray_ReturnsWhetherValidArrayExists(string derivedJsonArray,
+    public void DoesValidArrayExist_WithDerivedArray_ReturnsWhetherValidArrayExists(string derivedJson,
         bool expectedResult)
     {
         // Arrange
-        var derived = JsonHelper<int>.DeserializeToArray(derivedJsonArray);
+        var derived = JsonHelper<int[]>.Parse(derivedJson);
 
         var solution = new T();
 

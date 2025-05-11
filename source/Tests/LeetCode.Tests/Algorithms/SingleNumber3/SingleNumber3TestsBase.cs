@@ -20,12 +20,12 @@ public abstract class SingleNumber3TestsBase<T> where T : ISingleNumber3, new()
     [DataRow("[1,2,1,3,2,5]", "[3,5]")]
     [DataRow("[-1,0]", "[-1,0]")]
     [DataRow("[0,1]", "[1,0]")]
-    public void SingleNumber_WithIntegerArray_ReturnsTwoUniqueNumbers(string numsJsonArray,
-        string expectedResultJsonArray)
+    public void SingleNumber_WithIntegerArray_ReturnsTwoUniqueNumbers(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

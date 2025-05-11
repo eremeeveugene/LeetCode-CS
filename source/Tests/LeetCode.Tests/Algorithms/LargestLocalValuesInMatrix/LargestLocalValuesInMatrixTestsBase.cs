@@ -20,19 +20,19 @@ public abstract class LargestLocalValuesInMatrixTestsBase<T> where T : ILargestL
     [TestMethod]
     [DataRow("[[9,9,8,1],[5,6,2,6],[8,2,6,4],[6,2,2,2]]", "[[9,9],[8,6]]")]
     [DataRow("[[1,1,1,1,1],[1,1,1,1,1],[1,1,2,1,1],[1,1,1,1,1],[1,1,1,1,1]]", "[[2,2,2],[2,2,2],[2,2,2]]")]
-    public void LargestLocal_WithGridJsonArray_ReturnsExpectedMaxLocalGrid(string gridJsonArray,
-        string expectedResultJsonArray)
+    public void LargestLocal_WithGridInput_ReturnsMatrixOfMaxValuesFrom3x3Neighborhoods(string gridJson,
+        string expectedResultJson)
     {
         // Arrange
         var solution = new T();
 
-        var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJsonArray);
+        var grid = JsonHelper<int[][]>.Parse(gridJson);
+        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
 
         // Act
         var actualResult = solution.LargestLocal(grid);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

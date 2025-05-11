@@ -25,12 +25,12 @@ public abstract class CheckIfTwoStringArraysAreEquivalentTestsBase<T>
     [DataRow("[\"a\", \"b\", \"c\"]", "[\"abc\"]", true)]
     [DataRow("[\"abc\"]", "[\"a\", \"b\", \"c\"]", true)]
     [DataRow("[\"abc\"]", "[\"ab\", \"d\"]", false)]
-    public void ArrayStringsAreEqual_GivenTwoStringArrays_ReturnsBooleanIndicatingEquality(string word1JsonArray,
-        string word2JsonArray, bool expectedResult)
+    public void ArrayStringsAreEqual_GivenTwoStringArrays_ReturnsBooleanIndicatingEquality(string word1Json,
+        string word2Json, bool expectedResult)
     {
         // Arrange
-        var word1 = JsonHelper<string>.DeserializeToArray(word1JsonArray);
-        var word2 = JsonHelper<string>.DeserializeToArray(word2JsonArray);
+        var word1 = JsonHelper<string[]>.Parse(word1Json);
+        var word2 = JsonHelper<string[]>.Parse(word2Json);
 
         var solution = new T();
 

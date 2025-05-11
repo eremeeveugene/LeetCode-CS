@@ -21,14 +21,14 @@ public abstract class BinaryTreeInorderTraversalTestsBase<T> where T : IBinaryTr
     [DataRow("[1,null,2,3]", "[1,3,2]")]
     [DataRow("[1]", "[1]")]
     [DataRow("[]", "[0]")]
-    public void InorderTraversal_WithBinaryTreeFromJson_ReturnsInorderTraversalList(string inputJsonArray,
-        string expectedResultJsonArray)
+    public void InorderTraversal_WithBinaryTreeFromJson_ReturnsInorderTraversalList(string inputJson,
+        string expectedResultJson)
     {
         // Arrange
         var solution = new T();
 
-        var expectedResult = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
-        var inputArray = JsonHelper<int?>.DeserializeToArray(inputJsonArray);
+        var expectedResult = JsonHelper<int?[]>.Parse(expectedResultJson);
+        var inputArray = JsonHelper<int?[]>.Parse(inputJson);
         var inputNode = TreeNode.ToTreeNode(inputArray);
 
         // Act

@@ -26,7 +26,7 @@ public abstract class CompareVersionNumbersTestsBase<T> where T : ICompareVersio
     [DataRow("30307.038",
         "30307.038.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0",
         0)]
-    public void CompareVersion_WithVersionStrings_ReturnsExpectedComparisonResult(string version1, string version2,
+    public void CompareVersion_WithVersionStrings_ReturnsRelativeOrderIndicator(string version1, string version2,
         int expectedResult)
     {
         // Arrange

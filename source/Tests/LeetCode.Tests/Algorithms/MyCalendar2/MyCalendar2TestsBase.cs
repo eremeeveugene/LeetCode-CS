@@ -18,13 +18,13 @@ public abstract class MyCalendar2TestsBase<T> where T : IMyCalendar2, new()
 {
     [TestMethod]
     [DataRow("[10,50,10,5,5,25]", "[20,60,40,15,10,55]", "[true,true,true,false,true,true]")]
-    public void Book_WithMultipleBookings_ReturnsOverlapResults(string startJsonArray, string endJsonArray,
-        string expectedResultJsonArray)
+    public void Book_WithMultipleBookings_ReturnsOverlapResults(string startJson, string endJson,
+        string expectedResultJson)
     {
         // Arrange
-        var start = JsonHelper<int>.DeserializeToArray(startJsonArray);
-        var end = JsonHelper<int>.DeserializeToArray(endJsonArray);
-        var expectedResult = JsonHelper<bool>.DeserializeToArray(expectedResultJsonArray);
+        var start = JsonHelper<int[]>.Parse(startJson);
+        var end = JsonHelper<int[]>.Parse(endJson);
+        var expectedResult = JsonHelper<bool[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

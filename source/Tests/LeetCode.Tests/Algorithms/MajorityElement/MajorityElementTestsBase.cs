@@ -19,10 +19,10 @@ public abstract class MajorityElementTestsBase<T> where T : IMajorityElement, ne
     [TestMethod]
     [DataRow("[3,2,3]", 3)]
     [DataRow("[2,2,1,1,1,2,2]", 2)]
-    public void MajorityElement_WithIntegerArray_ReturnsMajorityElement(string numsJsonArray, int expectedResult)
+    public void MajorityElement_WithIntegerArray_ReturnsMajorityElement(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

@@ -31,11 +31,11 @@ public abstract class EvenOddTreeTestsBase<T> where T : IEvenOddTree, new()
     [DataRow("[5,10,4,3,null,7,9,12,8,6,2,0]", true)]
     [DataRow("[1,10,4,3,2,7,9,12,8,6,null,null,2]", false)]
     [DataRow("[1,3,2,6,4,6,4,12,8,6,null,null,2,1]", false)]
-    public void IsEvenOddTree_GivenVariousTreeStructures_ReturnsExpectedBoolean(string rootJsonArray,
+    public void IsEvenOddTree_WithBinaryTreeInput_ReturnsWhetherTreeSatisfiesEvenOddLevelRules(string rootJson,
         bool expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var arrayRoot = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(arrayRoot);
 
         var solution = new T();

@@ -19,12 +19,12 @@ public abstract class MinimumCostToReachEveryPositionTestsBase<T> where T : IMin
     [TestMethod]
     [DataRow("[5,3,4,1,3,2]", "[5,3,3,1,1,1]")]
     [DataRow("[1,2,4,6,7]", "[1,1,1,1,1]")]
-    public void MinCosts_WithCostArray_ReturnsMinimumCostAtEachStep(string costJsonArray,
-        string expectedResultJsonArray)
+    public void MinCosts_WithCostArray_ReturnsMinimumCostAtEachStep(string costJson,
+        string expectedResultJson)
     {
         // Arrange
-        var cost = JsonHelper<int>.DeserializeToArray(costJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var cost = JsonHelper<int[]>.Parse(costJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

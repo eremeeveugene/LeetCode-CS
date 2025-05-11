@@ -33,12 +33,12 @@ public abstract class MedianOfTwoSortedArraysTestsBase<T> where T : IMedianOfTwo
     [DataRow("[1,2,3,4,5,6]", "[7,8,9,10]", 5.5)]
     [DataRow("[-10,-5,0,5,10]", "[1,2,3,4]", 2)]
     [DataRow("[-2147483648,0,2147483647]", "[-1,1]", 0)]
-    public void FindMedianSortedArrays_GivenTwoArrays_ReturnsCorrectMedianValue(string nums1JsonArray,
-        string nums2JsonArray, double expectedResult)
+    public void FindMedianSortedArrays_WithTwoSortedArrays_ReturnsMedianOfMergedArray(string nums1Json,
+        string nums2Json, double expectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper<int>.DeserializeToArray(nums1JsonArray);
-        var nums2 = JsonHelper<int>.DeserializeToArray(nums2JsonArray);
+        var nums1 = JsonHelper<int[]>.Parse(nums1Json);
+        var nums2 = JsonHelper<int[]>.Parse(nums2Json);
 
         var solution = new T();
 

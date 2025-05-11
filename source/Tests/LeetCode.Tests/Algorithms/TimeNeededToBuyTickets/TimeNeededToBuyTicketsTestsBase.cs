@@ -26,11 +26,11 @@ public abstract class TimeNeededToBuyTicketsTestsBase<T> where T : ITimeNeededTo
     [DataRow(
         "[15, 66, 3, 47, 71, 27, 54, 43, 97, 34, 94, 33, 54, 26, 15, 52, 20, 71, 88, 42, 50, 6, 66, 88, 36, 99, 27, 82, 7, 72]",
         18, 1457)]
-    public void TimeRequiredToBuy_GivenTicketsAndPosition_ReturnsExpectedWaitTime(string ticketsJsonArray, int k,
-        int expectedResult)
+    public void TimeRequiredToBuy_WithTicketsArrayAndTargetIndex_ReturnsTotalTimeForKthPersonToFinish(
+        string ticketsJson, int k, int expectedResult)
     {
         // Arrange
-        var tickets = JsonHelper<int>.DeserializeToArray(ticketsJsonArray);
+        var tickets = JsonHelper<int[]>.Parse(ticketsJson);
 
         var solution = new T();
 

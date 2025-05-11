@@ -18,7 +18,7 @@ public abstract class ReverseBitsTestsBase<T> where T : IReverseBits, new()
     [TestMethod]
     [DataRow("00000010100101000001111010011100", "00111001011110000010100101000000")]
     [DataRow("11111111111111111111111111111101", "10111111111111111111111111111111")]
-    public void ReverseBits_WithBinaryString_ReturnsCorrectReversedBits(string nBinaryString,
+    public void ReverseBits_WithBinaryRepresentation_ReversesBitsOf32BitUnsignedInteger(string nBinaryString,
         string expectedResultBinaryString)
     {
         // Arrange

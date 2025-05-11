@@ -10,68 +10,94 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Extensions;
-using System.Text.Json;
 
 namespace LeetCode.Core.Tests.Helpers;
 
 [TestClass]
 public class JsonHelperTests
 {
-    [TestMethod]
-    public void DeserializeToArray_WithValidJson_ReturnsDeserializedArray()
+    [DataTestMethod]
+    [DataRow("\"hello\"", "hello")]
+    [DataRow("\"\"", "")]
+    public void Parse_WithJsonString_ReturnsParsedString(string stringJson, string expectedResult)
     {
-        // Arrange
-        var expectedResult = new[] { 1, 2, 3 };
-
         // Act
-        var actualResult = JsonHelper<int>.DeserializeToArray("[1,2,3]");
+        var actualResult = JsonHelper<string>.Parse(stringJson);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEqual(expectedResult, actualResult);
     }
 
-    [TestMethod]
-    public void DeserializeToJaggedArray_WithValidJson_ReturnsDeserializedJaggedArray()
+    [DataTestMethod]
+    [DataRow("null", null)]
+    [DataRow("\"hello\"", "hello")]
+    [DataRow("\"\"", "")]
+    public void Parse_WithNullableJsonString_ReturnsParsedNullableString(string nullableStringJson,
+        string? expectedResult)
     {
-        // Arrange
-        var expectedResult = new[] { new[] { 1, 2 }, [3, 4] };
-
         // Act
-        var actualResult = JsonHelper<int>.DeserializeToJaggedArray("[[1,2],[3,4]]");
+        var actualResult = JsonHelper<string?>.Parse(nullableStringJson);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEqual(expectedResult, actualResult);
     }
 
-    [TestMethod]
-    public void DeserializeToJaggedList_WithValidJson_ReturnsDeserializedJaggedList()
+    [DataTestMethod]
+    [DataRow("true", true)]
+    [DataRow("false", false)]
+    public void Parse_WithBoolJsonString_ReturnsParsedBool(string boolJson, bool expectedResult)
     {
-        // Arrange
-        var expectedResult = new[] { new[] { 1, 2 }, [3, 4] };
-
         // Act
-        var actualResult = JsonHelper<int>.DeserializeToJaggedList("[[1,2],[3,4]]");
+        var actualResult = JsonHelper<bool>.Parse(boolJson);
 
         // Assert
-        JaggedArrayAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEqual(expectedResult, actualResult);
     }
 
-    [TestMethod]
-    public void DeserializeToArray_InvalidJson_ThrowsJsonException()
+    [DataTestMethod]
+    [DataRow("123", 123)]
+    [DataRow("-5", -5)]
+    public void Parse_WithIntJsonString_ReturnsParsedInt(string intJson, int expectedResult)
     {
-        Assert.ThrowsExactly<JsonException>(() => JsonHelper<int>.DeserializeToArray("invalid"));
+        // Act
+        var actualResult = JsonHelper<int>.Parse(intJson);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
 
-    [TestMethod]
-    public void DeserializeToJaggedArray_InvalidJson_ThrowsJsonException()
+    [DataTestMethod]
+    [DataRow("null", null)]
+    [DataRow("42", 42)]
+    public void Parse_WithNullableIntJsonString_ReturnsParsedNullableInt(string nullableIntJson, int? expectedResult)
     {
-        Assert.ThrowsExactly<JsonException>(() => JsonHelper<int>.DeserializeToJaggedArray("invalid"));
+        // Act
+        var actualResult = JsonHelper<int?>.Parse(nullableIntJson);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
 
-    [TestMethod]
-    public void DeserializeToJaggedList_InvalidJson_ThrowsJsonException()
+    [DataTestMethod]
+    [DataRow("3000000000", 3000000000L)]
+    public void Parse_WithLongJsonString_ReturnsParsedLong(string longJson, long expectedResult)
     {
-        Assert.ThrowsExactly<JsonException>(() => JsonHelper<int>.DeserializeToJaggedList("invalid"));
+        // Act
+        var actualResult = JsonHelper<long>.Parse(longJson);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    [DataTestMethod]
+    [DataRow("3.14", 3.14)]
+    [DataRow("0.0", 0.0)]
+    public void Parse_WithDoubleJsonString_ReturnsParsedDouble(string doubleJson, double expectedResult)
+    {
+        // Act
+        var actualResult = JsonHelper<double>.Parse(doubleJson);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult, double.Epsilon);
     }
 }

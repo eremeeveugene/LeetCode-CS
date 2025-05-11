@@ -19,7 +19,7 @@ public abstract class PowTestsBase<T> where T : IPow, new()
     [DataRow(2.00000, 10, 1024.00000)]
     [DataRow(2.10000, 3, 9.26100)]
     [DataRow(2.00000, -2, 0.25000)]
-    public void MyPow_WithBaseAndExponent_ReturnsExpectedPower(double x, int n, double expectedResult)
+    public void MyPow_WithBaseAndExponent_ReturnsXToThePowerOfN(double x, int n, double expectedResult)
     {
         // Arrange
         var solution = new T();

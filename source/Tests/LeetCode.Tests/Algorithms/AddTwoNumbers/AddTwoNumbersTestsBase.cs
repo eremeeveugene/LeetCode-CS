@@ -23,17 +23,17 @@ public abstract class AddTwoNumbersTestsBase<T> where T : IAddTwoNumbers, new()
     [DataRow("[0]", "[0]", "[0]")]
     [DataRow("[9, 9, 9, 9, 9, 9, 9]", "[9, 9, 9, 9]", "[8, 9, 9, 9, 0, 0, 0, 1]")]
     [DataRow("[9]", "[1, 9, 9, 9, 9, 9, 9, 9, 9, 9]", "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]")]
-    public void AddTwoNumbers_WithTwoIntegerArrays_ReturnsSumAsLinkedList(string array1JsonArray,
-        string array2JsonArray, string expectedResultJsonArray)
+    public void AddTwoNumbers_WithTwoIntegerArrays_ReturnsSumAsLinkedList(string array1Json,
+        string array2Json, string expectedResultJson)
     {
         // Arrange
-        var array1 = JsonHelper<int>.DeserializeToArray(array1JsonArray);
+        var array1 = JsonHelper<int[]>.Parse(array1Json);
         var list1 = ListNode.ToListNode(array1);
 
-        var array2 = JsonHelper<int>.DeserializeToArray(array2JsonArray);
+        var array2 = JsonHelper<int[]>.Parse(array2Json);
         var list2 = ListNode.ToListNode(array2);
 
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int[]>.Parse(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

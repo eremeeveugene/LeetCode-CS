@@ -19,11 +19,11 @@ public abstract class ConvertTheTemperatureTestsBase<T> where T : IConvertTheTem
     [TestMethod]
     [DataRow(36.50, "[309.65000, 97.70000]")]
     [DataRow(122.11, "[395.26000, 251.79800]")]
-    public void ConvertTemperature_GivenCelsius_ReturnsExpectedTemperatureArray(double celsius,
-        string expectedResultJsonArray)
+    public void ConvertTemperature_WithCelsiusInput_ReturnsKelvinAndFahrenheitValues(double celsius,
+        string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<double>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<double[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

@@ -33,11 +33,11 @@ public abstract class LengthOfLongestSubarrayWithAtMostKFrequencyTestsBase<T>
     [DataRow("[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]", 2, 10)]
     [DataRow("[1, 1, 2, 2, 3, 3, 4, 4, 5, 5]", 1, 2)]
     [DataRow("[1, 1, 2, 2, 3, 3, 4, 4, 5, 5]", 2, 10)]
-    public void MaxSubarrayLength_GivenArrayAndK_ReturnsMaxSubarrayLength(string numsJsonArray, int k,
+    public void MaxSubarrayLength_GivenArrayAndK_ReturnsMaxSubarrayLength(string numsJson, int k,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

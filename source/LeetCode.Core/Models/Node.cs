@@ -16,13 +16,19 @@ namespace LeetCode.Core.Models;
 /// <summary>
 ///     Definition for an n-ary tree node
 /// </summary>
-public class Node(int? _val = null, IList<Node>? _children = null)
+public class Node
 {
-    public IList<Node>? children = _children;
+    public IList<Node>? children;
 
-    public int val = _val ?? 0;
+    public int val;
 
     public Node() : this(0) { }
+
+    public Node(int? val = null, IList<Node>? children = null)
+    {
+        this.children = children;
+        this.val = val ?? 0;
+    }
 
     public static Node? ToNode(int?[] values)
     {

@@ -20,11 +20,11 @@ public abstract class LongestNiceSubarrayTestsBase<T> where T : ILongestNiceSuba
     [DataRow("[1,3,8,48,10]", 3)]
     [DataRow("[3,1,5,11,13]", 1)]
     [DataRow("[8,4,2,1]", 4)]
-    public void LongestNiceSubarray_WithGivenIntegerArray_ReturnsLengthOfLongestNiceSubarray(string numsJsonArray,
+    public void LongestNiceSubarray_WithGivenIntegerArray_ReturnsLengthOfLongestNiceSubarray(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

@@ -20,12 +20,12 @@ public abstract class DefuseTheBombTestsBase<T> where T : IDefuseTheBomb, new()
     [DataRow("[5,7,1,4]", 3, "[12,10,16,13]")]
     [DataRow("[1,2,3,4]", 0, "[0,0,0,0]")]
     [DataRow("[2,4,9,3]", -2, "[12,5,6,13]")]
-    public void Decrypt_WithCodeArrayAndShiftValue_ReturnsDecryptedArray(string codeJsonArray, int k,
-        string expectedResultJsonArray)
+    public void Decrypt_WithCodeArrayAndShiftValue_ReturnsDecryptedArray(string codeJson, int k,
+        string expectedResultJson)
     {
         // Arrange
-        var code = JsonHelper<int>.DeserializeToArray(codeJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var code = JsonHelper<int[]>.Parse(codeJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

@@ -19,12 +19,12 @@ public abstract class BitwiseXOROfAllPairingsTestsBAse<T> where T : IBitwiseXORO
     [TestMethod]
     [DataRow("[2,1,3]", "[10,2,5,0]", 13)]
     [DataRow("[1,2]", "[3,4]", 0)]
-    public void XorAllNums_WithTwoIntegerArrays_ReturnsBitwiseXorValue(string nums1JsonArray, string nums2JsonArray,
+    public void XorAllNums_WithTwoIntegerArrays_ReturnsBitwiseXorValue(string nums1Json, string nums2Json,
         int expectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper<int>.DeserializeToArray(nums1JsonArray);
-        var nums2 = JsonHelper<int>.DeserializeToArray(nums2JsonArray);
+        var nums1 = JsonHelper<int[]>.Parse(nums1Json);
+        var nums2 = JsonHelper<int[]>.Parse(nums2Json);
 
         var solution = new T();
 

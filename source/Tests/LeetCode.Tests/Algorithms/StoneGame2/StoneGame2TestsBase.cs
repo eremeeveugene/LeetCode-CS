@@ -21,10 +21,10 @@ public abstract class StoneGame2TestsBase<T> where T : IStoneGame2, new()
     [DataRow("[2,7,9,4,4]", 10)]
     [DataRow("[1,2,3,4,5,100]", 104)]
     [DataRow("[100,10,100,100,100,100]", 300)]
-    public void StoneGameII_WithGivenPiles_ReturnsMaxPossibleScore(string pilesJsonArray, int expectedResult)
+    public void StoneGameII_WithGivenPiles_ReturnsMaxPossibleScore(string pilesJson, int expectedResult)
     {
         // Arrange
-        var piles = JsonHelper<int>.DeserializeToArray(pilesJsonArray);
+        var piles = JsonHelper<int[]>.Parse(pilesJson);
 
         var solution = new T();
 

@@ -22,7 +22,7 @@ public abstract class NthTribonacciNumberTestsBase<T> where T : INthTribonacciNu
     [DataRow(3, 2)]
     [DataRow(4, 4)]
     [DataRow(25, 1389537)]
-    public void Tribonacci_WithInputN_ReturnsExpectedValue(int n, int expectedResult)
+    public void Tribonacci_WithIndexN_ReturnsNthTribonacciNumber(int n, int expectedResult)
     {
         // Arrange
         var solution = new T();

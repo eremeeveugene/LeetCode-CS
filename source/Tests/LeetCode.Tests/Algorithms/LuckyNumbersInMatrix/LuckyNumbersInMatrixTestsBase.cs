@@ -20,12 +20,12 @@ public abstract class LuckyNumbersInMatrixTestsBase<T> where T : ILuckyNumbersIn
     [DataRow("[[3,7,8],[9,11,13],[15,16,17]]", "[15]")]
     [DataRow("[[1,10,4,2],[9,3,8,7],[15,16,17,12]]", "[12]")]
     [DataRow("[[7,8],[1,2]]", "[7]")]
-    public void LuckyNumbers_WithMatrixJsonArray_ReturnsLuckyNumbers(string matrixJsonArray,
-        string expectedResultJsonArray)
+    public void LuckyNumbers_WithMatrixJson_ReturnsLuckyNumbers(string matrixJson,
+        string expectedResultJson)
     {
         // Arrange
-        var matrix = JsonHelper<int>.DeserializeToJaggedArray(matrixJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var matrix = JsonHelper<int[][]>.Parse(matrixJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

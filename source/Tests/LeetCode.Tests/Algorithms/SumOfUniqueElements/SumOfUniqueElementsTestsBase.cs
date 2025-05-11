@@ -20,10 +20,10 @@ public abstract class SumOfUniqueElementsTestsBase<T> where T : ISumOfUniqueElem
     [DataRow("[1,2,3,2]", 4)]
     [DataRow("[1,1,1,1,1]", 0)]
     [DataRow("[1,2,3,4,5]", 15)]
-    public void SumOfUnique_WithIntegerArray_ReturnsSumOfUniqueElements(string numsJsonArray, int expectedResult)
+    public void SumOfUnique_WithIntegerArray_ReturnsSumOfUniqueElements(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

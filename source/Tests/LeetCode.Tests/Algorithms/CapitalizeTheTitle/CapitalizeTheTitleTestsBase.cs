@@ -19,7 +19,7 @@ public abstract class CapitalizeTheTitleTestsBase<T> where T : ICapitalizeTheTit
     [DataRow("capiTalIze tHe titLe", "Capitalize The Title")]
     [DataRow("First leTTeR of EACH Word", "First Letter of Each Word")]
     [DataRow("i lOve leetcode", "i Love Leetcode")]
-    public void CapitalizeTitle_GivenTitle_ReturnsCorrectlyCapitalizedTitle(string title, string expectedResult)
+    public void CapitalizeTitle_WithMixedCaseTitle_ReturnsProperlyFormattedTitle(string title, string expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -21,11 +21,11 @@ public abstract class CountNumberOfMaximumBitwiseORSubsetsTestsBase<T>
     [DataRow("[3,1]", 2)]
     [DataRow("[2,2,2]", 7)]
     [DataRow("[3,2,1,5]", 6)]
-    public void CountMaxOrSubsets_GivenArrayOfIntegers_ReturnsNumberOfMaxOrSubsets(string numsJsonArray,
+    public void CountMaxOrSubsets_GivenArrayOfIntegers_ReturnsNumberOfMaxOrSubsets(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

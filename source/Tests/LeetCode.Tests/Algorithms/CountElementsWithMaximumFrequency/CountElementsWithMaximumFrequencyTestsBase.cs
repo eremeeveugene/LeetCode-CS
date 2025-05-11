@@ -19,10 +19,10 @@ public abstract class CountElementsWithMaximumFrequencyTestsBase<T> where T : IC
     [TestMethod]
     [DataRow("[1, 2, 2, 3, 1, 4]", 4)]
     [DataRow("[1, 2, 3, 4, 5]", 5)]
-    public void MaxFrequencyElements_GivenArray_ReturnsMaximumElementFrequency(string numsJsonArray, int expectedResult)
+    public void MaxFrequencyElements_GivenArray_ReturnsMaximumElementFrequency(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

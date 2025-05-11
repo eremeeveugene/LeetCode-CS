@@ -22,10 +22,10 @@ public abstract class CountSubarraysOfLengthThreeWithConditionTestsBase<T>
     [DataRow("[1,1,1]", 0)]
     [DataRow("[-1,-4,-1,4]", 1)]
     public void CountSubarrays_WithArrayContainingRepeatedElements_ReturnsNumberOfSubarraysLengthThree(
-        string numsJsonArray, int expectedResult)
+        string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

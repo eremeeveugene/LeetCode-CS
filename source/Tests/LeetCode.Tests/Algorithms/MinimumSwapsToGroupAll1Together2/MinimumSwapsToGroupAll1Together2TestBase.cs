@@ -20,10 +20,10 @@ public abstract class MinimumSwapsToGroupAll1Together2TestBase<T> where T : IMin
     [DataRow("[1,1,0,0,1]", 0)]
     [DataRow("[0,1,0,1,1,0,0]", 1)]
     [DataRow("[0,1,1,1,0,0,1,1,0]", 2)]
-    public void MinSwaps_WithBinaryArray_ReturnsMinimumSwapsToGroupOnes(string numsJsonArray, int expectedResult)
+    public void MinSwaps_WithBinaryArray_ReturnsMinimumSwapsToGroupOnes(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

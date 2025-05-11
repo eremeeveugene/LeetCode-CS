@@ -20,12 +20,12 @@ public abstract class PartitionArrayAccordingToGivenPivotTestsBase<T>
     [TestMethod]
     [DataRow("[9,12,5,10,14,3,10]", 10, "[9,5,3,10,10,12,14]")]
     [DataRow("[-3,4,3,2]", 2, "[-3,2,4,3]")]
-    public void PivotArray_WithUnsortedArrayAndPivot_ReturnsPartitionedArray(string numsJsonArray, int pivot,
-        string expectedResultJsonArray)
+    public void PivotArray_WithUnsortedArrayAndPivot_ReturnsPartitionedArray(string numsJson, int pivot,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

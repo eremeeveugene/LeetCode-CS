@@ -20,11 +20,11 @@ public abstract class CountUnguardedCellsInTheGridTestsBase<T> where T : ICountU
     [DataRow(4, 6, "[[0,0],[1,1],[2,3]]", "[[0,1],[2,2],[1,4]]", 7)]
     [DataRow(3, 3, "[[1,1]]", "[[0,1],[1,0],[2,1],[1,2]]", 4)]
     public void CountUnguarded_WithGridSizeGuardsAndWalls_ReturnsNumberOfUnguardedCells(int m, int n,
-        string guardsJsonArray, string wordsJsonArray, int expectedResult)
+        string guardsJson, string wordsJson, int expectedResult)
     {
         // Arrange
-        var guards = JsonHelper<int>.DeserializeToJaggedArray(guardsJsonArray);
-        var words = JsonHelper<int>.DeserializeToJaggedArray(wordsJsonArray);
+        var guards = JsonHelper<int[][]>.Parse(guardsJson);
+        var words = JsonHelper<int[][]>.Parse(wordsJson);
 
         var solution = new T();
 

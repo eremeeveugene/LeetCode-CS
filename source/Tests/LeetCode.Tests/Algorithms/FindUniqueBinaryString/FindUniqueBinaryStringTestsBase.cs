@@ -20,11 +20,11 @@ public abstract class FindUniqueBinaryStringTestsBase<T> where T : IFindUniqueBi
     [DataRow("[\"01\",\"10\"]", "11")]
     [DataRow("[\"00\",\"01\"]", "10")]
     [DataRow("[\"111\",\"011\",\"001\"]", "000")]
-    public void FindDifferentBinaryString_WithUniqueBinaryStrings_ReturnsMissingBinaryString(string numsJsonArray,
+    public void FindDifferentBinaryString_WithUniqueBinaryStrings_ReturnsMissingBinaryString(string numsJson,
         string expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<string>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<string[]>.Parse(numsJson);
 
         var solution = new T();
 

@@ -24,7 +24,8 @@ public abstract class RemoveKDigitsTestsBase<T> where T : IRemoveKDigits, new()
     [DataRow("3238900989831", 5, "989831")]
     [DataRow("3238900989831", 6, "89831")]
     [DataRow("52374333400072837283091820", 6, "23300072837283091820")]
-    public void RemoveKDigits_GivenNumberAndK_ReturnsExpectedSmallestNumber(string num, int k, string expectedResult)
+    public void RemoveKDigits_WithNumericStringAndDigitsToRemove_ReturnsSmallestPossibleNumberAsString(string num,
+        int k, string expectedResult)
     {
         // Arrange
         var solution = new T();

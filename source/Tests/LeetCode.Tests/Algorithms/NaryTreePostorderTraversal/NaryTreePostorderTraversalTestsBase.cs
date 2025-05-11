@@ -22,11 +22,11 @@ public abstract class NaryTreePostorderTraversalTestsBase<T> where T : INaryTree
     [DataRow("[1,null,3,2,4,null,5,6]", "[5,6,3,2,4,1]")]
     [DataRow("[1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]",
         "[2,6,14,11,7,3,12,8,4,13,9,10,5,1]")]
-    public void Postorder_GivenBinaryTree_ReturnsCorrectTraversal(string rootJsonArray, string expectedResultJsonArray)
+    public void Postorder_WithNaryTree_ReturnsPostorderTraversalOfNodes(string rootJson, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = Node.ToNode(rootArray);
 
         var solution = new T();

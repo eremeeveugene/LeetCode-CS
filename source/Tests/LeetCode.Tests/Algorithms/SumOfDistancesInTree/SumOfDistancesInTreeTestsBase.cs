@@ -20,12 +20,12 @@ public abstract class SumOfDistancesInTreeTestsBase<T> where T : ISumOfDistances
     [DataRow(6, "[[0,1],[0,2],[2,3],[2,4],[2,5]]", "[8,12,6,10,10,10]")]
     [DataRow(1, "[]", "[0]")]
     [DataRow(2, "[[1,0]]", "[1,1]")]
-    public void SumOfDistancesInTree_GivenNumberOfNodesAndEdges_ReturnsDistanceSumsArray(int n, string edgesJsonArray,
-        string expectedResultJsonArray)
+    public void SumOfDistancesInTree_GivenNumberOfNodesAndEdges_ReturnsDistanceSumsArray(int n, string edgesJson,
+        string expectedResultJson)
     {
         // Arrange
-        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var edges = JsonHelper<int[][]>.Parse(edgesJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

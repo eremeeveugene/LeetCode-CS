@@ -19,7 +19,8 @@ public abstract class ExcelSheetColumnTitleTestsBase<T> where T : IExcelSheetCol
     [DataRow(1, "A")]
     [DataRow(28, "AB")]
     [DataRow(701, "ZY")]
-    public void ConvertToTitle_GivenColumnNumber_ReturnsExpectedTitle(int columnNumber, string expectedResult)
+    public void ConvertToTitle_WithColumnNumber_ReturnsCorrespondingExcelColumnTitle(int columnNumber,
+        string expectedResult)
     {
         // Arrange
         var solution = new T();

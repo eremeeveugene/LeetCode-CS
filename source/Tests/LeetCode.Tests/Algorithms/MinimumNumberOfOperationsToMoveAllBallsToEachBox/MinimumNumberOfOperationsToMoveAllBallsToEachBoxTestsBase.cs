@@ -20,10 +20,10 @@ public abstract class MinimumNumberOfOperationsToMoveAllBallsToEachBoxTestsBase<
     [TestMethod]
     [DataRow("110", "[1,1,3]")]
     [DataRow("001011", "[11,8,5,4,3,4]")]
-    public void MinOperations_WithBinaryString_ReturnsOperationsCountArray(string s, string expectedResultJsonArray)
+    public void MinOperations_WithBinaryString_ReturnsOperationsCountArray(string s, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

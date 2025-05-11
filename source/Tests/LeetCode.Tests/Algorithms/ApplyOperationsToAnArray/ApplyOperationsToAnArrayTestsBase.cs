@@ -19,12 +19,12 @@ public abstract class ApplyOperationsToAnArrayTestsBase<T> where T : IApplyOpera
     [TestMethod]
     [DataRow("[0,1]", "[1,0]")]
     [DataRow("[1,2,2,1,1,0]", "[1,4,2,0,0,0]")]
-    public void ApplyOperations_WithGivenNumbersArray_ReturnsTransformedArray(string numsJsonArray,
-        string expectedResultJsonArray)
+    public void ApplyOperations_WithGivenNumbersArray_ReturnsTransformedArray(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

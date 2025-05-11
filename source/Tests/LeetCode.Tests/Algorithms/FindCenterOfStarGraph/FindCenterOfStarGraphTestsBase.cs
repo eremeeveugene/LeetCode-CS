@@ -19,12 +19,12 @@ public abstract class FindCenterOfStarGraphTestsBase<T> where T : IFindCenterOfS
     [TestMethod]
     [DataRow("[[1,2],[2,3],[4,2]]", 2)]
     [DataRow("[[1,2],[5,1],[1,3],[1,4]]", 1)]
-    public void FindCenter_GivenEdgesJsonArray_ReturnsCenterNode(string edgesJsonArray, int expectedResult)
+    public void FindCenter_GivenEdgesJson_ReturnsCenterNode(string edgesJson, int expectedResult)
     {
         // Arrange
         var solution = new T();
 
-        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJsonArray);
+        var edges = JsonHelper<int[][]>.Parse(edgesJson);
 
         // Act
         var actualResult = solution.FindCenter(edges);

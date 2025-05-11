@@ -20,11 +20,11 @@ public abstract class MakeSumDivisibleByPTestsBase<T> where T : IMakeSumDivisibl
     [DataRow("[3,1,4,2]", 6, 1)]
     [DataRow("[6,3,5,2]", 9, 2)]
     [DataRow("[1,2,3]", 3, 0)]
-    public void MinSubarray_WithArrayAndDivisor_ReturnsMinSubarrayToRemove(string numsJsonArray, int p,
+    public void MinSubarray_WithArrayAndDivisor_ReturnsMinSubarrayToRemove(string numsJson, int p,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

@@ -33,12 +33,12 @@ public abstract class ImplementQueueUsingStacksTestsBase<T> where T : IImplement
     [DataRow("[1, 2, 3]", "[1, 2, 3]")]
     [DataRow("[5, 10, 15]", "[5, 10, 15]")]
     [DataRow("[]", "[]")]
-    public void Pop_RemovesElementsFromQueue_QueueBecomesEmpty(string pushElementsJsonArray,
-        string popExpectedJsonArray)
+    public void Pop_RemovesElementsFromQueue_QueueBecomesEmpty(string pushElementsJson,
+        string popExpectedJson)
     {
         // Arrange
-        var pushElements = JsonHelper<int>.DeserializeToArray(pushElementsJsonArray);
-        var popExpected = JsonHelper<int>.DeserializeToArray(popExpectedJsonArray);
+        var pushElements = JsonHelper<int[]>.Parse(pushElementsJson);
+        var popExpected = JsonHelper<int[]>.Parse(popExpectedJson);
 
         var solution = new T();
 
@@ -49,9 +49,9 @@ public abstract class ImplementQueueUsingStacksTestsBase<T> where T : IImplement
         }
 
         // Assert
-        foreach (var expected in popExpected)
+        foreach (var expectedResult in popExpected)
         {
-            Assert.AreEqual(expected, solution.Pop());
+            Assert.AreEqual(expectedResult, solution.Pop());
         }
 
         Assert.IsTrue(solution.Empty());
@@ -60,10 +60,10 @@ public abstract class ImplementQueueUsingStacksTestsBase<T> where T : IImplement
     [TestMethod]
     [DataRow("[1, 2, 3]", 1)]
     [DataRow("[5, 10, 15]", 5)]
-    public void Peek_ReturnsFirstElementWithoutRemovingIt(string pushElementsJsonArray, int expectedPeek)
+    public void Peek_ReturnsFirstElementWithoutRemovingIt(string pushElementsJson, int expectedPeek)
     {
         // Arrange
-        var pushElements = JsonHelper<int>.DeserializeToArray(pushElementsJsonArray);
+        var pushElements = JsonHelper<int[]>.Parse(pushElementsJson);
 
         var solution = new T();
 

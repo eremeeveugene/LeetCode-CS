@@ -19,11 +19,11 @@ public abstract class SumOfGoodNumbersTestsBase<T> where T : ISumOfGoodNumbers, 
     [TestMethod]
     [DataRow("[1,3,2,1,5,4]", 2, 12)]
     [DataRow("[2,1]", 1, 2)]
-    public void SumOfGoodNumbers_WithArrayAndThresholdK_ReturnsSumOfGoodNumbers(string numsJsonArray,
+    public void SumOfGoodNumbers_WithArrayAndThresholdK_ReturnsSumOfGoodNumbers(string numsJson,
         int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

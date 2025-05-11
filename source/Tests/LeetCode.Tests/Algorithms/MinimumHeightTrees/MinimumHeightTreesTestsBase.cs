@@ -27,12 +27,12 @@ public abstract class MinimumHeightTreesTestsBase<T> where T : IMinimumHeightTre
     [DataRow(7, "[[0,1],[1,2],[1,3],[2,4],[3,5],[4,6]]", "[1,2]")]
     [DataRow(8, "[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6],[6,7]]", "[0,2]")]
     [DataRow(9, "[[0,1],[1,2],[1,3],[3,4],[4,5],[5,6],[6,7],[7,8]]", "[4,5]")]
-    public void FindMinHeightTrees_WithGraphEdgesAndNodeCount_ReturnsMinHeightRoots(int n, string edgesJsonArray,
-        string expectedResultJsonArray)
+    public void FindMinHeightTrees_WithGraphEdgesAndNodeCount_ReturnsMinHeightRoots(int n, string edgesJson,
+        string expectedResultJson)
     {
         // Arrange
-        var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var edges = JsonHelper<int[][]>.Parse(edgesJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

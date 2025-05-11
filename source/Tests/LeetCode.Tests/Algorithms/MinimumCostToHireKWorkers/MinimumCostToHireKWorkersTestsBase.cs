@@ -23,11 +23,11 @@ public abstract class MinimumCostToHireKWorkersTestsBase<T> where T : IMinimumCo
     [DataRow("[3,5,8,10,9,5,1,2,4,1]", "[8,8,6,9,5,6,8,7,5,8]", 3, 21.25)]
     [DataRow("[5,7,4,2,6,5,10,9,4,2]", "[10,10,3,7,3,7,6,2,6,4]", 3, 14.25)]
     public void MincostToHireWorkers_GivenQualityAndWageArraysAndK_ReturnsMinimumCostWithPrecision(
-        string qualityJsonArray, string wageJsonArray, int k, double expectedResult)
+        string qualityJson, string wageJson, int k, double expectedResult)
     {
         // Arrange
-        var quality = JsonHelper<int>.DeserializeToArray(qualityJsonArray);
-        var wage = JsonHelper<int>.DeserializeToArray(wageJsonArray);
+        var quality = JsonHelper<int[]>.Parse(qualityJson);
+        var wage = JsonHelper<int[]>.Parse(wageJson);
 
         var solution = new T();
 

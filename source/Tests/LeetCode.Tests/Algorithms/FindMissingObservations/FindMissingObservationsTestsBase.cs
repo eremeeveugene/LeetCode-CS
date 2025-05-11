@@ -22,12 +22,12 @@ public abstract class FindMissingObservationsTestsBase<T> where T : IFindMissing
     [DataRow("[1,2,3,4]", 6, 4, "[]")]
     [DataRow("[6,3,4,3,5,3]", 1, 6, "[]")]
     [DataRow("[4,2,2,5,4,5,4,5,3,3,6,1,2,4,2,1,6,5,4,2,3,4,2,3,3,5,4,1,4,4,5,3,6,1,5,2,3,3,6,1,6,4,1,3]", 2, 53, "[]")]
-    public void MissingRolls_WithRollsMeanAndN_ReturnsMissingRolls(string rollsJsonArray, int mean, int n,
-        string expectedResultJsonArray)
+    public void MissingRolls_WithRollsMeanAndN_ReturnsMissingRolls(string rollsJson, int mean, int n,
+        string expectedResultJson)
     {
         // Arrange
-        var rolls = JsonHelper<int>.DeserializeToArray(rollsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var rolls = JsonHelper<int[]>.Parse(rollsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

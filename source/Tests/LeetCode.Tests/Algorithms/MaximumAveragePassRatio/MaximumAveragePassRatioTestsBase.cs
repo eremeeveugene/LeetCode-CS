@@ -19,11 +19,11 @@ public abstract class MaximumAveragePassRatioTestsBase<T> where T : IMaximumAver
     [TestMethod]
     [DataRow("[[1,2],[3,5],[2,2]]", 2, 0.78333)]
     [DataRow("[[2,4],[3,9],[4,5],[2,10]]", 4, 0.53485)]
-    public void MaxAverageRatio_WithClassDataAndExtraStudents_ReturnsMaximumAverageRatio(string classesJsonArray,
+    public void MaxAverageRatio_WithClassDataAndExtraStudents_ReturnsMaximumAverageRatio(string classesJson,
         int extraStudents, double expectedResult)
     {
         // Arrange
-        var classes = JsonHelper<int>.DeserializeToJaggedArray(classesJsonArray);
+        var classes = JsonHelper<int[][]>.Parse(classesJson);
 
         var solution = new T();
 

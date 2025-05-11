@@ -12,8 +12,15 @@
 namespace LeetCode.Algorithms.RangeSumQueryImmutable;
 
 /// <inheritdoc />
-internal class RangeSumQueryImmutableBruteForce(int[] nums) : IRangeSumQueryImmutable
+public class RangeSumQueryImmutableBruteForce : IRangeSumQueryImmutable
 {
+    private readonly int[] _nums;
+
+    public RangeSumQueryImmutableBruteForce(int[] nums)
+    {
+        _nums = nums;
+    }
+
     /// <summary>
     ///     Time complexity - O(right − left + 1)
     ///     Space complexity - O(1)
@@ -27,7 +34,7 @@ internal class RangeSumQueryImmutableBruteForce(int[] nums) : IRangeSumQueryImmu
 
         for (var i = left; i <= right; i++)
         {
-            sum += nums[i];
+            sum += _nums[i];
         }
 
         return sum;

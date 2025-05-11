@@ -29,12 +29,12 @@ public abstract class MinimumCommonValueTestsBase<T> where T : IMinimumCommonVal
     [DataRow("[]", "[1,2,3]", -1)]
     [DataRow("[1,2,3]", "[]", -1)]
     [DataRow("[]", "[]", -1)]
-    public void GetCommon_WithTwoArrays_ReturnsCountOfCommonElements(string nums1JsonArray, string nums2JsonArray,
+    public void GetCommon_WithTwoArrays_ReturnsCountOfCommonElements(string nums1Json, string nums2Json,
         int expectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper<int>.DeserializeToArray(nums1JsonArray);
-        var nums2 = JsonHelper<int>.DeserializeToArray(nums2JsonArray);
+        var nums1 = JsonHelper<int[]>.Parse(nums1Json);
+        var nums2 = JsonHelper<int[]>.Parse(nums2Json);
 
         var solution = new T();
 

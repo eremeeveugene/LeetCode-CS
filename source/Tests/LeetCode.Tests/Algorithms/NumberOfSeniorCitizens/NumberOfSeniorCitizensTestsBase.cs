@@ -29,10 +29,11 @@ public abstract class NumberOfSeniorCitizensTestsBase<T> where T : INumberOfSeni
     [DataRow(
         "[\"1137774788O7691\",\"7472708234O0072\",\"9885137889M8868\",\"1321925389M8161\",\"5574709492O7158\",\"2205791488F8896\",\"1537217483M5762\"]",
         5)]
-    public void CountSeniors_WithDetailsArray_ReturnsCorrectSeniorCount(string detailsJsonArray, int expectedResult)
+    public void CountSeniors_WithPassengerDetails_ReturnsNumberOfSeniorPassengers(string detailsJson,
+        int expectedResult)
     {
         // Arrange
-        var details = JsonHelper<string>.DeserializeToArray(detailsJsonArray);
+        var details = JsonHelper<string[]>.Parse(detailsJson);
 
         var solution = new T();
 

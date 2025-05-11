@@ -21,14 +21,14 @@ public abstract class BinaryTreePathsTestsBase<T> where T : IBinaryTreePaths, ne
     [DataRow("[1,2,3,null,5]", "[\"1->2->5\", \"1->3\"]")]
     [DataRow("[1]", "[\"1\"]")]
     public void BinaryTreePaths_GivenTreeInJson_ReturnsAllRootToLeafPaths(string jsonRootArray,
-        string expectedResultJsonArray)
+        string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
 
         var solution = new T();
 
-        var rootArray = JsonHelper<int?>.DeserializeToArray(jsonRootArray);
+        var rootArray = JsonHelper<int?[]>.Parse(jsonRootArray);
         var root = TreeNode.ToTreeNode(rootArray);
 
         // Act

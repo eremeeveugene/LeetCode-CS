@@ -24,15 +24,15 @@ public abstract class MergeTwoBinaryTreesTestsBase<T> where T : IMergeTwoBinaryT
     [DataRow("[1]", "[]", "[1]")]
     [DataRow("[1]", "[1,2]", "[2,2]")]
     [DataRow("[1,3,2,5]", "[2,1,3,null,4,null,7]", "[3,4,5,5,4,null,7]")]
-    public void MergeTrees_WithTwoBinaryTrees_ReturnsMergedTree(string root1JsonArray, string root2JsonArray,
-        string expectedResultJsonArray)
+    public void MergeTrees_WithTwoBinaryTrees_ReturnsMergedTree(string root1Json, string root2Json,
+        string expectedResultJson)
     {
         // Arrange
-        var root1Array = JsonHelper<int?>.DeserializeToArray(root1JsonArray);
+        var root1Array = JsonHelper<int?[]>.Parse(root1Json);
         var root1 = TreeNode.ToTreeNode(root1Array);
-        var root2Array = JsonHelper<int?>.DeserializeToArray(root2JsonArray);
+        var root2Array = JsonHelper<int?[]>.Parse(root2Json);
         var root2 = TreeNode.ToTreeNode(root2Array);
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();

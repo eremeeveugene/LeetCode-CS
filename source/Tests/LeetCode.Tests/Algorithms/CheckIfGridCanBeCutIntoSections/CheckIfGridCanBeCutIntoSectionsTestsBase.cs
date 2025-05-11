@@ -21,10 +21,10 @@ public abstract class CheckIfGridCanBeCutIntoSectionsTestsBase<T> where T : IChe
     [DataRow(4, "[[0,0,1,1],[2,0,3,4],[0,2,2,3],[3,0,4,3]]", true)]
     [DataRow(4, "[[0,2,2,4],[1,0,3,2],[2,2,3,4],[3,0,4,2],[3,2,4,4]]", false)]
     public void CheckValidCuts_WithGridSizeAndRectangles_ReturnsWhetherGridCanBeCutIntoSections(int n,
-        string rectanglesJsonArray, bool expectedResult)
+        string rectanglesJson, bool expectedResult)
     {
         // Arrange
-        var rectangles = JsonHelper<int>.DeserializeToJaggedArray(rectanglesJsonArray);
+        var rectangles = JsonHelper<int[][]>.Parse(rectanglesJson);
 
         var solution = new T();
 

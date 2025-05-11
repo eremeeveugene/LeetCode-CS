@@ -19,11 +19,11 @@ public abstract class ButtonWithLongestPushTimeTestsBase<T> where T : IButtonWit
     [TestMethod]
     [DataRow("[[1,2],[2,5],[3,9],[1,15]]", 1)]
     [DataRow("[[10,5],[1,7]]", 10)]
-    public void ButtonWithLongestTime_GivenEventArray_ReturnsIdOfButtonWithMaxTime(string eventsJsonArray,
+    public void ButtonWithLongestTime_GivenEventArray_ReturnsIdOfButtonWithMaxTime(string eventsJson,
         int expectedResult)
     {
         // Arrange
-        var events = JsonHelper<int>.DeserializeToJaggedArray(eventsJsonArray);
+        var events = JsonHelper<int[][]>.Parse(eventsJson);
 
         var solution = new T();
 

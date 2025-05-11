@@ -20,12 +20,12 @@ public abstract class TransformedArrayTestsBase<T> where T : ITransformedArray, 
     [DataRow("[3,-2,1,1]", "[1,1,1,3]")]
     [DataRow("[-1,4,-1]", "[-1,-1,4]")]
     [DataRow("[-10]", "[-10]")]
-    public void ConstructTransformedArray_WithInputArray_ReturnsTransformedArray(string numsJsonArray,
-        string expectedResultJsonArray)
+    public void ConstructTransformedArray_WithInputArray_ReturnsTransformedArray(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

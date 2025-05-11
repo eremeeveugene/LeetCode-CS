@@ -21,11 +21,11 @@ public abstract class MinimumOperationsToMakeBinaryArrayElementsEqualToOne1Tests
     [DataRow("[0,1,1,1,0,0]", 3)]
     [DataRow("[0,1,1,1]", -1)]
     [DataRow("[1,0,0,1,1,0,1,1,1]", -1)]
-    public void MinOperations_WithBinaryArray_ReturnsMinimumOperationsOrMinusOne(string numsJsonArray,
+    public void MinOperations_WithBinaryArray_ReturnsMinimumOperationsOrMinusOne(string numsJson,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

@@ -19,12 +19,12 @@ public abstract class DecodeXORedArrayTestsBase<T> where T : IDecodeXORedArray, 
     [TestMethod]
     [DataRow("[1, 2, 3]", 1, "[1, 0, 2, 1]")]
     [DataRow("[6, 2, 7, 3]", 4, "[4, 2, 0, 7, 4]")]
-    public void Decode_GivenEncodedArrayAndFirstElement_ReturnsExpectedDecodedArray(
-        string encodedJsonArray, int first, string expectedResultJsonArray)
+    public void Decode_WithEncodedArrayAndFirstElement_ReturnsOriginalXorDecodedArray(string encodedJson, int first,
+        string expectedResultJson)
     {
         // Arrange
-        var encoded = JsonHelper<int>.DeserializeToArray(encodedJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var encoded = JsonHelper<int[]>.Parse(encodedJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

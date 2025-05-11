@@ -20,10 +20,10 @@ public abstract class MaximumBeautyOfAnArrayAfterApplyingOperationTestsBase<T>
     [TestMethod]
     [DataRow("[4,6,1,2]", 2, 3)]
     [DataRow("[1,1,1,1]", 10, 4)]
-    public void MaximumBeauty_WithArrayAndK_ReturnsMaximizedBeauty(string numsJsonArray, int k, int expectedResult)
+    public void MaximumBeauty_WithArrayAndK_ReturnsMaximizedBeauty(string numsJson, int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

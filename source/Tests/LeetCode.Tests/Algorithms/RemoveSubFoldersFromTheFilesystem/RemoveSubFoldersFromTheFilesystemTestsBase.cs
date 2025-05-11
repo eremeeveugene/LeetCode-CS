@@ -21,12 +21,12 @@ public abstract class RemoveSubFoldersFromTheFilesystemTestsBase<T> where T : IR
     [DataRow("[\"/a\",\"/a/b\", \"/a/b/c\",\"/c/d\",\"/c/d/e\",\"/c/f\"]", "[\"/a\",\"/c/d\",\"/c/f\"]")]
     [DataRow("[\"/a\",\"/a/b/c\",\"/a/b/d\"]", "[\"/a\"]")]
     [DataRow("[\"/a/b/c\",\"/a/b/ca\",\"/a/b/d\"]", "[\"/a/b/c\",\"/a/b/ca\",\"/a/b/d\"]")]
-    public void RemoveSubfolders_WithFolderList_ReturnsFoldersExcludingSubfolders(string folderJsonArray,
-        string expectedResultJsonArray)
+    public void RemoveSubfolders_WithFolderList_ReturnsFoldersExcludingSubfolders(string folderJson,
+        string expectedResultJson)
     {
         // Arrange
-        var folder = JsonHelper<string>.DeserializeToArray(folderJsonArray);
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJsonArray);
+        var folder = JsonHelper<string[]>.Parse(folderJson);
+        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

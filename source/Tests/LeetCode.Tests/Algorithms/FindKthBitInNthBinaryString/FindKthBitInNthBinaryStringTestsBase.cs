@@ -18,7 +18,7 @@ public abstract class FindKthBitInNthBinaryStringTestsBase<T> where T : IFindKth
     [TestMethod]
     [DataRow(3, 1, '0')]
     [DataRow(4, 11, '1')]
-    public void FindKthBit_WithNAndK_ReturnsCorrectBit(int n, int k, char expectedResult)
+    public void FindKthBit_WithNAndK_ReturnsBitAtSpecifiedPosition(int n, int k, char expectedResult)
     {
         // Arrange
         var solution = new T();

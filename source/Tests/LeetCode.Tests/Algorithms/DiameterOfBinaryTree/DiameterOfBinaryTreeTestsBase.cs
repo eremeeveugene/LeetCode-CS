@@ -21,11 +21,11 @@ public abstract class DiameterOfBinaryTreeTestsBase<T> where T : IDiameterOfBina
     [DataRow("[]", 0)]
     [DataRow("[1,2,3,4,5]", 3)]
     [DataRow("[1,2]", 1)]
-    public void DiameterOfBinaryTree_GivenJsonArrayRepresentation_ReturnsExpectedDiameter(string rootJsonArray,
+    public void DiameterOfBinaryTree_WithBinaryTreeInput_ReturnsLengthOfLongestPathBetweenNodes(string rootJson,
         int expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var arrayRoot = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(arrayRoot);
 
         var solution = new T();

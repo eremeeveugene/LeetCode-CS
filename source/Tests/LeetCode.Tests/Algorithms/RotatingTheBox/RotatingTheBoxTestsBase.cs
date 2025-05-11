@@ -23,11 +23,12 @@ public abstract class RotatingTheBoxTestsBase<T> where T : IRotatingTheBox, new(
     [DataRow(
         "[[\"#\",\"#\",\"*\",\".\",\"*\",\".\"],[\"#\",\"#\",\"#\",\"*\",\".\",\".\"],[\"#\",\"#\",\"#\",\".\",\"#\",\".\"]]",
         "[[\".\",\"#\",\"#\"],[\".\",\"#\",\"#\"],[\"#\",\"#\",\"*\"],[\"#\",\"*\",\".\"],[\"#\",\".\",\"*\"],[\"#\",\".\",\".\"]]")]
-    public void RotateTheBox_WithJaggedArrayInput_ReturnsRotatedBox(string boxJsonArray, string expectedResultJsonArray)
+    public void RotateTheBox_WithBoxMatrix_ReturnsBoxAfterRotationAndGravityApplied(string boxJson,
+        string expectedResultJson)
     {
         // Arrange
-        var box = JsonHelper<char>.DeserializeToJaggedArray(boxJsonArray);
-        var expectedResult = JsonHelper<char>.DeserializeToJaggedArray(expectedResultJsonArray);
+        var box = JsonHelper<char[][]>.Parse(boxJson);
+        var expectedResult = JsonHelper<char[][]>.Parse(expectedResultJson);
 
         var solution = new T();
 

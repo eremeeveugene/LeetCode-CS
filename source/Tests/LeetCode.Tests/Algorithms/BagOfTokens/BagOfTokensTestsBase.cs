@@ -20,11 +20,11 @@ public abstract class BagOfTokensTestsBase<T> where T : IBagOfTokens, new()
     [DataRow("[100]", 50, 0)]
     [DataRow("[200, 100]", 150, 1)]
     [DataRow("[100, 200, 300, 400]", 200, 2)]
-    public void BagOfTokensScore_WithTokensAndPower_ReturnsExpectedScore(string tokensJsonArray, int power,
+    public void BagOfTokensScore_WithTokensAndInitialPower_ReturnsMaximumScore(string tokensJson, int power,
         int expectedResult)
     {
         // Arrange
-        var tokens = JsonHelper<int>.DeserializeToArray(tokensJsonArray);
+        var tokens = JsonHelper<int[]>.Parse(tokensJson);
 
         var solution = new T();
 

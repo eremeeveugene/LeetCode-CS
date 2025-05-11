@@ -19,11 +19,11 @@ public abstract class SubarraysWithKDifferentIntegersTestsBase<T> where T : ISub
     [TestMethod]
     [DataRow("[1,2,1,2,3]", 2, 7)]
     [DataRow("[1,2,1,3,4]", 3, 3)]
-    public void SubarraysWithKDistinct_GivenNumsAndK_ReturnsExpectedResult(string numsJsonArray, int k,
-        int expectedResult)
+    public void SubarraysWithKDistinct_WithArrayAndTargetDistinctCount_ReturnsNumberOfValidSubarrays(string numsJson,
+        int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

@@ -20,14 +20,14 @@ public abstract class AddToArrayFormOfIntegerTestsBase<T> where T : IAddToArrayF
     [DataRow("[1, 2, 0, 0]", 34, "[1, 2, 3, 4]")]
     [DataRow("[2, 7, 4]", 181, "[4, 5, 5]")]
     [DataRow("[2, 1, 5]", 806, "[1, 0, 2, 1]")]
-    public void AddToArrayForm_WithArrayAndInteger_ReturnsSumAsArray(string numJsonArray, int k,
-        string expectedResultJsonArray)
+    public void AddToArrayForm_WithArrayAndInteger_ReturnsSumAsArray(string numJson, int k,
+        string expectedResultJson)
     {
         // Arrange
         var solution = new T();
 
-        var num = JsonHelper<int>.DeserializeToArray(numJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var num = JsonHelper<int[]>.Parse(numJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         // Act
         var actualResult = solution.AddToArrayForm(num, k);

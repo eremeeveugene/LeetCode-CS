@@ -10,9 +10,15 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindElementsInContaminatedBinaryTree;
+using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.FindElementsInContaminatedBinaryTree;
 
 [TestClass]
-public class FindElementsInContaminatedBinaryTreeHashSetTests :
-    FindElementsInContaminatedBinaryTreeTestsBase<FindElementsInContaminatedBinaryTreeHashSetFactory>;
+public class FindElementsInContaminatedBinaryTreeHashSetTests : FindElementsInContaminatedBinaryTreeTestsBase
+{
+    protected override IFindElementsInContaminatedBinaryTree GetSolution(TreeNode root)
+    {
+        return new FindElementsInContaminatedBinaryTreeHashSet(root);
+    }
+}

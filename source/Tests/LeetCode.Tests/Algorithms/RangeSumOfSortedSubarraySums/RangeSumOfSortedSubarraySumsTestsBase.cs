@@ -20,11 +20,11 @@ public abstract class RangeSumOfSortedSubarraySumsTestsBase<T> where T : IRangeS
     [DataRow("[1,2,3,4]", 4, 1, 5, 13)]
     [DataRow("[1,2,3,4]", 4, 3, 4, 6)]
     [DataRow("[1,2,3,4]", 4, 1, 10, 50)]
-    public void RangeSum_WithValidInputs_ReturnsCorrectSubarraySum(string numsJsonArray, int n, int left, int right,
-        int expectedResult)
+    public void RangeSum_WithSubarraySumRange_ReturnsSumOfSortedSubarraySumsBetweenIndices(string numsJson, int n,
+        int left, int right, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

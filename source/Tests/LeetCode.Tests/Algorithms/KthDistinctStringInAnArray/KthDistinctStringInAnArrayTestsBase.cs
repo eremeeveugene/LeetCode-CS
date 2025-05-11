@@ -20,11 +20,11 @@ public abstract class KthDistinctStringInAnArrayTestsBase<T> where T : IKthDisti
     [DataRow("[\"d\", \"b\", \"c\", \"b\", \"c\", \"a\"]", 2, "a")]
     [DataRow("[\"aaa\", \"aa\", \"a\"]", 1, "aaa")]
     [DataRow("[\"a\", \"b\", \"a\"]", 3, "")]
-    public void KthDistinct_GivenArrayAndK_ReturnsKthDistinctStringOrEmpty(string arrJsonArray, int k,
+    public void KthDistinct_GivenArrayAndK_ReturnsKthDistinctStringOrEmpty(string arrJson, int k,
         string expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<string>.DeserializeToArray(arrJsonArray);
+        var arr = JsonHelper<string[]>.Parse(arrJson);
 
         var solution = new T();
 

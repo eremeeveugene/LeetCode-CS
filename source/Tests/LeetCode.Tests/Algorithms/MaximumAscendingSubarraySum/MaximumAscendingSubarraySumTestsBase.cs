@@ -20,11 +20,11 @@ public abstract class MaximumAscendingSubarraySumTestsBase<T> where T : IMaximum
     [DataRow("[10,20,30,5,10,50]", 65)]
     [DataRow("[10,20,30,40,50]", 150)]
     [DataRow("[12,17,15,13,10,11,12]", 33)]
-    public void MaxAscendingSum_GivenIntegerArray_ReturnsMaxSumOfAscendingSubarray(string numsJsonArray,
+    public void MaxAscendingSum_GivenIntegerArray_ReturnsMaxSumOfAscendingSubarray(string numsJson,
         double expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

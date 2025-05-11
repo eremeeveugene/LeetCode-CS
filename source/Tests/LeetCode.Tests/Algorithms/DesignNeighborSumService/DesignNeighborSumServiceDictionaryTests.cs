@@ -9,12 +9,15 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.DesignCircularDeque;
+using LeetCode.Algorithms.DesignNeighborSumService;
 
-public class GuessNumberHigherOrLowerFactory : IDesignCircularDequeFactory
+namespace LeetCode.Tests.Algorithms.DesignNeighborSumService;
+
+[TestClass]
+public class DesignNeighborSumServiceDictionaryTests : DesignNeighborSumServiceTestsBase
 {
-    public IDesignCircularDeque Create(int k)
+    protected override IDesignNeighborSumService GetSolution(int[][] grid)
     {
-        return new DesignCircularDequeLinkedList(k);
+        return new DesignNeighborSumServiceDictionary(grid);
     }
 }

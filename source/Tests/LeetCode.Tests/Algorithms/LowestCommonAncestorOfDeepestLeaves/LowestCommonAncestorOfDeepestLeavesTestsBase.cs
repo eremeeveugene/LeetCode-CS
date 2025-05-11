@@ -24,15 +24,15 @@ public abstract class LowestCommonAncestorOfDeepestLeavesTestsBase<T>
     [DataRow("[3,5,1,6,2,0,8,null,null,7,4]", "[2,7,4]")]
     [DataRow("[1]", "[1]")]
     [DataRow("[0,1,3,null,2]", "[2]")]
-    public void LcaDeepestLeaves_WithBinaryTree_ReturnsLowestCommonAncestorOfDeepestLeaves(string rootJsonArray,
-        string expectedResultJsonArray)
+    public void LcaDeepestLeaves_WithBinaryTree_ReturnsLowestCommonAncestorOfDeepestLeaves(string rootJson,
+        string expectedResultJson)
     {
         // Arrange
         var solution = new T();
 
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJsonArray);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray) ?? throw new TreeNodeBuildException();
 
         // Act

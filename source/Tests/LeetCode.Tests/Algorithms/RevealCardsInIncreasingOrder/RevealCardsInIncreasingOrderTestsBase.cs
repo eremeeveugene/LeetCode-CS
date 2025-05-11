@@ -23,12 +23,12 @@ public abstract class RevealCardsInIncreasingOrderTestsBase<T> where T : IReveal
     [DataRow("[1,2,3,4]", "[1,3,2,4]")]
     [DataRow("[1,2,3,4,5]", "[1,5,2,4,3]")]
     [DataRow("[17,13,11,2,3,5,7]", "[2,13,3,11,5,17,7]")]
-    public void DeckRevealedIncreasing_WithUnorderedDeck_ReturnsCorrectlyOrderedDeck(string deckJsonArray,
-        string expectedResultJsonArray)
+    public void DeckRevealedIncreasing_WithUnorderedDeck_ReturnsOrderThatRevealsCardsInIncreasingSequence(
+        string deckJson, string expectedResultJson)
     {
         // Arrange
-        var deck = JsonHelper<int>.DeserializeToArray(deckJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var deck = JsonHelper<int[]>.Parse(deckJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

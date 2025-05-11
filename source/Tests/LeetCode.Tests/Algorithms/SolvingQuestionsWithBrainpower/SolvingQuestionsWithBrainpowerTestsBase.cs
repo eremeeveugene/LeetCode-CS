@@ -19,10 +19,10 @@ public abstract class SolvingQuestionsWithBrainpowerTestsBase<T> where T : ISolv
     [TestMethod]
     [DataRow("[[3,2],[4,3],[4,4],[2,5]]", 5)]
     [DataRow("[[1,1],[2,2],[3,3],[4,4],[5,5]]", 7)]
-    public void MostPoints_GivenQuestionsArray_ReturnsMaximumPoints(string questionsJsonArray, long expectedResult)
+    public void MostPoints_GivenQuestionsArray_ReturnsMaximumPoints(string questionsJson, long expectedResult)
     {
         // Arrange
-        var questions = JsonHelper<int>.DeserializeToJaggedArray(questionsJsonArray);
+        var questions = JsonHelper<int[][]>.Parse(questionsJson);
 
         var solution = new T();
 

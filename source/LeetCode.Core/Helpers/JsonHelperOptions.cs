@@ -15,9 +15,14 @@ namespace LeetCode.Core.Helpers;
 
 internal static class JsonHelperOptions
 {
-    public static readonly JsonSerializerOptions Options = new()
+    public static readonly JsonSerializerOptions JsonSerializerOptions = new()
     {
         AllowTrailingCommas = true,
         PropertyNameCaseInsensitive = true
+    };
+
+    public static readonly JsonDocumentOptions JsonDocumentOptions = new()
+    {
+        AllowTrailingCommas = true
     };
 }

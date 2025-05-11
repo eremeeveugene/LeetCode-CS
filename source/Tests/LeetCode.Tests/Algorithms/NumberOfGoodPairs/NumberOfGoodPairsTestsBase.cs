@@ -23,10 +23,11 @@ public abstract class NumberOfGoodPairsTestsBase<T> where T : INumberOfGoodPairs
     [DataRow(
         "[6,5,1,5,7,7,9,1,5,7,1,6,10,9,7,4,1,8,7,1,1,8,6,4,7,4,10,5,3,9,10,1,9,5,5,4,1,7,4,2,9,2,6,6,4,2,10,3,5,3,6,4,7,4,6,4,4,6,3,4,10,1,10,6,10,4,9,6,6,4,8,6,9,5,4]",
         303)]
-    public void NumIdenticalPairs_WithVariousArrays_ReturnsExpectedCount(string numsJsonArray, int expectedResult)
+    public void NumIdenticalPairs_WithIntegerArray_ReturnsCountOfGoodPairsWhereElementsAreEqualAndIndexIsOrdered(
+        string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

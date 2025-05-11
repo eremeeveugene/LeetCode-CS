@@ -22,14 +22,14 @@ public abstract class DoubleNumberRepresentedAsLinkedListTestsBase<T>
     [TestMethod]
     [DataRow("[1, 8, 9]", "[3, 7, 8]")]
     [DataRow("[9, 9, 9]", "[1, 9, 9, 8]")]
-    public void ListNode_DoubleIt_GivenListNode_ReturnsDoubledValuesListNode(string headJsonArray,
-        string expectedResultJsonArray)
+    public void ListNode_DoubleIt_GivenListNode_ReturnsDoubledValuesListNode(string headJson,
+        string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJsonArray);
+        var headArray = JsonHelper<int[]>.Parse(headJson);
         var head = ListNode.ToListNode(headArray);
 
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResultArray = JsonHelper<int[]>.Parse(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

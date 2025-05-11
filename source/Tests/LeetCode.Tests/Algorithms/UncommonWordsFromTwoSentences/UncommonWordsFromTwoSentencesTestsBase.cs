@@ -22,10 +22,10 @@ public abstract class UncommonWordsFromTwoSentencesTestsBase<T> where T : IUncom
     [DataRow("abcd def abcd xyz", "ijk def ijk", "[\"xyz\"]")]
     [DataRow("s z z z s", "s z ejt", "[\"ejt\"]")]
     public void UncommonFromSentences_GivenTwoStrings_ReturnsUncommonWords(string s1, string s2,
-        string expectedResultJsonArray)
+        string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJsonArray);
+        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

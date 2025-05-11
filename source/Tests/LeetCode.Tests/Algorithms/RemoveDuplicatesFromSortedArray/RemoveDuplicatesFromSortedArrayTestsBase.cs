@@ -19,12 +19,12 @@ public abstract class RemoveDuplicatesFromSortedArrayTestsBase<T> where T : IRem
     [TestMethod]
     [DataRow("[1,1,2]", 2, "[1,2]")]
     [DataRow("[0,0,1,1,1,2,2,3,3,4]", 5, "[0,1,2,3,4]")]
-    public void RemoveDuplicates_GivenSortedArray_ReturnsCountOfUniqueElements(string numsJsonArray, int expectedResult,
-        string expectedNumsJsonArray)
+    public void RemoveDuplicates_GivenSortedArray_ReturnsCountOfUniqueElements(string numsJson, int expectedResult,
+        string expectedNumsJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var expectedNums = JsonHelper<int>.DeserializeToArray(expectedNumsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedNums = JsonHelper<int[]>.Parse(expectedNumsJson);
 
         var solution = new T();
 

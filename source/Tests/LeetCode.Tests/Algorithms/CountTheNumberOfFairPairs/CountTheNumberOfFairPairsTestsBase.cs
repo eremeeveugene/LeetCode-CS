@@ -19,11 +19,11 @@ public abstract class CountTheNumberOfFairPairsTestsBase<T> where T : ICountTheN
     [TestMethod]
     [DataRow("[0,1,7,4,4,5]", 3, 6, 6)]
     [DataRow("[1,7,9,2,5]", 11, 11, 1)]
-    public void CountFairPairs_WithArrayAndBounds_ReturnsTheNumberOfFairPairs(string numsJsonArray, int lower,
+    public void CountFairPairs_WithArrayAndBounds_ReturnsTheNumberOfFairPairs(string numsJson, int lower,
         int upper, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

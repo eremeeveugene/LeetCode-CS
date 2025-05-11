@@ -19,10 +19,10 @@ public abstract class RabbitsInForestTestsBase<T> where T : IRabbitsInForest, ne
     [TestMethod]
     [DataRow("[1,1,2]", 5)]
     [DataRow("[10,10,10]", 11)]
-    public void NumRabbits_WithAnswersArray_ReturnsMinimumPossibleCount(string answersJsonArray, int expectedResult)
+    public void NumRabbits_WithAnswersArray_ReturnsMinimumPossibleCount(string answersJson, int expectedResult)
     {
         // Arrange
-        var answers = JsonHelper<int>.DeserializeToArray(answersJsonArray);
+        var answers = JsonHelper<int[]>.Parse(answersJson);
 
         var solution = new T();
 

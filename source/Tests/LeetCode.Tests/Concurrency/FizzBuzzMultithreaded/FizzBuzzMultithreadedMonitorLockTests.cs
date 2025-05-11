@@ -14,5 +14,10 @@ using LeetCode.Concurrency.FizzBuzzMultithreaded;
 namespace LeetCode.Tests.Concurrency.FizzBuzzMultithreaded;
 
 [TestClass]
-public class FizzBuzzMultithreadedMonitorLockTests :
-    FizzBuzzMultithreadedTestsBase<FizzBuzzMultithreadedMonitorLockFactory>;
+public class FizzBuzzMultithreadedMonitorLockTests : FizzBuzzMultithreadedTestsBase
+{
+    protected override IFizzBuzzMultithreaded GetSolution(int n)
+    {
+        return new FizzBuzzMultithreadedMonitorLock(n);
+    }
+}

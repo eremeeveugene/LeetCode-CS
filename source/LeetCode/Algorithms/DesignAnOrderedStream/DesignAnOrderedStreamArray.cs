@@ -12,10 +12,15 @@
 namespace LeetCode.Algorithms.DesignAnOrderedStream;
 
 /// <inheritdoc />
-public class DesignAnOrderedStreamArray(int n) : IDesignAnOrderedStream
+public class DesignAnOrderedStreamArray : IDesignAnOrderedStream
 {
-    private readonly string?[] _stream = new string[n];
+    private readonly string?[] _stream;
     private int _pointer;
+
+    public DesignAnOrderedStreamArray(int n)
+    {
+        _stream = new string[n];
+    }
 
     /// <summary>
     ///     Time complexity - O(n)
@@ -33,6 +38,7 @@ public class DesignAnOrderedStreamArray(int n) : IDesignAnOrderedStream
         while (_pointer < _stream.Length && _stream[_pointer] != null)
         {
             result.Add(_stream[_pointer]);
+
             _pointer++;
         }
 

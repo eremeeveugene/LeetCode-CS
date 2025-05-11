@@ -11,42 +11,47 @@
 
 using LeetCode.Algorithms.KthLargestElementInStream;
 using LeetCode.Core.Helpers;
+using LeetCode.Tests.Base.Exceptions;
 
 namespace LeetCode.Tests.Algorithms.KthLargestElementInStream;
 
-public abstract class KthLargestElementInStreamTestsBase<T> where T : IKthLargestElementInStreamFactory, new()
+public abstract class KthLargestElementInStreamTestsBase
 {
+    private const string Add = "add";
+
     [TestMethod]
-    [DataRow(1, "[]", "[1, 2, 3, 4, 5]", "[1, 2, 3, 4, 5]")]
-    [DataRow(1, "[]", "[-3, -2, -4, 0, 4]", "[-3, -2, -2, 0, 4]")]
-    [DataRow(5, "[1, 2, 3, 4, 5]", "[6, 7, 8, 9]", "[2, 3, 4, 5]")]
-    [DataRow(1, "[2, 3, 5]", "[4, 6, 1]", "[5, 6, 6]")]
-    [DataRow(2, "[0]", "[-1, 1, -2, -4, 3]", "[-1, 0, 0, 0, 1]")]
-    [DataRow(2, "[1, 2, 3, 4]", "[5, 6, 7, 8]", "[4, 5, 6, 7]")]
-    [DataRow(4, "[10, 9, 8, 7]", "[6, 5, 4]", "[7, 7, 7]")]
-    [DataRow(2, "[100, 99, 98]", "[101, 102, 97]", "[100, 101, 101]")]
-    [DataRow(5, "[1, 2, 3, 4, 5]", "[6, 7, 8, 9, 10]", "[2, 3, 4, 5, 6]")]
-    [DataRow(3, "[-1, -2, -3, -4, -5]", "[-6, -7, -8, -9]", "[-3, -3, -3, -3]")]
-    public void Add_WhenCalledWithValues_ReturnsKthLargestElements(int k, string numsJsonArray, string valuesJsonArray,
-        string expectedResultJsonArray)
+    [DataRow(3, "[4, 5, 8, 2]", "[\"add\", \"add\", \"add\", \"add\", \"add\"]", "[[3], [5], [10], [9], [4]]",
+        "[4, 5, 5, 8, 8]")]
+    [DataRow(4, "[7, 7, 7, 7, 8, 3]", "[\"add\", \"add\", \"add\", \"add\"]", "[[2], [10], [9], [9]]", "[7, 7, 7, 8]")]
+    public void DesignCircularDeque_WithMixedOperations_ProcessesOperationsAccordingToSpecification(int k,
+        string numsJson, string methodsJson, string argumentsJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJsonArray);
-        var values = JsonHelper<int>.DeserializeToArray(valuesJsonArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJsonArray);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var methods = JsonHelper<string[]>.Parse(methodsJson);
+        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
+        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
 
-        var kthLargestElementInStreamFactory = new T();
-        var kthLargestElementInStream = kthLargestElementInStreamFactory.Create(k, nums);
+        var solution = GetSolution(k, nums);
 
         // Act
-        var actualResult = new int[values.Length];
+        var actualResult = new List<object>();
 
-        for (var i = 0; i < values.Length; i++)
+        for (var i = 0; i < methods.Length; i++)
         {
-            actualResult[i] = kthLargestElementInStream.Add(values[i]);
+            switch (methods[i])
+            {
+                case Add:
+                    actualResult.Add(solution.Add((int)arguments[i][0]));
+                    break;
+                default:
+                    throw new UnexpectedMethodException(methods[i]);
+            }
         }
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract IKthLargestElementInStream GetSolution(int k, int[] nums);
 }

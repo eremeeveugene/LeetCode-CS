@@ -22,11 +22,11 @@ public abstract class SumRootToLeafNumbersTestsBase<T> where T : ISumRootToLeafN
     [DataRow("[1,2]", 12)]
     [DataRow("[1,2,3]", 25)]
     [DataRow("[4,9,0,5,1]", 1026)]
-    public void SumNumbers_GivenTreeConstructedFromJsonRootArray_ReturnsExpectedSum(string jsonRootArray,
+    public void SumNumbers_WithDigitBinaryTree_ReturnsSumOfAllRootToLeafPathNumbers(string jsonRootArray,
         int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(jsonRootArray);
+        var rootArray = JsonHelper<int?[]>.Parse(jsonRootArray);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();
