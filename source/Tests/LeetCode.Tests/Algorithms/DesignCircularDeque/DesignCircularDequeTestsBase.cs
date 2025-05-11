@@ -11,37 +11,74 @@
 
 using LeetCode.Algorithms.DesignCircularDeque;
 using LeetCode.Core.Helpers;
+using LeetCode.Tests.Base.Exceptions;
 
 namespace LeetCode.Tests.Algorithms.DesignCircularDeque;
 
-public abstract class DesignCircularDequeTestsBase<T> where T : IDesignCircularDequeFactory, new()
+public abstract class DesignCircularDequeTestsBase
 {
+    private const string InsertLast = "insertLast";
+    private const string InsertFront = "insertFront";
+    private const string GetRear = "getRear";
+    private const string GetFront = "getFront";
+    private const string IsEmpty = "isEmpty";
+    private const string IsFull = "isFull";
+    private const string DeleteFront = "deleteFront";
+    private const string DeleteLast = "deleteLast";
+
     [TestMethod]
-    [DataRow(3, "[\"true\",\"true\",\"true\",\"false\",\"2\",\"true\",\"true\",\"true\",\"4\"]")]
-    public void CircularDequeOperations_WithMultipleActions_ProducesOperationResultsSequence(int k,
-        string expectedResultJson)
+    [DataRow(3,
+        "[\"insertLast\", \"insertLast\", \"insertFront\", \"insertFront\", \"getRear\", \"isFull\", \"deleteLast\", \"insertFront\", \"getFront\"]",
+        "[[1], [2], [3], [4], [], [], [], [4], []]", "[true, true, true, false, 2, true, true, true, 4]")]
+    public void MyCircularDeque_WithMixedOperations_ProcessesOperationsAccordingToSpecification(int k,
+        string methodsJson, string argumentsJson, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJson);
+        var methods = JsonHelper<string[]>.Parse(methodsJson);
+        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
+        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
 
-        var solutionFactory = new T();
-        var solution = solutionFactory.Create(k);
+        var solution = GetSolution(k);
 
         // Act
-        var actualResult = new List<object>
+        var actualResult = new List<object>();
+
+        for (var i = 0; i < methods.Length; i++)
         {
-            solution.InsertLast(1),
-            solution.InsertLast(2),
-            solution.InsertFront(3),
-            solution.InsertFront(4),
-            solution.GetRear(),
-            solution.IsFull(),
-            solution.DeleteLast(),
-            solution.InsertFront(4),
-            solution.GetFront()
-        };
+            switch (methods[i])
+            {
+                case InsertLast:
+                    actualResult.Add(solution.InsertLast((int)arguments[i][0]));
+                    break;
+                case InsertFront:
+                    actualResult.Add(solution.InsertFront((int)arguments[i][0]));
+                    break;
+                case GetRear:
+                    actualResult.Add(solution.GetRear());
+                    break;
+                case GetFront:
+                    actualResult.Add(solution.GetFront());
+                    break;
+                case DeleteLast:
+                    actualResult.Add(solution.DeleteLast());
+                    break;
+                case DeleteFront:
+                    actualResult.Add(solution.DeleteFront());
+                    break;
+                case IsEmpty:
+                    actualResult.Add(solution.IsEmpty());
+                    break;
+                case IsFull:
+                    actualResult.Add(solution.IsFull());
+                    break;
+                default:
+                    throw new UnexpectedMethodException(methods[i]);
+            }
+        }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.Select(r => r.ToString()?.ToLower()).ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract IDesignCircularDeque GetSolution(int size);
 }

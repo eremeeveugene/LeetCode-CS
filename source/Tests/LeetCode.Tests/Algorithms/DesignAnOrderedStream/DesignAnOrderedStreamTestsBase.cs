@@ -12,15 +12,12 @@
 using LeetCode.Algorithms.DesignAnOrderedStream;
 using LeetCode.Core.Helpers;
 using LeetCode.Tests.Base.Exceptions;
-using System.Text.Json;
 
 namespace LeetCode.Tests.Algorithms.DesignAnOrderedStream;
 
 public abstract class DesignAnOrderedStreamTestsBase
 {
     private const string Insert = "insert";
-
-    protected abstract IDesignAnOrderedStream GetSolution(int size);
 
     [TestMethod]
     [DataRow(5, "[\"insert\",\"insert\",\"insert\",\"insert\",\"insert\"]",
@@ -30,24 +27,21 @@ public abstract class DesignAnOrderedStreamTestsBase
         string argumentsJson, string expectedResultJson)
     {
         // Arrange
-        var methods = JsonHelper<string>.DeserializeToArray(methodsJson);
-        var arguments = JsonHelper<JsonElement>.DeserializeToJaggedArray(argumentsJson);
-        var expectedResult = JsonHelper<string>.DeserializeToJaggedArray(expectedResultJson);
+        var methods = JsonHelper<string[]>.Parse(methodsJson);
+        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
+        var expectedResult = JsonHelper<object[][]>.Parse(expectedResultJson);
 
-        var solution = GetSolution(5);
+        var solution = GetSolution(size);
 
         // Act 
-        var actualResult = new List<string?[]>();
+        var actualResult = new List<object>();
 
         for (var i = 0; i < methods.Length; i++)
         {
             switch (methods[i])
             {
                 case Insert:
-                    var idKey = arguments[i][0].GetInt32();
-                    var value = arguments[i][1].GetString()!;
-
-                    actualResult.Add(solution.Insert(idKey, value).ToArray());
+                    actualResult.Add(solution.Insert((int)arguments[i][0], (string)arguments[i][1]));
                     break;
                 default:
                     throw new UnexpectedMethodException(methods[i]);
@@ -57,4 +51,6 @@ public abstract class DesignAnOrderedStreamTestsBase
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
+
+    protected abstract IDesignAnOrderedStream GetSolution(int size);
 }

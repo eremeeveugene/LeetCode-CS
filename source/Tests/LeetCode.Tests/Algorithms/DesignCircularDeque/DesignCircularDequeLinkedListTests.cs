@@ -14,4 +14,10 @@ using LeetCode.Algorithms.DesignCircularDeque;
 namespace LeetCode.Tests.Algorithms.DesignCircularDeque;
 
 [TestClass]
-public class DesignCircularDequeLinkedListTests : DesignCircularDequeTestsBase<GuessNumberHigherOrLowerFactory>;
+public class DesignCircularDequeLinkedListTests : DesignCircularDequeTestsBase
+{
+    protected override IDesignCircularDeque GetSolution(int size)
+    {
+        return new DesignCircularDequeLinkedList(size);
+    }
+}
