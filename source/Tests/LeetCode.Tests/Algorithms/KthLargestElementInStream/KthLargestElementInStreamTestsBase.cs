@@ -53,5 +53,5 @@ public abstract class KthLargestElementInStreamTestsBase
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
-    protected abstract IKthLargestElementInStream GetSolution(int k, IEnumerable<int> nums);
+    protected abstract IKthLargestElementInStream GetSolution(int k, int[] nums);
 }

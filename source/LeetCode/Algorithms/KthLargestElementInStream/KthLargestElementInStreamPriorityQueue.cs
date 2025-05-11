@@ -17,7 +17,7 @@ public class KthLargestElementInStreamPriorityQueue : IKthLargestElementInStream
     private readonly int _k;
     private readonly PriorityQueue<int, int> _priorityQueue = new();
 
-    public KthLargestElementInStreamPriorityQueue(int k, IEnumerable<int> nums)
+    public KthLargestElementInStreamPriorityQueue(int k, int[] nums)
     {
         _k = k;
 

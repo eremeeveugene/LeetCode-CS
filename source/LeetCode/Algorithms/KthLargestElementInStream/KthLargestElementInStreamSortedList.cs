@@ -17,7 +17,7 @@ public class KthLargestElementInStreamSortedList : IKthLargestElementInStream
     private readonly int _k;
     private readonly List<int> _nums;
 
-    public KthLargestElementInStreamSortedList(int k, IEnumerable<int> nums)
+    public KthLargestElementInStreamSortedList(int k, int[] nums)
     {
         _k = k;
         _nums = [.. nums.OrderDescending()];
