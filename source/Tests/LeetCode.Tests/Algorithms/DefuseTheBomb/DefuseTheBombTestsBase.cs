@@ -24,8 +24,8 @@ public abstract class DefuseTheBombTestsBase<T> where T : IDefuseTheBomb, new()
         string expectedResultJson)
     {
         // Arrange
-        var code = JsonHelper<int>.DeserializeToArray(codeJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var code = JsonHelper<int[]>.Parse(codeJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

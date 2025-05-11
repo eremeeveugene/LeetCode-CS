@@ -24,9 +24,9 @@ public abstract class FindLargestValueInEachTreeRowTestsBase<T> where T : IFindL
     public void LargestValues_WithTreeRoot_ReturnsListOfRowMaxima(string rootJson, string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

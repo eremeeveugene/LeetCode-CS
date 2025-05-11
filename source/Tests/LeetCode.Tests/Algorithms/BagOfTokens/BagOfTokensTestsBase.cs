@@ -24,7 +24,7 @@ public abstract class BagOfTokensTestsBase<T> where T : IBagOfTokens, new()
         int expectedResult)
     {
         // Arrange
-        var tokens = JsonHelper<int>.DeserializeToArray(tokensJson);
+        var tokens = JsonHelper<int[]>.Parse(tokensJson);
 
         var solution = new T();
 

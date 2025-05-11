@@ -28,7 +28,7 @@ public abstract class PrintInOrderTestsBase<T> where T : IPrintInOrder, new()
         string numsJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         const string expectedResult = First + Second + Third;
         var actualResult = string.Empty;

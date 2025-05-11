@@ -27,7 +27,7 @@ public abstract class NaryTreeLevelOrderTraversalTestsBase<T> where T : INaryTre
     {
         // Arrange
         var expectedResult = JsonHelper<int>.DeserializeToJaggedList(expectedResultJson);
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = Node.ToNode(rootArray);
 
         var solution = new T();

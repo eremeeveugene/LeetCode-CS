@@ -25,7 +25,7 @@ public abstract class OpenTheLockTestsBase<T> where T : IOpenTheLock, new()
         int expectedResult)
     {
         // Arrange
-        var deadends = JsonHelper<string>.DeserializeToArray(deadendsJson);
+        var deadends = JsonHelper<string[]>.Parse(deadendsJson);
 
         var solution = new T();
 

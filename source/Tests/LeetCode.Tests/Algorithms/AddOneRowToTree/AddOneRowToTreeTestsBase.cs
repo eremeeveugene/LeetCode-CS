@@ -44,10 +44,10 @@ public abstract class AddOneRowToTreeTestsBase<T> where T : IAddOneRowToTree, ne
         int val, int depth, string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJson);
+        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();

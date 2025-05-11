@@ -24,10 +24,10 @@ public abstract class TwoOutOfThreeTestsBase<T> where T : ITwoOutOfThree, new()
         string nums2Json, string nums3Json, string expectedResultJson)
     {
         // Arrange
-        var nums1 = JsonHelper<int>.DeserializeToArray(nums1Json);
-        var nums2 = JsonHelper<int>.DeserializeToArray(nums2Json);
-        var nums3 = JsonHelper<int>.DeserializeToArray(nums3Json);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var nums1 = JsonHelper<int[]>.Parse(nums1Json);
+        var nums2 = JsonHelper<int[]>.Parse(nums2Json);
+        var nums3 = JsonHelper<int[]>.Parse(nums3Json);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

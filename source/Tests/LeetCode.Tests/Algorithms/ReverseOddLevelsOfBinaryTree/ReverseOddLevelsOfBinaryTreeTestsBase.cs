@@ -33,9 +33,9 @@ public abstract class ReverseOddLevelsOfBinaryTreeTestsBase<T> where T : IRevers
         string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJson);
+        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();

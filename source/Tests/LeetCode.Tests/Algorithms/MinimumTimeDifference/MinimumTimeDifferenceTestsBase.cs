@@ -28,7 +28,7 @@ public abstract class MinimumTimeDifferenceTestsBase<T> where T : IMinimumTimeDi
         int expectedResult)
     {
         // Arrange
-        var timePoints = JsonHelper<string>.DeserializeToArray(timePointsJson);
+        var timePoints = JsonHelper<string[]>.Parse(timePointsJson);
 
         var solution = new T();
 

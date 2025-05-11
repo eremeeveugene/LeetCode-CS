@@ -24,7 +24,7 @@ public abstract class MaximumProductOfTwoElementsInAnArrayTestsBase<T>
     public void MaxProduct_WithVariousInputs_ReturnsMaximumProduct(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

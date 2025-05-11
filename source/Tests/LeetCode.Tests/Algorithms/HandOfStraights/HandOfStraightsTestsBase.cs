@@ -36,7 +36,7 @@ public abstract class HandOfStraightsTestsBase<T> where T : IHandOfStraights, ne
         string handJson, int groupSize, bool expectedResult)
     {
         // Arrange
-        var hand = JsonHelper<int>.DeserializeToArray(handJson);
+        var hand = JsonHelper<int[]>.Parse(handJson);
 
         var solution = new T();
 

@@ -23,7 +23,7 @@ public abstract class FirstCompletelyPaintedRowOrColumnTestsBase<T> where T : IF
         string matJson, int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
         var mat = JsonHelper<int>.DeserializeToJaggedArray(matJson);
 
         var solution = new T();

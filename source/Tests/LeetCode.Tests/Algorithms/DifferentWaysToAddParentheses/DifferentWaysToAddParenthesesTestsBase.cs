@@ -27,7 +27,7 @@ public abstract class DifferentWaysToAddParenthesesTestsBase<T> where T : IDiffe
         string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

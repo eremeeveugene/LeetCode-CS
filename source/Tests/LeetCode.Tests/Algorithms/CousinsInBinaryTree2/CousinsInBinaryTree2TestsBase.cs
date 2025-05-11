@@ -26,9 +26,9 @@ public abstract class CousinsInBinaryTree2TestsBase<T> where T : ICousinsInBinar
         string expectedResultJson)
     {
         // Arrange
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJson);
+        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
 
         var solution = new T();

@@ -25,9 +25,9 @@ public abstract class FlipEquivalentBinaryTreesTestsBase<T> where T : IFlipEquiv
         bool expectedResult)
     {
         // Arrange
-        var root1Array = JsonHelper<int?>.DeserializeToArray(root1Json);
+        var root1Array = JsonHelper<int?[]>.Parse(root1Json);
         var root1 = TreeNode.ToTreeNode(root1Array);
-        var root2Array = JsonHelper<int?>.DeserializeToArray(root2Json);
+        var root2Array = JsonHelper<int?[]>.Parse(root2Json);
         var root2 = TreeNode.ToTreeNode(root2Array);
 
         var solution = new T();

@@ -25,9 +25,9 @@ public abstract class XORQueriesOfSubarrayTestsBase<T> where T : IXORQueriesOfSu
         string expectedResultJson)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
         var queries = JsonHelper<int>.DeserializeToJaggedArray(queriesJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

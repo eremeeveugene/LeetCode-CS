@@ -24,7 +24,7 @@ public abstract class MinimumIndexOfValidSplitTestsBase<T> where T : IMinimumInd
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

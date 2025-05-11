@@ -23,7 +23,7 @@ public abstract class UniqueMorseCodeWordsTestsBase<T> where T : IUniqueMorseCod
         int expectedResult)
     {
         // Arrange
-        var words = JsonHelper<string>.DeserializeToArray(wordsJson);
+        var words = JsonHelper<string[]>.Parse(wordsJson);
 
         var solution = new T();
 

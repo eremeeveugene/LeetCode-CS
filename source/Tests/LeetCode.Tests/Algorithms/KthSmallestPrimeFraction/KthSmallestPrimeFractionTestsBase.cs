@@ -31,8 +31,8 @@ public abstract class KthSmallestPrimeFractionTestsBase<T> where T : IKthSmalles
         string arrJson, int k, string expectedResultJson)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

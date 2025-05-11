@@ -24,7 +24,7 @@ public abstract class FindKthSmallestPairDistanceTestsBase<T> where T : IFindKth
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

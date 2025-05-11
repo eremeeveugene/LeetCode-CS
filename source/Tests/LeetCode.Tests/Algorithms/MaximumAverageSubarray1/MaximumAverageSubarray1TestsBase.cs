@@ -23,7 +23,7 @@ public abstract class MaximumAverageSubarray1TestsBase<T> where T : IMaximumAver
     public void FindMaxAverage_GivenNumsAndK_ReturnsMaxAverage(string numsJson, int k, double expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

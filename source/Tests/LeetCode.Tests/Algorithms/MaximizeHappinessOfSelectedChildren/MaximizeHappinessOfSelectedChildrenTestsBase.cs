@@ -29,7 +29,7 @@ public abstract class MaximizeHappinessOfSelectedChildrenTestsBase<T>
         long expectedResult)
     {
         // Arrange
-        var happiness = JsonHelper<int>.DeserializeToArray(happinessJson);
+        var happiness = JsonHelper<int[]>.Parse(happinessJson);
 
         var solution = new T();
 

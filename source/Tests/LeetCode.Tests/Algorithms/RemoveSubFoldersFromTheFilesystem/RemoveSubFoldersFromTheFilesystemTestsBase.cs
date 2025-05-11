@@ -25,8 +25,8 @@ public abstract class RemoveSubFoldersFromTheFilesystemTestsBase<T> where T : IR
         string expectedResultJson)
     {
         // Arrange
-        var folder = JsonHelper<string>.DeserializeToArray(folderJson);
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJson);
+        var folder = JsonHelper<string[]>.Parse(folderJson);
+        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

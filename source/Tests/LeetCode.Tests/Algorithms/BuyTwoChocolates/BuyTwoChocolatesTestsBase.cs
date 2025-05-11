@@ -26,7 +26,7 @@ public abstract class BuyTwoChocolatesTestsBase<T> where T : IBuyTwoChocolates, 
         int expectedResult)
     {
         // Arrange
-        var prices = JsonHelper<int>.DeserializeToArray(pricesJson);
+        var prices = JsonHelper<int[]>.Parse(pricesJson);
 
         var solution = new T();
 

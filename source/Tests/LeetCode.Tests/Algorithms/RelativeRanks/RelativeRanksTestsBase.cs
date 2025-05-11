@@ -23,8 +23,8 @@ public abstract class RelativeRanksTestsBase<T> where T : IRelativeRanks, new()
         string expectedResultJson)
     {
         // Arrange
-        var score = JsonHelper<int>.DeserializeToArray(scoreJson);
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJson);
+        var score = JsonHelper<int[]>.Parse(scoreJson);
+        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

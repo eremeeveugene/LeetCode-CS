@@ -23,7 +23,7 @@ public abstract class TakeGiftsFromTheRichestPileTestsBase<T> where T : ITakeGif
         long expectedResult)
     {
         // Arrange
-        var gifts = JsonHelper<int>.DeserializeToArray(giftsJson);
+        var gifts = JsonHelper<int[]>.Parse(giftsJson);
 
         var solution = new T();
 

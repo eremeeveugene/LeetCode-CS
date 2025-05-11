@@ -28,7 +28,7 @@ public abstract class ThirdMaximumNumberTestsBase<T> where T : IThirdMaximumNumb
     public void ThirdMax_WithIntArray_ReturnsThirdMaximumOrMaximum(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

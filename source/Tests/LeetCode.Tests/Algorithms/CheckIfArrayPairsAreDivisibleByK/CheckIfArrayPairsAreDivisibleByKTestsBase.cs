@@ -29,7 +29,7 @@ public abstract class CheckIfArrayPairsAreDivisibleByKTestsBase<T> where T : ICh
         bool expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
 
         var solution = new T();
 

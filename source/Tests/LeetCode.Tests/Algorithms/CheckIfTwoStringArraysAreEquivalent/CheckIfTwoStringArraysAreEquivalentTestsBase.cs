@@ -29,8 +29,8 @@ public abstract class CheckIfTwoStringArraysAreEquivalentTestsBase<T>
         string word2Json, bool expectedResult)
     {
         // Arrange
-        var word1 = JsonHelper<string>.DeserializeToArray(word1Json);
-        var word2 = JsonHelper<string>.DeserializeToArray(word2Json);
+        var word1 = JsonHelper<string[]>.Parse(word1Json);
+        var word2 = JsonHelper<string[]>.Parse(word2Json);
 
         var solution = new T();
 

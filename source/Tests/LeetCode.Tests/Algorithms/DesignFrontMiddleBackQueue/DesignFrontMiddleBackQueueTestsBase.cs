@@ -25,9 +25,9 @@ public abstract class DesignFrontMiddleBackQueueTestsBase<T> where T : IDesignFr
         string argumentsJson, string expectedResultJson)
     {
         // Arrange
-        var operations = JsonHelper<string>.DeserializeToArray(operationsJson);
-        var arguments = JsonHelper<int>.DeserializeToArray(argumentsJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var operations = JsonHelper<string[]>.Parse(operationsJson);
+        var arguments = JsonHelper<int[]>.Parse(argumentsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

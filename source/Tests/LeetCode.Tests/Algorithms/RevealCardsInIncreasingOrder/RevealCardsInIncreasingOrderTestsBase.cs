@@ -27,8 +27,8 @@ public abstract class RevealCardsInIncreasingOrderTestsBase<T> where T : IReveal
         string expectedResultJson)
     {
         // Arrange
-        var deck = JsonHelper<int>.DeserializeToArray(deckJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var deck = JsonHelper<int[]>.Parse(deckJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

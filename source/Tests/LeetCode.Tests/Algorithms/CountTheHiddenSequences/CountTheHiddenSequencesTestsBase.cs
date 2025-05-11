@@ -24,7 +24,7 @@ public abstract class CountTheHiddenSequencesTestsBase<T> where T : ICountTheHid
         int lower, int upper, int expectedResult)
     {
         // Arrange
-        var differences = JsonHelper<int>.DeserializeToArray(differencesJson);
+        var differences = JsonHelper<int[]>.Parse(differencesJson);
 
         var solution = new T();
 

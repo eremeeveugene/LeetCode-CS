@@ -33,8 +33,8 @@ public abstract class MinimumCommonValueTestsBase<T> where T : IMinimumCommonVal
         int expectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper<int>.DeserializeToArray(nums1Json);
-        var nums2 = JsonHelper<int>.DeserializeToArray(nums2Json);
+        var nums1 = JsonHelper<int[]>.Parse(nums1Json);
+        var nums2 = JsonHelper<int[]>.Parse(nums2Json);
 
         var solution = new T();
 

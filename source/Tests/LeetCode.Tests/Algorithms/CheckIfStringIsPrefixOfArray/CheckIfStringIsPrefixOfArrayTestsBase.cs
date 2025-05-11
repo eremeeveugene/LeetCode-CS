@@ -24,7 +24,7 @@ public abstract class CheckIfStringIsPrefixOfArrayTestsBase<T> where T : ICheckI
         string wordsJson, bool expectedResult)
     {
         // Arrange
-        var words = JsonHelper<string>.DeserializeToArray(wordsJson);
+        var words = JsonHelper<string[]>.Parse(wordsJson);
 
         var solution = new T();
 

@@ -24,7 +24,7 @@ public abstract class MaximumAscendingSubarraySumTestsBase<T> where T : IMaximum
         double expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

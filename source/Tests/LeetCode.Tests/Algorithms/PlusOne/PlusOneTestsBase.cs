@@ -29,8 +29,8 @@ public abstract class PlusOneTestsBase<T> where T : IPlusOne, new()
         string expectedResultJson)
     {
         // Arrange
-        var digits = JsonHelper<int>.DeserializeToArray(digitsJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var digits = JsonHelper<int[]>.Parse(digitsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

@@ -33,7 +33,7 @@ public abstract class NumberOfSeniorCitizensTestsBase<T> where T : INumberOfSeni
         int expectedResult)
     {
         // Arrange
-        var details = JsonHelper<string>.DeserializeToArray(detailsJson);
+        var details = JsonHelper<string[]>.Parse(detailsJson);
 
         var solution = new T();
 

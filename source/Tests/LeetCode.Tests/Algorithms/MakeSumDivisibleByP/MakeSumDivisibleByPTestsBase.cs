@@ -24,7 +24,7 @@ public abstract class MakeSumDivisibleByPTestsBase<T> where T : IMakeSumDivisibl
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

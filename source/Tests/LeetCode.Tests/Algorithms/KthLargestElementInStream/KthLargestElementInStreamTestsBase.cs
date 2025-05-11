@@ -31,9 +31,9 @@ public abstract class KthLargestElementInStreamTestsBase<T> where T : IKthLarges
         string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
-        var values = JsonHelper<int>.DeserializeToArray(valuesJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var values = JsonHelper<int[]>.Parse(valuesJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var kthLargestElementInStreamFactory = new T();
         var kthLargestElementInStream = kthLargestElementInStreamFactory.Create(k, nums);

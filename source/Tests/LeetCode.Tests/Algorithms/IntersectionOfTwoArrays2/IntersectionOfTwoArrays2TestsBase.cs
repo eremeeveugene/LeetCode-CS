@@ -23,9 +23,9 @@ public abstract class IntersectionOfTwoArrays2TestsBase<T> where T : IIntersecti
         string expectedResultJson)
     {
         // Arrange
-        var nums1 = JsonHelper<int>.DeserializeToArray(nums1Json);
-        var nums2 = JsonHelper<int>.DeserializeToArray(nums2Json);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var nums1 = JsonHelper<int[]>.Parse(nums1Json);
+        var nums2 = JsonHelper<int[]>.Parse(nums2Json);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

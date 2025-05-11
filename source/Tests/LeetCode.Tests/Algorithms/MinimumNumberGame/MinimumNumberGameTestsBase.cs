@@ -23,8 +23,8 @@ public abstract class MinimumNumberGameTestsBase<T> where T : IMinimumNumberGame
         string expectedResultJson)
     {
         // Arrange
-        var cost = JsonHelper<int>.DeserializeToArray(costJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var cost = JsonHelper<int[]>.Parse(costJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

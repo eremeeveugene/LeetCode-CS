@@ -25,7 +25,7 @@ public abstract class MinimumDistanceBetweenBSTNodesTestsBase<T> where T : IMini
     public void MinDiffInBST_WithVariousBSTs_ReturnsMinimumDifference(string rootJson, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
 
         var solution = new T();

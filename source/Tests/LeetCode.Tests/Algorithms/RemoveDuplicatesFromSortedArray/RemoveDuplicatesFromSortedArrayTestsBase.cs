@@ -23,8 +23,8 @@ public abstract class RemoveDuplicatesFromSortedArrayTestsBase<T> where T : IRem
         string expectedNumsJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
-        var expectedNums = JsonHelper<int>.DeserializeToArray(expectedNumsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedNums = JsonHelper<int[]>.Parse(expectedNumsJson);
 
         var solution = new T();
 

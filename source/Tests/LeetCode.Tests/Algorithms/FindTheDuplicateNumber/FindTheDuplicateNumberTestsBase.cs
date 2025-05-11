@@ -23,7 +23,7 @@ public abstract class FindTheDuplicateNumberTestsBase<T> where T : IFindTheDupli
     public void FindDuplicate_GivenArray_ReturnsFirstDuplicate(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

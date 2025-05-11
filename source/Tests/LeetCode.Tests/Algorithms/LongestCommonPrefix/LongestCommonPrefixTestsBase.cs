@@ -35,7 +35,7 @@ public abstract class LongestCommonPrefixTestsBase<T> where T : ILongestCommonPr
         string expectedResult)
     {
         // Arrange
-        var strs = JsonHelper<string>.DeserializeToArray(strsJson);
+        var strs = JsonHelper<string[]>.Parse(strsJson);
 
         var solution = new T();
 

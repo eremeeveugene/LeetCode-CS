@@ -26,8 +26,8 @@ public abstract class MinimumCostToHireKWorkersTestsBase<T> where T : IMinimumCo
         string qualityJson, string wageJson, int k, double expectedResult)
     {
         // Arrange
-        var quality = JsonHelper<int>.DeserializeToArray(qualityJson);
-        var wage = JsonHelper<int>.DeserializeToArray(wageJson);
+        var quality = JsonHelper<int[]>.Parse(qualityJson);
+        var wage = JsonHelper<int[]>.Parse(wageJson);
 
         var solution = new T();
 

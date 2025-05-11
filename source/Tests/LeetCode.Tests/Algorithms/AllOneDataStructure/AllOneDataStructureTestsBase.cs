@@ -28,9 +28,9 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         string argsJson, string expectedResultsJson)
     {
         // Arrange
-        var methods = JsonHelper<string>.DeserializeToArray(methodsJson);
-        var args = JsonHelper<string>.DeserializeToArray(argsJson);
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultsJson);
+        var methods = JsonHelper<string[]>.Parse(methodsJson);
+        var args = JsonHelper<string[]>.Parse(argsJson);
+        var expectedResult = JsonHelper<string[]>.Parse(expectedResultsJson);
 
         var solution = new T();
 

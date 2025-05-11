@@ -23,7 +23,7 @@ public abstract class SpecialArrayTestsBase<T> where T : ISpecialArray, new()
     public void IsArraySpecial_WithArrayInput_ReturnsWhetherArrayIsSpecial(string numsJson, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

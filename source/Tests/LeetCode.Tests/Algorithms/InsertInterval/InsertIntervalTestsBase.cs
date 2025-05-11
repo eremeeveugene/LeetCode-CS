@@ -29,7 +29,7 @@ public abstract class InsertIntervalTestsBase<T> where T : IInsertInterval, new(
     {
         // Arrange
         var intervals = JsonHelper<int>.DeserializeToJaggedArray(intervalsJson);
-        var newInterval = JsonHelper<int>.DeserializeToArray(newIntervalJson);
+        var newInterval = JsonHelper<int[]>.Parse(newIntervalJson);
         var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJson);
 
         var solution = new T();

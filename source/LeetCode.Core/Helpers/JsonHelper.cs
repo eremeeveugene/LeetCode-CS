@@ -9,6 +9,7 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Collections;
 using System.Text.Json;
 
 namespace LeetCode.Core.Helpers;
@@ -58,88 +59,110 @@ public static class JsonHelper<T>
                ?? throw new JsonException("Failed to deserialize JSON jagged list.");
     }
 
+    private static readonly JsonSerializerOptions Options = JsonHelperOptions.Options;
+
     /// <summary>
-    ///     Deserializes a JSON string to the specified type <typeparamref name="T" />.
-    ///     Handles all primitive types, arrays, jagged arrays, dynamic objects, and dictionaries.
+    ///     Deserializes a JSON string to the specified type <typeparamref name="T"/>.
+    ///     Supports primitives, strings, Nullable<T>, any jagged arrays, IDictionary<string, U>,
+    ///     and falls back to System.Text.Json for other types.
     /// </summary>
     public static T Parse(string json)
     {
-        if (typeof(T) == typeof(object))
-        {
-            using var doc = JsonDocument.Parse(json);
-            return (T)ConvertElement(doc.RootElement)!;
-        }
+        using var doc = JsonDocument.Parse(json);
+        object? result = ParseElement(typeof(T), doc.RootElement);
+        if (result is T t)
+            return t;
 
-        if (typeof(T) == typeof(object[]))
-        {
-            using var doc = JsonDocument.Parse(json);
-            var result = ConvertElement(doc.RootElement);
-            return result is object[] array
-                ? (T)(object)array
-                : throw new InvalidCastException("Expected object[] in JSON root.");
-        }
-
-        if (typeof(T) == typeof(object[][]))
-        {
-            using var doc = JsonDocument.Parse(json);
-            if (doc.RootElement.ValueKind != JsonValueKind.Array)
-            {
-                throw new JsonException("Expected a jagged array at JSON root.");
-            }
-
-            var jagged = doc.RootElement.EnumerateArray()
-                .Select(inner =>
-                    inner.ValueKind == JsonValueKind.Array
-                        ? inner.EnumerateArray().Select(ConvertElement).ToArray()
-                        : throw new JsonException("Expected all inner elements to be arrays.")
-                ).ToArray();
-
-            return (T)(object)jagged!;
-        }
-
-        // Default path: rely on strong typing if T is known (int[], string[], etc.)
-        return JsonSerializer.Deserialize<T>(json, JsonHelperOptions.Options)
-               ?? throw new JsonException($"Failed to deserialize JSON to type '{typeof(T)}'.");
+        throw new JsonException($"Failed to convert JSON to {typeof(T)}.");
     }
 
-    private static object? ConvertElement(JsonElement element)
+    private static object? ParseElement(Type targetType, JsonElement element)
     {
-        return element.ValueKind switch
+        // 1. Nullable<T> support
+        if (targetType.IsGenericType &&
+            targetType.GetGenericTypeDefinition() == typeof(Nullable<>))
         {
-            JsonValueKind.Object => ConvertObject(element),
-            JsonValueKind.Array => element.EnumerateArray().Select(ConvertElement).ToArray(),
-            JsonValueKind.String => element.GetString(),
-            JsonValueKind.Number => ConvertNumber(element),
+            Type innerType = Nullable.GetUnderlyingType(targetType)!;
+            if (element.ValueKind == JsonValueKind.Null)
+                return null;
+            return ParseElement(innerType, element);
+        }
+
+        // 2. Dynamic (object) fallback
+        if (targetType == typeof(object))
+            return ConvertElement(element);
+
+        // 3. Jagged or multidimensional arrays of any rank
+        if (targetType.IsArray)
+        {
+            if (element.ValueKind != JsonValueKind.Array)
+                throw new JsonException($"Expected JSON array for type {targetType}.");
+
+            Type elemType = targetType.GetElementType()!;
+            var items = element
+                .EnumerateArray()
+                .Select(e => ParseElement(elemType, e))
+                .ToArray();
+
+            var arr = Array.CreateInstance(elemType, items.Length);
+            for (int i = 0; i < items.Length; i++)
+                arr.SetValue(items[i], i);
+
+            return arr;
+        }
+
+        // 4. IDictionary<string, U>
+        if (targetType.IsGenericType &&
+            targetType.GetGenericTypeDefinition() == typeof(IDictionary<,>))
+        {
+            Type[] args = targetType.GetGenericArguments();
+            if (args[0] != typeof(string))
+                throw new NotSupportedException("Only string keys are supported for dictionaries.");
+
+            Type valueType = args[1];
+            if (element.ValueKind != JsonValueKind.Object)
+                throw new JsonException($"Expected JSON object for type {targetType}.");
+
+            var dict = (IDictionary)Activator.CreateInstance(targetType)!;
+            foreach (var prop in element.EnumerateObject())
+            {
+                object? val = ParseElement(valueType, prop.Value);
+                dict.Add(prop.Name, val);
+            }
+            return dict;
+        }
+
+        // 5. Everything else: let System.Text.Json deserialize
+        return JsonSerializer
+            .Deserialize(element.GetRawText(), targetType, Options)
+            ?? throw new JsonException($"Unable to deserialize to {targetType}.");
+    }
+
+    private static object? ConvertElement(JsonElement el) =>
+        el.ValueKind switch
+        {
+            JsonValueKind.Object => ConvertObject(el),
+            JsonValueKind.Array => el.EnumerateArray().Select(ConvertElement).ToArray(),
+            JsonValueKind.String => el.GetString(),
+            JsonValueKind.Number => ConvertNumber(el),
             JsonValueKind.True => true,
             JsonValueKind.False => false,
             JsonValueKind.Null => null,
-            _ => throw new NotSupportedException($"Unsupported JSON kind: {element.ValueKind}")
+            _ => throw new NotSupportedException($"Unsupported JSON kind: {el.ValueKind}")
         };
-    }
 
-    private static object ConvertNumber(JsonElement element)
+    private static object ConvertNumber(JsonElement el)
     {
-        if (element.TryGetInt32(out var i))
-        {
-            return i;
-        }
-
-        if (element.TryGetInt64(out var l))
-        {
-            return l;
-        }
-
-        return element.GetDouble();
+        if (el.TryGetInt32(out int i)) return i;
+        if (el.TryGetInt64(out long l)) return l;
+        return el.GetDouble();
     }
 
-    private static IDictionary<string, object?> ConvertObject(JsonElement element)
+    private static IDictionary<string, object?> ConvertObject(JsonElement el)
     {
         var dict = new Dictionary<string, object?>();
-        foreach (var prop in element.EnumerateObject())
-        {
+        foreach (var prop in el.EnumerateObject())
             dict[prop.Name] = ConvertElement(prop.Value);
-        }
-
         return dict;
     }
 }

@@ -27,7 +27,7 @@ public abstract class FizzBuzzMultithreadedTestsBase<T> where T : IFizzBuzzMulti
         string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJson);
+        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
 
         var fizzBuzzMultithreadedFactory = new T();
         var fizzBuzzMultithreaded = fizzBuzzMultithreadedFactory.Create(length);

@@ -24,7 +24,7 @@ public abstract class KthDistinctStringInAnArrayTestsBase<T> where T : IKthDisti
         string expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<string>.DeserializeToArray(arrJson);
+        var arr = JsonHelper<string[]>.Parse(arrJson);
 
         var solution = new T();
 

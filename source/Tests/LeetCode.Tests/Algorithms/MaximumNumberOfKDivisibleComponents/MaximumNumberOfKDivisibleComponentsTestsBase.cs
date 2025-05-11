@@ -25,7 +25,7 @@ public abstract class MaximumNumberOfKDivisibleComponentsTestsBase<T>
     {
         // Arrange
         var edges = JsonHelper<int>.DeserializeToJaggedArray(edgesJson);
-        var values = JsonHelper<int>.DeserializeToArray(valuesJson);
+        var values = JsonHelper<int[]>.Parse(valuesJson);
 
         var solution = new T();
 

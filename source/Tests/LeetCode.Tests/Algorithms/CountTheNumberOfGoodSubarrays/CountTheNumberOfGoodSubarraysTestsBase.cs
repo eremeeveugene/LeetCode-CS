@@ -23,7 +23,7 @@ public abstract class CountTheNumberOfGoodSubarraysTestsBase<T> where T : ICount
         long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

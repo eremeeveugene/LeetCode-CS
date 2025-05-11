@@ -24,9 +24,9 @@ public abstract class FindThePrefixCommonArrayOfTwoArraysTestsBase<T>
         string bJson, string expectedResultJson)
     {
         // Arrange
-        var a = JsonHelper<int>.DeserializeToArray(aJson);
-        var b = JsonHelper<int>.DeserializeToArray(bJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var a = JsonHelper<int[]>.Parse(aJson);
+        var b = JsonHelper<int[]>.Parse(bJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

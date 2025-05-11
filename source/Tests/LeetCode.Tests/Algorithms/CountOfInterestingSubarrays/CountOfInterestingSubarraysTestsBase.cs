@@ -24,7 +24,7 @@ public abstract class CountOfInterestingSubarraysTestsBase<T> where T : ICountOf
         string numsJson, int modulo, int k, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

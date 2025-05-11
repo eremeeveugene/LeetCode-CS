@@ -22,7 +22,7 @@ public abstract class SingleNumber2TestsBase<T> where T : ISingleNumber2, new()
     public void SingleNumber_WithIntegerArray_ReturnsUniqueNumber(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

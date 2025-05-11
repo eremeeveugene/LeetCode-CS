@@ -31,7 +31,7 @@ public abstract class LinkedListCycleTestsBase<T> where T : ILinkedListCycle, ne
         bool expectedResult)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJson);
+        var headArray = JsonHelper<int[]>.Parse(headJson);
         var head = ListNode.ToCycledListNode(headArray, pos);
 
         var solution = new T();

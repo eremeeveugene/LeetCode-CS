@@ -22,10 +22,10 @@ public abstract class RangeSumQueryImmutableTestsBase<T> where T : IRangeSumQuer
         string rightsJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
-        var lefts = JsonHelper<int>.DeserializeToArray(leftsJson);
-        var rights = JsonHelper<int>.DeserializeToArray(rightsJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var lefts = JsonHelper<int[]>.Parse(leftsJson);
+        var rights = JsonHelper<int[]>.Parse(rightsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var rangeSumQueryImmutableFactory = new T();
         var rangeSumQueryImmutable = rangeSumQueryImmutableFactory.Create(nums);

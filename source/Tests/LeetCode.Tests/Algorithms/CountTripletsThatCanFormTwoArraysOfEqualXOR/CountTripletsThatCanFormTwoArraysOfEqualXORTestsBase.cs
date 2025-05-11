@@ -24,7 +24,7 @@ public abstract class CountTripletsThatCanFormTwoArraysOfEqualXORTestsBase<T>
     public void CountTriplets_WithArrayOfIntegers_ReturnsNumberOfEqualXorTriplets(string arrJson, int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
 
         var solution = new T();
 

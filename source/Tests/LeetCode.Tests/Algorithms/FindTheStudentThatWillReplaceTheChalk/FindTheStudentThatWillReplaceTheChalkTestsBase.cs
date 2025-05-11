@@ -30,7 +30,7 @@ public abstract class FindTheStudentThatWillReplaceTheChalkTestsBase<T>
         int expectedResult)
     {
         // Arrange
-        var chalk = JsonHelper<int>.DeserializeToArray(chalkJson);
+        var chalk = JsonHelper<int[]>.Parse(chalkJson);
 
         var solution = new T();
 

@@ -24,8 +24,8 @@ public abstract class StringMatchingInAnArrayTestsBase<T> where T : IStringMatch
         string expectedResultJson)
     {
         // Arrange
-        var words = JsonHelper<string>.DeserializeToArray(wordsJson);
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJson);
+        var words = JsonHelper<string[]>.Parse(wordsJson);
+        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

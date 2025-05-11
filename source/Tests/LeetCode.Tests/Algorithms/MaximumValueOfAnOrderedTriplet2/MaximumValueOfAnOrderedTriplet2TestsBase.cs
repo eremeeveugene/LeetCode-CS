@@ -25,7 +25,7 @@ public abstract class MaximumValueOfAnOrderedTriplet2TestsBase<T> where T : IMax
         long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

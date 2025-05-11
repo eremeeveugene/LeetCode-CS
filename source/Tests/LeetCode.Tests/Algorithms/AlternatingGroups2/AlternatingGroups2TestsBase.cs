@@ -24,7 +24,7 @@ public abstract class AlternatingGroups2TestsBase<T> where T : IAlternatingGroup
         int k, int expectedResult)
     {
         // Arrange
-        var colors = JsonHelper<int>.DeserializeToArray(colorsJson);
+        var colors = JsonHelper<int[]>.Parse(colorsJson);
 
         var solution = new T();
 

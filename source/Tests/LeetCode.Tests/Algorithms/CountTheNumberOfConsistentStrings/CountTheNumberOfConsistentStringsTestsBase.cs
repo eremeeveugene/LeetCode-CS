@@ -24,7 +24,7 @@ public abstract class CountTheNumberOfConsistentStringsTestsBase<T> where T : IC
         string wordsJson, int expectedResult)
     {
         // Arrange
-        var words = JsonHelper<string>.DeserializeToArray(wordsJson);
+        var words = JsonHelper<string[]>.Parse(wordsJson);
 
         var solution = new T();
 

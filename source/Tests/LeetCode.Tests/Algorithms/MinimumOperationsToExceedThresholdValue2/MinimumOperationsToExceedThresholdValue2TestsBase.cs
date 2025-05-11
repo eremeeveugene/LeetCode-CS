@@ -23,7 +23,7 @@ public abstract class MinimumOperationsToExceedThresholdValue2TestsBase<T>
     public void MinOperations_WithTargetSum_ReturnsMinimumOperations(string numsJson, int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

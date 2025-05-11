@@ -23,7 +23,7 @@ public abstract class CountSubarraysWithScoreLessThanKTestsBase<T> where T : ICo
         string numsJson, long k, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

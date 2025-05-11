@@ -24,8 +24,8 @@ public abstract class FindTheOriginalArrayOfPrefixXorTestsBase<T> where T : IFin
         string expectedResultJson)
     {
         // Arrange
-        var pref = JsonHelper<int>.DeserializeToArray(prefJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var pref = JsonHelper<int[]>.Parse(prefJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

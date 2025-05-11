@@ -24,8 +24,8 @@ public abstract class FindWordsContainingCharacterTestsBase<T> where T : IFindWo
         char x, string expectedResultJson)
     {
         // Arrange
-        var words = JsonHelper<string>.DeserializeToArray(wordsJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var words = JsonHelper<string[]>.Parse(wordsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

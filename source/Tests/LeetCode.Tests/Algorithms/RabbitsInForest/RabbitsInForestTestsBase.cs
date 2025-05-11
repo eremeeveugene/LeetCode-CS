@@ -22,7 +22,7 @@ public abstract class RabbitsInForestTestsBase<T> where T : IRabbitsInForest, ne
     public void NumRabbits_WithAnswersArray_ReturnsMinimumPossibleCount(string answersJson, int expectedResult)
     {
         // Arrange
-        var answers = JsonHelper<int>.DeserializeToArray(answersJson);
+        var answers = JsonHelper<int[]>.Parse(answersJson);
 
         var solution = new T();
 

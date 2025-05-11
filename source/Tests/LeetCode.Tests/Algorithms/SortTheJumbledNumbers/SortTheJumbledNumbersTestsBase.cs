@@ -25,9 +25,9 @@ public abstract class SortTheJumbledNumbersTestsBase<T> where T : ISortTheJumble
         string expectedResultJson)
     {
         // Arrange
-        var mapping = JsonHelper<int>.DeserializeToArray(mappingJson);
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var mapping = JsonHelper<int[]>.Parse(mappingJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

@@ -25,8 +25,8 @@ public abstract class MakeTwoArraysEqualByReversingSubarraysTestsBase<T>
         bool expectedResult)
     {
         // Arrange
-        var target = JsonHelper<int>.DeserializeToArray(targetJson);
-        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
+        var target = JsonHelper<int[]>.Parse(targetJson);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
 
         var solution = new T();
 

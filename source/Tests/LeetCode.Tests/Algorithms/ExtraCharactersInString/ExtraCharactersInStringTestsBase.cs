@@ -31,7 +31,7 @@ public abstract class ExtraCharactersInStringTestsBase<T> where T : IExtraCharac
         int expectedResult)
     {
         // Arrange
-        var dictionary = JsonHelper<string>.DeserializeToArray(dictionaryJson);
+        var dictionary = JsonHelper<string[]>.Parse(dictionaryJson);
 
         var solution = new T();
 

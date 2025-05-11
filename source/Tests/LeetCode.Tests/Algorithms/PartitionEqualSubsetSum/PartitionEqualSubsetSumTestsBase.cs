@@ -23,7 +23,7 @@ public abstract class PartitionEqualSubsetSumTestsBase<T> where T : IPartitionEq
         string numsJson, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

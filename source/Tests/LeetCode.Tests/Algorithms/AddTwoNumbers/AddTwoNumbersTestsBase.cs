@@ -27,13 +27,13 @@ public abstract class AddTwoNumbersTestsBase<T> where T : IAddTwoNumbers, new()
         string array2Json, string expectedResultJson)
     {
         // Arrange
-        var array1 = JsonHelper<int>.DeserializeToArray(array1Json);
+        var array1 = JsonHelper<int[]>.Parse(array1Json);
         var list1 = ListNode.ToListNode(array1);
 
-        var array2 = JsonHelper<int>.DeserializeToArray(array2Json);
+        var array2 = JsonHelper<int[]>.Parse(array2Json);
         var list2 = ListNode.ToListNode(array2);
 
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var expectedResultArray = JsonHelper<int[]>.Parse(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

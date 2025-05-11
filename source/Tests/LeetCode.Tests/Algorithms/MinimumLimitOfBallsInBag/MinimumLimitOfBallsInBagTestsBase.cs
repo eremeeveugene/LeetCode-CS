@@ -23,7 +23,7 @@ public abstract class MinimumLimitOfBallsInBagTestsBase<T> where T : IMinimumLim
         int maxOperations, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

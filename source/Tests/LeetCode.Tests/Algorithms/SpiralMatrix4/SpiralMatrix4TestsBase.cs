@@ -27,7 +27,7 @@ public abstract class SpiralMatrix4TestsBase<T> where T : ISpiralMatrix4, new()
         string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJson);
+        var headArray = JsonHelper<int[]>.Parse(headJson);
         var head = ListNode.ToListNode(headArray) ?? throw new ListNodeBuildException();
         var expectedResult = JsonHelper<int>.DeserializeToJaggedArray(expectedResultJson);
 

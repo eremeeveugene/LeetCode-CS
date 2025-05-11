@@ -26,8 +26,8 @@ public abstract class DeleteNodeInLinkedListTestsBase<T> where T : IDeleteNodeIn
         string expectedResultJson)
     {
         // Arrange
-        var actualResultArray = JsonHelper<int>.DeserializeToArray(actualResultJson);
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var actualResultArray = JsonHelper<int[]>.Parse(actualResultJson);
+        var expectedResultArray = JsonHelper<int[]>.Parse(expectedResultJson);
 
 
         var actualResult = ListNode.ToListNode(actualResultArray);

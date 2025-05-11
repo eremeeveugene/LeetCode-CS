@@ -29,9 +29,9 @@ public abstract class LinkedListInBinaryTreeTestsBase<T> where T : ILinkedListIn
         string rootJson, bool expectedResult)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJson);
+        var headArray = JsonHelper<int[]>.Parse(headJson);
         var head = ListNode.ToListNode(headArray) ?? throw new ListNodeBuildException();
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
 
         var solution = new T();

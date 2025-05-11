@@ -24,7 +24,7 @@ public abstract class FindUniqueBinaryStringTestsBase<T> where T : IFindUniqueBi
         string expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<string>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<string[]>.Parse(numsJson);
 
         var solution = new T();
 

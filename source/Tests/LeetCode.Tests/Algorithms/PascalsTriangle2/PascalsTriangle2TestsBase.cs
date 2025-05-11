@@ -23,7 +23,7 @@ public abstract class PascalsTriangle2TestsBase<T> where T : IPascalsTriangle2, 
     public void GetRow_GivenRowIndex_ReturnsPascalsTriangleRow(int rowIndex, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

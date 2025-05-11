@@ -22,8 +22,8 @@ public abstract class SortAnArrayTestsBase<T> where T : ISortAnArray, new()
     public void SortArray_WithUnsortedArray_ReturnsSortedArray(string numsJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

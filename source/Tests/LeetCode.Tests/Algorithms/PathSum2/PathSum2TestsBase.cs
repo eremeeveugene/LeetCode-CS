@@ -35,7 +35,7 @@ public abstract class PathSum2TestsBase<T> where T : IPathSum2, new()
         int targetSum, string expectedJsonResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(jsonRootArray);
+        var rootArray = JsonHelper<int?[]>.Parse(jsonRootArray);
         var root = TreeNode.ToTreeNode(rootArray);
         var expectedResult = JsonHelper<int>.DeserializeToJaggedList(expectedJsonResult);
 

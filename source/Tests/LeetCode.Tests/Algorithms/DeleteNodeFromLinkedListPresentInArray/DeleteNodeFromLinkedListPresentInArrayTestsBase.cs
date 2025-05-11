@@ -31,10 +31,10 @@ public abstract class DeleteNodeFromLinkedListPresentInArrayTestsBase<T>
         string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
-        var headArray = JsonHelper<int>.DeserializeToArray(headJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var headArray = JsonHelper<int[]>.Parse(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var expectedResultArray = JsonHelper<int[]>.Parse(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

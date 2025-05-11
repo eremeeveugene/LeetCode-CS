@@ -25,7 +25,7 @@ public abstract class MinimizedMaximumOfProductsDistributedToAnyStoreTestsBase<T
         string quantitiesJson, int expectedResult)
     {
         // Arrange
-        var quantities = JsonHelper<int>.DeserializeToArray(quantitiesJson);
+        var quantities = JsonHelper<int[]>.Parse(quantitiesJson);
 
         var solution = new T();
 

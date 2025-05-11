@@ -23,7 +23,7 @@ public abstract class CrawlerLogFolderTestsBase<T> where T : ICrawlerLogFolder, 
     public void MinOperations_GivenLogsArray_ReturnsMinOperationsCount(string logsJson, int expectedResult)
     {
         // Arrange
-        var logs = JsonHelper<string>.DeserializeToArray(logsJson);
+        var logs = JsonHelper<string[]>.Parse(logsJson);
 
         var solution = new T();
 

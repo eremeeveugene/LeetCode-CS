@@ -23,8 +23,8 @@ public abstract class AssignCookiesTestsBase<T> where T : IAssignCookies, new()
         string sJson, int expectedResult)
     {
         // Arrange
-        var g = JsonHelper<int>.DeserializeToArray(gJson);
-        var s = JsonHelper<int>.DeserializeToArray(sJson);
+        var g = JsonHelper<int[]>.Parse(gJson);
+        var s = JsonHelper<int[]>.Parse(sJson);
 
         var solution = new T();
 

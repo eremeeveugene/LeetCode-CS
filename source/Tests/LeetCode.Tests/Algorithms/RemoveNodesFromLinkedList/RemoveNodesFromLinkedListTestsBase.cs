@@ -29,9 +29,9 @@ public abstract class RemoveNodesFromLinkedListTestsBase<T> where T : IRemoveNod
     public void RemoveNodes_WithVariousLists_RemovesExpectedNodes(string headJson, string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int>.DeserializeToArray(headJson);
+        var headArray = JsonHelper<int[]>.Parse(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var expectedResultArray = JsonHelper<int[]>.Parse(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

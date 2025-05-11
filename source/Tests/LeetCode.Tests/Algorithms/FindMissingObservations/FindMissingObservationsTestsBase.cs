@@ -26,8 +26,8 @@ public abstract class FindMissingObservationsTestsBase<T> where T : IFindMissing
         string expectedResultJson)
     {
         // Arrange
-        var rolls = JsonHelper<int>.DeserializeToArray(rollsJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var rolls = JsonHelper<int[]>.Parse(rollsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

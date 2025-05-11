@@ -22,7 +22,7 @@ public abstract class SumOfVariableLengthSubarraysTestsBase<T> where T : ISumOfV
     public void SubarraySum_WithGivenArray_ReturnsMaximumSum(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

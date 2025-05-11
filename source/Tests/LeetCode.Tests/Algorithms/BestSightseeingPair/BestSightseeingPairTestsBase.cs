@@ -22,7 +22,7 @@ public abstract class BestSightseeingPairTestsBase<T> where T : IBestSightseeing
     public void MaxScoreSightseeingPair_WithValuesArray_ReturnsMaxScore(string valuesJson, int expectedResult)
     {
         // Arrange
-        var values = JsonHelper<int>.DeserializeToArray(valuesJson);
+        var values = JsonHelper<int[]>.Parse(valuesJson);
 
         var solution = new T();
 

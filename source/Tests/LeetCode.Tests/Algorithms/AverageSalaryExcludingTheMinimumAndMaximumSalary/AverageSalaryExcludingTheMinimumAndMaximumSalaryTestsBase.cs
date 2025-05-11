@@ -23,7 +23,7 @@ public abstract class AverageSalaryExcludingTheMinimumAndMaximumSalaryTestsBase<
     public void Average_WithSalaryArray_ComputesCorrectAverage(string salaryJson, double expectedResult)
     {
         // Arrange
-        var salary = JsonHelper<int>.DeserializeToArray(salaryJson);
+        var salary = JsonHelper<int[]>.Parse(salaryJson);
 
         var solution = new T();
 

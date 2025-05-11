@@ -23,7 +23,7 @@ public abstract class MinimumNumberOfOperationsToMoveAllBallsToEachBoxTestsBase<
     public void MinOperations_WithBinaryString_ReturnsOperationsCountArray(string s, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

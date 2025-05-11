@@ -23,9 +23,9 @@ public abstract class SortThePeopleTestsBase<T> where T : ISortThePeople, new()
         string heightsJson, string expectedResultJson)
     {
         // Arrange
-        var names = JsonHelper<string>.DeserializeToArray(namesJson);
-        var heights = JsonHelper<int>.DeserializeToArray(heightsJson);
-        var expectedResult = JsonHelper<string>.DeserializeToArray(expectedResultJson);
+        var names = JsonHelper<string[]>.Parse(namesJson);
+        var heights = JsonHelper<int[]>.Parse(heightsJson);
+        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

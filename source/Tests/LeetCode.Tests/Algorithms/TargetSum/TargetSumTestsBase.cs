@@ -29,7 +29,7 @@ public abstract class TargetSumTestsBase<T> where T : ITargetSum, new()
         int target, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

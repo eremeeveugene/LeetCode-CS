@@ -35,7 +35,7 @@ public abstract class EvenOddTreeTestsBase<T> where T : IEvenOddTree, new()
         bool expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper<int?>.DeserializeToArray(rootJson);
+        var arrayRoot = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(arrayRoot);
 
         var solution = new T();

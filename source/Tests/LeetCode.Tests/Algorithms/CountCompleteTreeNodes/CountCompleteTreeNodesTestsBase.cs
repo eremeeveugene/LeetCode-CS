@@ -25,7 +25,7 @@ public abstract class CountCompleteTreeNodesTestsBase<T> where T : ICountComplet
     public void CountNodes_WithCompleteBinaryTree_ReturnsTotalNumberOfNodes(string rootJson, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();

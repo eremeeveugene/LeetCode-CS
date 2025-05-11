@@ -22,7 +22,7 @@ public abstract class StoneGameTestsBase<T> where T : IStoneGame, new()
     public void StoneGame_WithGivenPiles_ReturnsTrueWhenFirstPlayerWins(string pilesJson, bool expectedResult)
     {
         // Arrange
-        var piles = JsonHelper<int>.DeserializeToArray(pilesJson);
+        var piles = JsonHelper<int[]>.Parse(pilesJson);
 
         var solution = new T();
 

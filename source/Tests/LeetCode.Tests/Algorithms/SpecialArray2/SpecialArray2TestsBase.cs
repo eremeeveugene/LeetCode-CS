@@ -23,7 +23,7 @@ public abstract class SpecialArray2TestsBase<T> where T : ISpecialArray2, new()
         string queriesJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
         var queries = JsonHelper<int>.DeserializeToJaggedArray(queriesJson);
         var expectedResult = JsonHelper<bool>.DeserializeToArray(expectedResultJson);
 

@@ -25,7 +25,7 @@ public abstract class RowWithMaximumOnesTestsBase<T> where T : IRowWithMaximumOn
     {
         // Arrange
         var mat = JsonHelper<int>.DeserializeToJaggedArray(matJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

@@ -23,8 +23,8 @@ public abstract class NumberOfStudentsUnableToEatLunchTestsBase<T> where T : INu
         string sandwichesJson, int expectedResult)
     {
         // Arrange
-        var students = JsonHelper<int>.DeserializeToArray(studentsJson);
-        var sandwiches = JsonHelper<int>.DeserializeToArray(sandwichesJson);
+        var students = JsonHelper<int[]>.Parse(studentsJson);
+        var sandwiches = JsonHelper<int[]>.Parse(sandwichesJson);
 
         var solution = new T();
 

@@ -23,7 +23,7 @@ public abstract class MonotonicArrayTestsBase<T> where T : IMonotonicArray, new(
     public void IsMonotonic_WithIntegerArray_ReturnsTrueIfArrayIsMonotonic(string numsJson, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

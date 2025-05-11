@@ -22,7 +22,7 @@ public abstract class BaseballGameTestsBase<T> where T : IBaseballGame, new()
     public void CalPoints_WithOperationsArray_ReturnsTotalPoints(string operationsJson, int expectedResult)
     {
         // Arrange
-        var operations = JsonHelper<string>.DeserializeToArray(operationsJson);
+        var operations = JsonHelper<string[]>.Parse(operationsJson);
 
         var solution = new T();
 

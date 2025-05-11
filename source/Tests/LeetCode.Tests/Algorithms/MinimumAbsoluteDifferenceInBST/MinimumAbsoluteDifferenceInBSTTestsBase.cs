@@ -25,7 +25,7 @@ public abstract class MinimumAbsoluteDifferenceInBSTTestsBase<T> where T : IMini
     public void GetMinimumDifference_GivenBST_ReturnsMinimumAbsoluteDifference(string rootJson, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);
+        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
 
         var solution = new T();

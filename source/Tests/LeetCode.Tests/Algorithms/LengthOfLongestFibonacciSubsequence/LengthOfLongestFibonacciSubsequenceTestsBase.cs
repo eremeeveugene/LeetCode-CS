@@ -24,7 +24,7 @@ public abstract class LengthOfLongestFibonacciSubsequenceTestsBase<T>
         int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
 
         var solution = new T();
 

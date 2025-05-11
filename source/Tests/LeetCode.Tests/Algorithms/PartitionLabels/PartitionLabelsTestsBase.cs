@@ -23,7 +23,7 @@ public abstract class PartitionLabelsTestsBase<T> where T : IPartitionLabels, ne
         string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 

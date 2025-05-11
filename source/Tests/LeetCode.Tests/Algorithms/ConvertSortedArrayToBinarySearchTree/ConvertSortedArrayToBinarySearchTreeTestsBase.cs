@@ -25,9 +25,9 @@ public abstract class ConvertSortedArrayToBinarySearchTreeTestsBase<T>
     public void SortedArrayToBST_WithArrayInput_ReturnsBalancedBST(string numsJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
-        var expectedResultArray = JsonHelper<int?>.DeserializeToArray(expectedResultJson);
+        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();

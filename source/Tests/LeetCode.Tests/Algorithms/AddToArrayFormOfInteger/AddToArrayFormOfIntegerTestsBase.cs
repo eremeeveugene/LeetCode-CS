@@ -26,8 +26,8 @@ public abstract class AddToArrayFormOfIntegerTestsBase<T> where T : IAddToArrayF
         // Arrange
         var solution = new T();
 
-        var num = JsonHelper<int>.DeserializeToArray(numJson);
-        var expectedResult = JsonHelper<int>.DeserializeToArray(expectedResultJson);
+        var num = JsonHelper<int[]>.Parse(numJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         // Act
         var actualResult = solution.AddToArrayForm(num, k);

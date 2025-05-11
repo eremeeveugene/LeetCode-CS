@@ -25,7 +25,7 @@ public abstract class CountSubarraysOfLengthThreeWithConditionTestsBase<T>
         string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToArray(numsJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
 
         var solution = new T();
 

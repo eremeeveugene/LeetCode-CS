@@ -25,7 +25,7 @@ public abstract class UniqueThreeDigitEvenNumbersTestsBase<T> where T : IUniqueT
         int expectedResult)
     {
         // Arrange
-        var digits = JsonHelper<int>.DeserializeToArray(digitsJson);
+        var digits = JsonHelper<int[]>.Parse(digitsJson);
 
         var solution = new T();
 

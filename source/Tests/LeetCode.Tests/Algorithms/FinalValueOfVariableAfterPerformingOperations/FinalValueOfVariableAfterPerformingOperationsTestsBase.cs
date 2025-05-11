@@ -25,7 +25,7 @@ public abstract class FinalValueOfVariableAfterPerformingOperationsTestsBase<T>
         int expectedResult)
     {
         // Arrange
-        var sentences = JsonHelper<string>.DeserializeToArray(sentencesJson);
+        var sentences = JsonHelper<string[]>.Parse(sentencesJson);
 
         var solution = new T();
 

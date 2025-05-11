@@ -24,7 +24,7 @@ public abstract class UniqueNumberOfOccurrencesTestsBase<T> where T : IUniqueNum
         bool expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int>.DeserializeToArray(arrJson);
+        var arr = JsonHelper<int[]>.Parse(arrJson);
 
         var solution = new T();
 

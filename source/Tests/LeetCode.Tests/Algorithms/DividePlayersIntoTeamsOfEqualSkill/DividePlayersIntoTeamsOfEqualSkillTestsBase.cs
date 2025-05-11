@@ -24,7 +24,7 @@ public abstract class DividePlayersIntoTeamsOfEqualSkillTestsBase<T>
     public void DividePlayers_WithSkillArray_ReturnsTotalSkillSum(string skillJson, long expectedResult)
     {
         // Arrange
-        var skill = JsonHelper<int>.DeserializeToArray(skillJson);
+        var skill = JsonHelper<int[]>.Parse(skillJson);
 
         var solution = new T();
 
