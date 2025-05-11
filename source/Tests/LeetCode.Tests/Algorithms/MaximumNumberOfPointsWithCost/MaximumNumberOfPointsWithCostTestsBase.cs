@@ -28,7 +28,7 @@ public abstract class MaximumNumberOfPointsWithCostTestsBase<T> where T : IMaxim
     [DataRow(
         "[[100000, 90000, 80000, 70000, 60000, 50000],[1, 2, 3, 4, 5, 6],[100000, 90000, 80000, 70000, 60000, 50000],[5, 10, 15, 20, 25, 30],[100000, 90000, 80000, 70000, 60000, 50000]]",
         300021)]
-    public void MaxPoints_WithJaggedArrayOfPoints_ReturnsMaximumPoints(string pointsJson, long expectedResult)
+    public void MaxPoints_WithPointsMatrix_ReturnsMaximumAchievablePoints(string pointsJson, long expectedResult)
     {
         // Arrange
         var solution = new T();

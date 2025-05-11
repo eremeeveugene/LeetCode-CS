@@ -20,7 +20,7 @@ public abstract class ZigzagGridTraversalWithSkipTestsBase<T> where T : IZigzagG
     [DataRow("[[1,2],[3,4]]", "[1,4]")]
     [DataRow("[[2,1],[2,1],[2,1]]", "[2,1,2]")]
     [DataRow("[[1,2,3],[4,5,6],[7,8,9]]", "[1,3,5,7,9]")]
-    public void ZigzagTraversal_WithJaggedGrid_ReturnsZigzagOrderArray(string gridJson,
+    public void ZigzagTraversal_With2DGrid_ReturnsElementsInZigzagOrder(string gridJson,
         string expectedResultJson)
     {
         // Arrange

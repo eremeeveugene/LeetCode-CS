@@ -20,7 +20,7 @@ public abstract class FindTheDifferenceOfTwoArraysTestsBase<T> where T : IFindTh
     [TestMethod]
     [DataRow("[1, 2, 3]", "[2, 4, 6]", "[[1,3],[4,6]]")]
     [DataRow("[1, 2, 3, 3]", "[1, 1, 2, 2]", "[[3],[]]")]
-    public void FindDifference_GivenTwoArrays_ReturnsDifferenceInJaggedArray(string nums1Json,
+    public void FindDifference_WithTwoIntegerArrays_ReturnsUniqueElementsInEachArray(string nums1Json,
         string nums2Json, string jsonExpectedResult)
     {
         // Arrange
