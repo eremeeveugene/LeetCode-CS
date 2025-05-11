@@ -17,7 +17,10 @@ namespace LeetCode.Algorithms.ImplementStackUsingQueues;
 public interface IImplementStackUsingQueues
 {
     void Push(int x);
+
     int Pop();
+
     int Top();
+
     bool Empty();
 }

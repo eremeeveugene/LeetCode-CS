@@ -16,7 +16,7 @@ namespace LeetCode.Tests.Algorithms.DesignAnOrderedStream;
 [TestClass]
 public class DesignAnOrderedStreamArrayTests : DesignAnOrderedStreamTestsBase
 {
-    protected override IDesignAnOrderedStream GetDesignAnOrderedStream(int size)
+    protected override IDesignAnOrderedStream GetSolution(int size)
     {
         return new DesignAnOrderedStreamArray(size);
     }

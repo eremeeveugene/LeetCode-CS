@@ -18,7 +18,8 @@ public abstract class MinimumArrayEndTestsBase<T> where T : IMinimumArrayEnd, ne
     [TestMethod]
     [DataRow(3, 4, 6)]
     [DataRow(2, 7, 15)]
-    public void MinEnd_GivenNAndX_ReturnsExpectedResult(int n, int x, long expectedResult)
+    public void MinEnd_WithArrayLengthAndTargetAndValue_ReturnsMinimumPossibleLastElement(int n, int x,
+        long expectedResult)
     {
         // Arrange
         var solution = new T();

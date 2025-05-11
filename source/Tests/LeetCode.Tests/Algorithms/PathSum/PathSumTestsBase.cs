@@ -25,8 +25,8 @@ public abstract class PathSumTestsBase<T> where T : IPathSum, new()
     [DataRow("[1,2]", 1, false)]
     [DataRow("[1,2,null,3,null,4,null,5]", 6, false)]
     [DataRow("[1,-2,-3,1,3,-2,null,-1]", -1, true)]
-    public void HasPathSum_GivenBinaryTreeAndTargetSum_ReturnsExpectedBoolean(string jsonRootArray, int targetSum,
-        bool expectedResult)
+    public void HasPathSum_WithBinaryTreeAndTargetSum_ReturnsTrueIfAnyRootToLeafPathEqualsTarget(string jsonRootArray,
+        int targetSum, bool expectedResult)
     {
         // Arrange
         var solution = new T();

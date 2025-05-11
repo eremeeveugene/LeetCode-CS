@@ -20,7 +20,7 @@ public abstract class FindAllDuplicatesInAnArrayTestsBase<T> where T : IFindAllD
     [DataRow("[4, 3, 2, 7, 8, 2, 3, 1]", "[2, 3]")]
     [DataRow("[1, 1, 2]", "[1]")]
     [DataRow("[1]", "[]")]
-    public void FindDuplicates_WithInputArray_ReturnsExpectedDuplicates(string numsJson,
+    public void FindDuplicates_WithArrayOfIntegers_ReturnsElementsThatAppearExactlyTwice(string numsJson,
         string expectedResultJson)
     {
         // Arrange

@@ -23,7 +23,7 @@ public abstract class ScoreAfterFlippingMatrixTestsBase<T> where T : IScoreAfter
     [DataRow("[[0,1,1,1,1,1,0,1,0,0]]", 1023)]
     [DataRow("[[1,0,1,1,1,0,1,0,1,0],[1,0,0,0,1,1,1,1,0,0]]", 1832)]
     [DataRow("[[0],[1],[1],[0],[0],[1],[0],[1],[0],[0],[1],[1],[0],[0],[0],[1],[0],[1],[0],[0]]", 20)]
-    public void MatrixScore_WithJsonInput_ReturnsExpectedScore(string gridJson, int expectedResult)
+    public void MatrixScore_WithBinaryMatrix_ReturnsMaximumScoreAfterOptimalFlips(string gridJson, int expectedResult)
     {
         // Arrange
         var solution = new T();

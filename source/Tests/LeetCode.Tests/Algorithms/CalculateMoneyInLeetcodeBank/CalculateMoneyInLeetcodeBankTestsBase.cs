@@ -19,7 +19,7 @@ public abstract class CalculateMoneyInLeetcodeBankTestsBase<T> where T : ICalcul
     [DataRow(4, 10)]
     [DataRow(10, 37)]
     [DataRow(20, 96)]
-    public void TotalMoney_WithInputN_ReturnsExpectedTotal(int n, int expectedResult)
+    public void TotalMoney_WithNumberOfSavingDays_ReturnsTotalAccumulatedAmount(int n, int expectedResult)
     {
         // Arrange
         var solution = new T();

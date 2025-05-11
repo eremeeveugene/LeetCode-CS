@@ -23,8 +23,8 @@ public abstract class RemoveZeroSumConsecutiveNodesFromLinkedListTestsBase<T>
     [DataRow("[1,2,-3,3,1]", "[3,1]")]
     [DataRow("[1,2,3,-3,4]", "[1,2,4]")]
     [DataRow("[1,2,3,-3,-2]", "[1]")]
-    public void RemoveZeroSumSublists_WithVariousLists_ReturnsExpectedResult(string headJson,
-        string expectedResultJson)
+    public void RemoveZeroSumSublists_WithListContainingZeroSumSequences_ReturnsListWithZeroSumSublistsRemoved(
+        string headJson, string expectedResultJson)
     {
         // Arrange
         var headArray = JsonHelper<int>.DeserializeToArray(headJson);

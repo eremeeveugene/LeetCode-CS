@@ -21,7 +21,7 @@ public abstract class DiameterOfBinaryTreeTestsBase<T> where T : IDiameterOfBina
     [DataRow("[]", 0)]
     [DataRow("[1,2,3,4,5]", 3)]
     [DataRow("[1,2]", 1)]
-    public void DiameterOfBinaryTree_GivenJsonRepresentation_ReturnsExpectedDiameter(string rootJson,
+    public void DiameterOfBinaryTree_WithBinaryTreeInput_ReturnsLengthOfLongestPathBetweenNodes(string rootJson,
         int expectedResult)
     {
         // Arrange

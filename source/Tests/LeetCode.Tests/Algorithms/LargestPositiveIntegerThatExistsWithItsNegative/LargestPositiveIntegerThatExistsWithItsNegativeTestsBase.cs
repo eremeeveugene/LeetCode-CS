@@ -22,7 +22,8 @@ public abstract class LargestPositiveIntegerThatExistsWithItsNegativeTestsBase<T
     [DataRow("[-1, 2, -3, 3]", 3)]
     [DataRow("[-1, 10, 6, 7, -7, 1]", 7)]
     [DataRow("[-10, 8, 6, 7, -2, -3]", -1)]
-    public void FindMaxK_WithInputArray_ReturnsExpectedMaximumK(string numsJson, int expectedResult)
+    public void FindMaxK_WithIntegerArray_ReturnsLargestKWhereBothKAndNegativeKExist(string numsJson,
+        int expectedResult)
     {
         // Arrange
         var nums = JsonHelper<int>.DeserializeToArray(numsJson);

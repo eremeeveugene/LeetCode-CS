@@ -22,8 +22,8 @@ public abstract class FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints
     [DataRow("[3, 1]", "[-1, -1]")]
     [DataRow("[5, 3, 1, 2, 5, 1, 2]", "[1, 3]")]
     [DataRow("[1, 3, 2, 2, 3, 2, 2, 2, 7]", "[3, 3]")]
-    public void NodesBetweenCriticalPoints_WithValidInputs_ReturnsExpectedResults(string headJson,
-        string expectedResultJson)
+    public void NodesBetweenCriticalPoints_WithLinkedListInput_ReturnsMinAndMaxDistanceBetweenCriticalPoints(
+        string headJson, string expectedResultJson)
     {
         // Arrange
         var headArray = JsonHelper<int>.DeserializeToArray(headJson);

@@ -19,8 +19,8 @@ public abstract class NextGreaterElement1TestsBase<T> where T : INextGreaterElem
     [TestMethod]
     [DataRow("[4,1,2]", "[1,3,4,2]", "[-1,3,-1]")]
     [DataRow("[2,4]", "[1,2,3,4]", "[3,-1]")]
-    public void NextGreaterElement_GivenNums1AndNums2_ReturnsExpectedArray(string nums1Json, string nums2Json,
-        string expectedResultJson)
+    public void NextGreaterElement_WithSubsetAndReferenceArrays_ReturnsNextGreaterElementsForEachQuery(string nums1Json,
+        string nums2Json, string expectedResultJson)
     {
         // Arrange
         var nums1 = JsonHelper<int>.DeserializeToArray(nums1Json);

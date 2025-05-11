@@ -21,7 +21,7 @@ public abstract class FinalValueOfVariableAfterPerformingOperationsTestsBase<T>
     [DataRow("[\"--X\", \"X++\", \"X++\"]", 1)]
     [DataRow("[\"++X\", \"++X\", \"X++\"]", 3)]
     [DataRow("[\"X++\", \"++X\", \"--X\", \"X--\"]", 0)]
-    public void FinalValueAfterOperations_GivenOperationsArray_ReturnsExpectedFinalValue(string sentencesJson,
+    public void FinalValueAfterOperations_WithOperationStrings_ReturnsFinalValueOfVariable(string sentencesJson,
         int expectedResult)
     {
         // Arrange

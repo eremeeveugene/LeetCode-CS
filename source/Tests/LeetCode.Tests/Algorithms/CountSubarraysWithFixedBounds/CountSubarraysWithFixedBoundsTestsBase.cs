@@ -19,7 +19,7 @@ public abstract class CountSubarraysWithFixedBoundsTestsBase<T> where T : ICount
     [TestMethod]
     [DataRow("[1, 3, 5, 2, 7, 5]", 1, 5, 2)]
     [DataRow("[1, 1, 1, 1]", 1, 1, 10)]
-    public void CountSubarrays_GivenRangeWithMinAndMaxValues_ReturnsExpectedCount(string numsJson, int minK,
+    public void CountSubarrays_WithMinAndMaxBounds_ReturnsNumberOfSubarraysWithFixedBounds(string numsJson, int minK,
         int maxK, long expectedResult)
     {
         // Arrange

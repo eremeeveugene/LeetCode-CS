@@ -31,7 +31,7 @@ public abstract class DistributeCoinsInBinaryTreeTestsBase<T> where T : IDistrib
     [DataRow(
         "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100]",
         930)]
-    public void DistributeCoins_GivenTreeNodeJson_ReturnsExpectedCoinDistribution(string rootJson,
+    public void DistributeCoins_WithBinaryTreeInput_ReturnsMinimumNumberOfMovesToBalanceCoins(string rootJson,
         int expectedResult)
     {
         // Arrange

@@ -24,7 +24,8 @@ public abstract class MinimumIncrementToMakeArrayUniqueTestsBase<T>
     [DataRow("[9,7,6,5,1,0]", 0)]
     [DataRow("[0,0,0,0,0,0,0,0,0,1]", 44)]
     [DataRow("[1,2,3,1,3,2,2,1,3,2,3,1,3,2,1,3,1,2]", 135)]
-    public void MinIncrementForUnique_WithVariousArrays_ReturnsExpectedResult(string numsJson, int expectedResult)
+    public void MinIncrementForUnique_WithIntegerArray_ReturnsMinimumMovesToMakeElementsUnique(string numsJson,
+        int expectedResult)
     {
         // Arrange
         var nums = JsonHelper<int>.DeserializeToArray(numsJson);

@@ -20,8 +20,8 @@ public abstract class CountSubarraysWhereMaxElementAppearsAtLeastKTimesTestsBase
     [TestMethod]
     [DataRow("[1, 3, 2, 3, 3]", 2, 6)]
     [DataRow("[1, 4, 2, 1]", 3, 0)]
-    public void CountSubarrays_GivenArrayAndThreshold_ReturnsExpectedCount(string numsJson, int k,
-        int expectedResult)
+    public void CountSubarrays_WithElementAndArray_ReturnsNumberOfValidSubarraysContainingElementK(string numsJson,
+        int k, int expectedResult)
     {
         // Arrange
         var nums = JsonHelper<int>.DeserializeToArray(numsJson);

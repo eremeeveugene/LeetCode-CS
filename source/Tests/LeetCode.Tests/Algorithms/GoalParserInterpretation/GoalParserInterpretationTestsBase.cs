@@ -19,7 +19,7 @@ public abstract class GoalParserInterpretationTestsBase<T> where T : IGoalParser
     [DataRow("G()(al)", "Goal")]
     [DataRow("G()()()()(al)", "Gooooal")]
     [DataRow("(al)G(al)()()G", "alGalooG")]
-    public void Interpret_GivenCommandString_ReturnsExpectedString(string command, string expectedResult)
+    public void Interpret_WithGoalParserCommand_ReturnsInterpretedString(string command, string expectedResult)
     {
         // Arrange
         var solution = new T();

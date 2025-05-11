@@ -21,13 +21,13 @@ public abstract class SameTreeTestsBase<T> where T : ISameTree, new()
     [DataRow("[1,2,3]", "[1,2,3]", true)]
     [DataRow("[1,2]", "[1,null,2]", false)]
     [DataRow("[1,2,1]", "[1,1,2]", false)]
-    public void IsSameTree_GivenTwoBinaryTreesFromJsons_ReturnsExpectedBoolean(string jsonArrayP,
-        string jsonArrayQ, bool expectedResult)
+    public void IsSameTree_WithTwoBinaryTrees_ReturnsTrueIfIdenticalOtherwiseFalse(string pJson,
+        string qJson, bool expectedResult)
     {
         // Arrange
-        var pArray = JsonHelper<int?>.DeserializeToArray(jsonArrayP);
+        var pArray = JsonHelper<int?>.DeserializeToArray(pJson);
         var p = TreeNode.ToTreeNode(pArray);
-        var qArray = JsonHelper<int?>.DeserializeToArray(jsonArrayQ);
+        var qArray = JsonHelper<int?>.DeserializeToArray(qJson);
         var q = TreeNode.ToTreeNode(qArray);
 
         var solution = new T();

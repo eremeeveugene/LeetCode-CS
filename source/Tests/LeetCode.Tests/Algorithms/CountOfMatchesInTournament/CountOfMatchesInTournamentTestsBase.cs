@@ -18,8 +18,7 @@ public abstract class CountOfMatchesInTournamentTestsBase<T> where T : ICountOfM
     [TestMethod]
     [DataRow(7, 6)]
     [DataRow(14, 13)]
-    public void NumberOfMatches_WithSingleEliminationTournamentInputs_ReturnsExpectedMatchesCount(int n,
-        int expectedResult)
+    public void NumberOfMatches_WithNumberOfTeams_ReturnsTotalMatchesInEliminationTournament(int n, int expectedResult)
     {
         // Arrange
         var solution = new T();

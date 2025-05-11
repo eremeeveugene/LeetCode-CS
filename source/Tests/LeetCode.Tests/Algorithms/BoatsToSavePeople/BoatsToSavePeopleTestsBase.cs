@@ -23,7 +23,7 @@ public abstract class BoatsToSavePeopleTestsBase<T> where T : IBoatsToSavePeople
     [DataRow("[11, 2, 8, 1]", 11, 3)]
     [DataRow("[11, 2, 2, 8, 8]", 11, 3)]
     [DataRow("[3, 2, 3, 2, 2]", 6, 3)]
-    public void NumRescueBoats_GivenPeopleAndLimit_ReturnsExpectedNumberOfBoats(string peopleJson, int limit,
+    public void NumRescueBoats_WithPeopleWeightsAndBoatLimit_ReturnsMinimumNumberOfBoats(string peopleJson, int limit,
         int expectedResult)
     {
         // Arrange

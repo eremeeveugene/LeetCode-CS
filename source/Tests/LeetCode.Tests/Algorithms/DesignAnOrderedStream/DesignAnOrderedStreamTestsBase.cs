@@ -20,7 +20,7 @@ public abstract class DesignAnOrderedStreamTestsBase
 {
     private const string Insert = "insert";
 
-    protected abstract IDesignAnOrderedStream GetDesignAnOrderedStream(int size);
+    protected abstract IDesignAnOrderedStream GetSolution(int size);
 
     [TestMethod]
     [DataRow(5, "[\"insert\",\"insert\",\"insert\",\"insert\",\"insert\"]",
@@ -34,7 +34,7 @@ public abstract class DesignAnOrderedStreamTestsBase
         var arguments = JsonHelper<JsonElement>.DeserializeToJaggedArray(argumentsJson);
         var expectedResult = JsonHelper<string>.DeserializeToJaggedArray(expectedResultJson);
 
-        var designAnOrderedStream = GetDesignAnOrderedStream(5);
+        var solution = GetSolution(5);
 
         // Act 
         var actualResult = new List<string?[]>();
@@ -47,7 +47,7 @@ public abstract class DesignAnOrderedStreamTestsBase
                     var idKey = arguments[i][0].GetInt32();
                     var value = arguments[i][1].GetString()!;
 
-                    actualResult.Add(designAnOrderedStream.Insert(idKey, value).ToArray());
+                    actualResult.Add(solution.Insert(idKey, value).ToArray());
                     break;
                 default:
                     throw new UnexpectedMethodException(methods[i]);

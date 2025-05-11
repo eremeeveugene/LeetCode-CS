@@ -19,7 +19,7 @@ public abstract class NumberOfStepsToReduceNumberToZeroTestsBase<T> where T : IN
     [DataRow(14, 6)]
     [DataRow(8, 4)]
     [DataRow(123, 12)]
-    public void NumberOfSteps_GivenNumber_ReturnsExpectedStepCount(int nums, int expectedResult)
+    public void NumberOfSteps_WithPositiveInteger_ReturnsCountToReduceNumberToZero(int nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

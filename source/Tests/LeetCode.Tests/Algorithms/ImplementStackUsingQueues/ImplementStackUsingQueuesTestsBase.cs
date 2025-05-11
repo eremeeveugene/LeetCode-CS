@@ -20,7 +20,7 @@ public abstract class ImplementStackUsingQueuesTestsBase<T> where T : IImplement
     [DataRow("[1, 2, 3]", 3, 3, 2)]
     [DataRow("[5, 10, 15, 20]", 20, 20, 15)]
     [DataRow("[42]", 42, 42, null)]
-    public void PushPopTop_WithVariousElements_ReturnsExpectedTopAndPopValues(string pushElementsJson,
+    public void StackOperations_WithPushElements_VerifiesTopPopAndStateAfterPop(string pushElementsJson,
         int topExpected, int popExpected, int? popAfterTopExpected)
     {
         // Arrange

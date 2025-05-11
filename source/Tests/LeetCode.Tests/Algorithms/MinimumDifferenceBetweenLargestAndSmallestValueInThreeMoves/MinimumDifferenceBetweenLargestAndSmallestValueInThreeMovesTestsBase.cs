@@ -22,7 +22,8 @@ public abstract class MinimumDifferenceBetweenLargestAndSmallestValueInThreeMove
     [DataRow("[1,5,0,10,14]", 1)]
     [DataRow("[3,100,20]", 0)]
     [DataRow("[6,6,0,1,1,4,6]", 2)]
-    public void MinDifference_WithGivenNumsArray_ReturnsExpectedResult(string numsJson, int expectedResult)
+    public void MinDifference_WithUpToThreeChanges_ReturnsSmallestPossibleValueRange(string numsJson,
+        int expectedResult)
     {
         // Arrange
         var nums = JsonHelper<int>.DeserializeToArray(numsJson);

@@ -20,7 +20,8 @@ public abstract class FindTheOriginalArrayOfPrefixXorTestsBase<T> where T : IFin
     [DataRow("[5, 2, 0, 3, 1]", "[5, 7, 2, 3, 2]")]
     [DataRow("[13]", "[13]")]
     [DataRow("[13]", "[13]")]
-    public void FindArray_GivenPrefArray_ReturnsExpectedArray(string prefJson, string expectedResultJson)
+    public void FindArray_WithPrefixXorArray_ReturnsOriginalArrayUsingInverseXorLogic(string prefJson,
+        string expectedResultJson)
     {
         // Arrange
         var pref = JsonHelper<int>.DeserializeToArray(prefJson);

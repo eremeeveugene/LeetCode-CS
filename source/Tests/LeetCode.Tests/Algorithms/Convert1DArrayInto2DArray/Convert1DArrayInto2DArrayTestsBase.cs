@@ -22,8 +22,8 @@ public abstract class Convert1DArrayInto2DArrayTestsBase<T> where T : IConvert1D
     [DataRow("[1,2]", 1, 1, "[]")]
     [DataRow("[1,2,3]", 1, 3, "[[1,2,3]]")]
     [DataRow("[1,2,3,4]", 2, 2, "[[1,2],[3,4]]")]
-    public void Construct2DArray_GivenOriginalArrayAndDimensions_ReturnsExpected2DArray(string originalJson, int m,
-        int n, string expectedResultJson)
+    public void Construct2DArray_WithOriginalArrayAndDimensions_ReturnsReshapedMatrixOrEmptyArray(string originalJson,
+        int m, int n, string expectedResultJson)
     {
         // Arrange
         var original = JsonHelper<int>.DeserializeToArray(originalJson);

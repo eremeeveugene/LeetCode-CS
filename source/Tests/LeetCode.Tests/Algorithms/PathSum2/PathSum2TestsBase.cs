@@ -31,8 +31,8 @@ public abstract class PathSum2TestsBase<T> where T : IPathSum2, new()
     [DataRow("[5,4,8,11,null,13,4,7,2,null,null,5,1,6,9]", 30, "[]")]
     [DataRow("[5,4,8,11,null,13,4,7,2,null,null,5,1]", 26, "[[5,8,13]]")]
     [DataRow("[10,5,-3,3,2,11,3,-2,1]", 18, "[[10,-3,11]]")]
-    public void PathSum_GivenTreeAndTargetSum_ReturnsExpectedPaths(string jsonRootArray, int targetSum,
-        string expectedJsonResult)
+    public void PathSum_WithBinaryTreeAndTargetSum_ReturnsAllRootToLeafPathsThatSumToTarget(string jsonRootArray,
+        int targetSum, string expectedJsonResult)
     {
         // Arrange
         var rootArray = JsonHelper<int?>.DeserializeToArray(jsonRootArray);

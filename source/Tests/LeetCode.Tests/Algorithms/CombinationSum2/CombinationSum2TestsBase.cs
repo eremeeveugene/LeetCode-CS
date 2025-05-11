@@ -20,8 +20,8 @@ public abstract class CombinationSum2TestsBase<T> where T : ICombinationSum2, ne
     [TestMethod]
     [DataRow("[10, 1, 2, 7, 6, 1, 5]", 8, "[[1,1,6],[1,2,5],[1,7],[2,6]]")]
     [DataRow("[2, 5, 2, 1, 2]", 5, "[[1,2,2],[5]]")]
-    public void CombinationSum2_WithCandidatesAndTarget_ReturnsExpectedCombinations(string candidatesJson,
-        int target, string expectedResultJson)
+    public void CombinationSum2_WithCandidatesAndTarget_ReturnsAllUniqueCombinationsSummingToTarget(
+        string candidatesJson, int target, string expectedResultJson)
     {
         // Arrange
         var candidates = JsonHelper<int>.DeserializeToArray(candidatesJson);

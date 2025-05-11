@@ -18,7 +18,7 @@ public abstract class SmallestEvenMultipleTestsBase<T> where T : ISmallestEvenMu
     [TestMethod]
     [DataRow(5, 10)]
     [DataRow(6, 6)]
-    public void SmallestEvenMultiple_WithPositiveAndEqualInputs_ReturnsExpectedResult(int n, int expectedResult)
+    public void SmallestEvenMultiple_WithPositiveInteger_ReturnsSmallestMultipleOfTwoAndN(int n, int expectedResult)
     {
         // Arrange
         var solution = new T();

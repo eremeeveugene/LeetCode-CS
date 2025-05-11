@@ -19,7 +19,7 @@ public abstract class MinimumSumOfFourDigitNumberAfterSplittingDigitsTestsBase<T
     [TestMethod]
     [DataRow(2932, 52)]
     [DataRow(4009, 13)]
-    public void MinimumSum_WithNumericInput_ReturnsExpectedMinimizedSum(int num, int expectedResult)
+    public void MinimumSum_WithFourDigitNumber_ReturnsMinimumPossibleSumOfTwoSplitIntegers(int num, int expectedResult)
     {
         // Arrange
         var solution = new T();

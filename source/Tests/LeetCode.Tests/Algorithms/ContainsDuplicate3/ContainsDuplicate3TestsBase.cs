@@ -26,8 +26,8 @@ public abstract class ContainsDuplicate3TestsBase<T> where T : IContainsDuplicat
     [DataRow("[1, 2, 3, 1]", 0, 1, false)]
     [DataRow("[1, 2, 3, 1]", 2, -1, false)]
     [DataRow("[-1, -1]", 1, 0, true)]
-    public void ContainsNearbyAlmostDuplicate_WithIndexAndValueDifferences_ReturnsExpectedResult(string numsJson,
-        int indexDiff, int valueDiff, bool expectedResult)
+    public void ContainsNearbyAlmostDuplicate_WithIndexAndValueDifferenceConstraints_ReturnsTrueIfDuplicateExists(
+        string numsJson, int indexDiff, int valueDiff, bool expectedResult)
     {
         // Arrange
         var nums = JsonHelper<int>.DeserializeToArray(numsJson);

@@ -24,7 +24,7 @@ public abstract class FindAllGroupOfFarmlandTestsBase<T> where T : IFindAllGroup
     [DataRow("[[0,1],[0,1]]", "[[0,1,1,1]]")]
     [DataRow("[[1,0,0],[0,1,1],[0,1,1]]", "[[0,0,0,0],[1,1,2,2]]")]
     [DataRow("[[0,0,0,0,0],[0,1,1,1,0],[0,1,1,1,0],[0,1,1,1,0],[0,0,0,0,0]]", "[[1,1,3,3]]")]
-    public void FindFarmland_GivenLandArray_ReturnsExpectedFarmBoundaries(string landJson,
+    public void FindFarmland_WithLandGridInput_ReturnsTopLeftAndBottomRightCoordinatesOfFarmlandGroups(string landJson,
         string expectedResultJson)
     {
         // Arrange

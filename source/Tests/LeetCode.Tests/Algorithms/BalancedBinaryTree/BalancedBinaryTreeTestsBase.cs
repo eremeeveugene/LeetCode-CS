@@ -25,7 +25,7 @@ public abstract class BalancedBinaryTreeTestsBase<T> where T : IBalancedBinaryTr
     [DataRow("[1,2,2,3,null,null,3,4,null,null,4]", false)]
     [DataRow("[1,2,2,null,null,3,3,4,4]", false)]
     [DataRow("[1,2,2,3,3,3,3]", true)]
-    public void IsBalanced_TreeWithJsonInput_ReturnsExpectedBalancedStatus(string rootJson, bool expectedResult)
+    public void IsBalanced_WithBinaryTreeRoot_ReturnsTrueIfHeightBalanced(string rootJson, bool expectedResult)
     {
         // Arrange
         var rootArray = JsonHelper<int?>.DeserializeToArray(rootJson);

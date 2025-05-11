@@ -21,7 +21,7 @@ public abstract class MaximumDepthOfBinaryTreeTestsBase<T> where T : IMaximumDep
     [DataRow("[]", 0)]
     [DataRow("[3,9,20,null,null,15,7]", 3)]
     [DataRow("[1,null,2]", 2)]
-    public void MaxDepth_GivenTreeWithDifferentConfigurations_ReturnsExpectedDepth(string rootJson,
+    public void MaxDepth_WithBinaryTreeInput_ReturnsMaximumDepthOfTree(string rootJson,
         int expectedResult)
     {
         // Arrange

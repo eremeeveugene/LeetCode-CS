@@ -19,7 +19,8 @@ public abstract class NumberOfWonderfulSubstringsTestsBase<T> where T : INumberO
     [DataRow("aba", 4)]
     [DataRow("aabb", 9)]
     [DataRow("he", 2)]
-    public void WonderfulSubstrings_WithDifferentWords_ReturnsExpectedCounts(string word, long expectedResult)
+    public void WonderfulSubstrings_WithAlphabetSubsetWord_ReturnsCountOfWonderfulSubstrings(string word,
+        long expectedResult)
     {
         // Arrange
         var solution = new T();

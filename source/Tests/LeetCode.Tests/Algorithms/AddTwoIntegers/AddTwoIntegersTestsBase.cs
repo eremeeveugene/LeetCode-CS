@@ -18,7 +18,7 @@ public abstract class AddTwoIntegersTestsBase<T> where T : IAddTwoIntegers, new(
     [TestMethod]
     [DataRow(12, 5, 17)]
     [DataRow(-10, 4, -6)]
-    public void Sum_WhenCalledWithVariousNumbers_ReturnsExpectedSum(int num1, int num2, int expectedResult)
+    public void Sum_WithTwoIntegers_ReturnsTotalSum(int num1, int num2, int expectedResult)
     {
         // Arrange
         var solution = new T();
