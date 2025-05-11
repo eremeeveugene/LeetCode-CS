@@ -19,7 +19,7 @@ public abstract class LeftAndRightSumDifferencesTestsBase<T> where T : ILeftAndR
     [TestMethod]
     [DataRow("[1]", "[0]")]
     [DataRow("[10, 4, 8, 3]", "[15, 1, 11, 22]")]
-    public void LeftRightDifference_WithGivenNumbers_ReturnsCorrectDifferences(string numsJson,
+    public void LeftRightDifference_WithInputArray_ReturnsAbsoluteLeftRightSums(string numsJson,
         string expectedResultJson)
     {
         // Arrange

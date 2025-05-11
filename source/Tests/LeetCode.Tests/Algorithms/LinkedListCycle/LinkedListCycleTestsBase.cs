@@ -27,7 +27,7 @@ public abstract class LinkedListCycleTestsBase<T> where T : ILinkedListCycle, ne
     [DataRow("[1,1,1,1,1]", 0, true)]
     [DataRow("[1,2,3,4,5,6,7,8,9]", 2, true)]
     [DataRow("[1,2,3,4,5,6,7,8,9,10]", 0, true)]
-    public void HasCycle_GivenLinkedList_ReturnsCorrectCycleDetectionOutcome(string headJson, int pos,
+    public void HasCycle_WithLinkedListAndCyclePosition_ReturnsWhetherCycleExists(string headJson, int pos,
         bool expectedResult)
     {
         // Arrange

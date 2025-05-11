@@ -21,8 +21,7 @@ public abstract class SymmetricTreeTestsBase<T> where T : ISymmetricTree, new()
     [DataRow("[]", true)]
     [DataRow("[1,2,2,3,4,4,3]", true)]
     [DataRow("[1,2,2,null,3,null,3]", false)]
-    public void IsSymmetric_GivenBinaryTreeAsJson_ReturnsExpectedSymmetryOutcome(string rootJson,
-        bool expectedResult)
+    public void IsSymmetric_WithBinaryTreeInput_ReturnsTrueIfTreeIsMirrorOfItself(string rootJson, bool expectedResult)
     {
         // Arrange
         var arrayRoot = JsonHelper<int?>.DeserializeToArray(rootJson);

@@ -22,8 +22,7 @@ public abstract class FindTheTownJudgeTestsBase<T> where T : IFindTheTownJudge, 
     [DataRow(2, "[[1,2]]", 2)]
     [DataRow(3, "[[1,3],[2,3]]", 3)]
     [DataRow(3, "[[1,3],[2,3],[3,1]]", -1)]
-    public void FindJudge_WithDifferentTrustRelationships_ReturnsCorrectJudgeOrMinusOne(int n, string jsonTrust,
-        int expectedResult)
+    public void FindJudge_WithTrustMatrix_ReturnsJudgeLabelOrMinusOne(int n, string jsonTrust, int expectedResult)
     {
         // Arrange
         var solution = new T();

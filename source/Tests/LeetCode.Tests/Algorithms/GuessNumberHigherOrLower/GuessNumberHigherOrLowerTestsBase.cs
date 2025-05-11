@@ -19,7 +19,7 @@ public abstract class GuessNumberHigherOrLowerTestsBase<T> where T : IGuessNumbe
     [DataRow(1, 1, 1)]
     [DataRow(2, 1, 1)]
     [DataRow(10, 6, 6)]
-    public void GuessNumber_WithRangeAndPickedNumber_ReturnsCorrectGuess(int n, int pickedNumber, int expectedResult)
+    public void GuessNumber_WithRangeAndPickedValue_ReturnsPickedValue(int n, int pickedNumber, int expectedResult)
     {
         // Arrange
         var guessNumberHigherOrLowerFactory = new T();
@@ -29,6 +29,6 @@ public abstract class GuessNumberHigherOrLowerTestsBase<T> where T : IGuessNumbe
         var actualResult = guessNumberHigherOrLower.GuessNumber(n);
 
         // Assert
-        Assert.AreEqual(actualResult, expectedResult);
+        Assert.AreEqual(expectedResult, actualResult);
     }
 }

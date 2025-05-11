@@ -23,7 +23,7 @@ public abstract class ProductOfTheLastKNumbersTestsBase<T> where T : IProductOfT
     [DataRow(
         "[\"add\",\"add\",\"add\",\"add\",\"add\",\"getProduct\",\"getProduct\",\"getProduct\",\"add\",\"getProduct\"]",
         "[[3],[0],[2],[5],[4],[2],[3],[4],[8],[2]]", "[20,40,0,32]")]
-    public void ProductArray_WithMethodCallsAndArguments_ReturnsCorrectProductsForGetProductCalls(string methodsJson,
+    public void test(string methodsJson,
         string argsJson, string expectedResultJson)
     {
         // Arrange

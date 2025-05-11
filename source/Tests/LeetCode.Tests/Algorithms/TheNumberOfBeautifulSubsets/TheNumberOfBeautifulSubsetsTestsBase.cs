@@ -27,7 +27,8 @@ public abstract class TheNumberOfBeautifulSubsetsTestsBase<T> where T : ITheNumb
         2, 9408)]
     [DataRow("[1000, 999, 998, 997, 996, 995, 994, 993, 992, 991, 990, 989, 988, 987, 986, 985, 984, 983, 982, 981]", 2,
         20735)]
-    public void BeautifulSubsets_WithNumsAndK_ReturnsExpectedResult(string numsJson, int k, int expectedResult)
+    public void BeautifulSubsets_WithIntegerArrayAndDifferenceConstraint_ReturnsCountOfValidNonEmptySubsets(
+        string numsJson, int k, int expectedResult)
     {
         // Arrange
         var nums = JsonHelper<int>.DeserializeToArray(numsJson);

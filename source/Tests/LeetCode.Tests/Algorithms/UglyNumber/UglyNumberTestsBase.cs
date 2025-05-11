@@ -19,7 +19,7 @@ public abstract class UglyNumberTestsBase<T> where T : IUglyNumber, new()
     [DataRow(1, true)]
     [DataRow(6, true)]
     [DataRow(14, false)]
-    public void IsUgly_WithVariousInputs_ReturnsExpectedResult(int n, bool expectedResult)
+    public void IsUgly_WithPositiveInteger_ReturnsTrueIfOnlyPrimeFactorsAreTwoThreeOrFive(int n, bool expectedResult)
     {
         // Arrange
         var solution = new T();

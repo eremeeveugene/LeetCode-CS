@@ -19,8 +19,8 @@ public abstract class CountSubarraysWithScoreLessThanKTestsBase<T> where T : ICo
     [TestMethod]
     [DataRow("[2,1,4,3,5]", 10, 6)]
     [DataRow("[1,1,1]", 5, 5)]
-    public void CountSubarrays_WithArrayAndThreshold_ReturnsCorrectCount(string numsJson, long k,
-        long expectedResult)
+    public void CountSubarrays_WithPositiveIntArrayAndScoreThreshold_ReturnsNumberOfSubarraysWithScoreLessThanK(
+        string numsJson, long k, long expectedResult)
     {
         // Arrange
         var nums = JsonHelper<int>.DeserializeToArray(numsJson);

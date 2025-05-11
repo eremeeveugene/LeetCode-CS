@@ -24,7 +24,8 @@ public abstract class PassThePillowTestsBase<T> where T : IPassThePillow, new()
     [DataRow(10, 999, 10)]
     [DataRow(18, 38, 5)]
     [DataRow(2, 1000, 1)]
-    public void PassThePillow_WithNumberOfPeopleAndTime_ReturnsCorrectPosition(int n, int time, int expectedResult)
+    public void PassThePillow_WithPeopleCountAndElapsedTime_ReturnsPersonIndexHoldingPillow(int n, int time,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();

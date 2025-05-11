@@ -20,7 +20,7 @@ public abstract class MonotonicArrayTestsBase<T> where T : IMonotonicArray, new(
     [DataRow("[1,2,2,3]", true)]
     [DataRow("[6,5,4,4]", true)]
     [DataRow("[1,3,2]", false)]
-    public void IsMonotonic_WithJsonInput_ReturnsCorrectMonotonicity(string numsJson, bool expectedResult)
+    public void IsMonotonic_WithIntegerArray_ReturnsTrueIfArrayIsMonotonic(string numsJson, bool expectedResult)
     {
         // Arrange
         var nums = JsonHelper<int>.DeserializeToArray(numsJson);

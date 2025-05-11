@@ -18,7 +18,7 @@ public abstract class XOROperationInAnArrayTestsBase<T> where T : IXOROperationI
     [TestMethod]
     [DataRow(5, 0, 8)]
     [DataRow(4, 3, 8)]
-    public void XorOperation_WithStartAndNumberOfElements_ReturnsExpectedXorValue(int n, int start, int expectedResult)
+    public void XorOperation_WithCountAndStartValue_ReturnsXorOfGeneratedArray(int n, int start, int expectedResult)
     {
         // Arrange
         var solution = new T();

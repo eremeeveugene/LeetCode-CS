@@ -20,7 +20,7 @@ public abstract class MaximumDistanceInArraysTestsBase<T> where T : IMaximumDist
     [DataRow("[[1],[1]]", 0)]
     [DataRow("[[1,4],[0,5]]", 4)]
     [DataRow("[[1,2,3],[4,5],[1,2,3]]", 4)]
-    public void MaxDistance_WithJsonOfJaggedLists_ReturnsCorrectMaxDistance(string arraysJson,
+    public void MaxDistance_WithSortedArrays_ReturnsMaximumAbsoluteDifferenceBetweenTwoArrays(string arraysJson,
         int expectedResult)
     {
         // Arrange

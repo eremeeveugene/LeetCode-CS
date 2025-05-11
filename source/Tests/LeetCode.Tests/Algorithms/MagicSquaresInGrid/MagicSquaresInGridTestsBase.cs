@@ -26,13 +26,13 @@ public abstract class MagicSquaresInGridTestsBase<T> where T : IMagicSquaresInGr
     [DataRow(
         "[[9,9,5,1,9,5,5,7,2,5],[9,1,8,3,4,6,7,2,8,9],[4,1,1,5,9,1,5,9,6,4],[5,5,6,7,2,8,3,4,0,6],[1,9,1,8,3,1,4,2,9,4],[2,8,6,4,2,7,3,2,7,6],[9,2,5,0,7,8,2,9,5,1],[2,1,4,4,7,6,2,4,3,8],[1,2,5,3,0,5,10,8,5,2],[6,9,6,8,8,4,3,6,0,9]]",
         3)]
-    public void NumMagicSquaresInside_GivenGridJson_ReturnsCorrectMagicSquareCount(string gridJson,
+    public void NumMagicSquaresInside_WithGridInput_ReturnsCountOfMagicSquareSubgrids(string gridJson,
         int expectedResult)
     {
         // Arrange
-        var solution = new T();
-
         var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJson);
+      
+        var solution = new T();
 
         // Act
         var actualResult = solution.NumMagicSquaresInside(grid);

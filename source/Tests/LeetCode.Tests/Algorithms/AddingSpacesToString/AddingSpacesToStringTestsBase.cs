@@ -20,7 +20,7 @@ public abstract class AddingSpacesToStringTestsBase<T> where T : IAddingSpacesTo
     [DataRow("LeetcodeHelpsMeLearn", "[8,13,15]", "Leetcode Helps Me Learn")]
     [DataRow("icodeinpython", "[1,5,7,9]", "i code in py thon")]
     [DataRow("spacing", "[0,1,2,3,4,5,6]", " s p a c i n g")]
-    public void AddSpaces_WithStringAndSpacesArray_ReturnsCorrectlyFormattedString(string s, string spacesJson,
+    public void AddSpaces_WithInputStringAndSpaceIndices_ReturnsStringWithInsertedSpaces(string s, string spacesJson,
         string expectedResult)
     {
         // Arrange

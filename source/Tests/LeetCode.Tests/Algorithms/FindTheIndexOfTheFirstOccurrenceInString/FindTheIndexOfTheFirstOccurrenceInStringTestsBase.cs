@@ -19,7 +19,7 @@ public abstract class FindTheIndexOfTheFirstOccurrenceInStringTestsBase<T>
     [TestMethod]
     [DataRow("sadbutsad", "sad", 0)]
     [DataRow("leetcode", "leeto", -1)]
-    public void StrStr_WithHaystackAndNeedle_ReturnsCorrectIndexOrMinusOne(string haystack, string needle,
+    public void StrStr_WithHaystackAndNeedle_ReturnsIndexOfFirstOccurrenceOrMinusOne(string haystack, string needle,
         int expectedResult)
     {
         // Arrange

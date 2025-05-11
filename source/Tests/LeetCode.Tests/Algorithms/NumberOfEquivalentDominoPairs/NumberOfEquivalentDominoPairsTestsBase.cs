@@ -20,7 +20,7 @@ public abstract class NumberOfEquivalentDominoPairsTestsBase<T> where T : INumbe
     [DataRow("[[1,2],[2,1],[3,4],[5,6]]", 1)]
     [DataRow("[[1,2],[1,2],[1,1],[1,2],[2,2]]", 3)]
     [DataRow("[[1,1],[2,2],[1,1],[1,2],[1,2],[1,1]]", 4)]
-    public void NumEquivDominoPairs_WithDominoPairsArray_ReturnsCorrectEquivalentPairCount(string dominoesJson,
+    public void NumEquivDominoPairs_WithDominoList_ReturnsCountOfEquivalentPairs(string dominoesJson,
         int expectedResult)
     {
         // Arrange

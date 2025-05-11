@@ -20,7 +20,7 @@ public abstract class BinarySearchTestsBase<T> where T : IBinarySearch, new()
     [DataRow("[0]", 0, 0)]
     [DataRow("[-1, 0, 3, 5, 9, 12]", 9, 4)]
     [DataRow("[-1, 0, 3, 5, 9, 12]", 2, -1)]
-    public void Search_WithTargetInArray_ReturnsCorrectIndexOrMinusOne(string numsJson, int target,
+    public void Search_WithSortedArrayAndTarget_ReturnsTargetIndexOrMinusOne(string numsJson, int target,
         int expectedResult)
     {
         // Arrange

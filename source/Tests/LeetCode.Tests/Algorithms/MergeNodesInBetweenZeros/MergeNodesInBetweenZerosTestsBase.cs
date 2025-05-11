@@ -22,7 +22,7 @@ public abstract class MergeNodesInBetweenZerosTestsBase<T> where T : IMergeNodes
     [DataRow("[0,3,1,0,4,5,2,0]", "[4,11]")]
     [DataRow("[0,1,0,3,0,2,2,0]", "[1,3,4]")]
     [DataRow("[0,200,300,0,400,500,0]", "[500,900]")]
-    public void MergeNodes_WithVariousHeadArrays_ReturnsCorrectMergedNodes(string headJson,
+    public void MergeNodes_WithZeroDelimitedValues_ReturnsListWithSegmentSums(string headJson,
         string expectedResultJson)
     {
         // Arrange

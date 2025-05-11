@@ -20,7 +20,8 @@ public abstract class WordSearchTestsBase<T> where T : IWordSearch, new()
     [DataRow("[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]", "ABCCED", true)]
     [DataRow("[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]", "SEE", true)]
     [DataRow("[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]", "ABCB", false)]
-    public void Exist_GivenBoardAndWord_ReturnsExpectedBoolean(string jsonBoard, string word, bool expectedResult)
+    public void Exist_WithCharacterBoardAndWord_ReturnsTrueIfWordExistsBySequentialAdjacentCells(string jsonBoard,
+        string word, bool expectedResult)
     {
         // Arrange
         var board = JsonHelper<char>.DeserializeToJaggedArray(jsonBoard);

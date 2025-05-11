@@ -18,7 +18,7 @@ public abstract class DesignCircularDequeTestsBase<T> where T : IDesignCircularD
 {
     [TestMethod]
     [DataRow(3, "[\"true\",\"true\",\"true\",\"false\",\"2\",\"true\",\"true\",\"true\",\"4\"]")]
-    public void CircularDequeOperations_WithMultipleInsertsAndDeletions_ReturnsCorrectResults(int k,
+    public void CircularDequeOperations_WithMultipleActions_ProducesOperationResultsSequence(int k,
         string expectedResultJson)
     {
         // Arrange

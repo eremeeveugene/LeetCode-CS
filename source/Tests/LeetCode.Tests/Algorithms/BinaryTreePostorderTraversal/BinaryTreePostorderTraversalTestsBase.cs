@@ -21,7 +21,7 @@ public abstract class BinaryTreePostorderTraversalTestsBase<T> where T : IBinary
     [DataRow("[1,null,2,3]", "[3,2,1]")]
     [DataRow("[]", "[]")]
     [DataRow("[1]", "[1]")]
-    public void PostorderTraversal_WithTreeNodes_ReturnsCorrectPostorderTraversal(string rootJson,
+    public void PostorderTraversal_WithBinaryTree_ReturnsListOfValuesInPostorder(string rootJson,
         string expectedResultJson)
     {
         // Arrange

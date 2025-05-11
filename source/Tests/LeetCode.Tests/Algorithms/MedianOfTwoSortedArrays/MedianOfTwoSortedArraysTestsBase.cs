@@ -33,7 +33,7 @@ public abstract class MedianOfTwoSortedArraysTestsBase<T> where T : IMedianOfTwo
     [DataRow("[1,2,3,4,5,6]", "[7,8,9,10]", 5.5)]
     [DataRow("[-10,-5,0,5,10]", "[1,2,3,4]", 2)]
     [DataRow("[-2147483648,0,2147483647]", "[-1,1]", 0)]
-    public void FindMedianSortedArrays_GivenTwoArrays_ReturnsCorrectMedianValue(string nums1Json,
+    public void FindMedianSortedArrays_WithTwoSortedArrays_ReturnsMedianOfMergedArray(string nums1Json,
         string nums2Json, double expectedResult)
     {
         // Arrange

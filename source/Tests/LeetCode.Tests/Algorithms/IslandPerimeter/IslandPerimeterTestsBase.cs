@@ -20,7 +20,7 @@ public abstract class IslandPerimeterTestsBase<T> where T : IIslandPerimeter, ne
     [DataRow("[[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]", 16)]
     [DataRow("[[1]]", 4)]
     [DataRow("[[1,0]]", 4)]
-    public void IslandPerimeter_GivenGrid_ReturnsCorrectPerimeter(string gridJson, int expectedResult)
+    public void IslandPerimeter_WithGridInput_ReturnsCalculatedPerimeter(string gridJson, int expectedResult)
     {
         // Arrange
         var grid = JsonHelper<int>.DeserializeToJaggedArray(gridJson);

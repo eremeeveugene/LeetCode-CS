@@ -20,7 +20,7 @@ public abstract class MaximalScoreAfterApplyingKOperationsTestsBase<T>
     [TestMethod]
     [DataRow("[10,10,10,10,10]", 5, 50)]
     [DataRow("[1,10,3,3,3]", 3, 17)]
-    public void MaxKelements_WithArrayAndK_ReturnsCorrectMaxSum(string numsJson, int k, long expectedResult)
+    public void MaxKelements_WithArrayAndKOperations_ReturnsMaximumScore(string numsJson, int k, long expectedResult)
     {
         // Arrange
         var nums = JsonHelper<int>.DeserializeToArray(numsJson);

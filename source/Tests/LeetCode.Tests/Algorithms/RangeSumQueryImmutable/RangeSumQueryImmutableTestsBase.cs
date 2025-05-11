@@ -39,6 +39,6 @@ public abstract class RangeSumQueryImmutableTestsBase<T> where T : IRangeSumQuer
         }
 
         // Assert
-        CollectionAssert.AreEqual(actualResult, expectedResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

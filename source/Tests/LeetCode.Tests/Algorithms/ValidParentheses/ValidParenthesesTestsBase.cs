@@ -21,7 +21,7 @@ public abstract class ValidParenthesesTestsBase<T> where T : IValidParentheses, 
     [DataRow("(]", false)]
     [DataRow("{[]}", true)]
     [DataRow("[[[[]]]]", true)]
-    public void IsValid_GivenParentheses_ReturnsExpectedValidity(string s, bool expectedResult)
+    public void IsValid_WithBracketString_ReturnsTrueIfBracketsAreProperlyClosedAndNested(string s, bool expectedResult)
     {
         // Arrange
         var solution = new T();

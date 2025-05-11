@@ -11,6 +11,9 @@
 
 namespace LeetCode.Algorithms.GuessNumberHigherOrLower;
 
+/// <summary>
+///     https://leetcode.com/problems/guess-number-higher-or-lower/description/
+/// </summary>
 public interface IGuessNumberHigherOrLower
 {
     public int GuessNumber(int n);
