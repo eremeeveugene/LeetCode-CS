@@ -16,13 +16,13 @@ namespace LeetCode.Tests.Base.Extensions;
 [ExcludeFromCodeCoverage]
 public static class NestedCollectionAssert
 {
-    public static void AreEqual<T>(IEnumerable<IEnumerable<T>> expected, IEnumerable<IEnumerable<T>> actual)
+    public static void AreEqual<T>(IEnumerable<IEnumerable<T>> expectedResult, IEnumerable<IEnumerable<T>> actualResult)
     {
-        ArgumentNullException.ThrowIfNull(expected);
-        ArgumentNullException.ThrowIfNull(actual);
+        ArgumentNullException.ThrowIfNull(expectedResult);
+        ArgumentNullException.ThrowIfNull(actualResult);
 
-        var expectedList = expected.ToList();
-        var actualList = actual.ToList();
+        var expectedList = expectedResult.ToList();
+        var actualList = actualResult.ToList();
 
         Assert.AreEqual(expectedList.Count, actualList.Count, "The number of sublists is different.");
 
@@ -33,17 +33,18 @@ public static class NestedCollectionAssert
         }
     }
 
-    public static void AreEquivalent<T>(IEnumerable<IEnumerable<T>> expected, IEnumerable<IEnumerable<T>> actual)
+    public static void AreEquivalent<T>(IEnumerable<IEnumerable<T>> expectedResult,
+        IEnumerable<IEnumerable<T>> actualResult)
     {
-        ArgumentNullException.ThrowIfNull(expected);
-        ArgumentNullException.ThrowIfNull(actual);
+        ArgumentNullException.ThrowIfNull(expectedResult);
+        ArgumentNullException.ThrowIfNull(actualResult);
 
-        var expectedList = expected
+        var expectedList = expectedResult
             .Select(sublist => sublist.OrderBy(x => x).ToArray())
             .OrderBy(sublist => string.Join(",", sublist))
             .ToList();
 
-        var actualList = actual
+        var actualList = actualResult
             .Select(sublist => sublist.OrderBy(x => x).ToArray())
             .OrderBy(sublist => string.Join(",", sublist))
             .ToList();

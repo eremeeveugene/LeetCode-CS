@@ -25,12 +25,12 @@ public static class JsonHelper<T>
 
         var result = DeserializeElement(jsonDocument.RootElement, TargetType);
 
-        if (result is T t)
+        return result switch
         {
-            return t;
-        }
-
-        throw new JsonException($"JsonHelper<{TargetType.Name}>: could not convert JSON to {TargetType}.");
+            null when !typeof(T).IsValueType || Nullable.GetUnderlyingType(typeof(T)) is not null => default!,
+            T t => t,
+            _ => throw new JsonException($"JsonHelper<{TargetType.Name}>: could not convert JSON to {TargetType}.")
+        };
     }
 
     private static object? DeserializeElement(JsonElement jsonElement, Type type)

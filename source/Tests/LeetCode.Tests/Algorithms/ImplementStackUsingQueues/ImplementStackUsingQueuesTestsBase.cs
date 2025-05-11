@@ -77,9 +77,9 @@ public abstract class ImplementStackUsingQueuesTestsBase<T> where T : IImplement
         }
 
         // Assert
-        foreach (var expected in popExpected)
+        foreach (var expectedResult in popExpected)
         {
-            Assert.AreEqual(expected, solution.Pop());
+            Assert.AreEqual(expectedResult, solution.Pop());
         }
 
         Assert.IsTrue(solution.Empty());
