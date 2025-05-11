@@ -19,7 +19,7 @@ public abstract class SummaryRangesTestsBase<T> where T : ISummaryRanges, new()
     [TestMethod]
     [DataRow("[0,1,2,4,5,7]", "[\"0->2\",\"4->5\",\"7\"]")]
     [DataRow("[0,2,3,4,6,8,9]", "[\"0\",\"2->4\",\"6\",\"8->9\"]")]
-    public void SummaryRanges_WithSequencesOfIntegers_ReturnsCorrectStringRanges(string numsJson,
+    public void SummaryRanges_WithSortedUniqueArray_ReturnsListOfMinimalConsecutiveRanges(string numsJson,
         string expectedResultJson)
     {
         // Arrange

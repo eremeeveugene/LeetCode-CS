@@ -20,7 +20,7 @@ public abstract class SearchInsertPositionTestsBase<T> where T : ISearchInsertPo
     [DataRow("[1,3,5,6]", 2, 1)]
     [DataRow("[1,3,5,6]", 5, 2)]
     [DataRow("[1,3,5,6]", 7, 4)]
-    public void SearchInsert_WithSortedArrayAndTarget_ReturnsCorrectInsertionIndex(string numsJson, int target,
+    public void SearchInsert_WithSortedArrayAndTarget_ReturnsInsertIndexOrTargetIndex(string numsJson, int target,
         int expectedResult)
     {
         // Arrange

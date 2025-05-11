@@ -23,7 +23,7 @@ public abstract class SumOfPrefixScoresOfStringsTestsBase<T> where T : ISumOfPre
     [DataRow("[\"a\",\"b\",\"aa\",\"ab\"]", "[3,1,4,4]")]
     [DataRow("[\"abababab\",\"abab\",\"ab\",\"a\",\"babababa\",\"baba\",\"ba\",\"b\"]", "[15,11,7,4,15,11,7,4]")]
     [DataRow("[\"abababab\",\"abab\",\"ab\",\"a\",\"babababa\",\"baba\",\"ba\",\"b\"]", "[15,11,7,4,15,11,7,4]")]
-    public void SumPrefixScores_WithGivenWordsArray_ReturnsCorrectPrefixSums(string wordsJson,
+    public void SumPrefixScores_WithListOfWords_ReturnsSumOfScoresForAllPrefixesOfEachWord(string wordsJson,
         string expectedResultJson)
     {
         // Arrange

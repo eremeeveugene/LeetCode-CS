@@ -20,9 +20,8 @@ public abstract class SortTheJumbledNumbersTestsBase<T> where T : ISortTheJumble
     [DataRow("[0,1,2,3,4,5,6,7,8,9]", "[789,456,123]", "[123,456,789]")]
     [DataRow("[9,8,7,6,5,4,3,2,1,0]", "[0,1,2,3,4,5,6,7,8,9]", "[9,8,7,6,5,4,3,2,1,0]")]
     [DataRow("[8,9,4,0,2,1,3,5,7,6]", "[991,338,38]", "[338,38,991]")]
-    public void SortJumbled_WithGivenMappingAndNumbers_ReturnsCorrectOrder(string mappingJson,
-        string numsJson,
-        string expectedResultJson)
+    public void SortJumbled_WithDigitMappingAndNumbers_SortsNumsByMappedValuePreservingRelativeOrder(string mappingJson,
+        string numsJson, string expectedResultJson)
     {
         // Arrange
         var mapping = JsonHelper<int[]>.Parse(mappingJson);

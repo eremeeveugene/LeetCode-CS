@@ -19,7 +19,7 @@ public abstract class SpecialArray2TestsBase<T> where T : ISpecialArray2, new()
     [TestMethod]
     [DataRow("[3,4,1,2,6]", "[[0,4]]", "[false]")]
     [DataRow("[4,3,1,6]", "[[0,2],[2,3]]", "[false,true]")]
-    public void IsArraySpecial_WithNumsAndQueries_ReturnsCorrectBooleanArray(string numsJson,
+    public void IsArraySpecial_WithSubarrayQueries_ReturnsWhetherEachSubarrayHasAlternatingParity(string numsJson,
         string queriesJson, string expectedResultJson)
     {
         // Arrange

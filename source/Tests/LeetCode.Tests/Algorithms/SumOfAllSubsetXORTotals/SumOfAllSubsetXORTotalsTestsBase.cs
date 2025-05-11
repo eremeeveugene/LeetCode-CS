@@ -20,7 +20,7 @@ public abstract class SumOfAllSubsetXORTotalsTestsBase<T> where T : ISumOfAllSub
     [DataRow("[1,3]", 6)]
     [DataRow("[5,1,6]", 28)]
     [DataRow("[3,4,5,6,7,8]", 480)]
-    public void SubsetXORSum_GivenVariousArrays_ReturnsCorrectXorSum(string numsJson, int expectedResult)
+    public void SubsetXORSum_WithIntegerArray_ReturnsSumOfXORTotalsForAllSubsets(string numsJson, int expectedResult)
     {
         // Arrange
         var nums = JsonHelper<int[]>.Parse(numsJson);
