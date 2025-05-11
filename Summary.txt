@@ -1,25 +1,25 @@
 Summary
-  Generated on: 5/10/2025 - 2:35:08 PM
-  Coverage date: 5/10/2025 - 2:34:12 PM - 5/10/2025 - 2:34:32 PM
+  Generated on: 5/11/2025 - 6:38:46 PM
+  Coverage date: 5/11/2025 - 6:37:39 PM - 5/11/2025 - 6:37:58 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 925
-  Files: 925
-  Line coverage: 97.9%
-  Covered lines: 19269
-  Uncovered lines: 401
-  Coverable lines: 19670
-  Total lines: 49605
-  Branch coverage: 95.8% (7156 of 7465)
-  Covered branches: 7156
-  Total branches: 7465
-  Method coverage: 99.3% (1305 of 1314)
-  Full method coverage: 89.4% (1176 of 1314)
-  Covered methods: 1305
-  Fully covered methods: 1176
-  Total methods: 1314
+  Classes: 907
+  Files: 907
+  Line coverage: 97.6%
+  Covered lines: 19307
+  Uncovered lines: 470
+  Coverable lines: 19777
+  Total lines: 49508
+  Branch coverage: 95.4% (7205 of 7552)
+  Covered branches: 7205
+  Total branches: 7552
+  Method coverage: 98.9% (1290 of 1304)
+  Full method coverage: 88.5% (1155 of 1304)
+  Covered methods: 1290
+  Fully covered methods: 1155
+  Total methods: 1304
 
-LeetCode                                                                                                                                               97.9%
+LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                    100%
@@ -206,23 +206,15 @@ LeetCode                                                                        
   LeetCode.Algorithms.DeleteNodesAndReturnForest.DeleteNodesAndReturnForestDepthFirstSearchRecursive                                                    100%
   LeetCode.Algorithms.DeleteNodesAndReturnForest.DeleteNodesAndReturnForestDepthFirstSearchStack                                                        100%
   LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArray                                                                                  100%
-  LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArrayFactory                                                                           100%
-  LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedList                                                                                62.3%
-  LeetCode.Algorithms.DesignCircularDeque.GuessNumberHigherOrLowerFactory                                                                               100%
-  LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedList                                                                                88.8%
-  LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedListFactory                                                                          100%
+  LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedList                                                                                63.5%
+  LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedList                                                                                72.2%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueLinkedList                                                                  73.8%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueList                                                                        90.4%
-  LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceBruteForce                                                                      98.1%
-  LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceBruteForceFactory                                                                100%
+  LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceBruteForce                                                                      98.2%
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceDictionary                                                                       100%
-  LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceDictionaryFactory                                                                100%
   LeetCode.Algorithms.DesignNumberContainerSystem.DesignNumberContainerSystemDictionary                                                                83.8%
-  LeetCode.Algorithms.DesignNumberContainerSystem.DesignNumberContainerSystemFactoryDictionary                                                          100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArray                                                          100%
-  LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArrayFactory                                                   100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedList                                                     100%
-  LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedListFactory                                              100%
   LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict.DetermineIfTwoEventsHaveConflictNumberComparison                                                 100%
   LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict.DetermineIfTwoEventsHaveConflictStringComparison                                                 100%
   LeetCode.Algorithms.DiameterOfBinaryTree.DiameterOfBinaryTreeDepthFirst                                                                               100%
@@ -282,9 +274,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchRecursive    100%
   LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStack       91.1%
   LeetCode.Algorithms.FindElementsInContaminatedBinaryTree.FindElementsInContaminatedBinaryTreeDepthFirstSearch                                         100%
-  LeetCode.Algorithms.FindElementsInContaminatedBinaryTree.FindElementsInContaminatedBinaryTreeDepthFirstSearchFactory                                  100%
   LeetCode.Algorithms.FindElementsInContaminatedBinaryTree.FindElementsInContaminatedBinaryTreeHashSet                                                  100%
-  LeetCode.Algorithms.FindElementsInContaminatedBinaryTree.FindElementsInContaminatedBinaryTreeHashSetFactory                                           100%
   LeetCode.Algorithms.FindIfArrayCanBeSorted.FindIfArrayCanBeSortedBubbleSort                                                                           100%
   LeetCode.Algorithms.FindIfArrayCanBeSorted.FindIfArrayCanBeSortedTwoPass                                                                             94.4%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphBreadthFirstSearch                                                                93.9%
@@ -363,7 +353,6 @@ LeetCode                                                                        
   LeetCode.Algorithms.GridGame.GridGamePrefixSum                                                                                                        100%
   LeetCode.Algorithms.GuessNumberHigherOrLower.GuessNumberHigherOrLower                                                                                 100%
   LeetCode.Algorithms.GuessNumberHigherOrLower.GuessNumberHigherOrLowerBinarySearch                                                                     100%
-  LeetCode.Algorithms.GuessNumberHigherOrLower.GuessNumberHigherOrLowerBinarySearchFactory                                                              100%
   LeetCode.Algorithms.HandOfStraights.HandOfStraightsDictionary                                                                                         100%
   LeetCode.Algorithms.HandOfStraights.HandOfStraightsSortedDictionary                                                                                   100%
   LeetCode.Algorithms.HappyNumber.HappyNumberHashSetChars                                                                                               100%
@@ -403,11 +392,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesLinq                                                                                               100%
   LeetCode.Algorithms.KthDistinctStringInAnArray.KthDistinctStringInAnArrayDictionary                                                                   100%
   LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamPriorityQueue                                                                  100%
-  LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamPriorityQueueFactory                                                           100%
   LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedArray                                                                    100%
-  LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedArrayFactory                                                             100%
   LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedList                                                                     100%
-  LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedListFactory                                                              100%
   LeetCode.Algorithms.KthLargestSumInBinaryTree.KthLargestSumInBinaryTreeBreadthFirstSearch                                                            93.7%
   LeetCode.Algorithms.KthSmallestInLexicographicalOrder.KthSmallestInLexicographicalOrderPrefixTree                                                     100%
   LeetCode.Algorithms.KthSmallestPrimeFraction.KthSmallestPrimeFractionBinarySearch                                                                     100%
@@ -693,7 +679,6 @@ LeetCode                                                                        
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoRecursive                                                                                                    100%
   LeetCode.Algorithms.PrimeSubtractionOperation.PrimeSubtractionOperationIterative                                                                      100%
   LeetCode.Algorithms.ProductOfTheLastKNumbers.ProductOfTheLastKNumbersPrefixSum                                                                        100%
-  LeetCode.Algorithms.ProductOfTheLastKNumbers.ProductOfTheLastKNumbersPrefixSumFactory                                                                 100%
   LeetCode.Algorithms.PushDominoes.PushDominoesForceArray                                                                                               100%
   LeetCode.Algorithms.PushDominoes.PushDominoesTwoPointers                                                                                              100%
   LeetCode.Algorithms.RabbitsInForest.RabbitsInForestFrequencyArray                                                                                     100%
@@ -702,10 +687,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTDepthFirstSearchRecursive                                                                             89.4%
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTDepthFirstSearchStack                                                                                   92%
   LeetCode.Algorithms.RangeSumOfSortedSubarraySums.RangeSumOfSortedSubarraySumsBruteForce                                                               100%
-  LeetCode.Algorithms.RangeSumQueryImmutable.RangeSumQueryImmutableBruteForce                                                                           100%
-  LeetCode.Algorithms.RangeSumQueryImmutable.RangeSumQueryImmutableBruteForceFactory                                                                    100%
+  LeetCode.Algorithms.RangeSumQueryImmutable.RangeSumQueryImmutableBruteForce                                                                             0%
   LeetCode.Algorithms.RangeSumQueryImmutable.RangeSumQueryImmutablePrefixSum                                                                            100%
-  LeetCode.Algorithms.RangeSumQueryImmutable.RangeSumQueryImmutablePrefixSumFactory                                                                     100%
   LeetCode.Algorithms.RankTransformOfAnArray.RankTransformOfAnArrayDictionary                                                                           100%
   LeetCode.Algorithms.RansomNote.RansomNoteCounting                                                                                                     100%
   LeetCode.Algorithms.RansomNote.RansomNoteDictionary                                                                                                   100%
@@ -932,7 +915,6 @@ LeetCode                                                                        
   LeetCode.Algorithms.XORQueriesOfSubarray.XORQueriesOfSubarrayPrefixArray                                                                              100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLockFactory                                                                    100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
@@ -940,8 +922,8 @@ LeetCode                                                                        
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                    100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             100%
 
-LeetCode.Core                                                                                                                                           100%
-  LeetCode.Core.Helpers.JsonHelper<T>                                                                                                                   100%
+LeetCode.Core                                                                                                                                          80.4%
+  LeetCode.Core.Helpers.JsonHelper<T>                                                                                                                  64.7%
   LeetCode.Core.Helpers.JsonHelperOptions                                                                                                               100%
   LeetCode.Core.Models.ListNode                                                                                                                         100%
   LeetCode.Core.Models.Node                                                                                                                             100%
