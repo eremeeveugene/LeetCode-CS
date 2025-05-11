@@ -10,131 +10,207 @@
 // --------------------------------------------------------------------------------
 
 using System.Collections;
+using System.Globalization;
 using System.Text.Json;
 
 namespace LeetCode.Core.Helpers;
 
 public static class JsonHelper<T>
 {
+    private static readonly Type TargetType = typeof(T);
+
     public static T Parse(string json)
     {
-        using var doc = JsonDocument.Parse(json, JsonHelperOptions.JsonDocumentOptions);
-        var result = ParseElement(typeof(T), doc.RootElement);
+        using var jsonDocument = JsonDocument.Parse(json, JsonHelperOptions.JsonDocumentOptions);
+
+        var result = DeserializeElement(jsonDocument.RootElement, TargetType);
+
         if (result is T t)
         {
             return t;
         }
 
-        throw new JsonException($"Failed to convert JSON to {typeof(T)}.");
+        throw new JsonException($"JsonHelper<{TargetType.Name}>: could not convert JSON to {TargetType}.");
     }
 
-    private static object? ParseElement(Type targetType, JsonElement element)
+    private static object? DeserializeElement(JsonElement jsonElement, Type type)
     {
-        if (targetType.IsGenericType &&
-            targetType.GetGenericTypeDefinition() == typeof(Nullable<>))
+        if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
         {
-            var inner = Nullable.GetUnderlyingType(targetType)!;
-            return element.ValueKind == JsonValueKind.Null
-                ? null
-                : ParseElement(inner, element);
+            if (jsonElement.ValueKind == JsonValueKind.Null)
+            {
+                return null;
+            }
+
+            type = Nullable.GetUnderlyingType(type)!;
         }
 
-        if (targetType == typeof(object))
+        if (type == typeof(object))
         {
-            return ConvertElement(element);
+            return ConvertElement(jsonElement);
         }
 
-        if (targetType.IsArray)
+        if (IsPrimitiveType(type))
         {
-            if (element.ValueKind != JsonValueKind.Array)
-            {
-                throw new JsonException($"Expected JSON array for type {targetType}.");
-            }
-
-            var elemType = targetType.GetElementType()!;
-            var items = element.EnumerateArray()
-                .Select(e => ParseElement(elemType, e))
-                .ToArray();
-
-            var arr = Array.CreateInstance(elemType, items.Length);
-            for (var i = 0; i < items.Length; i++)
-            {
-                arr.SetValue(items[i], i);
-            }
-
-            return arr;
+            return ConvertToPrimitive(jsonElement, type);
         }
 
-        // 4) IDictionary<string, U>
-        if (targetType.IsGenericType &&
-            targetType.GetGenericTypeDefinition() == typeof(IDictionary<,>))
+        if (type.IsArray)
         {
-            var args = targetType.GetGenericArguments();
-            if (args[0] != typeof(string))
-            {
-                throw new NotSupportedException("Only string-keyed dictionaries are supported.");
-            }
-
-            var valType = args[1];
-            if (element.ValueKind != JsonValueKind.Object)
-            {
-                throw new JsonException($"Expected JSON object for type {targetType}.");
-            }
-
-            var dict = (IDictionary)Activator.CreateInstance(targetType)!;
-            foreach (var prop in element.EnumerateObject())
-            {
-                var v = ParseElement(valType, prop.Value);
-                dict.Add(prop.Name, v);
-            }
-
-            return dict;
+            return DeserializeArray(jsonElement, type.GetElementType()!);
         }
 
-        // 5) fallback to System.Text.Json with trailing-comma support
-        return JsonSerializer
-                   .Deserialize(element.GetRawText(), targetType, JsonHelperOptions.JsonSerializerOptions)
-               ?? throw new JsonException($"Unable to deserialize to {targetType}.");
+        if (IsListType(type, out var itemType))
+        {
+            return DeserializeList(jsonElement, type, itemType);
+        }
+
+        if (IsDictionaryType(type, out var valueType))
+        {
+            return DeserializeDictionary(jsonElement, type, valueType);
+        }
+
+        return JsonSerializer.Deserialize(jsonElement.GetRawText(), type, JsonHelperOptions.JsonSerializerOptions) ??
+               throw new JsonException($"Unable to deserialize JSON to {type}.");
     }
 
-    private static object? ConvertElement(JsonElement el)
+    private static bool IsPrimitiveType(Type type)
     {
-        return el.ValueKind switch
+        return type == typeof(string) ||
+               type == typeof(bool) ||
+               type == typeof(int) ||
+               type == typeof(long) ||
+               type == typeof(double) ||
+               type == typeof(decimal);
+    }
+
+    private static object? ConvertToPrimitive(JsonElement jsonElement, Type type)
+    {
+        return type switch
         {
-            JsonValueKind.Object => ConvertObject(el),
-            JsonValueKind.Array => el.EnumerateArray().Select(ConvertElement).ToArray(),
-            JsonValueKind.String => el.GetString(),
-            JsonValueKind.Number => ConvertNumber(el),
-            JsonValueKind.True => true,
-            JsonValueKind.False => false,
-            JsonValueKind.Null => null,
-            _ => throw new NotSupportedException($"Unsupported JSON kind: {el.ValueKind}")
+            _ when type == typeof(string) => jsonElement.GetString(),
+            _ when type == typeof(bool) => jsonElement.GetBoolean(),
+            _ when type == typeof(int) => jsonElement.GetInt32(),
+            _ when type == typeof(long) => jsonElement.GetInt64(),
+            _ when type == typeof(double) => jsonElement.GetDouble(),
+            _ when type == typeof(decimal) => jsonElement.GetDecimal(),
+            _ => Convert.ChangeType(ConvertElement(jsonElement), type, CultureInfo.InvariantCulture)
         };
     }
 
-    private static object ConvertNumber(JsonElement el)
+    private static Array DeserializeArray(JsonElement jsonElement, Type type)
     {
-        if (el.TryGetInt32(out var i))
+        if (jsonElement.ValueKind != JsonValueKind.Array)
         {
-            return i;
+            throw new JsonException($"Expected JSON array for {type}[]");
         }
 
-        if (el.TryGetInt64(out var l))
+        var items = jsonElement.EnumerateArray()
+            .Select(item => DeserializeElement(item, type))
+            .ToArray();
+
+        var array = Array.CreateInstance(type, items.Length);
+
+        for (var i = 0; i < items.Length; i++)
         {
-            return l;
+            array.SetValue(items[i], i);
         }
 
-        return el.GetDouble();
+        return array;
     }
 
-    private static IDictionary<string, object?> ConvertObject(JsonElement el)
+    private static IList DeserializeList(JsonElement jsonElement, Type listType, Type itemType)
     {
-        var d = new Dictionary<string, object?>();
-        foreach (var p in el.EnumerateObject())
+        if (jsonElement.ValueKind != JsonValueKind.Array)
         {
-            d[p.Name] = ConvertElement(p.Value);
+            throw new JsonException($"Expected JSON array for {listType.Name}");
         }
 
-        return d;
+        var list = (IList)Activator.CreateInstance(listType)!;
+
+        foreach (var item in jsonElement.EnumerateArray())
+        {
+            list.Add(DeserializeElement(item, itemType));
+        }
+
+        return list;
+    }
+
+    private static IDictionary DeserializeDictionary(JsonElement jsonElement, Type dictionaryType, Type valueType)
+    {
+        if (jsonElement.ValueKind != JsonValueKind.Object)
+        {
+            throw new JsonException($"Expected JSON object for {dictionaryType.Name}");
+        }
+
+        var dictionary = (IDictionary)Activator.CreateInstance(dictionaryType)!;
+
+        foreach (var property in jsonElement.EnumerateObject())
+        {
+            var value = DeserializeElement(property.Value, valueType);
+
+            dictionary.Add(property.Name, value);
+        }
+
+        return dictionary;
+    }
+
+    private static object? ConvertElement(JsonElement jsonElement)
+    {
+        return jsonElement.ValueKind switch
+        {
+            JsonValueKind.Object => jsonElement.EnumerateObject()
+                .ToDictionary(p => p.Name, p => ConvertElement(p.Value)),
+            JsonValueKind.Array => jsonElement.EnumerateArray()
+                .Select(ConvertElement)
+                .ToArray(),
+            JsonValueKind.String => jsonElement.GetString(),
+            JsonValueKind.Number => jsonElement.TryGetInt32(out var i) ? i
+                : jsonElement.TryGetInt64(out var l) ? l
+                : jsonElement.TryGetDecimal(out var d) ? d
+                : jsonElement.GetDouble(),
+            JsonValueKind.True => true,
+            JsonValueKind.False => false,
+            JsonValueKind.Null => null,
+            JsonValueKind.Undefined => throw new JsonException(
+                "Encountered undefined JSON element—likely a missing property or uninitialized JsonElement"),
+            _ => throw new NotSupportedException($"Unsupported JSON kind: {jsonElement.ValueKind}")
+        };
+    }
+
+    private static bool IsListType(Type type, out Type itemType)
+    {
+        var iListType = type.GetInterfaces()
+            .FirstOrDefault(i => i.IsGenericType && i.GetGenericTypeDefinition() == typeof(IList<>));
+
+        if (iListType != null)
+        {
+            itemType = iListType.GetGenericArguments()[0];
+
+            return true;
+        }
+
+        itemType = null!;
+
+        return false;
+    }
+
+    private static bool IsDictionaryType(Type type, out Type valueType)
+    {
+        var iDictionaryType = type.GetInterfaces()
+            .FirstOrDefault(i => i.IsGenericType && i.GetGenericTypeDefinition() == typeof(IDictionary<,>));
+
+        if (iDictionaryType != null)
+        {
+            var args = iDictionaryType.GetGenericArguments();
+
+            valueType = args[1];
+
+            return true;
+        }
+
+        valueType = null!;
+
+        return false;
     }
 }
