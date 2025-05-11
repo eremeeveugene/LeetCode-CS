@@ -19,109 +19,91 @@ namespace LeetCode.Core.Helpers;
 /// </summary>
 public static class JsonHelper<T>
 {
-    /// <summary>
-    ///     Deserializes the JSON in <paramref name="json" /> to a jagged array of <see cref="T" />[][].
-    /// </summary>
-    /// <param name="json"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    /// <exception cref="JsonException"></exception>
-    public static T[][] DeserializeToJaggedArray(string json)
+    // allow trailing commas in all JsonDocument parsing
+    private static readonly JsonDocumentOptions DocumentOptions = new JsonDocumentOptions
     {
-        return JsonSerializer.Deserialize<T[][]>(json, JsonHelperOptions.Options)
-               ?? throw new JsonException("Failed to deserialize JSON jagged array.");
-    }
+        AllowTrailingCommas = true
+    };
 
-    /// <summary>
-    ///     Deserializes the JSON in <paramref name="json" /> to a jagged list of <see cref="T" /> (`IList&lt;IList&lt;T&gt;
-    ///     &gt;`).
-    /// </summary>
-    /// <param name="json"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    /// <exception cref="JsonException"></exception>
-    public static IList<IList<T>> DeserializeToJaggedList(string json)
-    {
-        return JsonSerializer.Deserialize<IList<IList<T>>>(json, JsonHelperOptions.Options)
-               ?? throw new JsonException("Failed to deserialize JSON jagged list.");
-    }
-
-    private static readonly JsonSerializerOptions Options = JsonHelperOptions.Options;
+    // clone your existing options and also allow trailing commas during JsonSerializer.Deserialize
+    private static readonly JsonSerializerOptions SerializerOptions =
+        new JsonSerializerOptions(JsonHelperOptions.Options)
+        {
+            AllowTrailingCommas = true
+        };
 
     /// <summary>
     ///     Deserializes a JSON string to the specified type <typeparamref name="T"/>.
-    ///     Supports primitives, strings, Nullable<T>, any jagged arrays, IDictionary<string, U>,
-    ///     and falls back to System.Text.Json for other types.
+    ///     Supports primitives, strings, Nullable<T>, any jagged arrays,
+    ///     IDictionary&lt;string, U&gt;, and falls back to System.Text.Json for other types.
+    ///     Trailing commas are permitted.
     /// </summary>
     public static T Parse(string json)
     {
-        using var doc = JsonDocument.Parse(json);
+        using var doc = JsonDocument.Parse(json, DocumentOptions);
         object? result = ParseElement(typeof(T), doc.RootElement);
         if (result is T t)
             return t;
-
         throw new JsonException($"Failed to convert JSON to {typeof(T)}.");
     }
 
     private static object? ParseElement(Type targetType, JsonElement element)
     {
-        // 1. Nullable<T> support
+        // 1) Nullable<T>
         if (targetType.IsGenericType &&
             targetType.GetGenericTypeDefinition() == typeof(Nullable<>))
         {
-            Type innerType = Nullable.GetUnderlyingType(targetType)!;
-            if (element.ValueKind == JsonValueKind.Null)
-                return null;
-            return ParseElement(innerType, element);
+            Type inner = Nullable.GetUnderlyingType(targetType)!;
+            return element.ValueKind == JsonValueKind.Null
+                ? null
+                : ParseElement(inner, element);
         }
 
-        // 2. Dynamic (object) fallback
+        // 2) object → dynamic fallback
         if (targetType == typeof(object))
             return ConvertElement(element);
 
-        // 3. Jagged or multidimensional arrays of any rank
+        // 3) arrays (including jagged)
         if (targetType.IsArray)
         {
             if (element.ValueKind != JsonValueKind.Array)
                 throw new JsonException($"Expected JSON array for type {targetType}.");
 
             Type elemType = targetType.GetElementType()!;
-            var items = element
-                .EnumerateArray()
-                .Select(e => ParseElement(elemType, e))
-                .ToArray();
+            var items = element.EnumerateArray()
+                               .Select(e => ParseElement(elemType, e))
+                               .ToArray();
 
             var arr = Array.CreateInstance(elemType, items.Length);
             for (int i = 0; i < items.Length; i++)
                 arr.SetValue(items[i], i);
-
             return arr;
         }
 
-        // 4. IDictionary<string, U>
+        // 4) IDictionary<string, U>
         if (targetType.IsGenericType &&
             targetType.GetGenericTypeDefinition() == typeof(IDictionary<,>))
         {
-            Type[] args = targetType.GetGenericArguments();
+            var args = targetType.GetGenericArguments();
             if (args[0] != typeof(string))
-                throw new NotSupportedException("Only string keys are supported for dictionaries.");
+                throw new NotSupportedException("Only string-keyed dictionaries are supported.");
 
-            Type valueType = args[1];
+            Type valType = args[1];
             if (element.ValueKind != JsonValueKind.Object)
                 throw new JsonException($"Expected JSON object for type {targetType}.");
 
             var dict = (IDictionary)Activator.CreateInstance(targetType)!;
             foreach (var prop in element.EnumerateObject())
             {
-                object? val = ParseElement(valueType, prop.Value);
-                dict.Add(prop.Name, val);
+                object? v = ParseElement(valType, prop.Value);
+                dict.Add(prop.Name, v);
             }
             return dict;
         }
 
-        // 5. Everything else: let System.Text.Json deserialize
+        // 5) fallback to System.Text.Json with trailing-comma support
         return JsonSerializer
-            .Deserialize(element.GetRawText(), targetType, Options)
+            .Deserialize(element.GetRawText(), targetType, SerializerOptions)
             ?? throw new JsonException($"Unable to deserialize to {targetType}.");
     }
 
@@ -140,16 +122,16 @@ public static class JsonHelper<T>
 
     private static object ConvertNumber(JsonElement el)
     {
-        if (el.TryGetInt32(out int i)) return i;
-        if (el.TryGetInt64(out long l)) return l;
+        if (el.TryGetInt32(out var i)) return i;
+        if (el.TryGetInt64(out var l)) return l;
         return el.GetDouble();
     }
 
     private static IDictionary<string, object?> ConvertObject(JsonElement el)
     {
-        var dict = new Dictionary<string, object?>();
-        foreach (var prop in el.EnumerateObject())
-            dict[prop.Name] = ConvertElement(prop.Value);
-        return dict;
+        var d = new Dictionary<string, object?>();
+        foreach (var p in el.EnumerateObject())
+            d[p.Name] = ConvertElement(p.Value);
+        return d;
     }
 }

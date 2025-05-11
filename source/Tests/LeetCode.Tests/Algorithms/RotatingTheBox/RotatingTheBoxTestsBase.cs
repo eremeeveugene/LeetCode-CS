@@ -26,8 +26,8 @@ public abstract class RotatingTheBoxTestsBase<T> where T : IRotatingTheBox, new(
     public void RotateTheBox_WithJaggedArrayInput_ReturnsRotatedBox(string boxJson, string expectedResultJson)
     {
         // Arrange
-        var box = JsonHelper<char>.DeserializeToJaggedArray(boxJson);
-        var expectedResult = JsonHelper<char>.DeserializeToJaggedArray(expectedResultJson);
+        var box = JsonHelper<char[][]>.Parse(boxJson);
+        var expectedResult = JsonHelper<char[][]>.Parse(expectedResultJson);
 
         var solution = new T();
 

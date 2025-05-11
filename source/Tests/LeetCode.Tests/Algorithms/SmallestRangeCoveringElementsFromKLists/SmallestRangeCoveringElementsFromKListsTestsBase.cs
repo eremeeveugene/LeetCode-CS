@@ -25,7 +25,7 @@ public abstract class SmallestRangeCoveringElementsFromKListsTestsBase<T>
         string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int>.DeserializeToJaggedList(numsJson);
+        var nums = JsonHelper<IList<IList<int>>>.Parse(numsJson);
         var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();

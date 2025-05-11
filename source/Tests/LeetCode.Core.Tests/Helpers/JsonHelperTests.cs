@@ -51,7 +51,7 @@ public class JsonHelperTests
     //    var expectedResult = new[] { new[] { 1, 2 }, [3, 4] };
 
     //    // Act
-    //    var actualResult = JsonHelper<int>.DeserializeToJaggedList("[[1,2],[3,4]]");
+    //    var actualResult = JsonHelper<IList<IList<int>>>.Parse("[[1,2],[3,4]]");
 
     //    // Assert
     //    NestedCollectionAssert.AreEqual(expectedResult, actualResult);
@@ -72,6 +72,6 @@ public class JsonHelperTests
     //[TestMethod]
     //public void DeserializeToJaggedList_InvalidJson_ThrowsJsonException()
     //{
-    //    Assert.ThrowsExactly<JsonException>(() => JsonHelper<int>.DeserializeToJaggedList("invalid"));
+    //    Assert.ThrowsExactly<JsonException>(() => JsonHelper<IList<IList<int>>>.Parse("invalid"));
     //}
 }

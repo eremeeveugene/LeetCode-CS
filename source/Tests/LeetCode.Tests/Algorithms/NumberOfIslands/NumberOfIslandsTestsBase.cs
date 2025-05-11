@@ -26,7 +26,7 @@ public abstract class NumberOfIslandsTestsBase<T> where T : INumberOfIslands, ne
     public void NumIslands_GivenJaggedArrayGrid_ReturnsNumberOfIslands(string gridJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<char>.DeserializeToJaggedArray(gridJson);
+        var grid = JsonHelper<char[][]>.Parse(gridJson);
 
         var solution = new T();
 
