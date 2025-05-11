@@ -17,7 +17,10 @@ namespace LeetCode.Concurrency.FizzBuzzMultithreaded;
 public interface IFizzBuzzMultithreaded
 {
     void Fizz(Action printFizz);
+
     void Buzz(Action printBuzz);
+
     void Fizzbuzz(Action printFizzBuzz);
+
     void Number(Action<int> printNumber);
 }

@@ -12,22 +12,28 @@
 namespace LeetCode.Concurrency.FizzBuzzMultithreaded;
 
 /// <inheritdoc />
-public class FizzBuzzMultithreadedMonitorLock(int length) : IFizzBuzzMultithreaded
+public class FizzBuzzMultithreadedMonitorLock : IFizzBuzzMultithreaded
 {
     private readonly object _lock = new();
+    private readonly int _n;
     private int _number = 1;
+
+    public FizzBuzzMultithreadedMonitorLock(int n)
+    {
+        _n = n;
+    }
 
     public void Fizz(Action printFizz)
     {
         lock (_lock)
         {
-            while (_number <= length)
+            while (_number <= _n)
             {
-                while (_number <= length && (_number % 3 != 0 || _number % 5 == 0))
+                while (_number <= _n && (_number % 3 != 0 || _number % 5 == 0))
                 {
                     Monitor.Wait(_lock);
 
-                    if (_number > length)
+                    if (_number > _n)
                     {
                         return;
                     }
@@ -44,13 +50,13 @@ public class FizzBuzzMultithreadedMonitorLock(int length) : IFizzBuzzMultithread
     {
         lock (_lock)
         {
-            while (_number <= length)
+            while (_number <= _n)
             {
                 while (_number % 3 == 0 || _number % 5 != 0)
                 {
                     Monitor.Wait(_lock);
 
-                    if (_number > length)
+                    if (_number > _n)
                     {
                         return;
                     }
@@ -67,13 +73,13 @@ public class FizzBuzzMultithreadedMonitorLock(int length) : IFizzBuzzMultithread
     {
         lock (_lock)
         {
-            while (_number <= length)
+            while (_number <= _n)
             {
                 while (_number % 3 != 0 || _number % 5 != 0)
                 {
                     Monitor.Wait(_lock);
 
-                    if (_number > length)
+                    if (_number > _n)
                     {
                         return;
                     }
@@ -90,13 +96,13 @@ public class FizzBuzzMultithreadedMonitorLock(int length) : IFizzBuzzMultithread
     {
         lock (_lock)
         {
-            while (_number <= length)
+            while (_number <= _n)
             {
                 while (_number % 3 == 0 || _number % 5 == 0)
                 {
                     Monitor.Wait(_lock);
 
-                    if (_number > length)
+                    if (_number > _n)
                     {
                         return;
                     }
