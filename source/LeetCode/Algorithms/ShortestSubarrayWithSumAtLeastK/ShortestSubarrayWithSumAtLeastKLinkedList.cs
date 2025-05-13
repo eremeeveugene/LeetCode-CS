@@ -34,7 +34,7 @@ public class ShortestSubarrayWithSumAtLeastKLinkedList : IShortestSubarrayWithSu
 
         var minLength = nums.Length + 1;
 
-        for (var i = 0; i <= nums.Length; i++)
+        for (var i = 0; i < prefixSum.Length; i++)
         {
             while (linkedList is { Count: > 0, First: not null } &&
                    prefixSum[i] - prefixSum[linkedList.First.Value] >= k)
