@@ -11,6 +11,7 @@
 
 using LeetCode.Algorithms.DesignNeighborSumService;
 using LeetCode.Core.Helpers;
+using LeetCode.Tests.Base.Exceptions;
 
 namespace LeetCode.Tests.Algorithms.DesignNeighborSumService;
 
@@ -46,6 +47,8 @@ public abstract class DesignNeighborSumServiceTestsBase
                 case DiagonalSum:
                     actualResult.Add(solution.DiagonalSum((int)arguments[i][0]));
                     break;
+                default:
+                    throw new UnexpectedMethodException(methods[i]);
             }
         }
 

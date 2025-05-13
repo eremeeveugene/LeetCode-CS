@@ -9,47 +9,38 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.ImplementTrie;
+using LeetCode.Algorithms.MyCalendar3;
 using LeetCode.Core.Helpers;
 using LeetCode.Tests.Base.Exceptions;
 
-namespace LeetCode.Tests.Algorithms.ImplementTrie;
+namespace LeetCode.Tests.Algorithms.MyCalendar3;
 
-public abstract class ImplementTrieTestsBase<T> where T : IImplementTrie, new()
+public abstract class MyCalendar3TestsBase<T> where T : IMyCalendar3, new()
 {
-    private const string Insert = "insert";
-    private const string Search = "search";
-    private const string StartsWith = "startsWith";
+    private const string Book = "book";
 
     [TestMethod]
-    [DataRow("[\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]",
-        "[\"apple\",\"apple\",\"app\",\"app\",\"app\",\"app\"]",
-        "[true,false,true,true]")]
-    public void TrieOperations_WithMultipleCommands_ReturnsActionResults(string methodsJson, string argumentsJson,
-        string expectedResultJson)
+    [DataRow("[\"book\", \"book\", \"book\", \"book\", \"book\", \"book\"]",
+        "[[10, 20], [50, 60], [10, 40], [5, 15], [5, 10], [25, 55]]", "[1, 1, 2, 3, 3, 3]")]
+    public void Book_WithOverlappingEvents_ReturnsMaxConcurrentBookingsAfterEachEvent(string methodsJson,
+        string argumentsJson, string expectedResultJson)
     {
         // Arrange
         var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var args = JsonHelper<string[]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<bool[]>.Parse(expectedResultJson);
+        var arguments = JsonHelper<int[][]>.Parse(argumentsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 
         // Act
-        var actualResult = new List<bool>();
+        var actualResult = new List<int>();
 
         for (var i = 0; i < methods.Length; i++)
         {
             switch (methods[i])
             {
-                case Insert:
-                    solution.Insert(args[i]);
-                    break;
-                case Search:
-                    actualResult.Add(solution.Search(args[i]));
-                    break;
-                case StartsWith:
-                    actualResult.Add(solution.StartsWith(args[i]));
+                case Book:
+                    actualResult.Add(solution.Book(arguments[i][0], arguments[i][1]));
                     break;
                 default:
                     throw new UnexpectedMethodException(methods[i]);
