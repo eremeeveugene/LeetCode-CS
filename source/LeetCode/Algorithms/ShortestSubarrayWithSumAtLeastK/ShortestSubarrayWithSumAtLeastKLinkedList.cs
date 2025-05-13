@@ -36,15 +36,14 @@ public class ShortestSubarrayWithSumAtLeastKLinkedList : IShortestSubarrayWithSu
 
         for (var i = 0; i < prefixSum.Length; i++)
         {
-            while (linkedList is { Count: > 0, First: not null } &&
-                   prefixSum[i] - prefixSum[linkedList.First.Value] >= k)
+            while (linkedList.First is not null && prefixSum[i] - prefixSum[linkedList.First.Value] >= k)
             {
                 minLength = Math.Min(minLength, i - linkedList.First.Value);
 
                 linkedList.RemoveFirst();
             }
 
-            while (linkedList is { Count: > 0, Last: not null } && prefixSum[i] <= prefixSum[linkedList.Last.Value])
+            while (linkedList.Last is not null && prefixSum[i] <= prefixSum[linkedList.Last.Value])
             {
                 linkedList.RemoveLast();
             }
