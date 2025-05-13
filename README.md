@@ -178,6 +178,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/description/)
 - [442. Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)
 - [445. Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/)
+- [448. Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/)
 - [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/)
 - [455. Assign Cookies](https://leetcode.com/problems/assign-cookies/description/)
 - [459. Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/description/)
