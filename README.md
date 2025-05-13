@@ -256,6 +256,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [857. Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/description/)
 - [860. Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)
 - [861. Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/description/)
+- [862. Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/description/)
 - [865. Smallest Subtree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/description/)
 - [877. Stone Game](https://leetcode.com/problems/stone-game/description/)
 - [874. Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/description/)
