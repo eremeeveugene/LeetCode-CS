@@ -1,23 +1,23 @@
 Summary
-  Generated on: 5/13/2025 - 2:19:52 PM
-  Coverage date: 5/13/2025 - 2:18:44 PM - 5/13/2025 - 2:19:02 PM
+  Generated on: 5/13/2025 - 3:04:12 PM
+  Coverage date: 5/13/2025 - 3:03:11 PM - 5/13/2025 - 3:03:30 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 908
-  Files: 908
+  Classes: 911
+  Files: 911
   Line coverage: 97.6%
-  Covered lines: 19328
+  Covered lines: 19375
   Uncovered lines: 470
-  Coverable lines: 19798
-  Total lines: 49562
-  Branch coverage: 95.4% (7211 of 7558)
-  Covered branches: 7211
-  Total branches: 7558
-  Method coverage: 98.9% (1292 of 1306)
-  Full method coverage: 88.5% (1157 of 1306)
-  Covered methods: 1292
-  Fully covered methods: 1157
-  Total methods: 1306
+  Coverable lines: 19845
+  Total lines: 49692
+  Branch coverage: 95.4% (7229 of 7576)
+  Covered branches: 7229
+  Total branches: 7576
+  Method coverage: 98.9% (1295 of 1309)
+  Full method coverage: 88.6% (1160 of 1309)
+  Covered methods: 1295
+  Fully covered methods: 1160
+  Total methods: 1309
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -259,6 +259,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindAllDuplicatesInAnArray.FindAllDuplicatesInAnArrayIterative                                                                    100%
   LeetCode.Algorithms.FindAllGroupOfFarmland.FindAllGroupOfFarmlandBruteForce                                                                           100%
   LeetCode.Algorithms.FindAllGroupOfFarmland.FindAllGroupOfFarmlandIterative                                                                            100%
+  LeetCode.Algorithms.FindAllNumbersDisappearedInArray.FindAllNumbersDisappearedInArrayHashSet                                                          100%
+  LeetCode.Algorithms.FindAllNumbersDisappearedInArray.FindAllNumbersDisappearedInArrayMarking                                                          100%
+  LeetCode.Algorithms.FindAllNumbersDisappearedInArray.FindAllNumbersDisappearedInArraySignFlipping                                                     100%
   LeetCode.Algorithms.FindBottomLeftTreeValue.FindBottomLeftTreeValueBreadthFirst                                                                       100%
   LeetCode.Algorithms.FindBottomLeftTreeValue.FindBottomLeftTreeValueDepthFirst                                                                         100%
   LeetCode.Algorithms.FindCenterOfStarGraph.FindCenterOfStarGraphDictionary                                                                            94.4%
