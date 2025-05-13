@@ -11,6 +11,7 @@
 
 using LeetCode.Algorithms.AllOneDataStructure;
 using LeetCode.Core.Helpers;
+using LeetCode.Tests.Base.Exceptions;
 
 namespace LeetCode.Tests.Algorithms.AllOneDataStructure;
 
@@ -53,6 +54,8 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
                 case GetMinKey:
                     actualResult.Add(solution.GetMinKey());
                     break;
+                default:
+                    throw new UnexpectedMethodException(methods[i]);
             }
         }
 
