@@ -1,23 +1,23 @@
 Summary
-  Generated on: 5/13/2025 - 7:35:19 PM
-  Coverage date: 5/13/2025 - 7:34:05 PM - 5/13/2025 - 7:34:23 PM
+  Generated on: 5/15/2025 - 9:39:39 AM
+  Coverage date: 5/15/2025 - 9:38:35 AM - 5/15/2025 - 9:38:53 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 912
-  Files: 912
+  Classes: 913
+  Files: 913
   Line coverage: 97.6%
-  Covered lines: 19398
+  Covered lines: 19411
   Uncovered lines: 470
-  Coverable lines: 19868
-  Total lines: 49748
-  Branch coverage: 95.4% (7243 of 7590)
-  Covered branches: 7243
-  Total branches: 7590
-  Method coverage: 98.9% (1296 of 1310)
-  Full method coverage: 88.6% (1161 of 1310)
-  Covered methods: 1296
-  Fully covered methods: 1161
-  Total methods: 1310
+  Coverable lines: 19881
+  Total lines: 49792
+  Branch coverage: 95.4% (7247 of 7594)
+  Covered branches: 7247
+  Total branches: 7594
+  Method coverage: 98.9% (1297 of 1311)
+  Full method coverage: 88.6% (1162 of 1311)
+  Covered methods: 1297
+  Fully covered methods: 1162
+  Total methods: 1311
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -437,6 +437,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubarray.LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayIterative              100%
   LeetCode.Algorithms.LongestSubarrayWithMaximumBitwiseAND.LongestSubarrayWithMaximumBitwiseANDIterative                                                100%
   LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters.LongestSubstringWithoutRepeatingCharactersSlidingWindow                                100%
+  LeetCode.Algorithms.LongestUnequalAdjacentGroupsSubsequence1.LongestUnequalAdjacentGroupsSubsequence1Greedy                                           100%
   LeetCode.Algorithms.LowestCommonAncestorOfDeepestLeaves.LowestCommonAncestorOfDeepestLeavesDepthFirstSearch                                           100%
   LeetCode.Algorithms.LuckyNumbersInMatrix.LuckyNumbersInMatrixBruteForce                                                                               100%
   LeetCode.Algorithms.MagicSquaresInGrid.MagicSquaresInGridBruteForce                                                                                   100%
