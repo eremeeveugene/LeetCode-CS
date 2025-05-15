@@ -31,9 +31,9 @@ public abstract class RemoveSubFoldersFromTheFilesystemTestsBase<T> where T : IR
         var solution = new T();
 
         // Act
-        var actualResult = solution.RemoveSubfolders(folder);
+        var actualResult = solution.RemoveSubfolders(folder).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

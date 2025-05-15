@@ -9,28 +9,29 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.ZigzagGridTraversalWithSkip;
+using LeetCode.Algorithms.LongestUnequalAdjacentGroupsSubsequence1;
 using LeetCode.Core.Helpers;
 
-namespace LeetCode.Tests.Algorithms.ZigzagGridTraversalWithSkip;
+namespace LeetCode.Tests.Algorithms.LongestUnequalAdjacentGroupsSubsequence1;
 
-public abstract class ZigzagGridTraversalWithSkipTestsBase<T> where T : IZigzagGridTraversalWithSkip, new()
+public abstract class LongestUnequalAdjacentGroupsSubsequence1TestsBase<T>
+    where T : ILongestUnequalAdjacentGroupsSubsequence1, new()
 {
     [TestMethod]
-    [DataRow("[[1,2],[3,4]]", "[1,4]")]
-    [DataRow("[[2,1],[2,1],[2,1]]", "[2,1,2]")]
-    [DataRow("[[1,2,3],[4,5,6],[7,8,9]]", "[1,3,5,7,9]")]
-    public void ZigzagTraversal_With2DGrid_ReturnsElementsInZigzagOrder(string gridJson,
-        string expectedResultJson)
+    [DataRow("[\"e\",\"a\",\"b\"]", "[0,0,1]", "[\"e\",\"b\"]")]
+    [DataRow("[\"a\",\"b\",\"c\",\"d\"]", "[1,0,1,1]", "[\"a\",\"b\",\"c\"]")]
+    public void GetLongestSubsequence_WithWordsAndGroupLabels_ReturnsLongestSubsequenceByGroupOrder(string wordsJson,
+        string groupsJson, string expectedResultJson)
     {
         // Arrange
-        var grid = JsonHelper<int[][]>.Parse(gridJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var words = JsonHelper<string[]>.Parse(wordsJson);
+        var groups = JsonHelper<int[]>.Parse(groupsJson);
+        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
 
         var solution = new T();
 
         // Act
-        var actualResult = solution.ZigzagTraversal(grid).ToArray();
+        var actualResult = solution.GetLongestSubsequence(words, groups).ToArray();
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);

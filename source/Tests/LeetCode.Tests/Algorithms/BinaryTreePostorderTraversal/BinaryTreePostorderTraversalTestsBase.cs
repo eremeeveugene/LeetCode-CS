@@ -32,10 +32,10 @@ public abstract class BinaryTreePostorderTraversalTestsBase<T> where T : IBinary
         var root = TreeNode.ToTreeNode(rootArray);
 
         // Act
-        var actualResult = solution.PostorderTraversal(root);
+        var actualResult = solution.PostorderTraversal(root).ToArray();
 
         // Assert
         Assert.IsNotNull(actualResult);
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

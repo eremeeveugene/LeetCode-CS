@@ -32,9 +32,9 @@ public abstract class BinaryTreePathsTestsBase<T> where T : IBinaryTreePaths, ne
         var root = TreeNode.ToTreeNode(rootArray);
 
         // Act
-        var actualResult = solution.BinaryTreePaths(root);
+        var actualResult = solution.BinaryTreePaths(root).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

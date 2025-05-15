@@ -33,10 +33,10 @@ public abstract class BinaryTreePreorderTraversalTestsBase<T> where T : IBinaryT
         var solution = new T();
 
         // Act
-        var actualResult = solution.PreorderTraversal(root);
+        var actualResult = solution.PreorderTraversal(root).ToArray();
 
         // Assert
         Assert.IsNotNull(actualResult);
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

@@ -29,9 +29,9 @@ public abstract class FindAllNumbersDisappearedInArrayTestsBase<T> where T : IFi
         var solution = new T();
 
         // Act
-        var actualResult = solution.FindDisappearedNumbers(nums);
+        var actualResult = solution.FindDisappearedNumbers(nums).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

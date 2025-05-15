@@ -29,9 +29,9 @@ public abstract class LargestDivisibleSubsetTestsBase<T> where T : ILargestDivis
         var solution = new T();
 
         // Act
-        var actualResult = solution.LargestDivisibleSubset(nums);
+        var actualResult = solution.LargestDivisibleSubset(nums).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

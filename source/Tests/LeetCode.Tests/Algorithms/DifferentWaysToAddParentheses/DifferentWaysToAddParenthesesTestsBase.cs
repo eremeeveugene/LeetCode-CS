@@ -32,9 +32,9 @@ public abstract class DifferentWaysToAddParenthesesTestsBase<T> where T : IDiffe
         var solution = new T();
 
         // Act
-        var actualResult = solution.DiffWaysToCompute(expression);
+        var actualResult = solution.DiffWaysToCompute(expression).ToArray();
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEquivalent(expectedResult, actualResult);
     }
 }

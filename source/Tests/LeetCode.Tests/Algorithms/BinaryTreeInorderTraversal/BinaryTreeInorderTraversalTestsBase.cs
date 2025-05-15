@@ -32,10 +32,10 @@ public abstract class BinaryTreeInorderTraversalTestsBase<T> where T : IBinaryTr
         var inputNode = TreeNode.ToTreeNode(inputArray);
 
         // Act
-        var actualResult = solution.InorderTraversal(inputNode);
+        var actualResult = solution.InorderTraversal(inputNode).ToArray();
 
         // Assert
         Assert.IsNotNull(actualResult);
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

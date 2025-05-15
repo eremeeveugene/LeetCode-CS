@@ -29,9 +29,9 @@ public abstract class SpiralMatrixTestsBase<T> where T : ISpiralMatrix, new()
         var solution = new T();
 
         // Act
-        var actualResult = solution.SpiralOrder(matrix);
+        var actualResult = solution.SpiralOrder(matrix).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

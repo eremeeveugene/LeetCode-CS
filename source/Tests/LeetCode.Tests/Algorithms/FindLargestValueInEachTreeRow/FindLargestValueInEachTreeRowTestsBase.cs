@@ -31,9 +31,9 @@ public abstract class FindLargestValueInEachTreeRowTestsBase<T> where T : IFindL
         var solution = new T();
 
         // Act
-        var actualResult = solution.LargestValues(root);
+        var actualResult = solution.LargestValues(root).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

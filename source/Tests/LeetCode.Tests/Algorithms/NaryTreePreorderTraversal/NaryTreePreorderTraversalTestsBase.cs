@@ -31,9 +31,9 @@ public abstract class NaryTreePreorderTraversalTestsBase<T> where T : INaryTreeP
         var solution = new T();
 
         // Act
-        var actualResult = solution.Preorder(root);
+        var actualResult = solution.Preorder(root).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

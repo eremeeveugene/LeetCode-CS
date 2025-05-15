@@ -30,9 +30,9 @@ public abstract class AddToArrayFormOfIntegerTestsBase<T> where T : IAddToArrayF
         var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         // Act
-        var actualResult = solution.AddToArrayForm(num, k);
+        var actualResult = solution.AddToArrayForm(num, k).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

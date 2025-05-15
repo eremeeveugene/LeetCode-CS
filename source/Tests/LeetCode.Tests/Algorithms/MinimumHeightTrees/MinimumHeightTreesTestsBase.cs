@@ -37,9 +37,9 @@ public abstract class MinimumHeightTreesTestsBase<T> where T : IMinimumHeightTre
         var solution = new T();
 
         // Act
-        var actualResult = solution.FindMinHeightTrees(n, edges);
+        var actualResult = solution.FindMinHeightTrees(n, edges).ToArray();
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEquivalent(expectedResult, actualResult);
     }
 }

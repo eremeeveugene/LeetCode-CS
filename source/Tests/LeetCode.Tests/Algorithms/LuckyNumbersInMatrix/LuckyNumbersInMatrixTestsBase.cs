@@ -30,9 +30,9 @@ public abstract class LuckyNumbersInMatrixTestsBase<T> where T : ILuckyNumbersIn
         var solution = new T();
 
         // Act
-        var actualResult = solution.LuckyNumbers(matrix);
+        var actualResult = solution.LuckyNumbers(matrix).ToArray();
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEquivalent(expectedResult, actualResult);
     }
 }

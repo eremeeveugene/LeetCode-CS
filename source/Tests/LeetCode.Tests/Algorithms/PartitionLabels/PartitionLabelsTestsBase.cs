@@ -28,9 +28,9 @@ public abstract class PartitionLabelsTestsBase<T> where T : IPartitionLabels, ne
         var solution = new T();
 
         // Act
-        var actualResult = solution.PartitionLabels(s);
+        var actualResult = solution.PartitionLabels(s).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }
