@@ -30,9 +30,9 @@ public abstract class StringMatchingInAnArrayTestsBase<T> where T : IStringMatch
         var solution = new T();
 
         // Act
-        var actualResult = solution.StringMatching(words);
+        var actualResult = solution.StringMatching(words).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

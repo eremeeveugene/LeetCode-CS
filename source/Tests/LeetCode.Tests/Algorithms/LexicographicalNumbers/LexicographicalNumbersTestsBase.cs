@@ -32,9 +32,9 @@ public abstract class LexicographicalNumbersTestsBase<T> where T : ILexicographi
         var solution = new T();
 
         // Act
-        var actualResult = solution.LexicalOrder(n);
+        var actualResult = solution.LexicalOrder(n).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

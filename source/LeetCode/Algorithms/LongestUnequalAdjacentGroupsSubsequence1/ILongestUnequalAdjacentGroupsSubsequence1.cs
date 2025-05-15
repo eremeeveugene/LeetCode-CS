@@ -9,28 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.PascalsTriangle2;
-using LeetCode.Core.Helpers;
+namespace LeetCode.Algorithms.LongestUnequalAdjacentGroupsSubsequence1;
 
-namespace LeetCode.Tests.Algorithms.PascalsTriangle2;
-
-public abstract class PascalsTriangle2TestsBase<T> where T : IPascalsTriangle2, new()
+/// <summary>
+///     https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-i/description/
+/// </summary>
+public interface ILongestUnequalAdjacentGroupsSubsequence1
 {
-    [TestMethod]
-    [DataRow(0, "[1]")]
-    [DataRow(1, "[1,1]")]
-    [DataRow(3, "[1,3,3,1]")]
-    public void GetRow_GivenRowIndex_ReturnsPascalsTriangleRow(int rowIndex, string expectedResultJson)
-    {
-        // Arrange
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
-
-        var solution = new T();
-
-        // Act
-        var actualResult = solution.GetRow(rowIndex).ToArray();
-
-        // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
-    }
+    IList<string> GetLongestSubsequence(string[] words, int[] groups);
 }

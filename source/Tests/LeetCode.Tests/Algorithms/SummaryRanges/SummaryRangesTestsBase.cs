@@ -29,9 +29,9 @@ public abstract class SummaryRangesTestsBase<T> where T : ISummaryRanges, new()
         var solution = new T();
 
         // Act
-        var actualResult = solution.SummaryRanges(nums);
+        var actualResult = solution.SummaryRanges(nums).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult.ToArray(), actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

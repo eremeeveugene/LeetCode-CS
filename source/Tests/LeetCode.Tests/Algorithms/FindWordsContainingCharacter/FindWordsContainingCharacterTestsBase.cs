@@ -30,9 +30,9 @@ public abstract class FindWordsContainingCharacterTestsBase<T> where T : IFindWo
         var solution = new T();
 
         // Act
-        var actualResult = solution.FindWordsContaining(words, x);
+        var actualResult = solution.FindWordsContaining(words, x).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult.ToArray(), actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

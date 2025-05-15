@@ -36,9 +36,9 @@ public abstract class ArithmeticSubarraysTestsBase<T> where T : IArithmeticSubar
         var solution = new T();
 
         // Act
-        var actualResult = solution.CheckArithmeticSubarrays(nums, l, r);
+        var actualResult = solution.CheckArithmeticSubarrays(nums, l, r).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

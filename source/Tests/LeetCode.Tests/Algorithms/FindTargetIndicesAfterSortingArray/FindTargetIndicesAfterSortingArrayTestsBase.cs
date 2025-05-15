@@ -31,9 +31,9 @@ public abstract class FindTargetIndicesAfterSortingArrayTestsBase<T>
         var solution = new T();
 
         // Act
-        var actualResult = solution.TargetIndices(nums, target);
+        var actualResult = solution.TargetIndices(nums, target).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

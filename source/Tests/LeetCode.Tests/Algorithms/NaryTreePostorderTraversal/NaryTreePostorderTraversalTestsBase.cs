@@ -32,9 +32,9 @@ public abstract class NaryTreePostorderTraversalTestsBase<T> where T : INaryTree
         var solution = new T();
 
         // Act
-        var actualResult = solution.Postorder(root);
+        var actualResult = solution.Postorder(root).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

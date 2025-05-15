@@ -30,9 +30,9 @@ public abstract class FindAllDuplicatesInAnArrayTestsBase<T> where T : IFindAllD
         var solution = new T();
 
         // Act
-        var actualResult = solution.FindDuplicates(nums);
+        var actualResult = solution.FindDuplicates(nums).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult.ToArray());
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }
