@@ -1,23 +1,23 @@
 Summary
-  Generated on: 5/15/2025 - 9:39:39 AM
-  Coverage date: 5/15/2025 - 9:38:35 AM - 5/15/2025 - 9:38:53 AM
+  Generated on: 5/18/2025 - 11:38:53 AM
+  Coverage date: 5/18/2025 - 11:37:48 AM - 5/18/2025 - 11:38:07 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 913
-  Files: 913
+  Classes: 915
+  Files: 915
   Line coverage: 97.6%
-  Covered lines: 19411
+  Covered lines: 19468
   Uncovered lines: 470
-  Coverable lines: 19881
-  Total lines: 49792
-  Branch coverage: 95.4% (7247 of 7594)
-  Covered branches: 7247
-  Total branches: 7594
-  Method coverage: 98.9% (1297 of 1311)
-  Full method coverage: 88.6% (1162 of 1311)
-  Covered methods: 1297
-  Fully covered methods: 1162
-  Total methods: 1311
+  Coverable lines: 19938
+  Total lines: 49919
+  Branch coverage: 95.4% (7277 of 7624)
+  Covered branches: 7277
+  Total branches: 7624
+  Method coverage: 98.9% (1299 of 1313)
+  Full method coverage: 88.6% (1164 of 1313)
+  Covered methods: 1299
+  Fully covered methods: 1164
+  Total methods: 1313
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -282,6 +282,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindIfArrayCanBeSorted.FindIfArrayCanBeSortedTwoPass                                                                             94.4%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphBreadthFirstSearch                                                                93.9%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphDepthFirstSearch                                                                  91.6%
+  LeetCode.Algorithms.FindingThreeDigitEvenNumbers.FindingThreeDigitEvenNumbersBruteForce                                                               100%
+  LeetCode.Algorithms.FindingThreeDigitEvenNumbers.FindingThreeDigitEvenNumbersFrequency                                                                100%
   LeetCode.Algorithms.FindKthBitInNthBinaryString.FindKthBitInNthBinaryStringBruteForce                                                                 100%
   LeetCode.Algorithms.FindKthBitInNthBinaryString.FindKthBitInNthBinaryStringRecursive                                                                 87.5%
   LeetCode.Algorithms.FindKthSmallestPairDistance.FindKthSmallestPairDistanceBinarySearchWithSlidingWindow                                              100%
