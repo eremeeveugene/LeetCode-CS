@@ -29,17 +29,17 @@ public class TypeOfTriangleMath : ITypeOfTriangle
     /// <returns></returns>
     public string TriangleType(int[] nums)
     {
-        if (nums[0] + nums[1] <= nums[2])
+        if (nums[0] + nums[1] <= nums[2] || nums[1] + nums[2] <= nums[0] || nums[2] + nums[0] <= nums[1])
         {
             return None;
         }
 
-        if (nums[0] == nums[2])
+        if (nums[0] == nums[1] && nums[1] == nums[2])
         {
             return Equilateral;
         }
 
-        if (nums[0] == nums[1] || nums[1] == nums[2])
+        if (nums[0] == nums[1] || nums[1] == nums[2] || nums[2] == nums[0])
         {
             return Isosceles;
         }
