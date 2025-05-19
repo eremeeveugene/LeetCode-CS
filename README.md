@@ -582,6 +582,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2997. Minimum Number of Operations to Make Array XOR Equal to K](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/description/)
 - [3005. Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/)
 - [3011. Find if Array Can Be Sorted](https://leetcode.com/problems/find-if-array-can-be-sorted/description/)
+- [3024. Type of Triangle](https://leetcode.com/problems/type-of-triangle/description/)
 - [3042. Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/description/)
 - [3043. Find the Length of the Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/description/)
 - [3066. Minimum Operations to Exceed Threshold Value II](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/description/)
