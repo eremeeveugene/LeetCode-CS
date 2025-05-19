@@ -1,23 +1,23 @@
 Summary
-  Generated on: 5/18/2025 - 11:38:53 AM
-  Coverage date: 5/18/2025 - 11:37:48 AM - 5/18/2025 - 11:38:07 AM
+  Generated on: 5/19/2025 - 10:00:50 AM
+  Coverage date: 5/19/2025 - 9:59:43 AM - 5/19/2025 - 10:00:01 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 915
-  Files: 915
+  Classes: 916
+  Files: 916
   Line coverage: 97.6%
-  Covered lines: 19468
+  Covered lines: 19480
   Uncovered lines: 470
-  Coverable lines: 19938
-  Total lines: 49919
-  Branch coverage: 95.4% (7277 of 7624)
-  Covered branches: 7277
-  Total branches: 7624
-  Method coverage: 98.9% (1299 of 1313)
-  Full method coverage: 88.6% (1164 of 1313)
-  Covered methods: 1299
-  Fully covered methods: 1164
-  Total methods: 1313
+  Coverable lines: 19950
+  Total lines: 49966
+  Branch coverage: 95.4% (7293 of 7640)
+  Covered branches: 7293
+  Total branches: 7640
+  Method coverage: 98.9% (1300 of 1314)
+  Full method coverage: 88.6% (1165 of 1314)
+  Covered methods: 1300
+  Fully covered methods: 1165
+  Total methods: 1314
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -890,6 +890,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.TwoOutOfThree.TwoOutOfThreeHashSet                                                                                                100%
   LeetCode.Algorithms.TwoSum.TwoSumBruteForce                                                                                                          91.6%
   LeetCode.Algorithms.TwoSum.TwoSumDictionary                                                                                                          93.3%
+  LeetCode.Algorithms.TypeOfTriangle.TypeOfTriangleMath                                                                                                 100%
   LeetCode.Algorithms.UglyNumber.UglyNumberMath                                                                                                        72.2%
   LeetCode.Algorithms.UglyNumber2.UglyNumber2DynamicProgramming                                                                                         100%
   LeetCode.Algorithms.UglyNumber2.UglyNumber2PriorityQueue                                                                                              100%
