@@ -11,9 +11,7 @@
 
 namespace LeetCode.Algorithms.TypeOfTriangle;
 
-/// <summary>
-///     https://leetcode.com/problems/type-of-triangle/description/
-/// </summary>
+/// <inheritdoc />
 public class TypeOfTriangleMath : ITypeOfTriangle
 {
     private const string Equilateral = "equilateral";
