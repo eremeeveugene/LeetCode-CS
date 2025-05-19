@@ -1,23 +1,23 @@
 Summary
-  Generated on: 5/19/2025 - 10:00:50 AM
-  Coverage date: 5/19/2025 - 9:59:43 AM - 5/19/2025 - 10:00:01 AM
+  Generated on: 5/19/2025 - 11:55:29 AM
+  Coverage date: 5/19/2025 - 11:54:35 AM - 5/19/2025 - 11:54:54 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 916
-  Files: 916
+  Classes: 917
+  Files: 917
   Line coverage: 97.6%
-  Covered lines: 19480
+  Covered lines: 19509
   Uncovered lines: 470
-  Coverable lines: 19950
-  Total lines: 49966
-  Branch coverage: 95.4% (7293 of 7640)
-  Covered branches: 7293
-  Total branches: 7640
-  Method coverage: 98.9% (1300 of 1314)
-  Full method coverage: 88.6% (1165 of 1314)
-  Covered methods: 1300
-  Fully covered methods: 1165
-  Total methods: 1314
+  Coverable lines: 19979
+  Total lines: 50030
+  Branch coverage: 95.4% (7314 of 7664)
+  Covered branches: 7314
+  Total branches: 7664
+  Method coverage: 98.9% (1301 of 1315)
+  Full method coverage: 88.6% (1166 of 1315)
+  Covered methods: 1301
+  Fully covered methods: 1166
+  Total methods: 1315
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -829,6 +829,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.StrangePrinter.StrangePrinterDynamicProgramming                                                                                  92.3%
   LeetCode.Algorithms.StringCompression3.StringCompression3StringBuilder                                                                                100%
   LeetCode.Algorithms.StringMatchingInAnArray.StringMatchingInAnArrayBruteForce                                                                         100%
+  LeetCode.Algorithms.StringToInteger.StringToIntegerIterative                                                                                          100%
   LeetCode.Algorithms.SubarrayProductLessThanK.SubarrayProductLessThanKTwoPointers                                                                      100%
   LeetCode.Algorithms.SubarraySumsDivisibleByK.SubarraySumsDivisibleByKArray                                                                            100%
   LeetCode.Algorithms.SubarraySumsDivisibleByK.SubarraySumsDivisibleByKDictionary                                                                        85%
