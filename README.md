@@ -54,6 +54,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
 - [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
 - [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/)
+- [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/description/)
 - [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/)
 - [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/)
 - [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
