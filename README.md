@@ -642,6 +642,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3512. Minimum Operations to Make Array Sum Divisible by K](https://leetcode.com/problems/minimum-operations-to-make-array-sum-divisible-by-k/description/)
 - [3516. Find Closest Person](https://leetcode.com/problems/find-closest-person/description/)
 - [3536. Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/description/)
+- [3550. Smallest Index With Digit Sum Equal to Index](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/description/)
 
   </p>
 </details>
