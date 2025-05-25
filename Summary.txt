@@ -1,23 +1,23 @@
 Summary
-  Generated on: 5/24/2025 - 11:27:30 AM
-  Coverage date: 5/24/2025 - 11:26:22 AM - 5/24/2025 - 11:26:41 AM
+  Generated on: 5/25/2025 - 5:14:16 PM
+  Coverage date: 5/25/2025 - 5:13:10 PM - 5/25/2025 - 5:13:29 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 922
-  Files: 922
+  Classes: 924
+  Files: 924
   Line coverage: 97.6%
-  Covered lines: 19638
+  Covered lines: 19684
   Uncovered lines: 470
-  Coverable lines: 20108
-  Total lines: 50337
-  Branch coverage: 95.4% (7374 of 7726)
-  Covered branches: 7374
-  Total branches: 7726
-  Method coverage: 98.9% (1307 of 1321)
-  Full method coverage: 88.7% (1172 of 1321)
-  Covered methods: 1307
-  Fully covered methods: 1172
-  Total methods: 1321
+  Coverable lines: 20154
+  Total lines: 50449
+  Branch coverage: 95.4% (7393 of 7744)
+  Covered branches: 7393
+  Total branches: 7744
+  Method coverage: 98.9% (1309 of 1323)
+  Full method coverage: 88.7% (1174 of 1323)
+  Covered methods: 1309
+  Fully covered methods: 1174
+  Total methods: 1323
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -434,6 +434,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestNiceSubarray.LongestNiceSubarraySlidingWindow                                                                              100%
   LeetCode.Algorithms.LongestPalindrome.LongestPalindromeArray                                                                                          100%
   LeetCode.Algorithms.LongestPalindrome.LongestPalindromeDictionary                                                                                     100%
+  LeetCode.Algorithms.LongestPalindromeByConcatenatingTwoLetterWords.LongestPalindromeByConcatenatingTwoLetterWordsFrequencyArray                       100%
+  LeetCode.Algorithms.LongestPalindromeByConcatenatingTwoLetterWords.LongestPalindromeByConcatenatingTwoLetterWordsFrequencyDictionary                  100%
   LeetCode.Algorithms.LongestPalindromicSubstring.LongestPalindromicSubstringTwoPointers                                                                100%
   LeetCode.Algorithms.LongestSquareStreakInAnArray.LongestSquareStreakInAnArrayHashSet                                                                  100%
   LeetCode.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubarray.LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayIterative              100%
