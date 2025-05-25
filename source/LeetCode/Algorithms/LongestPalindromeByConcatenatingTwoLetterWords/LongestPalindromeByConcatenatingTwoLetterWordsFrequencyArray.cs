@@ -12,9 +12,11 @@
 namespace LeetCode.Algorithms.LongestPalindromeByConcatenatingTwoLetterWords;
 
 /// <inheritdoc />
-public class
-    LongestPalindromeByConcatenatingTwoLetterWordsFrequencyArray : ILongestPalindromeByConcatenatingTwoLetterWords
+public class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyArray :
+    ILongestPalindromeByConcatenatingTwoLetterWords
 {
+    private const int Length = 'z' - 'a' + 1;
+
     /// <summary>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
@@ -25,7 +27,7 @@ public class
     {
         var longestPalindrome = 0;
 
-        var frequencyArray = new int[26, 26];
+        var frequencyArray = new int[Length, Length];
 
         foreach (var word in words)
         {
@@ -44,7 +46,7 @@ public class
             }
         }
 
-        for (var i = 0; i < frequencyArray.Length; i++)
+        for (var i = 0; i < Length; i++)
         {
             if (frequencyArray[i, i] > 0)
             {
