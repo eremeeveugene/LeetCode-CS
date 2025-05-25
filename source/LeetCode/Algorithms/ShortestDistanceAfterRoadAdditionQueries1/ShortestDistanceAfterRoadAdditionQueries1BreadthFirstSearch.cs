@@ -18,31 +18,29 @@ public class ShortestDistanceAfterRoadAdditionQueries1BreadthFirstSearch : IShor
     ///     Time complexity - O(n * q)
     ///     Space complexity - O(n + q)
     /// </summary>
-    /// <param name="nodeCount"></param>
+    /// <param name="n"></param>
     /// <param name="queries"></param>
     /// <returns></returns>
-    public int[] ShortestDistanceAfterQueries(int nodeCount, int[][] queries)
+    public int[] ShortestDistanceAfterQueries(int n, int[][] queries)
     {
-        var adjacencyList = new List<int>[nodeCount];
+        var adjacencyList = new List<int>[n];
 
-        for (var i = 0; i < nodeCount; i++)
+        for (var i = 0; i < n; i++)
         {
             adjacencyList[i] = [];
         }
 
-        for (var i = 0; i < nodeCount - 1; i++)
+        for (var i = 0; i < n - 1; i++)
         {
             adjacencyList[i].Add(i + 1);
         }
 
-        var distances = new int[nodeCount];
+        var distances = new int[n];
 
         for (var i = 1; i < distances.Length; i++)
         {
-            distances[i] = int.MaxValue;
+            distances[i] = i;
         }
-
-        UpdateDistancesFrom(adjacencyList, distances, 0);
 
         var result = new int[queries.Length];
 
@@ -53,14 +51,14 @@ public class ShortestDistanceAfterRoadAdditionQueries1BreadthFirstSearch : IShor
 
             adjacencyList[fromNode].Add(toNode);
 
-            if (distances[fromNode] != int.MaxValue && distances[fromNode] + 1 < distances[toNode])
+            if (distances[fromNode] + 1 < distances[toNode])
             {
                 distances[toNode] = distances[fromNode] + 1;
 
                 UpdateDistancesFrom(adjacencyList, distances, toNode);
             }
 
-            result[i] = distances[nodeCount - 1] == int.MaxValue ? -1 : distances[nodeCount - 1];
+            result[i] = distances[n - 1] == int.MaxValue ? -1 : distances[n - 1];
         }
 
         return result;
