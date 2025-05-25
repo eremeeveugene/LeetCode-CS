@@ -4,7 +4,7 @@
 
 ## Overview
 
-Welcome to my collection of LeetCode solutions, all written in C#. Each solution is developed using Test-Driven Development (TDD), with a focus on the AAA (Arrange-Act-Assert) testing pattern. By writing tests first, I ensure my code is both reliable and efficient, minimizing bugs and verifying that each solution meets its expected outcome. This disciplined approach is ideal for solving algorithmic challenges where accuracy and performance are key.
+This repository contains my solutions to various challenges on [LeetCode.com](https://leetcode.com/), all implemented in C#. Each solution is developed using Test-Driven Development (TDD), with a focus on the AAA (Arrange-Act-Assert) testing pattern. By writing tests first, I ensure my code is both reliable and efficient, minimizing bugs and verifying that each solution meets its expected outcome. This disciplined approach is ideal for solving algorithmic challenges where accuracy and performance are key.
 
 ## Purpose
 
@@ -456,6 +456,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2114. Maximum Number of Words Found in Sentences](https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/description/)
 - [2116. Check if a Parentheses String Can Be Valid](https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/description/)
 - [2129. Capitalize the Title](https://leetcode.com/problems/capitalize-the-title/description/)
+- [2131. Longest Palindrome by Concatenating Two Letter Words](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/description/)
 - [2134. Minimum Swaps to Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/description/)
 - [2140. Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/description/)
 - [2145. Count the Hidden Sequences](https://leetcode.com/problems/count-the-hidden-sequences/description/)
