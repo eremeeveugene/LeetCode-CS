@@ -1,23 +1,23 @@
 Summary
-  Generated on: 5/25/2025 - 5:14:16 PM
-  Coverage date: 5/25/2025 - 5:13:10 PM - 5/25/2025 - 5:13:29 PM
+  Generated on: 5/28/2025 - 4:43:53 PM
+  Coverage date: 5/28/2025 - 4:42:48 PM - 5/28/2025 - 4:43:07 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 924
-  Files: 924
+  Classes: 925
+  Files: 925
   Line coverage: 97.6%
-  Covered lines: 19684
-  Uncovered lines: 470
-  Coverable lines: 20154
-  Total lines: 50449
-  Branch coverage: 95.4% (7393 of 7744)
-  Covered branches: 7393
-  Total branches: 7744
-  Method coverage: 98.9% (1309 of 1323)
-  Full method coverage: 88.7% (1174 of 1323)
-  Covered methods: 1309
-  Fully covered methods: 1174
-  Total methods: 1323
+  Covered lines: 19736
+  Uncovered lines: 472
+  Coverable lines: 20208
+  Total lines: 50556
+  Branch coverage: 95.4% (7410 of 7762)
+  Covered branches: 7410
+  Total branches: 7762
+  Method coverage: 98.9% (1312 of 1326)
+  Full method coverage: 88.6% (1176 of 1326)
+  Covered methods: 1312
+  Fully covered methods: 1176
+  Total methods: 1326
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -458,6 +458,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximalRectangle.MaximalRectangleStack                                                                                            100%
   LeetCode.Algorithms.MaximalScoreAfterApplyingKOperations.MaximalScoreAfterApplyingKOperationsPriorityQueue                                            100%
   LeetCode.Algorithms.MaximizeHappinessOfSelectedChildren.MaximizeHappinessOfSelectedChildrenIterative                                                  100%
+  LeetCode.Algorithms.MaximizeTheNumberOfTargetNodesAfterConnectingTrees1.MaximizeTheNumberOfTargetNodesAfterConnectingTrees1DepthFirstSearch          96.2%
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberIterative                                                                                          100%
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberString                                                                                             100%
   LeetCode.Algorithms.MaximumAbsoluteSumOfAnySubarray.MaximumAbsoluteSumOfAnySubarrayBruteForce                                                         100%
