@@ -1,23 +1,23 @@
 Summary
-  Generated on: 5/28/2025 - 4:43:53 PM
-  Coverage date: 5/28/2025 - 4:42:48 PM - 5/28/2025 - 4:43:07 PM
+  Generated on: 6/1/2025 - 1:58:10 PM
+  Coverage date: 6/1/2025 - 1:57:14 PM - 6/1/2025 - 1:57:34 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 925
-  Files: 925
+  Classes: 926
+  Files: 926
   Line coverage: 97.6%
-  Covered lines: 19736
+  Covered lines: 19748
   Uncovered lines: 472
-  Coverable lines: 20208
-  Total lines: 50556
-  Branch coverage: 95.4% (7410 of 7762)
-  Covered branches: 7410
-  Total branches: 7762
-  Method coverage: 98.9% (1312 of 1326)
-  Full method coverage: 88.6% (1176 of 1326)
-  Covered methods: 1312
-  Fully covered methods: 1176
-  Total methods: 1326
+  Coverable lines: 20220
+  Total lines: 50597
+  Branch coverage: 95.4% (7412 of 7764)
+  Covered branches: 7412
+  Total branches: 7764
+  Method coverage: 98.9% (1314 of 1328)
+  Full method coverage: 88.7% (1178 of 1328)
+  Covered methods: 1314
+  Fully covered methods: 1178
+  Total methods: 1328
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -222,6 +222,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayIterative                              100%
   LeetCode.Algorithms.DifferentWaysToAddParentheses.DifferentWaysToAddParenthesesDictionary                                                              97%
   LeetCode.Algorithms.DifferentWaysToAddParentheses.DifferentWaysToAddParenthesesRecursive                                                             96.1%
+  LeetCode.Algorithms.DistributeCandiesAmongChildren2.DistributeCandiesAmongChildren2Math                                                               100%
   LeetCode.Algorithms.DistributeCoinsInBinaryTree.DistributeCoinsInBinaryTreeDepthFirstSearch                                                           100%
   LeetCode.Algorithms.DistributeMoneyToMaximumChildren.DistributeMoneyToMaximumChildrenLinear                                                          93.3%
   LeetCode.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers.DivideArrayInSetsOfKConsecutiveNumbersDictionary                                           100%
