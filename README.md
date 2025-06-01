@@ -574,6 +574,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2914. Minimum Number of Changes to Make Binary String Beautiful](https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/description/)
 - [2918. Minimum Equal Sum of Two Arrays After Replacing Zeros](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/description/)
 - [2924. Find Champion II](https://leetcode.com/problems/find-champion-ii/description/)
+- [2929. Distribute Candies Among Children II](https://leetcode.com/problems/distribute-candies-among-children-ii/description/)
 - [2938. Separate Black and White Balls](https://leetcode.com/problems/separate-black-and-white-balls/description/)
 - [2942. Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/description/)
 - [2956. Find Common Elements Between Two Arrays](https://leetcode.com/problems/find-common-elements-between-two-arrays/description/)
