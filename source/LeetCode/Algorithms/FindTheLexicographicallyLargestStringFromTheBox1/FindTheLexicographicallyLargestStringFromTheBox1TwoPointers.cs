@@ -34,21 +34,21 @@ public class FindTheLexicographicallyLargestStringFromTheBox1TwoPointers :
         return lastSubstring[..Math.Min(lastSubstring.Length, word.Length - numFriends + 1)];
     }
 
-    private static string GetLastSubstring(string s)
+    private static string GetLastSubstring(string word)
     {
         var i = 0;
         var j = 1;
 
-        while (j < s.Length)
+        while (j < word.Length)
         {
             var k = 0;
 
-            while (j + k < s.Length && s[i + k] == s[j + k])
+            while (j + k < word.Length && word[i + k] == word[j + k])
             {
                 k++;
             }
 
-            if (j + k < s.Length && s[i + k] < s[j + k])
+            if (j + k < word.Length && word[i + k] < word[j + k])
             {
                 var t = i;
 
@@ -62,6 +62,6 @@ public class FindTheLexicographicallyLargestStringFromTheBox1TwoPointers :
             }
         }
 
-        return s[i..];
+        return word[i..];
     }
 }
