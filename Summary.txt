@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/3/2025 - 2:06:26 PM
-  Coverage date: 6/3/2025 - 2:05:16 PM - 6/3/2025 - 2:05:35 PM
+  Generated on: 6/12/2025 - 11:59:11 AM
+  Coverage date: 6/12/2025 - 11:58:03 AM - 6/12/2025 - 11:58:22 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 927
-  Files: 927
+  Classes: 931
+  Files: 931
   Line coverage: 97.6%
-  Covered lines: 19753
-  Uncovered lines: 472
-  Coverable lines: 20225
-  Total lines: 50629
-  Branch coverage: 95.4% (7412 of 7764)
-  Covered branches: 7412
-  Total branches: 7764
-  Method coverage: 98.9% (1315 of 1329)
-  Full method coverage: 88.7% (1179 of 1329)
-  Covered methods: 1315
-  Fully covered methods: 1179
-  Total methods: 1329
+  Covered lines: 19858
+  Uncovered lines: 474
+  Coverable lines: 20332
+  Total lines: 50882
+  Branch coverage: 95.4% (7463 of 7818)
+  Covered branches: 7463
+  Total branches: 7818
+  Method coverage: 98.9% (1319 of 1333)
+  Full method coverage: 88.6% (1182 of 1333)
+  Covered methods: 1319
+  Fully covered methods: 1182
+  Total methods: 1333
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -539,6 +539,10 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumCostToHireKWorkers.MinimumCostToHireKWorkersPriorityQueue                                                                  100%
   LeetCode.Algorithms.MinimumCostToMakeAtLeastOneValidPathInGrid.MinimumCostToMakeAtLeastOneValidPathInGridBreadthFirstSearch                           100%
   LeetCode.Algorithms.MinimumCostToReachEveryPosition.MinimumCostToReachEveryPositionGreedy                                                             100%
+  LeetCode.Algorithms.MinimumDeletionsForKMostKDistinctCharacters.MinimumDeletionsForKMostKDistinctCharactersFrequencyArrayBucketSort                   100%
+  LeetCode.Algorithms.MinimumDeletionsForKMostKDistinctCharacters.MinimumDeletionsForKMostKDistinctCharactersFrequencyArrayPriorityQueue                100%
+  LeetCode.Algorithms.MinimumDeletionsForKMostKDistinctCharacters.MinimumDeletionsForKMostKDistinctCharactersFrequencyDictionaryBucketSort             93.3%
+  LeetCode.Algorithms.MinimumDeletionsForKMostKDistinctCharacters.MinimumDeletionsForKMostKDistinctCharactersFrequencyDictionaryPriorityQueue           100%
   LeetCode.Algorithms.MinimumDepthOfBinaryTree.MinimumDepthOfBinaryTreeBreadthFirstSearch                                                               100%
   LeetCode.Algorithms.MinimumDepthOfBinaryTree.MinimumDepthOfBinaryTreeDepthFirstSearch                                                                 100%
   LeetCode.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesSorting    100%
