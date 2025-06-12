@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/12/2025 - 11:59:11 AM
-  Coverage date: 6/12/2025 - 11:58:03 AM - 6/12/2025 - 11:58:22 AM
+  Generated on: 6/12/2025 - 5:12:18 PM
+  Coverage date: 6/12/2025 - 5:11:02 PM - 6/12/2025 - 5:11:20 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 931
-  Files: 931
+  Classes: 932
+  Files: 932
   Line coverage: 97.6%
-  Covered lines: 19858
-  Uncovered lines: 474
-  Coverable lines: 20332
-  Total lines: 50882
-  Branch coverage: 95.4% (7463 of 7818)
-  Covered branches: 7463
-  Total branches: 7818
-  Method coverage: 98.9% (1319 of 1333)
-  Full method coverage: 88.6% (1182 of 1333)
-  Covered methods: 1319
+  Covered lines: 19880
+  Uncovered lines: 481
+  Coverable lines: 20361
+  Total lines: 50949
+  Branch coverage: 95.4% (7473 of 7830)
+  Covered branches: 7473
+  Total branches: 7830
+  Method coverage: 98.9% (1321 of 1335)
+  Full method coverage: 88.5% (1182 of 1335)
+  Covered methods: 1321
   Fully covered methods: 1182
-  Total methods: 1333
+  Total methods: 1335
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -319,6 +319,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix.FindTheLengthOfTheLongestCommonPrefixBruteForce                                             100%
   LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix.FindTheLengthOfTheLongestCommonPrefixHashSet                                                100%
   LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix.FindTheLengthOfTheLongestCommonPrefixTrie                                                   100%
+  LeetCode.Algorithms.FindTheLexicographicallyLargestStringFromTheBox1.FindTheLexicographicallyLargestStringFromTheBox1TwoPointers                     75.8%
   LeetCode.Algorithms.FindTheLongestSubstringContainingVowelsInEvenCounts.FindTheLongestSubstringContainingVowelsInEvenCountsBitmasking                 100%
   LeetCode.Algorithms.FindTheMaximumAchievableNumber.FindTheMaximumAchievableNumberLinear                                                               100%
   LeetCode.Algorithms.FindTheMaximumSumOfNodeValues.FindTheMaximumSumOfNodeValuesIterative                                                              100%
