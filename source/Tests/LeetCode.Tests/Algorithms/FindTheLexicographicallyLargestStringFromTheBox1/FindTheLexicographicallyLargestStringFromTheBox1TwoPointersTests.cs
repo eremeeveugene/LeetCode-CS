@@ -14,5 +14,6 @@ using LeetCode.Algorithms.FindTheLexicographicallyLargestStringFromTheBox1;
 namespace LeetCode.Tests.Algorithms.FindTheLexicographicallyLargestStringFromTheBox1;
 
 [TestClass]
-public class FindTheLexicographicallyLargestStringFromTheBox1TempTests :
-    FindTheLexicographicallyLargestStringFromTheBox1TestsBase<FindTheLexicographicallyLargestStringFromTheBox1Temp>;
+public class FindTheLexicographicallyLargestStringFromTheBox1TwoPointersTests :
+    FindTheLexicographicallyLargestStringFromTheBox1TestsBase<
+        FindTheLexicographicallyLargestStringFromTheBox1TwoPointers>;
