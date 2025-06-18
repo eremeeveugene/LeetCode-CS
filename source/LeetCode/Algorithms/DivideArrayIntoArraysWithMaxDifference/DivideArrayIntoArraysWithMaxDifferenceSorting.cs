@@ -29,7 +29,7 @@ public class DivideArrayIntoArraysWithMaxDifferenceSorting : IDivideArrayIntoArr
 
         for (var i = 0; i < nums.Length; i += 3)
         {
-            if (nums[i + 1] - nums[i] > k || nums[i + 2] - nums[i] > k)
+            if (nums[i + 2] - nums[i] > k)
             {
                 return [];
             }
