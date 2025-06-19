@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PartitionArraySuchThatMaximumDifferenceIsK;
 
 /// <inheritdoc />
-public class PartitionArraySuchThatMaximumDifferenceIsK1 : IPartitionArraySuchThatMaximumDifferenceIsK
+public class PartitionArraySuchThatMaximumDifferenceIsKSorting : IPartitionArraySuchThatMaximumDifferenceIsK
 {
     /// <summary>
     ///     Time complexity - O(n log n)
