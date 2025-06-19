@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/18/2025 - 7:11:08 PM
-  Coverage date: 6/18/2025 - 7:09:53 PM - 6/18/2025 - 7:10:16 PM
+  Generated on: 6/19/2025 - 5:06:10 PM
+  Coverage date: 6/19/2025 - 5:05:05 PM - 6/19/2025 - 5:05:24 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 936
-  Files: 936
+  Classes: 937
+  Files: 937
   Line coverage: 97.6%
-  Covered lines: 19954
-  Uncovered lines: 481
-  Coverable lines: 20435
-  Total lines: 51145
-  Branch coverage: 95.4% (7497 of 7854)
-  Covered branches: 7497
-  Total branches: 7854
-  Method coverage: 98.9% (1325 of 1339)
-  Full method coverage: 88.5% (1186 of 1339)
-  Covered methods: 1325
+  Covered lines: 19969
+  Uncovered lines: 483
+  Coverable lines: 20452
+  Total lines: 51196
+  Branch coverage: 95.4% (7502 of 7860)
+  Covered branches: 7502
+  Total branches: 7860
+  Method coverage: 98.9% (1326 of 1340)
+  Full method coverage: 88.5% (1186 of 1340)
+  Covered methods: 1326
   Fully covered methods: 1186
-  Total methods: 1339
+  Total methods: 1340
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -662,6 +662,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.PartitionArrayAccordingToGivenPivot.PartitionArrayAccordingToGivenPivotTwoPointers                                                100%
   LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumIterative                                       95.1%
   LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum.PartitionArrayIntoThreePartsWithEqualSumSinglePass                                       100%
+  LeetCode.Algorithms.PartitionArraySuchThatMaximumDifferenceIsK.PartitionArraySuchThatMaximumDifferenceIsKSorting                                     88.2%
   LeetCode.Algorithms.PartitionEqualSubsetSum.PartitionEqualSubsetSumDynamicProgramming                                                                 100%
   LeetCode.Algorithms.PartitionLabels.PartitionLabelsTwoPointers                                                                                        100%
   LeetCode.Algorithms.PascalsTriangle.PascalsTriangleDynamicProgramming                                                                                 100%
