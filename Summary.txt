@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/19/2025 - 5:06:10 PM
-  Coverage date: 6/19/2025 - 5:05:05 PM - 6/19/2025 - 5:05:24 PM
+  Generated on: 6/22/2025 - 12:53:51 PM
+  Coverage date: 6/22/2025 - 12:52:36 PM - 6/22/2025 - 12:52:57 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 937
-  Files: 937
+  Classes: 938
+  Files: 938
   Line coverage: 97.6%
-  Covered lines: 19969
+  Covered lines: 19991
   Uncovered lines: 483
-  Coverable lines: 20452
-  Total lines: 51196
-  Branch coverage: 95.4% (7502 of 7860)
-  Covered branches: 7502
-  Total branches: 7860
-  Method coverage: 98.9% (1326 of 1340)
-  Full method coverage: 88.5% (1186 of 1340)
-  Covered methods: 1326
-  Fully covered methods: 1186
-  Total methods: 1340
+  Coverable lines: 20474
+  Total lines: 51254
+  Branch coverage: 95.4% (7508 of 7866)
+  Covered branches: 7508
+  Total branches: 7866
+  Method coverage: 98.9% (1327 of 1341)
+  Full method coverage: 88.5% (1187 of 1341)
+  Covered methods: 1327
+  Fully covered methods: 1187
+  Total methods: 1341
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -235,6 +235,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DivideIntervalsIntoMinimumNumberOfGroups.DivideIntervalsIntoMinimumNumberOfGroupsSorting                                          100%
   LeetCode.Algorithms.DividePlayersIntoTeamsOfEqualSkill.DividePlayersIntoTeamsOfEqualSkillDictionary                                                  92.3%
   LeetCode.Algorithms.DividePlayersIntoTeamsOfEqualSkill.DividePlayersIntoTeamsOfEqualSkillSorting                                                      100%
+  LeetCode.Algorithms.DivideStringIntoGroupsOfSizeK.DivideStringIntoGroupsOfSizeKSimulation                                                             100%
   LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceConstant                                             100%
   LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference.DivisibleAndNonDivisibleSumsDifferenceIterative                                            100%
   LeetCode.Algorithms.DivisorGame.DivisorGameDivisionRemainder                                                                                          100%
