@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/22/2025 - 12:53:51 PM
-  Coverage date: 6/22/2025 - 12:52:36 PM - 6/22/2025 - 12:52:57 PM
+  Generated on: 6/24/2025 - 10:17:37 AM
+  Coverage date: 6/24/2025 - 10:16:35 AM - 6/24/2025 - 10:16:55 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 938
-  Files: 938
+  Classes: 940
+  Files: 940
   Line coverage: 97.6%
-  Covered lines: 19991
+  Covered lines: 20022
   Uncovered lines: 483
-  Coverable lines: 20474
-  Total lines: 51254
-  Branch coverage: 95.4% (7508 of 7866)
-  Covered branches: 7508
-  Total branches: 7866
-  Method coverage: 98.9% (1327 of 1341)
-  Full method coverage: 88.5% (1187 of 1341)
-  Covered methods: 1327
-  Fully covered methods: 1187
-  Total methods: 1341
+  Coverable lines: 20505
+  Total lines: 51350
+  Branch coverage: 95.4% (7522 of 7880)
+  Covered branches: 7522
+  Total branches: 7880
+  Method coverage: 98.9% (1329 of 1343)
+  Full method coverage: 88.5% (1189 of 1343)
+  Covered methods: 1329
+  Fully covered methods: 1189
+  Total methods: 1343
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -262,6 +262,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindAllDuplicatesInAnArray.FindAllDuplicatesInAnArrayIterative                                                                    100%
   LeetCode.Algorithms.FindAllGroupOfFarmland.FindAllGroupOfFarmlandBruteForce                                                                           100%
   LeetCode.Algorithms.FindAllGroupOfFarmland.FindAllGroupOfFarmlandIterative                                                                            100%
+  LeetCode.Algorithms.FindAllKDistantIndicesInAnArray.FindAllKDistantIndicesInAnArrayBruteForce                                                         100%
+  LeetCode.Algorithms.FindAllKDistantIndicesInAnArray.FindAllKDistantIndicesInAnArrayTwoPointers                                                        100%
   LeetCode.Algorithms.FindAllNumbersDisappearedInArray.FindAllNumbersDisappearedInArrayHashSet                                                          100%
   LeetCode.Algorithms.FindAllNumbersDisappearedInArray.FindAllNumbersDisappearedInArrayMarking                                                          100%
   LeetCode.Algorithms.FindAllNumbersDisappearedInArray.FindAllNumbersDisappearedInArraySignFlipping                                                     100%
