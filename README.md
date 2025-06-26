@@ -483,6 +483,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2288. Apply Discount to Prices](https://leetcode.com/problems/apply-discount-to-prices/description/)
 - [2294. Partition Array Such That Maximum Difference Is K](https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/description/)
 - [2302. Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/description/)
+- [2311. Longest Binary Subsequence Less Than or Equal to K](https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/description/)
 - [2326. Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/description/)
 - [2331. Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree/description/)
 - [2337. Move Pieces to Obtain a String](https://leetcode.com/problems/move-pieces-to-obtain-a-string/description/)
