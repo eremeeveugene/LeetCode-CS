@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/24/2025 - 10:17:37 AM
-  Coverage date: 6/24/2025 - 10:16:35 AM - 6/24/2025 - 10:16:55 AM
+  Generated on: 6/26/2025 - 11:33:40 AM
+  Coverage date: 6/26/2025 - 11:32:42 AM - 6/26/2025 - 11:33:03 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 940
-  Files: 940
+  Classes: 941
+  Files: 941
   Line coverage: 97.6%
-  Covered lines: 20022
+  Covered lines: 20040
   Uncovered lines: 483
-  Coverable lines: 20505
-  Total lines: 51350
-  Branch coverage: 95.4% (7522 of 7880)
-  Covered branches: 7522
-  Total branches: 7880
-  Method coverage: 98.9% (1329 of 1343)
-  Full method coverage: 88.5% (1189 of 1343)
-  Covered methods: 1329
-  Fully covered methods: 1189
-  Total methods: 1343
+  Coverable lines: 20523
+  Total lines: 51399
+  Branch coverage: 95.4% (7530 of 7888)
+  Covered branches: 7530
+  Total branches: 7888
+  Method coverage: 98.9% (1330 of 1344)
+  Full method coverage: 88.5% (1190 of 1344)
+  Covered methods: 1330
+  Fully covered methods: 1190
+  Total methods: 1344
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -432,6 +432,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LinkedListCycle.LinkedListCycleTwoPointers                                                                                        100%
   LeetCode.Algorithms.LinkedListInBinaryTree.LinkedListInBinaryTreeDepthFirstSearch                                                                     100%
   LeetCode.Algorithms.LinkedListInBinaryTree.LinkedListInBinaryTreeKnuthMorrisPratt                                                                     100%
+  LeetCode.Algorithms.LongestBinarySubsequenceLessThanOrEqualToK.LongestBinarySubsequenceLessThanOrEqualToKGreedy                                       100%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixBinarySearch                                                                               100%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixDivideAndConquer                                                                          96.1%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixHorizontalScanning                                                                         100%
