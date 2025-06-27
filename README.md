@@ -256,6 +256,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [840. Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid/description/)
 - [846. Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 - [857. Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/description/)
+- [859. Buddy Strings](https://leetcode.com/problems/buddy-strings/description/)
 - [860. Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)
 - [861. Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/description/)
 - [862. Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/description/)
