@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/27/2025 - 10:33:29 AM
-  Coverage date: 6/27/2025 - 10:32:34 AM - 6/27/2025 - 10:32:52 AM
+  Generated on: 6/28/2025 - 10:52:47 AM
+  Coverage date: 6/28/2025 - 10:51:51 AM - 6/28/2025 - 10:52:10 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 942
-  Files: 942
+  Classes: 943
+  Files: 943
   Line coverage: 97.6%
-  Covered lines: 20074
+  Covered lines: 20094
   Uncovered lines: 487
-  Coverable lines: 20561
-  Total lines: 51478
-  Branch coverage: 95.4% (7550 of 7910)
-  Covered branches: 7550
-  Total branches: 7910
-  Method coverage: 98.9% (1331 of 1345)
-  Full method coverage: 88.4% (1190 of 1345)
-  Covered methods: 1331
-  Fully covered methods: 1190
-  Total methods: 1345
+  Coverable lines: 20581
+  Total lines: 51531
+  Branch coverage: 95.4% (7556 of 7916)
+  Covered branches: 7556
+  Total branches: 7916
+  Method coverage: 98.9% (1332 of 1346)
+  Full method coverage: 88.4% (1191 of 1346)
+  Covered methods: 1332
+  Fully covered methods: 1191
+  Total methods: 1346
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -310,6 +310,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindNumbersWithEvenNumberOfDigits.FindNumbersWithEvenNumberOfDigitsGreedy                                                         100%
   LeetCode.Algorithms.FindPivotIndex.FindPivotIndexIterative                                                                                            100%
   LeetCode.Algorithms.FindScoreOfAnArrayAfterMarkingAllElements.FindScoreOfAnArrayAfterMarkingAllElementsSorting                                        100%
+  LeetCode.Algorithms.FindSubsequenceOfLengthKWithTheLargestSum.FindSubsequenceOfLengthKWithTheLargestSumSorting                                        100%
   LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayBinarySearch                                                92.5%
   LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayIterative                                                    100%
   LeetCode.Algorithms.FindTheClosestPalindrome.FindTheClosestPalindromeIterative                                                                        100%
