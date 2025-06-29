@@ -356,6 +356,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1486. XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/description/)
 - [1491. Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/description/)
 - [1497. Check If Array Pairs Are Divisible by k](https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/description/)
+- [1498. Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description/)
 - [1500. Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/description/)
 - [1502. Can Make Arithmetic Progression From Sequences](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/description/)
 - [1508. Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/description/)
