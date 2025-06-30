@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/29/2025 - 5:39:56 PM
-  Coverage date: 6/29/2025 - 5:38:50 PM - 6/29/2025 - 5:39:10 PM
+  Generated on: 6/30/2025 - 9:24:03 AM
+  Coverage date: 6/30/2025 - 9:23:04 AM - 6/30/2025 - 9:23:25 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 944
-  Files: 944
+  Classes: 945
+  Files: 945
   Line coverage: 97.6%
-  Covered lines: 20118
+  Covered lines: 20141
   Uncovered lines: 487
-  Coverable lines: 20605
-  Total lines: 51592
-  Branch coverage: 95.4% (7562 of 7922)
-  Covered branches: 7562
-  Total branches: 7922
-  Method coverage: 98.9% (1333 of 1347)
-  Full method coverage: 88.4% (1192 of 1347)
-  Covered methods: 1333
-  Fully covered methods: 1192
-  Total methods: 1347
+  Coverable lines: 20628
+  Total lines: 51648
+  Branch coverage: 95.4% (7572 of 7932)
+  Covered branches: 7572
+  Total branches: 7932
+  Method coverage: 98.9% (1334 of 1348)
+  Full method coverage: 88.5% (1193 of 1348)
+  Covered methods: 1334
+  Fully covered methods: 1193
+  Total methods: 1348
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -439,6 +439,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixDivideAndConquer                                                                          96.1%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixHorizontalScanning                                                                         100%
   LeetCode.Algorithms.LongestHappyString.LongestHappyStringGreedy                                                                                       100%
+  LeetCode.Algorithms.LongestHarmoniousSubsequence.LongestHarmoniousSubsequenceDictionary                                                               100%
   LeetCode.Algorithms.LongestIdealSubsequence.LongestIdealSubsequenceDynamicProgramming                                                                 100%
   LeetCode.Algorithms.LongestNiceSubarray.LongestNiceSubarrayBruteForce                                                                                 100%
   LeetCode.Algorithms.LongestNiceSubarray.LongestNiceSubarraySlidingWindow                                                                              100%
