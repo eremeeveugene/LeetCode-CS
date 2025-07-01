@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/30/2025 - 9:24:03 AM
-  Coverage date: 6/30/2025 - 9:23:04 AM - 6/30/2025 - 9:23:25 AM
+  Generated on: 7/1/2025 - 2:53:00 PM
+  Coverage date: 7/1/2025 - 2:51:57 PM - 7/1/2025 - 2:52:17 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 945
-  Files: 945
+  Classes: 946
+  Files: 946
   Line coverage: 97.6%
-  Covered lines: 20141
+  Covered lines: 20156
   Uncovered lines: 487
-  Coverable lines: 20628
-  Total lines: 51648
-  Branch coverage: 95.4% (7572 of 7932)
-  Covered branches: 7572
-  Total branches: 7932
-  Method coverage: 98.9% (1334 of 1348)
-  Full method coverage: 88.5% (1193 of 1348)
-  Covered methods: 1334
-  Fully covered methods: 1193
-  Total methods: 1348
+  Coverable lines: 20643
+  Total lines: 51691
+  Branch coverage: 95.4% (7576 of 7936)
+  Covered branches: 7576
+  Total branches: 7936
+  Method coverage: 98.9% (1335 of 1349)
+  Full method coverage: 88.5% (1194 of 1349)
+  Covered methods: 1335
+  Fully covered methods: 1194
+  Total methods: 1349
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -333,6 +333,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsIterative   93.5%
   LeetCode.Algorithms.FindTheNumberOfDistinctColorsAmongTheBalls.FindTheNumberOfDistinctColorsAmongTheBallsDictionary                                   100%
   LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor.FindTheOriginalArrayOfPrefixXorIterative                                                          100%
+  LeetCode.Algorithms.FindTheOriginalTypedString1.FindTheOriginalTypedString1Iterative                                                                  100%
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerConstant                                                                                   100%
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerIterative                                                                                  100%
   LeetCode.Algorithms.FindThePowerOfKSizeSubarrays1.FindThePowerOfKSizeSubarrays1ConsecutiveCount                                                      91.3%
