@@ -627,6 +627,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3254. Find the Power of K-Size Subarrays I](https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i/description/)
 - [3264. Final Array State After K Multiplication Operations I](https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-i/description/)
 - [3289. The Two Sneaky Numbers of Digitville](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/description/)
+- [3304. Find the K-th Character in String Game I](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/description/)
 - [3306. Count of Substrings Containing Every Vowel and K Consonants II](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/description/)
 - [3330. Find the Original Typed String I](https://leetcode.com/problems/find-the-original-typed-string-i/description/)
 - [3340. Check Balanced String](https://leetcode.com/problems/check-balanced-string/description/)
