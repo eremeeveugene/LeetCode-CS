@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/1/2025 - 2:53:00 PM
-  Coverage date: 7/1/2025 - 2:51:57 PM - 7/1/2025 - 2:52:17 PM
+  Generated on: 7/3/2025 - 4:20:36 PM
+  Coverage date: 7/3/2025 - 4:18:48 PM - 7/3/2025 - 4:19:47 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 946
-  Files: 946
+  Classes: 947
+  Files: 947
   Line coverage: 97.6%
-  Covered lines: 20156
+  Covered lines: 20172
   Uncovered lines: 487
-  Coverable lines: 20643
-  Total lines: 51691
-  Branch coverage: 95.4% (7576 of 7936)
-  Covered branches: 7576
-  Total branches: 7936
-  Method coverage: 98.9% (1335 of 1349)
-  Full method coverage: 88.5% (1194 of 1349)
-  Covered methods: 1335
-  Fully covered methods: 1194
-  Total methods: 1349
+  Coverable lines: 20659
+  Total lines: 51739
+  Branch coverage: 95.4% (7581 of 7942)
+  Covered branches: 7581
+  Total branches: 7942
+  Method coverage: 98.9% (1337 of 1351)
+  Full method coverage: 88.5% (1196 of 1351)
+  Covered methods: 1337
+  Fully covered methods: 1196
+  Total methods: 1351
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -322,6 +322,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheEncryptedString.FindTheEncryptedStringIterative                                                                            100%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                                      100%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithKMP                                           80%
+  LeetCode.Algorithms.FindTheKthCharacterInStringGame1.FindTheKthCharacterInStringGame1StringBuilder                                                    100%
   LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix.FindTheLengthOfTheLongestCommonPrefixBruteForce                                             100%
   LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix.FindTheLengthOfTheLongestCommonPrefixHashSet                                                100%
   LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix.FindTheLengthOfTheLongestCommonPrefixTrie                                                   100%
