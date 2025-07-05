@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/3/2025 - 4:20:36 PM
-  Coverage date: 7/3/2025 - 4:18:48 PM - 7/3/2025 - 4:19:47 PM
+  Generated on: 7/5/2025 - 2:02:13 PM
+  Coverage date: 7/5/2025 - 2:00:34 PM - 7/5/2025 - 2:01:33 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 947
-  Files: 947
+  Classes: 949
+  Files: 949
   Line coverage: 97.6%
-  Covered lines: 20172
+  Covered lines: 20203
   Uncovered lines: 487
-  Coverable lines: 20659
-  Total lines: 51739
-  Branch coverage: 95.4% (7581 of 7942)
-  Covered branches: 7581
-  Total branches: 7942
-  Method coverage: 98.9% (1337 of 1351)
-  Full method coverage: 88.5% (1196 of 1351)
-  Covered methods: 1337
-  Fully covered methods: 1196
-  Total methods: 1351
+  Coverable lines: 20690
+  Total lines: 51826
+  Branch coverage: 95.4% (7597 of 7958)
+  Covered branches: 7597
+  Total branches: 7958
+  Method coverage: 98.9% (1339 of 1353)
+  Full method coverage: 88.5% (1198 of 1353)
+  Covered methods: 1339
+  Fully covered methods: 1198
+  Total methods: 1353
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -295,6 +295,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindKthSmallestPairDistance.FindKthSmallestPairDistanceBinarySearchWithSlidingWindow                                              100%
   LeetCode.Algorithms.FindLargestValueInEachTreeRow.FindLargestValueInEachTreeRowBreadthFirstSearch                                                     100%
   LeetCode.Algorithms.FindLongestSpecialSubstringThatOccursThrice1.FindLongestSpecialSubstringThatOccursThrice1Dictionary                               100%
+  LeetCode.Algorithms.FindLuckyIntegerInAnArray.FindLuckyIntegerInAnArrayFrequencyArray                                                                 100%
+  LeetCode.Algorithms.FindLuckyIntegerInAnArray.FindLuckyIntegerInAnArrayFrequencyDictionary                                                            100%
   LeetCode.Algorithms.FindMinimumDiameterAfterMergingTwoTrees.FindMinimumDiameterAfterMergingTwoTreesDepthFirstSearch                                   100%
   LeetCode.Algorithms.FindMinimumLogTransportationCost.FindMinimumLogTransportationCostMath                                                             100%
   LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree.FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterative            100%
