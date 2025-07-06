@@ -419,6 +419,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1859. Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/description/)
 - [1861. Rotating the Box](https://leetcode.com/problems/rotating-the-box/description/)
 - [1863. Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/description/)
+- [1865. Finding Pairs With a Certain Sum](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/description/)
 - [1894. Find the Student that Will Replace the Chalk](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/description/)
 - [1905. Count Sub Islands](https://leetcode.com/problems/count-sub-islands/description/)
 - [1910. Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/description/)
