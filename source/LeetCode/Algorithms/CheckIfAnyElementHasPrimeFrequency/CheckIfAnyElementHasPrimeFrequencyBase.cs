@@ -26,7 +26,7 @@ public abstract class CheckIfAnyElementHasPrimeFrequencyBase : ICheckIfAnyElemen
 
     private static bool[] GeneratePrimes(int max)
     {
-        var isPrime = new bool[max];
+        var isPrime = new bool[max + 1];
 
         if (max >= 2)
         {
