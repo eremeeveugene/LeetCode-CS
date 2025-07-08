@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/7/2025 - 7:18:51 PM
-  Coverage date: 7/7/2025 - 7:17:53 PM - 7/7/2025 - 7:18:14 PM
+  Generated on: 7/8/2025 - 9:53:42 AM
+  Coverage date: 7/8/2025 - 9:52:33 AM - 7/8/2025 - 9:52:53 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 951
-  Files: 951
+  Classes: 954
+  Files: 954
   Line coverage: 97.6%
-  Covered lines: 20262
+  Covered lines: 20323
   Uncovered lines: 490
-  Coverable lines: 20752
-  Total lines: 51972
-  Branch coverage: 95.4% (7622 of 7984)
-  Covered branches: 7622
-  Total branches: 7984
-  Method coverage: 98.9% (1343 of 1357)
-  Full method coverage: 88.5% (1201 of 1357)
-  Covered methods: 1343
-  Fully covered methods: 1201
-  Total methods: 1357
+  Coverable lines: 20813
+  Total lines: 52119
+  Branch coverage: 95.4% (7646 of 8008)
+  Covered branches: 7646
+  Total branches: 8008
+  Method coverage: 98.9% (1348 of 1362)
+  Full method coverage: 88.5% (1206 of 1362)
+  Covered methods: 1348
+  Fully covered methods: 1206
+  Total methods: 1362
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -84,6 +84,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.CapitalizeTheTitle.CapitalizeTheTitleStringBuilder                                                                                100%
   LeetCode.Algorithms.CheapestFlightsWithinKStops.CheapestFlightsWithinKStopsBellmanFord                                                                100%
   LeetCode.Algorithms.CheckBalancedString.CheckBalancedStringIterative                                                                                  100%
+  LeetCode.Algorithms.CheckIfAnyElementHasPrimeFrequency.CheckIfAnyElementHasPrimeFrequencyArray                                                        100%
+  LeetCode.Algorithms.CheckIfAnyElementHasPrimeFrequency.CheckIfAnyElementHasPrimeFrequencyBase                                                         100%
+  LeetCode.Algorithms.CheckIfAnyElementHasPrimeFrequency.CheckIfAnyElementHasPrimeFrequencyDictionary                                                   100%
   LeetCode.Algorithms.CheckIfArrayIsSortedAndRotated.CheckIfArrayIsSortedAndRotatedIterative                                                           88.2%
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKArray                                                            100%
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKDictionary                                                      92.3%
