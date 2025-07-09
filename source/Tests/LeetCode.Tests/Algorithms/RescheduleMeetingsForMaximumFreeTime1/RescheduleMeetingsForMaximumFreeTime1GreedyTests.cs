@@ -9,26 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.CheckIfAnyElementHasPrimeFrequency;
+using LeetCode.Algorithms.RescheduleMeetingsForMaximumFreeTime1;
 
-/// <inheritdoc />
-public class CheckIfAnyElementHasPrimeFrequencyArray : CheckIfAnyElementHasPrimeFrequencyBase
-{
-    /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
-    public override bool CheckPrimeFrequency(int[] nums)
-    {
-        var frequencyArray = new int[Count];
+namespace LeetCode.Tests.Algorithms.RescheduleMeetingsForMaximumFreeTime1;
 
-        foreach (var num in nums)
-        {
-            frequencyArray[num]++;
-        }
-
-        return frequencyArray.Any(IsPrime);
-    }
-}
+[TestClass]
+public class RescheduleMeetingsForMaximumFreeTime1GreedyTests :
+    RescheduleMeetingsForMaximumFreeTime1TestsBase<RescheduleMeetingsForMaximumFreeTime1Greedy>;
