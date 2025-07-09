@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/8/2025 - 9:53:42 AM
-  Coverage date: 7/8/2025 - 9:52:33 AM - 7/8/2025 - 9:52:53 AM
+  Generated on: 7/9/2025 - 10:05:02 AM
+  Coverage date: 7/9/2025 - 10:04:06 AM - 7/9/2025 - 10:04:25 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 954
-  Files: 954
+  Classes: 955
+  Files: 955
   Line coverage: 97.6%
-  Covered lines: 20323
+  Covered lines: 20340
   Uncovered lines: 490
-  Coverable lines: 20813
-  Total lines: 52119
-  Branch coverage: 95.4% (7646 of 8008)
-  Covered branches: 7646
-  Total branches: 8008
-  Method coverage: 98.9% (1348 of 1362)
-  Full method coverage: 88.5% (1206 of 1362)
-  Covered methods: 1348
-  Fully covered methods: 1206
-  Total methods: 1362
+  Coverable lines: 20830
+  Total lines: 52171
+  Branch coverage: 95.4% (7654 of 8016)
+  Covered branches: 7654
+  Total branches: 8016
+  Method coverage: 98.9% (1349 of 1363)
+  Full method coverage: 88.5% (1207 of 1363)
+  Covered methods: 1349
+  Fully covered methods: 1207
+  Total methods: 1363
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -762,6 +762,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ReplaceWords.ReplaceWordsBruteForce                                                                                               100%
   LeetCode.Algorithms.ReplaceWords.ReplaceWordsHashSet                                                                                                  100%
   LeetCode.Algorithms.ReplaceWords.ReplaceWordsTrieNode                                                                                                 100%
+  LeetCode.Algorithms.RescheduleMeetingsForMaximumFreeTime1.RescheduleMeetingsForMaximumFreeTime1Greedy                                                 100%
   LeetCode.Algorithms.RevealCardsInIncreasingOrder.RevealCardsInIncreasingOrderQueue                                                                    100%
   LeetCode.Algorithms.ReverseBits.ReverseBitsIterative                                                                                                  100%
   LeetCode.Algorithms.ReverseDegreeOfString.ReverseDegreeOfStringIterative                                                                              100%
