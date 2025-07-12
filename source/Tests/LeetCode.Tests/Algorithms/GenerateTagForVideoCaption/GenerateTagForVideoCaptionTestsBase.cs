@@ -19,7 +19,7 @@ public abstract class GenerateTagForVideoCaptionTestsBase<T> where T : IGenerate
     [DataRow("Leetcode daily streak achieved", "#leetcodeDailyStreakAchieved")]
     [DataRow("can I Go There", "#canIGoThere")]
     [DataRow("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
-        "#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")]
+        "#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")]
     public void GenerateTag_WithCaptionContainingMultipleWords_ReturnsCamelCaseHashTag(string caption,
         string expectedResult)
     {
