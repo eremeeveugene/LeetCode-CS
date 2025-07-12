@@ -667,6 +667,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3545. Minimum Deletions for At Most K Distinct Characters](https://leetcode.com/problems/maximum-product-of-two-digits/description/)
 - [3550. Smallest Index With Digit Sum Equal to Index](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/description/)
 - [3560. Find Minimum Log Transportation Cost](https://leetcode.com/problems/find-minimum-log-transportation-cost/description/)
+- [3582. Generate Tag for Video Caption](https://leetcode.com/problems/generate-tag-for-video-caption/description/)
 - [3591. Check if Any Element Has Prime Frequency](https://leetcode.com/problems/check-if-any-element-has-prime-frequency/description/)
 - [3606. Coupon Code Validator](https://leetcode.com/problems/coupon-code-validator/description/)
 
