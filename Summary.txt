@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/10/2025 - 5:45:50 PM
-  Coverage date: 7/10/2025 - 5:44:53 PM - 7/10/2025 - 5:45:12 PM
+  Generated on: 7/12/2025 - 3:41:28 PM
+  Coverage date: 7/12/2025 - 3:40:29 PM - 7/12/2025 - 3:40:51 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 956
-  Files: 956
+  Classes: 958
+  Files: 958
   Line coverage: 97.6%
-  Covered lines: 20389
-  Uncovered lines: 490
-  Coverable lines: 20879
-  Total lines: 52269
-  Branch coverage: 95.4% (7672 of 8034)
-  Covered branches: 7672
-  Total branches: 8034
-  Method coverage: 98.9% (1354 of 1368)
-  Full method coverage: 88.5% (1212 of 1368)
-  Covered methods: 1354
-  Fully covered methods: 1212
-  Total methods: 1368
+  Covered lines: 20452
+  Uncovered lines: 498
+  Coverable lines: 20950
+  Total lines: 52428
+  Branch coverage: 95.4% (7696 of 8062)
+  Covered branches: 7696
+  Total branches: 8062
+  Method coverage: 98.9% (1357 of 1371)
+  Full method coverage: 88.4% (1213 of 1371)
+  Covered methods: 1357
+  Fully covered methods: 1213
+  Total methods: 1371
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -370,6 +370,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FloodFill.FloodFillIterative                                                                                                      100%
   LeetCode.Algorithms.FractionAdditionAndSubtraction.FractionAdditionAndSubtractionSimulation                                                           100%
   LeetCode.Algorithms.FreedomTrail.FreedomTrailDynamicProgramming                                                                                       100%
+  LeetCode.Algorithms.GenerateTagForVideoCaption.GenerateTagForVideoCaptionCharArray                                                                     95%
+  LeetCode.Algorithms.GenerateTagForVideoCaption.GenerateTagForVideoCaptionStringBuilder                                                               80.6%
   LeetCode.Algorithms.GetEqualSubstringsWithinBudget.GetEqualSubstringsWithinBudgetSlidingWindow                                                        100%
   LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationReplace                                                                          100%
   LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationStringBuilder                                                                    100%
