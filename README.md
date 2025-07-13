@@ -505,6 +505,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2401. Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/description/)
 - [2406. Divide Intervals Into Minimum Number of Groups](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/description/)
 - [2409. Circular Sentence](https://leetcode.com/problems/circular-sentence/description/)
+- [2410. Maximum Matching of Players With Trainers](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/description/)
 - [2413. Smallest Even Multiple](https://leetcode.com/problems/smallest-even-multiple/description/)
 - [2415. Reverse Odd Levels of Binary Tree](https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/description/)
 - [2416. Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/description/)
