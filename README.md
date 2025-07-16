@@ -621,6 +621,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3174. Clear Digits](https://leetcode.com/problems/clear-digits/description/)
 - [3190. Find Minimum Operations to Make All Elements Divisible by Three](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/description/)
 - [3191. Minimum Operations to Make Binary Array Elements Equal to One I](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/description/)
+- [3201. Find the Maximum Length of Valid Subsequence I](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/description/)
 - [3203. Find Minimum Diameter After Merging Two Trees](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/description/)
 - [3208. Alternating Groups II](https://leetcode.com/problems/alternating-groups-ii/description/)
 - [3210. Find the Encrypted String](https://leetcode.com/problems/find-the-encrypted-string/description/)
