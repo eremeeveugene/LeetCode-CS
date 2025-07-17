@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/16/2025 - 6:23:21 PM
-  Coverage date: 7/16/2025 - 6:22:24 PM - 7/16/2025 - 6:22:44 PM
+  Generated on: 7/17/2025 - 6:24:27 PM
+  Coverage date: 7/17/2025 - 6:23:30 PM - 7/17/2025 - 6:23:49 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 962
-  Files: 962
+  Classes: 963
+  Files: 963
   Line coverage: 97.6%
-  Covered lines: 20514
+  Covered lines: 20528
   Uncovered lines: 498
-  Coverable lines: 21012
-  Total lines: 52610
-  Branch coverage: 95.4% (7718 of 8086)
-  Covered branches: 7718
-  Total branches: 8086
-  Method coverage: 98.9% (1361 of 1375)
-  Full method coverage: 88.5% (1217 of 1375)
-  Covered methods: 1361
-  Fully covered methods: 1217
-  Total methods: 1375
+  Coverable lines: 21026
+  Total lines: 52654
+  Branch coverage: 95.4% (7722 of 8090)
+  Covered branches: 7722
+  Total branches: 8090
+  Method coverage: 98.9% (1362 of 1376)
+  Full method coverage: 88.5% (1218 of 1376)
+  Covered methods: 1362
+  Fully covered methods: 1218
+  Total methods: 1376
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -339,6 +339,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheLongestSubstringContainingVowelsInEvenCounts.FindTheLongestSubstringContainingVowelsInEvenCountsBitmasking                 100%
   LeetCode.Algorithms.FindTheMaximumAchievableNumber.FindTheMaximumAchievableNumberLinear                                                               100%
   LeetCode.Algorithms.FindTheMaximumLengthOfValidSubsequence1.FindTheMaximumLengthOfValidSubsequence1Greedy                                             100%
+  LeetCode.Algorithms.FindTheMaximumLengthOfValidSubsequence2.FindTheMaximumLengthOfValidSubsequence2DynamicProgramming                                 100%
   LeetCode.Algorithms.FindTheMaximumSumOfNodeValues.FindTheMaximumSumOfNodeValuesIterative                                                              100%
   LeetCode.Algorithms.FindTheMiddleIndexInArray.FindTheMiddleIndexInArrayIterative                                                                      100%
   LeetCode.Algorithms.FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsIterative   93.5%
