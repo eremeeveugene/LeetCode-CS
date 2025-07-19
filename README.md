@@ -642,6 +642,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3342. Find Minimum Time to Reach Last Room II](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/description/)
 - [3355. Zero Array Transformation I](https://leetcode.com/problems/zero-array-transformation-i/description/)
 - [3362. Zero Array Transformation III](https://leetcode.com/problems/zero-array-transformation-iii/description/)
+- [3364. Minimum Positive Sum Subarray](https://leetcode.com/problems/minimum-positive-sum-subarray/description/)
 - [3372. Maximize the Number of Target Nodes After Connecting Trees I](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/description/)
 - [3375. Minimum Operations to Make Array Values Equal to K](https://leetcode.com/problems/minimum-operations-to-make-array-values-equal-to-k/description/)
 - [3379. Transformed Array](https://leetcode.com/problems/transformed-array/description/)
