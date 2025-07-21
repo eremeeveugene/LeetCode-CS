@@ -29,9 +29,9 @@ public abstract class FizzBuzzTestsBase<T> where T : IFizzBuzz, new()
         var solution = new T();
 
         // Act
-        var actualResult = solution.FizzBuzz(n);
+        var actualResult = solution.FizzBuzz(n).ToArray();
 
         // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }
