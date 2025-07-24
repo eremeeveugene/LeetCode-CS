@@ -16,13 +16,20 @@ namespace LeetCode.Tests.Algorithms.DesignFrontMiddleBackQueue;
 
 public abstract class DesignFrontMiddleBackQueueTestsBase<T> where T : IDesignFrontMiddleBackQueue, new()
 {
+    private const string PushFront = "pushFront";
+    private const string PushMiddle = "pushMiddle";
+    private const string PushBack = "pushBack";
+    private const string PopFront = "popFront";
+    private const string PopMiddle = "popMiddle";
+    private const string PopBack = "popBack";
+
     [TestMethod]
     [DataRow(
-        "[\"PushFront\", \"PushBack\", \"PushMiddle\", \"PushMiddle\", \"PopFront\", \"PopMiddle\", \"PopMiddle\", \"PopBack\", \"PopFront\"]",
+        "[\"pushFront\", \"pushBack\", \"pushMiddle\", \"pushMiddle\", \"popFront\", \"popMiddle\", \"popMiddle\", \"popBack\", \"popFront\"]",
         "[1, 2, 3, 4, 0, 0, 0, 0, 0]",
         "[1, 3, 4, 2, -1]")]
-    public void DequeOperations_WithPushAndPopOperations_PerformsCorrectly(string operationsJson,
-        string argumentsJson, string expectedResultJson)
+    public void DesignFrontMiddleBackQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        string operationsJson, string argumentsJson, string expectedResultJson)
     {
         // Arrange
         var operations = JsonHelper<string[]>.Parse(operationsJson);
@@ -38,27 +45,27 @@ public abstract class DesignFrontMiddleBackQueueTestsBase<T> where T : IDesignFr
         {
             switch (operations[i])
             {
-                case "PushFront":
+                case PushFront:
                     solution.PushFront(arguments[i]);
 
                     break;
-                case "PushMiddle":
+                case PushMiddle:
                     solution.PushMiddle(arguments[i]);
 
                     break;
-                case "PushBack":
+                case PushBack:
                     solution.PushBack(arguments[i]);
 
                     break;
-                case "PopFront":
+                case PopFront:
                     actualResult.Add(solution.PopFront());
 
                     break;
-                case "PopMiddle":
+                case PopMiddle:
                     actualResult.Add(solution.PopMiddle());
 
                     break;
-                case "PopBack":
+                case PopBack:
                     actualResult.Add(solution.PopBack());
 
                     break;
