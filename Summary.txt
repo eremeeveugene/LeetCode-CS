@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/24/2025 - 8:00:20 AM
-  Coverage date: 7/24/2025 - 7:59:25 AM - 7/24/2025 - 7:59:44 AM
+  Generated on: 7/25/2025 - 8:42:41 AM
+  Coverage date: 7/25/2025 - 8:41:37 AM - 7/25/2025 - 8:41:57 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 970
-  Files: 970
+  Classes: 971
+  Files: 971
   Line coverage: 97.6%
-  Covered lines: 20649
+  Covered lines: 20659
   Uncovered lines: 498
-  Coverable lines: 21147
-  Total lines: 53015
+  Coverable lines: 21157
+  Total lines: 53065
   Branch coverage: 95.4% (7778 of 8146)
   Covered branches: 7778
   Total branches: 8146
-  Method coverage: 98.9% (1378 of 1392)
-  Full method coverage: 88.6% (1234 of 1392)
-  Covered methods: 1378
-  Fully covered methods: 1234
-  Total methods: 1392
+  Method coverage: 98.9% (1382 of 1396)
+  Full method coverage: 88.6% (1238 of 1396)
+  Covered methods: 1382
+  Fully covered methods: 1238
+  Total methods: 1396
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -217,6 +217,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedList                                                                                72.2%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueLinkedList                                                                  73.8%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueList                                                                        90.4%
+  LeetCode.Algorithms.DesignHashMap.DesignHashMapIntArray                                                                                               100%
   LeetCode.Algorithms.DesignHashSet.DesignHashSetBitArray                                                                                               100%
   LeetCode.Algorithms.DesignHashSet.DesignHashSetBoolArray                                                                                              100%
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceBruteForce                                                                      98.2%
