@@ -232,6 +232,8 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/description/)
 - [703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)
 - [704. Binary Search](https://leetcode.com/problems/binary-search/description/)
+- [705. Design HashSet](https://leetcode.com/problems/design-hashset/description/)
+- [706. Design HashMap](https://leetcode.com/problems/design-hashmap/description/)
 - [709. To Lower Case](https://leetcode.com/problems/to-lower-case/description/)
 - [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/description/)
 - [719. Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/)
