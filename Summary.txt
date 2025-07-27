@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/25/2025 - 8:42:41 AM
-  Coverage date: 7/25/2025 - 8:41:37 AM - 7/25/2025 - 8:41:57 AM
+  Generated on: 7/27/2025 - 3:17:19 PM
+  Coverage date: 7/27/2025 - 3:16:16 PM - 7/27/2025 - 3:16:36 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 971
-  Files: 971
+  Classes: 973
+  Files: 973
   Line coverage: 97.6%
-  Covered lines: 20659
+  Covered lines: 20699
   Uncovered lines: 498
-  Coverable lines: 21157
-  Total lines: 53065
-  Branch coverage: 95.4% (7778 of 8146)
-  Covered branches: 7778
-  Total branches: 8146
-  Method coverage: 98.9% (1382 of 1396)
-  Full method coverage: 88.6% (1238 of 1396)
-  Covered methods: 1382
-  Fully covered methods: 1238
-  Total methods: 1396
+  Coverable lines: 21197
+  Total lines: 53168
+  Branch coverage: 95.4% (7796 of 8164)
+  Covered branches: 7796
+  Total branches: 8164
+  Method coverage: 98.9% (1384 of 1398)
+  Full method coverage: 88.6% (1240 of 1398)
+  Covered methods: 1384
+  Fully covered methods: 1240
+  Total methods: 1398
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -824,6 +824,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.SeparateBlackAndWhiteBalls.SeparateBlackAndWhiteBallsTwoPointers                                                                  100%
   LeetCode.Algorithms.SetMatrixZeroes.SetMatrixZeroesArrayMarkers                                                                                       100%
   LeetCode.Algorithms.SetMatrixZeroes.SetMatrixZeroesInPlace                                                                                            100%
+  LeetCode.Algorithms.SetMismatch.SetMismatchCounting                                                                                                   100%
+  LeetCode.Algorithms.SetMismatch.SetMismatchHashSet                                                                                                    100%
   LeetCode.Algorithms.ShiftingLetters2.ShiftingLetters2DifferenceArray                                                                                  100%
   LeetCode.Algorithms.ShortestDistanceAfterRoadAdditionQueries1.ShortestDistanceAfterRoadAdditionQueries1BreadthFirstSearch                             100%
   LeetCode.Algorithms.ShortestDistanceToTargetStringInCircularArray.ShortestDistanceToTargetStringInCircularArrayIterative                              100%
