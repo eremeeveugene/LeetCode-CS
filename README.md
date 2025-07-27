@@ -221,6 +221,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [633. Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/)
 - [641. Design Circular Deque](https://leetcode.com/problems/design-circular-deque/description/)
 - [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/description/)
+- [645. Set Mismatch](https://leetcode.com/problems/set-mismatch/description/)
 - [648. Replace Words](https://leetcode.com/problems/replace-words/description/)
 - [650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/)
 - [657. Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/description/)
