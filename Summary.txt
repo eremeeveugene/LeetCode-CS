@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/27/2025 - 5:02:18 PM
-  Coverage date: 7/27/2025 - 5:01:05 PM - 7/27/2025 - 5:01:24 PM
+  Generated on: 7/28/2025 - 7:57:08 AM
+  Coverage date: 7/28/2025 - 7:56:10 AM - 7/28/2025 - 7:56:30 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 974
-  Files: 974
+  Classes: 975
+  Files: 975
   Line coverage: 97.6%
-  Covered lines: 20735
+  Covered lines: 20776
   Uncovered lines: 500
-  Coverable lines: 21235
-  Total lines: 53252
-  Branch coverage: 95.4% (7815 of 8184)
-  Covered branches: 7815
-  Total branches: 8184
-  Method coverage: 98.9% (1385 of 1399)
-  Full method coverage: 88.6% (1240 of 1399)
-  Covered methods: 1385
-  Fully covered methods: 1240
-  Total methods: 1399
+  Coverable lines: 21276
+  Total lines: 53338
+  Branch coverage: 95.4% (7829 of 8198)
+  Covered branches: 7829
+  Total branches: 8198
+  Method coverage: 99% (1387 of 1401)
+  Full method coverage: 88.6% (1242 of 1401)
+  Covered methods: 1387
+  Fully covered methods: 1242
+  Total methods: 1401
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -636,6 +636,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ModifyGraphEdgeWeights.ModifyGraphEdgeWeightsDijkstra                                                                            94.2%
   LeetCode.Algorithms.MonotonicArray.MonotonicArrayIterative                                                                                            100%
   LeetCode.Algorithms.MostBeautifulItemForEachQuery.MostBeautifulItemForEachQueryBinarySearch                                                           100%
+  LeetCode.Algorithms.MostCommonWord.MostCommonWordDictionary                                                                                           100%
   LeetCode.Algorithms.MostStonesRemovedWithSameRowOrColumn.MostStonesRemovedWithSameRowOrColumnUnionFind                                                100%
   LeetCode.Algorithms.MovePiecesToObtainString.MovePiecesToObtainStringTwoPointers                                                                       78%
   LeetCode.Algorithms.MoveZeroes.MoveZeroesTwoPointers                                                                                                  100%
