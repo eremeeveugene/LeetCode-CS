@@ -257,6 +257,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
 - [796. Rotate String](https://leetcode.com/problems/rotate-string/description/)
 - [804. Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/description/)
+- [819. Most Common Word](https://leetcode.com/problems/most-common-word/description/)
 - [834. Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/description/)
 - [838. Push Dominoes](https://leetcode.com/problems/push-dominoes/description/)
 - [840. Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid/description/)
