@@ -11,6 +11,7 @@
 
 namespace LeetCode.Algorithms.CheckIfAnyElementHasPrimeFrequency;
 
+/// <inheritdoc />
 public abstract class CheckIfAnyElementHasPrimeFrequencyBase : ICheckIfAnyElementHasPrimeFrequency
 {
     protected const int Count = 101;
