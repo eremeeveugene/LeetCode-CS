@@ -9,12 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.FloodFill;
+namespace LeetCode.Algorithms.FlippingAnImage;
 
 /// <summary>
-///     https://leetcode.com/problems/flood-fill/description/
+///     https://leetcode.com/problems/flipping-an-image/description/
 /// </summary>
-public interface IFloodFill
+public interface IFlippingAnImage
 {
-    int[][] FloodFill(int[][] image, int sr, int sc, int color);
+    int[][] FlipAndInvertImage(int[][] image);
 }

@@ -9,19 +9,18 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.FloodFill;
+using LeetCode.Algorithms.FlippingAnImage;
 using LeetCode.Core.Helpers;
 
-namespace LeetCode.Tests.Algorithms.FloodFill;
+namespace LeetCode.Tests.Algorithms.FlippingAnImage;
 
-public abstract class FloodFillTestsBase<T> where T : IFloodFill, new()
+public abstract class FlippingAnImageTestsBase<T> where T : IFlippingAnImage, new()
 {
     [TestMethod]
-    [DataRow("[[0,0,0],[0,0,0]]", 0, 0, 0, "[[0,0,0],[0,0,0]]")]
-    [DataRow("[[0,0,0],[0,0,0]]", 1, 0, 2, "[[2,2,2,],[2,2,2]]")]
-    [DataRow("[[1,1,1],[1,1,0],[1,0,1]]", 1, 1, 2, "[[2,2,2],[2,2,0],[2,0,1]]")]
-    public void FloodFill_WithInitialPositionAndNewColor_ReturnsModifiedImage(string imageJson, int sr, int sc,
-        int color, string expectedResultJson)
+    [DataRow("[[1,1,0],[1,0,1],[0,0,0]]", "[[1,0,0],[0,1,0],[1,1,1]]")]
+    [DataRow("[[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]", "[[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]")]
+    public void FlipAndInvertImage_WithMatrixContainingBinaryValues_ReturnsHorizontallyFlippedAndInvertedMatrix(
+        string imageJson, string expectedResultJson)
     {
         // Arrange
         var image = JsonHelper<int[][]>.Parse(imageJson);
@@ -30,7 +29,7 @@ public abstract class FloodFillTestsBase<T> where T : IFloodFill, new()
         var solution = new T();
 
         // Act
-        var actualResult = solution.FloodFill(image, sr, sc, color);
+        var actualResult = solution.FlipAndInvertImage(image);
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
