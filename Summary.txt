@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/30/2025 - 4:31:48 PM
-  Coverage date: 7/30/2025 - 4:30:43 PM - 7/30/2025 - 4:31:02 PM
+  Generated on: 8/3/2025 - 11:49:18 AM
+  Coverage date: 8/3/2025 - 11:48:20 AM - 8/3/2025 - 11:48:40 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 977
-  Files: 977
+  Classes: 979
+  Files: 979
   Line coverage: 97.6%
-  Covered lines: 20830
+  Covered lines: 20858
   Uncovered lines: 500
-  Coverable lines: 21330
-  Total lines: 53463
-  Branch coverage: 95.5% (7853 of 8222)
-  Covered branches: 7853
-  Total branches: 8222
-  Method coverage: 99% (1391 of 1405)
-  Full method coverage: 88.6% (1246 of 1405)
-  Covered methods: 1391
-  Fully covered methods: 1246
-  Total methods: 1405
+  Coverable lines: 21358
+  Total lines: 53546
+  Branch coverage: 95.5% (7861 of 8230)
+  Covered branches: 7861
+  Total branches: 8230
+  Method coverage: 99% (1394 of 1408)
+  Full method coverage: 88.7% (1249 of 1408)
+  Covered methods: 1394
+  Fully covered methods: 1249
+  Total methods: 1408
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -379,6 +379,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FizzBuzz.FizzBuzzIterative                                                                                                        100%
   LeetCode.Algorithms.FlipColumnsForMaximumNumberOfEqualRows.FlipColumnsForMaximumNumberOfEqualRowsDictionary                                           100%
   LeetCode.Algorithms.FlipEquivalentBinaryTrees.FlipEquivalentBinaryTreesRecursive                                                                      100%
+  LeetCode.Algorithms.FlippingAnImage.FlippingAnImageReverse                                                                                            100%
+  LeetCode.Algorithms.FlippingAnImage.FlippingAnImageTwoPointers                                                                                        100%
   LeetCode.Algorithms.FloodFill.FloodFillIterative                                                                                                      100%
   LeetCode.Algorithms.FractionAdditionAndSubtraction.FractionAdditionAndSubtractionSimulation                                                           100%
   LeetCode.Algorithms.FreedomTrail.FreedomTrailDynamicProgramming                                                                                       100%
