@@ -20,7 +20,6 @@ public abstract class ContainsDuplicate3TestsBase<T> where T : IContainsDuplicat
     [DataRow("[1, 2, 3, 1]", 3, 0, true)]
     [DataRow("[1, 5, 9, 1, 5, 9]", 2, 3, false)]
     [DataRow("[1, 0, 1, 1]", 1, 2, true)]
-    [DataRow("[1, 5, 9, 1, 5, 9]", 2, 3, false)]
     [DataRow("[1, 2, 3, 4, 5, 6]", 1, 0, false)]
     [DataRow("[]", 2, 1, false)]
     [DataRow("[1, 2, 3, 1]", 0, 1, false)]

@@ -28,7 +28,6 @@ public abstract class NumberComplementTestsBase<T> where T : INumberComplement, 
     [DataRow(16, 15)]
     [DataRow(69, 58)]
     [DataRow(911, 112)]
-    [DataRow(911, 112)]
     [DataRow(1073741824, 1073741823)]
     [DataRow(2100003647, 47480000)]
     [DataRow(int.MaxValue, 0)]

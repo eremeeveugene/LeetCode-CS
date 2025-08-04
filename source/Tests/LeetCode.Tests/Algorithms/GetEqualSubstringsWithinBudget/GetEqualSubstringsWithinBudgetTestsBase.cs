@@ -19,7 +19,6 @@ public abstract class GetEqualSubstringsWithinBudgetTestsBase<T> where T : IGetE
     [DataRow("abcd", "bcdf", 3, 3)]
     [DataRow("abcd", "cdef", 3, 1)]
     [DataRow("abcd", "acde", 0, 1)]
-    [DataRow("abcd", "cdef", 3, 1)]
     [DataRow("krrgw", "zjxss", 19, 2)]
     [DataRow("pxezla", "loewbi", 25, 4)]
     [DataRow("ujteygggjwxnfl", "nstsenrzttikoy", 43, 5)]

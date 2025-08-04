@@ -24,7 +24,6 @@ public abstract class SentenceSimilarity3TestsBase<T> where T : ISentenceSimilar
     [DataRow("z z z z", "zz z", false)]
     [DataRow("A a a", "Aa a", false)]
     [DataRow("hello racecar", "hello racecar acecar", true)]
-    [DataRow("A B C D B B", "A B B", true)]
     [DataRow("hello", "hr uyello", false)]
     [DataRow("DN PD", "D", false)]
     public void AreSentencesSimilar_GivenTwoSentences_ReturnsWhetherTheyAreSimilar(string sentence1, string sentence2,

@@ -94,24 +94,22 @@ public abstract class ImplementQueueUsingStacksTestsBase<T> where T : IImplement
     }
 
     [TestMethod]
-    [ExpectedException(typeof(InvalidOperationException))]
     public void Pop_OnEmptyQueue_ThrowsInvalidOperationException()
     {
         // Arrange
         var solution = new T();
 
-        // Act
-        solution.Pop();
+        // Act & Assert
+        Assert.ThrowsExactly<InvalidOperationException>(() => solution.Pop());
     }
 
     [TestMethod]
-    [ExpectedException(typeof(InvalidOperationException))]
     public void Peek_OnEmptyQueue_ThrowsInvalidOperationException()
     {
         // Arrange
         var solution = new T();
 
-        // Act
-        solution.Peek();
+        // Act & Assert
+        Assert.ThrowsExactly<InvalidOperationException>(() => solution.Peek());
     }
 }
