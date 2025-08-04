@@ -21,7 +21,6 @@ public abstract class ThirdMaximumNumberTestsBase<T> where T : IThirdMaximumNumb
     [DataRow("[1, 2]", 2)]
     [DataRow("[1, 1, 2]", 2)]
     [DataRow("[2, 2, 3, 1]", 1)]
-    [DataRow("[2, 2, 3, 1]", 1)]
     [DataRow("[14]", 14)]
     [DataRow("[1, 2, -2147483648]", int.MinValue)]
     [DataRow("[1, -2147483648, 2]", int.MinValue)]

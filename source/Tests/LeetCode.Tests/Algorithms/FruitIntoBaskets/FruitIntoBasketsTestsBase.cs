@@ -9,35 +9,27 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.NumberComplement;
+using LeetCode.Algorithms.FruitIntoBaskets;
+using LeetCode.Core.Helpers;
 
-namespace LeetCode.Tests.Algorithms.NumberComplement;
+namespace LeetCode.Tests.Algorithms.FruitIntoBaskets;
 
-public abstract class NumberComplementTestsBase<T> where T : INumberComplement, new()
+public abstract class FruitIntoBasketsTestsBase<T> where T : IFruitIntoBaskets, new()
 {
     [TestMethod]
-    [DataRow(1, 0)]
-    [DataRow(2, 1)]
-    [DataRow(3, 0)]
-    [DataRow(4, 3)]
-    [DataRow(5, 2)]
-    [DataRow(6, 1)]
-    [DataRow(7, 0)]
-    [DataRow(8, 7)]
-    [DataRow(9, 6)]
-    [DataRow(16, 15)]
-    [DataRow(69, 58)]
-    [DataRow(911, 112)]
-    [DataRow(1073741824, 1073741823)]
-    [DataRow(2100003647, 47480000)]
-    [DataRow(int.MaxValue, 0)]
-    public void FindComplement_WithGivenNumber_ReturnsBitwiseComplement(int num, int expectedResult)
+    [DataRow("[1,2,1]", 3)]
+    [DataRow("[0,1,2,2]", 3)]
+    [DataRow("[1,2,3,2,2]", 4)]
+    public void TotalFruit_WithTwoBasketLimit_ReturnsMaximumNumberOfFruitsCollected(string fruitsJson,
+        int expectedResult)
     {
         // Arrange
+        var fruits = JsonHelper<int[]>.Parse(fruitsJson);
+
         var solution = new T();
 
         // Act
-        var actualResult = solution.FindComplement(num);
+        var actualResult = solution.TotalFruit(fruits);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

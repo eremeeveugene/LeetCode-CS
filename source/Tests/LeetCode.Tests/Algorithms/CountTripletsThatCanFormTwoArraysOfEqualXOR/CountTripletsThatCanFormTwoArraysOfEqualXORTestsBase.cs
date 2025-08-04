@@ -20,7 +20,6 @@ public abstract class CountTripletsThatCanFormTwoArraysOfEqualXORTestsBase<T>
     [TestMethod]
     [DataRow("[2, 3, 1, 6, 7]", 4)]
     [DataRow("[1, 1, 1, 1, 1]", 10)]
-    [DataRow("[1, 1, 1, 1, 1]", 10)]
     public void CountTriplets_WithArrayOfIntegers_ReturnsNumberOfEqualXorTriplets(string arrJson, int expectedResult)
     {
         // Arrange

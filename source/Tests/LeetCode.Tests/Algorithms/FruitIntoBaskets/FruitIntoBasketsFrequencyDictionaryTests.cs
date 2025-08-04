@@ -9,30 +9,9 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.PassThePillow;
+using LeetCode.Algorithms.FruitIntoBaskets;
 
-namespace LeetCode.Tests.Algorithms.PassThePillow;
+namespace LeetCode.Tests.Algorithms.FruitIntoBaskets;
 
-public abstract class PassThePillowTestsBase<T> where T : IPassThePillow, new()
-{
-    [TestMethod]
-    [DataRow(4, 5, 2)]
-    [DataRow(3, 2, 3)]
-    [DataRow(3, 100, 1)]
-    [DataRow(23, 967, 2)]
-    [DataRow(10, 999, 10)]
-    [DataRow(18, 38, 5)]
-    [DataRow(2, 1000, 1)]
-    public void PassThePillow_WithPeopleCountAndElapsedTime_ReturnsPersonIndexHoldingPillow(int n, int time,
-        int expectedResult)
-    {
-        // Arrange
-        var solution = new T();
-
-        // Act
-        var actualResult = solution.PassThePillow(n, time);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
-    }
-}
+[TestClass]
+public class FruitIntoBasketsFrequencyDictionaryTests : FruitIntoBasketsTestsBase<FruitIntoBasketsFrequencyDictionary>;

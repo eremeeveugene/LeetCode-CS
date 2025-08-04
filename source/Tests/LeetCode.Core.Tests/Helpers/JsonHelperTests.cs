@@ -16,7 +16,7 @@ namespace LeetCode.Core.Tests.Helpers;
 [TestClass]
 public class JsonHelperTests
 {
-    [DataTestMethod]
+    [TestMethod]
     [DataRow("\"hello\"", "hello")]
     [DataRow("\"\"", "")]
     public void Parse_WithJsonString_ReturnsParsedString(string stringJson, string expectedResult)
@@ -28,7 +28,7 @@ public class JsonHelperTests
         Assert.AreEqual(expectedResult, actualResult);
     }
 
-    [DataTestMethod]
+    [TestMethod]
     [DataRow("null", null)]
     [DataRow("\"hello\"", "hello")]
     [DataRow("\"\"", "")]
@@ -42,7 +42,7 @@ public class JsonHelperTests
         Assert.AreEqual(expectedResult, actualResult);
     }
 
-    [DataTestMethod]
+    [TestMethod]
     [DataRow("true", true)]
     [DataRow("false", false)]
     public void Parse_WithBoolJsonString_ReturnsParsedBool(string boolJson, bool expectedResult)
@@ -54,7 +54,7 @@ public class JsonHelperTests
         Assert.AreEqual(expectedResult, actualResult);
     }
 
-    [DataTestMethod]
+    [TestMethod]
     [DataRow("123", 123)]
     [DataRow("-5", -5)]
     public void Parse_WithIntJsonString_ReturnsParsedInt(string intJson, int expectedResult)
@@ -66,7 +66,7 @@ public class JsonHelperTests
         Assert.AreEqual(expectedResult, actualResult);
     }
 
-    [DataTestMethod]
+    [TestMethod]
     [DataRow("null", null)]
     [DataRow("42", 42)]
     public void Parse_WithNullableIntJsonString_ReturnsParsedNullableInt(string nullableIntJson, int? expectedResult)
@@ -78,7 +78,7 @@ public class JsonHelperTests
         Assert.AreEqual(expectedResult, actualResult);
     }
 
-    [DataTestMethod]
+    [TestMethod]
     [DataRow("3000000000", 3000000000L)]
     public void Parse_WithLongJsonString_ReturnsParsedLong(string longJson, long expectedResult)
     {
@@ -89,7 +89,7 @@ public class JsonHelperTests
         Assert.AreEqual(expectedResult, actualResult);
     }
 
-    [DataTestMethod]
+    [TestMethod]
     [DataRow("3.14", 3.14)]
     [DataRow("0.0", 0.0)]
     public void Parse_WithDoubleJsonString_ReturnsParsedDouble(string doubleJson, double expectedResult)
