@@ -669,6 +669,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3452. Sum of Good Numbers](https://leetcode.com/problems/sum-of-good-numbers/description/)
 - [3461. Check If Digits Are Equal in String After Operations I](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/description/)
 - [3467. Transform Array by Parity](https://leetcode.com/problems/transform-array-by-parity/description/)
+- [3477. Fruits Into Baskets II](https://leetcode.com/problems/fruits-into-baskets-ii/description/)
 - [3483. Unique 3-Digit Even Numbers](https://leetcode.com/problems/unique-3-digit-even-numbers/description/)
 - [3487. Maximum Unique Subarray Sum After Deletion](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/description/)
 - [3492. Maximum Containers on a Ship](https://leetcode.com/problems/maximum-containers-on-a-ship/description/)
