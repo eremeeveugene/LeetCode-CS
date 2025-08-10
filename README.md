@@ -271,6 +271,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [861. Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/description/)
 - [862. Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/description/)
 - [865. Smallest Subtree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/description/)
+- [869. Reordered Power of 2](https://leetcode.com/problems/reordered-power-of-2/description/)
 - [877. Stone Game](https://leetcode.com/problems/stone-game/description/)
 - [874. Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/description/)
 - [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/)
