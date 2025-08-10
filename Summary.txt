@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/9/2025 - 12:09:15 PM
-  Coverage date: 8/9/2025 - 12:07:39 PM - 8/9/2025 - 12:08:37 PM
+  Generated on: 8/10/2025 - 1:44:51 PM
+  Coverage date: 8/10/2025 - 1:43:43 PM - 8/10/2025 - 1:44:01 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 982
-  Files: 982
+  Classes: 983
+  Files: 983
   Line coverage: 97.6%
-  Covered lines: 20910
-  Uncovered lines: 505
-  Coverable lines: 21415
-  Total lines: 53699
-  Branch coverage: 95.5% (7881 of 8252)
-  Covered branches: 7881
-  Total branches: 8252
-  Method coverage: 99% (1397 of 1411)
-  Full method coverage: 88.5% (1250 of 1411)
-  Covered methods: 1397
-  Fully covered methods: 1250
-  Total methods: 1411
+  Covered lines: 20941
+  Uncovered lines: 503
+  Coverable lines: 21444
+  Total lines: 53765
+  Branch coverage: 95.5% (7892 of 8262)
+  Covered branches: 7892
+  Total branches: 8262
+  Method coverage: 99% (1400 of 1414)
+  Full method coverage: 88.6% (1254 of 1414)
+  Covered methods: 1400
+  Fully covered methods: 1254
+  Total methods: 1414
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -780,6 +780,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RemoveSubFoldersFromTheFilesystem.RemoveSubFoldersFromTheFilesystemHashSet                                                        100%
   LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce                                  90%
   LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListDictionary                                 100%
+  LeetCode.Algorithms.ReorderedPowerOfTwo.ReorderedPowerOfTwoFrequencyArray                                                                             100%
   LeetCode.Algorithms.ReorderList.ReorderListTwoPointers                                                                                               93.7%
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternConcat                                                                           100%
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternIterative                                                                        100%
@@ -989,7 +990,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
