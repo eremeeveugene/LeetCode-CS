@@ -9,19 +9,20 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.RangeSumQueryImmutable;
+using LeetCode.Algorithms.RangeSumQueryMutable;
 using LeetCode.Core.Helpers;
 using LeetCode.Tests.Base.Exceptions;
 
-namespace LeetCode.Tests.Algorithms.RangeSumQueryImmutable;
+namespace LeetCode.Tests.Algorithms.RangeSumQueryMutable;
 
-public abstract class RangeSumQueryImmutableTestsBase
+public abstract class RangeSumQueryMutableTestsBase
 {
+    private const string Update = "update";
     private const string SumRange = "sumRange";
 
     [TestMethod]
-    [DataRow("[-2,0,3,-5,2,-1]", "[\"sumRange\", \"sumRange\", \"sumRange\"]", "[[0, 2], [2, 5], [0, 5]]", "[1,-1,-3]")]
-    public void RangeSumQueryImmutable_WithGivenArrayAndRangeQueries_ProcessesOperationsAccordingToSpecification(
+    [DataRow("[1, 3, 5]", "[\"sumRange\", \"update\", \"sumRange\"]", "[[0, 2], [1, 2], [0, 2]]", "[9, 8]")]
+    public void RangeSumQueryMutable_WithGivenArrayAndRangeQueries_ProcessesOperationsAccordingToSpecification(
         string numsJson, string methodsJson, string argumentsJson, string expectedResultJson)
     {
         // Arrange
@@ -39,6 +40,9 @@ public abstract class RangeSumQueryImmutableTestsBase
         {
             switch (methods[i])
             {
+                case Update:
+                    solution.Update((int)arguments[i][0], (int)arguments[i][1]);
+                    break;
                 case SumRange:
                     actualResult.Add(solution.SumRange((int)arguments[i][0], (int)arguments[i][1]));
                     break;
@@ -51,5 +55,5 @@ public abstract class RangeSumQueryImmutableTestsBase
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
-    protected abstract IRangeSumQueryImmutable GetSolution(int[] nums);
+    protected abstract IRangeSumQueryMutable GetSolution(int[] nums);
 }

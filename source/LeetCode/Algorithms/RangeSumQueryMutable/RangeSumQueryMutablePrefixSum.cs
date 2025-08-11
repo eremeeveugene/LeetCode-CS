@@ -9,11 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.RangeSumQueryImmutable;
+namespace LeetCode.Algorithms.RangeSumQueryMutable;
 
 /// <inheritdoc />
-public class RangeSumQueryImmutablePrefixSum : IRangeSumQueryImmutable
+public class RangeSumQueryMutablePrefixSum : IRangeSumQueryMutable
 {
+    private readonly int[] _nums;
     private readonly int[] _prefixSum;
 
     /// <summary>
@@ -21,13 +22,31 @@ public class RangeSumQueryImmutablePrefixSum : IRangeSumQueryImmutable
     ///     Space complexity - O(n)
     /// </summary>
     /// <param name="nums"></param>
-    public RangeSumQueryImmutablePrefixSum(int[] nums)
+    public RangeSumQueryMutablePrefixSum(int[] nums)
     {
+        _nums = nums;
+
         _prefixSum = new int[nums.Length + 1];
 
         for (var i = 0; i < nums.Length; i++)
         {
             _prefixSum[i + 1] = _prefixSum[i] + nums[i];
+        }
+    }
+
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="index"></param>
+    /// <param name="val"></param>
+    public void Update(int index, int val)
+    {
+        _nums[index] = val;
+
+        for (var i = index; i < _nums.Length; i++)
+        {
+            _prefixSum[i + 1] = _prefixSum[i] + _nums[i];
         }
     }
 
