@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/11/2025 - 5:04:02 PM
-  Coverage date: 8/11/2025 - 5:03:02 PM - 8/11/2025 - 5:03:21 PM
+  Generated on: 8/12/2025 - 4:50:24 PM
+  Coverage date: 8/12/2025 - 4:48:36 PM - 8/12/2025 - 4:49:34 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 986
-  Files: 986
+  Classes: 987
+  Files: 987
   Line coverage: 97.7%
-  Covered lines: 21047
-  Uncovered lines: 494
-  Coverable lines: 21541
-  Total lines: 54011
-  Branch coverage: 95.5% (7919 of 8288)
-  Covered branches: 7919
-  Total branches: 8288
-  Method coverage: 99.1% (1409 of 1421)
-  Full method coverage: 88.8% (1262 of 1421)
-  Covered methods: 1409
-  Fully covered methods: 1262
-  Total methods: 1421
+  Covered lines: 21074
+  Uncovered lines: 491
+  Coverable lines: 21565
+  Total lines: 54072
+  Branch coverage: 95.5% (7928 of 8296)
+  Covered branches: 7928
+  Total branches: 8296
+  Method coverage: 99.1% (1411 of 1423)
+  Full method coverage: 88.8% (1265 of 1423)
+  Covered methods: 1411
+  Fully covered methods: 1265
+  Total methods: 1423
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -980,6 +980,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ValidWord.ValidWordIterative                                                                                                      100%
   LeetCode.Algorithms.WalkingRobotSimulation.WalkingRobotSimulationHashSet                                                                               90%
   LeetCode.Algorithms.WaterBottles.WaterBottlesSimulation                                                                                               100%
+  LeetCode.Algorithms.WaysToExpressAnIntegerAsSumOfPowers.WaysToExpressAnIntegerAsSumOfPowersDynamicProgramming                                         100%
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsAscending                100%
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescending               100%
   LeetCode.Algorithms.WordPattern.WordPatternDictionary                                                                                                 100%
@@ -996,7 +997,7 @@ LeetCode                                                                        
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                90.6%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                    100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             100%
