@@ -499,6 +499,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2235. Add Two Integers](https://leetcode.com/problems/add-two-integers/description/)
 - [2236. Root Equals Sum of Children](https://leetcode.com/problems/root-equals-sum-of-children/description/)
 - [2257. Count Unguarded Cells in the Grid](https://leetcode.com/problems/count-unguarded-cells-in-the-grid/description/)
+- [2264. Largest 3-Same-Digit Number in String](https://leetcode.com/problems/largest-3-same-digit-number-in-string/description/)
 - [2270. Number of Ways to Split Array](https://leetcode.com/problems/number-of-ways-to-split-array/description/)
 - [2275. Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/description/)
 - [2288. Apply Discount to Prices](https://leetcode.com/problems/apply-discount-to-prices/description/)
