@@ -341,6 +341,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1310. XOR Queries of a Subarray](https://leetcode.com/problems/xor-queries-of-a-subarray/description/)
 - [1323. Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/description/)
 - [1325. Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/description/)
+- [1329. Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally/description/)
 - [1331. Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/description/)
 - [1342. Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/description/)
 - [1346. Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/description/)

@@ -9,25 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.SortThePeople;
+namespace LeetCode.Algorithms.SortTheMatrixDiagonally;
 
-/// <inheritdoc />
-public class SortThePeopleLinq : ISortThePeople
+/// <summary>
+///     https://leetcode.com/problems/sort-the-matrix-diagonally/description/
+/// </summary>
+public interface ISortTheMatrixDiagonally
 {
-    /// <summary>
-    ///     Time complexity - O(n log n)
-    ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="names"></param>
-    /// <param name="heights"></param>
-    /// <returns></returns>
-    public string[] SortPeople(string[] names, int[] heights)
-    {
-        return
-        [
-            ..names.Zip(heights, (name, height) => (name, height))
-                .OrderByDescending(x => x.height)
-                .Select(x => x.name)
-        ];
-    }
+    int[][] DiagonalSort(int[][] mat);
 }

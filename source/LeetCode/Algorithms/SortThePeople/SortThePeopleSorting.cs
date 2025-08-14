@@ -12,22 +12,20 @@
 namespace LeetCode.Algorithms.SortThePeople;
 
 /// <inheritdoc />
-public class SortThePeopleLinq : ISortThePeople
+public class SortThePeopleSorting : ISortThePeople
 {
     /// <summary>
     ///     Time complexity - O(n log n)
-    ///     Space complexity - O(n)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="names"></param>
     /// <param name="heights"></param>
     /// <returns></returns>
     public string[] SortPeople(string[] names, int[] heights)
     {
-        return
-        [
-            ..names.Zip(heights, (name, height) => (name, height))
-                .OrderByDescending(x => x.height)
-                .Select(x => x.name)
-        ];
+        Array.Sort(heights, names);
+        Array.Reverse(names);
+
+        return names;
     }
 }
