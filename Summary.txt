@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/12/2025 - 4:50:24 PM
-  Coverage date: 8/12/2025 - 4:48:36 PM - 8/12/2025 - 4:49:34 PM
+  Generated on: 8/14/2025 - 10:19:49 AM
+  Coverage date: 8/14/2025 - 10:18:13 AM - 8/14/2025 - 10:19:11 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 987
-  Files: 987
+  Classes: 989
+  Files: 989
   Line coverage: 97.7%
-  Covered lines: 21074
-  Uncovered lines: 491
-  Coverable lines: 21565
-  Total lines: 54072
-  Branch coverage: 95.5% (7928 of 8296)
-  Covered branches: 7928
-  Total branches: 8296
-  Method coverage: 99.1% (1411 of 1423)
-  Full method coverage: 88.8% (1265 of 1423)
-  Covered methods: 1411
-  Fully covered methods: 1265
-  Total methods: 1423
+  Covered lines: 21102
+  Uncovered lines: 493
+  Coverable lines: 21595
+  Total lines: 54160
+  Branch coverage: 95.5% (7949 of 8318)
+  Covered branches: 7949
+  Total branches: 8318
+  Method coverage: 99.1% (1414 of 1426)
+  Full method coverage: 88.8% (1267 of 1426)
+  Covered methods: 1414
+  Fully covered methods: 1267
+  Total methods: 1426
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -449,6 +449,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.LargestPerimeterTriangle.LargestPerimeterTriangleSorting                                                                          100%
   LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeHashSet                            100%
   LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointers                 100%
+  LeetCode.Algorithms.LargestThreeSameDigitNumberInString.LargestThreeSameDigitNumberInStringGreedy                                                     100%
+  LeetCode.Algorithms.LargestThreeSameDigitNumberInString.LargestThreeSameDigitNumberInStringGreedyOptimized                                           89.4%
   LeetCode.Algorithms.LeftAndRightSumDifferences.LeftAndRightSumDifferencesPrefixSum                                                                    100%
   LeetCode.Algorithms.LemonadeChange.LemonadeChangeGreedy                                                                                                92%
   LeetCode.Algorithms.LengthOfLastWord.LengthOfLastWordReverseIteration                                                                                 100%
