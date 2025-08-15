@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/14/2025 - 7:49:22 PM
-  Coverage date: 8/14/2025 - 7:47:46 PM - 8/14/2025 - 7:48:43 PM
+  Generated on: 8/15/2025 - 3:22:21 PM
+  Coverage date: 8/15/2025 - 3:21:25 PM - 8/15/2025 - 3:21:44 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 991
-  Files: 991
+  Classes: 993
+  Files: 993
   Line coverage: 97.7%
-  Covered lines: 21145
+  Covered lines: 21199
   Uncovered lines: 495
-  Coverable lines: 21640
-  Total lines: 54268
-  Branch coverage: 95.5% (7959 of 8330)
-  Covered branches: 7959
-  Total branches: 8330
-  Method coverage: 99.1% (1417 of 1429)
-  Full method coverage: 88.8% (1269 of 1429)
-  Covered methods: 1417
-  Fully covered methods: 1269
-  Total methods: 1429
+  Coverable lines: 21694
+  Total lines: 54385
+  Branch coverage: 95.5% (7982 of 8352)
+  Covered branches: 7982
+  Total branches: 8352
+  Method coverage: 99.1% (1419 of 1431)
+  Full method coverage: 88.8% (1271 of 1431)
+  Covered methods: 1419
+  Fully covered methods: 1271
+  Total methods: 1431
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -172,6 +172,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountPrefixAndSuffixPairs1.CountPrefixAndSuffixPairs1StringComparison                                                             100%
   LeetCode.Algorithms.CountPrefixAndSuffixPairs1.CountPrefixAndSuffixPairs1Trie                                                                          97%
   LeetCode.Algorithms.CountServersThatCommunicate.CountServersThatCommunicateCounting                                                                   100%
+  LeetCode.Algorithms.CountSquareSubmatricesWithAllOnes.CountSquareSubmatricesWithAllOnesBruteForce                                                     100%
+  LeetCode.Algorithms.CountSquareSubmatricesWithAllOnes.CountSquareSubmatricesWithAllOnesDynamicProgramming                                             100%
   LeetCode.Algorithms.CountSubarraysOfLengthThreeWithCondition.CountSubarraysOfLengthThreeWithConditionIterative                                        100%
   LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes.CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursive                      100%
   LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes.CountSubarraysWhereMaxElementAppearsAtLeastKTimesSlidingWindow                  100%
