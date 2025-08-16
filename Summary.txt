@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/15/2025 - 3:22:21 PM
-  Coverage date: 8/15/2025 - 3:21:25 PM - 8/15/2025 - 3:21:44 PM
+  Generated on: 8/16/2025 - 2:51:10 PM
+  Coverage date: 8/16/2025 - 2:49:57 PM - 8/16/2025 - 2:50:15 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 993
-  Files: 993
+  Classes: 994
+  Files: 994
   Line coverage: 97.7%
-  Covered lines: 21199
-  Uncovered lines: 495
-  Coverable lines: 21694
-  Total lines: 54385
-  Branch coverage: 95.5% (7982 of 8352)
-  Covered branches: 7982
-  Total branches: 8352
-  Method coverage: 99.1% (1419 of 1431)
-  Full method coverage: 88.8% (1271 of 1431)
-  Covered methods: 1419
-  Fully covered methods: 1271
-  Total methods: 1431
+  Covered lines: 21242
+  Uncovered lines: 493
+  Coverable lines: 21735
+  Total lines: 54465
+  Branch coverage: 95.5% (8005 of 8374)
+  Covered branches: 8005
+  Total branches: 8374
+  Method coverage: 99.1% (1421 of 1433)
+  Full method coverage: 88.9% (1274 of 1433)
+  Covered methods: 1421
+  Fully covered methods: 1274
+  Total methods: 1433
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -500,6 +500,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MatrixDiagonalSum.MatrixDiagonalSumIterative                                                                                      100%
   LeetCode.Algorithms.MaxChunksToMakeSorted.MaxChunksToMakeSortedIterative                                                                              100%
   LeetCode.Algorithms.MaxConsecutiveOnes.MaxConsecutiveOnesGreedy                                                                                       100%
+  LeetCode.Algorithms.MaxDifferenceYouCanGetFromChangingAnInteger.MaxDifferenceYouCanGetFromChangingAnIntegerGreedy                                     100%
   LeetCode.Algorithms.MaximalRectangle.MaximalRectangleStack                                                                                            100%
   LeetCode.Algorithms.MaximalScoreAfterApplyingKOperations.MaximalScoreAfterApplyingKOperationsPriorityQueue                                            100%
   LeetCode.Algorithms.MaximizeHappinessOfSelectedChildren.MaximizeHappinessOfSelectedChildrenIterative                                                  100%
@@ -1000,7 +1001,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
