@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/16/2025 - 2:51:10 PM
-  Coverage date: 8/16/2025 - 2:49:57 PM - 8/16/2025 - 2:50:15 PM
+  Generated on: 8/17/2025 - 12:42:37 PM
+  Coverage date: 8/17/2025 - 12:41:39 PM - 8/17/2025 - 12:41:59 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 994
-  Files: 994
+  Classes: 996
+  Files: 996
   Line coverage: 97.7%
-  Covered lines: 21242
-  Uncovered lines: 493
-  Coverable lines: 21735
-  Total lines: 54465
-  Branch coverage: 95.5% (8005 of 8374)
-  Covered branches: 8005
-  Total branches: 8374
-  Method coverage: 99.1% (1421 of 1433)
-  Full method coverage: 88.9% (1274 of 1433)
-  Covered methods: 1421
-  Fully covered methods: 1274
-  Total methods: 1433
+  Covered lines: 21315
+  Uncovered lines: 495
+  Coverable lines: 21810
+  Total lines: 54618
+  Branch coverage: 95.5% (8038 of 8410)
+  Covered branches: 8038
+  Total branches: 8410
+  Method coverage: 99.1% (1423 of 1435)
+  Full method coverage: 88.8% (1275 of 1435)
+  Covered methods: 1423
+  Fully covered methods: 1275
+  Total methods: 1435
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -666,6 +666,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.NeighboringBitwiseXOR.NeighboringBitwiseXORIterative                                                                              100%
   LeetCode.Algorithms.NeitherMinimumNorMaximum.NeitherMinimumNorMaximumUsingMinMaxComparison                                                            100%
   LeetCode.Algorithms.NeitherMinimumNorMaximum.NeitherMinimumNorMaximumUsingSorting                                                                     100%
+  LeetCode.Algorithms.New21Game.New21GameDictionaryPriorityQueue                                                                                        100%
+  LeetCode.Algorithms.New21Game.New21GameDynamicProgrammingSlidingWindow                                                                                100%
   LeetCode.Algorithms.NextGreaterElement1.NextGreaterElement1BruteForce                                                                                 100%
   LeetCode.Algorithms.NextGreaterElement1.NextGreaterElement1StackDictionary                                                                            100%
   LeetCode.Algorithms.NimGame.NimGameMath                                                                                                               100%
@@ -1001,7 +1003,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
