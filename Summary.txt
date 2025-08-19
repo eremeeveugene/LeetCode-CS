@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/17/2025 - 12:42:37 PM
-  Coverage date: 8/17/2025 - 12:41:39 PM - 8/17/2025 - 12:41:59 PM
+  Generated on: 8/19/2025 - 9:23:51 AM
+  Coverage date: 8/19/2025 - 9:22:51 AM - 8/19/2025 - 9:23:11 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 996
-  Files: 996
+  Classes: 997
+  Files: 997
   Line coverage: 97.7%
-  Covered lines: 21315
-  Uncovered lines: 495
-  Coverable lines: 21810
-  Total lines: 54618
-  Branch coverage: 95.5% (8038 of 8410)
-  Covered branches: 8038
-  Total branches: 8410
-  Method coverage: 99.1% (1423 of 1435)
-  Full method coverage: 88.8% (1275 of 1435)
-  Covered methods: 1423
+  Covered lines: 21328
+  Uncovered lines: 498
+  Coverable lines: 21826
+  Total lines: 54662
+  Branch coverage: 95.5% (8041 of 8414)
+  Covered branches: 8041
+  Total branches: 8414
+  Method coverage: 99.1% (1424 of 1436)
+  Full method coverage: 88.7% (1275 of 1436)
+  Covered methods: 1424
   Fully covered methods: 1275
-  Total methods: 1435
+  Total methods: 1436
 
 LeetCode                                                                                                                                               97.9%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -699,6 +699,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfSubstringsContainingAllThreeCharacters.NumberOfSubstringsContainingAllThreeCharactersSlidingWindow                        100%
   LeetCode.Algorithms.NumberOfWaysToSplitArray.NumberOfWaysToSplitArrayPrefixSum                                                                        100%
   LeetCode.Algorithms.NumberOfWonderfulSubstrings.NumberOfWonderfulSubstringsDictionary                                                                 100%
+  LeetCode.Algorithms.NumberOfZeroFilledSubarrays.NumberOfZeroFilledSubarraysCounting                                                                   100%
   LeetCode.Algorithms.OpenTheLock.OpenTheLockBreadthFirstSearch                                                                                         100%
   LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListSlowFastPointers                                                                         100%
   LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListTwoPointers                                                                              100%
@@ -1006,7 +1007,7 @@ LeetCode                                                                        
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                90.6%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                    100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             100%
