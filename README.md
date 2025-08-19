@@ -229,6 +229,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [664. Strange Printer](https://leetcode.com/problems/strange-printer/description/)
 - [670. Maximum Swap](https://leetcode.com/problems/maximum-swap/description/)
 - [678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/)
+- [679. 24 Game](https://leetcode.com/problems/24-game/description/)
 - [680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/description/)
 - [682. Baseball Game](https://leetcode.com/problems/baseball-game/description/)
 - [700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/description/)
