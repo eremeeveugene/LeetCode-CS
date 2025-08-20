@@ -700,6 +700,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3591. Check if Any Element Has Prime Frequency](https://leetcode.com/problems/check-if-any-element-has-prime-frequency/description/)
 - [3606. Coupon Code Validator](https://leetcode.com/problems/coupon-code-validator/description/)
 - [3622. Check Divisibility by Digit Sum and Product](https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/description/)
+- [3637. Trionic Array I](https://leetcode.com/problems/trionic-array-i/description/)
 
   </p>
 </details>
