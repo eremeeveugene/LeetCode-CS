@@ -9,13 +9,9 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.TrionicArray1;
+using LeetCode.Algorithms.TrionicArray1;
 
-/// <inheritdoc />
-public class TrionicArray1Greedy : ITrionicArray1
-{
-    public bool IsTrionic(int[] nums)
-    {
-        throw new NotImplementedException();
-    }
-}
+namespace LeetCode.Tests.Algorithms.TrionicArray1;
+
+[TestClass]
+public class TrionicArray1IterativeTests : TrionicArray1TestsBase<TrionicArray1Iterative>;
