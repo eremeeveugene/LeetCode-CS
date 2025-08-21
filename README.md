@@ -380,6 +380,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1498. Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description/)
 - [1500. Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/description/)
 - [1502. Can Make Arithmetic Progression From Sequences](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/description/)
+- [1504. Count Submatrices With All Ones](https://leetcode.com/problems/count-submatrices-with-all-ones/description/)
 - [1508. Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/description/)
 - [1509. Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/description/)
 - [1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/description/)
