@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/21/2025 - 4:19:41 PM
-  Coverage date: 8/21/2025 - 4:18:38 PM - 8/21/2025 - 4:18:57 PM
+  Generated on: 8/22/2025 - 10:15:45 AM
+  Coverage date: 8/22/2025 - 10:14:45 AM - 8/22/2025 - 10:15:05 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1001
-  Files: 1001
+  Classes: 1002
+  Files: 1002
   Line coverage: 97.6%
-  Covered lines: 21505
-  Uncovered lines: 510
-  Coverable lines: 22015
-  Total lines: 55042
-  Branch coverage: 95.4% (8145 of 8531)
-  Covered branches: 8145
-  Total branches: 8531
-  Method coverage: 99.1% (1431 of 1443)
-  Full method coverage: 88.7% (1280 of 1443)
-  Covered methods: 1431
-  Fully covered methods: 1280
-  Total methods: 1443
+  Covered lines: 21537
+  Uncovered lines: 515
+  Coverable lines: 22052
+  Total lines: 55113
+  Branch coverage: 95.4% (8158 of 8547)
+  Covered branches: 8158
+  Total branches: 8547
+  Method coverage: 99.1% (1432 of 1444)
+  Full method coverage: 88.5% (1279 of 1444)
+  Covered methods: 1432
+  Fully covered methods: 1279
+  Total methods: 1444
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -354,6 +354,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheMaximumSumOfNodeValues.FindTheMaximumSumOfNodeValuesIterative                                                              100%
   LeetCode.Algorithms.FindTheMiddleIndexInArray.FindTheMiddleIndexInArrayIterative                                                                      100%
   LeetCode.Algorithms.FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsIterative   93.5%
+  LeetCode.Algorithms.FindTheMinimumAreaToCoverAllOnes1.FindTheMinimumAreaToCoverAllOnes1OnePass                                                       94.5%
   LeetCode.Algorithms.FindTheNumberOfDistinctColorsAmongTheBalls.FindTheNumberOfDistinctColorsAmongTheBallsDictionary                                   100%
   LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor.FindTheOriginalArrayOfPrefixXorIterative                                                          100%
   LeetCode.Algorithms.FindTheOriginalTypedString1.FindTheOriginalTypedString1Iterative                                                                  100%
@@ -1011,7 +1012,7 @@ LeetCode                                                                        
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                90.6%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                    100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             100%
