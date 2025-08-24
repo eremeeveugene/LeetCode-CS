@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/23/2025 - 3:53:38 PM
-  Coverage date: 8/23/2025 - 3:52:41 PM - 8/23/2025 - 3:53:00 PM
+  Generated on: 8/24/2025 - 4:28:50 PM
+  Coverage date: 8/24/2025 - 4:27:51 PM - 8/24/2025 - 4:28:11 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1003
-  Files: 1003
+  Classes: 1004
+  Files: 1004
   Line coverage: 97.6%
-  Covered lines: 21686
-  Uncovered lines: 525
-  Coverable lines: 22211
-  Total lines: 55355
-  Branch coverage: 95.4% (8207 of 8599)
-  Covered branches: 8207
-  Total branches: 8599
-  Method coverage: 99.1% (1440 of 1452)
-  Full method coverage: 88.6% (1287 of 1452)
-  Covered methods: 1440
-  Fully covered methods: 1287
-  Total methods: 1452
+  Covered lines: 21707
+  Uncovered lines: 526
+  Coverable lines: 22233
+  Total lines: 55409
+  Branch coverage: 95.4% (8213 of 8605)
+  Covered branches: 8213
+  Total branches: 8605
+  Method coverage: 99.1% (1441 of 1453)
+  Full method coverage: 88.6% (1288 of 1453)
+  Covered methods: 1441
+  Fully covered methods: 1288
+  Total methods: 1453
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -487,6 +487,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestPalindromicSubstring.LongestPalindromicSubstringTwoPointers                                                                100%
   LeetCode.Algorithms.LongestSquareStreakInAnArray.LongestSquareStreakInAnArrayHashSet                                                                  100%
   LeetCode.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubarray.LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayIterative              100%
+  LeetCode.Algorithms.LongestSubarrayOfOnesAfterDeletingOneElement.LongestSubarrayOfOnesAfterDeletingOneElementCounting                                 100%
   LeetCode.Algorithms.LongestSubarrayWithMaximumBitwiseAND.LongestSubarrayWithMaximumBitwiseANDIterative                                                100%
   LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters.LongestSubstringWithoutRepeatingCharactersSlidingWindow                                100%
   LeetCode.Algorithms.LongestUnequalAdjacentGroupsSubsequence1.LongestUnequalAdjacentGroupsSubsequence1Greedy                                           100%
@@ -1010,10 +1011,10 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                90.6%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                    100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             100%
