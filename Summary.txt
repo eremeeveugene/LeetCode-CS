@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/24/2025 - 4:28:50 PM
-  Coverage date: 8/24/2025 - 4:27:51 PM - 8/24/2025 - 4:28:11 PM
+  Generated on: 8/25/2025 - 10:06:19 AM
+  Coverage date: 8/25/2025 - 10:05:17 AM - 8/25/2025 - 10:05:36 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1004
-  Files: 1004
+  Classes: 1005
+  Files: 1005
   Line coverage: 97.6%
-  Covered lines: 21707
-  Uncovered lines: 526
-  Coverable lines: 22233
-  Total lines: 55409
-  Branch coverage: 95.4% (8213 of 8605)
-  Covered branches: 8213
-  Total branches: 8605
-  Method coverage: 99.1% (1441 of 1453)
-  Full method coverage: 88.6% (1288 of 1453)
-  Covered methods: 1441
-  Fully covered methods: 1288
-  Total methods: 1453
+  Covered lines: 21744
+  Uncovered lines: 525
+  Coverable lines: 22269
+  Total lines: 55484
+  Branch coverage: 95.4% (8227 of 8619)
+  Covered branches: 8227
+  Total branches: 8619
+  Method coverage: 99.1% (1442 of 1454)
+  Full method coverage: 88.6% (1289 of 1454)
+  Covered methods: 1442
+  Fully covered methods: 1289
+  Total methods: 1454
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -233,6 +233,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedList                                                     100%
   LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict.DetermineIfTwoEventsHaveConflictNumberComparison                                                 100%
   LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict.DetermineIfTwoEventsHaveConflictStringComparison                                                 100%
+  LeetCode.Algorithms.DiagonalTraverse.DiagonalTraverseSimulation                                                                                       100%
   LeetCode.Algorithms.DiameterOfBinaryTree.DiameterOfBinaryTreeDepthFirst                                                                               100%
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayByDigitExtraction                      100%
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayIterative                              100%
@@ -1011,10 +1012,10 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                90.6%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                    100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             100%
