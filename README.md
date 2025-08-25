@@ -192,6 +192,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/description/)
 - [494. Target Sum](https://leetcode.com/problems/target-sum/description/)
 - [496. Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/)
+- [498. Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse/description/)
 - [501. Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/description/)
 - [506. Relative Ranks](https://leetcode.com/problems/relative-ranks/description/)
 - [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/)
