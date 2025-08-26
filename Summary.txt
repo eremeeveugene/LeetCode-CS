@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/25/2025 - 10:06:19 AM
-  Coverage date: 8/25/2025 - 10:05:17 AM - 8/25/2025 - 10:05:36 AM
+  Generated on: 8/26/2025 - 12:46:56 PM
+  Coverage date: 8/26/2025 - 12:45:59 PM - 8/26/2025 - 12:46:18 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1005
-  Files: 1005
+  Classes: 1006
+  Files: 1006
   Line coverage: 97.6%
-  Covered lines: 21744
+  Covered lines: 21767
   Uncovered lines: 525
-  Coverable lines: 22269
-  Total lines: 55484
-  Branch coverage: 95.4% (8227 of 8619)
-  Covered branches: 8227
-  Total branches: 8619
-  Method coverage: 99.1% (1442 of 1454)
-  Full method coverage: 88.6% (1289 of 1454)
-  Covered methods: 1442
-  Fully covered methods: 1289
-  Total methods: 1454
+  Coverable lines: 22292
+  Total lines: 55539
+  Branch coverage: 95.4% (8233 of 8625)
+  Covered branches: 8233
+  Total branches: 8625
+  Method coverage: 99.1% (1443 of 1455)
+  Full method coverage: 88.6% (1290 of 1455)
+  Covered methods: 1443
+  Fully covered methods: 1290
+  Total methods: 1455
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -515,6 +515,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberString                                                                                             100%
   LeetCode.Algorithms.MaximumAbsoluteSumOfAnySubarray.MaximumAbsoluteSumOfAnySubarrayBruteForce                                                         100%
   LeetCode.Algorithms.MaximumAbsoluteSumOfAnySubarray.MaximumAbsoluteSumOfAnySubarrayKadaneAlgorithm                                                    100%
+  LeetCode.Algorithms.MaximumAreaOfLongestDiagonalRectangle.MaximumAreaOfLongestDiagonalRectangleOnePass                                                100%
   LeetCode.Algorithms.MaximumAscendingSubarraySum.MaximumAscendingSubarraySumIterative                                                                  100%
   LeetCode.Algorithms.MaximumAveragePassRatio.MaximumAveragePassRatioPriorityQueue                                                                      100%
   LeetCode.Algorithms.MaximumAverageSubarray1.MaximumAverageSubarray1SlidingWindow                                                                      100%
