@@ -15,8 +15,8 @@ namespace LeetCode.Algorithms.AliceAndBobPlayingFlowerGame;
 public class AliceAndBobPlayingFlowerGameMath : IAliceAndBobPlayingFlowerGame
 {
     /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="n"></param>
     /// <param name="m"></param>
