@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/28/2025 - 4:37:41 PM
-  Coverage date: 8/28/2025 - 4:36:41 PM - 8/28/2025 - 4:37:02 PM
+  Generated on: 8/29/2025 - 11:07:21 AM
+  Coverage date: 8/29/2025 - 11:06:09 AM - 8/29/2025 - 11:06:29 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1009
-  Files: 1009
+  Classes: 1010
+  Files: 1010
   Line coverage: 97.6%
-  Covered lines: 21894
+  Covered lines: 21897
   Uncovered lines: 525
-  Coverable lines: 22419
-  Total lines: 55798
+  Coverable lines: 22422
+  Total lines: 55826
   Branch coverage: 95.4% (8281 of 8673)
   Covered branches: 8281
   Total branches: 8673
-  Method coverage: 99.1% (1448 of 1460)
-  Full method coverage: 88.6% (1295 of 1460)
-  Covered methods: 1448
-  Fully covered methods: 1295
-  Total methods: 1460
+  Method coverage: 99.1% (1449 of 1461)
+  Full method coverage: 88.7% (1296 of 1461)
+  Covered methods: 1449
+  Fully covered methods: 1296
+  Total methods: 1461
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -36,6 +36,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.AddTwoNumbers.AddTwoNumbersIterative                                                                                              100%
   LeetCode.Algorithms.AddTwoNumbers2.AddTwoNumbers2Reverse                                                                                              100%
   LeetCode.Algorithms.AddTwoNumbers2.AddTwoNumbers2Stack                                                                                                100%
+  LeetCode.Algorithms.AliceAndBobPlayingFlowerGame.AliceAndBobPlayingFlowerGameMath                                                                     100%
   LeetCode.Algorithms.AllOneDataStructure.AllOneDataStructureLinkedList                                                                                68.4%
   LeetCode.Algorithms.AlternatingGroups2.AlternatingGroups2BruteForce                                                                                   100%
   LeetCode.Algorithms.AlternatingGroups2.AlternatingGroups2SlidingWindow                                                                                100%
