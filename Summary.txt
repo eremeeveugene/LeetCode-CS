@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/30/2025 - 12:50:14 PM
-  Coverage date: 8/30/2025 - 12:49:16 PM - 8/30/2025 - 12:49:35 PM
+  Generated on: 8/30/2025 - 3:17:27 PM
+  Coverage date: 8/30/2025 - 3:15:56 PM - 8/30/2025 - 3:16:47 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1014
-  Files: 1014
+  Classes: 1018
+  Files: 1018
   Line coverage: 97.6%
-  Covered lines: 21982
-  Uncovered lines: 528
-  Coverable lines: 22510
-  Total lines: 56050
-  Branch coverage: 95.4% (8307 of 8701)
-  Covered branches: 8307
-  Total branches: 8701
-  Method coverage: 99.1% (1453 of 1465)
-  Full method coverage: 88.6% (1299 of 1465)
-  Covered methods: 1453
-  Fully covered methods: 1299
-  Total methods: 1465
+  Covered lines: 22107
+  Uncovered lines: 530
+  Coverable lines: 22637
+  Total lines: 56321
+  Branch coverage: 95.4% (8356 of 8755)
+  Covered branches: 8356
+  Total branches: 8755
+  Method coverage: 99.1% (1463 of 1475)
+  Full method coverage: 88.6% (1308 of 1475)
+  Covered methods: 1463
+  Fully covered methods: 1308
+  Total methods: 1475
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -1004,6 +1004,10 @@ LeetCode                                                                        
   LeetCode.Algorithms.ValidParentheses.ValidParenthesesStackSwitch                                                                                      100%
   LeetCode.Algorithms.ValidParenthesisString.ValidParenthesisStringIterative                                                                            100%
   LeetCode.Algorithms.ValidPerfectSquare.ValidPerfectSquareBinarySearch                                                                                 100%
+  LeetCode.Algorithms.ValidSudoku.ValidSudokuBase                                                                                                       100%
+  LeetCode.Algorithms.ValidSudoku.ValidSudokuBitmask                                                                                                    100%
+  LeetCode.Algorithms.ValidSudoku.ValidSudokuBoolTables                                                                                                 100%
+  LeetCode.Algorithms.ValidSudoku.ValidSudokuBruteForce                                                                                                96.7%
   LeetCode.Algorithms.ValidWord.ValidWordIterative                                                                                                      100%
   LeetCode.Algorithms.WalkingRobotSimulation.WalkingRobotSimulationHashSet                                                                               90%
   LeetCode.Algorithms.WaterBottles.WaterBottlesSimulation                                                                                               100%
