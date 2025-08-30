@@ -646,6 +646,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3160. Find the Number of Distinct Colors Among the Balls](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/description/)
 - [3163. String Compression III](https://leetcode.com/problems/string-compression-iii/description/)
 - [3169. Count Days Without Meetings](https://leetcode.com/problems/count-days-without-meetings/description/)
+- [3170. Lexicographically Minimum String After Removing Stars](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/description/)
 - [3174. Clear Digits](https://leetcode.com/problems/clear-digits/description/)
 - [3190. Find Minimum Operations to Make All Elements Divisible by Three](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/description/)
 - [3191. Minimum Operations to Make Binary Array Elements Equal to One I](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/description/)
