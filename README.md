@@ -540,6 +540,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2425. Bitwise XOR of All Pairings](https://leetcode.com/problems/bitwise-xor-of-all-pairings/description/)
 - [2429. Minimize XOR](https://leetcode.com/problems/minimize-xor/description/)
 - [2433. Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/description/)
+- [2434. Using a Robot to Print the Lexicographically Smallest String](https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string/description/)
 - [2438. Range Product Queries of Powers](https://leetcode.com/problems/range-product-queries-of-powers/description/)
 - [2441. Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/description/)
 - [2444. Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/description/)
