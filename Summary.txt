@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/31/2025 - 3:43:15 PM
-  Coverage date: 8/31/2025 - 3:42:14 PM - 8/31/2025 - 3:42:34 PM
+  Generated on: 9/1/2025 - 11:44:43 AM
+  Coverage date: 9/1/2025 - 11:43:44 AM - 9/1/2025 - 11:44:04 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1019
-  Files: 1019
+  Classes: 1021
+  Files: 1021
   Line coverage: 97.6%
-  Covered lines: 22137
-  Uncovered lines: 538
-  Coverable lines: 22675
-  Total lines: 56401
-  Branch coverage: 95.4% (8369 of 8771)
-  Covered branches: 8369
-  Total branches: 8771
-  Method coverage: 99.1% (1466 of 1478)
-  Full method coverage: 88.4% (1308 of 1478)
-  Covered methods: 1466
-  Fully covered methods: 1308
-  Total methods: 1478
+  Covered lines: 22176
+  Uncovered lines: 535
+  Coverable lines: 22711
+  Total lines: 56503
+  Branch coverage: 95.4% (8384 of 8785)
+  Covered branches: 8384
+  Total branches: 8785
+  Method coverage: 99.1% (1468 of 1480)
+  Full method coverage: 88.5% (1311 of 1480)
+  Covered methods: 1468
+  Fully covered methods: 1311
+  Total methods: 1480
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -814,6 +814,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ReplaceWords.ReplaceWordsHashSet                                                                                                  100%
   LeetCode.Algorithms.ReplaceWords.ReplaceWordsTrieNode                                                                                                 100%
   LeetCode.Algorithms.RescheduleMeetingsForMaximumFreeTime1.RescheduleMeetingsForMaximumFreeTime1Greedy                                                 100%
+  LeetCode.Algorithms.RestoreFinishingOrder.RestoreFinishingOrderHashSet                                                                                100%
+  LeetCode.Algorithms.RestoreFinishingOrder.RestoreFinishingOrderLookup                                                                                 100%
   LeetCode.Algorithms.RevealCardsInIncreasingOrder.RevealCardsInIncreasingOrderQueue                                                                    100%
   LeetCode.Algorithms.ReverseBits.ReverseBitsIterative                                                                                                  100%
   LeetCode.Algorithms.ReverseDegreeOfString.ReverseDegreeOfStringIterative                                                                              100%
@@ -1029,7 +1031,7 @@ LeetCode                                                                        
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                90.6%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                    100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             100%
