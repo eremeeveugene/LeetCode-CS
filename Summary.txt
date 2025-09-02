@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/1/2025 - 11:44:43 AM
-  Coverage date: 9/1/2025 - 11:43:44 AM - 9/1/2025 - 11:44:04 AM
+  Generated on: 9/2/2025 - 3:38:23 PM
+  Coverage date: 9/2/2025 - 3:37:25 PM - 9/2/2025 - 3:37:44 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1021
-  Files: 1021
+  Classes: 1022
+  Files: 1022
   Line coverage: 97.6%
-  Covered lines: 22176
+  Covered lines: 22200
   Uncovered lines: 535
-  Coverable lines: 22711
-  Total lines: 56503
-  Branch coverage: 95.4% (8384 of 8785)
-  Covered branches: 8384
-  Total branches: 8785
-  Method coverage: 99.1% (1468 of 1480)
-  Full method coverage: 88.5% (1311 of 1480)
-  Covered methods: 1468
-  Fully covered methods: 1311
-  Total methods: 1480
+  Coverable lines: 22735
+  Total lines: 56564
+  Branch coverage: 95.4% (8394 of 8795)
+  Covered branches: 8394
+  Total branches: 8795
+  Method coverage: 99.1% (1470 of 1482)
+  Full method coverage: 88.5% (1313 of 1482)
+  Covered methods: 1470
+  Fully covered methods: 1313
+  Total methods: 1482
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -359,6 +359,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheMinimumAreaToCoverAllOnes1.FindTheMinimumAreaToCoverAllOnes1OnePass                                                       94.5%
   LeetCode.Algorithms.FindTheMinimumAreaToCoverAllOnes2.FindTheMinimumAreaToCoverAllOnes2BruteForce                                                    91.8%
   LeetCode.Algorithms.FindTheNumberOfDistinctColorsAmongTheBalls.FindTheNumberOfDistinctColorsAmongTheBallsDictionary                                   100%
+  LeetCode.Algorithms.FindTheNumberOfWaysToPlacePeople1.FindTheNumberOfWaysToPlacePeople1SortingGreedy                                                  100%
   LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor.FindTheOriginalArrayOfPrefixXorIterative                                                          100%
   LeetCode.Algorithms.FindTheOriginalTypedString1.FindTheOriginalTypedString1Iterative                                                                  100%
   LeetCode.Algorithms.FindThePivotInteger.FindThePivotIntegerConstant                                                                                   100%
