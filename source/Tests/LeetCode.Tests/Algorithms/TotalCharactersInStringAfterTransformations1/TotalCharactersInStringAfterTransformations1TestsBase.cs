@@ -22,13 +22,13 @@ public abstract class TotalCharactersInStringAfterTransformations1TestsBase<T>
     [DataRow("z", 100, 16)]
     public void
         LengthAfterTransformations_WithStringAndTransformationCount_ReturnsFinalStringLengthAfterTransformations(
-            string s, int transformationsCount, int expectedResult)
+            string input, int transformationsCount, int expectedResult)
     {
         // Arrange
         var solution = new T();
 
         // Act
-        var actualResult = solution.LengthAfterTransformations(s, transformationsCount);
+        var actualResult = solution.LengthAfterTransformations(input, transformationsCount);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

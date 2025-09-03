@@ -16,5 +16,5 @@ namespace LeetCode.Algorithms.TotalCharactersInStringAfterTransformations1;
 /// </summary>
 public interface ITotalCharactersInStringAfterTransformations1
 {
-    int LengthAfterTransformations(string s, int t);
+    int LengthAfterTransformations(string input, int transformationsCount);
 }
