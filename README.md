@@ -672,6 +672,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3304. Find the K-th Character in String Game I](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/description/)
 - [3306. Count of Substrings Containing Every Vowel and K Consonants II](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/description/)
 - [3330. Find the Original Typed String I](https://leetcode.com/problems/find-the-original-typed-string-i/description/)
+- [3335. Total Characters in String After Transformations I](https://leetcode.com/problems/total-characters-in-string-after-transformations-i/description/)
 - [3340. Check Balanced String](https://leetcode.com/problems/check-balanced-string/description/)
 - [3341. Find Minimum Time to Reach Last Room I](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/description/)
 - [3342. Find Minimum Time to Reach Last Room II](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/description/)
