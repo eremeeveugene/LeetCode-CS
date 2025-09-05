@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/3/2025 - 2:36:46 PM
-  Coverage date: 9/3/2025 - 2:35:45 PM - 9/3/2025 - 2:36:05 PM
+  Generated on: 9/5/2025 - 1:39:46 PM
+  Coverage date: 9/5/2025 - 1:38:47 PM - 9/5/2025 - 1:39:07 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1024
-  Files: 1024
+  Classes: 1025
+  Files: 1025
   Line coverage: 97.6%
-  Covered lines: 22255
-  Uncovered lines: 533
-  Coverable lines: 22788
-  Total lines: 56690
-  Branch coverage: 95.4% (8419 of 8819)
-  Covered branches: 8419
-  Total branches: 8819
-  Method coverage: 99.1% (1473 of 1485)
-  Full method coverage: 88.6% (1317 of 1485)
-  Covered methods: 1473
+  Covered lines: 22266
+  Uncovered lines: 536
+  Coverable lines: 22802
+  Total lines: 56737
+  Branch coverage: 95.4% (8426 of 8827)
+  Covered branches: 8426
+  Total branches: 8827
+  Method coverage: 99.1% (1474 of 1486)
+  Full method coverage: 88.6% (1317 of 1486)
+  Covered methods: 1474
   Fully covered methods: 1317
-  Total methods: 1485
+  Total methods: 1486
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -643,6 +643,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK.MinimumOperationsToMakeArrayValuesEqualToKHashSet                                      100%
   LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK.MinimumOperationsToMakeArrayValuesEqualToKSeenArray                                    100%
   LeetCode.Algorithms.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1Greedy                 100%
+  LeetCode.Algorithms.MinimumOperationsToMakeTheIntegerZero.MinimumOperationsToMakeTheIntegerZeroBitwise                                                100%
   LeetCode.Algorithms.MinimumOperationsToMakeUniValueGrid.MinimumOperationsToMakeUniValueGridSorting                                                    100%
   LeetCode.Algorithms.MinimumPairRemovalToSortArray1.MinimumPairRemovalToSortArray1Simulation                                                           100%
   LeetCode.Algorithms.MinimumPositiveSumSubarray.MinimumPositiveSumSubarrayPrefixSum                                                                    100%
@@ -1034,7 +1035,7 @@ LeetCode                                                                        
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                90.6%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                    100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             100%
