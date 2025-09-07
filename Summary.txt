@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/5/2025 - 1:39:46 PM
-  Coverage date: 9/5/2025 - 1:38:47 PM - 9/5/2025 - 1:39:07 PM
+  Generated on: 9/7/2025 - 1:09:33 PM
+  Coverage date: 9/7/2025 - 1:08:33 PM - 9/7/2025 - 1:08:53 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1025
-  Files: 1025
+  Classes: 1026
+  Files: 1026
   Line coverage: 97.6%
-  Covered lines: 22266
-  Uncovered lines: 536
-  Coverable lines: 22802
-  Total lines: 56737
-  Branch coverage: 95.4% (8426 of 8827)
-  Covered branches: 8426
-  Total branches: 8827
-  Method coverage: 99.1% (1474 of 1486)
-  Full method coverage: 88.6% (1317 of 1486)
-  Covered methods: 1474
-  Fully covered methods: 1317
-  Total methods: 1486
+  Covered lines: 22277
+  Uncovered lines: 535
+  Coverable lines: 22812
+  Total lines: 56774
+  Branch coverage: 95.4% (8428 of 8829)
+  Covered branches: 8428
+  Total branches: 8829
+  Method coverage: 99.1% (1475 of 1487)
+  Full method coverage: 88.6% (1318 of 1487)
+  Covered methods: 1475
+  Fully covered methods: 1318
+  Total methods: 1487
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -330,6 +330,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindMostFrequentVowelAndConsonant.FindMostFrequentVowelAndConsonantFrequencyDictionary                                            100%
   LeetCode.Algorithms.FindNumbersWithEvenNumberOfDigits.FindNumbersWithEvenNumberOfDigitsExtractDigits                                                  100%
   LeetCode.Algorithms.FindNumbersWithEvenNumberOfDigits.FindNumbersWithEvenNumberOfDigitsGreedy                                                         100%
+  LeetCode.Algorithms.FindNUniqueIntegersSumUpToZero.FindNUniqueIntegersSumUpToZeroIterative                                                            100%
   LeetCode.Algorithms.FindPivotIndex.FindPivotIndexIterative                                                                                            100%
   LeetCode.Algorithms.FindScoreOfAnArrayAfterMarkingAllElements.FindScoreOfAnArrayAfterMarkingAllElementsSorting                                        100%
   LeetCode.Algorithms.FindSubsequenceOfLengthKWithTheLargestSum.FindSubsequenceOfLengthKWithTheLargestSumSorting                                        100%
@@ -1032,10 +1033,10 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                90.6%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                    100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             100%
