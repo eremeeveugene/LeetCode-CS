@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/7/2025 - 1:09:33 PM
-  Coverage date: 9/7/2025 - 1:08:33 PM - 9/7/2025 - 1:08:53 PM
+  Generated on: 9/7/2025 - 2:00:28 PM
+  Coverage date: 9/7/2025 - 1:59:25 PM - 9/7/2025 - 1:59:44 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1026
-  Files: 1026
+  Classes: 1027
+  Files: 1027
   Line coverage: 97.6%
-  Covered lines: 22277
-  Uncovered lines: 535
-  Coverable lines: 22812
-  Total lines: 56774
-  Branch coverage: 95.4% (8428 of 8829)
-  Covered branches: 8428
-  Total branches: 8829
-  Method coverage: 99.1% (1475 of 1487)
-  Full method coverage: 88.6% (1318 of 1487)
-  Covered methods: 1475
-  Fully covered methods: 1318
-  Total methods: 1487
+  Covered lines: 22311
+  Uncovered lines: 537
+  Coverable lines: 22848
+  Total lines: 56852
+  Branch coverage: 95.4% (8439 of 8841)
+  Covered branches: 8439
+  Total branches: 8841
+  Method coverage: 99.1% (1477 of 1489)
+  Full method coverage: 88.5% (1319 of 1489)
+  Covered methods: 1477
+  Fully covered methods: 1319
+  Total methods: 1489
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -594,6 +594,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MergeTwoSortedLists.MergeTwoSortedListsLinear                                                                                     100%
   LeetCode.Algorithms.MinCostClimbingStairs.MinCostClimbingStairsDynamicProgramming                                                                     100%
   LeetCode.Algorithms.MinimizedMaximumOfProductsDistributedToAnyStore.MinimizedMaximumOfProductsDistributedToAnyStoreBinarySearch                       100%
+  LeetCode.Algorithms.MinimizeTheMaximumDifferenceOfPairs.MinimizeTheMaximumDifferenceOfPairsBinarySearch                                              94.4%
   LeetCode.Algorithms.MinimizeXOR.MinimizeXORBitwise                                                                                                    100%
   LeetCode.Algorithms.MinimumAbsoluteDifferenceInBST.MinimumAbsoluteDifferenceInBSTDepthFirstSearch                                                     100%
   LeetCode.Algorithms.MinimumAddToMakeParenthesesValid.MinimumAddToMakeParenthesesValidIterative                                                        100%
