@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/7/2025 - 2:00:28 PM
-  Coverage date: 9/7/2025 - 1:59:25 PM - 9/7/2025 - 1:59:44 PM
+  Generated on: 9/8/2025 - 3:38:36 PM
+  Coverage date: 9/8/2025 - 3:37:22 PM - 9/8/2025 - 3:37:40 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1027
-  Files: 1027
+  Classes: 1028
+  Files: 1028
   Line coverage: 97.6%
-  Covered lines: 22311
+  Covered lines: 22332
   Uncovered lines: 537
-  Coverable lines: 22848
-  Total lines: 56852
-  Branch coverage: 95.4% (8439 of 8841)
-  Covered branches: 8439
-  Total branches: 8841
-  Method coverage: 99.1% (1477 of 1489)
-  Full method coverage: 88.5% (1319 of 1489)
-  Covered methods: 1477
-  Fully covered methods: 1319
-  Total methods: 1489
+  Coverable lines: 22869
+  Total lines: 56906
+  Branch coverage: 95.4% (8449 of 8851)
+  Covered branches: 8449
+  Total branches: 8851
+  Method coverage: 99.1% (1479 of 1491)
+  Full method coverage: 88.5% (1321 of 1491)
+  Covered methods: 1479
+  Fully covered methods: 1321
+  Total methods: 1491
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -137,6 +137,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.Convert1DArrayInto2DArray.Convert1DArrayInto2DArraySimulation                                                                     100%
   LeetCode.Algorithms.ConvertBinaryNumberInLinkedListToInteger.ConvertBinaryNumberInLinkedListToIntegerIterative                                        100%
   LeetCode.Algorithms.ConvertBinaryNumberInLinkedListToInteger.ConvertBinaryNumberInLinkedListToIntegerStringBuilder                                    100%
+  LeetCode.Algorithms.ConvertIntegerToTheSumOfTwoNoZeroIntegers.ConvertIntegerToTheSumOfTwoNoZeroIntegersBruteForce                                     100%
   LeetCode.Algorithms.ConvertSortedArrayToBinarySearchTree.ConvertSortedArrayToBinarySearchTreeRecursive                                                100%
   LeetCode.Algorithms.ConvertTheTemperature.ConvertTheTemperatureMath                                                                                   100%
   LeetCode.Algorithms.CountAndSay.CountAndSayIterative                                                                                                  100%
