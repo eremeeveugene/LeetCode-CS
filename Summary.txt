@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/8/2025 - 3:38:36 PM
-  Coverage date: 9/8/2025 - 3:37:22 PM - 9/8/2025 - 3:37:40 PM
+  Generated on: 9/9/2025 - 5:18:56 PM
+  Coverage date: 9/9/2025 - 5:17:27 PM - 9/9/2025 - 5:17:46 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1028
-  Files: 1028
+  Classes: 1029
+  Files: 1029
   Line coverage: 97.6%
-  Covered lines: 22332
-  Uncovered lines: 537
-  Coverable lines: 22869
-  Total lines: 56906
-  Branch coverage: 95.4% (8449 of 8851)
-  Covered branches: 8449
-  Total branches: 8851
-  Method coverage: 99.1% (1479 of 1491)
-  Full method coverage: 88.5% (1321 of 1491)
-  Covered methods: 1479
-  Fully covered methods: 1321
-  Total methods: 1491
+  Covered lines: 22375
+  Uncovered lines: 538
+  Coverable lines: 22913
+  Total lines: 56997
+  Branch coverage: 95.4% (8463 of 8865)
+  Covered branches: 8463
+  Total branches: 8865
+  Method coverage: 99.1% (1480 of 1492)
+  Full method coverage: 88.6% (1322 of 1492)
+  Covered methods: 1480
+  Fully covered methods: 1322
+  Total methods: 1492
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -706,6 +706,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfOneBits.NumberOfOneBitsBrianKernighan                                                                                     100%
   LeetCode.Algorithms.NumberOfOneBits.NumberOfOneBitsLookup                                                                                             100%
   LeetCode.Algorithms.NumberOfOneBits.NumberOfOneBitsString                                                                                             100%
+  LeetCode.Algorithms.NumberOfPeopleAwareOfSecret.NumberOfPeopleAwareOfSecretLineSweep                                                                 93.1%
   LeetCode.Algorithms.NumberOfSeniorCitizens.NumberOfSeniorCitizensCharacterComparison                                                                  100%
   LeetCode.Algorithms.NumberOfSeniorCitizens.NumberOfSeniorCitizensStringParsing                                                                        100%
   LeetCode.Algorithms.NumberOfStepsToReduceNumberInBinaryRepresentationToOne.NumberOfStepsToReduceNumberInBinaryRepresentationToOneGreedy               100%
@@ -1035,7 +1036,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
