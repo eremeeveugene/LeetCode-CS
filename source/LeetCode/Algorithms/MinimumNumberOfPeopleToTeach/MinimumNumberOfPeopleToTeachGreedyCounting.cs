@@ -15,8 +15,7 @@ namespace LeetCode.Algorithms.MinimumNumberOfPeopleToTeach;
 public class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberOfPeopleToTeach
 {
     /// <summary>
-    ///     Time complexity - O(m * n + f * n), where m is the number of users, n is the number of languages and f is the
-    ///     number of friendships
+    ///     Time complexity - O(m * n), where m is the number of users and n is the number of languages
     ///     Space complexity - O(m * n), where m is the number of users and n is the number of languages
     /// </summary>
     /// <param name="languagesCount"></param>
