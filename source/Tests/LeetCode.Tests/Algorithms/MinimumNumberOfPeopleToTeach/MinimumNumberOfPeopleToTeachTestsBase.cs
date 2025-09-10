@@ -17,7 +17,7 @@ namespace LeetCode.Tests.Algorithms.MinimumNumberOfPeopleToTeach;
 public abstract class MinimumNumberOfPeopleToTeachTestsBase<T> where T : IMinimumNumberOfPeopleToTeach, new()
 {
     [TestMethod]
-    //[DataRow(2, "[[1],[2],[1,2]]", "[[1,2],[1,3],[2,3]]", 1)]
+    [DataRow(2, "[[1],[2],[1,2]]", "[[1,2],[1,3],[2,3]]", 1)]
     [DataRow(3, "[[2],[1,3],[1,2],[3]]", "[[1,4],[1,2],[3,4],[2,3]]", 2)]
     public void MinimumTeachings_WithUsersLackingCommonLanguageInFriendships_ReturnsMinimumUsersToTeach(
         int languagesCount, string languagesJson, string friendshipsJson, int expectedResult)

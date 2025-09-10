@@ -27,17 +27,19 @@ public class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberOfPeople
     {
         var usersCount = languages.Length;
 
-        var userLanguages = new bool[usersCount, languagesCount];
+        Span<bool> userLanguages = stackalloc bool[usersCount * languagesCount];
 
         for (var i = 0; i < usersCount; i++)
         {
             foreach (var language in languages[i])
             {
-                userLanguages[i, language - 1] = true;
+                userLanguages[GetUserLanguageIndex(i, language - 1, languagesCount)] = true;
             }
         }
 
         Span<bool> usersToTeach = stackalloc bool[usersCount];
+
+        Span<int> usersToTeachIndices = stackalloc int[usersCount];
 
         var usersToTeachCount = 0;
 
@@ -50,7 +52,8 @@ public class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberOfPeople
 
             for (var language = 0; language < languagesCount; language++)
             {
-                if (!userLanguages[userA, language] || !userLanguages[userB, language])
+                if (!userLanguages[GetUserLanguageIndex(userA, language, languagesCount)] ||
+                    !userLanguages[GetUserLanguageIndex(userB, language, languagesCount)])
                 {
                     continue;
                 }
@@ -68,14 +71,14 @@ public class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberOfPeople
             if (!usersToTeach[userA])
             {
                 usersToTeach[userA] = true;
-
+                usersToTeachIndices[usersToTeachCount] = userA;
                 usersToTeachCount++;
             }
 
             if (!usersToTeach[userB])
             {
                 usersToTeach[userB] = true;
-
+                usersToTeachIndices[usersToTeachCount] = userB;
                 usersToTeachCount++;
             }
         }
@@ -91,14 +94,11 @@ public class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberOfPeople
         {
             var currentLanguageCount = 0;
 
-            for (var user = 0; user < usersCount; user++)
+            for (var i = 0; i < usersToTeachCount; i++)
             {
-                if (!usersToTeach[user])
-                {
-                    continue;
-                }
+                var user = usersToTeachIndices[i];
 
-                if (userLanguages[user, language])
+                if (userLanguages[GetUserLanguageIndex(user, language, languagesCount)])
                 {
                     currentLanguageCount++;
                 }
@@ -108,5 +108,10 @@ public class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberOfPeople
         }
 
         return usersToTeachCount - mostCommonLanguageCount;
+    }
+
+    private static int GetUserLanguageIndex(int user, int language, int languagesCount)
+    {
+        return (user * languagesCount) + language;
     }
 }
