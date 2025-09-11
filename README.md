@@ -425,6 +425,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1716. Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/description/)
 - [1720. Decode XORed Array](https://leetcode.com/problems/decode-xored-array/description/)
 - [1726. Tuple with Same Product](https://leetcode.com/problems/tuple-with-same-product/description/)
+- [1733. Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach/description/)
 - [1748. Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/description/)
 - [1749. Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/description/)
 - [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/description/)
