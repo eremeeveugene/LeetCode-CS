@@ -79,12 +79,15 @@ public class LargestTimeForGivenDigitsBruteForce : ILargestTimeForGivenDigits
         return maxMinutes < 0 ? string.Empty : BuildTimeString(maxMinutes);
     }
 
-    private static string BuildTimeString(int minutes)
+    private static string BuildTimeString(int totalMinutes)
     {
-        var h1 = minutes / 600;
-        var h2 = minutes / 60 % 10;
-        var m1 = minutes % 60 / 10;
-        var m2 = minutes % 60 % 10;
+        var hours = totalMinutes / 60;
+        var minutes = totalMinutes % 60;
+
+        var h1 = hours / 10;
+        var h2 = hours % 10;
+        var m1 = minutes / 10;
+        var m2 = minutes % 10;
 
         return string.Create(5, (h1, h2, m1, m2), static (dest, s) =>
         {
