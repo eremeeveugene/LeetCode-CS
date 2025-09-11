@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/9/2025 - 5:18:56 PM
-  Coverage date: 9/9/2025 - 5:17:27 PM - 9/9/2025 - 5:17:46 PM
+  Generated on: 9/11/2025 - 9:24:03 AM
+  Coverage date: 9/11/2025 - 9:23:00 AM - 9/11/2025 - 9:23:19 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1029
-  Files: 1029
+  Classes: 1030
+  Files: 1030
   Line coverage: 97.6%
-  Covered lines: 22375
-  Uncovered lines: 538
-  Coverable lines: 22913
-  Total lines: 56997
-  Branch coverage: 95.4% (8463 of 8865)
-  Covered branches: 8463
-  Total branches: 8865
-  Method coverage: 99.1% (1480 of 1492)
-  Full method coverage: 88.6% (1322 of 1492)
-  Covered methods: 1480
-  Fully covered methods: 1322
-  Total methods: 1492
+  Covered lines: 22437
+  Uncovered lines: 540
+  Coverable lines: 22977
+  Total lines: 57113
+  Branch coverage: 95.4% (8488 of 8891)
+  Covered branches: 8488
+  Total branches: 8891
+  Method coverage: 99.1% (1482 of 1494)
+  Full method coverage: 88.5% (1323 of 1494)
+  Covered methods: 1482
+  Fully covered methods: 1323
+  Total methods: 1494
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -640,6 +640,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox.MinimumNumberOfOperationsToMoveAllBallsToEachBoxBruteForce                       100%
   LeetCode.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox.MinimumNumberOfOperationsToMoveAllBallsToEachBoxTwoPass                          100%
   LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel.MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch               100%
+  LeetCode.Algorithms.MinimumNumberOfPeopleToTeach.MinimumNumberOfPeopleToTeachGreedyCounting                                                          96.8%
   LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced.MinimumNumberOfSwapsToMakeTheStringBalancedIterative                                  100%
   LeetCode.Algorithms.MinimumOperationsToExceedThresholdValue2.MinimumOperationsToExceedThresholdValue2PriorityQueue                                    100%
   LeetCode.Algorithms.MinimumOperationsToMakeArraySumDivisibleByK.MinimumOperationsToMakeArraySumDivisibleByKGreedy                                     100%
