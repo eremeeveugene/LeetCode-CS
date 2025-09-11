@@ -1,0 +1,84 @@
+﻿// --------------------------------------------------------------------------------
+// Copyright (C) 2025 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// All Rights Reserved.
+// --------------------------------------------------------------------------------
+// This software is the confidential and proprietary information of Eugene Eremeev
+// (also known as Yevhenii Yeriemeieiv) ("Confidential Information"). You shall not
+// disclose such Confidential Information and shall use it only in accordance with
+// the terms of the license agreement you entered into with Eugene Eremeev (also
+// known as Yevhenii Yeriemeieiv).
+// --------------------------------------------------------------------------------
+
+namespace LeetCode.Algorithms.SortVowelsInString;
+
+/// <inheritdoc />
+public class SortVowelsInStringCountingSort : ISortVowelsInString
+{
+    private const string VowelOrder = "AEIOUaeiou";
+
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="s"></param>
+    /// <returns></returns>
+    public string SortVowels(string s)
+    {
+        Span<int> vowelFrequencies = stackalloc int[VowelOrder.Length];
+
+        foreach (var c in s)
+        {
+            var vowelIndex = GetVowelIndex(c);
+
+            if (vowelIndex < 0)
+            {
+                continue;
+            }
+
+            vowelFrequencies[vowelIndex]++;
+        }
+
+        var sCharArray = s.ToCharArray();
+
+        var nextVowelIndex = 0;
+
+        for (var i = 0; i < sCharArray.Length; i++)
+        {
+            var vowelIndex = GetVowelIndex(sCharArray[i]);
+
+            if (vowelIndex < 0)
+            {
+                continue;
+            }
+
+            while (nextVowelIndex < vowelFrequencies.Length && vowelFrequencies[nextVowelIndex] == 0)
+            {
+                nextVowelIndex++;
+            }
+
+            sCharArray[i] = VowelOrder[nextVowelIndex];
+
+            vowelFrequencies[nextVowelIndex]--;
+        }
+
+        return new string(sCharArray);
+    }
+
+    private static int GetVowelIndex(char c)
+    {
+        return c switch
+        {
+            'A' => 0,
+            'E' => 1,
+            'I' => 2,
+            'O' => 3,
+            'U' => 4,
+            'a' => 5,
+            'e' => 6,
+            'i' => 7,
+            'o' => 8,
+            'u' => 9,
+            _ => -1
+        };
+    }
+}
