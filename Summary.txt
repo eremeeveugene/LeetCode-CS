@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/11/2025 - 7:09:32 PM
-  Coverage date: 9/11/2025 - 7:08:27 PM - 9/11/2025 - 7:08:47 PM
+  Generated on: 9/12/2025 - 2:35:58 PM
+  Coverage date: 9/12/2025 - 2:34:26 PM - 9/12/2025 - 2:35:16 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1032
-  Files: 1032
+  Classes: 1033
+  Files: 1033
   Line coverage: 97.6%
-  Covered lines: 22526
+  Covered lines: 22538
   Uncovered lines: 549
-  Coverable lines: 23075
-  Total lines: 57298
-  Branch coverage: 95.3% (8541 of 8953)
-  Covered branches: 8541
-  Total branches: 8953
-  Method coverage: 99.1% (1486 of 1498)
-  Full method coverage: 88.4% (1325 of 1498)
-  Covered methods: 1486
-  Fully covered methods: 1325
-  Total methods: 1498
+  Coverable lines: 23087
+  Total lines: 57338
+  Branch coverage: 95.4% (8557 of 8969)
+  Covered branches: 8557
+  Total branches: 8969
+  Method coverage: 99.2% (1488 of 1500)
+  Full method coverage: 88.4% (1327 of 1500)
+  Covered methods: 1488
+  Fully covered methods: 1327
+  Total methods: 1500
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -1023,6 +1023,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ValidSudoku.ValidSudokuBoolTables                                                                                                 100%
   LeetCode.Algorithms.ValidSudoku.ValidSudokuBruteForce                                                                                                96.7%
   LeetCode.Algorithms.ValidWord.ValidWordIterative                                                                                                      100%
+  LeetCode.Algorithms.VowelsGameInString.VowelsGameInStringMath                                                                                         100%
   LeetCode.Algorithms.WalkingRobotSimulation.WalkingRobotSimulationHashSet                                                                               90%
   LeetCode.Algorithms.WaterBottles.WaterBottlesSimulation                                                                                               100%
   LeetCode.Algorithms.WaysToExpressAnIntegerAsSumOfPowers.WaysToExpressAnIntegerAsSumOfPowersDynamicProgramming                                         100%
