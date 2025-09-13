@@ -14,6 +14,8 @@ namespace LeetCode.Algorithms.FindMostFrequentVowelAndConsonant;
 /// <inheritdoc />
 public class FindMostFrequentVowelAndConsonantFrequencyArray : IFindMostFrequentVowelAndConsonant
 {
+    private const byte AlphabetLength = 'z' - 'a' + 1;
+
     /// <summary>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
@@ -22,7 +24,7 @@ public class FindMostFrequentVowelAndConsonantFrequencyArray : IFindMostFrequent
     /// <returns></returns>
     public int MaxFreqSum(string s)
     {
-        var frequencyArray = new char['z' - 'a' + 1];
+        Span<byte> frequencyArray = stackalloc byte[AlphabetLength];
 
         var maxVowel = 0;
         var maxConsonant = 0;
