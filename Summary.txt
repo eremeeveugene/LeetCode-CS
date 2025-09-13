@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/12/2025 - 2:35:58 PM
-  Coverage date: 9/12/2025 - 2:34:26 PM - 9/12/2025 - 2:35:16 PM
+  Generated on: 9/13/2025 - 5:59:15 PM
+  Coverage date: 9/13/2025 - 5:58:15 PM - 9/13/2025 - 5:58:35 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1033
-  Files: 1033
+  Classes: 1034
+  Files: 1034
   Line coverage: 97.6%
-  Covered lines: 22538
-  Uncovered lines: 549
-  Coverable lines: 23087
-  Total lines: 57338
-  Branch coverage: 95.4% (8557 of 8969)
-  Covered branches: 8557
-  Total branches: 8969
-  Method coverage: 99.2% (1488 of 1500)
-  Full method coverage: 88.4% (1327 of 1500)
-  Covered methods: 1488
+  Covered lines: 22579
+  Uncovered lines: 552
+  Coverable lines: 23131
+  Total lines: 57428
+  Branch coverage: 95.3% (8581 of 8995)
+  Covered branches: 8581
+  Total branches: 8995
+  Method coverage: 99.2% (1490 of 1502)
+  Full method coverage: 88.3% (1327 of 1502)
+  Covered methods: 1490
   Fully covered methods: 1327
-  Total methods: 1500
+  Total methods: 1502
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -662,6 +662,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceBase                                                                                   100%
   LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceBucketSort                                                                             100%
   LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceSorting                                                                                100%
+  LeetCode.Algorithms.MinimumTimeToVisitCellInGrid.MinimumTimeToVisitCellInGridPriorityQueue                                                           97.7%
   LeetCode.Algorithms.MissingNumber.MissingNumberCumulativeSum                                                                                          100%
   LeetCode.Algorithms.MissingNumber.MissingNumberIterativeSumAndSubtract                                                                                100%
   LeetCode.Algorithms.MissingNumber.MissingNumberSortAndForSearch                                                                                       100%
@@ -1040,7 +1041,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
