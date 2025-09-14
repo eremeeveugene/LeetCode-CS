@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/14/2025 - 10:44:22 AM
-  Coverage date: 9/14/2025 - 10:43:20 AM - 9/14/2025 - 10:43:39 AM
+  Generated on: 9/14/2025 - 5:16:58 PM
+  Coverage date: 9/14/2025 - 5:15:34 PM - 9/14/2025 - 5:15:53 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1035
-  Files: 1035
+  Classes: 1036
+  Files: 1036
   Line coverage: 97.6%
-  Covered lines: 22637
-  Uncovered lines: 552
-  Coverable lines: 23189
-  Total lines: 57539
-  Branch coverage: 95.4% (8609 of 9023)
-  Covered branches: 8609
-  Total branches: 9023
-  Method coverage: 99.2% (1494 of 1506)
-  Full method coverage: 88.3% (1331 of 1506)
-  Covered methods: 1494
-  Fully covered methods: 1331
-  Total methods: 1506
+  Covered lines: 22677
+  Uncovered lines: 550
+  Coverable lines: 23227
+  Total lines: 57623
+  Branch coverage: 95.4% (8626 of 9039)
+  Covered branches: 8626
+  Total branches: 9039
+  Method coverage: 99.2% (1495 of 1507)
+  Full method coverage: 88.4% (1333 of 1507)
+  Covered methods: 1495
+  Fully covered methods: 1333
+  Total methods: 1507
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -612,6 +612,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumDeletionsForKMostKDistinctCharacters.MinimumDeletionsForKMostKDistinctCharactersFrequencyArrayPriorityQueue                100%
   LeetCode.Algorithms.MinimumDeletionsForKMostKDistinctCharacters.MinimumDeletionsForKMostKDistinctCharactersFrequencyDictionaryBucketSort             93.3%
   LeetCode.Algorithms.MinimumDeletionsForKMostKDistinctCharacters.MinimumDeletionsForKMostKDistinctCharactersFrequencyDictionaryPriorityQueue           100%
+  LeetCode.Algorithms.MinimumDeletionsToMakeStringKSpecial.MinimumDeletionsToMakeStringKSpecialFrequencyArray                                           100%
   LeetCode.Algorithms.MinimumDepthOfBinaryTree.MinimumDepthOfBinaryTreeBreadthFirstSearch                                                               100%
   LeetCode.Algorithms.MinimumDepthOfBinaryTree.MinimumDepthOfBinaryTreeDepthFirstSearch                                                                 100%
   LeetCode.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesSorting    100%
@@ -1042,7 +1043,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
