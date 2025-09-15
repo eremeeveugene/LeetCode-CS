@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/14/2025 - 5:16:58 PM
-  Coverage date: 9/14/2025 - 5:15:34 PM - 9/14/2025 - 5:15:53 PM
+  Generated on: 9/15/2025 - 9:11:13 AM
+  Coverage date: 9/15/2025 - 9:10:06 AM - 9/15/2025 - 9:10:26 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1036
-  Files: 1036
+  Classes: 1037
+  Files: 1037
   Line coverage: 97.6%
-  Covered lines: 22677
+  Covered lines: 22713
   Uncovered lines: 550
-  Coverable lines: 23227
-  Total lines: 57623
-  Branch coverage: 95.4% (8626 of 9039)
-  Covered branches: 8626
-  Total branches: 9039
-  Method coverage: 99.2% (1495 of 1507)
-  Full method coverage: 88.4% (1333 of 1507)
-  Covered methods: 1495
-  Fully covered methods: 1333
-  Total methods: 1507
+  Coverable lines: 23263
+  Total lines: 57699
+  Branch coverage: 95.4% (8638 of 9051)
+  Covered branches: 8638
+  Total branches: 9051
+  Method coverage: 99.2% (1496 of 1508)
+  Full method coverage: 88.4% (1334 of 1508)
+  Covered methods: 1496
+  Fully covered methods: 1334
+  Total methods: 1508
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -562,6 +562,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinq                                                     100%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinqSplit                                                100%
   LeetCode.Algorithms.MaximumNumberOfWordsYouCanType.MaximumNumberOfWordsYouCanTypeHashSet                                                              100%
+  LeetCode.Algorithms.MaximumNumberOfWordsYouCanType.MaximumNumberOfWordsYouCanTypeLookup                                                               100%
   LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStringBuilder                                                                        100%
   LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStrings                                                                              100%
   LeetCode.Algorithms.MaximumProductOfTwoDigits.MaximumProductOfTwoDigitsGreedy                                                                         100%
