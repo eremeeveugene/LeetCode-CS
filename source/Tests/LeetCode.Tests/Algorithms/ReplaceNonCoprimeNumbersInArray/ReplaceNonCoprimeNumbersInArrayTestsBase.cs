@@ -9,32 +9,27 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
+using LeetCode.Algorithms.ReplaceNonCoprimeNumbersInArray;
 using LeetCode.Core.Helpers;
-using LeetCode.Core.Models;
 
-namespace LeetCode.Tests.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
+namespace LeetCode.Tests.Algorithms.ReplaceNonCoprimeNumbersInArray;
 
-public abstract class HeightOfBinaryTreeAfterSubtreeRemovalQueriesTestsBase<T>
-    where T : IHeightOfBinaryTreeAfterSubtreeRemovalQueries, new()
+public abstract class ReplaceNonCoprimeNumbersInArrayTestsBase<T> where T : IReplaceNonCoprimeNumbersInArray, new()
 {
     [TestMethod]
-    //[DataRow("[1,3,4,2,null,6,5,null,null,null,null,null,7]", "[4]", "[2]")]
-    [DataRow("[5,8,9,2,1,3,7,4,6]", "[3,2,4,8]", "[3,2,3,2]")]
-    //[DataRow("[1,null,5,3,null,2,4]", "[3,5,4,2,4]", "[1,0,3,3,3]")]
-    public void TreeQueries_WithSubtreeRemovedAtGivenNode_ReturnsHeightOfTreeAfterRemoval(string rootJson,
-        string queriesJson, string expectedResultJson)
+    [DataRow("[6,4,3,2,7,6,2]", "[12,7,6]")]
+    [DataRow("[2,2,1,1,3,3,3]", "[2,1,1,3]")]
+    public void ReplaceNonCoprimes_WithNumsArray_ReplacesWithLCMUntilNoMorePairs(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
-        var root = TreeNode.ToTreeNodeOrThrow(rootArray);
-        var queries = JsonHelper<int[]>.Parse(queriesJson);
+        var nums = JsonHelper<int[]>.Parse(numsJson);
         var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 
         // Act
-        var actualResult = solution.TreeQueries(root, queries);
+        var actualResult = solution.ReplaceNonCoprimes(nums).ToArray();
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
