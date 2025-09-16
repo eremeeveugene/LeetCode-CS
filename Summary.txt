@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/15/2025 - 9:11:13 AM
-  Coverage date: 9/15/2025 - 9:10:06 AM - 9/15/2025 - 9:10:26 AM
+  Generated on: 9/16/2025 - 12:37:36 PM
+  Coverage date: 9/16/2025 - 12:36:03 PM - 9/16/2025 - 12:36:56 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1037
-  Files: 1037
+  Classes: 1038
+  Files: 1038
   Line coverage: 97.6%
-  Covered lines: 22713
+  Covered lines: 22813
   Uncovered lines: 550
-  Coverable lines: 23263
-  Total lines: 57699
-  Branch coverage: 95.4% (8638 of 9051)
-  Covered branches: 8638
-  Total branches: 9051
-  Method coverage: 99.2% (1496 of 1508)
-  Full method coverage: 88.4% (1334 of 1508)
-  Covered methods: 1496
-  Fully covered methods: 1334
-  Total methods: 1508
+  Coverable lines: 23363
+  Total lines: 57910
+  Branch coverage: 95.4% (8664 of 9079)
+  Covered branches: 8664
+  Total branches: 9079
+  Method coverage: 99.2% (1503 of 1515)
+  Full method coverage: 88.5% (1341 of 1515)
+  Covered methods: 1503
+  Fully covered methods: 1341
+  Total methods: 1515
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -414,6 +414,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.HarshadNumber.HarshadNumberIterative                                                                                              100%
   LeetCode.Algorithms.HeightChecker.HeightCheckerCountingSort                                                                                           100%
   LeetCode.Algorithms.HeightChecker.HeightCheckerSorting                                                                                                100%
+  LeetCode.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries.HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch                         100%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce                               100%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing                   100%
   LeetCode.Algorithms.ImplementQueueUsingStacks.ImplementQueueUsingStacksAmortized                                                                     92.8%
@@ -1052,7 +1053,7 @@ LeetCode                                                                        
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                    100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             100%
 
-LeetCode.Core                                                                                                                                          80.4%
+LeetCode.Core                                                                                                                                          80.9%
   LeetCode.Core.Helpers.JsonHelper<T>                                                                                                                  64.7%
   LeetCode.Core.Helpers.JsonHelperOptions                                                                                                               100%
   LeetCode.Core.Models.ListNode                                                                                                                         100%
