@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/16/2025 - 12:37:36 PM
-  Coverage date: 9/16/2025 - 12:36:03 PM - 9/16/2025 - 12:36:56 PM
+  Generated on: 9/16/2025 - 6:17:48 PM
+  Coverage date: 9/16/2025 - 6:16:06 PM - 9/16/2025 - 6:17:00 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1038
-  Files: 1038
+  Classes: 1039
+  Files: 1039
   Line coverage: 97.6%
-  Covered lines: 22813
-  Uncovered lines: 550
-  Coverable lines: 23363
-  Total lines: 57910
-  Branch coverage: 95.4% (8664 of 9079)
-  Covered branches: 8664
-  Total branches: 9079
-  Method coverage: 99.2% (1503 of 1515)
-  Full method coverage: 88.5% (1341 of 1515)
-  Covered methods: 1503
-  Fully covered methods: 1341
-  Total methods: 1515
+  Covered lines: 22852
+  Uncovered lines: 552
+  Coverable lines: 23404
+  Total lines: 58018
+  Branch coverage: 95.4% (8673 of 9089)
+  Covered branches: 8673
+  Total branches: 9089
+  Method coverage: 99.2% (1507 of 1519)
+  Full method coverage: 88.4% (1344 of 1519)
+  Covered methods: 1507
+  Fully covered methods: 1344
+  Total methods: 1519
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -823,6 +823,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternConcat                                                                           100%
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternIterative                                                                        100%
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternKMP                                                                             90.3%
+  LeetCode.Algorithms.ReplaceNonCoprimeNumbersInArray.ReplaceNonCoprimeNumbersInArrayGreedy                                                             100%
   LeetCode.Algorithms.ReplaceWords.ReplaceWordsBruteForce                                                                                               100%
   LeetCode.Algorithms.ReplaceWords.ReplaceWordsHashSet                                                                                                  100%
   LeetCode.Algorithms.ReplaceWords.ReplaceWordsTrieNode                                                                                                 100%
@@ -1045,7 +1046,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
