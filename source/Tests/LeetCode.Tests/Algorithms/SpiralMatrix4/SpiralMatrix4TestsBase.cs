@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SpiralMatrix4;
-using LeetCode.Core.Exceptions;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
@@ -28,7 +27,7 @@ public abstract class SpiralMatrix4TestsBase<T> where T : ISpiralMatrix4, new()
     {
         // Arrange
         var headArray = JsonHelper<int[]>.Parse(headJson);
-        var head = ListNode.ToListNode(headArray) ?? throw new ListNodeBuildException();
+        var head = ListNode.ToListNodeOrThrow(headArray);
         var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
 
         var solution = new T();

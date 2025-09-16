@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ConvertBinaryNumberInLinkedListToInteger;
-using LeetCode.Core.Exceptions;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
@@ -26,8 +25,7 @@ public abstract class ConvertBinaryNumberInLinkedListToIntegerTestsBase<T>
     {
         // Arrange
         var headArray = JsonHelper<int[]>.Parse(headJson);
-
-        var head = ListNode.ToListNode(headArray) ?? throw new ListNodeBuildException();
+        var head = ListNode.ToListNodeOrThrow(headArray);
 
         var solution = new T();
 

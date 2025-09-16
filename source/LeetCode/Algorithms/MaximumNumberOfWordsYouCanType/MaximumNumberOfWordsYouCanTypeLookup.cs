@@ -27,18 +27,22 @@ public class MaximumNumberOfWordsYouCanTypeLookup : IMaximumNumberOfWordsYouCanT
     {
         Span<bool> brokenLettersLookup = stackalloc bool[AlphabetLength];
 
-        for (var i = 0; i < brokenLetters.Length; i++)
+        var brokenLettersLength = brokenLetters.Length;
+
+        for (var i = 0; i < brokenLettersLength; i++)
         {
             var brokenLetterIndex = brokenLetters[i] - 'a';
 
             brokenLettersLookup[brokenLetterIndex] = true;
         }
 
-        var count = 0;
+        var goodWordsCount = 0;
 
         var isBroken = false;
 
-        for (var i = 0; i < text.Length; i++)
+        var textLength = text.Length;
+
+        for (var i = 0; i < textLength; i++)
         {
             var c = text[i];
 
@@ -50,7 +54,7 @@ public class MaximumNumberOfWordsYouCanTypeLookup : IMaximumNumberOfWordsYouCanT
                 }
                 else
                 {
-                    count++;
+                    goodWordsCount++;
                 }
             }
             else
@@ -68,9 +72,9 @@ public class MaximumNumberOfWordsYouCanTypeLookup : IMaximumNumberOfWordsYouCanT
 
         if (!isBroken)
         {
-            count++;
+            goodWordsCount++;
         }
 
-        return count;
+        return goodWordsCount;
     }
 }
