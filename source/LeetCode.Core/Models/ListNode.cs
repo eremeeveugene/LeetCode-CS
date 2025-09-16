@@ -11,6 +11,8 @@
 
 // ReSharper disable InconsistentNaming
 
+using LeetCode.Core.Exceptions;
+
 namespace LeetCode.Core.Models;
 
 /// <summary>
@@ -26,6 +28,11 @@ public class ListNode
     {
         this.next = next;
         this.val = val;
+    }
+
+    public static ListNode ToListNodeOrThrow(int[] array)
+    {
+        return ToListNode(array) ?? throw new ListNodeBuildException();
     }
 
     public static ListNode? ToListNode(int[] array)

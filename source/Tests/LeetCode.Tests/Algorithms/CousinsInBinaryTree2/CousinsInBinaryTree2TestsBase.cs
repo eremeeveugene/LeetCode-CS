@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CousinsInBinaryTree2;
-using LeetCode.Core.Exceptions;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
@@ -29,7 +28,7 @@ public abstract class CousinsInBinaryTree2TestsBase<T> where T : ICousinsInBinar
         var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
         var rootArray = JsonHelper<int?[]>.Parse(rootJson);
-        var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
+        var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();
 

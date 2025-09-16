@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumDistanceBetweenBSTNodes;
-using LeetCode.Core.Exceptions;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
@@ -26,7 +25,7 @@ public abstract class MinimumDistanceBetweenBSTNodesTestsBase<T> where T : IMini
     {
         // Arrange
         var rootArray = JsonHelper<int?[]>.Parse(rootJson);
-        var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
+        var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();
 

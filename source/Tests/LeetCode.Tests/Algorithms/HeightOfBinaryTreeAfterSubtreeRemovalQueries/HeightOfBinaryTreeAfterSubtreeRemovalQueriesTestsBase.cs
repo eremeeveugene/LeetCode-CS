@@ -9,32 +9,34 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel;
+using LeetCode.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
-namespace LeetCode.Tests.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel;
+namespace LeetCode.Tests.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
 
-public abstract class MinimumNumberOfOperationsToSortBinaryTreeByLevelTestsBase<T>
-    where T : IMinimumNumberOfOperationsToSortBinaryTreeByLevel, new()
+public abstract class HeightOfBinaryTreeAfterSubtreeRemovalQueriesTestsBase<T>
+    where T : IHeightOfBinaryTreeAfterSubtreeRemovalQueries, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,4,5,6]", 0)]
-    [DataRow("[1,3,2,7,6,5,4]", 3)]
-    [DataRow("[1,4,3,7,6,8,5,null,null,null,null,9,null,10]", 3)]
-    public void MinimumOperations_WithBinaryTreeInput_ReturnsMinOperationsToSortLevelOrders(string rootJson,
-        int expectedResult)
+    [DataRow("[1,3,4,2,null,6,5,null,null,null,null,null,7]", "[4]", "[2]")]
+    [DataRow("[5,8,9,2,1,3,7,4,6]", "[3,2,4,8]", "[3,2,3,2]")]
+    [DataRow("[1,null,5,3,null,2,4]", "[3,5,4,2,4]", "[1,0,3,3,3]")]
+    public void TreeQueries_WithSubtreeRemovedAtGivenNode_ReturnsHeightOfTreeAfterRemoval(string rootJson,
+        string queriesJson, string expectedResultJson)
     {
         // Arrange
         var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
+        var queries = JsonHelper<int[]>.Parse(queriesJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 
         // Act
-        var actualResult = solution.MinimumOperations(root);
+        var actualResult = solution.TreeQueries(root, queries);
 
         // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

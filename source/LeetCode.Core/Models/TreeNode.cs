@@ -11,6 +11,8 @@
 
 // ReSharper disable InconsistentNaming
 
+using LeetCode.Core.Exceptions;
+
 namespace LeetCode.Core.Models;
 
 /// <summary>
@@ -29,6 +31,11 @@ public class TreeNode
         this.left = left;
         this.right = right;
         this.val = val ?? 0;
+    }
+
+    public static TreeNode ToTreeNodeOrThrow(IEnumerable<int?> values)
+    {
+        return ToTreeNode(values) ?? throw new TreeNodeBuildException();
     }
 
     public static TreeNode? ToTreeNode(IEnumerable<int?> values)

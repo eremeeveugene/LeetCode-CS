@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LinkedListInBinaryTree;
-using LeetCode.Core.Exceptions;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
@@ -30,9 +29,9 @@ public abstract class LinkedListInBinaryTreeTestsBase<T> where T : ILinkedListIn
     {
         // Arrange
         var headArray = JsonHelper<int[]>.Parse(headJson);
-        var head = ListNode.ToListNode(headArray) ?? throw new ListNodeBuildException();
+        var head = ListNode.ToListNodeOrThrow(headArray);
         var rootArray = JsonHelper<int?[]>.Parse(rootJson);
-        var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
+        var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();
 

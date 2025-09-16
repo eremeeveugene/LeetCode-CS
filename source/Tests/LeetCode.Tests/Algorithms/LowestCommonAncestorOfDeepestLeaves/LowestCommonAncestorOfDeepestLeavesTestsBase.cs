@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LowestCommonAncestorOfDeepestLeaves;
-using LeetCode.Core.Exceptions;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
@@ -31,9 +30,9 @@ public abstract class LowestCommonAncestorOfDeepestLeavesTestsBase<T>
         var solution = new T();
 
         var rootArray = JsonHelper<int?[]>.Parse(rootJson);
-        var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
+        var root = TreeNode.ToTreeNodeOrThrow(rootArray);
         var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
-        var expectedResult = TreeNode.ToTreeNode(expectedResultArray) ?? throw new TreeNodeBuildException();
+        var expectedResult = TreeNode.ToTreeNodeOrThrow(expectedResultArray);
 
         // Act
         var actualResult = solution.LcaDeepestLeaves(root);

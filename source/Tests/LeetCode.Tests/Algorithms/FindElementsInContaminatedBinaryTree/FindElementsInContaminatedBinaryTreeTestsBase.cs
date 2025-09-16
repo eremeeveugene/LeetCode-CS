@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindElementsInContaminatedBinaryTree;
-using LeetCode.Core.Exceptions;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Exceptions;
@@ -31,7 +30,7 @@ public abstract class FindElementsInContaminatedBinaryTreeTestsBase
     {
         // Arrange
         var rootArray = JsonHelper<int?[]>.Parse(rootJson);
-        var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
+        var root = TreeNode.ToTreeNodeOrThrow(rootArray);
         var methods = JsonHelper<string[]>.Parse(methodsJson);
         var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
         var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);

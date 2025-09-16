@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.KthLargestSumInBinaryTree;
-using LeetCode.Core.Exceptions;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
@@ -26,7 +25,7 @@ public abstract class KthLargestSumInBinaryTreeTestsBase<T> where T : IKthLarges
     {
         // Arrange
         var rootArray = JsonHelper<int?[]>.Parse(rootJson);
-        var root = TreeNode.ToTreeNode(rootArray) ?? throw new TreeNodeBuildException();
+        var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();
 

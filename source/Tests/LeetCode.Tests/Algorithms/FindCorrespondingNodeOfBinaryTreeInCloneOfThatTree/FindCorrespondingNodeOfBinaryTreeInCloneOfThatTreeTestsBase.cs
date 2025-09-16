@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree;
-using LeetCode.Core.Exceptions;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
@@ -29,8 +28,8 @@ public abstract class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeTestsBas
     {
         // Arrange
         var treeArray = JsonHelper<int?[]>.Parse(treeJson);
-        var original = TreeNode.ToTreeNode(treeArray) ?? throw new TreeNodeBuildException();
-        var cloned = TreeNode.ToTreeNode(treeArray) ?? throw new TreeNodeBuildException();
+        var original = TreeNode.ToTreeNodeOrThrow(treeArray);
+        var cloned = TreeNode.ToTreeNodeOrThrow(treeArray);
 
         TreeNode? target = null;
 

@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.AddTwoNumbers2;
-using LeetCode.Core.Exceptions;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
@@ -28,10 +27,10 @@ public abstract class AddTwoNumbers2TestsBase<T> where T : IAddTwoNumbers2, new(
     {
         // Arrange
         var l1Array = JsonHelper<int[]>.Parse(l1Json);
-        var l1 = ListNode.ToListNode(l1Array) ?? throw new ListNodeBuildException();
+        var l1 = ListNode.ToListNodeOrThrow(l1Array);
 
         var l2Array = JsonHelper<int[]>.Parse(l2Json);
-        var l2 = ListNode.ToListNode(l2Array) ?? throw new ListNodeBuildException();
+        var l2 = ListNode.ToListNodeOrThrow(l2Array);
 
         var expectedResultArray = JsonHelper<int[]>.Parse(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
