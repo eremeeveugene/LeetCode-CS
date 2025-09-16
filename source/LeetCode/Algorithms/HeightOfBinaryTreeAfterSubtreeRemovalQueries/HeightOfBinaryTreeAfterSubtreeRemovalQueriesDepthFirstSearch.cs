@@ -63,18 +63,18 @@ public class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch :
 
             maxHeight = Math.Max(maxHeight, nextHeight);
 
-            var leftNode = node.left;
-
-            if (leftNode != null)
-            {
-                nodesStack.Push((leftNode, nextHeight));
-            }
-
             var rightNode = node.right;
 
             if (rightNode != null)
             {
                 nodesStack.Push((rightNode, nextHeight));
+            }
+
+            var leftNode = node.left;
+
+            if (leftNode != null)
+            {
+                nodesStack.Push((leftNode, nextHeight));
             }
         }
     }
@@ -105,18 +105,18 @@ public class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch :
 
             maxHeight = Math.Max(maxHeight, nextHeight);
 
-            var rightNode = node.right;
-
-            if (rightNode != null)
-            {
-                nodesStack.Push((rightNode, nextHeight));
-            }
-
             var leftNode = node.left;
 
             if (leftNode != null)
             {
                 nodesStack.Push((leftNode, nextHeight));
+            }
+
+            var rightNode = node.right;
+
+            if (rightNode != null)
+            {
+                nodesStack.Push((rightNode, nextHeight));
             }
         }
     }
