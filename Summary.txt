@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/18/2025 - 1:18:23 PM
-  Coverage date: 9/18/2025 - 1:17:23 PM - 9/18/2025 - 1:17:43 PM
+  Generated on: 9/18/2025 - 3:45:28 PM
+  Coverage date: 9/18/2025 - 3:44:26 PM - 9/18/2025 - 3:44:46 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1040
-  Files: 1040
+  Classes: 1041
+  Files: 1041
   Line coverage: 97.6%
-  Covered lines: 22911
-  Uncovered lines: 553
-  Coverable lines: 23464
-  Total lines: 58151
-  Branch coverage: 95.4% (8682 of 9099)
-  Covered branches: 8682
-  Total branches: 9099
-  Method coverage: 99.2% (1516 of 1528)
-  Full method coverage: 88.5% (1353 of 1528)
-  Covered methods: 1516
-  Fully covered methods: 1353
-  Total methods: 1528
+  Covered lines: 22967
+  Uncovered lines: 559
+  Coverable lines: 23526
+  Total lines: 58299
+  Branch coverage: 95.3% (8689 of 9109)
+  Covered branches: 8689
+  Total branches: 9109
+  Method coverage: 99.1% (1527 of 1540)
+  Full method coverage: 88.4% (1362 of 1540)
+  Covered methods: 1527
+  Fully covered methods: 1362
+  Total methods: 1540
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -234,6 +234,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignNumberContainerSystem.DesignNumberContainerSystemDictionary                                                                83.8%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArray                                                          100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedList                                                     100%
+  LeetCode.Algorithms.DesignTaskManager.DesignTaskManagerDictionaryWithPriorityQueue                                                                   90.3%
   LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict.DetermineIfTwoEventsHaveConflictNumberComparison                                                 100%
   LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict.DetermineIfTwoEventsHaveConflictStringComparison                                                 100%
   LeetCode.Algorithms.DiagonalTraverse.DiagonalTraverseSimulation                                                                                       100%
