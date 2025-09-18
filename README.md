@@ -529,6 +529,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2342. Max Sum of a Pair With Equal Sum of Digits](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/description/)
 - [2348. Number of Zero-Filled Subarrays](https://leetcode.com/problems/number-of-zero-filled-subarrays/description/)
 - [2349. Design a Number Container System](https://leetcode.com/problems/design-a-number-container-system/description/)
+- [2353. Design a Food Rating System](https://leetcode.com/problems/design-a-food-rating-system/description/)
 - [2364. Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/description/)
 - [2370. Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence/description/)
 - [2373. Largest Local Values in a Matrix](https://leetcode.com/problems/largest-local-values-in-a-matrix/description/)
