@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/16/2025 - 6:17:48 PM
-  Coverage date: 9/16/2025 - 6:16:06 PM - 9/16/2025 - 6:17:00 PM
+  Generated on: 9/18/2025 - 1:18:23 PM
+  Coverage date: 9/18/2025 - 1:17:23 PM - 9/18/2025 - 1:17:43 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1039
-  Files: 1039
+  Classes: 1040
+  Files: 1040
   Line coverage: 97.6%
-  Covered lines: 22852
-  Uncovered lines: 552
-  Coverable lines: 23404
-  Total lines: 58018
-  Branch coverage: 95.4% (8673 of 9089)
-  Covered branches: 8673
-  Total branches: 9089
-  Method coverage: 99.2% (1507 of 1519)
-  Full method coverage: 88.4% (1344 of 1519)
-  Covered methods: 1507
-  Fully covered methods: 1344
-  Total methods: 1519
+  Covered lines: 22911
+  Uncovered lines: 553
+  Coverable lines: 23464
+  Total lines: 58151
+  Branch coverage: 95.4% (8682 of 9099)
+  Covered branches: 8682
+  Total branches: 9099
+  Method coverage: 99.2% (1516 of 1528)
+  Full method coverage: 88.5% (1353 of 1528)
+  Covered methods: 1516
+  Fully covered methods: 1353
+  Total methods: 1528
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -223,6 +223,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArray                                                                                  100%
   LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedList                                                                                63.5%
   LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedList                                                                                72.2%
+  LeetCode.Algorithms.DesignFoodRatingSystem.DesignFoodRatingSystemDictionaryWithPriorityQueue                                                           95%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueLinkedList                                                                  73.8%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueList                                                                        90.4%
   LeetCode.Algorithms.DesignHashMap.DesignHashMapIntArray                                                                                               100%
@@ -1046,7 +1047,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
