@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/18/2025 - 3:45:28 PM
-  Coverage date: 9/18/2025 - 3:44:26 PM - 9/18/2025 - 3:44:46 PM
+  Generated on: 9/19/2025 - 2:09:50 PM
+  Coverage date: 9/19/2025 - 2:08:48 PM - 9/19/2025 - 2:09:09 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1041
-  Files: 1041
+  Classes: 1042
+  Files: 1042
   Line coverage: 97.6%
-  Covered lines: 22967
+  Covered lines: 23005
   Uncovered lines: 559
-  Coverable lines: 23526
-  Total lines: 58299
-  Branch coverage: 95.3% (8689 of 9109)
-  Covered branches: 8689
-  Total branches: 9109
-  Method coverage: 99.1% (1527 of 1540)
-  Full method coverage: 88.4% (1362 of 1540)
-  Covered methods: 1527
-  Fully covered methods: 1362
-  Total methods: 1540
+  Coverable lines: 23564
+  Total lines: 58428
+  Branch coverage: 95.3% (8693 of 9113)
+  Covered branches: 8693
+  Total branches: 9113
+  Method coverage: 99.1% (1534 of 1547)
+  Full method coverage: 88.4% (1369 of 1547)
+  Covered methods: 1534
+  Fully covered methods: 1369
+  Total methods: 1547
 
 LeetCode                                                                                                                                               97.8%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -232,6 +232,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceBruteForce                                                                      98.2%
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceDictionary                                                                       100%
   LeetCode.Algorithms.DesignNumberContainerSystem.DesignNumberContainerSystemDictionary                                                                83.8%
+  LeetCode.Algorithms.DesignSpreadsheet.DesignSpreadsheetMatrix                                                                                         100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArray                                                          100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedList                                                     100%
   LeetCode.Algorithms.DesignTaskManager.DesignTaskManagerDictionaryWithPriorityQueue                                                                   90.3%
