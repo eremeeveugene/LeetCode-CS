@@ -714,6 +714,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3467. Transform Array by Parity](https://leetcode.com/problems/transform-array-by-parity/description/)
 - [3477. Fruits Into Baskets II](https://leetcode.com/problems/fruits-into-baskets-ii/description/)
 - [3483. Unique 3-Digit Even Numbers](https://leetcode.com/problems/unique-3-digit-even-numbers/description/)
+- [3484. Design Spreadsheet](https://leetcode.com/problems/design-spreadsheet/description/)
 - [3487. Maximum Unique Subarray Sum After Deletion](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/description/)
 - [3492. Maximum Containers on a Ship](https://leetcode.com/problems/maximum-containers-on-a-ship/description/)
 - [3498. Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/description/)
