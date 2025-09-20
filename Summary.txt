@@ -1,25 +1,25 @@
 Summary
-  Generated on: 9/19/2025 - 2:09:50 PM
-  Coverage date: 9/19/2025 - 2:08:48 PM - 9/19/2025 - 2:09:09 PM
+  Generated on: 9/20/2025 - 4:18:24 PM
+  Coverage date: 9/20/2025 - 4:17:21 PM - 9/20/2025 - 4:17:41 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1042
-  Files: 1042
+  Classes: 1043
+  Files: 1043
   Line coverage: 97.6%
-  Covered lines: 23005
-  Uncovered lines: 559
-  Coverable lines: 23564
-  Total lines: 58428
-  Branch coverage: 95.3% (8693 of 9113)
-  Covered branches: 8693
-  Total branches: 9113
-  Method coverage: 99.1% (1534 of 1547)
-  Full method coverage: 88.4% (1369 of 1547)
-  Covered methods: 1534
-  Fully covered methods: 1369
-  Total methods: 1547
+  Covered lines: 23083
+  Uncovered lines: 562
+  Coverable lines: 23645
+  Total lines: 58632
+  Branch coverage: 95.3% (8711 of 9133)
+  Covered branches: 8711
+  Total branches: 9133
+  Method coverage: 99.1% (1545 of 1558)
+  Full method coverage: 88.4% (1378 of 1558)
+  Covered methods: 1545
+  Fully covered methods: 1378
+  Total methods: 1558
 
-LeetCode                                                                                                                                               97.8%
+LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                    100%
@@ -422,6 +422,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing                   100%
   LeetCode.Algorithms.ImplementQueueUsingStacks.ImplementQueueUsingStacksAmortized                                                                     92.8%
   LeetCode.Algorithms.ImplementQueueUsingStacks.ImplementQueueUsingStacksTwoStacks                                                                      100%
+  LeetCode.Algorithms.ImplementRouter.ImplementRouterDictionaryWithBinarySearch                                                                        92.5%
   LeetCode.Algorithms.ImplementStackUsingQueues.ImplementStackUsingQueuesOneQueue                                                                       100%
   LeetCode.Algorithms.ImplementStackUsingQueues.ImplementStackUsingQueuesTwoQueues                                                                      100%
   LeetCode.Algorithms.ImplementTrie.ImplementTrieArray                                                                                                 92.3%
@@ -1057,8 +1058,8 @@ LeetCode                                                                        
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                    100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             100%
 
-LeetCode.Core                                                                                                                                          80.9%
-  LeetCode.Core.Helpers.JsonHelper<T>                                                                                                                  64.7%
+LeetCode.Core                                                                                                                                          82.1%
+  LeetCode.Core.Helpers.JsonHelper<T>                                                                                                                  66.9%
   LeetCode.Core.Helpers.JsonHelperOptions                                                                                                               100%
   LeetCode.Core.Models.ListNode                                                                                                                         100%
   LeetCode.Core.Models.Node                                                                                                                             100%
