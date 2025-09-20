@@ -9,10 +9,15 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.ImplementStackUsingQueues;
+using LeetCode.Algorithms.ImplementRouter;
 
-namespace LeetCode.Tests.Algorithms.ImplementStackUsingQueues;
+namespace LeetCode.Tests.Algorithms.ImplementRouter;
 
 [TestClass]
-public class ImplementStackUsingQueuesOneQueueTests :
-    ImplementStackUsingQueuesTestsBase<ImplementStackUsingQueuesOneQueue>;
+public class ImplementRouterDictionaryWithBinarySearchTests : ImplementRouterTestsBase
+{
+    protected override IImplementRouter GetSolution(int memoryLimit)
+    {
+        return new ImplementRouterDictionaryWithBinarySearch(memoryLimit);
+    }
+}
