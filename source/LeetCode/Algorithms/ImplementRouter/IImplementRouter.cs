@@ -9,10 +9,16 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.ImplementStackUsingQueues;
+namespace LeetCode.Algorithms.ImplementRouter;
 
-namespace LeetCode.Tests.Algorithms.ImplementStackUsingQueues;
+/// <summary>
+///     https://leetcode.com/problems/implement-router/description/
+/// </summary>
+public interface IImplementRouter
+{
+    bool AddPacket(int source, int destination, int timestamp);
 
-[TestClass]
-public class ImplementStackUsingQueuesOneQueueTests :
-    ImplementStackUsingQueuesTestsBase<ImplementStackUsingQueuesOneQueue>;
+    int[] ForwardPacket();
+
+    int GetCount(int destination, int startTime, int endTime);
+}

@@ -720,6 +720,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3498. Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/description/)
 - [3502. Minimum Cost to Reach Every Position](https://leetcode.com/problems/minimum-cost-to-reach-every-position/description/)
 - [3507. Minimum Pair Removal to Sort Array I](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/description/)
+- [3508. Implement Router](https://leetcode.com/problems/implement-router/description/)
 - [3512. Minimum Operations to Make Array Sum Divisible by K](https://leetcode.com/problems/minimum-operations-to-make-array-sum-divisible-by-k/description/)
 - [3516. Find Closest Person](https://leetcode.com/problems/find-closest-person/description/)
 - [3536. Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/description/)
