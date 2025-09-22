@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/22/2025 - 1:05:01 PM
-  Coverage date: 9/22/2025 - 1:04:03 PM - 9/22/2025 - 1:04:23 PM
+  Generated on: 9/22/2025 - 1:29:25 PM
+  Coverage date: 9/22/2025 - 1:28:25 PM - 9/22/2025 - 1:28:45 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1044
-  Files: 1044
+  Classes: 1045
+  Files: 1045
   Line coverage: 97.6%
-  Covered lines: 23184
+  Covered lines: 23206
   Uncovered lines: 568
-  Coverable lines: 23752
-  Total lines: 58905
-  Branch coverage: 95.3% (8731 of 9157)
-  Covered branches: 8731
-  Total branches: 9157
-  Method coverage: 99.1% (1561 of 1574)
-  Full method coverage: 88.4% (1392 of 1574)
-  Covered methods: 1561
-  Fully covered methods: 1392
-  Total methods: 1574
+  Coverable lines: 23774
+  Total lines: 58960
+  Branch coverage: 95.3% (8737 of 9163)
+  Covered branches: 8737
+  Total branches: 9163
+  Method coverage: 99.1% (1562 of 1575)
+  Full method coverage: 88.4% (1393 of 1575)
+  Covered methods: 1562
+  Fully covered methods: 1393
+  Total methods: 1575
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -147,6 +147,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountCompleteTreeNodes.CountCompleteTreeNodesDepthRecursive                                                                       100%
   LeetCode.Algorithms.CountCompleteTreeNodes.CountCompleteTreeNodesRecursive                                                                            100%
   LeetCode.Algorithms.CountDaysWithoutMeetings.CountDaysWithoutMeetingsSorting                                                                          100%
+  LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyArray                                                          100%
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionary                                                     100%
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionaryLinq                                                 100%
   LeetCode.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements.CountElementsWithStrictlySmallerAndGreaterElementsIterative                   84.6%
