@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/20/2025 - 4:18:24 PM
-  Coverage date: 9/20/2025 - 4:17:21 PM - 9/20/2025 - 4:17:41 PM
+  Generated on: 9/22/2025 - 1:05:01 PM
+  Coverage date: 9/22/2025 - 1:04:03 PM - 9/22/2025 - 1:04:23 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1043
-  Files: 1043
+  Classes: 1044
+  Files: 1044
   Line coverage: 97.6%
-  Covered lines: 23083
-  Uncovered lines: 562
-  Coverable lines: 23645
-  Total lines: 58632
-  Branch coverage: 95.3% (8711 of 9133)
-  Covered branches: 8711
-  Total branches: 9133
-  Method coverage: 99.1% (1545 of 1558)
-  Full method coverage: 88.4% (1378 of 1558)
-  Covered methods: 1545
-  Fully covered methods: 1378
-  Total methods: 1558
+  Covered lines: 23184
+  Uncovered lines: 568
+  Coverable lines: 23752
+  Total lines: 58905
+  Branch coverage: 95.3% (8731 of 9157)
+  Covered branches: 8731
+  Total branches: 9157
+  Method coverage: 99.1% (1561 of 1574)
+  Full method coverage: 88.4% (1392 of 1574)
+  Covered methods: 1561
+  Fully covered methods: 1392
+  Total methods: 1574
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -229,6 +229,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignHashMap.DesignHashMapIntArray                                                                                               100%
   LeetCode.Algorithms.DesignHashSet.DesignHashSetBitArray                                                                                               100%
   LeetCode.Algorithms.DesignHashSet.DesignHashSetBoolArray                                                                                              100%
+  LeetCode.Algorithms.DesignMovieRentalSystem.DesignMovieRentalSystemDictionary                                                                        94.3%
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceBruteForce                                                                      98.2%
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceDictionary                                                                       100%
   LeetCode.Algorithms.DesignNumberContainerSystem.DesignNumberContainerSystemDictionary                                                                83.8%
