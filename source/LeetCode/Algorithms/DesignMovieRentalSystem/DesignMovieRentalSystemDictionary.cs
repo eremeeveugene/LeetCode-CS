@@ -19,6 +19,12 @@ public class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
     private readonly SortedSet<RentalRecord> _rentalRecordsSortedSet = [];
     private readonly Dictionary<(int Shop, int Movie), int> _shopMovieToPriceDictionary;
 
+    /// <summary>
+    ///     Time complexity - O(m log m), where m is the length of entries
+    ///     Space complexity - O(m)
+    /// </summary>
+    /// <param name="n"></param>
+    /// <param name="entries"></param>
     public DesignMovieRentalSystemDictionary(int n, int[][] entries)
     {
         var entriesLength = entries.Length;
@@ -46,6 +52,12 @@ public class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
         }
     }
 
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="movie"></param>
+    /// <returns></returns>
     public IList<int> Search(int movie)
     {
         if (!_movieToMovieOffersDictionary.TryGetValue(movie, out var movieOffers))
@@ -81,6 +93,11 @@ public class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
         return searchResults;
     }
 
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <returns></returns>
     public IList<IList<int>> Report()
     {
         var rentalItemsCount = _rentalRecordsSortedSet.Count;
@@ -111,6 +128,12 @@ public class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
         return reportResults;
     }
 
+    /// <summary>
+    ///     Time complexity - O(log m), where m is the number of offers for the movie
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="shop"></param>
+    /// <param name="movie"></param>
     public void Rent(int shop, int movie)
     {
         var price = _shopMovieToPriceDictionary[(shop, movie)];
@@ -122,6 +145,12 @@ public class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
         movieOffers.Remove(new MovieOffer(price, shop));
     }
 
+    /// <summary>
+    ///     Time complexity - O(log m), where m is the number of offers for the movie
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="shop"></param>
+    /// <param name="movie"></param>
     public void Drop(int shop, int movie)
     {
         var price = _shopMovieToPriceDictionary[(shop, movie)];
@@ -135,6 +164,12 @@ public class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
 
     public readonly record struct MovieOffer(int Price, int Shop) : IComparable<MovieOffer>
     {
+        /// <summary>
+        ///     Time complexity - O(1)
+        ///     Space complexity - O(1)
+        /// </summary>
+        /// <param name="movieOffer"></param>
+        /// <returns></returns>
         public int CompareTo(MovieOffer movieOffer)
         {
             var priceComparison = CompareToPrice(movieOffer.Price);
@@ -142,11 +177,23 @@ public class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
             return priceComparison != 0 ? priceComparison : CompareToShop(movieOffer.Shop);
         }
 
+        /// <summary>
+        ///     Time complexity - O(1)
+        ///     Space complexity - O(1)
+        /// </summary>
+        /// <param name="price"></param>
+        /// <returns></returns>
         private int CompareToPrice(int price)
         {
             return Price.CompareTo(price);
         }
 
+        /// <summary>
+        ///     Time complexity - O(1)
+        ///     Space complexity - O(1)
+        /// </summary>
+        /// <param name="shop"></param>
+        /// <returns></returns>
         private int CompareToShop(int shop)
         {
             return Shop.CompareTo(shop);
@@ -157,6 +204,12 @@ public class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
     {
         private readonly int[] _report = new int[2];
 
+        /// <summary>
+        ///     Time complexity - O(1)
+        ///     Space complexity - O(1)
+        /// </summary>
+        /// <param name="rentalRecord"></param>
+        /// <returns></returns>
         public int CompareTo(RentalRecord rentalRecord)
         {
             var priceComparison = CompareToPrice(rentalRecord.Price);
@@ -171,6 +224,11 @@ public class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
             return shopComparison != 0 ? shopComparison : CompareToMovie(rentalRecord.Movie);
         }
 
+        /// <summary>
+        ///     Time complexity - O(1)
+        ///     Space complexity - O(1)
+        /// </summary>
+        /// <returns></returns>
         public int[] GetReport()
         {
             _report[0] = Shop;
@@ -179,16 +237,34 @@ public class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
             return _report;
         }
 
+        /// <summary>
+        ///     Time complexity - O(1)
+        ///     Space complexity - O(1)
+        /// </summary>
+        /// <param name="price"></param>
+        /// <returns></returns>
         private int CompareToPrice(int price)
         {
             return Price.CompareTo(price);
         }
 
+        /// <summary>
+        ///     Time complexity - O(1)
+        ///     Space complexity - O(1)
+        /// </summary>
+        /// <param name="shop"></param>
+        /// <returns></returns>
         private int CompareToShop(int shop)
         {
             return Shop.CompareTo(shop);
         }
 
+        /// <summary>
+        ///     Time complexity - O(1)
+        ///     Space complexity - O(1)
+        /// </summary>
+        /// <param name="movie"></param>
+        /// <returns></returns>
         private int CompareToMovie(int movie)
         {
             return Movie.CompareTo(movie);
