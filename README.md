@@ -261,6 +261,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
 - [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
 - [796. Rotate String](https://leetcode.com/problems/rotate-string/description/)
+- [802. Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/)
 - [804. Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/description/)
 - [819. Most Common Word](https://leetcode.com/problems/most-common-word/description/)
 - [824. Goat Latin](https://leetcode.com/problems/goat-latin/description/)
