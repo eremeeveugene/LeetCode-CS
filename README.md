@@ -102,6 +102,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [113. Path Sum II](https://leetcode.com/problems/path-sum-ii/description/)
 - [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/description/)
 - [119. Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/description/)
+- [120. Triangle](https://leetcode.com/problems/triangle/description/)
 - [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 - [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/)
 - [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/)
