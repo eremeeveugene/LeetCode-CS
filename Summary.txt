@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/26/2025 - 11:59:41 AM
-  Coverage date: 9/26/2025 - 11:58:40 AM - 9/26/2025 - 11:59:00 AM
+  Generated on: 9/26/2025 - 12:48:56 PM
+  Coverage date: 9/26/2025 - 12:47:54 PM - 9/26/2025 - 12:48:13 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1048
-  Files: 1048
-  Line coverage: 97.6%
-  Covered lines: 23308
-  Uncovered lines: 573
-  Coverable lines: 23881
-  Total lines: 59161
-  Branch coverage: 95.3% (8766 of 9195)
-  Covered branches: 8766
-  Total branches: 9195
-  Method coverage: 99.1% (1568 of 1581)
-  Full method coverage: 88.2% (1396 of 1581)
-  Covered methods: 1568
+  Classes: 1049
+  Files: 1049
+  Line coverage: 97.5%
+  Covered lines: 23322
+  Uncovered lines: 576
+  Coverable lines: 23898
+  Total lines: 59196
+  Branch coverage: 95.3% (8771 of 9201)
+  Covered branches: 8771
+  Total branches: 9201
+  Method coverage: 99.1% (1569 of 1582)
+  Full method coverage: 88.2% (1396 of 1582)
+  Covered methods: 1569
   Fully covered methods: 1396
-  Total methods: 1581
+  Total methods: 1582
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -997,6 +997,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.TransformArrayByParity.TransformArrayByParityTwoPointers                                                                          100%
   LeetCode.Algorithms.TransformedArray.TransformedArrayIterative                                                                                        100%
   LeetCode.Algorithms.TrappingRainWater.TrappingRainWaterIterative                                                                                      100%
+  LeetCode.Algorithms.Triangle.TriangleDynamicProgramming                                                                                               100%
   LeetCode.Algorithms.TrionicArray1.TrionicArray1Iterative                                                                                             76.4%
   LeetCode.Algorithms.TupleWithSameProduct.TupleWithSameProductDictionary                                                                               100%
   LeetCode.Algorithms.TwentyFourGame.TwentyFourGameBruteForce                                                                                            92%
@@ -1061,7 +1062,7 @@ LeetCode                                                                        
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                    100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             100%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                            84.2%
 
 LeetCode.Core                                                                                                                                          82.1%
   LeetCode.Core.Helpers.JsonHelper<T>                                                                                                                  66.9%
