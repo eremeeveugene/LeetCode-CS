@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/23/2025 - 5:59:07 PM
-  Coverage date: 9/23/2025 - 5:58:03 PM - 9/23/2025 - 5:58:22 PM
+  Generated on: 9/26/2025 - 11:59:41 AM
+  Coverage date: 9/26/2025 - 11:58:40 AM - 9/26/2025 - 11:59:00 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1047
-  Files: 1047
+  Classes: 1048
+  Files: 1048
   Line coverage: 97.6%
-  Covered lines: 23284
-  Uncovered lines: 569
-  Coverable lines: 23853
-  Total lines: 59110
-  Branch coverage: 95.3% (8760 of 9187)
-  Covered branches: 8760
-  Total branches: 9187
-  Method coverage: 99.1% (1567 of 1580)
-  Full method coverage: 88.4% (1397 of 1580)
-  Covered methods: 1567
-  Fully covered methods: 1397
-  Total methods: 1580
+  Covered lines: 23308
+  Uncovered lines: 573
+  Coverable lines: 23881
+  Total lines: 59161
+  Branch coverage: 95.3% (8766 of 9195)
+  Covered branches: 8766
+  Total branches: 9195
+  Method coverage: 99.1% (1568 of 1581)
+  Full method coverage: 88.2% (1396 of 1581)
+  Covered methods: 1568
+  Fully covered methods: 1396
+  Total methods: 1581
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -1035,6 +1035,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ValidSudoku.ValidSudokuBitmask                                                                                                    100%
   LeetCode.Algorithms.ValidSudoku.ValidSudokuBoolTables                                                                                                 100%
   LeetCode.Algorithms.ValidSudoku.ValidSudokuBruteForce                                                                                                96.7%
+  LeetCode.Algorithms.ValidTriangleNumber.ValidTriangleNumberSortingTwoPointers                                                                        92.8%
   LeetCode.Algorithms.ValidWord.ValidWordIterative                                                                                                      100%
   LeetCode.Algorithms.VowelsGameInString.VowelsGameInStringMath                                                                                         100%
   LeetCode.Algorithms.VowelSpellchecker.VowelSpellcheckerDictionary                                                                                     100%
@@ -1054,7 +1055,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
