@@ -12,7 +12,8 @@
 namespace LeetCode.Algorithms.LongestPalindromeByConcatenatingTwoLetterWords;
 
 /// <inheritdoc />
-public class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyDictionary : ILongestPalindromeByConcatenatingTwoLetterWords
+public class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyDictionary :
+    ILongestPalindromeByConcatenatingTwoLetterWords
 {
     /// <summary>
     ///     Time complexity - O(n)

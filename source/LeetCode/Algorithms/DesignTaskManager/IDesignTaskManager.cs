@@ -18,7 +18,7 @@ public interface IDesignTaskManager
 {
     void Add(int userId, int taskId, int priority);
 
-    public void Edit(int taskId, int newPriority);
+    void Edit(int taskId, int newPriority);
 
     void Rmv(int taskId);
 

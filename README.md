@@ -526,6 +526,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2270. Number of Ways to Split Array](https://leetcode.com/problems/number-of-ways-to-split-array/description/)
 - [2275. Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/description/)
 - [2288. Apply Discount to Prices](https://leetcode.com/problems/apply-discount-to-prices/description/)
+- [2290. Minimum Obstacle Removal to Reach Corner](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/description/)
 - [2294. Partition Array Such That Maximum Difference Is K](https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/description/)
 - [2302. Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/description/)
 - [2311. Longest Binary Subsequence Less Than or Equal to K](https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/description/)

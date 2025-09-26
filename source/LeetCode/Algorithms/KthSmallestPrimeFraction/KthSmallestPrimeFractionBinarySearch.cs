@@ -35,8 +35,8 @@ public class KthSmallestPrimeFractionBinarySearch : IKthSmallestPrimeFraction
             var q = 1;
             var j = 1;
 
-            var heap = new SortedSet<(double value, int i, int j)>(Comparer<(double value, int i, int j)>.Create(
-                (a, b) =>
+            var heap = new SortedSet<(double value, int i, int j)>(
+                Comparer<(double value, int i, int j)>.Create((a, b) =>
                 {
                     var comparerResult = a.value.CompareTo(b.value);
 
