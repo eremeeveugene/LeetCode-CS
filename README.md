@@ -265,6 +265,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [796. Rotate String](https://leetcode.com/problems/rotate-string/description/)
 - [802. Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/)
 - [804. Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/description/)
+- [812. Largest Triangle Area](https://leetcode.com/problems/largest-triangle-area/description/)
 - [819. Most Common Word](https://leetcode.com/problems/most-common-word/description/)
 - [824. Goat Latin](https://leetcode.com/problems/goat-latin/description/)
 - [832. Flipping an Image](https://leetcode.com/problems/flipping-an-image/description/)
