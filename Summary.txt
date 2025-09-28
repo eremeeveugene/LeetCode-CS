@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/27/2025 - 9:42:34 AM
-  Coverage date: 9/27/2025 - 9:41:33 AM - 9/27/2025 - 9:41:52 AM
+  Generated on: 9/28/2025 - 11:01:09 AM
+  Coverage date: 9/28/2025 - 11:00:11 AM - 9/28/2025 - 11:00:31 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
   Classes: 1050
   Files: 1050
   Line coverage: 97.6%
-  Covered lines: 23353
+  Covered lines: 23365
   Uncovered lines: 573
-  Coverable lines: 23926
-  Total lines: 59260
-  Branch coverage: 95.3% (8778 of 9207)
-  Covered branches: 8778
-  Total branches: 9207
-  Method coverage: 99.1% (1571 of 1584)
-  Full method coverage: 88.3% (1399 of 1584)
-  Covered methods: 1571
-  Fully covered methods: 1399
-  Total methods: 1584
+  Coverable lines: 23938
+  Total lines: 59278
+  Branch coverage: 95.3% (8780 of 9209)
+  Covered branches: 8780
+  Total branches: 9209
+  Method coverage: 99.1% (1572 of 1585)
+  Full method coverage: 88.3% (1400 of 1585)
+  Covered methods: 1572
+  Fully covered methods: 1400
+  Total methods: 1585
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -466,7 +466,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LargestNumber.LargestNumberConcatenationSorting                                                                                   100%
   LeetCode.Algorithms.LargestNumberAtLeastTwiceOfOthers.LargestNumberAtLeastTwiceOfOthersIterative                                                      100%
   LeetCode.Algorithms.LargestPerimeterTriangle.LargestPerimeterTriangleCountingSort                                                                     100%
-  LeetCode.Algorithms.LargestPerimeterTriangle.LargestPerimeterTriangleSorting                                                                          100%
+  LeetCode.Algorithms.LargestPerimeterTriangle.LargestPerimeterTriangleSorting                                                                           90%
   LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeHashSet                            100%
   LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointers                 100%
   LeetCode.Algorithms.LargestThreeSameDigitNumberInString.LargestThreeSameDigitNumberInStringGreedy                                                     100%
@@ -1057,7 +1057,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
