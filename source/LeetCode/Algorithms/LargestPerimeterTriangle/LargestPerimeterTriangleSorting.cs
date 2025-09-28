@@ -22,18 +22,32 @@ public class LargestPerimeterTriangleSorting : ILargestPerimeterTriangle
     /// <returns></returns>
     public int LargestPerimeter(int[] nums)
     {
-        Array.Sort(nums);
+        var numsLength = nums.Length;
 
-        for (var i = nums.Length - 1; i >= 2; i--)
+        if (numsLength < 3)
         {
-            var ab = nums[i - 2] + nums[i - 1];
+            return 0;
+        }
 
-            if (ab > nums[i])
+        Array.Sort(nums, NumsComparison);
+
+        for (var i = numsLength - 3; i >= 0; i--)
+        {
+            var a = nums[i];
+            var b = nums[i + 1];
+            var c = nums[i + 2];
+
+            if (a + b > c)
             {
-                return nums[i] + ab;
+                return a + b + c;
             }
         }
 
         return 0;
+    }
+
+    private static int NumsComparison(int x, int y)
+    {
+        return x - y;
     }
 }
