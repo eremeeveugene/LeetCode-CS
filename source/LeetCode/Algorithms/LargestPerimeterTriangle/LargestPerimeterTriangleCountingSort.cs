@@ -45,9 +45,13 @@ public class LargestPerimeterTriangleCountingSort : ILargestPerimeterTriangle
 
         for (var i = 0; i < sortedNums.Length - 2; i++)
         {
-            if (sortedNums[i] < sortedNums[i + 1] + sortedNums[i + 2])
+            var a = sortedNums[i + 2];
+            var b = sortedNums[i + 1];
+            var c = sortedNums[i];
+
+            if (a + b > c)
             {
-                return sortedNums[i] + sortedNums[i + 1] + sortedNums[i + 2];
+                return a + b + c;
             }
         }
 
