@@ -518,6 +518,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2210. Count Hills and Valleys in an Array](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/description/)
 - [2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/description/)
 - [2220. Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)
+- [2221. Find Triangular Sum of an Array](https://leetcode.com/problems/find-triangular-sum-of-an-array/description/)
 - [2235. Add Two Integers](https://leetcode.com/problems/add-two-integers/description/)
 - [2236. Root Equals Sum of Children](https://leetcode.com/problems/root-equals-sum-of-children/description/)
 - [2257. Count Unguarded Cells in the Grid](https://leetcode.com/problems/count-unguarded-cells-in-the-grid/description/)
