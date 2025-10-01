@@ -166,6 +166,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/description/)
 - [368. Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/description/)
 - [374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/)
+- [380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/description/)
 - [383. Ransom Note](https://leetcode.com/problems/ransom-note/description/)
 - [386. Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/description/)
 - [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/)
