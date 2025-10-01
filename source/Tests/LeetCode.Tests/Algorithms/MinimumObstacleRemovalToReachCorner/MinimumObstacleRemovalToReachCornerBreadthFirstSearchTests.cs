@@ -9,13 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner;
+using LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner;
 
-/// <inheritdoc />
-public class MinimumObstacleRemovalToReachCorner1 : IMinimumObstacleRemovalToReachCorner
-{
-    public int MinimumObstacles(int[][] grid)
-    {
-        throw new NotImplementedException();
-    }
-}
+namespace LeetCode.Tests.Algorithms.MinimumObstacleRemovalToReachCorner;
+
+[TestClass]
+public class MinimumObstacleRemovalToReachCornerBreadthFirstSearchTests :
+    MinimumObstacleRemovalToReachCornerTestsBase<MinimumObstacleRemovalToReachCornerBreadthFirstSearch>;
