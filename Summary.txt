@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/30/2025 - 12:22:15 PM
-  Coverage date: 9/30/2025 - 12:20:24 PM - 9/30/2025 - 12:20:45 PM
+  Generated on: 10/1/2025 - 9:21:04 AM
+  Coverage date: 10/1/2025 - 9:19:56 AM - 10/1/2025 - 9:20:16 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1051
-  Files: 1051
+  Classes: 1053
+  Files: 1053
   Line coverage: 97.6%
-  Covered lines: 23376
-  Uncovered lines: 573
-  Coverable lines: 23949
-  Total lines: 59315
-  Branch coverage: 95.3% (8784 of 9213)
-  Covered branches: 8784
-  Total branches: 9213
-  Method coverage: 99.1% (1573 of 1586)
-  Full method coverage: 88.3% (1401 of 1586)
-  Covered methods: 1573
-  Fully covered methods: 1401
-  Total methods: 1586
+  Covered lines: 23462
+  Uncovered lines: 575
+  Coverable lines: 24037
+  Total lines: 59538
+  Branch coverage: 95.3% (8825 of 9255)
+  Covered branches: 8825
+  Total branches: 9255
+  Method coverage: 99.1% (1579 of 1592)
+  Full method coverage: 88.3% (1406 of 1592)
+  Covered methods: 1579
+  Fully covered methods: 1406
+  Total methods: 1592
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -655,6 +655,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel.MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch               100%
   LeetCode.Algorithms.MinimumNumberOfPeopleToTeach.MinimumNumberOfPeopleToTeachGreedyCounting                                                          96.8%
   LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced.MinimumNumberOfSwapsToMakeTheStringBalancedIterative                                  100%
+  LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner.MinimumObstacleRemovalToReachCornerBreadthFirstSearch                                         100%
+  LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner.MinimumObstacleRemovalToReachCornerPriorityQueue                                              100%
   LeetCode.Algorithms.MinimumOperationsToExceedThresholdValue2.MinimumOperationsToExceedThresholdValue2PriorityQueue                                    100%
   LeetCode.Algorithms.MinimumOperationsToMakeArraySumDivisibleByK.MinimumOperationsToMakeArraySumDivisibleByKGreedy                                     100%
   LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK.MinimumOperationsToMakeArrayValuesEqualToKHashSet                                      100%
@@ -1058,7 +1060,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
