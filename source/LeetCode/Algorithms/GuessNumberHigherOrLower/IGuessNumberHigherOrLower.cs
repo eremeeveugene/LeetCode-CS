@@ -16,5 +16,5 @@ namespace LeetCode.Algorithms.GuessNumberHigherOrLower;
 /// </summary>
 public interface IGuessNumberHigherOrLower
 {
-    public int GuessNumber(int n);
+    int GuessNumber(int n);
 }

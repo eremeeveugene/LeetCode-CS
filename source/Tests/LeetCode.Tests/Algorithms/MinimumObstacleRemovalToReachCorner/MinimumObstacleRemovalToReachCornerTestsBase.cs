@@ -9,26 +9,27 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.Triangle;
+using LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner;
 using LeetCode.Core.Helpers;
 
-namespace LeetCode.Tests.Algorithms.Triangle;
+namespace LeetCode.Tests.Algorithms.MinimumObstacleRemovalToReachCorner;
 
-public abstract class TriangleTestsBase<T> where T : ITriangle, new()
+public abstract class MinimumObstacleRemovalToReachCornerTestsBase<T>
+    where T : IMinimumObstacleRemovalToReachCorner, new()
 {
     [TestMethod]
-    [DataRow("[[2],[3,4],[6,5,7],[4,1,8,3]]", 11)]
-    [DataRow("[[-10]]", -10)]
-    public void MinimumTotal_WithTriangleInput_ReturnsMinimumPathSumFromTopToBottom(string triangleJson,
+    [DataRow("[[0,1,1],[1,1,0],[1,1,0]]", 2)]
+    [DataRow("[[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]]", 0)]
+    public void MinimumObstacles_WithStartToEndPath_ReturnsMinimumObstaclesToRemove(string gridJson,
         int expectedResult)
     {
         // Arrange
-        var triangle = JsonHelper<IList<IList<int>>>.Parse(triangleJson);
+        var grid = JsonHelper<int[][]>.Parse(gridJson);
 
         var solution = new T();
 
         // Act
-        var actualResult = solution.MinimumTotal(triangle);
+        var actualResult = solution.MinimumObstacles(grid);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

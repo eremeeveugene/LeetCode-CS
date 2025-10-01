@@ -16,5 +16,5 @@ namespace LeetCode.Algorithms.LargestLocalValuesInMatrix;
 /// </summary>
 public interface ILargestLocalValuesInMatrix
 {
-    public int[][] LargestLocal(int[][] grid);
+    int[][] LargestLocal(int[][] grid);
 }
