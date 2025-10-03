@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/1/2025 - 9:21:04 AM
-  Coverage date: 10/1/2025 - 9:19:56 AM - 10/1/2025 - 9:20:16 AM
+  Generated on: 10/3/2025 - 7:26:33 AM
+  Coverage date: 10/3/2025 - 7:25:19 AM - 10/3/2025 - 7:25:40 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1053
-  Files: 1053
+  Classes: 1056
+  Files: 1056
   Line coverage: 97.6%
-  Covered lines: 23462
+  Covered lines: 23514
   Uncovered lines: 575
-  Coverable lines: 24037
-  Total lines: 59538
-  Branch coverage: 95.3% (8825 of 9255)
-  Covered branches: 8825
-  Total branches: 9255
-  Method coverage: 99.1% (1579 of 1592)
-  Full method coverage: 88.3% (1406 of 1592)
-  Covered methods: 1579
-  Fully covered methods: 1406
-  Total methods: 1592
+  Coverable lines: 24089
+  Total lines: 59706
+  Branch coverage: 95.3% (8833 of 9263)
+  Covered branches: 8833
+  Total branches: 9263
+  Method coverage: 99.1% (1586 of 1599)
+  Full method coverage: 88.3% (1413 of 1599)
+  Covered methods: 1586
+  Fully covered methods: 1413
+  Total methods: 1599
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -433,6 +433,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ImplementTrie.ImplementTrieDictionary                                                                                            94.4%
   LeetCode.Algorithms.IncreasingDecreasingString.IncreasingDecreasingStringCountingSort                                                                 100%
   LeetCode.Algorithms.IncreasingDecreasingString.IncreasingDecreasingStringDictionary                                                                   100%
+  LeetCode.Algorithms.InsertDeleteGetRandom.InsertDeleteGetRandomDictionaryList                                                                         100%
   LeetCode.Algorithms.InsertGreatestCommonDivisorsInLinkedList.InsertGreatestCommonDivisorsInLinkedListSimulation                                       100%
   LeetCode.Algorithms.InsertInterval.InsertIntervalIterative                                                                                            100%
   LeetCode.Algorithms.IntegerToEnglishWords.IntegerToEnglishWordsIterative                                                                              100%
@@ -1046,6 +1047,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.VowelSpellchecker.VowelSpellcheckerDictionary                                                                                     100%
   LeetCode.Algorithms.WalkingRobotSimulation.WalkingRobotSimulationHashSet                                                                               90%
   LeetCode.Algorithms.WaterBottles.WaterBottlesSimulation                                                                                               100%
+  LeetCode.Algorithms.WaterBottles2.WaterBottles2Math                                                                                                   100%
+  LeetCode.Algorithms.WaterBottles2.WaterBottles2Simulation                                                                                             100%
   LeetCode.Algorithms.WaysToExpressAnIntegerAsSumOfPowers.WaysToExpressAnIntegerAsSumOfPowersDynamicProgramming                                         100%
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsAscending                100%
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescending               100%
