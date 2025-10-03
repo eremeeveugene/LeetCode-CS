@@ -22,9 +22,9 @@ public abstract class InsertDeleteGetRandomTestsBase<T> where T : IInsertDeleteG
     private const string GetRandom = "getRandom";
 
     [TestMethod]
-    [DataRow("[\"insert\", \"remove\", \"insert\", \"getRandom\", \"remove\", \"insert\", \"getRandom\"]",
-        "[[1], [2], [2], [], [1], [2], []]",
-        "[true, false, true, 2, true, false, 2]")]
+    [DataRow("[\"insert\", \"remove\", \"insert\", \"getRandom\", \"remove\", \"insert\", \"getRandom\", \"remove\", \"remove\", \"insert\", \"getRandom\"]",
+        "[[1], [2], [2], [], [1], [2], [], [1], [2], [3], []]",
+        "[true, false, true, [1,2], true, false, [2], false, true, true, [3]]")]
     public void InsertDeleteGetRandom_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
         string methodsJson, string argumentsJson, string expectedResultJson)
     {
@@ -57,6 +57,16 @@ public abstract class InsertDeleteGetRandomTestsBase<T> where T : IInsertDeleteG
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        for (var i = 0; i < expectedResult.Length; i++)
+        {
+            if (expectedResult[i] is object[] validOptions)
+            {
+                Assert.IsTrue(validOptions.Contains(actualResult[i]));
+            }
+            else
+            {
+                Assert.AreEqual(expectedResult[i], actualResult[i]);
+            }
+        }
     }
 }

@@ -664,6 +664,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3085. Minimum Deletions to Make String K-Special](https://leetcode.com/problems/minimum-deletions-to-make-string-k-special/description/)
 - [3097. Shortest Subarray With OR at Least K II](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/description/)
 - [3099. Harshad Number](https://leetcode.com/problems/harshad-number/description/)
+- [3100. Water Bottles II](https://leetcode.com/problems/water-bottles-ii/description/)
 - [3105. Longest Strictly Increasing or Strictly Decreasing Subarray](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/description/)
 - [3110. Score of a String](https://leetcode.com/problems/score-of-a-string/description/)
 - [3133. Minimum Array End](https://leetcode.com/problems/minimum-array-end/description/)
