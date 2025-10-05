@@ -9,31 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.ContainsDuplicate;
+using LeetCode.Algorithms.ContainerWithMostWater;
 
-/// <inheritdoc />
-public class ContainsDuplicateHashSet : IContainsDuplicate
-{
-    /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
-    public bool ContainsDuplicate(int[] nums)
-    {
-        var numsHashSet = new HashSet<int>();
+namespace LeetCode.Tests.Algorithms.ContainerWithMostWater;
 
-        foreach (var num in nums)
-        {
-            if (numsHashSet.Add(num))
-            {
-                continue;
-            }
-
-            return true;
-        }
-
-        return false;
-    }
-}
+[TestClass]
+public class ContainerWithMostWaterTwoPointersTests :
+    ContainerWithMostWaterTestsBase<ContainerWithMostWaterTwoPointers>;
