@@ -9,31 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.ContainsDuplicate;
+namespace LeetCode.Algorithms.ContainerWithMostWater;
 
-/// <inheritdoc />
-public class ContainsDuplicateHashSet : IContainsDuplicate
+/// <summary>
+///     https://leetcode.com/problems/container-with-most-water/description/
+/// </summary>
+public interface IContainerWithMostWater
 {
-    /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
-    public bool ContainsDuplicate(int[] nums)
-    {
-        var numsHashSet = new HashSet<int>();
-
-        foreach (var num in nums)
-        {
-            if (numsHashSet.Add(num))
-            {
-                continue;
-            }
-
-            return true;
-        }
-
-        return false;
-    }
+    int MaxArea(int[] heights);
 }

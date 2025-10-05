@@ -9,31 +9,49 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.ContainsDuplicate;
+namespace LeetCode.Algorithms.ContainerWithMostWater;
 
 /// <inheritdoc />
-public class ContainsDuplicateHashSet : IContainsDuplicate
+public class ContainerWithMostWaterTwoPointers : IContainerWithMostWater
 {
     /// <summary>
     ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
+    ///     Space complexity - O(1)
     /// </summary>
-    /// <param name="nums"></param>
+    /// <param name="heights"></param>
     /// <returns></returns>
-    public bool ContainsDuplicate(int[] nums)
+    public int MaxArea(int[] heights)
     {
-        var numsHashSet = new HashSet<int>();
+        var left = 0;
+        var right = heights.Length - 1;
 
-        foreach (var num in nums)
+        var maxArea = 0;
+
+        while (left < right)
         {
-            if (numsHashSet.Add(num))
+            var leftHeight = heights[left];
+            var rightHeight = heights[right];
+            var height = int.Min(leftHeight, rightHeight);
+
+            var width = right - left;
+
+            var area = height * width;
+
+            if (area > maxArea)
             {
-                continue;
+                maxArea = area;
             }
 
-            return true;
+            if (leftHeight < rightHeight)
+            {
+                left++;
+            }
+            else
+            {
+                right--;
+            }
         }
 
-        return false;
+        return maxArea;
     }
 }
