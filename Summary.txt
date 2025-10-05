@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/3/2025 - 7:26:33 AM
-  Coverage date: 10/3/2025 - 7:25:19 AM - 10/3/2025 - 7:25:40 AM
+  Generated on: 10/5/2025 - 10:30:42 AM
+  Coverage date: 10/5/2025 - 10:29:42 AM - 10/5/2025 - 10:30:02 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1056
-  Files: 1056
+  Classes: 1057
+  Files: 1057
   Line coverage: 97.6%
-  Covered lines: 23514
+  Covered lines: 23545
   Uncovered lines: 575
-  Coverable lines: 24089
-  Total lines: 59706
-  Branch coverage: 95.3% (8833 of 9263)
-  Covered branches: 8833
-  Total branches: 9263
-  Method coverage: 99.1% (1586 of 1599)
-  Full method coverage: 88.3% (1413 of 1599)
-  Covered methods: 1586
-  Fully covered methods: 1413
-  Total methods: 1599
+  Coverable lines: 24120
+  Total lines: 59773
+  Branch coverage: 95.3% (8843 of 9273)
+  Covered branches: 8843
+  Total branches: 9273
+  Method coverage: 99.1% (1587 of 1600)
+  Full method coverage: 88.3% (1414 of 1600)
+  Covered methods: 1587
+  Fully covered methods: 1414
+  Total methods: 1600
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -127,6 +127,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ConstructSmallestNumberFromDIString.ConstructSmallestNumberFromDIStringStack                                                      100%
   LeetCode.Algorithms.ConstructStringWithRepeatLimit.ConstructStringWithRepeatLimitGreedy                                                               100%
   LeetCode.Algorithms.ConstructStringWithRepeatLimit.ConstructStringWithRepeatLimitPriorityQueue                                                        100%
+  LeetCode.Algorithms.ContainerWithMostWater.ContainerWithMostWaterTwoPointers                                                                          100%
   LeetCode.Algorithms.ContainsDuplicate.ContainsDuplicateHashSet                                                                                        100%
   LeetCode.Algorithms.ContainsDuplicate2.ContainsDuplicate2Dictionary                                                                                   100%
   LeetCode.Algorithms.ContainsDuplicate3.ContainsDuplicate3BruteForce                                                                                   100%
