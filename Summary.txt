@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/5/2025 - 10:30:42 AM
-  Coverage date: 10/5/2025 - 10:29:42 AM - 10/5/2025 - 10:30:02 AM
+  Generated on: 10/6/2025 - 12:27:12 PM
+  Coverage date: 10/6/2025 - 12:26:12 PM - 10/6/2025 - 12:26:31 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1057
-  Files: 1057
+  Classes: 1058
+  Files: 1058
   Line coverage: 97.6%
-  Covered lines: 23545
-  Uncovered lines: 575
-  Coverable lines: 24120
-  Total lines: 59773
-  Branch coverage: 95.3% (8843 of 9273)
-  Covered branches: 8843
-  Total branches: 9273
-  Method coverage: 99.1% (1587 of 1600)
-  Full method coverage: 88.3% (1414 of 1600)
-  Covered methods: 1587
-  Fully covered methods: 1414
-  Total methods: 1600
+  Covered lines: 23585
+  Uncovered lines: 573
+  Coverable lines: 24158
+  Total lines: 59854
+  Branch coverage: 95.3% (8866 of 9295)
+  Covered branches: 8866
+  Total branches: 9295
+  Method coverage: 99.1% (1589 of 1602)
+  Full method coverage: 88.4% (1417 of 1602)
+  Covered methods: 1589
+  Fully covered methods: 1417
+  Total methods: 1602
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -979,6 +979,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SumOfVariableLengthSubarrays.SumOfVariableLengthSubarraysPrefixSum                                                                100%
   LeetCode.Algorithms.SumRootToLeafNumbers.SumRootToLeafNumbersBreadthFirstSearch                                                                      93.1%
   LeetCode.Algorithms.SumRootToLeafNumbers.SumRootToLeafNumbersDepthFirstSearch                                                                         100%
+  LeetCode.Algorithms.SwimInRisingWater.SwimInRisingWaterPriorityQueue                                                                                  100%
   LeetCode.Algorithms.SymmetricTree.SymmetricTreeIterative                                                                                             92.5%
   LeetCode.Algorithms.SymmetricTree.SymmetricTreeRecursive                                                                                             86.6%
   LeetCode.Algorithms.TakeGiftsFromTheRichestPile.TakeGiftsFromTheRichestPilePriorityQueue                                                              100%
@@ -1064,7 +1065,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
