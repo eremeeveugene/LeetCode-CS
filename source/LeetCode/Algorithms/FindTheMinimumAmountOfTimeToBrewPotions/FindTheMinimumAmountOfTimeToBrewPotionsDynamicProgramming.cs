@@ -15,36 +15,48 @@ namespace LeetCode.Algorithms.FindTheMinimumAmountOfTimeToBrewPotions;
 public class FindTheMinimumAmountOfTimeToBrewPotionsDynamicProgramming : IFindTheMinimumAmountOfTimeToBrewPotions
 {
     /// <summary>
-    ///     Time complexity - O(n * m), where n is the length of skill and m is the length of mana
-    ///     Space complexity - O(n), where n is the length of skill
+    ///     Time complexity - O(n * m), where n is the length of wizardSkills and m is the length of potionMana
+    ///     Space complexity - O(n), where n is the length of wizardSkills
     /// </summary>
-    /// <param name="skill"></param>
-    /// <param name="mana"></param>
+    /// <param name="wizardSkills"></param>
+    /// <param name="potionMana"></param>
     /// <returns></returns>
-    public long MinTime(int[] skill, int[] mana)
+    public long MinTime(int[] wizardSkills, int[] potionMana)
     {
-        var n = skill.Length;
-        var m = mana.Length;
+        var wizardCount = wizardSkills.Length;
+        var potionCount = potionMana.Length;
 
-        Span<long> times = stackalloc long[n];
+        Span<long> prefixSkillSum = stackalloc long[wizardCount];
 
-        for (var j = 0; j < m; j++)
+        for (var i = 1; i < wizardCount; i++)
         {
-            long currentTime = 0;
-
-            for (var i = 0; i < n; i++)
-            {
-                currentTime = Math.Max(currentTime, times[i]) + ((long)skill[i] * mana[j]);
-            }
-
-            times[n - 1] = currentTime;
-
-            for (var i = n - 2; i >= 0; i--)
-            {
-                times[i] = times[i + 1] - ((long)skill[i + 1] * mana[j]);
-            }
+            prefixSkillSum[i] = prefixSkillSum[i - 1] + wizardSkills[i];
         }
 
-        return times[n - 1];
+        var totalTime = (long)wizardSkills[0] * potionMana[0];
+
+        for (var potionIndex = 1; potionIndex < potionCount; potionIndex++)
+        {
+            long previousMana = potionMana[potionIndex - 1];
+            long currentMana = potionMana[potionIndex];
+
+            var potionCompletionTime = wizardSkills[0] * currentMana;
+
+            for (var wizardIndex = 1; wizardIndex < wizardCount; wizardIndex++)
+            {
+                var totalPrevSkills = prefixSkillSum[wizardIndex];
+                var totalPrevSkillsExcludingCurrent = prefixSkillSum[wizardIndex - 1];
+
+                var wizardDelay = (totalPrevSkills * previousMana) - (totalPrevSkillsExcludingCurrent * currentMana);
+
+                potionCompletionTime = long.Max(potionCompletionTime, wizardDelay);
+            }
+
+            totalTime += potionCompletionTime;
+        }
+
+        totalTime += prefixSkillSum[wizardCount - 1] * potionMana[potionCount - 1];
+
+        return totalTime;
     }
 }

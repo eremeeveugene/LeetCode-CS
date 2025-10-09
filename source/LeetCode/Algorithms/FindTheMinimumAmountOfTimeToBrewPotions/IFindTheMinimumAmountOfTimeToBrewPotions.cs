@@ -16,5 +16,5 @@ namespace LeetCode.Algorithms.FindTheMinimumAmountOfTimeToBrewPotions;
 /// </summary>
 public interface IFindTheMinimumAmountOfTimeToBrewPotions
 {
-    long MinTime(int[] skill, int[] mana);
+    long MinTime(int[] wizardSkills, int[] potionMana);
 }

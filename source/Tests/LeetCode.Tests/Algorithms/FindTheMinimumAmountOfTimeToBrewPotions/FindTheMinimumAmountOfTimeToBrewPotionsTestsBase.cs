@@ -21,17 +21,17 @@ public abstract class FindTheMinimumAmountOfTimeToBrewPotionsTestsBase<T>
     [DataRow("[1,1,1]", "[1,1,1]", 5)]
     [DataRow("[1,2,3,4]", "[1,2]", 21)]
     [DataRow("[1,5,2,4]", "[5,1,4,2]", 110)]
-    public void MinTime_WithSkillsAndManaValues_ReturnsMinimumTotalBrewingTime(string skillJson, string manaJson,
-        long expectedResult)
+    public void MinTime_WithSkillsAndManaValues_ReturnsMinimumTotalBrewingTime(string wizardSkillsJson,
+        string potionManaJson, long expectedResult)
     {
         // Arrange
-        var skill = JsonHelper<int[]>.Parse(skillJson);
-        var mana = JsonHelper<int[]>.Parse(manaJson);
+        var wizardSkills = JsonHelper<int[]>.Parse(wizardSkillsJson);
+        var potionMana = JsonHelper<int[]>.Parse(potionManaJson);
 
         var solution = new T();
 
         // Act
-        var actualResult = solution.MinTime(skill, mana);
+        var actualResult = solution.MinTime(wizardSkills, potionMana);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
