@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/6/2025 - 12:27:12 PM
-  Coverage date: 10/6/2025 - 12:26:12 PM - 10/6/2025 - 12:26:31 PM
+  Generated on: 10/11/2025 - 11:02:21 AM
+  Coverage date: 10/11/2025 - 11:01:14 AM - 10/11/2025 - 11:01:33 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1058
-  Files: 1058
+  Classes: 1059
+  Files: 1059
   Line coverage: 97.6%
-  Covered lines: 23585
+  Covered lines: 23611
   Uncovered lines: 573
-  Coverable lines: 24158
-  Total lines: 59854
-  Branch coverage: 95.3% (8866 of 9295)
-  Covered branches: 8866
-  Total branches: 9295
-  Method coverage: 99.1% (1589 of 1602)
-  Full method coverage: 88.4% (1417 of 1602)
-  Covered methods: 1589
-  Fully covered methods: 1417
-  Total methods: 1602
+  Coverable lines: 24184
+  Total lines: 59916
+  Branch coverage: 95.3% (8872 of 9301)
+  Covered branches: 8872
+  Total branches: 9301
+  Method coverage: 99.1% (1590 of 1603)
+  Full method coverage: 88.4% (1418 of 1603)
+  Covered methods: 1590
+  Fully covered methods: 1418
+  Total methods: 1603
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -364,6 +364,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheMaximumLengthOfValidSubsequence2.FindTheMaximumLengthOfValidSubsequence2DynamicProgramming                                 100%
   LeetCode.Algorithms.FindTheMaximumSumOfNodeValues.FindTheMaximumSumOfNodeValuesIterative                                                              100%
   LeetCode.Algorithms.FindTheMiddleIndexInArray.FindTheMiddleIndexInArrayIterative                                                                      100%
+  LeetCode.Algorithms.FindTheMinimumAmountOfTimeToBrewPotions.FindTheMinimumAmountOfTimeToBrewPotionsDynamicProgramming                                 100%
   LeetCode.Algorithms.FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsIterative   93.5%
   LeetCode.Algorithms.FindTheMinimumAreaToCoverAllOnes1.FindTheMinimumAreaToCoverAllOnes1OnePass                                                       94.5%
   LeetCode.Algorithms.FindTheMinimumAreaToCoverAllOnes2.FindTheMinimumAreaToCoverAllOnes2BruteForce                                                    91.8%
