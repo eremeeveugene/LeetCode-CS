@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/11/2025 - 11:02:21 AM
-  Coverage date: 10/11/2025 - 11:01:14 AM - 10/11/2025 - 11:01:33 AM
+  Generated on: 10/11/2025 - 3:30:03 PM
+  Coverage date: 10/11/2025 - 3:28:59 PM - 10/11/2025 - 3:29:19 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1059
-  Files: 1059
+  Classes: 1060
+  Files: 1060
   Line coverage: 97.6%
-  Covered lines: 23611
-  Uncovered lines: 573
-  Coverable lines: 24184
-  Total lines: 59916
-  Branch coverage: 95.3% (8872 of 9301)
-  Covered branches: 8872
-  Total branches: 9301
-  Method coverage: 99.1% (1590 of 1603)
-  Full method coverage: 88.4% (1418 of 1603)
-  Covered methods: 1590
+  Covered lines: 23668
+  Uncovered lines: 575
+  Coverable lines: 24243
+  Total lines: 60021
+  Branch coverage: 95.3% (8885 of 9315)
+  Covered branches: 8885
+  Total branches: 9315
+  Method coverage: 99.1% (1591 of 1604)
+  Full method coverage: 88.4% (1418 of 1604)
+  Covered methods: 1591
   Fully covered methods: 1418
-  Total methods: 1603
+  Total methods: 1604
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -585,6 +585,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumScoreAfterSplittingString.MaximumScoreAfterSplittingStringIterative                                                        100%
   LeetCode.Algorithms.MaximumSumOfDistinctSubarraysWithLengthK.MaximumSumOfDistinctSubarraysWithLengthKSlidingWindow                                    100%
   LeetCode.Algorithms.MaximumSwap.MaximumSwapGreedy                                                                                                     100%
+  LeetCode.Algorithms.MaximumTotalDamageWithSpellCasting.MaximumTotalDamageWithSpellCastingDynamicProgrammingWithBinarySearch                           100%
   LeetCode.Algorithms.MaximumUniqueSubarraySumAfterDeletion.MaximumUniqueSubarraySumAfterDeletionHashSet                                                100%
   LeetCode.Algorithms.MaximumValueOfAnOrderedTriplet1.MaximumValueOfAnOrderedTriplet1BruteForce                                                         100%
   LeetCode.Algorithms.MaximumValueOfAnOrderedTriplet1.MaximumValueOfAnOrderedTriplet1Greedy                                                             100%
@@ -1066,7 +1067,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
