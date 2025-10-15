@@ -1,25 +1,25 @@
 Summary
-  Generated on: 10/13/2025 - 2:26:28 PM
-  Coverage date: 10/13/2025 - 2:25:24 PM - 10/13/2025 - 2:25:45 PM
+  Generated on: 10/15/2025 - 7:11:23 AM
+  Coverage date: 10/15/2025 - 7:10:18 AM - 10/15/2025 - 7:10:38 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1061
-  Files: 1061
+  Classes: 1062
+  Files: 1062
   Line coverage: 97.6%
-  Covered lines: 23690
-  Uncovered lines: 573
-  Coverable lines: 24263
-  Total lines: 60073
-  Branch coverage: 95.3% (8892 of 9321)
-  Covered branches: 8892
-  Total branches: 9321
-  Method coverage: 99.1% (1592 of 1605)
-  Full method coverage: 88.4% (1420 of 1605)
-  Covered methods: 1592
+  Covered lines: 23706
+  Uncovered lines: 576
+  Coverable lines: 24282
+  Total lines: 60123
+  Branch coverage: 95.3% (8897 of 9327)
+  Covered branches: 8897
+  Total branches: 9327
+  Method coverage: 99.1% (1593 of 1606)
+  Full method coverage: 88.4% (1420 of 1606)
+  Covered methods: 1593
   Fully covered methods: 1420
-  Total methods: 1605
+  Total methods: 1606
 
-LeetCode                                                                                                                                               97.8%
+LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                    100%
@@ -1020,6 +1020,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.TwoOutOfThree.TwoOutOfThreeHashSet                                                                                                100%
   LeetCode.Algorithms.TwoSum.TwoSumBruteForce                                                                                                          91.6%
   LeetCode.Algorithms.TwoSum.TwoSumDictionary                                                                                                          93.3%
+  LeetCode.Algorithms.TwoSum2InputArrayIsSorted.TwoSum2InputArrayIsSortedTwoPointers                                                                   84.2%
   LeetCode.Algorithms.TypeOfTriangle.TypeOfTriangleMath                                                                                                 100%
   LeetCode.Algorithms.UglyNumber.UglyNumberMath                                                                                                        72.2%
   LeetCode.Algorithms.UglyNumber2.UglyNumber2DynamicProgramming                                                                                         100%
