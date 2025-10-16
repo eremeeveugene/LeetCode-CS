@@ -706,6 +706,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3340. Check Balanced String](https://leetcode.com/problems/check-balanced-string/description/)
 - [3341. Find Minimum Time to Reach Last Room I](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/description/)
 - [3342. Find Minimum Time to Reach Last Room II](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/description/)
+- [3349. Adjacent Increasing Subarrays Detection I](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/description/)
 - [3355. Zero Array Transformation I](https://leetcode.com/problems/zero-array-transformation-i/description/)
 - [3362. Zero Array Transformation III](https://leetcode.com/problems/zero-array-transformation-iii/description/)
 - [3364. Minimum Positive Sum Subarray](https://leetcode.com/problems/minimum-positive-sum-subarray/description/)
