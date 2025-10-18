@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/16/2025 - 8:42:39 AM
-  Coverage date: 10/16/2025 - 8:41:30 AM - 10/16/2025 - 8:41:49 AM
+  Generated on: 10/18/2025 - 4:49:20 PM
+  Coverage date: 10/18/2025 - 4:48:16 PM - 10/18/2025 - 4:48:36 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1063
-  Files: 1063
+  Classes: 1064
+  Files: 1064
   Line coverage: 97.6%
-  Covered lines: 23727
-  Uncovered lines: 576
-  Coverable lines: 24303
-  Total lines: 60175
-  Branch coverage: 95.3% (8907 of 9337)
-  Covered branches: 8907
-  Total branches: 9337
-  Method coverage: 99.1% (1594 of 1607)
-  Full method coverage: 88.4% (1421 of 1607)
-  Covered methods: 1594
+  Covered lines: 23746
+  Uncovered lines: 580
+  Coverable lines: 24326
+  Total lines: 60237
+  Branch coverage: 95.3% (8913 of 9345)
+  Covered branches: 8913
+  Total branches: 9345
+  Method coverage: 99.1% (1595 of 1608)
+  Full method coverage: 88.3% (1421 of 1608)
+  Covered methods: 1595
   Fully covered methods: 1421
-  Total methods: 1607
+  Total methods: 1608
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -567,6 +567,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumMatchingOfPlayersWithTrainers.MaximumMatchingOfPlayersWithTrainersSorting                                                  100%
   LeetCode.Algorithms.MaximumMatrixSum.MaximumMatrixSumBruteForce                                                                                       100%
   LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses.MaximumNestingDepthOfTheParenthesesIterative                                                  100%
+  LeetCode.Algorithms.MaximumNumberOfDistinctElementsAfterOperations.MaximumNumberOfDistinctElementsAfterOperationsSortingGreedy                       82.6%
   LeetCode.Algorithms.MaximumNumberOfEventsThatCanBeAttended.MaximumNumberOfEventsThatCanBeAttendedPriorityQueue                                       88.4%
   LeetCode.Algorithms.MaximumNumberOfIntegersToChooseFromRange1.MaximumNumberOfIntegersToChooseFromRange1HashSet                                        100%
   LeetCode.Algorithms.MaximumNumberOfKDivisibleComponents.MaximumNumberOfKDivisibleComponentsDepthFirstSearch                                           100%
