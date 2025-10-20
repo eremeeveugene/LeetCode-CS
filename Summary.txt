@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/20/2025 - 6:47:28 AM
-  Coverage date: 10/20/2025 - 6:46:22 AM - 10/20/2025 - 6:46:42 AM
+  Generated on: 10/20/2025 - 9:15:57 AM
+  Coverage date: 10/20/2025 - 9:14:55 AM - 10/20/2025 - 9:15:16 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1066
-  Files: 1066
+  Classes: 1067
+  Files: 1067
   Line coverage: 97.6%
-  Covered lines: 23784
+  Covered lines: 23799
   Uncovered lines: 583
-  Coverable lines: 24367
-  Total lines: 60347
-  Branch coverage: 95.3% (8925 of 9361)
-  Covered branches: 8925
-  Total branches: 9361
-  Method coverage: 99.1% (1597 of 1610)
-  Full method coverage: 88.3% (1422 of 1610)
-  Covered methods: 1597
-  Fully covered methods: 1422
-  Total methods: 1610
+  Coverable lines: 24382
+  Total lines: 60390
+  Branch coverage: 95.3% (8929 of 9365)
+  Covered branches: 8929
+  Total branches: 9365
+  Method coverage: 99.1% (1598 of 1611)
+  Full method coverage: 88.3% (1423 of 1611)
+  Covered methods: 1598
+  Fully covered methods: 1423
+  Total methods: 1611
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -120,6 +120,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CompareVersionNumbers.CompareVersionNumbersIterative                                                                              100%
   LeetCode.Algorithms.CompareVersionNumbers.CompareVersionNumbersTwoPointers                                                                            100%
   LeetCode.Algorithms.ComplementOfBase10Integer.ComplementOfBase10IntegerBitwise                                                                        100%
+  LeetCode.Algorithms.ComputeAlternatingSum.ComputeAlternatingSumSimulation                                                                             100%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayConcat                                                                                   100%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayIterative                                                                                100%
   LeetCode.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTraversal.ConstructBinaryTreeFromPreorderAndPostorderTraversalRecursive               90.4%
