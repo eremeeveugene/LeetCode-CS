@@ -14,7 +14,7 @@ namespace LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations;
 /// <inheritdoc />
 public class FinalValueOfVariableAfterPerformingOperationsDictionary : IFinalValueOfVariableAfterPerformingOperations
 {
-    private readonly Dictionary<string, int> _operationsDictionary = new()
+    private static readonly Dictionary<string, int> OperationsDictionary = new()
     {
         { "++X", 1 }, { "X++", 1 }, { "--X", -1 }, { "X--", -1 }
     };
@@ -29,11 +29,11 @@ public class FinalValueOfVariableAfterPerformingOperationsDictionary : IFinalVal
     {
         var finalValue = 0;
 
-        foreach (var operation in operations)
+        for (var i = 0; i < operations.Length; i++)
         {
-            _operationsDictionary.TryGetValue(operation, out var value);
+            var operation = operations[i];
 
-            finalValue += value;
+            finalValue += OperationsDictionary[operation];
         }
 
         return finalValue;
