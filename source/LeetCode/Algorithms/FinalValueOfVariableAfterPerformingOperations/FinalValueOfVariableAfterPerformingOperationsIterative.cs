@@ -24,9 +24,11 @@ public class FinalValueOfVariableAfterPerformingOperationsIterative : IFinalValu
     {
         var finalValue = 0;
 
-        foreach (var operation in operations)
+        for (var i = 0; i < operations.Length; i++)
         {
-            if (operation[0] == '+' || operation[1] == '+')
+            var operation = operations[i];
+
+            if (operation[1] == '+')
             {
                 finalValue++;
             }

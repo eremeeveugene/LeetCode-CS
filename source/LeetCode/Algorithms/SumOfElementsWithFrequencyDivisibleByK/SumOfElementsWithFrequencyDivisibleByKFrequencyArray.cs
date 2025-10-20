@@ -9,35 +9,46 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations;
+namespace LeetCode.Algorithms.SumOfElementsWithFrequencyDivisibleByK;
 
 /// <inheritdoc />
-public class FinalValueOfVariableAfterPerformingOperationsContains : IFinalValueOfVariableAfterPerformingOperations
+public class SumOfElementsWithFrequencyDivisibleByKFrequencyArray : ISumOfElementsWithFrequencyDivisibleByK
 {
     /// <summary>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
     /// </summary>
-    /// <param name="operations"></param>
+    /// <param name="nums"></param>
+    /// <param name="k"></param>
     /// <returns></returns>
-    public int FinalValueAfterOperations(string[] operations)
+    public int SumDivisibleByK(int[] nums, int k)
     {
-        var finalValue = 0;
+        Span<int> numsFrequency = stackalloc int[101];
 
-        for (var i = 0; i < operations.Length; i++)
+        for (var i = 0; i < nums.Length; i++)
         {
-            var operation = operations[i];
+            var num = nums[i];
 
-            if (operation.Contains('+'))
+            numsFrequency[num]++;
+        }
+
+        var sum = 0;
+
+        for (var i = 1; i < numsFrequency.Length; i++)
+        {
+            var numFrequency = numsFrequency[i];
+
+            if (numFrequency == 0)
             {
-                finalValue++;
+                continue;
             }
-            else
+
+            if (numFrequency % k == 0)
             {
-                finalValue--;
+                sum += i * numFrequency;
             }
         }
 
-        return finalValue;
+        return sum;
     }
 }
