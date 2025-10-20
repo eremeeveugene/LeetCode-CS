@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/18/2025 - 4:49:20 PM
-  Coverage date: 10/18/2025 - 4:48:16 PM - 10/18/2025 - 4:48:36 PM
+  Generated on: 10/20/2025 - 6:25:18 AM
+  Coverage date: 10/20/2025 - 6:24:11 AM - 10/20/2025 - 6:24:31 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1064
-  Files: 1064
-  Line coverage: 97.6%
-  Covered lines: 23746
-  Uncovered lines: 580
-  Coverable lines: 24326
-  Total lines: 60237
-  Branch coverage: 95.3% (8913 of 9345)
-  Covered branches: 8913
-  Total branches: 9345
-  Method coverage: 99.1% (1595 of 1608)
-  Full method coverage: 88.3% (1421 of 1608)
-  Covered methods: 1595
-  Fully covered methods: 1421
-  Total methods: 1608
+  Classes: 1065
+  Files: 1065
+  Line coverage: 97.5%
+  Covered lines: 23759
+  Uncovered lines: 585
+  Coverable lines: 24344
+  Total lines: 60289
+  Branch coverage: 95.3% (8918 of 9355)
+  Covered branches: 8918
+  Total branches: 9355
+  Method coverage: 99.1% (1596 of 1609)
+  Full method coverage: 88.2% (1420 of 1609)
+  Covered methods: 1596
+  Fully covered methods: 1420
+  Total methods: 1609
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -914,6 +914,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SlidingPuzzle.SlidingPuzzlePrecomputedDictionary                                                                                  100%
   LeetCode.Algorithms.SmallestEvenMultiple.SmallestEvenMultipleConstant                                                                                 100%
   LeetCode.Algorithms.SmallestIndexWithDigitSumEqualToIndex.SmallestIndexWithDigitSumEqualToIndexBruteForce                                             100%
+  LeetCode.Algorithms.SmallestMissingMultipleOfK.SmallestMissingMultipleOfKLookup                                                                      83.3%
   LeetCode.Algorithms.SmallestRangeCoveringElementsFromKLists.SmallestRangeCoveringElementsFromKListsSortingWithSlidingWindow                           100%
   LeetCode.Algorithms.SmallestStringStartingFromLeaf.SmallestStringStartingFromLeafDepthFirstSearch                                                     100%
   LeetCode.Algorithms.SmallestSubtreeWithAllTheDeepestNodes.SmallestSubtreeWithAllTheDeepestNodesDepthFirstSearch                                       100%
@@ -1071,7 +1072,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
