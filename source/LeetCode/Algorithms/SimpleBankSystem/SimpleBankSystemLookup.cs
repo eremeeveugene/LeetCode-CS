@@ -17,6 +17,11 @@ public class SimpleBankSystemLookup : ISimpleBankSystem
     private readonly long[] _balance;
     private readonly int _balanceLength;
 
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(n)
+    /// </summary>
+    /// <param name="balance"></param>
     public SimpleBankSystemLookup(long[] balance)
     {
         _balance = balance;
