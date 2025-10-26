@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/20/2025 - 9:15:57 AM
-  Coverage date: 10/20/2025 - 9:14:55 AM - 10/20/2025 - 9:15:16 AM
+  Generated on: 10/26/2025 - 12:16:20 PM
+  Coverage date: 10/26/2025 - 12:15:16 PM - 10/26/2025 - 12:15:36 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1067
-  Files: 1067
-  Line coverage: 97.6%
-  Covered lines: 23799
-  Uncovered lines: 583
-  Coverable lines: 24382
-  Total lines: 60390
-  Branch coverage: 95.3% (8929 of 9365)
-  Covered branches: 8929
-  Total branches: 9365
-  Method coverage: 99.1% (1598 of 1611)
-  Full method coverage: 88.3% (1423 of 1611)
-  Covered methods: 1598
-  Fully covered methods: 1423
-  Total methods: 1611
+  Classes: 1068
+  Files: 1068
+  Line coverage: 97.5%
+  Covered lines: 23830
+  Uncovered lines: 589
+  Coverable lines: 24419
+  Total lines: 60496
+  Branch coverage: 95.3% (8937 of 9377)
+  Covered branches: 8937
+  Total branches: 9377
+  Method coverage: 99.1% (1602 of 1615)
+  Full method coverage: 88.1% (1424 of 1615)
+  Covered methods: 1602
+  Fully covered methods: 1424
+  Total methods: 1615
 
 LeetCode                                                                                                                                               97.7%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -906,6 +906,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ShuffleString.ShuffleStringIterative                                                                                              100%
   LeetCode.Algorithms.ShuffleTheArray.ShuffleTheArrayIterative                                                                                          100%
   LeetCode.Algorithms.SignOfTheProductOfAnArray.SignOfTheProductOfAnArrayIterative                                                                      100%
+  LeetCode.Algorithms.SimpleBankSystem.SimpleBankSystemLookup                                                                                          83.7%
   LeetCode.Algorithms.SingleNumber.SingleNumberHashSet                                                                                                  100%
   LeetCode.Algorithms.SingleNumber.SingleNumberXor                                                                                                      100%
   LeetCode.Algorithms.SingleNumber2.SingleNumber2Bitwise                                                                                                100%
