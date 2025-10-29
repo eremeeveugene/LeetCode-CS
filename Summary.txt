@@ -1,25 +1,25 @@
 Summary
-  Generated on: 10/26/2025 - 12:16:20 PM
-  Coverage date: 10/26/2025 - 12:15:16 PM - 10/26/2025 - 12:15:36 PM
+  Generated on: 10/29/2025 - 11:30:49 AM
+  Coverage date: 10/29/2025 - 11:29:47 AM - 10/29/2025 - 11:30:07 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1068
-  Files: 1068
+  Classes: 1073
+  Files: 1073
   Line coverage: 97.5%
-  Covered lines: 23830
-  Uncovered lines: 589
-  Coverable lines: 24419
-  Total lines: 60496
-  Branch coverage: 95.3% (8937 of 9377)
-  Covered branches: 8937
-  Total branches: 9377
-  Method coverage: 99.1% (1602 of 1615)
-  Full method coverage: 88.1% (1424 of 1615)
-  Covered methods: 1602
-  Fully covered methods: 1424
-  Total methods: 1615
+  Covered lines: 23895
+  Uncovered lines: 605
+  Coverable lines: 24500
+  Total lines: 60719
+  Branch coverage: 95.1% (8956 of 9413)
+  Covered branches: 8956
+  Total branches: 9413
+  Method coverage: 99.1% (1609 of 1622)
+  Full method coverage: 87.9% (1426 of 1622)
+  Covered methods: 1609
+  Fully covered methods: 1426
+  Total methods: 1622
 
-LeetCode                                                                                                                                               97.7%
+LeetCode                                                                                                                                               97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                        92.8%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                    100%
@@ -917,6 +917,11 @@ LeetCode                                                                        
   LeetCode.Algorithms.SmallestEvenMultiple.SmallestEvenMultipleConstant                                                                                 100%
   LeetCode.Algorithms.SmallestIndexWithDigitSumEqualToIndex.SmallestIndexWithDigitSumEqualToIndexBruteForce                                             100%
   LeetCode.Algorithms.SmallestMissingMultipleOfK.SmallestMissingMultipleOfKLookup                                                                      83.3%
+  LeetCode.Algorithms.SmallestNumberWithAllSetBits.SmallestNumberWithAllSetBitsBinarySearch                                                            91.3%
+  LeetCode.Algorithms.SmallestNumberWithAllSetBits.SmallestNumberWithAllSetBitsIterative                                                               81.8%
+  LeetCode.Algorithms.SmallestNumberWithAllSetBits.SmallestNumberWithAllSetBitsLinearScan                                                                88%
+  LeetCode.Algorithms.SmallestNumberWithAllSetBits.SmallestNumberWithAllSetBitsMath                                                                    71.4%
+  LeetCode.Algorithms.SmallestNumberWithAllSetBits.SmallestNumberWithAllSetBitsSwitch                                                                  53.3%
   LeetCode.Algorithms.SmallestRangeCoveringElementsFromKLists.SmallestRangeCoveringElementsFromKListsSortingWithSlidingWindow                           100%
   LeetCode.Algorithms.SmallestStringStartingFromLeaf.SmallestStringStartingFromLeafDepthFirstSearch                                                     100%
   LeetCode.Algorithms.SmallestSubtreeWithAllTheDeepestNodes.SmallestSubtreeWithAllTheDeepestNodesDepthFirstSearch                                       100%
