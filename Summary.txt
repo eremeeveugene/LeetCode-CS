@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/29/2025 - 11:30:49 AM
-  Coverage date: 10/29/2025 - 11:29:47 AM - 10/29/2025 - 11:30:07 AM
+  Generated on: 10/30/2025 - 7:21:57 PM
+  Coverage date: 10/30/2025 - 7:20:50 PM - 10/30/2025 - 7:21:11 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1073
-  Files: 1073
+  Classes: 1074
+  Files: 1074
   Line coverage: 97.5%
-  Covered lines: 23895
+  Covered lines: 23912
   Uncovered lines: 605
-  Coverable lines: 24500
-  Total lines: 60719
-  Branch coverage: 95.1% (8956 of 9413)
-  Covered branches: 8956
-  Total branches: 9413
-  Method coverage: 99.1% (1609 of 1622)
-  Full method coverage: 87.9% (1426 of 1622)
-  Covered methods: 1609
-  Fully covered methods: 1426
-  Total methods: 1622
+  Coverable lines: 24517
+  Total lines: 60766
+  Branch coverage: 95.1% (8962 of 9419)
+  Covered branches: 8962
+  Total branches: 9419
+  Method coverage: 99.1% (1610 of 1623)
+  Full method coverage: 87.9% (1427 of 1623)
+  Covered methods: 1610
+  Fully covered methods: 1427
+  Total methods: 1623
 
 LeetCode                                                                                                                                               97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -95,6 +95,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKDictionary                                                      92.3%
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKTwoPointers                                                      100%
   LeetCode.Algorithms.CheckIfDigitsAreEqualInStringAfterOperations1.CheckIfDigitsAreEqualInStringAfterOperations1Simulation                             100%
+  LeetCode.Algorithms.CheckIfDigitsAreEqualInStringAfterOperations1.CheckIfDigitsAreEqualInStringAfterOperations1SimulationOptimized                    100%
   LeetCode.Algorithms.CheckIfGridCanBeCutIntoSections.CheckIfGridCanBeCutIntoSectionsSorting                                                            100%
   LeetCode.Algorithms.CheckIfItIsStraightLine.CheckIfItIsStraightLineIterative                                                                          100%
   LeetCode.Algorithms.CheckIfNAndItsDoubleExist.CheckIfNAndItsDoubleExistDictionary                                                                     100%
