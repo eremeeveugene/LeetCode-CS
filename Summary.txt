@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/30/2025 - 7:21:57 PM
-  Coverage date: 10/30/2025 - 7:20:50 PM - 10/30/2025 - 7:21:11 PM
+  Generated on: 11/1/2025 - 12:01:27 PM
+  Coverage date: 11/1/2025 - 12:00:26 PM - 11/1/2025 - 12:00:45 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1074
-  Files: 1074
+  Classes: 1075
+  Files: 1075
   Line coverage: 97.5%
-  Covered lines: 23912
-  Uncovered lines: 605
-  Coverable lines: 24517
-  Total lines: 60766
-  Branch coverage: 95.1% (8962 of 9419)
-  Covered branches: 8962
-  Total branches: 9419
-  Method coverage: 99.1% (1610 of 1623)
-  Full method coverage: 87.9% (1427 of 1623)
-  Covered methods: 1610
-  Fully covered methods: 1427
-  Total methods: 1623
+  Covered lines: 23934
+  Uncovered lines: 607
+  Coverable lines: 24541
+  Total lines: 60829
+  Branch coverage: 95.1% (8969 of 9427)
+  Covered branches: 8969
+  Total branches: 9427
+  Method coverage: 99.2% (1612 of 1625)
+  Full method coverage: 87.8% (1428 of 1625)
+  Covered methods: 1612
+  Fully covered methods: 1428
+  Total methods: 1625
 
 LeetCode                                                                                                                                               97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -220,6 +220,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DeleteLeavesWithGivenValue.DeleteLeavesWithGivenValueDepthFirstSearch                                                             100%
   LeetCode.Algorithms.DeleteNodeFromLinkedListPresentInArray.DeleteNodeFromLinkedListPresentInArrayBinarySearch                                         100%
   LeetCode.Algorithms.DeleteNodeFromLinkedListPresentInArray.DeleteNodeFromLinkedListPresentInArrayHashSet                                              100%
+  LeetCode.Algorithms.DeleteNodeFromLinkedListPresentInArray.DeleteNodeFromLinkedListPresentInArrayLookup                                               100%
   LeetCode.Algorithms.DeleteNodeInLinkedList.DeleteNodeInLinkedListIterative                                                                            100%
   LeetCode.Algorithms.DeleteNodeInLinkedList.DeleteNodeInLinkedListReassign                                                                            71.4%
   LeetCode.Algorithms.DeleteNodesAndReturnForest.DeleteNodesAndReturnForestBreadthFirstSearch                                                           100%
@@ -1081,7 +1082,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
