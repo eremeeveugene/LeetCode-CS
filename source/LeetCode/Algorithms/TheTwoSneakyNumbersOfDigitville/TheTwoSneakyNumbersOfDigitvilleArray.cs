@@ -14,6 +14,10 @@ namespace LeetCode.Algorithms.TheTwoSneakyNumbersOfDigitville;
 /// <inheritdoc />
 public class TheTwoSneakyNumbersOfDigitvilleArray : ITheTwoSneakyNumbersOfDigitville
 {
+    private const int MaxNumber = 100;
+    private const int ResultLength = 2;
+    private static readonly int[] Result = new int[ResultLength];
+
     /// <summary>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
@@ -22,18 +26,22 @@ public class TheTwoSneakyNumbersOfDigitvilleArray : ITheTwoSneakyNumbersOfDigitv
     /// <returns></returns>
     public int[] GetSneakyNumbers(int[] nums)
     {
-        var result = new int[2];
-        var resultIndex = 0;
+        Span<bool> numbers = stackalloc bool[MaxNumber];
 
-        var numbers = new bool[100];
+        var resultIndex = 0;
 
         foreach (var num in nums)
         {
             if (numbers[num])
             {
-                result[resultIndex] = num;
+                Result[resultIndex] = num;
 
                 resultIndex++;
+
+                if (resultIndex == ResultLength)
+                {
+                    break;
+                }
             }
             else
             {
@@ -41,6 +49,6 @@ public class TheTwoSneakyNumbersOfDigitvilleArray : ITheTwoSneakyNumbersOfDigitv
             }
         }
 
-        return result;
+        return Result;
     }
 }

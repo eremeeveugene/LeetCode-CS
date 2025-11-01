@@ -14,67 +14,42 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.DeleteNodeFromLinkedListPresentInArray;
 
 /// <inheritdoc />
-public class DeleteNodeFromLinkedListPresentInArrayBinarySearch : IDeleteNodeFromLinkedListPresentInArray
+public class DeleteNodeFromLinkedListPresentInArrayLookup : IDeleteNodeFromLinkedListPresentInArray
 {
     /// <summary>
-    ///     Time complexity - O(n log n + m log n)
-    ///     Space complexity - O(log n)
+    ///     Time complexity - O(n + m)
+    ///     Space complexity - O(1)
     /// </summary>
     /// <param name="nums"></param>
     /// <param name="head"></param>
     /// <returns></returns>
     public ListNode? ModifiedList(int[] nums, ListNode? head)
     {
-        if (nums.Length == 0)
-        {
-            return head;
-        }
+        Span<bool> numsLookup = stackalloc bool[100001];
 
-        Array.Sort(nums);
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            numsLookup[num] = true;
+        }
 
         var dummyHead = new ListNode(0, head);
 
-        var node = dummyHead;
+        var current = dummyHead;
 
-        while (node?.next != null)
+        while (current.next != null)
         {
-            if (BinarySearch(nums, node.next.val))
+            if (numsLookup[current.next.val])
             {
-                node.next = node.next.next;
+                current.next = current.next.next;
             }
             else
             {
-                node = node.next;
+                current = current.next;
             }
         }
 
         return dummyHead.next;
-    }
-
-    private static bool BinarySearch(int[] nums, int target)
-    {
-        var left = 0;
-        var right = nums.Length - 1;
-
-        while (left <= right)
-        {
-            var mid = left + ((right - left) / 2);
-
-            if (nums[mid] == target)
-            {
-                return true;
-            }
-
-            if (nums[mid] < target)
-            {
-                left = mid + 1;
-            }
-            else
-            {
-                right = mid - 1;
-            }
-        }
-
-        return false;
     }
 }
