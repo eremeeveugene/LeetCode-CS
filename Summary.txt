@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/1/2025 - 12:01:27 PM
-  Coverage date: 11/1/2025 - 12:00:26 PM - 11/1/2025 - 12:00:45 PM
+  Generated on: 11/2/2025 - 12:55:08 PM
+  Coverage date: 11/2/2025 - 12:54:08 PM - 11/2/2025 - 12:54:27 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1075
-  Files: 1075
+  Classes: 1076
+  Files: 1076
   Line coverage: 97.5%
-  Covered lines: 23934
-  Uncovered lines: 607
-  Coverable lines: 24541
-  Total lines: 60829
-  Branch coverage: 95.1% (8969 of 9427)
-  Covered branches: 8969
-  Total branches: 9427
-  Method coverage: 99.2% (1612 of 1625)
-  Full method coverage: 87.8% (1428 of 1625)
-  Covered methods: 1612
-  Fully covered methods: 1428
-  Total methods: 1625
+  Covered lines: 23963
+  Uncovered lines: 610
+  Coverable lines: 24573
+  Total lines: 60909
+  Branch coverage: 95.1% (8981 of 9443)
+  Covered branches: 8981
+  Total branches: 9443
+  Method coverage: 99.2% (1613 of 1626)
+  Full method coverage: 87.8% (1429 of 1626)
+  Covered methods: 1613
+  Fully covered methods: 1429
+  Total methods: 1626
 
 LeetCode                                                                                                                                               97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -408,6 +408,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FlippingAnImage.FlippingAnImageTwoPointers                                                                                        100%
   LeetCode.Algorithms.FloodFill.FloodFillIterative                                                                                                      100%
   LeetCode.Algorithms.FractionAdditionAndSubtraction.FractionAdditionAndSubtractionSimulation                                                           100%
+  LeetCode.Algorithms.FractionToRecurringDecimal.FractionToRecurringDecimalDictionary                                                                  84.3%
   LeetCode.Algorithms.FreedomTrail.FreedomTrailDynamicProgramming                                                                                       100%
   LeetCode.Algorithms.FruitIntoBaskets.FruitIntoBasketsFrequencyDictionary                                                                             86.3%
   LeetCode.Algorithms.FruitsIntoBaskets2.FruitsIntoBaskets2BruteForce                                                                                   100%
@@ -1082,7 +1083,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
