@@ -19,7 +19,7 @@ public static class ListNodeAssert
 {
     public static void AreEqual(IList<ListNode?> expectedLists, IList<ListNode?> actualLists)
     {
-        Assert.AreEqual(expectedLists.Count, actualLists.Count,
+        Assert.HasCount(expectedLists.Count, actualLists,
             "Both lists should have the same number of ListNode elements.");
 
         for (var i = 0; i < expectedLists.Count; i++)

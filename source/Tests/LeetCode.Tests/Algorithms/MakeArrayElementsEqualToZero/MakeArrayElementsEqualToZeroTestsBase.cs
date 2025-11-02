@@ -9,31 +9,29 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.ThreeSum;
+using LeetCode.Algorithms.MakeArrayElementsEqualToZero;
 using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Extensions;
 
-namespace LeetCode.Tests.Algorithms.ThreeSum;
+namespace LeetCode.Tests.Algorithms.MakeArrayElementsEqualToZero;
 
-public abstract class ThreeSumTestsBase<T> where T : IThreeSum, new()
+public abstract class MakeArrayElementsEqualToZeroTestsBase<T>
+    where T : IMakeArrayElementsEqualToZero, new()
 {
     [TestMethod]
-    [DataRow("[-1, 0, 1, 2, -1, -4]", "[[-1, -1, 2], [-1, 0, 1]]")]
-    [DataRow("[ 0, 1, 1]", "[]")]
-    [DataRow("[0, 0, 0]", "[[0, 0, 0]]")]
-    [DataRow("[-3, -2, 1, 1, 2]", "[[-3, 1, 2], [-2, 1, 1]]")]
-    [DataRow("[3, 0, -2, -1, 1, 2]", "[[-2, -1, 3],[-2, 0, 2],[-1, 0, 1]]")]
-    public void ThreeSum_WithIntArray_ReturnsTripletsThatSumToZero(string numsJson, string expectedResultJson)
+    [DataRow("[1,0,2,0,3]", 2)]
+    [DataRow("[2,3,4,0,4,1,0]", 0)]
+    public void CountValidSelections_WithNumsArray_ReturnsNumberOfValidStartPositions(string numsJson,
+        int expectedResult)
     {
         // Arrange
         var nums = JsonHelper<int[]>.Parse(numsJson);
-        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
 
         var solution = new T();
 
         // Act
-        var actualResult = solution.ThreeSum(nums);
+        var actualResult = solution.CountValidSelections(nums);
 
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
     }
 }

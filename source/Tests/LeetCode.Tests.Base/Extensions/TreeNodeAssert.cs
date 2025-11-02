@@ -58,7 +58,7 @@ public static class TreeNodeAssert
         var expectedList = expectedTrees.ToList();
         var actualList = actualTrees.ToList();
 
-        Assert.AreEqual(expectedList.Count, actualList.Count,
+        Assert.HasCount(expectedList.Count, actualList,
             "Tree collections should have the same number of elements.");
 
         for (var i = 0; i < expectedList.Count; i++)
@@ -82,35 +82,38 @@ public static class TreeNodeAssert
         var expectedList = expectedTrees.ToList();
         var actualList = actualTrees.ToList();
 
-        Assert.AreEqual(expectedList.Count, actualList.Count,
+        Assert.HasCount(expectedList.Count, actualList,
             "Tree collections should have the same number of elements.");
 
-        var actualQueue = new Queue<TreeNode?>(actualList);
+        var remaining = new List<TreeNode?>(actualList);
 
         foreach (var expectedTree in expectedList)
         {
             var matchFound = false;
 
-            for (var i = 0; i < actualQueue.Count; i++)
+            for (var i = 0; i < remaining.Count; i++)
             {
-                var actualTree = actualQueue.ElementAt(i);
+                var actualTree = remaining[i];
+
                 try
                 {
                     AreEqual(expectedTree, actualTree);
-                    // Remove matched tree
-                    actualQueue = new Queue<TreeNode?>(actualQueue.Where((_, index) => index != i));
+
+                    remaining.RemoveAt(i);
+
                     matchFound = true;
+
                     break;
                 }
                 catch
                 {
-                    // Continue checking other trees
+                    // continue trying next actual tree
                 }
             }
 
             if (!matchFound)
             {
-                Assert.Fail("No matching tree found in the actual collection for the expected tree.");
+                Assert.Fail("No matching tree found in the actual collection for one of the expected trees.");
             }
         }
     }
