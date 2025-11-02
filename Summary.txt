@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/2/2025 - 4:34:10 PM
-  Coverage date: 11/2/2025 - 4:32:27 PM - 11/2/2025 - 4:33:25 PM
+  Generated on: 11/2/2025 - 4:59:26 PM
+  Coverage date: 11/2/2025 - 4:58:18 PM - 11/2/2025 - 4:58:39 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1080
-  Files: 1080
+  Classes: 1081
+  Files: 1081
   Line coverage: 97.5%
-  Covered lines: 24039
+  Covered lines: 24050
   Uncovered lines: 612
-  Coverable lines: 24651
-  Total lines: 61118
-  Branch coverage: 95.1% (9010 of 9473)
-  Covered branches: 9010
-  Total branches: 9473
-  Method coverage: 99.2% (1617 of 1630)
-  Full method coverage: 87.8% (1432 of 1630)
-  Covered methods: 1617
-  Fully covered methods: 1432
-  Total methods: 1630
+  Coverable lines: 24662
+  Total lines: 61158
+  Branch coverage: 95.1% (9012 of 9475)
+  Covered branches: 9012
+  Total branches: 9475
+  Method coverage: 99.2% (1618 of 1631)
+  Full method coverage: 87.8% (1433 of 1631)
+  Covered methods: 1618
+  Fully covered methods: 1433
+  Total methods: 1631
 
 LeetCode                                                                                                                                               97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -806,6 +806,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.PushDominoes.PushDominoesTwoPointers                                                                                              100%
   LeetCode.Algorithms.RabbitsInForest.RabbitsInForestFrequencyArray                                                                                     100%
   LeetCode.Algorithms.RabbitsInForest.RabbitsInForestFrequencyDictionary                                                                                100%
+  LeetCode.Algorithms.RangeAddition2.RangeAddition2Greedy                                                                                               100%
   LeetCode.Algorithms.RangeProductQueriesOfPowers.RangeProductQueriesOfPowersPrefixSum                                                                  100%
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTBreadthFirstSearch                                                                                      92%
   LeetCode.Algorithms.RangeSumOfBST.RangeSumOfBSTDepthFirstSearchRecursive                                                                             89.4%
