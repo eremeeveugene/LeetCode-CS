@@ -116,6 +116,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)
 - [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)
 - [165. Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/description/)
+- [166. Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/description/)
 - [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/)
 - [168. Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/)
 - [169. Majority Element](https://leetcode.com/problems/majority-element/description/)
