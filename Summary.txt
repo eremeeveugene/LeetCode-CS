@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/2/2025 - 1:53:57 PM
-  Coverage date: 11/2/2025 - 1:52:45 PM - 11/2/2025 - 1:53:13 PM
+  Generated on: 11/2/2025 - 4:13:40 PM
+  Coverage date: 11/2/2025 - 4:12:33 PM - 11/2/2025 - 4:13:01 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1078
-  Files: 1078
+  Classes: 1079
+  Files: 1079
   Line coverage: 97.5%
-  Covered lines: 24001
-  Uncovered lines: 612
-  Coverable lines: 24613
-  Total lines: 61021
-  Branch coverage: 95.1% (8994 of 9457)
-  Covered branches: 8994
-  Total branches: 9457
-  Method coverage: 99.2% (1615 of 1628)
-  Full method coverage: 87.8% (1430 of 1628)
-  Covered methods: 1615
+  Covered lines: 24029
+  Uncovered lines: 614
+  Coverable lines: 24643
+  Total lines: 61083
+  Branch coverage: 95.1% (9007 of 9471)
+  Covered branches: 9007
+  Total branches: 9471
+  Method coverage: 99.2% (1616 of 1629)
+  Full method coverage: 87.7% (1430 of 1629)
+  Covered methods: 1616
   Fully covered methods: 1430
-  Total methods: 1628
+  Total methods: 1629
 
 LeetCode                                                                                                                                               97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -528,6 +528,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MagicSquaresInGrid.MagicSquaresInGridBruteForce                                                                                   100%
   LeetCode.Algorithms.MajorityElement.MajorityElementDictionary                                                                                         100%
   LeetCode.Algorithms.MajorityElement.MajorityElementDistinctCount                                                                                      100%
+  LeetCode.Algorithms.MakeArrayElementsEqualToZero.MakeArrayElementsEqualToZeroPrefixSum                                                                100%
   LeetCode.Algorithms.MakeStringSubsequenceUsingCyclicIncrements.MakeStringSubsequenceUsingCyclicIncrementsTwoPointers                                 88.2%
   LeetCode.Algorithms.MakeSumDivisibleByP.MakeSumDivisibleByPPrefixSum                                                                                  100%
   LeetCode.Algorithms.MakeTheStringGreat.MakeTheStringGreatIterative                                                                                    100%
@@ -1085,7 +1086,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
