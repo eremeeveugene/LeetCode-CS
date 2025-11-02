@@ -212,6 +212,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [539. Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/description/)
 - [541. Reverse String II](https://leetcode.com/problems/reverse-string-ii/description/)
 - [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/)
+- [551. Student Attendance Record I](https://leetcode.com/problems/student-attendance-record-i/description/)
 - [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/)
 - [559. Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/)
 - [561. Array Partition](https://leetcode.com/problems/array-partition/description/)
