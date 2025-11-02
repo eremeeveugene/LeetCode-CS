@@ -223,6 +223,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [590. N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal/description/)
 - [592. Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction/description/)
 - [594. Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/description/)
+- [598. Range Addition II](https://leetcode.com/problems/range-addition-ii/description/)
 - [611. Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/description/)
 - [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/description/)
 - [621. Task Scheduler](https://leetcode.com/problems/task-scheduler/description/)
