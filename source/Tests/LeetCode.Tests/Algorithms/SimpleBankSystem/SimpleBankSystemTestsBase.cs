@@ -25,7 +25,8 @@ public abstract class SimpleBankSystemTestsBase
         "[\"withdraw\", \"transfer\", \"deposit\", \"transfer\", \"withdraw\"]",
         "[[3, 10], [5, 1, 20], [5, 20], [3, 4, 15], [10, 50]]",
         "[true, true, true, false, false]")]
-    public void Test(string balanceJson, string operationsJson, string argumentsJson, string expectedResultJson)
+    public void SimpleBankSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(string balanceJson,
+        string operationsJson, string argumentsJson, string expectedResultJson)
     {
         // Arrange
         var balance = JsonHelper<long[]>.Parse(balanceJson);
