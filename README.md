@@ -22,7 +22,7 @@ The primary goal of this repository is to improve my own skills and demonstrate 
 
 For developing and testing the solutions in this repository, I use the following tools:
 
-- **[Visual Studio 2022](https://visualstudio.microsoft.com/vs/)**: The integrated development environment (IDE) where I write, debug, and run my C# code. It provides a comprehensive set of features for efficient coding and debugging, making it my go-to tool for .NET development.
+- **[Visual Studio 2026 Insiders](https://visualstudio.microsoft.com/insiders/)**: The integrated development environment (IDE) where I write, debug, and run my C# code. It provides a comprehensive set of features for efficient coding and debugging, making it my go-to tool for .NET development.
 - **[ReSharper](https://www.jetbrains.com/resharper/)**: A Visual Studio extension that enhances the development experience with advanced code analysis, refactoring tools, and productivity features. ReSharper helps me ensure my code is clean, optimized, and follows best practices.
 
 ## Time and Space Complexity
@@ -198,6 +198,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [476. Number Complement](https://leetcode.com/problems/number-complement/description/)
 - [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/description/)
 - [494. Target Sum](https://leetcode.com/problems/target-sum/description/)
+- [495. Teemo Attacking](https://leetcode.com/problems/teemo-attacking/description/)
 - [496. Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/)
 - [498. Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse/description/)
 - [501. Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/description/)
