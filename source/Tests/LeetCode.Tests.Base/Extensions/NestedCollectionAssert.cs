@@ -24,7 +24,7 @@ public static class NestedCollectionAssert
         var expectedList = expectedResult.ToList();
         var actualList = actualResult.ToList();
 
-        Assert.AreEqual(expectedList.Count, actualList.Count, "The number of sublists is different.");
+        Assert.HasCount(expectedList.Count, actualList, "The number of sublists is different.");
 
         for (var i = 0; i < expectedList.Count; i++)
         {
@@ -49,7 +49,7 @@ public static class NestedCollectionAssert
             .OrderBy(sublist => string.Join(",", sublist))
             .ToList();
 
-        Assert.AreEqual(expectedList.Count, actualList.Count, "The number of sublists is different.");
+        Assert.HasCount(expectedList.Count, actualList, "The number of sublists is different.");
 
         for (var i = 0; i < expectedList.Count; i++)
         {

@@ -11,6 +11,7 @@
 
 using LeetCode.Algorithms.ThreeSum;
 using LeetCode.Core.Helpers;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ThreeSum;
 
@@ -33,6 +34,6 @@ public abstract class ThreeSumTestsBase<T> where T : IThreeSum, new()
         // Act
         var actualResult = solution.ThreeSum(nums);
 
-        Assert.AreEqual(expectedResult.Length, actualResult.Count);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }
