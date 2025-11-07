@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/5/2025 - 5:38:04 PM
-  Coverage date: 11/5/2025 - 5:36:33 PM - 11/5/2025 - 5:37:22 PM
+  Generated on: 11/7/2025 - 4:29:30 PM
+  Coverage date: 11/7/2025 - 4:27:48 PM - 11/7/2025 - 4:28:47 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1082
-  Files: 1082
+  Classes: 1083
+  Files: 1083
   Line coverage: 97.5%
-  Covered lines: 24070
+  Covered lines: 24093
   Uncovered lines: 614
-  Coverable lines: 24684
-  Total lines: 61211
-  Branch coverage: 95.1% (9019 of 9483)
-  Covered branches: 9019
-  Total branches: 9483
-  Method coverage: 99.2% (1619 of 1632)
-  Full method coverage: 87.8% (1433 of 1632)
-  Covered methods: 1619
-  Fully covered methods: 1433
-  Total methods: 1632
+  Coverable lines: 24707
+  Total lines: 61268
+  Branch coverage: 95.1% (9025 of 9489)
+  Covered branches: 9025
+  Total branches: 9489
+  Method coverage: 99.2% (1621 of 1634)
+  Full method coverage: 87.8% (1435 of 1634)
+  Covered methods: 1621
+  Fully covered methods: 1435
+  Total methods: 1634
 
 LeetCode                                                                                                                                               97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -270,6 +270,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DivisorGame.DivisorGameDivisionRemainder                                                                                          100%
   LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList.DoubleNumberRepresentedAsLinkedListIterative                                                  100%
   LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList.DoubleNumberRepresentedAsLinkedListStack                                                      100%
+  LeetCode.Algorithms.EqualScoreSubstrings.EqualScoreSubstringsPrefixSum                                                                                100%
   LeetCode.Algorithms.EvaluateBooleanBinaryTree.EvaluateBooleanBinaryTreeDepthFirstSearch                                                               100%
   LeetCode.Algorithms.EvenOddTree.EvenOddTreeBreadthFirst                                                                                              95.5%
   LeetCode.Algorithms.ExcelSheetColumnNumber.ExcelSheetColumnNumberIterative                                                                            100%
