@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/7/2025 - 4:29:30 PM
-  Coverage date: 11/7/2025 - 4:27:48 PM - 11/7/2025 - 4:28:47 PM
+  Generated on: 11/9/2025 - 6:00:10 PM
+  Coverage date: 11/9/2025 - 5:59:02 PM - 11/9/2025 - 5:59:22 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1083
-  Files: 1083
+  Classes: 1085
+  Files: 1085
   Line coverage: 97.5%
-  Covered lines: 24093
-  Uncovered lines: 614
-  Coverable lines: 24707
-  Total lines: 61268
-  Branch coverage: 95.1% (9025 of 9489)
-  Covered branches: 9025
-  Total branches: 9489
-  Method coverage: 99.2% (1621 of 1634)
-  Full method coverage: 87.8% (1435 of 1634)
-  Covered methods: 1621
+  Covered lines: 24132
+  Uncovered lines: 618
+  Coverable lines: 24750
+  Total lines: 61378
+  Branch coverage: 95% (9044 of 9513)
+  Covered branches: 9044
+  Total branches: 9513
+  Method coverage: 99.2% (1623 of 1636)
+  Full method coverage: 87.7% (1435 of 1636)
+  Covered methods: 1623
   Fully covered methods: 1435
-  Total methods: 1634
+  Total methods: 1636
 
 LeetCode                                                                                                                                               97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -173,6 +173,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountOfMatchesInTournament.CountOfMatchesInTournamentConstant                                                                     100%
   LeetCode.Algorithms.CountOfMatchesInTournament.CountOfMatchesInTournamentIterative                                                                    100%
   LeetCode.Algorithms.CountOfSubstringsContainingEveryVowelAndKConsonants2.CountOfSubstringsContainingEveryVowelAndKConsonants2SlidingWindow            100%
+  LeetCode.Algorithms.CountOperationsToObtainZero.CountOperationsToObtainZeroDivision                                                                  90.9%
+  LeetCode.Algorithms.CountOperationsToObtainZero.CountOperationsToObtainZeroSubtraction                                                               90.4%
   LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget.CountPairsWhoseSumIsLessThanTargetIterative                                                    100%
   LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget.CountPairsWhoseSumIsLessThanTargetSortTwoPointers                                              100%
   LeetCode.Algorithms.CountPartitionsWithEvenSumDifference.CountPartitionsWithEvenSumDifferencePrefixSum                                                100%
