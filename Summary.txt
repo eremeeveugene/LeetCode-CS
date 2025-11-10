@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/9/2025 - 6:00:10 PM
-  Coverage date: 11/9/2025 - 5:59:02 PM - 11/9/2025 - 5:59:22 PM
+  Generated on: 11/10/2025 - 1:23:06 PM
+  Coverage date: 11/10/2025 - 1:21:29 PM - 11/10/2025 - 1:22:22 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1085
-  Files: 1085
+  Classes: 1088
+  Files: 1088
   Line coverage: 97.5%
-  Covered lines: 24132
+  Covered lines: 24193
   Uncovered lines: 618
-  Coverable lines: 24750
-  Total lines: 61378
-  Branch coverage: 95% (9044 of 9513)
-  Covered branches: 9044
-  Total branches: 9513
-  Method coverage: 99.2% (1623 of 1636)
-  Full method coverage: 87.7% (1435 of 1636)
-  Covered methods: 1623
-  Fully covered methods: 1435
-  Total methods: 1636
+  Coverable lines: 24811
+  Total lines: 61539
+  Branch coverage: 95% (9080 of 9549)
+  Covered branches: 9080
+  Total branches: 9549
+  Method coverage: 99.2% (1626 of 1639)
+  Full method coverage: 87.7% (1438 of 1639)
+  Covered methods: 1626
+  Fully covered methods: 1438
+  Total methods: 1639
 
 LeetCode                                                                                                                                               97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -673,6 +673,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced.MinimumNumberOfSwapsToMakeTheStringBalancedIterative                                  100%
   LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner.MinimumObstacleRemovalToReachCornerBreadthFirstSearch                                         100%
   LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner.MinimumObstacleRemovalToReachCornerPriorityQueue                                              100%
+  LeetCode.Algorithms.MinimumOperationsToConvertAllElementsToZero.MinimumOperationsToConvertAllElementsToZeroStack                                      100%
+  LeetCode.Algorithms.MinimumOperationsToConvertAllElementsToZero.MinimumOperationsToConvertAllElementsToZeroStackAsList                                100%
+  LeetCode.Algorithms.MinimumOperationsToConvertAllElementsToZero.MinimumOperationsToConvertAllElementsToZeroStackAsSpan                                100%
   LeetCode.Algorithms.MinimumOperationsToExceedThresholdValue2.MinimumOperationsToExceedThresholdValue2PriorityQueue                                    100%
   LeetCode.Algorithms.MinimumOperationsToMakeArraySumDivisibleByK.MinimumOperationsToMakeArraySumDivisibleByKGreedy                                     100%
   LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK.MinimumOperationsToMakeArrayValuesEqualToKHashSet                                      100%
