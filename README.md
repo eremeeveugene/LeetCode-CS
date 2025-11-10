@@ -753,6 +753,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3536. Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/description/)
 - [3539. Reschedule Meetings for Maximum Free Time I](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/description/)
 - [3541. Find Most Frequent Vowel and Consonant](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/description/)
+- [3542. Minimum Operations to Convert All Elements to Zero](https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/description/)
 - [3545. Minimum Deletions for At Most K Distinct Characters](https://leetcode.com/problems/maximum-product-of-two-digits/description/)
 - [3550. Smallest Index With Digit Sum Equal to Index](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/description/)
 - [3560. Find Minimum Log Transportation Cost](https://leetcode.com/problems/find-minimum-log-transportation-cost/description/)
