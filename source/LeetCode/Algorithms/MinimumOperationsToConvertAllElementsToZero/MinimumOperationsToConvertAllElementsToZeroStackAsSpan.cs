@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumOperationsToConvertAllElementsToZero;
 
 /// <inheritdoc />
-public class MinimumOperationsToConvertAllElementsToZeroStack : IMinimumOperationsToConvertAllElementsToZero
+public class MinimumOperationsToConvertAllElementsToZeroStackAsSpan : IMinimumOperationsToConvertAllElementsToZero
 {
     /// <summary>
     ///     Time complexity - O(n)
@@ -22,15 +22,17 @@ public class MinimumOperationsToConvertAllElementsToZeroStack : IMinimumOperatio
     /// <returns></returns>
     public int MinOperations(int[] nums)
     {
-        var numsStack = new Stack<int>();
+        Span<int> numsSpan = stackalloc int[nums.Length];
+
+        var numsSpanCount = 0;
 
         var minOperations = 0;
 
         foreach (var num in nums)
         {
-            while (numsStack.Count > 0 && numsStack.Peek() > num)
+            while (numsSpanCount > 0 && numsSpan[numsSpanCount - 1] > num)
             {
-                numsStack.Pop();
+                numsSpan[numsSpanCount--] = 0;
             }
 
             if (num == 0)
@@ -38,12 +40,12 @@ public class MinimumOperationsToConvertAllElementsToZeroStack : IMinimumOperatio
                 continue;
             }
 
-            if (numsStack.Count > 0 && numsStack.Peek() >= num)
+            if (numsSpanCount > 0 && numsSpan[numsSpanCount - 1] >= num)
             {
                 continue;
             }
 
-            numsStack.Push(num);
+            numsSpan[numsSpanCount++] = num;
 
             minOperations++;
         }
