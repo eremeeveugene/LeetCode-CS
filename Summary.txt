@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/10/2025 - 1:23:06 PM
-  Coverage date: 11/10/2025 - 1:21:29 PM - 11/10/2025 - 1:22:22 PM
+  Generated on: 11/11/2025 - 6:04:09 PM
+  Coverage date: 11/11/2025 - 6:03:08 PM - 11/11/2025 - 6:03:27 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1088
-  Files: 1088
+  Classes: 1089
+  Files: 1089
   Line coverage: 97.5%
-  Covered lines: 24193
+  Covered lines: 24224
   Uncovered lines: 618
-  Coverable lines: 24811
-  Total lines: 61539
-  Branch coverage: 95% (9080 of 9549)
-  Covered branches: 9080
-  Total branches: 9549
-  Method coverage: 99.2% (1626 of 1639)
-  Full method coverage: 87.7% (1438 of 1639)
-  Covered methods: 1626
-  Fully covered methods: 1438
-  Total methods: 1639
+  Coverable lines: 24842
+  Total lines: 61604
+  Branch coverage: 95% (9090 of 9559)
+  Covered branches: 9090
+  Total branches: 9559
+  Method coverage: 99.2% (1628 of 1641)
+  Full method coverage: 87.7% (1440 of 1641)
+  Covered methods: 1628
+  Fully covered methods: 1440
+  Total methods: 1641
 
 LeetCode                                                                                                                                               97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -757,6 +757,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfWaysToSplitArray.NumberOfWaysToSplitArrayPrefixSum                                                                        100%
   LeetCode.Algorithms.NumberOfWonderfulSubstrings.NumberOfWonderfulSubstringsDictionary                                                                 100%
   LeetCode.Algorithms.NumberOfZeroFilledSubarrays.NumberOfZeroFilledSubarraysCounting                                                                   100%
+  LeetCode.Algorithms.OnesAndZeroes.OnesAndZeroesDynamicProgramming                                                                                     100%
   LeetCode.Algorithms.OpenTheLock.OpenTheLockBreadthFirstSearch                                                                                         100%
   LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListSlowFastPointers                                                                         100%
   LeetCode.Algorithms.PalindromeLinkedList.PalindromeLinkedListTwoPointers                                                                              100%
