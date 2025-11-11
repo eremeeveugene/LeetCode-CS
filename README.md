@@ -195,6 +195,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [459. Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/description/)
 - [463. Island Perimeter](https://leetcode.com/problems/island-perimeter/description/)
 - [464. Can I Win](https://leetcode.com/problems/can-i-win/description/)
+- [474. Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/description/)
 - [476. Number Complement](https://leetcode.com/problems/number-complement/description/)
 - [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/description/)
 - [494. Target Sum](https://leetcode.com/problems/target-sum/description/)
