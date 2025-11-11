@@ -28,14 +28,14 @@ public class OnesAndZeroesDynamicProgramming : IOnesAndZeroes
 
         foreach (var str in strs)
         {
-            var zeroes = 0;
+            var zeros = 0;
             var ones = 0;
 
             foreach (var c in str)
             {
                 if (c == '0')
                 {
-                    zeroes++;
+                    zeros++;
                 }
                 else
                 {
@@ -43,12 +43,12 @@ public class OnesAndZeroesDynamicProgramming : IOnesAndZeroes
                 }
             }
 
-            for (var i = m; i >= zeroes; i--)
+            for (var i = m; i >= zeros; i--)
             {
                 for (var j = n; j >= ones; j--)
                 {
                     var index = GetIndex(i, j, n);
-                    var previousIndex = GetIndex(i - zeroes, j - ones, n);
+                    var previousIndex = GetIndex(i - zeros, j - ones, n);
 
                     dp[index] = Math.Max(dp[index], dp[previousIndex] + 1);
                 }
