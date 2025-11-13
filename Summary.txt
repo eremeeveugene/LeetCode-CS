@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/11/2025 - 6:04:09 PM
-  Coverage date: 11/11/2025 - 6:03:08 PM - 11/11/2025 - 6:03:27 PM
+  Generated on: 11/13/2025 - 2:22:16 PM
+  Coverage date: 11/13/2025 - 2:21:15 PM - 11/13/2025 - 2:21:34 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1089
-  Files: 1089
+  Classes: 1090
+  Files: 1090
   Line coverage: 97.5%
-  Covered lines: 24224
-  Uncovered lines: 618
-  Coverable lines: 24842
-  Total lines: 61604
-  Branch coverage: 95% (9090 of 9559)
-  Covered branches: 9090
-  Total branches: 9559
-  Method coverage: 99.2% (1628 of 1641)
-  Full method coverage: 87.7% (1440 of 1641)
-  Covered methods: 1628
-  Fully covered methods: 1440
-  Total methods: 1641
+  Covered lines: 24245
+  Uncovered lines: 616
+  Coverable lines: 24861
+  Total lines: 61652
+  Branch coverage: 95% (9098 of 9567)
+  Covered branches: 9098
+  Total branches: 9567
+  Method coverage: 99.2% (1629 of 1642)
+  Full method coverage: 87.8% (1442 of 1642)
+  Covered methods: 1629
+  Fully covered methods: 1442
+  Total methods: 1642
 
 LeetCode                                                                                                                                               97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -582,6 +582,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumNumberOfIntegersToChooseFromRange1.MaximumNumberOfIntegersToChooseFromRange1HashSet                                        100%
   LeetCode.Algorithms.MaximumNumberOfKDivisibleComponents.MaximumNumberOfKDivisibleComponentsDepthFirstSearch                                           100%
   LeetCode.Algorithms.MaximumNumberOfMovesInGrid.MaximumNumberOfMovesInGridDynamicProgramming                                                           100%
+  LeetCode.Algorithms.MaximumNumberOfOperationsToMoveOnesToTheEnd.MaximumNumberOfOperationsToMoveOnesToTheEndGreedyCounting                             100%
   LeetCode.Algorithms.MaximumNumberOfPointsWithCost.MaximumNumberOfPointsWithCostDynamicProgramming                                                     100%
   LeetCode.Algorithms.MaximumNumberOfTasksYouCanAssign.MaximumNumberOfTasksYouCanAssignLinkedList                                                      92.5%
   LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinq                                                     100%
@@ -1096,7 +1097,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                    100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                       100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                 100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                          97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                          100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                        100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 100%
