@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/13/2025 - 2:22:16 PM
-  Coverage date: 11/13/2025 - 2:21:15 PM - 11/13/2025 - 2:21:34 PM
+  Generated on: 11/16/2025 - 1:15:32 PM
+  Coverage date: 11/16/2025 - 1:14:25 PM - 11/16/2025 - 1:14:53 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1090
-  Files: 1090
+  Classes: 1091
+  Files: 1091
   Line coverage: 97.5%
-  Covered lines: 24245
+  Covered lines: 24262
   Uncovered lines: 616
-  Coverable lines: 24861
-  Total lines: 61652
-  Branch coverage: 95% (9098 of 9567)
-  Covered branches: 9098
-  Total branches: 9567
-  Method coverage: 99.2% (1629 of 1642)
-  Full method coverage: 87.8% (1442 of 1642)
-  Covered methods: 1629
-  Fully covered methods: 1442
-  Total methods: 1642
+  Coverable lines: 24878
+  Total lines: 61701
+  Branch coverage: 95% (9102 of 9571)
+  Covered branches: 9102
+  Total branches: 9571
+  Method coverage: 99.2% (1630 of 1643)
+  Full method coverage: 87.8% (1443 of 1643)
+  Covered methods: 1630
+  Fully covered methods: 1443
+  Total methods: 1643
 
 LeetCode                                                                                                                                               97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -755,6 +755,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfSubArraysWithOddSum.NumberOfSubArraysWithOddSumPrefixSum                                                                  100%
   LeetCode.Algorithms.NumberOfSubsequencesThatSatisfyTheGivenSumCondition.NumberOfSubsequencesThatSatisfyTheGivenSumConditionSortingTwoPointers         100%
   LeetCode.Algorithms.NumberOfSubstringsContainingAllThreeCharacters.NumberOfSubstringsContainingAllThreeCharactersSlidingWindow                        100%
+  LeetCode.Algorithms.NumberOfSubstringsWithOnlyOnes.NumberOfSubstringsWithOnlyOnesCounting                                                             100%
   LeetCode.Algorithms.NumberOfWaysToSplitArray.NumberOfWaysToSplitArrayPrefixSum                                                                        100%
   LeetCode.Algorithms.NumberOfWonderfulSubstrings.NumberOfWonderfulSubstringsDictionary                                                                 100%
   LeetCode.Algorithms.NumberOfZeroFilledSubarrays.NumberOfZeroFilledSubarraysCounting                                                                   100%
