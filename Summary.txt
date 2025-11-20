@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/18/2025 - 3:15:39 PM
-  Coverage date: 11/18/2025 - 3:14:37 PM - 11/18/2025 - 3:14:57 PM
+  Generated on: 11/20/2025 - 5:28:20 PM
+  Coverage date: 11/20/2025 - 5:27:20 PM - 11/20/2025 - 5:27:40 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1094
-  Files: 1094
+  Classes: 1099
+  Files: 1099
   Line coverage: 97.5%
-  Covered lines: 24305
+  Covered lines: 24364
   Uncovered lines: 619
-  Coverable lines: 24924
-  Total lines: 61836
-  Branch coverage: 95% (9121 of 9591)
-  Covered branches: 9121
-  Total branches: 9591
-  Method coverage: 99.2% (1633 of 1646)
-  Full method coverage: 87.7% (1445 of 1646)
-  Covered methods: 1633
-  Fully covered methods: 1445
-  Total methods: 1646
+  Coverable lines: 24983
+  Total lines: 62039
+  Branch coverage: 95% (9143 of 9617)
+  Covered branches: 9143
+  Total branches: 9617
+  Method coverage: 99.2% (1638 of 1651)
+  Full method coverage: 87.8% (1450 of 1651)
+  Covered methods: 1638
+  Fully covered methods: 1450
+  Total methods: 1651
 
 LeetCode                                                                                                                                               97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                      100%
@@ -468,6 +468,11 @@ LeetCode                                                                        
   LeetCode.Algorithms.IsSubsequence.IsSubsequenceTwoPointers                                                                                            100%
   LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesHashSet                                                                                            100%
   LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesLinq                                                                                               100%
+  LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo.KeepMultiplyingFoundValuesByTwoArrayLookup                                                        100%
+  LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo.KeepMultiplyingFoundValuesByTwoBitArrayLookup                                                     100%
+  LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo.KeepMultiplyingFoundValuesByTwoHashSet                                                            100%
+  LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo.KeepMultiplyingFoundValuesByTwoSorting                                                            100%
+  LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo.KeepMultiplyingFoundValuesByTwoSpanLookup                                                         100%
   LeetCode.Algorithms.KthDistinctStringInAnArray.KthDistinctStringInAnArrayDictionary                                                                   100%
   LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamPriorityQueue                                                                  100%
   LeetCode.Algorithms.KthLargestElementInStream.KthLargestElementInStreamSortedArray                                                                    100%
