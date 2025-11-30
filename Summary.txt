@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/29/2025 - 12:01:13 PM
-  Coverage date: 11/29/2025 - 12:00:05 PM - 11/29/2025 - 12:00:27 PM
+  Generated on: 11/30/2025 - 9:40:50 AM
+  Coverage date: 11/30/2025 - 9:39:46 AM - 11/30/2025 - 9:40:06 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1103
-  Files: 1103
+  Classes: 1105
+  Files: 1105
   Line coverage: 97.5%
-  Covered lines: 24445
+  Covered lines: 24471
   Uncovered lines: 622
-  Coverable lines: 25067
-  Total lines: 62261
-  Branch coverage: 95% (9175 of 9653)
-  Covered branches: 9175
-  Total branches: 9653
-  Method coverage: 99.2% (1642 of 1655)
-  Full method coverage: 87.7% (1452 of 1655)
-  Covered methods: 1642
-  Fully covered methods: 1452
-  Total methods: 1655
+  Coverable lines: 25093
+  Total lines: 62345
+  Branch coverage: 95% (9181 of 9659)
+  Covered branches: 9181
+  Total branches: 9659
+  Method coverage: 99.2% (1644 of 1657)
+  Full method coverage: 87.7% (1454 of 1657)
+  Covered methods: 1644
+  Fully covered methods: 1454
+  Total methods: 1657
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                       100%
@@ -667,6 +667,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumLengthOfStringAfterOperations.MinimumLengthOfStringAfterOperationsFrequencyArray                                            100%
   LeetCode.Algorithms.MinimumLengthOfStringAfterOperations.MinimumLengthOfStringAfterOperationsFrequencyDictionary                                       100%
   LeetCode.Algorithms.MinimumLimitOfBallsInBag.MinimumLimitOfBallsInBagBinarySearch                                                                      100%
+  LeetCode.Algorithms.MinimumMovesToEqualArrayElements3.MinimumMovesToEqualArrayElements3OnePass                                                         100%
+  LeetCode.Algorithms.MinimumMovesToEqualArrayElements3.MinimumMovesToEqualArrayElements3TwoPass                                                         100%
   LeetCode.Algorithms.MinimumNumberGame.MinimumNumberGameSorting                                                                                         100%
   LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons.MinimumNumberOfArrowsToBurstBalloonsIterative                                                 100%
   LeetCode.Algorithms.MinimumNumberOfChangesToMakeBinaryStringBeautiful.MinimumNumberOfChangesToMakeBinaryStringBeautifulGreedy                          100%
