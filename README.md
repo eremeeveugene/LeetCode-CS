@@ -777,6 +777,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3712. Sum of Elements With Frequency Divisible by K](https://leetcode.com/problems/sum-of-elements-with-frequency-divisible-by-k/description/)
 - [3718. Smallest Missing Multiple of K](https://leetcode.com/problems/smallest-missing-multiple-of-k/description/)
 - [3731. Find Missing Elements](https://leetcode.com/problems/find-missing-elements/description/)
+- [3736. Minimum Moves to Equal Array Elements III](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/description/)
 
   </p>
 </details>
