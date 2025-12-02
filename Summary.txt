@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/1/2025 - 9:04:30 AM
-  Coverage date: 12/1/2025 - 9:03:29 AM - 12/1/2025 - 9:03:50 AM
+  Generated on: 12/2/2025 - 8:29:31 AM
+  Coverage date: 12/2/2025 - 8:28:30 AM - 12/2/2025 - 8:28:50 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1106
-  Files: 1106
+  Classes: 1109
+  Files: 1109
   Line coverage: 97.5%
-  Covered lines: 24485
-  Uncovered lines: 622
-  Coverable lines: 25107
-  Total lines: 62389
-  Branch coverage: 95% (9187 of 9665)
-  Covered branches: 9187
-  Total branches: 9665
-  Method coverage: 99.2% (1645 of 1658)
-  Full method coverage: 87.7% (1455 of 1658)
-  Covered methods: 1645
-  Fully covered methods: 1455
-  Total methods: 1658
+  Covered lines: 24517
+  Uncovered lines: 620
+  Coverable lines: 25137
+  Total lines: 62500
+  Branch coverage: 95% (9192 of 9669)
+  Covered branches: 9192
+  Total branches: 9669
+  Method coverage: 99.2% (1651 of 1664)
+  Full method coverage: 87.8% (1462 of 1664)
+  Covered methods: 1651
+  Fully covered methods: 1462
+  Total methods: 1664
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                       100%
@@ -110,6 +110,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.CheckIfStringIsPrefixOfArray.CheckIfStringIsPrefixOfArrayTwoPointers                                                                95%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramHashSet                                                                     100%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramIterative                                                                   100%
+  LeetCode.Algorithms.CheckIfTwoChessboardSquaresHaveTheSameColor.CheckIfTwoChessboardSquaresHaveTheSameColorBase                                        100%
+  LeetCode.Algorithms.CheckIfTwoChessboardSquaresHaveTheSameColor.CheckIfTwoChessboardSquaresHaveTheSameColorLookup                                      100%
+  LeetCode.Algorithms.CheckIfTwoChessboardSquaresHaveTheSameColor.CheckIfTwoChessboardSquaresHaveTheSameColorMath                                        100%
   LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentConcat                                                      100%
   LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentIterative                                                  93.1%
   LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentTwoPointers                                                 100%
@@ -1113,7 +1116,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
