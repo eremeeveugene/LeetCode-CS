@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/2/2025 - 8:29:31 AM
-  Coverage date: 12/2/2025 - 8:28:30 AM - 12/2/2025 - 8:28:50 AM
+  Generated on: 12/3/2025 - 11:53:10 AM
+  Coverage date: 12/3/2025 - 11:52:09 AM - 12/3/2025 - 11:52:29 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1109
-  Files: 1109
+  Classes: 1110
+  Files: 1110
   Line coverage: 97.5%
-  Covered lines: 24517
-  Uncovered lines: 620
-  Coverable lines: 25137
-  Total lines: 62500
-  Branch coverage: 95% (9192 of 9669)
-  Covered branches: 9192
-  Total branches: 9669
-  Method coverage: 99.2% (1651 of 1664)
-  Full method coverage: 87.8% (1462 of 1664)
-  Covered methods: 1651
+  Covered lines: 24534
+  Uncovered lines: 622
+  Coverable lines: 25156
+  Total lines: 62553
+  Branch coverage: 95% (9199 of 9677)
+  Covered branches: 9199
+  Total branches: 9677
+  Method coverage: 99.2% (1652 of 1665)
+  Full method coverage: 87.8% (1462 of 1665)
+  Covered methods: 1652
   Fully covered methods: 1462
-  Total methods: 1664
+  Total methods: 1665
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                       100%
@@ -559,6 +559,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximalRectangle.MaximalRectangleStack                                                                                             100%
   LeetCode.Algorithms.MaximalScoreAfterApplyingKOperations.MaximalScoreAfterApplyingKOperationsPriorityQueue                                             100%
   LeetCode.Algorithms.MaximizeHappinessOfSelectedChildren.MaximizeHappinessOfSelectedChildrenIterative                                                   100%
+  LeetCode.Algorithms.MaximizeSumOfAtMostKDistinctElements.MaximizeSumOfAtMostKDistinctElementsSorting                                                   100%
   LeetCode.Algorithms.MaximizeTheNumberOfTargetNodesAfterConnectingTrees1.MaximizeTheNumberOfTargetNodesAfterConnectingTrees1DepthFirstSearch           96.2%
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberIterative                                                                                           100%
   LeetCode.Algorithms.Maximum69Number.Maximum69NumberString                                                                                              100%
@@ -1116,7 +1117,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
