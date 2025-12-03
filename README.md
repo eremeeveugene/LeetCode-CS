@@ -774,6 +774,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3622. Check Divisibility by Digit Sum and Product](https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/description/)
 - [3637. Trionic Array I](https://leetcode.com/problems/trionic-array-i/description/)
 - [3668. Restore Finishing Order](https://leetcode.com/problems/restore-finishing-order/description/)
+- [3684. Maximize Sum of At Most K Distinct Elements](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/description/)
 - [3701. Compute Alternating Sum](https://leetcode.com/problems/compute-alternating-sum/description/)
 - [3707. Equal Score Substrings](https://leetcode.com/problems/equal-score-substrings/description/)
 - [3712. Sum of Elements With Frequency Divisible by K](https://leetcode.com/problems/sum-of-elements-with-frequency-divisible-by-k/description/)
