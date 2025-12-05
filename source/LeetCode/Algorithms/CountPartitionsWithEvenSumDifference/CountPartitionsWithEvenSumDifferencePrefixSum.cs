@@ -23,7 +23,15 @@ public class CountPartitionsWithEvenSumDifferencePrefixSum : ICountPartitionsWit
     public int CountPartitions(int[] nums)
     {
         var left = nums[0];
-        var right = nums.Sum() - nums[0];
+
+        var sum = 0;
+
+        foreach (var num in nums)
+        {
+            sum += num;
+        }
+
+        var right = sum - nums[0];
 
         var count = 0;
 
