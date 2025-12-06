@@ -1,22 +1,22 @@
 Summary
-  Generated on: 12/3/2025 - 11:53:10 AM
-  Coverage date: 12/3/2025 - 11:52:09 AM - 12/3/2025 - 11:52:29 AM
+  Generated on: 12/6/2025 - 7:56:47 PM
+  Coverage date: 12/6/2025 - 7:55:46 PM - 12/6/2025 - 7:56:06 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
   Classes: 1110
   Files: 1110
   Line coverage: 97.5%
-  Covered lines: 24534
-  Uncovered lines: 622
-  Coverable lines: 25156
-  Total lines: 62553
-  Branch coverage: 95% (9199 of 9677)
-  Covered branches: 9199
-  Total branches: 9677
+  Covered lines: 24542
+  Uncovered lines: 620
+  Coverable lines: 25162
+  Total lines: 62563
+  Branch coverage: 95% (9202 of 9679)
+  Covered branches: 9202
+  Total branches: 9679
   Method coverage: 99.2% (1652 of 1665)
-  Full method coverage: 87.8% (1462 of 1665)
+  Full method coverage: 87.8% (1463 of 1665)
   Covered methods: 1652
-  Fully covered methods: 1462
+  Fully covered methods: 1463
   Total methods: 1665
 
 LeetCode                                                                                                                                                97.6%
@@ -1117,7 +1117,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
