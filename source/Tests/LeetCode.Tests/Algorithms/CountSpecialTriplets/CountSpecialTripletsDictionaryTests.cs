@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CountSpecialTriplets;
 namespace LeetCode.Tests.Algorithms.CountSpecialTriplets;
 
 [TestClass]
-public sealed class CountSpecialTriplets1Tests : CountSpecialTripletsTestsBase<CountSpecialTriplets1>;
+public sealed class CountSpecialTripletsDictionaryTests : CountSpecialTripletsTestsBase<CountSpecialTripletsDictionary>;

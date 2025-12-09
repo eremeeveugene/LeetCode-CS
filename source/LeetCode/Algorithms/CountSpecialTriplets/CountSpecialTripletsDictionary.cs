@@ -12,12 +12,12 @@
 namespace LeetCode.Algorithms.CountSpecialTriplets;
 
 /// <inheritdoc />
-public sealed class CountSpecialTriplets1 : ICountSpecialTriplets
+public sealed class CountSpecialTripletsDictionary : ICountSpecialTriplets
 {
     private const int Modulo = 1_000_000_007;
 
     /// <summary>
-    ///     Time complexity - O(n^3)
+    ///     Time complexity - O(n)
     ///     Space complexity - O(1)
     /// </summary>
     /// <param name="nums"></param>
