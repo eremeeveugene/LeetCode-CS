@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/LeetCode.Core.Tests/LeetCode.Core.Tests.csproj" />
+    <Project Path="Tests/LeetCode.Tests.Base/LeetCode.Tests.Base.csproj" />
+    <Project Path="Tests/LeetCode.Tests/LeetCode.Tests.csproj" />
+  </Folder>
+  <Project Path="LeetCode.Core/LeetCode.Core.csproj" />
+  <Project Path="LeetCode/LeetCode.csproj" />
+</Solution>
