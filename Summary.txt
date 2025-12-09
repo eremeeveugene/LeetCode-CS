@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/8/2025 - 9:03:26 AM
-  Coverage date: 12/8/2025 - 9:02:23 AM - 12/8/2025 - 9:02:44 AM
+  Generated on: 12/9/2025 - 1:53:48 PM
+  Coverage date: 12/9/2025 - 1:52:45 PM - 12/9/2025 - 1:53:05 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1111
-  Files: 1111
+  Classes: 1113
+  Files: 1113
   Line coverage: 97.5%
-  Covered lines: 24561
-  Uncovered lines: 620
-  Coverable lines: 25181
-  Total lines: 62612
-  Branch coverage: 95% (9210 of 9687)
-  Covered branches: 9210
-  Total branches: 9687
-  Method coverage: 99.2% (1653 of 1666)
-  Full method coverage: 87.8% (1464 of 1666)
-  Covered methods: 1653
-  Fully covered methods: 1464
-  Total methods: 1666
+  Covered lines: 24620
+  Uncovered lines: 623
+  Coverable lines: 25243
+  Total lines: 62754
+  Branch coverage: 95% (9233 of 9711)
+  Covered branches: 9233
+  Total branches: 9711
+  Method coverage: 99.2% (1655 of 1668)
+  Full method coverage: 87.8% (1465 of 1668)
+  Covered methods: 1655
+  Fully covered methods: 1465
+  Total methods: 1668
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                       100%
@@ -187,6 +187,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountPrefixAndSuffixPairs1.CountPrefixAndSuffixPairs1StringComparison                                                              100%
   LeetCode.Algorithms.CountPrefixAndSuffixPairs1.CountPrefixAndSuffixPairs1Trie                                                                           97%
   LeetCode.Algorithms.CountServersThatCommunicate.CountServersThatCommunicateCounting                                                                    100%
+  LeetCode.Algorithms.CountSpecialTriplets.CountSpecialTripletsBruteForce                                                                               89.2%
+  LeetCode.Algorithms.CountSpecialTriplets.CountSpecialTripletsDictionary                                                                                100%
   LeetCode.Algorithms.CountSquareSubmatricesWithAllOnes.CountSquareSubmatricesWithAllOnesBruteForce                                                      100%
   LeetCode.Algorithms.CountSquareSubmatricesWithAllOnes.CountSquareSubmatricesWithAllOnesDynamicProgramming                                              100%
   LeetCode.Algorithms.CountSquareSumTriples.CountSquareSumTriplesBruteForce                                                                              100%
