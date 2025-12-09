@@ -30,12 +30,16 @@ public sealed class CountSpecialTripletsDictionary : ICountSpecialTriplets
 
         var rightNumToCountDictionary = new Dictionary<int, int>();
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
-            if (!rightNumToCountDictionary.TryAdd(num, 1))
+            var num = nums[i];
+
+            if (rightNumToCountDictionary.TryAdd(num, 1))
             {
-                rightNumToCountDictionary[num]++;
+                continue;
             }
+
+            rightNumToCountDictionary[num]++;
         }
 
         var leftNumToCountDictionary = new Dictionary<int, int>();
