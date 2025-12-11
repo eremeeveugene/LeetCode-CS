@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/9/2025 - 1:53:48 PM
-  Coverage date: 12/9/2025 - 1:52:45 PM - 12/9/2025 - 1:53:05 PM
+  Generated on: 12/11/2025 - 10:36:13 AM
+  Coverage date: 12/11/2025 - 10:35:10 AM - 12/11/2025 - 10:35:29 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1113
-  Files: 1113
+  Classes: 1114
+  Files: 1114
   Line coverage: 97.5%
-  Covered lines: 24620
-  Uncovered lines: 623
-  Coverable lines: 25243
-  Total lines: 62754
-  Branch coverage: 95% (9233 of 9711)
-  Covered branches: 9233
-  Total branches: 9711
-  Method coverage: 99.2% (1655 of 1668)
-  Full method coverage: 87.8% (1465 of 1668)
-  Covered methods: 1655
+  Covered lines: 24648
+  Uncovered lines: 625
+  Coverable lines: 25273
+  Total lines: 62818
+  Branch coverage: 95% (9244 of 9723)
+  Covered branches: 9244
+  Total branches: 9723
+  Method coverage: 99.2% (1656 of 1669)
+  Full method coverage: 87.7% (1465 of 1669)
+  Covered methods: 1656
   Fully covered methods: 1465
-  Total methods: 1668
+  Total methods: 1669
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                       100%
@@ -156,6 +156,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountCompleteSubarraysInAnArray.CountCompleteSubarraysInAnArrayFrequencyDictionary                                                 100%
   LeetCode.Algorithms.CountCompleteTreeNodes.CountCompleteTreeNodesDepthRecursive                                                                        100%
   LeetCode.Algorithms.CountCompleteTreeNodes.CountCompleteTreeNodesRecursive                                                                             100%
+  LeetCode.Algorithms.CountCoveredBuildings.CountCoveredBuildingsSimulation                                                                              100%
   LeetCode.Algorithms.CountDaysWithoutMeetings.CountDaysWithoutMeetingsSorting                                                                           100%
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyArray                                                           100%
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionary                                                      100%
@@ -1120,7 +1121,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
