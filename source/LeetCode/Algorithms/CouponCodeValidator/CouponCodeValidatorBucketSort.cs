@@ -14,7 +14,9 @@ namespace LeetCode.Algorithms.CouponCodeValidator;
 /// <inheritdoc />
 public class CouponCodeValidatorBucketSort : ICouponCodeValidator
 {
-    private static readonly Dictionary<string, int> CategoryIndex = new()
+    private const int CategoryCount = 4;
+
+    private static readonly Dictionary<string, int> CategoryToIndexDictionary = new()
     {
         ["electronics"] = 0,
         ["grocery"] = 1,
@@ -32,55 +34,28 @@ public class CouponCodeValidatorBucketSort : ICouponCodeValidator
     /// <returns></returns>
     public IList<string> ValidateCoupons(string[] code, string[] businessLine, bool[] isActive)
     {
-        var buckets = GetBuckets();
+        var buckets = new List<string>[CategoryCount];
 
-        for (var i = 0; i < code.Length; i++)
-        {
-            if (!IsCouponValid(code[i], businessLine[i], isActive[i], out var category))
-            {
-                continue;
-            }
-
-            buckets[category].Add(code[i]);
-        }
-
-        return CollectSortedResults(buckets);
-    }
-
-    private static List<string>[] GetBuckets()
-    {
-        var buckets = new List<string>[4];
-
-        for (var i = 0; i < 4; i++)
+        for (var i = 0; i < buckets.Length; i++)
         {
             buckets[i] = [];
         }
 
-        return buckets;
-    }
-
-    private static bool IsCouponValid(string code, string category, bool isActive, out int categoryIndex)
-    {
-        categoryIndex = -1;
-
-        if (!isActive)
+        for (var i = 0; i < code.Length; i++)
         {
-            return false;
+            if (!IsCouponValid(code[i], businessLine[i], isActive[i]))
+            {
+                continue;
+            }
+
+            var index = CategoryToIndexDictionary[businessLine[i]];
+
+            buckets[index].Add(code[i]);
         }
 
-        if (!CategoryIndex.TryGetValue(category, out categoryIndex))
-        {
-            return false;
-        }
-
-        return !string.IsNullOrEmpty(code) && code.All(c => char.IsLetterOrDigit(c) || c == '_');
-    }
-
-    private static List<string> CollectSortedResults(List<string>[] buckets)
-    {
         var result = new List<string>();
 
-        for (var i = 0; i < 4; i++)
+        for (var i = 0; i < buckets.Length; i++)
         {
             var bucket = buckets[i];
 
@@ -90,9 +65,42 @@ public class CouponCodeValidatorBucketSort : ICouponCodeValidator
             }
 
             bucket.Sort(StringComparer.Ordinal);
+
             result.AddRange(bucket);
         }
 
         return result;
+    }
+
+    private static bool IsCouponValid(string code, string category, bool isActive)
+    {
+        if (!isActive)
+        {
+            return false;
+        }
+
+        if (!CategoryToIndexDictionary.ContainsKey(category))
+        {
+            return false;
+        }
+
+        if (string.IsNullOrEmpty(code))
+        {
+            return false;
+        }
+
+        for (var i = 0; i < code.Length; i++)
+        {
+            var c = code[i];
+
+            if (char.IsLetterOrDigit(c) || c == '_')
+            {
+                continue;
+            }
+
+            return false;
+        }
+
+        return true;
     }
 }
