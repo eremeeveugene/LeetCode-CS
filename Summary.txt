@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/11/2025 - 10:36:13 AM
-  Coverage date: 12/11/2025 - 10:35:10 AM - 12/11/2025 - 10:35:29 AM
+  Generated on: 12/13/2025 - 12:46:51 PM
+  Coverage date: 12/13/2025 - 12:45:49 PM - 12/13/2025 - 12:46:09 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
   Classes: 1114
   Files: 1114
   Line coverage: 97.5%
-  Covered lines: 24648
+  Covered lines: 24651
   Uncovered lines: 625
-  Coverable lines: 25273
-  Total lines: 62818
-  Branch coverage: 95% (9244 of 9723)
-  Covered branches: 9244
-  Total branches: 9723
-  Method coverage: 99.2% (1656 of 1669)
-  Full method coverage: 87.7% (1465 of 1669)
-  Covered methods: 1656
-  Fully covered methods: 1465
-  Total methods: 1669
+  Coverable lines: 25276
+  Total lines: 62826
+  Branch coverage: 95% (9248 of 9727)
+  Covered branches: 9248
+  Total branches: 9727
+  Method coverage: 99.2% (1654 of 1667)
+  Full method coverage: 87.7% (1463 of 1667)
+  Covered methods: 1654
+  Fully covered methods: 1463
+  Total methods: 1667
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                       100%
