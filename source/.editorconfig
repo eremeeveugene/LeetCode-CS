@@ -147,6 +147,7 @@ root = true
 
 # C# files
 [*.cs]
+dotnet_diagnostic.IDE0290.severity = none
 
 #### Core EditorConfig Options ####
 

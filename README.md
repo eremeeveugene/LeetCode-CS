@@ -397,6 +397,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1460. Make Two Arrays Equal by Reversing Subarrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/description/)
 - [1464. Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/description/)
 - [1470. Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/description/)
+- [1472. Design Browser History](https://leetcode.com/problems/design-browser-history/description/)
 - [1475. Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/description/)
 - [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/description/)
 - [1486. XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/description/)
