@@ -39,7 +39,9 @@ public sealed class DesignBrowserHistoryArray : IDesignBrowserHistory
     /// <param name="url"></param>
     public void Visit(string url)
     {
-        _history[_current++] = url;
+        _current++;
+
+        _history[_current] = url;
 
         _last = _current;
     }
