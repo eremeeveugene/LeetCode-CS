@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/13/2025 - 12:46:51 PM
-  Coverage date: 12/13/2025 - 12:45:49 PM - 12/13/2025 - 12:46:09 PM
+  Generated on: 12/17/2025 - 4:46:21 PM
+  Coverage date: 12/17/2025 - 4:45:19 PM - 12/17/2025 - 4:45:38 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1114
-  Files: 1114
+  Classes: 1116
+  Files: 1116
   Line coverage: 97.5%
-  Covered lines: 24651
+  Covered lines: 24709
   Uncovered lines: 625
-  Coverable lines: 25276
-  Total lines: 62826
-  Branch coverage: 95% (9248 of 9727)
-  Covered branches: 9248
-  Total branches: 9727
-  Method coverage: 99.2% (1654 of 1667)
-  Full method coverage: 87.7% (1463 of 1667)
-  Covered methods: 1654
-  Fully covered methods: 1463
-  Total methods: 1667
+  Coverable lines: 25334
+  Total lines: 62997
+  Branch coverage: 95% (9256 of 9735)
+  Covered branches: 9256
+  Total branches: 9735
+  Method coverage: 99.2% (1666 of 1679)
+  Full method coverage: 87.8% (1475 of 1679)
+  Covered methods: 1666
+  Fully covered methods: 1475
+  Total methods: 1679
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                       100%
@@ -239,6 +239,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.DeleteNodesAndReturnForest.DeleteNodesAndReturnForestDepthFirstSearchRecursive                                                     100%
   LeetCode.Algorithms.DeleteNodesAndReturnForest.DeleteNodesAndReturnForestDepthFirstSearchStack                                                         100%
   LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArray                                                                                   100%
+  LeetCode.Algorithms.DesignBrowserHistory.DesignBrowserHistoryArray                                                                                     100%
+  LeetCode.Algorithms.DesignBrowserHistory.DesignBrowserHistoryLinkedList                                                                                100%
   LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedList                                                                                 63.5%
   LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedList                                                                                 72.2%
   LeetCode.Algorithms.DesignFoodRatingSystem.DesignFoodRatingSystemDictionaryWithPriorityQueue                                                            95%
