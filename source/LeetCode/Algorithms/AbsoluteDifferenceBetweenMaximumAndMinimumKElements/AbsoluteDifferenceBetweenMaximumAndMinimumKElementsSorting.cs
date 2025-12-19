@@ -34,6 +34,6 @@ public sealed class AbsoluteDifferenceBetweenMaximumAndMinimumKElementsSorting :
             result -= nums[nums.Length - 1 - i];
         }
 
-        return result;
+        return Math.Abs(result);
     }
 }
