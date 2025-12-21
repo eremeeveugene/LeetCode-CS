@@ -311,6 +311,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [949. Largest Time for Given Digits](https://leetcode.com/problems/largest-time-for-given-digits/description/)
 - [950. Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/description/)
 - [951. Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees/description/)
+- [955. Delete Columns to Make Sorted II](https://leetcode.com/problems/delete-columns-to-make-sorted-ii/description/)
 - [959. Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes/description/)
 - [966. Vowel Spellchecker](https://leetcode.com/problems/vowel-spellchecker/description/)
 - [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/description/)
