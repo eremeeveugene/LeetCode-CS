@@ -27,7 +27,7 @@ public sealed class DeleteColumnsToMakeSorted2Greedy : IDeleteColumnsToMakeSorte
         var n = strs.Length;
         var m = strs[0].Length;
 
-        Span<bool> ignored = stackalloc bool[n - 1];
+        Span<bool> skipped = stackalloc bool[n - 1];
 
         for (var i = 0; i < m; i++)
         {
@@ -35,12 +35,7 @@ public sealed class DeleteColumnsToMakeSorted2Greedy : IDeleteColumnsToMakeSorte
 
             for (var j = 0; j < n - 1; j++)
             {
-                if (ignored[j])
-                {
-                    continue;
-                }
-
-                if (strs[j][i] <= strs[j + 1][i])
+                if (skipped[j] || strs[j][i] <= strs[j + 1][i])
                 {
                     continue;
                 }
@@ -59,14 +54,14 @@ public sealed class DeleteColumnsToMakeSorted2Greedy : IDeleteColumnsToMakeSorte
 
             for (var j = 0; j < n - 1; j++)
             {
-                if (ignored[j])
+                if (skipped[j])
                 {
                     continue;
                 }
 
                 if (strs[j][i] < strs[j + 1][i])
                 {
-                    ignored[j] = true;
+                    skipped[j] = true;
                 }
             }
         }
