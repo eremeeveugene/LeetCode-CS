@@ -14,6 +14,8 @@ namespace LeetCode.Algorithms.MagicSquaresInGrid;
 /// <inheritdoc />
 public class MagicSquaresInGridBruteForce : IMagicSquaresInGrid
 {
+    private const int MagicSquareSum = 15;
+
     /// <summary>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
@@ -28,56 +30,65 @@ public class MagicSquaresInGridBruteForce : IMagicSquaresInGrid
         {
             for (var j = 0; j < grid[i].Length - 2; j++)
             {
-                if (IsMagicSquare(grid, i, j))
+                if (!IsMagicSquare(grid, i, j))
                 {
-                    result++;
+                    continue;
                 }
+
+                result++;
             }
         }
 
         return result;
     }
 
-    private static bool IsMagicSquare(IReadOnlyList<int[]> grid, int i, int j)
+    private static bool IsMagicSquare(int[][] grid, int row, int column)
     {
-        if (grid[i + 1][j + 1] != 5 || grid[i + 1][j + 1] == grid[i][j + 1] || grid[i + 1][j + 1] == grid[i + 1][j])
+        if (grid[row + 1][column + 1] != 5 ||
+            grid[row + 1][column + 1] == grid[row][column + 1] ||
+            grid[row + 1][column + 1] == grid[row + 1][column])
         {
             return false;
         }
 
-        const int sum = 15;
+        Span<bool> seen = stackalloc bool[10];
 
-        for (var k = 0; k < 3; k++)
+        for (var i = 0; i < 3; i++)
         {
             var rowSum = 0;
             var columnSum = 0;
 
-            for (var l = 0; l < 3; l++)
+            for (var j = 0; j < 3; j++)
             {
-                if (grid[i + k][j + l] > 9)
+                var value = grid[row + i][column + j];
+
+                if (value < 1 || value > 9 || seen[value])
                 {
                     return false;
                 }
 
-                rowSum += grid[i + k][j + l];
-                columnSum += grid[i + l][j + k];
+                seen[value] = true;
+
+                rowSum += value;
+                columnSum += grid[row + j][column + i];
             }
 
-            if (rowSum != sum || columnSum != sum)
+            if (rowSum != MagicSquareSum || columnSum != MagicSquareSum)
             {
                 return false;
             }
         }
 
-        var leftDiagonalSum = 0;
-        var rightDiagonalSum = 0;
-
-        for (var k = 0; k < 3; k++)
+        if (grid[row][column] + grid[row + 1][column + 1] + grid[row + 2][column + 2] != MagicSquareSum)
         {
-            leftDiagonalSum += grid[i + k][j + k];
-            rightDiagonalSum += grid[i + k][2 + j - k];
+            return false;
         }
 
-        return leftDiagonalSum == sum && rightDiagonalSum == sum;
+        if (grid[row][column + 2] + grid[row + 1][column + 1] + grid[row + 2][column] != MagicSquareSum)
+        {
+            return false;
+        }
+
+        return true;
     }
 }
