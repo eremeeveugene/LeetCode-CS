@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/30/2025 - 6:08:58 PM
-  Coverage date: 12/30/2025 - 6:07:49 PM - 12/30/2025 - 6:08:09 PM
+  Generated on: 12/31/2025 - 2:25:53 PM
+  Coverage date: 12/31/2025 - 2:24:47 PM - 12/31/2025 - 2:25:07 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1119
-  Files: 1119
+  Classes: 1123
+  Files: 1123
   Line coverage: 97.5%
-  Covered lines: 24781
-  Uncovered lines: 629
-  Coverable lines: 25410
-  Total lines: 63183
-  Branch coverage: 95% (9287 of 9767)
-  Covered branches: 9287
-  Total branches: 9767
-  Method coverage: 99.2% (1669 of 1682)
-  Full method coverage: 87.8% (1477 of 1682)
-  Covered methods: 1669
-  Fully covered methods: 1477
-  Total methods: 1682
+  Covered lines: 24828
+  Uncovered lines: 631
+  Coverable lines: 25459
+  Total lines: 63350
+  Branch coverage: 95% (9300 of 9781)
+  Covered branches: 9300
+  Total branches: 9781
+  Method coverage: 99.2% (1673 of 1686)
+  Full method coverage: 87.7% (1480 of 1686)
+  Covered methods: 1673
+  Fully covered methods: 1480
+  Total methods: 1686
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -619,6 +619,10 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArraySecondMax                                                 100%
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArraySorting                                                   100%
   LeetCode.Algorithms.MaximumScoreAfterSplittingString.MaximumScoreAfterSplittingStringIterative                                                         100%
+  LeetCode.Algorithms.MaximumSubstringsWithDistinctStart.MaximumSubstringsWithDistinctStartBase                                                          100%
+  LeetCode.Algorithms.MaximumSubstringsWithDistinctStart.MaximumSubstringsWithDistinctStartBitArray                                                      100%
+  LeetCode.Algorithms.MaximumSubstringsWithDistinctStart.MaximumSubstringsWithDistinctStartBitMask                                                      88.8%
+  LeetCode.Algorithms.MaximumSubstringsWithDistinctStart.MaximumSubstringsWithDistinctStartSpanLookup                                                    100%
   LeetCode.Algorithms.MaximumSumOfDistinctSubarraysWithLengthK.MaximumSumOfDistinctSubarraysWithLengthKSlidingWindow                                     100%
   LeetCode.Algorithms.MaximumSwap.MaximumSwapGreedy                                                                                                      100%
   LeetCode.Algorithms.MaximumTotalDamageWithSpellCasting.MaximumTotalDamageWithSpellCastingDynamicProgrammingWithBinarySearch                            100%
