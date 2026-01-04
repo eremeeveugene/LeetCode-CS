@@ -1,23 +1,23 @@
 Summary
-  Generated on: 12/31/2025 - 2:25:53 PM
-  Coverage date: 12/31/2025 - 2:24:47 PM - 12/31/2025 - 2:25:07 PM
+  Generated on: 1/4/2026 - 3:14:40 PM
+  Coverage date: 1/4/2026 - 3:13:30 PM - 1/4/2026 - 3:13:50 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1123
-  Files: 1123
+  Classes: 1124
+  Files: 1124
   Line coverage: 97.5%
-  Covered lines: 24828
-  Uncovered lines: 631
-  Coverable lines: 25459
-  Total lines: 63350
-  Branch coverage: 95% (9300 of 9781)
-  Covered branches: 9300
-  Total branches: 9781
-  Method coverage: 99.2% (1673 of 1686)
-  Full method coverage: 87.7% (1480 of 1686)
-  Covered methods: 1673
-  Fully covered methods: 1480
-  Total methods: 1686
+  Covered lines: 24859
+  Uncovered lines: 633
+  Coverable lines: 25492
+  Total lines: 63422
+  Branch coverage: 95% (9311 of 9793)
+  Covered branches: 9311
+  Total branches: 9793
+  Method coverage: 99.2% (1675 of 1688)
+  Full method coverage: 87.7% (1481 of 1688)
+  Covered methods: 1675
+  Fully covered methods: 1481
+  Total methods: 1688
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -427,6 +427,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FlippingAnImage.FlippingAnImageReverse                                                                                             100%
   LeetCode.Algorithms.FlippingAnImage.FlippingAnImageTwoPointers                                                                                         100%
   LeetCode.Algorithms.FloodFill.FloodFillIterative                                                                                                       100%
+  LeetCode.Algorithms.FourDivisors.FourDivisorsIterativeDivision                                                                                        93.9%
   LeetCode.Algorithms.FractionAdditionAndSubtraction.FractionAdditionAndSubtractionSimulation                                                            100%
   LeetCode.Algorithms.FractionToRecurringDecimal.FractionToRecurringDecimalDictionary                                                                   84.3%
   LeetCode.Algorithms.FreedomTrail.FreedomTrailDynamicProgramming                                                                                        100%
