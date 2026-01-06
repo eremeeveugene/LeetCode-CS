@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.MaximumLevelSumOfBinaryTree;
 
 /// <inheritdoc />
-public sealed class MaximumLevelSumOfBinaryTree1 : IMaximumLevelSumOfBinaryTree
+public sealed class MaximumLevelSumOfBinaryTreeBreadthFirstSearch : IMaximumLevelSumOfBinaryTree
 {
     /// <summary>
     ///     Time complexity - O(n), where n is the number of nodes in the binary tree
