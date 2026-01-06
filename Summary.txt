@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/5/2026 - 9:17:38 AM
-  Coverage date: 1/5/2026 - 9:16:26 AM - 1/5/2026 - 9:16:47 AM
+  Generated on: 1/6/2026 - 6:22:01 PM
+  Coverage date: 1/6/2026 - 6:20:57 PM - 1/6/2026 - 6:21:17 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1125
-  Files: 1125
+  Classes: 1126
+  Files: 1126
   Line coverage: 97.5%
-  Covered lines: 24871
-  Uncovered lines: 633
-  Coverable lines: 25504
-  Total lines: 63463
-  Branch coverage: 95% (9315 of 9797)
-  Covered branches: 9315
-  Total branches: 9797
-  Method coverage: 99.2% (1676 of 1689)
-  Full method coverage: 87.7% (1482 of 1689)
-  Covered methods: 1676
-  Fully covered methods: 1482
-  Total methods: 1689
+  Covered lines: 24905
+  Uncovered lines: 631
+  Coverable lines: 25536
+  Total lines: 63532
+  Branch coverage: 95% (9326 of 9807)
+  Covered branches: 9326
+  Total branches: 9807
+  Method coverage: 99.2% (1677 of 1690)
+  Full method coverage: 87.8% (1484 of 1690)
+  Covered methods: 1677
+  Fully covered methods: 1484
+  Total methods: 1690
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -599,6 +599,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumDifferenceByRemappingDigit.MaximumDifferenceByRemappingDigitGreedy                                                          100%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysBruteForce                                                                          100%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysGreedy                                                                              100%
+  LeetCode.Algorithms.MaximumLevelSumOfBinaryTree.MaximumLevelSumOfBinaryTreeBreadthFirstSearch                                                          100%
   LeetCode.Algorithms.MaximumMatchingOfPlayersWithTrainers.MaximumMatchingOfPlayersWithTrainersSorting                                                   100%
   LeetCode.Algorithms.MaximumMatrixSum.MaximumMatrixSumBruteForce                                                                                        100%
   LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses.MaximumNestingDepthOfTheParenthesesIterative                                                   100%
@@ -1132,7 +1133,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
