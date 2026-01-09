@@ -18,7 +18,7 @@ public class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch :
     IHeightOfBinaryTreeAfterSubtreeRemovalQueries
 {
     /// <summary>
-    ///     Time complexity - O(n), where n is the number of nodes and m is the number of queries
+    ///     Time complexity - O(n + m), where n is the number of nodes and m is the number of queries
     ///     Space complexity - O(n), where n is the number of nodes
     /// </summary>
     /// <param name="root"></param>

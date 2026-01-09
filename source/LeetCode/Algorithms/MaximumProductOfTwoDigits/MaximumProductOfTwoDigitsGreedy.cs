@@ -11,9 +11,7 @@
 
 namespace LeetCode.Algorithms.MaximumProductOfTwoDigits;
 
-/// <summary>
-///     https://leetcode.com/problems/maximum-product-of-two-digits/description/
-/// </summary>
+/// <inheritdoc />
 public class MaximumProductOfTwoDigitsGreedy : IMaximumProductOfTwoDigits
 {
     /// <summary>

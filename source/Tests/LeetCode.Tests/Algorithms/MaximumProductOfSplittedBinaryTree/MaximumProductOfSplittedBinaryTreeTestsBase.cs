@@ -9,34 +9,31 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
+using LeetCode.Algorithms.MaximumProductOfSplittedBinaryTree;
 using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
-namespace LeetCode.Tests.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
+namespace LeetCode.Tests.Algorithms.MaximumProductOfSplittedBinaryTree;
 
-public abstract class HeightOfBinaryTreeAfterSubtreeRemovalQueriesTestsBase<T>
-    where T : IHeightOfBinaryTreeAfterSubtreeRemovalQueries, new()
+public abstract class MaximumProductOfSplittedBinaryTreeTestsBase<T>
+    where T : IMaximumProductOfSplittedBinaryTree, new()
 {
     [TestMethod]
-    [DataRow("[1,3,4,2,null,6,5,null,null,null,null,null,7]", "[4]", "[2]")]
-    [DataRow("[5,8,9,2,1,3,7,4,6]", "[3,2,4,8]", "[3,2,3,2]")]
-    [DataRow("[1,null,5,3,null,2,4]", "[3,5,4,2,4]", "[1,0,3,3,3]")]
-    public void TreeQueries_WithSubtreeRemovedAtGivenNode_ReturnsHeightOfTreeAfterRemoval(string rootJson,
-        string queriesJson, string expectedResultJson)
+    [DataRow("[1,2,3,4,5,6]", 110)]
+    [DataRow("[1,null,2,3,4,null,null,5,6]", 90)]
+    public void MaxProduct_WithBinaryTree_ReturnsMaximumProductOfSubtreeSums(string rootJson,
+        int expectedResult)
     {
         // Arrange
         var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
-        var queries = JsonHelper<int[]>.Parse(queriesJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 
         // Act
-        var actualResult = solution.TreeQueries(root, queries);
+        var actualResult = solution.MaxProduct(root);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEqual(expectedResult, actualResult);
     }
 }
