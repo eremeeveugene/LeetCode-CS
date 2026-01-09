@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/6/2026 - 6:22:01 PM
-  Coverage date: 1/6/2026 - 6:20:57 PM - 1/6/2026 - 6:21:17 PM
+  Generated on: 1/9/2026 - 4:50:44 PM
+  Coverage date: 1/9/2026 - 4:49:40 PM - 1/9/2026 - 4:50:01 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1126
-  Files: 1126
+  Classes: 1127
+  Files: 1127
   Line coverage: 97.5%
-  Covered lines: 24905
+  Covered lines: 24937
   Uncovered lines: 631
-  Coverable lines: 25536
-  Total lines: 63532
-  Branch coverage: 95% (9326 of 9807)
-  Covered branches: 9326
-  Total branches: 9807
-  Method coverage: 99.2% (1677 of 1690)
-  Full method coverage: 87.8% (1484 of 1690)
-  Covered methods: 1677
-  Fully covered methods: 1484
-  Total methods: 1690
+  Coverable lines: 25568
+  Total lines: 63611
+  Branch coverage: 95% (9334 of 9815)
+  Covered branches: 9334
+  Total branches: 9815
+  Method coverage: 99.2% (1680 of 1693)
+  Full method coverage: 87.8% (1487 of 1693)
+  Covered methods: 1680
+  Fully covered methods: 1487
+  Total methods: 1693
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -617,6 +617,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumNumberOfWordsYouCanType.MaximumNumberOfWordsYouCanTypeLookup                                                                100%
   LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStringBuilder                                                                         100%
   LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStrings                                                                               100%
+  LeetCode.Algorithms.MaximumProductOfSplittedBinaryTree.MaximumProductOfSplittedBinaryTreeDepthFirstSearch                                              100%
   LeetCode.Algorithms.MaximumProductOfTwoDigits.MaximumProductOfTwoDigitsGreedy                                                                          100%
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArrayBruteForce                                                100%
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArraySecondMax                                                 100%
