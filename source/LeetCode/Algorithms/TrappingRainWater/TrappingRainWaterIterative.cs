@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TrappingRainWater;
 
 /// <inheritdoc />
-public class TrappingRainWaterIterative : ITrappingRainWater
+public sealed class TrappingRainWaterIterative : ITrappingRainWater
 {
     /// <summary>
     ///     Time complexity - O(n)

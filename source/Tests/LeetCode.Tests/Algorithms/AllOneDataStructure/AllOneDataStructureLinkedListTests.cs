@@ -14,4 +14,4 @@ using LeetCode.Algorithms.AllOneDataStructure;
 namespace LeetCode.Tests.Algorithms.AllOneDataStructure;
 
 [TestClass]
-public class AllOneDataStructureLinkedListTests : AllOneDataStructureTestsBase<AllOneDataStructureLinkedList>;
+public sealed class AllOneDataStructureLinkedListTests : AllOneDataStructureTestsBase<AllOneDataStructureLinkedList>;

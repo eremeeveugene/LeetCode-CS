@@ -14,7 +14,7 @@ using LeetCode.Algorithms.DesignTaskManager;
 namespace LeetCode.Tests.Algorithms.DesignTaskManager;
 
 [TestClass]
-public class DesignTaskManagerDictionaryWithPriorityQueueTests : DesignTaskManagerTestsBase
+public sealed class DesignTaskManagerDictionaryWithPriorityQueueTests : DesignTaskManagerTestsBase
 {
     protected override IDesignTaskManager GetSolution(IList<IList<int>> tasks)
     {

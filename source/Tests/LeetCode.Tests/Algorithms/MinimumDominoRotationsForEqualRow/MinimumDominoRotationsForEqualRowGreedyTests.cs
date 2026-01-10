@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumDominoRotationsForEqualRow;
 namespace LeetCode.Tests.Algorithms.MinimumDominoRotationsForEqualRow;
 
 [TestClass]
-public class MinimumDominoRotationsForEqualRowGreedyTests :
+public sealed class MinimumDominoRotationsForEqualRowGreedyTests :
     MinimumDominoRotationsForEqualRowTestsBase<MinimumDominoRotationsForEqualRowGreedy>;

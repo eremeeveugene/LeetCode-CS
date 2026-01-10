@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumScoreAfterSplittingString;
 
 /// <inheritdoc />
-public class MaximumScoreAfterSplittingStringIterative : IMaximumScoreAfterSplittingString
+public sealed class MaximumScoreAfterSplittingStringIterative : IMaximumScoreAfterSplittingString
 {
     /// <summary>
     ///     Time complexity - O(n)

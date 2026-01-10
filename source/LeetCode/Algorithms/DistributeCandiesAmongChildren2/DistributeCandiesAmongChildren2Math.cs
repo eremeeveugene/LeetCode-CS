@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DistributeCandiesAmongChildren2;
 
 /// <inheritdoc />
-public class DistributeCandiesAmongChildren2Math : IDistributeCandiesAmongChildren2
+public sealed class DistributeCandiesAmongChildren2Math : IDistributeCandiesAmongChildren2
 {
     /// <summary>
     ///     Time complexity - O(1)

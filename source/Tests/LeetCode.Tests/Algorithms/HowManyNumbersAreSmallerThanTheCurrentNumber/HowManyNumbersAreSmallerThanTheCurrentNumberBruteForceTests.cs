@@ -14,5 +14,5 @@ using LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 namespace LeetCode.Tests.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 
 [TestClass]
-public class HowManyNumbersAreSmallerThanTheCurrentNumberBruteForceTests :
+public sealed class HowManyNumbersAreSmallerThanTheCurrentNumberBruteForceTests :
     HowManyNumbersAreSmallerThanTheCurrentNumberTestsBase<HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce>;

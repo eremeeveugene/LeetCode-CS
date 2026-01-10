@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.StudentAttendanceRecord1;
 
 /// <inheritdoc />
-public class StudentAttendanceRecord1Simulation : IStudentAttendanceRecord1
+public sealed class StudentAttendanceRecord1Simulation : IStudentAttendanceRecord1
 {
     /// <summary>
     ///     Time complexity - O(n)

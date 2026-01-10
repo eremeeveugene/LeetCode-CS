@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountTheDigitsThatDivideNumber;
 
 /// <inheritdoc />
-public class CountTheDigitsThatDivideNumberIterative : ICountTheDigitsThatDivideNumber
+public sealed class CountTheDigitsThatDivideNumberIterative : ICountTheDigitsThatDivideNumber
 {
     /// <summary>
     ///     Time complexity - O(log n)

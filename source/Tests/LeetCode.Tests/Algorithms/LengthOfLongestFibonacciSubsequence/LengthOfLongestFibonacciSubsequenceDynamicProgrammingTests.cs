@@ -14,5 +14,5 @@ using LeetCode.Algorithms.LengthOfLongestFibonacciSubsequence;
 namespace LeetCode.Tests.Algorithms.LengthOfLongestFibonacciSubsequence;
 
 [TestClass]
-public class LengthOfLongestFibonacciSubsequenceDynamicProgrammingTests :
+public sealed class LengthOfLongestFibonacciSubsequenceDynamicProgrammingTests :
     LengthOfLongestFibonacciSubsequenceTestsBase<LengthOfLongestFibonacciSubsequenceDynamicProgramming>;

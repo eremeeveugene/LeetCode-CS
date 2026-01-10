@@ -14,4 +14,4 @@ using LeetCode.Algorithms.IslandPerimeter;
 namespace LeetCode.Tests.Algorithms.IslandPerimeter;
 
 [TestClass]
-public class IslandPerimeterIterativeTests : IslandPerimeterTestsBase<IslandPerimeterIterative>;
+public sealed class IslandPerimeterIterativeTests : IslandPerimeterTestsBase<IslandPerimeterIterative>;

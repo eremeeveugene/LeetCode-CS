@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ClimbingStairs;
 namespace LeetCode.Tests.Algorithms.ClimbingStairs;
 
 [TestClass]
-public class ClimbingStairsIterativeFibonacciTests : ClimbingStairsTestsBase<ClimbingStairsIterativeFibonacci>;
+public sealed class ClimbingStairsIterativeFibonacciTests : ClimbingStairsTestsBase<ClimbingStairsIterativeFibonacci>;

@@ -14,4 +14,4 @@ using LeetCode.Concurrency.PrintInOrder;
 namespace LeetCode.Tests.Concurrency.PrintInOrder;
 
 [TestClass]
-public class PrintInOrderAutoResetEventTests : PrintInOrderTestsBase<PrintInOrderAutoResetEvent>;
+public sealed class PrintInOrderAutoResetEventTests : PrintInOrderTestsBase<PrintInOrderAutoResetEvent>;

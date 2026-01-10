@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SingleNumber;
 
 /// <inheritdoc />
-public class SingleNumberXor : ISingleNumber
+public sealed class SingleNumberXor : ISingleNumber
 {
     /// <summary>
     ///     Time complexity - O(n)

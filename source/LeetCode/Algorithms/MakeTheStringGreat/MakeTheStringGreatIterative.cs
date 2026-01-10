@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MakeTheStringGreat;
 
 /// <inheritdoc />
-public class MakeTheStringGreatIterative : IMakeTheStringGreat
+public sealed class MakeTheStringGreatIterative : IMakeTheStringGreat
 {
     /// <summary>
     ///     Time complexity - O(n^2)

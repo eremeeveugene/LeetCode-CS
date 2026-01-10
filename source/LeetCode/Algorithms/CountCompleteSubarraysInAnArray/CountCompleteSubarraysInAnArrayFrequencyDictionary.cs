@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountCompleteSubarraysInAnArray;
 
 /// <inheritdoc />
-public class CountCompleteSubarraysInAnArrayFrequencyDictionary : ICountCompleteSubarraysInAnArray
+public sealed class CountCompleteSubarraysInAnArrayFrequencyDictionary : ICountCompleteSubarraysInAnArray
 {
     /// <summary>
     ///     Time complexity - O(n)

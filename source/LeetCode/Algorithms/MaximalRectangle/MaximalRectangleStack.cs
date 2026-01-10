@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximalRectangle;
 
 /// <inheritdoc />
-public class MaximalRectangleStack : IMaximalRectangle
+public sealed class MaximalRectangleStack : IMaximalRectangle
 {
     /// <summary>
     ///     Time complexity - O(n * m)

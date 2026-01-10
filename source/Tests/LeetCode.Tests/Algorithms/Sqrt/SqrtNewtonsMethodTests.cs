@@ -14,4 +14,4 @@ using LeetCode.Algorithms.Sqrt;
 namespace LeetCode.Tests.Algorithms.Sqrt;
 
 [TestClass]
-public class SqrtNewtonsMethodTests : SqrtTestsBase<SqrtNewtonsMethod>;
+public sealed class SqrtNewtonsMethodTests : SqrtTestsBase<SqrtNewtonsMethod>;

@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.LongestHappyString;
 
 /// <inheritdoc />
-public class LongestHappyStringGreedy : ILongestHappyString
+public sealed class LongestHappyStringGreedy : ILongestHappyString
 {
     /// <summary>
     ///     Time complexity - O(a + b + c)

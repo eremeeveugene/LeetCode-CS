@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MatrixDiagonalSum;
 
 /// <inheritdoc />
-public class MatrixDiagonalSumIterative : IMatrixDiagonalSum
+public sealed class MatrixDiagonalSumIterative : IMatrixDiagonalSum
 {
     /// <summary>
     ///     Time complexity - O(n)

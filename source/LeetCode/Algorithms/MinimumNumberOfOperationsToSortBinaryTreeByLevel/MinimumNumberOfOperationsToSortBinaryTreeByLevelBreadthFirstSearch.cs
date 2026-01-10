@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel;
 
 /// <inheritdoc />
-public class MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch :
+public sealed class MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch :
     IMinimumNumberOfOperationsToSortBinaryTreeByLevel
 {
     /// <summary>

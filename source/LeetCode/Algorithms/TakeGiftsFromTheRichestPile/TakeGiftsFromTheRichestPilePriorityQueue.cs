@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TakeGiftsFromTheRichestPile;
 
 /// <inheritdoc />
-public class TakeGiftsFromTheRichestPilePriorityQueue : ITakeGiftsFromTheRichestPile
+public sealed class TakeGiftsFromTheRichestPilePriorityQueue : ITakeGiftsFromTheRichestPile
 {
     /// <summary>
     ///     Time complexity - O((n + k) * log n)

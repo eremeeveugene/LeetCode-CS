@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumRecolorsToGetKConsecutiveBlackBlocks;
 namespace LeetCode.Tests.Algorithms.MinimumRecolorsToGetKConsecutiveBlackBlocks;
 
 [TestClass]
-public class MinimumRecolorsToGetKConsecutiveBlackBlocksSlidingWindowTests :
+public sealed class MinimumRecolorsToGetKConsecutiveBlackBlocksSlidingWindowTests :
     MinimumRecolorsToGetKConsecutiveBlackBlocksTestsBase<MinimumRecolorsToGetKConsecutiveBlackBlocksSlidingWindow>;

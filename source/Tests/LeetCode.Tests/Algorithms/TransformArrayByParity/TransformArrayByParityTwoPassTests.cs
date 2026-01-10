@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TransformArrayByParity;
 namespace LeetCode.Tests.Algorithms.TransformArrayByParity;
 
 [TestClass]
-public class TransformArrayByParityTwoPassTests : TransformArrayByParityTestsBase<TransformArrayByParityTwoPass>;
+public sealed class TransformArrayByParityTwoPassTests : TransformArrayByParityTestsBase<TransformArrayByParityTwoPass>;

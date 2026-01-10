@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FirstUniqueCharacterInString;
 
 /// <inheritdoc />
-public class FirstUniqueCharacterInStringIterative : IFirstUniqueCharacterInString
+public sealed class FirstUniqueCharacterInStringIterative : IFirstUniqueCharacterInString
 {
     /// <summary>
     ///     Time complexity - O(n)

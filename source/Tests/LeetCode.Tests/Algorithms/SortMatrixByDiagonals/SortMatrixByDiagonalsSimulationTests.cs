@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SortMatrixByDiagonals;
 namespace LeetCode.Tests.Algorithms.SortMatrixByDiagonals;
 
 [TestClass]
-public class SortMatrixByDiagonalsSimulationTests : SortMatrixByDiagonalsTestsBase<SortMatrixByDiagonalsSimulation>;
+public sealed class SortMatrixByDiagonalsSimulationTests : SortMatrixByDiagonalsTestsBase<SortMatrixByDiagonalsSimulation>;

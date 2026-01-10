@@ -14,5 +14,5 @@ using LeetCode.Algorithms.IntersectionOfTwoLinkedLists;
 namespace LeetCode.Tests.Algorithms.IntersectionOfTwoLinkedLists;
 
 [TestClass]
-public class IntersectionOfTwoLinkedListsBruteForceTests : IntersectionOfTwoLinkedListsTestsBase<
+public sealed class IntersectionOfTwoLinkedListsBruteForceTests : IntersectionOfTwoLinkedListsTestsBase<
     IntersectionOfTwoLinkedListsBruteForce>;

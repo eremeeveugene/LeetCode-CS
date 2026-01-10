@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DivideArrayIntoEqualPairs;
 
 /// <inheritdoc />
-public class DivideArrayIntoEqualPairsArray : IDivideArrayIntoEqualPairs
+public sealed class DivideArrayIntoEqualPairsArray : IDivideArrayIntoEqualPairs
 {
     /// <summary>
     ///     Time complexity - O(n)

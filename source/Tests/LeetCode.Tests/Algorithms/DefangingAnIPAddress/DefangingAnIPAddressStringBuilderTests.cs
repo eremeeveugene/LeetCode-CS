@@ -14,4 +14,4 @@ using LeetCode.Algorithms.DefangingAnIPAddress;
 namespace LeetCode.Tests.Algorithms.DefangingAnIPAddress;
 
 [TestClass]
-public class DefangingAnIPAddressStringBuilderTests : DefangingAnIPAddressTestsBase<DefangingAnIPAddressStringBuilder>;
+public sealed class DefangingAnIPAddressStringBuilderTests : DefangingAnIPAddressTestsBase<DefangingAnIPAddressStringBuilder>;

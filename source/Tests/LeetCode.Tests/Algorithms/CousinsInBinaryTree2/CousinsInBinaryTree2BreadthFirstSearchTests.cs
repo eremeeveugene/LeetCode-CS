@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CousinsInBinaryTree2;
 namespace LeetCode.Tests.Algorithms.CousinsInBinaryTree2;
 
 [TestClass]
-public class CousinsInBinaryTree2BreadthFirstSearchTests :
+public sealed class CousinsInBinaryTree2BreadthFirstSearchTests :
     CousinsInBinaryTree2TestsBase<CousinsInBinaryTree2BreadthFirstSearch>;

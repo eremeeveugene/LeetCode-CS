@@ -14,4 +14,4 @@ using LeetCode.Algorithms.LongestPalindrome;
 namespace LeetCode.Tests.Algorithms.LongestPalindrome;
 
 [TestClass]
-public class LongestPalindromeDictionaryTests : LongestPalindromeTestsBase<LongestPalindromeDictionary>;
+public sealed class LongestPalindromeDictionaryTests : LongestPalindromeTestsBase<LongestPalindromeDictionary>;

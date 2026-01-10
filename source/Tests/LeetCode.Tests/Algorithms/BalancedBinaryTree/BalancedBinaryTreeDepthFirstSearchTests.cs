@@ -14,4 +14,4 @@ using LeetCode.Algorithms.BalancedBinaryTree;
 namespace LeetCode.Tests.Algorithms.BalancedBinaryTree;
 
 [TestClass]
-public class BalancedBinaryTreeDepthFirstSearchTests : BalancedBinaryTreeTestsBase<BalancedBinaryTreeDepthFirstSearch>;
+public sealed class BalancedBinaryTreeDepthFirstSearchTests : BalancedBinaryTreeTestsBase<BalancedBinaryTreeDepthFirstSearch>;

@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.MaximumDepthOfBinaryTree;
 
 /// <inheritdoc />
-public class MaximumDepthOfBinaryTreeDepthFirstSearch : IMaximumDepthOfBinaryTree
+public sealed class MaximumDepthOfBinaryTreeDepthFirstSearch : IMaximumDepthOfBinaryTree
 {
     /// <summary>
     ///     Time complexity - O(n)

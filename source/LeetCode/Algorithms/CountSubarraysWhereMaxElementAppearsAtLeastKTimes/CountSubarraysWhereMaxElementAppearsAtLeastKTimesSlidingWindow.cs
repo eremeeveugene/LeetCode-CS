@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes;
 
 /// <inheritdoc />
-public class CountSubarraysWhereMaxElementAppearsAtLeastKTimesSlidingWindow :
+public sealed class CountSubarraysWhereMaxElementAppearsAtLeastKTimesSlidingWindow :
     ICountSubarraysWhereMaxElementAppearsAtLeastKTimes
 {
     /// <summary>

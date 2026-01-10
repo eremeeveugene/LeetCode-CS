@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimizeTheMaximumDifferenceOfPairs;
 
 /// <inheritdoc />
-public class MinimizeTheMaximumDifferenceOfPairsBinarySearch : IMinimizeTheMaximumDifferenceOfPairs
+public sealed class MinimizeTheMaximumDifferenceOfPairsBinarySearch : IMinimizeTheMaximumDifferenceOfPairs
 {
     /// <summary>
     ///     Time complexity - O(n log n + n log R), where R = max(nums) - min(nums)

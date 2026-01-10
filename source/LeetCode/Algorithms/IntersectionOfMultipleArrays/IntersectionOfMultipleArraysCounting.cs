@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.IntersectionOfMultipleArrays;
 
 /// <inheritdoc />
-public class IntersectionOfMultipleArraysCounting : IIntersectionOfMultipleArrays
+public sealed class IntersectionOfMultipleArraysCounting : IIntersectionOfMultipleArrays
 {
     /// <summary>
     ///     Time complexity - O(n * m), where n is the number of arrays in nums and m is the length of arrays in nums

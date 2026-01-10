@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumTotalDamageWithSpellCasting;
 
 /// <inheritdoc />
-public class MaximumTotalDamageWithSpellCastingDynamicProgrammingWithBinarySearch : IMaximumTotalDamageWithSpellCasting
+public sealed class MaximumTotalDamageWithSpellCastingDynamicProgrammingWithBinarySearch : IMaximumTotalDamageWithSpellCasting
 {
     /// <summary>
     ///     Time complexity - O(n log n), where n is the length of power

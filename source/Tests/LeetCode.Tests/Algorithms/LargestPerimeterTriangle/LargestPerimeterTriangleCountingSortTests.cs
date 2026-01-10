@@ -14,5 +14,5 @@ using LeetCode.Algorithms.LargestPerimeterTriangle;
 namespace LeetCode.Tests.Algorithms.LargestPerimeterTriangle;
 
 [TestClass]
-public class LargestPerimeterTriangleCountingSortTests :
+public sealed class LargestPerimeterTriangleCountingSortTests :
     LargestPerimeterTriangleTestsBase<LargestPerimeterTriangleCountingSort>;

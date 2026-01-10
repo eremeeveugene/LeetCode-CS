@@ -14,4 +14,4 @@ using LeetCode.Algorithms.BaseballGame;
 namespace LeetCode.Tests.Algorithms.BaseballGame;
 
 [TestClass]
-public class BaseballGameIterativeTests : BaseballGameTestsBase<BaseballGameIterative>;
+public sealed class BaseballGameIterativeTests : BaseballGameTestsBase<BaseballGameIterative>;

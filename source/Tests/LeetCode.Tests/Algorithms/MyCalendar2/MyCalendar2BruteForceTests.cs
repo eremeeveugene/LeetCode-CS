@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MyCalendar2;
 namespace LeetCode.Tests.Algorithms.MyCalendar2;
 
 [TestClass]
-public class MyCalendar2BruteForceTests : MyCalendar2TestsBase<MyCalendar2BruteForce>;
+public sealed class MyCalendar2BruteForceTests : MyCalendar2TestsBase<MyCalendar2BruteForce>;

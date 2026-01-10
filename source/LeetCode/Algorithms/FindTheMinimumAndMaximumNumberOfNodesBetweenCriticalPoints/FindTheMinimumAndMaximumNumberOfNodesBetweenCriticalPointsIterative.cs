@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints;
 
 /// <inheritdoc />
-public class FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsIterative :
+public sealed class FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsIterative :
     IFindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints
 {
     /// <summary>

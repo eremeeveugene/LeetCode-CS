@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons;
 
 /// <inheritdoc />
-public class MinimumNumberOfArrowsToBurstBalloonsIterative : IMinimumNumberOfArrowsToBurstBalloons
+public sealed class MinimumNumberOfArrowsToBurstBalloonsIterative : IMinimumNumberOfArrowsToBurstBalloons
 {
     /// <summary>
     ///     Time complexity - O(n log n)

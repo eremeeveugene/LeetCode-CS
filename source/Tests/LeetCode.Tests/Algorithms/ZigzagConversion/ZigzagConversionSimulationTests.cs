@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ZigzagConversion;
 namespace LeetCode.Tests.Algorithms.ZigzagConversion;
 
 [TestClass]
-public class ZigzagConversionSimulationTests : ZigzagConversionTestsBase<ZigzagConversionSimulation>;
+public sealed class ZigzagConversionSimulationTests : ZigzagConversionTestsBase<ZigzagConversionSimulation>;

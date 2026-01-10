@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximizeHappinessOfSelectedChildren;
 
 /// <inheritdoc />
-public class MaximizeHappinessOfSelectedChildrenIterative : IMaximizeHappinessOfSelectedChildren
+public sealed class MaximizeHappinessOfSelectedChildrenIterative : IMaximizeHappinessOfSelectedChildren
 {
     /// <summary>
     ///     Time complexity - O(n log n)

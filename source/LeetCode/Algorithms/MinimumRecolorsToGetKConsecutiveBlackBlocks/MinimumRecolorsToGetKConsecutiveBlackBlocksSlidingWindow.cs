@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumRecolorsToGetKConsecutiveBlackBlocks;
 
 /// <inheritdoc />
-public class MinimumRecolorsToGetKConsecutiveBlackBlocksSlidingWindow : IMinimumRecolorsToGetKConsecutiveBlackBlocks
+public sealed class MinimumRecolorsToGetKConsecutiveBlackBlocksSlidingWindow : IMinimumRecolorsToGetKConsecutiveBlackBlocks
 {
     /// <summary>
     ///     Time complexity - O(n)

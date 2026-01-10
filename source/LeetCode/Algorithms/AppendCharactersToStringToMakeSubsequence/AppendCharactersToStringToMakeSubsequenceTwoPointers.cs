@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.AppendCharactersToStringToMakeSubsequence;
 
 /// <inheritdoc />
-public class AppendCharactersToStringToMakeSubsequenceTwoPointers : IAppendCharactersToStringToMakeSubsequence
+public sealed class AppendCharactersToStringToMakeSubsequenceTwoPointers : IAppendCharactersToStringToMakeSubsequence
 {
     /// <summary>
     ///     Time complexity - O(n + m)

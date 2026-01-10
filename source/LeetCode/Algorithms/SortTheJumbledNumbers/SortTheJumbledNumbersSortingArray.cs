@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SortTheJumbledNumbers;
 
 /// <inheritdoc />
-public class SortTheJumbledNumbersSortingArray : ISortTheJumbledNumbers
+public sealed class SortTheJumbledNumbersSortingArray : ISortTheJumbledNumbers
 {
     /// <summary>
     ///     Time complexity - O(n log n)

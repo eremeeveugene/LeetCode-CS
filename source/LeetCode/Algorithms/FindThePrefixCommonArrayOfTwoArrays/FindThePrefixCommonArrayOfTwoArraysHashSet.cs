@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindThePrefixCommonArrayOfTwoArrays;
 
 /// <inheritdoc />
-public class FindThePrefixCommonArrayOfTwoArraysHashSet : IFindThePrefixCommonArrayOfTwoArrays
+public sealed class FindThePrefixCommonArrayOfTwoArraysHashSet : IFindThePrefixCommonArrayOfTwoArrays
 {
     /// <summary>
     ///     Time complexity - O(n)

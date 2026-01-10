@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfNAndItsDoubleExist;
 
 /// <inheritdoc />
-public class CheckIfNAndItsDoubleExistHashSet : ICheckIfNAndItsDoubleExist
+public sealed class CheckIfNAndItsDoubleExistHashSet : ICheckIfNAndItsDoubleExist
 {
     /// <summary>
     ///     Time complexity - O(n)

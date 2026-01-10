@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CountTotalNumberOfColoredCells;
 namespace LeetCode.Tests.Algorithms.CountTotalNumberOfColoredCells;
 
 [TestClass]
-public class CountTotalNumberOfColoredCellsMathTests :
+public sealed class CountTotalNumberOfColoredCellsMathTests :
     CountTotalNumberOfColoredCellsTestSBase<CountTotalNumberOfColoredCellsMath>;

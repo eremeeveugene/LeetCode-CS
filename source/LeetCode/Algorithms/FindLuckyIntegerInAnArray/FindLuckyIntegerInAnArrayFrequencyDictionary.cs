@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindLuckyIntegerInAnArray;
 
 /// <inheritdoc />
-public class FindLuckyIntegerInAnArrayFrequencyDictionary : IFindLuckyIntegerInAnArray
+public sealed class FindLuckyIntegerInAnArrayFrequencyDictionary : IFindLuckyIntegerInAnArray
 {
     /// <summary>
     ///     Time complexity - O(n)

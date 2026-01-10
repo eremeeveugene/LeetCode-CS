@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumMatchingOfPlayersWithTrainers;
 
 /// <inheritdoc />
-public class MaximumMatchingOfPlayersWithTrainersSorting : IMaximumMatchingOfPlayersWithTrainers
+public sealed class MaximumMatchingOfPlayersWithTrainersSorting : IMaximumMatchingOfPlayersWithTrainers
 {
     /// <summary>
     ///     Time complexity - O(n log n + m log m)

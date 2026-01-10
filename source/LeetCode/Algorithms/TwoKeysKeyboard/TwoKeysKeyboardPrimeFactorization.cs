@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TwoKeysKeyboard;
 
 /// <inheritdoc />
-public class TwoKeysKeyboardPrimeFactorization : ITwoKeysKeyboard
+public sealed class TwoKeysKeyboardPrimeFactorization : ITwoKeysKeyboard
 {
     /// <summary>
     ///     Time complexity - O(n)

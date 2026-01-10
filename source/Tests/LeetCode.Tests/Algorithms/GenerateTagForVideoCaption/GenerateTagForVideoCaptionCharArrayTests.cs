@@ -14,5 +14,5 @@ using LeetCode.Algorithms.GenerateTagForVideoCaption;
 namespace LeetCode.Tests.Algorithms.GenerateTagForVideoCaption;
 
 [TestClass]
-public class GenerateTagForVideoCaptionCharArrayTests :
+public sealed class GenerateTagForVideoCaptionCharArrayTests :
     GenerateTagForVideoCaptionTestsBase<GenerateTagForVideoCaptionCharArray>;

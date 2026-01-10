@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FlipEquivalentBinaryTrees;
 namespace LeetCode.Tests.Algorithms.FlipEquivalentBinaryTrees;
 
 [TestClass]
-public class FlipEquivalentBinaryTreesRecursiveTests :
+public sealed class FlipEquivalentBinaryTreesRecursiveTests :
     FlipEquivalentBinaryTreesTestsBase<FlipEquivalentBinaryTreesRecursive>;

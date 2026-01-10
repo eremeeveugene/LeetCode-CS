@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.OpenTheLock;
 
 /// <inheritdoc />
-public class OpenTheLockBreadthFirstSearch : IOpenTheLock
+public sealed class OpenTheLockBreadthFirstSearch : IOpenTheLock
 {
     private const string Start = "0000";
 

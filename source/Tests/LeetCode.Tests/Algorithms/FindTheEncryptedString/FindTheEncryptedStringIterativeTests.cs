@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FindTheEncryptedString;
 namespace LeetCode.Tests.Algorithms.FindTheEncryptedString;
 
 [TestClass]
-public class FindTheEncryptedStringIterativeTests : FindTheEncryptedStringTestsBase<FindTheEncryptedStringIterative>;
+public sealed class FindTheEncryptedStringIterativeTests : FindTheEncryptedStringTestsBase<FindTheEncryptedStringIterative>;

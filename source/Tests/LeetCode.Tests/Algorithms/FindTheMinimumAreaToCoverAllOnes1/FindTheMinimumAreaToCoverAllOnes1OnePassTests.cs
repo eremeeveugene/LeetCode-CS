@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindTheMinimumAreaToCoverAllOnes1;
 namespace LeetCode.Tests.Algorithms.FindTheMinimumAreaToCoverAllOnes1;
 
 [TestClass]
-public class FindTheMinimumAreaToCoverAllOnes1OnePassTests :
+public sealed class FindTheMinimumAreaToCoverAllOnes1OnePassTests :
     FindTheMinimumAreaToCoverAllOnes1TestsBase<FindTheMinimumAreaToCoverAllOnes1OnePass>;

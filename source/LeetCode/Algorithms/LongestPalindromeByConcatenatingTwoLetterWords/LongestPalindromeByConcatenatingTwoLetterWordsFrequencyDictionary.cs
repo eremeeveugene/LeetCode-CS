@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LongestPalindromeByConcatenatingTwoLetterWords;
 
 /// <inheritdoc />
-public class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyDictionary :
+public sealed class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyDictionary :
     ILongestPalindromeByConcatenatingTwoLetterWords
 {
     /// <summary>

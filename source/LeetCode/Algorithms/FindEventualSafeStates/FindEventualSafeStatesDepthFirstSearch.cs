@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindEventualSafeStates;
 
 /// <inheritdoc />
-public class FindEventualSafeStatesDepthFirstSearch : IFindEventualSafeStates
+public sealed class FindEventualSafeStatesDepthFirstSearch : IFindEventualSafeStates
 {
     /// <summary>
     ///     Time complexity - O(n + E), where n is a number of nodes, E is a number of edges

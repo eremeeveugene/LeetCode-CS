@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ClosestPrimeNumbersInRange;
 
 /// <inheritdoc />
-public class ClosestPrimeNumbersInRangeSieveOfEratosthenes : IClosestPrimeNumbersInRange
+public sealed class ClosestPrimeNumbersInRangeSieveOfEratosthenes : IClosestPrimeNumbersInRange
 {
     /// <summary>
     ///     Time complexity - O(R * log(log R))

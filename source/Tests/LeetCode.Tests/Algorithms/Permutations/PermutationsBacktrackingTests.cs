@@ -14,4 +14,4 @@ using LeetCode.Algorithms.Permutations;
 namespace LeetCode.Tests.Algorithms.Permutations;
 
 [TestClass]
-public class PermutationsBacktrackingTests : PermutationsTestsBase<PermutationsBacktracking>;
+public sealed class PermutationsBacktrackingTests : PermutationsTestsBase<PermutationsBacktracking>;

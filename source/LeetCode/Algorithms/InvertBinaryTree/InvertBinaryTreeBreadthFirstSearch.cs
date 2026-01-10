@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.InvertBinaryTree;
 
 /// <inheritdoc />
-public class InvertBinaryTreeBreadthFirstSearch : IInvertBinaryTree
+public sealed class InvertBinaryTreeBreadthFirstSearch : IInvertBinaryTree
 {
     /// <summary>
     ///     Time complexity - O(n)

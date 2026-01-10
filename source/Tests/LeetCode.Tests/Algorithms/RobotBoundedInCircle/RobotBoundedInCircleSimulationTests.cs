@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RobotBoundedInCircle;
 namespace LeetCode.Tests.Algorithms.RobotBoundedInCircle;
 
 [TestClass]
-public class RobotBoundedInCircleSimulationTests : RobotBoundedInCircleTestsBase<RobotBoundedInCircleSimulation>;
+public sealed class RobotBoundedInCircleSimulationTests : RobotBoundedInCircleTestsBase<RobotBoundedInCircleSimulation>;

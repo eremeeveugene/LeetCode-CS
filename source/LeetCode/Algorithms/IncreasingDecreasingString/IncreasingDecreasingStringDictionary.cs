@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.IncreasingDecreasingString;
 
 /// <inheritdoc />
-public class IncreasingDecreasingStringDictionary : IIncreasingDecreasingString
+public sealed class IncreasingDecreasingStringDictionary : IIncreasingDecreasingString
 {
     /// <summary>
     ///     Time complexity - O(n * k * log k), where n is the length of the string and k is the number of unique characters

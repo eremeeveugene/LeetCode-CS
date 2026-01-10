@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RepeatedSubstringPattern;
 
 /// <inheritdoc />
-public class RepeatedSubstringPatternIterative : IRepeatedSubstringPattern
+public sealed class RepeatedSubstringPatternIterative : IRepeatedSubstringPattern
 {
     /// <summary>
     ///     Time complexity - O(n^2)

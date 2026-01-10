@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumSwapsToGroupAll1Together2;
 
 /// <inheritdoc />
-public class MinimumSwapsToGroupAll1Together2SlidingWindow : IMinimumSwapsToGroupAll1Together2
+public sealed class MinimumSwapsToGroupAll1Together2SlidingWindow : IMinimumSwapsToGroupAll1Together2
 {
     /// <summary>
     ///     Time complexity - O(n)

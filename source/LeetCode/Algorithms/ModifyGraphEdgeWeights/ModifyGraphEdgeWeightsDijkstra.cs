@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ModifyGraphEdgeWeights;
 
 /// <inheritdoc />
-public class ModifyGraphEdgeWeightsDijkstra : IModifyGraphEdgeWeights
+public sealed class ModifyGraphEdgeWeightsDijkstra : IModifyGraphEdgeWeights
 {
     /// <summary>
     ///     Time complexity - O((n + m) log n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfWaysToSplitArray;
 
 /// <inheritdoc />
-public class NumberOfWaysToSplitArrayPrefixSum : INumberOfWaysToSplitArray
+public sealed class NumberOfWaysToSplitArrayPrefixSum : INumberOfWaysToSplitArray
 {
     /// <summary>
     ///     Time complexity - O(n)

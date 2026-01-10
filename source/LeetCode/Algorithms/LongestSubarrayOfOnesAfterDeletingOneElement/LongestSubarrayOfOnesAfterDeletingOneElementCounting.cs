@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LongestSubarrayOfOnesAfterDeletingOneElement;
 
 /// <inheritdoc />
-public class LongestSubarrayOfOnesAfterDeletingOneElementCounting : ILongestSubarrayOf1AfterDeletingOneElement
+public sealed class LongestSubarrayOfOnesAfterDeletingOneElementCounting : ILongestSubarrayOf1AfterDeletingOneElement
 {
     /// <summary>
     ///     Time complexity - O(n)

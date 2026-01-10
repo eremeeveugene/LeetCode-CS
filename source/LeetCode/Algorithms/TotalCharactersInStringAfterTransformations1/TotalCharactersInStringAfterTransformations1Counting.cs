@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TotalCharactersInStringAfterTransformations1;
 
 /// <inheritdoc />
-public class TotalCharactersInStringAfterTransformations1Counting : ITotalCharactersInStringAfterTransformations1
+public sealed class TotalCharactersInStringAfterTransformations1Counting : ITotalCharactersInStringAfterTransformations1
 {
     private const int Modulo = 1_000_000_007;
     private const byte AlphabetLength = 'z' - 'a' + 1;

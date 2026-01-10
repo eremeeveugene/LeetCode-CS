@@ -14,4 +14,4 @@ using LeetCode.Algorithms.IsomorphicStrings;
 namespace LeetCode.Tests.Algorithms.IsomorphicStrings;
 
 [TestClass]
-public class IsomorphicStringsDictionaryTests : IsomorphicStringsTestsBase<IsomorphicStringsDictionary>;
+public sealed class IsomorphicStringsDictionaryTests : IsomorphicStringsTestsBase<IsomorphicStringsDictionary>;

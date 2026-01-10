@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TaskScheduler;
 namespace LeetCode.Tests.Algorithms.TaskScheduler;
 
 [TestClass]
-public class TaskSchedulerDictionaryTests : TaskSchedulerTestsBase<TaskSchedulerDictionary>;
+public sealed class TaskSchedulerDictionaryTests : TaskSchedulerTestsBase<TaskSchedulerDictionary>;

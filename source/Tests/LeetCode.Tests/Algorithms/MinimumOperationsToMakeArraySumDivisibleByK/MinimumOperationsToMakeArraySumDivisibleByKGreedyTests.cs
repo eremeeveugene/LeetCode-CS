@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumOperationsToMakeArraySumDivisibleByK;
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToMakeArraySumDivisibleByK;
 
 [TestClass]
-public class MinimumOperationsToMakeArraySumDivisibleByKGreedyTests :
+public sealed class MinimumOperationsToMakeArraySumDivisibleByKGreedyTests :
     MinimumOperationsToMakeArraySumDivisibleByKTestsBase<MinimumOperationsToMakeArraySumDivisibleByKGreedy>;

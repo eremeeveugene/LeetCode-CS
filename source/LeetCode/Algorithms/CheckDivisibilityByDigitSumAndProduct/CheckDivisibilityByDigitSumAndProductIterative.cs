@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckDivisibilityByDigitSumAndProduct;
 
 /// <inheritdoc />
-public class CheckDivisibilityByDigitSumAndProductIterative : ICheckDivisibilityByDigitSumAndProduct
+public sealed class CheckDivisibilityByDigitSumAndProductIterative : ICheckDivisibilityByDigitSumAndProduct
 {
     /// <summary>
     ///     Time complexity - O(n)

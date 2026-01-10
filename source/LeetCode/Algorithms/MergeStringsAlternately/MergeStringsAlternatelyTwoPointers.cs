@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.MergeStringsAlternately;
 
 /// <inheritdoc />
-public class MergeStringsAlternatelyTwoPointers : IMergeStringsAlternately
+public sealed class MergeStringsAlternatelyTwoPointers : IMergeStringsAlternately
 {
     /// <summary>
     ///     Time complexity - O(m + n)

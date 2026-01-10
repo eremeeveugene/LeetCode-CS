@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ApplyDiscountToPrices;
 namespace LeetCode.Tests.Algorithms.ApplyDiscountToPrices;
 
 [TestClass]
-public class ApplyDiscountToPricesIterativeTests : ApplyDiscountToPricesTestsBase<ApplyDiscountToPricesIterative>;
+public sealed class ApplyDiscountToPricesIterativeTests : ApplyDiscountToPricesTestsBase<ApplyDiscountToPricesIterative>;

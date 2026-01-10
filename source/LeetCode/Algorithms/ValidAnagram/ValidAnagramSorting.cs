@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ValidAnagram;
 
 /// <inheritdoc />
-public class ValidAnagramSorting : IValidAnagram
+public sealed class ValidAnagramSorting : IValidAnagram
 {
     /// <summary>
     ///     Time complexity - O(n log n  + m log m)

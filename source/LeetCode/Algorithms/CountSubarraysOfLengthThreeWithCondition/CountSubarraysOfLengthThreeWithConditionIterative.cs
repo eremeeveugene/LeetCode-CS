@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountSubarraysOfLengthThreeWithCondition;
 
 /// <inheritdoc />
-public class CountSubarraysOfLengthThreeWithConditionIterative : ICountSubarraysOfLengthThreeWithCondition
+public sealed class CountSubarraysOfLengthThreeWithConditionIterative : ICountSubarraysOfLengthThreeWithCondition
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation;
 
 /// <inheritdoc />
-public class MaximumBeautyOfAnArrayAfterApplyingOperationLineSweep : IMaximumBeautyOfAnArrayAfterApplyingOperation
+public sealed class MaximumBeautyOfAnArrayAfterApplyingOperationLineSweep : IMaximumBeautyOfAnArrayAfterApplyingOperation
 {
     /// <summary>
     ///     Time complexity - O(n log n)

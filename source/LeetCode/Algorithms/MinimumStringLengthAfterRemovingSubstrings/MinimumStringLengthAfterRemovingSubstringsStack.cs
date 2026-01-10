@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumStringLengthAfterRemovingSubstrings;
 
 /// <inheritdoc />
-public class MinimumStringLengthAfterRemovingSubstringsStack : IMinimumStringLengthAfterRemovingSubstrings
+public sealed class MinimumStringLengthAfterRemovingSubstringsStack : IMinimumStringLengthAfterRemovingSubstrings
 {
     /// <summary>
     ///     Time complexity - O(n)

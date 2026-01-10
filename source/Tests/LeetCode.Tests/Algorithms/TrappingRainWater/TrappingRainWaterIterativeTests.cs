@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TrappingRainWater;
 namespace LeetCode.Tests.Algorithms.TrappingRainWater;
 
 [TestClass]
-public class TrappingRainWaterIterativeTests : TrappingRainWaterTestsBase<TrappingRainWaterIterative>;
+public sealed class TrappingRainWaterIterativeTests : TrappingRainWaterTestsBase<TrappingRainWaterIterative>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FindUniqueBinaryString;
 namespace LeetCode.Tests.Algorithms.FindUniqueBinaryString;
 
 [TestClass]
-public class FindUniqueBinaryStringIterativeTests : FindUniqueBinaryStringTestsBase<FindUniqueBinaryStringIterative>;
+public sealed class FindUniqueBinaryStringIterativeTests : FindUniqueBinaryStringTestsBase<FindUniqueBinaryStringIterative>;

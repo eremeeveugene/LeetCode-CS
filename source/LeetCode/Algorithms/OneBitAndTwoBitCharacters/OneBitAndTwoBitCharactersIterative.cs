@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.OneBitAndTwoBitCharacters;
 
 /// <inheritdoc />
-public class OneBitAndTwoBitCharactersIterative : IOneBitAndTwoBitCharacters
+public sealed class OneBitAndTwoBitCharactersIterative : IOneBitAndTwoBitCharacters
 {
     /// <summary>
     ///     Time complexity - O(n)

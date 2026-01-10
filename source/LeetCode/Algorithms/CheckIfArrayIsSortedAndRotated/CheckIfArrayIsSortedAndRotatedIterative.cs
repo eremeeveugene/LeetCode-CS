@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfArrayIsSortedAndRotated;
 
 /// <inheritdoc />
-public class CheckIfArrayIsSortedAndRotatedIterative : ICheckIfArrayIsSortedAndRotated
+public sealed class CheckIfArrayIsSortedAndRotatedIterative : ICheckIfArrayIsSortedAndRotated
 {
     /// <summary>
     ///     Time complexity - O(n)

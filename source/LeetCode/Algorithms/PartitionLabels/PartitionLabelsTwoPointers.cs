@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PartitionLabels;
 
 /// <inheritdoc />
-public class PartitionLabelsTwoPointers : IPartitionLabels
+public sealed class PartitionLabelsTwoPointers : IPartitionLabels
 {
     /// <summary>
     ///     Time complexity - O(n)

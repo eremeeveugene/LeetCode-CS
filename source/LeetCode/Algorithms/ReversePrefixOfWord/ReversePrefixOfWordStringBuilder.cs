@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ReversePrefixOfWord;
 
 /// <inheritdoc />
-public class ReversePrefixOfWordStringBuilder : IReversePrefixOfWord
+public sealed class ReversePrefixOfWordStringBuilder : IReversePrefixOfWord
 {
     /// <summary>
     ///     Time complexity - O(n)

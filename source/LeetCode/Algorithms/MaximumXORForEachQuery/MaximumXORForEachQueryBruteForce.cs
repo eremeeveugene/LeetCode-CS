@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumXORForEachQuery;
 
 /// <inheritdoc />
-public class MaximumXORForEachQueryBruteForce : IMaximumXORForEachQuery
+public sealed class MaximumXORForEachQueryBruteForce : IMaximumXORForEachQuery
 {
     /// <summary>
     ///     Time complexity - O(n^2 + n * m)

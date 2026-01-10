@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SlidingPuzzle;
 namespace LeetCode.Tests.Algorithms.SlidingPuzzle;
 
 [TestClass]
-public class SlidingPuzzlePrecomputedDictionaryTests : SlidingPuzzleTestsBase<SlidingPuzzlePrecomputedDictionary>;
+public sealed class SlidingPuzzlePrecomputedDictionaryTests : SlidingPuzzleTestsBase<SlidingPuzzlePrecomputedDictionary>;

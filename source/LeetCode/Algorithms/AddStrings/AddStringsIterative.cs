@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.AddStrings;
 
 /// <inheritdoc />
-public class AddStringsIterative : IAddStrings
+public sealed class AddStringsIterative : IAddStrings
 {
     /// <summary>
     ///     Time complexity - O(max(n, m))

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SumOfSquareNumbers;
 
 /// <inheritdoc />
-public class SumOfSquareNumbersBinarySearch : ISumOfSquareNumbers
+public sealed class SumOfSquareNumbersBinarySearch : ISumOfSquareNumbers
 {
     /// <summary>
     ///     Time complexity - O(Sqrt(c) * log c)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TheNumberOfTheSmallestUnoccupiedChair;
 
 /// <inheritdoc />
-public class TheNumberOfTheSmallestUnoccupiedChairPriorityQueue : ITheNumberOfTheSmallestUnoccupiedChair
+public sealed class TheNumberOfTheSmallestUnoccupiedChairPriorityQueue : ITheNumberOfTheSmallestUnoccupiedChair
 {
     /// <summary>
     ///     Time complexity - O(n log n)

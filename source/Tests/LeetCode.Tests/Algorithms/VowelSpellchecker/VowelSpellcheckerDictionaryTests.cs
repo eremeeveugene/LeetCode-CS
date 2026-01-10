@@ -14,4 +14,4 @@ using LeetCode.Algorithms.VowelSpellchecker;
 namespace LeetCode.Tests.Algorithms.VowelSpellchecker;
 
 [TestClass]
-public class VowelSpellcheckerDictionaryTests : VowelSpellcheckerTestsBase<VowelSpellcheckerDictionary>;
+public sealed class VowelSpellcheckerDictionaryTests : VowelSpellcheckerTestsBase<VowelSpellcheckerDictionary>;

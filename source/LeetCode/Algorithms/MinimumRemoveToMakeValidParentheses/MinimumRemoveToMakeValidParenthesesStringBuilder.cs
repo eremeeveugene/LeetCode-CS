@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses;
 
 /// <inheritdoc />
-public class MinimumRemoveToMakeValidParenthesesStringBuilder : IMinimumRemoveToMakeValidParentheses
+public sealed class MinimumRemoveToMakeValidParenthesesStringBuilder : IMinimumRemoveToMakeValidParentheses
 {
     /// <summary>
     ///     Time complexity - O(n)

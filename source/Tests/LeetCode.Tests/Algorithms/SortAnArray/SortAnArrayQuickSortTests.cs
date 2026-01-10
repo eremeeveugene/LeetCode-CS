@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SortAnArray;
 namespace LeetCode.Tests.Algorithms.SortAnArray;
 
 [TestClass]
-public class SortAnArrayQuickSortTests : SortAnArrayTestsBase<SortAnArrayQuickSort>;
+public sealed class SortAnArrayQuickSortTests : SortAnArrayTestsBase<SortAnArrayQuickSort>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.OpenTheLock;
 namespace LeetCode.Tests.Algorithms.OpenTheLock;
 
 [TestClass]
-public class OpenTheLockBreadthFirstSearchTests : OpenTheLockTestsBase<OpenTheLockBreadthFirstSearch>;
+public sealed class OpenTheLockBreadthFirstSearchTests : OpenTheLockTestsBase<OpenTheLockBreadthFirstSearch>;

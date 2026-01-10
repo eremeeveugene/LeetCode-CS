@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SecondLargestDigitInString;
 namespace LeetCode.Tests.Algorithms.SecondLargestDigitInString;
 
 [TestClass]
-public class
+public sealed class
     SecondLargestDigitInStringIterativeTests : SecondLargestDigitInStringTestsBase<SecondLargestDigitInStringIterative>;

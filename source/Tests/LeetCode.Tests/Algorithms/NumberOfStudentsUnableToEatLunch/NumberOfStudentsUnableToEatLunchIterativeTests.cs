@@ -14,5 +14,5 @@ using LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch;
 namespace LeetCode.Tests.Algorithms.NumberOfStudentsUnableToEatLunch;
 
 [TestClass]
-public class NumberOfStudentsUnableToEatLunchIterativeTests : NumberOfStudentsUnableToEatLunchTestsBase<
+public sealed class NumberOfStudentsUnableToEatLunchIterativeTests : NumberOfStudentsUnableToEatLunchTestsBase<
     NumberOfStudentsUnableToEatLunchIterative>;

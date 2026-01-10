@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PathWithMaximumGold;
 namespace LeetCode.Tests.Algorithms.PathWithMaximumGold;
 
 [TestClass]
-public class PathWithMaximumGoldRecursiveTests : PathWithMaximumGoldTestsBase<PathWithMaximumGoldRecursive>;
+public sealed class PathWithMaximumGoldRecursiveTests : PathWithMaximumGoldTestsBase<PathWithMaximumGoldRecursive>;

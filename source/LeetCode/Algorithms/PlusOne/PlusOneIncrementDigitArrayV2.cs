@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PlusOne;
 
 /// <inheritdoc />
-public class PlusOneIncrementDigitArrayV2 : IPlusOne
+public sealed class PlusOneIncrementDigitArrayV2 : IPlusOne
 {
     /// <summary>
     ///     Time complexity - O(n)

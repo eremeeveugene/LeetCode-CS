@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfEquivalentDominoPairs;
 
 /// <inheritdoc />
-public class NumberOfEquivalentDominoPairsFrequencyArray : INumberOfEquivalentDominoPairs
+public sealed class NumberOfEquivalentDominoPairsFrequencyArray : INumberOfEquivalentDominoPairs
 {
     /// <summary>
     ///     Time complexity - O(n)

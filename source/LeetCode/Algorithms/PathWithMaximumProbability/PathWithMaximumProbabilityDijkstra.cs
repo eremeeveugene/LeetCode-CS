@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PathWithMaximumProbability;
 
 /// <inheritdoc />
-public class PathWithMaximumProbabilityDijkstra : PathWithMaximumProbabilityBase
+public sealed class PathWithMaximumProbabilityDijkstra : PathWithMaximumProbabilityBase
 {
     /// <summary>
     ///     Time complexity - O((m + n) log n), where m is the number of edges and n is the number of nodes

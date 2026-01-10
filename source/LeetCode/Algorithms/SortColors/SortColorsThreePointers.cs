@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SortColors;
 
 /// <inheritdoc />
-public class SortColorsThreePointers : ISortColors
+public sealed class SortColorsThreePointers : ISortColors
 {
     /// <summary>
     ///     Time complexity - O(n)

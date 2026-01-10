@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.IsSubsequence;
 
 /// <inheritdoc />
-public class IsSubsequenceTwoPointers : IIsSubsequence
+public sealed class IsSubsequenceTwoPointers : IIsSubsequence
 {
     /// <summary>
     ///     Time complexity - O(n + m)

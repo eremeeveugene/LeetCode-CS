@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.Pow;
 
 /// <inheritdoc />
-public class PowMath : IPow
+public sealed class PowMath : IPow
 {
     /// <summary>
     ///     Time complexity - O(1)

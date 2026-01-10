@@ -14,4 +14,4 @@ using LeetCode.Algorithms.StoneGame;
 namespace LeetCode.Tests.Algorithms.StoneGame;
 
 [TestClass]
-public class StoneGameMathematicalTests : StoneGameTestsBase<StoneGameMathematical>;
+public sealed class StoneGameMathematicalTests : StoneGameTestsBase<StoneGameMathematical>;

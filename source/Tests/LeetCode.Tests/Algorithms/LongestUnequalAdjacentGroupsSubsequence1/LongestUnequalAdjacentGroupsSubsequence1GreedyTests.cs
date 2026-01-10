@@ -14,5 +14,5 @@ using LeetCode.Algorithms.LongestUnequalAdjacentGroupsSubsequence1;
 namespace LeetCode.Tests.Algorithms.LongestUnequalAdjacentGroupsSubsequence1;
 
 [TestClass]
-public class LongestUnequalAdjacentGroupsSubsequence1GreedyTests :
+public sealed class LongestUnequalAdjacentGroupsSubsequence1GreedyTests :
     LongestUnequalAdjacentGroupsSubsequence1TestsBase<LongestUnequalAdjacentGroupsSubsequence1Greedy>;

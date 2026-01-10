@@ -12,7 +12,7 @@
 namespace LeetCode.Concurrency.PrintInOrder;
 
 /// <inheritdoc />
-public class PrintInOrderMonitor : IPrintInOrder
+public sealed class PrintInOrderMonitor : IPrintInOrder
 {
     private readonly object _lock = new();
     private int _step = 1;

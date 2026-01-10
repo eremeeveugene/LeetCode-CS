@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SortArrayByIncreasingFrequency;
 
 /// <inheritdoc />
-public class SortArrayByIncreasingFrequencyLinq : ISortArrayByIncreasingFrequency
+public sealed class SortArrayByIncreasingFrequencyLinq : ISortArrayByIncreasingFrequency
 {
     /// <summary>
     ///     Time complexity - O(n log n)

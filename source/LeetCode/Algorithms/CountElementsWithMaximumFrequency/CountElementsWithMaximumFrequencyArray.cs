@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountElementsWithMaximumFrequency;
 
 /// <inheritdoc />
-public class CountElementsWithMaximumFrequencyArray : ICountElementsWithMaximumFrequency
+public sealed class CountElementsWithMaximumFrequencyArray : ICountElementsWithMaximumFrequency
 {
     private const int MaxLength = 100;
 

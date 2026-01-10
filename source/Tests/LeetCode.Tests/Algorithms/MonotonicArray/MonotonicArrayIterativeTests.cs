@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MonotonicArray;
 namespace LeetCode.Tests.Algorithms.MonotonicArray;
 
 [TestClass]
-public class MonotonicArrayIterativeTests : MonotonicArrayTestsBase<MonotonicArrayIterative>;
+public sealed class MonotonicArrayIterativeTests : MonotonicArrayTestsBase<MonotonicArrayIterative>;

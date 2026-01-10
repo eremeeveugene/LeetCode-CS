@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TwoBestNonOverlappingEvents;
 
 /// <inheritdoc />
-public class TwoBestNonOverlappingEventsBinarySearch : ITwoBestNonOverlappingEvents
+public sealed class TwoBestNonOverlappingEventsBinarySearch : ITwoBestNonOverlappingEvents
 {
     /// <summary>
     ///     Time complexity - O(n log n)

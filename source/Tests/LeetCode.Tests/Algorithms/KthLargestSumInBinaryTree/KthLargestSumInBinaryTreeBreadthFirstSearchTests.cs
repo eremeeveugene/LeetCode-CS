@@ -14,5 +14,5 @@ using LeetCode.Algorithms.KthLargestSumInBinaryTree;
 namespace LeetCode.Tests.Algorithms.KthLargestSumInBinaryTree;
 
 [TestClass]
-public class KthLargestSumInBinaryTreeBreadthFirstSearchTests :
+public sealed class KthLargestSumInBinaryTreeBreadthFirstSearchTests :
     KthLargestSumInBinaryTreeTestsBase<KthLargestSumInBinaryTreeBreadthFirstSearch>;

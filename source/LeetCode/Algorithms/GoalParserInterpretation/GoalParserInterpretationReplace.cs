@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.GoalParserInterpretation;
 
 /// <inheritdoc />
-public class GoalParserInterpretationReplace : IGoalParserInterpretation
+public sealed class GoalParserInterpretationReplace : IGoalParserInterpretation
 {
     /// <summary>
     ///     Time complexity - O(n)

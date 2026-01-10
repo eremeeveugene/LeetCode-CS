@@ -14,5 +14,5 @@ using LeetCode.Algorithms.LargestLocalValuesInMatrix;
 namespace LeetCode.Tests.Algorithms.LargestLocalValuesInMatrix;
 
 [TestClass]
-public class LargestLocalValuesInMatrixBruteForceTests : LargestLocalValuesInMatrixTestsBase<
+public sealed class LargestLocalValuesInMatrixBruteForceTests : LargestLocalValuesInMatrixTestsBase<
     LargestLocalValuesInMatrixBruteForce>;

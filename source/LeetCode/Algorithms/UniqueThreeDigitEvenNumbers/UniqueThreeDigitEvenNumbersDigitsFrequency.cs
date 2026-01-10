@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.UniqueThreeDigitEvenNumbers;
 
 /// <inheritdoc />
-public class UniqueThreeDigitEvenNumbersDigitsFrequency : IUniqueThreeDigitEvenNumbers
+public sealed class UniqueThreeDigitEvenNumbersDigitsFrequency : IUniqueThreeDigitEvenNumbers
 {
     /// <summary>
     ///     Time complexity - O(n)

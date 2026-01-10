@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RangeAddition2;
 namespace LeetCode.Tests.Algorithms.RangeAddition2;
 
 [TestClass]
-public class RangeAddition2GreedyTests : RangeAddition2TestsBase<RangeAddition2Greedy>;
+public sealed class RangeAddition2GreedyTests : RangeAddition2TestsBase<RangeAddition2Greedy>;

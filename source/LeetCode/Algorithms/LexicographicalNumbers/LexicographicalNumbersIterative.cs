@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LexicographicalNumbers;
 
 /// <inheritdoc />
-public class LexicographicalNumbersIterative : ILexicographicalNumbers
+public sealed class LexicographicalNumbersIterative : ILexicographicalNumbers
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.RangeSumOfSortedSubarraySums;
 namespace LeetCode.Tests.Algorithms.RangeSumOfSortedSubarraySums;
 
 [TestClass]
-public class RangeSumOfSortedSubarraySumsBruteForceTests :
+public sealed class RangeSumOfSortedSubarraySumsBruteForceTests :
     RangeSumOfSortedSubarraySumsTestsBase<RangeSumOfSortedSubarraySumsBruteForce>;

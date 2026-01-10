@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.NumberOfGoodLeafNodesPairs;
 
 /// <inheritdoc />
-public class NumberOfGoodLeafNodesPairsDepthFirstSearch : INumberOfGoodLeafNodesPairs
+public sealed class NumberOfGoodLeafNodesPairsDepthFirstSearch : INumberOfGoodLeafNodesPairs
 {
     /// <summary>
     ///     Time complexity - O(n * d^2)

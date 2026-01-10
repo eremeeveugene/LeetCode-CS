@@ -14,7 +14,7 @@ using LeetCode.Core.Helpers;
 namespace LeetCode.Core.Tests.Helpers;
 
 [TestClass]
-public class JsonHelperTests
+public sealed class JsonHelperTests
 {
     [TestMethod]
     [DataRow("\"hello\"", "hello")]

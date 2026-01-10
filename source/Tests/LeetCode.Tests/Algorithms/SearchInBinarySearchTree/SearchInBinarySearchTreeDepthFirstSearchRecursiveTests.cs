@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SearchInBinarySearchTree;
 namespace LeetCode.Tests.Algorithms.SearchInBinarySearchTree;
 
 [TestClass]
-public class SearchInBinarySearchTreeDepthFirstSearchRecursiveTests : SearchInBinarySearchTreeTestsBase<
+public sealed class SearchInBinarySearchTreeDepthFirstSearchRecursiveTests : SearchInBinarySearchTreeTestsBase<
     SearchInBinarySearchTreeDepthFirstSearchRecursive>;

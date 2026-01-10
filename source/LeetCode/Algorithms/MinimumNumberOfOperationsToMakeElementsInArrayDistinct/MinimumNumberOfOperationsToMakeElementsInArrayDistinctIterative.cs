@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumNumberOfOperationsToMakeElementsInArrayDistinct;
 
 /// <inheritdoc />
-public class MinimumNumberOfOperationsToMakeElementsInArrayDistinctIterative :
+public sealed class MinimumNumberOfOperationsToMakeElementsInArrayDistinctIterative :
     IMinimumNumberOfOperationsToMakeElementsInArrayDistinct
 {
     /// <summary>

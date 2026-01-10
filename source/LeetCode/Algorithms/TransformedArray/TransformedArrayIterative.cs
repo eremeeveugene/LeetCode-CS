@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TransformedArray;
 
 /// <inheritdoc />
-public class TransformedArrayIterative : ITransformedArray
+public sealed class TransformedArrayIterative : ITransformedArray
 {
     /// <summary>
     ///     Time complexity - O(n)

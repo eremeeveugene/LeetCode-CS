@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumOperationsToExceedThresholdValue2;
 
 /// <inheritdoc />
-public class MinimumOperationsToExceedThresholdValue2PriorityQueue : IMinimumOperationsToExceedThresholdValue2
+public sealed class MinimumOperationsToExceedThresholdValue2PriorityQueue : IMinimumOperationsToExceedThresholdValue2
 {
     /// <summary>
     ///     Time complexity - O(n log n)

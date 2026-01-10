@@ -14,4 +14,4 @@ using LeetCode.Algorithms.WaterBottles2;
 namespace LeetCode.Tests.Algorithms.WaterBottles2;
 
 [TestClass]
-public class WaterBottles2MathTests : WaterBottles2TestsBase<WaterBottles2Math>;
+public sealed class WaterBottles2MathTests : WaterBottles2TestsBase<WaterBottles2Math>;

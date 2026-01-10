@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumOperationsToConvertAllElementsToZero;
 
 /// <inheritdoc />
-public class MinimumOperationsToConvertAllElementsToZeroStack : IMinimumOperationsToConvertAllElementsToZero
+public sealed class MinimumOperationsToConvertAllElementsToZeroStack : IMinimumOperationsToConvertAllElementsToZero
 {
     /// <summary>
     ///     Time complexity - O(n)

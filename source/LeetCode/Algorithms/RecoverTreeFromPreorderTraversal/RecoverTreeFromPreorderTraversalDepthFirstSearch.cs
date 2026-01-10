@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.RecoverTreeFromPreorderTraversal;
 
 /// <inheritdoc />
-public class RecoverTreeFromPreorderTraversalDepthFirstSearch : IRecoverTreeFromPreorderTraversal
+public sealed class RecoverTreeFromPreorderTraversalDepthFirstSearch : IRecoverTreeFromPreorderTraversal
 {
     /// <summary>
     ///     Time complexity - O(n)

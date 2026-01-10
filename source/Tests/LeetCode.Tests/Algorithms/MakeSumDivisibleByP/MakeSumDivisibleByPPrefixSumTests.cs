@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MakeSumDivisibleByP;
 namespace LeetCode.Tests.Algorithms.MakeSumDivisibleByP;
 
 [TestClass]
-public class MakeSumDivisibleByPPrefixSumTests : MakeSumDivisibleByPTestsBase<MakeSumDivisibleByPPrefixSum>;
+public sealed class MakeSumDivisibleByPPrefixSumTests : MakeSumDivisibleByPTestsBase<MakeSumDivisibleByPPrefixSum>;

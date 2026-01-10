@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SpiralMatrix3;
 
 /// <inheritdoc />
-public class SpiralMatrix3Simulation : ISpiralMatrix3
+public sealed class SpiralMatrix3Simulation : ISpiralMatrix3
 {
     /// <summary>
     ///     Time complexity - O(rows x cols)

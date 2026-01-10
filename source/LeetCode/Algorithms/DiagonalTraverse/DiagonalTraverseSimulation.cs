@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DiagonalTraverse;
 
 /// <inheritdoc />
-public class DiagonalTraverseSimulation : IDiagonalTraverse
+public sealed class DiagonalTraverseSimulation : IDiagonalTraverse
 {
     /// <summary>
     ///     Time complexity - O(m * n)

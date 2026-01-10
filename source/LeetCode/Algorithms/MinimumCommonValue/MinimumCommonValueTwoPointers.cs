@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumCommonValue;
 
 /// <inheritdoc />
-public class MinimumCommonValueTwoPointers : IMinimumCommonValue
+public sealed class MinimumCommonValueTwoPointers : IMinimumCommonValue
 {
     /// <summary>
     ///     Time complexity - O(n + m), where n is the length of nums2 and m is the length of nums1

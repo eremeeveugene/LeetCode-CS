@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PermutationInString;
 
 /// <inheritdoc />
-public class PermutationInStringSlidingWindowArray : IPermutationInString
+public sealed class PermutationInStringSlidingWindowArray : IPermutationInString
 {
     private const int ArrayLength = 'z' - 'a' + 1;
 

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindThePowerOfKSizeSubarrays1;
 
 /// <inheritdoc />
-public class FindThePowerOfKSizeSubarrays1ConsecutiveCount : IFindThePowerOfKSizeSubarrays1
+public sealed class FindThePowerOfKSizeSubarrays1ConsecutiveCount : IFindThePowerOfKSizeSubarrays1
 {
     /// <summary>
     ///     Time complexity - O(n)

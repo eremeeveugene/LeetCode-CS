@@ -14,4 +14,4 @@ using LeetCode.Concurrency.PrintInOrder;
 namespace LeetCode.Tests.Concurrency.PrintInOrder;
 
 [TestClass]
-public class PrintInOrderMonitorTests : PrintInOrderTestsBase<PrintInOrderMonitor>;
+public sealed class PrintInOrderMonitorTests : PrintInOrderTestsBase<PrintInOrderMonitor>;

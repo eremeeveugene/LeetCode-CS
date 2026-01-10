@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LongestNiceSubarray;
 
 /// <inheritdoc />
-public class LongestNiceSubarrayBruteForce : ILongestNiceSubarray
+public sealed class LongestNiceSubarrayBruteForce : ILongestNiceSubarray
 {
     /// <summary>
     ///     Time complexity - O(n^2)

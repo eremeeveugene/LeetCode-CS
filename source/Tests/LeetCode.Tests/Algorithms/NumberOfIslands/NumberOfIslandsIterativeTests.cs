@@ -14,4 +14,4 @@ using LeetCode.Algorithms.NumberOfIslands;
 namespace LeetCode.Tests.Algorithms.NumberOfIslands;
 
 [TestClass]
-public class NumberOfIslandsIterativeTests : NumberOfIslandsTestsBase<NumberOfIslandsIterative>;
+public sealed class NumberOfIslandsIterativeTests : NumberOfIslandsTestsBase<NumberOfIslandsIterative>;

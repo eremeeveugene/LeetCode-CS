@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits;
 namespace LeetCode.Tests.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits;
 
 [TestClass]
-public class MinimumSumOfFourDigitNumberAfterSplittingDigitsCharsTests :
+public sealed class MinimumSumOfFourDigitNumberAfterSplittingDigitsCharsTests :
     MinimumSumOfFourDigitNumberAfterSplittingDigitsTestsBase<MinimumSumOfFourDigitNumberAfterSplittingDigitsChars>;

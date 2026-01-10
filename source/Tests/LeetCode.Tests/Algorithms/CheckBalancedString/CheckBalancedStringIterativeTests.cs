@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CheckBalancedString;
 namespace LeetCode.Tests.Algorithms.CheckBalancedString;
 
 [TestClass]
-public class CheckBalancedStringIterativeTests : CheckBalancedStringTestsBase<CheckBalancedStringIterative>;
+public sealed class CheckBalancedStringIterativeTests : CheckBalancedStringTestsBase<CheckBalancedStringIterative>;

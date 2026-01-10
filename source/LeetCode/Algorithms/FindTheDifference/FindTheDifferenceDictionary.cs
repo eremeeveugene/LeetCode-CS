@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheDifference;
 
 /// <inheritdoc />
-public class FindTheDifferenceDictionary : IFindTheDifference
+public sealed class FindTheDifferenceDictionary : IFindTheDifference
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RelativeRanks;
 
 /// <inheritdoc />
-public class RelativeRanksTuple : IRelativeRanks
+public sealed class RelativeRanksTuple : IRelativeRanks
 {
     /// <summary>
     ///     Time complexity - O(n log n)

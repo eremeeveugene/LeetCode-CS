@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountUnguardedCellsInTheGrid;
 
 /// <inheritdoc />
-public class CountUnguardedCellsInTheGridSimulation : ICountUnguardedCellsInTheGrid
+public sealed class CountUnguardedCellsInTheGridSimulation : ICountUnguardedCellsInTheGrid
 {
     /// <summary>
     ///     Time complexity - O(m * n)

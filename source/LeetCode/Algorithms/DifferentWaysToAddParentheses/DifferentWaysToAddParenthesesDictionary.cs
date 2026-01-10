@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DifferentWaysToAddParentheses;
 
 /// <inheritdoc />
-public class DifferentWaysToAddParenthesesDictionary : IDifferentWaysToAddParentheses
+public sealed class DifferentWaysToAddParenthesesDictionary : IDifferentWaysToAddParentheses
 {
     /// <summary>
     ///     Time complexity - O(n * 2^n)

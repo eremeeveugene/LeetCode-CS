@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CountLargestGroup;
 namespace LeetCode.Tests.Algorithms.CountLargestGroup;
 
 [TestClass]
-public class CountLargestGroupFrequencyArrayTests :
+public sealed class CountLargestGroupFrequencyArrayTests :
     CountLargestGroupTestsBase<CountLargestGroupFrequencyArray>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.BaseballGame;
 
 /// <inheritdoc />
-public class BaseballGameIterative : IBaseballGame
+public sealed class BaseballGameIterative : IBaseballGame
 {
     /// <summary>
     ///     Time complexity - O(n)

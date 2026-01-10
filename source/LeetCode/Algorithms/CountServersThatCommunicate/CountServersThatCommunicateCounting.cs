@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountServersThatCommunicate;
 
 /// <inheritdoc />
-public class CountServersThatCommunicateCounting : ICountServersThatCommunicate
+public sealed class CountServersThatCommunicateCounting : ICountServersThatCommunicate
 {
     /// <summary>
     ///     Time complexity - O(m * n)

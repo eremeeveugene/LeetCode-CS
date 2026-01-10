@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumTimeDifference;
 
 /// <inheritdoc />
-public class MinimumTimeDifferenceSorting : MinimumTimeDifferenceBase
+public sealed class MinimumTimeDifferenceSorting : MinimumTimeDifferenceBase
 {
     /// <summary>
     ///     Time complexity - O(n log n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignSpreadsheet;
 
 /// <inheritdoc />
-public class DesignSpreadsheetMatrix : IDesignSpreadsheet
+public sealed class DesignSpreadsheetMatrix : IDesignSpreadsheet
 {
     private const int Columns = 'Z' - 'A' + 1;
 

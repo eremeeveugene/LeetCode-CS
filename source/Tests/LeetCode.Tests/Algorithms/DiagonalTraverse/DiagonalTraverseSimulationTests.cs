@@ -14,4 +14,4 @@ using LeetCode.Algorithms.DiagonalTraverse;
 namespace LeetCode.Tests.Algorithms.DiagonalTraverse;
 
 [TestClass]
-public class DiagonalTraverseSimulationTests : DiagonalTraverseTestsBase<DiagonalTraverseSimulation>;
+public sealed class DiagonalTraverseSimulationTests : DiagonalTraverseTestsBase<DiagonalTraverseSimulation>;

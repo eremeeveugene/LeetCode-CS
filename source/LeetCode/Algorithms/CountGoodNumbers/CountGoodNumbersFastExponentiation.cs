@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountGoodNumbers;
 
 /// <inheritdoc />
-public class CountGoodNumbersFastExponentiation : ICountGoodNumbers
+public sealed class CountGoodNumbersFastExponentiation : ICountGoodNumbers
 {
     private const int Mod = 1_000_000_007;
 

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.BestSightseeingPair;
 namespace LeetCode.Tests.Algorithms.BestSightseeingPair;
 
 [TestClass]
-public class BestSightseeingPairGreedyTests : BestSightseeingPairTestsBase<BestSightseeingPairGreedy>;
+public sealed class BestSightseeingPairGreedyTests : BestSightseeingPairTestsBase<BestSightseeingPairGreedy>;

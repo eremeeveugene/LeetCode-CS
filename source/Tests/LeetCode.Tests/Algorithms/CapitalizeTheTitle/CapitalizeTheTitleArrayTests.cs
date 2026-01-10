@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CapitalizeTheTitle;
 namespace LeetCode.Tests.Algorithms.CapitalizeTheTitle;
 
 [TestClass]
-public class CapitalizeTheTitleArrayTests : CapitalizeTheTitleTestsBase<CapitalizeTheTitleArray>;
+public sealed class CapitalizeTheTitleArrayTests : CapitalizeTheTitleTestsBase<CapitalizeTheTitleArray>;

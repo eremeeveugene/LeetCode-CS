@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SortingTheSentence;
 namespace LeetCode.Tests.Algorithms.SortingTheSentence;
 
 [TestClass]
-public class SortingTheSentenceIterativeTests : SortingTheSentenceTestsBase<SortingTheSentenceIterative>;
+public sealed class SortingTheSentenceIterativeTests : SortingTheSentenceTestsBase<SortingTheSentenceIterative>;

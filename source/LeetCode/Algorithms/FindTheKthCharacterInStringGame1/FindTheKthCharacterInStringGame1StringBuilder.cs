@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.FindTheKthCharacterInStringGame1;
 
 /// <inheritdoc />
-public class FindTheKthCharacterInStringGame1StringBuilder : IFindTheKthCharacterInStringGame1
+public sealed class FindTheKthCharacterInStringGame1StringBuilder : IFindTheKthCharacterInStringGame1
 {
     /// <summary>
     ///     Time complexity - O(k)

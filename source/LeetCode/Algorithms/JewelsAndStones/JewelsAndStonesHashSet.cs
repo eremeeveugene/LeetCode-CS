@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.JewelsAndStones;
 
 /// <inheritdoc />
-public class JewelsAndStonesHashSet : IJewelsAndStones
+public sealed class JewelsAndStonesHashSet : IJewelsAndStones
 {
     /// <summary>
     ///     Time complexity - O(n + m), where m is the length of the jewels string and n is the length of the stones string

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumAreaOfLongestDiagonalRectangle;
 
 /// <inheritdoc />
-public class MaximumAreaOfLongestDiagonalRectangleOnePass : IMaximumAreaOfLongestDiagonalRectangle
+public sealed class MaximumAreaOfLongestDiagonalRectangleOnePass : IMaximumAreaOfLongestDiagonalRectangle
 {
     /// <summary>
     ///     Time complexity - O(n)

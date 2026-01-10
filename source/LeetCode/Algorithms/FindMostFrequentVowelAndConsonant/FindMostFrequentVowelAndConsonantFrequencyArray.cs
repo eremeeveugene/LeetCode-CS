@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindMostFrequentVowelAndConsonant;
 
 /// <inheritdoc />
-public class FindMostFrequentVowelAndConsonantFrequencyArray : IFindMostFrequentVowelAndConsonant
+public sealed class FindMostFrequentVowelAndConsonantFrequencyArray : IFindMostFrequentVowelAndConsonant
 {
     private const byte AlphabetLength = 'z' - 'a' + 1;
 

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SumOfVariableLengthSubarrays;
 namespace LeetCode.Tests.Algorithms.SumOfVariableLengthSubarrays;
 
 [TestClass]
-public class SumOfVariableLengthSubarraysBruteForceTests :
+public sealed class SumOfVariableLengthSubarraysBruteForceTests :
     SumOfVariableLengthSubarraysTestsBase<SumOfVariableLengthSubarraysBruteForce>;

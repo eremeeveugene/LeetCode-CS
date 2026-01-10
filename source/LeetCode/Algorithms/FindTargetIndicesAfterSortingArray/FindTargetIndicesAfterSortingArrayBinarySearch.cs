@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTargetIndicesAfterSortingArray;
 
 /// <inheritdoc />
-public class FindTargetIndicesAfterSortingArrayBinarySearch : IFindTargetIndicesAfterSortingArray
+public sealed class FindTargetIndicesAfterSortingArrayBinarySearch : IFindTargetIndicesAfterSortingArray
 {
     /// <summary>
     ///     Time complexity - O(n log n)

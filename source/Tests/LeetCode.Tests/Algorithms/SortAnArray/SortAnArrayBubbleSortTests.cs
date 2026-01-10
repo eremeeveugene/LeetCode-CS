@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SortAnArray;
 namespace LeetCode.Tests.Algorithms.SortAnArray;
 
 [TestClass]
-public class SortAnArrayBubbleSortTests : SortAnArrayTestsBase<SortAnArrayBubbleSort>;
+public sealed class SortAnArrayBubbleSortTests : SortAnArrayTestsBase<SortAnArrayBubbleSort>;

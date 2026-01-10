@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ApplyDiscountToPrices;
 
 /// <inheritdoc />
-public class ApplyDiscountToPricesIterative : IApplyDiscountToPrices
+public sealed class ApplyDiscountToPricesIterative : IApplyDiscountToPrices
 {
     /// <summary>
     ///     Time complexity - O(n)

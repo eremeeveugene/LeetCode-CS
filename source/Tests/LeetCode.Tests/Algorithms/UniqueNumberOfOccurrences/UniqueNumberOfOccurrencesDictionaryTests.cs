@@ -14,5 +14,5 @@ using LeetCode.Algorithms.UniqueNumberOfOccurrences;
 namespace LeetCode.Tests.Algorithms.UniqueNumberOfOccurrences;
 
 [TestClass]
-public class UniqueNumberOfOccurrencesDictionaryTests :
+public sealed class UniqueNumberOfOccurrencesDictionaryTests :
     UniqueNumberOfOccurrencesTestsBase<UniqueNumberOfOccurrencesDictionary>;

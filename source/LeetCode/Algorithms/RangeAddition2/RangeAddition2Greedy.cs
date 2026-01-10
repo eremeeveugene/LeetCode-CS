@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RangeAddition2;
 
 /// <inheritdoc />
-public class RangeAddition2Greedy : IRangeAddition2
+public sealed class RangeAddition2Greedy : IRangeAddition2
 {
     /// <summary>
     ///     Time complexity - O(n), where n is the length of ops

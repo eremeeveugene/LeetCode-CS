@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.IsomorphicStrings;
 
 /// <inheritdoc />
-public class IsomorphicStringsTwoDictionaries : IIsomorphicStrings
+public sealed class IsomorphicStringsTwoDictionaries : IIsomorphicStrings
 {
     /// <summary>
     ///     Time complexity - O(n)

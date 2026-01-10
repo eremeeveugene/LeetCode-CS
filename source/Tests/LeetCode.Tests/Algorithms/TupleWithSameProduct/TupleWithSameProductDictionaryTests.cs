@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TupleWithSameProduct;
 namespace LeetCode.Tests.Algorithms.TupleWithSameProduct;
 
 [TestClass]
-public class TupleWithSameProductDictionaryTests : TupleWithSameProductTestsBase<TupleWithSameProductDictionary>;
+public sealed class TupleWithSameProductDictionaryTests : TupleWithSameProductTestsBase<TupleWithSameProductDictionary>;

@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Core.Tests.Models;
 
 [TestClass]
-public class ListNodeTests
+public sealed class ListNodeTests
 {
     [TestMethod]
     [DataRow(0)]

@@ -11,7 +11,7 @@
 
 namespace LeetCode.Algorithms.NumberOfEmployeesWhoMetTheTarget;
 
-public class NumberOfEmployeesWhoMetTheTargetCounting : INumberOfEmployeesWhoMetTheTarget
+public sealed class NumberOfEmployeesWhoMetTheTargetCounting : INumberOfEmployeesWhoMetTheTarget
 {
     /// <summary>
     ///     Time complexity - O(n)

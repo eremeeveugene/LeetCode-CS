@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ConstructSmallestNumberFromDIString;
 namespace LeetCode.Tests.Algorithms.ConstructSmallestNumberFromDIString;
 
 [TestClass]
-public class ConstructSmallestNumberFromDIStringStackTests :
+public sealed class ConstructSmallestNumberFromDIStringStackTests :
     ConstructSmallestNumberFromDIStringTestsBase<ConstructSmallestNumberFromDIStringStack>;

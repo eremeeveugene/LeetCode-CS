@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ShortestSubarrayToBeRemovedToMakeArraySorted;
 namespace LeetCode.Tests.Algorithms.ShortestSubarrayToBeRemovedToMakeArraySorted;
 
 [TestClass]
-public class ShortestSubarrayToBeRemovedToMakeArraySortedTwoPointersTests :
+public sealed class ShortestSubarrayToBeRemovedToMakeArraySortedTwoPointersTests :
     ShortestSubarrayToBeRemovedToMakeArraySortedTestsBase<ShortestSubarrayToBeRemovedToMakeArraySortedTwoPointers>;

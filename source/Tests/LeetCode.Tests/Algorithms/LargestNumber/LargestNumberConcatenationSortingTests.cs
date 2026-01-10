@@ -14,4 +14,4 @@ using LeetCode.Algorithms.LargestNumber;
 namespace LeetCode.Tests.Algorithms.LargestNumber;
 
 [TestClass]
-public class LargestNumberConcatenationSortingTests : LargestNumberTestsBase<LargestNumberConcatenationSorting>;
+public sealed class LargestNumberConcatenationSortingTests : LargestNumberTestsBase<LargestNumberConcatenationSorting>;

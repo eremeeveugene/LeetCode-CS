@@ -14,6 +14,6 @@ using LeetCode.Algorithms.MinimumNumberOfOperationsToMakeElementsInArrayDistinct
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfOperationsToMakeElementsInArrayDistinct;
 
 [TestClass]
-public class MinimumNumberOfOperationsToMakeElementsInArrayDistinctIterativeTests :
+public sealed class MinimumNumberOfOperationsToMakeElementsInArrayDistinctIterativeTests :
     MinimumNumberOfOperationsToMakeElementsInArrayDistinctTestsBase<
         MinimumNumberOfOperationsToMakeElementsInArrayDistinctIterative>;

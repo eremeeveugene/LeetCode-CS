@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TwoSum;
 
 /// <inheritdoc />
-public class TwoSumDictionary : ITwoSum
+public sealed class TwoSumDictionary : ITwoSum
 {
     /// <summary>
     ///     Time complexity - O(n)

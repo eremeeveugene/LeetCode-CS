@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FindAllGroupOfFarmland;
 namespace LeetCode.Tests.Algorithms.FindAllGroupOfFarmland;
 
 [TestClass]
-public class FindAllGroupOfFarmlandIterativeTests : FindAllGroupOfFarmlandTestsBase<FindAllGroupOfFarmlandIterative>;
+public sealed class FindAllGroupOfFarmlandIterativeTests : FindAllGroupOfFarmlandTestsBase<FindAllGroupOfFarmlandIterative>;

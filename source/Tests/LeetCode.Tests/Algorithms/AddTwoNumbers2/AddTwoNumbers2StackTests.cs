@@ -14,4 +14,4 @@ using LeetCode.Algorithms.AddTwoNumbers2;
 namespace LeetCode.Tests.Algorithms.AddTwoNumbers2;
 
 [TestClass]
-public class AddTwoNumbers2StackTests : AddTwoNumbers2TestsBase<AddTwoNumbers2Stack>;
+public sealed class AddTwoNumbers2StackTests : AddTwoNumbers2TestsBase<AddTwoNumbers2Stack>;

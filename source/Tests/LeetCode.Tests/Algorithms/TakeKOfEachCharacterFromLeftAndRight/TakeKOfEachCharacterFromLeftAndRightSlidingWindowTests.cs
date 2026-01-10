@@ -14,5 +14,5 @@ using LeetCode.Algorithms.TakeKOfEachCharacterFromLeftAndRight;
 namespace LeetCode.Tests.Algorithms.TakeKOfEachCharacterFromLeftAndRight;
 
 [TestClass]
-public class TakeKOfEachCharacterFromLeftAndRightSlidingWindowTests :
+public sealed class TakeKOfEachCharacterFromLeftAndRightSlidingWindowTests :
     TakeKOfEachCharacterFromLeftAndRightTestsBase<TakeKOfEachCharacterFromLeftAndRightSlidingWindow>;

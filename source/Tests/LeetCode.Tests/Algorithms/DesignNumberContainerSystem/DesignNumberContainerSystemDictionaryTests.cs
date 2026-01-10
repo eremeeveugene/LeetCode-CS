@@ -14,5 +14,5 @@ using LeetCode.Algorithms.DesignNumberContainerSystem;
 namespace LeetCode.Tests.Algorithms.DesignNumberContainerSystem;
 
 [TestClass]
-public class DesignNumberContainerSystemDictionaryTests :
+public sealed class DesignNumberContainerSystemDictionaryTests :
     DesignNumberContainerSystemTestsBase<DesignNumberContainerSystemDictionary>;

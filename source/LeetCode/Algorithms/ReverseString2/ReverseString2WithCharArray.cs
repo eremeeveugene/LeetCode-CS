@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ReverseString2;
 
 /// <inheritdoc />
-public class ReverseString2WithCharArray : IReverseString2
+public sealed class ReverseString2WithCharArray : IReverseString2
 {
     /// <summary>
     ///     Time complexity - O(n)

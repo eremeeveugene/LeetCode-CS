@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DividePlayersIntoTeamsOfEqualSkill;
 
 /// <inheritdoc />
-public class DividePlayersIntoTeamsOfEqualSkillSorting : IDividePlayersIntoTeamsOfEqualSkill
+public sealed class DividePlayersIntoTeamsOfEqualSkillSorting : IDividePlayersIntoTeamsOfEqualSkill
 {
     /// <summary>
     ///     Time complexity - O(n log n)

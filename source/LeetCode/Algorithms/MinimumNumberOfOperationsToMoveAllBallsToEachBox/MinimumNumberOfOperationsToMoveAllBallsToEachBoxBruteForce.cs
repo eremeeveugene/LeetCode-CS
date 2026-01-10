@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox;
 
 /// <inheritdoc />
-public class MinimumNumberOfOperationsToMoveAllBallsToEachBoxBruteForce :
+public sealed class MinimumNumberOfOperationsToMoveAllBallsToEachBoxBruteForce :
     IMinimumNumberOfOperationsToMoveAllBallsToEachBox
 {
     /// <summary>

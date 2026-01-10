@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SameTree;
 namespace LeetCode.Tests.Algorithms.SameTree;
 
 [TestClass]
-public class SameTreeRecursiveTests : SameTreeTestsBase<SameTreeRecursive>;
+public sealed class SameTreeRecursiveTests : SameTreeTestsBase<SameTreeRecursive>;

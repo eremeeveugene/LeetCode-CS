@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountTheNumberOfGoodSubarrays;
 
 /// <inheritdoc />
-public class CountTheNumberOfGoodSubarraysTwoPointers : ICountTheNumberOfGoodSubarrays
+public sealed class CountTheNumberOfGoodSubarraysTwoPointers : ICountTheNumberOfGoodSubarrays
 {
     public long CountGood(int[] nums, int k)
     {

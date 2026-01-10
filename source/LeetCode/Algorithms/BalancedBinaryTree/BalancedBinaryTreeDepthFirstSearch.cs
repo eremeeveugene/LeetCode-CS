@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.BalancedBinaryTree;
 
 /// <inheritdoc />
-public class BalancedBinaryTreeDepthFirstSearch : IBalancedBinaryTree
+public sealed class BalancedBinaryTreeDepthFirstSearch : IBalancedBinaryTree
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.DeleteNodeInLinkedList;
 namespace LeetCode.Tests.Algorithms.DeleteNodeInLinkedList;
 
 [TestClass]
-public class DeleteNodeInLinkedListReassignTests : DeleteNodeInLinkedListTestsBase<DeleteNodeInLinkedListReassign>;
+public sealed class DeleteNodeInLinkedListReassignTests : DeleteNodeInLinkedListTestsBase<DeleteNodeInLinkedListReassign>;

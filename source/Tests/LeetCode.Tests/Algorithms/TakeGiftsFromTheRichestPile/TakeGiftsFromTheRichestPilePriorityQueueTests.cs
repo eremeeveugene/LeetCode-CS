@@ -14,5 +14,5 @@ using LeetCode.Algorithms.TakeGiftsFromTheRichestPile;
 namespace LeetCode.Tests.Algorithms.TakeGiftsFromTheRichestPile;
 
 [TestClass]
-public class TakeGiftsFromTheRichestPilePriorityQueueTests :
+public sealed class TakeGiftsFromTheRichestPilePriorityQueueTests :
     TakeGiftsFromTheRichestPileTestsBase<TakeGiftsFromTheRichestPilePriorityQueue>;

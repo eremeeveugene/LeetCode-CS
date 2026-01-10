@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SentenceSimilarity3;
 namespace LeetCode.Tests.Algorithms.SentenceSimilarity3;
 
 [TestClass]
-public class SentenceSimilarity3TwoPointersTests : SentenceSimilarity3TestsBase<SentenceSimilarity3TwoPointers>;
+public sealed class SentenceSimilarity3TwoPointersTests : SentenceSimilarity3TestsBase<SentenceSimilarity3TwoPointers>;

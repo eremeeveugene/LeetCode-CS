@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SimpleBankSystem;
 
 /// <inheritdoc />
-public class SimpleBankSystemLookup : ISimpleBankSystem
+public sealed class SimpleBankSystemLookup : ISimpleBankSystem
 {
     private readonly long[] _balance;
     private readonly int _balanceLength;

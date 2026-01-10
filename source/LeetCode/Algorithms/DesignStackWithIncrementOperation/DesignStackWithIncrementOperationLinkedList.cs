@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignStackWithIncrementOperation;
 
 /// <inheritdoc />
-public class DesignStackWithIncrementOperationLinkedList : IDesignStackWithIncrementOperation
+public sealed class DesignStackWithIncrementOperationLinkedList : IDesignStackWithIncrementOperation
 {
     private readonly int _maxSize;
     private int _count;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumNumberOfOperationsToMoveOnesToTheEnd;
 
 /// <inheritdoc />
-public class MaximumNumberOfOperationsToMoveOnesToTheEndGreedyCounting : IMaximumNumberOfOperationsToMoveOnesToTheEnd
+public sealed class MaximumNumberOfOperationsToMoveOnesToTheEndGreedyCounting : IMaximumNumberOfOperationsToMoveOnesToTheEnd
 {
     /// <summary>
     ///     Time complexity - O(n)

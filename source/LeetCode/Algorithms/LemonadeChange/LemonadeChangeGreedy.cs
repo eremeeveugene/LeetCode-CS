@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LemonadeChange;
 
 /// <inheritdoc />
-public class LemonadeChangeGreedy : ILemonadeChange
+public sealed class LemonadeChangeGreedy : ILemonadeChange
 {
     /// <summary>
     ///     Time complexity - O(n)

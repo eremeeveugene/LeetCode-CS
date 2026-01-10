@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.SearchInBinarySearchTree;
 
 /// <inheritdoc />
-public class SearchInBinarySearchTreeDepthFirstSearchRecursive : ISearchInBinarySearchTree
+public sealed class SearchInBinarySearchTreeDepthFirstSearchRecursive : ISearchInBinarySearchTree
 {
     /// <summary>
     ///     Time complexity - O(n) for a skewed tree, O(log n) for a balanced tree

@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.MergeNodesInBetweenZeros;
 
 /// <inheritdoc />
-public class MergeNodesInBetweenZerosIterative : IMergeNodesInBetweenZeros
+public sealed class MergeNodesInBetweenZerosIterative : IMergeNodesInBetweenZeros
 {
     /// <summary>
     ///     Time complexity - O(n)

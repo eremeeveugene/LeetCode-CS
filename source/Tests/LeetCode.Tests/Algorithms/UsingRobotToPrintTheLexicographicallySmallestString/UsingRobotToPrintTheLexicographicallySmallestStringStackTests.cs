@@ -14,6 +14,6 @@ using LeetCode.Algorithms.UsingRobotToPrintTheLexicographicallySmallestString;
 namespace LeetCode.Tests.Algorithms.UsingRobotToPrintTheLexicographicallySmallestString;
 
 [TestClass]
-public class UsingRobotToPrintTheLexicographicallySmallestStringStackTests :
+public sealed class UsingRobotToPrintTheLexicographicallySmallestStringStackTests :
     UsingRobotToPrintTheLexicographicallySmallestStringTestsBase<
         UsingRobotToPrintTheLexicographicallySmallestStringStack>;

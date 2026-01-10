@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RowWithMaximumOnes;
 namespace LeetCode.Tests.Algorithms.RowWithMaximumOnes;
 
 [TestClass]
-public class RowWithMaximumOnesBruteForceTests : RowWithMaximumOnesTestsBase<RowWithMaximumOnesBruteForce>;
+public sealed class RowWithMaximumOnesBruteForceTests : RowWithMaximumOnesTestsBase<RowWithMaximumOnesBruteForce>;

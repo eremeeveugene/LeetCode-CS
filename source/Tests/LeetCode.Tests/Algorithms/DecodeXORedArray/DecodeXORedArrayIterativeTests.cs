@@ -14,4 +14,4 @@ using LeetCode.Algorithms.DecodeXORedArray;
 namespace LeetCode.Tests.Algorithms.DecodeXORedArray;
 
 [TestClass]
-public class DecodeXORedArrayIterativeTests : DecodeXORedArrayTestsBase<DecodeXORedArrayIterative>;
+public sealed class DecodeXORedArrayIterativeTests : DecodeXORedArrayTestsBase<DecodeXORedArrayIterative>;

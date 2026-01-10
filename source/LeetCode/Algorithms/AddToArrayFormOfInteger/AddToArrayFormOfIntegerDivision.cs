@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.AddToArrayFormOfInteger;
 
 /// <inheritdoc />
-public class AddToArrayFormOfIntegerDivision : IAddToArrayFormOfInteger
+public sealed class AddToArrayFormOfIntegerDivision : IAddToArrayFormOfInteger
 {
     /// <summary>
     ///     Time complexity - O(max(n, log k)), where n is the length of the array num and log k is the number of digits in the

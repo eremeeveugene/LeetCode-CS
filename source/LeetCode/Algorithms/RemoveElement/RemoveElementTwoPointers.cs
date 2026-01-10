@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RemoveElement;
 
 /// <inheritdoc />
-public class RemoveElementTwoPointers : IRemoveElement
+public sealed class RemoveElementTwoPointers : IRemoveElement
 {
     /// <summary>
     ///     Time complexity - O(n)

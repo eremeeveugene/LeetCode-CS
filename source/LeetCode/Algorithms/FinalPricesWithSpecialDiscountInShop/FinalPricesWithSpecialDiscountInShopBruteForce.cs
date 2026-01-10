@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FinalPricesWithSpecialDiscountInShop;
 
 /// <inheritdoc />
-public class FinalPricesWithSpecialDiscountInShopBruteForce : IFinalPricesWithSpecialDiscountInShop
+public sealed class FinalPricesWithSpecialDiscountInShopBruteForce : IFinalPricesWithSpecialDiscountInShop
 {
     /// <summary>
     ///     Time complexity - O(n^2)

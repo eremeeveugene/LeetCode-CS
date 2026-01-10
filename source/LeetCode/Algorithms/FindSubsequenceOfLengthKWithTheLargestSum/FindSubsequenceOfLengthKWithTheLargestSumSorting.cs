@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindSubsequenceOfLengthKWithTheLargestSum;
 
 /// <inheritdoc />
-public class FindSubsequenceOfLengthKWithTheLargestSumSorting : IFindSubsequenceOfLengthKWithTheLargestSum
+public sealed class FindSubsequenceOfLengthKWithTheLargestSumSorting : IFindSubsequenceOfLengthKWithTheLargestSum
 {
     /// <summary>
     ///     Time complexity - O(n log n)

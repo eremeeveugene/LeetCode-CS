@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumHeightTrees;
 
 /// <inheritdoc />
-public class MinimumHeightTreesLeafPruning : IMinimumHeightTrees
+public sealed class MinimumHeightTreesLeafPruning : IMinimumHeightTrees
 {
     /// <summary>
     ///     Time complexity - O(V + E), where V is the number of vertices(nodes) and E is the number of edges.

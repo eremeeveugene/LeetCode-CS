@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountOperationsToObtainZero;
 
 /// <inheritdoc />
-public class CountOperationsToObtainZeroSubtraction : ICountOperationsToObtainZero
+public sealed class CountOperationsToObtainZeroSubtraction : ICountOperationsToObtainZero
 {
     /// <summary>
     ///     Time complexity - O(max(num1, num2))

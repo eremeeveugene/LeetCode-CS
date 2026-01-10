@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.KthSmallestInLexicographicalOrder;
 
 /// <inheritdoc />
-public class KthSmallestInLexicographicalOrderPrefixTree : IKthSmallestInLexicographicalOrder
+public sealed class KthSmallestInLexicographicalOrderPrefixTree : IKthSmallestInLexicographicalOrder
 {
     /// <summary>
     ///     Time complexity - O(k * log n)

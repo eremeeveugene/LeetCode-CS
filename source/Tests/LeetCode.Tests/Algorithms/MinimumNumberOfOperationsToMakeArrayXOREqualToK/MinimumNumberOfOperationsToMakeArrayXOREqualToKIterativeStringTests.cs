@@ -14,6 +14,6 @@ using LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK;
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK;
 
 [TestClass]
-public class MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeStringTests :
+public sealed class MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeStringTests :
     MinimumNumberOfOperationsToMakeArrayXOREqualToKTestsBase<
         MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeString>;

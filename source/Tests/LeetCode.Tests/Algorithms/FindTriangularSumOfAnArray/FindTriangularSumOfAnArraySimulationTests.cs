@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindTriangularSumOfAnArray;
 namespace LeetCode.Tests.Algorithms.FindTriangularSumOfAnArray;
 
 [TestClass]
-public class FindTriangularSumOfAnArraySimulationTests :
+public sealed class FindTriangularSumOfAnArraySimulationTests :
     FindTriangularSumOfAnArrayTestsBase<FindTriangularSumOfAnArraySimulation>;

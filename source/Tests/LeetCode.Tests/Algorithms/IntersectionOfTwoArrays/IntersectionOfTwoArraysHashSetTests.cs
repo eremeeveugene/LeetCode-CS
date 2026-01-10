@@ -14,4 +14,4 @@ using LeetCode.Algorithms.IntersectionOfTwoArrays;
 namespace LeetCode.Tests.Algorithms.IntersectionOfTwoArrays;
 
 [TestClass]
-public class IntersectionOfTwoArraysHashSetTests : IntersectionOfTwoArraysTestsBase<IntersectionOfTwoArraysHashSet>;
+public sealed class IntersectionOfTwoArraysHashSetTests : IntersectionOfTwoArraysTestsBase<IntersectionOfTwoArraysHashSet>;

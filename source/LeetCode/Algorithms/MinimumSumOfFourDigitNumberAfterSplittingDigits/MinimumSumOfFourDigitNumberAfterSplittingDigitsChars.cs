@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits;
 
 /// <inheritdoc />
-public class MinimumSumOfFourDigitNumberAfterSplittingDigitsChars : IMinimumSumOfFourDigitNumberAfterSplittingDigits
+public sealed class MinimumSumOfFourDigitNumberAfterSplittingDigitsChars : IMinimumSumOfFourDigitNumberAfterSplittingDigits
 {
     /// <summary>
     ///     Time complexity - O(n log n)

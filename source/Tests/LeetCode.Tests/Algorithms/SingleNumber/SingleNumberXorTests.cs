@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SingleNumber;
 namespace LeetCode.Tests.Algorithms.SingleNumber;
 
 [TestClass]
-public class SingleNumberXorTests : SingleNumberTestsBase<SingleNumberXor>;
+public sealed class SingleNumberXorTests : SingleNumberTestsBase<SingleNumberXor>;

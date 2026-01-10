@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TwentyFourGame;
 namespace LeetCode.Tests.Algorithms.TwentyFourGame;
 
 [TestClass]
-public class TwentyFourGameBruteForceTests : TwentyFourGameTestsBase<TwentyFourGameBruteForce>;
+public sealed class TwentyFourGameBruteForceTests : TwentyFourGameTestsBase<TwentyFourGameBruteForce>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.IslandPerimeter;
 
 /// <inheritdoc />
-public class IslandPerimeterIterative : IIslandPerimeter
+public sealed class IslandPerimeterIterative : IIslandPerimeter
 {
     /// <summary>
     ///     Time complexity - O(n * m)

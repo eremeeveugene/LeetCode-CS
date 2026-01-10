@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RemoveElement;
 namespace LeetCode.Tests.Algorithms.RemoveElement;
 
 [TestClass]
-public class RemoveElementTwoPointersTests : RemoveElementTestsBase<RemoveElementTwoPointers>;
+public sealed class RemoveElementTwoPointersTests : RemoveElementTestsBase<RemoveElementTwoPointers>;

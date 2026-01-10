@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ValidArrangementOfPairs;
 
 /// <inheritdoc />
-public class ValidArrangementOfPairsDepthFirstSearch : IValidArrangementOfPairs
+public sealed class ValidArrangementOfPairsDepthFirstSearch : IValidArrangementOfPairs
 {
     /// <summary>
     ///     Time complexity - O(E + V), where E is the number of edges (pairs) and V is the number of vertices (unique nodes)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.IsSubsequence;
 namespace LeetCode.Tests.Algorithms.IsSubsequence;
 
 [TestClass]
-public class IsSubsequenceIterativeTests : IsSubsequenceTestsBase<IsSubsequenceIterative>;
+public sealed class IsSubsequenceIterativeTests : IsSubsequenceTestsBase<IsSubsequenceIterative>;

@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.PalindromeLinkedList;
 
 /// <inheritdoc />
-public class PalindromeLinkedListTwoPointers : IPalindromeLinkedList
+public sealed class PalindromeLinkedListTwoPointers : IPalindromeLinkedList
 {
     /// <summary>
     ///     Time complexity - O(n)

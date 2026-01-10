@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ContiguousArray;
 
 /// <inheritdoc />
-public class ContiguousArrayDictionary : IContiguousArray
+public sealed class ContiguousArrayDictionary : IContiguousArray
 {
     /// <summary>
     ///     Time complexity - O(n)

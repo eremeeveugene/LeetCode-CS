@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.SmallestSubtreeWithAllTheDeepestNodes;
 
 /// <inheritdoc />
-public class SmallestSubtreeWithAllTheDeepestNodesDepthFirstSearch : ISmallestSubtreeWithAllTheDeepestNodes
+public sealed class SmallestSubtreeWithAllTheDeepestNodesDepthFirstSearch : ISmallestSubtreeWithAllTheDeepestNodes
 {
     /// <summary>
     ///     Time complexity - O(n)

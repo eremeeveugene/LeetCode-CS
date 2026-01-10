@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray;
 
 /// <inheritdoc />
-public class MaximumProductOfTwoElementsInAnArraySecondMax : IMaximumProductOfTwoElementsInAnArray
+public sealed class MaximumProductOfTwoElementsInAnArraySecondMax : IMaximumProductOfTwoElementsInAnArray
 {
     /// <summary>
     ///     Time complexity - O(n)

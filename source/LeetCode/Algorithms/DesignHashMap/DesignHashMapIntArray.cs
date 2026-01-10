@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignHashMap;
 
 /// <inheritdoc />
-public class DesignHashMapIntArray : IDesignHashMap
+public sealed class DesignHashMapIntArray : IDesignHashMap
 {
     private readonly int[] _items = new int[1_000_001];
 

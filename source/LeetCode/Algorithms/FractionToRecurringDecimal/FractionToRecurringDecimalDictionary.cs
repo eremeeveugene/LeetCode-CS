@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.FractionToRecurringDecimal;
 
 /// <inheritdoc />
-public class FractionToRecurringDecimalDictionary : IFractionToRecurringDecimal
+public sealed class FractionToRecurringDecimalDictionary : IFractionToRecurringDecimal
 {
     private const string Zero = "0";
     private const char Minus = '-';

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.LongestSubarrayOfOnesAfterDeletingOneElement;
 namespace LeetCode.Tests.Algorithms.LongestSubarrayOfOnesAfterDeletingOneElement;
 
 [TestClass]
-public class LongestSubarrayOfOnesAfterDeletingOneElementCountingTests :
+public sealed class LongestSubarrayOfOnesAfterDeletingOneElementCountingTests :
     LongestSubarrayOfOnesAfterDeletingOneElementTestsBase<LongestSubarrayOfOnesAfterDeletingOneElementCounting>;

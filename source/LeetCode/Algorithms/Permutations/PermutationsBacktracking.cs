@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.Permutations;
 
 /// <inheritdoc />
-public class PermutationsBacktracking : IPermutations
+public sealed class PermutationsBacktracking : IPermutations
 {
     /// <summary>
     ///     Time complexity - O(n * n!)

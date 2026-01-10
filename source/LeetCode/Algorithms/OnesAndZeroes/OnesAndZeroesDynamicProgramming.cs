@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.OnesAndZeroes;
 
 /// <inheritdoc />
-public class OnesAndZeroesDynamicProgramming : IOnesAndZeroes
+public sealed class OnesAndZeroesDynamicProgramming : IOnesAndZeroes
 {
     /// <summary>
     ///     Time complexity - O(l * m * n), where l is the length of strs

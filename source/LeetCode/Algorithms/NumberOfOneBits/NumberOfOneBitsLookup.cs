@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfOneBits;
 
 /// <inheritdoc />
-public class NumberOfOneBitsLookup : INumberOfOneBits
+public sealed class NumberOfOneBitsLookup : INumberOfOneBits
 {
     private static readonly int[] WordBits = new int[65536];
 

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RemoveSubFoldersFromTheFilesystem;
 
 /// <inheritdoc />
-public class RemoveSubFoldersFromTheFilesystemHashSet : IRemoveSubFoldersFromTheFilesystem
+public sealed class RemoveSubFoldersFromTheFilesystemHashSet : IRemoveSubFoldersFromTheFilesystem
 {
     /// <summary>
     ///     Time complexity - O(n * m^2)

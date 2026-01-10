@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK;
 
 /// <inheritdoc />
-public class CheckIfArrayPairsAreDivisibleByKArray : ICheckIfArrayPairsAreDivisibleByK
+public sealed class CheckIfArrayPairsAreDivisibleByKArray : ICheckIfArrayPairsAreDivisibleByK
 {
     /// <summary>
     ///     Time complexity - O(n)

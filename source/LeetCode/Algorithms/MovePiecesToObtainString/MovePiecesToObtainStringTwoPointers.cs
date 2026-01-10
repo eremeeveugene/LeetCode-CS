@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MovePiecesToObtainString;
 
 /// <inheritdoc />
-public class MovePiecesToObtainStringTwoPointers : IMovePiecesToObtainString
+public sealed class MovePiecesToObtainStringTwoPointers : IMovePiecesToObtainString
 {
     /// <summary>
     ///     Time complexity - O(n)

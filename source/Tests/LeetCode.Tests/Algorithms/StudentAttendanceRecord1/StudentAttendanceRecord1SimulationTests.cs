@@ -14,5 +14,5 @@ using LeetCode.Algorithms.StudentAttendanceRecord1;
 namespace LeetCode.Tests.Algorithms.StudentAttendanceRecord1;
 
 [TestClass]
-public class StudentAttendanceRecord1SimulationTests :
+public sealed class StudentAttendanceRecord1SimulationTests :
     StudentAttendanceRecord1TestsBase<StudentAttendanceRecord1Simulation>;

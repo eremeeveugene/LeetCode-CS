@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimizeXOR;
 
 /// <inheritdoc />
-public class MinimizeXORBitwise : IMinimizeXOR
+public sealed class MinimizeXORBitwise : IMinimizeXOR
 {
     /// <summary>
     ///     Time complexity - O(1)

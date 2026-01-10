@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindThePunishmentNumberOfInteger;
 
 /// <inheritdoc />
-public class FindThePunishmentNumberOfIntegerRecursive : IFindThePunishmentNumberOfInteger
+public sealed class FindThePunishmentNumberOfIntegerRecursive : IFindThePunishmentNumberOfInteger
 {
     /// <summary>
     ///     Time complexity - O(n * 2^(log10 n))

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfAllOnesAreAtLeastLengthKPlacesAway;
 
 /// <inheritdoc />
-public class CheckIfAllOnesAreAtLeastLengthKPlacesAwayDistanceCounting : ICheckIfAllOnesAreAtLeastLengthKPlacesAway
+public sealed class CheckIfAllOnesAreAtLeastLengthKPlacesAwayDistanceCounting : ICheckIfAllOnesAreAtLeastLengthKPlacesAway
 {
     /// <summary>
     ///     Time complexity - O(n)

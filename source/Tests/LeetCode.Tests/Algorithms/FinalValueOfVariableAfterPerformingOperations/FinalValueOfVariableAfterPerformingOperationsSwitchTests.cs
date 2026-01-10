@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations;
 namespace LeetCode.Tests.Algorithms.FinalValueOfVariableAfterPerformingOperations;
 
 [TestClass]
-public class FinalValueOfVariableAfterPerformingOperationsSwitchTests :
+public sealed class FinalValueOfVariableAfterPerformingOperationsSwitchTests :
     FinalValueOfVariableAfterPerformingOperationsTestsBase<FinalValueOfVariableAfterPerformingOperationsSwitch>;

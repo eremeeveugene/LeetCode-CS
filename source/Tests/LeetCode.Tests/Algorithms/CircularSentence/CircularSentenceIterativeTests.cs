@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CircularSentence;
 namespace LeetCode.Tests.Algorithms.CircularSentence;
 
 [TestClass]
-public class CircularSentenceIterativeTests : CircularSentenceTestsBase<CircularSentenceIterative>;
+public sealed class CircularSentenceIterativeTests : CircularSentenceTestsBase<CircularSentenceIterative>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ReplaceWords;
 
 /// <inheritdoc />
-public class ReplaceWordsBruteForce : IReplaceWords
+public sealed class ReplaceWordsBruteForce : IReplaceWords
 {
     /// <summary>
     ///     Time complexity - O(m + n log n + k * n * L), where n is the number of words in the dictionary, m is the length of

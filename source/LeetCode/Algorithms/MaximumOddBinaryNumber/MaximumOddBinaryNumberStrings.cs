@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumOddBinaryNumber;
 
 /// <inheritdoc />
-public class MaximumOddBinaryNumberStrings : IMaximumOddBinaryNumber
+public sealed class MaximumOddBinaryNumberStrings : IMaximumOddBinaryNumber
 {
     /// <summary>
     ///     Time complexity - O(n)

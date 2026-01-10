@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CountElementsWithMaximumFrequency;
 namespace LeetCode.Tests.Algorithms.CountElementsWithMaximumFrequency;
 
 [TestClass]
-public class CountElementsWithMaximumFrequencyArrayTests :
+public sealed class CountElementsWithMaximumFrequencyArrayTests :
     CountElementsWithMaximumFrequencyTestsBase<CountElementsWithMaximumFrequencyArray>;

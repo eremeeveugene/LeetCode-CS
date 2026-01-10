@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.UniqueLength3PalindromicSubsequences;
 
 /// <inheritdoc />
-public class UniqueLength3PalindromicSubsequencesBruteForce : IUniqueLength3PalindromicSubsequences
+public sealed class UniqueLength3PalindromicSubsequencesBruteForce : IUniqueLength3PalindromicSubsequences
 {
     /// <summary>
     ///     Time complexity - O(n^3)

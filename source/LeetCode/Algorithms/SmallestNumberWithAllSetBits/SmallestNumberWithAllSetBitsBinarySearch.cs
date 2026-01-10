@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SmallestNumberWithAllSetBits;
 
 /// <inheritdoc />
-public class SmallestNumberWithAllSetBitsBinarySearch : ISmallestNumberWithAllSetBits
+public sealed class SmallestNumberWithAllSetBitsBinarySearch : ISmallestNumberWithAllSetBits
 {
     private static readonly int[] Numbers =
     [

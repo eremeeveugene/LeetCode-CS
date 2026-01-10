@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR;
 namespace LeetCode.Tests.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR;
 
 [TestClass]
-public class CountTripletsThatCanFormTwoArraysOfEqualXORIterativeTests :
+public sealed class CountTripletsThatCanFormTwoArraysOfEqualXORIterativeTests :
     CountTripletsThatCanFormTwoArraysOfEqualXORTestsBase<CountTripletsThatCanFormTwoArraysOfEqualXORIterative>;

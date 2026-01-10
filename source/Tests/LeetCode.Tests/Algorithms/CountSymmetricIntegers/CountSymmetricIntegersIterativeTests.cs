@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CountSymmetricIntegers;
 namespace LeetCode.Tests.Algorithms.CountSymmetricIntegers;
 
 [TestClass]
-public class CountSymmetricIntegersIterativeTests : CountSymmetricIntegersTestsBase<CountSymmetricIntegersIterative>;
+public sealed class CountSymmetricIntegersIterativeTests : CountSymmetricIntegersTestsBase<CountSymmetricIntegersIterative>;

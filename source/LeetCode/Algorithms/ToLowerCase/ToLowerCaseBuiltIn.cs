@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ToLowerCase;
 
 /// <inheritdoc />
-public class ToLowerCaseBuiltIn : IToLowerCase
+public sealed class ToLowerCaseBuiltIn : IToLowerCase
 {
     /// <summary>
     ///     Time complexity - O(n)

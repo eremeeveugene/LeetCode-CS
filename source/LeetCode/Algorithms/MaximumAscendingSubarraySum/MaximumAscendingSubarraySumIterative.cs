@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumAscendingSubarraySum;
 
 /// <inheritdoc />
-public class MaximumAscendingSubarraySumIterative : IMaximumAscendingSubarraySum
+public sealed class MaximumAscendingSubarraySumIterative : IMaximumAscendingSubarraySum
 {
     /// <summary>
     ///     Time complexity - O(n)

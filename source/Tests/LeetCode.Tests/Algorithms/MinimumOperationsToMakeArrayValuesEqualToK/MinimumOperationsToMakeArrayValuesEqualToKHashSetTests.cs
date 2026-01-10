@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK;
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK;
 
 [TestClass]
-public class MinimumOperationsToMakeArrayValuesEqualToKHashSetTests :
+public sealed class MinimumOperationsToMakeArrayValuesEqualToKHashSetTests :
     MinimumOperationsToMakeArrayValuesEqualToKTestsBase<MinimumOperationsToMakeArrayValuesEqualToKHashSet>;

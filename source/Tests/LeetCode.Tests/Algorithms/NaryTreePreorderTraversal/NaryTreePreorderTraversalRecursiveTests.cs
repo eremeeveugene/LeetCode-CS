@@ -14,5 +14,5 @@ using LeetCode.Algorithms.NaryTreePreorderTraversal;
 namespace LeetCode.Tests.Algorithms.NaryTreePreorderTraversal;
 
 [TestClass]
-public class NaryTreePreorderTraversalRecursiveTests :
+public sealed class NaryTreePreorderTraversalRecursiveTests :
     NaryTreePreorderTraversalTestsBase<NaryTreePreorderTraversalRecursive>;

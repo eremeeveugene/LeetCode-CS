@@ -14,6 +14,6 @@ using LeetCode.Algorithms.MaximizeTheNumberOfTargetNodesAfterConnectingTrees1;
 namespace LeetCode.Tests.Algorithms.MaximizeTheNumberOfTargetNodesAfterConnectingTrees1;
 
 [TestClass]
-public class MaximizeTheNumberOfTargetNodesAfterConnectingTrees1DepthFirstSearchTests :
+public sealed class MaximizeTheNumberOfTargetNodesAfterConnectingTrees1DepthFirstSearchTests :
     MaximizeTheNumberOfTargetNodesAfterConnectingTrees1TestsBase<
         MaximizeTheNumberOfTargetNodesAfterConnectingTrees1DepthFirstSearch>;

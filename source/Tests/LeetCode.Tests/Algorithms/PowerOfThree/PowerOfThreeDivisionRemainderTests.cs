@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PowerOfThree;
 namespace LeetCode.Tests.Algorithms.PowerOfThree;
 
 [TestClass]
-public class PowerOfThreeDivisionRemainderTests : PowerOfThreeTestsBase<PowerOfThreeDivisionRemainder>;
+public sealed class PowerOfThreeDivisionRemainderTests : PowerOfThreeTestsBase<PowerOfThreeDivisionRemainder>;

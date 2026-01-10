@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.FindModeInBinarySearchTree;
 
 /// <inheritdoc />
-public class FindModeInBinarySearchTreeDepthFirstSearchStack : IFindModeInBinarySearchTree
+public sealed class FindModeInBinarySearchTreeDepthFirstSearchStack : IFindModeInBinarySearchTree
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountingWordsWithGivenPrefix;
 
 /// <inheritdoc />
-public class CountingWordsWithGivenPrefixIterative : ICountingWordsWithGivenPrefix
+public sealed class CountingWordsWithGivenPrefixIterative : ICountingWordsWithGivenPrefix
 {
     public int PrefixCount(string[] words, string pref)
     {

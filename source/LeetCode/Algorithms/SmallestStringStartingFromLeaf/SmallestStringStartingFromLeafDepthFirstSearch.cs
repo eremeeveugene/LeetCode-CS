@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.SmallestStringStartingFromLeaf;
 
 /// <inheritdoc />
-public class SmallestStringStartingFromLeafDepthFirstSearch : ISmallestStringStartingFromLeaf
+public sealed class SmallestStringStartingFromLeafDepthFirstSearch : ISmallestStringStartingFromLeaf
 {
     private string? _smallestString;
 

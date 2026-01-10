@@ -14,4 +14,4 @@ using LeetCode.Algorithms.BuyTwoChocolates;
 namespace LeetCode.Tests.Algorithms.BuyTwoChocolates;
 
 [TestClass]
-public class BuyTwoChocolatesSortingTests : BuyTwoChocolatesTestsBase<BuyTwoChocolatesSorting>;
+public sealed class BuyTwoChocolatesSortingTests : BuyTwoChocolatesTestsBase<BuyTwoChocolatesSorting>;

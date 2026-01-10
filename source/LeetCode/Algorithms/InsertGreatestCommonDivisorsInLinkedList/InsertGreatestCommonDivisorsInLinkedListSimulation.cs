@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.InsertGreatestCommonDivisorsInLinkedList;
 
 /// <inheritdoc />
-public class InsertGreatestCommonDivisorsInLinkedListSimulation : IInsertGreatestCommonDivisorsInLinkedList
+public sealed class InsertGreatestCommonDivisorsInLinkedListSimulation : IInsertGreatestCommonDivisorsInLinkedList
 {
     /// <summary>
     ///     Time complexity - O(n * log min(a,b))

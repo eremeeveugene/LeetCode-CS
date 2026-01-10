@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CheckIfOneStringSwapCanMakeStringsEqual;
 namespace LeetCode.Tests.Algorithms.CheckIfOneStringSwapCanMakeStringsEqual;
 
 [TestClass]
-public class CheckIfOneStringSwapCanMakeStringsEqualIterativeTests :
+public sealed class CheckIfOneStringSwapCanMakeStringsEqualIterativeTests :
     CheckIfOneStringSwapCanMakeStringsEqualTestsBase<CheckIfOneStringSwapCanMakeStringsEqualIterative>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.IntersectionOfTwoArrays;
 
 /// <inheritdoc />
-public class IntersectionOfTwoArraysHashSetIntersectWith : IIntersectionOfTwoArrays
+public sealed class IntersectionOfTwoArraysHashSetIntersectWith : IIntersectionOfTwoArrays
 {
     /// <summary>
     ///     Time complexity - O(n1 + n2 + min(n1, n2) + m)

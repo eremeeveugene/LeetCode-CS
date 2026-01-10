@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RescheduleMeetingsForMaximumFreeTime1;
 
 /// <inheritdoc />
-public class RescheduleMeetingsForMaximumFreeTime1Greedy : IRescheduleMeetingsForMaximumFreeTime1
+public sealed class RescheduleMeetingsForMaximumFreeTime1Greedy : IRescheduleMeetingsForMaximumFreeTime1
 {
     /// <summary>
     ///     Time complexity - O(n)

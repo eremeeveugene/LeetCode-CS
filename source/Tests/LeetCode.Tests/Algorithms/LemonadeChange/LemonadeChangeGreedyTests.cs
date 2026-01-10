@@ -14,4 +14,4 @@ using LeetCode.Algorithms.LemonadeChange;
 namespace LeetCode.Tests.Algorithms.LemonadeChange;
 
 [TestClass]
-public class LemonadeChangeGreedyTests : LemonadeChangeTestsBase<LemonadeChangeGreedy>;
+public sealed class LemonadeChangeGreedyTests : LemonadeChangeTestsBase<LemonadeChangeGreedy>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RotateString;
 
 /// <inheritdoc />
-public class RotateStringBruteForce : IRotateString
+public sealed class RotateStringBruteForce : IRotateString
 {
     /// <summary>
     ///     Time complexity - O(n^2)

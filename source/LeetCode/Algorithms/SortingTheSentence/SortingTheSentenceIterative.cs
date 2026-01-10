@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SortingTheSentence;
 
 /// <inheritdoc />
-public class SortingTheSentenceIterative : ISortingTheSentence
+public sealed class SortingTheSentenceIterative : ISortingTheSentence
 {
     /// <summary>
     ///     Time complexity - O(n + m * l), where n is the length of the input string, m is the number of words, and l is

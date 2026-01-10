@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfWonderfulSubstrings;
 
 /// <inheritdoc />
-public class NumberOfWonderfulSubstringsDictionary : INumberOfWonderfulSubstrings
+public sealed class NumberOfWonderfulSubstringsDictionary : INumberOfWonderfulSubstrings
 {
     /// <summary>
     ///     Time complexity - O(n * k), where n is the length of the string and k is the number of characters in the alphabet

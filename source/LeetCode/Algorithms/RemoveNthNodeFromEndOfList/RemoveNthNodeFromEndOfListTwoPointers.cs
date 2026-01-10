@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.RemoveNthNodeFromEndOfList;
 
 /// <inheritdoc />
-public class RemoveNthNodeFromEndOfListTwoPointers : IRemoveNthNodeFromEndOfList
+public sealed class RemoveNthNodeFromEndOfListTwoPointers : IRemoveNthNodeFromEndOfList
 {
     /// <summary>
     ///     Time complexity - O(n), where n is the  number of nodes in the linked list

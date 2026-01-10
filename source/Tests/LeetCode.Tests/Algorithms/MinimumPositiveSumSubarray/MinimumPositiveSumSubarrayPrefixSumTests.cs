@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumPositiveSumSubarray;
 namespace LeetCode.Tests.Algorithms.MinimumPositiveSumSubarray;
 
 [TestClass]
-public class MinimumPositiveSumSubarrayPrefixSumTests :
+public sealed class MinimumPositiveSumSubarrayPrefixSumTests :
     MinimumPositiveSumSubarrayTestsBase<MinimumPositiveSumSubarrayPrefixSum>;

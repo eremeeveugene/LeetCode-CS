@@ -14,4 +14,4 @@ using LeetCode.Algorithms.AddToArrayFormOfInteger;
 namespace LeetCode.Tests.Algorithms.AddToArrayFormOfInteger;
 
 [TestClass]
-public class AddToArrayFormOfIntegerSummationTests : AddToArrayFormOfIntegerTestsBase<AddToArrayFormOfIntegerSummation>;
+public sealed class AddToArrayFormOfIntegerSummationTests : AddToArrayFormOfIntegerTestsBase<AddToArrayFormOfIntegerSummation>;

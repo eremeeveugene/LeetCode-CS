@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RangeSumQueryMutable;
 
 /// <inheritdoc />
-public class RangeSumQueryMutableSegmentTree : IRangeSumQueryMutable
+public sealed class RangeSumQueryMutableSegmentTree : IRangeSumQueryMutable
 {
     private readonly int _n;
     private readonly int[] _tree;

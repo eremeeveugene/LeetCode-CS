@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.DivideStringIntoGroupsOfSizeK;
 
 /// <inheritdoc />
-public class DivideStringIntoGroupsOfSizeKSimulation : IDivideStringIntoGroupsOfSizeK
+public sealed class DivideStringIntoGroupsOfSizeKSimulation : IDivideStringIntoGroupsOfSizeK
 {
     /// <summary>
     ///     Time complexity - O(n)

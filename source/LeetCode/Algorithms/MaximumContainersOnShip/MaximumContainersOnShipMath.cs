@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumContainersOnShip;
 
 /// <inheritdoc />
-public class MaximumContainersOnShipMath : IMaximumContainersOnShip
+public sealed class MaximumContainersOnShipMath : IMaximumContainersOnShip
 {
     /// <summary>
     ///     Time complexity - O(1)

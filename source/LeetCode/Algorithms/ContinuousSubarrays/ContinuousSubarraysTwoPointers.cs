@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ContinuousSubarrays;
 
 /// <inheritdoc />
-public class ContinuousSubarraysTwoPointers : IContinuousSubarrays
+public sealed class ContinuousSubarraysTwoPointers : IContinuousSubarrays
 {
     /// <summary>
     ///     Time complexity - O(n)

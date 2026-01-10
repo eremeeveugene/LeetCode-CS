@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfZeroFilledSubarrays;
 
 /// <inheritdoc />
-public class NumberOfZeroFilledSubarraysCounting : INumberOfZeroFilledSubarrays
+public sealed class NumberOfZeroFilledSubarraysCounting : INumberOfZeroFilledSubarrays
 {
     /// <summary>
     ///     Time complexity - O(n)

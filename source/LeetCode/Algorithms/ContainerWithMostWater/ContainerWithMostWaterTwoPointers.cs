@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ContainerWithMostWater;
 
 /// <inheritdoc />
-public class ContainerWithMostWaterTwoPointers : IContainerWithMostWater
+public sealed class ContainerWithMostWaterTwoPointers : IContainerWithMostWater
 {
     /// <summary>
     ///     Time complexity - O(n)

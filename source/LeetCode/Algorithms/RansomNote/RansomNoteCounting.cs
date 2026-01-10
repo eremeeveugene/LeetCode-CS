@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RansomNote;
 
 /// <inheritdoc />
-public class RansomNoteCounting : IRansomNote
+public sealed class RansomNoteCounting : IRansomNote
 {
     /// <summary>
     ///     Time complexity - O(m + n)

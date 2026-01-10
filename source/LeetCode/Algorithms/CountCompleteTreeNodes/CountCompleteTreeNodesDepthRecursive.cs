@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.CountCompleteTreeNodes;
 
 /// <inheritdoc />
-public class CountCompleteTreeNodesDepthRecursive : ICountCompleteTreeNodes
+public sealed class CountCompleteTreeNodesDepthRecursive : ICountCompleteTreeNodes
 {
     /// <summary>
     ///     Time complexity - O(log n)

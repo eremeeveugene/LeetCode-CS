@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.Triangle;
 
 /// <inheritdoc />
-public class TriangleDynamicProgramming : ITriangle
+public sealed class TriangleDynamicProgramming : ITriangle
 {
     /// <summary>
     ///     Time complexity - O(n^2)

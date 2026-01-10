@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TargetSum;
 namespace LeetCode.Tests.Algorithms.TargetSum;
 
 [TestClass]
-public class TargetSumRecursionTests : TargetSumTestsBase<TargetSumRecursion>;
+public sealed class TargetSumRecursionTests : TargetSumTestsBase<TargetSumRecursion>;

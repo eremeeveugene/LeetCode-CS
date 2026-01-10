@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ConvertTheTemperature;
 
 /// <inheritdoc />
-public class ConvertTheTemperatureMath : IConvertTheTemperature
+public sealed class ConvertTheTemperatureMath : IConvertTheTemperature
 {
     /// <summary>
     ///     Time complexity - O(1)

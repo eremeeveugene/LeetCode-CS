@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk;
 
 /// <inheritdoc />
-public class FindTheStudentThatWillReplaceTheChalkPrefixSum : IFindTheStudentThatWillReplaceTheChalk
+public sealed class FindTheStudentThatWillReplaceTheChalkPrefixSum : IFindTheStudentThatWillReplaceTheChalk
 {
     /// <summary>
     ///     Time complexity - O(n)

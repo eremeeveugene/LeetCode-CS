@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.StoneGame2;
 
 /// <inheritdoc />
-public class StoneGame2DynamicProgramming : IStoneGame2
+public sealed class StoneGame2DynamicProgramming : IStoneGame2
 {
     /// <summary>
     ///     Time complexity - O(n^3)

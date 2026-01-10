@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ReverseVowelsOfString;
 namespace LeetCode.Tests.Algorithms.ReverseVowelsOfString;
 
 [TestClass]
-public class ReverseVowelsOfStringTwoPointersTests : ReverseVowelsOfStringTestsBase<ReverseVowelsOfStringTwoPointers>;
+public sealed class ReverseVowelsOfStringTwoPointersTests : ReverseVowelsOfStringTestsBase<ReverseVowelsOfStringTwoPointers>;

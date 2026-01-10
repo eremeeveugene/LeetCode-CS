@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumCostToReachEveryPosition;
 
 /// <inheritdoc />
-public class MinimumCostToReachEveryPositionGreedy : IMinimumCostToReachEveryPosition
+public sealed class MinimumCostToReachEveryPositionGreedy : IMinimumCostToReachEveryPosition
 {
     /// <summary>
     ///     Time complexity - O(n)

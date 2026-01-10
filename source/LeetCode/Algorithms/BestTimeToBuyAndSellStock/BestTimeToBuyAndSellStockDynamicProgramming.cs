@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.BestTimeToBuyAndSellStock;
 
 /// <inheritdoc />
-public class BestTimeToBuyAndSellStockDynamicProgramming : IBestTimeToBuyAndSellStock
+public sealed class BestTimeToBuyAndSellStockDynamicProgramming : IBestTimeToBuyAndSellStock
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumEqualSumOfTwoArraysAfterReplacingZeros;
 namespace LeetCode.Tests.Algorithms.MinimumEqualSumOfTwoArraysAfterReplacingZeros;
 
 [TestClass]
-public class MinimumEqualSumOfTwoArraysAfterReplacingZerosGreedyTests :
+public sealed class MinimumEqualSumOfTwoArraysAfterReplacingZerosGreedyTests :
     MinimumEqualSumOfTwoArraysAfterReplacingZerosTestsBase<MinimumEqualSumOfTwoArraysAfterReplacingZerosGreedy>;

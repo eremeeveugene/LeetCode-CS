@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheMaximumAchievableNumber;
 
 /// <inheritdoc />
-public class FindTheMaximumAchievableNumberLinear : IFindTheMaximumAchievableNumber
+public sealed class FindTheMaximumAchievableNumberLinear : IFindTheMaximumAchievableNumber
 {
     /// <summary>
     ///     Time complexity - O(1)

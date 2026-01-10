@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict;
 
 /// <inheritdoc />
-public class DetermineIfTwoEventsHaveConflictStringComparison : IDetermineIfTwoEventsHaveConflict
+public sealed class DetermineIfTwoEventsHaveConflictStringComparison : IDetermineIfTwoEventsHaveConflict
 {
     /// <summary>
     ///     Time complexity - O(n)

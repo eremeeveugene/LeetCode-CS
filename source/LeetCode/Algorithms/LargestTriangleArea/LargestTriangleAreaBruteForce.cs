@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LargestTriangleArea;
 
 /// <inheritdoc />
-public class LargestTriangleAreaBruteForce : ILargestTriangleArea
+public sealed class LargestTriangleAreaBruteForce : ILargestTriangleArea
 {
     /// <summary>
     ///     Time complexity - O(n^3)

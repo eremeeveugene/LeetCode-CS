@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MinimumCommonValue;
 namespace LeetCode.Tests.Algorithms.MinimumCommonValue;
 
 [TestClass]
-public class MinimumCommonValueTwoPointersTests : MinimumCommonValueTestsBase<MinimumCommonValueTwoPointers>;
+public sealed class MinimumCommonValueTwoPointersTests : MinimumCommonValueTestsBase<MinimumCommonValueTwoPointers>;

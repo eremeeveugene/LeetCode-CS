@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ValidParentheses;
 
 /// <inheritdoc />
-public class ValidParenthesesStackDictionary : IValidParentheses
+public sealed class ValidParenthesesStackDictionary : IValidParentheses
 {
     private readonly Dictionary<char, char> _parenthesesDictionary = new() { { ')', '(' }, { '}', '{' }, { ']', '[' } };
 

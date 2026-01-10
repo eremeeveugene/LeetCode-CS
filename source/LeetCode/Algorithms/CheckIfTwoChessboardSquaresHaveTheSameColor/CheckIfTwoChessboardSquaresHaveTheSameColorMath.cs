@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfTwoChessboardSquaresHaveTheSameColor;
 
 /// <inheritdoc />
-public class CheckIfTwoChessboardSquaresHaveTheSameColorMath : CheckIfTwoChessboardSquaresHaveTheSameColorBase
+public sealed class CheckIfTwoChessboardSquaresHaveTheSameColorMath : CheckIfTwoChessboardSquaresHaveTheSameColorBase
 {
     /// <summary>
     ///     Time complexity - O(1)

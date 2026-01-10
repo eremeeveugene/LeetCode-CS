@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CalculateDelayedArrivalTime;
 
 /// <inheritdoc />
-public class CalculateDelayedArrivalTimeConstant : ICalculateDelayedArrivalTime
+public sealed class CalculateDelayedArrivalTimeConstant : ICalculateDelayedArrivalTime
 {
     /// <summary>
     ///     Time complexity - O(1)

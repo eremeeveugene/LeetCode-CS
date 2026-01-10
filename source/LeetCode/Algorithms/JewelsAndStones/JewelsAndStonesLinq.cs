@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.JewelsAndStones;
 
 /// <inheritdoc />
-public class JewelsAndStonesLinq : IJewelsAndStones
+public sealed class JewelsAndStonesLinq : IJewelsAndStones
 {
     /// <summary>
     ///     Time complexity - O(n * m)

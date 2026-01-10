@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheNumberOfDistinctColorsAmongTheBalls;
 
 /// <inheritdoc />
-public class FindTheNumberOfDistinctColorsAmongTheBallsDictionary : IFindTheNumberOfDistinctColorsAmongTheBalls
+public sealed class FindTheNumberOfDistinctColorsAmongTheBallsDictionary : IFindTheNumberOfDistinctColorsAmongTheBalls
 {
     /// <summary>
     ///     Time complexity - O(n)

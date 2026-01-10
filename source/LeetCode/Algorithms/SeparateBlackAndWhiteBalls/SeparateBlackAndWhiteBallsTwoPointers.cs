@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SeparateBlackAndWhiteBalls;
 
 /// <inheritdoc />
-public class SeparateBlackAndWhiteBallsTwoPointers : ISeparateBlackAndWhiteBalls
+public sealed class SeparateBlackAndWhiteBallsTwoPointers : ISeparateBlackAndWhiteBalls
 {
     /// <summary>
     ///     Time complexity - O(n)

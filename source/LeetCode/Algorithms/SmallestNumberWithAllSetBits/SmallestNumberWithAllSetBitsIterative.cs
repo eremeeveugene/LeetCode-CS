@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SmallestNumberWithAllSetBits;
 
 /// <inheritdoc />
-public class SmallestNumberWithAllSetBitsIterative : ISmallestNumberWithAllSetBits
+public sealed class SmallestNumberWithAllSetBitsIterative : ISmallestNumberWithAllSetBits
 {
     /// <summary>
     ///     Time complexity - O(n)

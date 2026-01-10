@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfOneStringSwapCanMakeStringsEqual;
 
 /// <inheritdoc />
-public class CheckIfOneStringSwapCanMakeStringsEqualIterative : ICheckIfOneStringSwapCanMakeStringsEqual
+public sealed class CheckIfOneStringSwapCanMakeStringsEqualIterative : ICheckIfOneStringSwapCanMakeStringsEqual
 {
     /// <summary>
     ///     Time complexity - O(n)

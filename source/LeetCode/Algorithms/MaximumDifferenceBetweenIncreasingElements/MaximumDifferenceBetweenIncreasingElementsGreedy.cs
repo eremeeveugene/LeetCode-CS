@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumDifferenceBetweenIncreasingElements;
 
 /// <inheritdoc />
-public class MaximumDifferenceBetweenIncreasingElementsGreedy : IMaximumDifferenceBetweenIncreasingElements
+public sealed class MaximumDifferenceBetweenIncreasingElementsGreedy : IMaximumDifferenceBetweenIncreasingElements
 {
     /// <summary>
     ///     Time complexity - O(n)

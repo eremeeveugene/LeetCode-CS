@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindThePivotInteger;
 
 /// <inheritdoc />
-public class FindThePivotIntegerConstant : IFindThePivotInteger
+public sealed class FindThePivotIntegerConstant : IFindThePivotInteger
 {
     /// <summary>
     ///     Time complexity - O(1)

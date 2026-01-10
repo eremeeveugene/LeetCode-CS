@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaxChunksToMakeSorted;
 
 /// <inheritdoc />
-public class MaxChunksToMakeSortedIterative : IMaxChunksToMakeSorted
+public sealed class MaxChunksToMakeSortedIterative : IMaxChunksToMakeSorted
 {
     /// <summary>
     ///     Time complexity - O(n)

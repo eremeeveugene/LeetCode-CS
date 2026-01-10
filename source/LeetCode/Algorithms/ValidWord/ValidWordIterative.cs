@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ValidWord;
 
 /// <inheritdoc />
-public class ValidWordIterative : IValidWord
+public sealed class ValidWordIterative : IValidWord
 {
     private static readonly HashSet<char> Vowels =
     [

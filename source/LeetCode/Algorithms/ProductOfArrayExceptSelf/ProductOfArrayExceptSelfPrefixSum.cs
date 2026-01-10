@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ProductOfArrayExceptSelf;
 
 /// <inheritdoc />
-public class ProductOfArrayExceptSelfPrefixSum : IProductOfArrayExceptSelf
+public sealed class ProductOfArrayExceptSelfPrefixSum : IProductOfArrayExceptSelf
 {
     /// <summary>
     ///     Time complexity - O(n)

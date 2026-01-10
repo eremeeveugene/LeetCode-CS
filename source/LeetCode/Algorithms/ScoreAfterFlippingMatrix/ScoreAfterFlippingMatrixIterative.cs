@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ScoreAfterFlippingMatrix;
 
 /// <inheritdoc />
-public class ScoreAfterFlippingMatrixIterative : IScoreAfterFlippingMatrix
+public sealed class ScoreAfterFlippingMatrixIterative : IScoreAfterFlippingMatrix
 {
     /// <summary>
     ///     Time complexity - O(m * n)

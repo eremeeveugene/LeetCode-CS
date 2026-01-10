@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FindClosestPerson;
 namespace LeetCode.Tests.Algorithms.FindClosestPerson;
 
 [TestClass]
-public class FindClosestPersonMathTests : FindClosestPersonTestsBase<FindClosestPersonMath>;
+public sealed class FindClosestPersonMathTests : FindClosestPersonTestsBase<FindClosestPersonMath>;

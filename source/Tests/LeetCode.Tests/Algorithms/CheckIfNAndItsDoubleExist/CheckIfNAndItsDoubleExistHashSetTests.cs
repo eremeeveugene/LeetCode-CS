@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CheckIfNAndItsDoubleExist;
 namespace LeetCode.Tests.Algorithms.CheckIfNAndItsDoubleExist;
 
 [TestClass]
-public class CheckIfNAndItsDoubleExistHashSetTests :
+public sealed class CheckIfNAndItsDoubleExistHashSetTests :
     CheckIfNAndItsDoubleExistTestsBase<CheckIfNAndItsDoubleExistHashSet>;

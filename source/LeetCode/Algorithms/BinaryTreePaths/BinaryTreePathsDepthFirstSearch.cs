@@ -15,7 +15,7 @@ using System.Text;
 namespace LeetCode.Algorithms.BinaryTreePaths;
 
 /// <inheritdoc />
-public class BinaryTreePathsDepthFirstSearch : IBinaryTreePaths
+public sealed class BinaryTreePathsDepthFirstSearch : IBinaryTreePaths
 {
     /// <summary>
     ///     Time complexity - O(n)

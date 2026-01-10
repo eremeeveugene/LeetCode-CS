@@ -18,7 +18,7 @@ namespace LeetCode.Core.Models;
 /// <summary>
 ///     Definition for singly-linked list
 /// </summary>
-public class ListNode
+public sealed class ListNode
 {
     public ListNode? next;
 

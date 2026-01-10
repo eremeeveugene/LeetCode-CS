@@ -14,5 +14,5 @@ using LeetCode.Algorithms.WaysToExpressAnIntegerAsSumOfPowers;
 namespace LeetCode.Tests.Algorithms.WaysToExpressAnIntegerAsSumOfPowers;
 
 [TestClass]
-public class WaysToExpressAnIntegerAsSumOfPowersDynamicProgrammingTests :
+public sealed class WaysToExpressAnIntegerAsSumOfPowersDynamicProgrammingTests :
     WaysToExpressAnIntegerAsSumOfPowersTestsBase<WaysToExpressAnIntegerAsSumOfPowersDynamicProgramming>;

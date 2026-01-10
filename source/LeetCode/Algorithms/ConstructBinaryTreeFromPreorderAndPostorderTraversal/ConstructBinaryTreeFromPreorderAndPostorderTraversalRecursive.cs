@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTraversal;
 
 /// <inheritdoc />
-public class ConstructBinaryTreeFromPreorderAndPostorderTraversalRecursive :
+public sealed class ConstructBinaryTreeFromPreorderAndPostorderTraversalRecursive :
     IConstructBinaryTreeFromPreorderAndPostorderTraversal
 {
     /// <summary>

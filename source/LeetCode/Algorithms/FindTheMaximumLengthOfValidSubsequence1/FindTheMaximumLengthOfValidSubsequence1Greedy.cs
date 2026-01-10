@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheMaximumLengthOfValidSubsequence1;
 
 /// <inheritdoc />
-public class FindTheMaximumLengthOfValidSubsequence1Greedy : IFindTheMaximumLengthOfValidSubsequence1
+public sealed class FindTheMaximumLengthOfValidSubsequence1Greedy : IFindTheMaximumLengthOfValidSubsequence1
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.InvertBinaryTree;
 namespace LeetCode.Tests.Algorithms.InvertBinaryTree;
 
 [TestClass]
-public class InvertBinaryTreeDepthFirstSearchStackTests :
+public sealed class InvertBinaryTreeDepthFirstSearchStackTests :
     InvertBinaryTreeTestsBase<InvertBinaryTreeDepthFirstSearchStack>;

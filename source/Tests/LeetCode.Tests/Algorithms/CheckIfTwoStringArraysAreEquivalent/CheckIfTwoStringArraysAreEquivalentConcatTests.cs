@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent;
 namespace LeetCode.Tests.Algorithms.CheckIfTwoStringArraysAreEquivalent;
 
 [TestClass]
-public class CheckIfTwoStringArraysAreEquivalentConcatTests : CheckIfTwoStringArraysAreEquivalentTestsBase<
+public sealed class CheckIfTwoStringArraysAreEquivalentConcatTests : CheckIfTwoStringArraysAreEquivalentTestsBase<
     CheckIfTwoStringArraysAreEquivalentConcat>;

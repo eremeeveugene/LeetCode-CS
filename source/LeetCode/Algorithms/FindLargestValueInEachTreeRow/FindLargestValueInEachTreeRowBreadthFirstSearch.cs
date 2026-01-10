@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.FindLargestValueInEachTreeRow;
 
 /// <inheritdoc />
-public class FindLargestValueInEachTreeRowBreadthFirstSearch : IFindLargestValueInEachTreeRow
+public sealed class FindLargestValueInEachTreeRowBreadthFirstSearch : IFindLargestValueInEachTreeRow
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.AverageSalaryExcludingTheMinimumAndMaximumSalary;
 
 /// <inheritdoc />
-public class AverageSalaryExcludingTheMinimumAndMaximumSalaryIterative :
+public sealed class AverageSalaryExcludingTheMinimumAndMaximumSalaryIterative :
     IAverageSalaryExcludingTheMinimumAndMaximumSalary
 {
     /// <summary>

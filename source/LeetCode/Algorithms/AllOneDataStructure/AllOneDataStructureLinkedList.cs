@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.AllOneDataStructure;
 
 /// <inheritdoc />
-public class AllOneDataStructureLinkedList : IAllOneDataStructure
+public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
 {
     private readonly Node _headNode = new(int.MinValue);
     private readonly Dictionary<string, Node> _keyNodeDictionary = new();

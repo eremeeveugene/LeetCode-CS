@@ -14,4 +14,4 @@ using LeetCode.Algorithms.AddOneRowToTree;
 namespace LeetCode.Tests.Algorithms.AddOneRowToTree;
 
 [TestClass]
-public class AddOneRowToTreeDepthFirstSearchTests : AddOneRowToTreeTestsBase<AddOneRowToTreeDepthFirstSearch>;
+public sealed class AddOneRowToTreeDepthFirstSearchTests : AddOneRowToTreeTestsBase<AddOneRowToTreeDepthFirstSearch>;

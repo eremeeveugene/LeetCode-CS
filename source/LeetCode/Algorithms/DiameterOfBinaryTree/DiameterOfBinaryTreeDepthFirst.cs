@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.DiameterOfBinaryTree;
 
 /// <inheritdoc />
-public class DiameterOfBinaryTreeDepthFirst : IDiameterOfBinaryTree
+public sealed class DiameterOfBinaryTreeDepthFirst : IDiameterOfBinaryTree
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DefuseTheBomb;
 
 /// <inheritdoc />
-public class DefuseTheBombSlidingWindow : IDefuseTheBomb
+public sealed class DefuseTheBombSlidingWindow : IDefuseTheBomb
 {
     /// <summary>
     ///     Time complexity - O(n)

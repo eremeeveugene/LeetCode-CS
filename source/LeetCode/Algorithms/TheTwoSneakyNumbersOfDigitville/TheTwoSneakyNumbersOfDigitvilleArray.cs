@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TheTwoSneakyNumbersOfDigitville;
 
 /// <inheritdoc />
-public class TheTwoSneakyNumbersOfDigitvilleArray : ITheTwoSneakyNumbersOfDigitville
+public sealed class TheTwoSneakyNumbersOfDigitvilleArray : ITheTwoSneakyNumbersOfDigitville
 {
     private const int MaxNumber = 100;
     private const int ResultLength = 2;

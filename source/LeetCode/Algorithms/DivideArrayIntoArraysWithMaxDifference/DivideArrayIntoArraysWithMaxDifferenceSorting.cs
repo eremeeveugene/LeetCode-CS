@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DivideArrayIntoArraysWithMaxDifference;
 
 /// <inheritdoc />
-public class DivideArrayIntoArraysWithMaxDifferenceSorting : IDivideArrayIntoArraysWithMaxDifference
+public sealed class DivideArrayIntoArraysWithMaxDifferenceSorting : IDivideArrayIntoArraysWithMaxDifference
 {
     /// <summary>
     ///     Time complexity - O(n log n)

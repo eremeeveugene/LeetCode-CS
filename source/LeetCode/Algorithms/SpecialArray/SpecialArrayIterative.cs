@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SpecialArray;
 
 /// <inheritdoc />
-public class SpecialArrayIterative : ISpecialArray
+public sealed class SpecialArrayIterative : ISpecialArray
 {
     /// <summary>
     ///     Time complexity - O(n)

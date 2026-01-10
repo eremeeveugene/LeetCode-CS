@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MovePiecesToObtainString;
 namespace LeetCode.Tests.Algorithms.MovePiecesToObtainString;
 
 [TestClass]
-public class MovePiecesToObtainStringTwoPointersTests :
+public sealed class MovePiecesToObtainStringTwoPointersTests :
     MovePiecesToObtainStringTestsBase<MovePiecesToObtainStringTwoPointers>;

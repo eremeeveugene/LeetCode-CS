@@ -14,4 +14,4 @@ using LeetCode.Concurrency.PrintInOrder;
 namespace LeetCode.Tests.Concurrency.PrintInOrder;
 
 [TestClass]
-public class PrintInOrderSemaphoreSlimTests : PrintInOrderTestsBase<PrintInOrderSemaphoreSlim>;
+public sealed class PrintInOrderSemaphoreSlimTests : PrintInOrderTestsBase<PrintInOrderSemaphoreSlim>;

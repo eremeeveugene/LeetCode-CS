@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CheckIfNumberIsSumOfPowersOfThree;
 namespace LeetCode.Tests.Algorithms.CheckIfNumberIsSumOfPowersOfThree;
 
 [TestClass]
-public class CheckIfNumberIsSumOfPowersOfThreeIterativeTests :
+public sealed class CheckIfNumberIsSumOfPowersOfThreeIterativeTests :
     CheckIfNumberIsSumOfPowersOfThreeTestsBase<CheckIfNumberIsSumOfPowersOfThreeIterative>;

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.AdjacentIncreasingSubarraysDetection1;
 namespace LeetCode.Tests.Algorithms.AdjacentIncreasingSubarraysDetection1;
 
 [TestClass]
-public class AdjacentIncreasingSubarraysDetection1GreedyTests :
+public sealed class AdjacentIncreasingSubarraysDetection1GreedyTests :
     AdjacentIncreasingSubarraysDetection1TestsBase<AdjacentIncreasingSubarraysDetection1Greedy>;

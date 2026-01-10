@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfParenthesesStringCanBeValid;
 
 /// <inheritdoc />
-public class CheckIfParenthesesStringCanBeValidGreedy : ICheckIfParenthesesStringCanBeValid
+public sealed class CheckIfParenthesesStringCanBeValidGreedy : ICheckIfParenthesesStringCanBeValid
 {
     /// <summary>
     ///     Time complexity - O(n)

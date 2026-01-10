@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SingleNumber;
 namespace LeetCode.Tests.Algorithms.SingleNumber;
 
 [TestClass]
-public class SingleNumberHashSetTests : SingleNumberTestsBase<SingleNumberHashSet>;
+public sealed class SingleNumberHashSetTests : SingleNumberTestsBase<SingleNumberHashSet>;

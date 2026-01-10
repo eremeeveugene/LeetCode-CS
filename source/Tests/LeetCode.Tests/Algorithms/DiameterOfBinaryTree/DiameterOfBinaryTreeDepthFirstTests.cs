@@ -14,4 +14,4 @@ using LeetCode.Algorithms.DiameterOfBinaryTree;
 namespace LeetCode.Tests.Algorithms.DiameterOfBinaryTree;
 
 [TestClass]
-public class DiameterOfBinaryTreeDepthFirstTests : DiameterOfBinaryTreeTestsBase<DiameterOfBinaryTreeDepthFirst>;
+public sealed class DiameterOfBinaryTreeDepthFirstTests : DiameterOfBinaryTreeTestsBase<DiameterOfBinaryTreeDepthFirst>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LuckyNumbersInMatrix;
 
 /// <inheritdoc />
-public class LuckyNumbersInMatrixBruteForce : ILuckyNumbersInMatrix
+public sealed class LuckyNumbersInMatrixBruteForce : ILuckyNumbersInMatrix
 {
     /// <summary>
     ///     Time complexity - O(m * n)

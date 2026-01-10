@@ -14,5 +14,5 @@ using LeetCode.Algorithms.DifferentWaysToAddParentheses;
 namespace LeetCode.Tests.Algorithms.DifferentWaysToAddParentheses;
 
 [TestClass]
-public class DifferentWaysToAddParenthesesRecursiveTests :
+public sealed class DifferentWaysToAddParenthesesRecursiveTests :
     DifferentWaysToAddParenthesesTestsBase<DifferentWaysToAddParenthesesRecursive>;

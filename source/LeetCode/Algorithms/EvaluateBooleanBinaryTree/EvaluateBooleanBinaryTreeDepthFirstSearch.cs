@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.EvaluateBooleanBinaryTree;
 
 /// <inheritdoc />
-public class EvaluateBooleanBinaryTreeDepthFirstSearch : IEvaluateBooleanBinaryTree
+public sealed class EvaluateBooleanBinaryTreeDepthFirstSearch : IEvaluateBooleanBinaryTree
 {
     private const int OrOperation = 2;
     private const int AndOperation = 3;

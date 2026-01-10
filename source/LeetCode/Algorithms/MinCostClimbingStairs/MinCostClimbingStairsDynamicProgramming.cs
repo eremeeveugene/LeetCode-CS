@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinCostClimbingStairs;
 
 /// <inheritdoc />
-public class MinCostClimbingStairsDynamicProgramming : IMinCostClimbingStairs
+public sealed class MinCostClimbingStairsDynamicProgramming : IMinCostClimbingStairs
 {
     /// <summary>
     ///     Time complexity - O(n)

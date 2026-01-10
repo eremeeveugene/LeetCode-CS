@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MinimumHeightTrees;
 namespace LeetCode.Tests.Algorithms.MinimumHeightTrees;
 
 [TestClass]
-public class MinimumHeightTreesLeafPruningTests : MinimumHeightTreesTestsBase<MinimumHeightTreesLeafPruning>;
+public sealed class MinimumHeightTreesLeafPruningTests : MinimumHeightTreesTestsBase<MinimumHeightTreesLeafPruning>;

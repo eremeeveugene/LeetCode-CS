@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SingleNumber3;
 namespace LeetCode.Tests.Algorithms.SingleNumber3;
 
 [TestClass]
-public class SingleNumber3BitwiseTests : SingleNumber3TestsBase<SingleNumber3Bitwise>;
+public sealed class SingleNumber3BitwiseTests : SingleNumber3TestsBase<SingleNumber3Bitwise>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignFrontMiddleBackQueue;
 
 /// <inheritdoc />
-public class DesignFrontMiddleBackQueueList : IDesignFrontMiddleBackQueue
+public sealed class DesignFrontMiddleBackQueueList : IDesignFrontMiddleBackQueue
 {
     private readonly List<int> _items = [];
     private int _count;

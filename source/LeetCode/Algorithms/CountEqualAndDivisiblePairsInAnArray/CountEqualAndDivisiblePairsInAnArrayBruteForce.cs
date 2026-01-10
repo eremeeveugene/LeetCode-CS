@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountEqualAndDivisiblePairsInAnArray;
 
 /// <inheritdoc />
-public class CountEqualAndDivisiblePairsInAnArrayBruteForce : ICountEqualAndDivisiblePairsInAnArray
+public sealed class CountEqualAndDivisiblePairsInAnArrayBruteForce : ICountEqualAndDivisiblePairsInAnArray
 {
     /// <summary>
     ///     Time complexity - O(n^2)

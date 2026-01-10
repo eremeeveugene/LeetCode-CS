@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumAbsoluteSumOfAnySubarray;
 
 /// <inheritdoc />
-public class MaximumAbsoluteSumOfAnySubarrayBruteForce : IMaximumAbsoluteSumOfAnySubarray
+public sealed class MaximumAbsoluteSumOfAnySubarrayBruteForce : IMaximumAbsoluteSumOfAnySubarray
 {
     /// <summary>
     ///     Time complexity - O(n^2)

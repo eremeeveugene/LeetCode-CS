@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindAllKDistantIndicesInAnArray;
 
 /// <inheritdoc />
-public class FindAllKDistantIndicesInAnArrayTwoPointers : IFindAllKDistantIndicesInAnArray
+public sealed class FindAllKDistantIndicesInAnArrayTwoPointers : IFindAllKDistantIndicesInAnArray
 {
     /// <summary>
     ///     Time complexity - O(n)

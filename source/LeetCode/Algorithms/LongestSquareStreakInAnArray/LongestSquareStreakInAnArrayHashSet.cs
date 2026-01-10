@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LongestSquareStreakInAnArray;
 
 /// <inheritdoc />
-public class LongestSquareStreakInAnArrayHashSet : ILongestSquareStreakInAnArray
+public sealed class LongestSquareStreakInAnArrayHashSet : ILongestSquareStreakInAnArray
 {
     /// <summary>
     ///     Time complexity - O(n log n)

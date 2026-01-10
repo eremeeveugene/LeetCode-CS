@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FruitIntoBaskets;
 namespace LeetCode.Tests.Algorithms.FruitIntoBaskets;
 
 [TestClass]
-public class FruitIntoBasketsFrequencyDictionaryTests : FruitIntoBasketsTestsBase<FruitIntoBasketsFrequencyDictionary>;
+public sealed class FruitIntoBasketsFrequencyDictionaryTests : FruitIntoBasketsTestsBase<FruitIntoBasketsFrequencyDictionary>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ClearDigits;
 namespace LeetCode.Tests.Algorithms.ClearDigits;
 
 [TestClass]
-public class ClearDigitsStringBuilderTests : ClearDigitsTestsBase<ClearDigitsStringBuilder>;
+public sealed class ClearDigitsStringBuilderTests : ClearDigitsTestsBase<ClearDigitsStringBuilder>;

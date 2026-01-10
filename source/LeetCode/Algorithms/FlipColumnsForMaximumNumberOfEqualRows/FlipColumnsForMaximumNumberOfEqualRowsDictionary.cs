@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.FlipColumnsForMaximumNumberOfEqualRows;
 
 /// <inheritdoc />
-public class FlipColumnsForMaximumNumberOfEqualRowsDictionary : IFlipColumnsForMaximumNumberOfEqualRows
+public sealed class FlipColumnsForMaximumNumberOfEqualRowsDictionary : IFlipColumnsForMaximumNumberOfEqualRows
 {
     /// <summary>
     ///     Time complexity - O(n * m)

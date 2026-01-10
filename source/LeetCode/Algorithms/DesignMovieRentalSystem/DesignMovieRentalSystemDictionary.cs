@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignMovieRentalSystem;
 
 /// <inheritdoc />
-public class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
+public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
 {
     private const int ResultsCount = 5;
     private readonly Dictionary<int, SortedSet<MovieOffer>> _movieToMovieOffersDictionary;

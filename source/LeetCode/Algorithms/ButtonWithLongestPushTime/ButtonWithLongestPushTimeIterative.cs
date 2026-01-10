@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ButtonWithLongestPushTime;
 
 /// <inheritdoc />
-public class ButtonWithLongestPushTimeIterative : IButtonWithLongestPushTime
+public sealed class ButtonWithLongestPushTimeIterative : IButtonWithLongestPushTime
 {
     /// <summary>
     ///     Time complexity - O(n)

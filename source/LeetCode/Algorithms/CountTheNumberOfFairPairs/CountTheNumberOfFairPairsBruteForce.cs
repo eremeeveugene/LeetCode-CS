@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountTheNumberOfFairPairs;
 
 /// <inheritdoc />
-public class CountTheNumberOfFairPairsBruteForce : ICountTheNumberOfFairPairs
+public sealed class CountTheNumberOfFairPairsBruteForce : ICountTheNumberOfFairPairs
 {
     /// <summary>
     ///     Time complexity - O(n^2)

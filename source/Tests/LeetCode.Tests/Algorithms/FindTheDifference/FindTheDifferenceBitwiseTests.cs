@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FindTheDifference;
 namespace LeetCode.Tests.Algorithms.FindTheDifference;
 
 [TestClass]
-public class FindTheDifferenceBitwiseTests : FindTheDifferenceTestsBase<FindTheDifferenceBitwise>;
+public sealed class FindTheDifferenceBitwiseTests : FindTheDifferenceTestsBase<FindTheDifferenceBitwise>;

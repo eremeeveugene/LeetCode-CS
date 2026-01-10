@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RabbitsInForest;
 namespace LeetCode.Tests.Algorithms.RabbitsInForest;
 
 [TestClass]
-public class RabbitsInForestFrequencyDictionaryTests : RabbitsInForestTestsBase<RabbitsInForestFrequencyDictionary>;
+public sealed class RabbitsInForestFrequencyDictionaryTests : RabbitsInForestTestsBase<RabbitsInForestFrequencyDictionary>;

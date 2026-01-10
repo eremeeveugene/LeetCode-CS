@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PowerOfTwo;
 namespace LeetCode.Tests.Algorithms.PowerOfTwo;
 
 [TestClass]
-public class PowerOfTwoRecursiveTests : PowerOfTwoTestsBase<PowerOfTwoRecursive>;
+public sealed class PowerOfTwoRecursiveTests : PowerOfTwoTestsBase<PowerOfTwoRecursive>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.WordSubsets;
 namespace LeetCode.Tests.Algorithms.WordSubsets;
 
 [TestClass]
-public class WordSubsetsFrequencyFilteringTests : WordSubsetsTestsBase<WordSubsetsFrequencyFiltering>;
+public sealed class WordSubsetsFrequencyFilteringTests : WordSubsetsTestsBase<WordSubsetsFrequencyFiltering>;

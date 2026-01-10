@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ConstructStringWithRepeatLimit;
 
 /// <inheritdoc />
-public class ConstructStringWithRepeatLimitPriorityQueue : IConstructStringWithRepeatLimit
+public sealed class ConstructStringWithRepeatLimitPriorityQueue : IConstructStringWithRepeatLimit
 {
     /// <summary>
     ///     Time complexity - O(n log k)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ReorderedPowerOfTwo;
 namespace LeetCode.Tests.Algorithms.ReorderedPowerOfTwo;
 
 [TestClass]
-public class ReorderedPowerOfTwoFrequencyArrayTests : ReorderedPowerOfTwoTestsBase<ReorderedPowerOfTwoFrequencyArray>;
+public sealed class ReorderedPowerOfTwoFrequencyArrayTests : ReorderedPowerOfTwoTestsBase<ReorderedPowerOfTwoFrequencyArray>;

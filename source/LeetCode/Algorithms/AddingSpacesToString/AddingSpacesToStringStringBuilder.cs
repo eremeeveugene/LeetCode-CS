@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.AddingSpacesToString;
 
 /// <inheritdoc />
-public class AddingSpacesToStringStringBuilder : IAddingSpacesToString
+public sealed class AddingSpacesToStringStringBuilder : IAddingSpacesToString
 {
     /// <summary>
     ///     Time complexity - O(n + m)

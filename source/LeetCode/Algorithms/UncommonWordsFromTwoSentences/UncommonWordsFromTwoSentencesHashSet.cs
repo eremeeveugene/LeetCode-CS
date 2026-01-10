@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.UncommonWordsFromTwoSentences;
 
 /// <inheritdoc />
-public class UncommonWordsFromTwoSentencesHashSet : IUncommonWordsFromTwoSentences
+public sealed class UncommonWordsFromTwoSentencesHashSet : IUncommonWordsFromTwoSentences
 {
     /// <summary>
     ///     Time complexity - O(n + m)

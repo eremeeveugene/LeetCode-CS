@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds;
 namespace LeetCode.Tests.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds;
 
 [TestClass]
-public class MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointersTests :
+public sealed class MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointersTests :
     MinimumLengthOfStringAfterDeletingSimilarEndsTestsBase<MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers>;

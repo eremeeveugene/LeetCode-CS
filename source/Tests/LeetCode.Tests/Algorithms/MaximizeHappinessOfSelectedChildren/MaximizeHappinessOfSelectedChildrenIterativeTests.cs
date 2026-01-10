@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MaximizeHappinessOfSelectedChildren;
 namespace LeetCode.Tests.Algorithms.MaximizeHappinessOfSelectedChildren;
 
 [TestClass]
-public class MaximizeHappinessOfSelectedChildrenIterativeTests : MaximizeHappinessOfSelectedChildrenTestsBase<
+public sealed class MaximizeHappinessOfSelectedChildrenIterativeTests : MaximizeHappinessOfSelectedChildrenTestsBase<
     MaximizeHappinessOfSelectedChildrenIterative>;

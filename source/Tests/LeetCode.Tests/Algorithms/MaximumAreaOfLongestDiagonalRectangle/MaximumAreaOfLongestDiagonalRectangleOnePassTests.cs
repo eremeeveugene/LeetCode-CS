@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MaximumAreaOfLongestDiagonalRectangle;
 namespace LeetCode.Tests.Algorithms.MaximumAreaOfLongestDiagonalRectangle;
 
 [TestClass]
-public class MaximumAreaOfLongestDiagonalRectangleOnePassTests :
+public sealed class MaximumAreaOfLongestDiagonalRectangleOnePassTests :
     MaximumAreaOfLongestDiagonalRectangleTestsBase<MaximumAreaOfLongestDiagonalRectangleOnePass>;

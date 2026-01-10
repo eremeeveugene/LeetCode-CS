@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ReversePrefixOfWord;
 namespace LeetCode.Tests.Algorithms.ReversePrefixOfWord;
 
 [TestClass]
-public class ReversePrefixOfWordArrayTests : ReverseStringTestsBase<ReversePrefixOfWordArray>;
+public sealed class ReversePrefixOfWordArrayTests : ReverseStringTestsBase<ReversePrefixOfWordArray>;

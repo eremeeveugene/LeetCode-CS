@@ -12,7 +12,7 @@
 namespace LeetCode.Concurrency.PrintInOrder;
 
 /// <inheritdoc />
-public class PrintInOrderThreadSleep : IPrintInOrder
+public sealed class PrintInOrderThreadSleep : IPrintInOrder
 {
     private const int ThreadTimeoutMs = 10;
     private bool _isFirstPrinted;

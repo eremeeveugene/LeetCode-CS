@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindTheClosestPalindrome;
 namespace LeetCode.Tests.Algorithms.FindTheClosestPalindrome;
 
 [TestClass]
-public class FindTheClosestPalindromeIterativeTests :
+public sealed class FindTheClosestPalindromeIterativeTests :
     FindTheClosestPalindromeTestsBase<FindTheClosestPalindromeIterative>;

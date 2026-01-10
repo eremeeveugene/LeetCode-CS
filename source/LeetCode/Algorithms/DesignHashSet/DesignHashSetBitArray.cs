@@ -14,7 +14,7 @@ using System.Collections;
 namespace LeetCode.Algorithms.DesignHashSet;
 
 /// <inheritdoc />
-public class DesignHashSetBitArray : DesignHashSetBase
+public sealed class DesignHashSetBitArray : DesignHashSetBase
 {
     private readonly BitArray _items = new(ItemsCount);
 

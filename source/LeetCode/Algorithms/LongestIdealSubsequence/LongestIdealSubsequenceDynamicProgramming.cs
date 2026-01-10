@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LongestIdealSubsequence;
 
 /// <inheritdoc />
-public class LongestIdealSubsequenceDynamicProgramming : ILongestIdealSubsequence
+public sealed class LongestIdealSubsequenceDynamicProgramming : ILongestIdealSubsequence
 {
     /// <summary>
     ///     Time complexity - O(n)

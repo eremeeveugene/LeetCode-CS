@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.CreateBinaryTreeFromDescriptions;
 
 /// <inheritdoc />
-public class CreateBinaryTreeFromDescriptionsDictionary : ICreateBinaryTreeFromDescriptions
+public sealed class CreateBinaryTreeFromDescriptionsDictionary : ICreateBinaryTreeFromDescriptions
 {
     /// <summary>
     ///     Time complexity - O(n)

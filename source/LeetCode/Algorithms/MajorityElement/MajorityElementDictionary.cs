@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MajorityElement;
 
 /// <inheritdoc />
-public class MajorityElementDictionary : IMajorityElement
+public sealed class MajorityElementDictionary : IMajorityElement
 {
     /// <summary>
     ///     Time complexity - O(n)

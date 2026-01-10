@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindValidMatrixGivenRowAndColumnSums;
 
 /// <inheritdoc />
-public class FindValidMatrixGivenRowAndColumnSumsBruteForce : IFindValidMatrixGivenRowAndColumnSums
+public sealed class FindValidMatrixGivenRowAndColumnSumsBruteForce : IFindValidMatrixGivenRowAndColumnSums
 {
     /// <summary>
     ///     Time complexity - O(m^2 * n)

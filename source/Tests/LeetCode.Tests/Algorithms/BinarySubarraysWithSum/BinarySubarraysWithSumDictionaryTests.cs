@@ -14,4 +14,4 @@ using LeetCode.Algorithms.BinarySubarraysWithSum;
 namespace LeetCode.Tests.Algorithms.BinarySubarraysWithSum;
 
 [TestClass]
-public class BinarySubarraysWithSumDictionaryTests : BinarySubarraysWithSumTestsBase<BinarySubarraysWithSumDictionary>;
+public sealed class BinarySubarraysWithSumDictionaryTests : BinarySubarraysWithSumTestsBase<BinarySubarraysWithSumDictionary>;

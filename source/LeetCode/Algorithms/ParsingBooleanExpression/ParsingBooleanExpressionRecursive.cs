@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ParsingBooleanExpression;
 
 /// <inheritdoc />
-public class ParsingBooleanExpressionRecursive : IParsingBooleanExpression
+public sealed class ParsingBooleanExpressionRecursive : IParsingBooleanExpression
 {
     /// <summary>
     ///     Time complexity - O(n^2)

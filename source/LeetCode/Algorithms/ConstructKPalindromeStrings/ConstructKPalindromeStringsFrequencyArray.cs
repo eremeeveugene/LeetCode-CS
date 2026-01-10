@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ConstructKPalindromeStrings;
 
 /// <inheritdoc />
-public class ConstructKPalindromeStringsFrequencyArray : IConstructKPalindromeStrings
+public sealed class ConstructKPalindromeStringsFrequencyArray : IConstructKPalindromeStrings
 {
     /// <summary>
     ///     Time complexity - O(n)

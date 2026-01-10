@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MajorityElement;
 namespace LeetCode.Tests.Algorithms.MajorityElement;
 
 [TestClass]
-public class MajorityElementDistinctCountTests : MajorityElementTestsBase<MajorityElementDistinctCount>;
+public sealed class MajorityElementDistinctCountTests : MajorityElementTestsBase<MajorityElementDistinctCount>;

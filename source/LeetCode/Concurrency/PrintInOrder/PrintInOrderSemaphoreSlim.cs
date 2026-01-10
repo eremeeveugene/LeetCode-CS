@@ -12,7 +12,7 @@
 namespace LeetCode.Concurrency.PrintInOrder;
 
 /// <inheritdoc />
-public class PrintInOrderSemaphoreSlim : IPrintInOrder
+public sealed class PrintInOrderSemaphoreSlim : IPrintInOrder
 {
     private readonly SemaphoreSlim _firstPrint = new(0, 1);
     private readonly SemaphoreSlim _secondPrint = new(0, 1);

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers;
 namespace LeetCode.Tests.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers;
 
 [TestClass]
-public class DivideArrayInSetsOfKConsecutiveNumbersSortedDictionaryTests :
+public sealed class DivideArrayInSetsOfKConsecutiveNumbersSortedDictionaryTests :
     DivideArrayInSetsOfKConsecutiveNumbersTestsBase<DivideArrayInSetsOfKConsecutiveNumbersSortedDictionary>;

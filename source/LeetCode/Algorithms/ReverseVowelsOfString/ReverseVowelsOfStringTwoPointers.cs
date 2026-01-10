@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ReverseVowelsOfString;
 
 /// <inheritdoc />
-public class ReverseVowelsOfStringTwoPointers : IReverseVowelsOfString
+public sealed class ReverseVowelsOfStringTwoPointers : IReverseVowelsOfString
 {
     private readonly HashSet<char> _vowelsHashSet =
     [

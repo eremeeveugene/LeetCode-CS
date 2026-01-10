@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PerfectSquares;
 namespace LeetCode.Tests.Algorithms.PerfectSquares;
 
 [TestClass]
-public class PerfectSquaresIterativeTests : PerfectSquaresTestsBase<PerfectSquaresIterative>;
+public sealed class PerfectSquaresIterativeTests : PerfectSquaresTestsBase<PerfectSquaresIterative>;

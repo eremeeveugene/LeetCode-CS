@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference;
 
 /// <inheritdoc />
-public class DivisibleAndNonDivisibleSumsDifferenceConstant : IDivisibleAndNonDivisibleSumsDifference
+public sealed class DivisibleAndNonDivisibleSumsDifferenceConstant : IDivisibleAndNonDivisibleSumsDifference
 {
     /// <summary>
     ///     Time complexity - O(1)

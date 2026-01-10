@@ -14,5 +14,5 @@ using LeetCode.Algorithms.DistributeCandiesAmongChildren2;
 namespace LeetCode.Tests.Algorithms.DistributeCandiesAmongChildren2;
 
 [TestClass]
-public class DistributeCandiesAmongChildren2MathTests :
+public sealed class DistributeCandiesAmongChildren2MathTests :
     DistributeCandiesAmongChildren2TestsBase<DistributeCandiesAmongChildren2Math>;

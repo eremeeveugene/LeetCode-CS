@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ShortestPalindrome;
 namespace LeetCode.Tests.Algorithms.ShortestPalindrome;
 
 [TestClass]
-public class ShortestPalindromeTwoPointersTests : ShortestPalindromeTestsBase<ShortestPalindromeTwoPointers>;
+public sealed class ShortestPalindromeTwoPointersTests : ShortestPalindromeTestsBase<ShortestPalindromeTwoPointers>;

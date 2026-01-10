@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheMinimumAreaToCoverAllOnes1;
 
 /// <inheritdoc />
-public class FindTheMinimumAreaToCoverAllOnes1OnePass : IFindTheMinimumAreaToCoverAllOnes1
+public sealed class FindTheMinimumAreaToCoverAllOnes1OnePass : IFindTheMinimumAreaToCoverAllOnes1
 {
     /// <summary>
     ///     Time complexity - O(m * n)

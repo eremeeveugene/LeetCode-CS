@@ -14,7 +14,7 @@ using System.Collections;
 namespace LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo;
 
 /// <inheritdoc />
-public class KeepMultiplyingFoundValuesByTwoBitArrayLookup : KeepMultiplyingFoundValuesByTwoBase
+public sealed class KeepMultiplyingFoundValuesByTwoBitArrayLookup : KeepMultiplyingFoundValuesByTwoBase
 {
     /// <summary>
     ///     Time complexity - O(n)

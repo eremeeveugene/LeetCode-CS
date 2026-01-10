@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FibonacciNumber;
 
 /// <inheritdoc />
-public class FibonacciNumberMatrixExponentiation : IFibonacciNumber
+public sealed class FibonacciNumberMatrixExponentiation : IFibonacciNumber
 {
     /// <summary>
     ///     Time complexity - O(log n)

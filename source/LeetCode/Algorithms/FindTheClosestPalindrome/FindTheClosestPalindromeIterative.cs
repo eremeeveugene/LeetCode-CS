@@ -15,7 +15,7 @@ using System.Text;
 namespace LeetCode.Algorithms.FindTheClosestPalindrome;
 
 /// <inheritdoc />
-public class FindTheClosestPalindromeIterative : IFindTheClosestPalindrome
+public sealed class FindTheClosestPalindromeIterative : IFindTheClosestPalindrome
 {
     /// <summary>
     ///     Time complexity - O(L), where L is the length of the string

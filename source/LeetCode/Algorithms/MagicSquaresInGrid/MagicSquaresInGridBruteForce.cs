@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MagicSquaresInGrid;
 
 /// <inheritdoc />
-public class MagicSquaresInGridBruteForce : IMagicSquaresInGrid
+public sealed class MagicSquaresInGridBruteForce : IMagicSquaresInGrid
 {
     private const int MagicSquareSum = 15;
 

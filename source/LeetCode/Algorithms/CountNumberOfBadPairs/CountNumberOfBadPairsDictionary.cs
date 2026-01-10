@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountNumberOfBadPairs;
 
 /// <inheritdoc />
-public class CountNumberOfBadPairsDictionary : ICountNumberOfBadPairs
+public sealed class CountNumberOfBadPairsDictionary : ICountNumberOfBadPairs
 {
     /// <summary>
     ///     Time complexity - O(n)

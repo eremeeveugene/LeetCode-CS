@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ReverseDegreeOfString;
 namespace LeetCode.Tests.Algorithms.ReverseDegreeOfString;
 
 [TestClass]
-public class ReverseDegreeOfStringIterativeTests : ReverseDegreeOfStringTestsBase<ReverseDegreeOfStringIterative>;
+public sealed class ReverseDegreeOfStringIterativeTests : ReverseDegreeOfStringTestsBase<ReverseDegreeOfStringIterative>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RangeSumOfSortedSubarraySums;
 
 /// <inheritdoc />
-public class RangeSumOfSortedSubarraySumsBruteForce : IRangeSumOfSortedSubarraySums
+public sealed class RangeSumOfSortedSubarraySumsBruteForce : IRangeSumOfSortedSubarraySums
 {
     /// <summary>
     ///     Time complexity - O(n^2 log n)

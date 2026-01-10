@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ClimbingStairs;
 
 /// <inheritdoc />
-public class ClimbingStairsIterativeFibonacci : IClimbingStairs
+public sealed class ClimbingStairsIterativeFibonacci : IClimbingStairs
 {
     /// <summary>
     ///     Time complexity - O(n)

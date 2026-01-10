@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CanMakeArithmeticProgressionFromSequence;
 
 /// <inheritdoc />
-public class CanMakeArithmeticProgressionFromSequenceSorting : ICanMakeArithmeticProgressionFromSequence
+public sealed class CanMakeArithmeticProgressionFromSequenceSorting : ICanMakeArithmeticProgressionFromSequence
 {
     /// <summary>
     ///     Time complexity - O(n log n)

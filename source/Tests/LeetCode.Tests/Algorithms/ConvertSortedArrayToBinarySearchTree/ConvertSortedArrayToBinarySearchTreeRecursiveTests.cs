@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ConvertSortedArrayToBinarySearchTree;
 namespace LeetCode.Tests.Algorithms.ConvertSortedArrayToBinarySearchTree;
 
 [TestClass]
-public class ConvertSortedArrayToBinarySearchTreeRecursiveTests : ConvertSortedArrayToBinarySearchTreeTestsBase<
+public sealed class ConvertSortedArrayToBinarySearchTreeRecursiveTests : ConvertSortedArrayToBinarySearchTreeTestsBase<
     ConvertSortedArrayToBinarySearchTreeRecursive>;

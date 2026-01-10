@@ -14,5 +14,5 @@ using LeetCode.Algorithms.RemoveNodesFromLinkedList;
 namespace LeetCode.Tests.Algorithms.RemoveNodesFromLinkedList;
 
 [TestClass]
-public class
+public sealed class
     RemoveNodesFromLinkedListIterativeTests : RemoveNodesFromLinkedListTestsBase<RemoveNodesFromLinkedListIterative>;

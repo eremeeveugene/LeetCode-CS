@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MyCalendar2;
 
 /// <inheritdoc />
-public class MyCalendar2BruteForce : IMyCalendar2
+public sealed class MyCalendar2BruteForce : IMyCalendar2
 {
     private readonly List<Item> _items = [];
     private readonly List<Item> _overlapItems = [];

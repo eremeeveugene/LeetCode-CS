@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ValidParentheses;
 namespace LeetCode.Tests.Algorithms.ValidParentheses;
 
 [TestClass]
-public class ValidParenthesesStackDictionaryTests : ValidParenthesesTestsBase<ValidParenthesesStackDictionary>;
+public sealed class ValidParenthesesStackDictionaryTests : ValidParenthesesTestsBase<ValidParenthesesStackDictionary>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ComputeAlternatingSum;
 
 /// <inheritdoc />
-public class ComputeAlternatingSumSimulation : IComputeAlternatingSum
+public sealed class ComputeAlternatingSumSimulation : IComputeAlternatingSum
 {
     /// <summary>
     ///     Time complexity - O(n)

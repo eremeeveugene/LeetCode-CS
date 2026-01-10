@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumOperationsToMakeArraySumDivisibleByK;
 
 /// <inheritdoc />
-public class MinimumOperationsToMakeArraySumDivisibleByKGreedy : IMinimumOperationsToMakeArraySumDivisibleByK
+public sealed class MinimumOperationsToMakeArraySumDivisibleByKGreedy : IMinimumOperationsToMakeArraySumDivisibleByK
 {
     /// <summary>
     ///     Time complexity - O(n)

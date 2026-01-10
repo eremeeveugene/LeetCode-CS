@@ -14,5 +14,5 @@ using LeetCode.Algorithms.DeleteLeavesWithGivenValue;
 namespace LeetCode.Tests.Algorithms.DeleteLeavesWithGivenValue;
 
 [TestClass]
-public class DeleteLeavesWithGivenValueDepthFirstSearchTests :
+public sealed class DeleteLeavesWithGivenValueDepthFirstSearchTests :
     DeleteLeavesWithGivenValueTestsBase<DeleteLeavesWithGivenValueDepthFirstSearch>;

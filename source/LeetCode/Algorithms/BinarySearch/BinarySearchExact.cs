@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.BinarySearch;
 
 /// <inheritdoc />
-public class BinarySearchExact : IBinarySearch
+public sealed class BinarySearchExact : IBinarySearch
 {
     /// <summary>
     ///     Time complexity - O(log n)

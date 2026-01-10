@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Core.Tests.Models;
 
 [TestClass]
-public class NodeTests
+public sealed class NodeTests
 {
     [TestMethod]
     public void Node_DefaultConstructor_SetsValToZero()

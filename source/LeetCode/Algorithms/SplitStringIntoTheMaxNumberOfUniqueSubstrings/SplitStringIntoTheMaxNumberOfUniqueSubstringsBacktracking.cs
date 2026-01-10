@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SplitStringIntoTheMaxNumberOfUniqueSubstrings;
 
 /// <inheritdoc />
-public class SplitStringIntoTheMaxNumberOfUniqueSubstringsBacktracking : ISplitStringIntoTheMaxNumberOfUniqueSubstrings
+public sealed class SplitStringIntoTheMaxNumberOfUniqueSubstringsBacktracking : ISplitStringIntoTheMaxNumberOfUniqueSubstrings
 {
     /// <summary>
     ///     Time complexity - O(n * 2^n)

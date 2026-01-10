@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ShortestDistanceAfterRoadAdditionQueries1;
 
 /// <inheritdoc />
-public class ShortestDistanceAfterRoadAdditionQueries1BreadthFirstSearch : IShortestDistanceAfterRoadAdditionQueries1
+public sealed class ShortestDistanceAfterRoadAdditionQueries1BreadthFirstSearch : IShortestDistanceAfterRoadAdditionQueries1
 {
     /// <summary>
     ///     Time complexity - O(n * q)

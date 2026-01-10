@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RichestCustomerWealth;
 
 /// <inheritdoc />
-public class RichestCustomerWealthLinq : IRichestCustomerWealth
+public sealed class RichestCustomerWealthLinq : IRichestCustomerWealth
 {
     /// <summary>
     ///     Time complexity - O(n * m)

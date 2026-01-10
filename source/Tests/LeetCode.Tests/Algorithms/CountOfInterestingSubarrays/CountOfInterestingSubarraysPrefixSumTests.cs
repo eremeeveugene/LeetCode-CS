@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CountOfInterestingSubarrays;
 namespace LeetCode.Tests.Algorithms.CountOfInterestingSubarrays;
 
 [TestClass]
-public class CountOfInterestingSubarraysPrefixSumTests :
+public sealed class CountOfInterestingSubarraysPrefixSumTests :
     CountOfInterestingSubarraysTestsBase<CountOfInterestingSubarraysPrefixSum>;

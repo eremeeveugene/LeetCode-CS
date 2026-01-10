@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TheTwoSneakyNumbersOfDigitville;
 
 /// <inheritdoc />
-public class TheTwoSneakyNumbersOfDigitvilleHashSet : ITheTwoSneakyNumbersOfDigitville
+public sealed class TheTwoSneakyNumbersOfDigitvilleHashSet : ITheTwoSneakyNumbersOfDigitville
 {
     /// <summary>
     ///     Time complexity - O(n)

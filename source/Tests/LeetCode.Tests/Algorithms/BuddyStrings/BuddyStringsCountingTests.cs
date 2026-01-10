@@ -14,4 +14,4 @@ using LeetCode.Algorithms.BuddyStrings;
 namespace LeetCode.Tests.Algorithms.BuddyStrings;
 
 [TestClass]
-public class BuddyStringsCountingTests : BuddyStringsTestsBase<BuddyStringsCounting>;
+public sealed class BuddyStringsCountingTests : BuddyStringsTestsBase<BuddyStringsCounting>;

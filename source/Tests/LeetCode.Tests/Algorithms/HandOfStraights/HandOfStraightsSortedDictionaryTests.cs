@@ -14,4 +14,4 @@ using LeetCode.Algorithms.HandOfStraights;
 namespace LeetCode.Tests.Algorithms.HandOfStraights;
 
 [TestClass]
-public class HandOfStraightsSortedDictionaryTests : HandOfStraightsTestsBase<HandOfStraightsSortedDictionary>;
+public sealed class HandOfStraightsSortedDictionaryTests : HandOfStraightsTestsBase<HandOfStraightsSortedDictionary>;

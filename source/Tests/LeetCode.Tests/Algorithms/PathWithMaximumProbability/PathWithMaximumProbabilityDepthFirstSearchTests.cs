@@ -14,5 +14,5 @@ using LeetCode.Algorithms.PathWithMaximumProbability;
 namespace LeetCode.Tests.Algorithms.PathWithMaximumProbability;
 
 [TestClass]
-public class PathWithMaximumProbabilityDepthFirstSearchTests : PathWithMaximumProbabilityTestsBase<
+public sealed class PathWithMaximumProbabilityDepthFirstSearchTests : PathWithMaximumProbabilityTestsBase<
     PathWithMaximumProbabilityDepthFirstSearch>;

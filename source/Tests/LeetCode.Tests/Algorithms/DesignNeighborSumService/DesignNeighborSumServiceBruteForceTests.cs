@@ -14,7 +14,7 @@ using LeetCode.Algorithms.DesignNeighborSumService;
 namespace LeetCode.Tests.Algorithms.DesignNeighborSumService;
 
 [TestClass]
-public class DesignNeighborSumServiceBruteForceTests : DesignNeighborSumServiceTestsBase
+public sealed class DesignNeighborSumServiceBruteForceTests : DesignNeighborSumServiceTestsBase
 {
     protected override IDesignNeighborSumService GetSolution(int[][] grid)
     {

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ReverseInteger;
 namespace LeetCode.Tests.Algorithms.ReverseInteger;
 
 [TestClass]
-public class ReverseIntegerIterativeTests : ReverseIntegerTestsBase<ReverseIntegerIterative>;
+public sealed class ReverseIntegerIterativeTests : ReverseIntegerTestsBase<ReverseIntegerIterative>;

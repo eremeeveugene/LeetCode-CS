@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.VowelsGameInString;
 
 /// <inheritdoc />
-public class VowelsGameInStringMath : IVowelsGameInString
+public sealed class VowelsGameInStringMath : IVowelsGameInString
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.XORQueriesOfSubarray;
 namespace LeetCode.Tests.Algorithms.XORQueriesOfSubarray;
 
 [TestClass]
-public class XORQueriesOfSubarrayPrefixArrayTests : XORQueriesOfSubarrayTestsBase<XORQueriesOfSubarrayPrefixArray>;
+public sealed class XORQueriesOfSubarrayPrefixArrayTests : XORQueriesOfSubarrayTestsBase<XORQueriesOfSubarrayPrefixArray>;

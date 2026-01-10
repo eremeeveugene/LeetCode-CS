@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountHillsAndValleysInAnArray;
 
 /// <inheritdoc />
-public class CountHillsAndValleysInAnArrayBruteForce : ICountHillsAndValleysInAnArray
+public sealed class CountHillsAndValleysInAnArrayBruteForce : ICountHillsAndValleysInAnArray
 {
     /// <summary>
     ///     Time complexity - O(n^2)

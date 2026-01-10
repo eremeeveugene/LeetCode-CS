@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PartitionEqualSubsetSum;
 
 /// <inheritdoc />
-public class PartitionEqualSubsetSumDynamicProgramming : IPartitionEqualSubsetSum
+public sealed class PartitionEqualSubsetSumDynamicProgramming : IPartitionEqualSubsetSum
 {
     /// <summary>
     ///     Time complexity - O(n * target)

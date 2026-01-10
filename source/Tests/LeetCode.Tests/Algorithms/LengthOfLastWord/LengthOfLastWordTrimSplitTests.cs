@@ -14,4 +14,4 @@ using LeetCode.Algorithms.LengthOfLastWord;
 namespace LeetCode.Tests.Algorithms.LengthOfLastWord;
 
 [TestClass]
-public class LengthOfLastWordTrimSplitTests : LengthOfLastWordTestsBase<LengthOfLastWordTrimSplit>;
+public sealed class LengthOfLastWordTrimSplitTests : LengthOfLastWordTestsBase<LengthOfLastWordTrimSplit>;

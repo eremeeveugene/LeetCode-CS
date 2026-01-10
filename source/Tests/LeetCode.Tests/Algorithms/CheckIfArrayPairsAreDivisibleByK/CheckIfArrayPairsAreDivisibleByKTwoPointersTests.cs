@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK;
 namespace LeetCode.Tests.Algorithms.CheckIfArrayPairsAreDivisibleByK;
 
 [TestClass]
-public class CheckIfArrayPairsAreDivisibleByKTwoPointersTests :
+public sealed class CheckIfArrayPairsAreDivisibleByKTwoPointersTests :
     CheckIfArrayPairsAreDivisibleByKTestsBase<CheckIfArrayPairsAreDivisibleByKTwoPointers>;

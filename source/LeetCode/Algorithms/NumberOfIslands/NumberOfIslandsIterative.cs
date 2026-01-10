@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfIslands;
 
 /// <inheritdoc />
-public class NumberOfIslandsIterative : INumberOfIslands
+public sealed class NumberOfIslandsIterative : INumberOfIslands
 {
     /// <summary>
     ///     Time complexity - O(n * m)

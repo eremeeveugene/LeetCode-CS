@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindTheOriginalTypedString1;
 namespace LeetCode.Tests.Algorithms.FindTheOriginalTypedString1;
 
 [TestClass]
-public class FindTheOriginalTypedString1IterativeTests :
+public sealed class FindTheOriginalTypedString1IterativeTests :
     FindTheOriginalTypedString1TestsBase<FindTheOriginalTypedString1Iterative>;

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CountCompleteSubarraysInAnArray;
 namespace LeetCode.Tests.Algorithms.CountCompleteSubarraysInAnArray;
 
 [TestClass]
-public class CountCompleteSubarraysInAnArrayFrequencyDictionaryTests :
+public sealed class CountCompleteSubarraysInAnArrayFrequencyDictionaryTests :
     CountCompleteSubarraysInAnArrayTestsBase<CountCompleteSubarraysInAnArrayFrequencyDictionary>;

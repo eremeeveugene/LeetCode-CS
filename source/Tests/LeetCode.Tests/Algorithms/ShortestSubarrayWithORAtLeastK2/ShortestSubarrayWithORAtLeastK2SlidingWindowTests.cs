@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ShortestSubarrayWithORAtLeastK2;
 namespace LeetCode.Tests.Algorithms.ShortestSubarrayWithORAtLeastK2;
 
 [TestClass]
-public class ShortestSubarrayWithORAtLeastK2SlidingWindowTests :
+public sealed class ShortestSubarrayWithORAtLeastK2SlidingWindowTests :
     ShortestSubarrayWithORAtLeastK2TestsBase<ShortestSubarrayWithORAtLeastK2SlidingWindow>;

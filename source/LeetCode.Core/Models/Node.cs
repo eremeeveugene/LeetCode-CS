@@ -16,7 +16,7 @@ namespace LeetCode.Core.Models;
 /// <summary>
 ///     Definition for an n-ary tree node
 /// </summary>
-public class Node
+public sealed class Node
 {
     public IList<Node>? children;
 

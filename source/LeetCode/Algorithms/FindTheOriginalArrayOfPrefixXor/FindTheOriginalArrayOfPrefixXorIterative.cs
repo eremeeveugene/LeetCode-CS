@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor;
 
 /// <inheritdoc />
-public class FindTheOriginalArrayOfPrefixXorIterative : IFindTheOriginalArrayOfPrefixXor
+public sealed class FindTheOriginalArrayOfPrefixXorIterative : IFindTheOriginalArrayOfPrefixXor
 {
     /// <summary>
     ///     Time complexity - O(n)

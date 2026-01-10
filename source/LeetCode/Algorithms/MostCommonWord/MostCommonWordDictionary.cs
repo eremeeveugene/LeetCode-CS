@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.MostCommonWord;
 
 /// <inheritdoc />
-public class MostCommonWordDictionary : IMostCommonWord
+public sealed class MostCommonWordDictionary : IMostCommonWord
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.SameTree;
 
 /// <inheritdoc />
-public class SameTreeRecursive : ISameTree
+public sealed class SameTreeRecursive : ISameTree
 {
     /// <summary>
     ///     Time complexity - O(n)

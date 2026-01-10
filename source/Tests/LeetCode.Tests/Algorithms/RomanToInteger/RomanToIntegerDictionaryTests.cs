@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RomanToInteger;
 namespace LeetCode.Tests.Algorithms.RomanToInteger;
 
 [TestClass]
-public class RomanToIntegerDictionaryTests : RomanToIntegerTestsBase<RomanToIntegerDictionary>;
+public sealed class RomanToIntegerDictionaryTests : RomanToIntegerTestsBase<RomanToIntegerDictionary>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SpiralMatrix;
 namespace LeetCode.Tests.Algorithms.SpiralMatrix;
 
 [TestClass]
-public class SpiralMatrixSimulationTests : SpiralMatrixTestsBase<SpiralMatrixSimulation>;
+public sealed class SpiralMatrixSimulationTests : SpiralMatrixTestsBase<SpiralMatrixSimulation>;

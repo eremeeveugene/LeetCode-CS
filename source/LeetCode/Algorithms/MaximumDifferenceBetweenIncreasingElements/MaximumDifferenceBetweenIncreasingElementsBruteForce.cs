@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumDifferenceBetweenIncreasingElements;
 
 /// <inheritdoc />
-public class MaximumDifferenceBetweenIncreasingElementsBruteForce : IMaximumDifferenceBetweenIncreasingElements
+public sealed class MaximumDifferenceBetweenIncreasingElementsBruteForce : IMaximumDifferenceBetweenIncreasingElements
 {
     /// <summary>
     ///     Time complexity - O(n^2)

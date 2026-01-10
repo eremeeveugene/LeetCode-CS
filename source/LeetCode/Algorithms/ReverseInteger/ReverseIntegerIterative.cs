@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ReverseInteger;
 
 /// <inheritdoc />
-public class ReverseIntegerIterative : IReverseInteger
+public sealed class ReverseIntegerIterative : IReverseInteger
 {
     /// <summary>
     ///     Time complexity - O(log(n))

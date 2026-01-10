@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PushDominoes;
 
 /// <inheritdoc />
-public class PushDominoesForceArray : IPushDominoes
+public sealed class PushDominoesForceArray : IPushDominoes
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumNumberOfPeopleToTeach;
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfPeopleToTeach;
 
 [TestClass]
-public class MinimumNumberOfPeopleToTeachGreedyCountingTests :
+public sealed class MinimumNumberOfPeopleToTeachGreedyCountingTests :
     MinimumNumberOfPeopleToTeachTestsBase<MinimumNumberOfPeopleToTeachGreedyCounting>;

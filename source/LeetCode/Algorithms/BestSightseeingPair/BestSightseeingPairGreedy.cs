@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.BestSightseeingPair;
 
 /// <inheritdoc />
-public class BestSightseeingPairGreedy : IBestSightseeingPair
+public sealed class BestSightseeingPairGreedy : IBestSightseeingPair
 {
     /// <summary>
     ///     Time complexity - O(n)

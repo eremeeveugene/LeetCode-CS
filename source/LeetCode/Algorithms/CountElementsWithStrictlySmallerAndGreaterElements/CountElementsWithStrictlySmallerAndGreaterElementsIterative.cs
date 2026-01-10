@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements;
 
 /// <inheritdoc />
-public class CountElementsWithStrictlySmallerAndGreaterElementsIterative :
+public sealed class CountElementsWithStrictlySmallerAndGreaterElementsIterative :
     ICountElementsWithStrictlySmallerAndGreaterElements
 {
     /// <summary>

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.UsingRobotToPrintTheLexicographicallySmallestString;
 
 /// <inheritdoc />
-public class UsingRobotToPrintTheLexicographicallySmallestStringStack :
+public sealed class UsingRobotToPrintTheLexicographicallySmallestStringStack :
     IUsingRobotToPrintTheLexicographicallySmallestString
 {
     private const int AlphabetLength = 'z' - 'a' + 1;

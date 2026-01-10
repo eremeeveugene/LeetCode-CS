@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.FindBottomLeftTreeValue;
 
 /// <inheritdoc />
-public class FindBottomLeftTreeValueBreadthFirst : IFindBottomLeftTreeValue
+public sealed class FindBottomLeftTreeValueBreadthFirst : IFindBottomLeftTreeValue
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 
 /// <inheritdoc />
-public class FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf : IFindTheIndexOfTheFirstOccurrenceInString
+public sealed class FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf : IFindTheIndexOfTheFirstOccurrenceInString
 {
     /// <summary>
     ///     Time complexity - O(n * m)

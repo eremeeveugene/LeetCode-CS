@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ReverseSubstringsBetweenEachPairOfParentheses;
 
 /// <inheritdoc />
-public class ReverseSubstringsBetweenEachPairOfParenthesesStack : IReverseSubstringsBetweenEachPairOfParentheses
+public sealed class ReverseSubstringsBetweenEachPairOfParenthesesStack : IReverseSubstringsBetweenEachPairOfParentheses
 {
     /// <summary>
     ///     Time complexity - O(n)

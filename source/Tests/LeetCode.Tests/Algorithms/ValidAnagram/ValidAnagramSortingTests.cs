@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ValidAnagram;
 namespace LeetCode.Tests.Algorithms.ValidAnagram;
 
 [TestClass]
-public class ValidAnagramSortingTests : ValidAnagramTestsBase<ValidAnagramSorting>;
+public sealed class ValidAnagramSortingTests : ValidAnagramTestsBase<ValidAnagramSorting>;

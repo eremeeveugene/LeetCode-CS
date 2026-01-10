@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CheckIfItIsStraightLine;
 namespace LeetCode.Tests.Algorithms.CheckIfItIsStraightLine;
 
 [TestClass]
-public class CheckIfItIsStraightLineIterativeTests :
+public sealed class CheckIfItIsStraightLineIterativeTests :
     CheckIfItIsStraightLineTestsBase<CheckIfItIsStraightLineIterative>;

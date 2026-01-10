@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FindPivotIndex;
 namespace LeetCode.Tests.Algorithms.FindPivotIndex;
 
 [TestClass]
-public class FindPivotIndexIterativeTests : FindPivotIndexTestsBase<FindPivotIndexIterative>;
+public sealed class FindPivotIndexIterativeTests : FindPivotIndexTestsBase<FindPivotIndexIterative>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FloodFill;
 namespace LeetCode.Tests.Algorithms.FloodFill;
 
 [TestClass]
-public class FloodFillIterativeTests : FloodFillTestsBase<FloodFillIterative>;
+public sealed class FloodFillIterativeTests : FloodFillTestsBase<FloodFillIterative>;

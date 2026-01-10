@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.MinimumDepthOfBinaryTree;
 
 /// <inheritdoc />
-public class MinimumDepthOfBinaryTreeDepthFirstSearch : IMinimumDepthOfBinaryTree
+public sealed class MinimumDepthOfBinaryTreeDepthFirstSearch : IMinimumDepthOfBinaryTree
 {
     /// <summary>
     ///     Time complexity - O(n)

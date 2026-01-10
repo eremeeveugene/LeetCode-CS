@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList;
 
 /// <inheritdoc />
-public class RemoveZeroSumConsecutiveNodesFromLinkedListDictionary : IRemoveZeroSumConsecutiveNodesFromLinkedList
+public sealed class RemoveZeroSumConsecutiveNodesFromLinkedListDictionary : IRemoveZeroSumConsecutiveNodesFromLinkedList
 {
     /// <summary>
     ///     Time complexity - O(n)

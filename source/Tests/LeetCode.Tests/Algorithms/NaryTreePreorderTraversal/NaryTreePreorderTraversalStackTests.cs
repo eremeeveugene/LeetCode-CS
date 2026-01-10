@@ -14,4 +14,4 @@ using LeetCode.Algorithms.NaryTreePreorderTraversal;
 namespace LeetCode.Tests.Algorithms.NaryTreePreorderTraversal;
 
 [TestClass]
-public class NaryTreePreorderTraversalStackTests : NaryTreePreorderTraversalTestsBase<NaryTreePreorderTraversalStack>;
+public sealed class NaryTreePreorderTraversalStackTests : NaryTreePreorderTraversalTestsBase<NaryTreePreorderTraversalStack>;

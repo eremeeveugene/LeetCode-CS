@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RangeSumQueryImmutable;
 
 /// <inheritdoc />
-public class RangeSumQueryImmutableBruteForce : IRangeSumQueryImmutable
+public sealed class RangeSumQueryImmutableBruteForce : IRangeSumQueryImmutable
 {
     private readonly int[] _nums;
 

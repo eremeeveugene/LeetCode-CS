@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ComplementOfBase10Integer;
 
 /// <inheritdoc />
-public class ComplementOfBase10IntegerBitwise : IComplementOfBase10Integer
+public sealed class ComplementOfBase10IntegerBitwise : IComplementOfBase10Integer
 {
     /// <summary>
     ///     Time complexity - O(1)

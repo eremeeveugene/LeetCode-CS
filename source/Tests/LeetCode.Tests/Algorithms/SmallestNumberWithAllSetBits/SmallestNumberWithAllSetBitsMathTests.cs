@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SmallestNumberWithAllSetBits;
 namespace LeetCode.Tests.Algorithms.SmallestNumberWithAllSetBits;
 
 [TestClass]
-public class SmallestNumberWithAllSetBitsMathTests :
+public sealed class SmallestNumberWithAllSetBitsMathTests :
     SmallestNumberWithAllSetBitsTestsBase<SmallestNumberWithAllSetBitsMath>;

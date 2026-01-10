@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.HappyNumber;
 
 /// <inheritdoc />
-public class HappyNumberHashSetNumbers : IHappyNumber
+public sealed class HappyNumberHashSetNumbers : IHappyNumber
 {
     /// <summary>
     ///     Time complexity - O(log n)

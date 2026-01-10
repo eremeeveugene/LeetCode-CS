@@ -14,5 +14,5 @@ using LeetCode.Algorithms.DividePlayersIntoTeamsOfEqualSkill;
 namespace LeetCode.Tests.Algorithms.DividePlayersIntoTeamsOfEqualSkill;
 
 [TestClass]
-public class DividePlayersIntoTeamsOfEqualSkillDictionaryTests :
+public sealed class DividePlayersIntoTeamsOfEqualSkillDictionaryTests :
     DividePlayersIntoTeamsOfEqualSkillTestsBase<DividePlayersIntoTeamsOfEqualSkillDictionary>;

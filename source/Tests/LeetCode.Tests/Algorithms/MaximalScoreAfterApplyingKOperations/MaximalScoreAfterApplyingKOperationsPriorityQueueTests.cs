@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MaximalScoreAfterApplyingKOperations;
 namespace LeetCode.Tests.Algorithms.MaximalScoreAfterApplyingKOperations;
 
 [TestClass]
-public class MaximalScoreAfterApplyingKOperationsPriorityQueueTests :
+public sealed class MaximalScoreAfterApplyingKOperationsPriorityQueueTests :
     MaximalScoreAfterApplyingKOperationsTestsBase<MaximalScoreAfterApplyingKOperationsPriorityQueue>;

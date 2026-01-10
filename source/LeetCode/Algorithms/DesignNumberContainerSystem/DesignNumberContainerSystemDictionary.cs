@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignNumberContainerSystem;
 
 /// <inheritdoc />
-public class DesignNumberContainerSystemDictionary : IDesignNumberContainerSystem
+public sealed class DesignNumberContainerSystemDictionary : IDesignNumberContainerSystem
 {
     private readonly Dictionary<int, int> _indexToNumber = [];
     private readonly Dictionary<int, SortedSet<int>> _numberToIndices = [];

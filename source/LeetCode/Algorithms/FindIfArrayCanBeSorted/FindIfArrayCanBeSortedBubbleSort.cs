@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindIfArrayCanBeSorted;
 
 /// <inheritdoc />
-public class FindIfArrayCanBeSortedBubbleSort : IFindIfArrayCanBeSorted
+public sealed class FindIfArrayCanBeSortedBubbleSort : IFindIfArrayCanBeSorted
 {
     /// <summary>
     ///     Time complexity - O(n^2 * log k)

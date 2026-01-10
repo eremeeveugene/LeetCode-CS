@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RomanToInteger;
 
 /// <inheritdoc />
-public class RomanToIntegerDictionary : IRomanToInteger
+public sealed class RomanToIntegerDictionary : IRomanToInteger
 {
     private readonly Dictionary<string, int> _romanIntegersDictionary = new()
     {

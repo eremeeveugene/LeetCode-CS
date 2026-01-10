@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.DeleteCharactersToMakeFancyString;
 
 /// <inheritdoc />
-public class DeleteCharactersToMakeFancyStringIterative : IDeleteCharactersToMakeFancyString
+public sealed class DeleteCharactersToMakeFancyStringIterative : IDeleteCharactersToMakeFancyString
 {
     /// <summary>
     ///     Time complexity - O(n)

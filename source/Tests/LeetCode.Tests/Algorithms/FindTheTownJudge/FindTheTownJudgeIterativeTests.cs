@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FindTheTownJudge;
 namespace LeetCode.Tests.Algorithms.FindTheTownJudge;
 
 [TestClass]
-public class FindTheTownJudgeIterativeTests : FindTheTownJudgeTestsBase<FindTheTownJudgeIterative>;
+public sealed class FindTheTownJudgeIterativeTests : FindTheTownJudgeTestsBase<FindTheTownJudgeIterative>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.WaterBottles;
 namespace LeetCode.Tests.Algorithms.WaterBottles;
 
 [TestClass]
-public class WaterBottlesSimulationTests : WaterBottlesTestsBase<WaterBottlesSimulation>;
+public sealed class WaterBottlesSimulationTests : WaterBottlesTestsBase<WaterBottlesSimulation>;

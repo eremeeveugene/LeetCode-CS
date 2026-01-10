@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumSwap;
 
 /// <inheritdoc />
-public class MaximumSwapGreedy : IMaximumSwap
+public sealed class MaximumSwapGreedy : IMaximumSwap
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,7 +14,7 @@ using System.Numerics;
 namespace LeetCode.Algorithms.RangeProductQueriesOfPowers;
 
 /// <inheritdoc />
-public class RangeProductQueriesOfPowersPrefixSum : IRangeProductQueriesOfPowers
+public sealed class RangeProductQueriesOfPowersPrefixSum : IRangeProductQueriesOfPowers
 {
     private const int Mod = 1_000_000_007;
 

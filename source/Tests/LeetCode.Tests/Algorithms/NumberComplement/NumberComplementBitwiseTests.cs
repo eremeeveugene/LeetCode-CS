@@ -14,4 +14,4 @@ using LeetCode.Algorithms.NumberComplement;
 namespace LeetCode.Tests.Algorithms.NumberComplement;
 
 [TestClass]
-public class NumberComplementBitwiseTests : NumberComplementTestsBase<NumberComplementBitwise>;
+public sealed class NumberComplementBitwiseTests : NumberComplementTestsBase<NumberComplementBitwise>;

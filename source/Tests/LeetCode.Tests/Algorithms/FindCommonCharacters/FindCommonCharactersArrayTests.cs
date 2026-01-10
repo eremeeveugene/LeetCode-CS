@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FindCommonCharacters;
 namespace LeetCode.Tests.Algorithms.FindCommonCharacters;
 
 [TestClass]
-public class FindCommonCharactersArrayTests : FindCommonCharactersTestsBase<FindCommonCharactersArray>;
+public sealed class FindCommonCharactersArrayTests : FindCommonCharactersTestsBase<FindCommonCharactersArray>;

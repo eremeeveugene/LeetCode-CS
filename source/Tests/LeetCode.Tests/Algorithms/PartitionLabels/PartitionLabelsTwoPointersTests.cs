@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PartitionLabels;
 namespace LeetCode.Tests.Algorithms.PartitionLabels;
 
 [TestClass]
-public class PartitionLabelsTwoPointersTests : PartitionLabelsTestsBase<PartitionLabelsTwoPointers>;
+public sealed class PartitionLabelsTwoPointersTests : PartitionLabelsTestsBase<PartitionLabelsTwoPointers>;

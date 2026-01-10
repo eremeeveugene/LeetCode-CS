@@ -14,5 +14,5 @@ using LeetCode.Algorithms.UniqueLength3PalindromicSubsequences;
 namespace LeetCode.Tests.Algorithms.UniqueLength3PalindromicSubsequences;
 
 [TestClass]
-public class UniqueLength3PalindromicSubsequencesBruteForceTests :
+public sealed class UniqueLength3PalindromicSubsequencesBruteForceTests :
     UniqueLength3PalindromicSubsequencesTestsBase<UniqueLength3PalindromicSubsequencesBruteForce>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TwoOutOfThree;
 namespace LeetCode.Tests.Algorithms.TwoOutOfThree;
 
 [TestClass]
-public class TwoOutOfThreeFrequencyArrayTests : TwoOutOfThreeTestsBase<TwoOutOfThreeFrequencyArray>;
+public sealed class TwoOutOfThreeFrequencyArrayTests : TwoOutOfThreeTestsBase<TwoOutOfThreeFrequencyArray>;

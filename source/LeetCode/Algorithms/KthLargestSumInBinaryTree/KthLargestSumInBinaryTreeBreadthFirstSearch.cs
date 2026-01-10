@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.KthLargestSumInBinaryTree;
 
 /// <inheritdoc />
-public class KthLargestSumInBinaryTreeBreadthFirstSearch : IKthLargestSumInBinaryTree
+public sealed class KthLargestSumInBinaryTreeBreadthFirstSearch : IKthLargestSumInBinaryTree
 {
     /// <summary>
     ///     Time complexity - O(n log k)

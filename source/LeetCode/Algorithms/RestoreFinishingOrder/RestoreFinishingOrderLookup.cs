@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RestoreFinishingOrder;
 
 /// <inheritdoc />
-public class RestoreFinishingOrderLookup : IRestoreFinishingOrder
+public sealed class RestoreFinishingOrderLookup : IRestoreFinishingOrder
 {
     /// <summary>
     ///     Time complexity - O(n)

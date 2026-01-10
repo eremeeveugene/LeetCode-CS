@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.FlipEquivalentBinaryTrees;
 
 /// <inheritdoc />
-public class FlipEquivalentBinaryTreesRecursive : IFlipEquivalentBinaryTrees
+public sealed class FlipEquivalentBinaryTreesRecursive : IFlipEquivalentBinaryTrees
 {
     /// <summary>
     ///     Time complexity - O(n)

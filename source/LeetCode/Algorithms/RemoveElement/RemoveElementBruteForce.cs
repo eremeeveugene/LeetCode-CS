@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RemoveElement;
 
 /// <inheritdoc />
-public class RemoveElementBruteForce : IRemoveElement
+public sealed class RemoveElementBruteForce : IRemoveElement
 {
     /// <summary>
     ///     Time complexity - O(n^3)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DivideIntervalsIntoMinimumNumberOfGroups;
 
 /// <inheritdoc />
-public class DivideIntervalsIntoMinimumNumberOfGroupsLineSweep : IDivideIntervalsIntoMinimumNumberOfGroups
+public sealed class DivideIntervalsIntoMinimumNumberOfGroupsLineSweep : IDivideIntervalsIntoMinimumNumberOfGroups
 {
     /// <summary>
     ///     Time complexity - O(n)

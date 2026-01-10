@@ -12,7 +12,7 @@
 namespace LeetCode.Concurrency.FizzBuzzMultithreaded;
 
 /// <inheritdoc />
-public class FizzBuzzMultithreadedMonitorLock : IFizzBuzzMultithreaded
+public sealed class FizzBuzzMultithreadedMonitorLock : IFizzBuzzMultithreaded
 {
     private readonly object _lock = new();
     private readonly int _n;

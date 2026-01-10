@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountSquareSubmatricesWithAllOnes;
 
 /// <inheritdoc />
-public class CountSquareSubmatricesWithAllOnesBruteForce : ICountSquareSubmatricesWithAllOnes
+public sealed class CountSquareSubmatricesWithAllOnesBruteForce : ICountSquareSubmatricesWithAllOnes
 {
     /// <summary>
     ///     Time complexity - O(m * n * min(m, n)^2)

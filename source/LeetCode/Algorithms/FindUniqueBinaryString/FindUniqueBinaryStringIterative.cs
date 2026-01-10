@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindUniqueBinaryString;
 
 /// <inheritdoc />
-public class FindUniqueBinaryStringIterative : IFindUniqueBinaryString
+public sealed class FindUniqueBinaryStringIterative : IFindUniqueBinaryString
 {
     /// <summary>
     ///     Time complexity - O(n)

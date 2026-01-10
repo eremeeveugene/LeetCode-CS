@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PartitionArrayAccordingToGivenPivot;
 
 /// <inheritdoc />
-public class PartitionArrayAccordingToGivenPivotThreePass : IPartitionArrayAccordingToGivenPivot
+public sealed class PartitionArrayAccordingToGivenPivotThreePass : IPartitionArrayAccordingToGivenPivot
 {
     /// <summary>
     ///     Time complexity - O(n)

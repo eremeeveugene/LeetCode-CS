@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.WaysToExpressAnIntegerAsSumOfPowers;
 
 /// <inheritdoc />
-public class WaysToExpressAnIntegerAsSumOfPowersDynamicProgramming : IWaysToExpressAnIntegerAsSumOfPowers
+public sealed class WaysToExpressAnIntegerAsSumOfPowersDynamicProgramming : IWaysToExpressAnIntegerAsSumOfPowers
 {
     private const int Mod = 1_000_000_007;
 

@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.CapitalizeTheTitle;
 
 /// <inheritdoc />
-public class CapitalizeTheTitleStringBuilder : ICapitalizeTheTitle
+public sealed class CapitalizeTheTitleStringBuilder : ICapitalizeTheTitle
 {
     /// <summary>
     ///     Time complexity - O(n)

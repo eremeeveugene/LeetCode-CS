@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RankTransformOfAnArray;
 
 /// <inheritdoc />
-public class RankTransformOfAnArrayDictionary : IRankTransformOfAnArray
+public sealed class RankTransformOfAnArrayDictionary : IRankTransformOfAnArray
 {
     /// <summary>
     ///     Time complexity - O(n log n)

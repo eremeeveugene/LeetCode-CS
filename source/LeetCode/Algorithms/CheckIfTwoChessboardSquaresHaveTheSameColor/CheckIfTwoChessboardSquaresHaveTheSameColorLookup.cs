@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfTwoChessboardSquaresHaveTheSameColor;
 
 /// <inheritdoc />
-public class CheckIfTwoChessboardSquaresHaveTheSameColorLookup : CheckIfTwoChessboardSquaresHaveTheSameColorBase
+public sealed class CheckIfTwoChessboardSquaresHaveTheSameColorLookup : CheckIfTwoChessboardSquaresHaveTheSameColorBase
 {
     private const int BoardSize = 8;
     private static readonly bool[,] CellsLookup = CreateCellsLookup();

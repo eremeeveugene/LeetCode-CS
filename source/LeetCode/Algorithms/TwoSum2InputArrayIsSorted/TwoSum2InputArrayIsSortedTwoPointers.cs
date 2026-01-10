@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TwoSum2InputArrayIsSorted;
 
 /// <inheritdoc />
-public class TwoSum2InputArrayIsSortedTwoPointers : ITwoSum2InputArrayIsSorted
+public sealed class TwoSum2InputArrayIsSortedTwoPointers : ITwoSum2InputArrayIsSorted
 {
     /// <summary>
     ///     Time complexity - O(n)

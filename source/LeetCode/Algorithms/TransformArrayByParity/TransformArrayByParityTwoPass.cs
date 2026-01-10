@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TransformArrayByParity;
 
 /// <inheritdoc />
-public class TransformArrayByParityTwoPass : ITransformArrayByParity
+public sealed class TransformArrayByParityTwoPass : ITransformArrayByParity
 {
     /// <summary>
     ///     Time complexity - O(n)

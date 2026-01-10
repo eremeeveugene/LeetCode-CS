@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ThreeSum;
 
 /// <inheritdoc />
-public class ThreeSumTwoPointers : IThreeSum
+public sealed class ThreeSumTwoPointers : IThreeSum
 {
     /// <summary>
     ///     Time complexity - O(n^2)

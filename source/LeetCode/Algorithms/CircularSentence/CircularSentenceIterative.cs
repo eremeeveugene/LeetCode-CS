@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CircularSentence;
 
 /// <inheritdoc />
-public class CircularSentenceIterative : ICircularSentence
+public sealed class CircularSentenceIterative : ICircularSentence
 {
     /// <summary>
     ///     Time complexity - O(n)

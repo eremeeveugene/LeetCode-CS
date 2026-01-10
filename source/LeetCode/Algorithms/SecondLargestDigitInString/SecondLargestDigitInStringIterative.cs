@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SecondLargestDigitInString;
 
 /// <inheritdoc />
-public class SecondLargestDigitInStringIterative : ISecondLargestDigitInString
+public sealed class SecondLargestDigitInStringIterative : ISecondLargestDigitInString
 {
     /// <summary>
     ///     Time complexity - O(n)

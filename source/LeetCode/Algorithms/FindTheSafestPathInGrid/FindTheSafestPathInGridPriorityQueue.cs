@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheSafestPathInGrid;
 
 /// <inheritdoc />
-public class FindTheSafestPathInGridPriorityQueue : IFindTheSafestPathInGrid
+public sealed class FindTheSafestPathInGridPriorityQueue : IFindTheSafestPathInGrid
 {
     /// <summary>
     ///     Time complexity - O(n^2 log n^2)

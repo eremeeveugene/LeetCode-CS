@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfAnyElementHasPrimeFrequency;
 
 /// <inheritdoc />
-public class CheckIfAnyElementHasPrimeFrequencyArray : CheckIfAnyElementHasPrimeFrequencyBase
+public sealed class CheckIfAnyElementHasPrimeFrequencyArray : CheckIfAnyElementHasPrimeFrequencyBase
 {
     /// <summary>
     ///     Time complexity - O(n)

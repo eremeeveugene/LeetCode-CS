@@ -14,4 +14,4 @@ using LeetCode.Algorithms.AssignCookies;
 namespace LeetCode.Tests.Algorithms.AssignCookies;
 
 [TestClass]
-public class AssignCookiesSortingTests : AssignCookiesTestsBase<AssignCookiesSorting>;
+public sealed class AssignCookiesSortingTests : AssignCookiesTestsBase<AssignCookiesSorting>;

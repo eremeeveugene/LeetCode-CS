@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RobotBoundedInCircle;
 
 /// <inheritdoc />
-public class RobotBoundedInCircleSimulation : IRobotBoundedInCircle
+public sealed class RobotBoundedInCircleSimulation : IRobotBoundedInCircle
 {
     /// <summary>
     ///     Time complexity - O(n)

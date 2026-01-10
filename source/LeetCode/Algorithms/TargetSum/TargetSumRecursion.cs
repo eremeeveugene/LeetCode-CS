@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TargetSum;
 
 /// <inheritdoc />
-public class TargetSumRecursion : ITargetSum
+public sealed class TargetSumRecursion : ITargetSum
 {
     /// <summary>
     ///     Time complexity - O(n * totalSum)

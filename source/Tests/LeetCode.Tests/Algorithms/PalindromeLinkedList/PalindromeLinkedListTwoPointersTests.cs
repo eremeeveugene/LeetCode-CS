@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PalindromeLinkedList;
 namespace LeetCode.Tests.Algorithms.PalindromeLinkedList;
 
 [TestClass]
-public class PalindromeLinkedListTwoPointersTests : PalindromeLinkedListTestsBase<PalindromeLinkedListTwoPointers>;
+public sealed class PalindromeLinkedListTwoPointersTests : PalindromeLinkedListTestsBase<PalindromeLinkedListTwoPointers>;

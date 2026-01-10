@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.AdjacentIncreasingSubarraysDetection1;
 
 /// <inheritdoc />
-public class AdjacentIncreasingSubarraysDetection1Greedy : IAdjacentIncreasingSubarraysDetection1
+public sealed class AdjacentIncreasingSubarraysDetection1Greedy : IAdjacentIncreasingSubarraysDetection1
 {
     /// <summary>
     ///     Time complexity - O(n)

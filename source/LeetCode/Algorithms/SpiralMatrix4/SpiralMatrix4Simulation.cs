@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.SpiralMatrix4;
 
 /// <inheritdoc />
-public class SpiralMatrix4Simulation : ISpiralMatrix4
+public sealed class SpiralMatrix4Simulation : ISpiralMatrix4
 {
     /// <summary>
     ///     Time complexity - O(m * n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindMissingObservations;
 
 /// <inheritdoc />
-public class FindMissingObservationsMath : IFindMissingObservations
+public sealed class FindMissingObservationsMath : IFindMissingObservations
 {
     /// <summary>
     ///     Time complexity - O(m + n)

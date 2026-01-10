@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CountNumberOfMaximumBitwiseORSubsets;
 namespace LeetCode.Tests.Algorithms.CountNumberOfMaximumBitwiseORSubsets;
 
 [TestClass]
-public class CountNumberOfMaximumBitwiseORSubsetsBacktrackingTests :
+public sealed class CountNumberOfMaximumBitwiseORSubsetsBacktrackingTests :
     CountNumberOfMaximumBitwiseORSubsetsTestsBase<CountNumberOfMaximumBitwiseORSubsetsBacktracking>;

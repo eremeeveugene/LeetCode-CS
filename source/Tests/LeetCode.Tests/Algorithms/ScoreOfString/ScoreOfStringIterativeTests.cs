@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ScoreOfString;
 namespace LeetCode.Tests.Algorithms.ScoreOfString;
 
 [TestClass]
-public class ScoreOfStringIterativeTests : ScoreOfStringTestsBase<ScoreOfStringIterative>;
+public sealed class ScoreOfStringIterativeTests : ScoreOfStringTestsBase<ScoreOfStringIterative>;

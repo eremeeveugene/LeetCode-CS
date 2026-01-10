@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ContainsDuplicate3;
 namespace LeetCode.Tests.Algorithms.ContainsDuplicate3;
 
 [TestClass]
-public class ContainsDuplicate3BruteForceTests : ContainsDuplicate3TestsBase<ContainsDuplicate3BruteForce>;
+public sealed class ContainsDuplicate3BruteForceTests : ContainsDuplicate3TestsBase<ContainsDuplicate3BruteForce>;

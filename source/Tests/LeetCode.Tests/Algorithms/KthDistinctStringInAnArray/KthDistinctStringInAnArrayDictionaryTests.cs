@@ -14,5 +14,5 @@ using LeetCode.Algorithms.KthDistinctStringInAnArray;
 namespace LeetCode.Tests.Algorithms.KthDistinctStringInAnArray;
 
 [TestClass]
-public class KthDistinctStringInAnArrayDictionaryTests : KthDistinctStringInAnArrayTestsBase<
+public sealed class KthDistinctStringInAnArrayDictionaryTests : KthDistinctStringInAnArrayTestsBase<
     KthDistinctStringInAnArrayDictionary>;

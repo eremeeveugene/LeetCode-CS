@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FinalArrayStateAfterKMultiplicationOperations;
 
 /// <inheritdoc />
-public class FinalArrayStateAfterKMultiplicationOperationsGreedy : IFinalArrayStateAfterKMultiplicationOperations
+public sealed class FinalArrayStateAfterKMultiplicationOperationsGreedy : IFinalArrayStateAfterKMultiplicationOperations
 {
     /// <summary>
     ///     Time complexity - O(n * k)

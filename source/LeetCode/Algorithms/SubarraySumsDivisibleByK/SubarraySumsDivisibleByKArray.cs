@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SubarraySumsDivisibleByK;
 
 /// <inheritdoc />
-public class SubarraySumsDivisibleByKArray : ISubarraySumsDivisibleByK
+public sealed class SubarraySumsDivisibleByKArray : ISubarraySumsDivisibleByK
 {
     /// <summary>
     ///     Time complexity - O(n)

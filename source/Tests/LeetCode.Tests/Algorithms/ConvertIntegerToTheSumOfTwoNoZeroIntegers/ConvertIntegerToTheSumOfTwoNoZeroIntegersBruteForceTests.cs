@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ConvertIntegerToTheSumOfTwoNoZeroIntegers;
 namespace LeetCode.Tests.Algorithms.ConvertIntegerToTheSumOfTwoNoZeroIntegers;
 
 [TestClass]
-public class ConvertIntegerToTheSumOfTwoNoZeroIntegersBruteForceTests :
+public sealed class ConvertIntegerToTheSumOfTwoNoZeroIntegersBruteForceTests :
     ConvertIntegerToTheSumOfTwoNoZeroIntegersTestsBase<ConvertIntegerToTheSumOfTwoNoZeroIntegersBruteForce>;

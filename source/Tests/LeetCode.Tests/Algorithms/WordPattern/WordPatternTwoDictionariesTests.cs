@@ -14,4 +14,4 @@ using LeetCode.Algorithms.WordPattern;
 namespace LeetCode.Tests.Algorithms.WordPattern;
 
 [TestClass]
-public class WordPatternTwoDictionariesTests : WordPatternTestsBase<WordPatternTwoDictionaries>;
+public sealed class WordPatternTwoDictionariesTests : WordPatternTestsBase<WordPatternTwoDictionaries>;

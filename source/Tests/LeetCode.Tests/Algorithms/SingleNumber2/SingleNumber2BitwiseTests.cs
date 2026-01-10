@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SingleNumber2;
 namespace LeetCode.Tests.Algorithms.SingleNumber2;
 
 [TestClass]
-public class SingleNumber2BitwiseTests : SingleNumber2TestsBase<SingleNumber2Bitwise>;
+public sealed class SingleNumber2BitwiseTests : SingleNumber2TestsBase<SingleNumber2Bitwise>;

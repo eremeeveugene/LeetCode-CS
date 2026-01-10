@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.IntegerToEnglishWords;
 
 /// <inheritdoc />
-public class IntegerToEnglishWordsIterative : IIntegerToEnglishWords
+public sealed class IntegerToEnglishWordsIterative : IIntegerToEnglishWords
 {
     private const string Space = " ";
 

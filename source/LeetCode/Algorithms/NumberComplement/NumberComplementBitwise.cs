@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberComplement;
 
 /// <inheritdoc />
-public class NumberComplementBitwise : INumberComplement
+public sealed class NumberComplementBitwise : INumberComplement
 {
     /// <summary>
     ///     Time complexity - O(1)

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SmallestIndexWithDigitSumEqualToIndex;
 namespace LeetCode.Tests.Algorithms.SmallestIndexWithDigitSumEqualToIndex;
 
 [TestClass]
-public class SmallestIndexWithDigitSumEqualToIndexBruteForceTests :
+public sealed class SmallestIndexWithDigitSumEqualToIndexBruteForceTests :
     SmallestIndexWithDigitSumEqualToIndexTestsBase<SmallestIndexWithDigitSumEqualToIndexBruteForce>;

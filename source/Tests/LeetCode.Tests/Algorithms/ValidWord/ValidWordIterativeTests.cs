@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ValidWord;
 namespace LeetCode.Tests.Algorithms.ValidWord;
 
 [TestClass]
-public class ValidWordIterativeTests : ValidWordTestsBase<ValidWordIterative>;
+public sealed class ValidWordIterativeTests : ValidWordTestsBase<ValidWordIterative>;

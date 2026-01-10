@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ShuffleTheArray;
 
 /// <inheritdoc />
-public class ShuffleTheArrayIterative : IShuffleTheArray
+public sealed class ShuffleTheArrayIterative : IShuffleTheArray
 {
     /// <summary>
     ///     Time complexity - O(n)

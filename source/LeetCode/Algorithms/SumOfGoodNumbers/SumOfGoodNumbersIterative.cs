@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SumOfGoodNumbers;
 
 /// <inheritdoc />
-public class SumOfGoodNumbersIterative : ISumOfGoodNumbers
+public sealed class SumOfGoodNumbersIterative : ISumOfGoodNumbers
 {
     /// <summary>
     ///     Time complexity - O(n)

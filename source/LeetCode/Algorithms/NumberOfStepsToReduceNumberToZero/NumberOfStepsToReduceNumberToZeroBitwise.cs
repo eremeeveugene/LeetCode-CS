@@ -14,7 +14,7 @@ using System.Numerics;
 namespace LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero;
 
 /// <inheritdoc />
-public class NumberOfStepsToReduceNumberToZeroBitwise : INumberOfStepsToReduceNumberToZero
+public sealed class NumberOfStepsToReduceNumberToZeroBitwise : INumberOfStepsToReduceNumberToZero
 {
     /// <summary>
     ///     Time complexity - O(1)

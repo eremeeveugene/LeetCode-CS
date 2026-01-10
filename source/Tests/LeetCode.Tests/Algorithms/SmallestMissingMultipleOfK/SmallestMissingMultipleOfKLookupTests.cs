@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SmallestMissingMultipleOfK;
 namespace LeetCode.Tests.Algorithms.SmallestMissingMultipleOfK;
 
 [TestClass]
-public class SmallestMissingMultipleOfKLookupTests :
+public sealed class SmallestMissingMultipleOfKLookupTests :
     SmallestMissingMultipleOfKTestsBase<SmallestMissingMultipleOfKLookup>;

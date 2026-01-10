@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.CountAndSay;
 
 /// <inheritdoc />
-public class CountAndSayIterative : ICountAndSay
+public sealed class CountAndSayIterative : ICountAndSay
 {
     /// <summary>
     ///     Time complexity - O(2^n)

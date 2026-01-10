@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ReverseString;
 namespace LeetCode.Tests.Algorithms.ReverseString;
 
 [TestClass]
-public class ReverseStringTwoPointersTests : ReverseStringTestsBase<ReverseStringTwoPointers>;
+public sealed class ReverseStringTwoPointersTests : ReverseStringTestsBase<ReverseStringTwoPointers>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.InsertInterval;
 
 /// <inheritdoc />
-public class InsertIntervalIterative : IInsertInterval
+public sealed class InsertIntervalIterative : IInsertInterval
 {
     /// <summary>
     ///     Time complexity - O(n)

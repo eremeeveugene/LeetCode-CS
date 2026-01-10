@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RobotReturnToOrigin;
 
 /// <inheritdoc />
-public class RobotReturnToOriginSimulation : IRobotReturnToOrigin
+public sealed class RobotReturnToOriginSimulation : IRobotReturnToOrigin
 {
     /// <summary>
     ///     Time complexity - O(n)

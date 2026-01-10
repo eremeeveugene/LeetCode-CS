@@ -14,4 +14,4 @@ using LeetCode.Algorithms.StrangePrinter;
 namespace LeetCode.Tests.Algorithms.StrangePrinter;
 
 [TestClass]
-public class StrangePrinterDynamicProgrammingTests : StrangePrinterTestsBase<StrangePrinterDynamicProgramming>;
+public sealed class StrangePrinterDynamicProgrammingTests : StrangePrinterTestsBase<StrangePrinterDynamicProgramming>;

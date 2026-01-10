@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.AliceAndBobPlayingFlowerGame;
 
 /// <inheritdoc />
-public class AliceAndBobPlayingFlowerGameMath : IAliceAndBobPlayingFlowerGame
+public sealed class AliceAndBobPlayingFlowerGameMath : IAliceAndBobPlayingFlowerGame
 {
     /// <summary>
     ///     Time complexity - O(1)

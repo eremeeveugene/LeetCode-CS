@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced;
 
 /// <inheritdoc />
-public class MinimumNumberOfSwapsToMakeTheStringBalancedIterative : IMinimumNumberOfSwapsToMakeTheStringBalanced
+public sealed class MinimumNumberOfSwapsToMakeTheStringBalancedIterative : IMinimumNumberOfSwapsToMakeTheStringBalanced
 {
     /// <summary>
     ///     Time complexity - O(n)

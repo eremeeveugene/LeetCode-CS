@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumPositiveSumSubarray;
 
 /// <inheritdoc />
-public class MinimumPositiveSumSubarrayPrefixSum : IMinimumPositiveSumSubarray
+public sealed class MinimumPositiveSumSubarrayPrefixSum : IMinimumPositiveSumSubarray
 {
     /// <summary>
     ///     Time complexity - O(n * (r - l + 1))

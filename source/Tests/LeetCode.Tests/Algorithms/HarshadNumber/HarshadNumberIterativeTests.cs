@@ -14,4 +14,4 @@ using LeetCode.Algorithms.HarshadNumber;
 namespace LeetCode.Tests.Algorithms.HarshadNumber;
 
 [TestClass]
-public class HarshadNumberIterativeTests : HarshadNumberTestsBase<HarshadNumberIterative>;
+public sealed class HarshadNumberIterativeTests : HarshadNumberTestsBase<HarshadNumberIterative>;

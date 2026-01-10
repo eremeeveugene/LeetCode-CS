@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindingThreeDigitEvenNumbers;
 namespace LeetCode.Tests.Algorithms.FindingThreeDigitEvenNumbers;
 
 [TestClass]
-public class FindingThreeDigitEvenNumbersFrequencyTests :
+public sealed class FindingThreeDigitEvenNumbersFrequencyTests :
     FindingThreeDigitEvenNumbersTestsBase<FindingThreeDigitEvenNumbersFrequency>;

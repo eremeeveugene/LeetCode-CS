@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindMinimumDiameterAfterMergingTwoTrees;
 namespace LeetCode.Tests.Algorithms.FindMinimumDiameterAfterMergingTwoTrees;
 
 [TestClass]
-public class FindMinimumDiameterAfterMergingTwoTreesDepthFirstSearchTests :
+public sealed class FindMinimumDiameterAfterMergingTwoTreesDepthFirstSearchTests :
     FindMinimumDiameterAfterMergingTwoTreesTestsBase<FindMinimumDiameterAfterMergingTwoTreesDepthFirstSearch>;

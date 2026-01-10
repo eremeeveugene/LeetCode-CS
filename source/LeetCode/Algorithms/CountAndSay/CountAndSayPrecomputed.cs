@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountAndSay;
 
 /// <inheritdoc />
-public class CountAndSayPrecomputed : ICountAndSay
+public sealed class CountAndSayPrecomputed : ICountAndSay
 {
     private static readonly string[] Precomputed =
     [

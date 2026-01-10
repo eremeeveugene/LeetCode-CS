@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RemoveDuplicatesFromSortedArray;
 
 /// <inheritdoc />
-public class RemoveDuplicatesFromSortedArrayIterative : IRemoveDuplicatesFromSortedArray
+public sealed class RemoveDuplicatesFromSortedArrayIterative : IRemoveDuplicatesFromSortedArray
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.BitwiseXOROfAllPairings;
 
 /// <inheritdoc />
-public class BitwiseXOROfAllPairingsIterative : IBitwiseXOROfAllPairings
+public sealed class BitwiseXOROfAllPairingsIterative : IBitwiseXOROfAllPairings
 {
     /// <summary>
     ///     Time complexity - O(n + m)

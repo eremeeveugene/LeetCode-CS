@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumNumberOfPointsWithCost;
 
 /// <inheritdoc />
-public class MaximumNumberOfPointsWithCostDynamicProgramming : IMaximumNumberOfPointsWithCost
+public sealed class MaximumNumberOfPointsWithCostDynamicProgramming : IMaximumNumberOfPointsWithCost
 {
     /// <summary>
     ///     Time complexity - O(m * n)

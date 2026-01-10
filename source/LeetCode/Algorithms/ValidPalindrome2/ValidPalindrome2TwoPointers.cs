@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ValidPalindrome2;
 
 /// <inheritdoc />
-public class ValidPalindrome2TwoPointers : IValidPalindrome2
+public sealed class ValidPalindrome2TwoPointers : IValidPalindrome2
 {
     /// <summary>
     ///     Time complexity - O(n)

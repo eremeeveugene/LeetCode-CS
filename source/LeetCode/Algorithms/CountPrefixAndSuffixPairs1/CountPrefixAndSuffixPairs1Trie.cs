@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountPrefixAndSuffixPairs1;
 
 /// <inheritdoc />
-public class CountPrefixAndSuffixPairs1Trie : ICountPrefixAndSuffixPairs1
+public sealed class CountPrefixAndSuffixPairs1Trie : ICountPrefixAndSuffixPairs1
 {
     private readonly Node _prefixRoot = new();
     private readonly Node _suffixRoot = new();

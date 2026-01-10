@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SumOfSquareNumbers;
 
 /// <inheritdoc />
-public class SumOfSquareNumbersBruteForce : ISumOfSquareNumbers
+public sealed class SumOfSquareNumbersBruteForce : ISumOfSquareNumbers
 {
     /// <summary>
     ///     Time complexity - O(c)

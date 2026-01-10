@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NextGreaterElement1;
 
 /// <inheritdoc />
-public class NextGreaterElement1StackDictionary : INextGreaterElement1
+public sealed class NextGreaterElement1StackDictionary : INextGreaterElement1
 {
     /// <summary>
     ///     Time complexity - O(n + m)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SortThePeople;
 
 /// <inheritdoc />
-public class SortThePeopleSorting : ISortThePeople
+public sealed class SortThePeopleSorting : ISortThePeople
 {
     /// <summary>
     ///     Time complexity - O(n log n)

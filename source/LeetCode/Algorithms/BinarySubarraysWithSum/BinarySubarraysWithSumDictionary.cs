@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.BinarySubarraysWithSum;
 
 /// <inheritdoc />
-public class BinarySubarraysWithSumDictionary : IBinarySubarraysWithSum
+public sealed class BinarySubarraysWithSumDictionary : IBinarySubarraysWithSum
 {
     /// <summary>
     ///     Time complexity - O(n)

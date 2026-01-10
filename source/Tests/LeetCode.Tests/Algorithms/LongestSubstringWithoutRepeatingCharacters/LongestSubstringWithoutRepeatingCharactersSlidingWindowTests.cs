@@ -14,6 +14,6 @@ using LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters;
 namespace LeetCode.Tests.Algorithms.LongestSubstringWithoutRepeatingCharacters;
 
 [TestClass]
-public class LongestSubstringWithoutRepeatingCharactersSlidingWindowTests :
+public sealed class LongestSubstringWithoutRepeatingCharactersSlidingWindowTests :
     LongestSubstringWithoutRepeatingCharactersTestsBase<
         LongestSubstringWithoutRepeatingCharactersSlidingWindow>;

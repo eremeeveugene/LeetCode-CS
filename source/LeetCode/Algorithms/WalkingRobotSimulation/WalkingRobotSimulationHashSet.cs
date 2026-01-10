@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.WalkingRobotSimulation;
 
 /// <inheritdoc />
-public class WalkingRobotSimulationHashSet : IWalkingRobotSimulation
+public sealed class WalkingRobotSimulationHashSet : IWalkingRobotSimulation
 {
     /// <summary>
     ///     Time complexity - O(m + n)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RotateString;
 namespace LeetCode.Tests.Algorithms.RotateString;
 
 [TestClass]
-public class RotateStringConcatenationTests : RotateStringTestsBase<RotateStringConcatenation>;
+public sealed class RotateStringConcatenationTests : RotateStringTestsBase<RotateStringConcatenation>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.BinaryPrefixDivisibleByFive;
 
 /// <inheritdoc />
-public class BinaryPrefixDivisibleByFivePrefixModulo : IBinaryPrefixDivisibleByFive
+public sealed class BinaryPrefixDivisibleByFivePrefixModulo : IBinaryPrefixDivisibleByFive
 {
     /// <summary>
     ///     Time complexity - O(n)

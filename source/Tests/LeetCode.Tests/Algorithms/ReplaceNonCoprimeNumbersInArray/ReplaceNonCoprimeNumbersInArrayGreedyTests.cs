@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ReplaceNonCoprimeNumbersInArray;
 namespace LeetCode.Tests.Algorithms.ReplaceNonCoprimeNumbersInArray;
 
 [TestClass]
-public class ReplaceNonCoprimeNumbersInArrayGreedyTests :
+public sealed class ReplaceNonCoprimeNumbersInArrayGreedyTests :
     ReplaceNonCoprimeNumbersInArrayTestsBase<ReplaceNonCoprimeNumbersInArrayGreedy>;

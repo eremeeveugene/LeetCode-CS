@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SquaresOfSortedArray;
 
 /// <inheritdoc />
-public class SquaresOfSortedArraySort : ISquaresOfSortedArray
+public sealed class SquaresOfSortedArraySort : ISquaresOfSortedArray
 {
     /// <summary>
     ///     Time complexity - O(n log n)

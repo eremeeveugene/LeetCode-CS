@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CountOperationsToObtainZero;
 namespace LeetCode.Tests.Algorithms.CountOperationsToObtainZero;
 
 [TestClass]
-public class CountOperationsToObtainZeroSubtractionTests :
+public sealed class CountOperationsToObtainZeroSubtractionTests :
     CountOperationsToObtainZeroTestsBase<CountOperationsToObtainZeroSubtraction>;

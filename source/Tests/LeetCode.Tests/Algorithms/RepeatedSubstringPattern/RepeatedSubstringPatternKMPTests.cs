@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RepeatedSubstringPattern;
 namespace LeetCode.Tests.Algorithms.RepeatedSubstringPattern;
 
 [TestClass]
-public class RepeatedSubstringPatternKMPTests : RepeatedSubstringPatternTestsBase<RepeatedSubstringPatternKMP>;
+public sealed class RepeatedSubstringPatternKMPTests : RepeatedSubstringPatternTestsBase<RepeatedSubstringPatternKMP>;

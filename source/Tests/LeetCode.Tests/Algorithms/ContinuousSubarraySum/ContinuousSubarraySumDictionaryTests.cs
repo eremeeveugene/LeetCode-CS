@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ContinuousSubarraySum;
 namespace LeetCode.Tests.Algorithms.ContinuousSubarraySum;
 
 [TestClass]
-public class ContinuousSubarraySumDictionaryTests : ContinuousSubarraySumTestsBase<ContinuousSubarraySumDictionary>;
+public sealed class ContinuousSubarraySumDictionaryTests : ContinuousSubarraySumTestsBase<ContinuousSubarraySumDictionary>;

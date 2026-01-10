@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RepeatedSubstringPattern;
 namespace LeetCode.Tests.Algorithms.RepeatedSubstringPattern;
 
 [TestClass]
-public class RepeatedSubstringPatternConcatTests : RepeatedSubstringPatternTestsBase<RepeatedSubstringPatternConcat>;
+public sealed class RepeatedSubstringPatternConcatTests : RepeatedSubstringPatternTestsBase<RepeatedSubstringPatternConcat>;

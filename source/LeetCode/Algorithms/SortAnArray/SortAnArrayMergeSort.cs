@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SortAnArray;
 
 /// <inheritdoc />
-public class SortAnArrayMergeSort : ISortAnArray
+public sealed class SortAnArrayMergeSort : ISortAnArray
 {
     /// <summary>
     ///     Time complexity - O(n log n)

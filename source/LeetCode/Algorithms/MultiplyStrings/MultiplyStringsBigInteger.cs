@@ -14,7 +14,7 @@ using System.Numerics;
 namespace LeetCode.Algorithms.MultiplyStrings;
 
 /// <inheritdoc />
-public class MultiplyStringsBigInteger : IMultiplyStrings
+public sealed class MultiplyStringsBigInteger : IMultiplyStrings
 {
     /// <summary>
     ///     Time complexity - O(n * m)

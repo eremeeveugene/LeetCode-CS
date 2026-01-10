@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LongestHarmoniousSubsequence;
 
 /// <inheritdoc />
-public class LongestHarmoniousSubsequenceDictionary : ILongestHarmoniousSubsequence
+public sealed class LongestHarmoniousSubsequenceDictionary : ILongestHarmoniousSubsequence
 {
     /// <summary>
     ///     Time complexity - O(n)

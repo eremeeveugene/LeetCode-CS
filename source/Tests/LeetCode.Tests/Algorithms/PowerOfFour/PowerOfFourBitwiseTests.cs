@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PowerOfFour;
 namespace LeetCode.Tests.Algorithms.PowerOfFour;
 
 [TestClass]
-public class PowerOfFourBitwiseTests : PowerOfFourTestsBase<PowerOfFourBitwise>;
+public sealed class PowerOfFourBitwiseTests : PowerOfFourTestsBase<PowerOfFourBitwise>;

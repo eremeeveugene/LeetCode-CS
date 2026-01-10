@@ -14,4 +14,4 @@ using LeetCode.Algorithms.Pow;
 namespace LeetCode.Tests.Algorithms.Pow;
 
 [TestClass]
-public class PowIterativeTests : PowTestsBase<PowIterative>;
+public sealed class PowIterativeTests : PowTestsBase<PowIterative>;

@@ -14,6 +14,6 @@ using LeetCode.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements;
 namespace LeetCode.Tests.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements;
 
 [TestClass]
-public class CountElementsWithStrictlySmallerAndGreaterElementsIterativeTests :
+public sealed class CountElementsWithStrictlySmallerAndGreaterElementsIterativeTests :
     CountElementsWithStrictlySmallerAndGreaterElementsTestsBase<
         CountElementsWithStrictlySmallerAndGreaterElementsIterative>;

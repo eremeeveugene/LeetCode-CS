@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner;
 namespace LeetCode.Tests.Algorithms.MinimumObstacleRemovalToReachCorner;
 
 [TestClass]
-public class MinimumObstacleRemovalToReachCornerPriorityQueueTests :
+public sealed class MinimumObstacleRemovalToReachCornerPriorityQueueTests :
     MinimumObstacleRemovalToReachCornerTestsBase<MinimumObstacleRemovalToReachCornerPriorityQueue>;

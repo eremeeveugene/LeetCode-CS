@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TwentyFourGame;
 
 /// <inheritdoc />
-public class TwentyFourGameBruteForce : ITwentyFourGame
+public sealed class TwentyFourGameBruteForce : ITwentyFourGame
 {
     private const double TargetValue = 24.0;
     private const double Tolerance = 1e-6;

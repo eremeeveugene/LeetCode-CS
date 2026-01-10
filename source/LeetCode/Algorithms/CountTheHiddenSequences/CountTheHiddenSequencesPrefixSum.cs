@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountTheHiddenSequences;
 
 /// <inheritdoc />
-public class CountTheHiddenSequencesPrefixSum : ICountTheHiddenSequences
+public sealed class CountTheHiddenSequencesPrefixSum : ICountTheHiddenSequences
 {
     /// <summary>
     ///     Time complexity - O(n)

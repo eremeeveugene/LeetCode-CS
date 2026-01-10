@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DayOfTheYear;
 
 /// <inheritdoc />
-public class DayOfTheYearMath : IDayOfTheYear
+public sealed class DayOfTheYearMath : IDayOfTheYear
 {
     private static readonly int[] CumulativeDays = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
 

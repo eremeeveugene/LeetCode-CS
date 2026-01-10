@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LetterTilePossibilities;
 
 /// <inheritdoc />
-public class LetterTilePossibilitiesRecursive : ILetterTilePossibilities
+public sealed class LetterTilePossibilitiesRecursive : ILetterTilePossibilities
 {
     private const int Count = 'Z' - 'A' + 1;
 

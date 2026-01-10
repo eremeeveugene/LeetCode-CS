@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumUniqueSubarraySumAfterDeletion;
 
 /// <inheritdoc />
-public class MaximumUniqueSubarraySumAfterDeletionHashSet : IMaximumUniqueSubarraySumAfterDeletion
+public sealed class MaximumUniqueSubarraySumAfterDeletionHashSet : IMaximumUniqueSubarraySumAfterDeletion
 {
     /// <summary>
     ///     Time complexity - O(n)

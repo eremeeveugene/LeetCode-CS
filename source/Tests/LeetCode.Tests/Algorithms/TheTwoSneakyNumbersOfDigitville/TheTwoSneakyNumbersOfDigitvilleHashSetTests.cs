@@ -14,5 +14,5 @@ using LeetCode.Algorithms.TheTwoSneakyNumbersOfDigitville;
 namespace LeetCode.Tests.Algorithms.TheTwoSneakyNumbersOfDigitville;
 
 [TestClass]
-public class TheTwoSneakyNumbersOfDigitvilleHashSetTests :
+public sealed class TheTwoSneakyNumbersOfDigitvilleHashSetTests :
     TheTwoSneakyNumbersOfDigitvilleTestsBase<TheTwoSneakyNumbersOfDigitvilleHashSet>;

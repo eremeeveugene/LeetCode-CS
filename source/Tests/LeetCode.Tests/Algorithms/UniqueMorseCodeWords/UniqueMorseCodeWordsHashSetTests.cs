@@ -14,4 +14,4 @@ using LeetCode.Algorithms.UniqueMorseCodeWords;
 namespace LeetCode.Tests.Algorithms.UniqueMorseCodeWords;
 
 [TestClass]
-public class UniqueMorseCodeWordsHashSetTests : UniqueMorseCodeWordsTestsBase<UniqueMorseCodeWordsHashSet>;
+public sealed class UniqueMorseCodeWordsHashSetTests : UniqueMorseCodeWordsTestsBase<UniqueMorseCodeWordsHashSet>;

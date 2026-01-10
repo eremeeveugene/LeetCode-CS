@@ -14,4 +14,4 @@ using LeetCode.Algorithms.DivisorGame;
 namespace LeetCode.Tests.Algorithms.DivisorGame;
 
 [TestClass]
-public class DivisorGameDivisionRemainderTests : DivisorGameTestsBase<DivisorGameDivisionRemainder>;
+public sealed class DivisorGameDivisionRemainderTests : DivisorGameTestsBase<DivisorGameDivisionRemainder>;

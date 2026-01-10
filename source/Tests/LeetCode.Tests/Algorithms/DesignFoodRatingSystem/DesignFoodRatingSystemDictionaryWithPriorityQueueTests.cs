@@ -14,7 +14,7 @@ using LeetCode.Algorithms.DesignFoodRatingSystem;
 namespace LeetCode.Tests.Algorithms.DesignFoodRatingSystem;
 
 [TestClass]
-public class DesignFoodRatingSystemDictionaryWithPriorityQueueTests : DesignFoodRatingSystemTestsBase
+public sealed class DesignFoodRatingSystemDictionaryWithPriorityQueueTests : DesignFoodRatingSystemTestsBase
 {
     protected override IDesignFoodRatingSystem GetSolution(string[] foods, string[] cuisines, int[] ratings)
     {

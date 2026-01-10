@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.StringMatchingInAnArray;
 
 /// <inheritdoc />
-public class StringMatchingInAnArrayBruteForce : IStringMatchingInAnArray
+public sealed class StringMatchingInAnArrayBruteForce : IStringMatchingInAnArray
 {
     /// <summary>
     ///     Time complexity - O(n^2)

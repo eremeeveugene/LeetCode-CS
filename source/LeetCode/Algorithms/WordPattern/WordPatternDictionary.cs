@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.WordPattern;
 
 /// <inheritdoc />
-public class WordPatternDictionary : IWordPattern
+public sealed class WordPatternDictionary : IWordPattern
 {
     /// <summary>
     ///     Time complexity - O(m^2), where m is the length of pattern

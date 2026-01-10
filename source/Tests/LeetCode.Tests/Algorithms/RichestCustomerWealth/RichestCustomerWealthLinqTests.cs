@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RichestCustomerWealth;
 namespace LeetCode.Tests.Algorithms.RichestCustomerWealth;
 
 [TestClass]
-public class RichestCustomerWealthLinqTests : RichestCustomerWealthTestsBase<RichestCustomerWealthLinq>;
+public sealed class RichestCustomerWealthLinqTests : RichestCustomerWealthTestsBase<RichestCustomerWealthLinq>;

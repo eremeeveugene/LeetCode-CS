@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MyCalendar1;
 
 /// <inheritdoc />
-public class MyCalendar1BinarySearch : IMyCalendar1
+public sealed class MyCalendar1BinarySearch : IMyCalendar1
 {
     private readonly List<Item> _items = [];
 

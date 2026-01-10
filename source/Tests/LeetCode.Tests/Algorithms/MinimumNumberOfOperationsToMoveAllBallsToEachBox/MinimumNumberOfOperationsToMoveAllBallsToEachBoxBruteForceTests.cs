@@ -14,6 +14,6 @@ using LeetCode.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox;
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox;
 
 [TestClass]
-public class MinimumNumberOfOperationsToMoveAllBallsToEachBoxBruteForceTests :
+public sealed class MinimumNumberOfOperationsToMoveAllBallsToEachBoxBruteForceTests :
     MinimumNumberOfOperationsToMoveAllBallsToEachBoxTestsBase<
         MinimumNumberOfOperationsToMoveAllBallsToEachBoxBruteForce>;

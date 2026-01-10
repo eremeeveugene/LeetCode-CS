@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CountSubIslands;
 namespace LeetCode.Tests.Algorithms.CountSubIslands;
 
 [TestClass]
-public class CountSubIslandsDepthFirstSearchTests : CountSubIslandsTestsBase<CountSubIslandsDepthFirstSearch>;
+public sealed class CountSubIslandsDepthFirstSearchTests : CountSubIslandsTestsBase<CountSubIslandsDepthFirstSearch>;

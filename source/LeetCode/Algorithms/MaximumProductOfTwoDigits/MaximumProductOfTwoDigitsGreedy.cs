@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumProductOfTwoDigits;
 
 /// <inheritdoc />
-public class MaximumProductOfTwoDigitsGreedy : IMaximumProductOfTwoDigits
+public sealed class MaximumProductOfTwoDigitsGreedy : IMaximumProductOfTwoDigits
 {
     /// <summary>
     ///     Time complexity - O(log n)

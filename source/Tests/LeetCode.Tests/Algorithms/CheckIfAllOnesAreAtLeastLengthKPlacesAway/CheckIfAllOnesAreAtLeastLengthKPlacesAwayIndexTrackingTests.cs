@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CheckIfAllOnesAreAtLeastLengthKPlacesAway;
 namespace LeetCode.Tests.Algorithms.CheckIfAllOnesAreAtLeastLengthKPlacesAway;
 
 [TestClass]
-public class CheckIfAllOnesAreAtLeastLengthKPlacesAwayIndexTrackingTests :
+public sealed class CheckIfAllOnesAreAtLeastLengthKPlacesAwayIndexTrackingTests :
     CheckIfAllOnesAreAtLeastLengthKPlacesAwayTestsBase<CheckIfAllOnesAreAtLeastLengthKPlacesAwayIndexTracking>;

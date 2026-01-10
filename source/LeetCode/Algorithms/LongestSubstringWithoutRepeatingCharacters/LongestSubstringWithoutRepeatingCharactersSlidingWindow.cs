@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters;
 
 /// <inheritdoc />
-public class LongestSubstringWithoutRepeatingCharactersSlidingWindow : ILongestSubstringWithoutRepeatingCharacters
+public sealed class LongestSubstringWithoutRepeatingCharactersSlidingWindow : ILongestSubstringWithoutRepeatingCharacters
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FractionAdditionAndSubtraction;
 
 /// <inheritdoc />
-public class FractionAdditionAndSubtractionSimulation : IFractionAdditionAndSubtraction
+public sealed class FractionAdditionAndSubtractionSimulation : IFractionAdditionAndSubtraction
 {
     /// <summary>
     ///     Time complexity - O(n)

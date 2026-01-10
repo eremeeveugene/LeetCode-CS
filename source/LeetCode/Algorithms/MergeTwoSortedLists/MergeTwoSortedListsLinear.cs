@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.MergeTwoSortedLists;
 
 /// <inheritdoc />
-public class MergeTwoSortedListsLinear : IMergeTwoSortedLists
+public sealed class MergeTwoSortedListsLinear : IMergeTwoSortedLists
 {
     /// <summary>
     ///     Time complexity - O(n + m)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LeftAndRightSumDifferences;
 
 /// <inheritdoc />
-public class LeftAndRightSumDifferencesPrefixSum : ILeftAndRightSumDifferences
+public sealed class LeftAndRightSumDifferencesPrefixSum : ILeftAndRightSumDifferences
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,7 +14,7 @@ using System.Numerics;
 namespace LeetCode.Algorithms.MinimumOperationsToMakeTheIntegerZero;
 
 /// <inheritdoc />
-public class MinimumOperationsToMakeTheIntegerZeroBitwise : IMinimumOperationsToMakeTheIntegerZero
+public sealed class MinimumOperationsToMakeTheIntegerZeroBitwise : IMinimumOperationsToMakeTheIntegerZero
 {
     /// <summary>
     ///     Time complexity - O(log n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TheNumberOfBeautifulSubsets;
 
 /// <inheritdoc />
-public class TheNumberOfBeautifulSubsetsBacktracking : ITheNumberOfBeautifulSubsets
+public sealed class TheNumberOfBeautifulSubsetsBacktracking : ITheNumberOfBeautifulSubsets
 {
     /// <summary>
     ///     Time complexity - O(n * 2^n)

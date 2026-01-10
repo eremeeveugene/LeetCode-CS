@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.StringCompression3;
 
 /// <inheritdoc />
-public class StringCompression3StringBuilder : IStringCompression3
+public sealed class StringCompression3StringBuilder : IStringCompression3
 {
     /// <summary>
     ///     Time complexity - O(n)

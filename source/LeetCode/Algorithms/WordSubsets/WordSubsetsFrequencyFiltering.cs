@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.WordSubsets;
 
 /// <inheritdoc />
-public class WordSubsetsFrequencyFiltering : IWordSubsets
+public sealed class WordSubsetsFrequencyFiltering : IWordSubsets
 {
     private const int LettersCount = 'z' - 'a' + 1;
 

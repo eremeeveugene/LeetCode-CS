@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumFallingPathSum2;
 
 /// <inheritdoc />
-public class MinimumFallingPathSum2DynamicProgramming : IMinimumFallingPathSum2
+public sealed class MinimumFallingPathSum2DynamicProgramming : IMinimumFallingPathSum2
 {
     /// <summary>
     ///     Time complexity - O(n^2)

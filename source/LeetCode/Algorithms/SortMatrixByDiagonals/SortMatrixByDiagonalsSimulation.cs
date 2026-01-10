@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SortMatrixByDiagonals;
 
 /// <inheritdoc />
-public class SortMatrixByDiagonalsSimulation : ISortMatrixByDiagonals
+public sealed class SortMatrixByDiagonalsSimulation : ISortMatrixByDiagonals
 {
     /// <summary>
     ///     Time complexity - O(n^2 log n)

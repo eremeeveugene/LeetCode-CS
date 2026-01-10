@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.BoatsToSavePeople;
 
 /// <inheritdoc />
-public class BoatsToSavePeopleTwoPointers : IBoatsToSavePeople
+public sealed class BoatsToSavePeopleTwoPointers : IBoatsToSavePeople
 {
     /// <summary>
     ///     Time complexity - O(n log n)

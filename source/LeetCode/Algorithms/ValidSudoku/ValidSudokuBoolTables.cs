@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ValidSudoku;
 
 /// <inheritdoc />
-public class ValidSudokuBoolTables : ValidSudokuBase
+public sealed class ValidSudokuBoolTables : ValidSudokuBase
 {
     /// <summary>
     ///     Time complexity - O(n^2)

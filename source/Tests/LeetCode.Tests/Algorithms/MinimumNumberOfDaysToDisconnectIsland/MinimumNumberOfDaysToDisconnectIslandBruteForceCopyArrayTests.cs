@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumNumberOfDaysToDisconnectIsland;
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfDaysToDisconnectIsland;
 
 [TestClass]
-public class MinimumNumberOfDaysToDisconnectIslandBruteForceCopyArrayTests :
+public sealed class MinimumNumberOfDaysToDisconnectIslandBruteForceCopyArrayTests :
     MinimumNumberOfDaysToDisconnectIslandTestsBase<MinimumNumberOfDaysToDisconnectIslandBruteForceCopyArray>;

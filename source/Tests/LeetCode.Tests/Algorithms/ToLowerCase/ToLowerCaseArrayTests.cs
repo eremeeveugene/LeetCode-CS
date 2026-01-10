@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ToLowerCase;
 namespace LeetCode.Tests.Algorithms.ToLowerCase;
 
 [TestClass]
-public class ToLowerCaseArrayTests : ToLowerCaseTestsBase<ToLowerCaseArray>;
+public sealed class ToLowerCaseArrayTests : ToLowerCaseTestsBase<ToLowerCaseArray>;

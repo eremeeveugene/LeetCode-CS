@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.HarshadNumber;
 
 /// <inheritdoc />
-public class HarshadNumberIterative : IHarshadNumber
+public sealed class HarshadNumberIterative : IHarshadNumber
 {
     /// <summary>
     ///     Time complexity - O(n)

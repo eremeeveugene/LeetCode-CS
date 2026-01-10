@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SumOfPrefixScoresOfStrings;
 namespace LeetCode.Tests.Algorithms.SumOfPrefixScoresOfStrings;
 
 [TestClass]
-public class SumOfPrefixScoresOfStringsTrieTests : SumOfPrefixScoresOfStringsTestsBase<SumOfPrefixScoresOfStringsTrie>;
+public sealed class SumOfPrefixScoresOfStringsTrieTests : SumOfPrefixScoresOfStringsTestsBase<SumOfPrefixScoresOfStringsTrie>;

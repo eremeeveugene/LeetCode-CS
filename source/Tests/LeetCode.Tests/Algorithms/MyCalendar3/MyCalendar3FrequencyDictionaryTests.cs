@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MyCalendar3;
 namespace LeetCode.Tests.Algorithms.MyCalendar3;
 
 [TestClass]
-public class MyCalendar3FrequencyDictionaryTests : MyCalendar3TestsBase<MyCalendar3FrequencyDictionary>;
+public sealed class MyCalendar3FrequencyDictionaryTests : MyCalendar3TestsBase<MyCalendar3FrequencyDictionary>;

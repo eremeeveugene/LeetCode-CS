@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.NaryTreePostorderTraversal;
 
 /// <inheritdoc />
-public class NaryTreePostorderTraversalStack : INaryTreePostorderTraversal
+public sealed class NaryTreePostorderTraversalStack : INaryTreePostorderTraversal
 {
     /// <summary>
     ///     Time complexity - O(n^2)

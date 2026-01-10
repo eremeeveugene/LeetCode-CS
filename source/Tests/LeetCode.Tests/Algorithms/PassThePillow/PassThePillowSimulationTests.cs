@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PassThePillow;
 namespace LeetCode.Tests.Algorithms.PassThePillow;
 
 [TestClass]
-public class PassThePillowSimulationTests : PassThePillowTestsBase<PassThePillowSimulation>;
+public sealed class PassThePillowSimulationTests : PassThePillowTestsBase<PassThePillowSimulation>;

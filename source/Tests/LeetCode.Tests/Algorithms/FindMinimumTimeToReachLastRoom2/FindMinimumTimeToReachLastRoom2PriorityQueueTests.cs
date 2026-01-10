@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindMinimumTimeToReachLastRoom2;
 namespace LeetCode.Tests.Algorithms.FindMinimumTimeToReachLastRoom2;
 
 [TestClass]
-public class FindMinimumTimeToReachLastRoom2PriorityQueueTests :
+public sealed class FindMinimumTimeToReachLastRoom2PriorityQueueTests :
     FindMinimumTimeToReachLastRoom2TestsBase<FindMinimumTimeToReachLastRoom2PriorityQueue>;

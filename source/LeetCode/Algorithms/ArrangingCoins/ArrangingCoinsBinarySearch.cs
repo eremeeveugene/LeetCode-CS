@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ArrangingCoins;
 
 /// <inheritdoc />
-public class ArrangingCoinsBinarySearch : IArrangingCoins
+public sealed class ArrangingCoinsBinarySearch : IArrangingCoins
 {
     /// <summary>
     ///     Time complexity - O(log n)

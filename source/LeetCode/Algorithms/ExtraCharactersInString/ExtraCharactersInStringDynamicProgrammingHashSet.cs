@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ExtraCharactersInString;
 
 /// <inheritdoc />
-public class ExtraCharactersInStringDynamicProgrammingHashSet : IExtraCharactersInString
+public sealed class ExtraCharactersInStringDynamicProgrammingHashSet : IExtraCharactersInString
 {
     /// <summary>
     ///     Time complexity - O(n^3), n is the length of the longest word in the dictionary

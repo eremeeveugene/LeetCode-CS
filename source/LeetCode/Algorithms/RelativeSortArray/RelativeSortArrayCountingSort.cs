@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RelativeSortArray;
 
 /// <inheritdoc />
-public class RelativeSortArrayCountingSort : IRelativeSortArray
+public sealed class RelativeSortArrayCountingSort : IRelativeSortArray
 {
     /// <summary>
     ///     Time complexity - O(n + m + k), where k is the maximum element in arr1

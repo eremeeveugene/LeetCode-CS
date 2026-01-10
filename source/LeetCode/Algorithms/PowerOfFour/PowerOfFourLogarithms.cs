@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PowerOfFour;
 
 /// <inheritdoc />
-public class PowerOfFourLogarithms : IPowerOfFour
+public sealed class PowerOfFourLogarithms : IPowerOfFour
 {
     /// <summary>
     ///     Time complexity - O(1)

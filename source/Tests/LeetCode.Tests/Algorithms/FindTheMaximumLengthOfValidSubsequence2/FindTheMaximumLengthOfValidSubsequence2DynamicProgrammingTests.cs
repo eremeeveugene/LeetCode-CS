@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindTheMaximumLengthOfValidSubsequence2;
 namespace LeetCode.Tests.Algorithms.FindTheMaximumLengthOfValidSubsequence2;
 
 [TestClass]
-public class FindTheMaximumLengthOfValidSubsequence2DynamicProgrammingTests :
+public sealed class FindTheMaximumLengthOfValidSubsequence2DynamicProgrammingTests :
     FindTheMaximumLengthOfValidSubsequence2TestsBase<FindTheMaximumLengthOfValidSubsequence2DynamicProgramming>;

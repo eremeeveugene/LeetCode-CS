@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NeighboringBitwiseXOR;
 
 /// <inheritdoc />
-public class NeighboringBitwiseXORIterative : INeighboringBitwiseXOR
+public sealed class NeighboringBitwiseXORIterative : INeighboringBitwiseXOR
 {
     /// <summary>
     ///     Time complexity - O(n)

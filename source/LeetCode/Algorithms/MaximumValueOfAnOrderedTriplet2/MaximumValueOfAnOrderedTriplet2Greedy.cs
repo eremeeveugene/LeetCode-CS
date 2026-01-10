@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumValueOfAnOrderedTriplet2;
 
 /// <inheritdoc />
-public class MaximumValueOfAnOrderedTriplet2Greedy : IMaximumValueOfAnOrderedTriplet2
+public sealed class MaximumValueOfAnOrderedTriplet2Greedy : IMaximumValueOfAnOrderedTriplet2
 {
     /// <summary>
     ///     Time complexity - O(n)

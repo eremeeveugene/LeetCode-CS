@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumCostToMakeAtLeastOneValidPathInGrid;
 namespace LeetCode.Tests.Algorithms.MinimumCostToMakeAtLeastOneValidPathInGrid;
 
 [TestClass]
-public class MinimumCostToMakeAtLeastOneValidPathInGridBreadthFirstSearchTests :
+public sealed class MinimumCostToMakeAtLeastOneValidPathInGridBreadthFirstSearchTests :
     MinimumCostToMakeAtLeastOneValidPathInGridTestsBase<MinimumCostToMakeAtLeastOneValidPathInGridBreadthFirstSearch>;

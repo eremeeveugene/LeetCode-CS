@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.DeleteNodeFromLinkedListPresentInArray;
 
 /// <inheritdoc />
-public class DeleteNodeFromLinkedListPresentInArrayBinarySearch : IDeleteNodeFromLinkedListPresentInArray
+public sealed class DeleteNodeFromLinkedListPresentInArrayBinarySearch : IDeleteNodeFromLinkedListPresentInArray
 {
     /// <summary>
     ///     Time complexity - O(n log n + m log n)

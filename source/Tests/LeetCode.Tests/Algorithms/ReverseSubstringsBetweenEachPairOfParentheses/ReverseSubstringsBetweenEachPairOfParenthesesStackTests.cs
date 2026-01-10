@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ReverseSubstringsBetweenEachPairOfParentheses;
 namespace LeetCode.Tests.Algorithms.ReverseSubstringsBetweenEachPairOfParentheses;
 
 [TestClass]
-public class ReverseSubstringsBetweenEachPairOfParenthesesStackTests :
+public sealed class ReverseSubstringsBetweenEachPairOfParenthesesStackTests :
     ReverseSubstringsBetweenEachPairOfParenthesesTestsBase<ReverseSubstringsBetweenEachPairOfParenthesesStack>;

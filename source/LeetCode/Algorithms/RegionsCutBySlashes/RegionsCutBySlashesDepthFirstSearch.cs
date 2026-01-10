@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RegionsCutBySlashes;
 
 /// <inheritdoc />
-public class RegionsCutBySlashesDepthFirstSearch : IRegionsCutBySlashes
+public sealed class RegionsCutBySlashesDepthFirstSearch : IRegionsCutBySlashes
 {
     private const int Multiplier = 3;
 

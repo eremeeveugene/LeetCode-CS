@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignCircularDeque;
 
 /// <inheritdoc />
-public class DesignCircularDequeLinkedList : IDesignCircularDeque
+public sealed class DesignCircularDequeLinkedList : IDesignCircularDeque
 {
     private readonly int _k;
     private int _count;

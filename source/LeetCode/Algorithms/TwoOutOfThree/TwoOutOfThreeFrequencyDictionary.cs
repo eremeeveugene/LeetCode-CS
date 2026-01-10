@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TwoOutOfThree;
 
 /// <inheritdoc />
-public class TwoOutOfThreeFrequencyDictionary : ITwoOutOfThree
+public sealed class TwoOutOfThreeFrequencyDictionary : ITwoOutOfThree
 {
     /// <summary>
     ///     Time complexity - O(n)

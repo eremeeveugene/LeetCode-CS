@@ -14,7 +14,7 @@ using LeetCode.Algorithms.ImplementRouter;
 namespace LeetCode.Tests.Algorithms.ImplementRouter;
 
 [TestClass]
-public class ImplementRouterDictionaryWithBinarySearchTests : ImplementRouterTestsBase
+public sealed class ImplementRouterDictionaryWithBinarySearchTests : ImplementRouterTestsBase
 {
     protected override IImplementRouter GetSolution(int memoryLimit)
     {

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.PermutationInString;
 namespace LeetCode.Tests.Algorithms.PermutationInString;
 
 [TestClass]
-public class PermutationInStringSlidingWindowDictionaryTests :
+public sealed class PermutationInStringSlidingWindowDictionaryTests :
     PermutationInStringTestsBase<PermutationInStringSlidingWindowDictionary>;

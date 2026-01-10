@@ -14,4 +14,4 @@ using LeetCode.Algorithms.BoatsToSavePeople;
 namespace LeetCode.Tests.Algorithms.BoatsToSavePeople;
 
 [TestClass]
-public class BoatsToSavePeopleTwoPointersTests : BoatsToSavePeopleTestsBase<BoatsToSavePeopleTwoPointers>;
+public sealed class BoatsToSavePeopleTwoPointersTests : BoatsToSavePeopleTestsBase<BoatsToSavePeopleTwoPointers>;

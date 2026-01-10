@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ExcelSheetColumnTitle;
 
 /// <inheritdoc />
-public class ExcelSheetColumnTitleIterative : IExcelSheetColumnTitle
+public sealed class ExcelSheetColumnTitleIterative : IExcelSheetColumnTitle
 {
     /// <summary>
     ///     Time complexity - O((log n) ^ 2)

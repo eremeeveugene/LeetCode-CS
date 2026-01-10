@@ -14,4 +14,4 @@ using LeetCode.Algorithms.LongestNiceSubarray;
 namespace LeetCode.Tests.Algorithms.LongestNiceSubarray;
 
 [TestClass]
-public class LongestNiceSubarraySlidingWindowTests : LongestNiceSubarrayTestsBase<LongestNiceSubarraySlidingWindow>;
+public sealed class LongestNiceSubarraySlidingWindowTests : LongestNiceSubarrayTestsBase<LongestNiceSubarraySlidingWindow>;

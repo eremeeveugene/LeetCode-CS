@@ -14,6 +14,6 @@ using LeetCode.Algorithms.NumberOfSubsequencesThatSatisfyTheGivenSumCondition;
 namespace LeetCode.Tests.Algorithms.NumberOfSubsequencesThatSatisfyTheGivenSumCondition;
 
 [TestClass]
-public class NumberOfSubsequencesThatSatisfyTheGivenSumConditionSortingTwoPointersTests :
+public sealed class NumberOfSubsequencesThatSatisfyTheGivenSumConditionSortingTwoPointersTests :
     NumberOfSubsequencesThatSatisfyTheGivenSumConditionTestsBase<
         NumberOfSubsequencesThatSatisfyTheGivenSumConditionSortingTwoPointers>;

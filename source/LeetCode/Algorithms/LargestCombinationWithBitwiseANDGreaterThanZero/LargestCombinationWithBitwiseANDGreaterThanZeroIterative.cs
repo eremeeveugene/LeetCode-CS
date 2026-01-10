@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LargestCombinationWithBitwiseANDGreaterThanZero;
 
 /// <inheritdoc />
-public class LargestCombinationWithBitwiseANDGreaterThanZeroIterative : ILargestCombinationWithBitwiseANDGreaterThanZero
+public sealed class LargestCombinationWithBitwiseANDGreaterThanZeroIterative : ILargestCombinationWithBitwiseANDGreaterThanZero
 {
     /// <summary>
     ///     Time complexity - O(n)

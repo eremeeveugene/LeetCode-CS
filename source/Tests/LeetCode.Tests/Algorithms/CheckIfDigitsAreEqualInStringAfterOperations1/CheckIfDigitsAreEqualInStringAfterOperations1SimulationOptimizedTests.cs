@@ -14,6 +14,6 @@ using LeetCode.Algorithms.CheckIfDigitsAreEqualInStringAfterOperations1;
 namespace LeetCode.Tests.Algorithms.CheckIfDigitsAreEqualInStringAfterOperations1;
 
 [TestClass]
-public class CheckIfDigitsAreEqualInStringAfterOperations1SimulationOptimizedTests :
+public sealed class CheckIfDigitsAreEqualInStringAfterOperations1SimulationOptimizedTests :
     CheckIfDigitsAreEqualInStringAfterOperations1TestsBase<
         CheckIfDigitsAreEqualInStringAfterOperations1SimulationOptimized>;

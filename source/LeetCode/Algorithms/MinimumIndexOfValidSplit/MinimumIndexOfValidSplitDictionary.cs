@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumIndexOfValidSplit;
 
 /// <inheritdoc />
-public class MinimumIndexOfValidSplitDictionary : IMinimumIndexOfValidSplit
+public sealed class MinimumIndexOfValidSplitDictionary : IMinimumIndexOfValidSplit
 {
     /// <summary>
     ///     Time complexity - O(n)

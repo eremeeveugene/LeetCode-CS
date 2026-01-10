@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LargestTimeForGivenDigits;
 
 /// <inheritdoc />
-public class LargestTimeForGivenDigitsBruteForce : ILargestTimeForGivenDigits
+public sealed class LargestTimeForGivenDigitsBruteForce : ILargestTimeForGivenDigits
 {
     /// <summary>
     ///     Time complexity - O(1)

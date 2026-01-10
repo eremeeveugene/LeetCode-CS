@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.XOROperationInAnArray;
 
 /// <inheritdoc />
-public class XOROperationInAnArrayIterative : IXOROperationInAnArray
+public sealed class XOROperationInAnArrayIterative : IXOROperationInAnArray
 {
     /// <summary>
     ///     Time complexity - O(n)

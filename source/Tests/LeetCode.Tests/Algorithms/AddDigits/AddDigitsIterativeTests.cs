@@ -14,4 +14,4 @@ using LeetCode.Algorithms.AddDigits;
 namespace LeetCode.Tests.Algorithms.AddDigits;
 
 [TestClass]
-public class AddDigitsIterativeTests : AddDigitsTestsBase<AddDigitsIterative>;
+public sealed class AddDigitsIterativeTests : AddDigitsTestsBase<AddDigitsIterative>;

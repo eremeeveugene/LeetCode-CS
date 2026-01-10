@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ToLowerCase;
 
 /// <inheritdoc />
-public class ToLowerCaseStringBuilder : IToLowerCase
+public sealed class ToLowerCaseStringBuilder : IToLowerCase
 {
     /// <summary>
     ///     Time complexity - O(n)

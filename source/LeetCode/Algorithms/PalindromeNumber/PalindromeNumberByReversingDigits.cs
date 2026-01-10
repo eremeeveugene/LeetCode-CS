@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PalindromeNumber;
 
 /// <inheritdoc />
-public class PalindromeNumberByReversingDigits : IPalindromeNumber
+public sealed class PalindromeNumberByReversingDigits : IPalindromeNumber
 {
     /// <summary>
     ///     Time complexity - O(d), where d is the number of digits in the integer x

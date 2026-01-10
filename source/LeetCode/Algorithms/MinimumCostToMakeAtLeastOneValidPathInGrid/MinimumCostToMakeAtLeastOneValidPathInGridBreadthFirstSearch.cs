@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumCostToMakeAtLeastOneValidPathInGrid;
 
 /// <inheritdoc />
-public class MinimumCostToMakeAtLeastOneValidPathInGridBreadthFirstSearch : IMinimumCostToMakeAtLeastOneValidPathInGrid
+public sealed class MinimumCostToMakeAtLeastOneValidPathInGridBreadthFirstSearch : IMinimumCostToMakeAtLeastOneValidPathInGrid
 {
     private readonly (int X, int Y)[] _directions =
     [

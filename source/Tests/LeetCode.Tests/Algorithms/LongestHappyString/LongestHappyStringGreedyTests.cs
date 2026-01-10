@@ -14,4 +14,4 @@ using LeetCode.Algorithms.LongestHappyString;
 namespace LeetCode.Tests.Algorithms.LongestHappyString;
 
 [TestClass]
-public class LongestHappyStringGreedyTests : LongestHappyStringTestsBase<LongestHappyStringGreedy>;
+public sealed class LongestHappyStringGreedyTests : LongestHappyStringTestsBase<LongestHappyStringGreedy>;

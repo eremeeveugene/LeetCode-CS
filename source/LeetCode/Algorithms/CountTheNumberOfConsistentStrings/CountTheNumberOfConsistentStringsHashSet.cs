@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountTheNumberOfConsistentStrings;
 
 /// <inheritdoc />
-public class CountTheNumberOfConsistentStringsHashSet : ICountTheNumberOfConsistentStrings
+public sealed class CountTheNumberOfConsistentStringsHashSet : ICountTheNumberOfConsistentStrings
 {
     /// <summary>
     ///     Time complexity - O(n * m + k), where k is the length of allowed string, n is the number of words, m is the length

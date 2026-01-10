@@ -14,7 +14,7 @@ using LeetCode.Algorithms.KthLargestElementInStream;
 namespace LeetCode.Tests.Algorithms.KthLargestElementInStream;
 
 [TestClass]
-public class KthLargestElementInStreamSortedArrayTests : KthLargestElementInStreamTestsBase
+public sealed class KthLargestElementInStreamSortedArrayTests : KthLargestElementInStreamTestsBase
 {
     protected override IKthLargestElementInStream GetSolution(int k, int[] nums)
     {

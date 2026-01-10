@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ImplementTrie;
 namespace LeetCode.Tests.Algorithms.ImplementTrie;
 
 [TestClass]
-public class ImplementTrieArrayTests : ImplementTrieTestsBase<ImplementTrieArray>;
+public sealed class ImplementTrieArrayTests : ImplementTrieTestsBase<ImplementTrieArray>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfWordOccursAsPrefixOfAnyWordInSentence;
 
 /// <inheritdoc />
-public class CheckIfWordOccursAsPrefixOfAnyWordInSentenceIterative : ICheckIfWordOccursAsPrefixOfAnyWordInSentence
+public sealed class CheckIfWordOccursAsPrefixOfAnyWordInSentenceIterative : ICheckIfWordOccursAsPrefixOfAnyWordInSentence
 {
     /// <summary>
     ///     Time complexity - O(n)

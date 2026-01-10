@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumXORForEachQuery;
 
 /// <inheritdoc />
-public class MaximumXORForEachQueryBitMasking : IMaximumXORForEachQuery
+public sealed class MaximumXORForEachQueryBitMasking : IMaximumXORForEachQuery
 {
     /// <summary>
     ///     Time complexity - O(n)

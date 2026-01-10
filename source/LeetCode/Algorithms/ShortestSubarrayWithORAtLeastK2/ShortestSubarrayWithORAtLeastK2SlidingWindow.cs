@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ShortestSubarrayWithORAtLeastK2;
 
 /// <inheritdoc />
-public class ShortestSubarrayWithORAtLeastK2SlidingWindow : IShortestSubarrayWithORAtLeastK2
+public sealed class ShortestSubarrayWithORAtLeastK2SlidingWindow : IShortestSubarrayWithORAtLeastK2
 {
     /// <summary>
     ///     Time complexity - O(n)

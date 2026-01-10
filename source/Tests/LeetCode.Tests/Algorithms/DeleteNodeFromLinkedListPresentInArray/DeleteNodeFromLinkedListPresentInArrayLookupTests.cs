@@ -14,5 +14,5 @@ using LeetCode.Algorithms.DeleteNodeFromLinkedListPresentInArray;
 namespace LeetCode.Tests.Algorithms.DeleteNodeFromLinkedListPresentInArray;
 
 [TestClass]
-public class DeleteNodeFromLinkedListPresentInArrayLookupTests :
+public sealed class DeleteNodeFromLinkedListPresentInArrayLookupTests :
     DeleteNodeFromLinkedListPresentInArrayTestsBase<DeleteNodeFromLinkedListPresentInArrayLookup>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.WaterBottles;
 
 /// <inheritdoc />
-public class WaterBottlesSimulation : IWaterBottles
+public sealed class WaterBottlesSimulation : IWaterBottles
 {
     /// <summary>
     ///     Time complexity - O(log(m)N), where N is the number of initial full bottles and M is equal to numExchange

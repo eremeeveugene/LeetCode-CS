@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ConcatenationOfArray;
 namespace LeetCode.Tests.Algorithms.ConcatenationOfArray;
 
 [TestClass]
-public class ConcatenationOfArrayConcatTests : ConcatenationOfArrayTestsBase<ConcatenationOfArrayConcat>;
+public sealed class ConcatenationOfArrayConcatTests : ConcatenationOfArrayTestsBase<ConcatenationOfArrayConcat>;

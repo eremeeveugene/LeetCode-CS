@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.MergeTwoBinaryTrees;
 
 /// <inheritdoc />
-public class MergeTwoBinaryTreesBreadthFirstSearch : IMergeTwoBinaryTrees
+public sealed class MergeTwoBinaryTreesBreadthFirstSearch : IMergeTwoBinaryTrees
 {
     /// <summary>
     ///     Time complexity - O(n + m)

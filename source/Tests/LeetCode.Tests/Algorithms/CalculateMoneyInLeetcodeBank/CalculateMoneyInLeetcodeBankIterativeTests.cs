@@ -14,6 +14,6 @@ using LeetCode.Algorithms.CalculateMoneyInLeetcodeBank;
 namespace LeetCode.Tests.Algorithms.CalculateMoneyInLeetcodeBank;
 
 [TestClass]
-public class
+public sealed class
     CalculateMoneyInLeetcodeBankIterativeTests : CalculateMoneyInLeetcodeBankTestsBase<
     CalculateMoneyInLeetcodeBankIterative>;

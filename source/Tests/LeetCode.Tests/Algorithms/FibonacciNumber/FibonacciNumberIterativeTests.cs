@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FibonacciNumber;
 namespace LeetCode.Tests.Algorithms.FibonacciNumber;
 
 [TestClass]
-public class FibonacciNumberIterativeTests : FibonacciNumberTestsBase<FibonacciNumberIterative>;
+public sealed class FibonacciNumberIterativeTests : FibonacciNumberTestsBase<FibonacciNumberIterative>;

@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.ReverseOddLevelsOfBinaryTree;
 
 /// <inheritdoc />
-public class ReverseOddLevelsOfBinaryTreeBreadthFirstSearch : IReverseOddLevelsOfBinaryTree
+public sealed class ReverseOddLevelsOfBinaryTreeBreadthFirstSearch : IReverseOddLevelsOfBinaryTree
 {
     /// <summary>
     ///     Time complexity - O(n)

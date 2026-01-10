@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SmallestNumberWithAllSetBits;
 
 /// <inheritdoc />
-public class SmallestNumberWithAllSetBitsLinearScan : ISmallestNumberWithAllSetBits
+public sealed class SmallestNumberWithAllSetBitsLinearScan : ISmallestNumberWithAllSetBits
 {
     private static readonly int[] Numbers =
     [

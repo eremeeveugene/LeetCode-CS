@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheMinimumAreaToCoverAllOnes2;
 
 /// <inheritdoc />
-public class FindTheMinimumAreaToCoverAllOnes2BruteForce : IFindTheMinimumAreaToCoverAllOnes2
+public sealed class FindTheMinimumAreaToCoverAllOnes2BruteForce : IFindTheMinimumAreaToCoverAllOnes2
 {
     private const int EmptyArea = int.MaxValue / 3;
 

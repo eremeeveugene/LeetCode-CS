@@ -14,4 +14,4 @@ using LeetCode.Algorithms.UglyNumber2;
 namespace LeetCode.Tests.Algorithms.UglyNumber2;
 
 [TestClass]
-public class UglyNumber2DynamicProgrammingTests : UglyNumber2TestsBase<UglyNumber2DynamicProgramming>;
+public sealed class UglyNumber2DynamicProgrammingTests : UglyNumber2TestsBase<UglyNumber2DynamicProgramming>;
