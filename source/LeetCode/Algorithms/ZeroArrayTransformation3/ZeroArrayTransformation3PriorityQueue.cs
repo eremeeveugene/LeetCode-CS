@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ZeroArrayTransformation3;
 
 /// <inheritdoc />
-public class ZeroArrayTransformation3PriorityQueue : IZeroArrayTransformation3
+public sealed class ZeroArrayTransformation3PriorityQueue : IZeroArrayTransformation3
 {
     /// <summary>
     ///     Time complexity - O((n + q) log q)

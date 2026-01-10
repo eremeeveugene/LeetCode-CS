@@ -14,4 +14,4 @@ using LeetCode.Algorithms.DesignHashMap;
 namespace LeetCode.Tests.Algorithms.DesignHashMap;
 
 [TestClass]
-public class DesignHashMapIntArrayTests : DesignHashMapTestsBase<DesignHashMapIntArray>;
+public sealed class DesignHashMapIntArrayTests : DesignHashMapTestsBase<DesignHashMapIntArray>;

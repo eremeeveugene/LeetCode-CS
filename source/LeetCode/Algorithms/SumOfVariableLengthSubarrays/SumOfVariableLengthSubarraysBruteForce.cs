@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SumOfVariableLengthSubarrays;
 
 /// <inheritdoc />
-public class SumOfVariableLengthSubarraysBruteForce : ISumOfVariableLengthSubarrays
+public sealed class SumOfVariableLengthSubarraysBruteForce : ISumOfVariableLengthSubarrays
 {
     /// <summary>
     ///     Time complexity - O(n^2)

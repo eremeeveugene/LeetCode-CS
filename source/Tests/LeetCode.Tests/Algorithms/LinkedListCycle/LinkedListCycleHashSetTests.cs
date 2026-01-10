@@ -14,4 +14,4 @@ using LeetCode.Algorithms.LinkedListCycle;
 namespace LeetCode.Tests.Algorithms.LinkedListCycle;
 
 [TestClass]
-public class LinkedListCycleHashSetTests : LinkedListCycleTestsBase<LinkedListCycleHashSet>;
+public sealed class LinkedListCycleHashSetTests : LinkedListCycleTestsBase<LinkedListCycleHashSet>;

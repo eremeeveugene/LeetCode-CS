@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MinimizeXOR;
 namespace LeetCode.Tests.Algorithms.MinimizeXOR;
 
 [TestClass]
-public class MinimizeXORBitwiseTests : MinimizeXORTestsBase<MinimizeXORBitwise>;
+public sealed class MinimizeXORBitwiseTests : MinimizeXORTestsBase<MinimizeXORBitwise>;

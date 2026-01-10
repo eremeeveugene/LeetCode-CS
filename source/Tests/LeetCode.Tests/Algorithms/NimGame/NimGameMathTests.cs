@@ -14,4 +14,4 @@ using LeetCode.Algorithms.NimGame;
 namespace LeetCode.Tests.Algorithms.NimGame;
 
 [TestClass]
-public class NimGameMathTests : NimGameTestsBase<NimGameMath>;
+public sealed class NimGameMathTests : NimGameTestsBase<NimGameMath>;

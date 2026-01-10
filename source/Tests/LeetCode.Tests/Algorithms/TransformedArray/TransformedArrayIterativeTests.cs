@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TransformedArray;
 namespace LeetCode.Tests.Algorithms.TransformedArray;
 
 [TestClass]
-public class TransformedArrayIterativeTests : TransformedArrayTestsBase<TransformedArrayIterative>;
+public sealed class TransformedArrayIterativeTests : TransformedArrayTestsBase<TransformedArrayIterative>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindCommonElementsBetweenTwoArrays;
 
 /// <inheritdoc />
-public class FindCommonElementsBetweenTwoArraysHashSet : IFindCommonElementsBetweenTwoArrays
+public sealed class FindCommonElementsBetweenTwoArraysHashSet : IFindCommonElementsBetweenTwoArrays
 {
     /// <summary>
     ///     Time complexity - O(n + m)

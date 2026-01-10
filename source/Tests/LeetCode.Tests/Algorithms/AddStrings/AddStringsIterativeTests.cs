@@ -14,4 +14,4 @@ using LeetCode.Algorithms.AddStrings;
 namespace LeetCode.Tests.Algorithms.AddStrings;
 
 [TestClass]
-public class AddStringsIterativeTests : AddStringsTestsBase<AddStringsIterative>;
+public sealed class AddStringsIterativeTests : AddStringsTestsBase<AddStringsIterative>;

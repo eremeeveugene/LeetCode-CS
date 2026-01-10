@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumMovesToEqualArrayElements3;
 
 /// <inheritdoc />
-public class MinimumMovesToEqualArrayElements3TwoPass : IMinimumMovesToEqualArrayElements3
+public sealed class MinimumMovesToEqualArrayElements3TwoPass : IMinimumMovesToEqualArrayElements3
 {
     /// <summary>
     ///     Time complexity - O(n)

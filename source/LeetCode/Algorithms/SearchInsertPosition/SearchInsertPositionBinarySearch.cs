@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SearchInsertPosition;
 
 /// <inheritdoc />
-public class SearchInsertPositionBinarySearch : ISearchInsertPosition
+public sealed class SearchInsertPositionBinarySearch : ISearchInsertPosition
 {
     /// <summary>
     ///     Time complexity - O(log n)

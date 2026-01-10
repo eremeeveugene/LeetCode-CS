@@ -14,4 +14,4 @@ using LeetCode.Algorithms.InsertInterval;
 namespace LeetCode.Tests.Algorithms.InsertInterval;
 
 [TestClass]
-public class InsertIntervalIterativeTests : InsertIntervalTestsBase<InsertIntervalIterative>;
+public sealed class InsertIntervalIterativeTests : InsertIntervalTestsBase<InsertIntervalIterative>;

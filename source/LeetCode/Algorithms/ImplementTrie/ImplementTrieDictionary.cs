@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ImplementTrie;
 
 /// <inheritdoc />
-public class ImplementTrieDictionary : IImplementTrie
+public sealed class ImplementTrieDictionary : IImplementTrie
 {
     private readonly Node _root = new();
 

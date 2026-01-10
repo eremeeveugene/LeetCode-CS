@@ -14,4 +14,4 @@ using LeetCode.Algorithms.LinkedListCycle;
 namespace LeetCode.Tests.Algorithms.LinkedListCycle;
 
 [TestClass]
-public class LinkedListCycleTwoPointersTests : LinkedListCycleTestsBase<LinkedListCycleTwoPointers>;
+public sealed class LinkedListCycleTwoPointersTests : LinkedListCycleTestsBase<LinkedListCycleTwoPointers>;

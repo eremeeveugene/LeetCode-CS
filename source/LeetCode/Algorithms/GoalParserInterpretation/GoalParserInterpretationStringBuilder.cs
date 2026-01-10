@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.GoalParserInterpretation;
 
 /// <inheritdoc />
-public class GoalParserInterpretationStringBuilder : IGoalParserInterpretation
+public sealed class GoalParserInterpretationStringBuilder : IGoalParserInterpretation
 {
     /// <summary>
     ///     Time complexity - O(n)

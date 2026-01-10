@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.Sqrt;
 
 /// <inheritdoc />
-public class SqrtBinarySearch : ISqrt
+public sealed class SqrtBinarySearch : ISqrt
 {
     /// <summary>
     ///     Time complexity - O(log x)

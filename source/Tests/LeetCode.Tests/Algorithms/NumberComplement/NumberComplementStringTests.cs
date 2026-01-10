@@ -14,4 +14,4 @@ using LeetCode.Algorithms.NumberComplement;
 namespace LeetCode.Tests.Algorithms.NumberComplement;
 
 [TestClass]
-public class NumberComplementStringTests : NumberComplementTestsBase<NumberComplementString>;
+public sealed class NumberComplementStringTests : NumberComplementTestsBase<NumberComplementString>;

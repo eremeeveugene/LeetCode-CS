@@ -14,7 +14,7 @@ using LeetCode.Algorithms.DesignMovieRentalSystem;
 namespace LeetCode.Tests.Algorithms.DesignMovieRentalSystem;
 
 [TestClass]
-public class DesignMovieRentalSystemDictionaryTests : DesignMovieRentalSystemTestsBase
+public sealed class DesignMovieRentalSystemDictionaryTests : DesignMovieRentalSystemTestsBase
 {
     protected override IDesignMovieRentalSystem GetSolution(int n, int[][] entries)
     {

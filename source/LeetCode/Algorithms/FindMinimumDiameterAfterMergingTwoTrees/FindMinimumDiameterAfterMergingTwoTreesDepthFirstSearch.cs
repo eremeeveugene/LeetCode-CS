@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindMinimumDiameterAfterMergingTwoTrees;
 
 /// <inheritdoc />
-public class FindMinimumDiameterAfterMergingTwoTreesDepthFirstSearch : IFindMinimumDiameterAfterMergingTwoTrees
+public sealed class FindMinimumDiameterAfterMergingTwoTreesDepthFirstSearch : IFindMinimumDiameterAfterMergingTwoTrees
 {
     /// <summary>
     ///     Time complexity - O(n + m)

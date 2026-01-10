@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumNumberOfEventsThatCanBeAttended;
 
 /// <inheritdoc />
-public class MaximumNumberOfEventsThatCanBeAttendedPriorityQueue : IMaximumNumberOfEventsThatCanBeAttended
+public sealed class MaximumNumberOfEventsThatCanBeAttendedPriorityQueue : IMaximumNumberOfEventsThatCanBeAttended
 {
     /// <summary>
     ///     Time complexity - O(n log n)

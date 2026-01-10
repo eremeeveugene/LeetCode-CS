@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumIncrementToMakeArrayUnique;
 namespace LeetCode.Tests.Algorithms.MinimumIncrementToMakeArrayUnique;
 
 [TestClass]
-public class MinimumIncrementToMakeArrayUniqueCountingTests : MinimumIncrementToMakeArrayUniqueTestsBase<
+public sealed class MinimumIncrementToMakeArrayUniqueCountingTests : MinimumIncrementToMakeArrayUniqueTestsBase<
     MinimumIncrementToMakeArrayUniqueCounting>;

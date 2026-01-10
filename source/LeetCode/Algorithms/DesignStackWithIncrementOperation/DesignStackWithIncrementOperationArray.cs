@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignStackWithIncrementOperation;
 
 /// <inheritdoc />
-public class DesignStackWithIncrementOperationArray : IDesignStackWithIncrementOperation
+public sealed class DesignStackWithIncrementOperationArray : IDesignStackWithIncrementOperation
 {
     private readonly int[] _stackArray;
     private int _topIndex = -1;

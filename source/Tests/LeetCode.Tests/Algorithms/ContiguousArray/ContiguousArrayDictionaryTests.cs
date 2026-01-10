@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ContiguousArray;
 namespace LeetCode.Tests.Algorithms.ContiguousArray;
 
 [TestClass]
-public class ContiguousArrayDictionaryTests : ContiguousArrayTestsBase<ContiguousArrayDictionary>;
+public sealed class ContiguousArrayDictionaryTests : ContiguousArrayTestsBase<ContiguousArrayDictionary>;

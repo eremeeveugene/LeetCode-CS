@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger;
 
 /// <inheritdoc />
-public class SubtractTheProductAndSumOfDigitsOfAnIntegerDivision : ISubtractTheProductAndSumOfDigitsOfAnInteger
+public sealed class SubtractTheProductAndSumOfDigitsOfAnIntegerDivision : ISubtractTheProductAndSumOfDigitsOfAnInteger
 {
     /// <summary>
     ///     Time complexity - O(d), where d is the number of digits in the integer n

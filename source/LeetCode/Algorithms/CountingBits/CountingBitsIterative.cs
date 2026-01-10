@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountingBits;
 
 /// <inheritdoc />
-public class CountingBitsIterative : ICountingBits
+public sealed class CountingBitsIterative : ICountingBits
 {
     /// <summary>
     ///     Time complexity - O (n log n)

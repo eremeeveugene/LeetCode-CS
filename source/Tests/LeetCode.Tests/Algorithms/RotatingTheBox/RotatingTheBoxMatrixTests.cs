@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RotatingTheBox;
 namespace LeetCode.Tests.Algorithms.RotatingTheBox;
 
 [TestClass]
-public class RotatingTheBoxMatrixTests : RotatingTheBoxTestsBase<RotatingTheBoxMatrix>;
+public sealed class RotatingTheBoxMatrixTests : RotatingTheBoxTestsBase<RotatingTheBoxMatrix>;

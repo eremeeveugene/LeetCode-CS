@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CanIWin;
 
 /// <inheritdoc />
-public class CanIWinDynamicProgramming : ICanIWin
+public sealed class CanIWinDynamicProgramming : ICanIWin
 {
     /// <summary>
     ///     Time complexity - O(n * 2^n)

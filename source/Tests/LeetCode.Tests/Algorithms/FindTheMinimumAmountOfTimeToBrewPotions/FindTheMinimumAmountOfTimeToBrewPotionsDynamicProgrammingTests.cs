@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindTheMinimumAmountOfTimeToBrewPotions;
 namespace LeetCode.Tests.Algorithms.FindTheMinimumAmountOfTimeToBrewPotions;
 
 [TestClass]
-public class FindTheMinimumAmountOfTimeToBrewPotionsDynamicProgrammingTests :
+public sealed class FindTheMinimumAmountOfTimeToBrewPotionsDynamicProgrammingTests :
     FindTheMinimumAmountOfTimeToBrewPotionsTestsBase<FindTheMinimumAmountOfTimeToBrewPotionsDynamicProgramming>;

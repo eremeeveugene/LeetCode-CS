@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ThreeConsecutiveOdds;
 
 /// <inheritdoc />
-public class ThreeConsecutiveOddsCounting : IThreeConsecutiveOdds
+public sealed class ThreeConsecutiveOddsCounting : IThreeConsecutiveOdds
 {
     /// <summary>
     ///     Time complexity - O(n)

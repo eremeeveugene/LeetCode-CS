@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.UniqueMorseCodeWords;
 
 /// <inheritdoc />
-public class UniqueMorseCodeWordsHashSet : IUniqueMorseCodeWords
+public sealed class UniqueMorseCodeWordsHashSet : IUniqueMorseCodeWords
 {
     private readonly Dictionary<char, string> _morseCodeDictionary = new()
     {

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CheckIfWordOccursAsPrefixOfAnyWordInSentence;
 namespace LeetCode.Tests.Algorithms.CheckIfWordOccursAsPrefixOfAnyWordInSentence;
 
 [TestClass]
-public class CheckIfWordOccursAsPrefixOfAnyWordInSentenceIterativeTests :
+public sealed class CheckIfWordOccursAsPrefixOfAnyWordInSentenceIterativeTests :
     CheckIfWordOccursAsPrefixOfAnyWordInSentenceTestBase<CheckIfWordOccursAsPrefixOfAnyWordInSentenceIterative>;

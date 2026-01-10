@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindingThreeDigitEvenNumbers;
 
 /// <inheritdoc />
-public class FindingThreeDigitEvenNumbersBruteForce : IFindingThreeDigitEvenNumbers
+public sealed class FindingThreeDigitEvenNumbersBruteForce : IFindingThreeDigitEvenNumbers
 {
     /// <summary>
     ///     Time complexity - O(n^3 + M log M)

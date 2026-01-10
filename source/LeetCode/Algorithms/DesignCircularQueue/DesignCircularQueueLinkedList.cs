@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignCircularQueue;
 
 /// <inheritdoc />
-public class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
+public sealed class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
 {
     private int _count;
     private Node? _front;

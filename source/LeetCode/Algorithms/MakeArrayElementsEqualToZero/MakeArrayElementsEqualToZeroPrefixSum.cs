@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MakeArrayElementsEqualToZero;
 
 /// <inheritdoc />
-public class MakeArrayElementsEqualToZeroPrefixSum : IMakeArrayElementsEqualToZero
+public sealed class MakeArrayElementsEqualToZeroPrefixSum : IMakeArrayElementsEqualToZero
 {
     /// <summary>
     ///     Time complexity - O(n)

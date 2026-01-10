@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LongestPalindromicSubstring;
 
 /// <inheritdoc />
-public class LongestPalindromicSubstringTwoPointers : ILongestPalindromicSubstring
+public sealed class LongestPalindromicSubstringTwoPointers : ILongestPalindromicSubstring
 {
     /// <summary>
     ///     Time complexity - O(n^2)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SortAnArray;
 
 /// <inheritdoc />
-public class SortAnArrayBubbleSort : ISortAnArray
+public sealed class SortAnArrayBubbleSort : ISortAnArray
 {
     /// <summary>
     ///     Time complexity - O(n^2)

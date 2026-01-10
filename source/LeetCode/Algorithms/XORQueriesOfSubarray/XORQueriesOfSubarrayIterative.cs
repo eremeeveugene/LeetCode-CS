@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.XORQueriesOfSubarray;
 
 /// <inheritdoc />
-public class XORQueriesOfSubarrayIterative : IXORQueriesOfSubarray
+public sealed class XORQueriesOfSubarrayIterative : IXORQueriesOfSubarray
 {
     /// <summary>
     ///     Time complexity - O(m * n)

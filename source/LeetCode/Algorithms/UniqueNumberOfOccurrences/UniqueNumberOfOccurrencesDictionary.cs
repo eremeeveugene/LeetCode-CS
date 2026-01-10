@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.UniqueNumberOfOccurrences;
 
 /// <inheritdoc />
-public class UniqueNumberOfOccurrencesDictionary : IUniqueNumberOfOccurrences
+public sealed class UniqueNumberOfOccurrencesDictionary : IUniqueNumberOfOccurrences
 {
     /// <summary>
     ///     Time complexity - O(n)

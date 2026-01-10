@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TeemoAttacking;
 namespace LeetCode.Tests.Algorithms.TeemoAttacking;
 
 [TestClass]
-public class TeemoAttackingSimulationTests : TeemoAttackingTestsBase<TeemoAttackingSimulation>;
+public sealed class TeemoAttackingSimulationTests : TeemoAttackingTestsBase<TeemoAttackingSimulation>;

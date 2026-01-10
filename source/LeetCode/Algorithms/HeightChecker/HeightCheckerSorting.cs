@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.HeightChecker;
 
 /// <inheritdoc />
-public class HeightCheckerSorting : IHeightChecker
+public sealed class HeightCheckerSorting : IHeightChecker
 {
     /// <summary>
     ///     Time complexity - O(n log n)

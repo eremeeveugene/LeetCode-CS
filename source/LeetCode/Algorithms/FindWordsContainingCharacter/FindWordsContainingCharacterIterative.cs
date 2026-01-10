@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindWordsContainingCharacter;
 
 /// <inheritdoc />
-public class FindWordsContainingCharacterIterative : IFindWordsContainingCharacter
+public sealed class FindWordsContainingCharacterIterative : IFindWordsContainingCharacter
 {
     /// <summary>
     ///     Time complexity - O(n * m)

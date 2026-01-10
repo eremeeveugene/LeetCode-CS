@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumNumberOfTasksYouCanAssign;
 
 /// <inheritdoc />
-public class MaximumNumberOfTasksYouCanAssignLinkedList : IMaximumNumberOfTasksYouCanAssign
+public sealed class MaximumNumberOfTasksYouCanAssignLinkedList : IMaximumNumberOfTasksYouCanAssign
 {
     /// <summary>
     ///     Time complexity - O(n log n + m log m + min(n, m) × log(min(n, m)))

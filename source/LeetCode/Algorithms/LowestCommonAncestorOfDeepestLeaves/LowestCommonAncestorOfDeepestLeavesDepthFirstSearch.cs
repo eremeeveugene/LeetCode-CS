@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.LowestCommonAncestorOfDeepestLeaves;
 
 /// <inheritdoc />
-public class LowestCommonAncestorOfDeepestLeavesDepthFirstSearch : ILowestCommonAncestorOfDeepestLeaves
+public sealed class LowestCommonAncestorOfDeepestLeavesDepthFirstSearch : ILowestCommonAncestorOfDeepestLeaves
 {
     /// <summary>
     ///     Time complexity - O(n)

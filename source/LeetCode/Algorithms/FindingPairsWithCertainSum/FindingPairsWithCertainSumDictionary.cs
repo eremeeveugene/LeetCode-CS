@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindingPairsWithCertainSum;
 
 /// <inheritdoc />
-public class FindingPairsWithCertainSumDictionary : IFindingPairsWithCertainSum
+public sealed class FindingPairsWithCertainSumDictionary : IFindingPairsWithCertainSum
 {
     private readonly int[] _nums1;
     private readonly int[] _nums2;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CountNumberOfBadPairs;
 namespace LeetCode.Tests.Algorithms.CountNumberOfBadPairs;
 
 [TestClass]
-public class CountNumberOfBadPairsDictionaryTests : CountNumberOfBadPairsTestsBase<CountNumberOfBadPairsDictionary>;
+public sealed class CountNumberOfBadPairsDictionaryTests : CountNumberOfBadPairsTestsBase<CountNumberOfBadPairsDictionary>;

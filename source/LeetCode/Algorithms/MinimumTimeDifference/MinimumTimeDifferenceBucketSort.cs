@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumTimeDifference;
 
 /// <inheritdoc />
-public class MinimumTimeDifferenceBucketSort : MinimumTimeDifferenceBase
+public sealed class MinimumTimeDifferenceBucketSort : MinimumTimeDifferenceBase
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountOddNumbersInAnIntervalRange;
 
 /// <inheritdoc />
-public class CountOddNumbersInAnIntervalRangeMath : ICountOddNumbersInAnIntervalRange
+public sealed class CountOddNumbersInAnIntervalRangeMath : ICountOddNumbersInAnIntervalRange
 {
     /// <summary>
     ///     Time complexity - O(1)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SpecialArray;
 namespace LeetCode.Tests.Algorithms.SpecialArray;
 
 [TestClass]
-public class SpecialArrayIterativeTests : SpecialArrayTestsBase<SpecialArrayIterative>;
+public sealed class SpecialArrayIterativeTests : SpecialArrayTestsBase<SpecialArrayIterative>;

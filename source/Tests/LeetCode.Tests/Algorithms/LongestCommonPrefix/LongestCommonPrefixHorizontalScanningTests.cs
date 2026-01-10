@@ -14,5 +14,5 @@ using LeetCode.Algorithms.LongestCommonPrefix;
 namespace LeetCode.Tests.Algorithms.LongestCommonPrefix;
 
 [TestClass]
-public class LongestCommonPrefixHorizontalScanningTests :
+public sealed class LongestCommonPrefixHorizontalScanningTests :
     LongestCommonPrefixTestsBase<LongestCommonPrefixHorizontalScanning>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PrimeSubtractionOperation;
 
 /// <inheritdoc />
-public class PrimeSubtractionOperationIterative : IPrimeSubtractionOperation
+public sealed class PrimeSubtractionOperationIterative : IPrimeSubtractionOperation
 {
     private static readonly List<int> Primes =
     [

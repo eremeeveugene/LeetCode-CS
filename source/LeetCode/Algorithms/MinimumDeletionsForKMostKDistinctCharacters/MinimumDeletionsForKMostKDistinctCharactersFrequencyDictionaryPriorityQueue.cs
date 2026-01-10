@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumDeletionsForKMostKDistinctCharacters;
 
 /// <inheritdoc />
-public class MinimumDeletionsForKMostKDistinctCharactersFrequencyDictionaryPriorityQueue :
+public sealed class MinimumDeletionsForKMostKDistinctCharactersFrequencyDictionaryPriorityQueue :
     IMinimumDeletionsForKMostKDistinctCharacters
 {
     /// <summary>

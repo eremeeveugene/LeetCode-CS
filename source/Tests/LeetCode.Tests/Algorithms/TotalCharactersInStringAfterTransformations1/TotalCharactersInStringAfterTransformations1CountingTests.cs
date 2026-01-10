@@ -14,5 +14,5 @@ using LeetCode.Algorithms.TotalCharactersInStringAfterTransformations1;
 namespace LeetCode.Tests.Algorithms.TotalCharactersInStringAfterTransformations1;
 
 [TestClass]
-public class TotalCharactersInStringAfterTransformations1CountingTests :
+public sealed class TotalCharactersInStringAfterTransformations1CountingTests :
     TotalCharactersInStringAfterTransformations1TestsBase<TotalCharactersInStringAfterTransformations1Counting>;

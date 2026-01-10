@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumDifferenceByRemappingDigit;
 
 /// <inheritdoc />
-public class MaximumDifferenceByRemappingDigitGreedy : IMaximumDifferenceByRemappingDigit
+public sealed class MaximumDifferenceByRemappingDigitGreedy : IMaximumDifferenceByRemappingDigit
 {
     /// <summary>
     ///     Time complexity - O(log num)

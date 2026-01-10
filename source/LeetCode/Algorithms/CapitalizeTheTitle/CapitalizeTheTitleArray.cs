@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CapitalizeTheTitle;
 
 /// <inheritdoc />
-public class CapitalizeTheTitleArray : ICapitalizeTheTitle
+public sealed class CapitalizeTheTitleArray : ICapitalizeTheTitle
 {
     /// <summary>
     ///     Time complexity - O(n)

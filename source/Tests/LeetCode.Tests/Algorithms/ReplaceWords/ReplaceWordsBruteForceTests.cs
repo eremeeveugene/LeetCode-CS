@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ReplaceWords;
 namespace LeetCode.Tests.Algorithms.ReplaceWords;
 
 [TestClass]
-public class ReplaceWordsBruteForceTests : ReplaceWordsTestsBase<ReplaceWordsBruteForce>;
+public sealed class ReplaceWordsBruteForceTests : ReplaceWordsTestsBase<ReplaceWordsBruteForce>;

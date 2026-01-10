@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.UniqueThreeDigitEvenNumbers;
 
 /// <inheritdoc />
-public class UniqueThreeDigitEvenNumbersBruteForce : IUniqueThreeDigitEvenNumbers
+public sealed class UniqueThreeDigitEvenNumbersBruteForce : IUniqueThreeDigitEvenNumbers
 {
     /// <summary>
     ///     Time complexity - O(n^3)

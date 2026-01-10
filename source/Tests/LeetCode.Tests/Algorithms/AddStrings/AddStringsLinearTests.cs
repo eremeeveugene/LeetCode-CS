@@ -14,4 +14,4 @@ using LeetCode.Algorithms.AddStrings;
 namespace LeetCode.Tests.Algorithms.AddStrings;
 
 [TestClass]
-public class AddStringsLinearTests : AddStringsTestsBase<AddStringsLinear>;
+public sealed class AddStringsLinearTests : AddStringsTestsBase<AddStringsLinear>;

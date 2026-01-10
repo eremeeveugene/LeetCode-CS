@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SetMatrixZeroes;
 namespace LeetCode.Tests.Algorithms.SetMatrixZeroes;
 
 [TestClass]
-public class SetMatrixZeroesInPlaceTests : SetMatrixZeroesTestsBase<SetMatrixZeroesInPlace>;
+public sealed class SetMatrixZeroesInPlaceTests : SetMatrixZeroesTestsBase<SetMatrixZeroesInPlace>;

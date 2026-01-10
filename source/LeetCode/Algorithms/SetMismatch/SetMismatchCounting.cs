@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SetMismatch;
 
 /// <inheritdoc />
-public class SetMismatchCounting : ISetMismatch
+public sealed class SetMismatchCounting : ISetMismatch
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ConcatenationOfArray;
 
 /// <inheritdoc />
-public class ConcatenationOfArrayIterative : IConcatenationOfArray
+public sealed class ConcatenationOfArrayIterative : IConcatenationOfArray
 {
     /// <summary>
     ///     Time complexity - O(n)

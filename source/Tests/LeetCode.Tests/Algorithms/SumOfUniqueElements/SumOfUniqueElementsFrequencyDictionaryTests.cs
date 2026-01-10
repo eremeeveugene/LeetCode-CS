@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SumOfUniqueElements;
 namespace LeetCode.Tests.Algorithms.SumOfUniqueElements;
 
 [TestClass]
-public class SumOfUniqueElementsFrequencyDictionaryTests :
+public sealed class SumOfUniqueElementsFrequencyDictionaryTests :
     SumOfUniqueElementsTestsBase<SumOfUniqueElementsFrequencyDictionary>;

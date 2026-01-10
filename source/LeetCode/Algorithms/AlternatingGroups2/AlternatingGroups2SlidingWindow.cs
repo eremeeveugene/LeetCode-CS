@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.AlternatingGroups2;
 
 /// <inheritdoc />
-public class AlternatingGroups2SlidingWindow : IAlternatingGroups2
+public sealed class AlternatingGroups2SlidingWindow : IAlternatingGroups2
 {
     /// <summary>
     ///     Time complexity - O(n + k)

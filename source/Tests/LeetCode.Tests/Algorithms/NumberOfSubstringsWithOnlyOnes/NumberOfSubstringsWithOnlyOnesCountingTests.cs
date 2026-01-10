@@ -14,5 +14,5 @@ using LeetCode.Algorithms.NumberOfSubstringsWithOnlyOnes;
 namespace LeetCode.Tests.Algorithms.NumberOfSubstringsWithOnlyOnes;
 
 [TestClass]
-public class NumberOfSubstringsWithOnlyOnesCountingTests :
+public sealed class NumberOfSubstringsWithOnlyOnesCountingTests :
     NumberOfSubstringsWithOnlyOnesTestsBase<NumberOfSubstringsWithOnlyOnesCounting>;

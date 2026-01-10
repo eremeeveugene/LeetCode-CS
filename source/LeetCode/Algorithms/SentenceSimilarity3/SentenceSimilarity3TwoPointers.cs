@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SentenceSimilarity3;
 
 /// <inheritdoc />
-public class SentenceSimilarity3TwoPointers : ISentenceSimilarity3
+public sealed class SentenceSimilarity3TwoPointers : ISentenceSimilarity3
 {
     /// <summary>
     ///     Time complexity - O(min(n, m))

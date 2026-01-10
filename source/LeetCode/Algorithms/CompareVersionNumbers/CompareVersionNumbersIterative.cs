@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CompareVersionNumbers;
 
 /// <inheritdoc />
-public class CompareVersionNumbersIterative : ICompareVersionNumbers
+public sealed class CompareVersionNumbersIterative : ICompareVersionNumbers
 {
     /// <summary>
     ///     Time complexity - O(max(n,m)), where n and m are the lengths of version1 and version2 respectively

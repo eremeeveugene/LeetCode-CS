@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RestoreFinishingOrder;
 namespace LeetCode.Tests.Algorithms.RestoreFinishingOrder;
 
 [TestClass]
-public class RestoreFinishingOrderHashSetTests : RestoreFinishingOrderTestsBase<RestoreFinishingOrderHashSet>;
+public sealed class RestoreFinishingOrderHashSetTests : RestoreFinishingOrderTestsBase<RestoreFinishingOrderHashSet>;

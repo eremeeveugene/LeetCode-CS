@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.EqualScoreSubstrings;
 
 /// <inheritdoc />
-public class EqualScoreSubstringsPrefixSum : IEqualScoreSubstrings
+public sealed class EqualScoreSubstringsPrefixSum : IEqualScoreSubstrings
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MedianOfTwoSortedArrays;
 
 /// <inheritdoc />
-public class MedianOfTwoSortedArraysIterative : IMedianOfTwoSortedArrays
+public sealed class MedianOfTwoSortedArraysIterative : IMedianOfTwoSortedArrays
 {
     /// <summary>
     ///     Time complexity - O(n + m)

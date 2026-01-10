@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfNumberIsSumOfPowersOfThree;
 
 /// <inheritdoc />
-public class CheckIfNumberIsSumOfPowersOfThreeIterative : ICheckIfNumberIsSumOfPowersOfThree
+public sealed class CheckIfNumberIsSumOfPowersOfThreeIterative : ICheckIfNumberIsSumOfPowersOfThree
 {
     /// <summary>
     ///     Time complexity - O(1)

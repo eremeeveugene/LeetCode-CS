@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SmallestMissingMultipleOfK;
 
 /// <inheritdoc />
-public class SmallestMissingMultipleOfKLookup : ISmallestMissingMultipleOfK
+public sealed class SmallestMissingMultipleOfKLookup : ISmallestMissingMultipleOfK
 {
     private const int MaxValue = 100;
 

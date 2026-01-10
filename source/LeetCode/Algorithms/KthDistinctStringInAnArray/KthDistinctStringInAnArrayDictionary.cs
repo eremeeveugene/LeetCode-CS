@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.KthDistinctStringInAnArray;
 
 /// <inheritdoc />
-public class KthDistinctStringInAnArrayDictionary : IKthDistinctStringInAnArray
+public sealed class KthDistinctStringInAnArrayDictionary : IKthDistinctStringInAnArray
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MakeStringSubsequenceUsingCyclicIncrements;
 
 /// <inheritdoc />
-public class MakeStringSubsequenceUsingCyclicIncrementsTwoPointers : IMakeStringSubsequenceUsingCyclicIncrements
+public sealed class MakeStringSubsequenceUsingCyclicIncrementsTwoPointers : IMakeStringSubsequenceUsingCyclicIncrements
 {
     /// <summary>
     ///     Time complexity - O(n + m)

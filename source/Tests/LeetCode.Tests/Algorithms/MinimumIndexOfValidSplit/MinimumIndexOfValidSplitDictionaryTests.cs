@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumIndexOfValidSplit;
 namespace LeetCode.Tests.Algorithms.MinimumIndexOfValidSplit;
 
 [TestClass]
-public class MinimumIndexOfValidSplitDictionaryTests :
+public sealed class MinimumIndexOfValidSplitDictionaryTests :
     MinimumIndexOfValidSplitTestsBase<MinimumIndexOfValidSplitDictionary>;

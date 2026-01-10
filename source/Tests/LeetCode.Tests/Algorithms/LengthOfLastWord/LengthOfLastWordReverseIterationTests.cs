@@ -14,4 +14,4 @@ using LeetCode.Algorithms.LengthOfLastWord;
 namespace LeetCode.Tests.Algorithms.LengthOfLastWord;
 
 [TestClass]
-public class LengthOfLastWordReverseIterationTests : LengthOfLastWordTestsBase<LengthOfLastWordReverseIteration>;
+public sealed class LengthOfLastWordReverseIterationTests : LengthOfLastWordTestsBase<LengthOfLastWordReverseIteration>;

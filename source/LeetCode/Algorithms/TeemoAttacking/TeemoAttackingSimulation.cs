@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TeemoAttacking;
 
 /// <inheritdoc />
-public class TeemoAttackingSimulation : ITeemoAttacking
+public sealed class TeemoAttackingSimulation : ITeemoAttacking
 {
     /// <summary>
     ///     Time complexity - O(n)

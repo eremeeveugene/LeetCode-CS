@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfTheSentenceIsPangram;
 
 /// <inheritdoc />
-public class CheckIfTheSentenceIsPangramHashSet : ICheckIfTheSentenceIsPangram
+public sealed class CheckIfTheSentenceIsPangramHashSet : ICheckIfTheSentenceIsPangram
 {
     private readonly HashSet<char> _alphabetHashSet =
     [

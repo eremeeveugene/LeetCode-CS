@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CountGoodNumbers;
 namespace LeetCode.Tests.Algorithms.CountGoodNumbers;
 
 [TestClass]
-public class CountGoodNumbersFastExponentiationTests : CountGoodNumbersTestsBase<CountGoodNumbersFastExponentiation>;
+public sealed class CountGoodNumbersFastExponentiationTests : CountGoodNumbersTestsBase<CountGoodNumbersFastExponentiation>;

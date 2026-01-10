@@ -14,4 +14,4 @@ using LeetCode.Algorithms.DesignHashSet;
 namespace LeetCode.Tests.Algorithms.DesignHashSet;
 
 [TestClass]
-public class DesignHashSetBoolArrayTests : DesignHashSetTestsBase<DesignHashSetBoolArray>;
+public sealed class DesignHashSetBoolArrayTests : DesignHashSetTestsBase<DesignHashSetBoolArray>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.AddDigits;
 namespace LeetCode.Tests.Algorithms.AddDigits;
 
 [TestClass]
-public class AddDigitsDigitalRootTests : AddDigitsTestsBase<AddDigitsDigitalRoot>;
+public sealed class AddDigitsDigitalRootTests : AddDigitsTestsBase<AddDigitsDigitalRoot>;

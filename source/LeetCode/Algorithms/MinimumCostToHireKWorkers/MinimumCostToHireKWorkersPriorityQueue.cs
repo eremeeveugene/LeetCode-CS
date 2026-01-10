@@ -14,7 +14,7 @@ namespace LeetCode.Algorithms.MinimumCostToHireKWorkers;
 /// <summary>
 ///     https://leetcode.com/problems/minimum-cost-to-hire-k-workers/
 /// </summary>
-public class MinimumCostToHireKWorkersPriorityQueue : IMinimumCostToHireKWorkers
+public sealed class MinimumCostToHireKWorkersPriorityQueue : IMinimumCostToHireKWorkers
 {
     /// <summary>
     ///     Time complexity - O(n log n)

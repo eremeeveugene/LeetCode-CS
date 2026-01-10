@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ReorderedPowerOfTwo;
 
 /// <inheritdoc />
-public class ReorderedPowerOfTwoFrequencyArray : IReorderedPowerOfTwo
+public sealed class ReorderedPowerOfTwoFrequencyArray : IReorderedPowerOfTwo
 {
     /// <summary>
     ///     Time complexity - O(1)

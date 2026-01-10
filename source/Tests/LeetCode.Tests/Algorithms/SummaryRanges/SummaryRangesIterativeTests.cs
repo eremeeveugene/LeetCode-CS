@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SummaryRanges;
 namespace LeetCode.Tests.Algorithms.SummaryRanges;
 
 [TestClass]
-public class SummaryRangesIterativeTests : SummaryRangesTestsBase<SummaryRangesIterative>;
+public sealed class SummaryRangesIterativeTests : SummaryRangesTestsBase<SummaryRangesIterative>;

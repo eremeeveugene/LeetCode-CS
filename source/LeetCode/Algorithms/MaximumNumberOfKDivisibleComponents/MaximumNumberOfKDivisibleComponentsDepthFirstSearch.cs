@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumNumberOfKDivisibleComponents;
 
 /// <inheritdoc />
-public class MaximumNumberOfKDivisibleComponentsDepthFirstSearch : IMaximumNumberOfKDivisibleComponents
+public sealed class MaximumNumberOfKDivisibleComponentsDepthFirstSearch : IMaximumNumberOfKDivisibleComponents
 {
     /// <summary>
     ///     Time complexity - O(n + m)

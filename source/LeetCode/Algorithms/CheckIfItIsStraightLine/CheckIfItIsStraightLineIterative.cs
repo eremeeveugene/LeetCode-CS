@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfItIsStraightLine;
 
 /// <inheritdoc />
-public class CheckIfItIsStraightLineIterative : ICheckIfItIsStraightLine
+public sealed class CheckIfItIsStraightLineIterative : ICheckIfItIsStraightLine
 {
     /// <summary>
     ///     Time complexity - O(n)

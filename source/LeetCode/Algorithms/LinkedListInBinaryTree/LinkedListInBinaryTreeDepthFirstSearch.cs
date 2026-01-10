@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.LinkedListInBinaryTree;
 
 /// <inheritdoc />
-public class LinkedListInBinaryTreeDepthFirstSearch : ILinkedListInBinaryTree
+public sealed class LinkedListInBinaryTreeDepthFirstSearch : ILinkedListInBinaryTree
 {
     /// <summary>
     ///     Time complexity - O(n * l), where n is the length of the tree and l is the length of the linked list

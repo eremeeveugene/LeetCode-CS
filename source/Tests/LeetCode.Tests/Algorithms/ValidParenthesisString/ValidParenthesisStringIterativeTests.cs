@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ValidParenthesisString;
 namespace LeetCode.Tests.Algorithms.ValidParenthesisString;
 
 [TestClass]
-public class ValidParenthesisStringIterativeTests : ValidParenthesisStringTestsBase<ValidParenthesisStringIterative>;
+public sealed class ValidParenthesisStringIterativeTests : ValidParenthesisStringTestsBase<ValidParenthesisStringIterative>;

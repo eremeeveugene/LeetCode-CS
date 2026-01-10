@@ -14,4 +14,4 @@ using LeetCode.Algorithms.EqualScoreSubstrings;
 namespace LeetCode.Tests.Algorithms.EqualScoreSubstrings;
 
 [TestClass]
-public class EqualScoreSubstringsPrefixSumTests : EqualScoreSubstringsTestsBase<EqualScoreSubstringsPrefixSum>;
+public sealed class EqualScoreSubstringsPrefixSumTests : EqualScoreSubstringsTestsBase<EqualScoreSubstringsPrefixSum>;

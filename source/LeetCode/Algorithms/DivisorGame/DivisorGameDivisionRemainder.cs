@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DivisorGame;
 
 /// <inheritdoc />
-public class DivisorGameDivisionRemainder : IDivisorGame
+public sealed class DivisorGameDivisionRemainder : IDivisorGame
 {
     /// <summary>
     ///     Time complexity - O(1)

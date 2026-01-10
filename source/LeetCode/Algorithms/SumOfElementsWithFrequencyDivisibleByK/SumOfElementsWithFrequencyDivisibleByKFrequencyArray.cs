@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SumOfElementsWithFrequencyDivisibleByK;
 
 /// <inheritdoc />
-public class SumOfElementsWithFrequencyDivisibleByKFrequencyArray : ISumOfElementsWithFrequencyDivisibleByK
+public sealed class SumOfElementsWithFrequencyDivisibleByKFrequencyArray : ISumOfElementsWithFrequencyDivisibleByK
 {
     /// <summary>
     ///     Time complexity - O(n)

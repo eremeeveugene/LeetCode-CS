@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MaxConsecutiveOnes;
 namespace LeetCode.Tests.Algorithms.MaxConsecutiveOnes;
 
 [TestClass]
-public class MaxConsecutiveOnesGreedyTests : MaxConsecutiveOnesTestsBase<MaxConsecutiveOnesGreedy>;
+public sealed class MaxConsecutiveOnesGreedyTests : MaxConsecutiveOnesTestsBase<MaxConsecutiveOnesGreedy>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NthTribonacciNumber;
 
 /// <inheritdoc />
-public class NthTribonacciNumberIterative : INthTribonacciNumber
+public sealed class NthTribonacciNumberIterative : INthTribonacciNumber
 {
     /// <summary>
     ///     Time complexity - O(n)

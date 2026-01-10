@@ -12,7 +12,7 @@
 namespace LeetCode.Concurrency.PrintInOrder;
 
 /// <inheritdoc />
-public class PrintInOrderAutoResetEvent : IPrintInOrder
+public sealed class PrintInOrderAutoResetEvent : IPrintInOrder
 {
     private readonly AutoResetEvent _firstPrint = new(false);
     private readonly AutoResetEvent _secondPrint = new(false);

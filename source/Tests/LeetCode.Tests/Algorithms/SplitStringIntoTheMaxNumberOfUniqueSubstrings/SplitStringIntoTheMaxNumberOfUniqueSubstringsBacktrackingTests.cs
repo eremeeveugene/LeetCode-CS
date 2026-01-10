@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SplitStringIntoTheMaxNumberOfUniqueSubstrings;
 namespace LeetCode.Tests.Algorithms.SplitStringIntoTheMaxNumberOfUniqueSubstrings;
 
 [TestClass]
-public class SplitStringIntoTheMaxNumberOfUniqueSubstringsBacktrackingTests :
+public sealed class SplitStringIntoTheMaxNumberOfUniqueSubstringsBacktrackingTests :
     SplitStringIntoTheMaxNumberOfUniqueSubstringsTestsBase<SplitStringIntoTheMaxNumberOfUniqueSubstringsBacktracking>;

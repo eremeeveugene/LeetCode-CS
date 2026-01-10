@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindIfArrayCanBeSorted;
 namespace LeetCode.Tests.Algorithms.FindIfArrayCanBeSorted;
 
 [TestClass]
-public class FindIfArrayCanBeSortedBubbleSortTests :
+public sealed class FindIfArrayCanBeSortedBubbleSortTests :
     FindIfArrayCanBeSortedTestsBase<FindIfArrayCanBeSortedBubbleSort>;

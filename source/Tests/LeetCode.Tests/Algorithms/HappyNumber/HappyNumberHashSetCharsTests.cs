@@ -14,4 +14,4 @@ using LeetCode.Algorithms.HappyNumber;
 namespace LeetCode.Tests.Algorithms.HappyNumber;
 
 [TestClass]
-public class HappyNumberHashSetCharsTests : HappyNumberTestsBase<HappyNumberHashSetChars>;
+public sealed class HappyNumberHashSetCharsTests : HappyNumberTestsBase<HappyNumberHashSetChars>;

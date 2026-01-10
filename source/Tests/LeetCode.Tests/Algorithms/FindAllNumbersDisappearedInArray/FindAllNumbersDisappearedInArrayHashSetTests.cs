@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindAllNumbersDisappearedInArray;
 namespace LeetCode.Tests.Algorithms.FindAllNumbersDisappearedInArray;
 
 [TestClass]
-public class FindAllNumbersDisappearedInArrayHashSetTests :
+public sealed class FindAllNumbersDisappearedInArrayHashSetTests :
     FindAllNumbersDisappearedInArrayTestsBase<FindAllNumbersDisappearedInArrayHashSet>;

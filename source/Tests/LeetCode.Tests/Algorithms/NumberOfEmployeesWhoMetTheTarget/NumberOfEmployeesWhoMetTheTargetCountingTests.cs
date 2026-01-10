@@ -14,5 +14,5 @@ using LeetCode.Algorithms.NumberOfEmployeesWhoMetTheTarget;
 namespace LeetCode.Tests.Algorithms.NumberOfEmployeesWhoMetTheTarget;
 
 [TestClass]
-public class NumberOfEmployeesWhoMetTheTargetCountingTests :
+public sealed class NumberOfEmployeesWhoMetTheTargetCountingTests :
     NumberOfEmployeesWhoMetTheTargetTestsBase<NumberOfEmployeesWhoMetTheTargetCounting>;

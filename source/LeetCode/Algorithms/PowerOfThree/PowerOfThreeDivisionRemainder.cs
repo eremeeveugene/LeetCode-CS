@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PowerOfThree;
 
 /// <inheritdoc />
-public class PowerOfThreeDivisionRemainder : IPowerOfThree
+public sealed class PowerOfThreeDivisionRemainder : IPowerOfThree
 {
     /// <summary>
     ///     Time complexity - O(1)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RemoveKDigits;
 namespace LeetCode.Tests.Algorithms.RemoveKDigits;
 
 [TestClass]
-public class RemoveKDigitsStackTests : RemoveKDigitsTestsBase<RemoveKDigitsStack>;
+public sealed class RemoveKDigitsStackTests : RemoveKDigitsTestsBase<RemoveKDigitsStack>;

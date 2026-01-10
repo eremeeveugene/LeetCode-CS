@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.SymmetricTree;
 
 /// <inheritdoc />
-public class SymmetricTreeRecursive : ISymmetricTree
+public sealed class SymmetricTreeRecursive : ISymmetricTree
 {
     /// <summary>
     ///     Time complexity - O(n)

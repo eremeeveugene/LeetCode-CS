@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.MinimumAbsoluteDifferenceInBST;
 
 /// <inheritdoc />
-public class MinimumAbsoluteDifferenceInBSTDepthFirstSearch : IMinimumAbsoluteDifferenceInBST
+public sealed class MinimumAbsoluteDifferenceInBSTDepthFirstSearch : IMinimumAbsoluteDifferenceInBST
 {
     /// <summary>
     ///     Time complexity - O(n)

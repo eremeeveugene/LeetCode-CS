@@ -14,7 +14,7 @@ using System.Numerics;
 namespace LeetCode.Algorithms.MinimumBitFlipsToConvertNumber;
 
 /// <inheritdoc />
-public class MinimumBitFlipsToConvertNumberPopCount : IMinimumBitFlipsToConvertNumber
+public sealed class MinimumBitFlipsToConvertNumberPopCount : IMinimumBitFlipsToConvertNumber
 {
     /// <summary>
     ///     Time complexity - O(b), where b is the number of bits in start and goal

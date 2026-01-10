@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FindMissingElements;
 namespace LeetCode.Tests.Algorithms.FindMissingElements;
 
 [TestClass]
-public class FindMissingElementsSortingTests : FindMissingElementsTestsBase<FindMissingElementsSorting>;
+public sealed class FindMissingElementsSortingTests : FindMissingElementsTestsBase<FindMissingElementsSorting>;

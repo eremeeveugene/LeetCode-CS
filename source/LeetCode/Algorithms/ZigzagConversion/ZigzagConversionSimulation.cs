@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ZigzagConversion;
 
 /// <inheritdoc />
-public class ZigzagConversionSimulation : IZigzagConversion
+public sealed class ZigzagConversionSimulation : IZigzagConversion
 {
     /// <summary>
     ///     Time complexity - O(n)

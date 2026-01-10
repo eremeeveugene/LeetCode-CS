@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LengthOfLastWord;
 
 /// <inheritdoc />
-public class LengthOfLastWordReverseIteration : ILengthOfLastWord
+public sealed class LengthOfLastWordReverseIteration : ILengthOfLastWord
 {
     /// <summary>
     ///     Time complexity - O(n)

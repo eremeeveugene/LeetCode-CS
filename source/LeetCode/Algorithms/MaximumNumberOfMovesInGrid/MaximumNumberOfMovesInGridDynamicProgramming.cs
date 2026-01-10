@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumNumberOfMovesInGrid;
 
 /// <inheritdoc />
-public class MaximumNumberOfMovesInGridDynamicProgramming : IMaximumNumberOfMovesInGrid
+public sealed class MaximumNumberOfMovesInGridDynamicProgramming : IMaximumNumberOfMovesInGrid
 {
     /// <summary>
     ///     Time complexity - O(n * m), where n is number of rows and m is the number of columns

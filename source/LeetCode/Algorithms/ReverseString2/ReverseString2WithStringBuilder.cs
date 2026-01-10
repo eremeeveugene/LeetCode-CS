@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ReverseString2;
 
 /// <inheritdoc />
-public class ReverseString2WithStringBuilder : IReverseString2
+public sealed class ReverseString2WithStringBuilder : IReverseString2
 {
     /// <summary>
     ///     Time complexity - O(n)

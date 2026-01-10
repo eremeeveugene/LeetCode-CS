@@ -14,5 +14,5 @@ using LeetCode.Algorithms.RegionsCutBySlashes;
 namespace LeetCode.Tests.Algorithms.RegionsCutBySlashes;
 
 [TestClass]
-public class RegionsCutBySlashesDepthFirstSearchTests :
+public sealed class RegionsCutBySlashesDepthFirstSearchTests :
     RegionsCutBySlashesTestsBase<RegionsCutBySlashesDepthFirstSearch>;

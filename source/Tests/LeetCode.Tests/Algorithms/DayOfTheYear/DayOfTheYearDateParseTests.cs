@@ -14,4 +14,4 @@ using LeetCode.Algorithms.DayOfTheYear;
 namespace LeetCode.Tests.Algorithms.DayOfTheYear;
 
 [TestClass]
-public class DayOfTheYearDateParseTests : DayOfTheYearTestsBase<DayOfTheYearDateParse>;
+public sealed class DayOfTheYearDateParseTests : DayOfTheYearTestsBase<DayOfTheYearDateParse>;

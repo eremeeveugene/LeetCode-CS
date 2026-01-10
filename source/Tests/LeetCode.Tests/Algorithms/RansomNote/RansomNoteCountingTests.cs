@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RansomNote;
 namespace LeetCode.Tests.Algorithms.RansomNote;
 
 [TestClass]
-public class RansomNoteCountingTests : RansomNoteTestsBase<RansomNoteCounting>;
+public sealed class RansomNoteCountingTests : RansomNoteTestsBase<RansomNoteCounting>;

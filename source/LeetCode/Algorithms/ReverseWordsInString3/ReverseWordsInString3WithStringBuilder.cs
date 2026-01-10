@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ReverseWordsInString3;
 
 /// <inheritdoc />
-public class ReverseWordsInString3WithStringBuilder : IReverseWordsInString3
+public sealed class ReverseWordsInString3WithStringBuilder : IReverseWordsInString3
 {
     /// <summary>
     ///     Time complexity - O(n)

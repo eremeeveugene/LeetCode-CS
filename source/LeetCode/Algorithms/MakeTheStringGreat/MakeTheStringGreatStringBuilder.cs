@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.MakeTheStringGreat;
 
 /// <inheritdoc />
-public class MakeTheStringGreatStringBuilder : IMakeTheStringGreat
+public sealed class MakeTheStringGreatStringBuilder : IMakeTheStringGreat
 {
     /// <summary>
     ///     Time complexity - O(n)

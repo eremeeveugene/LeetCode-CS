@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountDaysWithoutMeetings;
 
 /// <inheritdoc />
-public class CountDaysWithoutMeetingsSorting : ICountDaysWithoutMeetings
+public sealed class CountDaysWithoutMeetingsSorting : ICountDaysWithoutMeetings
 {
     /// <summary>
     ///     Time complexity - O(n log n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FruitIntoBaskets;
 
 /// <inheritdoc />
-public class FruitIntoBasketsFrequencyDictionary : IFruitIntoBaskets
+public sealed class FruitIntoBasketsFrequencyDictionary : IFruitIntoBaskets
 {
     /// <summary>
     ///     Time complexity - O(n)

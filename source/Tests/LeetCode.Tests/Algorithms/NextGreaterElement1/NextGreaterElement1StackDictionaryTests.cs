@@ -14,4 +14,4 @@ using LeetCode.Algorithms.NextGreaterElement1;
 namespace LeetCode.Tests.Algorithms.NextGreaterElement1;
 
 [TestClass]
-public class NextGreaterElement1StackDictionaryTests : NextGreaterElement1TestsBase<NextGreaterElement1StackDictionary>;
+public sealed class NextGreaterElement1StackDictionaryTests : NextGreaterElement1TestsBase<NextGreaterElement1StackDictionary>;

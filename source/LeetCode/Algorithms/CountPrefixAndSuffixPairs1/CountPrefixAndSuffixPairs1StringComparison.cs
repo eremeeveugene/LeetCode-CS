@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountPrefixAndSuffixPairs1;
 
 /// <inheritdoc />
-public class CountPrefixAndSuffixPairs1StringComparison : ICountPrefixAndSuffixPairs1
+public sealed class CountPrefixAndSuffixPairs1StringComparison : ICountPrefixAndSuffixPairs1
 {
     /// <summary>
     ///     Time complexity - O(n^2 * m), where m is the maximum word length

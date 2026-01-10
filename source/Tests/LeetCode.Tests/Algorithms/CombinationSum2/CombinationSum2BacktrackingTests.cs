@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CombinationSum2;
 namespace LeetCode.Tests.Algorithms.CombinationSum2;
 
 [TestClass]
-public class CombinationSum2BacktrackingTests : CombinationSum2TestsBase<CombinationSum2Backtracking>;
+public sealed class CombinationSum2BacktrackingTests : CombinationSum2TestsBase<CombinationSum2Backtracking>;

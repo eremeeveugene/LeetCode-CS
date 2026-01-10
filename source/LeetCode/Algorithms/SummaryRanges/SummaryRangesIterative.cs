@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SummaryRanges;
 
 /// <inheritdoc />
-public class SummaryRangesIterative : ISummaryRanges
+public sealed class SummaryRangesIterative : ISummaryRanges
 {
     /// <summary>
     ///     Time complexity - O(n)

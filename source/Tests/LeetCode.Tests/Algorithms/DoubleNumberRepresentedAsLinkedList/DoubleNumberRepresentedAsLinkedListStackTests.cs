@@ -14,5 +14,5 @@ using LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList;
 namespace LeetCode.Tests.Algorithms.DoubleNumberRepresentedAsLinkedList;
 
 [TestClass]
-public class DoubleNumberRepresentedAsLinkedListStackTests : DoubleNumberRepresentedAsLinkedListTestsBase<
+public sealed class DoubleNumberRepresentedAsLinkedListStackTests : DoubleNumberRepresentedAsLinkedListTestsBase<
     DoubleNumberRepresentedAsLinkedListStack>;

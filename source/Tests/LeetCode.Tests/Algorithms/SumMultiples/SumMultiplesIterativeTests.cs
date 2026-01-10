@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SumMultiples;
 namespace LeetCode.Tests.Algorithms.SumMultiples;
 
 [TestClass]
-public class SumMultiplesIterativeTests : SumMultiplesTestsBase<SumMultiplesIterative>;
+public sealed class SumMultiplesIterativeTests : SumMultiplesTestsBase<SumMultiplesIterative>;

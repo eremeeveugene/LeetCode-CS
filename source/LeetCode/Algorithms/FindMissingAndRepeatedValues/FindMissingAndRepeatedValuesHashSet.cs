@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindMissingAndRepeatedValues;
 
 /// <inheritdoc />
-public class FindMissingAndRepeatedValuesHashSet : IFindMissingAndRepeatedValues
+public sealed class FindMissingAndRepeatedValuesHashSet : IFindMissingAndRepeatedValues
 {
     /// <summary>
     ///     Time complexity - O(n^2)

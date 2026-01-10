@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TimeNeededToBuyTickets;
 
 /// <inheritdoc />
-public class TimeNeededToBuyTicketsIterative : ITimeNeededToBuyTickets
+public sealed class TimeNeededToBuyTicketsIterative : ITimeNeededToBuyTickets
 {
     /// <summary>
     ///     Time complexity - O(n)

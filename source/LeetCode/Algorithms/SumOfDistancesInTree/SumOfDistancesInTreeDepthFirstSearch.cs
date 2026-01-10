@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SumOfDistancesInTree;
 
 /// <inheritdoc />
-public class SumOfDistancesInTreeDepthFirstSearch : ISumOfDistancesInTree
+public sealed class SumOfDistancesInTreeDepthFirstSearch : ISumOfDistancesInTree
 {
     /// <summary>
     ///     Time complexity - O(n)

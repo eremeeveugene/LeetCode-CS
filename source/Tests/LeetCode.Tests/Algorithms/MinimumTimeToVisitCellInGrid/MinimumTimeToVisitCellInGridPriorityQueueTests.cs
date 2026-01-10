@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumTimeToVisitCellInGrid;
 namespace LeetCode.Tests.Algorithms.MinimumTimeToVisitCellInGrid;
 
 [TestClass]
-public class MinimumTimeToVisitCellInGridPriorityQueueTests :
+public sealed class MinimumTimeToVisitCellInGridPriorityQueueTests :
     MinimumTimeToVisitCellInGridTestsBase<MinimumTimeToVisitCellInGridPriorityQueue>;

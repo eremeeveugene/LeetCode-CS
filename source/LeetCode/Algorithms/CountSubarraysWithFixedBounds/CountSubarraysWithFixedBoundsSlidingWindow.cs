@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountSubarraysWithFixedBounds;
 
 /// <inheritdoc />
-public class CountSubarraysWithFixedBoundsSlidingWindow : ICountSubarraysWithFixedBounds
+public sealed class CountSubarraysWithFixedBoundsSlidingWindow : ICountSubarraysWithFixedBounds
 {
     /// <summary>
     ///     Time complexity - O(n)

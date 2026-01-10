@@ -14,6 +14,6 @@ using LeetCode.Algorithms.AverageSalaryExcludingTheMinimumAndMaximumSalary;
 namespace LeetCode.Tests.Algorithms.AverageSalaryExcludingTheMinimumAndMaximumSalary;
 
 [TestClass]
-public class AverageSalaryExcludingTheMinimumAndMaximumSalaryIterativeTests :
+public sealed class AverageSalaryExcludingTheMinimumAndMaximumSalaryIterativeTests :
     AverageSalaryExcludingTheMinimumAndMaximumSalaryTestsBase<
         AverageSalaryExcludingTheMinimumAndMaximumSalaryIterative>;

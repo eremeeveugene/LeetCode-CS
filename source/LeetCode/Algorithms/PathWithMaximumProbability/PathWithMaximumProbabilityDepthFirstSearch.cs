@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PathWithMaximumProbability;
 
 /// <inheritdoc />
-public class PathWithMaximumProbabilityDepthFirstSearch : PathWithMaximumProbabilityBase
+public sealed class PathWithMaximumProbabilityDepthFirstSearch : PathWithMaximumProbabilityBase
 {
     /// <summary>
     ///     Time complexity - O(m + n), where m is the number of edges and n is the number of nodes

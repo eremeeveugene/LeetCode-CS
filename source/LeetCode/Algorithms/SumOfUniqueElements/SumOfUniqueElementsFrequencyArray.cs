@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SumOfUniqueElements;
 
 /// <inheritdoc />
-public class SumOfUniqueElementsFrequencyArray : ISumOfUniqueElements
+public sealed class SumOfUniqueElementsFrequencyArray : ISumOfUniqueElements
 {
     /// <summary>
     ///     Time complexity - O(n)

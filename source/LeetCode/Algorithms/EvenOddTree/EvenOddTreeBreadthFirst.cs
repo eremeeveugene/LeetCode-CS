@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.EvenOddTree;
 
 /// <inheritdoc />
-public class EvenOddTreeBreadthFirst : IEvenOddTree
+public sealed class EvenOddTreeBreadthFirst : IEvenOddTree
 {
     /// <summary>
     ///     Time complexity - O(n), where n is the number of nodes in the binary tree

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaxConsecutiveOnes;
 
 /// <inheritdoc />
-public class MaxConsecutiveOnesGreedy : IMaxConsecutiveOnes
+public sealed class MaxConsecutiveOnesGreedy : IMaxConsecutiveOnes
 {
     /// <summary>
     ///     Time complexity - O(n)

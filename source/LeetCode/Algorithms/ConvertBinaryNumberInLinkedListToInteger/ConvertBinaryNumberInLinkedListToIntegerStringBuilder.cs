@@ -15,7 +15,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ConvertBinaryNumberInLinkedListToInteger;
 
 /// <inheritdoc />
-public class ConvertBinaryNumberInLinkedListToIntegerStringBuilder : IConvertBinaryNumberInLinkedListToInteger
+public sealed class ConvertBinaryNumberInLinkedListToIntegerStringBuilder : IConvertBinaryNumberInLinkedListToInteger
 {
     /// <summary>
     ///     Time complexity - O(n)

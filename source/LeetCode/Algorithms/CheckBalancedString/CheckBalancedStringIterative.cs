@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckBalancedString;
 
 /// <inheritdoc />
-public class CheckBalancedStringIterative : ICheckBalancedString
+public sealed class CheckBalancedStringIterative : ICheckBalancedString
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.GoatLatin;
 namespace LeetCode.Tests.Algorithms.GoatLatin;
 
 [TestClass]
-public class GoatLatinSimulationTests : GoatLatinTestsBase<GoatLatinSimulation>;
+public sealed class GoatLatinSimulationTests : GoatLatinTestsBase<GoatLatinSimulation>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindAllGroupOfFarmland;
 
 /// <inheritdoc />
-public class FindAllGroupOfFarmlandIterative : IFindAllGroupOfFarmland
+public sealed class FindAllGroupOfFarmlandIterative : IFindAllGroupOfFarmland
 {
     /// <summary>
     ///     Time complexity - O(m * n)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.GridGame;
 namespace LeetCode.Tests.Algorithms.GridGame;
 
 [TestClass]
-public class GridGamePrefixSumTests : GridGameTestsBase<GridGamePrefixSum>;
+public sealed class GridGamePrefixSumTests : GridGameTestsBase<GridGamePrefixSum>;

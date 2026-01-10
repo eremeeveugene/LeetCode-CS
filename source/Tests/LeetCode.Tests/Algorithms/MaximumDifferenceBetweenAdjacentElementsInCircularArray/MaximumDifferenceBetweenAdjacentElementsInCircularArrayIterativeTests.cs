@@ -14,6 +14,6 @@ using LeetCode.Algorithms.MaximumDifferenceBetweenAdjacentElementsInCircularArra
 namespace LeetCode.Tests.Algorithms.MaximumDifferenceBetweenAdjacentElementsInCircularArray;
 
 [TestClass]
-public class MaximumDifferenceBetweenAdjacentElementsInCircularArrayIterativeTests :
+public sealed class MaximumDifferenceBetweenAdjacentElementsInCircularArrayIterativeTests :
     MaximumDifferenceBetweenAdjacentElementsInCircularArrayTestsBase<
         MaximumDifferenceBetweenAdjacentElementsInCircularArrayIterative>;

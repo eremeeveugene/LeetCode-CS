@@ -14,4 +14,4 @@ using LeetCode.Algorithms.Subsets;
 namespace LeetCode.Tests.Algorithms.Subsets;
 
 [TestClass]
-public class SubsetsIterativeTests : SubsetsTestsBase<SubsetsIterative>;
+public sealed class SubsetsIterativeTests : SubsetsTestsBase<SubsetsIterative>;

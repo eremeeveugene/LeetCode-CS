@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindCommonCharacters;
 
 /// <inheritdoc />
-public class FindCommonCharactersDictionary : IFindCommonCharacters
+public sealed class FindCommonCharactersDictionary : IFindCommonCharacters
 {
     /// <summary>
     ///     Time complexity - O(n * m), where n is the number of words and m is the maximum length of the words

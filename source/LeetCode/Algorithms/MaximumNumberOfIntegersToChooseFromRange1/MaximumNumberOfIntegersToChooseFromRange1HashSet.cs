@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumNumberOfIntegersToChooseFromRange1;
 
 /// <inheritdoc />
-public class MaximumNumberOfIntegersToChooseFromRange1HashSet : IMaximumNumberOfIntegersToChooseFromRange1
+public sealed class MaximumNumberOfIntegersToChooseFromRange1HashSet : IMaximumNumberOfIntegersToChooseFromRange1
 {
     /// <summary>
     ///     Time complexity - O(m + n)

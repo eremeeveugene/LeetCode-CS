@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ReversePrefixOfWord;
 
 /// <inheritdoc />
-public class ReversePrefixOfWordArray : IReversePrefixOfWord
+public sealed class ReversePrefixOfWordArray : IReversePrefixOfWord
 {
     /// <summary>
     ///     Time complexity - O(n)

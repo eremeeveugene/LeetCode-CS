@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ValidParenthesisString;
 
 /// <inheritdoc />
-public class ValidParenthesisStringIterative : IValidParenthesisString
+public sealed class ValidParenthesisStringIterative : IValidParenthesisString
 {
     /// <summary>
     ///     Time complexity - O(n)

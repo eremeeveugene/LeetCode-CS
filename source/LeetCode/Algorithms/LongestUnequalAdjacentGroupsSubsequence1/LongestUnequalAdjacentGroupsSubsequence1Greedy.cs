@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LongestUnequalAdjacentGroupsSubsequence1;
 
 /// <inheritdoc />
-public class LongestUnequalAdjacentGroupsSubsequence1Greedy : ILongestUnequalAdjacentGroupsSubsequence1
+public sealed class LongestUnequalAdjacentGroupsSubsequence1Greedy : ILongestUnequalAdjacentGroupsSubsequence1
 {
     /// <summary>
     ///     Time complexity - O(n)

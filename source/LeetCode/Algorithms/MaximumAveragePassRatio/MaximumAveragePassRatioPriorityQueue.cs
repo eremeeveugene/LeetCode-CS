@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumAveragePassRatio;
 
 /// <inheritdoc />
-public class MaximumAveragePassRatioPriorityQueue : IMaximumAveragePassRatio
+public sealed class MaximumAveragePassRatioPriorityQueue : IMaximumAveragePassRatio
 {
     /// <summary>
     ///     Time complexity - O(n log n)

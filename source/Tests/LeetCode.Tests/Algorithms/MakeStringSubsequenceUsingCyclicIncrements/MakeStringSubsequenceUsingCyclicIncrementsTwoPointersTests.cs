@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MakeStringSubsequenceUsingCyclicIncrements;
 namespace LeetCode.Tests.Algorithms.MakeStringSubsequenceUsingCyclicIncrements;
 
 [TestClass]
-public class MakeStringSubsequenceUsingCyclicIncrementsTwoPointersTests :
+public sealed class MakeStringSubsequenceUsingCyclicIncrementsTwoPointersTests :
     MakeStringSubsequenceUsingCyclicIncrementsTestsBase<MakeStringSubsequenceUsingCyclicIncrementsTwoPointers>;

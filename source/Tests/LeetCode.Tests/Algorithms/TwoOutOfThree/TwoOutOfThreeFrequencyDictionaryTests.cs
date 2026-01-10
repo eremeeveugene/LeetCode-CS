@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TwoOutOfThree;
 namespace LeetCode.Tests.Algorithms.TwoOutOfThree;
 
 [TestClass]
-public class TwoOutOfThreeFrequencyDictionaryTests : TwoOutOfThreeTestsBase<TwoOutOfThreeFrequencyDictionary>;
+public sealed class TwoOutOfThreeFrequencyDictionaryTests : TwoOutOfThreeTestsBase<TwoOutOfThreeFrequencyDictionary>;

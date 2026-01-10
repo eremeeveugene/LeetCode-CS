@@ -14,6 +14,6 @@ using LeetCode.Algorithms.NumberOfSubstringsContainingAllThreeCharacters;
 namespace LeetCode.Tests.Algorithms.NumberOfSubstringsContainingAllThreeCharacters;
 
 [TestClass]
-public class NumberOfSubstringsContainingAllThreeCharactersSlidingWindowTests :
+public sealed class NumberOfSubstringsContainingAllThreeCharactersSlidingWindowTests :
     NumberOfSubstringsContainingAllThreeCharactersTestsBase<
         NumberOfSubstringsContainingAllThreeCharactersSlidingWindow>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SymmetricTree;
 namespace LeetCode.Tests.Algorithms.SymmetricTree;
 
 [TestClass]
-public class SymmetricTreeIterativeTests : SymmetricTreeTestsBase<SymmetricTreeIterative>;
+public sealed class SymmetricTreeIterativeTests : SymmetricTreeTestsBase<SymmetricTreeIterative>;

@@ -14,6 +14,6 @@ using LeetCode.Algorithms.MinimizedMaximumOfProductsDistributedToAnyStore;
 namespace LeetCode.Tests.Algorithms.MinimizedMaximumOfProductsDistributedToAnyStore;
 
 [TestClass]
-public class MinimizedMaximumOfProductsDistributedToAnyStoreBinarySearchTests :
+public sealed class MinimizedMaximumOfProductsDistributedToAnyStoreBinarySearchTests :
     MinimizedMaximumOfProductsDistributedToAnyStoreTestsBase<
         MinimizedMaximumOfProductsDistributedToAnyStoreBinarySearch>;

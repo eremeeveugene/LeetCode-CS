@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ArrayPartition;
 
 /// <inheritdoc />
-public class ArrayPartitionSorting : IArrayPartition
+public sealed class ArrayPartitionSorting : IArrayPartition
 {
     /// <summary>
     ///     Time complexity - O (n log n)

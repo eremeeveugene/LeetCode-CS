@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ValidSudoku;
 namespace LeetCode.Tests.Algorithms.ValidSudoku;
 
 [TestClass]
-public class ValidSudokuBitmaskTests : ValidSudokuTestsBase<ValidSudokuBitmask>;
+public sealed class ValidSudokuBitmaskTests : ValidSudokuTestsBase<ValidSudokuBitmask>;

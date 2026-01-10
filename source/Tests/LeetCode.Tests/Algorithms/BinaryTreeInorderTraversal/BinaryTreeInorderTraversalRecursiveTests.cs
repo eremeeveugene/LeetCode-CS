@@ -14,5 +14,5 @@ using LeetCode.Algorithms.BinaryTreeInorderTraversal;
 namespace LeetCode.Tests.Algorithms.BinaryTreeInorderTraversal;
 
 [TestClass]
-public class BinaryTreeInorderTraversalRecursiveTests :
+public sealed class BinaryTreeInorderTraversalRecursiveTests :
     BinaryTreeInorderTraversalTestsBase<BinaryTreeInorderTraversalRecursive>;

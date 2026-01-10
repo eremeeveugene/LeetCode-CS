@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ReverseLinkedList;
 namespace LeetCode.Tests.Algorithms.ReverseLinkedList;
 
 [TestClass]
-public class ReverseLinkedListIterativeTests : ReverseLinkedListTestsBase<ReverseLinkedListIterative>;
+public sealed class ReverseLinkedListIterativeTests : ReverseLinkedListTestsBase<ReverseLinkedListIterative>;

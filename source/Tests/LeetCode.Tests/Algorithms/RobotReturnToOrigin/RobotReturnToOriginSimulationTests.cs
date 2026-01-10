@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RobotReturnToOrigin;
 namespace LeetCode.Tests.Algorithms.RobotReturnToOrigin;
 
 [TestClass]
-public class RobotReturnToOriginSimulationTests : RobotReturnToOriginTestsBase<RobotReturnToOriginSimulation>;
+public sealed class RobotReturnToOriginSimulationTests : RobotReturnToOriginTestsBase<RobotReturnToOriginSimulation>;

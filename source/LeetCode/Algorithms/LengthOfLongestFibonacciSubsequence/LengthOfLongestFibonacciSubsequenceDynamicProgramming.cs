@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LengthOfLongestFibonacciSubsequence;
 
 /// <inheritdoc />
-public class LengthOfLongestFibonacciSubsequenceDynamicProgramming : ILengthOfLongestFibonacciSubsequence
+public sealed class LengthOfLongestFibonacciSubsequenceDynamicProgramming : ILengthOfLongestFibonacciSubsequence
 {
     /// <summary>
     ///     Time complexity - O(n^2)

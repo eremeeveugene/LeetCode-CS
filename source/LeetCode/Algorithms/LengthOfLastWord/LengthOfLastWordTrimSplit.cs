@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LengthOfLastWord;
 
 /// <inheritdoc />
-public class LengthOfLastWordTrimSplit : ILengthOfLastWord
+public sealed class LengthOfLastWordTrimSplit : ILengthOfLastWord
 {
     /// <summary>
     ///     Time complexity - O(n)

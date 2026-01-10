@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.AddDigits;
 
 /// <inheritdoc />
-public class AddDigitsDigitalRoot : IAddDigits
+public sealed class AddDigitsDigitalRoot : IAddDigits
 {
     /// <summary>
     ///     Time complexity - O(1)

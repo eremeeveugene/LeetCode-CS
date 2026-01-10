@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheNumberOfWaysToPlacePeople2;
 
 /// <inheritdoc />
-public class FindTheNumberOfWaysToPlacePeople2SortingGreedy : IFindTheNumberOfWaysToPlacePeople2
+public sealed class FindTheNumberOfWaysToPlacePeople2SortingGreedy : IFindTheNumberOfWaysToPlacePeople2
 {
     /// <summary>
     ///     Time complexity - O(n^2)

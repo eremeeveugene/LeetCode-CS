@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumNumberGame;
 
 /// <inheritdoc />
-public class MinimumNumberGameSorting : IMinimumNumberGame
+public sealed class MinimumNumberGameSorting : IMinimumNumberGame
 {
     /// <summary>
     ///     Time complexity - O(n log n)

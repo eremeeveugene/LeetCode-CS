@@ -11,7 +11,7 @@
 
 namespace LeetCode.Algorithms.MaximumNumberOfDistinctElementsAfterOperations;
 
-public class MaximumNumberOfDistinctElementsAfterOperationsSortingGreedy :
+public sealed class MaximumNumberOfDistinctElementsAfterOperationsSortingGreedy :
     IMaximumNumberOfDistinctElementsAfterOperations
 {
     /// <summary>

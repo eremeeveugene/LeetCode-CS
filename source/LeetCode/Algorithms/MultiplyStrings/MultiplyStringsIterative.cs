@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.MultiplyStrings;
 
 /// <inheritdoc />
-public class MultiplyStringsIterative : IMultiplyStrings
+public sealed class MultiplyStringsIterative : IMultiplyStrings
 {
     /// <summary>
     ///     Time complexity - O(n * m)

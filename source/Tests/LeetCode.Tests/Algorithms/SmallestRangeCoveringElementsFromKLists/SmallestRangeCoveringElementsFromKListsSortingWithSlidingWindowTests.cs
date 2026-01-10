@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SmallestRangeCoveringElementsFromKLists;
 namespace LeetCode.Tests.Algorithms.SmallestRangeCoveringElementsFromKLists;
 
 [TestClass]
-public class SmallestRangeCoveringElementsFromKListsSortingWithSlidingWindowTests :
+public sealed class SmallestRangeCoveringElementsFromKListsSortingWithSlidingWindowTests :
     SmallestRangeCoveringElementsFromKListsTestsBase<SmallestRangeCoveringElementsFromKListsSortingWithSlidingWindow>;

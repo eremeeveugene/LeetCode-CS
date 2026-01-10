@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MakeTwoArraysEqualByReversingSubarrays;
 
 /// <inheritdoc />
-public class MakeTwoArraysEqualByReversingSubarraysDictionary : IMakeTwoArraysEqualByReversingSubarrays
+public sealed class MakeTwoArraysEqualByReversingSubarraysDictionary : IMakeTwoArraysEqualByReversingSubarrays
 {
     /// <summary>
     ///     Time complexity - O(n)

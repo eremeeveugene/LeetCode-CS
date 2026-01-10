@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ValidTriangleNumber;
 
 /// <inheritdoc />
-public class ValidTriangleNumberSortingTwoPointers : IValidTriangleNumber
+public sealed class ValidTriangleNumberSortingTwoPointers : IValidTriangleNumber
 {
     /// <summary>
     ///     Time complexity -  O(n^2)

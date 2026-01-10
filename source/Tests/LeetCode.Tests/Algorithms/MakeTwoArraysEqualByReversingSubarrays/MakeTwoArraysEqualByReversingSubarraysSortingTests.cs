@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MakeTwoArraysEqualByReversingSubarrays;
 namespace LeetCode.Tests.Algorithms.MakeTwoArraysEqualByReversingSubarrays;
 
 [TestClass]
-public class MakeTwoArraysEqualByReversingSubarraysSortingTests : MakeTwoArraysEqualByReversingSubarraysTestsBase<
+public sealed class MakeTwoArraysEqualByReversingSubarraysSortingTests : MakeTwoArraysEqualByReversingSubarraysTestsBase<
     MakeTwoArraysEqualByReversingSubarraysSorting>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MissingNumber;
 namespace LeetCode.Tests.Algorithms.MissingNumber;
 
 [TestClass]
-public class MissingNumberCumulativeSumTests : MissingNumberTestsBase<MissingNumberCumulativeSum>;
+public sealed class MissingNumberCumulativeSumTests : MissingNumberTestsBase<MissingNumberCumulativeSum>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.VowelsGameInString;
 namespace LeetCode.Tests.Algorithms.VowelsGameInString;
 
 [TestClass]
-public class VowelsGameInStringMathTests : VowelsGameInStringTestsBase<VowelsGameInStringMath>;
+public sealed class VowelsGameInStringMathTests : VowelsGameInStringTestsBase<VowelsGameInStringMath>;

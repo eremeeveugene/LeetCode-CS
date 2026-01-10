@@ -14,4 +14,4 @@ using LeetCode.Algorithms.LongestNiceSubarray;
 namespace LeetCode.Tests.Algorithms.LongestNiceSubarray;
 
 [TestClass]
-public class LongestNiceSubarrayBruteForceTests : LongestNiceSubarrayTestsBase<LongestNiceSubarrayBruteForce>;
+public sealed class LongestNiceSubarrayBruteForceTests : LongestNiceSubarrayTestsBase<LongestNiceSubarrayBruteForce>;

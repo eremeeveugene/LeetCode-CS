@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CountGoodTriplets;
 namespace LeetCode.Tests.Algorithms.CountGoodTriplets;
 
 [TestClass]
-public class CountGoodTripletsPrefixSumTests : CountGoodTripletsTestsBase<CountGoodTripletsPrefixSum>;
+public sealed class CountGoodTripletsPrefixSumTests : CountGoodTripletsTestsBase<CountGoodTripletsPrefixSum>;

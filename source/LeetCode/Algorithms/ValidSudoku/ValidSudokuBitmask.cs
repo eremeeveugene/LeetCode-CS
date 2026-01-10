@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ValidSudoku;
 
 /// <inheritdoc />
-public class ValidSudokuBitmask : ValidSudokuBase
+public sealed class ValidSudokuBitmask : ValidSudokuBase
 {
     /// <summary>
     ///     Time complexity - O(n^2)

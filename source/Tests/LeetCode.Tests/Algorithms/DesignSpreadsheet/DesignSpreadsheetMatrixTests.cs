@@ -14,7 +14,7 @@ using LeetCode.Algorithms.DesignSpreadsheet;
 namespace LeetCode.Tests.Algorithms.DesignSpreadsheet;
 
 [TestClass]
-public class DesignSpreadsheetMatrixTests : DesignSpreadsheetTestsBase
+public sealed class DesignSpreadsheetMatrixTests : DesignSpreadsheetTestsBase
 {
     protected override IDesignSpreadsheet GetSolution(int rows)
     {

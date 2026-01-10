@@ -14,4 +14,4 @@ using LeetCode.Algorithms.NextGreaterElement1;
 namespace LeetCode.Tests.Algorithms.NextGreaterElement1;
 
 [TestClass]
-public class NextGreaterElement1BruteForceTests : NextGreaterElement1TestsBase<NextGreaterElement1BruteForce>;
+public sealed class NextGreaterElement1BruteForceTests : NextGreaterElement1TestsBase<NextGreaterElement1BruteForce>;

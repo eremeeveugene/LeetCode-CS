@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum;
 
 /// <inheritdoc />
-public class PartitionArrayIntoThreePartsWithEqualSumIterative : IPartitionArrayIntoThreePartsWithEqualSum
+public sealed class PartitionArrayIntoThreePartsWithEqualSumIterative : IPartitionArrayIntoThreePartsWithEqualSum
 {
     /// <summary>
     ///     Time complexity - O(n)

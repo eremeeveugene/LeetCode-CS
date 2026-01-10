@@ -14,6 +14,6 @@ using LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree
 namespace LeetCode.Tests.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree;
 
 [TestClass]
-public class FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterativeOptimizedTests :
+public sealed class FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterativeOptimizedTests :
     FindMinimumOperationsToMakeAllElementsDivisibleByThreeTestsBase<
         FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterativeOptimized>;

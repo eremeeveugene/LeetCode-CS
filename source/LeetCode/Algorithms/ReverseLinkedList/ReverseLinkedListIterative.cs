@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.ReverseLinkedList;
 
 /// <inheritdoc />
-public class ReverseLinkedListIterative : IReverseLinkedList
+public sealed class ReverseLinkedListIterative : IReverseLinkedList
 {
     /// <summary>
     ///     Time complexity - O(n)

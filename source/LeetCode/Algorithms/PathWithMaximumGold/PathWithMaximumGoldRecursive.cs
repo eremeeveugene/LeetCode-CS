@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PathWithMaximumGold;
 
 /// <inheritdoc />
-public class PathWithMaximumGoldRecursive : IPathWithMaximumGold
+public sealed class PathWithMaximumGoldRecursive : IPathWithMaximumGold
 {
     /// <summary>
     ///     Time complexity - O((m * n) * 4 ^ (m * n)

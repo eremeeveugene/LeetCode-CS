@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountOfSubstringsContainingEveryVowelAndKConsonants2;
 
 /// <inheritdoc />
-public class CountOfSubstringsContainingEveryVowelAndKConsonants2SlidingWindow :
+public sealed class CountOfSubstringsContainingEveryVowelAndKConsonants2SlidingWindow :
     ICountOfSubstringsContainingEveryVowelAndKConsonants2
 {
     /// <summary>

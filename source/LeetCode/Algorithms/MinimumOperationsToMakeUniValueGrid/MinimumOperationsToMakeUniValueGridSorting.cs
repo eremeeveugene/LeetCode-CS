@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumOperationsToMakeUniValueGrid;
 
 /// <inheritdoc />
-public class MinimumOperationsToMakeUniValueGridSorting : IMinimumOperationsToMakeUniValueGrid
+public sealed class MinimumOperationsToMakeUniValueGridSorting : IMinimumOperationsToMakeUniValueGrid
 {
     /// <summary>
     ///     Time complexity - O(n log n)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MinimumCommonValue;
 namespace LeetCode.Tests.Algorithms.MinimumCommonValue;
 
 [TestClass]
-public class MinimumCommonValueHashSetTests : MinimumCommonValueTestsBase<MinimumCommonValueHashSet>;
+public sealed class MinimumCommonValueHashSetTests : MinimumCommonValueTestsBase<MinimumCommonValueHashSet>;

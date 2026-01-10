@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumDistanceInArrays;
 
 /// <inheritdoc />
-public class MaximumDistanceInArraysBruteForce : IMaximumDistanceInArrays
+public sealed class MaximumDistanceInArraysBruteForce : IMaximumDistanceInArrays
 {
     /// <summary>
     ///     Time complexity - O(n^2)

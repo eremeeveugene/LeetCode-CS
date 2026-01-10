@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SmallestEvenMultiple;
 namespace LeetCode.Tests.Algorithms.SmallestEvenMultiple;
 
 [TestClass]
-public class SmallestEvenMultipleConstantTests : SmallestEvenMultipleTestsBase<SmallestEvenMultipleConstant>;
+public sealed class SmallestEvenMultipleConstantTests : SmallestEvenMultipleTestsBase<SmallestEvenMultipleConstant>;

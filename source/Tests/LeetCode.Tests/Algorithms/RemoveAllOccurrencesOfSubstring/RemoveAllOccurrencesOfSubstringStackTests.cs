@@ -14,5 +14,5 @@ using LeetCode.Algorithms.RemoveAllOccurrencesOfSubstring;
 namespace LeetCode.Tests.Algorithms.RemoveAllOccurrencesOfSubstring;
 
 [TestClass]
-public class RemoveAllOccurrencesOfSubstringStackTests :
+public sealed class RemoveAllOccurrencesOfSubstringStackTests :
     RemoveAllOccurrencesOfSubstringTestsBase<RemoveAllOccurrencesOfSubstringStack>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SumOfAllSubsetXORTotals;
 namespace LeetCode.Tests.Algorithms.SumOfAllSubsetXORTotals;
 
 [TestClass]
-public class SumOfAllSubsetXORTotalsRecursiveTests : SumOfAllSubsetXORTotalsTestsBase<SumOfAllSubsetXORTotalsRecursive>;
+public sealed class SumOfAllSubsetXORTotalsRecursiveTests : SumOfAllSubsetXORTotalsTestsBase<SumOfAllSubsetXORTotalsRecursive>;

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinCostClimbingStairs;
 namespace LeetCode.Tests.Algorithms.MinCostClimbingStairs;
 
 [TestClass]
-public class MinCostClimbingStairsDynamicProgrammingTests : MinCostClimbingStairsTestsBase<
+public sealed class MinCostClimbingStairsDynamicProgrammingTests : MinCostClimbingStairsTestsBase<
     MinCostClimbingStairsDynamicProgramming>;

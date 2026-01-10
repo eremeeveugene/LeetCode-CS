@@ -14,5 +14,5 @@ using LeetCode.Algorithms.RemoveSubFoldersFromTheFilesystem;
 namespace LeetCode.Tests.Algorithms.RemoveSubFoldersFromTheFilesystem;
 
 [TestClass]
-public class RemoveSubFoldersFromTheFilesystemHashSetTests :
+public sealed class RemoveSubFoldersFromTheFilesystemHashSetTests :
     RemoveSubFoldersFromTheFilesystemTestsBase<RemoveSubFoldersFromTheFilesystemHashSet>;

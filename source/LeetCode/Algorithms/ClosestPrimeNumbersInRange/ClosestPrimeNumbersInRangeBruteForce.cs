@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ClosestPrimeNumbersInRange;
 
 /// <inheritdoc />
-public class ClosestPrimeNumbersInRangeBruteForce : IClosestPrimeNumbersInRange
+public sealed class ClosestPrimeNumbersInRangeBruteForce : IClosestPrimeNumbersInRange
 {
     /// <summary>
     ///     Time complexity - O((R−L) * sqrt(R))

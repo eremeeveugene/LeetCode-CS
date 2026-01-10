@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SumOfAllOddLengthSubarrays;
 
 /// <inheritdoc />
-public class SumOfAllOddLengthSubarraysContributionTechnique : ISumOfAllOddLengthSubarrays
+public sealed class SumOfAllOddLengthSubarraysContributionTechnique : ISumOfAllOddLengthSubarrays
 {
     /// <summary>
     ///     Time complexity - O(n)

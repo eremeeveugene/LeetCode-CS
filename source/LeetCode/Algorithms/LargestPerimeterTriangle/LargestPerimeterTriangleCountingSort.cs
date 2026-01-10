@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LargestPerimeterTriangle;
 
 /// <inheritdoc />
-public class LargestPerimeterTriangleCountingSort : ILargestPerimeterTriangle
+public sealed class LargestPerimeterTriangleCountingSort : ILargestPerimeterTriangle
 {
     /// <summary>
     ///     Time complexity - O(n + k), where k is the maximum value in nums

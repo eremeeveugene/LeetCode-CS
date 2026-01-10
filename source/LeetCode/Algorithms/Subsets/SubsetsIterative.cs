@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.Subsets;
 
 /// <inheritdoc />
-public class SubsetsIterative : ISubsets
+public sealed class SubsetsIterative : ISubsets
 {
     /// <summary>
     ///     Time complexity - O(n * 2^n)

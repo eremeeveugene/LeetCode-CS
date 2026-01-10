@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.CousinsInBinaryTree2;
 
 /// <inheritdoc />
-public class CousinsInBinaryTree2BreadthFirstSearch : ICousinsInBinaryTree2
+public sealed class CousinsInBinaryTree2BreadthFirstSearch : ICousinsInBinaryTree2
 {
     /// <summary>
     ///     Time complexity - O(n), where n is the number of nodes in the binary tree

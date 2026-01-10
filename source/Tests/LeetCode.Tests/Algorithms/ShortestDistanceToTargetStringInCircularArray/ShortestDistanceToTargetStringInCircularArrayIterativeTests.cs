@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ShortestDistanceToTargetStringInCircularArray;
 namespace LeetCode.Tests.Algorithms.ShortestDistanceToTargetStringInCircularArray;
 
 [TestClass]
-public class ShortestDistanceToTargetStringInCircularArrayIterativeTests :
+public sealed class ShortestDistanceToTargetStringInCircularArrayIterativeTests :
     ShortestDistanceToTargetStringInCircularArrayTestsBase<ShortestDistanceToTargetStringInCircularArrayIterative>;

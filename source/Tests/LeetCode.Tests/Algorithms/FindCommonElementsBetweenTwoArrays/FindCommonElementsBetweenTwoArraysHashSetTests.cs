@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindCommonElementsBetweenTwoArrays;
 namespace LeetCode.Tests.Algorithms.FindCommonElementsBetweenTwoArrays;
 
 [TestClass]
-public class FindCommonElementsBetweenTwoArraysHashSetTests :
+public sealed class FindCommonElementsBetweenTwoArraysHashSetTests :
     FindCommonElementsBetweenTwoArraysTestsBase<FindCommonElementsBetweenTwoArraysHashSet>;

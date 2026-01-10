@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ShiftingLetters2;
 namespace LeetCode.Tests.Algorithms.ShiftingLetters2;
 
 [TestClass]
-public class ShiftingLetters2DifferenceArrayTests : ShiftingLetters2TestsBase<ShiftingLetters2DifferenceArray>;
+public sealed class ShiftingLetters2DifferenceArrayTests : ShiftingLetters2TestsBase<ShiftingLetters2DifferenceArray>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency;
 
 /// <inheritdoc />
-public class LengthOfLongestSubarrayWithAtMostKFrequencyTwoPointers : ILengthOfLongestSubarrayWithAtMostKFrequency
+public sealed class LengthOfLongestSubarrayWithAtMostKFrequencyTwoPointers : ILengthOfLongestSubarrayWithAtMostKFrequency
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RowWithMaximumOnes;
 
 /// <inheritdoc />
-public class RowWithMaximumOnesBruteForce : IRowWithMaximumOnes
+public sealed class RowWithMaximumOnesBruteForce : IRowWithMaximumOnes
 {
     /// <summary>
     ///     Time complexity - O(n^2)

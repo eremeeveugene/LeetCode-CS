@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
 
 /// <inheritdoc />
-public class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch :
+public sealed class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch :
     IHeightOfBinaryTreeAfterSubtreeRemovalQueries
 {
     /// <summary>

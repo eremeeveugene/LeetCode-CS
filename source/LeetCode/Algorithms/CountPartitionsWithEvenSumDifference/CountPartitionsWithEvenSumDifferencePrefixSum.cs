@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountPartitionsWithEvenSumDifference;
 
 /// <inheritdoc />
-public class CountPartitionsWithEvenSumDifferencePrefixSum : ICountPartitionsWithEvenSumDifference
+public sealed class CountPartitionsWithEvenSumDifferencePrefixSum : ICountPartitionsWithEvenSumDifference
 {
     /// <summary>
     ///     Time complexity - O(n)

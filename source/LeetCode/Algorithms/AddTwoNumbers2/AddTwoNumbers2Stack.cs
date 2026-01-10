@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.AddTwoNumbers2;
 
 /// <inheritdoc />
-public class AddTwoNumbers2Stack : IAddTwoNumbers2
+public sealed class AddTwoNumbers2Stack : IAddTwoNumbers2
 {
     /// <summary>
     ///     Time complexity - O(n + m)

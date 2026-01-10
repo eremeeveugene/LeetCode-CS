@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MoveZeroes;
 
 /// <inheritdoc />
-public class MoveZeroesTwoPointers : IMoveZeroes
+public sealed class MoveZeroesTwoPointers : IMoveZeroes
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumTimeToVisitCellInGrid;
 
 /// <inheritdoc />
-public class MinimumTimeToVisitCellInGridPriorityQueue : IMinimumTimeToVisitCellInGrid
+public sealed class MinimumTimeToVisitCellInGridPriorityQueue : IMinimumTimeToVisitCellInGrid
 {
     private static readonly IReadOnlyCollection<(int Row, int Column)> Directions = [(-1, 0), (1, 0), (0, -1), (0, 1)];
 

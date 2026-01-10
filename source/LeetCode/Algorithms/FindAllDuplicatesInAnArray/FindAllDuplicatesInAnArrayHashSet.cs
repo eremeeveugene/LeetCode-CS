@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindAllDuplicatesInAnArray;
 
 /// <inheritdoc />
-public class FindAllDuplicatesInAnArrayHashSet : IFindAllDuplicatesInAnArray
+public sealed class FindAllDuplicatesInAnArrayHashSet : IFindAllDuplicatesInAnArray
 {
     /// <summary>
     ///     Time complexity - O(n)

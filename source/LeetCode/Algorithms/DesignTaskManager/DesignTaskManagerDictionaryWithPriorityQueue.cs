@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignTaskManager;
 
 /// <inheritdoc />
-public class DesignTaskManagerDictionaryWithPriorityQueue : IDesignTaskManager
+public sealed class DesignTaskManagerDictionaryWithPriorityQueue : IDesignTaskManager
 {
     private readonly PriorityQueue<TaskIdPriority, TaskIdPriority> _taskIdPriorityQueue = new();
     private readonly Dictionary<int, UserIdPriority> _taskIdToUserIdPriorityDictionary = [];

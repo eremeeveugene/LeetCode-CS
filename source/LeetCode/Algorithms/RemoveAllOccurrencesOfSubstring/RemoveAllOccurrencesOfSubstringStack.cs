@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RemoveAllOccurrencesOfSubstring;
 
 /// <inheritdoc />
-public class RemoveAllOccurrencesOfSubstringStack : IRemoveAllOccurrencesOfSubstring
+public sealed class RemoveAllOccurrencesOfSubstringStack : IRemoveAllOccurrencesOfSubstring
 {
     /// <summary>
     ///     Time complexity - O(n)

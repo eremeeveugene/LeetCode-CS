@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CountOddNumbersInAnIntervalRange;
 namespace LeetCode.Tests.Algorithms.CountOddNumbersInAnIntervalRange;
 
 [TestClass]
-public class CountOddNumbersInAnIntervalRangeMathTests :
+public sealed class CountOddNumbersInAnIntervalRangeMathTests :
     CountOddNumbersInAnIntervalRangeTestsBase<CountOddNumbersInAnIntervalRangeMath>;

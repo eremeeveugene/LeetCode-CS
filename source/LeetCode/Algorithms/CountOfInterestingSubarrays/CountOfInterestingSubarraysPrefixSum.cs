@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountOfInterestingSubarrays;
 
 /// <inheritdoc />
-public class CountOfInterestingSubarraysPrefixSum : ICountOfInterestingSubarrays
+public sealed class CountOfInterestingSubarraysPrefixSum : ICountOfInterestingSubarrays
 {
     /// <summary>
     ///     Time complexity - O(n)

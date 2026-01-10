@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheLexicographicallyLargestStringFromTheBox1;
 
 /// <inheritdoc />
-public class FindTheLexicographicallyLargestStringFromTheBox1TwoPointers :
+public sealed class FindTheLexicographicallyLargestStringFromTheBox1TwoPointers :
     IFindTheLexicographicallyLargestStringFromTheBox1
 {
     /// <summary>

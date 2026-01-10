@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximizeTheNumberOfTargetNodesAfterConnectingTrees1;
 
 /// <inheritdoc />
-public class MaximizeTheNumberOfTargetNodesAfterConnectingTrees1DepthFirstSearch :
+public sealed class MaximizeTheNumberOfTargetNodesAfterConnectingTrees1DepthFirstSearch :
     IMaximizeTheNumberOfTargetNodesAfterConnectingTrees1
 {
     /// <summary>

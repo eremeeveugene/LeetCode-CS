@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindMinimumLogTransportationCost;
 
 /// <inheritdoc />
-public class FindMinimumLogTransportationCostMath : IFindMinimumLogTransportationCost
+public sealed class FindMinimumLogTransportationCostMath : IFindMinimumLogTransportationCost
 {
     /// <summary>
     ///     Time complexity - O(1)

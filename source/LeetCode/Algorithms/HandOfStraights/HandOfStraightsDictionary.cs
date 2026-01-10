@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.HandOfStraights;
 
 /// <inheritdoc />
-public class HandOfStraightsDictionary : IHandOfStraights
+public sealed class HandOfStraightsDictionary : IHandOfStraights
 {
     /// <summary>
     ///     Time complexity - O(n log n)

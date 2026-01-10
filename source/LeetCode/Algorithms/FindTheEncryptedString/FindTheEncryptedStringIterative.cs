@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.FindTheEncryptedString;
 
 /// <inheritdoc />
-public class FindTheEncryptedStringIterative : IFindTheEncryptedString
+public sealed class FindTheEncryptedStringIterative : IFindTheEncryptedString
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,7 +14,7 @@ using LeetCode.Algorithms.DesignStackWithIncrementOperation;
 namespace LeetCode.Tests.Algorithms.DesignStackWithIncrementOperation;
 
 [TestClass]
-public class DesignStackWithIncrementOperationArrayTests : DesignStackWithIncrementOperationTestsBase
+public sealed class DesignStackWithIncrementOperationArrayTests : DesignStackWithIncrementOperationTestsBase
 {
     protected override IDesignStackWithIncrementOperation GetSolution(int maxSize)
     {

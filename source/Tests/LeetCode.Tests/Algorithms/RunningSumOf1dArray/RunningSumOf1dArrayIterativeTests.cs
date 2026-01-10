@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RunningSumOf1dArray;
 namespace LeetCode.Tests.Algorithms.RunningSumOf1dArray;
 
 [TestClass]
-public class RunningSumOf1dArrayIterativeTests : RunningSumOf1dArrayTestsBase<RunningSumOf1dArrayIterative>;
+public sealed class RunningSumOf1dArrayIterativeTests : RunningSumOf1dArrayTestsBase<RunningSumOf1dArrayIterative>;

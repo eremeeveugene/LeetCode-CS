@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.FindElementsInContaminatedBinaryTree;
 
 /// <inheritdoc />
-public class FindElementsInContaminatedBinaryTreeHashSet : IFindElementsInContaminatedBinaryTree
+public sealed class FindElementsInContaminatedBinaryTreeHashSet : IFindElementsInContaminatedBinaryTree
 {
     private readonly HashSet<int> _hashSet = [];
 

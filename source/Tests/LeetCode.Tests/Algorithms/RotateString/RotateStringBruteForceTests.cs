@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RotateString;
 namespace LeetCode.Tests.Algorithms.RotateString;
 
 [TestClass]
-public class RotateStringBruteForceTests : RotateStringTestsBase<RotateStringBruteForce>;
+public sealed class RotateStringBruteForceTests : RotateStringTestsBase<RotateStringBruteForce>;

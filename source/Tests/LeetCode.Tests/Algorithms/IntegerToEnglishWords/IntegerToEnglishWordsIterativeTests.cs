@@ -14,4 +14,4 @@ using LeetCode.Algorithms.IntegerToEnglishWords;
 namespace LeetCode.Tests.Algorithms.IntegerToEnglishWords;
 
 [TestClass]
-public class IntegerToEnglishWordsIterativeTests : IntegerToEnglishWordsTestsBase<IntegerToEnglishWordsIterative>;
+public sealed class IntegerToEnglishWordsIterativeTests : IntegerToEnglishWordsTestsBase<IntegerToEnglishWordsIterative>;

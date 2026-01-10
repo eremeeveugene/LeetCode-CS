@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.AddBinary;
 
 /// <inheritdoc />
-public class AddBinaryIterative : IAddBinary
+public sealed class AddBinaryIterative : IAddBinary
 {
     /// <summary>
     ///     Time complexity - O(max(n, m)), where n is the length of string a and is the length of string b

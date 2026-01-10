@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LargestThreeSameDigitNumberInString;
 
 /// <inheritdoc />
-public class LargestThreeSameDigitNumberInStringGreedyOptimized : ILargestThreeSameDigitNumberInString
+public sealed class LargestThreeSameDigitNumberInStringGreedyOptimized : ILargestThreeSameDigitNumberInString
 {
     private static readonly string[] Triples =
     [

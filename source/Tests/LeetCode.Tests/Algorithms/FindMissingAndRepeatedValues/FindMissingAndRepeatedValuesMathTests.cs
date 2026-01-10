@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindMissingAndRepeatedValues;
 namespace LeetCode.Tests.Algorithms.FindMissingAndRepeatedValues;
 
 [TestClass]
-public class FindMissingAndRepeatedValuesMathTests :
+public sealed class FindMissingAndRepeatedValuesMathTests :
     FindMissingAndRepeatedValuesTestsBase<FindMissingAndRepeatedValuesMath>;

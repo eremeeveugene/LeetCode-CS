@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.KthLargestElementInStream;
 
 /// <inheritdoc />
-public class KthLargestElementInStreamPriorityQueue : IKthLargestElementInStream
+public sealed class KthLargestElementInStreamPriorityQueue : IKthLargestElementInStream
 {
     private readonly int _k;
     private readonly PriorityQueue<int, int> _priorityQueue = new();

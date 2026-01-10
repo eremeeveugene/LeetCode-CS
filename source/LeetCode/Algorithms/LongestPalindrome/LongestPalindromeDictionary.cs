@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LongestPalindrome;
 
 /// <inheritdoc />
-public class LongestPalindromeDictionary : ILongestPalindrome
+public sealed class LongestPalindromeDictionary : ILongestPalindrome
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.New21Game;
 
 /// <inheritdoc />
-public class New21GameDictionaryPriorityQueue : INew21Game
+public sealed class New21GameDictionaryPriorityQueue : INew21Game
 {
     /// <summary>
     ///     Time complexity - O(k * maxPts * log k)

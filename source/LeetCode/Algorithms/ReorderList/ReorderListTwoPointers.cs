@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.ReorderList;
 
 /// <inheritdoc />
-public class ReorderListTwoPointers : IReorderList
+public sealed class ReorderListTwoPointers : IReorderList
 {
     /// <summary>
     ///     Time complexity - O(n)

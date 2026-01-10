@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.GreatestSumDivisibleByThree;
 
 /// <inheritdoc />
-public class GreatestSumDivisibleByThreeGreedy : IGreatestSumDivisibleByThree
+public sealed class GreatestSumDivisibleByThreeGreedy : IGreatestSumDivisibleByThree
 {
     /// <summary>
     ///     Time complexity - O(n)

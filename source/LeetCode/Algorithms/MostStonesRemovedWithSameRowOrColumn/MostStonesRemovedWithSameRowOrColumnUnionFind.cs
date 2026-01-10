@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MostStonesRemovedWithSameRowOrColumn;
 
 /// <inheritdoc />
-public class MostStonesRemovedWithSameRowOrColumnUnionFind : IMostStonesRemovedWithSameRowOrColumn
+public sealed class MostStonesRemovedWithSameRowOrColumnUnionFind : IMostStonesRemovedWithSameRowOrColumn
 {
     /// <summary>
     ///     Time complexity - O(n)

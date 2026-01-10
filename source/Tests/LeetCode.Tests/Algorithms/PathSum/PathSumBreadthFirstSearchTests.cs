@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PathSum;
 namespace LeetCode.Tests.Algorithms.PathSum;
 
 [TestClass]
-public class PathSumBreadthFirstSearchTests : PathSumTestsBase<PathSumBreadthFirstSearch>;
+public sealed class PathSumBreadthFirstSearchTests : PathSumTestsBase<PathSumBreadthFirstSearch>;

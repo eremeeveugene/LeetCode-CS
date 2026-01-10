@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.StoneGame;
 
 /// <inheritdoc />
-public class StoneGameMathematical : IStoneGame
+public sealed class StoneGameMathematical : IStoneGame
 {
     /// <summary>
     ///     Time complexity - O(1)

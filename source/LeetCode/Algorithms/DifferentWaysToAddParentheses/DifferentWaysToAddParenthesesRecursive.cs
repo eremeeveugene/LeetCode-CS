@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DifferentWaysToAddParentheses;
 
 /// <inheritdoc />
-public class DifferentWaysToAddParenthesesRecursive : IDifferentWaysToAddParentheses
+public sealed class DifferentWaysToAddParenthesesRecursive : IDifferentWaysToAddParentheses
 {
     /// <summary>
     ///     Time complexity - O(3^n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindCenterOfStarGraph;
 
 /// <inheritdoc />
-public class FindCenterOfStarGraphDictionary : IFindCenterOfStarGraph
+public sealed class FindCenterOfStarGraphDictionary : IFindCenterOfStarGraph
 {
     /// <summary>
     ///     Time complexity - O(n)

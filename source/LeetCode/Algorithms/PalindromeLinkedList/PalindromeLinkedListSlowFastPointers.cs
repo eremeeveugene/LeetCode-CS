@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.PalindromeLinkedList;
 
 /// <inheritdoc />
-public class PalindromeLinkedListSlowFastPointers : IPalindromeLinkedList
+public sealed class PalindromeLinkedListSlowFastPointers : IPalindromeLinkedList
 {
     /// <summary>
     ///     Time complexity - O(n)

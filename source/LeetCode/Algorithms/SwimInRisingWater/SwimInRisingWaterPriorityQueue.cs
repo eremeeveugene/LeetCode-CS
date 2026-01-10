@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SwimInRisingWater;
 
 /// <inheritdoc />
-public class SwimInRisingWaterPriorityQueue : ISwimInRisingWater
+public sealed class SwimInRisingWaterPriorityQueue : ISwimInRisingWater
 {
     private static readonly (int X, int Y)[] Directions = [(-1, 0), (1, 0), (0, -1), (0, 1)];
 

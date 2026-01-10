@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.VowelSpellchecker;
 
 /// <inheritdoc />
-public class VowelSpellcheckerDictionary : IVowelSpellchecker
+public sealed class VowelSpellcheckerDictionary : IVowelSpellchecker
 {
     /// <summary>
     ///     Time complexity - O(n * l), where n is the number of words in wordlist and l is the average word length

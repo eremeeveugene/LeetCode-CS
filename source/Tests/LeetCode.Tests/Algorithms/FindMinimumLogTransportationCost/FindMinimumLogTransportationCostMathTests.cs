@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindMinimumLogTransportationCost;
 namespace LeetCode.Tests.Algorithms.FindMinimumLogTransportationCost;
 
 [TestClass]
-public class FindMinimumLogTransportationCostMathTests :
+public sealed class FindMinimumLogTransportationCostMathTests :
     FindMinimumLogTransportationCostTestsBase<FindMinimumLogTransportationCostMath>;

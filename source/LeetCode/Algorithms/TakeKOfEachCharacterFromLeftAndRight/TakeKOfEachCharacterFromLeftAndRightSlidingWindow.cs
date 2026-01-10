@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TakeKOfEachCharacterFromLeftAndRight;
 
 /// <inheritdoc />
-public class TakeKOfEachCharacterFromLeftAndRightSlidingWindow : ITakeKOfEachCharacterFromLeftAndRight
+public sealed class TakeKOfEachCharacterFromLeftAndRightSlidingWindow : ITakeKOfEachCharacterFromLeftAndRight
 {
     /// <summary>
     ///     Time complexity - O(n)

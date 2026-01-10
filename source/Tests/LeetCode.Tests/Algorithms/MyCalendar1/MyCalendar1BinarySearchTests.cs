@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MyCalendar1;
 namespace LeetCode.Tests.Algorithms.MyCalendar1;
 
 [TestClass]
-public class MyCalendar1BinarySearchTests : MyCalendar1TestsBase<MyCalendar1BinarySearch>;
+public sealed class MyCalendar1BinarySearchTests : MyCalendar1TestsBase<MyCalendar1BinarySearch>;

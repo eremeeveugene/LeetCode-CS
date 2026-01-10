@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ValidTriangleNumber;
 namespace LeetCode.Tests.Algorithms.ValidTriangleNumber;
 
 [TestClass]
-public class ValidTriangleNumberSortingTwoPointersTests :
+public sealed class ValidTriangleNumberSortingTwoPointersTests :
     ValidTriangleNumberTestsBase<ValidTriangleNumberSortingTwoPointers>;

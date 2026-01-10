@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SolvingQuestionsWithBrainpower;
 
 /// <inheritdoc />
-public class SolvingQuestionsWithBrainpowerDynamicProgramming : ISolvingQuestionsWithBrainpower
+public sealed class SolvingQuestionsWithBrainpowerDynamicProgramming : ISolvingQuestionsWithBrainpower
 {
     /// <summary>
     ///     Time complexity - O(n)

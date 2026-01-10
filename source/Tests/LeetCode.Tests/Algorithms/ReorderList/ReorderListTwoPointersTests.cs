@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ReorderList;
 namespace LeetCode.Tests.Algorithms.ReorderList;
 
 [TestClass]
-public class ReorderListTwoPointersTests : ReorderListTestsBase<ReorderListTwoPointers>;
+public sealed class ReorderListTwoPointersTests : ReorderListTestsBase<ReorderListTwoPointers>;

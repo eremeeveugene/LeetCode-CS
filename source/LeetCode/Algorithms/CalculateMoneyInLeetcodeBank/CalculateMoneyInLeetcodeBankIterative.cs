@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CalculateMoneyInLeetcodeBank;
 
 /// <inheritdoc />
-public class CalculateMoneyInLeetcodeBankIterative : ICalculateMoneyInLeetcodeBank
+public sealed class CalculateMoneyInLeetcodeBankIterative : ICalculateMoneyInLeetcodeBank
 {
     /// <summary>
     ///     Time complexity - O(n)

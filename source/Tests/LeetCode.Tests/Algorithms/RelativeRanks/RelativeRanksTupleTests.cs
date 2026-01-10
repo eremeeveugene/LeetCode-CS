@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RelativeRanks;
 namespace LeetCode.Tests.Algorithms.RelativeRanks;
 
 [TestClass]
-public class RelativeRanksTupleTests : RelativeRanksTestsBase<RelativeRanksTuple>;
+public sealed class RelativeRanksTupleTests : RelativeRanksTestsBase<RelativeRanksTuple>;

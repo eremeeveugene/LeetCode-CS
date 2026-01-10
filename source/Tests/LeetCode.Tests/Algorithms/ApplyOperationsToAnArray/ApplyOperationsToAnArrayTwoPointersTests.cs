@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ApplyOperationsToAnArray;
 namespace LeetCode.Tests.Algorithms.ApplyOperationsToAnArray;
 
 [TestClass]
-public class ApplyOperationsToAnArrayTwoPointersTests :
+public sealed class ApplyOperationsToAnArrayTwoPointersTests :
     ApplyOperationsToAnArrayTestsBase<ApplyOperationsToAnArrayTwoPointers>;

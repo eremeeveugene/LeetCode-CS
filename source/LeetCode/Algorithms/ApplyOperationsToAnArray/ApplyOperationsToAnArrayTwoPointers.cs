@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ApplyOperationsToAnArray;
 
 /// <inheritdoc />
-public class ApplyOperationsToAnArrayTwoPointers : IApplyOperationsToAnArray
+public sealed class ApplyOperationsToAnArrayTwoPointers : IApplyOperationsToAnArray
 {
     /// <summary>
     ///     Time complexity - O(n)

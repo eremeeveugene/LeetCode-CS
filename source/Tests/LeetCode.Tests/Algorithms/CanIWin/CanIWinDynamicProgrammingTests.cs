@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CanIWin;
 namespace LeetCode.Tests.Algorithms.CanIWin;
 
 [TestClass]
-public class CanIWinDynamicProgrammingTests : CanIWinTestsBase<CanIWinDynamicProgramming>;
+public sealed class CanIWinDynamicProgrammingTests : CanIWinTestsBase<CanIWinDynamicProgramming>;

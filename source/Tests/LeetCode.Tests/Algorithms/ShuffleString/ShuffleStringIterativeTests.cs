@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ShuffleString;
 namespace LeetCode.Tests.Algorithms.ShuffleString;
 
 [TestClass]
-public class ShuffleStringIterativeTests : ShuffleStringTestsBase<ShuffleStringIterative>;
+public sealed class ShuffleStringIterativeTests : ShuffleStringTestsBase<ShuffleStringIterative>;

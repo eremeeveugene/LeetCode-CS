@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SumOfPrefixScoresOfStrings;
 
 /// <inheritdoc />
-public class SumOfPrefixScoresOfStringsTrie : ISumOfPrefixScoresOfStrings
+public sealed class SumOfPrefixScoresOfStringsTrie : ISumOfPrefixScoresOfStrings
 {
     /// <summary>
     ///     Time complexity - O(N * L), where N is the number of words and L is the average length of the words

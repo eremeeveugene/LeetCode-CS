@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FlippingAnImage;
 namespace LeetCode.Tests.Algorithms.FlippingAnImage;
 
 [TestClass]
-public class FlippingAnImageReverseTests : FlippingAnImageTestsBase<FlippingAnImageReverse>;
+public sealed class FlippingAnImageReverseTests : FlippingAnImageTestsBase<FlippingAnImageReverse>;

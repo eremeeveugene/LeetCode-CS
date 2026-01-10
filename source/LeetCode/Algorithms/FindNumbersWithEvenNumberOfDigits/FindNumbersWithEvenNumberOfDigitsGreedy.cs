@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindNumbersWithEvenNumberOfDigits;
 
 /// <inheritdoc />
-public class FindNumbersWithEvenNumberOfDigitsGreedy : IFindNumbersWithEvenNumberOfDigits
+public sealed class FindNumbersWithEvenNumberOfDigitsGreedy : IFindNumbersWithEvenNumberOfDigits
 {
     /// <summary>
     ///     Time complexity - O(n)

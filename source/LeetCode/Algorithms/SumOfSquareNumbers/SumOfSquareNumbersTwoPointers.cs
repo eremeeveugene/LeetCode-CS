@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SumOfSquareNumbers;
 
 /// <inheritdoc />
-public class SumOfSquareNumbersTwoPointers : ISumOfSquareNumbers
+public sealed class SumOfSquareNumbersTwoPointers : ISumOfSquareNumbers
 {
     /// <summary>
     ///     Time complexity - O(Sqrt(c))

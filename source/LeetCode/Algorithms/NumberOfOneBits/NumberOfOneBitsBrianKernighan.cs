@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfOneBits;
 
 /// <inheritdoc />
-public class NumberOfOneBitsBrianKernighan : INumberOfOneBits
+public sealed class NumberOfOneBitsBrianKernighan : INumberOfOneBits
 {
     /// <summary>
     ///     Time complexity - O(1)

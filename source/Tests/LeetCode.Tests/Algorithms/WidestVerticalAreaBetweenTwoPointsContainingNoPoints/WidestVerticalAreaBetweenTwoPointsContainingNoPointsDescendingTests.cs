@@ -14,6 +14,6 @@ using LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints;
 namespace LeetCode.Tests.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints;
 
 [TestClass]
-public class WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescendingTests :
+public sealed class WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescendingTests :
     WidestVerticalAreaBetweenTwoPointsContainingNoPointsTestsBase<
         WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescending>;

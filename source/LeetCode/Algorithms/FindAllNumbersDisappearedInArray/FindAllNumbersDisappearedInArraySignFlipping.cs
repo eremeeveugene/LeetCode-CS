@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindAllNumbersDisappearedInArray;
 
 /// <inheritdoc />
-public class FindAllNumbersDisappearedInArraySignFlipping : IFindAllNumbersDisappearedInArray
+public sealed class FindAllNumbersDisappearedInArraySignFlipping : IFindAllNumbersDisappearedInArray
 {
     /// <summary>
     ///     Time complexity - O(n)

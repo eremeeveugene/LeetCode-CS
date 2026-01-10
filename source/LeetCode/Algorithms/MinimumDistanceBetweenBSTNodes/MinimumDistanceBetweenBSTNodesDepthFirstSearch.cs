@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.MinimumDistanceBetweenBSTNodes;
 
 /// <inheritdoc />
-public class MinimumDistanceBetweenBSTNodesDepthFirstSearch : IMinimumDistanceBetweenBSTNodes
+public sealed class MinimumDistanceBetweenBSTNodesDepthFirstSearch : IMinimumDistanceBetweenBSTNodes
 {
     /// <summary>
     ///     Time complexity - O(n)

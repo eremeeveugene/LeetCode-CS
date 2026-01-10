@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.SumRootToLeafNumbers;
 
 /// <inheritdoc />
-public class SumRootToLeafNumbersDepthFirstSearch : ISumRootToLeafNumbers
+public sealed class SumRootToLeafNumbersDepthFirstSearch : ISumRootToLeafNumbers
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TwoKeysKeyboard;
 namespace LeetCode.Tests.Algorithms.TwoKeysKeyboard;
 
 [TestClass]
-public class TwoKeysKeyboardPrimeFactorizationTests : TwoKeysKeyboardTestsBase<TwoKeysKeyboardPrimeFactorization>;
+public sealed class TwoKeysKeyboardPrimeFactorizationTests : TwoKeysKeyboardTestsBase<TwoKeysKeyboardPrimeFactorization>;

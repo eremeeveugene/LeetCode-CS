@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MakeSumDivisibleByP;
 
 /// <inheritdoc />
-public class MakeSumDivisibleByPPrefixSum : IMakeSumDivisibleByP
+public sealed class MakeSumDivisibleByPPrefixSum : IMakeSumDivisibleByP
 {
     /// <summary>
     ///     Time complexity - O(n)

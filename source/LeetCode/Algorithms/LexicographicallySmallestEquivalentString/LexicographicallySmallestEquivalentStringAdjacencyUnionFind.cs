@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.LexicographicallySmallestEquivalentString;
 
 /// <inheritdoc />
-public class LexicographicallySmallestEquivalentStringAdjacencyUnionFind : ILexicographicallySmallestEquivalentString
+public sealed class LexicographicallySmallestEquivalentStringAdjacencyUnionFind : ILexicographicallySmallestEquivalentString
 {
     private const int Length = 'z' - 'a' + 1;
 

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation;
 namespace LeetCode.Tests.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation;
 
 [TestClass]
-public class MaximumBeautyOfAnArrayAfterApplyingOperationLineSweepTests :
+public sealed class MaximumBeautyOfAnArrayAfterApplyingOperationLineSweepTests :
     MaximumBeautyOfAnArrayAfterApplyingOperationTestsBase<MaximumBeautyOfAnArrayAfterApplyingOperationLineSweep>;

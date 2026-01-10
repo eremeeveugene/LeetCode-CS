@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SwimInRisingWater;
 namespace LeetCode.Tests.Algorithms.SwimInRisingWater;
 
 [TestClass]
-public class SwimInRisingWaterPriorityQueueTests : SwimInRisingWaterTestsBase<SwimInRisingWaterPriorityQueue>;
+public sealed class SwimInRisingWaterPriorityQueueTests : SwimInRisingWaterTestsBase<SwimInRisingWaterPriorityQueue>;

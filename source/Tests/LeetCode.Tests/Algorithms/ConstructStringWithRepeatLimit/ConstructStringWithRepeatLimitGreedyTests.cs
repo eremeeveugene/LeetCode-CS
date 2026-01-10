@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ConstructStringWithRepeatLimit;
 namespace LeetCode.Tests.Algorithms.ConstructStringWithRepeatLimit;
 
 [TestClass]
-public class ConstructStringWithRepeatLimitGreedyTests :
+public sealed class ConstructStringWithRepeatLimitGreedyTests :
     ConstructStringWithRepeatLimitTestsBase<ConstructStringWithRepeatLimitGreedy>;

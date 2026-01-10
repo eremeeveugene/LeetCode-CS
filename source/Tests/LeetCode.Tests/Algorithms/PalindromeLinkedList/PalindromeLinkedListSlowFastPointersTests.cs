@@ -14,5 +14,5 @@ using LeetCode.Algorithms.PalindromeLinkedList;
 namespace LeetCode.Tests.Algorithms.PalindromeLinkedList;
 
 [TestClass]
-public class PalindromeLinkedListSlowFastPointersTests :
+public sealed class PalindromeLinkedListSlowFastPointersTests :
     PalindromeLinkedListTestsBase<PalindromeLinkedListSlowFastPointers>;

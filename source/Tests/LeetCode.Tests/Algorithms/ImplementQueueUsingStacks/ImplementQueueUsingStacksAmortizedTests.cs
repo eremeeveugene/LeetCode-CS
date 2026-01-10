@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ImplementQueueUsingStacks;
 namespace LeetCode.Tests.Algorithms.ImplementQueueUsingStacks;
 
 [TestClass]
-public class ImplementQueueUsingStacksAmortizedTests :
+public sealed class ImplementQueueUsingStacksAmortizedTests :
     ImplementQueueUsingStacksTestsBase<ImplementQueueUsingStacksAmortized>;

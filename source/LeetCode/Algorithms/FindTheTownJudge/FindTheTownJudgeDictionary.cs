@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheTownJudge;
 
 /// <inheritdoc />
-public class FindTheTownJudgeDictionary : IFindTheTownJudge
+public sealed class FindTheTownJudgeDictionary : IFindTheTownJudge
 {
     /// <summary>
     ///     Time complexity - O(n + t)

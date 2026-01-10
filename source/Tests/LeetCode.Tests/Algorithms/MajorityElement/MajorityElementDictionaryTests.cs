@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MajorityElement;
 namespace LeetCode.Tests.Algorithms.MajorityElement;
 
 [TestClass]
-public class MajorityElementDictionaryTests : MajorityElementTestsBase<MajorityElementDictionary>;
+public sealed class MajorityElementDictionaryTests : MajorityElementTestsBase<MajorityElementDictionary>;

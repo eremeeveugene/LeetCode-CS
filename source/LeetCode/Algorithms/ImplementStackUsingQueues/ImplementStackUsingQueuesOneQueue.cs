@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ImplementStackUsingQueues;
 
 /// <inheritdoc />
-public class ImplementStackUsingQueuesOneQueue : IImplementStackUsingQueues
+public sealed class ImplementStackUsingQueuesOneQueue : IImplementStackUsingQueues
 {
     private readonly Queue<int> _queue = new();
 

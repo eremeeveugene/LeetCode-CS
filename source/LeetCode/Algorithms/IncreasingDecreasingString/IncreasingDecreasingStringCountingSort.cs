@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.IncreasingDecreasingString;
 
 /// <inheritdoc />
-public class IncreasingDecreasingStringCountingSort : IIncreasingDecreasingString
+public sealed class IncreasingDecreasingStringCountingSort : IIncreasingDecreasingString
 {
     /// <summary>
     ///     Time complexity - O(n)

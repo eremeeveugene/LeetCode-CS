@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CountOfMatchesInTournament;
 namespace LeetCode.Tests.Algorithms.CountOfMatchesInTournament;
 
 [TestClass]
-public class
+public sealed class
     CountOfMatchesInTournamentConstantTests : CountOfMatchesInTournamentTestsBase<CountOfMatchesInTournamentConstant>;

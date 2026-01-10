@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FirstMissingPositive;
 namespace LeetCode.Tests.Algorithms.FirstMissingPositive;
 
 [TestClass]
-public class FirstMissingPositiveIterativeTests : FirstMissingPositiveTestsBase<FirstMissingPositiveIterative>;
+public sealed class FirstMissingPositiveIterativeTests : FirstMissingPositiveTestsBase<FirstMissingPositiveIterative>;

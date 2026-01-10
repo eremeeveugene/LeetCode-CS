@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FizzBuzz;
 
 /// <inheritdoc />
-public class FizzBuzzIterative : IFizzBuzz
+public sealed class FizzBuzzIterative : IFizzBuzz
 {
     /// <summary>
     ///     Time complexity - O(n)

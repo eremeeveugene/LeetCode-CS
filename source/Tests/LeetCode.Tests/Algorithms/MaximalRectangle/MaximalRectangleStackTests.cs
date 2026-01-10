@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MaximalRectangle;
 namespace LeetCode.Tests.Algorithms.MaximalRectangle;
 
 [TestClass]
-public class MaximalRectangleStackTests : MaximalRectangleTestsBase<MaximalRectangleStack>;
+public sealed class MaximalRectangleStackTests : MaximalRectangleTestsBase<MaximalRectangleStack>;

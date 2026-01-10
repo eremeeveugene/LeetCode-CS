@@ -14,4 +14,4 @@ using LeetCode.Algorithms.LargestTriangleArea;
 namespace LeetCode.Tests.Algorithms.LargestTriangleArea;
 
 [TestClass]
-public class LargestTriangleAreaBruteForceTests : LargestTriangleAreaTestsBase<LargestTriangleAreaBruteForce>;
+public sealed class LargestTriangleAreaBruteForceTests : LargestTriangleAreaTestsBase<LargestTriangleAreaBruteForce>;

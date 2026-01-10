@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SortAnArray;
 namespace LeetCode.Tests.Algorithms.SortAnArray;
 
 [TestClass]
-public class SortAnArrayMergeSortTests : SortAnArrayTestsBase<SortAnArrayMergeSort>;
+public sealed class SortAnArrayMergeSortTests : SortAnArrayTestsBase<SortAnArrayMergeSort>;

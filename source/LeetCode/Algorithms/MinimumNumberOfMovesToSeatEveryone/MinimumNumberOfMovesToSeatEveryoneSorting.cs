@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone;
 
 /// <inheritdoc />
-public class MinimumNumberOfMovesToSeatEveryoneSorting : IMinimumNumberOfMovesToSeatEveryone
+public sealed class MinimumNumberOfMovesToSeatEveryoneSorting : IMinimumNumberOfMovesToSeatEveryone
 {
     /// <summary>
     ///     Time complexity - O(n log n)

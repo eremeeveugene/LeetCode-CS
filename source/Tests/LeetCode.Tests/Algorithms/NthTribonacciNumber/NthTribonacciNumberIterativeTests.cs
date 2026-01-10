@@ -14,4 +14,4 @@ using LeetCode.Algorithms.NthTribonacciNumber;
 namespace LeetCode.Tests.Algorithms.NthTribonacciNumber;
 
 [TestClass]
-public class NthTribonacciNumberIterativeTests : NthTribonacciNumberTestsBase<NthTribonacciNumberIterative>;
+public sealed class NthTribonacciNumberIterativeTests : NthTribonacciNumberTestsBase<NthTribonacciNumberIterative>;

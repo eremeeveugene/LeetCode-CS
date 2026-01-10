@@ -14,7 +14,7 @@ using LeetCode.Algorithms.GuessNumberHigherOrLower;
 namespace LeetCode.Tests.Algorithms.GuessNumberHigherOrLower;
 
 [TestClass]
-public class GuessNumberHigherOrLowerBinarySearchTests : GuessNumberHigherOrLowerTestsBase
+public sealed class GuessNumberHigherOrLowerBinarySearchTests : GuessNumberHigherOrLowerTestsBase
 {
     protected override IGuessNumberHigherOrLower GetSolution(int pickedNumber)
     {

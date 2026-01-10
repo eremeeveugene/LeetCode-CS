@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.AssignCookies;
 
 /// <inheritdoc />
-public class AssignCookiesSorting : IAssignCookies
+public sealed class AssignCookiesSorting : IAssignCookies
 {
     /// <summary>
     ///     Time complexity - O(n log n + m log m)

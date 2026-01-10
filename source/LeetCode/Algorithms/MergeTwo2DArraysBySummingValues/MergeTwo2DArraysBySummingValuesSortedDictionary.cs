@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MergeTwo2DArraysBySummingValues;
 
 /// <inheritdoc />
-public class MergeTwo2DArraysBySummingValuesSortedDictionary : IMergeTwo2DArraysBySummingValues
+public sealed class MergeTwo2DArraysBySummingValuesSortedDictionary : IMergeTwo2DArraysBySummingValues
 {
     /// <summary>
     ///     Time complexity - O(n log n + m log m)

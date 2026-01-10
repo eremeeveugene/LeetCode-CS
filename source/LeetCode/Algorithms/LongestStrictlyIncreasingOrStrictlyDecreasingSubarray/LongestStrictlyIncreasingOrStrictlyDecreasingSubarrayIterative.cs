@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubarray;
 
 /// <inheritdoc />
-public class LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayIterative :
+public sealed class LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayIterative :
     ILongestStrictlyIncreasingOrStrictlyDecreasingSubarray
 {
     /// <summary>

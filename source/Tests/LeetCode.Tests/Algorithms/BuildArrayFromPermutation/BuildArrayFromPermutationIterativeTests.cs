@@ -14,5 +14,5 @@ using LeetCode.Algorithms.BuildArrayFromPermutation;
 namespace LeetCode.Tests.Algorithms.BuildArrayFromPermutation;
 
 [TestClass]
-public class
+public sealed class
     BuildArrayFromPermutationIterativeTests : BuildArrayFromPermutationTestsBase<BuildArrayFromPermutationIterative>;

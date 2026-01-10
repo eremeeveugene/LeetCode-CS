@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.FaultyKeyboard;
 
 /// <inheritdoc />
-public class FaultyKeyboardStringBuilder : IFaultyKeyboard
+public sealed class FaultyKeyboardStringBuilder : IFaultyKeyboard
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumOperationsToMakeTheIntegerZero;
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToMakeTheIntegerZero;
 
 [TestClass]
-public class MinimumOperationsToMakeTheIntegerZeroBitwiseTests :
+public sealed class MinimumOperationsToMakeTheIntegerZeroBitwiseTests :
     MinimumOperationsToMakeTheIntegerZeroTestsBase<MinimumOperationsToMakeTheIntegerZeroBitwise>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FibonacciNumber;
 namespace LeetCode.Tests.Algorithms.FibonacciNumber;
 
 [TestClass]
-public class FibonacciNumberMatrixExponentiationTests : FibonacciNumberTestsBase<FibonacciNumberMatrixExponentiation>;
+public sealed class FibonacciNumberMatrixExponentiationTests : FibonacciNumberTestsBase<FibonacciNumberMatrixExponentiation>;

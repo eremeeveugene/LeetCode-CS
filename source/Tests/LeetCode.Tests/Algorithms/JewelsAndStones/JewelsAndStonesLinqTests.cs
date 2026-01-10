@@ -14,4 +14,4 @@ using LeetCode.Algorithms.JewelsAndStones;
 namespace LeetCode.Tests.Algorithms.JewelsAndStones;
 
 [TestClass]
-public class JewelsAndStonesLinqTests : JewelsAndStonesTestsBase<JewelsAndStonesLinq>;
+public sealed class JewelsAndStonesLinqTests : JewelsAndStonesTestsBase<JewelsAndStonesLinq>;

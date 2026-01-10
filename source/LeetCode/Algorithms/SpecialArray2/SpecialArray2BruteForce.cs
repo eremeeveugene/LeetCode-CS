@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SpecialArray2;
 
 /// <inheritdoc />
-public class SpecialArray2BruteForce : ISpecialArray2
+public sealed class SpecialArray2BruteForce : ISpecialArray2
 {
     /// <summary>
     ///     Time complexity - O(m * n)

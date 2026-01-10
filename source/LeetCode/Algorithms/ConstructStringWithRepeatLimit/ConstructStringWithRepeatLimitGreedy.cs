@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ConstructStringWithRepeatLimit;
 
 /// <inheritdoc />
-public class ConstructStringWithRepeatLimitGreedy : IConstructStringWithRepeatLimit
+public sealed class ConstructStringWithRepeatLimitGreedy : IConstructStringWithRepeatLimit
 {
     /// <summary>
     ///     Time complexity - O(n)

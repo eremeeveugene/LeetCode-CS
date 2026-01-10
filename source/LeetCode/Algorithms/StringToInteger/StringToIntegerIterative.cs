@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.StringToInteger;
 
 /// <inheritdoc />
-public class StringToIntegerIterative : IStringToInteger
+public sealed class StringToIntegerIterative : IStringToInteger
 {
     /// <summary>
     ///     Time complexity - O(n)

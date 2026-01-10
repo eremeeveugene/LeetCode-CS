@@ -14,5 +14,5 @@ using LeetCode.Algorithms.PathWithMaximumProbability;
 namespace LeetCode.Tests.Algorithms.PathWithMaximumProbability;
 
 [TestClass]
-public class PathWithMaximumProbabilityDijkstraTests :
+public sealed class PathWithMaximumProbabilityDijkstraTests :
     PathWithMaximumProbabilityTestsBase<PathWithMaximumProbabilityDijkstra>;

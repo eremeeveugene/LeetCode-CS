@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ShortestSubarrayToBeRemovedToMakeArraySorted;
 
 /// <inheritdoc />
-public class ShortestSubarrayToBeRemovedToMakeArraySortedTwoPointers : IShortestSubarrayToBeRemovedToMakeArraySorted
+public sealed class ShortestSubarrayToBeRemovedToMakeArraySortedTwoPointers : IShortestSubarrayToBeRemovedToMakeArraySorted
 {
     /// <summary>
     ///     Time complexity - O(n)

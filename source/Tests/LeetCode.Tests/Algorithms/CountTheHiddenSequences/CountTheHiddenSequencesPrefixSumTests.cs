@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CountTheHiddenSequences;
 namespace LeetCode.Tests.Algorithms.CountTheHiddenSequences;
 
 [TestClass]
-public class CountTheHiddenSequencesPrefixSumTests :
+public sealed class CountTheHiddenSequencesPrefixSumTests :
     CountTheHiddenSequencesTestsBase<CountTheHiddenSequencesPrefixSum>;

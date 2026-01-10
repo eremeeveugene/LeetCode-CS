@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindMostFrequentVowelAndConsonant;
 
 /// <inheritdoc />
-public class FindMostFrequentVowelAndConsonantFrequencyDictionary : IFindMostFrequentVowelAndConsonant
+public sealed class FindMostFrequentVowelAndConsonantFrequencyDictionary : IFindMostFrequentVowelAndConsonant
 {
     /// <summary>
     ///     Time complexity - O(n)

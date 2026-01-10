@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindKthSmallestPairDistance;
 
 /// <inheritdoc />
-public class FindKthSmallestPairDistanceBinarySearchWithSlidingWindow : IFindKthSmallestPairDistance
+public sealed class FindKthSmallestPairDistanceBinarySearchWithSlidingWindow : IFindKthSmallestPairDistance
 {
     /// <summary>
     ///     Time complexity - O(n log n + n log (max(nums)))

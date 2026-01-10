@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.InsertDeleteGetRandom;
 
 /// <inheritdoc />
-public class InsertDeleteGetRandomDictionaryList : IInsertDeleteGetRandom
+public sealed class InsertDeleteGetRandomDictionaryList : IInsertDeleteGetRandom
 {
     private static readonly Random Random = new();
     private readonly List<int> _values = [];

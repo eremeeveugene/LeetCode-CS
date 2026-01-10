@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.GenerateTagForVideoCaption;
 
 /// <inheritdoc />
-public class GenerateTagForVideoCaptionStringBuilder : IGenerateTagForVideoCaption
+public sealed class GenerateTagForVideoCaptionStringBuilder : IGenerateTagForVideoCaption
 {
     /// <summary>
     ///     Time complexity - O(n)

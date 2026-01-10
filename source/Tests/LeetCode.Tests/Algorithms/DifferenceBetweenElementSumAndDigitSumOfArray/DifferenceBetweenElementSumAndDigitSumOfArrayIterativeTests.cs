@@ -14,5 +14,5 @@ using LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray;
 namespace LeetCode.Tests.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray;
 
 [TestClass]
-public class DifferenceBetweenElementSumAndDigitSumOfArrayIterativeTests :
+public sealed class DifferenceBetweenElementSumAndDigitSumOfArrayIterativeTests :
     DifferenceBetweenElementSumAndDigitSumOfArrayTestsBase<DifferenceBetweenElementSumAndDigitSumOfArrayIterative>;

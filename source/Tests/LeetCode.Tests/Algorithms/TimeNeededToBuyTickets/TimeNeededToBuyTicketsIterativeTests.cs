@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TimeNeededToBuyTickets;
 namespace LeetCode.Tests.Algorithms.TimeNeededToBuyTickets;
 
 [TestClass]
-public class TimeNeededToBuyTicketsIterativeTests : TimeNeededToBuyTicketsTestsBase<TimeNeededToBuyTicketsIterative>;
+public sealed class TimeNeededToBuyTicketsIterativeTests : TimeNeededToBuyTicketsTestsBase<TimeNeededToBuyTicketsIterative>;

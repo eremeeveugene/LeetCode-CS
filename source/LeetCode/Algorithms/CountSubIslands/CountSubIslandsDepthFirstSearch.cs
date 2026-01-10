@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountSubIslands;
 
 /// <inheritdoc />
-public class CountSubIslandsDepthFirstSearch : ICountSubIslands
+public sealed class CountSubIslandsDepthFirstSearch : ICountSubIslands
 {
     /// <summary>
     ///     Time complexity - O(m * n)

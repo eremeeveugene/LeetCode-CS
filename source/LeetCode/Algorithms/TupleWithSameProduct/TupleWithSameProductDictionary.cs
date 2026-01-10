@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TupleWithSameProduct;
 
 /// <inheritdoc />
-public class TupleWithSameProductDictionary : ITupleWithSameProduct
+public sealed class TupleWithSameProductDictionary : ITupleWithSameProduct
 {
     /// <summary>
     ///     Time complexity - O(n^2)

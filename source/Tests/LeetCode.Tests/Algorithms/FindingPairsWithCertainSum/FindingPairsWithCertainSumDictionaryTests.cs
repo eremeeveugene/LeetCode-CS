@@ -14,7 +14,7 @@ using LeetCode.Algorithms.FindingPairsWithCertainSum;
 namespace LeetCode.Tests.Algorithms.FindingPairsWithCertainSum;
 
 [TestClass]
-public class FindingPairsWithCertainSumDictionaryTests : FindingPairsWithCertainSumTestsBase
+public sealed class FindingPairsWithCertainSumDictionaryTests : FindingPairsWithCertainSumTestsBase
 {
     protected override IFindingPairsWithCertainSum GetSolution(int[] nums1, int[] nums2)
     {

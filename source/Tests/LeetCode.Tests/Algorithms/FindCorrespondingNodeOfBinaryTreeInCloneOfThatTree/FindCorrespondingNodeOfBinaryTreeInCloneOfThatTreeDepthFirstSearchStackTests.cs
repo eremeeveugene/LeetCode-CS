@@ -14,6 +14,6 @@ using LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree;
 namespace LeetCode.Tests.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree;
 
 [TestClass]
-public class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStackTests :
+public sealed class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStackTests :
     FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeTestsBase<
         FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStack>;

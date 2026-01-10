@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ConvertTheTemperature;
 namespace LeetCode.Tests.Algorithms.ConvertTheTemperature;
 
 [TestClass]
-public class ConvertTheTemperatureMathTests : ConvertTheTemperatureTestsBase<ConvertTheTemperatureMath>;
+public sealed class ConvertTheTemperatureMathTests : ConvertTheTemperatureTestsBase<ConvertTheTemperatureMath>;

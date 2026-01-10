@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ShortestSubarrayWithSumAtLeastK;
 
 /// <inheritdoc />
-public class ShortestSubarrayWithSumAtLeastKLinkedList : IShortestSubarrayWithSumAtLeastK
+public sealed class ShortestSubarrayWithSumAtLeastKLinkedList : IShortestSubarrayWithSumAtLeastK
 {
     /// <summary>
     ///     Time complexity - O(n)

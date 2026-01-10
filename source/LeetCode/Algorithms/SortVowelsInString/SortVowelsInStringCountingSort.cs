@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SortVowelsInString;
 
 /// <inheritdoc />
-public class SortVowelsInStringCountingSort : ISortVowelsInString
+public sealed class SortVowelsInStringCountingSort : ISortVowelsInString
 {
     private const string VowelOrder = "AEIOUaeiou";
 

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignAnOrderedStream;
 
 /// <inheritdoc />
-public class DesignAnOrderedStreamArray : IDesignAnOrderedStream
+public sealed class DesignAnOrderedStreamArray : IDesignAnOrderedStream
 {
     private readonly string?[] _stream;
     private int _pointer;

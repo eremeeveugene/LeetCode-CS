@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LargestNumber;
 
 /// <inheritdoc />
-public class LargestNumberConcatenationSorting : ILargestNumber
+public sealed class LargestNumberConcatenationSorting : ILargestNumber
 {
     /// <summary>
     ///     Time complexity - O(n log n * k), where n is the number of numbers and k is the number of digits in the largest

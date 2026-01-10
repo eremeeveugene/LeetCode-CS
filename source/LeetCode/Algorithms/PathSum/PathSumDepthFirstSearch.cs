@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.PathSum;
 
 /// <inheritdoc />
-public class PathSumDepthFirstSearch : IPathSum
+public sealed class PathSumDepthFirstSearch : IPathSum
 {
     /// <summary>
     ///     Time complexity - O(n)

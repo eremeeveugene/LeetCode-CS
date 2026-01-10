@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.IntegerToEnglishWords;
 
 /// <inheritdoc />
-public class IntegerToEnglishWordsRecursive : IIntegerToEnglishWords
+public sealed class IntegerToEnglishWordsRecursive : IIntegerToEnglishWords
 {
     private const string Space = " ";
     private const string Hundred = "Hundred";

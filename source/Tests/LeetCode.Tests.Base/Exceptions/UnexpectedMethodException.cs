@@ -14,7 +14,7 @@ using System.Diagnostics.CodeAnalysis;
 namespace LeetCode.Tests.Base.Exceptions;
 
 [ExcludeFromCodeCoverage]
-public class UnexpectedMethodException : InvalidOperationException
+public sealed class UnexpectedMethodException : InvalidOperationException
 {
     public UnexpectedMethodException(string name) : base($"Unexpected method '{name}' at index.")
     {

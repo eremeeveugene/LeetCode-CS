@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MaximumAverageSubarray1;
 namespace LeetCode.Tests.Algorithms.MaximumAverageSubarray1;
 
 [TestClass]
-public class MaximumAverageSubarray1SlidingWindowTests :
+public sealed class MaximumAverageSubarray1SlidingWindowTests :
     MaximumAverageSubarray1TestsBase<MaximumAverageSubarray1SlidingWindow>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ShuffleString;
 
 /// <inheritdoc />
-public class ShuffleStringIterative : IShuffleString
+public sealed class ShuffleStringIterative : IShuffleString
 {
     /// <summary>
     ///     Time complexity - O(n)

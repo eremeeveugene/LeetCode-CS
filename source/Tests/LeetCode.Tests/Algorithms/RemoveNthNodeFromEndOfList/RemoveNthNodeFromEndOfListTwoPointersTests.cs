@@ -14,5 +14,5 @@ using LeetCode.Algorithms.RemoveNthNodeFromEndOfList;
 namespace LeetCode.Tests.Algorithms.RemoveNthNodeFromEndOfList;
 
 [TestClass]
-public class RemoveNthNodeFromEndOfListTwoPointersTests : RemoveNthNodeFromEndOfListTestsBase<
+public sealed class RemoveNthNodeFromEndOfListTwoPointersTests : RemoveNthNodeFromEndOfListTestsBase<
     RemoveNthNodeFromEndOfListTwoPointers>;

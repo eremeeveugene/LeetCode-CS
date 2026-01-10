@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ArrangingCoins;
 namespace LeetCode.Tests.Algorithms.ArrangingCoins;
 
 [TestClass]
-public class ArrangingCoinsIterativeTests : ArrangingCoinsTestsBase<ArrangingCoinsIterative>;
+public sealed class ArrangingCoinsIterativeTests : ArrangingCoinsTestsBase<ArrangingCoinsIterative>;

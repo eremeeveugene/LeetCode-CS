@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ConstructStringWithRepeatLimit;
 namespace LeetCode.Tests.Algorithms.ConstructStringWithRepeatLimit;
 
 [TestClass]
-public class ConstructStringWithRepeatLimitPriorityQueueTests :
+public sealed class ConstructStringWithRepeatLimitPriorityQueueTests :
     ConstructStringWithRepeatLimitTestsBase<ConstructStringWithRepeatLimitPriorityQueue>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SetMismatch;
 namespace LeetCode.Tests.Algorithms.SetMismatch;
 
 [TestClass]
-public class SetMismatchHashSetTests : SetMismatchTestsBase<SetMismatchHashSet>;
+public sealed class SetMismatchHashSetTests : SetMismatchTestsBase<SetMismatchHashSet>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SortTheMatrixDiagonally;
 
 /// <inheritdoc />
-public class SortTheMatrixDiagonallyFrequencyArray : ISortTheMatrixDiagonally
+public sealed class SortTheMatrixDiagonallyFrequencyArray : ISortTheMatrixDiagonally
 {
     /// <summary>
     ///     Time complexity - O(n * m)

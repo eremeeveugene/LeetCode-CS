@@ -14,7 +14,7 @@ using LeetCode.Algorithms.RomanToInteger.Iterative;
 namespace LeetCode.Algorithms.RomanToInteger;
 
 /// <inheritdoc />
-public class RomanToIntegerIterative : IRomanToInteger
+public sealed class RomanToIntegerIterative : IRomanToInteger
 {
     /// <summary>
     ///     Time complexity - O(n)

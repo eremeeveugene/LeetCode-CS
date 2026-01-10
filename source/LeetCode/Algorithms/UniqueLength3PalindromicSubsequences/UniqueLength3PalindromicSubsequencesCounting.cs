@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.UniqueLength3PalindromicSubsequences;
 
 /// <inheritdoc />
-public class UniqueLength3PalindromicSubsequencesCounting : IUniqueLength3PalindromicSubsequences
+public sealed class UniqueLength3PalindromicSubsequencesCounting : IUniqueLength3PalindromicSubsequences
 {
     private const int AlphabetLength = 'z' - 'a' + 1;
 

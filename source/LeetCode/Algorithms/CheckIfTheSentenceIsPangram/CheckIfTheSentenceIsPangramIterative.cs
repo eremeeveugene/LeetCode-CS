@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfTheSentenceIsPangram;
 
 /// <inheritdoc />
-public class CheckIfTheSentenceIsPangramIterative : ICheckIfTheSentenceIsPangram
+public sealed class CheckIfTheSentenceIsPangramIterative : ICheckIfTheSentenceIsPangram
 {
     /// <summary>
     ///     Time complexity - O(n)

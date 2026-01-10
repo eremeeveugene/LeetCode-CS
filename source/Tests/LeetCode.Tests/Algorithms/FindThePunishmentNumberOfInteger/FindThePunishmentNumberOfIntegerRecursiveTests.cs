@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindThePunishmentNumberOfInteger;
 namespace LeetCode.Tests.Algorithms.FindThePunishmentNumberOfInteger;
 
 [TestClass]
-public class FindThePunishmentNumberOfIntegerRecursiveTests :
+public sealed class FindThePunishmentNumberOfIntegerRecursiveTests :
     FindThePunishmentNumberOfIntegerTestsBase<FindThePunishmentNumberOfIntegerRecursive>;

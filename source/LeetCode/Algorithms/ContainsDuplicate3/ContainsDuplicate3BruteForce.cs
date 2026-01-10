@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ContainsDuplicate3;
 
 /// <inheritdoc />
-public class ContainsDuplicate3BruteForce : IContainsDuplicate3
+public sealed class ContainsDuplicate3BruteForce : IContainsDuplicate3
 {
     /// <summary>
     ///     Time complexity - O(n^2)

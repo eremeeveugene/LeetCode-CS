@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TrionicArray1;
 
 /// <inheritdoc />
-public class TrionicArray1Iterative : ITrionicArray1
+public sealed class TrionicArray1Iterative : ITrionicArray1
 {
     /// <summary>
     ///     Time complexity - O(n)

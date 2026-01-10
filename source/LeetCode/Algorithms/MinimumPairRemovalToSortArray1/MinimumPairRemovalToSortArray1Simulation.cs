@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumPairRemovalToSortArray1;
 
 /// <inheritdoc />
-public class MinimumPairRemovalToSortArray1Simulation : IMinimumPairRemovalToSortArray1
+public sealed class MinimumPairRemovalToSortArray1Simulation : IMinimumPairRemovalToSortArray1
 {
     /// <summary>
     ///     Time complexity - O(n^2)

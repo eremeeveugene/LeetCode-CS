@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.Convert1DArrayInto2DArray;
 
 /// <inheritdoc />
-public class Convert1DArrayInto2DArraySimulation : IConvert1DArrayInto2DArray
+public sealed class Convert1DArrayInto2DArraySimulation : IConvert1DArrayInto2DArray
 {
     /// <summary>
     ///     Time complexity - O(m * n)

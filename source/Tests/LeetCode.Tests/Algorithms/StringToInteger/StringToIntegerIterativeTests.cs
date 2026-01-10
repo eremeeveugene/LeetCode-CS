@@ -14,4 +14,4 @@ using LeetCode.Algorithms.StringToInteger;
 namespace LeetCode.Tests.Algorithms.StringToInteger;
 
 [TestClass]
-public class StringToIntegerIterativeTests : StringToIntegerTestsBase<StringToIntegerIterative>;
+public sealed class StringToIntegerIterativeTests : StringToIntegerTestsBase<StringToIntegerIterative>;

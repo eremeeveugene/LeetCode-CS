@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SumOfAllSubsetXORTotals;
 
 /// <inheritdoc />
-public class SumOfAllSubsetXORTotalsRecursive : ISumOfAllSubsetXORTotals
+public sealed class SumOfAllSubsetXORTotalsRecursive : ISumOfAllSubsetXORTotals
 {
     /// <summary>
     ///     Time complexity - O(2^n)

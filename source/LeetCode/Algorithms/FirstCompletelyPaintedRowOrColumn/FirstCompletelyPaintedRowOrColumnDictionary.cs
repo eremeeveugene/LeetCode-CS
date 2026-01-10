@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FirstCompletelyPaintedRowOrColumn;
 
 /// <inheritdoc />
-public class FirstCompletelyPaintedRowOrColumnDictionary : IFirstCompletelyPaintedRowOrColumn
+public sealed class FirstCompletelyPaintedRowOrColumnDictionary : IFirstCompletelyPaintedRowOrColumn
 {
     /// <summary>
     ///     Time complexity - O(m * n)

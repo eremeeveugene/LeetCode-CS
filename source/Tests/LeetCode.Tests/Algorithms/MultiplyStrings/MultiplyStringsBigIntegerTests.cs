@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MultiplyStrings;
 namespace LeetCode.Tests.Algorithms.MultiplyStrings;
 
 [TestClass]
-public class MultiplyStringsBigIntegerTests : MultiplyStringsTestsBase<MultiplyStringsBigInteger>;
+public sealed class MultiplyStringsBigIntegerTests : MultiplyStringsTestsBase<MultiplyStringsBigInteger>;

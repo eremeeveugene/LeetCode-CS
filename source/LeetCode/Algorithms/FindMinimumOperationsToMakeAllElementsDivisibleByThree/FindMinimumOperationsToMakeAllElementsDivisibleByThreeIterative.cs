@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree;
 
 /// <inheritdoc />
-public class FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterative :
+public sealed class FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterative :
     IFindMinimumOperationsToMakeAllElementsDivisibleByThree
 {
     /// <summary>

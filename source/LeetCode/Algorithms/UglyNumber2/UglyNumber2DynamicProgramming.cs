@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.UglyNumber2;
 
 /// <inheritdoc />
-public class UglyNumber2DynamicProgramming : IUglyNumber2
+public sealed class UglyNumber2DynamicProgramming : IUglyNumber2
 {
     /// <summary>
     ///     Time complexity - O(n)

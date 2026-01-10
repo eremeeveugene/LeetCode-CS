@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.BinarySearch;
 
 /// <inheritdoc />
-public class BinarySearchLowerBound : IBinarySearch
+public sealed class BinarySearchLowerBound : IBinarySearch
 {
     /// <summary>
     ///     Time complexity - O(log n)

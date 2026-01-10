@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfSeniorCitizens;
 
 /// <inheritdoc />
-public class NumberOfSeniorCitizensCharacterComparison : INumberOfSeniorCitizens
+public sealed class NumberOfSeniorCitizensCharacterComparison : INumberOfSeniorCitizens
 {
     /// <summary>
     ///     Time complexity - O(n)

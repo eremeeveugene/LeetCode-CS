@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SubarrayProductLessThanK;
 
 /// <inheritdoc />
-public class SubarrayProductLessThanKTwoPointers : ISubarrayProductLessThanK
+public sealed class SubarrayProductLessThanKTwoPointers : ISubarrayProductLessThanK
 {
     /// <summary>
     ///     Time complexity - O(n)

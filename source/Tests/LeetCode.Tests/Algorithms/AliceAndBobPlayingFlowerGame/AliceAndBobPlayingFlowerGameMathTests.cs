@@ -14,5 +14,5 @@ using LeetCode.Algorithms.AliceAndBobPlayingFlowerGame;
 namespace LeetCode.Tests.Algorithms.AliceAndBobPlayingFlowerGame;
 
 [TestClass]
-public class AliceAndBobPlayingFlowerGameMathTests :
+public sealed class AliceAndBobPlayingFlowerGameMathTests :
     AliceAndBobPlayingFlowerGameTestsBase<AliceAndBobPlayingFlowerGameMath>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LongestBinarySubsequenceLessThanOrEqualToK;
 
 /// <inheritdoc />
-public class LongestBinarySubsequenceLessThanOrEqualToKGreedy : ILongestBinarySubsequenceLessThanOrEqualToK
+public sealed class LongestBinarySubsequenceLessThanOrEqualToKGreedy : ILongestBinarySubsequenceLessThanOrEqualToK
 {
     /// <summary>
     ///     Time complexity - O(n)

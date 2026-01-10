@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SpecialArray2;
 namespace LeetCode.Tests.Algorithms.SpecialArray2;
 
 [TestClass]
-public class SpecialArray2BruteForceTests : SpecialArray2TestsBase<SpecialArray2BruteForce>;
+public sealed class SpecialArray2BruteForceTests : SpecialArray2TestsBase<SpecialArray2BruteForce>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.BuildArrayFromPermutation;
 
 /// <inheritdoc />
-public class BuildArrayFromPermutationIterative : IBuildArrayFromPermutation
+public sealed class BuildArrayFromPermutationIterative : IBuildArrayFromPermutation
 {
     /// <summary>
     ///     Time complexity - O(n)

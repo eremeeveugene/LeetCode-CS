@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SplitTheArray;
 namespace LeetCode.Tests.Algorithms.SplitTheArray;
 
 [TestClass]
-public class SplitTheArrayFrequencyArrayTests : SplitTheArrayTestsBase<SplitTheArrayFrequencyArray>;
+public sealed class SplitTheArrayFrequencyArrayTests : SplitTheArrayTestsBase<SplitTheArrayFrequencyArray>;

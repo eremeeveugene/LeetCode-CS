@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumAddToMakeParenthesesValid;
 
 /// <inheritdoc />
-public class MinimumAddToMakeParenthesesValidIterative : IMinimumAddToMakeParenthesesValid
+public sealed class MinimumAddToMakeParenthesesValidIterative : IMinimumAddToMakeParenthesesValid
 {
     /// <summary>
     ///     Time complexity - O(n)

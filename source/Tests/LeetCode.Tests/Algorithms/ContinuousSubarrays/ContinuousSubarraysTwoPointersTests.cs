@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ContinuousSubarrays;
 namespace LeetCode.Tests.Algorithms.ContinuousSubarrays;
 
 [TestClass]
-public class ContinuousSubarraysTwoPointersTests : ContinuousSubarraysTestsBase<ContinuousSubarraysTwoPointers>;
+public sealed class ContinuousSubarraysTwoPointersTests : ContinuousSubarraysTestsBase<ContinuousSubarraysTwoPointers>;

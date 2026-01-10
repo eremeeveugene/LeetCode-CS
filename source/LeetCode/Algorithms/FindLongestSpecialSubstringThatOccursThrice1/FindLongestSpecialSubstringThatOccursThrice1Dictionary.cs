@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.FindLongestSpecialSubstringThatOccursThrice1;
 
 /// <inheritdoc />
-public class FindLongestSpecialSubstringThatOccursThrice1Dictionary : IFindLongestSpecialSubstringThatOccursThrice1
+public sealed class FindLongestSpecialSubstringThatOccursThrice1Dictionary : IFindLongestSpecialSubstringThatOccursThrice1
 {
     /// <summary>
     ///     Time complexity - O(n^2)

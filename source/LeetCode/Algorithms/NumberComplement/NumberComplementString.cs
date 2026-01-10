@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.NumberComplement;
 
 /// <inheritdoc />
-public class NumberComplementString : INumberComplement
+public sealed class NumberComplementString : INumberComplement
 {
     /// <summary>
     ///     Time complexity - O(log n)

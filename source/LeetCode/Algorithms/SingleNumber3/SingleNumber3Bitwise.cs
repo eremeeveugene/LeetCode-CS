@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SingleNumber3;
 
 /// <inheritdoc />
-public class SingleNumber3Bitwise : ISingleNumber3
+public sealed class SingleNumber3Bitwise : ISingleNumber3
 {
     /// <summary>
     ///     Time complexity - O(n)

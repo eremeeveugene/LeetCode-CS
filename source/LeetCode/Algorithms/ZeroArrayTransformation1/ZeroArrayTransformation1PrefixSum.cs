@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ZeroArrayTransformation1;
 
 /// <inheritdoc />
-public class ZeroArrayTransformation1PrefixSum : IZeroArrayTransformation1
+public sealed class ZeroArrayTransformation1PrefixSum : IZeroArrayTransformation1
 {
     /// <summary>
     ///     Time complexity - O(n + m)

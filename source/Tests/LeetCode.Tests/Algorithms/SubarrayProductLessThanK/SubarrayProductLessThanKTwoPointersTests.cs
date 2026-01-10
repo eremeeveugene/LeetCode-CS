@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SubarrayProductLessThanK;
 namespace LeetCode.Tests.Algorithms.SubarrayProductLessThanK;
 
 [TestClass]
-public class SubarrayProductLessThanKTwoPointersTests :
+public sealed class SubarrayProductLessThanKTwoPointersTests :
     SubarrayProductLessThanKTestsBase<SubarrayProductLessThanKTwoPointers>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.Maximum69Number;
 namespace LeetCode.Tests.Algorithms.Maximum69Number;
 
 [TestClass]
-public class Maximum69NumberIterativeTests : Maximum69NumberTestsBase<Maximum69NumberIterative>;
+public sealed class Maximum69NumberIterativeTests : Maximum69NumberTestsBase<Maximum69NumberIterative>;

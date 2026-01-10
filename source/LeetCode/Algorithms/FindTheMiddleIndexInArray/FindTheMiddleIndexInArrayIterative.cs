@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheMiddleIndexInArray;
 
 /// <inheritdoc />
-public class FindTheMiddleIndexInArrayIterative : IFindTheMiddleIndexInArray
+public sealed class FindTheMiddleIndexInArrayIterative : IFindTheMiddleIndexInArray
 {
     /// <summary>
     ///     Time complexity - O(n)

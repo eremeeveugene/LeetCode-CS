@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimizedMaximumOfProductsDistributedToAnyStore;
 
 /// <inheritdoc />
-public class
+public sealed class
     MinimizedMaximumOfProductsDistributedToAnyStoreBinarySearch : IMinimizedMaximumOfProductsDistributedToAnyStore
 {
     /// <summary>

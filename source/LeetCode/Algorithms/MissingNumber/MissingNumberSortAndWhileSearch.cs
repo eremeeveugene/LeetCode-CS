@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MissingNumber;
 
 /// <inheritdoc />
-public class MissingNumberSortAndWhileSearch : IMissingNumber
+public sealed class MissingNumberSortAndWhileSearch : IMissingNumber
 {
     /// <summary>
     ///     Time complexity - O(n log n)

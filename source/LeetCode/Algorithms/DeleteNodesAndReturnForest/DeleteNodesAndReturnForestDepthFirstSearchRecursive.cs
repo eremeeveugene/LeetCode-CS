@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.DeleteNodesAndReturnForest;
 
 /// <inheritdoc />
-public class DeleteNodesAndReturnForestDepthFirstSearchRecursive : IDeleteNodesAndReturnForest
+public sealed class DeleteNodesAndReturnForestDepthFirstSearchRecursive : IDeleteNodesAndReturnForest
 {
     /// <summary>
     ///     Time complexity - O(n + d)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MostCommonWord;
 namespace LeetCode.Tests.Algorithms.MostCommonWord;
 
 [TestClass]
-public class MostCommonWordDictionaryTests : MostCommonWordTestsBase<MostCommonWordDictionary>;
+public sealed class MostCommonWordDictionaryTests : MostCommonWordTestsBase<MostCommonWordDictionary>;

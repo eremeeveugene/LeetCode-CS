@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SmallestRangeCoveringElementsFromKLists;
 
 /// <inheritdoc />
-public class SmallestRangeCoveringElementsFromKListsSortingWithSlidingWindow : ISmallestRangeCoveringElementsFromKLists
+public sealed class SmallestRangeCoveringElementsFromKListsSortingWithSlidingWindow : ISmallestRangeCoveringElementsFromKLists
 {
     /// <summary>
     ///     Time complexity - O(n log n)

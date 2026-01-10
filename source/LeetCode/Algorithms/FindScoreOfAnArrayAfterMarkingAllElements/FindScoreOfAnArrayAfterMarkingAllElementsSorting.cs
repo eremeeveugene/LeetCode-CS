@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindScoreOfAnArrayAfterMarkingAllElements;
 
 /// <inheritdoc />
-public class FindScoreOfAnArrayAfterMarkingAllElementsSorting : IFindScoreOfAnArrayAfterMarkingAllElements
+public sealed class FindScoreOfAnArrayAfterMarkingAllElementsSorting : IFindScoreOfAnArrayAfterMarkingAllElements
 {
     /// <summary>
     ///     Time complexity - O(n log n)

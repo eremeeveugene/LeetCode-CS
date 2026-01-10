@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindPivotIndex;
 
 /// <inheritdoc />
-public class FindPivotIndexIterative : IFindPivotIndex
+public sealed class FindPivotIndexIterative : IFindPivotIndex
 {
     /// <summary>
     ///     Time complexity - O(n)

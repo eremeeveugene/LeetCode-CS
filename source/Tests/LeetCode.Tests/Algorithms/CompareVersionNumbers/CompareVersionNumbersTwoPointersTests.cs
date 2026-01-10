@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CompareVersionNumbers;
 namespace LeetCode.Tests.Algorithms.CompareVersionNumbers;
 
 [TestClass]
-public class CompareVersionNumbersTwoPointersTests : CompareVersionNumbersTestsBase<CompareVersionNumbersTwoPointers>;
+public sealed class CompareVersionNumbersTwoPointersTests : CompareVersionNumbersTestsBase<CompareVersionNumbersTwoPointers>;

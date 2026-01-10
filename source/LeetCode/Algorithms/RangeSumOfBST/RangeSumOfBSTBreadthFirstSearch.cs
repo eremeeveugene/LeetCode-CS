@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.RangeSumOfBST;
 
 /// <inheritdoc />
-public class RangeSumOfBSTBreadthFirstSearch : IRangeSumOfBST
+public sealed class RangeSumOfBSTBreadthFirstSearch : IRangeSumOfBST
 {
     /// <summary>
     ///     Time complexity - O(n)

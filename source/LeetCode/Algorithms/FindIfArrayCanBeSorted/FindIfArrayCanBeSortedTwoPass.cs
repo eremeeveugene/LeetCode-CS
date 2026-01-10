@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindIfArrayCanBeSorted;
 
 /// <inheritdoc />
-public class FindIfArrayCanBeSortedTwoPass : IFindIfArrayCanBeSorted
+public sealed class FindIfArrayCanBeSortedTwoPass : IFindIfArrayCanBeSorted
 {
     /// <summary>
     ///     Time complexity - O(n log k)

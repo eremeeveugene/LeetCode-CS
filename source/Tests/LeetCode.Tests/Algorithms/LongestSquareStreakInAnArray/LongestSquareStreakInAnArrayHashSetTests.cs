@@ -14,5 +14,5 @@ using LeetCode.Algorithms.LongestSquareStreakInAnArray;
 namespace LeetCode.Tests.Algorithms.LongestSquareStreakInAnArray;
 
 [TestClass]
-public class LongestSquareStreakInAnArrayHashSetTests :
+public sealed class LongestSquareStreakInAnArrayHashSetTests :
     LongestSquareStreakInAnArrayTestsBase<LongestSquareStreakInAnArrayHashSet>;

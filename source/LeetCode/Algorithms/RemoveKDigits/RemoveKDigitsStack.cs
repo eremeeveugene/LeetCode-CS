@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RemoveKDigits;
 
 /// <inheritdoc />
-public class RemoveKDigitsStack : IRemoveKDigits
+public sealed class RemoveKDigitsStack : IRemoveKDigits
 {
     /// <summary>
     ///     Time complexity - O(n)

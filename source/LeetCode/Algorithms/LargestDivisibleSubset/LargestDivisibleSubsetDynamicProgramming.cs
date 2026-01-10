@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LargestDivisibleSubset;
 
 /// <inheritdoc />
-public class LargestDivisibleSubsetDynamicProgramming : ILargestDivisibleSubset
+public sealed class LargestDivisibleSubsetDynamicProgramming : ILargestDivisibleSubset
 {
     /// <summary>
     ///     Time complexity - O(n^2)

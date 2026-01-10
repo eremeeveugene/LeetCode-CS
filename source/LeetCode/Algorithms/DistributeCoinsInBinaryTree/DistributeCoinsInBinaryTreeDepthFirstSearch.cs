@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.DistributeCoinsInBinaryTree;
 
 /// <inheritdoc />
-public class DistributeCoinsInBinaryTreeDepthFirstSearch : IDistributeCoinsInBinaryTree
+public sealed class DistributeCoinsInBinaryTreeDepthFirstSearch : IDistributeCoinsInBinaryTree
 {
     /// <summary>
     ///     Time complexity - O(n)

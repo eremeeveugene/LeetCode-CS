@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindThePivotInteger;
 
 /// <inheritdoc />
-public class FindThePivotIntegerIterative : IFindThePivotInteger
+public sealed class FindThePivotIntegerIterative : IFindThePivotInteger
 {
     /// <summary>
     ///     Time complexity - O(n log n)

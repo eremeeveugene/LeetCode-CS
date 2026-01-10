@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DistributeMoneyToMaximumChildren;
 
 /// <inheritdoc />
-public class DistributeMoneyToMaximumChildrenLinear : IDistributeMoneyToMaximumChildren
+public sealed class DistributeMoneyToMaximumChildrenLinear : IDistributeMoneyToMaximumChildren
 {
     /// <summary>
     ///     Time complexity - O(1)

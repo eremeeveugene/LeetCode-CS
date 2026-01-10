@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SortTheMatrixDiagonally;
 namespace LeetCode.Tests.Algorithms.SortTheMatrixDiagonally;
 
 [TestClass]
-public class SortTheMatrixDiagonallyFrequencyArrayTests :
+public sealed class SortTheMatrixDiagonallyFrequencyArrayTests :
     SortTheMatrixDiagonallyTestsBase<SortTheMatrixDiagonallyFrequencyArray>;

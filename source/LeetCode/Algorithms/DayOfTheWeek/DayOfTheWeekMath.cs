@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DayOfTheWeek;
 
 /// <inheritdoc />
-public class DayOfTheWeekMath : IDayOfTheWeek
+public sealed class DayOfTheWeekMath : IDayOfTheWeek
 {
     private readonly Dictionary<int, string> _weekDays = new()
     {

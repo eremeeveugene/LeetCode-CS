@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.AddTwoNumbers;
 
 /// <inheritdoc />
-public class AddTwoNumbersIterative : IAddTwoNumbers
+public sealed class AddTwoNumbersIterative : IAddTwoNumbers
 {
     /// <summary>
     ///     Time complexity - O(n + m), where n is the length of the list l1 and m is the length of the list l2

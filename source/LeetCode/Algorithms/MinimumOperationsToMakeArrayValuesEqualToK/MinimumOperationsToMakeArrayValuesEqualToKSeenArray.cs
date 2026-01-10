@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK;
 
 /// <inheritdoc />
-public class MinimumOperationsToMakeArrayValuesEqualToKSeenArray : IMinimumOperationsToMakeArrayValuesEqualToK
+public sealed class MinimumOperationsToMakeArrayValuesEqualToKSeenArray : IMinimumOperationsToMakeArrayValuesEqualToK
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.WordSearch;
 
 /// <inheritdoc />
-public class WordSearchRecursive : IWordSearch
+public sealed class WordSearchRecursive : IWordSearch
 {
     /// <summary>
     ///     Time complexity - O(m * n * 3^L), where m and n are the dimensions of the board and L is the length of the word

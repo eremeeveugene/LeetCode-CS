@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch;
 
 /// <inheritdoc />
-public class NumberOfStudentsUnableToEatLunchIterative : INumberOfStudentsUnableToEatLunch
+public sealed class NumberOfStudentsUnableToEatLunchIterative : INumberOfStudentsUnableToEatLunch
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignNeighborSumService;
 
 /// <inheritdoc />
-public class DesignNeighborSumServiceDictionary : IDesignNeighborSumService
+public sealed class DesignNeighborSumServiceDictionary : IDesignNeighborSumService
 {
     private readonly int[][] _grid;
     private readonly Dictionary<int, (int X, int Y)> _neighborsDictionary = [];

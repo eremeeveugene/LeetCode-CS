@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FindChampion2;
 namespace LeetCode.Tests.Algorithms.FindChampion2;
 
 [TestClass]
-public class FindChampion2HashSetTests : FindChampion2TestsBase<FindChampion2HashSet>;
+public sealed class FindChampion2HashSetTests : FindChampion2TestsBase<FindChampion2HashSet>;

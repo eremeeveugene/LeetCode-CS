@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MostBeautifulItemForEachQuery;
 
 /// <inheritdoc />
-public class MostBeautifulItemForEachQueryBinarySearch : IMostBeautifulItemForEachQuery
+public sealed class MostBeautifulItemForEachQueryBinarySearch : IMostBeautifulItemForEachQuery
 {
     /// <summary>
     ///     Time complexity - O((m + n) log m)

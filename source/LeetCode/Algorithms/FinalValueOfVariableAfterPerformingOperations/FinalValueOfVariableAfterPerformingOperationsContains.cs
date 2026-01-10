@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations;
 
 /// <inheritdoc />
-public class FinalValueOfVariableAfterPerformingOperationsContains : IFinalValueOfVariableAfterPerformingOperations
+public sealed class FinalValueOfVariableAfterPerformingOperationsContains : IFinalValueOfVariableAfterPerformingOperations
 {
     /// <summary>
     ///     Time complexity - O(n)

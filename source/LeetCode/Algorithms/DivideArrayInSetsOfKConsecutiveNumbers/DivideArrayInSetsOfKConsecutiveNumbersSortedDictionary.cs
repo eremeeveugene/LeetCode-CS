@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers;
 
 /// <inheritdoc />
-public class DivideArrayInSetsOfKConsecutiveNumbersSortedDictionary : IDivideArrayInSetsOfKConsecutiveNumbers
+public sealed class DivideArrayInSetsOfKConsecutiveNumbersSortedDictionary : IDivideArrayInSetsOfKConsecutiveNumbers
 {
     public bool IsPossibleDivide(int[] nums, int k)
     {

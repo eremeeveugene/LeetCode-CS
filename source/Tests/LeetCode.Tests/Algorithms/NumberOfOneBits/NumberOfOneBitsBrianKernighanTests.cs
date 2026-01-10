@@ -14,4 +14,4 @@ using LeetCode.Algorithms.NumberOfOneBits;
 namespace LeetCode.Tests.Algorithms.NumberOfOneBits;
 
 [TestClass]
-public class NumberOfOneBitsBrianKernighanTests : NumberOfOneBitsTestsBase<NumberOfOneBitsBrianKernighan>;
+public sealed class NumberOfOneBitsBrianKernighanTests : NumberOfOneBitsTestsBase<NumberOfOneBitsBrianKernighan>;

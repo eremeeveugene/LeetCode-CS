@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.DeleteLeavesWithGivenValue;
 
 /// <inheritdoc />
-public class DeleteLeavesWithGivenValueDepthFirstSearch : IDeleteLeavesWithGivenValue
+public sealed class DeleteLeavesWithGivenValueDepthFirstSearch : IDeleteLeavesWithGivenValue
 {
     /// <summary>
     ///     Time complexity - O(n)

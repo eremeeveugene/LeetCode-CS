@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.NaryTreePreorderTraversal;
 
 /// <inheritdoc />
-public class NaryTreePreorderTraversalRecursive : INaryTreePreorderTraversal
+public sealed class NaryTreePreorderTraversalRecursive : INaryTreePreorderTraversal
 {
     /// <summary>
     ///     Time complexity - O(n)

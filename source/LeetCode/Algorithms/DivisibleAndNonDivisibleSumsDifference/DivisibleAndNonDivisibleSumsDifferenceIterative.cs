@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference;
 
 /// <inheritdoc />
-public class DivisibleAndNonDivisibleSumsDifferenceIterative : IDivisibleAndNonDivisibleSumsDifference
+public sealed class DivisibleAndNonDivisibleSumsDifferenceIterative : IDivisibleAndNonDivisibleSumsDifference
 {
     /// <summary>
     ///     Time complexity - O(n)

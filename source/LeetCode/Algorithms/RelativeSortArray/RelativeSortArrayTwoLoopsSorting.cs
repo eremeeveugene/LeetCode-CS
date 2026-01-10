@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RelativeSortArray;
 
 /// <inheritdoc />
-public class RelativeSortArrayTwoLoopsSorting : IRelativeSortArray
+public sealed class RelativeSortArrayTwoLoopsSorting : IRelativeSortArray
 {
     /// <summary>
     ///     Time complexity - O(m * n + n log n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindNUniqueIntegersSumUpToZero;
 
 /// <inheritdoc />
-public class FindNUniqueIntegersSumUpToZeroIterative : IFindNUniqueIntegersSumUpToZero
+public sealed class FindNUniqueIntegersSumUpToZeroIterative : IFindNUniqueIntegersSumUpToZero
 {
     /// <summary>
     ///     Time complexity - O(n)

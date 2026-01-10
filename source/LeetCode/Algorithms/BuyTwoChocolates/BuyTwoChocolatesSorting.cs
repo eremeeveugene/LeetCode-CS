@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.BuyTwoChocolates;
 
 /// <inheritdoc />
-public class BuyTwoChocolatesSorting : IBuyTwoChocolates
+public sealed class BuyTwoChocolatesSorting : IBuyTwoChocolates
 {
     /// <summary>
     ///     Time complexity - O(n log n)

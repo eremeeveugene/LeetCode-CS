@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PerfectSquares;
 
 /// <inheritdoc />
-public class PerfectSquaresIterative : IPerfectSquares
+public sealed class PerfectSquaresIterative : IPerfectSquares
 {
     /// <summary>
     ///     Time complexity - O(n sqrt(n))

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ReverseOddLevelsOfBinaryTree;
 namespace LeetCode.Tests.Algorithms.ReverseOddLevelsOfBinaryTree;
 
 [TestClass]
-public class ReverseOddLevelsOfBinaryTreeStackDepthFirstSearchTests : ReverseOddLevelsOfBinaryTreeTestsBase<
+public sealed class ReverseOddLevelsOfBinaryTreeStackDepthFirstSearchTests : ReverseOddLevelsOfBinaryTreeTestsBase<
     ReverseOddLevelsOfBinaryTreeStackDepthFirstSearch>;

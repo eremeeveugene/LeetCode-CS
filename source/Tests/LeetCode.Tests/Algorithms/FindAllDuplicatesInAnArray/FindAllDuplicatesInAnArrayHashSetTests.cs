@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindAllDuplicatesInAnArray;
 namespace LeetCode.Tests.Algorithms.FindAllDuplicatesInAnArray;
 
 [TestClass]
-public class FindAllDuplicatesInAnArrayHashSetTests :
+public sealed class FindAllDuplicatesInAnArrayHashSetTests :
     FindAllDuplicatesInAnArrayTestsBase<FindAllDuplicatesInAnArrayHashSet>;

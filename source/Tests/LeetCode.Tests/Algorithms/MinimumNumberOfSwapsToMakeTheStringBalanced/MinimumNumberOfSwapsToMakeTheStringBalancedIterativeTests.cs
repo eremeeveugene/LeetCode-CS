@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced;
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced;
 
 [TestClass]
-public class MinimumNumberOfSwapsToMakeTheStringBalancedIterativeTests :
+public sealed class MinimumNumberOfSwapsToMakeTheStringBalancedIterativeTests :
     MinimumNumberOfSwapsToMakeTheStringBalancedTestsBase<MinimumNumberOfSwapsToMakeTheStringBalancedIterative>;

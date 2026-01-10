@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ShiftingLetters2;
 
 /// <inheritdoc />
-public class ShiftingLetters2DifferenceArray : IShiftingLetters2
+public sealed class ShiftingLetters2DifferenceArray : IShiftingLetters2
 {
     private const int LettersCount = 'z' - 'a' + 1;
 

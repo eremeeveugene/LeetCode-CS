@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumDominoRotationsForEqualRow;
 
 /// <inheritdoc />
-public class MinimumDominoRotationsForEqualRowGreedy : IMinimumDominoRotationsForEqualRow
+public sealed class MinimumDominoRotationsForEqualRowGreedy : IMinimumDominoRotationsForEqualRow
 {
     /// <summary>
     ///     Time complexity - O(n)

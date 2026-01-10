@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindIfPathExistsInGraph;
 
 /// <inheritdoc />
-public class FindIfPathExistsInGraphDepthFirstSearch : IFindIfPathExistsInGraph
+public sealed class FindIfPathExistsInGraphDepthFirstSearch : IFindIfPathExistsInGraph
 {
     /// <summary>
     ///     Time complexity - O(v + e), where v is the number of vertices and e is the number of edges

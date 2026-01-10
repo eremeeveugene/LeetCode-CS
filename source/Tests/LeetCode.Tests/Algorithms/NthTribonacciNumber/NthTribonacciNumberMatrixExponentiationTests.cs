@@ -14,6 +14,6 @@ using LeetCode.Algorithms.NthTribonacciNumber;
 namespace LeetCode.Tests.Algorithms.NthTribonacciNumber;
 
 [TestClass]
-public class
+public sealed class
     NthTribonacciNumberMatrixExponentiationTests : NthTribonacciNumberTestsBase<
     NthTribonacciNumberMatrixExponentiation>;

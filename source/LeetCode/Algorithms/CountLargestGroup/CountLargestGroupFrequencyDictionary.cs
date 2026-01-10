@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountLargestGroup;
 
 /// <inheritdoc />
-public class CountLargestGroupFrequencyDictionary : ICountLargestGroup
+public sealed class CountLargestGroupFrequencyDictionary : ICountLargestGroup
 {
     /// <summary>
     ///     Time complexity - O(n log n)

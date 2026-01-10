@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ZigzagGridTraversalWithSkip;
 
 /// <inheritdoc />
-public class ZigzagGridTraversalWithSkipSimulation : IZigzagGridTraversalWithSkip
+public sealed class ZigzagGridTraversalWithSkipSimulation : IZigzagGridTraversalWithSkip
 {
     /// <summary>
     ///     Time complexity - O(n*m)

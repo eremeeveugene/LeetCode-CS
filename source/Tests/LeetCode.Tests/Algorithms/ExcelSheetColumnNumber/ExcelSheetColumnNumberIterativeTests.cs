@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ExcelSheetColumnNumber;
 namespace LeetCode.Tests.Algorithms.ExcelSheetColumnNumber;
 
 [TestClass]
-public class ExcelSheetColumnNumberIterativeTests : ExcelSheetColumnNumberTestsBase<ExcelSheetColumnNumberIterative>;
+public sealed class ExcelSheetColumnNumberIterativeTests : ExcelSheetColumnNumberTestsBase<ExcelSheetColumnNumberIterative>;

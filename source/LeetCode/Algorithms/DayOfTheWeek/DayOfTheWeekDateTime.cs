@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DayOfTheWeek;
 
 /// <inheritdoc />
-public class DayOfTheWeekDateTime : IDayOfTheWeek
+public sealed class DayOfTheWeekDateTime : IDayOfTheWeek
 {
     /// <summary>
     ///     Time complexity - O(1)

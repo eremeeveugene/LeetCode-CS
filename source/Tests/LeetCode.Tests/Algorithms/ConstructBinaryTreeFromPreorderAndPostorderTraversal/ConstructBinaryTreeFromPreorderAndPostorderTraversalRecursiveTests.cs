@@ -14,6 +14,6 @@ using LeetCode.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTraversal;
 namespace LeetCode.Tests.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTraversal;
 
 [TestClass]
-public class ConstructBinaryTreeFromPreorderAndPostorderTraversalRecursiveTests :
+public sealed class ConstructBinaryTreeFromPreorderAndPostorderTraversalRecursiveTests :
     ConstructBinaryTreeFromPreorderAndPostorderTraversalTestsBase<
         ConstructBinaryTreeFromPreorderAndPostorderTraversalRecursive>;

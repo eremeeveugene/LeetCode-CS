@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountTotalNumberOfColoredCells;
 
 /// <inheritdoc />
-public class CountTotalNumberOfColoredCellsMath : ICountTotalNumberOfColoredCells
+public sealed class CountTotalNumberOfColoredCellsMath : ICountTotalNumberOfColoredCells
 {
     /// <summary>
     ///     Time complexity - O(1)

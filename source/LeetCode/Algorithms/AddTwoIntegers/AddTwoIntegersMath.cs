@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.AddTwoIntegers;
 
 /// <inheritdoc />
-public class AddTwoIntegersMath : IAddTwoIntegers
+public sealed class AddTwoIntegersMath : IAddTwoIntegers
 {
     /// <summary>
     ///     Time complexity - O(n)

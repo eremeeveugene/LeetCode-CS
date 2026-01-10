@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DayOfTheYear;
 
 /// <inheritdoc />
-public class DayOfTheYearDateParse : IDayOfTheYear
+public sealed class DayOfTheYearDateParse : IDayOfTheYear
 {
     /// <summary>
     ///     Time complexity - O(1)

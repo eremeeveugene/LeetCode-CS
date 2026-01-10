@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.Maximum69Number;
 
 /// <inheritdoc />
-public class Maximum69NumberIterative : IMaximum69Number
+public sealed class Maximum69NumberIterative : IMaximum69Number
 {
     /// <summary>
     ///     Time complexity - O(log n)

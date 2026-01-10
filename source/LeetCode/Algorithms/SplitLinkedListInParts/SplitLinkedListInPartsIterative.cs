@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.SplitLinkedListInParts;
 
 /// <inheritdoc />
-public class SplitLinkedListInPartsIterative : ISplitLinkedListInParts
+public sealed class SplitLinkedListInPartsIterative : ISplitLinkedListInParts
 {
     /// <summary>
     ///     Time complexity - O(n)

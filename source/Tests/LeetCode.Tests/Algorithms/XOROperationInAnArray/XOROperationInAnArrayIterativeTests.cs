@@ -14,4 +14,4 @@ using LeetCode.Algorithms.XOROperationInAnArray;
 namespace LeetCode.Tests.Algorithms.XOROperationInAnArray;
 
 [TestClass]
-public class XOROperationInAnArrayIterativeTests : XOROperationInAnArrayTestsBase<XOROperationInAnArrayIterative>;
+public sealed class XOROperationInAnArrayIterativeTests : XOROperationInAnArrayTestsBase<XOROperationInAnArrayIterative>;

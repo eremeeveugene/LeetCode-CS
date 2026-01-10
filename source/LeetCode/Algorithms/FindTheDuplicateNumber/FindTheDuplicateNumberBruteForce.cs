@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheDuplicateNumber;
 
 /// <inheritdoc />
-public class FindTheDuplicateNumberBruteForce : IFindTheDuplicateNumber
+public sealed class FindTheDuplicateNumberBruteForce : IFindTheDuplicateNumber
 {
     /// <summary>
     ///     Time complexity - O(n^2)

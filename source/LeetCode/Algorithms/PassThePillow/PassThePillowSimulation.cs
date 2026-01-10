@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PassThePillow;
 
 /// <inheritdoc />
-public class PassThePillowSimulation : IPassThePillow
+public sealed class PassThePillowSimulation : IPassThePillow
 {
     /// <summary>
     ///     Time complexity - O(n)

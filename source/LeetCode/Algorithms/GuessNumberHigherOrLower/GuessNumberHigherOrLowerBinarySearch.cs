@@ -11,7 +11,7 @@
 
 namespace LeetCode.Algorithms.GuessNumberHigherOrLower;
 
-public class GuessNumberHigherOrLowerBinarySearch : GuessNumberHigherOrLower
+public sealed class GuessNumberHigherOrLowerBinarySearch : GuessNumberHigherOrLower
 {
     public GuessNumberHigherOrLowerBinarySearch(int pickedNumber) : base(pickedNumber)
     {

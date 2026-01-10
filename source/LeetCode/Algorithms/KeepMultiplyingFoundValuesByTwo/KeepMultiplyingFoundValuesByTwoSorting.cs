@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo;
 
 /// <inheritdoc />
-public class KeepMultiplyingFoundValuesByTwoSorting : KeepMultiplyingFoundValuesByTwoBase
+public sealed class KeepMultiplyingFoundValuesByTwoSorting : KeepMultiplyingFoundValuesByTwoBase
 {
     /// <summary>
     ///     Time complexity - O(n log n)

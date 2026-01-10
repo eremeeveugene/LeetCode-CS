@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfSubstringsWithOnlyOnes;
 
 /// <inheritdoc />
-public class NumberOfSubstringsWithOnlyOnesCounting : INumberOfSubstringsWithOnlyOnes
+public sealed class NumberOfSubstringsWithOnlyOnesCounting : INumberOfSubstringsWithOnlyOnes
 {
     private const int Modulo = 1_000_000_007;
 

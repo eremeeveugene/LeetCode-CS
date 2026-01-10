@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CountGoodTriplets;
 namespace LeetCode.Tests.Algorithms.CountGoodTriplets;
 
 [TestClass]
-public class CountGoodTripletsBruteForceTests : CountGoodTripletsTestsBase<CountGoodTripletsBruteForce>;
+public sealed class CountGoodTripletsBruteForceTests : CountGoodTripletsTestsBase<CountGoodTripletsBruteForce>;

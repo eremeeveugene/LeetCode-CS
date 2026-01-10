@@ -14,5 +14,5 @@ using LeetCode.Algorithms.LargestNumberAtLeastTwiceOfOthers;
 namespace LeetCode.Tests.Algorithms.LargestNumberAtLeastTwiceOfOthers;
 
 [TestClass]
-public class LargestNumberAtLeastTwiceOfOthersIterativeTests :
+public sealed class LargestNumberAtLeastTwiceOfOthersIterativeTests :
     LargestNumberAtLeastTwiceOfOthersTestsBase<LargestNumberAtLeastTwiceOfOthersIterative>;

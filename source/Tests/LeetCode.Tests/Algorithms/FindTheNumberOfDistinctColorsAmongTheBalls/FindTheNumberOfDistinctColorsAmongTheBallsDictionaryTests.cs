@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindTheNumberOfDistinctColorsAmongTheBalls;
 namespace LeetCode.Tests.Algorithms.FindTheNumberOfDistinctColorsAmongTheBalls;
 
 [TestClass]
-public class FindTheNumberOfDistinctColorsAmongTheBallsDictionaryTests :
+public sealed class FindTheNumberOfDistinctColorsAmongTheBallsDictionaryTests :
     FindTheNumberOfDistinctColorsAmongTheBallsTestsBase<FindTheNumberOfDistinctColorsAmongTheBallsDictionary>;

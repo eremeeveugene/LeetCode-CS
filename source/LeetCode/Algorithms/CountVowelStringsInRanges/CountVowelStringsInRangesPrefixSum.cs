@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountVowelStringsInRanges;
 
 /// <inheritdoc />
-public class CountVowelStringsInRangesPrefixSum : ICountVowelStringsInRanges
+public sealed class CountVowelStringsInRangesPrefixSum : ICountVowelStringsInRanges
 {
     private readonly HashSet<char> _vowelsHashSet =
     [

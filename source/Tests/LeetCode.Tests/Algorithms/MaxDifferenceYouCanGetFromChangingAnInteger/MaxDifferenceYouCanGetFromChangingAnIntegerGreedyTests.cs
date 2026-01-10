@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MaxDifferenceYouCanGetFromChangingAnInteger;
 namespace LeetCode.Tests.Algorithms.MaxDifferenceYouCanGetFromChangingAnInteger;
 
 [TestClass]
-public class MaxDifferenceYouCanGetFromChangingAnIntegerGreedyTests :
+public sealed class MaxDifferenceYouCanGetFromChangingAnIntegerGreedyTests :
     MaxDifferenceYouCanGetFromChangingAnIntegerTestsBase<MaxDifferenceYouCanGetFromChangingAnIntegerGreedy>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SquaresOfSortedArray;
 namespace LeetCode.Tests.Algorithms.SquaresOfSortedArray;
 
 [TestClass]
-public class SquaresOfSortedArraySortTests : SquaresOfSortedArrayTestsBase<SquaresOfSortedArraySort>;
+public sealed class SquaresOfSortedArraySortTests : SquaresOfSortedArrayTestsBase<SquaresOfSortedArraySort>;

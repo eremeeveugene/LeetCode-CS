@@ -12,7 +12,7 @@
 namespace LeetCode.Concurrency.PrintInOrder;
 
 /// <inheritdoc />
-public class PrintInOrderTaskCompletionSource : IPrintInOrder
+public sealed class PrintInOrderTaskCompletionSource : IPrintInOrder
 {
     private readonly TaskCompletionSource _firstPrint = new();
     private readonly TaskCompletionSource _secondPrint = new();

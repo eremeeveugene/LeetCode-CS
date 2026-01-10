@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumStringLengthAfterRemovingSubstrings;
 namespace LeetCode.Tests.Algorithms.MinimumStringLengthAfterRemovingSubstrings;
 
 [TestClass]
-public class MinimumStringLengthAfterRemovingSubstringsStackTests :
+public sealed class MinimumStringLengthAfterRemovingSubstringsStackTests :
     MinimumStringLengthAfterRemovingSubstringsTestsBase<MinimumStringLengthAfterRemovingSubstringsStack>;

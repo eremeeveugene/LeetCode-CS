@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumNumberOfDaysToDisconnectIsland;
 
 /// <inheritdoc />
-public class MinimumNumberOfDaysToDisconnectIslandBruteForceCopyArray : IMinimumNumberOfDaysToDisconnectIsland
+public sealed class MinimumNumberOfDaysToDisconnectIslandBruteForceCopyArray : IMinimumNumberOfDaysToDisconnectIsland
 {
     /// <summary>
     ///     Time complexity - O(n^2 * m^2)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TypeOfTriangle;
 
 /// <inheritdoc />
-public class TypeOfTriangleMath : ITypeOfTriangle
+public sealed class TypeOfTriangleMath : ITypeOfTriangle
 {
     private const string Equilateral = "equilateral";
     private const string Scalene = "scalene";

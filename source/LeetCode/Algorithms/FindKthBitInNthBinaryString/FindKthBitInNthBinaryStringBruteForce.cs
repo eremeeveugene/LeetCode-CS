@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.FindKthBitInNthBinaryString;
 
 /// <inheritdoc />
-public class FindKthBitInNthBinaryStringBruteForce : IFindKthBitInNthBinaryString
+public sealed class FindKthBitInNthBinaryStringBruteForce : IFindKthBitInNthBinaryString
 {
     /// <summary>
     ///     Time complexity - O(2^n)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CrawlerLogFolder;
 namespace LeetCode.Tests.Algorithms.CrawlerLogFolder;
 
 [TestClass]
-public class CrawlerLogFolderSimulationTests : CrawlerLogFolderTestsBase<CrawlerLogFolderSimulation>;
+public sealed class CrawlerLogFolderSimulationTests : CrawlerLogFolderTestsBase<CrawlerLogFolderSimulation>;

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.DeleteCharactersToMakeFancyString;
 namespace LeetCode.Tests.Algorithms.DeleteCharactersToMakeFancyString;
 
 [TestClass]
-public class DeleteCharactersToMakeFancyStringIterativeTests :
+public sealed class DeleteCharactersToMakeFancyStringIterativeTests :
     DeleteCharactersToMakeFancyStringTestsBase<DeleteCharactersToMakeFancyStringIterative>;

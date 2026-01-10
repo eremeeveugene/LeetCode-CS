@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SlidingPuzzle;
 
 /// <inheritdoc />
-public class SlidingPuzzlePrecomputedDictionary : ISlidingPuzzle
+public sealed class SlidingPuzzlePrecomputedDictionary : ISlidingPuzzle
 {
     private readonly Dictionary<int, int> _movesDictionary = new()
     {

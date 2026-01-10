@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SetMatrixZeroes;
 
 /// <inheritdoc />
-public class SetMatrixZeroesInPlace : ISetMatrixZeroes
+public sealed class SetMatrixZeroesInPlace : ISetMatrixZeroes
 {
     /// <summary>
     ///     Time complexity - O(m * n)

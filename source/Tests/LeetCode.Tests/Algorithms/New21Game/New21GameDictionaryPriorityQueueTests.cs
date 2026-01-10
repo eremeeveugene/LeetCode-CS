@@ -14,4 +14,4 @@ using LeetCode.Algorithms.New21Game;
 namespace LeetCode.Tests.Algorithms.New21Game;
 
 [TestClass]
-public class New21GameDictionaryPriorityQueueTests : New21GameTestsBase<New21GameDictionaryPriorityQueue>;
+public sealed class New21GameDictionaryPriorityQueueTests : New21GameTestsBase<New21GameDictionaryPriorityQueue>;

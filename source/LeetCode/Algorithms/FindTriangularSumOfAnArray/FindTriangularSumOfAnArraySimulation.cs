@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTriangularSumOfAnArray;
 
 /// <inheritdoc />
-public class FindTriangularSumOfAnArraySimulation : IFindTriangularSumOfAnArray
+public sealed class FindTriangularSumOfAnArraySimulation : IFindTriangularSumOfAnArray
 {
     /// <summary>
     ///     Time complexity - O(n^2)

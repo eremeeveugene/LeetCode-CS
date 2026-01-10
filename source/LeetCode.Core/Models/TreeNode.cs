@@ -18,7 +18,7 @@ namespace LeetCode.Core.Models;
 /// <summary>
 ///     Definition for a binary tree node
 /// </summary>
-public class TreeNode
+public sealed class TreeNode
 {
     public TreeNode? left;
 

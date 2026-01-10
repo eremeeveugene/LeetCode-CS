@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CouponCodeValidator;
 
 /// <inheritdoc />
-public class CouponCodeValidatorBucketSort : ICouponCodeValidator
+public sealed class CouponCodeValidatorBucketSort : ICouponCodeValidator
 {
     private const int CategoryCount = 4;
 

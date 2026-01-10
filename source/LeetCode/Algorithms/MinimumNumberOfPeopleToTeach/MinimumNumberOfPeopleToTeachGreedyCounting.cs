@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumNumberOfPeopleToTeach;
 
 /// <inheritdoc />
-public class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberOfPeopleToTeach
+public sealed class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberOfPeopleToTeach
 {
     /// <summary>
     ///     Time complexity - O(m * n), where m is the number of users and n is the number of languages

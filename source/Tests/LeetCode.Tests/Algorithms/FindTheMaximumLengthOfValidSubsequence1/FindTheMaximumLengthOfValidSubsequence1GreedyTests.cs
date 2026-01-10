@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindTheMaximumLengthOfValidSubsequence1;
 namespace LeetCode.Tests.Algorithms.FindTheMaximumLengthOfValidSubsequence1;
 
 [TestClass]
-public class FindTheMaximumLengthOfValidSubsequence1GreedyTests :
+public sealed class FindTheMaximumLengthOfValidSubsequence1GreedyTests :
     FindTheMaximumLengthOfValidSubsequence1TestsBase<FindTheMaximumLengthOfValidSubsequence1Greedy>;

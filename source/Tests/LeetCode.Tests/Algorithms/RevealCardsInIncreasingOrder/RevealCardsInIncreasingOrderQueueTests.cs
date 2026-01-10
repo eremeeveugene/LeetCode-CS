@@ -14,5 +14,5 @@ using LeetCode.Algorithms.RevealCardsInIncreasingOrder;
 namespace LeetCode.Tests.Algorithms.RevealCardsInIncreasingOrder;
 
 [TestClass]
-public class RevealCardsInIncreasingOrderQueueTests :
+public sealed class RevealCardsInIncreasingOrderQueueTests :
     RevealCardsInIncreasingOrderTestsBase<RevealCardsInIncreasingOrderQueue>;

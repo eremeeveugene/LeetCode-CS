@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ReplaceNonCoprimeNumbersInArray;
 
 /// <inheritdoc />
-public class ReplaceNonCoprimeNumbersInArrayGreedy : IReplaceNonCoprimeNumbersInArray
+public sealed class ReplaceNonCoprimeNumbersInArrayGreedy : IReplaceNonCoprimeNumbersInArray
 {
     /// <summary>
     ///     Time complexity - O(n log M), where n is the length of nums and M is max(nums[i])

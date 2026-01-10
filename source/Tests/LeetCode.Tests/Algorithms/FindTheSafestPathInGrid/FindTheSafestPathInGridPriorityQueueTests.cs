@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindTheSafestPathInGrid;
 namespace LeetCode.Tests.Algorithms.FindTheSafestPathInGrid;
 
 [TestClass]
-public class FindTheSafestPathInGridPriorityQueueTests :
+public sealed class FindTheSafestPathInGridPriorityQueueTests :
     FindTheSafestPathInGridTestsBase<FindTheSafestPathInGridPriorityQueue>;

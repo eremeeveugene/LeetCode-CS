@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumWidthRamp;
 
 /// <inheritdoc />
-public class MaximumWidthRampStack : IMaximumWidthRamp
+public sealed class MaximumWidthRampStack : IMaximumWidthRamp
 {
     /// <summary>
     ///     Time complexity - O(n)

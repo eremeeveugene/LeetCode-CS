@@ -14,5 +14,5 @@ using LeetCode.Algorithms.NeitherMinimumNorMaximum;
 namespace LeetCode.Tests.Algorithms.NeitherMinimumNorMaximum;
 
 [TestClass]
-public class NeitherMinimumNorMaximumUsingMinMaxComparisonTest : NeitherMinimumNorMaximumTestsBase<
+public sealed class NeitherMinimumNorMaximumUsingMinMaxComparisonTest : NeitherMinimumNorMaximumTestsBase<
     NeitherMinimumNorMaximumUsingMinMaxComparison>;

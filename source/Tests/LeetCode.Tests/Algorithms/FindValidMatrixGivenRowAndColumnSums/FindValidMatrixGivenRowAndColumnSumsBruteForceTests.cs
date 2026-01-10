@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindValidMatrixGivenRowAndColumnSums;
 namespace LeetCode.Tests.Algorithms.FindValidMatrixGivenRowAndColumnSums;
 
 [TestClass]
-public class FindValidMatrixGivenRowAndColumnSumsBruteForceTests : FindValidMatrixGivenRowAndColumnSumsTestsBase<
+public sealed class FindValidMatrixGivenRowAndColumnSumsBruteForceTests : FindValidMatrixGivenRowAndColumnSumsTestsBase<
     FindValidMatrixGivenRowAndColumnSumsBruteForce>;

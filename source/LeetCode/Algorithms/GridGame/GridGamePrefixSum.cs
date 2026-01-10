@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.GridGame;
 
 /// <inheritdoc />
-public class GridGamePrefixSum : IGridGame
+public sealed class GridGamePrefixSum : IGridGame
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox;
 
 /// <inheritdoc />
-public class MinimumNumberOfOperationsToMoveAllBallsToEachBoxTwoPass : IMinimumNumberOfOperationsToMoveAllBallsToEachBox
+public sealed class MinimumNumberOfOperationsToMoveAllBallsToEachBoxTwoPass : IMinimumNumberOfOperationsToMoveAllBallsToEachBox
 {
     /// <summary>
     ///     Time complexity - O(n)

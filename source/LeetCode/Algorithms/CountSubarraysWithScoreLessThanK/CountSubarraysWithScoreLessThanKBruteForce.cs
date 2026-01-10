@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountSubarraysWithScoreLessThanK;
 
 /// <inheritdoc />
-public class CountSubarraysWithScoreLessThanKBruteForce : ICountSubarraysWithScoreLessThanK
+public sealed class CountSubarraysWithScoreLessThanKBruteForce : ICountSubarraysWithScoreLessThanK
 {
     /// <summary>
     ///     Time complexity - O(n^2)

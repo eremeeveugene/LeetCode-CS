@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds;
 
 /// <inheritdoc />
-public class MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers : IMinimumLengthOfStringAfterDeletingSimilarEnds
+public sealed class MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers : IMinimumLengthOfStringAfterDeletingSimilarEnds
 {
     /// <summary>
     ///     Time complexity - O(n)

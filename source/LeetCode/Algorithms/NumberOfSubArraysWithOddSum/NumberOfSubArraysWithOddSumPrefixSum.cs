@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfSubArraysWithOddSum;
 
 /// <inheritdoc />
-public class NumberOfSubArraysWithOddSumPrefixSum : INumberOfSubArraysWithOddSum
+public sealed class NumberOfSubArraysWithOddSumPrefixSum : INumberOfSubArraysWithOddSum
 {
     private const int Mod = (int)(1e9 + 7);
 

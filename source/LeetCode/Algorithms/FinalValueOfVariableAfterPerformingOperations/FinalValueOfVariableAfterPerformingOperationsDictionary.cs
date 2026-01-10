@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations;
 
 /// <inheritdoc />
-public class FinalValueOfVariableAfterPerformingOperationsDictionary : IFinalValueOfVariableAfterPerformingOperations
+public sealed class FinalValueOfVariableAfterPerformingOperationsDictionary : IFinalValueOfVariableAfterPerformingOperations
 {
     private static readonly Dictionary<string, int> OperationsDictionary = new()
     {

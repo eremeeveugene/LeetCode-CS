@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SumOfDigitsOfStringAfterConvert;
 
 /// <inheritdoc />
-public class SumOfDigitsOfStringAfterConvertIterative : ISumOfDigitsOfStringAfterConvert
+public sealed class SumOfDigitsOfStringAfterConvertIterative : ISumOfDigitsOfStringAfterConvert
 {
     /// <summary>
     ///     Time complexity - O(n)

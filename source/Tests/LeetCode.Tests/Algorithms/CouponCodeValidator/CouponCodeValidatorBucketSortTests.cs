@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CouponCodeValidator;
 namespace LeetCode.Tests.Algorithms.CouponCodeValidator;
 
 [TestClass]
-public class CouponCodeValidatorBucketSortTests : CouponCodeValidatorTestsBase<CouponCodeValidatorBucketSort>;
+public sealed class CouponCodeValidatorBucketSortTests : CouponCodeValidatorTestsBase<CouponCodeValidatorBucketSort>;

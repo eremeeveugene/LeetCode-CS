@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.AddStrings;
 
 /// <inheritdoc />
-public class AddStringsLinear : IAddStrings
+public sealed class AddStringsLinear : IAddStrings
 {
     /// <summary>
     ///     Time complexity - O(max(n, m))

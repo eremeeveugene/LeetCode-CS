@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MaxChunksToMakeSorted;
 namespace LeetCode.Tests.Algorithms.MaxChunksToMakeSorted;
 
 [TestClass]
-public class MaxChunksToMakeSortedIterativeTests : MaxChunksToMakeSortedTestsBase<MaxChunksToMakeSortedIterative>;
+public sealed class MaxChunksToMakeSortedIterativeTests : MaxChunksToMakeSortedTestsBase<MaxChunksToMakeSortedIterative>;

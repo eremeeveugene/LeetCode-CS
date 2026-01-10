@@ -14,4 +14,4 @@ using LeetCode.Algorithms.StoneGame2;
 namespace LeetCode.Tests.Algorithms.StoneGame2;
 
 [TestClass]
-public class StoneGame2DynamicProgrammingTests : StoneGame2TestsBase<StoneGame2DynamicProgramming>;
+public sealed class StoneGame2DynamicProgrammingTests : StoneGame2TestsBase<StoneGame2DynamicProgramming>;

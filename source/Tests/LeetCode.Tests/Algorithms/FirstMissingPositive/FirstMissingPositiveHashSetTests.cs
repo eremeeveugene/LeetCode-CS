@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FirstMissingPositive;
 namespace LeetCode.Tests.Algorithms.FirstMissingPositive;
 
 [TestClass]
-public class FirstMissingPositiveHashSetTests : FirstMissingPositiveTestsBase<FirstMissingPositiveHashSet>;
+public sealed class FirstMissingPositiveHashSetTests : FirstMissingPositiveTestsBase<FirstMissingPositiveHashSet>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses;
 
 /// <inheritdoc />
-public class MaximumNestingDepthOfTheParenthesesIterative : IMaximumNestingDepthOfTheParentheses
+public sealed class MaximumNestingDepthOfTheParenthesesIterative : IMaximumNestingDepthOfTheParentheses
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MinimumNumberGame;
 namespace LeetCode.Tests.Algorithms.MinimumNumberGame;
 
 [TestClass]
-public class MinimumNumberGameSortingTests : MinimumNumberGameTestsBase<MinimumNumberGameSorting>;
+public sealed class MinimumNumberGameSortingTests : MinimumNumberGameTestsBase<MinimumNumberGameSorting>;

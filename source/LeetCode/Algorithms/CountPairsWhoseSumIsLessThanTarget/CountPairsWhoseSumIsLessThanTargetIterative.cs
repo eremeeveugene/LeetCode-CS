@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget;
 
 /// <inheritdoc />
-public class CountPairsWhoseSumIsLessThanTargetIterative : ICountPairsWhoseSumIsLessThanTarget
+public sealed class CountPairsWhoseSumIsLessThanTargetIterative : ICountPairsWhoseSumIsLessThanTarget
 {
     /// <summary>
     ///     Time complexity - O(n^2)

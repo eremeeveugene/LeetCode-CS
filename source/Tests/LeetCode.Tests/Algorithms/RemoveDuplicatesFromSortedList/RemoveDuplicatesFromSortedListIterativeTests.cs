@@ -14,5 +14,5 @@ using LeetCode.Algorithms.RemoveDuplicatesFromSortedList;
 namespace LeetCode.Tests.Algorithms.RemoveDuplicatesFromSortedList;
 
 [TestClass]
-public class RemoveDuplicatesFromSortedListIterativeTests :
+public sealed class RemoveDuplicatesFromSortedListIterativeTests :
     RemoveDuplicatesFromSortedListTestsBase<RemoveDuplicatesFromSortedListIterative>;

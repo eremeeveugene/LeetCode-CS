@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner;
 
 /// <inheritdoc />
-public class MinimumObstacleRemovalToReachCornerPriorityQueue : IMinimumObstacleRemovalToReachCorner
+public sealed class MinimumObstacleRemovalToReachCornerPriorityQueue : IMinimumObstacleRemovalToReachCorner
 {
     private static readonly (int X, int Y)[] Directions = [(-1, 0), (1, 0), (0, -1), (0, 1)];
 

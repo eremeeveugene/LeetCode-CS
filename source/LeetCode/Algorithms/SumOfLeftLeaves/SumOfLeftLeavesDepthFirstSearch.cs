@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.SumOfLeftLeaves;
 
 /// <inheritdoc />
-public class SumOfLeftLeavesDepthFirstSearch : ISumOfLeftLeaves
+public sealed class SumOfLeftLeavesDepthFirstSearch : ISumOfLeftLeaves
 {
     /// <summary>
     ///     Time complexity - O(n)

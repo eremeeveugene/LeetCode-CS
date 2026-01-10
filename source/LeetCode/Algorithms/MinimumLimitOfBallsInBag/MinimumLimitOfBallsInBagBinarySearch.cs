@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumLimitOfBallsInBag;
 
 /// <inheritdoc />
-public class MinimumLimitOfBallsInBagBinarySearch : IMinimumLimitOfBallsInBag
+public sealed class MinimumLimitOfBallsInBagBinarySearch : IMinimumLimitOfBallsInBag
 {
     /// <summary>
     ///     Time complexity - O(n log m)

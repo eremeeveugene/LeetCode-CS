@@ -14,7 +14,7 @@ using System.Diagnostics.CodeAnalysis;
 namespace LeetCode.Core.Exceptions;
 
 [ExcludeFromCodeCoverage]
-public class TreeNodeBuildException : InvalidOperationException
+public sealed class TreeNodeBuildException : InvalidOperationException
 {
     public TreeNodeBuildException() : base("Failed to build TreeNode.")
     {

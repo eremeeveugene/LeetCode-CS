@@ -14,5 +14,5 @@ using LeetCode.Algorithms.DivideArrayIntoEqualPairs;
 namespace LeetCode.Tests.Algorithms.DivideArrayIntoEqualPairs;
 
 [TestClass]
-public class DivideArrayIntoEqualPairsArrayTests :
+public sealed class DivideArrayIntoEqualPairsArrayTests :
     DivideArrayIntoEqualPairsTestsBase<DivideArrayIntoEqualPairsArray>;

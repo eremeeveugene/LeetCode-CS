@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CheckIfArrayIsSortedAndRotated;
 namespace LeetCode.Tests.Algorithms.CheckIfArrayIsSortedAndRotated;
 
 [TestClass]
-public class CheckIfArrayIsSortedAndRotatedIterativeTests :
+public sealed class CheckIfArrayIsSortedAndRotatedIterativeTests :
     CheckIfArrayIsSortedAndRotatedTestsBase<CheckIfArrayIsSortedAndRotatedIterative>;

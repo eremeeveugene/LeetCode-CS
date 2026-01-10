@@ -14,4 +14,4 @@ using LeetCode.Algorithms.IsSubsequence;
 namespace LeetCode.Tests.Algorithms.IsSubsequence;
 
 [TestClass]
-public class IsSubsequenceTwoPointersTests : IsSubsequenceTestsBase<IsSubsequenceTwoPointers>;
+public sealed class IsSubsequenceTwoPointersTests : IsSubsequenceTestsBase<IsSubsequenceTwoPointers>;

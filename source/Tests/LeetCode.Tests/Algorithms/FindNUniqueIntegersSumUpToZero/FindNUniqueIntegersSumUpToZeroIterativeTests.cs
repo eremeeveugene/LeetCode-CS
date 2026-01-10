@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindNUniqueIntegersSumUpToZero;
 namespace LeetCode.Tests.Algorithms.FindNUniqueIntegersSumUpToZero;
 
 [TestClass]
-public class FindNUniqueIntegersSumUpToZeroIterativeTests :
+public sealed class FindNUniqueIntegersSumUpToZeroIterativeTests :
     FindNUniqueIntegersSumUpToZeroTestsBase<FindNUniqueIntegersSumUpToZeroIterative>;

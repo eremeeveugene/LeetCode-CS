@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SingleNumber;
 
 /// <inheritdoc />
-public class SingleNumberHashSet : ISingleNumber
+public sealed class SingleNumberHashSet : ISingleNumber
 {
     /// <summary>
     ///     Time complexity - O(n)

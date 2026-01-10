@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ReverseBits;
 
 /// <inheritdoc />
-public class ReverseBitsIterative : IReverseBits
+public sealed class ReverseBitsIterative : IReverseBits
 {
     /// <summary>
     ///     Time complexity - O(1)

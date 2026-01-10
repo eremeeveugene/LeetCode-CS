@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RankTransformOfAnArray;
 namespace LeetCode.Tests.Algorithms.RankTransformOfAnArray;
 
 [TestClass]
-public class RankTransformOfAnArrayDictionaryTests : RankTransformOfAnArrayTestsBase<RankTransformOfAnArrayDictionary>;
+public sealed class RankTransformOfAnArrayDictionaryTests : RankTransformOfAnArrayTestsBase<RankTransformOfAnArrayDictionary>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NimGame;
 
 /// <inheritdoc />
-public class NimGameMath : INimGame
+public sealed class NimGameMath : INimGame
 {
     /// <summary>
     ///     Time complexity - O(1)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumNumberOfWordsYouCanType;
 
 /// <inheritdoc />
-public class MaximumNumberOfWordsYouCanTypeLookup : IMaximumNumberOfWordsYouCanType
+public sealed class MaximumNumberOfWordsYouCanTypeLookup : IMaximumNumberOfWordsYouCanType
 {
     private const int AlphabetLength = 'z' - 'a' + 1;
 

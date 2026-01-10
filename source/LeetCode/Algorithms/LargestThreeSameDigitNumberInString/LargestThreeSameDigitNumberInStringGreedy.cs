@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LargestThreeSameDigitNumberInString;
 
 /// <inheritdoc />
-public class LargestThreeSameDigitNumberInStringGreedy : ILargestThreeSameDigitNumberInString
+public sealed class LargestThreeSameDigitNumberInStringGreedy : ILargestThreeSameDigitNumberInString
 {
     /// <summary>
     ///     Time complexity - O(n)

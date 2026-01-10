@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximalScoreAfterApplyingKOperations;
 
 /// <inheritdoc />
-public class MaximalScoreAfterApplyingKOperationsPriorityQueue : IMaximalScoreAfterApplyingKOperations
+public sealed class MaximalScoreAfterApplyingKOperationsPriorityQueue : IMaximalScoreAfterApplyingKOperations
 {
     /// <summary>
     ///     Time complexity - O(k log n + n log n), where n is the number of elements in the queue and k is the number of new

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NeitherMinimumNorMaximum;
 
 /// <inheritdoc />
-public class NeitherMinimumNorMaximumUsingSorting : INeitherMinimumNorMaximum
+public sealed class NeitherMinimumNorMaximumUsingSorting : INeitherMinimumNorMaximum
 {
     /// <summary>
     ///     Time complexity - O(n log n)

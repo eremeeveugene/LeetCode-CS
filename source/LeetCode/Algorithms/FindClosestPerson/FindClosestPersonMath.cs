@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindClosestPerson;
 
 /// <inheritdoc />
-public class FindClosestPersonMath : IFindClosestPerson
+public sealed class FindClosestPersonMath : IFindClosestPerson
 {
     /// <summary>
     ///     Time complexity - O(1)

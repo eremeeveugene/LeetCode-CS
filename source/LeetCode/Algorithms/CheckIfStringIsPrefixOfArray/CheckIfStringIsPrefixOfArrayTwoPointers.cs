@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfStringIsPrefixOfArray;
 
 /// <inheritdoc />
-public class CheckIfStringIsPrefixOfArrayTwoPointers : ICheckIfStringIsPrefixOfArray
+public sealed class CheckIfStringIsPrefixOfArrayTwoPointers : ICheckIfStringIsPrefixOfArray
 {
     /// <summary>
     ///     Time complexity - O(n)

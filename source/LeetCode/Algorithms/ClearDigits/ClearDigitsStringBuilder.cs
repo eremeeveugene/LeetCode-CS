@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ClearDigits;
 
 /// <inheritdoc />
-public class ClearDigitsStringBuilder : IClearDigits
+public sealed class ClearDigitsStringBuilder : IClearDigits
 {
     /// <summary>
     ///     Time complexity - O(n)

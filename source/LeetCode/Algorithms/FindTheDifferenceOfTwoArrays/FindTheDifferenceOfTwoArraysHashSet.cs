@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheDifferenceOfTwoArrays;
 
 /// <inheritdoc />
-public class FindTheDifferenceOfTwoArraysHashSet : IFindTheDifferenceOfTwoArrays
+public sealed class FindTheDifferenceOfTwoArraysHashSet : IFindTheDifferenceOfTwoArrays
 {
     /// <summary>
     ///     Time complexity - O(m + n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FloodFill;
 
 /// <inheritdoc />
-public class FloodFillIterative : IFloodFill
+public sealed class FloodFillIterative : IFloodFill
 {
     /// <summary>
     ///     Time complexity - O(n * m)

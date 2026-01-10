@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheMaximumLengthOfValidSubsequence2;
 
 /// <inheritdoc />
-public class FindTheMaximumLengthOfValidSubsequence2DynamicProgramming : IFindTheMaximumLengthOfValidSubsequence2
+public sealed class FindTheMaximumLengthOfValidSubsequence2DynamicProgramming : IFindTheMaximumLengthOfValidSubsequence2
 {
     /// <summary>
     ///     Time complexity - O(k^2 + n * k)

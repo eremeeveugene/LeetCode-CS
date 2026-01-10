@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PalindromePartitioning;
 
 /// <inheritdoc />
-public class PalindromePartitioningBackTracking : IPalindromePartitioning
+public sealed class PalindromePartitioningBackTracking : IPalindromePartitioning
 {
     /// <summary>
     ///     Time complexity - O(n * 2^n)

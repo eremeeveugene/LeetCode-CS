@@ -14,5 +14,5 @@ using LeetCode.Algorithms.LongestIdealSubsequence;
 namespace LeetCode.Tests.Algorithms.LongestIdealSubsequence;
 
 [TestClass]
-public class LongestIdealSubsequenceDynamicProgrammingTests : LongestIdealSubsequenceTestsBase<
+public sealed class LongestIdealSubsequenceDynamicProgrammingTests : LongestIdealSubsequenceTestsBase<
     LongestIdealSubsequenceDynamicProgramming>;

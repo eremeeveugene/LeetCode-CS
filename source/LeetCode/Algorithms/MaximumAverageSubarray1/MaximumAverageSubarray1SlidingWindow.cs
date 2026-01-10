@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumAverageSubarray1;
 
 /// <inheritdoc />
-public class MaximumAverageSubarray1SlidingWindow : IMaximumAverageSubarray1
+public sealed class MaximumAverageSubarray1SlidingWindow : IMaximumAverageSubarray1
 {
     /// <summary>
     ///     Time complexity - O(n)

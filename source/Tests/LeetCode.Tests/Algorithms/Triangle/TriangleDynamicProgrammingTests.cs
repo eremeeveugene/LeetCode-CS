@@ -14,4 +14,4 @@ using LeetCode.Algorithms.Triangle;
 namespace LeetCode.Tests.Algorithms.Triangle;
 
 [TestClass]
-public class TriangleDynamicProgrammingTests : TriangleTestsBase<TriangleDynamicProgramming>;
+public sealed class TriangleDynamicProgrammingTests : TriangleTestsBase<TriangleDynamicProgramming>;

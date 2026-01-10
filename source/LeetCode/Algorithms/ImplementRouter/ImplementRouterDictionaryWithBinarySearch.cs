@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ImplementRouter;
 
 /// <inheritdoc />
-public class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
+public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
 {
     private static readonly int[] ForwardBuffer = new int[3];
     private readonly Dictionary<int, TimestampBuffer> _destinationToTimestampBufferDictionary;

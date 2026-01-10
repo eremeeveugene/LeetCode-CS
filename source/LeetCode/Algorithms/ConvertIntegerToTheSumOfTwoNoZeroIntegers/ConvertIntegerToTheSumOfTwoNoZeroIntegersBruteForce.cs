@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ConvertIntegerToTheSumOfTwoNoZeroIntegers;
 
 /// <inheritdoc />
-public class ConvertIntegerToTheSumOfTwoNoZeroIntegersBruteForce : IConvertIntegerToTheSumOfTwoNoZeroIntegers
+public sealed class ConvertIntegerToTheSumOfTwoNoZeroIntegersBruteForce : IConvertIntegerToTheSumOfTwoNoZeroIntegers
 {
     /// <summary>
     ///     Time complexity - O(n log n)

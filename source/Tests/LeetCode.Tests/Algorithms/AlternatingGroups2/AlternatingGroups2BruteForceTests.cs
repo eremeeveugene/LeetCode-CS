@@ -14,4 +14,4 @@ using LeetCode.Algorithms.AlternatingGroups2;
 namespace LeetCode.Tests.Algorithms.AlternatingGroups2;
 
 [TestClass]
-public class AlternatingGroups2BruteForceTests : AlternatingGroups2TestsBase<AlternatingGroups2BruteForce>;
+public sealed class AlternatingGroups2BruteForceTests : AlternatingGroups2TestsBase<AlternatingGroups2BruteForce>;

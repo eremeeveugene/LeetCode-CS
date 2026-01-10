@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.MaximumOddBinaryNumber;
 
 /// <inheritdoc />
-public class MaximumOddBinaryNumberStringBuilder : IMaximumOddBinaryNumber
+public sealed class MaximumOddBinaryNumberStringBuilder : IMaximumOddBinaryNumber
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FaultyKeyboard;
 namespace LeetCode.Tests.Algorithms.FaultyKeyboard;
 
 [TestClass]
-public class FaultyKeyboardStringBuilderTests : FaultyKeyboardTestsBase<FaultyKeyboardStringBuilder>;
+public sealed class FaultyKeyboardStringBuilderTests : FaultyKeyboardTestsBase<FaultyKeyboardStringBuilder>;

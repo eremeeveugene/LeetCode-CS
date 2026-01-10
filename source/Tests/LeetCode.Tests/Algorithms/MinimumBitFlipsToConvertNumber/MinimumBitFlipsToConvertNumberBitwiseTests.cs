@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumBitFlipsToConvertNumber;
 namespace LeetCode.Tests.Algorithms.MinimumBitFlipsToConvertNumber;
 
 [TestClass]
-public class MinimumBitFlipsToConvertNumberBitwiseTests :
+public sealed class MinimumBitFlipsToConvertNumberBitwiseTests :
     MinimumBitFlipsToConvertNumberTestsBase<MinimumBitFlipsToConvertNumberBitwise>;

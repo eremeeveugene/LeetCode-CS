@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ValidParentheses;
 
 /// <inheritdoc />
-public class ValidParenthesesStackSwitch : IValidParentheses
+public sealed class ValidParenthesesStackSwitch : IValidParentheses
 {
     /// <summary>
     ///     Time complexity - O(n)

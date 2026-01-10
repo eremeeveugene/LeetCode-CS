@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindCenterOfStarGraph;
 
 /// <inheritdoc />
-public class FindCenterOfStarGraphTwoEdges : IFindCenterOfStarGraph
+public sealed class FindCenterOfStarGraphTwoEdges : IFindCenterOfStarGraph
 {
     /// <summary>
     ///     Time complexity - O(1)

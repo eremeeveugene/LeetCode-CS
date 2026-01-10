@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SortThePeople;
 namespace LeetCode.Tests.Algorithms.SortThePeople;
 
 [TestClass]
-public class SortThePeopleSortingTests : SortThePeopleTestsBase<SortThePeopleSorting>;
+public sealed class SortThePeopleSortingTests : SortThePeopleTestsBase<SortThePeopleSorting>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfGridCanBeCutIntoSections;
 
 /// <inheritdoc />
-public class CheckIfGridCanBeCutIntoSectionsSorting : ICheckIfGridCanBeCutIntoSections
+public sealed class CheckIfGridCanBeCutIntoSectionsSorting : ICheckIfGridCanBeCutIntoSections
 {
     /// <summary>
     ///     Time complexity - O(n log n)

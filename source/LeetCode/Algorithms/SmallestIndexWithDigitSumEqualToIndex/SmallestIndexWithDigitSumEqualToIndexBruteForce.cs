@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SmallestIndexWithDigitSumEqualToIndex;
 
 /// <inheritdoc />
-public class SmallestIndexWithDigitSumEqualToIndexBruteForce : ISmallestIndexWithDigitSumEqualToIndex
+public sealed class SmallestIndexWithDigitSumEqualToIndexBruteForce : ISmallestIndexWithDigitSumEqualToIndex
 {
     /// <summary>
     ///     Time complexity - O(n * d)

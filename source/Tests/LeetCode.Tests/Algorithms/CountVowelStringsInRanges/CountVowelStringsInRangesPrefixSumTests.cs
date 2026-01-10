@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CountVowelStringsInRanges;
 namespace LeetCode.Tests.Algorithms.CountVowelStringsInRanges;
 
 [TestClass]
-public class CountVowelStringsInRangesPrefixSumTests :
+public sealed class CountVowelStringsInRangesPrefixSumTests :
     CountVowelStringsInRangesTestsBase<CountVowelStringsInRangesPrefixSum>;

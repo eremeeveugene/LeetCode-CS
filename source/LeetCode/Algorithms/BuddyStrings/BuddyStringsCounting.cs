@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.BuddyStrings;
 
 /// <inheritdoc />
-public class BuddyStringsCounting : IBuddyStrings
+public sealed class BuddyStringsCounting : IBuddyStrings
 {
     /// <summary>
     ///     Time complexity - O(n)

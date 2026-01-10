@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TwoSum;
 namespace LeetCode.Tests.Algorithms.TwoSum;
 
 [TestClass]
-public class TwoSumDictionaryTests : TwoSumTestsBase<TwoSumDictionary>;
+public sealed class TwoSumDictionaryTests : TwoSumTestsBase<TwoSumDictionary>;

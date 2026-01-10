@@ -14,5 +14,5 @@ using LeetCode.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
 namespace LeetCode.Tests.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
 
 [TestClass]
-public class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearchTests :
+public sealed class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearchTests :
     HeightOfBinaryTreeAfterSubtreeRemovalQueriesTestsBase<HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch>;

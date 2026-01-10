@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfGoodPairs;
 
 /// <inheritdoc />
-public class NumberOfGoodPairsIterative : INumberOfGoodPairs
+public sealed class NumberOfGoodPairsIterative : INumberOfGoodPairs
 {
     /// <summary>
     ///     Time complexity - O(n^2)

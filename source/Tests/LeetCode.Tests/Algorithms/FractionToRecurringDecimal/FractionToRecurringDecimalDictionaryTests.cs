@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FractionToRecurringDecimal;
 namespace LeetCode.Tests.Algorithms.FractionToRecurringDecimal;
 
 [TestClass]
-public class FractionToRecurringDecimalDictionaryTests :
+public sealed class FractionToRecurringDecimalDictionaryTests :
     FractionToRecurringDecimalTestsBase<FractionToRecurringDecimalDictionary>;

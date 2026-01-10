@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.LinkedListCycle;
 
 /// <inheritdoc />
-public class LinkedListCycleHashSet : ILinkedListCycle
+public sealed class LinkedListCycleHashSet : ILinkedListCycle
 {
     /// <summary>
     ///     Time complexity - O(n)

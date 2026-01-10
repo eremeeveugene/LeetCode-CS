@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountElementsWithMaximumFrequency;
 
 /// <inheritdoc />
-public class CountElementsWithMaximumFrequencyDictionaryLinq : ICountElementsWithMaximumFrequency
+public sealed class CountElementsWithMaximumFrequencyDictionaryLinq : ICountElementsWithMaximumFrequency
 {
     /// <summary>
     ///     Time complexity - O(n + 2m) where m is the number of unique elements. Simplifies to O(n)

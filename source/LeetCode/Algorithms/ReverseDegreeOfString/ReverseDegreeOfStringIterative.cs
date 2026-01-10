@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ReverseDegreeOfString;
 
 /// <inheritdoc />
-public class ReverseDegreeOfStringIterative : IReverseDegreeOfString
+public sealed class ReverseDegreeOfStringIterative : IReverseDegreeOfString
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ImplementQueueUsingStacks;
 
 /// <inheritdoc />
-public class ImplementQueueUsingStacksAmortized : IImplementQueueUsingStacks
+public sealed class ImplementQueueUsingStacksAmortized : IImplementQueueUsingStacks
 {
     private readonly Stack<int> _dequeueStack = new();
     private readonly Stack<int> _enqueueStack = new();

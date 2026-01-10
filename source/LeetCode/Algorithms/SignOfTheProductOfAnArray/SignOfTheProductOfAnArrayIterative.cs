@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SignOfTheProductOfAnArray;
 
 /// <inheritdoc />
-public class SignOfTheProductOfAnArrayIterative : ISignOfTheProductOfAnArray
+public sealed class SignOfTheProductOfAnArrayIterative : ISignOfTheProductOfAnArray
 {
     /// <summary>
     ///     Time complexity - O(n)

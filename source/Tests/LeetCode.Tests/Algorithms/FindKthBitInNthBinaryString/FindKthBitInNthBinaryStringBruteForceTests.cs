@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindKthBitInNthBinaryString;
 namespace LeetCode.Tests.Algorithms.FindKthBitInNthBinaryString;
 
 [TestClass]
-public class FindKthBitInNthBinaryStringBruteForceTests :
+public sealed class FindKthBitInNthBinaryStringBruteForceTests :
     FindKthBitInNthBinaryStringTestsBase<FindKthBitInNthBinaryStringBruteForce>;

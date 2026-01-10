@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MaximumAbsoluteSumOfAnySubarray;
 namespace LeetCode.Tests.Algorithms.MaximumAbsoluteSumOfAnySubarray;
 
 [TestClass]
-public class MaximumAbsoluteSumOfAnySubarrayKadaneAlgorithmTests :
+public sealed class MaximumAbsoluteSumOfAnySubarrayKadaneAlgorithmTests :
     MaximumAbsoluteSumOfAnySubarrayTestsBase<MaximumAbsoluteSumOfAnySubarrayKadaneAlgorithm>;

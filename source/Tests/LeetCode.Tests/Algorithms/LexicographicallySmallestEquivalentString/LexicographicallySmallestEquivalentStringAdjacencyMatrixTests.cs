@@ -14,5 +14,5 @@ using LeetCode.Algorithms.LexicographicallySmallestEquivalentString;
 namespace LeetCode.Tests.Algorithms.LexicographicallySmallestEquivalentString;
 
 [TestClass]
-public class LexicographicallySmallestEquivalentStringAdjacencyMatrixTests :
+public sealed class LexicographicallySmallestEquivalentStringAdjacencyMatrixTests :
     LexicographicallySmallestEquivalentStringTestsBase<LexicographicallySmallestEquivalentStringAdjacencyMatrix>;

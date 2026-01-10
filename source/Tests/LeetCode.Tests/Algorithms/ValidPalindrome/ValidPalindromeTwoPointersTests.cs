@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ValidPalindrome;
 namespace LeetCode.Tests.Algorithms.ValidPalindrome;
 
 [TestClass]
-public class ValidPalindromeTwoPointersTests : ValidPalindromeTestsBase<ValidPalindromeTwoPointers>;
+public sealed class ValidPalindromeTwoPointersTests : ValidPalindromeTestsBase<ValidPalindromeTwoPointers>;

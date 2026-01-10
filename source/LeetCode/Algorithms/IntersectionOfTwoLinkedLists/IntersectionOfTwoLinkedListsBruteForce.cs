@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.IntersectionOfTwoLinkedLists;
 
 /// <inheritdoc />
-public class IntersectionOfTwoLinkedListsBruteForce : IIntersectionOfTwoLinkedLists
+public sealed class IntersectionOfTwoLinkedListsBruteForce : IIntersectionOfTwoLinkedLists
 {
     /// <summary>
     ///     Time complexity - O(m * n)

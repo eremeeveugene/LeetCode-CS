@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LargestNumberAtLeastTwiceOfOthers;
 
 /// <inheritdoc />
-public class LargestNumberAtLeastTwiceOfOthersIterative : ILargestNumberAtLeastTwiceOfOthers
+public sealed class LargestNumberAtLeastTwiceOfOthersIterative : ILargestNumberAtLeastTwiceOfOthers
 {
     /// <summary>
     ///     Time complexity - O(n)

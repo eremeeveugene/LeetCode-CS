@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindTheWinningPlayerInCoinGame;
 namespace LeetCode.Tests.Algorithms.FindTheWinningPlayerInCoinGame;
 
 [TestClass]
-public class FindTheWinningPlayerInCoinGameSimulationTests :
+public sealed class FindTheWinningPlayerInCoinGameSimulationTests :
     FindTheWinningPlayerInCoinGameTestsBase<FindTheWinningPlayerInCoinGameSimulation>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FizzBuzz;
 namespace LeetCode.Tests.Algorithms.FizzBuzz;
 
 [TestClass]
-public class FizzBuzzIterativeTests : FizzBuzzTestsBase<FizzBuzzIterative>;
+public sealed class FizzBuzzIterativeTests : FizzBuzzTestsBase<FizzBuzzIterative>;

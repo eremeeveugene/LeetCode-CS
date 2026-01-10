@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountGoodTriplets;
 
 /// <inheritdoc />
-public class CountGoodTripletsPrefixSum : ICountGoodTriplets
+public sealed class CountGoodTripletsPrefixSum : ICountGoodTriplets
 {
     /// <summary>
     ///     Time complexity - O(n^2 + n * M)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountSymmetricIntegers;
 
 /// <inheritdoc />
-public class CountSymmetricIntegersIterative : ICountSymmetricIntegers
+public sealed class CountSymmetricIntegersIterative : ICountSymmetricIntegers
 {
     /// <summary>
     ///     Time complexity - O(N log n)

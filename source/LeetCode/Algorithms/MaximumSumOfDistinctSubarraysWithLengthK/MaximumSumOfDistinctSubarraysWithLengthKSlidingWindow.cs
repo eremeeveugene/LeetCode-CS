@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumSumOfDistinctSubarraysWithLengthK;
 
 /// <inheritdoc />
-public class MaximumSumOfDistinctSubarraysWithLengthKSlidingWindow : IMaximumSumOfDistinctSubarraysWithLengthK
+public sealed class MaximumSumOfDistinctSubarraysWithLengthKSlidingWindow : IMaximumSumOfDistinctSubarraysWithLengthK
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.RemoveAllOccurrencesOfSubstring;
 
 /// <inheritdoc />
-public class RemoveAllOccurrencesOfSubstringStringBuilder : IRemoveAllOccurrencesOfSubstring
+public sealed class RemoveAllOccurrencesOfSubstringStringBuilder : IRemoveAllOccurrencesOfSubstring
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RabbitsInForest;
 
 /// <inheritdoc />
-public class RabbitsInForestFrequencyDictionary : IRabbitsInForest
+public sealed class RabbitsInForestFrequencyDictionary : IRabbitsInForest
 {
     /// <summary>
     ///     Time complexity - O(n)

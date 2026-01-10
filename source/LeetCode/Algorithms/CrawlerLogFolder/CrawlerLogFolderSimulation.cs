@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CrawlerLogFolder;
 
 /// <inheritdoc />
-public class CrawlerLogFolderSimulation : ICrawlerLogFolder
+public sealed class CrawlerLogFolderSimulation : ICrawlerLogFolder
 {
     private const string MoveToParent = "../";
     private const string Remain = "./";

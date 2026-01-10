@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumDeletionsToMakeStringKSpecial;
 
 /// <inheritdoc />
-public class MinimumDeletionsToMakeStringKSpecialFrequencyArray : IMinimumDeletionsToMakeStringKSpecial
+public sealed class MinimumDeletionsToMakeStringKSpecialFrequencyArray : IMinimumDeletionsToMakeStringKSpecial
 {
     private const int AlphabetLength = 'z' - 'a' + 1;
 

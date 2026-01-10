@@ -14,7 +14,7 @@ using LeetCode.Algorithms.SimpleBankSystem;
 namespace LeetCode.Tests.Algorithms.SimpleBankSystem;
 
 [TestClass]
-public class SimpleBankSystemLookupTests : SimpleBankSystemTestsBase
+public sealed class SimpleBankSystemLookupTests : SimpleBankSystemTestsBase
 {
     protected override ISimpleBankSystem GetSolution(long[] balance)
     {

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SubarraysWithKDifferentIntegers;
 namespace LeetCode.Tests.Algorithms.SubarraysWithKDifferentIntegers;
 
 [TestClass]
-public class SubarraysWithKDifferentIntegersSlidingWindowTests :
+public sealed class SubarraysWithKDifferentIntegersSlidingWindowTests :
     SubarraysWithKDifferentIntegersTestsBase<SubarraysWithKDifferentIntegersSlidingWindow>;

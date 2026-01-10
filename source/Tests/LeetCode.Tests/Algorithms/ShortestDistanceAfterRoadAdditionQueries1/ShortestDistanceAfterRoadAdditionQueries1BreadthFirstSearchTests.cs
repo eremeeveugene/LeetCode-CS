@@ -14,5 +14,5 @@ using LeetCode.Algorithms.ShortestDistanceAfterRoadAdditionQueries1;
 namespace LeetCode.Tests.Algorithms.ShortestDistanceAfterRoadAdditionQueries1;
 
 [TestClass]
-public class ShortestDistanceAfterRoadAdditionQueries1BreadthFirstSearchTests :
+public sealed class ShortestDistanceAfterRoadAdditionQueries1BreadthFirstSearchTests :
     ShortestDistanceAfterRoadAdditionQueries1TestsBase<ShortestDistanceAfterRoadAdditionQueries1BreadthFirstSearch>;

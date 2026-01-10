@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RunningSumOf1dArray;
 
 /// <inheritdoc />
-public class RunningSumOf1dArrayIterative : IRunningSumOf1dArray
+public sealed class RunningSumOf1dArrayIterative : IRunningSumOf1dArray
 {
     /// <summary>
     ///     Time complexity - O(n)

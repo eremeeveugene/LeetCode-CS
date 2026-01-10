@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero;
 
 /// <inheritdoc />
-public class NumberOfStepsToReduceNumberToZeroIterative : INumberOfStepsToReduceNumberToZero
+public sealed class NumberOfStepsToReduceNumberToZeroIterative : INumberOfStepsToReduceNumberToZero
 {
     /// <summary>
     ///     Time complexity - O(log n)

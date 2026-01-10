@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DefangingAnIPAddress;
 
 /// <inheritdoc />
-public class DefangingAnIPAddressReplace : IDefangingAnIPAddress
+public sealed class DefangingAnIPAddressReplace : IDefangingAnIPAddress
 {
     /// <summary>
     ///     Time complexity - O(n)

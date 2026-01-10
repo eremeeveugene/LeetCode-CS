@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 
 /// <inheritdoc />
-public class HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing :
+public sealed class HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing :
     IHowManyNumbersAreSmallerThanTheCurrentNumber
 {
     /// <summary>

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CountDaysWithoutMeetings;
 namespace LeetCode.Tests.Algorithms.CountDaysWithoutMeetings;
 
 [TestClass]
-public class CountDaysWithoutMeetingsSortingTests : CountDaysWithoutMeetingsTestsBase<CountDaysWithoutMeetingsSorting>;
+public sealed class CountDaysWithoutMeetingsSortingTests : CountDaysWithoutMeetingsTestsBase<CountDaysWithoutMeetingsSorting>;

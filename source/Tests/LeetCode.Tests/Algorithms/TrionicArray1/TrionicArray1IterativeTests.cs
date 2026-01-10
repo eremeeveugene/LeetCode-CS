@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TrionicArray1;
 namespace LeetCode.Tests.Algorithms.TrionicArray1;
 
 [TestClass]
-public class TrionicArray1IterativeTests : TrionicArray1TestsBase<TrionicArray1Iterative>;
+public sealed class TrionicArray1IterativeTests : TrionicArray1TestsBase<TrionicArray1Iterative>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MakeTheStringGreat;
 namespace LeetCode.Tests.Algorithms.MakeTheStringGreat;
 
 [TestClass]
-public class MakeTheStringGreatIterativeTests : MakeTheStringGreatTestsBase<MakeTheStringGreatIterative>;
+public sealed class MakeTheStringGreatIterativeTests : MakeTheStringGreatTestsBase<MakeTheStringGreatIterative>;

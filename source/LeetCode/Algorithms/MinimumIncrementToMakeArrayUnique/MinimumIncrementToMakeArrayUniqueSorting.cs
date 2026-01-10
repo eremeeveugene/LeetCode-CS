@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumIncrementToMakeArrayUnique;
 
 /// <inheritdoc />
-public class MinimumIncrementToMakeArrayUniqueSorting : IMinimumIncrementToMakeArrayUnique
+public sealed class MinimumIncrementToMakeArrayUniqueSorting : IMinimumIncrementToMakeArrayUnique
 {
     /// <summary>
     ///     Time complexity - O(n log n)

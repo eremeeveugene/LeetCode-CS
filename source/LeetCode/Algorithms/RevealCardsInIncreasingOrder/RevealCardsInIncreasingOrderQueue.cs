@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RevealCardsInIncreasingOrder;
 
 /// <inheritdoc />
-public class RevealCardsInIncreasingOrderQueue : IRevealCardsInIncreasingOrder
+public sealed class RevealCardsInIncreasingOrderQueue : IRevealCardsInIncreasingOrder
 {
     /// <summary>
     ///     Time complexity - O(n log n)

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses;
 namespace LeetCode.Tests.Algorithms.MinimumRemoveToMakeValidParentheses;
 
 [TestClass]
-public class MinimumRemoveToMakeValidParenthesesStackTests :
+public sealed class MinimumRemoveToMakeValidParenthesesStackTests :
     MinimumRemoveToMakeValidParenthesesTestsBase<MinimumRemoveToMakeValidParenthesesStack>;

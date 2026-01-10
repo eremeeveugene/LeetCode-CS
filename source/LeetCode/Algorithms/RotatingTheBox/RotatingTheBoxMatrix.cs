@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RotatingTheBox;
 
 /// <inheritdoc />
-public class RotatingTheBoxMatrix : IRotatingTheBox
+public sealed class RotatingTheBoxMatrix : IRotatingTheBox
 {
     /// <summary>
     ///     Time complexity - O(n * m)

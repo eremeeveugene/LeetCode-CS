@@ -14,5 +14,5 @@ using LeetCode.Algorithms.PartitionEqualSubsetSum;
 namespace LeetCode.Tests.Algorithms.PartitionEqualSubsetSum;
 
 [TestClass]
-public class PartitionEqualSubsetSumDynamicProgrammingTests :
+public sealed class PartitionEqualSubsetSumDynamicProgrammingTests :
     PartitionEqualSubsetSumTestsBase<PartitionEqualSubsetSumDynamicProgramming>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.GenerateTagForVideoCaption;
 
 /// <inheritdoc />
-public class GenerateTagForVideoCaptionCharArray : IGenerateTagForVideoCaption
+public sealed class GenerateTagForVideoCaptionCharArray : IGenerateTagForVideoCaption
 {
     /// <summary>
     ///     Time complexity - O(n)

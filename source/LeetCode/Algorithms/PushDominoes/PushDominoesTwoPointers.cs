@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PushDominoes;
 
 /// <inheritdoc />
-public class PushDominoesTwoPointers : IPushDominoes
+public sealed class PushDominoesTwoPointers : IPushDominoes
 {
     /// <summary>
     ///     Time complexity - O(n)

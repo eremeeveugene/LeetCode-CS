@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountSubmatricesWithAllOnes;
 
 /// <inheritdoc />
-public class CountSubmatricesWithAllOnesHorizontalWidths : ICountSubmatricesWithAllOnes
+public sealed class CountSubmatricesWithAllOnesHorizontalWidths : ICountSubmatricesWithAllOnes
 {
     /// <summary>
     ///     Time complexity - O(m^2 * n)

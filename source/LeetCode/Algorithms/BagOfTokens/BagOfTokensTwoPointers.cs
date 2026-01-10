@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.BagOfTokens;
 
 /// <inheritdoc />
-public class BagOfTokensTwoPointers : IBagOfTokens
+public sealed class BagOfTokensTwoPointers : IBagOfTokens
 {
     /// <summary>
     ///     Time complexity - O(n log n)

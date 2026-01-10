@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.MaximumDepthOfNaryTree;
 
 /// <inheritdoc />
-public class MaximumDepthOfNaryTreeDepthFirstSearchRecursive : IMaximumDepthOfNaryTree
+public sealed class MaximumDepthOfNaryTreeDepthFirstSearchRecursive : IMaximumDepthOfNaryTree
 {
     /// <summary>
     ///     Time complexity - O(n)

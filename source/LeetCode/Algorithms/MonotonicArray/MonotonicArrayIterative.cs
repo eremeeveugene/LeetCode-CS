@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MonotonicArray;
 
 /// <inheritdoc />
-public class MonotonicArrayIterative : IMonotonicArray
+public sealed class MonotonicArrayIterative : IMonotonicArray
 {
     /// <summary>
     ///     Time complexity - O(n)

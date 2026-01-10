@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheWinningPlayerInCoinGame;
 
 /// <inheritdoc />
-public class FindTheWinningPlayerInCoinGameMath : IFindTheWinningPlayerInCoinGame
+public sealed class FindTheWinningPlayerInCoinGameMath : IFindTheWinningPlayerInCoinGame
 {
     /// <summary>
     ///     Time complexity - O(1)

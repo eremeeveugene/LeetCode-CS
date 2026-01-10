@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ComputeAlternatingSum;
 namespace LeetCode.Tests.Algorithms.ComputeAlternatingSum;
 
 [TestClass]
-public class ComputeAlternatingSumSimulationTests : ComputeAlternatingSumTestsBase<ComputeAlternatingSumSimulation>;
+public sealed class ComputeAlternatingSumSimulationTests : ComputeAlternatingSumTestsBase<ComputeAlternatingSumSimulation>;

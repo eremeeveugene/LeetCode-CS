@@ -14,4 +14,4 @@ using LeetCode.Algorithms.NumberOfGoodPairs;
 namespace LeetCode.Tests.Algorithms.NumberOfGoodPairs;
 
 [TestClass]
-public class NumberOfGoodPairsDictionaryTests : NumberOfGoodPairsTestsBase<NumberOfGoodPairsDictionary>;
+public sealed class NumberOfGoodPairsDictionaryTests : NumberOfGoodPairsTestsBase<NumberOfGoodPairsDictionary>;

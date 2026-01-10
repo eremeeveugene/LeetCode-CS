@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CountAndSay;
 namespace LeetCode.Tests.Algorithms.CountAndSay;
 
 [TestClass]
-public class CountAndSayIterativeTests : CountAndSayTestsBase<CountAndSayIterative>;
+public sealed class CountAndSayIterativeTests : CountAndSayTestsBase<CountAndSayIterative>;

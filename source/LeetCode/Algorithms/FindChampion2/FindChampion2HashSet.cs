@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindChampion2;
 
 /// <inheritdoc />
-public class FindChampion2HashSet : IFindChampion2
+public sealed class FindChampion2HashSet : IFindChampion2
 {
     /// <summary>
     ///     Time complexity - O(e + n)

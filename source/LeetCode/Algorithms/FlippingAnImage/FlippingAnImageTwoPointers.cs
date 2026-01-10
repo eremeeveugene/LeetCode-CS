@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FlippingAnImage;
 
 /// <inheritdoc />
-public class FlippingAnImageTwoPointers : IFlippingAnImage
+public sealed class FlippingAnImageTwoPointers : IFlippingAnImage
 {
     /// <summary>
     ///     Time complexity - O(n * m)

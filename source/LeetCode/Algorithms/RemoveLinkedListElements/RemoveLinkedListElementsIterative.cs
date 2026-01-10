@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.RemoveLinkedListElements;
 
 /// <inheritdoc />
-public class RemoveLinkedListElementsIterative : IRemoveLinkedListElements
+public sealed class RemoveLinkedListElementsIterative : IRemoveLinkedListElements
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FirstMissingPositive;
 
 /// <inheritdoc />
-public class FirstMissingPositiveHashSet : IFirstMissingPositive
+public sealed class FirstMissingPositiveHashSet : IFirstMissingPositive
 {
     /// <summary>
     ///     Time complexity - O(n)

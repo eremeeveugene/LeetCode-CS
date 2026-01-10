@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX;
 namespace LeetCode.Tests.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX;
 
 [TestClass]
-public class SpecialArrayWithXElementsGreaterThanOrEqualXBruteForceTests :
+public sealed class SpecialArrayWithXElementsGreaterThanOrEqualXBruteForceTests :
     SpecialArrayWithXElementsGreaterThanOrEqualXTestsBase<SpecialArrayWithXElementsGreaterThanOrEqualXBruteForce>;

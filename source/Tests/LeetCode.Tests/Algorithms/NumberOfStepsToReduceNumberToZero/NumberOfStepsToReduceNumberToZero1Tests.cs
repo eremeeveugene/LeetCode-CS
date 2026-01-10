@@ -14,5 +14,5 @@ using LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero;
 namespace LeetCode.Tests.Algorithms.NumberOfStepsToReduceNumberToZero;
 
 [TestClass]
-public class NumberOfStepsToReduceNumberToZeroBitwiseTests : NumberOfStepsToReduceNumberToZeroTestsBase<
+public sealed class NumberOfStepsToReduceNumberToZeroBitwiseTests : NumberOfStepsToReduceNumberToZeroTestsBase<
     NumberOfStepsToReduceNumberToZeroBitwise>;

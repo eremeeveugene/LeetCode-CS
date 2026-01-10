@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SpiralMatrix;
 
 /// <inheritdoc />
-public class SpiralMatrixSimulation : ISpiralMatrix
+public sealed class SpiralMatrixSimulation : ISpiralMatrix
 {
     /// <summary>
     ///     Time complexity - O(n * m)

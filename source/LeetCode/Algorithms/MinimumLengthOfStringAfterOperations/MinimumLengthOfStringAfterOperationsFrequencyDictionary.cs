@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumLengthOfStringAfterOperations;
 
 /// <inheritdoc />
-public class MinimumLengthOfStringAfterOperationsFrequencyDictionary : IMinimumLengthOfStringAfterOperations
+public sealed class MinimumLengthOfStringAfterOperationsFrequencyDictionary : IMinimumLengthOfStringAfterOperations
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.GetEqualSubstringsWithinBudget;
 
 /// <inheritdoc />
-public class GetEqualSubstringsWithinBudgetSlidingWindow : IGetEqualSubstringsWithinBudget
+public sealed class GetEqualSubstringsWithinBudgetSlidingWindow : IGetEqualSubstringsWithinBudget
 {
     /// <summary>
     ///     Time complexity - O(n)

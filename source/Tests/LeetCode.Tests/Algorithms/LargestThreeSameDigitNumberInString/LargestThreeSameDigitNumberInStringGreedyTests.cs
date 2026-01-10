@@ -14,5 +14,5 @@ using LeetCode.Algorithms.LargestThreeSameDigitNumberInString;
 namespace LeetCode.Tests.Algorithms.LargestThreeSameDigitNumberInString;
 
 [TestClass]
-public class LargestThreeSameDigitNumberInStringGreedyTests :
+public sealed class LargestThreeSameDigitNumberInStringGreedyTests :
     LargestThreeSameDigitNumberInStringTestsBase<LargestThreeSameDigitNumberInStringGreedy>;

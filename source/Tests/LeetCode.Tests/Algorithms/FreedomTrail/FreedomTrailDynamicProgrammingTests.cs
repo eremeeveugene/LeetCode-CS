@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FreedomTrail;
 namespace LeetCode.Tests.Algorithms.FreedomTrail;
 
 [TestClass]
-public class FreedomTrailDynamicProgrammingTests : FreedomTrailTestsBase<FreedomTrailDynamicProgramming>;
+public sealed class FreedomTrailDynamicProgrammingTests : FreedomTrailTestsBase<FreedomTrailDynamicProgramming>;

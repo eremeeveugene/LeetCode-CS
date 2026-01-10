@@ -14,4 +14,4 @@ using LeetCode.Algorithms.StringCompression3;
 namespace LeetCode.Tests.Algorithms.StringCompression3;
 
 [TestClass]
-public class StringCompression3StringBuilderTests : StringCompression3TestsBase<StringCompression3StringBuilder>;
+public sealed class StringCompression3StringBuilderTests : StringCompression3TestsBase<StringCompression3StringBuilder>;

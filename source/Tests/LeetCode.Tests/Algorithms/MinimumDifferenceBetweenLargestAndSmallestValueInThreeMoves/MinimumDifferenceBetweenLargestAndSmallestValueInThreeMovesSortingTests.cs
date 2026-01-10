@@ -14,6 +14,6 @@ using LeetCode.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInThree
 namespace LeetCode.Tests.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves;
 
 [TestClass]
-public class MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesSortingTests :
+public sealed class MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesSortingTests :
     MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesTestsBase<
         MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesSorting>;

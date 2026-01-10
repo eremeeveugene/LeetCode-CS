@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MinimumTimeDifference;
 namespace LeetCode.Tests.Algorithms.MinimumTimeDifference;
 
 [TestClass]
-public class MinimumTimeDifferenceBucketSortTests : MinimumTimeDifferenceTestsBase<MinimumTimeDifferenceBucketSort>;
+public sealed class MinimumTimeDifferenceBucketSortTests : MinimumTimeDifferenceTestsBase<MinimumTimeDifferenceBucketSort>;

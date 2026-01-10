@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumArrayEnd;
 
 /// <inheritdoc />
-public class MinimumArrayEndIterative : IMinimumArrayEnd
+public sealed class MinimumArrayEndIterative : IMinimumArrayEnd
 {
     /// <summary>
     ///     Time complexity - O(n)

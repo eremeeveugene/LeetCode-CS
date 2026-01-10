@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ArithmeticSubarrays;
 
 /// <inheritdoc />
-public class ArithmeticSubarraysHashSet : IArithmeticSubarrays
+public sealed class ArithmeticSubarraysHashSet : IArithmeticSubarrays
 {
     /// <summary>
     ///     Time complexity - O(m * n)

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CheckDivisibilityByDigitSumAndProduct;
 namespace LeetCode.Tests.Algorithms.CheckDivisibilityByDigitSumAndProduct;
 
 [TestClass]
-public class CheckDivisibilityByDigitSumAndProductIterativeTests :
+public sealed class CheckDivisibilityByDigitSumAndProductIterativeTests :
     CheckDivisibilityByDigitSumAndProductTestsBase<CheckDivisibilityByDigitSumAndProductIterative>;

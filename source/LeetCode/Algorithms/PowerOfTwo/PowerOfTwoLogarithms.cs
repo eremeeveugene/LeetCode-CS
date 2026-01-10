@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PowerOfTwo;
 
 /// <inheritdoc />
-public class PowerOfTwoLogarithms : IPowerOfTwo
+public sealed class PowerOfTwoLogarithms : IPowerOfTwo
 {
     /// <summary>
     ///     Time complexity - O(1)

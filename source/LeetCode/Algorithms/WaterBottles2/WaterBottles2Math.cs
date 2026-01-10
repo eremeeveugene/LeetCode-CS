@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.WaterBottles2;
 
 /// <inheritdoc />
-public class WaterBottles2Math : IWaterBottles2
+public sealed class WaterBottles2Math : IWaterBottles2
 {
     private const int QuadraticA = 1;
     private const int LinearMultiplier = 2;

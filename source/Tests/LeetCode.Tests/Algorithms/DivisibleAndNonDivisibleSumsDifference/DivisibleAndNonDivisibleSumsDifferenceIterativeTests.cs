@@ -14,5 +14,5 @@ using LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference;
 namespace LeetCode.Tests.Algorithms.DivisibleAndNonDivisibleSumsDifference;
 
 [TestClass]
-public class DivisibleAndNonDivisibleSumsDifferenceIterativeTests : DivisibleAndNonDivisibleSumsDifferenceTestsBase<
+public sealed class DivisibleAndNonDivisibleSumsDifferenceIterativeTests : DivisibleAndNonDivisibleSumsDifferenceTestsBase<
     DivisibleAndNonDivisibleSumsDifferenceIterative>;

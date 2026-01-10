@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ValidAnagram;
 namespace LeetCode.Tests.Algorithms.ValidAnagram;
 
 [TestClass]
-public class ValidAnagramDictionaryTests : ValidAnagramTestsBase<ValidAnagramDictionary>;
+public sealed class ValidAnagramDictionaryTests : ValidAnagramTestsBase<ValidAnagramDictionary>;

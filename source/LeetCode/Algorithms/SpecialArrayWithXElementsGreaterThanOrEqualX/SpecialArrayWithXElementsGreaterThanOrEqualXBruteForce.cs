@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX;
 
 /// <inheritdoc />
-public class SpecialArrayWithXElementsGreaterThanOrEqualXBruteForce : ISpecialArrayWithXElementsGreaterThanOrEqualX
+public sealed class SpecialArrayWithXElementsGreaterThanOrEqualXBruteForce : ISpecialArrayWithXElementsGreaterThanOrEqualX
 {
     /// <summary>
     ///     Time complexity - O(n^2)

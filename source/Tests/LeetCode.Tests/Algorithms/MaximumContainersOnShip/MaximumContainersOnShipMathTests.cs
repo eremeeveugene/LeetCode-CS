@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MaximumContainersOnShip;
 namespace LeetCode.Tests.Algorithms.MaximumContainersOnShip;
 
 [TestClass]
-public class MaximumContainersOnShipMathTests : MaximumContainersOnShipTestsBase<MaximumContainersOnShipMath>;
+public sealed class MaximumContainersOnShipMathTests : MaximumContainersOnShipTestsBase<MaximumContainersOnShipMath>;

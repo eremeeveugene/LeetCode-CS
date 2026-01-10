@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ContinuousSubarraySum;
 
 /// <inheritdoc />
-public class ContinuousSubarraySumDictionary : IContinuousSubarraySum
+public sealed class ContinuousSubarraySumDictionary : IContinuousSubarraySum
 {
     /// <summary>
     ///     Time complexity - O(n), where n is the length of the input array nums

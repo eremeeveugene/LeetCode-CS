@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NthTribonacciNumber;
 
 /// <inheritdoc />
-public class NthTribonacciNumberMatrixExponentiation : INthTribonacciNumber
+public sealed class NthTribonacciNumberMatrixExponentiation : INthTribonacciNumber
 {
     /// <summary>
     ///     Time complexity - O(log n)

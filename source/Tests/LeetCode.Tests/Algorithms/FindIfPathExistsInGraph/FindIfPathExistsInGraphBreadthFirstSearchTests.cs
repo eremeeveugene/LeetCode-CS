@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindIfPathExistsInGraph;
 namespace LeetCode.Tests.Algorithms.FindIfPathExistsInGraph;
 
 [TestClass]
-public class FindIfPathExistsInGraphBreadthFirstSearchTests : FindIfPathExistsInGraphTestsBase<
+public sealed class FindIfPathExistsInGraphBreadthFirstSearchTests : FindIfPathExistsInGraphTestsBase<
     FindIfPathExistsInGraphBreadthFirstSearch>;

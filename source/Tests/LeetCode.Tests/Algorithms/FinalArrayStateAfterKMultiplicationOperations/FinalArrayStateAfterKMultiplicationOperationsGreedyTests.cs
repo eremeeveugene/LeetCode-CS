@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FinalArrayStateAfterKMultiplicationOperations;
 namespace LeetCode.Tests.Algorithms.FinalArrayStateAfterKMultiplicationOperations;
 
 [TestClass]
-public class FinalArrayStateAfterKMultiplicationOperationsGreedyTests :
+public sealed class FinalArrayStateAfterKMultiplicationOperationsGreedyTests :
     FinalArrayStateAfterKMultiplicationOperationsTestsBase<FinalArrayStateAfterKMultiplicationOperationsGreedy>;

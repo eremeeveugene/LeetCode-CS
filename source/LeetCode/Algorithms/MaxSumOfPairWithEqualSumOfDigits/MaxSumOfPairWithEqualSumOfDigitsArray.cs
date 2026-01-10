@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaxSumOfPairWithEqualSumOfDigits;
 
 /// <inheritdoc />
-public class MaxSumOfPairWithEqualSumOfDigitsDictionary : IMaxSumOfPairWithEqualSumOfDigits
+public sealed class MaxSumOfPairWithEqualSumOfDigitsDictionary : IMaxSumOfPairWithEqualSumOfDigits
 {
     /// <summary>
     ///     Time complexity - O(n)

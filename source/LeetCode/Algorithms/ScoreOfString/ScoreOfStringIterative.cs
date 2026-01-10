@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ScoreOfString;
 
 /// <inheritdoc />
-public class ScoreOfStringIterative : IScoreOfString
+public sealed class ScoreOfStringIterative : IScoreOfString
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumFallingPathSum2;
 namespace LeetCode.Tests.Algorithms.MinimumFallingPathSum2;
 
 [TestClass]
-public class MinimumFallingPathSum2DynamicProgramming2Tests : MinimumFallingPathSum2TestsBase<
+public sealed class MinimumFallingPathSum2DynamicProgramming2Tests : MinimumFallingPathSum2TestsBase<
     MinimumFallingPathSum2DynamicProgramming>;

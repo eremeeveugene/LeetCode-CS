@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.GoatLatin;
 
 /// <inheritdoc />
-public class GoatLatinSimulation : IGoatLatin
+public sealed class GoatLatinSimulation : IGoatLatin
 {
     /// <summary>
     ///     Time complexity - O(n)

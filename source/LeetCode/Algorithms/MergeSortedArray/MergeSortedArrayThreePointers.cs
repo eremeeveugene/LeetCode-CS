@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MergeSortedArray;
 
 /// <inheritdoc />
-public class MergeSortedArrayThreePointers : IMergeSortedArray
+public sealed class MergeSortedArrayThreePointers : IMergeSortedArray
 {
     /// <summary>
     ///     Time complexity - O(m + n)

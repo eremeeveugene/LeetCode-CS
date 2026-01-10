@@ -14,5 +14,5 @@ using LeetCode.Algorithms.New21Game;
 namespace LeetCode.Tests.Algorithms.New21Game;
 
 [TestClass]
-public class New21GameDynamicProgrammingSlidingWindowTests :
+public sealed class New21GameDynamicProgrammingSlidingWindowTests :
     New21GameTestsBase<New21GameDynamicProgrammingSlidingWindow>;

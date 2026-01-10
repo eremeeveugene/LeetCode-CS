@@ -14,6 +14,6 @@ using LeetCode.Algorithms.MinimumDeletionsForKMostKDistinctCharacters;
 namespace LeetCode.Tests.Algorithms.MinimumDeletionsForKMostKDistinctCharacters;
 
 [TestClass]
-public class MinimumDeletionsForKMostKDistinctCharactersFrequencyDictionaryBucketSortTests :
+public sealed class MinimumDeletionsForKMostKDistinctCharactersFrequencyDictionaryBucketSortTests :
     MinimumDeletionsForKMostKDistinctCharactersTestsBase<
         MinimumDeletionsForKMostKDistinctCharactersFrequencyDictionaryBucketSort>;

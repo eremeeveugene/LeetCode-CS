@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DecodeXORedArray;
 
 /// <inheritdoc />
-public class DecodeXORedArrayIterative : IDecodeXORedArray
+public sealed class DecodeXORedArrayIterative : IDecodeXORedArray
 {
     /// <summary>
     ///     Time complexity - O(n)

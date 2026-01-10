@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FreedomTrail;
 
 /// <inheritdoc />
-public class FreedomTrailDynamicProgramming : IFreedomTrail
+public sealed class FreedomTrailDynamicProgramming : IFreedomTrail
 {
     /// <summary>
     ///     Time complexity - O(m * n^2)

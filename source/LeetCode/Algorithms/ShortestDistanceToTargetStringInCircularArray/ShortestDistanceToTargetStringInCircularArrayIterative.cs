@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ShortestDistanceToTargetStringInCircularArray;
 
 /// <inheritdoc />
-public class ShortestDistanceToTargetStringInCircularArrayIterative : IShortestDistanceToTargetStringInCircularArray
+public sealed class ShortestDistanceToTargetStringInCircularArrayIterative : IShortestDistanceToTargetStringInCircularArray
 {
     /// <summary>
     ///     Time complexity - O(n)

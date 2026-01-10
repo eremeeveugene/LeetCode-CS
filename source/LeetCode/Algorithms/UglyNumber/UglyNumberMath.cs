@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.UglyNumber;
 
 /// <inheritdoc />
-public class UglyNumberMath : IUglyNumber
+public sealed class UglyNumberMath : IUglyNumber
 {
     /// <summary>
     ///     Time complexity - O(log n)

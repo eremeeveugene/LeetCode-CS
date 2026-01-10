@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SumMultiples;
 
 /// <inheritdoc />
-public class SumMultiplesMath : ISumMultiples
+public sealed class SumMultiplesMath : ISumMultiples
 {
     /// <summary>
     ///     Time complexity - O(1)

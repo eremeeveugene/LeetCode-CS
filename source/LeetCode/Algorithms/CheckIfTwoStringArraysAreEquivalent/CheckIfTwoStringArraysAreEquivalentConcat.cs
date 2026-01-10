@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent;
 
 /// <inheritdoc />
-public class CheckIfTwoStringArraysAreEquivalentConcat : ICheckIfTwoStringArraysAreEquivalent
+public sealed class CheckIfTwoStringArraysAreEquivalentConcat : ICheckIfTwoStringArraysAreEquivalent
 {
     /// <summary>
     ///     Time complexity - O(n + m)

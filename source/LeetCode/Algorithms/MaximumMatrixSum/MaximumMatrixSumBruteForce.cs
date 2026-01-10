@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumMatrixSum;
 
 /// <inheritdoc />
-public class MaximumMatrixSumBruteForce : IMaximumMatrixSum
+public sealed class MaximumMatrixSumBruteForce : IMaximumMatrixSum
 {
     /// <summary>
     ///     Time complexity - O(n^2)

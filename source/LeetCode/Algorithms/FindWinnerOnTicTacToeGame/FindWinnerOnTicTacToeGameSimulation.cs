@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindWinnerOnTicTacToeGame;
 
 /// <inheritdoc />
-public class FindWinnerOnTicTacToeGameSimulation : IFindWinnerOnTicTacToeGame
+public sealed class FindWinnerOnTicTacToeGameSimulation : IFindWinnerOnTicTacToeGame
 {
     private const int GridSize = 3;
 

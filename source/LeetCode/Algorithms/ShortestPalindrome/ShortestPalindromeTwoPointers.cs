@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ShortestPalindrome;
 
 /// <inheritdoc />
-public class ShortestPalindromeTwoPointers : IShortestPalindrome
+public sealed class ShortestPalindromeTwoPointers : IShortestPalindrome
 {
     /// <summary>
     ///     Time complexity - O(n^2)

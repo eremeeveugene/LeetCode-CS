@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheMaximumSumOfNodeValues;
 
 /// <inheritdoc />
-public class FindTheMaximumSumOfNodeValuesIterative : IFindTheMaximumSumOfNodeValues
+public sealed class FindTheMaximumSumOfNodeValuesIterative : IFindTheMaximumSumOfNodeValues
 {
     /// <summary>
     ///     Time complexity - O(n)

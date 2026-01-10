@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumDifferenceBetweenAdjacentElementsInCircularArray;
 
 /// <inheritdoc />
-public class MaximumDifferenceBetweenAdjacentElementsInCircularArrayIterative :
+public sealed class MaximumDifferenceBetweenAdjacentElementsInCircularArrayIterative :
     IMaximumDifferenceBetweenAdjacentElementsInCircularArray
 {
     /// <summary>

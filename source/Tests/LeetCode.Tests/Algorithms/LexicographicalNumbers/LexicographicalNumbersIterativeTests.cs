@@ -14,4 +14,4 @@ using LeetCode.Algorithms.LexicographicalNumbers;
 namespace LeetCode.Tests.Algorithms.LexicographicalNumbers;
 
 [TestClass]
-public class LexicographicalNumbersIterativeTests : LexicographicalNumbersTestsBase<LexicographicalNumbersIterative>;
+public sealed class LexicographicalNumbersIterativeTests : LexicographicalNumbersTestsBase<LexicographicalNumbersIterative>;

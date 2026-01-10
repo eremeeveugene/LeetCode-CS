@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignHashSet;
 
 /// <inheritdoc />
-public class DesignHashSetBoolArray : DesignHashSetBase
+public sealed class DesignHashSetBoolArray : DesignHashSetBase
 {
     private readonly bool[] _items = new bool[ItemsCount];
 

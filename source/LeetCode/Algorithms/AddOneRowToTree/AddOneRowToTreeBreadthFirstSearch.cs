@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.AddOneRowToTree;
 
 /// <inheritdoc />
-public class AddOneRowToTreeBreadthFirstSearch : IAddOneRowToTree
+public sealed class AddOneRowToTreeBreadthFirstSearch : IAddOneRowToTree
 {
     /// <summary>
     ///     Time complexity - O(n)

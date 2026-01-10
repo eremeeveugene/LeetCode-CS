@@ -14,5 +14,5 @@ using LeetCode.Algorithms.NumberOfGoodLeafNodesPairs;
 namespace LeetCode.Tests.Algorithms.NumberOfGoodLeafNodesPairs;
 
 [TestClass]
-public class NumberOfGoodLeafNodesPairsDepthFirstSearchTests :
+public sealed class NumberOfGoodLeafNodesPairsDepthFirstSearchTests :
     NumberOfGoodLeafNodesPairsTestsBase<NumberOfGoodLeafNodesPairsDepthFirstSearch>;

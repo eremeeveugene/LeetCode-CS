@@ -14,5 +14,5 @@ using LeetCode.Algorithms.MinimumNumberOfChangesToMakeBinaryStringBeautiful;
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfChangesToMakeBinaryStringBeautiful;
 
 [TestClass]
-public class MinimumNumberOfChangesToMakeBinaryStringBeautifulGreedyTests :
+public sealed class MinimumNumberOfChangesToMakeBinaryStringBeautifulGreedyTests :
     MinimumNumberOfChangesToMakeBinaryStringBeautifulTestsBase<MinimumNumberOfChangesToMakeBinaryStringBeautifulGreedy>;

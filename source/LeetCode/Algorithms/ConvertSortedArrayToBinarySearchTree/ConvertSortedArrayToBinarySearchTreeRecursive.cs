@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.ConvertSortedArrayToBinarySearchTree;
 
 /// <inheritdoc />
-public class ConvertSortedArrayToBinarySearchTreeRecursive : IConvertSortedArrayToBinarySearchTree
+public sealed class ConvertSortedArrayToBinarySearchTreeRecursive : IConvertSortedArrayToBinarySearchTree
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,5 +14,5 @@ using LeetCode.Algorithms.InsertGreatestCommonDivisorsInLinkedList;
 namespace LeetCode.Tests.Algorithms.InsertGreatestCommonDivisorsInLinkedList;
 
 [TestClass]
-public class InsertGreatestCommonDivisorsInLinkedListSimulationTests :
+public sealed class InsertGreatestCommonDivisorsInLinkedListSimulationTests :
     InsertGreatestCommonDivisorsInLinkedListTestsBase<InsertGreatestCommonDivisorsInLinkedListSimulation>;

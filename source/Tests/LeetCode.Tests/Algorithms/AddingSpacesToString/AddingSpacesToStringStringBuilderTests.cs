@@ -14,4 +14,4 @@ using LeetCode.Algorithms.AddingSpacesToString;
 namespace LeetCode.Tests.Algorithms.AddingSpacesToString;
 
 [TestClass]
-public class AddingSpacesToStringStringBuilderTests : AddingSpacesToStringTestsBase<AddingSpacesToStringStringBuilder>;
+public sealed class AddingSpacesToStringStringBuilderTests : AddingSpacesToStringTestsBase<AddingSpacesToStringStringBuilder>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.FruitsIntoBaskets2;
 namespace LeetCode.Tests.Algorithms.FruitsIntoBaskets2;
 
 [TestClass]
-public class FruitsIntoBaskets2BruteForceTests : FruitsIntoBaskets2TestsBase<FruitsIntoBaskets2BruteForce>;
+public sealed class FruitsIntoBaskets2BruteForceTests : FruitsIntoBaskets2TestsBase<FruitsIntoBaskets2BruteForce>;

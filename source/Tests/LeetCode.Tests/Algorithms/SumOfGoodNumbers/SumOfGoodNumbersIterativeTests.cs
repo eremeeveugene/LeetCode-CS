@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SumOfGoodNumbers;
 namespace LeetCode.Tests.Algorithms.SumOfGoodNumbers;
 
 [TestClass]
-public class SumOfGoodNumbersIterativeTests : SumOfGoodNumbersTestsBase<SumOfGoodNumbersIterative>;
+public sealed class SumOfGoodNumbersIterativeTests : SumOfGoodNumbersTestsBase<SumOfGoodNumbersIterative>;

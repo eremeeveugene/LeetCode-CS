@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CheckIfParenthesesStringCanBeValid;
 namespace LeetCode.Tests.Algorithms.CheckIfParenthesesStringCanBeValid;
 
 [TestClass]
-public class CheckIfParenthesesStringCanBeValidGreedyTests :
+public sealed class CheckIfParenthesesStringCanBeValidGreedyTests :
     CheckIfParenthesesStringCanBeValidTestsBase<CheckIfParenthesesStringCanBeValidGreedy>;

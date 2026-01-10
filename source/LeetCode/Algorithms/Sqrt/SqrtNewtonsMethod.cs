@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.Sqrt;
 
 /// <inheritdoc />
-public class SqrtNewtonsMethod : ISqrt
+public sealed class SqrtNewtonsMethod : ISqrt
 {
     /// <summary>
     ///     Time complexity - O(log x)

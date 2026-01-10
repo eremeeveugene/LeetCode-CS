@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SmallestEvenMultiple;
 
 /// <inheritdoc />
-public class SmallestEvenMultipleConstant : ISmallestEvenMultiple
+public sealed class SmallestEvenMultipleConstant : ISmallestEvenMultiple
 {
     /// <summary>
     ///     Time complexity - O(1)

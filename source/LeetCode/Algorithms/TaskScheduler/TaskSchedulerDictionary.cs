@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.TaskScheduler;
 
 /// <inheritdoc />
-public class TaskSchedulerDictionary : ITaskScheduler
+public sealed class TaskSchedulerDictionary : ITaskScheduler
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindKthBitInNthBinaryString;
 
 /// <inheritdoc />
-public class FindKthBitInNthBinaryStringRecursive : IFindKthBitInNthBinaryString
+public sealed class FindKthBitInNthBinaryStringRecursive : IFindKthBitInNthBinaryString
 {
     /// <summary>
     ///     Time complexity - O(n)

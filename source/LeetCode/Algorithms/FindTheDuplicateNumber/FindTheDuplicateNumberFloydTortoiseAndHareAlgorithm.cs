@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheDuplicateNumber;
 
 /// <inheritdoc />
-public class FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm : IFindTheDuplicateNumber
+public sealed class FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm : IFindTheDuplicateNumber
 {
     /// <summary>
     ///     Time complexity - O(n)

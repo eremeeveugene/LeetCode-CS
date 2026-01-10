@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LongestCommonPrefix;
 
 /// <inheritdoc />
-public class LongestCommonPrefixBinarySearch : ILongestCommonPrefix
+public sealed class LongestCommonPrefixBinarySearch : ILongestCommonPrefix
 {
     /// <summary>
     ///     Time complexity - O(S log n), where S is the sum of all characters in all strings

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheWinningPlayerInCoinGame;
 
 /// <inheritdoc />
-public class FindTheWinningPlayerInCoinGameSimulation : IFindTheWinningPlayerInCoinGame
+public sealed class FindTheWinningPlayerInCoinGameSimulation : IFindTheWinningPlayerInCoinGame
 {
     /// <summary>
     ///     Time complexity - O(min(x,y))

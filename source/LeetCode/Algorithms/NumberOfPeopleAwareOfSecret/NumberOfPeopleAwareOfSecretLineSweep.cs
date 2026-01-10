@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfPeopleAwareOfSecret;
 
 /// <inheritdoc />
-public class NumberOfPeopleAwareOfSecretLineSweep : INumberOfPeopleAwareOfSecret
+public sealed class NumberOfPeopleAwareOfSecretLineSweep : INumberOfPeopleAwareOfSecret
 {
     private const int Modulo = 1_000_000_007;
 

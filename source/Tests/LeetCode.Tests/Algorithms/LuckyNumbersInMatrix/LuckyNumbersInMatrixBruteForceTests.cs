@@ -14,4 +14,4 @@ using LeetCode.Algorithms.LuckyNumbersInMatrix;
 namespace LeetCode.Tests.Algorithms.LuckyNumbersInMatrix;
 
 [TestClass]
-public class LuckyNumbersInMatrixBruteForceTests : LuckyNumbersInMatrixTestsBase<LuckyNumbersInMatrixBruteForce>;
+public sealed class LuckyNumbersInMatrixBruteForceTests : LuckyNumbersInMatrixTestsBase<LuckyNumbersInMatrixBruteForce>;

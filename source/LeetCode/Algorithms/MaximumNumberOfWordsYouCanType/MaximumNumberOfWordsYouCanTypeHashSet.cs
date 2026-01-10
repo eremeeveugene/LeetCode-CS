@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumNumberOfWordsYouCanType;
 
 /// <inheritdoc />
-public class MaximumNumberOfWordsYouCanTypeHashSet : IMaximumNumberOfWordsYouCanType
+public sealed class MaximumNumberOfWordsYouCanTypeHashSet : IMaximumNumberOfWordsYouCanType
 {
     /// <summary>
     ///     Time complexity - O(n + m), where n is the length of the text and m is the length of brokenLetters

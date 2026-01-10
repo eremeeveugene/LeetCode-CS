@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SortVowelsInString;
 namespace LeetCode.Tests.Algorithms.SortVowelsInString;
 
 [TestClass]
-public class SortVowelsInStringCountingSortTests : SortVowelsInStringTestsBase<SortVowelsInStringCountingSort>;
+public sealed class SortVowelsInStringCountingSortTests : SortVowelsInStringTestsBase<SortVowelsInStringCountingSort>;

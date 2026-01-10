@@ -14,4 +14,4 @@ using LeetCode.Algorithms.RootEqualsSumOfChildren;
 namespace LeetCode.Tests.Algorithms.RootEqualsSumOfChildren;
 
 [TestClass]
-public class RootEqualsSumOfChildrenLinearTests : RootEqualsSumOfChildrenTestsBase<RootEqualsSumOfChildrenLinear>;
+public sealed class RootEqualsSumOfChildrenLinearTests : RootEqualsSumOfChildrenTestsBase<RootEqualsSumOfChildrenLinear>;

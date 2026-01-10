@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList;
 
 /// <inheritdoc />
-public class DoubleNumberRepresentedAsLinkedListIterative : IDoubleNumberRepresentedAsLinkedList
+public sealed class DoubleNumberRepresentedAsLinkedListIterative : IDoubleNumberRepresentedAsLinkedList
 {
     /// <summary>
     ///     Time complexity - O(n)

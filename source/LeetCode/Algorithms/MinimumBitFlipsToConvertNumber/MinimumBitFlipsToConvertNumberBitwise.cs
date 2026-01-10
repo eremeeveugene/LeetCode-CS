@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumBitFlipsToConvertNumber;
 
 /// <inheritdoc />
-public class MinimumBitFlipsToConvertNumberBitwise : IMinimumBitFlipsToConvertNumber
+public sealed class MinimumBitFlipsToConvertNumberBitwise : IMinimumBitFlipsToConvertNumber
 {
     /// <summary>
     ///     Time complexity - O(b), where b is the number of bits in start and goal

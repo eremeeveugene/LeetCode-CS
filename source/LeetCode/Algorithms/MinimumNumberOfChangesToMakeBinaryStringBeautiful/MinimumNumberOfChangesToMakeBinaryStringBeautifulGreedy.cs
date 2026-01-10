@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumNumberOfChangesToMakeBinaryStringBeautiful;
 
 /// <inheritdoc />
-public class MinimumNumberOfChangesToMakeBinaryStringBeautifulGreedy :
+public sealed class MinimumNumberOfChangesToMakeBinaryStringBeautifulGreedy :
     IMinimumNumberOfChangesToMakeBinaryStringBeautiful
 {
     /// <summary>

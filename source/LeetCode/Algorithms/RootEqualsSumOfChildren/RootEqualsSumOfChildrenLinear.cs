@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.RootEqualsSumOfChildren;
 
 /// <inheritdoc />
-public class RootEqualsSumOfChildrenLinear : IRootEqualsSumOfChildren
+public sealed class RootEqualsSumOfChildrenLinear : IRootEqualsSumOfChildren
 {
     /// <summary>
     ///     Time complexity - O(1)

@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.RemoveDuplicatesFromSortedList;
 
 /// <inheritdoc />
-public class RemoveDuplicatesFromSortedListIterativeReverse : IRemoveDuplicatesFromSortedList
+public sealed class RemoveDuplicatesFromSortedListIterativeReverse : IRemoveDuplicatesFromSortedList
 {
     /// <summary>
     ///     Time complexity - O(n)

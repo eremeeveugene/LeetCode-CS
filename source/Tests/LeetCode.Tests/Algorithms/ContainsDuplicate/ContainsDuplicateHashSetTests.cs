@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ContainsDuplicate;
 namespace LeetCode.Tests.Algorithms.ContainsDuplicate;
 
 [TestClass]
-public class ContainsDuplicateHashSetTests : ContainsDuplicateTestsBase<ContainsDuplicateHashSet>;
+public sealed class ContainsDuplicateHashSetTests : ContainsDuplicateTestsBase<ContainsDuplicateHashSet>;

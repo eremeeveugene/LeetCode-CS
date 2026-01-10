@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.StrangePrinter;
 
 /// <inheritdoc />
-public class StrangePrinterDynamicProgramming : IStrangePrinter
+public sealed class StrangePrinterDynamicProgramming : IStrangePrinter
 {
     /// <summary>
     ///     Time complexity - O(n^3)

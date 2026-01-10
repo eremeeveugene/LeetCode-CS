@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LongestSubarrayWithMaximumBitwiseAND;
 
 /// <inheritdoc />
-public class LongestSubarrayWithMaximumBitwiseANDIterative : ILongestSubarrayWithMaximumBitwiseAND
+public sealed class LongestSubarrayWithMaximumBitwiseANDIterative : ILongestSubarrayWithMaximumBitwiseAND
 {
     /// <summary>
     ///     Time complexity - O(n)

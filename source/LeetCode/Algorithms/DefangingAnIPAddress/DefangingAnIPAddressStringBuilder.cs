@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.DefangingAnIPAddress;
 
 /// <inheritdoc />
-public class DefangingAnIPAddressStringBuilder : IDefangingAnIPAddress
+public sealed class DefangingAnIPAddressStringBuilder : IDefangingAnIPAddress
 {
     /// <summary>
     ///     Time complexity - O(n)

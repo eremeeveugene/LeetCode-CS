@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindTheMiddleIndexInArray;
 namespace LeetCode.Tests.Algorithms.FindTheMiddleIndexInArray;
 
 [TestClass]
-public class FindTheMiddleIndexInArrayIterativeTests :
+public sealed class FindTheMiddleIndexInArrayIterativeTests :
     FindTheMiddleIndexInArrayTestsBase<FindTheMiddleIndexInArrayIterative>;

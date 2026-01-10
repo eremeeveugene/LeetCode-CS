@@ -14,4 +14,4 @@ using LeetCode.Algorithms.WordSearch;
 namespace LeetCode.Tests.Algorithms.WordSearch;
 
 [TestClass]
-public class WordSearchRecursiveTests : WordSearchTestsBase<WordSearchRecursive>;
+public sealed class WordSearchRecursiveTests : WordSearchTestsBase<WordSearchRecursive>;

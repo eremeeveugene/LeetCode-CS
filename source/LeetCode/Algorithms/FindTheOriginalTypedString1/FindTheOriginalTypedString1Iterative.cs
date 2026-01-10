@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheOriginalTypedString1;
 
 /// <inheritdoc />
-public class FindTheOriginalTypedString1Iterative : IFindTheOriginalTypedString1
+public sealed class FindTheOriginalTypedString1Iterative : IFindTheOriginalTypedString1
 {
     /// <summary>
     ///     Time complexity - O(n)

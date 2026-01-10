@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SubarraysWithKDifferentIntegers;
 
 /// <inheritdoc />
-public class SubarraysWithKDifferentIntegersSlidingWindow : ISubarraysWithKDifferentIntegers
+public sealed class SubarraysWithKDifferentIntegersSlidingWindow : ISubarraysWithKDifferentIntegers
 {
     /// <summary>
     ///     Time complexity - O(n)

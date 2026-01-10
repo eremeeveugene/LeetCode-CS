@@ -14,5 +14,5 @@ using LeetCode.Algorithms.LargestCombinationWithBitwiseANDGreaterThanZero;
 namespace LeetCode.Tests.Algorithms.LargestCombinationWithBitwiseANDGreaterThanZero;
 
 [TestClass]
-public class LargestCombinationWithBitwiseANDGreaterThanZeroIterativeTests :
+public sealed class LargestCombinationWithBitwiseANDGreaterThanZeroIterativeTests :
     LargestCombinationWithBitwiseANDGreaterThanZeroTestsBase<LargestCombinationWithBitwiseANDGreaterThanZeroIterative>;

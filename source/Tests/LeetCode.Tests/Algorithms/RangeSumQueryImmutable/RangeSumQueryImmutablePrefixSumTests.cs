@@ -14,7 +14,7 @@ using LeetCode.Algorithms.RangeSumQueryImmutable;
 namespace LeetCode.Tests.Algorithms.RangeSumQueryImmutable;
 
 [TestClass]
-public class RangeSumQueryImmutablePrefixSumTests : RangeSumQueryImmutableTestsBase
+public sealed class RangeSumQueryImmutablePrefixSumTests : RangeSumQueryImmutableTestsBase
 {
     protected override IRangeSumQueryImmutable GetSolution(int[] nums)
     {

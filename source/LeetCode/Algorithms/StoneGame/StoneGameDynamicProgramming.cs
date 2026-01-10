@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.StoneGame;
 
 /// <inheritdoc />
-public class StoneGameDynamicProgramming : IStoneGame
+public sealed class StoneGameDynamicProgramming : IStoneGame
 {
     /// <summary>
     ///     Time complexity - O(piles.Length^2)

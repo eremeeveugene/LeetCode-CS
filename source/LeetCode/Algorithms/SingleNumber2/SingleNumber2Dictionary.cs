@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SingleNumber2;
 
 /// <inheritdoc />
-public class SingleNumber2Dictionary : ISingleNumber2
+public sealed class SingleNumber2Dictionary : ISingleNumber2
 {
     /// <summary>
     ///     Time complexity - O(n)

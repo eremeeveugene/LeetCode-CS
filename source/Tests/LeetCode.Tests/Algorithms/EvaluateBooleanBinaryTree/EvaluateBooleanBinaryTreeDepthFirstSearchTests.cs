@@ -14,5 +14,5 @@ using LeetCode.Algorithms.EvaluateBooleanBinaryTree;
 namespace LeetCode.Tests.Algorithms.EvaluateBooleanBinaryTree;
 
 [TestClass]
-public class EvaluateBooleanBinaryTreeDepthFirstSearchTests : EvaluateBooleanBinaryTreeTestsBase<
+public sealed class EvaluateBooleanBinaryTreeDepthFirstSearchTests : EvaluateBooleanBinaryTreeTestsBase<
     EvaluateBooleanBinaryTreeDepthFirstSearch>;

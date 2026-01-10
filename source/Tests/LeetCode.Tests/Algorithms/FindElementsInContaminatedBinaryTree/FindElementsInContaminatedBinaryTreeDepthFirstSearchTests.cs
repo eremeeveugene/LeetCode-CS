@@ -15,7 +15,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Tests.Algorithms.FindElementsInContaminatedBinaryTree;
 
 [TestClass]
-public class FindElementsInContaminatedBinaryTreeDepthFirstSearchTests : FindElementsInContaminatedBinaryTreeTestsBase
+public sealed class FindElementsInContaminatedBinaryTreeDepthFirstSearchTests : FindElementsInContaminatedBinaryTreeTestsBase
 {
     protected override IFindElementsInContaminatedBinaryTree GetSolution(TreeNode root)
     {

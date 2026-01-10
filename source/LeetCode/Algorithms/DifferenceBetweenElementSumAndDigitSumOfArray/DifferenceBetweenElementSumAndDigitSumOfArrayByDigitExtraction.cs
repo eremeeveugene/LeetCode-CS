@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray;
 
 /// <inheritdoc />
-public class DifferenceBetweenElementSumAndDigitSumOfArrayByDigitExtraction :
+public sealed class DifferenceBetweenElementSumAndDigitSumOfArrayByDigitExtraction :
     IDifferenceBetweenElementSumAndDigitSumOfArray
 {
     /// <summary>

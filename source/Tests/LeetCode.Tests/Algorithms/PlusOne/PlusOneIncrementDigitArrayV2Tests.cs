@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PlusOne;
 namespace LeetCode.Tests.Algorithms.PlusOne;
 
 [TestClass]
-public class PlusOneIncrementDigitArrayV2Tests : PlusOneTestsBase<PlusOneIncrementDigitArrayV2>;
+public sealed class PlusOneIncrementDigitArrayV2Tests : PlusOneTestsBase<PlusOneIncrementDigitArrayV2>;

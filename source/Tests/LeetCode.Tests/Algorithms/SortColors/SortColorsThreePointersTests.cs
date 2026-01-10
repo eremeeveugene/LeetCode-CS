@@ -14,4 +14,4 @@ using LeetCode.Algorithms.SortColors;
 namespace LeetCode.Tests.Algorithms.SortColors;
 
 [TestClass]
-public class SortColorsThreePointersTests : SortColorsTestsBase<SortColorsThreePointers>;
+public sealed class SortColorsThreePointersTests : SortColorsTestsBase<SortColorsThreePointers>;

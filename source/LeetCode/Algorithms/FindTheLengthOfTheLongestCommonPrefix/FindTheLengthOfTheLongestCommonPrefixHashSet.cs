@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix;
 
 /// <inheritdoc />
-public class FindTheLengthOfTheLongestCommonPrefixHashSet : IFindTheLengthOfTheLongestCommonPrefix
+public sealed class FindTheLengthOfTheLongestCommonPrefixHashSet : IFindTheLengthOfTheLongestCommonPrefix
 {
     /// <summary>
     ///     Time complexity - O(m * d1 + n * d2), where m is the number of elements in arr1, n is the number of elements in

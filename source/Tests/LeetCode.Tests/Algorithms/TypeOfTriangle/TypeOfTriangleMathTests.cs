@@ -14,4 +14,4 @@ using LeetCode.Algorithms.TypeOfTriangle;
 namespace LeetCode.Tests.Algorithms.TypeOfTriangle;
 
 [TestClass]
-public class TypeOfTriangleMathTests : TypeOfTriangleTestsBase<TypeOfTriangleMath>;
+public sealed class TypeOfTriangleMathTests : TypeOfTriangleTestsBase<TypeOfTriangleMath>;

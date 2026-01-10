@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindMissingElements;
 
 /// <inheritdoc />
-public class FindMissingElementsSorting : IFindMissingElements
+public sealed class FindMissingElementsSorting : IFindMissingElements
 {
     /// <summary>
     ///     Time complexity - O(n log n)

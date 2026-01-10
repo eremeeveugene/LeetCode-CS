@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.BestSightseeingPair;
 
 /// <inheritdoc />
-public class BestSightseeingPairBruteForce : IBestSightseeingPair
+public sealed class BestSightseeingPairBruteForce : IBestSightseeingPair
 {
     /// <summary>
     ///     Time complexity - O(n^2)

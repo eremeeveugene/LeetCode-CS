@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ArithmeticSubarrays;
 namespace LeetCode.Tests.Algorithms.ArithmeticSubarrays;
 
 [TestClass]
-public class ArithmeticSubarraysHashSetTests : ArithmeticSubarraysTestsBase<ArithmeticSubarraysHashSet>;
+public sealed class ArithmeticSubarraysHashSetTests : ArithmeticSubarraysTestsBase<ArithmeticSubarraysHashSet>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MinimumArrayEnd;
 namespace LeetCode.Tests.Algorithms.MinimumArrayEnd;
 
 [TestClass]
-public class MinimumArrayEndIterativeTests : MinimumArrayEndTestsBase<MinimumArrayEndIterative>;
+public sealed class MinimumArrayEndIterativeTests : MinimumArrayEndTestsBase<MinimumArrayEndIterative>;

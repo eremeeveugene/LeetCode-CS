@@ -14,7 +14,7 @@ using System.Diagnostics.CodeAnalysis;
 namespace LeetCode.Core.Exceptions;
 
 [ExcludeFromCodeCoverage]
-public class ListNodeBuildException : InvalidOperationException
+public sealed class ListNodeBuildException : InvalidOperationException
 {
     public ListNodeBuildException() : base("Failed to build ListNode.")
     {

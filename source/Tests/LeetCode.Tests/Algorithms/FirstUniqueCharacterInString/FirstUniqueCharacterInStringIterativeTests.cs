@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FirstUniqueCharacterInString;
 namespace LeetCode.Tests.Algorithms.FirstUniqueCharacterInString;
 
 [TestClass]
-public class FirstUniqueCharacterInStringIterativeTests :
+public sealed class FirstUniqueCharacterInStringIterativeTests :
     FirstUniqueCharacterInStringTestsBase<FirstUniqueCharacterInStringIterative>;

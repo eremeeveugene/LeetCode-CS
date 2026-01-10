@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CountingBits;
 namespace LeetCode.Tests.Algorithms.CountingBits;
 
 [TestClass]
-public class CountingBitsIterativeTests : CountingBitsTestsBase<CountingBitsIterative>;
+public sealed class CountingBitsIterativeTests : CountingBitsTestsBase<CountingBitsIterative>;

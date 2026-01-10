@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaximumDifferenceBetweenEvenAndOddFrequency1;
 
 /// <inheritdoc />
-public class MaximumDifferenceBetweenEvenAndOddFrequency1FrequencyArray :
+public sealed class MaximumDifferenceBetweenEvenAndOddFrequency1FrequencyArray :
     IMaximumDifferenceBetweenEvenAndOddFrequency1
 {
     /// <summary>

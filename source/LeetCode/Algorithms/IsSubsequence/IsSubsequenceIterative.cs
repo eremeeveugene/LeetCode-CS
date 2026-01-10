@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.IsSubsequence;
 
 /// <inheritdoc />
-public class IsSubsequenceIterative : IIsSubsequence
+public sealed class IsSubsequenceIterative : IIsSubsequence
 {
     /// <summary>
     ///     Time complexity - O(n * m)

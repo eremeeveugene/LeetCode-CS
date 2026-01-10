@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LargestLocalValuesInMatrix;
 
 /// <inheritdoc />
-public class LargestLocalValuesInMatrixBruteForce : ILargestLocalValuesInMatrix
+public sealed class LargestLocalValuesInMatrixBruteForce : ILargestLocalValuesInMatrix
 {
     /// <summary>
     ///     Time complexity - O(n^2)

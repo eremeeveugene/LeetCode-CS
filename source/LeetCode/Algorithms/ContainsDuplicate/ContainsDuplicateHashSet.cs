@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ContainsDuplicate;
 
 /// <inheritdoc />
-public class ContainsDuplicateHashSet : IContainsDuplicate
+public sealed class ContainsDuplicateHashSet : IContainsDuplicate
 {
     /// <summary>
     ///     Time complexity - O(n)

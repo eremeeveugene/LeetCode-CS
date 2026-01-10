@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountNumberOfMaximumBitwiseORSubsets;
 
 /// <inheritdoc />
-public class CountNumberOfMaximumBitwiseORSubsetsBacktracking : ICountNumberOfMaximumBitwiseORSubsets
+public sealed class CountNumberOfMaximumBitwiseORSubsetsBacktracking : ICountNumberOfMaximumBitwiseORSubsets
 {
     /// <summary>
     ///     Time complexity - O(2^n)

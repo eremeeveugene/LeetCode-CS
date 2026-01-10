@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SortArrayByIncreasingFrequency;
 namespace LeetCode.Tests.Algorithms.SortArrayByIncreasingFrequency;
 
 [TestClass]
-public class SortArrayByIncreasingFrequencyDictionaryTests : SortArrayByIncreasingFrequencyTestsBase<
+public sealed class SortArrayByIncreasingFrequencyDictionaryTests : SortArrayByIncreasingFrequencyTestsBase<
     SortArrayByIncreasingFrequencyDictionary>;

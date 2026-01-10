@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FinalArrayStateAfterKMultiplicationOperations;
 namespace LeetCode.Tests.Algorithms.FinalArrayStateAfterKMultiplicationOperations;
 
 [TestClass]
-public class FinalArrayStateAfterKMultiplicationOperationsPriorityQueueTests :
+public sealed class FinalArrayStateAfterKMultiplicationOperationsPriorityQueueTests :
     FinalArrayStateAfterKMultiplicationOperationsTestsBase<FinalArrayStateAfterKMultiplicationOperationsPriorityQueue>;

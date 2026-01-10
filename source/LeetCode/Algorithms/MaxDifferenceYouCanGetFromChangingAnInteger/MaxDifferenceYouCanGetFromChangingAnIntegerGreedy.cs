@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MaxDifferenceYouCanGetFromChangingAnInteger;
 
 /// <inheritdoc />
-public class MaxDifferenceYouCanGetFromChangingAnIntegerGreedy : IMaxDifferenceYouCanGetFromChangingAnInteger
+public sealed class MaxDifferenceYouCanGetFromChangingAnIntegerGreedy : IMaxDifferenceYouCanGetFromChangingAnInteger
 {
     /// <summary>
     ///     Time complexity - O(log n)

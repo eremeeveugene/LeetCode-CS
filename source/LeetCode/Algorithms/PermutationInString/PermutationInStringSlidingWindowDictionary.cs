@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PermutationInString;
 
 /// <inheritdoc />
-public class PermutationInStringSlidingWindowDictionary : IPermutationInString
+public sealed class PermutationInStringSlidingWindowDictionary : IPermutationInString
 {
     /// <summary>
     ///     Time complexity - O(n + m), where n is the length of s1 and m is the length of s2

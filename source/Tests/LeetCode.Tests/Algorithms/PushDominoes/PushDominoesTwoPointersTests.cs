@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PushDominoes;
 namespace LeetCode.Tests.Algorithms.PushDominoes;
 
 [TestClass]
-public class PushDominoesTwoPointersTests : PushDominoesTestsBase<PushDominoesTwoPointers>;
+public sealed class PushDominoesTwoPointersTests : PushDominoesTestsBase<PushDominoesTwoPointers>;

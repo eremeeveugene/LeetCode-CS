@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PowerOfFour;
 namespace LeetCode.Tests.Algorithms.PowerOfFour;
 
 [TestClass]
-public class PowerOfFourRecursiveTests : PowerOfFourTestsBase<PowerOfFourRecursive>;
+public sealed class PowerOfFourRecursiveTests : PowerOfFourTestsBase<PowerOfFourRecursive>;

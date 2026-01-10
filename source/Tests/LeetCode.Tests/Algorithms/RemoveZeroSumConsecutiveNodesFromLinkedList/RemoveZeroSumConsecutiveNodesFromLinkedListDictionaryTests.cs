@@ -14,5 +14,5 @@ using LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList;
 namespace LeetCode.Tests.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList;
 
 [TestClass]
-public class RemoveZeroSumConsecutiveNodesFromLinkedListDictionaryTests :
+public sealed class RemoveZeroSumConsecutiveNodesFromLinkedListDictionaryTests :
     RemoveZeroSumConsecutiveNodesFromLinkedListTestsBase<RemoveZeroSumConsecutiveNodesFromLinkedListDictionary>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumEqualSumOfTwoArraysAfterReplacingZeros;
 
 /// <inheritdoc />
-public class MinimumEqualSumOfTwoArraysAfterReplacingZerosGreedy : IMinimumEqualSumOfTwoArraysAfterReplacingZeros
+public sealed class MinimumEqualSumOfTwoArraysAfterReplacingZerosGreedy : IMinimumEqualSumOfTwoArraysAfterReplacingZeros
 {
     /// <summary>
     ///     Time complexity - O(n + m)

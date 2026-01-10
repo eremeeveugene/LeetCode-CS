@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FruitsIntoBaskets2;
 
 /// <inheritdoc />
-public class FruitsIntoBaskets2BruteForce : IFruitsIntoBaskets2
+public sealed class FruitsIntoBaskets2BruteForce : IFruitsIntoBaskets2
 {
     /// <summary>
     ///     Time complexity - O(n * m)

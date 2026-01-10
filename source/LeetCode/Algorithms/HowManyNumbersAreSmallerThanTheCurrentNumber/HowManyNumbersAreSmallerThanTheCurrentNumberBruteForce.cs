@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 
 /// <inheritdoc />
-public class HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce : IHowManyNumbersAreSmallerThanTheCurrentNumber
+public sealed class HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce : IHowManyNumbersAreSmallerThanTheCurrentNumber
 {
     /// <summary>
     ///     Time complexity - O(n^2)

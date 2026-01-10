@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ExcelSheetColumnNumber;
 
 /// <inheritdoc />
-public class ExcelSheetColumnNumberIterative : IExcelSheetColumnNumber
+public sealed class ExcelSheetColumnNumberIterative : IExcelSheetColumnNumber
 {
     private const int ColumnsCount = 26;
 

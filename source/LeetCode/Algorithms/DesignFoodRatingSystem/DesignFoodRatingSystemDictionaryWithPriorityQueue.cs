@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignFoodRatingSystem;
 
 /// <inheritdoc />
-public class DesignFoodRatingSystemDictionaryWithPriorityQueue : IDesignFoodRatingSystem
+public sealed class DesignFoodRatingSystemDictionaryWithPriorityQueue : IDesignFoodRatingSystem
 {
     private readonly Dictionary<string, PriorityQueue<FoodRating, FoodRating>> _cuisineToFoodRatingsDictionary = [];
     private readonly Dictionary<string, string> _foodToCuisineDictionary = [];

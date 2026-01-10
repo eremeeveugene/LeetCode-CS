@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CombinationSum2;
 
 /// <inheritdoc />
-public class CombinationSum2Backtracking : ICombinationSum2
+public sealed class CombinationSum2Backtracking : ICombinationSum2
 {
     /// <summary>
     ///     Time complexity - O(2^n * k)

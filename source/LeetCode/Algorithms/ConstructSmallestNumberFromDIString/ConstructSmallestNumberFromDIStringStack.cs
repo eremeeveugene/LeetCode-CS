@@ -14,7 +14,7 @@ using System.Text;
 namespace LeetCode.Algorithms.ConstructSmallestNumberFromDIString;
 
 /// <inheritdoc />
-public class ConstructSmallestNumberFromDIStringStack : IConstructSmallestNumberFromDIString
+public sealed class ConstructSmallestNumberFromDIStringStack : IConstructSmallestNumberFromDIString
 {
     /// <summary>
     ///     Time complexity - O(n)

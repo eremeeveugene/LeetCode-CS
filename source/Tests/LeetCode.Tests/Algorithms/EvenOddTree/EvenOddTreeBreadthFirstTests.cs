@@ -14,4 +14,4 @@ using LeetCode.Algorithms.EvenOddTree;
 namespace LeetCode.Tests.Algorithms.EvenOddTree;
 
 [TestClass]
-public class EvenOddTreeBreadthFirstTests : EvenOddTreeTestsBase<EvenOddTreeBreadthFirst>;
+public sealed class EvenOddTreeBreadthFirstTests : EvenOddTreeTestsBase<EvenOddTreeBreadthFirst>;

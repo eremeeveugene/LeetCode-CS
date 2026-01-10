@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PowerOfTwo;
 namespace LeetCode.Tests.Algorithms.PowerOfTwo;
 
 [TestClass]
-public class PowerOfTwoLogarithmsTests : PowerOfTwoTestsBase<PowerOfTwoLogarithms>;
+public sealed class PowerOfTwoLogarithmsTests : PowerOfTwoTestsBase<PowerOfTwoLogarithms>;

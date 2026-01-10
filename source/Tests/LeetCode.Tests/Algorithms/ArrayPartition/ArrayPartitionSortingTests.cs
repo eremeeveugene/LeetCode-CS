@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ArrayPartition;
 namespace LeetCode.Tests.Algorithms.ArrayPartition;
 
 [TestClass]
-public class ArrayPartitionSortingTests : ArrayPartitionTestsBase<ArrayPartitionSorting>;
+public sealed class ArrayPartitionSortingTests : ArrayPartitionTestsBase<ArrayPartitionSorting>;

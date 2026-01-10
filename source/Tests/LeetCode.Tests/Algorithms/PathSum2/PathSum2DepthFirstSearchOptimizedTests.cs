@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PathSum2;
 namespace LeetCode.Tests.Algorithms.PathSum2;
 
 [TestClass]
-public class PathSum2DepthFirstSearchOptimizedTests : PathSum2TestsBase<PathSum2DepthFirstSearchOptimized>;
+public sealed class PathSum2DepthFirstSearchOptimizedTests : PathSum2TestsBase<PathSum2DepthFirstSearchOptimized>;

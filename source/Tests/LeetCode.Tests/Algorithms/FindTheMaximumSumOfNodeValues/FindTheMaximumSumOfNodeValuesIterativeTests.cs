@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindTheMaximumSumOfNodeValues;
 namespace LeetCode.Tests.Algorithms.FindTheMaximumSumOfNodeValues;
 
 [TestClass]
-public class FindTheMaximumSumOfNodeValuesIterativeTests :
+public sealed class FindTheMaximumSumOfNodeValuesIterativeTests :
     FindTheMaximumSumOfNodeValuesTestsBase<FindTheMaximumSumOfNodeValuesIterative>;

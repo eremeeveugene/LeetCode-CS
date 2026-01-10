@@ -14,4 +14,4 @@ using LeetCode.Algorithms.UglyNumber;
 namespace LeetCode.Tests.Algorithms.UglyNumber;
 
 [TestClass]
-public class UglyNumberMathTests : UglyNumberTestsBase<UglyNumberMath>;
+public sealed class UglyNumberMathTests : UglyNumberTestsBase<UglyNumberMath>;

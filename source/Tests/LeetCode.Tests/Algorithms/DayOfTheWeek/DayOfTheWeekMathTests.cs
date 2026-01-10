@@ -14,4 +14,4 @@ using LeetCode.Algorithms.DayOfTheWeek;
 namespace LeetCode.Tests.Algorithms.DayOfTheWeek;
 
 [TestClass]
-public class DayOfTheWeekMathTests : DayOfTheWeekTestsBase<DayOfTheWeekMath>;
+public sealed class DayOfTheWeekMathTests : DayOfTheWeekTestsBase<DayOfTheWeekMath>;

@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CustomSortString;
 namespace LeetCode.Tests.Algorithms.CustomSortString;
 
 [TestClass]
-public class CustomSortStringDictionarySortingTests : CustomSortStringTestsBase<CustomSortStringDictionarySorting>;
+public sealed class CustomSortStringDictionarySortingTests : CustomSortStringTestsBase<CustomSortStringDictionarySorting>;

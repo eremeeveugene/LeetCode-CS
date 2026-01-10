@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.KthSmallestPrimeFraction;
 
 /// <inheritdoc />
-public class KthSmallestPrimeFractionBruteForce : IKthSmallestPrimeFraction
+public sealed class KthSmallestPrimeFractionBruteForce : IKthSmallestPrimeFraction
 {
     /// <summary>
     ///     Time complexity - O(n^2 log n)

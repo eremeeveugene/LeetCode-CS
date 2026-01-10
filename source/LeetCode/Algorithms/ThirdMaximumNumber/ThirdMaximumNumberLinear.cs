@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ThirdMaximumNumber;
 
 /// <inheritdoc />
-public class ThirdMaximumNumberLinear : IThirdMaximumNumber
+public sealed class ThirdMaximumNumberLinear : IThirdMaximumNumber
 {
     /// <summary>
     ///     Time complexity - O(n)

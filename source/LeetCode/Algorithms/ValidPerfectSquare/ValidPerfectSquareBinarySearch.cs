@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.ValidPerfectSquare;
 
 /// <inheritdoc />
-public class ValidPerfectSquareBinarySearch : IValidPerfectSquare
+public sealed class ValidPerfectSquareBinarySearch : IValidPerfectSquare
 {
     /// <summary>
     ///     Time complexity - O(log n)

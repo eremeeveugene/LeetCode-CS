@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MagicSquaresInGrid;
 namespace LeetCode.Tests.Algorithms.MagicSquaresInGrid;
 
 [TestClass]
-public class MagicSquaresInGridBruteForceTests : MagicSquaresInGridTestsBase<MagicSquaresInGridBruteForce>;
+public sealed class MagicSquaresInGridBruteForceTests : MagicSquaresInGridTestsBase<MagicSquaresInGridBruteForce>;
