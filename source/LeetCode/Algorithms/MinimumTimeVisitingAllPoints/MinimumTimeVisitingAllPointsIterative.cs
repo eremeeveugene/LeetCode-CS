@@ -9,45 +9,30 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.TheTwoSneakyNumbersOfDigitville;
+namespace LeetCode.Algorithms.MinimumTimeVisitingAllPoints;
 
 /// <inheritdoc />
-public sealed class TheTwoSneakyNumbersOfDigitvilleArray : ITheTwoSneakyNumbersOfDigitville
+public sealed class MinimumTimeVisitingAllPointsIterative : IMinimumTimeVisitingAllPoints
 {
-    private const int MaxNumber = 100;
-    private const int ResultLength = 2;
-
     /// <summary>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
     /// </summary>
-    /// <param name="nums"></param>
+    /// <param name="points"></param>
     /// <returns></returns>
-    public int[] GetSneakyNumbers(int[] nums)
+    public int MinTimeToVisitAllPoints(int[][] points)
     {
-        var result = new int[ResultLength];
+        var result = 0;
 
-        Span<bool> numbers = stackalloc bool[MaxNumber];
-
-        var resultIndex = 0;
-
-        foreach (var num in nums)
+        for (var i = 0; i < points.Length - 1; i++)
         {
-            if (numbers[num])
-            {
-                result[resultIndex] = num;
+            var point = points[i];
+            var nextPoint = points[i + 1];
 
-                resultIndex++;
+            var dx = Math.Abs(nextPoint[0] - point[0]);
+            var dy = Math.Abs(nextPoint[1] - point[1]);
 
-                if (resultIndex == ResultLength)
-                {
-                    break;
-                }
-            }
-            else
-            {
-                numbers[num] = true;
-            }
+            result += Math.Max(dx, dy);
         }
 
         return result;
