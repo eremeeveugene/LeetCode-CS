@@ -16,7 +16,6 @@ public sealed class TheTwoSneakyNumbersOfDigitvilleArray : ITheTwoSneakyNumbersO
 {
     private const int MaxNumber = 100;
     private const int ResultLength = 2;
-    private static readonly int[] Result = new int[ResultLength];
 
     /// <summary>
     ///     Time complexity - O(n)
@@ -26,6 +25,8 @@ public sealed class TheTwoSneakyNumbersOfDigitvilleArray : ITheTwoSneakyNumbersO
     /// <returns></returns>
     public int[] GetSneakyNumbers(int[] nums)
     {
+        var result = new int[ResultLength];
+
         Span<bool> numbers = stackalloc bool[MaxNumber];
 
         var resultIndex = 0;
@@ -34,7 +35,7 @@ public sealed class TheTwoSneakyNumbersOfDigitvilleArray : ITheTwoSneakyNumbersO
         {
             if (numbers[num])
             {
-                Result[resultIndex] = num;
+                result[resultIndex] = num;
 
                 resultIndex++;
 
@@ -49,6 +50,6 @@ public sealed class TheTwoSneakyNumbersOfDigitvilleArray : ITheTwoSneakyNumbersO
             }
         }
 
-        return Result;
+        return result;
     }
 }
