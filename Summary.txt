@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/12/2026 - 10:40:13 AM
-  Coverage date: 1/12/2026 - 10:39:02 AM - 1/12/2026 - 10:39:20 AM
+  Generated on: 1/14/2026 - 1:11:01 PM
+  Coverage date: 1/14/2026 - 1:09:40 PM - 1/14/2026 - 1:10:07 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1129
-  Files: 1129
+  Classes: 1130
+  Files: 1130
   Line coverage: 97.4%
-  Covered lines: 24943
-  Uncovered lines: 652
-  Coverable lines: 25595
-  Total lines: 63715
-  Branch coverage: 95% (9332 of 9819)
-  Covered branches: 9332
-  Total branches: 9819
-  Method coverage: 98.9% (1680 of 1697)
-  Full method coverage: 87.5% (1486 of 1697)
-  Covered methods: 1680
+  Covered lines: 24968
+  Uncovered lines: 656
+  Coverable lines: 25624
+  Total lines: 63782
+  Branch coverage: 95% (9351 of 9843)
+  Covered branches: 9351
+  Total branches: 9843
+  Method coverage: 98.9% (1681 of 1698)
+  Full method coverage: 87.5% (1486 of 1698)
+  Covered methods: 1681
   Fully covered methods: 1486
-  Total methods: 1697
+  Total methods: 1698
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1071,6 +1071,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.TotalCharactersInStringAfterTransformations1.TotalCharactersInStringAfterTransformations1Counting                                  100%
   LeetCode.Algorithms.TransformArrayByParity.TransformArrayByParityTwoPass                                                                               100%
   LeetCode.Algorithms.TransformArrayByParity.TransformArrayByParityTwoPointers                                                                           100%
+  LeetCode.Algorithms.TransformArrayToAllEqualElements.TransformArrayToAllEqualElementsGreedy                                                           86.2%
   LeetCode.Algorithms.TransformedArray.TransformedArrayIterative                                                                                         100%
   LeetCode.Algorithms.TrappingRainWater.TrappingRainWaterIterative                                                                                       100%
   LeetCode.Algorithms.Triangle.TriangleDynamicProgramming                                                                                                100%
