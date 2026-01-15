@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/14/2026 - 1:11:01 PM
-  Coverage date: 1/14/2026 - 1:09:40 PM - 1/14/2026 - 1:10:07 PM
+  Generated on: 1/15/2026 - 7:45:39 PM
+  Coverage date: 1/15/2026 - 7:44:29 PM - 1/15/2026 - 7:44:49 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1130
-  Files: 1130
+  Classes: 1132
+  Files: 1132
   Line coverage: 97.4%
-  Covered lines: 24968
-  Uncovered lines: 656
-  Coverable lines: 25624
-  Total lines: 63782
-  Branch coverage: 95% (9351 of 9843)
-  Covered branches: 9351
-  Total branches: 9843
-  Method coverage: 98.9% (1681 of 1698)
-  Full method coverage: 87.5% (1486 of 1698)
-  Covered methods: 1681
-  Fully covered methods: 1486
-  Total methods: 1698
+  Covered lines: 25047
+  Uncovered lines: 658
+  Coverable lines: 25705
+  Total lines: 63951
+  Branch coverage: 95% (9386 of 9879)
+  Covered branches: 9386
+  Total branches: 9879
+  Method coverage: 99% (1683 of 1700)
+  Full method coverage: 87.4% (1487 of 1700)
+  Covered methods: 1683
+  Fully covered methods: 1487
+  Total methods: 1700
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -556,6 +556,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MagicSquaresInGrid.MagicSquaresInGridBruteForce                                                                                   91.4%
   LeetCode.Algorithms.MajorityElement.MajorityElementDictionary                                                                                          100%
   LeetCode.Algorithms.MajorityElement.MajorityElementDistinctCount                                                                                       100%
+  LeetCode.Algorithms.MajorityFrequencyCharacters.MajorityFrequencyCharactersFrequencyDictionary                                                         100%
+  LeetCode.Algorithms.MajorityFrequencyCharacters.MajorityFrequencyCharactersFrequencySpan                                                              95.3%
   LeetCode.Algorithms.MakeArrayElementsEqualToZero.MakeArrayElementsEqualToZeroPrefixSum                                                                 100%
   LeetCode.Algorithms.MakeStringSubsequenceUsingCyclicIncrements.MakeStringSubsequenceUsingCyclicIncrementsTwoPointers                                  88.2%
   LeetCode.Algorithms.MakeSumDivisibleByP.MakeSumDivisibleByPPrefixSum                                                                                   100%
