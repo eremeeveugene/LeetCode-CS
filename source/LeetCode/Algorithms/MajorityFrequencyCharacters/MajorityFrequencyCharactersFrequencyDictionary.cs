@@ -16,6 +16,12 @@ namespace LeetCode.Algorithms.MajorityFrequencyCharacters;
 /// <inheritdoc />
 public sealed class MajorityFrequencyCharactersFrequencyDictionary : IMajorityFrequencyCharacters
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
+    /// </summary>
+    /// <param name="s"></param>
+    /// <returns></returns>
     public string MajorityFrequencyGroup(string s)
     {
         var characterToFrequencyDictionary = new Dictionary<char, int>();

@@ -19,7 +19,7 @@ public abstract class MajorityFrequencyCharactersTestsBase<T>
     [TestMethod]
     [DataRow("aaabbbccdddde", "ab")]
     [DataRow("abcd", "abcd")]
-    [DataRow("pfpfgi", "fp")]
+    [DataRow("pfpfgi", "pf")]
     public void MajorityFrequencyGroup_WithInputString_ReturnsCharactersFromTheLargestDistinctCharactersGroup(
         string s, string expectedResult)
     {
@@ -30,6 +30,6 @@ public abstract class MajorityFrequencyCharactersTestsBase<T>
         var actualResult = solution.MajorityFrequencyGroup(s);
 
         // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEquivalent(expectedResult.ToCharArray(), actualResult.ToCharArray());
     }
 }

@@ -17,6 +17,12 @@ public sealed class MajorityFrequencyCharactersFrequencySpan : IMajorityFrequenc
     private const int AlphabetSize = 26;
     private const char FirstLetter = 'a';
 
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="s"></param>
+    /// <returns></returns>
     public string MajorityFrequencyGroup(string s)
     {
         Span<int> letterFrequencies = stackalloc int[AlphabetSize];
