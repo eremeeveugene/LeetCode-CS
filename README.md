@@ -645,6 +645,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2780. Minimum Index of a Valid Split](https://leetcode.com/problems/minimum-index-of-a-valid-split/description/)
 - [2785. Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/description/)
 - [2787. Ways to Express an Integer as Sum of Powers](https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/description/)
+- [2788. Split Strings by Separator](https://leetcode.com/problems/split-strings-by-separator/description/)
 - [2798. Minimum Distance Between Three Equal Elements I](https://leetcode.com/problems/number-of-employees-who-met-the-target/description/)
 - [2799. Count Complete Subarrays in an Array](https://leetcode.com/problems/count-complete-subarrays-in-an-array/description/)
 - [2807. Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/description/)
