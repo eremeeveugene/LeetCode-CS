@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/17/2026 - 5:17:06 PM
-  Coverage date: 1/17/2026 - 5:15:52 PM - 1/17/2026 - 5:16:19 PM
+  Generated on: 1/17/2026 - 8:08:23 PM
+  Coverage date: 1/17/2026 - 8:07:20 PM - 1/17/2026 - 8:07:41 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1135
-  Files: 1135
+  Classes: 1137
+  Files: 1137
   Line coverage: 97.4%
-  Covered lines: 25114
+  Covered lines: 25146
   Uncovered lines: 658
-  Coverable lines: 25772
-  Total lines: 64120
-  Branch coverage: 95% (9406 of 9899)
-  Covered branches: 9406
-  Total branches: 9899
-  Method coverage: 99% (1690 of 1707)
-  Full method coverage: 87.5% (1494 of 1707)
-  Covered methods: 1690
-  Fully covered methods: 1494
-  Total methods: 1707
+  Coverable lines: 25804
+  Total lines: 64213
+  Branch coverage: 95% (9416 of 9909)
+  Covered branches: 9416
+  Total branches: 9909
+  Method coverage: 99% (1692 of 1709)
+  Full method coverage: 87.5% (1496 of 1709)
+  Covered methods: 1692
+  Fully covered methods: 1496
+  Total methods: 1709
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -189,6 +189,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountPartitionsWithEvenSumDifference.CountPartitionsWithEvenSumDifferencePrefixSum                                                 100%
   LeetCode.Algorithms.CountPrefixAndSuffixPairs1.CountPrefixAndSuffixPairs1StringComparison                                                              100%
   LeetCode.Algorithms.CountPrefixAndSuffixPairs1.CountPrefixAndSuffixPairs1Trie                                                                           97%
+  LeetCode.Algorithms.CountResiduePrefixes.CountResiduePrefixesHashSet                                                                                   100%
+  LeetCode.Algorithms.CountResiduePrefixes.CountResiduePrefixesLookup                                                                                    100%
   LeetCode.Algorithms.CountServersThatCommunicate.CountServersThatCommunicateCounting                                                                    100%
   LeetCode.Algorithms.CountSpecialTriplets.CountSpecialTripletsBruteForce                                                                               89.2%
   LeetCode.Algorithms.CountSpecialTriplets.CountSpecialTripletsDictionary                                                                                100%
