@@ -33,6 +33,6 @@ public abstract class KeyboardRowTestsBase<T> where T : IKeyboardRow, new()
         var actualResult = solution.FindWords(words);
 
         // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }
