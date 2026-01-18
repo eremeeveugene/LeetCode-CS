@@ -521,6 +521,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2109. Adding Spaces to a String](https://leetcode.com/problems/adding-spaces-to-a-string/description/)
 - [2114. Maximum Number of Words Found in Sentences](https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/description/)
 - [2116. Check if a Parentheses String Can Be Valid](https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/description/)
+- [2119. A Number After a Double Reversal](https://leetcode.com/problems/a-number-after-a-double-reversal/description/)
 - [2129. Capitalize the Title](https://leetcode.com/problems/capitalize-the-title/description/)
 - [2131. Longest Palindrome by Concatenating Two Letter Words](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/description/)
 - [2134. Minimum Swaps to Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/description/)
