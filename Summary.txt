@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/18/2026 - 3:35:57 PM
-  Coverage date: 1/18/2026 - 3:34:45 PM - 1/18/2026 - 3:35:06 PM
+  Generated on: 1/18/2026 - 4:05:59 PM
+  Coverage date: 1/18/2026 - 4:04:52 PM - 1/18/2026 - 4:05:14 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1138
-  Files: 1138
+  Classes: 1140
+  Files: 1140
   Line coverage: 97.5%
-  Covered lines: 25166
-  Uncovered lines: 643
-  Coverable lines: 25809
-  Total lines: 64226
-  Branch coverage: 95% (9420 of 9911)
-  Covered branches: 9420
-  Total branches: 9911
-  Method coverage: 99.2% (1695 of 1708)
-  Full method coverage: 87.7% (1499 of 1708)
-  Covered methods: 1695
-  Fully covered methods: 1499
-  Total methods: 1708
+  Covered lines: 25189
+  Uncovered lines: 639
+  Coverable lines: 25828
+  Total lines: 64303
+  Branch coverage: 95% (9429 of 9917)
+  Covered branches: 9429
+  Total branches: 9917
+  Method coverage: 99.2% (1697 of 1710)
+  Full method coverage: 87.7% (1501 of 1710)
+  Covered methods: 1697
+  Fully covered methods: 1501
+  Total methods: 1710
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -922,6 +922,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ReverseString.ReverseStringTwoPointers                                                                                             100%
   LeetCode.Algorithms.ReverseString2.ReverseString2WithCharArray                                                                                         100%
   LeetCode.Algorithms.ReverseString2.ReverseString2WithStringBuilder                                                                                     100%
+  LeetCode.Algorithms.ReverseStringPrefix.ReverseStringPrefixArrayReverse                                                                                100%
+  LeetCode.Algorithms.ReverseStringPrefix.ReverseStringPrefixTwoPointers                                                                                 100%
   LeetCode.Algorithms.ReverseSubstringsBetweenEachPairOfParentheses.ReverseSubstringsBetweenEachPairOfParenthesesStack                                   100%
   LeetCode.Algorithms.ReverseVowelsOfString.ReverseVowelsOfStringTwoPointers                                                                             100%
   LeetCode.Algorithms.ReverseWordsInString3.ReverseWordsInString3WithCharArray                                                                           100%
@@ -1145,7 +1147,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
