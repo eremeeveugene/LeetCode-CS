@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/19/2026 - 12:11:39 PM
-  Coverage date: 1/19/2026 - 12:10:34 PM - 1/19/2026 - 12:10:53 PM
+  Generated on: 1/19/2026 - 7:21:07 PM
+  Coverage date: 1/19/2026 - 7:19:58 PM - 1/19/2026 - 7:20:19 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1145
-  Files: 1145
+  Classes: 1146
+  Files: 1146
   Line coverage: 97.5%
-  Covered lines: 25285
+  Covered lines: 25300
   Uncovered lines: 643
-  Coverable lines: 25928
-  Total lines: 64567
-  Branch coverage: 95% (9452 of 9943)
-  Covered branches: 9452
-  Total branches: 9943
-  Method coverage: 99.2% (1703 of 1716)
-  Full method coverage: 87.8% (1507 of 1716)
-  Covered methods: 1703
-  Fully covered methods: 1507
-  Total methods: 1716
+  Coverable lines: 25943
+  Total lines: 64611
+  Branch coverage: 95% (9456 of 9947)
+  Covered branches: 9456
+  Total branches: 9947
+  Method coverage: 99.2% (1704 of 1717)
+  Full method coverage: 87.8% (1508 of 1717)
+  Covered methods: 1704
+  Fully covered methods: 1508
+  Total methods: 1717
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -895,6 +895,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RemoveNodesFromLinkedList.RemoveNodesFromLinkedListIterative                                                                       100%
   LeetCode.Algorithms.RemoveNthNodeFromEndOfList.RemoveNthNodeFromEndOfListTwoPointers                                                                   100%
   LeetCode.Algorithms.RemoveSubFoldersFromTheFilesystem.RemoveSubFoldersFromTheFilesystemHashSet                                                         100%
+  LeetCode.Algorithms.RemoveZerosInDecimalRepresentation.RemoveZerosInDecimalRepresentationSimulation                                                    100%
   LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce                                   90%
   LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListDictionary                                  100%
   LeetCode.Algorithms.ReorderedPowerOfTwo.ReorderedPowerOfTwoFrequencyArray                                                                              100%
