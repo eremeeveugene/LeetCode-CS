@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/18/2026 - 4:05:59 PM
-  Coverage date: 1/18/2026 - 4:04:52 PM - 1/18/2026 - 4:05:14 PM
+  Generated on: 1/19/2026 - 10:11:41 AM
+  Coverage date: 1/19/2026 - 10:10:35 AM - 1/19/2026 - 10:10:57 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1140
-  Files: 1140
+  Classes: 1144
+  Files: 1144
   Line coverage: 97.5%
-  Covered lines: 25189
+  Covered lines: 25256
   Uncovered lines: 639
-  Coverable lines: 25828
-  Total lines: 64303
-  Branch coverage: 95% (9429 of 9917)
-  Covered branches: 9429
-  Total branches: 9917
-  Method coverage: 99.2% (1697 of 1710)
-  Full method coverage: 87.7% (1501 of 1710)
-  Covered methods: 1697
-  Fully covered methods: 1501
-  Total methods: 1710
+  Coverable lines: 25895
+  Total lines: 64496
+  Branch coverage: 95% (9448 of 9937)
+  Covered branches: 9448
+  Total branches: 9937
+  Method coverage: 99.2% (1702 of 1715)
+  Full method coverage: 87.8% (1506 of 1715)
+  Covered methods: 1702
+  Fully covered methods: 1506
+  Total methods: 1715
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -937,6 +937,10 @@ LeetCode                                                                        
   LeetCode.Algorithms.RomanToInteger.RomanToIntegerDictionary                                                                                            100%
   LeetCode.Algorithms.RomanToInteger.RomanToIntegerIterative                                                                                             100%
   LeetCode.Algorithms.RootEqualsSumOfChildren.RootEqualsSumOfChildrenLinear                                                                              100%
+  LeetCode.Algorithms.RotateArray.RotateArrayBruteForce                                                                                                  100%
+  LeetCode.Algorithms.RotateArray.RotateArrayCycleReplacement                                                                                            100%
+  LeetCode.Algorithms.RotateArray.RotateArrayReverseWithTwoPointers                                                                                      100%
+  LeetCode.Algorithms.RotateArray.RotateArrayWithBuffer                                                                                                  100%
   LeetCode.Algorithms.RotateString.RotateStringBruteForce                                                                                                100%
   LeetCode.Algorithms.RotateString.RotateStringConcatenation                                                                                             100%
   LeetCode.Algorithms.RotatingTheBox.RotatingTheBoxMatrix                                                                                                100%
