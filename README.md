@@ -795,6 +795,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3707. Equal Score Substrings](https://leetcode.com/problems/equal-score-substrings/description/)
 - [3712. Sum of Elements With Frequency Divisible by K](https://leetcode.com/problems/sum-of-elements-with-frequency-divisible-by-k/description/)
 - [3718. Smallest Missing Multiple of K](https://leetcode.com/problems/smallest-missing-multiple-of-k/description/)
+- [3726. Remove Zeros in Decimal Representation](https://leetcode.com/problems/remove-zeros-in-decimal-representation/description/)
 - [3731. Find Missing Elements](https://leetcode.com/problems/find-missing-elements/description/)
 - [3736. Minimum Moves to Equal Array Elements III](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/description/)
 - [3760. Maximum Substrings With Distinct Start](https://leetcode.com/problems/maximum-substrings-with-distinct-start/description/)
