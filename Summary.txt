@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/19/2026 - 10:11:41 AM
-  Coverage date: 1/19/2026 - 10:10:35 AM - 1/19/2026 - 10:10:57 AM
+  Generated on: 1/19/2026 - 12:11:39 PM
+  Coverage date: 1/19/2026 - 12:10:34 PM - 1/19/2026 - 12:10:53 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1144
-  Files: 1144
+  Classes: 1145
+  Files: 1145
   Line coverage: 97.5%
-  Covered lines: 25256
-  Uncovered lines: 639
-  Coverable lines: 25895
-  Total lines: 64496
-  Branch coverage: 95% (9448 of 9937)
-  Covered branches: 9448
-  Total branches: 9937
-  Method coverage: 99.2% (1702 of 1715)
-  Full method coverage: 87.8% (1506 of 1715)
-  Covered methods: 1702
-  Fully covered methods: 1506
-  Total methods: 1715
+  Covered lines: 25285
+  Uncovered lines: 643
+  Coverable lines: 25928
+  Total lines: 64567
+  Branch coverage: 95% (9452 of 9943)
+  Covered branches: 9452
+  Total branches: 9943
+  Method coverage: 99.2% (1703 of 1716)
+  Full method coverage: 87.8% (1507 of 1716)
+  Covered methods: 1703
+  Fully covered methods: 1507
+  Total methods: 1716
 
 LeetCode                                                                                                                                                97.6%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -60,6 +60,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.BestSightseeingPair.BestSightseeingPairBruteForce                                                                                  100%
   LeetCode.Algorithms.BestSightseeingPair.BestSightseeingPairGreedy                                                                                      100%
   LeetCode.Algorithms.BestTimeToBuyAndSellStock.BestTimeToBuyAndSellStockDynamicProgramming                                                              100%
+  LeetCode.Algorithms.BestTimeToBuyAndSellStock5.BestTimeToBuyAndSellStock5DynamicProgramming                                                            100%
   LeetCode.Algorithms.BinaryPrefixDivisibleByFive.BinaryPrefixDivisibleByFivePrefixModulo                                                                100%
   LeetCode.Algorithms.BinarySearch.BinarySearchExact                                                                                                     100%
   LeetCode.Algorithms.BinarySearch.BinarySearchLowerBound                                                                                                100%
@@ -1151,7 +1152,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
