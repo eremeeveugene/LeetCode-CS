@@ -1,25 +1,25 @@
 Summary
-  Generated on: 1/24/2026 - 7:05:07 PM
-  Coverage date: 1/24/2026 - 7:03:53 PM - 1/24/2026 - 7:04:14 PM
+  Generated on: 1/25/2026 - 12:03:09 PM
+  Coverage date: 1/25/2026 - 12:01:58 PM - 1/25/2026 - 12:02:22 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1151
-  Files: 1151
+  Classes: 1152
+  Files: 1152
   Line coverage: 97.5%
-  Covered lines: 25560
+  Covered lines: 25575
   Uncovered lines: 643
-  Coverable lines: 26203
-  Total lines: 65033
-  Branch coverage: 95% (9482 of 9975)
-  Covered branches: 9482
-  Total branches: 9975
-  Method coverage: 99.2% (1711 of 1724)
-  Full method coverage: 87.8% (1515 of 1724)
-  Covered methods: 1711
-  Fully covered methods: 1515
-  Total methods: 1724
+  Coverable lines: 26218
+  Total lines: 65081
+  Branch coverage: 95% (9486 of 9979)
+  Covered branches: 9486
+  Total branches: 9979
+  Method coverage: 99.2% (1712 of 1725)
+  Full method coverage: 87.8% (1516 of 1725)
+  Covered methods: 1712
+  Fully covered methods: 1516
+  Total methods: 1725
 
-LeetCode                                                                                                                                                97.6%
+LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsSorting                     100%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                       100%
@@ -685,6 +685,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumDeletionsToMakeStringKSpecial.MinimumDeletionsToMakeStringKSpecialFrequencyArray                                            100%
   LeetCode.Algorithms.MinimumDepthOfBinaryTree.MinimumDepthOfBinaryTreeBreadthFirstSearch                                                                100%
   LeetCode.Algorithms.MinimumDepthOfBinaryTree.MinimumDepthOfBinaryTreeDepthFirstSearch                                                                  100%
+  LeetCode.Algorithms.MinimumDifferenceBetweenHighestAndLowestOfKScores.MinimumDifferenceBetweenHighestAndLowestOfKScoresSortingSlidingWindow            100%
   LeetCode.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesSorting     100%
   LeetCode.Algorithms.MinimumDistanceBetweenBSTNodes.MinimumDistanceBetweenBSTNodesDepthFirstSearch                                                      100%
   LeetCode.Algorithms.MinimumDominoRotationsForEqualRow.MinimumDominoRotationsForEqualRowGreedy                                                          100%
