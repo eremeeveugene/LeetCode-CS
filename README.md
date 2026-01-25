@@ -253,6 +253,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [705. Design HashSet](https://leetcode.com/problems/design-hashset/description/)
 - [706. Design HashMap](https://leetcode.com/problems/design-hashmap/description/)
 - [709. To Lower Case](https://leetcode.com/problems/to-lower-case/description/)
+- [712. Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/description/)
 - [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/description/)
 - [717. 1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters/description/)
 - [719. Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/)
