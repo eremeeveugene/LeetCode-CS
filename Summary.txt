@@ -1,25 +1,25 @@
 Summary
-  Generated on: 1/25/2026 - 8:46:50 PM
-  Coverage date: 1/25/2026 - 8:45:37 PM - 1/25/2026 - 8:45:58 PM
+  Generated on: 1/26/2026 - 10:03:26 PM
+  Coverage date: 1/26/2026 - 10:02:21 PM - 1/26/2026 - 10:02:42 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1153
-  Files: 1153
+  Classes: 1155
+  Files: 1155
   Line coverage: 97.5%
-  Covered lines: 25608
-  Uncovered lines: 646
-  Coverable lines: 26254
-  Total lines: 65152
-  Branch coverage: 95% (9499 of 9993)
-  Covered branches: 9499
-  Total branches: 9993
-  Method coverage: 99.2% (1713 of 1726)
-  Full method coverage: 87.8% (1516 of 1726)
-  Covered methods: 1713
-  Fully covered methods: 1516
-  Total methods: 1726
+  Covered lines: 25675
+  Uncovered lines: 642
+  Coverable lines: 26317
+  Total lines: 65285
+  Branch coverage: 95% (9520 of 10011)
+  Covered branches: 9520
+  Total branches: 10011
+  Method coverage: 99.2% (1715 of 1728)
+  Full method coverage: 87.8% (1518 of 1728)
+  Covered methods: 1715
+  Fully covered methods: 1518
+  Total methods: 1728
 
-LeetCode                                                                                                                                                97.6%
+LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsSorting                     100%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                       100%
@@ -668,10 +668,12 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimizeMaximumPairSumInArray.MinimizeMaximumPairSumInArraySortingTwoPointers                                                      100%
   LeetCode.Algorithms.MinimizeTheMaximumDifferenceOfPairs.MinimizeTheMaximumDifferenceOfPairsBinarySearch                                               94.4%
   LeetCode.Algorithms.MinimizeXOR.MinimizeXORBitwise                                                                                                     100%
+  LeetCode.Algorithms.MinimumAbsoluteDifference.MinimumAbsoluteDifferenceLookup                                                                          100%
+  LeetCode.Algorithms.MinimumAbsoluteDifference.MinimumAbsoluteDifferenceSorting                                                                         100%
   LeetCode.Algorithms.MinimumAbsoluteDifferenceInBST.MinimumAbsoluteDifferenceInBSTDepthFirstSearch                                                      100%
   LeetCode.Algorithms.MinimumAddToMakeParenthesesValid.MinimumAddToMakeParenthesesValidIterative                                                         100%
   LeetCode.Algorithms.MinimumArrayEnd.MinimumArrayEndIterative                                                                                           100%
-  LeetCode.Algorithms.MinimumASCIIDeleteSumForTwoStrings.MinimumASCIIDeleteSumForTwoStringsDynamicProgramming                                           91.6%
+  LeetCode.Algorithms.MinimumASCIIDeleteSumForTwoStrings.MinimumASCIIDeleteSumForTwoStringsDynamicProgramming                                           91.1%
   LeetCode.Algorithms.MinimumBitFlipsToConvertNumber.MinimumBitFlipsToConvertNumberBitwise                                                               100%
   LeetCode.Algorithms.MinimumBitFlipsToConvertNumber.MinimumBitFlipsToConvertNumberPopCount                                                              100%
   LeetCode.Algorithms.MinimumCommonValue.MinimumCommonValueHashSet                                                                                       100%
@@ -1160,7 +1162,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
