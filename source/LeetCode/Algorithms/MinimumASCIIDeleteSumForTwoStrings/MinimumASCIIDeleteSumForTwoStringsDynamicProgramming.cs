@@ -42,12 +42,9 @@ public sealed class MinimumASCIIDeleteSumForTwoStringsDynamicProgramming : IMini
                 {
                     dp[j + 1] = previous + s1[i];
                 }
-                else
+                else if (dp[j + 1] <= dp[j])
                 {
-                    if (dp[j + 1] <= dp[j])
-                    {
-                        dp[j + 1] = dp[j];
-                    }
+                    dp[j + 1] = dp[j];
                 }
 
                 previous = current;
