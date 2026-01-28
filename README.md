@@ -303,6 +303,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [889. Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/description/)
 - [896. Monotonic Array](https://leetcode.com/problems/monotonic-array/description/)
 - [904. Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/description/)
+- [908. Smallest Range I](https://leetcode.com/problems/smallest-range-i/description/)
 - [912. Sort an Array](https://leetcode.com/problems/sort-an-array/description/)
 - [916. Word Subsets](https://leetcode.com/problems/word-subsets/description/)
 - [921. Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/)
