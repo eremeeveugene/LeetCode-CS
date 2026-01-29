@@ -17,7 +17,7 @@ namespace LeetCode.Tests.Algorithms.SmallestRange1;
 public abstract class SmallestRange1TestsBase<T> where T : ISmallestRange1, new()
 {
     [TestMethod]
-    [DataRow("1", 0, 0)]
+    [DataRow("[1]", 0, 0)]
     [DataRow("[0,10]", 2, 6)]
     [DataRow("[1,3,6]", 3, 0)]
     public void SmallestRangeI_WithArrayAndAdjustmentLimit_ReturnsMinimumPossibleScore(string numsJson, int k,
