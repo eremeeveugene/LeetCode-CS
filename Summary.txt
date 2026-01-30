@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/29/2026 - 6:16:11 PM
-  Coverage date: 1/29/2026 - 6:14:28 PM - 1/29/2026 - 6:14:54 PM
+  Generated on: 1/30/2026 - 9:38:39 AM
+  Coverage date: 1/30/2026 - 9:37:24 AM - 1/30/2026 - 9:37:45 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1157
-  Files: 1157
+  Classes: 1158
+  Files: 1158
   Line coverage: 97.5%
-  Covered lines: 25703
+  Covered lines: 25740
   Uncovered lines: 646
-  Coverable lines: 26349
-  Total lines: 65376
-  Branch coverage: 95% (9525 of 10019)
-  Covered branches: 9525
-  Total branches: 10019
-  Method coverage: 99.2% (1717 of 1730)
-  Full method coverage: 87.8% (1520 of 1730)
-  Covered methods: 1717
-  Fully covered methods: 1520
-  Total methods: 1730
+  Coverable lines: 26386
+  Total lines: 65458
+  Branch coverage: 95% (9537 of 10031)
+  Covered branches: 9537
+  Total branches: 10031
+  Method coverage: 99.2% (1720 of 1733)
+  Full method coverage: 87.8% (1523 of 1733)
+  Covered methods: 1720
+  Fully covered methods: 1523
+  Total methods: 1733
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -371,6 +371,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindNumbersWithEvenNumberOfDigits.FindNumbersWithEvenNumberOfDigitsGreedy                                                          100%
   LeetCode.Algorithms.FindNUniqueIntegersSumUpToZero.FindNUniqueIntegersSumUpToZeroIterative                                                             100%
   LeetCode.Algorithms.FindPivotIndex.FindPivotIndexIterative                                                                                             100%
+  LeetCode.Algorithms.FindResultantArrayAfterRemovingAnagrams.FindResultantArrayAfterRemovingAnagramsGreedyCounting                                      100%
   LeetCode.Algorithms.FindScoreOfAnArrayAfterMarkingAllElements.FindScoreOfAnArrayAfterMarkingAllElementsSorting                                         100%
   LeetCode.Algorithms.FindSubsequenceOfLengthKWithTheLargestSum.FindSubsequenceOfLengthKWithTheLargestSumSorting                                         100%
   LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayBinarySearch                                                 92.5%
