@@ -19,7 +19,7 @@ public abstract class FindResultantArrayAfterRemovingAnagramsTestsBase<T>
 {
     [TestMethod]
     [DataRow("[\"abba\",\"baba\",\"bbaa\",\"cd\",\"cd\"]", "[\"abba\",\"cd\"]")]
-    [DataRow("\"a\",\"b\",\"c\",\"d\",\"e\"]", "[\"a\",\"b\",\"c\",\"d\",\"e\"]")]
+    [DataRow("[\"a\",\"b\",\"c\",\"d\",\"e\"]", "[\"a\",\"b\",\"c\",\"d\",\"e\"]")]
     public void RemoveAnagrams_WithWordsArray_RemovesAllSubsequentAnagramDuplicates(string wordsJson,
         string expectedResultJson)
     {
