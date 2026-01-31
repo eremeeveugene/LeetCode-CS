@@ -1,23 +1,23 @@
 Summary
-  Generated on: 1/30/2026 - 9:38:39 AM
-  Coverage date: 1/30/2026 - 9:37:24 AM - 1/30/2026 - 9:37:45 AM
+  Generated on: 1/31/2026 - 9:38:42 PM
+  Coverage date: 1/31/2026 - 9:37:20 PM - 1/31/2026 - 9:37:38 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1158
-  Files: 1158
+  Classes: 1160
+  Files: 1160
   Line coverage: 97.5%
-  Covered lines: 25740
+  Covered lines: 25767
   Uncovered lines: 646
-  Coverable lines: 26386
-  Total lines: 65458
-  Branch coverage: 95% (9537 of 10031)
-  Covered branches: 9537
-  Total branches: 10031
-  Method coverage: 99.2% (1720 of 1733)
-  Full method coverage: 87.8% (1523 of 1733)
-  Covered methods: 1720
-  Fully covered methods: 1523
-  Total methods: 1733
+  Coverable lines: 26413
+  Total lines: 65543
+  Branch coverage: 95% (9545 of 10039)
+  Covered branches: 9545
+  Total branches: 10039
+  Method coverage: 99.2% (1722 of 1735)
+  Full method coverage: 87.8% (1525 of 1735)
+  Covered methods: 1722
+  Fully covered methods: 1525
+  Total methods: 1735
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -373,6 +373,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindPivotIndex.FindPivotIndexIterative                                                                                             100%
   LeetCode.Algorithms.FindResultantArrayAfterRemovingAnagrams.FindResultantArrayAfterRemovingAnagramsGreedyCounting                                      100%
   LeetCode.Algorithms.FindScoreOfAnArrayAfterMarkingAllElements.FindScoreOfAnArrayAfterMarkingAllElementsSorting                                         100%
+  LeetCode.Algorithms.FindSmallestLetterGreaterThanTarget.FindSmallestLetterGreaterThanTargetBinarySearch                                                100%
+  LeetCode.Algorithms.FindSmallestLetterGreaterThanTarget.FindSmallestLetterGreaterThanTargetGreedy                                                      100%
   LeetCode.Algorithms.FindSubsequenceOfLengthKWithTheLargestSum.FindSubsequenceOfLengthKWithTheLargestSumSorting                                         100%
   LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayBinarySearch                                                 92.5%
   LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayIterative                                                     100%
