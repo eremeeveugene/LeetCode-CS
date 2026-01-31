@@ -263,6 +263,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [731. My Calendar II](https://leetcode.com/problems/my-calendar-ii/description/)
 - [732. My Calendar III](https://leetcode.com/problems/my-calendar-iii/description/)
 - [733. Flood Fill](https://leetcode.com/problems/flood-fill/description/)
+- [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/)
 - [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/)
 - [747. Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/description/)
 - [752. Open the Lock](https://leetcode.com/problems/open-the-lock/description/)
