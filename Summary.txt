@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/7/2026 - 1:11:50 PM
-  Coverage date: 2/7/2026 - 1:10:34 PM - 2/7/2026 - 1:10:55 PM
+  Generated on: 2/7/2026 - 1:49:22 PM
+  Coverage date: 2/7/2026 - 1:48:20 PM - 2/7/2026 - 1:48:39 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1161
-  Files: 1161
+  Classes: 1162
+  Files: 1162
   Line coverage: 97.5%
-  Covered lines: 25782
+  Covered lines: 25791
   Uncovered lines: 646
-  Coverable lines: 26428
-  Total lines: 65586
-  Branch coverage: 95% (9549 of 10043)
-  Covered branches: 9549
-  Total branches: 10043
-  Method coverage: 99.2% (1723 of 1736)
-  Full method coverage: 87.9% (1526 of 1736)
-  Covered methods: 1723
-  Fully covered methods: 1526
-  Total methods: 1736
+  Coverable lines: 26437
+  Total lines: 65621
+  Branch coverage: 95% (9553 of 10047)
+  Covered branches: 9553
+  Total branches: 10047
+  Method coverage: 99.2% (1724 of 1737)
+  Full method coverage: 87.9% (1527 of 1737)
+  Covered methods: 1724
+  Fully covered methods: 1527
+  Total methods: 1737
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -91,6 +91,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CheapestFlightsWithinKStops.CheapestFlightsWithinKStopsBellmanFord                                                                 100%
   LeetCode.Algorithms.CheckBalancedString.CheckBalancedStringIterative                                                                                   100%
   LeetCode.Algorithms.CheckDivisibilityByDigitSumAndProduct.CheckDivisibilityByDigitSumAndProductIterative                                               100%
+  LeetCode.Algorithms.CheckIfAllAsAppearsBeforeAllBs.CheckIfAllAsAppearsBeforeAllBsIterative                                                             100%
   LeetCode.Algorithms.CheckIfAllOnesAreAtLeastLengthKPlacesAway.CheckIfAllOnesAreAtLeastLengthKPlacesAwayDistanceCounting                                100%
   LeetCode.Algorithms.CheckIfAllOnesAreAtLeastLengthKPlacesAway.CheckIfAllOnesAreAtLeastLengthKPlacesAwayIndexTracking                                   100%
   LeetCode.Algorithms.CheckIfAnyElementHasPrimeFrequency.CheckIfAnyElementHasPrimeFrequencyArray                                                         100%
