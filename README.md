@@ -448,6 +448,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1637. Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description/)
 - [1642. Best Time to Buy and Sell Stock V](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/description/)
 - [1652. Defuse the Bomb](https://leetcode.com/problems/defuse-the-bomb/description/)
+- [1653. Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/description/)
 - [1656. Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/description/)
 - [1662. Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/)
 - [1670. Design Front Middle Back Queue](https://leetcode.com/problems/design-front-middle-back-queue/description/)
