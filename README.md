@@ -815,6 +815,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3794. Reverse String Prefix](https://leetcode.com/problems/reverse-string-prefix/description/)
 - [3798. Largest Even Number](https://leetcode.com/problems/largest-even-number/description/)
 - [3803. Count Residue Prefixes](https://leetcode.com/problems/count-residue-prefixes/description/)
+- [3823. Reverse Letters Then Special Characters in a String](https://leetcode.com/problems/reverse-letters-then-special-characters-in-a-string/description/)
 
   </p>
 </details>
