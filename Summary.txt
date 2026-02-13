@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/13/2026 - 3:54:26 PM
-  Coverage date: 2/13/2026 - 3:52:53 PM - 2/13/2026 - 3:53:14 PM
+  Generated on: 2/13/2026 - 4:23:54 PM
+  Coverage date: 2/13/2026 - 4:22:49 PM - 2/13/2026 - 4:23:09 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1164
-  Files: 1164
+  Classes: 1165
+  Files: 1165
   Line coverage: 97.5%
-  Covered lines: 25855
+  Covered lines: 25872
   Uncovered lines: 646
-  Coverable lines: 26501
-  Total lines: 65754
-  Branch coverage: 95% (9585 of 10079)
-  Covered branches: 9585
-  Total branches: 10079
-  Method coverage: 99.2% (1726 of 1739)
-  Full method coverage: 87.9% (1529 of 1739)
-  Covered methods: 1726
-  Fully covered methods: 1529
-  Total methods: 1739
+  Coverable lines: 26518
+  Total lines: 65802
+  Branch coverage: 95.1% (9589 of 10083)
+  Covered branches: 9589
+  Total branches: 10083
+  Method coverage: 99.2% (1727 of 1740)
+  Full method coverage: 87.9% (1530 of 1740)
+  Covered methods: 1727
+  Fully covered methods: 1530
+  Total methods: 1740
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -133,6 +133,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ComplementOfBase10Integer.ComplementOfBase10IntegerBitwise                                                                         100%
   LeetCode.Algorithms.ComputeAlternatingSum.ComputeAlternatingSumSimulation                                                                              100%
   LeetCode.Algorithms.ComputeDecimalRepresentation.ComputeDecimalRepresentationIterative                                                                 100%
+  LeetCode.Algorithms.ConcatenateNonZeroDigitsAndMultiplyBySum1.ConcatenateNonZeroDigitsAndMultiplyBySum1Iterative                                       100%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayConcat                                                                                    100%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayIterative                                                                                 100%
   LeetCode.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTraversal.ConstructBinaryTreeFromPreorderAndPostorderTraversalRecursive                90.4%
