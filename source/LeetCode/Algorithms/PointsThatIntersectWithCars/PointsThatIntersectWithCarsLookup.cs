@@ -15,7 +15,7 @@ namespace LeetCode.Algorithms.PointsThatIntersectWithCars;
 public sealed class PointsThatIntersectWithCarsLookup : IPointsThatIntersectWithCars
 {
     /// <summary>
-    ///     Time complexity - O(n)
+    ///     Time complexity - O(n * R), where n is the length of nums and R = max(end) - min(start) + 1
     ///     Space complexity - O(1)
     /// </summary>
     /// <param name="nums"></param>
