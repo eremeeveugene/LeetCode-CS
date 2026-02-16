@@ -22,8 +22,7 @@ public abstract class GuessNumberHigherOrLower : IGuessNumberHigherOrLower
 
     public abstract int GuessNumber(int n);
 
-    // ReSharper disable once InconsistentNaming
-    public int guess(int num)
+    public int Guess(int num)
     {
         if (num == _pickedNumber)
         {

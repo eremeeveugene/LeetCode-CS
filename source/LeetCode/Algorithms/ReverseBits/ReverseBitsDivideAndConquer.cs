@@ -12,8 +12,14 @@
 namespace LeetCode.Algorithms.ReverseBits;
 
 /// <inheritdoc />
-public sealed class ReverseBitsIterative : IReverseBits
+public sealed class ReverseBitsDivideAndConquer : IReverseBits
 {
+    private const int Mask1 = 0x55555555;
+    private const int Mask2 = 0x33333333;
+    private const int Mask4 = 0x0F0F0F0F;
+    private const int Mask8 = 0x00FF00FF;
+    private const int Mask16 = 0x0000FFFF;
+
     /// <summary>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
@@ -22,17 +28,12 @@ public sealed class ReverseBitsIterative : IReverseBits
     /// <returns></returns>
     public int ReverseBits(int n)
     {
-        var result = 0;
+        n = ((n >> 1) & Mask1) | ((n & Mask1) << 1);
+        n = ((n >> 2) & Mask2) | ((n & Mask2) << 2);
+        n = ((n >> 4) & Mask4) | ((n & Mask4) << 4);
+        n = ((n >> 8) & Mask8) | ((n & Mask8) << 8);
+        n = ((n >> 16) & Mask16) | ((n & Mask16) << 16);
 
-        for (var i = 0; i < 32; i++)
-        {
-            result <<= 1;
-
-            result |= n & 1;
-
-            n >>= 1;
-        }
-
-        return result;
+        return n;
     }
 }

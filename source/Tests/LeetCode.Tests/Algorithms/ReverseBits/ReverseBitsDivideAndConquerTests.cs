@@ -13,20 +13,5 @@ using LeetCode.Algorithms.ReverseBits;
 
 namespace LeetCode.Tests.Algorithms.ReverseBits;
 
-public abstract class ReverseBitsTestsBase<T> where T : IReverseBits, new()
-{
-    [TestMethod]
-    [DataRow(43261596, 964176192)]
-    [DataRow(2147483644, 1073741822)]
-    public void ReverseBits_WithBinaryRepresentation_ReversesBitsOf32BitUnsignedInteger(int n, int expectedResult)
-    {
-        // Arrange
-        var solution = new T();
-
-        // Act
-        var actualResult = solution.ReverseBits(n);
-
-        // Assert
-        Assert.AreEqual(expectedResult, actualResult);
-    }
-}
+[TestClass]
+public sealed class ReverseBitsDivideAndConquerTests : ReverseBitsTestsBase<ReverseBitsDivideAndConquer>;
