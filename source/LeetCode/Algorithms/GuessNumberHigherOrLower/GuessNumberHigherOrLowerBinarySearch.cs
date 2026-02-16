@@ -33,7 +33,7 @@ public sealed class GuessNumberHigherOrLowerBinarySearch : GuessNumberHigherOrLo
         {
             num = left + ((right - left) / 2);
 
-            var result = guess(num);
+            var result = Guess(num);
 
             if (result == 0)
             {

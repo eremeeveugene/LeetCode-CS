@@ -12,10 +12,9 @@
 namespace LeetCode.Algorithms.ReverseBits;
 
 /// <summary>
-///     https://leetcode.com/problems/reverse-bits/
+///     https://leetcode.com/problems/reverse-bits/description/
 /// </summary>
 public interface IReverseBits
 {
-    // ReSharper disable once InconsistentNaming
-    uint reverseBits(uint n);
+    int ReverseBits(int n);
 }
