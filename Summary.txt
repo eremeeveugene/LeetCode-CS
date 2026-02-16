@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/13/2026 - 4:23:54 PM
-  Coverage date: 2/13/2026 - 4:22:49 PM - 2/13/2026 - 4:23:09 PM
+  Generated on: 2/16/2026 - 11:09:49 AM
+  Coverage date: 2/16/2026 - 11:08:41 AM - 2/16/2026 - 11:08:59 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1165
-  Files: 1165
+  Classes: 1166
+  Files: 1166
   Line coverage: 97.5%
-  Covered lines: 25872
+  Covered lines: 25881
   Uncovered lines: 646
-  Coverable lines: 26518
-  Total lines: 65802
+  Coverable lines: 26527
+  Total lines: 65842
   Branch coverage: 95.1% (9589 of 10083)
   Covered branches: 9589
   Total branches: 10083
-  Method coverage: 99.2% (1727 of 1740)
-  Full method coverage: 87.9% (1530 of 1740)
-  Covered methods: 1727
-  Fully covered methods: 1530
-  Total methods: 1740
+  Method coverage: 99.2% (1728 of 1741)
+  Full method coverage: 87.9% (1531 of 1741)
+  Covered methods: 1728
+  Fully covered methods: 1531
+  Total methods: 1741
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -928,6 +928,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RestoreFinishingOrder.RestoreFinishingOrderHashSet                                                                                 100%
   LeetCode.Algorithms.RestoreFinishingOrder.RestoreFinishingOrderLookup                                                                                  100%
   LeetCode.Algorithms.RevealCardsInIncreasingOrder.RevealCardsInIncreasingOrderQueue                                                                     100%
+  LeetCode.Algorithms.ReverseBits.ReverseBitsDivideAndConquer                                                                                            100%
   LeetCode.Algorithms.ReverseBits.ReverseBitsIterative                                                                                                   100%
   LeetCode.Algorithms.ReverseDegreeOfString.ReverseDegreeOfStringIterative                                                                               100%
   LeetCode.Algorithms.ReverseInteger.ReverseIntegerIterative                                                                                             100%
