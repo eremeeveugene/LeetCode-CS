@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/16/2026 - 11:09:49 AM
-  Coverage date: 2/16/2026 - 11:08:41 AM - 2/16/2026 - 11:08:59 AM
+  Generated on: 2/18/2026 - 3:39:04 PM
+  Coverage date: 2/18/2026 - 3:37:55 PM - 2/18/2026 - 3:38:17 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1166
-  Files: 1166
+  Classes: 1167
+  Files: 1167
   Line coverage: 97.5%
-  Covered lines: 25881
+  Covered lines: 25885
   Uncovered lines: 646
-  Coverable lines: 26527
-  Total lines: 65842
+  Coverable lines: 26531
+  Total lines: 65871
   Branch coverage: 95.1% (9589 of 10083)
   Covered branches: 9589
   Total branches: 10083
-  Method coverage: 99.2% (1728 of 1741)
-  Full method coverage: 87.9% (1531 of 1741)
-  Covered methods: 1728
-  Fully covered methods: 1531
-  Total methods: 1741
+  Method coverage: 99.2% (1729 of 1742)
+  Full method coverage: 87.9% (1532 of 1742)
+  Covered methods: 1729
+  Fully covered methods: 1532
+  Total methods: 1742
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -61,6 +61,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.BestSightseeingPair.BestSightseeingPairGreedy                                                                                      100%
   LeetCode.Algorithms.BestTimeToBuyAndSellStock.BestTimeToBuyAndSellStockDynamicProgramming                                                              100%
   LeetCode.Algorithms.BestTimeToBuyAndSellStock5.BestTimeToBuyAndSellStock5DynamicProgramming                                                            100%
+  LeetCode.Algorithms.BinaryNumberWithAlternatingBits.BinaryNumberWithAlternatingBitsBitwise                                                             100%
   LeetCode.Algorithms.BinaryPrefixDivisibleByFive.BinaryPrefixDivisibleByFivePrefixModulo                                                                100%
   LeetCode.Algorithms.BinarySearch.BinarySearchExact                                                                                                     100%
   LeetCode.Algorithms.BinarySearch.BinarySearchLowerBound                                                                                                100%
