@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/18/2026 - 3:39:04 PM
-  Coverage date: 2/18/2026 - 3:37:55 PM - 2/18/2026 - 3:38:17 PM
+  Generated on: 2/18/2026 - 4:44:40 PM
+  Coverage date: 2/18/2026 - 4:43:36 PM - 2/18/2026 - 4:43:56 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1167
-  Files: 1167
+  Classes: 1170
+  Files: 1170
   Line coverage: 97.5%
-  Covered lines: 25885
+  Covered lines: 25936
   Uncovered lines: 646
-  Coverable lines: 26531
-  Total lines: 65871
-  Branch coverage: 95.1% (9589 of 10083)
-  Covered branches: 9589
-  Total branches: 10083
-  Method coverage: 99.2% (1729 of 1742)
-  Full method coverage: 87.9% (1532 of 1742)
-  Covered methods: 1729
-  Fully covered methods: 1532
-  Total methods: 1742
+  Coverable lines: 26582
+  Total lines: 66010
+  Branch coverage: 95.1% (9607 of 10101)
+  Covered branches: 9607
+  Total branches: 10101
+  Method coverage: 99.2% (1732 of 1745)
+  Full method coverage: 87.9% (1535 of 1745)
+  Covered methods: 1732
+  Fully covered methods: 1535
+  Total methods: 1745
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -182,6 +182,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountingWordsWithGivenPrefix.CountingWordsWithGivenPrefixIterative                                                                 100%
   LeetCode.Algorithms.CountLargestGroup.CountLargestGroupFrequencyArray                                                                                  100%
   LeetCode.Algorithms.CountLargestGroup.CountLargestGroupFrequencyDictionary                                                                             100%
+  LeetCode.Algorithms.CountNegativeNumbersInSortedMatrix.CountNegativeNumbersInSortedMatrixBruteForceBottomRight                                         100%
+  LeetCode.Algorithms.CountNegativeNumbersInSortedMatrix.CountNegativeNumbersInSortedMatrixBruteForceTopLeft                                             100%
+  LeetCode.Algorithms.CountNegativeNumbersInSortedMatrix.CountNegativeNumbersInSortedMatrixStaircase                                                     100%
   LeetCode.Algorithms.CountNumberOfBadPairs.CountNumberOfBadPairsBruteForce                                                                              100%
   LeetCode.Algorithms.CountNumberOfBadPairs.CountNumberOfBadPairsDictionary                                                                              100%
   LeetCode.Algorithms.CountNumberOfMaximumBitwiseORSubsets.CountNumberOfMaximumBitwiseORSubsetsBacktracking                                              100%
