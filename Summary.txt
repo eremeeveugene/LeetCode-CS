@@ -1,23 +1,23 @@
 Summary
-  Generated on: 2/25/2026 - 10:26:25 AM
-  Coverage date: 2/25/2026 - 10:25:08 AM - 2/25/2026 - 10:25:29 AM
+  Generated on: 2/27/2026 - 4:16:38 PM
+  Coverage date: 2/27/2026 - 4:15:29 PM - 2/27/2026 - 4:15:47 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1171
-  Files: 1171
+  Classes: 1173
+  Files: 1173
   Line coverage: 97.5%
-  Covered lines: 25954
-  Uncovered lines: 647
-  Coverable lines: 26601
-  Total lines: 66063
-  Branch coverage: 95.1% (9616 of 10109)
-  Covered branches: 9616
-  Total branches: 10109
-  Method coverage: 99.2% (1734 of 1747)
-  Full method coverage: 87.8% (1535 of 1747)
-  Covered methods: 1734
-  Fully covered methods: 1535
-  Total methods: 1747
+  Covered lines: 25989
+  Uncovered lines: 646
+  Coverable lines: 26635
+  Total lines: 66155
+  Branch coverage: 95.1% (9627 of 10121)
+  Covered branches: 9627
+  Total branches: 10121
+  Method coverage: 99.2% (1736 of 1749)
+  Full method coverage: 87.9% (1539 of 1749)
+  Covered methods: 1736
+  Fully covered methods: 1539
+  Total methods: 1749
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1107,6 +1107,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ThreeConsecutiveOdds.ThreeConsecutiveOddsCounting                                                                                  100%
   LeetCode.Algorithms.ThreeSum.ThreeSumTwoPointers                                                                                                      86.4%
   LeetCode.Algorithms.TimeNeededToBuyTickets.TimeNeededToBuyTicketsIterative                                                                             100%
+  LeetCode.Algorithms.ToggleLightBulbs.ToggleLightBulbsBitmask                                                                                           100%
+  LeetCode.Algorithms.ToggleLightBulbs.ToggleLightBulbsLookup                                                                                            100%
   LeetCode.Algorithms.ToLowerCase.ToLowerCaseArray                                                                                                       100%
   LeetCode.Algorithms.ToLowerCase.ToLowerCaseBuiltIn                                                                                                     100%
   LeetCode.Algorithms.ToLowerCase.ToLowerCaseStringBuilder                                                                                               100%
@@ -1178,13 +1180,13 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           98.7%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 90.6%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                     100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             84.2%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                              100%
 
 LeetCode.Core                                                                                                                                           82.1%
   LeetCode.Core.Helpers.JsonHelper<T>                                                                                                                   66.9%
