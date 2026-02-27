@@ -23,7 +23,7 @@ public abstract class ToggleLightBulbsTestsBase<T> where T : IToggleLightBulbs, 
         string expectedResultJson)
     {
         // Arrange
-        var bulbs = JsonHelper<int[]>.Parse(bulbsJson);
+        var bulbs = JsonHelper<IList<int>>.Parse(bulbsJson);
         var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();

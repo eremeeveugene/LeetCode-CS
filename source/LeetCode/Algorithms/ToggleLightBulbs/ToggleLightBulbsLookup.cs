@@ -28,7 +28,7 @@ public sealed class ToggleLightBulbsLookup : IToggleLightBulbs
         {
             var bulb = bulbs[i];
 
-            bulbsLookup[bulb] ^= bulbsLookup[bulb];
+            bulbsLookup[bulb] = !bulbsLookup[bulb];
         }
 
         bulbs.Clear();
