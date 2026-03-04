@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/2/2026 - 9:23:34 AM
-  Coverage date: 3/2/2026 - 9:22:30 AM - 3/2/2026 - 9:22:51 AM
+  Generated on: 3/4/2026 - 6:04:59 PM
+  Coverage date: 3/4/2026 - 6:03:48 PM - 3/4/2026 - 6:04:16 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1174
-  Files: 1174
+  Classes: 1176
+  Files: 1176
   Line coverage: 97.5%
-  Covered lines: 26005
-  Uncovered lines: 641
-  Coverable lines: 26646
-  Total lines: 66191
-  Branch coverage: 95.1% (9647 of 10139)
-  Covered branches: 9647
-  Total branches: 10139
-  Method coverage: 99.2% (1738 of 1751)
-  Full method coverage: 88% (1541 of 1751)
-  Covered methods: 1738
-  Fully covered methods: 1541
-  Total methods: 1751
+  Covered lines: 26066
+  Uncovered lines: 650
+  Coverable lines: 26716
+  Total lines: 66336
+  Branch coverage: 95.1% (9677 of 10173)
+  Covered branches: 9677
+  Total branches: 10173
+  Method coverage: 99.2% (1741 of 1754)
+  Full method coverage: 87.9% (1542 of 1754)
+  Covered methods: 1741
+  Fully covered methods: 1542
+  Total methods: 1754
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1038,6 +1038,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.SpecialArray2.SpecialArray2PrefixSum                                                                                               100%
   LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX.SpecialArrayWithXElementsGreaterThanOrEqualXBruteForce                                100%
   LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX.SpecialArrayWithXElementsGreaterThanOrEqualXSorting                                  92.3%
+  LeetCode.Algorithms.SpecialPositionsInBinaryMatrix.SpecialPositionsInBinaryMatrixBruteForce                                                             95%
+  LeetCode.Algorithms.SpecialPositionsInBinaryMatrix.SpecialPositionsInBinaryMatrixSum                                                                  93.3%
   LeetCode.Algorithms.SpiralMatrix.SpiralMatrixSimulation                                                                                                100%
   LeetCode.Algorithms.SpiralMatrix3.SpiralMatrix3Simulation                                                                                              100%
   LeetCode.Algorithms.SpiralMatrix4.SpiralMatrix4Simulation                                                                                              100%
@@ -1181,7 +1183,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           98.7%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
