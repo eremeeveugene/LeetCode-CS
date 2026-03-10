@@ -34,6 +34,6 @@ public abstract class SmallestPairWithDifferentFrequenciesTestsBase<T>
         var actualResult = solution.MinDistinctFreqPair(nums);
 
         // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }
