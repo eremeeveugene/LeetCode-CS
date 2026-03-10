@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/10/2026 - 2:40:13 PM
-  Coverage date: 3/10/2026 - 2:38:43 PM - 3/10/2026 - 2:39:04 PM
+  Generated on: 3/10/2026 - 5:14:34 PM
+  Coverage date: 3/10/2026 - 5:13:27 PM - 3/10/2026 - 5:13:48 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1177
-  Files: 1177
+  Classes: 1178
+  Files: 1178
   Line coverage: 97.5%
-  Covered lines: 26083
-  Uncovered lines: 653
-  Coverable lines: 26736
-  Total lines: 66390
-  Branch coverage: 95.1% (9682 of 10179)
-  Covered branches: 9682
-  Total branches: 10179
-  Method coverage: 99.2% (1742 of 1755)
-  Full method coverage: 87.8% (1542 of 1755)
-  Covered methods: 1742
-  Fully covered methods: 1542
-  Total methods: 1755
+  Covered lines: 26123
+  Uncovered lines: 650
+  Coverable lines: 26773
+  Total lines: 66464
+  Branch coverage: 95.1% (9698 of 10195)
+  Covered branches: 9698
+  Total branches: 10195
+  Method coverage: 99.2% (1744 of 1757)
+  Full method coverage: 87.9% (1545 of 1757)
+  Covered methods: 1744
+  Fully covered methods: 1545
+  Total methods: 1757
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1013,6 +1013,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SmallestNumberWithAllSetBits.SmallestNumberWithAllSetBitsLinearScan                                                                 88%
   LeetCode.Algorithms.SmallestNumberWithAllSetBits.SmallestNumberWithAllSetBitsMath                                                                     71.4%
   LeetCode.Algorithms.SmallestNumberWithAllSetBits.SmallestNumberWithAllSetBitsSwitch                                                                   53.3%
+  LeetCode.Algorithms.SmallestPairWithDifferentFrequencies.SmallestPairWithDifferentFrequenciesLookup                                                    100%
   LeetCode.Algorithms.SmallestRange1.SmallestRange1Greedy                                                                                                100%
   LeetCode.Algorithms.SmallestRangeCoveringElementsFromKLists.SmallestRangeCoveringElementsFromKListsSortingWithSlidingWindow                            100%
   LeetCode.Algorithms.SmallestStringStartingFromLeaf.SmallestStringStartingFromLeafDepthFirstSearch                                                      100%
@@ -1187,7 +1188,7 @@ LeetCode                                                                        
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 90.6%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                     100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                              100%
