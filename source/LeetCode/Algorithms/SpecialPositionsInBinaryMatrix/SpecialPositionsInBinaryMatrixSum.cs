@@ -32,10 +32,13 @@ public sealed class SpecialPositionsInBinaryMatrixSum : ISpecialPositionsInBinar
         {
             for (var j = 0; j < n; j++)
             {
-                var cell = mat[i][j];
+                if (mat[i][j] != 1)
+                {
+                    continue;
+                }
 
-                rowsSum[i] += cell;
-                columnsSum[j] += cell;
+                rowsSum[i]++;
+                columnsSum[j]++;
             }
         }
 
