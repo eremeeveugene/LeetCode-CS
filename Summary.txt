@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/4/2026 - 6:04:59 PM
-  Coverage date: 3/4/2026 - 6:03:48 PM - 3/4/2026 - 6:04:16 PM
+  Generated on: 3/10/2026 - 2:40:13 PM
+  Coverage date: 3/10/2026 - 2:38:43 PM - 3/10/2026 - 2:39:04 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1176
-  Files: 1176
+  Classes: 1177
+  Files: 1177
   Line coverage: 97.5%
-  Covered lines: 26066
-  Uncovered lines: 650
-  Coverable lines: 26716
-  Total lines: 66336
-  Branch coverage: 95.1% (9677 of 10173)
-  Covered branches: 9677
-  Total branches: 10173
-  Method coverage: 99.2% (1741 of 1754)
-  Full method coverage: 87.9% (1542 of 1754)
-  Covered methods: 1741
+  Covered lines: 26083
+  Uncovered lines: 653
+  Coverable lines: 26736
+  Total lines: 66390
+  Branch coverage: 95.1% (9682 of 10179)
+  Covered branches: 9682
+  Total branches: 10179
+  Method coverage: 99.2% (1742 of 1755)
+  Full method coverage: 87.8% (1542 of 1755)
+  Covered methods: 1742
   Fully covered methods: 1542
-  Total methods: 1754
+  Total methods: 1755
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -524,6 +524,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LargestPerimeterTriangle.LargestPerimeterTriangleSorting                                                                            90%
   LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeHashSet                             100%
   LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative.LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointers                  100%
+  LeetCode.Algorithms.LargestSubstringBetweenTwoEqualCharacters.LargestSubstringBetweenTwoEqualCharactersLookup                                          100%
   LeetCode.Algorithms.LargestThreeSameDigitNumberInString.LargestThreeSameDigitNumberInStringGreedy                                                      100%
   LeetCode.Algorithms.LargestThreeSameDigitNumberInString.LargestThreeSameDigitNumberInStringGreedyOptimized                                            89.4%
   LeetCode.Algorithms.LargestTimeForGivenDigits.LargestTimeForGivenDigitsBruteForce                                                                     96.3%
@@ -1039,7 +1040,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX.SpecialArrayWithXElementsGreaterThanOrEqualXBruteForce                                100%
   LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX.SpecialArrayWithXElementsGreaterThanOrEqualXSorting                                  92.3%
   LeetCode.Algorithms.SpecialPositionsInBinaryMatrix.SpecialPositionsInBinaryMatrixBruteForce                                                             95%
-  LeetCode.Algorithms.SpecialPositionsInBinaryMatrix.SpecialPositionsInBinaryMatrixSum                                                                  93.3%
+  LeetCode.Algorithms.SpecialPositionsInBinaryMatrix.SpecialPositionsInBinaryMatrixSum                                                                  93.7%
   LeetCode.Algorithms.SpiralMatrix.SpiralMatrixSimulation                                                                                                100%
   LeetCode.Algorithms.SpiralMatrix3.SpiralMatrix3Simulation                                                                                              100%
   LeetCode.Algorithms.SpiralMatrix4.SpiralMatrix4Simulation                                                                                              100%
@@ -1186,7 +1187,7 @@ LeetCode                                                                        
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 90.6%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                     100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                              100%
