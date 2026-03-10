@@ -9,9 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.SmallestRange1;
+namespace LeetCode.Algorithms.SmallestPairWithDifferentFrequencies;
 
-namespace LeetCode.Tests.Algorithms.SmallestRange1;
-
-[TestClass]
-public sealed class SmallestRange1GreedyTests : SmallestRange1TestsBase<SmallestRange1Greedy>;
+/// <summary>
+///     https://leetcode.com/problems/smallest-pair-with-different-frequencies/description/
+/// </summary>
+public interface ISmallestPairWithDifferentFrequencies
+{
+    int[] MinDistinctFreqPair(int[] nums);
+}
