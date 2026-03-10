@@ -447,6 +447,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1608. Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/description/)
 - [1609. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/description/)
 - [1614. Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/description/)
+- [1624. Largest Substring Between Two Equal Characters](https://leetcode.com/problems/largest-substring-between-two-equal-characters/description/)
 - [1630. Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/description/)
 - [1636. Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/description/)
 - [1637. Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description/)

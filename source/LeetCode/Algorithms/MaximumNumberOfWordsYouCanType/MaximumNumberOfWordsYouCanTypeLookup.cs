@@ -14,7 +14,7 @@ namespace LeetCode.Algorithms.MaximumNumberOfWordsYouCanType;
 /// <inheritdoc />
 public sealed class MaximumNumberOfWordsYouCanTypeLookup : IMaximumNumberOfWordsYouCanType
 {
-    private const int AlphabetLength = 'z' - 'a' + 1;
+    private const byte AlphabetLength = 'z' - 'a' + 1;
 
     /// <summary>
     ///     Time complexity - O(n + m), where n is the length of the text and m is the length of brokenLetters

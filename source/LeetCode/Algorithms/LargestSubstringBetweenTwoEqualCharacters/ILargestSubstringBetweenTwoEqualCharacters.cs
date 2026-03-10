@@ -9,17 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.MaximumSubstringsWithDistinctStart;
+namespace LeetCode.Algorithms.LargestSubstringBetweenTwoEqualCharacters;
 
-/// <inheritdoc />
-public abstract class MaximumSubstringsWithDistinctStartBase : IMaximumSubstringsWithDistinctStart
+/// <summary>
+///     https://leetcode.com/problems/largest-substring-between-two-equal-characters/description/
+/// </summary>
+public interface ILargestSubstringBetweenTwoEqualCharacters
 {
-    protected const byte AlphabetLength = 'z' - 'a' + 1;
-
-    public abstract int MaxDistinct(string s);
-
-    protected static int GetIndex(char c)
-    {
-        return c - 'a';
-    }
+    int MaxLengthBetweenEqualCharacters(string s);
 }

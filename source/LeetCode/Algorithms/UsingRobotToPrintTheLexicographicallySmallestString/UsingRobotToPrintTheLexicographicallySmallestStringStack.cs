@@ -15,7 +15,7 @@ namespace LeetCode.Algorithms.UsingRobotToPrintTheLexicographicallySmallestStrin
 public sealed class UsingRobotToPrintTheLexicographicallySmallestStringStack :
     IUsingRobotToPrintTheLexicographicallySmallestString
 {
-    private const int AlphabetLength = 'z' - 'a' + 1;
+    private const byte AlphabetLength = 'z' - 'a' + 1;
 
     /// <summary>
     ///     Time complexity - O(n)

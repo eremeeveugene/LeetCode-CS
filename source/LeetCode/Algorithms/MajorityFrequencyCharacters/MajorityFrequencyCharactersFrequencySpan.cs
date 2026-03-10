@@ -14,7 +14,7 @@ namespace LeetCode.Algorithms.MajorityFrequencyCharacters;
 /// <inheritdoc />
 public sealed class MajorityFrequencyCharactersFrequencySpan : IMajorityFrequencyCharacters
 {
-    private const int AlphabetSize = 26;
+    private const byte AlphabetLength = 'z' - 'a' + 1;
     private const char FirstLetter = 'a';
 
     /// <summary>
@@ -25,7 +25,7 @@ public sealed class MajorityFrequencyCharactersFrequencySpan : IMajorityFrequenc
     /// <returns></returns>
     public string MajorityFrequencyGroup(string s)
     {
-        Span<int> letterFrequencies = stackalloc int[AlphabetSize];
+        Span<int> letterFrequencies = stackalloc int[AlphabetLength];
 
         for (var i = 0; i < s.Length; i++)
         {
@@ -36,7 +36,7 @@ public sealed class MajorityFrequencyCharactersFrequencySpan : IMajorityFrequenc
 
         Span<int> groupSizes = stackalloc int[s.Length + 1];
 
-        for (var i = 0; i < AlphabetSize; i++)
+        for (var i = 0; i < AlphabetLength; i++)
         {
             var frequency = letterFrequencies[i];
 
@@ -69,11 +69,11 @@ public sealed class MajorityFrequencyCharactersFrequencySpan : IMajorityFrequenc
             maxSize = size;
         }
 
-        Span<char> resultBuffer = stackalloc char[AlphabetSize];
+        Span<char> resultBuffer = stackalloc char[AlphabetLength];
 
         var resultLength = 0;
 
-        for (var i = 0; i < AlphabetSize; i++)
+        for (var i = 0; i < AlphabetLength; i++)
         {
             if (letterFrequencies[i] != maxFrequency)
             {
