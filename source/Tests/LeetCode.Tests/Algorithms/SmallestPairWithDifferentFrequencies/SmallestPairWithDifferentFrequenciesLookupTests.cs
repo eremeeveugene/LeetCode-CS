@@ -9,9 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.SmallestRange1;
+using LeetCode.Algorithms.SmallestPairWithDifferentFrequencies;
 
-namespace LeetCode.Tests.Algorithms.SmallestRange1;
+namespace LeetCode.Tests.Algorithms.SmallestPairWithDifferentFrequencies;
 
 [TestClass]
-public sealed class SmallestRange1GreedyTests : SmallestRange1TestsBase<SmallestRange1Greedy>;
+public sealed class SmallestPairWithDifferentFrequenciesLookupTests :
+    SmallestPairWithDifferentFrequenciesTestsBase<SmallestPairWithDifferentFrequenciesLookup>;

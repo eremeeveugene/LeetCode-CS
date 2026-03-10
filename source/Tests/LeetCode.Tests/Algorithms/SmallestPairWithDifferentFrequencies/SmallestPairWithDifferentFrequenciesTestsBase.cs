@@ -9,29 +9,31 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.SmallestRange1;
+using LeetCode.Algorithms.SmallestPairWithDifferentFrequencies;
 using LeetCode.Core.Helpers;
 
-namespace LeetCode.Tests.Algorithms.SmallestRange1;
+namespace LeetCode.Tests.Algorithms.SmallestPairWithDifferentFrequencies;
 
-public abstract class SmallestRange1TestsBase<T> where T : ISmallestRange1, new()
+public abstract class SmallestPairWithDifferentFrequenciesTestsBase<T>
+    where T : ISmallestPairWithDifferentFrequencies, new()
 {
     [TestMethod]
-    [DataRow("[1]", 0, 0)]
-    [DataRow("[0,10]", 2, 6)]
-    [DataRow("[1,3,6]", 3, 0)]
-    public void SmallestRangeI_WithArrayAndAdjustmentLimit_ReturnsMinimumPossibleScore(string numsJson, int k,
-        int expectedResult)
+    [DataRow("[1,1,2,2,3,4]", "[1,3]")]
+    [DataRow("[1,5]", "[-1,-1]")]
+    [DataRow("[7]", "[-1,-1]")]
+    public void MinDistinctFreqPair_WithInputNums_ReturnsSmallestPairWithDifferentFrequencies(string numsJson,
+        string expectedResultJson)
     {
         // Arrange
         var nums = JsonHelper<int[]>.Parse(numsJson);
+        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
 
         var solution = new T();
 
         // Act
-        var actualResult = solution.SmallestRangeI(nums, k);
+        var actualResult = solution.MinDistinctFreqPair(nums);
 
         // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }
