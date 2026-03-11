@@ -319,6 +319,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [951. Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees/description/)
 - [955. Delete Columns to Make Sorted II](https://leetcode.com/problems/delete-columns-to-make-sorted-ii/description/)
 - [959. Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes/description/)
+- [961. N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/description/)
 - [966. Vowel Spellchecker](https://leetcode.com/problems/vowel-spellchecker/description/)
 - [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/description/)
 - [976. Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/description/)
