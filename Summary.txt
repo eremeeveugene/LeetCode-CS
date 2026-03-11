@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/11/2026 - 3:38:19 PM
-  Coverage date: 3/11/2026 - 3:37:11 PM - 3/11/2026 - 3:37:32 PM
+  Generated on: 3/11/2026 - 4:04:30 PM
+  Coverage date: 3/11/2026 - 4:03:23 PM - 3/11/2026 - 4:03:43 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1179
-  Files: 1179
+  Classes: 1181
+  Files: 1181
   Line coverage: 97.5%
-  Covered lines: 26137
-  Uncovered lines: 650
-  Coverable lines: 26787
-  Total lines: 66510
-  Branch coverage: 95.1% (9704 of 10201)
-  Covered branches: 9704
-  Total branches: 10201
-  Method coverage: 99.2% (1745 of 1758)
-  Full method coverage: 87.9% (1546 of 1758)
-  Covered methods: 1745
+  Covered lines: 26158
+  Uncovered lines: 652
+  Coverable lines: 26810
+  Total lines: 66592
+  Branch coverage: 95.1% (9710 of 10209)
+  Covered branches: 9710
+  Total branches: 10209
+  Method coverage: 99.2% (1747 of 1760)
+  Full method coverage: 87.8% (1546 of 1760)
+  Covered methods: 1747
   Fully covered methods: 1546
-  Total methods: 1758
+  Total methods: 1760
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -790,6 +790,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.NextGreaterElement1.NextGreaterElement1BruteForce                                                                                  100%
   LeetCode.Algorithms.NextGreaterElement1.NextGreaterElement1StackDictionary                                                                             100%
   LeetCode.Algorithms.NimGame.NimGameMath                                                                                                                100%
+  LeetCode.Algorithms.NRepeatedElementInSize2NArray.NRepeatedElementInSize2NArrayHashSet                                                                90.9%
+  LeetCode.Algorithms.NRepeatedElementInSize2NArray.NRepeatedElementInSize2NArrayLookup                                                                 91.6%
   LeetCode.Algorithms.NthTribonacciNumber.NthTribonacciNumberIterative                                                                                   100%
   LeetCode.Algorithms.NthTribonacciNumber.NthTribonacciNumberMatrixExponentiation                                                                        100%
   LeetCode.Algorithms.NumberAfterDoubleReversal.NumberAfterDoubleReversalMath                                                                            100%
