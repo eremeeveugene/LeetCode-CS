@@ -9,35 +9,37 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.NRepeatedElementInSize2NArray;
+namespace LeetCode.Algorithms.DeleteColumnsToMakeSorted;
 
 /// <inheritdoc />
-public sealed class NRepeatedElementInSize2NArrayLookup : INRepeatedElementInSize2NArray
+public sealed class DeleteColumnsToMakeSortedSimulation : IDeleteColumnsToMakeSorted
 {
-    private const int MaxValue = 10_000;
-
     /// <summary>
-    ///     Time complexity - O(n)
+    ///     Time complexity - O(n * m)
     ///     Space complexity - O(1)
     /// </summary>
-    /// <param name="nums"></param>
+    /// <param name="strs"></param>
     /// <returns></returns>
-    public int RepeatedNTimes(int[] nums)
+    public int MinDeletionSize(string[] strs)
     {
-        Span<bool> numsLookup = stackalloc bool[MaxValue + 1];
+        var result = 0;
 
-        for (var i = 0; i < nums.Length; i++)
+        var n = strs.Length;
+        var m = strs[0].Length;
+
+        for (var j = 0; j < m; j++)
         {
-            var num = nums[i];
-
-            if (numsLookup[num])
+            for (var i = 0; i < n - 1; i++)
             {
-                return num;
-            }
+                if (strs[i][j] > strs[i + 1][j])
+                {
+                    result++;
 
-            numsLookup[num] = true;
+                    break;
+                }
+            }
         }
 
-        return 0;
+        return result;
     }
 }
