@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/11/2026 - 4:04:30 PM
-  Coverage date: 3/11/2026 - 4:03:23 PM - 3/11/2026 - 4:03:43 PM
+  Generated on: 3/12/2026 - 4:51:10 PM
+  Coverage date: 3/12/2026 - 4:49:56 PM - 3/12/2026 - 4:50:16 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1181
-  Files: 1181
+  Classes: 1182
+  Files: 1182
   Line coverage: 97.5%
-  Covered lines: 26158
+  Covered lines: 26174
   Uncovered lines: 652
-  Coverable lines: 26810
-  Total lines: 66592
-  Branch coverage: 95.1% (9710 of 10209)
-  Covered branches: 9710
-  Total branches: 10209
-  Method coverage: 99.2% (1747 of 1760)
-  Full method coverage: 87.8% (1546 of 1760)
-  Covered methods: 1747
-  Fully covered methods: 1546
-  Total methods: 1760
+  Coverable lines: 26826
+  Total lines: 66639
+  Branch coverage: 95.1% (9716 of 10215)
+  Covered branches: 9716
+  Total branches: 10215
+  Method coverage: 99.2% (1748 of 1761)
+  Full method coverage: 87.8% (1547 of 1761)
+  Covered methods: 1748
+  Fully covered methods: 1547
+  Total methods: 1761
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -244,6 +244,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DefangingAnIPAddress.DefangingAnIPAddressStringBuilder                                                                             100%
   LeetCode.Algorithms.DefuseTheBomb.DefuseTheBombSlidingWindow                                                                                           100%
   LeetCode.Algorithms.DeleteCharactersToMakeFancyString.DeleteCharactersToMakeFancyStringIterative                                                       100%
+  LeetCode.Algorithms.DeleteColumnsToMakeSorted.DeleteColumnsToMakeSortedSimulation                                                                      100%
   LeetCode.Algorithms.DeleteColumnsToMakeSorted2.DeleteColumnsToMakeSorted2Greedy                                                                        100%
   LeetCode.Algorithms.DeleteLeavesWithGivenValue.DeleteLeavesWithGivenValueDepthFirstSearch                                                              100%
   LeetCode.Algorithms.DeleteNodeFromLinkedListPresentInArray.DeleteNodeFromLinkedListPresentInArrayBinarySearch                                          100%
