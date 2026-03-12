@@ -311,6 +311,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [921. Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/)
 - [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/description/)
 - [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/description/)
+- [944. Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/description/)
 - [947. Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/)
 - [945. Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/description/)
 - [948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/description/)

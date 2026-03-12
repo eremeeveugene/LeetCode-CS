@@ -9,33 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.NRepeatedElementInSize2NArray;
+namespace LeetCode.Algorithms.DeleteColumnsToMakeSorted;
 
-/// <inheritdoc />
-public sealed class NRepeatedElementInSize2NArrayHashSet : INRepeatedElementInSize2NArray
+/// <summary>
+///     https://leetcode.com/problems/delete-columns-to-make-sorted/description/
+/// </summary>
+public interface IDeleteColumnsToMakeSorted
 {
-    /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
-    public int RepeatedNTimes(int[] nums)
-    {
-        var numsHashSet = new HashSet<int>();
-
-        for (var i = 0; i < nums.Length; i++)
-        {
-            var num = nums[i];
-
-            if (numsHashSet.Add(num))
-            {
-                continue;
-            }
-
-            return num;
-        }
-
-        return 0;
-    }
+    int MinDeletionSize(string[] strs);
 }
