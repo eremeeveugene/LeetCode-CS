@@ -709,6 +709,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3046. Split the Array](https://leetcode.com/problems/split-the-array/description/)
 - [3066. Minimum Operations to Exceed Threshold Value II](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/description/)
 - [3068. Find the Maximum Sum of Node Values](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/description/)
+- [3074. Apple Redistribution into Boxes](https://leetcode.com/problems/apple-redistribution-into-boxes/description/)
 - [3075. Maximize Happiness of Selected Children](https://leetcode.com/problems/maximize-happiness-of-selected-children/description/)
 - [3085. Minimum Deletions to Make String K-Special](https://leetcode.com/problems/minimum-deletions-to-make-string-k-special/description/)
 - [3097. Shortest Subarray With OR at Least K II](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/description/)
