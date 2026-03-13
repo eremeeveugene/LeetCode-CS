@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/12/2026 - 4:51:10 PM
-  Coverage date: 3/12/2026 - 4:49:56 PM - 3/12/2026 - 4:50:16 PM
+  Generated on: 3/13/2026 - 2:58:01 PM
+  Coverage date: 3/13/2026 - 2:56:55 PM - 3/13/2026 - 2:57:14 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1182
-  Files: 1182
+  Classes: 1183
+  Files: 1183
   Line coverage: 97.5%
-  Covered lines: 26174
+  Covered lines: 26203
   Uncovered lines: 652
-  Coverable lines: 26826
-  Total lines: 66639
-  Branch coverage: 95.1% (9716 of 10215)
-  Covered branches: 9716
-  Total branches: 10215
-  Method coverage: 99.2% (1748 of 1761)
-  Full method coverage: 87.8% (1547 of 1761)
-  Covered methods: 1748
-  Fully covered methods: 1547
-  Total methods: 1761
+  Coverable lines: 26855
+  Total lines: 66708
+  Branch coverage: 95.1% (9728 of 10227)
+  Covered branches: 9728
+  Total branches: 10227
+  Method coverage: 99.2% (1749 of 1762)
+  Full method coverage: 87.8% (1548 of 1762)
+  Covered methods: 1749
+  Fully covered methods: 1548
+  Total methods: 1762
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -44,6 +44,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.AlternatingGroups2.AlternatingGroups2BruteForce                                                                                    100%
   LeetCode.Algorithms.AlternatingGroups2.AlternatingGroups2SlidingWindow                                                                                 100%
   LeetCode.Algorithms.AppendCharactersToStringToMakeSubsequence.AppendCharactersToStringToMakeSubsequenceTwoPointers                                     100%
+  LeetCode.Algorithms.AppleRedistributionIntoBoxes.AppleRedistributionIntoBoxesGreedy                                                                    100%
   LeetCode.Algorithms.ApplyDiscountToPrices.ApplyDiscountToPricesIterative                                                                               100%
   LeetCode.Algorithms.ApplyOperationsToAnArray.ApplyOperationsToAnArrayTwoPointers                                                                       100%
   LeetCode.Algorithms.ArithmeticSubarrays.ArithmeticSubarraysHashSet                                                                                     100%
