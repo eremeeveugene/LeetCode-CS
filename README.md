@@ -830,6 +830,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3852. Smallest Pair With Different Frequencies](https://leetcode.com/problems/smallest-pair-with-different-frequencies/description/)
 - [3856. Trim Trailing Vowels](https://leetcode.com/problems/trim-trailing-vowels/description/)
 - [3861. Minimum Capacity Box](https://leetcode.com/problems/minimum-capacity-box/description/)
+- [3866. First Unique Even Element](https://leetcode.com/problems/first-unique-even-element/description/)
 
   </p>
 </details>
