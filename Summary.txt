@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/13/2026 - 2:58:01 PM
-  Coverage date: 3/13/2026 - 2:56:55 PM - 3/13/2026 - 2:57:14 PM
+  Generated on: 3/20/2026 - 3:36:23 PM
+  Coverage date: 3/20/2026 - 3:35:02 PM - 3/20/2026 - 3:35:21 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1183
-  Files: 1183
+  Classes: 1185
+  Files: 1185
   Line coverage: 97.5%
-  Covered lines: 26203
+  Covered lines: 26250
   Uncovered lines: 652
-  Coverable lines: 26855
-  Total lines: 66708
-  Branch coverage: 95.1% (9728 of 10227)
-  Covered branches: 9728
-  Total branches: 10227
-  Method coverage: 99.2% (1749 of 1762)
-  Full method coverage: 87.8% (1548 of 1762)
-  Covered methods: 1749
-  Fully covered methods: 1548
-  Total methods: 1762
+  Coverable lines: 26902
+  Total lines: 66823
+  Branch coverage: 95.1% (9750 of 10249)
+  Covered branches: 9750
+  Total branches: 10249
+  Method coverage: 99.2% (1751 of 1764)
+  Full method coverage: 87.8% (1550 of 1764)
+  Covered methods: 1751
+  Fully covered methods: 1550
+  Total methods: 1764
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -439,6 +439,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveHashSet                                                                                   100%
   LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveIterative                                                                                 100%
   LeetCode.Algorithms.FirstUniqueCharacterInString.FirstUniqueCharacterInStringIterative                                                                 100%
+  LeetCode.Algorithms.FirstUniqueEvenElement.FirstUniqueEvenElementFrequencyArray                                                                        100%
+  LeetCode.Algorithms.FirstUniqueEvenElement.FirstUniqueEvenElementFrequencyDictionary                                                                   100%
   LeetCode.Algorithms.FizzBuzz.FizzBuzzIterative                                                                                                         100%
   LeetCode.Algorithms.FlipColumnsForMaximumNumberOfEqualRows.FlipColumnsForMaximumNumberOfEqualRowsDictionary                                            100%
   LeetCode.Algorithms.FlipEquivalentBinaryTrees.FlipEquivalentBinaryTreesRecursive                                                                       100%
