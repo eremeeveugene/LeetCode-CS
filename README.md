@@ -831,6 +831,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3856. Trim Trailing Vowels](https://leetcode.com/problems/trim-trailing-vowels/description/)
 - [3861. Minimum Capacity Box](https://leetcode.com/problems/minimum-capacity-box/description/)
 - [3866. First Unique Even Element](https://leetcode.com/problems/first-unique-even-element/description/)
+- [3875. Construct Uniform Parity Array I](https://leetcode.com/problems/construct-uniform-parity-array-i/description/)
 
   </p>
 </details>
