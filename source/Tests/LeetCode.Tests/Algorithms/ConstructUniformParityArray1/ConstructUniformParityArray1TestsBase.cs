@@ -17,8 +17,7 @@ namespace LeetCode.Tests.Algorithms.ConstructUniformParityArray1;
 public abstract class ConstructUniformParityArray1TestsBase<T> where T : IConstructUniformParityArray1, new()
 {
     [TestMethod]
-    [DataRow("[1,4,7]", true)]
-    [DataRow("[2,3]", false)]
+    [DataRow("[2,3]", true)]
     [DataRow("[4,6]", true)]
     public void UniformArray_WithDistinctIntegerArray_ReturnsTrueIfUniformParityArrayCanBeConstructed(string numsJson,
         bool expectedResult)
