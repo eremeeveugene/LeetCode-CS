@@ -11,7 +11,6 @@
 
 using LeetCode.Algorithms.PascalsTriangle;
 using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.PascalsTriangle;
 
@@ -23,14 +22,14 @@ public abstract class PascalsTriangleTestsBase<T> where T : IPascalsTriangle, ne
     public void Generate_GivenNumRows_ReturnsPascalsTriangle(int numRows, string expectedJsonResult)
     {
         // Arrange
-        var expectedResult = JsonHelper<IList<IList<int>>>.Parse(expectedJsonResult);
+        var expectedResult = JsonHelper<int[][]>.Parse(expectedJsonResult);
 
         var solution = new T();
 
         // Act
-        var actualResult = solution.Generate(numRows);
+        var actualResult = solution.Generate(numRows).ToArray();
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }
