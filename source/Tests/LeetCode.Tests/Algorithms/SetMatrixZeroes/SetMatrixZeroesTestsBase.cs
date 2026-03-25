@@ -11,7 +11,6 @@
 
 using LeetCode.Algorithms.SetMatrixZeroes;
 using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.SetMatrixZeroes;
 
@@ -33,6 +32,6 @@ public abstract class SetMatrixZeroesTestsBase<T> where T : ISetMatrixZeroes, ne
         solution.SetZeroes(matrix);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, matrix);
+        CollectionAssert.AreEqual(expectedResult, matrix);
     }
 }
