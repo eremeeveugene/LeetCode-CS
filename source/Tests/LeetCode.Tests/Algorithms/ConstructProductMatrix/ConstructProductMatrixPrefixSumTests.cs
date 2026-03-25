@@ -14,4 +14,5 @@ using LeetCode.Algorithms.ConstructProductMatrix;
 namespace LeetCode.Tests.Algorithms.ConstructProductMatrix;
 
 [TestClass]
-public sealed class ConstructProductMatrix1Tests : ConstructProductMatrixTestsBase<ConstructProductMatrix1>;
+public sealed class ConstructProductMatrixPrefixSumTests :
+    ConstructProductMatrixTestsBase<ConstructProductMatrixPrefixSum>;

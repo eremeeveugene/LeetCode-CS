@@ -12,12 +12,18 @@
 namespace LeetCode.Algorithms.ConstructProductMatrix;
 
 /// <inheritdoc />
-public sealed class ConstructProductMatrix1 : IConstructProductMatrix
+public sealed class ConstructProductMatrixPrefixSum : IConstructProductMatrix
 {
+    private const int Modulo = 12_345;
+
+    /// <summary>
+    ///     Time complexity - O(m * n)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="grid"></param>
+    /// <returns></returns>
     public int[][] ConstructProductMatrix(int[][] grid)
     {
-        const int mod = 12345;
-
         var m = grid.Length;
         var n = grid[0].Length;
 
@@ -36,9 +42,9 @@ public sealed class ConstructProductMatrix1 : IConstructProductMatrix
             {
                 result[i][j] = prefix;
 
-                grid[i][j] %= mod;
+                grid[i][j] %= Modulo;
 
-                prefix = prefix * grid[i][j] % mod;
+                prefix = prefix * grid[i][j] % Modulo;
             }
         }
 
@@ -48,9 +54,9 @@ public sealed class ConstructProductMatrix1 : IConstructProductMatrix
         {
             for (var j = n - 1; j >= 0; j--)
             {
-                result[i][j] = result[i][j] * suffix % mod;
+                result[i][j] = result[i][j] * suffix % Modulo;
 
-                suffix = suffix * grid[i][j] % mod;
+                suffix = suffix * grid[i][j] % Modulo;
             }
         }
 
