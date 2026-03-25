@@ -11,7 +11,6 @@
 
 using LeetCode.Algorithms.MergeTwo2DArraysBySummingValues;
 using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.MergeTwo2DArraysBySummingValues;
 
@@ -34,6 +33,6 @@ public abstract class MergeTwo2DArraysBySummingValuesTestsBase<T> where T : IMer
         var actualResult = solution.MergeArrays(nums1, nums2);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }
