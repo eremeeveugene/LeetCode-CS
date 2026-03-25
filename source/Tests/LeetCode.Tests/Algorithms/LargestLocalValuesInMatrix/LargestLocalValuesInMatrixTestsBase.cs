@@ -11,7 +11,6 @@
 
 using LeetCode.Algorithms.LargestLocalValuesInMatrix;
 using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.LargestLocalValuesInMatrix;
 
@@ -33,6 +32,6 @@ public abstract class LargestLocalValuesInMatrixTestsBase<T> where T : ILargestL
         var actualResult = solution.LargestLocal(grid);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

@@ -11,7 +11,6 @@
 
 using LeetCode.Algorithms.FindAllGroupOfFarmland;
 using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.FindAllGroupOfFarmland;
 
@@ -38,6 +37,6 @@ public abstract class FindAllGroupOfFarmlandTestsBase<T> where T : IFindAllGroup
         var actualResult = solution.FindFarmland(land);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

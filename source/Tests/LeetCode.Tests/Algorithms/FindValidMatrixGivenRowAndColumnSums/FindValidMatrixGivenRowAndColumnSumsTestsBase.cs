@@ -11,7 +11,6 @@
 
 using LeetCode.Algorithms.FindValidMatrixGivenRowAndColumnSums;
 using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.FindValidMatrixGivenRowAndColumnSums;
 
@@ -35,6 +34,6 @@ public abstract class FindValidMatrixGivenRowAndColumnSumsTestsBase<T>
         var actualResult = solution.RestoreMatrix(rowSum, colSum);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }
