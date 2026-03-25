@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/22/2026 - 4:13:17 PM
-  Coverage date: 3/22/2026 - 4:11:58 PM - 3/22/2026 - 4:12:18 PM
+  Generated on: 3/25/2026 - 2:10:10 PM
+  Coverage date: 3/25/2026 - 2:09:00 PM - 3/25/2026 - 2:09:20 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1186
-  Files: 1186
+  Classes: 1188
+  Files: 1188
   Line coverage: 97.5%
-  Covered lines: 26256
-  Uncovered lines: 649
-  Coverable lines: 26905
-  Total lines: 66850
-  Branch coverage: 95.1% (9753 of 10249)
-  Covered branches: 9753
-  Total branches: 10249
-  Method coverage: 99.2% (1752 of 1765)
-  Full method coverage: 87.8% (1551 of 1765)
-  Covered methods: 1752
+  Covered lines: 26330
+  Uncovered lines: 658
+  Coverable lines: 26988
+  Total lines: 67014
+  Branch coverage: 95.1% (9777 of 10279)
+  Covered branches: 9777
+  Total branches: 10279
+  Method coverage: 99.2% (1754 of 1767)
+  Full method coverage: 87.7% (1551 of 1767)
+  Covered methods: 1754
   Fully covered methods: 1551
-  Total methods: 1765
+  Total methods: 1767
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -304,6 +304,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList.DoubleNumberRepresentedAsLinkedListIterative                                                   100%
   LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList.DoubleNumberRepresentedAsLinkedListStack                                                       100%
   LeetCode.Algorithms.EqualScoreSubstrings.EqualScoreSubstringsPrefixSum                                                                                 100%
+  LeetCode.Algorithms.EqualSumGridPartition1.EqualSumGridPartition1PrecomputedPrefixSum                                                                 89.7%
+  LeetCode.Algorithms.EqualSumGridPartition1.EqualSumGridPartition1PrefixSum                                                                            95.4%
   LeetCode.Algorithms.EvaluateBooleanBinaryTree.EvaluateBooleanBinaryTreeDepthFirstSearch                                                                100%
   LeetCode.Algorithms.EvenOddTree.EvenOddTreeBreadthFirst                                                                                               95.5%
   LeetCode.Algorithms.ExcelSheetColumnNumber.ExcelSheetColumnNumberIterative                                                                             100%
@@ -1193,13 +1195,13 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                     100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             84.2%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                              100%
 
 LeetCode.Core                                                                                                                                           82.1%
   LeetCode.Core.Helpers.JsonHelper<T>                                                                                                                   66.9%
