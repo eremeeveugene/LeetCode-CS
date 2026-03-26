@@ -445,6 +445,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1590. Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p/description/)
 - [1593. Split a String Into the Max Number of Unique Substrings](https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/description/)
 - [1598. Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/description/)
+- [1603. Design Parking System](https://leetcode.com/problems/design-parking-system/description/)
 - [1605. Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/description/)
 - [1608. Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/description/)
 - [1609. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/description/)
