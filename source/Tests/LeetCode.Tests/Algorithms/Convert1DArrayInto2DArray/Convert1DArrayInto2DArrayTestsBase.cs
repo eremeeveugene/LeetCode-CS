@@ -11,7 +11,6 @@
 
 using LeetCode.Algorithms.Convert1DArrayInto2DArray;
 using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.Convert1DArrayInto2DArray;
 
@@ -35,6 +34,6 @@ public abstract class Convert1DArrayInto2DArrayTestsBase<T> where T : IConvert1D
         var actualResult = solution.Construct2DArray(original, m, n);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

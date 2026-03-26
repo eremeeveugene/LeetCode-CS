@@ -9,27 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.PascalsTriangle;
-using LeetCode.Core.Helpers;
+using LeetCode.Algorithms.ConstructProductMatrix;
 
-namespace LeetCode.Tests.Algorithms.PascalsTriangle;
+namespace LeetCode.Tests.Algorithms.ConstructProductMatrix;
 
-public abstract class PascalsTriangleTestsBase<T> where T : IPascalsTriangle, new()
-{
-    [TestMethod]
-    [DataRow(1, "[[1]]")]
-    [DataRow(5, "[[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]")]
-    public void Generate_GivenNumRows_ReturnsPascalsTriangle(int numRows, string expectedJsonResult)
-    {
-        // Arrange
-        var expectedResult = JsonHelper<int[][]>.Parse(expectedJsonResult);
-
-        var solution = new T();
-
-        // Act
-        var actualResult = solution.Generate(numRows).ToArray();
-
-        // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
-    }
-}
+[TestClass]
+public sealed class ConstructProductMatrixPrefixSumTests :
+    ConstructProductMatrixTestsBase<ConstructProductMatrixPrefixSum>;

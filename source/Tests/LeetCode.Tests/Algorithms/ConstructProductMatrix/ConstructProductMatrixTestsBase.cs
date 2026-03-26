@@ -9,29 +9,29 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.SetMatrixZeroes;
+using LeetCode.Algorithms.ConstructProductMatrix;
 using LeetCode.Core.Helpers;
 
-namespace LeetCode.Tests.Algorithms.SetMatrixZeroes;
+namespace LeetCode.Tests.Algorithms.ConstructProductMatrix;
 
-public abstract class SetMatrixZeroesTestsBase<T> where T : ISetMatrixZeroes, new()
+public abstract class ConstructProductMatrixTestsBase<T> where T : IConstructProductMatrix, new()
 {
     [TestMethod]
-    [DataRow("[[1,1,1],[1,0,1],[1,1,1]]", "[[1,0,1],[0,0,0],[1,0,1]]")]
-    [DataRow("[[0,1,2,0],[3,4,5,2],[1,3,1,5]]", "[[0,0,0,0],[0,4,5,0],[0,3,1,0]]")]
-    public void SetZeroes_WithMatrixContainingZeros_SetsEntireRowAndColumnToZero(string matrixJson,
+    [DataRow("[[1,2],[3,4]]", "[[24,12],[8,6]]")]
+    [DataRow("[[12345],[2],[1]]", "[[2],[0],[0]]")]
+    public void ConstructProductMatrix_WithValidGrid_ReturnsProductOfAllOtherElementsModulo(string gridJson,
         string expectedResultJson)
     {
         // Arrange
-        var matrix = JsonHelper<int[][]>.Parse(matrixJson);
+        var grid = JsonHelper<int[][]>.Parse(gridJson);
         var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
 
         var solution = new T();
 
         // Act
-        solution.SetZeroes(matrix);
+        var actualResult = solution.ConstructProductMatrix(grid);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, matrix);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }

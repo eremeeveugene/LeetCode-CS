@@ -11,7 +11,6 @@
 
 using LeetCode.Algorithms.SortMatrixByDiagonals;
 using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.SortMatrixByDiagonals;
 
@@ -35,6 +34,6 @@ public abstract class SortMatrixByDiagonalsTestsBase<T> where T : ISortMatrixByD
         var actualResult = solution.SortMatrix(grid);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }
