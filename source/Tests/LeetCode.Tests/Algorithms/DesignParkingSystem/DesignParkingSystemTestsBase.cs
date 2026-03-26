@@ -21,12 +21,60 @@ public abstract class DesignParkingSystemTestsBase
 
     [TestMethod]
     [DataRow(
-        1,
-        1,
-        0,
+        0, 0, 0,
+        "[\"addCar\"]",
+        "[[1]]",
+        "[false]")]
+    [DataRow(
+        1, 0, 0,
+        "[\"addCar\", \"addCar\"]",
+        "[[1], [1]]",
+        "[true, false]")]
+    [DataRow(
+        0, 1, 0,
+        "[\"addCar\", \"addCar\"]",
+        "[[2], [2]]",
+        "[true, false]")]
+    [DataRow(
+        0, 0, 1,
+        "[\"addCar\", \"addCar\"]",
+        "[[3], [3]]",
+        "[true, false]")]
+    [DataRow(
+        2, 2, 2,
+        "[\"addCar\", \"addCar\", \"addCar\", \"addCar\", \"addCar\", \"addCar\", \"addCar\"]",
+        "[[1], [1], [2], [2], [3], [3], [1]]",
+        "[true, true, true, true, true, true, false]")]
+    [DataRow(
+        1, 1, 1,
+        "[\"addCar\", \"addCar\", \"addCar\"]",
+        "[[3], [2], [1]]",
+        "[true, true, true]")]
+    [DataRow(
+        1, 1, 1,
         "[\"addCar\", \"addCar\", \"addCar\", \"addCar\"]",
-        "[[1], [2], [3], [1]]",
-        "[12, 16, 25, 15]")]
+        "[[3], [2], [1], [2]]",
+        "[true, true, true, false]")]
+    [DataRow(
+        3, 0, 0,
+        "[\"addCar\", \"addCar\", \"addCar\", \"addCar\"]",
+        "[[1], [1], [1], [1]]",
+        "[true, true, true, false]")]
+    [DataRow(
+        0, 3, 0,
+        "[\"addCar\", \"addCar\", \"addCar\", \"addCar\"]",
+        "[[2], [2], [2], [2]]",
+        "[true, true, true, false]")]
+    [DataRow(
+        0, 0, 3,
+        "[\"addCar\", \"addCar\", \"addCar\", \"addCar\"]",
+        "[[3], [3], [3], [3]]",
+        "[true, true, true, false]")]
+    [DataRow(
+        1, 1, 1,
+        "[\"addCar\", \"addCar\", \"addCar\", \"addCar\"]",
+        "[[1], [4], [2], [3]]",
+        "[true, false, true, true]")]
     public void DesignParkingSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
         int bigCapacity,
         int mediumCapacity,
@@ -50,7 +98,7 @@ public abstract class DesignParkingSystemTestsBase
             switch (methods[i])
             {
                 case AddCar:
-                    solution.AddCar((int)arguments[i][0]);
+                    actualResult.Add(solution.AddCar((int)arguments[i][0]));
                     break;
                 default:
                     throw new UnexpectedMethodException(methods[i]);
