@@ -15,4 +15,4 @@ namespace LeetCode.Tests.Algorithms.MatrixSimilarityAfterCyclicShifts;
 
 [TestClass]
 public sealed class MatrixSimilarityAfterCyclicShiftsMathTests :
-    MatrixSimilarityAfterCyclicShiftsTestsBase<MatrixSimilarityAfterCyclicShifts1>;
+    MatrixSimilarityAfterCyclicShiftsTestsBase<MatrixSimilarityAfterCyclicShiftsMath>;
