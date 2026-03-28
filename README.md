@@ -260,6 +260,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [719. Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/)
 - [724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/)
 - [725. Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/)
+- [728. Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/description/)
 - [729. My Calendar I](https://leetcode.com/problems/my-calendar-i/description/)
 - [731. My Calendar II](https://leetcode.com/problems/my-calendar-ii/description/)
 - [732. My Calendar III](https://leetcode.com/problems/my-calendar-iii/description/)
