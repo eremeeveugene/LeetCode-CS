@@ -28,9 +28,9 @@ public abstract class SelfDividingNumbersTestsBase<T> where T : ISelfDividingNum
         var solution = new T();
 
         // Act
-        var actualResult = solution.SelfDividingNumbers(left, right);
+        var actualResult = solution.SelfDividingNumbers(left, right).ToArray();
 
         // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 }
