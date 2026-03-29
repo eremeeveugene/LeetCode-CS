@@ -676,6 +676,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2816. Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/description/)
 - [2824. Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description/)
 - [2825. Make String a Subsequence Using Cyclic Increments](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/description/)
+- [2839. Check if Strings Can be Made Equal With Operations I](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/description/)
 - [2843. Count Symmetric Integers](https://leetcode.com/problems/count-symmetric-integers/description/)
 - [2845. Count of Interesting Subarrays](https://leetcode.com/problems/count-of-interesting-subarrays/description/)
 - [2848. Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/description/)
