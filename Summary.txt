@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/28/2026 - 3:26:12 PM
-  Coverage date: 3/28/2026 - 3:25:06 PM - 3/28/2026 - 3:25:25 PM
+  Generated on: 3/29/2026 - 5:50:19 PM
+  Coverage date: 3/29/2026 - 5:49:02 PM - 3/29/2026 - 5:49:23 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1194
-  Files: 1194
+  Classes: 1195
+  Files: 1195
   Line coverage: 97.5%
-  Covered lines: 26465
-  Uncovered lines: 659
-  Coverable lines: 27124
-  Total lines: 67376
-  Branch coverage: 95.1% (9824 of 10327)
-  Covered branches: 9824
-  Total branches: 10327
-  Method coverage: 99.2% (1764 of 1777)
-  Full method coverage: 87.7% (1560 of 1777)
-  Covered methods: 1764
-  Fully covered methods: 1560
-  Total methods: 1777
+  Covered lines: 26473
+  Uncovered lines: 655
+  Coverable lines: 27128
+  Total lines: 67406
+  Branch coverage: 95.1% (9840 of 10341)
+  Covered branches: 9840
+  Total branches: 10341
+  Method coverage: 99.2% (1765 of 1778)
+  Full method coverage: 87.7% (1561 of 1778)
+  Covered methods: 1765
+  Fully covered methods: 1561
+  Total methods: 1778
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -114,6 +114,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CheckIfOneStringSwapCanMakeStringsEqual.CheckIfOneStringSwapCanMakeStringsEqualIterative                                           100%
   LeetCode.Algorithms.CheckIfParenthesesStringCanBeValid.CheckIfParenthesesStringCanBeValidGreedy                                                       92.8%
   LeetCode.Algorithms.CheckIfStringIsPrefixOfArray.CheckIfStringIsPrefixOfArrayTwoPointers                                                                95%
+  LeetCode.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations1.CheckIfStringsCanBeMadeEqualWithOperationsPairMatching                                 100%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramHashSet                                                                     100%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramIterative                                                                   100%
   LeetCode.Algorithms.CheckIfTwoChessboardSquaresHaveTheSameColor.CheckIfTwoChessboardSquaresHaveTheSameColorBase                                        100%
@@ -1201,7 +1202,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
