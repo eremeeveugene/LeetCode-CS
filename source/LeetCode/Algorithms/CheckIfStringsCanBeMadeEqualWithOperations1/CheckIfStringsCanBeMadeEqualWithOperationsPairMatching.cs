@@ -12,8 +12,8 @@
 namespace LeetCode.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations1;
 
 /// <inheritdoc />
-public sealed class
-    CheckIfStringsCanBeMadeEqualWithOperationsPairMatching : ICheckIfStringsCanBeMadeEqualWithOperations1
+public sealed class CheckIfStringsCanBeMadeEqualWithOperationsPairMatching :
+    ICheckIfStringsCanBeMadeEqualWithOperations1
 {
     /// <summary>
     ///     Time complexity - O(1)
