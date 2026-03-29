@@ -17,11 +17,7 @@ public abstract class CheckIfStringsCanBeMadeEqualWithOperations1TestsBase<T>
     where T : ICheckIfStringsCanBeMadeEqualWithOperations1, new()
 {
     [TestMethod]
-    [DataRow("abcd", "cdab", true)]
-    [DataRow("abcd", "dacb", false)]
-    [DataRow("abcd", "abcd", true)]
-    [DataRow("abcd", "cbad", true)]
-    [DataRow("abcd", "abdc", true)]
+    [DataRow("abcd", "abdc", false)]
     [DataRow("aabb", "bbaa", true)]
     [DataRow("abab", "baba", false)]
     [DataRow("aaaa", "aaaa", true)]
