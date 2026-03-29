@@ -23,16 +23,16 @@ public abstract class CheckIfStringsCanBeMadeEqualWithOperations1TestsBase<T>
     [DataRow("abcd", "cbad", true)]
     [DataRow("abcd", "abdc", true)]
     [DataRow("aabb", "bbaa", true)]
-    [DataRow("abab", "baba", true)]
+    [DataRow("abab", "baba", false)]
     [DataRow("aaaa", "aaaa", true)]
     [DataRow("aabb", "abab", false)]
     [DataRow("abcd", "ebad", false)]
     [DataRow("abcd", "acbd", false)]
     [DataRow("abcd", "wxyz", false)]
-    [DataRow("abca", "caab", false)]
+    [DataRow("abca", "caab", true)]
     [DataRow("abba", "baab", true)]
     [DataRow("abba", "abab", false)]
-    [DataRow("abcd", "dcba", true)]
+    [DataRow("abcd", "dcba", false)]
     public void CanBeEqual_WithGivenStrings_ReturnsTrueIfStringsCanBeMadeEqual(string s1, string s2,
         bool expectedResult)
     {
