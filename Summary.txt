@@ -1,23 +1,23 @@
 Summary
-  Generated on: 3/29/2026 - 5:50:19 PM
-  Coverage date: 3/29/2026 - 5:49:02 PM - 3/29/2026 - 5:49:23 PM
+  Generated on: 3/31/2026 - 8:15:47 AM
+  Coverage date: 3/31/2026 - 8:14:43 AM - 3/31/2026 - 8:15:03 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1195
-  Files: 1195
+  Classes: 1197
+  Files: 1197
   Line coverage: 97.5%
-  Covered lines: 26473
-  Uncovered lines: 655
-  Coverable lines: 27128
-  Total lines: 67406
-  Branch coverage: 95.1% (9840 of 10341)
-  Covered branches: 9840
-  Total branches: 10341
-  Method coverage: 99.2% (1765 of 1778)
-  Full method coverage: 87.7% (1561 of 1778)
-  Covered methods: 1765
-  Fully covered methods: 1561
-  Total methods: 1778
+  Covered lines: 26525
+  Uncovered lines: 657
+  Coverable lines: 27182
+  Total lines: 67540
+  Branch coverage: 95.1% (9861 of 10363)
+  Covered branches: 9861
+  Total branches: 10363
+  Method coverage: 99.2% (1768 of 1781)
+  Full method coverage: 87.7% (1563 of 1781)
+  Covered methods: 1768
+  Fully covered methods: 1563
+  Total methods: 1781
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -115,6 +115,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CheckIfParenthesesStringCanBeValid.CheckIfParenthesesStringCanBeValidGreedy                                                       92.8%
   LeetCode.Algorithms.CheckIfStringIsPrefixOfArray.CheckIfStringIsPrefixOfArrayTwoPointers                                                                95%
   LeetCode.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations1.CheckIfStringsCanBeMadeEqualWithOperationsPairMatching                                 100%
+  LeetCode.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations2.CheckIfStringsCanBeMadeEqualWithOperations2BruteForce                                 92.3%
+  LeetCode.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations2.CheckIfStringsCanBeMadeEqualWithOperations2FrequencyArray                              100%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramHashSet                                                                     100%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramIterative                                                                   100%
   LeetCode.Algorithms.CheckIfTwoChessboardSquaresHaveTheSameColor.CheckIfTwoChessboardSquaresHaveTheSameColorBase                                        100%
