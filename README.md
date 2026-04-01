@@ -839,6 +839,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3861. Minimum Capacity Box](https://leetcode.com/problems/minimum-capacity-box/description/)
 - [3866. First Unique Even Element](https://leetcode.com/problems/first-unique-even-element/description/)
 - [3875. Construct Uniform Parity Array I](https://leetcode.com/problems/construct-uniform-parity-array-i/description/)
+- [3884. First Matching Character From Both Ends](https://leetcode.com/problems/first-matching-character-from-both-ends/)
 
   </p>
 </details>
