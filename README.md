@@ -829,6 +829,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3754. Concatenate Non-Zero Digits and Multiply by Sum I](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/description/)
 - [3760. Maximum Substrings With Distinct Start](https://leetcode.com/problems/maximum-substrings-with-distinct-start/description/)
 - [3774. Absolute Difference Between Maximum and Minimum K Elements](https://leetcode.com/problems/absolute-difference-between-maximum-and-minimum-k-elements/description/)
+- [3783. Mirror Distance of an Integer](https://leetcode.com/problems/mirror-distance-of-an-integer/description/)
 - [3794. Reverse String Prefix](https://leetcode.com/problems/reverse-string-prefix/description/)
 - [3798. Largest Even Number](https://leetcode.com/problems/largest-even-number/description/)
 - [3803. Count Residue Prefixes](https://leetcode.com/problems/count-residue-prefixes/description/)
