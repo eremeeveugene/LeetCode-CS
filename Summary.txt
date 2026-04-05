@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/1/2026 - 8:25:11 AM
-  Coverage date: 4/1/2026 - 8:23:59 AM - 4/1/2026 - 8:24:27 AM
+  Generated on: 4/5/2026 - 3:24:57 PM
+  Coverage date: 4/5/2026 - 3:23:53 PM - 4/5/2026 - 3:24:12 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1198
-  Files: 1198
+  Classes: 1199
+  Files: 1199
   Line coverage: 97.5%
-  Covered lines: 26533
-  Uncovered lines: 659
-  Coverable lines: 27192
-  Total lines: 67577
-  Branch coverage: 95.1% (9864 of 10367)
+  Covered lines: 26541
+  Uncovered lines: 661
+  Coverable lines: 27202
+  Total lines: 67615
+  Branch coverage: 95.1% (9864 of 10369)
   Covered branches: 9864
-  Total branches: 10367
-  Method coverage: 99.2% (1769 of 1782)
-  Full method coverage: 87.7% (1563 of 1782)
-  Covered methods: 1769
-  Fully covered methods: 1563
-  Total methods: 1782
+  Total branches: 10369
+  Method coverage: 99.2% (1770 of 1783)
+  Full method coverage: 87.7% (1565 of 1783)
+  Covered methods: 1770
+  Fully covered methods: 1565
+  Total methods: 1783
 
 LeetCode                                                                                                                                                97.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -775,6 +775,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceSorting                                                                                 100%
   LeetCode.Algorithms.MinimumTimeToVisitCellInGrid.MinimumTimeToVisitCellInGridPriorityQueue                                                            97.7%
   LeetCode.Algorithms.MinimumTimeVisitingAllPoints.MinimumTimeVisitingAllPointsIterative                                                                 100%
+  LeetCode.Algorithms.MirrorDistanceOfAnInteger.MirrorDistanceOfAnIntegerMath                                                                            100%
   LeetCode.Algorithms.MissingNumber.MissingNumberCumulativeSum                                                                                           100%
   LeetCode.Algorithms.MissingNumber.MissingNumberIterativeSumAndSubtract                                                                                 100%
   LeetCode.Algorithms.MissingNumber.MissingNumberSortAndForSearch                                                                                        100%
@@ -1205,13 +1206,13 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           98.7%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                     100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                             84.2%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                              100%
 
 LeetCode.Core                                                                                                                                           82.1%
   LeetCode.Core.Helpers.JsonHelper<T>                                                                                                                   66.9%
