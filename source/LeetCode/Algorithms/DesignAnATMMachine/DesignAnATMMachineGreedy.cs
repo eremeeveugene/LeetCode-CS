@@ -58,7 +58,7 @@ public sealed class DesignAnATMMachineGreedy : IDesignAnATMMachine
             return InvalidOperation;
         }
 
-        for (var i = 0; i < 5; i++)
+        for (var i = 0; i < BanknotesCount; i++)
         {
             _banknotesCounts[i] -= used[i];
         }
