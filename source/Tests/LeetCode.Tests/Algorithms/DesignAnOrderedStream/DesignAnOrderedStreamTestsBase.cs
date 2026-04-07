@@ -23,8 +23,8 @@ public abstract class DesignAnOrderedStreamTestsBase
     [DataRow(5, "[\"insert\",\"insert\",\"insert\",\"insert\",\"insert\"]",
         "[[3, \"ccccc\"], [1, \"aaaaa\"], [2, \"bbbbb\"], [5, \"eeeee\"], [4, \"ddddd\"]]",
         "[[], [\"aaaaa\"], [\"bbbbb\", \"ccccc\"], [], [\"ddddd\", \"eeeee\"]]")]
-    public void OrderedStream_InsertVariousIndexes_ReturnsValuesInIncreasingOrder(int size, string methodsJson,
-        string argumentsJson, string expectedResultJson)
+    public void DesignAnOrderedStream_WithMixedOperations_ProcessesOperationsAccordingToSpecification(int size,
+        string methodsJson, string argumentsJson, string expectedResultJson)
     {
         // Arrange
         var methods = JsonHelper<string[]>.Parse(methodsJson);
