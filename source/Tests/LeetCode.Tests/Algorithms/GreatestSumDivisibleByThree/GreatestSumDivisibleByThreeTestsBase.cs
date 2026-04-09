@@ -23,7 +23,7 @@ public abstract class GreatestSumDivisibleByThreeTestsBase<T> where T : IGreates
     public void MaxSumDivThree_WithNumsArray_ReturnsMaxSumDivisibleByThree(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

@@ -23,9 +23,9 @@ public abstract class NextGreaterElement1TestsBase<T> where T : INextGreaterElem
         string nums2Json, string expectedResultJson)
     {
         // Arrange
-        var nums1 = JsonHelper<int[]>.Parse(nums1Json);
-        var nums2 = JsonHelper<int[]>.Parse(nums2Json);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var nums1 = JsonHelper.Parse<int[]>(nums1Json);
+        var nums2 = JsonHelper.Parse<int[]>(nums2Json);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

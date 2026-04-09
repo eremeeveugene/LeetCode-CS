@@ -28,7 +28,7 @@ public abstract class MyCalendar3TestsBase<T> where T : IMyCalendar3, new()
         // Arrange
         var methods = JsonHelper<string[]>.Parse(methodsJson);
         var arguments = JsonHelper<int[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

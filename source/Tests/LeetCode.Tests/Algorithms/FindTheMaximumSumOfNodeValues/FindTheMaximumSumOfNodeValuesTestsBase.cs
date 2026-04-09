@@ -25,7 +25,7 @@ public abstract class FindTheMaximumSumOfNodeValuesTestsBase<T> where T : IFindT
         int k, string edgesJson, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
         var edges = JsonHelper<int[][]>.Parse(edgesJson);
 
         var solution = new T();

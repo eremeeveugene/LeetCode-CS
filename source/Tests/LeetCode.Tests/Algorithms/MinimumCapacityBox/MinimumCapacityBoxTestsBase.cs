@@ -24,7 +24,7 @@ public abstract class MinimumCapacityBoxTestsBase<T> where T : IMinimumCapacityB
         int itemSize, int expectedResult)
     {
         // Arrange
-        var capacities = JsonHelper<int[]>.Parse(capacitiesJson);
+        var capacities = JsonHelper.Parse<int[]>(capacitiesJson);
 
         var solution = new T();
 

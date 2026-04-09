@@ -25,8 +25,8 @@ public abstract class FindTheMinimumAmountOfTimeToBrewPotionsTestsBase<T>
         string potionManaJson, long expectedResult)
     {
         // Arrange
-        var wizardSkills = JsonHelper<int[]>.Parse(wizardSkillsJson);
-        var potionMana = JsonHelper<int[]>.Parse(potionManaJson);
+        var wizardSkills = JsonHelper.Parse<int[]>(wizardSkillsJson);
+        var potionMana = JsonHelper.Parse<int[]>(potionManaJson);
 
         var solution = new T();
 

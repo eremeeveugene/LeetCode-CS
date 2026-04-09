@@ -22,7 +22,7 @@ public abstract class NumberOfWaysToSplitArrayTestsBase<T> where T : INumberOfWa
     public void WaysToSplitArray_WithIntegerArray_ReturnsNumberOfValidSplits(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

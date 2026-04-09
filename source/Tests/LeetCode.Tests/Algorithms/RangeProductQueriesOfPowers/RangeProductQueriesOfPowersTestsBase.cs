@@ -24,7 +24,7 @@ public abstract class RangeProductQueriesOfPowersTestsBase<T> where T : IRangePr
     {
         // Arrange
         var queries = JsonHelper<int[][]>.Parse(queriesJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

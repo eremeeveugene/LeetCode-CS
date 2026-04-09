@@ -24,7 +24,7 @@ public abstract class AdjacentIncreasingSubarraysDetection1TestsBase<T>
         string numsJson, int k, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

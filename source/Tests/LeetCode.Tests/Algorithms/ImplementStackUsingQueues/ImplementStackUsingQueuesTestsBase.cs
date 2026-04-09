@@ -24,7 +24,7 @@ public abstract class ImplementStackUsingQueuesTestsBase<T> where T : IImplement
         int topExpected, int popExpected, int? popAfterTopExpected)
     {
         // Arrange
-        var pushElements = JsonHelper<int[]>.Parse(pushElementsJson);
+        var pushElements = JsonHelper.Parse<int[]>(pushElementsJson);
 
         var solution = new T();
 
@@ -65,8 +65,8 @@ public abstract class ImplementStackUsingQueuesTestsBase<T> where T : IImplement
         string popExpectedJson)
     {
         // Arrange
-        var pushElements = JsonHelper<int[]>.Parse(pushElementsJson);
-        var popExpected = JsonHelper<int[]>.Parse(popExpectedJson);
+        var pushElements = JsonHelper.Parse<int[]>(pushElementsJson);
+        var popExpected = JsonHelper.Parse<int[]>(popExpectedJson);
 
         var solution = new T();
 

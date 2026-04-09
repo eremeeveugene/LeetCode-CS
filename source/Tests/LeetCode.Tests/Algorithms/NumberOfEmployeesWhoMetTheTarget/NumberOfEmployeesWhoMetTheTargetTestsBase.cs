@@ -32,7 +32,7 @@ public abstract class NumberOfEmployeesWhoMetTheTargetTestsBase<T> where T : INu
         string hoursJson, int target, int expectedResult)
     {
         // Arrange
-        var hours = JsonHelper<int[]>.Parse(hoursJson);
+        var hours = JsonHelper.Parse<int[]>(hoursJson);
 
         var solution = new T();
 

@@ -22,7 +22,7 @@ public abstract class MaxSumOfPairWithEqualSumOfDigitsTestsBase<T> where T : IMa
     public void MaximumSum_GivenArrayOfNumbers_ReturnsLargestSumOfDigitPairs(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

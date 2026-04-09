@@ -24,7 +24,7 @@ public abstract class AddingSpacesToStringTestsBase<T> where T : IAddingSpacesTo
         string expectedResult)
     {
         // Arrange
-        var spaces = JsonHelper<int[]>.Parse(spacesJson);
+        var spaces = JsonHelper.Parse<int[]>(spacesJson);
 
         var solution = new T();
 

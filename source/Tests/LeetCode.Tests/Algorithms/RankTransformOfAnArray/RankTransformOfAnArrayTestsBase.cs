@@ -24,8 +24,8 @@ public abstract class RankTransformOfAnArrayTestsBase<T> where T : IRankTransfor
         string expectedResultJson)
     {
         // Arrange
-        var arr = JsonHelper<int[]>.Parse(arrJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var arr = JsonHelper.Parse<int[]>(arrJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

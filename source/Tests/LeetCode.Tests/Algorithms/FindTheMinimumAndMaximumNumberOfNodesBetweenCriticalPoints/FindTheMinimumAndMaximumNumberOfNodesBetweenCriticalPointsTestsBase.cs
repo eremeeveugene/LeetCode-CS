@@ -26,9 +26,9 @@ public abstract class FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints
         string headJson, string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int[]>.Parse(headJson);
+        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

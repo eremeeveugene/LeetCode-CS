@@ -26,7 +26,7 @@ public abstract class RangeSumQueryMutableTestsBase
         string numsJson, string methodsJson, string argumentsJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
         var methods = JsonHelper<string[]>.Parse(methodsJson);
         var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
         var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);

@@ -33,8 +33,8 @@ public abstract class DesignFrontMiddleBackQueueTestsBase<T> where T : IDesignFr
     {
         // Arrange
         var operations = JsonHelper<string[]>.Parse(operationsJson);
-        var arguments = JsonHelper<int[]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var arguments = JsonHelper.Parse<int[]>(argumentsJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

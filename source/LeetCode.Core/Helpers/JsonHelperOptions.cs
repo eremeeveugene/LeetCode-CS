@@ -20,9 +20,4 @@ internal static class JsonHelperOptions
         AllowTrailingCommas = true,
         PropertyNameCaseInsensitive = true
     };
-
-    public static readonly JsonDocumentOptions JsonDocumentOptions = new()
-    {
-        AllowTrailingCommas = true
-    };
 }

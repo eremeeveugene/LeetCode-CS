@@ -22,7 +22,7 @@ public abstract class TrappingRainWaterTestsBase<T> where T : ITrappingRainWater
     public void Trap_WithHeightArray_ReturnsTrappedWaterAmount(string heightJson, int expectedResult)
     {
         // Arrange
-        var height = JsonHelper<int[]>.Parse(heightJson);
+        var height = JsonHelper.Parse<int[]>(heightJson);
 
         var solution = new T();
 

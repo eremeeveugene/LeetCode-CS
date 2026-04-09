@@ -22,7 +22,7 @@ public abstract class OneBitAndTwoBitCharactersTestsBase<T> where T : IOneBitAnd
     public void IsOneBitCharacter_WithBitsArray_ReturnsTrueIfLastIsOneBitCharacter(string bitsJson, bool expectedResult)
     {
         // Arrange
-        var bits = JsonHelper<int[]>.Parse(bitsJson);
+        var bits = JsonHelper.Parse<int[]>(bitsJson);
 
         var solution = new T();
 

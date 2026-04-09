@@ -24,7 +24,7 @@ public abstract class ContainsDuplicate2TestsBase<T> where T : IContainsDuplicat
         bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

@@ -34,7 +34,7 @@ public abstract class DeleteNodesAndReturnForestTestsBase<T> where T : IDeleteNo
         // Arrange
         var rootArray = JsonHelper<int?[]>.Parse(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var toDelete = JsonHelper<int[]>.Parse(toDeleteJson);
+        var toDelete = JsonHelper.Parse<int[]>(toDeleteJson);
         var expectedResultArray = JsonHelper<IList<IList<int?>>>.Parse(expectedResultJson);
         var expectedResult = expectedResultArray.Select(TreeNode.ToTreeNode);
 

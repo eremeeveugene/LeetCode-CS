@@ -23,9 +23,9 @@ public abstract class RestoreFinishingOrderTestsBase<T> where T : IRestoreFinish
         string friendsJson, string expectedResultJson)
     {
         // Arrange
-        var orders = JsonHelper<int[]>.Parse(ordersJson);
-        var friends = JsonHelper<int[]>.Parse(friendsJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var orders = JsonHelper.Parse<int[]>(ordersJson);
+        var friends = JsonHelper.Parse<int[]>(friendsJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

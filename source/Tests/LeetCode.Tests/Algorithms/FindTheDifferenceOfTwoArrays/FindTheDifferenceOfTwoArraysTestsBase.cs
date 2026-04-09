@@ -24,8 +24,8 @@ public abstract class FindTheDifferenceOfTwoArraysTestsBase<T> where T : IFindTh
         string nums2Json, string jsonExpectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper<int[]>.Parse(nums1Json);
-        var nums2 = JsonHelper<int[]>.Parse(nums2Json);
+        var nums1 = JsonHelper.Parse<int[]>(nums1Json);
+        var nums2 = JsonHelper.Parse<int[]>(nums2Json);
         var expectedResult = JsonHelper<IList<IList<int>>>.Parse(jsonExpectedResult);
 
         var solution = new T();

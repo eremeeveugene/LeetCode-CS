@@ -24,7 +24,7 @@ public abstract class FruitIntoBasketsTestsBase<T> where T : IFruitIntoBaskets, 
         int expectedResult)
     {
         // Arrange
-        var fruits = JsonHelper<int[]>.Parse(fruitsJson);
+        var fruits = JsonHelper.Parse<int[]>(fruitsJson);
 
         var solution = new T();
 

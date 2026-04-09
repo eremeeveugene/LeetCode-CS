@@ -23,7 +23,7 @@ public abstract class BestTimeToBuyAndSellStock5TestsBase<T> where T : IBestTime
         string pricesJson, int maxTransactions, long expectedResult)
     {
         // Arrange
-        var prices = JsonHelper<int[]>.Parse(pricesJson);
+        var prices = JsonHelper.Parse<int[]>(pricesJson);
 
         var solution = new T();
 

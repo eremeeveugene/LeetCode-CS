@@ -26,7 +26,7 @@ public abstract class CanMakeArithmeticProgressionFromSequenceTestsBase<T>
         // Arrange
         var solution = new T();
 
-        var arr = JsonHelper<int[]>.Parse(arrJson);
+        var arr = JsonHelper.Parse<int[]>(arrJson);
 
         // Act
         var actualResult = solution.CanMakeArithmeticProgression(arr);

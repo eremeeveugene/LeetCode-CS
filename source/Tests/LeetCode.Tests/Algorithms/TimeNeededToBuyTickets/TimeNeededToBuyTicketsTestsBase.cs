@@ -30,7 +30,7 @@ public abstract class TimeNeededToBuyTicketsTestsBase<T> where T : ITimeNeededTo
         string ticketsJson, int k, int expectedResult)
     {
         // Arrange
-        var tickets = JsonHelper<int[]>.Parse(ticketsJson);
+        var tickets = JsonHelper.Parse<int[]>(ticketsJson);
 
         var solution = new T();
 

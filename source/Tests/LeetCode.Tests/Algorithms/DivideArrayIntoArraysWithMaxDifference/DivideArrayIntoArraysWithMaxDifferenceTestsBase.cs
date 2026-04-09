@@ -25,7 +25,7 @@ public abstract class DivideArrayIntoArraysWithMaxDifferenceTestsBase<T>
         string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
         var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
 
         var solution = new T();

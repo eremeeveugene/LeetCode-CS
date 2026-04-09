@@ -25,7 +25,7 @@ public abstract class ZigzagGridTraversalWithSkipTestsBase<T> where T : IZigzagG
     {
         // Arrange
         var grid = JsonHelper<int[][]>.Parse(gridJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

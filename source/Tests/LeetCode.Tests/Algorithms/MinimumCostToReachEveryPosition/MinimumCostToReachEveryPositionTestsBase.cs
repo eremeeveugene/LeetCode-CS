@@ -23,8 +23,8 @@ public abstract class MinimumCostToReachEveryPositionTestsBase<T> where T : IMin
         string expectedResultJson)
     {
         // Arrange
-        var cost = JsonHelper<int[]>.Parse(costJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var cost = JsonHelper.Parse<int[]>(costJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

@@ -24,8 +24,8 @@ public abstract class MinimumDominoRotationsForEqualRowTestsBase<T> where T : IM
         string bottomsJson, int expectedResult)
     {
         // Arrange
-        var tops = JsonHelper<int[]>.Parse(topsJson);
-        var bottoms = JsonHelper<int[]>.Parse(bottomsJson);
+        var tops = JsonHelper.Parse<int[]>(topsJson);
+        var bottoms = JsonHelper.Parse<int[]>(bottomsJson);
 
         var solution = new T();
 

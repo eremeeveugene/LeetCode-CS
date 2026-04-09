@@ -23,7 +23,7 @@ public abstract class CountGoodTripletsTestsBase<T> where T : ICountGoodTriplets
         int b, int c, int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int[]>.Parse(arrJson);
+        var arr = JsonHelper.Parse<int[]>(arrJson);
 
         var solution = new T();
 

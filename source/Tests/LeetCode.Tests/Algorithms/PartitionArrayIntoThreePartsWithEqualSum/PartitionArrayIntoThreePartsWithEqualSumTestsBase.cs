@@ -37,7 +37,7 @@ public abstract class PartitionArrayIntoThreePartsWithEqualSumTestsBase<T>
         string arrJson, bool expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int[]>.Parse(arrJson);
+        var arr = JsonHelper.Parse<int[]>(arrJson);
 
         var solution = new T();
 

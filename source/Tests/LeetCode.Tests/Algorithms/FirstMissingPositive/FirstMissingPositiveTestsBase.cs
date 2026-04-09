@@ -33,7 +33,7 @@ public abstract class FirstMissingPositiveTestsBase<T> where T : IFirstMissingPo
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

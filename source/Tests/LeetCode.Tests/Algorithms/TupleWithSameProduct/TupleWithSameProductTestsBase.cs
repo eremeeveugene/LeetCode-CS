@@ -23,7 +23,7 @@ public abstract class TupleWithSameProductTestsBase<T> where T : ITupleWithSameP
     public void TupleSameProduct_GivenArrayOfNumbers_ReturnsTupleCount(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

@@ -24,7 +24,7 @@ public abstract class ConvertBinaryNumberInLinkedListToIntegerTestsBase<T>
     public void GetDecimalValue_WithBinaryLinkedList_ReturnsDecimalValue(string headJson, int expectedResult)
     {
         // Arrange
-        var headArray = JsonHelper<int[]>.Parse(headJson);
+        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNodeOrThrow(headArray);
 
         var solution = new T();

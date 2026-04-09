@@ -30,8 +30,8 @@ public abstract class MinimumEqualSumOfTwoArraysAfterReplacingZerosTestsBase<T>
         // Arrange
         var solution = new T();
 
-        var nums1 = JsonHelper<int[]>.Parse(nums1Json);
-        var nums2 = JsonHelper<int[]>.Parse(nums2Json);
+        var nums1 = JsonHelper.Parse<int[]>(nums1Json);
+        var nums2 = JsonHelper.Parse<int[]>(nums2Json);
 
         // Act
         var actualResult = solution.MinSum(nums1, nums2);

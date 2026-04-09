@@ -25,8 +25,8 @@ public abstract class FinalPricesWithSpecialDiscountInShopTestsBase<T>
         string expectedResultJson)
     {
         // Arrange
-        var prices = JsonHelper<int[]>.Parse(pricesJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var prices = JsonHelper.Parse<int[]>(pricesJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

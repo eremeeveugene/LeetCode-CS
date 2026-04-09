@@ -22,7 +22,7 @@ public abstract class CountingBitsTestsBase<T> where T : ICountingBits, new()
     public void CountBits_WithNumber_ReturnsBitCountsUpToN(int n, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

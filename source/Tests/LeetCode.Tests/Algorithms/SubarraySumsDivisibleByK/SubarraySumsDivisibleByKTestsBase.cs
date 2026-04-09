@@ -30,7 +30,7 @@ public abstract class SubarraySumsDivisibleByKTestsBase<T> where T : ISubarraySu
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

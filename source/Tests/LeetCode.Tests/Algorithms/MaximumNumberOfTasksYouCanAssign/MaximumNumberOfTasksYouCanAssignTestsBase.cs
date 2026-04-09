@@ -26,8 +26,8 @@ public abstract class MaximumNumberOfTasksYouCanAssignTestsBase<T>
         string workersJson, int pills, int strength, int expectedResult)
     {
         // Arrange
-        var tasks = JsonHelper<int[]>.Parse(tasksJson);
-        var workers = JsonHelper<int[]>.Parse(workersJson);
+        var tasks = JsonHelper.Parse<int[]>(tasksJson);
+        var workers = JsonHelper.Parse<int[]>(workersJson);
 
         var solution = new T();
 

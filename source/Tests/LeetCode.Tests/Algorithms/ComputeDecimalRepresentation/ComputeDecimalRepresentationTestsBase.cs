@@ -24,7 +24,7 @@ public abstract class ComputeDecimalRepresentationTestsBase<T> where T : IComput
         string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

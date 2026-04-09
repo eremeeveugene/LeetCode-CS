@@ -31,7 +31,7 @@ public abstract class DesignHashMapTestsBase<T> where T : IDesignHashMap, new()
         // Arrange
         var operations = JsonHelper<string[]>.Parse(operationsJson);
         var arguments = JsonHelper<int[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

@@ -22,7 +22,7 @@ public abstract class ContainerWithMostWaterTestsBase<T> where T : IContainerWit
     public void MaxArea_WithHeightsArray_ReturnsMaximumWaterContained(string heightsJson, int expectedResult)
     {
         // Arrange
-        var heights = JsonHelper<int[]>.Parse(heightsJson);
+        var heights = JsonHelper.Parse<int[]>(heightsJson);
 
         var solution = new T();
 

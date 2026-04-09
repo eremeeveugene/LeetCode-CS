@@ -29,7 +29,7 @@ public abstract class ContiguousArrayTestsBase<T> where T : IContiguousArray, ne
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

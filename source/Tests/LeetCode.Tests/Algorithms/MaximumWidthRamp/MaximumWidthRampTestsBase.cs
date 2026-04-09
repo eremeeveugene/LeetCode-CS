@@ -23,7 +23,7 @@ public abstract class MaximumWidthRampTestsBase<T> where T : IMaximumWidthRamp, 
     public void MaxWidthRamp_WithArrayOfIntegers_ReturnsMaxWidth(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

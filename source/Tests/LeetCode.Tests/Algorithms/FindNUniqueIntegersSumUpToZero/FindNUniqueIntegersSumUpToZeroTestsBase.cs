@@ -25,7 +25,7 @@ public abstract class FindNUniqueIntegersSumUpToZeroTestsBase<T> where T : IFind
     public void SumZero_WithCountOfUniqueIntegers_ReturnsArraySummingToZero(int n, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

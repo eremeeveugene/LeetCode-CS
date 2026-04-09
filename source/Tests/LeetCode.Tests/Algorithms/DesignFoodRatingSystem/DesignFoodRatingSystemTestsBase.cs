@@ -32,7 +32,7 @@ public abstract class DesignFoodRatingSystemTestsBase
         // Arrange
         var foods = JsonHelper<string[]>.Parse(foodsJson);
         var cuisines = JsonHelper<string[]>.Parse(cuisinesJson);
-        var ratings = JsonHelper<int[]>.Parse(ratingsJson);
+        var ratings = JsonHelper.Parse<int[]>(ratingsJson);
         var operations = JsonHelper<string[]>.Parse(operationsJson);
         var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
         var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);

@@ -26,7 +26,7 @@ public abstract class SplitLinkedListInPartsTestsBase<T> where T : ISplitLinkedL
         string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int[]>.Parse(headJson);
+        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNode(headArray);
 
         var expectedResultNestedArray = JsonHelper<int[][]>.Parse(expectedResultJson);

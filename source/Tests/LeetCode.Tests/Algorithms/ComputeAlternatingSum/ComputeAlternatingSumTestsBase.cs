@@ -23,7 +23,7 @@ public abstract class ComputeAlternatingSumTestsBase<T> where T : IComputeAltern
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

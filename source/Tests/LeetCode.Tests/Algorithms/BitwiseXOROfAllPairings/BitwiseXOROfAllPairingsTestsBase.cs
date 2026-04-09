@@ -23,8 +23,8 @@ public abstract class BitwiseXOROfAllPairingsTestsBAse<T> where T : IBitwiseXORO
         int expectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper<int[]>.Parse(nums1Json);
-        var nums2 = JsonHelper<int[]>.Parse(nums2Json);
+        var nums1 = JsonHelper.Parse<int[]>(nums1Json);
+        var nums2 = JsonHelper.Parse<int[]>(nums2Json);
 
         var solution = new T();
 

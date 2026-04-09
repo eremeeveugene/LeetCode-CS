@@ -23,7 +23,7 @@ public abstract class MaximumAbsoluteSumOfAnySubarrayTestsBase<T> where T : IMax
         double expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

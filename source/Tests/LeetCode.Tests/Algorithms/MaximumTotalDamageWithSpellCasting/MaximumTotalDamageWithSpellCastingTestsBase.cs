@@ -23,7 +23,7 @@ public abstract class MaximumTotalDamageWithSpellCastingTestsBase<T>
     public void MaximumTotalDamage_WithPowerValues_ReturnsMaximumAchievableDamage(string powerJson, long expectedResult)
     {
         // Arrange
-        var power = JsonHelper<int[]>.Parse(powerJson);
+        var power = JsonHelper.Parse<int[]>(powerJson);
 
         var solution = new T();
 

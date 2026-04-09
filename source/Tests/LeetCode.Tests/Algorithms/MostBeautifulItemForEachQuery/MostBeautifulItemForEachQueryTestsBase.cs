@@ -25,8 +25,8 @@ public abstract class MostBeautifulItemForEachQueryTestsBase<T> where T : IMostB
     {
         // Arrange
         var items = JsonHelper<int[][]>.Parse(itemsJson);
-        var queries = JsonHelper<int[]>.Parse(queriesJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var queries = JsonHelper.Parse<int[]>(queriesJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

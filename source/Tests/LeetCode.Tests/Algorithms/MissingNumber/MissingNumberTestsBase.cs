@@ -24,7 +24,7 @@ public abstract class MissingNumberTestsBase<T> where T : IMissingNumber, new()
     public void MissingNumber_WithIntArray_ReturnsMissingNumber(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

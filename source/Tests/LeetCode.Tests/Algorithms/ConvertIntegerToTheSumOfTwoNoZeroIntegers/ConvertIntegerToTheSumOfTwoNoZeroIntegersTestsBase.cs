@@ -29,7 +29,7 @@ public abstract class ConvertIntegerToTheSumOfTwoNoZeroIntegersTestsBase<T>
         string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

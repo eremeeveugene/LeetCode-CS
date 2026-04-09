@@ -23,7 +23,7 @@ public abstract class CountSubarraysWithFixedBoundsTestsBase<T> where T : ICount
         int maxK, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 
