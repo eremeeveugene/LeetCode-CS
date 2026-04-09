@@ -10,42 +10,33 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignAnOrderedStream;
-using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.DesignAnOrderedStream;
 
 public abstract class DesignAnOrderedStreamTestsBase
 {
-    private const string Insert = "insert";
-
     [TestMethod]
-    [DataRow(5, "[\"insert\",\"insert\",\"insert\",\"insert\",\"insert\"]",
-        "[[3, \"ccccc\"], [1, \"aaaaa\"], [2, \"bbbbb\"], [5, \"eeeee\"], [4, \"ddddd\"]]",
-        "[[], [\"aaaaa\"], [\"bbbbb\", \"ccccc\"], [], [\"ddddd\", \"eeeee\"]]")]
-    public void DesignAnOrderedStream_WithMixedOperations_ProcessesOperationsAccordingToSpecification(int size,
-        string methodsJson, string argumentsJson, string expectedResultJson)
+    [DynamicData(nameof(GetScenarios))]
+    public void DesignAnOrderedStream_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        OrderedStreamScenario scenario)
     {
         // Arrange
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[][]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
-        var solution = GetSolution(size);
+        var solution = GetSolution(scenario.Size);
 
-        // Act 
-        var actualResult = new List<object>();
+        // Act
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult?[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case Insert:
-                    actualResult.Add(solution.Insert((int)arguments[i][0], (string)arguments[i][1]));
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
@@ -53,4 +44,159 @@ public abstract class DesignAnOrderedStreamTestsBase
     }
 
     protected abstract IDesignAnOrderedStream GetSolution(int size);
+
+    private static IEnumerable<IScenario<IDesignAnOrderedStream>[]> GetScenarios()
+    {
+        yield return
+        [
+            new OrderedStreamScenario(5,
+                [
+                    new InsertOperation(3, "ccccc"),
+                    new InsertOperation(1, "aaaaa"),
+                    new InsertOperation(2, "bbbbb"),
+                    new InsertOperation(5, "eeeee"),
+                    new InsertOperation(4, "ddddd")
+                ],
+                [
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?> { "aaaaa" }),
+                    new InsertOperation.Result(new List<string?> { "bbbbb", "ccccc" }),
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?> { "ddddd", "eeeee" })
+                ])
+        ];
+
+        yield return
+        [
+            new OrderedStreamScenario(3,
+                [
+                    new InsertOperation(1, "aaaaa"),
+                    new InsertOperation(2, "bbbbb"),
+                    new InsertOperation(3, "ccccc")
+                ],
+                [
+                    new InsertOperation.Result(new List<string?> { "aaaaa" }),
+                    new InsertOperation.Result(new List<string?> { "bbbbb" }),
+                    new InsertOperation.Result(new List<string?> { "ccccc" })
+                ])
+        ];
+
+        yield return
+        [
+            new OrderedStreamScenario(3,
+                [
+                    new InsertOperation(3, "ccccc"),
+                    new InsertOperation(2, "bbbbb"),
+                    new InsertOperation(1, "aaaaa")
+                ],
+                [
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb", "ccccc" })
+                ])
+        ];
+
+        yield return
+        [
+            new OrderedStreamScenario(1,
+                [
+                    new InsertOperation(1, "aaaaa")
+                ],
+                [
+                    new InsertOperation.Result(new List<string?> { "aaaaa" })
+                ])
+        ];
+
+        yield return
+        [
+            new OrderedStreamScenario(2,
+                [
+                    new InsertOperation(2, "bbbbb"),
+                    new InsertOperation(1, "aaaaa")
+                ],
+                [
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb" })
+                ])
+        ];
+
+        yield return
+        [
+            new OrderedStreamScenario(4,
+                [
+                    new InsertOperation(2, "bbbbb"),
+                    new InsertOperation(1, "aaaaa"),
+                    new InsertOperation(4, "ddddd"),
+                    new InsertOperation(3, "ccccc")
+                ],
+                [
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb" }),
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?> { "ccccc", "ddddd" })
+                ])
+        ];
+    }
+
+    public sealed class OrderedStreamScenario : Scenario<IDesignAnOrderedStream>
+    {
+        public OrderedStreamScenario(int size, IOperation<IDesignAnOrderedStream>[] operations,
+            IOperationResult[] operationResults) : base(operations, operationResults)
+        {
+            Size = size;
+        }
+
+        public int Size { get; }
+    }
+
+    private sealed class InsertOperation : IOperation<IDesignAnOrderedStream>
+    {
+        private readonly int _idKey;
+        private readonly string _value;
+
+        public InsertOperation(int idKey, string value)
+        {
+            _idKey = idKey;
+            _value = value;
+        }
+
+        public IOperationResult Execute(IDesignAnOrderedStream designAnOrderedStream)
+        {
+            var chunk = designAnOrderedStream.Insert(_idKey, _value);
+
+            return new Result(chunk);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly IList<string?> _chunk;
+
+            public Result(IList<string?> chunk)
+            {
+                _chunk = chunk;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _chunk.SequenceEqual(other._chunk);
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                var hashCode = new HashCode();
+
+                foreach (var value in _chunk)
+                {
+                    hashCode.Add(value);
+                }
+
+                return hashCode.ToHashCode();
+            }
+        }
+    }
 }

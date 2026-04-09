@@ -30,7 +30,7 @@ public abstract class DesignAnATMMachineTestsBase
         var operations = scenario.Operations;
         var operationsLength = operations.Length;
 
-        var actualResult = new IOperationResult[operationsLength];
+        var actualResult = new IOperationResult?[operationsLength];
 
         for (var i = 0; i < operationsLength; i++)
         {
@@ -55,9 +55,9 @@ public abstract class DesignAnATMMachineTestsBase
                     new WithdrawOperation(500)
                 ],
                 [
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([0, 0, 0, 0, 1]),
-                    new WithdrawOperationResult([-1])
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([0, 0, 0, 0, 1]),
+                    new WithdrawOperation.Result([-1])
                 ]
             )
         ];
@@ -69,8 +69,8 @@ public abstract class DesignAnATMMachineTestsBase
                     new WithdrawOperation(870)
                 ],
                 [
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([1, 1, 1, 1, 1])
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([1, 1, 1, 1, 1])
                 ]
             )
         ];
@@ -82,8 +82,8 @@ public abstract class DesignAnATMMachineTestsBase
                     new WithdrawOperation(200)
                 ],
                 [
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([10, 0, 0, 0, 0])
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([10, 0, 0, 0, 0])
                 ]
             )
         ];
@@ -95,8 +95,8 @@ public abstract class DesignAnATMMachineTestsBase
                     new WithdrawOperation(300)
                 ],
                 [
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([-1])
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([-1])
                 ]
             )
         ];
@@ -108,8 +108,8 @@ public abstract class DesignAnATMMachineTestsBase
                     new WithdrawOperation(150)
                 ],
                 [
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([0, 1, 1, 0, 0])
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([0, 1, 1, 0, 0])
                 ]
             )
         ];
@@ -121,8 +121,8 @@ public abstract class DesignAnATMMachineTestsBase
                     new WithdrawOperation(700)
                 ],
                 [
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([-1])
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([-1])
                 ]
             )
         ];
@@ -135,9 +135,9 @@ public abstract class DesignAnATMMachineTestsBase
                     new WithdrawOperation(100)
                 ],
                 [
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([0, 0, 5, 0, 0]),
-                    new WithdrawOperationResult([-1])
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([0, 0, 5, 0, 0]),
+                    new WithdrawOperation.Result([-1])
                 ]
             )
         ];
@@ -149,8 +149,8 @@ public abstract class DesignAnATMMachineTestsBase
                     new WithdrawOperation(20)
                 ],
                 [
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([-1])
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([-1])
                 ]
             )
         ];
@@ -159,11 +159,11 @@ public abstract class DesignAnATMMachineTestsBase
         [
             new Scenario<IDesignAnATMMachine>([
                     new DepositOperation([1, 1, 1, 1, 1]),
-                    new WithdrawOperation(20 + 50 + 100 + 200 + 500) // = 870
+                    new WithdrawOperation(20 + 50 + 100 + 200 + 500)
                 ],
                 [
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([1, 1, 1, 1, 1])
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([1, 1, 1, 1, 1])
                 ]
             )
         ];
@@ -176,9 +176,9 @@ public abstract class DesignAnATMMachineTestsBase
                     new WithdrawOperation(20)
                 ],
                 [
-                    new DepositOperationResult(),
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([1, 0, 0, 0, 0])
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([1, 0, 0, 0, 0])
                 ]
             )
         ];
@@ -191,9 +191,9 @@ public abstract class DesignAnATMMachineTestsBase
                     new WithdrawOperation(200)
                 ],
                 [
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([0, 0, 0, 1, 0]),
-                    new WithdrawOperationResult([0, 0, 0, 1, 0])
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([0, 0, 0, 1, 0]),
+                    new WithdrawOperation.Result([0, 0, 0, 1, 0])
                 ]
             )
         ];
@@ -205,8 +205,8 @@ public abstract class DesignAnATMMachineTestsBase
                     new WithdrawOperation(300)
                 ],
                 [
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([-1])
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([-1])
                 ]
             )
         ];
@@ -219,9 +219,9 @@ public abstract class DesignAnATMMachineTestsBase
                     new WithdrawOperation(500)
                 ],
                 [
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([-1]),
-                    new WithdrawOperationResult([0, 0, 0, 0, 1])
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([-1]),
+                    new WithdrawOperation.Result([0, 0, 0, 0, 1])
                 ]
             )
         ];
@@ -235,10 +235,10 @@ public abstract class DesignAnATMMachineTestsBase
                     new WithdrawOperation(500)
                 ],
                 [
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([0, 0, 0, 0, 1]),
-                    new DepositOperationResult(),
-                    new WithdrawOperationResult([0, 0, 0, 0, 1])
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([0, 0, 0, 0, 1]),
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([0, 0, 0, 0, 1])
                 ]
             )
         ];
@@ -257,7 +257,7 @@ public abstract class DesignAnATMMachineTestsBase
         {
             designAnATMMachine.Deposit(_banknotesCounts);
 
-            return new DepositOperationResult();
+            return VoidOperationResult.Instance;
         }
     }
 
@@ -274,57 +274,39 @@ public abstract class DesignAnATMMachineTestsBase
         {
             var banknotesCounts = designAnATMMachine.Withdraw(_amount);
 
-            return new WithdrawOperationResult(banknotesCounts);
-        }
-    }
-
-    private sealed class DepositOperationResult : IOperationResult, IEquatable<DepositOperationResult>
-    {
-        public bool Equals(DepositOperationResult? other)
-        {
-            return other is not null;
+            return new Result(banknotesCounts);
         }
 
-        public override bool Equals(object? obj)
+        public sealed class Result : IOperationResult, IEquatable<Result>
         {
-            return obj is DepositOperationResult other && Equals(other);
-        }
+            private readonly int[] _banknotesCounts;
 
-        public override int GetHashCode()
-        {
-            return 0;
-        }
-    }
-
-    private sealed class WithdrawOperationResult : IOperationResult, IEquatable<WithdrawOperationResult>
-    {
-        private readonly int[] _banknotesCounts;
-
-        public WithdrawOperationResult(int[] banknotesCounts)
-        {
-            _banknotesCounts = banknotesCounts;
-        }
-
-        public bool Equals(WithdrawOperationResult? other)
-        {
-            return other is not null && _banknotesCounts.SequenceEqual(other._banknotesCounts);
-        }
-
-        public override bool Equals(object? obj)
-        {
-            return obj is WithdrawOperationResult other && Equals(other);
-        }
-
-        public override int GetHashCode()
-        {
-            var hashCode = new HashCode();
-
-            foreach (var banknotesCount in _banknotesCounts)
+            public Result(int[] banknotesCounts)
             {
-                hashCode.Add(banknotesCount);
+                _banknotesCounts = banknotesCounts;
             }
 
-            return hashCode.ToHashCode();
+            public bool Equals(Result? other)
+            {
+                return other is not null && _banknotesCounts.SequenceEqual(other._banknotesCounts);
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                var hashCode = new HashCode();
+
+                foreach (var banknotesCount in _banknotesCounts)
+                {
+                    hashCode.Add(banknotesCount);
+                }
+
+                return hashCode.ToHashCode();
+            }
         }
     }
 }
