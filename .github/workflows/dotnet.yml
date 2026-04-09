@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required for changed-files to work correctly
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
@@ -39,34 +41,94 @@ jobs:
 
       - name: Generate Coverage Report
         run: |
-          reportgenerator `
-            -reports:"./Tests/**/TestResults/**/*.cobertura.xml" `
-            -targetdir:coverage `
-            -reporttypes:"HtmlInline_AzurePipelines;Cobertura;MarkdownSummaryGithub" `
-            -historydir:coverage-history `
-            -tag:${{ github.sha }}
+          reportgenerator -reports:"./Tests/**/TestResults/**/*.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura;TextSummary"
 
-      - name: Output Coverage Summary
+      - name: Output Coverage Summary to GitHub Actions Summary
         run: |
-          $summary = Get-Content -Path "coverage/SummaryGithub.md" -Raw
+          $summary = Get-Content -Path "coverage/Summary.txt" -Raw
           $summary | Out-File -FilePath $env:GITHUB_STEP_SUMMARY
 
-      - name: Check Coverage Percentage
-        if: github.event_name == 'pull_request'
-        run: |
-          $summary = Get-Content "coverage/SummaryGithub.md" -Raw
-          if ($summary -match '\*\*Line coverage:\*\*\s+([\d.]+)%') {
-              $coverage = [double]$matches[1]
+      - name: Get Changed Files
+        id: changed-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: |
+            source/**/*.cs
 
-              if ($coverage -lt 90) {
-                  Write-Error "PR coverage below 90% ($coverage%)"
-                  exit 1
-              } else {
-                  Write-Output "PR coverage OK ($coverage%)"
+      - name: Check Coverage for Changed Files
+        run: |
+          $changedFiles = "${{ steps.changed-files.outputs.all_changed_files }}" -split '\s+'
+
+          if ($changedFiles.Count -eq 0 -or [string]::IsNullOrWhiteSpace($changedFiles[0])) {
+            Write-Output "No C# source files changed. Skipping coverage check."
+            exit 0
+          }
+
+          Write-Output "Changed files:"
+          $changedFiles | ForEach-Object { Write-Output "  $_" }
+
+          $coberturaFile = Get-ChildItem -Recurse -Filter "*.cobertura.xml" | Select-Object -First 1
+          if ($null -eq $coberturaFile) {
+            Write-Error "No Cobertura coverage file found."
+            exit 1
+          }
+
+          [xml]$cobertura = Get-Content -Path $coberturaFile.FullName
+
+          $totalLines   = 0
+          $coveredLines = 0
+          $missingCoverage = @()
+
+          foreach ($file in $changedFiles) {
+            # Normalize: forward slashes, strip leading "source/"
+            $normalized = ($file -replace '\\', '/') -replace '^source/', ''
+
+            $classNodes = $cobertura.coverage.packages.package.classes.class |
+              Where-Object { ($_.filename -replace '\\', '/') -like "*$normalized*" }
+
+            if ($null -eq $classNodes) {
+              Write-Warning "No coverage data for: $normalized (may be a test file or not compiled)"
+              continue
+            }
+
+            foreach ($class in $classNodes) {
+              $lines        = $class.lines.line
+              $fileCovered  = ($lines | Where-Object { $_.hits -gt 0 }).Count
+              $fileTotal    = $lines.Count
+
+              $totalLines   += $fileTotal
+              $coveredLines += $fileCovered
+
+              if ($fileTotal -gt 0) {
+                $filePct = [Math]::Round(($fileCovered / $fileTotal) * 100, 1)
+                if ($filePct -lt 90) {
+                  $missingCoverage += "  $normalized — ${filePct}% ($fileCovered/$fileTotal lines)"
+                }
               }
+            }
+          }
+
+          if ($totalLines -eq 0) {
+            Write-Output "No coverable lines found in changed files. Skipping check."
+            exit 0
+          }
+
+          $coveragePct = [Math]::Round(($coveredLines / $totalLines) * 100, 2)
+          Write-Output ""
+          Write-Output "=== Changed Files Coverage Summary ==="
+          Write-Output "Overall: $coveragePct% ($coveredLines/$totalLines lines covered)"
+
+          if ($missingCoverage.Count -gt 0) {
+            Write-Output ""
+            Write-Output "Files below 90%:"
+            $missingCoverage | ForEach-Object { Write-Output $_ }
+          }
+
+          if ($coveragePct -lt 90) {
+            Write-Error "Coverage for changed files is below 90%. It is at $coveragePct%"
+            exit 1
           } else {
-              Write-Error "Coverage value not found"
-              exit 1
+            Write-Output "Coverage check passed."
           }
 
       - name: Deploy to GitHub Pages
