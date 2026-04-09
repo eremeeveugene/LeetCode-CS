@@ -39,24 +39,34 @@ jobs:
 
       - name: Generate Coverage Report
         run: |
-          reportgenerator -reports:"./Tests/**/TestResults/**/*.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura;TextSummary"
+          reportgenerator `
+            -reports:"./Tests/**/TestResults/**/*.cobertura.xml" `
+            -targetdir:coverage `
+            -reporttypes:"HtmlInline_AzurePipelines;Cobertura;MarkdownSummaryGithub" `
+            -historydir:coverage-history `
+            -tag:${{ github.sha }}
 
-      - name: Output Coverage Summary to GitHub Actions Summary
+      - name: Output Coverage Summary
         run: |
-          $summary = Get-Content -Path "coverage/Summary.txt" -Raw
+          $summary = Get-Content -Path "coverage/SummaryGithub.md" -Raw
           $summary | Out-File -FilePath $env:GITHUB_STEP_SUMMARY
 
       - name: Check Coverage Percentage
+        if: github.event_name == 'pull_request'
         run: |
-          $coverageSummary = Get-Content -Path "coverage/Summary.txt"
-          $lineCoverage = $coverageSummary | Where-Object { $_ -match 'Line coverage:\s+([\d.]+)%' }
-          $coveragePercentage = [double]$matches[1]
+          $summary = Get-Content "coverage/SummaryGithub.md" -Raw
+          if ($summary -match '\*\*Line coverage:\*\*\s+([\d.]+)%') {
+              $coverage = [double]$matches[1]
 
-          if ($coveragePercentage -lt 90) {
-              Write-Error "Coverage is below 90%. It's at $coveragePercentage%"
-              exit 1
+              if ($coverage -lt 90) {
+                  Write-Error "PR coverage below 90% ($coverage%)"
+                  exit 1
+              } else {
+                  Write-Output "PR coverage OK ($coverage%)"
+              }
           } else {
-              Write-Output "Coverage is above 90%. It's at $coveragePercentage%"
+              Write-Error "Coverage value not found"
+              exit 1
           }
 
       - name: Deploy to GitHub Pages
