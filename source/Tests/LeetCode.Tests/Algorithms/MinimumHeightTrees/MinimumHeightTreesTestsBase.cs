@@ -31,7 +31,7 @@ public abstract class MinimumHeightTreesTestsBase<T> where T : IMinimumHeightTre
         string expectedResultJson)
     {
         // Arrange
-        var edges = JsonHelper<int[][]>.Parse(edgesJson);
+        var edges = JsonHelper.Parse<int[][]>(edgesJson);
         var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();

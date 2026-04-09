@@ -25,7 +25,7 @@ public abstract class FindChampion2TestsBase<T> where T : IFindChampion2, new()
         int expectedResult)
     {
         // Arrange
-        var edges = JsonHelper<int[][]>.Parse(edgesJson);
+        var edges = JsonHelper.Parse<int[][]>(edgesJson);
 
         var solution = new T();
 

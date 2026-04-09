@@ -10,70 +10,33 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignCircularDeque;
-using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.DesignCircularDeque;
 
 public abstract class DesignCircularDequeTestsBase
 {
-    private const string InsertLast = "insertLast";
-    private const string InsertFront = "insertFront";
-    private const string GetRear = "getRear";
-    private const string GetFront = "getFront";
-    private const string IsEmpty = "isEmpty";
-    private const string IsFull = "isFull";
-    private const string DeleteFront = "deleteFront";
-    private const string DeleteLast = "deleteLast";
-
     [TestMethod]
-    [DataRow(3,
-        "[\"insertLast\", \"insertLast\", \"insertFront\", \"insertFront\", \"getRear\", \"isFull\", \"deleteLast\", \"insertFront\", \"getFront\"]",
-        "[[1], [2], [3], [4], [], [], [], [4], []]", "[true, true, true, false, 2, true, true, true, 4]")]
-    public void DesignCircularDeque_WithMixedOperations_ProcessesOperationsAccordingToSpecification(int k,
-        string methodsJson, string argumentsJson, string expectedResultJson)
+    [DynamicData(nameof(GetScenarios))]
+    public void DesignCircularDeque_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        CircularDequeScenario scenario)
     {
         // Arrange
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
-        var solution = GetSolution(k);
+        var solution = GetSolution(scenario.K);
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult?[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case InsertLast:
-                    actualResult.Add(solution.InsertLast((int)arguments[i][0]));
-                    break;
-                case InsertFront:
-                    actualResult.Add(solution.InsertFront((int)arguments[i][0]));
-                    break;
-                case GetRear:
-                    actualResult.Add(solution.GetRear());
-                    break;
-                case GetFront:
-                    actualResult.Add(solution.GetFront());
-                    break;
-                case DeleteLast:
-                    actualResult.Add(solution.DeleteLast());
-                    break;
-                case DeleteFront:
-                    actualResult.Add(solution.DeleteFront());
-                    break;
-                case IsEmpty:
-                    actualResult.Add(solution.IsEmpty());
-                    break;
-                case IsFull:
-                    actualResult.Add(solution.IsFull());
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
@@ -81,4 +44,400 @@ public abstract class DesignCircularDequeTestsBase
     }
 
     protected abstract IDesignCircularDeque GetSolution(int k);
+
+    private static IEnumerable<CircularDequeScenario[]> GetScenarios()
+    {
+        yield return
+        [
+            new CircularDequeScenario(3,
+                [
+                    new InsertLastOperation(1),
+                    new InsertLastOperation(2),
+                    new InsertFrontOperation(3),
+                    new InsertFrontOperation(4),
+                    new GetRearOperation(),
+                    new IsFullOperation(),
+                    new DeleteLastOperation(),
+                    new InsertFrontOperation(4),
+                    new GetFrontOperation()
+                ],
+                [
+                    new InsertLastOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new InsertFrontOperation.Result(true),
+                    new InsertFrontOperation.Result(false),
+                    new GetRearOperation.Result(2),
+                    new IsFullOperation.Result(true),
+                    new DeleteLastOperation.Result(true),
+                    new InsertFrontOperation.Result(true),
+                    new GetFrontOperation.Result(4)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularDequeScenario(1,
+                [
+                    new InsertFrontOperation(1),
+                    new InsertFrontOperation(2),
+                    new GetFrontOperation(),
+                    new DeleteFrontOperation(),
+                    new IsEmptyOperation()
+                ],
+                [
+                    new InsertFrontOperation.Result(true),
+                    new InsertFrontOperation.Result(false),
+                    new GetFrontOperation.Result(1),
+                    new DeleteFrontOperation.Result(true),
+                    new IsEmptyOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularDequeScenario(2,
+                [
+                    new IsEmptyOperation(),
+                    new InsertLastOperation(5),
+                    new InsertLastOperation(6),
+                    new IsFullOperation(),
+                    new GetRearOperation(),
+                    new GetFrontOperation(),
+                    new DeleteLastOperation(),
+                    new GetRearOperation()
+                ],
+                [
+                    new IsEmptyOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new IsFullOperation.Result(true),
+                    new GetRearOperation.Result(6),
+                    new GetFrontOperation.Result(5),
+                    new DeleteLastOperation.Result(true),
+                    new GetRearOperation.Result(5)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularDequeScenario(3,
+                [
+                    new GetFrontOperation(),
+                    new GetRearOperation(),
+                    new DeleteFrontOperation(),
+                    new DeleteLastOperation()
+                ],
+                [
+                    new GetFrontOperation.Result(-1),
+                    new GetRearOperation.Result(-1),
+                    new DeleteFrontOperation.Result(false),
+                    new DeleteLastOperation.Result(false)
+                ])
+        ];
+    }
+
+    public sealed class CircularDequeScenario : Scenario<IDesignCircularDeque>
+    {
+        public CircularDequeScenario(int k, IOperation<IDesignCircularDeque>[] operations,
+            IOperationResult[] operationResults) : base(operations, operationResults)
+        {
+            K = k;
+        }
+
+        public int K { get; }
+    }
+
+    private sealed class InsertLastOperation : IOperation<IDesignCircularDeque>
+    {
+        private readonly int _value;
+
+        public InsertLastOperation(int value)
+        {
+            _value = value;
+        }
+
+        public IOperationResult Execute(IDesignCircularDeque designCircularDeque)
+        {
+            var result = designCircularDeque.InsertLast(_value);
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _success;
+
+            public Result(bool success)
+            {
+                _success = success;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _success == other._success;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_success);
+            }
+        }
+    }
+
+    private sealed class InsertFrontOperation : IOperation<IDesignCircularDeque>
+    {
+        private readonly int _value;
+
+        public InsertFrontOperation(int value)
+        {
+            _value = value;
+        }
+
+        public IOperationResult Execute(IDesignCircularDeque designCircularDeque)
+        {
+            var result = designCircularDeque.InsertFront(_value);
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _success;
+
+            public Result(bool success)
+            {
+                _success = success;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _success == other._success;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_success);
+            }
+        }
+    }
+
+    private sealed class DeleteFrontOperation : IOperation<IDesignCircularDeque>
+    {
+        public IOperationResult Execute(IDesignCircularDeque designCircularDeque)
+        {
+            var result = designCircularDeque.DeleteFront();
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _success;
+
+            public Result(bool success)
+            {
+                _success = success;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _success == other._success;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_success);
+            }
+        }
+    }
+
+    private sealed class DeleteLastOperation : IOperation<IDesignCircularDeque>
+    {
+        public IOperationResult Execute(IDesignCircularDeque designCircularDeque)
+        {
+            var result = designCircularDeque.DeleteLast();
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _success;
+
+            public Result(bool success)
+            {
+                _success = success;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _success == other._success;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_success);
+            }
+        }
+    }
+
+    private sealed class GetFrontOperation : IOperation<IDesignCircularDeque>
+    {
+        public IOperationResult Execute(IDesignCircularDeque designCircularDeque)
+        {
+            var value = designCircularDeque.GetFront();
+
+            return new Result(value);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly int _value;
+
+            public Result(int value)
+            {
+                _value = value;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _value == other._value;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_value);
+            }
+        }
+    }
+
+    private sealed class GetRearOperation : IOperation<IDesignCircularDeque>
+    {
+        public IOperationResult Execute(IDesignCircularDeque designCircularDeque)
+        {
+            var value = designCircularDeque.GetRear();
+
+            return new Result(value);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly int _value;
+
+            public Result(int value)
+            {
+                _value = value;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _value == other._value;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_value);
+            }
+        }
+    }
+
+    private sealed class IsEmptyOperation : IOperation<IDesignCircularDeque>
+    {
+        public IOperationResult Execute(IDesignCircularDeque designCircularDeque)
+        {
+            var result = designCircularDeque.IsEmpty();
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _isEmpty;
+
+            public Result(bool isEmpty)
+            {
+                _isEmpty = isEmpty;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _isEmpty == other._isEmpty;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_isEmpty);
+            }
+        }
+    }
+
+    private sealed class IsFullOperation : IOperation<IDesignCircularDeque>
+    {
+        public IOperationResult Execute(IDesignCircularDeque designCircularDeque)
+        {
+            var result = designCircularDeque.IsFull();
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _isFull;
+
+            public Result(bool isFull)
+            {
+                _isFull = isFull;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _isFull == other._isFull;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_isFull);
+            }
+        }
+    }
 }

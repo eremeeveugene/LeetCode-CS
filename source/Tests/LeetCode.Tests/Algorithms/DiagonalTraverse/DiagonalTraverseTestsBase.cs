@@ -23,7 +23,7 @@ public abstract class DiagonalTraverseTestsBase<T> where T : IDiagonalTraverse, 
         string expectedResultJson)
     {
         // Arrange
-        var mat = JsonHelper<int[][]>.Parse(matJson);
+        var mat = JsonHelper.Parse<int[][]>(matJson);
         var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();

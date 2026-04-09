@@ -22,7 +22,7 @@ public abstract class SolvingQuestionsWithBrainpowerTestsBase<T> where T : ISolv
     public void MostPoints_GivenQuestionsArray_ReturnsMaximumPoints(string questionsJson, long expectedResult)
     {
         // Arrange
-        var questions = JsonHelper<int[][]>.Parse(questionsJson);
+        var questions = JsonHelper.Parse<int[][]>(questionsJson);
 
         var solution = new T();
 

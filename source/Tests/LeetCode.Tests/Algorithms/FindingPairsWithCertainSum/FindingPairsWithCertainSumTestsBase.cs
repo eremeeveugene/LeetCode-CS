@@ -30,8 +30,8 @@ public abstract class FindingPairsWithCertainSumTestsBase
         // Arrange
         var nums1 = JsonHelper.Parse<int[]>(nums1Json);
         var nums2 = JsonHelper.Parse<int[]>(nums2Json);
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<int[][]>.Parse(argumentsJson);
+        var methods = JsonHelper.Parse<string[]>(methodsJson);
+        var arguments = JsonHelper.Parse<int[][]>(argumentsJson);
         var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = GetSolution(nums1, nums2);

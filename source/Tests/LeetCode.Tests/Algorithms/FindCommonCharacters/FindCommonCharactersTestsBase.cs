@@ -32,11 +32,11 @@ public abstract class FindCommonCharactersTestsBase<T> where T : IFindCommonChar
         string expectedResultJson)
     {
         // Arrange
-        var words = JsonHelper<string[]>.Parse(wordsJson);
+        var words = JsonHelper.Parse<string[]>(wordsJson);
 
         var solution = new T();
 
-        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
 
         // Act
         var actualResult = solution.CommonChars(words);

@@ -24,7 +24,7 @@ public abstract class NumberOfEquivalentDominoPairsTestsBase<T> where T : INumbe
         int expectedResult)
     {
         // Arrange
-        var dominoes = JsonHelper<int[][]>.Parse(dominoesJson);
+        var dominoes = JsonHelper.Parse<int[][]>(dominoesJson);
 
         var solution = new T();
 

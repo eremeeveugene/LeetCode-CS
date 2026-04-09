@@ -10,46 +10,34 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindElementsInContaminatedBinaryTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.FindElementsInContaminatedBinaryTree;
 
 public abstract class FindElementsInContaminatedBinaryTreeTestsBase
 {
-    private const string Find = "find";
-
     [TestMethod]
-    [DataRow("[-1,null,-1]", "[\"find\",\"find\"]", "[[1],[2]]", "[false,true]")]
-    [DataRow("[-1,-1,-1,-1,-1]", "[\"find\",\"find\",\"find\"]", "[[1],[3],[5]]", "[true,true,false]")]
-    [DataRow("[-1,null,-1,-1,null,-1]", "[\"find\",\"find\",\"find\",\"find\"]", "[[2],[3],[4],[5]]",
-        "[true,false,false,true]")]
-    public void FindElementsInContaminatedBinaryTree_WithVariousTreeStructures_ReturnsIfElementsFound(string rootJson,
-        string methodsJson, string argumentsJson, string expectedResultJson)
+    [DynamicData(nameof(GetScenarios))]
+    public void FindElementsInContaminatedBinaryTree_WithVariousTreeStructures_ReturnsIfElementsFound(
+        ContaminatedBinaryTreeScenario scenario)
     {
         // Arrange
-        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
-        var root = TreeNode.ToTreeNodeOrThrow(rootArray);
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
-        var solution = GetSolution(root);
+        var solution = GetSolution(scenario.Root);
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case Find:
-                    actualResult.Add(solution.Find((int)arguments[i][0]));
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
@@ -57,4 +45,109 @@ public abstract class FindElementsInContaminatedBinaryTreeTestsBase
     }
 
     protected abstract IFindElementsInContaminatedBinaryTree GetSolution(TreeNode root);
+
+    private static IEnumerable<ContaminatedBinaryTreeScenario[]> GetScenarios()
+    {
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, null, -1]),
+                [
+                    new FindOperation(1),
+                    new FindOperation(2)
+                ],
+                [
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, -1, -1, -1]),
+                [
+                    new FindOperation(1),
+                    new FindOperation(3),
+                    new FindOperation(5)
+                ],
+                [
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, null, -1, -1, null, -1]),
+                [
+                    new FindOperation(2),
+                    new FindOperation(3),
+                    new FindOperation(4),
+                    new FindOperation(5)
+                ],
+                [
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true)
+                ])
+        ];
+    }
+
+    public sealed class ContaminatedBinaryTreeScenario : Scenario<IFindElementsInContaminatedBinaryTree>
+    {
+        public ContaminatedBinaryTreeScenario(TreeNode root,
+            IOperation<IFindElementsInContaminatedBinaryTree>[] operations,
+            IOperationResult[] operationResults) : base(operations, operationResults)
+        {
+            Root = root;
+        }
+
+        public TreeNode Root { get; }
+    }
+
+    private sealed class FindOperation : IOperation<IFindElementsInContaminatedBinaryTree>
+    {
+        private readonly int _target;
+
+        public FindOperation(int target)
+        {
+            _target = target;
+        }
+
+        public IOperationResult Execute(IFindElementsInContaminatedBinaryTree findElementsInContaminatedBinaryTree)
+        {
+            var found = findElementsInContaminatedBinaryTree.Find(_target);
+
+            return new Result(found);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _found;
+
+            public Result(bool found)
+            {
+                _found = found;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _found == other._found;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_found);
+            }
+        }
+    }
 }

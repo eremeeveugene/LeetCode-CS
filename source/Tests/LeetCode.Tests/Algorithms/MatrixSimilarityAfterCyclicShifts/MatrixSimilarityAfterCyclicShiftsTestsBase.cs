@@ -24,7 +24,7 @@ public abstract class MatrixSimilarityAfterCyclicShiftsTestsBase<T> where T : IM
         bool expectedResult)
     {
         // Arrange
-        var mat = JsonHelper<int[][]>.Parse(matJson);
+        var mat = JsonHelper.Parse<int[][]>(matJson);
 
         var solution = new T();
 

@@ -22,7 +22,7 @@ public abstract class PointsThatIntersectWithCarsTestsBase<T> where T : IPointsT
     public void NumberOfPoints_WithGivenCarIntervals_ReturnsCountOfCoveredPoints(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<IList<IList<int>>>.Parse(numsJson);
+        var nums = JsonHelper.Parse<IList<IList<int>>>(numsJson);
 
         var solution = new T();
 

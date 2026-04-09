@@ -24,7 +24,7 @@ public abstract class MaximumDepthOfNaryTreeTestsBase<T> where T : IMaximumDepth
     public void MaxDepth_WithNaryTreeInput_ReturnsMaximumDepth(string rootJson, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
+        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = Node.ToNode(rootArray);
 
         var solution = new T();

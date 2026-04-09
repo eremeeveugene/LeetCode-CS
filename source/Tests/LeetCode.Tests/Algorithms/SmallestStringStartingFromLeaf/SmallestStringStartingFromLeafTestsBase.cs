@@ -25,7 +25,7 @@ public abstract class SmallestStringStartingFromLeafTestsBase<T> where T : ISmal
         string rootJson, string? expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper<int?[]>.Parse(rootJson);
+        var arrayRoot = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(arrayRoot);
 
         var solution = new T();

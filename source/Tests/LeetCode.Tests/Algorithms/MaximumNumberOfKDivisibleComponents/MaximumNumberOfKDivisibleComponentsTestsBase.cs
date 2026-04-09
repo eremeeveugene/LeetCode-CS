@@ -24,7 +24,7 @@ public abstract class MaximumNumberOfKDivisibleComponentsTestsBase<T>
         string valuesJson, int k, int expectedResult)
     {
         // Arrange
-        var edges = JsonHelper<int[][]>.Parse(edgesJson);
+        var edges = JsonHelper.Parse<int[][]>(edgesJson);
         var values = JsonHelper.Parse<int[]>(valuesJson);
 
         var solution = new T();

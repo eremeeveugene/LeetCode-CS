@@ -29,9 +29,9 @@ public abstract class LowestCommonAncestorOfDeepestLeavesTestsBase<T>
         // Arrange
         var solution = new T();
 
-        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
+        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
-        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
+        var expectedResultArray = JsonHelper.Parse<int?[]>(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNodeOrThrow(expectedResultArray);
 
         // Act

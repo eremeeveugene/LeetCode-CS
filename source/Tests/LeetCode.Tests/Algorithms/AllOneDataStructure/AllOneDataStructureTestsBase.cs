@@ -30,7 +30,7 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         var operations = scenario.Operations;
         var operationsLength = operations.Length;
 
-        var actualResult = new IOperationResult?[operationsLength];
+        var actualResult = new IOperationResult[operationsLength];
 
         for (var i = 0; i < operationsLength; i++)
         {
@@ -197,9 +197,9 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
 
         public sealed class Result : IOperationResult, IEquatable<Result>
         {
-            private readonly string? _key;
+            private readonly string _key;
 
-            public Result(string? key)
+            public Result(string key)
             {
                 _key = key;
             }

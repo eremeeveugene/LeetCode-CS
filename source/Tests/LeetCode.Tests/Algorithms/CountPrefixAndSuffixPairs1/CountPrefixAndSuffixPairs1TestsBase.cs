@@ -24,7 +24,7 @@ public abstract class CountPrefixAndSuffixPairs1TestsBase<T> where T : ICountPre
         int expectedResult)
     {
         // Arrange
-        var words = JsonHelper<string[]>.Parse(wordsJson);
+        var words = JsonHelper.Parse<string[]>(wordsJson);
 
         var solution = new T();
 

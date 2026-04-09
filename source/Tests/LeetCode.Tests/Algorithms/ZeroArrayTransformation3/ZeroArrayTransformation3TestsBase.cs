@@ -25,7 +25,7 @@ public abstract class ZeroArrayTransformation3TestsBase<T> where T : IZeroArrayT
     {
         // Arrange
         var nums = JsonHelper.Parse<int[]>(numsJson);
-        var queries = JsonHelper<int[][]>.Parse(queriesJson);
+        var queries = JsonHelper.Parse<int[][]>(queriesJson);
 
         var solution = new T();
 

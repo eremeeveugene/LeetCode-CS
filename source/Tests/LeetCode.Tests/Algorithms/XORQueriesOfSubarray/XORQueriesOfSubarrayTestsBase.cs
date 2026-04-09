@@ -26,7 +26,7 @@ public abstract class XORQueriesOfSubarrayTestsBase<T> where T : IXORQueriesOfSu
     {
         // Arrange
         var arr = JsonHelper.Parse<int[]>(arrJson);
-        var queries = JsonHelper<int[][]>.Parse(queriesJson);
+        var queries = JsonHelper.Parse<int[][]>(queriesJson);
         var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();

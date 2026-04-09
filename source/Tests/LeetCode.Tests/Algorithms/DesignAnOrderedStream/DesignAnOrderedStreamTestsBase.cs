@@ -30,7 +30,7 @@ public abstract class DesignAnOrderedStreamTestsBase
         var operations = scenario.Operations;
         var operationsLength = operations.Length;
 
-        var actualResult = new IOperationResult?[operationsLength];
+        var actualResult = new IOperationResult[operationsLength];
 
         for (var i = 0; i < operationsLength; i++)
         {
@@ -45,7 +45,7 @@ public abstract class DesignAnOrderedStreamTestsBase
 
     protected abstract IDesignAnOrderedStream GetSolution(int size);
 
-    private static IEnumerable<IScenario<IDesignAnOrderedStream>[]> GetScenarios()
+    private static IEnumerable<OrderedStreamScenario[]> GetScenarios()
     {
         yield return
         [

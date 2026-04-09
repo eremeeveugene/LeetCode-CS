@@ -23,7 +23,7 @@ public abstract class MaximumNumberOfEventsThatCanBeAttendedTestsBase<T>
     public void MaxEvents_WithMultipleIntervals_ReturnsMaximumAttendableEvents(string eventsJson, int expectedResult)
     {
         // Arrange
-        var events = JsonHelper<int[][]>.Parse(eventsJson);
+        var events = JsonHelper.Parse<int[][]>(eventsJson);
 
         var solution = new T();
 

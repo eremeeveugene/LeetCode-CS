@@ -27,9 +27,9 @@ public abstract class InsertIntervalTestsBase<T> where T : IInsertInterval, new(
         string newIntervalJson, string expectedResultJson)
     {
         // Arrange
-        var intervals = JsonHelper<int[][]>.Parse(intervalsJson);
+        var intervals = JsonHelper.Parse<int[][]>(intervalsJson);
         var newInterval = JsonHelper.Parse<int[]>(newIntervalJson);
-        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
 
         var solution = new T();
 

@@ -26,7 +26,7 @@ public abstract class MaximumAreaOfLongestDiagonalRectangleTestsBase<T>
         string dimensionsJson, double expectedResult)
     {
         // Arrange
-        var dimensions = JsonHelper<int[][]>.Parse(dimensionsJson);
+        var dimensions = JsonHelper.Parse<int[][]>(dimensionsJson);
 
         var solution = new T();
 

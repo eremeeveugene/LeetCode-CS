@@ -23,7 +23,7 @@ public abstract class FindTheSafestPathInGridTestsBase<T> where T : IFindTheSafe
     public void MaximumSafenessFactor_WithGridInput_ReturnsSafenessFactorForPath(string gridJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<IList<IList<int>>>.Parse(gridJson);
+        var grid = JsonHelper.Parse<IList<IList<int>>>(gridJson);
 
         var solution = new T();
 

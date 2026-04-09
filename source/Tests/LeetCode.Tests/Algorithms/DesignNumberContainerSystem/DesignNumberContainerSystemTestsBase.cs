@@ -10,49 +10,174 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignNumberContainerSystem;
-using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.DesignNumberContainerSystem;
 
 public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignNumberContainerSystem, new()
 {
-    private const string Change = "change";
-    private const string Find = "find";
-
     [TestMethod]
-    [DataRow("[\"find\", \"change\", \"change\", \"change\", \"change\", \"find\", \"change\", \"find\"]",
-        "[[10], [2, 10], [1, 10], [3, 10], [5, 10], [10], [1, 20], [10]]",
-        "[-1, 1, 2]")]
+    [DynamicData(nameof(GetScenarios))]
     public void DesignNumberContainerSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        string methodsJson, string argumentsJson, string expectedResultJson)
+        IScenario<IDesignNumberContainerSystem> scenario)
     {
         // Arrange
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
         var solution = new T();
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case Change:
-                    solution.Change((int)arguments[i][0], (int)arguments[i][1]);
-                    break;
-                case Find:
-                    actualResult.Add(solution.Find((int)arguments[i][0]));
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<IScenario<IDesignNumberContainerSystem>[]> GetScenarios()
+    {
+        yield return
+        [
+            new Scenario<IDesignNumberContainerSystem>(
+                [
+                    new FindOperation(10),
+                    new ChangeOperation(2, 10),
+                    new ChangeOperation(1, 10),
+                    new ChangeOperation(3, 10),
+                    new ChangeOperation(5, 10),
+                    new FindOperation(10),
+                    new ChangeOperation(1, 20),
+                    new FindOperation(10)
+                ],
+                [
+                    new FindOperation.Result(-1),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(2)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignNumberContainerSystem>(
+                [
+                    new FindOperation(1),
+                    new FindOperation(0)
+                ],
+                [
+                    new FindOperation.Result(-1),
+                    new FindOperation.Result(-1)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignNumberContainerSystem>(
+                [
+                    new ChangeOperation(1, 10),
+                    new FindOperation(10),
+                    new ChangeOperation(1, 20),
+                    new FindOperation(10),
+                    new FindOperation(20)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(-1),
+                    new FindOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignNumberContainerSystem>(
+                [
+                    new ChangeOperation(5, 10),
+                    new ChangeOperation(2, 10),
+                    new ChangeOperation(8, 10),
+                    new FindOperation(10)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(2)
+                ])
+        ];
+    }
+
+    private sealed class ChangeOperation : IOperation<IDesignNumberContainerSystem>
+    {
+        private readonly int _index;
+        private readonly int _number;
+
+        public ChangeOperation(int index, int number)
+        {
+            _index = index;
+            _number = number;
+        }
+
+        public IOperationResult Execute(IDesignNumberContainerSystem designNumberContainerSystem)
+        {
+            designNumberContainerSystem.Change(_index, _number);
+
+            return VoidOperationResult.Instance;
+        }
+    }
+
+    private sealed class FindOperation : IOperation<IDesignNumberContainerSystem>
+    {
+        private readonly int _number;
+
+        public FindOperation(int number)
+        {
+            _number = number;
+        }
+
+        public IOperationResult Execute(IDesignNumberContainerSystem designNumberContainerSystem)
+        {
+            var index = designNumberContainerSystem.Find(_number);
+
+            return new Result(index);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly int _index;
+
+            public Result(int index)
+            {
+                _index = index;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _index == other._index;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_index);
+            }
+        }
     }
 }

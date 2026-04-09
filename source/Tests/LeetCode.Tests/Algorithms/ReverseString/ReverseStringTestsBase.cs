@@ -22,8 +22,8 @@ public abstract class ReverseStringTestsBase<T> where T : IReverseString, new()
     public void ReverseString_WithCharArray_ReversesArrayInPlace(string sJson, string expectedResultJson)
     {
         // Arrange
-        var s = JsonHelper<char[]>.Parse(sJson);
-        var expectedResult = JsonHelper<char[]>.Parse(expectedResultJson);
+        var s = JsonHelper.Parse<char[]>(sJson);
+        var expectedResult = JsonHelper.Parse<char[]>(expectedResultJson);
 
         var solution = new T();
 

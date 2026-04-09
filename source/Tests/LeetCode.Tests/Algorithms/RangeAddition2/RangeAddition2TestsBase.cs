@@ -24,7 +24,7 @@ public abstract class RangeAddition2TestsBase<T> where T : IRangeAddition2, new(
         int expectedResult)
     {
         // Arrange
-        var ops = JsonHelper<int[][]>.Parse(opsJson);
+        var ops = JsonHelper.Parse<int[][]>(opsJson);
 
         var solution = new T();
 

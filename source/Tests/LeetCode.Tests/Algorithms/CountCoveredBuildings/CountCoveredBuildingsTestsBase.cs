@@ -24,7 +24,7 @@ public abstract class CountCoveredBuildingsTestsBase<T> where T : ICountCoveredB
         string buildingsJson, int expectedResult)
     {
         // Arrange
-        var buildings = JsonHelper<int[][]>.Parse(buildingsJson);
+        var buildings = JsonHelper.Parse<int[][]>(buildingsJson);
 
         var solution = new T();
 

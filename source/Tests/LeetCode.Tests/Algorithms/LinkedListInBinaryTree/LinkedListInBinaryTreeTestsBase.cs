@@ -30,7 +30,7 @@ public abstract class LinkedListInBinaryTreeTestsBase<T> where T : ILinkedListIn
         // Arrange
         var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNodeOrThrow(headArray);
-        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
+        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();

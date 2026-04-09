@@ -23,7 +23,7 @@ public abstract class MaximumNumberOfWordsFoundInSentencesTestsBase<T>
     public void MostWordsFound_GivenArrayOfSentences_ReturnsMaxWordCount(string sentencesJson, int expectedResult)
     {
         // Arrange
-        var sentences = JsonHelper<string[]>.Parse(sentencesJson);
+        var sentences = JsonHelper.Parse<string[]>(sentencesJson);
 
         var solution = new T();
 

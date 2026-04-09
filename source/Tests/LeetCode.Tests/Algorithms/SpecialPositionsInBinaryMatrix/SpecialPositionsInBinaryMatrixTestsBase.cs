@@ -22,7 +22,7 @@ public abstract class SpecialPositionsInBinaryMatrixTestsBase<T> where T : ISpec
     public void NumSpecial_WithBinaryMatrix_ReturnsCountOfSpecialPositions(string matrixJson, int expectedResult)
     {
         // Arrange
-        var mat = JsonHelper<int[][]>.Parse(matrixJson);
+        var mat = JsonHelper.Parse<int[][]>(matrixJson);
 
         var solution = new T();
 

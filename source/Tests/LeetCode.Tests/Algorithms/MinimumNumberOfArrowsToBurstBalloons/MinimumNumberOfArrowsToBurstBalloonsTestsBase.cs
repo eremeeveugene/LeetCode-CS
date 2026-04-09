@@ -26,7 +26,7 @@ public abstract class MinimumNumberOfArrowsToBurstBalloonsTestsBase<T>
         int expectedResult)
     {
         // Arrange
-        var points = JsonHelper<int[][]>.Parse(pointsJson);
+        var points = JsonHelper.Parse<int[][]>(pointsJson);
 
         var solution = new T();
 

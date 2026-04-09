@@ -30,7 +30,7 @@ public abstract class WalkingRobotSimulationTestsBase<T> where T : IWalkingRobot
     {
         // Arrange
         var commands = JsonHelper.Parse<int[]>(commandsJson);
-        var obstacles = JsonHelper<int[][]>.Parse(obstaclesJson);
+        var obstacles = JsonHelper.Parse<int[][]>(obstaclesJson);
 
         var solution = new T();
 

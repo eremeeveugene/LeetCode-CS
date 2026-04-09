@@ -23,7 +23,7 @@ public abstract class CountNegativeNumbersInSortedMatrixTestsBase<T>
     public void CountNegatives_WithSortedMatrix_ReturnsTotalNegativeCount(string gridJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int[][]>.Parse(gridJson);
+        var grid = JsonHelper.Parse<int[][]>(gridJson);
 
         var solution = new T();
 

@@ -25,7 +25,7 @@ public abstract class CombinationSum2TestsBase<T> where T : ICombinationSum2, ne
     {
         // Arrange
         var candidates = JsonHelper.Parse<int[]>(candidatesJson);
-        var expectedResult = JsonHelper<IList<IList<int>>>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<IList<IList<int>>>(expectedResultJson);
 
         var solution = new T();
 

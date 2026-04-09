@@ -10,43 +10,33 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.KthLargestElementInStream;
-using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.KthLargestElementInStream;
 
 public abstract class KthLargestElementInStreamTestsBase
 {
-    private const string Add = "add";
-
     [TestMethod]
-    [DataRow(3, "[4, 5, 8, 2]", "[\"add\", \"add\", \"add\", \"add\", \"add\"]", "[[3], [5], [10], [9], [4]]",
-        "[4, 5, 5, 8, 8]")]
-    [DataRow(4, "[7, 7, 7, 7, 8, 3]", "[\"add\", \"add\", \"add\", \"add\"]", "[[2], [10], [9], [9]]", "[7, 7, 7, 8]")]
-    public void DesignCircularDeque_WithMixedOperations_ProcessesOperationsAccordingToSpecification(int k,
-        string numsJson, string methodsJson, string argumentsJson, string expectedResultJson)
+    [DynamicData(nameof(GetScenarios))]
+    public void KthLargestElementInStream_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        KthLargestScenario scenario)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
-        var solution = GetSolution(k, nums);
+        var solution = GetSolution(scenario.K, scenario.Nums);
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case Add:
-                    actualResult.Add(solution.Add((int)arguments[i][0]));
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
@@ -54,4 +44,128 @@ public abstract class KthLargestElementInStreamTestsBase
     }
 
     protected abstract IKthLargestElementInStream GetSolution(int k, int[] nums);
+
+    private static IEnumerable<KthLargestScenario[]> GetScenarios()
+    {
+        yield return
+        [
+            new KthLargestScenario(3, [4, 5, 8, 2],
+                [
+                    new AddOperation(3),
+                    new AddOperation(5),
+                    new AddOperation(10),
+                    new AddOperation(9),
+                    new AddOperation(4)
+                ],
+                [
+                    new AddOperation.Result(4),
+                    new AddOperation.Result(5),
+                    new AddOperation.Result(5),
+                    new AddOperation.Result(8),
+                    new AddOperation.Result(8)
+                ])
+        ];
+
+        yield return
+        [
+            new KthLargestScenario(4, [7, 7, 7, 7, 8, 3],
+                [
+                    new AddOperation(2),
+                    new AddOperation(10),
+                    new AddOperation(9),
+                    new AddOperation(9)
+                ],
+                [
+                    new AddOperation.Result(7),
+                    new AddOperation.Result(7),
+                    new AddOperation.Result(7),
+                    new AddOperation.Result(8)
+                ])
+        ];
+
+        yield return
+        [
+            new KthLargestScenario(1, [1],
+                [
+                    new AddOperation(2),
+                    new AddOperation(3),
+                    new AddOperation(1)
+                ],
+                [
+                    new AddOperation.Result(2),
+                    new AddOperation.Result(3),
+                    new AddOperation.Result(3)
+                ])
+        ];
+
+        yield return
+        [
+            new KthLargestScenario(2, [5, 10],
+                [
+                    new AddOperation(1),
+                    new AddOperation(2),
+                    new AddOperation(20)
+                ],
+                [
+                    new AddOperation.Result(5),
+                    new AddOperation.Result(5),
+                    new AddOperation.Result(10)
+                ])
+        ];
+    }
+
+    public sealed class KthLargestScenario : Scenario<IKthLargestElementInStream>
+    {
+        public KthLargestScenario(int k, int[] nums, IOperation<IKthLargestElementInStream>[] operations,
+            IOperationResult[] operationResults) : base(operations, operationResults)
+        {
+            K = k;
+            Nums = nums;
+        }
+
+        public int K { get; }
+        public int[] Nums { get; }
+    }
+
+    private sealed class AddOperation : IOperation<IKthLargestElementInStream>
+    {
+        private readonly int _value;
+
+        public AddOperation(int value)
+        {
+            _value = value;
+        }
+
+        public IOperationResult Execute(IKthLargestElementInStream kthLargestElementInStream)
+        {
+            var result = kthLargestElementInStream.Add(_value);
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly int _kthLargest;
+
+            public Result(int kthLargest)
+            {
+                _kthLargest = kthLargest;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _kthLargest == other._kthLargest;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_kthLargest);
+            }
+        }
+    }
 }

@@ -26,7 +26,7 @@ public abstract class MinimumAbsoluteDifferenceTestsBase<T> where T : IMinimumAb
     {
         // Arrange
         var arr = JsonHelper.Parse<int[]>(arrJson);
-        var expectedResult = JsonHelper<IList<IList<int>>>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<IList<IList<int>>>(expectedResultJson);
 
         var solution = new T();
 

@@ -25,7 +25,7 @@ public abstract class FindModeInBinarySearchTreeTestsBase<T> where T : IFindMode
         string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
+        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
         var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 

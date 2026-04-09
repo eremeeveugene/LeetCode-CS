@@ -10,51 +10,33 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignSpreadsheet;
-using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.DesignSpreadsheet;
 
 public abstract class DesignSpreadsheetTestsBase
 {
-    private const string SetCell = "setCell";
-    private const string ResetCell = "resetCell";
-    private const string GetValue = "getValue";
-
     [TestMethod]
-    [DataRow(3,
-        "[\"getValue\",\"setCell\",\"getValue\",\"setCell\",\"getValue\",\"resetCell\",\"getValue\"]",
-        "[[\"=5+7\"], [\"A1\", 10], [\"=A1+6\"], [\"B2\", 15], [\"=A1+B2\"], [\"A1\"], [\"=A1+B2\"]]",
-        "[12, 16, 25, 15]")]
+    [DynamicData(nameof(GetScenarios))]
     public void DesignSpreadsheet_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        int rows, string methodsJson, string argumentsJson, string expectedResultJson)
+        SpreadsheetScenario scenario)
     {
         // Arrange
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
-        var solution = GetSolution(rows);
+        var solution = GetSolution(scenario.Rows);
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case SetCell:
-                    solution.SetCell((string)arguments[i][0], (int)arguments[i][1]);
-                    break;
-                case ResetCell:
-                    solution.ResetCell((string)arguments[i][0]);
-                    break;
-                case GetValue:
-                    actualResult.Add(solution.GetValue((string)arguments[i][0]));
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
@@ -62,4 +44,181 @@ public abstract class DesignSpreadsheetTestsBase
     }
 
     protected abstract IDesignSpreadsheet GetSolution(int rows);
+
+    private static IEnumerable<SpreadsheetScenario[]> GetScenarios()
+    {
+        yield return
+        [
+            new SpreadsheetScenario(3,
+                [
+                    new GetValueOperation("=5+7"),
+                    new SetCellOperation("A1", 10),
+                    new GetValueOperation("=A1+6"),
+                    new SetCellOperation("B2", 15),
+                    new GetValueOperation("=A1+B2"),
+                    new ResetCellOperation("A1"),
+                    new GetValueOperation("=A1+B2")
+                ],
+                [
+                    new GetValueOperation.Result(12),
+                    VoidOperationResult.Instance,
+                    new GetValueOperation.Result(16),
+                    VoidOperationResult.Instance,
+                    new GetValueOperation.Result(25),
+                    VoidOperationResult.Instance,
+                    new GetValueOperation.Result(15)
+                ])
+        ];
+
+        yield return
+        [
+            new SpreadsheetScenario(1,
+                [
+                    new GetValueOperation("=1+2"),
+                    new GetValueOperation("=10+20")
+                ],
+                [
+                    new GetValueOperation.Result(3),
+                    new GetValueOperation.Result(30)
+                ])
+        ];
+
+        yield return
+        [
+            new SpreadsheetScenario(2,
+                [
+                    new SetCellOperation("A1", 42),
+                    new GetValueOperation("=A1+0"),
+                    new ResetCellOperation("A1"),
+                    new GetValueOperation("=A1+0")
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    new GetValueOperation.Result(42),
+                    VoidOperationResult.Instance,
+                    new GetValueOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new SpreadsheetScenario(3,
+                [
+                    new SetCellOperation("A1", 5),
+                    new SetCellOperation("B1", 10),
+                    new GetValueOperation("=A1+B1")
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetValueOperation.Result(15)
+                ])
+        ];
+
+        yield return
+        [
+            new SpreadsheetScenario(2,
+                [
+                    new SetCellOperation("A1", 3),
+                    new GetValueOperation("=A1+7"),
+                    new SetCellOperation("A1", 10),
+                    new GetValueOperation("=A1+7")
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    new GetValueOperation.Result(10),
+                    VoidOperationResult.Instance,
+                    new GetValueOperation.Result(17)
+                ])
+        ];
+    }
+
+    public sealed class SpreadsheetScenario : Scenario<IDesignSpreadsheet>
+    {
+        public SpreadsheetScenario(int rows, IOperation<IDesignSpreadsheet>[] operations,
+            IOperationResult[] operationResults) : base(operations, operationResults)
+        {
+            Rows = rows;
+        }
+
+        public int Rows { get; }
+    }
+
+    private sealed class SetCellOperation : IOperation<IDesignSpreadsheet>
+    {
+        private readonly string _cell;
+        private readonly int _value;
+
+        public SetCellOperation(string cell, int value)
+        {
+            _cell = cell;
+            _value = value;
+        }
+
+        public IOperationResult Execute(IDesignSpreadsheet designSpreadsheet)
+        {
+            designSpreadsheet.SetCell(_cell, _value);
+
+            return VoidOperationResult.Instance;
+        }
+    }
+
+    private sealed class ResetCellOperation : IOperation<IDesignSpreadsheet>
+    {
+        private readonly string _cell;
+
+        public ResetCellOperation(string cell)
+        {
+            _cell = cell;
+        }
+
+        public IOperationResult Execute(IDesignSpreadsheet designSpreadsheet)
+        {
+            designSpreadsheet.ResetCell(_cell);
+
+            return VoidOperationResult.Instance;
+        }
+    }
+
+    private sealed class GetValueOperation : IOperation<IDesignSpreadsheet>
+    {
+        private readonly string _formula;
+
+        public GetValueOperation(string formula)
+        {
+            _formula = formula;
+        }
+
+        public IOperationResult Execute(IDesignSpreadsheet designSpreadsheet)
+        {
+            var value = designSpreadsheet.GetValue(_formula);
+
+            return new Result(value);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly int _value;
+
+            public Result(int value)
+            {
+                _value = value;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _value == other._value;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_value);
+            }
+        }
+    }
 }

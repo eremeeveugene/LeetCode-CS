@@ -27,8 +27,8 @@ public abstract class CountSubIslandsTestsBase<T> where T : ICountSubIslands, ne
         // Arrange
         var solution = new T();
 
-        var grid1 = JsonHelper<int[][]>.Parse(grid1Json);
-        var grid2 = JsonHelper<int[][]>.Parse(grid2Json);
+        var grid1 = JsonHelper.Parse<int[][]>(grid1Json);
+        var grid2 = JsonHelper.Parse<int[][]>(grid2Json);
 
         // Act
         var actualResult = solution.CountSubIslands(grid1, grid2);

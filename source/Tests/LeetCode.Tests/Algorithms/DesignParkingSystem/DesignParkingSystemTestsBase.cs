@@ -10,99 +10,33 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignParkingSystem;
-using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.DesignParkingSystem;
 
 public abstract class DesignParkingSystemTestsBase
 {
-    private const string AddCar = "addCar";
-
     [TestMethod]
-    [DataRow(
-        0, 0, 0,
-        "[\"addCar\"]",
-        "[[1]]",
-        "[false]")]
-    [DataRow(
-        1, 0, 0,
-        "[\"addCar\", \"addCar\"]",
-        "[[1], [1]]",
-        "[true, false]")]
-    [DataRow(
-        0, 1, 0,
-        "[\"addCar\", \"addCar\"]",
-        "[[2], [2]]",
-        "[true, false]")]
-    [DataRow(
-        0, 0, 1,
-        "[\"addCar\", \"addCar\"]",
-        "[[3], [3]]",
-        "[true, false]")]
-    [DataRow(
-        2, 2, 2,
-        "[\"addCar\", \"addCar\", \"addCar\", \"addCar\", \"addCar\", \"addCar\", \"addCar\"]",
-        "[[1], [1], [2], [2], [3], [3], [1]]",
-        "[true, true, true, true, true, true, false]")]
-    [DataRow(
-        1, 1, 1,
-        "[\"addCar\", \"addCar\", \"addCar\"]",
-        "[[3], [2], [1]]",
-        "[true, true, true]")]
-    [DataRow(
-        1, 1, 1,
-        "[\"addCar\", \"addCar\", \"addCar\", \"addCar\"]",
-        "[[3], [2], [1], [2]]",
-        "[true, true, true, false]")]
-    [DataRow(
-        3, 0, 0,
-        "[\"addCar\", \"addCar\", \"addCar\", \"addCar\"]",
-        "[[1], [1], [1], [1]]",
-        "[true, true, true, false]")]
-    [DataRow(
-        0, 3, 0,
-        "[\"addCar\", \"addCar\", \"addCar\", \"addCar\"]",
-        "[[2], [2], [2], [2]]",
-        "[true, true, true, false]")]
-    [DataRow(
-        0, 0, 3,
-        "[\"addCar\", \"addCar\", \"addCar\", \"addCar\"]",
-        "[[3], [3], [3], [3]]",
-        "[true, true, true, false]")]
-    [DataRow(
-        1, 1, 1,
-        "[\"addCar\", \"addCar\", \"addCar\", \"addCar\"]",
-        "[[1], [4], [2], [3]]",
-        "[true, false, true, true]")]
+    [DynamicData(nameof(GetScenarios))]
     public void DesignParkingSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        int bigCapacity,
-        int mediumCapacity,
-        int smallCapacity,
-        string methodsJson,
-        string argumentsJson,
-        string expectedResultJson)
+        ParkingSystemScenario scenario)
     {
         // Arrange
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
-        var solution = GetSolution(bigCapacity, mediumCapacity, smallCapacity);
+        var solution = GetSolution(scenario.BigCapacity, scenario.MediumCapacity, scenario.SmallCapacity);
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case AddCar:
-                    actualResult.Add(solution.AddCar((int)arguments[i][0]));
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
@@ -110,4 +44,212 @@ public abstract class DesignParkingSystemTestsBase
     }
 
     protected abstract IDesignParkingSystem GetSolution(int bigCapacity, int mediumCapacity, int smallCapacity);
+
+    private static IEnumerable<ParkingSystemScenario[]> GetScenarios()
+    {
+        yield return
+        [
+            new ParkingSystemScenario(0, 0, 0,
+                [new AddCarOperation(1)],
+                [new AddCarOperation.Result(false)])
+        ];
+
+        yield return
+        [
+            new ParkingSystemScenario(1, 0, 0,
+                [new AddCarOperation(1), new AddCarOperation(1)],
+                [new AddCarOperation.Result(true), new AddCarOperation.Result(false)])
+        ];
+
+        yield return
+        [
+            new ParkingSystemScenario(0, 1, 0,
+                [new AddCarOperation(2), new AddCarOperation(2)],
+                [new AddCarOperation.Result(true), new AddCarOperation.Result(false)])
+        ];
+
+        yield return
+        [
+            new ParkingSystemScenario(0, 0, 1,
+                [new AddCarOperation(3), new AddCarOperation(3)],
+                [new AddCarOperation.Result(true), new AddCarOperation.Result(false)])
+        ];
+
+        yield return
+        [
+            new ParkingSystemScenario(2, 2, 2,
+                [
+                    new AddCarOperation(1),
+                    new AddCarOperation(1),
+                    new AddCarOperation(2),
+                    new AddCarOperation(2),
+                    new AddCarOperation(3),
+                    new AddCarOperation(3),
+                    new AddCarOperation(1)
+                ],
+                [
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new ParkingSystemScenario(1, 1, 1,
+                [new AddCarOperation(3), new AddCarOperation(2), new AddCarOperation(1)],
+                [
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new ParkingSystemScenario(1, 1, 1,
+                [
+                    new AddCarOperation(3),
+                    new AddCarOperation(2),
+                    new AddCarOperation(1),
+                    new AddCarOperation(2)
+                ],
+                [
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new ParkingSystemScenario(3, 0, 0,
+                [
+                    new AddCarOperation(1),
+                    new AddCarOperation(1),
+                    new AddCarOperation(1),
+                    new AddCarOperation(1)
+                ],
+                [
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new ParkingSystemScenario(0, 3, 0,
+                [
+                    new AddCarOperation(2),
+                    new AddCarOperation(2),
+                    new AddCarOperation(2),
+                    new AddCarOperation(2)
+                ],
+                [
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new ParkingSystemScenario(0, 0, 3,
+                [
+                    new AddCarOperation(3),
+                    new AddCarOperation(3),
+                    new AddCarOperation(3),
+                    new AddCarOperation(3)
+                ],
+                [
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new ParkingSystemScenario(1, 1, 1,
+                [
+                    new AddCarOperation(1),
+                    new AddCarOperation(4),
+                    new AddCarOperation(2),
+                    new AddCarOperation(3)
+                ],
+                [
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(false),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true)
+                ])
+        ];
+    }
+
+    public sealed class ParkingSystemScenario : Scenario<IDesignParkingSystem>
+    {
+        public ParkingSystemScenario(int bigCapacity, int mediumCapacity, int smallCapacity,
+            IOperation<IDesignParkingSystem>[] operations, IOperationResult[] operationResults)
+            : base(operations, operationResults)
+        {
+            BigCapacity = bigCapacity;
+            MediumCapacity = mediumCapacity;
+            SmallCapacity = smallCapacity;
+        }
+
+        public int BigCapacity { get; }
+        public int MediumCapacity { get; }
+        public int SmallCapacity { get; }
+    }
+
+    private sealed class AddCarOperation : IOperation<IDesignParkingSystem>
+    {
+        private readonly int _carType;
+
+        public AddCarOperation(int carType)
+        {
+            _carType = carType;
+        }
+
+        public IOperationResult Execute(IDesignParkingSystem designParkingSystem)
+        {
+            var result = designParkingSystem.AddCar(_carType);
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _success;
+
+            public Result(bool success)
+            {
+                _success = success;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _success == other._success;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_success);
+            }
+        }
+    }
 }

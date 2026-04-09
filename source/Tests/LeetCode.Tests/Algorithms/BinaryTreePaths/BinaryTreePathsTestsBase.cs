@@ -24,11 +24,11 @@ public abstract class BinaryTreePathsTestsBase<T> where T : IBinaryTreePaths, ne
         string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
 
         var solution = new T();
 
-        var rootArray = JsonHelper<int?[]>.Parse(jsonRootArray);
+        var rootArray = JsonHelper.Parse<int?[]>(jsonRootArray);
         var root = TreeNode.ToTreeNode(rootArray);
 
         // Act

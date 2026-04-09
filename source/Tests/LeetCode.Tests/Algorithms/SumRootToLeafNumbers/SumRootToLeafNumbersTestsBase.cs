@@ -26,7 +26,7 @@ public abstract class SumRootToLeafNumbersTestsBase<T> where T : ISumRootToLeafN
         int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?[]>.Parse(jsonRootArray);
+        var rootArray = JsonHelper.Parse<int?[]>(jsonRootArray);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();

@@ -32,7 +32,7 @@ public abstract class DesignFrontMiddleBackQueueTestsBase<T> where T : IDesignFr
         string operationsJson, string argumentsJson, string expectedResultJson)
     {
         // Arrange
-        var operations = JsonHelper<string[]>.Parse(operationsJson);
+        var operations = JsonHelper.Parse<string[]>(operationsJson);
         var arguments = JsonHelper.Parse<int[]>(argumentsJson);
         var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 

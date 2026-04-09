@@ -17,6 +17,8 @@ namespace LeetCode.Algorithms.SimpleBankSystem;
 public interface ISimpleBankSystem
 {
     bool Transfer(int account1, int account2, long money);
+
     bool Deposit(int account, long money);
+
     bool Withdraw(int account, long money);
 }

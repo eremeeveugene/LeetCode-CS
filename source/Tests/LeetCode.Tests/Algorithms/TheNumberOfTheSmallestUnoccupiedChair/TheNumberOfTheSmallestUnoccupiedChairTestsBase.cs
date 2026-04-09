@@ -28,7 +28,7 @@ public abstract class TheNumberOfTheSmallestUnoccupiedChairTestsBase<T>
         int targetFriend, int expectedResult)
     {
         // Arrange
-        var times = JsonHelper<int[][]>.Parse(timesJson);
+        var times = JsonHelper.Parse<int[][]>(timesJson);
 
         var solution = new T();
 

@@ -22,7 +22,7 @@ public abstract class SwimInRisingWaterTestsBase<T> where T : ISwimInRisingWater
     public void SwimInWater_WithElevatedGrid_ReturnsMinimumTimeToReachBottomRight(string gridArray, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int[][]>.Parse(gridArray);
+        var grid = JsonHelper.Parse<int[][]>(gridArray);
 
         var solution = new T();
 

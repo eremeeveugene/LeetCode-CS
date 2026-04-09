@@ -24,7 +24,7 @@ public abstract class SymmetricTreeTestsBase<T> where T : ISymmetricTree, new()
     public void IsSymmetric_WithBinaryTreeInput_ReturnsTrueIfTreeIsMirrorOfItself(string rootJson, bool expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper<int?[]>.Parse(rootJson);
+        var arrayRoot = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(arrayRoot);
 
         var solution = new T();

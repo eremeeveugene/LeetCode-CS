@@ -28,7 +28,7 @@ public abstract class ScoreAfterFlippingMatrixTestsBase<T> where T : IScoreAfter
         // Arrange
         var solution = new T();
 
-        var grid = JsonHelper<int[][]>.Parse(gridJson);
+        var grid = JsonHelper.Parse<int[][]>(gridJson);
 
         // Act
         var actualResult = solution.MatrixScore(grid);

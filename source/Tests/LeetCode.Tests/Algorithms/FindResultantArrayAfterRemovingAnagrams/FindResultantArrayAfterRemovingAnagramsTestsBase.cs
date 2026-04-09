@@ -24,8 +24,8 @@ public abstract class FindResultantArrayAfterRemovingAnagramsTestsBase<T>
         string expectedResultJson)
     {
         // Arrange
-        var words = JsonHelper<string[]>.Parse(wordsJson);
-        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
+        var words = JsonHelper.Parse<string[]>(wordsJson);
+        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
 
         var solution = new T();
 

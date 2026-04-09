@@ -31,7 +31,7 @@ public abstract class FindMinimumTimeToReachLastRoom1TestsBase<T> where T : IFin
         int expectedResult)
     {
         // Arrange
-        var moveTime = JsonHelper<int[][]>.Parse(moveTimeJson);
+        var moveTime = JsonHelper.Parse<int[][]>(moveTimeJson);
 
         var solution = new T();
 

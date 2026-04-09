@@ -24,7 +24,7 @@ public abstract class LuckyNumbersInMatrixTestsBase<T> where T : ILuckyNumbersIn
         string expectedResultJson)
     {
         // Arrange
-        var matrix = JsonHelper<int[][]>.Parse(matrixJson);
+        var matrix = JsonHelper.Parse<int[][]>(matrixJson);
         var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();

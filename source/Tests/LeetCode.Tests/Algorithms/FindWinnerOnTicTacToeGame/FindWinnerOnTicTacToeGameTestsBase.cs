@@ -23,7 +23,7 @@ public abstract class FindWinnerOnTicTacToeGameTestsBase<T> where T : IFindWinne
     public void Tictactoe_WithMoveSequence_ReturnsGameOutcome(string movesJson, string expectedResult)
     {
         // Arrange
-        var moves = JsonHelper<int[][]>.Parse(movesJson);
+        var moves = JsonHelper.Parse<int[][]>(movesJson);
 
         var solution = new T();
 

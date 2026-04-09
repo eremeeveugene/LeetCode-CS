@@ -22,7 +22,7 @@ public abstract class MaximumNumberOfMovesInGridTestsBase<T> where T : IMaximumN
     public void MaxMoves_WithGridInput_ReturnsMaximumMoves(string gridJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int[][]>.Parse(gridJson);
+        var grid = JsonHelper.Parse<int[][]>(gridJson);
 
         var solution = new T();
 

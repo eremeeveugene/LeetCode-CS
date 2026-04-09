@@ -10,57 +10,33 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ImplementRouter;
-using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.ImplementRouter;
 
 public abstract class ImplementRouterTestsBase
 {
-    private const string AddPacket = "addPacket";
-    private const string ForwardPacket = "forwardPacket";
-    private const string GetCount = "getCount";
-
     [TestMethod]
-    [DataRow(3,
-        "[\"addPacket\", \"addPacket\", \"addPacket\", \"addPacket\", \"addPacket\", \"forwardPacket\", \"addPacket\", \"getCount\"]",
-        "[[1, 4, 90], [2, 5, 90], [1, 4, 90], [3, 5, 95], [4, 5, 105], [], [5, 2, 110], [5, 100, 110]]",
-        "[true, true, false, true, true, [2, 5, 90], true, 1]")]
-    [DataRow(4,
-        "[\"addPacket\",\"addPacket\",\"getCount\"]",
-        "[[4,2,1],[3,2,1],[2,1,1]]",
-        "[true,true,2]")]
-    public void ImplementRouter_WithMixedOperations_ProcessesOperationsAccordingToSpecification(int memoryLimit,
-        string methodsJson, string argumentsJson, string expectedResultJson)
+    [DynamicData(nameof(GetScenarios))]
+    public void ImplementRouter_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        RouterScenario scenario)
     {
         // Arrange
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
-        var solution = GetSolution(memoryLimit);
+        var solution = GetSolution(scenario.MemoryLimit);
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case AddPacket:
-                    actualResult.Add(solution.AddPacket((int)arguments[i][0], (int)arguments[i][1],
-                        (int)arguments[i][2]));
-                    break;
-                case ForwardPacket:
-                    actualResult.Add(solution.ForwardPacket());
-                    break;
-                case GetCount:
-                    actualResult.Add(
-                        solution.GetCount((int)arguments[i][0], (int)arguments[i][1], (int)arguments[i][2]));
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
@@ -68,4 +44,222 @@ public abstract class ImplementRouterTestsBase
     }
 
     protected abstract IImplementRouter GetSolution(int memoryLimit);
+
+    private static IEnumerable<RouterScenario[]> GetScenarios()
+    {
+        yield return
+        [
+            new RouterScenario(3,
+                [
+                    new AddPacketOperation(1, 4, 90),
+                    new AddPacketOperation(2, 5, 90),
+                    new AddPacketOperation(1, 4, 90),
+                    new AddPacketOperation(3, 5, 95),
+                    new AddPacketOperation(4, 5, 105),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(5, 2, 110),
+                    new GetCountOperation(5, 100, 110)
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(false),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([2, 5, 90]),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(4,
+                [
+                    new AddPacketOperation(4, 2, 1),
+                    new AddPacketOperation(3, 2, 1),
+                    new GetCountOperation(2, 1, 1)
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(2)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(5,
+                [
+                    new AddPacketOperation(1, 2, 10),
+                    new AddPacketOperation(1, 2, 10),
+                    new GetCountOperation(2, 10, 10)
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(false),
+                    new GetCountOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(3,
+                [
+                    new AddPacketOperation(1, 2, 10),
+                    new ForwardPacketOperation(),
+                    new ForwardPacketOperation()
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([1, 2, 10]),
+                    new ForwardPacketOperation.Result([])
+                ])
+        ];
+    }
+
+    public sealed class RouterScenario : Scenario<IImplementRouter>
+    {
+        public RouterScenario(int memoryLimit, IOperation<IImplementRouter>[] operations,
+            IOperationResult[] operationResults) : base(operations, operationResults)
+        {
+            MemoryLimit = memoryLimit;
+        }
+
+        public int MemoryLimit { get; }
+    }
+
+    private sealed class AddPacketOperation : IOperation<IImplementRouter>
+    {
+        private readonly int _destination;
+        private readonly int _source;
+        private readonly int _timestamp;
+
+        public AddPacketOperation(int source, int destination, int timestamp)
+        {
+            _source = source;
+            _destination = destination;
+            _timestamp = timestamp;
+        }
+
+        public IOperationResult Execute(IImplementRouter implementRouter)
+        {
+            var result = implementRouter.AddPacket(_source, _destination, _timestamp);
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _added;
+
+            public Result(bool added)
+            {
+                _added = added;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _added == other._added;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_added);
+            }
+        }
+    }
+
+    private sealed class ForwardPacketOperation : IOperation<IImplementRouter>
+    {
+        public IOperationResult Execute(IImplementRouter implementRouter)
+        {
+            var packet = implementRouter.ForwardPacket();
+
+            return new Result(packet);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly int[] _packet;
+
+            public Result(int[] packet)
+            {
+                _packet = packet;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _packet.SequenceEqual(other._packet);
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                var hashCode = new HashCode();
+
+                foreach (var value in _packet)
+                {
+                    hashCode.Add(value);
+                }
+
+                return hashCode.ToHashCode();
+            }
+        }
+    }
+
+    private sealed class GetCountOperation : IOperation<IImplementRouter>
+    {
+        private readonly int _destination;
+        private readonly int _endTime;
+        private readonly int _startTime;
+
+        public GetCountOperation(int destination, int startTime, int endTime)
+        {
+            _destination = destination;
+            _startTime = startTime;
+            _endTime = endTime;
+        }
+
+        public IOperationResult Execute(IImplementRouter implementRouter)
+        {
+            var count = implementRouter.GetCount(_destination, _startTime, _endTime);
+
+            return new Result(count);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly int _count;
+
+            public Result(int count)
+            {
+                _count = count;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _count == other._count;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_count);
+            }
+        }
+    }
 }

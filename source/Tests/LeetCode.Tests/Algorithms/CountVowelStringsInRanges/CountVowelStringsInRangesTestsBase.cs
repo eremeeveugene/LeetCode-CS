@@ -23,8 +23,8 @@ public abstract class CountVowelStringsInRangesTestsBase<T> where T : ICountVowe
         string queriesJson, string expectedResultJson)
     {
         // Arrange
-        var words = JsonHelper<string[]>.Parse(wordsJson);
-        var queries = JsonHelper<int[][]>.Parse(queriesJson);
+        var words = JsonHelper.Parse<string[]>(wordsJson);
+        var queries = JsonHelper.Parse<int[][]>(queriesJson);
         var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();

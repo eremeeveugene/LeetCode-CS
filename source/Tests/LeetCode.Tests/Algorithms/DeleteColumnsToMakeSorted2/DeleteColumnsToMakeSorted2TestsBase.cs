@@ -25,7 +25,7 @@ public abstract class DeleteColumnsToMakeSorted2TestsBase<T> where T : IDeleteCo
         int expectedResult)
     {
         // Arrange
-        var strs = JsonHelper<string[]>.Parse(strsJson);
+        var strs = JsonHelper.Parse<string[]>(strsJson);
 
         var solution = new T();
 

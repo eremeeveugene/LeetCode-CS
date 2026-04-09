@@ -23,7 +23,7 @@ public abstract class CountServersThatCommunicateTestsBase<T> where T : ICountSe
     public void CountServers_WithGridInput_ReturnsNumberOfCommunicatingServers(string numsJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int[][]>.Parse(numsJson);
+        var grid = JsonHelper.Parse<int[][]>(numsJson);
 
         var solution = new T();
 

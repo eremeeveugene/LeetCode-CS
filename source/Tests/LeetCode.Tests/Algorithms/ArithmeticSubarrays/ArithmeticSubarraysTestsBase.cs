@@ -31,7 +31,7 @@ public abstract class ArithmeticSubarraysTestsBase<T> where T : IArithmeticSubar
         var nums = JsonHelper.Parse<int[]>(numsJson);
         var l = JsonHelper.Parse<int[]>(lJson);
         var r = JsonHelper.Parse<int[]>(rJson);
-        var expectedResult = JsonHelper<bool[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<bool[]>(expectedResultJson);
 
         var solution = new T();
 

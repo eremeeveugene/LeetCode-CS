@@ -26,7 +26,7 @@ public abstract class MaximumLevelSumOfBinaryTreeTestsBase<T> where T : IMaximum
         int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
+        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();

@@ -23,7 +23,7 @@ public abstract class BinaryPrefixDivisibleByFiveTestsBase<T> where T : IBinaryP
     {
         // Arrange
         var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper<bool[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<bool[]>(expectedResultJson);
 
         var solution = new T();
 

@@ -23,7 +23,7 @@ public abstract class SpiralMatrixTestsBase<T> where T : ISpiralMatrix, new()
         string expectedResultJson)
     {
         // Arrange
-        var matrix = JsonHelper<int[][]>.Parse(matrixJson);
+        var matrix = JsonHelper.Parse<int[][]>(matrixJson);
         var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();

@@ -17,7 +17,7 @@ public static class JsonHelper
 {
     public static T Parse<T>(string json)
     {
-        return JsonSerializer.Deserialize<T>(json, JsonHelperOptions.JsonSerializerOptions) ??
-               throw new JsonException($"Could not deserialize JSON to {typeof(T)}.");
+        return JsonSerializer.Deserialize<T>(json, JsonHelperOptions.JsonSerializerOptions)
+               ?? throw new JsonException($"Could not deserialize JSON to {typeof(T)}.");
     }
 }

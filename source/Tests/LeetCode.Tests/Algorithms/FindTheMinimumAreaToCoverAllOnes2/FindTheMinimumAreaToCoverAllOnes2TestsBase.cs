@@ -22,7 +22,7 @@ public abstract class FindTheMinimumAreaToCoverAllOnes2TestsBase<T> where T : IF
     public void MinimumSum_WithBinaryGrid_ReturnsMinimumSumOfRectanglesArea(string gridJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int[][]>.Parse(gridJson);
+        var grid = JsonHelper.Parse<int[][]>(gridJson);
 
         var solution = new T();
 

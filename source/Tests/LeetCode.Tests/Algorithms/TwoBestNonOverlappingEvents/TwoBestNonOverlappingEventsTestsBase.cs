@@ -24,7 +24,7 @@ public abstract class TwoBestNonOverlappingEventsTestsBase<T> where T : ITwoBest
         int expectedResult)
     {
         // Arrange
-        var events = JsonHelper<int[][]>.Parse(eventsJson);
+        var events = JsonHelper.Parse<int[][]>(eventsJson);
 
         var solution = new T();
 

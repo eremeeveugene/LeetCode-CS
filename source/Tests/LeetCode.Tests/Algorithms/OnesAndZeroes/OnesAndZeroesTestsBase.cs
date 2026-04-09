@@ -23,7 +23,7 @@ public abstract class OnesAndZeroesTestsBase<T> where T : IOnesAndZeroes, new()
         int m, int n, int expectedResult)
     {
         // Arrange
-        var strs = JsonHelper<string[]>.Parse(strsJson);
+        var strs = JsonHelper.Parse<string[]>(strsJson);
 
         var solution = new T();
 

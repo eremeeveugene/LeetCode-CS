@@ -23,7 +23,7 @@ public abstract class TriangleTestsBase<T> where T : ITriangle, new()
         int expectedResult)
     {
         // Arrange
-        var triangle = JsonHelper<IList<IList<int>>>.Parse(triangleJson);
+        var triangle = JsonHelper.Parse<IList<IList<int>>>(triangleJson);
 
         var solution = new T();
 
