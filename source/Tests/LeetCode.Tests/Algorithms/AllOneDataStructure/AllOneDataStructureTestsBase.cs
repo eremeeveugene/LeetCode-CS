@@ -10,56 +10,234 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.AllOneDataStructure;
-using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.AllOneDataStructure;
 
 public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStructure, new()
 {
-    private const string GetMaxKey = "getMaxKey";
-    private const string GetMinKey = "getMinKey";
-    private const string Inc = "inc";
-    private const string Dec = "dec";
-
     [TestMethod]
-    [DataRow("[\"inc\", \"inc\", \"getMaxKey\", \"getMinKey\", \"inc\", \"getMaxKey\", \"getMinKey\"]",
-        "[[\"hello\"], [\"hello\"], [], [], [\"leet\"], [], []]", "[\"hello\", \"hello\", \"hello\", \"leet\"]")]
-    public void IncDecAndGetKeyMethods_WithVariousOperations_ReturnsMaxAndMinKeys(string methodsJson,
-        string argumentsJson, string expectedResultJson)
+    [DynamicData(nameof(GetScenarios))]
+    public void AllOneDataStructure_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        IScenario<IAllOneDataStructure> scenario)
     {
         // Arrange
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
         var solution = new T();
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult?[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case Inc:
-                    solution.Inc((string)arguments[i][0]);
-                    break;
-                case Dec:
-                    solution.Dec((string)arguments[i][0]);
-                    break;
-                case GetMaxKey:
-                    actualResult.Add(solution.GetMaxKey());
-                    break;
-                case GetMinKey:
-                    actualResult.Add(solution.GetMinKey());
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<IScenario<IAllOneDataStructure>[]> GetScenarios()
+    {
+        yield return
+        [
+            new Scenario<IAllOneDataStructure>(
+                [
+                    new IncOperation("hello"),
+                    new IncOperation("hello"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation(),
+                    new IncOperation("leet"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("hello"),
+                    new GetKeyOperation.Result("hello"),
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("hello"),
+                    new GetKeyOperation.Result("leet")
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IAllOneDataStructure>(
+                [
+                    new IncOperation("a"),
+                    new DecOperation("a"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result(""),
+                    new GetKeyOperation.Result("")
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IAllOneDataStructure>(
+                [
+                    new IncOperation("a"),
+                    new IncOperation("b"),
+                    new IncOperation("b"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("b"),
+                    new GetKeyOperation.Result("a")
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IAllOneDataStructure>(
+                [
+                    new IncOperation("a"),
+                    new IncOperation("a"),
+                    new IncOperation("b"),
+                    new IncOperation("b"),
+                    new DecOperation("a"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("b"),
+                    new GetKeyOperation.Result("a")
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IAllOneDataStructure>(
+                [
+                    new IncOperation("a"),
+                    new IncOperation("b"),
+                    new IncOperation("b"),
+                    new IncOperation("c"),
+                    new IncOperation("c"),
+                    new IncOperation("c"),
+                    new DecOperation("b"),
+                    new DecOperation("b"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("c"),
+                    new GetKeyOperation.Result("a")
+                ])
+        ];
+    }
+
+    private sealed class IncOperation : IOperation<IAllOneDataStructure>
+    {
+        private readonly string _key;
+
+        public IncOperation(string key)
+        {
+            _key = key;
+        }
+
+        public IOperationResult Execute(IAllOneDataStructure allOneDataStructure)
+        {
+            allOneDataStructure.Inc(_key);
+
+            return VoidOperationResult.Instance;
+        }
+    }
+
+    private sealed class DecOperation : IOperation<IAllOneDataStructure>
+    {
+        private readonly string _key;
+
+        public DecOperation(string key)
+        {
+            _key = key;
+        }
+
+        public IOperationResult Execute(IAllOneDataStructure allOneDataStructure)
+        {
+            allOneDataStructure.Dec(_key);
+
+            return VoidOperationResult.Instance;
+        }
+    }
+
+    protected abstract class GetKeyOperation : IOperation<IAllOneDataStructure>
+    {
+        public abstract IOperationResult Execute(IAllOneDataStructure solution);
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly string? _key;
+
+            public Result(string? key)
+            {
+                _key = key;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _key == other._key;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_key);
+            }
+        }
+    }
+
+    private sealed class GetMaxKeyOperation : GetKeyOperation
+    {
+        public override IOperationResult Execute(IAllOneDataStructure allOneDataStructure)
+        {
+            var maxKey = allOneDataStructure.GetMaxKey();
+
+            return new Result(maxKey);
+        }
+    }
+
+    private sealed class GetMinKeyOperation : GetKeyOperation
+    {
+        public override IOperationResult Execute(IAllOneDataStructure allOneDataStructure)
+        {
+            var minKey = allOneDataStructure.GetMinKey();
+
+            return new Result(minKey);
+        }
     }
 }
