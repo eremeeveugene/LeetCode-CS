@@ -13,6 +13,9 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
+    defaults:
+      run:
+        working-directory: source
 
     steps:
       - name: Checkout repository
@@ -24,6 +27,14 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           global-json-file: ${{ github.workspace }}/global.json
+
+      - name: Cache NuGet packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj', '**/global.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
 
       - name: Restore dependencies
         run: dotnet restore
