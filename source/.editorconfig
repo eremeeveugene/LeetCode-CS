@@ -10,6 +10,7 @@ indent_size = 4
 tab_width = 2
 
 [*]
+end_of_line = lf
 
 # Microsoft .NET properties
 csharp_new_line_before_members_in_object_initializers = false
@@ -134,9 +135,6 @@ resharper_keep_existing_declaration_block_arrangement = false
 resharper_use_heuristics_for_body_style = true
 resharper_wrap_simple_property_style = single_line
 
-# Standard properties
-end_of_line = crlf
-
 [*.{appxmanifest,asax,ascx,aspx,axaml,axml,build,config,cs,cshtml,csproj,dbml,discomap,dtd,htm,html,jsproj,lsproj,master,njsproj,nuspec,paml,proj,props,razor,resw,resx,skin,StyleCop,targets,tasks,vb,vbproj,xaml,xamlx,xml,xoml,xsd}]
 indent_style = space
 indent_size = 4
@@ -148,6 +146,7 @@ root = true
 # C# files
 [*.cs]
 dotnet_diagnostic.IDE0290.severity = none
+end_of_line = crlf
 
 #### Core EditorConfig Options ####
 
@@ -157,7 +156,6 @@ indent_style = space
 tab_width = 4
 
 # New line preferences
-end_of_line = crlf
 insert_final_newline = false
 
 #### .NET Coding Conventions ####
