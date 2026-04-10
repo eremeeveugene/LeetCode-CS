@@ -159,7 +159,7 @@ jobs:
           }
 
       - name: Comment Coverage on PR
-        if: github.event_name == 'pull_request' && always()
+        if: github.event_name == 'pull_request' && github.actor != 'dependabot[bot]' && always()
         uses: marocchino/sticky-pull-request-comment@v2
         with:
           header: coverage
