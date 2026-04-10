@@ -78,18 +78,18 @@ jobs:
           if ($changedFiles.Count -eq 0 -or [string]::IsNullOrWhiteSpace($changedFiles[0])) {
             Write-Output "No C# source files changed. Skipping coverage check."
             "coverage_pct=0" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
-            "coverage_status=skipped" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            "coverage_status=⏭️ Skipped" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
             exit 0
           }
 
           Write-Output "Changed files:"
           $changedFiles | ForEach-Object { Write-Output "  $_" }
 
-          $coberturaFile = Get-Item "coverage/Cobertura.xml"
-          if ($null -eq $coberturaFile) {
+          if (-not (Test-Path "coverage/Cobertura.xml")) {
             Write-Error "No Cobertura coverage file found."
             exit 1
           }
+          $coberturaFile = Get-Item "coverage/Cobertura.xml"
 
           [xml]$cobertura = Get-Content -Path $coberturaFile.FullName
 
@@ -129,7 +129,7 @@ jobs:
           if ($totalLines -eq 0) {
             Write-Output "No coverable lines found in changed files. Skipping check."
             "coverage_pct=0" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
-            "coverage_status=skipped" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            "coverage_status=⏭️ Skipped" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
             exit 0
           }
 
@@ -147,16 +147,16 @@ jobs:
           if ($coveragePct -lt 90) {
             Write-Error "Coverage for changed files is below 90%. It is at $coveragePct%"
             "coverage_pct=$coveragePct" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
-            "coverage_status=failed" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            "coverage_status=❌ Failed" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
             exit 1
           } else {
             Write-Output "Coverage check passed."
             "coverage_pct=$coveragePct" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
-            "coverage_status=passed" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            "coverage_status=✅ Passed" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
           }
 
       - name: Comment Coverage on PR
-        if: github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request' && always()
         uses: marocchino/sticky-pull-request-comment@v2
         with:
           header: coverage
