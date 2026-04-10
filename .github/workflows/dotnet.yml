@@ -10,9 +10,9 @@ jobs:
   pipeline:
     runs-on: windows-latest
     timeout-minutes: 30
-    defaults:
-      run:
-        working-directory: source
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
 
     steps:
       - name: Checkout repository
