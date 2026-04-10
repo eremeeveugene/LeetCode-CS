@@ -8,7 +8,7 @@ on:
 
 jobs:
   pipeline:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: source
@@ -17,7 +17,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Required for changed-files to work correctly
+          fetch-depth: 0
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
@@ -27,17 +27,17 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
+      - name: Check Code Style
+        run: dotnet format --verify-no-changes --verbosity diagnostic
+
       - name: Build
         run: dotnet build --no-restore
 
-      - name: Run Tests with Coverage
-        run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
+      - name: Run Tests
+        run: dotnet test --no-build --verbosity normal
 
       - name: Install ReportGenerator
         run: dotnet tool install --global dotnet-reportgenerator-globaltool
-
-      - name: Check Code Style
-        run: dotnet format --verify-no-changes --verbosity diagnostic
 
       - name: Generate Coverage Report
         run: |
