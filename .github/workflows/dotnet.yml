@@ -54,6 +54,8 @@ jobs:
         with:
           files: |
             source/**/*.cs
+          files_ignore: |
+            source/Tests/**
 
       - name: Check Coverage for Changed Files
         run: |
