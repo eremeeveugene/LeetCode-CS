@@ -71,11 +71,14 @@ jobs:
             source/Tests/**
 
       - name: Check Coverage for Changed Files
+        id: coverage-check
         run: |
           $changedFiles = "${{ steps.changed-files.outputs.all_changed_files }}" -split '\s+'
 
           if ($changedFiles.Count -eq 0 -or [string]::IsNullOrWhiteSpace($changedFiles[0])) {
             Write-Output "No C# source files changed. Skipping coverage check."
+            "coverage_pct=0" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            "coverage_status=skipped" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
             exit 0
           }
 
@@ -125,6 +128,8 @@ jobs:
 
           if ($totalLines -eq 0) {
             Write-Output "No coverable lines found in changed files. Skipping check."
+            "coverage_pct=0" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            "coverage_status=skipped" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
             exit 0
           }
 
@@ -141,16 +146,27 @@ jobs:
 
           if ($coveragePct -lt 90) {
             Write-Error "Coverage for changed files is below 90%. It is at $coveragePct%"
+            "coverage_pct=$coveragePct" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            "coverage_status=failed" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
             exit 1
           } else {
             Write-Output "Coverage check passed."
+            "coverage_pct=$coveragePct" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            "coverage_status=passed" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
           }
 
       - name: Comment Coverage on PR
         if: github.event_name == 'pull_request'
         uses: marocchino/sticky-pull-request-comment@v2
         with:
-          path: source/coverage/Summary.txt
+          header: coverage
+          message: |
+            ## 📊 Coverage Report
+
+            | | |
+            |---|---|
+            | **Changed files coverage** | ${{ steps.coverage-check.outputs.coverage_pct }}% |
+            | **Status** | ${{ steps.coverage-check.outputs.coverage_status }} |
 
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
