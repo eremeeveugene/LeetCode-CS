@@ -1,25 +1,25 @@
 Summary
-  Generated on: 4/7/2026 - 1:53:12 PM
-  Coverage date: 4/7/2026 - 1:51:59 PM - 4/7/2026 - 1:52:20 PM
+  Generated on: 4/10/2026 - 11:16:20 AM
+  Coverage date: 4/10/2026 - 11:15:48 AM - 4/10/2026 - 11:16:09 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1201
-  Files: 1201
-  Line coverage: 97.5%
-  Covered lines: 26573
-  Uncovered lines: 664
-  Coverable lines: 27237
-  Total lines: 67711
-  Branch coverage: 95.1% (9871 of 10377)
-  Covered branches: 9871
-  Total branches: 10377
-  Method coverage: 99.2% (1777 of 1790)
-  Full method coverage: 87.7% (1571 of 1790)
-  Covered methods: 1777
-  Fully covered methods: 1571
-  Total methods: 1790
+  Classes: 1202
+  Files: 1202
+  Line coverage: 97.9%
+  Covered lines: 26561
+  Uncovered lines: 550
+  Coverable lines: 27111
+  Total lines: 67560
+  Branch coverage: 95.7% (9847 of 10286)
+  Covered branches: 9847
+  Total branches: 10286
+  Method coverage: 99.4% (1774 of 1784)
+  Full method coverage: 88.6% (1582 of 1784)
+  Covered methods: 1774
+  Fully covered methods: 1582
+  Total methods: 1784
 
-LeetCode                                                                                                                                                97.7%
+LeetCode                                                                                                                                                97.9%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsSorting                     100%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                       100%
@@ -40,7 +40,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.AddTwoNumbers2.AddTwoNumbers2Stack                                                                                                 100%
   LeetCode.Algorithms.AdjacentIncreasingSubarraysDetection1.AdjacentIncreasingSubarraysDetection1Greedy                                                  100%
   LeetCode.Algorithms.AliceAndBobPlayingFlowerGame.AliceAndBobPlayingFlowerGameMath                                                                      100%
-  LeetCode.Algorithms.AllOneDataStructure.AllOneDataStructureLinkedList                                                                                 68.4%
+  LeetCode.Algorithms.AllOneDataStructure.AllOneDataStructureLinkedList                                                                                 89.1%
   LeetCode.Algorithms.AlternatingGroups2.AlternatingGroups2BruteForce                                                                                    100%
   LeetCode.Algorithms.AlternatingGroups2.AlternatingGroups2SlidingWindow                                                                                 100%
   LeetCode.Algorithms.AppendCharactersToStringToMakeSubsequence.AppendCharactersToStringToMakeSubsequenceTwoPointers                                     100%
@@ -265,23 +265,23 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArray                                                                                   100%
   LeetCode.Algorithms.DesignBrowserHistory.DesignBrowserHistoryArray                                                                                     100%
   LeetCode.Algorithms.DesignBrowserHistory.DesignBrowserHistoryLinkedList                                                                                100%
-  LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedList                                                                                 63.5%
-  LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedList                                                                                 72.2%
-  LeetCode.Algorithms.DesignFoodRatingSystem.DesignFoodRatingSystemDictionaryWithPriorityQueue                                                            95%
+  LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedList                                                                                 86.4%
+  LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedList                                                                                 96.2%
+  LeetCode.Algorithms.DesignFoodRatingSystem.DesignFoodRatingSystemDictionaryWithPriorityQueue                                                          98.3%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueLinkedList                                                                   73.8%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueList                                                                         90.4%
   LeetCode.Algorithms.DesignHashMap.DesignHashMapIntArray                                                                                                100%
   LeetCode.Algorithms.DesignHashSet.DesignHashSetBitArray                                                                                                100%
   LeetCode.Algorithms.DesignHashSet.DesignHashSetBoolArray                                                                                               100%
-  LeetCode.Algorithms.DesignMovieRentalSystem.DesignMovieRentalSystemDictionary                                                                         94.3%
+  LeetCode.Algorithms.DesignMovieRentalSystem.DesignMovieRentalSystemDictionary                                                                         96.2%
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceBruteForce                                                                       98.2%
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceDictionary                                                                        100%
-  LeetCode.Algorithms.DesignNumberContainerSystem.DesignNumberContainerSystemDictionary                                                                 83.8%
+  LeetCode.Algorithms.DesignNumberContainerSystem.DesignNumberContainerSystemDictionary                                                                 93.5%
   LeetCode.Algorithms.DesignParkingSystem.DesignParkingSystemCounting                                                                                    100%
   LeetCode.Algorithms.DesignSpreadsheet.DesignSpreadsheetMatrix                                                                                          100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArray                                                           100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedList                                                      100%
-  LeetCode.Algorithms.DesignTaskManager.DesignTaskManagerDictionaryWithPriorityQueue                                                                    90.3%
+  LeetCode.Algorithms.DesignTaskManager.DesignTaskManagerDictionaryWithPriorityQueue                                                                    91.9%
   LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict.DetermineIfTwoEventsHaveConflictNumberComparison                                                  100%
   LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict.DetermineIfTwoEventsHaveConflictStringComparison                                                  100%
   LeetCode.Algorithms.DiagonalTraverse.DiagonalTraverseSimulation                                                                                        100%
@@ -485,7 +485,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing                    100%
   LeetCode.Algorithms.ImplementQueueUsingStacks.ImplementQueueUsingStacksAmortized                                                                      92.8%
   LeetCode.Algorithms.ImplementQueueUsingStacks.ImplementQueueUsingStacksTwoStacks                                                                       100%
-  LeetCode.Algorithms.ImplementRouter.ImplementRouterDictionaryWithBinarySearch                                                                         92.5%
+  LeetCode.Algorithms.ImplementRouter.ImplementRouterDictionaryWithBinarySearch                                                                           95%
   LeetCode.Algorithms.ImplementStackUsingQueues.ImplementStackUsingQueuesOneQueue                                                                        100%
   LeetCode.Algorithms.ImplementStackUsingQueues.ImplementStackUsingQueuesTwoQueues                                                                       100%
   LeetCode.Algorithms.ImplementTrie.ImplementTrieArray                                                                                                  92.3%
@@ -1019,7 +1019,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ShuffleString.ShuffleStringIterative                                                                                               100%
   LeetCode.Algorithms.ShuffleTheArray.ShuffleTheArrayIterative                                                                                           100%
   LeetCode.Algorithms.SignOfTheProductOfAnArray.SignOfTheProductOfAnArrayIterative                                                                       100%
-  LeetCode.Algorithms.SimpleBankSystem.SimpleBankSystemLookup                                                                                           83.7%
+  LeetCode.Algorithms.SimpleBankSystem.SimpleBankSystemLookup                                                                                           94.5%
   LeetCode.Algorithms.SingleNumber.SingleNumberHashSet                                                                                                   100%
   LeetCode.Algorithms.SingleNumber.SingleNumberXor                                                                                                       100%
   LeetCode.Algorithms.SingleNumber2.SingleNumber2Bitwise                                                                                                 100%
@@ -1210,18 +1210,19 @@ LeetCode                                                                        
   LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
-  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                 90.6%
+  LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderSemaphoreSlim                                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderTaskCompletionSource                                                                                     100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderThreadSleep                                                                                              100%
 
-LeetCode.Core                                                                                                                                           82.1%
-  LeetCode.Core.Helpers.JsonHelper<T>                                                                                                                   66.9%
+LeetCode.Core                                                                                                                                            100%
+  LeetCode.Core.Helpers.JsonHelper                                                                                                                       100%
   LeetCode.Core.Helpers.JsonHelperOptions                                                                                                                100%
   LeetCode.Core.Models.ListNode                                                                                                                          100%
   LeetCode.Core.Models.Node                                                                                                                              100%
   LeetCode.Core.Models.TreeNode                                                                                                                          100%
 
-LeetCode.Tests.Base                                                                                                                                     87.5%
+LeetCode.Tests.Base                                                                                                                                     61.1%
   AutoGeneratedProgram                                                                                                                                     0%
   LeetCode.Tests.Base.Scenarios.Scenario<T>                                                                                                              100%
+  LeetCode.Tests.Base.Scenarios.VoidOperationResult                                                                                                       40%
