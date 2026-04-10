@@ -23,8 +23,8 @@ public abstract class MinimumNumberOfPeopleToTeachTestsBase<T> where T : IMinimu
         int languagesCount, string languagesJson, string friendshipsJson, int expectedResult)
     {
         // Arrange
-        var languages = JsonHelper<int[][]>.Parse(languagesJson);
-        var friendships = JsonHelper<int[][]>.Parse(friendshipsJson);
+        var languages = JsonHelper.Parse<int[][]>(languagesJson);
+        var friendships = JsonHelper.Parse<int[][]>(friendshipsJson);
 
         var solution = new T();
 

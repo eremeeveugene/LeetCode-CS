@@ -27,7 +27,7 @@ public abstract class LemonadeChangeTestsBase<T> where T : ILemonadeChange, new(
     public void LemonadeChange_WithGivenBills_ReturnsIfChangeCanBeProvided(string billsJson, bool expectedResult)
     {
         // Arrange
-        var bills = JsonHelper<int[]>.Parse(billsJson);
+        var bills = JsonHelper.Parse<int[]>(billsJson);
 
         var solution = new T();
 

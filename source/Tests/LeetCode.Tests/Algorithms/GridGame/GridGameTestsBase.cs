@@ -24,7 +24,7 @@ public abstract class GridGameTestsBase<T> where T : IGridGame, new()
         long expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int[][]>.Parse(gridJson);
+        var grid = JsonHelper.Parse<int[][]>(gridJson);
 
         var solution = new T();
 

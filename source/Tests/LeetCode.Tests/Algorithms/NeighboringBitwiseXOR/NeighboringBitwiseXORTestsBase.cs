@@ -24,7 +24,7 @@ public abstract class NeighboringBitwiseXORTestsBase<T> where T : INeighboringBi
         bool expectedResult)
     {
         // Arrange
-        var derived = JsonHelper<int[]>.Parse(derivedJson);
+        var derived = JsonHelper.Parse<int[]>(derivedJson);
 
         var solution = new T();
 

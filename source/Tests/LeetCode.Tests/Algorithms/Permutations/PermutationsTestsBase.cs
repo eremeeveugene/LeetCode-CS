@@ -25,8 +25,8 @@ public abstract class PermutationsTestsBase<T> where T : IPermutations, new()
         string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
-        var expectedResult = JsonHelper<IList<IList<int>>>.Parse(expectedResultJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
+        var expectedResult = JsonHelper.Parse<IList<IList<int>>>(expectedResultJson);
 
         var solution = new T();
 

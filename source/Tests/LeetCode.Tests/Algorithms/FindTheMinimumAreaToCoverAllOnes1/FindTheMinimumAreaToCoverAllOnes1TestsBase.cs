@@ -26,7 +26,7 @@ public abstract class FindTheMinimumAreaToCoverAllOnes1TestsBase<T> where T : IF
         int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int[][]>.Parse(gridJson);
+        var grid = JsonHelper.Parse<int[][]>(gridJson);
 
         var solution = new T();
 

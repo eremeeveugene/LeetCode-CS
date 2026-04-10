@@ -24,8 +24,8 @@ public abstract class DetermineIfTwoEventsHaveConflictTestsBase<T> where T : IDe
         string event2Json, bool expectedResult)
     {
         // Arrange
-        var event1 = JsonHelper<string[]>.Parse(event1Json);
-        var event2 = JsonHelper<string[]>.Parse(event2Json);
+        var event1 = JsonHelper.Parse<string[]>(event1Json);
+        var event2 = JsonHelper.Parse<string[]>(event2Json);
 
         var solution = new T();
 

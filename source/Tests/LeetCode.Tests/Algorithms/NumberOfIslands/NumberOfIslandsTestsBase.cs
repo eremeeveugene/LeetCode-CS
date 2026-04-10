@@ -26,7 +26,7 @@ public abstract class NumberOfIslandsTestsBase<T> where T : INumberOfIslands, ne
     public void NumIslands_WithGridOfLandAndWater_ReturnsNumberOfIslands(string gridJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<char[][]>.Parse(gridJson);
+        var grid = JsonHelper.Parse<char[][]>(gridJson);
 
         var solution = new T();
 

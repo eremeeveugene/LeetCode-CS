@@ -25,7 +25,7 @@ public abstract class ShortestDistanceToTargetStringInCircularArrayTestsBase<T>
         string wordsJson, string target, int startIndex, int expectedResult)
     {
         // Arrange
-        var words = JsonHelper<string[]>.Parse(wordsJson);
+        var words = JsonHelper.Parse<string[]>(wordsJson);
 
         var solution = new T();
 

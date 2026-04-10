@@ -28,7 +28,7 @@ public abstract class RegionsCutBySlashesTestsBase<T> where T : IRegionsCutBySla
     public void RegionsBySlashes_WithDifferentGrids_ReturnsRegionCount(string gridJson, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<string[]>.Parse(gridJson);
+        var grid = JsonHelper.Parse<string[]>(gridJson);
 
         var solution = new T();
 

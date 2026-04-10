@@ -24,9 +24,9 @@ public abstract class LongestUnequalAdjacentGroupsSubsequence1TestsBase<T>
         string groupsJson, string expectedResultJson)
     {
         // Arrange
-        var words = JsonHelper<string[]>.Parse(wordsJson);
-        var groups = JsonHelper<int[]>.Parse(groupsJson);
-        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
+        var words = JsonHelper.Parse<string[]>(wordsJson);
+        var groups = JsonHelper.Parse<int[]>(groupsJson);
+        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
 
         var solution = new T();
 

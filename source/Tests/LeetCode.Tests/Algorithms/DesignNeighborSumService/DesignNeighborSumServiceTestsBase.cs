@@ -10,46 +10,33 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignNeighborSumService;
-using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.DesignNeighborSumService;
 
 public abstract class DesignNeighborSumServiceTestsBase
 {
-    private const string AdjacentSum = "adjacentSum";
-    private const string DiagonalSum = "diagonalSum";
-
     [TestMethod]
-    [DataRow("[[0, 1, 2], [3, 4, 5], [6, 7, 8]]", "[\"adjacentSum\",\"adjacentSum\",\"diagonalSum\",\"diagonalSum\"]",
-        "[[1],[4],[4],[8]]", "[6,16,16,4]")]
+    [DynamicData(nameof(GetScenarios))]
     public void DesignNeighborSumService_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        string gridJson, string methodsJson, string argumentsJson, string expectedResultJson)
+        NeighborSumServiceScenario scenario)
     {
         // Arrange
-        var grid = JsonHelper<int[][]>.Parse(gridJson);
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
-        var solution = GetSolution(grid);
+        var solution = GetSolution(scenario.Grid);
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case AdjacentSum:
-                    actualResult.Add(solution.AdjacentSum((int)arguments[i][0]));
-                    break;
-                case DiagonalSum:
-                    actualResult.Add(solution.DiagonalSum((int)arguments[i][0]));
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
@@ -57,4 +44,167 @@ public abstract class DesignNeighborSumServiceTestsBase
     }
 
     protected abstract IDesignNeighborSumService GetSolution(int[][] grid);
+
+    private static IEnumerable<NeighborSumServiceScenario[]> GetScenarios()
+    {
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[0, 1, 2], [3, 4, 5], [6, 7, 8]],
+                [
+                    new AdjacentSumOperation(1),
+                    new AdjacentSumOperation(4),
+                    new DiagonalSumOperation(4),
+                    new DiagonalSumOperation(8)
+                ],
+                [
+                    new AdjacentSumOperation.Result(6),
+                    new AdjacentSumOperation.Result(16),
+                    new DiagonalSumOperation.Result(16),
+                    new DiagonalSumOperation.Result(4)
+                ])
+        ];
+
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[0, 1, 2], [3, 4, 5], [6, 7, 8]],
+                [
+                    new AdjacentSumOperation(0),
+                    new DiagonalSumOperation(0)
+                ],
+                [
+                    new AdjacentSumOperation.Result(4),
+                    new DiagonalSumOperation.Result(4)
+                ])
+        ];
+
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[5]],
+                [
+                    new AdjacentSumOperation(5),
+                    new DiagonalSumOperation(5)
+                ],
+                [
+                    new AdjacentSumOperation.Result(0),
+                    new DiagonalSumOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[0, 1], [2, 3]],
+                [
+                    new AdjacentSumOperation(0),
+                    new DiagonalSumOperation(0),
+                    new AdjacentSumOperation(3),
+                    new DiagonalSumOperation(3)
+                ],
+                [
+                    new AdjacentSumOperation.Result(3),
+                    new DiagonalSumOperation.Result(3),
+                    new AdjacentSumOperation.Result(3),
+                    new DiagonalSumOperation.Result(0)
+                ])
+        ];
+    }
+
+    public sealed class NeighborSumServiceScenario : Scenario<IDesignNeighborSumService>
+    {
+        public NeighborSumServiceScenario(int[][] grid,
+            IOperation<IDesignNeighborSumService>[] operations, IOperationResult[] operationResults)
+            : base(operations, operationResults)
+        {
+            Grid = grid;
+        }
+
+        public int[][] Grid { get; }
+    }
+
+    private sealed class AdjacentSumOperation : IOperation<IDesignNeighborSumService>
+    {
+        private readonly int _value;
+
+        public AdjacentSumOperation(int value)
+        {
+            _value = value;
+        }
+
+        public IOperationResult Execute(IDesignNeighborSumService designNeighborSumService)
+        {
+            var sum = designNeighborSumService.AdjacentSum(_value);
+
+            return new Result(sum);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly int _sum;
+
+            public Result(int sum)
+            {
+                _sum = sum;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _sum == other._sum;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_sum);
+            }
+        }
+    }
+
+    private sealed class DiagonalSumOperation : IOperation<IDesignNeighborSumService>
+    {
+        private readonly int _value;
+
+        public DiagonalSumOperation(int value)
+        {
+            _value = value;
+        }
+
+        public IOperationResult Execute(IDesignNeighborSumService designNeighborSumService)
+        {
+            var sum = designNeighborSumService.DiagonalSum(_value);
+
+            return new Result(sum);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly int _sum;
+
+            public Result(int sum)
+            {
+                _sum = sum;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _sum == other._sum;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_sum);
+            }
+        }
+    }
 }

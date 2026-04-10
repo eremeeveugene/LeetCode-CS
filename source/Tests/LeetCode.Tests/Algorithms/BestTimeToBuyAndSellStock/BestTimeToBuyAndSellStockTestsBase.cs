@@ -22,7 +22,7 @@ public abstract class BestTimeToBuyAndSellStockTestsBase<T> where T : IBestTimeT
     public void MaxProfit_GivenPriceArray_ReturnsMaximumProfit(string pricesJson, int expectedResult)
     {
         // Arrange
-        var prices = JsonHelper<int[]>.Parse(pricesJson);
+        var prices = JsonHelper.Parse<int[]>(pricesJson);
 
         var solution = new T();
 

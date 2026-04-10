@@ -37,8 +37,8 @@ public abstract class MedianOfTwoSortedArraysTestsBase<T> where T : IMedianOfTwo
         string nums2Json, double expectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper<int[]>.Parse(nums1Json);
-        var nums2 = JsonHelper<int[]>.Parse(nums2Json);
+        var nums1 = JsonHelper.Parse<int[]>(nums1Json);
+        var nums2 = JsonHelper.Parse<int[]>(nums2Json);
 
         var solution = new T();
 

@@ -22,7 +22,7 @@ public abstract class SplitTheArrayTestsBase<T> where T : ISplitTheArray, new()
     public void IsPossibleToSplit_WithNumsArray_ReturnsTrueIfSplitIsValid(string numsJson, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

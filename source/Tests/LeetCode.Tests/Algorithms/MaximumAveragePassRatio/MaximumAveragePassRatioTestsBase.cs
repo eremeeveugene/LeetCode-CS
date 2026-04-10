@@ -23,7 +23,7 @@ public abstract class MaximumAveragePassRatioTestsBase<T> where T : IMaximumAver
         int extraStudents, double expectedResult)
     {
         // Arrange
-        var classes = JsonHelper<int[][]>.Parse(classesJson);
+        var classes = JsonHelper.Parse<int[][]>(classesJson);
 
         var solution = new T();
 

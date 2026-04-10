@@ -24,8 +24,8 @@ public abstract class MaximumMatchingOfPlayersWithTrainersTestsBase<T>
         string playersJson, string trainersJson, long expectedResult)
     {
         // Arrange
-        var players = JsonHelper<int[]>.Parse(playersJson);
-        var trainers = JsonHelper<int[]>.Parse(trainersJson);
+        var players = JsonHelper.Parse<int[]>(playersJson);
+        var trainers = JsonHelper.Parse<int[]>(trainersJson);
 
         var solution = new T();
 

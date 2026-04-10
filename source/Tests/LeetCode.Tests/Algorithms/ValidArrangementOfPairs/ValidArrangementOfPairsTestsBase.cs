@@ -28,8 +28,8 @@ public abstract class ValidArrangementOfPairsTestsBase<T> where T : IValidArrang
         string expectedResultJson)
     {
         // Arrange
-        var pairs = JsonHelper<int[][]>.Parse(pairsJson);
-        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
+        var pairs = JsonHelper.Parse<int[][]>(pairsJson);
+        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
 
         var solution = new T();
 

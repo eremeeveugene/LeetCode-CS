@@ -10,49 +10,192 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ProductOfTheLastKNumbers;
-using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.ProductOfTheLastKNumbers;
 
 public abstract class ProductOfTheLastKNumbersTestsBase<T> where T : IProductOfTheLastKNumbers, new()
 {
-    private const string Add = "add";
-    private const string GetProduct = "getProduct";
-
     [TestMethod]
-    [DataRow(
-        "[\"add\",\"add\",\"add\",\"add\",\"add\",\"getProduct\",\"getProduct\",\"getProduct\",\"add\",\"getProduct\"]",
-        "[[3],[0],[2],[5],[4],[2],[3],[4],[8],[2]]", "[20,40,0,32]")]
+    [DynamicData(nameof(GetScenarios))]
     public void ProductOfTheLastKNumbers_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        string methodsJson, string argumentsJson, string expectedResultJson)
+        IScenario<IProductOfTheLastKNumbers> scenario)
     {
         // Arrange
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
         var solution = new T();
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case Add:
-                    solution.Add((int)arguments[i][0]);
-                    break;
-                case GetProduct:
-                    actualResult.Add(solution.GetProduct((int)arguments[i][0]));
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<IScenario<IProductOfTheLastKNumbers>[]> GetScenarios()
+    {
+        yield return
+        [
+            new Scenario<IProductOfTheLastKNumbers>(
+                [
+                    new AddOperation(3),
+                    new AddOperation(0),
+                    new AddOperation(2),
+                    new AddOperation(5),
+                    new AddOperation(4),
+                    new GetProductOperation(2),
+                    new GetProductOperation(3),
+                    new GetProductOperation(4),
+                    new AddOperation(8),
+                    new GetProductOperation(2)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(20),
+                    new GetProductOperation.Result(40),
+                    new GetProductOperation.Result(0),
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(32)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IProductOfTheLastKNumbers>(
+                [
+                    new AddOperation(1),
+                    new AddOperation(2),
+                    new AddOperation(0),
+                    new AddOperation(3),
+                    new GetProductOperation(1),
+                    new GetProductOperation(2),
+                    new GetProductOperation(3),
+                    new GetProductOperation(4)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(3),
+                    new GetProductOperation.Result(0),
+                    new GetProductOperation.Result(0),
+                    new GetProductOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IProductOfTheLastKNumbers>(
+                [
+                    new AddOperation(5),
+                    new GetProductOperation(1),
+                    new AddOperation(7),
+                    new GetProductOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(5),
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(7)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IProductOfTheLastKNumbers>(
+                [
+                    new AddOperation(0),
+                    new AddOperation(0),
+                    new AddOperation(4),
+                    new AddOperation(5),
+                    new GetProductOperation(2),
+                    new GetProductOperation(3),
+                    new GetProductOperation(4)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(20),
+                    new GetProductOperation.Result(0),
+                    new GetProductOperation.Result(0)
+                ])
+        ];
+    }
+
+    private sealed class AddOperation : IOperation<IProductOfTheLastKNumbers>
+    {
+        private readonly int _value;
+
+        public AddOperation(int value)
+        {
+            _value = value;
+        }
+
+        public IOperationResult Execute(IProductOfTheLastKNumbers productOfTheLastKNumbers)
+        {
+            productOfTheLastKNumbers.Add(_value);
+
+            return VoidOperationResult.Instance;
+        }
+    }
+
+    private sealed class GetProductOperation : IOperation<IProductOfTheLastKNumbers>
+    {
+        private readonly int _k;
+
+        public GetProductOperation(int k)
+        {
+            _k = k;
+        }
+
+        public IOperationResult Execute(IProductOfTheLastKNumbers productOfTheLastKNumbers)
+        {
+            var product = productOfTheLastKNumbers.GetProduct(_k);
+
+            return new Result(product);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly int _product;
+
+            public Result(int product)
+            {
+                _product = product;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _product == other._product;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_product);
+            }
+        }
     }
 }

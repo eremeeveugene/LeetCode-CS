@@ -25,9 +25,9 @@ public abstract class VowelSpellcheckerTestsBase<T> where T : IVowelSpellchecker
         string wordlistJson, string queriesJson, string expectedResultJson)
     {
         // Arrange
-        var wordlist = JsonHelper<string[]>.Parse(wordlistJson);
-        var queries = JsonHelper<string[]>.Parse(queriesJson);
-        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
+        var wordlist = JsonHelper.Parse<string[]>(wordlistJson);
+        var queries = JsonHelper.Parse<string[]>(queriesJson);
+        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
 
         var solution = new T();
 

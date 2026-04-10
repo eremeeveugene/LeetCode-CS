@@ -23,7 +23,7 @@ public abstract class ConstructUniformParityArray1TestsBase<T> where T : IConstr
         bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

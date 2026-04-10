@@ -25,8 +25,8 @@ public abstract class TwoSumTestsBase<T> where T : ITwoSum, new()
         string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

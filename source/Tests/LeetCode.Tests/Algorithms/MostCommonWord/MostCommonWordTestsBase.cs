@@ -24,7 +24,7 @@ public abstract class MostCommonWordTestsBase<T> where T : IMostCommonWord, new(
         string bannedJson, string expectedResult)
     {
         // Arrange
-        var banned = JsonHelper<string[]>.Parse(bannedJson);
+        var banned = JsonHelper.Parse<string[]>(bannedJson);
 
         var solution = new T();
 

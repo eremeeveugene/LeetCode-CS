@@ -30,7 +30,7 @@ public abstract class ValidSudokuTestsBase<T> where T : IValidSudoku, new()
         bool expectedResult)
     {
         // Arrange
-        var board = JsonHelper<char[][]>.Parse(boardJson);
+        var board = JsonHelper.Parse<char[][]>(boardJson);
 
         var solution = new T();
 

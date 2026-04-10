@@ -25,7 +25,7 @@ public abstract class MaximalRectangleTestsBase<T> where T : IMaximalRectangle, 
     public void MaximalRectangle_GivenMatrix_ReturnsMaximalArea(string matrixJson, int expectedResult)
     {
         // Arrange
-        var matrix = JsonHelper<char[][]>.Parse(matrixJson);
+        var matrix = JsonHelper.Parse<char[][]>(matrixJson);
 
         var solution = new T();
 

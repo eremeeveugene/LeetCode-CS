@@ -23,7 +23,7 @@ public abstract class ContainsDuplicateTestsBase<T> where T : IContainsDuplicate
     public void ContainsDuplicate_GivenArray_ReturnsTrueIfDuplicatesExist(string numsJson, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

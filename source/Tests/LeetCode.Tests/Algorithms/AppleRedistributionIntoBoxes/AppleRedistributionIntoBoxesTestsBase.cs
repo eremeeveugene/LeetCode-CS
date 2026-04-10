@@ -23,8 +23,8 @@ public abstract class AppleRedistributionIntoBoxesTestsBase<T> where T : IAppleR
         string applesJson, string capacitiesJson, int expectedResult)
     {
         // Arrange
-        var apples = JsonHelper<int[]>.Parse(applesJson);
-        var capacities = JsonHelper<int[]>.Parse(capacitiesJson);
+        var apples = JsonHelper.Parse<int[]>(applesJson);
+        var capacities = JsonHelper.Parse<int[]>(capacitiesJson);
 
         var solution = new T();
 

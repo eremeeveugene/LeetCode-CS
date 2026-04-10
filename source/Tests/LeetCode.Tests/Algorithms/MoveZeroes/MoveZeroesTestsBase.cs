@@ -23,8 +23,8 @@ public abstract class MoveZeroesTestsBase<T> where T : IMoveZeroes, new()
     public void MoveZeroes_WhenCalled_MovesAllZeroesToEnd(string numsJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

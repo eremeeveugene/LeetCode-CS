@@ -26,10 +26,10 @@ public abstract class HeightOfBinaryTreeAfterSubtreeRemovalQueriesTestsBase<T>
         string queriesJson, string expectedResultJson)
     {
         // Arrange
-        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
+        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
-        var queries = JsonHelper<int[]>.Parse(queriesJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var queries = JsonHelper.Parse<int[]>(queriesJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

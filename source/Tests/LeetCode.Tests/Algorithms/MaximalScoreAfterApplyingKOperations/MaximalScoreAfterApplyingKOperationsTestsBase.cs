@@ -23,7 +23,7 @@ public abstract class MaximalScoreAfterApplyingKOperationsTestsBase<T>
     public void MaxKelements_WithArrayAndKOperations_ReturnsMaximumScore(string numsJson, int k, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

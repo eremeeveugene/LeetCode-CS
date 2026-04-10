@@ -24,8 +24,8 @@ public abstract class SortTheMatrixDiagonallyTestsBase<T> where T : ISortTheMatr
         string expectedResultJson)
     {
         // Arrange
-        var mat = JsonHelper<int[][]>.Parse(matJson);
-        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
+        var mat = JsonHelper.Parse<int[][]>(matJson);
+        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
 
         var solution = new T();
 

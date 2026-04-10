@@ -27,7 +27,7 @@ public abstract class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeTestsBas
         int expectedResultValue)
     {
         // Arrange
-        var treeArray = JsonHelper<int?[]>.Parse(treeJson);
+        var treeArray = JsonHelper.Parse<int?[]>(treeJson);
         var original = TreeNode.ToTreeNodeOrThrow(treeArray);
         var cloned = TreeNode.ToTreeNodeOrThrow(treeArray);
 

@@ -27,7 +27,7 @@ public abstract class BoatsToSavePeopleTestsBase<T> where T : IBoatsToSavePeople
         int expectedResult)
     {
         // Arrange
-        var people = JsonHelper<int[]>.Parse(peopleJson);
+        var people = JsonHelper.Parse<int[]>(peopleJson);
         var solution = new T();
 
         // Act

@@ -23,7 +23,7 @@ public abstract class ShuffleStringTestsBase<T> where T : IShuffleString, new()
         string indicesJson, string expectedResult)
     {
         // Arrange
-        var indices = JsonHelper<int[]>.Parse(indicesJson);
+        var indices = JsonHelper.Parse<int[]>(indicesJson);
 
         var solution = new T();
 

@@ -23,7 +23,7 @@ public abstract class LongestHarmoniousSubsequenceTestsBase<T> where T : ILonges
     public void FindLHS_WithNumsArray_ReturnsLongestHarmoniousSubsequenceLength(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

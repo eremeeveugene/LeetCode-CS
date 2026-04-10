@@ -22,7 +22,7 @@ public abstract class CountNumberOfBadPairsTestsBase<T> where T : ICountNumberOf
     public void CountBadPairs_GivenArray_ReturnsCountOfBadPairs(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

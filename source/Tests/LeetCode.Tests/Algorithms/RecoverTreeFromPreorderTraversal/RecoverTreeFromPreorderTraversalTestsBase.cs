@@ -26,7 +26,7 @@ public abstract class RecoverTreeFromPreorderTraversalTestsBase<T> where T : IRe
         string expectedResultJson)
     {
         // Arrange
-        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
+        var expectedResultArray = JsonHelper.Parse<int?[]>(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();

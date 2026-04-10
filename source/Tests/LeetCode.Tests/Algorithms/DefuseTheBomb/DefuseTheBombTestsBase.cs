@@ -24,8 +24,8 @@ public abstract class DefuseTheBombTestsBase<T> where T : IDefuseTheBomb, new()
         string expectedResultJson)
     {
         // Arrange
-        var code = JsonHelper<int[]>.Parse(codeJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var code = JsonHelper.Parse<int[]>(codeJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

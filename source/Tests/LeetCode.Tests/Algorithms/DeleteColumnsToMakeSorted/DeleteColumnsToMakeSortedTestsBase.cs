@@ -23,7 +23,7 @@ public abstract class DeleteColumnsToMakeSortedTestsBase<T> where T : IDeleteCol
     public void MinDeletionSize_WithStringArrayInput_ReturnsNumberOfColumnsToDelete(string strsJson, int expectedResult)
     {
         // Arrange
-        var strs = JsonHelper<string[]>.Parse(strsJson);
+        var strs = JsonHelper.Parse<string[]>(strsJson);
 
         var solution = new T();
 

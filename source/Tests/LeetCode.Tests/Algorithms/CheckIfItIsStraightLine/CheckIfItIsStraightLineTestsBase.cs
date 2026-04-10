@@ -24,7 +24,7 @@ public abstract class CheckIfItIsStraightLineTestsBase<T> where T : ICheckIfItIs
         bool expectedResult)
     {
         // Arrange
-        var coordinates = JsonHelper<int[][]>.Parse(coordinatesJson);
+        var coordinates = JsonHelper.Parse<int[][]>(coordinatesJson);
 
         var solution = new T();
 

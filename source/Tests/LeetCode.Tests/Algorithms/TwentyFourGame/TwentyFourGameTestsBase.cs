@@ -24,7 +24,7 @@ public abstract class TwentyFourGameTestsBase<T> where T : ITwentyFourGame, new(
         bool expectedResult)
     {
         // Arrange
-        var cards = JsonHelper<int[]>.Parse(cardsJson);
+        var cards = JsonHelper.Parse<int[]>(cardsJson);
 
         var solution = new T();
 

@@ -23,8 +23,8 @@ public abstract class DecodeXORedArrayTestsBase<T> where T : IDecodeXORedArray, 
         string expectedResultJson)
     {
         // Arrange
-        var encoded = JsonHelper<int[]>.Parse(encodedJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var encoded = JsonHelper.Parse<int[]>(encodedJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

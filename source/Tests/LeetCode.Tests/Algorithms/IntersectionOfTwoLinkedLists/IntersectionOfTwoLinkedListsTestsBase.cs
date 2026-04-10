@@ -32,10 +32,10 @@ public abstract class IntersectionOfTwoLinkedListsTestsBase<T> where T : IInters
         string headBJson, string intersectJson, string expectedResultJson)
     {
         // Arrange
-        var intersectArray = JsonHelper<int[]>.Parse(intersectJson);
+        var intersectArray = JsonHelper.Parse<int[]>(intersectJson);
         var intersect = ListNode.ToListNode(intersectArray);
 
-        var headAArray = JsonHelper<int[]>.Parse(headAJson);
+        var headAArray = JsonHelper.Parse<int[]>(headAJson);
         var headA = ListNode.ToListNode(headAArray);
 
         if (headA != null)
@@ -43,7 +43,7 @@ public abstract class IntersectionOfTwoLinkedListsTestsBase<T> where T : IInters
             headA.next = intersect;
         }
 
-        var headBArray = JsonHelper<int[]>.Parse(headBJson);
+        var headBArray = JsonHelper.Parse<int[]>(headBJson);
         var headB = ListNode.ToListNode(headBArray);
 
         if (headB != null)
@@ -51,7 +51,7 @@ public abstract class IntersectionOfTwoLinkedListsTestsBase<T> where T : IInters
             headB.next = intersect;
         }
 
-        var expectedResultArray = JsonHelper<int[]>.Parse(expectedResultJson);
+        var expectedResultArray = JsonHelper.Parse<int[]>(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

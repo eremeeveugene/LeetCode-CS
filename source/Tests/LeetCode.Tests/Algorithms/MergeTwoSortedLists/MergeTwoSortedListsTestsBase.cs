@@ -28,11 +28,11 @@ public abstract class MergeTwoSortedListsTestsBase<T> where T : IMergeTwoSortedL
         string list2Json, string expectedResultJson)
     {
         // Arrange
-        var list1Array = JsonHelper<int[]>.Parse(list1Json);
+        var list1Array = JsonHelper.Parse<int[]>(list1Json);
         var list1 = ListNode.ToListNode(list1Array);
-        var list2Array = JsonHelper<int[]>.Parse(list2Json);
+        var list2Array = JsonHelper.Parse<int[]>(list2Json);
         var list2 = ListNode.ToListNode(list2Array);
-        var expectedResultArray = JsonHelper<int[]>.Parse(expectedResultJson);
+        var expectedResultArray = JsonHelper.Parse<int[]>(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

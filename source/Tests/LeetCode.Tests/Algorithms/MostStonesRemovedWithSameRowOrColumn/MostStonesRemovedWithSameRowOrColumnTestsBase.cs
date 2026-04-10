@@ -32,7 +32,7 @@ public abstract class MostStonesRemovedWithSameRowOrColumnTestsBase<T>
         // Arrange
         var solution = new T();
 
-        var stones = JsonHelper<int[][]>.Parse(stonesJson);
+        var stones = JsonHelper.Parse<int[][]>(stonesJson);
 
         // Act
         var actualResult = solution.RemoveStones(stones);

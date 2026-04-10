@@ -25,9 +25,9 @@ public abstract class WordSubsetsTestsBase<T> where T : IWordSubsets, new()
         string expectedResultJson)
     {
         // Arrange
-        var words1 = JsonHelper<string[]>.Parse(words1Json);
-        var words2 = JsonHelper<string[]>.Parse(words2Json);
-        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
+        var words1 = JsonHelper.Parse<string[]>(words1Json);
+        var words2 = JsonHelper.Parse<string[]>(words2Json);
+        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
 
         var solution = new T();
 

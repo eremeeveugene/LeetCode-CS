@@ -24,8 +24,8 @@ public abstract class TwoSum2InputArrayIsSortedTestsBase<T> where T : ITwoSum2In
         string expectedResultJson)
     {
         // Arrange
-        var numbers = JsonHelper<int[]>.Parse(numbersJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var numbers = JsonHelper.Parse<int[]>(numbersJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

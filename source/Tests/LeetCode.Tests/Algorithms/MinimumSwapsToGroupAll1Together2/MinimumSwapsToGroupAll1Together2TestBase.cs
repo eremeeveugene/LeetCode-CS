@@ -23,7 +23,7 @@ public abstract class MinimumSwapsToGroupAll1Together2TestBase<T> where T : IMin
     public void MinSwaps_WithBinaryArray_ReturnsMinimumSwapsToGroupOnes(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

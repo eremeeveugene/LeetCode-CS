@@ -29,8 +29,8 @@ public abstract class WalkingRobotSimulationTestsBase<T> where T : IWalkingRobot
         string obstaclesJson, int expectedResult)
     {
         // Arrange
-        var commands = JsonHelper<int[]>.Parse(commandsJson);
-        var obstacles = JsonHelper<int[][]>.Parse(obstaclesJson);
+        var commands = JsonHelper.Parse<int[]>(commandsJson);
+        var obstacles = JsonHelper.Parse<int[][]>(obstaclesJson);
 
         var solution = new T();
 

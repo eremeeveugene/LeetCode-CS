@@ -24,7 +24,7 @@ public abstract class FlipColumnsForMaximumNumberOfEqualRowsTestsBase<T>
     public void MaxEqualRowsAfterFlips_WithMatrix_ReturnsMaxRowsAfterFlips(string matrixJson, int expectedResult)
     {
         // Arrange
-        var matrix = JsonHelper<int[][]>.Parse(matrixJson);
+        var matrix = JsonHelper.Parse<int[][]>(matrixJson);
 
         var solution = new T();
 

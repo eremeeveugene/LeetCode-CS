@@ -24,7 +24,7 @@ public abstract class BinarySearchTestsBase<T> where T : IBinarySearch, new()
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

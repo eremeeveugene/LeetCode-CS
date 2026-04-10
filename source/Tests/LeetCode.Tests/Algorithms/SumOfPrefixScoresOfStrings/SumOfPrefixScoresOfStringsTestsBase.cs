@@ -26,8 +26,8 @@ public abstract class SumOfPrefixScoresOfStringsTestsBase<T> where T : ISumOfPre
         string expectedResultJson)
     {
         // Arrange
-        var words = JsonHelper<string[]>.Parse(wordsJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var words = JsonHelper.Parse<string[]>(wordsJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

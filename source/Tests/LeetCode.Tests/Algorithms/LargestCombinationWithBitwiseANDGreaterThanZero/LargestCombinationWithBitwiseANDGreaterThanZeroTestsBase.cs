@@ -26,7 +26,7 @@ public abstract class LargestCombinationWithBitwiseANDGreaterThanZeroTestsBase<T
         // Arrange
         var solution = new T();
 
-        var candidates = JsonHelper<int[]>.Parse(candidatesJson);
+        var candidates = JsonHelper.Parse<int[]>(candidatesJson);
 
         // Act
         var actualResult = solution.LargestCombination(candidates);

@@ -29,7 +29,7 @@ public abstract class ContainsDuplicate3TestsBase<T> where T : IContainsDuplicat
         string numsJson, int indexDiff, int valueDiff, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

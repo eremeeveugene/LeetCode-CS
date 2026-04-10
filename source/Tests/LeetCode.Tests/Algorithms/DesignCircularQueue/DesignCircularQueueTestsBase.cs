@@ -10,62 +10,33 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignCircularQueue;
-using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.DesignCircularQueue;
 
 public abstract class DesignCircularQueueTestsBase
 {
-    private const string EnQueue = "enQueue";
-    private const string DeQueue = "deQueue";
-    private const string IsEmpty = "isEmpty";
-    private const string IsFull = "isFull";
-    private const string Rear = "rear";
-    private const string Front = "front";
-
     [TestMethod]
-    [DataRow(3,
-        "[\"enQueue\", \"enQueue\", \"enQueue\", \"enQueue\", \"rear\", \"isFull\", \"deQueue\", \"enQueue\", \"rear\"]",
-        "[[1], [2], [3], [4], [], [], [], [4], []]", "[true, true, true, false, 3, true, true, true, 4]")]
-    public void DesignCircularQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(int k,
-        string methodsJson, string argumentsJson, string expectedResultJson)
+    [DynamicData(nameof(GetScenarios))]
+    public void DesignCircularQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        CircularQueueScenario scenario)
     {
         // Arrange
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
-        var solution = GetSolution(k);
+        var solution = GetSolution(scenario.K);
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult?[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case EnQueue:
-                    actualResult.Add(solution.EnQueue((int)arguments[i][0]));
-                    break;
-                case DeQueue:
-                    actualResult.Add(solution.DeQueue());
-                    break;
-                case Front:
-                    actualResult.Add(solution.Front());
-                    break;
-                case Rear:
-                    actualResult.Add(solution.Rear());
-                    break;
-                case IsFull:
-                    actualResult.Add(solution.IsFull());
-                    break;
-                case IsEmpty:
-                    actualResult.Add(solution.IsEmpty());
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
@@ -73,4 +44,321 @@ public abstract class DesignCircularQueueTestsBase
     }
 
     protected abstract IDesignCircularQueue GetSolution(int k);
+
+    private static IEnumerable<CircularQueueScenario[]> GetScenarios()
+    {
+        yield return
+        [
+            new CircularQueueScenario(3,
+                [
+                    new EnQueueOperation(1),
+                    new EnQueueOperation(2),
+                    new EnQueueOperation(3),
+                    new EnQueueOperation(4),
+                    new RearOperation(),
+                    new IsFullOperation(),
+                    new DeQueueOperation(),
+                    new EnQueueOperation(4),
+                    new RearOperation()
+                ],
+                [
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(false),
+                    new RearOperation.Result(3),
+                    new IsFullOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new RearOperation.Result(4)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(1,
+                [
+                    new EnQueueOperation(1),
+                    new EnQueueOperation(2),
+                    new FrontOperation(),
+                    new DeQueueOperation(),
+                    new IsEmptyOperation()
+                ],
+                [
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(false),
+                    new FrontOperation.Result(1),
+                    new DeQueueOperation.Result(true),
+                    new IsEmptyOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(2,
+                [
+                    new IsEmptyOperation(),
+                    new EnQueueOperation(5),
+                    new EnQueueOperation(6),
+                    new IsFullOperation(),
+                    new RearOperation(),
+                    new FrontOperation(),
+                    new DeQueueOperation(),
+                    new RearOperation()
+                ],
+                [
+                    new IsEmptyOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new IsFullOperation.Result(true),
+                    new RearOperation.Result(6),
+                    new FrontOperation.Result(5),
+                    new DeQueueOperation.Result(true),
+                    new RearOperation.Result(6)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(3,
+                [
+                    new FrontOperation(),
+                    new RearOperation(),
+                    new DeQueueOperation()
+                ],
+                [
+                    new FrontOperation.Result(-1),
+                    new RearOperation.Result(-1),
+                    new DeQueueOperation.Result(false)
+                ])
+        ];
+    }
+
+    public sealed class CircularQueueScenario : Scenario<IDesignCircularQueue>
+    {
+        public CircularQueueScenario(int k, IOperation<IDesignCircularQueue>[] operations,
+            IOperationResult[] operationResults) : base(operations, operationResults)
+        {
+            K = k;
+        }
+
+        public int K { get; }
+    }
+
+    private sealed class EnQueueOperation : IOperation<IDesignCircularQueue>
+    {
+        private readonly int _value;
+
+        public EnQueueOperation(int value)
+        {
+            _value = value;
+        }
+
+        public IOperationResult Execute(IDesignCircularQueue designCircularQueue)
+        {
+            var result = designCircularQueue.EnQueue(_value);
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _success;
+
+            public Result(bool success)
+            {
+                _success = success;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _success == other._success;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_success);
+            }
+        }
+    }
+
+    private sealed class DeQueueOperation : IOperation<IDesignCircularQueue>
+    {
+        public IOperationResult Execute(IDesignCircularQueue designCircularQueue)
+        {
+            var result = designCircularQueue.DeQueue();
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _success;
+
+            public Result(bool success)
+            {
+                _success = success;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _success == other._success;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_success);
+            }
+        }
+    }
+
+    private sealed class FrontOperation : IOperation<IDesignCircularQueue>
+    {
+        public IOperationResult Execute(IDesignCircularQueue designCircularQueue)
+        {
+            var value = designCircularQueue.Front();
+
+            return new Result(value);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly int _value;
+
+            public Result(int value)
+            {
+                _value = value;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _value == other._value;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_value);
+            }
+        }
+    }
+
+    private sealed class RearOperation : IOperation<IDesignCircularQueue>
+    {
+        public IOperationResult Execute(IDesignCircularQueue designCircularQueue)
+        {
+            var value = designCircularQueue.Rear();
+
+            return new Result(value);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly int _value;
+
+            public Result(int value)
+            {
+                _value = value;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _value == other._value;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_value);
+            }
+        }
+    }
+
+    private sealed class IsEmptyOperation : IOperation<IDesignCircularQueue>
+    {
+        public IOperationResult Execute(IDesignCircularQueue designCircularQueue)
+        {
+            var result = designCircularQueue.IsEmpty();
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _isEmpty;
+
+            public Result(bool isEmpty)
+            {
+                _isEmpty = isEmpty;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _isEmpty == other._isEmpty;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_isEmpty);
+            }
+        }
+    }
+
+    private sealed class IsFullOperation : IOperation<IDesignCircularQueue>
+    {
+        public IOperationResult Execute(IDesignCircularQueue designCircularQueue)
+        {
+            var result = designCircularQueue.IsFull();
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _isFull;
+
+            public Result(bool isFull)
+            {
+                _isFull = isFull;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _isFull == other._isFull;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_isFull);
+            }
+        }
+    }
 }

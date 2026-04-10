@@ -22,7 +22,7 @@ public abstract class CountElementsWithMaximumFrequencyTestsBase<T> where T : IC
     public void MaxFrequencyElements_GivenArray_ReturnsMaximumElementFrequency(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

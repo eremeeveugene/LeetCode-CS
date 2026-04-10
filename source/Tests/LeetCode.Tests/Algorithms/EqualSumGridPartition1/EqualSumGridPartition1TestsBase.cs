@@ -23,7 +23,7 @@ public abstract class EqualSumGridPartition1TestsBase<T> where T : IEqualSumGrid
         bool expectedResult)
     {
         // Arrange
-        var grid = JsonHelper<int[][]>.Parse(gridJson);
+        var grid = JsonHelper.Parse<int[][]>(gridJson);
 
         var solution = new T();
 

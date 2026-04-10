@@ -23,8 +23,8 @@ public abstract class SummaryRangesTestsBase<T> where T : ISummaryRanges, new()
         string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
-        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
+        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
 
         var solution = new T();
 

@@ -25,7 +25,7 @@ public abstract class NumberOfGoodLeafNodesPairsTestsBase<T> where T : INumberOf
         int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
+        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();

@@ -25,7 +25,7 @@ public abstract class MaximumNumberOfIntegersToChooseFromRange1TestsBase<T>
         int expectedResult)
     {
         // Arrange
-        var banned = JsonHelper<int[]>.Parse(bannedJson);
+        var banned = JsonHelper.Parse<int[]>(bannedJson);
 
         var solution = new T();
 

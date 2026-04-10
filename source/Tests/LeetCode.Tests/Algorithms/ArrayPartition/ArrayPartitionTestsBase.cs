@@ -23,7 +23,7 @@ public abstract class ArrayPartitionTestsBase<T> where T : IArrayPartition, new(
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

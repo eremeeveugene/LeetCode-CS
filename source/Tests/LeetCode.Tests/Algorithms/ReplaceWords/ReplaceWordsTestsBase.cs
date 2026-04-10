@@ -27,7 +27,7 @@ public abstract class ReplaceWordsTestsBase<T> where T : IReplaceWords, new()
         string sentence, string expectedResult)
     {
         // Arrange
-        var dictionaryArray = JsonHelper<string[]>.Parse(dictionaryJson);
+        var dictionaryArray = JsonHelper.Parse<string[]>(dictionaryJson);
 
         var solution = new T();
 

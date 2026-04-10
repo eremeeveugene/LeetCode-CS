@@ -24,7 +24,7 @@ public abstract class FizzBuzzTestsBase<T> where T : IFizzBuzz, new()
     public void FizzBuzz_WithPositiveIntegerN_ReturnsSequenceWithFizzBuzzRulesApplied(int n, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
 
         var solution = new T();
 

@@ -29,9 +29,9 @@ public abstract class DesignHashSetTestsBase<T> where T : IDesignHashSet, new()
         string argumentsJson, string expectedResultJson)
     {
         // Arrange
-        var operations = JsonHelper<string[]>.Parse(operationsJson);
-        var arguments = JsonHelper<int[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<bool[]>.Parse(expectedResultJson);
+        var operations = JsonHelper.Parse<string[]>(operationsJson);
+        var arguments = JsonHelper.Parse<int[][]>(argumentsJson);
+        var expectedResult = JsonHelper.Parse<bool[]>(expectedResultJson);
 
         var solution = new T();
 

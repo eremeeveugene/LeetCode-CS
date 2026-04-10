@@ -24,7 +24,7 @@ public abstract class FindCenterOfStarGraphTestsBase<T> where T : IFindCenterOfS
         // Arrange
         var solution = new T();
 
-        var edges = JsonHelper<int[][]>.Parse(edgesJson);
+        var edges = JsonHelper.Parse<int[][]>(edgesJson);
 
         // Act
         var actualResult = solution.FindCenter(edges);

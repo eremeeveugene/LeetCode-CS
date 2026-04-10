@@ -24,7 +24,7 @@ public abstract class TaskSchedulerTestsBase<T> where T : ITaskScheduler, new()
         int expectedResult)
     {
         // Arrange
-        var tasks = JsonHelper<char[]>.Parse(tasksJson);
+        var tasks = JsonHelper.Parse<char[]>(tasksJson);
 
         var solution = new T();
 

@@ -10,63 +10,233 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.InsertDeleteGetRandom;
-using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.InsertDeleteGetRandom;
 
 public abstract class InsertDeleteGetRandomTestsBase<T> where T : IInsertDeleteGetRandom, new()
 {
-    private const string Insert = "insert";
-    private const string Remove = "remove";
-    private const string GetRandom = "getRandom";
-
     [TestMethod]
-    [DataRow(
-        "[\"insert\", \"remove\", \"insert\", \"getRandom\", \"remove\", \"insert\", \"getRandom\", \"remove\", \"remove\", \"insert\", \"getRandom\"]",
-        "[[1], [2], [2], [], [1], [2], [], [1], [2], [3], []]",
-        "[true, false, true, [1,2], true, false, [2], false, true, true, [3]]")]
+    [DynamicData(nameof(GetScenarios))]
     public void InsertDeleteGetRandom_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        string methodsJson, string argumentsJson, string expectedResultJson)
+        IScenario<IInsertDeleteGetRandom> scenario)
     {
         // Arrange
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
         var solution = new T();
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case Insert:
-                    actualResult.Add(solution.Insert((int)arguments[i][0]));
-                    break;
-                case Remove:
-                    actualResult.Add(solution.Remove((int)arguments[i][0]));
-                    break;
-                case GetRandom:
-                    actualResult.Add(solution.GetRandom());
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
-        for (var i = 0; i < expectedResult.Length; i++)
+        CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<IScenario<IInsertDeleteGetRandom>[]> GetScenarios()
+    {
+        yield return
+        [
+            new Scenario<IInsertDeleteGetRandom>(
+                [
+                    new InsertOperation(1),
+                    new RemoveOperation(2),
+                    new InsertOperation(2),
+                    new GetRandomOperation(),
+                    new RemoveOperation(1),
+                    new InsertOperation(2),
+                    new GetRandomOperation(),
+                    new RemoveOperation(1),
+                    new RemoveOperation(2),
+                    new InsertOperation(3),
+                    new GetRandomOperation()
+                ],
+                [
+                    new InsertOperation.Result(true),
+                    new RemoveOperation.Result(false),
+                    new InsertOperation.Result(true),
+                    new GetRandomOperation.Result([1, 2]),
+                    new RemoveOperation.Result(true),
+                    new InsertOperation.Result(false),
+                    new GetRandomOperation.Result([2]),
+                    new RemoveOperation.Result(false),
+                    new RemoveOperation.Result(true),
+                    new InsertOperation.Result(true),
+                    new GetRandomOperation.Result([3])
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IInsertDeleteGetRandom>(
+                [
+                    new InsertOperation(5),
+                    new InsertOperation(5),
+                    new GetRandomOperation()
+                ],
+                [
+                    new InsertOperation.Result(true),
+                    new InsertOperation.Result(false),
+                    new GetRandomOperation.Result([5])
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IInsertDeleteGetRandom>(
+                [
+                    new InsertOperation(1),
+                    new RemoveOperation(99),
+                    new GetRandomOperation()
+                ],
+                [
+                    new InsertOperation.Result(true),
+                    new RemoveOperation.Result(false),
+                    new GetRandomOperation.Result([1])
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IInsertDeleteGetRandom>(
+                [
+                    new InsertOperation(42),
+                    new GetRandomOperation(),
+                    new GetRandomOperation()
+                ],
+                [
+                    new InsertOperation.Result(true),
+                    new GetRandomOperation.Result([42]),
+                    new GetRandomOperation.Result([42])
+                ])
+        ];
+    }
+
+    private sealed class InsertOperation : IOperation<IInsertDeleteGetRandom>
+    {
+        private readonly int _value;
+
+        public InsertOperation(int value)
         {
-            if (expectedResult[i] is object[] validOptions)
+            _value = value;
+        }
+
+        public IOperationResult Execute(IInsertDeleteGetRandom insertDeleteGetRandom)
+        {
+            var result = insertDeleteGetRandom.Insert(_value);
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _inserted;
+
+            public Result(bool inserted)
             {
-                Assert.IsTrue(validOptions.Contains(actualResult[i]));
+                _inserted = inserted;
             }
-            else
+
+            public bool Equals(Result? other)
             {
-                Assert.AreEqual(expectedResult[i], actualResult[i]);
+                return other is not null && _inserted == other._inserted;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_inserted);
+            }
+        }
+    }
+
+    private sealed class RemoveOperation : IOperation<IInsertDeleteGetRandom>
+    {
+        private readonly int _value;
+
+        public RemoveOperation(int value)
+        {
+            _value = value;
+        }
+
+        public IOperationResult Execute(IInsertDeleteGetRandom insertDeleteGetRandom)
+        {
+            var result = insertDeleteGetRandom.Remove(_value);
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _removed;
+
+            public Result(bool removed)
+            {
+                _removed = removed;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _removed == other._removed;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_removed);
+            }
+        }
+    }
+
+    private sealed class GetRandomOperation : IOperation<IInsertDeleteGetRandom>
+    {
+        public IOperationResult Execute(IInsertDeleteGetRandom insertDeleteGetRandom)
+        {
+            var value = insertDeleteGetRandom.GetRandom();
+
+            return new Result([value]);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly int[] _validOptions;
+
+            public Result(int[] validOptions)
+            {
+                _validOptions = validOptions;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && other._validOptions.Any(o => _validOptions.Contains(o));
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return 0;
             }
         }
     }

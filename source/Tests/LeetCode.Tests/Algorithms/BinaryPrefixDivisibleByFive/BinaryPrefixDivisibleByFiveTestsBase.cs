@@ -22,8 +22,8 @@ public abstract class BinaryPrefixDivisibleByFiveTestsBase<T> where T : IBinaryP
     public void PrefixesDivBy5_WithNumsArray_ReturnsTrueIfPrefixDivisibleBy5(string numsJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
-        var expectedResult = JsonHelper<bool[]>.Parse(expectedResultJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
+        var expectedResult = JsonHelper.Parse<bool[]>(expectedResultJson);
 
         var solution = new T();
 

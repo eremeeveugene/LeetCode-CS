@@ -10,51 +10,33 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignBrowserHistory;
-using LeetCode.Core.Helpers;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.DesignBrowserHistory;
 
 public abstract class DesignBrowserHistoryTestsBase
 {
-    private const string Visit = "visit";
-    private const string Back = "back";
-    private const string Forward = "forward";
-
     [TestMethod]
-    [DataRow("leetcode.com",
-        "[\"visit\",\"visit\",\"visit\",\"back\",\"back\",\"forward\",\"visit\",\"forward\",\"back\",\"back\"]",
-        "[[\"google.com\"],[\"facebook.com\"],[\"youtube.com\"],[1],[1],[1],[\"linkedin.com\"],[2],[2],[7]]",
-        "[\"facebook.com\",\"google.com\",\"facebook.com\",\"linkedin.com\",\"google.com\",\"leetcode.com\"]")]
-    public void DesignBrowserHistory_WithMixedOperations_ProcessesOperationsAccordingToSpecification(string homepage,
-        string methodsJson, string argumentsJson, string expectedResultJson)
+    [DynamicData(nameof(GetScenarios))]
+    public void DesignBrowserHistory_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        BrowserHistoryScenario scenario)
     {
         // Arrange
-        var methods = JsonHelper<string[]>.Parse(methodsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
-        var solution = GetSolution(homepage);
+        var solution = GetSolution(scenario.Homepage);
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case Visit:
-                    solution.Visit((string)arguments[i][0]);
-                    break;
-                case Back:
-                    actualResult.Add(solution.Back((int)arguments[i][0]));
-                    break;
-                case Forward:
-                    actualResult.Add(solution.Forward((int)arguments[i][0]));
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
@@ -62,4 +44,192 @@ public abstract class DesignBrowserHistoryTestsBase
     }
 
     protected abstract IDesignBrowserHistory GetSolution(string homepage);
+
+    private static IEnumerable<BrowserHistoryScenario[]> GetScenarios()
+    {
+        yield return
+        [
+            new BrowserHistoryScenario("leetcode.com",
+                [
+                    new VisitOperation("google.com"),
+                    new VisitOperation("facebook.com"),
+                    new VisitOperation("youtube.com"),
+                    new BackOperation(1),
+                    new BackOperation(1),
+                    new ForwardOperation(1),
+                    new VisitOperation("linkedin.com"),
+                    new ForwardOperation(2),
+                    new BackOperation(2),
+                    new BackOperation(7)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new NavigateOperation.Result("facebook.com"),
+                    new NavigateOperation.Result("google.com"),
+                    new NavigateOperation.Result("facebook.com"),
+                    VoidOperationResult.Instance,
+                    new NavigateOperation.Result("linkedin.com"),
+                    new NavigateOperation.Result("google.com"),
+                    new NavigateOperation.Result("leetcode.com")
+                ])
+        ];
+
+        yield return
+        [
+            new BrowserHistoryScenario("home.com",
+                [
+                    new BackOperation(1),
+                    new ForwardOperation(1)
+                ],
+                [
+                    new NavigateOperation.Result("home.com"),
+                    new NavigateOperation.Result("home.com")
+                ])
+        ];
+
+        yield return
+        [
+            new BrowserHistoryScenario("home.com",
+                [
+                    new VisitOperation("a.com"),
+                    new VisitOperation("b.com"),
+                    new BackOperation(1),
+                    new VisitOperation("c.com"),
+                    new ForwardOperation(1),
+                    new BackOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new NavigateOperation.Result("a.com"),
+                    VoidOperationResult.Instance,
+                    new NavigateOperation.Result("c.com"),
+                    new NavigateOperation.Result("a.com")
+                ])
+        ];
+
+        yield return
+        [
+            new BrowserHistoryScenario("home.com",
+                [
+                    new VisitOperation("a.com"),
+                    new VisitOperation("b.com"),
+                    new BackOperation(2),
+                    new ForwardOperation(10)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new NavigateOperation.Result("home.com"),
+                    new NavigateOperation.Result("b.com")
+                ])
+        ];
+
+        yield return
+        [
+            new BrowserHistoryScenario("home.com",
+                [
+                    new VisitOperation("a.com"),
+                    new BackOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    new NavigateOperation.Result("home.com")
+                ])
+        ];
+    }
+
+    public sealed class BrowserHistoryScenario : Scenario<IDesignBrowserHistory>
+    {
+        public BrowserHistoryScenario(string homepage, IOperation<IDesignBrowserHistory>[] operations,
+            IOperationResult[] operationResults) : base(operations, operationResults)
+        {
+            Homepage = homepage;
+        }
+
+        public string Homepage { get; }
+    }
+
+    private sealed class VisitOperation : IOperation<IDesignBrowserHistory>
+    {
+        private readonly string _url;
+
+        public VisitOperation(string url)
+        {
+            _url = url;
+        }
+
+        public IOperationResult Execute(IDesignBrowserHistory designBrowserHistory)
+        {
+            designBrowserHistory.Visit(_url);
+
+            return VoidOperationResult.Instance;
+        }
+    }
+
+    protected abstract class NavigateOperation : IOperation<IDesignBrowserHistory>
+    {
+        public abstract IOperationResult Execute(IDesignBrowserHistory designBrowserHistory);
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly string? _url;
+
+            public Result(string? url)
+            {
+                _url = url;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _url == other._url;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_url);
+            }
+        }
+    }
+
+    private sealed class BackOperation : NavigateOperation
+    {
+        private readonly int _steps;
+
+        public BackOperation(int steps)
+        {
+            _steps = steps;
+        }
+
+        public override IOperationResult Execute(IDesignBrowserHistory designBrowserHistory)
+        {
+            var url = designBrowserHistory.Back(_steps);
+
+            return new Result(url);
+        }
+    }
+
+    private sealed class ForwardOperation : NavigateOperation
+    {
+        private readonly int _steps;
+
+        public ForwardOperation(int steps)
+        {
+            _steps = steps;
+        }
+
+        public override IOperationResult Execute(IDesignBrowserHistory designBrowserHistory)
+        {
+            var url = designBrowserHistory.Forward(_steps);
+
+            return new Result(url);
+        }
+    }
 }

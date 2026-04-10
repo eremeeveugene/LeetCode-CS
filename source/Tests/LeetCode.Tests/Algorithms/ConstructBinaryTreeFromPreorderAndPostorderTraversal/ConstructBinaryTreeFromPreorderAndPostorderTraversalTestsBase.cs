@@ -26,9 +26,9 @@ public abstract class ConstructBinaryTreeFromPreorderAndPostorderTraversalTestsB
         string postorderJson, string expectedResultJson)
     {
         // Arrange
-        var preorder = JsonHelper<int[]>.Parse(preorderJson);
-        var postorder = JsonHelper<int[]>.Parse(postorderJson);
-        var expectedResultArray = JsonHelper<int?[]>.Parse(expectedResultJson);
+        var preorder = JsonHelper.Parse<int[]>(preorderJson);
+        var postorder = JsonHelper.Parse<int[]>(postorderJson);
+        var expectedResultArray = JsonHelper.Parse<int?[]>(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();

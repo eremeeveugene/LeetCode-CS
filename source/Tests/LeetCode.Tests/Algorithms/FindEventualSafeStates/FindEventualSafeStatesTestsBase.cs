@@ -23,8 +23,8 @@ public abstract class FindEventualSafeStatesTestsBase<T> where T : IFindEventual
         string graphJson, string expectedResultJson)
     {
         // Arrange
-        var graph = JsonHelper<int[][]>.Parse(graphJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var graph = JsonHelper.Parse<int[][]>(graphJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

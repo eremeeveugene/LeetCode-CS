@@ -25,9 +25,9 @@ public abstract class SameTreeTestsBase<T> where T : ISameTree, new()
         string qJson, bool expectedResult)
     {
         // Arrange
-        var pArray = JsonHelper<int?[]>.Parse(pJson);
+        var pArray = JsonHelper.Parse<int?[]>(pJson);
         var p = TreeNode.ToTreeNode(pArray);
-        var qArray = JsonHelper<int?[]>.Parse(qJson);
+        var qArray = JsonHelper.Parse<int?[]>(qJson);
         var q = TreeNode.ToTreeNode(qArray);
 
         var solution = new T();

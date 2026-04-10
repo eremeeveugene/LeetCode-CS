@@ -24,8 +24,8 @@ public abstract class SplitStringsBySeparatorTestsBase<T> where T : ISplitString
         string wordsJson, char separator, string expectedResultJson)
     {
         // Arrange
-        var words = JsonHelper<string[]>.Parse(wordsJson);
-        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
+        var words = JsonHelper.Parse<string[]>(wordsJson);
+        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
 
         var solution = new T();
 

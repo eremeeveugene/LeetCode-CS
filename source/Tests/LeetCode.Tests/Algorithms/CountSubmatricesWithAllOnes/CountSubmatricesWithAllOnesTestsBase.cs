@@ -22,7 +22,7 @@ public abstract class CountSubmatricesWithAllOnesTestsBase<T> where T : ICountSu
     public void NumSubmat_WithBinaryMatrix_ReturnsCountOfAllOneSubmatrices(string matJson, int expectedResult)
     {
         // Arrange
-        var mat = JsonHelper<int[][]>.Parse(matJson);
+        var mat = JsonHelper.Parse<int[][]>(matJson);
 
         var solution = new T();
 

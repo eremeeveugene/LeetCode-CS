@@ -22,7 +22,7 @@ public abstract class TrionicArray1TestsBase<T> where T : ITrionicArray1, new()
     public void IsTrionic_WithNumsArray_ReturnsTrueIfTrionic(string numsJson, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

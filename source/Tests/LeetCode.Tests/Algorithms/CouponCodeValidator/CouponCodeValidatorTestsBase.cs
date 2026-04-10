@@ -25,10 +25,10 @@ public abstract class CouponCodeValidatorTestsBase<T> where T : ICouponCodeValid
         string businessLineJson, string isActiveJson, string expectedResultJson)
     {
         // Arrange
-        var code = JsonHelper<string[]>.Parse(codeJson);
-        var businessLine = JsonHelper<string[]>.Parse(businessLineJson);
-        var isActive = JsonHelper<bool[]>.Parse(isActiveJson);
-        var expectedResult = JsonHelper<string[]>.Parse(expectedResultJson);
+        var code = JsonHelper.Parse<string[]>(codeJson);
+        var businessLine = JsonHelper.Parse<string[]>(businessLineJson);
+        var isActive = JsonHelper.Parse<bool[]>(isActiveJson);
+        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
 
         var solution = new T();
 

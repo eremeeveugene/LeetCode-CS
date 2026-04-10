@@ -23,7 +23,7 @@ public abstract class CheckIfArrayIsSortedAndRotatedTestsBase<T> where T : IChec
     public void Check_GivenNums_ReturnsIfSortedOrRotated(string numsJson, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

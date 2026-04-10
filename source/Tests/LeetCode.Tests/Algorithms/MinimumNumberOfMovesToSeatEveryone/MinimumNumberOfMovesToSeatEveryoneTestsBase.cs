@@ -25,8 +25,8 @@ public abstract class MinimumNumberOfMovesToSeatEveryoneTestsBase<T>
         string studentsJson, int expectedResult)
     {
         // Arrange
-        var seats = JsonHelper<int[]>.Parse(seatsJson);
-        var students = JsonHelper<int[]>.Parse(studentsJson);
+        var seats = JsonHelper.Parse<int[]>(seatsJson);
+        var students = JsonHelper.Parse<int[]>(studentsJson);
 
         var solution = new T();
 

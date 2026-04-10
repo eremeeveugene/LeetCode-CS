@@ -25,7 +25,7 @@ public abstract class FindIfPathExistsInGraphTestsBase<T> where T : IFindIfPathE
         // Arrange
         var solution = new T();
 
-        var edges = JsonHelper<int[][]>.Parse(edgesJson);
+        var edges = JsonHelper.Parse<int[][]>(edgesJson);
 
         // Act
         var actualResult = solution.ValidPath(n, edges, source, destination);

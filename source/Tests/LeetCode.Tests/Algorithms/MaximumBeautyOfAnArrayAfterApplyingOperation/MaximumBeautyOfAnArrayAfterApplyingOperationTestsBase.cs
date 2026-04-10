@@ -23,7 +23,7 @@ public abstract class MaximumBeautyOfAnArrayAfterApplyingOperationTestsBase<T>
     public void MaximumBeauty_WithArrayAndK_ReturnsMaximizedBeauty(string numsJson, int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

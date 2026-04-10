@@ -25,8 +25,8 @@ public abstract class LargestLocalValuesInMatrixTestsBase<T> where T : ILargestL
         // Arrange
         var solution = new T();
 
-        var grid = JsonHelper<int[][]>.Parse(gridJson);
-        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
+        var grid = JsonHelper.Parse<int[][]>(gridJson);
+        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
 
         // Act
         var actualResult = solution.LargestLocal(grid);

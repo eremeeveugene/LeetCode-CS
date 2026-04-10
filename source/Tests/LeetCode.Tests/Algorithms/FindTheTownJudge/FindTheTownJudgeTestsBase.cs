@@ -27,7 +27,7 @@ public abstract class FindTheTownJudgeTestsBase<T> where T : IFindTheTownJudge, 
         // Arrange
         var solution = new T();
 
-        var trust = JsonHelper<int[][]>.Parse(jsonTrust);
+        var trust = JsonHelper.Parse<int[][]>(jsonTrust);
 
         // Act
         var actualResult = solution.FindJudge(n, trust);

@@ -26,8 +26,8 @@ public abstract class NaryTreeLevelOrderTraversalTestsBase<T> where T : INaryTre
     public void LevelOrder_WithNaryTree_ReturnsNodeValuesByLevel(string rootJson, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<IList<IList<int>>>.Parse(expectedResultJson);
-        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
+        var expectedResult = JsonHelper.Parse<IList<IList<int>>>(expectedResultJson);
+        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = Node.ToNode(rootArray);
 
         var solution = new T();

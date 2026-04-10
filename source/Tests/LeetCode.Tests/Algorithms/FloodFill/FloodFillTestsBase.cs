@@ -24,8 +24,8 @@ public abstract class FloodFillTestsBase<T> where T : IFloodFill, new()
         int color, string expectedResultJson)
     {
         // Arrange
-        var image = JsonHelper<int[][]>.Parse(imageJson);
-        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
+        var image = JsonHelper.Parse<int[][]>(imageJson);
+        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
 
         var solution = new T();
 

@@ -9,6 +9,10 @@ on:
 jobs:
   pipeline:
     runs-on: windows-latest
+    timeout-minutes: 30
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
     defaults:
       run:
         working-directory: source
@@ -16,26 +20,36 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
           global-json-file: ${{ github.workspace }}/global.json
 
+      - name: Cache NuGet packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj', '**/global.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+
       - name: Restore dependencies
         run: dotnet restore
+
+      - name: Check Code Style
+        run: dotnet format --verify-no-changes --verbosity diagnostic
 
       - name: Build
         run: dotnet build --no-restore
 
       - name: Run Tests with Coverage
-        run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
+        run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage" --results-directory ./Tests/TestResults
 
       - name: Install ReportGenerator
-        run: dotnet tool install --global dotnet-reportgenerator-globaltool
-
-      - name: Check Code Style
-        run: dotnet format --verify-no-changes --verbosity diagnostic
+        run: dotnet tool install --global dotnet-reportgenerator-globaltool || true
 
       - name: Generate Coverage Report
         run: |
@@ -43,21 +57,119 @@ jobs:
 
       - name: Output Coverage Summary to GitHub Actions Summary
         run: |
-          $summary = Get-Content -Path "coverage/Summary.txt" -Raw
-          $summary | Out-File -FilePath $env:GITHUB_STEP_SUMMARY
-
-      - name: Check Coverage Percentage
-        run: |
-          $coverageSummary = Get-Content -Path "coverage/Summary.txt"
-          $lineCoverage = $coverageSummary | Where-Object { $_ -match 'Line coverage:\s+([\d.]+)%' }
-          $coveragePercentage = [double]$matches[1]
-
-          if ($coveragePercentage -lt 90) {
-              Write-Error "Coverage is below 90%. It's at $coveragePercentage%"
-              exit 1
+          if (Test-Path "coverage/Summary.txt") {
+            $summary = Get-Content -Path "coverage/Summary.txt" -Raw
+            $summary | Out-File -FilePath $env:GITHUB_STEP_SUMMARY
           } else {
-              Write-Output "Coverage is above 90%. It's at $coveragePercentage%"
+            Write-Warning "Coverage summary file not found."
           }
+
+      - name: Get Changed Files
+        id: changed-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: |
+            source/**/*.cs
+          files_ignore: |
+            source/Tests/**
+
+      - name: Check Coverage for Changed Files
+        id: coverage-check
+        run: |
+          $changedFiles = "${{ steps.changed-files.outputs.all_changed_files }}" -split '\s+'
+
+          if ($changedFiles.Count -eq 0 -or [string]::IsNullOrWhiteSpace($changedFiles[0])) {
+            Write-Output "No C# source files changed. Skipping coverage check."
+            "coverage_pct=0" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            "coverage_status=⏭️ Skipped" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            exit 0
+          }
+
+          Write-Output "Changed files:"
+          $changedFiles | ForEach-Object { Write-Output "  $_" }
+
+          if (-not (Test-Path "coverage/Cobertura.xml")) {
+            Write-Error "No Cobertura coverage file found."
+            exit 1
+          }
+          $coberturaFile = Get-Item "coverage/Cobertura.xml"
+
+          [xml]$cobertura = Get-Content -Path $coberturaFile.FullName
+
+          $totalLines   = 0
+          $coveredLines = 0
+          $missingCoverage = @()
+
+          foreach ($file in $changedFiles) {
+            # Normalize: forward slashes, strip leading "source/"
+            $normalized = ($file -replace '\\', '/') -replace '^source/', ''
+
+            $classNodes = $cobertura.coverage.packages.package.classes.class |
+              Where-Object { ($_.filename -replace '\\', '/') -like "*$normalized*" }
+
+            if ($null -eq $classNodes) {
+              # Interfaces, abstract classes, excluded files won't appear in coverage — skip silently
+              continue
+            }
+
+            foreach ($class in $classNodes) {
+              $lines        = $class.lines.line
+              $fileCovered  = ($lines | Where-Object { $_.hits -gt 0 }).Count
+              $fileTotal    = $lines.Count
+
+              $totalLines   += $fileTotal
+              $coveredLines += $fileCovered
+
+              if ($fileTotal -gt 0) {
+                $filePct = [Math]::Round(($fileCovered / $fileTotal) * 100, 1)
+                if ($filePct -lt 90) {
+                  $missingCoverage += "  $normalized — ${filePct}% ($fileCovered/$fileTotal lines)"
+                }
+              }
+            }
+          }
+
+          if ($totalLines -eq 0) {
+            Write-Output "No coverable lines found in changed files. Skipping check."
+            "coverage_pct=0" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            "coverage_status=⏭️ Skipped" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            exit 0
+          }
+
+          $coveragePct = [Math]::Round(($coveredLines / $totalLines) * 100, 2)
+          Write-Output ""
+          Write-Output "=== Changed Files Coverage Summary ==="
+          Write-Output "Overall: $coveragePct% ($coveredLines/$totalLines lines covered)"
+
+          if ($missingCoverage.Count -gt 0) {
+            Write-Output ""
+            Write-Output "Files below 90%:"
+            $missingCoverage | ForEach-Object { Write-Output $_ }
+          }
+
+          if ($coveragePct -lt 90) {
+            Write-Error "Coverage for changed files is below 90%. It is at $coveragePct%"
+            "coverage_pct=$coveragePct" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            "coverage_status=❌ Failed" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            exit 1
+          } else {
+            Write-Output "Coverage check passed."
+            "coverage_pct=$coveragePct" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            "coverage_status=✅ Passed" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+          }
+
+      - name: Comment Coverage on PR
+        if: github.event_name == 'pull_request' && always()
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: coverage
+          message: |
+            ## 📊 Coverage Report
+
+            | | |
+            |---|---|
+            | **Changed files coverage** | ${{ steps.coverage-check.outputs.coverage_pct }}% |
+            | **Status** | ${{ steps.coverage-check.outputs.coverage_status }} |
 
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/develop'

@@ -23,7 +23,7 @@ public abstract class LargestTriangleAreaTestsBase<T> where T : ILargestTriangle
         double expectedResult)
     {
         // Arrange
-        var points = JsonHelper<int[][]>.Parse(pointsJson);
+        var points = JsonHelper.Parse<int[][]>(pointsJson);
 
         var solution = new T();
 

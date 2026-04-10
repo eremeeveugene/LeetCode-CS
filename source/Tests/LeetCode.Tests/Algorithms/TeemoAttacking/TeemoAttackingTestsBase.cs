@@ -23,7 +23,7 @@ public abstract class TeemoAttackingTestsBase<T> where T : ITeemoAttacking, new(
         int duration, int expectedResult)
     {
         // Arrange
-        var timeSeries = JsonHelper<int[]>.Parse(timeSeriesJson);
+        var timeSeries = JsonHelper.Parse<int[]>(timeSeriesJson);
 
         var solution = new T();
 

@@ -23,7 +23,7 @@ public abstract class CountingWordsWithGivenPrefixTestsBase<T> where T : ICounti
         int expectedResult)
     {
         // Arrange
-        var words = JsonHelper<string[]>.Parse(wordsJson);
+        var words = JsonHelper.Parse<string[]>(wordsJson);
 
         var solution = new T();
 

@@ -28,9 +28,9 @@ public abstract class RemoveLinkedListElementsTestsBase<T> where T : IRemoveLink
         string expectedResultJson)
     {
         // Arrange
-        var headArray = JsonHelper<int[]>.Parse(headJson);
+        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper<int[]>.Parse(expectedResultJson);
+        var expectedResultArray = JsonHelper.Parse<int[]>(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

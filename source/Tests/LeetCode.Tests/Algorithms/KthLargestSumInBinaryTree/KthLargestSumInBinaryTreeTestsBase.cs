@@ -24,7 +24,7 @@ public abstract class KthLargestSumInBinaryTreeTestsBase<T> where T : IKthLarges
         long expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
+        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();

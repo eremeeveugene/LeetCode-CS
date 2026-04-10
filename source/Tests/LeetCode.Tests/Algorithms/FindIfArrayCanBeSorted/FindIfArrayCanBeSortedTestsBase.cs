@@ -24,7 +24,7 @@ public abstract class FindIfArrayCanBeSortedTestsBase<T> where T : IFindIfArrayC
         bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

@@ -23,8 +23,8 @@ public abstract class SetMatrixZeroesTestsBase<T> where T : ISetMatrixZeroes, ne
         string expectedResultJson)
     {
         // Arrange
-        var matrix = JsonHelper<int[][]>.Parse(matrixJson);
-        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
+        var matrix = JsonHelper.Parse<int[][]>(matrixJson);
+        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
 
         var solution = new T();
 

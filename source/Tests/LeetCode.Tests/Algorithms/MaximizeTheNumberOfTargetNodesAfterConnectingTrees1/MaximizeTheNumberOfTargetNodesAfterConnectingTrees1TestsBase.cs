@@ -24,9 +24,9 @@ public abstract class MaximizeTheNumberOfTargetNodesAfterConnectingTrees1TestsBa
         string edges2Json, int k, string expectedResultJson)
     {
         // Arrange
-        var edges1 = JsonHelper<int[][]>.Parse(edges1Json);
-        var edges2 = JsonHelper<int[][]>.Parse(edges2Json);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var edges1 = JsonHelper.Parse<int[][]>(edges1Json);
+        var edges2 = JsonHelper.Parse<int[][]>(edges2Json);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

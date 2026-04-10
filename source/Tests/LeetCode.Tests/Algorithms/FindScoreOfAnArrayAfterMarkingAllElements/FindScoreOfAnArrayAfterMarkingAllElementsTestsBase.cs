@@ -23,7 +23,7 @@ public abstract class FindScoreOfAnArrayAfterMarkingAllElements1<T>
     public void FindScore_WithIntegerArray_ReturnsScore(string numsJson, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

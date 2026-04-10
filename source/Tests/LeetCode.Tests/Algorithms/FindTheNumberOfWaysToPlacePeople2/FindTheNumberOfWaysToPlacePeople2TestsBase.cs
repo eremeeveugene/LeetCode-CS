@@ -27,7 +27,7 @@ public abstract class FindTheNumberOfWaysToPlacePeople2TestsBase<T> where T : IF
         int expectedResult)
     {
         // Arrange
-        var points = JsonHelper<int[][]>.Parse(pointsJson);
+        var points = JsonHelper.Parse<int[][]>(pointsJson);
 
         var solution = new T();
 

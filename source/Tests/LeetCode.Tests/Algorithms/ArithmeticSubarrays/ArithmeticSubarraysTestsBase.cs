@@ -28,10 +28,10 @@ public abstract class ArithmeticSubarraysTestsBase<T> where T : IArithmeticSubar
         string lJson, string rJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
-        var l = JsonHelper<int[]>.Parse(lJson);
-        var r = JsonHelper<int[]>.Parse(rJson);
-        var expectedResult = JsonHelper<bool[]>.Parse(expectedResultJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
+        var l = JsonHelper.Parse<int[]>(lJson);
+        var r = JsonHelper.Parse<int[]>(rJson);
+        var expectedResult = JsonHelper.Parse<bool[]>(expectedResultJson);
 
         var solution = new T();
 

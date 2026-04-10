@@ -27,8 +27,8 @@ public abstract class RotatingTheBoxTestsBase<T> where T : IRotatingTheBox, new(
         string expectedResultJson)
     {
         // Arrange
-        var box = JsonHelper<char[][]>.Parse(boxJson);
-        var expectedResult = JsonHelper<char[][]>.Parse(expectedResultJson);
+        var box = JsonHelper.Parse<char[][]>(boxJson);
+        var expectedResult = JsonHelper.Parse<char[][]>(expectedResultJson);
 
         var solution = new T();
 

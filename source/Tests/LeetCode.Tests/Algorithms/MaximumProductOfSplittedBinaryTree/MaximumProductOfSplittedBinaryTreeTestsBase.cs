@@ -25,7 +25,7 @@ public abstract class MaximumProductOfSplittedBinaryTreeTestsBase<T>
         int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
+        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();

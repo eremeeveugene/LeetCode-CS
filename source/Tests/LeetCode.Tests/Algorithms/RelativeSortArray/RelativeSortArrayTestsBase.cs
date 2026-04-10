@@ -23,9 +23,9 @@ public abstract class RelativeSortArrayTestsBase<T> where T : IRelativeSortArray
         string arr1Json, string arr2Json, string expectedResultJson)
     {
         // Arrange
-        var arr1 = JsonHelper<int[]>.Parse(arr1Json);
-        var arr2 = JsonHelper<int[]>.Parse(arr2Json);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var arr1 = JsonHelper.Parse<int[]>(arr1Json);
+        var arr2 = JsonHelper.Parse<int[]>(arr2Json);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

@@ -25,7 +25,7 @@ public abstract class FindSmallestLetterGreaterThanTargetTestsBase<T>
         string lettersJson, char target, char expectedResult)
     {
         // Arrange
-        var letters = JsonHelper<char[]>.Parse(lettersJson);
+        var letters = JsonHelper.Parse<char[]>(lettersJson);
 
         var solution = new T();
 

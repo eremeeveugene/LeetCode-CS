@@ -10,61 +10,33 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SimpleBankSystem;
-using LeetCode.Core.Helpers;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.SimpleBankSystem;
 
 public abstract class SimpleBankSystemTestsBase
 {
-    private const string Transfer = "transfer";
-    private const string Deposit = "deposit";
-    private const string Withdraw = "withdraw";
-
     [TestMethod]
-    [DataRow("[10, 100, 20, 50, 30]",
-        "[\"withdraw\", \"transfer\", \"deposit\", \"transfer\", \"withdraw\"]",
-        "[[3, 10], [5, 1, 20], [5, 20], [3, 4, 15], [10, 50]]",
-        "[true, true, true, false, false]")]
-    public void SimpleBankSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(string balanceJson,
-        string operationsJson, string argumentsJson, string expectedResultJson)
+    [DynamicData(nameof(GetScenarios))]
+    public void SimpleBankSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        BankSystemScenario scenario)
     {
         // Arrange
-        var balance = JsonHelper<long[]>.Parse(balanceJson);
-        var operations = JsonHelper<string[]>.Parse(operationsJson);
-        var arguments = JsonHelper<object[][]>.Parse(argumentsJson);
-        var expectedResult = JsonHelper<object[]>.Parse(expectedResultJson);
+        var expectedResult = scenario.OperationResults;
 
-        var solution = GetSolution(balance);
+        var solution = GetSolution(scenario.Balance);
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < operations.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (operations[i])
-            {
-                case Transfer:
-                    var transferResult = solution.Transfer((int)arguments[i][0], (int)arguments[i][1],
-                        (int)arguments[i][2]);
+            var operation = operations[i];
 
-                    actualResult.Add(transferResult);
-
-                    break;
-                case Deposit:
-                    var depositResult = solution.Deposit((int)arguments[i][0], (int)arguments[i][1]);
-
-                    actualResult.Add(depositResult);
-
-                    break;
-                case Withdraw:
-                    var withdrawResult = solution.Withdraw((int)arguments[i][0], (int)arguments[i][1]);
-
-                    actualResult.Add(withdrawResult);
-
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException($"Unexpected operation '{operations[i]}' at index {i}.");
-            }
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
@@ -72,4 +44,228 @@ public abstract class SimpleBankSystemTestsBase
     }
 
     protected abstract ISimpleBankSystem GetSolution(long[] balance);
+
+    private static IEnumerable<BankSystemScenario[]> GetScenarios()
+    {
+        yield return
+        [
+            new BankSystemScenario([10, 100, 20, 50, 30],
+                [
+                    new WithdrawOperation(3, 10),
+                    new TransferOperation(5, 1, 20),
+                    new DepositOperation(5, 20),
+                    new TransferOperation(3, 4, 15),
+                    new WithdrawOperation(5, 50)
+                ],
+                [
+                    new WithdrawOperation.Result(true),
+                    new TransferOperation.Result(true),
+                    new DepositOperation.Result(true),
+                    new TransferOperation.Result(false),
+                    new WithdrawOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new BankSystemScenario([50],
+                [
+                    new WithdrawOperation(1, 100),
+                    new WithdrawOperation(1, 50)
+                ],
+                [
+                    new WithdrawOperation.Result(false),
+                    new WithdrawOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new BankSystemScenario([10, 20],
+                [
+                    new TransferOperation(1, 2, 50),
+                    new TransferOperation(2, 1, 10)
+                ],
+                [
+                    new TransferOperation.Result(false),
+                    new TransferOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new BankSystemScenario([10],
+                [
+                    new WithdrawOperation(1, 50),
+                    new DepositOperation(1, 100),
+                    new WithdrawOperation(1, 50)
+                ],
+                [
+                    new WithdrawOperation.Result(false),
+                    new DepositOperation.Result(true),
+                    new WithdrawOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new BankSystemScenario([100, 200],
+                [
+                    new WithdrawOperation(3, 10),
+                    new DepositOperation(1, 10),
+                    new TransferOperation(1, 3, 10)
+                ],
+                [
+                    new WithdrawOperation.Result(false),
+                    new DepositOperation.Result(true),
+                    new TransferOperation.Result(false)
+                ])
+        ];
+    }
+
+
+    public sealed class BankSystemScenario : Scenario<ISimpleBankSystem>
+    {
+        public BankSystemScenario(long[] balance, IOperation<ISimpleBankSystem>[] operations,
+            IOperationResult[] operationResults) : base(operations, operationResults)
+        {
+            Balance = balance;
+        }
+
+        public long[] Balance { get; }
+    }
+
+    private sealed class TransferOperation : IOperation<ISimpleBankSystem>
+    {
+        private readonly int _account1;
+        private readonly int _account2;
+        private readonly long _money;
+
+        public TransferOperation(int account1, int account2, long money)
+        {
+            _account1 = account1;
+            _account2 = account2;
+            _money = money;
+        }
+
+        public IOperationResult Execute(ISimpleBankSystem simpleBankSystem)
+        {
+            var result = simpleBankSystem.Transfer(_account1, _account2, _money);
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _success;
+
+            public Result(bool success)
+            {
+                _success = success;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _success == other._success;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_success);
+            }
+        }
+    }
+
+    private sealed class DepositOperation : IOperation<ISimpleBankSystem>
+    {
+        private readonly int _account;
+        private readonly long _money;
+
+        public DepositOperation(int account, long money)
+        {
+            _account = account;
+            _money = money;
+        }
+
+        public IOperationResult Execute(ISimpleBankSystem simpleBankSystem)
+        {
+            var result = simpleBankSystem.Deposit(_account, _money);
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _success;
+
+            public Result(bool success)
+            {
+                _success = success;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _success == other._success;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_success);
+            }
+        }
+    }
+
+    private sealed class WithdrawOperation : IOperation<ISimpleBankSystem>
+    {
+        private readonly int _account;
+        private readonly long _money;
+
+        public WithdrawOperation(int account, long money)
+        {
+            _account = account;
+            _money = money;
+        }
+
+        public IOperationResult Execute(ISimpleBankSystem simpleBankSystem)
+        {
+            var result = simpleBankSystem.Withdraw(_account, _money);
+
+            return new Result(result);
+        }
+
+        public sealed class Result : IOperationResult, IEquatable<Result>
+        {
+            private readonly bool _success;
+
+            public Result(bool success)
+            {
+                _success = success;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _success == other._success;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_success);
+            }
+        }
+    }
 }

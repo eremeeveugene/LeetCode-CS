@@ -24,7 +24,7 @@ public abstract class StoneGame2TestsBase<T> where T : IStoneGame2, new()
     public void StoneGameII_WithGivenPiles_ReturnsMaxPossibleScore(string pilesJson, int expectedResult)
     {
         // Arrange
-        var piles = JsonHelper<int[]>.Parse(pilesJson);
+        var piles = JsonHelper.Parse<int[]>(pilesJson);
 
         var solution = new T();
 

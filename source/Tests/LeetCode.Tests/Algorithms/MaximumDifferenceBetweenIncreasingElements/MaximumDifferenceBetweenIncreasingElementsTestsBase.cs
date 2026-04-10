@@ -27,7 +27,7 @@ public abstract class MaximumDifferenceBetweenIncreasingElementsTestsBase<T>
     public void MaximumDifference_WithValidIncreasingPairs_ReturnsMaximumDifference(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

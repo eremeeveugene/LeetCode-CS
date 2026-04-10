@@ -24,8 +24,8 @@ public abstract class FindingThreeDigitEvenNumbersTestsBase<T> where T : IFindin
         string expectedResultJson)
     {
         // Arrange
-        var digits = JsonHelper<int[]>.Parse(digitsJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var digits = JsonHelper.Parse<int[]>(digitsJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

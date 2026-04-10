@@ -23,7 +23,7 @@ public abstract class WidestVerticalAreaBetweenTwoPointsContainingNoPointsTestsB
     public void MaxWidthOfVerticalArea_WithJsonPoints_ReturnsMaxWidth(string jsonPoints, int expectedResult)
     {
         // Arrange
-        var points = JsonHelper<int[][]>.Parse(jsonPoints);
+        var points = JsonHelper.Parse<int[][]>(jsonPoints);
 
         var solution = new T();
 

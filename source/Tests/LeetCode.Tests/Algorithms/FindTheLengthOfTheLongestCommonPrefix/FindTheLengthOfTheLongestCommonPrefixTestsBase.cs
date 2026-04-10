@@ -29,8 +29,8 @@ public abstract class FindTheLengthOfTheLongestCommonPrefixTestsBase<T>
         string arr2Json, int expectedResult)
     {
         // Arrange
-        var arr1 = JsonHelper<int[]>.Parse(arr1Json);
-        var arr2 = JsonHelper<int[]>.Parse(arr2Json);
+        var arr1 = JsonHelper.Parse<int[]>(arr1Json);
+        var arr2 = JsonHelper.Parse<int[]>(arr2Json);
 
         var solution = new T();
 

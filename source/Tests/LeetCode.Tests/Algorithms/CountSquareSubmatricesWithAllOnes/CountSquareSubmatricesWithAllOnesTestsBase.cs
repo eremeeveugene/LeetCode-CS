@@ -23,7 +23,7 @@ public abstract class CountSquareSubmatricesWithAllOnesTestsBase<T> where T : IC
         string matrixJson, int expectedResult)
     {
         // Arrange
-        var matrix = JsonHelper<int[][]>.Parse(matrixJson);
+        var matrix = JsonHelper.Parse<int[][]>(matrixJson);
 
         var solution = new T();
 

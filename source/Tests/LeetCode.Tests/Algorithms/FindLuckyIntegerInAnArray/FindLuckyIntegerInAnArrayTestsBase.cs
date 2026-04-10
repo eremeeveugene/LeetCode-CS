@@ -24,7 +24,7 @@ public abstract class FindLuckyIntegerInAnArrayTestsBase<T>
     public void FindLucky_WithIntegersArray_ReturnsLargestLuckyIntegerOrMinusOne(string arrJson, int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper<int[]>.Parse(arrJson);
+        var arr = JsonHelper.Parse<int[]>(arrJson);
 
         var solution = new T();
 

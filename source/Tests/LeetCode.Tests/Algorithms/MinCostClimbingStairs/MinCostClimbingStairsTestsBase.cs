@@ -26,7 +26,7 @@ public abstract class MinCostClimbingStairsTestsBase<T> where T : IMinCostClimbi
     public void MinCostClimbingStairs_GivenCostArray_ReturnsMinimumCostToClimb(string costJson, int expectedResult)
     {
         // Arrange
-        var cost = JsonHelper<int[]>.Parse(costJson);
+        var cost = JsonHelper.Parse<int[]>(costJson);
 
         var solution = new T();
 

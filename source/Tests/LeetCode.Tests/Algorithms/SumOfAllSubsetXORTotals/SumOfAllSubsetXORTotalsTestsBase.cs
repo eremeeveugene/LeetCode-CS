@@ -23,7 +23,7 @@ public abstract class SumOfAllSubsetXORTotalsTestsBase<T> where T : ISumOfAllSub
     public void SubsetXORSum_WithIntegerArray_ReturnsSumOfXORTotalsForAllSubsets(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

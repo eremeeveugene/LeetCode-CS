@@ -23,8 +23,8 @@ public abstract class CountUnguardedCellsInTheGridTestsBase<T> where T : ICountU
         string guardsJson, string wordsJson, int expectedResult)
     {
         // Arrange
-        var guards = JsonHelper<int[][]>.Parse(guardsJson);
-        var words = JsonHelper<int[][]>.Parse(wordsJson);
+        var guards = JsonHelper.Parse<int[][]>(guardsJson);
+        var words = JsonHelper.Parse<int[][]>(wordsJson);
 
         var solution = new T();
 

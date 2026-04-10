@@ -27,7 +27,7 @@ public abstract class LexicographicalNumbersTestsBase<T> where T : ILexicographi
     public void LexicalOrder_WithGivenN_ReturnsLexicographicallySortedArray(int n, string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

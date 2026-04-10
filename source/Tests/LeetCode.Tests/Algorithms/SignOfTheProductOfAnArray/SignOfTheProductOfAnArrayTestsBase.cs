@@ -23,7 +23,7 @@ public abstract class SignOfTheProductOfAnArrayTestsBase<T> where T : ISignOfThe
     public void ArraySign_GivenArrayOfIntegers_ReturnsProductSign(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

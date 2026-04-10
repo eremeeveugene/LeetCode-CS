@@ -23,7 +23,7 @@ public abstract class ConvertTheTemperatureTestsBase<T> where T : IConvertTheTem
         string expectedResultJson)
     {
         // Arrange
-        var expectedResult = JsonHelper<double[]>.Parse(expectedResultJson);
+        var expectedResult = JsonHelper.Parse<double[]>(expectedResultJson);
 
         var solution = new T();
 

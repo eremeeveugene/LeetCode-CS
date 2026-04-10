@@ -26,8 +26,8 @@ public abstract class ThreeSumTestsBase<T> where T : IThreeSum, new()
     public void ThreeSum_WithIntArray_ReturnsTripletsThatSumToZero(string numsJson, string expectedResultJson)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
-        var expectedResult = JsonHelper<int[][]>.Parse(expectedResultJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
+        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
 
         var solution = new T();
 

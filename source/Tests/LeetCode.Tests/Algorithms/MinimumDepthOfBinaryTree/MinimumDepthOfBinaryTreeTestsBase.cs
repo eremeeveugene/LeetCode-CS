@@ -24,7 +24,7 @@ public abstract class MinimumDepthOfBinaryTreeTestsBase<T> where T : IMinimumDep
     public void MinDepth_GivenBinaryTreeAsJson_ReturnsMinimumDepth(string rootJson, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper<int?[]>.Parse(rootJson);
+        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();

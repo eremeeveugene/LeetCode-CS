@@ -24,7 +24,7 @@ public abstract class WordSearchTestsBase<T> where T : IWordSearch, new()
         string word, bool expectedResult)
     {
         // Arrange
-        var board = JsonHelper<char[][]>.Parse(jsonBoard);
+        var board = JsonHelper.Parse<char[][]>(jsonBoard);
 
         var solution = new T();
 

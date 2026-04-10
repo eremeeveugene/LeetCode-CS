@@ -24,8 +24,8 @@ public abstract class ShortestDistanceAfterRoadAdditionQueries1TestsBase<T>
         string queriesJson, string expectedResultJson)
     {
         // Arrange
-        var queries = JsonHelper<int[][]>.Parse(queriesJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var queries = JsonHelper.Parse<int[][]>(queriesJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

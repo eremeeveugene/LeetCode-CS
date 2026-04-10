@@ -24,7 +24,7 @@ public abstract class NeitherMinimumNorMaximumTestsBase<T> where T : INeitherMin
     public void FindNonMinOrMax_WithIntArray_ReturnsNonExtremeValue(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

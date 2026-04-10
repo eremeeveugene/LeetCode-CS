@@ -24,7 +24,7 @@ public abstract class FindTheMaximumLengthOfValidSubsequence1TestsBase<T>
     public void MaximumLength_WithInputArray_ReturnsLengthOfLongestValidSubsequence(string numsJson, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 

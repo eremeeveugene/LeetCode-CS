@@ -34,7 +34,7 @@ public abstract class PalindromeLinkedListTestsBase<T> where T : IPalindromeLink
     public void IsPalindrome_LinkedList_ReturnsTrueIfPalindromeFalseOtherwise(string headJson, bool expectedResult)
     {
         // Arrange
-        var headArray = JsonHelper<int[]>.Parse(headJson);
+        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNode(headArray);
 
         var solution = new T();

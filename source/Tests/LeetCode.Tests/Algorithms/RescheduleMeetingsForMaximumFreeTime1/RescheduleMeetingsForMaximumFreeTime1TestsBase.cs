@@ -25,8 +25,8 @@ public abstract class RescheduleMeetingsForMaximumFreeTime1TestsBase<T>
         int eventTime, int k, string startTimeJson, string endTimeJson, int expectedResult)
     {
         // Arrange
-        var startTime = JsonHelper<int[]>.Parse(startTimeJson);
-        var endTime = JsonHelper<int[]>.Parse(endTimeJson);
+        var startTime = JsonHelper.Parse<int[]>(startTimeJson);
+        var endTime = JsonHelper.Parse<int[]>(endTimeJson);
 
         var solution = new T();
 

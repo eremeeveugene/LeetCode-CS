@@ -23,8 +23,8 @@ public abstract class FindMissingAndRepeatedValuesTestsBase<T> where T : IFindMi
         string expectedResultJson)
     {
         // Arrange
-        var grid = JsonHelper<int[][]>.Parse(gridJson);
-        var expectedResult = JsonHelper<int[]>.Parse(expectedResultJson);
+        var grid = JsonHelper.Parse<int[][]>(gridJson);
+        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

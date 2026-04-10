@@ -23,7 +23,7 @@ public abstract class DivideArrayIntoEqualPairsTestsBase<T> where T : IDivideArr
         bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper<int[]>.Parse(numsJson);
+        var nums = JsonHelper.Parse<int[]>(numsJson);
 
         var solution = new T();
 
