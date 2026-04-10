@@ -33,8 +33,8 @@ jobs:
       - name: Build
         run: dotnet build --no-restore
 
-      - name: Run Tests
-        run: dotnet test --no-build --verbosity normal
+      - name: Run Tests with Coverage
+        run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
 
       - name: Install ReportGenerator
         run: dotnet tool install --global dotnet-reportgenerator-globaltool
