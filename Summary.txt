@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/10/2026 - 4:25:56 PM
-  Coverage date: 4/10/2026 - 4:25:27 PM - 4/10/2026 - 4:25:48 PM
+  Generated on: 4/12/2026 - 1:30:51 PM
+  Coverage date: 4/12/2026 - 1:30:21 PM - 4/12/2026 - 1:30:42 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1202
-  Files: 1202
+  Classes: 1203
+  Files: 1203
   Line coverage: 97.9%
-  Covered lines: 26561
+  Covered lines: 26579
   Uncovered lines: 550
-  Coverable lines: 27111
-  Total lines: 67560
-  Branch coverage: 95.7% (9847 of 10286)
-  Covered branches: 9847
-  Total branches: 10286
-  Method coverage: 99.4% (1774 of 1784)
-  Full method coverage: 88.6% (1582 of 1784)
-  Covered methods: 1774
-  Fully covered methods: 1582
-  Total methods: 1784
+  Coverable lines: 27129
+  Total lines: 67608
+  Branch coverage: 95.7% (9851 of 10290)
+  Covered branches: 9851
+  Total branches: 10290
+  Method coverage: 99.4% (1775 of 1785)
+  Full method coverage: 88.6% (1583 of 1785)
+  Covered methods: 1775
+  Fully covered methods: 1583
+  Total methods: 1785
 
 LeetCode                                                                                                                                                97.9%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -831,6 +831,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfPeopleAwareOfSecret.NumberOfPeopleAwareOfSecretLineSweep                                                                  93.1%
   LeetCode.Algorithms.NumberOfSeniorCitizens.NumberOfSeniorCitizensCharacterComparison                                                                   100%
   LeetCode.Algorithms.NumberOfSeniorCitizens.NumberOfSeniorCitizensStringParsing                                                                         100%
+  LeetCode.Algorithms.NumberOfSmoothDescentPeriodsOfStock.NumberOfSmoothDescentPeriodsOfStockTwoPointers                                                 100%
   LeetCode.Algorithms.NumberOfStepsToReduceNumberInBinaryRepresentationToOne.NumberOfStepsToReduceNumberInBinaryRepresentationToOneGreedy                100%
   LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroBitwise                                                         100%
   LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroIterative                                                       100%
