@@ -222,6 +222,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [561. Array Partition](https://leetcode.com/problems/array-partition/description/)
 - [564. Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome/description/)
 - [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
+- [575. Distribute Candies](https://leetcode.com/problems/distribute-candies/description/)
 - [589. N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/description/)
 - [590. N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal/description/)
 - [592. Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction/description/)
