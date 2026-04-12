@@ -1,25 +1,25 @@
 Summary
-  Generated on: 4/12/2026 - 1:54:07 PM
-  Coverage date: 4/12/2026 - 1:53:29 PM - 4/12/2026 - 1:54:00 PM
+  Generated on: 4/12/2026 - 7:04:40 PM
+  Coverage date: 4/12/2026 - 7:04:12 PM - 4/12/2026 - 7:04:33 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1204
-  Files: 1204
+  Classes: 1208
+  Files: 1208
   Line coverage: 97.9%
-  Covered lines: 26599
-  Uncovered lines: 546
-  Coverable lines: 27145
-  Total lines: 67655
-  Branch coverage: 95.7% (9858 of 10294)
-  Covered branches: 9858
-  Total branches: 10294
-  Method coverage: 99.4% (1776 of 1786)
-  Full method coverage: 88.6% (1584 of 1786)
-  Covered methods: 1776
-  Fully covered methods: 1584
-  Total methods: 1786
+  Covered lines: 26666
+  Uncovered lines: 550
+  Coverable lines: 27216
+  Total lines: 67867
+  Branch coverage: 95.7% (9879 of 10318)
+  Covered branches: 9879
+  Total branches: 10318
+  Method coverage: 99.4% (1782 of 1792)
+  Full method coverage: 88.7% (1590 of 1792)
+  Covered methods: 1782
+  Fully covered methods: 1590
+  Total methods: 1792
 
-LeetCode                                                                                                                                                  98%
+LeetCode                                                                                                                                                97.9%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsSorting                     100%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                       100%
@@ -290,6 +290,10 @@ LeetCode                                                                        
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayIterative                               100%
   LeetCode.Algorithms.DifferentWaysToAddParentheses.DifferentWaysToAddParenthesesDictionary                                                               97%
   LeetCode.Algorithms.DifferentWaysToAddParentheses.DifferentWaysToAddParenthesesRecursive                                                              96.1%
+  LeetCode.Algorithms.DistributeCandies.DistributeCandiesDictionary                                                                                      100%
+  LeetCode.Algorithms.DistributeCandies.DistributeCandiesHashSet                                                                                         100%
+  LeetCode.Algorithms.DistributeCandies.DistributeCandiesLookup                                                                                          100%
+  LeetCode.Algorithms.DistributeCandies.DistributeCandiesLookupSpan                                                                                      100%
   LeetCode.Algorithms.DistributeCandiesAmongChildren2.DistributeCandiesAmongChildren2Math                                                                100%
   LeetCode.Algorithms.DistributeCoinsInBinaryTree.DistributeCoinsInBinaryTreeDepthFirstSearch                                                            100%
   LeetCode.Algorithms.DistributeMoneyToMaximumChildren.DistributeMoneyToMaximumChildrenLinear                                                           93.3%
@@ -1209,7 +1213,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
