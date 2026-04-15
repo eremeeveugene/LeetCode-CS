@@ -9,12 +9,20 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.ShortestDistanceToTargetStringInCircularArray;
+namespace LeetCode.Algorithms.CheckIfBinaryStringHasAtMostOneSegmentOfOnes;
 
-/// <summary>
-///     https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/description/
-/// </summary>
-public interface IShortestDistanceToTargetStringInCircularArray
+/// <inheritdoc />
+public sealed class
+    CheckIfBinaryStringHasAtMostOneSegmentOfOnesStringPattern : ICheckIfBinaryStringHasAtMostOneSegmentOfOnes
 {
-    int ClosestTarget(string[] words, string target, int startIndex);
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="s"></param>
+    /// <returns></returns>
+    public bool CheckOnesSegment(string s)
+    {
+        return !s.Contains("01");
+    }
 }

@@ -22,7 +22,7 @@ public sealed class ShortestDistanceToTargetStringInCircularArrayIterative : ISh
     /// <param name="target"></param>
     /// <param name="startIndex"></param>
     /// <returns></returns>
-    public int ClosetTarget(string[] words, string target, int startIndex)
+    public int ClosestTarget(string[] words, string target, int startIndex)
     {
         var closestDistance = int.MaxValue;
         var targetFound = false;
