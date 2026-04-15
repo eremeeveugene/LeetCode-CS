@@ -531,6 +531,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2054. Two Best Non-Overlapping Events](https://leetcode.com/problems/two-best-non-overlapping-events/description/)
 - [2058. Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/description/)
 - [2064. Minimized Maximum of Products Distributed to Any Store](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/description/)
+- [2069. Walking Robot Simulation II](https://leetcode.com/problems/walking-robot-simulation-ii/description/)
 - [2070. Most Beautiful Item for Each Query](https://leetcode.com/problems/most-beautiful-item-for-each-query/description/)
 - [2071. Maximum Number of Tasks You Can Assign](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/description/)
 - [2073. Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets/description/)
