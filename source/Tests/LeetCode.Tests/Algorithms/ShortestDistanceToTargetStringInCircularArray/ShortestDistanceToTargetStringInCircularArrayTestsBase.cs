@@ -21,7 +21,7 @@ public abstract class ShortestDistanceToTargetStringInCircularArrayTestsBase<T>
     [DataRow("[\"hello\",\"i\",\"am\",\"leetcode\",\"hello\"]", "hello", 1, 1)]
     [DataRow("[\"a\",\"b\",\"leetcode\"]", "leetcode", 0, 1)]
     [DataRow("[\"i\",\"eat\",\"leetcode\"]", "ate", 0, -1)]
-    public void ClosetTarget_WithWordsArrayTargetAndStartIndex_ReturnsShortestDistanceToTargetString(
+    public void ClosestTarget_WithWordsArrayTargetAndStartIndex_ReturnsShortestDistanceToTargetString(
         string wordsJson, string target, int startIndex, int expectedResult)
     {
         // Arrange
@@ -30,7 +30,7 @@ public abstract class ShortestDistanceToTargetStringInCircularArrayTestsBase<T>
         var solution = new T();
 
         // Act
-        var actualResult = solution.ClosetTarget(words, target, startIndex);
+        var actualResult = solution.ClosestTarget(words, target, startIndex);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
