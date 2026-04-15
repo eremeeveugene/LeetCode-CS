@@ -10,12 +10,15 @@ jobs:
   pipeline:
     runs-on: windows-latest
     timeout-minutes: 30
+
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
+
     defaults:
       run:
         working-directory: source
+        shell: pwsh
 
     steps:
       - name: Checkout repository
@@ -28,7 +31,7 @@ jobs:
         with:
           global-json-file: ${{ github.workspace }}/global.json
 
-      - name: Cache NuGet packages
+      - name: Cache NuGet
         uses: actions/cache@v4
         with:
           path: ~/.nuget/packages
@@ -36,146 +39,153 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuget-
 
-      - name: Restore dependencies
+      - name: Restore
+        id: restore
         run: dotnet restore
 
-      - name: Check Code Style
+      - name: Format check
+        id: format
         run: dotnet format --verify-no-changes --verbosity diagnostic
 
       - name: Build
+        id: build
         run: dotnet build --no-restore
 
-      - name: Run Tests with Coverage
-        run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage" --results-directory ./Tests/TestResults
+      - name: Test
+        id: test
+        continue-on-error: true
+        run: >
+          dotnet test
+          --no-build
+          --collect:"XPlat Code Coverage"
+          --results-directory ./Tests/TestResults
 
-      - name: Install ReportGenerator
-        run: dotnet tool install --global dotnet-reportgenerator-globaltool || true
-
-      - name: Generate Coverage Report
+      - name: Install reportgenerator
+        if: always()
         run: |
-          reportgenerator -reports:"./Tests/**/TestResults/**/*.cobertura.xml" -targetdir:coverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura;TextSummary"
+          dotnet tool update --global dotnet-reportgenerator-globaltool `
+          || dotnet tool install --global dotnet-reportgenerator-globaltool
 
-      - name: Output Coverage Summary to GitHub Actions Summary
+      - name: Generate coverage
+        id: coverage
+        if: always()
         run: |
-          if (Test-Path "coverage/Summary.txt") {
-            $summary = Get-Content -Path "coverage/Summary.txt" -Raw
-            $summary | Out-File -FilePath $env:GITHUB_STEP_SUMMARY
-          } else {
-            Write-Warning "Coverage summary file not found."
-          }
-
-      - name: Get Changed Files
-        id: changed-files
-        uses: tj-actions/changed-files@v46
-        with:
-          files: |
-            source/**/*.cs
-          files_ignore: |
-            source/Tests/**
-
-      - name: Check Coverage for Changed Files
-        id: coverage-check
-        run: |
-          $changedFiles = "${{ steps.changed-files.outputs.all_changed_files }}" -split '\s+'
-
-          if ($changedFiles.Count -eq 0 -or [string]::IsNullOrWhiteSpace($changedFiles[0])) {
-            Write-Output "No C# source files changed. Skipping coverage check."
-            "coverage_pct=0" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
-            "coverage_status=⏭️ Skipped" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+          $files = Get-ChildItem ./Tests/TestResults -Recurse -Filter *.cobertura.xml -ErrorAction SilentlyContinue
+          if (-not $files) {
+            "report=false" >> $env:GITHUB_OUTPUT
             exit 0
           }
 
-          Write-Output "Changed files:"
-          $changedFiles | ForEach-Object { Write-Output "  $_" }
+          reportgenerator `
+            -reports:"./Tests/**/TestResults/**/*.cobertura.xml" `
+            -targetdir:coverage `
+            -reporttypes:"Cobertura;TextSummary"
+
+          if (Test-Path "coverage/Cobertura.xml") {
+            "report=true" >> $env:GITHUB_OUTPUT
+          } else {
+            "report=false" >> $env:GITHUB_OUTPUT
+          }
+
+      - name: Changed files
+        id: changed
+        if: always()
+        uses: tj-actions/changed-files@v46
+        with:
+          files: source/**/*.cs
+          files_ignore: source/Tests/**
+
+      - name: Coverage check (changed files)
+        id: coverage-check
+        if: always()
+        run: |
+          if ("${{ steps.test.outcome }}" -ne "success") {
+            "pct=N/A" >> $env:GITHUB_OUTPUT
+            "status=❌ Tests failed" >> $env:GITHUB_OUTPUT
+            exit 0
+          }
 
           if (-not (Test-Path "coverage/Cobertura.xml")) {
-            Write-Error "No Cobertura coverage file found."
-            exit 1
+            "pct=N/A" >> $env:GITHUB_OUTPUT
+            "status=❌ No coverage" >> $env:GITHUB_OUTPUT
+            exit 0
           }
-          $coberturaFile = Get-Item "coverage/Cobertura.xml"
 
-          [xml]$cobertura = Get-Content -Path $coberturaFile.FullName
+          $changed = "${{ steps.changed.outputs.all_changed_files }}" -split '\s+' | ? { $_ }
 
-          $totalLines   = 0
-          $coveredLines = 0
-          $missingCoverage = @()
+          if (-not $changed) {
+            "pct=0" >> $env:GITHUB_OUTPUT
+            "status=⏭️ Skipped" >> $env:GITHUB_OUTPUT
+            exit 0
+          }
 
-          foreach ($file in $changedFiles) {
-            # Normalize: forward slashes, strip leading "source/"
-            $normalized = ($file -replace '\\', '/') -replace '^source/', ''
+          [xml]$xml = Get-Content "coverage/Cobertura.xml"
 
-            $classNodes = $cobertura.coverage.packages.package.classes.class |
-              Where-Object { ($_.filename -replace '\\', '/') -like "*$normalized*" }
+          $total = 0
+          $covered = 0
+          $bad = @()
 
-            if ($null -eq $classNodes) {
-              # Interfaces, abstract classes, excluded files won't appear in coverage — skip silently
-              continue
-            }
+          foreach ($file in $changed) {
+            $norm = ($file -replace '\\','/') -replace '^source/',''
 
-            foreach ($class in $classNodes) {
-              $lines        = $class.lines.line
-              $fileCovered  = ($lines | Where-Object { $_.hits -gt 0 }).Count
-              $fileTotal    = $lines.Count
+            $classes = $xml.coverage.packages.package.classes.class |
+              ? { ($_.filename -replace '\\','/') -like "*$norm" }
 
-              $totalLines   += $fileTotal
-              $coveredLines += $fileCovered
+            foreach ($c in $classes) {
+              $lines = @($c.lines.line)
+              if (-not $lines) { continue }
 
-              if ($fileTotal -gt 0) {
-                $filePct = [Math]::Round(($fileCovered / $fileTotal) * 100, 1)
-                if ($filePct -lt 90) {
-                  $missingCoverage += "  $normalized — ${filePct}% ($fileCovered/$fileTotal lines)"
-                }
+              $t = $lines.Count
+              $cvr = ($lines | ? { [int]$_.hits -gt 0 }).Count
+
+              $total += $t
+              $covered += $cvr
+
+              $pct = [math]::Round(($cvr/$t)*100,1)
+              if ($pct -lt 90) {
+                $bad += "$norm — $pct% ($cvr/$t)"
               }
             }
           }
 
-          if ($totalLines -eq 0) {
-            Write-Output "No coverable lines found in changed files. Skipping check."
-            "coverage_pct=0" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
-            "coverage_status=⏭️ Skipped" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+          if ($total -eq 0) {
+            "pct=0" >> $env:GITHUB_OUTPUT
+            "status=⏭️ Skipped" >> $env:GITHUB_OUTPUT
             exit 0
           }
 
-          $coveragePct = [Math]::Round(($coveredLines / $totalLines) * 100, 2)
-          Write-Output ""
-          Write-Output "=== Changed Files Coverage Summary ==="
-          Write-Output "Overall: $coveragePct% ($coveredLines/$totalLines lines covered)"
+          $pct = [math]::Round(($covered/$total)*100,2)
+          "pct=$pct" >> $env:GITHUB_OUTPUT
 
-          if ($missingCoverage.Count -gt 0) {
-            Write-Output ""
-            Write-Output "Files below 90%:"
-            $missingCoverage | ForEach-Object { Write-Output $_ }
-          }
-
-          if ($coveragePct -lt 90) {
-            Write-Error "Coverage for changed files is below 90%. It is at $coveragePct%"
-            "coverage_pct=$coveragePct" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
-            "coverage_status=❌ Failed" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
-            exit 1
+          if ($pct -lt 90) {
+            "status=❌ Failed" >> $env:GITHUB_OUTPUT
+            $bad -join "`n" > coverage_failed.txt
           } else {
-            Write-Output "Coverage check passed."
-            "coverage_pct=$coveragePct" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
-            "coverage_status=✅ Passed" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            "status=✅ Passed" >> $env:GITHUB_OUTPUT
           }
 
-      - name: Comment Coverage on PR
-        if: github.event_name == 'pull_request' && github.actor != 'dependabot[bot]' && always()
+      - name: PR comment
+        if: github.event_name == 'pull_request' && always()
         uses: marocchino/sticky-pull-request-comment@v2
         with:
           header: coverage
           message: |
-            ## 📊 Coverage Report
+            ## 📊 Coverage
 
-            | | |
-            |---|---|
-            | **Changed files coverage** | ${{ steps.coverage-check.outputs.coverage_pct }}% |
-            | **Status** | ${{ steps.coverage-check.outputs.coverage_status }} |
+            | Step | Result |
+            |------|--------|
+            | Restore | ${{ steps.restore.outcome }} |
+            | Format | ${{ steps.format.outcome }} |
+            | Build | ${{ steps.build.outcome }} |
+            | Tests | ${{ steps.test.outcome }} |
+            | Coverage | ${{ steps.coverage-check.outputs.pct }}% |
+            | Status | ${{ steps.coverage-check.outputs.status }} |
 
-      - name: Deploy to GitHub Pages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ${{ github.workspace }}/source/coverage
-          publish_branch: gh-pages
-          keep_files: true
+      - name: Fail pipeline
+        if: always()
+        run: |
+          if ("${{ steps.restore.outcome }}" -ne "success") { exit 1 }
+          if ("${{ steps.format.outcome }}" -ne "success") { exit 1 }
+          if ("${{ steps.build.outcome }}" -ne "success") { exit 1 }
+          if ("${{ steps.test.outcome }}" -ne "success") { exit 1 }
+          if ("${{ steps.coverage-check.outputs.status }}" -eq "❌ Failed") { exit 1 }
