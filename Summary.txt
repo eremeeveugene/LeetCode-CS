@@ -1,23 +1,23 @@
 Summary
-  Generated on: 4/12/2026 - 7:04:40 PM
-  Coverage date: 4/12/2026 - 7:04:12 PM - 4/12/2026 - 7:04:33 PM
+  Generated on: 4/15/2026 - 11:20:14 AM
+  Coverage date: 4/15/2026 - 11:19:46 AM - 4/15/2026 - 11:20:07 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 3
-  Classes: 1208
-  Files: 1208
+  Classes: 1210
+  Files: 1210
   Line coverage: 97.9%
-  Covered lines: 26666
+  Covered lines: 26678
   Uncovered lines: 550
-  Coverable lines: 27216
-  Total lines: 67867
-  Branch coverage: 95.7% (9879 of 10318)
-  Covered branches: 9879
-  Total branches: 10318
-  Method coverage: 99.4% (1782 of 1792)
-  Full method coverage: 88.7% (1590 of 1792)
-  Covered methods: 1782
-  Fully covered methods: 1590
-  Total methods: 1792
+  Coverable lines: 27228
+  Total lines: 67930
+  Branch coverage: 95.7% (9883 of 10322)
+  Covered branches: 9883
+  Total branches: 10322
+  Method coverage: 99.4% (1784 of 1794)
+  Full method coverage: 88.7% (1592 of 1794)
+  Covered methods: 1784
+  Fully covered methods: 1592
+  Total methods: 1794
 
 LeetCode                                                                                                                                                97.9%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -103,6 +103,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKArray                                                             100%
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKDictionary                                                       92.3%
   LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK.CheckIfArrayPairsAreDivisibleByKTwoPointers                                                       100%
+  LeetCode.Algorithms.CheckIfBinaryStringHasAtMostOneSegmentOfOnes.CheckIfBinaryStringHasAtMostOneSegmentOfOnesGreedy                                    100%
+  LeetCode.Algorithms.CheckIfBinaryStringHasAtMostOneSegmentOfOnes.CheckIfBinaryStringHasAtMostOneSegmentOfOnesStringPattern                             100%
   LeetCode.Algorithms.CheckIfDigitsAreEqualInStringAfterOperations1.CheckIfDigitsAreEqualInStringAfterOperations1Simulation                              100%
   LeetCode.Algorithms.CheckIfDigitsAreEqualInStringAfterOperations1.CheckIfDigitsAreEqualInStringAfterOperations1SimulationOptimized                     100%
   LeetCode.Algorithms.CheckIfGridCanBeCutIntoSections.CheckIfGridCanBeCutIntoSectionsSorting                                                             100%
