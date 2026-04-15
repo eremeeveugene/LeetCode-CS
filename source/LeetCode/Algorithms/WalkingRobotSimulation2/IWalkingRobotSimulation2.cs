@@ -9,20 +9,26 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.CheckIfBinaryStringHasAtMostOneSegmentOfOnes;
+namespace LeetCode.Algorithms.WalkingRobotSimulation2;
 
-/// <inheritdoc />
-public sealed class CheckIfBinaryStringHasAtMostOneSegmentOfOnesStringPattern :
-    ICheckIfBinaryStringHasAtMostOneSegmentOfOnes
+/// <summary>
+///     https://leetcode.com/problems/walking-robot-simulation-ii/description/
+/// </summary>
+public interface IWalkingRobotSimulation2
 {
     /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(1)
+    ///     Moves the robot forward <paramref name="num" /> steps, turning counterclockwise when out of bounds.
     /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
-    public bool CheckOnesSegment(string s)
-    {
-        return !s.Contains("01");
-    }
+    /// <param name="num">The number of steps to move.</param>
+    void Step(int num);
+
+    /// <summary>
+    ///     Returns the robot's current position as <c>[x, y]</c>.
+    /// </summary>
+    int[] GetPos();
+
+    /// <summary>
+    ///     Returns the robot's current facing direction.
+    /// </summary>
+    string GetDir();
 }

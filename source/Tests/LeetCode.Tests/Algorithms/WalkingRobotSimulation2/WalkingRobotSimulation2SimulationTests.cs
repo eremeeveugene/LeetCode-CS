@@ -9,20 +9,15 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.CheckIfBinaryStringHasAtMostOneSegmentOfOnes;
+using LeetCode.Algorithms.WalkingRobotSimulation2;
 
-/// <inheritdoc />
-public sealed class CheckIfBinaryStringHasAtMostOneSegmentOfOnesStringPattern :
-    ICheckIfBinaryStringHasAtMostOneSegmentOfOnes
+namespace LeetCode.Tests.Algorithms.WalkingRobotSimulation2;
+
+[TestClass]
+public sealed class WalkingRobotSimulation2SimulationTests : WalkingRobotSimulation2TestsBase
 {
-    /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
-    public bool CheckOnesSegment(string s)
+    protected override IWalkingRobotSimulation2 CreateSolution(int width, int height)
     {
-        return !s.Contains("01");
+        return new WalkingRobotSimulation2Simulation(width, height);
     }
 }
