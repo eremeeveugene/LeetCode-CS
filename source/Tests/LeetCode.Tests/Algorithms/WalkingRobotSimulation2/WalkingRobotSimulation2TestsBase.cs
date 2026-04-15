@@ -287,6 +287,40 @@ public abstract class WalkingRobotSimulation2TestsBase
                     new GetDirOperation.Result(WalkingRobotSimulation2Simulation.NorthDirection)
                 ])
         ];
+
+        yield return
+        [
+            new WalkingRobotSimulation2Scenario(
+                4,
+                3,
+                [
+                    new StepOperation(8),
+                    new GetPosOperation(),
+                    new GetDirOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(0, 2),
+                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)
+                ])
+        ];
+
+        yield return
+        [
+            new WalkingRobotSimulation2Scenario(
+                4,
+                3,
+                [
+                    new StepOperation(9),
+                    new GetPosOperation(),
+                    new GetDirOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(0, 1),
+                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.SouthDirection)
+                ])
+        ];
     }
 
     public sealed class WalkingRobotSimulation2Scenario : Scenario<IWalkingRobotSimulation2>
