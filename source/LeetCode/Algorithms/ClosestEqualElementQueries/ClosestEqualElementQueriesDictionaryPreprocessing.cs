@@ -47,14 +47,16 @@ public sealed class ClosestEqualElementQueriesDictionaryPreprocessing : ClosestE
         {
             if (indexes.Count == 1)
             {
-                minDistances[indexes[0]] = -1;
+                var firstIndex = indexes[0];
+
+                minDistances[firstIndex] = -1;
 
                 continue;
             }
 
             for (var i = 0; i < indexes.Count; i++)
             {
-                var currentIndex = indexes[i];
+                var index = indexes[i];
 
                 var previousIndex = i == 0
                     ? indexes[^1]
@@ -63,16 +65,18 @@ public sealed class ClosestEqualElementQueriesDictionaryPreprocessing : ClosestE
                     ? indexes[0]
                     : indexes[i + 1];
 
-                var previousDistance = GetCircularDistance(currentIndex, previousIndex, n);
-                var nextDistance = GetCircularDistance(currentIndex, nextIndex, n);
+                var previousDistance = GetCircularDistance(index, previousIndex, n);
+                var nextDistance = GetCircularDistance(index, nextIndex, n);
 
-                minDistances[currentIndex] = Math.Min(previousDistance, nextDistance);
+                minDistances[index] = Math.Min(previousDistance, nextDistance);
             }
         }
 
         for (var i = 0; i < queries.Length; i++)
         {
-            queries[i] = minDistances[queries[i]];
+            var query = queries[i];
+
+            queries[i] = minDistances[query];
         }
 
         return queries;
