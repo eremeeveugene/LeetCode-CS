@@ -18,6 +18,16 @@ public abstract class ClosestEqualElementQueriesTestsBase<T> where T : IClosestE
     [TestMethod]
     [DataRow(new[] { 1, 2, 3, 4 }, new[] { 0, 1, 2, 3 }, new[] { -1, -1, -1, -1 })]
     [DataRow(new[] { 1, 3, 1, 4, 1, 3, 2 }, new[] { 0, 3, 5 }, new[] { 2, -1, 3 })]
+    [DataRow(new[] { 5, 5 }, new[] { 0, 1 }, new[] { 1, 1 })]
+    [DataRow(new[] { 7, 1, 2, 3, 7 }, new[] { 0, 4 }, new[] { 1, 1 })]
+    [DataRow(new[] { 1, 2, 1, 2, 1, 2 }, new[] { 0, 1, 2, 3, 4, 5 }, new[] { 2, 2, 2, 2, 2, 2 })]
+    [DataRow(new[] { 4, 1, 2, 4, 3, 4 }, new[] { 0, 3, 5 }, new[] { 1, 2, 1 })]
+    [DataRow(new[] { 8, 6, 8, 6, 8 }, new[] { 0, 2, 4, 1, 3 }, new[] { 1, 2, 1, 2, 2 })]
+    [DataRow(new[] { 9, 1, 9, 2, 3, 4, 9 }, new[] { 0, 2, 6 }, new[] { 1, 2, 1 })]
+    [DataRow(new[] { 1, 2, 3, 1, 4, 5, 1 }, new[] { 0, 3, 6 }, new[] { 1, 3, 1 })]
+    [DataRow(new[] { 2, 2, 2, 2 }, new[] { 0, 1, 2, 3 }, new[] { 1, 1, 1, 1 })]
+    [DataRow(new[] { 1, 2, 3, 2, 1 }, new[] { 0, 1, 2, 3, 4 }, new[] { 1, 2, -1, 2, 1 })]
+    [DataRow(new[] { 3, 1, 3, 1, 3, 1, 3 }, new[] { 0, 1, 6 }, new[] { 1, 2, 1 })]
     public void SolveQueries_WithCircularArrayAndQueryIndices_ReturnsMinimumDistance(int[] nums, int[] queries,
         int[] expectedResult)
     {
