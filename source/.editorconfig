@@ -148,6 +148,24 @@ root = true
 # C# files
 [*.cs]
 dotnet_diagnostic.IDE0290.severity = none
+resharper_max_line_length = 120
+resharper_wrap_lines = true
+
+# Don't preserve existing line breaks — actually reformat
+resharper_keep_existing_declaration_parens_arrangement = false
+resharper_keep_existing_invocation_parens_arrangement = false
+resharper_keep_existing_arrangement = false
+
+# Method SIGNATURES: chop params, put first param on new line
+resharper_wrap_parameters_style = chop_if_long
+resharper_wrap_after_declaration_lpar = true
+
+# Method CALLS: chop args, put first arg on new line
+resharper_wrap_arguments_style = chop_if_long
+resharper_wrap_after_invocation_lpar = true
+
+# Array/collection initializers
+resharper_wrap_array_initializer_style = chop_if_long
 
 #### Core EditorConfig Options ####
 
