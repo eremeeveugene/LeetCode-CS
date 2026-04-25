@@ -650,6 +650,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2593. Find Score of an Array After Marking All Elements](https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/description/)
 - [2597. The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/description/)
 - [2601. Prime Subtraction Operation](https://leetcode.com/problems/prime-subtraction-operation/description/)
+- [2615. Sum of Distances](https://leetcode.com/problems/sum-of-distances/description/)
 - [2616. Minimize the Maximum Difference of Pairs](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/description/)
 - [2641. Cousins in Binary Tree II](https://leetcode.com/problems/cousins-in-binary-tree-ii/description/)
 - [2643. Row With Maximum Ones](https://leetcode.com/problems/row-with-maximum-ones/description/)
