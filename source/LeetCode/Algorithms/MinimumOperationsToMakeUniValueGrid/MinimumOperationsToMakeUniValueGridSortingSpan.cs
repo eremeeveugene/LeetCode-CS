@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumOperationsToMakeUniValueGrid;
 
 /// <inheritdoc />
-public sealed class MinimumOperationsToMakeUniValueGridSorting : IMinimumOperationsToMakeUniValueGrid
+public sealed class MinimumOperationsToMakeUniValueGridSortingSpan : IMinimumOperationsToMakeUniValueGrid
 {
     /// <inheritdoc />
     /// <remarks>
@@ -23,27 +23,49 @@ public sealed class MinimumOperationsToMakeUniValueGridSorting : IMinimumOperati
     {
         var rows = grid.Length;
         var cols = grid[0].Length;
+
+        var valuesLength = rows * cols;
+
+        Span<int> values = stackalloc int[valuesLength];
+
+        var itemsIndex = 0;
+
         var remainder = grid[0][0] % x;
 
-        var items = new List<int>(rows * cols);
-
-        foreach (var row in grid)
+        for (var i = 0; i < grid.Length; i++)
         {
-            foreach (var cell in row)
+            var row = grid[i];
+
+            for (var j = 0; j < row.Length; j++)
             {
-                if (cell % x != remainder)
+                var cell = row[j];
+
+                if (cell % x == remainder)
+                {
+                    values[itemsIndex] = cell;
+
+                    itemsIndex++;
+                }
+                else
                 {
                     return -1;
                 }
-
-                items.Add(cell);
             }
         }
 
-        items.Sort();
+        values.Sort();
 
-        var median = items[items.Count / 2];
+        var median = values[valuesLength / 2];
 
-        return items.Sum(item => Math.Abs(item - median) / x);
+        var operations = 0;
+
+        for (var i = 0; i < valuesLength; i++)
+        {
+            var value = values[i];
+
+            operations += Math.Abs(value - median) / x;
+        }
+
+        return operations;
     }
 }
