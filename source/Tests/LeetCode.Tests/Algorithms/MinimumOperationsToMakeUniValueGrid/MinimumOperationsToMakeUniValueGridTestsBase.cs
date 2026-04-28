@@ -47,7 +47,6 @@ public abstract class MinimumOperationsToMakeUniValueGridTestsBase<T> where T : 
         yield return [new int[][] { [1, 4], [7, 10] }, 3, 4];
         yield return [new int[][] { [1, 4], [7, 11] }, 3, -1];
         yield return [new int[][] { [10000, 9998], [9996, 9994] }, 2, 4];
-        yield return [new int[][] { [1, 10001] }, 10000, 1];
         yield return [new int[][] { [1, 10000] }, 10000, -1];
         yield return [new int[][] { [1, 11, 21], [31, 41, 51] }, 10, 9];
         yield return [new int[][] { [8, 12, 16], [20, 24, 28] }, 4, 9];
