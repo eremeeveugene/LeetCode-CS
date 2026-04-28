@@ -401,6 +401,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1380. Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/description/)
 - [1381. Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/description/)
 - [1390. Four Divisors](https://leetcode.com/problems/four-divisors/description/)
+- [1391. Check if There is a Valid Path in a Grid](https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/description/)
 - [1394. Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array/description/)
 - [1399. Count Largest Group](https://leetcode.com/problems/count-largest-group/description/)
 - [1400. Construct K Palindrome Strings](https://leetcode.com/problems/construct-k-palindrome-strings/description/)
