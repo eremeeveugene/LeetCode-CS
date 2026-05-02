@@ -16,7 +16,7 @@ namespace LeetCode.Tests.Algorithms.ZeroArrayTransformation3;
 public abstract class ZeroArrayTransformation3TestsBase<T> where T : IZeroArrayTransformation3, new()
 {
     [TestMethod]
-    [DynamicData(nameof(TestData))]
+    [DynamicData(nameof(GetTestData))]
     public void MaxRemoval_WithGivenNumsAndQueries_ReturnsMaximumRemovablePrefixLength(int[] nums, int[][] queries, int expectedResult)
     {
         // Arrange
@@ -29,7 +29,7 @@ public abstract class ZeroArrayTransformation3TestsBase<T> where T : IZeroArrayT
         Assert.AreEqual(expectedResult, actualResult);
     }
 
-    private static IEnumerable<object[]> TestData()
+    private static IEnumerable<object[]> GetTestData()
     {
         yield return [new[] { 2, 0, 2 }, new[] { new[] { 0, 2 }, new[] { 0, 2 }, new[] { 1, 1 } }, 1];
 

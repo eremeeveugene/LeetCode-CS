@@ -10,22 +10,35 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements;
 
-public abstract class AbsoluteDifferenceBetweenMaximumAndMinimumKElementsTestsBase<T>
-    where T : IAbsoluteDifferenceBetweenMaximumAndMinimumKElements, new()
+public abstract class AbsoluteDifferenceBetweenMaximumAndMinimumKElementsTestsBase<T> where T : IAbsoluteDifferenceBetweenMaximumAndMinimumKElements, new()
 {
     [TestMethod]
-    [DataRow("[5,2,2,4]", 2, 5)]
-    [DataRow("[100]", 1, 0)]
-    public void AbsDifference_WithKSmallestAndKLargestElements_ReturnsAbsoluteDifferenceOfTheirSums(string numsJson,
-        int k, int expectedResult)
+    [DataRow(new[] { 5, 2, 2, 4 }, 2, 5)]
+    [DataRow(new[] { 100 }, 1, 0)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 1, 4)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 2, 6)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 3, 6)]
+    [DataRow(new[] { 10, 20, 30 }, 1, 20)]
+    [DataRow(new[] { 10, 20, 30 }, 2, 20)]
+    [DataRow(new[] { 7, 7, 7, 7 }, 2, 0)]
+    [DataRow(new[] { 4, 1, 9, 3, 8 }, 2, 13)]
+    [DataRow(new[] { 9, 1, 5, 2, 8, 3 }, 3, 16)]
+    [DataRow(new[] { 6, 6, 1, 1, 10, 10 }, 2, 18)]
+    [DataRow(new[] { 2, 100, 50, 1 }, 1, 99)]
+    [DataRow(new[] { 2, 100, 50, 1 }, 2, 147)]
+    [DataRow(new[] { 11, 4, 7, 1, 9 }, 1, 10)]
+    [DataRow(new[] { 11, 4, 7, 1, 9 }, 2, 15)]
+    [DataRow(new[] { 3, 3, 3, 10 }, 1, 7)]
+    [DataRow(new[] { 3, 3, 3, 10 }, 2, 7)]
+    [DataRow(new[] { 1, 1000 }, 1, 999)]
+    [DataRow(new[] { 1, 2, 1000, 999 }, 2, 1996)]
+    [DataRow(new[] { 8, 6, 4, 2 }, 2, 8)]
+    public void AbsDifference_WithKSmallestAndKLargestElements_ReturnsAbsoluteDifferenceOfTheirSums(int[] nums, int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act
