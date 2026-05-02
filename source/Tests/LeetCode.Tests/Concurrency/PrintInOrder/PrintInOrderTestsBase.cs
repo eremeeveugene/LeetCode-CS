@@ -10,29 +10,32 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Concurrency.PrintInOrder;
-using LeetCode.Core.Helpers;
+using System.Text;
 
 namespace LeetCode.Tests.Concurrency.PrintInOrder;
 
 public abstract class PrintInOrderTestsBase<T> where T : IPrintInOrder, new()
 {
+    private const string ExpectedResult = First + Second + Third;
     private const string First = "first";
     private const string Second = "second";
     private const string Third = "third";
 
+    public TestContext TestContext { get; set; } = null!;
+
     [TestMethod]
-    [DataRow("[1, 2, 3]")]
-    [DataRow("[2, 3, 1]")]
-    [DataRow("[3, 1, 2]")]
-    public async Task PrintInOrderThreadSleep_ExecuteTasksInVariableOrder_ProducesConsistentOrderedOutput(
-        string numsJson)
+    [DataRow(new[] { 1, 2, 3 })]
+    [DataRow(new[] { 1, 3, 2 })]
+    [DataRow(new[] { 2, 1, 3 })]
+    [DataRow(new[] { 2, 3, 1 })]
+    [DataRow(new[] { 3, 1, 2 })]
+    [DataRow(new[] { 3, 2, 1 })]
+    public async Task PrintInOrderThreadSleep_ExecuteTasksInVariableOrder_ProducesConsistentOrderedOutput(int[] nums)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
+        var actualResult = new StringBuilder();
 
-        const string expectedResult = First + Second + Third;
-        var actualResult = string.Empty;
-        var printInOrder = new T();
+        var solution = new T();
 
         // Act
         List<Task> tasks = [];
@@ -42,13 +45,13 @@ public abstract class PrintInOrderTestsBase<T> where T : IPrintInOrder, new()
             switch (num)
             {
                 case 1:
-                    tasks.Add(Task.Run(() => printInOrder.First(() => actualResult += First)));
+                    tasks.Add(Task.Run(() => solution.First(() => actualResult.Append(First)), TestContext.CancellationToken));
                     break;
                 case 2:
-                    tasks.Add(Task.Run(() => printInOrder.Second(() => actualResult += Second)));
+                    tasks.Add(Task.Run(() => solution.Second(() => actualResult.Append(Second)), TestContext.CancellationToken));
                     break;
                 case 3:
-                    tasks.Add(Task.Run(() => printInOrder.Third(() => actualResult += Third)));
+                    tasks.Add(Task.Run(() => solution.Third(() => actualResult.Append(Third)), TestContext.CancellationToken));
                     break;
             }
         }
@@ -56,6 +59,6 @@ public abstract class PrintInOrderTestsBase<T> where T : IPrintInOrder, new()
         await Task.WhenAll(tasks);
 
         // Assert
-        Assert.AreEqual(expectedResult, actualResult);
+        Assert.AreEqual(ExpectedResult, actualResult.ToString());
     }
 }
