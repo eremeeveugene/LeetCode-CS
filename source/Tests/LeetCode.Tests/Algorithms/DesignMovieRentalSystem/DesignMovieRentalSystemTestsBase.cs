@@ -122,18 +122,27 @@ public abstract class DesignMovieRentalSystemTestsBase
         ];
     }
 
-    public sealed class MovieRentalSystemScenario : Scenario<IDesignMovieRentalSystem>
+    public sealed class MovieRentalSystemScenario : IScenario<IDesignMovieRentalSystem>
     {
-        public MovieRentalSystemScenario(int n, int[][] entries,
-            IOperation<IDesignMovieRentalSystem>[] operations, IOperationResult[] operationResults)
-            : base(operations, operationResults)
+        private readonly Scenario<IDesignMovieRentalSystem> _scenario;
+
+        public MovieRentalSystemScenario(
+            int n,
+            int[][] entries,
+            IOperation<IDesignMovieRentalSystem>[] operations,
+            IOperationResult[] operationResults)
         {
             N = n;
             Entries = entries;
+            _scenario = new Scenario<IDesignMovieRentalSystem>(operations, operationResults);
         }
 
         public int N { get; }
         public int[][] Entries { get; }
+
+        public IOperation<IDesignMovieRentalSystem>[] Operations => _scenario.Operations;
+
+        public IOperationResult[] OperationResults => _scenario.OperationResults;
     }
 
     private sealed class SearchOperation : IOperation<IDesignMovieRentalSystem>

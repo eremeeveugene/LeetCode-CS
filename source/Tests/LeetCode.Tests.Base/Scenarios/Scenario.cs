@@ -12,7 +12,7 @@
 namespace LeetCode.Tests.Base.Scenarios;
 
 /// <inheritdoc />
-public class Scenario<TSolution> : IScenario<TSolution>
+public sealed class Scenario<TSolution> : IScenario<TSolution>
 {
     public Scenario(IOperation<TSolution>[] operations, IOperationResult[] operationResults)
     {

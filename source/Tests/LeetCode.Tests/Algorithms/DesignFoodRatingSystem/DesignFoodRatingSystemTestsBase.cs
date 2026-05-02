@@ -146,20 +146,30 @@ public abstract class DesignFoodRatingSystemTestsBase
         ];
     }
 
-    public sealed class FoodRatingSystemScenario : Scenario<IDesignFoodRatingSystem>
+    public sealed class FoodRatingSystemScenario : IScenario<IDesignFoodRatingSystem>
     {
-        public FoodRatingSystemScenario(string[] foods, string[] cuisines, int[] ratings,
-            IOperation<IDesignFoodRatingSystem>[] operations, IOperationResult[] operationResults)
-            : base(operations, operationResults)
+        private readonly Scenario<IDesignFoodRatingSystem> _scenario;
+
+        public FoodRatingSystemScenario(
+            string[] foods,
+            string[] cuisines,
+            int[] ratings,
+            IOperation<IDesignFoodRatingSystem>[] operations,
+            IOperationResult[] operationResults)
         {
             Foods = foods;
             Cuisines = cuisines;
             Ratings = ratings;
+            _scenario = new Scenario<IDesignFoodRatingSystem>(operations, operationResults);
         }
 
         public string[] Foods { get; }
         public string[] Cuisines { get; }
         public int[] Ratings { get; }
+
+        public IOperation<IDesignFoodRatingSystem>[] Operations => _scenario.Operations;
+
+        public IOperationResult[] OperationResults => _scenario.OperationResults;
     }
 
     private sealed class HighestRatedOperation : IOperation<IDesignFoodRatingSystem>

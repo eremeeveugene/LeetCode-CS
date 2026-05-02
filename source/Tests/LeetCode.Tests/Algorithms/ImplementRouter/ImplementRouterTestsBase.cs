@@ -118,15 +118,24 @@ public abstract class ImplementRouterTestsBase
         ];
     }
 
-    public sealed class RouterScenario : Scenario<IImplementRouter>
+    public sealed class RouterScenario : IScenario<IImplementRouter>
     {
-        public RouterScenario(int memoryLimit, IOperation<IImplementRouter>[] operations,
-            IOperationResult[] operationResults) : base(operations, operationResults)
+        private readonly Scenario<IImplementRouter> _scenario;
+
+        public RouterScenario(
+            int memoryLimit,
+            IOperation<IImplementRouter>[] operations,
+            IOperationResult[] operationResults)
         {
             MemoryLimit = memoryLimit;
+            _scenario = new Scenario<IImplementRouter>(operations, operationResults);
         }
 
         public int MemoryLimit { get; }
+
+        public IOperation<IImplementRouter>[] Operations => _scenario.Operations;
+
+        public IOperationResult[] OperationResults => _scenario.OperationResults;
     }
 
     private sealed class AddPacketOperation : IOperation<IImplementRouter>

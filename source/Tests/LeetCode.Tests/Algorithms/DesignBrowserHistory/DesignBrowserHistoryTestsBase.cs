@@ -141,15 +141,24 @@ public abstract class DesignBrowserHistoryTestsBase
         ];
     }
 
-    public sealed class BrowserHistoryScenario : Scenario<IDesignBrowserHistory>
+    public sealed class BrowserHistoryScenario : IScenario<IDesignBrowserHistory>
     {
-        public BrowserHistoryScenario(string homepage, IOperation<IDesignBrowserHistory>[] operations,
-            IOperationResult[] operationResults) : base(operations, operationResults)
+        private readonly Scenario<IDesignBrowserHistory> _scenario;
+
+        public BrowserHistoryScenario(
+            string homepage,
+            IOperation<IDesignBrowserHistory>[] operations,
+            IOperationResult[] operationResults)
         {
             Homepage = homepage;
+            _scenario = new Scenario<IDesignBrowserHistory>(operations, operationResults);
         }
 
         public string Homepage { get; }
+
+        public IOperation<IDesignBrowserHistory>[] Operations => _scenario.Operations;
+
+        public IOperationResult[] OperationResults => _scenario.OperationResults;
     }
 
     private sealed class VisitOperation : IOperation<IDesignBrowserHistory>

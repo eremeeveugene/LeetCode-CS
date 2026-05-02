@@ -138,15 +138,24 @@ public abstract class DesignAnOrderedStreamTestsBase
         ];
     }
 
-    public sealed class OrderedStreamScenario : Scenario<IDesignAnOrderedStream>
+    public sealed class OrderedStreamScenario : IScenario<IDesignAnOrderedStream>
     {
-        public OrderedStreamScenario(int size, IOperation<IDesignAnOrderedStream>[] operations,
-            IOperationResult[] operationResults) : base(operations, operationResults)
+        private readonly Scenario<IDesignAnOrderedStream> _scenario;
+
+        public OrderedStreamScenario(
+            int size,
+            IOperation<IDesignAnOrderedStream>[] operations,
+            IOperationResult[] operationResults)
         {
             Size = size;
+            _scenario = new Scenario<IDesignAnOrderedStream>(operations, operationResults);
         }
 
         public int Size { get; }
+
+        public IOperation<IDesignAnOrderedStream>[] Operations => _scenario.Operations;
+
+        public IOperationResult[] OperationResults => _scenario.OperationResults;
     }
 
     private sealed class InsertOperation : IOperation<IDesignAnOrderedStream>

@@ -119,15 +119,24 @@ public abstract class RangeSumQueryImmutableTestsBase
         ];
     }
 
-    public sealed class RangeSumQueryScenario : Scenario<IRangeSumQueryImmutable>
+    public sealed class RangeSumQueryScenario : IScenario<IRangeSumQueryImmutable>
     {
-        public RangeSumQueryScenario(int[] nums, IOperation<IRangeSumQueryImmutable>[] operations,
-            IOperationResult[] operationResults) : base(operations, operationResults)
+        private readonly Scenario<IRangeSumQueryImmutable> _scenario;
+
+        public RangeSumQueryScenario(
+            int[] nums,
+            IOperation<IRangeSumQueryImmutable>[] operations,
+            IOperationResult[] operationResults)
         {
             Nums = nums;
+            _scenario = new Scenario<IRangeSumQueryImmutable>(operations, operationResults);
         }
 
         public int[] Nums { get; }
+
+        public IOperation<IRangeSumQueryImmutable>[] Operations => _scenario.Operations;
+
+        public IOperationResult[] OperationResults => _scenario.OperationResults;
     }
 
     private sealed class SumRangeOperation : IOperation<IRangeSumQueryImmutable>

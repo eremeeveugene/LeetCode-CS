@@ -97,16 +97,24 @@ public abstract class FindElementsInContaminatedBinaryTreeTestsBase
         ];
     }
 
-    public sealed class ContaminatedBinaryTreeScenario : Scenario<IFindElementsInContaminatedBinaryTree>
+    public sealed class ContaminatedBinaryTreeScenario : IScenario<IFindElementsInContaminatedBinaryTree>
     {
-        public ContaminatedBinaryTreeScenario(TreeNode root,
+        private readonly Scenario<IFindElementsInContaminatedBinaryTree> _scenario;
+
+        public ContaminatedBinaryTreeScenario(
+            TreeNode root,
             IOperation<IFindElementsInContaminatedBinaryTree>[] operations,
-            IOperationResult[] operationResults) : base(operations, operationResults)
+            IOperationResult[] operationResults)
         {
             Root = root;
+            _scenario = new Scenario<IFindElementsInContaminatedBinaryTree>(operations, operationResults);
         }
 
         public TreeNode Root { get; }
+
+        public IOperation<IFindElementsInContaminatedBinaryTree>[] Operations => _scenario.Operations;
+
+        public IOperationResult[] OperationResults => _scenario.OperationResults;
     }
 
     private sealed class FindOperation : IOperation<IFindElementsInContaminatedBinaryTree>
