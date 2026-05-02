@@ -10,23 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ZeroArrayTransformation3;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ZeroArrayTransformation3;
 
 public abstract class ZeroArrayTransformation3TestsBase<T> where T : IZeroArrayTransformation3, new()
 {
     [TestMethod]
-    [DataRow("[2,0,2]", "[[0,2],[0,2],[1,1]]", 1)]
-    [DataRow("[1,1,1,1]", "[[1,3],[0,2],[1,3],[1,2]]", 2)]
-    [DataRow("[1,2,3,4]", "[[0,3]]", -1)]
-    public void MaxRemoval_WithGivenNumsAndQueries_ReturnsMaximumRemovablePrefixLength(string numsJson,
-        string queriesJson, int expectedResult)
+    [DynamicData(nameof(TestData))]
+    public void MaxRemoval_WithGivenNumsAndQueries_ReturnsMaximumRemovablePrefixLength(int[] nums, int[][] queries, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var queries = JsonHelper.Parse<int[][]>(queriesJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +27,14 @@ public abstract class ZeroArrayTransformation3TestsBase<T> where T : IZeroArrayT
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> TestData()
+    {
+        yield return [new[] { 2, 0, 2 }, new[] { new[] { 0, 2 }, new[] { 0, 2 }, new[] { 1, 1 } }, 1];
+
+        yield return [new[] { 1, 1, 1, 1 }, new[] { new[] { 1, 3 }, new[] { 0, 2 }, new[] { 1, 3 }, new[] { 1, 2 } }, 2];
+
+        yield return [new[] { 1, 2, 3, 4 }, new[] { new[] { 0, 3 } }, -1];
     }
 }
