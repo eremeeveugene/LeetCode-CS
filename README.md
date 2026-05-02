@@ -279,6 +279,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [783. Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/)
 - [786. K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/description/)
 - [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
+- [788. Rotated Digits](https://leetcode.com/problems/rotated-digits/description/)
 - [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
 - [796. Rotate String](https://leetcode.com/problems/rotate-string/description/)
 - [802. Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/)
