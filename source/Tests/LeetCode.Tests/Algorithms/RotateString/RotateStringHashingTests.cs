@@ -9,28 +9,9 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.RotateString;
+using LeetCode.Algorithms.RotateString;
 
-/// <inheritdoc />
-public sealed class RotateStringBruteForce : IRotateString
-{
-    /// <inheritdoc />
-    /// <remarks>
-    ///     Time complexity - O(n^2)
-    ///     Space complexity - O(1)
-    /// </remarks>
-    public bool RotateString(string s, string goal)
-    {
-        if (s.Length != goal.Length)
-        {
-            return false;
-        }
+namespace LeetCode.Tests.Algorithms.RotateString;
 
-        return s.Where((t, i) => CanRotateString(s, goal, i)).Any();
-    }
-
-    private static bool CanRotateString(string s, string goal, int i)
-    {
-        return !goal.Where((t, j) => s[(i + j) % s.Length] != t).Any();
-    }
-}
+[TestClass]
+public sealed class RotateStringHashingTests : RotateStringTestsBase<RotateStringHashing>;

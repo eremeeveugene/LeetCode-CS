@@ -14,15 +14,18 @@ namespace LeetCode.Algorithms.RotateString;
 /// <inheritdoc />
 public sealed class RotateStringConcatenation : IRotateString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="goal"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool RotateString(string s, string goal)
     {
-        return s.Length == goal.Length && (s + s).Contains(goal);
+        if (s.Length != goal.Length)
+        {
+            return false;
+        }
+
+        return (s + s).Contains(goal);
     }
 }
