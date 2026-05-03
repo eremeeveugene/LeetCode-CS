@@ -23,32 +23,27 @@ public sealed class SmallestStableIndex1PrefixSum : ISmallestStableIndex1
     {
         var n = nums.Length;
 
-        Span<int> prefixMax = stackalloc int[n];
         Span<int> suffixMin = stackalloc int[n];
 
-        prefixMax[0] = nums[0];
-
-        for (var i = 1; i < n; i++)
-        {
-            var num = nums[i];
-            var previousMax = prefixMax[i - 1];
-
-            prefixMax[i] = Math.Max(previousMax, num);
-        }
-
-        suffixMin[n - 1] = nums[n - 1];
+        suffixMin[^1] = nums[^1];
 
         for (var i = n - 2; i >= 0; i--)
         {
-            var num = nums[i];
-            var previousMin = suffixMin[i + 1];
-
-            suffixMin[i] = Math.Min(previousMin, num);
+            suffixMin[i] = Math.Min(nums[i], suffixMin[i + 1]);
         }
 
-        for (var i = 0; i < n; i++)
+        var prefixMax = nums[0];
+
+        if (prefixMax - suffixMin[0] <= k)
         {
-            var instabilityScore = prefixMax[i] - suffixMin[i];
+            return 0;
+        }
+
+        for (var i = 1; i < n; i++)
+        {
+            prefixMax = Math.Max(prefixMax, nums[i]);
+
+            var instabilityScore = prefixMax - suffixMin[i];
 
             if (instabilityScore <= k)
             {
