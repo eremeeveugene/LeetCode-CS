@@ -12,25 +12,58 @@
 namespace LeetCode.Algorithms.RotateString;
 
 /// <inheritdoc />
-public sealed class RotateStringBruteForce : IRotateString
+public sealed class RotateStringHashing : IRotateString
 {
+    private const ulong Base = 131;
+
     /// <inheritdoc />
     /// <remarks>
-    ///     Time complexity - O(n^2)
+    ///     Time complexity - O(n)
     ///     Space complexity - O(1)
     /// </remarks>
     public bool RotateString(string s, string goal)
     {
-        if (s.Length != goal.Length)
+        var n = s.Length;
+
+        if (n != goal.Length)
         {
             return false;
         }
 
-        return s.Where((t, i) => CanRotateString(s, goal, i)).Any();
-    }
+        var goalHash = 0UL;
+        var windowHash = 0UL;
+        var power = 1UL;
 
-    private static bool CanRotateString(string s, string goal, int i)
-    {
-        return !goal.Where((t, j) => s[(i + j) % s.Length] != t).Any();
+        for (var i = 0; i < n; i++)
+        {
+            goalHash = (goalHash * Base) + goal[i];
+            windowHash = (windowHash * Base) + s[i];
+
+            if (i > 0)
+            {
+                power *= Base;
+            }
+        }
+
+        for (var start = 0; start < n; start++)
+        {
+            if (windowHash == goalHash)
+            {
+                return true;
+            }
+
+            if (start == n - 1)
+            {
+                break;
+            }
+
+            var left = s[start];
+            var right = s[start];
+
+            windowHash -= left * power;
+            windowHash = (windowHash * Base) + right;
+        }
+
+        return false;
     }
 }
