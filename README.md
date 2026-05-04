@@ -76,6 +76,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)
 - [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/description/)
 - [46. Permutations](https://leetcode.com/problems/permutations/description/)
+- [48. Rotate Image](https://leetcode.com/problems/rotate-image/description/)
 - [50. Pow(x, n)](https://leetcode.com/problems/powx-n/description/)
 - [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
 - [57. Insert Interval](https://leetcode.com/problems/insert-interval/description/)
