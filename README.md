@@ -675,6 +675,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2749. Minimum Operations to Make the Integer Zero](https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/description/)
 - [2762. Continuous Subarrays](https://leetcode.com/problems/continuous-subarrays/description/)
 - [2769. Find the Maximum Achievable Number](https://leetcode.com/problems/find-the-maximum-achievable-number/description/)
+- [2770. Maximum Number of Jumps to Reach the Last Index](https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/description/)
 - [2779. Maximum Beauty of an Array After Applying Operation](https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/description/)
 - [2780. Minimum Index of a Valid Split](https://leetcode.com/problems/minimum-index-of-a-valid-split/description/)
 - [2785. Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/description/)
