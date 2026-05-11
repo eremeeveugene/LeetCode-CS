@@ -639,6 +639,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2535. Difference Between Element Sum and Digit Sum of an Array](https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/description/)
 - [2537. Count the Number of Good Subarrays](https://leetcode.com/problems/count-the-number-of-good-subarrays/description/)
 - [2540. Minimum Common Value](https://leetcode.com/problems/minimum-common-value/description/)
+- [2553. Separate the Digits in an Array](https://leetcode.com/problems/separate-the-digits-in-an-array/description/)
 - [2554. Maximum Number of Integers to Choose From a Range I](https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i/description/)
 - [2558. Take Gifts From the Richest Pile](https://leetcode.com/problems/take-gifts-from-the-richest-pile/description/)
 - [2559. Count Vowel Strings in Ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges/description/)
