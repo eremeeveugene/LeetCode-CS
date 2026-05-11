@@ -9,33 +9,9 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.SeparateBlackAndWhiteBalls;
+using LeetCode.Algorithms.SeparateTheDigitsInAnArray;
 
-/// <inheritdoc />
-public sealed class SeparateBlackAndWhiteBallsTwoPointers : ISeparateBlackAndWhiteBalls
-{
-    /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(1)
-    /// </summary>
-    public long MinimumSteps(string s)
-    {
-        long minimumSteps = 0;
+namespace LeetCode.Tests.Algorithms.SeparateTheDigitsInAnArray;
 
-        var left = 0;
-
-        for (var right = 0; right < s.Length; right++)
-        {
-            if (s[right] == '1')
-            {
-                continue;
-            }
-
-            minimumSteps += right - left;
-
-            left++;
-        }
-
-        return minimumSteps;
-    }
-}
+[TestClass]
+public sealed class SeparateTheDigitsInAnArraySimulationTests : SeparateTheDigitsInAnArrayTestsBase<SeparateTheDigitsInAnArraySimulation>;

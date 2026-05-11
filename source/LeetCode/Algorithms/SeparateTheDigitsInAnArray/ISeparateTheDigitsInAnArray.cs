@@ -9,33 +9,17 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.SeparateBlackAndWhiteBalls;
+namespace LeetCode.Algorithms.SeparateTheDigitsInAnArray;
 
-/// <inheritdoc />
-public sealed class SeparateBlackAndWhiteBallsTwoPointers : ISeparateBlackAndWhiteBalls
+/// <summary>
+///     https://leetcode.com/problems/separate-the-digits-in-an-array/description/
+/// </summary>
+public interface ISeparateTheDigitsInAnArray
 {
     /// <summary>
-    ///     Time complexity - O(n)
-    ///     Space complexity - O(1)
+    ///     Separates each integer in the array into its digits while preserving the original order.
     /// </summary>
-    public long MinimumSteps(string s)
-    {
-        long minimumSteps = 0;
-
-        var left = 0;
-
-        for (var right = 0; right < s.Length; right++)
-        {
-            if (s[right] == '1')
-            {
-                continue;
-            }
-
-            minimumSteps += right - left;
-
-            left++;
-        }
-
-        return minimumSteps;
-    }
+    /// <param name="nums">The integer array whose values should be separated into digits.</param>
+    /// <returns>An array containing all digits from the input values in their original order.</returns>
+    int[] SeparateDigits(int[] nums);
 }
