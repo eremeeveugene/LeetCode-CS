@@ -135,6 +135,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)
 - [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
 - [214. Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/description/)
+- [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)
 - [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
 - [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/description/)
 - [220. Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/description/)
