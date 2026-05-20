@@ -864,6 +864,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3884. First Matching Character From Both Ends](https://leetcode.com/problems/first-matching-character-from-both-ends/)
 - [3903. Smallest Stable Index I](https://leetcode.com/problems/smallest-stable-index-i/description/)
 - [3908. Valid Digit Number](https://leetcode.com/problems/valid-digit-number/description/)
+- [3912. Valid Elements in an Array](https://leetcode.com/problems/valid-elements-in-an-array/description/)
 - [3917. Count Indices With Opposite Parity](https://leetcode.com/problems/count-indices-with-opposite-parity/description/)
 - [3925. Concatenate Array With Reverse](https://leetcode.com/problems/concatenate-array-with-reverse/description/)
 - [3931. Check Adjacent Digit Differences](https://leetcode.com/problems/check-adjacent-digit-differences/description/)
