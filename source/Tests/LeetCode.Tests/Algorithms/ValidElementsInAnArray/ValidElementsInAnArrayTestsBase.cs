@@ -26,15 +26,15 @@ public abstract class ValidElementsInAnArrayTestsBase<T> where T : IValidElement
     [DataRow(new[] { 1, 1 }, new[] { 1, 1 })]
     [DataRow(new[] { 1, 1, 1 }, new[] { 1, 1 })]
     [DataRow(new[] { 1, 2, 2, 2, 1 }, new[] { 1, 2, 2, 1 })]
-    [DataRow(new[] { 2, 1, 2 }, new[] { 2, 1, 2 })]
-    [DataRow(new[] { 3, 1, 2 }, new[] { 3, 1, 2 })]
+    [DataRow(new[] { 2, 1, 2 }, new[] { 2, 2 })]
+    [DataRow(new[] { 3, 1, 2 }, new[] { 3, 2 })]
     [DataRow(new[] { 2, 1, 3 }, new[] { 2, 3 })]
     [DataRow(new[] { 4, 2, 5, 1, 3 }, new[] { 4, 5, 3 })]
     [DataRow(new[] { 3, 5, 4, 2, 1 }, new[] { 3, 5, 4, 2, 1 })]
     [DataRow(new[] { 1, 3, 2, 5, 4 }, new[] { 1, 3, 5, 4 })]
     [DataRow(new[] { 10, 1, 9, 2, 8, 3 }, new[] { 10, 9, 8, 3 })]
     [DataRow(new[] { 1, 100, 50, 99, 2 }, new[] { 1, 100, 99, 2 })]
-    [DataRow(new[] { 100, 1, 1, 1, 100 }, new[] { 100, 1, 100 })]
+    [DataRow(new[] { 100, 1, 1, 1, 100 }, new[] { 100, 100 })]
     [DataRow(new[] { 2, 3, 3, 1, 4, 4, 2 }, new[] { 2, 3, 4, 4, 2 })]
     public void FindValidElements_WithGivenNums_ReturnsElementsGreaterThanAllLeftOrRightOrEdgeElements(int[] nums, int[] expectedResult)
     {
