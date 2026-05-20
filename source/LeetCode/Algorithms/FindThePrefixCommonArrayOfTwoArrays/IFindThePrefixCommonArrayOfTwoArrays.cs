@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindThePrefixCommonArrayOfTwoArrays;
 /// </summary>
 public interface IFindThePrefixCommonArrayOfTwoArrays
 {
+    /// <summary>
+    ///     Finds the prefix common count array for two integer permutations.
+    /// </summary>
+    /// <param name="a">The first integer permutation.</param>
+    /// <param name="b">The second integer permutation.</param>
+    /// <returns>The prefix common count array for the two permutations.</returns>
     int[] FindThePrefixCommonArray(int[] a, int[] b);
 }

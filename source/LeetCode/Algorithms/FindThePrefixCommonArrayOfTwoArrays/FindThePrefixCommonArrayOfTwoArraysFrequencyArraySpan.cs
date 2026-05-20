@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindThePrefixCommonArrayOfTwoArrays;
 
 /// <inheritdoc />
-public sealed class FindThePrefixCommonArrayOfTwoArraysFrequencyArray : IFindThePrefixCommonArrayOfTwoArrays
+public sealed class FindThePrefixCommonArrayOfTwoArraysFrequencyArraySpan : IFindThePrefixCommonArrayOfTwoArrays
 {
     /// <inheritdoc />
     /// <remarks>
@@ -21,22 +21,30 @@ public sealed class FindThePrefixCommonArrayOfTwoArraysFrequencyArray : IFindThe
     /// </remarks>
     public int[] FindThePrefixCommonArray(int[] a, int[] b)
     {
-        var result = new int[a.Length];
-        var frequencyArray = new int[a.Length];
+        var n = a.Length;
+
+        var result = new int[n];
+
+        Span<byte> frequencyArray = stackalloc byte[n + 1];
+
         var count = 0;
 
-        for (var i = 0; i < a.Length; i++)
+        for (var i = 0; i < n; i++)
         {
-            frequencyArray[a[i] - 1]++;
+            var aItem = a[i];
 
-            if (frequencyArray[a[i] - 1] == 2)
+            frequencyArray[aItem]++;
+
+            if (frequencyArray[aItem] == 2)
             {
                 count++;
             }
 
-            frequencyArray[b[i] - 1]++;
+            var bItem = b[i];
 
-            if (frequencyArray[b[i] - 1] == 2)
+            frequencyArray[bItem]++;
+
+            if (frequencyArray[bItem] == 2)
             {
                 count++;
             }

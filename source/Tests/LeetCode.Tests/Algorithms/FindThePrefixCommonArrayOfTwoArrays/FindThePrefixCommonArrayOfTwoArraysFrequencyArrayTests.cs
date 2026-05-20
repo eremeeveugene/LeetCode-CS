@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FindThePrefixCommonArrayOfTwoArrays;
 namespace LeetCode.Tests.Algorithms.FindThePrefixCommonArrayOfTwoArrays;
 
 [TestClass]
-public sealed class FindThePrefixCommonArrayOfTwoArraysFrequencyArrayTests :
-    FindThePrefixCommonArrayOfTwoArraysTestsBase<FindThePrefixCommonArrayOfTwoArraysFrequencyArray>;
+public sealed class FindThePrefixCommonArrayOfTwoArraysFrequencyArrayTests : FindThePrefixCommonArrayOfTwoArraysTestsBase<FindThePrefixCommonArrayOfTwoArraysFrequencyArray>;

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindThePrefixCommonArrayOfTwoArrays;
 /// <inheritdoc />
 public sealed class FindThePrefixCommonArrayOfTwoArraysHashSet : IFindThePrefixCommonArrayOfTwoArrays
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="a"></param>
-    /// <param name="b"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] FindThePrefixCommonArray(int[] a, int[] b)
     {
         var result = new int[a.Length];

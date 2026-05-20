@@ -9,39 +9,33 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Numerics;
+
 namespace LeetCode.Algorithms.FindThePrefixCommonArrayOfTwoArrays;
 
 /// <inheritdoc />
-public sealed class FindThePrefixCommonArrayOfTwoArraysFrequencyArray : IFindThePrefixCommonArrayOfTwoArrays
+public sealed class FindThePrefixCommonArrayOfTwoArraysBitmask : IFindThePrefixCommonArrayOfTwoArrays
 {
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
+    ///     Space complexity - O(1)
     /// </remarks>
     public int[] FindThePrefixCommonArray(int[] a, int[] b)
     {
-        var result = new int[a.Length];
-        var frequencyArray = new int[a.Length];
-        var count = 0;
+        var n = a.Length;
 
-        for (var i = 0; i < a.Length; i++)
+        var result = new int[n];
+
+        long maskA = 0;
+        long maskB = 0;
+
+        for (var i = 0; i < n; i++)
         {
-            frequencyArray[a[i] - 1]++;
+            maskA |= 1L << a[i];
+            maskB |= 1L << b[i];
 
-            if (frequencyArray[a[i] - 1] == 2)
-            {
-                count++;
-            }
-
-            frequencyArray[b[i] - 1]++;
-
-            if (frequencyArray[b[i] - 1] == 2)
-            {
-                count++;
-            }
-
-            result[i] = count;
+            result[i] = BitOperations.PopCount((ulong)(maskA & maskB));
         }
 
         return result;
