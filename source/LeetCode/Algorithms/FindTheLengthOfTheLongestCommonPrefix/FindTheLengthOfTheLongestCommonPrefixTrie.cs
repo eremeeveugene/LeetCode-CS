@@ -14,14 +14,12 @@ namespace LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix;
 /// <inheritdoc />
 public sealed class FindTheLengthOfTheLongestCommonPrefixTrie : IFindTheLengthOfTheLongestCommonPrefix
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O((n + m) * d), where n is the number of elements in arr1, m is the number of elements in
     ///     arr2, d is the average number of digits in the numbers
     ///     Space complexity - O(n * d), where n is the number of elements in arr1, d is the average number of digits in arr1
-    /// </summary>
-    /// <param name="arr1"></param>
-    /// <param name="arr2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LongestCommonPrefix(int[] arr1, int[] arr2)
     {
         var trie = new Trie(arr1);
