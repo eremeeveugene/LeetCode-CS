@@ -12,13 +12,12 @@
 namespace LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix;
 
 /// <inheritdoc />
-public sealed class FindTheLengthOfTheLongestCommonPrefixHashSet : IFindTheLengthOfTheLongestCommonPrefix
+public sealed class FindTheLengthOfTheLongestCommonPrefixHashSetOptimized : IFindTheLengthOfTheLongestCommonPrefix
 {
     /// <inheritdoc />
     /// <remarks>
-    ///     Time complexity - O(m * d1 + n * d2), where m is the number of elements in arr1, n is the number of elements in
-    ///     arr2, d1 is the average number of digits in arr1, and d2 is the average number of digits in arr2
-    ///     Space complexity - O(m * d1), where m is the number of elements in arr1, d1 is the average number of digits in arr1
+    ///     Time Complexity - O((n + m) * d), where d is the maximum number of digits.
+    ///     Space Complexity - O(n * d), for storing prefixes from arr1.
     /// </remarks>
     public int LongestCommonPrefix(int[] arr1, int[] arr2)
     {
@@ -26,11 +25,13 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixHashSet : IFindTheLengt
 
         for (var i = 0; i < arr1.Length; i++)
         {
-            while (arr1[i] > 0)
-            {
-                arr1PrefixesHashSet.Add(arr1[i]);
+            var value = arr1[i];
 
-                arr1[i] /= 10;
+            while (value > 0)
+            {
+                arr1PrefixesHashSet.Add(value);
+
+                value /= 10;
             }
         }
 
@@ -38,22 +39,40 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixHashSet : IFindTheLengt
 
         for (var i = 0; i < arr2.Length; i++)
         {
-            while (arr2[i] > 0)
+            var value = arr2[i];
+
+            while (value > 0)
             {
-                if (arr1PrefixesHashSet.Contains(arr2[i]))
+                if (arr1PrefixesHashSet.Contains(value))
                 {
+                    var prefixLength = GetDigitsCount(value);
+
+                    longestPrefix = Math.Max(longestPrefix, prefixLength);
+
                     break;
                 }
 
-                arr2[i] /= 10;
-            }
-
-            if (arr2[i] > 0)
-            {
-                longestPrefix = Math.Max(longestPrefix, (int)Math.Floor(Math.Log10(arr2[i])) + 1);
+                value /= 10;
             }
         }
 
         return longestPrefix;
+    }
+
+    private static int GetDigitsCount(int value)
+    {
+        return value switch
+        {
+            > 999999999 => 10,
+            > 99999999 => 9,
+            > 9999999 => 8,
+            > 999999 => 7,
+            > 99999 => 6,
+            > 9999 => 5,
+            > 999 => 4,
+            > 99 => 3,
+            > 9 => 2,
+            _ => 1
+        };
     }
 }

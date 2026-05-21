@@ -14,18 +14,15 @@ namespace LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix;
 /// <inheritdoc />
 public sealed class FindTheLengthOfTheLongestCommonPrefixBruteForce : IFindTheLengthOfTheLongestCommonPrefix
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m * d), where n is the length of arr1, m is the length of arr2, d is the average number of
     ///     digits in the numbers of arr1 and arr2
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="arr1"></param>
-    /// <param name="arr2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LongestCommonPrefix(int[] arr1, int[] arr2)
     {
-        return arr1.Aggregate(0,
-            (current, num1) => arr2.Select(num2 => GetCommonPrefixLength(num1, num2)).Prepend(current).Max());
+        return arr1.Aggregate(0, (current, num1) => arr2.Select(num2 => GetCommonPrefixLength(num1, num2)).Prepend(current).Max());
     }
 
     private static int GetCommonPrefixLength(int num1, int num2)
