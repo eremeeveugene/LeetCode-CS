@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix;
 /// </summary>
 public interface IFindTheLengthOfTheLongestCommonPrefix
 {
+    /// <summary>
+    ///     Finds the length of the longest common prefix between any pair of integers from two arrays.
+    /// </summary>
+    /// <param name="arr1">The first integer array.</param>
+    /// <param name="arr2">The second integer array.</param>
+    /// <returns>The length of the longest common prefix between any integer from <paramref name="arr1" /> and any integer from <paramref name="arr2" />.</returns>
     int LongestCommonPrefix(int[] arr1, int[] arr2);
 }
