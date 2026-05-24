@@ -39,7 +39,7 @@ public abstract class CountCollisionsOnRoadTestsBase<T> where T : ICountCollisio
     [DataRow("RRSLL", 4)]
     [DataRow("LRLR", 2)]
     [DataRow("RLRL", 4)]
-    [DataRow("LLRRSLL", 3)]
+    [DataRow("LLRRSLL", 4)]
     [DataRow("RRLLSSLLRR", 6)]
     public void CountCollisions_WithInputDirections_ReturnsTotalCollisionCount(string directions, int expectedResult)
     {
