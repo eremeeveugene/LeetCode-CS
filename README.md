@@ -684,6 +684,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2770. Maximum Number of Jumps to Reach the Last Index](https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/description/)
 - [2779. Maximum Beauty of an Array After Applying Operation](https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/description/)
 - [2780. Minimum Index of a Valid Split](https://leetcode.com/problems/minimum-index-of-a-valid-split/description/)
+- [2784. Check if Array is Good](https://leetcode.com/problems/check-if-array-is-good/description/)
 - [2785. Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/description/)
 - [2787. Ways to Express an Integer as Sum of Powers](https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/description/)
 - [2788. Split Strings by Separator](https://leetcode.com/problems/split-strings-by-separator/description/)
