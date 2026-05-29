@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.EvaluateBooleanBinaryTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.EvaluateBooleanBinaryTree;
@@ -18,19 +17,11 @@ namespace LeetCode.Tests.Algorithms.EvaluateBooleanBinaryTree;
 public abstract class EvaluateBooleanBinaryTreeTestsBase<T> where T : IEvaluateBooleanBinaryTree, new()
 {
     [TestMethod]
-    [DataRow("[0]", false)]
-    [DataRow("[2,3,3,1,1,0,1]", true)]
-    [DataRow("[2,1,3,null,null,0,1]", true)]
-    [DataRow("[2,0,2,null,null,0,1]", true)]
-    [DataRow("[2,1,3,null,null,1,0]", true)]
-    [DataRow("[2,3,1,1,2,null,null,null,null,0,1]", true)]
-    [DataRow("[3,3,2,0,1,0,0]", false)]
-    [DataRow("[3,3,2,2,3,3,3,0,1,0,0,1,0,0,0]", false)]
-    public void EvaluateTree_GivenJsonTreeStructure_ReturnsBooleanEvaluationResult(string rootJson,
+    [DynamicData(nameof(GetTestData))]
+    public void EvaluateTree_GivenJsonTreeStructure_ReturnsBooleanEvaluationResult(int?[] rootArray,
         bool expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();
@@ -40,5 +31,24 @@ public abstract class EvaluateBooleanBinaryTreeTestsBase<T> where T : IEvaluateB
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 0 }, false];
+
+        yield return [new int?[] { 2, 3, 3, 1, 1, 0, 1 }, true];
+
+        yield return [new int?[] { 2, 1, 3, null, null, 0, 1 }, true];
+
+        yield return [new int?[] { 2, 0, 2, null, null, 0, 1 }, true];
+
+        yield return [new int?[] { 2, 1, 3, null, null, 1, 0 }, true];
+
+        yield return [new int?[] { 2, 3, 1, 1, 2, null, null, null, null, 0, 1 }, true];
+
+        yield return [new int?[] { 3, 3, 2, 0, 1, 0, 0 }, false];
+
+        yield return [new int?[] { 3, 3, 2, 2, 3, 3, 3, 0, 1, 0, 0, 1, 0, 0, 0 }, false];
     }
 }

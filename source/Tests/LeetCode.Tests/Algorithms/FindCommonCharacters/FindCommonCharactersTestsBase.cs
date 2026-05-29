@@ -10,33 +10,28 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindCommonCharacters;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindCommonCharacters;
 
 public abstract class FindCommonCharactersTestsBase<T> where T : IFindCommonCharacters, new()
 {
     [TestMethod]
-    [DataRow("[\"bella\"]", "[\"b\",\"e\",\"l\",\"l\",\"a\"]")]
-    [DataRow("[\"bella\", \"label\", \"roller\"]", "[\"e\",\"l\",\"l\"]")]
-    [DataRow("[\"cool\", \"lock\", \"cook\"]", "[\"c\",\"o\"]")]
-    [DataRow("[\"a\", \"a\", \"a\"]", "[\"a\"]")]
-    [DataRow("[\"\", \"\", \"\"]", "[]")]
-    [DataRow("[\"abc\", \"def\", \"ghi\"]", "[]")]
-    [DataRow("[\"a\"]", "[\"a\"]")]
-    [DataRow("[\"abc\", \"abc\", \"abc\"]", "[\"a\",\"b\",\"c\"]")]
+    [DataRow(new[] { "bella" }, new[] { "b", "e", "l", "l", "a" })]
+    [DataRow(new[] { "bella", "label", "roller" }, new[] { "e", "l", "l" })]
+    [DataRow(new[] { "cool", "lock", "cook" }, new[] { "c", "o" })]
+    [DataRow(new[] { "a", "a", "a" }, new[] { "a" })]
+    [DataRow(new[] { "", "", "" }, new string[] { })]
+    [DataRow(new[] { "abc", "def", "ghi" }, new string[] { })]
+    [DataRow(new[] { "a" }, new[] { "a" })]
+    [DataRow(new[] { "abc", "abc", "abc" }, new[] { "a", "b", "c" })]
     [DataRow(
-        "[\"daaccccd\", \"adacbdda\", \"abddbaba\", \"bacbcbcb\", \"bdaaaddc\", \"cdadacba\", \"bacbdcda\", \"bacdaacd\"]",
-        "[\"a\"]")]
-    public void CommonChars_WithGivenWordsArray_ReturnsCommonCharacters(string wordsJson,
-        string expectedResultJson)
+        new[] { "daaccccd", "adacbdda", "abddbaba", "bacbcbcb", "bdaaaddc", "cdadacba", "bacbdcda", "bacdaacd" },
+        new[] { "a" })]
+    public void CommonChars_WithGivenWordsArray_ReturnsCommonCharacters(string[] words,
+        string[] expectedResult)
     {
         // Arrange
-        var words = JsonHelper.Parse<string[]>(wordsJson);
-
         var solution = new T();
-
-        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
 
         // Act
         var actualResult = solution.CommonChars(words);

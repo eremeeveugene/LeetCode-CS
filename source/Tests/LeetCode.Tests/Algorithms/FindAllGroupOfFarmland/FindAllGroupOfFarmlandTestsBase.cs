@@ -10,33 +10,50 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindAllGroupOfFarmland;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindAllGroupOfFarmland;
 
 public abstract class FindAllGroupOfFarmlandTestsBase<T> where T : IFindAllGroupOfFarmland, new()
 {
     [TestMethod]
-    [DataRow("[[0]]", "[]")]
-    [DataRow("[[1,1],[0,0]]", "[[0,0,0,1]]")]
-    [DataRow("[[1,1],[1,1]]", "[[0,0,1,1]]")]
-    [DataRow("[[0,1],[0,1]]", "[[0,1,1,1]]")]
-    [DataRow("[[1,0,0],[0,1,1],[0,1,1]]", "[[0,0,0,0],[1,1,2,2]]")]
-    [DataRow("[[0,0,0,0,0],[0,1,1,1,0],[0,1,1,1,0],[0,1,1,1,0],[0,0,0,0,0]]", "[[1,1,3,3]]")]
-    public void FindFarmland_WithLandGridInput_ReturnsTopLeftAndBottomRightCoordinatesOfFarmlandGroups(string landJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void FindFarmland_WithLandGridInput_ReturnsTopLeftAndBottomRightCoordinatesOfFarmlandGroups(int[][] land,
+        int[][] expectedResult)
     {
         // Arrange
-        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
-
         var solution = new T();
-
-        var land = JsonHelper.Parse<int[][]>(landJson);
 
         // Act
         var actualResult = solution.FindFarmland(land);
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 0 } }, Array.Empty<int[]>()];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 0, 0 } }, new[] { new[] { 0, 0, 0, 1 } }];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 1, 1 } }, new[] { new[] { 0, 0, 1, 1 } }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 0, 1 } }, new[] { new[] { 0, 1, 1, 1 } }];
+
+        yield return
+        [
+            new[] { new[] { 1, 0, 0 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 } },
+            new[] { new[] { 0, 0, 0, 0 }, new[] { 1, 1, 2, 2 } }
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 1, 1, 0 }, new[] { 0, 1, 1, 1, 0 }, new[] { 0, 1, 1, 1, 0 },
+                new[] { 0, 0, 0, 0, 0 }
+            },
+            new[] { new[] { 1, 1, 3, 3 } }
+        ];
     }
 }

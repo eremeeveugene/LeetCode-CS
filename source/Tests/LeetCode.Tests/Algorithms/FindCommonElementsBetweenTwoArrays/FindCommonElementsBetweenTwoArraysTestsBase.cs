@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindCommonElementsBetweenTwoArrays;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindCommonElementsBetweenTwoArrays;
 
@@ -18,17 +17,13 @@ public abstract class FindCommonElementsBetweenTwoArraysTestsBase<T>
     where T : IFindCommonElementsBetweenTwoArrays, new()
 {
     [TestMethod]
-    [DataRow("[2,3,2]", "[1,2]", "[2,1]")]
-    [DataRow("[4,3,2,3,1]", "[2,2,5,2,3,6]", "[3,4]")]
-    [DataRow("[3,4,2,3]", "[1,5]", "[0,0]")]
-    public void FindIntersectionValues_WithTwoIntegerArrays_ReturnsIntersectionCounts(string nums1Json,
-        string nums2Json, string expectedResultJson)
+    [DataRow(new[] { 2, 3, 2 }, new[] { 1, 2 }, new[] { 2, 1 })]
+    [DataRow(new[] { 4, 3, 2, 3, 1 }, new[] { 2, 2, 5, 2, 3, 6 }, new[] { 3, 4 })]
+    [DataRow(new[] { 3, 4, 2, 3 }, new[] { 1, 5 }, new[] { 0, 0 })]
+    public void FindIntersectionValues_WithTwoIntegerArrays_ReturnsIntersectionCounts(int[] nums1,
+        int[] nums2, int[] expectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper.Parse<int[]>(nums1Json);
-        var nums2 = JsonHelper.Parse<int[]>(nums2Json);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

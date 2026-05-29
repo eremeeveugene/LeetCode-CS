@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTheMinimumAmountOfTimeToBrewPotions;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindTheMinimumAmountOfTimeToBrewPotions;
 
@@ -18,16 +17,13 @@ public abstract class FindTheMinimumAmountOfTimeToBrewPotionsTestsBase<T>
     where T : IFindTheMinimumAmountOfTimeToBrewPotions, new()
 {
     [TestMethod]
-    [DataRow("[1,1,1]", "[1,1,1]", 5)]
-    [DataRow("[1,2,3,4]", "[1,2]", 21)]
-    [DataRow("[1,5,2,4]", "[5,1,4,2]", 110)]
-    public void MinTime_WithSkillsAndManaValues_ReturnsMinimumTotalBrewingTime(string wizardSkillsJson,
-        string potionManaJson, long expectedResult)
+    [DataRow(new[] { 1, 1, 1 }, new[] { 1, 1, 1 }, 5L)]
+    [DataRow(new[] { 1, 2, 3, 4 }, new[] { 1, 2 }, 21L)]
+    [DataRow(new[] { 1, 5, 2, 4 }, new[] { 5, 1, 4, 2 }, 110L)]
+    public void MinTime_WithSkillsAndManaValues_ReturnsMinimumTotalBrewingTime(int[] wizardSkills,
+        int[] potionMana, long expectedResult)
     {
         // Arrange
-        var wizardSkills = JsonHelper.Parse<int[]>(wizardSkillsJson);
-        var potionMana = JsonHelper.Parse<int[]>(potionManaJson);
-
         var solution = new T();
 
         // Act

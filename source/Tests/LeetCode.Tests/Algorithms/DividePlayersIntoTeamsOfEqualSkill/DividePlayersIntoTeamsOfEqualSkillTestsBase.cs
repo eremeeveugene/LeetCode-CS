@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DividePlayersIntoTeamsOfEqualSkill;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DividePlayersIntoTeamsOfEqualSkill;
 
@@ -18,14 +17,12 @@ public abstract class DividePlayersIntoTeamsOfEqualSkillTestsBase<T>
     where T : IDividePlayersIntoTeamsOfEqualSkill, new()
 {
     [TestMethod]
-    [DataRow("[3,2,5,1,3,4]", 22)]
-    [DataRow("[3,4]", 12)]
-    [DataRow("[1,1,2,3]", -1)]
-    public void DividePlayers_WithSkillArray_ReturnsTotalSkillSum(string skillJson, long expectedResult)
+    [DataRow(new[] { 3, 2, 5, 1, 3, 4 }, 22L)]
+    [DataRow(new[] { 3, 4 }, 12L)]
+    [DataRow(new[] { 1, 1, 2, 3 }, -1L)]
+    public void DividePlayers_WithSkillArray_ReturnsTotalSkillSum(int[] skill, long expectedResult)
     {
         // Arrange
-        var skill = JsonHelper.Parse<int[]>(skillJson);
-
         var solution = new T();
 
         // Act

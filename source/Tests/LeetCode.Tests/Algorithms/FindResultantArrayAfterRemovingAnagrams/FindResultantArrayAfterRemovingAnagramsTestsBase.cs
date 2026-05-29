@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindResultantArrayAfterRemovingAnagrams;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindResultantArrayAfterRemovingAnagrams;
 
@@ -18,15 +17,12 @@ public abstract class FindResultantArrayAfterRemovingAnagramsTestsBase<T>
     where T : IFindResultantArrayAfterRemovingAnagrams, new()
 {
     [TestMethod]
-    [DataRow("[\"abba\",\"baba\",\"bbaa\",\"cd\",\"cd\"]", "[\"abba\",\"cd\"]")]
-    [DataRow("[\"a\",\"b\",\"c\",\"d\",\"e\"]", "[\"a\",\"b\",\"c\",\"d\",\"e\"]")]
-    public void RemoveAnagrams_WithWordsArray_RemovesAllSubsequentAnagramDuplicates(string wordsJson,
-        string expectedResultJson)
+    [DataRow(new[] { "abba", "baba", "bbaa", "cd", "cd" }, new[] { "abba", "cd" })]
+    [DataRow(new[] { "a", "b", "c", "d", "e" }, new[] { "a", "b", "c", "d", "e" })]
+    public void RemoveAnagrams_WithWordsArray_RemovesAllSubsequentAnagramDuplicates(string[] words,
+        string[] expectedResult)
     {
         // Arrange
-        var words = JsonHelper.Parse<string[]>(wordsJson);
-        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

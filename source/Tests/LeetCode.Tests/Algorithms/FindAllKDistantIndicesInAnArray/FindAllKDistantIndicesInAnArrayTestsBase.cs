@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindAllKDistantIndicesInAnArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindAllKDistantIndicesInAnArray;
 
 public abstract class FindAllKDistantIndicesInAnArrayTestsBase<T> where T : IFindAllKDistantIndicesInAnArray, new()
 {
     [TestMethod]
-    [DataRow("[3,4,9,1,3,9,5]", 9, 1, "[1,2,3,4,5,6]")]
-    [DataRow("[2,2,2,2,2]", 2, 2, "[0,1,2,3,4]")]
-    public void FindKDistantIndices_WithKeyAndDistance_ReturnsAllIndicesWithinKDistanceOfKey(string numsJson, int key,
-        int k, string expectedResultJson)
+    [DataRow(new[] { 3, 4, 9, 1, 3, 9, 5 }, 9, 1, new[] { 1, 2, 3, 4, 5, 6 })]
+    [DataRow(new[] { 2, 2, 2, 2, 2 }, 2, 2, new[] { 0, 1, 2, 3, 4 })]
+    public void FindKDistantIndices_WithKeyAndDistance_ReturnsAllIndicesWithinKDistanceOfKey(int[] nums, int key,
+        int k, int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

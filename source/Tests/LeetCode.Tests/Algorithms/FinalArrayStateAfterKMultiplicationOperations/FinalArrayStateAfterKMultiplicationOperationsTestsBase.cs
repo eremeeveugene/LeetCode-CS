@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FinalArrayStateAfterKMultiplicationOperations;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FinalArrayStateAfterKMultiplicationOperations;
 
@@ -18,15 +17,12 @@ public abstract class FinalArrayStateAfterKMultiplicationOperationsTestsBase<T>
     where T : IFinalArrayStateAfterKMultiplicationOperations, new()
 {
     [TestMethod]
-    [DataRow("[2,1,3,5,6]", 5, 2, "[8,4,6,5,6]")]
-    [DataRow("[1,2]", 3, 4, "[16,8]")]
-    public void GetFinalState_WithArrayKAndMultiplier_ReturnsTransformedArray(string numsJson, int k,
-        int multiplier, string expectedResultJson)
+    [DataRow(new[] { 2, 1, 3, 5, 6 }, 5, 2, new[] { 8, 4, 6, 5, 6 })]
+    [DataRow(new[] { 1, 2 }, 3, 4, new[] { 16, 8 })]
+    public void GetFinalState_WithArrayKAndMultiplier_ReturnsTransformedArray(int[] nums, int k,
+        int multiplier, int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

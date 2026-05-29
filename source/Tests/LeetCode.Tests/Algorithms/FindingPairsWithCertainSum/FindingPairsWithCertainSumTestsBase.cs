@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindingPairsWithCertainSum;
-using LeetCode.Core.Helpers;
 using LeetCode.Tests.Base.Exceptions;
 
 namespace LeetCode.Tests.Algorithms.FindingPairsWithCertainSum;
@@ -21,19 +20,11 @@ public abstract class FindingPairsWithCertainSumTestsBase
     private const string Add = "add";
 
     [TestMethod]
-    [DataRow("[1, 1, 2, 2, 2, 3]", "[1, 4, 5, 2, 5, 4]",
-        "[\"count\",\"add\",\"count\",\"count\",\"add\",\"add\",\"count\"]",
-        "[[7], [3, 2], [8], [4], [0, 1], [1, 1], [7]]", "[8, 2, 1, 11]")]
+    [DynamicData(nameof(GetTestData))]
     public void DesignNeighborSumService_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        string nums1Json, string nums2Json, string methodsJson, string argumentsJson, string expectedResultJson)
+        int[] nums1, int[] nums2, string[] methods, int[][] arguments, int[] expectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper.Parse<int[]>(nums1Json);
-        var nums2 = JsonHelper.Parse<int[]>(nums2Json);
-        var methods = JsonHelper.Parse<string[]>(methodsJson);
-        var arguments = JsonHelper.Parse<int[][]>(argumentsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = GetSolution(nums1, nums2);
 
         // Act
@@ -56,6 +47,20 @@ public abstract class FindingPairsWithCertainSumTestsBase
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return
+        [
+            new[] { 1, 1, 2, 2, 2, 3 }, new[] { 1, 4, 5, 2, 5, 4 },
+            new[] { "count", "add", "count", "count", "add", "add", "count" },
+            new[]
+            {
+                new[] { 7 }, new[] { 3, 2 }, new[] { 8 }, new[] { 4 }, new[] { 0, 1 }, new[] { 1, 1 }, new[] { 7 }
+            },
+            new[] { 8, 2, 1, 11 }
+        ];
     }
 
     protected abstract IFindingPairsWithCertainSum GetSolution(int[] nums1, int[] nums2);

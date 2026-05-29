@@ -10,23 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindChampion2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindChampion2;
 
 public abstract class FindChampion2TestsBase<T> where T : IFindChampion2, new()
 {
     [TestMethod]
-    [DataRow(1, "[]", 0)]
-    [DataRow(2, "[]", -1)]
-    [DataRow(3, "[[0,1],[1,2]]", 0)]
-    [DataRow(4, "[[0,2],[1,3],[1,2]]", -1)]
-    public void FindChampion_WithNodeCountAndDirectedEdges_ReturnsChampionOrMinusOne(int n, string edgesJson,
+    [DynamicData(nameof(GetTestData))]
+    public void FindChampion_WithNodeCountAndDirectedEdges_ReturnsChampionOrMinusOne(int n, int[][] edges,
         int expectedResult)
     {
         // Arrange
-        var edges = JsonHelper.Parse<int[][]>(edgesJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +28,16 @@ public abstract class FindChampion2TestsBase<T> where T : IFindChampion2, new()
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [1, Array.Empty<int[]>(), 0];
+
+        yield return [2, Array.Empty<int[]>(), -1];
+
+        yield return [3, new[] { new[] { 0, 1 }, new[] { 1, 2 } }, 0];
+
+        yield return [4, new[] { new[] { 0, 2 }, new[] { 1, 3 }, new[] { 1, 2 } }, -1];
     }
 }

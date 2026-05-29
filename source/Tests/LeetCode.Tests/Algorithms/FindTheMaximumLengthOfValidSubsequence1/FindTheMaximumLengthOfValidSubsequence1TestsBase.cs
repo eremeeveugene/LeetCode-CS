@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTheMaximumLengthOfValidSubsequence1;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindTheMaximumLengthOfValidSubsequence1;
 
@@ -18,14 +17,12 @@ public abstract class FindTheMaximumLengthOfValidSubsequence1TestsBase<T>
     where T : IFindTheMaximumLengthOfValidSubsequence1, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,4]", 4)]
-    [DataRow("[1,3]", 2)]
-    [DataRow("[1,2,1,1,2,1,2]", 6)]
-    public void MaximumLength_WithInputArray_ReturnsLengthOfLongestValidSubsequence(string numsJson, int expectedResult)
+    [DataRow(new[] { 1, 2, 3, 4 }, 4)]
+    [DataRow(new[] { 1, 3 }, 2)]
+    [DataRow(new[] { 1, 2, 1, 1, 2, 1, 2 }, 6)]
+    public void MaximumLength_WithInputArray_ReturnsLengthOfLongestValidSubsequence(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -20,14 +19,11 @@ public abstract class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeTestsBas
     where T : IFindCorrespondingNodeOfBinaryTreeInCloneOfThatTree, new()
 {
     [TestMethod]
-    [DataRow("[7]", 7, 7)]
-    [DataRow("[7,4,3,null,null,6,19]", 3, 3)]
-    [DataRow("[8,null,6,null,5,null,4,null,3,null,2,null,1]", 4, 4)]
-    public void GetTargetCopy_GivenOriginalAndClonedTree_ReturnsCorrespondingNode(string treeJson, int targetValue,
+    [DynamicData(nameof(GetTestData))]
+    public void GetTargetCopy_GivenOriginalAndClonedTree_ReturnsCorrespondingNode(int?[] treeArray, int targetValue,
         int expectedResultValue)
     {
         // Arrange
-        var treeArray = JsonHelper.Parse<int?[]>(treeJson);
         var original = TreeNode.ToTreeNodeOrThrow(treeArray);
         var cloned = TreeNode.ToTreeNodeOrThrow(treeArray);
 
@@ -94,5 +90,14 @@ public abstract class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeTestsBas
 
         // Assert
         TreeNodeAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 7 }, 7, 7];
+
+        yield return [new int?[] { 7, 4, 3, null, null, 6, 19 }, 3, 3];
+
+        yield return [new int?[] { 8, null, 6, null, 5, null, 4, null, 3, null, 2, null, 1 }, 4, 4];
     }
 }

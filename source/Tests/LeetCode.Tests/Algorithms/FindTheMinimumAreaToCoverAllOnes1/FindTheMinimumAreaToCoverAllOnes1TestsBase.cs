@@ -10,24 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTheMinimumAreaToCoverAllOnes1;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindTheMinimumAreaToCoverAllOnes1;
 
 public abstract class FindTheMinimumAreaToCoverAllOnes1TestsBase<T> where T : IFindTheMinimumAreaToCoverAllOnes1, new()
 {
     [TestMethod]
-    [DataRow("[[0,1,0],[1,0,1]]", 6)]
-    [DataRow("[[1,0],[0,0]]", 1)]
-    [DataRow("[[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,1,0]]", 1)]
-    [DataRow("[[0,0,0,0,0],[0,0,1,0,0],[0,0,0,0,0],[0,1,0,1,0],[0,0,0,0,0]]", 9)]
-    [DataRow("[[0,0,0,1],[0,0,0,0],[0,1,0,0],[0,0,0,1]]", 12)]
-    public void MinimumArea_WithBinaryGrid_ReturnsMinimumBoundingAreaOfOnes(string gridJson,
+    [DynamicData(nameof(GetTestData))]
+    public void MinimumArea_WithBinaryGrid_ReturnsMinimumBoundingAreaOfOnes(int[][] grid,
         int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper.Parse<int[][]>(gridJson);
-
         var solution = new T();
 
         // Act
@@ -35,5 +28,32 @@ public abstract class FindTheMinimumAreaToCoverAllOnes1TestsBase<T> where T : IF
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 0, 1, 0 }, new[] { 1, 0, 1 } }, 6];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 0, 0 } }, 1];
+
+        yield return
+        [
+            new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 1, 0 } }, 1
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 1, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 0, 1, 0 },
+                new[] { 0, 0, 0, 0, 0 }
+            },
+            9
+        ];
+
+        yield return
+        [
+            new[] { new[] { 0, 0, 0, 1 }, new[] { 0, 0, 0, 0 }, new[] { 0, 1, 0, 0 }, new[] { 0, 0, 0, 1 } }, 12
+        ];
     }
 }

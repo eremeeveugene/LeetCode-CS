@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindEventualSafeStates;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindEventualSafeStates;
 
 public abstract class FindEventualSafeStatesTestsBase<T> where T : IFindEventualSafeStates, new()
 {
     [TestMethod]
-    [DataRow("[[1,2],[2,3],[5],[0],[5],[],[]]", "[2,4,5,6]")]
-    [DataRow("[[1,2,3,4],[1,2],[3,4],[0,4],[]]", "[4]")]
+    [DynamicData(nameof(GetTestData))]
     public void EventualSafeNodes_WithGraphContainingCyclesAndTerminalNodes_ReturnsOnlySafeNodesInAscendingOrder(
-        string graphJson, string expectedResultJson)
+        int[][] graph, int[] expectedResult)
     {
         // Arrange
-        var graph = JsonHelper.Parse<int[][]>(graphJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +28,24 @@ public abstract class FindEventualSafeStatesTestsBase<T> where T : IFindEventual
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return
+        [
+            new[]
+            {
+                new[] { 1, 2 }, new[] { 2, 3 }, new[] { 5 }, new[] { 0 }, new[] { 5 }, Array.Empty<int>(),
+                Array.Empty<int>()
+            },
+            new[] { 2, 4, 5, 6 }
+        ];
+
+        yield return
+        [
+            new[] { new[] { 1, 2, 3, 4 }, new[] { 1, 2 }, new[] { 3, 4 }, new[] { 0, 4 }, Array.Empty<int>() },
+            new[] { 4 }
+        ];
     }
 }

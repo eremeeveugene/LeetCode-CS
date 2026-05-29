@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindNumbersWithEvenNumberOfDigits;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindNumbersWithEvenNumberOfDigits;
 
 public abstract class FindNumbersWithEvenNumberOfDigitsTestsBase<T> where T : IFindNumbersWithEvenNumberOfDigits, new()
 {
     [TestMethod]
-    [DataRow("[555,901,482,1771]", 1)]
-    [DataRow("[12,345,2,6,7896]", 2)]
-    public void FindNumbers_WithArrayOfIntegers_ReturnsCountOfNumbersWithEvenNumberOfDigits(string numsJson,
+    [DataRow(new[] { 555, 901, 482, 1771 }, 1)]
+    [DataRow(new[] { 12, 345, 2, 6, 7896 }, 2)]
+    public void FindNumbers_WithArrayOfIntegers_ReturnsCountOfNumbersWithEvenNumberOfDigits(int[] nums,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

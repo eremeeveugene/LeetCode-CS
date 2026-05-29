@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTheDifferenceOfTwoArrays;
-using LeetCode.Core.Helpers;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.FindTheDifferenceOfTwoArrays;
@@ -18,16 +17,11 @@ namespace LeetCode.Tests.Algorithms.FindTheDifferenceOfTwoArrays;
 public abstract class FindTheDifferenceOfTwoArraysTestsBase<T> where T : IFindTheDifferenceOfTwoArrays, new()
 {
     [TestMethod]
-    [DataRow("[1, 2, 3]", "[2, 4, 6]", "[[1,3],[4,6]]")]
-    [DataRow("[1, 2, 3, 3]", "[1, 1, 2, 2]", "[[3],[]]")]
-    public void FindDifference_WithTwoIntegerArrays_ReturnsUniqueElementsInEachArray(string nums1Json,
-        string nums2Json, string jsonExpectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void FindDifference_WithTwoIntegerArrays_ReturnsUniqueElementsInEachArray(int[] nums1,
+        int[] nums2, int[][] expectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper.Parse<int[]>(nums1Json);
-        var nums2 = JsonHelper.Parse<int[]>(nums2Json);
-        var expectedResult = JsonHelper.Parse<IList<IList<int>>>(jsonExpectedResult);
-
         var solution = new T();
 
         // Act
@@ -35,5 +29,12 @@ public abstract class FindTheDifferenceOfTwoArraysTestsBase<T> where T : IFindTh
 
         // Assert
         NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { 1, 2, 3 }, new[] { 2, 4, 6 }, new[] { new[] { 1, 3 }, new[] { 4, 6 } }];
+
+        yield return [new[] { 1, 2, 3, 3 }, new[] { 1, 1, 2, 2 }, new[] { new[] { 3 }, Array.Empty<int>() }];
     }
 }

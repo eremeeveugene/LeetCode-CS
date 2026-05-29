@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindLuckyIntegerInAnArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindLuckyIntegerInAnArray;
 
@@ -18,14 +17,12 @@ public abstract class FindLuckyIntegerInAnArrayTestsBase<T>
     where T : IFindLuckyIntegerInAnArray, new()
 {
     [TestMethod]
-    [DataRow("[2,2,3,4]", 2)]
-    [DataRow("[1,2,2,3,3,3]", 3)]
-    [DataRow("[2,2,2,3,3]", -1)]
-    public void FindLucky_WithIntegersArray_ReturnsLargestLuckyIntegerOrMinusOne(string arrJson, int expectedResult)
+    [DataRow(new[] { 2, 2, 3, 4 }, 2)]
+    [DataRow(new[] { 1, 2, 2, 3, 3, 3 }, 3)]
+    [DataRow(new[] { 2, 2, 2, 3, 3 }, -1)]
+    public void FindLucky_WithIntegersArray_ReturnsLargestLuckyIntegerOrMinusOne(int[] arr, int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper.Parse<int[]>(arrJson);
-
         var solution = new T();
 
         // Act

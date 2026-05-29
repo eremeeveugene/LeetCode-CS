@@ -10,23 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindingThreeDigitEvenNumbers;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindingThreeDigitEvenNumbers;
 
 public abstract class FindingThreeDigitEvenNumbersTestsBase<T> where T : IFindingThreeDigitEvenNumbers, new()
 {
     [TestMethod]
-    [DataRow("[3,7,5]", "[]")]
-    [DataRow("[2,1,3,0]", "[102,120,130,132,210,230,302,310,312,320]")]
-    [DataRow("[2,2,8,8,2]", "[222,228,282,288,822,828,882]")]
-    public void FindEvenNumbers_WithGivenDigits_ReturnsAllValidThreeDigitEvenNumbers(string digitsJson,
-        string expectedResultJson)
+    [DataRow(new[] { 3, 7, 5 }, new int[] { })]
+    [DataRow(new[] { 2, 1, 3, 0 }, new[] { 102, 120, 130, 132, 210, 230, 302, 310, 312, 320 })]
+    [DataRow(new[] { 2, 2, 8, 8, 2 }, new[] { 222, 228, 282, 288, 822, 828, 882 })]
+    public void FindEvenNumbers_WithGivenDigits_ReturnsAllValidThreeDigitEvenNumbers(int[] digits,
+        int[] expectedResult)
     {
         // Arrange
-        var digits = JsonHelper.Parse<int[]>(digitsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

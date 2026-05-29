@@ -10,23 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindAllDuplicatesInAnArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindAllDuplicatesInAnArray;
 
 public abstract class FindAllDuplicatesInAnArrayTestsBase<T> where T : IFindAllDuplicatesInAnArray, new()
 {
     [TestMethod]
-    [DataRow("[4, 3, 2, 7, 8, 2, 3, 1]", "[2, 3]")]
-    [DataRow("[1, 1, 2]", "[1]")]
-    [DataRow("[1]", "[]")]
-    public void FindDuplicates_WithArrayOfIntegers_ReturnsElementsThatAppearExactlyTwice(string numsJson,
-        string expectedResultJson)
+    [DataRow(new[] { 4, 3, 2, 7, 8, 2, 3, 1 }, new[] { 2, 3 })]
+    [DataRow(new[] { 1, 1, 2 }, new[] { 1 })]
+    [DataRow(new[] { 1 }, new int[] { })]
+    public void FindDuplicates_WithArrayOfIntegers_ReturnsElementsThatAppearExactlyTwice(int[] nums,
+        int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
