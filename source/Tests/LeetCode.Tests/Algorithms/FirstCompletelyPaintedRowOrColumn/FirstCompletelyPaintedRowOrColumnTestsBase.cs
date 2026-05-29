@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FirstCompletelyPaintedRowOrColumn;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FirstCompletelyPaintedRowOrColumn;
 
 public abstract class FirstCompletelyPaintedRowOrColumnTestsBase<T> where T : IFirstCompletelyPaintedRowOrColumn, new()
 {
     [TestMethod]
-    [DataRow("[1,3,4,2]", "[[1,4],[2,3]]", 2)]
-    [DataRow("[2,8,7,4,1,3,5,6,9]", "[[3,2,5],[1,4,6],[8,7,9]]", 3)]
-    public void FirstCompleteIndex_WithSequenceAndMatrix_ReturnsFirstCompletedRowOrColumnIndex(string arrJson,
-        string matJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void FirstCompleteIndex_WithSequenceAndMatrix_ReturnsFirstCompletedRowOrColumnIndex(int[] arr,
+        int[][] mat, int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper.Parse<int[]>(arrJson);
-        var mat = JsonHelper.Parse<int[][]>(matJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +28,12 @@ public abstract class FirstCompletelyPaintedRowOrColumnTestsBase<T> where T : IF
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { 1, 3, 4, 2 }, new[] { new[] { 1, 4 }, new[] { 2, 3 } }, 2];
+
+        yield return [new[] { 2, 8, 7, 4, 1, 3, 5, 6, 9 }, new[] { new[] { 3, 2, 5 }, new[] { 1, 4, 6 }, new[] { 8, 7, 9 } }, 3];
     }
 }

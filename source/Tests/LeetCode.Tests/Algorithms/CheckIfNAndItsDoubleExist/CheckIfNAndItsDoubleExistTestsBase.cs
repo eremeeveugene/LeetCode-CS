@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,20 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CheckIfNAndItsDoubleExist;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CheckIfNAndItsDoubleExist;
 
 public abstract class CheckIfNAndItsDoubleExistTestsBase<T> where T : ICheckIfNAndItsDoubleExist, new()
 {
     [TestMethod]
-    [DataRow("[0,0]", true)]
-    [DataRow("[10,2,5,3]", true)]
-    [DataRow("[3,1,7,11]", false)]
-    [DataRow("[-2,0,10,-19,4,6,-8]", false)]
-    [DataRow("[-10,12,-20,-8,15]", true)]
-    public void CheckIfExist_WithArrayInput_ReturnsTrueIfAnyValueDoublesExist(string arrJson, bool expectedResult)
+    [DataRow(new[] { 0, 0 }, true)]
+    [DataRow(new[] { 10, 2, 5, 3 }, true)]
+    [DataRow(new[] { 3, 1, 7, 11 }, false)]
+    [DataRow(new[] { -2, 0, 10, -19, 4, 6, -8 }, false)]
+    [DataRow(new[] { -10, 12, -20, -8, 15 }, true)]
+    public void CheckIfExist_WithArrayInput_ReturnsTrueIfAnyValueDoublesExist(int[] arr, bool expectedResult)
     {
         // Arrange
-        var arr = JsonHelper.Parse<int[]>(arrJson);
-
         var solution = new T();
 
         // Act

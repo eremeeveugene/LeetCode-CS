@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumDepthOfBinaryTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.MaximumDepthOfBinaryTree;
@@ -18,16 +17,13 @@ namespace LeetCode.Tests.Algorithms.MaximumDepthOfBinaryTree;
 public abstract class MaximumDepthOfBinaryTreeTestsBase<T> where T : IMaximumDepthOfBinaryTree, new()
 {
     [TestMethod]
-    [DataRow("[]", 0)]
-    [DataRow("[3,9,20,null,null,15,7]", 3)]
-    [DataRow("[1,null,2]", 2)]
-    public void MaxDepth_WithBinaryTreeInput_ReturnsMaximumDepthOfTree(string rootJson,
+    [DynamicData(nameof(GetTestData))]
+    public void MaxDepth_WithBinaryTreeInput_ReturnsMaximumDepthOfTree(int?[] rootArray,
         int expectedResult)
     {
         // Arrange
         var solution = new T();
 
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         // Act
@@ -35,5 +31,14 @@ public abstract class MaximumDepthOfBinaryTreeTestsBase<T> where T : IMaximumDep
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), 0];
+
+        yield return [new int?[] { 3, 9, 20, null, null, 15, 7 }, 3];
+
+        yield return [new int?[] { 1, null, 2 }, 2];
     }
 }

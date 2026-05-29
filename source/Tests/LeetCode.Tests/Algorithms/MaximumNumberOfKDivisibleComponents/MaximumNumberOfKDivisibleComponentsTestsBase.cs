@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumNumberOfKDivisibleComponents;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfKDivisibleComponents;
 
@@ -18,15 +17,11 @@ public abstract class MaximumNumberOfKDivisibleComponentsTestsBase<T>
     where T : IMaximumNumberOfKDivisibleComponents, new()
 {
     [TestMethod]
-    [DataRow(5, "[[0,2],[1,2],[1,3],[2,4]]", "[1,8,1,4,4]", 6, 2)]
-    [DataRow(7, "[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]]", "[3,0,6,1,5,2,1]", 3, 3)]
-    public void MaxKDivisibleComponents_WithGraphEdgesAndValues_ReturnsComponentCount(int n, string edgesJson,
-        string valuesJson, int k, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MaxKDivisibleComponents_WithGraphEdgesAndValues_ReturnsComponentCount(int n, int[][] edges,
+        int[] values, int k, int expectedResult)
     {
         // Arrange
-        var edges = JsonHelper.Parse<int[][]>(edgesJson);
-        var values = JsonHelper.Parse<int[]>(valuesJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +29,12 @@ public abstract class MaximumNumberOfKDivisibleComponentsTestsBase<T>
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [5, new[] { new[] { 0, 2 }, new[] { 1, 2 }, new[] { 1, 3 }, new[] { 2, 4 } }, new[] { 1, 8, 1, 4, 4 }, 6, 2];
+
+        yield return [7, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 1, 3 }, new[] { 1, 4 }, new[] { 2, 5 }, new[] { 2, 6 } }, new[] { 3, 0, 6, 1, 5, 2, 1 }, 3, 3];
     }
 }

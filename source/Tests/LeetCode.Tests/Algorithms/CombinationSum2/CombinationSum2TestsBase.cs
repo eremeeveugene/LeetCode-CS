@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CombinationSum2;
-using LeetCode.Core.Helpers;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.CombinationSum2;
@@ -18,15 +17,11 @@ namespace LeetCode.Tests.Algorithms.CombinationSum2;
 public abstract class CombinationSum2TestsBase<T> where T : ICombinationSum2, new()
 {
     [TestMethod]
-    [DataRow("[10, 1, 2, 7, 6, 1, 5]", 8, "[[1,1,6],[1,2,5],[1,7],[2,6]]")]
-    [DataRow("[2, 5, 2, 1, 2]", 5, "[[1,2,2],[5]]")]
+    [DynamicData(nameof(GetTestData))]
     public void CombinationSum2_WithCandidatesAndTarget_ReturnsAllUniqueCombinationsSummingToTarget(
-        string candidatesJson, int target, string expectedResultJson)
+        int[] candidates, int target, IList<IList<int>> expectedResult)
     {
         // Arrange
-        var candidates = JsonHelper.Parse<int[]>(candidatesJson);
-        var expectedResult = JsonHelper.Parse<IList<IList<int>>>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +29,12 @@ public abstract class CombinationSum2TestsBase<T> where T : ICombinationSum2, ne
 
         // Assert
         NestedCollectionAssert.AreEquivalent(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { 10, 1, 2, 7, 6, 1, 5 }, 8, new List<IList<int>> { new List<int> { 1, 1, 6 }, new List<int> { 1, 2, 5 }, new List<int> { 1, 7 }, new List<int> { 2, 6 } }];
+
+        yield return [new[] { 2, 5, 2, 1, 2 }, 5, new List<IList<int>> { new List<int> { 1, 2, 2 }, new List<int> { 5 } }];
     }
 }

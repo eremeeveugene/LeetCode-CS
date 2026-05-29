@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR;
 
@@ -18,13 +17,11 @@ public abstract class CountTripletsThatCanFormTwoArraysOfEqualXORTestsBase<T>
     where T : ICountTripletsThatCanFormTwoArraysOfEqualXOR, new()
 {
     [TestMethod]
-    [DataRow("[2, 3, 1, 6, 7]", 4)]
-    [DataRow("[1, 1, 1, 1, 1]", 10)]
-    public void CountTriplets_WithArrayOfIntegers_ReturnsNumberOfEqualXorTriplets(string arrJson, int expectedResult)
+    [DataRow(new[] { 2, 3, 1, 6, 7 }, 4)]
+    [DataRow(new[] { 1, 1, 1, 1, 1 }, 10)]
+    public void CountTriplets_WithArrayOfIntegers_ReturnsNumberOfEqualXorTriplets(int[] arr, int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper.Parse<int[]>(arrJson);
-
         var solution = new T();
 
         // Act

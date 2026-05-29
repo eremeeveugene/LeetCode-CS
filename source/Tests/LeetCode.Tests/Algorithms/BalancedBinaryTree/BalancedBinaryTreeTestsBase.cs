@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BalancedBinaryTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.BalancedBinaryTree;
@@ -18,17 +17,10 @@ namespace LeetCode.Tests.Algorithms.BalancedBinaryTree;
 public abstract class BalancedBinaryTreeTestsBase<T> where T : IBalancedBinaryTree, new()
 {
     [TestMethod]
-    [DataRow("[]", true)]
-    [DataRow("[1]", true)]
-    [DataRow("[3,9,20,null,null,15,7]", true)]
-    [DataRow("[1,2,2,3,3,null,null,4,4]", false)]
-    [DataRow("[1,2,2,3,null,null,3,4,null,null,4]", false)]
-    [DataRow("[1,2,2,null,null,3,3,4,4]", false)]
-    [DataRow("[1,2,2,3,3,3,3]", true)]
-    public void IsBalanced_WithBinaryTreeRoot_ReturnsTrueIfHeightBalanced(string rootJson, bool expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void IsBalanced_WithBinaryTreeRoot_ReturnsTrueIfHeightBalanced(int?[] rootArray, bool expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();
@@ -38,5 +30,22 @@ public abstract class BalancedBinaryTreeTestsBase<T> where T : IBalancedBinaryTr
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), true];
+
+        yield return [new int?[] { 1 }, true];
+
+        yield return [new int?[] { 3, 9, 20, null, null, 15, 7 }, true];
+
+        yield return [new int?[] { 1, 2, 2, 3, 3, null, null, 4, 4 }, false];
+
+        yield return [new int?[] { 1, 2, 2, 3, null, null, 3, 4, null, null, 4 }, false];
+
+        yield return [new int?[] { 1, 2, 2, null, null, 3, 3, 4, 4 }, false];
+
+        yield return [new int?[] { 1, 2, 2, 3, 3, 3, 3 }, true];
     }
 }

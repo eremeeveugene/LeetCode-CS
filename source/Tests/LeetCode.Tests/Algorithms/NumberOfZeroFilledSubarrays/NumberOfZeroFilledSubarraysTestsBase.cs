@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,20 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.NumberOfZeroFilledSubarrays;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.NumberOfZeroFilledSubarrays;
 
 public abstract class NumberOfZeroFilledSubarraysTestsBase<T> where T : INumberOfZeroFilledSubarrays, new()
 {
     [TestMethod]
-    [DataRow("[1,3,0,0,2,0,0,4]", 6)]
-    [DataRow("[0,0,0,2,0,0]", 9)]
-    [DataRow("[2,10,2019]", 0)]
-    [DataRow("[0,0,0,0,0]", 15)]
-    public void ZeroFilledSubarray_WithNumsArray_ReturnsCountOfZeroFilledSubarrays(string numsJson,
+    [DataRow(new[] { 1, 3, 0, 0, 2, 0, 0, 4 }, 6L)]
+    [DataRow(new[] { 0, 0, 0, 2, 0, 0 }, 9L)]
+    [DataRow(new[] { 2, 10, 2019 }, 0L)]
+    [DataRow(new[] { 0, 0, 0, 0, 0 }, 15L)]
+    public void ZeroFilledSubarray_WithNumsArray_ReturnsCountOfZeroFilledSubarrays(int[] nums,
         long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

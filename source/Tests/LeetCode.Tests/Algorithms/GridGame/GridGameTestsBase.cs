@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.GridGame;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.GridGame;
 
 public abstract class GridGameTestsBase<T> where T : IGridGame, new()
 {
     [TestMethod]
-    [DataRow("[[2,5,4],[1,5,1]]", 4)]
-    [DataRow("[[3,3,1],[8,5,2]]", 4)]
-    [DataRow("[[1,3,1,15],[1,3,3,1]]", 7)]
-    public void GridGame_WithInputGrid_ReturnsPointsCollectedBySecondRobot(string gridJson,
+    [DynamicData(nameof(GetTestData))]
+    public void GridGame_WithInputGrid_ReturnsPointsCollectedBySecondRobot(int[][] grid,
         long expectedResult)
     {
         // Arrange
-        var grid = JsonHelper.Parse<int[][]>(gridJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +28,14 @@ public abstract class GridGameTestsBase<T> where T : IGridGame, new()
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 2, 5, 4 }, new[] { 1, 5, 1 } }, 4L];
+
+        yield return [new[] { new[] { 3, 3, 1 }, new[] { 8, 5, 2 } }, 4L];
+
+        yield return [new[] { new[] { 1, 3, 1, 15 }, new[] { 1, 3, 3, 1 } }, 7L];
     }
 }

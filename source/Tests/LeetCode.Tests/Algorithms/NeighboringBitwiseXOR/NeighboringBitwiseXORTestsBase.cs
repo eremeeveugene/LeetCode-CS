@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.NeighboringBitwiseXOR;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.NeighboringBitwiseXOR;
 
 public abstract class NeighboringBitwiseXORTestsBase<T> where T : INeighboringBitwiseXOR, new()
 {
     [TestMethod]
-    [DataRow("[1,1,0]", true)]
-    [DataRow("[1,1]", true)]
-    [DataRow("[1,0]", false)]
-    public void DoesValidArrayExist_WithDerivedArray_ReturnsWhetherValidArrayExists(string derivedJson,
+    [DataRow(new[] { 1, 1, 0 }, true)]
+    [DataRow(new[] { 1, 1 }, true)]
+    [DataRow(new[] { 1, 0 }, false)]
+    public void DoesValidArrayExist_WithDerivedArray_ReturnsWhetherValidArrayExists(int[] derived,
         bool expectedResult)
     {
         // Arrange
-        var derived = JsonHelper.Parse<int[]>(derivedJson);
-
         var solution = new T();
 
         // Act

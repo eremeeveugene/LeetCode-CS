@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignFrontMiddleBackQueue;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DesignFrontMiddleBackQueue;
 
@@ -25,17 +24,13 @@ public abstract class DesignFrontMiddleBackQueueTestsBase<T> where T : IDesignFr
 
     [TestMethod]
     [DataRow(
-        "[\"pushFront\", \"pushBack\", \"pushMiddle\", \"pushMiddle\", \"popFront\", \"popMiddle\", \"popMiddle\", \"popBack\", \"popFront\"]",
-        "[1, 2, 3, 4, 0, 0, 0, 0, 0]",
-        "[1, 3, 4, 2, -1]")]
+        new[] { "pushFront", "pushBack", "pushMiddle", "pushMiddle", "popFront", "popMiddle", "popMiddle", "popBack", "popFront" },
+        new[] { 1, 2, 3, 4, 0, 0, 0, 0, 0 },
+        new[] { 1, 3, 4, 2, -1 })]
     public void DesignFrontMiddleBackQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        string operationsJson, string argumentsJson, string expectedResultJson)
+        string[] operations, int[] arguments, int[] expectedResult)
     {
         // Arrange
-        var operations = JsonHelper.Parse<string[]>(operationsJson);
-        var arguments = JsonHelper.Parse<int[]>(argumentsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindValidMatrixGivenRowAndColumnSums;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindValidMatrixGivenRowAndColumnSums;
 
@@ -18,16 +17,11 @@ public abstract class FindValidMatrixGivenRowAndColumnSumsTestsBase<T>
     where T : IFindValidMatrixGivenRowAndColumnSums, new()
 {
     [TestMethod]
-    [DataRow("[3, 8]", "[4, 7]", "[[3,0],[1,7]]")]
-    [DataRow("[5, 7, 10]", "[8, 6, 8]", "[[5,0,0],[3,4,0],[0,2,8]]")]
-    public void RestoreMatrix_WithGivenRowAndColumnSums_ReturnsRestoredMatrix(string rowSumJson,
-        string colSumJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void RestoreMatrix_WithGivenRowAndColumnSums_ReturnsRestoredMatrix(int[] rowSum,
+        int[] colSum, int[][] expectedResult)
     {
         // Arrange
-        var rowSum = JsonHelper.Parse<int[]>(rowSumJson);
-        var colSum = JsonHelper.Parse<int[]>(colSumJson);
-        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -35,5 +29,12 @@ public abstract class FindValidMatrixGivenRowAndColumnSumsTestsBase<T>
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { 3, 8 }, new[] { 4, 7 }, new[] { new[] { 3, 0 }, new[] { 1, 7 } }];
+
+        yield return [new[] { 5, 7, 10 }, new[] { 8, 6, 8 }, new[] { new[] { 5, 0, 0 }, new[] { 3, 4, 0 }, new[] { 0, 2, 8 } }];
     }
 }

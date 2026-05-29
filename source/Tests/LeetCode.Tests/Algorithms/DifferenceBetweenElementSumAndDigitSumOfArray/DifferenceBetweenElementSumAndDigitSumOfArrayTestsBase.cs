@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray;
 
@@ -18,14 +17,12 @@ public abstract class DifferenceBetweenElementSumAndDigitSumOfArrayTestsBase<T>
     where T : IDifferenceBetweenElementSumAndDigitSumOfArray, new()
 {
     [TestMethod]
-    [DataRow("[1, 15, 6, 3]", 9)]
-    [DataRow("[1, 2, 3, 4]", 0)]
-    public void DifferenceOfSum_WithArrayOfIntegers_ReturnsAbsoluteDifferenceBetweenElementAndDigitSums(string numsJson,
+    [DataRow(new[] { 1, 15, 6, 3 }, 9)]
+    [DataRow(new[] { 1, 2, 3, 4 }, 0)]
+    public void DifferenceOfSum_WithArrayOfIntegers_ReturnsAbsoluteDifferenceBetweenElementAndDigitSums(int[] nums,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

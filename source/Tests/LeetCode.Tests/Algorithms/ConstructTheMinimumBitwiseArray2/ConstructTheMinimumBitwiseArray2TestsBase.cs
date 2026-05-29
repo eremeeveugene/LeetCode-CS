@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ConstructTheMinimumBitwiseArray2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ConstructTheMinimumBitwiseArray2;
 
 public abstract class ConstructTheMinimumBitwiseArray2TestsBase<T> where T : IConstructTheMinimumBitwiseArray2, new()
 {
     [TestMethod]
-    [DataRow("[2,3,5,7]", "[-1,1,4,3]")]
-    [DataRow("[11,13,31]", "[9,12,15]")]
-    public void MinBitwiseArray_WithPrimeInputs_ConstructsMinimalBitwiseArrayOrSetsToNegativeOne(string numsJson,
-        string expectedResultJson)
+    [DataRow(new[] { 2, 3, 5, 7 }, new[] { -1, 1, 4, 3 })]
+    [DataRow(new[] { 11, 13, 31 }, new[] { 9, 12, 15 })]
+    public void MinBitwiseArray_WithPrimeInputs_ConstructsMinimalBitwiseArrayOrSetsToNegativeOne(int[] nums,
+        int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

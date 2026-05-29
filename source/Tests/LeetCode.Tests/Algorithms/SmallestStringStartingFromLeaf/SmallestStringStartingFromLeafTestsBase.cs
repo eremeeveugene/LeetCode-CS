@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SmallestStringStartingFromLeaf;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.SmallestStringStartingFromLeaf;
@@ -18,15 +17,12 @@ namespace LeetCode.Tests.Algorithms.SmallestStringStartingFromLeaf;
 public abstract class SmallestStringStartingFromLeafTestsBase<T> where T : ISmallestStringStartingFromLeaf, new()
 {
     [TestMethod]
-    [DataRow("[0,1,2,3,4,3,4]", "dba")]
-    [DataRow("[25,1,3,1,3,0,2]", "adz")]
-    [DataRow("[2,2,1,null,1,0,null,0]", "abc")]
+    [DynamicData(nameof(GetTestData))]
     public void SmallestFromLeaf_WithDifferentTreeConfigurations_ReturnsSmallestLexicographicalStringFromLeaf(
-        string rootJson, string? expectedResult)
+        int?[] rootArray, string? expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper.Parse<int?[]>(rootJson);
-        var root = TreeNode.ToTreeNode(arrayRoot);
+        var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();
 
@@ -35,5 +31,14 @@ public abstract class SmallestStringStartingFromLeafTestsBase<T> where T : ISmal
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 0, 1, 2, 3, 4, 3, 4 }, "dba"];
+
+        yield return [new int?[] { 25, 1, 3, 1, 3, 0, 2 }, "adz"];
+
+        yield return [new int?[] { 2, 2, 1, null, 1, 0, null, 0 }, "abc"];
     }
 }

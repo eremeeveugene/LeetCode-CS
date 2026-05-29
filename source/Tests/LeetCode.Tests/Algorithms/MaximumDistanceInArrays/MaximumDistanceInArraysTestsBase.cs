@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,28 +10,34 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumDistanceInArrays;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximumDistanceInArrays;
 
 public abstract class MaximumDistanceInArraysTestsBase<T> where T : IMaximumDistanceInArrays, new()
 {
     [TestMethod]
-    [DataRow("[[1],[1]]", 0)]
-    [DataRow("[[1,4],[0,5]]", 4)]
-    [DataRow("[[1,2,3],[4,5],[1,2,3]]", 4)]
-    public void MaxDistance_WithSortedArrays_ReturnsMaximumAbsoluteDifferenceBetweenTwoArrays(string arraysJson,
+    [DynamicData(nameof(GetTestData))]
+    public void MaxDistance_WithSortedArrays_ReturnsMaximumAbsoluteDifferenceBetweenTwoArrays(int[][] arraysData,
         int expectedResult)
     {
         // Arrange
         var solution = new T();
 
-        var arrays = JsonHelper.Parse<IList<IList<int>>>(arraysJson);
+        var arrays = arraysData.Cast<IList<int>>().ToList();
 
         // Act
         var actualResult = solution.MaxDistance(arrays);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1 }, new[] { 1 } }, 0];
+
+        yield return [new[] { new[] { 1, 4 }, new[] { 0, 5 } }, 4];
+
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { 4, 5 }, new[] { 1, 2, 3 } }, 4];
     }
 }

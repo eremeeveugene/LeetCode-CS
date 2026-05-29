@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignHashSet;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DesignHashSet;
 
@@ -21,18 +20,11 @@ public abstract class DesignHashSetTestsBase<T> where T : IDesignHashSet, new()
     private const string Contains = "contains";
 
     [TestMethod]
-    [DataRow(
-        "[\"add\", \"add\", \"contains\", \"contains\", \"add\", \"contains\", \"remove\", \"contains\"]",
-        "[[1], [2], [1], [3], [2], [2], [2], [2]]",
-        "[true, false, true, false]")]
-    public void DesignHashSet_WithMixedOperations_ProcessesOperationsAccordingToSpecification(string operationsJson,
-        string argumentsJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void DesignHashSet_WithMixedOperations_ProcessesOperationsAccordingToSpecification(string[] operations,
+        int[][] arguments, bool[] expectedResult)
     {
         // Arrange
-        var operations = JsonHelper.Parse<string[]>(operationsJson);
-        var arguments = JsonHelper.Parse<int[][]>(argumentsJson);
-        var expectedResult = JsonHelper.Parse<bool[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -61,5 +53,15 @@ public abstract class DesignHashSetTestsBase<T> where T : IDesignHashSet, new()
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return
+        [
+            new[] { "add", "add", "contains", "contains", "add", "contains", "remove", "contains" },
+            new[] { new[] { 1 }, new[] { 2 }, new[] { 1 }, new[] { 3 }, new[] { 2 }, new[] { 2 }, new[] { 2 }, new[] { 2 } },
+            new[] { true, false, true, false }
+        ];
     }
 }

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FlipColumnsForMaximumNumberOfEqualRows;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FlipColumnsForMaximumNumberOfEqualRows;
 
@@ -18,14 +17,10 @@ public abstract class FlipColumnsForMaximumNumberOfEqualRowsTestsBase<T>
     where T : IFlipColumnsForMaximumNumberOfEqualRows, new()
 {
     [TestMethod]
-    [DataRow("[[0,1],[1,1]]", 1)]
-    [DataRow("[[0,1],[1,0]]", 2)]
-    [DataRow("[[0,0,0],[0,0,1],[1,1,0]]", 2)]
-    public void MaxEqualRowsAfterFlips_WithMatrix_ReturnsMaxRowsAfterFlips(string matrixJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MaxEqualRowsAfterFlips_WithMatrix_ReturnsMaxRowsAfterFlips(int[][] matrix, int expectedResult)
     {
         // Arrange
-        var matrix = JsonHelper.Parse<int[][]>(matrixJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +28,14 @@ public abstract class FlipColumnsForMaximumNumberOfEqualRowsTestsBase<T>
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 0, 1 }, new[] { 1, 1 } }, 1];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 1, 0 } }, 2];
+
+        yield return [new[] { new[] { 0, 0, 0 }, new[] { 0, 0, 1 }, new[] { 1, 1, 0 } }, 2];
     }
 }

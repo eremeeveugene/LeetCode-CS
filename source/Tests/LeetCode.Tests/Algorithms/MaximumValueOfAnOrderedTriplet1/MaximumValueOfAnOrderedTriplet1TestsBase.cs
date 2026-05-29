@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,20 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumValueOfAnOrderedTriplet1;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximumValueOfAnOrderedTriplet1;
 
 public abstract class MaximumValueOfAnOrderedTriplet1TestsBase<T> where T : IMaximumValueOfAnOrderedTriplet1, new()
 {
     [TestMethod]
-    [DataRow("[12,6,1,2,7]", 77)]
-    [DataRow("[1,10,3,4,19]", 133)]
-    [DataRow("[1,2,3]", 0)]
-    [DataRow("[1000000,1,1000000]", 999999000000)]
-    public void MaximumTripletValue_WithIntegerArray_ReturnsMaximumTripletValue(string numsJson,
+    [DataRow(new[] { 12, 6, 1, 2, 7 }, 77L)]
+    [DataRow(new[] { 1, 10, 3, 4, 19 }, 133L)]
+    [DataRow(new[] { 1, 2, 3 }, 0L)]
+    [DataRow(new[] { 1000000, 1, 1000000 }, 999999000000L)]
+    public void MaximumTripletValue_WithIntegerArray_ReturnsMaximumTripletValue(int[] nums,
         long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

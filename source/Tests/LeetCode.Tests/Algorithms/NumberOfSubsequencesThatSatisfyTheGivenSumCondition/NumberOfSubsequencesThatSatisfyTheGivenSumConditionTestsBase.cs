@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.NumberOfSubsequencesThatSatisfyTheGivenSumCondition;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.NumberOfSubsequencesThatSatisfyTheGivenSumCondition;
 
@@ -18,15 +17,13 @@ public abstract class NumberOfSubsequencesThatSatisfyTheGivenSumConditionTestsBa
     where T : INumberOfSubsequencesThatSatisfyTheGivenSumCondition, new()
 {
     [TestMethod]
-    [DataRow("[3,5,6,7]", 9, 4)]
-    [DataRow("[3,3,6,8]", 10, 6)]
-    [DataRow("[2,3,3,4,6,7]", 12, 61)]
+    [DataRow(new[] { 3, 5, 6, 7 }, 9, 4)]
+    [DataRow(new[] { 3, 3, 6, 8 }, 10, 6)]
+    [DataRow(new[] { 2, 3, 3, 4, 6, 7 }, 12, 61)]
     public void NumSubseq_WithIntegerArrayAndTarget_ReturnsCountOfSubsequencesWithMinPlusMaxLessOrEqualTarget(
-        string numsJson, int target, int expectedResult)
+        int[] nums, int target, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

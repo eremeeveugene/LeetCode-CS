@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.AssignCookies;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.AssignCookies;
 
 public abstract class AssignCookiesTestsBase<T> where T : IAssignCookies, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3]", "[1]", 1)]
-    [DataRow("[1,2]", "[1,2,3]", 2)]
-    public void FindContentChildren_WithGivenGreedyAndSizeArrays_ReturnsMaxSatisfiedChildren(string gJson,
-        string sJson, int expectedResult)
+    [DataRow(new[] { 1, 2, 3 }, new[] { 1 }, 1)]
+    [DataRow(new[] { 1, 2 }, new[] { 1, 2, 3 }, 2)]
+    public void FindContentChildren_WithGivenGreedyAndSizeArrays_ReturnsMaxSatisfiedChildren(int[] g,
+        int[] s, int expectedResult)
     {
         // Arrange
-        var g = JsonHelper.Parse<int[]>(gJson);
-        var s = JsonHelper.Parse<int[]>(sJson);
-
         var solution = new T();
 
         // Act

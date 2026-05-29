@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindWinnerOnTicTacToeGame;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindWinnerOnTicTacToeGame;
 
 public abstract class FindWinnerOnTicTacToeGameTestsBase<T> where T : IFindWinnerOnTicTacToeGame, new()
 {
     [TestMethod]
-    [DataRow("[[0,0],[2,0],[1,1],[2,1],[2,2]]", "A")]
-    [DataRow("[[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]]", "B")]
-    [DataRow("[[0,0],[1,1],[2,0],[1,0],[1,2],[2,1],[0,1],[0,2],[2,2]]", "Draw")]
-    public void Tictactoe_WithMoveSequence_ReturnsGameOutcome(string movesJson, string expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void Tictactoe_WithMoveSequence_ReturnsGameOutcome(int[][] moves, string expectedResult)
     {
         // Arrange
-        var moves = JsonHelper.Parse<int[][]>(movesJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +27,14 @@ public abstract class FindWinnerOnTicTacToeGameTestsBase<T> where T : IFindWinne
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 0, 0 }, new[] { 2, 0 }, new[] { 1, 1 }, new[] { 2, 1 }, new[] { 2, 2 } }, "A"];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 1, 1 }, new[] { 0, 1 }, new[] { 0, 2 }, new[] { 1, 0 }, new[] { 2, 0 } }, "B"];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 1, 1 }, new[] { 2, 0 }, new[] { 1, 0 }, new[] { 1, 2 }, new[] { 2, 1 }, new[] { 0, 1 }, new[] { 0, 2 }, new[] { 2, 2 } }, "Draw"];
     }
 }

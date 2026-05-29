@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SpiralMatrix;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SpiralMatrix;
 
 public abstract class SpiralMatrixTestsBase<T> where T : ISpiralMatrix, new()
 {
     [TestMethod]
-    [DataRow("[[1,2,3],[4,5,6],[7,8,9]]", "[1,2,3,6,9,8,7,4,5]")]
-    [DataRow("[[1,2,3,4],[5,6,7,8],[9,10,11,12]]", "[1,2,3,4,8,12,11,10,9,5,6,7]")]
-    public void SpiralOrder_With2DMatrix_ReturnsElementsInSpiralOrder(string matrixJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void SpiralOrder_With2DMatrix_ReturnsElementsInSpiralOrder(int[][] matrix, int[] expectedResult)
     {
         // Arrange
-        var matrix = JsonHelper.Parse<int[][]>(matrixJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +27,12 @@ public abstract class SpiralMatrixTestsBase<T> where T : ISpiralMatrix, new()
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { 4, 5, 6 }, new[] { 7, 8, 9 } }, new[] { 1, 2, 3, 6, 9, 8, 7, 4, 5 }];
+
+        yield return [new[] { new[] { 1, 2, 3, 4 }, new[] { 5, 6, 7, 8 }, new[] { 9, 10, 11, 12 } }, new[] { 1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7 }];
     }
 }

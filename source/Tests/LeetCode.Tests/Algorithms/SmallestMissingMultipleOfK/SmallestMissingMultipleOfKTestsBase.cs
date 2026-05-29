@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SmallestMissingMultipleOfK;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SmallestMissingMultipleOfK;
 
@@ -18,14 +17,12 @@ public abstract class SmallestMissingMultipleOfKTestsBase<T>
     where T : ISmallestMissingMultipleOfK, new()
 {
     [TestMethod]
-    [DataRow("[8,2,3,4,6]", 2, 10)]
-    [DataRow("[1,4,7,10,15]", 5, 5)]
-    public void MissingMultiple_WithArrayAndMultipleK_ReturnsSmallestMissingPositiveMultipleOfK(string numsJson, int k,
+    [DataRow(new[] { 8, 2, 3, 4, 6 }, 2, 10)]
+    [DataRow(new[] { 1, 4, 7, 10, 15 }, 5, 5)]
+    public void MissingMultiple_WithArrayAndMultipleK_ReturnsSmallestMissingPositiveMultipleOfK(int[] nums, int k,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

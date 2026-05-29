@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,20 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BestSightseeingPair;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.BestSightseeingPair;
 
 public abstract class BestSightseeingPairTestsBase<T> where T : IBestSightseeingPair, new()
 {
     [TestMethod]
-    [DataRow("[1,2]", 2)]
-    [DataRow("[8,1,5,2,6]", 11)]
-    public void MaxScoreSightseeingPair_WithValuesArray_ReturnsMaxScore(string valuesJson, int expectedResult)
+    [DataRow(new[] { 1, 2 }, 2)]
+    [DataRow(new[] { 8, 1, 5, 2, 6 }, 11)]
+    public void MaxScoreSightseeingPair_WithValuesArray_ReturnsMaxScore(int[] values, int expectedResult)
     {
         // Arrange
-        var values = JsonHelper.Parse<int[]>(valuesJson);
-
         var solution = new T();
 
         // Act

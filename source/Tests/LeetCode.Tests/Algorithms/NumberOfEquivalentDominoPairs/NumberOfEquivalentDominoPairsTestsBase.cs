@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.NumberOfEquivalentDominoPairs;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.NumberOfEquivalentDominoPairs;
 
 public abstract class NumberOfEquivalentDominoPairsTestsBase<T> where T : INumberOfEquivalentDominoPairs, new()
 {
     [TestMethod]
-    [DataRow("[[1,2],[2,1],[3,4],[5,6]]", 1)]
-    [DataRow("[[1,2],[1,2],[1,1],[1,2],[2,2]]", 3)]
-    [DataRow("[[1,1],[2,2],[1,1],[1,2],[1,2],[1,1]]", 4)]
-    public void NumEquivDominoPairs_WithDominoList_ReturnsCountOfEquivalentPairs(string dominoesJson,
+    [DynamicData(nameof(GetTestData))]
+    public void NumEquivDominoPairs_WithDominoList_ReturnsCountOfEquivalentPairs(int[][] dominoes,
         int expectedResult)
     {
         // Arrange
-        var dominoes = JsonHelper.Parse<int[][]>(dominoesJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +28,14 @@ public abstract class NumberOfEquivalentDominoPairsTestsBase<T> where T : INumbe
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 2 }, new[] { 2, 1 }, new[] { 3, 4 }, new[] { 5, 6 } }, 1];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 1, 2 }, new[] { 1, 1 }, new[] { 1, 2 }, new[] { 2, 2 } }, 3];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 1, 1 }, new[] { 1, 2 }, new[] { 1, 2 }, new[] { 1, 1 } }, 4];
     }
 }

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SmallestPairWithDifferentFrequencies;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SmallestPairWithDifferentFrequencies;
 
@@ -18,16 +17,13 @@ public abstract class SmallestPairWithDifferentFrequenciesTestsBase<T>
     where T : ISmallestPairWithDifferentFrequencies, new()
 {
     [TestMethod]
-    [DataRow("[1,1,2,2,3,4]", "[1,3]")]
-    [DataRow("[1,5]", "[-1,-1]")]
-    [DataRow("[7]", "[-1,-1]")]
-    public void MinDistinctFreqPair_WithInputNums_ReturnsSmallestPairWithDifferentFrequencies(string numsJson,
-        string expectedResultJson)
+    [DataRow(new[] { 1, 1, 2, 2, 3, 4 }, new[] { 1, 3 })]
+    [DataRow(new[] { 1, 5 }, new[] { -1, -1 })]
+    [DataRow(new[] { 7 }, new[] { -1, -1 })]
+    public void MinDistinctFreqPair_WithInputNums_ReturnsSmallestPairWithDifferentFrequencies(int[] nums,
+        int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

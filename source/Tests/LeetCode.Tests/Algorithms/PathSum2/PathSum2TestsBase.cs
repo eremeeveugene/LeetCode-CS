@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.PathSum2;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,25 +18,12 @@ namespace LeetCode.Tests.Algorithms.PathSum2;
 public abstract class PathSum2TestsBase<T> where T : IPathSum2, new()
 {
     [TestMethod]
-    [DataRow("[5,4,8,11,null,13,4,7,2,null,null,5,1]", 22, "[[5,4,11,2],[5,8,4,5]]")]
-    [DataRow("[1,2,3]", 5, "[]")]
-    [DataRow("[1,2]", 0, "[]")]
-    [DataRow("[1,2,3]", 3, "[[1,2]]")]
-    [DataRow("[1,-2,-3,1,3,-2,null,-1]", -1, "[[1,-2,1,-1]]")]
-    [DataRow("[1]", 1, "[[1]]")]
-    [DataRow("[1,2]", 1, "[]")]
-    [DataRow("[1,2,null,3]", 6, "[[1,2,3]]")]
-    [DataRow("[1,2,null,3,4]", 7, "[[1,2,4]]")]
-    [DataRow("[5,4,8,11,null,13,4,7,2,null,null,5,1,6,9]", 30, "[]")]
-    [DataRow("[5,4,8,11,null,13,4,7,2,null,null,5,1]", 26, "[[5,8,13]]")]
-    [DataRow("[10,5,-3,3,2,11,3,-2,1]", 18, "[[10,-3,11]]")]
-    public void PathSum_WithBinaryTreeAndTargetSum_ReturnsAllRootToLeafPathsThatSumToTarget(string jsonRootArray,
-        int targetSum, string expectedJsonResult)
+    [DynamicData(nameof(GetTestData))]
+    public void PathSum_WithBinaryTreeAndTargetSum_ReturnsAllRootToLeafPathsThatSumToTarget(int?[] rootArray,
+        int targetSum, IList<IList<int>> expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(jsonRootArray);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResult = JsonHelper.Parse<IList<IList<int>>>(expectedJsonResult);
 
         var solution = new T();
 
@@ -46,5 +32,32 @@ public abstract class PathSum2TestsBase<T> where T : IPathSum2, new()
 
         // Assert
         NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1 }, 22, new IList<int>[] { new[] { 5, 4, 11, 2 }, new[] { 5, 8, 4, 5 } }];
+
+        yield return [new int?[] { 1, 2, 3 }, 5, Array.Empty<IList<int>>()];
+
+        yield return [new int?[] { 1, 2 }, 0, Array.Empty<IList<int>>()];
+
+        yield return [new int?[] { 1, 2, 3 }, 3, new IList<int>[] { new[] { 1, 2 } }];
+
+        yield return [new int?[] { 1, -2, -3, 1, 3, -2, null, -1 }, -1, new IList<int>[] { new[] { 1, -2, 1, -1 } }];
+
+        yield return [new int?[] { 1 }, 1, new IList<int>[] { new[] { 1 } }];
+
+        yield return [new int?[] { 1, 2 }, 1, Array.Empty<IList<int>>()];
+
+        yield return [new int?[] { 1, 2, null, 3 }, 6, new IList<int>[] { new[] { 1, 2, 3 } }];
+
+        yield return [new int?[] { 1, 2, null, 3, 4 }, 7, new IList<int>[] { new[] { 1, 2, 4 } }];
+
+        yield return [new int?[] { 5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1, 6, 9 }, 30, Array.Empty<IList<int>>()];
+
+        yield return [new int?[] { 5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1 }, 26, new IList<int>[] { new[] { 5, 8, 13 } }];
+
+        yield return [new int?[] { 10, 5, -3, 3, 2, 11, 3, -2, 1 }, 18, new IList<int>[] { new[] { 10, -3, 11 } }];
     }
 }

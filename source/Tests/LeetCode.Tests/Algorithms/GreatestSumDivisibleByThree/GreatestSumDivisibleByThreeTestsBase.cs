@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.GreatestSumDivisibleByThree;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.GreatestSumDivisibleByThree;
 
 public abstract class GreatestSumDivisibleByThreeTestsBase<T> where T : IGreatestSumDivisibleByThree, new()
 {
     [TestMethod]
-    [DataRow("[3,6,5,1,8]", 18)]
-    [DataRow("[4]", 0)]
-    [DataRow("[1,2,3,4,4]", 12)]
-    public void MaxSumDivThree_WithNumsArray_ReturnsMaxSumDivisibleByThree(string numsJson, int expectedResult)
+    [DataRow(new[] { 3, 6, 5, 1, 8 }, 18)]
+    [DataRow(new[] { 4 }, 0)]
+    [DataRow(new[] { 1, 2, 3, 4, 4 }, 12)]
+    public void MaxSumDivThree_WithNumsArray_ReturnsMaxSumDivisibleByThree(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

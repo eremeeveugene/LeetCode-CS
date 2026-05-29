@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.HeightChecker;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.HeightChecker;
 
 public abstract class HeightCheckerTestsBase<T> where T : IHeightChecker, new()
 {
     [TestMethod]
-    [DataRow("[1, 2, 3, 4, 5]", 0)]
-    [DataRow("[5, 1, 2, 3, 4]", 5)]
-    [DataRow("[1, 1, 4, 2, 1, 3]", 3)]
-    public void HeightChecker_WithGivenArray_ReturnsCountOfIndicesWhereHeightsDoNotMatch(string numsJson,
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 0)]
+    [DataRow(new[] { 5, 1, 2, 3, 4 }, 5)]
+    [DataRow(new[] { 1, 1, 4, 2, 1, 3 }, 3)]
+    public void HeightChecker_WithGivenArray_ReturnsCountOfIndicesWhereHeightsDoNotMatch(int[] nums,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

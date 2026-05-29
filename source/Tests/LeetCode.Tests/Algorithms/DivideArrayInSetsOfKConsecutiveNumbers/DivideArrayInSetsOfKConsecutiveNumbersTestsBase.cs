@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers;
 
@@ -18,27 +17,25 @@ public abstract class DivideArrayInSetsOfKConsecutiveNumbersTestsBase<T>
     where T : IDivideArrayInSetsOfKConsecutiveNumbers, new()
 {
     [TestMethod]
-    [DataRow("[]", 1, true)]
-    [DataRow("[1]", 1, true)]
-    [DataRow("[1, 2, 3, 6, 2, 3, 4, 7, 8]", 3, true)]
-    [DataRow("[1, 2, 3, 4, 5]", 4, false)]
-    [DataRow("[8, 10, 12]", 3, false)]
-    [DataRow("[8, 9, 10]", 3, true)]
-    [DataRow("[8, 7, 4, 3, 2, 6, 3, 2, 1]", 3, true)]
-    [DataRow("[1, 2, 3]", 1, true)]
-    [DataRow("[1, 1, 1, 1]", 4, false)]
-    [DataRow("[1, 1, 1, 1]", 3, false)]
-    [DataRow("[1, 2, 3, 4, 5, 6, 7, 8, 9]", 3, true)]
-    [DataRow("[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]", 5, true)]
-    [DataRow("[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]", 4, false)]
-    [DataRow("[3, 3, 2, 2, 1, 1]", 3, true)]
-    [DataRow("[1, 2, 3, 5, 6, 7, 9, 10, 11]", 3, true)]
-    public void IsPossibleDivide_WithArrayAndK_ReturnsIfPossibleToDivideIntoConsecutiveSets(string numsJson, int k,
+    [DataRow(new int[] { }, 1, true)]
+    [DataRow(new[] { 1 }, 1, true)]
+    [DataRow(new[] { 1, 2, 3, 6, 2, 3, 4, 7, 8 }, 3, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 4, false)]
+    [DataRow(new[] { 8, 10, 12 }, 3, false)]
+    [DataRow(new[] { 8, 9, 10 }, 3, true)]
+    [DataRow(new[] { 8, 7, 4, 3, 2, 6, 3, 2, 1 }, 3, true)]
+    [DataRow(new[] { 1, 2, 3 }, 1, true)]
+    [DataRow(new[] { 1, 1, 1, 1 }, 4, false)]
+    [DataRow(new[] { 1, 1, 1, 1 }, 3, false)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, 3, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 5, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 4, false)]
+    [DataRow(new[] { 3, 3, 2, 2, 1, 1 }, 3, true)]
+    [DataRow(new[] { 1, 2, 3, 5, 6, 7, 9, 10, 11 }, 3, true)]
+    public void IsPossibleDivide_WithArrayAndK_ReturnsIfPossibleToDivideIntoConsecutiveSets(int[] nums, int k,
         bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

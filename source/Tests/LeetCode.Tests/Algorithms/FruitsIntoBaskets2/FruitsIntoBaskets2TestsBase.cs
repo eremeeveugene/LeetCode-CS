@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FruitsIntoBaskets2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FruitsIntoBaskets2;
 
 public abstract class FruitsIntoBaskets2TestsBase<T> where T : IFruitsIntoBaskets2, new()
 {
     [TestMethod]
-    [DataRow("[4,2,5]", "[3,5,4]", 1)]
-    [DataRow("[3,6,1]", "[6,4,7]", 0)]
-    public void NumOfUnplacedFruits_WithFruitsAndBaskets_ReturnsCountOfUnplacedFruitTypes(string fruitsJson,
-        string basketsJson, int expectedResult)
+    [DataRow(new[] { 4, 2, 5 }, new[] { 3, 5, 4 }, 1)]
+    [DataRow(new[] { 3, 6, 1 }, new[] { 6, 4, 7 }, 0)]
+    public void NumOfUnplacedFruits_WithFruitsAndBaskets_ReturnsCountOfUnplacedFruitTypes(int[] fruits,
+        int[] baskets, int expectedResult)
     {
         // Arrange
-        var fruits = JsonHelper.Parse<int[]>(fruitsJson);
-        var baskets = JsonHelper.Parse<int[]>(basketsJson);
-
         var solution = new T();
 
         // Act

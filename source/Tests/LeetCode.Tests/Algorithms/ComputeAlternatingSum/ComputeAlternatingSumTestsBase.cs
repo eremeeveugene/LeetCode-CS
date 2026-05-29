@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ComputeAlternatingSum;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ComputeAlternatingSum;
 
 public abstract class ComputeAlternatingSumTestsBase<T> where T : IComputeAlternatingSum, new()
 {
     [TestMethod]
-    [DataRow("[1,3,5,7]", -4)]
-    [DataRow("[100]", 100)]
-    public void AlternatingSum_WithNumsArray_ReturnsAlternatingIndexedSum(string numsJson,
+    [DataRow(new[] { 1, 3, 5, 7 }, -4)]
+    [DataRow(new[] { 100 }, 100)]
+    public void AlternatingSum_WithNumsArray_ReturnsAlternatingIndexedSum(int[] nums,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

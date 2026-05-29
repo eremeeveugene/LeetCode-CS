@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ConcatenationOfArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ConcatenationOfArray;
 
 public abstract class ConcatenationOfArrayTestsBase<T> where T : IConcatenationOfArray, new()
 {
     [TestMethod]
-    [DataRow("[1, 2, 1]", "[1, 2, 1, 1, 2, 1]")]
-    [DataRow("[1, 3, 2, 1]", "[1, 3, 2, 1, 1, 3, 2, 1]")]
-    public void GetConcatenation_WithInputArray_ReturnsConcatenatedArray(string numsJson,
-        string expectedResultJson)
+    [DataRow(new[] { 1, 2, 1 }, new[] { 1, 2, 1, 1, 2, 1 })]
+    [DataRow(new[] { 1, 3, 2, 1 }, new[] { 1, 3, 2, 1, 1, 3, 2, 1 })]
+    public void GetConcatenation_WithInputArray_ReturnsConcatenatedArray(int[] nums,
+        int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,20 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BestTimeToBuyAndSellStock;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.BestTimeToBuyAndSellStock;
 
 public abstract class BestTimeToBuyAndSellStockTestsBase<T> where T : IBestTimeToBuyAndSellStock, new()
 {
     [TestMethod]
-    [DataRow("[7, 1, 5, 3, 6, 4]", 5)]
-    [DataRow("[7, 6, 4, 3, 1]", 0)]
-    public void MaxProfit_GivenPriceArray_ReturnsMaximumProfit(string pricesJson, int expectedResult)
+    [DataRow(new[] { 7, 1, 5, 3, 6, 4 }, 5)]
+    [DataRow(new[] { 7, 6, 4, 3, 1 }, 0)]
+    public void MaxProfit_GivenPriceArray_ReturnsMaximumProfit(int[] prices, int expectedResult)
     {
         // Arrange
-        var prices = JsonHelper.Parse<int[]>(pricesJson);
-
         var solution = new T();
 
         // Act

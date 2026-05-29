@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet build *)",
+      "Bash(Select-String -Pattern \"BagOfTokens|ComputeAlternatingSum|NumberOfEmployeesWhoMetTheTarget|GridGame|WordSearch\")",
+      "Bash(Select-Object -First 20)",
+      "PowerShell($out = dotnet build source/Tests/LeetCode.Tests/LeetCode.Tests.csproj --nologo -clp:ErrorsOnly 2>&1; \\($out | Select-String \"Error\\\\\\(s\\\\\\)\" | Select-Object -First 1\\))"
+    ]
+  }
+}

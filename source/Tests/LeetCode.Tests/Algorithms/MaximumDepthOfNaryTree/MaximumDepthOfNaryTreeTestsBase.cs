@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumDepthOfNaryTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.MaximumDepthOfNaryTree;
@@ -18,13 +17,10 @@ namespace LeetCode.Tests.Algorithms.MaximumDepthOfNaryTree;
 public abstract class MaximumDepthOfNaryTreeTestsBase<T> where T : IMaximumDepthOfNaryTree, new()
 {
     [TestMethod]
-    [DataRow("[]", 0)]
-    [DataRow("[1,null,3,2,4,null,5,6]", 3)]
-    [DataRow("[1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]", 5)]
-    public void MaxDepth_WithNaryTreeInput_ReturnsMaximumDepth(string rootJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MaxDepth_WithNaryTreeInput_ReturnsMaximumDepth(int?[] rootArray, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = Node.ToNode(rootArray);
 
         var solution = new T();
@@ -34,5 +30,14 @@ public abstract class MaximumDepthOfNaryTreeTestsBase<T> where T : IMaximumDepth
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), 0];
+
+        yield return [new int?[] { 1, null, 3, 2, 4, null, 5, 6 }, 3];
+
+        yield return [new int?[] { 1, null, 2, 3, 4, 5, null, null, 6, 7, null, 8, null, 9, 10, null, null, 11, null, 12, null, 13, null, null, 14 }, 5];
     }
 }

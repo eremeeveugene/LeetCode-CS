@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CanMakeArithmeticProgressionFromSequence;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CanMakeArithmeticProgressionFromSequence;
 
@@ -18,15 +17,13 @@ public abstract class CanMakeArithmeticProgressionFromSequenceTestsBase<T>
     where T : ICanMakeArithmeticProgressionFromSequence, new()
 {
     [TestMethod]
-    [DataRow("[3,5,1]", true)]
-    [DataRow("[1,2,4]", false)]
+    [DataRow(new[] { 3, 5, 1 }, true)]
+    [DataRow(new[] { 1, 2, 4 }, false)]
     public void CanMakeArithmeticProgression_GivenArray_ReturnsWhetherArithmeticProgressionIsPossible(
-        string arrJson, bool expectedResult)
+        int[] arr, bool expectedResult)
     {
         // Arrange
         var solution = new T();
-
-        var arr = JsonHelper.Parse<int[]>(arrJson);
 
         // Act
         var actualResult = solution.CanMakeArithmeticProgression(arr);

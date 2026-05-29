@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.PartitionLabels;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.PartitionLabels;
 
 public abstract class PartitionLabelsTestsBase<T> where T : IPartitionLabels, new()
 {
     [TestMethod]
-    [DataRow("ababcbacadefegdehijhklij", "[9,7,8]")]
-    [DataRow("eccbbbbdec", "[10]")]
+    [DataRow("ababcbacadefegdehijhklij", new[] { 9, 7, 8 })]
+    [DataRow("eccbbbbdec", new[] { 10 })]
     public void PartitionLabels_GivenString_ReturnsPartitionSizesWhereEachLetterAppearsOnce(string s,
-        string expectedResultJson)
+        int[] expectedResult)
     {
         // Arrange
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

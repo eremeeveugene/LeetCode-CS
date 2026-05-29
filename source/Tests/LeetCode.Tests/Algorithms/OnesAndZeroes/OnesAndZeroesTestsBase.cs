@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.OnesAndZeroes;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.OnesAndZeroes;
 
 public abstract class OnesAndZeroesTestsBase<T> where T : IOnesAndZeroes, new()
 {
     [TestMethod]
-    [DataRow("[\"10\",\"0001\",\"111001\",\"1\",\"0\"]", 5, 3, 4)]
-    [DataRow("[\"10\",\"0\",\"1\"]", 1, 1, 2)]
-    public void FindMaxForm_WithBinaryStringsAndLimits_ReturnsMaxSubsetSizeWithinZeroAndOneConstraints(string strsJson,
+    [DataRow(new[] { "10", "0001", "111001", "1", "0" }, 5, 3, 4)]
+    [DataRow(new[] { "10", "0", "1" }, 1, 1, 2)]
+    public void FindMaxForm_WithBinaryStringsAndLimits_ReturnsMaxSubsetSizeWithinZeroAndOneConstraints(string[] strs,
         int m, int n, int expectedResult)
     {
         // Arrange
-        var strs = JsonHelper.Parse<string[]>(strsJson);
-
         var solution = new T();
 
         // Act

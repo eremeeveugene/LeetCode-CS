@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindThePowerOfKSizeSubarrays1;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindThePowerOfKSizeSubarrays1;
 
 public abstract class FindThePowerOfKSizeSubarrays1TestsBase<T> where T : IFindThePowerOfKSizeSubarrays1, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,4,3,2,5]", 3, "[3,4,-1,-1,-1]")]
-    [DataRow("[2,2,2,2,2]", 4, "[-1,-1]")]
-    [DataRow("[3,2,3,2,3,2]", 2, "[-1,3,-1,3,-1]")]
-    public void ResultsArray_WithInputArrayAndK_ReturnsTransformedArray(string numsJson, int k,
-        string expectedResultJson)
+    [DataRow(new[] { 1, 2, 3, 4, 3, 2, 5 }, 3, new[] { 3, 4, -1, -1, -1 })]
+    [DataRow(new[] { 2, 2, 2, 2, 2 }, 4, new[] { -1, -1 })]
+    [DataRow(new[] { 3, 2, 3, 2, 3, 2 }, 2, new[] { -1, 3, -1, 3, -1 })]
+    public void ResultsArray_WithInputArrayAndK_ReturnsTransformedArray(int[] nums, int k,
+        int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

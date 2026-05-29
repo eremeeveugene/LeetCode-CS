@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FlippingAnImage;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FlippingAnImage;
 
 public abstract class FlippingAnImageTestsBase<T> where T : IFlippingAnImage, new()
 {
     [TestMethod]
-    [DataRow("[[1,1,0],[1,0,1],[0,0,0]]", "[[1,0,0],[0,1,0],[1,1,1]]")]
-    [DataRow("[[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]", "[[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]")]
+    [DynamicData(nameof(GetTestData))]
     public void FlipAndInvertImage_WithMatrixContainingBinaryValues_ReturnsHorizontallyFlippedAndInvertedMatrix(
-        string imageJson, string expectedResultJson)
+        int[][] image, int[][] expectedResult)
     {
         // Arrange
-        var image = JsonHelper.Parse<int[][]>(imageJson);
-        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +28,12 @@ public abstract class FlippingAnImageTestsBase<T> where T : IFlippingAnImage, ne
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 1, 0 }, new[] { 1, 0, 1 }, new[] { 0, 0, 0 } }, new[] { new[] { 1, 0, 0 }, new[] { 0, 1, 0 }, new[] { 1, 1, 1 } }];
+
+        yield return [new[] { new[] { 1, 1, 0, 0 }, new[] { 1, 0, 0, 1 }, new[] { 0, 1, 1, 1 }, new[] { 1, 0, 1, 0 } }, new[] { new[] { 1, 1, 0, 0 }, new[] { 0, 1, 1, 0 }, new[] { 0, 0, 0, 1 }, new[] { 1, 0, 1, 0 } }];
     }
 }

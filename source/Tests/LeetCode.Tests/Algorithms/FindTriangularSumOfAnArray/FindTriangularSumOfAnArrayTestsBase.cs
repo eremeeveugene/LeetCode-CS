@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,20 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTriangularSumOfAnArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindTriangularSumOfAnArray;
 
 public abstract class FindTriangularSumOfAnArrayTestsBase<T> where T : IFindTriangularSumOfAnArray, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,4,5]", 8)]
-    [DataRow("[5]", 5)]
-    public void TriangularSum_WithNums_ReturnsTriangularSumOfNums(string numsJson, int expectedResult)
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 8)]
+    [DataRow(new[] { 5 }, 5)]
+    public void TriangularSum_WithNums_ReturnsTriangularSumOfNums(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

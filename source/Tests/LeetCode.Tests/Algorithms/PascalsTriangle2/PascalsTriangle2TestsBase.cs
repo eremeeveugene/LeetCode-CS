@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.PascalsTriangle2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.PascalsTriangle2;
 
 public abstract class PascalsTriangle2TestsBase<T> where T : IPascalsTriangle2, new()
 {
     [TestMethod]
-    [DataRow(0, "[1]")]
-    [DataRow(1, "[1,1]")]
-    [DataRow(3, "[1,3,3,1]")]
-    public void GetRow_GivenRowIndex_ReturnsPascalsTriangleRow(int rowIndex, string expectedResultJson)
+    [DataRow(0, new[] { 1 })]
+    [DataRow(1, new[] { 1, 1 })]
+    [DataRow(3, new[] { 1, 3, 3, 1 })]
+    public void GetRow_GivenRowIndex_ReturnsPascalsTriangleRow(int rowIndex, int[] expectedResult)
     {
         // Arrange
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

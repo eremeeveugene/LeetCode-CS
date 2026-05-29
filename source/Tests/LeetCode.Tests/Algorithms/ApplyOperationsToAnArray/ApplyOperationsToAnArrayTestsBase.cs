@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ApplyOperationsToAnArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ApplyOperationsToAnArray;
 
 public abstract class ApplyOperationsToAnArrayTestsBase<T> where T : IApplyOperationsToAnArray, new()
 {
     [TestMethod]
-    [DataRow("[0,1]", "[1,0]")]
-    [DataRow("[1,2,2,1,1,0]", "[1,4,2,0,0,0]")]
-    public void ApplyOperations_WithGivenNumbersArray_ReturnsTransformedArray(string numsJson,
-        string expectedResultJson)
+    [DataRow(new[] { 0, 1 }, new[] { 1, 0 })]
+    [DataRow(new[] { 1, 2, 2, 1, 1, 0 }, new[] { 1, 4, 2, 0, 0, 0 })]
+    public void ApplyOperations_WithGivenNumbersArray_ReturnsTransformedArray(int[] nums,
+        int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BinaryPrefixDivisibleByFive;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.BinaryPrefixDivisibleByFive;
 
 public abstract class BinaryPrefixDivisibleByFiveTestsBase<T> where T : IBinaryPrefixDivisibleByFive, new()
 {
     [TestMethod]
-    [DataRow("[0,1,1]", "[true,false,false]")]
-    [DataRow("[1,1,1]", "[false,false,false]")]
-    public void PrefixesDivBy5_WithNumsArray_ReturnsTrueIfPrefixDivisibleBy5(string numsJson, string expectedResultJson)
+    [DataRow(new[] { 0, 1, 1 }, new[] { true, false, false })]
+    [DataRow(new[] { 1, 1, 1 }, new[] { false, false, false })]
+    public void PrefixesDivBy5_WithNumsArray_ReturnsTrueIfPrefixDivisibleBy5(int[] nums, bool[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<bool[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

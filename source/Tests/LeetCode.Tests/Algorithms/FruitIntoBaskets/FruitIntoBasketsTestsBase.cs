@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FruitIntoBaskets;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FruitIntoBaskets;
 
 public abstract class FruitIntoBasketsTestsBase<T> where T : IFruitIntoBaskets, new()
 {
     [TestMethod]
-    [DataRow("[1,2,1]", 3)]
-    [DataRow("[0,1,2,2]", 3)]
-    [DataRow("[1,2,3,2,2]", 4)]
-    public void TotalFruit_WithTwoBasketLimit_ReturnsMaximumNumberOfFruitsCollected(string fruitsJson,
+    [DataRow(new[] { 1, 2, 1 }, 3)]
+    [DataRow(new[] { 0, 1, 2, 2 }, 3)]
+    [DataRow(new[] { 1, 2, 3, 2, 2 }, 4)]
+    public void TotalFruit_WithTwoBasketLimit_ReturnsMaximumNumberOfFruitsCollected(int[] fruits,
         int expectedResult)
     {
         // Arrange
-        var fruits = JsonHelper.Parse<int[]>(fruitsJson);
-
         var solution = new T();
 
         // Act

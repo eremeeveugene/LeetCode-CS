@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FlipEquivalentBinaryTrees;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.FlipEquivalentBinaryTrees;
@@ -18,16 +17,12 @@ namespace LeetCode.Tests.Algorithms.FlipEquivalentBinaryTrees;
 public abstract class FlipEquivalentBinaryTreesTestsBase<T> where T : IFlipEquivalentBinaryTrees, new()
 {
     [TestMethod]
-    [DataRow("[]", "[]", true)]
-    [DataRow("[]", "[1]", false)]
-    [DataRow("[1,2,3,4,5,6,null,null,null,7,8]", "[1,3,2,null,6,4,5,null,null,null,null,8,7]", true)]
-    public void FlipEquiv_WithTwoTreeRoots_ReturnsIfTheyAreEquivalent(string root1Json, string root2Json,
+    [DynamicData(nameof(GetTestData))]
+    public void FlipEquiv_WithTwoTreeRoots_ReturnsIfTheyAreEquivalent(int?[] root1Array, int?[] root2Array,
         bool expectedResult)
     {
         // Arrange
-        var root1Array = JsonHelper.Parse<int?[]>(root1Json);
         var root1 = TreeNode.ToTreeNode(root1Array);
-        var root2Array = JsonHelper.Parse<int?[]>(root2Json);
         var root2 = TreeNode.ToTreeNode(root2Array);
 
         var solution = new T();
@@ -37,5 +32,14 @@ public abstract class FlipEquivalentBinaryTreesTestsBase<T> where T : IFlipEquiv
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), Array.Empty<int?>(), true];
+
+        yield return [Array.Empty<int?>(), new int?[] { 1 }, false];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, null, null, null, 7, 8 }, new int?[] { 1, 3, 2, null, 6, 4, 5, null, null, null, null, 8, 7 }, true];
     }
 }

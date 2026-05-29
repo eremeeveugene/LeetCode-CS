@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CheckIfGridCanBeCutIntoSections;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CheckIfGridCanBeCutIntoSections;
 
 public abstract class CheckIfGridCanBeCutIntoSectionsTestsBase<T> where T : ICheckIfGridCanBeCutIntoSections, new()
 {
     [TestMethod]
-    [DataRow(5, "[[1,0,5,2],[0,2,2,4],[3,2,5,3],[0,4,4,5]]", true)]
-    [DataRow(4, "[[0,0,1,1],[2,0,3,4],[0,2,2,3],[3,0,4,3]]", true)]
-    [DataRow(4, "[[0,2,2,4],[1,0,3,2],[2,2,3,4],[3,0,4,2],[3,2,4,4]]", false)]
+    [DynamicData(nameof(GetTestData))]
     public void CheckValidCuts_WithGridSizeAndRectangles_ReturnsWhetherGridCanBeCutIntoSections(int n,
-        string rectanglesJson, bool expectedResult)
+        int[][] rectangles, bool expectedResult)
     {
         // Arrange
-        var rectangles = JsonHelper.Parse<int[][]>(rectanglesJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +28,14 @@ public abstract class CheckIfGridCanBeCutIntoSectionsTestsBase<T> where T : IChe
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [5, new[] { new[] { 1, 0, 5, 2 }, new[] { 0, 2, 2, 4 }, new[] { 3, 2, 5, 3 }, new[] { 0, 4, 4, 5 } }, true];
+
+        yield return [4, new[] { new[] { 0, 0, 1, 1 }, new[] { 2, 0, 3, 4 }, new[] { 0, 2, 2, 3 }, new[] { 3, 0, 4, 3 } }, true];
+
+        yield return [4, new[] { new[] { 0, 2, 2, 4 }, new[] { 1, 0, 3, 2 }, new[] { 2, 2, 3, 4 }, new[] { 3, 0, 4, 2 }, new[] { 3, 2, 4, 4 } }, false];
     }
 }

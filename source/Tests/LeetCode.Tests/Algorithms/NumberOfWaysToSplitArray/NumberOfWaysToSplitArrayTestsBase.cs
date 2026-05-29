@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,20 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.NumberOfWaysToSplitArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.NumberOfWaysToSplitArray;
 
 public abstract class NumberOfWaysToSplitArrayTestsBase<T> where T : INumberOfWaysToSplitArray, new()
 {
     [TestMethod]
-    [DataRow("[10,4,-8,7]", 2)]
-    [DataRow("[2,3,1,0]", 2)]
-    public void WaysToSplitArray_WithIntegerArray_ReturnsNumberOfValidSplits(string numsJson, int expectedResult)
+    [DataRow(new[] { 10, 4, -8, 7 }, 2)]
+    [DataRow(new[] { 2, 3, 1, 0 }, 2)]
+    public void WaysToSplitArray_WithIntegerArray_ReturnsNumberOfValidSplits(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

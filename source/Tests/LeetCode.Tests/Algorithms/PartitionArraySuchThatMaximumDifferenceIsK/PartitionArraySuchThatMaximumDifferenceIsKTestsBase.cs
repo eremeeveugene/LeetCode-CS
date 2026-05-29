@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.PartitionArraySuchThatMaximumDifferenceIsK;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.PartitionArraySuchThatMaximumDifferenceIsK;
 
@@ -18,15 +17,13 @@ public abstract class PartitionArraySuchThatMaximumDifferenceIsKTestsBase<T>
     where T : IPartitionArraySuchThatMaximumDifferenceIsK, new()
 {
     [TestMethod]
-    [DataRow("[3,6,1,2,5]", 2, 2)]
-    [DataRow("[1,2,3]", 1, 2)]
-    [DataRow("[2,2,4,5]", 0, 3)]
-    public void PartitionArray_WithElementsDifferingByK_ReturnsMinimumSubsequenceCount(string numsJson, int k,
+    [DataRow(new[] { 3, 6, 1, 2, 5 }, 2, 2)]
+    [DataRow(new[] { 1, 2, 3 }, 1, 2)]
+    [DataRow(new[] { 2, 2, 4, 5 }, 0, 3)]
+    public void PartitionArray_WithElementsDifferingByK_ReturnsMinimumSubsequenceCount(int[] nums, int k,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

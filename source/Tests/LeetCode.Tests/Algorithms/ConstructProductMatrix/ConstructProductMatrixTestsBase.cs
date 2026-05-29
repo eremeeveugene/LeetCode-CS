@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ConstructProductMatrix;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ConstructProductMatrix;
 
 public abstract class ConstructProductMatrixTestsBase<T> where T : IConstructProductMatrix, new()
 {
     [TestMethod]
-    [DataRow("[[1,2],[3,4]]", "[[24,12],[8,6]]")]
-    [DataRow("[[12345],[2],[1]]", "[[2],[0],[0]]")]
-    public void ConstructProductMatrix_WithValidGrid_ReturnsProductOfAllOtherElementsModulo(string gridJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void ConstructProductMatrix_WithValidGrid_ReturnsProductOfAllOtherElementsModulo(int[][] grid,
+        int[][] expectedResult)
     {
         // Arrange
-        var grid = JsonHelper.Parse<int[][]>(gridJson);
-        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +28,12 @@ public abstract class ConstructProductMatrixTestsBase<T> where T : IConstructPro
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 2 }, new[] { 3, 4 } }, new[] { new[] { 24, 12 }, new[] { 8, 6 } }];
+
+        yield return [new[] { new[] { 12345 }, new[] { 2 }, new[] { 1 } }, new[] { new[] { 2 }, new[] { 0 }, new[] { 0 } }];
     }
 }

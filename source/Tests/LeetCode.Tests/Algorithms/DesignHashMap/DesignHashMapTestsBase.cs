@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignHashMap;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DesignHashMap;
 
@@ -21,18 +20,11 @@ public abstract class DesignHashMapTestsBase<T> where T : IDesignHashMap, new()
     private const string Remove = "remove";
 
     [TestMethod]
-    [DataRow(
-        "[\"put\", \"put\", \"get\", \"get\", \"put\", \"get\", \"remove\", \"get\"]",
-        "[[1, 1], [2, 2], [1], [3], [2, 1], [2], [2], [2]]",
-        "[1, -1, 1, -1]")]
-    public void DesignHashMap_WithMixedOperations_ProcessesOperationsAccordingToSpecification(string operationsJson,
-        string argumentsJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void DesignHashMap_WithMixedOperations_ProcessesOperationsAccordingToSpecification(string[] operations,
+        int[][] arguments, int[] expectedResult)
     {
         // Arrange
-        var operations = JsonHelper.Parse<string[]>(operationsJson);
-        var arguments = JsonHelper.Parse<int[][]>(argumentsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -61,5 +53,15 @@ public abstract class DesignHashMapTestsBase<T> where T : IDesignHashMap, new()
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return
+        [
+            new[] { "put", "put", "get", "get", "put", "get", "remove", "get" },
+            new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 1 }, new[] { 3 }, new[] { 2, 1 }, new[] { 2 }, new[] { 2 }, new[] { 2 } },
+            new[] { 1, -1, 1, -1 }
+        ];
     }
 }

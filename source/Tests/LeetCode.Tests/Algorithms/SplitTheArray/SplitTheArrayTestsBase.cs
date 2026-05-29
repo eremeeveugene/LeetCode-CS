@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,20 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SplitTheArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SplitTheArray;
 
 public abstract class SplitTheArrayTestsBase<T> where T : ISplitTheArray, new()
 {
     [TestMethod]
-    [DataRow("[1,1,2,2,3,4]", true)]
-    [DataRow("[1,1,1,1]", false)]
-    public void IsPossibleToSplit_WithNumsArray_ReturnsTrueIfSplitIsValid(string numsJson, bool expectedResult)
+    [DataRow(new[] { 1, 1, 2, 2, 3, 4 }, true)]
+    [DataRow(new[] { 1, 1, 1, 1 }, false)]
+    public void IsPossibleToSplit_WithNumsArray_ReturnsTrueIfSplitIsValid(int[] nums, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

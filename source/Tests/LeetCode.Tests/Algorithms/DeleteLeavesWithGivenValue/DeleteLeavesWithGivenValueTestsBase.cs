@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DeleteLeavesWithGivenValue;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,19 +18,12 @@ namespace LeetCode.Tests.Algorithms.DeleteLeavesWithGivenValue;
 public abstract class DeleteLeavesWithGivenValueTestsBase<T> where T : IDeleteLeavesWithGivenValue, new()
 {
     [TestMethod]
-    [DataRow("[1]", 1, "[]")]
-    [DataRow("[1,2,3,2,null,2,4]", 2, "[1,null,3,null,4]")]
-    [DataRow("[1,3,3,3,2]", 3, "[1,3,null,null,2]")]
-    [DataRow("[1,2,null,2,null,2]", 2, "[1]")]
-    [DataRow("[1,2,2,3,null,null,3,4,null,null,4,5,null,null,5,5,null,null,5,5,null,null,5,5,null,null,5]", 5,
-        "[1,2,2,3,null,null,3,4,null,null,4]")]
-    public void RemoveLeafNodes_GivenTarget_RemovesAllLeafNodesWithTargetValue(string rootJson, int target,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void RemoveLeafNodes_GivenTarget_RemovesAllLeafNodesWithTargetValue(int?[] rootArray, int target,
+        int?[] expectedResultArray)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResultArray = JsonHelper.Parse<int?[]>(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();
@@ -41,5 +33,18 @@ public abstract class DeleteLeavesWithGivenValueTestsBase<T> where T : IDeleteLe
 
         // Assert
         TreeNodeAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 1 }, 1, Array.Empty<int?>()];
+
+        yield return [new int?[] { 1, 2, 3, 2, null, 2, 4 }, 2, new int?[] { 1, null, 3, null, 4 }];
+
+        yield return [new int?[] { 1, 3, 3, 3, 2 }, 3, new int?[] { 1, 3, null, null, 2 }];
+
+        yield return [new int?[] { 1, 2, null, 2, null, 2 }, 2, new int?[] { 1 }];
+
+        yield return [new int?[] { 1, 2, 2, 3, null, null, 3, 4, null, null, 4, 5, null, null, 5, 5, null, null, 5, 5, null, null, 5, 5, null, null, 5 }, 5, new int?[] { 1, 2, 2, 3, null, null, 3, 4, null, null, 4 }];
     }
 }

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.NumberOfSubArraysWithOddSum;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.NumberOfSubArraysWithOddSum;
 
 public abstract class NumberOfSubArraysWithOddSumTestsBase<T> where T : INumberOfSubArraysWithOddSum, new()
 {
     [TestMethod]
-    [DataRow("[1,3,5]", 4)]
-    [DataRow("[2,4,6]", 0)]
-    [DataRow("[1,2,3,4,5,6,7]", 16)]
-    public void NumOfSubarrays_WithGivenArray_ReturnsCountOfOddSumSubarrays(string arrJson, int expectedResult)
+    [DataRow(new[] { 1, 3, 5 }, 4)]
+    [DataRow(new[] { 2, 4, 6 }, 0)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7 }, 16)]
+    public void NumOfSubarrays_WithGivenArray_ReturnsCountOfOddSumSubarrays(int[] arr, int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper.Parse<int[]>(arrJson);
-
         var solution = new T();
 
         // Act

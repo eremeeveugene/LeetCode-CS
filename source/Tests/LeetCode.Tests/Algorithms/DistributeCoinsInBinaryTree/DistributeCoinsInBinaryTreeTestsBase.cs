@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DistributeCoinsInBinaryTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.DistributeCoinsInBinaryTree;
@@ -18,24 +17,11 @@ namespace LeetCode.Tests.Algorithms.DistributeCoinsInBinaryTree;
 public abstract class DistributeCoinsInBinaryTreeTestsBase<T> where T : IDistributeCoinsInBinaryTree, new()
 {
     [TestMethod]
-    [DataRow("[]", 0)]
-    [DataRow("[1]", 0)]
-    [DataRow(
-        "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]",
-        0)]
-    [DataRow("[3,0,0]", 2)]
-    [DataRow("[0,3,0]", 3)]
-    [DataRow(
-        "[2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,0]",
-        100)]
-    [DataRow(
-        "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100]",
-        930)]
-    public void DistributeCoins_WithBinaryTreeInput_ReturnsMinimumNumberOfMovesToBalanceCoins(string rootJson,
+    [DynamicData(nameof(GetTestData))]
+    public void DistributeCoins_WithBinaryTreeInput_ReturnsMinimumNumberOfMovesToBalanceCoins(int?[] rootArray,
         int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();
@@ -45,5 +31,22 @@ public abstract class DistributeCoinsInBinaryTreeTestsBase<T> where T : IDistrib
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), 0];
+
+        yield return [new int?[] { 1 }, 0];
+
+        yield return [new int?[] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, 0];
+
+        yield return [new int?[] { 3, 0, 0 }, 2];
+
+        yield return [new int?[] { 0, 3, 0 }, 3];
+
+        yield return [new int?[] { 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0 }, 100];
+
+        yield return [new int?[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100 }, 930];
     }
 }

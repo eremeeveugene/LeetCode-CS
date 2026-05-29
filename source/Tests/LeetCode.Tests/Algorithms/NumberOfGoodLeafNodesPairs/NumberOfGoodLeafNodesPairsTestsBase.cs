@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.NumberOfGoodLeafNodesPairs;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.NumberOfGoodLeafNodesPairs;
@@ -18,14 +17,11 @@ namespace LeetCode.Tests.Algorithms.NumberOfGoodLeafNodesPairs;
 public abstract class NumberOfGoodLeafNodesPairsTestsBase<T> where T : INumberOfGoodLeafNodesPairs, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,null,4]", 3, 1)]
-    [DataRow("[1,2,3,4,5,6,7]", 3, 2)]
-    [DataRow("[7,1,4,6,null,5,3,null,null,null,null,null,2]", 3, 1)]
-    public void CountPairs_WithBinaryTreeAndDistance_ReturnsNumberOfGoodLeafPairs(string rootJson, int distance,
+    [DynamicData(nameof(GetTestData))]
+    public void CountPairs_WithBinaryTreeAndDistance_ReturnsNumberOfGoodLeafPairs(int?[] rootArray, int distance,
         int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();
@@ -35,5 +31,14 @@ public abstract class NumberOfGoodLeafNodesPairsTestsBase<T> where T : INumberOf
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 1, 2, 3, null, 4 }, 3, 1];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7 }, 3, 2];
+
+        yield return [new int?[] { 7, 1, 4, 6, null, 5, 3, null, null, null, null, null, 2 }, 3, 1];
     }
 }

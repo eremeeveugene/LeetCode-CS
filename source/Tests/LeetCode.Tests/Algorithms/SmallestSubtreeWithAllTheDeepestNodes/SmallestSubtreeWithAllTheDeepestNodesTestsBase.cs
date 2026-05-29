@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SmallestSubtreeWithAllTheDeepestNodes;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -20,24 +19,29 @@ public abstract class SmallestSubtreeWithAllTheDeepestNodesTestsBase<T>
     where T : ISmallestSubtreeWithAllTheDeepestNodes, new()
 {
     [TestMethod]
-    [DataRow("[3,5,1,6,2,0,8,null,null,7,4]", "[2,7,4]")]
-    [DataRow("[1]", "[1]")]
-    [DataRow("[0,1,3,null,2]", "[2]")]
-    public void SubtreeWithAllDeepest_WithBinaryTree_ReturnsSmallestSubtreeWithAllTheDeepestNodes(string rootJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void SubtreeWithAllDeepest_WithBinaryTree_ReturnsSmallestSubtreeWithAllTheDeepestNodes(int?[] rootArray,
+        int?[] expectedResultArray)
     {
         // Arrange
-        var solution = new T();
-
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
-        var expectedResultArray = JsonHelper.Parse<int?[]>(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNodeOrThrow(expectedResultArray);
+
+        var solution = new T();
 
         // Act
         var actualResult = solution.SubtreeWithAllDeepest(root);
 
         // Assert
         TreeNodeAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 3, 5, 1, 6, 2, 0, 8, null, null, 7, 4 }, new int?[] { 2, 7, 4 }];
+
+        yield return [new int?[] { 1 }, new int?[] { 1 }];
+
+        yield return [new int?[] { 0, 1, 3, null, 2 }, new int?[] { 2 }];
     }
 }

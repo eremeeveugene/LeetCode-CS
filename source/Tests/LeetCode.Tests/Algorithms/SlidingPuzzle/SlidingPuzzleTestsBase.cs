@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SlidingPuzzle;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SlidingPuzzle;
 
 public abstract class SlidingPuzzleTestsBase<T> where T : ISlidingPuzzle, new()
 {
     [TestMethod]
-    [DataRow("[[1,2,3],[4,0,5]]", 1)]
-    [DataRow("[[1,2,3],[5,4,0]]", -1)]
-    [DataRow("[[4,1,2],[5,0,3]]", 5)]
-    public void SlidingPuzzle_WithBoard_ReturnsMinimumMovesToSolve(string boardJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void SlidingPuzzle_WithBoard_ReturnsMinimumMovesToSolve(int[][] board, int expectedResult)
     {
         // Arrange
-        var board = JsonHelper.Parse<int[][]>(boardJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +27,14 @@ public abstract class SlidingPuzzleTestsBase<T> where T : ISlidingPuzzle, new()
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { 4, 0, 5 } }, 1];
+
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { 5, 4, 0 } }, -1];
+
+        yield return [new[] { new[] { 4, 1, 2 }, new[] { 5, 0, 3 } }, 5];
     }
 }

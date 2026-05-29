@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CheckIfStringIsPrefixOfArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CheckIfStringIsPrefixOfArray;
 
 public abstract class CheckIfStringIsPrefixOfArrayTestsBase<T> where T : ICheckIfStringIsPrefixOfArray, new()
 {
     [TestMethod]
-    [DataRow("iloveleetcode", "[\"i\",\"love\",\"leetcode\",\"apples\"]", true)]
-    [DataRow("iloveleetcode", "[\"apples\",\"i\",\"love\",\"leetcode\"]", false)]
-    [DataRow("a", "[\"aa\",\"aaaa\",\"banana\"]", false)]
+    [DataRow("iloveleetcode", new[] { "i", "love", "leetcode", "apples" }, true)]
+    [DataRow("iloveleetcode", new[] { "apples", "i", "love", "leetcode" }, false)]
+    [DataRow("a", new[] { "aa", "aaaa", "banana" }, false)]
     public void IsPrefixString_WithGivenStringAndWordsArray_ReturnsWhetherStringIsPrefixConcatenation(string s,
-        string wordsJson, bool expectedResult)
+        string[] words, bool expectedResult)
     {
         // Arrange
-        var words = JsonHelper.Parse<string[]>(wordsJson);
-
         var solution = new T();
 
         // Act

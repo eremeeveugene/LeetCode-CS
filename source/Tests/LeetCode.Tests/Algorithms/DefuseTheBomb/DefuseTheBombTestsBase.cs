@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DefuseTheBomb;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DefuseTheBomb;
 
 public abstract class DefuseTheBombTestsBase<T> where T : IDefuseTheBomb, new()
 {
     [TestMethod]
-    [DataRow("[5,7,1,4]", 3, "[12,10,16,13]")]
-    [DataRow("[1,2,3,4]", 0, "[0,0,0,0]")]
-    [DataRow("[2,4,9,3]", -2, "[12,5,6,13]")]
-    public void Decrypt_WithCodeArrayAndShiftValue_ReturnsDecryptedArray(string codeJson, int k,
-        string expectedResultJson)
+    [DataRow(new[] { 5, 7, 1, 4 }, 3, new[] { 12, 10, 16, 13 })]
+    [DataRow(new[] { 1, 2, 3, 4 }, 0, new[] { 0, 0, 0, 0 })]
+    [DataRow(new[] { 2, 4, 9, 3 }, -2, new[] { 12, 5, 6, 13 })]
+    public void Decrypt_WithCodeArrayAndShiftValue_ReturnsDecryptedArray(int[] code, int k,
+        int[] expectedResult)
     {
         // Arrange
-        var code = JsonHelper.Parse<int[]>(codeJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

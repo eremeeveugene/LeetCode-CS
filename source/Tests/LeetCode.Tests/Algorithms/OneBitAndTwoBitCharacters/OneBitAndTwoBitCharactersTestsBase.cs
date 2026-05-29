@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,20 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.OneBitAndTwoBitCharacters;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.OneBitAndTwoBitCharacters;
 
 public abstract class OneBitAndTwoBitCharactersTestsBase<T> where T : IOneBitAndTwoBitCharacters, new()
 {
     [TestMethod]
-    [DataRow("[1,0,0]", true)]
-    [DataRow("[1,1,1,0]", false)]
-    public void IsOneBitCharacter_WithBitsArray_ReturnsTrueIfLastIsOneBitCharacter(string bitsJson, bool expectedResult)
+    [DataRow(new[] { 1, 0, 0 }, true)]
+    [DataRow(new[] { 1, 1, 1, 0 }, false)]
+    public void IsOneBitCharacter_WithBitsArray_ReturnsTrueIfLastIsOneBitCharacter(int[] bits, bool expectedResult)
     {
         // Arrange
-        var bits = JsonHelper.Parse<int[]>(bitsJson);
-
         var solution = new T();
 
         // Act
