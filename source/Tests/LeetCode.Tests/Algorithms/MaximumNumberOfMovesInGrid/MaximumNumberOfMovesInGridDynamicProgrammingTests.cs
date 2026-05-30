@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumNumberOfMovesInGrid;
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfMovesInGrid;
 
 [TestClass]
-public class MaximumNumberOfMovesInGridDynamicProgrammingTests :
-    MaximumNumberOfMovesInGridTestsBase<MaximumNumberOfMovesInGridDynamicProgramming>;
+public class MaximumNumberOfMovesInGridDynamicProgrammingTests : MaximumNumberOfMovesInGridTestsBase<MaximumNumberOfMovesInGridDynamicProgramming>;

@@ -18,8 +18,7 @@ public abstract class ImplementRouterTestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void ImplementRouter_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        RouterScenario scenario)
+    public void ImplementRouter_WithMixedOperations_ProcessesOperationsAccordingToSpecification(RouterScenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -47,86 +46,29 @@ public abstract class ImplementRouterTestsBase
 
     private static IEnumerable<RouterScenario[]> GetScenarios()
     {
-        yield return
-        [
-            new RouterScenario(3,
-                [
-                    new AddPacketOperation(1, 4, 90),
-                    new AddPacketOperation(2, 5, 90),
-                    new AddPacketOperation(1, 4, 90),
-                    new AddPacketOperation(3, 5, 95),
-                    new AddPacketOperation(4, 5, 105),
-                    new ForwardPacketOperation(),
-                    new AddPacketOperation(5, 2, 110),
-                    new GetCountOperation(5, 100, 110)
-                ],
-                [
-                    new AddPacketOperation.Result(true),
-                    new AddPacketOperation.Result(true),
-                    new AddPacketOperation.Result(false),
-                    new AddPacketOperation.Result(true),
-                    new AddPacketOperation.Result(true),
-                    new ForwardPacketOperation.Result([2, 5, 90]),
-                    new AddPacketOperation.Result(true),
-                    new GetCountOperation.Result(1)
-                ])
-        ];
+        yield return [new RouterScenario(3, [new AddPacketOperation(1, 4, 90), new AddPacketOperation(2, 5, 90), new AddPacketOperation(1, 4, 90), new AddPacketOperation(3, 5, 95), new AddPacketOperation(4, 5, 105), new ForwardPacketOperation(), new AddPacketOperation(5, 2, 110), new GetCountOperation(5, 100, 110)], [new AddPacketOperation.Result(true), new AddPacketOperation.Result(true), new AddPacketOperation.Result(false), new AddPacketOperation.Result(true), new AddPacketOperation.Result(true), new ForwardPacketOperation.Result([2, 5, 90]), new AddPacketOperation.Result(true), new GetCountOperation.Result(1)])];
 
-        yield return
-        [
-            new RouterScenario(4,
-                [
-                    new AddPacketOperation(4, 2, 1),
-                    new AddPacketOperation(3, 2, 1),
-                    new GetCountOperation(2, 1, 1)
-                ],
-                [
-                    new AddPacketOperation.Result(true),
-                    new AddPacketOperation.Result(true),
-                    new GetCountOperation.Result(2)
-                ])
-        ];
+        yield return [new RouterScenario(4, [new AddPacketOperation(4, 2, 1), new AddPacketOperation(3, 2, 1), new GetCountOperation(2, 1, 1)], [new AddPacketOperation.Result(true), new AddPacketOperation.Result(true), new GetCountOperation.Result(2)])];
 
-        yield return
-        [
-            new RouterScenario(5,
-                [
-                    new AddPacketOperation(1, 2, 10),
-                    new AddPacketOperation(1, 2, 10),
-                    new GetCountOperation(2, 10, 10)
-                ],
-                [
-                    new AddPacketOperation.Result(true),
-                    new AddPacketOperation.Result(false),
-                    new GetCountOperation.Result(1)
-                ])
-        ];
+        yield return [new RouterScenario(5, [new AddPacketOperation(1, 2, 10), new AddPacketOperation(1, 2, 10), new GetCountOperation(2, 10, 10)], [new AddPacketOperation.Result(true), new AddPacketOperation.Result(false), new GetCountOperation.Result(1)])];
 
-        yield return
-        [
-            new RouterScenario(3,
-                [
-                    new AddPacketOperation(1, 2, 10),
-                    new ForwardPacketOperation(),
-                    new ForwardPacketOperation()
-                ],
-                [
-                    new AddPacketOperation.Result(true),
-                    new ForwardPacketOperation.Result([1, 2, 10]),
-                    new ForwardPacketOperation.Result([])
-                ])
-        ];
+        yield return [new RouterScenario(3, [new AddPacketOperation(1, 2, 10), new ForwardPacketOperation(), new ForwardPacketOperation()], [new AddPacketOperation.Result(true), new ForwardPacketOperation.Result([1, 2, 10]), new ForwardPacketOperation.Result([])])];
     }
 
-    public sealed class RouterScenario : Scenario<IImplementRouter>
+    public sealed class RouterScenario : IScenario<IImplementRouter>
     {
-        public RouterScenario(int memoryLimit, IOperation<IImplementRouter>[] operations,
-            IOperationResult[] operationResults) : base(operations, operationResults)
+        public RouterScenario(int memoryLimit, IOperation<IImplementRouter>[] operations, IOperationResult[] operationResults)
         {
             MemoryLimit = memoryLimit;
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int MemoryLimit { get; }
+
+        public IOperation<IImplementRouter>[] Operations { get; }
+
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class AddPacketOperation : IOperation<IImplementRouter>
@@ -149,7 +91,9 @@ public abstract class ImplementRouterTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _added;
 
@@ -184,7 +128,9 @@ public abstract class ImplementRouterTestsBase
             return new Result(packet);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int[] _packet;
 
@@ -237,7 +183,9 @@ public abstract class ImplementRouterTestsBase
             return new Result(count);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int _count;
 

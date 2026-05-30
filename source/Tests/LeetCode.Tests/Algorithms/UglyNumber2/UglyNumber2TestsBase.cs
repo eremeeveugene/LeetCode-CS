@@ -25,8 +25,7 @@ public abstract class UglyNumber2TestsBase<T> where T : IUglyNumber2, new()
     [DataRow(1287, 284765625)]
     [DataRow(1689, 2109375000)]
     [DataRow(1690, 2123366400)]
-    public void NthUglyNumber_WithIndexN_ReturnsNthNumberWhoseOnlyPrimeFactorsAreTwoThreeOrFive(int n,
-        int expectedResult)
+    public void NthUglyNumber_WithIndexN_ReturnsNthNumberWhoseOnlyPrimeFactorsAreTwoThreeOrFive(int n, int expectedResult)
     {
         // Arrange
         var solution = new T();

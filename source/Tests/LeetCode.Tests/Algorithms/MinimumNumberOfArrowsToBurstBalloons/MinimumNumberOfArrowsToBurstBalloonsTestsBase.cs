@@ -10,24 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfArrowsToBurstBalloons;
 
-public abstract class MinimumNumberOfArrowsToBurstBalloonsTestsBase<T>
-    where T : IMinimumNumberOfArrowsToBurstBalloons, new()
+public abstract class MinimumNumberOfArrowsToBurstBalloonsTestsBase<T> where T : IMinimumNumberOfArrowsToBurstBalloons, new()
 {
     [TestMethod]
-    [DataRow("[[10,16],[2,8],[1,6],[7,12]]", 2)]
-    [DataRow("[[1,2],[3,4],[5,6],[7,8]]", 4)]
-    [DataRow("[[1,2],[2,3],[3,4],[4,5]]", 2)]
-    [DataRow("[[3,9],[7,12],[3,8],[6,8],[9,10],[2,9],[0,9],[3,9],[0,6],[2,8]]", 2)]
-    public void FindMinArrowShots_GivenDifferentPointCombinations_ReturnsMinimumArrowsRequired(string pointsJson,
-        int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void FindMinArrowShots_GivenDifferentPointCombinations_ReturnsMinimumArrowsRequired(int[][] points, int expectedResult)
     {
         // Arrange
-        var points = JsonHelper.Parse<int[][]>(pointsJson);
-
         var solution = new T();
 
         // Act
@@ -35,5 +27,16 @@ public abstract class MinimumNumberOfArrowsToBurstBalloonsTestsBase<T>
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 10, 16 }, new[] { 2, 8 }, new[] { 1, 6 }, new[] { 7, 12 } }, 2];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 3, 4 }, new[] { 5, 6 }, new[] { 7, 8 } }, 4];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 }, new[] { 4, 5 } }, 2];
+
+        yield return [new[] { new[] { 3, 9 }, new[] { 7, 12 }, new[] { 3, 8 }, new[] { 6, 8 }, new[] { 9, 10 }, new[] { 2, 9 }, new[] { 0, 9 }, new[] { 3, 9 }, new[] { 0, 6 }, new[] { 2, 8 } }, 2];
     }
 }

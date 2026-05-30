@@ -14,5 +14,4 @@ using LeetCode.Algorithms.NumberOfWonderfulSubstrings;
 namespace LeetCode.Tests.Algorithms.NumberOfWonderfulSubstrings;
 
 [TestClass]
-public sealed class NumberOfWonderfulSubstringsDictionaryTests : NumberOfWonderfulSubstringsTestsBase<
-    NumberOfWonderfulSubstringsDictionary>;
+public sealed class NumberOfWonderfulSubstringsDictionaryTests : NumberOfWonderfulSubstringsTestsBase<NumberOfWonderfulSubstringsDictionary>;

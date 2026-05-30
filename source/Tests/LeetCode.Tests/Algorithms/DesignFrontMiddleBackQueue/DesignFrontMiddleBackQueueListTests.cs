@@ -14,5 +14,4 @@ using LeetCode.Algorithms.DesignFrontMiddleBackQueue;
 namespace LeetCode.Tests.Algorithms.DesignFrontMiddleBackQueue;
 
 [TestClass]
-public sealed class DesignFrontMiddleBackQueueListTests :
-    DesignFrontMiddleBackQueueTestsBase<DesignFrontMiddleBackQueueList>;
+public sealed class DesignFrontMiddleBackQueueListTests : DesignFrontMiddleBackQueueTestsBase<DesignFrontMiddleBackQueueList>;

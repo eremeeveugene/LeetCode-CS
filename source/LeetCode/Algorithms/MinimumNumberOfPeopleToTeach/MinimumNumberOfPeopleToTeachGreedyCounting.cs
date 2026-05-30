@@ -51,8 +51,7 @@ public sealed class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberO
 
             for (var language = 0; language < languagesCount; language++)
             {
-                if (!userLanguages[GetUserLanguageIndex(userA, language, languagesCount)] ||
-                    !userLanguages[GetUserLanguageIndex(userB, language, languagesCount)])
+                if (!userLanguages[GetUserLanguageIndex(userA, language, languagesCount)] || !userLanguages[GetUserLanguageIndex(userB, language, languagesCount)])
                 {
                     continue;
                 }

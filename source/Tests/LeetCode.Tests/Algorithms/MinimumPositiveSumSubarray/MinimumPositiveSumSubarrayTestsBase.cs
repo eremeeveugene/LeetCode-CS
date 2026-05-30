@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumPositiveSumSubarray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumPositiveSumSubarray;
 
 public abstract class MinimumPositiveSumSubarrayTestsBase<T> where T : IMinimumPositiveSumSubarray, new()
 {
     [TestMethod]
-    [DataRow("[3, -2, 1, 4]", 2, 3, 1)]
-    [DataRow("[-2, 2, -3, 1]", 2, 3, -1)]
-    [DataRow("[1, 2, 3, 4]", 2, 4, 3)]
-    public void MinimumSumSubarray_WithLengthInRangeAndPositiveSum_ReturnsMinimumSumOrMinusOne(string numsJson, int l,
-        int r, int expectedResult)
+    [DataRow(new[] { 3, -2, 1, 4 }, 2, 3, 1)]
+    [DataRow(new[] { -2, 2, -3, 1 }, 2, 3, -1)]
+    [DataRow(new[] { 1, 2, 3, 4 }, 2, 4, 3)]
+    public void MinimumSumSubarray_WithLengthInRangeAndPositiveSum_ReturnsMinimumSumOrMinusOne(int[] nums, int l, int r, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

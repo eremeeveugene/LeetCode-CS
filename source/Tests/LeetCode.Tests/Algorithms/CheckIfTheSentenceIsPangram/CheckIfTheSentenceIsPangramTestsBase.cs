@@ -19,11 +19,8 @@ public abstract class CheckIfTheSentenceIsPangramTestsBase<T> where T : ICheckIf
     [DataRow("abcdefghijklmnopqrstuvxwyz", true)]
     [DataRow("thequickbrownfoxjumpsoverthelazydog", true)]
     [DataRow("leetcode", false)]
-    [DataRow(
-        "jwtucoucmdfwxxqnxzkaxoglszmfrcvjoiunqqausaxxaaijyqdqgvdnqcaihwilqkpivenpnekioyqujrdrovqrlxovcucjqzjsxmllfgndfprctxvxwlzjtciqxgsxfwhmuzqvlksyuztoetyjugmswfjtawwaqmwyxmvo",
-        false)]
-    public void CheckIfPangram_WithGivenSentence_ReturnsTrueIfPangramFalseOtherwise(string sentence,
-        bool expectedResult)
+    [DataRow("jwtucoucmdfwxxqnxzkaxoglszmfrcvjoiunqqausaxxaaijyqdqgvdnqcaihwilqkpivenpnekioyqujrdrovqrlxovcucjqzjsxmllfgndfprctxvxwlzjtciqxgsxfwhmuzqvlksyuztoetyjugmswfjtawwaqmwyxmvo", false)]
+    public void CheckIfPangram_WithGivenSentence_ReturnsTrueIfPangramFalseOtherwise(string sentence, bool expectedResult)
     {
         // Arrange
         var solution = new T();

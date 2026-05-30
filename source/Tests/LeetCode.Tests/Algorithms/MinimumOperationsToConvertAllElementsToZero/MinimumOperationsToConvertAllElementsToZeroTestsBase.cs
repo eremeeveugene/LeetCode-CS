@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumOperationsToConvertAllElementsToZero;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToConvertAllElementsToZero;
 
-public abstract class MinimumOperationsToConvertAllElementsToZeroTestsBase<T>
-    where T : IMinimumOperationsToConvertAllElementsToZero, new()
+public abstract class MinimumOperationsToConvertAllElementsToZeroTestsBase<T> where T : IMinimumOperationsToConvertAllElementsToZero, new()
 {
     [TestMethod]
-    [DataRow("[0,2]", 1)]
-    [DataRow("[3,1,2,1]", 3)]
-    [DataRow("[1,2,1,2,1,2]", 4)]
-    public void MinOperations_WithNumsArray_ReturnsMinimumOperationsToZeroAllElements(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 0, 2 }, 1)]
+    [DataRow(new[] { 3, 1, 2, 1 }, 3)]
+    [DataRow(new[] { 1, 2, 1, 2, 1, 2 }, 4)]
+    public void MinOperations_WithNumsArray_ReturnsMinimumOperationsToZeroAllElements(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

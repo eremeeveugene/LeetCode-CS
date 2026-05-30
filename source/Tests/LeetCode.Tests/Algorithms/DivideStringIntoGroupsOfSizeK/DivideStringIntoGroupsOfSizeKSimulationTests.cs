@@ -14,5 +14,4 @@ using LeetCode.Algorithms.DivideStringIntoGroupsOfSizeK;
 namespace LeetCode.Tests.Algorithms.DivideStringIntoGroupsOfSizeK;
 
 [TestClass]
-public sealed class DivideStringIntoGroupsOfSizeKSimulationTests :
-    DivideStringIntoGroupsOfSizeKTestsBase<DivideStringIntoGroupsOfSizeKSimulation>;
+public sealed class DivideStringIntoGroupsOfSizeKSimulationTests : DivideStringIntoGroupsOfSizeKTestsBase<DivideStringIntoGroupsOfSizeKSimulation>;

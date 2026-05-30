@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximizeExpressionOfThreeElements;
 namespace LeetCode.Tests.Algorithms.MaximizeExpressionOfThreeElements;
 
 [TestClass]
-public sealed class MaximizeExpressionOfThreeElementsFrequencyArrayTests :
-    MaximizeExpressionOfThreeElementsTestsBase<MaximizeExpressionOfThreeElementsFrequencyArray>;
+public sealed class MaximizeExpressionOfThreeElementsFrequencyArrayTests : MaximizeExpressionOfThreeElementsTestsBase<MaximizeExpressionOfThreeElementsFrequencyArray>;

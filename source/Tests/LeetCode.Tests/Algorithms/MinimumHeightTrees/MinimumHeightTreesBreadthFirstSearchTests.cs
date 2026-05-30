@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumHeightTrees;
 namespace LeetCode.Tests.Algorithms.MinimumHeightTrees;
 
 [TestClass]
-public sealed class MinimumHeightTreesBreadthFirstSearchTests :
-    MinimumHeightTreesTestsBase<MinimumHeightTreesBreadthFirstSearch>;
+public sealed class MinimumHeightTreesBreadthFirstSearchTests : MinimumHeightTreesTestsBase<MinimumHeightTreesBreadthFirstSearch>;

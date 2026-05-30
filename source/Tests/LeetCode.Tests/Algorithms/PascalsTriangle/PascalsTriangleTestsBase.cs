@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,20 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.PascalsTriangle;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.PascalsTriangle;
 
 public abstract class PascalsTriangleTestsBase<T> where T : IPascalsTriangle, new()
 {
     [TestMethod]
-    [DataRow(1, "[[1]]")]
-    [DataRow(5, "[[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]")]
-    public void Generate_GivenNumRows_ReturnsPascalsTriangle(int numRows, string expectedJsonResult)
+    [DynamicData(nameof(GetTestData))]
+    public void Generate_GivenNumRows_ReturnsPascalsTriangle(int numRows, int[][] expectedResult)
     {
         // Arrange
-        var expectedResult = JsonHelper.Parse<int[][]>(expectedJsonResult);
-
         var solution = new T();
 
         // Act
@@ -31,5 +27,12 @@ public abstract class PascalsTriangleTestsBase<T> where T : IPascalsTriangle, ne
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [1, new[] { new[] { 1 } }];
+
+        yield return [5, new[] { new[] { 1 }, new[] { 1, 1 }, new[] { 1, 2, 1 }, new[] { 1, 3, 3, 1 }, new[] { 1, 4, 6, 4, 1 } }];
     }
 }

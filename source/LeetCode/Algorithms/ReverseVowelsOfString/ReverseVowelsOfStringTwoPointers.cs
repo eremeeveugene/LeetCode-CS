@@ -14,19 +14,7 @@ namespace LeetCode.Algorithms.ReverseVowelsOfString;
 /// <inheritdoc />
 public sealed class ReverseVowelsOfStringTwoPointers : IReverseVowelsOfString
 {
-    private readonly HashSet<char> _vowelsHashSet =
-    [
-        'a',
-        'e',
-        'i',
-        'o',
-        'u',
-        'A',
-        'E',
-        'I',
-        'O',
-        'U'
-    ];
+    private readonly HashSet<char> _vowelsHashSet = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
 
     /// <summary>
     ///     Time complexity - O(n)

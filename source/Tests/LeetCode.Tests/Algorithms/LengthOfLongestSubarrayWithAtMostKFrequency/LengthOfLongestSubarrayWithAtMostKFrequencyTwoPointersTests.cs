@@ -14,6 +14,4 @@ using LeetCode.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency;
 namespace LeetCode.Tests.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency;
 
 [TestClass]
-public sealed class LengthOfLongestSubarrayWithAtMostKFrequencyTwoPointersTests :
-    LengthOfLongestSubarrayWithAtMostKFrequencyTestsBase<
-        LengthOfLongestSubarrayWithAtMostKFrequencyTwoPointers>;
+public sealed class LengthOfLongestSubarrayWithAtMostKFrequencyTwoPointersTests : LengthOfLongestSubarrayWithAtMostKFrequencyTestsBase<LengthOfLongestSubarrayWithAtMostKFrequencyTwoPointers>;

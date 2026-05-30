@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations1;
 
 /// <inheritdoc />
-public sealed class CheckIfStringsCanBeMadeEqualWithOperationsPairMatching :
-    ICheckIfStringsCanBeMadeEqualWithOperations1
+public sealed class CheckIfStringsCanBeMadeEqualWithOperationsPairMatching : ICheckIfStringsCanBeMadeEqualWithOperations1
 {
     /// <summary>
     ///     Time complexity - O(1)
@@ -24,7 +23,6 @@ public sealed class CheckIfStringsCanBeMadeEqualWithOperationsPairMatching :
     /// <returns></returns>
     public bool CanBeEqual(string s1, string s2)
     {
-        return ((s1[0] == s2[0] && s1[2] == s2[2]) || (s1[0] == s2[2] && s1[2] == s2[0])) &&
-               ((s1[1] == s2[1] && s1[3] == s2[3]) || (s1[1] == s2[3] && s1[3] == s2[1]));
+        return ((s1[0] == s2[0] && s1[2] == s2[2]) || (s1[0] == s2[2] && s1[2] == s2[0])) && ((s1[1] == s2[1] && s1[3] == s2[3]) || (s1[1] == s2[3] && s1[3] == s2[1]));
     }
 }

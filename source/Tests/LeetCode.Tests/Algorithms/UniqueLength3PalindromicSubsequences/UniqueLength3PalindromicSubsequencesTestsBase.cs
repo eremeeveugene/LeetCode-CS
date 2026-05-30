@@ -13,15 +13,13 @@ using LeetCode.Algorithms.UniqueLength3PalindromicSubsequences;
 
 namespace LeetCode.Tests.Algorithms.UniqueLength3PalindromicSubsequences;
 
-public abstract class UniqueLength3PalindromicSubsequencesTestsBase<T>
-    where T : IUniqueLength3PalindromicSubsequences, new()
+public abstract class UniqueLength3PalindromicSubsequencesTestsBase<T> where T : IUniqueLength3PalindromicSubsequences, new()
 {
     [TestMethod]
     [DataRow("adc", 0)]
     [DataRow("aabca", 3)]
     [DataRow("bbcbaba", 4)]
-    public void CountPalindromicSubsequence_WithStringInput_ReturnsNumberOfUniquePalindromes(string s,
-        int expectedResult)
+    public void CountPalindromicSubsequence_WithStringInput_ReturnsNumberOfUniquePalindromes(string s, int expectedResult)
     {
         // Arrange
         var solution = new T();

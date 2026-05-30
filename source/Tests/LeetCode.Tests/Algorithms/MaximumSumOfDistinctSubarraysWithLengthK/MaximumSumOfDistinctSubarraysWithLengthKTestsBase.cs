@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumSumOfDistinctSubarraysWithLengthK;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximumSumOfDistinctSubarraysWithLengthK;
 
-public abstract class MaximumSumOfDistinctSubarraysWithLengthKTestsBase<T>
-    where T : IMaximumSumOfDistinctSubarraysWithLengthK, new()
+public abstract class MaximumSumOfDistinctSubarraysWithLengthKTestsBase<T> where T : IMaximumSumOfDistinctSubarraysWithLengthK, new()
 {
     [TestMethod]
-    [DataRow("[1,5,4,2,9,9,9]", 3, 15)]
-    [DataRow("[4,4,4]", 3, 0)]
-    public void MaximumSubarraySum_WithArrayAndWindowSize_ReturnsMaximumSubarraySum(string numsJson, int k,
-        long expectedResult)
+    [DataRow(new[] { 1, 5, 4, 2, 9, 9, 9 }, 3, 15L)]
+    [DataRow(new[] { 4, 4, 4 }, 3, 0L)]
+    public void MaximumSubarraySum_WithArrayAndWindowSize_ReturnsMaximumSubarraySum(int[] nums, int k, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

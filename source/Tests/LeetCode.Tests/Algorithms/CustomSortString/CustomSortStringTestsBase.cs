@@ -22,8 +22,7 @@ public abstract class CustomSortStringTestsBase<T> where T : ICustomSortString, 
     [DataRow("xyz", "xyzab", "xyzab")]
     [DataRow("pqrs", "pqrstuvwx", "pqrstuvwx")]
     [DataRow("aeiou", "hello", "eohll")]
-    public void CustomSortString_GivenOrderAndString_ReturnsCustomSortedString(string order, string s,
-        string expectedResult)
+    public void CustomSortString_GivenOrderAndString_ReturnsCustomSortedString(string order, string s, string expectedResult)
     {
         // Arrange
         var solution = new T();

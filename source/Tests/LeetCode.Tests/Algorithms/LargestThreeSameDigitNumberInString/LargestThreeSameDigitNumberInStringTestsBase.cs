@@ -13,8 +13,7 @@ using LeetCode.Algorithms.LargestThreeSameDigitNumberInString;
 
 namespace LeetCode.Tests.Algorithms.LargestThreeSameDigitNumberInString;
 
-public abstract class LargestThreeSameDigitNumberInStringTestsBase<T>
-    where T : ILargestThreeSameDigitNumberInString, new()
+public abstract class LargestThreeSameDigitNumberInStringTestsBase<T> where T : ILargestThreeSameDigitNumberInString, new()
 {
     [TestMethod]
     [DataRow("222", "222")]
@@ -22,8 +21,7 @@ public abstract class LargestThreeSameDigitNumberInStringTestsBase<T>
     [DataRow("6777133339", "777")]
     [DataRow("2300019", "000")]
     [DataRow("42352338", "")]
-    public void LargestGoodInteger_WithTripleRepeatingDigitSubstring_ReturnsMaximumGoodIntegerOrEmptyString(string num,
-        string expectedResult)
+    public void LargestGoodInteger_WithTripleRepeatingDigitSubstring_ReturnsMaximumGoodIntegerOrEmptyString(string num, string expectedResult)
     {
         // Arrange
         var solution = new T();

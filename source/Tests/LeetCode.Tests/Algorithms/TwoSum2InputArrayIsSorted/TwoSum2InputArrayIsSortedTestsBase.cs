@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.TwoSum2InputArrayIsSorted;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.TwoSum2InputArrayIsSorted;
 
 public abstract class TwoSum2InputArrayIsSortedTestsBase<T> where T : ITwoSum2InputArrayIsSorted, new()
 {
     [TestMethod]
-    [DataRow("[2,7,11,15]", 9, "[1,2]")]
-    [DataRow("[2,3,4]", 6, "[1,3]")]
-    [DataRow("[-1,0]", -1, "[1,2]")]
-    public void TwoSum_WithSortedArrayAndTargetSum_ReturnsOneIndexedPairAddingToTarget(string numbersJson, int target,
-        string expectedResultJson)
+    [DataRow(new[] { 2, 7, 11, 15 }, 9, new[] { 1, 2 })]
+    [DataRow(new[] { 2, 3, 4 }, 6, new[] { 1, 3 })]
+    [DataRow(new[] { -1, 0 }, -1, new[] { 1, 2 })]
+    public void TwoSum_WithSortedArrayAndTargetSum_ReturnsOneIndexedPairAddingToTarget(int[] numbers, int target, int[] expectedResult)
     {
         // Arrange
-        var numbers = JsonHelper.Parse<int[]>(numbersJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

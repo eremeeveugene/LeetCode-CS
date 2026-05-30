@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DeleteNodesAndReturnForest;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,23 +18,11 @@ namespace LeetCode.Tests.Algorithms.DeleteNodesAndReturnForest;
 public abstract class DeleteNodesAndReturnForestTestsBase<T> where T : IDeleteNodesAndReturnForest, new()
 {
     [TestMethod]
-    [DataRow("[]", "[1]", "[]")]
-    [DataRow("[1]", "[1]", "[]")]
-    [DataRow("[1,2,4,null,3]", "[3]", "[[1,2,4]]")]
-    [DataRow("[1,2,3,4,5]", "[1]", "[[2,4,5],[3]]")]
-    [DataRow("[1,2,3,4,5,6,7]", "[3, 5]", "[[6],[7],[1,2,null,4]]")]
-    [DataRow("[1,2,3,4,5,6,7]", "[1, 2, 3, 4, 5, 6, 7]", "[]")]
-    [DataRow("[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "[3, 5, 7, 8, 9, 14]", "[[6,12,13],[15],[10],[11],[1,2,null,4]]")]
-    [DataRow("[1,2,3,4,5,6,7,8,null,null,9,10,11,null,12]", "[2, 6, 8, 9, 11]",
-        "[[4],[5],[10],[1,null,3,null,7,null,12]]")]
-    public void DelNodes_WithGivenNodesToDelete_ModifiesTreeCorrectly(string rootJson, string toDeleteJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void DelNodes_WithGivenNodesToDelete_ModifiesTreeCorrectly(int?[] rootArray, int[] toDelete, int?[][] expectedResultArray)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var toDelete = JsonHelper.Parse<int[]>(toDeleteJson);
-        var expectedResultArray = JsonHelper.Parse<IList<IList<int?>>>(expectedResultJson);
         var expectedResult = expectedResultArray.Select(TreeNode.ToTreeNode);
 
         var solution = new T();
@@ -45,5 +32,24 @@ public abstract class DeleteNodesAndReturnForestTestsBase<T> where T : IDeleteNo
 
         // Assert
         TreeNodeAssert.AreEquivalent(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), new[] { 1 }, Array.Empty<int?[]>()];
+
+        yield return [new int?[] { 1 }, new[] { 1 }, Array.Empty<int?[]>()];
+
+        yield return [new int?[] { 1, 2, 4, null, 3 }, new[] { 3 }, new[] { new int?[] { 1, 2, 4 } }];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5 }, new[] { 1 }, new[] { new int?[] { 2, 4, 5 }, new int?[] { 3 } }];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7 }, new[] { 3, 5 }, new[] { new int?[] { 6 }, new int?[] { 7 }, new int?[] { 1, 2, null, 4 } }];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7 }, new[] { 1, 2, 3, 4, 5, 6, 7 }, Array.Empty<int?[]>()];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }, new[] { 3, 5, 7, 8, 9, 14 }, new[] { new int?[] { 6, 12, 13 }, new int?[] { 15 }, new int?[] { 10 }, new int?[] { 11 }, new int?[] { 1, 2, null, 4 } }];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, null, null, 9, 10, 11, null, 12 }, new[] { 2, 6, 8, 9, 11 }, new[] { new int?[] { 4 }, new int?[] { 5 }, new int?[] { 10 }, new int?[] { 1, null, 3, null, 7, null, 12 } }];
     }
 }

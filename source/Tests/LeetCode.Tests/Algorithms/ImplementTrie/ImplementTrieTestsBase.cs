@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ImplementTrie;
-using LeetCode.Core.Helpers;
 using LeetCode.Tests.Base.Exceptions;
 
 namespace LeetCode.Tests.Algorithms.ImplementTrie;
@@ -22,17 +21,10 @@ public abstract class ImplementTrieTestsBase<T> where T : IImplementTrie, new()
     private const string StartsWith = "startsWith";
 
     [TestMethod]
-    [DataRow("[\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]",
-        "[\"apple\",\"apple\",\"app\",\"app\",\"app\",\"app\"]",
-        "[true,false,true,true]")]
-    public void TrieOperations_WithMultipleCommands_ReturnsActionResults(string methodsJson, string argumentsJson,
-        string expectedResultJson)
+    [DataRow(new[] { "insert", "search", "search", "startsWith", "insert", "search" }, new[] { "apple", "apple", "app", "app", "app", "app" }, new[] { true, false, true, true })]
+    public void TrieOperations_WithMultipleCommands_ReturnsActionResults(string[] methods, string[] args, bool[] expectedResult)
     {
         // Arrange
-        var methods = JsonHelper.Parse<string[]>(methodsJson);
-        var args = JsonHelper.Parse<string[]>(argumentsJson);
-        var expectedResult = JsonHelper.Parse<bool[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

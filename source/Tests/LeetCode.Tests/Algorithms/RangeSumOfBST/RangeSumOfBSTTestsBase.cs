@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RangeSumOfBST;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.RangeSumOfBST;
@@ -18,13 +17,10 @@ namespace LeetCode.Tests.Algorithms.RangeSumOfBST;
 public abstract class RangeSumOfBSTTestsBase<T> where T : IRangeSumOfBST, new()
 {
     [TestMethod]
-    [DataRow("[10,5,15,3,7,null,18]", 7, 15, 32)]
-    [DataRow("[10,5,15,3,7,13,18,1,null,6]", 6, 10, 23)]
-    public void RangeSumBST_WithTreeAndInclusiveBounds_ReturnsSumOfValuesInRange(string rootJson, int low, int high,
-        int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void RangeSumBST_WithTreeAndInclusiveBounds_ReturnsSumOfValuesInRange(int?[] rootArray, int low, int high, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();
@@ -34,5 +30,12 @@ public abstract class RangeSumOfBSTTestsBase<T> where T : IRangeSumOfBST, new()
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 10, 5, 15, 3, 7, null, 18 }, 7, 15, 32];
+
+        yield return [new int?[] { 10, 5, 15, 3, 7, 13, 18, 1, null, 6 }, 6, 10, 23];
     }
 }

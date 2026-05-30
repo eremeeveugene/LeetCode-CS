@@ -14,10 +14,7 @@ namespace LeetCode.Algorithms.KeyboardRow;
 /// <inheritdoc />
 public sealed class KeyboardRowLookup : IKeyboardRow
 {
-    private static readonly byte[] CharIndexToRow =
-    [
-        1, 2, 2, 1, 0, 1, 1, 1, 0, 1, 1, 1, 2, 2, 0, 0, 0, 0, 1, 0, 0, 2, 0, 2, 0, 2
-    ];
+    private static readonly byte[] CharIndexToRow = [1, 2, 2, 1, 0, 1, 1, 1, 0, 1, 1, 1, 2, 2, 0, 0, 0, 0, 1, 0, 0, 2, 0, 2, 0, 2];
 
     /// <summary>
     ///     Time complexity - O(n)

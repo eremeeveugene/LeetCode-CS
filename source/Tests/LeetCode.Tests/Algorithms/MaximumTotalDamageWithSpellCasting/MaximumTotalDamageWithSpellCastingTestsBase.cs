@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumTotalDamageWithSpellCasting;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximumTotalDamageWithSpellCasting;
 
-public abstract class MaximumTotalDamageWithSpellCastingTestsBase<T>
-    where T : IMaximumTotalDamageWithSpellCasting, new()
+public abstract class MaximumTotalDamageWithSpellCastingTestsBase<T> where T : IMaximumTotalDamageWithSpellCasting, new()
 {
     [TestMethod]
-    [DataRow("[1,1,3,4]", 6)]
-    [DataRow("[7,1,6,6]", 13)]
-    public void MaximumTotalDamage_WithPowerValues_ReturnsMaximumAchievableDamage(string powerJson, long expectedResult)
+    [DataRow(new[] { 1, 1, 3, 4 }, 6L)]
+    [DataRow(new[] { 7, 1, 6, 6 }, 13L)]
+    public void MaximumTotalDamage_WithPowerValues_ReturnsMaximumAchievableDamage(int[] power, long expectedResult)
     {
         // Arrange
-        var power = JsonHelper.Parse<int[]>(powerJson);
-
         var solution = new T();
 
         // Act

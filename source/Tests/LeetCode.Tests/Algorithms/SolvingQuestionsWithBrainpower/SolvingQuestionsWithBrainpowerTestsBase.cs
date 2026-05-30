@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,20 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SolvingQuestionsWithBrainpower;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SolvingQuestionsWithBrainpower;
 
 public abstract class SolvingQuestionsWithBrainpowerTestsBase<T> where T : ISolvingQuestionsWithBrainpower, new()
 {
     [TestMethod]
-    [DataRow("[[3,2],[4,3],[4,4],[2,5]]", 5)]
-    [DataRow("[[1,1],[2,2],[3,3],[4,4],[5,5]]", 7)]
-    public void MostPoints_GivenQuestionsArray_ReturnsMaximumPoints(string questionsJson, long expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MostPoints_GivenQuestionsArray_ReturnsMaximumPoints(int[][] questions, long expectedResult)
     {
         // Arrange
-        var questions = JsonHelper.Parse<int[][]>(questionsJson);
-
         var solution = new T();
 
         // Act
@@ -31,5 +27,12 @@ public abstract class SolvingQuestionsWithBrainpowerTestsBase<T> where T : ISolv
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 3, 2 }, new[] { 4, 3 }, new[] { 4, 4 }, new[] { 2, 5 } }, 5L];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 3, 3 }, new[] { 4, 4 }, new[] { 5, 5 } }, 7L];
     }
 }

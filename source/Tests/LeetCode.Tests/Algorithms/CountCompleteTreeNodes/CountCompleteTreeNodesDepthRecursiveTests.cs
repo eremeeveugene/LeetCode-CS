@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountCompleteTreeNodes;
 namespace LeetCode.Tests.Algorithms.CountCompleteTreeNodes;
 
 [TestClass]
-public sealed class CountCompleteTreeNodesDepthRecursiveTests :
-    CountCompleteTreeNodesTestsBase<CountCompleteTreeNodesDepthRecursive>;
+public sealed class CountCompleteTreeNodesDepthRecursiveTests : CountCompleteTreeNodesTestsBase<CountCompleteTreeNodesDepthRecursive>;

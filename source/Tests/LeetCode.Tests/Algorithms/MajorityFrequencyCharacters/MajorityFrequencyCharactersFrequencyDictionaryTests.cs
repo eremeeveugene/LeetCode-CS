@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MajorityFrequencyCharacters;
 namespace LeetCode.Tests.Algorithms.MajorityFrequencyCharacters;
 
 [TestClass]
-public sealed class MajorityFrequencyCharactersFrequencyDictionaryTests :
-    MajorityFrequencyCharactersTestsBase<MajorityFrequencyCharactersFrequencyDictionary>;
+public sealed class MajorityFrequencyCharactersFrequencyDictionaryTests : MajorityFrequencyCharactersTestsBase<MajorityFrequencyCharactersFrequencyDictionary>;

@@ -10,23 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTheNumberOfDistinctColorsAmongTheBalls;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindTheNumberOfDistinctColorsAmongTheBalls;
 
-public abstract class FindTheNumberOfDistinctColorsAmongTheBallsTestsBase<T>
-    where T : IFindTheNumberOfDistinctColorsAmongTheBalls, new()
+public abstract class FindTheNumberOfDistinctColorsAmongTheBallsTestsBase<T> where T : IFindTheNumberOfDistinctColorsAmongTheBalls, new()
 {
     [TestMethod]
-    [DataRow(4, "[[1,4],[2,5],[1,3],[3,4]]", "[1,2,2,3]")]
-    [DataRow(4, "[[0,1],[1,2],[2,2],[3,4],[4,5]]", "[1,2,2,3,4]")]
-    public void QueryResults_WithLimitAndQueries_ReturnsQueryResults(int limit, string queriesJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void QueryResults_WithLimitAndQueries_ReturnsQueryResults(int limit, int[][] queries, int[] expectedResult)
     {
         // Arrange
-        var queries = JsonHelper.Parse<int[][]>(queriesJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +27,12 @@ public abstract class FindTheNumberOfDistinctColorsAmongTheBallsTestsBase<T>
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [4, new[] { new[] { 1, 4 }, new[] { 2, 5 }, new[] { 1, 3 }, new[] { 3, 4 } }, new[] { 1, 2, 2, 3 }];
+
+        yield return [4, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 2 }, new[] { 3, 4 }, new[] { 4, 5 } }, new[] { 1, 2, 2, 3, 4 }];
     }
 }

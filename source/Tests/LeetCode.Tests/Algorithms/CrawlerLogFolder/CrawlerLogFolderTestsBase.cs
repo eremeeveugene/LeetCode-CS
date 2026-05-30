@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CrawlerLogFolder;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CrawlerLogFolder;
 
 public abstract class CrawlerLogFolderTestsBase<T> where T : ICrawlerLogFolder, new()
 {
     [TestMethod]
-    [DataRow("[\"d1/\", \"../\", \"../\", \"../\"]", 0)]
-    [DataRow("[\"d1/\", \"d2/\", \"../\", \"d21/\", \"./\"]", 2)]
-    [DataRow("[\"d1/\", \"d2/\", \"./\", \"d3/\", \"../\", \"d31/\"]", 3)]
-    public void MinOperations_GivenLogsArray_ReturnsMinOperationsCount(string logsJson, int expectedResult)
+    [DataRow(new[] { "d1/", "../", "../", "../" }, 0)]
+    [DataRow(new[] { "d1/", "d2/", "../", "d21/", "./" }, 2)]
+    [DataRow(new[] { "d1/", "d2/", "./", "d3/", "../", "d31/" }, 3)]
+    public void MinOperations_GivenLogsArray_ReturnsMinOperationsCount(string[] logs, int expectedResult)
     {
         // Arrange
-        var logs = JsonHelper.Parse<string[]>(logsJson);
-
         var solution = new T();
 
         // Act

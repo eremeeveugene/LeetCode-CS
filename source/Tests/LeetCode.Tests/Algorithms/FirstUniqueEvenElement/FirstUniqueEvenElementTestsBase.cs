@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FirstUniqueEvenElement;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FirstUniqueEvenElement;
 
 public abstract class FirstUniqueEvenElementTestsBase<T> where T : IFirstUniqueEvenElement, new()
 {
     [TestMethod]
-    [DataRow("[3,4,2,5,4,6]", 2)]
-    [DataRow("[4,4]", -1)]
-    public void FirstUniqueEven_WithGivenArray_ReturnsFirstEvenAppearingOnceOrMinusOne(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 3, 4, 2, 5, 4, 6 }, 2)]
+    [DataRow(new[] { 4, 4 }, -1)]
+    public void FirstUniqueEven_WithGivenArray_ReturnsFirstEvenAppearingOnceOrMinusOne(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.KeyboardRow;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.KeyboardRow;
 
 public abstract class KeyboardRowTestsBase<T> where T : IKeyboardRow, new()
 {
     [TestMethod]
-    [DataRow("[\"Hello\",\"Alaska\",\"Dad\",\"Peace\"]", "[\"Alaska\",\"Dad\"]")]
-    [DataRow("[\"omk\"]", "[]")]
-    [DataRow("[\"adsdf\",\"sfd\"]", "[\"adsdf\",\"sfd\"]")]
-    public void FilterWordsByKeyboardRow_WithInputWordsArray_ReturnsMatchingWords(string wordsJson,
-        string expectedResultJson)
+    [DataRow(new[] { "Hello", "Alaska", "Dad", "Peace" }, new[] { "Alaska", "Dad" })]
+    [DataRow(new[] { "omk" }, new string[0])]
+    [DataRow(new[] { "adsdf", "sfd" }, new[] { "adsdf", "sfd" })]
+    public void FilterWordsByKeyboardRow_WithInputWordsArray_ReturnsMatchingWords(string[] words, string[] expectedResult)
     {
         // Arrange
-        var words = JsonHelper.Parse<string[]>(wordsJson);
-        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

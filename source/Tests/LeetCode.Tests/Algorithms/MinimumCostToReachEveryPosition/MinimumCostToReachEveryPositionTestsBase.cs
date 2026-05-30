@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumCostToReachEveryPosition;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumCostToReachEveryPosition;
 
 public abstract class MinimumCostToReachEveryPositionTestsBase<T> where T : IMinimumCostToReachEveryPosition, new()
 {
     [TestMethod]
-    [DataRow("[5,3,4,1,3,2]", "[5,3,3,1,1,1]")]
-    [DataRow("[1,2,4,6,7]", "[1,1,1,1,1]")]
-    public void MinCosts_WithCostArray_ReturnsMinimumCostAtEachStep(string costJson,
-        string expectedResultJson)
+    [DataRow(new[] { 5, 3, 4, 1, 3, 2 }, new[] { 5, 3, 3, 1, 1, 1 })]
+    [DataRow(new[] { 1, 2, 4, 6, 7 }, new[] { 1, 1, 1, 1, 1 })]
+    public void MinCosts_WithCostArray_ReturnsMinimumCostAtEachStep(int[] cost, int[] expectedResult)
     {
         // Arrange
-        var cost = JsonHelper.Parse<int[]>(costJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

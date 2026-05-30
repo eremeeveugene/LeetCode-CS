@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FindWinnerOnTicTacToeGame;
 namespace LeetCode.Tests.Algorithms.FindWinnerOnTicTacToeGame;
 
 [TestClass]
-public sealed class FindWinnerOnTicTacToeGameSimulationTests :
-    FindWinnerOnTicTacToeGameTestsBase<FindWinnerOnTicTacToeGameSimulation>;
+public sealed class FindWinnerOnTicTacToeGameSimulationTests : FindWinnerOnTicTacToeGameTestsBase<FindWinnerOnTicTacToeGameSimulation>;

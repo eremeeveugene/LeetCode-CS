@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.NaryTreePreorderTraversal;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.NaryTreePreorderTraversal;
@@ -18,22 +17,32 @@ namespace LeetCode.Tests.Algorithms.NaryTreePreorderTraversal;
 public abstract class NaryTreePreorderTraversalTestsBase<T> where T : INaryTreePreorderTraversal, new()
 {
     [TestMethod]
-    [DataRow("[1,null,3,2,4,null,5,6]", "[1,3,5,6,2,4]")]
-    [DataRow("[1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]",
-        "[1,2,3,6,7,11,14,4,8,12,5,9,13,10]")]
-    public void Preorder_WithNaryTree_ReturnsPreorderTraversalOfNodes(string rootJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void Preorder_WithNaryTree_ReturnsPreorderTraversalOfNodes(int?[] rootArray, int[] expectedResult)
     {
-        // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = Node.ToNode(rootArray);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 
-        // Act
         var actualResult = solution.Preorder(root).ToArray();
 
-        // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 1, null, 3, 2, 4, null, 5, 6 }, new[] { 1, 3, 5, 6, 2, 4 }];
+
+        yield return [new int?[] { 1, null, 2, 3, 4, 5, null, null, 6, 7, null, 8, null, 9, 10, null, null, 11, null, 12, null, 13, null, null, 14 }, new[] { 1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10 }];
+
+        yield return [new int?[] { 1 }, new[] { 1 }];
+
+        yield return [Array.Empty<int?>(), Array.Empty<int>()];
+
+        yield return [new int?[] { 1, null, 2, 3 }, new[] { 1, 2, 3 }];
+
+        yield return [new int?[] { 1, null, 2, null, 3, null, 4 }, new[] { 1, 2, 3, 4 }];
+
+        yield return [new int?[] { 1, null, 2, 3, 4, null, 5, null, 6 }, new[] { 1, 2, 5, 3, 6, 4 }];
     }
 }

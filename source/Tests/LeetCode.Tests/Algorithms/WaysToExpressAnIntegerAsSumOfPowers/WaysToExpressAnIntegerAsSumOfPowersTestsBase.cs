@@ -13,14 +13,12 @@ using LeetCode.Algorithms.WaysToExpressAnIntegerAsSumOfPowers;
 
 namespace LeetCode.Tests.Algorithms.WaysToExpressAnIntegerAsSumOfPowers;
 
-public abstract class WaysToExpressAnIntegerAsSumOfPowersTestsBase<T>
-    where T : IWaysToExpressAnIntegerAsSumOfPowers, new()
+public abstract class WaysToExpressAnIntegerAsSumOfPowersTestsBase<T> where T : IWaysToExpressAnIntegerAsSumOfPowers, new()
 {
     [TestMethod]
     [DataRow(10, 2, 1)]
     [DataRow(4, 1, 2)]
-    public void NumberOfWays_WithPositiveNAndExponent_ReturnsCountOfUniquePowerSumDecompositions(
-        int n, int x, int expectedResult)
+    public void NumberOfWays_WithPositiveNAndExponent_ReturnsCountOfUniquePowerSumDecompositions(int n, int x, int expectedResult)
     {
         // Arrange
         var solution = new T();

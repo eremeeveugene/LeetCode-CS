@@ -43,9 +43,6 @@ public sealed class FindLongestSpecialSubstringThatOccursThrice1Dictionary : IFi
             }
         }
 
-        return dictionary.Where(keyValuePair => keyValuePair.Value >= 3)
-            .Select(keyValuePair => keyValuePair.Key.Length)
-            .DefaultIfEmpty(-1)
-            .Max();
+        return dictionary.Where(keyValuePair => keyValuePair.Value >= 3).Select(keyValuePair => keyValuePair.Key.Length).DefaultIfEmpty(-1).Max();
     }
 }

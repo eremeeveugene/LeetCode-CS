@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ParsingBooleanExpression;
 namespace LeetCode.Tests.Algorithms.ParsingBooleanExpression;
 
 [TestClass]
-public sealed class ParsingBooleanExpressionRecursiveTests :
-    ParsingBooleanExpressionTestsBase<ParsingBooleanExpressionRecursive>;
+public sealed class ParsingBooleanExpressionRecursiveTests : ParsingBooleanExpressionTestsBase<ParsingBooleanExpressionRecursive>;

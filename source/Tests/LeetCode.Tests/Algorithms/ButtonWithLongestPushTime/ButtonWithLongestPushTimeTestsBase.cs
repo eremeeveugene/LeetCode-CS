@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ButtonWithLongestPushTime;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ButtonWithLongestPushTime;
 
 public abstract class ButtonWithLongestPushTimeTestsBase<T> where T : IButtonWithLongestPushTime, new()
 {
     [TestMethod]
-    [DataRow("[[1,2],[2,5],[3,9],[1,15]]", 1)]
-    [DataRow("[[10,5],[1,7]]", 10)]
-    public void ButtonWithLongestTime_GivenEventArray_ReturnsIdOfButtonWithMaxTime(string eventsJson,
-        int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void ButtonWithLongestTime_GivenEventArray_ReturnsIdOfButtonWithMaxTime(int[][] events, int expectedResult)
     {
         // Arrange
-        var events = JsonHelper.Parse<int[][]>(eventsJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +27,12 @@ public abstract class ButtonWithLongestPushTimeTestsBase<T> where T : IButtonWit
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 2 }, new[] { 2, 5 }, new[] { 3, 9 }, new[] { 1, 15 } }, 1];
+
+        yield return [new[] { new[] { 10, 5 }, new[] { 1, 7 } }, 10];
     }
 }

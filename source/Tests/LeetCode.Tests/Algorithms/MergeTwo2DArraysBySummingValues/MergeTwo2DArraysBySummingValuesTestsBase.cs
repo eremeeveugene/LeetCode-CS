@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MergeTwo2DArraysBySummingValues;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MergeTwo2DArraysBySummingValues;
 
 public abstract class MergeTwo2DArraysBySummingValuesTestsBase<T> where T : IMergeTwo2DArraysBySummingValues, new()
 {
     [TestMethod]
-    [DataRow("[[1,2],[2,3],[4,5]]", "[[1,4],[3,2],[4,1]]", "[[1,6],[2,3],[3,2],[4,6]]")]
-    [DataRow("[[2,4],[3,6],[5,5]]", "[[1,3],[4,3]]", "[[1,3],[2,4],[3,6],[4,3],[5,5]]")]
-    public void MergeArrays_WithTwoKeyValuePairArrays_ReturnsMergedArrayWithSummedValues(string nums1Json,
-        string nums2Json, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void MergeArrays_WithTwoKeyValuePairArrays_ReturnsMergedArrayWithSummedValues(int[][] nums1, int[][] nums2, int[][] expectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper.Parse<int[][]>(nums1Json);
-        var nums2 = JsonHelper.Parse<int[][]>(nums2Json);
-        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +27,12 @@ public abstract class MergeTwo2DArraysBySummingValuesTestsBase<T> where T : IMer
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 4, 5 } }, new[] { new[] { 1, 4 }, new[] { 3, 2 }, new[] { 4, 1 } }, new[] { new[] { 1, 6 }, new[] { 2, 3 }, new[] { 3, 2 }, new[] { 4, 6 } }];
+
+        yield return [new[] { new[] { 2, 4 }, new[] { 3, 6 }, new[] { 5, 5 } }, new[] { new[] { 1, 3 }, new[] { 4, 3 } }, new[] { new[] { 1, 3 }, new[] { 2, 4 }, new[] { 3, 6 }, new[] { 4, 3 }, new[] { 5, 5 } }];
     }
 }

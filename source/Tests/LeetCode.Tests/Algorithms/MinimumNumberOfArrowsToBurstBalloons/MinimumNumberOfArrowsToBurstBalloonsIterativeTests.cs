@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons;
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfArrowsToBurstBalloons;
 
 [TestClass]
-public sealed class MinimumNumberOfArrowsToBurstBalloonsIterativeTests : MinimumNumberOfArrowsToBurstBalloonsTestsBase<
-    MinimumNumberOfArrowsToBurstBalloonsIterative>;
+public sealed class MinimumNumberOfArrowsToBurstBalloonsIterativeTests : MinimumNumberOfArrowsToBurstBalloonsTestsBase<MinimumNumberOfArrowsToBurstBalloonsIterative>;

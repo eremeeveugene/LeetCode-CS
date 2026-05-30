@@ -58,12 +58,8 @@ public sealed class ClosestEqualElementQueriesDictionaryPreprocessing : ClosestE
             {
                 var index = indexes[i];
 
-                var previousIndex = i == 0
-                    ? indexes[^1]
-                    : indexes[i - 1];
-                var nextIndex = i == indexes.Count - 1
-                    ? indexes[0]
-                    : indexes[i + 1];
+                var previousIndex = i == 0 ? indexes[^1] : indexes[i - 1];
+                var nextIndex = i == indexes.Count - 1 ? indexes[0] : indexes[i + 1];
 
                 var previousDistance = GetCircularDistance(index, previousIndex, n);
                 var nextDistance = GetCircularDistance(index, nextIndex, n);

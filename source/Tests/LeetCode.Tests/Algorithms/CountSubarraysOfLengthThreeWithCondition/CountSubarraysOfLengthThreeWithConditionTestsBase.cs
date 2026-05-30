@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountSubarraysOfLengthThreeWithCondition;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountSubarraysOfLengthThreeWithCondition;
 
-public abstract class CountSubarraysOfLengthThreeWithConditionTestsBase<T>
-    where T : ICountSubarraysOfLengthThreeWithCondition, new()
+public abstract class CountSubarraysOfLengthThreeWithConditionTestsBase<T> where T : ICountSubarraysOfLengthThreeWithCondition, new()
 {
     [TestMethod]
-    [DataRow("[1,2,1,4,1]", 1)]
-    [DataRow("[1,1,1]", 0)]
-    [DataRow("[-1,-4,-1,4]", 1)]
-    public void CountSubarrays_WithArrayContainingRepeatedElements_ReturnsNumberOfSubarraysLengthThree(
-        string numsJson, int expectedResult)
+    [DataRow(new[] { 1, 2, 1, 4, 1 }, 1)]
+    [DataRow(new[] { 1, 1, 1 }, 0)]
+    [DataRow(new[] { -1, -4, -1, 4 }, 1)]
+    public void CountSubarrays_WithArrayContainingRepeatedElements_ReturnsNumberOfSubarraysLengthThree(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

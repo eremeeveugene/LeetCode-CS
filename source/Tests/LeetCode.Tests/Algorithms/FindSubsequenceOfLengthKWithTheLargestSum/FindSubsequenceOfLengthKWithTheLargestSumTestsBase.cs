@@ -10,24 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindSubsequenceOfLengthKWithTheLargestSum;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindSubsequenceOfLengthKWithTheLargestSum;
 
-public abstract class FindSubsequenceOfLengthKWithTheLargestSumTestsBase<T>
-    where T : IFindSubsequenceOfLengthKWithTheLargestSum, new()
+public abstract class FindSubsequenceOfLengthKWithTheLargestSumTestsBase<T> where T : IFindSubsequenceOfLengthKWithTheLargestSum, new()
 {
     [TestMethod]
-    [DataRow("[2,1,3,3]", 2, "[3,3]")]
-    [DataRow("[-1,-2,3,4]", 3, "[-1,3,4]")]
-    [DataRow("[3,4,3,3]", 2, "[3,4]")]
-    public void MaxSubsequence_WithGivenArrayAndK_ReturnsSubsequenceWithLargestSum(string numsJson, int k,
-        string expectedResultJson)
+    [DataRow(new[] { 2, 1, 3, 3 }, 2, new[] { 3, 3 })]
+    [DataRow(new[] { -1, -2, 3, 4 }, 3, new[] { -1, 3, 4 })]
+    [DataRow(new[] { 3, 4, 3, 3 }, 2, new[] { 3, 4 })]
+    public void MaxSubsequence_WithGivenArrayAndK_ReturnsSubsequenceWithLargestSum(int[] nums, int k, int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

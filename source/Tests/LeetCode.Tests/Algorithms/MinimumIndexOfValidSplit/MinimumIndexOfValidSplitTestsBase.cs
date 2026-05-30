@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumIndexOfValidSplit;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumIndexOfValidSplit;
 
 public abstract class MinimumIndexOfValidSplitTestsBase<T> where T : IMinimumIndexOfValidSplit, new()
 {
     [TestMethod]
-    [DataRow("[1,2,2,2]", 2)]
-    [DataRow("[2,1,3,1,1,1,7,1,2,1]", 4)]
-    [DataRow("[3,3,3,3,7,2,2]", -1)]
-    public void MinimumIndex_WithMajorityElementInArray_ReturnsMinimumIndexOfValidSplit(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 1, 2, 2, 2 }, 2)]
+    [DataRow(new[] { 2, 1, 3, 1, 1, 1, 7, 1, 2, 1 }, 4)]
+    [DataRow(new[] { 3, 3, 3, 3, 7, 2, 2 }, -1)]
+    public void MinimumIndex_WithMajorityElementInArray_ReturnsMinimumIndexOfValidSplit(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

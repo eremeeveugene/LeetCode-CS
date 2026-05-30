@@ -14,5 +14,4 @@ using LeetCode.Algorithms.RemoveZerosInDecimalRepresentation;
 namespace LeetCode.Tests.Algorithms.RemoveZerosInDecimalRepresentation;
 
 [TestClass]
-public sealed class RemoveZerosInDecimalRepresentation1Tests :
-    RemoveZerosInDecimalRepresentationTestsBase<RemoveZerosInDecimalRepresentationSimulation>;
+public sealed class RemoveZerosInDecimalRepresentation1Tests : RemoveZerosInDecimalRepresentationTestsBase<RemoveZerosInDecimalRepresentationSimulation>;

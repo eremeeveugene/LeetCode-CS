@@ -14,5 +14,4 @@ using LeetCode.Algorithms.AppendCharactersToStringToMakeSubsequence;
 namespace LeetCode.Tests.Algorithms.AppendCharactersToStringToMakeSubsequence;
 
 [TestClass]
-public sealed class AppendCharactersToStringToMakeSubsequenceTwoPointersTests :
-    AppendCharactersToStringToMakeSubsequenceTestsBase<AppendCharactersToStringToMakeSubsequenceTwoPointers>;
+public sealed class AppendCharactersToStringToMakeSubsequenceTwoPointersTests : AppendCharactersToStringToMakeSubsequenceTestsBase<AppendCharactersToStringToMakeSubsequenceTwoPointers>;

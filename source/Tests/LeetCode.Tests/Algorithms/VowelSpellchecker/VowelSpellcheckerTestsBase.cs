@@ -10,25 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.VowelSpellchecker;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.VowelSpellchecker;
 
 public abstract class VowelSpellcheckerTestsBase<T> where T : IVowelSpellchecker, new()
 {
     [TestMethod]
-    [DataRow("[\"yellow\"]", "[\"YellOw\"]", "[\"yellow\"]")]
-    [DataRow("[\"KiTe\",\"kite\",\"hare\",\"Hare\"]",
-        "[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
-        "[\"kite\",\"KiTe\",\"KiTe\",\"Hare\",\"hare\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]")]
-    public void Spellchecker_WithExactMatchCapitalization_ReturnsCorrectWordFromWordlist(
-        string wordlistJson, string queriesJson, string expectedResultJson)
+    [DataRow(new[] { "yellow" }, new[] { "YellOw" }, new[] { "yellow" })]
+    [DataRow(new[] { "KiTe", "kite", "hare", "Hare" }, new[] { "kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto" }, new[] { "kite", "KiTe", "KiTe", "Hare", "hare", "", "", "KiTe", "", "KiTe" })]
+    public void Spellchecker_WithExactMatchCapitalization_ReturnsCorrectWordFromWordlist(string[] wordlist, string[] queries, string[] expectedResult)
     {
         // Arrange
-        var wordlist = JsonHelper.Parse<string[]>(wordlistJson);
-        var queries = JsonHelper.Parse<string[]>(queriesJson);
-        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

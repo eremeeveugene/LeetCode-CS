@@ -19,8 +19,7 @@ public abstract class FizzBuzzMultithreadedTestsBase
 
     [TestMethod]
     [DynamicData(nameof(GetTestCases))]
-    public async Task FizzBuzzMultithreaded_WithGivenLength_ProducesCorrectSequence(int length,
-        string[] expectedResult)
+    public async Task FizzBuzzMultithreaded_WithGivenLength_ProducesCorrectSequence(int length, string[] expectedResult)
     {
         // Arrange
         var solution = GetSolution(length);
@@ -28,13 +27,7 @@ public abstract class FizzBuzzMultithreadedTestsBase
         // Act
         List<string> actualResult = [];
 
-        List<Task> tasks =
-        [
-            Task.Run(() => solution.Fizz(() => actualResult.Add("fizz")), TestContext.CancellationToken),
-            Task.Run(() => solution.Buzz(() => actualResult.Add("buzz")), TestContext.CancellationToken),
-            Task.Run(() => solution.Fizzbuzz(() => actualResult.Add("fizzbuzz")), TestContext.CancellationToken),
-            Task.Run(() => solution.Number(n => actualResult.Add(n.ToString())), TestContext.CancellationToken)
-        ];
+        List<Task> tasks = [Task.Run(() => solution.Fizz(() => actualResult.Add("fizz")), TestContext.CancellationToken), Task.Run(() => solution.Buzz(() => actualResult.Add("buzz")), TestContext.CancellationToken), Task.Run(() => solution.Fizzbuzz(() => actualResult.Add("fizzbuzz")), TestContext.CancellationToken), Task.Run(() => solution.Number(n => actualResult.Add(n.ToString())), TestContext.CancellationToken)];
 
         await Task.WhenAll(tasks);
 
@@ -50,13 +43,6 @@ public abstract class FizzBuzzMultithreadedTestsBase
         yield return [2, new[] { "1", "2" }];
         yield return [3, new[] { "1", "2", "fizz" }];
         yield return [5, new[] { "1", "2", "fizz", "4", "buzz" }];
-        yield return
-        [
-            15,
-            new[]
-            {
-                "1", "2", "fizz", "4", "buzz", "fizz", "7", "8", "fizz", "buzz", "11", "fizz", "13", "14", "fizzbuzz"
-            }
-        ];
+        yield return [15, new[] { "1", "2", "fizz", "4", "buzz", "fizz", "7", "8", "fizz", "buzz", "11", "fizz", "13", "14", "fizzbuzz" }];
     }
 }

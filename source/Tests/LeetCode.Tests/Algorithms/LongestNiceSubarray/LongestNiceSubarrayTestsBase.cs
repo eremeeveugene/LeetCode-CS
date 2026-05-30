@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LongestNiceSubarray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LongestNiceSubarray;
 
 public abstract class LongestNiceSubarrayTestsBase<T> where T : ILongestNiceSubarray, new()
 {
     [TestMethod]
-    [DataRow("[1,3,8,48,10]", 3)]
-    [DataRow("[3,1,5,11,13]", 1)]
-    [DataRow("[8,4,2,1]", 4)]
-    public void LongestNiceSubarray_WithGivenIntegerArray_ReturnsLengthOfLongestNiceSubarray(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 1, 3, 8, 48, 10 }, 3)]
+    [DataRow(new[] { 3, 1, 5, 11, 13 }, 1)]
+    [DataRow(new[] { 8, 4, 2, 1 }, 4)]
+    public void LongestNiceSubarray_WithGivenIntegerArray_ReturnsLengthOfLongestNiceSubarray(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

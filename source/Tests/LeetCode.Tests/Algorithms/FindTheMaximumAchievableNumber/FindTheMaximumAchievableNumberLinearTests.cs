@@ -14,6 +14,4 @@ using LeetCode.Algorithms.FindTheMaximumAchievableNumber;
 namespace LeetCode.Tests.Algorithms.FindTheMaximumAchievableNumber;
 
 [TestClass]
-public sealed class
-    FindTheMaximumAchievableNumberLinearTests : FindTheMaximumAchievableNumberTestsBase<
-    FindTheMaximumAchievableNumberLinear>;
+public sealed class FindTheMaximumAchievableNumberLinearTests : FindTheMaximumAchievableNumberTestsBase<FindTheMaximumAchievableNumberLinear>;

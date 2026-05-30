@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.AddOneRowToTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,35 +18,11 @@ namespace LeetCode.Tests.Algorithms.AddOneRowToTree;
 public abstract class AddOneRowToTreeTestsBase<T> where T : IAddOneRowToTree, new()
 {
     [TestMethod]
-    [DataRow("[]", 0, 0, "[]")]
-    [DataRow("[4,2,6,3,1,5]", 1, 2, "[4,1,1,2,null,null,6,3,1,5]")]
-    [DataRow("[4,2,null,3,1]", 1, 3, "[4,2,null,1,1,3,null,null,1]")]
-    [DataRow("[1,2,3,4,null,null,4,null,null,8,null,null,9]", 100, 1,
-        "[100,1,null,2,3,4,null,null,4,null,null,8,null,null,9]")]
-    [DataRow("[1,2,3,4,null,null,4,null,null,8,null,null,9]", 100, 2,
-        "[1,100,100,2,null,null,3,4,null,null,4,null,null,8,null,null,9]")]
-    [DataRow("[1,2,3,4,null,null,4,null,null,8,null,null,9]", 100, 3,
-        "[1,2,3,100,100,100,100,4,null,null,null,null,null,null,4,null,null,8,null,null,9]")]
-    [DataRow("[1,2,3,4,null,null,4,null,null,8,null,null,9]", 100, 4,
-        "[1,2,3,4,null,null,4,100,100,100,100,null,null,null,null,8,null,null,null,null,9]")]
-    [DataRow("[1,2,3,4,null,null,4,null,null,8,null,null,9]", 100, 5,
-        "[1,2,3,4,null,null,4,null,null,8,null,100,100,null,null,null,9]")]
-    [DataRow("[1,2,3,4,null,null,4,null,null,8,null,null,9]", 100, 6,
-        "[1,2,3,4,null,null,4,null,null,8,null,null,9,100,100]")]
-    [DataRow("[5,3,null,4,null,8,null,9]", 100, 1, "[100,5,null,3,null,4,null,8,null,9]")]
-    [DataRow("[5,3,null,4,null,8,null,9]", 100, 2, "[5,100,100,3,null,null,null,4,null,8,null,9]")]
-    [DataRow("[5,3,null,4,null,8,null,9]", 100, 3, "[5,3,null,100,100,4,null,null,null,8,null,9]")]
-    [DataRow("[5,3,null,4,null,8,null,9]", 100, 4, "[5,3,null,4,null,100,100,8,null,null,null,9]")]
-    [DataRow("[5,3,null,4,null,8,null,9]", 100, 5, "[5,3,null,4,null,8,null,100,100,9]")]
-    [DataRow("[5,3,null,4,null,8,null,9]", 100, 6, "[5,3,null,4,null,8,null,9,null,100,100]")]
-    public void AddOneRow_AddsRowToBinaryTreeAtSpecifiedDepthAndValue_VerifiesTreeStructure(string rootJson,
-        int val, int depth, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void AddOneRow_AddsRowToBinaryTreeAtSpecifiedDepthAndValue_VerifiesTreeStructure(int?[] rootArray, int val, int depth, int?[] expectedResultArray)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-
-        var expectedResultArray = JsonHelper.Parse<int?[]>(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();
@@ -57,5 +32,38 @@ public abstract class AddOneRowToTreeTestsBase<T> where T : IAddOneRowToTree, ne
 
         // Assert
         TreeNodeAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), 0, 0, Array.Empty<int?>()];
+
+        yield return [new int?[] { 4, 2, 6, 3, 1, 5 }, 1, 2, new int?[] { 4, 1, 1, 2, null, null, 6, 3, 1, 5 }];
+
+        yield return [new int?[] { 4, 2, null, 3, 1 }, 1, 3, new int?[] { 4, 2, null, 1, 1, 3, null, null, 1 }];
+
+        yield return [new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 }, 100, 1, new int?[] { 100, 1, null, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 }];
+
+        yield return [new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 }, 100, 2, new int?[] { 1, 100, 100, 2, null, null, 3, 4, null, null, 4, null, null, 8, null, null, 9 }];
+
+        yield return [new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 }, 100, 3, new int?[] { 1, 2, 3, 100, 100, 100, 100, 4, null, null, null, null, null, null, 4, null, null, 8, null, null, 9 }];
+
+        yield return [new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 }, 100, 4, new int?[] { 1, 2, 3, 4, null, null, 4, 100, 100, 100, 100, null, null, null, null, 8, null, null, null, null, 9 }];
+
+        yield return [new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 }, 100, 5, new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, 100, 100, null, null, null, 9 }];
+
+        yield return [new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 }, 100, 6, new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9, 100, 100 }];
+
+        yield return [new int?[] { 5, 3, null, 4, null, 8, null, 9 }, 100, 1, new int?[] { 100, 5, null, 3, null, 4, null, 8, null, 9 }];
+
+        yield return [new int?[] { 5, 3, null, 4, null, 8, null, 9 }, 100, 2, new int?[] { 5, 100, 100, 3, null, null, null, 4, null, 8, null, 9 }];
+
+        yield return [new int?[] { 5, 3, null, 4, null, 8, null, 9 }, 100, 3, new int?[] { 5, 3, null, 100, 100, 4, null, null, null, 8, null, 9 }];
+
+        yield return [new int?[] { 5, 3, null, 4, null, 8, null, 9 }, 100, 4, new int?[] { 5, 3, null, 4, null, 100, 100, 8, null, null, null, 9 }];
+
+        yield return [new int?[] { 5, 3, null, 4, null, 8, null, 9 }, 100, 5, new int?[] { 5, 3, null, 4, null, 8, null, 100, 100, 9 }];
+
+        yield return [new int?[] { 5, 3, null, 4, null, 8, null, 9 }, 100, 6, new int?[] { 5, 3, null, 4, null, 8, null, 9, null, 100, 100 }];
     }
 }

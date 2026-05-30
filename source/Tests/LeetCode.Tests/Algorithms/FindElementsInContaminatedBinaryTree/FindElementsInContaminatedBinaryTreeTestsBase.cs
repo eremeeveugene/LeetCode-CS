@@ -19,8 +19,7 @@ public abstract class FindElementsInContaminatedBinaryTreeTestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void FindElementsInContaminatedBinaryTree_WithVariousTreeStructures_ReturnsIfElementsFound(
-        ContaminatedBinaryTreeScenario scenario)
+    public void FindElementsInContaminatedBinaryTree_WithVariousTreeStructures_ReturnsIfElementsFound(ContaminatedBinaryTreeScenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -48,65 +47,27 @@ public abstract class FindElementsInContaminatedBinaryTreeTestsBase
 
     private static IEnumerable<ContaminatedBinaryTreeScenario[]> GetScenarios()
     {
-        yield return
-        [
-            new ContaminatedBinaryTreeScenario(
-                TreeNode.ToTreeNodeOrThrow([-1, null, -1]),
-                [
-                    new FindOperation(1),
-                    new FindOperation(2)
-                ],
-                [
-                    new FindOperation.Result(false),
-                    new FindOperation.Result(true)
-                ])
-        ];
+        yield return [new ContaminatedBinaryTreeScenario(TreeNode.ToTreeNodeOrThrow([-1, null, -1]), [new FindOperation(1), new FindOperation(2)], [new FindOperation.Result(false), new FindOperation.Result(true)])];
 
-        yield return
-        [
-            new ContaminatedBinaryTreeScenario(
-                TreeNode.ToTreeNodeOrThrow([-1, -1, -1, -1, -1]),
-                [
-                    new FindOperation(1),
-                    new FindOperation(3),
-                    new FindOperation(5)
-                ],
-                [
-                    new FindOperation.Result(true),
-                    new FindOperation.Result(true),
-                    new FindOperation.Result(false)
-                ])
-        ];
+        yield return [new ContaminatedBinaryTreeScenario(TreeNode.ToTreeNodeOrThrow([-1, -1, -1, -1, -1]), [new FindOperation(1), new FindOperation(3), new FindOperation(5)], [new FindOperation.Result(true), new FindOperation.Result(true), new FindOperation.Result(false)])];
 
-        yield return
-        [
-            new ContaminatedBinaryTreeScenario(
-                TreeNode.ToTreeNodeOrThrow([-1, null, -1, -1, null, -1]),
-                [
-                    new FindOperation(2),
-                    new FindOperation(3),
-                    new FindOperation(4),
-                    new FindOperation(5)
-                ],
-                [
-                    new FindOperation.Result(true),
-                    new FindOperation.Result(false),
-                    new FindOperation.Result(false),
-                    new FindOperation.Result(true)
-                ])
-        ];
+        yield return [new ContaminatedBinaryTreeScenario(TreeNode.ToTreeNodeOrThrow([-1, null, -1, -1, null, -1]), [new FindOperation(2), new FindOperation(3), new FindOperation(4), new FindOperation(5)], [new FindOperation.Result(true), new FindOperation.Result(false), new FindOperation.Result(false), new FindOperation.Result(true)])];
     }
 
-    public sealed class ContaminatedBinaryTreeScenario : Scenario<IFindElementsInContaminatedBinaryTree>
+    public sealed class ContaminatedBinaryTreeScenario : IScenario<IFindElementsInContaminatedBinaryTree>
     {
-        public ContaminatedBinaryTreeScenario(TreeNode root,
-            IOperation<IFindElementsInContaminatedBinaryTree>[] operations,
-            IOperationResult[] operationResults) : base(operations, operationResults)
+        public ContaminatedBinaryTreeScenario(TreeNode root, IOperation<IFindElementsInContaminatedBinaryTree>[] operations, IOperationResult[] operationResults)
         {
             Root = root;
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public TreeNode Root { get; }
+
+        public IOperation<IFindElementsInContaminatedBinaryTree>[] Operations { get; }
+
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class FindOperation : IOperation<IFindElementsInContaminatedBinaryTree>
@@ -125,7 +86,9 @@ public abstract class FindElementsInContaminatedBinaryTreeTestsBase
             return new Result(found);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _found;
 

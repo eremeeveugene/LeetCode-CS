@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LinkedListCycle;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.LinkedListCycle;
@@ -18,20 +17,18 @@ namespace LeetCode.Tests.Algorithms.LinkedListCycle;
 public abstract class LinkedListCycleTestsBase<T> where T : ILinkedListCycle, new()
 {
     [TestMethod]
-    [DataRow("[]", -1, false)]
-    [DataRow("[3,2,0,-4]", 1, true)]
-    [DataRow("[1,2]", 0, true)]
-    [DataRow("[1]", -1, false)]
-    [DataRow("[1,2,3,4,5]", -1, false)]
-    [DataRow("[1,2,3,4,5]", 4, true)]
-    [DataRow("[1,1,1,1,1]", 0, true)]
-    [DataRow("[1,2,3,4,5,6,7,8,9]", 2, true)]
-    [DataRow("[1,2,3,4,5,6,7,8,9,10]", 0, true)]
-    public void HasCycle_WithLinkedListAndCyclePosition_ReturnsWhetherCycleExists(string headJson, int pos,
-        bool expectedResult)
+    [DataRow(new int[] { }, -1, false)]
+    [DataRow(new[] { 3, 2, 0, -4 }, 1, true)]
+    [DataRow(new[] { 1, 2 }, 0, true)]
+    [DataRow(new[] { 1 }, -1, false)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, -1, false)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 4, true)]
+    [DataRow(new[] { 1, 1, 1, 1, 1 }, 0, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, 2, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 0, true)]
+    public void HasCycle_WithLinkedListAndCyclePosition_ReturnsWhetherCycleExists(int[] headArray, int pos, bool expectedResult)
     {
         // Arrange
-        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToCycledListNode(headArray, pos);
 
         var solution = new T();

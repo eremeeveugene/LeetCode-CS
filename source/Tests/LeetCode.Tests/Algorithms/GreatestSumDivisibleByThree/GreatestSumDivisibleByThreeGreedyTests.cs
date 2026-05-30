@@ -14,5 +14,4 @@ using LeetCode.Algorithms.GreatestSumDivisibleByThree;
 namespace LeetCode.Tests.Algorithms.GreatestSumDivisibleByThree;
 
 [TestClass]
-public sealed class GreatestSumDivisibleByThreeGreedyTests :
-    GreatestSumDivisibleByThreeTestsBase<GreatestSumDivisibleByThreeGreedy>;
+public sealed class GreatestSumDivisibleByThreeGreedyTests : GreatestSumDivisibleByThreeTestsBase<GreatestSumDivisibleByThreeGreedy>;

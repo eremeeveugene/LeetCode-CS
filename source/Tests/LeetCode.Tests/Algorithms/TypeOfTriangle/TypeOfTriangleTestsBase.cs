@@ -10,28 +10,24 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.TypeOfTriangle;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.TypeOfTriangle;
 
 public abstract class TypeOfTriangleTestsBase<T> where T : ITypeOfTriangle, new()
 {
     [TestMethod]
-    [DataRow("[8,4,2]", "none")]
-    [DataRow("[3,3,3]", "equilateral")]
-    [DataRow("[3,4,5]", "scalene")]
-    [DataRow("[3,3,5]", "isosceles")]
-    [DataRow("[5,3,3]", "isosceles")]
-    [DataRow("[3,5,3]", "isosceles")]
-    [DataRow("[4,4,6]", "isosceles")]
-    [DataRow("[6,4,4]", "isosceles")]
-    [DataRow("[4,6,4]", "isosceles")]
-    public void TriangleType_WithThreeSideLengths_ReturnsStringRepresentingTheTypeOfTriangle(string numsJson,
-        string expectedResult)
+    [DataRow(new[] { 8, 4, 2 }, "none")]
+    [DataRow(new[] { 3, 3, 3 }, "equilateral")]
+    [DataRow(new[] { 3, 4, 5 }, "scalene")]
+    [DataRow(new[] { 3, 3, 5 }, "isosceles")]
+    [DataRow(new[] { 5, 3, 3 }, "isosceles")]
+    [DataRow(new[] { 3, 5, 3 }, "isosceles")]
+    [DataRow(new[] { 4, 4, 6 }, "isosceles")]
+    [DataRow(new[] { 6, 4, 4 }, "isosceles")]
+    [DataRow(new[] { 4, 6, 4 }, "isosceles")]
+    public void TriangleType_WithThreeSideLengths_ReturnsStringRepresentingTheTypeOfTriangle(int[] nums, string expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

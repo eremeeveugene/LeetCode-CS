@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.NextGreaterElement1;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.NextGreaterElement1;
 
 public abstract class NextGreaterElement1TestsBase<T> where T : INextGreaterElement1, new()
 {
     [TestMethod]
-    [DataRow("[4,1,2]", "[1,3,4,2]", "[-1,3,-1]")]
-    [DataRow("[2,4]", "[1,2,3,4]", "[3,-1]")]
-    public void NextGreaterElement_WithSubsetAndReferenceArrays_ReturnsNextGreaterElementsForEachQuery(string nums1Json,
-        string nums2Json, string expectedResultJson)
+    [DataRow(new[] { 4, 1, 2 }, new[] { 1, 3, 4, 2 }, new[] { -1, 3, -1 })]
+    [DataRow(new[] { 2, 4 }, new[] { 1, 2, 3, 4 }, new[] { 3, -1 })]
+    public void NextGreaterElement_WithSubsetAndReferenceArrays_ReturnsNextGreaterElementsForEachQuery(int[] nums1, int[] nums2, int[] expectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper.Parse<int[]>(nums1Json);
-        var nums2 = JsonHelper.Parse<int[]>(nums2Json);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

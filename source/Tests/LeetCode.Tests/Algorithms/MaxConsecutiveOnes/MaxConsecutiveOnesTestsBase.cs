@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaxConsecutiveOnes;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaxConsecutiveOnes;
 
 public abstract class MaxConsecutiveOnesTestsBase<T> where T : IMaxConsecutiveOnes, new()
 {
     [TestMethod]
-    [DataRow("[1,1,0,1,1,1]", 3)]
-    [DataRow("[1,0,1,1,0,1]", 2)]
-    public void FindMaxConsecutiveOnes_WithBinaryArray_ReturnsMaximumCountOfConsecutiveOnes(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 1, 1, 0, 1, 1, 1 }, 3)]
+    [DataRow(new[] { 1, 0, 1, 1, 0, 1 }, 2)]
+    public void FindMaxConsecutiveOnes_WithBinaryArray_ReturnsMaximumCountOfConsecutiveOnes(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

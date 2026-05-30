@@ -19,8 +19,7 @@ public abstract class CountResiduePrefixesTestsBase<T> where T : ICountResiduePr
     [DataRow("abc", 2)]
     [DataRow("dd", 1)]
     [DataRow("bob", 2)]
-    public void ResiduePrefixes_WithInputString_ReturnsResiduePrefixesCount(string s,
-        int expectedResult)
+    public void ResiduePrefixes_WithInputString_ReturnsResiduePrefixesCount(string s, int expectedResult)
     {
         // Arrange
         var solution = new T();

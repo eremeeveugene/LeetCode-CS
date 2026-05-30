@@ -14,5 +14,4 @@ using LeetCode.Algorithms.LongestHarmoniousSubsequence;
 namespace LeetCode.Tests.Algorithms.LongestHarmoniousSubsequence;
 
 [TestClass]
-public sealed class LongestHarmoniousSubsequenceDictionaryTests :
-    LongestHarmoniousSubsequenceTestsBase<LongestHarmoniousSubsequenceDictionary>;
+public sealed class LongestHarmoniousSubsequenceDictionaryTests : LongestHarmoniousSubsequenceTestsBase<LongestHarmoniousSubsequenceDictionary>;

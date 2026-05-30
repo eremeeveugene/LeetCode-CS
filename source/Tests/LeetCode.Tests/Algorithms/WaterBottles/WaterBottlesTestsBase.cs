@@ -24,8 +24,7 @@ public abstract class WaterBottlesTestsBase<T> where T : IWaterBottles, new()
     [DataRow(15, 4, 19)]
     [DataRow(100, 99, 101)]
     [DataRow(100, 2, 199)]
-    public void NumWaterBottles_WithBottlesAndExchangeRate_ReturnsNumOfWaterBottles(int numBottles, int numExchange,
-        int expectedResult)
+    public void NumWaterBottles_WithBottlesAndExchangeRate_ReturnsNumOfWaterBottles(int numBottles, int numExchange, int expectedResult)
     {
         // Arrange
         var solution = new T();

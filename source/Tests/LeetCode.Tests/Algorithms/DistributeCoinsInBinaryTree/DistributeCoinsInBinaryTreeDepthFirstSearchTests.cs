@@ -14,5 +14,4 @@ using LeetCode.Algorithms.DistributeCoinsInBinaryTree;
 namespace LeetCode.Tests.Algorithms.DistributeCoinsInBinaryTree;
 
 [TestClass]
-public sealed class DistributeCoinsInBinaryTreeDepthFirstSearchTests : DistributeCoinsInBinaryTreeTestsBase<
-    DistributeCoinsInBinaryTreeDepthFirstSearch>;
+public sealed class DistributeCoinsInBinaryTreeDepthFirstSearchTests : DistributeCoinsInBinaryTreeTestsBase<DistributeCoinsInBinaryTreeDepthFirstSearch>;

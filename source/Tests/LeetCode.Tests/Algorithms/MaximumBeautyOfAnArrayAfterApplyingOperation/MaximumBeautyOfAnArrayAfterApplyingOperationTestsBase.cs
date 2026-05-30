@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation;
 
-public abstract class MaximumBeautyOfAnArrayAfterApplyingOperationTestsBase<T>
-    where T : IMaximumBeautyOfAnArrayAfterApplyingOperation, new()
+public abstract class MaximumBeautyOfAnArrayAfterApplyingOperationTestsBase<T> where T : IMaximumBeautyOfAnArrayAfterApplyingOperation, new()
 {
     [TestMethod]
-    [DataRow("[4,6,1,2]", 2, 3)]
-    [DataRow("[1,1,1,1]", 10, 4)]
-    public void MaximumBeauty_WithArrayAndK_ReturnsMaximizedBeauty(string numsJson, int k, int expectedResult)
+    [DataRow(new[] { 4, 6, 1, 2 }, 2, 3)]
+    [DataRow(new[] { 1, 1, 1, 1 }, 10, 4)]
+    public void MaximumBeauty_WithArrayAndK_ReturnsMaximizedBeauty(int[] nums, int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

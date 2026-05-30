@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BinaryTreeInorderTraversal;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.BinaryTreeInorderTraversal;
@@ -18,18 +17,13 @@ namespace LeetCode.Tests.Algorithms.BinaryTreeInorderTraversal;
 public abstract class BinaryTreeInorderTraversalTestsBase<T> where T : IBinaryTreeInorderTraversal, new()
 {
     [TestMethod]
-    [DataRow("[1,null,2,3]", "[1,3,2]")]
-    [DataRow("[1]", "[1]")]
-    [DataRow("[]", "[0]")]
-    public void InorderTraversal_WithBinaryTreeFromJson_ReturnsInorderTraversalList(string inputJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void InorderTraversal_WithBinaryTreeFromJson_ReturnsInorderTraversalList(int?[] inputArray, int?[] expectedResult)
     {
         // Arrange
-        var solution = new T();
-
-        var expectedResult = JsonHelper.Parse<int?[]>(expectedResultJson);
-        var inputArray = JsonHelper.Parse<int?[]>(inputJson);
         var inputNode = TreeNode.ToTreeNode(inputArray);
+
+        var solution = new T();
 
         // Act
         var actualResult = solution.InorderTraversal(inputNode).ToArray();
@@ -37,5 +31,14 @@ public abstract class BinaryTreeInorderTraversalTestsBase<T> where T : IBinaryTr
         // Assert
         Assert.IsNotNull(actualResult);
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 1, null, 2, 3 }, new int?[] { 1, 3, 2 }];
+
+        yield return [new int?[] { 1 }, new int?[] { 1 }];
+
+        yield return [Array.Empty<int?>(), new int?[] { 0 }];
     }
 }

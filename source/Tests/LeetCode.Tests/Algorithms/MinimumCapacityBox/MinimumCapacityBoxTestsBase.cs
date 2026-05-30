@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumCapacityBox;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumCapacityBox;
 
 public abstract class MinimumCapacityBoxTestsBase<T> where T : IMinimumCapacityBox, new()
 {
     [TestMethod]
-    [DataRow("[1,5,3,7]", 3, 2)]
-    [DataRow("[3,5,4,3]", 2, 0)]
-    [DataRow("[3]", 5, -1)]
-    public void MinimumIndex_WithCapacitiesAndItemSize_ReturnsIndexOfSmallestSufficientCapacity(string capacitiesJson,
-        int itemSize, int expectedResult)
+    [DataRow(new[] { 1, 5, 3, 7 }, 3, 2)]
+    [DataRow(new[] { 3, 5, 4, 3 }, 2, 0)]
+    [DataRow(new[] { 3 }, 5, -1)]
+    public void MinimumIndex_WithCapacitiesAndItemSize_ReturnsIndexOfSmallestSufficientCapacity(int[] capacities, int itemSize, int expectedResult)
     {
         // Arrange
-        var capacities = JsonHelper.Parse<int[]>(capacitiesJson);
-
         var solution = new T();
 
         // Act

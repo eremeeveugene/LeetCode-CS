@@ -14,5 +14,4 @@ using LeetCode.Algorithms.SortTheJumbledNumbers;
 namespace LeetCode.Tests.Algorithms.SortTheJumbledNumbers;
 
 [TestClass]
-public sealed class SortTheJumbledNumbersSortingArrayTests : SortTheJumbledNumbersTestsBase<
-    SortTheJumbledNumbersSortingArray>;
+public sealed class SortTheJumbledNumbersSortingArrayTests : SortTheJumbledNumbersTestsBase<SortTheJumbledNumbersSortingArray>;

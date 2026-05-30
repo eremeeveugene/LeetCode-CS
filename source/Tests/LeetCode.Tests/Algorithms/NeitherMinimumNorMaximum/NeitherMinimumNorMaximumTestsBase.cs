@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.NeitherMinimumNorMaximum;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.NeitherMinimumNorMaximum;
 
 public abstract class NeitherMinimumNorMaximumTestsBase<T> where T : INeitherMinimumNorMaximum, new()
 {
     [TestMethod]
-    [DataRow("[3,2,1,4]", 2)]
-    [DataRow("[1,2]", -1)]
-    [DataRow("[2,1,3]", 2)]
-    [DataRow("[3,30,24]", 24)]
-    public void FindNonMinOrMax_WithIntArray_ReturnsNonExtremeValue(string numsJson, int expectedResult)
+    [DataRow(new[] { 3, 2, 1, 4 }, 2)]
+    [DataRow(new[] { 1, 2 }, -1)]
+    [DataRow(new[] { 2, 1, 3 }, 2)]
+    [DataRow(new[] { 3, 30, 24 }, 24)]
+    public void FindNonMinOrMax_WithIntArray_ReturnsNonExtremeValue(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

@@ -10,26 +10,29 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindCenterOfStarGraph;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindCenterOfStarGraph;
 
 public abstract class FindCenterOfStarGraphTestsBase<T> where T : IFindCenterOfStarGraph, new()
 {
     [TestMethod]
-    [DataRow("[[1,2],[2,3],[4,2]]", 2)]
-    [DataRow("[[1,2],[5,1],[1,3],[1,4]]", 1)]
-    public void FindCenter_GivenEdgesJson_ReturnsCenterNode(string edgesJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void FindCenter_GivenEdgesJson_ReturnsCenterNode(int[][] edges, int expectedResult)
     {
         // Arrange
         var solution = new T();
-
-        var edges = JsonHelper.Parse<int[][]>(edgesJson);
 
         // Act
         var actualResult = solution.FindCenter(edges);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 4, 2 } }, 2];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 5, 1 }, new[] { 1, 3 }, new[] { 1, 4 } }, 1];
     }
 }

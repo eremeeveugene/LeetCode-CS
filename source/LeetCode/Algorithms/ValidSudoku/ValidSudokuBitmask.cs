@@ -45,9 +45,7 @@ public sealed class ValidSudokuBitmask : ValidSudokuBase
 
                 var boxIndex = GetBoxIndex(rowIndex, columnIndex);
 
-                if (HasSeen(rows[rowIndex], bit) ||
-                    HasSeen(columns[columnIndex], bit) ||
-                    HasSeen(boxes[boxIndex], bit))
+                if (HasSeen(rows[rowIndex], bit) || HasSeen(columns[columnIndex], bit) || HasSeen(boxes[boxIndex], bit))
                 {
                     return false;
                 }

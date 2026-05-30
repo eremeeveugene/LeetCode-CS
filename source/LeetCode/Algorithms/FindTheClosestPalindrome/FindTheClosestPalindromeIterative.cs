@@ -27,10 +27,7 @@ public sealed class FindTheClosestPalindromeIterative : IFindTheClosestPalindrom
     {
         var num = BigInteger.Parse(n);
 
-        var candidates = new List<BigInteger>
-        {
-            BigInteger.Pow(10, n.Length - 1) - 1, BigInteger.Pow(10, n.Length) + 1
-        };
+        var candidates = new List<BigInteger> { BigInteger.Pow(10, n.Length - 1) - 1, BigInteger.Pow(10, n.Length) + 1 };
 
         var prefix = BigInteger.Parse(n[..((n.Length + 1) / 2)]);
 

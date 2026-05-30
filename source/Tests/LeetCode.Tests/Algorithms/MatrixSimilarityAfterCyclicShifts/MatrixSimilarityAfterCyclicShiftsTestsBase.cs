@@ -10,22 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MatrixSimilarityAfterCyclicShifts;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MatrixSimilarityAfterCyclicShifts;
 
 public abstract class MatrixSimilarityAfterCyclicShiftsTestsBase<T> where T : IMatrixSimilarityAfterCyclicShifts, new()
 {
     [TestMethod]
-    [DataRow("[[1,2,3],[4,5,6],[7,8,9]]", 4, false)]
-    [DataRow("[[1,2,1,2],[5,5,5,5],[6,3,6,3]]", 2, true)]
-    [DataRow("[[2,2],[2,2]]", 3, true)]
-    public void AreSimilar_WithMatrixAndShiftCount_ReturnsTrueIfMatrixRemainsUnchanged(string matJson, int k,
-        bool expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void AreSimilar_WithMatrixAndShiftCount_ReturnsTrueIfMatrixRemainsUnchanged(int[][] mat, int k, bool expectedResult)
     {
         // Arrange
-        var mat = JsonHelper.Parse<int[][]>(matJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +27,14 @@ public abstract class MatrixSimilarityAfterCyclicShiftsTestsBase<T> where T : IM
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { 4, 5, 6 }, new[] { 7, 8, 9 } }, 4, false];
+
+        yield return [new[] { new[] { 1, 2, 1, 2 }, new[] { 5, 5, 5, 5 }, new[] { 6, 3, 6, 3 } }, 2, true];
+
+        yield return [new[] { new[] { 2, 2 }, new[] { 2, 2 } }, 3, true];
     }
 }

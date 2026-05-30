@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SmallestIndexWithDigitSumEqualToIndex;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SmallestIndexWithDigitSumEqualToIndex;
 
-public abstract class SmallestIndexWithDigitSumEqualToIndexTestsBase<T>
-    where T : ISmallestIndexWithDigitSumEqualToIndex, new()
+public abstract class SmallestIndexWithDigitSumEqualToIndexTestsBase<T> where T : ISmallestIndexWithDigitSumEqualToIndex, new()
 {
     [TestMethod]
-    [DataRow("[1,3,2]", 2)]
-    [DataRow("[1,10,11]", 1)]
-    [DataRow("[1,2,3]", -1)]
-    public void SmallestIndex_WithGivenArray_ReturnsCorrectIndexOrMinusOne(string numsJson, int expectedResult)
+    [DataRow(new[] { 1, 3, 2 }, 2)]
+    [DataRow(new[] { 1, 10, 11 }, 1)]
+    [DataRow(new[] { 1, 2, 3 }, -1)]
+    public void SmallestIndex_WithGivenArray_ReturnsCorrectIndexOrMinusOne(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

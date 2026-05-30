@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BinaryTreePreorderTraversal;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.BinaryTreePreorderTraversal;
@@ -18,17 +17,11 @@ namespace LeetCode.Tests.Algorithms.BinaryTreePreorderTraversal;
 public abstract class BinaryTreePreorderTraversalTestsBase<T> where T : IBinaryTreePreorderTraversal, new()
 {
     [TestMethod]
-    [DataRow("[]", "[]")]
-    [DataRow("[1]", "[1]")]
-    [DataRow("[1,null,2,3]", "[1,2,3]")]
-    [DataRow("[1,2,3,4,5,6,7,8,9]", "[1,2,4,8,9,5,3,6,7]")]
-    public void PreorderTraversal_WithSerializedBinaryTree_ReturnsNodeValuesInPreorder(string rootJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void PreorderTraversal_WithSerializedBinaryTree_ReturnsNodeValuesInPreorder(int?[] rootArray, int?[] expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResult = JsonHelper.Parse<int?[]>(expectedResultJson);
 
         var solution = new T();
 
@@ -38,5 +31,16 @@ public abstract class BinaryTreePreorderTraversalTestsBase<T> where T : IBinaryT
         // Assert
         Assert.IsNotNull(actualResult);
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), Array.Empty<int?>()];
+
+        yield return [new int?[] { 1 }, new int?[] { 1 }];
+
+        yield return [new int?[] { 1, null, 2, 3 }, new int?[] { 1, 2, 3 }];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, new int?[] { 1, 2, 4, 8, 9, 5, 3, 6, 7 }];
     }
 }

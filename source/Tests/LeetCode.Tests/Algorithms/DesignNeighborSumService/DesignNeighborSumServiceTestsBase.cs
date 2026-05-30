@@ -18,8 +18,7 @@ public abstract class DesignNeighborSumServiceTestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void DesignNeighborSumService_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        NeighborSumServiceScenario scenario)
+    public void DesignNeighborSumService_WithMixedOperations_ProcessesOperationsAccordingToSpecification(NeighborSumServiceScenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -47,81 +46,29 @@ public abstract class DesignNeighborSumServiceTestsBase
 
     private static IEnumerable<NeighborSumServiceScenario[]> GetScenarios()
     {
-        yield return
-        [
-            new NeighborSumServiceScenario(
-                [[0, 1, 2], [3, 4, 5], [6, 7, 8]],
-                [
-                    new AdjacentSumOperation(1),
-                    new AdjacentSumOperation(4),
-                    new DiagonalSumOperation(4),
-                    new DiagonalSumOperation(8)
-                ],
-                [
-                    new AdjacentSumOperation.Result(6),
-                    new AdjacentSumOperation.Result(16),
-                    new DiagonalSumOperation.Result(16),
-                    new DiagonalSumOperation.Result(4)
-                ])
-        ];
+        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(1), new AdjacentSumOperation(4), new DiagonalSumOperation(4), new DiagonalSumOperation(8)], [new AdjacentSumOperation.Result(6), new AdjacentSumOperation.Result(16), new DiagonalSumOperation.Result(16), new DiagonalSumOperation.Result(4)])];
 
-        yield return
-        [
-            new NeighborSumServiceScenario(
-                [[0, 1, 2], [3, 4, 5], [6, 7, 8]],
-                [
-                    new AdjacentSumOperation(0),
-                    new DiagonalSumOperation(0)
-                ],
-                [
-                    new AdjacentSumOperation.Result(4),
-                    new DiagonalSumOperation.Result(4)
-                ])
-        ];
+        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(0), new DiagonalSumOperation(0)], [new AdjacentSumOperation.Result(4), new DiagonalSumOperation.Result(4)])];
 
-        yield return
-        [
-            new NeighborSumServiceScenario(
-                [[5]],
-                [
-                    new AdjacentSumOperation(5),
-                    new DiagonalSumOperation(5)
-                ],
-                [
-                    new AdjacentSumOperation.Result(0),
-                    new DiagonalSumOperation.Result(0)
-                ])
-        ];
+        yield return [new NeighborSumServiceScenario([[5]], [new AdjacentSumOperation(5), new DiagonalSumOperation(5)], [new AdjacentSumOperation.Result(0), new DiagonalSumOperation.Result(0)])];
 
-        yield return
-        [
-            new NeighborSumServiceScenario(
-                [[0, 1], [2, 3]],
-                [
-                    new AdjacentSumOperation(0),
-                    new DiagonalSumOperation(0),
-                    new AdjacentSumOperation(3),
-                    new DiagonalSumOperation(3)
-                ],
-                [
-                    new AdjacentSumOperation.Result(3),
-                    new DiagonalSumOperation.Result(3),
-                    new AdjacentSumOperation.Result(3),
-                    new DiagonalSumOperation.Result(0)
-                ])
-        ];
+        yield return [new NeighborSumServiceScenario([[0, 1], [2, 3]], [new AdjacentSumOperation(0), new DiagonalSumOperation(0), new AdjacentSumOperation(3), new DiagonalSumOperation(3)], [new AdjacentSumOperation.Result(3), new DiagonalSumOperation.Result(3), new AdjacentSumOperation.Result(3), new DiagonalSumOperation.Result(0)])];
     }
 
-    public sealed class NeighborSumServiceScenario : Scenario<IDesignNeighborSumService>
+    public sealed class NeighborSumServiceScenario : IScenario<IDesignNeighborSumService>
     {
-        public NeighborSumServiceScenario(int[][] grid,
-            IOperation<IDesignNeighborSumService>[] operations, IOperationResult[] operationResults)
-            : base(operations, operationResults)
+        public NeighborSumServiceScenario(int[][] grid, IOperation<IDesignNeighborSumService>[] operations, IOperationResult[] operationResults)
         {
             Grid = grid;
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int[][] Grid { get; }
+
+        public IOperation<IDesignNeighborSumService>[] Operations { get; }
+
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class AdjacentSumOperation : IOperation<IDesignNeighborSumService>
@@ -140,7 +87,9 @@ public abstract class DesignNeighborSumServiceTestsBase
             return new Result(sum);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int _sum;
 
@@ -182,7 +131,9 @@ public abstract class DesignNeighborSumServiceTestsBase
             return new Result(sum);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int _sum;
 

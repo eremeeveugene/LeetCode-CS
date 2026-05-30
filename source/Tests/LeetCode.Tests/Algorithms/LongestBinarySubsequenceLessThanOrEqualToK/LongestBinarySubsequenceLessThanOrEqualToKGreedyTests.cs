@@ -14,5 +14,4 @@ using LeetCode.Algorithms.LongestBinarySubsequenceLessThanOrEqualToK;
 namespace LeetCode.Tests.Algorithms.LongestBinarySubsequenceLessThanOrEqualToK;
 
 [TestClass]
-public sealed class LongestBinarySubsequenceLessThanOrEqualToKGreedyTests :
-    LongestBinarySubsequenceLessThanOrEqualToKTestsBase<LongestBinarySubsequenceLessThanOrEqualToKGreedy>;
+public sealed class LongestBinarySubsequenceLessThanOrEqualToKGreedyTests : LongestBinarySubsequenceLessThanOrEqualToKTestsBase<LongestBinarySubsequenceLessThanOrEqualToKGreedy>;

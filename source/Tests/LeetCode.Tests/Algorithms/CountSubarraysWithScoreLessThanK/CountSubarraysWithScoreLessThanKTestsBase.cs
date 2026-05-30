@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountSubarraysWithScoreLessThanK;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountSubarraysWithScoreLessThanK;
 
 public abstract class CountSubarraysWithScoreLessThanKTestsBase<T> where T : ICountSubarraysWithScoreLessThanK, new()
 {
     [TestMethod]
-    [DataRow("[2,1,4,3,5]", 10, 6)]
-    [DataRow("[1,1,1]", 5, 5)]
-    public void CountSubarrays_WithPositiveIntArrayAndScoreThreshold_ReturnsNumberOfSubarraysWithScoreLessThanK(
-        string numsJson, long k, long expectedResult)
+    [DataRow(new[] { 2, 1, 4, 3, 5 }, 10L, 6L)]
+    [DataRow(new[] { 1, 1, 1 }, 5L, 5L)]
+    public void CountSubarrays_WithPositiveIntArrayAndScoreThreshold_ReturnsNumberOfSubarraysWithScoreLessThanK(int[] nums, long k, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FindNumbersWithEvenNumberOfDigits;
 namespace LeetCode.Tests.Algorithms.FindNumbersWithEvenNumberOfDigits;
 
 [TestClass]
-public sealed class FindNumbersWithEvenNumberOfDigitsGreedyTests :
-    FindNumbersWithEvenNumberOfDigitsTestsBase<FindNumbersWithEvenNumberOfDigitsGreedy>;
+public sealed class FindNumbersWithEvenNumberOfDigitsGreedyTests : FindNumbersWithEvenNumberOfDigitsTestsBase<FindNumbersWithEvenNumberOfDigitsGreedy>;

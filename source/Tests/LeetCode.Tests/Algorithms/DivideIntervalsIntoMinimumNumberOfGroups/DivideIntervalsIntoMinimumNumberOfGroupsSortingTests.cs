@@ -14,5 +14,4 @@ using LeetCode.Algorithms.DivideIntervalsIntoMinimumNumberOfGroups;
 namespace LeetCode.Tests.Algorithms.DivideIntervalsIntoMinimumNumberOfGroups;
 
 [TestClass]
-public sealed class DivideIntervalsIntoMinimumNumberOfGroupsSortingTests :
-    DivideIntervalsIntoMinimumNumberOfGroupsTestsBase<DivideIntervalsIntoMinimumNumberOfGroupsSorting>;
+public sealed class DivideIntervalsIntoMinimumNumberOfGroupsSortingTests : DivideIntervalsIntoMinimumNumberOfGroupsTestsBase<DivideIntervalsIntoMinimumNumberOfGroupsSorting>;

@@ -10,26 +10,21 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumIncrementToMakeArrayUnique;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumIncrementToMakeArrayUnique;
 
-public abstract class MinimumIncrementToMakeArrayUniqueTestsBase<T>
-    where T : IMinimumIncrementToMakeArrayUnique, new()
+public abstract class MinimumIncrementToMakeArrayUniqueTestsBase<T> where T : IMinimumIncrementToMakeArrayUnique, new()
 {
     [TestMethod]
-    [DataRow("[0]", 0)]
-    [DataRow("[1,2,2]", 1)]
-    [DataRow("[3,2,1,2,1,7]", 6)]
-    [DataRow("[9,7,6,5,1,0]", 0)]
-    [DataRow("[0,0,0,0,0,0,0,0,0,1]", 44)]
-    [DataRow("[1,2,3,1,3,2,2,1,3,2,3,1,3,2,1,3,1,2]", 135)]
-    public void MinIncrementForUnique_WithIntegerArray_ReturnsMinimumMovesToMakeElementsUnique(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 0 }, 0)]
+    [DataRow(new[] { 1, 2, 2 }, 1)]
+    [DataRow(new[] { 3, 2, 1, 2, 1, 7 }, 6)]
+    [DataRow(new[] { 9, 7, 6, 5, 1, 0 }, 0)]
+    [DataRow(new[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 }, 44)]
+    [DataRow(new[] { 1, 2, 3, 1, 3, 2, 2, 1, 3, 2, 3, 1, 3, 2, 1, 3, 1, 2 }, 135)]
+    public void MinIncrementForUnique_WithIntegerArray_ReturnsMinimumMovesToMakeElementsUnique(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

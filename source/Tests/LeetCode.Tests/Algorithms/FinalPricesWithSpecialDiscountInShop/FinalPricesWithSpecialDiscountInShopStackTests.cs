@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FinalPricesWithSpecialDiscountInShop;
 namespace LeetCode.Tests.Algorithms.FinalPricesWithSpecialDiscountInShop;
 
 [TestClass]
-public sealed class FinalPricesWithSpecialDiscountInShopStackTests :
-    FinalPricesWithSpecialDiscountInShopTestsBase<FinalPricesWithSpecialDiscountInShopStack>;
+public sealed class FinalPricesWithSpecialDiscountInShopStackTests : FinalPricesWithSpecialDiscountInShopTestsBase<FinalPricesWithSpecialDiscountInShopStack>;

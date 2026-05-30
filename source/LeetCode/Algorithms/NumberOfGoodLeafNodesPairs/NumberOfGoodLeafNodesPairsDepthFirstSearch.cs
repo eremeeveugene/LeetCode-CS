@@ -47,8 +47,7 @@ public sealed class NumberOfGoodLeafNodesPairsDepthFirstSearch : INumberOfGoodLe
         var leftDistances = CountPairs(node.left, distance, ref result);
         var rightDistances = CountPairs(node.right, distance, ref result);
 
-        result += leftDistances.Sum(leftDistance =>
-            rightDistances.Count(rightDistance => leftDistance + rightDistance <= distance));
+        result += leftDistances.Sum(leftDistance => rightDistances.Count(rightDistance => leftDistance + rightDistance <= distance));
 
         var currentDistances = new List<int>();
 

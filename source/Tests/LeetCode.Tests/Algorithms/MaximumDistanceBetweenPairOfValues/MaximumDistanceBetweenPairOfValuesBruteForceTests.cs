@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumDistanceBetweenPairOfValues;
 namespace LeetCode.Tests.Algorithms.MaximumDistanceBetweenPairOfValues;
 
 [TestClass]
-public class MaximumDistanceBetweenPairOfValuesBruteForceTests :
-    MaximumDistanceBetweenPairOfValuesTestsBase<MaximumDistanceBetweenPairOfValuesBruteForce>;
+public class MaximumDistanceBetweenPairOfValuesBruteForceTests : MaximumDistanceBetweenPairOfValuesTestsBase<MaximumDistanceBetweenPairOfValuesBruteForce>;

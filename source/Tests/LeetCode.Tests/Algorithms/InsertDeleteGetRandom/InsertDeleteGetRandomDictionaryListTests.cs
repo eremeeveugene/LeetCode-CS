@@ -14,5 +14,4 @@ using LeetCode.Algorithms.InsertDeleteGetRandom;
 namespace LeetCode.Tests.Algorithms.InsertDeleteGetRandom;
 
 [TestClass]
-public sealed class InsertDeleteGetRandomDictionaryListTests :
-    InsertDeleteGetRandomTestsBase<InsertDeleteGetRandomDictionaryList>;
+public sealed class InsertDeleteGetRandomDictionaryListTests : InsertDeleteGetRandomTestsBase<InsertDeleteGetRandomDictionaryList>;

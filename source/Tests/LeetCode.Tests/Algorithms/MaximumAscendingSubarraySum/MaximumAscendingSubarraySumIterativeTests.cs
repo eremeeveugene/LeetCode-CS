@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumAscendingSubarraySum;
 namespace LeetCode.Tests.Algorithms.MaximumAscendingSubarraySum;
 
 [TestClass]
-public sealed class MaximumAscendingSubarraySumIterativeTests :
-    MaximumAscendingSubarraySumTestsBase<MaximumAscendingSubarraySumIterative>;
+public sealed class MaximumAscendingSubarraySumIterativeTests : MaximumAscendingSubarraySumTestsBase<MaximumAscendingSubarraySumIterative>;

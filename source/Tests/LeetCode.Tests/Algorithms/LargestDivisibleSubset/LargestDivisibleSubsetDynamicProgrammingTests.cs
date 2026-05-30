@@ -14,5 +14,4 @@ using LeetCode.Algorithms.LargestDivisibleSubset;
 namespace LeetCode.Tests.Algorithms.LargestDivisibleSubset;
 
 [TestClass]
-public sealed class LargestDivisibleSubsetDynamicProgrammingTests :
-    LargestDivisibleSubsetTestsBase<LargestDivisibleSubsetDynamicProgramming>;
+public sealed class LargestDivisibleSubsetDynamicProgrammingTests : LargestDivisibleSubsetTestsBase<LargestDivisibleSubsetDynamicProgramming>;

@@ -18,8 +18,7 @@ public abstract class DesignMovieRentalSystemTestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void DesignMovieRentalSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        MovieRentalSystemScenario scenario)
+    public void DesignMovieRentalSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(MovieRentalSystemScenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -47,93 +46,31 @@ public abstract class DesignMovieRentalSystemTestsBase
 
     private static IEnumerable<MovieRentalSystemScenario[]> GetScenarios()
     {
-        yield return
-        [
-            new MovieRentalSystemScenario(3,
-                [[0, 1, 5], [0, 2, 6], [0, 3, 7], [1, 1, 4], [1, 2, 7], [2, 1, 5]],
-                [
-                    new SearchOperation(1),
-                    new RentOperation(0, 1),
-                    new RentOperation(1, 2),
-                    new ReportOperation(),
-                    new DropOperation(1, 2),
-                    new SearchOperation(2)
-                ],
-                [
-                    new SearchOperation.Result([1, 0, 2]),
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new ReportOperation.Result([[0, 1], [1, 2]]),
-                    VoidOperationResult.Instance,
-                    new SearchOperation.Result([0, 1])
-                ])
-        ];
+        yield return [new MovieRentalSystemScenario(3, [[0, 1, 5], [0, 2, 6], [0, 3, 7], [1, 1, 4], [1, 2, 7], [2, 1, 5]], [new SearchOperation(1), new RentOperation(0, 1), new RentOperation(1, 2), new ReportOperation(), new DropOperation(1, 2), new SearchOperation(2)], [new SearchOperation.Result([1, 0, 2]), VoidOperationResult.Instance, VoidOperationResult.Instance, new ReportOperation.Result([[0, 1], [1, 2]]), VoidOperationResult.Instance, new SearchOperation.Result([0, 1])])];
 
-        yield return
-        [
-            new MovieRentalSystemScenario(2,
-                [[0, 1, 10], [1, 1, 20], [2, 1, 10], [3, 1, 5], [4, 1, 15], [5, 1, 10]],
-                [
-                    new SearchOperation(1)
-                ],
-                [
-                    new SearchOperation.Result([3, 0, 2, 5, 4])
-                ])
-        ];
+        yield return [new MovieRentalSystemScenario(2, [[0, 1, 10], [1, 1, 20], [2, 1, 10], [3, 1, 5], [4, 1, 15], [5, 1, 10]], [new SearchOperation(1)], [new SearchOperation.Result([3, 0, 2, 5, 4])])];
 
-        yield return
-        [
-            new MovieRentalSystemScenario(3,
-                [[0, 1, 5], [0, 2, 3], [1, 1, 8], [1, 3, 2], [2, 2, 6]],
-                [
-                    new RentOperation(0, 1),
-                    new RentOperation(0, 2),
-                    new RentOperation(1, 1),
-                    new RentOperation(1, 3),
-                    new ReportOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new ReportOperation.Result([[1, 3], [0, 2], [0, 1], [1, 1]])
-                ])
-        ];
+        yield return [new MovieRentalSystemScenario(3, [[0, 1, 5], [0, 2, 3], [1, 1, 8], [1, 3, 2], [2, 2, 6]], [new RentOperation(0, 1), new RentOperation(0, 2), new RentOperation(1, 1), new RentOperation(1, 3), new ReportOperation()], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new ReportOperation.Result([[1, 3], [0, 2], [0, 1], [1, 1]])])];
 
-        yield return
-        [
-            new MovieRentalSystemScenario(2,
-                [[0, 1, 5], [1, 1, 3]],
-                [
-                    new RentOperation(0, 1),
-                    new RentOperation(1, 1),
-                    new SearchOperation(1),
-                    new DropOperation(0, 1),
-                    new SearchOperation(1)
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new SearchOperation.Result([]),
-                    VoidOperationResult.Instance,
-                    new SearchOperation.Result([0])
-                ])
-        ];
+        yield return [new MovieRentalSystemScenario(2, [[0, 1, 5], [1, 1, 3]], [new RentOperation(0, 1), new RentOperation(1, 1), new SearchOperation(1), new DropOperation(0, 1), new SearchOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, new SearchOperation.Result([]), VoidOperationResult.Instance, new SearchOperation.Result([0])])];
     }
 
-    public sealed class MovieRentalSystemScenario : Scenario<IDesignMovieRentalSystem>
+    public sealed class MovieRentalSystemScenario : IScenario<IDesignMovieRentalSystem>
     {
-        public MovieRentalSystemScenario(int n, int[][] entries,
-            IOperation<IDesignMovieRentalSystem>[] operations, IOperationResult[] operationResults)
-            : base(operations, operationResults)
+        public MovieRentalSystemScenario(int n, int[][] entries, IOperation<IDesignMovieRentalSystem>[] operations, IOperationResult[] operationResults)
         {
             N = n;
             Entries = entries;
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int N { get; }
         public int[][] Entries { get; }
+
+        public IOperation<IDesignMovieRentalSystem>[] Operations { get; }
+
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class SearchOperation : IOperation<IDesignMovieRentalSystem>
@@ -152,7 +89,9 @@ public abstract class DesignMovieRentalSystemTestsBase
             return new Result(shops);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly IList<int> _shops;
 
@@ -194,7 +133,9 @@ public abstract class DesignMovieRentalSystemTestsBase
             return new Result(entries);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly IList<IList<int>> _entries;
 
@@ -205,9 +146,7 @@ public abstract class DesignMovieRentalSystemTestsBase
 
             public bool Equals(Result? other)
             {
-                return other is not null &&
-                       _entries.Count == other._entries.Count &&
-                       _entries.Zip(other._entries, (a, b) => a.SequenceEqual(b)).All(x => x);
+                return other is not null && _entries.Count == other._entries.Count && _entries.Zip(other._entries, (a, b) => a.SequenceEqual(b)).All(x => x);
             }
 
             public override bool Equals(object? obj)

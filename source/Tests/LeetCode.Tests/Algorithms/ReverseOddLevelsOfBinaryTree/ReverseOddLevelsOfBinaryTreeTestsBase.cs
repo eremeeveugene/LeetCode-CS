@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ReverseOddLevelsOfBinaryTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,23 +18,11 @@ namespace LeetCode.Tests.Algorithms.ReverseOddLevelsOfBinaryTree;
 public abstract class ReverseOddLevelsOfBinaryTreeTestsBase<T> where T : IReverseOddLevelsOfBinaryTree, new()
 {
     [TestMethod]
-    [DataRow("[]", "[]")]
-    [DataRow("[1]", "[1]")]
-    [DataRow("[7,13,11]", "[7,11,13]")]
-    [DataRow("[2,3,5,8,13,21,34]", "[2,5,3,8,13,21,34]")]
-    [DataRow("[0,1,2,0,0,0,0,1,1,1,1,2,2,2,2]", "[0,2,1,0,0,0,0,2,2,2,2,1,1,1,1]")]
-    [DataRow("[1,null,2]", "[1,null,2]")]
-    [DataRow("[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]", "[1,3,2,4,5,6,7,15,14,13,12,11,10,9,8]")]
-    [DataRow("[1,2,null,3,null,4,null,5]", "[1,2,null,3,null,4,null,5]")]
-    [DataRow("[1,null,2,null,3,null,4,null,5]", "[1,null,2,null,3,null,4,null,5]")]
-    [DataRow("[1,2,3,4,null,null,5,6,null,null,7]", "[1,3,2,4,null,null,5,7,null,null,6]")]
-    public void ReverseOddLevels_GivenTree_ReturnsTreeWithOddLevelsReversed(string rootJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void ReverseOddLevels_GivenTree_ReturnsTreeWithOddLevelsReversed(int?[] rootArray, int?[] expectedResultArray)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResultArray = JsonHelper.Parse<int?[]>(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();
@@ -45,5 +32,28 @@ public abstract class ReverseOddLevelsOfBinaryTreeTestsBase<T> where T : IRevers
 
         // Assert
         TreeNodeAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), Array.Empty<int?>()];
+
+        yield return [new int?[] { 1 }, new int?[] { 1 }];
+
+        yield return [new int?[] { 7, 13, 11 }, new int?[] { 7, 11, 13 }];
+
+        yield return [new int?[] { 2, 3, 5, 8, 13, 21, 34 }, new int?[] { 2, 5, 3, 8, 13, 21, 34 }];
+
+        yield return [new int?[] { 0, 1, 2, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 }, new int?[] { 0, 2, 1, 0, 0, 0, 0, 2, 2, 2, 2, 1, 1, 1, 1 }];
+
+        yield return [new int?[] { 1, null, 2 }, new int?[] { 1, null, 2 }];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }, new int?[] { 1, 3, 2, 4, 5, 6, 7, 15, 14, 13, 12, 11, 10, 9, 8 }];
+
+        yield return [new int?[] { 1, 2, null, 3, null, 4, null, 5 }, new int?[] { 1, 2, null, 3, null, 4, null, 5 }];
+
+        yield return [new int?[] { 1, null, 2, null, 3, null, 4, null, 5 }, new int?[] { 1, null, 2, null, 3, null, 4, null, 5 }];
+
+        yield return [new int?[] { 1, 2, 3, 4, null, null, 5, 6, null, null, 7 }, new int?[] { 1, 3, 2, 4, null, null, 5, 7, null, null, 6 }];
     }
 }

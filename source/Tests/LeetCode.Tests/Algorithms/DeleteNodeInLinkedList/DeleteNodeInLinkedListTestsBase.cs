@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DeleteNodeInLinkedList;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,16 +18,12 @@ namespace LeetCode.Tests.Algorithms.DeleteNodeInLinkedList;
 public abstract class DeleteNodeInLinkedListTestsBase<T> where T : IDeleteNodeInLinkedList, new()
 {
     [TestMethod]
-    [DataRow("[]", 0, "[]")]
-    [DataRow("[4, 5, 1, 9]", 5, "[4, 1, 9]")]
-    [DataRow("[4, 5, 1, 9]", 1, "[4, 5, 9]")]
-    public void DeleteNode_WhenNodeExists_RemovesNodeFromList(string actualResultJson, int node,
-        string expectedResultJson)
+    [DataRow(new int[] { }, 0, new int[] { })]
+    [DataRow(new[] { 4, 5, 1, 9 }, 5, new[] { 4, 1, 9 })]
+    [DataRow(new[] { 4, 5, 1, 9 }, 1, new[] { 4, 5, 9 })]
+    public void DeleteNode_WhenNodeExists_RemovesNodeFromList(int[] actualResultArray, int node, int[] expectedResultArray)
     {
         // Arrange
-        var actualResultArray = JsonHelper.Parse<int[]>(actualResultJson);
-        var expectedResultArray = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var actualResult = ListNode.ToListNode(actualResultArray);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 

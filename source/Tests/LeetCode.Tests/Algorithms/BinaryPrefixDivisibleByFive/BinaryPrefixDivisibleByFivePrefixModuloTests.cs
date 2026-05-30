@@ -14,5 +14,4 @@ using LeetCode.Algorithms.BinaryPrefixDivisibleByFive;
 namespace LeetCode.Tests.Algorithms.BinaryPrefixDivisibleByFive;
 
 [TestClass]
-public sealed class BinaryPrefixDivisibleByFivePrefixModuloTests :
-    BinaryPrefixDivisibleByFiveTestsBase<BinaryPrefixDivisibleByFivePrefixModulo>;
+public sealed class BinaryPrefixDivisibleByFivePrefixModuloTests : BinaryPrefixDivisibleByFiveTestsBase<BinaryPrefixDivisibleByFivePrefixModulo>;

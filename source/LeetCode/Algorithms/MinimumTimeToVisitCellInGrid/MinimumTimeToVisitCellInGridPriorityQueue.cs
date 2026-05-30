@@ -49,11 +49,7 @@ public sealed class MinimumTimeToVisitCellInGridPriorityQueue : IMinimumTimeToVi
                 var targetRow = row + direction.Row;
                 var targetColumn = column + direction.Column;
 
-                if (targetRow < 0 ||
-                    targetRow >= rowsCount ||
-                    targetColumn < 0 ||
-                    targetColumn >= columnsCount ||
-                    seen[targetRow, targetColumn])
+                if (targetRow < 0 || targetRow >= rowsCount || targetColumn < 0 || targetColumn >= columnsCount || seen[targetRow, targetColumn])
                 {
                     continue;
                 }

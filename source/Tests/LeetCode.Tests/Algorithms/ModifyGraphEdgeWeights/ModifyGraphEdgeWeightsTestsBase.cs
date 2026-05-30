@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ModifyGraphEdgeWeights;
-using LeetCode.Core.Helpers;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ModifyGraphEdgeWeights;
@@ -18,16 +17,10 @@ namespace LeetCode.Tests.Algorithms.ModifyGraphEdgeWeights;
 public abstract class ModifyGraphEdgeWeightsTestsBase<T> where T : IModifyGraphEdgeWeights, new()
 {
     [TestMethod]
-    [DataRow(3, "[[0,1,-1],[0,2,5]]", 0, 2, 6, "[]")]
-    [DataRow(4, "[[1,0,4],[1,2,3],[2,3,5],[0,3,-1]]", 0, 2, 6, "[[1,0,4],[1,2,3],[2,3,5],[0,3,1]]")]
-    [DataRow(5, "[[4,1,-1],[2,0,-1],[0,3,-1],[4,3,-1]]", 0, 1, 5, "[[4,1,1],[2,0,3],[0,3,3],[4,3,1]]")]
-    public void ModifiedGraphEdges_WithGivenParameters_ReturnsModifiedEdges(int n, string edgesJson, int source,
-        int destination, int target, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void ModifiedGraphEdges_WithGivenParameters_ReturnsModifiedEdges(int n, int[][] edges, int source, int destination, int target, int[][] expectedResult)
     {
         // Arrange
-        var edges = JsonHelper.Parse<int[][]>(edgesJson);
-        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -35,5 +28,14 @@ public abstract class ModifyGraphEdgeWeightsTestsBase<T> where T : IModifyGraphE
 
         // Assert
         NestedCollectionAssert.AreEquivalent(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [3, new[] { new[] { 0, 1, -1 }, new[] { 0, 2, 5 } }, 0, 2, 6, Array.Empty<int[]>()];
+
+        yield return [4, new[] { new[] { 1, 0, 4 }, new[] { 1, 2, 3 }, new[] { 2, 3, 5 }, new[] { 0, 3, -1 } }, 0, 2, 6, new[] { new[] { 1, 0, 4 }, new[] { 1, 2, 3 }, new[] { 2, 3, 5 }, new[] { 0, 3, 1 } }];
+
+        yield return [5, new[] { new[] { 4, 1, -1 }, new[] { 2, 0, -1 }, new[] { 0, 3, -1 }, new[] { 4, 3, -1 } }, 0, 1, 5, new[] { new[] { 4, 1, 1 }, new[] { 2, 0, 3 }, new[] { 0, 3, 3 }, new[] { 4, 3, 1 } }];
     }
 }

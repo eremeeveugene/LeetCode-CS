@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RemoveDuplicatesFromSortedList;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,16 +18,13 @@ namespace LeetCode.Tests.Algorithms.RemoveDuplicatesFromSortedList;
 public abstract class RemoveDuplicatesFromSortedListTestsBase<T> where T : IRemoveDuplicatesFromSortedList, new()
 {
     [TestMethod]
-    [DataRow("[0,0,0,0,0]", "[0]")]
-    [DataRow("[1,1,2]", "[1,2]")]
-    [DataRow("[1,1,2,3,3]", "[1,2,3]")]
-    public void DeleteDuplicates_WithSortedLinkedList_ReturnsLinkedListWithUniqueSortedElements(string headJson,
-        string expectedResultJson)
+    [DataRow(new[] { 0, 0, 0, 0, 0 }, new[] { 0 })]
+    [DataRow(new[] { 1, 1, 2 }, new[] { 1, 2 })]
+    [DataRow(new[] { 1, 1, 2, 3, 3 }, new[] { 1, 2, 3 })]
+    public void DeleteDuplicates_WithSortedLinkedList_ReturnsLinkedListWithUniqueSortedElements(int[] headArray, int[] expectedResultArray)
     {
         // Arrange
-        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper.Parse<int[]>(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

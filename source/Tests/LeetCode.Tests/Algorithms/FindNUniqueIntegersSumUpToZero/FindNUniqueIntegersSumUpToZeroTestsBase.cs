@@ -10,23 +10,20 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindNUniqueIntegersSumUpToZero;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindNUniqueIntegersSumUpToZero;
 
 public abstract class FindNUniqueIntegersSumUpToZeroTestsBase<T> where T : IFindNUniqueIntegersSumUpToZero, new()
 {
     [TestMethod]
-    [DataRow(1, "[0]")]
-    [DataRow(2, "[-1,1]")]
-    [DataRow(3, "[-1,0,1]")]
-    [DataRow(4, "[-2,-1,1,2]")]
-    [DataRow(5, "[-2,-1,0,1,2]")]
-    public void SumZero_WithCountOfUniqueIntegers_ReturnsArraySummingToZero(int n, string expectedResultJson)
+    [DataRow(1, new[] { 0 })]
+    [DataRow(2, new[] { -1, 1 })]
+    [DataRow(3, new[] { -1, 0, 1 })]
+    [DataRow(4, new[] { -2, -1, 1, 2 })]
+    [DataRow(5, new[] { -2, -1, 0, 1, 2 })]
+    public void SumZero_WithCountOfUniqueIntegers_ReturnsArraySummingToZero(int n, int[] expectedResult)
     {
         // Arrange
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

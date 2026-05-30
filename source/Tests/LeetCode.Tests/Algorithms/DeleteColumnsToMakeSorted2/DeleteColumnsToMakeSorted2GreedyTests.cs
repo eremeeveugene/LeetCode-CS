@@ -14,5 +14,4 @@ using LeetCode.Algorithms.DeleteColumnsToMakeSorted2;
 namespace LeetCode.Tests.Algorithms.DeleteColumnsToMakeSorted2;
 
 [TestClass]
-public sealed class DeleteColumnsToMakeSorted2GreedyTests :
-    DeleteColumnsToMakeSorted2TestsBase<DeleteColumnsToMakeSorted2Greedy>;
+public sealed class DeleteColumnsToMakeSorted2GreedyTests : DeleteColumnsToMakeSorted2TestsBase<DeleteColumnsToMakeSorted2Greedy>;

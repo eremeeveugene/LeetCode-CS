@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,20 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SpecialPositionsInBinaryMatrix;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SpecialPositionsInBinaryMatrix;
 
 public abstract class SpecialPositionsInBinaryMatrixTestsBase<T> where T : ISpecialPositionsInBinaryMatrix, new()
 {
     [TestMethod]
-    [DataRow("[[1,0,0],[0,0,1],[1,0,0]]", 1)]
-    [DataRow("[[1,0,0],[0,1,0],[0,0,1]]", 3)]
-    public void NumSpecial_WithBinaryMatrix_ReturnsCountOfSpecialPositions(string matrixJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void NumSpecial_WithBinaryMatrix_ReturnsCountOfSpecialPositions(int[][] mat, int expectedResult)
     {
         // Arrange
-        var mat = JsonHelper.Parse<int[][]>(matrixJson);
-
         var solution = new T();
 
         // Act
@@ -31,5 +27,12 @@ public abstract class SpecialPositionsInBinaryMatrixTestsBase<T> where T : ISpec
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 0, 0 }, new[] { 0, 0, 1 }, new[] { 1, 0, 0 } }, 1];
+
+        yield return [new[] { new[] { 1, 0, 0 }, new[] { 0, 1, 0 }, new[] { 0, 0, 1 } }, 3];
     }
 }

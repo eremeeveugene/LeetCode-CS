@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MakeArrayElementsEqualToZero;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MakeArrayElementsEqualToZero;
 
-public abstract class MakeArrayElementsEqualToZeroTestsBase<T>
-    where T : IMakeArrayElementsEqualToZero, new()
+public abstract class MakeArrayElementsEqualToZeroTestsBase<T> where T : IMakeArrayElementsEqualToZero, new()
 {
     [TestMethod]
-    [DataRow("[1,0,2,0,3]", 2)]
-    [DataRow("[2,3,4,0,4,1,0]", 0)]
-    public void CountValidSelections_WithNumsArray_ReturnsNumberOfValidStartPositions(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 1, 0, 2, 0, 3 }, 2)]
+    [DataRow(new[] { 2, 3, 4, 0, 4, 1, 0 }, 0)]
+    public void CountValidSelections_WithNumsArray_ReturnsNumberOfValidStartPositions(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

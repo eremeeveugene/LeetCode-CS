@@ -31,8 +31,7 @@ public abstract class DistributeMoneyToMaximumChildrenTestsBase<T> where T : IDi
     [DataRow(10, 5, 0)]
     [DataRow(13, 2, 1)]
     [DataRow(3, 5, -1)]
-    public void DistMoney_WithMoneyAndChildrenCount_ReturnsMaximumChildrenMeetingDistributionCriteria(int money,
-        int children, int expectedResult)
+    public void DistMoney_WithMoneyAndChildrenCount_ReturnsMaximumChildrenMeetingDistributionCriteria(int money, int children, int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -10,20 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SumOfVariableLengthSubarrays;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SumOfVariableLengthSubarrays;
 
 public abstract class SumOfVariableLengthSubarraysTestsBase<T> where T : ISumOfVariableLengthSubarrays, new()
 {
     [TestMethod]
-    [DataRow("[2,3,1]", 11)]
-    [DataRow("[3,1,1,2]", 13)]
-    public void SubarraySum_WithGivenArray_ReturnsMaximumSum(string numsJson, int expectedResult)
+    [DataRow(new[] { 2, 3, 1 }, 11)]
+    [DataRow(new[] { 3, 1, 1, 2 }, 13)]
+    public void SubarraySum_WithGivenArray_ReturnsMaximumSum(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

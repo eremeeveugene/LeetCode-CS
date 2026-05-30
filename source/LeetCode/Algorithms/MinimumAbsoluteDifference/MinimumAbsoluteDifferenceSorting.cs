@@ -41,11 +41,7 @@ public sealed class MinimumAbsoluteDifferenceSorting : IMinimumAbsoluteDifferenc
 
             if (difference == minDifference)
             {
-                result.Add(new[]
-                {
-                    arr[i],
-                    arr[i + 1]
-                });
+                result.Add(new[] { arr[i], arr[i + 1] });
             }
         }
 

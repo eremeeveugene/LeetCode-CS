@@ -10,21 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindMinimumTimeToReachLastRoom2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindMinimumTimeToReachLastRoom2;
 
 public abstract class FindMinimumTimeToReachLastRoom2TestsBase<T> where T : IFindMinimumTimeToReachLastRoom2, new()
 {
     [TestMethod]
-    [DataRow("[[0,1],[1,2]]", 4)]
-    [DataRow("[[0,4],[4,4]]", 7)]
-    [DataRow("[[0,0,0,0],[0,0,0,0]]", 6)]
-    public void MinTimeToReach_GivenMoveTimeMatrix_ReturnsMinimumTotalTime(string moveTimeJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MinTimeToReach_GivenMoveTimeMatrix_ReturnsMinimumTotalTime(int[][] moveTime, int expectedResult)
     {
         // Arrange
-        var moveTime = JsonHelper.Parse<int[][]>(moveTimeJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +27,14 @@ public abstract class FindMinimumTimeToReachLastRoom2TestsBase<T> where T : IFin
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 0, 1 }, new[] { 1, 2 } }, 4];
+
+        yield return [new[] { new[] { 0, 4 }, new[] { 4, 4 } }, 7];
+
+        yield return [new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 } }, 6];
     }
 }

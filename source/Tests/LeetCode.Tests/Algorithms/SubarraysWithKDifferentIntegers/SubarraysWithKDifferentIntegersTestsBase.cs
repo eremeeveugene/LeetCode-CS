@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SubarraysWithKDifferentIntegers;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SubarraysWithKDifferentIntegers;
 
 public abstract class SubarraysWithKDifferentIntegersTestsBase<T> where T : ISubarraysWithKDifferentIntegers, new()
 {
     [TestMethod]
-    [DataRow("[1,2,1,2,3]", 2, 7)]
-    [DataRow("[1,2,1,3,4]", 3, 3)]
-    public void SubarraysWithKDistinct_WithArrayAndTargetDistinctCount_ReturnsNumberOfValidSubarrays(string numsJson,
-        int k, int expectedResult)
+    [DataRow(new[] { 1, 2, 1, 2, 3 }, 2, 7)]
+    [DataRow(new[] { 1, 2, 1, 3, 4 }, 3, 3)]
+    public void SubarraysWithKDistinct_WithArrayAndTargetDistinctCount_ReturnsNumberOfValidSubarrays(int[] nums, int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

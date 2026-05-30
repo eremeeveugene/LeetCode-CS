@@ -14,6 +14,4 @@ using LeetCode.Algorithms.NumberOfStepsToReduceNumberInBinaryRepresentationToOne
 namespace LeetCode.Tests.Algorithms.NumberOfStepsToReduceNumberInBinaryRepresentationToOne;
 
 [TestClass]
-public sealed class NumberOfStepsToReduceNumberInBinaryRepresentationToOneGreedyTests :
-    NumberOfStepsToReduceNumberInBinaryRepresentationToOneTestsBase<
-        NumberOfStepsToReduceNumberInBinaryRepresentationToOneGreedy>;
+public sealed class NumberOfStepsToReduceNumberInBinaryRepresentationToOneGreedyTests : NumberOfStepsToReduceNumberInBinaryRepresentationToOneTestsBase<NumberOfStepsToReduceNumberInBinaryRepresentationToOneGreedy>;

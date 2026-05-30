@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.TeemoAttacking;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.TeemoAttacking;
 
 public abstract class TeemoAttackingTestsBase<T> where T : ITeemoAttacking, new()
 {
     [TestMethod]
-    [DataRow("[1,4]", 2, 4)]
-    [DataRow("[1,2]", 2, 3)]
-    public void FindPoisonedDuration_WithOverlappingOrConsecutiveAttacks_ReturnsTotalPoisonedTime(string timeSeriesJson,
-        int duration, int expectedResult)
+    [DataRow(new[] { 1, 4 }, 2, 4)]
+    [DataRow(new[] { 1, 2 }, 2, 3)]
+    public void FindPoisonedDuration_WithOverlappingOrConsecutiveAttacks_ReturnsTotalPoisonedTime(int[] timeSeries, int duration, int expectedResult)
     {
         // Arrange
-        var timeSeries = JsonHelper.Parse<int[]>(timeSeriesJson);
-
         var solution = new T();
 
         // Act

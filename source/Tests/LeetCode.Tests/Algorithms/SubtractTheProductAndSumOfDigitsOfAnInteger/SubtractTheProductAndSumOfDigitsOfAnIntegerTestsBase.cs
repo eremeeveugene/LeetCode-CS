@@ -13,14 +13,12 @@ using LeetCode.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger;
 
 namespace LeetCode.Tests.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger;
 
-public abstract class SubtractTheProductAndSumOfDigitsOfAnIntegerTestsBase<T>
-    where T : ISubtractTheProductAndSumOfDigitsOfAnInteger, new()
+public abstract class SubtractTheProductAndSumOfDigitsOfAnIntegerTestsBase<T> where T : ISubtractTheProductAndSumOfDigitsOfAnInteger, new()
 {
     [TestMethod]
     [DataRow(234, 15)]
     [DataRow(4421, 21)]
-    public void SubtractProductAndSum_WithIntegerInput_ReturnsDifferenceBetweenDigitProductAndSum(int n,
-        int expectedResult)
+    public void SubtractProductAndSum_WithIntegerInput_ReturnsDifferenceBetweenDigitProductAndSum(int n, int expectedResult)
     {
         // Arrange
         var solution = new T();

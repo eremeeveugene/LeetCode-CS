@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindSmallestLetterGreaterThanTarget;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindSmallestLetterGreaterThanTarget;
 
-public abstract class FindSmallestLetterGreaterThanTargetTestsBase<T>
-    where T : IFindSmallestLetterGreaterThanTarget, new()
+public abstract class FindSmallestLetterGreaterThanTargetTestsBase<T> where T : IFindSmallestLetterGreaterThanTarget, new()
 {
     [TestMethod]
-    [DataRow("[\"c\",\"f\",\"j\"]", 'a', 'c')]
-    [DataRow("[\"c\",\"f\",\"j\"]", 'c', 'f')]
-    [DataRow("[\"x\",\"x\",\"y\",\"y\"]", 'z', 'x')]
-    public void NextGreatestLetter_WithSortedLettersAndTargetCharacter_ReturnsSmallestLetterGreaterThanTarget(
-        string lettersJson, char target, char expectedResult)
+    [DataRow(new[] { 'c', 'f', 'j' }, 'a', 'c')]
+    [DataRow(new[] { 'c', 'f', 'j' }, 'c', 'f')]
+    [DataRow(new[] { 'x', 'x', 'y', 'y' }, 'z', 'x')]
+    public void NextGreatestLetter_WithSortedLettersAndTargetCharacter_ReturnsSmallestLetterGreaterThanTarget(char[] letters, char target, char expectedResult)
     {
         // Arrange
-        var letters = JsonHelper.Parse<char[]>(lettersJson);
-
         var solution = new T();
 
         // Act

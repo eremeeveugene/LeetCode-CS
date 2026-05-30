@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,20 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ContainerWithMostWater;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ContainerWithMostWater;
 
 public abstract class ContainerWithMostWaterTestsBase<T> where T : IContainerWithMostWater, new()
 {
     [TestMethod]
-    [DataRow("[1,1]", 1)]
-    [DataRow("[1,8,6,2,5,4,8,3,7]", 49)]
-    public void MaxArea_WithHeightsArray_ReturnsMaximumWaterContained(string heightsJson, int expectedResult)
+    [DataRow(new[] { 1, 1 }, 1)]
+    [DataRow(new[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 }, 49)]
+    public void MaxArea_WithHeightsArray_ReturnsMaximumWaterContained(int[] heights, int expectedResult)
     {
         // Arrange
-        var heights = JsonHelper.Parse<int[]>(heightsJson);
-
         var solution = new T();
 
         // Act

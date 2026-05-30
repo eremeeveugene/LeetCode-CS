@@ -28,8 +28,7 @@ public sealed class MakeTheStringGreatStringBuilder : IMakeTheStringGreat
 
         foreach (var c in s)
         {
-            if (stringBuilder.Length > 0 && char.ToLower(stringBuilder[^1]) == char.ToLower(c) &&
-                stringBuilder[^1] != c)
+            if (stringBuilder.Length > 0 && char.ToLower(stringBuilder[^1]) == char.ToLower(c) && stringBuilder[^1] != c)
             {
                 stringBuilder.Remove(stringBuilder.Length - 1, 1);
             }

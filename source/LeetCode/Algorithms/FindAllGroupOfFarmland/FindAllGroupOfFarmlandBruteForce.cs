@@ -40,8 +40,7 @@ public sealed class FindAllGroupOfFarmlandBruteForce : IFindAllGroupOfFarmland
         return [.. result];
     }
 
-    private static void FindFarmland(IReadOnlyList<int[]> land, ICollection<int[]> result, int r1, int c1, int r2,
-        int c2)
+    private static void FindFarmland(IReadOnlyList<int[]> land, ICollection<int[]> result, int r1, int c1, int r2, int c2)
     {
         while (true)
         {

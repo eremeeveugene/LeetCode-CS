@@ -13,8 +13,7 @@ using LeetCode.Algorithms.CheckIfTwoChessboardSquaresHaveTheSameColor;
 
 namespace LeetCode.Tests.Algorithms.CheckIfTwoChessboardSquaresHaveTheSameColor;
 
-public abstract class CheckIfTwoChessboardSquaresHaveTheSameColorTestsBase<T>
-    where T : ICheckIfTwoChessboardSquaresHaveTheSameColor, new()
+public abstract class CheckIfTwoChessboardSquaresHaveTheSameColorTestsBase<T> where T : ICheckIfTwoChessboardSquaresHaveTheSameColor, new()
 {
     [TestMethod]
     [DataRow("a1", "c3", true)]
@@ -30,8 +29,7 @@ public abstract class CheckIfTwoChessboardSquaresHaveTheSameColorTestsBase<T>
     [DataRow("c7", "h2", true)]
     [DataRow("g5", "e3", true)]
     [DataRow("g5", "e4", false)]
-    public void CheckTwoChessboards_WithTwoValidCoordinates_ReturnsTrueIfSameColor(string coordinate1,
-        string coordinate2, bool expectedResult)
+    public void CheckTwoChessboards_WithTwoValidCoordinates_ReturnsTrueIfSameColor(string coordinate1, string coordinate2, bool expectedResult)
     {
         // Arrange
         var solution = new T();

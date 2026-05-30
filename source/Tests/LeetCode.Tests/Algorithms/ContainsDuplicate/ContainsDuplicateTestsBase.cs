@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ContainsDuplicate;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ContainsDuplicate;
 
 public abstract class ContainsDuplicateTestsBase<T> where T : IContainsDuplicate, new()
 {
     [TestMethod]
-    [DataRow("[1, 2, 3, 1]", true)]
-    [DataRow("[1, 2, 3, 4]", false)]
-    [DataRow("[1, 1, 1, 3, 3, 4, 3, 2, 4, 2]", true)]
-    public void ContainsDuplicate_GivenArray_ReturnsTrueIfDuplicatesExist(string numsJson, bool expectedResult)
+    [DataRow(new[] { 1, 2, 3, 1 }, true)]
+    [DataRow(new[] { 1, 2, 3, 4 }, false)]
+    [DataRow(new[] { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 }, true)]
+    public void ContainsDuplicate_GivenArray_ReturnsTrueIfDuplicatesExist(int[] nums, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

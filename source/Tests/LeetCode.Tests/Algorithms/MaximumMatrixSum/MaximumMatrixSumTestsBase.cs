@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,20 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumMatrixSum;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximumMatrixSum;
 
 public abstract class MaximumMatrixSumTestsBase<T> where T : IMaximumMatrixSum, new()
 {
     [TestMethod]
-    [DataRow("[[1,-1],[-1,1]]", 4)]
-    [DataRow("[[1,2,3],[-1,-2,-3],[1,2,3]]", 16)]
-    public void MaxMatrixSum_WithMatrix_ReturnsMaximumSumAfterFlips(string matrixJson, long expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MaxMatrixSum_WithMatrix_ReturnsMaximumSumAfterFlips(int[][] matrix, long expectedResult)
     {
         // Arrange
-        var matrix = JsonHelper.Parse<int[][]>(matrixJson);
-
         var solution = new T();
 
         // Act
@@ -31,5 +27,12 @@ public abstract class MaximumMatrixSumTestsBase<T> where T : IMaximumMatrixSum, 
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, -1 }, new[] { -1, 1 } }, 4L];
+
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { -1, -2, -3 }, new[] { 1, 2, 3 } }, 16L];
     }
 }

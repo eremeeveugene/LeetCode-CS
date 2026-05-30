@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BinarySearch;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.BinarySearch;
 
 public abstract class BinarySearchTestsBase<T> where T : IBinarySearch, new()
 {
     [TestMethod]
-    [DataRow("[0]", 0, 0)]
-    [DataRow("[-1, 0, 3, 5, 9, 12]", 9, 4)]
-    [DataRow("[-1, 0, 3, 5, 9, 12]", 2, -1)]
-    public void Search_WithSortedArrayAndTarget_ReturnsTargetIndexOrMinusOne(string numsJson, int target,
-        int expectedResult)
+    [DataRow(new[] { 0 }, 0, 0)]
+    [DataRow(new[] { -1, 0, 3, 5, 9, 12 }, 9, 4)]
+    [DataRow(new[] { -1, 0, 3, 5, 9, 12 }, 2, -1)]
+    public void Search_WithSortedArrayAndTarget_ReturnsTargetIndexOrMinusOne(int[] nums, int target, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

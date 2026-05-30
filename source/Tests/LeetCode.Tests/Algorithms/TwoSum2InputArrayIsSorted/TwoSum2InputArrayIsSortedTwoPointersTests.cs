@@ -14,5 +14,4 @@ using LeetCode.Algorithms.TwoSum2InputArrayIsSorted;
 namespace LeetCode.Tests.Algorithms.TwoSum2InputArrayIsSorted;
 
 [TestClass]
-public sealed class TwoSum2InputArrayIsSortedTwoPointersTests :
-    TwoSum2InputArrayIsSortedTestsBase<TwoSum2InputArrayIsSortedTwoPointers>;
+public sealed class TwoSum2InputArrayIsSortedTwoPointersTests : TwoSum2InputArrayIsSortedTestsBase<TwoSum2InputArrayIsSortedTwoPointers>;

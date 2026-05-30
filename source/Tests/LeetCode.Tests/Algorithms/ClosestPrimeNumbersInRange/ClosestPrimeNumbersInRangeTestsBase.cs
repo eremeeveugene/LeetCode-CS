@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ClosestPrimeNumbersInRange;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ClosestPrimeNumbersInRange;
 
 public abstract class ClosestPrimeNumbersInRangeTestsBase<T> where T : IClosestPrimeNumbersInRange, new()
 {
     [TestMethod]
-    [DataRow(10, 19, "[11,13]")]
-    [DataRow(4, 6, "[-1,-1]")]
-    public void ClosestPrimes_WithGivenRange_ReturnsClosestPrimePair(int left, int right,
-        string expectedResultJson)
+    [DataRow(10, 19, new[] { 11, 13 })]
+    [DataRow(4, 6, new[] { -1, -1 })]
+    public void ClosestPrimes_WithGivenRange_ReturnsClosestPrimePair(int left, int right, int[] expectedResult)
     {
         // Arrange
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

@@ -10,24 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MostBeautifulItemForEachQuery;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MostBeautifulItemForEachQuery;
 
 public abstract class MostBeautifulItemForEachQueryTestsBase<T> where T : IMostBeautifulItemForEachQuery, new()
 {
     [TestMethod]
-    [DataRow("[[1,2],[3,2],[2,4],[5,6],[3,5]]", "[1,2,3,4,5,6]", "[2,4,5,5,6,6]")]
-    [DataRow("[[1,2],[1,2],[1,3],[1,4]]", "[1]", "[4]")]
-    [DataRow("[[10,1000]]", "[5]", "[0]")]
-    public void MaximumBeauty_WithItemsAndQueries_CalculatesCorrectBeautyValues(string itemsJson,
-        string queriesJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void MaximumBeauty_WithItemsAndQueries_CalculatesCorrectBeautyValues(int[][] items, int[] queries, int[] expectedResult)
     {
         // Arrange
-        var items = JsonHelper.Parse<int[][]>(itemsJson);
-        var queries = JsonHelper.Parse<int[]>(queriesJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -35,5 +27,14 @@ public abstract class MostBeautifulItemForEachQueryTestsBase<T> where T : IMostB
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 2 }, new[] { 3, 2 }, new[] { 2, 4 }, new[] { 5, 6 }, new[] { 3, 5 } }, new[] { 1, 2, 3, 4, 5, 6 }, new[] { 2, 4, 5, 5, 6, 6 }];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 1, 2 }, new[] { 1, 3 }, new[] { 1, 4 } }, new[] { 1 }, new[] { 4 }];
+
+        yield return [new[] { new[] { 10, 1000 } }, new[] { 5 }, new[] { 0 }];
     }
 }

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FourDivisors;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FourDivisors;
 
 public abstract class FourDivisorsTestsBase<T> where T : IFourDivisors, new()
 {
     [TestMethod]
-    [DataRow("[21,4,7]", 32)]
-    [DataRow("[21,21]", 64)]
-    [DataRow("[1,2,3,4,5]", 0)]
-    public void SumFourDivisors_WithInputNumsArray_ReturnsSumOfNumbersThatHaveFourDivisors(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 21, 4, 7 }, 32)]
+    [DataRow(new[] { 21, 21 }, 64)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 0)]
+    public void SumFourDivisors_WithInputNumsArray_ReturnsSumOfNumbersThatHaveFourDivisors(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

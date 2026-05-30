@@ -10,21 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LargestTriangleArea;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LargestTriangleArea;
 
 public abstract class LargestTriangleAreaTestsBase<T> where T : ILargestTriangleArea, new()
 {
     [TestMethod]
-    [DataRow("[[0,0],[0,1],[1,0],[0,2],[2,0]]", 2.0)]
-    [DataRow("[[1,0],[0,0],[0,1]]", 0.5)]
-    public void LargestTriangleArea_WithPoints_ReturnsMaximumTriangleArea(string pointsJson,
-        double expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void LargestTriangleArea_WithPoints_ReturnsMaximumTriangleArea(int[][] points, double expectedResult)
     {
         // Arrange
-        var points = JsonHelper.Parse<int[][]>(pointsJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +27,12 @@ public abstract class LargestTriangleAreaTestsBase<T> where T : ILargestTriangle
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 0, 0 }, new[] { 0, 1 }, new[] { 1, 0 }, new[] { 0, 2 }, new[] { 2, 0 } }, 2.0];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 0, 0 }, new[] { 0, 1 } }, 0.5];
     }
 }

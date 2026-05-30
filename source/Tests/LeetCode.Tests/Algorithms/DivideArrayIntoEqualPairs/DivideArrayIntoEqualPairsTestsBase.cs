@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DivideArrayIntoEqualPairs;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DivideArrayIntoEqualPairs;
 
 public abstract class DivideArrayIntoEqualPairsTestsBase<T> where T : IDivideArrayIntoEqualPairs, new()
 {
     [TestMethod]
-    [DataRow("[3,2,3,2,2,2]", true)]
-    [DataRow("[1,2,3,4]", false)]
-    public void DivideArray_WithGivenIntegerArray_ReturnsTrueIfPairsCanBeFormedOtherwiseFalse(string numsJson,
-        bool expectedResult)
+    [DataRow(new[] { 3, 2, 3, 2, 2, 2 }, true)]
+    [DataRow(new[] { 1, 2, 3, 4 }, false)]
+    public void DivideArray_WithGivenIntegerArray_ReturnsTrueIfPairsCanBeFormedOtherwiseFalse(int[] nums, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

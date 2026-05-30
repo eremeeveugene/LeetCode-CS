@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumNumberOfEventsThatCanBeAttended;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfEventsThatCanBeAttended;
 
-public abstract class MaximumNumberOfEventsThatCanBeAttendedTestsBase<T>
-    where T : IMaximumNumberOfEventsThatCanBeAttended, new()
+public abstract class MaximumNumberOfEventsThatCanBeAttendedTestsBase<T> where T : IMaximumNumberOfEventsThatCanBeAttended, new()
 {
     [TestMethod]
-    [DataRow("[[1,2],[2,3],[3,4]]", 3)]
-    [DataRow("[[1,2],[2,3],[3,4],[1,2]]", 4)]
-    public void MaxEvents_WithMultipleIntervals_ReturnsMaximumAttendableEvents(string eventsJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MaxEvents_WithMultipleIntervals_ReturnsMaximumAttendableEvents(int[][] events, int expectedResult)
     {
         // Arrange
-        var events = JsonHelper.Parse<int[][]>(eventsJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +27,12 @@ public abstract class MaximumNumberOfEventsThatCanBeAttendedTestsBase<T>
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 } }, 3];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 }, new[] { 1, 2 } }, 4];
     }
 }

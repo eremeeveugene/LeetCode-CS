@@ -18,8 +18,7 @@ public abstract class DesignCircularDequeTestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void DesignCircularDeque_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        CircularDequeScenario scenario)
+    public void DesignCircularDeque_WithMixedOperations_ProcessesOperationsAccordingToSpecification(CircularDequeScenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -47,104 +46,29 @@ public abstract class DesignCircularDequeTestsBase
 
     private static IEnumerable<CircularDequeScenario[]> GetScenarios()
     {
-        yield return
-        [
-            new CircularDequeScenario(3,
-                [
-                    new InsertLastOperation(1),
-                    new InsertLastOperation(2),
-                    new InsertFrontOperation(3),
-                    new InsertFrontOperation(4),
-                    new GetRearOperation(),
-                    new IsFullOperation(),
-                    new DeleteLastOperation(),
-                    new InsertFrontOperation(4),
-                    new GetFrontOperation()
-                ],
-                [
-                    new InsertLastOperation.Result(true),
-                    new InsertLastOperation.Result(true),
-                    new InsertFrontOperation.Result(true),
-                    new InsertFrontOperation.Result(false),
-                    new GetRearOperation.Result(2),
-                    new IsFullOperation.Result(true),
-                    new DeleteLastOperation.Result(true),
-                    new InsertFrontOperation.Result(true),
-                    new GetFrontOperation.Result(4)
-                ])
-        ];
+        yield return [new CircularDequeScenario(3, [new InsertLastOperation(1), new InsertLastOperation(2), new InsertFrontOperation(3), new InsertFrontOperation(4), new GetRearOperation(), new IsFullOperation(), new DeleteLastOperation(), new InsertFrontOperation(4), new GetFrontOperation()], [new InsertLastOperation.Result(true), new InsertLastOperation.Result(true), new InsertFrontOperation.Result(true), new InsertFrontOperation.Result(false), new GetRearOperation.Result(2), new IsFullOperation.Result(true), new DeleteLastOperation.Result(true), new InsertFrontOperation.Result(true), new GetFrontOperation.Result(4)])];
 
-        yield return
-        [
-            new CircularDequeScenario(1,
-                [
-                    new InsertFrontOperation(1),
-                    new InsertFrontOperation(2),
-                    new GetFrontOperation(),
-                    new DeleteFrontOperation(),
-                    new IsEmptyOperation()
-                ],
-                [
-                    new InsertFrontOperation.Result(true),
-                    new InsertFrontOperation.Result(false),
-                    new GetFrontOperation.Result(1),
-                    new DeleteFrontOperation.Result(true),
-                    new IsEmptyOperation.Result(true)
-                ])
-        ];
+        yield return [new CircularDequeScenario(1, [new InsertFrontOperation(1), new InsertFrontOperation(2), new GetFrontOperation(), new DeleteFrontOperation(), new IsEmptyOperation()], [new InsertFrontOperation.Result(true), new InsertFrontOperation.Result(false), new GetFrontOperation.Result(1), new DeleteFrontOperation.Result(true), new IsEmptyOperation.Result(true)])];
 
-        yield return
-        [
-            new CircularDequeScenario(2,
-                [
-                    new IsEmptyOperation(),
-                    new InsertLastOperation(5),
-                    new InsertLastOperation(6),
-                    new IsFullOperation(),
-                    new GetRearOperation(),
-                    new GetFrontOperation(),
-                    new DeleteLastOperation(),
-                    new GetRearOperation()
-                ],
-                [
-                    new IsEmptyOperation.Result(true),
-                    new InsertLastOperation.Result(true),
-                    new InsertLastOperation.Result(true),
-                    new IsFullOperation.Result(true),
-                    new GetRearOperation.Result(6),
-                    new GetFrontOperation.Result(5),
-                    new DeleteLastOperation.Result(true),
-                    new GetRearOperation.Result(5)
-                ])
-        ];
+        yield return [new CircularDequeScenario(2, [new IsEmptyOperation(), new InsertLastOperation(5), new InsertLastOperation(6), new IsFullOperation(), new GetRearOperation(), new GetFrontOperation(), new DeleteLastOperation(), new GetRearOperation()], [new IsEmptyOperation.Result(true), new InsertLastOperation.Result(true), new InsertLastOperation.Result(true), new IsFullOperation.Result(true), new GetRearOperation.Result(6), new GetFrontOperation.Result(5), new DeleteLastOperation.Result(true), new GetRearOperation.Result(5)])];
 
-        yield return
-        [
-            new CircularDequeScenario(3,
-                [
-                    new GetFrontOperation(),
-                    new GetRearOperation(),
-                    new DeleteFrontOperation(),
-                    new DeleteLastOperation()
-                ],
-                [
-                    new GetFrontOperation.Result(-1),
-                    new GetRearOperation.Result(-1),
-                    new DeleteFrontOperation.Result(false),
-                    new DeleteLastOperation.Result(false)
-                ])
-        ];
+        yield return [new CircularDequeScenario(3, [new GetFrontOperation(), new GetRearOperation(), new DeleteFrontOperation(), new DeleteLastOperation()], [new GetFrontOperation.Result(-1), new GetRearOperation.Result(-1), new DeleteFrontOperation.Result(false), new DeleteLastOperation.Result(false)])];
     }
 
-    public sealed class CircularDequeScenario : Scenario<IDesignCircularDeque>
+    public sealed class CircularDequeScenario : IScenario<IDesignCircularDeque>
     {
-        public CircularDequeScenario(int k, IOperation<IDesignCircularDeque>[] operations,
-            IOperationResult[] operationResults) : base(operations, operationResults)
+        public CircularDequeScenario(int k, IOperation<IDesignCircularDeque>[] operations, IOperationResult[] operationResults)
         {
             K = k;
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int K { get; }
+
+        public IOperation<IDesignCircularDeque>[] Operations { get; }
+
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class InsertLastOperation : IOperation<IDesignCircularDeque>
@@ -163,7 +87,9 @@ public abstract class DesignCircularDequeTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _success;
 
@@ -205,7 +131,9 @@ public abstract class DesignCircularDequeTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _success;
 
@@ -240,7 +168,9 @@ public abstract class DesignCircularDequeTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _success;
 
@@ -275,7 +205,9 @@ public abstract class DesignCircularDequeTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _success;
 
@@ -310,7 +242,9 @@ public abstract class DesignCircularDequeTestsBase
             return new Result(value);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int _value;
 
@@ -345,7 +279,9 @@ public abstract class DesignCircularDequeTestsBase
             return new Result(value);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int _value;
 
@@ -380,7 +316,9 @@ public abstract class DesignCircularDequeTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _isEmpty;
 
@@ -415,7 +353,9 @@ public abstract class DesignCircularDequeTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _isFull;
 

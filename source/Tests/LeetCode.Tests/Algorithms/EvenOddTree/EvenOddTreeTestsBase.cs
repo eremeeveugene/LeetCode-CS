@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.EvenOddTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.EvenOddTree;
@@ -18,23 +17,10 @@ namespace LeetCode.Tests.Algorithms.EvenOddTree;
 public abstract class EvenOddTreeTestsBase<T> where T : IEvenOddTree, new()
 {
     [TestMethod]
-    [DataRow("[]", false)]
-    [DataRow("[1]", true)]
-    [DataRow("[1,10,4,3,null,7,9,12,8,6,null,null,2]", true)]
-    [DataRow("[5,4,2,3,3,7]", false)]
-    [DataRow("[5,9,1,3,5,7]", false)]
-    [DataRow("[1,2,3,4,5,6,7]", false)]
-    [DataRow("[1,10,4,3,null,7,9,12,8,6,null,null,3]", false)]
-    [DataRow("[1,3,2,4,5,6,7,8,9,10,11,12,13,14,15]", false)]
-    [DataRow("[1,10,4,3,2,7,9,12,8,6,null,null,2]", false)]
-    [DataRow("[5,10,4,3,null,7,9,12,8,6,2,1]", false)]
-    [DataRow("[5,10,4,3,null,7,9,12,8,6,2,0]", true)]
-    [DataRow("[1,3,2,6,4,6,4,12,8,6,null,null,2,1]", false)]
-    public void IsEvenOddTree_WithBinaryTreeInput_ReturnsWhetherTreeSatisfiesEvenOddLevelRules(string rootJson,
-        bool expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void IsEvenOddTree_WithBinaryTreeInput_ReturnsWhetherTreeSatisfiesEvenOddLevelRules(int?[] arrayRoot, bool expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(arrayRoot);
 
         var solution = new T();
@@ -44,5 +30,32 @@ public abstract class EvenOddTreeTestsBase<T> where T : IEvenOddTree, new()
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), false];
+
+        yield return [new int?[] { 1 }, true];
+
+        yield return [new int?[] { 1, 10, 4, 3, null, 7, 9, 12, 8, 6, null, null, 2 }, true];
+
+        yield return [new int?[] { 5, 4, 2, 3, 3, 7 }, false];
+
+        yield return [new int?[] { 5, 9, 1, 3, 5, 7 }, false];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7 }, false];
+
+        yield return [new int?[] { 1, 10, 4, 3, null, 7, 9, 12, 8, 6, null, null, 3 }, false];
+
+        yield return [new int?[] { 1, 3, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }, false];
+
+        yield return [new int?[] { 1, 10, 4, 3, 2, 7, 9, 12, 8, 6, null, null, 2 }, false];
+
+        yield return [new int?[] { 5, 10, 4, 3, null, 7, 9, 12, 8, 6, 2, 1 }, false];
+
+        yield return [new int?[] { 5, 10, 4, 3, null, 7, 9, 12, 8, 6, 2, 0 }, true];
+
+        yield return [new int?[] { 1, 3, 2, 6, 4, 6, 4, 12, 8, 6, null, null, 2, 1 }, false];
     }
 }

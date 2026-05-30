@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumDepthOfBinaryTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.MinimumDepthOfBinaryTree;
@@ -18,13 +17,10 @@ namespace LeetCode.Tests.Algorithms.MinimumDepthOfBinaryTree;
 public abstract class MinimumDepthOfBinaryTreeTestsBase<T> where T : IMinimumDepthOfBinaryTree, new()
 {
     [TestMethod]
-    [DataRow("[]", 0)]
-    [DataRow("[3,9,20,null,null,15,7]", 2)]
-    [DataRow("[2,null,3,null,4,null,5,null,6]", 5)]
-    public void MinDepth_GivenBinaryTreeAsJson_ReturnsMinimumDepth(string rootJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MinDepth_GivenBinaryTreeAsJson_ReturnsMinimumDepth(int?[] rootArray, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();
@@ -34,5 +30,14 @@ public abstract class MinimumDepthOfBinaryTreeTestsBase<T> where T : IMinimumDep
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), 0];
+
+        yield return [new int?[] { 3, 9, 20, null, null, 15, 7 }, 2];
+
+        yield return [new int?[] { 2, null, 3, null, 4, null, 5, null, 6 }, 5];
     }
 }

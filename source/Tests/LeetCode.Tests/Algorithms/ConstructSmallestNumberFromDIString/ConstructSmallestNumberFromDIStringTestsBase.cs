@@ -13,14 +13,12 @@ using LeetCode.Algorithms.ConstructSmallestNumberFromDIString;
 
 namespace LeetCode.Tests.Algorithms.ConstructSmallestNumberFromDIString;
 
-public abstract class ConstructSmallestNumberFromDIStringTestsBase<T>
-    where T : IConstructSmallestNumberFromDIString, new()
+public abstract class ConstructSmallestNumberFromDIStringTestsBase<T> where T : IConstructSmallestNumberFromDIString, new()
 {
     [TestMethod]
     [DataRow("DDD", "4321")]
     [DataRow("IIIDIDDD", "123549876")]
-    public void SmallestNumber_WithGivenPattern_ReturnsLexicographicallySmallestPermutation(string pattern,
-        string expectedResult)
+    public void SmallestNumber_WithGivenPattern_ReturnsLexicographicallySmallestPermutation(string pattern, string expectedResult)
     {
         // Arrange
         var solution = new T();

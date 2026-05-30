@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.TransformArrayByParity;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.TransformArrayByParity;
 
 public abstract class TransformArrayByParityTestsBase<T> where T : ITransformArrayByParity, new()
 {
     [TestMethod]
-    [DataRow("[4,3,2,1]", "[0,0,1,1]")]
-    [DataRow("[1,5,1,4,2]", "[0,0,1,1,1]")]
-    public void TransformArray_WithGivenIntegerArray_ReturnsTransformedArray(string numsJson,
-        string expectedResultJson)
+    [DataRow(new[] { 4, 3, 2, 1 }, new[] { 0, 0, 1, 1 })]
+    [DataRow(new[] { 1, 5, 1, 4, 2 }, new[] { 0, 0, 1, 1, 1 })]
+    public void TransformArray_WithGivenIntegerArray_ReturnsTransformedArray(int[] nums, int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

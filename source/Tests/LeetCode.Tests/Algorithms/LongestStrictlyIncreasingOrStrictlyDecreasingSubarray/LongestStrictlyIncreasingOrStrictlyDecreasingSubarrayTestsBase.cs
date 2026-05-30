@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubarray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubarray;
 
-public abstract class LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayTestsBase<T>
-    where T : ILongestStrictlyIncreasingOrStrictlyDecreasingSubarray, new()
+public abstract class LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayTestsBase<T> where T : ILongestStrictlyIncreasingOrStrictlyDecreasingSubarray, new()
 {
     [TestMethod]
-    [DataRow("[1,4,3,3,2]", 2)]
-    [DataRow("[3,3,3,3]", 1)]
-    [DataRow("[3,2,1]", 3)]
-    public void LongestMonotonicSubarray_WithGivenNums_ReturnsLengthOfTheLongestMonotonicSubarray(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 1, 4, 3, 3, 2 }, 2)]
+    [DataRow(new[] { 3, 3, 3, 3 }, 1)]
+    [DataRow(new[] { 3, 2, 1 }, 3)]
+    public void LongestMonotonicSubarray_WithGivenNums_ReturnsLengthOfTheLongestMonotonicSubarray(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

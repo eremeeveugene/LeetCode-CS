@@ -22,8 +22,7 @@ public abstract class PermutationInStringTestsBase<T> where T : IPermutationInSt
     [DataRow("adc", "dcda", true)]
     [DataRow("abc", "defabc", true)]
     [DataRow("hello", "ooolleoooleh", false)]
-    public void CheckInclusion_WithTwoStrings_ReturnsTrueIfFirstIsPermutationOfSecond(string s1, string s2,
-        bool expectedResult)
+    public void CheckInclusion_WithTwoStrings_ReturnsTrueIfFirstIsPermutationOfSecond(string s1, string s2, bool expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SingleNumber3;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SingleNumber3;
 
 public abstract class SingleNumber3TestsBase<T> where T : ISingleNumber3, new()
 {
     [TestMethod]
-    [DataRow("[1,2,1,3,2,5]", "[3,5]")]
-    [DataRow("[-1,0]", "[-1,0]")]
-    [DataRow("[0,1]", "[1,0]")]
-    public void SingleNumber_WithIntegerArray_ReturnsTwoUniqueNumbers(string numsJson,
-        string expectedResultJson)
+    [DataRow(new[] { 1, 2, 1, 3, 2, 5 }, new[] { 3, 5 })]
+    [DataRow(new[] { -1, 0 }, new[] { -1, 0 })]
+    [DataRow(new[] { 0, 1 }, new[] { 1, 0 })]
+    public void SingleNumber_WithIntegerArray_ReturnsTwoUniqueNumbers(int[] nums, int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

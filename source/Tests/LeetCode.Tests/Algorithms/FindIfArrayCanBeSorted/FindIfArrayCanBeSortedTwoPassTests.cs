@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FindIfArrayCanBeSorted;
 namespace LeetCode.Tests.Algorithms.FindIfArrayCanBeSorted;
 
 [TestClass]
-public sealed class FindIfArrayCanBeSortedTwoPassTests :
-    FindIfArrayCanBeSortedTestsBase<FindIfArrayCanBeSortedTwoPass>;
+public sealed class FindIfArrayCanBeSortedTwoPassTests : FindIfArrayCanBeSortedTestsBase<FindIfArrayCanBeSortedTwoPass>;

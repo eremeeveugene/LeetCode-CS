@@ -55,9 +55,7 @@ public sealed class GenerateTagForVideoCaptionCharArray : IGenerateTagForVideoCa
             {
                 isWord = true;
 
-                charToAppend = isFirstWord
-                    ? char.ToLowerInvariant(@char)
-                    : char.ToUpperInvariant(@char);
+                charToAppend = isFirstWord ? char.ToLowerInvariant(@char) : char.ToUpperInvariant(@char);
 
                 isFirstWord = false;
             }

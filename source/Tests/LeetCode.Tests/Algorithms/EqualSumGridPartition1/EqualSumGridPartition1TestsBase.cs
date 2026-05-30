@@ -10,21 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.EqualSumGridPartition1;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.EqualSumGridPartition1;
 
 public abstract class EqualSumGridPartition1TestsBase<T> where T : IEqualSumGridPartition1, new()
 {
     [TestMethod]
-    [DataRow("[[1,4],[2,3]]", true)]
-    [DataRow("[[1,3],[2,4]]", false)]
-    public void CanPartitionGrid_WithGivenGrid_ReturnsTrueIfEqualSumPartitionExists(string gridJson,
-        bool expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void CanPartitionGrid_WithGivenGrid_ReturnsTrueIfEqualSumPartitionExists(int[][] grid, bool expectedResult)
     {
         // Arrange
-        var grid = JsonHelper.Parse<int[][]>(gridJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +27,12 @@ public abstract class EqualSumGridPartition1TestsBase<T> where T : IEqualSumGrid
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 4 }, new[] { 2, 3 } }, true];
+
+        yield return [new[] { new[] { 1, 3 }, new[] { 2, 4 } }, false];
     }
 }

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ClosestEqualElementQueries;
 namespace LeetCode.Tests.Algorithms.ClosestEqualElementQueries;
 
 [TestClass]
-public sealed class ClosestEqualElementQueriesDictionaryBinarySearchTests :
-    ClosestEqualElementQueriesTestsBase<ClosestEqualElementQueriesDictionaryBinarySearch>;
+public sealed class ClosestEqualElementQueriesDictionaryBinarySearchTests : ClosestEqualElementQueriesTestsBase<ClosestEqualElementQueriesDictionaryBinarySearch>;

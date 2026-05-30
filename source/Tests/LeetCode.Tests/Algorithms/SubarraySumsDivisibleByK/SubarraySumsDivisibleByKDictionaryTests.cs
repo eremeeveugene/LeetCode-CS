@@ -14,5 +14,4 @@ using LeetCode.Algorithms.SubarraySumsDivisibleByK;
 namespace LeetCode.Tests.Algorithms.SubarraySumsDivisibleByK;
 
 [TestClass]
-public sealed class SubarraySumsDivisibleByKDictionaryTests :
-    SubarraySumsDivisibleByKTestsBase<SubarraySumsDivisibleByKDictionary>;
+public sealed class SubarraySumsDivisibleByKDictionaryTests : SubarraySumsDivisibleByKTestsBase<SubarraySumsDivisibleByKDictionary>;

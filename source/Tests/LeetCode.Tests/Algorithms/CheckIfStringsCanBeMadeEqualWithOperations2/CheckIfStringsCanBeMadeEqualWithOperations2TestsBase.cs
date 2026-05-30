@@ -13,8 +13,7 @@ using LeetCode.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations2;
 
 namespace LeetCode.Tests.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations2;
 
-public abstract class CheckIfStringsCanBeMadeEqualWithOperations2TestsBase<T>
-    where T : ICheckIfStringsCanBeMadeEqualWithOperations2, new()
+public abstract class CheckIfStringsCanBeMadeEqualWithOperations2TestsBase<T> where T : ICheckIfStringsCanBeMadeEqualWithOperations2, new()
 {
     [TestMethod]
     [DataRow("ab", "ab", true)]
@@ -37,8 +36,7 @@ public abstract class CheckIfStringsCanBeMadeEqualWithOperations2TestsBase<T>
     [DataRow("abcdefgh", "cdabghef", true)]
     [DataRow("abcdefgh", "abcdefhg", false)]
     [DataRow("mnopmnop", "opmnopop", false)]
-    public void CheckStrings_WithGivenStrings_ReturnsTrueIfStringsCanBeMadeEqual(string s1, string s2,
-        bool expectedResult)
+    public void CheckStrings_WithGivenStrings_ReturnsTrueIfStringsCanBeMadeEqual(string s1, string s2, bool expectedResult)
     {
         // Arrange
         var solution = new T();

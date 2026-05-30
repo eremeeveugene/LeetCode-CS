@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumDifferenceBetweenAdjacentElementsInCircularArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximumDifferenceBetweenAdjacentElementsInCircularArray;
 
-public abstract class MaximumDifferenceBetweenAdjacentElementsInCircularArrayTestsBase<T>
-    where T : IMaximumDifferenceBetweenAdjacentElementsInCircularArray, new()
+public abstract class MaximumDifferenceBetweenAdjacentElementsInCircularArrayTestsBase<T> where T : IMaximumDifferenceBetweenAdjacentElementsInCircularArray, new()
 {
     [TestMethod]
-    [DataRow("[1,2,4]", 3)]
-    [DataRow("[-5,-10,-5]", 5)]
-    public void MaxAdjacentDistance_WithInputArray_ReturnsLargestDifferenceBetweenAdjacentElements(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 1, 2, 4 }, 3)]
+    [DataRow(new[] { -5, -10, -5 }, 5)]
+    public void MaxAdjacentDistance_WithInputArray_ReturnsLargestDifferenceBetweenAdjacentElements(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

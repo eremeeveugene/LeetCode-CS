@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountEqualAndDivisiblePairsInAnArray;
 namespace LeetCode.Tests.Algorithms.CountEqualAndDivisiblePairsInAnArray;
 
 [TestClass]
-public sealed class CountEqualAndDivisiblePairsInAnArrayBruteForceTests :
-    CountEqualAndDivisiblePairsInAnArrayTestsBase<CountEqualAndDivisiblePairsInAnArrayBruteForce>;
+public sealed class CountEqualAndDivisiblePairsInAnArrayBruteForceTests : CountEqualAndDivisiblePairsInAnArrayTestsBase<CountEqualAndDivisiblePairsInAnArrayBruteForce>;

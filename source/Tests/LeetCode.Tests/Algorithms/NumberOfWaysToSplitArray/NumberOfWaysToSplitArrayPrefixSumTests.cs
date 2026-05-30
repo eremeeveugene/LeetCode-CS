@@ -14,5 +14,4 @@ using LeetCode.Algorithms.NumberOfWaysToSplitArray;
 namespace LeetCode.Tests.Algorithms.NumberOfWaysToSplitArray;
 
 [TestClass]
-public sealed class NumberOfWaysToSplitArrayPrefixSumTests :
-    NumberOfWaysToSplitArrayTestsBase<NumberOfWaysToSplitArrayPrefixSum>;
+public sealed class NumberOfWaysToSplitArrayPrefixSumTests : NumberOfWaysToSplitArrayTestsBase<NumberOfWaysToSplitArrayPrefixSum>;

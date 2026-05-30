@@ -13,8 +13,7 @@ using LeetCode.Algorithms.ReverseSubstringsBetweenEachPairOfParentheses;
 
 namespace LeetCode.Tests.Algorithms.ReverseSubstringsBetweenEachPairOfParentheses;
 
-public abstract class ReverseSubstringsBetweenEachPairOfParenthesesTestsBase<T>
-    where T : IReverseSubstringsBetweenEachPairOfParentheses, new()
+public abstract class ReverseSubstringsBetweenEachPairOfParenthesesTestsBase<T> where T : IReverseSubstringsBetweenEachPairOfParentheses, new()
 {
     [TestMethod]
     [DataRow("(abcd)", "dcba")]

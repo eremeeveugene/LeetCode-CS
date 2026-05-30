@@ -53,8 +53,7 @@ public sealed class LongestHappyStringGreedy : ILongestHappyString
 
             for (var i = 0; i < counts.Count; i++)
             {
-                if (stringBuilder.Length >= 2 && stringBuilder[^1] == counts[i].Char &&
-                    stringBuilder[^2] == counts[i].Char)
+                if (stringBuilder.Length >= 2 && stringBuilder[^1] == counts[i].Char && stringBuilder[^2] == counts[i].Char)
                 {
                     continue;
                 }

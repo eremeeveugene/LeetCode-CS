@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfBinaryStringHasAtMostOneSegmentOfOnes;
 
 /// <inheritdoc />
-public sealed class CheckIfBinaryStringHasAtMostOneSegmentOfOnesStringPattern :
-    ICheckIfBinaryStringHasAtMostOneSegmentOfOnes
+public sealed class CheckIfBinaryStringHasAtMostOneSegmentOfOnesStringPattern : ICheckIfBinaryStringHasAtMostOneSegmentOfOnes
 {
     /// <summary>
     ///     Time complexity - O(n)

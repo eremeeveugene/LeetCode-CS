@@ -14,5 +14,4 @@ using LeetCode.Algorithms.LinkedListInBinaryTree;
 namespace LeetCode.Tests.Algorithms.LinkedListInBinaryTree;
 
 [TestClass]
-public sealed class LinkedListInBinaryTreeKnuthMorrisPrattTests : LinkedListInBinaryTreeTestsBase<
-    LinkedListInBinaryTreeKnuthMorrisPratt>;
+public sealed class LinkedListInBinaryTreeKnuthMorrisPrattTests : LinkedListInBinaryTreeTestsBase<LinkedListInBinaryTreeKnuthMorrisPratt>;

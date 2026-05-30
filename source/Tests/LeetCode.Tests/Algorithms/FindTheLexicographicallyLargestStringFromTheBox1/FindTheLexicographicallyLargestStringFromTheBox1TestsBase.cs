@@ -13,14 +13,12 @@ using LeetCode.Algorithms.FindTheLexicographicallyLargestStringFromTheBox1;
 
 namespace LeetCode.Tests.Algorithms.FindTheLexicographicallyLargestStringFromTheBox1;
 
-public abstract class FindTheLexicographicallyLargestStringFromTheBox1TestsBase<T>
-    where T : IFindTheLexicographicallyLargestStringFromTheBox1, new()
+public abstract class FindTheLexicographicallyLargestStringFromTheBox1TestsBase<T> where T : IFindTheLexicographicallyLargestStringFromTheBox1, new()
 {
     [TestMethod]
     [DataRow("dbca", 2, "dbc")]
     [DataRow("gggg", 4, "g")]
-    public void AnswerString_WithWordAndNumFriends_ReturnsLexicographicallySmallestSubsequence(string word,
-        int numFriends, string expectedResult)
+    public void AnswerString_WithWordAndNumFriends_ReturnsLexicographicallySmallestSubsequence(string word, int numFriends, string expectedResult)
     {
         // Arrange
         var solution = new T();

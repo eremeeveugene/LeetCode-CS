@@ -13,15 +13,13 @@ using LeetCode.Algorithms.LargestSubstringBetweenTwoEqualCharacters;
 
 namespace LeetCode.Tests.Algorithms.LargestSubstringBetweenTwoEqualCharacters;
 
-public abstract class LargestSubstringBetweenTwoEqualCharactersTestsBase<T>
-    where T : ILargestSubstringBetweenTwoEqualCharacters, new()
+public abstract class LargestSubstringBetweenTwoEqualCharactersTestsBase<T> where T : ILargestSubstringBetweenTwoEqualCharacters, new()
 {
     [TestMethod]
     [DataRow("aa", 0)]
     [DataRow("abca", 2)]
     [DataRow("cbzxy", -1)]
-    public void MaxLengthBetweenEqualCharacters_WithGivenString_ReturnsMaxLengthBetweenMatchingCharacters(string s,
-        int expectedResult)
+    public void MaxLengthBetweenEqualCharacters_WithGivenString_ReturnsMaxLengthBetweenMatchingCharacters(string s, int expectedResult)
     {
         // Arrange
         var solution = new T();

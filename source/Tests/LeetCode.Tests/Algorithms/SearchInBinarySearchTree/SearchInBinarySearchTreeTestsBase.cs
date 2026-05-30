@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SearchInBinarySearchTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,15 +18,11 @@ namespace LeetCode.Tests.Algorithms.SearchInBinarySearchTree;
 public abstract class SearchInBinarySearchTreeTestsBase<T> where T : ISearchInBinarySearchTree, new()
 {
     [TestMethod]
-    [DataRow("[4,2,7,1,3]", 2, "[2,1,3]")]
-    [DataRow("[4,2,7,1,3]", 5, "[]")]
-    public void SearchBST_WithGivenRootAndValue_ReturnsSubtree(string rootJson, int val,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void SearchBST_WithGivenRootAndValue_ReturnsSubtree(int?[] rootArray, int val, int?[] expectedResultArray)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResultArray = JsonHelper.Parse<int?[]>(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();
@@ -37,5 +32,12 @@ public abstract class SearchInBinarySearchTreeTestsBase<T> where T : ISearchInBi
 
         // Assert
         TreeNodeAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 4, 2, 7, 1, 3 }, 2, new int?[] { 2, 1, 3 }];
+
+        yield return [new int?[] { 4, 2, 7, 1, 3 }, 5, Array.Empty<int?>()];
     }
 }

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.RescheduleMeetingsForMaximumFreeTime1;
 namespace LeetCode.Tests.Algorithms.RescheduleMeetingsForMaximumFreeTime1;
 
 [TestClass]
-public sealed class RescheduleMeetingsForMaximumFreeTime1GreedyTests :
-    RescheduleMeetingsForMaximumFreeTime1TestsBase<RescheduleMeetingsForMaximumFreeTime1Greedy>;
+public sealed class RescheduleMeetingsForMaximumFreeTime1GreedyTests : RescheduleMeetingsForMaximumFreeTime1TestsBase<RescheduleMeetingsForMaximumFreeTime1Greedy>;

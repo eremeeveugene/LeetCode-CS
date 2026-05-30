@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.CountOfSubstringsContainingEveryVowelAndKConsonants2;
 
 /// <inheritdoc />
-public sealed class CountOfSubstringsContainingEveryVowelAndKConsonants2SlidingWindow :
-    ICountOfSubstringsContainingEveryVowelAndKConsonants2
+public sealed class CountOfSubstringsContainingEveryVowelAndKConsonants2SlidingWindow : ICountOfSubstringsContainingEveryVowelAndKConsonants2
 {
     /// <summary>
     ///     Time complexity - O(n)

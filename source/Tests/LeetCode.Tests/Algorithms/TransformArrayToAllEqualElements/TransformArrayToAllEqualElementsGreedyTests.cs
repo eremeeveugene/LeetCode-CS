@@ -14,5 +14,4 @@ using LeetCode.Algorithms.TransformArrayToAllEqualElements;
 namespace LeetCode.Tests.Algorithms.TransformArrayToAllEqualElements;
 
 [TestClass]
-public sealed class TransformArrayToAllEqualElementsGreedyTests :
-    TransformArrayToAllEqualElementsTestsBase<TransformArrayToAllEqualElementsGreedy>;
+public sealed class TransformArrayToAllEqualElementsGreedyTests : TransformArrayToAllEqualElementsTestsBase<TransformArrayToAllEqualElementsGreedy>;

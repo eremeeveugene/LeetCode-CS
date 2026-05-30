@@ -10,25 +10,20 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.InsertGreatestCommonDivisorsInLinkedList;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.InsertGreatestCommonDivisorsInLinkedList;
 
-public abstract class InsertGreatestCommonDivisorsInLinkedListTestsBase<T>
-    where T : IInsertGreatestCommonDivisorsInLinkedList, new()
+public abstract class InsertGreatestCommonDivisorsInLinkedListTestsBase<T> where T : IInsertGreatestCommonDivisorsInLinkedList, new()
 {
     [TestMethod]
-    [DataRow("[7]", "[7]")]
-    [DataRow("[18,6,10,3]", "[18,6,6,2,10,1,3]")]
-    public void InsertGreatestCommonDivisors_GivenLinkedList_ReturnsListWithGCDInserted(string headJson,
-        string expectedResultJson)
+    [DataRow(new[] { 7 }, new[] { 7 })]
+    [DataRow(new[] { 18, 6, 10, 3 }, new[] { 18, 6, 6, 2, 10, 1, 3 })]
+    public void InsertGreatestCommonDivisors_GivenLinkedList_ReturnsListWithGCDInserted(int[] headArray, int[] expectedResultArray)
     {
         // Arrange
-        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNodeOrThrow(headArray);
-        var expectedResultArray = JsonHelper.Parse<int[]>(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

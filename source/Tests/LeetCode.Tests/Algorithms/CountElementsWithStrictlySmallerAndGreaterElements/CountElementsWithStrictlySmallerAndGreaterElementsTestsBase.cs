@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements;
 
-public abstract class CountElementsWithStrictlySmallerAndGreaterElementsTestsBase<T>
-    where T : ICountElementsWithStrictlySmallerAndGreaterElements, new()
+public abstract class CountElementsWithStrictlySmallerAndGreaterElementsTestsBase<T> where T : ICountElementsWithStrictlySmallerAndGreaterElements, new()
 {
     [TestMethod]
-    [DataRow("[11,7,2,15]", 2)]
-    [DataRow("[-3,3,3,90]", 2)]
-    public void CountElements_GivenArray_ReturnsCountOfElementsMatchingCriteria(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 11, 7, 2, 15 }, 2)]
+    [DataRow(new[] { -3, 3, 3, 90 }, 2)]
+    public void CountElements_GivenArray_ReturnsCountOfElementsMatchingCriteria(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

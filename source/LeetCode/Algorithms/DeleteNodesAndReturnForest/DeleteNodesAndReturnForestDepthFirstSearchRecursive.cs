@@ -39,8 +39,7 @@ public sealed class DeleteNodesAndReturnForestDepthFirstSearchRecursive : IDelet
         return result;
     }
 
-    private static TreeNode? DelNodes(TreeNode? node, bool isRoot, IReadOnlySet<int> toDeleteHashSet,
-        ICollection<TreeNode> result)
+    private static TreeNode? DelNodes(TreeNode? node, bool isRoot, IReadOnlySet<int> toDeleteHashSet, ICollection<TreeNode> result)
     {
         if (node == null)
         {

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ScoreAfterFlippingMatrix;
 namespace LeetCode.Tests.Algorithms.ScoreAfterFlippingMatrix;
 
 [TestClass]
-public sealed class ScoreAfterFlippingMatrixIterativeTests :
-    ScoreAfterFlippingMatrixTestsBase<ScoreAfterFlippingMatrixIterative>;
+public sealed class ScoreAfterFlippingMatrixIterativeTests : ScoreAfterFlippingMatrixTestsBase<ScoreAfterFlippingMatrixIterative>;

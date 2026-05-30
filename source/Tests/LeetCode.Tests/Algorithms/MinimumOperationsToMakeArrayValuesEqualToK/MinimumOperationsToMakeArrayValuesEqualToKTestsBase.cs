@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK;
 
-public abstract class MinimumOperationsToMakeArrayValuesEqualToKTestsBase<T>
-    where T : IMinimumOperationsToMakeArrayValuesEqualToK, new()
+public abstract class MinimumOperationsToMakeArrayValuesEqualToKTestsBase<T> where T : IMinimumOperationsToMakeArrayValuesEqualToK, new()
 {
     [TestMethod]
-    [DataRow("[5,2,5,4,5]", 2, 2)]
-    [DataRow("[2,1,2]", 2, -1)]
-    [DataRow("[9,7,5,3]", 1, 4)]
-    public void MinOperations_WithArrayAndTargetK_ReturnsMinimumStepsOrMinusOne(string numsJson, int k,
-        int expectedResult)
+    [DataRow(new[] { 5, 2, 5, 4, 5 }, 2, 2)]
+    [DataRow(new[] { 2, 1, 2 }, 2, -1)]
+    [DataRow(new[] { 9, 7, 5, 3 }, 1, 4)]
+    public void MinOperations_WithArrayAndTargetK_ReturnsMinimumStepsOrMinusOne(int[] nums, int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

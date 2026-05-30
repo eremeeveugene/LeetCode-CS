@@ -10,25 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.WordSubsets;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.WordSubsets;
 
 public abstract class WordSubsetsTestsBase<T> where T : IWordSubsets, new()
 {
     [TestMethod]
-    [DataRow("[\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"]", "[\"e\",\"o\"]",
-        "[\"facebook\",\"google\",\"leetcode\"]")]
-    [DataRow("[\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"]", "[\"l\",\"e\"]",
-        "[\"apple\",\"google\",\"leetcode\"]")]
-    public void WordSubsets_WithWords1AndWords2_ReturnsMatchingSubset(string words1Json, string words2Json,
-        string expectedResultJson)
+    [DataRow(new[] { "amazon", "apple", "facebook", "google", "leetcode" }, new[] { "e", "o" }, new[] { "facebook", "google", "leetcode" })]
+    [DataRow(new[] { "amazon", "apple", "facebook", "google", "leetcode" }, new[] { "l", "e" }, new[] { "apple", "google", "leetcode" })]
+    public void WordSubsets_WithWords1AndWords2_ReturnsMatchingSubset(string[] words1, string[] words2, string[] expectedResult)
     {
         // Arrange
-        var words1 = JsonHelper.Parse<string[]>(words1Json);
-        var words2 = JsonHelper.Parse<string[]>(words2Json);
-        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

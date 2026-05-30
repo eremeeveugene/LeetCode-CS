@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FinalValueOfVariableAfterPerformingOperations;
 
-public abstract class FinalValueOfVariableAfterPerformingOperationsTestsBase<T>
-    where T : IFinalValueOfVariableAfterPerformingOperations, new()
+public abstract class FinalValueOfVariableAfterPerformingOperationsTestsBase<T> where T : IFinalValueOfVariableAfterPerformingOperations, new()
 {
     [TestMethod]
-    [DataRow("[\"--X\", \"X++\", \"X++\"]", 1)]
-    [DataRow("[\"++X\", \"++X\", \"X++\"]", 3)]
-    [DataRow("[\"X++\", \"++X\", \"--X\", \"X--\"]", 0)]
-    public void FinalValueAfterOperations_WithOperationStrings_ReturnsFinalValueOfVariable(string sentencesJson,
-        int expectedResult)
+    [DataRow(new[] { "--X", "X++", "X++" }, 1)]
+    [DataRow(new[] { "++X", "++X", "X++" }, 3)]
+    [DataRow(new[] { "X++", "++X", "--X", "X--" }, 0)]
+    public void FinalValueAfterOperations_WithOperationStrings_ReturnsFinalValueOfVariable(string[] sentences, int expectedResult)
     {
         // Arrange
-        var sentences = JsonHelper.Parse<string[]>(sentencesJson);
-
         var solution = new T();
 
         // Act

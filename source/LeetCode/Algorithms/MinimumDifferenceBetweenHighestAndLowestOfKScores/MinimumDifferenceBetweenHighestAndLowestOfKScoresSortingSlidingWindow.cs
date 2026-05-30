@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.MinimumDifferenceBetweenHighestAndLowestOfKScores;
 
 /// <inheritdoc />
-public sealed class MinimumDifferenceBetweenHighestAndLowestOfKScoresSortingSlidingWindow :
-    IMinimumDifferenceBetweenHighestAndLowestOfKScores
+public sealed class MinimumDifferenceBetweenHighestAndLowestOfKScoresSortingSlidingWindow : IMinimumDifferenceBetweenHighestAndLowestOfKScores
 {
     /// <summary>
     ///     Time complexity - O(n log n)

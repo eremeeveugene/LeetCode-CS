@@ -18,8 +18,7 @@ public abstract class DesignSpreadsheetTestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void DesignSpreadsheet_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        SpreadsheetScenario scenario)
+    public void DesignSpreadsheet_WithMixedOperations_ProcessesOperationsAccordingToSpecification(SpreadsheetScenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -47,101 +46,31 @@ public abstract class DesignSpreadsheetTestsBase
 
     private static IEnumerable<SpreadsheetScenario[]> GetScenarios()
     {
-        yield return
-        [
-            new SpreadsheetScenario(3,
-                [
-                    new GetValueOperation("=5+7"),
-                    new SetCellOperation("A1", 10),
-                    new GetValueOperation("=A1+6"),
-                    new SetCellOperation("B2", 15),
-                    new GetValueOperation("=A1+B2"),
-                    new ResetCellOperation("A1"),
-                    new GetValueOperation("=A1+B2")
-                ],
-                [
-                    new GetValueOperation.Result(12),
-                    VoidOperationResult.Instance,
-                    new GetValueOperation.Result(16),
-                    VoidOperationResult.Instance,
-                    new GetValueOperation.Result(25),
-                    VoidOperationResult.Instance,
-                    new GetValueOperation.Result(15)
-                ])
-        ];
+        yield return [new SpreadsheetScenario(3, [new GetValueOperation("=5+7"), new SetCellOperation("A1", 10), new GetValueOperation("=A1+6"), new SetCellOperation("B2", 15), new GetValueOperation("=A1+B2"), new ResetCellOperation("A1"), new GetValueOperation("=A1+B2")], [new GetValueOperation.Result(12), VoidOperationResult.Instance, new GetValueOperation.Result(16), VoidOperationResult.Instance, new GetValueOperation.Result(25), VoidOperationResult.Instance, new GetValueOperation.Result(15)])];
 
-        yield return
-        [
-            new SpreadsheetScenario(1,
-                [
-                    new GetValueOperation("=1+2"),
-                    new GetValueOperation("=10+20")
-                ],
-                [
-                    new GetValueOperation.Result(3),
-                    new GetValueOperation.Result(30)
-                ])
-        ];
+        yield return [new SpreadsheetScenario(1, [new GetValueOperation("=1+2"), new GetValueOperation("=10+20")], [new GetValueOperation.Result(3), new GetValueOperation.Result(30)])];
 
-        yield return
-        [
-            new SpreadsheetScenario(2,
-                [
-                    new SetCellOperation("A1", 42),
-                    new GetValueOperation("=A1+0"),
-                    new ResetCellOperation("A1"),
-                    new GetValueOperation("=A1+0")
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new GetValueOperation.Result(42),
-                    VoidOperationResult.Instance,
-                    new GetValueOperation.Result(0)
-                ])
-        ];
+        yield return [new SpreadsheetScenario(2, [new SetCellOperation("A1", 42), new GetValueOperation("=A1+0"), new ResetCellOperation("A1"), new GetValueOperation("=A1+0")], [VoidOperationResult.Instance, new GetValueOperation.Result(42), VoidOperationResult.Instance, new GetValueOperation.Result(0)])];
 
-        yield return
-        [
-            new SpreadsheetScenario(3,
-                [
-                    new SetCellOperation("A1", 5),
-                    new SetCellOperation("B1", 10),
-                    new GetValueOperation("=A1+B1")
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new GetValueOperation.Result(15)
-                ])
-        ];
+        yield return [new SpreadsheetScenario(3, [new SetCellOperation("A1", 5), new SetCellOperation("B1", 10), new GetValueOperation("=A1+B1")], [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetValueOperation.Result(15)])];
 
-        yield return
-        [
-            new SpreadsheetScenario(2,
-                [
-                    new SetCellOperation("A1", 3),
-                    new GetValueOperation("=A1+7"),
-                    new SetCellOperation("A1", 10),
-                    new GetValueOperation("=A1+7")
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new GetValueOperation.Result(10),
-                    VoidOperationResult.Instance,
-                    new GetValueOperation.Result(17)
-                ])
-        ];
+        yield return [new SpreadsheetScenario(2, [new SetCellOperation("A1", 3), new GetValueOperation("=A1+7"), new SetCellOperation("A1", 10), new GetValueOperation("=A1+7")], [VoidOperationResult.Instance, new GetValueOperation.Result(10), VoidOperationResult.Instance, new GetValueOperation.Result(17)])];
     }
 
-    public sealed class SpreadsheetScenario : Scenario<IDesignSpreadsheet>
+    public sealed class SpreadsheetScenario : IScenario<IDesignSpreadsheet>
     {
-        public SpreadsheetScenario(int rows, IOperation<IDesignSpreadsheet>[] operations,
-            IOperationResult[] operationResults) : base(operations, operationResults)
+        public SpreadsheetScenario(int rows, IOperation<IDesignSpreadsheet>[] operations, IOperationResult[] operationResults)
         {
             Rows = rows;
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int Rows { get; }
+
+        public IOperation<IDesignSpreadsheet>[] Operations { get; }
+
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class SetCellOperation : IOperation<IDesignSpreadsheet>
@@ -196,7 +125,9 @@ public abstract class DesignSpreadsheetTestsBase
             return new Result(value);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int _value;
 

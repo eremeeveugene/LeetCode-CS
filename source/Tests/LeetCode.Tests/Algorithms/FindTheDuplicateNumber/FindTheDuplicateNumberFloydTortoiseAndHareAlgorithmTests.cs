@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FindTheDuplicateNumber;
 namespace LeetCode.Tests.Algorithms.FindTheDuplicateNumber;
 
 [TestClass]
-public sealed class FindTheDuplicateNumberFloydTortoiseAndHareAlgorithmTests : FindTheDuplicateNumberTestsBase<
-    FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm>;
+public sealed class FindTheDuplicateNumberFloydTortoiseAndHareAlgorithmTests : FindTheDuplicateNumberTestsBase<FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm>;

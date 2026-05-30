@@ -10,27 +10,23 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LargestNumber;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LargestNumber;
 
 public abstract class LargestNumberTestsBase<T> where T : ILargestNumber, new()
 {
     [TestMethod]
-    [DataRow("[0,0,0]", "0")]
-    [DataRow("[10,2]", "210")]
-    [DataRow("[3,30,34,5,9]", "9534330")]
-    [DataRow("[34323,3432]", "343234323")]
-    [DataRow("[121,12]", "12121")]
-    [DataRow("[121,12,120]", "12121120")]
-    [DataRow("[1,11,111,1112]", "1112111111")]
-    [DataRow("[999999,999999998,999999997]", "999999999999998999999997")]
-    public void LargestNumber_WithArrayOfIntegers_ReturnsMaxConcatenatedNumber(string numsJson,
-        string expectedResult)
+    [DataRow(new[] { 0, 0, 0 }, "0")]
+    [DataRow(new[] { 10, 2 }, "210")]
+    [DataRow(new[] { 3, 30, 34, 5, 9 }, "9534330")]
+    [DataRow(new[] { 34323, 3432 }, "343234323")]
+    [DataRow(new[] { 121, 12 }, "12121")]
+    [DataRow(new[] { 121, 12, 120 }, "12121120")]
+    [DataRow(new[] { 1, 11, 111, 1112 }, "1112111111")]
+    [DataRow(new[] { 999999, 999999998, 999999997 }, "999999999999998999999997")]
+    public void LargestNumber_WithArrayOfIntegers_ReturnsMaxConcatenatedNumber(int[] nums, string expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

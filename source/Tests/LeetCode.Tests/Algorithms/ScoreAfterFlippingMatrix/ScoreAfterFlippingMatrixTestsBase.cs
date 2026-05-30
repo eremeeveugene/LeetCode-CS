@@ -10,30 +10,37 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ScoreAfterFlippingMatrix;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ScoreAfterFlippingMatrix;
 
 public abstract class ScoreAfterFlippingMatrixTestsBase<T> where T : IScoreAfterFlippingMatrix, new()
 {
     [TestMethod]
-    [DataRow("[[0]]", 1)]
-    [DataRow("[[0],[1]]", 2)]
-    [DataRow("[[0,0,1,1],[1,0,1,0],[1,1,0,0]]", 39)]
-    [DataRow("[[0,1,1,1,1,1,0,1,0,0]]", 1023)]
-    [DataRow("[[1,0,1,1,1,0,1,0,1,0],[1,0,0,0,1,1,1,1,0,0]]", 1832)]
-    [DataRow("[[0],[1],[1],[0],[0],[1],[0],[1],[0],[0],[1],[1],[0],[0],[0],[1],[0],[1],[0],[0]]", 20)]
-    public void MatrixScore_WithBinaryMatrix_ReturnsMaximumScoreAfterOptimalFlips(string gridJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MatrixScore_WithBinaryMatrix_ReturnsMaximumScoreAfterOptimalFlips(int[][] grid, int expectedResult)
     {
         // Arrange
         var solution = new T();
-
-        var grid = JsonHelper.Parse<int[][]>(gridJson);
 
         // Act
         var actualResult = solution.MatrixScore(grid);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 0 } }, 1];
+
+        yield return [new[] { new[] { 0 }, new[] { 1 } }, 2];
+
+        yield return [new[] { new[] { 0, 0, 1, 1 }, new[] { 1, 0, 1, 0 }, new[] { 1, 1, 0, 0 } }, 39];
+
+        yield return [new[] { new[] { 0, 1, 1, 1, 1, 1, 0, 1, 0, 0 } }, 1023];
+
+        yield return [new[] { new[] { 1, 0, 1, 1, 1, 0, 1, 0, 1, 0 }, new[] { 1, 0, 0, 0, 1, 1, 1, 1, 0, 0 } }, 1832];
+
+        yield return [new[] { new[] { 0 }, new[] { 1 }, new[] { 1 }, new[] { 0 }, new[] { 0 }, new[] { 1 }, new[] { 0 }, new[] { 1 }, new[] { 0 }, new[] { 0 }, new[] { 1 }, new[] { 1 }, new[] { 0 }, new[] { 0 }, new[] { 0 }, new[] { 1 }, new[] { 0 }, new[] { 1 }, new[] { 0 }, new[] { 0 } }, 20];
     }
 }

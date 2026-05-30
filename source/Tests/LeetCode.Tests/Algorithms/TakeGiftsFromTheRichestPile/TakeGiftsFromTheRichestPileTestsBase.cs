@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.TakeGiftsFromTheRichestPile;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.TakeGiftsFromTheRichestPile;
 
 public abstract class TakeGiftsFromTheRichestPileTestsBase<T> where T : ITakeGiftsFromTheRichestPile, new()
 {
     [TestMethod]
-    [DataRow("[25,64,9,4,100]", 4, 29)]
-    [DataRow("[1,1,1,1]", 4, 4)]
-    public void PickGifts_WithGiftArrayAndIterations_ReturnsTotalValueAfterKRemovals(string giftsJson, int k,
-        long expectedResult)
+    [DataRow(new[] { 25, 64, 9, 4, 100 }, 4, 29L)]
+    [DataRow(new[] { 1, 1, 1, 1 }, 4, 4L)]
+    public void PickGifts_WithGiftArrayAndIterations_ReturnsTotalValueAfterKRemovals(int[] gifts, int k, long expectedResult)
     {
         // Arrange
-        var gifts = JsonHelper.Parse<int[]>(giftsJson);
-
         var solution = new T();
 
         // Act

@@ -13,15 +13,13 @@ using LeetCode.Algorithms.MinimumDeletionsToMakeStringKSpecial;
 
 namespace LeetCode.Tests.Algorithms.MinimumDeletionsToMakeStringKSpecial;
 
-public abstract class MinimumDeletionsToMakeStringKSpecialTestsBase<T>
-    where T : IMinimumDeletionsToMakeStringKSpecial, new()
+public abstract class MinimumDeletionsToMakeStringKSpecialTestsBase<T> where T : IMinimumDeletionsToMakeStringKSpecial, new()
 {
     [TestMethod]
     [DataRow("aabcaba", 0, 3)]
     [DataRow("aaabaaa", 2, 1)]
     [DataRow("dabdcbdcdcd", 2, 2)]
-    public void MinimumDeletions_WithWordAndValueK_ReturnsMinimumDeletionsToMakeKSpecial(string word, int k,
-        int expectedResult)
+    public void MinimumDeletions_WithWordAndValueK_ReturnsMinimumDeletionsToMakeKSpecial(string word, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumLevelSumOfBinaryTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.MaximumLevelSumOfBinaryTree;
@@ -18,15 +17,10 @@ namespace LeetCode.Tests.Algorithms.MaximumLevelSumOfBinaryTree;
 public abstract class MaximumLevelSumOfBinaryTreeTestsBase<T> where T : IMaximumLevelSumOfBinaryTree, new()
 {
     [TestMethod]
-    [DataRow("[1]", 1)]
-    [DataRow("[1,7,0,7,-8,null,null]", 2)]
-    [DataRow("[989,null,10250,98693,-89388,null,null,null,-32127]", 2)]
-    [DataRow("[-100,-200,-300,-20,-5,-10,null]", 3)]
-    public void MaxLevelSum_WithBinaryTreeContainingMultipleLevels_ReturnsLevelWithMaximumNodeSum(string rootJson,
-        int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MaxLevelSum_WithBinaryTreeContainingMultipleLevels_ReturnsLevelWithMaximumNodeSum(int?[] rootArray, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();
@@ -36,5 +30,16 @@ public abstract class MaximumLevelSumOfBinaryTreeTestsBase<T> where T : IMaximum
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 1 }, 1];
+
+        yield return [new int?[] { 1, 7, 0, 7, -8, null, null }, 2];
+
+        yield return [new int?[] { 989, null, 10250, 98693, -89388, null, null, null, -32127 }, 2];
+
+        yield return [new int?[] { -100, -200, -300, -20, -5, -10, null }, 3];
     }
 }

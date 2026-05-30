@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfWordsFoundInSentences;
 
-public abstract class MaximumNumberOfWordsFoundInSentencesTestsBase<T>
-    where T : IMaximumNumberOfWordsFoundInSentences, new()
+public abstract class MaximumNumberOfWordsFoundInSentencesTestsBase<T> where T : IMaximumNumberOfWordsFoundInSentences, new()
 {
     [TestMethod]
-    [DataRow("[\"alice and bob love leetcode\",\"i think so too\",\"this is great thanks very much\"]", 6)]
-    [DataRow("[\"please wait\",\"continue to fight\",\"continue to win\"]", 3)]
-    public void MostWordsFound_GivenArrayOfSentences_ReturnsMaxWordCount(string sentencesJson, int expectedResult)
+    [DataRow(new[] { "alice and bob love leetcode", "i think so too", "this is great thanks very much" }, 6)]
+    [DataRow(new[] { "please wait", "continue to fight", "continue to win" }, 3)]
+    public void MostWordsFound_GivenArrayOfSentences_ReturnsMaxWordCount(string[] sentences, int expectedResult)
     {
         // Arrange
-        var sentences = JsonHelper.Parse<string[]>(sentencesJson);
-
         var solution = new T();
 
         // Act

@@ -10,25 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ThirdMaximumNumber;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ThirdMaximumNumber;
 
 public abstract class ThirdMaximumNumberTestsBase<T> where T : IThirdMaximumNumber, new()
 {
     [TestMethod]
-    [DataRow("[3, 2, 1]", 1)]
-    [DataRow("[1, 2]", 2)]
-    [DataRow("[1, 1, 2]", 2)]
-    [DataRow("[2, 2, 3, 1]", 1)]
-    [DataRow("[14]", 14)]
-    [DataRow("[1, 2, -2147483648]", int.MinValue)]
-    [DataRow("[1, -2147483648, 2]", int.MinValue)]
-    public void ThirdMax_WithIntArray_ReturnsThirdMaximumOrMaximum(string numsJson, int expectedResult)
+    [DataRow(new[] { 3, 2, 1 }, 1)]
+    [DataRow(new[] { 1, 2 }, 2)]
+    [DataRow(new[] { 1, 1, 2 }, 2)]
+    [DataRow(new[] { 2, 2, 3, 1 }, 1)]
+    [DataRow(new[] { 14 }, 14)]
+    [DataRow(new[] { 1, 2, -2147483648 }, int.MinValue)]
+    [DataRow(new[] { 1, -2147483648, 2 }, int.MinValue)]
+    public void ThirdMax_WithIntArray_ReturnsThirdMaximumOrMaximum(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

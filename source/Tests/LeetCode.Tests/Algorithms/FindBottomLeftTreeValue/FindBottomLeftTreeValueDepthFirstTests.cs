@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FindBottomLeftTreeValue;
 namespace LeetCode.Tests.Algorithms.FindBottomLeftTreeValue;
 
 [TestClass]
-public sealed class FindBottomLeftTreeValueDepthFirstTests :
-    FindBottomLeftTreeValueTestsBase<FindBottomLeftTreeValueDepthFirst>;
+public sealed class FindBottomLeftTreeValueDepthFirstTests : FindBottomLeftTreeValueTestsBase<FindBottomLeftTreeValueDepthFirst>;

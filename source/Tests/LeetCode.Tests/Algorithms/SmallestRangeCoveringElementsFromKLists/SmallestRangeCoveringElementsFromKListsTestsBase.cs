@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,24 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SmallestRangeCoveringElementsFromKLists;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SmallestRangeCoveringElementsFromKLists;
 
-public abstract class SmallestRangeCoveringElementsFromKListsTestsBase<T>
-    where T : ISmallestRangeCoveringElementsFromKLists, new()
+public abstract class SmallestRangeCoveringElementsFromKListsTestsBase<T> where T : ISmallestRangeCoveringElementsFromKLists, new()
 {
     [TestMethod]
-    [DataRow("[[10],[11]]", "[10,11]")]
-    [DataRow("[[4,10,15,24,26],[0,9,12,20],[5,18,22,30]]", "[20,24]")]
-    [DataRow("[[1,2,3],[1,2,3],[1,2,3]]", "[1,1]")]
-    public void SmallestRange_WithMultipleSortedLists_ReturnsMinimumRangeIncludingAtLeastOneElementFromEachList(
-        string numsJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void SmallestRange_WithMultipleSortedLists_ReturnsMinimumRangeIncludingAtLeastOneElementFromEachList(IList<IList<int>> nums, int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<IList<IList<int>>>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -35,5 +27,14 @@ public abstract class SmallestRangeCoveringElementsFromKListsTestsBase<T>
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new IList<int>[] { new[] { 10 }, new[] { 11 } }, new[] { 10, 11 }];
+
+        yield return [new IList<int>[] { new[] { 4, 10, 15, 24, 26 }, new[] { 0, 9, 12, 20 }, new[] { 5, 18, 22, 30 } }, new[] { 20, 24 }];
+
+        yield return [new IList<int>[] { new[] { 1, 2, 3 }, new[] { 1, 2, 3 }, new[] { 1, 2, 3 } }, new[] { 1, 1 }];
     }
 }

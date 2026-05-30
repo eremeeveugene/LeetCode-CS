@@ -10,21 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountServersThatCommunicate;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountServersThatCommunicate;
 
 public abstract class CountServersThatCommunicateTestsBase<T> where T : ICountServersThatCommunicate, new()
 {
     [TestMethod]
-    [DataRow("[[1,0],[0,1]]", 0)]
-    [DataRow("[[1,0],[1,1]]", 3)]
-    [DataRow("[[1,1,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1]]", 4)]
-    public void CountServers_WithGridInput_ReturnsNumberOfCommunicatingServers(string numsJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void CountServers_WithGridInput_ReturnsNumberOfCommunicatingServers(int[][] grid, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper.Parse<int[][]>(numsJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +27,14 @@ public abstract class CountServersThatCommunicateTestsBase<T> where T : ICountSe
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 0 }, new[] { 0, 1 } }, 0];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 1, 1 } }, 3];
+
+        yield return [new[] { new[] { 1, 1, 0, 0 }, new[] { 0, 0, 1, 0 }, new[] { 0, 0, 1, 0 }, new[] { 0, 0, 0, 1 } }, 4];
     }
 }

@@ -22,7 +22,9 @@ public sealed class Node
 
     public int val;
 
-    public Node() : this(0) { }
+    public Node() : this(0)
+    {
+    }
 
     public Node(int? val = null, IList<Node>? children = null)
     {

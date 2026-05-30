@@ -34,8 +34,7 @@ public sealed class FindLuckyIntegerInAnArrayFrequencyDictionary : IFindLuckyInt
 
         var result = -1;
 
-        foreach (var frequency in frequencyDictionary.Where(frequency =>
-                     frequency.Key == frequency.Value && frequency.Key > result))
+        foreach (var frequency in frequencyDictionary.Where(frequency => frequency.Key == frequency.Value && frequency.Key > result))
         {
             result = frequency.Key;
         }

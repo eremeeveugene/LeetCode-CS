@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ClosestPrimeNumbersInRange;
 namespace LeetCode.Tests.Algorithms.ClosestPrimeNumbersInRange;
 
 [TestClass]
-public sealed class ClosestPrimeNumbersInRangeSieveOfEratosthenesTests :
-    ClosestPrimeNumbersInRangeTestsBase<ClosestPrimeNumbersInRangeSieveOfEratosthenes>;
+public sealed class ClosestPrimeNumbersInRangeSieveOfEratosthenesTests : ClosestPrimeNumbersInRangeTestsBase<ClosestPrimeNumbersInRangeSieveOfEratosthenes>;

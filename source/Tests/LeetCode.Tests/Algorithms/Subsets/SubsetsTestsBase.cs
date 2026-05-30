@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.Subsets;
-using LeetCode.Core.Helpers;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.Subsets;
@@ -18,15 +17,10 @@ namespace LeetCode.Tests.Algorithms.Subsets;
 public abstract class SubsetsTestsBase<T> where T : ISubsets, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3]", "[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]")]
-    [DataRow("[0]", "[[],[0]]")]
-    public void Subsets_GivenArrayOfNumbers_ReturnsAllPossibleSubsets(string numsJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void Subsets_GivenArrayOfNumbers_ReturnsAllPossibleSubsets(int[] nums, IList<IList<int>> expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<IList<IList<int>>>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +28,12 @@ public abstract class SubsetsTestsBase<T> where T : ISubsets, new()
 
         // Assert
         NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { 1, 2, 3 }, new IList<int>[] { Array.Empty<int>(), new[] { 1 }, new[] { 2 }, new[] { 1, 2 }, new[] { 3 }, new[] { 1, 3 }, new[] { 2, 3 }, new[] { 1, 2, 3 } }];
+
+        yield return [new[] { 0 }, new IList<int>[] { Array.Empty<int>(), new[] { 0 } }];
     }
 }

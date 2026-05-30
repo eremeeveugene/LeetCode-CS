@@ -14,18 +14,7 @@ namespace LeetCode.Algorithms.SmallestNumberWithAllSetBits;
 /// <inheritdoc />
 public sealed class SmallestNumberWithAllSetBitsLinearScan : ISmallestNumberWithAllSetBits
 {
-    private static readonly int[] Numbers =
-    [
-        3,
-        7,
-        15,
-        31,
-        63,
-        127,
-        255,
-        511,
-        1023
-    ];
+    private static readonly int[] Numbers = [3, 7, 15, 31, 63, 127, 255, 511, 1023];
 
     /// <summary>
     ///     Time complexity - O(n)

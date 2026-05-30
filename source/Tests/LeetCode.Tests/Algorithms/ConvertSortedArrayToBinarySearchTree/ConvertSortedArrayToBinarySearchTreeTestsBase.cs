@@ -10,24 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ConvertSortedArrayToBinarySearchTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ConvertSortedArrayToBinarySearchTree;
 
-public abstract class ConvertSortedArrayToBinarySearchTreeTestsBase<T>
-    where T : IConvertSortedArrayToBinarySearchTree, new()
+public abstract class ConvertSortedArrayToBinarySearchTreeTestsBase<T> where T : IConvertSortedArrayToBinarySearchTree, new()
 {
     [TestMethod]
-    [DataRow("[-10, -3, 0, 5, 9]", "[0,-10,5,null,-3,null,9]")]
-    [DataRow("[1, 3]", "[1,null,3]")]
-    public void SortedArrayToBST_WithArrayInput_ReturnsBalancedBST(string numsJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void SortedArrayToBST_WithArrayInput_ReturnsBalancedBST(int[] nums, int?[] expectedResultArray)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
-        var expectedResultArray = JsonHelper.Parse<int?[]>(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();
@@ -37,5 +31,12 @@ public abstract class ConvertSortedArrayToBinarySearchTreeTestsBase<T>
 
         // Assert
         TreeNodeAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { -10, -3, 0, 5, 9 }, new int?[] { 0, -10, 5, null, -3, null, 9 }];
+
+        yield return [new[] { 1, 3 }, new int?[] { 1, null, 3 }];
     }
 }

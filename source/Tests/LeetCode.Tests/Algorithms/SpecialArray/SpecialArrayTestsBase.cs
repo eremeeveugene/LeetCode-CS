@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SpecialArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SpecialArray;
 
 public abstract class SpecialArrayTestsBase<T> where T : ISpecialArray, new()
 {
     [TestMethod]
-    [DataRow("[1]", true)]
-    [DataRow("[2,1,4]", true)]
-    [DataRow("[4,3,1,6]", false)]
-    public void IsArraySpecial_WithArrayInput_ReturnsWhetherArrayIsSpecial(string numsJson, bool expectedResult)
+    [DataRow(new[] { 1 }, true)]
+    [DataRow(new[] { 2, 1, 4 }, true)]
+    [DataRow(new[] { 4, 3, 1, 6 }, false)]
+    public void IsArraySpecial_WithArrayInput_ReturnsWhetherArrayIsSpecial(int[] nums, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

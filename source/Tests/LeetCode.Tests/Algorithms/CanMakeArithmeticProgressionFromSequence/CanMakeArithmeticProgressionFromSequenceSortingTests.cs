@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CanMakeArithmeticProgressionFromSequence;
 namespace LeetCode.Tests.Algorithms.CanMakeArithmeticProgressionFromSequence;
 
 [TestClass]
-public sealed class CanMakeArithmeticProgressionFromSequenceSortingTests :
-    CanMakeArithmeticProgressionFromSequenceTestsBase<CanMakeArithmeticProgressionFromSequenceSorting>;
+public sealed class CanMakeArithmeticProgressionFromSequenceSortingTests : CanMakeArithmeticProgressionFromSequenceTestsBase<CanMakeArithmeticProgressionFromSequenceSorting>;

@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.LongestPalindromeByConcatenatingTwoLetterWords;
 
 /// <inheritdoc />
-public sealed class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyArray :
-    ILongestPalindromeByConcatenatingTwoLetterWords
+public sealed class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyArray : ILongestPalindromeByConcatenatingTwoLetterWords
 {
     private const int Length = 'z' - 'a' + 1;
 

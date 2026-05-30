@@ -14,6 +14,4 @@ using LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor;
 namespace LeetCode.Tests.Algorithms.FindTheOriginalArrayOfPrefixXor;
 
 [TestClass]
-public sealed class
-    FindTheOriginalArrayOfPrefixXorIterativeTests : FindTheOriginalArrayOfPrefixXorTestsBase<
-    FindTheOriginalArrayOfPrefixXorIterative>;
+public sealed class FindTheOriginalArrayOfPrefixXorIterativeTests : FindTheOriginalArrayOfPrefixXorTestsBase<FindTheOriginalArrayOfPrefixXorIterative>;

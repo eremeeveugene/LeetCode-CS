@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MyCalendar3;
-using LeetCode.Core.Helpers;
 using LeetCode.Tests.Base.Exceptions;
 
 namespace LeetCode.Tests.Algorithms.MyCalendar3;
@@ -20,16 +19,10 @@ public abstract class MyCalendar3TestsBase<T> where T : IMyCalendar3, new()
     private const string Book = "book";
 
     [TestMethod]
-    [DataRow("[\"book\", \"book\", \"book\", \"book\", \"book\", \"book\"]",
-        "[[10, 20], [50, 60], [10, 40], [5, 15], [5, 10], [25, 55]]", "[1, 1, 2, 3, 3, 3]")]
-    public void Book_WithOverlappingEvents_ReturnsMaxConcurrentBookingsAfterEachEvent(string methodsJson,
-        string argumentsJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void Book_WithOverlappingEvents_ReturnsMaxConcurrentBookingsAfterEachEvent(string[] methods, int[][] arguments, int[] expectedResult)
     {
         // Arrange
-        var methods = JsonHelper.Parse<string[]>(methodsJson);
-        var arguments = JsonHelper.Parse<int[][]>(argumentsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -49,5 +42,10 @@ public abstract class MyCalendar3TestsBase<T> where T : IMyCalendar3, new()
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { "book", "book", "book", "book", "book", "book" }, new[] { new[] { 10, 20 }, new[] { 50, 60 }, new[] { 10, 40 }, new[] { 5, 15 }, new[] { 5, 10 }, new[] { 25, 55 } }, new[] { 1, 1, 2, 3, 3, 3 }];
     }
 }

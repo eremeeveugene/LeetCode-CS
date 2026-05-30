@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MakeArrayElementsEqualToZero;
 namespace LeetCode.Tests.Algorithms.MakeArrayElementsEqualToZero;
 
 [TestClass]
-public sealed class MakeArrayElementsEqualToZeroPrefixSumTests :
-    MakeArrayElementsEqualToZeroTestsBase<MakeArrayElementsEqualToZeroPrefixSum>;
+public sealed class MakeArrayElementsEqualToZeroPrefixSumTests : MakeArrayElementsEqualToZeroTestsBase<MakeArrayElementsEqualToZeroPrefixSum>;

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BinaryTreePostorderTraversal;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.BinaryTreePostorderTraversal;
@@ -18,18 +17,13 @@ namespace LeetCode.Tests.Algorithms.BinaryTreePostorderTraversal;
 public abstract class BinaryTreePostorderTraversalTestsBase<T> where T : IBinaryTreePostorderTraversal, new()
 {
     [TestMethod]
-    [DataRow("[1,null,2,3]", "[3,2,1]")]
-    [DataRow("[]", "[]")]
-    [DataRow("[1]", "[1]")]
-    public void PostorderTraversal_WithBinaryTree_ReturnsListOfValuesInPostorder(string rootJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void PostorderTraversal_WithBinaryTree_ReturnsListOfValuesInPostorder(int?[] rootArray, int?[] expectedResult)
     {
         // Arrange
-        var solution = new T();
-
-        var expectedResult = JsonHelper.Parse<int?[]>(expectedResultJson);
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
+
+        var solution = new T();
 
         // Act
         var actualResult = solution.PostorderTraversal(root).ToArray();
@@ -37,5 +31,14 @@ public abstract class BinaryTreePostorderTraversalTestsBase<T> where T : IBinary
         // Assert
         Assert.IsNotNull(actualResult);
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 1, null, 2, 3 }, new int?[] { 3, 2, 1 }];
+
+        yield return [Array.Empty<int?>(), Array.Empty<int?>()];
+
+        yield return [new int?[] { 1 }, new int?[] { 1 }];
     }
 }

@@ -10,24 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RemoveSubFoldersFromTheFilesystem;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.RemoveSubFoldersFromTheFilesystem;
 
 public abstract class RemoveSubFoldersFromTheFilesystemTestsBase<T> where T : IRemoveSubFoldersFromTheFilesystem, new()
 {
     [TestMethod]
-    [DataRow("[\"/a\",\"/a/b\",\"/c/d\",\"/c/d/e\",\"/c/f\"]", "[\"/a\",\"/c/d\",\"/c/f\"]")]
-    [DataRow("[\"/a\",\"/a/b\", \"/a/b/c\",\"/c/d\",\"/c/d/e\",\"/c/f\"]", "[\"/a\",\"/c/d\",\"/c/f\"]")]
-    [DataRow("[\"/a\",\"/a/b/c\",\"/a/b/d\"]", "[\"/a\"]")]
-    [DataRow("[\"/a/b/c\",\"/a/b/ca\",\"/a/b/d\"]", "[\"/a/b/c\",\"/a/b/ca\",\"/a/b/d\"]")]
-    public void RemoveSubfolders_WithFolderList_ReturnsFoldersExcludingSubfolders(string folderJson,
-        string expectedResultJson)
+    [DataRow(new[] { "/a", "/a/b", "/c/d", "/c/d/e", "/c/f" }, new[] { "/a", "/c/d", "/c/f" })]
+    [DataRow(new[] { "/a", "/a/b", "/a/b/c", "/c/d", "/c/d/e", "/c/f" }, new[] { "/a", "/c/d", "/c/f" })]
+    [DataRow(new[] { "/a", "/a/b/c", "/a/b/d" }, new[] { "/a" })]
+    [DataRow(new[] { "/a/b/c", "/a/b/ca", "/a/b/d" }, new[] { "/a/b/c", "/a/b/ca", "/a/b/d" })]
+    public void RemoveSubfolders_WithFolderList_ReturnsFoldersExcludingSubfolders(string[] folder, string[] expectedResult)
     {
         // Arrange
-        var folder = JsonHelper.Parse<string[]>(folderJson);
-        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

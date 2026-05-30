@@ -65,8 +65,7 @@ public sealed class PartitionArrayAccordingToGivenPivotDynamicLists : IPartition
 
         while (greaterThanPivotListIndex < greaterThanPivotList.Count)
         {
-            nums[greaterThanPivotListIndex + equalToPivotListIndex + lessThanPivotListIndex] =
-                greaterThanPivotList[greaterThanPivotListIndex];
+            nums[greaterThanPivotListIndex + equalToPivotListIndex + lessThanPivotListIndex] = greaterThanPivotList[greaterThanPivotListIndex];
 
             greaterThanPivotListIndex++;
         }

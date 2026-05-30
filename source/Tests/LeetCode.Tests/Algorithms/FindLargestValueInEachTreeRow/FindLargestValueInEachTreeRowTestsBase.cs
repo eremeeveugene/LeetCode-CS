@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindLargestValueInEachTreeRow;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.FindLargestValueInEachTreeRow;
@@ -18,15 +17,11 @@ namespace LeetCode.Tests.Algorithms.FindLargestValueInEachTreeRow;
 public abstract class FindLargestValueInEachTreeRowTestsBase<T> where T : IFindLargestValueInEachTreeRow, new()
 {
     [TestMethod]
-    [DataRow("[]", "[]")]
-    [DataRow("[1,2,3]", "[1,3]")]
-    [DataRow("[1,3,2,5,3,null,9]", "[1,3,9]")]
-    public void LargestValues_WithTreeRoot_ReturnsListOfRowMaxima(string rootJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void LargestValues_WithTreeRoot_ReturnsListOfRowMaxima(int?[] rootArray, int[] expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 
@@ -35,5 +30,14 @@ public abstract class FindLargestValueInEachTreeRowTestsBase<T> where T : IFindL
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), Array.Empty<int>()];
+
+        yield return [new int?[] { 1, 2, 3 }, new[] { 1, 3 }];
+
+        yield return [new int?[] { 1, 3, 2, 5, 3, null, 9 }, new[] { 1, 3, 9 }];
     }
 }

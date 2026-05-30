@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumDepthOfBinaryTree;
 namespace LeetCode.Tests.Algorithms.MaximumDepthOfBinaryTree;
 
 [TestClass]
-public sealed class MaximumDepthOfBinaryTreeBreadthFirstSearchTests : MaximumDepthOfBinaryTreeTestsBase<
-    MaximumDepthOfBinaryTreeBreadthFirstSearch>;
+public sealed class MaximumDepthOfBinaryTreeBreadthFirstSearchTests : MaximumDepthOfBinaryTreeTestsBase<MaximumDepthOfBinaryTreeBreadthFirstSearch>;

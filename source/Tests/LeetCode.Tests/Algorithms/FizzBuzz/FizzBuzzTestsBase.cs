@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FizzBuzz;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FizzBuzz;
 
 public abstract class FizzBuzzTestsBase<T> where T : IFizzBuzz, new()
 {
     [TestMethod]
-    [DataRow(3, "[\"1\",\"2\",\"Fizz\"]")]
-    [DataRow(5, "[\"1\",\"2\",\"Fizz\",\"4\",\"Buzz\"]")]
-    [DataRow(15,
-        "[\"1\",\"2\",\"Fizz\",\"4\",\"Buzz\",\"Fizz\",\"7\",\"8\",\"Fizz\",\"Buzz\",\"11\",\"Fizz\",\"13\",\"14\",\"FizzBuzz\"]")]
-    public void FizzBuzz_WithPositiveIntegerN_ReturnsSequenceWithFizzBuzzRulesApplied(int n, string expectedResultJson)
+    [DataRow(3, new[] { "1", "2", "Fizz" })]
+    [DataRow(5, new[] { "1", "2", "Fizz", "4", "Buzz" })]
+    [DataRow(15, new[] { "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz" })]
+    public void FizzBuzz_WithPositiveIntegerN_ReturnsSequenceWithFizzBuzzRulesApplied(int n, string[] expectedResult)
     {
         // Arrange
-        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

@@ -14,6 +14,4 @@ using LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes;
 namespace LeetCode.Tests.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes;
 
 [TestClass]
-public sealed class CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursiveTests :
-    CountSubarraysWhereMaxElementAppearsAtLeastKTimesTestsBase<
-        CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursive>;
+public sealed class CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursiveTests : CountSubarraysWhereMaxElementAppearsAtLeastKTimesTestsBase<CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursive>;

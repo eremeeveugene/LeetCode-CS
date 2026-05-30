@@ -10,27 +10,22 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ConvertIntegerToTheSumOfTwoNoZeroIntegers;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ConvertIntegerToTheSumOfTwoNoZeroIntegers;
 
-public abstract class ConvertIntegerToTheSumOfTwoNoZeroIntegersTestsBase<T>
-    where T : IConvertIntegerToTheSumOfTwoNoZeroIntegers, new()
+public abstract class ConvertIntegerToTheSumOfTwoNoZeroIntegersTestsBase<T> where T : IConvertIntegerToTheSumOfTwoNoZeroIntegers, new()
 {
     [TestMethod]
-    [DataRow(2, "[1,1]")]
-    [DataRow(11, "[2,9]")]
-    [DataRow(69, "[1,68]")]
-    [DataRow(699, "[1,698]")]
-    [DataRow(700, "[1,699]")]
-    [DataRow(701, "[2,699]")]
-    [DataRow(1010, "[11,999]")]
-    public void GetNoZeroIntegers_WithPositiveIntegerN_ReturnsTwoNoZeroIntegersThatSumToN(int n,
-        string expectedResultJson)
+    [DataRow(2, new[] { 1, 1 })]
+    [DataRow(11, new[] { 2, 9 })]
+    [DataRow(69, new[] { 1, 68 })]
+    [DataRow(699, new[] { 1, 698 })]
+    [DataRow(700, new[] { 1, 699 })]
+    [DataRow(701, new[] { 2, 699 })]
+    [DataRow(1010, new[] { 11, 999 })]
+    public void GetNoZeroIntegers_WithPositiveIntegerN_ReturnsTwoNoZeroIntegersThatSumToN(int n, int[] expectedResult)
     {
         // Arrange
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

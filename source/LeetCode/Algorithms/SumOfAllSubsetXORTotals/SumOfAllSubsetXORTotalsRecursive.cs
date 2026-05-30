@@ -32,7 +32,6 @@ public sealed class SumOfAllSubsetXORTotalsRecursive : ISumOfAllSubsetXORTotals
             return currentXOR;
         }
 
-        return CalculateXORSum(nums, index + 1, currentXOR ^ nums[index]) +
-               CalculateXORSum(nums, index + 1, currentXOR);
+        return CalculateXORSum(nums, index + 1, currentXOR ^ nums[index]) + CalculateXORSum(nums, index + 1, currentXOR);
     }
 }

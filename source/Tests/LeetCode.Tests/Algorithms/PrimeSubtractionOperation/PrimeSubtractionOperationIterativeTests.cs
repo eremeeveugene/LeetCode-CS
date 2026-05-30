@@ -14,5 +14,4 @@ using LeetCode.Algorithms.PrimeSubtractionOperation;
 namespace LeetCode.Tests.Algorithms.PrimeSubtractionOperation;
 
 [TestClass]
-public sealed class PrimeSubtractionOperationIterativeTests :
-    PrimeSubtractionOperationTestsBase<PrimeSubtractionOperationIterative>;
+public sealed class PrimeSubtractionOperationIterativeTests : PrimeSubtractionOperationTestsBase<PrimeSubtractionOperationIterative>;

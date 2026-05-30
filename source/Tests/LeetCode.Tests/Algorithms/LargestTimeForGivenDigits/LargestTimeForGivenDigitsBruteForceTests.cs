@@ -14,5 +14,4 @@ using LeetCode.Algorithms.LargestTimeForGivenDigits;
 namespace LeetCode.Tests.Algorithms.LargestTimeForGivenDigits;
 
 [TestClass]
-public sealed class LargestTimeForGivenDigitsBruteForceTests :
-    LargestTimeForGivenDigitsTestsBase<LargestTimeForGivenDigitsBruteForce>;
+public sealed class LargestTimeForGivenDigitsBruteForceTests : LargestTimeForGivenDigitsTestsBase<LargestTimeForGivenDigitsBruteForce>;

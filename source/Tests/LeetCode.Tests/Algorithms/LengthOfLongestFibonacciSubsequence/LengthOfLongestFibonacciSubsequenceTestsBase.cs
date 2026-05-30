@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LengthOfLongestFibonacciSubsequence;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LengthOfLongestFibonacciSubsequence;
 
-public abstract class LengthOfLongestFibonacciSubsequenceTestsBase<T>
-    where T : ILengthOfLongestFibonacciSubsequence, new()
+public abstract class LengthOfLongestFibonacciSubsequenceTestsBase<T> where T : ILengthOfLongestFibonacciSubsequence, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,4,5,6,7,8]", 5)]
-    [DataRow("[1,3,7,11,12,14,18]", 3)]
-    public void LenLongestFibSubseq_GivenIntegerArray_ReturnsMaxFibonacciSubsequenceLength(string arrJson,
-        int expectedResult)
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8 }, 5)]
+    [DataRow(new[] { 1, 3, 7, 11, 12, 14, 18 }, 3)]
+    public void LenLongestFibSubseq_GivenIntegerArray_ReturnsMaxFibonacciSubsequenceLength(int[] arr, int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper.Parse<int[]>(arrJson);
-
         var solution = new T();
 
         // Act

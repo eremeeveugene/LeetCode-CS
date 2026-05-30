@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CheapestFlightsWithinKStops;
 namespace LeetCode.Tests.Algorithms.CheapestFlightsWithinKStops;
 
 [TestClass]
-public sealed class CheapestFlightsWithinKStopsBellmanFordTests : CheapestFlightsWithinKStopsTestsBase<
-    CheapestFlightsWithinKStopsBellmanFord>;
+public sealed class CheapestFlightsWithinKStopsBellmanFordTests : CheapestFlightsWithinKStopsTestsBase<CheapestFlightsWithinKStopsBellmanFord>;

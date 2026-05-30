@@ -40,7 +40,6 @@ public sealed class FlipEquivalentBinaryTreesRecursive : IFlipEquivalentBinaryTr
             return false;
         }
 
-        return (FlipEquiv(root1.left, root2.left) && FlipEquiv(root1.right, root2.right)) ||
-               (FlipEquiv(root1.left, root2.right) && FlipEquiv(root1.right, root2.left));
+        return (FlipEquiv(root1.left, root2.left) && FlipEquiv(root1.right, root2.right)) || (FlipEquiv(root1.left, root2.right) && FlipEquiv(root1.right, root2.left));
     }
 }

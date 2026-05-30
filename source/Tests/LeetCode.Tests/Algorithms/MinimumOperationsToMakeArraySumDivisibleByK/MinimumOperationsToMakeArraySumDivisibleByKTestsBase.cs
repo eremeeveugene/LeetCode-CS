@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumOperationsToMakeArraySumDivisibleByK;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToMakeArraySumDivisibleByK;
 
-public abstract class MinimumOperationsToMakeArraySumDivisibleByKTestsBase<T>
-    where T : IMinimumOperationsToMakeArraySumDivisibleByK, new()
+public abstract class MinimumOperationsToMakeArraySumDivisibleByKTestsBase<T> where T : IMinimumOperationsToMakeArraySumDivisibleByK, new()
 {
     [TestMethod]
-    [DataRow("[3,9,7]", 5, 4)]
-    [DataRow("[4,1,3]", 4, 0)]
-    [DataRow("[3,2]", 6, 5)]
-    public void MinOperations_WithNumArrayAndTargetValueK_ReturnsMinimumOperationCount(string numsJson, int k,
-        int expectedResult)
+    [DataRow(new[] { 3, 9, 7 }, 5, 4)]
+    [DataRow(new[] { 4, 1, 3 }, 4, 0)]
+    [DataRow(new[] { 3, 2 }, 6, 5)]
+    public void MinOperations_WithNumArrayAndTargetValueK_ReturnsMinimumOperationCount(int[] nums, int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

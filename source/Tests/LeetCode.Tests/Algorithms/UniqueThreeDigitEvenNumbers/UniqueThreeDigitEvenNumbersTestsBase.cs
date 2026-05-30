@@ -10,23 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.UniqueThreeDigitEvenNumbers;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.UniqueThreeDigitEvenNumbers;
 
 public abstract class UniqueThreeDigitEvenNumbersTestsBase<T> where T : IUniqueThreeDigitEvenNumbers, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,4]", 12)]
-    [DataRow("[0,2,2]", 2)]
-    [DataRow("[6,6,6]", 1)]
-    [DataRow("[1,3,5]", 0)]
-    public void TotalNumbers_WithGivenDigitsArray_ReturnsUniqueThreeDigitEvenNumbers(string digitsJson,
-        int expectedResult)
+    [DataRow(new[] { 1, 2, 3, 4 }, 12)]
+    [DataRow(new[] { 0, 2, 2 }, 2)]
+    [DataRow(new[] { 6, 6, 6 }, 1)]
+    [DataRow(new[] { 1, 3, 5 }, 0)]
+    public void TotalNumbers_WithGivenDigitsArray_ReturnsUniqueThreeDigitEvenNumbers(int[] digits, int expectedResult)
     {
         // Arrange
-        var digits = JsonHelper.Parse<int[]>(digitsJson);
-
         var solution = new T();
 
         // Act

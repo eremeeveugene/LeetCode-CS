@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindTheOriginalArrayOfPrefixXor;
 
 public abstract class FindTheOriginalArrayOfPrefixXorTestsBase<T> where T : IFindTheOriginalArrayOfPrefixXor, new()
 {
     [TestMethod]
-    [DataRow("[5, 2, 0, 3, 1]", "[5, 7, 2, 3, 2]")]
-    [DataRow("[13]", "[13]")]
-    public void FindArray_WithPrefixXorArray_ReturnsOriginalArrayUsingInverseXorLogic(string prefJson,
-        string expectedResultJson)
+    [DataRow(new[] { 5, 2, 0, 3, 1 }, new[] { 5, 7, 2, 3, 2 })]
+    [DataRow(new[] { 13 }, new[] { 13 })]
+    public void FindArray_WithPrefixXorArray_ReturnsOriginalArrayUsingInverseXorLogic(int[] pref, int[] expectedResult)
     {
         // Arrange
-        var pref = JsonHelper.Parse<int[]>(prefJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

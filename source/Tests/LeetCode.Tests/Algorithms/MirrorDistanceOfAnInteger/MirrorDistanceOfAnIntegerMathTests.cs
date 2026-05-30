@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MirrorDistanceOfAnInteger;
 namespace LeetCode.Tests.Algorithms.MirrorDistanceOfAnInteger;
 
 [TestClass]
-public sealed class MirrorDistanceOfAnIntegerMathTests :
-    MirrorDistanceOfAnIntegerTestsBase<MirrorDistanceOfAnIntegerMath>;
+public sealed class MirrorDistanceOfAnIntegerMathTests : MirrorDistanceOfAnIntegerTestsBase<MirrorDistanceOfAnIntegerMath>;

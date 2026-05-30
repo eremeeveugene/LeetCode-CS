@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BinarySubarraysWithSum;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.BinarySubarraysWithSum;
 
 public abstract class BinarySubarraysWithSumTestsBase<T> where T : IBinarySubarraysWithSum, new()
 {
     [TestMethod]
-    [DataRow("[1, 0, 1, 0, 1]", 2, 4)]
-    [DataRow("[0, 0, 0, 0, 0]", 0, 15)]
-    public void NumSubarraysWithSum_WithBinaryArrayAndTargetSum_ReturnsCountOfMatchingSubarrays(string numsJson,
-        int goal, int expectedResult)
+    [DataRow(new[] { 1, 0, 1, 0, 1 }, 2, 4)]
+    [DataRow(new[] { 0, 0, 0, 0, 0 }, 0, 15)]
+    public void NumSubarraysWithSum_WithBinaryArrayAndTargetSum_ReturnsCountOfMatchingSubarrays(int[] nums, int goal, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

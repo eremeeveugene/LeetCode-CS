@@ -14,5 +14,4 @@ using LeetCode.Algorithms.SignOfTheProductOfAnArray;
 namespace LeetCode.Tests.Algorithms.SignOfTheProductOfAnArray;
 
 [TestClass]
-public sealed class SignOfTheProductOfAnArrayIterativeTests :
-    SignOfTheProductOfAnArrayTestsBase<SignOfTheProductOfAnArrayIterative>;
+public sealed class SignOfTheProductOfAnArrayIterativeTests : SignOfTheProductOfAnArrayTestsBase<SignOfTheProductOfAnArrayIterative>;

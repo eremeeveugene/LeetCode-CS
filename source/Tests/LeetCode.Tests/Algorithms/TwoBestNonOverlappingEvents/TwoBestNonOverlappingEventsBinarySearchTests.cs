@@ -14,5 +14,4 @@ using LeetCode.Algorithms.TwoBestNonOverlappingEvents;
 namespace LeetCode.Tests.Algorithms.TwoBestNonOverlappingEvents;
 
 [TestClass]
-public sealed class TwoBestNonOverlappingEventsBinarySearchTests :
-    TwoBestNonOverlappingEventsTestsBase<TwoBestNonOverlappingEventsBinarySearch>;
+public sealed class TwoBestNonOverlappingEventsBinarySearchTests : TwoBestNonOverlappingEventsTestsBase<TwoBestNonOverlappingEventsBinarySearch>;

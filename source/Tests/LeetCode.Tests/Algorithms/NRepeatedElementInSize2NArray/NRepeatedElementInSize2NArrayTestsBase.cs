@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.NRepeatedElementInSize2NArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.NRepeatedElementInSize2NArray;
 
 public abstract class NRepeatedElementInSize2NArrayTestsBase<T> where T : INRepeatedElementInSize2NArray, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,3]", 3)]
-    [DataRow("[2,1,2,5,3,2]", 2)]
-    [DataRow("[5,1,5,2,5,3,5,4]", 5)]
-    public void RepeatedNTimes_WithArrayContainingOneElementRepeatedNTimes_ReturnsRepeatedElement(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 1, 2, 3, 3 }, 3)]
+    [DataRow(new[] { 2, 1, 2, 5, 3, 2 }, 2)]
+    [DataRow(new[] { 5, 1, 5, 2, 5, 3, 5, 4 }, 5)]
+    public void RepeatedNTimes_WithArrayContainingOneElementRepeatedNTimes_ReturnsRepeatedElement(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

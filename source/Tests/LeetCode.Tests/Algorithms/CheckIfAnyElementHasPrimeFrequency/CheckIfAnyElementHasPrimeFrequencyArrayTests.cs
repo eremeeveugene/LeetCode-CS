@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CheckIfAnyElementHasPrimeFrequency;
 namespace LeetCode.Tests.Algorithms.CheckIfAnyElementHasPrimeFrequency;
 
 [TestClass]
-public sealed class CheckIfAnyElementHasPrimeFrequencyArrayTests :
-    CheckIfAnyElementHasPrimeFrequencyTestsBase<CheckIfAnyElementHasPrimeFrequencyArray>;
+public sealed class CheckIfAnyElementHasPrimeFrequencyArrayTests : CheckIfAnyElementHasPrimeFrequencyTestsBase<CheckIfAnyElementHasPrimeFrequencyArray>;

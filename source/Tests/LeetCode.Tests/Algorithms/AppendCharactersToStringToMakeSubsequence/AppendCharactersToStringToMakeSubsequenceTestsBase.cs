@@ -13,8 +13,7 @@ using LeetCode.Algorithms.AppendCharactersToStringToMakeSubsequence;
 
 namespace LeetCode.Tests.Algorithms.AppendCharactersToStringToMakeSubsequence;
 
-public abstract class AppendCharactersToStringToMakeSubsequenceTestsBase<T>
-    where T : IAppendCharactersToStringToMakeSubsequence, new()
+public abstract class AppendCharactersToStringToMakeSubsequenceTestsBase<T> where T : IAppendCharactersToStringToMakeSubsequence, new()
 {
     [TestMethod]
     [DataRow("a", "a", 0)]
@@ -28,8 +27,7 @@ public abstract class AppendCharactersToStringToMakeSubsequenceTestsBase<T>
     [DataRow("axbyczd", "abcd", 0)]
     [DataRow("vrykt", "rkge", 2)]
     [DataRow("coaching", "coding", 4)]
-    public void AppendCharacters_WithSourceAndTargetStrings_ReturnsMinCharsToAppendForSubsequence(string s, string t,
-        int expectedResult)
+    public void AppendCharacters_WithSourceAndTargetStrings_ReturnsMinCharsToAppendForSubsequence(string s, string t, int expectedResult)
     {
         // Arrange
         var solution = new T();

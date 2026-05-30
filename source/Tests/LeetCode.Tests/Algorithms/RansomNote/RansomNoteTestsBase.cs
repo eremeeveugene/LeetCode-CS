@@ -19,8 +19,7 @@ public abstract class RansomNoteTestsBase<T> where T : IRansomNote, new()
     [DataRow("a", "b", false)]
     [DataRow("aa", "ab", false)]
     [DataRow("aa", "aab", true)]
-    public void CanConstruct_WithRansomNoteAndMagazine_ReturnsWhetherConstructIsPossible(string ransomNote,
-        string magazine, bool expectedResult)
+    public void CanConstruct_WithRansomNoteAndMagazine_ReturnsWhetherConstructIsPossible(string ransomNote, string magazine, bool expectedResult)
     {
         // Arrange
         var solution = new T();

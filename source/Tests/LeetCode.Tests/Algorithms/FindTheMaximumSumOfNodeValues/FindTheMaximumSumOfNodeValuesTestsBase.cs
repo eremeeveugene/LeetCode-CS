@@ -10,24 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTheMaximumSumOfNodeValues;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindTheMaximumSumOfNodeValues;
 
 public abstract class FindTheMaximumSumOfNodeValuesTestsBase<T> where T : IFindTheMaximumSumOfNodeValues, new()
 {
     [TestMethod]
-    [DataRow("[1, 2, 1]", 3, "[[0,1],[0,2]]", 6)]
-    [DataRow("[2, 3]", 7, "[[0,1]]", 9)]
-    [DataRow("[7, 7, 7, 7, 7, 7]", 3, "[[0,1],[0,2],[0,3],[0,4],[0,5]]", 42)]
-    [DataRow("[24, 78, 1, 97, 44]", 6, "[[0,2],[1,2],[4,2],[3,4]]", 260)]
-    public void MaximumValueSum_WithValuesEdgesAndXorKey_ReturnsHighestPossibleSumAfterOperations(string numsJson,
-        int k, string edgesJson, long expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MaximumValueSum_WithValuesEdgesAndXorKey_ReturnsHighestPossibleSumAfterOperations(int[] nums, int k, int[][] edges, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var edges = JsonHelper.Parse<int[][]>(edgesJson);
-
         var solution = new T();
 
         // Act
@@ -35,5 +27,16 @@ public abstract class FindTheMaximumSumOfNodeValuesTestsBase<T> where T : IFindT
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { 1, 2, 1 }, 3, new[] { new[] { 0, 1 }, new[] { 0, 2 } }, 6L];
+
+        yield return [new[] { 2, 3 }, 7, new[] { new[] { 0, 1 } }, 9L];
+
+        yield return [new[] { 7, 7, 7, 7, 7, 7 }, 3, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 }, new[] { 0, 4 }, new[] { 0, 5 } }, 42L];
+
+        yield return [new[] { 24, 78, 1, 97, 44 }, 6, new[] { new[] { 0, 2 }, new[] { 1, 2 }, new[] { 4, 2 }, new[] { 3, 4 } }, 260L];
     }
 }

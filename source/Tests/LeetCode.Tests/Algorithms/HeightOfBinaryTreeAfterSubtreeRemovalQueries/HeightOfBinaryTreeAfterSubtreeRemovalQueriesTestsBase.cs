@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,26 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
 
-public abstract class HeightOfBinaryTreeAfterSubtreeRemovalQueriesTestsBase<T>
-    where T : IHeightOfBinaryTreeAfterSubtreeRemovalQueries, new()
+public abstract class HeightOfBinaryTreeAfterSubtreeRemovalQueriesTestsBase<T> where T : IHeightOfBinaryTreeAfterSubtreeRemovalQueries, new()
 {
     [TestMethod]
-    [DataRow("[1,3,4,2,null,6,5,null,null,null,null,null,7]", "[4]", "[2]")]
-    [DataRow("[5,8,9,2,1,3,7,4,6]", "[3,2,4,8]", "[3,2,3,2]")]
-    [DataRow("[1,null,5,3,null,2,4]", "[3,5,4,2,4]", "[1,0,3,3,3]")]
-    public void TreeQueries_WithSubtreeRemovedAtGivenNode_ReturnsHeightOfTreeAfterRemoval(string rootJson,
-        string queriesJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void TreeQueries_WithSubtreeRemovedAtGivenNode_ReturnsHeightOfTreeAfterRemoval(int?[] rootArray, int[] queries, int[] expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
-        var queries = JsonHelper.Parse<int[]>(queriesJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 
@@ -38,5 +30,14 @@ public abstract class HeightOfBinaryTreeAfterSubtreeRemovalQueriesTestsBase<T>
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 1, 3, 4, 2, null, 6, 5, null, null, null, null, null, 7 }, new[] { 4 }, new[] { 2 }];
+
+        yield return [new int?[] { 5, 8, 9, 2, 1, 3, 7, 4, 6 }, new[] { 3, 2, 4, 8 }, new[] { 3, 2, 3, 2 }];
+
+        yield return [new int?[] { 1, null, 5, 3, null, 2, 4 }, new[] { 3, 5, 4, 2, 4 }, new[] { 1, 0, 3, 3, 3 }];
     }
 }

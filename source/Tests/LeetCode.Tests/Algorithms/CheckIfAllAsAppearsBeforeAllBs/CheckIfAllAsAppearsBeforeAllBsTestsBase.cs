@@ -19,8 +19,7 @@ public abstract class CheckIfAllAsAppearsBeforeAllBsTestsBase<T> where T : IChec
     [DataRow("aaabbb", true)]
     [DataRow("abab", false)]
     [DataRow("bbb", true)]
-    public void CheckString_WithInputString_ReturnsTrueIfAllAsAppearBeforeBs(string s,
-        bool expectedResult)
+    public void CheckString_WithInputString_ReturnsTrueIfAllAsAppearBeforeBs(string s, bool expectedResult)
     {
         // Arrange
         var solution = new T();

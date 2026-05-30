@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ConstructKPalindromeStrings;
 namespace LeetCode.Tests.Algorithms.ConstructKPalindromeStrings;
 
 [TestClass]
-public sealed class ConstructKPalindromeStringsFrequencyArrayTests :
-    ConstructKPalindromeStringsTestsBase<ConstructKPalindromeStringsFrequencyArray>;
+public sealed class ConstructKPalindromeStringsFrequencyArrayTests : ConstructKPalindromeStringsTestsBase<ConstructKPalindromeStringsFrequencyArray>;

@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumPairRemovalToSortArray1;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumPairRemovalToSortArray1;
 
 public abstract class MinimumPairRemovalToSortArray1TestsBase<T> where T : IMinimumPairRemovalToSortArray1, new()
 {
     [TestMethod]
-    [DataRow("[5,2,3,1]", 2)]
-    [DataRow("[1,2,2]", 0)]
-    [DataRow("[2,2,-1,3,-2,2,1,1,1,0,-1]", 9)]
-    public void MinimumPairRemoval_WithUnsortedArray_ReturnsMinimumNumberOfOperationsNeededToSort(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 5, 2, 3, 1 }, 2)]
+    [DataRow(new[] { 1, 2, 2 }, 0)]
+    [DataRow(new[] { 2, 2, -1, 3, -2, 2, 1, 1, 1, 0, -1 }, 9)]
+    public void MinimumPairRemoval_WithUnsortedArray_ReturnsMinimumNumberOfOperationsNeededToSort(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

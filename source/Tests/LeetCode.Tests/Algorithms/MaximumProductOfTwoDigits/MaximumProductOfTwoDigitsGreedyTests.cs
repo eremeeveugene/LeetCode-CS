@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumProductOfTwoDigits;
 namespace LeetCode.Tests.Algorithms.MaximumProductOfTwoDigits;
 
 [TestClass]
-public class MaximumProductOfTwoDigitsGreedyTests :
-    MaximumProductOfTwoDigitsTestsBase<MaximumProductOfTwoDigitsGreedy>;
+public class MaximumProductOfTwoDigitsGreedyTests : MaximumProductOfTwoDigitsTestsBase<MaximumProductOfTwoDigitsGreedy>;

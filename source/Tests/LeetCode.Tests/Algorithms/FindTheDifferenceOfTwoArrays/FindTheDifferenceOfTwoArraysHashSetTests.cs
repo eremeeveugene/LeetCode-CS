@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FindTheDifferenceOfTwoArrays;
 namespace LeetCode.Tests.Algorithms.FindTheDifferenceOfTwoArrays;
 
 [TestClass]
-public sealed class FindTheDifferenceOfTwoArraysHashSetTests : FindTheDifferenceOfTwoArraysTestsBase<
-    FindTheDifferenceOfTwoArraysHashSet>;
+public sealed class FindTheDifferenceOfTwoArraysHashSetTests : FindTheDifferenceOfTwoArraysTestsBase<FindTheDifferenceOfTwoArraysHashSet>;

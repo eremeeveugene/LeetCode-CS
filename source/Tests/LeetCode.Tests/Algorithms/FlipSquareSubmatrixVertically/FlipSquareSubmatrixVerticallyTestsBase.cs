@@ -16,13 +16,8 @@ namespace LeetCode.Tests.Algorithms.FlipSquareSubmatrixVertically;
 public abstract class FlipSquareSubmatrixVerticallyTestsBase<T> where T : IFlipSquareSubmatrixVertically, new()
 {
     [TestMethod]
-    [DynamicData(nameof(ReverseSubmatrixTestData))]
-    public void ReverseSubmatrix_WithInputSubmatrix_ReversesSubmatrixRowsVerticallyAndReturnsUpdatedMatrix(
-        int[][] grid,
-        int x,
-        int y,
-        int k,
-        int[][] expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void ReverseSubmatrix_WithInputSubmatrix_ReversesSubmatrixRowsVerticallyAndReturnsUpdatedMatrix(int[][] grid, int x, int y, int k, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -34,99 +29,16 @@ public abstract class FlipSquareSubmatrixVerticallyTestsBase<T> where T : IFlipS
         CollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
-    public static IEnumerable<object[]> ReverseSubmatrixTestData()
+    private static IEnumerable<object[]> GetTestData()
     {
-        yield return
-        [
-            new[]
-            {
-                new[] { 1, 2, 3, 4 },
-                new[] { 5, 6, 7, 8 },
-                new[] { 9, 10, 11, 12 },
-                new[] { 13, 14, 15, 16 }
-            },
-            1,
-            0,
-            3,
-            new[]
-            {
-                new[] { 1, 2, 3, 4 },
-                new[] { 13, 14, 15, 8 },
-                new[] { 9, 10, 11, 12 },
-                new[] { 5, 6, 7, 16 }
-            }
-        ];
+        yield return [new[] { new[] { 1, 2, 3, 4 }, new[] { 5, 6, 7, 8 }, new[] { 9, 10, 11, 12 }, new[] { 13, 14, 15, 16 } }, 1, 0, 3, new[] { new[] { 1, 2, 3, 4 }, new[] { 13, 14, 15, 8 }, new[] { 9, 10, 11, 12 }, new[] { 5, 6, 7, 16 } }];
 
-        yield return
-        [
-            new[]
-            {
-                new[] { 3, 4, 2, 3 },
-                new[] { 2, 3, 4, 2 }
-            },
-            0,
-            2,
-            2,
-            new[]
-            {
-                new[] { 3, 4, 4, 2 },
-                new[] { 2, 3, 2, 3 }
-            }
-        ];
+        yield return [new[] { new[] { 3, 4, 2, 3 }, new[] { 2, 3, 4, 2 } }, 0, 2, 2, new[] { new[] { 3, 4, 4, 2 }, new[] { 2, 3, 2, 3 } }];
 
-        yield return
-        [
-            new[]
-            {
-                new[] { 1, 2 },
-                new[] { 3, 4 }
-            },
-            0,
-            0,
-            1,
-            new[]
-            {
-                new[] { 1, 2 },
-                new[] { 3, 4 }
-            }
-        ];
+        yield return [new[] { new[] { 1, 2 }, new[] { 3, 4 } }, 0, 0, 1, new[] { new[] { 1, 2 }, new[] { 3, 4 } }];
 
-        yield return
-        [
-            new[]
-            {
-                new[] { 1, 2, 3 },
-                new[] { 4, 5, 6 },
-                new[] { 7, 8, 9 }
-            },
-            0,
-            0,
-            3,
-            new[]
-            {
-                new[] { 7, 8, 9 },
-                new[] { 4, 5, 6 },
-                new[] { 1, 2, 3 }
-            }
-        ];
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { 4, 5, 6 }, new[] { 7, 8, 9 } }, 0, 0, 3, new[] { new[] { 7, 8, 9 }, new[] { 4, 5, 6 }, new[] { 1, 2, 3 } }];
 
-        yield return
-        [
-            new[]
-            {
-                new[] { 1, 2, 3, 4 },
-                new[] { 5, 6, 7, 8 },
-                new[] { 9, 10, 11, 12 }
-            },
-            0,
-            1,
-            2,
-            new[]
-            {
-                new[] { 1, 6, 7, 4 },
-                new[] { 5, 2, 3, 8 },
-                new[] { 9, 10, 11, 12 }
-            }
-        ];
+        yield return [new[] { new[] { 1, 2, 3, 4 }, new[] { 5, 6, 7, 8 }, new[] { 9, 10, 11, 12 } }, 0, 1, 2, new[] { new[] { 1, 6, 7, 4 }, new[] { 5, 2, 3, 8 }, new[] { 9, 10, 11, 12 } }];
     }
 }

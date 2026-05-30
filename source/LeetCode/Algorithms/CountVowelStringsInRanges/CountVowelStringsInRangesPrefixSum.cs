@@ -14,14 +14,7 @@ namespace LeetCode.Algorithms.CountVowelStringsInRanges;
 /// <inheritdoc />
 public sealed class CountVowelStringsInRangesPrefixSum : ICountVowelStringsInRanges
 {
-    private readonly HashSet<char> _vowelsHashSet =
-    [
-        'a',
-        'e',
-        'i',
-        'o',
-        'u'
-    ];
+    private readonly HashSet<char> _vowelsHashSet = ['a', 'e', 'i', 'o', 'u'];
 
     public int[] VowelStrings(string[] words, int[][] queries)
     {

@@ -10,24 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FinalPricesWithSpecialDiscountInShop;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FinalPricesWithSpecialDiscountInShop;
 
-public abstract class FinalPricesWithSpecialDiscountInShopTestsBase<T>
-    where T : IFinalPricesWithSpecialDiscountInShop, new()
+public abstract class FinalPricesWithSpecialDiscountInShopTestsBase<T> where T : IFinalPricesWithSpecialDiscountInShop, new()
 {
     [TestMethod]
-    [DataRow("[8,4,6,2,3]", "[4,2,4,2,3]")]
-    [DataRow("[1,2,3,4,5]", "[1,2,3,4,5]")]
-    [DataRow("[10,1,1,6]", "[9,0,1,6]")]
-    public void FinalPrices_WithPriceArray_ReturnsDiscountedPrices(string pricesJson,
-        string expectedResultJson)
+    [DataRow(new[] { 8, 4, 6, 2, 3 }, new[] { 4, 2, 4, 2, 3 })]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, new[] { 1, 2, 3, 4, 5 })]
+    [DataRow(new[] { 10, 1, 1, 6 }, new[] { 9, 0, 1, 6 })]
+    public void FinalPrices_WithPriceArray_ReturnsDiscountedPrices(int[] prices, int[] expectedResult)
     {
         // Arrange
-        var prices = JsonHelper.Parse<int[]>(pricesJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

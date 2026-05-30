@@ -14,6 +14,4 @@ using LeetCode.Algorithms.CountOfSubstringsContainingEveryVowelAndKConsonants2;
 namespace LeetCode.Tests.Algorithms.CountOfSubstringsContainingEveryVowelAndKConsonants2;
 
 [TestClass]
-public sealed class CountOfSubstringsContainingEveryVowelAndKConsonants2SlidingWindowTests :
-    CountOfSubstringsContainingEveryVowelAndKConsonants2TestsBase<
-        CountOfSubstringsContainingEveryVowelAndKConsonants2SlidingWindow>;
+public sealed class CountOfSubstringsContainingEveryVowelAndKConsonants2SlidingWindowTests : CountOfSubstringsContainingEveryVowelAndKConsonants2TestsBase<CountOfSubstringsContainingEveryVowelAndKConsonants2SlidingWindow>;

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountSquareSumTriples;
 namespace LeetCode.Tests.Algorithms.CountSquareSumTriples;
 
 [TestClass]
-public sealed class CountSquareSumTriplesBruteForceTests :
-    CountSquareSumTriplesTestsBase<CountSquareSumTriplesBruteForce>;
+public sealed class CountSquareSumTriplesBruteForceTests : CountSquareSumTriplesTestsBase<CountSquareSumTriplesBruteForce>;

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SpecialArray2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SpecialArray2;
 
 public abstract class SpecialArray2TestsBase<T> where T : ISpecialArray2, new()
 {
     [TestMethod]
-    [DataRow("[3,4,1,2,6]", "[[0,4]]", "[false]")]
-    [DataRow("[4,3,1,6]", "[[0,2],[2,3]]", "[false,true]")]
-    public void IsArraySpecial_WithSubarrayQueries_ReturnsWhetherEachSubarrayHasAlternatingParity(string numsJson,
-        string queriesJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void IsArraySpecial_WithSubarrayQueries_ReturnsWhetherEachSubarrayHasAlternatingParity(int[] nums, int[][] queries, bool[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var queries = JsonHelper.Parse<int[][]>(queriesJson);
-        var expectedResult = JsonHelper.Parse<bool[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +27,12 @@ public abstract class SpecialArray2TestsBase<T> where T : ISpecialArray2, new()
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { 3, 4, 1, 2, 6 }, new[] { new[] { 0, 4 } }, new[] { false }];
+
+        yield return [new[] { 4, 3, 1, 6 }, new[] { new[] { 0, 2 }, new[] { 2, 3 } }, new[] { false, true }];
     }
 }

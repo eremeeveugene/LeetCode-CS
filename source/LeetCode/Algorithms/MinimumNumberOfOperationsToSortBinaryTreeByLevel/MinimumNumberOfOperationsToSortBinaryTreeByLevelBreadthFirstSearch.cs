@@ -14,8 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel;
 
 /// <inheritdoc />
-public sealed class MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch :
-    IMinimumNumberOfOperationsToSortBinaryTreeByLevel
+public sealed class MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch : IMinimumNumberOfOperationsToSortBinaryTreeByLevel
 {
     /// <summary>
     ///     Time complexity - O(n log n)
@@ -60,11 +59,7 @@ public sealed class MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirst
                 }
             }
 
-            var indexDictionary = values
-                .Select((value, index) => new { Value = value, Index = index })
-                .OrderBy(x => x.Value)
-                .Select((x, sortedIndex) => new { x.Index, SortedIndex = sortedIndex })
-                .ToDictionary(x => x.Index, x => x.SortedIndex);
+            var indexDictionary = values.Select((value, index) => new { Value = value, Index = index }).OrderBy(x => x.Value).Select((x, sortedIndex) => new { x.Index, SortedIndex = sortedIndex }).ToDictionary(x => x.Index, x => x.SortedIndex);
 
             var visited = new bool[values.Length];
 

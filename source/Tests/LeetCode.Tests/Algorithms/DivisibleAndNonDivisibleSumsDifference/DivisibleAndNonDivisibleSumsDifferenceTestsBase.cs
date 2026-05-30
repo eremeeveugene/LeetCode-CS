@@ -13,15 +13,13 @@ using LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference;
 
 namespace LeetCode.Tests.Algorithms.DivisibleAndNonDivisibleSumsDifference;
 
-public abstract class DivisibleAndNonDivisibleSumsDifferenceTestsBase<T>
-    where T : IDivisibleAndNonDivisibleSumsDifference, new()
+public abstract class DivisibleAndNonDivisibleSumsDifferenceTestsBase<T> where T : IDivisibleAndNonDivisibleSumsDifference, new()
 {
     [TestMethod]
     [DataRow(10, 3, 19)]
     [DataRow(5, 6, 15)]
     [DataRow(5, 1, -15)]
-    public void DifferenceOfSums_WithRangeAndDivisor_ReturnsDifferenceBetweenNonDivisibleAndDivisibleSums(int n,
-        int m, int expectedResult)
+    public void DifferenceOfSums_WithRangeAndDivisor_ReturnsDifferenceBetweenNonDivisibleAndDivisibleSums(int n, int m, int expectedResult)
     {
         // Arrange
         var solution = new T();

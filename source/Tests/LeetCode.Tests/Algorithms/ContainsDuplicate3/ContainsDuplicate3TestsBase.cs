@@ -10,27 +10,23 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ContainsDuplicate3;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ContainsDuplicate3;
 
 public abstract class ContainsDuplicate3TestsBase<T> where T : IContainsDuplicate3, new()
 {
     [TestMethod]
-    [DataRow("[1, 2, 3, 1]", 3, 0, true)]
-    [DataRow("[1, 5, 9, 1, 5, 9]", 2, 3, false)]
-    [DataRow("[1, 0, 1, 1]", 1, 2, true)]
-    [DataRow("[1, 2, 3, 4, 5, 6]", 1, 0, false)]
-    [DataRow("[]", 2, 1, false)]
-    [DataRow("[1, 2, 3, 1]", 0, 1, false)]
-    [DataRow("[1, 2, 3, 1]", 2, -1, false)]
-    [DataRow("[-1, -1]", 1, 0, true)]
-    public void ContainsNearbyAlmostDuplicate_WithIndexAndValueDifferenceConstraints_ReturnsTrueIfDuplicateExists(
-        string numsJson, int indexDiff, int valueDiff, bool expectedResult)
+    [DataRow(new[] { 1, 2, 3, 1 }, 3, 0, true)]
+    [DataRow(new[] { 1, 5, 9, 1, 5, 9 }, 2, 3, false)]
+    [DataRow(new[] { 1, 0, 1, 1 }, 1, 2, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6 }, 1, 0, false)]
+    [DataRow(new int[] { }, 2, 1, false)]
+    [DataRow(new[] { 1, 2, 3, 1 }, 0, 1, false)]
+    [DataRow(new[] { 1, 2, 3, 1 }, 2, -1, false)]
+    [DataRow(new[] { -1, -1 }, 1, 0, true)]
+    public void ContainsNearbyAlmostDuplicate_WithIndexAndValueDifferenceConstraints_ReturnsTrueIfDuplicateExists(int[] nums, int indexDiff, int valueDiff, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

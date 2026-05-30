@@ -13,15 +13,13 @@ using LeetCode.Algorithms.MaximumSubstringsWithDistinctStart;
 
 namespace LeetCode.Tests.Algorithms.MaximumSubstringsWithDistinctStart;
 
-public abstract class MaximumSumOfDistinctSubarraysWithLengthKTestsBase<T>
-    where T : IMaximumSubstringsWithDistinctStart, new()
+public abstract class MaximumSumOfDistinctSubarraysWithLengthKTestsBase<T> where T : IMaximumSubstringsWithDistinctStart, new()
 {
     [TestMethod]
     [DataRow("aaaa", 1)]
     [DataRow("abab", 2)]
     [DataRow("abcd", 4)]
-    public void MaxDistinct_WithStringContainingLowercaseLetters_ReturnsMaxSubstringsWithDistinctStartCharacters(
-        string s, int expectedResult)
+    public void MaxDistinct_WithStringContainingLowercaseLetters_ReturnsMaxSubstringsWithDistinctStartCharacters(string s, int expectedResult)
     {
         // Arrange
         var solution = new T();

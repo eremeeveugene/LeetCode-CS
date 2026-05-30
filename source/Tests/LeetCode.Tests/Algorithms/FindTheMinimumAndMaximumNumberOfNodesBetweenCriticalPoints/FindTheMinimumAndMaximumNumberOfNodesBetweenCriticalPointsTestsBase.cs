@@ -10,25 +10,20 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints;
 
-public abstract class FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsTestsBase<T>
-    where T : IFindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints, new()
+public abstract class FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsTestsBase<T> where T : IFindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints, new()
 {
     [TestMethod]
-    [DataRow("[3, 1]", "[-1, -1]")]
-    [DataRow("[5, 3, 1, 2, 5, 1, 2]", "[1, 3]")]
-    [DataRow("[1, 3, 2, 2, 3, 2, 2, 2, 7]", "[3, 3]")]
-    public void NodesBetweenCriticalPoints_WithLinkedListInput_ReturnsMinAndMaxDistanceBetweenCriticalPoints(
-        string headJson, string expectedResultJson)
+    [DataRow(new[] { 3, 1 }, new[] { -1, -1 })]
+    [DataRow(new[] { 5, 3, 1, 2, 5, 1, 2 }, new[] { 1, 3 })]
+    [DataRow(new[] { 1, 3, 2, 2, 3, 2, 2, 2, 7 }, new[] { 3, 3 })]
+    public void NodesBetweenCriticalPoints_WithLinkedListInput_ReturnsMinAndMaxDistanceBetweenCriticalPoints(int[] headArray, int[] expectedResult)
     {
         // Arrange
-        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumAbsoluteDifferenceInBST;
 namespace LeetCode.Tests.Algorithms.MinimumAbsoluteDifferenceInBST;
 
 [TestClass]
-public sealed class MinimumAbsoluteDifferenceInBSTDepthFirstSearchTests : MinimumAbsoluteDifferenceInBSTTestsBase<
-    MinimumAbsoluteDifferenceInBSTDepthFirstSearch>;
+public sealed class MinimumAbsoluteDifferenceInBSTDepthFirstSearchTests : MinimumAbsoluteDifferenceInBSTTestsBase<MinimumAbsoluteDifferenceInBSTDepthFirstSearch>;

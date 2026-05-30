@@ -14,5 +14,4 @@ using LeetCode.Algorithms.OneBitAndTwoBitCharacters;
 namespace LeetCode.Tests.Algorithms.OneBitAndTwoBitCharacters;
 
 [TestClass]
-public sealed class OneBitAndTwoBitCharactersIterativeTests :
-    OneBitAndTwoBitCharactersTestsBase<OneBitAndTwoBitCharactersIterative>;
+public sealed class OneBitAndTwoBitCharactersIterativeTests : OneBitAndTwoBitCharactersTestsBase<OneBitAndTwoBitCharactersIterative>;

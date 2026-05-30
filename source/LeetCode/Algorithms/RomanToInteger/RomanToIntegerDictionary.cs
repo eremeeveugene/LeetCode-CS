@@ -44,8 +44,7 @@ public sealed class RomanToIntegerDictionary : IRomanToInteger
 
         while (i < romanString.Length)
         {
-            if (i < romanString.Length - 1 &&
-                _romanIntegersDictionary.TryGetValue(romanString.Substring(i, 2), out var value))
+            if (i < romanString.Length - 1 && _romanIntegersDictionary.TryGetValue(romanString.Substring(i, 2), out var value))
             {
                 result += value;
                 i += 2;

@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes;
 
 /// <inheritdoc />
-public sealed class CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursive :
-    ICountSubarraysWhereMaxElementAppearsAtLeastKTimes
+public sealed class CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursive : ICountSubarraysWhereMaxElementAppearsAtLeastKTimes
 {
     /// <summary>
     ///     Time complexity - O(n^2)
@@ -26,12 +25,10 @@ public sealed class CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursive :
     {
         var actualDuplicates = new List<List<int>>();
 
-        return CountSubarrays(nums, k, 0, nums.Length, actualDuplicates) +
-               CountSubarrays(nums, k, 0, nums.Length, actualDuplicates);
+        return CountSubarrays(nums, k, 0, nums.Length, actualDuplicates) + CountSubarrays(nums, k, 0, nums.Length, actualDuplicates);
     }
 
-    private static long CountSubarrays(IReadOnlyList<int> nums, int k, int left, int right,
-        ICollection<List<int>> actualDuplicates)
+    private static long CountSubarrays(IReadOnlyList<int> nums, int k, int left, int right, ICollection<List<int>> actualDuplicates)
     {
         if (left > right)
         {
@@ -65,8 +62,7 @@ public sealed class CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursive :
             break;
         }
 
-        var count = CountSubarrays(nums, k, left + 1, right, actualDuplicates) +
-                    CountSubarrays(nums, k, left, right - 1, actualDuplicates);
+        var count = CountSubarrays(nums, k, left + 1, right, actualDuplicates) + CountSubarrays(nums, k, left, right - 1, actualDuplicates);
 
         if (isSubarray)
         {

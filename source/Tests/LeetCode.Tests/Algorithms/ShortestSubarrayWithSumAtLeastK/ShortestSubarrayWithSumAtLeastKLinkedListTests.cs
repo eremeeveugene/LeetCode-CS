@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ShortestSubarrayWithSumAtLeastK;
 namespace LeetCode.Tests.Algorithms.ShortestSubarrayWithSumAtLeastK;
 
 [TestClass]
-public sealed class ShortestSubarrayWithSumAtLeastKLinkedListTests :
-    ShortestSubarrayWithSumAtLeastKTestsBase<ShortestSubarrayWithSumAtLeastKLinkedList>;
+public sealed class ShortestSubarrayWithSumAtLeastKLinkedListTests : ShortestSubarrayWithSumAtLeastKTestsBase<ShortestSubarrayWithSumAtLeastKLinkedList>;

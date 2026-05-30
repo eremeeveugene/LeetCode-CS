@@ -10,23 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximalRectangle;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximalRectangle;
 
 public abstract class MaximalRectangleTestsBase<T> where T : IMaximalRectangle, new()
 {
     [TestMethod]
-    [DataRow("[[\"0\"]]", 0)]
-    [DataRow("[[\"1\"]]", 1)]
-    [DataRow(
-        "[[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]",
-        6)]
-    public void MaximalRectangle_GivenMatrix_ReturnsMaximalArea(string matrixJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MaximalRectangle_GivenMatrix_ReturnsMaximalArea(char[][] matrix, int expectedResult)
     {
         // Arrange
-        var matrix = JsonHelper.Parse<char[][]>(matrixJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +27,14 @@ public abstract class MaximalRectangleTestsBase<T> where T : IMaximalRectangle, 
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { '0' } }, 0];
+
+        yield return [new[] { new[] { '1' } }, 1];
+
+        yield return [new[] { new[] { '1', '0', '1', '0', '0' }, new[] { '1', '0', '1', '1', '1' }, new[] { '1', '1', '1', '1', '1' }, new[] { '1', '0', '0', '1', '0' } }, 6];
     }
 }

@@ -36,8 +36,7 @@ public sealed class MaximumBeautyOfAnArrayAfterApplyingOperationLineSweep : IMax
             ranges[i + nums.Length] = (nums[i] + k, -1);
         }
 
-        Array.Sort(ranges,
-            (x, y) => x.Position == y.Position ? y.Type.CompareTo(x.Type) : x.Position.CompareTo(y.Position));
+        Array.Sort(ranges, (x, y) => x.Position == y.Position ? y.Type.CompareTo(x.Type) : x.Position.CompareTo(y.Position));
 
         var maximumBeauty = 0;
         var count = 0;

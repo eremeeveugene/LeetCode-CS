@@ -14,5 +14,4 @@ using LeetCode.Algorithms.SumOfElementsWithFrequencyDivisibleByK;
 namespace LeetCode.Tests.Algorithms.SumOfElementsWithFrequencyDivisibleByK;
 
 [TestClass]
-public sealed class SumOfElementsWithFrequencyDivisibleByKFrequencyArrayTests :
-    SumOfElementsWithFrequencyDivisibleByKTestsBAse<SumOfElementsWithFrequencyDivisibleByKFrequencyArray>;
+public sealed class SumOfElementsWithFrequencyDivisibleByKFrequencyArrayTests : SumOfElementsWithFrequencyDivisibleByKTestsBAse<SumOfElementsWithFrequencyDivisibleByKFrequencyArray>;

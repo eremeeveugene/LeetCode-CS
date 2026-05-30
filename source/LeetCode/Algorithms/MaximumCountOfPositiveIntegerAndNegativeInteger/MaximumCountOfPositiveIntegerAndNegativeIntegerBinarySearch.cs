@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.MaximumCountOfPositiveIntegerAndNegativeInteger;
 
 /// <inheritdoc />
-public sealed class MaximumCountOfPositiveIntegerAndNegativeIntegerBinarySearch :
-    IMaximumCountOfPositiveIntegerAndNegativeInteger
+public sealed class MaximumCountOfPositiveIntegerAndNegativeIntegerBinarySearch : IMaximumCountOfPositiveIntegerAndNegativeInteger
 {
     /// <summary>
     ///     Time complexity - O(log n)

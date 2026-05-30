@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumTimeVisitingAllPoints;
 namespace LeetCode.Tests.Algorithms.MinimumTimeVisitingAllPoints;
 
 [TestClass]
-public sealed class MinimumTimeVisitingAllPointsIterativeTests :
-    MinimumTimeVisitingAllPointsTestsBase<MinimumTimeVisitingAllPointsIterative>;
+public sealed class MinimumTimeVisitingAllPointsIterativeTests : MinimumTimeVisitingAllPointsTestsBase<MinimumTimeVisitingAllPointsIterative>;

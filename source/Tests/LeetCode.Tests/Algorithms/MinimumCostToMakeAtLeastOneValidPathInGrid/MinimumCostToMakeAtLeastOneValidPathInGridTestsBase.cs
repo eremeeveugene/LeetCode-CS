@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumCostToMakeAtLeastOneValidPathInGrid;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumCostToMakeAtLeastOneValidPathInGrid;
 
-public abstract class MinimumCostToMakeAtLeastOneValidPathInGridTestsBase<T>
-    where T : IMinimumCostToMakeAtLeastOneValidPathInGrid, new()
+public abstract class MinimumCostToMakeAtLeastOneValidPathInGridTestsBase<T> where T : IMinimumCostToMakeAtLeastOneValidPathInGrid, new()
 {
     [TestMethod]
-    [DataRow("[[1,1,1,1],[2,2,2,2],[1,1,1,1],[2,2,2,2]]", 3)]
-    [DataRow("[[1,1,3],[3,2,2],[1,1,4]]", 0)]
-    [DataRow("[[1,2],[4,3]]", 1)]
-    public void MinCost_WithGridJson_ReturnsMinimumCost(string gridJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MinCost_WithGridJson_ReturnsMinimumCost(int[][] grid, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper.Parse<int[][]>(gridJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +27,14 @@ public abstract class MinimumCostToMakeAtLeastOneValidPathInGridTestsBase<T>
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 1, 1, 1 }, new[] { 2, 2, 2, 2 }, new[] { 1, 1, 1, 1 }, new[] { 2, 2, 2, 2 } }, 3];
+
+        yield return [new[] { new[] { 1, 1, 3 }, new[] { 3, 2, 2 }, new[] { 1, 1, 4 } }, 0];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 4, 3 } }, 1];
     }
 }

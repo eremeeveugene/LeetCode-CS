@@ -10,24 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximizeSumOfAtMostKDistinctElements;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximizeSumOfAtMostKDistinctElements;
 
-public abstract class MaximizeSumOfAtMostKDistinctElementsTestsBase<T>
-    where T : IMaximizeSumOfAtMostKDistinctElements, new()
+public abstract class MaximizeSumOfAtMostKDistinctElementsTestsBase<T> where T : IMaximizeSumOfAtMostKDistinctElements, new()
 {
     [TestMethod]
-    [DataRow("[84,93,100,77,90]", 3, "[100,93,90]")]
-    [DataRow("[84,93,100,77,93]", 3, "[100,93,84]")]
-    [DataRow("[1,1,1,2,2,2]", 6, "[2,1]")]
-    public void MaxKDistinct_WithNumsArrayAndLimitK_ReturnsKOrFewerDistinctNumbersWithMaxSumInDescendingOrder(
-        string numsJson, int k, string expectedResultJson)
+    [DataRow(new[] { 84, 93, 100, 77, 90 }, 3, new[] { 100, 93, 90 })]
+    [DataRow(new[] { 84, 93, 100, 77, 93 }, 3, new[] { 100, 93, 84 })]
+    [DataRow(new[] { 1, 1, 1, 2, 2, 2 }, 6, new[] { 2, 1 })]
+    public void MaxKDistinct_WithNumsArrayAndLimitK_ReturnsKOrFewerDistinctNumbersWithMaxSumInDescendingOrder(int[] nums, int k, int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

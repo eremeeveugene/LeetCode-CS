@@ -13,8 +13,7 @@ namespace LeetCode.Algorithms.PathWithMaximumProbability;
 
 public abstract class PathWithMaximumProbabilityBase : IPathWithMaximumProbability
 {
-    public abstract double MaxProbability(int n, int[][] edges, double[] successProbability, int startNode,
-        int endNode);
+    public abstract double MaxProbability(int n, int[][] edges, double[] successProbability, int startNode, int endNode);
 
     /// <summary>
     ///     Time Complexity - O(n), where n is the number of edges
@@ -23,8 +22,7 @@ public abstract class PathWithMaximumProbabilityBase : IPathWithMaximumProbabili
     /// <param name="edges"></param>
     /// <param name="successProbability"></param>
     /// <returns></returns>
-    protected static Dictionary<int, List<(int Node, double Probability)>> GetEdgesDictionary(int[][] edges,
-        double[] successProbability)
+    protected static Dictionary<int, List<(int Node, double Probability)>> GetEdgesDictionary(int[][] edges, double[] successProbability)
     {
         var edgesDictionary = new Dictionary<int, List<(int Node, double Probability)>>();
 

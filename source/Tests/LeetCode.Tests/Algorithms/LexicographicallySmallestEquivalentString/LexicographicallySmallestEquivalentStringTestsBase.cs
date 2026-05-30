@@ -13,15 +13,13 @@ using LeetCode.Algorithms.LexicographicallySmallestEquivalentString;
 
 namespace LeetCode.Tests.Algorithms.LexicographicallySmallestEquivalentString;
 
-public abstract class LexicographicallySmallestEquivalentStringTestsBase<T>
-    where T : ILexicographicallySmallestEquivalentString, new()
+public abstract class LexicographicallySmallestEquivalentStringTestsBase<T> where T : ILexicographicallySmallestEquivalentString, new()
 {
     [TestMethod]
     [DataRow("parker", "morris", "parser", "makkek")]
     [DataRow("hello", "world", "hold", "hdld")]
     [DataRow("leetcode", "programs", "sourcecode", "aauaaaaada")]
-    public void SmallestEquivalentString_WithCharacterEquivalencyMappings_ReturnsLexicographicallySmallestString(
-        string s1, string s2, string baseStr, string expectedResult)
+    public void SmallestEquivalentString_WithCharacterEquivalencyMappings_ReturnsLexicographicallySmallestString(string s1, string s2, string baseStr, string expectedResult)
     {
         // Arrange
         var solution = new T();

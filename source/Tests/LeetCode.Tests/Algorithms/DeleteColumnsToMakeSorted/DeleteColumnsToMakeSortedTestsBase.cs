@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DeleteColumnsToMakeSorted;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DeleteColumnsToMakeSorted;
 
 public abstract class DeleteColumnsToMakeSortedTestsBase<T> where T : IDeleteColumnsToMakeSorted, new()
 {
     [TestMethod]
-    [DataRow("[\"a\",\"b\"]", 0)]
-    [DataRow("[\"cba\",\"daf\",\"ghi\"]", 1)]
-    [DataRow("[\"zyx\",\"wvu\",\"tsr\"]", 3)]
-    public void MinDeletionSize_WithStringArrayInput_ReturnsNumberOfColumnsToDelete(string strsJson, int expectedResult)
+    [DataRow(new[] { "a", "b" }, 0)]
+    [DataRow(new[] { "cba", "daf", "ghi" }, 1)]
+    [DataRow(new[] { "zyx", "wvu", "tsr" }, 3)]
+    public void MinDeletionSize_WithStringArrayInput_ReturnsNumberOfColumnsToDelete(string[] strs, int expectedResult)
     {
         // Arrange
-        var strs = JsonHelper.Parse<string[]>(strsJson);
-
         var solution = new T();
 
         // Act

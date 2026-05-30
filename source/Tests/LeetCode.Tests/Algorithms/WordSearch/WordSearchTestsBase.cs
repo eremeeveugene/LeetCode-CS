@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.WordSearch;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.WordSearch;
 
 public abstract class WordSearchTestsBase<T> where T : IWordSearch, new()
 {
     [TestMethod]
-    [DataRow("[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]", "ABCCED", true)]
-    [DataRow("[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]", "SEE", true)]
-    [DataRow("[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]", "ABCB", false)]
-    public void Exist_WithCharacterBoardAndWord_ReturnsTrueIfWordExistsBySequentialAdjacentCells(string jsonBoard,
-        string word, bool expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void Exist_WithCharacterBoardAndWord_ReturnsTrueIfWordExistsBySequentialAdjacentCells(char[][] board, string word, bool expectedResult)
     {
         // Arrange
-        var board = JsonHelper.Parse<char[][]>(jsonBoard);
-
         var solution = new T();
 
         // Act
@@ -33,5 +27,14 @@ public abstract class WordSearchTestsBase<T> where T : IWordSearch, new()
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 'A', 'B', 'C', 'E' }, new[] { 'S', 'F', 'C', 'S' }, new[] { 'A', 'D', 'E', 'E' } }, "ABCCED", true];
+
+        yield return [new[] { new[] { 'A', 'B', 'C', 'E' }, new[] { 'S', 'F', 'C', 'S' }, new[] { 'A', 'D', 'E', 'E' } }, "SEE", true];
+
+        yield return [new[] { new[] { 'A', 'B', 'C', 'E' }, new[] { 'S', 'F', 'C', 'S' }, new[] { 'A', 'D', 'E', 'E' } }, "ABCB", false];
     }
 }

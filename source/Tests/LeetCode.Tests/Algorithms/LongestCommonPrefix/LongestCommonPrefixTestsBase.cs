@@ -10,33 +10,29 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LongestCommonPrefix;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LongestCommonPrefix;
 
 public abstract class LongestCommonPrefixTestsBase<T> where T : ILongestCommonPrefix, new()
 {
     [TestMethod]
-    [DataRow("[\"\"]", "")]
-    [DataRow("[\"dog\",\"racecar\",\"car\"]", "")]
-    [DataRow("[\"flower\",\"flow\",\"flight\"]", "fl")]
-    [DataRow("[\"flower\",\"flower\",\"flower\",\"flower\"]", "flower")]
-    [DataRow("[\"interview\",\"interrupt\",\"integrate\",\"integral\"]", "inte")]
-    [DataRow("[\"interspecies\",\"interstellar\",\"interstate\"]", "inters")]
-    [DataRow("[\"throne\",\"throne\"]", "throne")]
-    [DataRow("[\"throne\",\"throne\",\"thro\"]", "thro")]
-    [DataRow("[\"a\",\"b\"]", "")]
-    [DataRow("[\"a\"]", "a")]
-    [DataRow("[\"abcd\"]", "abcd")]
-    [DataRow("[\"prefix\",\"pretext\",\"preference\",\"pre\"]", "pre")]
-    [DataRow("[\"ab\",\"ab\",\"abc\"]", "ab")]
-    [DataRow("[\"longest\",\"longer\",\"long\",\"longing\"]", "long")]
-    public void LongestCommonPrefix_WithStringArray_ReturnsLongestCommonPrefix(string strsJson,
-        string expectedResult)
+    [DataRow(new[] { "" }, "")]
+    [DataRow(new[] { "dog", "racecar", "car" }, "")]
+    [DataRow(new[] { "flower", "flow", "flight" }, "fl")]
+    [DataRow(new[] { "flower", "flower", "flower", "flower" }, "flower")]
+    [DataRow(new[] { "interview", "interrupt", "integrate", "integral" }, "inte")]
+    [DataRow(new[] { "interspecies", "interstellar", "interstate" }, "inters")]
+    [DataRow(new[] { "throne", "throne" }, "throne")]
+    [DataRow(new[] { "throne", "throne", "thro" }, "thro")]
+    [DataRow(new[] { "a", "b" }, "")]
+    [DataRow(new[] { "a" }, "a")]
+    [DataRow(new[] { "abcd" }, "abcd")]
+    [DataRow(new[] { "prefix", "pretext", "preference", "pre" }, "pre")]
+    [DataRow(new[] { "ab", "ab", "abc" }, "ab")]
+    [DataRow(new[] { "longest", "longer", "long", "longing" }, "long")]
+    public void LongestCommonPrefix_WithStringArray_ReturnsLongestCommonPrefix(string[] strs, string expectedResult)
     {
         // Arrange
-        var strs = JsonHelper.Parse<string[]>(strsJson);
-
         var solution = new T();
 
         // Act

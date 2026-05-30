@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,25 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTraversal;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTraversal;
 
-public abstract class ConstructBinaryTreeFromPreorderAndPostorderTraversalTestsBase<T>
-    where T : IConstructBinaryTreeFromPreorderAndPostorderTraversal, new()
+public abstract class ConstructBinaryTreeFromPreorderAndPostorderTraversalTestsBase<T> where T : IConstructBinaryTreeFromPreorderAndPostorderTraversal, new()
 {
     [TestMethod]
-    [DataRow("[1]", "[1]", "[1]")]
-    [DataRow("[1,2,4,5,3,6,7]", "[4,5,2,6,7,3,1]", "[1,2,3,4,5,6,7]")]
-    public void ConstructFromPrePost_WithPreorderAndPostorder_ReturnsBinaryTree(string preorderJson,
-        string postorderJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void ConstructFromPrePost_WithPreorderAndPostorder_ReturnsBinaryTree(int[] preorder, int[] postorder, int?[] expectedResultArray)
     {
         // Arrange
-        var preorder = JsonHelper.Parse<int[]>(preorderJson);
-        var postorder = JsonHelper.Parse<int[]>(postorderJson);
-        var expectedResultArray = JsonHelper.Parse<int?[]>(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();
@@ -38,5 +31,12 @@ public abstract class ConstructBinaryTreeFromPreorderAndPostorderTraversalTestsB
 
         // Assert
         TreeNodeAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { 1 }, new[] { 1 }, new int?[] { 1 }];
+
+        yield return [new[] { 1, 2, 4, 5, 3, 6, 7 }, new[] { 4, 5, 2, 6, 7, 3, 1 }, new int?[] { 1, 2, 3, 4, 5, 6, 7 }];
     }
 }

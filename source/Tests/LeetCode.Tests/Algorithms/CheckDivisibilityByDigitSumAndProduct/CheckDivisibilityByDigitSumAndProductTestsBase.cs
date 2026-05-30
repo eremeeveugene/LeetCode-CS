@@ -13,8 +13,7 @@ using LeetCode.Algorithms.CheckDivisibilityByDigitSumAndProduct;
 
 namespace LeetCode.Tests.Algorithms.CheckDivisibilityByDigitSumAndProduct;
 
-public abstract class CheckDivisibilityByDigitSumAndProductTestsBase<T>
-    where T : ICheckDivisibilityByDigitSumAndProduct, new()
+public abstract class CheckDivisibilityByDigitSumAndProductTestsBase<T> where T : ICheckDivisibilityByDigitSumAndProduct, new()
 {
     [TestMethod]
     [DataRow(8, false)]

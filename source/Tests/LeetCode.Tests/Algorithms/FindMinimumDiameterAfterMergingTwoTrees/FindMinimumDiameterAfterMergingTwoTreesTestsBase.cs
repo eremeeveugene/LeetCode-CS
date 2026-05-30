@@ -10,23 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindMinimumDiameterAfterMergingTwoTrees;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindMinimumDiameterAfterMergingTwoTrees;
 
-public abstract class FindMinimumDiameterAfterMergingTwoTreesTestsBase<T>
-    where T : IFindMinimumDiameterAfterMergingTwoTrees, new()
+public abstract class FindMinimumDiameterAfterMergingTwoTreesTestsBase<T> where T : IFindMinimumDiameterAfterMergingTwoTrees, new()
 {
     [TestMethod]
-    [DataRow("[[0,1],[0,2],[0,3]]", "[[0,1]]", 3)]
-    [DataRow("[[0,1],[0,2],[0,3],[2,4],[2,5],[3,6],[2,7]]", "[[0,1],[0,2],[0,3],[2,4],[2,5],[3,6],[2,7]]", 5)]
-    public void MinimumDiameterAfterMerge_WithTwoGraphs_CalculatesMinimumDiameter(string edges1Json,
-        string edges2Json, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MinimumDiameterAfterMerge_WithTwoGraphs_CalculatesMinimumDiameter(int[][] edges1, int[][] edges2, int expectedResult)
     {
         // Arrange
-        var edges1 = JsonHelper.Parse<int[][]>(edges1Json);
-        var edges2 = JsonHelper.Parse<int[][]>(edges2Json);
-
         var solution = new T();
 
         // Act
@@ -34,5 +27,12 @@ public abstract class FindMinimumDiameterAfterMergingTwoTreesTestsBase<T>
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 } }, new[] { new[] { 0, 1 } }, 3];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 }, new[] { 2, 4 }, new[] { 2, 5 }, new[] { 3, 6 }, new[] { 2, 7 } }, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 }, new[] { 2, 4 }, new[] { 2, 5 }, new[] { 3, 6 }, new[] { 2, 7 } }, 5];
     }
 }

@@ -18,8 +18,7 @@ public abstract class DesignStackWithIncrementOperationTestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void DesignStackWithIncrementOperation_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        StackWithIncrementScenario scenario)
+    public void DesignStackWithIncrementOperation_WithMixedOperations_ProcessesOperationsAccordingToSpecification(StackWithIncrementScenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -47,120 +46,31 @@ public abstract class DesignStackWithIncrementOperationTestsBase
 
     private static IEnumerable<StackWithIncrementScenario[]> GetScenarios()
     {
-        yield return
-        [
-            new StackWithIncrementScenario(3,
-                [
-                    new PushOperation(1),
-                    new PushOperation(2),
-                    new PopOperation(),
-                    new PushOperation(2),
-                    new PushOperation(3),
-                    new PushOperation(4),
-                    new IncrementOperation(5, 100),
-                    new IncrementOperation(2, 100),
-                    new PopOperation(),
-                    new PopOperation(),
-                    new PopOperation(),
-                    new PopOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new PopOperation.Result(2),
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new PopOperation.Result(103),
-                    new PopOperation.Result(202),
-                    new PopOperation.Result(201),
-                    new PopOperation.Result(-1)
-                ])
-        ];
+        yield return [new StackWithIncrementScenario(3, [new PushOperation(1), new PushOperation(2), new PopOperation(), new PushOperation(2), new PushOperation(3), new PushOperation(4), new IncrementOperation(5, 100), new IncrementOperation(2, 100), new PopOperation(), new PopOperation(), new PopOperation(), new PopOperation()], [VoidOperationResult.Instance, VoidOperationResult.Instance, new PopOperation.Result(2), VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new PopOperation.Result(103), new PopOperation.Result(202), new PopOperation.Result(201), new PopOperation.Result(-1)])];
 
-        yield return
-        [
-            new StackWithIncrementScenario(2,
-                [
-                    new PopOperation()
-                ],
-                [
-                    new PopOperation.Result(-1)
-                ])
-        ];
+        yield return [new StackWithIncrementScenario(2, [new PopOperation()], [new PopOperation.Result(-1)])];
 
-        yield return
-        [
-            new StackWithIncrementScenario(2,
-                [
-                    new PushOperation(1),
-                    new PushOperation(2),
-                    new PushOperation(3),
-                    new PopOperation(),
-                    new PopOperation(),
-                    new PopOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new PopOperation.Result(2),
-                    new PopOperation.Result(1),
-                    new PopOperation.Result(-1)
-                ])
-        ];
+        yield return [new StackWithIncrementScenario(2, [new PushOperation(1), new PushOperation(2), new PushOperation(3), new PopOperation(), new PopOperation(), new PopOperation()], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new PopOperation.Result(2), new PopOperation.Result(1), new PopOperation.Result(-1)])];
 
-        yield return
-        [
-            new StackWithIncrementScenario(3,
-                [
-                    new PushOperation(1),
-                    new PushOperation(2),
-                    new IncrementOperation(10, 5),
-                    new PopOperation(),
-                    new PopOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new PopOperation.Result(7),
-                    new PopOperation.Result(6)
-                ])
-        ];
+        yield return [new StackWithIncrementScenario(3, [new PushOperation(1), new PushOperation(2), new IncrementOperation(10, 5), new PopOperation(), new PopOperation()], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new PopOperation.Result(7), new PopOperation.Result(6)])];
 
-        yield return
-        [
-            new StackWithIncrementScenario(3,
-                [
-                    new PushOperation(5),
-                    new PushOperation(10),
-                    new IncrementOperation(0, 100),
-                    new PopOperation(),
-                    new PopOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new PopOperation.Result(10),
-                    new PopOperation.Result(5)
-                ])
-        ];
+        yield return [new StackWithIncrementScenario(3, [new PushOperation(5), new PushOperation(10), new IncrementOperation(0, 100), new PopOperation(), new PopOperation()], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new PopOperation.Result(10), new PopOperation.Result(5)])];
     }
 
-    public sealed class StackWithIncrementScenario : Scenario<IDesignStackWithIncrementOperation>
+    public sealed class StackWithIncrementScenario : IScenario<IDesignStackWithIncrementOperation>
     {
-        public StackWithIncrementScenario(int maxSize,
-            IOperation<IDesignStackWithIncrementOperation>[] operations,
-            IOperationResult[] operationResults) : base(operations, operationResults)
+        public StackWithIncrementScenario(int maxSize, IOperation<IDesignStackWithIncrementOperation>[] operations, IOperationResult[] operationResults)
         {
             MaxSize = maxSize;
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int MaxSize { get; }
+
+        public IOperation<IDesignStackWithIncrementOperation>[] Operations { get; }
+
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class PushOperation : IOperation<IDesignStackWithIncrementOperation>
@@ -189,7 +99,9 @@ public abstract class DesignStackWithIncrementOperationTestsBase
             return new Result(value);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int _value;
 

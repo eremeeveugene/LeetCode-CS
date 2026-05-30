@@ -14,5 +14,4 @@ using LeetCode.Algorithms.RangeProductQueriesOfPowers;
 namespace LeetCode.Tests.Algorithms.RangeProductQueriesOfPowers;
 
 [TestClass]
-public sealed class RangeProductQueriesOfPowersPrefixSumTests :
-    RangeProductQueriesOfPowersTestsBase<RangeProductQueriesOfPowersPrefixSum>;
+public sealed class RangeProductQueriesOfPowersPrefixSumTests : RangeProductQueriesOfPowersTestsBase<RangeProductQueriesOfPowersPrefixSum>;

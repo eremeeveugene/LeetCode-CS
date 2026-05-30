@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits;
 
 namespace LeetCode.Tests.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits;
 
-public abstract class MinimumSumOfFourDigitNumberAfterSplittingDigitsTestsBase<T>
-    where T : IMinimumSumOfFourDigitNumberAfterSplittingDigits, new()
+public abstract class MinimumSumOfFourDigitNumberAfterSplittingDigitsTestsBase<T> where T : IMinimumSumOfFourDigitNumberAfterSplittingDigits, new()
 {
     [TestMethod]
     [DataRow(2932, 52)]

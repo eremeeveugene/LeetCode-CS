@@ -10,20 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ValidTriangleNumber;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ValidTriangleNumber;
 
 public abstract class ValidTriangleNumberTestsBase<T> where T : IValidTriangleNumber, new()
 {
     [TestMethod]
-    [DataRow("[2,2,3,4]", 3)]
-    [DataRow("[4,2,3,4]", 4)]
-    public void TriangleNumber_WithSideLengths_ReturnsCountOfValidTriangles(string numsJson, int expectedResult)
+    [DataRow(new[] { 2, 2, 3, 4 }, 3)]
+    [DataRow(new[] { 4, 2, 3, 4 }, 4)]
+    public void TriangleNumber_WithSideLengths_ReturnsCountOfValidTriangles(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

@@ -19,8 +19,7 @@ public abstract class BinaryNumberWithAlternatingBitsTestsBase<T> where T : IBin
     [DataRow(5, true)]
     [DataRow(7, false)]
     [DataRow(11, false)]
-    public void HasAlternatingBits_WithGivenPositiveInteger_ReturnsTrueIfAdjacentBitsAlternate(int n,
-        bool expectedResult)
+    public void HasAlternatingBits_WithGivenPositiveInteger_ReturnsTrueIfAdjacentBitsAlternate(int n, bool expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -10,24 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LongestUnequalAdjacentGroupsSubsequence1;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LongestUnequalAdjacentGroupsSubsequence1;
 
-public abstract class LongestUnequalAdjacentGroupsSubsequence1TestsBase<T>
-    where T : ILongestUnequalAdjacentGroupsSubsequence1, new()
+public abstract class LongestUnequalAdjacentGroupsSubsequence1TestsBase<T> where T : ILongestUnequalAdjacentGroupsSubsequence1, new()
 {
     [TestMethod]
-    [DataRow("[\"e\",\"a\",\"b\"]", "[0,0,1]", "[\"e\",\"b\"]")]
-    [DataRow("[\"a\",\"b\",\"c\",\"d\"]", "[1,0,1,1]", "[\"a\",\"b\",\"c\"]")]
-    public void GetLongestSubsequence_WithWordsAndGroupLabels_ReturnsLongestSubsequenceByGroupOrder(string wordsJson,
-        string groupsJson, string expectedResultJson)
+    [DataRow(new[] { "e", "a", "b" }, new[] { 0, 0, 1 }, new[] { "e", "b" })]
+    [DataRow(new[] { "a", "b", "c", "d" }, new[] { 1, 0, 1, 1 }, new[] { "a", "b", "c" })]
+    public void GetLongestSubsequence_WithWordsAndGroupLabels_ReturnsLongestSubsequenceByGroupOrder(string[] words, int[] groups, string[] expectedResult)
     {
         // Arrange
-        var words = JsonHelper.Parse<string[]>(wordsJson);
-        var groups = JsonHelper.Parse<int[]>(groupsJson);
-        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

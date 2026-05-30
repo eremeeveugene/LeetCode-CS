@@ -10,20 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SwimInRisingWater;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SwimInRisingWater;
 
 public abstract class SwimInRisingWaterTestsBase<T> where T : ISwimInRisingWater, new()
 {
     [TestMethod]
-    [DataRow("[[0,2],[1,3]]", 3)]
-    [DataRow("[[0,1,2,3,4],[24,23,22,21,5],[12,13,14,15,16],[11,17,18,19,20],[10,9,8,7,6]]", 16)]
-    public void SwimInWater_WithElevatedGrid_ReturnsMinimumTimeToReachBottomRight(string gridArray, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void SwimInWater_WithElevatedGrid_ReturnsMinimumTimeToReachBottomRight(int[][] grid, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper.Parse<int[][]>(gridArray);
-
         var solution = new T();
 
         // Act
@@ -31,5 +27,12 @@ public abstract class SwimInRisingWaterTestsBase<T> where T : ISwimInRisingWater
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 0, 2 }, new[] { 1, 3 } }, 3];
+
+        yield return [new[] { new[] { 0, 1, 2, 3, 4 }, new[] { 24, 23, 22, 21, 5 }, new[] { 12, 13, 14, 15, 16 }, new[] { 11, 17, 18, 19, 20 }, new[] { 10, 9, 8, 7, 6 } }, 16];
     }
 }

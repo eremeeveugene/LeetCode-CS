@@ -18,8 +18,7 @@ public abstract class NumberOfPeopleAwareOfSecretTestsBase<T> where T : INumberO
     [TestMethod]
     [DataRow(6, 2, 4, 5)]
     [DataRow(4, 1, 3, 6)]
-    public void PeopleAwareOfSecret_WithDelayAndForgetPeriods_ReturnsTotalPeopleKnowingSecretAtEndOfDay(int n,
-        int delay, int forget, int expectedResult)
+    public void PeopleAwareOfSecret_WithDelayAndForgetPeriods_ReturnsTotalPeopleKnowingSecretAtEndOfDay(int n, int delay, int forget, int expectedResult)
     {
         // Arrange
         var solution = new T();

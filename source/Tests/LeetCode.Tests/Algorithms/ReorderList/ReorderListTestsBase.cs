@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ReorderList;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,14 +18,12 @@ namespace LeetCode.Tests.Algorithms.ReorderList;
 public abstract class ReorderListTestsBase<T> where T : IReorderList, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,4]", "[1,4,2,3]")]
-    [DataRow("[1,2,3,4,5]", "[1,5,2,4,3]")]
-    public void ReorderList_GivenHeadArray_ResultsInExpectedOrder(string headJson, string expectedResultJson)
+    [DataRow(new[] { 1, 2, 3, 4 }, new[] { 1, 4, 2, 3 })]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, new[] { 1, 5, 2, 4, 3 })]
+    public void ReorderList_GivenHeadArray_ResultsInExpectedOrder(int[] headArray, int[] expectedResultArray)
     {
         // Arrange
-        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper.Parse<int[]>(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

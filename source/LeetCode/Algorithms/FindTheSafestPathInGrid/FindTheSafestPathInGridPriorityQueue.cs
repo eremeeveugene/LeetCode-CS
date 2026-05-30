@@ -109,8 +109,7 @@ public sealed class FindTheSafestPathInGridPriorityQueue : IFindTheSafestPathInG
 
                 visited[nr][nc] = true;
 
-                priorityQueue.Enqueue((Math.Min(minDist, distance[nr][nc]), nr, nc),
-                    Math.Min(minDist, distance[nr][nc]));
+                priorityQueue.Enqueue((Math.Min(minDist, distance[nr][nc]), nr, nc), Math.Min(minDist, distance[nr][nc]));
             }
         }
 

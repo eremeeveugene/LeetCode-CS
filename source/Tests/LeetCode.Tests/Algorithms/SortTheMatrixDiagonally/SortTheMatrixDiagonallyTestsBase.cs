@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SortTheMatrixDiagonally;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SortTheMatrixDiagonally;
 
 public abstract class SortTheMatrixDiagonallyTestsBase<T> where T : ISortTheMatrixDiagonally, new()
 {
     [TestMethod]
-    [DataRow("[[3,3,1,1],[2,2,1,2],[1,1,1,2]]", "[[1,1,1,1],[1,2,2,2],[1,2,3,3]]")]
-    [DataRow("[[11,25,66,1,69,7],[23,55,17,45,15,52],[75,31,36,44,58,8],[22,27,33,25,68,4],[84,28,14,11,5,50]]",
-        "[[5,17,4,1,52,7],[11,11,25,45,8,69],[14,23,25,44,58,15],[22,27,31,36,50,66],[84,28,75,33,55,68]]")]
-    public void DiagonalSort_WithUnsortedMatrixDiagonals_ReturnsMatrixWithEachDiagonalSortedAscending(string matJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void DiagonalSort_WithUnsortedMatrixDiagonals_ReturnsMatrixWithEachDiagonalSortedAscending(int[][] mat, int[][] expectedResult)
     {
         // Arrange
-        var mat = JsonHelper.Parse<int[][]>(matJson);
-        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +27,12 @@ public abstract class SortTheMatrixDiagonallyTestsBase<T> where T : ISortTheMatr
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 3, 3, 1, 1 }, new[] { 2, 2, 1, 2 }, new[] { 1, 1, 1, 2 } }, new[] { new[] { 1, 1, 1, 1 }, new[] { 1, 2, 2, 2 }, new[] { 1, 2, 3, 3 } }];
+
+        yield return [new[] { new[] { 11, 25, 66, 1, 69, 7 }, new[] { 23, 55, 17, 45, 15, 52 }, new[] { 75, 31, 36, 44, 58, 8 }, new[] { 22, 27, 33, 25, 68, 4 }, new[] { 84, 28, 14, 11, 5, 50 } }, new[] { new[] { 5, 17, 4, 1, 52, 7 }, new[] { 11, 11, 25, 45, 8, 69 }, new[] { 14, 23, 25, 44, 58, 15 }, new[] { 22, 27, 31, 36, 50, 66 }, new[] { 84, 28, 75, 33, 55, 68 } }];
     }
 }

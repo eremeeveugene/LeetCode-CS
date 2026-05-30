@@ -38,8 +38,7 @@ public sealed class CountGoodTripletsBruteForce : ICountGoodTriplets
 
                 for (var k = j + 1; k < arr.Length; k++)
                 {
-                    if (Math.Abs(arr[j] - arr[k]) <= b &&
-                        Math.Abs(arr[i] - arr[k]) <= c)
+                    if (Math.Abs(arr[j] - arr[k]) <= b && Math.Abs(arr[i] - arr[k]) <= c)
                     {
                         result++;
                     }

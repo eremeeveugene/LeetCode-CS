@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CousinsInBinaryTree2;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,15 +18,11 @@ namespace LeetCode.Tests.Algorithms.CousinsInBinaryTree2;
 public abstract class CousinsInBinaryTree2TestsBase<T> where T : ICousinsInBinaryTree2, new()
 {
     [TestMethod]
-    [DataRow("[5,4,9,1,10,null,7]", "[0,0,0,7,7,null,11]")]
-    [DataRow("[3,1,2]", "[0,0,0]")]
-    public void ReplaceValueInTree_GivenRootNode_ReturnsTreeWithReplacedValues(string rootJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void ReplaceValueInTree_GivenRootNode_ReturnsTreeWithReplacedValues(int?[] rootArray, int?[] expectedResultArray)
     {
         // Arrange
-        var expectedResultArray = JsonHelper.Parse<int?[]>(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();
@@ -37,5 +32,12 @@ public abstract class CousinsInBinaryTree2TestsBase<T> where T : ICousinsInBinar
 
         // Assert
         TreeNodeAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 5, 4, 9, 1, 10, null, 7 }, new int?[] { 0, 0, 0, 7, 7, null, 11 }];
+
+        yield return [new int?[] { 3, 1, 2 }, new int?[] { 0, 0, 0 }];
     }
 }

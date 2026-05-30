@@ -89,13 +89,16 @@ public sealed class LargestTimeForGivenDigitsBruteForce : ILargestTimeForGivenDi
         var m1 = minutes / 10;
         var m2 = minutes % 10;
 
-        return string.Create(5, (h1, h2, m1, m2), static (dest, s) =>
-        {
-            dest[0] = (char)('0' + s.h1);
-            dest[1] = (char)('0' + s.h2);
-            dest[2] = ':';
-            dest[3] = (char)('0' + s.m1);
-            dest[4] = (char)('0' + s.m2);
-        });
+        return string.Create(
+            5,
+            (h1, h2, m1, m2),
+            static (dest, s) =>
+            {
+                dest[0] = (char)('0' + s.h1);
+                dest[1] = (char)('0' + s.h2);
+                dest[2] = ':';
+                dest[3] = (char)('0' + s.m1);
+                dest[4] = (char)('0' + s.m2);
+            });
     }
 }

@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements;
 
 /// <inheritdoc />
-public sealed class AbsoluteDifferenceBetweenMaximumAndMinimumKElementsSorting :
-    IAbsoluteDifferenceBetweenMaximumAndMinimumKElements
+public sealed class AbsoluteDifferenceBetweenMaximumAndMinimumKElementsSorting : IAbsoluteDifferenceBetweenMaximumAndMinimumKElements
 {
     /// <summary>
     ///     Time complexity - O(n log n)

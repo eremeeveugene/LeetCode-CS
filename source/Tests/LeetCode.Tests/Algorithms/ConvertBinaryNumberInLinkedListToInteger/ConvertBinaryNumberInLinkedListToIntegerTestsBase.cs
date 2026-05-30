@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ConvertBinaryNumberInLinkedListToInteger;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.ConvertBinaryNumberInLinkedListToInteger;
 
-public abstract class ConvertBinaryNumberInLinkedListToIntegerTestsBase<T>
-    where T : IConvertBinaryNumberInLinkedListToInteger, new()
+public abstract class ConvertBinaryNumberInLinkedListToIntegerTestsBase<T> where T : IConvertBinaryNumberInLinkedListToInteger, new()
 {
     [TestMethod]
-    [DataRow("[0]", 0)]
-    [DataRow("[1,0,1]", 5)]
-    public void GetDecimalValue_WithBinaryLinkedList_ReturnsDecimalValue(string headJson, int expectedResult)
+    [DataRow(new[] { 0 }, 0)]
+    [DataRow(new[] { 1, 0, 1 }, 5)]
+    public void GetDecimalValue_WithBinaryLinkedList_ReturnsDecimalValue(int[] headArray, int expectedResult)
     {
         // Arrange
-        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNodeOrThrow(headArray);
 
         var solution = new T();

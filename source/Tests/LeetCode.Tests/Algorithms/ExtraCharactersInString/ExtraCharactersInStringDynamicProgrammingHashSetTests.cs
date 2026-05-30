@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ExtraCharactersInString;
 namespace LeetCode.Tests.Algorithms.ExtraCharactersInString;
 
 [TestClass]
-public sealed class ExtraCharactersInStringDynamicProgrammingHashSetTests : ExtraCharactersInStringTestsBase<
-    ExtraCharactersInStringDynamicProgrammingHashSet>;
+public sealed class ExtraCharactersInStringDynamicProgrammingHashSetTests : ExtraCharactersInStringTestsBase<ExtraCharactersInStringDynamicProgrammingHashSet>;

@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumNumberOfOperationsToMakeElementsInArrayDistinct;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfOperationsToMakeElementsInArrayDistinct;
 
-public abstract class MinimumNumberOfOperationsToMakeElementsInArrayDistinctTestsBase<T>
-    where T : IMinimumNumberOfOperationsToMakeElementsInArrayDistinct, new()
+public abstract class MinimumNumberOfOperationsToMakeElementsInArrayDistinctTestsBase<T> where T : IMinimumNumberOfOperationsToMakeElementsInArrayDistinct, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,4,2,3,3,5,7]", 2)]
-    [DataRow("[4,5,6,4,4]", 2)]
-    [DataRow("[6,7,8,9]", 0)]
-    public void MinimumOperations_GivenArrayOfNumbers_ReturnsMinimumOperationsCount(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 1, 2, 3, 4, 2, 3, 3, 5, 7 }, 2)]
+    [DataRow(new[] { 4, 5, 6, 4, 4 }, 2)]
+    [DataRow(new[] { 6, 7, 8, 9 }, 0)]
+    public void MinimumOperations_GivenArrayOfNumbers_ReturnsMinimumOperationsCount(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

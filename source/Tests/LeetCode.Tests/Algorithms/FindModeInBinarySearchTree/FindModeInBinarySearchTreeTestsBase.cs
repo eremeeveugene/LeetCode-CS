@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindModeInBinarySearchTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.FindModeInBinarySearchTree;
@@ -18,16 +17,11 @@ namespace LeetCode.Tests.Algorithms.FindModeInBinarySearchTree;
 public abstract class FindModeInBinarySearchTreeTestsBase<T> where T : IFindModeInBinarySearchTree, new()
 {
     [TestMethod]
-    [DataRow("[]", "[]")]
-    [DataRow("[0]", "[0]")]
-    [DataRow("[1,null,2,2]", "[2]")]
-    public void FindMode_WithBinaryTree_ReturnsModeValues(string rootJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void FindMode_WithBinaryTree_ReturnsModeValues(int?[] rootArray, int[] expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
 
         var solution = new T();
 
@@ -36,5 +30,14 @@ public abstract class FindModeInBinarySearchTreeTestsBase<T> where T : IFindMode
 
         // Assert
         CollectionAssert.AreEquivalent(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), Array.Empty<int>()];
+
+        yield return [new int?[] { 0 }, new[] { 0 }];
+
+        yield return [new int?[] { 1, null, 2, 2 }, new[] { 2 }];
     }
 }

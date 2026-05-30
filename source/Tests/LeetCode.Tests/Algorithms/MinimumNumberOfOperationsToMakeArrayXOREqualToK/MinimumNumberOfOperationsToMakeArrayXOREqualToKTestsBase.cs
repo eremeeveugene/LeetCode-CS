@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK;
 
-public abstract class MinimumNumberOfOperationsToMakeArrayXOREqualToKTestsBase<T>
-    where T : IMinimumNumberOfOperationsToMakeArrayXOREqualToK, new()
+public abstract class MinimumNumberOfOperationsToMakeArrayXOREqualToKTestsBase<T> where T : IMinimumNumberOfOperationsToMakeArrayXOREqualToK, new()
 {
     [TestMethod]
-    [DataRow("[2,1,3,4]", 1, 2)]
-    [DataRow("[2,0,2,0]", 0, 0)]
-    public void MinOperations_WithNumsArrayAndK_ReturnsMinOperationsCount(string numsJson, int k,
-        int expectedResult)
+    [DataRow(new[] { 2, 1, 3, 4 }, 1, 2)]
+    [DataRow(new[] { 2, 0, 2, 0 }, 0, 0)]
+    public void MinOperations_WithNumsArrayAndK_ReturnsMinOperationsCount(int[] nums, int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

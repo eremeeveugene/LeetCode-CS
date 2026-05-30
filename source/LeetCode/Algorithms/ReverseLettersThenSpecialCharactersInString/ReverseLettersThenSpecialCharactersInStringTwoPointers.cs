@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.ReverseLettersThenSpecialCharactersInString;
 
 /// <inheritdoc />
-public sealed class ReverseLettersThenSpecialCharactersInStringTwoPointers :
-    IReverseLettersThenSpecialCharactersInString
+public sealed class ReverseLettersThenSpecialCharactersInStringTwoPointers : IReverseLettersThenSpecialCharactersInString
 {
     /// <summary>
     ///     Time complexity - O(n)

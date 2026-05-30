@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FirstMatchingCharacterFromBothEnds;
 namespace LeetCode.Tests.Algorithms.FirstMatchingCharacterFromBothEnds;
 
 [TestClass]
-public sealed class FirstMatchingCharacterFromBothEndsIterativeTests :
-    FirstMatchingCharacterFromBothEndsTestsBase<FirstMatchingCharacterFromBothEndsIterative>;
+public sealed class FirstMatchingCharacterFromBothEndsIterativeTests : FirstMatchingCharacterFromBothEndsTestsBase<FirstMatchingCharacterFromBothEndsIterative>;

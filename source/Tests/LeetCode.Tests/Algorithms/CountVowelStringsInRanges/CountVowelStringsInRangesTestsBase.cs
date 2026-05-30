@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountVowelStringsInRanges;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountVowelStringsInRanges;
 
 public abstract class CountVowelStringsInRangesTestsBase<T> where T : ICountVowelStringsInRanges, new()
 {
     [TestMethod]
-    [DataRow("[\"aba\",\"bcb\",\"ece\",\"aa\",\"e\"]", "[[0,2],[1,4],[1,1]]", "[2,3,0]")]
-    [DataRow("[\"a\",\"e\",\"i\"]", "[[0,2],[0,1],[2,2]]", "[3,2,1]")]
-    public void VowelStrings_WithWordsAndQueries_ModifiesWordsAccordingToQueries(string wordsJson,
-        string queriesJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void VowelStrings_WithWordsAndQueries_ModifiesWordsAccordingToQueries(string[] words, int[][] queries, int[] expectedResult)
     {
         // Arrange
-        var words = JsonHelper.Parse<string[]>(wordsJson);
-        var queries = JsonHelper.Parse<int[][]>(queriesJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +27,12 @@ public abstract class CountVowelStringsInRangesTestsBase<T> where T : ICountVowe
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { "aba", "bcb", "ece", "aa", "e" }, new[] { new[] { 0, 2 }, new[] { 1, 4 }, new[] { 1, 1 } }, new[] { 2, 3, 0 }];
+
+        yield return [new[] { "a", "e", "i" }, new[] { new[] { 0, 2 }, new[] { 0, 1 }, new[] { 2, 2 } }, new[] { 3, 2, 1 }];
     }
 }

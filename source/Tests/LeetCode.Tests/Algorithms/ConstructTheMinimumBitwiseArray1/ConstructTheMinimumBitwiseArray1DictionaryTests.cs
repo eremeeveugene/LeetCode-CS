@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ConstructTheMinimumBitwiseArray1;
 namespace LeetCode.Tests.Algorithms.ConstructTheMinimumBitwiseArray1;
 
 [TestClass]
-public sealed class ConstructTheMinimumBitwiseArray1DictionaryTests :
-    ConstructTheMinimumBitwiseArray1TestsBase<ConstructTheMinimumBitwiseArray1Dictionary>;
+public sealed class ConstructTheMinimumBitwiseArray1DictionaryTests : ConstructTheMinimumBitwiseArray1TestsBase<ConstructTheMinimumBitwiseArray1Dictionary>;

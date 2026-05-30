@@ -10,23 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RestoreFinishingOrder;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.RestoreFinishingOrder;
 
 public abstract class RestoreFinishingOrderTestsBase<T> where T : IRestoreFinishingOrder, new()
 {
     [TestMethod]
-    [DataRow("[3,1,2,5,4]", "[1,3,4]", "[3,1,4]")]
-    [DataRow("[1,4,5,3,2]", "[2,5]", "[5,2]")]
-    public void RecoverOrder_WithFriendIdsInOrderArray_ReturnsFriendsInFinishingOrder(string ordersJson,
-        string friendsJson, string expectedResultJson)
+    [DataRow(new[] { 3, 1, 2, 5, 4 }, new[] { 1, 3, 4 }, new[] { 3, 1, 4 })]
+    [DataRow(new[] { 1, 4, 5, 3, 2 }, new[] { 2, 5 }, new[] { 5, 2 })]
+    public void RecoverOrder_WithFriendIdsInOrderArray_ReturnsFriendsInFinishingOrder(int[] orders, int[] friends, int[] expectedResult)
     {
         // Arrange
-        var orders = JsonHelper.Parse<int[]>(ordersJson);
-        var friends = JsonHelper.Parse<int[]>(friendsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

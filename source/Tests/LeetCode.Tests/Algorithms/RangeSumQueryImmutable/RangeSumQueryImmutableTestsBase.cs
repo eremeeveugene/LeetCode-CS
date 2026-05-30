@@ -18,8 +18,7 @@ public abstract class RangeSumQueryImmutableTestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void RangeSumQueryImmutable_WithGivenArrayAndRangeQueries_ProcessesOperationsAccordingToSpecification(
-        RangeSumQueryScenario scenario)
+    public void RangeSumQueryImmutable_WithGivenArrayAndRangeQueries_ProcessesOperationsAccordingToSpecification(RangeSumQueryScenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -47,87 +46,31 @@ public abstract class RangeSumQueryImmutableTestsBase
 
     private static IEnumerable<RangeSumQueryScenario[]> GetScenarios()
     {
-        yield return
-        [
-            new RangeSumQueryScenario([-2, 0, 3, -5, 2, -1],
-                [
-                    new SumRangeOperation(0, 2),
-                    new SumRangeOperation(2, 5),
-                    new SumRangeOperation(0, 5)
-                ],
-                [
-                    new SumRangeOperation.Result(1),
-                    new SumRangeOperation.Result(-1),
-                    new SumRangeOperation.Result(-3)
-                ])
-        ];
+        yield return [new RangeSumQueryScenario([-2, 0, 3, -5, 2, -1], [new SumRangeOperation(0, 2), new SumRangeOperation(2, 5), new SumRangeOperation(0, 5)], [new SumRangeOperation.Result(1), new SumRangeOperation.Result(-1), new SumRangeOperation.Result(-3)])];
 
-        yield return
-        [
-            new RangeSumQueryScenario([5],
-                [
-                    new SumRangeOperation(0, 0)
-                ],
-                [
-                    new SumRangeOperation.Result(5)
-                ])
-        ];
+        yield return [new RangeSumQueryScenario([5], [new SumRangeOperation(0, 0)], [new SumRangeOperation.Result(5)])];
 
-        yield return
-        [
-            new RangeSumQueryScenario([1, 2, 3, 4, 5],
-                [
-                    new SumRangeOperation(0, 4),
-                    new SumRangeOperation(1, 3),
-                    new SumRangeOperation(2, 2)
-                ],
-                [
-                    new SumRangeOperation.Result(15),
-                    new SumRangeOperation.Result(9),
-                    new SumRangeOperation.Result(3)
-                ])
-        ];
+        yield return [new RangeSumQueryScenario([1, 2, 3, 4, 5], [new SumRangeOperation(0, 4), new SumRangeOperation(1, 3), new SumRangeOperation(2, 2)], [new SumRangeOperation.Result(15), new SumRangeOperation.Result(9), new SumRangeOperation.Result(3)])];
 
-        yield return
-        [
-            new RangeSumQueryScenario([-3, -2, -1],
-                [
-                    new SumRangeOperation(0, 2),
-                    new SumRangeOperation(0, 1),
-                    new SumRangeOperation(1, 2)
-                ],
-                [
-                    new SumRangeOperation.Result(-6),
-                    new SumRangeOperation.Result(-5),
-                    new SumRangeOperation.Result(-3)
-                ])
-        ];
+        yield return [new RangeSumQueryScenario([-3, -2, -1], [new SumRangeOperation(0, 2), new SumRangeOperation(0, 1), new SumRangeOperation(1, 2)], [new SumRangeOperation.Result(-6), new SumRangeOperation.Result(-5), new SumRangeOperation.Result(-3)])];
 
-        yield return
-        [
-            new RangeSumQueryScenario([10, 20, 30],
-                [
-                    new SumRangeOperation(0, 0),
-                    new SumRangeOperation(1, 1),
-                    new SumRangeOperation(2, 2)
-                ],
-                [
-                    new SumRangeOperation.Result(10),
-                    new SumRangeOperation.Result(20),
-                    new SumRangeOperation.Result(30)
-                ])
-        ];
+        yield return [new RangeSumQueryScenario([10, 20, 30], [new SumRangeOperation(0, 0), new SumRangeOperation(1, 1), new SumRangeOperation(2, 2)], [new SumRangeOperation.Result(10), new SumRangeOperation.Result(20), new SumRangeOperation.Result(30)])];
     }
 
-    public sealed class RangeSumQueryScenario : Scenario<IRangeSumQueryImmutable>
+    public sealed class RangeSumQueryScenario : IScenario<IRangeSumQueryImmutable>
     {
-        public RangeSumQueryScenario(int[] nums, IOperation<IRangeSumQueryImmutable>[] operations,
-            IOperationResult[] operationResults) : base(operations, operationResults)
+        public RangeSumQueryScenario(int[] nums, IOperation<IRangeSumQueryImmutable>[] operations, IOperationResult[] operationResults)
         {
             Nums = nums;
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int[] Nums { get; }
+
+        public IOperation<IRangeSumQueryImmutable>[] Operations { get; }
+
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class SumRangeOperation : IOperation<IRangeSumQueryImmutable>
@@ -148,7 +91,9 @@ public abstract class RangeSumQueryImmutableTestsBase
             return new Result(sum);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int _sum;
 

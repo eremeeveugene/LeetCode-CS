@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RangeAddition2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.RangeAddition2;
 
 public abstract class RangeAddition2TestsBase<T> where T : IRangeAddition2, new()
 {
     [TestMethod]
-    [DataRow(3, 3, "[[2,2],[3,3]]", 4)]
-    [DataRow(3, 3, "[[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3]]", 4)]
-    [DataRow(3, 3, "[]", 9)]
-    public void MaxCount_WithMatrixDimensionsAndOperations_ReturnsCountOfMaximumIntegers(int m, int n, string opsJson,
-        int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MaxCount_WithMatrixDimensionsAndOperations_ReturnsCountOfMaximumIntegers(int m, int n, int[][] ops, int expectedResult)
     {
         // Arrange
-        var ops = JsonHelper.Parse<int[][]>(opsJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +27,14 @@ public abstract class RangeAddition2TestsBase<T> where T : IRangeAddition2, new(
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [3, 3, new[] { new[] { 2, 2 }, new[] { 3, 3 } }, 4];
+
+        yield return [3, 3, new[] { new[] { 2, 2 }, new[] { 3, 3 }, new[] { 3, 3 }, new[] { 3, 3 }, new[] { 2, 2 }, new[] { 3, 3 }, new[] { 3, 3 }, new[] { 3, 3 }, new[] { 2, 2 }, new[] { 3, 3 }, new[] { 3, 3 }, new[] { 3, 3 } }, 4];
+
+        yield return [3, 3, Array.Empty<int[]>(), 9];
     }
 }

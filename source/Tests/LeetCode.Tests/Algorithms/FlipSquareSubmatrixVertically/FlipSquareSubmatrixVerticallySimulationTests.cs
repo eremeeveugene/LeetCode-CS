@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FlipSquareSubmatrixVertically;
 namespace LeetCode.Tests.Algorithms.FlipSquareSubmatrixVertically;
 
 [TestClass]
-public sealed class FlipSquareSubmatrixVerticallySimulationTests :
-    FlipSquareSubmatrixVerticallyTestsBase<FlipSquareSubmatrixVerticallySimulation>;
+public sealed class FlipSquareSubmatrixVerticallySimulationTests : FlipSquareSubmatrixVerticallyTestsBase<FlipSquareSubmatrixVerticallySimulation>;

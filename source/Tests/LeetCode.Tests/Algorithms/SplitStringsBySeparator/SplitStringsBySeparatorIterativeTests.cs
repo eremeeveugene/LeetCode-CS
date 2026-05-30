@@ -14,5 +14,4 @@ using LeetCode.Algorithms.SplitStringsBySeparator;
 namespace LeetCode.Tests.Algorithms.SplitStringsBySeparator;
 
 [TestClass]
-public sealed class SplitStringsBySeparatorIterativeTests :
-    SplitStringsBySeparatorTestsBase<SplitStringsBySeparatorIterative>;
+public sealed class SplitStringsBySeparatorIterativeTests : SplitStringsBySeparatorTestsBase<SplitStringsBySeparatorIterative>;

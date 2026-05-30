@@ -14,5 +14,4 @@ using LeetCode.Algorithms.PointsThatIntersectWithCars;
 namespace LeetCode.Tests.Algorithms.PointsThatIntersectWithCars;
 
 [TestClass]
-public sealed class PointsThatIntersectWithCarsLookupTests :
-    PointsThatIntersectWithCarsTestsBase<PointsThatIntersectWithCarsLookup>;
+public sealed class PointsThatIntersectWithCarsLookupTests : PointsThatIntersectWithCarsTestsBase<PointsThatIntersectWithCarsLookup>;

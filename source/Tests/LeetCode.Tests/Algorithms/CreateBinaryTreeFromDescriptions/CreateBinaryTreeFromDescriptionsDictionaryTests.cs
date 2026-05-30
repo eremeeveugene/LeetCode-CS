@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CreateBinaryTreeFromDescriptions;
 namespace LeetCode.Tests.Algorithms.CreateBinaryTreeFromDescriptions;
 
 [TestClass]
-public sealed class CreateBinaryTreeFromDescriptionsDictionaryTests : CreateBinaryTreeFromDescriptionsTestsBase<
-    CreateBinaryTreeFromDescriptionsDictionary>;
+public sealed class CreateBinaryTreeFromDescriptionsDictionaryTests : CreateBinaryTreeFromDescriptionsTestsBase<CreateBinaryTreeFromDescriptionsDictionary>;

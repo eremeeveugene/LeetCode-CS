@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumOddBinaryNumber;
 namespace LeetCode.Tests.Algorithms.MaximumOddBinaryNumber;
 
 [TestClass]
-public class MaximumOddBinaryNumberStringBuilderTests :
-    MaximumOddBinaryNumberTestsBase<MaximumOddBinaryNumberStringBuilder>;
+public class MaximumOddBinaryNumberStringBuilderTests : MaximumOddBinaryNumberTestsBase<MaximumOddBinaryNumberStringBuilder>;

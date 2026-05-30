@@ -10,22 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumTimeToVisitCellInGrid;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumTimeToVisitCellInGrid;
 
 public abstract class MinimumTimeToVisitCellInGridTestsBase<T> where T : IMinimumTimeToVisitCellInGrid, new()
 {
     [TestMethod]
-    [DataRow("[[0,1],[1,2]]", 2)]
-    [DataRow("[[0,1,3,2],[5,1,2,5],[4,3,8,6]]", 7)]
-    [DataRow("[[0,2,4],[3,2,1],[1,0,4]]", -1)]
-    public void MinimumTime_GridWithTraversalConstraints_ReturnsTimeToReachBottomRightOrNegativeOne(string gridJson,
-        int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MinimumTime_GridWithTraversalConstraints_ReturnsTimeToReachBottomRightOrNegativeOne(int[][] grid, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper.Parse<int[][]>(gridJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +27,14 @@ public abstract class MinimumTimeToVisitCellInGridTestsBase<T> where T : IMinimu
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 0, 1 }, new[] { 1, 2 } }, 2];
+
+        yield return [new[] { new[] { 0, 1, 3, 2 }, new[] { 5, 1, 2, 5 }, new[] { 4, 3, 8, 6 } }, 7];
+
+        yield return [new[] { new[] { 0, 2, 4 }, new[] { 3, 2, 1 }, new[] { 1, 0, 4 } }, -1];
     }
 }

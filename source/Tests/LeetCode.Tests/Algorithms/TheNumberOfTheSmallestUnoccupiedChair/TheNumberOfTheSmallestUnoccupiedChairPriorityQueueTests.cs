@@ -14,5 +14,4 @@ using LeetCode.Algorithms.TheNumberOfTheSmallestUnoccupiedChair;
 namespace LeetCode.Tests.Algorithms.TheNumberOfTheSmallestUnoccupiedChair;
 
 [TestClass]
-public sealed class TheNumberOfTheSmallestUnoccupiedChairPriorityQueueTests :
-    TheNumberOfTheSmallestUnoccupiedChairTestsBase<TheNumberOfTheSmallestUnoccupiedChairPriorityQueue>;
+public sealed class TheNumberOfTheSmallestUnoccupiedChairPriorityQueueTests : TheNumberOfTheSmallestUnoccupiedChairTestsBase<TheNumberOfTheSmallestUnoccupiedChairPriorityQueue>;

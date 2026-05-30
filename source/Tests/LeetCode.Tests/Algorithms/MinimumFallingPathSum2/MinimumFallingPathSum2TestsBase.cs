@@ -10,27 +10,29 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumFallingPathSum2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumFallingPathSum2;
 
 public abstract class MinimumFallingPathSum2TestsBase<T> where T : IMinimumFallingPathSum2, new()
 {
     [TestMethod]
-    [DataRow("[[1,2,3],[4,5,6],[7,8,9]]", 13)]
-    [DataRow("[[7]]", 7)]
-    public void MinFallingPathSum_WithGridJson_ReturnsMinimumFallingPathSum(string gridJson,
-        int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MinFallingPathSum_WithGridJson_ReturnsMinimumFallingPathSum(int[][] grid, int expectedResult)
     {
         // Arrange
         var solution = new T();
-
-        var grid = JsonHelper.Parse<int[][]>(gridJson);
 
         // Act
         var actualResult = solution.MinFallingPathSum(grid);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { 4, 5, 6 }, new[] { 7, 8, 9 } }, 13];
+
+        yield return [new[] { new[] { 7 } }, 7];
     }
 }

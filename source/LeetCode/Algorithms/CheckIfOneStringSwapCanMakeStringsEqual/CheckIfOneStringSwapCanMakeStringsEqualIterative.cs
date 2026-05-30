@@ -43,8 +43,6 @@ public sealed class CheckIfOneStringSwapCanMakeStringsEqualIterative : ICheckIfO
             }
         }
 
-        return differences.Count == 2 &&
-               s1[differences[0]] == s2[differences[1]] &&
-               s1[differences[1]] == s2[differences[0]];
+        return differences.Count == 2 && s1[differences[0]] == s2[differences[1]] && s1[differences[1]] == s2[differences[0]];
     }
 }

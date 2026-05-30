@@ -14,5 +14,4 @@ using LeetCode.Algorithms.UncommonWordsFromTwoSentences;
 namespace LeetCode.Tests.Algorithms.UncommonWordsFromTwoSentences;
 
 [TestClass]
-public sealed class UncommonWordsFromTwoSentencesHashSetTests :
-    UncommonWordsFromTwoSentencesTestsBase<UncommonWordsFromTwoSentencesHashSet>;
+public sealed class UncommonWordsFromTwoSentencesHashSetTests : UncommonWordsFromTwoSentencesTestsBase<UncommonWordsFromTwoSentencesHashSet>;

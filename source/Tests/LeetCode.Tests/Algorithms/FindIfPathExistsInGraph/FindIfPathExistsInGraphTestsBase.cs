@@ -10,27 +10,29 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindIfPathExistsInGraph;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindIfPathExistsInGraph;
 
 public abstract class FindIfPathExistsInGraphTestsBase<T> where T : IFindIfPathExistsInGraph, new()
 {
     [TestMethod]
-    [DataRow(3, "[[0,1],[1,2],[2,0]]", 0, 2, true)]
-    [DataRow(6, "[[0,1],[0,2],[3,5],[5,4],[4,3]]", 0, 5, false)]
-    public void ValidPath_WithGraphAndSourceDestination_ReturnsWhetherPathExistsBetweenNodes(int n, string edgesJson,
-        int source, int destination, bool expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void ValidPath_WithGraphAndSourceDestination_ReturnsWhetherPathExistsBetweenNodes(int n, int[][] edges, int source, int destination, bool expectedResult)
     {
         // Arrange
         var solution = new T();
-
-        var edges = JsonHelper.Parse<int[][]>(edgesJson);
 
         // Act
         var actualResult = solution.ValidPath(n, edges, source, destination);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [3, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 0 } }, 0, 2, true];
+
+        yield return [6, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 3, 5 }, new[] { 5, 4 }, new[] { 4, 3 } }, 0, 5, false];
     }
 }

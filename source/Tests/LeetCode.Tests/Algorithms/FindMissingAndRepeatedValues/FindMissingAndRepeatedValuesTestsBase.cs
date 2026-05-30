@@ -10,22 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindMissingAndRepeatedValues;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindMissingAndRepeatedValues;
 
 public abstract class FindMissingAndRepeatedValuesTestsBase<T> where T : IFindMissingAndRepeatedValues, new()
 {
     [TestMethod]
-    [DataRow("[[1,3],[2,2]]", "[2,4]")]
-    [DataRow("[[9,1,7],[8,9,2],[3,4,6]]", "[9,5]")]
-    public void FindMissingAndRepeatedValues_GivenGrid_ReturnsMissingAndRepeatedNumbers(string gridJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void FindMissingAndRepeatedValues_GivenGrid_ReturnsMissingAndRepeatedNumbers(int[][] grid, int[] expectedResult)
     {
         // Arrange
-        var grid = JsonHelper.Parse<int[][]>(gridJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +27,12 @@ public abstract class FindMissingAndRepeatedValuesTestsBase<T> where T : IFindMi
 
         // Assert
         CollectionAssert.AreEquivalent(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 3 }, new[] { 2, 2 } }, new[] { 2, 4 }];
+
+        yield return [new[] { new[] { 9, 1, 7 }, new[] { 8, 9, 2 }, new[] { 3, 4, 6 } }, new[] { 9, 5 }];
     }
 }

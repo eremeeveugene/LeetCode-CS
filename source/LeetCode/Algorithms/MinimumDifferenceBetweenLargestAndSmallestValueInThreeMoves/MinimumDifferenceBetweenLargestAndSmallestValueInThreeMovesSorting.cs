@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves;
 
 /// <inheritdoc />
-public sealed class MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesSorting :
-    IMinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves
+public sealed class MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesSorting : IMinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves
 {
     /// <summary>
     ///     Time complexity - O(n log n)

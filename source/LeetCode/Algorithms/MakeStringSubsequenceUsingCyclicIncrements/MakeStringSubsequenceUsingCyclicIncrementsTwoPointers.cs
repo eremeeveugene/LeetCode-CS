@@ -33,8 +33,7 @@ public sealed class MakeStringSubsequenceUsingCyclicIncrementsTwoPointers : IMak
 
         while (str1Index < str1.Length && str2Index < str2.Length)
         {
-            if (str1[str1Index] == str2[str2Index] || (str1[str1Index] == 'z' && str2[str2Index] == 'a') ||
-                str1[str1Index] + 1 == str2[str2Index])
+            if (str1[str1Index] == str2[str2Index] || (str1[str1Index] == 'z' && str2[str2Index] == 'a') || str1[str1Index] + 1 == str2[str2Index])
             {
                 str2Index++;
             }

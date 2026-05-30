@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK;
 
 /// <inheritdoc />
-public sealed class MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeString :
-    IMinimumNumberOfOperationsToMakeArrayXOREqualToK
+public sealed class MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeString : IMinimumNumberOfOperationsToMakeArrayXOREqualToK
 {
     /// <summary>
     ///     Time complexity - O(n)

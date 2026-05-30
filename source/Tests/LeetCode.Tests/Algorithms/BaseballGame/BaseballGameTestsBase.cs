@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,20 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.BaseballGame;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.BaseballGame;
 
 public abstract class BaseballGameTestsBase<T> where T : IBaseballGame, new()
 {
     [TestMethod]
-    [DataRow("[\"5\",\"2\",\"C\",\"D\",\"+\"]", 30)]
-    [DataRow("[\"5\",\"-2\",\"4\",\"C\",\"D\",\"9\",\"+\",\"+\"]", 27)]
-    public void CalPoints_WithOperationsArray_ReturnsTotalPoints(string operationsJson, int expectedResult)
+    [DataRow(new[] { "5", "2", "C", "D", "+" }, 30)]
+    [DataRow(new[] { "5", "-2", "4", "C", "D", "9", "+", "+" }, 27)]
+    public void CalPoints_WithOperationsArray_ReturnsTotalPoints(string[] operations, int expectedResult)
     {
         // Arrange
-        var operations = JsonHelper.Parse<string[]>(operationsJson);
-
         var solution = new T();
 
         // Act

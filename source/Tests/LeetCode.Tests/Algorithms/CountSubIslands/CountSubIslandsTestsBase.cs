@@ -10,30 +10,29 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountSubIslands;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountSubIslands;
 
 public abstract class CountSubIslandsTestsBase<T> where T : ICountSubIslands, new()
 {
     [TestMethod]
-    [DataRow("[[1,1,1,0,0],[0,1,1,1,1],[0,0,0,0,0],[1,0,0,0,0],[1,1,0,1,1]]",
-        "[[1,1,1,0,0],[0,0,1,1,1],[0,1,0,0,0],[1,0,1,1,0],[0,1,0,1,0]]", 3)]
-    [DataRow("[[1,0,1,0,1],[1,1,1,1,1],[0,0,0,0,0],[1,1,1,1,1],[1,0,1,0,1]]",
-        "[[0,0,0,0,0],[1,1,1,1,1],[0,1,0,1,0],[0,1,0,1,0],[1,0,0,0,1]]", 2)]
-    public void CountSubIslands_WithTwoBinaryGrids_ReturnsNumberOfSubIslands(string grid1Json, string grid2Json,
-        int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void CountSubIslands_WithTwoBinaryGrids_ReturnsNumberOfSubIslands(int[][] grid1, int[][] grid2, int expectedResult)
     {
         // Arrange
         var solution = new T();
-
-        var grid1 = JsonHelper.Parse<int[][]>(grid1Json);
-        var grid2 = JsonHelper.Parse<int[][]>(grid2Json);
 
         // Act
         var actualResult = solution.CountSubIslands(grid1, grid2);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 1, 1, 0, 0 }, new[] { 0, 1, 1, 1, 1 }, new[] { 0, 0, 0, 0, 0 }, new[] { 1, 0, 0, 0, 0 }, new[] { 1, 1, 0, 1, 1 } }, new[] { new[] { 1, 1, 1, 0, 0 }, new[] { 0, 0, 1, 1, 1 }, new[] { 0, 1, 0, 0, 0 }, new[] { 1, 0, 1, 1, 0 }, new[] { 0, 1, 0, 1, 0 } }, 3];
+
+        yield return [new[] { new[] { 1, 0, 1, 0, 1 }, new[] { 1, 1, 1, 1, 1 }, new[] { 0, 0, 0, 0, 0 }, new[] { 1, 1, 1, 1, 1 }, new[] { 1, 0, 1, 0, 1 } }, new[] { new[] { 0, 0, 0, 0, 0 }, new[] { 1, 1, 1, 1, 1 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 1, 0, 0, 0, 1 } }, 2];
     }
 }

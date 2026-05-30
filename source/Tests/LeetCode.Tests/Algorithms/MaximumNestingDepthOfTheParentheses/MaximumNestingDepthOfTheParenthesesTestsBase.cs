@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses;
 
 namespace LeetCode.Tests.Algorithms.MaximumNestingDepthOfTheParentheses;
 
-public abstract class MaximumNestingDepthOfTheParenthesesTestsBase<T>
-    where T : IMaximumNestingDepthOfTheParentheses, new()
+public abstract class MaximumNestingDepthOfTheParenthesesTestsBase<T> where T : IMaximumNestingDepthOfTheParentheses, new()
 {
     [TestMethod]
     [DataRow("(1+(2*3)+((8)/4))+1", 3)]

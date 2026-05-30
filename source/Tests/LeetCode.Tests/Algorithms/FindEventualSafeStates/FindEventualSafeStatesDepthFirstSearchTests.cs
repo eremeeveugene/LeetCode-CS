@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FindEventualSafeStates;
 namespace LeetCode.Tests.Algorithms.FindEventualSafeStates;
 
 [TestClass]
-public sealed class FindEventualSafeStatesDepthFirstSearchTests :
-    FindEventualSafeStatesTestsBase<FindEventualSafeStatesDepthFirstSearch>;
+public sealed class FindEventualSafeStatesDepthFirstSearchTests : FindEventualSafeStatesTestsBase<FindEventualSafeStatesDepthFirstSearch>;

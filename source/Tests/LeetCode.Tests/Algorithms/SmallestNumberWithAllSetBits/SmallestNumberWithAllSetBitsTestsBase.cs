@@ -13,8 +13,7 @@ using LeetCode.Algorithms.SmallestNumberWithAllSetBits;
 
 namespace LeetCode.Tests.Algorithms.SmallestNumberWithAllSetBits;
 
-public abstract class SmallestNumberWithAllSetBitsTestsBase<T>
-    where T : ISmallestNumberWithAllSetBits, new()
+public abstract class SmallestNumberWithAllSetBitsTestsBase<T> where T : ISmallestNumberWithAllSetBits, new()
 {
     [TestMethod]
     [DataRow(5, 7)]

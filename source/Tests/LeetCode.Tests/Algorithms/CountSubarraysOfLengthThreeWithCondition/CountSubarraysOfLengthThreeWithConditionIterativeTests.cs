@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountSubarraysOfLengthThreeWithCondition;
 namespace LeetCode.Tests.Algorithms.CountSubarraysOfLengthThreeWithCondition;
 
 [TestClass]
-public sealed class CountSubarraysOfLengthThreeWithConditionIterativeTests :
-    CountSubarraysOfLengthThreeWithConditionTestsBase<CountSubarraysOfLengthThreeWithConditionIterative>;
+public sealed class CountSubarraysOfLengthThreeWithConditionIterativeTests : CountSubarraysOfLengthThreeWithConditionTestsBase<CountSubarraysOfLengthThreeWithConditionIterative>;

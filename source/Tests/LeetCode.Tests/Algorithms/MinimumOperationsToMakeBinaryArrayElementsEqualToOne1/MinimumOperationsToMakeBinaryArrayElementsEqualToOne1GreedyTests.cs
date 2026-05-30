@@ -14,6 +14,4 @@ using LeetCode.Algorithms.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1;
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1;
 
 [TestClass]
-public sealed class MinimumOperationsToMakeBinaryArrayElementsEqualToOne1GreedyTests :
-    MinimumOperationsToMakeBinaryArrayElementsEqualToOne1TestsBase<
-        MinimumOperationsToMakeBinaryArrayElementsEqualToOne1Greedy>;
+public sealed class MinimumOperationsToMakeBinaryArrayElementsEqualToOne1GreedyTests : MinimumOperationsToMakeBinaryArrayElementsEqualToOne1TestsBase<MinimumOperationsToMakeBinaryArrayElementsEqualToOne1Greedy>;

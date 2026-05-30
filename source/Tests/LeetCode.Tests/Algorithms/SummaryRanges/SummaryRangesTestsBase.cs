@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SummaryRanges;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SummaryRanges;
 
 public abstract class SummaryRangesTestsBase<T> where T : ISummaryRanges, new()
 {
     [TestMethod]
-    [DataRow("[0,1,2,4,5,7]", "[\"0->2\",\"4->5\",\"7\"]")]
-    [DataRow("[0,2,3,4,6,8,9]", "[\"0\",\"2->4\",\"6\",\"8->9\"]")]
-    public void SummaryRanges_WithSortedUniqueArray_ReturnsListOfMinimalConsecutiveRanges(string numsJson,
-        string expectedResultJson)
+    [DataRow(new[] { 0, 1, 2, 4, 5, 7 }, new[] { "0->2", "4->5", "7" })]
+    [DataRow(new[] { 0, 2, 3, 4, 6, 8, 9 }, new[] { "0", "2->4", "6", "8->9" })]
+    public void SummaryRanges_WithSortedUniqueArray_ReturnsListOfMinimalConsecutiveRanges(int[] nums, string[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

@@ -13,8 +13,7 @@ using LeetCode.Algorithms.NumberOfSmoothDescentPeriodsOfStock;
 
 namespace LeetCode.Tests.Algorithms.NumberOfSmoothDescentPeriodsOfStock;
 
-public abstract class NumberOfSmoothDescentPeriodsOfStockTestsBase<T>
-    where T : INumberOfSmoothDescentPeriodsOfStock, new()
+public abstract class NumberOfSmoothDescentPeriodsOfStockTestsBase<T> where T : INumberOfSmoothDescentPeriodsOfStock, new()
 {
     [TestMethod]
     [DataRow(new[] { 1 }, 1)]

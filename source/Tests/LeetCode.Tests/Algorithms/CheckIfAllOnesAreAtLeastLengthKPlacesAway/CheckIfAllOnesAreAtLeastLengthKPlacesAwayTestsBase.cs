@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CheckIfAllOnesAreAtLeastLengthKPlacesAway;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CheckIfAllOnesAreAtLeastLengthKPlacesAway;
 
-public abstract class CheckIfAllOnesAreAtLeastLengthKPlacesAwayTestsBase<T>
-    where T : ICheckIfAllOnesAreAtLeastLengthKPlacesAway, new()
+public abstract class CheckIfAllOnesAreAtLeastLengthKPlacesAwayTestsBase<T> where T : ICheckIfAllOnesAreAtLeastLengthKPlacesAway, new()
 {
     [TestMethod]
-    [DataRow("[1,0,0,0,1,0,0,1]", 2, true)]
-    [DataRow("[1,0,0,1,0,1]", 2, false)]
-    public void KLengthApart_WithNumsArrayAndKDistance_ReturnsTrueIfOnesAreAtLeastKApart(string numsJson, int k,
-        bool expectedResult)
+    [DataRow(new[] { 1, 0, 0, 0, 1, 0, 0, 1 }, 2, true)]
+    [DataRow(new[] { 1, 0, 0, 1, 0, 1 }, 2, false)]
+    public void KLengthApart_WithNumsArrayAndKDistance_ReturnsTrueIfOnesAreAtLeastKApart(int[] nums, int k, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FindKthSmallestPairDistance;
 namespace LeetCode.Tests.Algorithms.FindKthSmallestPairDistance;
 
 [TestClass]
-public sealed class FindKthSmallestPairDistanceBinarySearchWithSlidingWindowTests : FindKthSmallestPairDistanceTestsBase<
-    FindKthSmallestPairDistanceBinarySearchWithSlidingWindow>;
+public sealed class FindKthSmallestPairDistanceBinarySearchWithSlidingWindowTests : FindKthSmallestPairDistanceTestsBase<FindKthSmallestPairDistanceBinarySearchWithSlidingWindow>;

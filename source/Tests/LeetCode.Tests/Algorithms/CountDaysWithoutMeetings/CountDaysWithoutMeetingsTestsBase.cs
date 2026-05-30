@@ -10,22 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountDaysWithoutMeetings;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountDaysWithoutMeetings;
 
 public abstract class CountDaysWithoutMeetingsTestsBase<T> where T : ICountDaysWithoutMeetings, new()
 {
     [TestMethod]
-    [DataRow(10, "[[5,7],[1,3],[9,10]]", 2)]
-    [DataRow(5, "[[2,4],[1,3]]", 1)]
-    [DataRow(6, "[[1,6]]", 0)]
-    public void CountDays_WithTotalDaysAndMeetingRanges_ReturnsNumberOfFreeDays(int days, string meetingsJson,
-        int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void CountDays_WithTotalDaysAndMeetingRanges_ReturnsNumberOfFreeDays(int days, int[][] meetings, int expectedResult)
     {
         // Arrange
-        var meetings = JsonHelper.Parse<int[][]>(meetingsJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +27,14 @@ public abstract class CountDaysWithoutMeetingsTestsBase<T> where T : ICountDaysW
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [10, new[] { new[] { 5, 7 }, new[] { 1, 3 }, new[] { 9, 10 } }, 2];
+
+        yield return [5, new[] { new[] { 2, 4 }, new[] { 1, 3 } }, 1];
+
+        yield return [6, new[] { new[] { 1, 6 } }, 0];
     }
 }

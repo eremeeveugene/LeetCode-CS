@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountUnguardedCellsInTheGrid;
 namespace LeetCode.Tests.Algorithms.CountUnguardedCellsInTheGrid;
 
 [TestClass]
-public sealed class CountUnguardedCellsInTheGridSimulationTests :
-    CountUnguardedCellsInTheGridTestsBase<CountUnguardedCellsInTheGridSimulation>;
+public sealed class CountUnguardedCellsInTheGridSimulationTests : CountUnguardedCellsInTheGridTestsBase<CountUnguardedCellsInTheGridSimulation>;

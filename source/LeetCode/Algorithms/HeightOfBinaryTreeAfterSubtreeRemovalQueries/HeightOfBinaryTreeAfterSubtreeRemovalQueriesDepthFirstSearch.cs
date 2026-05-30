@@ -14,8 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
 
 /// <inheritdoc />
-public sealed class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch :
-    IHeightOfBinaryTreeAfterSubtreeRemovalQueries
+public sealed class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch : IHeightOfBinaryTreeAfterSubtreeRemovalQueries
 {
     /// <summary>
     ///     Time complexity - O(n + m), where n is the number of nodes and m is the number of queries

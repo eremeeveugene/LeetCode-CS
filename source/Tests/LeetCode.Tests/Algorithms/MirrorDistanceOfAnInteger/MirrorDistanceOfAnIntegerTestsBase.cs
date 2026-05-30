@@ -34,8 +34,7 @@ public abstract class MirrorDistanceOfAnIntegerTestsBase<T> where T : IMirrorDis
     [DataRow(2222, 0)]
     [DataRow(4567, 3087)]
     [DataRow(1000000000, 999999999)]
-    public void MirrorDistance_WithGivenInteger_ReturnsAbsoluteDifferenceBetweenNumberAndReversedDigits(int n,
-        int expectedResult)
+    public void MirrorDistance_WithGivenInteger_ReturnsAbsoluteDifferenceBetweenNumberAndReversedDigits(int n, int expectedResult)
     {
         // Arrange
         var solution = new T();

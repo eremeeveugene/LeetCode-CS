@@ -56,8 +56,7 @@ public sealed class ValidArrangementOfPairsDepthFirstSearch : IValidArrangementO
         return pairs;
     }
 
-    private static int FindStartNode(Dictionary<int, int> startToCountDictionary,
-        Dictionary<int, int> endToCountDictionary, int[][] pairs)
+    private static int FindStartNode(Dictionary<int, int> startToCountDictionary, Dictionary<int, int> endToCountDictionary, int[][] pairs)
     {
         var startNode = pairs[0][0];
 
@@ -74,8 +73,7 @@ public sealed class ValidArrangementOfPairsDepthFirstSearch : IValidArrangementO
         return startNode;
     }
 
-    private static void BuildEulerianPath(Dictionary<int, Stack<int>> startToEndsDictionary, int[][] pairs, int start,
-        ref int pairsIndex)
+    private static void BuildEulerianPath(Dictionary<int, Stack<int>> startToEndsDictionary, int[][] pairs, int start, ref int pairsIndex)
     {
         if (!startToEndsDictionary.TryGetValue(start, out var ends))
         {

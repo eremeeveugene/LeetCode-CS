@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumCountOfPositiveIntegerAndNegativeInteger;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximumCountOfPositiveIntegerAndNegativeInteger;
 
-public abstract class MaximumCountOfPositiveIntegerAndNegativeIntegerTestsBase<T>
-    where T : IMaximumCountOfPositiveIntegerAndNegativeInteger, new()
+public abstract class MaximumCountOfPositiveIntegerAndNegativeIntegerTestsBase<T> where T : IMaximumCountOfPositiveIntegerAndNegativeInteger, new()
 {
     [TestMethod]
-    [DataRow("[-2,-1,-1,1,2,3]", 3)]
-    [DataRow("[-3,-2,-1,0,0,1,2]", 3)]
-    [DataRow("[5,20,66,1314]", 4)]
-    public void MaximumCount_GivenIntegerArray_ReturnsCountOfMaxPositiveOrNegativeNumbers(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { -2, -1, -1, 1, 2, 3 }, 3)]
+    [DataRow(new[] { -3, -2, -1, 0, 0, 1, 2 }, 3)]
+    [DataRow(new[] { 5, 20, 66, 1314 }, 4)]
+    public void MaximumCount_GivenIntegerArray_ReturnsCountOfMaxPositiveOrNegativeNumbers(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

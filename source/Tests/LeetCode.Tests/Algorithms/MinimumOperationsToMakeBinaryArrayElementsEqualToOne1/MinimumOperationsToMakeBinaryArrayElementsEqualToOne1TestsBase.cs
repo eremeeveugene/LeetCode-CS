@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1;
 
-public abstract class MinimumOperationsToMakeBinaryArrayElementsEqualToOne1TestsBase<T>
-    where T : IMinimumOperationsToMakeBinaryArrayElementsEqualToOne1, new()
+public abstract class MinimumOperationsToMakeBinaryArrayElementsEqualToOne1TestsBase<T> where T : IMinimumOperationsToMakeBinaryArrayElementsEqualToOne1, new()
 {
     [TestMethod]
-    [DataRow("[0,1,1,1,0,0]", 3)]
-    [DataRow("[0,1,1,1]", -1)]
-    [DataRow("[1,0,0,1,1,0,1,1,1]", -1)]
-    public void MinOperations_WithBinaryArray_ReturnsMinimumOperationsOrMinusOne(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 0, 1, 1, 1, 0, 0 }, 3)]
+    [DataRow(new[] { 0, 1, 1, 1 }, -1)]
+    [DataRow(new[] { 1, 0, 0, 1, 1, 0, 1, 1, 1 }, -1)]
+    public void MinOperations_WithBinaryArray_ReturnsMinimumOperationsOrMinusOne(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

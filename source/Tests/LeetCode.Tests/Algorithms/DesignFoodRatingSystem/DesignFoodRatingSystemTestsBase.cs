@@ -18,8 +18,7 @@ public abstract class DesignFoodRatingSystemTestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void DesignFoodRatingSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        FoodRatingSystemScenario scenario)
+    public void DesignFoodRatingSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(FoodRatingSystemScenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -47,119 +46,35 @@ public abstract class DesignFoodRatingSystemTestsBase
 
     private static IEnumerable<FoodRatingSystemScenario[]> GetScenarios()
     {
-        yield return
-        [
-            new FoodRatingSystemScenario(
-                ["kimchi", "miso", "sushi", "moussaka", "ramen", "bulgogi"],
-                ["korean", "japanese", "japanese", "greek", "japanese", "korean"],
-                [9, 12, 8, 15, 14, 7],
-                [
-                    new HighestRatedOperation("korean"),
-                    new HighestRatedOperation("japanese"),
-                    new ChangeRatingOperation("sushi", 16),
-                    new HighestRatedOperation("japanese"),
-                    new ChangeRatingOperation("ramen", 16),
-                    new HighestRatedOperation("japanese")
-                ],
-                [
-                    new HighestRatedOperation.Result("kimchi"),
-                    new HighestRatedOperation.Result("ramen"),
-                    VoidOperationResult.Instance,
-                    new HighestRatedOperation.Result("sushi"),
-                    VoidOperationResult.Instance,
-                    new HighestRatedOperation.Result("ramen")
-                ])
-        ];
+        yield return [new FoodRatingSystemScenario(["kimchi", "miso", "sushi", "moussaka", "ramen", "bulgogi"], ["korean", "japanese", "japanese", "greek", "japanese", "korean"], [9, 12, 8, 15, 14, 7], [new HighestRatedOperation("korean"), new HighestRatedOperation("japanese"), new ChangeRatingOperation("sushi", 16), new HighestRatedOperation("japanese"), new ChangeRatingOperation("ramen", 16), new HighestRatedOperation("japanese")], [new HighestRatedOperation.Result("kimchi"), new HighestRatedOperation.Result("ramen"), VoidOperationResult.Instance, new HighestRatedOperation.Result("sushi"), VoidOperationResult.Instance, new HighestRatedOperation.Result("ramen")])];
 
-        yield return
-        [
-            new FoodRatingSystemScenario(
-                ["apple", "banana"],
-                ["fruit", "fruit"],
-                [5, 5],
-                [
-                    new HighestRatedOperation("fruit")
-                ],
-                [
-                    new HighestRatedOperation.Result("apple")
-                ])
-        ];
+        yield return [new FoodRatingSystemScenario(["apple", "banana"], ["fruit", "fruit"], [5, 5], [new HighestRatedOperation("fruit")], [new HighestRatedOperation.Result("apple")])];
 
-        yield return
-        [
-            new FoodRatingSystemScenario(
-                ["pizza"],
-                ["italian"],
-                [10],
-                [
-                    new HighestRatedOperation("italian"),
-                    new ChangeRatingOperation("pizza", 1),
-                    new HighestRatedOperation("italian")
-                ],
-                [
-                    new HighestRatedOperation.Result("pizza"),
-                    VoidOperationResult.Instance,
-                    new HighestRatedOperation.Result("pizza")
-                ])
-        ];
+        yield return [new FoodRatingSystemScenario(["pizza"], ["italian"], [10], [new HighestRatedOperation("italian"), new ChangeRatingOperation("pizza", 1), new HighestRatedOperation("italian")], [new HighestRatedOperation.Result("pizza"), VoidOperationResult.Instance, new HighestRatedOperation.Result("pizza")])];
 
-        yield return
-        [
-            new FoodRatingSystemScenario(
-                ["a", "b", "c"],
-                ["x", "x", "x"],
-                [10, 8, 6],
-                [
-                    new HighestRatedOperation("x"),
-                    new ChangeRatingOperation("a", 3),
-                    new HighestRatedOperation("x")
-                ],
-                [
-                    new HighestRatedOperation.Result("a"),
-                    VoidOperationResult.Instance,
-                    new HighestRatedOperation.Result("b")
-                ])
-        ];
+        yield return [new FoodRatingSystemScenario(["a", "b", "c"], ["x", "x", "x"], [10, 8, 6], [new HighestRatedOperation("x"), new ChangeRatingOperation("a", 3), new HighestRatedOperation("x")], [new HighestRatedOperation.Result("a"), VoidOperationResult.Instance, new HighestRatedOperation.Result("b")])];
 
-        yield return
-        [
-            new FoodRatingSystemScenario(
-                ["tacos", "pasta", "sushi"],
-                ["mexican", "italian", "japanese"],
-                [7, 9, 11],
-                [
-                    new HighestRatedOperation("mexican"),
-                    new HighestRatedOperation("italian"),
-                    new HighestRatedOperation("japanese"),
-                    new ChangeRatingOperation("tacos", 15),
-                    new HighestRatedOperation("mexican"),
-                    new HighestRatedOperation("italian")
-                ],
-                [
-                    new HighestRatedOperation.Result("tacos"),
-                    new HighestRatedOperation.Result("pasta"),
-                    new HighestRatedOperation.Result("sushi"),
-                    VoidOperationResult.Instance,
-                    new HighestRatedOperation.Result("tacos"),
-                    new HighestRatedOperation.Result("pasta")
-                ])
-        ];
+        yield return [new FoodRatingSystemScenario(["tacos", "pasta", "sushi"], ["mexican", "italian", "japanese"], [7, 9, 11], [new HighestRatedOperation("mexican"), new HighestRatedOperation("italian"), new HighestRatedOperation("japanese"), new ChangeRatingOperation("tacos", 15), new HighestRatedOperation("mexican"), new HighestRatedOperation("italian")], [new HighestRatedOperation.Result("tacos"), new HighestRatedOperation.Result("pasta"), new HighestRatedOperation.Result("sushi"), VoidOperationResult.Instance, new HighestRatedOperation.Result("tacos"), new HighestRatedOperation.Result("pasta")])];
     }
 
-    public sealed class FoodRatingSystemScenario : Scenario<IDesignFoodRatingSystem>
+    public sealed class FoodRatingSystemScenario : IScenario<IDesignFoodRatingSystem>
     {
-        public FoodRatingSystemScenario(string[] foods, string[] cuisines, int[] ratings,
-            IOperation<IDesignFoodRatingSystem>[] operations, IOperationResult[] operationResults)
-            : base(operations, operationResults)
+        public FoodRatingSystemScenario(string[] foods, string[] cuisines, int[] ratings, IOperation<IDesignFoodRatingSystem>[] operations, IOperationResult[] operationResults)
         {
             Foods = foods;
             Cuisines = cuisines;
             Ratings = ratings;
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public string[] Foods { get; }
         public string[] Cuisines { get; }
         public int[] Ratings { get; }
+
+        public IOperation<IDesignFoodRatingSystem>[] Operations { get; }
+
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class HighestRatedOperation : IOperation<IDesignFoodRatingSystem>
@@ -178,7 +93,9 @@ public abstract class DesignFoodRatingSystemTestsBase
             return new Result(food);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly string _food;
 

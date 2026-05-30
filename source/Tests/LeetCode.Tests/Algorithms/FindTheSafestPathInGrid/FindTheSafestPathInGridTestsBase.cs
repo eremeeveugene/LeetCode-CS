@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,21 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTheSafestPathInGrid;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindTheSafestPathInGrid;
 
 public abstract class FindTheSafestPathInGridTestsBase<T> where T : IFindTheSafestPathInGrid, new()
 {
     [TestMethod]
-    [DataRow("[[1,0,0],[0,0,0],[0,0,1]]", 0)]
-    [DataRow("[[0,0,1],[0,0,0],[0,0,0]]", 2)]
-    [DataRow("[[0,0,0,1],[0,0,0,0],[0,0,0,0],[1,0,0,0]]", 2)]
-    public void MaximumSafenessFactor_WithGridInput_ReturnsSafenessFactorForPath(string gridJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MaximumSafenessFactor_WithGridInput_ReturnsSafenessFactorForPath(IList<IList<int>> grid, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper.Parse<IList<IList<int>>>(gridJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +27,14 @@ public abstract class FindTheSafestPathInGridTestsBase<T> where T : IFindTheSafe
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new IList<int>[] { new[] { 1, 0, 0 }, new[] { 0, 0, 0 }, new[] { 0, 0, 1 } }, 0];
+
+        yield return [new IList<int>[] { new[] { 0, 0, 1 }, new[] { 0, 0, 0 }, new[] { 0, 0, 0 } }, 2];
+
+        yield return [new IList<int>[] { new[] { 0, 0, 0, 1 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 1, 0, 0, 0 } }, 2];
     }
 }

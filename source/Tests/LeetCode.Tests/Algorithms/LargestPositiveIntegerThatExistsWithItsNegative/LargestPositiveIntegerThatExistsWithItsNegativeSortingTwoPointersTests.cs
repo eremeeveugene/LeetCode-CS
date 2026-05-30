@@ -14,6 +14,4 @@ using LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative;
 namespace LeetCode.Tests.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative;
 
 [TestClass]
-public sealed class LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointersTests :
-    LargestPositiveIntegerThatExistsWithItsNegativeTestsBase<
-        LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointers>;
+public sealed class LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointersTests : LargestPositiveIntegerThatExistsWithItsNegativeTestsBase<LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointers>;

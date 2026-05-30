@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RecoverTreeFromPreorderTraversal;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,14 +18,10 @@ namespace LeetCode.Tests.Algorithms.RecoverTreeFromPreorderTraversal;
 public abstract class RecoverTreeFromPreorderTraversalTestsBase<T> where T : IRecoverTreeFromPreorderTraversal, new()
 {
     [TestMethod]
-    [DataRow("1-2--3--4-5--6--7", "[1,2,5,3,4,6,7]")]
-    [DataRow("1-2--3---4-5--6---7", "[1,2,5,3,null,6,null,4,null,7]")]
-    [DataRow("1-401--349---90--88", "[1,401,null,349,88,90]")]
-    public void RecoverFromPreorder_WithTraversalString_ConstructsBinaryTree(string traversal,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void RecoverFromPreorder_WithTraversalString_ConstructsBinaryTree(string traversal, int?[] expectedResultArray)
     {
         // Arrange
-        var expectedResultArray = JsonHelper.Parse<int?[]>(expectedResultJson);
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);
 
         var solution = new T();
@@ -36,5 +31,14 @@ public abstract class RecoverTreeFromPreorderTraversalTestsBase<T> where T : IRe
 
         // Assert
         TreeNodeAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return ["1-2--3--4-5--6--7", new int?[] { 1, 2, 5, 3, 4, 6, 7 }];
+
+        yield return ["1-2--3---4-5--6---7", new int?[] { 1, 2, 5, 3, null, 6, null, 4, null, 7 }];
+
+        yield return ["1-401--349---90--88", new int?[] { 1, 401, null, 349, 88, 90 }];
     }
 }

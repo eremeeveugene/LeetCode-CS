@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximizeExpressionOfThreeElements;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximizeExpressionOfThreeElements;
 
 public abstract class MaximizeExpressionOfThreeElementsTestsBase<T> where T : IMaximizeExpressionOfThreeElements, new()
 {
     [TestMethod]
-    [DataRow("[1,4,2,5]", 8)]
-    [DataRow("[-2,0,5,-2,4]", 11)]
-    public void MaximizeExpressionOfThree_WithGivenNums_ReturnsMaximumExpressionValue(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 1, 4, 2, 5 }, 8)]
+    [DataRow(new[] { -2, 0, 5, -2, 4 }, 11)]
+    public void MaximizeExpressionOfThree_WithGivenNums_ReturnsMaximumExpressionValue(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

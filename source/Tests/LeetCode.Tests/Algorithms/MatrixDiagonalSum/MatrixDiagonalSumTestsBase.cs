@@ -10,21 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MatrixDiagonalSum;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MatrixDiagonalSum;
 
 public abstract class MatrixDiagonalSumTestsBase<T> where T : IMatrixDiagonalSum, new()
 {
     [TestMethod]
-    [DataRow("[[1,2,3],[4,5,6],[7,8,9]]", 25)]
-    [DataRow("[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]", 8)]
-    [DataRow("[[5]]", 5)]
-    public void DiagonalSum_WithMatrix_ReturnsSumOfDiagonalElements(string matJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void DiagonalSum_WithMatrix_ReturnsSumOfDiagonalElements(int[][] mat, int expectedResult)
     {
         // Arrange
-        var mat = JsonHelper.Parse<int[][]>(matJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +27,14 @@ public abstract class MatrixDiagonalSumTestsBase<T> where T : IMatrixDiagonalSum
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { 4, 5, 6 }, new[] { 7, 8, 9 } }, 25];
+
+        yield return [new[] { new[] { 1, 1, 1, 1 }, new[] { 1, 1, 1, 1 }, new[] { 1, 1, 1, 1 }, new[] { 1, 1, 1, 1 } }, 8];
+
+        yield return [new[] { new[] { 5 } }, 5];
     }
 }

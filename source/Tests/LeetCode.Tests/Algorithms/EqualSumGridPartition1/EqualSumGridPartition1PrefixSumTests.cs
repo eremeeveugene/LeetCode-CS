@@ -14,5 +14,4 @@ using LeetCode.Algorithms.EqualSumGridPartition1;
 namespace LeetCode.Tests.Algorithms.EqualSumGridPartition1;
 
 [TestClass]
-public sealed class EqualSumGridPartition1PrefixSumTests :
-    EqualSumGridPartition1TestsBase<EqualSumGridPartition1PrefixSum>;
+public sealed class EqualSumGridPartition1PrefixSumTests : EqualSumGridPartition1TestsBase<EqualSumGridPartition1PrefixSum>;

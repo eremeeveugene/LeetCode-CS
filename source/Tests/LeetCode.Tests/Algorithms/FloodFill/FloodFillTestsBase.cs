@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FloodFill;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FloodFill;
 
 public abstract class FloodFillTestsBase<T> where T : IFloodFill, new()
 {
     [TestMethod]
-    [DataRow("[[0,0,0],[0,0,0]]", 0, 0, 0, "[[0,0,0],[0,0,0]]")]
-    [DataRow("[[0,0,0],[0,0,0]]", 1, 0, 2, "[[2,2,2,],[2,2,2]]")]
-    [DataRow("[[1,1,1],[1,1,0],[1,0,1]]", 1, 1, 2, "[[2,2,2],[2,2,0],[2,0,1]]")]
-    public void FloodFill_WithInitialPositionAndNewColor_ReturnsModifiedImage(string imageJson, int sr, int sc,
-        int color, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void FloodFill_WithInitialPositionAndNewColor_ReturnsModifiedImage(int[][] image, int sr, int sc, int color, int[][] expectedResult)
     {
         // Arrange
-        var image = JsonHelper.Parse<int[][]>(imageJson);
-        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +27,14 @@ public abstract class FloodFillTestsBase<T> where T : IFloodFill, new()
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 0, 0, 0 }, new[] { 0, 0, 0 } }, 0, 0, 0, new[] { new[] { 0, 0, 0 }, new[] { 0, 0, 0 } }];
+
+        yield return [new[] { new[] { 0, 0, 0 }, new[] { 0, 0, 0 } }, 1, 0, 2, new[] { new[] { 2, 2, 2 }, new[] { 2, 2, 2 } }];
+
+        yield return [new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 0 }, new[] { 1, 0, 1 } }, 1, 1, 2, new[] { new[] { 2, 2, 2 }, new[] { 2, 2, 0 }, new[] { 2, 0, 1 } }];
     }
 }

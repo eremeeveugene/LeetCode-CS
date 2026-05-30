@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ReplaceNonCoprimeNumbersInArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ReplaceNonCoprimeNumbersInArray;
 
 public abstract class ReplaceNonCoprimeNumbersInArrayTestsBase<T> where T : IReplaceNonCoprimeNumbersInArray, new()
 {
     [TestMethod]
-    [DataRow("[6,4,3,2,7,6,2]", "[12,7,6]")]
-    [DataRow("[2,2,1,1,3,3,3]", "[2,1,1,3]")]
-    public void ReplaceNonCoprimes_WithNumsArray_ReplacesWithLCMUntilNoMorePairs(string numsJson,
-        string expectedResultJson)
+    [DataRow(new[] { 6, 4, 3, 2, 7, 6, 2 }, new[] { 12, 7, 6 })]
+    [DataRow(new[] { 2, 2, 1, 1, 3, 3, 3 }, new[] { 2, 1, 1, 3 })]
+    public void ReplaceNonCoprimes_WithNumsArray_ReplacesWithLCMUntilNoMorePairs(int[] nums, int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

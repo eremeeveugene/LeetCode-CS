@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX;
 
-public abstract class SpecialArrayWithXElementsGreaterThanOrEqualXTestsBase<T>
-    where T : ISpecialArrayWithXElementsGreaterThanOrEqualX, new()
+public abstract class SpecialArrayWithXElementsGreaterThanOrEqualXTestsBase<T> where T : ISpecialArrayWithXElementsGreaterThanOrEqualX, new()
 {
     [TestMethod]
-    [DataRow("[3,5]", 2)]
-    [DataRow("[0,0]", -1)]
-    [DataRow("[0,4,3,0,4]", 3)]
-    public void SpecialArray_WithNonNegativeIntegerArray_ReturnsXIfExactlyXElementsAreGreaterThanOrEqualToX(
-        string numsJson, int expectedResult)
+    [DataRow(new[] { 3, 5 }, 2)]
+    [DataRow(new[] { 0, 0 }, -1)]
+    [DataRow(new[] { 0, 4, 3, 0, 4 }, 3)]
+    public void SpecialArray_WithNonNegativeIntegerArray_ReturnsXIfExactlyXElementsAreGreaterThanOrEqualToX(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

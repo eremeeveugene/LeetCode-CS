@@ -28,8 +28,7 @@ public abstract class ClosestEqualElementQueriesTestsBase<T> where T : IClosestE
     [DataRow(new[] { 2, 2, 2, 2 }, new[] { 0, 1, 2, 3 }, new[] { 1, 1, 1, 1 })]
     [DataRow(new[] { 1, 2, 3, 2, 1 }, new[] { 0, 1, 2, 3, 4 }, new[] { 1, 2, -1, 2, 1 })]
     [DataRow(new[] { 3, 1, 3, 1, 3, 1, 3 }, new[] { 0, 1, 6 }, new[] { 1, 2, 1 })]
-    public void SolveQueries_WithCircularArrayAndQueryIndices_ReturnsMinimumDistance(int[] nums, int[] queries,
-        int[] expectedResult)
+    public void SolveQueries_WithCircularArrayAndQueryIndices_ReturnsMinimumDistance(int[] nums, int[] queries, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

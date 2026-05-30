@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountTheNumberOfConsistentStrings;
 namespace LeetCode.Tests.Algorithms.CountTheNumberOfConsistentStrings;
 
 [TestClass]
-public sealed class CountTheNumberOfConsistentStringsArrayTests : CountTheNumberOfConsistentStringsTestsBase<
-    CountTheNumberOfConsistentStringsArray>;
+public sealed class CountTheNumberOfConsistentStringsArrayTests : CountTheNumberOfConsistentStringsTestsBase<CountTheNumberOfConsistentStringsArray>;

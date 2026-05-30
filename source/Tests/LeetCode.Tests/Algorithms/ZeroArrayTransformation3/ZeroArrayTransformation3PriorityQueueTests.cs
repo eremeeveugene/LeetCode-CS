@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ZeroArrayTransformation3;
 namespace LeetCode.Tests.Algorithms.ZeroArrayTransformation3;
 
 [TestClass]
-public sealed class ZeroArrayTransformation3PriorityQueueTests :
-    ZeroArrayTransformation3TestsBase<ZeroArrayTransformation3PriorityQueue>;
+public sealed class ZeroArrayTransformation3PriorityQueueTests : ZeroArrayTransformation3TestsBase<ZeroArrayTransformation3PriorityQueue>;

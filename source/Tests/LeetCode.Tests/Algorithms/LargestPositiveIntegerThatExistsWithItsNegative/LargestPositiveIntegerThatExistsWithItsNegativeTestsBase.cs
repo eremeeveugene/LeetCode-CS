@@ -10,24 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative;
 
-public abstract class LargestPositiveIntegerThatExistsWithItsNegativeTestsBase<T>
-    where T : ILargestPositiveIntegerThatExistsWithItsNegative, new()
+public abstract class LargestPositiveIntegerThatExistsWithItsNegativeTestsBase<T> where T : ILargestPositiveIntegerThatExistsWithItsNegative, new()
 {
     [TestMethod]
-    [DataRow("[1]", -1)]
-    [DataRow("[-1, 2, -3, 3]", 3)]
-    [DataRow("[-1, 10, 6, 7, -7, 1]", 7)]
-    [DataRow("[-10, 8, 6, 7, -2, -3]", -1)]
-    public void FindMaxK_WithIntegerArray_ReturnsLargestKWhereBothKAndNegativeKExist(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 1 }, -1)]
+    [DataRow(new[] { -1, 2, -3, 3 }, 3)]
+    [DataRow(new[] { -1, 10, 6, 7, -7, 1 }, 7)]
+    [DataRow(new[] { -10, 8, 6, 7, -2, -3 }, -1)]
+    public void FindMaxK_WithIntegerArray_ReturnsLargestKWhereBothKAndNegativeKExist(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

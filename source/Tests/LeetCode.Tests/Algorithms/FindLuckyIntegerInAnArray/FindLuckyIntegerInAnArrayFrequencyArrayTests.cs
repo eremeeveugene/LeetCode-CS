@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FindLuckyIntegerInAnArray;
 namespace LeetCode.Tests.Algorithms.FindLuckyIntegerInAnArray;
 
 [TestClass]
-public sealed class FindLuckyIntegerInAnArrayFrequencyArrayTests :
-    FindLuckyIntegerInAnArrayTestsBase<FindLuckyIntegerInAnArrayFrequencyArray>;
+public sealed class FindLuckyIntegerInAnArrayFrequencyArrayTests : FindLuckyIntegerInAnArrayTestsBase<FindLuckyIntegerInAnArrayFrequencyArray>;

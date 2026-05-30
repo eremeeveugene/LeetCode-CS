@@ -14,5 +14,4 @@ using LeetCode.Algorithms.SumOfDistancesInTree;
 namespace LeetCode.Tests.Algorithms.SumOfDistancesInTree;
 
 [TestClass]
-public sealed class SumOfDistancesInTreeDepthFirstSearchTests :
-    SumOfDistancesInTreeTestsBase<SumOfDistancesInTreeDepthFirstSearch>;
+public sealed class SumOfDistancesInTreeDepthFirstSearchTests : SumOfDistancesInTreeTestsBase<SumOfDistancesInTreeDepthFirstSearch>;

@@ -22,10 +22,6 @@ public sealed class SortArrayByIncreasingFrequencyLinq : ISortArrayByIncreasingF
     /// <returns></returns>
     public int[] FrequencySort(int[] nums)
     {
-        return nums.GroupBy(v => v)
-            .OrderBy(g => g.Count())
-            .ThenByDescending(g => g.Key)
-            .SelectMany(g => g)
-            .ToArray();
+        return nums.GroupBy(v => v).OrderBy(g => g.Count()).ThenByDescending(g => g.Key).SelectMany(g => g).ToArray();
     }
 }

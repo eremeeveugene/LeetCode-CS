@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimizeTheMaximumDifferenceOfPairs;
 namespace LeetCode.Tests.Algorithms.MinimizeTheMaximumDifferenceOfPairs;
 
 [TestClass]
-public sealed class MinimizeTheMaximumDifferenceOfPairsBinarySearchTests :
-    MinimizeTheMaximumDifferenceOfPairsTestsBase<MinimizeTheMaximumDifferenceOfPairsBinarySearch>;
+public sealed class MinimizeTheMaximumDifferenceOfPairsBinarySearchTests : MinimizeTheMaximumDifferenceOfPairsTestsBase<MinimizeTheMaximumDifferenceOfPairsBinarySearch>;

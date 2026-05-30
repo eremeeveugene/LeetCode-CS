@@ -14,5 +14,4 @@ using LeetCode.Algorithms.OnesAndZeroes;
 namespace LeetCode.Tests.Algorithms.OnesAndZeroes;
 
 [TestClass]
-public sealed class OnesAndZeroesDynamicProgrammingTests :
-    OnesAndZeroesTestsBase<OnesAndZeroesDynamicProgramming>;
+public sealed class OnesAndZeroesDynamicProgrammingTests : OnesAndZeroesTestsBase<OnesAndZeroesDynamicProgramming>;

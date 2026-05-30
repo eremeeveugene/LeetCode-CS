@@ -10,25 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTheNumberOfWaysToPlacePeople2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindTheNumberOfWaysToPlacePeople2;
 
 public abstract class FindTheNumberOfWaysToPlacePeople2TestsBase<T> where T : IFindTheNumberOfWaysToPlacePeople2, new()
 {
     [TestMethod]
-    [DataRow("[[1,1],[2,2],[3,3]]", 0)]
-    [DataRow("[[3,1],[1,3],[1,1]]", 2)]
-    [DataRow("[[6,2],[4,4],[2,6]]", 2)]
-    [DataRow("[[6,2],[4,4],[2,6],[4,8]]", 3)]
-    [DataRow("[[6,2],[4,4],[2,6],[4,8],[1,4]]", 4)]
-    [DataRow("[[6,2],[4,4],[2,6],[4,8],[1,4],[2,2]]", 7)]
-    public void NumberOfPairs_With2DPointsArray_ReturnsCountOfValidPairs(string pointsJson,
-        int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void NumberOfPairs_With2DPointsArray_ReturnsCountOfValidPairs(int[][] points, int expectedResult)
     {
         // Arrange
-        var points = JsonHelper.Parse<int[][]>(pointsJson);
-
         var solution = new T();
 
         // Act
@@ -36,5 +27,20 @@ public abstract class FindTheNumberOfWaysToPlacePeople2TestsBase<T> where T : IF
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 3, 3 } }, 0];
+
+        yield return [new[] { new[] { 3, 1 }, new[] { 1, 3 }, new[] { 1, 1 } }, 2];
+
+        yield return [new[] { new[] { 6, 2 }, new[] { 4, 4 }, new[] { 2, 6 } }, 2];
+
+        yield return [new[] { new[] { 6, 2 }, new[] { 4, 4 }, new[] { 2, 6 }, new[] { 4, 8 } }, 3];
+
+        yield return [new[] { new[] { 6, 2 }, new[] { 4, 4 }, new[] { 2, 6 }, new[] { 4, 8 }, new[] { 1, 4 } }, 4];
+
+        yield return [new[] { new[] { 6, 2 }, new[] { 4, 4 }, new[] { 2, 6 }, new[] { 4, 8 }, new[] { 1, 4 }, new[] { 2, 2 } }, 7];
     }
 }

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindWordsContainingCharacter;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindWordsContainingCharacter;
 
 public abstract class FindWordsContainingCharacterTestsBase<T> where T : IFindWordsContainingCharacter, new()
 {
     [TestMethod]
-    [DataRow("[\"leet\", \"code\"]", 'e', "[0, 1]")]
-    [DataRow("[\"abc\", \"bcd\", \"aaaa\", \"cbc\"]", 'a', "[0, 2]")]
-    [DataRow("[\"abc\", \"bcd\", \"aaaa\", \"cbc\"]", 'z', "[]")]
-    public void FindWordsContaining_WithArrayOfWordsAndChar_ReturnsIndicesOfWordsContainingChar(string wordsJson,
-        char x, string expectedResultJson)
+    [DataRow(new[] { "leet", "code" }, 'e', new[] { 0, 1 })]
+    [DataRow(new[] { "abc", "bcd", "aaaa", "cbc" }, 'a', new[] { 0, 2 })]
+    [DataRow(new[] { "abc", "bcd", "aaaa", "cbc" }, 'z', new int[] { })]
+    public void FindWordsContaining_WithArrayOfWordsAndChar_ReturnsIndicesOfWordsContainingChar(string[] words, char x, int[] expectedResult)
     {
         // Arrange
-        var words = JsonHelper.Parse<string[]>(wordsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

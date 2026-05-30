@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LongestPalindromeByConcatenatingTwoLetterWords;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LongestPalindromeByConcatenatingTwoLetterWords;
 
-public abstract class LongestPalindromeByConcatenatingTwoLetterWordsTestsBase<T>
-    where T : ILongestPalindromeByConcatenatingTwoLetterWords, new()
+public abstract class LongestPalindromeByConcatenatingTwoLetterWordsTestsBase<T> where T : ILongestPalindromeByConcatenatingTwoLetterWords, new()
 {
     [TestMethod]
-    [DataRow("[\"lc\",\"cl\",\"gg\"]", 6)]
-    [DataRow("[\"ab\",\"ty\",\"yt\",\"lc\",\"cl\",\"ab\"]", 8)]
-    [DataRow("[\"cc\",\"ll\",\"xx\"]", 2)]
-    public void LongestPalindrome_WithArrayOfTwoLetterWords_ReturnsMaximumPalindromeLength(string wordsJson,
-        int expectedResult)
+    [DataRow(new[] { "lc", "cl", "gg" }, 6)]
+    [DataRow(new[] { "ab", "ty", "yt", "lc", "cl", "ab" }, 8)]
+    [DataRow(new[] { "cc", "ll", "xx" }, 2)]
+    public void LongestPalindrome_WithArrayOfTwoLetterWords_ReturnsMaximumPalindromeLength(string[] words, int expectedResult)
     {
         // Arrange
-        var words = JsonHelper.Parse<string[]>(wordsJson);
-
         var solution = new T();
 
         // Act

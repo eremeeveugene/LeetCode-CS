@@ -18,8 +18,7 @@ public abstract class ConstructStringWithRepeatLimitTestsBase<T> where T : ICons
     [TestMethod]
     [DataRow("cczazcc", 3, "zzcccac")]
     [DataRow("aababab", 2, "bbabaa")]
-    public void RepeatLimitedString_WithInputStringAndRepeatLimit_ReturnsLexicographicallyLargestString(string s,
-        int repeatLimit, string expectedResult)
+    public void RepeatLimitedString_WithInputStringAndRepeatLimit_ReturnsLexicographicallyLargestString(string s, int repeatLimit, string expectedResult)
     {
         // Arrange
         var solution = new T();

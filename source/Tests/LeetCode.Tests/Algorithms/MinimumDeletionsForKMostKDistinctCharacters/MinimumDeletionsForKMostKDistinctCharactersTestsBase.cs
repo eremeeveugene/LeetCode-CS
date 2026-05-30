@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MinimumDeletionsForKMostKDistinctCharacters;
 
 namespace LeetCode.Tests.Algorithms.MinimumDeletionsForKMostKDistinctCharacters;
 
-public abstract class MinimumDeletionsForKMostKDistinctCharactersTestsBase<T>
-    where T : IMinimumDeletionsForKMostKDistinctCharacters, new()
+public abstract class MinimumDeletionsForKMostKDistinctCharactersTestsBase<T> where T : IMinimumDeletionsForKMostKDistinctCharacters, new()
 {
     [TestMethod]
     [DataRow("abc", 2, 1)]

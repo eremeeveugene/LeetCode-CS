@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MinimumStringLengthAfterRemovingSubstrings;
 
 namespace LeetCode.Tests.Algorithms.MinimumStringLengthAfterRemovingSubstrings;
 
-public abstract class MinimumStringLengthAfterRemovingSubstringsTestsBase<T>
-    where T : IMinimumStringLengthAfterRemovingSubstrings, new()
+public abstract class MinimumStringLengthAfterRemovingSubstringsTestsBase<T> where T : IMinimumStringLengthAfterRemovingSubstrings, new()
 {
     [TestMethod]
     [DataRow("ABFCACDB", 2)]

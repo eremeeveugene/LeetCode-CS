@@ -13,15 +13,13 @@ using LeetCode.Algorithms.NumberOfSubstringsContainingAllThreeCharacters;
 
 namespace LeetCode.Tests.Algorithms.NumberOfSubstringsContainingAllThreeCharacters;
 
-public abstract class NumberOfSubstringsContainingAllThreeCharactersTestsBase<T>
-    where T : INumberOfSubstringsContainingAllThreeCharacters, new()
+public abstract class NumberOfSubstringsContainingAllThreeCharactersTestsBase<T> where T : INumberOfSubstringsContainingAllThreeCharacters, new()
 {
     [TestMethod]
     [DataRow("abcabc", 10)]
     [DataRow("aaacb", 3)]
     [DataRow("abc", 1)]
-    public void NumberOfSubstrings_WithGivenString_ReturnsNumberOfSubstringsContainingAllThreeCharacters(string s,
-        int expectedResult)
+    public void NumberOfSubstrings_WithGivenString_ReturnsNumberOfSubstringsContainingAllThreeCharacters(string s, int expectedResult)
     {
         // Arrange
         var solution = new T();

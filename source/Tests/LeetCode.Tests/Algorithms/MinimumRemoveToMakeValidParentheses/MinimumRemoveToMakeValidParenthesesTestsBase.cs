@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses;
 
 namespace LeetCode.Tests.Algorithms.MinimumRemoveToMakeValidParentheses;
 
-public abstract class MinimumRemoveToMakeValidParenthesesTestsBase<T>
-    where T : IMinimumRemoveToMakeValidParentheses, new()
+public abstract class MinimumRemoveToMakeValidParenthesesTestsBase<T> where T : IMinimumRemoveToMakeValidParentheses, new()
 {
     [TestMethod]
     [DataRow("lee(t(c)o)de)", "lee(t(c)o)de")]

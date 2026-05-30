@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SpiralMatrix4;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.SpiralMatrix4;
@@ -18,16 +17,11 @@ namespace LeetCode.Tests.Algorithms.SpiralMatrix4;
 public abstract class SpiralMatrix4TestsBase<T> where T : ISpiralMatrix4, new()
 {
     [TestMethod]
-    [DataRow(3, 5, "[3,0,2,6,8,1,7,9,4,2,5,5,0]", "[[3,0,2,6,8],[5,0,-1,-1,1],[5,2,4,9,7]]")]
-    [DataRow(1, 4, "[0,1,2]", "[[0,1,2,-1]]")]
-    [DataRow(4, 4, "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]", "[[1,2,3,4],[12,13,14,5],[11,16,15,6],[10,9,8,7]]")]
-    public void SpiralMatrix_WithDimensionsAndLinkedList_FillsMatrixInClockwiseSpiralOrderOrMinusOne(int m, int n,
-        string headJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void SpiralMatrix_WithDimensionsAndLinkedList_FillsMatrixInClockwiseSpiralOrderOrMinusOne(int m, int n, int[] headArray, int[][] expectedResult)
     {
         // Arrange
-        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNodeOrThrow(headArray);
-        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
 
         var solution = new T();
 
@@ -36,5 +30,14 @@ public abstract class SpiralMatrix4TestsBase<T> where T : ISpiralMatrix4, new()
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [3, 5, new[] { 3, 0, 2, 6, 8, 1, 7, 9, 4, 2, 5, 5, 0 }, new[] { new[] { 3, 0, 2, 6, 8 }, new[] { 5, 0, -1, -1, 1 }, new[] { 5, 2, 4, 9, 7 } }];
+
+        yield return [1, 4, new[] { 0, 1, 2 }, new[] { new[] { 0, 1, 2, -1 } }];
+
+        yield return [4, 4, new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 }, new[] { new[] { 1, 2, 3, 4 }, new[] { 12, 13, 14, 5 }, new[] { 11, 16, 15, 6 }, new[] { 10, 9, 8, 7 } }];
     }
 }

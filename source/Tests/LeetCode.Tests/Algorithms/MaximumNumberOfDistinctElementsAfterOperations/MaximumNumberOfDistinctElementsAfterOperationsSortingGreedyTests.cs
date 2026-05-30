@@ -14,6 +14,4 @@ using LeetCode.Algorithms.MaximumNumberOfDistinctElementsAfterOperations;
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfDistinctElementsAfterOperations;
 
 [TestClass]
-public class MaximumNumberOfDistinctElementsAfterOperationsSortingGreedyTests :
-    MaximumNumberOfDistinctElementsAfterOperationsTestsBase<
-        MaximumNumberOfDistinctElementsAfterOperationsSortingGreedy>;
+public class MaximumNumberOfDistinctElementsAfterOperationsSortingGreedyTests : MaximumNumberOfDistinctElementsAfterOperationsTestsBase<MaximumNumberOfDistinctElementsAfterOperationsSortingGreedy>;

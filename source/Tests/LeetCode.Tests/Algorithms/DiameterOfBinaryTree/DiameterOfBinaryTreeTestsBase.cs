@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DiameterOfBinaryTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.DiameterOfBinaryTree;
@@ -18,14 +17,10 @@ namespace LeetCode.Tests.Algorithms.DiameterOfBinaryTree;
 public abstract class DiameterOfBinaryTreeTestsBase<T> where T : IDiameterOfBinaryTree, new()
 {
     [TestMethod]
-    [DataRow("[]", 0)]
-    [DataRow("[1,2,3,4,5]", 3)]
-    [DataRow("[1,2]", 1)]
-    public void DiameterOfBinaryTree_WithBinaryTreeInput_ReturnsLengthOfLongestPathBetweenNodes(string rootJson,
-        int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void DiameterOfBinaryTree_WithBinaryTreeInput_ReturnsLengthOfLongestPathBetweenNodes(int?[] arrayRoot, int expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(arrayRoot);
 
         var solution = new T();
@@ -35,5 +30,14 @@ public abstract class DiameterOfBinaryTreeTestsBase<T> where T : IDiameterOfBina
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), 0];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5 }, 3];
+
+        yield return [new int?[] { 1, 2 }, 1];
     }
 }

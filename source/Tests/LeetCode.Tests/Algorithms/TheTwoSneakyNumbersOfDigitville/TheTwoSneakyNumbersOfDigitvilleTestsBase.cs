@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.TheTwoSneakyNumbersOfDigitville;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.TheTwoSneakyNumbersOfDigitville;
 
 public abstract class TheTwoSneakyNumbersOfDigitvilleTestsBase<T> where T : ITheTwoSneakyNumbersOfDigitville, new()
 {
     [TestMethod]
-    [DataRow("[0,1,1,0]", "[0,1]")]
-    [DataRow("[0,3,2,1,3,2]", "[2,3]")]
-    [DataRow("[7,1,5,4,3,4,6,0,9,5,8,2]", "[4,5]")]
-    public void GetSneakyNumbers_GivenArrayOfNumbers_ReturnsSneakyNumbers(string numsJson,
-        string expectedResultJson)
+    [DataRow(new[] { 0, 1, 1, 0 }, new[] { 0, 1 })]
+    [DataRow(new[] { 0, 3, 2, 1, 3, 2 }, new[] { 2, 3 })]
+    [DataRow(new[] { 7, 1, 5, 4, 3, 4, 6, 0, 9, 5, 8, 2 }, new[] { 4, 5 })]
+    public void GetSneakyNumbers_GivenArrayOfNumbers_ReturnsSneakyNumbers(int[] nums, int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

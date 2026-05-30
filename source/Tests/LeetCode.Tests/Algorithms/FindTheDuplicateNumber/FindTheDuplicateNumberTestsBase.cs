@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTheDuplicateNumber;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindTheDuplicateNumber;
 
 public abstract class FindTheDuplicateNumberTestsBase<T> where T : IFindTheDuplicateNumber, new()
 {
     [TestMethod]
-    [DataRow("[1, 3, 4, 2, 2]", 2)]
-    [DataRow("[3, 1, 3, 4, 2]", 3)]
-    [DataRow("[3, 3, 3, 3, 3]", 3)]
-    public void FindDuplicate_GivenArray_ReturnsFirstDuplicate(string numsJson, int expectedResult)
+    [DataRow(new[] { 1, 3, 4, 2, 2 }, 2)]
+    [DataRow(new[] { 3, 1, 3, 4, 2 }, 3)]
+    [DataRow(new[] { 3, 3, 3, 3, 3 }, 3)]
+    public void FindDuplicate_GivenArray_ReturnsFirstDuplicate(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

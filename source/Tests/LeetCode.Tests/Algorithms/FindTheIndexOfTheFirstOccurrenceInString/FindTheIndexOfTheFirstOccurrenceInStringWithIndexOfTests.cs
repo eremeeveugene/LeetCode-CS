@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 namespace LeetCode.Tests.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 
 [TestClass]
-public sealed class FindTheIndexOfTheFirstOccurrenceInStringWithIndexOfTests :
-    FindTheIndexOfTheFirstOccurrenceInStringTestsBase<FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf>;
+public sealed class FindTheIndexOfTheFirstOccurrenceInStringWithIndexOfTests : FindTheIndexOfTheFirstOccurrenceInStringTestsBase<FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf>;

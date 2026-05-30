@@ -10,21 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RichestCustomerWealth;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.RichestCustomerWealth;
 
 public abstract class RichestCustomerWealthTestsBase<T> where T : IRichestCustomerWealth, new()
 {
     [TestMethod]
-    [DataRow("[[1,2,3],[3,2,1]]", 6)]
-    [DataRow("[[1,5],[7,3],[3,5]]", 10)]
-    [DataRow("[[2,8,7],[7,1,3],[1,9,5]]", 17)]
-    public void MaximumWealth_WithJsonAccounts_ReturnsMaximumWealth(string jsonAccounts, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MaximumWealth_WithJsonAccounts_ReturnsMaximumWealth(int[][] accounts, int expectedResult)
     {
         // Arrange
-        var accounts = JsonHelper.Parse<int[][]>(jsonAccounts);
-
         var solution = new T();
 
         // Act
@@ -32,5 +27,14 @@ public abstract class RichestCustomerWealthTestsBase<T> where T : IRichestCustom
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { 3, 2, 1 } }, 6];
+
+        yield return [new[] { new[] { 1, 5 }, new[] { 7, 3 }, new[] { 3, 5 } }, 10];
+
+        yield return [new[] { new[] { 2, 8, 7 }, new[] { 7, 1, 3 }, new[] { 1, 9, 5 } }, 17];
     }
 }

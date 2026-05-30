@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree;
 
-public abstract class FindMinimumOperationsToMakeAllElementsDivisibleByThreeTestsBase<T>
-    where T : IFindMinimumOperationsToMakeAllElementsDivisibleByThree, new()
+public abstract class FindMinimumOperationsToMakeAllElementsDivisibleByThreeTestsBase<T> where T : IFindMinimumOperationsToMakeAllElementsDivisibleByThree, new()
 {
     [TestMethod]
-    [DataRow("[1, 2, 3, 4]", 3)]
-    [DataRow("[3, 6, 9]", 0)]
-    public void MinimumOperations_WithGivenNums_ReturnsMinimumOperationsCount(string numsJson, int expectedResult)
+    [DataRow(new[] { 1, 2, 3, 4 }, 3)]
+    [DataRow(new[] { 3, 6, 9 }, 0)]
+    public void MinimumOperations_WithGivenNums_ReturnsMinimumOperationsCount(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

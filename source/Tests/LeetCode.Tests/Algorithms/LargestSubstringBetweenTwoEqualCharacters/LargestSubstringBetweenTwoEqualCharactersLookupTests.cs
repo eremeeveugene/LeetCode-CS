@@ -14,5 +14,4 @@ using LeetCode.Algorithms.LargestSubstringBetweenTwoEqualCharacters;
 namespace LeetCode.Tests.Algorithms.LargestSubstringBetweenTwoEqualCharacters;
 
 [TestClass]
-public sealed class LargestSubstringBetweenTwoEqualCharactersLookupTests :
-    LargestSubstringBetweenTwoEqualCharactersTestsBase<LargestSubstringBetweenTwoEqualCharactersLookup>;
+public sealed class LargestSubstringBetweenTwoEqualCharactersLookupTests : LargestSubstringBetweenTwoEqualCharactersTestsBase<LargestSubstringBetweenTwoEqualCharactersLookup>;

@@ -13,8 +13,7 @@ using LeetCode.Algorithms.UsingRobotToPrintTheLexicographicallySmallestString;
 
 namespace LeetCode.Tests.Algorithms.UsingRobotToPrintTheLexicographicallySmallestString;
 
-public abstract class UsingRobotToPrintTheLexicographicallySmallestStringTestsBase<T> where T :
-    IUsingRobotToPrintTheLexicographicallySmallestString, new()
+public abstract class UsingRobotToPrintTheLexicographicallySmallestStringTestsBase<T> where T : IUsingRobotToPrintTheLexicographicallySmallestString, new()
 {
     [TestMethod]
     [DataRow("zza", "azz")]
@@ -24,8 +23,7 @@ public abstract class UsingRobotToPrintTheLexicographicallySmallestStringTestsBa
     [DataRow("bzeyxf", "befxyz")]
     [DataRow("vzhofnpo", "fnohopzv")]
     [DataRow("mmuqezwmomeplrtskz", "eekstrlpmomwzqummz")]
-    public void RobotWithString_WithGivenString_ReturnsLexicographicallySmallestWrittenString(string s,
-        string expectedResult)
+    public void RobotWithString_WithGivenString_ReturnsLexicographicallySmallestWrittenString(string s, string expectedResult)
     {
         // Arrange
         var solution = new T();

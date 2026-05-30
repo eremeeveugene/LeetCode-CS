@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountUnguardedCellsInTheGrid;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountUnguardedCellsInTheGrid;
 
 public abstract class CountUnguardedCellsInTheGridTestsBase<T> where T : ICountUnguardedCellsInTheGrid, new()
 {
     [TestMethod]
-    [DataRow(4, 6, "[[0,0],[1,1],[2,3]]", "[[0,1],[2,2],[1,4]]", 7)]
-    [DataRow(3, 3, "[[1,1]]", "[[0,1],[1,0],[2,1],[1,2]]", 4)]
-    public void CountUnguarded_WithGridSizeGuardsAndWalls_ReturnsNumberOfUnguardedCells(int m, int n,
-        string guardsJson, string wordsJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void CountUnguarded_WithGridSizeGuardsAndWalls_ReturnsNumberOfUnguardedCells(int m, int n, int[][] guards, int[][] words, int expectedResult)
     {
         // Arrange
-        var guards = JsonHelper.Parse<int[][]>(guardsJson);
-        var words = JsonHelper.Parse<int[][]>(wordsJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +27,12 @@ public abstract class CountUnguardedCellsInTheGridTestsBase<T> where T : ICountU
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [4, 6, new[] { new[] { 0, 0 }, new[] { 1, 1 }, new[] { 2, 3 } }, new[] { new[] { 0, 1 }, new[] { 2, 2 }, new[] { 1, 4 } }, 7];
+
+        yield return [3, 3, new[] { new[] { 1, 1 } }, new[] { new[] { 0, 1 }, new[] { 1, 0 }, new[] { 2, 1 }, new[] { 1, 2 } }, 4];
     }
 }

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SplitStringsBySeparator;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SplitStringsBySeparator;
 
 public abstract class SplitStringsBySeparatorTestsBase<T> where T : ISplitStringsBySeparator, new()
 {
     [TestMethod]
-    [DataRow("[\"one.two.three\",\"four.five\",\"six\"]", '.', "[\"one\",\"two\",\"three\",\"four\",\"five\",\"six\"]")]
-    [DataRow("[\"$easy$\",\"$problem$\"]", '$', "[\"easy\",\"problem\"]")]
-    [DataRow("[\"|||\"]", '|', "[]")]
-    public void SplitWordsBySeparator_WithStringsContainingSeparator_RemovesSeparatorAndExcludesEmptyStrings(
-        string wordsJson, char separator, string expectedResultJson)
+    [DataRow(new[] { "one.two.three", "four.five", "six" }, '.', new[] { "one", "two", "three", "four", "five", "six" })]
+    [DataRow(new[] { "$easy$", "$problem$" }, '$', new[] { "easy", "problem" })]
+    [DataRow(new[] { "|||" }, '|', new string[] { })]
+    public void SplitWordsBySeparator_WithStringsContainingSeparator_RemovesSeparatorAndExcludesEmptyStrings(string[] words, char separator, string[] expectedResult)
     {
         // Arrange
-        var words = JsonHelper.Parse<string[]>(wordsJson);
-        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.NRepeatedElementInSize2NArray;
 namespace LeetCode.Tests.Algorithms.NRepeatedElementInSize2NArray;
 
 [TestClass]
-public sealed class NRepeatedElementInSize2NArrayLookupTests :
-    NRepeatedElementInSize2NArrayTestsBase<NRepeatedElementInSize2NArrayLookup>;
+public sealed class NRepeatedElementInSize2NArrayLookupTests : NRepeatedElementInSize2NArrayTestsBase<NRepeatedElementInSize2NArrayLookup>;

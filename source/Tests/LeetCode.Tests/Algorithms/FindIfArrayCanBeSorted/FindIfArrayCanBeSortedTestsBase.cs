@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindIfArrayCanBeSorted;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.FindIfArrayCanBeSorted;
 
 public abstract class FindIfArrayCanBeSortedTestsBase<T> where T : IFindIfArrayCanBeSorted, new()
 {
     [TestMethod]
-    [DataRow("[8,4,2,30,15]", true)]
-    [DataRow("[1,2,3,4,5]", true)]
-    [DataRow("[3,16,8,4,2]", false)]
-    public void CanSortArray_WithUnsortedOrSortedArray_ReturnsIfArrayCanBeSorted(string numsJson,
-        bool expectedResult)
+    [DataRow(new[] { 8, 4, 2, 30, 15 }, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, true)]
+    [DataRow(new[] { 3, 16, 8, 4, 2 }, false)]
+    public void CanSortArray_WithUnsortedOrSortedArray_ReturnsIfArrayCanBeSorted(int[] nums, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

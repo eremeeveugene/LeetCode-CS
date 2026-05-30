@@ -31,8 +31,7 @@ public sealed class RemoveAllOccurrencesOfSubstringStringBuilder : IRemoveAllOcc
         {
             stringBuilder.Append(c);
 
-            if (stringBuilder.Length >= part.Length &&
-                stringBuilder.ToString(stringBuilder.Length - part.Length, part.Length) == part)
+            if (stringBuilder.Length >= part.Length && stringBuilder.ToString(stringBuilder.Length - part.Length, part.Length) == part)
             {
                 stringBuilder.Length -= part.Length;
             }

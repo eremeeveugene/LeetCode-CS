@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SumOfGoodNumbers;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SumOfGoodNumbers;
 
 public abstract class SumOfGoodNumbersTestsBase<T> where T : ISumOfGoodNumbers, new()
 {
     [TestMethod]
-    [DataRow("[1,3,2,1,5,4]", 2, 12)]
-    [DataRow("[2,1]", 1, 2)]
-    public void SumOfGoodNumbers_WithArrayAndThresholdK_ReturnsSumOfGoodNumbers(string numsJson,
-        int k, int expectedResult)
+    [DataRow(new[] { 1, 3, 2, 1, 5, 4 }, 2, 12)]
+    [DataRow(new[] { 2, 1 }, 1, 2)]
+    public void SumOfGoodNumbers_WithArrayAndThresholdK_ReturnsSumOfGoodNumbers(int[] nums, int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

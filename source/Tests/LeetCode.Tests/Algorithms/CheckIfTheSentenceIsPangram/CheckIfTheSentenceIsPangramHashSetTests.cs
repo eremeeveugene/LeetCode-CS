@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CheckIfTheSentenceIsPangram;
 namespace LeetCode.Tests.Algorithms.CheckIfTheSentenceIsPangram;
 
 [TestClass]
-public sealed class CheckIfTheSentenceIsPangramHashsetTests :
-    CheckIfTheSentenceIsPangramTestsBase<CheckIfTheSentenceIsPangramHashSet>;
+public sealed class CheckIfTheSentenceIsPangramHashsetTests : CheckIfTheSentenceIsPangramTestsBase<CheckIfTheSentenceIsPangramHashSet>;

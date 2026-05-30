@@ -14,5 +14,4 @@ using LeetCode.Algorithms.NumberOfPeopleAwareOfSecret;
 namespace LeetCode.Tests.Algorithms.NumberOfPeopleAwareOfSecret;
 
 [TestClass]
-public sealed class NumberOfPeopleAwareOfSecretLineSweepTests :
-    NumberOfPeopleAwareOfSecretTestsBase<NumberOfPeopleAwareOfSecretLineSweep>;
+public sealed class NumberOfPeopleAwareOfSecretLineSweepTests : NumberOfPeopleAwareOfSecretTestsBase<NumberOfPeopleAwareOfSecretLineSweep>;

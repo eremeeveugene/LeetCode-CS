@@ -13,8 +13,7 @@ using LeetCode.Algorithms.CheckIfDigitsAreEqualInStringAfterOperations1;
 
 namespace LeetCode.Tests.Algorithms.CheckIfDigitsAreEqualInStringAfterOperations1;
 
-public abstract class CheckIfDigitsAreEqualInStringAfterOperations1TestsBase<T>
-    where T : ICheckIfDigitsAreEqualInStringAfterOperations1, new()
+public abstract class CheckIfDigitsAreEqualInStringAfterOperations1TestsBase<T> where T : ICheckIfDigitsAreEqualInStringAfterOperations1, new()
 {
     [TestMethod]
     [DataRow("323", true)]

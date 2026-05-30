@@ -13,14 +13,12 @@ using LeetCode.Algorithms.MinimumDeletionsToMakeStringBalanced;
 
 namespace LeetCode.Tests.Algorithms.MinimumDeletionsToMakeStringBalanced;
 
-public abstract class MinimumDeletionsToMakeStringBalancedTestsBase<T>
-    where T : IMinimumDeletionsToMakeStringBalanced, new()
+public abstract class MinimumDeletionsToMakeStringBalancedTestsBase<T> where T : IMinimumDeletionsToMakeStringBalanced, new()
 {
     [TestMethod]
     [DataRow("aababbab", 2)]
     [DataRow("bbaaaaabb", 2)]
-    public void MinimumDeletions_WithInputString_ReturnsMinimumDeletionsToMakeStringBalanced(string s,
-        int expectedResult)
+    public void MinimumDeletions_WithInputString_ReturnsMinimumDeletionsToMakeStringBalanced(string s, int expectedResult)
     {
         // Arrange
         var solution = new T();

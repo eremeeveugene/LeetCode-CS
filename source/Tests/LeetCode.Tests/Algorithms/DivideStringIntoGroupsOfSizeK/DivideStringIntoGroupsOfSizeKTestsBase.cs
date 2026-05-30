@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DivideStringIntoGroupsOfSizeK;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DivideStringIntoGroupsOfSizeK;
 
-public abstract class DivideStringIntoGroupsOfSizeKTestsBase<T>
-    where T : IDivideStringIntoGroupsOfSizeK, new()
+public abstract class DivideStringIntoGroupsOfSizeKTestsBase<T> where T : IDivideStringIntoGroupsOfSizeK, new()
 {
     [TestMethod]
-    [DataRow("abcdefghi", 3, 'x', "[\"abc\",\"def\",\"ghi\"]")]
-    [DataRow("abcdefghij", 3, 'x', "[\"abc\",\"def\",\"ghi\",\"jxx\"]")]
-    public void DivideString_WithLengthMultipleOfK_ReturnsGroupsWithoutPadding(string s, int k, char fill,
-        string expectedResultJson)
+    [DataRow("abcdefghi", 3, 'x', new[] { "abc", "def", "ghi" })]
+    [DataRow("abcdefghij", 3, 'x', new[] { "abc", "def", "ghi", "jxx" })]
+    public void DivideString_WithLengthMultipleOfK_ReturnsGroupsWithoutPadding(string s, int k, char fill, string[] expectedResult)
     {
         // Arrange
-        var expectedResult = JsonHelper.Parse<string[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

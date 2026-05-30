@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.MinimizedMaximumOfProductsDistributedToAnyStore;
 
 /// <inheritdoc />
-public sealed class
-    MinimizedMaximumOfProductsDistributedToAnyStoreBinarySearch : IMinimizedMaximumOfProductsDistributedToAnyStore
+public sealed class MinimizedMaximumOfProductsDistributedToAnyStoreBinarySearch : IMinimizedMaximumOfProductsDistributedToAnyStore
 {
     /// <summary>
     ///     Time complexity - O(n * log Q)

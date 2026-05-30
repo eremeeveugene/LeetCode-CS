@@ -77,7 +77,6 @@ public sealed class LinkedListInBinaryTreeKnuthMorrisPratt : ILinkedListInBinary
             return true;
         }
 
-        return IsSubPath(treeNode.left, patternIndex, patternList, prefixList) ||
-               IsSubPath(treeNode.right, patternIndex, patternList, prefixList);
+        return IsSubPath(treeNode.left, patternIndex, patternList, prefixList) || IsSubPath(treeNode.right, patternIndex, patternList, prefixList);
     }
 }

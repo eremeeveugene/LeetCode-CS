@@ -14,10 +14,7 @@ namespace LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations;
 /// <inheritdoc />
 public sealed class FinalValueOfVariableAfterPerformingOperationsDictionary : IFinalValueOfVariableAfterPerformingOperations
 {
-    private static readonly Dictionary<string, int> OperationsDictionary = new()
-    {
-        { "++X", 1 }, { "X++", 1 }, { "--X", -1 }, { "X--", -1 }
-    };
+    private static readonly Dictionary<string, int> OperationsDictionary = new() { { "++X", 1 }, { "X++", 1 }, { "--X", -1 }, { "X--", -1 } };
 
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountServersThatCommunicate;
 namespace LeetCode.Tests.Algorithms.CountServersThatCommunicate;
 
 [TestClass]
-public sealed class CountServersThatCommunicateCountingTests :
-    CountServersThatCommunicateTestsBase<CountServersThatCommunicateCounting>;
+public sealed class CountServersThatCommunicateCountingTests : CountServersThatCommunicateTestsBase<CountServersThatCommunicateCounting>;

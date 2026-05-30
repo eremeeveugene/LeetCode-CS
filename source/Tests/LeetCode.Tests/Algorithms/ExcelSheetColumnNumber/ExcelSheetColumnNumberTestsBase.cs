@@ -28,8 +28,7 @@ public abstract class ExcelSheetColumnNumberTestsBase<T> where T : IExcelSheetCo
     [DataRow("ZZZZZ", 12356630)]
     [DataRow("AB", 28)]
     [DataRow("ZY", 701)]
-    public void TitleToNumber_WithExcelColumnTitle_ReturnsCorrespondingColumnNumber(string columnTitle,
-        int expectedResult)
+    public void TitleToNumber_WithExcelColumnTitle_ReturnsCorrespondingColumnNumber(string columnTitle, int expectedResult)
     {
         // Arrange
         var solution = new T();

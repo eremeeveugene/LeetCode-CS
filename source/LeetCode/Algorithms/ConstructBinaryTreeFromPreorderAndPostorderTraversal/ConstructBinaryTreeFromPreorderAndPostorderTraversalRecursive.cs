@@ -14,8 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTraversal;
 
 /// <inheritdoc />
-public sealed class ConstructBinaryTreeFromPreorderAndPostorderTraversalRecursive :
-    IConstructBinaryTreeFromPreorderAndPostorderTraversal
+public sealed class ConstructBinaryTreeFromPreorderAndPostorderTraversalRecursive : IConstructBinaryTreeFromPreorderAndPostorderTraversal
 {
     /// <summary>
     ///     Time complexity - O(n)
@@ -29,8 +28,7 @@ public sealed class ConstructBinaryTreeFromPreorderAndPostorderTraversalRecursiv
         return ConstructFromPrePost(preorder, postorder, 0, preorder.Length - 1, 0)!;
     }
 
-    private static TreeNode? ConstructFromPrePost(int[] preorder, int[] postorder, int preorderStart, int preorderEnd,
-        int postorderStart)
+    private static TreeNode? ConstructFromPrePost(int[] preorder, int[] postorder, int preorderStart, int preorderEnd, int postorderStart)
     {
         if (preorderStart > preorderEnd)
         {
@@ -49,11 +47,9 @@ public sealed class ConstructBinaryTreeFromPreorderAndPostorderTraversalRecursiv
             numOfNodesInLeft++;
         }
 
-        var left = ConstructFromPrePost(preorder, postorder, preorderStart + 1, preorderStart + numOfNodesInLeft,
-            postorderStart);
+        var left = ConstructFromPrePost(preorder, postorder, preorderStart + 1, preorderStart + numOfNodesInLeft, postorderStart);
 
-        var right = ConstructFromPrePost(preorder, postorder, preorderStart + numOfNodesInLeft + 1, preorderEnd,
-            postorderStart + numOfNodesInLeft);
+        var right = ConstructFromPrePost(preorder, postorder, preorderStart + numOfNodesInLeft + 1, preorderEnd, postorderStart + numOfNodesInLeft);
 
         return new TreeNode(preorder[preorderStart], left, right);
     }

@@ -76,18 +76,10 @@ public sealed class WalkingRobotSimulation2Simulation : IWalkingRobotSimulation2
 
         if (_position < (2 * _width) + _height - 2)
         {
-            return
-            [
-                _width - 1 - (_position - (_width + _height - 2)),
-                _height - 1
-            ];
+            return [_width - 1 - (_position - (_width + _height - 2)), _height - 1];
         }
 
-        return
-        [
-            0,
-            _height - 1 - (_position - ((2 * _width) + _height - 3))
-        ];
+        return [0, _height - 1 - (_position - ((2 * _width) + _height - 3))];
     }
 
     /// <inheritdoc />

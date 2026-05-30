@@ -14,5 +14,4 @@ using LeetCode.Algorithms.LeftAndRightSumDifferences;
 namespace LeetCode.Tests.Algorithms.LeftAndRightSumDifferences;
 
 [TestClass]
-public sealed class LeftAndRightSumDifferencesPrefixSumTests :
-    LeftAndRightSumDifferencesTestsBase<LeftAndRightSumDifferencesPrefixSum>;
+public sealed class LeftAndRightSumDifferencesPrefixSumTests : LeftAndRightSumDifferencesTestsBase<LeftAndRightSumDifferencesPrefixSum>;

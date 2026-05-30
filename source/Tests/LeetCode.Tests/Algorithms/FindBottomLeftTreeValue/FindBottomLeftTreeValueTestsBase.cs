@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindBottomLeftTreeValue;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.FindBottomLeftTreeValue;
@@ -18,16 +17,10 @@ namespace LeetCode.Tests.Algorithms.FindBottomLeftTreeValue;
 public abstract class FindBottomLeftTreeValueTestsBase<T> where T : IFindBottomLeftTreeValue, new()
 {
     [TestMethod]
-    [DataRow("[]", 0)]
-    [DataRow("[2,1,3]", 1)]
-    [DataRow("[1,2,3,4,null,5,6,null,null,7]", 7)]
-    [DataRow("[1,null,1]", 1)]
-    [DataRow("[1,2,3,4,null,5,6,null,null,7, null, 8, 9, null, null, null, null, null, 10]", 10)]
-    public void FindBottomLeftValue_GivenBinaryTreeJson_ReturnsBottomLeftValue(string rootJson,
-        int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void FindBottomLeftValue_GivenBinaryTreeJson_ReturnsBottomLeftValue(int?[] arrayRoot, int expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(arrayRoot);
 
         var solution = new T();
@@ -37,5 +30,18 @@ public abstract class FindBottomLeftTreeValueTestsBase<T> where T : IFindBottomL
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), 0];
+
+        yield return [new int?[] { 2, 1, 3 }, 1];
+
+        yield return [new int?[] { 1, 2, 3, 4, null, 5, 6, null, null, 7 }, 7];
+
+        yield return [new int?[] { 1, null, 1 }, 1];
+
+        yield return [new int?[] { 1, 2, 3, 4, null, 5, 6, null, null, 7, null, 8, 9, null, null, null, null, null, 10 }, 10];
     }
 }

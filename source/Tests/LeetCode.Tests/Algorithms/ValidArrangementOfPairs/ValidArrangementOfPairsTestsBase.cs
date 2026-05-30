@@ -10,27 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ValidArrangementOfPairs;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ValidArrangementOfPairs;
 
 public abstract class ValidArrangementOfPairsTestsBase<T> where T : IValidArrangementOfPairs, new()
 {
     [TestMethod]
-    //[DataRow("[[1,2],[1,3],[2,1]]", "[[1,2],[2,1],[1,3]]")]
-    //[DataRow("[[1,3],[3,2],[2,1]]", "[[1,3],[3,2],[2,1]]")]
-    //[DataRow("[[5,1],[4,5],[11,9],[9,4]]", "[[11,9],[9,4],[4,5],[5,1]]")]
-    //[DataRow("[[5,1],[4,5],[11,9],[9,4],[5,2],[2,6],[6,7],[7,8],[8,5],[5,12],[12,13],[13,5]]",
-    //    "[[11,9],[9,4],[4,5],[5,12],[12,13],[13,5],[5,2],[2,6],[6,7],[7,8],[8,5],[5,1]]")]
-    [DataRow("[[4,5],[11,9],[9,4],[5,2],[2,6],[6,7],[7,8],[8,5],[5,12],[12,13],[13,5],[5,1]] ",
-        "[[11,9],[9,4],[4,5],[5,12],[12,13],[13,5],[5,2],[2,6],[6,7],[7,8],[8,5],[5,1]]")]
-    public void ValidArrangement_WithDirectedEdgePairs_ReturnsValidArrangementOfPairs(string pairsJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void ValidArrangement_WithDirectedEdgePairs_ReturnsValidArrangementOfPairs(int[][] pairs, int[][] expectedResult)
     {
         // Arrange
-        var pairs = JsonHelper.Parse<int[][]>(pairsJson);
-        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -38,5 +27,10 @@ public abstract class ValidArrangementOfPairsTestsBase<T> where T : IValidArrang
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 4, 5 }, new[] { 11, 9 }, new[] { 9, 4 }, new[] { 5, 2 }, new[] { 2, 6 }, new[] { 6, 7 }, new[] { 7, 8 }, new[] { 8, 5 }, new[] { 5, 12 }, new[] { 12, 13 }, new[] { 13, 5 }, new[] { 5, 1 } }, new[] { new[] { 11, 9 }, new[] { 9, 4 }, new[] { 4, 5 }, new[] { 5, 12 }, new[] { 12, 13 }, new[] { 13, 5 }, new[] { 5, 2 }, new[] { 2, 6 }, new[] { 6, 7 }, new[] { 7, 8 }, new[] { 8, 5 }, new[] { 5, 1 } }];
     }
 }

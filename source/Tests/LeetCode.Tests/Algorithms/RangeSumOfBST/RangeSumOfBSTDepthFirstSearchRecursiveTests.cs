@@ -14,5 +14,4 @@ using LeetCode.Algorithms.RangeSumOfBST;
 namespace LeetCode.Tests.Algorithms.RangeSumOfBST;
 
 [TestClass]
-public sealed class
-    RangeSumOfBSTDepthFirstSearchRecursiveTests : RangeSumOfBSTTestsBase<RangeSumOfBSTDepthFirstSearchRecursive>;
+public sealed class RangeSumOfBSTDepthFirstSearchRecursiveTests : RangeSumOfBSTTestsBase<RangeSumOfBSTDepthFirstSearchRecursive>;

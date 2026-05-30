@@ -10,23 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LuckyNumbersInMatrix;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LuckyNumbersInMatrix;
 
 public abstract class LuckyNumbersInMatrixTestsBase<T> where T : ILuckyNumbersInMatrix, new()
 {
     [TestMethod]
-    [DataRow("[[3,7,8],[9,11,13],[15,16,17]]", "[15]")]
-    [DataRow("[[1,10,4,2],[9,3,8,7],[15,16,17,12]]", "[12]")]
-    [DataRow("[[7,8],[1,2]]", "[7]")]
-    public void LuckyNumbers_WithMatrixJson_ReturnsLuckyNumbers(string matrixJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void LuckyNumbers_WithMatrixJson_ReturnsLuckyNumbers(int[][] matrix, int[] expectedResult)
     {
         // Arrange
-        var matrix = JsonHelper.Parse<int[][]>(matrixJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +27,14 @@ public abstract class LuckyNumbersInMatrixTestsBase<T> where T : ILuckyNumbersIn
 
         // Assert
         CollectionAssert.AreEquivalent(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 3, 7, 8 }, new[] { 9, 11, 13 }, new[] { 15, 16, 17 } }, new[] { 15 }];
+
+        yield return [new[] { new[] { 1, 10, 4, 2 }, new[] { 9, 3, 8, 7 }, new[] { 15, 16, 17, 12 } }, new[] { 12 }];
+
+        yield return [new[] { new[] { 7, 8 }, new[] { 1, 2 } }, new[] { 7 }];
     }
 }

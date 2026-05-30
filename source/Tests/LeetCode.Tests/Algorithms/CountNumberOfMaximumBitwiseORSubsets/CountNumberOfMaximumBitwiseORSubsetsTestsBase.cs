@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountNumberOfMaximumBitwiseORSubsets;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountNumberOfMaximumBitwiseORSubsets;
 
-public abstract class CountNumberOfMaximumBitwiseORSubsetsTestsBase<T>
-    where T : ICountNumberOfMaximumBitwiseORSubsets, new()
+public abstract class CountNumberOfMaximumBitwiseORSubsetsTestsBase<T> where T : ICountNumberOfMaximumBitwiseORSubsets, new()
 {
     [TestMethod]
-    [DataRow("[3,1]", 2)]
-    [DataRow("[2,2,2]", 7)]
-    [DataRow("[3,2,1,5]", 6)]
-    public void CountMaxOrSubsets_GivenArrayOfIntegers_ReturnsNumberOfMaxOrSubsets(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 3, 1 }, 2)]
+    [DataRow(new[] { 2, 2, 2 }, 7)]
+    [DataRow(new[] { 3, 2, 1, 5 }, 6)]
+    public void CountMaxOrSubsets_GivenArrayOfIntegers_ReturnsNumberOfMaxOrSubsets(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

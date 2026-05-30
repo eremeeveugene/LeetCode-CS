@@ -10,22 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumNumberOfPeopleToTeach;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfPeopleToTeach;
 
 public abstract class MinimumNumberOfPeopleToTeachTestsBase<T> where T : IMinimumNumberOfPeopleToTeach, new()
 {
     [TestMethod]
-    [DataRow(2, "[[1],[2],[1,2]]", "[[1,2],[1,3],[2,3]]", 1)]
-    [DataRow(3, "[[2],[1,3],[1,2],[3]]", "[[1,4],[1,2],[3,4],[2,3]]", 2)]
-    public void MinimumTeachings_WithUsersLackingCommonLanguageInFriendships_ReturnsMinimumUsersToTeach(
-        int languagesCount, string languagesJson, string friendshipsJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MinimumTeachings_WithUsersLackingCommonLanguageInFriendships_ReturnsMinimumUsersToTeach(int languagesCount, int[][] languages, int[][] friendships, int expectedResult)
     {
         // Arrange
-        var languages = JsonHelper.Parse<int[][]>(languagesJson);
-        var friendships = JsonHelper.Parse<int[][]>(friendshipsJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +27,12 @@ public abstract class MinimumNumberOfPeopleToTeachTestsBase<T> where T : IMinimu
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [2, new[] { new[] { 1 }, new[] { 2 }, new[] { 1, 2 } }, new[] { new[] { 1, 2 }, new[] { 1, 3 }, new[] { 2, 3 } }, 1];
+
+        yield return [3, new[] { new[] { 2 }, new[] { 1, 3 }, new[] { 1, 2 }, new[] { 3 } }, new[] { new[] { 1, 4 }, new[] { 1, 2 }, new[] { 3, 4 }, new[] { 2, 3 } }, 2];
     }
 }

@@ -10,21 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DivideIntervalsIntoMinimumNumberOfGroups;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DivideIntervalsIntoMinimumNumberOfGroups;
 
-public abstract class DivideIntervalsIntoMinimumNumberOfGroupsTestsBase<T>
-    where T : IDivideIntervalsIntoMinimumNumberOfGroups, new()
+public abstract class DivideIntervalsIntoMinimumNumberOfGroupsTestsBase<T> where T : IDivideIntervalsIntoMinimumNumberOfGroups, new()
 {
     [TestMethod]
-    [DataRow("[[5,10],[6,8],[1,5],[2,3],[1,10]]", 3)]
-    [DataRow("[[1,3],[5,6],[8,10],[11,13]]", 1)]
-    public void MinGroups_GivenIntervals_ReturnsMinimumNumberOfGroups(string intervalsJson, long expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MinGroups_GivenIntervals_ReturnsMinimumNumberOfGroups(int[][] intervals, long expectedResult)
     {
         // Arrange
-        var intervals = JsonHelper.Parse<int[][]>(intervalsJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +27,12 @@ public abstract class DivideIntervalsIntoMinimumNumberOfGroupsTestsBase<T>
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 5, 10 }, new[] { 6, 8 }, new[] { 1, 5 }, new[] { 2, 3 }, new[] { 1, 10 } }, 3L];
+
+        yield return [new[] { new[] { 1, 3 }, new[] { 5, 6 }, new[] { 8, 10 }, new[] { 11, 13 } }, 1L];
     }
 }

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumCostToReachEveryPosition;
 namespace LeetCode.Tests.Algorithms.MinimumCostToReachEveryPosition;
 
 [TestClass]
-public sealed class MinimumCostToReachEveryPositionGreedyTests :
-    MinimumCostToReachEveryPositionTestsBase<MinimumCostToReachEveryPositionGreedy>;
+public sealed class MinimumCostToReachEveryPositionGreedyTests : MinimumCostToReachEveryPositionTestsBase<MinimumCostToReachEveryPositionGreedy>;

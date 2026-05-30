@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DeleteColumnsToMakeSorted2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DeleteColumnsToMakeSorted2;
 
 public abstract class DeleteColumnsToMakeSorted2TestsBase<T> where T : IDeleteColumnsToMakeSorted2, new()
 {
     [TestMethod]
-    [DataRow("[\"xc\",\"yb\",\"za\"]", 0)]
-    [DataRow("[\"ca\",\"bb\",\"ac\"]", 1)]
-    [DataRow("[\"xga\",\"xfb\",\"yfa\"]", 1)]
-    [DataRow("[\"zyx\",\"wvu\",\"tsr\"]", 3)]
-    public void MinDeletionSize_WithStringsOfEqualLength_ReturnsMinimumDeletionsForLexicographicOrder(string strsJson,
-        int expectedResult)
+    [DataRow(new[] { "xc", "yb", "za" }, 0)]
+    [DataRow(new[] { "ca", "bb", "ac" }, 1)]
+    [DataRow(new[] { "xga", "xfb", "yfa" }, 1)]
+    [DataRow(new[] { "zyx", "wvu", "tsr" }, 3)]
+    public void MinDeletionSize_WithStringsOfEqualLength_ReturnsMinimumDeletionsForLexicographicOrder(string[] strs, int expectedResult)
     {
         // Arrange
-        var strs = JsonHelper.Parse<string[]>(strsJson);
-
         var solution = new T();
 
         // Act

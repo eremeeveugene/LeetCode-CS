@@ -13,14 +13,12 @@ using LeetCode.Algorithms.LexicographicallyMinimumStringAfterRemovingStars;
 
 namespace LeetCode.Tests.Algorithms.LexicographicallyMinimumStringAfterRemovingStars;
 
-public abstract class LexicographicallyMinimumStringAfterRemovingStarsTestsBase<T>
-    where T : ILexicographicallyMinimumStringAfterRemovingStars, new()
+public abstract class LexicographicallyMinimumStringAfterRemovingStarsTestsBase<T> where T : ILexicographicallyMinimumStringAfterRemovingStars, new()
 {
     [TestMethod]
     [DataRow("aaba*", "aab")]
     [DataRow("abc", "abc")]
-    public void ClearStars_WithAsteriskAndCharactersString_ReturnLexicographicallySmallestString(
-        string s, string expectedResult)
+    public void ClearStars_WithAsteriskAndCharactersString_ReturnLexicographicallySmallestString(string s, string expectedResult)
     {
         // Arrange
         var solution = new T();

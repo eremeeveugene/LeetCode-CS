@@ -16,10 +16,7 @@ namespace LeetCode.Tests.Algorithms.WordsWithinTwoEditsOfDictionary;
 public abstract class WordsWithinTwoEditsOfDictionaryTestsBase<T> where T : IWordsWithinTwoEditsOfDictionary, new()
 {
     [TestMethod]
-    [DataRow(
-        new[] { "word", "note", "ants", "wood" },
-        new[] { "wood", "joke", "moat" },
-        new[] { "word", "note", "wood" })]
+    [DataRow(new[] { "word", "note", "ants", "wood" }, new[] { "wood", "joke", "moat" }, new[] { "word", "note", "wood" })]
     [DataRow(new[] { "yes" }, new[] { "not" }, new string[] { })]
     [DataRow(new[] { "abc", "def", "ghi" }, new[] { "abc", "def", "ghi" }, new[] { "abc", "def", "ghi" })]
     [DataRow(new[] { "abcd" }, new[] { "abcd" }, new[] { "abcd" })]
@@ -37,10 +34,7 @@ public abstract class WordsWithinTwoEditsOfDictionaryTestsBase<T> where T : IWor
     [DataRow(new[] { "abcdef" }, new[] { "abcxyz", "xycdef" }, new[] { "abcdef" })]
     [DataRow(new[] { "abcdef" }, new[] { "xyzdef", "abcxyz" }, new string[] { })]
     [DataRow(new[] { "first", "secnd", "third" }, new[] { "first", "xxxxx", "third" }, new[] { "first", "third" })]
-    public void TwoEditWords_WithQueriesAndDictionary_ReturnsQueriesMatchingDictionaryWithinTwoEdits(
-        string[] queries,
-        string[] words,
-        string[] expectedResult)
+    public void TwoEditWords_WithQueriesAndDictionary_ReturnsQueriesMatchingDictionaryWithinTwoEdits(string[] queries, string[] words, string[] expectedResult)
     {
         // Arrange
         var solution = new T();

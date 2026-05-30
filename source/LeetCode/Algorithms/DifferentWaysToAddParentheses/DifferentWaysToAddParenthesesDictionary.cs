@@ -55,13 +55,14 @@ public sealed class DifferentWaysToAddParenthesesDictionary : IDifferentWaysToAd
 
             foreach (var leftResult in leftResults)
             {
-                results.AddRange(rightResults.Select(rightResult => expression[i] switch
-                {
-                    '+' => leftResult + rightResult,
-                    '-' => leftResult - rightResult,
-                    '*' => leftResult * rightResult,
-                    _ => 0
-                }));
+                results.AddRange(
+                    rightResults.Select(rightResult => expression[i] switch
+                    {
+                        '+' => leftResult + rightResult,
+                        '-' => leftResult - rightResult,
+                        '*' => leftResult * rightResult,
+                        _ => 0
+                    }));
             }
         }
 

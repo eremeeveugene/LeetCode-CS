@@ -14,5 +14,4 @@ using LeetCode.Algorithms.LongestSubarrayWithMaximumBitwiseAND;
 namespace LeetCode.Tests.Algorithms.LongestSubarrayWithMaximumBitwiseAND;
 
 [TestClass]
-public sealed class LongestSubarrayWithMaximumBitwiseANDIterativeTests :
-    LongestSubarrayWithMaximumBitwiseANDTestsBase<LongestSubarrayWithMaximumBitwiseANDIterative>;
+public sealed class LongestSubarrayWithMaximumBitwiseANDIterativeTests : LongestSubarrayWithMaximumBitwiseANDTestsBase<LongestSubarrayWithMaximumBitwiseANDIterative>;

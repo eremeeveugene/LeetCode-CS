@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumScoreAfterSplittingString;
 namespace LeetCode.Tests.Algorithms.MaximumScoreAfterSplittingString;
 
 [TestClass]
-public class MaximumScoreAfterSplittingStringIterativeTests :
-    MaximumScoreAfterSplittingStringTestsBase<MaximumScoreAfterSplittingStringIterative>;
+public class MaximumScoreAfterSplittingStringIterativeTests : MaximumScoreAfterSplittingStringTestsBase<MaximumScoreAfterSplittingStringIterative>;

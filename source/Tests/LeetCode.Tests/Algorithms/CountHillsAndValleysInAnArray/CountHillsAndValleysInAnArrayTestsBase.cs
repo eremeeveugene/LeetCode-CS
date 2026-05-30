@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountHillsAndValleysInAnArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountHillsAndValleysInAnArray;
 
 public abstract class CountHillsAndValleysInAnArrayTestsBase<T> where T : ICountHillsAndValleysInAnArray, new()
 {
     [TestMethod]
-    [DataRow("[2,4,1,1,6,5]", 3)]
-    [DataRow("[6,6,5,5,4,1]", 0)]
-    public void CountHillValley_WithArrayContainingHillsAndValleys_ReturnsTotalHillValleyCount(string numsJson,
-        int expectedResult)
+    [DataRow(new[] { 2, 4, 1, 1, 6, 5 }, 3)]
+    [DataRow(new[] { 6, 6, 5, 5, 4, 1 }, 0)]
+    public void CountHillValley_WithArrayContainingHillsAndValleys_ReturnsTotalHillValleyCount(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

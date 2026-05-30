@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SignOfTheProductOfAnArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SignOfTheProductOfAnArray;
 
 public abstract class SignOfTheProductOfAnArrayTestsBase<T> where T : ISignOfTheProductOfAnArray, new()
 {
     [TestMethod]
-    [DataRow("[-1,-2,-3,-4,3,2,1]", 1)]
-    [DataRow("[1,5,0,2,-3]", 0)]
-    [DataRow("[-1,1,-1,1,-1]", -1)]
-    public void ArraySign_GivenArrayOfIntegers_ReturnsProductSign(string numsJson, int expectedResult)
+    [DataRow(new[] { -1, -2, -3, -4, 3, 2, 1 }, 1)]
+    [DataRow(new[] { 1, 5, 0, 2, -3 }, 0)]
+    [DataRow(new[] { -1, 1, -1, 1, -1 }, -1)]
+    public void ArraySign_GivenArrayOfIntegers_ReturnsProductSign(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

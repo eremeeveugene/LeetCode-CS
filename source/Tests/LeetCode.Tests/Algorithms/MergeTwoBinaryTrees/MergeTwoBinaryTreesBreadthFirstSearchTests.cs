@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MergeTwoBinaryTrees;
 namespace LeetCode.Tests.Algorithms.MergeTwoBinaryTrees;
 
 [TestClass]
-public sealed class MergeTwoBinaryTreesBreadthFirstSearchTests : MergeTwoBinaryTreesTestsBase<
-    MergeTwoBinaryTreesBreadthFirstSearch>;
+public sealed class MergeTwoBinaryTreesBreadthFirstSearchTests : MergeTwoBinaryTreesTestsBase<MergeTwoBinaryTreesBreadthFirstSearch>;

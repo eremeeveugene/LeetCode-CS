@@ -67,11 +67,7 @@ public sealed class MinimumAbsoluteDifferenceLookup : IMinimumAbsoluteDifference
 
             if (difference == minDifference)
             {
-                result.Add(new[]
-                {
-                    previousValue,
-                    currentValue
-                });
+                result.Add(new[] { previousValue, currentValue });
             }
 
             previousValue = currentValue;

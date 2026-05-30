@@ -14,5 +14,4 @@ using LeetCode.Algorithms.NumberOfSeniorCitizens;
 namespace LeetCode.Tests.Algorithms.NumberOfSeniorCitizens;
 
 [TestClass]
-public sealed class NumberOfSeniorCitizensStringParsingTests :
-    NumberOfSeniorCitizensTestsBase<NumberOfSeniorCitizensStringParsing>;
+public sealed class NumberOfSeniorCitizensStringParsingTests : NumberOfSeniorCitizensTestsBase<NumberOfSeniorCitizensStringParsing>;

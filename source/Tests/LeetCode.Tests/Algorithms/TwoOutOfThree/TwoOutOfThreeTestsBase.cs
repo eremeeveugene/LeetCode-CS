@@ -10,25 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.TwoOutOfThree;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.TwoOutOfThree;
 
 public abstract class TwoOutOfThreeTestsBase<T> where T : ITwoOutOfThree, new()
 {
     [TestMethod]
-    [DataRow("[1,1,3,2]", "[2,3]", "[3]", "[3,2]")]
-    [DataRow("[3,1]", "[2,3]", "[1,2]", "[2,3,1]")]
-    [DataRow("[1,2,2]", "[4,3,3]", "[5]", "[]")]
-    public void TwoOutOfThree_WithThreeIntegerArrays_ReturnsValuesPresentInAtLeastTwoArrays(string nums1Json,
-        string nums2Json, string nums3Json, string expectedResultJson)
+    [DataRow(new[] { 1, 1, 3, 2 }, new[] { 2, 3 }, new[] { 3 }, new[] { 3, 2 })]
+    [DataRow(new[] { 3, 1 }, new[] { 2, 3 }, new[] { 1, 2 }, new[] { 2, 3, 1 })]
+    [DataRow(new[] { 1, 2, 2 }, new[] { 4, 3, 3 }, new[] { 5 }, new int[] { })]
+    public void TwoOutOfThree_WithThreeIntegerArrays_ReturnsValuesPresentInAtLeastTwoArrays(int[] nums1, int[] nums2, int[] nums3, int[] expectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper.Parse<int[]>(nums1Json);
-        var nums2 = JsonHelper.Parse<int[]>(nums2Json);
-        var nums3 = JsonHelper.Parse<int[]>(nums3Json);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

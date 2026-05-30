@@ -18,8 +18,7 @@ public abstract class CountOperationsToObtainZeroTestsBase<T> where T : ICountOp
     [TestMethod]
     [DataRow(2, 3, 3)]
     [DataRow(10, 10, 1)]
-    public void CountOperations_WithTwoNonNegativeIntegers_ReturnsCountOfSubtractionOperations(
-        int num1, int num2, int expectedResult)
+    public void CountOperations_WithTwoNonNegativeIntegers_ReturnsCountOfSubtractionOperations(int num1, int num2, int expectedResult)
     {
         // Arrange
         var solution = new T();

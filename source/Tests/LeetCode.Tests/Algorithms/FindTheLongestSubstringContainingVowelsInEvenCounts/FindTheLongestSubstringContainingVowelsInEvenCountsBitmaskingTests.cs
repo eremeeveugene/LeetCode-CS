@@ -14,6 +14,4 @@ using LeetCode.Algorithms.FindTheLongestSubstringContainingVowelsInEvenCounts;
 namespace LeetCode.Tests.Algorithms.FindTheLongestSubstringContainingVowelsInEvenCounts;
 
 [TestClass]
-public sealed class FindTheLongestSubstringContainingVowelsInEvenCountsBitmaskingTests :
-    FindTheLongestSubstringContainingVowelsInEvenCountsTestsBase<
-        FindTheLongestSubstringContainingVowelsInEvenCountsBitmasking>;
+public sealed class FindTheLongestSubstringContainingVowelsInEvenCountsBitmaskingTests : FindTheLongestSubstringContainingVowelsInEvenCountsTestsBase<FindTheLongestSubstringContainingVowelsInEvenCountsBitmasking>;

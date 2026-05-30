@@ -10,22 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ZeroArrayTransformation1;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ZeroArrayTransformation1;
 
 public abstract class ZeroArrayTransformation1TestsBase<T> where T : IZeroArrayTransformation1, new()
 {
     [TestMethod]
-    [DataRow("[1,0,1]", "[[0,2]]", true)]
-    [DataRow("[4,3,2,1]", "[[1,3],[0,2]]", false)]
-    public void IsZeroArray_WithNumsAndQueries_ReturnsWhetherArrayCanBeTransformedToAllZeros(string numsJson,
-        string queriesJson, bool expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void IsZeroArray_WithNumsAndQueries_ReturnsWhetherArrayCanBeTransformedToAllZeros(int[] nums, int[][] queries, bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var queries = JsonHelper.Parse<int[][]>(queriesJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +27,12 @@ public abstract class ZeroArrayTransformation1TestsBase<T> where T : IZeroArrayT
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { 1, 0, 1 }, new[] { new[] { 0, 2 } }, true];
+
+        yield return [new[] { 4, 3, 2, 1 }, new[] { new[] { 1, 3 }, new[] { 0, 2 } }, false];
     }
 }

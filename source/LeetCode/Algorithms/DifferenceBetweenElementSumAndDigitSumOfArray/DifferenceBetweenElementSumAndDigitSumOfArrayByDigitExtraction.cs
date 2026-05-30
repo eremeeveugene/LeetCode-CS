@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray;
 
 /// <inheritdoc />
-public sealed class DifferenceBetweenElementSumAndDigitSumOfArrayByDigitExtraction :
-    IDifferenceBetweenElementSumAndDigitSumOfArray
+public sealed class DifferenceBetweenElementSumAndDigitSumOfArrayByDigitExtraction : IDifferenceBetweenElementSumAndDigitSumOfArray
 {
     /// <summary>
     ///     Time complexity - O(n * d)

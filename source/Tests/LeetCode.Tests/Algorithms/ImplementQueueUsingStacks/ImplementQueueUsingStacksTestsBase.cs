@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ImplementQueueUsingStacks;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ImplementQueueUsingStacks;
 
@@ -30,16 +29,12 @@ public abstract class ImplementQueueUsingStacksTestsBase<T> where T : IImplement
     }
 
     [TestMethod]
-    [DataRow("[1, 2, 3]", "[1, 2, 3]")]
-    [DataRow("[5, 10, 15]", "[5, 10, 15]")]
-    [DataRow("[]", "[]")]
-    public void Pop_RemovesElementsFromQueue_QueueBecomesEmpty(string pushElementsJson,
-        string popExpectedJson)
+    [DataRow(new[] { 1, 2, 3 }, new[] { 1, 2, 3 })]
+    [DataRow(new[] { 5, 10, 15 }, new[] { 5, 10, 15 })]
+    [DataRow(new int[] { }, new int[] { })]
+    public void Pop_RemovesElementsFromQueue_QueueBecomesEmpty(int[] pushElements, int[] popExpected)
     {
         // Arrange
-        var pushElements = JsonHelper.Parse<int[]>(pushElementsJson);
-        var popExpected = JsonHelper.Parse<int[]>(popExpectedJson);
-
         var solution = new T();
 
         // Act
@@ -58,13 +53,11 @@ public abstract class ImplementQueueUsingStacksTestsBase<T> where T : IImplement
     }
 
     [TestMethod]
-    [DataRow("[1, 2, 3]", 1)]
-    [DataRow("[5, 10, 15]", 5)]
-    public void Peek_ReturnsFirstElementWithoutRemovingIt(string pushElementsJson, int expectedPeek)
+    [DataRow(new[] { 1, 2, 3 }, 1)]
+    [DataRow(new[] { 5, 10, 15 }, 5)]
+    public void Peek_ReturnsFirstElementWithoutRemovingIt(int[] pushElements, int expectedPeek)
     {
         // Arrange
-        var pushElements = JsonHelper.Parse<int[]>(pushElementsJson);
-
         var solution = new T();
 
         // Act

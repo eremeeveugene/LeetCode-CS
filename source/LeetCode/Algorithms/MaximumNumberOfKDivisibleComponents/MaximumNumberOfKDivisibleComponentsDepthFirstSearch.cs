@@ -51,8 +51,7 @@ public sealed class MaximumNumberOfKDivisibleComponentsDepthFirstSearch : IMaxim
         return components;
     }
 
-    private static int MaxKDivisibleComponents(int node, List<int>[] graph, bool[] visited, int[] values, int k,
-        ref int components)
+    private static int MaxKDivisibleComponents(int node, List<int>[] graph, bool[] visited, int[] values, int k, ref int components)
     {
         visited[node] = true;
 

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.DetermineIfTwoEventsHaveConflict;
 
 public abstract class DetermineIfTwoEventsHaveConflictTestsBase<T> where T : IDetermineIfTwoEventsHaveConflict, new()
 {
     [TestMethod]
-    [DataRow("[\"01:15\",\"02:00\"]", "[\"02:00\",\"03:00\"]", true)]
-    [DataRow("[\"01:00\",\"02:00\"]", "[\"01:20\",\"03:00\"]", true)]
-    [DataRow("[\"10:00\",\"11:00\"]", "[\"14:00\",\"15:00\"]", false)]
-    public void HaveConflict_GivenTwoEventTimeRanges_ReturnsIfConflictExists(string event1Json,
-        string event2Json, bool expectedResult)
+    [DataRow(new[] { "01:15", "02:00" }, new[] { "02:00", "03:00" }, true)]
+    [DataRow(new[] { "01:00", "02:00" }, new[] { "01:20", "03:00" }, true)]
+    [DataRow(new[] { "10:00", "11:00" }, new[] { "14:00", "15:00" }, false)]
+    public void HaveConflict_GivenTwoEventTimeRanges_ReturnsIfConflictExists(string[] event1, string[] event2, bool expectedResult)
     {
         // Arrange
-        var event1 = JsonHelper.Parse<string[]>(event1Json);
-        var event2 = JsonHelper.Parse<string[]>(event2Json);
-
         var solution = new T();
 
         // Act

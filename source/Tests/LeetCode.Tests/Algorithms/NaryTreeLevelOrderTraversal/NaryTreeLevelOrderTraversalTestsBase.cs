@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.NaryTreeLevelOrderTraversal;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,15 +18,10 @@ namespace LeetCode.Tests.Algorithms.NaryTreeLevelOrderTraversal;
 public abstract class NaryTreeLevelOrderTraversalTestsBase<T> where T : INaryTreeLevelOrderTraversal, new()
 {
     [TestMethod]
-    [DataRow("[]", "[]")]
-    [DataRow("[1,null,3,2,4,null,5,6]", "[[1],[3,2,4],[5,6]]")]
-    [DataRow("[1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]",
-        "[[1],[2,3,4,5],[6,7,8,9,10],[11,12,13],[14]]")]
-    public void LevelOrder_WithNaryTree_ReturnsNodeValuesByLevel(string rootJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void LevelOrder_WithNaryTree_ReturnsNodeValuesByLevel(int?[] rootArray, int[][] expectedResult)
     {
         // Arrange
-        var expectedResult = JsonHelper.Parse<IList<IList<int>>>(expectedResultJson);
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = Node.ToNode(rootArray);
 
         var solution = new T();
@@ -37,5 +31,14 @@ public abstract class NaryTreeLevelOrderTraversalTestsBase<T> where T : INaryTre
 
         // Assert
         NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), Array.Empty<int[]>()];
+
+        yield return [new int?[] { 1, null, 3, 2, 4, null, 5, 6 }, new[] { new[] { 1 }, new[] { 3, 2, 4 }, new[] { 5, 6 } }];
+
+        yield return [new int?[] { 1, null, 2, 3, 4, 5, null, null, 6, 7, null, 8, null, 9, 10, null, null, 11, null, 12, null, 13, null, null, 14 }, new[] { new[] { 1 }, new[] { 2, 3, 4, 5 }, new[] { 6, 7, 8, 9, 10 }, new[] { 11, 12, 13 }, new[] { 14 } }];
     }
 }

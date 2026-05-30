@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfSubstringsContainingAllThreeCharacters;
 
 /// <inheritdoc />
-public sealed class NumberOfSubstringsContainingAllThreeCharactersSlidingWindow :
-    INumberOfSubstringsContainingAllThreeCharacters
+public sealed class NumberOfSubstringsContainingAllThreeCharactersSlidingWindow : INumberOfSubstringsContainingAllThreeCharacters
 {
     /// <summary>
     ///     Time complexity - O(n)

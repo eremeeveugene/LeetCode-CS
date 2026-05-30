@@ -14,5 +14,4 @@ using LeetCode.Algorithms.BitwiseXOROfAllPairings;
 namespace LeetCode.Tests.Algorithms.BitwiseXOROfAllPairings;
 
 [TestClass]
-public sealed class BitwiseXOROfAllPairingsBruteForceTests :
-    BitwiseXOROfAllPairingsTestsBAse<BitwiseXOROfAllPairingsBruteForce>;
+public sealed class BitwiseXOROfAllPairingsBruteForceTests : BitwiseXOROfAllPairingsTestsBAse<BitwiseXOROfAllPairingsBruteForce>;

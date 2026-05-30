@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RangeProductQueriesOfPowers;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.RangeProductQueriesOfPowers;
 
 public abstract class RangeProductQueriesOfPowersTestsBase<T> where T : IRangeProductQueriesOfPowers, new()
 {
     [TestMethod]
-    [DataRow(2, "[[0,0]]", "[2]")]
-    [DataRow(15, "[[0,1],[2,2],[0,3]]", "[2,4,64]")]
-    public void ProductQueries_WithPowersOfTwoDecompositionAndRangeQueries_ReturnsModuloProductArray(int n,
-        string queriesJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void ProductQueries_WithPowersOfTwoDecompositionAndRangeQueries_ReturnsModuloProductArray(int n, int[][] queries, int[] expectedResult)
     {
         // Arrange
-        var queries = JsonHelper.Parse<int[][]>(queriesJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +27,12 @@ public abstract class RangeProductQueriesOfPowersTestsBase<T> where T : IRangePr
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [2, new[] { new[] { 0, 0 } }, new[] { 2 }];
+
+        yield return [15, new[] { new[] { 0, 1 }, new[] { 2, 2 }, new[] { 0, 3 } }, new[] { 2, 4, 64 }];
     }
 }

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,23 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumMatchingOfPlayersWithTrainers;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximumMatchingOfPlayersWithTrainers;
 
-public abstract class MaximumMatchingOfPlayersWithTrainersTestsBase<T>
-    where T : IMaximumMatchingOfPlayersWithTrainers, new()
+public abstract class MaximumMatchingOfPlayersWithTrainersTestsBase<T> where T : IMaximumMatchingOfPlayersWithTrainers, new()
 {
     [TestMethod]
-    [DataRow("[4,7,9]", "[8,2,5,8]", 2)]
-    [DataRow("[1,1,1]", "[10]", 1)]
-    public void MatchPlayersAndTrainers_WithPlayerAbilitiesAndTrainerCapacities_ReturnsMaximumMatchingCount(
-        string playersJson, string trainersJson, long expectedResult)
+    [DataRow(new[] { 4, 7, 9 }, new[] { 8, 2, 5, 8 }, 2L)]
+    [DataRow(new[] { 1, 1, 1 }, new[] { 10 }, 1L)]
+    public void MatchPlayersAndTrainers_WithPlayerAbilitiesAndTrainerCapacities_ReturnsMaximumMatchingCount(int[] players, int[] trainers, long expectedResult)
     {
         // Arrange
-        var players = JsonHelper.Parse<int[]>(playersJson);
-        var trainers = JsonHelper.Parse<int[]>(trainersJson);
-
         var solution = new T();
 
         // Act

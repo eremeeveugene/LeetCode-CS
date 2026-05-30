@@ -18,8 +18,7 @@ public abstract class LongestHappyStringTestsBase<T> where T : ILongestHappyStri
     [TestMethod]
     [DataRow(1, 1, 7, "ccbccacc")]
     [DataRow(7, 1, 0, "aabaa")]
-    public void LongestDiverseString_WithCharacterCounts_ReturnsLongestPossibleString(int a, int b, int c,
-        string expectedResult)
+    public void LongestDiverseString_WithCharacterCounts_ReturnsLongestPossibleString(int a, int b, int c, string expectedResult)
     {
         // Arrange
         var solution = new T();

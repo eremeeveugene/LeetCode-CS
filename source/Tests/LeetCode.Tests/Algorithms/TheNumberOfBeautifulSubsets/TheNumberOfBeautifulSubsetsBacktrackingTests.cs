@@ -14,5 +14,4 @@ using LeetCode.Algorithms.TheNumberOfBeautifulSubsets;
 namespace LeetCode.Tests.Algorithms.TheNumberOfBeautifulSubsets;
 
 [TestClass]
-public sealed class TheNumberOfBeautifulSubsetsBacktrackingTests : TheNumberOfBeautifulSubsetsTestsBase<
-    TheNumberOfBeautifulSubsetsBacktracking>;
+public sealed class TheNumberOfBeautifulSubsetsBacktrackingTests : TheNumberOfBeautifulSubsetsTestsBase<TheNumberOfBeautifulSubsetsBacktracking>;

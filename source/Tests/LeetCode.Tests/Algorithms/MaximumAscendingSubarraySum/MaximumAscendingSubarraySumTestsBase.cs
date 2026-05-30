@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumAscendingSubarraySum;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximumAscendingSubarraySum;
 
 public abstract class MaximumAscendingSubarraySumTestsBase<T> where T : IMaximumAscendingSubarraySum, new()
 {
     [TestMethod]
-    [DataRow("[10,20,30,5,10,50]", 65)]
-    [DataRow("[10,20,30,40,50]", 150)]
-    [DataRow("[12,17,15,13,10,11,12]", 33)]
-    public void MaxAscendingSum_GivenIntegerArray_ReturnsMaxSumOfAscendingSubarray(string numsJson,
-        double expectedResult)
+    [DataRow(new[] { 10, 20, 30, 5, 10, 50 }, 65)]
+    [DataRow(new[] { 10, 20, 30, 40, 50 }, 150)]
+    [DataRow(new[] { 12, 17, 15, 13, 10, 11, 12 }, 33)]
+    public void MaxAscendingSum_GivenIntegerArray_ReturnsMaxSumOfAscendingSubarray(int[] nums, double expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

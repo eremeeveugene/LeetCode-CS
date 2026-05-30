@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,22 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CheckIfItIsStraightLine;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CheckIfItIsStraightLine;
 
 public abstract class CheckIfItIsStraightLineTestsBase<T> where T : ICheckIfItIsStraightLine, new()
 {
     [TestMethod]
-    [DataRow("[[0,1],[2,4],[3,3]]", false)]
-    [DataRow("[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]", true)]
-    [DataRow("[[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]", false)]
-    public void CheckStraightLine_WithGivenCoordinates_ReturnsIfPointsFormStraightLine(string coordinatesJson,
-        bool expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void CheckStraightLine_WithGivenCoordinates_ReturnsIfPointsFormStraightLine(int[][] coordinates, bool expectedResult)
     {
         // Arrange
-        var coordinates = JsonHelper.Parse<int[][]>(coordinatesJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +27,14 @@ public abstract class CheckIfItIsStraightLineTestsBase<T> where T : ICheckIfItIs
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 0, 1 }, new[] { 2, 4 }, new[] { 3, 3 } }, false];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 }, new[] { 4, 5 }, new[] { 5, 6 }, new[] { 6, 7 } }, true];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 3, 4 }, new[] { 4, 5 }, new[] { 5, 6 }, new[] { 7, 7 } }, false];
     }
 }

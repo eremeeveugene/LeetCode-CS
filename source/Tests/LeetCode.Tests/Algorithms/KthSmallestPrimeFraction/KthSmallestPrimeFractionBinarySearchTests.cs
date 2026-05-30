@@ -14,5 +14,4 @@ using LeetCode.Algorithms.KthSmallestPrimeFraction;
 namespace LeetCode.Tests.Algorithms.KthSmallestPrimeFraction;
 
 [TestClass]
-public sealed class KthSmallestPrimeFractionBinarySearchTests :
-    KthSmallestPrimeFractionTestsBase<KthSmallestPrimeFractionBinarySearch>;
+public sealed class KthSmallestPrimeFractionBinarySearchTests : KthSmallestPrimeFractionTestsBase<KthSmallestPrimeFractionBinarySearch>;
