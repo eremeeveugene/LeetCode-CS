@@ -17,8 +17,7 @@ public abstract class MinimumTimeToVisitCellInGridTestsBase<T> where T : IMinimu
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MinimumTime_GridWithTraversalConstraints_ReturnsTimeToReachBottomRightOrNegativeOne(int[][] grid,
-        int expectedResult)
+    public void MinimumTime_GridWithTraversalConstraints_ReturnsTimeToReachBottomRightOrNegativeOne(int[][] grid, int expectedResult)
     {
         // Arrange
         var solution = new T();

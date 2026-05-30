@@ -13,8 +13,7 @@ using LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR;
 
 namespace LeetCode.Tests.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR;
 
-public abstract class CountTripletsThatCanFormTwoArraysOfEqualXORTestsBase<T>
-    where T : ICountTripletsThatCanFormTwoArraysOfEqualXOR, new()
+public abstract class CountTripletsThatCanFormTwoArraysOfEqualXORTestsBase<T> where T : ICountTripletsThatCanFormTwoArraysOfEqualXOR, new()
 {
     [TestMethod]
     [DataRow(new[] { 2, 3, 1, 6, 7 }, 4)]

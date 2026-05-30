@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1;
 
 /// <inheritdoc />
-public sealed class MinimumOperationsToMakeBinaryArrayElementsEqualToOne1Greedy :
-    IMinimumOperationsToMakeBinaryArrayElementsEqualToOne1
+public sealed class MinimumOperationsToMakeBinaryArrayElementsEqualToOne1Greedy : IMinimumOperationsToMakeBinaryArrayElementsEqualToOne1
 {
     /// <summary>
     ///     Time complexity - O(n)

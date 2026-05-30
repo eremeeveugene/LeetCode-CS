@@ -23,8 +23,7 @@ public abstract class MinimumTimeDifferenceTestsBase<T> where T : IMinimumTimeDi
     [DataRow(new[] { "00:00", "12:00", "23:59" }, 1)]
     [DataRow(new[] { "02:45", "11:15", "18:30", "23:55" }, 170)]
     [DataRow(new[] { "00:00", "12:34", "23:59", "03:21", "16:45", "07:30", "20:15", "22:22" }, 1)]
-    public void FindMinDifference_GivenTimePoints_ReturnsMinimumDifference(string[] timePoints,
-        int expectedResult)
+    public void FindMinDifference_GivenTimePoints_ReturnsMinimumDifference(string[] timePoints, int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -18,8 +18,7 @@ public abstract class DiameterOfBinaryTreeTestsBase<T> where T : IDiameterOfBina
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void DiameterOfBinaryTree_WithBinaryTreeInput_ReturnsLengthOfLongestPathBetweenNodes(int?[] arrayRoot,
-        int expectedResult)
+    public void DiameterOfBinaryTree_WithBinaryTreeInput_ReturnsLengthOfLongestPathBetweenNodes(int?[] arrayRoot, int expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(arrayRoot);

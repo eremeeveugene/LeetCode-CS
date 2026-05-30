@@ -13,14 +13,12 @@ using LeetCode.Algorithms.MinimumOperationsToMakeTheIntegerZero;
 
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToMakeTheIntegerZero;
 
-public abstract class MinimumOperationsToMakeTheIntegerZeroTestsBase<T>
-    where T : IMinimumOperationsToMakeTheIntegerZero, new()
+public abstract class MinimumOperationsToMakeTheIntegerZeroTestsBase<T> where T : IMinimumOperationsToMakeTheIntegerZero, new()
 {
     [TestMethod]
     [DataRow(3, -2, 3)]
     [DataRow(5, 7, -1)]
-    public void MakeTheIntegerZero_WithPositiveAndNegativeInputs_ReturnsMinimumOperationsToReachZero(int num1, int num2,
-        int expectedResult)
+    public void MakeTheIntegerZero_WithPositiveAndNegativeInputs_ReturnsMinimumOperationsToReachZero(int num1, int num2, int expectedResult)
     {
         // Arrange
         var solution = new T();

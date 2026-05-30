@@ -21,8 +21,7 @@ public abstract class MergeNodesInBetweenZerosTestsBase<T> where T : IMergeNodes
     [DataRow(new[] { 0, 3, 1, 0, 4, 5, 2, 0 }, new[] { 4, 11 })]
     [DataRow(new[] { 0, 1, 0, 3, 0, 2, 2, 0 }, new[] { 1, 3, 4 })]
     [DataRow(new[] { 0, 200, 300, 0, 400, 500, 0 }, new[] { 500, 900 })]
-    public void MergeNodes_WithZeroDelimitedValues_ReturnsListWithSegmentSums(int[] headArray,
-        int[] expectedResultArray)
+    public void MergeNodes_WithZeroDelimitedValues_ReturnsListWithSegmentSums(int[] headArray, int[] expectedResultArray)
     {
         // Arrange
         var head = ListNode.ToListNode(headArray);

@@ -18,8 +18,7 @@ public abstract class NextGreaterElement1TestsBase<T> where T : INextGreaterElem
     [TestMethod]
     [DataRow(new[] { 4, 1, 2 }, new[] { 1, 3, 4, 2 }, new[] { -1, 3, -1 })]
     [DataRow(new[] { 2, 4 }, new[] { 1, 2, 3, 4 }, new[] { 3, -1 })]
-    public void NextGreaterElement_WithSubsetAndReferenceArrays_ReturnsNextGreaterElementsForEachQuery(int[] nums1,
-        int[] nums2, int[] expectedResult)
+    public void NextGreaterElement_WithSubsetAndReferenceArrays_ReturnsNextGreaterElementsForEachQuery(int[] nums1, int[] nums2, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -13,15 +13,13 @@ using LeetCode.Algorithms.LongestSquareStreakInAnArray;
 
 namespace LeetCode.Tests.Algorithms.LongestSquareStreakInAnArray;
 
-public abstract class LongestSquareStreakInAnArrayTestsBase<T>
-    where T : ILongestSquareStreakInAnArray, new()
+public abstract class LongestSquareStreakInAnArrayTestsBase<T> where T : ILongestSquareStreakInAnArray, new()
 {
     [TestMethod]
     [DataRow(new[] { 2, 4 }, 2)]
     [DataRow(new[] { 4, 3, 6, 16, 8, 2 }, 3)]
     [DataRow(new[] { 2, 3, 5, 6, 7 }, -1)]
-    public void LongestSquareStreak_WithGivenArray_ReturnsLengthOfLongestSquareStreakOrMinusOne(int[] nums,
-        int expectedResult)
+    public void LongestSquareStreak_WithGivenArray_ReturnsLengthOfLongestSquareStreakOrMinusOne(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

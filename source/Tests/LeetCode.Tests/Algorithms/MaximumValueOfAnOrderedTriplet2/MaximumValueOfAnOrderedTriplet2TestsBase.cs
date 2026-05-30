@@ -20,8 +20,7 @@ public abstract class MaximumValueOfAnOrderedTriplet2TestsBase<T> where T : IMax
     [DataRow(new[] { 1, 10, 3, 4, 19 }, 133L)]
     [DataRow(new[] { 1, 2, 3 }, 0L)]
     [DataRow(new[] { 1000000, 1, 1000000 }, 999999000000L)]
-    public void MaximumTripletValue_WithIntegerArray_ReturnsMaximumTripletValue(int[] nums,
-        long expectedResult)
+    public void MaximumTripletValue_WithIntegerArray_ReturnsMaximumTripletValue(int[] nums, long expectedResult)
     {
         // Arrange
         var solution = new T();

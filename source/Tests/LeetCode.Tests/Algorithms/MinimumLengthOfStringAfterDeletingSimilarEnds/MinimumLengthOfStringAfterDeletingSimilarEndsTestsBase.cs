@@ -13,19 +13,15 @@ using LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds;
 
 namespace LeetCode.Tests.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds;
 
-public abstract class MinimumLengthOfStringAfterDeletingSimilarEndsTestsBase<T>
-    where T : IMinimumLengthOfStringAfterDeletingSimilarEnds, new()
+public abstract class MinimumLengthOfStringAfterDeletingSimilarEndsTestsBase<T> where T : IMinimumLengthOfStringAfterDeletingSimilarEnds, new()
 {
     [TestMethod]
     [DataRow("ca", 2)]
     [DataRow("cabaabac", 0)]
     [DataRow("aabccabba", 3)]
     [DataRow("bbbbbbbbbbbbbbbbbbb", 0)]
-    [DataRow(
-        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbacccabbabccaccbacaaccacacccaccbbbacaabbccbbcbcbcacacccccccbcbbabccaacaabacbbaccccbabbcbccccaccacaccbcbbcbcccabaaaabbbbbbbbbbbbbbb",
-        109)]
-    public void MinimumLength_WithRepeatingPrefixSuffixPattern_ReturnsFinalLengthAfterAllDeletions(string s,
-        int expectedResult)
+    [DataRow("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbacccabbabccaccbacaaccacacccaccbbbacaabbccbbcbcbcacacccccccbcbbabccaacaabacbbaccccbabbcbccccaccacaccbcbbcbcccabaaaabbbbbbbbbbbbbbb", 109)]
+    public void MinimumLength_WithRepeatingPrefixSuffixPattern_ReturnsFinalLengthAfterAllDeletions(string s, int expectedResult)
     {
         // Arrange
         var solution = new T();

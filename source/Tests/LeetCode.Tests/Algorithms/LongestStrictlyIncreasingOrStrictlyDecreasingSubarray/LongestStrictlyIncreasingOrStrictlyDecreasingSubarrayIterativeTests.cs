@@ -14,6 +14,4 @@ using LeetCode.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubarray;
 namespace LeetCode.Tests.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubarray;
 
 [TestClass]
-public sealed class LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayIterativeTests :
-    LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayTestsBase<
-        LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayIterative>;
+public sealed class LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayIterativeTests : LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayTestsBase<LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayIterative>;

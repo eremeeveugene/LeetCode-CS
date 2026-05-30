@@ -18,8 +18,7 @@ public abstract class PartitionEqualSubsetSumTestsBase<T> where T : IPartitionEq
     [TestMethod]
     [DataRow(new[] { 1, 5, 11, 5 }, true)]
     [DataRow(new[] { 1, 2, 3, 5 }, false)]
-    public void CanPartition_WithGivenIntegerArray_ReturnsWhetherItCanBePartitionedIntoEqualSumSubsets(
-        int[] nums, bool expectedResult)
+    public void CanPartition_WithGivenIntegerArray_ReturnsWhetherItCanBePartitionedIntoEqualSumSubsets(int[] nums, bool expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -19,8 +19,7 @@ public abstract class MinimumIndexOfValidSplitTestsBase<T> where T : IMinimumInd
     [DataRow(new[] { 1, 2, 2, 2 }, 2)]
     [DataRow(new[] { 2, 1, 3, 1, 1, 1, 7, 1, 2, 1 }, 4)]
     [DataRow(new[] { 3, 3, 3, 3, 7, 2, 2 }, -1)]
-    public void MinimumIndex_WithMajorityElementInArray_ReturnsMinimumIndexOfValidSplit(int[] nums,
-        int expectedResult)
+    public void MinimumIndex_WithMajorityElementInArray_ReturnsMinimumIndexOfValidSplit(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

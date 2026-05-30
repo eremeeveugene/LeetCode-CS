@@ -19,8 +19,7 @@ public abstract class MergeTwoBinaryTreesTestsBase<T> where T : IMergeTwoBinaryT
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MergeTrees_WithTwoBinaryTrees_ReturnsMergedTree(int?[] root1Array, int?[] root2Array,
-        int?[] expectedResultArray)
+    public void MergeTrees_WithTwoBinaryTrees_ReturnsMergedTree(int?[] root1Array, int?[] root2Array, int?[] expectedResultArray)
     {
         // Arrange
         var root1 = TreeNode.ToTreeNode(root1Array);

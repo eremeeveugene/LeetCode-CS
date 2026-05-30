@@ -18,8 +18,7 @@ public abstract class CountingWordsWithGivenPrefixTestsBase<T> where T : ICounti
     [TestMethod]
     [DataRow(new[] { "pay", "attention", "practice", "attend" }, "at", 2)]
     [DataRow(new[] { "leetcode", "win", "loops", "success" }, "code", 0)]
-    public void PrefixCount_WithWordsArrayAndPrefix_ReturnsCountOfMatchingWords(string[] words, string pref,
-        int expectedResult)
+    public void PrefixCount_WithWordsArrayAndPrefix_ReturnsCountOfMatchingWords(string[] words, string pref, int expectedResult)
     {
         // Arrange
         var solution = new T();

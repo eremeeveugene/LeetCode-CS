@@ -55,7 +55,6 @@ public sealed class FindIfPathExistsInGraphDepthFirstSearch : IFindIfPathExistsI
 
         visited.Add(current);
 
-        return graph[current]
-            .Any(neighbor => !visited.Contains(neighbor) && ValidPath(visited, graph, neighbor, target));
+        return graph[current].Any(neighbor => !visited.Contains(neighbor) && ValidPath(visited, graph, neighbor, target));
     }
 }

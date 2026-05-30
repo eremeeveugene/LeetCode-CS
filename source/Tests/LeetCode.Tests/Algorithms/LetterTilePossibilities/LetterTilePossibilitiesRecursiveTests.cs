@@ -14,5 +14,4 @@ using LeetCode.Algorithms.LetterTilePossibilities;
 namespace LeetCode.Tests.Algorithms.LetterTilePossibilities;
 
 [TestClass]
-public sealed class LetterTilePossibilitiesRecursiveTests :
-    LetterTilePossibilitiesTestsBase<LetterTilePossibilitiesRecursive>;
+public sealed class LetterTilePossibilitiesRecursiveTests : LetterTilePossibilitiesTestsBase<LetterTilePossibilitiesRecursive>;

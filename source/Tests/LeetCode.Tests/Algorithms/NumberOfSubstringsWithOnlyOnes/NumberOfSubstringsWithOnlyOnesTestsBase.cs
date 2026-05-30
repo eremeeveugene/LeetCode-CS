@@ -13,8 +13,7 @@ using LeetCode.Algorithms.NumberOfSubstringsWithOnlyOnes;
 
 namespace LeetCode.Tests.Algorithms.NumberOfSubstringsWithOnlyOnes;
 
-public abstract class NumberOfSubstringsWithOnlyOnesTestsBase<T>
-    where T : INumberOfSubstringsWithOnlyOnes, new()
+public abstract class NumberOfSubstringsWithOnlyOnesTestsBase<T> where T : INumberOfSubstringsWithOnlyOnes, new()
 {
     [TestMethod]
     [DataRow("0110111", 9)]

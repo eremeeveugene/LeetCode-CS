@@ -14,5 +14,4 @@ using LeetCode.Algorithms.KthSmallestInLexicographicalOrder;
 namespace LeetCode.Tests.Algorithms.KthSmallestInLexicographicalOrder;
 
 [TestClass]
-public sealed class KthSmallestInLexicographicalOrderPrefixTreeTests : KthSmallestInLexicographicalOrderTestsBase<
-    KthSmallestInLexicographicalOrderPrefixTree>;
+public sealed class KthSmallestInLexicographicalOrderPrefixTreeTests : KthSmallestInLexicographicalOrderTestsBase<KthSmallestInLexicographicalOrderPrefixTree>;

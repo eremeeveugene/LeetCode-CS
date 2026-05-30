@@ -17,8 +17,7 @@ public abstract class Convert1DArrayInto2DArrayTestsBase<T> where T : IConvert1D
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void Construct2DArray_WithOriginalArrayAndDimensions_ReturnsReshapedMatrixOrEmptyArray(int[] original,
-        int m, int n, int[][] expectedResult)
+    public void Construct2DArray_WithOriginalArrayAndDimensions_ReturnsReshapedMatrixOrEmptyArray(int[] original, int m, int n, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();

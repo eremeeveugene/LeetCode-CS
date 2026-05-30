@@ -21,8 +21,7 @@ public abstract class RotateArrayTestsBase<T> where T : IRotateArray, new()
     [DataRow(new[] { 1 }, 1, new[] { 1 })]
     [DataRow(new[] { 1 }, 100, new[] { 1 })]
     [DataRow(new[] { 1 }, 100_000, new[] { 1 })]
-    public void Rotate_WithNumsArrayAndKSteps_ShiftsElementsRightByKSteps(int[] nums, int k,
-        int[] expectedResult)
+    public void Rotate_WithNumsArrayAndKSteps_ShiftsElementsRightByKSteps(int[] nums, int k, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

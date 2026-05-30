@@ -33,10 +33,7 @@ public abstract class MatrixDiagonalSumTestsBase<T> where T : IMatrixDiagonalSum
     {
         yield return [new[] { new[] { 1, 2, 3 }, new[] { 4, 5, 6 }, new[] { 7, 8, 9 } }, 25];
 
-        yield return
-        [
-            new[] { new[] { 1, 1, 1, 1 }, new[] { 1, 1, 1, 1 }, new[] { 1, 1, 1, 1 }, new[] { 1, 1, 1, 1 } }, 8
-        ];
+        yield return [new[] { new[] { 1, 1, 1, 1 }, new[] { 1, 1, 1, 1 }, new[] { 1, 1, 1, 1 }, new[] { 1, 1, 1, 1 } }, 8];
 
         yield return [new[] { new[] { 5 } }, 5];
     }

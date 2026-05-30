@@ -13,13 +13,11 @@ using LeetCode.Algorithms.ShortestDistanceAfterRoadAdditionQueries1;
 
 namespace LeetCode.Tests.Algorithms.ShortestDistanceAfterRoadAdditionQueries1;
 
-public abstract class ShortestDistanceAfterRoadAdditionQueries1TestsBase<T>
-    where T : IShortestDistanceAfterRoadAdditionQueries1, new()
+public abstract class ShortestDistanceAfterRoadAdditionQueries1TestsBase<T> where T : IShortestDistanceAfterRoadAdditionQueries1, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void ShortestDistanceAfterQueries_WithNumberOfNodesAndQueryRanges_ReturnsShortestDistances(int n,
-        int[][] queries, int[] expectedResult)
+    public void ShortestDistanceAfterQueries_WithNumberOfNodesAndQueryRanges_ReturnsShortestDistances(int n, int[][] queries, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

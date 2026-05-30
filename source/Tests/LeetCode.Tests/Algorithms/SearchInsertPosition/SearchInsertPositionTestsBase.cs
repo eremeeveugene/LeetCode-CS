@@ -19,8 +19,7 @@ public abstract class SearchInsertPositionTestsBase<T> where T : ISearchInsertPo
     [DataRow(new[] { 1, 3, 5, 6 }, 2, 1)]
     [DataRow(new[] { 1, 3, 5, 6 }, 5, 2)]
     [DataRow(new[] { 1, 3, 5, 6 }, 7, 4)]
-    public void SearchInsert_WithSortedArrayAndTarget_ReturnsInsertIndexOrTargetIndex(int[] nums, int target,
-        int expectedResult)
+    public void SearchInsert_WithSortedArrayAndTarget_ReturnsInsertIndexOrTargetIndex(int[] nums, int target, int expectedResult)
     {
         // Arrange
         var solution = new T();

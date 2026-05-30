@@ -17,8 +17,7 @@ public abstract class MaximumDistanceInArraysTestsBase<T> where T : IMaximumDist
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MaxDistance_WithSortedArrays_ReturnsMaximumAbsoluteDifferenceBetweenTwoArrays(int[][] arraysData,
-        int expectedResult)
+    public void MaxDistance_WithSortedArrays_ReturnsMaximumAbsoluteDifferenceBetweenTwoArrays(int[][] arraysData, int expectedResult)
     {
         // Arrange
         var solution = new T();

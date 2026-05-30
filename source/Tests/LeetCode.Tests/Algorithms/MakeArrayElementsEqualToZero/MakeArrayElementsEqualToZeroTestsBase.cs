@@ -13,14 +13,12 @@ using LeetCode.Algorithms.MakeArrayElementsEqualToZero;
 
 namespace LeetCode.Tests.Algorithms.MakeArrayElementsEqualToZero;
 
-public abstract class MakeArrayElementsEqualToZeroTestsBase<T>
-    where T : IMakeArrayElementsEqualToZero, new()
+public abstract class MakeArrayElementsEqualToZeroTestsBase<T> where T : IMakeArrayElementsEqualToZero, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 0, 2, 0, 3 }, 2)]
     [DataRow(new[] { 2, 3, 4, 0, 4, 1, 0 }, 0)]
-    public void CountValidSelections_WithNumsArray_ReturnsNumberOfValidStartPositions(int[] nums,
-        int expectedResult)
+    public void CountValidSelections_WithNumsArray_ReturnsNumberOfValidStartPositions(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

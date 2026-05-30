@@ -13,14 +13,12 @@ using LeetCode.Algorithms.SmallestMissingMultipleOfK;
 
 namespace LeetCode.Tests.Algorithms.SmallestMissingMultipleOfK;
 
-public abstract class SmallestMissingMultipleOfKTestsBase<T>
-    where T : ISmallestMissingMultipleOfK, new()
+public abstract class SmallestMissingMultipleOfKTestsBase<T> where T : ISmallestMissingMultipleOfK, new()
 {
     [TestMethod]
     [DataRow(new[] { 8, 2, 3, 4, 6 }, 2, 10)]
     [DataRow(new[] { 1, 4, 7, 10, 15 }, 5, 5)]
-    public void MissingMultiple_WithArrayAndMultipleK_ReturnsSmallestMissingPositiveMultipleOfK(int[] nums, int k,
-        int expectedResult)
+    public void MissingMultiple_WithArrayAndMultipleK_ReturnsSmallestMissingPositiveMultipleOfK(int[] nums, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

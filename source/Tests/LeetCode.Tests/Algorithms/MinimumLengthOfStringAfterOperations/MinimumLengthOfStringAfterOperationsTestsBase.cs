@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MinimumLengthOfStringAfterOperations;
 
 namespace LeetCode.Tests.Algorithms.MinimumLengthOfStringAfterOperations;
 
-public abstract class MinimumLengthOfStringAfterOperationsTestsBase<T>
-    where T : IMinimumLengthOfStringAfterOperations, new()
+public abstract class MinimumLengthOfStringAfterOperationsTestsBase<T> where T : IMinimumLengthOfStringAfterOperations, new()
 {
     [TestMethod]
     [DataRow("aa", 2)]

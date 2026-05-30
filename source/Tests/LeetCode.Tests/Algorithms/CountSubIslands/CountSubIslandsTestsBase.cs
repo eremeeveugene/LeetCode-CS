@@ -17,8 +17,7 @@ public abstract class CountSubIslandsTestsBase<T> where T : ICountSubIslands, ne
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void CountSubIslands_WithTwoBinaryGrids_ReturnsNumberOfSubIslands(int[][] grid1, int[][] grid2,
-        int expectedResult)
+    public void CountSubIslands_WithTwoBinaryGrids_ReturnsNumberOfSubIslands(int[][] grid1, int[][] grid2, int expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -32,34 +31,8 @@ public abstract class CountSubIslandsTestsBase<T> where T : ICountSubIslands, ne
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return
-        [
-            new[]
-            {
-                new[] { 1, 1, 1, 0, 0 }, new[] { 0, 1, 1, 1, 1 }, new[] { 0, 0, 0, 0, 0 }, new[] { 1, 0, 0, 0, 0 },
-                new[] { 1, 1, 0, 1, 1 }
-            },
-            new[]
-            {
-                new[] { 1, 1, 1, 0, 0 }, new[] { 0, 0, 1, 1, 1 }, new[] { 0, 1, 0, 0, 0 }, new[] { 1, 0, 1, 1, 0 },
-                new[] { 0, 1, 0, 1, 0 }
-            },
-            3
-        ];
+        yield return [new[] { new[] { 1, 1, 1, 0, 0 }, new[] { 0, 1, 1, 1, 1 }, new[] { 0, 0, 0, 0, 0 }, new[] { 1, 0, 0, 0, 0 }, new[] { 1, 1, 0, 1, 1 } }, new[] { new[] { 1, 1, 1, 0, 0 }, new[] { 0, 0, 1, 1, 1 }, new[] { 0, 1, 0, 0, 0 }, new[] { 1, 0, 1, 1, 0 }, new[] { 0, 1, 0, 1, 0 } }, 3];
 
-        yield return
-        [
-            new[]
-            {
-                new[] { 1, 0, 1, 0, 1 }, new[] { 1, 1, 1, 1, 1 }, new[] { 0, 0, 0, 0, 0 }, new[] { 1, 1, 1, 1, 1 },
-                new[] { 1, 0, 1, 0, 1 }
-            },
-            new[]
-            {
-                new[] { 0, 0, 0, 0, 0 }, new[] { 1, 1, 1, 1, 1 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 1, 0, 1, 0 },
-                new[] { 1, 0, 0, 0, 1 }
-            },
-            2
-        ];
+        yield return [new[] { new[] { 1, 0, 1, 0, 1 }, new[] { 1, 1, 1, 1, 1 }, new[] { 0, 0, 0, 0, 0 }, new[] { 1, 1, 1, 1, 1 }, new[] { 1, 0, 1, 0, 1 } }, new[] { new[] { 0, 0, 0, 0, 0 }, new[] { 1, 1, 1, 1, 1 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 1, 0, 0, 0, 1 } }, 2];
     }
 }

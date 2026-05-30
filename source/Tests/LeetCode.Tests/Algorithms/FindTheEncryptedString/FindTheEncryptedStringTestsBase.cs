@@ -18,8 +18,7 @@ public abstract class FindTheEncryptedStringTestsBase<T> where T : IFindTheEncry
     [TestMethod]
     [DataRow("dart", 3, "tdar")]
     [DataRow("aaa", 1, "aaa")]
-    public void GetEncryptedString_WithStringAndShiftValue_ReturnsEncryptedString(string s, int k,
-        string expectedResult)
+    public void GetEncryptedString_WithStringAndShiftValue_ReturnsEncryptedString(string s, int k, string expectedResult)
     {
         // Arrange
         var solution = new T();

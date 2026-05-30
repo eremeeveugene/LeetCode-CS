@@ -19,8 +19,7 @@ public abstract class HeightCheckerTestsBase<T> where T : IHeightChecker, new()
     [DataRow(new[] { 1, 2, 3, 4, 5 }, 0)]
     [DataRow(new[] { 5, 1, 2, 3, 4 }, 5)]
     [DataRow(new[] { 1, 1, 4, 2, 1, 3 }, 3)]
-    public void HeightChecker_WithGivenArray_ReturnsCountOfIndicesWhereHeightsDoNotMatch(int[] nums,
-        int expectedResult)
+    public void HeightChecker_WithGivenArray_ReturnsCountOfIndicesWhereHeightsDoNotMatch(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

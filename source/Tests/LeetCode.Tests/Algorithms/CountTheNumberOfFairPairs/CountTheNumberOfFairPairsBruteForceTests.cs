@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountTheNumberOfFairPairs;
 namespace LeetCode.Tests.Algorithms.CountTheNumberOfFairPairs;
 
 [TestClass]
-public sealed class CountTheNumberOfFairPairsBruteForceTests :
-    CountTheNumberOfFairPairsTestsBase<CountTheNumberOfFairPairsBruteForce>;
+public sealed class CountTheNumberOfFairPairsBruteForceTests : CountTheNumberOfFairPairsTestsBase<CountTheNumberOfFairPairsBruteForce>;

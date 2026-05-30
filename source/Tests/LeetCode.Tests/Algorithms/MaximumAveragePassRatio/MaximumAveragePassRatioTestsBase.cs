@@ -17,8 +17,7 @@ public abstract class MaximumAveragePassRatioTestsBase<T> where T : IMaximumAver
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MaxAverageRatio_WithClassDataAndExtraStudents_ReturnsMaximumAverageRatio(int[][] classes,
-        int extraStudents, double expectedResult)
+    public void MaxAverageRatio_WithClassDataAndExtraStudents_ReturnsMaximumAverageRatio(int[][] classes, int extraStudents, double expectedResult)
     {
         // Arrange
         var solution = new T();

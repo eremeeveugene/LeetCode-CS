@@ -17,8 +17,7 @@ public abstract class EqualSumGridPartition1TestsBase<T> where T : IEqualSumGrid
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void CanPartitionGrid_WithGivenGrid_ReturnsTrueIfEqualSumPartitionExists(int[][] grid,
-        bool expectedResult)
+    public void CanPartitionGrid_WithGivenGrid_ReturnsTrueIfEqualSumPartitionExists(int[][] grid, bool expectedResult)
     {
         // Arrange
         var solution = new T();

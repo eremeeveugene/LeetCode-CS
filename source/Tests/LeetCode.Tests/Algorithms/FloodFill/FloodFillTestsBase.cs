@@ -17,8 +17,7 @@ public abstract class FloodFillTestsBase<T> where T : IFloodFill, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FloodFill_WithInitialPositionAndNewColor_ReturnsModifiedImage(int[][] image, int sr, int sc,
-        int color, int[][] expectedResult)
+    public void FloodFill_WithInitialPositionAndNewColor_ReturnsModifiedImage(int[][] image, int sr, int sc, int color, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();

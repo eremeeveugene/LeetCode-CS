@@ -19,8 +19,7 @@ public abstract class CreateBinaryTreeFromDescriptionsTestsBase<T> where T : ICr
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void CreateBinaryTree_WithDescriptions_ReturnsBinaryTreeConstructedFromDescriptions(int[][] descriptions,
-        int?[] expectedResultArray)
+    public void CreateBinaryTree_WithDescriptions_ReturnsBinaryTreeConstructedFromDescriptions(int[][] descriptions, int?[] expectedResultArray)
     {
         // Arrange
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);

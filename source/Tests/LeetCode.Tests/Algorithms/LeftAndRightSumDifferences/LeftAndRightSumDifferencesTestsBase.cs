@@ -18,8 +18,7 @@ public abstract class LeftAndRightSumDifferencesTestsBase<T> where T : ILeftAndR
     [TestMethod]
     [DataRow(new[] { 1 }, new[] { 0 })]
     [DataRow(new[] { 10, 4, 8, 3 }, new[] { 15, 1, 11, 22 })]
-    public void LeftRightDifference_WithInputArray_ReturnsAbsoluteLeftRightSums(int[] nums,
-        int[] expectedResult)
+    public void LeftRightDifference_WithInputArray_ReturnsAbsoluteLeftRightSums(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -14,6 +14,4 @@ using LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements;
 namespace LeetCode.Tests.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements;
 
 [TestClass]
-public sealed class AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArrayTests :
-    AbsoluteDifferenceBetweenMaximumAndMinimumKElementsTestsBase<
-        AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray>;
+public sealed class AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArrayTests : AbsoluteDifferenceBetweenMaximumAndMinimumKElementsTestsBase<AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray>;

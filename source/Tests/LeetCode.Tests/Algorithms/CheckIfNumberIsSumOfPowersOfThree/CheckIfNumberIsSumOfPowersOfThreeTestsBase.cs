@@ -19,8 +19,7 @@ public abstract class CheckIfNumberIsSumOfPowersOfThreeTestsBase<T> where T : IC
     [DataRow(12, true)]
     [DataRow(21, false)]
     [DataRow(91, true)]
-    public void CheckPowersOfThree_WithGivenNumber_ReturnsWhetherItCanBeExpressedAsPowersOfThree(int n,
-        bool expectedResult)
+    public void CheckPowersOfThree_WithGivenNumber_ReturnsWhetherItCanBeExpressedAsPowersOfThree(int n, bool expectedResult)
     {
         // Arrange
         var solution = new T();

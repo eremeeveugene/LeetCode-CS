@@ -18,8 +18,7 @@ public abstract class SortThePeopleTestsBase<T> where T : ISortThePeople, new()
     [TestMethod]
     [DataRow(new[] { "Mary", "John", "Emma" }, new[] { 180, 165, 170 }, new[] { "Mary", "Emma", "John" })]
     [DataRow(new[] { "Alice", "Bob", "Bob" }, new[] { 155, 185, 150 }, new[] { "Bob", "Alice", "Bob" })]
-    public void SortPeople_WithNamesAndHeights_ReturnsSortedNamesByHeight(string[] names, int[] heights,
-        string[] expectedResult)
+    public void SortPeople_WithNamesAndHeights_ReturnsSortedNamesByHeight(string[] names, int[] heights, string[] expectedResult)
     {
         // Arrange
         var solution = new T();

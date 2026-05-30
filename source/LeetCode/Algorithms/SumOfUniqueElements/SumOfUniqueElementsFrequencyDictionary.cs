@@ -32,7 +32,6 @@ public sealed class SumOfUniqueElementsFrequencyDictionary : ISumOfUniqueElement
             }
         }
 
-        return frequencyDictionary.Where(frequency => frequency.Value == 1)
-            .Sum(numsKeyValuePair => numsKeyValuePair.Key);
+        return frequencyDictionary.Where(frequency => frequency.Value == 1).Sum(numsKeyValuePair => numsKeyValuePair.Key);
     }
 }

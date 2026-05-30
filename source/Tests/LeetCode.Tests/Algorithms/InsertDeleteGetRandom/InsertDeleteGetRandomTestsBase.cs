@@ -18,8 +18,7 @@ public abstract class InsertDeleteGetRandomTestsBase<T> where T : IInsertDeleteG
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void InsertDeleteGetRandom_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        IScenario<IInsertDeleteGetRandom> scenario)
+    public void InsertDeleteGetRandom_WithMixedOperations_ProcessesOperationsAccordingToSpecification(IScenario<IInsertDeleteGetRandom> scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -45,81 +44,13 @@ public abstract class InsertDeleteGetRandomTestsBase<T> where T : IInsertDeleteG
 
     private static IEnumerable<IScenario<IInsertDeleteGetRandom>[]> GetScenarios()
     {
-        yield return
-        [
-            new Scenario<IInsertDeleteGetRandom>(
-                [
-                    new InsertOperation(1),
-                    new RemoveOperation(2),
-                    new InsertOperation(2),
-                    new GetRandomOperation(),
-                    new RemoveOperation(1),
-                    new InsertOperation(2),
-                    new GetRandomOperation(),
-                    new RemoveOperation(1),
-                    new RemoveOperation(2),
-                    new InsertOperation(3),
-                    new GetRandomOperation()
-                ],
-                [
-                    new InsertOperation.Result(true),
-                    new RemoveOperation.Result(false),
-                    new InsertOperation.Result(true),
-                    new GetRandomOperation.Result([1, 2]),
-                    new RemoveOperation.Result(true),
-                    new InsertOperation.Result(false),
-                    new GetRandomOperation.Result([2]),
-                    new RemoveOperation.Result(false),
-                    new RemoveOperation.Result(true),
-                    new InsertOperation.Result(true),
-                    new GetRandomOperation.Result([3])
-                ])
-        ];
+        yield return [new Scenario<IInsertDeleteGetRandom>([new InsertOperation(1), new RemoveOperation(2), new InsertOperation(2), new GetRandomOperation(), new RemoveOperation(1), new InsertOperation(2), new GetRandomOperation(), new RemoveOperation(1), new RemoveOperation(2), new InsertOperation(3), new GetRandomOperation()], [new InsertOperation.Result(true), new RemoveOperation.Result(false), new InsertOperation.Result(true), new GetRandomOperation.Result([1, 2]), new RemoveOperation.Result(true), new InsertOperation.Result(false), new GetRandomOperation.Result([2]), new RemoveOperation.Result(false), new RemoveOperation.Result(true), new InsertOperation.Result(true), new GetRandomOperation.Result([3])])];
 
-        yield return
-        [
-            new Scenario<IInsertDeleteGetRandom>(
-                [
-                    new InsertOperation(5),
-                    new InsertOperation(5),
-                    new GetRandomOperation()
-                ],
-                [
-                    new InsertOperation.Result(true),
-                    new InsertOperation.Result(false),
-                    new GetRandomOperation.Result([5])
-                ])
-        ];
+        yield return [new Scenario<IInsertDeleteGetRandom>([new InsertOperation(5), new InsertOperation(5), new GetRandomOperation()], [new InsertOperation.Result(true), new InsertOperation.Result(false), new GetRandomOperation.Result([5])])];
 
-        yield return
-        [
-            new Scenario<IInsertDeleteGetRandom>(
-                [
-                    new InsertOperation(1),
-                    new RemoveOperation(99),
-                    new GetRandomOperation()
-                ],
-                [
-                    new InsertOperation.Result(true),
-                    new RemoveOperation.Result(false),
-                    new GetRandomOperation.Result([1])
-                ])
-        ];
+        yield return [new Scenario<IInsertDeleteGetRandom>([new InsertOperation(1), new RemoveOperation(99), new GetRandomOperation()], [new InsertOperation.Result(true), new RemoveOperation.Result(false), new GetRandomOperation.Result([1])])];
 
-        yield return
-        [
-            new Scenario<IInsertDeleteGetRandom>(
-                [
-                    new InsertOperation(42),
-                    new GetRandomOperation(),
-                    new GetRandomOperation()
-                ],
-                [
-                    new InsertOperation.Result(true),
-                    new GetRandomOperation.Result([42]),
-                    new GetRandomOperation.Result([42])
-                ])
-        ];
+        yield return [new Scenario<IInsertDeleteGetRandom>([new InsertOperation(42), new GetRandomOperation(), new GetRandomOperation()], [new InsertOperation.Result(true), new GetRandomOperation.Result([42]), new GetRandomOperation.Result([42])])];
     }
 
     private sealed class InsertOperation : IOperation<IInsertDeleteGetRandom>
@@ -138,7 +69,9 @@ public abstract class InsertDeleteGetRandomTestsBase<T> where T : IInsertDeleteG
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _inserted;
 
@@ -180,7 +113,9 @@ public abstract class InsertDeleteGetRandomTestsBase<T> where T : IInsertDeleteG
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _removed;
 
@@ -215,7 +150,9 @@ public abstract class InsertDeleteGetRandomTestsBase<T> where T : IInsertDeleteG
             return new Result([value]);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int[] _validOptions;
 

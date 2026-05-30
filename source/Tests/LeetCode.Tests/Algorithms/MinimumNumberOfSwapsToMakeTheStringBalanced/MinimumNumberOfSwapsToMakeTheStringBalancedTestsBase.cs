@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced;
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced;
 
-public abstract class MinimumNumberOfSwapsToMakeTheStringBalancedTestsBase<T>
-    where T : IMinimumNumberOfSwapsToMakeTheStringBalanced, new()
+public abstract class MinimumNumberOfSwapsToMakeTheStringBalancedTestsBase<T> where T : IMinimumNumberOfSwapsToMakeTheStringBalanced, new()
 {
     [TestMethod]
     [DataRow("[]", 0)]

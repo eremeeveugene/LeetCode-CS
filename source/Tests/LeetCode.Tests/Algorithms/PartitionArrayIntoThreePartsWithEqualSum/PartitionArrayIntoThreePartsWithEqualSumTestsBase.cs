@@ -13,8 +13,7 @@ using LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum;
 
 namespace LeetCode.Tests.Algorithms.PartitionArrayIntoThreePartsWithEqualSum;
 
-public abstract class PartitionArrayIntoThreePartsWithEqualSumTestsBase<T>
-    where T : IPartitionArrayIntoThreePartsWithEqualSum, new()
+public abstract class PartitionArrayIntoThreePartsWithEqualSumTestsBase<T> where T : IPartitionArrayIntoThreePartsWithEqualSum, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 1, 1, 1 }, false)]
@@ -32,8 +31,7 @@ public abstract class PartitionArrayIntoThreePartsWithEqualSumTestsBase<T>
     [DataRow(new[] { 1, 2, 3, 4, 5, 6 }, false)]
     [DataRow(new[] { -3, 3, -3, 3, -3, 3 }, true)]
     [DataRow(new[] { 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1 }, true)]
-    public void CanThreePartsEqualSum_WithIntegerArray_ReturnsTrueIfArrayCanBeSplitIntoThreeEqualSumParts(
-        int[] arr, bool expectedResult)
+    public void CanThreePartsEqualSum_WithIntegerArray_ReturnsTrueIfArrayCanBeSplitIntoThreeEqualSumParts(int[] arr, bool expectedResult)
     {
         // Arrange
         var solution = new T();

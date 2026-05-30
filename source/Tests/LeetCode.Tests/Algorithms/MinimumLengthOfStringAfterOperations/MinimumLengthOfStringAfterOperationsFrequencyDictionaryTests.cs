@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumLengthOfStringAfterOperations;
 namespace LeetCode.Tests.Algorithms.MinimumLengthOfStringAfterOperations;
 
 [TestClass]
-public sealed class MinimumLengthOfStringAfterOperationsFrequencyDictionaryTests :
-    MinimumLengthOfStringAfterOperationsTestsBase<MinimumLengthOfStringAfterOperationsFrequencyDictionary>;
+public sealed class MinimumLengthOfStringAfterOperationsFrequencyDictionaryTests : MinimumLengthOfStringAfterOperationsTestsBase<MinimumLengthOfStringAfterOperationsFrequencyDictionary>;

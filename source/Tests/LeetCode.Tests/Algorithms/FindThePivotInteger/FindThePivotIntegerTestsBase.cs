@@ -20,8 +20,7 @@ public abstract class FindThePivotIntegerTestsBase<T> where T : IFindThePivotInt
     [DataRow(1, 1)]
     [DataRow(4, -1)]
     [DataRow(12, -1)]
-    public void PivotInteger_WithRangeUpperBound_ReturnsPivotWhereLeftAndRightSumsAreEqualOrMinusOne(int n,
-        int expectedResult)
+    public void PivotInteger_WithRangeUpperBound_ReturnsPivotWhereLeftAndRightSumsAreEqualOrMinusOne(int n, int expectedResult)
     {
         // Arrange
         var solution = new T();

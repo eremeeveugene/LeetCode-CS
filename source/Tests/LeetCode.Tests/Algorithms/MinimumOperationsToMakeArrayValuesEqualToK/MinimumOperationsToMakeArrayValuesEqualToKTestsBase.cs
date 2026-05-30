@@ -13,15 +13,13 @@ using LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK;
 
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK;
 
-public abstract class MinimumOperationsToMakeArrayValuesEqualToKTestsBase<T>
-    where T : IMinimumOperationsToMakeArrayValuesEqualToK, new()
+public abstract class MinimumOperationsToMakeArrayValuesEqualToKTestsBase<T> where T : IMinimumOperationsToMakeArrayValuesEqualToK, new()
 {
     [TestMethod]
     [DataRow(new[] { 5, 2, 5, 4, 5 }, 2, 2)]
     [DataRow(new[] { 2, 1, 2 }, 2, -1)]
     [DataRow(new[] { 9, 7, 5, 3 }, 1, 4)]
-    public void MinOperations_WithArrayAndTargetK_ReturnsMinimumStepsOrMinusOne(int[] nums, int k,
-        int expectedResult)
+    public void MinOperations_WithArrayAndTargetK_ReturnsMinimumStepsOrMinusOne(int[] nums, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumXORForEachQuery;
 namespace LeetCode.Tests.Algorithms.MaximumXORForEachQuery;
 
 [TestClass]
-public class MaximumXORForEachQueryBitMaskingTests :
-    MaximumXORForEachQueryTestsBase<MaximumXORForEachQueryBitMasking>;
+public class MaximumXORForEachQueryBitMaskingTests : MaximumXORForEachQueryTestsBase<MaximumXORForEachQueryBitMasking>;

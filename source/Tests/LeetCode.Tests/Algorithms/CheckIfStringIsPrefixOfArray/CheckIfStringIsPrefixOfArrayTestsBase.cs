@@ -19,8 +19,7 @@ public abstract class CheckIfStringIsPrefixOfArrayTestsBase<T> where T : ICheckI
     [DataRow("iloveleetcode", new[] { "i", "love", "leetcode", "apples" }, true)]
     [DataRow("iloveleetcode", new[] { "apples", "i", "love", "leetcode" }, false)]
     [DataRow("a", new[] { "aa", "aaaa", "banana" }, false)]
-    public void IsPrefixString_WithGivenStringAndWordsArray_ReturnsWhetherStringIsPrefixConcatenation(string s,
-        string[] words, bool expectedResult)
+    public void IsPrefixString_WithGivenStringAndWordsArray_ReturnsWhetherStringIsPrefixConcatenation(string s, string[] words, bool expectedResult)
     {
         // Arrange
         var solution = new T();

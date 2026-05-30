@@ -19,8 +19,7 @@ public abstract class DetermineIfTwoEventsHaveConflictTestsBase<T> where T : IDe
     [DataRow(new[] { "01:15", "02:00" }, new[] { "02:00", "03:00" }, true)]
     [DataRow(new[] { "01:00", "02:00" }, new[] { "01:20", "03:00" }, true)]
     [DataRow(new[] { "10:00", "11:00" }, new[] { "14:00", "15:00" }, false)]
-    public void HaveConflict_GivenTwoEventTimeRanges_ReturnsIfConflictExists(string[] event1,
-        string[] event2, bool expectedResult)
+    public void HaveConflict_GivenTwoEventTimeRanges_ReturnsIfConflictExists(string[] event1, string[] event2, bool expectedResult)
     {
         // Arrange
         var solution = new T();

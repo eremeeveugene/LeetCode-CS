@@ -25,14 +25,7 @@ public sealed class TargetSumRecursion : ITargetSum
     {
         var totalSum = nums.Sum();
 
-        return CalculateWays(
-            nums,
-            0,
-            0,
-            target,
-            totalSum,
-            InitializeMemo(nums.Length, (2 * totalSum) + 1)
-        );
+        return CalculateWays(nums, 0, 0, target, totalSum, InitializeMemo(nums.Length, (2 * totalSum) + 1));
     }
 
     private static int[,] InitializeMemo(int rows, int cols)
@@ -50,8 +43,7 @@ public sealed class TargetSumRecursion : ITargetSum
         return memo;
     }
 
-    private static int CalculateWays(int[] nums, int currentIndex, int currentSum, int target, int totalSum,
-        int[,] memo)
+    private static int CalculateWays(int[] nums, int currentIndex, int currentSum, int target, int totalSum, int[,] memo)
     {
         if (currentIndex == nums.Length)
         {
@@ -63,9 +55,7 @@ public sealed class TargetSumRecursion : ITargetSum
             return memo[currentIndex, currentSum + totalSum];
         }
 
-        memo[currentIndex, currentSum + totalSum] =
-            CalculateWays(nums, currentIndex + 1, currentSum + nums[currentIndex], target, totalSum, memo) +
-            CalculateWays(nums, currentIndex + 1, currentSum - nums[currentIndex], target, totalSum, memo);
+        memo[currentIndex, currentSum + totalSum] = CalculateWays(nums, currentIndex + 1, currentSum + nums[currentIndex], target, totalSum, memo) + CalculateWays(nums, currentIndex + 1, currentSum - nums[currentIndex], target, totalSum, memo);
 
         return memo[currentIndex, currentSum + totalSum];
     }

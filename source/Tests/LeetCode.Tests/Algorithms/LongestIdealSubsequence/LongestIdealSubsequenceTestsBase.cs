@@ -18,8 +18,7 @@ public abstract class LongestIdealSubsequenceTestsBase<T> where T : ILongestIdea
     [TestMethod]
     [DataRow("acfgbd", 2, 4)]
     [DataRow("abcd", 3, 4)]
-    public void LongestIdealString_WithInputStringAndMaxCharDiff_ReturnsLengthOfLongestValidSubsequence(string s, int k,
-        int expectedResult)
+    public void LongestIdealString_WithInputStringAndMaxCharDiff_ReturnsLengthOfLongestValidSubsequence(string s, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

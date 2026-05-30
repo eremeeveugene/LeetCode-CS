@@ -18,8 +18,7 @@ public abstract class ContinuousSubarraysTestsBase<T> where T : IContinuousSubar
     [TestMethod]
     [DataRow(new[] { 5, 4, 2, 4 }, 8L)]
     [DataRow(new[] { 1, 2, 3 }, 6L)]
-    public void ContinuousSubarrays_GivenArrayOfIntegers_ReturnsCountOfValidSubarrays(int[] nums,
-        long expectedResult)
+    public void ContinuousSubarrays_GivenArrayOfIntegers_ReturnsCountOfValidSubarrays(int[] nums, long expectedResult)
     {
         // Arrange
         var solution = new T();

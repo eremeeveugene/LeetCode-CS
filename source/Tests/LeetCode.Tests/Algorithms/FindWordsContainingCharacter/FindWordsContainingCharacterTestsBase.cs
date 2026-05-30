@@ -19,8 +19,7 @@ public abstract class FindWordsContainingCharacterTestsBase<T> where T : IFindWo
     [DataRow(new[] { "leet", "code" }, 'e', new[] { 0, 1 })]
     [DataRow(new[] { "abc", "bcd", "aaaa", "cbc" }, 'a', new[] { 0, 2 })]
     [DataRow(new[] { "abc", "bcd", "aaaa", "cbc" }, 'z', new int[] { })]
-    public void FindWordsContaining_WithArrayOfWordsAndChar_ReturnsIndicesOfWordsContainingChar(string[] words,
-        char x, int[] expectedResult)
+    public void FindWordsContaining_WithArrayOfWordsAndChar_ReturnsIndicesOfWordsContainingChar(string[] words, char x, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

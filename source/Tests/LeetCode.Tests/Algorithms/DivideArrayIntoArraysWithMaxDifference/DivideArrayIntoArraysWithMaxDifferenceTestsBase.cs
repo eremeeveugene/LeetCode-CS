@@ -13,13 +13,11 @@ using LeetCode.Algorithms.DivideArrayIntoArraysWithMaxDifference;
 
 namespace LeetCode.Tests.Algorithms.DivideArrayIntoArraysWithMaxDifference;
 
-public abstract class DivideArrayIntoArraysWithMaxDifferenceTestsBase<T>
-    where T : IDivideArrayIntoArraysWithMaxDifference, new()
+public abstract class DivideArrayIntoArraysWithMaxDifferenceTestsBase<T> where T : IDivideArrayIntoArraysWithMaxDifference, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void DivideArray_WithVariousInputs_ReturnsCorrectTripletGroupingOrEmptyArray(int[] nums, int k,
-        int[][] expectedResult)
+    public void DivideArray_WithVariousInputs_ReturnsCorrectTripletGroupingOrEmptyArray(int[] nums, int k, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();

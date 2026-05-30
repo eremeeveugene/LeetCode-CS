@@ -19,8 +19,7 @@ public abstract class FindUniqueBinaryStringTestsBase<T> where T : IFindUniqueBi
     [DataRow(new[] { "01", "10" }, "11")]
     [DataRow(new[] { "00", "01" }, "10")]
     [DataRow(new[] { "111", "011", "001" }, "000")]
-    public void FindDifferentBinaryString_WithUniqueBinaryStrings_ReturnsMissingBinaryString(string[] nums,
-        string expectedResult)
+    public void FindDifferentBinaryString_WithUniqueBinaryStrings_ReturnsMissingBinaryString(string[] nums, string expectedResult)
     {
         // Arrange
         var solution = new T();

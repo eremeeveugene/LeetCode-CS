@@ -13,14 +13,12 @@ using LeetCode.Algorithms.MaximumNumberOfDistinctElementsAfterOperations;
 
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfDistinctElementsAfterOperations;
 
-public abstract class MaximumNumberOfDistinctElementsAfterOperationsTestsBase<T>
-    where T : IMaximumNumberOfDistinctElementsAfterOperations, new()
+public abstract class MaximumNumberOfDistinctElementsAfterOperationsTestsBase<T> where T : IMaximumNumberOfDistinctElementsAfterOperations, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 2, 3, 3, 4 }, 2, 6)]
     [DataRow(new[] { 4, 4, 4, 4 }, 1, 3)]
-    public void MaxDistinctElements_WithNumsAndAdjustmentLimit_ReturnsMaximumDistinctCount(int[] nums,
-        int k, int expectedResult)
+    public void MaxDistinctElements_WithNumsAndAdjustmentLimit_ReturnsMaximumDistinctCount(int[] nums, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

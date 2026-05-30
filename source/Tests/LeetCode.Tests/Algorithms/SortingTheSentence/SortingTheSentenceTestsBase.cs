@@ -18,8 +18,7 @@ public abstract class SortingTheSentenceTestsBase<T> where T : ISortingTheSenten
     [TestMethod]
     [DataRow("is2 sentence4 This1 a3", "This is a sentence")]
     [DataRow("Myself2 Me1 I4 and3", "Me Myself and I")]
-    public void SortSentence_WithShuffledSentence_ReturnsWordsInOriginalOrderBasedOnTrailingIndices(string s,
-        string expectedResult)
+    public void SortSentence_WithShuffledSentence_ReturnsWordsInOriginalOrderBasedOnTrailingIndices(string s, string expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -18,8 +18,7 @@ public abstract class FruitsIntoBaskets2TestsBase<T> where T : IFruitsIntoBasket
     [TestMethod]
     [DataRow(new[] { 4, 2, 5 }, new[] { 3, 5, 4 }, 1)]
     [DataRow(new[] { 3, 6, 1 }, new[] { 6, 4, 7 }, 0)]
-    public void NumOfUnplacedFruits_WithFruitsAndBaskets_ReturnsCountOfUnplacedFruitTypes(int[] fruits,
-        int[] baskets, int expectedResult)
+    public void NumOfUnplacedFruits_WithFruitsAndBaskets_ReturnsCountOfUnplacedFruitTypes(int[] fruits, int[] baskets, int expectedResult)
     {
         // Arrange
         var solution = new T();

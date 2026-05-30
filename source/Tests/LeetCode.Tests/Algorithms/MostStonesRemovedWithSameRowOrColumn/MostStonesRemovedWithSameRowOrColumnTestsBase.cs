@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MostStonesRemovedWithSameRowOrColumn;
 
 namespace LeetCode.Tests.Algorithms.MostStonesRemovedWithSameRowOrColumn;
 
-public abstract class MostStonesRemovedWithSameRowOrColumnTestsBase<T>
-    where T : IMostStonesRemovedWithSameRowOrColumn, new()
+public abstract class MostStonesRemovedWithSameRowOrColumnTestsBase<T> where T : IMostStonesRemovedWithSameRowOrColumn, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]

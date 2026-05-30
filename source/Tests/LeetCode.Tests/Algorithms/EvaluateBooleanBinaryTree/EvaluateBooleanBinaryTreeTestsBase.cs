@@ -18,8 +18,7 @@ public abstract class EvaluateBooleanBinaryTreeTestsBase<T> where T : IEvaluateB
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void EvaluateTree_GivenJsonTreeStructure_ReturnsBooleanEvaluationResult(int?[] rootArray,
-        bool expectedResult)
+    public void EvaluateTree_GivenJsonTreeStructure_ReturnsBooleanEvaluationResult(int?[] rootArray, bool expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);

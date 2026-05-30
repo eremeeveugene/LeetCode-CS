@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumDifferenceBetweenIncreasingElements;
 namespace LeetCode.Tests.Algorithms.MaximumDifferenceBetweenIncreasingElements;
 
 [TestClass]
-public class MaximumDifferenceBetweenIncreasingElementsGreedyTests :
-    MaximumDifferenceBetweenIncreasingElementsTestsBase<MaximumDifferenceBetweenIncreasingElementsGreedy>;
+public class MaximumDifferenceBetweenIncreasingElementsGreedyTests : MaximumDifferenceBetweenIncreasingElementsTestsBase<MaximumDifferenceBetweenIncreasingElementsGreedy>;

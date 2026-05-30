@@ -18,8 +18,7 @@ public abstract class PartitionLabelsTestsBase<T> where T : IPartitionLabels, ne
     [TestMethod]
     [DataRow("ababcbacadefegdehijhklij", new[] { 9, 7, 8 })]
     [DataRow("eccbbbbdec", new[] { 10 })]
-    public void PartitionLabels_GivenString_ReturnsPartitionSizesWhereEachLetterAppearsOnce(string s,
-        int[] expectedResult)
+    public void PartitionLabels_GivenString_ReturnsPartitionSizesWhereEachLetterAppearsOnce(string s, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

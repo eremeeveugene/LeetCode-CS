@@ -13,8 +13,7 @@ using LeetCode.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers;
 
 namespace LeetCode.Tests.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers;
 
-public abstract class DivideArrayInSetsOfKConsecutiveNumbersTestsBase<T>
-    where T : IDivideArrayInSetsOfKConsecutiveNumbers, new()
+public abstract class DivideArrayInSetsOfKConsecutiveNumbersTestsBase<T> where T : IDivideArrayInSetsOfKConsecutiveNumbers, new()
 {
     [TestMethod]
     [DataRow(new int[] { }, 1, true)]
@@ -32,8 +31,7 @@ public abstract class DivideArrayInSetsOfKConsecutiveNumbersTestsBase<T>
     [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 4, false)]
     [DataRow(new[] { 3, 3, 2, 2, 1, 1 }, 3, true)]
     [DataRow(new[] { 1, 2, 3, 5, 6, 7, 9, 10, 11 }, 3, true)]
-    public void IsPossibleDivide_WithArrayAndK_ReturnsIfPossibleToDivideIntoConsecutiveSets(int[] nums, int k,
-        bool expectedResult)
+    public void IsPossibleDivide_WithArrayAndK_ReturnsIfPossibleToDivideIntoConsecutiveSets(int[] nums, int k, bool expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -18,8 +18,7 @@ public abstract class BuildArrayFromPermutationTestsBase<T> where T : IBuildArra
     [TestMethod]
     [DataRow(new[] { 0, 2, 1, 5, 3, 4 }, new[] { 0, 1, 2, 4, 5, 3 })]
     [DataRow(new[] { 5, 0, 1, 2, 3, 4 }, new[] { 4, 5, 0, 1, 2, 3 })]
-    public void BuildArray_WithPermutationInput_ReturnsTransformedArrayUsingSelfIndexing(int[] nums,
-        int[] expectedResult)
+    public void BuildArray_WithPermutationInput_ReturnsTransformedArrayUsingSelfIndexing(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

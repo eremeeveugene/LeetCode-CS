@@ -19,8 +19,7 @@ public abstract class FindKthSmallestPairDistanceTestsBase<T> where T : IFindKth
     [DataRow(new[] { 1, 3, 1 }, 1, 0)]
     [DataRow(new[] { 1, 1, 1 }, 2, 0)]
     [DataRow(new[] { 1, 6, 1 }, 3, 5)]
-    public void SmallestDistancePair_WithArrayAndK_ReturnsKthSmallestAbsolutePairDistance(int[] nums, int k,
-        int expectedResult)
+    public void SmallestDistancePair_WithArrayAndK_ReturnsKthSmallestAbsolutePairDistance(int[] nums, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

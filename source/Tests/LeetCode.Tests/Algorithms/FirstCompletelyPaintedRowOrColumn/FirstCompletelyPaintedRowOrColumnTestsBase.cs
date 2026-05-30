@@ -17,8 +17,7 @@ public abstract class FirstCompletelyPaintedRowOrColumnTestsBase<T> where T : IF
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FirstCompleteIndex_WithSequenceAndMatrix_ReturnsFirstCompletedRowOrColumnIndex(int[] arr,
-        int[][] mat, int expectedResult)
+    public void FirstCompleteIndex_WithSequenceAndMatrix_ReturnsFirstCompletedRowOrColumnIndex(int[] arr, int[][] mat, int expectedResult)
     {
         // Arrange
         var solution = new T();

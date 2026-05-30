@@ -18,8 +18,7 @@ public abstract class ConcatenationOfArrayTestsBase<T> where T : IConcatenationO
     [TestMethod]
     [DataRow(new[] { 1, 2, 1 }, new[] { 1, 2, 1, 1, 2, 1 })]
     [DataRow(new[] { 1, 3, 2, 1 }, new[] { 1, 3, 2, 1, 1, 3, 2, 1 })]
-    public void GetConcatenation_WithInputArray_ReturnsConcatenatedArray(int[] nums,
-        int[] expectedResult)
+    public void GetConcatenation_WithInputArray_ReturnsConcatenatedArray(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

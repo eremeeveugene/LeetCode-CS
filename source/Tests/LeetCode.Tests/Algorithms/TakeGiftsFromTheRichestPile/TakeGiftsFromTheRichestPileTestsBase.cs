@@ -18,8 +18,7 @@ public abstract class TakeGiftsFromTheRichestPileTestsBase<T> where T : ITakeGif
     [TestMethod]
     [DataRow(new[] { 25, 64, 9, 4, 100 }, 4, 29L)]
     [DataRow(new[] { 1, 1, 1, 1 }, 4, 4L)]
-    public void PickGifts_WithGiftArrayAndIterations_ReturnsTotalValueAfterKRemovals(int[] gifts, int k,
-        long expectedResult)
+    public void PickGifts_WithGiftArrayAndIterations_ReturnsTotalValueAfterKRemovals(int[] gifts, int k, long expectedResult)
     {
         // Arrange
         var solution = new T();

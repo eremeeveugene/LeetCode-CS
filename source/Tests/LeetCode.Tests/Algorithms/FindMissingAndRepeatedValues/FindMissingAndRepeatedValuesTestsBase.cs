@@ -17,8 +17,7 @@ public abstract class FindMissingAndRepeatedValuesTestsBase<T> where T : IFindMi
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FindMissingAndRepeatedValues_GivenGrid_ReturnsMissingAndRepeatedNumbers(int[][] grid,
-        int[] expectedResult)
+    public void FindMissingAndRepeatedValues_GivenGrid_ReturnsMissingAndRepeatedNumbers(int[][] grid, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

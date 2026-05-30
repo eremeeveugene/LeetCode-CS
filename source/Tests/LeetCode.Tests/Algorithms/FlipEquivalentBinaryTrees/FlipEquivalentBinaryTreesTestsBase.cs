@@ -18,8 +18,7 @@ public abstract class FlipEquivalentBinaryTreesTestsBase<T> where T : IFlipEquiv
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FlipEquiv_WithTwoTreeRoots_ReturnsIfTheyAreEquivalent(int?[] root1Array, int?[] root2Array,
-        bool expectedResult)
+    public void FlipEquiv_WithTwoTreeRoots_ReturnsIfTheyAreEquivalent(int?[] root1Array, int?[] root2Array, bool expectedResult)
     {
         // Arrange
         var root1 = TreeNode.ToTreeNode(root1Array);

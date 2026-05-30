@@ -16,12 +16,9 @@ namespace LeetCode.Tests.Algorithms.WordSubsets;
 public abstract class WordSubsetsTestsBase<T> where T : IWordSubsets, new()
 {
     [TestMethod]
-    [DataRow(new[] { "amazon", "apple", "facebook", "google", "leetcode" }, new[] { "e", "o" },
-        new[] { "facebook", "google", "leetcode" })]
-    [DataRow(new[] { "amazon", "apple", "facebook", "google", "leetcode" }, new[] { "l", "e" },
-        new[] { "apple", "google", "leetcode" })]
-    public void WordSubsets_WithWords1AndWords2_ReturnsMatchingSubset(string[] words1, string[] words2,
-        string[] expectedResult)
+    [DataRow(new[] { "amazon", "apple", "facebook", "google", "leetcode" }, new[] { "e", "o" }, new[] { "facebook", "google", "leetcode" })]
+    [DataRow(new[] { "amazon", "apple", "facebook", "google", "leetcode" }, new[] { "l", "e" }, new[] { "apple", "google", "leetcode" })]
+    public void WordSubsets_WithWords1AndWords2_ReturnsMatchingSubset(string[] words1, string[] words2, string[] expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.AppleRedistributionIntoBoxes;
 namespace LeetCode.Tests.Algorithms.AppleRedistributionIntoBoxes;
 
 [TestClass]
-public sealed class AppleRedistributionIntoBoxesGreedyTests :
-    AppleRedistributionIntoBoxesTestsBase<AppleRedistributionIntoBoxesGreedy>;
+public sealed class AppleRedistributionIntoBoxesGreedyTests : AppleRedistributionIntoBoxesTestsBase<AppleRedistributionIntoBoxesGreedy>;

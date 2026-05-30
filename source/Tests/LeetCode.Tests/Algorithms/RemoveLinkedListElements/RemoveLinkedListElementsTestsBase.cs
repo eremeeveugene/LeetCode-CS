@@ -23,8 +23,7 @@ public abstract class RemoveLinkedListElementsTestsBase<T> where T : IRemoveLink
     [DataRow(new[] { 1 }, 0, new[] { 1 })]
     [DataRow(new[] { 1, 2, 6, 3, 4, 5, 6 }, 6, new[] { 1, 2, 3, 4, 5 })]
     [DataRow(new[] { 7, 7, 7, 7 }, 7, new int[] { })]
-    public void RemoveElements_WithListAndTargetValue_ReturnsListWithoutTargetValue(int[] headArray, int val,
-        int[] expectedResultArray)
+    public void RemoveElements_WithListAndTargetValue_ReturnsListWithoutTargetValue(int[] headArray, int val, int[] expectedResultArray)
     {
         // Arrange
         var head = ListNode.ToListNode(headArray);

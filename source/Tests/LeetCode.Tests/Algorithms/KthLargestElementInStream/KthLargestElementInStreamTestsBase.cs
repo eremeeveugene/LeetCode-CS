@@ -18,8 +18,7 @@ public abstract class KthLargestElementInStreamTestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void KthLargestElementInStream_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        KthLargestScenario scenario)
+    public void KthLargestElementInStream_WithMixedOperations_ProcessesOperationsAccordingToSpecification(KthLargestScenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -47,80 +46,18 @@ public abstract class KthLargestElementInStreamTestsBase
 
     private static IEnumerable<KthLargestScenario[]> GetScenarios()
     {
-        yield return
-        [
-            new KthLargestScenario(3, [4, 5, 8, 2],
-                [
-                    new AddOperation(3),
-                    new AddOperation(5),
-                    new AddOperation(10),
-                    new AddOperation(9),
-                    new AddOperation(4)
-                ],
-                [
-                    new AddOperation.Result(4),
-                    new AddOperation.Result(5),
-                    new AddOperation.Result(5),
-                    new AddOperation.Result(8),
-                    new AddOperation.Result(8)
-                ])
-        ];
+        yield return [new KthLargestScenario(3, [4, 5, 8, 2], [new AddOperation(3), new AddOperation(5), new AddOperation(10), new AddOperation(9), new AddOperation(4)], [new AddOperation.Result(4), new AddOperation.Result(5), new AddOperation.Result(5), new AddOperation.Result(8), new AddOperation.Result(8)])];
 
-        yield return
-        [
-            new KthLargestScenario(4, [7, 7, 7, 7, 8, 3],
-                [
-                    new AddOperation(2),
-                    new AddOperation(10),
-                    new AddOperation(9),
-                    new AddOperation(9)
-                ],
-                [
-                    new AddOperation.Result(7),
-                    new AddOperation.Result(7),
-                    new AddOperation.Result(7),
-                    new AddOperation.Result(8)
-                ])
-        ];
+        yield return [new KthLargestScenario(4, [7, 7, 7, 7, 8, 3], [new AddOperation(2), new AddOperation(10), new AddOperation(9), new AddOperation(9)], [new AddOperation.Result(7), new AddOperation.Result(7), new AddOperation.Result(7), new AddOperation.Result(8)])];
 
-        yield return
-        [
-            new KthLargestScenario(1, [1],
-                [
-                    new AddOperation(2),
-                    new AddOperation(3),
-                    new AddOperation(1)
-                ],
-                [
-                    new AddOperation.Result(2),
-                    new AddOperation.Result(3),
-                    new AddOperation.Result(3)
-                ])
-        ];
+        yield return [new KthLargestScenario(1, [1], [new AddOperation(2), new AddOperation(3), new AddOperation(1)], [new AddOperation.Result(2), new AddOperation.Result(3), new AddOperation.Result(3)])];
 
-        yield return
-        [
-            new KthLargestScenario(2, [5, 10],
-                [
-                    new AddOperation(1),
-                    new AddOperation(2),
-                    new AddOperation(20)
-                ],
-                [
-                    new AddOperation.Result(5),
-                    new AddOperation.Result(5),
-                    new AddOperation.Result(10)
-                ])
-        ];
+        yield return [new KthLargestScenario(2, [5, 10], [new AddOperation(1), new AddOperation(2), new AddOperation(20)], [new AddOperation.Result(5), new AddOperation.Result(5), new AddOperation.Result(10)])];
     }
 
     public sealed class KthLargestScenario : IScenario<IKthLargestElementInStream>
     {
-        public KthLargestScenario(
-            int k,
-            int[] nums,
-            IOperation<IKthLargestElementInStream>[] operations,
-            IOperationResult[] operationResults)
+        public KthLargestScenario(int k, int[] nums, IOperation<IKthLargestElementInStream>[] operations, IOperationResult[] operationResults)
         {
             K = k;
             Nums = nums;
@@ -152,7 +89,9 @@ public abstract class KthLargestElementInStreamTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int _kthLargest;
 

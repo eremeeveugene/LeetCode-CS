@@ -14,5 +14,4 @@ using LeetCode.Algorithms.DefuseTheBomb;
 namespace LeetCode.Tests.Algorithms.DefuseTheBomb;
 
 [TestClass]
-public sealed class DefuseTheBombSlidingWindowTests :
-    DefuseTheBombTestsBase<DefuseTheBombSlidingWindow>;
+public sealed class DefuseTheBombSlidingWindowTests : DefuseTheBombTestsBase<DefuseTheBombSlidingWindow>;

@@ -17,8 +17,7 @@ public abstract class SpiralMatrix3TestsBase<T> where T : ISpiralMatrix3, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void SpiralMatrixIII_WithGridSizeAndStartPosition_ReturnsCoordinatesVisitedInClockwiseSpiralOrder(int rows,
-        int cols, int rStart, int cStart, int[][] expectedResult)
+    public void SpiralMatrixIII_WithGridSizeAndStartPosition_ReturnsCoordinatesVisitedInClockwiseSpiralOrder(int rows, int cols, int rStart, int cStart, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();

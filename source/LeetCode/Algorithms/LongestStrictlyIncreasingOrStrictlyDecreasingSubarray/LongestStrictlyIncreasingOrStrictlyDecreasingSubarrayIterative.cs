@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubarray;
 
 /// <inheritdoc />
-public sealed class LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayIterative :
-    ILongestStrictlyIncreasingOrStrictlyDecreasingSubarray
+public sealed class LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayIterative : ILongestStrictlyIncreasingOrStrictlyDecreasingSubarray
 {
     /// <summary>
     ///     Time complexity - O(n)

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumASCIIDeleteSumForTwoStrings;
 namespace LeetCode.Tests.Algorithms.MinimumASCIIDeleteSumForTwoStrings;
 
 [TestClass]
-public sealed class MinimumASCIIDeleteSumForTwoStringsDynamicProgrammingTests :
-    MinimumASCIIDeleteSumForTwoStringsTestsBase<MinimumASCIIDeleteSumForTwoStringsDynamicProgramming>;
+public sealed class MinimumASCIIDeleteSumForTwoStringsDynamicProgrammingTests : MinimumASCIIDeleteSumForTwoStringsTestsBase<MinimumASCIIDeleteSumForTwoStringsDynamicProgramming>;

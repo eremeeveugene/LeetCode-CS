@@ -24,8 +24,7 @@ public abstract class LargestNumberTestsBase<T> where T : ILargestNumber, new()
     [DataRow(new[] { 121, 12, 120 }, "12121120")]
     [DataRow(new[] { 1, 11, 111, 1112 }, "1112111111")]
     [DataRow(new[] { 999999, 999999998, 999999997 }, "999999999999998999999997")]
-    public void LargestNumber_WithArrayOfIntegers_ReturnsMaxConcatenatedNumber(int[] nums,
-        string expectedResult)
+    public void LargestNumber_WithArrayOfIntegers_ReturnsMaxConcatenatedNumber(int[] nums, string expectedResult)
     {
         // Arrange
         var solution = new T();

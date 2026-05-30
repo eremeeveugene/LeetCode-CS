@@ -17,8 +17,7 @@ public abstract class SortMatrixByDiagonalsTestsBase<T> where T : ISortMatrixByD
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void SortMatrix_WithSquareMatrix_SortsBottomLeftDiagonalsDescendingAndTopRightDiagonalsAscending(
-        int[][] grid, int[][] expectedResult)
+    public void SortMatrix_WithSquareMatrix_SortsBottomLeftDiagonalsDescendingAndTopRightDiagonalsAscending(int[][] grid, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();

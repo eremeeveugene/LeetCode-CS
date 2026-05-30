@@ -23,8 +23,7 @@ public abstract class MergeTwoSortedListsTestsBase<T> where T : IMergeTwoSortedL
     [DataRow(new[] { 0 }, new int[] { }, new[] { 0 })]
     [DataRow(new[] { 1, 2, 4 }, new[] { 1, 3, 4 }, new[] { 1, 1, 2, 3, 4, 4 })]
     [DataRow(new[] { -9, 3 }, new[] { 5, 7 }, new[] { -9, 3, 5, 7 })]
-    public void MergeTwoLists_WithTwoIntegerArrays_ReturnsMergedSortedLinkedList(int[] list1Array,
-        int[] list2Array, int[] expectedResultArray)
+    public void MergeTwoLists_WithTwoIntegerArrays_ReturnsMergedSortedLinkedList(int[] list1Array, int[] list2Array, int[] expectedResultArray)
     {
         // Arrange
         var list1 = ListNode.ToListNode(list1Array);

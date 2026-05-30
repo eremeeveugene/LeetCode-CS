@@ -14,6 +14,4 @@ using LeetCode.Algorithms.LongestPalindromeByConcatenatingTwoLetterWords;
 namespace LeetCode.Tests.Algorithms.LongestPalindromeByConcatenatingTwoLetterWords;
 
 [TestClass]
-public sealed class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyDictionaryTests :
-    LongestPalindromeByConcatenatingTwoLetterWordsTestsBase<
-        LongestPalindromeByConcatenatingTwoLetterWordsFrequencyDictionary>;
+public sealed class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyDictionaryTests : LongestPalindromeByConcatenatingTwoLetterWordsTestsBase<LongestPalindromeByConcatenatingTwoLetterWordsFrequencyDictionary>;

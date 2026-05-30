@@ -19,8 +19,7 @@ public abstract class FindAllDuplicatesInAnArrayTestsBase<T> where T : IFindAllD
     [DataRow(new[] { 4, 3, 2, 7, 8, 2, 3, 1 }, new[] { 2, 3 })]
     [DataRow(new[] { 1, 1, 2 }, new[] { 1 })]
     [DataRow(new[] { 1 }, new int[] { })]
-    public void FindDuplicates_WithArrayOfIntegers_ReturnsElementsThatAppearExactlyTwice(int[] nums,
-        int[] expectedResult)
+    public void FindDuplicates_WithArrayOfIntegers_ReturnsElementsThatAppearExactlyTwice(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

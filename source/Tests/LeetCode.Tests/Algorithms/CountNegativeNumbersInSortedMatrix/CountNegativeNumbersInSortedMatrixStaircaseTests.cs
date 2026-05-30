@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountNegativeNumbersInSortedMatrix;
 namespace LeetCode.Tests.Algorithms.CountNegativeNumbersInSortedMatrix;
 
 [TestClass]
-public sealed class CountNegativeNumbersInSortedMatrixStaircaseTests :
-    CountNegativeNumbersInSortedMatrixTestsBase<CountNegativeNumbersInSortedMatrixStaircase>;
+public sealed class CountNegativeNumbersInSortedMatrixStaircaseTests : CountNegativeNumbersInSortedMatrixTestsBase<CountNegativeNumbersInSortedMatrixStaircase>;

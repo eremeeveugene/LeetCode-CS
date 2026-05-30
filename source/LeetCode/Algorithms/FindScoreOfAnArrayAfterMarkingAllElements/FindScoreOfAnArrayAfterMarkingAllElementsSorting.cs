@@ -25,9 +25,7 @@ public sealed class FindScoreOfAnArrayAfterMarkingAllElementsSorting : IFindScor
         long score = 0;
         var markedElements = new bool[nums.Length];
 
-        var elements = nums.Select((value, index) => (Value: value, Index: index))
-            .OrderBy(e => e.Value)
-            .ThenBy(e => e.Index);
+        var elements = nums.Select((value, index) => (Value: value, Index: index)).OrderBy(e => e.Value).ThenBy(e => e.Index);
 
         foreach (var (value, index) in elements)
         {

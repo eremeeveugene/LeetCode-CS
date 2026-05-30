@@ -19,8 +19,7 @@ public abstract class AlternatingGroups2TestsBase<T> where T : IAlternatingGroup
     [DataRow(new[] { 0, 1, 0, 1, 0 }, 3, 3)]
     [DataRow(new[] { 0, 1, 0, 0, 1, 0, 1 }, 6, 2)]
     [DataRow(new[] { 1, 1, 0, 1 }, 4, 0)]
-    public void NumberOfAlternatingGroups_WithColorsAndK_ReturnsTheNumberOfAlternatingGroups(int[] colors,
-        int k, int expectedResult)
+    public void NumberOfAlternatingGroups_WithColorsAndK_ReturnsTheNumberOfAlternatingGroups(int[] colors, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

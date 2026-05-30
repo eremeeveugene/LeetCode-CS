@@ -19,8 +19,7 @@ public abstract class TwentyFourGameTestsBase<T> where T : ITwentyFourGame, new(
     [DataRow(new[] { 4, 1, 8, 7 }, true)]
     [DataRow(new[] { 1, 2, 1, 2 }, false)]
     [DataRow(new[] { 1, 3, 4, 6 }, true)]
-    public void JudgePoint24_WithCardsArray_ReturnsTrueIfExpressionEvaluatesToTwentyFour(int[] cards,
-        bool expectedResult)
+    public void JudgePoint24_WithCardsArray_ReturnsTrueIfExpressionEvaluatesToTwentyFour(int[] cards, bool expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -22,8 +22,7 @@ public abstract class RemoveNthNodeFromEndOfListTestsBase<T> where T : IRemoveNt
     [DataRow(new[] { 1 }, 1, new int[] { })]
     [DataRow(new[] { 1, 2 }, 1, new[] { 1 })]
     [DataRow(new[] { 1, 2 }, 2, new[] { 2 })]
-    public void RemoveNthFromEnd_WithListAndPosition_RemovesNthNodeFromEndAndReturnsUpdatedList(int[] headArray, int n,
-        int[] expectedResultArray)
+    public void RemoveNthFromEnd_WithListAndPosition_RemovesNthNodeFromEndAndReturnsUpdatedList(int[] headArray, int n, int[] expectedResultArray)
     {
         // Arrange
         var head = ListNode.ToListNode(headArray);

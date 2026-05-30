@@ -19,8 +19,7 @@ public abstract class SmallestRange1TestsBase<T> where T : ISmallestRange1, new(
     [DataRow(new[] { 1 }, 0, 0)]
     [DataRow(new[] { 0, 10 }, 2, 6)]
     [DataRow(new[] { 1, 3, 6 }, 3, 0)]
-    public void SmallestRangeI_WithArrayAndAdjustmentLimit_ReturnsMinimumPossibleScore(int[] nums, int k,
-        int expectedResult)
+    public void SmallestRangeI_WithArrayAndAdjustmentLimit_ReturnsMinimumPossibleScore(int[] nums, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

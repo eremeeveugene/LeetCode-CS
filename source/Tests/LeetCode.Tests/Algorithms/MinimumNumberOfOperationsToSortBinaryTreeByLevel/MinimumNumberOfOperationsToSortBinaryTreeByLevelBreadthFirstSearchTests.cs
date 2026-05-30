@@ -14,6 +14,4 @@ using LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel;
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel;
 
 [TestClass]
-public sealed class MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearchTests :
-    MinimumNumberOfOperationsToSortBinaryTreeByLevelTestsBase<
-        MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch>;
+public sealed class MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearchTests : MinimumNumberOfOperationsToSortBinaryTreeByLevelTestsBase<MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch>;

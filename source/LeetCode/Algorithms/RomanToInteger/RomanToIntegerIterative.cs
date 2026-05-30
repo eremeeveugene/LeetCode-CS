@@ -31,8 +31,7 @@ public sealed class RomanToIntegerIterative : IRomanToInteger
             var currentChar = romanString.ElementAt(i);
             var nextChar = romanString.ElementAtOrDefault(i + 1);
 
-            var subtractiveRomanNumeral = SubtractiveRomanNumeral.SubtractiveRomanNumerals.FirstOrDefault(s =>
-                s.Symbol.Char.Equals(currentChar) && s.SecondSymbol.Char.Equals(nextChar));
+            var subtractiveRomanNumeral = SubtractiveRomanNumeral.SubtractiveRomanNumerals.FirstOrDefault(s => s.Symbol.Char.Equals(currentChar) && s.SecondSymbol.Char.Equals(nextChar));
 
             if (subtractiveRomanNumeral != null)
             {

@@ -18,8 +18,7 @@ public abstract class FizzBuzzTestsBase<T> where T : IFizzBuzz, new()
     [TestMethod]
     [DataRow(3, new[] { "1", "2", "Fizz" })]
     [DataRow(5, new[] { "1", "2", "Fizz", "4", "Buzz" })]
-    [DataRow(15,
-        new[] { "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz" })]
+    [DataRow(15, new[] { "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz" })]
     public void FizzBuzz_WithPositiveIntegerN_ReturnsSequenceWithFizzBuzzRulesApplied(int n, string[] expectedResult)
     {
         // Arrange

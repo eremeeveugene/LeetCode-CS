@@ -18,8 +18,7 @@ public abstract class MinimumLimitOfBallsInBagTestsBase<T> where T : IMinimumLim
     [TestMethod]
     [DataRow(new[] { 9 }, 2, 3)]
     [DataRow(new[] { 2, 4, 8, 2 }, 4, 2)]
-    public void MinimumSize_WithNumsArrayAndMaxOperations_ReturnsMinimumPossibleSize(int[] nums,
-        int maxOperations, int expectedResult)
+    public void MinimumSize_WithNumsArrayAndMaxOperations_ReturnsMinimumPossibleSize(int[] nums, int maxOperations, int expectedResult)
     {
         // Arrange
         var solution = new T();

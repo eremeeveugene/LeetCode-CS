@@ -14,5 +14,4 @@ using LeetCode.Algorithms.SpecialPositionsInBinaryMatrix;
 namespace LeetCode.Tests.Algorithms.SpecialPositionsInBinaryMatrix;
 
 [TestClass]
-public sealed class SpecialPositionsInBinaryMatrixBruteForceTests :
-    SpecialPositionsInBinaryMatrixTestsBase<SpecialPositionsInBinaryMatrixBruteForce>;
+public sealed class SpecialPositionsInBinaryMatrixBruteForceTests : SpecialPositionsInBinaryMatrixTestsBase<SpecialPositionsInBinaryMatrixBruteForce>;

@@ -19,8 +19,7 @@ public abstract class FindingThreeDigitEvenNumbersTestsBase<T> where T : IFindin
     [DataRow(new[] { 3, 7, 5 }, new int[] { })]
     [DataRow(new[] { 2, 1, 3, 0 }, new[] { 102, 120, 130, 132, 210, 230, 302, 310, 312, 320 })]
     [DataRow(new[] { 2, 2, 8, 8, 2 }, new[] { 222, 228, 282, 288, 822, 828, 882 })]
-    public void FindEvenNumbers_WithGivenDigits_ReturnsAllValidThreeDigitEvenNumbers(int[] digits,
-        int[] expectedResult)
+    public void FindEvenNumbers_WithGivenDigits_ReturnsAllValidThreeDigitEvenNumbers(int[] digits, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

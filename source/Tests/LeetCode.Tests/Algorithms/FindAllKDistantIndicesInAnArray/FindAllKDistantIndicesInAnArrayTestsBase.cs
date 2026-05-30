@@ -18,8 +18,7 @@ public abstract class FindAllKDistantIndicesInAnArrayTestsBase<T> where T : IFin
     [TestMethod]
     [DataRow(new[] { 3, 4, 9, 1, 3, 9, 5 }, 9, 1, new[] { 1, 2, 3, 4, 5, 6 })]
     [DataRow(new[] { 2, 2, 2, 2, 2 }, 2, 2, new[] { 0, 1, 2, 3, 4 })]
-    public void FindKDistantIndices_WithKeyAndDistance_ReturnsAllIndicesWithinKDistanceOfKey(int[] nums, int key,
-        int k, int[] expectedResult)
+    public void FindKDistantIndices_WithKeyAndDistance_ReturnsAllIndicesWithinKDistanceOfKey(int[] nums, int key, int k, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

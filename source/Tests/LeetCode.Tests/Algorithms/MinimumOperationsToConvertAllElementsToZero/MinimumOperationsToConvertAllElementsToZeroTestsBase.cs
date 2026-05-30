@@ -13,15 +13,13 @@ using LeetCode.Algorithms.MinimumOperationsToConvertAllElementsToZero;
 
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToConvertAllElementsToZero;
 
-public abstract class MinimumOperationsToConvertAllElementsToZeroTestsBase<T>
-    where T : IMinimumOperationsToConvertAllElementsToZero, new()
+public abstract class MinimumOperationsToConvertAllElementsToZeroTestsBase<T> where T : IMinimumOperationsToConvertAllElementsToZero, new()
 {
     [TestMethod]
     [DataRow(new[] { 0, 2 }, 1)]
     [DataRow(new[] { 3, 1, 2, 1 }, 3)]
     [DataRow(new[] { 1, 2, 1, 2, 1, 2 }, 4)]
-    public void MinOperations_WithNumsArray_ReturnsMinimumOperationsToZeroAllElements(int[] nums,
-        int expectedResult)
+    public void MinOperations_WithNumsArray_ReturnsMinimumOperationsToZeroAllElements(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

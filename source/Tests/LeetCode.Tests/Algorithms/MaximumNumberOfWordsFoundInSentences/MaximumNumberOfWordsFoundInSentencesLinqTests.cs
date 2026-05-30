@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences;
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfWordsFoundInSentences;
 
 [TestClass]
-public class MaximumNumberOfWordsFoundInSentencesLinqTests : MaximumNumberOfWordsFoundInSentencesTestsBase<
-    MaximumNumberOfWordsFoundInSentencesLinq>;
+public class MaximumNumberOfWordsFoundInSentencesLinqTests : MaximumNumberOfWordsFoundInSentencesTestsBase<MaximumNumberOfWordsFoundInSentencesLinq>;

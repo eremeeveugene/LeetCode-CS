@@ -14,13 +14,11 @@ using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel;
 
-public abstract class MinimumNumberOfOperationsToSortBinaryTreeByLevelTestsBase<T>
-    where T : IMinimumNumberOfOperationsToSortBinaryTreeByLevel, new()
+public abstract class MinimumNumberOfOperationsToSortBinaryTreeByLevelTestsBase<T> where T : IMinimumNumberOfOperationsToSortBinaryTreeByLevel, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MinimumOperations_WithBinaryTreeInput_ReturnsMinOperationsToSortLevelOrders(int?[] rootArray,
-        int expectedResult)
+    public void MinimumOperations_WithBinaryTreeInput_ReturnsMinOperationsToSortLevelOrders(int?[] rootArray, int expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);

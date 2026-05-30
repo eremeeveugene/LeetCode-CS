@@ -14,6 +14,4 @@ using LeetCode.Algorithms.LexicographicallyMinimumStringAfterRemovingStars;
 namespace LeetCode.Tests.Algorithms.LexicographicallyMinimumStringAfterRemovingStars;
 
 [TestClass]
-public sealed class LexicographicallyMinimumStringAfterRemovingStarsPriorityQueueTests :
-    LexicographicallyMinimumStringAfterRemovingStarsTestsBase<
-        LexicographicallyMinimumStringAfterRemovingStarsPriorityQueue>;
+public sealed class LexicographicallyMinimumStringAfterRemovingStarsPriorityQueueTests : LexicographicallyMinimumStringAfterRemovingStarsTestsBase<LexicographicallyMinimumStringAfterRemovingStarsPriorityQueue>;

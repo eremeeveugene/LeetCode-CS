@@ -14,13 +14,11 @@ using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
 
-public abstract class HeightOfBinaryTreeAfterSubtreeRemovalQueriesTestsBase<T>
-    where T : IHeightOfBinaryTreeAfterSubtreeRemovalQueries, new()
+public abstract class HeightOfBinaryTreeAfterSubtreeRemovalQueriesTestsBase<T> where T : IHeightOfBinaryTreeAfterSubtreeRemovalQueries, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void TreeQueries_WithSubtreeRemovedAtGivenNode_ReturnsHeightOfTreeAfterRemoval(int?[] rootArray,
-        int[] queries, int[] expectedResult)
+    public void TreeQueries_WithSubtreeRemovedAtGivenNode_ReturnsHeightOfTreeAfterRemoval(int?[] rootArray, int[] queries, int[] expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);

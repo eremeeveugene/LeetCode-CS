@@ -17,8 +17,7 @@ public abstract class MergeTwo2DArraysBySummingValuesTestsBase<T> where T : IMer
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MergeArrays_WithTwoKeyValuePairArrays_ReturnsMergedArrayWithSummedValues(int[][] nums1,
-        int[][] nums2, int[][] expectedResult)
+    public void MergeArrays_WithTwoKeyValuePairArrays_ReturnsMergedArrayWithSummedValues(int[][] nums1, int[][] nums2, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();

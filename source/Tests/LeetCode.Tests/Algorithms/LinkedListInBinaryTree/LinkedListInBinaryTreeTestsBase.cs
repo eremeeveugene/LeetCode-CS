@@ -18,8 +18,7 @@ public abstract class LinkedListInBinaryTreeTestsBase<T> where T : ILinkedListIn
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void IsSubPath_WithLinkedListAndBinaryTree_ReturnsIfLinkedListIsSubPath(int[] headArray,
-        int?[] rootArray, bool expectedResult)
+    public void IsSubPath_WithLinkedListAndBinaryTree_ReturnsIfLinkedListIsSubPath(int[] headArray, int?[] rootArray, bool expectedResult)
     {
         // Arrange
         var head = ListNode.ToListNodeOrThrow(headArray);
@@ -38,14 +37,11 @@ public abstract class LinkedListInBinaryTreeTestsBase<T> where T : ILinkedListIn
     {
         yield return [new[] { 1 }, new int?[] { 1 }, true];
 
-        yield return
-            [new[] { 4, 2, 8 }, new int?[] { 1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3 }, true];
+        yield return [new[] { 4, 2, 8 }, new int?[] { 1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3 }, true];
 
-        yield return
-            [new[] { 1, 4, 2, 6 }, new int?[] { 1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3 }, true];
+        yield return [new[] { 1, 4, 2, 6 }, new int?[] { 1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3 }, true];
 
-        yield return
-            [new[] { 1, 4, 2, 6, 8 }, new int?[] { 1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3 }, false];
+        yield return [new[] { 1, 4, 2, 6, 8 }, new int?[] { 1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3 }, false];
 
         yield return [new[] { 1, 10 }, new int?[] { 1, null, 1, 10, 1, 9 }, true];
 

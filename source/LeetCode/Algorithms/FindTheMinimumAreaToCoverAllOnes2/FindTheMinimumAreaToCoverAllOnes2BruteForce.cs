@@ -51,8 +51,7 @@ public sealed class FindTheMinimumAreaToCoverAllOnes2BruteForce : IFindTheMinimu
 
                 currentSum += MinimumArea(grid, rowCount, columnCount, 0, topEnd, 0, columnCount - 1);
                 currentSum += MinimumArea(grid, rowCount, columnCount, topEnd + 1, rowCount - 1, 0, splitColumn);
-                currentSum += MinimumArea(grid, rowCount, columnCount, topEnd + 1, rowCount - 1, splitColumn + 1,
-                    columnCount - 1);
+                currentSum += MinimumArea(grid, rowCount, columnCount, topEnd + 1, rowCount - 1, splitColumn + 1, columnCount - 1);
 
                 if (currentSum < minimumSum)
                 {
@@ -76,8 +75,7 @@ public sealed class FindTheMinimumAreaToCoverAllOnes2BruteForce : IFindTheMinimu
 
                 currentSum += MinimumArea(grid, rowCount, columnCount, 0, topEnd, 0, splitColumn);
                 currentSum += MinimumArea(grid, rowCount, columnCount, 0, topEnd, splitColumn + 1, columnCount - 1);
-                currentSum += MinimumArea(grid, rowCount, columnCount, topEnd + 1, rowCount - 1, 0,
-                    columnCount - 1);
+                currentSum += MinimumArea(grid, rowCount, columnCount, topEnd + 1, rowCount - 1, 0, columnCount - 1);
 
                 if (currentSum < minimumSum)
                 {
@@ -125,8 +123,7 @@ public sealed class FindTheMinimumAreaToCoverAllOnes2BruteForce : IFindTheMinimu
 
                 currentSum += MinimumArea(grid, rowCount, columnCount, 0, rowCount - 1, 0, leftEnd);
                 currentSum += MinimumArea(grid, rowCount, columnCount, 0, splitRow, leftEnd + 1, columnCount - 1);
-                currentSum += MinimumArea(grid, rowCount, columnCount, splitRow + 1, rowCount - 1, leftEnd + 1,
-                    columnCount - 1);
+                currentSum += MinimumArea(grid, rowCount, columnCount, splitRow + 1, rowCount - 1, leftEnd + 1, columnCount - 1);
 
                 if (currentSum < minimumSum)
                 {
@@ -150,8 +147,7 @@ public sealed class FindTheMinimumAreaToCoverAllOnes2BruteForce : IFindTheMinimu
 
                 currentSum += MinimumArea(grid, rowCount, columnCount, 0, splitRow, 0, leftEnd);
                 currentSum += MinimumArea(grid, rowCount, columnCount, splitRow + 1, rowCount - 1, 0, leftEnd);
-                currentSum += MinimumArea(grid, rowCount, columnCount, 0, rowCount - 1, leftEnd + 1,
-                    columnCount - 1);
+                currentSum += MinimumArea(grid, rowCount, columnCount, 0, rowCount - 1, leftEnd + 1, columnCount - 1);
 
                 if (currentSum < minimumSum)
                 {
@@ -187,14 +183,7 @@ public sealed class FindTheMinimumAreaToCoverAllOnes2BruteForce : IFindTheMinimu
         return minimumSum;
     }
 
-    private static int MinimumArea(
-        int[][] grid,
-        int rowCount,
-        int columnCount,
-        int rowStart,
-        int rowEnd,
-        int columnStart,
-        int columnEnd)
+    private static int MinimumArea(int[][] grid, int rowCount, int columnCount, int rowStart, int rowEnd, int columnStart, int columnEnd)
     {
         var minRow = rowCount;
         var maxRow = 0;

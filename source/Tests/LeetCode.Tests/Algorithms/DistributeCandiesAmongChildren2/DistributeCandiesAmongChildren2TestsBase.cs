@@ -18,8 +18,7 @@ public abstract class DistributeCandiesAmongChildren2TestsBase<T> where T : IDis
     [TestMethod]
     [DataRow(5, 2, 3)]
     [DataRow(3, 3, 10)]
-    public void DistributeCandies_WithTotalCandiesAndLimit_ReturnsTheTotalNumberOfWaysToDistributeCandies(int n,
-        int limit, long expectedResult)
+    public void DistributeCandies_WithTotalCandiesAndLimit_ReturnsTheTotalNumberOfWaysToDistributeCandies(int n, int limit, long expectedResult)
     {
         // Arrange
         var solution = new T();

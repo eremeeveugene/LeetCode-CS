@@ -17,8 +17,7 @@ public abstract class FindTheMaximumSumOfNodeValuesTestsBase<T> where T : IFindT
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MaximumValueSum_WithValuesEdgesAndXorKey_ReturnsHighestPossibleSumAfterOperations(int[] nums,
-        int k, int[][] edges, long expectedResult)
+    public void MaximumValueSum_WithValuesEdgesAndXorKey_ReturnsHighestPossibleSumAfterOperations(int[] nums, int k, int[][] edges, long expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -36,16 +35,8 @@ public abstract class FindTheMaximumSumOfNodeValuesTestsBase<T> where T : IFindT
 
         yield return [new[] { 2, 3 }, 7, new[] { new[] { 0, 1 } }, 9L];
 
-        yield return
-        [
-            new[] { 7, 7, 7, 7, 7, 7 }, 3,
-            new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 }, new[] { 0, 4 }, new[] { 0, 5 } }, 42L
-        ];
+        yield return [new[] { 7, 7, 7, 7, 7, 7 }, 3, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 }, new[] { 0, 4 }, new[] { 0, 5 } }, 42L];
 
-        yield return
-        [
-            new[] { 24, 78, 1, 97, 44 }, 6,
-            new[] { new[] { 0, 2 }, new[] { 1, 2 }, new[] { 4, 2 }, new[] { 3, 4 } }, 260L
-        ];
+        yield return [new[] { 24, 78, 1, 97, 44 }, 6, new[] { new[] { 0, 2 }, new[] { 1, 2 }, new[] { 4, 2 }, new[] { 3, 4 } }, 260L];
     }
 }

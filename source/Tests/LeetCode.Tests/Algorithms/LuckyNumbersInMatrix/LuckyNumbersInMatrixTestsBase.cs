@@ -17,8 +17,7 @@ public abstract class LuckyNumbersInMatrixTestsBase<T> where T : ILuckyNumbersIn
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void LuckyNumbers_WithMatrixJson_ReturnsLuckyNumbers(int[][] matrix,
-        int[] expectedResult)
+    public void LuckyNumbers_WithMatrixJson_ReturnsLuckyNumbers(int[][] matrix, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

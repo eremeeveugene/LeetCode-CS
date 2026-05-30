@@ -14,6 +14,4 @@ using LeetCode.Algorithms.MaximumCountOfPositiveIntegerAndNegativeInteger;
 namespace LeetCode.Tests.Algorithms.MaximumCountOfPositiveIntegerAndNegativeInteger;
 
 [TestClass]
-public sealed class MaximumCountOfPositiveIntegerAndNegativeIntegerBinarySearchTests :
-    MaximumCountOfPositiveIntegerAndNegativeIntegerTestsBase<
-        MaximumCountOfPositiveIntegerAndNegativeIntegerBinarySearch>;
+public sealed class MaximumCountOfPositiveIntegerAndNegativeIntegerBinarySearchTests : MaximumCountOfPositiveIntegerAndNegativeIntegerTestsBase<MaximumCountOfPositiveIntegerAndNegativeIntegerBinarySearch>;

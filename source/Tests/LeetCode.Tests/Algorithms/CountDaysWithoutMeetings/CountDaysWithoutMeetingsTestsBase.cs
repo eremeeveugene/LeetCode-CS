@@ -17,8 +17,7 @@ public abstract class CountDaysWithoutMeetingsTestsBase<T> where T : ICountDaysW
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void CountDays_WithTotalDaysAndMeetingRanges_ReturnsNumberOfFreeDays(int days, int[][] meetings,
-        int expectedResult)
+    public void CountDays_WithTotalDaysAndMeetingRanges_ReturnsNumberOfFreeDays(int days, int[][] meetings, int expectedResult)
     {
         // Arrange
         var solution = new T();

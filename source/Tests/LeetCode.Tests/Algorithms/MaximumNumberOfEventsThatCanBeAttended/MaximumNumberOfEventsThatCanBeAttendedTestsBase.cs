@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MaximumNumberOfEventsThatCanBeAttended;
 
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfEventsThatCanBeAttended;
 
-public abstract class MaximumNumberOfEventsThatCanBeAttendedTestsBase<T>
-    where T : IMaximumNumberOfEventsThatCanBeAttended, new()
+public abstract class MaximumNumberOfEventsThatCanBeAttendedTestsBase<T> where T : IMaximumNumberOfEventsThatCanBeAttended, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]

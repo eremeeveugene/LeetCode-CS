@@ -19,8 +19,7 @@ public abstract class NeighboringBitwiseXORTestsBase<T> where T : INeighboringBi
     [DataRow(new[] { 1, 1, 0 }, true)]
     [DataRow(new[] { 1, 1 }, true)]
     [DataRow(new[] { 1, 0 }, false)]
-    public void DoesValidArrayExist_WithDerivedArray_ReturnsWhetherValidArrayExists(int[] derived,
-        bool expectedResult)
+    public void DoesValidArrayExist_WithDerivedArray_ReturnsWhetherValidArrayExists(int[] derived, bool expectedResult)
     {
         // Arrange
         var solution = new T();

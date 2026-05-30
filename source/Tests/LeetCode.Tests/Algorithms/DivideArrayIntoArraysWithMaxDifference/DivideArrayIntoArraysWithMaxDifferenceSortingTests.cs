@@ -14,5 +14,4 @@ using LeetCode.Algorithms.DivideArrayIntoArraysWithMaxDifference;
 namespace LeetCode.Tests.Algorithms.DivideArrayIntoArraysWithMaxDifference;
 
 [TestClass]
-public sealed class DivideArrayIntoArraysWithMaxDifferenceSortingTests :
-    DivideArrayIntoArraysWithMaxDifferenceTestsBase<DivideArrayIntoArraysWithMaxDifferenceSorting>;
+public sealed class DivideArrayIntoArraysWithMaxDifferenceSortingTests : DivideArrayIntoArraysWithMaxDifferenceTestsBase<DivideArrayIntoArraysWithMaxDifferenceSorting>;

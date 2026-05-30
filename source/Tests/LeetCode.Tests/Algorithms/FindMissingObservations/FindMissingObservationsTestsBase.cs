@@ -21,8 +21,7 @@ public abstract class FindMissingObservationsTestsBase<T> where T : IFindMissing
     [DataRow(new[] { 1, 2, 3, 4 }, 6, 4, new int[] { })]
     [DataRow(new[] { 6, 3, 4, 3, 5, 3 }, 1, 6, new int[] { })]
     [DataRow(new[] { 4, 2, 2, 5, 4, 5, 4, 5, 3, 3, 6, 1, 2, 4, 2, 1, 6, 5, 4, 2, 3, 4, 2, 3, 3, 5, 4, 1, 4, 4, 5, 3, 6, 1, 5, 2, 3, 3, 6, 1, 6, 4, 1, 3 }, 2, 53, new int[] { })]
-    public void MissingRolls_WithRollsMeanAndN_ReturnsMissingRolls(int[] rolls, int mean, int n,
-        int[] expectedResult)
+    public void MissingRolls_WithRollsMeanAndN_ReturnsMissingRolls(int[] rolls, int mean, int n, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

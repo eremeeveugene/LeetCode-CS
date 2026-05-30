@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MergeStringsAlternately;
 namespace LeetCode.Tests.Algorithms.MergeStringsAlternately;
 
 [TestClass]
-public class MergeStringsAlternatelyTwoPointersTests :
-    MergeStringsAlternatelyTestsBase<MergeStringsAlternatelyTwoPointers>;
+public class MergeStringsAlternatelyTwoPointersTests : MergeStringsAlternatelyTestsBase<MergeStringsAlternatelyTwoPointers>;

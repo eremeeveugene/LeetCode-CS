@@ -19,8 +19,7 @@ public abstract class ComputeDecimalRepresentationTestsBase<T> where T : IComput
     [DataRow(537, new[] { 500, 30, 7 })]
     [DataRow(102, new[] { 100, 2 })]
     [DataRow(6, new[] { 6 })]
-    public void DecimalRepresentation_WithPositiveInteger_ReturnsFewestBase10ComponentsInDescendingOrder(int n,
-        int[] expectedResult)
+    public void DecimalRepresentation_WithPositiveInteger_ReturnsFewestBase10ComponentsInDescendingOrder(int n, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

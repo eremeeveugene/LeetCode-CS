@@ -13,15 +13,13 @@ using LeetCode.Algorithms.ShortestDistanceToTargetStringInCircularArray;
 
 namespace LeetCode.Tests.Algorithms.ShortestDistanceToTargetStringInCircularArray;
 
-public abstract class ShortestDistanceToTargetStringInCircularArrayTestsBase<T>
-    where T : IShortestDistanceToTargetStringInCircularArray, new()
+public abstract class ShortestDistanceToTargetStringInCircularArrayTestsBase<T> where T : IShortestDistanceToTargetStringInCircularArray, new()
 {
     [TestMethod]
     [DataRow(new[] { "hello", "i", "am", "leetcode", "hello" }, "hello", 1, 1)]
     [DataRow(new[] { "a", "b", "leetcode" }, "leetcode", 0, 1)]
     [DataRow(new[] { "i", "eat", "leetcode" }, "ate", 0, -1)]
-    public void ClosestTarget_WithWordsArrayTargetAndStartIndex_ReturnsShortestDistanceToTargetString(
-        string[] words, string target, int startIndex, int expectedResult)
+    public void ClosestTarget_WithWordsArrayTargetAndStartIndex_ReturnsShortestDistanceToTargetString(string[] words, string target, int startIndex, int expectedResult)
     {
         // Arrange
         var solution = new T();

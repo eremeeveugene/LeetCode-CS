@@ -14,5 +14,4 @@ using LeetCode.Algorithms.IncreasingDecreasingString;
 namespace LeetCode.Tests.Algorithms.IncreasingDecreasingString;
 
 [TestClass]
-public sealed class IncreasingDecreasingStringDictionaryTests : IncreasingDecreasingStringTestsBase<
-    IncreasingDecreasingStringDictionary>;
+public sealed class IncreasingDecreasingStringDictionaryTests : IncreasingDecreasingStringTestsBase<IncreasingDecreasingStringDictionary>;

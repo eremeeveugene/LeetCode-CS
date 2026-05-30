@@ -13,8 +13,7 @@ using LeetCode.Algorithms.ReverseLettersThenSpecialCharactersInString;
 
 namespace LeetCode.Tests.Algorithms.ReverseLettersThenSpecialCharactersInString;
 
-public abstract class ReverseLettersThenSpecialCharactersInStringTestsBase<T>
-    where T : IReverseLettersThenSpecialCharactersInString, new()
+public abstract class ReverseLettersThenSpecialCharactersInStringTestsBase<T> where T : IReverseLettersThenSpecialCharactersInString, new()
 {
     [TestMethod]
     [DataRow("a", "a")]
@@ -22,8 +21,7 @@ public abstract class ReverseLettersThenSpecialCharactersInStringTestsBase<T>
     [DataRow("!", "!")]
     [DataRow(")ebc#da@f(", "(fad@cb#e)")]
     [DataRow("!@#$%^&*()", ")(*&^%$#@!")]
-    public void ReverseByType_WithInputString_ReturnsStringWithReversedLetterAndSpecialCharacters(
-        string s, string expectedResult)
+    public void ReverseByType_WithInputString_ReturnsStringWithReversedLetterAndSpecialCharacters(string s, string expectedResult)
     {
         // Arrange
         var solution = new T();

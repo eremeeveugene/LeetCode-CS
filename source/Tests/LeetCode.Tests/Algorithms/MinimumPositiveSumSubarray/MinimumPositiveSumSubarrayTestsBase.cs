@@ -19,8 +19,7 @@ public abstract class MinimumPositiveSumSubarrayTestsBase<T> where T : IMinimumP
     [DataRow(new[] { 3, -2, 1, 4 }, 2, 3, 1)]
     [DataRow(new[] { -2, 2, -3, 1 }, 2, 3, -1)]
     [DataRow(new[] { 1, 2, 3, 4 }, 2, 4, 3)]
-    public void MinimumSumSubarray_WithLengthInRangeAndPositiveSum_ReturnsMinimumSumOrMinusOne(int[] nums, int l,
-        int r, int expectedResult)
+    public void MinimumSumSubarray_WithLengthInRangeAndPositiveSum_ReturnsMinimumSumOrMinusOne(int[] nums, int l, int r, int expectedResult)
     {
         // Arrange
         var solution = new T();

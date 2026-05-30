@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FindModeInBinarySearchTree;
 namespace LeetCode.Tests.Algorithms.FindModeInBinarySearchTree;
 
 [TestClass]
-public sealed class FindModeInBinarySearchTreeDepthFirstSearchStackTests : FindModeInBinarySearchTreeTestsBase<
-    FindModeInBinarySearchTreeDepthFirstSearchStack>;
+public sealed class FindModeInBinarySearchTreeDepthFirstSearchStackTests : FindModeInBinarySearchTreeTestsBase<FindModeInBinarySearchTreeDepthFirstSearchStack>;

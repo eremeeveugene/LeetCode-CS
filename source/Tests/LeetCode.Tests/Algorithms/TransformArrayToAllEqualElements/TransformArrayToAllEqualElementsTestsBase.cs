@@ -19,8 +19,7 @@ public abstract class TransformArrayToAllEqualElementsTestsBase<T> where T : ITr
     [DataRow(new[] { 1, -1, 1, -1, 1 }, 3, true)]
     [DataRow(new[] { -1, -1, -1, 1, 1, 1 }, 5, false)]
     [DataRow(new[] { 1, -1, 1 }, 2, true)]
-    public void CanMakeEqual_WithNumsArray_ReturnsTrueIfAllElementsCanBeMadeEqual(int[] nums, int k,
-        bool expectedResult)
+    public void CanMakeEqual_WithNumsArray_ReturnsTrueIfAllElementsCanBeMadeEqual(int[] nums, int k, bool expectedResult)
     {
         // Arrange
         var solution = new T();

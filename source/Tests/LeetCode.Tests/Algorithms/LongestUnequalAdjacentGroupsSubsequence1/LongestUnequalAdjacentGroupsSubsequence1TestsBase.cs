@@ -13,14 +13,12 @@ using LeetCode.Algorithms.LongestUnequalAdjacentGroupsSubsequence1;
 
 namespace LeetCode.Tests.Algorithms.LongestUnequalAdjacentGroupsSubsequence1;
 
-public abstract class LongestUnequalAdjacentGroupsSubsequence1TestsBase<T>
-    where T : ILongestUnequalAdjacentGroupsSubsequence1, new()
+public abstract class LongestUnequalAdjacentGroupsSubsequence1TestsBase<T> where T : ILongestUnequalAdjacentGroupsSubsequence1, new()
 {
     [TestMethod]
     [DataRow(new[] { "e", "a", "b" }, new[] { 0, 0, 1 }, new[] { "e", "b" })]
     [DataRow(new[] { "a", "b", "c", "d" }, new[] { 1, 0, 1, 1 }, new[] { "a", "b", "c" })]
-    public void GetLongestSubsequence_WithWordsAndGroupLabels_ReturnsLongestSubsequenceByGroupOrder(string[] words,
-        int[] groups, string[] expectedResult)
+    public void GetLongestSubsequence_WithWordsAndGroupLabels_ReturnsLongestSubsequenceByGroupOrder(string[] words, int[] groups, string[] expectedResult)
     {
         // Arrange
         var solution = new T();

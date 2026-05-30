@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MaximumTotalDamageWithSpellCasting;
 
 namespace LeetCode.Tests.Algorithms.MaximumTotalDamageWithSpellCasting;
 
-public abstract class MaximumTotalDamageWithSpellCastingTestsBase<T>
-    where T : IMaximumTotalDamageWithSpellCasting, new()
+public abstract class MaximumTotalDamageWithSpellCastingTestsBase<T> where T : IMaximumTotalDamageWithSpellCasting, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 1, 3, 4 }, 6L)]

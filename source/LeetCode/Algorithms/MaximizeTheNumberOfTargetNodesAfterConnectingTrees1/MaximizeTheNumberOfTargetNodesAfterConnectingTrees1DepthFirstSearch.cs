@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.MaximizeTheNumberOfTargetNodesAfterConnectingTrees1;
 
 /// <inheritdoc />
-public sealed class MaximizeTheNumberOfTargetNodesAfterConnectingTrees1DepthFirstSearch :
-    IMaximizeTheNumberOfTargetNodesAfterConnectingTrees1
+public sealed class MaximizeTheNumberOfTargetNodesAfterConnectingTrees1DepthFirstSearch : IMaximizeTheNumberOfTargetNodesAfterConnectingTrees1
 {
     /// <summary>
     ///     Time complexity - O(n^2 + m^2)

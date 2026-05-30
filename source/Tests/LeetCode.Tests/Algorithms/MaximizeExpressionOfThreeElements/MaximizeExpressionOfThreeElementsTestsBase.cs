@@ -18,8 +18,7 @@ public abstract class MaximizeExpressionOfThreeElementsTestsBase<T> where T : IM
     [TestMethod]
     [DataRow(new[] { 1, 4, 2, 5 }, 8)]
     [DataRow(new[] { -2, 0, 5, -2, 4 }, 11)]
-    public void MaximizeExpressionOfThree_WithGivenNums_ReturnsMaximumExpressionValue(int[] nums,
-        int expectedResult)
+    public void MaximizeExpressionOfThree_WithGivenNums_ReturnsMaximumExpressionValue(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

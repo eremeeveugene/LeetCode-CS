@@ -14,5 +14,4 @@ using LeetCode.Algorithms.NeighboringBitwiseXOR;
 namespace LeetCode.Tests.Algorithms.NeighboringBitwiseXOR;
 
 [TestClass]
-public sealed class NeighboringBitwiseXORIterativeTests :
-    NeighboringBitwiseXORTestsBase<NeighboringBitwiseXORIterative>;
+public sealed class NeighboringBitwiseXORIterativeTests : NeighboringBitwiseXORTestsBase<NeighboringBitwiseXORIterative>;

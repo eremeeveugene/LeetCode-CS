@@ -17,8 +17,7 @@ public abstract class ValidArrangementOfPairsTestsBase<T> where T : IValidArrang
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void ValidArrangement_WithDirectedEdgePairs_ReturnsValidArrangementOfPairs(int[][] pairs,
-        int[][] expectedResult)
+    public void ValidArrangement_WithDirectedEdgePairs_ReturnsValidArrangementOfPairs(int[][] pairs, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -32,18 +31,6 @@ public abstract class ValidArrangementOfPairsTestsBase<T> where T : IValidArrang
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return
-        [
-            new[]
-            {
-                new[] { 4, 5 }, new[] { 11, 9 }, new[] { 9, 4 }, new[] { 5, 2 }, new[] { 2, 6 }, new[] { 6, 7 },
-                new[] { 7, 8 }, new[] { 8, 5 }, new[] { 5, 12 }, new[] { 12, 13 }, new[] { 13, 5 }, new[] { 5, 1 }
-            },
-            new[]
-            {
-                new[] { 11, 9 }, new[] { 9, 4 }, new[] { 4, 5 }, new[] { 5, 12 }, new[] { 12, 13 }, new[] { 13, 5 },
-                new[] { 5, 2 }, new[] { 2, 6 }, new[] { 6, 7 }, new[] { 7, 8 }, new[] { 8, 5 }, new[] { 5, 1 }
-            }
-        ];
+        yield return [new[] { new[] { 4, 5 }, new[] { 11, 9 }, new[] { 9, 4 }, new[] { 5, 2 }, new[] { 2, 6 }, new[] { 6, 7 }, new[] { 7, 8 }, new[] { 8, 5 }, new[] { 5, 12 }, new[] { 12, 13 }, new[] { 13, 5 }, new[] { 5, 1 } }, new[] { new[] { 11, 9 }, new[] { 9, 4 }, new[] { 4, 5 }, new[] { 5, 12 }, new[] { 12, 13 }, new[] { 13, 5 }, new[] { 5, 2 }, new[] { 2, 6 }, new[] { 6, 7 }, new[] { 7, 8 }, new[] { 8, 5 }, new[] { 5, 1 } }];
     }
 }

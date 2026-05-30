@@ -15,14 +15,12 @@ using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.InsertGreatestCommonDivisorsInLinkedList;
 
-public abstract class InsertGreatestCommonDivisorsInLinkedListTestsBase<T>
-    where T : IInsertGreatestCommonDivisorsInLinkedList, new()
+public abstract class InsertGreatestCommonDivisorsInLinkedListTestsBase<T> where T : IInsertGreatestCommonDivisorsInLinkedList, new()
 {
     [TestMethod]
     [DataRow(new[] { 7 }, new[] { 7 })]
     [DataRow(new[] { 18, 6, 10, 3 }, new[] { 18, 6, 6, 2, 10, 1, 3 })]
-    public void InsertGreatestCommonDivisors_GivenLinkedList_ReturnsListWithGCDInserted(int[] headArray,
-        int[] expectedResultArray)
+    public void InsertGreatestCommonDivisors_GivenLinkedList_ReturnsListWithGCDInserted(int[] headArray, int[] expectedResultArray)
     {
         // Arrange
         var head = ListNode.ToListNodeOrThrow(headArray);

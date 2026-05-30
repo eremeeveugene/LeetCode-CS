@@ -18,8 +18,7 @@ public abstract class MaxConsecutiveOnesTestsBase<T> where T : IMaxConsecutiveOn
     [TestMethod]
     [DataRow(new[] { 1, 1, 0, 1, 1, 1 }, 3)]
     [DataRow(new[] { 1, 0, 1, 1, 0, 1 }, 2)]
-    public void FindMaxConsecutiveOnes_WithBinaryArray_ReturnsMaximumCountOfConsecutiveOnes(int[] nums,
-        int expectedResult)
+    public void FindMaxConsecutiveOnes_WithBinaryArray_ReturnsMaximumCountOfConsecutiveOnes(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -17,8 +17,7 @@ public abstract class SetMatrixZeroesTestsBase<T> where T : ISetMatrixZeroes, ne
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void SetZeroes_WithMatrixContainingZeros_SetsEntireRowAndColumnToZero(int[][] matrix,
-        int[][] expectedResult)
+    public void SetZeroes_WithMatrixContainingZeros_SetsEntireRowAndColumnToZero(int[][] matrix, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -32,16 +31,8 @@ public abstract class SetMatrixZeroesTestsBase<T> where T : ISetMatrixZeroes, ne
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return
-        [
-            new[] { new[] { 1, 1, 1 }, new[] { 1, 0, 1 }, new[] { 1, 1, 1 } },
-            new[] { new[] { 1, 0, 1 }, new[] { 0, 0, 0 }, new[] { 1, 0, 1 } }
-        ];
+        yield return [new[] { new[] { 1, 1, 1 }, new[] { 1, 0, 1 }, new[] { 1, 1, 1 } }, new[] { new[] { 1, 0, 1 }, new[] { 0, 0, 0 }, new[] { 1, 0, 1 } }];
 
-        yield return
-        [
-            new[] { new[] { 0, 1, 2, 0 }, new[] { 3, 4, 5, 2 }, new[] { 1, 3, 1, 5 } },
-            new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 4, 5, 0 }, new[] { 0, 3, 1, 0 } }
-        ];
+        yield return [new[] { new[] { 0, 1, 2, 0 }, new[] { 3, 4, 5, 2 }, new[] { 1, 3, 1, 5 } }, new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 4, 5, 0 }, new[] { 0, 3, 1, 0 } }];
     }
 }

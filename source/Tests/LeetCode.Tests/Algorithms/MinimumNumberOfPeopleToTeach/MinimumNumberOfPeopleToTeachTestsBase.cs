@@ -17,8 +17,7 @@ public abstract class MinimumNumberOfPeopleToTeachTestsBase<T> where T : IMinimu
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MinimumTeachings_WithUsersLackingCommonLanguageInFriendships_ReturnsMinimumUsersToTeach(
-        int languagesCount, int[][] languages, int[][] friendships, int expectedResult)
+    public void MinimumTeachings_WithUsersLackingCommonLanguageInFriendships_ReturnsMinimumUsersToTeach(int languagesCount, int[][] languages, int[][] friendships, int expectedResult)
     {
         // Arrange
         var solution = new T();

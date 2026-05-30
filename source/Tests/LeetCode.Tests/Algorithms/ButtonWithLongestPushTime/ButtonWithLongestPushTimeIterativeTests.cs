@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ButtonWithLongestPushTime;
 namespace LeetCode.Tests.Algorithms.ButtonWithLongestPushTime;
 
 [TestClass]
-public sealed class ButtonWithLongestPushTimeIterativeTests :
-    ButtonWithLongestPushTimeTestsBase<ButtonWithLongestPushTimeIterative>;
+public sealed class ButtonWithLongestPushTimeIterativeTests : ButtonWithLongestPushTimeTestsBase<ButtonWithLongestPushTimeIterative>;

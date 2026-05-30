@@ -20,8 +20,7 @@ public abstract class MergeSortedArrayTestsBase<T> where T : IMergeSortedArray, 
     [DataRow(new[] { 1 }, 1, new int[] { }, 0, new[] { 1 })]
     [DataRow(new[] { 0 }, 0, new[] { 1 }, 1, new[] { 1 })]
     [DataRow(new[] { 0, 0, 0, 0, 0 }, 0, new[] { 1, 2, 3, 4, 5 }, 5, new[] { 1, 2, 3, 4, 5 })]
-    public void Merge_WithTwoArraysAndSizes_MergesAndSortsIntoFirstArray(int[] nums1, int m,
-        int[] nums2, int n, int[] expectedResult)
+    public void Merge_WithTwoArraysAndSizes_MergesAndSortsIntoFirstArray(int[] nums1, int m, int[] nums2, int n, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

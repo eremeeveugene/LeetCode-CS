@@ -14,5 +14,4 @@ using LeetCode.Algorithms.StringMatchingInAnArray;
 namespace LeetCode.Tests.Algorithms.StringMatchingInAnArray;
 
 [TestClass]
-public sealed class StringMatchingInAnArrayBruteForceTests :
-    StringMatchingInAnArrayTestsBase<StringMatchingInAnArrayBruteForce>;
+public sealed class StringMatchingInAnArrayBruteForceTests : StringMatchingInAnArrayTestsBase<StringMatchingInAnArrayBruteForce>;

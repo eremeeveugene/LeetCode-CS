@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumOperationsToConvertAllElementsToZero;
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToConvertAllElementsToZero;
 
 [TestClass]
-public sealed class MinimumOperationsToConvertAllElementsToZeroStackTests :
-    MinimumOperationsToConvertAllElementsToZeroTestsBase<MinimumOperationsToConvertAllElementsToZeroStack>;
+public sealed class MinimumOperationsToConvertAllElementsToZeroStackTests : MinimumOperationsToConvertAllElementsToZeroTestsBase<MinimumOperationsToConvertAllElementsToZeroStack>;

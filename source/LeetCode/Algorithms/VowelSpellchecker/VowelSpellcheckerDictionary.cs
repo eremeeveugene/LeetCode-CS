@@ -81,13 +81,16 @@ public sealed class VowelSpellcheckerDictionary : IVowelSpellchecker
 
     private static string GetLowercaseWord(string word)
     {
-        return string.Create(word.Length, word, (span, source) =>
-        {
-            for (var i = 0; i < source.Length; i++)
+        return string.Create(
+            word.Length,
+            word,
+            (span, source) =>
             {
-                span[i] = char.ToLowerInvariant(source[i]);
-            }
-        });
+                for (var i = 0; i < source.Length; i++)
+                {
+                    span[i] = char.ToLowerInvariant(source[i]);
+                }
+            });
     }
 
     private static string GetMaskedWord(string word)

@@ -17,8 +17,7 @@ public abstract class ZeroArrayTransformation1TestsBase<T> where T : IZeroArrayT
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void IsZeroArray_WithNumsAndQueries_ReturnsWhetherArrayCanBeTransformedToAllZeros(int[] nums,
-        int[][] queries, bool expectedResult)
+    public void IsZeroArray_WithNumsAndQueries_ReturnsWhetherArrayCanBeTransformedToAllZeros(int[] nums, int[][] queries, bool expectedResult)
     {
         // Arrange
         var solution = new T();

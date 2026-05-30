@@ -17,8 +17,7 @@ public abstract class ConstructProductMatrixTestsBase<T> where T : IConstructPro
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void ConstructProductMatrix_WithValidGrid_ReturnsProductOfAllOtherElementsModulo(int[][] grid,
-        int[][] expectedResult)
+    public void ConstructProductMatrix_WithValidGrid_ReturnsProductOfAllOtherElementsModulo(int[][] grid, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();

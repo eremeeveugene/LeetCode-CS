@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ProductOfArrayExceptSelf;
 namespace LeetCode.Tests.Algorithms.ProductOfArrayExceptSelf;
 
 [TestClass]
-public sealed class ProductOfArrayExceptSelfPrefixSumTests :
-    ProductOfArrayExceptSelfTestsBase<ProductOfArrayExceptSelfPrefixSum>;
+public sealed class ProductOfArrayExceptSelfPrefixSumTests : ProductOfArrayExceptSelfTestsBase<ProductOfArrayExceptSelfPrefixSum>;

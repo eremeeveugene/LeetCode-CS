@@ -18,8 +18,7 @@ public abstract class EvenOddTreeTestsBase<T> where T : IEvenOddTree, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void IsEvenOddTree_WithBinaryTreeInput_ReturnsWhetherTreeSatisfiesEvenOddLevelRules(int?[] arrayRoot,
-        bool expectedResult)
+    public void IsEvenOddTree_WithBinaryTreeInput_ReturnsWhetherTreeSatisfiesEvenOddLevelRules(int?[] arrayRoot, bool expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(arrayRoot);

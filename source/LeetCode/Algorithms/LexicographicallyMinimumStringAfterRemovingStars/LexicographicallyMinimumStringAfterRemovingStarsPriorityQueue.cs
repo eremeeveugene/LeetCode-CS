@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.LexicographicallyMinimumStringAfterRemovingStars;
 
 /// <inheritdoc />
-public sealed class LexicographicallyMinimumStringAfterRemovingStarsPriorityQueue :
-    LexicographicallyMinimumStringAfterRemovingStarsBase
+public sealed class LexicographicallyMinimumStringAfterRemovingStarsPriorityQueue : LexicographicallyMinimumStringAfterRemovingStarsBase
 {
     /// <summary>
     ///     Time complexity - O(n log n)

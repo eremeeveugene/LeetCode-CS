@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumXORForEachQuery;
 namespace LeetCode.Tests.Algorithms.MaximumXORForEachQuery;
 
 [TestClass]
-public class MaximumXORForEachQueryBruteForceTests :
-    MaximumXORForEachQueryTestsBase<MaximumXORForEachQueryBruteForce>;
+public class MaximumXORForEachQueryBruteForceTests : MaximumXORForEachQueryTestsBase<MaximumXORForEachQueryBruteForce>;

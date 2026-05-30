@@ -17,8 +17,7 @@ public abstract class CheckIfGridCanBeCutIntoSectionsTestsBase<T> where T : IChe
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void CheckValidCuts_WithGridSizeAndRectangles_ReturnsWhetherGridCanBeCutIntoSections(int n,
-        int[][] rectangles, bool expectedResult)
+    public void CheckValidCuts_WithGridSizeAndRectangles_ReturnsWhetherGridCanBeCutIntoSections(int n, int[][] rectangles, bool expectedResult)
     {
         // Arrange
         var solution = new T();

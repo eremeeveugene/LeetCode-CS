@@ -36,8 +36,7 @@ public abstract class DistributeCandiesTestsBase<T> where T : IDistributeCandies
     [DataRow(new[] { 1, 2, 3, 4, 5, 5, 5, 5 }, 4)]
     [DataRow(new[] { 7, 7, 8, 8, 9, 9, 10, 10 }, 4)]
     [DataRow(new[] { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 }, 5)]
-    public void DistributeCandies_WithCandyTypes_ReturnsMaximumDistinctTypesWithinHalfLimit(int[] candyTypes,
-        int expectedResult)
+    public void DistributeCandies_WithCandyTypes_ReturnsMaximumDistinctTypesWithinHalfLimit(int[] candyTypes, int expectedResult)
     {
         // Arrange
         var solution = new T();

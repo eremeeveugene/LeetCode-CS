@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumDistanceBetweenBSTNodes;
 namespace LeetCode.Tests.Algorithms.MinimumDistanceBetweenBSTNodes;
 
 [TestClass]
-public sealed class MinimumDistanceBetweenBSTNodesDepthFirstSearchTests :
-    MinimumDistanceBetweenBSTNodesTestsBase<MinimumDistanceBetweenBSTNodesDepthFirstSearch>;
+public sealed class MinimumDistanceBetweenBSTNodesDepthFirstSearchTests : MinimumDistanceBetweenBSTNodesTestsBase<MinimumDistanceBetweenBSTNodesDepthFirstSearch>;

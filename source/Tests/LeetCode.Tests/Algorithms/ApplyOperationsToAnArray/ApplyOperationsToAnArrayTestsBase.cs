@@ -18,8 +18,7 @@ public abstract class ApplyOperationsToAnArrayTestsBase<T> where T : IApplyOpera
     [TestMethod]
     [DataRow(new[] { 0, 1 }, new[] { 1, 0 })]
     [DataRow(new[] { 1, 2, 2, 1, 1, 0 }, new[] { 1, 4, 2, 0, 0, 0 })]
-    public void ApplyOperations_WithGivenNumbersArray_ReturnsTransformedArray(int[] nums,
-        int[] expectedResult)
+    public void ApplyOperations_WithGivenNumbersArray_ReturnsTransformedArray(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

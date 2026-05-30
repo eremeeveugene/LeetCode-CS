@@ -19,8 +19,7 @@ public abstract class SubarrayProductLessThanKTestsBase<T> where T : ISubarrayPr
     [DataRow(new[] { 10, 5, 2, 6 }, 100, 8)]
     [DataRow(new[] { 1, 2, 3 }, 0, 0)]
     [DataRow(new[] { 1, 1, 1 }, 2, 6)]
-    public void NumSubarrayProductLessThanK_GivenArrayAndThreshold_ReturnsCount(int[] nums, int k,
-        int expectedResult)
+    public void NumSubarrayProductLessThanK_GivenArrayAndThreshold_ReturnsCount(int[] nums, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

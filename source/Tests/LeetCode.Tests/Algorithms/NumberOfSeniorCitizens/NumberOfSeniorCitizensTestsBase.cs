@@ -22,14 +22,9 @@ public abstract class NumberOfSeniorCitizensTestsBase<T> where T : INumberOfSeni
     [DataRow(new[] { "5612624052M0130", "5378802576M6424", "5447619845F0171", "2941701174O9078" }, 2)]
     [DataRow(new[] { "9876543210M7012", "8765432109F8015", "7654321098O6013", "6543210987M5500" }, 2)]
     [DataRow(new[] { "0000000000M9900", "1111111111F8801", "2222222222O6705", "3333333333M7604" }, 4)]
-    [DataRow(
-        new[] { "9751302862F0693", "3888560693F7262", "5485983835F0649", "2580974299F6042", "9976672161M6561", "0234451011F8013", "4294552179O6482" },
-        4)]
-    [DataRow(
-        new[] { "1137774788O7691", "7472708234O0072", "9885137889M8868", "1321925389M8161", "5574709492O7158", "2205791488F8896", "1537217483M5762" },
-        5)]
-    public void CountSeniors_WithPassengerDetails_ReturnsNumberOfSeniorPassengers(string[] details,
-        int expectedResult)
+    [DataRow(new[] { "9751302862F0693", "3888560693F7262", "5485983835F0649", "2580974299F6042", "9976672161M6561", "0234451011F8013", "4294552179O6482" }, 4)]
+    [DataRow(new[] { "1137774788O7691", "7472708234O0072", "9885137889M8868", "1321925389M8161", "5574709492O7158", "2205791488F8896", "1537217483M5762" }, 5)]
+    public void CountSeniors_WithPassengerDetails_ReturnsNumberOfSeniorPassengers(string[] details, int expectedResult)
     {
         // Arrange
         var solution = new T();

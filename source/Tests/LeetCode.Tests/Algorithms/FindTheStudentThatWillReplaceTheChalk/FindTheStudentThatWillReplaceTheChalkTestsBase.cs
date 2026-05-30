@@ -13,8 +13,7 @@ using LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk;
 
 namespace LeetCode.Tests.Algorithms.FindTheStudentThatWillReplaceTheChalk;
 
-public abstract class FindTheStudentThatWillReplaceTheChalkTestsBase<T>
-    where T : IFindTheStudentThatWillReplaceTheChalk, new()
+public abstract class FindTheStudentThatWillReplaceTheChalkTestsBase<T> where T : IFindTheStudentThatWillReplaceTheChalk, new()
 {
     [TestMethod]
     [DataRow(new[] { 5, 1, 5 }, 22, 0)]
@@ -25,8 +24,7 @@ public abstract class FindTheStudentThatWillReplaceTheChalkTestsBase<T>
     [DataRow(new[] { 100000, 1, 100000, 1, 100000, 1, 100000, 1, 100000, 1 }, 500000, 8)]
     [DataRow(new[] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, 10, 10)]
     [DataRow(new[] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, 1000000000, 0)]
-    public void ChalkReplacer_WithChalkArrayAndK_ReturnsIndexOfStudentReplacingChalk(int[] chalk, int k,
-        int expectedResult)
+    public void ChalkReplacer_WithChalkArrayAndK_ReturnsIndexOfStudentReplacingChalk(int[] chalk, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

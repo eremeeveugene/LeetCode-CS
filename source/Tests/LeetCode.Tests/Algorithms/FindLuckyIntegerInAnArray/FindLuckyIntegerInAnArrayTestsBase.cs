@@ -13,8 +13,7 @@ using LeetCode.Algorithms.FindLuckyIntegerInAnArray;
 
 namespace LeetCode.Tests.Algorithms.FindLuckyIntegerInAnArray;
 
-public abstract class FindLuckyIntegerInAnArrayTestsBase<T>
-    where T : IFindLuckyIntegerInAnArray, new()
+public abstract class FindLuckyIntegerInAnArrayTestsBase<T> where T : IFindLuckyIntegerInAnArray, new()
 {
     [TestMethod]
     [DataRow(new[] { 2, 2, 3, 4 }, 2)]

@@ -18,8 +18,7 @@ public abstract class TeemoAttackingTestsBase<T> where T : ITeemoAttacking, new(
     [TestMethod]
     [DataRow(new[] { 1, 4 }, 2, 4)]
     [DataRow(new[] { 1, 2 }, 2, 3)]
-    public void FindPoisonedDuration_WithOverlappingOrConsecutiveAttacks_ReturnsTotalPoisonedTime(int[] timeSeries,
-        int duration, int expectedResult)
+    public void FindPoisonedDuration_WithOverlappingOrConsecutiveAttacks_ReturnsTotalPoisonedTime(int[] timeSeries, int duration, int expectedResult)
     {
         // Arrange
         var solution = new T();

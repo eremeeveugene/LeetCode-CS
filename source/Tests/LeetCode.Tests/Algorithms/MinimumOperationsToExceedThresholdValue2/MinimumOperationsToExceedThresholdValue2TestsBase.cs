@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MinimumOperationsToExceedThresholdValue2;
 
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToExceedThresholdValue2;
 
-public abstract class MinimumOperationsToExceedThresholdValue2TestsBase<T>
-    where T : IMinimumOperationsToExceedThresholdValue2, new()
+public abstract class MinimumOperationsToExceedThresholdValue2TestsBase<T> where T : IMinimumOperationsToExceedThresholdValue2, new()
 {
     [TestMethod]
     [DataRow(new[] { 2, 11, 10, 1, 3 }, 10, 2)]

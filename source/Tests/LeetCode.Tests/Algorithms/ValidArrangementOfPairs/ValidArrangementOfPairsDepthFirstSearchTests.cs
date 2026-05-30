@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ValidArrangementOfPairs;
 namespace LeetCode.Tests.Algorithms.ValidArrangementOfPairs;
 
 [TestClass]
-public sealed class ValidArrangementOfPairsDepthFirstSearchTests :
-    ValidArrangementOfPairsTestsBase<ValidArrangementOfPairsDepthFirstSearch>;
+public sealed class ValidArrangementOfPairsDepthFirstSearchTests : ValidArrangementOfPairsTestsBase<ValidArrangementOfPairsDepthFirstSearch>;

@@ -45,8 +45,7 @@ public sealed class FindTheTownJudgeIterative : IFindTheTownJudge
             }
         }
 
-        foreach (var judge in judges.Where(j =>
-                     j.Value.Sum() == sum - j.Key && !judges.Any(v => v.Value.Contains(j.Key))))
+        foreach (var judge in judges.Where(j => j.Value.Sum() == sum - j.Key && !judges.Any(v => v.Value.Contains(j.Key))))
         {
             return judge.Key;
         }

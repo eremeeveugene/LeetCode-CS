@@ -26,8 +26,7 @@ public abstract class SentenceSimilarity3TestsBase<T> where T : ISentenceSimilar
     [DataRow("hello racecar", "hello racecar acecar", true)]
     [DataRow("hello", "hr uyello", false)]
     [DataRow("DN PD", "D", false)]
-    public void AreSentencesSimilar_GivenTwoSentences_ReturnsWhetherTheyAreSimilar(string sentence1, string sentence2,
-        bool expectedResult)
+    public void AreSentencesSimilar_GivenTwoSentences_ReturnsWhetherTheyAreSimilar(string sentence1, string sentence2, bool expectedResult)
     {
         // Arrange
         var solution = new T();

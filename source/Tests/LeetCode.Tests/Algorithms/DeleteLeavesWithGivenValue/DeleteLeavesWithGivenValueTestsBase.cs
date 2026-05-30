@@ -19,8 +19,7 @@ public abstract class DeleteLeavesWithGivenValueTestsBase<T> where T : IDeleteLe
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void RemoveLeafNodes_GivenTarget_RemovesAllLeafNodesWithTargetValue(int?[] rootArray, int target,
-        int?[] expectedResultArray)
+    public void RemoveLeafNodes_GivenTarget_RemovesAllLeafNodesWithTargetValue(int?[] rootArray, int target, int?[] expectedResultArray)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);

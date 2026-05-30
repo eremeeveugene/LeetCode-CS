@@ -19,8 +19,7 @@ public abstract class SearchInBinarySearchTreeTestsBase<T> where T : ISearchInBi
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void SearchBST_WithGivenRootAndValue_ReturnsSubtree(int?[] rootArray, int val,
-        int?[] expectedResultArray)
+    public void SearchBST_WithGivenRootAndValue_ReturnsSubtree(int?[] rootArray, int val, int?[] expectedResultArray)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);

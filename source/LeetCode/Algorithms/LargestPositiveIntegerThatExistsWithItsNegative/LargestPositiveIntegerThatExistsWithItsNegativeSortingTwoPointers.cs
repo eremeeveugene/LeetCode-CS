@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative;
 
 /// <inheritdoc />
-public sealed class LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointers :
-    ILargestPositiveIntegerThatExistsWithItsNegative
+public sealed class LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPointers : ILargestPositiveIntegerThatExistsWithItsNegative
 {
     /// <summary>
     ///     Time complexity - O(n log n)

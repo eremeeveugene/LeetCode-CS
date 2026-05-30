@@ -17,8 +17,7 @@ public abstract class CountVowelStringsInRangesTestsBase<T> where T : ICountVowe
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void VowelStrings_WithWordsAndQueries_ModifiesWordsAccordingToQueries(string[] words,
-        int[][] queries, int[] expectedResult)
+    public void VowelStrings_WithWordsAndQueries_ModifiesWordsAccordingToQueries(string[] words, int[][] queries, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

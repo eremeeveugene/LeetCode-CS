@@ -18,8 +18,7 @@ public abstract class SpiralMatrix4TestsBase<T> where T : ISpiralMatrix4, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void SpiralMatrix_WithDimensionsAndLinkedList_FillsMatrixInClockwiseSpiralOrderOrMinusOne(int m, int n,
-        int[] headArray, int[][] expectedResult)
+    public void SpiralMatrix_WithDimensionsAndLinkedList_FillsMatrixInClockwiseSpiralOrderOrMinusOne(int m, int n, int[] headArray, int[][] expectedResult)
     {
         // Arrange
         var head = ListNode.ToListNodeOrThrow(headArray);

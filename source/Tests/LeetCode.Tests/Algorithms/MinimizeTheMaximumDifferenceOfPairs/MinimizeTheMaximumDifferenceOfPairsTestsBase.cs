@@ -13,14 +13,12 @@ using LeetCode.Algorithms.MinimizeTheMaximumDifferenceOfPairs;
 
 namespace LeetCode.Tests.Algorithms.MinimizeTheMaximumDifferenceOfPairs;
 
-public abstract class MinimizeTheMaximumDifferenceOfPairsTestsBase<T>
-    where T : IMinimizeTheMaximumDifferenceOfPairs, new()
+public abstract class MinimizeTheMaximumDifferenceOfPairsTestsBase<T> where T : IMinimizeTheMaximumDifferenceOfPairs, new()
 {
     [TestMethod]
     [DataRow(new[] { 10, 1, 2, 7, 1, 3 }, 2, 1)]
     [DataRow(new[] { 4, 2, 1, 2 }, 1, 0)]
-    public void MinimizeMax_WithNumsAndPairCount_ReturnsMinimumPossibleMaximumDifferenceAmongPairs(int[] nums,
-        int requiredPairsCount, int expectedResult)
+    public void MinimizeMax_WithNumsAndPairCount_ReturnsMinimumPossibleMaximumDifferenceAmongPairs(int[] nums, int requiredPairsCount, int expectedResult)
     {
         // Arrange
         var solution = new T();

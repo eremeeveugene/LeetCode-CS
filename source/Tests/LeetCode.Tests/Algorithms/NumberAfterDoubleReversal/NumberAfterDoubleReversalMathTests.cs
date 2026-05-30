@@ -14,5 +14,4 @@ using LeetCode.Algorithms.NumberAfterDoubleReversal;
 namespace LeetCode.Tests.Algorithms.NumberAfterDoubleReversal;
 
 [TestClass]
-public sealed class NumberAfterDoubleReversalMathTests :
-    NumberAfterDoubleReversalTestsBase<NumberAfterDoubleReversalMath>;
+public sealed class NumberAfterDoubleReversalMathTests : NumberAfterDoubleReversalTestsBase<NumberAfterDoubleReversalMath>;

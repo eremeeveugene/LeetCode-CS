@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray;
 
 namespace LeetCode.Tests.Algorithms.MaximumProductOfTwoElementsInAnArray;
 
-public abstract class MaximumProductOfTwoElementsInAnArrayTestsBase<T>
-    where T : IMaximumProductOfTwoElementsInAnArray, new()
+public abstract class MaximumProductOfTwoElementsInAnArrayTestsBase<T> where T : IMaximumProductOfTwoElementsInAnArray, new()
 {
     [TestMethod]
     [DataRow(new[] { 3, 7 }, 12)]

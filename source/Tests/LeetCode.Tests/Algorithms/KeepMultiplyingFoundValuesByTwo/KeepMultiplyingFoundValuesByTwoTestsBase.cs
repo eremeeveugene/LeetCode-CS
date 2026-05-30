@@ -18,8 +18,7 @@ public abstract class KeepMultiplyingFoundValuesByTwoTestsBase<T> where T : IKee
     [TestMethod]
     [DataRow(new[] { 5, 3, 6, 1, 12 }, 3, 24)]
     [DataRow(new[] { 2, 7, 9 }, 4, 4)]
-    public void FindFinalValue_WithNumsArrayAndOriginalValue_ReturnsFinalMultipliedValue(int[] nums,
-        int original, int expectedResult)
+    public void FindFinalValue_WithNumsArrayAndOriginalValue_ReturnsFinalMultipliedValue(int[] nums, int original, int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumDistanceInArrays;
 namespace LeetCode.Tests.Algorithms.MaximumDistanceInArrays;
 
 [TestClass]
-public class MaximumDistanceInArraysBruteForceTests :
-    MaximumDistanceInArraysTestsBase<MaximumDistanceInArraysBruteForce>;
+public class MaximumDistanceInArraysBruteForceTests : MaximumDistanceInArraysTestsBase<MaximumDistanceInArraysBruteForce>;

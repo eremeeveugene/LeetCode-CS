@@ -17,8 +17,7 @@ public abstract class MinimumFallingPathSum2TestsBase<T> where T : IMinimumFalli
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MinFallingPathSum_WithGridJson_ReturnsMinimumFallingPathSum(int[][] grid,
-        int expectedResult)
+    public void MinFallingPathSum_WithGridJson_ReturnsMinimumFallingPathSum(int[][] grid, int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MaximumUniqueSubarraySumAfterDeletion;
 
 namespace LeetCode.Tests.Algorithms.MaximumUniqueSubarraySumAfterDeletion;
 
-public abstract class MaximumUniqueSubarraySumAfterDeletionTestsBase<T>
-    where T : IMaximumUniqueSubarraySumAfterDeletion, new()
+public abstract class MaximumUniqueSubarraySumAfterDeletionTestsBase<T> where T : IMaximumUniqueSubarraySumAfterDeletion, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 3, 4, 5 }, 15)]

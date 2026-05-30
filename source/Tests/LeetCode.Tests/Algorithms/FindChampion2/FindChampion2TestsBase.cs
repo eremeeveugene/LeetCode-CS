@@ -17,8 +17,7 @@ public abstract class FindChampion2TestsBase<T> where T : IFindChampion2, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FindChampion_WithNodeCountAndDirectedEdges_ReturnsChampionOrMinusOne(int n, int[][] edges,
-        int expectedResult)
+    public void FindChampion_WithNodeCountAndDirectedEdges_ReturnsChampionOrMinusOne(int n, int[][] edges, int expectedResult)
     {
         // Arrange
         var solution = new T();

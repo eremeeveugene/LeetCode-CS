@@ -24,8 +24,7 @@ public abstract class ContainsDuplicate3TestsBase<T> where T : IContainsDuplicat
     [DataRow(new[] { 1, 2, 3, 1 }, 0, 1, false)]
     [DataRow(new[] { 1, 2, 3, 1 }, 2, -1, false)]
     [DataRow(new[] { -1, -1 }, 1, 0, true)]
-    public void ContainsNearbyAlmostDuplicate_WithIndexAndValueDifferenceConstraints_ReturnsTrueIfDuplicateExists(
-        int[] nums, int indexDiff, int valueDiff, bool expectedResult)
+    public void ContainsNearbyAlmostDuplicate_WithIndexAndValueDifferenceConstraints_ReturnsTrueIfDuplicateExists(int[] nums, int indexDiff, int valueDiff, bool expectedResult)
     {
         // Arrange
         var solution = new T();

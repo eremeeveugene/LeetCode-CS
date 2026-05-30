@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation;
 
 namespace LeetCode.Tests.Algorithms.MaximumBeautyOfAnArrayAfterApplyingOperation;
 
-public abstract class MaximumBeautyOfAnArrayAfterApplyingOperationTestsBase<T>
-    where T : IMaximumBeautyOfAnArrayAfterApplyingOperation, new()
+public abstract class MaximumBeautyOfAnArrayAfterApplyingOperationTestsBase<T> where T : IMaximumBeautyOfAnArrayAfterApplyingOperation, new()
 {
     [TestMethod]
     [DataRow(new[] { 4, 6, 1, 2 }, 2, 3)]

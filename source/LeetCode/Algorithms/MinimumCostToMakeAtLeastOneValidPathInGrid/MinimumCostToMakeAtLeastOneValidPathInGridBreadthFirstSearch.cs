@@ -14,13 +14,7 @@ namespace LeetCode.Algorithms.MinimumCostToMakeAtLeastOneValidPathInGrid;
 /// <inheritdoc />
 public sealed class MinimumCostToMakeAtLeastOneValidPathInGridBreadthFirstSearch : IMinimumCostToMakeAtLeastOneValidPathInGrid
 {
-    private readonly (int X, int Y)[] _directions =
-    [
-        (0, 1),
-        (0, -1),
-        (1, 0),
-        (-1, 0)
-    ];
+    private readonly (int X, int Y)[] _directions = [(0, 1), (0, -1), (1, 0), (-1, 0)];
 
     /// <summary>
     ///     Time complexity - O(n * m)

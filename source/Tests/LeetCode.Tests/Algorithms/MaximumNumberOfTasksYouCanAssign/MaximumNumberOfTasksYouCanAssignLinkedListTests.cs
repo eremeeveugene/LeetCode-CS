@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumNumberOfTasksYouCanAssign;
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfTasksYouCanAssign;
 
 [TestClass]
-public class MaximumNumberOfTasksYouCanAssignLinkedListTests :
-    MaximumNumberOfTasksYouCanAssignTestsBase<MaximumNumberOfTasksYouCanAssignLinkedList>;
+public class MaximumNumberOfTasksYouCanAssignLinkedListTests : MaximumNumberOfTasksYouCanAssignTestsBase<MaximumNumberOfTasksYouCanAssignLinkedList>;

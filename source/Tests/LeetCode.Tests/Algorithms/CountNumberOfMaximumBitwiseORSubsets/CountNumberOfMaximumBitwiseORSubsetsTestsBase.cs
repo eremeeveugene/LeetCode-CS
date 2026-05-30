@@ -13,15 +13,13 @@ using LeetCode.Algorithms.CountNumberOfMaximumBitwiseORSubsets;
 
 namespace LeetCode.Tests.Algorithms.CountNumberOfMaximumBitwiseORSubsets;
 
-public abstract class CountNumberOfMaximumBitwiseORSubsetsTestsBase<T>
-    where T : ICountNumberOfMaximumBitwiseORSubsets, new()
+public abstract class CountNumberOfMaximumBitwiseORSubsetsTestsBase<T> where T : ICountNumberOfMaximumBitwiseORSubsets, new()
 {
     [TestMethod]
     [DataRow(new[] { 3, 1 }, 2)]
     [DataRow(new[] { 2, 2, 2 }, 7)]
     [DataRow(new[] { 3, 2, 1, 5 }, 6)]
-    public void CountMaxOrSubsets_GivenArrayOfIntegers_ReturnsNumberOfMaxOrSubsets(int[] nums,
-        int expectedResult)
+    public void CountMaxOrSubsets_GivenArrayOfIntegers_ReturnsNumberOfMaxOrSubsets(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

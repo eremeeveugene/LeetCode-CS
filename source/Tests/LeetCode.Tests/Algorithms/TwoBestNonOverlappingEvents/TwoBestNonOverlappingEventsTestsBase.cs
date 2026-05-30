@@ -17,8 +17,7 @@ public abstract class TwoBestNonOverlappingEventsTestsBase<T> where T : ITwoBest
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MaxTwoEvents_WithEventStartEndAndValue_ReturnsMaximumValueFromNonOverlappingEvents(int[][] events,
-        int expectedResult)
+    public void MaxTwoEvents_WithEventStartEndAndValue_ReturnsMaximumValueFromNonOverlappingEvents(int[][] events, int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ZigzagGridTraversalWithSkip;
 namespace LeetCode.Tests.Algorithms.ZigzagGridTraversalWithSkip;
 
 [TestClass]
-public sealed class ZigzagGridTraversalWithSkipSimulationTests :
-    ZigzagGridTraversalWithSkipTestsBase<ZigzagGridTraversalWithSkipSimulation>;
+public sealed class ZigzagGridTraversalWithSkipSimulationTests : ZigzagGridTraversalWithSkipTestsBase<ZigzagGridTraversalWithSkipSimulation>;

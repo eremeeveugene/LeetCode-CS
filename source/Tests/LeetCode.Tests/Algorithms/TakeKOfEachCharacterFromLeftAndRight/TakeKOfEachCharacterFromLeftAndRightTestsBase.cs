@@ -13,14 +13,12 @@ using LeetCode.Algorithms.TakeKOfEachCharacterFromLeftAndRight;
 
 namespace LeetCode.Tests.Algorithms.TakeKOfEachCharacterFromLeftAndRight;
 
-public abstract class TakeKOfEachCharacterFromLeftAndRightTestsBase<T>
-    where T : ITakeKOfEachCharacterFromLeftAndRight, new()
+public abstract class TakeKOfEachCharacterFromLeftAndRightTestsBase<T> where T : ITakeKOfEachCharacterFromLeftAndRight, new()
 {
     [TestMethod]
     [DataRow("aabaaaacaabc", 2, 8)]
     [DataRow("a", 1, -1)]
-    public void TakeCharacters_WithTargetCountFromEnds_ReturnsMinimumMinutesToCollectKOfEachCharacterOrMinusOne(
-        string s, int k, int expectedResult)
+    public void TakeCharacters_WithTargetCountFromEnds_ReturnsMinimumMinutesToCollectKOfEachCharacterOrMinusOne(string s, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

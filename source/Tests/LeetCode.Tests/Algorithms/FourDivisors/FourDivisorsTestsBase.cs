@@ -19,8 +19,7 @@ public abstract class FourDivisorsTestsBase<T> where T : IFourDivisors, new()
     [DataRow(new[] { 21, 4, 7 }, 32)]
     [DataRow(new[] { 21, 21 }, 64)]
     [DataRow(new[] { 1, 2, 3, 4, 5 }, 0)]
-    public void SumFourDivisors_WithInputNumsArray_ReturnsSumOfNumbersThatHaveFourDivisors(int[] nums,
-        int expectedResult)
+    public void SumFourDivisors_WithInputNumsArray_ReturnsSumOfNumbersThatHaveFourDivisors(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

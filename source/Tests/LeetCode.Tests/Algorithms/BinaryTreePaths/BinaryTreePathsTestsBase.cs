@@ -18,8 +18,7 @@ public abstract class BinaryTreePathsTestsBase<T> where T : IBinaryTreePaths, ne
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void BinaryTreePaths_GivenTreeInJson_ReturnsAllRootToLeafPaths(int?[] rootArray,
-        string[] expectedResult)
+    public void BinaryTreePaths_GivenTreeInJson_ReturnsAllRootToLeafPaths(int?[] rootArray, string[] expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);

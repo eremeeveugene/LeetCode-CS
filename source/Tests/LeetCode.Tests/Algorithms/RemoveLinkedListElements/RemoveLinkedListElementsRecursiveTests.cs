@@ -14,5 +14,4 @@ using LeetCode.Algorithms.RemoveLinkedListElements;
 namespace LeetCode.Tests.Algorithms.RemoveLinkedListElements;
 
 [TestClass]
-public sealed class RemoveLinkedListElementsRecursiveTests :
-    RemoveLinkedListElementsTestsBase<RemoveLinkedListElementsRecursive>;
+public sealed class RemoveLinkedListElementsRecursiveTests : RemoveLinkedListElementsTestsBase<RemoveLinkedListElementsRecursive>;

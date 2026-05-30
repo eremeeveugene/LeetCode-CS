@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountPrefixAndSuffixPairs1;
 namespace LeetCode.Tests.Algorithms.CountPrefixAndSuffixPairs1;
 
 [TestClass]
-public sealed class CountPrefixAndSuffixPairs1StringComparisonTests :
-    CountPrefixAndSuffixPairs1TestsBase<CountPrefixAndSuffixPairs1StringComparison>;
+public sealed class CountPrefixAndSuffixPairs1StringComparisonTests : CountPrefixAndSuffixPairs1TestsBase<CountPrefixAndSuffixPairs1StringComparison>;

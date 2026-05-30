@@ -13,8 +13,7 @@ using LeetCode.Algorithms.FindScoreOfAnArrayAfterMarkingAllElements;
 
 namespace LeetCode.Tests.Algorithms.FindScoreOfAnArrayAfterMarkingAllElements;
 
-public abstract class FindScoreOfAnArrayAfterMarkingAllElements1<T>
-    where T : IFindScoreOfAnArrayAfterMarkingAllElements, new()
+public abstract class FindScoreOfAnArrayAfterMarkingAllElements1<T> where T : IFindScoreOfAnArrayAfterMarkingAllElements, new()
 {
     [TestMethod]
     [DataRow(new[] { 2, 1, 3, 4, 5, 2 }, 7L)]

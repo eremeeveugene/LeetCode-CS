@@ -21,8 +21,7 @@ public abstract class ReverseLinkedListTestsBase<T> where T : IReverseLinkedList
     [DataRow(new int[] { }, new int[] { })]
     [DataRow(new[] { 1, 2 }, new[] { 2, 1 })]
     [DataRow(new[] { 1, 2, 3, 4, 5 }, new[] { 5, 4, 3, 2, 1 })]
-    public void ReverseList_WithSinglyLinkedList_ReturnsListInReversedOrder(int[] headArray,
-        int[] expectedResultArray)
+    public void ReverseList_WithSinglyLinkedList_ReturnsListInReversedOrder(int[] headArray, int[] expectedResultArray)
     {
         // Arrange
         var head = ListNode.ToListNode(headArray);

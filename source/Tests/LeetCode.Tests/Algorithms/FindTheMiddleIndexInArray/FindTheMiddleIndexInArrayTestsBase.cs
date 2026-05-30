@@ -19,8 +19,7 @@ public abstract class FindTheMiddleIndexInArrayTestsBase<T> where T : IFindTheMi
     [DataRow(new[] { 2, 3, -1, 8, 4 }, 3)]
     [DataRow(new[] { 1, -1, 4 }, 2)]
     [DataRow(new[] { 2, 5 }, -1)]
-    public void FindMiddleIndex_WithIntegerArray_ReturnsFirstIndexWhereLeftAndRightSumsAreEqualOrMinusOne(
-        int[] nums, int expectedResult)
+    public void FindMiddleIndex_WithIntegerArray_ReturnsFirstIndexWhereLeftAndRightSumsAreEqualOrMinusOne(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -18,8 +18,7 @@ public abstract class ArrayPartitionTestsBase<T> where T : IArrayPartition, new(
     [TestMethod]
     [DataRow(new[] { 1, 4, 3, 2 }, 4)]
     [DataRow(new[] { 6, 2, 6, 5, 1, 2 }, 9)]
-    public void ArrayPairSum_GivenArrayOfIntegers_ReturnsMaximumSumOfMinPairsInEveryPair(int[] nums,
-        int expectedResult)
+    public void ArrayPairSum_GivenArrayOfIntegers_ReturnsMaximumSumOfMinPairsInEveryPair(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -18,8 +18,7 @@ public abstract class FindNumbersWithEvenNumberOfDigitsTestsBase<T> where T : IF
     [TestMethod]
     [DataRow(new[] { 555, 901, 482, 1771 }, 1)]
     [DataRow(new[] { 12, 345, 2, 6, 7896 }, 2)]
-    public void FindNumbers_WithArrayOfIntegers_ReturnsCountOfNumbersWithEvenNumberOfDigits(int[] nums,
-        int expectedResult)
+    public void FindNumbers_WithArrayOfIntegers_ReturnsCountOfNumbersWithEvenNumberOfDigits(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

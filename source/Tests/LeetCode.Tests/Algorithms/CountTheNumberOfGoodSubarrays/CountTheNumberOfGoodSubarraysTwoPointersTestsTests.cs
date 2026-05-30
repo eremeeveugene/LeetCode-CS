@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountTheNumberOfGoodSubarrays;
 namespace LeetCode.Tests.Algorithms.CountTheNumberOfGoodSubarrays;
 
 [TestClass]
-public sealed class CountTheNumberOfGoodSubarraysTwoPointersTests :
-    CountTheNumberOfGoodSubarraysTestsBase<CountTheNumberOfGoodSubarraysTwoPointers>;
+public sealed class CountTheNumberOfGoodSubarraysTwoPointersTests : CountTheNumberOfGoodSubarraysTestsBase<CountTheNumberOfGoodSubarraysTwoPointers>;

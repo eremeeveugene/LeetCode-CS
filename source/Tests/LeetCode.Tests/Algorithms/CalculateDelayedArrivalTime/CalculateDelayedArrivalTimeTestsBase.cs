@@ -18,8 +18,7 @@ public abstract class CalculateDelayedArrivalTimeTestsBase<T> where T : ICalcula
     [TestMethod]
     [DataRow(15, 5, 20)]
     [DataRow(13, 11, 0)]
-    public void FindDelayedArrivalTime_WithArrivalAndDelay_ReturnsTimeAdjustedFor24HourClock(int arrivalTime,
-        int delayedTime, int expectedResult)
+    public void FindDelayedArrivalTime_WithArrivalAndDelay_ReturnsTimeAdjustedFor24HourClock(int arrivalTime, int delayedTime, int expectedResult)
     {
         // Arrange
         var solution = new T();

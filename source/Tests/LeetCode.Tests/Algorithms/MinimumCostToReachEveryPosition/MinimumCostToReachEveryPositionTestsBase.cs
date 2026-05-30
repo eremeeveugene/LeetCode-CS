@@ -18,8 +18,7 @@ public abstract class MinimumCostToReachEveryPositionTestsBase<T> where T : IMin
     [TestMethod]
     [DataRow(new[] { 5, 3, 4, 1, 3, 2 }, new[] { 5, 3, 3, 1, 1, 1 })]
     [DataRow(new[] { 1, 2, 4, 6, 7 }, new[] { 1, 1, 1, 1, 1 })]
-    public void MinCosts_WithCostArray_ReturnsMinimumCostAtEachStep(int[] cost,
-        int[] expectedResult)
+    public void MinCosts_WithCostArray_ReturnsMinimumCostAtEachStep(int[] cost, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

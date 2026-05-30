@@ -26,10 +26,7 @@ public sealed class CountOfInterestingSubarraysPrefixSum : ICountOfInterestingSu
     {
         long result = 0;
 
-        var prefixModDictionary = new Dictionary<int, int>
-        {
-            [0] = 1
-        };
+        var prefixModDictionary = new Dictionary<int, int> { [0] = 1 };
 
         var prefix = 0;
 

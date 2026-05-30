@@ -17,8 +17,7 @@ public abstract class LargestTriangleAreaTestsBase<T> where T : ILargestTriangle
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void LargestTriangleArea_WithPoints_ReturnsMaximumTriangleArea(int[][] points,
-        double expectedResult)
+    public void LargestTriangleArea_WithPoints_ReturnsMaximumTriangleArea(int[][] points, double expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -32,10 +31,7 @@ public abstract class LargestTriangleAreaTestsBase<T> where T : ILargestTriangle
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return
-        [
-            new[] { new[] { 0, 0 }, new[] { 0, 1 }, new[] { 1, 0 }, new[] { 0, 2 }, new[] { 2, 0 } }, 2.0
-        ];
+        yield return [new[] { new[] { 0, 0 }, new[] { 0, 1 }, new[] { 1, 0 }, new[] { 0, 2 }, new[] { 2, 0 } }, 2.0];
 
         yield return [new[] { new[] { 1, 0 }, new[] { 0, 0 }, new[] { 0, 1 } }, 0.5];
     }

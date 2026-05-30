@@ -18,8 +18,7 @@ public abstract class CountTheNumberOfGoodSubarraysTestsBase<T> where T : ICount
     [TestMethod]
     [DataRow(new[] { 1, 1, 1, 1, 1 }, 10, 1L)]
     [DataRow(new[] { 3, 1, 4, 3, 2, 2, 4 }, 2, 4L)]
-    public void CountGood_WithIntegerArrayAndK_ReturnsNumberOfGoodPairs(int[] nums, int k,
-        long expectedResult)
+    public void CountGood_WithIntegerArrayAndK_ReturnsNumberOfGoodPairs(int[] nums, int k, long expectedResult)
     {
         // Arrange
         var solution = new T();

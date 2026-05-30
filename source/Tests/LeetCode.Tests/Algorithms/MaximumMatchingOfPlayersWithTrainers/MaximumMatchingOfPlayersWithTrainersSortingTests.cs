@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumMatchingOfPlayersWithTrainers;
 namespace LeetCode.Tests.Algorithms.MaximumMatchingOfPlayersWithTrainers;
 
 [TestClass]
-public class MaximumMatchingOfPlayersWithTrainersSortingTests :
-    MaximumMatchingOfPlayersWithTrainersTestsBase<MaximumMatchingOfPlayersWithTrainersSorting>;
+public class MaximumMatchingOfPlayersWithTrainersSortingTests : MaximumMatchingOfPlayersWithTrainersTestsBase<MaximumMatchingOfPlayersWithTrainersSorting>;

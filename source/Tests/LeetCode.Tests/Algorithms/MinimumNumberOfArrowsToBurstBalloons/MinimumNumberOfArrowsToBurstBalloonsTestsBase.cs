@@ -13,13 +13,11 @@ using LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons;
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfArrowsToBurstBalloons;
 
-public abstract class MinimumNumberOfArrowsToBurstBalloonsTestsBase<T>
-    where T : IMinimumNumberOfArrowsToBurstBalloons, new()
+public abstract class MinimumNumberOfArrowsToBurstBalloonsTestsBase<T> where T : IMinimumNumberOfArrowsToBurstBalloons, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FindMinArrowShots_GivenDifferentPointCombinations_ReturnsMinimumArrowsRequired(int[][] points,
-        int expectedResult)
+    public void FindMinArrowShots_GivenDifferentPointCombinations_ReturnsMinimumArrowsRequired(int[][] points, int expectedResult)
     {
         // Arrange
         var solution = new T();

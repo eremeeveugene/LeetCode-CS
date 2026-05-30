@@ -24,9 +24,7 @@ public sealed class ValidSudokuBruteForce : ValidSudokuBase
     {
         Span<bool> seen = stackalloc bool[N];
 
-        return AreValidRows(seen, board) &&
-               AreValidColumns(seen, board) &&
-               AreValidBoxes(seen, board);
+        return AreValidRows(seen, board) && AreValidColumns(seen, board) && AreValidBoxes(seen, board);
     }
 
     private static bool AreValidRows(scoped Span<bool> seen, char[][] board)

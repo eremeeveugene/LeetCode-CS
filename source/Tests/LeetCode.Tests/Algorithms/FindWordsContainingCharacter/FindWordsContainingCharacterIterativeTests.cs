@@ -14,6 +14,4 @@ using LeetCode.Algorithms.FindWordsContainingCharacter;
 namespace LeetCode.Tests.Algorithms.FindWordsContainingCharacter;
 
 [TestClass]
-public sealed class
-    FindWordsContainingCharacterIterativeTests : FindWordsContainingCharacterTestsBase<
-    FindWordsContainingCharacterIterative>;
+public sealed class FindWordsContainingCharacterIterativeTests : FindWordsContainingCharacterTestsBase<FindWordsContainingCharacterIterative>;

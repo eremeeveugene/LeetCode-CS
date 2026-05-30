@@ -18,8 +18,7 @@ public abstract class MaxChunksToMakeSortedTestsBase<T> where T : IMaxChunksToMa
     [TestMethod]
     [DataRow(new[] { 4, 3, 2, 1, 0 }, 1)]
     [DataRow(new[] { 1, 0, 2, 3, 4 }, 4)]
-    public void MaxChunksToSorted_WithUnsortedArray_ReturnsMaximumNumberOfChunks(int[] arr,
-        int expectedResult)
+    public void MaxChunksToSorted_WithUnsortedArray_ReturnsMaximumNumberOfChunks(int[] arr, int expectedResult)
     {
         // Arrange
         var solution = new T();

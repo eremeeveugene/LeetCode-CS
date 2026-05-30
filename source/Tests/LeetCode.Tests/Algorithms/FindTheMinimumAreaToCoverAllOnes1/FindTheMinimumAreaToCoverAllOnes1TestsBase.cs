@@ -17,8 +17,7 @@ public abstract class FindTheMinimumAreaToCoverAllOnes1TestsBase<T> where T : IF
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MinimumArea_WithBinaryGrid_ReturnsMinimumBoundingAreaOfOnes(int[][] grid,
-        int expectedResult)
+    public void MinimumArea_WithBinaryGrid_ReturnsMinimumBoundingAreaOfOnes(int[][] grid, int expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -36,24 +35,10 @@ public abstract class FindTheMinimumAreaToCoverAllOnes1TestsBase<T> where T : IF
 
         yield return [new[] { new[] { 1, 0 }, new[] { 0, 0 } }, 1];
 
-        yield return
-        [
-            new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 1, 0 } }, 1
-        ];
+        yield return [new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 1, 0 } }, 1];
 
-        yield return
-        [
-            new[]
-            {
-                new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 1, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 0, 1, 0 },
-                new[] { 0, 0, 0, 0, 0 }
-            },
-            9
-        ];
+        yield return [new[] { new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 1, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 0, 0, 0, 0 } }, 9];
 
-        yield return
-        [
-            new[] { new[] { 0, 0, 0, 1 }, new[] { 0, 0, 0, 0 }, new[] { 0, 1, 0, 0 }, new[] { 0, 0, 0, 1 } }, 12
-        ];
+        yield return [new[] { new[] { 0, 0, 0, 1 }, new[] { 0, 0, 0, 0 }, new[] { 0, 1, 0, 0 }, new[] { 0, 0, 0, 1 } }, 12];
     }
 }

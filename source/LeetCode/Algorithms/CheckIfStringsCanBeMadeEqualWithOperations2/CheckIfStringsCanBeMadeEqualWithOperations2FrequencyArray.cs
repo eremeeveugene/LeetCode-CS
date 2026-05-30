@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations2;
 
 /// <inheritdoc />
-public sealed class CheckIfStringsCanBeMadeEqualWithOperations2FrequencyArray :
-    ICheckIfStringsCanBeMadeEqualWithOperations2
+public sealed class CheckIfStringsCanBeMadeEqualWithOperations2FrequencyArray : ICheckIfStringsCanBeMadeEqualWithOperations2
 {
     private const byte AlphabetLength = 'z' - 'a' + 1;
 

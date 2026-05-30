@@ -14,6 +14,4 @@ using LeetCode.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger;
 namespace LeetCode.Tests.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger;
 
 [TestClass]
-public sealed class SubtractTheProductAndSumOfDigitsOfAnIntegerStringTests :
-    SubtractTheProductAndSumOfDigitsOfAnIntegerTestsBase<
-        SubtractTheProductAndSumOfDigitsOfAnIntegerString>;
+public sealed class SubtractTheProductAndSumOfDigitsOfAnIntegerStringTests : SubtractTheProductAndSumOfDigitsOfAnIntegerTestsBase<SubtractTheProductAndSumOfDigitsOfAnIntegerString>;

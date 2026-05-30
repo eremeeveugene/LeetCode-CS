@@ -18,8 +18,7 @@ public abstract class SetMismatchTestsBase<T> where T : ISetMismatch, new()
     [TestMethod]
     [DataRow(new[] { 1, 2, 2, 4 }, new[] { 2, 3 })]
     [DataRow(new[] { 1, 1 }, new[] { 1, 2 })]
-    public void FindErrorNums_WithDuplicateAndMissingNumberInArray_ReturnsDuplicatedAndMissingNumbers(int[] nums,
-        int[] expectedResult)
+    public void FindErrorNums_WithDuplicateAndMissingNumberInArray_ReturnsDuplicatedAndMissingNumbers(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

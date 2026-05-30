@@ -18,8 +18,7 @@ public abstract class NumberOfStudentsUnableToEatLunchTestsBase<T> where T : INu
     [TestMethod]
     [DataRow(new[] { 1, 1, 0, 0 }, new[] { 0, 1, 0, 1 }, 0)]
     [DataRow(new[] { 1, 1, 1, 0, 0, 1 }, new[] { 1, 0, 0, 0, 1, 1 }, 3)]
-    public void CountStudents_WithStudentsAndSandwichesArray_ReturnsUnsatisfiedStudentsCount(int[] students,
-        int[] sandwiches, int expectedResult)
+    public void CountStudents_WithStudentsAndSandwichesArray_ReturnsUnsatisfiedStudentsCount(int[] students, int[] sandwiches, int expectedResult)
     {
         // Arrange
         var solution = new T();

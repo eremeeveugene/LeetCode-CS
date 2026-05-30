@@ -14,5 +14,4 @@ using LeetCode.Algorithms.SeparateBlackAndWhiteBalls;
 namespace LeetCode.Tests.Algorithms.SeparateBlackAndWhiteBalls;
 
 [TestClass]
-public sealed class SeparateBlackAndWhiteBallsTwoPointersTests :
-    SeparateBlackAndWhiteBallsTestsBase<SeparateBlackAndWhiteBallsTwoPointers>;
+public sealed class SeparateBlackAndWhiteBallsTwoPointersTests : SeparateBlackAndWhiteBallsTestsBase<SeparateBlackAndWhiteBallsTwoPointers>;

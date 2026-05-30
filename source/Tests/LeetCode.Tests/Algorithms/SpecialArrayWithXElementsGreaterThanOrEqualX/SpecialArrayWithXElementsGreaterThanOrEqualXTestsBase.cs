@@ -13,15 +13,13 @@ using LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX;
 
 namespace LeetCode.Tests.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX;
 
-public abstract class SpecialArrayWithXElementsGreaterThanOrEqualXTestsBase<T>
-    where T : ISpecialArrayWithXElementsGreaterThanOrEqualX, new()
+public abstract class SpecialArrayWithXElementsGreaterThanOrEqualXTestsBase<T> where T : ISpecialArrayWithXElementsGreaterThanOrEqualX, new()
 {
     [TestMethod]
     [DataRow(new[] { 3, 5 }, 2)]
     [DataRow(new[] { 0, 0 }, -1)]
     [DataRow(new[] { 0, 4, 3, 0, 4 }, 3)]
-    public void SpecialArray_WithNonNegativeIntegerArray_ReturnsXIfExactlyXElementsAreGreaterThanOrEqualToX(
-        int[] nums, int expectedResult)
+    public void SpecialArray_WithNonNegativeIntegerArray_ReturnsXIfExactlyXElementsAreGreaterThanOrEqualToX(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

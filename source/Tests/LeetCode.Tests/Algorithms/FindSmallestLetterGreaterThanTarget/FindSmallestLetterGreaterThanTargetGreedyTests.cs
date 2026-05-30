@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FindSmallestLetterGreaterThanTarget;
 namespace LeetCode.Tests.Algorithms.FindSmallestLetterGreaterThanTarget;
 
 [TestClass]
-public sealed class FindSmallestLetterGreaterThanTargetGreedyTests :
-    FindSmallestLetterGreaterThanTargetTestsBase<FindSmallestLetterGreaterThanTargetGreedy>;
+public sealed class FindSmallestLetterGreaterThanTargetGreedyTests : FindSmallestLetterGreaterThanTargetTestsBase<FindSmallestLetterGreaterThanTargetGreedy>;

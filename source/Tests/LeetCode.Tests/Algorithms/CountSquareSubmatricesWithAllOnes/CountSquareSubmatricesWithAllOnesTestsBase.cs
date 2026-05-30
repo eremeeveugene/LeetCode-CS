@@ -17,8 +17,7 @@ public abstract class CountSquareSubmatricesWithAllOnesTestsBase<T> where T : IC
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void CountSquares_WithMatrixContainingOnesAndZeros_ReturnsTotalSquareSubmatricesWithAllOnes(
-        int[][] matrix, int expectedResult)
+    public void CountSquares_WithMatrixContainingOnesAndZeros_ReturnsTotalSquareSubmatricesWithAllOnes(int[][] matrix, int expectedResult)
     {
         // Arrange
         var solution = new T();

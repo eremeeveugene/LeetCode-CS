@@ -13,13 +13,11 @@ using LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner;
 
 namespace LeetCode.Tests.Algorithms.MinimumObstacleRemovalToReachCorner;
 
-public abstract class MinimumObstacleRemovalToReachCornerTestsBase<T>
-    where T : IMinimumObstacleRemovalToReachCorner, new()
+public abstract class MinimumObstacleRemovalToReachCornerTestsBase<T> where T : IMinimumObstacleRemovalToReachCorner, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MinimumObstacles_WithStartToEndPath_ReturnsMinimumObstaclesToRemove(int[][] grid,
-        int expectedResult)
+    public void MinimumObstacles_WithStartToEndPath_ReturnsMinimumObstaclesToRemove(int[][] grid, int expectedResult)
     {
         // Arrange
         var solution = new T();

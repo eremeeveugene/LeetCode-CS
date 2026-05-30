@@ -29,8 +29,7 @@ public sealed class NumberOfStudentsUnableToEatLunchQueue : INumberOfStudentsUna
 
         var count = 0;
 
-        while (studentsQueue.Count > 0 && sandwichesIndex < sandwiches.Length &&
-               count < sandwiches.Length - sandwichesIndex)
+        while (studentsQueue.Count > 0 && sandwichesIndex < sandwiches.Length && count < sandwiches.Length - sandwichesIndex)
         {
             var student = studentsQueue.Dequeue();
             var sandwich = sandwiches[sandwichesIndex];

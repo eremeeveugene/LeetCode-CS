@@ -14,5 +14,4 @@ using LeetCode.Algorithms.BestTimeToBuyAndSellStock5;
 namespace LeetCode.Tests.Algorithms.BestTimeToBuyAndSellStock5;
 
 [TestClass]
-public sealed class BestTimeToBuyAndSellStock5DynamicProgrammingTests :
-    BestTimeToBuyAndSellStock5TestsBase<BestTimeToBuyAndSellStock5DynamicProgramming>;
+public sealed class BestTimeToBuyAndSellStock5DynamicProgrammingTests : BestTimeToBuyAndSellStock5TestsBase<BestTimeToBuyAndSellStock5DynamicProgramming>;

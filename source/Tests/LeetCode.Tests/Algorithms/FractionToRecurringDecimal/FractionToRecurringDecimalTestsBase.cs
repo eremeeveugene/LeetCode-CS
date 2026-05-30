@@ -19,8 +19,7 @@ public abstract class FractionToRecurringDecimalTestsBase<T> where T : IFraction
     [DataRow(1, 2, "0.5")]
     [DataRow(2, 1, "2")]
     [DataRow(4, 333, "0.(012)")]
-    public void FractionToDecimal_WithNumeratorAndDenominator_ReturnsTheFractionInStringFormat(
-        int numerator, int denominator, string expectedResult)
+    public void FractionToDecimal_WithNumeratorAndDenominator_ReturnsTheFractionInStringFormat(int numerator, int denominator, string expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -23,12 +23,8 @@ public abstract class DesignFrontMiddleBackQueueTestsBase<T> where T : IDesignFr
     private const string PopBack = "popBack";
 
     [TestMethod]
-    [DataRow(
-        new[] { "pushFront", "pushBack", "pushMiddle", "pushMiddle", "popFront", "popMiddle", "popMiddle", "popBack", "popFront" },
-        new[] { 1, 2, 3, 4, 0, 0, 0, 0, 0 },
-        new[] { 1, 3, 4, 2, -1 })]
-    public void DesignFrontMiddleBackQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        string[] operations, int[] arguments, int[] expectedResult)
+    [DataRow(new[] { "pushFront", "pushBack", "pushMiddle", "pushMiddle", "popFront", "popMiddle", "popMiddle", "popBack", "popFront" }, new[] { 1, 2, 3, 4, 0, 0, 0, 0, 0 }, new[] { 1, 3, 4, 2, -1 })]
+    public void DesignFrontMiddleBackQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(string[] operations, int[] arguments, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MatrixDiagonalSum;
 namespace LeetCode.Tests.Algorithms.MatrixDiagonalSum;
 
 [TestClass]
-public sealed class MatrixDiagonalSumIterativeTests :
-    MatrixDiagonalSumTestsBase<MatrixDiagonalSumIterative>;
+public sealed class MatrixDiagonalSumIterativeTests : MatrixDiagonalSumTestsBase<MatrixDiagonalSumIterative>;

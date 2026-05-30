@@ -18,8 +18,7 @@ public abstract class SimpleBankSystemTestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void SimpleBankSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        BankSystemScenario scenario)
+    public void SimpleBankSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(BankSystemScenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -47,88 +46,20 @@ public abstract class SimpleBankSystemTestsBase
 
     private static IEnumerable<BankSystemScenario[]> GetScenarios()
     {
-        yield return
-        [
-            new BankSystemScenario([10, 100, 20, 50, 30],
-                [
-                    new WithdrawOperation(3, 10),
-                    new TransferOperation(5, 1, 20),
-                    new DepositOperation(5, 20),
-                    new TransferOperation(3, 4, 15),
-                    new WithdrawOperation(5, 50)
-                ],
-                [
-                    new WithdrawOperation.Result(true),
-                    new TransferOperation.Result(true),
-                    new DepositOperation.Result(true),
-                    new TransferOperation.Result(false),
-                    new WithdrawOperation.Result(false)
-                ])
-        ];
+        yield return [new BankSystemScenario([10, 100, 20, 50, 30], [new WithdrawOperation(3, 10), new TransferOperation(5, 1, 20), new DepositOperation(5, 20), new TransferOperation(3, 4, 15), new WithdrawOperation(5, 50)], [new WithdrawOperation.Result(true), new TransferOperation.Result(true), new DepositOperation.Result(true), new TransferOperation.Result(false), new WithdrawOperation.Result(false)])];
 
-        yield return
-        [
-            new BankSystemScenario([50],
-                [
-                    new WithdrawOperation(1, 100),
-                    new WithdrawOperation(1, 50)
-                ],
-                [
-                    new WithdrawOperation.Result(false),
-                    new WithdrawOperation.Result(true)
-                ])
-        ];
+        yield return [new BankSystemScenario([50], [new WithdrawOperation(1, 100), new WithdrawOperation(1, 50)], [new WithdrawOperation.Result(false), new WithdrawOperation.Result(true)])];
 
-        yield return
-        [
-            new BankSystemScenario([10, 20],
-                [
-                    new TransferOperation(1, 2, 50),
-                    new TransferOperation(2, 1, 10)
-                ],
-                [
-                    new TransferOperation.Result(false),
-                    new TransferOperation.Result(true)
-                ])
-        ];
+        yield return [new BankSystemScenario([10, 20], [new TransferOperation(1, 2, 50), new TransferOperation(2, 1, 10)], [new TransferOperation.Result(false), new TransferOperation.Result(true)])];
 
-        yield return
-        [
-            new BankSystemScenario([10],
-                [
-                    new WithdrawOperation(1, 50),
-                    new DepositOperation(1, 100),
-                    new WithdrawOperation(1, 50)
-                ],
-                [
-                    new WithdrawOperation.Result(false),
-                    new DepositOperation.Result(true),
-                    new WithdrawOperation.Result(true)
-                ])
-        ];
+        yield return [new BankSystemScenario([10], [new WithdrawOperation(1, 50), new DepositOperation(1, 100), new WithdrawOperation(1, 50)], [new WithdrawOperation.Result(false), new DepositOperation.Result(true), new WithdrawOperation.Result(true)])];
 
-        yield return
-        [
-            new BankSystemScenario([100, 200],
-                [
-                    new WithdrawOperation(3, 10),
-                    new DepositOperation(1, 10),
-                    new TransferOperation(1, 3, 10)
-                ],
-                [
-                    new WithdrawOperation.Result(false),
-                    new DepositOperation.Result(true),
-                    new TransferOperation.Result(false)
-                ])
-        ];
+        yield return [new BankSystemScenario([100, 200], [new WithdrawOperation(3, 10), new DepositOperation(1, 10), new TransferOperation(1, 3, 10)], [new WithdrawOperation.Result(false), new DepositOperation.Result(true), new TransferOperation.Result(false)])];
     }
 
     public sealed class BankSystemScenario : IScenario<ISimpleBankSystem>
     {
-        public BankSystemScenario(
-            long[] balance,
-            IOperation<ISimpleBankSystem>[] operations,
-            IOperationResult[] operationResults)
+        public BankSystemScenario(long[] balance, IOperation<ISimpleBankSystem>[] operations, IOperationResult[] operationResults)
         {
             Balance = balance;
             Operations = operations;
@@ -162,7 +93,9 @@ public abstract class SimpleBankSystemTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _success;
 
@@ -206,7 +139,9 @@ public abstract class SimpleBankSystemTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _success;
 
@@ -250,7 +185,9 @@ public abstract class SimpleBankSystemTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _success;
 

@@ -18,8 +18,7 @@ public abstract class ModifyGraphEdgeWeightsTestsBase<T> where T : IModifyGraphE
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void ModifiedGraphEdges_WithGivenParameters_ReturnsModifiedEdges(int n, int[][] edges, int source,
-        int destination, int target, int[][] expectedResult)
+    public void ModifiedGraphEdges_WithGivenParameters_ReturnsModifiedEdges(int n, int[][] edges, int source, int destination, int target, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();

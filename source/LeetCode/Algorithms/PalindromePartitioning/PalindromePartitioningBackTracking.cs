@@ -29,8 +29,7 @@ public sealed class PalindromePartitioningBackTracking : IPalindromePartitioning
         return result;
     }
 
-    private static void Backtrack(string s, int start, IList<string> currentPartition,
-        ICollection<IList<string>> result)
+    private static void Backtrack(string s, int start, IList<string> currentPartition, ICollection<IList<string>> result)
     {
         if (start >= s.Length)
         {

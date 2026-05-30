@@ -17,8 +17,7 @@ public abstract class MatrixSimilarityAfterCyclicShiftsTestsBase<T> where T : IM
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void AreSimilar_WithMatrixAndShiftCount_ReturnsTrueIfMatrixRemainsUnchanged(int[][] mat, int k,
-        bool expectedResult)
+    public void AreSimilar_WithMatrixAndShiftCount_ReturnsTrueIfMatrixRemainsUnchanged(int[][] mat, int k, bool expectedResult)
     {
         // Arrange
         var solution = new T();

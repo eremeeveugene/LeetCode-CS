@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ZeroArrayTransformation1;
 namespace LeetCode.Tests.Algorithms.ZeroArrayTransformation1;
 
 [TestClass]
-public sealed class ZeroArrayTransformation1PrefixSumTests :
-    ZeroArrayTransformation1TestsBase<ZeroArrayTransformation1PrefixSum>;
+public sealed class ZeroArrayTransformation1PrefixSumTests : ZeroArrayTransformation1TestsBase<ZeroArrayTransformation1PrefixSum>;

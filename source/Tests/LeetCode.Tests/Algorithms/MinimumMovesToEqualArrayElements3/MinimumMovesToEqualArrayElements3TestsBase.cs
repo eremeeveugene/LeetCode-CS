@@ -18,8 +18,7 @@ public abstract class MinimumMovesToEqualArrayElements3TestsBase<T> where T : IM
     [TestMethod]
     [DataRow(new[] { 2, 1, 3 }, 3)]
     [DataRow(new[] { 4, 4, 5 }, 2)]
-    public void MinMoves_WithNumsArray_ReturnsMinimumMovesToEqualArrayElements(int[] nums,
-        int expectedResult)
+    public void MinMoves_WithNumsArray_ReturnsMinimumMovesToEqualArrayElements(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

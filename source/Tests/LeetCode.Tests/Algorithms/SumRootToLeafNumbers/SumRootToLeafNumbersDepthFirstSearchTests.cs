@@ -14,5 +14,4 @@ using LeetCode.Algorithms.SumRootToLeafNumbers;
 namespace LeetCode.Tests.Algorithms.SumRootToLeafNumbers;
 
 [TestClass]
-public sealed class SumRootToLeafNumbersDepthFirstSearchTests :
-    SumRootToLeafNumbersTestsBase<SumRootToLeafNumbersDepthFirstSearch>;
+public sealed class SumRootToLeafNumbersDepthFirstSearchTests : SumRootToLeafNumbersTestsBase<SumRootToLeafNumbersDepthFirstSearch>;

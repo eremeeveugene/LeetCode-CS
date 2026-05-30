@@ -18,8 +18,7 @@ public abstract class NumberOfGoodLeafNodesPairsTestsBase<T> where T : INumberOf
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void CountPairs_WithBinaryTreeAndDistance_ReturnsNumberOfGoodLeafPairs(int?[] rootArray, int distance,
-        int expectedResult)
+    public void CountPairs_WithBinaryTreeAndDistance_ReturnsNumberOfGoodLeafPairs(int?[] rootArray, int distance, int expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);

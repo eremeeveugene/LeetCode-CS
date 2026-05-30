@@ -18,8 +18,7 @@ public abstract class CountHillsAndValleysInAnArrayTestsBase<T> where T : ICount
     [TestMethod]
     [DataRow(new[] { 2, 4, 1, 1, 6, 5 }, 3)]
     [DataRow(new[] { 6, 6, 5, 5, 4, 1 }, 0)]
-    public void CountHillValley_WithArrayContainingHillsAndValleys_ReturnsTotalHillValleyCount(int[] nums,
-        int expectedResult)
+    public void CountHillValley_WithArrayContainingHillsAndValleys_ReturnsTotalHillValleyCount(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

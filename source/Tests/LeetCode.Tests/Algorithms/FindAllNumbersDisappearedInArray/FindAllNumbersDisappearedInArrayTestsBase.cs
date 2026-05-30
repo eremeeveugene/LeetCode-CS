@@ -18,8 +18,7 @@ public abstract class FindAllNumbersDisappearedInArrayTestsBase<T> where T : IFi
     [TestMethod]
     [DataRow(new[] { 4, 3, 2, 7, 8, 2, 3, 1 }, new[] { 5, 6 })]
     [DataRow(new[] { 1, 1 }, new[] { 2 })]
-    public void FindDisappearedNumbers_WithInputArrayContainingDuplicates_ReturnsMissingNumbers(int[] nums,
-        int[] expectedResult)
+    public void FindDisappearedNumbers_WithInputArrayContainingDuplicates_ReturnsMissingNumbers(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

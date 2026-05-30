@@ -19,8 +19,7 @@ public abstract class FindPivotIndexTestsBase<T> where T : IFindPivotIndex, new(
     [DataRow(new[] { 2, 3, -1, 8, 4 }, 3)]
     [DataRow(new[] { 1, -1, 4 }, 2)]
     [DataRow(new[] { 2, 5 }, -1)]
-    public void PivotIndex_WithIntegerArray_ReturnsIndexWhereLeftAndRightSumsAreEqualOrMinusOne(int[] nums,
-        int expectedResult)
+    public void PivotIndex_WithIntegerArray_ReturnsIndexWhereLeftAndRightSumsAreEqualOrMinusOne(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

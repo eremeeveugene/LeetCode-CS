@@ -24,11 +24,8 @@ public abstract class FindCommonCharactersTestsBase<T> where T : IFindCommonChar
     [DataRow(new[] { "abc", "def", "ghi" }, new string[] { })]
     [DataRow(new[] { "a" }, new[] { "a" })]
     [DataRow(new[] { "abc", "abc", "abc" }, new[] { "a", "b", "c" })]
-    [DataRow(
-        new[] { "daaccccd", "adacbdda", "abddbaba", "bacbcbcb", "bdaaaddc", "cdadacba", "bacbdcda", "bacdaacd" },
-        new[] { "a" })]
-    public void CommonChars_WithGivenWordsArray_ReturnsCommonCharacters(string[] words,
-        string[] expectedResult)
+    [DataRow(new[] { "daaccccd", "adacbdda", "abddbaba", "bacbcbcb", "bdaaaddc", "cdadacba", "bacbdcda", "bacdaacd" }, new[] { "a" })]
+    public void CommonChars_WithGivenWordsArray_ReturnsCommonCharacters(string[] words, string[] expectedResult)
     {
         // Arrange
         var solution = new T();

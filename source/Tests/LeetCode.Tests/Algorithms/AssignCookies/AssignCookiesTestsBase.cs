@@ -18,8 +18,7 @@ public abstract class AssignCookiesTestsBase<T> where T : IAssignCookies, new()
     [TestMethod]
     [DataRow(new[] { 1, 2, 3 }, new[] { 1 }, 1)]
     [DataRow(new[] { 1, 2 }, new[] { 1, 2, 3 }, 2)]
-    public void FindContentChildren_WithGivenGreedyAndSizeArrays_ReturnsMaxSatisfiedChildren(int[] g,
-        int[] s, int expectedResult)
+    public void FindContentChildren_WithGivenGreedyAndSizeArrays_ReturnsMaxSatisfiedChildren(int[] g, int[] s, int expectedResult)
     {
         // Arrange
         var solution = new T();

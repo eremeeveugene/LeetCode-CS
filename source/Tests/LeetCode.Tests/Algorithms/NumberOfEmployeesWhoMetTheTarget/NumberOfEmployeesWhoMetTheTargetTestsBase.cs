@@ -27,8 +27,7 @@ public abstract class NumberOfEmployeesWhoMetTheTargetTestsBase<T> where T : INu
     [DataRow(new[] { 2, 2, 2, 2 }, 2, 4)]
     [DataRow(new[] { 100 }, 50, 1)]
     [DataRow(new[] { 49 }, 50, 0)]
-    public void NumberOfEmployeesWhoMetTarget_WithEmployeeHoursAndTarget_ReturnsCountOfEmployeesMeetingTarget(
-        int[] hours, int target, int expectedResult)
+    public void NumberOfEmployeesWhoMetTarget_WithEmployeeHoursAndTarget_ReturnsCountOfEmployeesMeetingTarget(int[] hours, int target, int expectedResult)
     {
         // Arrange
         var solution = new T();

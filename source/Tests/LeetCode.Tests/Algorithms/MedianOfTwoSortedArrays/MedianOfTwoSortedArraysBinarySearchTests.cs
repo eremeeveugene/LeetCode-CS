@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MedianOfTwoSortedArrays;
 namespace LeetCode.Tests.Algorithms.MedianOfTwoSortedArrays;
 
 [TestClass]
-public class MedianOfTwoSortedArraysBinarySearchTests :
-    MedianOfTwoSortedArraysTestsBase<MedianOfTwoSortedArraysBinarySearch>;
+public class MedianOfTwoSortedArraysBinarySearchTests : MedianOfTwoSortedArraysTestsBase<MedianOfTwoSortedArraysBinarySearch>;

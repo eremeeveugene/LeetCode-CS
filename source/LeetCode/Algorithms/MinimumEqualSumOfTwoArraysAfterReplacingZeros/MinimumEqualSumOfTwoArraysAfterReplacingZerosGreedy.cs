@@ -55,8 +55,7 @@ public sealed class MinimumEqualSumOfTwoArraysAfterReplacingZerosGreedy : IMinim
             }
         }
 
-        if ((nums2Sum > nums1Sum && nums1ZeroCount == 0) ||
-            (nums1Sum > nums2Sum && nums2ZeroCount == 0))
+        if ((nums2Sum > nums1Sum && nums1ZeroCount == 0) || (nums1Sum > nums2Sum && nums2ZeroCount == 0))
         {
             return -1;
         }

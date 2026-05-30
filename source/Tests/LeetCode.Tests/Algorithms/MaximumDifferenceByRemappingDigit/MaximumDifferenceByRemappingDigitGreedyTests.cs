@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumDifferenceByRemappingDigit;
 namespace LeetCode.Tests.Algorithms.MaximumDifferenceByRemappingDigit;
 
 [TestClass]
-public class MaximumDifferenceByRemappingDigitGreedyTests :
-    MaximumDifferenceByRemappingDigitTestsBase<MaximumDifferenceByRemappingDigitGreedy>;
+public class MaximumDifferenceByRemappingDigitGreedyTests : MaximumDifferenceByRemappingDigitTestsBase<MaximumDifferenceByRemappingDigitGreedy>;

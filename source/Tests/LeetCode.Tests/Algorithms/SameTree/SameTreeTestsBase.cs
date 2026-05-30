@@ -18,8 +18,7 @@ public abstract class SameTreeTestsBase<T> where T : ISameTree, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void IsSameTree_WithTwoBinaryTrees_ReturnsTrueIfIdenticalOtherwiseFalse(int?[] pArray,
-        int?[] qArray, bool expectedResult)
+    public void IsSameTree_WithTwoBinaryTrees_ReturnsTrueIfIdenticalOtherwiseFalse(int?[] pArray, int?[] qArray, bool expectedResult)
     {
         // Arrange
         var p = TreeNode.ToTreeNode(pArray);

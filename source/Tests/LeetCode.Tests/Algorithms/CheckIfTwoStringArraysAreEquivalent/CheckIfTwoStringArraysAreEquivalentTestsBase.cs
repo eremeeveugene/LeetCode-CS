@@ -13,8 +13,7 @@ using LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent;
 
 namespace LeetCode.Tests.Algorithms.CheckIfTwoStringArraysAreEquivalent;
 
-public abstract class CheckIfTwoStringArraysAreEquivalentTestsBase<T>
-    where T : ICheckIfTwoStringArraysAreEquivalent, new()
+public abstract class CheckIfTwoStringArraysAreEquivalentTestsBase<T> where T : ICheckIfTwoStringArraysAreEquivalent, new()
 {
     [TestMethod]
     [DataRow(new[] { "ab", "c" }, new[] { "a", "bc" }, true)]
@@ -24,8 +23,7 @@ public abstract class CheckIfTwoStringArraysAreEquivalentTestsBase<T>
     [DataRow(new[] { "a", "b", "c" }, new[] { "abc" }, true)]
     [DataRow(new[] { "abc" }, new[] { "a", "b", "c" }, true)]
     [DataRow(new[] { "abc" }, new[] { "ab", "d" }, false)]
-    public void ArrayStringsAreEqual_GivenTwoStringArrays_ReturnsBooleanIndicatingEquality(string[] word1,
-        string[] word2, bool expectedResult)
+    public void ArrayStringsAreEqual_GivenTwoStringArrays_ReturnsBooleanIndicatingEquality(string[] word1, string[] word2, bool expectedResult)
     {
         // Arrange
         var solution = new T();

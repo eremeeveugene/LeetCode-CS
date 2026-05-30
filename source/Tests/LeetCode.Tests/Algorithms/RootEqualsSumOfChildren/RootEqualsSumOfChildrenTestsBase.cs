@@ -18,8 +18,7 @@ public abstract class RootEqualsSumOfChildrenTestsBase<T> where T : IRootEqualsS
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void CheckTree_WithThreeNodeTree_ReturnsIfRootValueEqualsSumOfChildren(int?[] rootArray,
-        bool expectedResult)
+    public void CheckTree_WithThreeNodeTree_ReturnsIfRootValueEqualsSumOfChildren(int?[] rootArray, bool expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);

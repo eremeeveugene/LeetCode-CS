@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumNumberOfEventsThatCanBeAttended;
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfEventsThatCanBeAttended;
 
 [TestClass]
-public class MaximumNumberOfEventsThatCanBeAttendedPriorityQueueTests :
-    MaximumNumberOfEventsThatCanBeAttendedTestsBase<MaximumNumberOfEventsThatCanBeAttendedPriorityQueue>;
+public class MaximumNumberOfEventsThatCanBeAttendedPriorityQueueTests : MaximumNumberOfEventsThatCanBeAttendedTestsBase<MaximumNumberOfEventsThatCanBeAttendedPriorityQueue>;

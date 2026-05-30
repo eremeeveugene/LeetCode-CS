@@ -13,16 +13,14 @@ using LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative;
 
 namespace LeetCode.Tests.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative;
 
-public abstract class LargestPositiveIntegerThatExistsWithItsNegativeTestsBase<T>
-    where T : ILargestPositiveIntegerThatExistsWithItsNegative, new()
+public abstract class LargestPositiveIntegerThatExistsWithItsNegativeTestsBase<T> where T : ILargestPositiveIntegerThatExistsWithItsNegative, new()
 {
     [TestMethod]
     [DataRow(new[] { 1 }, -1)]
     [DataRow(new[] { -1, 2, -3, 3 }, 3)]
     [DataRow(new[] { -1, 10, 6, 7, -7, 1 }, 7)]
     [DataRow(new[] { -10, 8, 6, 7, -2, -3 }, -1)]
-    public void FindMaxK_WithIntegerArray_ReturnsLargestKWhereBothKAndNegativeKExist(int[] nums,
-        int expectedResult)
+    public void FindMaxK_WithIntegerArray_ReturnsLargestKWhereBothKAndNegativeKExist(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

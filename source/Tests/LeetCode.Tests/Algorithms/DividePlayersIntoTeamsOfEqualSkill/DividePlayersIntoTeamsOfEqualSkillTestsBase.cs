@@ -13,8 +13,7 @@ using LeetCode.Algorithms.DividePlayersIntoTeamsOfEqualSkill;
 
 namespace LeetCode.Tests.Algorithms.DividePlayersIntoTeamsOfEqualSkill;
 
-public abstract class DividePlayersIntoTeamsOfEqualSkillTestsBase<T>
-    where T : IDividePlayersIntoTeamsOfEqualSkill, new()
+public abstract class DividePlayersIntoTeamsOfEqualSkillTestsBase<T> where T : IDividePlayersIntoTeamsOfEqualSkill, new()
 {
     [TestMethod]
     [DataRow(new[] { 3, 2, 5, 1, 3, 4 }, 22L)]

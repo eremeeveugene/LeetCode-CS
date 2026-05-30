@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumNumberOfIntegersToChooseFromRange1;
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfIntegersToChooseFromRange1;
 
 [TestClass]
-public class MaximumNumberOfIntegersToChooseFromRange1HashSetTests :
-    MaximumNumberOfIntegersToChooseFromRange1TestsBase<MaximumNumberOfIntegersToChooseFromRange1HashSet>;
+public class MaximumNumberOfIntegersToChooseFromRange1HashSetTests : MaximumNumberOfIntegersToChooseFromRange1TestsBase<MaximumNumberOfIntegersToChooseFromRange1HashSet>;

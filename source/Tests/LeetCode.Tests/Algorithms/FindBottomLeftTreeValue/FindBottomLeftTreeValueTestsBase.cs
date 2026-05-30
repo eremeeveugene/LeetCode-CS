@@ -18,8 +18,7 @@ public abstract class FindBottomLeftTreeValueTestsBase<T> where T : IFindBottomL
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FindBottomLeftValue_GivenBinaryTreeJson_ReturnsBottomLeftValue(int?[] arrayRoot,
-        int expectedResult)
+    public void FindBottomLeftValue_GivenBinaryTreeJson_ReturnsBottomLeftValue(int?[] arrayRoot, int expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(arrayRoot);
@@ -43,9 +42,6 @@ public abstract class FindBottomLeftTreeValueTestsBase<T> where T : IFindBottomL
 
         yield return [new int?[] { 1, null, 1 }, 1];
 
-        yield return
-        [
-            new int?[] { 1, 2, 3, 4, null, 5, 6, null, null, 7, null, 8, 9, null, null, null, null, null, 10 }, 10
-        ];
+        yield return [new int?[] { 1, 2, 3, 4, null, 5, 6, null, null, 7, null, 8, 9, null, null, null, null, null, 10 }, 10];
     }
 }

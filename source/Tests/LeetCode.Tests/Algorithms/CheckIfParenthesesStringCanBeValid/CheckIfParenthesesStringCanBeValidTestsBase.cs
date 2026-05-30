@@ -13,16 +13,14 @@ using LeetCode.Algorithms.CheckIfParenthesesStringCanBeValid;
 
 namespace LeetCode.Tests.Algorithms.CheckIfParenthesesStringCanBeValid;
 
-public abstract class CheckIfParenthesesStringCanBeValidTestsBase<T>
-    where T : ICheckIfParenthesesStringCanBeValid, new()
+public abstract class CheckIfParenthesesStringCanBeValidTestsBase<T> where T : ICheckIfParenthesesStringCanBeValid, new()
 {
     [TestMethod]
     [DataRow("))()))", "010100", true)]
     [DataRow("()()", "0000", true)]
     [DataRow(")", "0", false)]
     [DataRow("((()(()()))()((()()))))()((()(()", "10111100100101001110100010001001", true)]
-    public void CanBeValid_WithStringAndLocked_ReturnsWhetherParenthesesCanBeValid(string s, string locked,
-        bool expectedResult)
+    public void CanBeValid_WithStringAndLocked_ReturnsWhetherParenthesesCanBeValid(string s, string locked, bool expectedResult)
     {
         // Arrange
         var solution = new T();

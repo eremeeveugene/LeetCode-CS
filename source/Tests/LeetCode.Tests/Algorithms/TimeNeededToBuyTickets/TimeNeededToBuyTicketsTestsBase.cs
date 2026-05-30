@@ -22,11 +22,8 @@ public abstract class TimeNeededToBuyTicketsTestsBase<T> where T : ITimeNeededTo
     [DataRow(new[] { 84, 49, 5, 24, 70, 77, 87, 8 }, 3, 154)]
     [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 }, 4, 51)]
     [DataRow(new[] { 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 }, 4, 95)]
-    [DataRow(
-        new[] { 15, 66, 3, 47, 71, 27, 54, 43, 97, 34, 94, 33, 54, 26, 15, 52, 20, 71, 88, 42, 50, 6, 66, 88, 36, 99, 27, 82, 7, 72 },
-        18, 1457)]
-    public void TimeRequiredToBuy_WithTicketsArrayAndTargetIndex_ReturnsTotalTimeForKthPersonToFinish(
-        int[] tickets, int k, int expectedResult)
+    [DataRow(new[] { 15, 66, 3, 47, 71, 27, 54, 43, 97, 34, 94, 33, 54, 26, 15, 52, 20, 71, 88, 42, 50, 6, 66, 88, 36, 99, 27, 82, 7, 72 }, 18, 1457)]
+    public void TimeRequiredToBuy_WithTicketsArrayAndTargetIndex_ReturnsTotalTimeForKthPersonToFinish(int[] tickets, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

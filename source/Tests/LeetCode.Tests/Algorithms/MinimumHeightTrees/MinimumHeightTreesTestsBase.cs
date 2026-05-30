@@ -17,8 +17,7 @@ public abstract class MinimumHeightTreesTestsBase<T> where T : IMinimumHeightTre
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FindMinHeightTrees_WithGraphEdgesAndNodeCount_ReturnsMinHeightRoots(int n, int[][] edges,
-        int[] expectedResult)
+    public void FindMinHeightTrees_WithGraphEdgesAndNodeCount_ReturnsMinHeightRoots(int n, int[][] edges, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

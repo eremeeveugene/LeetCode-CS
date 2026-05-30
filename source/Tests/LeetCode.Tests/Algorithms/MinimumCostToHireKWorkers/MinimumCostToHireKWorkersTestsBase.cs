@@ -21,8 +21,7 @@ public abstract class MinimumCostToHireKWorkersTestsBase<T> where T : IMinimumCo
     [DataRow(new[] { 3, 1, 10, 10, 1 }, new[] { 4, 8, 2, 2, 7 }, 3, 30.66667)]
     [DataRow(new[] { 3, 5, 8, 10, 9, 5, 1, 2, 4, 1 }, new[] { 8, 8, 6, 9, 5, 6, 8, 7, 5, 8 }, 3, 21.25)]
     [DataRow(new[] { 5, 7, 4, 2, 6, 5, 10, 9, 4, 2 }, new[] { 10, 10, 3, 7, 3, 7, 6, 2, 6, 4 }, 3, 14.25)]
-    public void MincostToHireWorkers_GivenQualityAndWageArraysAndK_ReturnsMinimumCostWithPrecision(
-        int[] quality, int[] wage, int k, double expectedResult)
+    public void MincostToHireWorkers_GivenQualityAndWageArraysAndK_ReturnsMinimumCostWithPrecision(int[] quality, int[] wage, int k, double expectedResult)
     {
         // Arrange
         var solution = new T();

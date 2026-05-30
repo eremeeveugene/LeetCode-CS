@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MergeStringsAlternately;
 namespace LeetCode.Tests.Algorithms.MergeStringsAlternately;
 
 [TestClass]
-public class MergeStringsAlternatelyOnePointerTests :
-    MergeStringsAlternatelyTestsBase<MergeStringsAlternatelyOnePointer>;
+public class MergeStringsAlternatelyOnePointerTests : MergeStringsAlternatelyTestsBase<MergeStringsAlternatelyOnePointer>;

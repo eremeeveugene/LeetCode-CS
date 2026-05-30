@@ -19,8 +19,7 @@ public abstract class SumOfAllOddLengthSubarraysTestsBase<T> where T : ISumOfAll
     [DataRow(new[] { 1, 2 }, 3)]
     [DataRow(new[] { 1, 4, 2, 5, 3 }, 58)]
     [DataRow(new[] { 10, 11, 12 }, 66)]
-    public void SumOddLengthSubarrays_WithIntegersArray_ReturnsSumOfAllOddLengthSubarrays(int[] arr,
-        int expectedResult)
+    public void SumOddLengthSubarrays_WithIntegersArray_ReturnsSumOfAllOddLengthSubarrays(int[] arr, int expectedResult)
     {
         // Arrange
         var solution = new T();

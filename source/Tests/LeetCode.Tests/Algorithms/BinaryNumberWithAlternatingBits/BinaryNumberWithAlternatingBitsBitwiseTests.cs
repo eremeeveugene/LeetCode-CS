@@ -14,5 +14,4 @@ using LeetCode.Algorithms.BinaryNumberWithAlternatingBits;
 namespace LeetCode.Tests.Algorithms.BinaryNumberWithAlternatingBits;
 
 [TestClass]
-public sealed class BinaryNumberWithAlternatingBitsBitwiseTests :
-    BinaryNumberWithAlternatingBitsTestsBase<BinaryNumberWithAlternatingBitsBitwise>;
+public sealed class BinaryNumberWithAlternatingBitsBitwiseTests : BinaryNumberWithAlternatingBitsTestsBase<BinaryNumberWithAlternatingBitsBitwise>;

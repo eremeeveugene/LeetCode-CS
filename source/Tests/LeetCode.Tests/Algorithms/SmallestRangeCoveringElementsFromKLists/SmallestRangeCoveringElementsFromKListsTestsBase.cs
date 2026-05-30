@@ -13,13 +13,11 @@ using LeetCode.Algorithms.SmallestRangeCoveringElementsFromKLists;
 
 namespace LeetCode.Tests.Algorithms.SmallestRangeCoveringElementsFromKLists;
 
-public abstract class SmallestRangeCoveringElementsFromKListsTestsBase<T>
-    where T : ISmallestRangeCoveringElementsFromKLists, new()
+public abstract class SmallestRangeCoveringElementsFromKListsTestsBase<T> where T : ISmallestRangeCoveringElementsFromKLists, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void SmallestRange_WithMultipleSortedLists_ReturnsMinimumRangeIncludingAtLeastOneElementFromEachList(
-        IList<IList<int>> nums, int[] expectedResult)
+    public void SmallestRange_WithMultipleSortedLists_ReturnsMinimumRangeIncludingAtLeastOneElementFromEachList(IList<IList<int>> nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

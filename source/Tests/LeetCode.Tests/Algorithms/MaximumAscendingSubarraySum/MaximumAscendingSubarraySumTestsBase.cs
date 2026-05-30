@@ -19,8 +19,7 @@ public abstract class MaximumAscendingSubarraySumTestsBase<T> where T : IMaximum
     [DataRow(new[] { 10, 20, 30, 5, 10, 50 }, 65)]
     [DataRow(new[] { 10, 20, 30, 40, 50 }, 150)]
     [DataRow(new[] { 12, 17, 15, 13, 10, 11, 12 }, 33)]
-    public void MaxAscendingSum_GivenIntegerArray_ReturnsMaxSumOfAscendingSubarray(int[] nums,
-        double expectedResult)
+    public void MaxAscendingSum_GivenIntegerArray_ReturnsMaxSumOfAscendingSubarray(int[] nums, double expectedResult)
     {
         // Arrange
         var solution = new T();

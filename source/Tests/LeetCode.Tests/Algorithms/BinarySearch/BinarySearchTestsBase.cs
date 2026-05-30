@@ -19,8 +19,7 @@ public abstract class BinarySearchTestsBase<T> where T : IBinarySearch, new()
     [DataRow(new[] { 0 }, 0, 0)]
     [DataRow(new[] { -1, 0, 3, 5, 9, 12 }, 9, 4)]
     [DataRow(new[] { -1, 0, 3, 5, 9, 12 }, 2, -1)]
-    public void Search_WithSortedArrayAndTarget_ReturnsTargetIndexOrMinusOne(int[] nums, int target,
-        int expectedResult)
+    public void Search_WithSortedArrayAndTarget_ReturnsTargetIndexOrMinusOne(int[] nums, int target, int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -18,8 +18,7 @@ public abstract class MinimumNumberGameTestsBase<T> where T : IMinimumNumberGame
     [TestMethod]
     [DataRow(new[] { 5, 4, 2, 3 }, new[] { 3, 2, 5, 4 })]
     [DataRow(new[] { 2, 5 }, new[] { 5, 2 })]
-    public void NumberGame_WithEvenLengthArray_ReturnsArrayConstructedFromAlternatingMinSelections(int[] cost,
-        int[] expectedResult)
+    public void NumberGame_WithEvenLengthArray_ReturnsArrayConstructedFromAlternatingMinSelections(int[] cost, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -19,8 +19,7 @@ public abstract class TwoOutOfThreeTestsBase<T> where T : ITwoOutOfThree, new()
     [DataRow(new[] { 1, 1, 3, 2 }, new[] { 2, 3 }, new[] { 3 }, new[] { 3, 2 })]
     [DataRow(new[] { 3, 1 }, new[] { 2, 3 }, new[] { 1, 2 }, new[] { 2, 3, 1 })]
     [DataRow(new[] { 1, 2, 2 }, new[] { 4, 3, 3 }, new[] { 5 }, new int[] { })]
-    public void TwoOutOfThree_WithThreeIntegerArrays_ReturnsValuesPresentInAtLeastTwoArrays(int[] nums1,
-        int[] nums2, int[] nums3, int[] expectedResult)
+    public void TwoOutOfThree_WithThreeIntegerArrays_ReturnsValuesPresentInAtLeastTwoArrays(int[] nums1, int[] nums2, int[] nums3, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

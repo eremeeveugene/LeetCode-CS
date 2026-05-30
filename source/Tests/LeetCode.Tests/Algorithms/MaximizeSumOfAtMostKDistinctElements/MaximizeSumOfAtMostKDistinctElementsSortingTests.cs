@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximizeSumOfAtMostKDistinctElements;
 namespace LeetCode.Tests.Algorithms.MaximizeSumOfAtMostKDistinctElements;
 
 [TestClass]
-public sealed class MaximizeSumOfAtMostKDistinctElementsSortingTests :
-    MaximizeSumOfAtMostKDistinctElementsTestsBase<MaximizeSumOfAtMostKDistinctElementsSorting>;
+public sealed class MaximizeSumOfAtMostKDistinctElementsSortingTests : MaximizeSumOfAtMostKDistinctElementsTestsBase<MaximizeSumOfAtMostKDistinctElementsSorting>;

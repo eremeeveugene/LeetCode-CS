@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimizeMaximumPairSumInArray;
 namespace LeetCode.Tests.Algorithms.MinimizeMaximumPairSumInArray;
 
 [TestClass]
-public sealed class MinimizeMaximumPairSumInArrayCountingTests :
-    MinimizeMaximumPairSumInArrayTestsBase<MinimizeMaximumPairSumInArrayCounting>;
+public sealed class MinimizeMaximumPairSumInArrayCountingTests : MinimizeMaximumPairSumInArrayTestsBase<MinimizeMaximumPairSumInArrayCounting>;

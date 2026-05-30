@@ -13,8 +13,7 @@ using LeetCode.Algorithms.SmallestIndexWithDigitSumEqualToIndex;
 
 namespace LeetCode.Tests.Algorithms.SmallestIndexWithDigitSumEqualToIndex;
 
-public abstract class SmallestIndexWithDigitSumEqualToIndexTestsBase<T>
-    where T : ISmallestIndexWithDigitSumEqualToIndex, new()
+public abstract class SmallestIndexWithDigitSumEqualToIndexTestsBase<T> where T : ISmallestIndexWithDigitSumEqualToIndex, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 3, 2 }, 2)]

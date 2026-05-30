@@ -19,8 +19,7 @@ public abstract class RangeSumOfSortedSubarraySumsTestsBase<T> where T : IRangeS
     [DataRow(new[] { 1, 2, 3, 4 }, 4, 1, 5, 13)]
     [DataRow(new[] { 1, 2, 3, 4 }, 4, 3, 4, 6)]
     [DataRow(new[] { 1, 2, 3, 4 }, 4, 1, 10, 50)]
-    public void RangeSum_WithSubarraySumRange_ReturnsSumOfSortedSubarraySumsBetweenIndices(int[] nums, int n,
-        int left, int right, int expectedResult)
+    public void RangeSum_WithSubarraySumRange_ReturnsSumOfSortedSubarraySumsBetweenIndices(int[] nums, int n, int left, int right, int expectedResult)
     {
         // Arrange
         var solution = new T();

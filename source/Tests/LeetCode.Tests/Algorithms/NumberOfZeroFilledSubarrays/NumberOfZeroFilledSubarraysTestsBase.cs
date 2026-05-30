@@ -20,8 +20,7 @@ public abstract class NumberOfZeroFilledSubarraysTestsBase<T> where T : INumberO
     [DataRow(new[] { 0, 0, 0, 2, 0, 0 }, 9L)]
     [DataRow(new[] { 2, 10, 2019 }, 0L)]
     [DataRow(new[] { 0, 0, 0, 0, 0 }, 15L)]
-    public void ZeroFilledSubarray_WithNumsArray_ReturnsCountOfZeroFilledSubarrays(int[] nums,
-        long expectedResult)
+    public void ZeroFilledSubarray_WithNumsArray_ReturnsCountOfZeroFilledSubarrays(int[] nums, long expectedResult)
     {
         // Arrange
         var solution = new T();

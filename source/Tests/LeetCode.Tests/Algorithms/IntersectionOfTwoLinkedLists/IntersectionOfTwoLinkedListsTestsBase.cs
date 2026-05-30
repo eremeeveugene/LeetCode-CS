@@ -27,8 +27,7 @@ public abstract class IntersectionOfTwoLinkedListsTestsBase<T> where T : IInters
     [DataRow(new[] { 1, 2, 3 }, new int[] { }, new int[] { }, new int[] { })]
     [DataRow(new int[] { }, new int[] { }, new int[] { }, new int[] { })]
     [DataRow(new[] { 1, 2 }, new[] { 3, 4 }, new[] { 5, 6, 7 }, new[] { 5, 6, 7 })]
-    public void GetIntersectionNode_WithTwoLinkedLists_ReturnsIntersectionNode(int[] headAArray,
-        int[] headBArray, int[] intersectArray, int[] expectedResultArray)
+    public void GetIntersectionNode_WithTwoLinkedLists_ReturnsIntersectionNode(int[] headAArray, int[] headBArray, int[] intersectArray, int[] expectedResultArray)
     {
         // Arrange
         var intersect = ListNode.ToListNode(intersectArray);

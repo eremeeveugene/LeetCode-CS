@@ -19,8 +19,7 @@ public abstract class FindIfArrayCanBeSortedTestsBase<T> where T : IFindIfArrayC
     [DataRow(new[] { 8, 4, 2, 30, 15 }, true)]
     [DataRow(new[] { 1, 2, 3, 4, 5 }, true)]
     [DataRow(new[] { 3, 16, 8, 4, 2 }, false)]
-    public void CanSortArray_WithUnsortedOrSortedArray_ReturnsIfArrayCanBeSorted(int[] nums,
-        bool expectedResult)
+    public void CanSortArray_WithUnsortedOrSortedArray_ReturnsIfArrayCanBeSorted(int[] nums, bool expectedResult)
     {
         // Arrange
         var solution = new T();

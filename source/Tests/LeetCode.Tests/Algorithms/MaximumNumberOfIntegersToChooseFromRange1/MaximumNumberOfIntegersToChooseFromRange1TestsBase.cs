@@ -13,15 +13,13 @@ using LeetCode.Algorithms.MaximumNumberOfIntegersToChooseFromRange1;
 
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfIntegersToChooseFromRange1;
 
-public abstract class MaximumNumberOfIntegersToChooseFromRange1TestsBase<T>
-    where T : IMaximumNumberOfIntegersToChooseFromRange1, new()
+public abstract class MaximumNumberOfIntegersToChooseFromRange1TestsBase<T> where T : IMaximumNumberOfIntegersToChooseFromRange1, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 6, 5 }, 5, 6, 2)]
     [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7 }, 8, 1, 0)]
     [DataRow(new[] { 11 }, 7, 50, 7)]
-    public void MaxCount_WithBannedArrayNAndMaxSum_ReturnsMaximumCount(int[] banned, int n, int maxSum,
-        int expectedResult)
+    public void MaxCount_WithBannedArrayNAndMaxSum_ReturnsMaximumCount(int[] banned, int n, int maxSum, int expectedResult)
     {
         // Arrange
         var solution = new T();

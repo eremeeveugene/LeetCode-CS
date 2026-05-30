@@ -28,8 +28,7 @@ public abstract class DayOfTheWeekTestsBase<T> where T : IDayOfTheWeek, new()
     [DataRow(25, 12, 2021, "Saturday")]
     [DataRow(4, 7, 1776, "Thursday")]
     [DataRow(1, 1, 2100, "Friday")]
-    public void DayOfTheWeek_WithDateInputs_ReturnsDayNameForGivenDate(int day, int month, int year,
-        string expectedResult)
+    public void DayOfTheWeek_WithDateInputs_ReturnsDayNameForGivenDate(int day, int month, int year, string expectedResult)
     {
         // Arrange
         var solution = new T();

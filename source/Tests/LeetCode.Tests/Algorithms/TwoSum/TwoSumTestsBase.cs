@@ -20,8 +20,7 @@ public abstract class TwoSumTestsBase<T> where T : ITwoSum, new()
     [DataRow(new[] { 3, 2, 4 }, 6, new[] { 1, 2 })]
     [DataRow(new[] { 3, 3 }, 6, new[] { 0, 1 })]
     [DataRow(new[] { 2, 5, 5, 11 }, 10, new[] { 1, 2 })]
-    public void TwoSum_WithIntArrayAndTarget_ReturnsIndicesOfNumbersAddingToTarget(int[] nums, int target,
-        int[] expectedResult)
+    public void TwoSum_WithIntArrayAndTarget_ReturnsIndicesOfNumbersAddingToTarget(int[] nums, int target, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -17,8 +17,7 @@ public abstract class FindAllGroupOfFarmlandTestsBase<T> where T : IFindAllGroup
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FindFarmland_WithLandGridInput_ReturnsTopLeftAndBottomRightCoordinatesOfFarmlandGroups(int[][] land,
-        int[][] expectedResult)
+    public void FindFarmland_WithLandGridInput_ReturnsTopLeftAndBottomRightCoordinatesOfFarmlandGroups(int[][] land, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -40,20 +39,8 @@ public abstract class FindAllGroupOfFarmlandTestsBase<T> where T : IFindAllGroup
 
         yield return [new[] { new[] { 0, 1 }, new[] { 0, 1 } }, new[] { new[] { 0, 1, 1, 1 } }];
 
-        yield return
-        [
-            new[] { new[] { 1, 0, 0 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 } },
-            new[] { new[] { 0, 0, 0, 0 }, new[] { 1, 1, 2, 2 } }
-        ];
+        yield return [new[] { new[] { 1, 0, 0 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 } }, new[] { new[] { 0, 0, 0, 0 }, new[] { 1, 1, 2, 2 } }];
 
-        yield return
-        [
-            new[]
-            {
-                new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 1, 1, 0 }, new[] { 0, 1, 1, 1, 0 }, new[] { 0, 1, 1, 1, 0 },
-                new[] { 0, 0, 0, 0, 0 }
-            },
-            new[] { new[] { 1, 1, 3, 3 } }
-        ];
+        yield return [new[] { new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 1, 1, 0 }, new[] { 0, 1, 1, 1, 0 }, new[] { 0, 1, 1, 1, 0 }, new[] { 0, 0, 0, 0, 0 } }, new[] { new[] { 1, 1, 3, 3 } }];
     }
 }

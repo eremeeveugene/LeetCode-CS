@@ -45,8 +45,10 @@ public sealed class FindEventualSafeStatesDepthFirstSearch : IFindEventualSafeSt
     {
         switch (states[node])
         {
-            case 1: return true;
-            case 2: return false;
+            case 1:
+                return true;
+            case 2:
+                return false;
         }
 
         var adjacentNodes = graph[node];

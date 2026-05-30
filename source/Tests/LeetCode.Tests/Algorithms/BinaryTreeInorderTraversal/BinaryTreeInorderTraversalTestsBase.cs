@@ -18,8 +18,7 @@ public abstract class BinaryTreeInorderTraversalTestsBase<T> where T : IBinaryTr
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void InorderTraversal_WithBinaryTreeFromJson_ReturnsInorderTraversalList(int?[] inputArray,
-        int?[] expectedResult)
+    public void InorderTraversal_WithBinaryTreeFromJson_ReturnsInorderTraversalList(int?[] inputArray, int?[] expectedResult)
     {
         // Arrange
         var inputNode = TreeNode.ToTreeNode(inputArray);

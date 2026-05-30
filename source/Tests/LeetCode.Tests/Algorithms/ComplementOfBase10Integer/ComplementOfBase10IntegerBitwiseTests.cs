@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ComplementOfBase10Integer;
 namespace LeetCode.Tests.Algorithms.ComplementOfBase10Integer;
 
 [TestClass]
-public sealed class ComplementOfBase10IntegerBitwiseTests :
-    ComplementOfBase10IntegerTestsBase<ComplementOfBase10IntegerBitwise>;
+public sealed class ComplementOfBase10IntegerBitwiseTests : ComplementOfBase10IntegerTestsBase<ComplementOfBase10IntegerBitwise>;

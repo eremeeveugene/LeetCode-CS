@@ -21,8 +21,7 @@ public abstract class BuddyStringsTestsBase<T> where T : IBuddyStrings, new()
     [DataRow("aa", "aa", true)]
     [DataRow("abcaa", "abcbb", false)]
     [DataRow("abcd", "abcde", false)]
-    public void BuddyStrings_WithGivenStrings_ReturnsTrueIfSingleSwapMakesEqualOtherwiseFalse(string s, string goal,
-        bool expectedResult)
+    public void BuddyStrings_WithGivenStrings_ReturnsTrueIfSingleSwapMakesEqualOtherwiseFalse(string s, string goal, bool expectedResult)
     {
         // Arrange
         var solution = new T();

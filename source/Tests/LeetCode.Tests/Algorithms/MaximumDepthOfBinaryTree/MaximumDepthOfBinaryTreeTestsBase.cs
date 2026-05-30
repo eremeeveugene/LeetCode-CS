@@ -18,8 +18,7 @@ public abstract class MaximumDepthOfBinaryTreeTestsBase<T> where T : IMaximumDep
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MaxDepth_WithBinaryTreeInput_ReturnsMaximumDepthOfTree(int?[] rootArray,
-        int expectedResult)
+    public void MaxDepth_WithBinaryTreeInput_ReturnsMaximumDepthOfTree(int?[] rootArray, int expectedResult)
     {
         // Arrange
         var solution = new T();

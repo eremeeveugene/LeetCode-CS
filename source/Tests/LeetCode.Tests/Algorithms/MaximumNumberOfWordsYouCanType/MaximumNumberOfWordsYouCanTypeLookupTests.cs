@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumNumberOfWordsYouCanType;
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfWordsYouCanType;
 
 [TestClass]
-public class MaximumNumberOfWordsYouCanTypeLookupTests :
-    MaximumNumberOfWordsYouCanTypeTestsBase<MaximumNumberOfWordsYouCanTypeLookup>;
+public class MaximumNumberOfWordsYouCanTypeLookupTests : MaximumNumberOfWordsYouCanTypeTestsBase<MaximumNumberOfWordsYouCanTypeLookup>;

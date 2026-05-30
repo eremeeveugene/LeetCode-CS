@@ -13,8 +13,7 @@ using LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree
 
 namespace LeetCode.Tests.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree;
 
-public abstract class FindMinimumOperationsToMakeAllElementsDivisibleByThreeTestsBase<T>
-    where T : IFindMinimumOperationsToMakeAllElementsDivisibleByThree, new()
+public abstract class FindMinimumOperationsToMakeAllElementsDivisibleByThreeTestsBase<T> where T : IFindMinimumOperationsToMakeAllElementsDivisibleByThree, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 3, 4 }, 3)]

@@ -13,14 +13,12 @@ using LeetCode.Algorithms.LongestBinarySubsequenceLessThanOrEqualToK;
 
 namespace LeetCode.Tests.Algorithms.LongestBinarySubsequenceLessThanOrEqualToK;
 
-public abstract class LongestBinarySubsequenceLessThanOrEqualToKTestsBase<T>
-    where T : ILongestBinarySubsequenceLessThanOrEqualToK, new()
+public abstract class LongestBinarySubsequenceLessThanOrEqualToKTestsBase<T> where T : ILongestBinarySubsequenceLessThanOrEqualToK, new()
 {
     [TestMethod]
     [DataRow("1001010", 5, 5)]
     [DataRow("00101001", 1, 6)]
-    public void LongestSubsequence_WithBinaryStringAndLimitK_ReturnsMaxValidSubsequenceLength(string s, int k,
-        int expectedResult)
+    public void LongestSubsequence_WithBinaryStringAndLimitK_ReturnsMaxValidSubsequenceLength(string s, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

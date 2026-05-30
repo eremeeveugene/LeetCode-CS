@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ContainerWithMostWater;
 namespace LeetCode.Tests.Algorithms.ContainerWithMostWater;
 
 [TestClass]
-public sealed class ContainerWithMostWaterTwoPointersTests :
-    ContainerWithMostWaterTestsBase<ContainerWithMostWaterTwoPointers>;
+public sealed class ContainerWithMostWaterTwoPointersTests : ContainerWithMostWaterTestsBase<ContainerWithMostWaterTwoPointers>;

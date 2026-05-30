@@ -18,8 +18,7 @@ public abstract class DesignCircularQueueTestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void DesignCircularQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        CircularQueueScenario scenario)
+    public void DesignCircularQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(CircularQueueScenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -47,99 +46,18 @@ public abstract class DesignCircularQueueTestsBase
 
     private static IEnumerable<CircularQueueScenario[]> GetScenarios()
     {
-        yield return
-        [
-            new CircularQueueScenario(3,
-                [
-                    new EnQueueOperation(1),
-                    new EnQueueOperation(2),
-                    new EnQueueOperation(3),
-                    new EnQueueOperation(4),
-                    new RearOperation(),
-                    new IsFullOperation(),
-                    new DeQueueOperation(),
-                    new EnQueueOperation(4),
-                    new RearOperation()
-                ],
-                [
-                    new EnQueueOperation.Result(true),
-                    new EnQueueOperation.Result(true),
-                    new EnQueueOperation.Result(true),
-                    new EnQueueOperation.Result(false),
-                    new RearOperation.Result(3),
-                    new IsFullOperation.Result(true),
-                    new DeQueueOperation.Result(true),
-                    new EnQueueOperation.Result(true),
-                    new RearOperation.Result(4)
-                ])
-        ];
+        yield return [new CircularQueueScenario(3, [new EnQueueOperation(1), new EnQueueOperation(2), new EnQueueOperation(3), new EnQueueOperation(4), new RearOperation(), new IsFullOperation(), new DeQueueOperation(), new EnQueueOperation(4), new RearOperation()], [new EnQueueOperation.Result(true), new EnQueueOperation.Result(true), new EnQueueOperation.Result(true), new EnQueueOperation.Result(false), new RearOperation.Result(3), new IsFullOperation.Result(true), new DeQueueOperation.Result(true), new EnQueueOperation.Result(true), new RearOperation.Result(4)])];
 
-        yield return
-        [
-            new CircularQueueScenario(1,
-                [
-                    new EnQueueOperation(1),
-                    new EnQueueOperation(2),
-                    new FrontOperation(),
-                    new DeQueueOperation(),
-                    new IsEmptyOperation()
-                ],
-                [
-                    new EnQueueOperation.Result(true),
-                    new EnQueueOperation.Result(false),
-                    new FrontOperation.Result(1),
-                    new DeQueueOperation.Result(true),
-                    new IsEmptyOperation.Result(true)
-                ])
-        ];
+        yield return [new CircularQueueScenario(1, [new EnQueueOperation(1), new EnQueueOperation(2), new FrontOperation(), new DeQueueOperation(), new IsEmptyOperation()], [new EnQueueOperation.Result(true), new EnQueueOperation.Result(false), new FrontOperation.Result(1), new DeQueueOperation.Result(true), new IsEmptyOperation.Result(true)])];
 
-        yield return
-        [
-            new CircularQueueScenario(2,
-                [
-                    new IsEmptyOperation(),
-                    new EnQueueOperation(5),
-                    new EnQueueOperation(6),
-                    new IsFullOperation(),
-                    new RearOperation(),
-                    new FrontOperation(),
-                    new DeQueueOperation(),
-                    new RearOperation()
-                ],
-                [
-                    new IsEmptyOperation.Result(true),
-                    new EnQueueOperation.Result(true),
-                    new EnQueueOperation.Result(true),
-                    new IsFullOperation.Result(true),
-                    new RearOperation.Result(6),
-                    new FrontOperation.Result(5),
-                    new DeQueueOperation.Result(true),
-                    new RearOperation.Result(6)
-                ])
-        ];
+        yield return [new CircularQueueScenario(2, [new IsEmptyOperation(), new EnQueueOperation(5), new EnQueueOperation(6), new IsFullOperation(), new RearOperation(), new FrontOperation(), new DeQueueOperation(), new RearOperation()], [new IsEmptyOperation.Result(true), new EnQueueOperation.Result(true), new EnQueueOperation.Result(true), new IsFullOperation.Result(true), new RearOperation.Result(6), new FrontOperation.Result(5), new DeQueueOperation.Result(true), new RearOperation.Result(6)])];
 
-        yield return
-        [
-            new CircularQueueScenario(3,
-                [
-                    new FrontOperation(),
-                    new RearOperation(),
-                    new DeQueueOperation()
-                ],
-                [
-                    new FrontOperation.Result(-1),
-                    new RearOperation.Result(-1),
-                    new DeQueueOperation.Result(false)
-                ])
-        ];
+        yield return [new CircularQueueScenario(3, [new FrontOperation(), new RearOperation(), new DeQueueOperation()], [new FrontOperation.Result(-1), new RearOperation.Result(-1), new DeQueueOperation.Result(false)])];
     }
 
     public sealed class CircularQueueScenario : IScenario<IDesignCircularQueue>
     {
-        public CircularQueueScenario(
-            int k,
-            IOperation<IDesignCircularQueue>[] operations,
-            IOperationResult[] operationResults)
+        public CircularQueueScenario(int k, IOperation<IDesignCircularQueue>[] operations, IOperationResult[] operationResults)
         {
             K = k;
             Operations = operations;
@@ -169,7 +87,9 @@ public abstract class DesignCircularQueueTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _success;
 
@@ -204,7 +124,9 @@ public abstract class DesignCircularQueueTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _success;
 
@@ -239,7 +161,9 @@ public abstract class DesignCircularQueueTestsBase
             return new Result(value);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int _value;
 
@@ -274,7 +198,9 @@ public abstract class DesignCircularQueueTestsBase
             return new Result(value);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int _value;
 
@@ -309,7 +235,9 @@ public abstract class DesignCircularQueueTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _isEmpty;
 
@@ -344,7 +272,9 @@ public abstract class DesignCircularQueueTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _isFull;
 

@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MinimizeMaximumPairSumInArray;
 
 namespace LeetCode.Tests.Algorithms.MinimizeMaximumPairSumInArray;
 
-public abstract class MinimizeMaximumPairSumInArrayTestsBase<T>
-    where T : IMinimizeMaximumPairSumInArray, new()
+public abstract class MinimizeMaximumPairSumInArrayTestsBase<T> where T : IMinimizeMaximumPairSumInArray, new()
 {
     [TestMethod]
     [DataRow(new[] { 3, 5, 2, 3 }, 7)]

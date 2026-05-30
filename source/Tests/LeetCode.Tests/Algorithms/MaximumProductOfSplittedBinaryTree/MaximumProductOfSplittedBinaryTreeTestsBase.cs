@@ -14,13 +14,11 @@ using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.MaximumProductOfSplittedBinaryTree;
 
-public abstract class MaximumProductOfSplittedBinaryTreeTestsBase<T>
-    where T : IMaximumProductOfSplittedBinaryTree, new()
+public abstract class MaximumProductOfSplittedBinaryTreeTestsBase<T> where T : IMaximumProductOfSplittedBinaryTree, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MaxProduct_WithBinaryTree_ReturnsMaximumProductOfSubtreeSums(int?[] rootArray,
-        int expectedResult)
+    public void MaxProduct_WithBinaryTree_ReturnsMaximumProductOfSubtreeSums(int?[] rootArray, int expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);

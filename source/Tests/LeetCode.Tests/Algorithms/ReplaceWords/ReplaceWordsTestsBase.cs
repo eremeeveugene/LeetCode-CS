@@ -22,8 +22,7 @@ public abstract class ReplaceWordsTestsBase<T> where T : IReplaceWords, new()
     [DataRow(new[] { "a", "ab", "abc" }, "abc ab a abcde", "a a a a")]
     [DataRow(new[] { "prefix", "pre", "suff", "suffi" }, "prefixes and suffixes", "pre and suff")]
     [DataRow(new[] { "longest", "longer", "long" }, "this is a long long word", "this is a long long word")]
-    public void ReplaceWords_WithRootDictionaryAndSentence_ReplacesWordsWithShortestMatchingRoots(
-        string[] dictionaryArray, string sentence, string expectedResult)
+    public void ReplaceWords_WithRootDictionaryAndSentence_ReplacesWordsWithShortestMatchingRoots(string[] dictionaryArray, string sentence, string expectedResult)
     {
         // Arrange
         var solution = new T();

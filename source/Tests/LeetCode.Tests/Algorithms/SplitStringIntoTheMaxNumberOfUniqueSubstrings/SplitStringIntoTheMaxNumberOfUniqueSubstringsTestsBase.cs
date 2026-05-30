@@ -13,8 +13,7 @@ using LeetCode.Algorithms.SplitStringIntoTheMaxNumberOfUniqueSubstrings;
 
 namespace LeetCode.Tests.Algorithms.SplitStringIntoTheMaxNumberOfUniqueSubstrings;
 
-public abstract class SplitStringIntoTheMaxNumberOfUniqueSubstringsTestsBase<T>
-    where T : ISplitStringIntoTheMaxNumberOfUniqueSubstrings, new()
+public abstract class SplitStringIntoTheMaxNumberOfUniqueSubstringsTestsBase<T> where T : ISplitStringIntoTheMaxNumberOfUniqueSubstrings, new()
 {
     [TestMethod]
     [DataRow("ababccc", 5)]

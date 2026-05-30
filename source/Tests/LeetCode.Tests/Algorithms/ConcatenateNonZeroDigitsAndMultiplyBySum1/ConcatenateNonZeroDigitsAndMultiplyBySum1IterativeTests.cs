@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ConcatenateNonZeroDigitsAndMultiplyBySum1;
 namespace LeetCode.Tests.Algorithms.ConcatenateNonZeroDigitsAndMultiplyBySum1;
 
 [TestClass]
-public sealed class ConcatenateNonZeroDigitsAndMultiplyBySum1IterativeTests :
-    ConcatenateNonZeroDigitsAndMultiplyBySum1TestsBase<ConcatenateNonZeroDigitsAndMultiplyBySum1Iterative>;
+public sealed class ConcatenateNonZeroDigitsAndMultiplyBySum1IterativeTests : ConcatenateNonZeroDigitsAndMultiplyBySum1TestsBase<ConcatenateNonZeroDigitsAndMultiplyBySum1Iterative>;

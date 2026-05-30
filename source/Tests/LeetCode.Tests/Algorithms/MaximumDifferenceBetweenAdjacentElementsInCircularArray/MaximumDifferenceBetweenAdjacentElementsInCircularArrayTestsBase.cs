@@ -13,14 +13,12 @@ using LeetCode.Algorithms.MaximumDifferenceBetweenAdjacentElementsInCircularArra
 
 namespace LeetCode.Tests.Algorithms.MaximumDifferenceBetweenAdjacentElementsInCircularArray;
 
-public abstract class MaximumDifferenceBetweenAdjacentElementsInCircularArrayTestsBase<T>
-    where T : IMaximumDifferenceBetweenAdjacentElementsInCircularArray, new()
+public abstract class MaximumDifferenceBetweenAdjacentElementsInCircularArrayTestsBase<T> where T : IMaximumDifferenceBetweenAdjacentElementsInCircularArray, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 4 }, 3)]
     [DataRow(new[] { -5, -10, -5 }, 5)]
-    public void MaxAdjacentDistance_WithInputArray_ReturnsLargestDifferenceBetweenAdjacentElements(int[] nums,
-        int expectedResult)
+    public void MaxAdjacentDistance_WithInputArray_ReturnsLargestDifferenceBetweenAdjacentElements(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

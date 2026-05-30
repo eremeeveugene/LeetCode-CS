@@ -19,8 +19,7 @@ public abstract class ReverseOddLevelsOfBinaryTreeTestsBase<T> where T : IRevers
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void ReverseOddLevels_GivenTree_ReturnsTreeWithOddLevelsReversed(int?[] rootArray,
-        int?[] expectedResultArray)
+    public void ReverseOddLevels_GivenTree_ReturnsTreeWithOddLevelsReversed(int?[] rootArray, int?[] expectedResultArray)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);
@@ -45,33 +44,16 @@ public abstract class ReverseOddLevelsOfBinaryTreeTestsBase<T> where T : IRevers
 
         yield return [new int?[] { 2, 3, 5, 8, 13, 21, 34 }, new int?[] { 2, 5, 3, 8, 13, 21, 34 }];
 
-        yield return
-        [
-            new int?[] { 0, 1, 2, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 },
-            new int?[] { 0, 2, 1, 0, 0, 0, 0, 2, 2, 2, 2, 1, 1, 1, 1 }
-        ];
+        yield return [new int?[] { 0, 1, 2, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 }, new int?[] { 0, 2, 1, 0, 0, 0, 0, 2, 2, 2, 2, 1, 1, 1, 1 }];
 
         yield return [new int?[] { 1, null, 2 }, new int?[] { 1, null, 2 }];
 
-        yield return
-        [
-            new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 },
-            new int?[] { 1, 3, 2, 4, 5, 6, 7, 15, 14, 13, 12, 11, 10, 9, 8 }
-        ];
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }, new int?[] { 1, 3, 2, 4, 5, 6, 7, 15, 14, 13, 12, 11, 10, 9, 8 }];
 
-        yield return
-            [new int?[] { 1, 2, null, 3, null, 4, null, 5 }, new int?[] { 1, 2, null, 3, null, 4, null, 5 }];
+        yield return [new int?[] { 1, 2, null, 3, null, 4, null, 5 }, new int?[] { 1, 2, null, 3, null, 4, null, 5 }];
 
-        yield return
-        [
-            new int?[] { 1, null, 2, null, 3, null, 4, null, 5 },
-            new int?[] { 1, null, 2, null, 3, null, 4, null, 5 }
-        ];
+        yield return [new int?[] { 1, null, 2, null, 3, null, 4, null, 5 }, new int?[] { 1, null, 2, null, 3, null, 4, null, 5 }];
 
-        yield return
-        [
-            new int?[] { 1, 2, 3, 4, null, null, 5, 6, null, null, 7 },
-            new int?[] { 1, 3, 2, 4, null, null, 5, 7, null, null, 6 }
-        ];
+        yield return [new int?[] { 1, 2, 3, 4, null, null, 5, 6, null, null, 7 }, new int?[] { 1, 3, 2, 4, null, null, 5, 7, null, null, 6 }];
     }
 }

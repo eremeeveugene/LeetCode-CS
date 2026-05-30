@@ -20,8 +20,7 @@ public abstract class MyCalendar3TestsBase<T> where T : IMyCalendar3, new()
 
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void Book_WithOverlappingEvents_ReturnsMaxConcurrentBookingsAfterEachEvent(string[] methods,
-        int[][] arguments, int[] expectedResult)
+    public void Book_WithOverlappingEvents_ReturnsMaxConcurrentBookingsAfterEachEvent(string[] methods, int[][] arguments, int[] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -47,11 +46,6 @@ public abstract class MyCalendar3TestsBase<T> where T : IMyCalendar3, new()
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return
-        [
-            new[] { "book", "book", "book", "book", "book", "book" },
-            new[] { new[] { 10, 20 }, new[] { 50, 60 }, new[] { 10, 40 }, new[] { 5, 15 }, new[] { 5, 10 }, new[] { 25, 55 } },
-            new[] { 1, 1, 2, 3, 3, 3 }
-        ];
+        yield return [new[] { "book", "book", "book", "book", "book", "book" }, new[] { new[] { 10, 20 }, new[] { 50, 60 }, new[] { 10, 40 }, new[] { 5, 15 }, new[] { 5, 10 }, new[] { 25, 55 } }, new[] { 1, 1, 2, 3, 3, 3 }];
     }
 }

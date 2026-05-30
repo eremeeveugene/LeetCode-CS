@@ -13,13 +13,11 @@ using LeetCode.Algorithms.MaximumAreaOfLongestDiagonalRectangle;
 
 namespace LeetCode.Tests.Algorithms.MaximumAreaOfLongestDiagonalRectangle;
 
-public abstract class MaximumAreaOfLongestDiagonalRectangleTestsBase<T>
-    where T : IMaximumAreaOfLongestDiagonalRectangle, new()
+public abstract class MaximumAreaOfLongestDiagonalRectangleTestsBase<T> where T : IMaximumAreaOfLongestDiagonalRectangle, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void AreaOfMaxDiagonal_WithDimensionsArray_ReturnsAreaOfRectangleHavingTheLongestDiagonal(
-        int[][] dimensions, double expectedResult)
+    public void AreaOfMaxDiagonal_WithDimensionsArray_ReturnsAreaOfRectangleHavingTheLongestDiagonal(int[][] dimensions, double expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -39,10 +37,6 @@ public abstract class MaximumAreaOfLongestDiagonalRectangleTestsBase<T>
 
         yield return [new[] { new[] { 2, 6 }, new[] { 5, 1 }, new[] { 3, 10 }, new[] { 8, 4 } }, 30.0];
 
-        yield return
-        [
-            new[] { new[] { 6, 5 }, new[] { 8, 6 }, new[] { 2, 10 }, new[] { 8, 1 }, new[] { 9, 2 }, new[] { 3, 5 }, new[] { 3, 5 } },
-            20.0
-        ];
+        yield return [new[] { new[] { 6, 5 }, new[] { 8, 6 }, new[] { 2, 10 }, new[] { 8, 1 }, new[] { 9, 2 }, new[] { 3, 5 }, new[] { 3, 5 } }, 20.0];
     }
 }

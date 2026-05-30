@@ -15,13 +15,11 @@ using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTraversal;
 
-public abstract class ConstructBinaryTreeFromPreorderAndPostorderTraversalTestsBase<T>
-    where T : IConstructBinaryTreeFromPreorderAndPostorderTraversal, new()
+public abstract class ConstructBinaryTreeFromPreorderAndPostorderTraversalTestsBase<T> where T : IConstructBinaryTreeFromPreorderAndPostorderTraversal, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void ConstructFromPrePost_WithPreorderAndPostorder_ReturnsBinaryTree(int[] preorder,
-        int[] postorder, int?[] expectedResultArray)
+    public void ConstructFromPrePost_WithPreorderAndPostorder_ReturnsBinaryTree(int[] preorder, int[] postorder, int?[] expectedResultArray)
     {
         // Arrange
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);

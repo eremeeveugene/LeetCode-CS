@@ -13,8 +13,7 @@ using LeetCode.Algorithms.CheckIfBinaryStringHasAtMostOneSegmentOfOnes;
 
 namespace LeetCode.Tests.Algorithms.CheckIfBinaryStringHasAtMostOneSegmentOfOnes;
 
-public abstract class CheckIfBinaryStringHasAtMostOneSegmentOfOnesTestsBase<T>
-    where T : ICheckIfBinaryStringHasAtMostOneSegmentOfOnes, new()
+public abstract class CheckIfBinaryStringHasAtMostOneSegmentOfOnesTestsBase<T> where T : ICheckIfBinaryStringHasAtMostOneSegmentOfOnes, new()
 {
     [TestMethod]
     [DataRow("1", true)]
@@ -31,9 +30,7 @@ public abstract class CheckIfBinaryStringHasAtMostOneSegmentOfOnesTestsBase<T>
     [DataRow("1110111", false)]
     [DataRow("1001000", false)]
     [DataRow("1100001", false)]
-    public void CheckOnesSegment_WithBinaryString_ReturnsTrueIfAtMostOneContiguousSegmentOfOnes(
-        string s,
-        bool expectedResult)
+    public void CheckOnesSegment_WithBinaryString_ReturnsTrueIfAtMostOneContiguousSegmentOfOnes(string s, bool expectedResult)
     {
         // Arrange
         var solution = new T();

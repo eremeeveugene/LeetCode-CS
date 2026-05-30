@@ -17,8 +17,7 @@ public abstract class SpecialArray2TestsBase<T> where T : ISpecialArray2, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void IsArraySpecial_WithSubarrayQueries_ReturnsWhetherEachSubarrayHasAlternatingParity(int[] nums,
-        int[][] queries, bool[] expectedResult)
+    public void IsArraySpecial_WithSubarrayQueries_ReturnsWhetherEachSubarrayHasAlternatingParity(int[] nums, int[][] queries, bool[] expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -15,8 +15,7 @@ using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ConvertSortedArrayToBinarySearchTree;
 
-public abstract class ConvertSortedArrayToBinarySearchTreeTestsBase<T>
-    where T : IConvertSortedArrayToBinarySearchTree, new()
+public abstract class ConvertSortedArrayToBinarySearchTreeTestsBase<T> where T : IConvertSortedArrayToBinarySearchTree, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]

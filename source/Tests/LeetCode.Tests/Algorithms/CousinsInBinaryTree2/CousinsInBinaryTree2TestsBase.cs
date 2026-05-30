@@ -19,8 +19,7 @@ public abstract class CousinsInBinaryTree2TestsBase<T> where T : ICousinsInBinar
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void ReplaceValueInTree_GivenRootNode_ReturnsTreeWithReplacedValues(int?[] rootArray,
-        int?[] expectedResultArray)
+    public void ReplaceValueInTree_GivenRootNode_ReturnsTreeWithReplacedValues(int?[] rootArray, int?[] expectedResultArray)
     {
         // Arrange
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);

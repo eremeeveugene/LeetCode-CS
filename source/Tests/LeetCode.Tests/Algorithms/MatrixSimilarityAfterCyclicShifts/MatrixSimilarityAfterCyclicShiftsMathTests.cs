@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MatrixSimilarityAfterCyclicShifts;
 namespace LeetCode.Tests.Algorithms.MatrixSimilarityAfterCyclicShifts;
 
 [TestClass]
-public sealed class MatrixSimilarityAfterCyclicShiftsMathTests :
-    MatrixSimilarityAfterCyclicShiftsTestsBase<MatrixSimilarityAfterCyclicShiftsMath>;
+public sealed class MatrixSimilarityAfterCyclicShiftsMathTests : MatrixSimilarityAfterCyclicShiftsTestsBase<MatrixSimilarityAfterCyclicShiftsMath>;

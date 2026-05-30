@@ -19,8 +19,7 @@ public abstract class MinimumDominoRotationsForEqualRowTestsBase<T> where T : IM
     [DataRow(new[] { 2, 1, 2, 4, 2, 2 }, new[] { 5, 2, 6, 2, 3, 2 }, 2)]
     [DataRow(new[] { 3, 5, 1, 2, 3 }, new[] { 3, 6, 3, 3, 4 }, -1)]
     [DataRow(new[] { 1, 2, 1, 1, 1, 2, 2, 2 }, new[] { 2, 1, 2, 2, 2, 2, 2, 2 }, 1)]
-    public void MinDominoRotations_WithTopAndBottomArrays_ReturnsMinimumRotationsOrMinusOne(int[] tops,
-        int[] bottoms, int expectedResult)
+    public void MinDominoRotations_WithTopAndBottomArrays_ReturnsMinimumRotationsOrMinusOne(int[] tops, int[] bottoms, int expectedResult)
     {
         // Arrange
         var solution = new T();

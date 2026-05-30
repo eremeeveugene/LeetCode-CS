@@ -13,14 +13,12 @@ using LeetCode.Algorithms.CheckIfAllOnesAreAtLeastLengthKPlacesAway;
 
 namespace LeetCode.Tests.Algorithms.CheckIfAllOnesAreAtLeastLengthKPlacesAway;
 
-public abstract class CheckIfAllOnesAreAtLeastLengthKPlacesAwayTestsBase<T>
-    where T : ICheckIfAllOnesAreAtLeastLengthKPlacesAway, new()
+public abstract class CheckIfAllOnesAreAtLeastLengthKPlacesAwayTestsBase<T> where T : ICheckIfAllOnesAreAtLeastLengthKPlacesAway, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 0, 0, 0, 1, 0, 0, 1 }, 2, true)]
     [DataRow(new[] { 1, 0, 0, 1, 0, 1 }, 2, false)]
-    public void KLengthApart_WithNumsArrayAndKDistance_ReturnsTrueIfOnesAreAtLeastKApart(int[] nums, int k,
-        bool expectedResult)
+    public void KLengthApart_WithNumsArrayAndKDistance_ReturnsTrueIfOnesAreAtLeastKApart(int[] nums, int k, bool expectedResult)
     {
         // Arrange
         var solution = new T();

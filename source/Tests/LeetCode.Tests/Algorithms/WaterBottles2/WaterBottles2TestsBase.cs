@@ -18,8 +18,7 @@ public abstract class WaterBottles2TestsBase<T> where T : IWaterBottles2, new()
     [TestMethod]
     [DataRow(13, 6, 15)]
     [DataRow(10, 3, 13)]
-    public void MaxBottlesDrunk_WithFullBottlesAndExchangeRate_ReturnsMaximumNumberOfBottlesDrunk(
-        int numBottles, int numExchange, int expectedResult)
+    public void MaxBottlesDrunk_WithFullBottlesAndExchangeRate_ReturnsMaximumNumberOfBottlesDrunk(int numBottles, int numExchange, int expectedResult)
     {
         // Arrange
         var solution = new T();

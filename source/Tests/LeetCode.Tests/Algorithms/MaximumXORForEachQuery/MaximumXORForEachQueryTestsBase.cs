@@ -19,8 +19,7 @@ public abstract class MaximumXORForEachQueryTestsBase<T> where T : IMaximumXORFo
     [DataRow(new[] { 0, 1, 1, 3 }, 2, new[] { 0, 3, 2, 3 })]
     [DataRow(new[] { 2, 3, 4, 7 }, 3, new[] { 5, 2, 6, 5 })]
     [DataRow(new[] { 0, 1, 2, 2, 5, 7 }, 3, new[] { 4, 3, 6, 4, 6, 7 })]
-    public void GetMaximumXor_WithNumsArrayAndMaximumBit_ComputesXorValues(int[] nums, int maximumBit,
-        int[] expectedResult)
+    public void GetMaximumXor_WithNumsArrayAndMaximumBit_ComputesXorValues(int[] nums, int maximumBit, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

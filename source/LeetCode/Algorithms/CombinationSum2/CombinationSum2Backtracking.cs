@@ -32,8 +32,7 @@ public sealed class CombinationSum2Backtracking : ICombinationSum2
         return result;
     }
 
-    private static void Backtrack(ICollection<IList<int>> result, IList<int> tempList, IReadOnlyList<int> candidates,
-        int remain, int start)
+    private static void Backtrack(ICollection<IList<int>> result, IList<int> tempList, IReadOnlyList<int> candidates, int remain, int start)
     {
         switch (remain)
         {

@@ -11,8 +11,7 @@
 
 namespace LeetCode.Algorithms.LexicographicallyMinimumStringAfterRemovingStars;
 
-public abstract class LexicographicallyMinimumStringAfterRemovingStarsBase :
-    ILexicographicallyMinimumStringAfterRemovingStars
+public abstract class LexicographicallyMinimumStringAfterRemovingStarsBase : ILexicographicallyMinimumStringAfterRemovingStars
 {
     public abstract string ClearStars(string s);
 

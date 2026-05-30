@@ -21,8 +21,7 @@ public abstract class ShortestSubarrayWithSumAtLeastKTestsBase<T> where T : ISho
     [DataRow(new[] { 2, -1, 2 }, 3, 3)]
     [DataRow(new[] { 84, -37, 32, 40, 95 }, 167, 3)]
     [DataRow(new[] { -28, 81, -20, 28, -29 }, 89, 3)]
-    public void ShortestSubarray_WithGivenArrayAndTargetSum_ReturnsLengthOfShortestValidSubarrayOrMinusOne(
-        int[] nums, int k, int expectedResult)
+    public void ShortestSubarray_WithGivenArrayAndTargetSum_ReturnsLengthOfShortestValidSubarrayOrMinusOne(int[] nums, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

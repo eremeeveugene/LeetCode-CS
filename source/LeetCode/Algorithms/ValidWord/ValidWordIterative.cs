@@ -14,10 +14,7 @@ namespace LeetCode.Algorithms.ValidWord;
 /// <inheritdoc />
 public sealed class ValidWordIterative : IValidWord
 {
-    private static readonly HashSet<char> Vowels =
-    [
-        'a', 'e', 'i', 'o', 'u'
-    ];
+    private static readonly HashSet<char> Vowels = ['a', 'e', 'i', 'o', 'u'];
 
     /// <summary>
     ///     Time complexity - O(n)

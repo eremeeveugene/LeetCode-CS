@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumDepthOfNaryTree;
 namespace LeetCode.Tests.Algorithms.MaximumDepthOfNaryTree;
 
 [TestClass]
-public sealed class MaximumDepthOfNaryTreeDepthFirstSearchStackTests :
-    MaximumDepthOfNaryTreeTestsBase<MaximumDepthOfNaryTreeDepthFirstSearchStack>;
+public sealed class MaximumDepthOfNaryTreeDepthFirstSearchStackTests : MaximumDepthOfNaryTreeTestsBase<MaximumDepthOfNaryTreeDepthFirstSearchStack>;

@@ -19,8 +19,7 @@ public abstract class FruitIntoBasketsTestsBase<T> where T : IFruitIntoBaskets, 
     [DataRow(new[] { 1, 2, 1 }, 3)]
     [DataRow(new[] { 0, 1, 2, 2 }, 3)]
     [DataRow(new[] { 1, 2, 3, 2, 2 }, 4)]
-    public void TotalFruit_WithTwoBasketLimit_ReturnsMaximumNumberOfFruitsCollected(int[] fruits,
-        int expectedResult)
+    public void TotalFruit_WithTwoBasketLimit_ReturnsMaximumNumberOfFruitsCollected(int[] fruits, int expectedResult)
     {
         // Arrange
         var solution = new T();

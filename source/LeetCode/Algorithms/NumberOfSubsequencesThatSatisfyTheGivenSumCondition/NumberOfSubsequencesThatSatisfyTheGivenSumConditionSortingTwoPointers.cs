@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfSubsequencesThatSatisfyTheGivenSumCondition;
 
 /// <inheritdoc />
-public sealed class NumberOfSubsequencesThatSatisfyTheGivenSumConditionSortingTwoPointers :
-    INumberOfSubsequencesThatSatisfyTheGivenSumCondition
+public sealed class NumberOfSubsequencesThatSatisfyTheGivenSumConditionSortingTwoPointers : INumberOfSubsequencesThatSatisfyTheGivenSumCondition
 {
     private const int Modulo = 1_000_000_007;
 

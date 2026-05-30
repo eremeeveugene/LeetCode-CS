@@ -17,8 +17,7 @@ public abstract class SortTheMatrixDiagonallyTestsBase<T> where T : ISortTheMatr
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void DiagonalSort_WithUnsortedMatrixDiagonals_ReturnsMatrixWithEachDiagonalSortedAscending(int[][] mat,
-        int[][] expectedResult)
+    public void DiagonalSort_WithUnsortedMatrixDiagonals_ReturnsMatrixWithEachDiagonalSortedAscending(int[][] mat, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();

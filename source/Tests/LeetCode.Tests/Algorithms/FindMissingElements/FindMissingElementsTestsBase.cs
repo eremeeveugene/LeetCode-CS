@@ -19,8 +19,7 @@ public abstract class FindMissingElementsTestsBase<T> where T : IFindMissingElem
     [DataRow(new[] { 1, 4, 2, 5 }, new[] { 3 })]
     [DataRow(new[] { 7, 8, 6, 9 }, new int[] { })]
     [DataRow(new[] { 5, 1 }, new[] { 2, 3, 4 })]
-    public void FindMissingElements_WithArrayContainingGaps_ReturnsMissingSequentialElements(int[] nums,
-        int[] expectedResult)
+    public void FindMissingElements_WithArrayContainingGaps_ReturnsMissingSequentialElements(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.NumberOfZeroFilledSubarrays;
 namespace LeetCode.Tests.Algorithms.NumberOfZeroFilledSubarrays;
 
 [TestClass]
-public sealed class NumberOfZeroFilledSubarraysCountingTests :
-    NumberOfZeroFilledSubarraysTestsBase<NumberOfZeroFilledSubarraysCounting>;
+public sealed class NumberOfZeroFilledSubarraysCountingTests : NumberOfZeroFilledSubarraysTestsBase<NumberOfZeroFilledSubarraysCounting>;

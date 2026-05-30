@@ -20,8 +20,7 @@ public abstract class FindTheOriginalTypedString1TestsBase<T> where T : IFindThe
     [DataRow("abcd", 1)]
     [DataRow("aaaa", 4)]
     [DataRow("ere", 1)]
-    public void PossibleStringCount_WithGivenTypedString_ReturnsPossibleOriginalStringCount(string word,
-        int expectedResult)
+    public void PossibleStringCount_WithGivenTypedString_ReturnsPossibleOriginalStringCount(string word, int expectedResult)
     {
         // Arrange
         var solution = new T();

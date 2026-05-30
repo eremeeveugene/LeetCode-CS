@@ -33,13 +33,11 @@ public sealed class TwentyFourGameBruteForce : ITwentyFourGame
         return TryBuildPermutation(0, cards, isCardUsed, cardPermutation);
     }
 
-    private static bool TryBuildPermutation(int depth, ReadOnlySpan<int> cards, Span<bool> isCardUsed,
-        Span<int> cardPermutation)
+    private static bool TryBuildPermutation(int depth, ReadOnlySpan<int> cards, Span<bool> isCardUsed, Span<int> cardPermutation)
     {
         if (depth == 4)
         {
-            return TryEvaluateAllExpressions(cardPermutation[0], cardPermutation[1], cardPermutation[2],
-                cardPermutation[3]);
+            return TryEvaluateAllExpressions(cardPermutation[0], cardPermutation[1], cardPermutation[2], cardPermutation[3]);
         }
 
         var previousCard = -1;
@@ -79,42 +77,27 @@ public sealed class TwentyFourGameBruteForce : ITwentyFourGame
             {
                 foreach (var thirdOperator in Enum.GetValues<Operation>())
                 {
-                    if (TryApplyOperator(a, b, firstOperator, out var t) &&
-                        TryApplyOperator(t, c, secondOperator, out var u) &&
-                        TryApplyOperator(u, d, thirdOperator, out var v) &&
-                        Math.Abs(v - TargetValue) < Tolerance)
+                    if (TryApplyOperator(a, b, firstOperator, out var t) && TryApplyOperator(t, c, secondOperator, out var u) && TryApplyOperator(u, d, thirdOperator, out var v) && Math.Abs(v - TargetValue) < Tolerance)
                     {
                         return true;
                     }
 
-                    if (TryApplyOperator(b, c, secondOperator, out t) &&
-                        TryApplyOperator(a, t, firstOperator, out u) &&
-                        TryApplyOperator(u, d, thirdOperator, out v) &&
-                        Math.Abs(v - TargetValue) < Tolerance)
+                    if (TryApplyOperator(b, c, secondOperator, out t) && TryApplyOperator(a, t, firstOperator, out u) && TryApplyOperator(u, d, thirdOperator, out v) && Math.Abs(v - TargetValue) < Tolerance)
                     {
                         return true;
                     }
 
-                    if (TryApplyOperator(b, c, secondOperator, out t) &&
-                        TryApplyOperator(t, d, thirdOperator, out u) &&
-                        TryApplyOperator(a, u, firstOperator, out v) &&
-                        Math.Abs(v - TargetValue) < Tolerance)
+                    if (TryApplyOperator(b, c, secondOperator, out t) && TryApplyOperator(t, d, thirdOperator, out u) && TryApplyOperator(a, u, firstOperator, out v) && Math.Abs(v - TargetValue) < Tolerance)
                     {
                         return true;
                     }
 
-                    if (TryApplyOperator(c, d, thirdOperator, out t) &&
-                        TryApplyOperator(b, t, secondOperator, out u) &&
-                        TryApplyOperator(a, u, firstOperator, out v) &&
-                        Math.Abs(v - TargetValue) < Tolerance)
+                    if (TryApplyOperator(c, d, thirdOperator, out t) && TryApplyOperator(b, t, secondOperator, out u) && TryApplyOperator(a, u, firstOperator, out v) && Math.Abs(v - TargetValue) < Tolerance)
                     {
                         return true;
                     }
 
-                    if (TryApplyOperator(a, b, firstOperator, out t) &&
-                        TryApplyOperator(c, d, thirdOperator, out u) &&
-                        TryApplyOperator(t, u, secondOperator, out v) &&
-                        Math.Abs(v - TargetValue) < Tolerance)
+                    if (TryApplyOperator(a, b, firstOperator, out t) && TryApplyOperator(c, d, thirdOperator, out u) && TryApplyOperator(t, u, secondOperator, out v) && Math.Abs(v - TargetValue) < Tolerance)
                     {
                         return true;
                     }

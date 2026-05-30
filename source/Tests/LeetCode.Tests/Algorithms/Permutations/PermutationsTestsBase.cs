@@ -18,8 +18,7 @@ public abstract class PermutationsTestsBase<T> where T : IPermutations, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void Permute_WithDifferentArraySizes_ReturnsAllPermutations(int[] nums,
-        int[][] expectedResult)
+    public void Permute_WithDifferentArraySizes_ReturnsAllPermutations(int[] nums, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();

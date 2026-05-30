@@ -14,5 +14,4 @@ using LeetCode.Algorithms.LongestCommonPrefix;
 namespace LeetCode.Tests.Algorithms.LongestCommonPrefix;
 
 [TestClass]
-public sealed class LongestCommonPrefixDivideAndConquerTests :
-    LongestCommonPrefixTestsBase<LongestCommonPrefixDivideAndConquer>;
+public sealed class LongestCommonPrefixDivideAndConquerTests : LongestCommonPrefixTestsBase<LongestCommonPrefixDivideAndConquer>;

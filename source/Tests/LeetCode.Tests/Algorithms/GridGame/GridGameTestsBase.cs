@@ -17,8 +17,7 @@ public abstract class GridGameTestsBase<T> where T : IGridGame, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void GridGame_WithInputGrid_ReturnsPointsCollectedBySecondRobot(int[][] grid,
-        long expectedResult)
+    public void GridGame_WithInputGrid_ReturnsPointsCollectedBySecondRobot(int[][] grid, long expectedResult)
     {
         // Arrange
         var solution = new T();

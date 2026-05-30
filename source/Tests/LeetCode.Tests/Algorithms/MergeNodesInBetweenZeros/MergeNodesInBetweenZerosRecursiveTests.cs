@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MergeNodesInBetweenZeros;
 namespace LeetCode.Tests.Algorithms.MergeNodesInBetweenZeros;
 
 [TestClass]
-public class MergeNodesInBetweenZerosRecursiveTests :
-    MergeNodesInBetweenZerosTestsBase<MergeNodesInBetweenZerosRecursive>;
+public class MergeNodesInBetweenZerosRecursiveTests : MergeNodesInBetweenZerosTestsBase<MergeNodesInBetweenZerosRecursive>;

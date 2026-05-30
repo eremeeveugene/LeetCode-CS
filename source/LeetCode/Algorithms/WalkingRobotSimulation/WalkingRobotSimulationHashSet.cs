@@ -76,8 +76,7 @@ public sealed class WalkingRobotSimulationHashSet : IWalkingRobotSimulation
         return result;
     }
 
-    private static (int X, int Y) Move(int direction, int x, int y, int units,
-        HashSet<(int, int)> obstaclesHashSet)
+    private static (int X, int Y) Move(int direction, int x, int y, int units, HashSet<(int, int)> obstaclesHashSet)
     {
         for (var i = 0; i < units; i++)
         {

@@ -18,8 +18,7 @@ public abstract class FirstUniqueEvenElementTestsBase<T> where T : IFirstUniqueE
     [TestMethod]
     [DataRow(new[] { 3, 4, 2, 5, 4, 6 }, 2)]
     [DataRow(new[] { 4, 4 }, -1)]
-    public void FirstUniqueEven_WithGivenArray_ReturnsFirstEvenAppearingOnceOrMinusOne(int[] nums,
-        int expectedResult)
+    public void FirstUniqueEven_WithGivenArray_ReturnsFirstEvenAppearingOnceOrMinusOne(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

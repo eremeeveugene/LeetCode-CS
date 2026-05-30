@@ -21,8 +21,7 @@ public abstract class DeleteNodeInLinkedListTestsBase<T> where T : IDeleteNodeIn
     [DataRow(new int[] { }, 0, new int[] { })]
     [DataRow(new[] { 4, 5, 1, 9 }, 5, new[] { 4, 1, 9 })]
     [DataRow(new[] { 4, 5, 1, 9 }, 1, new[] { 4, 5, 9 })]
-    public void DeleteNode_WhenNodeExists_RemovesNodeFromList(int[] actualResultArray, int node,
-        int[] expectedResultArray)
+    public void DeleteNode_WhenNodeExists_RemovesNodeFromList(int[] actualResultArray, int node, int[] expectedResultArray)
     {
         // Arrange
         var actualResult = ListNode.ToListNode(actualResultArray);

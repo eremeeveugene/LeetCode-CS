@@ -18,8 +18,7 @@ public abstract class SubarraysWithKDifferentIntegersTestsBase<T> where T : ISub
     [TestMethod]
     [DataRow(new[] { 1, 2, 1, 2, 3 }, 2, 7)]
     [DataRow(new[] { 1, 2, 1, 3, 4 }, 3, 3)]
-    public void SubarraysWithKDistinct_WithArrayAndTargetDistinctCount_ReturnsNumberOfValidSubarrays(int[] nums,
-        int k, int expectedResult)
+    public void SubarraysWithKDistinct_WithArrayAndTargetDistinctCount_ReturnsNumberOfValidSubarrays(int[] nums, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

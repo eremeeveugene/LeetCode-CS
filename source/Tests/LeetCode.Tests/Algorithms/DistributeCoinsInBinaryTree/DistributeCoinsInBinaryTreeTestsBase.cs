@@ -18,8 +18,7 @@ public abstract class DistributeCoinsInBinaryTreeTestsBase<T> where T : IDistrib
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void DistributeCoins_WithBinaryTreeInput_ReturnsMinimumNumberOfMovesToBalanceCoins(int?[] rootArray,
-        int expectedResult)
+    public void DistributeCoins_WithBinaryTreeInput_ReturnsMinimumNumberOfMovesToBalanceCoins(int?[] rootArray, int expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);

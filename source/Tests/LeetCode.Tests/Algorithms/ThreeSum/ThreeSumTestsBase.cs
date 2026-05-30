@@ -39,7 +39,6 @@ public abstract class ThreeSumTestsBase<T> where T : IThreeSum, new()
 
         yield return [new[] { -3, -2, 1, 1, 2 }, new[] { new[] { -3, 1, 2 }, new[] { -2, 1, 1 } }];
 
-        yield return
-            [new[] { 3, 0, -2, -1, 1, 2 }, new[] { new[] { -2, -1, 3 }, new[] { -2, 0, 2 }, new[] { -1, 0, 1 } }];
+        yield return [new[] { 3, 0, -2, -1, 1, 2 }, new[] { new[] { -2, -1, 3 }, new[] { -2, 0, 2 }, new[] { -1, 0, 1 } }];
     }
 }

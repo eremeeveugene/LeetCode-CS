@@ -17,8 +17,7 @@ public abstract class MinimumTimeVisitingAllPointsTestsBase<T> where T : IMinimu
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MinTimeToVisitAllPoints_WithPointsArray_ReturnsSumOfStepwiseDistances(int[][] points,
-        int expectedResult)
+    public void MinTimeToVisitAllPoints_WithPointsArray_ReturnsSumOfStepwiseDistances(int[][] points, int expectedResult)
     {
         // Arrange
         var solution = new T();

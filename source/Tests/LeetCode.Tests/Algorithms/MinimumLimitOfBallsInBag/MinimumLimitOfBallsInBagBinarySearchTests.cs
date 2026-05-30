@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumLimitOfBallsInBag;
 namespace LeetCode.Tests.Algorithms.MinimumLimitOfBallsInBag;
 
 [TestClass]
-public sealed class MinimumLimitOfBallsInBagBinarySearchTests :
-    MinimumLimitOfBallsInBagTestsBase<MinimumLimitOfBallsInBagBinarySearch>;
+public sealed class MinimumLimitOfBallsInBagBinarySearchTests : MinimumLimitOfBallsInBagTestsBase<MinimumLimitOfBallsInBagBinarySearch>;

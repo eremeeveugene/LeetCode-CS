@@ -13,15 +13,13 @@ using LeetCode.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubarray;
 
 namespace LeetCode.Tests.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubarray;
 
-public abstract class LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayTestsBase<T>
-    where T : ILongestStrictlyIncreasingOrStrictlyDecreasingSubarray, new()
+public abstract class LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayTestsBase<T> where T : ILongestStrictlyIncreasingOrStrictlyDecreasingSubarray, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 4, 3, 3, 2 }, 2)]
     [DataRow(new[] { 3, 3, 3, 3 }, 1)]
     [DataRow(new[] { 3, 2, 1 }, 3)]
-    public void LongestMonotonicSubarray_WithGivenNums_ReturnsLengthOfTheLongestMonotonicSubarray(int[] nums,
-        int expectedResult)
+    public void LongestMonotonicSubarray_WithGivenNums_ReturnsLengthOfTheLongestMonotonicSubarray(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

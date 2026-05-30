@@ -18,8 +18,7 @@ public abstract class CountCompleteSubarraysInAnArrayTestsBase<T> where T : ICou
     [TestMethod]
     [DataRow(new[] { 1, 3, 1, 2, 2 }, 4)]
     [DataRow(new[] { 5, 5, 5, 5 }, 10)]
-    public void CountCompleteSubarrays_WithGivenArray_ReturnsNumberOfCompleteSubarrays(int[] nums,
-        int expectedResult)
+    public void CountCompleteSubarrays_WithGivenArray_ReturnsNumberOfCompleteSubarrays(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

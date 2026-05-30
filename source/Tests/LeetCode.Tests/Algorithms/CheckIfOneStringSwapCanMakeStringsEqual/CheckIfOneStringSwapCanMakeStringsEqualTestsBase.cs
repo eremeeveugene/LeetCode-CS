@@ -13,15 +13,13 @@ using LeetCode.Algorithms.CheckIfOneStringSwapCanMakeStringsEqual;
 
 namespace LeetCode.Tests.Algorithms.CheckIfOneStringSwapCanMakeStringsEqual;
 
-public abstract class CheckIfOneStringSwapCanMakeStringsEqualTestsBase<T>
-    where T : ICheckIfOneStringSwapCanMakeStringsEqual, new()
+public abstract class CheckIfOneStringSwapCanMakeStringsEqualTestsBase<T> where T : ICheckIfOneStringSwapCanMakeStringsEqual, new()
 {
     [TestMethod]
     [DataRow("bank", "kanb", true)]
     [DataRow("attack", "defend", false)]
     [DataRow("kelb", "kelb", true)]
-    public void AreAlmostEqual_WithTwoStrings_ReturnsIfTheyCanBeMadeEqualByOneSwap(string s1, string s2,
-        bool expectedResult)
+    public void AreAlmostEqual_WithTwoStrings_ReturnsIfTheyCanBeMadeEqualByOneSwap(string s1, string s2, bool expectedResult)
     {
         // Arrange
         var solution = new T();

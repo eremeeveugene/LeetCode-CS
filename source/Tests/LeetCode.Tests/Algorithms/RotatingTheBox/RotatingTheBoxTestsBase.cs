@@ -17,8 +17,7 @@ public abstract class RotatingTheBoxTestsBase<T> where T : IRotatingTheBox, new(
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void RotateTheBox_WithBoxMatrix_ReturnsBoxAfterRotationAndGravityApplied(char[][] box,
-        char[][] expectedResult)
+    public void RotateTheBox_WithBoxMatrix_ReturnsBoxAfterRotationAndGravityApplied(char[][] box, char[][] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -34,24 +33,8 @@ public abstract class RotatingTheBoxTestsBase<T> where T : IRotatingTheBox, new(
     {
         yield return [new[] { new[] { '#', '.', '#' } }, new[] { new[] { '.' }, new[] { '#' }, new[] { '#' } }];
 
-        yield return
-        [
-            new[] { new[] { '#', '.', '*', '.' }, new[] { '#', '#', '*', '.' } },
-            new[] { new[] { '#', '.' }, new[] { '#', '#' }, new[] { '*', '*' }, new[] { '.', '.' } }
-        ];
+        yield return [new[] { new[] { '#', '.', '*', '.' }, new[] { '#', '#', '*', '.' } }, new[] { new[] { '#', '.' }, new[] { '#', '#' }, new[] { '*', '*' }, new[] { '.', '.' } }];
 
-        yield return
-        [
-            new[]
-            {
-                new[] { '#', '#', '*', '.', '*', '.' }, new[] { '#', '#', '#', '*', '.', '.' },
-                new[] { '#', '#', '#', '.', '#', '.' }
-            },
-            new[]
-            {
-                new[] { '.', '#', '#' }, new[] { '.', '#', '#' }, new[] { '#', '#', '*' }, new[] { '#', '*', '.' },
-                new[] { '#', '.', '*' }, new[] { '#', '.', '.' }
-            }
-        ];
+        yield return [new[] { new[] { '#', '#', '*', '.', '*', '.' }, new[] { '#', '#', '#', '*', '.', '.' }, new[] { '#', '#', '#', '.', '#', '.' } }, new[] { new[] { '.', '#', '#' }, new[] { '.', '#', '#' }, new[] { '#', '#', '*' }, new[] { '#', '*', '.' }, new[] { '#', '.', '*' }, new[] { '#', '.', '.' } }];
     }
 }

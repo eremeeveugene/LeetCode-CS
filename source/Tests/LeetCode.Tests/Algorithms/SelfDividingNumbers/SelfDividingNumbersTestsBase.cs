@@ -18,8 +18,7 @@ public abstract class SelfDividingNumbersTestsBase<T> where T : ISelfDividingNum
     [TestMethod]
     [DataRow(1, 22, new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22 })]
     [DataRow(47, 85, new[] { 48, 55, 66, 77 })]
-    public void SelfDividingNumbers_WithRangeBounds_ReturnsListOfSelfDividingNumbersWithinRange(int left, int right,
-        int[] expectedResult)
+    public void SelfDividingNumbers_WithRangeBounds_ReturnsListOfSelfDividingNumbersWithinRange(int left, int right, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

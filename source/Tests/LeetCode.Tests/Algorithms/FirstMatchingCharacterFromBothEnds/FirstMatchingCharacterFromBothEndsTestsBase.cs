@@ -13,15 +13,13 @@ using LeetCode.Algorithms.FirstMatchingCharacterFromBothEnds;
 
 namespace LeetCode.Tests.Algorithms.FirstMatchingCharacterFromBothEnds;
 
-public abstract class FirstMatchingCharacterFromBothEndsTestsBase<T>
-    where T : IFirstMatchingCharacterFromBothEnds, new()
+public abstract class FirstMatchingCharacterFromBothEndsTestsBase<T> where T : IFirstMatchingCharacterFromBothEnds, new()
 {
     [TestMethod]
     [DataRow("abc", 1)]
     [DataRow("abcacbd", 1)]
     [DataRow("abcdab", -1)]
-    public void FirstMatchingIndex_WithGivenString_ReturnsSmallestSymmetricMatchingIndexOrMinusOne(string s,
-        int expectedResult)
+    public void FirstMatchingIndex_WithGivenString_ReturnsSmallestSymmetricMatchingIndexOrMinusOne(string s, int expectedResult)
     {
         // Arrange
         var solution = new T();

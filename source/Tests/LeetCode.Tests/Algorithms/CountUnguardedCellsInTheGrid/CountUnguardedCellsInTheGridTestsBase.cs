@@ -17,8 +17,7 @@ public abstract class CountUnguardedCellsInTheGridTestsBase<T> where T : ICountU
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void CountUnguarded_WithGridSizeGuardsAndWalls_ReturnsNumberOfUnguardedCells(int m, int n,
-        int[][] guards, int[][] words, int expectedResult)
+    public void CountUnguarded_WithGridSizeGuardsAndWalls_ReturnsNumberOfUnguardedCells(int m, int n, int[][] guards, int[][] words, int expectedResult)
     {
         // Arrange
         var solution = new T();

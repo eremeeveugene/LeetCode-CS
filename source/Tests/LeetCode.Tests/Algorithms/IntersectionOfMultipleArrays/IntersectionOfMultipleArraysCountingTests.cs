@@ -14,5 +14,4 @@ using LeetCode.Algorithms.IntersectionOfMultipleArrays;
 namespace LeetCode.Tests.Algorithms.IntersectionOfMultipleArrays;
 
 [TestClass]
-public sealed class IntersectionOfMultipleArraysCountingTests :
-    IntersectionOfMultipleArraysTestsBase<IntersectionOfMultipleArraysCounting>;
+public sealed class IntersectionOfMultipleArraysCountingTests : IntersectionOfMultipleArraysTestsBase<IntersectionOfMultipleArraysCounting>;

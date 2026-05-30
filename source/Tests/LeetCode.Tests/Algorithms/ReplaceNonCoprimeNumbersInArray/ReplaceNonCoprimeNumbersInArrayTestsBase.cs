@@ -18,8 +18,7 @@ public abstract class ReplaceNonCoprimeNumbersInArrayTestsBase<T> where T : IRep
     [TestMethod]
     [DataRow(new[] { 6, 4, 3, 2, 7, 6, 2 }, new[] { 12, 7, 6 })]
     [DataRow(new[] { 2, 2, 1, 1, 3, 3, 3 }, new[] { 2, 1, 1, 3 })]
-    public void ReplaceNonCoprimes_WithNumsArray_ReplacesWithLCMUntilNoMorePairs(int[] nums,
-        int[] expectedResult)
+    public void ReplaceNonCoprimes_WithNumsArray_ReplacesWithLCMUntilNoMorePairs(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

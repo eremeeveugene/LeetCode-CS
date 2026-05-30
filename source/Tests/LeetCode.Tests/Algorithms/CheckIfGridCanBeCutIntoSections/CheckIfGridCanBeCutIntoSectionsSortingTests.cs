@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CheckIfGridCanBeCutIntoSections;
 namespace LeetCode.Tests.Algorithms.CheckIfGridCanBeCutIntoSections;
 
 [TestClass]
-public sealed class CheckIfGridCanBeCutIntoSectionsSortingTests :
-    CheckIfGridCanBeCutIntoSectionsTestsBase<CheckIfGridCanBeCutIntoSectionsSorting>;
+public sealed class CheckIfGridCanBeCutIntoSectionsSortingTests : CheckIfGridCanBeCutIntoSectionsTestsBase<CheckIfGridCanBeCutIntoSectionsSorting>;

@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MaximalScoreAfterApplyingKOperations;
 
 namespace LeetCode.Tests.Algorithms.MaximalScoreAfterApplyingKOperations;
 
-public abstract class MaximalScoreAfterApplyingKOperationsTestsBase<T>
-    where T : IMaximalScoreAfterApplyingKOperations, new()
+public abstract class MaximalScoreAfterApplyingKOperationsTestsBase<T> where T : IMaximalScoreAfterApplyingKOperations, new()
 {
     [TestMethod]
     [DataRow(new[] { 10, 10, 10, 10, 10 }, 5, 50L)]

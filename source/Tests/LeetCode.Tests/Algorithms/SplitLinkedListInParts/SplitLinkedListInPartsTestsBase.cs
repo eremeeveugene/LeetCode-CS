@@ -19,8 +19,7 @@ public abstract class SplitLinkedListInPartsTestsBase<T> where T : ISplitLinkedL
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void SplitListToParts_WithLinkedListAndPartCount_ReturnsEquallyDividedParts(int[] headArray, int k,
-        int[][] expectedResultNestedArray)
+    public void SplitListToParts_WithLinkedListAndPartCount_ReturnsEquallyDividedParts(int[] headArray, int k, int[][] expectedResultNestedArray)
     {
         // Arrange
         var head = ListNode.ToListNode(headArray);

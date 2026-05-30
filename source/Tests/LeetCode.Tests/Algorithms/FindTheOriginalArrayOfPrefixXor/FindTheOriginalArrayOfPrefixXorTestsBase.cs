@@ -18,8 +18,7 @@ public abstract class FindTheOriginalArrayOfPrefixXorTestsBase<T> where T : IFin
     [TestMethod]
     [DataRow(new[] { 5, 2, 0, 3, 1 }, new[] { 5, 7, 2, 3, 2 })]
     [DataRow(new[] { 13 }, new[] { 13 })]
-    public void FindArray_WithPrefixXorArray_ReturnsOriginalArrayUsingInverseXorLogic(int[] pref,
-        int[] expectedResult)
+    public void FindArray_WithPrefixXorArray_ReturnsOriginalArrayUsingInverseXorLogic(int[] pref, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

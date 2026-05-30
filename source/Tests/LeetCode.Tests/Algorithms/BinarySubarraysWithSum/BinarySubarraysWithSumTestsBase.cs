@@ -18,8 +18,7 @@ public abstract class BinarySubarraysWithSumTestsBase<T> where T : IBinarySubarr
     [TestMethod]
     [DataRow(new[] { 1, 0, 1, 0, 1 }, 2, 4)]
     [DataRow(new[] { 0, 0, 0, 0, 0 }, 0, 15)]
-    public void NumSubarraysWithSum_WithBinaryArrayAndTargetSum_ReturnsCountOfMatchingSubarrays(int[] nums,
-        int goal, int expectedResult)
+    public void NumSubarraysWithSum_WithBinaryArrayAndTargetSum_ReturnsCountOfMatchingSubarrays(int[] nums, int goal, int expectedResult)
     {
         // Arrange
         var solution = new T();

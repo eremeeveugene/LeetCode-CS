@@ -19,8 +19,7 @@ public abstract class CountPrefixAndSuffixPairs1TestsBase<T> where T : ICountPre
     [DataRow(new[] { "a", "aba", "ababa", "aa" }, 4)]
     [DataRow(new[] { "pa", "papa", "ma", "mama" }, 2)]
     [DataRow(new[] { "abab", "ab" }, 0)]
-    public void CountPrefixSuffixPairs_WithStringArray_ReturnsNumberOfValidPrefixAndSuffixPairs(string[] words,
-        int expectedResult)
+    public void CountPrefixSuffixPairs_WithStringArray_ReturnsNumberOfValidPrefixAndSuffixPairs(string[] words, int expectedResult)
     {
         // Arrange
         var solution = new T();

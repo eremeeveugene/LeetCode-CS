@@ -13,15 +13,13 @@ using LeetCode.Algorithms.MinimizedMaximumOfProductsDistributedToAnyStore;
 
 namespace LeetCode.Tests.Algorithms.MinimizedMaximumOfProductsDistributedToAnyStore;
 
-public abstract class MinimizedMaximumOfProductsDistributedToAnyStoreTestsBase<T>
-    where T : IMinimizedMaximumOfProductsDistributedToAnyStore, new()
+public abstract class MinimizedMaximumOfProductsDistributedToAnyStoreTestsBase<T> where T : IMinimizedMaximumOfProductsDistributedToAnyStore, new()
 {
     [TestMethod]
     [DataRow(6, new[] { 11, 6 }, 3)]
     [DataRow(7, new[] { 15, 10, 10 }, 5)]
     [DataRow(1, new[] { 100000 }, 100000)]
-    public void MinimizedMaximum_WithNumberOfStoresAndProductQuantities_ReturnsMinimumPossibleMaximum(int n,
-        int[] quantities, int expectedResult)
+    public void MinimizedMaximum_WithNumberOfStoresAndProductQuantities_ReturnsMinimumPossibleMaximum(int n, int[] quantities, int expectedResult)
     {
         // Arrange
         var solution = new T();

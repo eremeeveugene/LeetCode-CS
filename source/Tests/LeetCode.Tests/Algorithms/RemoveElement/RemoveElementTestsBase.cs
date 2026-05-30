@@ -18,8 +18,7 @@ public abstract class RemoveElementTestsBase<T> where T : IRemoveElement, new()
     [TestMethod]
     [DataRow(new[] { 3, 2, 2, 3 }, 3, new[] { 2, 2 }, 2)]
     [DataRow(new[] { 0, 1, 2, 2, 3, 0, 4, 2 }, 2, new[] { 0, 1, 4, 0, 3 }, 5)]
-    public void RemoveElement_WithArrayAndValue_ReturnsModifiedArrayAndNewLength(int[] nums, int val,
-        int[] expectedNums, int expectedResult)
+    public void RemoveElement_WithArrayAndValue_ReturnsModifiedArrayAndNewLength(int[] nums, int val, int[] expectedNums, int expectedResult)
     {
         // Arrange
         var solution = new T();

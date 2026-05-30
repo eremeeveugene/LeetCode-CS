@@ -18,8 +18,7 @@ public abstract class MaximumAbsoluteSumOfAnySubarrayTestsBase<T> where T : IMax
     [TestMethod]
     [DataRow(new[] { 1, -3, 2, 3, -4 }, 5)]
     [DataRow(new[] { 2, -5, 1, -4, 3, -2 }, 8)]
-    public void MaxAbsoluteSum_GivenArrayOfIntegers_ReturnsMaxAbsoluteSubarraySum(int[] nums,
-        double expectedResult)
+    public void MaxAbsoluteSum_GivenArrayOfIntegers_ReturnsMaxAbsoluteSubarraySum(int[] nums, double expectedResult)
     {
         // Arrange
         var solution = new T();

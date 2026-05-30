@@ -20,8 +20,7 @@ public abstract class DeleteColumnsToMakeSorted2TestsBase<T> where T : IDeleteCo
     [DataRow(new[] { "ca", "bb", "ac" }, 1)]
     [DataRow(new[] { "xga", "xfb", "yfa" }, 1)]
     [DataRow(new[] { "zyx", "wvu", "tsr" }, 3)]
-    public void MinDeletionSize_WithStringsOfEqualLength_ReturnsMinimumDeletionsForLexicographicOrder(string[] strs,
-        int expectedResult)
+    public void MinDeletionSize_WithStringsOfEqualLength_ReturnsMinimumDeletionsForLexicographicOrder(string[] strs, int expectedResult)
     {
         // Arrange
         var solution = new T();

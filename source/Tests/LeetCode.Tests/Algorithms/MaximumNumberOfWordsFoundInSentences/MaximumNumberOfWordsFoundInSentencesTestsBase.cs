@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences;
 
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfWordsFoundInSentences;
 
-public abstract class MaximumNumberOfWordsFoundInSentencesTestsBase<T>
-    where T : IMaximumNumberOfWordsFoundInSentences, new()
+public abstract class MaximumNumberOfWordsFoundInSentencesTestsBase<T> where T : IMaximumNumberOfWordsFoundInSentences, new()
 {
     [TestMethod]
     [DataRow(new[] { "alice and bob love leetcode", "i think so too", "this is great thanks very much" }, 6)]

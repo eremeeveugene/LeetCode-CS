@@ -22,8 +22,7 @@ public abstract class AddTwoNumbersTestsBase<T> where T : IAddTwoNumbers, new()
     [DataRow(new[] { 0 }, new[] { 0 }, new[] { 0 })]
     [DataRow(new[] { 9, 9, 9, 9, 9, 9, 9 }, new[] { 9, 9, 9, 9 }, new[] { 8, 9, 9, 9, 0, 0, 0, 1 })]
     [DataRow(new[] { 9 }, new[] { 1, 9, 9, 9, 9, 9, 9, 9, 9, 9 }, new[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 })]
-    public void AddTwoNumbers_WithTwoIntegerArrays_ReturnsSumAsLinkedList(int[] array1,
-        int[] array2, int[] expectedResultArray)
+    public void AddTwoNumbers_WithTwoIntegerArrays_ReturnsSumAsLinkedList(int[] array1, int[] array2, int[] expectedResultArray)
     {
         // Arrange
         var list1 = ListNode.ToListNode(array1);

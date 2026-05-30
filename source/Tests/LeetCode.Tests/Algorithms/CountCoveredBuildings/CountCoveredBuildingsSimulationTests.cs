@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountCoveredBuildings;
 namespace LeetCode.Tests.Algorithms.CountCoveredBuildings;
 
 [TestClass]
-public sealed class CountCoveredBuildingsSimulationTests :
-    CountCoveredBuildingsTestsBase<CountCoveredBuildingsSimulation>;
+public sealed class CountCoveredBuildingsSimulationTests : CountCoveredBuildingsTestsBase<CountCoveredBuildingsSimulation>;

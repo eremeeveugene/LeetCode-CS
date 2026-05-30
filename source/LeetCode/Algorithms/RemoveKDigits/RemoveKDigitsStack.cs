@@ -60,8 +60,6 @@ public sealed class RemoveKDigitsStack : IRemoveKDigits
             startIndex++;
         }
 
-        return startIndex == resultArray.Length
-            ? "0"
-            : new string(resultArray, startIndex, resultArray.Length - startIndex);
+        return startIndex == resultArray.Length ? "0" : new string(resultArray, startIndex, resultArray.Length - startIndex);
     }
 }

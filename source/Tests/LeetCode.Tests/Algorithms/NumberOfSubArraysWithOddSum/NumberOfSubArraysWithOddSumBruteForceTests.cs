@@ -14,5 +14,4 @@ using LeetCode.Algorithms.NumberOfSubArraysWithOddSum;
 namespace LeetCode.Tests.Algorithms.NumberOfSubArraysWithOddSum;
 
 [TestClass]
-public sealed class NumberOfSubArraysWithOddSumBruteForceTests :
-    NumberOfSubArraysWithOddSumTestsBase<NumberOfSubArraysWithOddSumBruteForce>;
+public sealed class NumberOfSubArraysWithOddSumBruteForceTests : NumberOfSubArraysWithOddSumTestsBase<NumberOfSubArraysWithOddSumBruteForce>;

@@ -17,8 +17,7 @@ public abstract class RowWithMaximumOnesTestsBase<T> where T : IRowWithMaximumOn
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void RowAndMaximumOnes_WithMatrix_ReturnsRowIndexAndMaxOnesCount(int[][] mat,
-        int[] expectedResult)
+    public void RowAndMaximumOnes_WithMatrix_ReturnsRowIndexAndMaxOnesCount(int[][] mat, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

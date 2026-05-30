@@ -14,5 +14,4 @@ using LeetCode.Algorithms.PalindromePartitioning;
 namespace LeetCode.Tests.Algorithms.PalindromePartitioning;
 
 [TestClass]
-public sealed class PalindromePartitioningBackTrackingTests :
-    PalindromePartitioningTestsBase<PalindromePartitioningBackTracking>;
+public sealed class PalindromePartitioningBackTrackingTests : PalindromePartitioningTestsBase<PalindromePartitioningBackTracking>;

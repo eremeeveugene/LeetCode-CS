@@ -24,10 +24,7 @@ public sealed class FindResultantArrayAfterRemovingAnagramsGreedyCounting : IFin
     /// <returns></returns>
     public IList<string> RemoveAnagrams(string[] words)
     {
-        var result = new List<string>(words.Length)
-        {
-            words[0]
-        };
+        var result = new List<string>(words.Length) { words[0] };
 
         for (var i = 1; i < words.Length; i++)
         {

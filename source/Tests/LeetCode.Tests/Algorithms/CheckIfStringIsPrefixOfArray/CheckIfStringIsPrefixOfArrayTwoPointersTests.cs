@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CheckIfStringIsPrefixOfArray;
 namespace LeetCode.Tests.Algorithms.CheckIfStringIsPrefixOfArray;
 
 [TestClass]
-public sealed class CheckIfStringIsPrefixOfArrayTwoPointersTests :
-    CheckIfStringIsPrefixOfArrayTestsBase<CheckIfStringIsPrefixOfArrayTwoPointers>;
+public sealed class CheckIfStringIsPrefixOfArrayTwoPointersTests : CheckIfStringIsPrefixOfArrayTestsBase<CheckIfStringIsPrefixOfArrayTwoPointers>;

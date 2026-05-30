@@ -19,8 +19,7 @@ public abstract class MostCommonWordTestsBase<T> where T : IMostCommonWord, new(
     [DataRow("Bob hit a ball, the hit BALL flew far after it was hit.", new[] { "hit" }, "ball")]
     [DataRow("a.", new string[] { }, "a")]
     [DataRow("a, a, a, a, b,b,b,c, c", new[] { "a" }, "b")]
-    public void MostCommonWord_WithParagraphAndBannedWords_ReturnsMostFrequentNonBannedWord(string paragraph,
-        string[] banned, string expectedResult)
+    public void MostCommonWord_WithParagraphAndBannedWords_ReturnsMostFrequentNonBannedWord(string paragraph, string[] banned, string expectedResult)
     {
         // Arrange
         var solution = new T();

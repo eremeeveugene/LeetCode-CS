@@ -19,8 +19,7 @@ public abstract class RecoverTreeFromPreorderTraversalTestsBase<T> where T : IRe
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void RecoverFromPreorder_WithTraversalString_ConstructsBinaryTree(string traversal,
-        int?[] expectedResultArray)
+    public void RecoverFromPreorder_WithTraversalString_ConstructsBinaryTree(string traversal, int?[] expectedResultArray)
     {
         // Arrange
         var expectedResult = TreeNode.ToTreeNode(expectedResultArray);

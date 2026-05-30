@@ -18,8 +18,7 @@ public abstract class ConstructUniformParityArray1TestsBase<T> where T : IConstr
     [TestMethod]
     [DataRow(new[] { 2, 3 }, true)]
     [DataRow(new[] { 4, 6 }, true)]
-    public void UniformArray_WithDistinctIntegerArray_ReturnsTrueIfUniformParityArrayCanBeConstructed(int[] nums,
-        bool expectedResult)
+    public void UniformArray_WithDistinctIntegerArray_ReturnsTrueIfUniformParityArrayCanBeConstructed(int[] nums, bool expectedResult)
     {
         // Arrange
         var solution = new T();

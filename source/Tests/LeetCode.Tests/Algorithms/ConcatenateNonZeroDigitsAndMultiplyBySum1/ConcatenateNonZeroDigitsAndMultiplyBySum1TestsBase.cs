@@ -13,14 +13,12 @@ using LeetCode.Algorithms.ConcatenateNonZeroDigitsAndMultiplyBySum1;
 
 namespace LeetCode.Tests.Algorithms.ConcatenateNonZeroDigitsAndMultiplyBySum1;
 
-public abstract class ConcatenateNonZeroDigitsAndMultiplyBySum1TestsBase<T>
-    where T : IConcatenateNonZeroDigitsAndMultiplyBySum1, new()
+public abstract class ConcatenateNonZeroDigitsAndMultiplyBySum1TestsBase<T> where T : IConcatenateNonZeroDigitsAndMultiplyBySum1, new()
 {
     [TestMethod]
     [DataRow(1000, 1)]
     [DataRow(10203004, 12340)]
-    public void SumAndMultiply_WithGivenInteger_ReturnsProductOfNonZeroDigitConcatenationAndDigitSum(int n,
-        long expectedResult)
+    public void SumAndMultiply_WithGivenInteger_ReturnsProductOfNonZeroDigitConcatenationAndDigitSum(int n, long expectedResult)
     {
         // Arrange
         var solution = new T();

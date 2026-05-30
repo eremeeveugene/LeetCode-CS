@@ -13,8 +13,7 @@ using LeetCode.Algorithms.FindTheMaximumLengthOfValidSubsequence1;
 
 namespace LeetCode.Tests.Algorithms.FindTheMaximumLengthOfValidSubsequence1;
 
-public abstract class FindTheMaximumLengthOfValidSubsequence1TestsBase<T>
-    where T : IFindTheMaximumLengthOfValidSubsequence1, new()
+public abstract class FindTheMaximumLengthOfValidSubsequence1TestsBase<T> where T : IFindTheMaximumLengthOfValidSubsequence1, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 3, 4 }, 4)]

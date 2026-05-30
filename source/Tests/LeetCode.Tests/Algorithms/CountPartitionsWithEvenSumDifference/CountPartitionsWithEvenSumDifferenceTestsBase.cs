@@ -13,8 +13,7 @@ using LeetCode.Algorithms.CountPartitionsWithEvenSumDifference;
 
 namespace LeetCode.Tests.Algorithms.CountPartitionsWithEvenSumDifference;
 
-public abstract class CountPartitionsWithEvenSumDifferenceTestsBase<T>
-    where T : ICountPartitionsWithEvenSumDifference, new()
+public abstract class CountPartitionsWithEvenSumDifferenceTestsBase<T> where T : ICountPartitionsWithEvenSumDifference, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 2 }, 0)]

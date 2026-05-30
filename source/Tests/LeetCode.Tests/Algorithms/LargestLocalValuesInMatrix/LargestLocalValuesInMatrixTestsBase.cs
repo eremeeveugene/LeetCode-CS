@@ -17,8 +17,7 @@ public abstract class LargestLocalValuesInMatrixTestsBase<T> where T : ILargestL
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void LargestLocal_WithGridInput_ReturnsMatrixOfMaxValuesFrom3x3Neighborhoods(int[][] grid,
-        int[][] expectedResult)
+    public void LargestLocal_WithGridInput_ReturnsMatrixOfMaxValuesFrom3x3Neighborhoods(int[][] grid, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -32,20 +31,8 @@ public abstract class LargestLocalValuesInMatrixTestsBase<T> where T : ILargestL
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return
-        [
-            new[] { new[] { 9, 9, 8, 1 }, new[] { 5, 6, 2, 6 }, new[] { 8, 2, 6, 4 }, new[] { 6, 2, 2, 2 } },
-            new[] { new[] { 9, 9 }, new[] { 8, 6 } }
-        ];
+        yield return [new[] { new[] { 9, 9, 8, 1 }, new[] { 5, 6, 2, 6 }, new[] { 8, 2, 6, 4 }, new[] { 6, 2, 2, 2 } }, new[] { new[] { 9, 9 }, new[] { 8, 6 } }];
 
-        yield return
-        [
-            new[]
-            {
-                new[] { 1, 1, 1, 1, 1 }, new[] { 1, 1, 1, 1, 1 }, new[] { 1, 1, 2, 1, 1 }, new[] { 1, 1, 1, 1, 1 },
-                new[] { 1, 1, 1, 1, 1 }
-            },
-            new[] { new[] { 2, 2, 2 }, new[] { 2, 2, 2 }, new[] { 2, 2, 2 } }
-        ];
+        yield return [new[] { new[] { 1, 1, 1, 1, 1 }, new[] { 1, 1, 1, 1, 1 }, new[] { 1, 1, 2, 1, 1 }, new[] { 1, 1, 1, 1, 1 }, new[] { 1, 1, 1, 1, 1 } }, new[] { new[] { 2, 2, 2 }, new[] { 2, 2, 2 }, new[] { 2, 2, 2 } }];
     }
 }

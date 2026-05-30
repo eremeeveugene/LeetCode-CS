@@ -13,14 +13,12 @@ using LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray;
 
 namespace LeetCode.Tests.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray;
 
-public abstract class DifferenceBetweenElementSumAndDigitSumOfArrayTestsBase<T>
-    where T : IDifferenceBetweenElementSumAndDigitSumOfArray, new()
+public abstract class DifferenceBetweenElementSumAndDigitSumOfArrayTestsBase<T> where T : IDifferenceBetweenElementSumAndDigitSumOfArray, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 15, 6, 3 }, 9)]
     [DataRow(new[] { 1, 2, 3, 4 }, 0)]
-    public void DifferenceOfSum_WithArrayOfIntegers_ReturnsAbsoluteDifferenceBetweenElementAndDigitSums(int[] nums,
-        int expectedResult)
+    public void DifferenceOfSum_WithArrayOfIntegers_ReturnsAbsoluteDifferenceBetweenElementAndDigitSums(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

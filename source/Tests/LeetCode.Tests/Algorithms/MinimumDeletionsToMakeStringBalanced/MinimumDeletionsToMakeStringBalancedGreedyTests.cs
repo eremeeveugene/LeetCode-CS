@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumDeletionsToMakeStringBalanced;
 namespace LeetCode.Tests.Algorithms.MinimumDeletionsToMakeStringBalanced;
 
 [TestClass]
-public sealed class MinimumDeletionsToMakeStringBalancedGreedyTests :
-    MinimumDeletionsToMakeStringBalancedTestsBase<MinimumDeletionsToMakeStringBalancedGreedy>;
+public sealed class MinimumDeletionsToMakeStringBalancedGreedyTests : MinimumDeletionsToMakeStringBalancedTestsBase<MinimumDeletionsToMakeStringBalancedGreedy>;

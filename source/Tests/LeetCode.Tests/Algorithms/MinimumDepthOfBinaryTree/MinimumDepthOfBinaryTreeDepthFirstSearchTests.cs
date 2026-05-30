@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumDepthOfBinaryTree;
 namespace LeetCode.Tests.Algorithms.MinimumDepthOfBinaryTree;
 
 [TestClass]
-public sealed class MinimumDepthOfBinaryTreeDepthFirstSearchTests : MinimumDepthOfBinaryTreeTestsBase<
-    MinimumDepthOfBinaryTreeDepthFirstSearch>;
+public sealed class MinimumDepthOfBinaryTreeDepthFirstSearchTests : MinimumDepthOfBinaryTreeTestsBase<MinimumDepthOfBinaryTreeDepthFirstSearch>;

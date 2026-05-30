@@ -18,8 +18,7 @@ public abstract class LargestNumberAtLeastTwiceOfOthersTestsBase<T> where T : IL
     [TestMethod]
     [DataRow(new[] { 3, 6, 1, 0 }, 1)]
     [DataRow(new[] { 1, 2, 3, 4 }, -1)]
-    public void DominantIndex_WithIntegerArrayContainingUniqueLargest_ReturnsIndexOfLargestElementOrMinusOne(
-        int[] nums, int expectedResult)
+    public void DominantIndex_WithIntegerArrayContainingUniqueLargest_ReturnsIndexOfLargestElementOrMinusOne(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

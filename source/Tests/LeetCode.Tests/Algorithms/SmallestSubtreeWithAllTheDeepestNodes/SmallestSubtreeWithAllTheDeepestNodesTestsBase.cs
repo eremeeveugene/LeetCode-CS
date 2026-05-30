@@ -15,13 +15,11 @@ using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.SmallestSubtreeWithAllTheDeepestNodes;
 
-public abstract class SmallestSubtreeWithAllTheDeepestNodesTestsBase<T>
-    where T : ISmallestSubtreeWithAllTheDeepestNodes, new()
+public abstract class SmallestSubtreeWithAllTheDeepestNodesTestsBase<T> where T : ISmallestSubtreeWithAllTheDeepestNodes, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void SubtreeWithAllDeepest_WithBinaryTree_ReturnsSmallestSubtreeWithAllTheDeepestNodes(int?[] rootArray,
-        int?[] expectedResultArray)
+    public void SubtreeWithAllDeepest_WithBinaryTree_ReturnsSmallestSubtreeWithAllTheDeepestNodes(int?[] rootArray, int?[] expectedResultArray)
     {
         // Arrange
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);

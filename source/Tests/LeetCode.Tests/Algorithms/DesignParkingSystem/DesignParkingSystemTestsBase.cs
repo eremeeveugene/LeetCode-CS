@@ -18,8 +18,7 @@ public abstract class DesignParkingSystemTestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void DesignParkingSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        ParkingSystemScenario scenario)
+    public void DesignParkingSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(ParkingSystemScenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -47,162 +46,32 @@ public abstract class DesignParkingSystemTestsBase
 
     private static IEnumerable<ParkingSystemScenario[]> GetScenarios()
     {
-        yield return
-        [
-            new ParkingSystemScenario(0, 0, 0,
-                [new AddCarOperation(1)],
-                [new AddCarOperation.Result(false)])
-        ];
+        yield return [new ParkingSystemScenario(0, 0, 0, [new AddCarOperation(1)], [new AddCarOperation.Result(false)])];
 
-        yield return
-        [
-            new ParkingSystemScenario(1, 0, 0,
-                [new AddCarOperation(1), new AddCarOperation(1)],
-                [new AddCarOperation.Result(true), new AddCarOperation.Result(false)])
-        ];
+        yield return [new ParkingSystemScenario(1, 0, 0, [new AddCarOperation(1), new AddCarOperation(1)], [new AddCarOperation.Result(true), new AddCarOperation.Result(false)])];
 
-        yield return
-        [
-            new ParkingSystemScenario(0, 1, 0,
-                [new AddCarOperation(2), new AddCarOperation(2)],
-                [new AddCarOperation.Result(true), new AddCarOperation.Result(false)])
-        ];
+        yield return [new ParkingSystemScenario(0, 1, 0, [new AddCarOperation(2), new AddCarOperation(2)], [new AddCarOperation.Result(true), new AddCarOperation.Result(false)])];
 
-        yield return
-        [
-            new ParkingSystemScenario(0, 0, 1,
-                [new AddCarOperation(3), new AddCarOperation(3)],
-                [new AddCarOperation.Result(true), new AddCarOperation.Result(false)])
-        ];
+        yield return [new ParkingSystemScenario(0, 0, 1, [new AddCarOperation(3), new AddCarOperation(3)], [new AddCarOperation.Result(true), new AddCarOperation.Result(false)])];
 
-        yield return
-        [
-            new ParkingSystemScenario(2, 2, 2,
-                [
-                    new AddCarOperation(1),
-                    new AddCarOperation(1),
-                    new AddCarOperation(2),
-                    new AddCarOperation(2),
-                    new AddCarOperation(3),
-                    new AddCarOperation(3),
-                    new AddCarOperation(1)
-                ],
-                [
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(false)
-                ])
-        ];
+        yield return [new ParkingSystemScenario(2, 2, 2, [new AddCarOperation(1), new AddCarOperation(1), new AddCarOperation(2), new AddCarOperation(2), new AddCarOperation(3), new AddCarOperation(3), new AddCarOperation(1)], [new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(false)])];
 
-        yield return
-        [
-            new ParkingSystemScenario(1, 1, 1,
-                [new AddCarOperation(3), new AddCarOperation(2), new AddCarOperation(1)],
-                [
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true)
-                ])
-        ];
+        yield return [new ParkingSystemScenario(1, 1, 1, [new AddCarOperation(3), new AddCarOperation(2), new AddCarOperation(1)], [new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true)])];
 
-        yield return
-        [
-            new ParkingSystemScenario(1, 1, 1,
-                [
-                    new AddCarOperation(3),
-                    new AddCarOperation(2),
-                    new AddCarOperation(1),
-                    new AddCarOperation(2)
-                ],
-                [
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(false)
-                ])
-        ];
+        yield return [new ParkingSystemScenario(1, 1, 1, [new AddCarOperation(3), new AddCarOperation(2), new AddCarOperation(1), new AddCarOperation(2)], [new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(false)])];
 
-        yield return
-        [
-            new ParkingSystemScenario(3, 0, 0,
-                [
-                    new AddCarOperation(1),
-                    new AddCarOperation(1),
-                    new AddCarOperation(1),
-                    new AddCarOperation(1)
-                ],
-                [
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(false)
-                ])
-        ];
+        yield return [new ParkingSystemScenario(3, 0, 0, [new AddCarOperation(1), new AddCarOperation(1), new AddCarOperation(1), new AddCarOperation(1)], [new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(false)])];
 
-        yield return
-        [
-            new ParkingSystemScenario(0, 3, 0,
-                [
-                    new AddCarOperation(2),
-                    new AddCarOperation(2),
-                    new AddCarOperation(2),
-                    new AddCarOperation(2)
-                ],
-                [
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(false)
-                ])
-        ];
+        yield return [new ParkingSystemScenario(0, 3, 0, [new AddCarOperation(2), new AddCarOperation(2), new AddCarOperation(2), new AddCarOperation(2)], [new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(false)])];
 
-        yield return
-        [
-            new ParkingSystemScenario(0, 0, 3,
-                [
-                    new AddCarOperation(3),
-                    new AddCarOperation(3),
-                    new AddCarOperation(3),
-                    new AddCarOperation(3)
-                ],
-                [
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(false)
-                ])
-        ];
+        yield return [new ParkingSystemScenario(0, 0, 3, [new AddCarOperation(3), new AddCarOperation(3), new AddCarOperation(3), new AddCarOperation(3)], [new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(false)])];
 
-        yield return
-        [
-            new ParkingSystemScenario(1, 1, 1,
-                [
-                    new AddCarOperation(1),
-                    new AddCarOperation(4),
-                    new AddCarOperation(2),
-                    new AddCarOperation(3)
-                ],
-                [
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(false),
-                    new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true)
-                ])
-        ];
+        yield return [new ParkingSystemScenario(1, 1, 1, [new AddCarOperation(1), new AddCarOperation(4), new AddCarOperation(2), new AddCarOperation(3)], [new AddCarOperation.Result(true), new AddCarOperation.Result(false), new AddCarOperation.Result(true), new AddCarOperation.Result(true)])];
     }
 
     public sealed class ParkingSystemScenario : IScenario<IDesignParkingSystem>
     {
-        public ParkingSystemScenario(
-            int bigCapacity,
-            int mediumCapacity,
-            int smallCapacity,
-            IOperation<IDesignParkingSystem>[] operations,
-            IOperationResult[] operationResults)
+        public ParkingSystemScenario(int bigCapacity, int mediumCapacity, int smallCapacity, IOperation<IDesignParkingSystem>[] operations, IOperationResult[] operationResults)
         {
             BigCapacity = bigCapacity;
             MediumCapacity = mediumCapacity;
@@ -236,7 +105,9 @@ public abstract class DesignParkingSystemTestsBase
             return new Result(result);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly bool _success;
 

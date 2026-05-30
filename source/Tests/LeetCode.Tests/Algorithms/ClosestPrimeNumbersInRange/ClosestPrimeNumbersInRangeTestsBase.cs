@@ -18,8 +18,7 @@ public abstract class ClosestPrimeNumbersInRangeTestsBase<T> where T : IClosestP
     [TestMethod]
     [DataRow(10, 19, new[] { 11, 13 })]
     [DataRow(4, 6, new[] { -1, -1 })]
-    public void ClosestPrimes_WithGivenRange_ReturnsClosestPrimePair(int left, int right,
-        int[] expectedResult)
+    public void ClosestPrimes_WithGivenRange_ReturnsClosestPrimePair(int left, int right, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

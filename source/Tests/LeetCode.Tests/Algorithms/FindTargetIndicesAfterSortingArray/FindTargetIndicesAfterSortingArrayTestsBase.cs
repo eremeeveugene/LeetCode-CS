@@ -13,15 +13,13 @@ using LeetCode.Algorithms.FindTargetIndicesAfterSortingArray;
 
 namespace LeetCode.Tests.Algorithms.FindTargetIndicesAfterSortingArray;
 
-public abstract class FindTargetIndicesAfterSortingArrayTestsBase<T>
-    where T : IFindTargetIndicesAfterSortingArray, new()
+public abstract class FindTargetIndicesAfterSortingArrayTestsBase<T> where T : IFindTargetIndicesAfterSortingArray, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 5, 2, 3 }, 2, new[] { 1, 2 })]
     [DataRow(new[] { 1, 2, 5, 2, 3 }, 3, new[] { 3 })]
     [DataRow(new[] { 1, 2, 5, 2, 3 }, 5, new[] { 4 })]
-    public void TargetIndices_WithArrayAndTarget_ReturnsListOfTargetIndices(int[] nums, int target,
-        int[] expectedResult)
+    public void TargetIndices_WithArrayAndTarget_ReturnsListOfTargetIndices(int[] nums, int target, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

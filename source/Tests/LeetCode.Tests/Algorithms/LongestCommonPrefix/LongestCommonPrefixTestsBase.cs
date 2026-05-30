@@ -30,8 +30,7 @@ public abstract class LongestCommonPrefixTestsBase<T> where T : ILongestCommonPr
     [DataRow(new[] { "prefix", "pretext", "preference", "pre" }, "pre")]
     [DataRow(new[] { "ab", "ab", "abc" }, "ab")]
     [DataRow(new[] { "longest", "longer", "long", "longing" }, "long")]
-    public void LongestCommonPrefix_WithStringArray_ReturnsLongestCommonPrefix(string[] strs,
-        string expectedResult)
+    public void LongestCommonPrefix_WithStringArray_ReturnsLongestCommonPrefix(string[] strs, string expectedResult)
     {
         // Arrange
         var solution = new T();

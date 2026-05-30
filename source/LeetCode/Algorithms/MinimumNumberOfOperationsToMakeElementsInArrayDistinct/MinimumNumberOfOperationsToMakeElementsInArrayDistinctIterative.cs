@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.MinimumNumberOfOperationsToMakeElementsInArrayDistinct;
 
 /// <inheritdoc />
-public sealed class MinimumNumberOfOperationsToMakeElementsInArrayDistinctIterative :
-    IMinimumNumberOfOperationsToMakeElementsInArrayDistinct
+public sealed class MinimumNumberOfOperationsToMakeElementsInArrayDistinctIterative : IMinimumNumberOfOperationsToMakeElementsInArrayDistinct
 {
     /// <summary>
     ///     Time complexity - O(n)

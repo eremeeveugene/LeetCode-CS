@@ -23,10 +23,7 @@ public sealed class DistributeCandiesAmongChildren2Math : IDistributeCandiesAmon
     /// <returns></returns>
     public long DistributeCandies(int n, int limit)
     {
-        return GetCombinationsCount(n + 2)
-               - (GetCombinationsCount(n - limit + 1) * 3)
-               + (GetCombinationsCount(n - (2 * (limit + 1)) + 2) * 3)
-               - GetCombinationsCount(n - (3 * (limit + 1)) + 2);
+        return GetCombinationsCount(n + 2) - (GetCombinationsCount(n - limit + 1) * 3) + (GetCombinationsCount(n - (2 * (limit + 1)) + 2) * 3) - GetCombinationsCount(n - (3 * (limit + 1)) + 2);
     }
 
     private static long GetCombinationsCount(int n)

@@ -18,8 +18,7 @@ public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignN
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void DesignNumberContainerSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        IScenario<IDesignNumberContainerSystem> scenario)
+    public void DesignNumberContainerSystem_WithMixedOperations_ProcessesOperationsAccordingToSpecification(IScenario<IDesignNumberContainerSystem> scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -45,79 +44,13 @@ public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignN
 
     private static IEnumerable<IScenario<IDesignNumberContainerSystem>[]> GetScenarios()
     {
-        yield return
-        [
-            new Scenario<IDesignNumberContainerSystem>(
-                [
-                    new FindOperation(10),
-                    new ChangeOperation(2, 10),
-                    new ChangeOperation(1, 10),
-                    new ChangeOperation(3, 10),
-                    new ChangeOperation(5, 10),
-                    new FindOperation(10),
-                    new ChangeOperation(1, 20),
-                    new FindOperation(10)
-                ],
-                [
-                    new FindOperation.Result(-1),
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new FindOperation.Result(1),
-                    VoidOperationResult.Instance,
-                    new FindOperation.Result(2)
-                ])
-        ];
+        yield return [new Scenario<IDesignNumberContainerSystem>([new FindOperation(10), new ChangeOperation(2, 10), new ChangeOperation(1, 10), new ChangeOperation(3, 10), new ChangeOperation(5, 10), new FindOperation(10), new ChangeOperation(1, 20), new FindOperation(10)], [new FindOperation.Result(-1), VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new FindOperation.Result(1), VoidOperationResult.Instance, new FindOperation.Result(2)])];
 
-        yield return
-        [
-            new Scenario<IDesignNumberContainerSystem>(
-                [
-                    new FindOperation(1),
-                    new FindOperation(0)
-                ],
-                [
-                    new FindOperation.Result(-1),
-                    new FindOperation.Result(-1)
-                ])
-        ];
+        yield return [new Scenario<IDesignNumberContainerSystem>([new FindOperation(1), new FindOperation(0)], [new FindOperation.Result(-1), new FindOperation.Result(-1)])];
 
-        yield return
-        [
-            new Scenario<IDesignNumberContainerSystem>(
-                [
-                    new ChangeOperation(1, 10),
-                    new FindOperation(10),
-                    new ChangeOperation(1, 20),
-                    new FindOperation(10),
-                    new FindOperation(20)
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new FindOperation.Result(1),
-                    VoidOperationResult.Instance,
-                    new FindOperation.Result(-1),
-                    new FindOperation.Result(1)
-                ])
-        ];
+        yield return [new Scenario<IDesignNumberContainerSystem>([new ChangeOperation(1, 10), new FindOperation(10), new ChangeOperation(1, 20), new FindOperation(10), new FindOperation(20)], [VoidOperationResult.Instance, new FindOperation.Result(1), VoidOperationResult.Instance, new FindOperation.Result(-1), new FindOperation.Result(1)])];
 
-        yield return
-        [
-            new Scenario<IDesignNumberContainerSystem>(
-                [
-                    new ChangeOperation(5, 10),
-                    new ChangeOperation(2, 10),
-                    new ChangeOperation(8, 10),
-                    new FindOperation(10)
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new FindOperation.Result(2)
-                ])
-        ];
+        yield return [new Scenario<IDesignNumberContainerSystem>([new ChangeOperation(5, 10), new ChangeOperation(2, 10), new ChangeOperation(8, 10), new FindOperation(10)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new FindOperation.Result(2)])];
     }
 
     private sealed class ChangeOperation : IOperation<IDesignNumberContainerSystem>
@@ -155,7 +88,9 @@ public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignN
             return new Result(index);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int _index;
 

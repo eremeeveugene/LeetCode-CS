@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumNumberOfWordsYouCanType;
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfWordsYouCanType;
 
 [TestClass]
-public class MaximumNumberOfWordsYouCanTypeHashSetTests :
-    MaximumNumberOfWordsYouCanTypeTestsBase<MaximumNumberOfWordsYouCanTypeHashSet>;
+public class MaximumNumberOfWordsYouCanTypeHashSetTests : MaximumNumberOfWordsYouCanTypeTestsBase<MaximumNumberOfWordsYouCanTypeHashSet>;

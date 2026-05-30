@@ -13,14 +13,12 @@ using LeetCode.Algorithms.FindResultantArrayAfterRemovingAnagrams;
 
 namespace LeetCode.Tests.Algorithms.FindResultantArrayAfterRemovingAnagrams;
 
-public abstract class FindResultantArrayAfterRemovingAnagramsTestsBase<T>
-    where T : IFindResultantArrayAfterRemovingAnagrams, new()
+public abstract class FindResultantArrayAfterRemovingAnagramsTestsBase<T> where T : IFindResultantArrayAfterRemovingAnagrams, new()
 {
     [TestMethod]
     [DataRow(new[] { "abba", "baba", "bbaa", "cd", "cd" }, new[] { "abba", "cd" })]
     [DataRow(new[] { "a", "b", "c", "d", "e" }, new[] { "a", "b", "c", "d", "e" })]
-    public void RemoveAnagrams_WithWordsArray_RemovesAllSubsequentAnagramDuplicates(string[] words,
-        string[] expectedResult)
+    public void RemoveAnagrams_WithWordsArray_RemovesAllSubsequentAnagramDuplicates(string[] words, string[] expectedResult)
     {
         // Arrange
         var solution = new T();

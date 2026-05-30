@@ -18,8 +18,7 @@ public abstract class LargestPerimeterTriangleTestsBase<T> where T : ILargestPer
     [TestMethod]
     [DataRow(new[] { 2, 1, 2 }, 5)]
     [DataRow(new[] { 1, 2, 1, 10 }, 0)]
-    public void LargestPerimeter_WithSideLengths_ReturnsMaximumTrianglePerimeterOrZero(int[] nums,
-        int expectedResult)
+    public void LargestPerimeter_WithSideLengths_ReturnsMaximumTrianglePerimeterOrZero(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

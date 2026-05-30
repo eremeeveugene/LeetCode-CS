@@ -19,8 +19,7 @@ public abstract class TransformedArrayTestsBase<T> where T : ITransformedArray, 
     [DataRow(new[] { 3, -2, 1, 1 }, new[] { 1, 1, 1, 3 })]
     [DataRow(new[] { -1, 4, -1 }, new[] { -1, -1, 4 })]
     [DataRow(new[] { -10 }, new[] { -10 })]
-    public void ConstructTransformedArray_WithInputArray_ReturnsTransformedArray(int[] nums,
-        int[] expectedResult)
+    public void ConstructTransformedArray_WithInputArray_ReturnsTransformedArray(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

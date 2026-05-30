@@ -56,13 +56,9 @@ public sealed class ClosestEqualElementQueriesDictionaryBinarySearch : ClosestEq
 
             var position = indexes.BinarySearch(queryIndex);
 
-            var previousIndex = position == 0
-                ? indexes[^1]
-                : indexes[position - 1];
+            var previousIndex = position == 0 ? indexes[^1] : indexes[position - 1];
 
-            var nextIndex = position == indexes.Count - 1
-                ? indexes[0]
-                : indexes[position + 1];
+            var nextIndex = position == indexes.Count - 1 ? indexes[0] : indexes[position + 1];
 
             var previousDistance = GetCircularDistance(queryIndex, previousIndex, n);
             var nextDistance = GetCircularDistance(queryIndex, nextIndex, n);

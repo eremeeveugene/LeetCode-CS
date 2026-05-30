@@ -13,8 +13,7 @@ using LeetCode.Algorithms.RemoveZerosInDecimalRepresentation;
 
 namespace LeetCode.Tests.Algorithms.RemoveZerosInDecimalRepresentation;
 
-public abstract class RemoveZerosInDecimalRepresentationTestsBase<T>
-    where T : IRemoveZerosInDecimalRepresentation, new()
+public abstract class RemoveZerosInDecimalRepresentationTestsBase<T> where T : IRemoveZerosInDecimalRepresentation, new()
 {
     [TestMethod]
     [DataRow(1, 1)]

@@ -21,8 +21,7 @@ public abstract class DesignHashMapTestsBase<T> where T : IDesignHashMap, new()
 
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void DesignHashMap_WithMixedOperations_ProcessesOperationsAccordingToSpecification(string[] operations,
-        int[][] arguments, int[] expectedResult)
+    public void DesignHashMap_WithMixedOperations_ProcessesOperationsAccordingToSpecification(string[] operations, int[][] arguments, int[] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -57,11 +56,6 @@ public abstract class DesignHashMapTestsBase<T> where T : IDesignHashMap, new()
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return
-        [
-            new[] { "put", "put", "get", "get", "put", "get", "remove", "get" },
-            new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 1 }, new[] { 3 }, new[] { 2, 1 }, new[] { 2 }, new[] { 2 }, new[] { 2 } },
-            new[] { 1, -1, 1, -1 }
-        ];
+        yield return [new[] { "put", "put", "get", "get", "put", "get", "remove", "get" }, new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 1 }, new[] { 3 }, new[] { 2, 1 }, new[] { 2 }, new[] { 2 }, new[] { 2 } }, new[] { 1, -1, 1, -1 }];
     }
 }

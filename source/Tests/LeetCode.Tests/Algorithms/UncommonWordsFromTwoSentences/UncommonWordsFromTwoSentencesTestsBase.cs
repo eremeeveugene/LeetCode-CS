@@ -20,8 +20,7 @@ public abstract class UncommonWordsFromTwoSentencesTestsBase<T> where T : IUncom
     [DataRow("apple apple", "banana", new[] { "banana" })]
     [DataRow("abcd def abcd xyz", "ijk def ijk", new[] { "xyz" })]
     [DataRow("s z z z s", "s z ejt", new[] { "ejt" })]
-    public void UncommonFromSentences_GivenTwoStrings_ReturnsUncommonWords(string s1, string s2,
-        string[] expectedResult)
+    public void UncommonFromSentences_GivenTwoStrings_ReturnsUncommonWords(string s1, string s2, string[] expectedResult)
     {
         // Arrange
         var solution = new T();

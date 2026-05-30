@@ -41,8 +41,7 @@ public sealed class PathWithMaximumProbabilityDijkstra : PathWithMaximumProbabil
         return GetMaxProbability(edgesDictionary, n, startNode, endNode);
     }
 
-    private static double GetMaxProbability(Dictionary<int, List<(int Node, double Probability)>> edgesDictionary,
-        int n, int startNode, int endNode)
+    private static double GetMaxProbability(Dictionary<int, List<(int Node, double Probability)>> edgesDictionary, int n, int startNode, int endNode)
     {
         var probabilityNodesPriorityQueue = new PriorityQueue<(double Probability, int Node), double>();
 

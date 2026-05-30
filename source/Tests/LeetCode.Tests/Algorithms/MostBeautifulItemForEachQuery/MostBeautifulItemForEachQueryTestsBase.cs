@@ -17,8 +17,7 @@ public abstract class MostBeautifulItemForEachQueryTestsBase<T> where T : IMostB
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MaximumBeauty_WithItemsAndQueries_CalculatesCorrectBeautyValues(int[][] items,
-        int[] queries, int[] expectedResult)
+    public void MaximumBeauty_WithItemsAndQueries_CalculatesCorrectBeautyValues(int[][] items, int[] queries, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

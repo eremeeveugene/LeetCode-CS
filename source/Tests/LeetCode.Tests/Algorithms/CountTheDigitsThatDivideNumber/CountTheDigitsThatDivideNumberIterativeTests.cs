@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountTheDigitsThatDivideNumber;
 namespace LeetCode.Tests.Algorithms.CountTheDigitsThatDivideNumber;
 
 [TestClass]
-public sealed class CountTheDigitsThatDivideNumberIterativeTests :
-    CountTheDigitsThatDivideNumberTestsBase<CountTheDigitsThatDivideNumberIterative>;
+public sealed class CountTheDigitsThatDivideNumberIterativeTests : CountTheDigitsThatDivideNumberTestsBase<CountTheDigitsThatDivideNumberIterative>;

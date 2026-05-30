@@ -33,10 +33,7 @@ public sealed class DesignBrowserHistoryLinkedList : IDesignBrowserHistory
     /// <param name="url"></param>
     public void Visit(string url)
     {
-        _current.Next = new Node(url)
-        {
-            Previous = _current
-        };
+        _current.Next = new Node(url) { Previous = _current };
 
         _current = _current.Next;
     }

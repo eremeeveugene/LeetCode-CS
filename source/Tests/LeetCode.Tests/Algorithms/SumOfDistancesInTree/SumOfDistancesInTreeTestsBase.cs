@@ -17,8 +17,7 @@ public abstract class SumOfDistancesInTreeTestsBase<T> where T : ISumOfDistances
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void SumOfDistancesInTree_GivenNumberOfNodesAndEdges_ReturnsDistanceSumsArray(int n, int[][] edges,
-        int[] expectedResult)
+    public void SumOfDistancesInTree_GivenNumberOfNodesAndEdges_ReturnsDistanceSumsArray(int n, int[][] edges, int[] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -32,8 +31,7 @@ public abstract class SumOfDistancesInTreeTestsBase<T> where T : ISumOfDistances
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return
-            [6, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 2, 3 }, new[] { 2, 4 }, new[] { 2, 5 } }, new[] { 8, 12, 6, 10, 10, 10 }];
+        yield return [6, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 2, 3 }, new[] { 2, 4 }, new[] { 2, 5 } }, new[] { 8, 12, 6, 10, 10, 10 }];
 
         yield return [1, Array.Empty<int[]>(), new[] { 0 }];
 

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FractionAdditionAndSubtraction;
 namespace LeetCode.Tests.Algorithms.FractionAdditionAndSubtraction;
 
 [TestClass]
-public sealed class FractionAdditionAndSubtractionSimulationTests :
-    FractionAdditionAndSubtractionTestsBase<FractionAdditionAndSubtractionSimulation>;
+public sealed class FractionAdditionAndSubtractionSimulationTests : FractionAdditionAndSubtractionTestsBase<FractionAdditionAndSubtractionSimulation>;

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CheckIfAllAsAppearsBeforeAllBs;
 namespace LeetCode.Tests.Algorithms.CheckIfAllAsAppearsBeforeAllBs;
 
 [TestClass]
-public sealed class CheckIfAllAsAppearsBeforeAllBsIterativeTests :
-    CheckIfAllAsAppearsBeforeAllBsTestsBase<CheckIfAllAsAppearsBeforeAllBsIterative>;
+public sealed class CheckIfAllAsAppearsBeforeAllBsIterativeTests : CheckIfAllAsAppearsBeforeAllBsTestsBase<CheckIfAllAsAppearsBeforeAllBsIterative>;

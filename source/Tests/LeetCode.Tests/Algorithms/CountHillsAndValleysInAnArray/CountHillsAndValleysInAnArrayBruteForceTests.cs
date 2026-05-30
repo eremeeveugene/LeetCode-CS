@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountHillsAndValleysInAnArray;
 namespace LeetCode.Tests.Algorithms.CountHillsAndValleysInAnArray;
 
 [TestClass]
-public sealed class CountHillsAndValleysInAnArrayBruteForceTests :
-    CountHillsAndValleysInAnArrayTestsBase<CountHillsAndValleysInAnArrayBruteForce>;
+public sealed class CountHillsAndValleysInAnArrayBruteForceTests : CountHillsAndValleysInAnArrayTestsBase<CountHillsAndValleysInAnArrayBruteForce>;

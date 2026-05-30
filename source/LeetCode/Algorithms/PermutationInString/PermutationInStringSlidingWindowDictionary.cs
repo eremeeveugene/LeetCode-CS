@@ -66,8 +66,7 @@ public sealed class PermutationInStringSlidingWindowDictionary : IPermutationInS
     {
         foreach (var dictionary1Item in dictionary1)
         {
-            if (!dictionary2.TryGetValue(dictionary1Item.Key, out var dictionary2ItemValue) ||
-                dictionary2ItemValue != dictionary1Item.Value)
+            if (!dictionary2.TryGetValue(dictionary1Item.Key, out var dictionary2ItemValue) || dictionary2ItemValue != dictionary1Item.Value)
             {
                 return false;
             }

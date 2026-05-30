@@ -14,10 +14,7 @@ namespace LeetCode.Algorithms.LargestThreeSameDigitNumberInString;
 /// <inheritdoc />
 public sealed class LargestThreeSameDigitNumberInStringGreedyOptimized : ILargestThreeSameDigitNumberInString
 {
-    private static readonly string[] Triples =
-    [
-        "000", "111", "222", "333", "444", "555", "666", "777", "888", "999"
-    ];
+    private static readonly string[] Triples = ["000", "111", "222", "333", "444", "555", "666", "777", "888", "999"];
 
     /// <summary>
     ///     Time complexity - O(n)

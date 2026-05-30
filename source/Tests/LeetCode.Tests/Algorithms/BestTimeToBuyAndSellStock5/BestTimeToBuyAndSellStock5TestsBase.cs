@@ -18,8 +18,7 @@ public abstract class BestTimeToBuyAndSellStock5TestsBase<T> where T : IBestTime
     [TestMethod]
     [DataRow(new[] { 1, 7, 9, 8, 2 }, 2, 14L)]
     [DataRow(new[] { 12, 16, 19, 19, 8, 1, 19, 13, 9 }, 3, 36L)]
-    public void MaximumProfit_WithPricesAndTransactionLimit_ReturnsMaximumTotalProfitConsideringNormalAndShortSelling(
-        int[] prices, int maxTransactions, long expectedResult)
+    public void MaximumProfit_WithPricesAndTransactionLimit_ReturnsMaximumTotalProfitConsideringNormalAndShortSelling(int[] prices, int maxTransactions, long expectedResult)
     {
         // Arrange
         var solution = new T();

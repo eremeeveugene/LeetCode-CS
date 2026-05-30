@@ -19,8 +19,7 @@ public abstract class TwoSum2InputArrayIsSortedTestsBase<T> where T : ITwoSum2In
     [DataRow(new[] { 2, 7, 11, 15 }, 9, new[] { 1, 2 })]
     [DataRow(new[] { 2, 3, 4 }, 6, new[] { 1, 3 })]
     [DataRow(new[] { -1, 0 }, -1, new[] { 1, 2 })]
-    public void TwoSum_WithSortedArrayAndTargetSum_ReturnsOneIndexedPairAddingToTarget(int[] numbers, int target,
-        int[] expectedResult)
+    public void TwoSum_WithSortedArrayAndTargetSum_ReturnsOneIndexedPairAddingToTarget(int[] numbers, int target, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

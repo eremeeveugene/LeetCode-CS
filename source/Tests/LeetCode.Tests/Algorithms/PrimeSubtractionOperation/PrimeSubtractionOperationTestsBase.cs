@@ -19,8 +19,7 @@ public abstract class PrimeSubtractionOperationTestsBase<T> where T : IPrimeSubt
     [DataRow(new[] { 4, 9, 6, 10 }, true)]
     [DataRow(new[] { 6, 8, 11, 12 }, true)]
     [DataRow(new[] { 5, 8, 3 }, false)]
-    public void PrimeSubOperation_WithInputArray_ReturnsTrueIfPrimeSubsequencePossible(int[] nums,
-        bool expectedResult)
+    public void PrimeSubOperation_WithInputArray_ReturnsTrueIfPrimeSubsequencePossible(int[] nums, bool expectedResult)
     {
         // Arrange
         var solution = new T();

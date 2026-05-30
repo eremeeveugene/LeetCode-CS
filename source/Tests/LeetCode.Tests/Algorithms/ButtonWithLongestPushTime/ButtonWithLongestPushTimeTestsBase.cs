@@ -17,8 +17,7 @@ public abstract class ButtonWithLongestPushTimeTestsBase<T> where T : IButtonWit
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void ButtonWithLongestTime_GivenEventArray_ReturnsIdOfButtonWithMaxTime(int[][] events,
-        int expectedResult)
+    public void ButtonWithLongestTime_GivenEventArray_ReturnsIdOfButtonWithMaxTime(int[][] events, int expectedResult)
     {
         // Arrange
         var solution = new T();

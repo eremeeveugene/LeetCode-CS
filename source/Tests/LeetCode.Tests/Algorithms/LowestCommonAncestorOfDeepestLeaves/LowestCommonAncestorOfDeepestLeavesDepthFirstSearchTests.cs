@@ -14,5 +14,4 @@ using LeetCode.Algorithms.LowestCommonAncestorOfDeepestLeaves;
 namespace LeetCode.Tests.Algorithms.LowestCommonAncestorOfDeepestLeaves;
 
 [TestClass]
-public sealed class LowestCommonAncestorOfDeepestLeavesDepthFirstSearchTests :
-    LowestCommonAncestorOfDeepestLeavesTestsBase<LowestCommonAncestorOfDeepestLeavesDepthFirstSearch>;
+public sealed class LowestCommonAncestorOfDeepestLeavesDepthFirstSearchTests : LowestCommonAncestorOfDeepestLeavesTestsBase<LowestCommonAncestorOfDeepestLeavesDepthFirstSearch>;

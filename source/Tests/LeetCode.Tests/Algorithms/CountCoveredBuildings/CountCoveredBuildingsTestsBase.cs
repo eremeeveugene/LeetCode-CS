@@ -17,8 +17,7 @@ public abstract class CountCoveredBuildingsTestsBase<T> where T : ICountCoveredB
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void CountCoveredBuildings_WithBuildingsInGrid_ReturnsNumberOfBuildingsCoveredFromAllFourDirections(int n,
-        int[][] buildings, int expectedResult)
+    public void CountCoveredBuildings_WithBuildingsInGrid_ReturnsNumberOfBuildingsCoveredFromAllFourDirections(int n, int[][] buildings, int expectedResult)
     {
         // Arrange
         var solution = new T();

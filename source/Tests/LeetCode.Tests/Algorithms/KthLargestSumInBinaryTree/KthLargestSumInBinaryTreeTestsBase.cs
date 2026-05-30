@@ -18,8 +18,7 @@ public abstract class KthLargestSumInBinaryTreeTestsBase<T> where T : IKthLarges
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void KthLargestLevelSum_WithTreeAndK_ReturnsKthLargestLevelSum(int?[] rootArray, int k,
-        long expectedResult)
+    public void KthLargestLevelSum_WithTreeAndK_ReturnsKthLargestLevelSum(int?[] rootArray, int k, long expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);

@@ -18,8 +18,7 @@ public abstract class ProductOfArrayExceptSelfTestsBase<T> where T : IProductOfA
     [TestMethod]
     [DataRow(new[] { 1, 2, 3, 4 }, new[] { 24, 12, 8, 6 })]
     [DataRow(new[] { -1, 1, 0, -3, 3 }, new[] { 0, 0, 9, 0, 0 })]
-    public void ProductExceptSelf_WithIntegerArray_ReturnsArrayWithProductsExcludingCurrentIndex(int[] nums,
-        int[] expectedResult)
+    public void ProductExceptSelf_WithIntegerArray_ReturnsArrayWithProductsExcludingCurrentIndex(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

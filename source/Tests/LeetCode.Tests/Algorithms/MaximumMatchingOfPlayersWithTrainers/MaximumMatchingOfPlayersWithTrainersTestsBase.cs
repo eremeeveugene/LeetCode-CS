@@ -13,14 +13,12 @@ using LeetCode.Algorithms.MaximumMatchingOfPlayersWithTrainers;
 
 namespace LeetCode.Tests.Algorithms.MaximumMatchingOfPlayersWithTrainers;
 
-public abstract class MaximumMatchingOfPlayersWithTrainersTestsBase<T>
-    where T : IMaximumMatchingOfPlayersWithTrainers, new()
+public abstract class MaximumMatchingOfPlayersWithTrainersTestsBase<T> where T : IMaximumMatchingOfPlayersWithTrainers, new()
 {
     [TestMethod]
     [DataRow(new[] { 4, 7, 9 }, new[] { 8, 2, 5, 8 }, 2L)]
     [DataRow(new[] { 1, 1, 1 }, new[] { 10 }, 1L)]
-    public void MatchPlayersAndTrainers_WithPlayerAbilitiesAndTrainerCapacities_ReturnsMaximumMatchingCount(
-        int[] players, int[] trainers, long expectedResult)
+    public void MatchPlayersAndTrainers_WithPlayerAbilitiesAndTrainerCapacities_ReturnsMaximumMatchingCount(int[] players, int[] trainers, long expectedResult)
     {
         // Arrange
         var solution = new T();

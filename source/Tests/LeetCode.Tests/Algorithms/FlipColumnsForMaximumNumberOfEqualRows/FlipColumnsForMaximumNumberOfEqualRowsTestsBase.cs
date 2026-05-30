@@ -13,8 +13,7 @@ using LeetCode.Algorithms.FlipColumnsForMaximumNumberOfEqualRows;
 
 namespace LeetCode.Tests.Algorithms.FlipColumnsForMaximumNumberOfEqualRows;
 
-public abstract class FlipColumnsForMaximumNumberOfEqualRowsTestsBase<T>
-    where T : IFlipColumnsForMaximumNumberOfEqualRows, new()
+public abstract class FlipColumnsForMaximumNumberOfEqualRowsTestsBase<T> where T : IFlipColumnsForMaximumNumberOfEqualRows, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]

@@ -73,8 +73,7 @@ public sealed class ModifyGraphEdgeWeightsDijkstra : IModifyGraphEdgeWeights
         return edges;
     }
 
-    private static void Dijkstra(List<Edge>[] adjacencyEdges, int[][] edges, int[,] distances, int source,
-        int difference, int run)
+    private static void Dijkstra(List<Edge>[] adjacencyEdges, int[][] edges, int[,] distances, int source, int difference, int run)
     {
         var edgeDistancesPriorityQueue = new PriorityQueue<EdgeDistance, int>();
 

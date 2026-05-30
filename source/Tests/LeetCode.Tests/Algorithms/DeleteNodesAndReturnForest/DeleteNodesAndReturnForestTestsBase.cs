@@ -19,8 +19,7 @@ public abstract class DeleteNodesAndReturnForestTestsBase<T> where T : IDeleteNo
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void DelNodes_WithGivenNodesToDelete_ModifiesTreeCorrectly(int?[] rootArray, int[] toDelete,
-        int?[][] expectedResultArray)
+    public void DelNodes_WithGivenNodesToDelete_ModifiesTreeCorrectly(int?[] rootArray, int[] toDelete, int?[][] expectedResultArray)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);

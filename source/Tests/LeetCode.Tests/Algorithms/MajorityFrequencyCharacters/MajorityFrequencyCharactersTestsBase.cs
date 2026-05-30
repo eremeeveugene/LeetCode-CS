@@ -13,15 +13,13 @@ using LeetCode.Algorithms.MajorityFrequencyCharacters;
 
 namespace LeetCode.Tests.Algorithms.MajorityFrequencyCharacters;
 
-public abstract class MajorityFrequencyCharactersTestsBase<T>
-    where T : IMajorityFrequencyCharacters, new()
+public abstract class MajorityFrequencyCharactersTestsBase<T> where T : IMajorityFrequencyCharacters, new()
 {
     [TestMethod]
     [DataRow("aaabbbccdddde", "ab")]
     [DataRow("abcd", "abcd")]
     [DataRow("pfpfgi", "pf")]
-    public void MajorityFrequencyGroup_WithInputString_ReturnsCharactersFromTheLargestDistinctCharactersGroup(
-        string s, string expectedResult)
+    public void MajorityFrequencyGroup_WithInputString_ReturnsCharactersFromTheLargestDistinctCharactersGroup(string s, string expectedResult)
     {
         // Arrange
         var solution = new T();

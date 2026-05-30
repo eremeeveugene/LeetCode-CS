@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumNumberOfKDivisibleComponents;
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfKDivisibleComponents;
 
 [TestClass]
-public class MaximumNumberOfKDivisibleComponentsDepthFirstSearchTests :
-    MaximumNumberOfKDivisibleComponentsTestsBase<MaximumNumberOfKDivisibleComponentsDepthFirstSearch>;
+public class MaximumNumberOfKDivisibleComponentsDepthFirstSearchTests : MaximumNumberOfKDivisibleComponentsTestsBase<MaximumNumberOfKDivisibleComponentsDepthFirstSearch>;

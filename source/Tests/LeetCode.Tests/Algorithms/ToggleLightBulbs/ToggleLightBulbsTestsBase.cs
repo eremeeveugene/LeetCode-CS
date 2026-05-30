@@ -17,8 +17,7 @@ public abstract class ToggleLightBulbsTestsBase<T> where T : IToggleLightBulbs, 
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void ToggleLightBulbs_WithGivenBulbSequence_ReturnsSwitchedOnBulbsSortedInAscendingOrder(
-        List<int> bulbs, int[] expectedResult)
+    public void ToggleLightBulbs_WithGivenBulbSequence_ReturnsSwitchedOnBulbsSortedInAscendingOrder(List<int> bulbs, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

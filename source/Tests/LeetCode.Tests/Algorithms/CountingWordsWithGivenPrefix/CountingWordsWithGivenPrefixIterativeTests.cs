@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CountingWordsWithGivenPrefix;
 namespace LeetCode.Tests.Algorithms.CountingWordsWithGivenPrefix;
 
 [TestClass]
-public sealed class CountingWordsWithGivenPrefixIterativeTests :
-    CountingWordsWithGivenPrefixTestsBase<CountingWordsWithGivenPrefixIterative>;
+public sealed class CountingWordsWithGivenPrefixIterativeTests : CountingWordsWithGivenPrefixTestsBase<CountingWordsWithGivenPrefixIterative>;

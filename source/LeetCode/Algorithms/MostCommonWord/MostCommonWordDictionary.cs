@@ -41,25 +41,19 @@ public sealed class MostCommonWordDictionary : IMostCommonWord
             }
             else if (currentWordStringBuilder.Length > 0)
             {
-                ProcessWord(currentWordStringBuilder, bannedHashSet, wordsFrequencyDictionary, ref mostCommonWord,
-                    ref mostFrequency);
+                ProcessWord(currentWordStringBuilder, bannedHashSet, wordsFrequencyDictionary, ref mostCommonWord, ref mostFrequency);
             }
         }
 
         if (currentWordStringBuilder.Length > 0)
         {
-            ProcessWord(currentWordStringBuilder, bannedHashSet, wordsFrequencyDictionary, ref mostCommonWord,
-                ref mostFrequency);
+            ProcessWord(currentWordStringBuilder, bannedHashSet, wordsFrequencyDictionary, ref mostCommonWord, ref mostFrequency);
         }
 
         return mostCommonWord;
     }
 
-    private static void ProcessWord(StringBuilder currentWordStringBuilder,
-        HashSet<string> bannedHashSet,
-        Dictionary<string, int> wordsFrequencyDictionary,
-        ref string mostCommonWord,
-        ref int mostFrequency)
+    private static void ProcessWord(StringBuilder currentWordStringBuilder, HashSet<string> bannedHashSet, Dictionary<string, int> wordsFrequencyDictionary, ref string mostCommonWord, ref int mostFrequency)
     {
         var word = currentWordStringBuilder.ToString();
 

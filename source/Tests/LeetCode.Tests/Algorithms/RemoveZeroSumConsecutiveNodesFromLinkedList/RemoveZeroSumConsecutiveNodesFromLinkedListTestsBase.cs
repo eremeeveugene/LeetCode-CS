@@ -15,15 +15,13 @@ using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList;
 
-public abstract class RemoveZeroSumConsecutiveNodesFromLinkedListTestsBase<T>
-    where T : IRemoveZeroSumConsecutiveNodesFromLinkedList, new()
+public abstract class RemoveZeroSumConsecutiveNodesFromLinkedListTestsBase<T> where T : IRemoveZeroSumConsecutiveNodesFromLinkedList, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, -3, 3, 1 }, new[] { 3, 1 })]
     [DataRow(new[] { 1, 2, 3, -3, 4 }, new[] { 1, 2, 4 })]
     [DataRow(new[] { 1, 2, 3, -3, -2 }, new[] { 1 })]
-    public void RemoveZeroSumSublists_WithListContainingZeroSumSequences_ReturnsListWithZeroSumSublistsRemoved(
-        int[] headArray, int[] expectedResultArray)
+    public void RemoveZeroSumSublists_WithListContainingZeroSumSequences_ReturnsListWithZeroSumSublistsRemoved(int[] headArray, int[] expectedResultArray)
     {
         // Arrange
         var head = ListNode.ToListNode(headArray);

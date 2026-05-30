@@ -17,8 +17,7 @@ public abstract class CheckIfItIsStraightLineTestsBase<T> where T : ICheckIfItIs
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void CheckStraightLine_WithGivenCoordinates_ReturnsIfPointsFormStraightLine(int[][] coordinates,
-        bool expectedResult)
+    public void CheckStraightLine_WithGivenCoordinates_ReturnsIfPointsFormStraightLine(int[][] coordinates, bool expectedResult)
     {
         // Arrange
         var solution = new T();

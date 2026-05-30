@@ -13,8 +13,7 @@ using LeetCode.Algorithms.DivideIntervalsIntoMinimumNumberOfGroups;
 
 namespace LeetCode.Tests.Algorithms.DivideIntervalsIntoMinimumNumberOfGroups;
 
-public abstract class DivideIntervalsIntoMinimumNumberOfGroupsTestsBase<T>
-    where T : IDivideIntervalsIntoMinimumNumberOfGroups, new()
+public abstract class DivideIntervalsIntoMinimumNumberOfGroupsTestsBase<T> where T : IDivideIntervalsIntoMinimumNumberOfGroups, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]

@@ -18,8 +18,7 @@ public abstract class ShuffleStringTestsBase<T> where T : IShuffleString, new()
     [TestMethod]
     [DataRow("codeleet", new[] { 4, 5, 6, 7, 0, 2, 1, 3 }, "leetcode")]
     [DataRow("abc", new[] { 0, 1, 2 }, "abc")]
-    public void RestoreString_WhenGivenStringAndIndicesArray_RearrangesToExpectedString(string s,
-        int[] indices, string expectedResult)
+    public void RestoreString_WhenGivenStringAndIndicesArray_RearrangesToExpectedString(string s, int[] indices, string expectedResult)
     {
         // Arrange
         var solution = new T();

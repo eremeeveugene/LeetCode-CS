@@ -18,8 +18,7 @@ public abstract class ConvertTheTemperatureTestsBase<T> where T : IConvertTheTem
     [TestMethod]
     [DataRow(36.50, new[] { 309.65000d, 97.70000d })]
     [DataRow(122.11, new[] { 395.26000d, 251.79800d })]
-    public void ConvertTemperature_WithCelsiusInput_ReturnsKelvinAndFahrenheitValues(double celsius,
-        double[] expectedResult)
+    public void ConvertTemperature_WithCelsiusInput_ReturnsKelvinAndFahrenheitValues(double celsius, double[] expectedResult)
     {
         // Arrange
         var solution = new T();

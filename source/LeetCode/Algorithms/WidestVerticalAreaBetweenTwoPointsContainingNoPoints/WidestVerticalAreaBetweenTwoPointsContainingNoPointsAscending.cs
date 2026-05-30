@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints;
 
 /// <inheritdoc />
-public sealed class WidestVerticalAreaBetweenTwoPointsContainingNoPointsAscending :
-    IWidestVerticalAreaBetweenTwoPointsContainingNoPoints
+public sealed class WidestVerticalAreaBetweenTwoPointsContainingNoPointsAscending : IWidestVerticalAreaBetweenTwoPointsContainingNoPoints
 {
     /// <summary>
     ///     Time complexity - O(n log n)

@@ -18,8 +18,7 @@ public abstract class SumOfRootToLeafBinaryNumbersTestsBase<T> where T : ISumOfR
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void SumRootToLeaf_WithBinaryTreeInput_ReturnsSumOfRootToLeafBinaryNumbers(int?[] rootArray,
-        int expectedResult)
+    public void SumRootToLeaf_WithBinaryTreeInput_ReturnsSumOfRootToLeafBinaryNumbers(int?[] rootArray, int expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);

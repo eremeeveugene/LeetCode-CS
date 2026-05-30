@@ -19,8 +19,7 @@ public abstract class SortTheJumbledNumbersTestsBase<T> where T : ISortTheJumble
     [DataRow(new[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }, new[] { 789, 456, 123 }, new[] { 123, 456, 789 })]
     [DataRow(new[] { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 }, new[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }, new[] { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 })]
     [DataRow(new[] { 8, 9, 4, 0, 2, 1, 3, 5, 7, 6 }, new[] { 991, 338, 38 }, new[] { 338, 38, 991 })]
-    public void SortJumbled_WithDigitMappingAndNumbers_SortsNumsByMappedValuePreservingRelativeOrder(int[] mapping,
-        int[] nums, int[] expectedResult)
+    public void SortJumbled_WithDigitMappingAndNumbers_SortsNumsByMappedValuePreservingRelativeOrder(int[] mapping, int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

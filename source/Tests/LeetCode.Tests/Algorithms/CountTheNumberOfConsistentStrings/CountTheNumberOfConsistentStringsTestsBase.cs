@@ -19,8 +19,7 @@ public abstract class CountTheNumberOfConsistentStringsTestsBase<T> where T : IC
     [DataRow("ab", new[] { "ad", "bd", "aaab", "baa", "badab" }, 2)]
     [DataRow("abc", new[] { "a", "b", "c", "ab", "ac", "bc", "abc" }, 7)]
     [DataRow("cad", new[] { "cc", "acd", "b", "ba", "bac", "bad", "ac", "d" }, 4)]
-    public void CountConsistentStrings_WithAllowedCharactersAndWords_ReturnsNumberOfConsistentStrings(string allowed,
-        string[] words, int expectedResult)
+    public void CountConsistentStrings_WithAllowedCharactersAndWords_ReturnsNumberOfConsistentStrings(string allowed, string[] words, int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -32,8 +32,7 @@ public abstract class MedianOfTwoSortedArraysTestsBase<T> where T : IMedianOfTwo
     [DataRow(new[] { 1, 2, 3, 4, 5, 6 }, new[] { 7, 8, 9, 10 }, 5.5)]
     [DataRow(new[] { -10, -5, 0, 5, 10 }, new[] { 1, 2, 3, 4 }, 2d)]
     [DataRow(new[] { -2147483648, 0, 2147483647 }, new[] { -1, 1 }, 0d)]
-    public void FindMedianSortedArrays_WithTwoSortedArrays_ReturnsMedianOfMergedArray(int[] nums1,
-        int[] nums2, double expectedResult)
+    public void FindMedianSortedArrays_WithTwoSortedArrays_ReturnsMedianOfMergedArray(int[] nums1, int[] nums2, double expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ComputeDecimalRepresentation;
 namespace LeetCode.Tests.Algorithms.ComputeDecimalRepresentation;
 
 [TestClass]
-public sealed class ComputeDecimalRepresentationIterativeTests :
-    ComputeDecimalRepresentationTestsBase<ComputeDecimalRepresentationIterative>;
+public sealed class ComputeDecimalRepresentationIterativeTests : ComputeDecimalRepresentationTestsBase<ComputeDecimalRepresentationIterative>;

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo;
 namespace LeetCode.Tests.Algorithms.KeepMultiplyingFoundValuesByTwo;
 
 [TestClass]
-public sealed class KeepMultiplyingFoundValuesByTwoSortingTests :
-    KeepMultiplyingFoundValuesByTwoTestsBase<KeepMultiplyingFoundValuesByTwoSorting>;
+public sealed class KeepMultiplyingFoundValuesByTwoSortingTests : KeepMultiplyingFoundValuesByTwoTestsBase<KeepMultiplyingFoundValuesByTwoSorting>;

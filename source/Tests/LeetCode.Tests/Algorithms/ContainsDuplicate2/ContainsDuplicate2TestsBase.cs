@@ -19,8 +19,7 @@ public abstract class ContainsDuplicate2TestsBase<T> where T : IContainsDuplicat
     [DataRow(new[] { 1, 2, 3, 1 }, 3, true)]
     [DataRow(new[] { 1, 0, 1, 1 }, 1, true)]
     [DataRow(new[] { 1, 2, 3, 1, 2, 3 }, 2, false)]
-    public void ContainsNearbyDuplicate_WithGivenRange_ChecksForDuplicatesWithinRange(int[] nums, int k,
-        bool expectedResult)
+    public void ContainsNearbyDuplicate_WithGivenRange_ChecksForDuplicatesWithinRange(int[] nums, int k, bool expectedResult)
     {
         // Arrange
         var solution = new T();

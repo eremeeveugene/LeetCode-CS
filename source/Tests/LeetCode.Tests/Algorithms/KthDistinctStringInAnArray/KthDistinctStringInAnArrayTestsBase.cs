@@ -19,8 +19,7 @@ public abstract class KthDistinctStringInAnArrayTestsBase<T> where T : IKthDisti
     [DataRow(new[] { "d", "b", "c", "b", "c", "a" }, 2, "a")]
     [DataRow(new[] { "aaa", "aa", "a" }, 1, "aaa")]
     [DataRow(new[] { "a", "b", "a" }, 3, "")]
-    public void KthDistinct_GivenArrayAndK_ReturnsKthDistinctStringOrEmpty(string[] arr, int k,
-        string expectedResult)
+    public void KthDistinct_GivenArrayAndK_ReturnsKthDistinctStringOrEmpty(string[] arr, int k, string expectedResult)
     {
         // Arrange
         var solution = new T();

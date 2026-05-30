@@ -17,8 +17,7 @@ public abstract class MyCalendar2TestsBase<T> where T : IMyCalendar2, new()
 {
     [TestMethod]
     [DataRow(new[] { 10, 50, 10, 5, 5, 25 }, new[] { 20, 60, 40, 15, 10, 55 }, new[] { true, true, true, false, true, true })]
-    public void Book_WithMultipleBookings_ReturnsOverlapResults(int[] start, int[] end,
-        bool[] expectedResult)
+    public void Book_WithMultipleBookings_ReturnsOverlapResults(int[] start, int[] end, bool[] expectedResult)
     {
         // Arrange
         var solution = new T();

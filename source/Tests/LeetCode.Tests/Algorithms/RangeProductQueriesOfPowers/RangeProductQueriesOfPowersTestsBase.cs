@@ -17,8 +17,7 @@ public abstract class RangeProductQueriesOfPowersTestsBase<T> where T : IRangePr
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void ProductQueries_WithPowersOfTwoDecompositionAndRangeQueries_ReturnsModuloProductArray(int n,
-        int[][] queries, int[] expectedResult)
+    public void ProductQueries_WithPowersOfTwoDecompositionAndRangeQueries_ReturnsModuloProductArray(int n, int[][] queries, int[] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -32,8 +31,8 @@ public abstract class RangeProductQueriesOfPowersTestsBase<T> where T : IRangePr
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return [2, new int[][] { new[] { 0, 0 } }, new[] { 2 }];
+        yield return [2, new[] { new[] { 0, 0 } }, new[] { 2 }];
 
-        yield return [15, new int[][] { new[] { 0, 1 }, new[] { 2, 2 }, new[] { 0, 3 } }, new[] { 2, 4, 64 }];
+        yield return [15, new[] { new[] { 0, 1 }, new[] { 2, 2 }, new[] { 0, 3 } }, new[] { 2, 4, 64 }];
     }
 }

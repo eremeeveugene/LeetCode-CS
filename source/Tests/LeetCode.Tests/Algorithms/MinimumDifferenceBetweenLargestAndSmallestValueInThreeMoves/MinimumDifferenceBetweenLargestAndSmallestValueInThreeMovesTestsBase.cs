@@ -13,16 +13,14 @@ using LeetCode.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInThree
 
 namespace LeetCode.Tests.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves;
 
-public abstract class MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesTestsBase<T>
-    where T : IMinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves, new()
+public abstract class MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesTestsBase<T> where T : IMinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves, new()
 {
     [TestMethod]
     [DataRow(new[] { 5, 3, 2, 4 }, 0)]
     [DataRow(new[] { 1, 5, 0, 10, 14 }, 1)]
     [DataRow(new[] { 3, 100, 20 }, 0)]
     [DataRow(new[] { 6, 6, 0, 1, 1, 4, 6 }, 2)]
-    public void MinDifference_WithUpToThreeChanges_ReturnsSmallestPossibleValueRange(int[] nums,
-        int expectedResult)
+    public void MinDifference_WithUpToThreeChanges_ReturnsSmallestPossibleValueRange(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

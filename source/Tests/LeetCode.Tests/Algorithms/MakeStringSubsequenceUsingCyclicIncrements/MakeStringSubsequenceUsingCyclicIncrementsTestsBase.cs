@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MakeStringSubsequenceUsingCyclicIncrements;
 
 namespace LeetCode.Tests.Algorithms.MakeStringSubsequenceUsingCyclicIncrements;
 
-public abstract class MakeStringSubsequenceUsingCyclicIncrementsTestsBase<T>
-    where T : IMakeStringSubsequenceUsingCyclicIncrements, new()
+public abstract class MakeStringSubsequenceUsingCyclicIncrementsTestsBase<T> where T : IMakeStringSubsequenceUsingCyclicIncrements, new()
 {
     [TestMethod]
     [DataRow("abc", "ad", true)]

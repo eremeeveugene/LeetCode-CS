@@ -14,8 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree;
 
 /// <inheritdoc />
-public sealed class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStack :
-    IFindCorrespondingNodeOfBinaryTreeInCloneOfThatTree
+public sealed class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStack : IFindCorrespondingNodeOfBinaryTreeInCloneOfThatTree
 {
     /// <summary>
     ///     Time complexity - O(n)

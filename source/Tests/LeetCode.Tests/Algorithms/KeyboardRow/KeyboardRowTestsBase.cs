@@ -19,8 +19,7 @@ public abstract class KeyboardRowTestsBase<T> where T : IKeyboardRow, new()
     [DataRow(new[] { "Hello", "Alaska", "Dad", "Peace" }, new[] { "Alaska", "Dad" })]
     [DataRow(new[] { "omk" }, new string[0])]
     [DataRow(new[] { "adsdf", "sfd" }, new[] { "adsdf", "sfd" })]
-    public void FilterWordsByKeyboardRow_WithInputWordsArray_ReturnsMatchingWords(string[] words,
-        string[] expectedResult)
+    public void FilterWordsByKeyboardRow_WithInputWordsArray_ReturnsMatchingWords(string[] words, string[] expectedResult)
     {
         // Arrange
         var solution = new T();

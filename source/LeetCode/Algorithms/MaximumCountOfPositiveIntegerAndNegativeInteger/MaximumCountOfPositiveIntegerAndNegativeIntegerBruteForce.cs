@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.MaximumCountOfPositiveIntegerAndNegativeInteger;
 
 /// <inheritdoc />
-public sealed class MaximumCountOfPositiveIntegerAndNegativeIntegerBruteForce :
-    IMaximumCountOfPositiveIntegerAndNegativeInteger
+public sealed class MaximumCountOfPositiveIntegerAndNegativeIntegerBruteForce : IMaximumCountOfPositiveIntegerAndNegativeInteger
 {
     /// <summary>
     ///     Time complexity - O(n)

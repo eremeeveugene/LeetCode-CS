@@ -17,8 +17,7 @@ public abstract class MyCalendar1TestsBase<T> where T : IMyCalendar1, new()
 {
     [TestMethod]
     [DataRow(new[] { 10, 15, 20 }, new[] { 20, 25, 30 }, new[] { true, false, true })]
-    public void Book_WithStartAndEndTimes_ReturnsBookingResults(int[] start, int[] end,
-        bool[] expectedResult)
+    public void Book_WithStartAndEndTimes_ReturnsBookingResults(int[] start, int[] end, bool[] expectedResult)
     {
         // Arrange
         var solution = new T();

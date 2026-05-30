@@ -13,8 +13,7 @@ using LeetCode.Algorithms.AverageSalaryExcludingTheMinimumAndMaximumSalary;
 
 namespace LeetCode.Tests.Algorithms.AverageSalaryExcludingTheMinimumAndMaximumSalary;
 
-public abstract class AverageSalaryExcludingTheMinimumAndMaximumSalaryTestsBase<T>
-    where T : IAverageSalaryExcludingTheMinimumAndMaximumSalary, new()
+public abstract class AverageSalaryExcludingTheMinimumAndMaximumSalaryTestsBase<T> where T : IAverageSalaryExcludingTheMinimumAndMaximumSalary, new()
 {
     [TestMethod]
     [DataRow(new[] { 4000, 3000, 1000, 2000 }, 2500.00000)]

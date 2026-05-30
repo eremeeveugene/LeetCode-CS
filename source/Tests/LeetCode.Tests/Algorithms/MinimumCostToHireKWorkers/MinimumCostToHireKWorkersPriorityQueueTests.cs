@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumCostToHireKWorkers;
 namespace LeetCode.Tests.Algorithms.MinimumCostToHireKWorkers;
 
 [TestClass]
-public sealed class MinimumCostToHireKWorkersPriorityQueueTests : MinimumCostToHireKWorkersTestsBase<
-    MinimumCostToHireKWorkersPriorityQueue>;
+public sealed class MinimumCostToHireKWorkersPriorityQueueTests : MinimumCostToHireKWorkersTestsBase<MinimumCostToHireKWorkersPriorityQueue>;

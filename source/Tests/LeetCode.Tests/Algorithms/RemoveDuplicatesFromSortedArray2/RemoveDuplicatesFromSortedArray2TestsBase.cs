@@ -18,8 +18,7 @@ public abstract class RemoveDuplicatesFromSortedArray2TestsBase<T> where T : IRe
     [TestMethod]
     [DataRow(new[] { 1, 1, 1, 2, 2, 3 }, 5, new[] { 1, 1, 2, 2, 3 })]
     [DataRow(new[] { 0, 0, 1, 1, 1, 1, 2, 3, 3 }, 7, new[] { 0, 0, 1, 1, 2, 3, 3 })]
-    public void RemoveDuplicates_WithSortedArray_ReturnsNewLengthAndModifiesArrayCorrectly(int[] nums,
-        int expectedResult, int[] expectedNums)
+    public void RemoveDuplicates_WithSortedArray_ReturnsNewLengthAndModifiesArrayCorrectly(int[] nums, int expectedResult, int[] expectedNums)
     {
         // Arrange
         var solution = new T();

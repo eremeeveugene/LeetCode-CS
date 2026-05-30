@@ -17,8 +17,7 @@ public abstract class WordSearchTestsBase<T> where T : IWordSearch, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void Exist_WithCharacterBoardAndWord_ReturnsTrueIfWordExistsBySequentialAdjacentCells(char[][] board,
-        string word, bool expectedResult)
+    public void Exist_WithCharacterBoardAndWord_ReturnsTrueIfWordExistsBySequentialAdjacentCells(char[][] board, string word, bool expectedResult)
     {
         // Arrange
         var solution = new T();

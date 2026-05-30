@@ -19,8 +19,7 @@ public abstract class CountTheHiddenSequencesTestsBase<T> where T : ICountTheHid
     [DataRow(new[] { 1, -3, 4 }, 1, 6, 2)]
     [DataRow(new[] { 3, -4, 5, 1, -2 }, -4, 5, 4)]
     [DataRow(new[] { 4, -7, 2 }, 3, 6, 0)]
-    public void NumberOfArrays_WithDifferencesAndBounds_ReturnsNumberOfPossibleArrays(int[] differences,
-        int lower, int upper, int expectedResult)
+    public void NumberOfArrays_WithDifferencesAndBounds_ReturnsNumberOfPossibleArrays(int[] differences, int lower, int upper, int expectedResult)
     {
         // Arrange
         var solution = new T();

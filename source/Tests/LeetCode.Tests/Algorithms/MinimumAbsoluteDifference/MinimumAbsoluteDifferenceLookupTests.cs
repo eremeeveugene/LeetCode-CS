@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumAbsoluteDifference;
 namespace LeetCode.Tests.Algorithms.MinimumAbsoluteDifference;
 
 [TestClass]
-public sealed class MinimumAbsoluteDifferenceLookupTests :
-    MinimumAbsoluteDifferenceTestsBase<MinimumAbsoluteDifferenceLookup>;
+public sealed class MinimumAbsoluteDifferenceLookupTests : MinimumAbsoluteDifferenceTestsBase<MinimumAbsoluteDifferenceLookup>;

@@ -20,8 +20,7 @@ public abstract class UniqueThreeDigitEvenNumbersTestsBase<T> where T : IUniqueT
     [DataRow(new[] { 0, 2, 2 }, 2)]
     [DataRow(new[] { 6, 6, 6 }, 1)]
     [DataRow(new[] { 1, 3, 5 }, 0)]
-    public void TotalNumbers_WithGivenDigitsArray_ReturnsUniqueThreeDigitEvenNumbers(int[] digits,
-        int expectedResult)
+    public void TotalNumbers_WithGivenDigitsArray_ReturnsUniqueThreeDigitEvenNumbers(int[] digits, int expectedResult)
     {
         // Arrange
         var solution = new T();

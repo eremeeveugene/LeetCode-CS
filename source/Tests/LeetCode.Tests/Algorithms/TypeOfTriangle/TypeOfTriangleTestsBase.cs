@@ -25,8 +25,7 @@ public abstract class TypeOfTriangleTestsBase<T> where T : ITypeOfTriangle, new(
     [DataRow(new[] { 4, 4, 6 }, "isosceles")]
     [DataRow(new[] { 6, 4, 4 }, "isosceles")]
     [DataRow(new[] { 4, 6, 4 }, "isosceles")]
-    public void TriangleType_WithThreeSideLengths_ReturnsStringRepresentingTheTypeOfTriangle(int[] nums,
-        string expectedResult)
+    public void TriangleType_WithThreeSideLengths_ReturnsStringRepresentingTheTypeOfTriangle(int[] nums, string expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox;
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox;
 
-public abstract class MinimumNumberOfOperationsToMoveAllBallsToEachBoxTestsBase<T>
-    where T : IMinimumNumberOfOperationsToMoveAllBallsToEachBox, new()
+public abstract class MinimumNumberOfOperationsToMoveAllBallsToEachBoxTestsBase<T> where T : IMinimumNumberOfOperationsToMoveAllBallsToEachBox, new()
 {
     [TestMethod]
     [DataRow("110", new[] { 1, 1, 3 })]

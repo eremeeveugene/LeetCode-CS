@@ -15,13 +15,11 @@ using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.LowestCommonAncestorOfDeepestLeaves;
 
-public abstract class LowestCommonAncestorOfDeepestLeavesTestsBase<T>
-    where T : ILowestCommonAncestorOfDeepestLeaves, new()
+public abstract class LowestCommonAncestorOfDeepestLeavesTestsBase<T> where T : ILowestCommonAncestorOfDeepestLeaves, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void LcaDeepestLeaves_WithBinaryTree_ReturnsLowestCommonAncestorOfDeepestLeaves(int?[] rootArray,
-        int?[] expectedResultArray)
+    public void LcaDeepestLeaves_WithBinaryTree_ReturnsLowestCommonAncestorOfDeepestLeaves(int?[] rootArray, int?[] expectedResultArray)
     {
         // Arrange
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);

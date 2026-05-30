@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumValueOfAnOrderedTriplet1;
 namespace LeetCode.Tests.Algorithms.MaximumValueOfAnOrderedTriplet1;
 
 [TestClass]
-public class MaximumValueOfAnOrderedTriplet1GreedyTests :
-    MaximumValueOfAnOrderedTriplet1TestsBase<MaximumValueOfAnOrderedTriplet1Greedy>;
+public class MaximumValueOfAnOrderedTriplet1GreedyTests : MaximumValueOfAnOrderedTriplet1TestsBase<MaximumValueOfAnOrderedTriplet1Greedy>;

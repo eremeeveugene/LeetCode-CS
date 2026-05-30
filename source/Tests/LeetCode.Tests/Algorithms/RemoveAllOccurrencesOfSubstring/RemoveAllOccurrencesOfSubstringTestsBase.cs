@@ -19,8 +19,7 @@ public abstract class RemoveAllOccurrencesOfSubstringTestsBase<T> where T : IRem
     [DataRow("daabcbaabcbc", "abc", "dab")]
     [DataRow("axxxxyyyyb", "xy", "ab")]
     [DataRow("ixcupqoixcupqokevnpokevnpoknqywmlhevgc", "ixcupqokevnpo", "knqywmlhevgc")]
-    public void RemoveOccurrences_GivenStringAndSubstring_RemovesAllOccurrences(string s, string part,
-        string expectedResult)
+    public void RemoveOccurrences_GivenStringAndSubstring_RemovesAllOccurrences(string s, string part, string expectedResult)
     {
         // Arrange
         var solution = new T();

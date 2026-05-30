@@ -17,8 +17,7 @@ public abstract class FindTheNumberOfWaysToPlacePeople1TestsBase<T> where T : IF
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void NumberOfPairs_With2DPointsArray_ReturnsCountOfValidPairs(int[][] points,
-        int expectedResult)
+    public void NumberOfPairs_With2DPointsArray_ReturnsCountOfValidPairs(int[][] points, int expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -42,9 +41,6 @@ public abstract class FindTheNumberOfWaysToPlacePeople1TestsBase<T> where T : IF
 
         yield return [new[] { new[] { 6, 2 }, new[] { 4, 4 }, new[] { 2, 6 }, new[] { 4, 8 }, new[] { 1, 4 } }, 4];
 
-        yield return
-        [
-            new[] { new[] { 6, 2 }, new[] { 4, 4 }, new[] { 2, 6 }, new[] { 4, 8 }, new[] { 1, 4 }, new[] { 2, 2 } }, 7
-        ];
+        yield return [new[] { new[] { 6, 2 }, new[] { 4, 4 }, new[] { 2, 6 }, new[] { 4, 8 }, new[] { 1, 4 }, new[] { 2, 2 } }, 7];
     }
 }

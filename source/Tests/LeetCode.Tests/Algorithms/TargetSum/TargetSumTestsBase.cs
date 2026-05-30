@@ -24,8 +24,7 @@ public abstract class TargetSumTestsBase<T> where T : ITargetSum, new()
     [DataRow(new[] { 12, 25, 42, 49, 41, 15, 22, 34, 28, 31 }, 35, 8)]
     [DataRow(new[] { 3, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 2, 7, 9, 13, 27, 31, 37, 47, 53 }, 107, 0)]
     [DataRow(new[] { 3, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 2, 107, 109, 113, 127, 131, 137, 47, 53 }, 4, 2780)]
-    public void FindTargetSumWays_WithJsonAndTarget_ReturnsNumberOfWaysToAchieveTarget(int[] nums,
-        int target, int expectedResult)
+    public void FindTargetSumWays_WithJsonAndTarget_ReturnsNumberOfWaysToAchieveTarget(int[] nums, int target, int expectedResult)
     {
         // Arrange
         var solution = new T();

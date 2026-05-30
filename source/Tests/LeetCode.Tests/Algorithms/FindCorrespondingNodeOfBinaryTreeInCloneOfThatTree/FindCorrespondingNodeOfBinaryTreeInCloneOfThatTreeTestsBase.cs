@@ -15,13 +15,11 @@ using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree;
 
-public abstract class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeTestsBase<T>
-    where T : IFindCorrespondingNodeOfBinaryTreeInCloneOfThatTree, new()
+public abstract class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeTestsBase<T> where T : IFindCorrespondingNodeOfBinaryTreeInCloneOfThatTree, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void GetTargetCopy_GivenOriginalAndClonedTree_ReturnsCorrespondingNode(int?[] treeArray, int targetValue,
-        int expectedResultValue)
+    public void GetTargetCopy_GivenOriginalAndClonedTree_ReturnsCorrespondingNode(int?[] treeArray, int targetValue, int expectedResultValue)
     {
         // Arrange
         var original = TreeNode.ToTreeNodeOrThrow(treeArray);

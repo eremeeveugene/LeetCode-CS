@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.CheckIfDigitsAreEqualInStringAfterOperations1;
 
 /// <inheritdoc />
-public sealed class CheckIfDigitsAreEqualInStringAfterOperations1SimulationOptimized :
-    ICheckIfDigitsAreEqualInStringAfterOperations1
+public sealed class CheckIfDigitsAreEqualInStringAfterOperations1SimulationOptimized : ICheckIfDigitsAreEqualInStringAfterOperations1
 {
     /// <summary>
     ///     Time complexity - O(n^2)

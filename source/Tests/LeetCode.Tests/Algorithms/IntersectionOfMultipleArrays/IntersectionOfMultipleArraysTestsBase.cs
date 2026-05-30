@@ -17,8 +17,7 @@ public abstract class IntersectionOfMultipleArraysTestsBase<T> where T : IInters
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void Intersection_WithMultipleNumsArrays_ReturnsCommonElementsAcrossAllArrays(int[][] nums,
-        int[] expectedResult)
+    public void Intersection_WithMultipleNumsArrays_ReturnsCommonElementsAcrossAllArrays(int[][] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

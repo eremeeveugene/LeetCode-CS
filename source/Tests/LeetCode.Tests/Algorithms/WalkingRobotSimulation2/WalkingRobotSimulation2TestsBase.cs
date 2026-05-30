@@ -19,8 +19,7 @@ public abstract class WalkingRobotSimulation2TestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void WalkingRobotSimulation2_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        WalkingRobotSimulation2Scenario scenario)
+    public void WalkingRobotSimulation2_WithMixedOperations_ProcessesOperationsAccordingToSpecification(WalkingRobotSimulation2Scenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -48,288 +47,38 @@ public abstract class WalkingRobotSimulation2TestsBase
 
     private static IEnumerable<WalkingRobotSimulation2Scenario[]> GetScenarios()
     {
-        yield return
-        [
-            new WalkingRobotSimulation2Scenario(
-                6,
-                3,
-                [
-                    new GetPosOperation(),
-                    new GetDirOperation(),
-                    new StepOperation(2),
-                    new GetPosOperation(),
-                    new GetDirOperation(),
-                    new StepOperation(2),
-                    new GetPosOperation(),
-                    new GetDirOperation()
-                ],
-                [
-                    new GetPosOperation.Result(0, 0),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection),
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(2, 0),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection),
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(4, 0),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection)
-                ])
-        ];
+        yield return [new WalkingRobotSimulation2Scenario(6, 3, [new GetPosOperation(), new GetDirOperation(), new StepOperation(2), new GetPosOperation(), new GetDirOperation(), new StepOperation(2), new GetPosOperation(), new GetDirOperation()], [new GetPosOperation.Result(0, 0), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection), VoidOperationResult.Instance, new GetPosOperation.Result(2, 0), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection), VoidOperationResult.Instance, new GetPosOperation.Result(4, 0), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection)])];
 
-        yield return
-        [
-            new WalkingRobotSimulation2Scenario(
-                6,
-                3,
-                [
-                    new StepOperation(8),
-                    new GetPosOperation(),
-                    new GetDirOperation(),
-                    new StepOperation(1),
-                    new GetPosOperation(),
-                    new GetDirOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(4, 2),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection),
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(3, 2),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)
-                ])
-        ];
+        yield return [new WalkingRobotSimulation2Scenario(6, 3, [new StepOperation(8), new GetPosOperation(), new GetDirOperation(), new StepOperation(1), new GetPosOperation(), new GetDirOperation()], [VoidOperationResult.Instance, new GetPosOperation.Result(4, 2), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection), VoidOperationResult.Instance, new GetPosOperation.Result(3, 2), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)])];
 
-        yield return
-        [
-            new WalkingRobotSimulation2Scenario(
-                3,
-                3,
-                [
-                    new StepOperation(4),
-                    new GetPosOperation(),
-                    new GetDirOperation(),
-                    new StepOperation(2),
-                    new GetPosOperation(),
-                    new GetDirOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(2, 2),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.NorthDirection),
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(0, 2),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)
-                ])
-        ];
+        yield return [new WalkingRobotSimulation2Scenario(3, 3, [new StepOperation(4), new GetPosOperation(), new GetDirOperation(), new StepOperation(2), new GetPosOperation(), new GetDirOperation()], [VoidOperationResult.Instance, new GetPosOperation.Result(2, 2), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.NorthDirection), VoidOperationResult.Instance, new GetPosOperation.Result(0, 2), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)])];
 
-        yield return
-        [
-            new WalkingRobotSimulation2Scenario(
-                3,
-                2,
-                [
-                    new StepOperation(5),
-                    new GetPosOperation(),
-                    new GetDirOperation(),
-                    new StepOperation(1),
-                    new GetPosOperation(),
-                    new GetDirOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(0, 1),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection),
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(0, 0),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.SouthDirection)
-                ])
-        ];
+        yield return [new WalkingRobotSimulation2Scenario(3, 2, [new StepOperation(5), new GetPosOperation(), new GetDirOperation(), new StepOperation(1), new GetPosOperation(), new GetDirOperation()], [VoidOperationResult.Instance, new GetPosOperation.Result(0, 1), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection), VoidOperationResult.Instance, new GetPosOperation.Result(0, 0), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.SouthDirection)])];
 
-        yield return
-        [
-            new WalkingRobotSimulation2Scenario(
-                4,
-                2,
-                [
-                    new StepOperation(6),
-                    new GetPosOperation(),
-                    new GetDirOperation(),
-                    new StepOperation(6),
-                    new GetPosOperation(),
-                    new GetDirOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(1, 1),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection),
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(3, 1),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.NorthDirection)
-                ])
-        ];
+        yield return [new WalkingRobotSimulation2Scenario(4, 2, [new StepOperation(6), new GetPosOperation(), new GetDirOperation(), new StepOperation(6), new GetPosOperation(), new GetDirOperation()], [VoidOperationResult.Instance, new GetPosOperation.Result(1, 1), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection), VoidOperationResult.Instance, new GetPosOperation.Result(3, 1), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.NorthDirection)])];
 
-        yield return
-        [
-            new WalkingRobotSimulation2Scenario(
-                4,
-                3,
-                [
-                    new StepOperation(10),
-                    new GetPosOperation(),
-                    new GetDirOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(0, 0),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.SouthDirection)
-                ])
-        ];
+        yield return [new WalkingRobotSimulation2Scenario(4, 3, [new StepOperation(10), new GetPosOperation(), new GetDirOperation()], [VoidOperationResult.Instance, new GetPosOperation.Result(0, 0), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.SouthDirection)])];
 
-        yield return
-        [
-            new WalkingRobotSimulation2Scenario(
-                4,
-                3,
-                [
-                    new StepOperation(20),
-                    new GetPosOperation(),
-                    new GetDirOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(0, 0),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.SouthDirection)
-                ])
-        ];
+        yield return [new WalkingRobotSimulation2Scenario(4, 3, [new StepOperation(20), new GetPosOperation(), new GetDirOperation()], [VoidOperationResult.Instance, new GetPosOperation.Result(0, 0), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.SouthDirection)])];
 
-        yield return
-        [
-            new WalkingRobotSimulation2Scenario(
-                4,
-                3,
-                [
-                    new StepOperation(0),
-                    new GetPosOperation(),
-                    new GetDirOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(0, 0),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection)
-                ])
-        ];
+        yield return [new WalkingRobotSimulation2Scenario(4, 3, [new StepOperation(0), new GetPosOperation(), new GetDirOperation()], [VoidOperationResult.Instance, new GetPosOperation.Result(0, 0), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection)])];
 
-        yield return
-        [
-            new WalkingRobotSimulation2Scenario(
-                4,
-                3,
-                [
-                    new StepOperation(3),
-                    new StepOperation(0),
-                    new GetPosOperation(),
-                    new GetDirOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(3, 0),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection)
-                ])
-        ];
+        yield return [new WalkingRobotSimulation2Scenario(4, 3, [new StepOperation(3), new StepOperation(0), new GetPosOperation(), new GetDirOperation()], [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetPosOperation.Result(3, 0), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection)])];
 
-        yield return
-        [
-            new WalkingRobotSimulation2Scenario(
-                4,
-                3,
-                [
-                    new StepOperation(7),
-                    new GetPosOperation(),
-                    new GetDirOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(1, 2),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)
-                ])
-        ];
+        yield return [new WalkingRobotSimulation2Scenario(4, 3, [new StepOperation(7), new GetPosOperation(), new GetDirOperation()], [VoidOperationResult.Instance, new GetPosOperation.Result(1, 2), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)])];
 
-        yield return
-        [
-            new WalkingRobotSimulation2Scenario(
-                4,
-                3,
-                [
-                    new StepOperation(3),
-                    new GetPosOperation(),
-                    new GetDirOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(3, 0),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection)
-                ])
-        ];
+        yield return [new WalkingRobotSimulation2Scenario(4, 3, [new StepOperation(3), new GetPosOperation(), new GetDirOperation()], [VoidOperationResult.Instance, new GetPosOperation.Result(3, 0), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection)])];
 
-        yield return
-        [
-            new WalkingRobotSimulation2Scenario(
-                4,
-                3,
-                [
-                    new StepOperation(4),
-                    new GetPosOperation(),
-                    new GetDirOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(3, 1),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.NorthDirection)
-                ])
-        ];
+        yield return [new WalkingRobotSimulation2Scenario(4, 3, [new StepOperation(4), new GetPosOperation(), new GetDirOperation()], [VoidOperationResult.Instance, new GetPosOperation.Result(3, 1), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.NorthDirection)])];
 
-        yield return
-        [
-            new WalkingRobotSimulation2Scenario(
-                4,
-                3,
-                [
-                    new StepOperation(8),
-                    new GetPosOperation(),
-                    new GetDirOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(0, 2),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)
-                ])
-        ];
+        yield return [new WalkingRobotSimulation2Scenario(4, 3, [new StepOperation(8), new GetPosOperation(), new GetDirOperation()], [VoidOperationResult.Instance, new GetPosOperation.Result(0, 2), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)])];
 
-        yield return
-        [
-            new WalkingRobotSimulation2Scenario(
-                4,
-                3,
-                [
-                    new StepOperation(9),
-                    new GetPosOperation(),
-                    new GetDirOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new GetPosOperation.Result(0, 1),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.SouthDirection)
-                ])
-        ];
+        yield return [new WalkingRobotSimulation2Scenario(4, 3, [new StepOperation(9), new GetPosOperation(), new GetDirOperation()], [VoidOperationResult.Instance, new GetPosOperation.Result(0, 1), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.SouthDirection)])];
     }
 
     public sealed class WalkingRobotSimulation2Scenario : IScenario<IWalkingRobotSimulation2>
     {
-        public WalkingRobotSimulation2Scenario(
-            int width,
-            int height,
-            IOperation<IWalkingRobotSimulation2>[] operations,
-            IOperationResult[] operationResults)
+        public WalkingRobotSimulation2Scenario(int width, int height, IOperation<IWalkingRobotSimulation2>[] operations, IOperationResult[] operationResults)
         {
             Width = width;
             Height = height;
@@ -380,7 +129,9 @@ public abstract class WalkingRobotSimulation2TestsBase
             return new Result(pos[0], pos[1]);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int _x;
             private readonly int _y;
@@ -393,9 +144,7 @@ public abstract class WalkingRobotSimulation2TestsBase
 
             public bool Equals(Result? other)
             {
-                return other is not null &&
-                       _x == other._x &&
-                       _y == other._y;
+                return other is not null && _x == other._x && _y == other._y;
             }
 
             public override bool Equals(object? obj)
@@ -424,7 +173,9 @@ public abstract class WalkingRobotSimulation2TestsBase
             return new Result(dir);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly string _direction;
 

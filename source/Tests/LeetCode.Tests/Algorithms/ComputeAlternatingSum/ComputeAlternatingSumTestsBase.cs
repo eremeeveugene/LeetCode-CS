@@ -18,8 +18,7 @@ public abstract class ComputeAlternatingSumTestsBase<T> where T : IComputeAltern
     [TestMethod]
     [DataRow(new[] { 1, 3, 5, 7 }, -4)]
     [DataRow(new[] { 100 }, 100)]
-    public void AlternatingSum_WithNumsArray_ReturnsAlternatingIndexedSum(int[] nums,
-        int expectedResult)
+    public void AlternatingSum_WithNumsArray_ReturnsAlternatingIndexedSum(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

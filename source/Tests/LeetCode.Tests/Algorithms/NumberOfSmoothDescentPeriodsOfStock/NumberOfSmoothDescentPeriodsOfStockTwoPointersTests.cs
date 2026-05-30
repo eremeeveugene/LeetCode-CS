@@ -14,5 +14,4 @@ using LeetCode.Algorithms.NumberOfSmoothDescentPeriodsOfStock;
 namespace LeetCode.Tests.Algorithms.NumberOfSmoothDescentPeriodsOfStock;
 
 [TestClass]
-public sealed class NumberOfSmoothDescentPeriodsOfStockTwoPointersTests :
-    NumberOfSmoothDescentPeriodsOfStockTestsBase<NumberOfSmoothDescentPeriodsOfStockTwoPointers>;
+public sealed class NumberOfSmoothDescentPeriodsOfStockTwoPointersTests : NumberOfSmoothDescentPeriodsOfStockTestsBase<NumberOfSmoothDescentPeriodsOfStockTwoPointers>;

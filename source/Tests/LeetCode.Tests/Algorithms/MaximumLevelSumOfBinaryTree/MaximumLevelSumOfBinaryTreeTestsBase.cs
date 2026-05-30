@@ -18,8 +18,7 @@ public abstract class MaximumLevelSumOfBinaryTreeTestsBase<T> where T : IMaximum
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MaxLevelSum_WithBinaryTreeContainingMultipleLevels_ReturnsLevelWithMaximumNodeSum(int?[] rootArray,
-        int expectedResult)
+    public void MaxLevelSum_WithBinaryTreeContainingMultipleLevels_ReturnsLevelWithMaximumNodeSum(int?[] rootArray, int expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);

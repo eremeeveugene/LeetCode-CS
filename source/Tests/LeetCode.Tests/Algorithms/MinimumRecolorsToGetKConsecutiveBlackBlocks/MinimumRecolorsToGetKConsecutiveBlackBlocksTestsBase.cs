@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MinimumRecolorsToGetKConsecutiveBlackBlocks;
 
 namespace LeetCode.Tests.Algorithms.MinimumRecolorsToGetKConsecutiveBlackBlocks;
 
-public abstract class MinimumRecolorsToGetKConsecutiveBlackBlocksTestsBase<T>
-    where T : IMinimumRecolorsToGetKConsecutiveBlackBlocks, new()
+public abstract class MinimumRecolorsToGetKConsecutiveBlackBlocksTestsBase<T> where T : IMinimumRecolorsToGetKConsecutiveBlackBlocks, new()
 {
     [TestMethod]
     [DataRow("WBBWWBBWBW", 7, 3)]

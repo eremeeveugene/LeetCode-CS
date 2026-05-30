@@ -13,14 +13,12 @@ using LeetCode.Algorithms.FindTheMaximumLengthOfValidSubsequence2;
 
 namespace LeetCode.Tests.Algorithms.FindTheMaximumLengthOfValidSubsequence2;
 
-public abstract class FindTheMaximumLengthOfValidSubsequence2TestsBase<T>
-    where T : IFindTheMaximumLengthOfValidSubsequence2, new()
+public abstract class FindTheMaximumLengthOfValidSubsequence2TestsBase<T> where T : IFindTheMaximumLengthOfValidSubsequence2, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 3, 4, 5 }, 2, 5)]
     [DataRow(new[] { 1, 4, 2, 3, 1, 4 }, 3, 4)]
-    public void MaximumLength_WithIntegerArrayAndLimitK_ReturnsMaximumLengthUnderConstraint(int[] nums, int k,
-        int expectedResult)
+    public void MaximumLength_WithIntegerArrayAndLimitK_ReturnsMaximumLengthUnderConstraint(int[] nums, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

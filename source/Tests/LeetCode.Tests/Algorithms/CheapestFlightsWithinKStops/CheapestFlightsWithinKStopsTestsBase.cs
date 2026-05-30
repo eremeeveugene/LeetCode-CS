@@ -17,8 +17,7 @@ public abstract class CheapestFlightsWithinKStopsTestsBase<T> where T : ICheapes
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FindCheapestPrice_GivenNumberOfCitiesAndFlightDetails_ReturnsMinimumCostWithinStops(int n,
-        int[][] flights, int src, int dst, int k, int expectedResult)
+    public void FindCheapestPrice_GivenNumberOfCitiesAndFlightDetails_ReturnsMinimumCostWithinStops(int n, int[][] flights, int src, int dst, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

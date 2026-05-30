@@ -18,8 +18,7 @@ public abstract class FindTheDifferenceOfTwoArraysTestsBase<T> where T : IFindTh
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FindDifference_WithTwoIntegerArrays_ReturnsUniqueElementsInEachArray(int[] nums1,
-        int[] nums2, int[][] expectedResult)
+    public void FindDifference_WithTwoIntegerArrays_ReturnsUniqueElementsInEachArray(int[] nums1, int[] nums2, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();

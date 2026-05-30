@@ -14,5 +14,4 @@ using LeetCode.Algorithms.RemoveLinkedListElements;
 namespace LeetCode.Tests.Algorithms.RemoveLinkedListElements;
 
 [TestClass]
-public sealed class RemoveLinkedListElementsIterativeTests :
-    RemoveLinkedListElementsTestsBase<RemoveLinkedListElementsIterative>;
+public sealed class RemoveLinkedListElementsIterativeTests : RemoveLinkedListElementsTestsBase<RemoveLinkedListElementsIterative>;

@@ -17,8 +17,7 @@ public abstract class FindIfPathExistsInGraphTestsBase<T> where T : IFindIfPathE
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void ValidPath_WithGraphAndSourceDestination_ReturnsWhetherPathExistsBetweenNodes(int n, int[][] edges,
-        int source, int destination, bool expectedResult)
+    public void ValidPath_WithGraphAndSourceDestination_ReturnsWhetherPathExistsBetweenNodes(int n, int[][] edges, int source, int destination, bool expectedResult)
     {
         // Arrange
         var solution = new T();

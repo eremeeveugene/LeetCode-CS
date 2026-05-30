@@ -21,8 +21,7 @@ public abstract class RemoveDuplicatesFromSortedListTestsBase<T> where T : IRemo
     [DataRow(new[] { 0, 0, 0, 0, 0 }, new[] { 0 })]
     [DataRow(new[] { 1, 1, 2 }, new[] { 1, 2 })]
     [DataRow(new[] { 1, 1, 2, 3, 3 }, new[] { 1, 2, 3 })]
-    public void DeleteDuplicates_WithSortedLinkedList_ReturnsLinkedListWithUniqueSortedElements(int[] headArray,
-        int[] expectedResultArray)
+    public void DeleteDuplicates_WithSortedLinkedList_ReturnsLinkedListWithUniqueSortedElements(int[] headArray, int[] expectedResultArray)
     {
         // Arrange
         var head = ListNode.ToListNode(headArray);

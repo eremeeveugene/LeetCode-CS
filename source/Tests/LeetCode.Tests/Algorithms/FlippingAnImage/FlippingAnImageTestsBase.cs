@@ -17,8 +17,7 @@ public abstract class FlippingAnImageTestsBase<T> where T : IFlippingAnImage, ne
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FlipAndInvertImage_WithMatrixContainingBinaryValues_ReturnsHorizontallyFlippedAndInvertedMatrix(
-        int[][] image, int[][] expectedResult)
+    public void FlipAndInvertImage_WithMatrixContainingBinaryValues_ReturnsHorizontallyFlippedAndInvertedMatrix(int[][] image, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements;
 
 /// <inheritdoc />
-public sealed class CountElementsWithStrictlySmallerAndGreaterElementsIterative :
-    ICountElementsWithStrictlySmallerAndGreaterElements
+public sealed class CountElementsWithStrictlySmallerAndGreaterElementsIterative : ICountElementsWithStrictlySmallerAndGreaterElements
 {
     /// <summary>
     ///     Time complexity - O(n)

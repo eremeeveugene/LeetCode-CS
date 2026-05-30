@@ -14,5 +14,4 @@ using LeetCode.Algorithms.TheTwoSneakyNumbersOfDigitville;
 namespace LeetCode.Tests.Algorithms.TheTwoSneakyNumbersOfDigitville;
 
 [TestClass]
-public sealed class TheTwoSneakyNumbersOfDigitvilleArrayTests :
-    TheTwoSneakyNumbersOfDigitvilleTestsBase<TheTwoSneakyNumbersOfDigitvilleArray>;
+public sealed class TheTwoSneakyNumbersOfDigitvilleArrayTests : TheTwoSneakyNumbersOfDigitvilleTestsBase<TheTwoSneakyNumbersOfDigitvilleArray>;

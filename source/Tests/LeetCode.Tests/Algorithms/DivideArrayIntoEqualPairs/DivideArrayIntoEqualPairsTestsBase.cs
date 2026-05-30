@@ -18,8 +18,7 @@ public abstract class DivideArrayIntoEqualPairsTestsBase<T> where T : IDivideArr
     [TestMethod]
     [DataRow(new[] { 3, 2, 3, 2, 2, 2 }, true)]
     [DataRow(new[] { 1, 2, 3, 4 }, false)]
-    public void DivideArray_WithGivenIntegerArray_ReturnsTrueIfPairsCanBeFormedOtherwiseFalse(int[] nums,
-        bool expectedResult)
+    public void DivideArray_WithGivenIntegerArray_ReturnsTrueIfPairsCanBeFormedOtherwiseFalse(int[] nums, bool expectedResult)
     {
         // Arrange
         var solution = new T();

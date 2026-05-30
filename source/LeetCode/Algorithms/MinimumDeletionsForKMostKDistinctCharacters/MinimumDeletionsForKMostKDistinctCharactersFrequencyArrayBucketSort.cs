@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.MinimumDeletionsForKMostKDistinctCharacters;
 
 /// <inheritdoc />
-public sealed class MinimumDeletionsForKMostKDistinctCharactersFrequencyArrayBucketSort :
-    IMinimumDeletionsForKMostKDistinctCharacters
+public sealed class MinimumDeletionsForKMostKDistinctCharactersFrequencyArrayBucketSort : IMinimumDeletionsForKMostKDistinctCharacters
 {
     /// <summary>
     ///     Time complexity - O(n)

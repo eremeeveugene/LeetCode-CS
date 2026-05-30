@@ -14,8 +14,7 @@ using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.ConvertBinaryNumberInLinkedListToInteger;
 
-public abstract class ConvertBinaryNumberInLinkedListToIntegerTestsBase<T>
-    where T : IConvertBinaryNumberInLinkedListToInteger, new()
+public abstract class ConvertBinaryNumberInLinkedListToIntegerTestsBase<T> where T : IConvertBinaryNumberInLinkedListToInteger, new()
 {
     [TestMethod]
     [DataRow(new[] { 0 }, 0)]

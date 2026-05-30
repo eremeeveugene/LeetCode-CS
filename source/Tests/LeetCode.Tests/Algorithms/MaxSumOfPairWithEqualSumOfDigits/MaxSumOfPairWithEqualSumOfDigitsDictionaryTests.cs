@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaxSumOfPairWithEqualSumOfDigits;
 namespace LeetCode.Tests.Algorithms.MaxSumOfPairWithEqualSumOfDigits;
 
 [TestClass]
-public class MaxSumOfPairWithEqualSumOfDigitsDictionaryTests :
-    MaxSumOfPairWithEqualSumOfDigitsTestsBase<MaxSumOfPairWithEqualSumOfDigitsDictionary>;
+public class MaxSumOfPairWithEqualSumOfDigitsDictionaryTests : MaxSumOfPairWithEqualSumOfDigitsTestsBase<MaxSumOfPairWithEqualSumOfDigitsDictionary>;

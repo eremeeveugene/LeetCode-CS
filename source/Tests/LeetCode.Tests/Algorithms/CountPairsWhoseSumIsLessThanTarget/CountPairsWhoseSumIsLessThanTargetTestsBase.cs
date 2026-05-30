@@ -13,14 +13,12 @@ using LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget;
 
 namespace LeetCode.Tests.Algorithms.CountPairsWhoseSumIsLessThanTarget;
 
-public abstract class CountPairsWhoseSumIsLessThanTargetTestsBase<T>
-    where T : ICountPairsWhoseSumIsLessThanTarget, new()
+public abstract class CountPairsWhoseSumIsLessThanTargetTestsBase<T> where T : ICountPairsWhoseSumIsLessThanTarget, new()
 {
     [TestMethod]
     [DataRow(new[] { -1, 1, 2, 3, 1 }, 2, 3)]
     [DataRow(new[] { -6, 2, 5, -2, -7, -1, 3 }, -2, 10)]
-    public void CountPairs_WithArrayAndTarget_ReturnsNumberOfPairsWithSumLessThanTarget(int[] nums, int target,
-        int expectedResult)
+    public void CountPairs_WithArrayAndTarget_ReturnsNumberOfPairsWithSumLessThanTarget(int[] nums, int target, int expectedResult)
     {
         // Arrange
         var solution = new T();

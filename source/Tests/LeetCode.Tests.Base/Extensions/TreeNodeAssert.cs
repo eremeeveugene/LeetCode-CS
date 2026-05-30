@@ -58,8 +58,7 @@ public static class TreeNodeAssert
         var expectedList = expectedTrees.ToList();
         var actualList = actualTrees.ToList();
 
-        Assert.HasCount(expectedList.Count, actualList,
-            "Tree collections should have the same number of elements.");
+        Assert.HasCount(expectedList.Count, actualList, "Tree collections should have the same number of elements.");
 
         for (var i = 0; i < expectedList.Count; i++)
         {
@@ -82,8 +81,7 @@ public static class TreeNodeAssert
         var expectedList = expectedTrees.ToList();
         var actualList = actualTrees.ToList();
 
-        Assert.HasCount(expectedList.Count, actualList,
-            "Tree collections should have the same number of elements.");
+        Assert.HasCount(expectedList.Count, actualList, "Tree collections should have the same number of elements.");
 
         var remaining = new List<TreeNode?>(actualList);
 

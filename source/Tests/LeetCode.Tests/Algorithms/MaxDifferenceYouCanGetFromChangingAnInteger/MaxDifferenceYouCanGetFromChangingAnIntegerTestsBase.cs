@@ -13,16 +13,14 @@ using LeetCode.Algorithms.MaxDifferenceYouCanGetFromChangingAnInteger;
 
 namespace LeetCode.Tests.Algorithms.MaxDifferenceYouCanGetFromChangingAnInteger;
 
-public abstract class MaxDifferenceYouCanGetFromChangingAnIntegerTestsBase<T>
-    where T : IMaxDifferenceYouCanGetFromChangingAnInteger, new()
+public abstract class MaxDifferenceYouCanGetFromChangingAnIntegerTestsBase<T> where T : IMaxDifferenceYouCanGetFromChangingAnInteger, new()
 {
     [TestMethod]
     [DataRow(9, 8)]
     [DataRow(555, 888)]
     [DataRow(10000, 80000)]
     [DataRow(123456, 820000)]
-    public void MaxDiff_WithDigitReplacementsAppliedTwice_ReturnsMaximumDifferenceBetweenResults(int num,
-        int expectedResult)
+    public void MaxDiff_WithDigitReplacementsAppliedTwice_ReturnsMaximumDifferenceBetweenResults(int num, int expectedResult)
     {
         // Arrange
         var solution = new T();

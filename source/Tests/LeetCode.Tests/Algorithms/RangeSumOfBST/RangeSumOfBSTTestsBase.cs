@@ -18,8 +18,7 @@ public abstract class RangeSumOfBSTTestsBase<T> where T : IRangeSumOfBST, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void RangeSumBST_WithTreeAndInclusiveBounds_ReturnsSumOfValuesInRange(int?[] rootArray, int low, int high,
-        int expectedResult)
+    public void RangeSumBST_WithTreeAndInclusiveBounds_ReturnsSumOfValuesInRange(int?[] rootArray, int low, int high, int expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);

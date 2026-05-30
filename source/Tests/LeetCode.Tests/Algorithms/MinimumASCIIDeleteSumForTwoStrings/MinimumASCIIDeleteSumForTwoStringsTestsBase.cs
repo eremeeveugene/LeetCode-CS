@@ -13,14 +13,12 @@ using LeetCode.Algorithms.MinimumASCIIDeleteSumForTwoStrings;
 
 namespace LeetCode.Tests.Algorithms.MinimumASCIIDeleteSumForTwoStrings;
 
-public abstract class MinimumASCIIDeleteSumForTwoStringsTestsBase<T>
-    where T : IMinimumASCIIDeleteSumForTwoStrings, new()
+public abstract class MinimumASCIIDeleteSumForTwoStringsTestsBase<T> where T : IMinimumASCIIDeleteSumForTwoStrings, new()
 {
     [TestMethod]
     [DataRow("sea", "eat", 231)]
     [DataRow("delete", "leet", 403)]
-    public void MinimumDeleteSum_WithInputStrings_ReturnsMinimumAsciiDeletionSumToMakeStringsEqual(string s1, string s2,
-        int expectedResult)
+    public void MinimumDeleteSum_WithInputStrings_ReturnsMinimumAsciiDeletionSumToMakeStringsEqual(string s1, string s2, int expectedResult)
     {
         // Arrange
         var solution = new T();

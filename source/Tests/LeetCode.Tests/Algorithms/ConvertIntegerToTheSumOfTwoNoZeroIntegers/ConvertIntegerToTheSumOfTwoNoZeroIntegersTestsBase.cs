@@ -13,8 +13,7 @@ using LeetCode.Algorithms.ConvertIntegerToTheSumOfTwoNoZeroIntegers;
 
 namespace LeetCode.Tests.Algorithms.ConvertIntegerToTheSumOfTwoNoZeroIntegers;
 
-public abstract class ConvertIntegerToTheSumOfTwoNoZeroIntegersTestsBase<T>
-    where T : IConvertIntegerToTheSumOfTwoNoZeroIntegers, new()
+public abstract class ConvertIntegerToTheSumOfTwoNoZeroIntegersTestsBase<T> where T : IConvertIntegerToTheSumOfTwoNoZeroIntegers, new()
 {
     [TestMethod]
     [DataRow(2, new[] { 1, 1 })]
@@ -24,8 +23,7 @@ public abstract class ConvertIntegerToTheSumOfTwoNoZeroIntegersTestsBase<T>
     [DataRow(700, new[] { 1, 699 })]
     [DataRow(701, new[] { 2, 699 })]
     [DataRow(1010, new[] { 11, 999 })]
-    public void GetNoZeroIntegers_WithPositiveIntegerN_ReturnsTwoNoZeroIntegersThatSumToN(int n,
-        int[] expectedResult)
+    public void GetNoZeroIntegers_WithPositiveIntegerN_ReturnsTwoNoZeroIntegersThatSumToN(int n, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

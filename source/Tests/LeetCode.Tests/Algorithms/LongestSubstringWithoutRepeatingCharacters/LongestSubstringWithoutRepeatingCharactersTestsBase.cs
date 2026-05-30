@@ -13,8 +13,7 @@ using LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters;
 
 namespace LeetCode.Tests.Algorithms.LongestSubstringWithoutRepeatingCharacters;
 
-public abstract class LongestSubstringWithoutRepeatingCharactersTestsBase<T>
-    where T : ILongestSubstringWithoutRepeatingCharacters, new()
+public abstract class LongestSubstringWithoutRepeatingCharactersTestsBase<T> where T : ILongestSubstringWithoutRepeatingCharacters, new()
 {
     [TestMethod]
     [DataRow("bbbbb", 1)]

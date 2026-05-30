@@ -13,8 +13,7 @@ using LeetCode.Algorithms.ReverseStringPrefix;
 
 namespace LeetCode.Tests.Algorithms.ReverseStringPrefix;
 
-public abstract class ReverseStringPrefixTestsBase<T>
-    where T : IReverseStringPrefix, new()
+public abstract class ReverseStringPrefixTestsBase<T> where T : IReverseStringPrefix, new()
 {
     [TestMethod]
     [DataRow("abcd", 2, "bacd")]

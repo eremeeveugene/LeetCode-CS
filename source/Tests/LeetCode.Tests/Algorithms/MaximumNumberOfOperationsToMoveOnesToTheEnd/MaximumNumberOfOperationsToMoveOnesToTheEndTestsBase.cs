@@ -13,14 +13,12 @@ using LeetCode.Algorithms.MaximumNumberOfOperationsToMoveOnesToTheEnd;
 
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfOperationsToMoveOnesToTheEnd;
 
-public abstract class MaximumNumberOfOperationsToMoveOnesToTheEndTestsBase<T>
-    where T : IMaximumNumberOfOperationsToMoveOnesToTheEnd, new()
+public abstract class MaximumNumberOfOperationsToMoveOnesToTheEndTestsBase<T> where T : IMaximumNumberOfOperationsToMoveOnesToTheEnd, new()
 {
     [TestMethod]
     [DataRow("1001101", 4)]
     [DataRow("00111", 0)]
-    public void MaxOperations_WithBinaryStringContainingZerosAndOnes_ReturnsTotalNumberOfValidMoves(string s,
-        int expectedResult)
+    public void MaxOperations_WithBinaryStringContainingZerosAndOnes_ReturnsTotalNumberOfValidMoves(string s, int expectedResult)
     {
         // Arrange
         var solution = new T();

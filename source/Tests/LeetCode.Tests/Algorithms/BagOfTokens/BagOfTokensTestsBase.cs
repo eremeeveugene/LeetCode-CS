@@ -19,8 +19,7 @@ public abstract class BagOfTokensTestsBase<T> where T : IBagOfTokens, new()
     [DataRow(new[] { 100 }, 50, 0)]
     [DataRow(new[] { 200, 100 }, 150, 1)]
     [DataRow(new[] { 100, 200, 300, 400 }, 200, 2)]
-    public void BagOfTokensScore_WithTokensAndInitialPower_ReturnsMaximumScore(int[] tokens, int power,
-        int expectedResult)
+    public void BagOfTokensScore_WithTokensAndInitialPower_ReturnsMaximumScore(int[] tokens, int power, int expectedResult)
     {
         // Arrange
         var solution = new T();

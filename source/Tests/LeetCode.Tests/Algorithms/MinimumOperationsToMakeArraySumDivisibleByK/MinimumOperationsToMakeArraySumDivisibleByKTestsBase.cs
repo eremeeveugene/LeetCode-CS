@@ -13,15 +13,13 @@ using LeetCode.Algorithms.MinimumOperationsToMakeArraySumDivisibleByK;
 
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToMakeArraySumDivisibleByK;
 
-public abstract class MinimumOperationsToMakeArraySumDivisibleByKTestsBase<T>
-    where T : IMinimumOperationsToMakeArraySumDivisibleByK, new()
+public abstract class MinimumOperationsToMakeArraySumDivisibleByKTestsBase<T> where T : IMinimumOperationsToMakeArraySumDivisibleByK, new()
 {
     [TestMethod]
     [DataRow(new[] { 3, 9, 7 }, 5, 4)]
     [DataRow(new[] { 4, 1, 3 }, 4, 0)]
     [DataRow(new[] { 3, 2 }, 6, 5)]
-    public void MinOperations_WithNumArrayAndTargetValueK_ReturnsMinimumOperationCount(int[] nums, int k,
-        int expectedResult)
+    public void MinOperations_WithNumArrayAndTargetValueK_ReturnsMinimumOperationCount(int[] nums, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

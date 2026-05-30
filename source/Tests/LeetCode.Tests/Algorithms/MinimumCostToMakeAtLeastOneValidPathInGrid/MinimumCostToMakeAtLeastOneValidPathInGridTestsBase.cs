@@ -13,8 +13,7 @@ using LeetCode.Algorithms.MinimumCostToMakeAtLeastOneValidPathInGrid;
 
 namespace LeetCode.Tests.Algorithms.MinimumCostToMakeAtLeastOneValidPathInGrid;
 
-public abstract class MinimumCostToMakeAtLeastOneValidPathInGridTestsBase<T>
-    where T : IMinimumCostToMakeAtLeastOneValidPathInGrid, new()
+public abstract class MinimumCostToMakeAtLeastOneValidPathInGridTestsBase<T> where T : IMinimumCostToMakeAtLeastOneValidPathInGrid, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
@@ -32,10 +31,10 @@ public abstract class MinimumCostToMakeAtLeastOneValidPathInGridTestsBase<T>
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return [new int[][] { new[] { 1, 1, 1, 1 }, new[] { 2, 2, 2, 2 }, new[] { 1, 1, 1, 1 }, new[] { 2, 2, 2, 2 } }, 3];
+        yield return [new[] { new[] { 1, 1, 1, 1 }, new[] { 2, 2, 2, 2 }, new[] { 1, 1, 1, 1 }, new[] { 2, 2, 2, 2 } }, 3];
 
-        yield return [new int[][] { new[] { 1, 1, 3 }, new[] { 3, 2, 2 }, new[] { 1, 1, 4 } }, 0];
+        yield return [new[] { new[] { 1, 1, 3 }, new[] { 3, 2, 2 }, new[] { 1, 1, 4 } }, 0];
 
-        yield return [new int[][] { new[] { 1, 2 }, new[] { 4, 3 } }, 1];
+        yield return [new[] { new[] { 1, 2 }, new[] { 4, 3 } }, 1];
     }
 }

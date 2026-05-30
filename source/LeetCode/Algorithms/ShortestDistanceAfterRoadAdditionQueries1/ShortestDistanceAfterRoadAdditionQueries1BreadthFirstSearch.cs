@@ -74,8 +74,7 @@ public sealed class ShortestDistanceAfterRoadAdditionQueries1BreadthFirstSearch 
         {
             var currentNode = queue.Dequeue();
 
-            foreach (var neighbor in adjacencyList[currentNode]
-                         .Where(neighbor => distances[currentNode] + 1 < distances[neighbor]))
+            foreach (var neighbor in adjacencyList[currentNode].Where(neighbor => distances[currentNode] + 1 < distances[neighbor]))
             {
                 distances[neighbor] = distances[currentNode] + 1;
 

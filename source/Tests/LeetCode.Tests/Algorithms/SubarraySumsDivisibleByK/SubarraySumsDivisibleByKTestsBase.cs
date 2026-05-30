@@ -25,8 +25,7 @@ public abstract class SubarraySumsDivisibleByKTestsBase<T> where T : ISubarraySu
     [DataRow(new[] { -5, -10, 5 }, 5, 6)]
     [DataRow(new[] { 0, 0, 0 }, 5, 6)]
     [DataRow(new[] { 1, 2, 3, 4, 5 }, 1, 15)]
-    public void SubarraysDivByK_GivenArrayAndDivisor_ReturnsCountOfSubarraysDivisibleByK(int[] nums, int k,
-        int expectedResult)
+    public void SubarraysDivByK_GivenArrayAndDivisor_ReturnsCountOfSubarraysDivisibleByK(int[] nums, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

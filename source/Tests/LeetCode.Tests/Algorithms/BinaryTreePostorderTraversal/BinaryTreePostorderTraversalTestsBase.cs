@@ -18,8 +18,7 @@ public abstract class BinaryTreePostorderTraversalTestsBase<T> where T : IBinary
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void PostorderTraversal_WithBinaryTree_ReturnsListOfValuesInPostorder(int?[] rootArray,
-        int?[] expectedResult)
+    public void PostorderTraversal_WithBinaryTree_ReturnsListOfValuesInPostorder(int?[] rootArray, int?[] expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);

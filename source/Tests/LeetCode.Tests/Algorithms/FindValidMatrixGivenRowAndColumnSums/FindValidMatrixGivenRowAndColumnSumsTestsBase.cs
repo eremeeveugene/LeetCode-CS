@@ -13,13 +13,11 @@ using LeetCode.Algorithms.FindValidMatrixGivenRowAndColumnSums;
 
 namespace LeetCode.Tests.Algorithms.FindValidMatrixGivenRowAndColumnSums;
 
-public abstract class FindValidMatrixGivenRowAndColumnSumsTestsBase<T>
-    where T : IFindValidMatrixGivenRowAndColumnSums, new()
+public abstract class FindValidMatrixGivenRowAndColumnSumsTestsBase<T> where T : IFindValidMatrixGivenRowAndColumnSums, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void RestoreMatrix_WithGivenRowAndColumnSums_ReturnsRestoredMatrix(int[] rowSum,
-        int[] colSum, int[][] expectedResult)
+    public void RestoreMatrix_WithGivenRowAndColumnSums_ReturnsRestoredMatrix(int[] rowSum, int[] colSum, int[][] expectedResult)
     {
         // Arrange
         var solution = new T();

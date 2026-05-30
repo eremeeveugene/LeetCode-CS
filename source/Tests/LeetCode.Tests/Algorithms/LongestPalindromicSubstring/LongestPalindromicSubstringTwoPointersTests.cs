@@ -14,5 +14,4 @@ using LeetCode.Algorithms.LongestPalindromicSubstring;
 namespace LeetCode.Tests.Algorithms.LongestPalindromicSubstring;
 
 [TestClass]
-public sealed class LongestPalindromicSubstringTwoPointersTests : LongestPalindromicSubstringTestsBase<
-    LongestPalindromicSubstringTwoPointers>;
+public sealed class LongestPalindromicSubstringTwoPointersTests : LongestPalindromicSubstringTestsBase<LongestPalindromicSubstringTwoPointers>;

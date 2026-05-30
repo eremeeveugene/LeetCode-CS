@@ -18,8 +18,7 @@ public abstract class BinaryTreePreorderTraversalTestsBase<T> where T : IBinaryT
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void PreorderTraversal_WithSerializedBinaryTree_ReturnsNodeValuesInPreorder(int?[] rootArray,
-        int?[] expectedResult)
+    public void PreorderTraversal_WithSerializedBinaryTree_ReturnsNodeValuesInPreorder(int?[] rootArray, int?[] expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);

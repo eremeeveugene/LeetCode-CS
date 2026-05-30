@@ -18,8 +18,7 @@ public abstract class FindTheMaximumAchievableNumberTestsBase<T> where T : IFind
     [TestMethod]
     [DataRow(4, 1, 6)]
     [DataRow(3, 2, 7)]
-    public void TheMaximumAchievableX_WithStartValueAndSteps_ReturnsMaxValueByIncrementingOrDecrementing(int num, int t,
-        int expectedResult)
+    public void TheMaximumAchievableX_WithStartValueAndSteps_ReturnsMaxValueByIncrementingOrDecrementing(int num, int t, int expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -18,8 +18,7 @@ public abstract class DesignTaskManagerTestsBase
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void DesignTaskManager_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        TaskManagerScenario scenario)
+    public void DesignTaskManager_WithMixedOperations_ProcessesOperationsAccordingToSpecification(TaskManagerScenario scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -47,90 +46,20 @@ public abstract class DesignTaskManagerTestsBase
 
     private static IEnumerable<TaskManagerScenario[]> GetScenarios()
     {
-        yield return
-        [
-            new TaskManagerScenario(
-                [[1, 101, 10], [2, 102, 20], [3, 103, 15]],
-                [
-                    new AddOperation(4, 104, 5),
-                    new EditOperation(102, 8),
-                    new ExecTopOperation(),
-                    new RmvOperation(101),
-                    new AddOperation(5, 105, 15),
-                    new ExecTopOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new ExecTopOperation.Result(3),
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new ExecTopOperation.Result(5)
-                ])
-        ];
+        yield return [new TaskManagerScenario([[1, 101, 10], [2, 102, 20], [3, 103, 15]], [new AddOperation(4, 104, 5), new EditOperation(102, 8), new ExecTopOperation(), new RmvOperation(101), new AddOperation(5, 105, 15), new ExecTopOperation()], [VoidOperationResult.Instance, VoidOperationResult.Instance, new ExecTopOperation.Result(3), VoidOperationResult.Instance, VoidOperationResult.Instance, new ExecTopOperation.Result(5)])];
 
-        yield return
-        [
-            new TaskManagerScenario(
-                [],
-                [
-                    new ExecTopOperation()
-                ],
-                [
-                    new ExecTopOperation.Result(-1)
-                ])
-        ];
+        yield return [new TaskManagerScenario([], [new ExecTopOperation()], [new ExecTopOperation.Result(-1)])];
 
-        yield return
-        [
-            new TaskManagerScenario(
-                [[1, 101, 5], [2, 102, 10]],
-                [
-                    new EditOperation(101, 20),
-                    new ExecTopOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new ExecTopOperation.Result(1)
-                ])
-        ];
+        yield return [new TaskManagerScenario([[1, 101, 5], [2, 102, 10]], [new EditOperation(101, 20), new ExecTopOperation()], [VoidOperationResult.Instance, new ExecTopOperation.Result(1)])];
 
-        yield return
-        [
-            new TaskManagerScenario(
-                [[1, 101, 5], [2, 102, 10], [3, 103, 15]],
-                [
-                    new RmvOperation(103),
-                    new ExecTopOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new ExecTopOperation.Result(2)
-                ])
-        ];
+        yield return [new TaskManagerScenario([[1, 101, 5], [2, 102, 10], [3, 103, 15]], [new RmvOperation(103), new ExecTopOperation()], [VoidOperationResult.Instance, new ExecTopOperation.Result(2)])];
 
-        yield return
-        [
-            new TaskManagerScenario(
-                [[1, 101, 5]],
-                [
-                    new AddOperation(2, 102, 50),
-                    new ExecTopOperation(),
-                    new ExecTopOperation()
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    new ExecTopOperation.Result(2),
-                    new ExecTopOperation.Result(1)
-                ])
-        ];
+        yield return [new TaskManagerScenario([[1, 101, 5]], [new AddOperation(2, 102, 50), new ExecTopOperation(), new ExecTopOperation()], [VoidOperationResult.Instance, new ExecTopOperation.Result(2), new ExecTopOperation.Result(1)])];
     }
 
     public sealed class TaskManagerScenario : IScenario<IDesignTaskManager>
     {
-        public TaskManagerScenario(IList<IList<int>> tasks,
-            IOperation<IDesignTaskManager>[] operations,
-            IOperationResult[] operationResults)
+        public TaskManagerScenario(IList<IList<int>> tasks, IOperation<IDesignTaskManager>[] operations, IOperationResult[] operationResults)
         {
             Tasks = tasks;
             Operations = operations;
@@ -210,7 +139,9 @@ public abstract class DesignTaskManagerTestsBase
             return new Result(userId);
         }
 
-        public sealed class Result : IOperationResult, IEquatable<Result>
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
         {
             private readonly int _userId;
 

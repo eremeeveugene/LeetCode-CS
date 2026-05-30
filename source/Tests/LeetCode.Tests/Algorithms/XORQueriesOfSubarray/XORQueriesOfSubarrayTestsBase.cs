@@ -17,8 +17,7 @@ public abstract class XORQueriesOfSubarrayTestsBase<T> where T : IXORQueriesOfSu
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void XorQueries_WithArrayAndRangeQueries_ReturnsXorOfElementsForEachQuery(int[] arr, int[][] queries,
-        int[] expectedResult)
+    public void XorQueries_WithArrayAndRangeQueries_ReturnsXorOfElementsForEachQuery(int[] arr, int[][] queries, int[] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -32,11 +31,9 @@ public abstract class XORQueriesOfSubarrayTestsBase<T> where T : IXORQueriesOfSu
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return
-            [new[] { 1, 3, 4, 8 }, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 0, 3 }, new[] { 3, 3 } }, new[] { 2, 7, 14, 8 }];
+        yield return [new[] { 1, 3, 4, 8 }, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 0, 3 }, new[] { 3, 3 } }, new[] { 2, 7, 14, 8 }];
 
-        yield return
-            [new[] { 4, 8, 2, 10 }, new[] { new[] { 2, 3 }, new[] { 1, 3 }, new[] { 0, 0 }, new[] { 0, 3 } }, new[] { 8, 0, 4, 4 }];
+        yield return [new[] { 4, 8, 2, 10 }, new[] { new[] { 2, 3 }, new[] { 1, 3 }, new[] { 0, 0 }, new[] { 0, 3 } }, new[] { 8, 0, 4, 4 }];
 
         yield return [new[] { 16 }, new[] { new[] { 0, 0 }, new[] { 0, 0 }, new[] { 0, 0 } }, new[] { 16, 16, 16 }];
 

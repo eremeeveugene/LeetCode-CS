@@ -23,8 +23,7 @@ public sealed class ImplementTrieArray : IImplementTrie
     /// <param name="word"></param>
     public void Insert(string word)
     {
-        var currentNode = word.Select(c => c - 'a')
-            .Aggregate(_root, (current, index) => current.Nodes[index] ??= new Node());
+        var currentNode = word.Select(c => c - 'a').Aggregate(_root, (current, index) => current.Nodes[index] ??= new Node());
 
         currentNode.IsWord = true;
     }

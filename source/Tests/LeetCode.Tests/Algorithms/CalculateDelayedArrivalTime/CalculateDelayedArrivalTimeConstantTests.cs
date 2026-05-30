@@ -14,6 +14,4 @@ using LeetCode.Algorithms.CalculateDelayedArrivalTime;
 namespace LeetCode.Tests.Algorithms.CalculateDelayedArrivalTime;
 
 [TestClass]
-public sealed class
-    CalculateDelayedArrivalTimeConstantTests : CalculateDelayedArrivalTimeTestsBase<
-    CalculateDelayedArrivalTimeConstant>;
+public sealed class CalculateDelayedArrivalTimeConstantTests : CalculateDelayedArrivalTimeTestsBase<CalculateDelayedArrivalTimeConstant>;

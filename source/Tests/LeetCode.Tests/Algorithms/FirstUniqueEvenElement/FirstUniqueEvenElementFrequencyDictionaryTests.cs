@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FirstUniqueEvenElement;
 namespace LeetCode.Tests.Algorithms.FirstUniqueEvenElement;
 
 [TestClass]
-public sealed class FirstUniqueEvenElementFrequencyDictionaryTests :
-    FirstUniqueEvenElementTestsBase<FirstUniqueEvenElementFrequencyDictionary>;
+public sealed class FirstUniqueEvenElementFrequencyDictionaryTests : FirstUniqueEvenElementTestsBase<FirstUniqueEvenElementFrequencyDictionary>;

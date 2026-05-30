@@ -32,8 +32,7 @@ public abstract class ImplementQueueUsingStacksTestsBase<T> where T : IImplement
     [DataRow(new[] { 1, 2, 3 }, new[] { 1, 2, 3 })]
     [DataRow(new[] { 5, 10, 15 }, new[] { 5, 10, 15 })]
     [DataRow(new int[] { }, new int[] { })]
-    public void Pop_RemovesElementsFromQueue_QueueBecomesEmpty(int[] pushElements,
-        int[] popExpected)
+    public void Pop_RemovesElementsFromQueue_QueueBecomesEmpty(int[] pushElements, int[] popExpected)
     {
         // Arrange
         var solution = new T();

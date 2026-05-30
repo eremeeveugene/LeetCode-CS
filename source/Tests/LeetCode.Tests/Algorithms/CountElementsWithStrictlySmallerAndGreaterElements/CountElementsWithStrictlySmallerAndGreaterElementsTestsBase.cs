@@ -13,14 +13,12 @@ using LeetCode.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements;
 
 namespace LeetCode.Tests.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements;
 
-public abstract class CountElementsWithStrictlySmallerAndGreaterElementsTestsBase<T>
-    where T : ICountElementsWithStrictlySmallerAndGreaterElements, new()
+public abstract class CountElementsWithStrictlySmallerAndGreaterElementsTestsBase<T> where T : ICountElementsWithStrictlySmallerAndGreaterElements, new()
 {
     [TestMethod]
     [DataRow(new[] { 11, 7, 2, 15 }, 2)]
     [DataRow(new[] { -3, 3, 3, 90 }, 2)]
-    public void CountElements_GivenArray_ReturnsCountOfElementsMatchingCriteria(int[] nums,
-        int expectedResult)
+    public void CountElements_GivenArray_ReturnsCountOfElementsMatchingCriteria(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

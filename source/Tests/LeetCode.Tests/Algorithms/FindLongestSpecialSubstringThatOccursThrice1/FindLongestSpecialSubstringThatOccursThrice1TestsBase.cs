@@ -13,8 +13,7 @@ using LeetCode.Algorithms.FindLongestSpecialSubstringThatOccursThrice1;
 
 namespace LeetCode.Tests.Algorithms.FindLongestSpecialSubstringThatOccursThrice1;
 
-public abstract class FindLongestSpecialSubstringThatOccursThrice1TestsBase<T>
-    where T : IFindLongestSpecialSubstringThatOccursThrice1, new()
+public abstract class FindLongestSpecialSubstringThatOccursThrice1TestsBase<T> where T : IFindLongestSpecialSubstringThatOccursThrice1, new()
 {
     [TestMethod]
     [DataRow("aaaa", 2)]

@@ -21,8 +21,7 @@ public abstract class AddTwoNumbers2TestsBase<T> where T : IAddTwoNumbers2, new(
     [DataRow(new[] { 0 }, new[] { 0 }, new[] { 0 })]
     [DataRow(new[] { 7, 2, 4, 3 }, new[] { 5, 6, 4 }, new[] { 7, 8, 0, 7 })]
     [DataRow(new[] { 2, 4, 3 }, new[] { 5, 6, 4 }, new[] { 8, 0, 7 })]
-    public void AddTwoNumbers_WithTwoLinkedLists_ReturnsSumAsLinkedList(int[] l1Array, int[] l2Array,
-        int[] expectedResultArray)
+    public void AddTwoNumbers_WithTwoLinkedLists_ReturnsSumAsLinkedList(int[] l1Array, int[] l2Array, int[] expectedResultArray)
     {
         // Arrange
         var l1 = ListNode.ToListNodeOrThrow(l1Array);

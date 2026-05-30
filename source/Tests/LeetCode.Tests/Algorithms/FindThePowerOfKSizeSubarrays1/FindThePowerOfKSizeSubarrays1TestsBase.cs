@@ -19,8 +19,7 @@ public abstract class FindThePowerOfKSizeSubarrays1TestsBase<T> where T : IFindT
     [DataRow(new[] { 1, 2, 3, 4, 3, 2, 5 }, 3, new[] { 3, 4, -1, -1, -1 })]
     [DataRow(new[] { 2, 2, 2, 2, 2 }, 4, new[] { -1, -1 })]
     [DataRow(new[] { 3, 2, 3, 2, 3, 2 }, 2, new[] { -1, 3, -1, 3, -1 })]
-    public void ResultsArray_WithInputArrayAndK_ReturnsTransformedArray(int[] nums, int k,
-        int[] expectedResult)
+    public void ResultsArray_WithInputArrayAndK_ReturnsTransformedArray(int[] nums, int k, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

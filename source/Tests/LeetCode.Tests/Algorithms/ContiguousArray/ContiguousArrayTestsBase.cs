@@ -24,8 +24,7 @@ public abstract class ContiguousArrayTestsBase<T> where T : IContiguousArray, ne
     [DataRow(new[] { 0, 1, 1, 0, 1, 1, 1, 0, 0 }, 6)]
     [DataRow(new[] { 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1 }, 16)]
     [DataRow(new[] { 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0 }, 16)]
-    public void FindMaxLength_GivenArrayOfBinary_ReturnsLongestContiguousArrayLength(int[] nums,
-        int expectedResult)
+    public void FindMaxLength_GivenArrayOfBinary_ReturnsLongestContiguousArrayLength(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

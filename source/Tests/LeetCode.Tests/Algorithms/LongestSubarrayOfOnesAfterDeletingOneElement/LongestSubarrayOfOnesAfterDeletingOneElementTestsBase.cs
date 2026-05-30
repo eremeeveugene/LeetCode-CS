@@ -13,15 +13,13 @@ using LeetCode.Algorithms.LongestSubarrayOfOnesAfterDeletingOneElement;
 
 namespace LeetCode.Tests.Algorithms.LongestSubarrayOfOnesAfterDeletingOneElement;
 
-public abstract class LongestSubarrayOfOnesAfterDeletingOneElementTestsBase<T>
-    where T : ILongestSubarrayOf1AfterDeletingOneElement, new()
+public abstract class LongestSubarrayOfOnesAfterDeletingOneElementTestsBase<T> where T : ILongestSubarrayOf1AfterDeletingOneElement, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 1, 0, 1 }, 3)]
     [DataRow(new[] { 0, 1, 1, 1, 0, 1, 1, 0, 1 }, 5)]
     [DataRow(new[] { 1, 1, 1 }, 2)]
-    public void LongestSubarray_WithNumsBinaryArray_ReturnsLengthOfLongestSubarrayOfOnes(
-        int[] nums, int expectedResult)
+    public void LongestSubarray_WithNumsBinaryArray_ReturnsLengthOfLongestSubarrayOfOnes(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

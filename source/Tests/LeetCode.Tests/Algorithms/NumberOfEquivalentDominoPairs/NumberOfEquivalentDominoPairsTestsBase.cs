@@ -17,8 +17,7 @@ public abstract class NumberOfEquivalentDominoPairsTestsBase<T> where T : INumbe
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void NumEquivDominoPairs_WithDominoList_ReturnsCountOfEquivalentPairs(int[][] dominoes,
-        int expectedResult)
+    public void NumEquivDominoPairs_WithDominoList_ReturnsCountOfEquivalentPairs(int[][] dominoes, int expectedResult)
     {
         // Arrange
         var solution = new T();

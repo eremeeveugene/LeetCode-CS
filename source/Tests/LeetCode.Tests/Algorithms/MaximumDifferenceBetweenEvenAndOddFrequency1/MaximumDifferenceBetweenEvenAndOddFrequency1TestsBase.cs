@@ -13,14 +13,12 @@ using LeetCode.Algorithms.MaximumDifferenceBetweenEvenAndOddFrequency1;
 
 namespace LeetCode.Tests.Algorithms.MaximumDifferenceBetweenEvenAndOddFrequency1;
 
-public abstract class MaximumDifferenceBetweenEvenAndOddFrequency1TestsBase<T>
-    where T : IMaximumDifferenceBetweenEvenAndOddFrequency1, new()
+public abstract class MaximumDifferenceBetweenEvenAndOddFrequency1TestsBase<T> where T : IMaximumDifferenceBetweenEvenAndOddFrequency1, new()
 {
     [TestMethod]
     [DataRow("aaaaabbc", 3)]
     [DataRow("abcabcab", 1)]
-    public void MaxDifference_WithGivenString_ReturnMaximumDifferenceBetweenEvenAndOddFrequency(string s,
-        int expectedResult)
+    public void MaxDifference_WithGivenString_ReturnMaximumDifferenceBetweenEvenAndOddFrequency(string s, int expectedResult)
     {
         // Arrange
         var solution = new T();

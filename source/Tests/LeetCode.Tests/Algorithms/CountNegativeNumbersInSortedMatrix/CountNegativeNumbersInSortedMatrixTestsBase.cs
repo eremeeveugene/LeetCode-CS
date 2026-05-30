@@ -13,8 +13,7 @@ using LeetCode.Algorithms.CountNegativeNumbersInSortedMatrix;
 
 namespace LeetCode.Tests.Algorithms.CountNegativeNumbersInSortedMatrix;
 
-public abstract class CountNegativeNumbersInSortedMatrixTestsBase<T>
-    where T : ICountNegativeNumbersInSortedMatrix, new()
+public abstract class CountNegativeNumbersInSortedMatrixTestsBase<T> where T : ICountNegativeNumbersInSortedMatrix, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
@@ -34,9 +33,6 @@ public abstract class CountNegativeNumbersInSortedMatrixTestsBase<T>
     {
         yield return [new[] { new[] { 3, 2 }, new[] { 1, 0 } }, 0];
 
-        yield return
-        [
-            new[] { new[] { 4, 3, 2, -1 }, new[] { 3, 2, 1, -1 }, new[] { 1, 1, -1, -2 }, new[] { -1, -1, -2, -3 } }, 8
-        ];
+        yield return [new[] { new[] { 4, 3, 2, -1 }, new[] { 3, 2, 1, -1 }, new[] { 1, 1, -1, -2 }, new[] { -1, -1, -2, -3 } }, 8];
     }
 }

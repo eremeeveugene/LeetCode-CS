@@ -18,8 +18,7 @@ public abstract class LargestDivisibleSubsetTestsBase<T> where T : ILargestDivis
     [TestMethod]
     [DataRow(new[] { 1, 2, 3 }, new[] { 1, 2 })]
     [DataRow(new[] { 1, 2, 4, 8 }, new[] { 1, 2, 4, 8 })]
-    public void LargestDivisibleSubset_WithArrayOfIntegers_ReturnsSubsetWhereEveryPairIsDivisible(int[] nums,
-        int[] expectedResult)
+    public void LargestDivisibleSubset_WithArrayOfIntegers_ReturnsSubsetWhereEveryPairIsDivisible(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

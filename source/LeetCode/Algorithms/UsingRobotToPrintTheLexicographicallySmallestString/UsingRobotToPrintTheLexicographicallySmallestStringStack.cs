@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.UsingRobotToPrintTheLexicographicallySmallestString;
 
 /// <inheritdoc />
-public sealed class UsingRobotToPrintTheLexicographicallySmallestStringStack :
-    IUsingRobotToPrintTheLexicographicallySmallestString
+public sealed class UsingRobotToPrintTheLexicographicallySmallestStringStack : IUsingRobotToPrintTheLexicographicallySmallestString
 {
     private const byte AlphabetLength = 'z' - 'a' + 1;
 
@@ -53,8 +52,7 @@ public sealed class UsingRobotToPrintTheLexicographicallySmallestStringStack :
                 minIndex++;
             }
 
-            while (bufferStackLastIndex > 0 && (minIndex == AlphabetLength ||
-                                                bufferStack[bufferStackLastIndex - 1] <= IndexToChar(minIndex)))
+            while (bufferStackLastIndex > 0 && (minIndex == AlphabetLength || bufferStack[bufferStackLastIndex - 1] <= IndexToChar(minIndex)))
             {
                 result[resultLength++] = bufferStack[--bufferStackLastIndex];
             }

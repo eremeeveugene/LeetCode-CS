@@ -18,8 +18,7 @@ public abstract class CountTheNumberOfFairPairsTestsBase<T> where T : ICountTheN
     [TestMethod]
     [DataRow(new[] { 0, 1, 7, 4, 4, 5 }, 3, 6, 6L)]
     [DataRow(new[] { 1, 7, 9, 2, 5 }, 11, 11, 1L)]
-    public void CountFairPairs_WithArrayAndBounds_ReturnsTheNumberOfFairPairs(int[] nums, int lower,
-        int upper, long expectedResult)
+    public void CountFairPairs_WithArrayAndBounds_ReturnsTheNumberOfFairPairs(int[] nums, int lower, int upper, long expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MinimumPairRemovalToSortArray1;
 namespace LeetCode.Tests.Algorithms.MinimumPairRemovalToSortArray1;
 
 [TestClass]
-public sealed class MinimumPairRemovalToSortArray1SimulationTests :
-    MinimumPairRemovalToSortArray1TestsBase<MinimumPairRemovalToSortArray1Simulation>;
+public sealed class MinimumPairRemovalToSortArray1SimulationTests : MinimumPairRemovalToSortArray1TestsBase<MinimumPairRemovalToSortArray1Simulation>;

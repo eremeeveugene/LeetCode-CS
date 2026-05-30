@@ -13,15 +13,13 @@ using LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 
 namespace LeetCode.Tests.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 
-public abstract class HowManyNumbersAreSmallerThanTheCurrentNumberTestsBase<T>
-    where T : IHowManyNumbersAreSmallerThanTheCurrentNumber, new()
+public abstract class HowManyNumbersAreSmallerThanTheCurrentNumberTestsBase<T> where T : IHowManyNumbersAreSmallerThanTheCurrentNumber, new()
 {
     [TestMethod]
     [DataRow(new[] { 8, 1, 2, 2, 3 }, new[] { 4, 0, 1, 1, 3 })]
     [DataRow(new[] { 6, 5, 4, 8 }, new[] { 2, 1, 0, 3 })]
     [DataRow(new[] { 7, 7, 7, 7 }, new[] { 0, 0, 0, 0 })]
-    public void SmallerNumbersThanCurrent_WithIntArray_ReturnsCountsArray(int[] nums,
-        int[] expectedResult)
+    public void SmallerNumbersThanCurrent_WithIntArray_ReturnsCountsArray(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

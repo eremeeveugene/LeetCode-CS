@@ -13,16 +13,14 @@ using LeetCode.Algorithms.LongestSubarrayWithMaximumBitwiseAND;
 
 namespace LeetCode.Tests.Algorithms.LongestSubarrayWithMaximumBitwiseAND;
 
-public abstract class LongestSubarrayWithMaximumBitwiseANDTestsBase<T>
-    where T : ILongestSubarrayWithMaximumBitwiseAND, new()
+public abstract class LongestSubarrayWithMaximumBitwiseANDTestsBase<T> where T : ILongestSubarrayWithMaximumBitwiseAND, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 3, 4 }, 1)]
     [DataRow(new[] { 1, 2, 3, 3, 2, 2 }, 2)]
     [DataRow(new[] { 311155, 311155, 311155, 311155, 311155, 311155, 311155, 311155, 201191, 311155 }, 8)]
     [DataRow(new[] { 378034, 378034, 378034 }, 3)]
-    public void LongestSubarray_GivenArrayOfIntegers_ReturnsLengthOfLongestSubarray(int[] nums,
-        int expectedResult)
+    public void LongestSubarray_GivenArrayOfIntegers_ReturnsLengthOfLongestSubarray(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

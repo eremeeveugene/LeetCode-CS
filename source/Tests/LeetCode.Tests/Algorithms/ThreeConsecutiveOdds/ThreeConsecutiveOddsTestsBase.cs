@@ -18,8 +18,7 @@ public abstract class ThreeConsecutiveOddsTestsBase<T> where T : IThreeConsecuti
     [TestMethod]
     [DataRow(new[] { 2, 6, 4, 1 }, false)]
     [DataRow(new[] { 1, 2, 34, 3, 4, 5, 7, 23, 12 }, true)]
-    public void ThreeConsecutiveOdds_WithIntegerArray_ReturnsTrueIfThreeConsecutiveOddsExist(int[] arr,
-        bool expectedResult)
+    public void ThreeConsecutiveOdds_WithIntegerArray_ReturnsTrueIfThreeConsecutiveOddsExist(int[] arr, bool expectedResult)
     {
         // Arrange
         var solution = new T();

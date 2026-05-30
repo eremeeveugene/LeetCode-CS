@@ -18,8 +18,7 @@ public abstract class CombinationSum2TestsBase<T> where T : ICombinationSum2, ne
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void CombinationSum2_WithCandidatesAndTarget_ReturnsAllUniqueCombinationsSummingToTarget(
-        int[] candidates, int target, IList<IList<int>> expectedResult)
+    public void CombinationSum2_WithCandidatesAndTarget_ReturnsAllUniqueCombinationsSummingToTarget(int[] candidates, int target, IList<IList<int>> expectedResult)
     {
         // Arrange
         var solution = new T();

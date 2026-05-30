@@ -14,5 +14,4 @@ using LeetCode.Algorithms.CheckIfBinaryStringHasAtMostOneSegmentOfOnes;
 namespace LeetCode.Tests.Algorithms.CheckIfBinaryStringHasAtMostOneSegmentOfOnes;
 
 [TestClass]
-public sealed class CheckIfBinaryStringHasAtMostOneSegmentOfOnesGreedyTests :
-    CheckIfBinaryStringHasAtMostOneSegmentOfOnesTestsBase<CheckIfBinaryStringHasAtMostOneSegmentOfOnesGreedy>;
+public sealed class CheckIfBinaryStringHasAtMostOneSegmentOfOnesGreedyTests : CheckIfBinaryStringHasAtMostOneSegmentOfOnesTestsBase<CheckIfBinaryStringHasAtMostOneSegmentOfOnesGreedy>;

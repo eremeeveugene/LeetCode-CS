@@ -14,5 +14,4 @@ using LeetCode.Algorithms.FindTheNumberOfWaysToPlacePeople1;
 namespace LeetCode.Tests.Algorithms.FindTheNumberOfWaysToPlacePeople1;
 
 [TestClass]
-public sealed class FindTheNumberOfWaysToPlacePeople1SortingGreedyTests :
-    FindTheNumberOfWaysToPlacePeople1TestsBase<FindTheNumberOfWaysToPlacePeople1SortingGreedy>;
+public sealed class FindTheNumberOfWaysToPlacePeople1SortingGreedyTests : FindTheNumberOfWaysToPlacePeople1TestsBase<FindTheNumberOfWaysToPlacePeople1SortingGreedy>;

@@ -17,8 +17,7 @@ public abstract class DiagonalTraverseTestsBase<T> where T : IDiagonalTraverse, 
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FindDiagonalOrder_WithMatrix_ReturnsElementsInDiagonalTraversalOrder(int[][] mat,
-        int[] expectedResult)
+    public void FindDiagonalOrder_WithMatrix_ReturnsElementsInDiagonalTraversalOrder(int[][] mat, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

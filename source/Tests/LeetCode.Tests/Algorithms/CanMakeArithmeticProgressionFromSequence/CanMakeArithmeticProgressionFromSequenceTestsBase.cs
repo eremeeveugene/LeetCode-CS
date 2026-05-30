@@ -13,14 +13,12 @@ using LeetCode.Algorithms.CanMakeArithmeticProgressionFromSequence;
 
 namespace LeetCode.Tests.Algorithms.CanMakeArithmeticProgressionFromSequence;
 
-public abstract class CanMakeArithmeticProgressionFromSequenceTestsBase<T>
-    where T : ICanMakeArithmeticProgressionFromSequence, new()
+public abstract class CanMakeArithmeticProgressionFromSequenceTestsBase<T> where T : ICanMakeArithmeticProgressionFromSequence, new()
 {
     [TestMethod]
     [DataRow(new[] { 3, 5, 1 }, true)]
     [DataRow(new[] { 1, 2, 4 }, false)]
-    public void CanMakeArithmeticProgression_GivenArray_ReturnsWhetherArithmeticProgressionIsPossible(
-        int[] arr, bool expectedResult)
+    public void CanMakeArithmeticProgression_GivenArray_ReturnsWhetherArithmeticProgressionIsPossible(int[] arr, bool expectedResult)
     {
         // Arrange
         var solution = new T();

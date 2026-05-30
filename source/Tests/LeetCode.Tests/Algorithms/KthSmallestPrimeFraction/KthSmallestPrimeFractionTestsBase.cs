@@ -26,8 +26,7 @@ public abstract class KthSmallestPrimeFractionTestsBase<T> where T : IKthSmalles
     [DataRow(new[] { 1, 2, 3, 5 }, 6, new[] { 2, 3 })]
     [DataRow(new[] { 1, 3, 5, 7, 11, 13 }, 10, new[] { 5, 11 })]
     [DataRow(new[] { 1, 2, 3, 5, 7, 11 }, 15, new[] { 5, 7 })]
-    public void KthSmallestPrimeFraction_WithSortedPrimesAndK_ReturnsKthSmallestFractionInFormOfNumeratorAndDenominator(
-        int[] arr, int k, int[] expectedResult)
+    public void KthSmallestPrimeFraction_WithSortedPrimesAndK_ReturnsKthSmallestFractionInFormOfNumeratorAndDenominator(int[] arr, int k, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

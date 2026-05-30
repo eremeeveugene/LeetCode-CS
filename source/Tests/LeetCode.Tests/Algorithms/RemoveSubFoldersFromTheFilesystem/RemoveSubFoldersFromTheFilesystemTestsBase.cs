@@ -20,8 +20,7 @@ public abstract class RemoveSubFoldersFromTheFilesystemTestsBase<T> where T : IR
     [DataRow(new[] { "/a", "/a/b", "/a/b/c", "/c/d", "/c/d/e", "/c/f" }, new[] { "/a", "/c/d", "/c/f" })]
     [DataRow(new[] { "/a", "/a/b/c", "/a/b/d" }, new[] { "/a" })]
     [DataRow(new[] { "/a/b/c", "/a/b/ca", "/a/b/d" }, new[] { "/a/b/c", "/a/b/ca", "/a/b/d" })]
-    public void RemoveSubfolders_WithFolderList_ReturnsFoldersExcludingSubfolders(string[] folder,
-        string[] expectedResult)
+    public void RemoveSubfolders_WithFolderList_ReturnsFoldersExcludingSubfolders(string[] folder, string[] expectedResult)
     {
         // Arrange
         var solution = new T();

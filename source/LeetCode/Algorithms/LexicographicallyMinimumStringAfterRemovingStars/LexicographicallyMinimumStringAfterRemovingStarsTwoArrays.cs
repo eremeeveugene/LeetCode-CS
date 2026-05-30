@@ -12,8 +12,7 @@
 namespace LeetCode.Algorithms.LexicographicallyMinimumStringAfterRemovingStars;
 
 /// <inheritdoc />
-public sealed class LexicographicallyMinimumStringAfterRemovingStarsTwoArrays :
-    LexicographicallyMinimumStringAfterRemovingStarsBase
+public sealed class LexicographicallyMinimumStringAfterRemovingStarsTwoArrays : LexicographicallyMinimumStringAfterRemovingStarsBase
 {
     private const int Length = 'z' - 'a' + 1;
 

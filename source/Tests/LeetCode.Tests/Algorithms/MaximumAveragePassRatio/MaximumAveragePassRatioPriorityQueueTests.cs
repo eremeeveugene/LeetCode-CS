@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumAveragePassRatio;
 namespace LeetCode.Tests.Algorithms.MaximumAveragePassRatio;
 
 [TestClass]
-public sealed class MaximumAveragePassRatioPriorityQueueTests :
-    MaximumAveragePassRatioTestsBase<MaximumAveragePassRatioPriorityQueue>;
+public sealed class MaximumAveragePassRatioPriorityQueueTests : MaximumAveragePassRatioTestsBase<MaximumAveragePassRatioPriorityQueue>;

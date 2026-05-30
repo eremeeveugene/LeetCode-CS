@@ -18,8 +18,7 @@ public abstract class FindModeInBinarySearchTreeTestsBase<T> where T : IFindMode
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FindMode_WithBinaryTree_ReturnsModeValues(int?[] rootArray,
-        int[] expectedResult)
+    public void FindMode_WithBinaryTree_ReturnsModeValues(int?[] rootArray, int[] expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);

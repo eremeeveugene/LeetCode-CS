@@ -19,8 +19,7 @@ public abstract class NRepeatedElementInSize2NArrayTestsBase<T> where T : INRepe
     [DataRow(new[] { 1, 2, 3, 3 }, 3)]
     [DataRow(new[] { 2, 1, 2, 5, 3, 2 }, 2)]
     [DataRow(new[] { 5, 1, 5, 2, 5, 3, 5, 4 }, 5)]
-    public void RepeatedNTimes_WithArrayContainingOneElementRepeatedNTimes_ReturnsRepeatedElement(int[] nums,
-        int expectedResult)
+    public void RepeatedNTimes_WithArrayContainingOneElementRepeatedNTimes_ReturnsRepeatedElement(int[] nums, int expectedResult)
     {
         // Arrange
         var solution = new T();

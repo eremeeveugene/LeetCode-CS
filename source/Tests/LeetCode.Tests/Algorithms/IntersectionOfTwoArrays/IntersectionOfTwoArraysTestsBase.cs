@@ -18,8 +18,7 @@ public abstract class IntersectionOfTwoArraysTestsBase<T> where T : IIntersectio
     [TestMethod]
     [DataRow(new[] { 1, 2, 2, 1 }, new[] { 2, 2 }, new[] { 2 })]
     [DataRow(new[] { 4, 9, 5 }, new[] { 9, 4, 9, 8, 4 }, new[] { 9, 4 })]
-    public void Intersection_GivenTwoArrays_ReturnsCommonElements(int[] nums1, int[] nums2,
-        int[] expectedResult)
+    public void Intersection_GivenTwoArrays_ReturnsCommonElements(int[] nums1, int[] nums2, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

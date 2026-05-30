@@ -13,8 +13,7 @@ using LeetCode.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency;
 
 namespace LeetCode.Tests.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency;
 
-public abstract class LengthOfLongestSubarrayWithAtMostKFrequencyTestsBase<T>
-    where T : ILengthOfLongestSubarrayWithAtMostKFrequency, new()
+public abstract class LengthOfLongestSubarrayWithAtMostKFrequencyTestsBase<T> where T : ILengthOfLongestSubarrayWithAtMostKFrequency, new()
 {
     [TestMethod]
     [DataRow(new[] { 1 }, 1, 1)]
@@ -32,8 +31,7 @@ public abstract class LengthOfLongestSubarrayWithAtMostKFrequencyTestsBase<T>
     [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 2, 10)]
     [DataRow(new[] { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 }, 1, 2)]
     [DataRow(new[] { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 }, 2, 10)]
-    public void MaxSubarrayLength_GivenArrayAndK_ReturnsMaxSubarrayLength(int[] nums, int k,
-        int expectedResult)
+    public void MaxSubarrayLength_GivenArrayAndK_ReturnsMaxSubarrayLength(int[] nums, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

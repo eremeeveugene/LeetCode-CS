@@ -18,8 +18,7 @@ public abstract class ConstructTheMinimumBitwiseArray1TestsBase<T> where T : ICo
     [TestMethod]
     [DataRow(new[] { 2, 3, 5, 7 }, new[] { -1, 1, 4, 3 })]
     [DataRow(new[] { 11, 13, 31 }, new[] { 9, 12, 15 })]
-    public void MinBitwiseArray_WithPrimeNumbersArray_ReturnsArrayWithMinimizedBitwiseValuesOrNegativeOne(
-        int[] nums, int[] expectedResult)
+    public void MinBitwiseArray_WithPrimeNumbersArray_ReturnsArrayWithMinimizedBitwiseValuesOrNegativeOne(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

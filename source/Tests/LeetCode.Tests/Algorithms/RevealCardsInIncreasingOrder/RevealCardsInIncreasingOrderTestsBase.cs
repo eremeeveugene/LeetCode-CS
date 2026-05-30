@@ -22,8 +22,7 @@ public abstract class RevealCardsInIncreasingOrderTestsBase<T> where T : IReveal
     [DataRow(new[] { 1, 2, 3, 4 }, new[] { 1, 3, 2, 4 })]
     [DataRow(new[] { 1, 2, 3, 4, 5 }, new[] { 1, 5, 2, 4, 3 })]
     [DataRow(new[] { 17, 13, 11, 2, 3, 5, 7 }, new[] { 2, 13, 3, 11, 5, 17, 7 })]
-    public void DeckRevealedIncreasing_WithUnorderedDeck_ReturnsOrderThatRevealsCardsInIncreasingSequence(
-        int[] deck, int[] expectedResult)
+    public void DeckRevealedIncreasing_WithUnorderedDeck_ReturnsOrderThatRevealsCardsInIncreasingSequence(int[] deck, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

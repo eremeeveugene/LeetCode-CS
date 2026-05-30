@@ -13,13 +13,11 @@ using LeetCode.Algorithms.MaximumNumberOfKDivisibleComponents;
 
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfKDivisibleComponents;
 
-public abstract class MaximumNumberOfKDivisibleComponentsTestsBase<T>
-    where T : IMaximumNumberOfKDivisibleComponents, new()
+public abstract class MaximumNumberOfKDivisibleComponentsTestsBase<T> where T : IMaximumNumberOfKDivisibleComponents, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MaxKDivisibleComponents_WithGraphEdgesAndValues_ReturnsComponentCount(int n, int[][] edges,
-        int[] values, int k, int expectedResult)
+    public void MaxKDivisibleComponents_WithGraphEdgesAndValues_ReturnsComponentCount(int n, int[][] edges, int[] values, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

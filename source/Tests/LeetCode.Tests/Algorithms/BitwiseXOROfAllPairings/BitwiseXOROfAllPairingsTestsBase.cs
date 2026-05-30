@@ -18,8 +18,7 @@ public abstract class BitwiseXOROfAllPairingsTestsBAse<T> where T : IBitwiseXORO
     [TestMethod]
     [DataRow(new[] { 2, 1, 3 }, new[] { 10, 2, 5, 0 }, 13)]
     [DataRow(new[] { 1, 2 }, new[] { 3, 4 }, 0)]
-    public void XorAllNums_WithTwoIntegerArrays_ReturnsBitwiseXorValue(int[] nums1, int[] nums2,
-        int expectedResult)
+    public void XorAllNums_WithTwoIntegerArrays_ReturnsBitwiseXorValue(int[] nums1, int[] nums2, int expectedResult)
     {
         // Arrange
         var solution = new T();

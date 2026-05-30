@@ -18,8 +18,7 @@ public abstract class SummaryRangesTestsBase<T> where T : ISummaryRanges, new()
     [TestMethod]
     [DataRow(new[] { 0, 1, 2, 4, 5, 7 }, new[] { "0->2", "4->5", "7" })]
     [DataRow(new[] { 0, 2, 3, 4, 6, 8, 9 }, new[] { "0", "2->4", "6", "8->9" })]
-    public void SummaryRanges_WithSortedUniqueArray_ReturnsListOfMinimalConsecutiveRanges(int[] nums,
-        string[] expectedResult)
+    public void SummaryRanges_WithSortedUniqueArray_ReturnsListOfMinimalConsecutiveRanges(int[] nums, string[] expectedResult)
     {
         // Arrange
         var solution = new T();

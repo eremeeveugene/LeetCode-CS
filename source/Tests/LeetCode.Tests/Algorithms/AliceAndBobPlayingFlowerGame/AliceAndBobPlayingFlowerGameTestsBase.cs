@@ -18,8 +18,7 @@ public abstract class AliceAndBobPlayingFlowerGameTestsBase<T> where T : IAliceA
     [TestMethod]
     [DataRow(3, 2, 3)]
     [DataRow(1, 1, 0)]
-    public void FlowerGame_WithFirstAndSecondLaneFlowerCounts_ReturnsTotalWinningPairsForAlice(int n, int m,
-        long expectedResult)
+    public void FlowerGame_WithFirstAndSecondLaneFlowerCounts_ReturnsTotalWinningPairsForAlice(int n, int m, long expectedResult)
     {
         // Arrange
         var solution = new T();

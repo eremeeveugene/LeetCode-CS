@@ -14,5 +14,4 @@ using LeetCode.Algorithms.ConstructUniformParityArray1;
 namespace LeetCode.Tests.Algorithms.ConstructUniformParityArray1;
 
 [TestClass]
-public sealed class ConstructUniformParityArray1MathTests :
-    ConstructUniformParityArray1TestsBase<ConstructUniformParityArray1Math>;
+public sealed class ConstructUniformParityArray1MathTests : ConstructUniformParityArray1TestsBase<ConstructUniformParityArray1Math>;

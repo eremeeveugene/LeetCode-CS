@@ -14,5 +14,4 @@ using LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray;
 namespace LeetCode.Tests.Algorithms.MaximumProductOfTwoElementsInAnArray;
 
 [TestClass]
-public class MaximumProductOfTwoElementsInAnArrayBruteForceTests : MaximumProductOfTwoElementsInAnArrayTestsBase<
-    MaximumProductOfTwoElementsInAnArrayBruteForce>;
+public class MaximumProductOfTwoElementsInAnArrayBruteForceTests : MaximumProductOfTwoElementsInAnArrayTestsBase<MaximumProductOfTwoElementsInAnArrayBruteForce>;

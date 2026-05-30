@@ -19,8 +19,7 @@ public abstract class MinimumCapacityBoxTestsBase<T> where T : IMinimumCapacityB
     [DataRow(new[] { 1, 5, 3, 7 }, 3, 2)]
     [DataRow(new[] { 3, 5, 4, 3 }, 2, 0)]
     [DataRow(new[] { 3 }, 5, -1)]
-    public void MinimumIndex_WithCapacitiesAndItemSize_ReturnsIndexOfSmallestSufficientCapacity(int[] capacities,
-        int itemSize, int expectedResult)
+    public void MinimumIndex_WithCapacitiesAndItemSize_ReturnsIndexOfSmallestSufficientCapacity(int[] capacities, int itemSize, int expectedResult)
     {
         // Arrange
         var solution = new T();

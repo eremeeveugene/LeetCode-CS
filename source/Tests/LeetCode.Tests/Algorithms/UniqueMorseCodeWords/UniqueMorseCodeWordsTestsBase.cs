@@ -18,8 +18,7 @@ public abstract class UniqueMorseCodeWordsTestsBase<T> where T : IUniqueMorseCod
     [TestMethod]
     [DataRow(new[] { "gin", "zen", "gig", "msg" }, 2)]
     [DataRow(new[] { "a" }, 1)]
-    public void UniqueMorseRepresentations_GivenWordsArray_ReturnsCountOfUniqueRepresentations(string[] words,
-        int expectedResult)
+    public void UniqueMorseRepresentations_GivenWordsArray_ReturnsCountOfUniqueRepresentations(string[] words, int expectedResult)
     {
         // Arrange
         var solution = new T();

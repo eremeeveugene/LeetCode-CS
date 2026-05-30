@@ -18,8 +18,7 @@ public abstract class TransformArrayByParityTestsBase<T> where T : ITransformArr
     [TestMethod]
     [DataRow(new[] { 4, 3, 2, 1 }, new[] { 0, 0, 1, 1 })]
     [DataRow(new[] { 1, 5, 1, 4, 2 }, new[] { 0, 0, 1, 1, 1 })]
-    public void TransformArray_WithGivenIntegerArray_ReturnsTransformedArray(int[] nums,
-        int[] expectedResult)
+    public void TransformArray_WithGivenIntegerArray_ReturnsTransformedArray(int[] nums, int[] expectedResult)
     {
         // Arrange
         var solution = new T();

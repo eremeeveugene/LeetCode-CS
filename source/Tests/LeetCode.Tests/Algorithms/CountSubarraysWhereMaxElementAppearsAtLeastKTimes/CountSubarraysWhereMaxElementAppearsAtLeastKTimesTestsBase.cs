@@ -13,14 +13,12 @@ using LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes;
 
 namespace LeetCode.Tests.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes;
 
-public abstract class CountSubarraysWhereMaxElementAppearsAtLeastKTimesTestsBase<T>
-    where T : ICountSubarraysWhereMaxElementAppearsAtLeastKTimes, new()
+public abstract class CountSubarraysWhereMaxElementAppearsAtLeastKTimesTestsBase<T> where T : ICountSubarraysWhereMaxElementAppearsAtLeastKTimes, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 3, 2, 3, 3 }, 2, 6)]
     [DataRow(new[] { 1, 4, 2, 1 }, 3, 0)]
-    public void CountSubarrays_WithElementAndArray_ReturnsNumberOfValidSubarraysContainingElementK(int[] nums,
-        int k, int expectedResult)
+    public void CountSubarrays_WithElementAndArray_ReturnsNumberOfValidSubarraysContainingElementK(int[] nums, int k, int expectedResult)
     {
         // Arrange
         var solution = new T();

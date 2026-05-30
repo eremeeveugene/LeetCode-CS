@@ -13,13 +13,11 @@ using LeetCode.Algorithms.FindTheNumberOfDistinctColorsAmongTheBalls;
 
 namespace LeetCode.Tests.Algorithms.FindTheNumberOfDistinctColorsAmongTheBalls;
 
-public abstract class FindTheNumberOfDistinctColorsAmongTheBallsTestsBase<T>
-    where T : IFindTheNumberOfDistinctColorsAmongTheBalls, new()
+public abstract class FindTheNumberOfDistinctColorsAmongTheBallsTestsBase<T> where T : IFindTheNumberOfDistinctColorsAmongTheBalls, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void QueryResults_WithLimitAndQueries_ReturnsQueryResults(int limit, int[][] queries,
-        int[] expectedResult)
+    public void QueryResults_WithLimitAndQueries_ReturnsQueryResults(int limit, int[][] queries, int[] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -35,10 +33,6 @@ public abstract class FindTheNumberOfDistinctColorsAmongTheBallsTestsBase<T>
     {
         yield return [4, new[] { new[] { 1, 4 }, new[] { 2, 5 }, new[] { 1, 3 }, new[] { 3, 4 } }, new[] { 1, 2, 2, 3 }];
 
-        yield return
-        [
-            4, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 2 }, new[] { 3, 4 }, new[] { 4, 5 } },
-            new[] { 1, 2, 2, 3, 4 }
-        ];
+        yield return [4, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 2 }, new[] { 3, 4 }, new[] { 4, 5 } }, new[] { 1, 2, 2, 3, 4 }];
     }
 }
