@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel;
@@ -19,14 +18,11 @@ public abstract class MinimumNumberOfOperationsToSortBinaryTreeByLevelTestsBase<
     where T : IMinimumNumberOfOperationsToSortBinaryTreeByLevel, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,4,5,6]", 0)]
-    [DataRow("[1,3,2,7,6,5,4]", 3)]
-    [DataRow("[1,4,3,7,6,8,5,null,null,null,null,9,null,10]", 3)]
-    public void MinimumOperations_WithBinaryTreeInput_ReturnsMinOperationsToSortLevelOrders(string rootJson,
+    [DynamicData(nameof(GetTestData))]
+    public void MinimumOperations_WithBinaryTreeInput_ReturnsMinOperationsToSortLevelOrders(int?[] rootArray,
         int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();
@@ -36,5 +32,14 @@ public abstract class MinimumNumberOfOperationsToSortBinaryTreeByLevelTestsBase<
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6 }, 0];
+
+        yield return [new int?[] { 1, 3, 2, 7, 6, 5, 4 }, 3];
+
+        yield return [new int?[] { 1, 4, 3, 7, 6, 8, 5, null, null, null, null, 9, null, 10 }, 3];
     }
 }

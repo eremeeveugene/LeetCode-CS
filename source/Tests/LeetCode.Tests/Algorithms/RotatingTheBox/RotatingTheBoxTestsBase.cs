@@ -10,26 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RotatingTheBox;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.RotatingTheBox;
 
 public abstract class RotatingTheBoxTestsBase<T> where T : IRotatingTheBox, new()
 {
     [TestMethod]
-    [DataRow("[[\"#\",\".\",\"#\"]]", "[[\".\"],[\"#\"],[\"#\"]]")]
-    [DataRow("[[\"#\",\".\",\"*\",\".\"],[\"#\",\"#\",\"*\",\".\"]]",
-        "[[\"#\",\".\"],[\"#\",\"#\"],[\"*\",\"*\"],[\".\",\".\"]]")]
-    [DataRow(
-        "[[\"#\",\"#\",\"*\",\".\",\"*\",\".\"],[\"#\",\"#\",\"#\",\"*\",\".\",\".\"],[\"#\",\"#\",\"#\",\".\",\"#\",\".\"]]",
-        "[[\".\",\"#\",\"#\"],[\".\",\"#\",\"#\"],[\"#\",\"#\",\"*\"],[\"#\",\"*\",\".\"],[\"#\",\".\",\"*\"],[\"#\",\".\",\".\"]]")]
-    public void RotateTheBox_WithBoxMatrix_ReturnsBoxAfterRotationAndGravityApplied(string boxJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void RotateTheBox_WithBoxMatrix_ReturnsBoxAfterRotationAndGravityApplied(char[][] box,
+        char[][] expectedResult)
     {
         // Arrange
-        var box = JsonHelper.Parse<char[][]>(boxJson);
-        var expectedResult = JsonHelper.Parse<char[][]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -37,5 +28,30 @@ public abstract class RotatingTheBoxTestsBase<T> where T : IRotatingTheBox, new(
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { '#', '.', '#' } }, new[] { new[] { '.' }, new[] { '#' }, new[] { '#' } }];
+
+        yield return
+        [
+            new[] { new[] { '#', '.', '*', '.' }, new[] { '#', '#', '*', '.' } },
+            new[] { new[] { '#', '.' }, new[] { '#', '#' }, new[] { '*', '*' }, new[] { '.', '.' } }
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { '#', '#', '*', '.', '*', '.' }, new[] { '#', '#', '#', '*', '.', '.' },
+                new[] { '#', '#', '#', '.', '#', '.' }
+            },
+            new[]
+            {
+                new[] { '.', '#', '#' }, new[] { '.', '#', '#' }, new[] { '#', '#', '*' }, new[] { '#', '*', '.' },
+                new[] { '#', '.', '*' }, new[] { '#', '.', '.' }
+            }
+        ];
     }
 }

@@ -10,22 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.PrimeSubtractionOperation;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.PrimeSubtractionOperation;
 
 public abstract class PrimeSubtractionOperationTestsBase<T> where T : IPrimeSubtractionOperation, new()
 {
     [TestMethod]
-    [DataRow("[4,9,6,10]", true)]
-    [DataRow("[6,8,11,12]", true)]
-    [DataRow("[5,8,3]", false)]
-    public void PrimeSubOperation_WithInputArray_ReturnsTrueIfPrimeSubsequencePossible(string numsJson,
+    [DataRow(new[] { 4, 9, 6, 10 }, true)]
+    [DataRow(new[] { 6, 8, 11, 12 }, true)]
+    [DataRow(new[] { 5, 8, 3 }, false)]
+    public void PrimeSubOperation_WithInputArray_ReturnsTrueIfPrimeSubsequencePossible(int[] nums,
         bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

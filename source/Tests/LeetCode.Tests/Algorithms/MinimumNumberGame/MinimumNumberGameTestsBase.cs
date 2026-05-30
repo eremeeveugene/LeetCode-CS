@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumNumberGame;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberGame;
 
 public abstract class MinimumNumberGameTestsBase<T> where T : IMinimumNumberGame, new()
 {
     [TestMethod]
-    [DataRow("[5, 4, 2, 3]", "[3, 2, 5, 4]")]
-    [DataRow("[2, 5]", "[5, 2]")]
-    public void NumberGame_WithEvenLengthArray_ReturnsArrayConstructedFromAlternatingMinSelections(string costJson,
-        string expectedResultJson)
+    [DataRow(new[] { 5, 4, 2, 3 }, new[] { 3, 2, 5, 4 })]
+    [DataRow(new[] { 2, 5 }, new[] { 5, 2 })]
+    public void NumberGame_WithEvenLengthArray_ReturnsArrayConstructedFromAlternatingMinSelections(int[] cost,
+        int[] expectedResult)
     {
         // Arrange
-        var cost = JsonHelper.Parse<int[]>(costJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

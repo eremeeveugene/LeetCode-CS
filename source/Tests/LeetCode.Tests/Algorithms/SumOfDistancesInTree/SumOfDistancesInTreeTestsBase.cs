@@ -10,23 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SumOfDistancesInTree;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SumOfDistancesInTree;
 
 public abstract class SumOfDistancesInTreeTestsBase<T> where T : ISumOfDistancesInTree, new()
 {
     [TestMethod]
-    [DataRow(6, "[[0,1],[0,2],[2,3],[2,4],[2,5]]", "[8,12,6,10,10,10]")]
-    [DataRow(1, "[]", "[0]")]
-    [DataRow(2, "[[1,0]]", "[1,1]")]
-    public void SumOfDistancesInTree_GivenNumberOfNodesAndEdges_ReturnsDistanceSumsArray(int n, string edgesJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void SumOfDistancesInTree_GivenNumberOfNodesAndEdges_ReturnsDistanceSumsArray(int n, int[][] edges,
+        int[] expectedResult)
     {
         // Arrange
-        var edges = JsonHelper.Parse<int[][]>(edgesJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +28,15 @@ public abstract class SumOfDistancesInTreeTestsBase<T> where T : ISumOfDistances
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return
+            [6, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 2, 3 }, new[] { 2, 4 }, new[] { 2, 5 } }, new[] { 8, 12, 6, 10, 10, 10 }];
+
+        yield return [1, Array.Empty<int[]>(), new[] { 0 }];
+
+        yield return [2, new[] { new[] { 1, 0 } }, new[] { 1, 1 }];
     }
 }

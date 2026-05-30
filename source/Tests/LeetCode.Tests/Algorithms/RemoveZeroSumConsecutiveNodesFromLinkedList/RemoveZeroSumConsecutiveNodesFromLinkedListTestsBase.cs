@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -20,16 +19,14 @@ public abstract class RemoveZeroSumConsecutiveNodesFromLinkedListTestsBase<T>
     where T : IRemoveZeroSumConsecutiveNodesFromLinkedList, new()
 {
     [TestMethod]
-    [DataRow("[1,2,-3,3,1]", "[3,1]")]
-    [DataRow("[1,2,3,-3,4]", "[1,2,4]")]
-    [DataRow("[1,2,3,-3,-2]", "[1]")]
+    [DataRow(new[] { 1, 2, -3, 3, 1 }, new[] { 3, 1 })]
+    [DataRow(new[] { 1, 2, 3, -3, 4 }, new[] { 1, 2, 4 })]
+    [DataRow(new[] { 1, 2, 3, -3, -2 }, new[] { 1 })]
     public void RemoveZeroSumSublists_WithListContainingZeroSumSequences_ReturnsListWithZeroSumSublistsRemoved(
-        string headJson, string expectedResultJson)
+        int[] headArray, int[] expectedResultArray)
     {
         // Arrange
-        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper.Parse<int[]>(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

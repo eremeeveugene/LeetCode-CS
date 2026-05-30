@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SelfDividingNumbers;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SelfDividingNumbers;
 
 public abstract class SelfDividingNumbersTestsBase<T> where T : ISelfDividingNumbers, new()
 {
     [TestMethod]
-    [DataRow(1, 22, "[1,2,3,4,5,6,7,8,9,11,12,15,22]")]
-    [DataRow(47, 85, "[48,55,66,77]")]
+    [DataRow(1, 22, new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22 })]
+    [DataRow(47, 85, new[] { 48, 55, 66, 77 })]
     public void SelfDividingNumbers_WithRangeBounds_ReturnsListOfSelfDividingNumbersWithinRange(int left, int right,
-        string expectedResultJson)
+        int[] expectedResult)
     {
         // Arrange
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

@@ -10,21 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.IslandPerimeter;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.IslandPerimeter;
 
 public abstract class IslandPerimeterTestsBase<T> where T : IIslandPerimeter, new()
 {
     [TestMethod]
-    [DataRow("[[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]", 16)]
-    [DataRow("[[1]]", 4)]
-    [DataRow("[[1,0]]", 4)]
-    public void IslandPerimeter_WithGridInput_ReturnsCalculatedPerimeter(string gridJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void IslandPerimeter_WithGridInput_ReturnsCalculatedPerimeter(int[][] grid, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper.Parse<int[][]>(gridJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +27,17 @@ public abstract class IslandPerimeterTestsBase<T> where T : IIslandPerimeter, ne
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return
+        [
+            new[] { new[] { 0, 1, 0, 0 }, new[] { 1, 1, 1, 0 }, new[] { 0, 1, 0, 0 }, new[] { 1, 1, 0, 0 } }, 16
+        ];
+
+        yield return [new[] { new[] { 1 } }, 4];
+
+        yield return [new[] { new[] { 1, 0 } }, 4];
     }
 }

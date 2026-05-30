@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.TwoBestNonOverlappingEvents;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.TwoBestNonOverlappingEvents;
 
 public abstract class TwoBestNonOverlappingEventsTestsBase<T> where T : ITwoBestNonOverlappingEvents, new()
 {
     [TestMethod]
-    [DataRow("[[1,3,2],[4,5,2],[2,4,3]]", 4)]
-    [DataRow("[[1,3,2],[4,5,2],[1,5,5]]", 5)]
-    [DataRow("[[1,5,3],[1,5,1],[6,6,5]]", 8)]
-    public void MaxTwoEvents_WithEventStartEndAndValue_ReturnsMaximumValueFromNonOverlappingEvents(string eventsJson,
+    [DynamicData(nameof(GetTestData))]
+    public void MaxTwoEvents_WithEventStartEndAndValue_ReturnsMaximumValueFromNonOverlappingEvents(int[][] events,
         int expectedResult)
     {
         // Arrange
-        var events = JsonHelper.Parse<int[][]>(eventsJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +28,14 @@ public abstract class TwoBestNonOverlappingEventsTestsBase<T> where T : ITwoBest
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 3, 2 }, new[] { 4, 5, 2 }, new[] { 2, 4, 3 } }, 4];
+
+        yield return [new[] { new[] { 1, 3, 2 }, new[] { 4, 5, 2 }, new[] { 1, 5, 5 } }, 5];
+
+        yield return [new[] { new[] { 1, 5, 3 }, new[] { 1, 5, 1 }, new[] { 6, 6, 5 } }, 8];
     }
 }

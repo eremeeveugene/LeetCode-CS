@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximumAbsoluteSumOfAnySubarray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximumAbsoluteSumOfAnySubarray;
 
 public abstract class MaximumAbsoluteSumOfAnySubarrayTestsBase<T> where T : IMaximumAbsoluteSumOfAnySubarray, new()
 {
     [TestMethod]
-    [DataRow("[1,-3,2,3,-4]", 5)]
-    [DataRow("[2,-5,1,-4,3,-2]", 8)]
-    public void MaxAbsoluteSum_GivenArrayOfIntegers_ReturnsMaxAbsoluteSubarraySum(string numsJson,
+    [DataRow(new[] { 1, -3, 2, 3, -4 }, 5)]
+    [DataRow(new[] { 2, -5, 1, -4, 3, -2 }, 8)]
+    public void MaxAbsoluteSum_GivenArrayOfIntegers_ReturnsMaxAbsoluteSubarraySum(int[] nums,
         double expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

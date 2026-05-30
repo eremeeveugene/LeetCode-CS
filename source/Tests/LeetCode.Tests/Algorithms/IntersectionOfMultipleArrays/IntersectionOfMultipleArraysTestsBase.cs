@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.IntersectionOfMultipleArrays;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.IntersectionOfMultipleArrays;
 
 public abstract class IntersectionOfMultipleArraysTestsBase<T> where T : IIntersectionOfMultipleArrays, new()
 {
     [TestMethod]
-    [DataRow("[[3,1,2,4,5],[1,2,3,4],[3,4,5,6]]", "[3,4]")]
-    [DataRow("[[1,2,3],[4,5,6]]", "[]")]
-    public void Intersection_WithMultipleNumsArrays_ReturnsCommonElementsAcrossAllArrays(string numsJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void Intersection_WithMultipleNumsArrays_ReturnsCommonElementsAcrossAllArrays(int[][] nums,
+        int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[][]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +28,12 @@ public abstract class IntersectionOfMultipleArraysTestsBase<T> where T : IInters
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 3, 1, 2, 4, 5 }, new[] { 1, 2, 3, 4 }, new[] { 3, 4, 5, 6 } }, new[] { 3, 4 }];
+
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { 4, 5, 6 } }, Array.Empty<int>()];
     }
 }

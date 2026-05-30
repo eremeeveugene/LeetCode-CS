@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MergeTwoSortedLists;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,20 +18,17 @@ namespace LeetCode.Tests.Algorithms.MergeTwoSortedLists;
 public abstract class MergeTwoSortedListsTestsBase<T> where T : IMergeTwoSortedLists, new()
 {
     [TestMethod]
-    [DataRow("[]", "[]", "[]")]
-    [DataRow("[]", "[0]", "[0]")]
-    [DataRow("[0]", "[]", "[0]")]
-    [DataRow("[1,2,4]", "[1,3,4]", "[1,1,2,3,4,4]")]
-    [DataRow("[-9,3]", "[5,7]", "[-9,3,5,7]")]
-    public void MergeTwoLists_WithTwoIntegerArrays_ReturnsMergedSortedLinkedList(string list1Json,
-        string list2Json, string expectedResultJson)
+    [DataRow(new int[] { }, new int[] { }, new int[] { })]
+    [DataRow(new int[] { }, new[] { 0 }, new[] { 0 })]
+    [DataRow(new[] { 0 }, new int[] { }, new[] { 0 })]
+    [DataRow(new[] { 1, 2, 4 }, new[] { 1, 3, 4 }, new[] { 1, 1, 2, 3, 4, 4 })]
+    [DataRow(new[] { -9, 3 }, new[] { 5, 7 }, new[] { -9, 3, 5, 7 })]
+    public void MergeTwoLists_WithTwoIntegerArrays_ReturnsMergedSortedLinkedList(int[] list1Array,
+        int[] list2Array, int[] expectedResultArray)
     {
         // Arrange
-        var list1Array = JsonHelper.Parse<int[]>(list1Json);
         var list1 = ListNode.ToListNode(list1Array);
-        var list2Array = JsonHelper.Parse<int[]>(list2Json);
         var list2 = ListNode.ToListNode(list2Array);
-        var expectedResultArray = JsonHelper.Parse<int[]>(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

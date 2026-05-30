@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox;
 
@@ -18,13 +17,11 @@ public abstract class MinimumNumberOfOperationsToMoveAllBallsToEachBoxTestsBase<
     where T : IMinimumNumberOfOperationsToMoveAllBallsToEachBox, new()
 {
     [TestMethod]
-    [DataRow("110", "[1,1,3]")]
-    [DataRow("001011", "[11,8,5,4,3,4]")]
-    public void MinOperations_WithBinaryString_ReturnsOperationsCountArray(string s, string expectedResultJson)
+    [DataRow("110", new[] { 1, 1, 3 })]
+    [DataRow("001011", new[] { 11, 8, 5, 4, 3, 4 })]
+    public void MinOperations_WithBinaryString_ReturnsOperationsCountArray(string s, int[] expectedResult)
     {
         // Arrange
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RemoveDuplicatesFromSortedArray2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.RemoveDuplicatesFromSortedArray2;
 
 public abstract class RemoveDuplicatesFromSortedArray2TestsBase<T> where T : IRemoveDuplicatesFromSortedArray2, new()
 {
     [TestMethod]
-    [DataRow("[1,1,1,2,2,3]", 5, "[1,1,2,2,3]")]
-    [DataRow("[0,0,1,1,1,1,2,3,3]", 7, "[0,0,1,1,2,3,3]")]
-    public void RemoveDuplicates_WithSortedArray_ReturnsNewLengthAndModifiesArrayCorrectly(string numsJson,
-        int expectedResult, string expectedNumsJson)
+    [DataRow(new[] { 1, 1, 1, 2, 2, 3 }, 5, new[] { 1, 1, 2, 2, 3 })]
+    [DataRow(new[] { 0, 0, 1, 1, 1, 1, 2, 3, 3 }, 7, new[] { 0, 0, 1, 1, 2, 3, 3 })]
+    public void RemoveDuplicates_WithSortedArray_ReturnsNewLengthAndModifiesArrayCorrectly(int[] nums,
+        int expectedResult, int[] expectedNums)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedNums = JsonHelper.Parse<int[]>(expectedNumsJson);
-
         var solution = new T();
 
         // Act

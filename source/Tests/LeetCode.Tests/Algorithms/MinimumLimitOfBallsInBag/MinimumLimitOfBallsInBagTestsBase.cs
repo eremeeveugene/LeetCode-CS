@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumLimitOfBallsInBag;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumLimitOfBallsInBag;
 
 public abstract class MinimumLimitOfBallsInBagTestsBase<T> where T : IMinimumLimitOfBallsInBag, new()
 {
     [TestMethod]
-    [DataRow("[9]", 2, 3)]
-    [DataRow("[2,4,8,2]", 4, 2)]
-    public void MinimumSize_WithNumsArrayAndMaxOperations_ReturnsMinimumPossibleSize(string numsJson,
+    [DataRow(new[] { 9 }, 2, 3)]
+    [DataRow(new[] { 2, 4, 8, 2 }, 4, 2)]
+    public void MinimumSize_WithNumsArrayAndMaxOperations_ReturnsMinimumPossibleSize(int[] nums,
         int maxOperations, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

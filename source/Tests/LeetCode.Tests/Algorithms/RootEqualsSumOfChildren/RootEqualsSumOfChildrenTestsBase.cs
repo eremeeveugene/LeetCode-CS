@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RootEqualsSumOfChildren;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.RootEqualsSumOfChildren;
@@ -18,13 +17,11 @@ namespace LeetCode.Tests.Algorithms.RootEqualsSumOfChildren;
 public abstract class RootEqualsSumOfChildrenTestsBase<T> where T : IRootEqualsSumOfChildren, new()
 {
     [TestMethod]
-    [DataRow("[10,4,6]", true)]
-    [DataRow("[5,3,1]", false)]
-    public void CheckTree_WithThreeNodeTree_ReturnsIfRootValueEqualsSumOfChildren(string rootJson,
+    [DynamicData(nameof(GetTestData))]
+    public void CheckTree_WithThreeNodeTree_ReturnsIfRootValueEqualsSumOfChildren(int?[] rootArray,
         bool expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();
@@ -34,5 +31,12 @@ public abstract class RootEqualsSumOfChildrenTestsBase<T> where T : IRootEqualsS
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 10, 4, 6 }, true];
+
+        yield return [new int?[] { 5, 3, 1 }, false];
     }
 }

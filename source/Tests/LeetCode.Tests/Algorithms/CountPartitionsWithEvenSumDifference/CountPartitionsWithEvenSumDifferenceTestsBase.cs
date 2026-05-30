@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountPartitionsWithEvenSumDifference;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountPartitionsWithEvenSumDifference;
 
@@ -18,14 +17,12 @@ public abstract class CountPartitionsWithEvenSumDifferenceTestsBase<T>
     where T : ICountPartitionsWithEvenSumDifference, new()
 {
     [TestMethod]
-    [DataRow("[1,2,2]", 0)]
-    [DataRow("[2,4,6,8]", 3)]
-    [DataRow("[10,10,3,7,6]", 4)]
-    public void CountPartitions_WithIntegerArray_ReturnsNumberOfValidPartitions(string numsJson, int expectedResult)
+    [DataRow(new[] { 1, 2, 2 }, 0)]
+    [DataRow(new[] { 2, 4, 6, 8 }, 3)]
+    [DataRow(new[] { 10, 10, 3, 7, 6 }, 4)]
+    public void CountPartitions_WithIntegerArray_ReturnsNumberOfValidPartitions(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

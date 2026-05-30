@@ -10,20 +10,16 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.PointsThatIntersectWithCars;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.PointsThatIntersectWithCars;
 
 public abstract class PointsThatIntersectWithCarsTestsBase<T> where T : IPointsThatIntersectWithCars, new()
 {
     [TestMethod]
-    [DataRow("[[3,6],[1,5],[4,7]]", 7)]
-    [DataRow("[[1,3],[5,8]]", 7)]
-    public void NumberOfPoints_WithGivenCarIntervals_ReturnsCountOfCoveredPoints(string numsJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void NumberOfPoints_WithGivenCarIntervals_ReturnsCountOfCoveredPoints(int[][] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<IList<IList<int>>>(numsJson);
-
         var solution = new T();
 
         // Act
@@ -31,5 +27,12 @@ public abstract class PointsThatIntersectWithCarsTestsBase<T> where T : IPointsT
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 3, 6 }, new[] { 1, 5 }, new[] { 4, 7 } }, 7];
+
+        yield return [new[] { new[] { 1, 3 }, new[] { 5, 8 } }, 7];
     }
 }

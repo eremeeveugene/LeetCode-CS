@@ -10,25 +10,21 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SumOfPrefixScoresOfStrings;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SumOfPrefixScoresOfStrings;
 
 public abstract class SumOfPrefixScoresOfStringsTestsBase<T> where T : ISumOfPrefixScoresOfStrings, new()
 {
     [TestMethod]
-    [DataRow("[\"a\"]", "[1]")]
-    [DataRow("[\"abcd\"]", "[4]")]
-    [DataRow("[\"abc\",\"ab\",\"bc\",\"b\"]", "[5,4,3,2]")]
-    [DataRow("[\"a\",\"b\",\"aa\",\"ab\"]", "[3,1,4,4]")]
-    [DataRow("[\"abababab\",\"abab\",\"ab\",\"a\",\"babababa\",\"baba\",\"ba\",\"b\"]", "[15,11,7,4,15,11,7,4]")]
-    public void SumPrefixScores_WithListOfWords_ReturnsSumOfScoresForAllPrefixesOfEachWord(string wordsJson,
-        string expectedResultJson)
+    [DataRow(new[] { "a" }, new[] { 1 })]
+    [DataRow(new[] { "abcd" }, new[] { 4 })]
+    [DataRow(new[] { "abc", "ab", "bc", "b" }, new[] { 5, 4, 3, 2 })]
+    [DataRow(new[] { "a", "b", "aa", "ab" }, new[] { 3, 1, 4, 4 })]
+    [DataRow(new[] { "abababab", "abab", "ab", "a", "babababa", "baba", "ba", "b" }, new[] { 15, 11, 7, 4, 15, 11, 7, 4 })]
+    public void SumPrefixScores_WithListOfWords_ReturnsSumOfScoresForAllPrefixesOfEachWord(string[] words,
+        int[] expectedResult)
     {
         // Arrange
-        var words = JsonHelper.Parse<string[]>(wordsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ThreeConsecutiveOdds;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ThreeConsecutiveOdds;
 
 public abstract class ThreeConsecutiveOddsTestsBase<T> where T : IThreeConsecutiveOdds, new()
 {
     [TestMethod]
-    [DataRow("[2, 6, 4, 1]", false)]
-    [DataRow("[1, 2, 34, 3, 4, 5, 7, 23, 12]", true)]
-    public void ThreeConsecutiveOdds_WithIntegerArray_ReturnsTrueIfThreeConsecutiveOddsExist(string arrJson,
+    [DataRow(new[] { 2, 6, 4, 1 }, false)]
+    [DataRow(new[] { 1, 2, 34, 3, 4, 5, 7, 23, 12 }, true)]
+    public void ThreeConsecutiveOdds_WithIntegerArray_ReturnsTrueIfThreeConsecutiveOddsExist(int[] arr,
         bool expectedResult)
     {
         // Arrange
-        var arr = JsonHelper.Parse<int[]>(arrJson);
-
         var solution = new T();
 
         // Act

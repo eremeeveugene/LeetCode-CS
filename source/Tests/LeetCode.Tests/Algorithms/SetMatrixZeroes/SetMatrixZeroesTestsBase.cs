@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SetMatrixZeroes;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SetMatrixZeroes;
 
 public abstract class SetMatrixZeroesTestsBase<T> where T : ISetMatrixZeroes, new()
 {
     [TestMethod]
-    [DataRow("[[1,1,1],[1,0,1],[1,1,1]]", "[[1,0,1],[0,0,0],[1,0,1]]")]
-    [DataRow("[[0,1,2,0],[3,4,5,2],[1,3,1,5]]", "[[0,0,0,0],[0,4,5,0],[0,3,1,0]]")]
-    public void SetZeroes_WithMatrixContainingZeros_SetsEntireRowAndColumnToZero(string matrixJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void SetZeroes_WithMatrixContainingZeros_SetsEntireRowAndColumnToZero(int[][] matrix,
+        int[][] expectedResult)
     {
         // Arrange
-        var matrix = JsonHelper.Parse<int[][]>(matrixJson);
-        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +28,20 @@ public abstract class SetMatrixZeroesTestsBase<T> where T : ISetMatrixZeroes, ne
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, matrix);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return
+        [
+            new[] { new[] { 1, 1, 1 }, new[] { 1, 0, 1 }, new[] { 1, 1, 1 } },
+            new[] { new[] { 1, 0, 1 }, new[] { 0, 0, 0 }, new[] { 1, 0, 1 } }
+        ];
+
+        yield return
+        [
+            new[] { new[] { 0, 1, 2, 0 }, new[] { 3, 4, 5, 2 }, new[] { 1, 3, 1, 5 } },
+            new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 4, 5, 0 }, new[] { 0, 3, 1, 0 } }
+        ];
     }
 }

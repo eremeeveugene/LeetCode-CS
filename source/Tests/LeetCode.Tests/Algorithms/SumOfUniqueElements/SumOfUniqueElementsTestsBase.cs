@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SumOfUniqueElements;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SumOfUniqueElements;
 
 public abstract class SumOfUniqueElementsTestsBase<T> where T : ISumOfUniqueElements, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,2]", 4)]
-    [DataRow("[1,1,1,1,1]", 0)]
-    [DataRow("[1,2,3,4,5]", 15)]
-    public void SumOfUnique_WithIntegerArray_ReturnsSumOfUniqueElements(string numsJson, int expectedResult)
+    [DataRow(new[] { 1, 2, 3, 2 }, 4)]
+    [DataRow(new[] { 1, 1, 1, 1, 1 }, 0)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 15)]
+    public void SumOfUnique_WithIntegerArray_ReturnsSumOfUniqueElements(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

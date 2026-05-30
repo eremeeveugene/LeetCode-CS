@@ -10,22 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.TransformArrayToAllEqualElements;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.TransformArrayToAllEqualElements;
 
 public abstract class TransformArrayToAllEqualElementsTestsBase<T> where T : ITransformArrayToAllEqualElements, new()
 {
     [TestMethod]
-    [DataRow("[1,-1,1,-1,1]", 3, true)]
-    [DataRow("[-1,-1,-1,1,1,1]", 5, false)]
-    [DataRow("[1,-1,1]", 2, true)]
-    public void CanMakeEqual_WithNumsArray_ReturnsTrueIfAllElementsCanBeMadeEqual(string numsJson, int k,
+    [DataRow(new[] { 1, -1, 1, -1, 1 }, 3, true)]
+    [DataRow(new[] { -1, -1, -1, 1, 1, 1 }, 5, false)]
+    [DataRow(new[] { 1, -1, 1 }, 2, true)]
+    public void CanMakeEqual_WithNumsArray_ReturnsTrueIfAllElementsCanBeMadeEqual(int[] nums, int k,
         bool expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

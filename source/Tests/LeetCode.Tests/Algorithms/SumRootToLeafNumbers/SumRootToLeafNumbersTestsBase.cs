@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SumRootToLeafNumbers;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.SumRootToLeafNumbers;
@@ -18,15 +17,11 @@ namespace LeetCode.Tests.Algorithms.SumRootToLeafNumbers;
 public abstract class SumRootToLeafNumbersTestsBase<T> where T : ISumRootToLeafNumbers, new()
 {
     [TestMethod]
-    [DataRow("[1]", 1)]
-    [DataRow("[1,2]", 12)]
-    [DataRow("[1,2,3]", 25)]
-    [DataRow("[4,9,0,5,1]", 1026)]
-    public void SumNumbers_WithDigitBinaryTree_ReturnsSumOfAllRootToLeafPathNumbers(string jsonRootArray,
+    [DynamicData(nameof(GetTestData))]
+    public void SumNumbers_WithDigitBinaryTree_ReturnsSumOfAllRootToLeafPathNumbers(int?[] rootArray,
         int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(jsonRootArray);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();
@@ -36,5 +31,16 @@ public abstract class SumRootToLeafNumbersTestsBase<T> where T : ISumRootToLeafN
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 1 }, 1];
+
+        yield return [new int?[] { 1, 2 }, 12];
+
+        yield return [new int?[] { 1, 2, 3 }, 25];
+
+        yield return [new int?[] { 4, 9, 0, 5, 1 }, 1026];
     }
 }

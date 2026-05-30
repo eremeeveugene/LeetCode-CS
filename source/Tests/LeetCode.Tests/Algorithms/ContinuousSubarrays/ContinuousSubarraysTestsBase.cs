@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ContinuousSubarrays;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ContinuousSubarrays;
 
 public abstract class ContinuousSubarraysTestsBase<T> where T : IContinuousSubarrays, new()
 {
     [TestMethod]
-    [DataRow("[5,4,2,4]", 8)]
-    [DataRow("[1,2,3]", 6)]
-    public void ContinuousSubarrays_GivenArrayOfIntegers_ReturnsCountOfValidSubarrays(string numsJson,
+    [DataRow(new[] { 5, 4, 2, 4 }, 8L)]
+    [DataRow(new[] { 1, 2, 3 }, 6L)]
+    public void ContinuousSubarrays_GivenArrayOfIntegers_ReturnsCountOfValidSubarrays(int[] nums,
         long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ShiftingLetters2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ShiftingLetters2;
 
 public abstract class ShiftingLetters2TestsBase<T> where T : IShiftingLetters2, new()
 {
     [TestMethod]
-    [DataRow("abc", "[[0,1,0],[1,2,1],[0,2,1]]", "ace")]
-    [DataRow("dztz", "[[0,0,0],[1,1,1]]", "catz")]
-    [DataRow("xuwdbdqik", "[[4,8,0],[4,4,0],[2,4,0],[2,4,0],[6,7,1],[2,2,1],[0,2,1],[8,8,0],[1,3,1]]", "ywxcxcqii")]
-    public void ShiftingLetters_WithStringAndShiftArray_ReturnsShiftedString(string s, string shiftsJson,
+    [DynamicData(nameof(GetTestData))]
+    public void ShiftingLetters_WithStringAndShiftArray_ReturnsShiftedString(string s, int[][] shifts,
         string expectedResult)
     {
         // Arrange
-        var shifts = JsonHelper.Parse<int[][]>(shiftsJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +28,23 @@ public abstract class ShiftingLetters2TestsBase<T> where T : IShiftingLetters2, 
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return ["abc", new[] { new[] { 0, 1, 0 }, new[] { 1, 2, 1 }, new[] { 0, 2, 1 } }, "ace"];
+
+        yield return ["dztz", new[] { new[] { 0, 0, 0 }, new[] { 1, 1, 1 } }, "catz"];
+
+        yield return
+        [
+            "xuwdbdqik",
+            new[]
+            {
+                new[] { 4, 8, 0 }, new[] { 4, 4, 0 }, new[] { 2, 4, 0 }, new[] { 2, 4, 0 }, new[] { 6, 7, 1 },
+                new[] { 2, 2, 1 }, new[] { 0, 2, 1 }, new[] { 8, 8, 0 }, new[] { 1, 3, 1 }
+            },
+            "ywxcxcqii"
+        ];
     }
 }

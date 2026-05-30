@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SumOfLeftLeaves;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.SumOfLeftLeaves;
@@ -18,16 +17,11 @@ namespace LeetCode.Tests.Algorithms.SumOfLeftLeaves;
 public abstract class SumOfLeftLeavesTestsBase<T> where T : ISumOfLeftLeaves, new()
 {
     [TestMethod]
-    [DataRow("[1]", 0)]
-    [DataRow("[3,9,20,null,null,15,7]", 24)]
-    [DataRow("[0,2,4,1,null,3,-1,5,1,null,6,null,8]", 5)]
-    [DataRow("[1,2,3,4,5]", 4)]
-    [DataRow("[-9,-3,2,null,4,4,0,-6,null,-5]", -11)]
-    public void SumOfLeftLeaves_GivenTreeRoot_ReturnsSumOfLeftLeafValues(string rootJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void SumOfLeftLeaves_GivenTreeRoot_ReturnsSumOfLeftLeafValues(int?[] rootArray, int expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper.Parse<int?[]>(rootJson);
-        var root = TreeNode.ToTreeNode(arrayRoot);
+        var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();
 
@@ -36,5 +30,18 @@ public abstract class SumOfLeftLeavesTestsBase<T> where T : ISumOfLeftLeaves, ne
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 1 }, 0];
+
+        yield return [new int?[] { 3, 9, 20, null, null, 15, 7 }, 24];
+
+        yield return [new int?[] { 0, 2, 4, 1, null, 3, -1, 5, 1, null, 6, null, 8 }, 5];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5 }, 4];
+
+        yield return [new int?[] { -9, -3, 2, null, 4, 4, 0, -6, null, -5 }, -11];
     }
 }

@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SetMismatch;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.SetMismatch;
 
 public abstract class SetMismatchTestsBase<T> where T : ISetMismatch, new()
 {
     [TestMethod]
-    [DataRow("[1,2,2,4]", "[2,3]")]
-    [DataRow("[1,1]", "[1,2]")]
-    public void FindErrorNums_WithDuplicateAndMissingNumberInArray_ReturnsDuplicatedAndMissingNumbers(string numsJson,
-        string expectedResultJson)
+    [DataRow(new[] { 1, 2, 2, 4 }, new[] { 2, 3 })]
+    [DataRow(new[] { 1, 1 }, new[] { 1, 2 })]
+    public void FindErrorNums_WithDuplicateAndMissingNumberInArray_ReturnsDuplicatedAndMissingNumbers(int[] nums,
+        int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

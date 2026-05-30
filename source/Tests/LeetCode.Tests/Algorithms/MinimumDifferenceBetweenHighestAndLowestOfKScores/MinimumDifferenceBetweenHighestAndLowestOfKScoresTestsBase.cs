@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumDifferenceBetweenHighestAndLowestOfKScores;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumDifferenceBetweenHighestAndLowestOfKScores;
 
@@ -18,16 +17,14 @@ public abstract class MinimumDifferenceBetweenHighestAndLowestOfKScoresTestsBase
     where T : IMinimumDifferenceBetweenHighestAndLowestOfKScores, new()
 {
     [TestMethod]
-    [DataRow("[90]", 1, 0)]
-    [DataRow("[9,4,1,7]", 2, 2)]
-    [DataRow("[9,4,1,7]", 3, 5)]
-    [DataRow("[9,4,1,7]", 4, 8)]
-    public void MinimumDifference_WithKSelectedScores_ReturnsMinimumScoreRange(string numsJson, int k,
+    [DataRow(new[] { 90 }, 1, 0)]
+    [DataRow(new[] { 9, 4, 1, 7 }, 2, 2)]
+    [DataRow(new[] { 9, 4, 1, 7 }, 3, 5)]
+    [DataRow(new[] { 9, 4, 1, 7 }, 4, 8)]
+    public void MinimumDifference_WithKSelectedScores_ReturnsMinimumScoreRange(int[] nums, int k,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

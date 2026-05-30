@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ProductOfArrayExceptSelf;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ProductOfArrayExceptSelf;
 
 public abstract class ProductOfArrayExceptSelfTestsBase<T> where T : IProductOfArrayExceptSelf, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,4]", "[24,12,8,6]")]
-    [DataRow("[-1,1,0,-3,3]", "[0,0,9,0,0]")]
-    public void ProductExceptSelf_WithIntegerArray_ReturnsArrayWithProductsExcludingCurrentIndex(string numsJson,
-        string expectedResultJson)
+    [DataRow(new[] { 1, 2, 3, 4 }, new[] { 24, 12, 8, 6 })]
+    [DataRow(new[] { -1, 1, 0, -3, 3 }, new[] { 0, 0, 9, 0, 0 })]
+    public void ProductExceptSelf_WithIntegerArray_ReturnsArrayWithProductsExcludingCurrentIndex(int[] nums,
+        int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

@@ -10,22 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.TwentyFourGame;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.TwentyFourGame;
 
 public abstract class TwentyFourGameTestsBase<T> where T : ITwentyFourGame, new()
 {
     [TestMethod]
-    [DataRow("[4,1,8,7]", true)]
-    [DataRow("[1,2,1,2]", false)]
-    [DataRow("[1,3,4,6]", true)]
-    public void JudgePoint24_WithCardsArray_ReturnsTrueIfExpressionEvaluatesToTwentyFour(string cardsJson,
+    [DataRow(new[] { 4, 1, 8, 7 }, true)]
+    [DataRow(new[] { 1, 2, 1, 2 }, false)]
+    [DataRow(new[] { 1, 3, 4, 6 }, true)]
+    public void JudgePoint24_WithCardsArray_ReturnsTrueIfExpressionEvaluatesToTwentyFour(int[] cards,
         bool expectedResult)
     {
         // Arrange
-        var cards = JsonHelper.Parse<int[]>(cardsJson);
-
         var solution = new T();
 
         // Act

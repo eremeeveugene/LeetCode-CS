@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MyCalendar2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MyCalendar2;
 
 public abstract class MyCalendar2TestsBase<T> where T : IMyCalendar2, new()
 {
     [TestMethod]
-    [DataRow("[10,50,10,5,5,25]", "[20,60,40,15,10,55]", "[true,true,true,false,true,true]")]
-    public void Book_WithMultipleBookings_ReturnsOverlapResults(string startJson, string endJson,
-        string expectedResultJson)
+    [DataRow(new[] { 10, 50, 10, 5, 5, 25 }, new[] { 20, 60, 40, 15, 10, 55 }, new[] { true, true, true, false, true, true })]
+    public void Book_WithMultipleBookings_ReturnsOverlapResults(int[] start, int[] end,
+        bool[] expectedResult)
     {
         // Arrange
-        var start = JsonHelper.Parse<int[]>(startJson);
-        var end = JsonHelper.Parse<int[]>(endJson);
-        var expectedResult = JsonHelper.Parse<bool[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

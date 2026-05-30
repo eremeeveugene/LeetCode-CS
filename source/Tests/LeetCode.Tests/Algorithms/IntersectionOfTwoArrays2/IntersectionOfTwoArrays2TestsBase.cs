@@ -10,23 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.IntersectionOfTwoArrays2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.IntersectionOfTwoArrays2;
 
 public abstract class IntersectionOfTwoArrays2TestsBase<T> where T : IIntersectionOfTwoArrays2, new()
 {
     [TestMethod]
-    [DataRow("[1, 2, 2, 1]", "[2, 2]", "[2, 2]")]
-    [DataRow("[4, 9, 5]", "[9, 4, 9, 8, 4]", "[4, 9]")]
-    public void Intersect_WithTwoArrays_ReturnsCommonElements(string nums1Json, string nums2Json,
-        string expectedResultJson)
+    [DataRow(new[] { 1, 2, 2, 1 }, new[] { 2, 2 }, new[] { 2, 2 })]
+    [DataRow(new[] { 4, 9, 5 }, new[] { 9, 4, 9, 8, 4 }, new[] { 4, 9 })]
+    public void Intersect_WithTwoArrays_ReturnsCommonElements(int[] nums1, int[] nums2,
+        int[] expectedResult)
     {
         // Arrange
-        var nums1 = JsonHelper.Parse<int[]>(nums1Json);
-        var nums2 = JsonHelper.Parse<int[]>(nums2Json);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

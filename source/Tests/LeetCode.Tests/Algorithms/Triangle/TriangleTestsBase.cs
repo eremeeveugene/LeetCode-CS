@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.Triangle;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.Triangle;
 
 public abstract class TriangleTestsBase<T> where T : ITriangle, new()
 {
     [TestMethod]
-    [DataRow("[[2],[3,4],[6,5,7],[4,1,8,3]]", 11)]
-    [DataRow("[[-10]]", -10)]
-    public void MinimumTotal_WithTriangleInput_ReturnsMinimumPathSumFromTopToBottom(string triangleJson,
+    [DynamicData(nameof(GetTestData))]
+    public void MinimumTotal_WithTriangleInput_ReturnsMinimumPathSumFromTopToBottom(IList<IList<int>> triangle,
         int expectedResult)
     {
         // Arrange
-        var triangle = JsonHelper.Parse<IList<IList<int>>>(triangleJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +28,13 @@ public abstract class TriangleTestsBase<T> where T : ITriangle, new()
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return
+            [new IList<int>[] { new[] { 2 }, new[] { 3, 4 }, new[] { 6, 5, 7 }, new[] { 4, 1, 8, 3 } }, 11];
+
+        yield return [new IList<int>[] { new[] { -10 } }, -10];
     }
 }

@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LargestTimeForGivenDigits;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LargestTimeForGivenDigits;
 
 public abstract class LargestTimeForGivenDigitsTestsBase<T> where T : ILargestTimeForGivenDigits, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,4]", "23:41")]
-    [DataRow("[5,5,5,5]", "")]
-    public void LargestTimeFromDigits_WithFourDigitArray_ReturnsLatestValid24HourTimeOrEmptyString(string arrJson,
+    [DataRow(new[] { 1, 2, 3, 4 }, "23:41")]
+    [DataRow(new[] { 5, 5, 5, 5 }, "")]
+    public void LargestTimeFromDigits_WithFourDigitArray_ReturnsLatestValid24HourTimeOrEmptyString(int[] arr,
         string expectedResult)
     {
         // Arrange
-        var arr = JsonHelper.Parse<int[]>(arrJson);
-
         var solution = new T();
 
         // Act

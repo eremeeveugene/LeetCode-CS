@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountSpecialTriplets;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountSpecialTriplets;
 
 public abstract class CountSpecialTripletsTestsBase<T> where T : ICountSpecialTriplets, new()
 {
     [TestMethod]
-    [DataRow("[6,3,6]", 1)]
-    [DataRow("[0,1,0,0]", 1)]
-    [DataRow("[8,4,2,8,4]", 2)]
-    public void SpecialTriplets_WithNumsArray_ReturnsCountOfSpecialTriplets(string numsJson, int expectedResult)
+    [DataRow(new[] { 6, 3, 6 }, 1)]
+    [DataRow(new[] { 0, 1, 0, 0 }, 1)]
+    [DataRow(new[] { 8, 4, 2, 8, 4 }, 2)]
+    public void SpecialTriplets_WithNumsArray_ReturnsCountOfSpecialTriplets(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

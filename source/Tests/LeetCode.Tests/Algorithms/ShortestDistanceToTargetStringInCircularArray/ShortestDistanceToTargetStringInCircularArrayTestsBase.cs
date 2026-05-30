@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ShortestDistanceToTargetStringInCircularArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ShortestDistanceToTargetStringInCircularArray;
 
@@ -18,15 +17,13 @@ public abstract class ShortestDistanceToTargetStringInCircularArrayTestsBase<T>
     where T : IShortestDistanceToTargetStringInCircularArray, new()
 {
     [TestMethod]
-    [DataRow("[\"hello\",\"i\",\"am\",\"leetcode\",\"hello\"]", "hello", 1, 1)]
-    [DataRow("[\"a\",\"b\",\"leetcode\"]", "leetcode", 0, 1)]
-    [DataRow("[\"i\",\"eat\",\"leetcode\"]", "ate", 0, -1)]
+    [DataRow(new[] { "hello", "i", "am", "leetcode", "hello" }, "hello", 1, 1)]
+    [DataRow(new[] { "a", "b", "leetcode" }, "leetcode", 0, 1)]
+    [DataRow(new[] { "i", "eat", "leetcode" }, "ate", 0, -1)]
     public void ClosestTarget_WithWordsArrayTargetAndStartIndex_ReturnsShortestDistanceToTargetString(
-        string wordsJson, string target, int startIndex, int expectedResult)
+        string[] words, string target, int startIndex, int expectedResult)
     {
         // Arrange
-        var words = JsonHelper.Parse<string[]>(wordsJson);
-
         var solution = new T();
 
         // Act

@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ThreeSum;
-using LeetCode.Core.Helpers;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ThreeSum;
@@ -18,22 +17,29 @@ namespace LeetCode.Tests.Algorithms.ThreeSum;
 public abstract class ThreeSumTestsBase<T> where T : IThreeSum, new()
 {
     [TestMethod]
-    [DataRow("[-1, 0, 1, 2, -1, -4]", "[[-1, -1, 2], [-1, 0, 1]]")]
-    [DataRow("[ 0, 1, 1]", "[]")]
-    [DataRow("[0, 0, 0]", "[[0, 0, 0]]")]
-    [DataRow("[-3, -2, 1, 1, 2]", "[[-3, 1, 2], [-2, 1, 1]]")]
-    [DataRow("[3, 0, -2, -1, 1, 2]", "[[-2, -1, 3],[-2, 0, 2],[-1, 0, 1]]")]
-    public void ThreeSum_WithIntArray_ReturnsTripletsThatSumToZero(string numsJson, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void ThreeSum_WithIntArray_ReturnsTripletsThatSumToZero(int[] nums, int[][] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
         var actualResult = solution.ThreeSum(nums);
 
         NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { -1, 0, 1, 2, -1, -4 }, new[] { new[] { -1, -1, 2 }, new[] { -1, 0, 1 } }];
+
+        yield return [new[] { 0, 1, 1 }, Array.Empty<int[]>()];
+
+        yield return [new[] { 0, 0, 0 }, new[] { new[] { 0, 0, 0 } }];
+
+        yield return [new[] { -3, -2, 1, 1, 2 }, new[] { new[] { -3, 1, 2 }, new[] { -2, 1, 1 } }];
+
+        yield return
+            [new[] { 3, 0, -2, -1, 1, 2 }, new[] { new[] { -2, -1, 3 }, new[] { -2, 0, 2 }, new[] { -1, 0, 1 } }];
     }
 }

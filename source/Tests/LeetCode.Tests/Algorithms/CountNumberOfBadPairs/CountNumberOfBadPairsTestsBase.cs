@@ -10,20 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountNumberOfBadPairs;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountNumberOfBadPairs;
 
 public abstract class CountNumberOfBadPairsTestsBase<T> where T : ICountNumberOfBadPairs, new()
 {
     [TestMethod]
-    [DataRow("[4,1,3,3]", 5)]
-    [DataRow("[1,2,3,4,5]", 0)]
-    public void CountBadPairs_GivenArray_ReturnsCountOfBadPairs(string numsJson, int expectedResult)
+    [DataRow(new[] { 4, 1, 3, 3 }, 5)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 0)]
+    public void CountBadPairs_GivenArray_ReturnsCountOfBadPairs(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.KeepMultiplyingFoundValuesByTwo;
 
 public abstract class KeepMultiplyingFoundValuesByTwoTestsBase<T> where T : IKeepMultiplyingFoundValuesByTwo, new()
 {
     [TestMethod]
-    [DataRow("[5,3,6,1,12]", 3, 24)]
-    [DataRow("[2,7,9]", 4, 4)]
-    public void FindFinalValue_WithNumsArrayAndOriginalValue_ReturnsFinalMultipliedValue(string numsJson,
+    [DataRow(new[] { 5, 3, 6, 1, 12 }, 3, 24)]
+    [DataRow(new[] { 2, 7, 9 }, 4, 4)]
+    public void FindFinalValue_WithNumsArrayAndOriginalValue_ReturnsFinalMultipliedValue(int[] nums,
         int original, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

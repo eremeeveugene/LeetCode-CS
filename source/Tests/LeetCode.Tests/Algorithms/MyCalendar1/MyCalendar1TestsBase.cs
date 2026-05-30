@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MyCalendar1;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MyCalendar1;
 
 public abstract class MyCalendar1TestsBase<T> where T : IMyCalendar1, new()
 {
     [TestMethod]
-    [DataRow("[10,15,20]", "[20,25,30]", "[true,false,true]")]
-    public void Book_WithStartAndEndTimes_ReturnsBookingResults(string startJson, string endJson,
-        string expectedResultJson)
+    [DataRow(new[] { 10, 15, 20 }, new[] { 20, 25, 30 }, new[] { true, false, true })]
+    public void Book_WithStartAndEndTimes_ReturnsBookingResults(int[] start, int[] end,
+        bool[] expectedResult)
     {
         // Arrange
-        var start = JsonHelper.Parse<int[]>(startJson);
-        var end = JsonHelper.Parse<int[]>(endJson);
-        var expectedResult = JsonHelper.Parse<bool[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

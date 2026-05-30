@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SymmetricTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.SymmetricTree;
@@ -18,14 +17,11 @@ namespace LeetCode.Tests.Algorithms.SymmetricTree;
 public abstract class SymmetricTreeTestsBase<T> where T : ISymmetricTree, new()
 {
     [TestMethod]
-    [DataRow("[]", true)]
-    [DataRow("[1,2,2,3,4,4,3]", true)]
-    [DataRow("[1,2,2,null,3,null,3]", false)]
-    public void IsSymmetric_WithBinaryTreeInput_ReturnsTrueIfTreeIsMirrorOfItself(string rootJson, bool expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void IsSymmetric_WithBinaryTreeInput_ReturnsTrueIfTreeIsMirrorOfItself(int?[] rootArray, bool expectedResult)
     {
         // Arrange
-        var arrayRoot = JsonHelper.Parse<int?[]>(rootJson);
-        var root = TreeNode.ToTreeNode(arrayRoot);
+        var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();
 
@@ -34,5 +30,14 @@ public abstract class SymmetricTreeTestsBase<T> where T : ISymmetricTree, new()
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), true];
+
+        yield return [new int?[] { 1, 2, 2, 3, 4, 4, 3 }, true];
+
+        yield return [new int?[] { 1, 2, 2, null, 3, null, 3 }, false];
     }
 }

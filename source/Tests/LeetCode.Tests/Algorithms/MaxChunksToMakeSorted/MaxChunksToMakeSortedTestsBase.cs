@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaxChunksToMakeSorted;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaxChunksToMakeSorted;
 
 public abstract class MaxChunksToMakeSortedTestsBase<T> where T : IMaxChunksToMakeSorted, new()
 {
     [TestMethod]
-    [DataRow("[4,3,2,1,0]", 1)]
-    [DataRow("[1,0,2,3,4]", 4)]
-    public void MaxChunksToSorted_WithUnsortedArray_ReturnsMaximumNumberOfChunks(string arrJson,
+    [DataRow(new[] { 4, 3, 2, 1, 0 }, 1)]
+    [DataRow(new[] { 1, 0, 2, 3, 4 }, 4)]
+    public void MaxChunksToSorted_WithUnsortedArray_ReturnsMaximumNumberOfChunks(int[] arr,
         int expectedResult)
     {
         // Arrange
-        var arr = JsonHelper.Parse<int[]>(arrJson);
-
         var solution = new T();
 
         // Act

@@ -10,22 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountTheHiddenSequences;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountTheHiddenSequences;
 
 public abstract class CountTheHiddenSequencesTestsBase<T> where T : ICountTheHiddenSequences, new()
 {
     [TestMethod]
-    [DataRow("[1,-3,4]", 1, 6, 2)]
-    [DataRow("[3,-4,5,1,-2]", -4, 5, 4)]
-    [DataRow("[4,-7,2]", 3, 6, 0)]
-    public void NumberOfArrays_WithDifferencesAndBounds_ReturnsNumberOfPossibleArrays(string differencesJson,
+    [DataRow(new[] { 1, -3, 4 }, 1, 6, 2)]
+    [DataRow(new[] { 3, -4, 5, 1, -2 }, -4, 5, 4)]
+    [DataRow(new[] { 4, -7, 2 }, 3, 6, 0)]
+    public void NumberOfArrays_WithDifferencesAndBounds_ReturnsNumberOfPossibleArrays(int[] differences,
         int lower, int upper, int expectedResult)
     {
         // Arrange
-        var differences = JsonHelper.Parse<int[]>(differencesJson);
-
         var solution = new T();
 
         // Act

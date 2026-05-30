@@ -10,20 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RabbitsInForest;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.RabbitsInForest;
 
 public abstract class RabbitsInForestTestsBase<T> where T : IRabbitsInForest, new()
 {
     [TestMethod]
-    [DataRow("[1,1,2]", 5)]
-    [DataRow("[10,10,10]", 11)]
-    public void NumRabbits_WithAnswersArray_ReturnsMinimumPossibleCount(string answersJson, int expectedResult)
+    [DataRow(new[] { 1, 1, 2 }, 5)]
+    [DataRow(new[] { 10, 10, 10 }, 11)]
+    public void NumRabbits_WithAnswersArray_ReturnsMinimumPossibleCount(int[] answers, int expectedResult)
     {
         // Arrange
-        var answers = JsonHelper.Parse<int[]>(answersJson);
-
         var solution = new T();
 
         // Act

@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LargestNumberAtLeastTwiceOfOthers;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LargestNumberAtLeastTwiceOfOthers;
 
 public abstract class LargestNumberAtLeastTwiceOfOthersTestsBase<T> where T : ILargestNumberAtLeastTwiceOfOthers, new()
 {
     [TestMethod]
-    [DataRow("[3,6,1,0]", 1)]
-    [DataRow("[1,2,3,4]", -1)]
+    [DataRow(new[] { 3, 6, 1, 0 }, 1)]
+    [DataRow(new[] { 1, 2, 3, 4 }, -1)]
     public void DominantIndex_WithIntegerArrayContainingUniqueLargest_ReturnsIndexOfLargestElementOrMinusOne(
-        string numsJson, int expectedResult)
+        int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

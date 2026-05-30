@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountingWordsWithGivenPrefix;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountingWordsWithGivenPrefix;
 
 public abstract class CountingWordsWithGivenPrefixTestsBase<T> where T : ICountingWordsWithGivenPrefix, new()
 {
     [TestMethod]
-    [DataRow("[\"pay\",\"attention\",\"practice\",\"attend\"]", "at", 2)]
-    [DataRow("[\"leetcode\",\"win\",\"loops\",\"success\"]", "code", 0)]
-    public void PrefixCount_WithWordsArrayAndPrefix_ReturnsCountOfMatchingWords(string wordsJson, string pref,
+    [DataRow(new[] { "pay", "attention", "practice", "attend" }, "at", 2)]
+    [DataRow(new[] { "leetcode", "win", "loops", "success" }, "code", 0)]
+    public void PrefixCount_WithWordsArrayAndPrefix_ReturnsCountOfMatchingWords(string[] words, string pref,
         int expectedResult)
     {
         // Arrange
-        var words = JsonHelper.Parse<string[]>(wordsJson);
-
         var solution = new T();
 
         // Act

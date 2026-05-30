@@ -10,24 +10,20 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.TwoSum;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.TwoSum;
 
 public abstract class TwoSumTestsBase<T> where T : ITwoSum, new()
 {
     [TestMethod]
-    [DataRow("[2, 7, 11, 15]", 9, "[0, 1]")]
-    [DataRow("[3, 2, 4]", 6, "[1, 2]")]
-    [DataRow("[3, 3]", 6, "[0, 1]")]
-    [DataRow("[2, 5, 5, 11]", 10, "[1, 2]")]
-    public void TwoSum_WithIntArrayAndTarget_ReturnsIndicesOfNumbersAddingToTarget(string numsJson, int target,
-        string expectedResultJson)
+    [DataRow(new[] { 2, 7, 11, 15 }, 9, new[] { 0, 1 })]
+    [DataRow(new[] { 3, 2, 4 }, 6, new[] { 1, 2 })]
+    [DataRow(new[] { 3, 3 }, 6, new[] { 0, 1 })]
+    [DataRow(new[] { 2, 5, 5, 11 }, 10, new[] { 1, 2 })]
+    public void TwoSum_WithIntArrayAndTarget_ReturnsIndicesOfNumbersAddingToTarget(int[] nums, int target,
+        int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

@@ -10,22 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountCoveredBuildings;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountCoveredBuildings;
 
 public abstract class CountCoveredBuildingsTestsBase<T> where T : ICountCoveredBuildings, new()
 {
     [TestMethod]
-    [DataRow(3, "[[1,2],[2,2],[3,2],[2,1],[2,3]]", 1)]
-    [DataRow(3, "[[1,1],[1,2],[2,1],[2,2]]", 0)]
-    [DataRow(5, "[[1,3],[3,2],[3,3],[3,5],[5,3]]", 1)]
+    [DynamicData(nameof(GetTestData))]
     public void CountCoveredBuildings_WithBuildingsInGrid_ReturnsNumberOfBuildingsCoveredFromAllFourDirections(int n,
-        string buildingsJson, int expectedResult)
+        int[][] buildings, int expectedResult)
     {
         // Arrange
-        var buildings = JsonHelper.Parse<int[][]>(buildingsJson);
-
         var solution = new T();
 
         // Act
@@ -33,5 +28,14 @@ public abstract class CountCoveredBuildingsTestsBase<T> where T : ICountCoveredB
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [3, new[] { new[] { 1, 2 }, new[] { 2, 2 }, new[] { 3, 2 }, new[] { 2, 1 }, new[] { 2, 3 } }, 1];
+
+        yield return [3, new[] { new[] { 1, 1 }, new[] { 1, 2 }, new[] { 2, 1 }, new[] { 2, 2 } }, 0];
+
+        yield return [5, new[] { new[] { 1, 3 }, new[] { 3, 2 }, new[] { 3, 3 }, new[] { 3, 5 }, new[] { 5, 3 } }, 1];
     }
 }

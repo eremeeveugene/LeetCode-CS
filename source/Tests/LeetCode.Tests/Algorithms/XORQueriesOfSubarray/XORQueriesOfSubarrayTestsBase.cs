@@ -10,25 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.XORQueriesOfSubarray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.XORQueriesOfSubarray;
 
 public abstract class XORQueriesOfSubarrayTestsBase<T> where T : IXORQueriesOfSubarray, new()
 {
     [TestMethod]
-    [DataRow("[1,3,4,8]", "[[0,1],[1,2],[0,3],[3,3]]", "[2,7,14,8]")]
-    [DataRow("[4,8,2,10]", "[[2,3],[1,3],[0,0],[0,3]]", "[8,0,4,4]")]
-    [DataRow("[16]", "[[0,0],[0,0],[0,0]]", "[16,16,16]")]
-    [DataRow("[15,8,8,8,15]", "[[2,2],[3,3]]", "[8,8]")]
-    public void XorQueries_WithArrayAndRangeQueries_ReturnsXorOfElementsForEachQuery(string arrJson, string queriesJson,
-        string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void XorQueries_WithArrayAndRangeQueries_ReturnsXorOfElementsForEachQuery(int[] arr, int[][] queries,
+        int[] expectedResult)
     {
         // Arrange
-        var arr = JsonHelper.Parse<int[]>(arrJson);
-        var queries = JsonHelper.Parse<int[][]>(queriesJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -36,5 +28,18 @@ public abstract class XORQueriesOfSubarrayTestsBase<T> where T : IXORQueriesOfSu
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return
+            [new[] { 1, 3, 4, 8 }, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 0, 3 }, new[] { 3, 3 } }, new[] { 2, 7, 14, 8 }];
+
+        yield return
+            [new[] { 4, 8, 2, 10 }, new[] { new[] { 2, 3 }, new[] { 1, 3 }, new[] { 0, 0 }, new[] { 0, 3 } }, new[] { 8, 0, 4, 4 }];
+
+        yield return [new[] { 16 }, new[] { new[] { 0, 0 }, new[] { 0, 0 }, new[] { 0, 0 } }, new[] { 16, 16, 16 }];
+
+        yield return [new[] { 15, 8, 8, 8, 15 }, new[] { new[] { 2, 2 }, new[] { 3, 3 } }, new[] { 8, 8 }];
     }
 }

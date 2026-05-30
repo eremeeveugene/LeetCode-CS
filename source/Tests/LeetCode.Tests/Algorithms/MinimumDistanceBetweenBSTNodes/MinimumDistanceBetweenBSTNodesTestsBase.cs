@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumDistanceBetweenBSTNodes;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.MinimumDistanceBetweenBSTNodes;
@@ -18,13 +17,10 @@ namespace LeetCode.Tests.Algorithms.MinimumDistanceBetweenBSTNodes;
 public abstract class MinimumDistanceBetweenBSTNodesTestsBase<T> where T : IMinimumDistanceBetweenBSTNodes, new()
 {
     [TestMethod]
-    [DataRow("[4,2,6,1,3]", 1)]
-    [DataRow("[1,0,48,null,null,12,49]", 1)]
-    [DataRow("[90,69,null,49,89,null,52]", 1)]
-    public void MinDiffInBST_WithVariousBSTs_ReturnsMinimumDifference(string rootJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void MinDiffInBST_WithVariousBSTs_ReturnsMinimumDifference(int?[] rootArray, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();
@@ -34,5 +30,14 @@ public abstract class MinimumDistanceBetweenBSTNodesTestsBase<T> where T : IMini
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 4, 2, 6, 1, 3 }, 1];
+
+        yield return [new int?[] { 1, 0, 48, null, null, 12, 49 }, 1];
+
+        yield return [new int?[] { 90, 69, null, 49, 89, null, 52 }, 1];
     }
 }

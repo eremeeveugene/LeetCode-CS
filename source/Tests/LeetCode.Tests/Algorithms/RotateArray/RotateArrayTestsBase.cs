@@ -10,25 +10,21 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RotateArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.RotateArray;
 
 public abstract class RotateArrayTestsBase<T> where T : IRotateArray, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3,4,5,6,7]", 3, "[5,6,7,1,2,3,4]")]
-    [DataRow("[-1,-100,3,99]", 2, "[3,99,-1,-100]")]
-    [DataRow("[1]", 1, "[1]")]
-    [DataRow("[1]", 100, "[1]")]
-    [DataRow("[1]", 100_000, "[1]")]
-    public void Rotate_WithNumsArrayAndKSteps_ShiftsElementsRightByKSteps(string numsJson, int k,
-        string expectedResultJson)
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7 }, 3, new[] { 5, 6, 7, 1, 2, 3, 4 })]
+    [DataRow(new[] { -1, -100, 3, 99 }, 2, new[] { 3, 99, -1, -100 })]
+    [DataRow(new[] { 1 }, 1, new[] { 1 })]
+    [DataRow(new[] { 1 }, 100, new[] { 1 })]
+    [DataRow(new[] { 1 }, 100_000, new[] { 1 })]
+    public void Rotate_WithNumsArrayAndKSteps_ShiftsElementsRightByKSteps(int[] nums, int k,
+        int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

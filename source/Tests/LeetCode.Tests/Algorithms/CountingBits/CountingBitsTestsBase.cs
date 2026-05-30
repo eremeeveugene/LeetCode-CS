@@ -10,20 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountingBits;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountingBits;
 
 public abstract class CountingBitsTestsBase<T> where T : ICountingBits, new()
 {
     [TestMethod]
-    [DataRow(2, "[0, 1, 1]")]
-    [DataRow(5, "[0, 1, 1, 2, 1, 2]")]
-    public void CountBits_WithNumber_ReturnsBitCountsUpToN(int n, string expectedResultJson)
+    [DataRow(2, new[] { 0, 1, 1 })]
+    [DataRow(5, new[] { 0, 1, 1, 2, 1, 2 })]
+    public void CountBits_WithNumber_ReturnsBitCountsUpToN(int n, int[] expectedResult)
     {
         // Arrange
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

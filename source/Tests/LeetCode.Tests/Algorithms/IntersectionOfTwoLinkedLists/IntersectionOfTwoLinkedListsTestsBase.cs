@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.IntersectionOfTwoLinkedLists;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,23 +18,21 @@ namespace LeetCode.Tests.Algorithms.IntersectionOfTwoLinkedLists;
 public abstract class IntersectionOfTwoLinkedListsTestsBase<T> where T : IIntersectionOfTwoLinkedLists, new()
 {
     [TestMethod]
-    [DataRow("[4, 1]", "[5, 6, 1]", "[8, 4, 5]", "[8, 4, 5]")]
-    [DataRow("[1, 9, 1]", "[3]", "[2, 4]", "[2, 4]")]
-    [DataRow("[2, 6, 4]", "[1, 5]", "[]", "[]")]
-    [DataRow("[1, 2, 3]", "[4, 5]", "[6]", "[6]")]
-    [DataRow("[1]", "[2]", "[3, 4]", "[3, 4]")]
-    [DataRow("[]", "[1, 2, 3]", "[]", "[]")]
-    [DataRow("[1, 2, 3]", "[]", "[]", "[]")]
-    [DataRow("[]", "[]", "[]", "[]")]
-    [DataRow("[1, 2]", "[3, 4]", "[5, 6, 7]", "[5, 6, 7]")]
-    public void GetIntersectionNode_WithTwoLinkedLists_ReturnsIntersectionNode(string headAJson,
-        string headBJson, string intersectJson, string expectedResultJson)
+    [DataRow(new[] { 4, 1 }, new[] { 5, 6, 1 }, new[] { 8, 4, 5 }, new[] { 8, 4, 5 })]
+    [DataRow(new[] { 1, 9, 1 }, new[] { 3 }, new[] { 2, 4 }, new[] { 2, 4 })]
+    [DataRow(new[] { 2, 6, 4 }, new[] { 1, 5 }, new int[] { }, new int[] { })]
+    [DataRow(new[] { 1, 2, 3 }, new[] { 4, 5 }, new[] { 6 }, new[] { 6 })]
+    [DataRow(new[] { 1 }, new[] { 2 }, new[] { 3, 4 }, new[] { 3, 4 })]
+    [DataRow(new int[] { }, new[] { 1, 2, 3 }, new int[] { }, new int[] { })]
+    [DataRow(new[] { 1, 2, 3 }, new int[] { }, new int[] { }, new int[] { })]
+    [DataRow(new int[] { }, new int[] { }, new int[] { }, new int[] { })]
+    [DataRow(new[] { 1, 2 }, new[] { 3, 4 }, new[] { 5, 6, 7 }, new[] { 5, 6, 7 })]
+    public void GetIntersectionNode_WithTwoLinkedLists_ReturnsIntersectionNode(int[] headAArray,
+        int[] headBArray, int[] intersectArray, int[] expectedResultArray)
     {
         // Arrange
-        var intersectArray = JsonHelper.Parse<int[]>(intersectJson);
         var intersect = ListNode.ToListNode(intersectArray);
 
-        var headAArray = JsonHelper.Parse<int[]>(headAJson);
         var headA = ListNode.ToListNode(headAArray);
 
         if (headA != null)
@@ -43,7 +40,6 @@ public abstract class IntersectionOfTwoLinkedListsTestsBase<T> where T : IInters
             headA.next = intersect;
         }
 
-        var headBArray = JsonHelper.Parse<int[]>(headBJson);
         var headB = ListNode.ToListNode(headBArray);
 
         if (headB != null)
@@ -51,7 +47,6 @@ public abstract class IntersectionOfTwoLinkedListsTestsBase<T> where T : IInters
             headB.next = intersect;
         }
 
-        var expectedResultArray = JsonHelper.Parse<int[]>(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

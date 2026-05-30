@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MaximalScoreAfterApplyingKOperations;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MaximalScoreAfterApplyingKOperations;
 
@@ -18,13 +17,11 @@ public abstract class MaximalScoreAfterApplyingKOperationsTestsBase<T>
     where T : IMaximalScoreAfterApplyingKOperations, new()
 {
     [TestMethod]
-    [DataRow("[10,10,10,10,10]", 5, 50)]
-    [DataRow("[1,10,3,3,3]", 3, 17)]
-    public void MaxKelements_WithArrayAndKOperations_ReturnsMaximumScore(string numsJson, int k, long expectedResult)
+    [DataRow(new[] { 10, 10, 10, 10, 10 }, 5, 50L)]
+    [DataRow(new[] { 1, 10, 3, 3, 3 }, 3, 17L)]
+    public void MaxKelements_WithArrayAndKOperations_ReturnsMaximumScore(int[] nums, int k, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

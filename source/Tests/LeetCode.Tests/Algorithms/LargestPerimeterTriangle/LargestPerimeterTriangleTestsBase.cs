@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LargestPerimeterTriangle;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LargestPerimeterTriangle;
 
 public abstract class LargestPerimeterTriangleTestsBase<T> where T : ILargestPerimeterTriangle, new()
 {
     [TestMethod]
-    [DataRow("[2,1,2]", 5)]
-    [DataRow("[1,2,1,10]", 0)]
-    public void LargestPerimeter_WithSideLengths_ReturnsMaximumTrianglePerimeterOrZero(string numsJson,
+    [DataRow(new[] { 2, 1, 2 }, 5)]
+    [DataRow(new[] { 1, 2, 1, 10 }, 0)]
+    public void LargestPerimeter_WithSideLengths_ReturnsMaximumTrianglePerimeterOrZero(int[] nums,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

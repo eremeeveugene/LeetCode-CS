@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LongestSquareStreakInAnArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LongestSquareStreakInAnArray;
 
@@ -18,15 +17,13 @@ public abstract class LongestSquareStreakInAnArrayTestsBase<T>
     where T : ILongestSquareStreakInAnArray, new()
 {
     [TestMethod]
-    [DataRow("[2,4]", 2)]
-    [DataRow("[4,3,6,16,8,2]", 3)]
-    [DataRow("[2,3,5,6,7]", -1)]
-    public void LongestSquareStreak_WithGivenArray_ReturnsLengthOfLongestSquareStreakOrMinusOne(string numsJson,
+    [DataRow(new[] { 2, 4 }, 2)]
+    [DataRow(new[] { 4, 3, 6, 16, 8, 2 }, 3)]
+    [DataRow(new[] { 2, 3, 5, 6, 7 }, -1)]
+    public void LongestSquareStreak_WithGivenArray_ReturnsLengthOfLongestSquareStreakOrMinusOne(int[] nums,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

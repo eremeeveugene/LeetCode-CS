@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountCompleteTreeNodes;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.CountCompleteTreeNodes;
@@ -18,14 +17,10 @@ namespace LeetCode.Tests.Algorithms.CountCompleteTreeNodes;
 public abstract class CountCompleteTreeNodesTestsBase<T> where T : ICountCompleteTreeNodes, new()
 {
     [TestMethod]
-    [DataRow("[]", 0)]
-    [DataRow("[1]", 1)]
-    [DataRow("[1,2,3,4]", 4)]
-    [DataRow("[1,2,3,4,5,6]", 6)]
-    public void CountNodes_WithCompleteBinaryTree_ReturnsTotalNumberOfNodes(string rootJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void CountNodes_WithCompleteBinaryTree_ReturnsTotalNumberOfNodes(int?[] rootArray, int expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNode(rootArray);
 
         var solution = new T();
@@ -35,5 +30,16 @@ public abstract class CountCompleteTreeNodesTestsBase<T> where T : ICountComplet
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [Array.Empty<int?>(), 0];
+
+        yield return [new int?[] { 1 }, 1];
+
+        yield return [new int?[] { 1, 2, 3, 4 }, 4];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6 }, 6];
     }
 }

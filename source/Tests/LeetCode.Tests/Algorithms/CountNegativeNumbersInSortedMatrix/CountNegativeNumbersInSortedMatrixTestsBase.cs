@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountNegativeNumbersInSortedMatrix;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountNegativeNumbersInSortedMatrix;
 
@@ -18,13 +17,10 @@ public abstract class CountNegativeNumbersInSortedMatrixTestsBase<T>
     where T : ICountNegativeNumbersInSortedMatrix, new()
 {
     [TestMethod]
-    [DataRow("[[3,2],[1,0]]", 0)]
-    [DataRow("[[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]", 8)]
-    public void CountNegatives_WithSortedMatrix_ReturnsTotalNegativeCount(string gridJson, int expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void CountNegatives_WithSortedMatrix_ReturnsTotalNegativeCount(int[][] grid, int expectedResult)
     {
         // Arrange
-        var grid = JsonHelper.Parse<int[][]>(gridJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +28,15 @@ public abstract class CountNegativeNumbersInSortedMatrixTestsBase<T>
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 3, 2 }, new[] { 1, 0 } }, 0];
+
+        yield return
+        [
+            new[] { new[] { 4, 3, 2, -1 }, new[] { 3, 2, 1, -1 }, new[] { 1, 1, -1, -2 }, new[] { -1, -1, -2, -3 } }, 8
+        ];
     }
 }

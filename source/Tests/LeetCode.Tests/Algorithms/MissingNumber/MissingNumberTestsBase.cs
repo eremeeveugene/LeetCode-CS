@@ -10,22 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MissingNumber;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MissingNumber;
 
 public abstract class MissingNumberTestsBase<T> where T : IMissingNumber, new()
 {
     [TestMethod]
-    [DataRow("[]", 0)]
-    [DataRow("[3,0,1]", 2)]
-    [DataRow("[0,1]", 2)]
-    [DataRow("[9,6,4,2,3,5,7,0,1]", 8)]
-    public void MissingNumber_WithIntArray_ReturnsMissingNumber(string numsJson, int expectedResult)
+    [DataRow(new int[] { }, 0)]
+    [DataRow(new[] { 3, 0, 1 }, 2)]
+    [DataRow(new[] { 0, 1 }, 2)]
+    [DataRow(new[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 }, 8)]
+    public void MissingNumber_WithIntArray_ReturnsMissingNumber(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ReverseString;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ReverseString;
 
 public abstract class ReverseStringTestsBase<T> where T : IReverseString, new()
 {
     [TestMethod]
-    [DataRow("[\"h\",\"e\",\"l\",\"l\",\"o\"]", "[\"o\",\"l\",\"l\",\"e\",\"h\"]")]
-    [DataRow("[\"H\",\"a\",\"n\",\"n\",\"a\",\"h\"]", "[\"h\",\"a\",\"n\",\"n\",\"a\",\"H\"]")]
-    public void ReverseString_WithCharArray_ReversesArrayInPlace(string sJson, string expectedResultJson)
+    [DataRow(new[] { 'h', 'e', 'l', 'l', 'o' }, new[] { 'o', 'l', 'l', 'e', 'h' })]
+    [DataRow(new[] { 'H', 'a', 'n', 'n', 'a', 'h' }, new[] { 'h', 'a', 'n', 'n', 'a', 'H' })]
+    public void ReverseString_WithCharArray_ReversesArrayInPlace(char[] s, char[] expectedResult)
     {
         // Arrange
-        var s = JsonHelper.Parse<char[]>(sJson);
-        var expectedResult = JsonHelper.Parse<char[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumTimeVisitingAllPoints;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumTimeVisitingAllPoints;
 
 public abstract class MinimumTimeVisitingAllPointsTestsBase<T> where T : IMinimumTimeVisitingAllPoints, new()
 {
     [TestMethod]
-    [DataRow("[[1,1],[3,4],[-1,0]]", 7)]
-    [DataRow("[[3,2],[-2,2]]", 5)]
-    public void MinTimeToVisitAllPoints_WithPointsArray_ReturnsSumOfStepwiseDistances(string pointsJson,
+    [DynamicData(nameof(GetTestData))]
+    public void MinTimeToVisitAllPoints_WithPointsArray_ReturnsSumOfStepwiseDistances(int[][] points,
         int expectedResult)
     {
         // Arrange
-        var points = JsonHelper.Parse<int[][]>(pointsJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +28,12 @@ public abstract class MinimumTimeVisitingAllPointsTestsBase<T> where T : IMinimu
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 1 }, new[] { 3, 4 }, new[] { -1, 0 } }, 7];
+
+        yield return [new[] { new[] { 3, 2 }, new[] { -2, 2 } }, 5];
     }
 }

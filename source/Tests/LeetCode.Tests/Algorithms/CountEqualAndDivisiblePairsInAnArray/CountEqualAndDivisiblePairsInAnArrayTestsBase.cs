@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountEqualAndDivisiblePairsInAnArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountEqualAndDivisiblePairsInAnArray;
 
@@ -18,14 +17,12 @@ public abstract class CountEqualAndDivisiblePairsInAnArrayTestsBase<T>
     where T : ICountEqualAndDivisiblePairsInAnArray, new()
 {
     [TestMethod]
-    [DataRow("[3,1,2,2,2,1,3]", 2, 4)]
-    [DataRow("[1,2,3,4]", 1, 0)]
-    public void CountPairs_WithEqualElementsAndIndexProductDivisibleByK_ReturnsTheNumberOfPairs(string numsJson,
+    [DataRow(new[] { 3, 1, 2, 2, 2, 1, 3 }, 2, 4)]
+    [DataRow(new[] { 1, 2, 3, 4 }, 1, 0)]
+    public void CountPairs_WithEqualElementsAndIndexProductDivisibleByK_ReturnsTheNumberOfPairs(int[] nums,
         int k, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

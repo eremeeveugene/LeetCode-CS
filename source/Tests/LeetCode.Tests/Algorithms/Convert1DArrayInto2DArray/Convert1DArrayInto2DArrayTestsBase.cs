@@ -10,24 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.Convert1DArrayInto2DArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.Convert1DArrayInto2DArray;
 
 public abstract class Convert1DArrayInto2DArrayTestsBase<T> where T : IConvert1DArrayInto2DArray, new()
 {
     [TestMethod]
-    [DataRow("[3]", 1, 2, "[]")]
-    [DataRow("[1,2]", 1, 1, "[]")]
-    [DataRow("[1,2,3]", 1, 3, "[[1,2,3]]")]
-    [DataRow("[1,2,3,4]", 2, 2, "[[1,2],[3,4]]")]
-    public void Construct2DArray_WithOriginalArrayAndDimensions_ReturnsReshapedMatrixOrEmptyArray(string originalJson,
-        int m, int n, string expectedResultJson)
+    [DynamicData(nameof(GetTestData))]
+    public void Construct2DArray_WithOriginalArrayAndDimensions_ReturnsReshapedMatrixOrEmptyArray(int[] original,
+        int m, int n, int[][] expectedResult)
     {
         // Arrange
-        var original = JsonHelper.Parse<int[]>(originalJson);
-        var expectedResult = JsonHelper.Parse<int[][]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -35,5 +28,16 @@ public abstract class Convert1DArrayInto2DArrayTestsBase<T> where T : IConvert1D
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { 3 }, 1, 2, Array.Empty<int[]>()];
+
+        yield return [new[] { 1, 2 }, 1, 1, Array.Empty<int[]>()];
+
+        yield return [new[] { 1, 2, 3 }, 1, 3, new[] { new[] { 1, 2, 3 } }];
+
+        yield return [new[] { 1, 2, 3, 4 }, 2, 2, new[] { new[] { 1, 2 }, new[] { 3, 4 } }];
     }
 }

@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LinkedListInBinaryTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.LinkedListInBinaryTree;
@@ -18,19 +17,12 @@ namespace LeetCode.Tests.Algorithms.LinkedListInBinaryTree;
 public abstract class LinkedListInBinaryTreeTestsBase<T> where T : ILinkedListInBinaryTree, new()
 {
     [TestMethod]
-    [DataRow("[1]", "[1]", true)]
-    [DataRow("[4,2,8]", "[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]", true)]
-    [DataRow("[1,4,2,6]", "[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]", true)]
-    [DataRow("[1,4,2,6,8]", "[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]", false)]
-    [DataRow("[1,10]", "[1,null,1,10,1,9]", true)]
-    [DataRow("[2,2,1]", "[2,null,2,null,2,null,1]", true)]
-    public void IsSubPath_WithLinkedListAndBinaryTree_ReturnsIfLinkedListIsSubPath(string headJson,
-        string rootJson, bool expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void IsSubPath_WithLinkedListAndBinaryTree_ReturnsIfLinkedListIsSubPath(int[] headArray,
+        int?[] rootArray, bool expectedResult)
     {
         // Arrange
-        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNodeOrThrow(headArray);
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();
@@ -40,5 +32,23 @@ public abstract class LinkedListInBinaryTreeTestsBase<T> where T : ILinkedListIn
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { 1 }, new int?[] { 1 }, true];
+
+        yield return
+            [new[] { 4, 2, 8 }, new int?[] { 1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3 }, true];
+
+        yield return
+            [new[] { 1, 4, 2, 6 }, new int?[] { 1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3 }, true];
+
+        yield return
+            [new[] { 1, 4, 2, 6, 8 }, new int?[] { 1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3 }, false];
+
+        yield return [new[] { 1, 10 }, new int?[] { 1, null, 1, 10, 1, 9 }, true];
+
+        yield return [new[] { 2, 2, 1 }, new int?[] { 2, null, 2, null, 2, null, 1 }, true];
     }
 }

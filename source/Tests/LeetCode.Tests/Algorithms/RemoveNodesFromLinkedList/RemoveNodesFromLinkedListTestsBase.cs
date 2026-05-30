@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RemoveNodesFromLinkedList;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,19 +18,17 @@ namespace LeetCode.Tests.Algorithms.RemoveNodesFromLinkedList;
 public abstract class RemoveNodesFromLinkedListTestsBase<T> where T : IRemoveNodesFromLinkedList, new()
 {
     [TestMethod]
-    [DataRow("[1]", "[1]")]
-    [DataRow("[1,1,1,1]", "[1,1,1,1]")]
-    [DataRow("[5,2,13,3,8]", "[13,8]")]
-    [DataRow("[1,2,3,4,5,6,7,8,9]", "[9]")]
-    [DataRow("[9,8,7,6,5,4,3,2,1]", "[9,8,7,6,5,4,3,2,1]")]
-    [DataRow("[1,2,3,1,2,3,1,2,3]", "[3,3,3]")]
-    [DataRow("[3,2,1,3,2,1,3,2,1]", "[3,3,3,2,1]")]
-    public void RemoveNodes_WithVariousLists_RemovesExpectedNodes(string headJson, string expectedResultJson)
+    [DataRow(new[] { 1 }, new[] { 1 })]
+    [DataRow(new[] { 1, 1, 1, 1 }, new[] { 1, 1, 1, 1 })]
+    [DataRow(new[] { 5, 2, 13, 3, 8 }, new[] { 13, 8 })]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, new[] { 9 })]
+    [DataRow(new[] { 9, 8, 7, 6, 5, 4, 3, 2, 1 }, new[] { 9, 8, 7, 6, 5, 4, 3, 2, 1 })]
+    [DataRow(new[] { 1, 2, 3, 1, 2, 3, 1, 2, 3 }, new[] { 3, 3, 3 })]
+    [DataRow(new[] { 3, 2, 1, 3, 2, 1, 3, 2, 1 }, new[] { 3, 3, 3, 2, 1 })]
+    public void RemoveNodes_WithVariousLists_RemovesExpectedNodes(int[] headArray, int[] expectedResultArray)
     {
         // Arrange
-        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper.Parse<int[]>(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

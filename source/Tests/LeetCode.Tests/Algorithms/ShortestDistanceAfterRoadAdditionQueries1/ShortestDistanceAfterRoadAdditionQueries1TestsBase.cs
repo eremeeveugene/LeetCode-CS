@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ShortestDistanceAfterRoadAdditionQueries1;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.ShortestDistanceAfterRoadAdditionQueries1;
 
@@ -18,15 +17,11 @@ public abstract class ShortestDistanceAfterRoadAdditionQueries1TestsBase<T>
     where T : IShortestDistanceAfterRoadAdditionQueries1, new()
 {
     [TestMethod]
-    [DataRow(5, "[[2,4],[0,2],[0,4]]", "[3,2,1]")]
-    [DataRow(4, "[[0,3],[0,2]]", "[1,1]")]
+    [DynamicData(nameof(GetTestData))]
     public void ShortestDistanceAfterQueries_WithNumberOfNodesAndQueryRanges_ReturnsShortestDistances(int n,
-        string queriesJson, string expectedResultJson)
+        int[][] queries, int[] expectedResult)
     {
         // Arrange
-        var queries = JsonHelper.Parse<int[][]>(queriesJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -34,5 +29,12 @@ public abstract class ShortestDistanceAfterRoadAdditionQueries1TestsBase<T>
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [5, new[] { new[] { 2, 4 }, new[] { 0, 2 }, new[] { 0, 4 } }, new[] { 3, 2, 1 }];
+
+        yield return [4, new[] { new[] { 0, 3 }, new[] { 0, 2 } }, new[] { 1, 1 }];
     }
 }

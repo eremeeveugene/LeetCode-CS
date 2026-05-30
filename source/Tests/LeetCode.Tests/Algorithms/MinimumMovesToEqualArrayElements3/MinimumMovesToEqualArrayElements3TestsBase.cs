@@ -10,21 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumMovesToEqualArrayElements3;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimumMovesToEqualArrayElements3;
 
 public abstract class MinimumMovesToEqualArrayElements3TestsBase<T> where T : IMinimumMovesToEqualArrayElements3, new()
 {
     [TestMethod]
-    [DataRow("[2,1,3]", 3)]
-    [DataRow("[4,4,5]", 2)]
-    public void MinMoves_WithNumsArray_ReturnsMinimumMovesToEqualArrayElements(string numsJson,
+    [DataRow(new[] { 2, 1, 3 }, 3)]
+    [DataRow(new[] { 4, 4, 5 }, 2)]
+    public void MinMoves_WithNumsArray_ReturnsMinimumMovesToEqualArrayElements(int[] nums,
         int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

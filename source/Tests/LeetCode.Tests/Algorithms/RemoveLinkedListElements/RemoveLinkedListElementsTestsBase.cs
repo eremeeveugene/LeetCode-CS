@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RemoveLinkedListElements;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 using LeetCode.Tests.Base.Extensions;
 
@@ -19,18 +18,16 @@ namespace LeetCode.Tests.Algorithms.RemoveLinkedListElements;
 public abstract class RemoveLinkedListElementsTestsBase<T> where T : IRemoveLinkedListElements, new()
 {
     [TestMethod]
-    [DataRow("[]", 1, "[]")]
-    [DataRow("[1]", 1, "[]")]
-    [DataRow("[1]", 0, "[1]")]
-    [DataRow("[1,2,6,3,4,5,6]", 6, "[1,2,3,4,5]")]
-    [DataRow("[7,7,7,7]", 7, "[]")]
-    public void RemoveElements_WithListAndTargetValue_ReturnsListWithoutTargetValue(string headJson, int val,
-        string expectedResultJson)
+    [DataRow(new int[] { }, 1, new int[] { })]
+    [DataRow(new[] { 1 }, 1, new int[] { })]
+    [DataRow(new[] { 1 }, 0, new[] { 1 })]
+    [DataRow(new[] { 1, 2, 6, 3, 4, 5, 6 }, 6, new[] { 1, 2, 3, 4, 5 })]
+    [DataRow(new[] { 7, 7, 7, 7 }, 7, new int[] { })]
+    public void RemoveElements_WithListAndTargetValue_ReturnsListWithoutTargetValue(int[] headArray, int val,
+        int[] expectedResultArray)
     {
         // Arrange
-        var headArray = JsonHelper.Parse<int[]>(headJson);
         var head = ListNode.ToListNode(headArray);
-        var expectedResultArray = JsonHelper.Parse<int[]>(expectedResultJson);
         var expectedResult = ListNode.ToListNode(expectedResultArray);
 
         var solution = new T();

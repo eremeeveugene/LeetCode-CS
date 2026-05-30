@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.TheNumberOfTheSmallestUnoccupiedChair;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.TheNumberOfTheSmallestUnoccupiedChair;
 
@@ -18,18 +17,11 @@ public abstract class TheNumberOfTheSmallestUnoccupiedChairTestsBase<T>
     where T : ITheNumberOfTheSmallestUnoccupiedChair, new()
 {
     [TestMethod]
-    [DataRow("[[1,4],[2,3],[4,6]]", 1, 1)]
-    [DataRow("[[1,4],[2,3],[4,6]]", 2, 0)]
-    [DataRow("[[3,10],[1,5],[2,6]]", 0, 2)]
-    [DataRow(
-        "[[33,35],[26,29],[9,28],[4,31],[8,10],[32,34],[15,24],[27,39],[14,36],[1,14],[25,39],[5,27],[6,15],[2,38],[19,36],[24,34],[3,26]]",
-        0, 3)]
-    public void SmallestChair_WithArrivalAndLeavingTimes_ReturnsChairAssignedToTargetFriend(string timesJson,
+    [DynamicData(nameof(GetTestData))]
+    public void SmallestChair_WithArrivalAndLeavingTimes_ReturnsChairAssignedToTargetFriend(int[][] times,
         int targetFriend, int expectedResult)
     {
         // Arrange
-        var times = JsonHelper.Parse<int[][]>(timesJson);
-
         var solution = new T();
 
         // Act
@@ -37,5 +29,26 @@ public abstract class TheNumberOfTheSmallestUnoccupiedChairTestsBase<T>
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 1, 4 }, new[] { 2, 3 }, new[] { 4, 6 } }, 1, 1];
+
+        yield return [new[] { new[] { 1, 4 }, new[] { 2, 3 }, new[] { 4, 6 } }, 2, 0];
+
+        yield return [new[] { new[] { 3, 10 }, new[] { 1, 5 }, new[] { 2, 6 } }, 0, 2];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 33, 35 }, new[] { 26, 29 }, new[] { 9, 28 }, new[] { 4, 31 }, new[] { 8, 10 },
+                new[] { 32, 34 }, new[] { 15, 24 }, new[] { 27, 39 }, new[] { 14, 36 }, new[] { 1, 14 },
+                new[] { 25, 39 }, new[] { 5, 27 }, new[] { 6, 15 }, new[] { 2, 38 }, new[] { 19, 36 },
+                new[] { 24, 34 }, new[] { 3, 26 }
+            },
+            0, 3
+        ];
     }
 }

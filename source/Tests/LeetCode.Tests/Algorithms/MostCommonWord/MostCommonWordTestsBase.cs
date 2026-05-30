@@ -10,22 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MostCommonWord;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MostCommonWord;
 
 public abstract class MostCommonWordTestsBase<T> where T : IMostCommonWord, new()
 {
     [TestMethod]
-    [DataRow("Bob hit a ball, the hit BALL flew far after it was hit.", "[\"hit\"]", "ball")]
-    [DataRow("a.", "[]", "a")]
-    [DataRow("a, a, a, a, b,b,b,c, c", "[\"a\"]", "b")]
+    [DataRow("Bob hit a ball, the hit BALL flew far after it was hit.", new[] { "hit" }, "ball")]
+    [DataRow("a.", new string[] { }, "a")]
+    [DataRow("a, a, a, a, b,b,b,c, c", new[] { "a" }, "b")]
     public void MostCommonWord_WithParagraphAndBannedWords_ReturnsMostFrequentNonBannedWord(string paragraph,
-        string bannedJson, string expectedResult)
+        string[] banned, string expectedResult)
     {
         // Arrange
-        var banned = JsonHelper.Parse<string[]>(bannedJson);
-
         var solution = new T();
 
         // Act

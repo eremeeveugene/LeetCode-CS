@@ -10,21 +10,17 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountSquareSubmatricesWithAllOnes;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountSquareSubmatricesWithAllOnes;
 
 public abstract class CountSquareSubmatricesWithAllOnesTestsBase<T> where T : ICountSquareSubmatricesWithAllOnes, new()
 {
     [TestMethod]
-    [DataRow("[[0,1,1,1],[1,1,1,1],[0,1,1,1]]", 15)]
-    [DataRow("[[1,0,1],[1,1,0],[1,1,0]]", 7)]
+    [DynamicData(nameof(GetTestData))]
     public void CountSquares_WithMatrixContainingOnesAndZeros_ReturnsTotalSquareSubmatricesWithAllOnes(
-        string matrixJson, int expectedResult)
+        int[][] matrix, int expectedResult)
     {
         // Arrange
-        var matrix = JsonHelper.Parse<int[][]>(matrixJson);
-
         var solution = new T();
 
         // Act
@@ -32,5 +28,12 @@ public abstract class CountSquareSubmatricesWithAllOnesTestsBase<T> where T : IC
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { new[] { 0, 1, 1, 1 }, new[] { 1, 1, 1, 1 }, new[] { 0, 1, 1, 1 } }, 15];
+
+        yield return [new[] { new[] { 1, 0, 1 }, new[] { 1, 1, 0 }, new[] { 1, 1, 0 } }, 7];
     }
 }

@@ -10,22 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CountOfInterestingSubarrays;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.CountOfInterestingSubarrays;
 
 public abstract class CountOfInterestingSubarraysTestsBase<T> where T : ICountOfInterestingSubarrays, new()
 {
     [TestMethod]
-    [DataRow("[3,2,4]", 2, 1, 3)]
-    [DataRow("[3,1,9,6]", 3, 0, 2)]
-    [DataRow("[11,12,21,31]", 10, 1, 5)]
+    [DataRow(new[] { 3, 2, 4 }, 2, 1, 3L)]
+    [DataRow(new[] { 3, 1, 9, 6 }, 3, 0, 2L)]
+    [DataRow(new[] { 11, 12, 21, 31 }, 10, 1, 5L)]
     public void CountInterestingSubarrays_WithModuloAndTargetRemainder_ReturnsMatchingSubarrayCount(
-        string numsJson, int modulo, int k, long expectedResult)
+        int[] nums, int modulo, int k, long expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act
