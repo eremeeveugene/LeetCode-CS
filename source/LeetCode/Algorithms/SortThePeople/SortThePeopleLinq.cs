@@ -23,6 +23,6 @@ public sealed class SortThePeopleLinq : ISortThePeople
     /// <returns></returns>
     public string[] SortPeople(string[] names, int[] heights)
     {
-        return [..names.Zip(heights, (name, height) => (name, height)).OrderByDescending(x => x.height).Select(x => x.name)];
+        return [.. names.Zip(heights, (name, height) => (name, height)).OrderByDescending(x => x.height).Select(x => x.name)];
     }
 }
