@@ -16,10 +16,9 @@ namespace LeetCode.Tests.Algorithms.ToggleLightBulbs;
 public abstract class ToggleLightBulbsTestsBase<T> where T : IToggleLightBulbs, new()
 {
     [TestMethod]
-    [DataRow(new[] { 100, 100 }, new int[] { })]
-    [DataRow(new[] { 10, 30, 20, 10 }, new[] { 20, 30 })]
-    public void ToggleLightBulbs_WithGivenBulbSequence_ReturnsSwitchedOnBulbsSortedInAscendingOrder(int[] bulbs,
-        int[] expectedResult)
+    [DynamicData(nameof(GetTestData))]
+    public void ToggleLightBulbs_WithGivenBulbSequence_ReturnsSwitchedOnBulbsSortedInAscendingOrder(
+        List<int> bulbs, int[] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -29,5 +28,12 @@ public abstract class ToggleLightBulbsTestsBase<T> where T : IToggleLightBulbs, 
 
         // Assert
         CollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new List<int> { 100, 100 }, Array.Empty<int>()];
+
+        yield return [new List<int> { 10, 30, 20, 10 }, new[] { 20, 30 }];
     }
 }

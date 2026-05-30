@@ -36,7 +36,7 @@ public abstract class AddingSpacesToStringTestsBase<T> where T : IAddingSpacesTo
     [DataRow("edgecase", new[] { 0 }, " edgecase")]
     [DataRow("edgecase", new[] { 7 }, "edgecas e")]
     [DataRow("edgecase", new[] { 8 }, "edgecase")]
-    [DataRow("longstringtest", new[] { 4, 8, 12 }, "long string test")]
+    [DataRow("longstringtest", new[] { 4, 10 }, "long string test")]
     [DataRow("123456789", new[] { 3, 6 }, "123 456 789")]
     public void AddSpaces_WithInputStringAndSpaceIndices_ReturnsStringWithInsertedSpaces(string s, int[] spaces, string expectedResult)
     {
