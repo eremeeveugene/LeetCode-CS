@@ -323,21 +323,25 @@ public abstract class WalkingRobotSimulation2TestsBase
         ];
     }
 
-    public sealed class WalkingRobotSimulation2Scenario : Scenario<IWalkingRobotSimulation2>
+    public sealed class WalkingRobotSimulation2Scenario : IScenario<IWalkingRobotSimulation2>
     {
         public WalkingRobotSimulation2Scenario(
             int width,
             int height,
             IOperation<IWalkingRobotSimulation2>[] operations,
             IOperationResult[] operationResults)
-            : base(operations, operationResults)
         {
             Width = width;
             Height = height;
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int Width { get; }
         public int Height { get; }
+
+        public IOperation<IWalkingRobotSimulation2>[] Operations { get; }
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class OperationResultComparer : IComparer

@@ -125,22 +125,21 @@ public abstract class SimpleBankSystemTestsBase
 
     public sealed class BankSystemScenario : IScenario<ISimpleBankSystem>
     {
-        private readonly Scenario<ISimpleBankSystem> _scenario;
-
         public BankSystemScenario(
             long[] balance,
             IOperation<ISimpleBankSystem>[] operations,
             IOperationResult[] operationResults)
         {
             Balance = balance;
-            _scenario = new Scenario<ISimpleBankSystem>(operations, operationResults);
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public long[] Balance { get; }
 
-        public IOperation<ISimpleBankSystem>[] Operations => _scenario.Operations;
+        public IOperation<ISimpleBankSystem>[] Operations { get; }
 
-        public IOperationResult[] OperationResults => _scenario.OperationResults;
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class TransferOperation : IOperation<ISimpleBankSystem>

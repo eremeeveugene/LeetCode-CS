@@ -114,22 +114,21 @@ public abstract class DesignNeighborSumServiceTestsBase
 
     public sealed class NeighborSumServiceScenario : IScenario<IDesignNeighborSumService>
     {
-        private readonly Scenario<IDesignNeighborSumService> _scenario;
-
         public NeighborSumServiceScenario(
             int[][] grid,
             IOperation<IDesignNeighborSumService>[] operations,
             IOperationResult[] operationResults)
         {
             Grid = grid;
-            _scenario = new Scenario<IDesignNeighborSumService>(operations, operationResults);
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int[][] Grid { get; }
 
-        public IOperation<IDesignNeighborSumService>[] Operations => _scenario.Operations;
+        public IOperation<IDesignNeighborSumService>[] Operations { get; }
 
-        public IOperationResult[] OperationResults => _scenario.OperationResults;
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class AdjacentSumOperation : IOperation<IDesignNeighborSumService>

@@ -197,8 +197,6 @@ public abstract class DesignParkingSystemTestsBase
 
     public sealed class ParkingSystemScenario : IScenario<IDesignParkingSystem>
     {
-        private readonly Scenario<IDesignParkingSystem> _scenario;
-
         public ParkingSystemScenario(
             int bigCapacity,
             int mediumCapacity,
@@ -209,17 +207,17 @@ public abstract class DesignParkingSystemTestsBase
             BigCapacity = bigCapacity;
             MediumCapacity = mediumCapacity;
             SmallCapacity = smallCapacity;
-
-            _scenario = new Scenario<IDesignParkingSystem>(operations, operationResults);
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int BigCapacity { get; }
         public int MediumCapacity { get; }
         public int SmallCapacity { get; }
 
-        public IOperation<IDesignParkingSystem>[] Operations => _scenario.Operations;
+        public IOperation<IDesignParkingSystem>[] Operations { get; }
 
-        public IOperationResult[] OperationResults => _scenario.OperationResults;
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class AddCarOperation : IOperation<IDesignParkingSystem>

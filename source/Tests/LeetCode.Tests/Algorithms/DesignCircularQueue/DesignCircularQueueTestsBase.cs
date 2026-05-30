@@ -136,22 +136,21 @@ public abstract class DesignCircularQueueTestsBase
 
     public sealed class CircularQueueScenario : IScenario<IDesignCircularQueue>
     {
-        private readonly Scenario<IDesignCircularQueue> _scenario;
-
         public CircularQueueScenario(
             int k,
             IOperation<IDesignCircularQueue>[] operations,
             IOperationResult[] operationResults)
         {
             K = k;
-            _scenario = new Scenario<IDesignCircularQueue>(operations, operationResults);
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int K { get; }
 
-        public IOperation<IDesignCircularQueue>[] Operations => _scenario.Operations;
+        public IOperation<IDesignCircularQueue>[] Operations { get; }
 
-        public IOperationResult[] OperationResults => _scenario.OperationResults;
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class EnQueueOperation : IOperation<IDesignCircularQueue>

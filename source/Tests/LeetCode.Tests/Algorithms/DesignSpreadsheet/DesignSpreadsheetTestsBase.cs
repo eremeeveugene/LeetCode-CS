@@ -135,22 +135,21 @@ public abstract class DesignSpreadsheetTestsBase
 
     public sealed class SpreadsheetScenario : IScenario<IDesignSpreadsheet>
     {
-        private readonly Scenario<IDesignSpreadsheet> _scenario;
-
         public SpreadsheetScenario(
             int rows,
             IOperation<IDesignSpreadsheet>[] operations,
             IOperationResult[] operationResults)
         {
             Rows = rows;
-            _scenario = new Scenario<IDesignSpreadsheet>(operations, operationResults);
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int Rows { get; }
 
-        public IOperation<IDesignSpreadsheet>[] Operations => _scenario.Operations;
+        public IOperation<IDesignSpreadsheet>[] Operations { get; }
 
-        public IOperationResult[] OperationResults => _scenario.OperationResults;
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class SetCellOperation : IOperation<IDesignSpreadsheet>

@@ -57,19 +57,18 @@ public abstract class DesignCircularDequeTestsBase
 
     public sealed class CircularDequeScenario : IScenario<IDesignCircularDeque>
     {
-        private readonly Scenario<IDesignCircularDeque> _scenario;
-
         public CircularDequeScenario(int k, IOperation<IDesignCircularDeque>[] operations, IOperationResult[] operationResults)
         {
             K = k;
-            _scenario = new Scenario<IDesignCircularDeque>(operations, operationResults);
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int K { get; }
 
-        public IOperation<IDesignCircularDeque>[] Operations => _scenario.Operations;
+        public IOperation<IDesignCircularDeque>[] Operations { get; }
 
-        public IOperationResult[] OperationResults => _scenario.OperationResults;
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class InsertLastOperation : IOperation<IDesignCircularDeque>

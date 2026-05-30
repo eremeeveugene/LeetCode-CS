@@ -128,22 +128,20 @@ public abstract class DesignTaskManagerTestsBase
 
     public sealed class TaskManagerScenario : IScenario<IDesignTaskManager>
     {
-        private readonly Scenario<IDesignTaskManager> _scenario;
-
         public TaskManagerScenario(IList<IList<int>> tasks,
             IOperation<IDesignTaskManager>[] operations,
             IOperationResult[] operationResults)
         {
-            _scenario = new Scenario<IDesignTaskManager>(operations, operationResults);
-            
             Tasks = tasks;
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public IList<IList<int>> Tasks { get; }
 
-        public IOperation<IDesignTaskManager>[] Operations => _scenario.Operations;
+        public IOperation<IDesignTaskManager>[] Operations { get; }
 
-        public IOperationResult[] OperationResults => _scenario.OperationResults;
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class AddOperation : IOperation<IDesignTaskManager>

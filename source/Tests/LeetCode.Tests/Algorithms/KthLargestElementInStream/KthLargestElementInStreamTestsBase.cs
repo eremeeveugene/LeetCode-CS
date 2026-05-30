@@ -116,8 +116,6 @@ public abstract class KthLargestElementInStreamTestsBase
 
     public sealed class KthLargestScenario : IScenario<IKthLargestElementInStream>
     {
-        private readonly Scenario<IKthLargestElementInStream> _scenario;
-
         public KthLargestScenario(
             int k,
             int[] nums,
@@ -126,15 +124,16 @@ public abstract class KthLargestElementInStreamTestsBase
         {
             K = k;
             Nums = nums;
-            _scenario = new Scenario<IKthLargestElementInStream>(operations, operationResults);
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int K { get; }
         public int[] Nums { get; }
 
-        public IOperation<IKthLargestElementInStream>[] Operations => _scenario.Operations;
+        public IOperation<IKthLargestElementInStream>[] Operations { get; }
 
-        public IOperationResult[] OperationResults => _scenario.OperationResults;
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class AddOperation : IOperation<IKthLargestElementInStream>

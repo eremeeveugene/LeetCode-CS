@@ -153,22 +153,21 @@ public abstract class DesignStackWithIncrementOperationTestsBase
 
     public sealed class StackWithIncrementScenario : IScenario<IDesignStackWithIncrementOperation>
     {
-        private readonly Scenario<IDesignStackWithIncrementOperation> _scenario;
-
         public StackWithIncrementScenario(
             int maxSize,
             IOperation<IDesignStackWithIncrementOperation>[] operations,
             IOperationResult[] operationResults)
         {
             MaxSize = maxSize;
-            _scenario = new Scenario<IDesignStackWithIncrementOperation>(operations, operationResults);
+            Operations = operations;
+            OperationResults = operationResults;
         }
 
         public int MaxSize { get; }
 
-        public IOperation<IDesignStackWithIncrementOperation>[] Operations => _scenario.Operations;
+        public IOperation<IDesignStackWithIncrementOperation>[] Operations { get; }
 
-        public IOperationResult[] OperationResults => _scenario.OperationResults;
+        public IOperationResult[] OperationResults { get; }
     }
 
     private sealed class PushOperation : IOperation<IDesignStackWithIncrementOperation>
