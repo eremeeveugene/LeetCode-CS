@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimizeMaximumPairSumInArray;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.MinimizeMaximumPairSumInArray;
 
@@ -18,13 +17,11 @@ public abstract class MinimizeMaximumPairSumInArrayTestsBase<T>
     where T : IMinimizeMaximumPairSumInArray, new()
 {
     [TestMethod]
-    [DataRow("[3,5,2,3]", 7)]
-    [DataRow("[3,5,4,2,4,6]", 8)]
-    public void MinPairSum_WithNumsArray_ReturnsMinimizedMaximumPairSum(string numsJson, int expectedResult)
+    [DataRow(new[] { 3, 5, 2, 3 }, 7)]
+    [DataRow(new[] { 3, 5, 4, 2, 4, 6 }, 8)]
+    public void MinPairSum_WithNumsArray_ReturnsMinimizedMaximumPairSum(int[] nums, int expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-
         var solution = new T();
 
         // Act

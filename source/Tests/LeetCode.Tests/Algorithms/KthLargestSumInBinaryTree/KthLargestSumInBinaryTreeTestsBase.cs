@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.KthLargestSumInBinaryTree;
-using LeetCode.Core.Helpers;
 using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.KthLargestSumInBinaryTree;
@@ -18,13 +17,11 @@ namespace LeetCode.Tests.Algorithms.KthLargestSumInBinaryTree;
 public abstract class KthLargestSumInBinaryTreeTestsBase<T> where T : IKthLargestSumInBinaryTree, new()
 {
     [TestMethod]
-    [DataRow("[5,8,9,2,1,3,7,4,6]", 2, 13)]
-    [DataRow("[1,2,null,3]", 1, 3)]
-    public void KthLargestLevelSum_WithTreeAndK_ReturnsKthLargestLevelSum(string rootJson, int k,
+    [DynamicData(nameof(GetTestData))]
+    public void KthLargestLevelSum_WithTreeAndK_ReturnsKthLargestLevelSum(int?[] rootArray, int k,
         long expectedResult)
     {
         // Arrange
-        var rootArray = JsonHelper.Parse<int?[]>(rootJson);
         var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();
@@ -34,5 +31,12 @@ public abstract class KthLargestSumInBinaryTreeTestsBase<T> where T : IKthLarges
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new int?[] { 5, 8, 9, 2, 1, 3, 7, 4, 6 }, 2, 13L];
+
+        yield return [new int?[] { 1, 2, null, 3 }, 1, 3L];
     }
 }

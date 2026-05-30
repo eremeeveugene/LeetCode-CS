@@ -10,22 +10,19 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.StoneGame2;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.StoneGame2;
 
 public abstract class StoneGame2TestsBase<T> where T : IStoneGame2, new()
 {
     [TestMethod]
-    [DataRow("[1]", 1)]
-    [DataRow("[2,7,9,4,4]", 10)]
-    [DataRow("[1,2,3,4,5,100]", 104)]
-    [DataRow("[100,10,100,100,100,100]", 300)]
-    public void StoneGameII_WithGivenPiles_ReturnsMaxPossibleScore(string pilesJson, int expectedResult)
+    [DataRow(new[] { 1 }, 1)]
+    [DataRow(new[] { 2, 7, 9, 4, 4 }, 10)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 100 }, 104)]
+    [DataRow(new[] { 100, 10, 100, 100, 100, 100 }, 300)]
+    public void StoneGameII_WithGivenPiles_ReturnsMaxPossibleScore(int[] piles, int expectedResult)
     {
         // Arrange
-        var piles = JsonHelper.Parse<int[]>(pilesJson);
-
         var solution = new T();
 
         // Act

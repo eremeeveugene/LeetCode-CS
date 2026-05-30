@@ -10,22 +10,18 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LargestDivisibleSubset;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LargestDivisibleSubset;
 
 public abstract class LargestDivisibleSubsetTestsBase<T> where T : ILargestDivisibleSubset, new()
 {
     [TestMethod]
-    [DataRow("[1,2,3]", "[1,2]")]
-    [DataRow("[1,2,4,8]", "[1,2,4,8]")]
-    public void LargestDivisibleSubset_WithArrayOfIntegers_ReturnsSubsetWhereEveryPairIsDivisible(string numsJson,
-        string expectedResultJson)
+    [DataRow(new[] { 1, 2, 3 }, new[] { 1, 2 })]
+    [DataRow(new[] { 1, 2, 4, 8 }, new[] { 1, 2, 4, 8 })]
+    public void LargestDivisibleSubset_WithArrayOfIntegers_ReturnsSubsetWhereEveryPairIsDivisible(int[] nums,
+        int[] expectedResult)
     {
         // Arrange
-        var nums = JsonHelper.Parse<int[]>(numsJson);
-        var expectedResult = JsonHelper.Parse<int[]>(expectedResultJson);
-
         var solution = new T();
 
         // Act

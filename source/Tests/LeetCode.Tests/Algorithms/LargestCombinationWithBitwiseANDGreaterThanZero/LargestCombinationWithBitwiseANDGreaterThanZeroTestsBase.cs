@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.LargestCombinationWithBitwiseANDGreaterThanZero;
-using LeetCode.Core.Helpers;
 
 namespace LeetCode.Tests.Algorithms.LargestCombinationWithBitwiseANDGreaterThanZero;
 
@@ -18,15 +17,13 @@ public abstract class LargestCombinationWithBitwiseANDGreaterThanZeroTestsBase<T
     where T : ILargestCombinationWithBitwiseANDGreaterThanZero, new()
 {
     [TestMethod]
-    [DataRow("[16,17,71,62,12,24,14]", 4)]
-    [DataRow("[8,8]", 2)]
-    public void LargestCombination_GivenCandidatesArray_ReturnsMaxCombinationSize(string candidatesJson,
+    [DataRow(new[] { 16, 17, 71, 62, 12, 24, 14 }, 4)]
+    [DataRow(new[] { 8, 8 }, 2)]
+    public void LargestCombination_GivenCandidatesArray_ReturnsMaxCombinationSize(int[] candidates,
         int expectedResult)
     {
         // Arrange
         var solution = new T();
-
-        var candidates = JsonHelper.Parse<int[]>(candidatesJson);
 
         // Act
         var actualResult = solution.LargestCombination(candidates);

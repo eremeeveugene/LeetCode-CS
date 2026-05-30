@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumAbsoluteDifference;
-using LeetCode.Core.Helpers;
 using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.MinimumAbsoluteDifference;
@@ -18,16 +17,11 @@ namespace LeetCode.Tests.Algorithms.MinimumAbsoluteDifference;
 public abstract class MinimumAbsoluteDifferenceTestsBase<T> where T : IMinimumAbsoluteDifference, new()
 {
     [TestMethod]
-    [DataRow("[4,2,1,3]", "[[1,2],[2,3],[3,4]]")]
-    [DataRow("[1,3,6,10,15]", "[[1,3]]")]
-    [DataRow("[3,8,-10,23,19,-4,-14,27]", "[[-14,-10],[19,23],[23,27]]")]
+    [DynamicData(nameof(GetTestData))]
     public void MinimumAbsDifference_WithDistinctIntegersArray_ReturnsAllPairsWithMinimumAbsoluteDifference(
-        string arrJson, string expectedResultJson)
+        int[] arr, IList<IList<int>> expectedResult)
     {
         // Arrange
-        var arr = JsonHelper.Parse<int[]>(arrJson);
-        var expectedResult = JsonHelper.Parse<IList<IList<int>>>(expectedResultJson);
-
         var solution = new T();
 
         // Act
@@ -35,5 +29,14 @@ public abstract class MinimumAbsoluteDifferenceTestsBase<T> where T : IMinimumAb
 
         // Assert
         NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetTestData()
+    {
+        yield return [new[] { 4, 2, 1, 3 }, new IList<int>[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 } }];
+
+        yield return [new[] { 1, 3, 6, 10, 15 }, new IList<int>[] { new[] { 1, 3 } }];
+
+        yield return [new[] { 3, 8, -10, 23, 19, -4, -14, 27 }, new IList<int>[] { new[] { -14, -10 }, new[] { 19, 23 }, new[] { 23, 27 } }];
     }
 }
