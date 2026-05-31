@@ -25,23 +25,4 @@ public sealed class VoidOperationResult : IOperationResult
     private VoidOperationResult()
     {
     }
-
-    /// <inheritdoc />
-    /// <remarks>
-    ///     Two <see cref="VoidOperationResult" /> instances are always considered equal
-    ///     because the type carries no state.
-    /// </remarks>
-    public override bool Equals(object? obj)
-    {
-        return obj is VoidOperationResult;
-    }
-
-    /// <inheritdoc />
-    /// <remarks>
-    ///     Returns a constant hash code of <c>0</c> since all instances are equivalent.
-    /// </remarks>
-    public override int GetHashCode()
-    {
-        return 0;
-    }
 }
