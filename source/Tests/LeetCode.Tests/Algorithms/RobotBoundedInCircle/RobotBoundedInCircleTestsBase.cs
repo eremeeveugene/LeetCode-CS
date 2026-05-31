@@ -20,6 +20,19 @@ public abstract class RobotBoundedInCircleTestsBase<T> where T : IRobotBoundedIn
     [DataRow("GL", true)]
     [DataRow("GG", false)]
     [DataRow("GLGLGGLGL", false)]
+    [DataRow("L", true)]
+    [DataRow("R", true)]
+    [DataRow("LL", true)]
+    [DataRow("RR", true)]
+    [DataRow("LLLLL", true)]
+    [DataRow("RRRR", true)]
+    [DataRow("GLLL", true)]
+    [DataRow("GRRR", true)]
+    [DataRow("GGLGGL", true)]
+    [DataRow("GGRGGR", true)]
+    [DataRow("GGGGG", false)]
+    [DataRow("GGGG", false)]
+    [DataRow("GRRRGRRRGRRRGRRRG", false)]
     public void IsRobotBounded_WithMovementInstructions_ReturnsIfRobotIsBounded(string instructions, bool expectedResult)
     {
         // Arrange

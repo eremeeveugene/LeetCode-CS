@@ -19,6 +19,23 @@ public abstract class CountPrefixAndSuffixPairs1TestsBase<T> where T : ICountPre
     [DataRow(new[] { "a", "aba", "ababa", "aa" }, 4)]
     [DataRow(new[] { "pa", "papa", "ma", "mama" }, 2)]
     [DataRow(new[] { "abab", "ab" }, 0)]
+    [DataRow(new[] { "a" }, 0)]
+    [DataRow(new[] { "a", "a" }, 1)]
+    [DataRow(new[] { "ab", "ab" }, 1)]
+    [DataRow(new[] { "abc", "abc", "abc" }, 3)]
+    [DataRow(new[] { "a", "b", "c" }, 0)]
+    [DataRow(new[] { "ab", "cab" }, 0)]
+    [DataRow(new[] { "ab", "abab" }, 1)]
+    [DataRow(new[] { "x", "x", "x", "x" }, 6)]
+    [DataRow(new[] { "ab", "cdab" }, 0)]
+    [DataRow(new[] { "a", "aa", "aaa" }, 3)]
+    [DataRow(new[] { "ab", "aab", "aaab" }, 3)]
+    [DataRow(new[] { "aa", "aaaa" }, 1)]
+    [DataRow(new[] { "abc", "abcabc" }, 1)]
+    [DataRow(new[] { "ab", "ab", "ab", "ab" }, 6)]
+    [DataRow(new[] { "hello", "worldhello" }, 0)]
+    [DataRow(new[] { "cat", "catcat" }, 1)]
+    [DataRow(new[] { "ab", "cd", "ef" }, 0)]
     public void CountPrefixSuffixPairs_WithStringArray_ReturnsNumberOfValidPrefixAndSuffixPairs(string[] words, int expectedResult)
     {
         // Arrange

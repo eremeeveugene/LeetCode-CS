@@ -19,6 +19,20 @@ public abstract class FindTheDuplicateNumberTestsBase<T> where T : IFindTheDupli
     [DataRow(new[] { 1, 3, 4, 2, 2 }, 2)]
     [DataRow(new[] { 3, 1, 3, 4, 2 }, 3)]
     [DataRow(new[] { 3, 3, 3, 3, 3 }, 3)]
+    [DataRow(new[] { 1, 1 }, 1)]
+    [DataRow(new[] { 2, 2, 1 }, 2)]
+    [DataRow(new[] { 1, 2, 3, 4, 4 }, 4)]
+    [DataRow(new[] { 4, 1, 2, 3, 4 }, 4)]
+    [DataRow(new[] { 1, 2, 2, 3, 4 }, 2)]
+    [DataRow(new[] { 2, 1, 2 }, 2)]
+    [DataRow(new[] { 1, 2, 3, 1 }, 1)]
+    [DataRow(new[] { 5, 1, 2, 3, 4, 5 }, 5)]
+    [DataRow(new[] { 1, 4, 4, 2, 3 }, 4)]
+    [DataRow(new[] { 2, 5, 9, 6, 9, 3, 8, 9, 7, 1 }, 9)]
+    [DataRow(new[] { 6, 4, 3, 2, 1, 5, 1 }, 1)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 3 }, 3)]
+    [DataRow(new[] { 7, 9, 7, 4, 2, 8, 6, 1, 3, 5 }, 7)]
+    [DataRow(new[] { 2, 2 }, 2)]
     public void FindDuplicate_GivenArray_ReturnsFirstDuplicate(int[] nums, int expectedResult)
     {
         // Arrange

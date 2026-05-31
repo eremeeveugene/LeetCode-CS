@@ -20,6 +20,18 @@ public abstract class MinimumDeletionsForKMostKDistinctCharactersTestsBase<T> wh
     [DataRow("aabb", 2, 0)]
     [DataRow("yyyzz", 1, 2)]
     [DataRow("wund", 1, 3)]
+    [DataRow("a", 1, 0)]
+    [DataRow("a", 2, 0)]
+    [DataRow("aabbc", 2, 1)]
+    [DataRow("aabbcc", 1, 4)]
+    [DataRow("aabbcc", 2, 2)]
+    [DataRow("aaabbbccc", 2, 3)]
+    [DataRow("abcdef", 3, 3)]
+    [DataRow("abcdef", 6, 0)]
+    [DataRow("z", 1, 0)]
+    [DataRow("az", 1, 1)]
+    [DataRow("aabbbcccc", 2, 2)]
+    [DataRow("aabbbcccc", 1, 5)]
     public void MinDeletion_WithStringAndLimitK_ReturnsMinimumDeletions(string s, int k, int expectedResult)
     {
         // Arrange

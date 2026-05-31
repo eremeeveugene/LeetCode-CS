@@ -20,6 +20,22 @@ public abstract class CheckIfParenthesesStringCanBeValidTestsBase<T> where T : I
     [DataRow("()()", "0000", true)]
     [DataRow(")", "0", false)]
     [DataRow("((()(()()))()((()()))))()((()(()", "10111100100101001110100010001001", true)]
+    [DataRow("()", "00", true)]
+    [DataRow("()", "11", true)]
+    [DataRow("()", "10", true)]
+    [DataRow("()", "01", true)]
+    [DataRow("(", "0", false)]
+    [DataRow("(", "1", false)]
+    [DataRow(")", "1", false)]
+    [DataRow("(()", "000", false)]
+    [DataRow("(())", "0000", true)]
+    [DataRow("(())", "1111", true)]
+    [DataRow(")(", "00", true)]
+    [DataRow("(((", "000", false)]
+    [DataRow(")))", "000", false)]
+    [DataRow("()()()", "000000", true)]
+    [DataRow("((()))", "000000", true)]
+    [DataRow("(()())", "111111", true)]
     public void CanBeValid_WithStringAndLocked_ReturnsWhetherParenthesesCanBeValid(string s, string locked, bool expectedResult)
     {
         // Arrange

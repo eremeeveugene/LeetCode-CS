@@ -19,6 +19,23 @@ public abstract class TransformArrayToAllEqualElementsTestsBase<T> where T : ITr
     [DataRow(new[] { 1, -1, 1, -1, 1 }, 3, true)]
     [DataRow(new[] { -1, -1, -1, 1, 1, 1 }, 5, false)]
     [DataRow(new[] { 1, -1, 1 }, 2, true)]
+    [DataRow(new[] { 1 }, 1, true)]
+    [DataRow(new[] { -1 }, 1, true)]
+    [DataRow(new[] { 1, 1 }, 0, true)]
+    [DataRow(new[] { -1, -1 }, 0, true)]
+    [DataRow(new[] { 1, -1 }, 1, true)]
+    [DataRow(new[] { -1, 1 }, 1, true)]
+    [DataRow(new[] { 1, 1, 1 }, 0, true)]
+    [DataRow(new[] { -1, -1, -1 }, 0, true)]
+    [DataRow(new[] { 1, -1, -1 }, 1, true)]
+    [DataRow(new[] { -1, 1, 1 }, 1, true)]
+    [DataRow(new[] { 1, -1, 1, -1 }, 2, false)]
+    [DataRow(new[] { -1, 1, -1, 1 }, 2, false)]
+    [DataRow(new[] { 1, -1, 1, -1, 1, -1, 1 }, 10, true)]
+    [DataRow(new[] { 1, 1, -1, -1, 1 }, 4, true)]
+    [DataRow(new[] { -1, -1, 1, 1, -1 }, 4, true)]
+    [DataRow(new[] { 1, -1, -1, 1, -1 }, 3, true)]
+    [DataRow(new[] { -1, 1, 1, -1, 1 }, 3, true)]
     public void CanMakeEqual_WithNumsArray_ReturnsTrueIfAllElementsCanBeMadeEqual(int[] nums, int k, bool expectedResult)
     {
         // Arrange

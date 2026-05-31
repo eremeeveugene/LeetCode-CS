@@ -19,6 +19,20 @@ public abstract class CountSpecialTripletsTestsBase<T> where T : ICountSpecialTr
     [DataRow(new[] { 6, 3, 6 }, 1)]
     [DataRow(new[] { 0, 1, 0, 0 }, 1)]
     [DataRow(new[] { 8, 4, 2, 8, 4 }, 2)]
+    [DataRow(new[] { 1, 2, 1 }, 0)]
+    [DataRow(new[] { 2, 1, 2 }, 1)]
+    [DataRow(new[] { 4, 2, 4 }, 1)]
+    [DataRow(new[] { 0, 0, 0 }, 1)]
+    [DataRow(new[] { 1, 1, 1 }, 0)]
+    [DataRow(new[] { 6, 3, 6, 3, 6 }, 4)]
+    [DataRow(new[] { 10, 5, 10 }, 1)]
+    [DataRow(new[] { 100, 50, 100 }, 1)]
+    [DataRow(new[] { 2, 1, 2, 1, 2 }, 4)]
+    [DataRow(new[] { 4, 2, 1, 4 }, 1)]
+    [DataRow(new[] { 3, 3, 3 }, 0)]
+    [DataRow(new[] { 8, 4, 8 }, 1)]
+    [DataRow(new[] { 1, 2, 3 }, 0)]
+    [DataRow(new[] { 0, 0, 0, 0 }, 4)]
     public void SpecialTriplets_WithNumsArray_ReturnsCountOfSpecialTriplets(int[] nums, int expectedResult)
     {
         // Arrange

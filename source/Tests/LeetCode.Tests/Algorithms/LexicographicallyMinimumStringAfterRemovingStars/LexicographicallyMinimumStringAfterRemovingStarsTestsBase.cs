@@ -18,6 +18,22 @@ public abstract class LexicographicallyMinimumStringAfterRemovingStarsTestsBase<
     [TestMethod]
     [DataRow("aaba*", "aab")]
     [DataRow("abc", "abc")]
+    [DataRow("a*", "")]
+    [DataRow("a**", "")]
+    [DataRow("ba*", "b")]
+    [DataRow("cb*a", "ca")]
+    [DataRow("z*", "")]
+    [DataRow("ab*c", "bc")]
+    [DataRow("abc*", "bc")]
+    [DataRow("aab*", "ab")]
+    [DataRow("abcde", "abcde")]
+    [DataRow("ba*b*", "b")]
+    [DataRow("dba*", "db")]
+    [DataRow("abcd*e*", "cde")]
+    [DataRow("zab*c", "zbc")]
+    [DataRow("b*a", "a")]
+    [DataRow("aa*b", "ab")]
+    [DataRow("cb*", "c")]
     public void ClearStars_WithAsteriskAndCharactersString_ReturnLexicographicallySmallestString(string s, string expectedResult)
     {
         // Arrange

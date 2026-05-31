@@ -34,5 +34,37 @@ public abstract class SpecialPositionsInBinaryMatrixTestsBase<T> where T : ISpec
         yield return [new[] { new[] { 1, 0, 0 }, new[] { 0, 0, 1 }, new[] { 1, 0, 0 } }, 1];
 
         yield return [new[] { new[] { 1, 0, 0 }, new[] { 0, 1, 0 }, new[] { 0, 0, 1 } }, 3];
+
+        yield return [new[] { new[] { 0 } }, 0];
+
+        yield return [new[] { new[] { 1 } }, 1];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 0, 0 } }, 0];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 0, 1 } }, 2];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 0, 0 } }, 0];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 1, 0 } }, 2];
+
+        yield return [new[] { new[] { 1, 0, 0, 0 }, new[] { 0, 1, 0, 0 }, new[] { 0, 0, 1, 0 }, new[] { 0, 0, 0, 1 } }, 4];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 1, 0 } }, 0];
+
+        yield return [new[] { new[] { 0, 0, 1 }, new[] { 0, 0, 1 }, new[] { 0, 0, 1 } }, 0];
+
+        yield return [new[] { new[] { 1, 0, 0 }, new[] { 0, 0, 0 }, new[] { 0, 0, 0 } }, 1];
+
+        yield return [new[] { new[] { 0, 0, 0 }, new[] { 0, 1, 0 }, new[] { 0, 0, 0 } }, 1];
+
+        yield return [new[] { new[] { 0, 1, 0 }, new[] { 0, 0, 0 }, new[] { 0, 1, 0 } }, 0];
+
+        yield return [new[] { new[] { 1, 0, 0 }, new[] { 0, 0, 0 }, new[] { 0, 0, 1 } }, 2];
+
+        yield return [new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 1, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 } }, 1];
+
+        yield return [new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 1 } }, 0];
+
+        yield return [new[] { new[] { 0, 0, 0 }, new[] { 0, 0, 0 }, new[] { 0, 0, 0 } }, 0];
     }
 }

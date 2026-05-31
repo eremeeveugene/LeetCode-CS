@@ -34,5 +34,37 @@ public abstract class EqualSumGridPartition1TestsBase<T> where T : IEqualSumGrid
         yield return [new[] { new[] { 1, 4 }, new[] { 2, 3 } }, true];
 
         yield return [new[] { new[] { 1, 3 }, new[] { 2, 4 } }, false];
+
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { 4, 5, 6 } }, false];
+
+        yield return [new[] { new[] { 3, 3 }, new[] { 3, 3 } }, true];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 1, 2 } }, false];
+
+        yield return [new[] { new[] { 2, 2 }, new[] { 2, 2 } }, true];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 3, 4 } }, false];
+
+        yield return [new[] { new[] { 4, 4 }, new[] { 4, 4 } }, true];
+
+        yield return [new[] { new[] { 1, 5, 1 }, new[] { 1, 5, 1 } }, true];
+
+        yield return [new[] { new[] { 10, 5 }, new[] { 5, 10 } }, true];
+
+        yield return [new[] { new[] { 1, 2, 3, 4 }, new[] { 5, 6, 7, 8 } }, false];
+
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { 3, 2, 1 } }, true];
+
+        yield return [new[] { new[] { 5, 5, 5 }, new[] { 5, 5, 5 } }, true];
+
+        yield return [new[] { new[] { 6, 3, 3 }, new[] { 1, 4, 7 } }, true];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 } }, false];
+
+        yield return [new[] { new[] { 3, 2, 1 }, new[] { 1, 2, 3 }, new[] { 2, 2, 2 } }, false];
+
+        yield return [new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 1 } }, true];
+
+        yield return [new[] { new[] { 9, 1 }, new[] { 1, 9 } }, true];
     }
 }

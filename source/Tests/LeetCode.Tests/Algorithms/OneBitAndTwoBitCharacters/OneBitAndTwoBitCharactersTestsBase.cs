@@ -18,6 +18,22 @@ public abstract class OneBitAndTwoBitCharactersTestsBase<T> where T : IOneBitAnd
     [TestMethod]
     [DataRow(new[] { 1, 0, 0 }, true)]
     [DataRow(new[] { 1, 1, 1, 0 }, false)]
+    [DataRow(new[] { 0 }, true)]
+    [DataRow(new[] { 1, 0, 0, 0 }, true)]
+    [DataRow(new[] { 1, 1, 0 }, true)]
+    [DataRow(new[] { 0, 0 }, true)]
+    [DataRow(new[] { 1, 0, 1, 0, 0 }, true)]
+    [DataRow(new[] { 1, 1, 0, 0 }, true)]
+    [DataRow(new[] { 0, 1, 1, 0 }, true)]
+    [DataRow(new[] { 1, 1, 1, 1, 0 }, true)]
+    [DataRow(new[] { 1, 0, 1, 1, 0 }, false)]
+    [DataRow(new[] { 0, 0, 0 }, true)]
+    [DataRow(new[] { 1, 1, 1, 1, 1, 0 }, false)]
+    [DataRow(new[] { 0, 1, 0, 0 }, true)]
+    [DataRow(new[] { 1, 0, 0, 1, 0, 0 }, true)]
+    [DataRow(new[] { 1, 1, 0, 1, 0, 0 }, true)]
+    [DataRow(new[] { 1, 0, 1, 0, 1, 0, 0 }, true)]
+    [DataRow(new[] { 0, 0, 0, 0 }, true)]
     public void IsOneBitCharacter_WithBitsArray_ReturnsTrueIfLastIsOneBitCharacter(int[] bits, bool expectedResult)
     {
         // Arrange

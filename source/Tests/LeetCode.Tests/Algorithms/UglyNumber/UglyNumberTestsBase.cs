@@ -19,6 +19,23 @@ public abstract class UglyNumberTestsBase<T> where T : IUglyNumber, new()
     [DataRow(1, true)]
     [DataRow(6, true)]
     [DataRow(14, false)]
+    [DataRow(0, false)]
+    [DataRow(-1, false)]
+    [DataRow(-6, false)]
+    [DataRow(2, true)]
+    [DataRow(3, true)]
+    [DataRow(4, true)]
+    [DataRow(5, true)]
+    [DataRow(8, true)]
+    [DataRow(9, true)]
+    [DataRow(10, true)]
+    [DataRow(12, true)]
+    [DataRow(15, true)]
+    [DataRow(25, true)]
+    [DataRow(30, true)]
+    [DataRow(7, false)]
+    [DataRow(11, false)]
+    [DataRow(49, false)]
     public void IsUgly_WithPositiveInteger_ReturnsTrueIfOnlyPrimeFactorsAreTwoThreeOrFive(int n, bool expectedResult)
     {
         // Arrange

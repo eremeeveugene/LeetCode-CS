@@ -18,6 +18,22 @@ public abstract class CountOperationsToObtainZeroTestsBase<T> where T : ICountOp
     [TestMethod]
     [DataRow(2, 3, 3)]
     [DataRow(10, 10, 1)]
+    [DataRow(0, 1, 0)]
+    [DataRow(1, 0, 0)]
+    [DataRow(1, 1, 1)]
+    [DataRow(1, 2, 2)]
+    [DataRow(5, 1, 5)]
+    [DataRow(1, 5, 5)]
+    [DataRow(6, 4, 3)]
+    [DataRow(100, 1, 100)]
+    [DataRow(1, 100, 100)]
+    [DataRow(7, 3, 5)]
+    [DataRow(3, 7, 5)]
+    [DataRow(15, 5, 3)]
+    [DataRow(100, 99, 100)]
+    [DataRow(50, 25, 2)]
+    [DataRow(12, 8, 3)]
+    [DataRow(1000, 999, 1000)]
     public void CountOperations_WithTwoNonNegativeIntegers_ReturnsCountOfSubtractionOperations(int num1, int num2, int expectedResult)
     {
         // Arrange

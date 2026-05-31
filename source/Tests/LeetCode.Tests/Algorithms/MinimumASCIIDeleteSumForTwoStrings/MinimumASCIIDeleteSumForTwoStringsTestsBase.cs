@@ -18,6 +18,23 @@ public abstract class MinimumASCIIDeleteSumForTwoStringsTestsBase<T> where T : I
     [TestMethod]
     [DataRow("sea", "eat", 231)]
     [DataRow("delete", "leet", 403)]
+    [DataRow("a", "a", 0)]
+    [DataRow("a", "b", 195)]
+    [DataRow("", "a", 97)]
+    [DataRow("a", "", 97)]
+    [DataRow("abc", "abc", 0)]
+    [DataRow("ab", "ba", 0)]
+    [DataRow("abc", "ac", 98)]
+    [DataRow("abc", "bc", 97)]
+    [DataRow("abc", "ab", 99)]
+    [DataRow("abcd", "bd", 196)]
+    [DataRow("abc", "def", 597)]
+    [DataRow("ba", "ab", 0)]
+    [DataRow("aa", "a", 97)]
+    [DataRow("aab", "ab", 97)]
+    [DataRow("abc", "cba", 0)]
+    [DataRow("b", "ab", 97)]
+    [DataRow("zz", "z", 122)]
     public void MinimumDeleteSum_WithInputStrings_ReturnsMinimumAsciiDeletionSumToMakeStringsEqual(string s1, string s2, int expectedResult)
     {
         // Arrange

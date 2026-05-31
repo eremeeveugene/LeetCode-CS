@@ -19,6 +19,20 @@ public abstract class MinimumSwapsToGroupAll1Together2TestBase<T> where T : IMin
     [DataRow(new[] { 1, 1, 0, 0, 1 }, 0)]
     [DataRow(new[] { 0, 1, 0, 1, 1, 0, 0 }, 1)]
     [DataRow(new[] { 0, 1, 1, 1, 0, 0, 1, 1, 0 }, 2)]
+    [DataRow(new[] { 0, 0, 0 }, 0)]
+    [DataRow(new[] { 1 }, 0)]
+    [DataRow(new[] { 0 }, 0)]
+    [DataRow(new[] { 1, 1 }, 0)]
+    [DataRow(new[] { 1, 0 }, 0)]
+    [DataRow(new[] { 0, 1 }, 0)]
+    [DataRow(new[] { 1, 1, 1 }, 0)]
+    [DataRow(new[] { 0, 0, 1 }, 0)]
+    [DataRow(new[] { 1, 0, 0 }, 0)]
+    [DataRow(new[] { 0, 1, 0 }, 1)]
+    [DataRow(new[] { 1, 0, 1, 0, 0 }, 1)]
+    [DataRow(new[] { 0, 0, 1, 1, 0 }, 0)]
+    [DataRow(new[] { 1, 0, 0, 0, 1 }, 1)]
+    [DataRow(new[] { 0, 0, 0, 1, 0 }, 0)]
     public void MinSwaps_WithBinaryArray_ReturnsMinimumSwapsToGroupOnes(int[] nums, int expectedResult)
     {
         // Arrange

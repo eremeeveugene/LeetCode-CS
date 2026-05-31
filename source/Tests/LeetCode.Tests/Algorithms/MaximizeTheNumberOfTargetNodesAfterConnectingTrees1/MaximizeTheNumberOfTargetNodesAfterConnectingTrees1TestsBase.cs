@@ -34,5 +34,39 @@ public abstract class MaximizeTheNumberOfTargetNodesAfterConnectingTrees1TestsBa
         yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 2, 3 }, new[] { 2, 4 } }, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 }, new[] { 2, 7 }, new[] { 1, 4 }, new[] { 4, 5 }, new[] { 4, 6 } }, 2, new[] { 9, 7, 9, 8, 8 }];
 
         yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 }, new[] { 0, 4 } }, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 3 } }, 1, new[] { 6, 3, 3, 3, 3 }];
+
+        yield return [new[] { new[] { 0, 1 } }, new[] { new[] { 0, 1 } }, 0, new[] { 1, 1 }];
+
+        yield return [new[] { new[] { 0, 1 } }, new[] { new[] { 0, 1 } }, 1, new[] { 3, 3 }];
+
+        yield return [new[] { new[] { 0, 1 } }, new[] { new[] { 0, 1 } }, 2, new[] { 4, 4 }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 1, 2 } }, new[] { new[] { 0, 1 } }, 0, new[] { 1, 1, 1 }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 1, 2 } }, new[] { new[] { 0, 1 } }, 1, new[] { 3, 4, 3 }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 } }, new[] { new[] { 0, 1 } }, 0, new[] { 1, 1, 1, 1 }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 } }, new[] { new[] { 0, 1 } }, 1, new[] { 5, 3, 3, 3 }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 } }, new[] { new[] { 0, 1 } }, 2, new[] { 6, 6, 6, 6 }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 } }, new[] { new[] { 0, 1 } }, 0, new[] { 1, 1, 1 }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 } }, new[] { new[] { 0, 1 } }, 1, new[] { 4, 3, 3 }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 3 } }, new[] { new[] { 0, 1 } }, 1, new[] { 3, 4, 4, 3 }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 3 } }, new[] { new[] { 0, 1 } }, 2, new[] { 5, 6, 6, 5 }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 3 } }, new[] { new[] { 0, 1 }, new[] { 1, 2 } }, 1, new[] { 3, 4, 4, 3 }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 3 } }, new[] { new[] { 0, 1 }, new[] { 1, 2 } }, 2, new[] { 6, 7, 7, 6 }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 2, 3 }, new[] { 2, 4 } }, new[] { new[] { 0, 1 } }, 0, new[] { 1, 1, 1, 1, 1 }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 2, 3 }, new[] { 2, 4 } }, new[] { new[] { 0, 1 } }, 1, new[] { 4, 3, 5, 3, 3 }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 2, 3 }, new[] { 2, 4 } }, new[] { new[] { 0, 1 }, new[] { 0, 2 } }, 1, new[] { 4, 3, 5, 3, 3 }];
     }
 }

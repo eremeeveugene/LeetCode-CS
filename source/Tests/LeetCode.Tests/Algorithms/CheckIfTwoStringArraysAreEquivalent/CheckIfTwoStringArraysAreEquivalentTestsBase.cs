@@ -23,6 +23,19 @@ public abstract class CheckIfTwoStringArraysAreEquivalentTestsBase<T> where T : 
     [DataRow(new[] { "a", "b", "c" }, new[] { "abc" }, true)]
     [DataRow(new[] { "abc" }, new[] { "a", "b", "c" }, true)]
     [DataRow(new[] { "abc" }, new[] { "ab", "d" }, false)]
+    [DataRow(new[] { "a" }, new[] { "a" }, true)]
+    [DataRow(new[] { "a" }, new[] { "b" }, false)]
+    [DataRow(new[] { "" }, new[] { "" }, true)]
+    [DataRow(new[] { "abc" }, new[] { "abc" }, true)]
+    [DataRow(new[] { "abc" }, new[] { "abcd" }, false)]
+    [DataRow(new[] { "a", "b" }, new[] { "b", "a" }, false)]
+    [DataRow(new[] { "hello", "world" }, new[] { "helloworld" }, true)]
+    [DataRow(new[] { "hello", "world" }, new[] { "hello", "worl", "d" }, true)]
+    [DataRow(new[] { "x" }, new[] { "x" }, true)]
+    [DataRow(new[] { "z", "z" }, new[] { "zz" }, true)]
+    [DataRow(new[] { "ab", "cd" }, new[] { "abc" }, false)]
+    [DataRow(new[] { "foo", "bar" }, new[] { "fooba", "r" }, true)]
+    [DataRow(new[] { "ab", "cd", "ef" }, new[] { "abcde", "f" }, true)]
     public void ArrayStringsAreEqual_GivenTwoStringArrays_ReturnsBooleanIndicatingEquality(string[] word1, string[] word2, bool expectedResult)
     {
         // Arrange

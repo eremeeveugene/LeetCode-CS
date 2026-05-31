@@ -19,6 +19,23 @@ public abstract class CheckIfStringIsPrefixOfArrayTestsBase<T> where T : ICheckI
     [DataRow("iloveleetcode", new[] { "i", "love", "leetcode", "apples" }, true)]
     [DataRow("iloveleetcode", new[] { "apples", "i", "love", "leetcode" }, false)]
     [DataRow("a", new[] { "aa", "aaaa", "banana" }, false)]
+    [DataRow("a", new[] { "a", "b", "c" }, true)]
+    [DataRow("ab", new[] { "a", "b" }, true)]
+    [DataRow("abc", new[] { "abc" }, true)]
+    [DataRow("abc", new[] { "ab" }, false)]
+    [DataRow("hello", new[] { "he", "llo" }, true)]
+    [DataRow("hello", new[] { "hello", "world" }, true)]
+    [DataRow("helloworld", new[] { "hello", "world" }, true)]
+    [DataRow("helloworld", new[] { "hello", "worl" }, false)]
+    [DataRow("helloworld", new[] { "hello", "worldx" }, false)]
+    [DataRow("x", new[] { "x" }, true)]
+    [DataRow("xy", new[] { "x", "y", "z" }, true)]
+    [DataRow("foo", new[] { "foobar" }, false)]
+    [DataRow("foobar", new[] { "foo", "bar" }, true)]
+    [DataRow("test", new[] { "te", "st", "ing" }, true)]
+    [DataRow("testing", new[] { "te", "st", "ing" }, true)]
+    [DataRow("testingx", new[] { "te", "st", "ing" }, false)]
+    [DataRow("ab", new[] { "ab", "c" }, true)]
     public void IsPrefixString_WithGivenStringAndWordsArray_ReturnsWhetherStringIsPrefixConcatenation(string s, string[] words, bool expectedResult)
     {
         // Arrange

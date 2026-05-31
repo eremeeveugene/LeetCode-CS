@@ -44,5 +44,17 @@ public abstract class NaryTreePreorderTraversalTestsBase<T> where T : INaryTreeP
         yield return [new int?[] { 1, null, 2, null, 3, null, 4 }, new[] { 1, 2, 3, 4 }];
 
         yield return [new int?[] { 1, null, 2, 3, 4, null, 5, null, 6 }, new[] { 1, 2, 5, 3, 6, 4 }];
+
+        yield return [new int?[] { 5, null, 1, 2, 3 }, new[] { 5, 1, 2, 3 }];
+
+        yield return [new int?[] { 1, null, 2 }, new[] { 1, 2 }];
+
+        yield return [new int?[] { 10, null, 20, 30, 40 }, new[] { 10, 20, 30, 40 }];
+
+        yield return [new int?[] { 1, null, 2, null, 3 }, new[] { 1, 2, 3 }];
+
+        yield return [new int?[] { 7, null, 8, 9, null, 10 }, new[] { 7, 8, 10, 9 }];
+
+        yield return [new int?[] { 1, null, 2, 3, 4, 5 }, new[] { 1, 2, 3, 4, 5 }];
     }
 }

@@ -24,6 +24,25 @@ public abstract class DesignFrontMiddleBackQueueTestsBase<T> where T : IDesignFr
 
     [TestMethod]
     [DataRow(new[] { "pushFront", "pushBack", "pushMiddle", "pushMiddle", "popFront", "popMiddle", "popMiddle", "popBack", "popFront" }, new[] { 1, 2, 3, 4, 0, 0, 0, 0, 0 }, new[] { 1, 3, 4, 2, -1 })]
+    [DataRow(new[] { "popFront" }, new[] { 0 }, new[] { -1 })]
+    [DataRow(new[] { "popMiddle" }, new[] { 0 }, new[] { -1 })]
+    [DataRow(new[] { "popBack" }, new[] { 0 }, new[] { -1 })]
+    [DataRow(new[] { "pushFront", "popFront" }, new[] { 5, 0 }, new[] { 5 })]
+    [DataRow(new[] { "pushBack", "popBack" }, new[] { 7, 0 }, new[] { 7 })]
+    [DataRow(new[] { "pushMiddle", "popMiddle" }, new[] { 3, 0 }, new[] { 3 })]
+    [DataRow(new[] { "pushFront", "pushFront", "popFront", "popFront" }, new[] { 1, 2, 0, 0 }, new[] { 2, 1 })]
+    [DataRow(new[] { "pushBack", "pushBack", "popBack", "popBack" }, new[] { 1, 2, 0, 0 }, new[] { 2, 1 })]
+    [DataRow(new[] { "pushFront", "pushBack", "popMiddle" }, new[] { 1, 2, 0 }, new[] { 1 })]
+    [DataRow(new[] { "pushFront", "pushBack", "pushFront", "popMiddle" }, new[] { 1, 2, 3, 0 }, new[] { 1 })]
+    [DataRow(new[] { "pushMiddle", "pushMiddle", "popFront", "popFront" }, new[] { 1, 2, 0, 0 }, new[] { 2, 1 })]
+    [DataRow(new[] { "pushFront", "pushFront", "pushFront", "popMiddle", "popMiddle" }, new[] { 1, 2, 3, 0, 0 }, new[] { 2, 3 })]
+    [DataRow(new[] { "pushBack", "pushBack", "pushBack", "popMiddle", "popMiddle" }, new[] { 1, 2, 3, 0, 0 }, new[] { 2, 1 })]
+    [DataRow(new[] { "pushFront", "pushMiddle", "popFront", "popFront" }, new[] { 5, 10, 0, 0 }, new[] { 10, 5 })]
+    [DataRow(new[] { "pushFront", "pushBack", "pushMiddle", "popFront", "popMiddle", "popBack" }, new[] { 1, 3, 2, 0, 0, 0 }, new[] { 1, 2, 3 })]
+    [DataRow(new[] { "pushBack", "pushFront", "popMiddle" }, new[] { 2, 1, 0 }, new[] { 1 })]
+    [DataRow(new[] { "pushFront", "pushFront", "pushFront", "pushFront", "popFront", "popBack" }, new[] { 1, 2, 3, 4, 0, 0 }, new[] { 4, 1 })]
+    [DataRow(new[] { "pushMiddle", "pushMiddle", "pushMiddle", "popMiddle", "popMiddle", "popMiddle" }, new[] { 1, 2, 3, 0, 0, 0 }, new[] { 2, 3, 1 })]
+    [DataRow(new[] { "pushFront", "pushBack", "popBack", "popFront" }, new[] { 10, 20, 0, 0 }, new[] { 20, 10 })]
     public void DesignFrontMiddleBackQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(string[] operations, int[] arguments, int[] expectedResult)
     {
         // Arrange

@@ -23,6 +23,22 @@ public abstract class UsingRobotToPrintTheLexicographicallySmallestStringTestsBa
     [DataRow("bzeyxf", "befxyz")]
     [DataRow("vzhofnpo", "fnohopzv")]
     [DataRow("mmuqezwmomeplrtskz", "eekstrlpmomwzqummz")]
+    [DataRow("a", "a")]
+    [DataRow("z", "z")]
+    [DataRow("az", "az")]
+    [DataRow("za", "az")]
+    [DataRow("abc", "abc")]
+    [DataRow("cba", "abc")]
+    [DataRow("dcba", "abcd")]
+    [DataRow("aaaa", "aaaa")]
+    [DataRow("zzzz", "zzzz")]
+    [DataRow("azbz", "azbz")]
+    [DataRow("cbad", "abcd")]
+    [DataRow("edcba", "abcde")]
+    [DataRow("abcde", "abcde")]
+    [DataRow("zyxwv", "vwxyz")]
+    [DataRow("ba", "ab")]
+    [DataRow("cab", "abc")]
     public void RobotWithString_WithGivenString_ReturnsLexicographicallySmallestWrittenString(string s, string expectedResult)
     {
         // Arrange

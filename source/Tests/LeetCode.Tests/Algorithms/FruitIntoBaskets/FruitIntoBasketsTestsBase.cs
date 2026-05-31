@@ -19,6 +19,23 @@ public abstract class FruitIntoBasketsTestsBase<T> where T : IFruitIntoBaskets, 
     [DataRow(new[] { 1, 2, 1 }, 3)]
     [DataRow(new[] { 0, 1, 2, 2 }, 3)]
     [DataRow(new[] { 1, 2, 3, 2, 2 }, 4)]
+    [DataRow(new[] { 1 }, 1)]
+    [DataRow(new[] { 0 }, 1)]
+    [DataRow(new[] { 1, 1 }, 2)]
+    [DataRow(new[] { 1, 2 }, 2)]
+    [DataRow(new[] { 1, 1, 1, 1 }, 4)]
+    [DataRow(new[] { 1, 2, 1, 2 }, 4)]
+    [DataRow(new[] { 1, 2, 3 }, 2)]
+    [DataRow(new[] { 3, 3, 3, 1, 2, 1, 1, 2, 3, 3, 4 }, 5)]
+    [DataRow(new[] { 0, 0, 0, 0 }, 4)]
+    [DataRow(new[] { 0, 1, 0, 1, 0 }, 5)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 2)]
+    [DataRow(new[] { 1, 1, 2, 2, 3, 3 }, 4)]
+    [DataRow(new[] { 1, 2, 2, 3, 3 }, 4)]
+    [DataRow(new[] { 0, 1, 6, 6, 4, 4, 6 }, 5)]
+    [DataRow(new[] { 2, 2, 2 }, 3)]
+    [DataRow(new[] { 1, 0, 1, 4, 1, 4, 1, 2, 3 }, 5)]
+    [DataRow(new[] { 1, 2, 3, 2, 1, 2, 3 }, 4)]
     public void TotalFruit_WithTwoBasketLimit_ReturnsMaximumNumberOfFruitsCollected(int[] fruits, int expectedResult)
     {
         // Arrange
