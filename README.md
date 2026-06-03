@@ -559,6 +559,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2134. Minimum Swaps to Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/description/)
 - [2138. Divide a String Into Groups of Size k](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/description/)
 - [2140. Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/description/)
+- [2144. Minimum Cost of Buying Candies With Discount](https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/description/)
 - [2145. Count the Hidden Sequences](https://leetcode.com/problems/count-the-hidden-sequences/description/)
 - [2148. Count Elements With Strictly Smaller and Greater Elements](https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/description/)
 - [2154. Keep Multiplying Found Values by Two](https://leetcode.com/problems/keep-multiplying-found-values-by-two/description/)
