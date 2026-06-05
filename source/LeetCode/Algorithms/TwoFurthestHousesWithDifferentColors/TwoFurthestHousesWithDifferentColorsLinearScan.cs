@@ -28,7 +28,7 @@ public sealed class TwoFurthestHousesWithDifferentColorsLinearScan : ITwoFurthes
         var firstColor = colors[0];
         var lastColor = colors[^1];
 
-        for (var i = 0; i < n - 1; i++)
+        for (var i = 0; i < n; i++)
         {
             var color = colors[i];
 
