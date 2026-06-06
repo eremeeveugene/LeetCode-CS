@@ -9,18 +9,9 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.LeftAndRightSumDifferences;
+using LeetCode.Algorithms.LeftAndRightSumDifferences;
 
-/// <summary>
-///     https://leetcode.com/problems/left-and-right-sum-differences/description/
-/// </summary>
-public interface ILeftAndRightSumDifferences
-{
-    /// <summary>
-    ///     Returns an array where each element is the absolute difference between the sum of elements to the left and the
-    ///     sum of elements to the right of the corresponding index in <paramref name="nums" />.
-    /// </summary>
-    /// <param name="nums">A 0-indexed integer array.</param>
-    /// <returns>An array of absolute differences between left and right sums for each index in <paramref name="nums" />.</returns>
-    int[] LeftRightDifference(int[] nums);
-}
+namespace LeetCode.Tests.Algorithms.LeftAndRightSumDifferences;
+
+[TestClass]
+public sealed class LeftAndRightSumDifferencesPrefixSumOptimizedTests : LeftAndRightSumDifferencesTestsBase<LeftAndRightSumDifferencesPrefixSumOptimized>;

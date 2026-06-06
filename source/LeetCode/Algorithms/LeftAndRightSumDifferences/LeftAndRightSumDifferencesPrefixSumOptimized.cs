@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LeftAndRightSumDifferences;
 
 /// <inheritdoc />
-public sealed class LeftAndRightSumDifferencesPrefixSum : ILeftAndRightSumDifferences
+public sealed class LeftAndRightSumDifferencesPrefixSumOptimized : ILeftAndRightSumDifferences
 {
     /// <inheritdoc />
     /// <remarks>
@@ -21,25 +21,24 @@ public sealed class LeftAndRightSumDifferencesPrefixSum : ILeftAndRightSumDiffer
     /// </remarks>
     public int[] LeftRightDifference(int[] nums)
     {
-        var leftSum = new int[nums.Length];
+        var n = nums.Length;
 
-        for (var i = 0; i < nums.Length - 1; i++)
+        Span<int> leftSum = stackalloc int[n];
+
+        for (var i = 0; i < n - 1; i++)
         {
             leftSum[i + 1] = leftSum[i] + nums[i];
         }
 
-        var rightSum = new int[nums.Length];
+        var rightSum = 0;
 
-        for (var i = nums.Length - 1; i > 0; i--)
+        var result = new int[n];
+
+        for (var i = n - 1; i >= 0; i--)
         {
-            rightSum[i - 1] = rightSum[i] + nums[i];
-        }
+            result[i] = Math.Abs(leftSum[i] - rightSum);
 
-        var result = new int[nums.Length];
-
-        for (var i = 0; i < nums.Length; i++)
-        {
-            result[i] = Math.Abs(leftSum[i] - rightSum[i]);
+            rightSum += nums[i];
         }
 
         return result;
