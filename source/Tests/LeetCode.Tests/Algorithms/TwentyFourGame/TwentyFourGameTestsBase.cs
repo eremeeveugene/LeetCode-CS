@@ -19,7 +19,7 @@ public abstract class TwentyFourGameTestsBase<T> where T : ITwentyFourGame, new(
     [DataRow(new[] { 4, 1, 8, 7 }, true)]
     [DataRow(new[] { 1, 2, 1, 2 }, false)]
     [DataRow(new[] { 1, 3, 4, 6 }, true)]
-    [DataRow(new[] { 6, 6, 6, 6 }, false)]
+    [DataRow(new[] { 6, 6, 6, 6 }, true)]
     [DataRow(new[] { 1, 1, 1, 1 }, false)]
     [DataRow(new[] { 3, 3, 8, 8 }, true)]
     [DataRow(new[] { 1, 2, 3, 4 }, true)]
@@ -30,12 +30,12 @@ public abstract class TwentyFourGameTestsBase<T> where T : ITwentyFourGame, new(
     [DataRow(new[] { 1, 9, 1, 9 }, false)]
     [DataRow(new[] { 2, 3, 4, 4 }, true)]
     [DataRow(new[] { 1, 2, 8, 9 }, true)]
-    [DataRow(new[] { 2, 6, 6, 6 }, false)]
+    [DataRow(new[] { 2, 6, 6, 6 }, true)]
     [DataRow(new[] { 1, 1, 8, 3 }, true)]
-    [DataRow(new[] { 5, 5, 5, 1 }, false)]
+    [DataRow(new[] { 5, 5, 5, 1 }, true)]
     [DataRow(new[] { 6, 2, 3, 4 }, true)]
     [DataRow(new[] { 9, 9, 9, 9 }, false)]
-    [DataRow(new[] { 4, 6, 6, 6 }, false)]
+    [DataRow(new[] { 4, 6, 6, 6 }, true)]
     public void JudgePoint24_WithCardsArray_ReturnsTrueIfExpressionEvaluatesToTwentyFour(int[] cards, bool expectedResult)
     {
         // Arrange

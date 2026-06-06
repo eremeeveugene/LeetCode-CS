@@ -29,7 +29,7 @@ public abstract class SpecialArrayWithXElementsGreaterThanOrEqualXTestsBase<T> w
     [DataRow(new[] { 3, 3, 3 }, 3)]
     [DataRow(new[] { 1, 2, 3 }, 2)]
     [DataRow(new[] { 0, 0, 1 }, 1)]
-    [DataRow(new[] { 0, 3, 4, 5 }, -1)]
+    [DataRow(new[] { 0, 3, 4, 5 }, 3)]
     [DataRow(new[] { 1, 1, 1, 1 }, -1)]
     [DataRow(new[] { 4, 4, 4, 4 }, 4)]
     [DataRow(new[] { 0, 1, 2, 3 }, 2)]

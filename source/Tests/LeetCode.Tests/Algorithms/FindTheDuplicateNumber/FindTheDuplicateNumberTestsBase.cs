@@ -32,7 +32,7 @@ public abstract class FindTheDuplicateNumberTestsBase<T> where T : IFindTheDupli
     [DataRow(new[] { 6, 4, 3, 2, 1, 5, 1 }, 1)]
     [DataRow(new[] { 1, 2, 3, 4, 5, 3 }, 3)]
     [DataRow(new[] { 7, 9, 7, 4, 2, 8, 6, 1, 3, 5 }, 7)]
-    [DataRow(new[] { 2, 2 }, 2)]
+    [DataRow(new[] { 1, 2, 1 }, 1)]
     public void FindDuplicate_GivenArray_ReturnsFirstDuplicate(int[] nums, int expectedResult)
     {
         // Arrange

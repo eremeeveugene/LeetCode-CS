@@ -54,7 +54,7 @@ public abstract class CountUnguardedCellsInTheGridTestsBase<T> where T : ICountU
         yield return [2, 2, new[] { new[] { 0, 0 } }, new int[0][], 1];
 
         // 2x2 grid: guard at 0,0, wall at 0,1
-        yield return [2, 2, new[] { new[] { 0, 0 } }, new[] { new[] { 0, 1 } }, 2];
+        yield return [2, 2, new[] { new[] { 0, 0 } }, new[] { new[] { 0, 1 } }, 1];
 
         // 3x3 grid: guard at corner, no walls
         yield return [3, 3, new[] { new[] { 0, 0 } }, new int[0][], 4];
@@ -63,28 +63,28 @@ public abstract class CountUnguardedCellsInTheGridTestsBase<T> where T : ICountU
         yield return [3, 3, new int[0][], new int[0][], 9];
 
         // 3x3 grid: guard at center, no walls
-        yield return [3, 3, new[] { new[] { 1, 1 } }, new int[0][], 0];
+        yield return [3, 3, new[] { new[] { 1, 1 } }, new int[0][], 4];
 
         // 4x4 grid: guard at top-left, wall blocking
-        yield return [4, 4, new[] { new[] { 0, 0 } }, new[] { new[] { 0, 2 } }, 7];
+        yield return [4, 4, new[] { new[] { 0, 0 } }, new[] { new[] { 0, 2 } }, 10];
 
         // 2x5 grid: two guards at ends of row
-        yield return [2, 5, new[] { new[] { 0, 0 }, new[] { 0, 4 } }, new int[0][], 0];
+        yield return [2, 5, new[] { new[] { 0, 0 }, new[] { 0, 4 } }, new int[0][], 3];
 
         // 5x5 grid: four corner guards
-        yield return [5, 5, new[] { new[] { 0, 0 }, new[] { 0, 4 }, new[] { 4, 0 }, new[] { 4, 4 } }, new int[0][], 1];
+        yield return [5, 5, new[] { new[] { 0, 0 }, new[] { 0, 4 }, new[] { 4, 0 }, new[] { 4, 4 } }, new int[0][], 9];
 
         // 3x5 grid: guards and walls scenario
-        yield return [3, 5, new[] { new[] { 0, 2 } }, new[] { new[] { 1, 2 } }, 8];
+        yield return [3, 5, new[] { new[] { 0, 2 } }, new[] { new[] { 1, 2 } }, 9];
 
         // 5x1 grid: guard at center
         yield return [5, 1, new[] { new[] { 2, 0 } }, new int[0][], 0];
 
         // 4x4 grid: all cells guarded by two guards
-        yield return [4, 4, new[] { new[] { 0, 0 }, new[] { 3, 3 } }, new int[0][], 0];
+        yield return [4, 4, new[] { new[] { 0, 0 }, new[] { 3, 3 } }, new int[0][], 4];
 
         // 4x6 grid: guard blocked by wall, larger area
-        yield return [4, 6, new[] { new[] { 0, 3 } }, new[] { new[] { 2, 3 } }, 11];
+        yield return [4, 6, new[] { new[] { 0, 3 } }, new[] { new[] { 2, 3 } }, 16];
 
         // 2x2 grid: two guards cover all
         yield return [2, 2, new[] { new[] { 0, 0 }, new[] { 1, 1 } }, new int[0][], 0];

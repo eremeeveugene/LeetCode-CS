@@ -26,7 +26,7 @@ public abstract class TrionicArray1TestsBase<T> where T : ITrionicArray1, new()
     [DataRow(new[] { 1, 2, 3, 2, 3, 4 }, true)]
     [DataRow(new[] { 5, 6, 4, 5 }, true)]
     [DataRow(new[] { 1, 1, 2, 1, 2 }, false)]
-    [DataRow(new[] { 1, 2, 2, 1, 2 }, true)]
+    [DataRow(new[] { 1, 2, 2, 1, 2 }, false)]
     [DataRow(new[] { 1, 3, 2, 1, 2, 3 }, true)]
     [DataRow(new[] { 1 }, false)]
     [DataRow(new[] { 1, 2 }, false)]

@@ -28,12 +28,12 @@ public abstract class ContinuousSubarraysTestsBase<T> where T : IContinuousSubar
     [DataRow(new[] { 1, 2, 2, 1 }, 10L)]
     [DataRow(new[] { 0, 0, 0 }, 6L)]
     [DataRow(new[] { 1, 2, 3, 4, 5 }, 12L)]
-    [DataRow(new[] { 10, 8, 6 }, 3L)]
+    [DataRow(new[] { 10, 8, 6 }, 5L)]
     [DataRow(new[] { 2, 2 }, 3L)]
-    [DataRow(new[] { 1, 3, 5, 7 }, 5L)]
-    [DataRow(new[] { 5, 4, 3, 2, 1 }, 7L)]
+    [DataRow(new[] { 1, 3, 5, 7 }, 7L)]
+    [DataRow(new[] { 5, 4, 3, 2, 1 }, 12L)]
     [DataRow(new[] { 100, 100 }, 3L)]
-    [DataRow(new[] { 1, 2, 4, 8 }, 4L)]
+    [DataRow(new[] { 1, 2, 4, 8 }, 6L)]
     public void ContinuousSubarrays_GivenArrayOfIntegers_ReturnsCountOfValidSubarrays(int[] nums, long expectedResult)
     {
         // Arrange

@@ -31,7 +31,7 @@ public abstract class MaximumSumOfDistinctSubarraysWithLengthKTestsBase<T> where
     [DataRow("zzzz", 1)]
     [DataRow("ababab", 2)]
     [DataRow("abba", 2)]
-    [DataRow("azbzc", 3)]
+    [DataRow("azbzc", 4)]
     [DataRow("abcba", 3)]
     [DataRow("aab", 2)]
     public void MaxDistinct_WithStringContainingLowercaseLetters_ReturnsMaxSubstringsWithDistinctStartCharacters(string s, int expectedResult)

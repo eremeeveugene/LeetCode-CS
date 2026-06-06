@@ -54,7 +54,7 @@ public abstract class RangeSumOfBSTTestsBase<T> where T : IRangeSumOfBST, new()
 
         yield return [new int?[] { 10, 5, 15 }, 15, 15, 15];
 
-        yield return [new int?[] { 20, 10, 30, 5, 15, 25, 35 }, 10, 30, 80];
+        yield return [new int?[] { 20, 10, 30, 5, 15, 25, 35 }, 10, 30, 100];
 
         yield return [new int?[] { 20, 10, 30, 5, 15, 25, 35 }, 1, 4, 0];
 
@@ -64,9 +64,9 @@ public abstract class RangeSumOfBSTTestsBase<T> where T : IRangeSumOfBST, new()
 
         yield return [new int?[] { 3, 1, 5, null, 2, 4 }, 2, 4, 9];
 
-        yield return [new int?[] { 7, 3, 10, 1, 5, 8, 12 }, 4, 9, 13];
+        yield return [new int?[] { 7, 3, 10, 1, 5, 8, 12 }, 4, 9, 20];
 
-        yield return [new int?[] { 6, 2, 8, 0, 4, 7, 9, null, null, 3, 5 }, 3, 7, 26];
+        yield return [new int?[] { 6, 2, 8, 0, 4, 7, 9, null, null, 3, 5 }, 3, 7, 25];
 
         yield return [new int?[] { 50, 25, 75 }, 25, 75, 150];
     }

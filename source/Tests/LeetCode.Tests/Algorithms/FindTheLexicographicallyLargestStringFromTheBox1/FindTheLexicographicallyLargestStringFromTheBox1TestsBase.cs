@@ -32,7 +32,7 @@ public abstract class FindTheLexicographicallyLargestStringFromTheBox1TestsBase<
     [DataRow("aab", 2, "b")]
     [DataRow("azaz", 2, "zaz")]
     [DataRow("hello", 3, "o")]
-    [DataRow("azbzc", 3, "zbz")]
+    [DataRow("azbzc", 3, "zc")]
     [DataRow("dbca", 3, "db")]
     [DataRow("zyxw", 2, "zyx")]
     [DataRow("abcd", 4, "d")]

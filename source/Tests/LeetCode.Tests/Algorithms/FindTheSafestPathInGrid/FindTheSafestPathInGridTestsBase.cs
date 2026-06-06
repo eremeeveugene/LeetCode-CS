@@ -86,6 +86,6 @@ public abstract class FindTheSafestPathInGridTestsBase<T> where T : IFindTheSafe
         yield return [new IList<int>[] { new[] { 1, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 } }, 0];
 
         // 5x5 grid with multiple thieves
-        yield return [new IList<int>[] { new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 0, 0, 0, 0 } }, 2];
+        yield return [new IList<int>[] { new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 0, 0, 0, 0 } }, 1];
     }
 }

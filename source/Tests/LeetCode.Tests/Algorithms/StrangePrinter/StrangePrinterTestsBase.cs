@@ -24,7 +24,7 @@ public abstract class StrangePrinterTestsBase<T> where T : IStrangePrinter, new(
     [DataRow("aab", 2)]
     [DataRow("abc", 3)]
     [DataRow("abab", 3)]
-    [DataRow("abba", 3)]
+    [DataRow("abba", 2)]
     [DataRow("aaaa", 1)]
     [DataRow("abcd", 4)]
     [DataRow("abcba", 3)]

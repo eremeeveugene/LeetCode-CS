@@ -32,7 +32,7 @@ public abstract class UsingRobotToPrintTheLexicographicallySmallestStringTestsBa
     [DataRow("dcba", "abcd")]
     [DataRow("aaaa", "aaaa")]
     [DataRow("zzzz", "zzzz")]
-    [DataRow("azbz", "azbz")]
+    [DataRow("azbz", "abzz")]
     [DataRow("cbad", "abcd")]
     [DataRow("edcba", "abcde")]
     [DataRow("abcde", "abcde")]

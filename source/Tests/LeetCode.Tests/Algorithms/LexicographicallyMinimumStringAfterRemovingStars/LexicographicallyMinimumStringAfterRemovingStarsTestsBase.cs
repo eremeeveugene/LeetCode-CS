@@ -19,7 +19,7 @@ public abstract class LexicographicallyMinimumStringAfterRemovingStarsTestsBase<
     [DataRow("aaba*", "aab")]
     [DataRow("abc", "abc")]
     [DataRow("a*", "")]
-    [DataRow("a**", "")]
+    [DataRow("ab**", "")]
     [DataRow("ba*", "b")]
     [DataRow("cb*a", "ca")]
     [DataRow("z*", "")]

@@ -81,7 +81,7 @@ public abstract class ConstructBinaryTreeFromPreorderAndPostorderTraversalTestsB
         yield return [new[] { 100, 50, 200 }, new[] { 50, 200, 100 }, new int?[] { 100, 50, 200 }];
 
         // Left child has right child, right child has left child
-        yield return [new[] { 10, 5, 7, 15, 12 }, new[] { 7, 5, 12, 15, 10 }, new int?[] { 10, 5, 15, null, 7, 12 }];
+        yield return [new[] { 10, 5, 7, 15, 12 }, new[] { 7, 5, 12, 15, 10 }, new int?[] { 10, 5, 15, 7, null, 12 }];
 
         // Five node complete binary tree
         yield return [new[] { 1, 2, 4, 5, 3 }, new[] { 4, 5, 2, 3, 1 }, new int?[] { 1, 2, 3, 4, 5 }];

@@ -41,7 +41,7 @@ public abstract class MaximumNumberOfEventsThatCanBeAttendedTestsBase<T> where T
 
         yield return [new[] { new[] { 1, 1 }, new[] { 1, 1 } }, 1];
 
-        yield return [new[] { new[] { 1, 2 }, new[] { 1, 2 }, new[] { 1, 6 }, new[] { 1, 2 } }, 4];
+        yield return [new[] { new[] { 1, 2 }, new[] { 1, 2 }, new[] { 1, 6 }, new[] { 1, 2 } }, 3];
 
         yield return [new[] { new[] { 1, 4 }, new[] { 4, 4 }, new[] { 2, 2 }, new[] { 3, 4 }, new[] { 1, 1 } }, 4];
 

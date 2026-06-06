@@ -31,7 +31,7 @@ public abstract class FindKthBitInNthBinaryStringTestsBase<T> where T : IFindKth
     [DataRow(4, 15, '1')]
     [DataRow(4, 4, '1')]
     [DataRow(4, 5, '0')]
-    [DataRow(4, 9, '1')]
+    [DataRow(4, 9, '0')]
     [DataRow(4, 14, '0')]
     [DataRow(5, 1, '0')]
     [DataRow(5, 16, '1')]

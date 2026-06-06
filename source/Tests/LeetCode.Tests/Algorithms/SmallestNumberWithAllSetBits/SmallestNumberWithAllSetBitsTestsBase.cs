@@ -38,8 +38,8 @@ public abstract class SmallestNumberWithAllSetBitsTestsBase<T> where T : ISmalle
     [DataRow(511, 511)]
     [DataRow(512, 1023)]
     [DataRow(1023, 1023)]
-    [DataRow(1024, 1023)]
-    [DataRow(int.MaxValue, 1023)]
+    [DataRow(514, 1023)]
+    [DataRow(768, 1023)]
     public void SmallestNumber_WithPositiveNumberN_ReturnsSmallestNumberWithSetBits(int n, int expectedResult)
     {
         // Arrange

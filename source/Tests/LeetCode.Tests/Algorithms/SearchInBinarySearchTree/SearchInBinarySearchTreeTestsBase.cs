@@ -71,16 +71,16 @@ public abstract class SearchInBinarySearchTreeTestsBase<T> where T : ISearchInBi
         yield return [new int?[] { 10, 5, null, 2, null }, 7, Array.Empty<int?>()];
 
         // Right-skewed tree - search root
-        yield return [new int?[] { 1, null, 3, null, null, null, 5 }, 1, new int?[] { 1, null, 3, null, null, null, 5 }];
+        yield return [new int?[] { 1, null, 3, null, 5 }, 1, new int?[] { 1, null, 3, null, 5 }];
 
         // Right-skewed tree - search middle
-        yield return [new int?[] { 1, null, 3, null, null, null, 5 }, 3, new int?[] { 3, null, 5 }];
+        yield return [new int?[] { 1, null, 3, null, 5 }, 3, new int?[] { 3, null, 5 }];
 
         // Right-skewed tree - search leaf
-        yield return [new int?[] { 1, null, 3, null, null, null, 5 }, 5, new int?[] { 5 }];
+        yield return [new int?[] { 1, null, 3, null, 5 }, 5, new int?[] { 5 }];
 
         // Right-skewed tree - not found
-        yield return [new int?[] { 1, null, 3, null, null, null, 5 }, 4, Array.Empty<int?>()];
+        yield return [new int?[] { 1, null, 3, null, 5 }, 4, Array.Empty<int?>()];
 
         // Larger balanced BST - search for a subtree
         yield return [new int?[] { 8, 3, 10, 1, 6, null, 14, null, null, 4, 7 }, 3, new int?[] { 3, 1, 6, null, null, 4, 7 }];

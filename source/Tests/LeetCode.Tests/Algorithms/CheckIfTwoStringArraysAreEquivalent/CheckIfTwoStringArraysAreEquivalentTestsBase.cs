@@ -25,7 +25,7 @@ public abstract class CheckIfTwoStringArraysAreEquivalentTestsBase<T> where T : 
     [DataRow(new[] { "abc" }, new[] { "ab", "d" }, false)]
     [DataRow(new[] { "a" }, new[] { "a" }, true)]
     [DataRow(new[] { "a" }, new[] { "b" }, false)]
-    [DataRow(new[] { "" }, new[] { "" }, true)]
+    [DataRow(new[] { "ab" }, new[] { "ab" }, true)]
     [DataRow(new[] { "abc" }, new[] { "abc" }, true)]
     [DataRow(new[] { "abc" }, new[] { "abcd" }, false)]
     [DataRow(new[] { "a", "b" }, new[] { "b", "a" }, false)]

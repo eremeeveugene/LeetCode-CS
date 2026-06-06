@@ -30,7 +30,7 @@ public abstract class ValidTriangleNumberTestsBase<T> where T : IValidTriangleNu
     [DataRow(new[] { 7, 7, 7, 7 }, 4)]
     [DataRow(new[] { 1, 1, 1, 1 }, 4)]
     [DataRow(new[] { 3, 3, 3, 3 }, 4)]
-    [DataRow(new[] { 6, 8, 10, 5 }, 3)]
+    [DataRow(new[] { 6, 8, 10, 5 }, 4)]
     [DataRow(new[] { 1, 2, 3, 4, 5 }, 3)]
     [DataRow(new[] { 10, 10, 10, 10 }, 4)]
     [DataRow(new[] { 0, 1, 1 }, 0)]

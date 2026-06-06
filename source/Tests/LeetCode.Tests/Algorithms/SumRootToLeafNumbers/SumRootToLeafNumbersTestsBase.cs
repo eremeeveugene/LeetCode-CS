@@ -52,7 +52,7 @@ public abstract class SumRootToLeafNumbersTestsBase<T> where T : ISumRootToLeafN
 
         yield return [new int?[] { 1, null, 2 }, 12];
 
-        yield return [new int?[] { 1, null, 2, null, null, null, 3 }, 123];
+        yield return [new int?[] { 1, null, 2, null, 3 }, 123];
 
         yield return [new int?[] { 5, 3, 7 }, 110];
 

@@ -33,9 +33,9 @@ public abstract class StudentAttendanceRecord1TestsBase<T> where T : IStudentAtt
     [DataRow("PLLL", false)]
     [DataRow("APLLL", false)]
     [DataRow("PPPPLL", true)]
-    [DataRow("PPLPLL", false)]
+    [DataRow("PPLPLL", true)]
     [DataRow("PPPLLP", true)]
-    [DataRow("PLLPLL", false)]
+    [DataRow("PLLPLL", true)]
     public void CheckRecord_WithAttendanceString_ReturnsTrueIfEligible(string s, bool expectedResult)
     {
         // Arrange

@@ -26,7 +26,7 @@ public abstract class MakeStringSubsequenceUsingCyclicIncrementsTestsBase<T> whe
     [DataRow("a", "c", false)]
     [DataRow("abc", "abc", true)]
     [DataRow("aaa", "b", true)]
-    [DataRow("aaa", "bbb", false)]
+    [DataRow("aaa", "bbb", true)]
     [DataRow("xyz", "yza", true)]
     [DataRow("abcde", "bdf", true)]
     [DataRow("abcde", "ace", true)]

@@ -29,7 +29,7 @@ public abstract class CountPrefixAndSuffixPairs1TestsBase<T> where T : ICountPre
     [DataRow(new[] { "x", "x", "x", "x" }, 6)]
     [DataRow(new[] { "ab", "cdab" }, 0)]
     [DataRow(new[] { "a", "aa", "aaa" }, 3)]
-    [DataRow(new[] { "ab", "aab", "aaab" }, 3)]
+    [DataRow(new[] { "ab", "aab", "aaab" }, 0)]
     [DataRow(new[] { "aa", "aaaa" }, 1)]
     [DataRow(new[] { "abc", "abcabc" }, 1)]
     [DataRow(new[] { "ab", "ab", "ab", "ab" }, 6)]

@@ -21,7 +21,7 @@ public abstract class TwoSum2InputArrayIsSortedTestsBase<T> where T : ITwoSum2In
     [DataRow(new[] { -1, 0 }, -1, new[] { 1, 2 })]
     [DataRow(new[] { 1, 2 }, 3, new[] { 1, 2 })]
     [DataRow(new[] { 0, 0 }, 0, new[] { 1, 2 })]
-    [DataRow(new[] { -3, -1, 0, 2, 4 }, 1, new[] { 2, 4 })]
+    [DataRow(new[] { -3, -1, 0, 2, 4 }, 2, new[] { 3, 4 })]
     [DataRow(new[] { -10, -3, 0, 5, 9 }, 2, new[] { 2, 4 })]
     [DataRow(new[] { 1, 3, 5, 7, 9 }, 8, new[] { 1, 4 })]
     [DataRow(new[] { 1, 3, 5, 7, 9 }, 10, new[] { 1, 5 })]
