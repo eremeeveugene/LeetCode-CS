@@ -34,6 +34,8 @@ public abstract class DividePlayersIntoTeamsOfEqualSkillTestsBase<T> where T : I
     [DataRow(new[] { 5, 1, 4, 2 }, 13L)]
     [DataRow(new[] { 1000, 1000 }, 1000000L)]
     [DataRow(new[] { 1, 1000, 2, 999 }, 2998L)]
+    [DataRow(new[] { 1, 4, 5, 6 }, -1L)]
+    [DataRow(new[] { 1, 2, 3, 6 }, -1L)]
     public void DividePlayers_WithSkillArray_ReturnsTotalSkillSum(int[] skill, long expectedResult)
     {
         // Arrange

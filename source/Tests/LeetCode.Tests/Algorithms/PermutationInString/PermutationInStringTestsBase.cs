@@ -36,6 +36,8 @@ public abstract class PermutationInStringTestsBase<T> where T : IPermutationInSt
     [DataRow("zz", "zzz", true)]
     [DataRow("zz", "zaz", false)]
     [DataRow("abc", "aabbcc", false)]
+    [DataRow("abc", "ab", false)]
+    [DataRow("hello", "hi", false)]
     public void CheckInclusion_WithTwoStrings_ReturnsTrueIfFirstIsPermutationOfSecond(string s1, string s2, bool expectedResult)
     {
         // Arrange

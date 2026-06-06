@@ -37,5 +37,45 @@ public abstract class KthLargestSumInBinaryTreeTestsBase<T> where T : IKthLarges
         yield return [new int?[] { 5, 8, 9, 2, 1, 3, 7, 4, 6 }, 2, 13L];
 
         yield return [new int?[] { 1, 2, null, 3 }, 1, 3L];
+
+        yield return [new int?[] { 1, 2, null, 3 }, 2, 2L];
+
+        yield return [new int?[] { 1, 2, null, 3 }, 3, 1L];
+
+        yield return [new int?[] { 1 }, 1, 1L];
+
+        yield return [new int?[] { 1 }, 2, -1L];
+
+        yield return [new int?[] { 1, 2, 3 }, 1, 5L];
+
+        yield return [new int?[] { 1, 2, 3 }, 2, 1L];
+
+        yield return [new int?[] { 1, 2, 3 }, 3, -1L];
+
+        yield return [new int?[] { 5, 8, 9, 2, 1, 3, 7, 4, 6 }, 1, 17L];
+
+        yield return [new int?[] { 5, 8, 9, 2, 1, 3, 7, 4, 6 }, 3, 10L];
+
+        yield return [new int?[] { 5, 8, 9, 2, 1, 3, 7, 4, 6 }, 4, 5L];
+
+        yield return [new int?[] { 5, 8, 9, 2, 1, 3, 7, 4, 6 }, 5, -1L];
+
+        yield return [new int?[] { 10, 20, 30 }, 1, 50L];
+
+        yield return [new int?[] { 10, 20, 30 }, 2, 10L];
+
+        yield return [new int?[] { 100 }, 1, 100L];
+
+        yield return [new int?[] { -1, -2, -3 }, 1, -1L];
+
+        yield return [new int?[] { -1, -2, -3 }, 2, -5L];
+
+        yield return [new int?[] { 0, 0, 0, 0, 0, 0, 0 }, 1, 0L];
+
+        yield return [new int?[] { 0, 0, 0, 0, 0, 0, 0 }, 3, 0L];
+
+        yield return [new int?[] { 1, null, 2, null, 3, null, 4 }, 4, 1L];
+
+        yield return [new int?[] { 1, null, 2, null, 3, null, 4 }, 5, -1L];
     }
 }

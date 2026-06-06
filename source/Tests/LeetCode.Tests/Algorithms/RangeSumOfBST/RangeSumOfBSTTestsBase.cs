@@ -69,5 +69,9 @@ public abstract class RangeSumOfBSTTestsBase<T> where T : IRangeSumOfBST, new()
         yield return [new int?[] { 6, 2, 8, 0, 4, 7, 9, null, null, 3, 5 }, 3, 7, 25];
 
         yield return [new int?[] { 50, 25, 75 }, 25, 75, 150];
+
+        yield return [new int?[] { null }, 1, 10, 0];
+
+        yield return [Array.Empty<int?>(), 1, 10, 0];
     }
 }

@@ -71,5 +71,7 @@ public abstract class CheckIfThereIsValidPathInGridTestsBase<T> where T : ICheck
         yield return [new int[][] { [4, 3], [5, 6], [4, 3] }, false];
         yield return [new int[][] { [4, 1, 1, 1, 3], [2, 0, 0, 0, 2], [6, 1, 1, 1, 5] }, true];
         yield return [new int[][] { [4, 3, 0], [6, 5, 0] }, false];
+        yield return [new int[][] { [4, 0, 3], [6, 0, 5] }, false];
+        yield return [new int[][] { [0, 0], [0, 0] }, false];
     }
 }

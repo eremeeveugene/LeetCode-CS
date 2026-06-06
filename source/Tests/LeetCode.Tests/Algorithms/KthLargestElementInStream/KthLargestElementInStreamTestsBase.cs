@@ -53,6 +53,8 @@ public abstract class KthLargestElementInStreamTestsBase
         yield return [new KthLargestScenario(1, [1], [new AddOperation(2), new AddOperation(3), new AddOperation(1)], [new AddOperation.Result(2), new AddOperation.Result(3), new AddOperation.Result(3)])];
 
         yield return [new KthLargestScenario(2, [5, 10], [new AddOperation(1), new AddOperation(2), new AddOperation(20)], [new AddOperation.Result(5), new AddOperation.Result(5), new AddOperation.Result(10)])];
+
+        yield return [new KthLargestScenario(1, [], [new AddOperation(3), new AddOperation(5), new AddOperation(2)], [new AddOperation.Result(3), new AddOperation.Result(5), new AddOperation.Result(5)])];
     }
 
     public sealed class KthLargestScenario : IScenario<IKthLargestElementInStream>

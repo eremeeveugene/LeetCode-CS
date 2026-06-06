@@ -35,6 +35,9 @@ public abstract class RemoveZeroSumConsecutiveNodesFromLinkedListTestsBase<T> wh
     [DataRow(new[] { 2, -2, 2, -2, 2 }, new[] { 2 })]
     [DataRow(new[] { 1, 3, 2, -3, -2, 1 }, new[] { 1, 1 })]
     [DataRow(new[] { 6, -6, 6 }, new[] { 6 })]
+    [DataRow(new int[] { }, new int[] { })]
+    [DataRow(new[] { 0 }, new int[] { })]
+    [DataRow(new[] { 4, -4 }, new int[] { })]
     public void RemoveZeroSumSublists_WithListContainingZeroSumSequences_ReturnsListWithZeroSumSublistsRemoved(int[] headArray, int[] expectedResultArray)
     {
         // Arrange

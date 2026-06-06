@@ -38,5 +38,8 @@ public abstract class CreateBinaryTreeFromDescriptionsTestsBase<T> where T : ICr
         yield return [new[] { new[] { 20, 15, 1 }, new[] { 20, 17, 0 }, new[] { 50, 20, 1 }, new[] { 50, 80, 0 }, new[] { 80, 19, 1 } }, new int?[] { 50, 20, 80, 15, 17, 19 }];
 
         yield return [new[] { new[] { 1, 2, 1 }, new[] { 2, 3, 0 }, new[] { 3, 4, 1 } }, new int?[] { 1, 2, null, null, 3, 4 }];
+
+        // Empty descriptions yields null tree, exercising the fallback return path.
+        yield return [new int[0][], new int?[0]];
     }
 }

@@ -26,6 +26,21 @@ public abstract class LinkedListCycleTestsBase<T> where T : ILinkedListCycle, ne
     [DataRow(new[] { 1, 1, 1, 1, 1 }, 0, true)]
     [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, 2, true)]
     [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 0, true)]
+    [DataRow(new[] { 1, 2 }, -1, false)]
+    [DataRow(new[] { 1, 2, 3 }, -1, false)]
+    [DataRow(new[] { 1, 2, 3 }, 0, true)]
+    [DataRow(new[] { 1, 2, 3 }, 1, true)]
+    [DataRow(new[] { 1, 2, 3 }, 2, true)]
+    [DataRow(new[] { 1, 2, 3, 4 }, -1, false)]
+    [DataRow(new[] { 1, 2, 3, 4 }, 0, true)]
+    [DataRow(new[] { 1, 2, 3, 4 }, 3, true)]
+    [DataRow(new[] { 5, 5 }, -1, false)]
+    [DataRow(new[] { 5, 5 }, 1, true)]
+    [DataRow(new[] { 0 }, 0, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6 }, -1, false)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6 }, 3, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7 }, -1, false)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7 }, 6, true)]
     public void HasCycle_WithLinkedListAndCyclePosition_ReturnsWhetherCycleExists(int[] headArray, int pos, bool expectedResult)
     {
         // Arrange

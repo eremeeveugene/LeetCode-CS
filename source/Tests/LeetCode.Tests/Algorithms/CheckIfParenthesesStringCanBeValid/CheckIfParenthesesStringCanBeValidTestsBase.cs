@@ -36,6 +36,9 @@ public abstract class CheckIfParenthesesStringCanBeValidTestsBase<T> where T : I
     [DataRow("()()()", "000000", true)]
     [DataRow("((()))", "000000", true)]
     [DataRow("(()())", "111111", true)]
+    [DataRow("))", "11", false)]
+    [DataRow(")(", "11", false)]
+    [DataRow(")()(", "1111", false)]
     public void CanBeValid_WithStringAndLocked_ReturnsWhetherParenthesesCanBeValid(string s, string locked, bool expectedResult)
     {
         // Arrange

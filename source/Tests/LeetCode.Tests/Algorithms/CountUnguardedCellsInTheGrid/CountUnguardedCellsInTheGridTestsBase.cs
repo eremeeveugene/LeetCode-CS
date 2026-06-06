@@ -88,5 +88,8 @@ public abstract class CountUnguardedCellsInTheGridTestsBase<T> where T : ICountU
 
         // 2x2 grid: two guards cover all
         yield return [2, 2, new[] { new[] { 0, 0 }, new[] { 1, 1 } }, new int[0][], 0];
+
+        // 3x3 grid: guards at (0,2) and (2,0), second guard's right path crosses first guard's down marks
+        yield return [3, 3, new[] { new[] { 0, 2 }, new[] { 2, 0 } }, new int[0][], 1];
     }
 }

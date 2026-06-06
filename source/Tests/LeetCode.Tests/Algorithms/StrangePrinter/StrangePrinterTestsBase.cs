@@ -36,6 +36,7 @@ public abstract class StrangePrinterTestsBase<T> where T : IStrangePrinter, new(
     [DataRow("zz", 1)]
     [DataRow("aabbcc", 3)]
     [DataRow("abcbca", 4)]
+    [DataRow("", 0)]
     public void StrangePrinter_GivenString_ReturnsMinimumPrints(string s, int expectedResult)
     {
         // Arrange

@@ -36,6 +36,8 @@ public abstract class SmallestMissingMultipleOfKTestsBase<T> where T : ISmallest
     [DataRow(new[] { 4, 8 }, 4, 12)]
     [DataRow(new[] { 9, 18, 27 }, 9, 36)]
     [DataRow(new[] { 11, 22, 33, 44 }, 11, 55)]
+    [DataRow(new[] { 60 }, 60, 120)]
+    [DataRow(new[] { 1 }, 60, 60)]
     public void MissingMultiple_WithArrayAndMultipleK_ReturnsSmallestMissingPositiveMultipleOfK(int[] nums, int k, int expectedResult)
     {
         // Arrange
