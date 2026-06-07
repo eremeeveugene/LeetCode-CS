@@ -24,6 +24,18 @@ public abstract class CheckIfArrayPairsAreDivisibleByKTestsBase<T> where T : ICh
     [DataRow(new[] { 987654321, -987654321, 765432100, -765432100 }, 99999, true)]
     [DataRow(new[] { -1, 0, -2, 2, -3, 3 }, 4, false)]
     [DataRow(new[] { -2, -4, -9, -3, -1, -17 }, 6, true)]
+    [DataRow(new[] { 2, 2 }, 4, true)]
+    [DataRow(new[] { 1, 3 }, 4, true)]
+    [DataRow(new[] { 1, 2 }, 3, true)]
+    [DataRow(new[] { 1, 1 }, 2, true)]
+    [DataRow(new[] { 3, 1 }, 2, true)]
+    [DataRow(new[] { 0, 0 }, 1, true)]
+    [DataRow(new[] { 4, 5, 6, 7 }, 5, false)]
+    [DataRow(new[] { -5, 5, -10, 10 }, 5, true)]
+    [DataRow(new[] { 1, 2, 3, 4 }, 2, true)]
+    [DataRow(new[] { 2, 4, 6, 8 }, 2, true)]
+    [DataRow(new[] { 10, 20, 30, 40 }, 10, true)]
+    [DataRow(new[] { 7, 3, 5, 15 }, 10, true)]
     public void CanArrange_WithArrayAndDivisor_ReturnsIfPairsCanBeArranged(int[] arr, int k, bool expectedResult)
     {
         // Arrange

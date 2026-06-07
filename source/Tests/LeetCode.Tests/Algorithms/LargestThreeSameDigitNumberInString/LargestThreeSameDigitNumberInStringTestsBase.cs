@@ -21,6 +21,21 @@ public abstract class LargestThreeSameDigitNumberInStringTestsBase<T> where T : 
     [DataRow("6777133339", "777")]
     [DataRow("2300019", "000")]
     [DataRow("42352338", "")]
+    [DataRow("000", "000")]
+    [DataRow("999", "999")]
+    [DataRow("111", "111")]
+    [DataRow("1112", "111")]
+    [DataRow("9990000", "999")]
+    [DataRow("0001112223334445556667778889990000", "999")]
+    [DataRow("12345678901234567890", "")]
+    [DataRow("11122233344", "333")]
+    [DataRow("555444333", "555")]
+    [DataRow("100011", "000")]
+    [DataRow("9999", "999")]
+    [DataRow("8882228889", "888")]
+    [DataRow("1234555", "555")]
+    [DataRow("77700088", "777")]
+    [DataRow("11199988", "999")]
     public void LargestGoodInteger_WithTripleRepeatingDigitSubstring_ReturnsMaximumGoodIntegerOrEmptyString(string num, string expectedResult)
     {
         // Arrange

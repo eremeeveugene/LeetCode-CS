@@ -20,6 +20,23 @@ public abstract class FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints
     [DataRow(new[] { 3, 1 }, new[] { -1, -1 })]
     [DataRow(new[] { 5, 3, 1, 2, 5, 1, 2 }, new[] { 1, 3 })]
     [DataRow(new[] { 1, 3, 2, 2, 3, 2, 2, 2, 7 }, new[] { 3, 3 })]
+    [DataRow(new[] { 1 }, new[] { -1, -1 })]
+    [DataRow(new[] { 1, 2 }, new[] { -1, -1 })]
+    [DataRow(new[] { 1, 2, 3 }, new[] { -1, -1 })]
+    [DataRow(new[] { 1, 3, 1 }, new[] { -1, -1 })]
+    [DataRow(new[] { 3, 1, 3 }, new[] { -1, -1 })]
+    [DataRow(new[] { 1, 3, 1, 3, 1 }, new[] { 1, 2 })]
+    [DataRow(new[] { 1, 2, 3, 2, 1, 2, 3 }, new[] { 2, 2 })]
+    [DataRow(new[] { 5, 1, 2, 3, 4, 5 }, new[] { -1, -1 })]
+    [DataRow(new[] { 1, 2, 3, 4, 3, 2, 1 }, new[] { -1, -1 })]
+    [DataRow(new[] { 3, 1, 2, 3, 2, 1, 3 }, new[] { 2, 4 })]
+    [DataRow(new[] { 1, 2, 1, 2, 1, 2, 1 }, new[] { 1, 4 })]
+    [DataRow(new[] { 7, 3, 7, 3, 7, 3, 7 }, new[] { 1, 4 })]
+    [DataRow(new[] { 1, 2, 3, 2, 3, 2, 3, 2, 1 }, new[] { 1, 4 })]
+    [DataRow(new[] { 2, 1, 3, 1, 3, 1, 2 }, new[] { 1, 4 })]
+    [DataRow(new[] { 1, 2, 3, 1, 2, 3, 1, 2, 3 }, new[] { 1, 4 })]
+    [DataRow(new[] { 4, 2, 4, 2, 4, 2, 4 }, new[] { 1, 4 })]
+    [DataRow(new[] { 1, 3, 2, 3, 2, 3, 1 }, new[] { 1, 4 })]
     public void NodesBetweenCriticalPoints_WithLinkedListInput_ReturnsMinAndMaxDistanceBetweenCriticalPoints(int[] headArray, int[] expectedResult)
     {
         // Arrange

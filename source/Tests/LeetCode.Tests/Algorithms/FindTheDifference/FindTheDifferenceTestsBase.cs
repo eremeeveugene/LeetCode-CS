@@ -19,6 +19,20 @@ public abstract class FindTheDifferenceTestsBase<T> where T : IFindTheDifference
     [DataRow("abcd", "abcde", 'e')]
     [DataRow("", "y", 'y')]
     [DataRow("a", "aa", 'a')]
+    [DataRow("ae", "aea", 'a')]
+    [DataRow("xyz", "xyzz", 'z')]
+    [DataRow("abc", "abcd", 'd')]
+    [DataRow("aab", "aabb", 'b')]
+    [DataRow("zz", "zzz", 'z')]
+    [DataRow("abcde", "abcdef", 'f')]
+    [DataRow("abcde", "aabcde", 'a')]
+    [DataRow("b", "bb", 'b')]
+    [DataRow("ba", "bba", 'b')]
+    [DataRow("mn", "mno", 'o')]
+    [DataRow("hello", "hellox", 'x')]
+    [DataRow("world", "wworld", 'w')]
+    [DataRow("aaa", "aaaa", 'a')]
+    [DataRow("cd", "cde", 'e')]
     public void FindTheDifference_WithTwoStrings_ReturnsExtraCharacter(string s, string t, char expectedResult)
     {
         // Arrange

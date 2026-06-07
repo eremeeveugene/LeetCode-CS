@@ -19,6 +19,21 @@ public abstract class ConstructKPalindromeStringsTestsBase<T> where T : IConstru
     [DataRow("annabelle", 2, true)]
     [DataRow("leetcode", 3, false)]
     [DataRow("true", 4, true)]
+    [DataRow("a", 1, true)]
+    [DataRow("a", 2, false)]
+    [DataRow("aa", 1, true)]
+    [DataRow("aa", 2, true)]
+    [DataRow("aab", 1, true)]
+    [DataRow("aab", 2, true)]
+    [DataRow("aab", 3, true)]
+    [DataRow("abc", 1, false)]
+    [DataRow("abc", 2, false)]
+    [DataRow("abc", 3, true)]
+    [DataRow("aabb", 2, true)]
+    [DataRow("aabbc", 3, true)]
+    [DataRow("abcde", 5, true)]
+    [DataRow("abcde", 4, false)]
+    [DataRow("aaaa", 2, true)]
     public void CanConstruct_GivenStringAndK_ReturnsIfKPalindromesCanBeFormed(string s, int k, bool expectedResult)
     {
         // Arrange

@@ -18,6 +18,22 @@ public abstract class CountElementsWithStrictlySmallerAndGreaterElementsTestsBas
     [TestMethod]
     [DataRow(new[] { 11, 7, 2, 15 }, 2)]
     [DataRow(new[] { -3, 3, 3, 90 }, 2)]
+    [DataRow(new[] { 1, 2 }, 0)]
+    [DataRow(new[] { 1, 1, 1 }, 0)]
+    [DataRow(new[] { 1, 2, 3 }, 1)]
+    [DataRow(new[] { 1, 2, 2, 3 }, 2)]
+    [DataRow(new[] { -10, 0, 10 }, 1)]
+    [DataRow(new[] { -5, -3, -1 }, 1)]
+    [DataRow(new[] { 0, 0, 0, 0 }, 0)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 3)]
+    [DataRow(new[] { 5, 5, 5 }, 0)]
+    [DataRow(new[] { 1, 100 }, 0)]
+    [DataRow(new[] { 1, 3, 3, 3, 5 }, 3)]
+    [DataRow(new[] { -100, 0, 100 }, 1)]
+    [DataRow(new[] { 1, 2, 3, 3, 4 }, 3)]
+    [DataRow(new[] { 10, 20, 30, 40 }, 2)]
+    [DataRow(new[] { 2, 2, 3, 4 }, 1)]
+    [DataRow(new[] { 1, 3, 4, 4 }, 1)]
     public void CountElements_GivenArray_ReturnsCountOfElementsMatchingCriteria(int[] nums, int expectedResult)
     {
         // Arrange

@@ -31,6 +31,12 @@ public abstract class PartitionArrayIntoThreePartsWithEqualSumTestsBase<T> where
     [DataRow(new[] { 1, 2, 3, 4, 5, 6 }, false)]
     [DataRow(new[] { -3, 3, -3, 3, -3, 3 }, true)]
     [DataRow(new[] { 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1 }, true)]
+    [DataRow(new[] { 0, 0, 0 }, true)]
+    [DataRow(new[] { 1, 0, 1, 0, 1, 0 }, true)]
+    [DataRow(new[] { 10, -10, 10, -10, 10, -10, 10, -10 }, true)]
+    [DataRow(new[] { 2, 4, 2, 4, 2, 4 }, true)]
+    [DataRow(new[] { 3, 0, 3, 0, 3 }, true)]
+    [DataRow(new[] { 1, 1, -2 }, false)]
     public void CanThreePartsEqualSum_WithIntegerArray_ReturnsTrueIfArrayCanBeSplitIntoThreeEqualSumParts(int[] arr, bool expectedResult)
     {
         // Arrange

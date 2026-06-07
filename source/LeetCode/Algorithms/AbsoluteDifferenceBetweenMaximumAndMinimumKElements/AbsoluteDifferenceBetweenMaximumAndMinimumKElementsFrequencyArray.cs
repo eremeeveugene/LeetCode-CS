@@ -14,19 +14,16 @@ namespace LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElement
 /// <inheritdoc />
 public sealed class AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray : IAbsoluteDifferenceBetweenMaximumAndMinimumKElements
 {
+    /// <summary>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <param name="k"></param>
+    /// <returns></returns>
     public int AbsDifference(int[] nums, int k)
     {
-        var maxNum = 0;
-
-        for (var i = 0; i < nums.Length; i++)
-        {
-            if (nums[i] > maxNum)
-            {
-                maxNum = nums[i];
-            }
-        }
-
-        Span<int> numFrequencies = stackalloc int[maxNum];
+        Span<int> numFrequencies = stackalloc int[100];
 
         for (var i = 0; i < nums.Length; i++)
         {

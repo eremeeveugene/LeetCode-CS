@@ -21,6 +21,20 @@ public abstract class MergeNodesInBetweenZerosTestsBase<T> where T : IMergeNodes
     [DataRow(new[] { 0, 3, 1, 0, 4, 5, 2, 0 }, new[] { 4, 11 })]
     [DataRow(new[] { 0, 1, 0, 3, 0, 2, 2, 0 }, new[] { 1, 3, 4 })]
     [DataRow(new[] { 0, 200, 300, 0, 400, 500, 0 }, new[] { 500, 900 })]
+    [DataRow(new[] { 0, 1, 0 }, new[] { 1 })]
+    [DataRow(new[] { 0, 1000000, 0 }, new[] { 1000000 })]
+    [DataRow(new[] { 0, 1, 2, 3, 0 }, new[] { 6 })]
+    [DataRow(new[] { 0, 5, 0, 5, 0 }, new[] { 5, 5 })]
+    [DataRow(new[] { 0, 1, 0, 2, 0, 3, 0 }, new[] { 1, 2, 3 })]
+    [DataRow(new[] { 0, 100, 200, 300, 0 }, new[] { 600 })]
+    [DataRow(new[] { 0, 7, 0, 3, 0 }, new[] { 7, 3 })]
+    [DataRow(new[] { 0, 1, 1, 1, 0 }, new[] { 3 })]
+    [DataRow(new[] { 0, 999999, 1, 0 }, new[] { 1000000 })]
+    [DataRow(new[] { 0, 10, 20, 0, 30, 0 }, new[] { 30, 30 })]
+    [DataRow(new[] { 0, 0, 5, 0 }, new[] { 0, 5 })]
+    [DataRow(new[] { 0, 1, 0, 1, 0, 1, 0 }, new[] { 1, 1, 1 })]
+    [DataRow(new[] { 0, 50, 50, 0, 100, 0 }, new[] { 100, 100 })]
+    [DataRow(new[] { 0, 2, 4, 6, 0, 1, 3, 5, 0 }, new[] { 12, 9 })]
     public void MergeNodes_WithZeroDelimitedValues_ReturnsListWithSegmentSums(int[] headArray, int[] expectedResultArray)
     {
         // Arrange

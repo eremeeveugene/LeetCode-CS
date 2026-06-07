@@ -21,6 +21,21 @@ public abstract class BuddyStringsTestsBase<T> where T : IBuddyStrings, new()
     [DataRow("aa", "aa", true)]
     [DataRow("abcaa", "abcbb", false)]
     [DataRow("abcd", "abcde", false)]
+    [DataRow("a", "a", false)]
+    [DataRow("ab", "aa", false)]
+    [DataRow("ba", "ab", true)]
+    [DataRow("aab", "aab", true)]
+    [DataRow("abc", "abc", false)]
+    [DataRow("abcd", "dcba", false)]
+    [DataRow("abcd", "abdc", true)]
+    [DataRow("abcde", "abced", true)]
+    [DataRow("abcde", "abcde", false)]
+    [DataRow("aabb", "aabb", true)]
+    [DataRow("abba", "abba", true)]
+    [DataRow("aaaa", "aaaa", true)]
+    [DataRow("ab", "cd", false)]
+    [DataRow("xyzw", "xywz", true)]
+    [DataRow("abcdef", "abcfed", true)]
     public void BuddyStrings_WithGivenStrings_ReturnsTrueIfSingleSwapMakesEqualOtherwiseFalse(string s, string goal, bool expectedResult)
     {
         // Arrange

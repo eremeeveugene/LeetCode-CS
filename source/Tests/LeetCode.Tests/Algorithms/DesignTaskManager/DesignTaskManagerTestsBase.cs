@@ -55,6 +55,36 @@ public abstract class DesignTaskManagerTestsBase
         yield return [new TaskManagerScenario([[1, 101, 5], [2, 102, 10], [3, 103, 15]], [new RmvOperation(103), new ExecTopOperation()], [VoidOperationResult.Instance, new ExecTopOperation.Result(2)])];
 
         yield return [new TaskManagerScenario([[1, 101, 5]], [new AddOperation(2, 102, 50), new ExecTopOperation(), new ExecTopOperation()], [VoidOperationResult.Instance, new ExecTopOperation.Result(2), new ExecTopOperation.Result(1)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 10]], [new ExecTopOperation()], [new ExecTopOperation.Result(1)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 10], [2, 102, 20]], [new ExecTopOperation(), new ExecTopOperation()], [new ExecTopOperation.Result(2), new ExecTopOperation.Result(1)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 5], [2, 102, 5]], [new ExecTopOperation()], [new ExecTopOperation.Result(2)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 1], [2, 102, 2], [3, 103, 3]], [new EditOperation(101, 100), new ExecTopOperation()], [VoidOperationResult.Instance, new ExecTopOperation.Result(1)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 10], [2, 102, 20], [3, 103, 30]], [new RmvOperation(101), new RmvOperation(102), new ExecTopOperation()], [VoidOperationResult.Instance, VoidOperationResult.Instance, new ExecTopOperation.Result(3)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 5], [2, 102, 5], [3, 103, 5]], [new ExecTopOperation(), new ExecTopOperation(), new ExecTopOperation()], [new ExecTopOperation.Result(3), new ExecTopOperation.Result(2), new ExecTopOperation.Result(1)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 10]], [new RmvOperation(101), new ExecTopOperation()], [VoidOperationResult.Instance, new ExecTopOperation.Result(-1)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 10]], [new EditOperation(101, 1), new ExecTopOperation()], [VoidOperationResult.Instance, new ExecTopOperation.Result(1)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 50], [2, 102, 40], [3, 103, 30]], [new AddOperation(4, 104, 60), new ExecTopOperation(), new ExecTopOperation()], [VoidOperationResult.Instance, new ExecTopOperation.Result(4), new ExecTopOperation.Result(1)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 10], [2, 102, 10]], [new EditOperation(101, 5), new EditOperation(102, 15), new ExecTopOperation()], [VoidOperationResult.Instance, VoidOperationResult.Instance, new ExecTopOperation.Result(2)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 1], [2, 102, 2], [3, 103, 3], [4, 104, 4], [5, 105, 5]], [new ExecTopOperation(), new ExecTopOperation(), new ExecTopOperation()], [new ExecTopOperation.Result(5), new ExecTopOperation.Result(4), new ExecTopOperation.Result(3)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 100]], [new AddOperation(2, 102, 1), new ExecTopOperation()], [VoidOperationResult.Instance, new ExecTopOperation.Result(1)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 10], [1, 102, 20]], [new ExecTopOperation(), new ExecTopOperation()], [new ExecTopOperation.Result(1), new ExecTopOperation.Result(1)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 10], [2, 102, 20]], [new RmvOperation(101), new RmvOperation(102), new ExecTopOperation()], [VoidOperationResult.Instance, VoidOperationResult.Instance, new ExecTopOperation.Result(-1)])];
+
+        yield return [new TaskManagerScenario([[1, 101, 10], [2, 102, 10], [3, 103, 10]], [new AddOperation(4, 104, 10), new ExecTopOperation()], [VoidOperationResult.Instance, new ExecTopOperation.Result(4)])];
     }
 
     public sealed class TaskManagerScenario : IScenario<IDesignTaskManager>

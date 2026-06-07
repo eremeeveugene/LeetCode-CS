@@ -19,6 +19,20 @@ public abstract class PartitionArraySuchThatMaximumDifferenceIsKTestsBase<T> whe
     [DataRow(new[] { 3, 6, 1, 2, 5 }, 2, 2)]
     [DataRow(new[] { 1, 2, 3 }, 1, 2)]
     [DataRow(new[] { 2, 2, 4, 5 }, 0, 3)]
+    [DataRow(new[] { 1 }, 0, 1)]
+    [DataRow(new[] { 5 }, 5, 1)]
+    [DataRow(new[] { 1, 1, 1, 1 }, 0, 1)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 4, 1)]
+    [DataRow(new[] { 1, 10 }, 0, 2)]
+    [DataRow(new[] { 1, 10 }, 9, 1)]
+    [DataRow(new[] { 0, 0, 0 }, 0, 1)]
+    [DataRow(new[] { 1, 3, 5, 7, 9 }, 2, 3)]
+    [DataRow(new[] { 1, 2, 3, 10, 11, 12 }, 2, 2)]
+    [DataRow(new[] { 1, 100 }, 100, 1)]
+    [DataRow(new[] { 5, 5, 5 }, 0, 1)]
+    [DataRow(new[] { 1, 2, 3, 4 }, 0, 4)]
+    [DataRow(new[] { 1, 2, 3, 4 }, 3, 1)]
+    [DataRow(new[] { 0, 5, 10, 15 }, 5, 2)]
     public void PartitionArray_WithElementsDifferingByK_ReturnsMinimumSubsequenceCount(int[] nums, int k, int expectedResult)
     {
         // Arrange

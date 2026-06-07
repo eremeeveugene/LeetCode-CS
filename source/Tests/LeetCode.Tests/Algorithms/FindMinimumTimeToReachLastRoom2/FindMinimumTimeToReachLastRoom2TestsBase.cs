@@ -36,5 +36,39 @@ public abstract class FindMinimumTimeToReachLastRoom2TestsBase<T> where T : IFin
         yield return [new[] { new[] { 0, 4 }, new[] { 4, 4 } }, 7];
 
         yield return [new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 } }, 6];
+
+        yield return [new[] { new[] { 0 } }, 0];
+
+        yield return [new[] { new[] { 0, 0 } }, 1];
+
+        yield return [new[] { new[] { 0, 0, 0 } }, 3];
+
+        yield return [new[] { new[] { 0, 0, 0, 0 } }, 4];
+
+        yield return [new[] { new[] { 0 }, new[] { 0 } }, 1];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 0, 0 } }, 3];
+
+        yield return [new[] { new[] { 0, 0, 0 }, new[] { 0, 0, 0 } }, 4];
+
+        yield return [new[] { new[] { 0, 5 } }, 6];
+
+        yield return [new[] { new[] { 0, 5 }, new[] { 0, 0 } }, 3];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 5, 0 } }, 3];
+
+        yield return [new[] { new[] { 0, 3 }, new[] { 0, 0 } }, 3];
+
+        yield return [new[] { new[] { 0, 0, 0 }, new[] { 0, 0, 0 }, new[] { 0, 0, 0 } }, 6];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 } }, 4];
+
+        yield return [new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 } }, 7];
+
+        yield return [new[] { new[] { 0, 10 }, new[] { 10, 0 } }, 13];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 0, 10 } }, 12];
+
+        yield return [new[] { new[] { 0, 0, 0 }, new[] { 0, 0, 10 } }, 11];
     }
 }

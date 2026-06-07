@@ -43,5 +43,35 @@ public abstract class SumOfLeftLeavesTestsBase<T> where T : ISumOfLeftLeaves, ne
         yield return [new int?[] { 1, 2, 3, 4, 5 }, 4];
 
         yield return [new int?[] { -9, -3, 2, null, 4, 4, 0, -6, null, -5 }, -11];
+
+        yield return [new int?[] { null }, 0];
+
+        yield return [new int?[] { 5, 3, null }, 3];
+
+        yield return [new int?[] { 5, null, 3 }, 0];
+
+        yield return [new int?[] { 1, 2, null }, 2];
+
+        yield return [new int?[] { 1, null, 2 }, 0];
+
+        yield return [new int?[] { 10, 5, 15, 3, 7, null, 18 }, 3];
+
+        yield return [new int?[] { 0, 0, 0 }, 0];
+
+        yield return [new int?[] { -1, -2, -3 }, -2];
+
+        yield return [new int?[] { 1, 2, 3, 4, null, null, null }, 4];
+
+        yield return [new int?[] { 5, 3, 7, 1, 4, null, null }, 1];
+
+        yield return [new int?[] { 1, 2, 3, null, null, 4, 5 }, 6];
+
+        yield return [new int?[] { 100, 50, null, 25, null }, 25];
+
+        yield return [new int?[] { 1, 1, 1, 1, 1, 1, 1 }, 2];
+
+        yield return [new int?[] { 7, 6, null, 5, null }, 5];
+
+        yield return [new int?[] { 2, null, 3, null, 4 }, 0];
     }
 }

@@ -25,6 +25,18 @@ public abstract class SubarraySumsDivisibleByKTestsBase<T> where T : ISubarraySu
     [DataRow(new[] { -5, -10, 5 }, 5, 6)]
     [DataRow(new[] { 0, 0, 0 }, 5, 6)]
     [DataRow(new[] { 1, 2, 3, 4, 5 }, 1, 15)]
+    [DataRow(new[] { 5, 0, -5 }, 5, 6)]
+    [DataRow(new[] { 10, 20, 30 }, 10, 6)]
+    [DataRow(new[] { 2, 3, 5 }, 5, 3)]
+    [DataRow(new[] { -3, 3 }, 3, 3)]
+    [DataRow(new[] { 1, -1, 1, -1 }, 2, 4)]
+    [DataRow(new[] { 7, 3, 4, 6 }, 7, 3)]
+    [DataRow(new[] { 6, 3, 5, 2, 3 }, 9, 1)]
+    [DataRow(new[] { 5, 5, 5, 5 }, 5, 10)]
+    [DataRow(new[] { 0, 0, 0, 0 }, 3, 10)]
+    [DataRow(new[] { -2, 2 }, 2, 3)]
+    [DataRow(new[] { 3, 6, 9 }, 3, 6)]
+    [DataRow(new[] { -1 }, 5, 0)]
     public void SubarraysDivByK_GivenArrayAndDivisor_ReturnsCountOfSubarraysDivisibleByK(int[] nums, int k, int expectedResult)
     {
         // Arrange

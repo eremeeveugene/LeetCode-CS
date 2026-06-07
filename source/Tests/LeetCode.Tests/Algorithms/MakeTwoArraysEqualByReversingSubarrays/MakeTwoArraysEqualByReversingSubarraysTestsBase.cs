@@ -19,6 +19,23 @@ public abstract class MakeTwoArraysEqualByReversingSubarraysTestsBase<T> where T
     [DataRow(new[] { 7 }, new[] { 7 }, true)]
     [DataRow(new[] { 1, 2, 3, 4 }, new[] { 2, 4, 1, 3 }, true)]
     [DataRow(new[] { 3, 7, 9 }, new[] { 3, 7, 11 }, false)]
+    [DataRow(new[] { 1 }, new[] { 2 }, false)]
+    [DataRow(new[] { 1, 1 }, new[] { 1, 1 }, true)]
+    [DataRow(new[] { 1, 2 }, new[] { 2, 1 }, true)]
+    [DataRow(new[] { 1, 2, 3 }, new[] { 3, 2, 1 }, true)]
+    [DataRow(new[] { 1, 2, 3 }, new[] { 1, 2, 4 }, false)]
+    [DataRow(new[] { 5, 5, 5 }, new[] { 5, 5, 5 }, true)]
+    [DataRow(new[] { 1, 2, 2, 3 }, new[] { 2, 1, 3, 2 }, true)]
+    [DataRow(new[] { 1, 2, 2, 3 }, new[] { 1, 2, 3, 3 }, false)]
+    [DataRow(new[] { 10, 20, 30 }, new[] { 30, 10, 20 }, true)]
+    [DataRow(new[] { 1, 1, 2 }, new[] { 2, 1, 1 }, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, new[] { 5, 4, 3, 2, 1 }, true)]
+    [DataRow(new[] { 100, 200 }, new[] { 100, 201 }, false)]
+    [DataRow(new[] { 1, 2, 3 }, new[] { 1, 2, 3 }, true)]
+    [DataRow(new[] { 4, 4 }, new[] { 4, 5 }, false)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, new[] { 1, 2, 3, 4, 5 }, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, new[] { 5, 4, 3, 2, 2 }, false)]
+    [DataRow(new[] { 3, 3, 3, 3 }, new[] { 3, 3, 3, 3 }, true)]
     public void CanBeEqual_GivenTargetAndArray_ReturnsIfTheyCanBeEqual(int[] target, int[] arr, bool expectedResult)
     {
         // Arrange

@@ -18,6 +18,23 @@ public abstract class RobotReturnToOriginTestsBase<T> where T : IRobotReturnToOr
     [TestMethod]
     [DataRow("UD", true)]
     [DataRow("LL", false)]
+    [DataRow("UDLR", true)]
+    [DataRow("UUDDLLRR", true)]
+    [DataRow("UUDD", true)]
+    [DataRow("LLRR", true)]
+    [DataRow("ULRD", true)]
+    [DataRow("U", false)]
+    [DataRow("D", false)]
+    [DataRow("L", false)]
+    [DataRow("R", false)]
+    [DataRow("UDUD", true)]
+    [DataRow("LRLR", true)]
+    [DataRow("UUUU", false)]
+    [DataRow("UURR", false)]
+    [DataRow("UDRR", false)]
+    [DataRow("UDUDLRLR", true)]
+    [DataRow("UUDDLRRL", true)]
+    [DataRow("RRRRLLLL", true)]
     public void JudgeCircle_WithMoveSequence_ReturnsIfReturnsToOrigin(string moves, bool expectedResult)
     {
         // Arrange

@@ -53,6 +53,15 @@ public abstract class DesignMovieRentalSystemTestsBase
         yield return [new MovieRentalSystemScenario(3, [[0, 1, 5], [0, 2, 3], [1, 1, 8], [1, 3, 2], [2, 2, 6]], [new RentOperation(0, 1), new RentOperation(0, 2), new RentOperation(1, 1), new RentOperation(1, 3), new ReportOperation()], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new ReportOperation.Result([[1, 3], [0, 2], [0, 1], [1, 1]])])];
 
         yield return [new MovieRentalSystemScenario(2, [[0, 1, 5], [1, 1, 3]], [new RentOperation(0, 1), new RentOperation(1, 1), new SearchOperation(1), new DropOperation(0, 1), new SearchOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, new SearchOperation.Result([]), VoidOperationResult.Instance, new SearchOperation.Result([0])])];
+
+        // Search for a movie that has no offers exercises the empty-result early return.
+        yield return [new MovieRentalSystemScenario(1, [[0, 1, 5]], [new SearchOperation(99)], [new SearchOperation.Result([])])];
+
+        // Report with no rentals exercises the empty-rentals early return.
+        yield return [new MovieRentalSystemScenario(1, [[0, 1, 5]], [new ReportOperation()], [new ReportOperation.Result([])])];
+
+        // Two rentals with identical price and shop but different movies exercise the movie tiebreaker in RentalRecord.CompareTo.
+        yield return [new MovieRentalSystemScenario(1, [[0, 1, 5], [0, 2, 5]], [new RentOperation(0, 1), new RentOperation(0, 2), new ReportOperation()], [VoidOperationResult.Instance, VoidOperationResult.Instance, new ReportOperation.Result([[0, 1], [0, 2]])])];
     }
 
     public sealed class MovieRentalSystemScenario : IScenario<IDesignMovieRentalSystem>

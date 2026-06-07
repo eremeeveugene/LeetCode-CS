@@ -19,6 +19,21 @@ public abstract class MajorityFrequencyCharactersTestsBase<T> where T : IMajorit
     [DataRow("aaabbbccdddde", "ab")]
     [DataRow("abcd", "abcd")]
     [DataRow("pfpfgi", "pf")]
+    [DataRow("a", "a")]
+    [DataRow("aa", "a")]
+    [DataRow("aabb", "ab")]
+    [DataRow("aaabb", "a")]
+    [DataRow("aabbcc", "abc")]
+    [DataRow("aaabbbccc", "abc")]
+    [DataRow("aaaabbbbcccc", "abc")]
+    [DataRow("aaabbbccdddd", "ab")]
+    [DataRow("aabbccdd", "abcd")]
+    [DataRow("zzzzz", "z")]
+    [DataRow("xxyyzz", "xyz")]
+    [DataRow("aabbbcccc", "c")]
+    [DataRow("aaabbbcccc", "ab")]
+    [DataRow("mmmnnnoooo", "mn")]
+    [DataRow("qqrrrsssst", "s")]
     public void MajorityFrequencyGroup_WithInputString_ReturnsCharactersFromTheLargestDistinctCharactersGroup(string s, string expectedResult)
     {
         // Arrange

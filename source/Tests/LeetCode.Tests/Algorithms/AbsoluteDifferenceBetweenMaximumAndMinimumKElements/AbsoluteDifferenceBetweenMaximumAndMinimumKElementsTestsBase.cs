@@ -33,8 +33,8 @@ public abstract class AbsoluteDifferenceBetweenMaximumAndMinimumKElementsTestsBa
     [DataRow(new[] { 11, 4, 7, 1, 9 }, 2, 15)]
     [DataRow(new[] { 3, 3, 3, 10 }, 1, 7)]
     [DataRow(new[] { 3, 3, 3, 10 }, 2, 7)]
-    [DataRow(new[] { 1, 1000 }, 1, 999)]
-    [DataRow(new[] { 1, 2, 1000, 999 }, 2, 1996)]
+    [DataRow(new[] { 1, 100 }, 1, 99)]
+    [DataRow(new[] { 1, 2, 100, 99 }, 2, 196)]
     [DataRow(new[] { 8, 6, 4, 2 }, 2, 8)]
     public void AbsDifference_WithKSmallestAndKLargestElements_ReturnsAbsoluteDifferenceOfTheirSums(int[] nums, int k, int expectedResult)
     {

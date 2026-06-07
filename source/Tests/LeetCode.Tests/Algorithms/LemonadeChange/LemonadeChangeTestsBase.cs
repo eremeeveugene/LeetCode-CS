@@ -21,6 +21,21 @@ public abstract class LemonadeChangeTestsBase<T> where T : ILemonadeChange, new(
     [DataRow(new[] { 5, 5, 10, 10, 20 }, false)]
     [DataRow(new[] { 5, 5, 10, 5, 5, 10, 20, 5, 10, 20, 20, 10, 5, 10, 20, 20, 5, 5, 10, 20, 10 }, false)]
     [DataRow(new[] { 5, 5, 10, 5, 5, 10, 20, 5, 10, 20, 20, 10, 5, 10, 20, 20, 5, 5, 10, 20, 10, 5, 10, 5, 5, 10, 20, 5, 10, 20, 20, 10, 5, 10, 20, 20, 5, 5, 10, 20, 10, 5, 10, 5, 10, 5, 10, 5, 20, 20, 20, 10, 10, 5 }, false)]
+    [DataRow(new[] { 5 }, true)]
+    [DataRow(new[] { 5, 5 }, true)]
+    [DataRow(new[] { 5, 5, 5, 5 }, true)]
+    [DataRow(new[] { 5, 5, 10 }, true)]
+    [DataRow(new[] { 20 }, false)]
+    [DataRow(new[] { 5, 10 }, true)]
+    [DataRow(new[] { 5, 5, 5, 20 }, true)]
+    [DataRow(new[] { 5, 5, 5, 5, 10, 20 }, true)]
+    [DataRow(new[] { 5, 5, 20 }, false)]
+    [DataRow(new[] { 5, 5, 10, 20 }, true)]
+    [DataRow(new[] { 5, 5, 5, 5, 5 }, true)]
+    [DataRow(new[] { 5, 5, 5, 10, 10, 20 }, true)]
+    [DataRow(new[] { 5, 5, 5, 5, 20, 20 }, false)]
+    [DataRow(new[] { 5, 5, 5, 5, 10, 20, 20 }, false)]
+    [DataRow(new[] { 5, 5, 5, 10, 5, 10, 20 }, true)]
     public void LemonadeChange_WithGivenBills_ReturnsIfChangeCanBeProvided(int[] bills, bool expectedResult)
     {
         // Arrange

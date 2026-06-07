@@ -34,5 +34,37 @@ public abstract class MaximumNumberOfEventsThatCanBeAttendedTestsBase<T> where T
         yield return [new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 } }, 3];
 
         yield return [new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 }, new[] { 1, 2 } }, 4];
+
+        yield return [new[] { new[] { 1, 1 } }, 1];
+
+        yield return [new[] { new[] { 1, 5 } }, 1];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 1, 1 } }, 1];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 1, 2 }, new[] { 1, 6 }, new[] { 1, 2 } }, 3];
+
+        yield return [new[] { new[] { 1, 4 }, new[] { 4, 4 }, new[] { 2, 2 }, new[] { 3, 4 }, new[] { 1, 1 } }, 4];
+
+        yield return [new[] { new[] { 1, 3 }, new[] { 1, 3 }, new[] { 1, 3 } }, 3];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 3, 3 } }, 3];
+
+        yield return [new[] { new[] { 1, 10 }, new[] { 2, 2 }, new[] { 3, 3 } }, 3];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 3, 4 } }, 2];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 2, 2 }, new[] { 2, 2 } }, 2];
+
+        yield return [new[] { new[] { 1, 5 }, new[] { 1, 5 }, new[] { 1, 5 }, new[] { 2, 3 }, new[] { 2, 3 } }, 5];
+
+        yield return [new[] { new[] { 5, 5 }, new[] { 5, 7 }, new[] { 5, 7 } }, 3];
+
+        yield return [new[] { new[] { 1, 3 }, new[] { 2, 4 }, new[] { 3, 5 } }, 3];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 1, 2 }, new[] { 1, 2 }, new[] { 1, 2 } }, 2];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 3, 3 }, new[] { 4, 4 }, new[] { 5, 5 } }, 5];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 2, 2 } }, 2];
     }
 }

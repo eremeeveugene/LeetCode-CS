@@ -32,6 +32,13 @@ public abstract class ImplementQueueUsingStacksTestsBase<T> where T : IImplement
     [DataRow(new[] { 1, 2, 3 }, new[] { 1, 2, 3 })]
     [DataRow(new[] { 5, 10, 15 }, new[] { 5, 10, 15 })]
     [DataRow(new int[] { }, new int[] { })]
+    [DataRow(new[] { 42 }, new[] { 42 })]
+    [DataRow(new[] { 0, 0, 0 }, new[] { 0, 0, 0 })]
+    [DataRow(new[] { -1, -2, -3 }, new[] { -1, -2, -3 })]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, new[] { 1, 2, 3, 4, 5 })]
+    [DataRow(new[] { 100, 200, 300, 400 }, new[] { 100, 200, 300, 400 })]
+    [DataRow(new[] { 7 }, new[] { 7 })]
+    [DataRow(new[] { 1, 1, 1 }, new[] { 1, 1, 1 })]
     public void Pop_RemovesElementsFromQueue_QueueBecomesEmpty(int[] pushElements, int[] popExpected)
     {
         // Arrange
@@ -55,6 +62,11 @@ public abstract class ImplementQueueUsingStacksTestsBase<T> where T : IImplement
     [TestMethod]
     [DataRow(new[] { 1, 2, 3 }, 1)]
     [DataRow(new[] { 5, 10, 15 }, 5)]
+    [DataRow(new[] { 42 }, 42)]
+    [DataRow(new[] { -1, -2, -3 }, -1)]
+    [DataRow(new[] { 0, 1, 2 }, 0)]
+    [DataRow(new[] { 100, 200 }, 100)]
+    [DataRow(new[] { 7, 8, 9, 10 }, 7)]
     public void Peek_ReturnsFirstElementWithoutRemovingIt(int[] pushElements, int expectedPeek)
     {
         // Arrange

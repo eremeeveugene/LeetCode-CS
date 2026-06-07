@@ -19,6 +19,21 @@ public abstract class ValidAnagramTestsBase<T> where T : IValidAnagram, new()
     [DataRow("ab", "a", false)]
     [DataRow("rat", "car", false)]
     [DataRow("anagram", "nagaram", true)]
+    [DataRow("a", "a", true)]
+    [DataRow("a", "b", false)]
+    [DataRow("ab", "ba", true)]
+    [DataRow("abc", "abc", true)]
+    [DataRow("abc", "cba", true)]
+    [DataRow("aab", "baa", true)]
+    [DataRow("listen", "silent", true)]
+    [DataRow("hello", "world", false)]
+    [DataRow("aaa", "aa", false)]
+    [DataRow("aabc", "abcc", false)]
+    [DataRow("cinema", "iceman", true)]
+    [DataRow("triangle", "integral", true)]
+    [DataRow("abcd", "dcba", true)]
+    [DataRow("abcde", "abced", true)]
+    [DataRow("abcde", "abcdf", false)]
     public void IsAnagram_WithGivenStrings_ReturnsIfStringsAreAnagrams(string s, string t, bool expectedResult)
     {
         // Arrange

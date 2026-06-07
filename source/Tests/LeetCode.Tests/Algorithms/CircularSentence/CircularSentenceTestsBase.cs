@@ -19,6 +19,21 @@ public abstract class CircularSentenceTestsBase<T> where T : ICircularSentence, 
     [DataRow("leetcode exercises sound delightful", true)]
     [DataRow("eetcode", true)]
     [DataRow("Leetcode is cool", false)]
+    [DataRow("a", true)]
+    [DataRow("ab ba", true)]
+    [DataRow("ab bc", false)]
+    [DataRow("hello olleh", true)]
+    [DataRow("hello world", false)]
+    [DataRow("aa aa aa", true)]
+    [DataRow("ab ba ab", false)]
+    [DataRow("xyx yxy xyx", false)]
+    [DataRow("cat tiger rat", false)]
+    [DataRow("dog god", true)]
+    [DataRow("abc cba abc", false)]
+    [DataRow("noon noon noon", true)]
+    [DataRow("abc def", false)]
+    [DataRow("zz zz", true)]
+    [DataRow("a b c ca", false)]
     public void IsCircularSentence_GivenSentence_ReturnsIfSentenceIsCircular(string sentence, bool expectedResult)
     {
         // Arrange

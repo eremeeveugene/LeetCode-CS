@@ -19,6 +19,23 @@ public abstract class RepeatedSubstringPatternTestsBase<T> where T : IRepeatedSu
     [DataRow("abab", true)]
     [DataRow("aba", false)]
     [DataRow("abcabcabcabc", true)]
+    [DataRow("a", false)]
+    [DataRow("aa", true)]
+    [DataRow("aaa", true)]
+    [DataRow("ab", false)]
+    [DataRow("aaaa", true)]
+    [DataRow("abcabc", true)]
+    [DataRow("xyzxyzxyz", true)]
+    [DataRow("abcde", false)]
+    [DataRow("abaaba", true)]
+    [DataRow("abababab", true)]
+    [DataRow("abcdabcd", true)]
+    [DataRow("abcabcabc", true)]
+    [DataRow("aabaabaab", true)]
+    [DataRow("abacabac", true)]
+    [DataRow("zz", true)]
+    [DataRow("zzz", true)]
+    [DataRow("abba", false)]
     public void RepeatedSubstringPattern_GivenString_EvaluatesStringPatternRepetition(string s, bool expectedResult)
     {
         // Arrange
