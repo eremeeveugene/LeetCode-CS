@@ -79,7 +79,7 @@ jobs:
           reportgenerator `
             -reports:"./Tests/**/TestResults/**/*.cobertura.xml" `
             -targetdir:coverage `
-            -reporttypes:"Cobertura;TextSummary"
+            -reporttypes:"HtmlInline_AzurePipelines;Cobertura;TextSummary"
 
           if (Test-Path "coverage/Cobertura.xml") {
             "report=true" >> $env:GITHUB_OUTPUT
@@ -180,6 +180,15 @@ jobs:
             | Tests | ${{ steps.test.outcome }} |
             | Coverage | ${{ steps.coverage-check.outputs.pct }}% |
             | Status | ${{ steps.coverage-check.outputs.status }} |
+
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/develop' && steps.coverage.outputs.report == 'true'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ github.workspace }}/source/coverage
+          publish_branch: gh-pages
+          keep_files: true
 
       - name: Fail pipeline
         if: always()

@@ -555,6 +555,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2116. Check if a Parentheses String Can Be Valid](https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/description/)
 - [2119. A Number After a Double Reversal](https://leetcode.com/problems/a-number-after-a-double-reversal/description/)
 - [2124. Check if All A's Appears Before All B's](https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/description/)
+- [2126. Destroying Asteroids](https://leetcode.com/problems/destroying-asteroids/description/)
 - [2129. Capitalize the Title](https://leetcode.com/problems/capitalize-the-title/description/)
 - [2131. Longest Palindrome by Concatenating Two Letter Words](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/description/)
 - [2134. Minimum Swaps to Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/description/)
