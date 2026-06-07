@@ -1,4 +1,4 @@
-// --------------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -9,8 +9,9 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using System.Runtime.InteropServices;
+using LeetCode.Algorithms.CreateBinaryTreeFromDescriptions;
 
-[assembly: ComVisible(false)]
-[assembly: Guid("08820c21-7814-41b7-9ee3-211f8d7b3718")]
-[assembly: Parallelize(Scope = ExecutionScope.MethodLevel)]
+namespace LeetCode.Tests.Algorithms.CreateBinaryTreeFromDescriptions;
+
+[TestClass]
+public sealed class CreateBinaryTreeFromDescriptionsLookupTests : CreateBinaryTreeFromDescriptionsTestsBase<CreateBinaryTreeFromDescriptionsLookup>;

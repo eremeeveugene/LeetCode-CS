@@ -9,11 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using System.Diagnostics.CodeAnalysis;
-
 namespace LeetCode.Tests.Base.Extensions;
 
-[ExcludeFromCodeCoverage]
 public static class NestedCollectionAssert
 {
     public static void AreEqual<T>(IEnumerable<IEnumerable<T>> expectedResult, IEnumerable<IEnumerable<T>> actualResult)

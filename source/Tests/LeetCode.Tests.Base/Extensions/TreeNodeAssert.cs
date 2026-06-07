@@ -10,11 +10,9 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Core.Models;
-using System.Diagnostics.CodeAnalysis;
 
 namespace LeetCode.Tests.Base.Extensions;
 
-[ExcludeFromCodeCoverage]
 public static class TreeNodeAssert
 {
     public static void AreEqual(TreeNode? expectedTree, TreeNode? actualTree)

@@ -14,17 +14,19 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.CreateBinaryTreeFromDescriptions;
 
 /// <inheritdoc />
-public sealed class CreateBinaryTreeFromDescriptionsDictionary : ICreateBinaryTreeFromDescriptions
+public sealed class CreateBinaryTreeFromDescriptionsLookup : ICreateBinaryTreeFromDescriptions
 {
+    private const int LookupSize = 100_001;
+
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
+    ///     Space complexity - O(1)
     /// </remarks>
     public TreeNode? CreateBinaryTree(int[][] descriptions)
     {
-        var nodeMap = new Dictionary<int, TreeNode>();
-        var children = new HashSet<int>();
+        Span<bool> hasParentLookup = stackalloc bool[LookupSize];
+        var nodesLookup = new TreeNode?[LookupSize];
 
         for (var i = 0; i < descriptions.Length; i++)
         {
@@ -33,19 +35,8 @@ public sealed class CreateBinaryTreeFromDescriptionsDictionary : ICreateBinaryTr
             var childValue = description[1];
             var isLeft = description[2] == 1;
 
-            if (!nodeMap.TryGetValue(parentValue, out var parent))
-            {
-                parent = new TreeNode(parentValue);
-
-                nodeMap[parentValue] = parent;
-            }
-
-            if (!nodeMap.TryGetValue(childValue, out var child))
-            {
-                child = new TreeNode(childValue);
-
-                nodeMap[childValue] = child;
-            }
+            var parent = nodesLookup[parentValue] ??= new TreeNode(parentValue);
+            var child = nodesLookup[childValue] ??= new TreeNode(childValue);
 
             if (isLeft)
             {
@@ -56,15 +47,20 @@ public sealed class CreateBinaryTreeFromDescriptionsDictionary : ICreateBinaryTr
                 parent.right = child;
             }
 
-            children.Add(childValue);
+            hasParentLookup[childValue] = true;
         }
 
-        foreach (var key in nodeMap.Keys)
+        for (var i = 0; i < descriptions.Length; i++)
         {
-            if (!children.Contains(key))
+            var description = descriptions[i];
+            var parentValue = description[0];
+
+            if (hasParentLookup[parentValue])
             {
-                return nodeMap[key];
+                continue;
             }
+
+            return nodesLookup[parentValue];
         }
 
         return null;
