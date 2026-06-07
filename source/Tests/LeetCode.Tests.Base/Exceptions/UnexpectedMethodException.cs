@@ -9,11 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using System.Diagnostics.CodeAnalysis;
-
 namespace LeetCode.Tests.Base.Exceptions;
 
-[ExcludeFromCodeCoverage]
 public sealed class UnexpectedMethodException : InvalidOperationException
 {
     public UnexpectedMethodException(string name) : base($"Unexpected method '{name}' at index.")

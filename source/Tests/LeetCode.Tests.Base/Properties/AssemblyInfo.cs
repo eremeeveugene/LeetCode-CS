@@ -9,8 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 
 [assembly: ComVisible(false)]
 [assembly: Guid("0225dc36-a6ac-4484-a9a0-339e5a1ba627")]
-[assembly: Parallelize(Workers = 4, Scope = ExecutionScope.MethodLevel)]
+[assembly: Parallelize(Scope = ExecutionScope.MethodLevel)]
+[assembly: ExcludeFromCodeCoverage]

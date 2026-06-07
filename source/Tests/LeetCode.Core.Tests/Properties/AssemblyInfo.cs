@@ -13,4 +13,4 @@ using System.Runtime.InteropServices;
 
 [assembly: ComVisible(false)]
 [assembly: Guid("a5b62146-073c-4d0a-bfb7-681b3f180ec5")]
-[assembly: Parallelize(Workers = 4, Scope = ExecutionScope.MethodLevel)]
+[assembly: Parallelize(Scope = ExecutionScope.MethodLevel)]
