@@ -27,36 +27,47 @@ public sealed class DestroyingAsteroidsCountingSort : IDestroyingAsteroids
 
         Span<int> asteroidsCounts = stackalloc int[MaxAsteroidMass + 1];
 
+        var minAsteroid = MaxAsteroidMass;
+        var maxAsteroid = 1;
+
         for (var i = 0; i < n; i++)
         {
             var asteroid = asteroids[i];
 
+            minAsteroid = Math.Min(minAsteroid, asteroid);
+            maxAsteroid = Math.Max(maxAsteroid, asteroid);
+
             asteroidsCounts[asteroid]++;
         }
 
-        for (var asteroid = 1; asteroid <= MaxAsteroidMass; asteroid++)
+        long totalMass = mass;
+
+        var asteroidMass = minAsteroid;
+
+        while (asteroidMass <= maxAsteroid)
         {
-            var count = asteroidsCounts[asteroid];
+            var count = asteroidsCounts[asteroidMass];
 
             if (count == 0)
             {
+                asteroidMass++;
+
                 continue;
             }
 
-            if (mass < asteroid)
+            if (totalMass < asteroidMass)
             {
                 return false;
             }
 
-            for (var i = 0; i < count; i++)
-            {
-                mass += asteroid;
+            totalMass += (long)asteroidMass * count;
 
-                if (mass > MaxAsteroidMass)
-                {
-                    return true;
-                }
+            if (totalMass > MaxAsteroidMass)
+            {
+                return true;
             }
+
+            asteroidMass++;
         }
 
         return true;

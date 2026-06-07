@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using LeetCode.Algorithms.DestroyingAsteroids;
+
 namespace LeetCode.Tests.Algorithms.DestroyingAsteroids;
 
 [TestClass]
