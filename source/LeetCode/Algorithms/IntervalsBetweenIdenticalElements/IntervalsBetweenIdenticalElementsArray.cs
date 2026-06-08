@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.IntervalsBetweenIdenticalElements;
 
 /// <inheritdoc />
-public sealed class IntervalsBetweenIdenticalElementsSpan : IntervalsBetweenIdenticalElementsBase
+public sealed class IntervalsBetweenIdenticalElementsArray : IntervalsBetweenIdenticalElementsBase
 {
     private const int MaxValue = 100_000;
 
@@ -25,7 +25,7 @@ public sealed class IntervalsBetweenIdenticalElementsSpan : IntervalsBetweenIden
     {
         var n = nums.Length;
 
-        Span<State> states = stackalloc State[MaxValue + 1];
+        var states = new State[MaxValue + 1];
 
         for (var i = 0; i < n; i++)
         {

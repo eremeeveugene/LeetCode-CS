@@ -14,4 +14,4 @@ using LeetCode.Algorithms.IntervalsBetweenIdenticalElements;
 namespace LeetCode.Tests.Algorithms.IntervalsBetweenIdenticalElements;
 
 [TestClass]
-public sealed class IntervalsBetweenIdenticalElementsSpanTests : IntervalsBetweenIdenticalElementsTestsBase<IntervalsBetweenIdenticalElementsSpan>;
+public sealed class IntervalsBetweenIdenticalElementsArrayTests : IntervalsBetweenIdenticalElementsTestsBase<IntervalsBetweenIdenticalElementsArray>;
