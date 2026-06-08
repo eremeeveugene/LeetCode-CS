@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/7/2026 - 4:44:03 PM
-  Coverage date: 6/7/2026 - 4:43:32 PM - 6/7/2026 - 4:43:55 PM
+  Generated on: 6/8/2026 - 11:04:18 AM
+  Coverage date: 6/8/2026 - 11:03:33 AM - 6/8/2026 - 11:03:57 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1257
-  Files: 1257
+  Classes: 1259
+  Files: 1259
   Line coverage: 99.4%
-  Covered lines: 27870
-  Uncovered lines: 143
-  Coverable lines: 28013
-  Total lines: 70471
-  Branch coverage: 97.2% (10548 of 10843)
-  Covered branches: 10548
-  Total branches: 10843
-  Method coverage: 100% (1821 of 1821)
-  Full method coverage: 95.9% (1748 of 1821)
-  Covered methods: 1821
-  Fully covered methods: 1748
-  Total methods: 1821
+  Covered lines: 27914
+  Uncovered lines: 145
+  Coverable lines: 28059
+  Total lines: 70589
+  Branch coverage: 97.2% (10555 of 10851)
+  Covered branches: 10555
+  Total branches: 10851
+  Method coverage: 100% (1823 of 1823)
+  Full method coverage: 95.9% (1749 of 1823)
+  Covered methods: 1823
+  Fully covered methods: 1749
+  Total methods: 1823
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -534,6 +534,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.IntersectionOfTwoArrays2.IntersectionOfTwoArrays2Sorting                                                                           100%
   LeetCode.Algorithms.IntersectionOfTwoLinkedLists.IntersectionOfTwoLinkedListsBruteForce                                                                100%
   LeetCode.Algorithms.IntersectionOfTwoLinkedLists.IntersectionOfTwoLinkedListsTwoPointers                                                               100%
+  LeetCode.Algorithms.IntervalsBetweenIdenticalElements.IntervalsBetweenIdenticalElementsArray                                                           100%
+  LeetCode.Algorithms.IntervalsBetweenIdenticalElements.IntervalsBetweenIdenticalElementsDictionary                                                      100%
   LeetCode.Algorithms.InvertBinaryTree.InvertBinaryTreeBreadthFirstSearch                                                                                100%
   LeetCode.Algorithms.InvertBinaryTree.InvertBinaryTreeDepthFirstSearchRecursive                                                                        86.6%
   LeetCode.Algorithms.InvertBinaryTree.InvertBinaryTreeDepthFirstSearchStack                                                                             100%
@@ -1267,7 +1269,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
