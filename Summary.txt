@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/9/2026 - 3:56:17 PM
-  Coverage date: 6/9/2026 - 3:55:46 PM - 6/9/2026 - 3:56:09 PM
+  Generated on: 6/9/2026 - 4:19:08 PM
+  Coverage date: 6/9/2026 - 4:18:36 PM - 6/9/2026 - 4:19:01 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1262
-  Files: 1262
+  Classes: 1263
+  Files: 1263
   Line coverage: 99.4%
-  Covered lines: 27957
-  Uncovered lines: 143
-  Coverable lines: 28100
-  Total lines: 70714
-  Branch coverage: 97.2% (10570 of 10865)
-  Covered branches: 10570
-  Total branches: 10865
-  Method coverage: 100% (1826 of 1826)
-  Full method coverage: 96% (1753 of 1826)
-  Covered methods: 1826
+  Covered lines: 27973
+  Uncovered lines: 145
+  Coverable lines: 28118
+  Total lines: 70760
+  Branch coverage: 97.2% (10573 of 10869)
+  Covered branches: 10573
+  Total branches: 10869
+  Method coverage: 100% (1827 of 1827)
+  Full method coverage: 95.9% (1753 of 1827)
+  Covered methods: 1827
   Fully covered methods: 1753
-  Total methods: 1826
+  Total methods: 1827
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -823,6 +823,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceBase                                                                                    100%
   LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceBucketSort                                                                              100%
   LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceSorting                                                                                 100%
+  LeetCode.Algorithms.MinimumTimeToMakeRopeColorful.MinimumTimeToMakeRopeColorfulGreedy                                                                  100%
   LeetCode.Algorithms.MinimumTimeToVisitCellInGrid.MinimumTimeToVisitCellInGridPriorityQueue                                                            97.5%
   LeetCode.Algorithms.MinimumTimeVisitingAllPoints.MinimumTimeVisitingAllPointsIterative                                                                 100%
   LeetCode.Algorithms.MirrorDistanceOfAnInteger.MirrorDistanceOfAnIntegerMath                                                                            100%
@@ -1272,7 +1273,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
