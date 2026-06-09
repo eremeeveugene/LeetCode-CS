@@ -12,9 +12,13 @@
 namespace LeetCode.Algorithms.MaximumTotalSubarrayValue1;
 
 /// <inheritdoc />
-public sealed class MaximumTotalSubarrayValueILinearScan : IMaximumTotalSubarrayValue1
+public sealed class MaximumTotalSubarrayValueEnumeration : IMaximumTotalSubarrayValue1
 {
     /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
+    /// </remarks>
     public long MaxTotalValue(int[] nums, int k)
     {
         var n = nums.Length;

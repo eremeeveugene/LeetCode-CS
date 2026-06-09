@@ -14,4 +14,4 @@ using LeetCode.Algorithms.MaximumTotalSubarrayValue1;
 namespace LeetCode.Tests.Algorithms.MaximumTotalSubarrayValue1;
 
 [TestClass]
-public sealed class MaximumTotalSubarrayValueILinearScanTests : MaximumTotalSubarrayValueITestsBase<MaximumTotalSubarrayValueILinearScan>;
+public sealed class MaximumTotalSubarrayValueEnumerationTests : MaximumTotalSubarrayValueITestsBase<MaximumTotalSubarrayValueEnumeration>;
