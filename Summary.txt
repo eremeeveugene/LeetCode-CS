@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/9/2026 - 3:30:09 PM
-  Coverage date: 6/9/2026 - 3:29:38 PM - 6/9/2026 - 3:30:02 PM
+  Generated on: 6/9/2026 - 3:56:17 PM
+  Coverage date: 6/9/2026 - 3:55:46 PM - 6/9/2026 - 3:56:09 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1260
-  Files: 1260
+  Classes: 1262
+  Files: 1262
   Line coverage: 99.4%
-  Covered lines: 27923
-  Uncovered lines: 149
-  Coverable lines: 28072
-  Total lines: 70630
-  Branch coverage: 97.2% (10554 of 10853)
-  Covered branches: 10554
-  Total branches: 10853
-  Method coverage: 100% (1824 of 1824)
-  Full method coverage: 95.9% (1750 of 1824)
-  Covered methods: 1824
-  Fully covered methods: 1750
-  Total methods: 1824
+  Covered lines: 27957
+  Uncovered lines: 143
+  Coverable lines: 28100
+  Total lines: 70714
+  Branch coverage: 97.2% (10570 of 10865)
+  Covered branches: 10570
+  Total branches: 10865
+  Method coverage: 100% (1826 of 1826)
+  Full method coverage: 96% (1753 of 1826)
+  Covered methods: 1826
+  Fully covered methods: 1753
+  Total methods: 1826
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -162,6 +162,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ConstructTheMinimumBitwiseArray1.ConstructTheMinimumBitwiseArray1Dictionary                                                        100%
   LeetCode.Algorithms.ConstructTheMinimumBitwiseArray2.ConstructTheMinimumBitwiseArray2BitManipulation                                                   100%
   LeetCode.Algorithms.ConstructUniformParityArray1.ConstructUniformParityArray1Math                                                                      100%
+  LeetCode.Algorithms.ConstructUniformParityArray2.ConstructUniformParityArray2Bitwise                                                                   100%
+  LeetCode.Algorithms.ConstructUniformParityArray2.ConstructUniformParityArray2Math                                                                      100%
   LeetCode.Algorithms.ContainerWithMostWater.ContainerWithMostWaterTwoPointers                                                                           100%
   LeetCode.Algorithms.ContainsDuplicate.ContainsDuplicateHashSet                                                                                         100%
   LeetCode.Algorithms.ContainsDuplicate2.ContainsDuplicate2Dictionary                                                                                    100%
@@ -1270,7 +1272,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
