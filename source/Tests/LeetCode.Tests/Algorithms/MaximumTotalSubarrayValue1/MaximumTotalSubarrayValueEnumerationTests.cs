@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -9,20 +9,9 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.AddTwoIntegers;
+using LeetCode.Algorithms.MaximumTotalSubarrayValue1;
 
-/// <inheritdoc />
-public sealed class AddTwoIntegersMath : IAddTwoIntegers
-{
-    /// <summary>
-    ///     Time complexity - O(1)
-    ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num1"></param>
-    /// <param name="num2"></param>
-    /// <returns></returns>
-    public int Sum(int num1, int num2)
-    {
-        return num1 + num2;
-    }
-}
+namespace LeetCode.Tests.Algorithms.MaximumTotalSubarrayValue1;
+
+[TestClass]
+public sealed class MaximumTotalSubarrayValueEnumerationTests : MaximumTotalSubarrayValueITestsBase<MaximumTotalSubarrayValueEnumeration>;

@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -9,20 +9,33 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.AddTwoIntegers;
+namespace LeetCode.Algorithms.MaximumTotalSubarrayValue1;
 
 /// <inheritdoc />
-public sealed class AddTwoIntegersMath : IAddTwoIntegers
+public sealed class MaximumTotalSubarrayValueEnumeration : IMaximumTotalSubarrayValue1
 {
-    /// <summary>
-    ///     Time complexity - O(1)
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num1"></param>
-    /// <param name="num2"></param>
-    /// <returns></returns>
-    public int Sum(int num1, int num2)
+    /// </remarks>
+    public long MaxTotalValue(int[] nums, int k)
     {
-        return num1 + num2;
+        var n = nums.Length;
+
+        var min = int.MaxValue;
+        var max = int.MinValue;
+
+        for (var i = 0; i < n; i++)
+        {
+            var num = nums[i];
+
+            min = Math.Min(min, num);
+            max = Math.Max(max, num);
+        }
+
+        long diff = max - min;
+
+        return diff * k;
     }
 }
