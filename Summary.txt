@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/8/2026 - 11:04:18 AM
-  Coverage date: 6/8/2026 - 11:03:33 AM - 6/8/2026 - 11:03:57 AM
+  Generated on: 6/9/2026 - 3:30:09 PM
+  Coverage date: 6/9/2026 - 3:29:38 PM - 6/9/2026 - 3:30:02 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1259
-  Files: 1259
+  Classes: 1260
+  Files: 1260
   Line coverage: 99.4%
-  Covered lines: 27914
-  Uncovered lines: 145
-  Coverable lines: 28059
-  Total lines: 70589
-  Branch coverage: 97.2% (10555 of 10851)
-  Covered branches: 10555
-  Total branches: 10851
-  Method coverage: 100% (1823 of 1823)
-  Full method coverage: 95.9% (1749 of 1823)
-  Covered methods: 1823
-  Fully covered methods: 1749
-  Total methods: 1823
+  Covered lines: 27923
+  Uncovered lines: 149
+  Coverable lines: 28072
+  Total lines: 70630
+  Branch coverage: 97.2% (10554 of 10853)
+  Covered branches: 10554
+  Total branches: 10853
+  Method coverage: 100% (1824 of 1824)
+  Full method coverage: 95.9% (1750 of 1824)
+  Covered methods: 1824
+  Fully covered methods: 1750
+  Total methods: 1824
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -708,6 +708,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumSumOfDistinctSubarraysWithLengthK.MaximumSumOfDistinctSubarraysWithLengthKSlidingWindow                                     100%
   LeetCode.Algorithms.MaximumSwap.MaximumSwapGreedy                                                                                                      100%
   LeetCode.Algorithms.MaximumTotalDamageWithSpellCasting.MaximumTotalDamageWithSpellCastingDynamicProgrammingWithBinarySearch                            100%
+  LeetCode.Algorithms.MaximumTotalSubarrayValue1.MaximumTotalSubarrayValueEnumeration                                                                    100%
   LeetCode.Algorithms.MaximumUniqueSubarraySumAfterDeletion.MaximumUniqueSubarraySumAfterDeletionHashSet                                                 100%
   LeetCode.Algorithms.MaximumValueOfAnOrderedTriplet1.MaximumValueOfAnOrderedTriplet1BruteForce                                                          100%
   LeetCode.Algorithms.MaximumValueOfAnOrderedTriplet1.MaximumValueOfAnOrderedTriplet1Greedy                                                              100%
@@ -1269,7 +1270,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
