@@ -221,6 +221,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [530. Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/)
 - [539. Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/description/)
 - [541. Reverse String II](https://leetcode.com/problems/reverse-string-ii/description/)
+- [542. 01 Matrix](https://leetcode.com/problems/01-matrix/description/)
 - [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/)
 - [551. Student Attendance Record I](https://leetcode.com/problems/student-attendance-record-i/description/)
 - [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/)
