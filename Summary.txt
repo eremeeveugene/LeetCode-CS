@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/9/2026 - 4:19:08 PM
-  Coverage date: 6/9/2026 - 4:18:36 PM - 6/9/2026 - 4:19:01 PM
+  Generated on: 6/12/2026 - 1:10:43 PM
+  Coverage date: 6/12/2026 - 1:10:11 PM - 6/12/2026 - 1:10:34 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1263
-  Files: 1263
+  Classes: 1264
+  Files: 1264
   Line coverage: 99.4%
-  Covered lines: 27973
-  Uncovered lines: 145
-  Coverable lines: 28118
-  Total lines: 70760
-  Branch coverage: 97.2% (10573 of 10869)
-  Covered branches: 10573
-  Total branches: 10869
-  Method coverage: 100% (1827 of 1827)
-  Full method coverage: 95.9% (1753 of 1827)
-  Covered methods: 1827
-  Fully covered methods: 1753
-  Total methods: 1827
+  Covered lines: 28010
+  Uncovered lines: 143
+  Coverable lines: 28153
+  Total lines: 70830
+  Branch coverage: 97.2% (10594 of 10889)
+  Covered branches: 10594
+  Total branches: 10889
+  Method coverage: 100% (1829 of 1829)
+  Full method coverage: 96% (1756 of 1829)
+  Covered methods: 1829
+  Fully covered methods: 1756
+  Total methods: 1829
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -637,6 +637,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MakeTheStringGreat.MakeTheStringGreatStringBuilder                                                                                 100%
   LeetCode.Algorithms.MakeTwoArraysEqualByReversingSubarrays.MakeTwoArraysEqualByReversingSubarraysDictionary                                            100%
   LeetCode.Algorithms.MakeTwoArraysEqualByReversingSubarrays.MakeTwoArraysEqualByReversingSubarraysSorting                                               100%
+  LeetCode.Algorithms.MapOfHighestPeak.MapOfHighestPeakBreadthFirstSearch                                                                                100%
   LeetCode.Algorithms.MatrixDiagonalSum.MatrixDiagonalSumIterative                                                                                       100%
   LeetCode.Algorithms.MatrixSimilarityAfterCyclicShifts.MatrixSimilarityAfterCyclicShiftsMath                                                            100%
   LeetCode.Algorithms.MaxChunksToMakeSorted.MaxChunksToMakeSortedIterative                                                                               100%
@@ -1273,7 +1274,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroArrayTransformation3.ZeroArrayTransformation3PriorityQueue                                                                     100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
