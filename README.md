@@ -867,6 +867,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3798. Largest Even Number](https://leetcode.com/problems/largest-even-number/description/)
 - [3803. Count Residue Prefixes](https://leetcode.com/problems/count-residue-prefixes/description/)
 - [3823. Reverse Letters Then Special Characters in a String](https://leetcode.com/problems/reverse-letters-then-special-characters-in-a-string/description/)
+- [3838. Weighted Word Mapping](https://leetcode.com/problems/weighted-word-mapping/description/)
 - [3842. Toggle Light Bulbs](https://leetcode.com/problems/toggle-light-bulbs/description/)
 - [3852. Smallest Pair With Different Frequencies](https://leetcode.com/problems/smallest-pair-with-different-frequencies/description/)
 - [3856. Trim Trailing Vowels](https://leetcode.com/problems/trim-trailing-vowels/description/)
