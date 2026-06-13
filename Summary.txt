@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/12/2026 - 1:42:13 PM
-  Coverage date: 6/12/2026 - 1:41:33 PM - 6/12/2026 - 1:42:05 PM
+  Generated on: 6/13/2026 - 10:20:32 AM
+  Coverage date: 6/13/2026 - 10:20:00 AM - 6/13/2026 - 10:20:25 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1267
-  Files: 1267
+  Classes: 1269
+  Files: 1269
   Line coverage: 99.4%
-  Covered lines: 28111
-  Uncovered lines: 143
-  Coverable lines: 28254
-  Total lines: 71032
-  Branch coverage: 97.3% (10660 of 10955)
-  Covered branches: 10660
-  Total branches: 10955
-  Method coverage: 100% (1833 of 1833)
-  Full method coverage: 96% (1760 of 1833)
-  Covered methods: 1833
-  Fully covered methods: 1760
-  Total methods: 1833
+  Covered lines: 28148
+  Uncovered lines: 145
+  Coverable lines: 28293
+  Total lines: 71142
+  Branch coverage: 97.3% (10667 of 10963)
+  Covered branches: 10667
+  Total branches: 10963
+  Method coverage: 100% (1835 of 1835)
+  Full method coverage: 95.9% (1761 of 1835)
+  Covered methods: 1835
+  Fully covered methods: 1761
+  Total methods: 1835
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1261,6 +1261,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.WaterBottles2.WaterBottles2Math                                                                                                    100%
   LeetCode.Algorithms.WaterBottles2.WaterBottles2Simulation                                                                                              100%
   LeetCode.Algorithms.WaysToExpressAnIntegerAsSumOfPowers.WaysToExpressAnIntegerAsSumOfPowersDynamicProgramming                                          100%
+  LeetCode.Algorithms.WeightedWordMapping.WeightedWordMappingSpan                                                                                        100%
+  LeetCode.Algorithms.WeightedWordMapping.WeightedWordMappingStringBuilder                                                                               100%
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsAscending                 100%
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescending                100%
   LeetCode.Algorithms.WordPattern.WordPatternDictionary                                                                                                  100%
@@ -1277,7 +1279,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
