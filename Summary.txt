@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/13/2026 - 10:20:32 AM
-  Coverage date: 6/13/2026 - 10:20:00 AM - 6/13/2026 - 10:20:25 AM
+  Generated on: 6/14/2026 - 12:09:30 PM
+  Coverage date: 6/14/2026 - 12:08:50 PM - 6/14/2026 - 12:09:19 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1269
-  Files: 1269
+  Classes: 1271
+  Files: 1271
   Line coverage: 99.4%
-  Covered lines: 28148
+  Covered lines: 28199
   Uncovered lines: 145
-  Coverable lines: 28293
-  Total lines: 71142
-  Branch coverage: 97.3% (10667 of 10963)
-  Covered branches: 10667
-  Total branches: 10963
-  Method coverage: 100% (1835 of 1835)
-  Full method coverage: 95.9% (1761 of 1835)
-  Covered methods: 1835
-  Fully covered methods: 1761
-  Total methods: 1835
+  Coverable lines: 28344
+  Total lines: 71261
+  Branch coverage: 97.2% (10685 of 10985)
+  Covered branches: 10685
+  Total branches: 10985
+  Method coverage: 100% (1837 of 1837)
+  Full method coverage: 95.9% (1763 of 1837)
+  Covered methods: 1837
+  Fully covered methods: 1763
+  Total methods: 1837
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -713,6 +713,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumSwap.MaximumSwapGreedy                                                                                                      100%
   LeetCode.Algorithms.MaximumTotalDamageWithSpellCasting.MaximumTotalDamageWithSpellCastingDynamicProgrammingWithBinarySearch                            100%
   LeetCode.Algorithms.MaximumTotalSubarrayValue1.MaximumTotalSubarrayValueEnumeration                                                                    100%
+  LeetCode.Algorithms.MaximumTwinSumOfALinkedList.MaximumTwinSumOfALinkedListReverse                                                                     100%
+  LeetCode.Algorithms.MaximumTwinSumOfALinkedList.MaximumTwinSumOfALinkedListStack                                                                       100%
   LeetCode.Algorithms.MaximumUniqueSubarraySumAfterDeletion.MaximumUniqueSubarraySumAfterDeletionHashSet                                                 100%
   LeetCode.Algorithms.MaximumValueOfAnOrderedTriplet1.MaximumValueOfAnOrderedTriplet1BruteForce                                                          100%
   LeetCode.Algorithms.MaximumValueOfAnOrderedTriplet1.MaximumValueOfAnOrderedTriplet1Greedy                                                              100%
