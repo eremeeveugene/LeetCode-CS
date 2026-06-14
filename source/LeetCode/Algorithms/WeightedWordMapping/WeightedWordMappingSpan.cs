@@ -19,7 +19,7 @@ public sealed class WeightedWordMappingSpan : IWeightedWordMapping
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n * m) where n is the number of words and m is the maximum word length
-    ///     Space complexity - O(n) for the resulting string
+    ///     Space complexity - O(n)
     /// </remarks>
     public string MapWordWeights(string[] words, int[] weights)
     {
