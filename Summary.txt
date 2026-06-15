@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/14/2026 - 12:09:30 PM
-  Coverage date: 6/14/2026 - 12:08:50 PM - 6/14/2026 - 12:09:19 PM
+  Generated on: 6/15/2026 - 10:30:00 AM
+  Coverage date: 6/15/2026 - 10:29:26 AM - 6/15/2026 - 10:29:52 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1271
-  Files: 1271
+  Classes: 1272
+  Files: 1272
   Line coverage: 99.4%
-  Covered lines: 28199
-  Uncovered lines: 145
-  Coverable lines: 28344
-  Total lines: 71261
-  Branch coverage: 97.2% (10685 of 10985)
-  Covered branches: 10685
-  Total branches: 10985
-  Method coverage: 100% (1837 of 1837)
-  Full method coverage: 95.9% (1763 of 1837)
-  Covered methods: 1837
-  Fully covered methods: 1763
-  Total methods: 1837
+  Covered lines: 28215
+  Uncovered lines: 143
+  Coverable lines: 28358
+  Total lines: 71305
+  Branch coverage: 97.2% (10696 of 10997)
+  Covered branches: 10696
+  Total branches: 10997
+  Method coverage: 100% (1838 of 1838)
+  Full method coverage: 96% (1765 of 1838)
+  Covered methods: 1838
+  Fully covered methods: 1765
+  Total methods: 1838
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -279,6 +279,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DeleteNodesAndReturnForest.DeleteNodesAndReturnForestBreadthFirstSearch                                                            100%
   LeetCode.Algorithms.DeleteNodesAndReturnForest.DeleteNodesAndReturnForestDepthFirstSearchRecursive                                                     100%
   LeetCode.Algorithms.DeleteNodesAndReturnForest.DeleteNodesAndReturnForestDepthFirstSearchStack                                                         100%
+  LeetCode.Algorithms.DeleteTheMiddleNodeOfALinkedList.DeleteTheMiddleNodeOfALinkedListTwoPointers                                                       100%
   LeetCode.Algorithms.DesignAnATMMachine.DesignAnATMMachineGreedy                                                                                        100%
   LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArray                                                                                   100%
   LeetCode.Algorithms.DesignBrowserHistory.DesignBrowserHistoryArray                                                                                     100%
@@ -1281,7 +1282,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
