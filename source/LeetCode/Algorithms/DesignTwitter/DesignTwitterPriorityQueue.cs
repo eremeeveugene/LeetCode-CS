@@ -54,10 +54,12 @@ public sealed class DesignTwitterPriorityQueue : IDesignTwitter
         {
             foreach (var followeeId in followees)
             {
-                if (followeeId != userId)
+                if (followeeId == userId)
                 {
-                    CollectRecentTweets(oldestFirst, followeeId);
+                    continue;
                 }
+
+                CollectRecentTweets(oldestFirst, followeeId);
             }
         }
 
