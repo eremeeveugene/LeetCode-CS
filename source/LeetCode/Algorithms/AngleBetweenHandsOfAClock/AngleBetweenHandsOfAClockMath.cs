@@ -15,6 +15,8 @@ namespace LeetCode.Algorithms.AngleBetweenHandsOfAClock;
 public sealed class AngleBetweenHandsOfAClockMath : IAngleBetweenHandsOfAClock
 {
     private const double FullCircle = 360.0;
+    private const double MinutesPerHour = 60.0;
+    private const double HoursPerCycle = 12.0;
 
     /// <summary>
     ///     Time complexity - O(1)
@@ -25,10 +27,10 @@ public sealed class AngleBetweenHandsOfAClockMath : IAngleBetweenHandsOfAClock
     /// <returns></returns>
     public double AngleClock(int hour, int minutes)
     {
-        var minuteFraction = minutes / 60.0;
+        var minuteFraction = minutes / MinutesPerHour;
 
         var minuteAngle = minuteFraction * FullCircle;
-        var hourAngle = (hour + minuteFraction) / 12.0 * FullCircle;
+        var hourAngle = (hour + minuteFraction) / HoursPerCycle * FullCircle;
 
         var difference = double.Abs(hourAngle - minuteAngle);
 
