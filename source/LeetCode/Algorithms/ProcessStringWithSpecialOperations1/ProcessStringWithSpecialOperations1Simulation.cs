@@ -14,11 +14,11 @@ using System.Text;
 namespace LeetCode.Algorithms.ProcessStringWithSpecialOperations1;
 
 /// <inheritdoc />
-public sealed class ProcessStringWithSpecialOperations1Iterative : IProcessStringWithSpecialOperations1
+public sealed class ProcessStringWithSpecialOperations1Simulation : IProcessStringWithSpecialOperations1
 {
     /// <summary>
-    ///     Time complexity - O(n * m), where n is the length of <c>s</c> and m is the length of the final result
-    ///     Space complexity - O(m)
+    ///     Time complexity - O(2^n), where n is the length of <c>s</c>, since each <c>'#'</c> can double the result
+    ///     Space complexity - O(2^n)
     /// </summary>
     /// <param name="s"></param>
     /// <returns></returns>
