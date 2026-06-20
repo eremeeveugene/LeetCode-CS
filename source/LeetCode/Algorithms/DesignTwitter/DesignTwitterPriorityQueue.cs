@@ -52,11 +52,11 @@ public sealed class DesignTwitterPriorityQueue : IDesignTwitter
 
         if (_userToFolloweesDictionary.TryGetValue(userId, out var followees))
         {
-            foreach (var followee in followees)
+            foreach (var followeeId in followees)
             {
-                if (followee != userId)
+                if (followeeId != userId)
                 {
-                    CollectRecentTweets(oldestFirst, followee);
+                    CollectRecentTweets(oldestFirst, followeeId);
                 }
             }
         }
@@ -103,6 +103,15 @@ public sealed class DesignTwitterPriorityQueue : IDesignTwitter
         }
     }
 
+    /// <summary>
+    ///     Enqueues the most recent tweets (at most <see cref="NewsFeedSize" />) authored by <paramref name="userId" /> into
+    ///     <paramref name="oldestFirst" />, evicting the oldest tweet whenever the heap grows beyond <see cref="NewsFeedSize" />
+    ///     so it always retains the most recent candidates for the news feed.
+    ///     Time complexity - O(k * log(k)) where k is the news feed size of 10
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="oldestFirst">The min-heap, keyed by timestamp, that accumulates news feed candidates.</param>
+    /// <param name="userId">The id of the user whose recent tweets are collected.</param>
     private void CollectRecentTweets(PriorityQueue<int, int> oldestFirst, int userId)
     {
         if (!_userToTweetsDictionary.TryGetValue(userId, out var tweets))
