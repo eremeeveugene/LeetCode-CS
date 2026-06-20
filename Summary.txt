@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/20/2026 - 5:48:09 PM
-  Coverage date: 6/20/2026 - 5:47:38 PM - 6/20/2026 - 5:48:01 PM
+  Generated on: 6/20/2026 - 6:11:35 PM
+  Coverage date: 6/20/2026 - 6:11:09 PM - 6/20/2026 - 6:11:27 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1276
-  Files: 1276
+  Classes: 1277
+  Files: 1277
   Line coverage: 99.4%
-  Covered lines: 28271
+  Covered lines: 28291
   Uncovered lines: 145
-  Coverable lines: 28416
-  Total lines: 71493
-  Branch coverage: 97.2% (10712 of 11015)
-  Covered branches: 10712
-  Total branches: 11015
-  Method coverage: 100% (1843 of 1843)
-  Full method coverage: 95.9% (1769 of 1843)
-  Covered methods: 1843
-  Fully covered methods: 1769
-  Total methods: 1843
+  Coverable lines: 28436
+  Total lines: 71541
+  Branch coverage: 97.2% (10721 of 11023)
+  Covered branches: 10721
+  Total branches: 11023
+  Method coverage: 100% (1844 of 1844)
+  Full method coverage: 95.9% (1770 of 1844)
+  Covered methods: 1844
+  Fully covered methods: 1770
+  Total methods: 1844
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -841,6 +841,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MissingNumber.MissingNumberSortAndWhileSearch                                                                                      100%
   LeetCode.Algorithms.MissingNumber.MissingNumberSumFormula                                                                                              100%
   LeetCode.Algorithms.ModifyGraphEdgeWeights.ModifyGraphEdgeWeightsDijkstra                                                                             94.2%
+  LeetCode.Algorithms.ModifyTheMatrix.ModifyTheMatrixIterative                                                                                           100%
   LeetCode.Algorithms.MonotonicArray.MonotonicArrayIterative                                                                                             100%
   LeetCode.Algorithms.MostBeautifulItemForEachQuery.MostBeautifulItemForEachQueryBinarySearch                                                            100%
   LeetCode.Algorithms.MostCommonWord.MostCommonWordDictionary                                                                                            100%
