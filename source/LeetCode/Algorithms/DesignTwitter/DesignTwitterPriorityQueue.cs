@@ -1,0 +1,127 @@
+// --------------------------------------------------------------------------------
+// Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// All Rights Reserved.
+// --------------------------------------------------------------------------------
+// This software is the confidential and proprietary information of Eugene Eremeev
+// (also known as Yevhenii Yeriemeieiv) ("Confidential Information"). You shall not
+// disclose such Confidential Information and shall use it only in accordance with
+// the terms of the license agreement you entered into with Eugene Eremeev (also
+// known as Yevhenii Yeriemeieiv).
+// --------------------------------------------------------------------------------
+
+namespace LeetCode.Algorithms.DesignTwitter;
+
+/// <inheritdoc />
+public sealed class DesignTwitterPriorityQueue : IDesignTwitter
+{
+    private const int NewsFeedSize = 10;
+    private readonly Dictionary<int, HashSet<int>> _userToFolloweesDictionary = new();
+    private readonly Dictionary<int, List<(int Timestamp, int TweetId)>> _userToTweetsDictionary = new();
+    private int _timestamp;
+
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="userId"></param>
+    /// <param name="tweetId"></param>
+    public void PostTweet(int userId, int tweetId)
+    {
+        if (!_userToTweetsDictionary.TryGetValue(userId, out var tweets))
+        {
+            tweets = [];
+
+            _userToTweetsDictionary[userId] = tweets;
+        }
+
+        tweets.Add((_timestamp++, tweetId));
+    }
+
+    /// <summary>
+    ///     Time complexity - O(t * log(k)) where t is the number of recent tweets examined across the user and their
+    ///     followees and k is the news feed size of 10
+    ///     Space complexity - O(k)
+    /// </summary>
+    /// <param name="userId"></param>
+    /// <returns></returns>
+    public IList<int> GetNewsFeed(int userId)
+    {
+        var oldestFirst = new PriorityQueue<int, int>();
+
+        CollectRecentTweets(oldestFirst, userId);
+
+        if (_userToFolloweesDictionary.TryGetValue(userId, out var followees))
+        {
+            foreach (var followee in followees)
+            {
+                if (followee != userId)
+                {
+                    CollectRecentTweets(oldestFirst, followee);
+                }
+            }
+        }
+
+        var newsFeed = new int[oldestFirst.Count];
+
+        for (var i = newsFeed.Length - 1; i >= 0; i--)
+        {
+            newsFeed[i] = oldestFirst.Dequeue();
+        }
+
+        return newsFeed;
+    }
+
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="followerId"></param>
+    /// <param name="followeeId"></param>
+    public void Follow(int followerId, int followeeId)
+    {
+        if (!_userToFolloweesDictionary.TryGetValue(followerId, out var followees))
+        {
+            followees = [];
+
+            _userToFolloweesDictionary[followerId] = followees;
+        }
+
+        followees.Add(followeeId);
+    }
+
+    /// <summary>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </summary>
+    /// <param name="followerId"></param>
+    /// <param name="followeeId"></param>
+    public void Unfollow(int followerId, int followeeId)
+    {
+        if (_userToFolloweesDictionary.TryGetValue(followerId, out var followees))
+        {
+            followees.Remove(followeeId);
+        }
+    }
+
+    private void CollectRecentTweets(PriorityQueue<int, int> oldestFirst, int userId)
+    {
+        if (!_userToTweetsDictionary.TryGetValue(userId, out var tweets))
+        {
+            return;
+        }
+
+        var oldestIndex = Math.Max(0, tweets.Count - NewsFeedSize);
+
+        for (var i = tweets.Count - 1; i >= oldestIndex; i--)
+        {
+            var (timestamp, tweetId) = tweets[i];
+
+            oldestFirst.Enqueue(tweetId, timestamp);
+
+            if (oldestFirst.Count > NewsFeedSize)
+            {
+                oldestFirst.Dequeue();
+            }
+        }
+    }
+}
