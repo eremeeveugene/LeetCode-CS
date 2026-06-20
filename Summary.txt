@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/20/2026 - 9:15:38 AM
-  Coverage date: 6/20/2026 - 9:15:07 AM - 6/20/2026 - 9:15:30 AM
+  Generated on: 6/20/2026 - 4:45:47 PM
+  Coverage date: 6/20/2026 - 4:45:15 PM - 6/20/2026 - 4:45:39 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1274
-  Files: 1274
+  Classes: 1275
+  Files: 1275
   Line coverage: 99.4%
-  Covered lines: 28232
-  Uncovered lines: 144
-  Coverable lines: 28376
-  Total lines: 71383
-  Branch coverage: 97.2% (10697 of 10999)
-  Covered branches: 10697
-  Total branches: 10999
-  Method coverage: 100% (1840 of 1840)
-  Full method coverage: 95.9% (1766 of 1840)
-  Covered methods: 1840
-  Fully covered methods: 1766
-  Total methods: 1840
+  Covered lines: 28242
+  Uncovered lines: 149
+  Coverable lines: 28391
+  Total lines: 71428
+  Branch coverage: 97.2% (10698 of 11003)
+  Covered branches: 10698
+  Total branches: 11003
+  Method coverage: 100% (1841 of 1841)
+  Full method coverage: 95.9% (1767 of 1841)
+  Covered methods: 1841
+  Fully covered methods: 1767
+  Total methods: 1841
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -425,6 +425,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayBinarySearch                                                  100%
   LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayIterative                                                     100%
   LeetCode.Algorithms.FindTheClosestPalindrome.FindTheClosestPalindromeIterative                                                                         100%
+  LeetCode.Algorithms.FindTheDegreeOfEachVertex.FindTheDegreeOfEachVertexIterative                                                                       100%
   LeetCode.Algorithms.FindTheDifference.FindTheDifferenceBitwise                                                                                         100%
   LeetCode.Algorithms.FindTheDifference.FindTheDifferenceDictionary                                                                                     94.1%
   LeetCode.Algorithms.FindTheDifferenceOfTwoArrays.FindTheDifferenceOfTwoArraysHashSet                                                                   100%
@@ -1284,7 +1285,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           98.7%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
