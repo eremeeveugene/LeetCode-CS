@@ -742,6 +742,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3024. Type of Triangle](https://leetcode.com/problems/type-of-triangle/description/)
 - [3025. Find the Number of Ways to Place People I](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/description/)
 - [3027. Find the Number of Ways to Place People II](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-ii/description/)
+- [3033. Modify the Matrix](https://leetcode.com/problems/modify-the-matrix/description/)
 - [3042. Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/description/)
 - [3043. Find the Length of the Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/description/)
 - [3046. Split the Array](https://leetcode.com/problems/split-the-array/description/)
