@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/20/2026 - 4:45:47 PM
-  Coverage date: 6/20/2026 - 4:45:15 PM - 6/20/2026 - 4:45:39 PM
+  Generated on: 6/20/2026 - 5:48:09 PM
+  Coverage date: 6/20/2026 - 5:47:38 PM - 6/20/2026 - 5:48:01 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1275
-  Files: 1275
+  Classes: 1276
+  Files: 1276
   Line coverage: 99.4%
-  Covered lines: 28242
-  Uncovered lines: 149
-  Coverable lines: 28391
-  Total lines: 71428
-  Branch coverage: 97.2% (10698 of 11003)
-  Covered branches: 10698
-  Total branches: 11003
-  Method coverage: 100% (1841 of 1841)
-  Full method coverage: 95.9% (1767 of 1841)
-  Covered methods: 1841
-  Fully covered methods: 1767
-  Total methods: 1841
+  Covered lines: 28271
+  Uncovered lines: 145
+  Coverable lines: 28416
+  Total lines: 71493
+  Branch coverage: 97.2% (10712 of 11015)
+  Covered branches: 10712
+  Total branches: 11015
+  Method coverage: 100% (1843 of 1843)
+  Full method coverage: 95.9% (1769 of 1843)
+  Covered methods: 1843
+  Fully covered methods: 1769
+  Total methods: 1843
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -956,6 +956,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoLogarithms                                                                                                    100%
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoRecursive                                                                                                     100%
   LeetCode.Algorithms.PrimeSubtractionOperation.PrimeSubtractionOperationIterative                                                                       100%
+  LeetCode.Algorithms.ProcessStringWithSpecialOperations1.ProcessStringWithSpecialOperations1Simulation                                                  100%
   LeetCode.Algorithms.ProductOfArrayExceptSelf.ProductOfArrayExceptSelfPrefixSum                                                                         100%
   LeetCode.Algorithms.ProductOfTheLastKNumbers.ProductOfTheLastKNumbersPrefixSum                                                                         100%
   LeetCode.Algorithms.PushDominoes.PushDominoesForceArray                                                                                                100%
@@ -1285,7 +1286,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
