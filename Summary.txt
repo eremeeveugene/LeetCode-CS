@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/20/2026 - 6:11:35 PM
-  Coverage date: 6/20/2026 - 6:11:09 PM - 6/20/2026 - 6:11:27 PM
+  Generated on: 6/21/2026 - 8:01:25 PM
+  Coverage date: 6/21/2026 - 8:00:53 PM - 6/21/2026 - 8:01:16 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1277
-  Files: 1277
+  Classes: 1279
+  Files: 1279
   Line coverage: 99.4%
-  Covered lines: 28291
-  Uncovered lines: 145
-  Coverable lines: 28436
-  Total lines: 71541
-  Branch coverage: 97.2% (10721 of 11023)
-  Covered branches: 10721
-  Total branches: 11023
-  Method coverage: 100% (1844 of 1844)
-  Full method coverage: 95.9% (1770 of 1844)
-  Covered methods: 1844
-  Fully covered methods: 1770
-  Total methods: 1844
+  Covered lines: 28328
+  Uncovered lines: 144
+  Coverable lines: 28472
+  Total lines: 71647
+  Branch coverage: 97.2% (10730 of 11033)
+  Covered branches: 10730
+  Total branches: 11033
+  Method coverage: 100% (1846 of 1846)
+  Full method coverage: 95.9% (1772 of 1846)
+  Covered methods: 1846
+  Fully covered methods: 1772
+  Total methods: 1846
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -684,6 +684,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumDistanceBetweenPairOfValues.MaximumDistanceBetweenPairOfValuesTwoPointers                                                   100%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysBruteForce                                                                          100%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysGreedy                                                                              100%
+  LeetCode.Algorithms.MaximumIceCreamBars.MaximumIceCreamBarsCountingSort                                                                                100%
+  LeetCode.Algorithms.MaximumIceCreamBars.MaximumIceCreamBarsSorting                                                                                     100%
   LeetCode.Algorithms.MaximumLevelSumOfBinaryTree.MaximumLevelSumOfBinaryTreeBreadthFirstSearch                                                          100%
   LeetCode.Algorithms.MaximumMatchingOfPlayersWithTrainers.MaximumMatchingOfPlayersWithTrainersSorting                                                   100%
   LeetCode.Algorithms.MaximumMatrixSum.MaximumMatrixSumBruteForce                                                                                        100%
@@ -1287,7 +1289,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           98.7%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
