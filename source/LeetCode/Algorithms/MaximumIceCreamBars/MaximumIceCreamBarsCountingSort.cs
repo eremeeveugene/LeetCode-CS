@@ -40,6 +40,11 @@ public sealed class MaximumIceCreamBarsCountingSort : IMaximumIceCreamBars
 
         for (var cost = 1; cost < costsFrequencies.Length; cost++)
         {
+            if (coins < cost)
+            {
+                break;
+            }
+
             var costFrequency = costsFrequencies[cost];
 
             var affordableCount = Math.Min(costFrequency, coins / cost);
