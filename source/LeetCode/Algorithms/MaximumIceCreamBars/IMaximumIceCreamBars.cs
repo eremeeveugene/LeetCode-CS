@@ -9,19 +9,20 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.ModifyTheMatrix;
+namespace LeetCode.Algorithms.MaximumIceCreamBars;
 
 /// <summary>
-///     https://leetcode.com/problems/modify-the-matrix/description
+///     https://leetcode.com/problems/maximum-ice-cream-bars/description
 /// </summary>
-public interface IModifyTheMatrix
+public interface IMaximumIceCreamBars
 {
     /// <summary>
-    ///     Builds a new matrix equal to <paramref name="matrix" /> in which every element equal to <c>-1</c> is replaced with
-    ///     the maximum element of its respective column. Each column is guaranteed to contain at least one non-negative
-    ///     integer.
+    ///     Determines the maximum number of ice cream bars that can be bought with <paramref name="coins" /> coins, where
+    ///     <paramref name="costs" />[i] is the price of the i-th ice cream bar. Each bar can be bought at most once and the
+    ///     order of purchase does not matter.
     /// </summary>
-    /// <param name="matrix">The <c>m x n</c> matrix to modify.</param>
-    /// <returns>The modified matrix where each <c>-1</c> is replaced with the maximum element of its column.</returns>
-    int[][] ModifiedMatrix(int[][] matrix);
+    /// <param name="costs">The prices of the available ice cream bars.</param>
+    /// <param name="coins">The total amount of coins available to spend.</param>
+    /// <returns>The maximum number of ice cream bars that can be bought.</returns>
+    int MaxIceCream(int[] costs, int coins);
 }

@@ -9,19 +9,40 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.ModifyTheMatrix;
+namespace LeetCode.Algorithms.MaximumIceCreamBars;
 
-/// <summary>
-///     https://leetcode.com/problems/modify-the-matrix/description
-/// </summary>
-public interface IModifyTheMatrix
+/// <inheritdoc />
+public sealed class MaximumIceCreamBarsSorting : IMaximumIceCreamBars
 {
     /// <summary>
-    ///     Builds a new matrix equal to <paramref name="matrix" /> in which every element equal to <c>-1</c> is replaced with
-    ///     the maximum element of its respective column. Each column is guaranteed to contain at least one non-negative
-    ///     integer.
+    ///     Time complexity - O(n log n)
+    ///     Space complexity - O(log n)
     /// </summary>
-    /// <param name="matrix">The <c>m x n</c> matrix to modify.</param>
-    /// <returns>The modified matrix where each <c>-1</c> is replaced with the maximum element of its column.</returns>
-    int[][] ModifiedMatrix(int[][] matrix);
+    /// <param name="costs"></param>
+    /// <param name="coins"></param>
+    /// <returns></returns>
+    public int MaxIceCream(int[] costs, int coins)
+    {
+        var n = costs.Length;
+
+        Array.Sort(costs);
+
+        var count = 0;
+
+        for (var i = 0; i < n; i++)
+        {
+            var cost = costs[i];
+
+            if (coins < cost)
+            {
+                break;
+            }
+
+            coins -= cost;
+
+            count++;
+        }
+
+        return count;
+    }
 }

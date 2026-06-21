@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheHighestAltitude;
 
 /// <summary>
-///     https://leetcode.com/problems/find-the-highest-altitude/
+///     https://leetcode.com/problems/find-the-highest-altitude/description
 /// </summary>
 public interface IFindTheHighestAltitude
 {
