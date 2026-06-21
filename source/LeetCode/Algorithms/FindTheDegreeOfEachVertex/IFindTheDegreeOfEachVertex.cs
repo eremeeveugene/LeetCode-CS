@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheDegreeOfEachVertex;
 
 /// <summary>
-///     https://leetcode.com/problems/find-the-degree-of-each-vertex/
+///     https://leetcode.com/problems/find-the-degree-of-each-vertex/description
 /// </summary>
 public interface IFindTheDegreeOfEachVertex
 {

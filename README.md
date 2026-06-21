@@ -502,6 +502,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1822. Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/description/)
 - [1829. Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/description/)
 - [1832. Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/description/)
+- [1833. Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/description/)
 - [1855. Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/description/)
 - [1859. Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/description/)
 - [1861. Rotating the Box](https://leetcode.com/problems/rotating-the-box/description/)

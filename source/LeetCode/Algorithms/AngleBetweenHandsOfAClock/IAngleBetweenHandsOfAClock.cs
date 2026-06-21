@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.AngleBetweenHandsOfAClock;
 
 /// <summary>
-///     https://leetcode.com/problems/angle-between-hands-of-a-clock/
+///     https://leetcode.com/problems/angle-between-hands-of-a-clock/description
 /// </summary>
 public interface IAngleBetweenHandsOfAClock
 {
