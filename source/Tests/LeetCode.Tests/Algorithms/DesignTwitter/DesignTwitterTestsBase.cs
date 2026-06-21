@@ -87,6 +87,10 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         yield return [new Scenario<IDesignTwitter>([new FollowOperation(1, 2), new FollowOperation(1, 3), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([])])];
 
         yield return [new Scenario<IDesignTwitter>([new FollowOperation(1, 2), new PostTweetOperation(2, 100), new PostTweetOperation(1, 1), new PostTweetOperation(1, 2), new PostTweetOperation(1, 3), new PostTweetOperation(1, 4), new PostTweetOperation(1, 5), new PostTweetOperation(1, 6), new PostTweetOperation(1, 7), new PostTweetOperation(1, 8), new PostTweetOperation(1, 9), new PostTweetOperation(1, 10), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])])];
+
+        yield return [new Scenario<IDesignTwitter>([new PostTweetOperation(1, 5), new FollowOperation(1, 1), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([5])])];
+
+        yield return [new Scenario<IDesignTwitter>([new FollowOperation(1, 1), new FollowOperation(1, 2), new PostTweetOperation(1, 1), new PostTweetOperation(2, 2), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([2, 1])])];
     }
 
     private sealed class PostTweetOperation : IOperation<IDesignTwitter>
