@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignTwitter;
 
 /// <summary>
-///     https://leetcode.com/problems/design-twitter/
+///     https://leetcode.com/problems/design-twitter/description
 /// </summary>
 public interface IDesignTwitter
 {
