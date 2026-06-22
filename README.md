@@ -368,6 +368,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1161. Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/)
 - [1171. Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/description/)
 - [1185. Day of the Week](https://leetcode.com/problems/day-of-the-week/description/)
+- [1189. Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/description/)
 - [1190. Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/description/)
 - [1200. Minimum Absolute Difference](https://leetcode.com/problems/unique-number-of-occurrences/description/)
 - [1207. Unique Number of Occurrences](https://leetcode.com/problems/minimum-absolute-difference/description/)
