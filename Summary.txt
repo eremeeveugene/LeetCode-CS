@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/22/2026 - 8:31:15 AM
-  Coverage date: 6/22/2026 - 8:30:43 AM - 6/22/2026 - 8:31:06 AM
+  Generated on: 6/22/2026 - 8:51:03 AM
+  Coverage date: 6/22/2026 - 8:50:31 AM - 6/22/2026 - 8:50:55 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1281
-  Files: 1281
+  Classes: 1282
+  Files: 1282
   Line coverage: 99.4%
-  Covered lines: 28407
-  Uncovered lines: 149
-  Coverable lines: 28556
-  Total lines: 71847
-  Branch coverage: 97.2% (10756 of 11061)
-  Covered branches: 10756
-  Total branches: 11061
-  Method coverage: 100% (1853 of 1853)
-  Full method coverage: 96% (1779 of 1853)
-  Covered methods: 1853
-  Fully covered methods: 1779
-  Total methods: 1853
+  Covered lines: 28438
+  Uncovered lines: 143
+  Coverable lines: 28581
+  Total lines: 71909
+  Branch coverage: 97.2% (10768 of 11069)
+  Covered branches: 10768
+  Total branches: 11069
+  Method coverage: 100% (1854 of 1854)
+  Full method coverage: 96% (1781 of 1854)
+  Covered methods: 1854
+  Fully covered methods: 1781
+  Total methods: 1854
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -691,6 +691,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumMatchingOfPlayersWithTrainers.MaximumMatchingOfPlayersWithTrainersSorting                                                   100%
   LeetCode.Algorithms.MaximumMatrixSum.MaximumMatrixSumBruteForce                                                                                        100%
   LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses.MaximumNestingDepthOfTheParenthesesIterative                                                   100%
+  LeetCode.Algorithms.MaximumNumberOfBalloons.MaximumNumberOfBalloonsCounting                                                                            100%
   LeetCode.Algorithms.MaximumNumberOfDistinctElementsAfterOperations.MaximumNumberOfDistinctElementsAfterOperationsSortingGreedy                         100%
   LeetCode.Algorithms.MaximumNumberOfEventsThatCanBeAttended.MaximumNumberOfEventsThatCanBeAttendedPriorityQueue                                         100%
   LeetCode.Algorithms.MaximumNumberOfIntegersToChooseFromRange1.MaximumNumberOfIntegersToChooseFromRange1HashSet                                         100%
@@ -1291,7 +1292,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
