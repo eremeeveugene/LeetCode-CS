@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/21/2026 - 8:28:36 PM
-  Coverage date: 6/21/2026 - 8:28:07 PM - 6/21/2026 - 8:28:29 PM
+  Generated on: 6/22/2026 - 8:31:15 AM
+  Coverage date: 6/22/2026 - 8:30:43 AM - 6/22/2026 - 8:31:06 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1280
-  Files: 1280
+  Classes: 1281
+  Files: 1281
   Line coverage: 99.4%
-  Covered lines: 28386
-  Uncovered lines: 145
-  Coverable lines: 28531
-  Total lines: 71785
-  Branch coverage: 97.2% (10751 of 11053)
-  Covered branches: 10751
-  Total branches: 11053
-  Method coverage: 100% (1852 of 1852)
-  Full method coverage: 96% (1778 of 1852)
-  Covered methods: 1852
-  Fully covered methods: 1778
-  Total methods: 1852
+  Covered lines: 28407
+  Uncovered lines: 149
+  Coverable lines: 28556
+  Total lines: 71847
+  Branch coverage: 97.2% (10756 of 11061)
+  Covered branches: 10756
+  Total branches: 11061
+  Method coverage: 100% (1853 of 1853)
+  Full method coverage: 96% (1779 of 1853)
+  Covered methods: 1853
+  Fully covered methods: 1779
+  Total methods: 1853
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -980,6 +980,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RankTransformOfAnArray.RankTransformOfAnArrayDictionary                                                                            100%
   LeetCode.Algorithms.RansomNote.RansomNoteCounting                                                                                                      100%
   LeetCode.Algorithms.RansomNote.RansomNoteDictionary                                                                                                    100%
+  LeetCode.Algorithms.RearrangeCharactersToMakeTargetString.RearrangeCharactersToMakeTargetStringCounting                                                100%
   LeetCode.Algorithms.RecoverTreeFromPreorderTraversal.RecoverTreeFromPreorderTraversalDepthFirstSearch                                                  100%
   LeetCode.Algorithms.RegionsCutBySlashes.RegionsCutBySlashesDepthFirstSearch                                                                            100%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksBruteForce                                                                                              100%
@@ -1290,7 +1291,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
