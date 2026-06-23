@@ -14,4 +14,4 @@ using LeetCode.Algorithms.NumberOfLaserBeamsInABank;
 namespace LeetCode.Tests.Algorithms.NumberOfLaserBeamsInABank;
 
 [TestClass]
-public sealed class NumberOfLaserBeamsInABankIterativeTests : NumberOfLaserBeamsInABankTestsBase<NumberOfLaserBeamsInABankIterative>;
+public sealed class NumberOfLaserBeamsInABankGreedyTests : NumberOfLaserBeamsInABankTestsBase<NumberOfLaserBeamsInABankGreedy>;

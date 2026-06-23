@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfLaserBeamsInABank;
 
 /// <inheritdoc />
-public sealed class NumberOfLaserBeamsInABankIterative : INumberOfLaserBeamsInABank
+public sealed class NumberOfLaserBeamsInABankGreedy : INumberOfLaserBeamsInABank
 {
     /// <summary>
     ///     Time complexity - O(m * n)
