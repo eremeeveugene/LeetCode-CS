@@ -414,6 +414,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1390. Four Divisors](https://leetcode.com/problems/four-divisors/description/)
 - [1391. Check if There is a Valid Path in a Grid](https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/description/)
 - [1394. Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array/description/)
+- [1396. Design Underground System](https://leetcode.com/problems/design-underground-system/description/)
 - [1399. Count Largest Group](https://leetcode.com/problems/count-largest-group/description/)
 - [1400. Construct K Palindrome Strings](https://leetcode.com/problems/construct-k-palindrome-strings/description/)
 - [1404. Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/description/)
