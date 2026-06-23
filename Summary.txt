@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/23/2026 - 1:19:02 PM
-  Coverage date: 6/23/2026 - 1:18:29 PM - 6/23/2026 - 1:18:51 PM
+  Generated on: 6/23/2026 - 1:40:56 PM
+  Coverage date: 6/23/2026 - 1:40:26 PM - 6/23/2026 - 1:40:48 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1283
-  Files: 1283
-  Line coverage: 99.4%
-  Covered lines: 28447
-  Uncovered lines: 149
-  Coverable lines: 28596
-  Total lines: 71973
-  Branch coverage: 97.2% (10764 of 11069)
-  Covered branches: 10764
-  Total branches: 11069
-  Method coverage: 100% (1858 of 1858)
-  Full method coverage: 96% (1784 of 1858)
-  Covered methods: 1858
-  Fully covered methods: 1784
-  Total methods: 1858
+  Classes: 1284
+  Files: 1284
+  Line coverage: 99.5%
+  Covered lines: 28479
+  Uncovered lines: 143
+  Coverable lines: 28622
+  Total lines: 72035
+  Branch coverage: 97.2% (10778 of 11079)
+  Covered branches: 10778
+  Total branches: 11079
+  Method coverage: 100% (1859 of 1859)
+  Full method coverage: 96% (1786 of 1859)
+  Covered methods: 1859
+  Fully covered methods: 1786
+  Total methods: 1859
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -888,6 +888,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsGroupBy                                                                                         100%
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsIterative                                                                                       100%
   LeetCode.Algorithms.NumberOfIslands.NumberOfIslandsIterative                                                                                           100%
+  LeetCode.Algorithms.NumberOfLaserBeamsInABank.NumberOfLaserBeamsInABankGreedy                                                                          100%
   LeetCode.Algorithms.NumberOfOneBits.NumberOfOneBitsBitwise                                                                                             100%
   LeetCode.Algorithms.NumberOfOneBits.NumberOfOneBitsBrianKernighan                                                                                      100%
   LeetCode.Algorithms.NumberOfOneBits.NumberOfOneBitsLookup                                                                                              100%
@@ -1293,7 +1294,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
