@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CreateGridWithExactlyOnePath;
 namespace LeetCode.Tests.Algorithms.CreateGridWithExactlyOnePath;
 
 [TestClass]
-public sealed class CreateGridWithExactlyOnePathConstructionTests : CreateGridWithExactlyOnePathTestsBase<CreateGridWithExactlyOnePathConstruction>;
+public sealed class CreateGridWithExactlyOnePathSimulationTests : CreateGridWithExactlyOnePathTestsBase<CreateGridWithExactlyOnePathSimulation>;

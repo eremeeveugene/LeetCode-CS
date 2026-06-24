@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CreateGridWithExactlyOnePath;
 
 /// <inheritdoc />
-public sealed class CreateGridWithExactlyOnePathConstruction : ICreateGridWithExactlyOnePath
+public sealed class CreateGridWithExactlyOnePathSimulation : ICreateGridWithExactlyOnePath
 {
     /// <inheritdoc />
     /// <remarks>
