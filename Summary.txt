@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/23/2026 - 8:07:35 PM
-  Coverage date: 6/23/2026 - 8:06:50 PM - 6/23/2026 - 8:07:13 PM
+  Generated on: 6/24/2026 - 8:30:26 AM
+  Coverage date: 6/24/2026 - 8:29:52 AM - 6/24/2026 - 8:30:18 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1286
-  Files: 1286
+  Classes: 1287
+  Files: 1287
   Line coverage: 99.4%
-  Covered lines: 28508
+  Covered lines: 28528
   Uncovered lines: 149
-  Coverable lines: 28657
-  Total lines: 72134
-  Branch coverage: 97.2% (10788 of 11093)
-  Covered branches: 10788
-  Total branches: 11093
-  Method coverage: 100% (1863 of 1863)
-  Full method coverage: 96% (1789 of 1863)
-  Covered methods: 1863
-  Fully covered methods: 1789
-  Total methods: 1863
+  Coverable lines: 28677
+  Total lines: 72183
+  Branch coverage: 97.2% (10796 of 11101)
+  Covered branches: 10796
+  Total branches: 11101
+  Method coverage: 100% (1864 of 1864)
+  Full method coverage: 96% (1790 of 1864)
+  Covered methods: 1864
+  Fully covered methods: 1790
+  Total methods: 1864
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -259,6 +259,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CrawlerLogFolder.CrawlerLogFolderSimulation                                                                                        100%
   LeetCode.Algorithms.CreateBinaryTreeFromDescriptions.CreateBinaryTreeFromDescriptionsDictionary                                                        100%
   LeetCode.Algorithms.CreateBinaryTreeFromDescriptions.CreateBinaryTreeFromDescriptionsLookup                                                            100%
+  LeetCode.Algorithms.CreateGridWithExactlyOnePath.CreateGridWithExactlyOnePathSimulation                                                                100%
   LeetCode.Algorithms.CustomSortString.CustomSortStringDictionarySorting                                                                                 100%
   LeetCode.Algorithms.DayOfTheWeek.DayOfTheWeekDateTime                                                                                                  100%
   LeetCode.Algorithms.DayOfTheWeek.DayOfTheWeekMath                                                                                                      100%
