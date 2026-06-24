@@ -897,6 +897,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3925. Concatenate Array With Reverse](https://leetcode.com/problems/concatenate-array-with-reverse/description/)
 - [3931. Check Adjacent Digit Differences](https://leetcode.com/problems/check-adjacent-digit-differences/description/)
 - [3945. Digit Frequency Score](https://leetcode.com/problems/digit-frequency-score/description/)
+- [3963. Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/description/)
 
   </p>
 </details>
