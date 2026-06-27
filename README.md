@@ -788,6 +788,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3223. Minimum Length of String After Operations](https://leetcode.com/problems/minimum-length-of-string-after-operations/description/)
 - [3227. Vowels Game in a String](https://leetcode.com/problems/vowels-game-in-a-string/description/)
 - [3228. Maximum Number of Operations to Move Ones to the End](https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/description/)
+- [3234. Count the Number of Substrings With Dominant Ones](https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/description/)
 - [3242. Design Neighbor Sum Service](https://leetcode.com/problems/design-neighbor-sum-service/description/)
 - [3243. Shortest Distance After Road Addition Queries I](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/description/)
 - [3254. Find the Power of K-Size Subarrays I](https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i/description/)
