@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountTheNumberOfSubstringsWithDominantOnes;
 
 /// <inheritdoc />
-public sealed class CountTheNumberOfSubstringsWithDominantOnesPrefix : ICountTheNumberOfSubstringsWithDominantOnes
+public sealed class CountTheNumberOfSubstringsWithDominantOnesPrefixSum : ICountTheNumberOfSubstringsWithDominantOnes
 {
     /// <inheritdoc />
     /// <remarks>
