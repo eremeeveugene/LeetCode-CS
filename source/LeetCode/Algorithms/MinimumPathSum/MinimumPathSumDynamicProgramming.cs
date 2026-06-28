@@ -17,31 +17,37 @@ public sealed class MinimumPathSumDynamicProgramming : IMinimumPathSum
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(m * n)
-    ///     Space complexity - O(n)
+    ///     Space complexity - O(1)
     /// </remarks>
     public int MinPathSum(int[][] grid)
     {
+        var m = grid.Length;
         var n = grid[0].Length;
 
-        Span<int> rowSums = stackalloc int[n];
-
-        rowSums[0] = grid[0][0];
-
-        for (var i = 1; i < n; i++)
+        for (var i = 0; i < m; i++)
         {
-            rowSums[i] = rowSums[i - 1] + grid[0][i];
-        }
-
-        for (var i = 1; i < grid.Length; i++)
-        {
-            rowSums[0] += grid[i][0];
-
-            for (var j = 1; j < n; j++)
+            for (var j = 0; j < n; j++)
             {
-                rowSums[j] = Math.Min(rowSums[j], rowSums[j - 1]) + grid[i][j];
+                if (i == 0 && j == 0)
+                {
+                    continue;
+                }
+
+                if (i == 0)
+                {
+                    grid[i][j] += grid[i][j - 1];
+                }
+                else if (j == 0)
+                {
+                    grid[i][j] += grid[i - 1][j];
+                }
+                else
+                {
+                    grid[i][j] += Math.Min(grid[i - 1][j], grid[i][j - 1]);
+                }
             }
         }
 
-        return rowSums[n - 1];
+        return grid[m - 1][n - 1];
     }
 }
