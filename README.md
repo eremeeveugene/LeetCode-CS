@@ -82,6 +82,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [57. Insert Interval](https://leetcode.com/problems/insert-interval/description/)
 - [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/description/)
 - [61. Rotate List](https://leetcode.com/problems/rotate-list/description/)
+- [64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/)
 - [66. Plus One](https://leetcode.com/problems/plus-one/description/)
 - [67. Add Binary](https://leetcode.com/problems/add-binary/description/)
 - [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/description/)
