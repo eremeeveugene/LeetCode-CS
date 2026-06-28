@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/24/2026 - 8:30:26 AM
-  Coverage date: 6/24/2026 - 8:29:52 AM - 6/24/2026 - 8:30:18 AM
+  Generated on: 6/28/2026 - 6:02:43 PM
+  Coverage date: 6/28/2026 - 6:02:11 PM - 6/28/2026 - 6:02:36 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1287
-  Files: 1287
+  Classes: 1289
+  Files: 1289
   Line coverage: 99.4%
-  Covered lines: 28528
+  Covered lines: 28604
   Uncovered lines: 149
-  Coverable lines: 28677
-  Total lines: 72183
-  Branch coverage: 97.2% (10796 of 11101)
-  Covered branches: 10796
-  Total branches: 11101
-  Method coverage: 100% (1864 of 1864)
-  Full method coverage: 96% (1790 of 1864)
-  Covered methods: 1864
-  Fully covered methods: 1790
-  Total methods: 1864
+  Coverable lines: 28753
+  Total lines: 72335
+  Branch coverage: 97.2% (10834 of 11139)
+  Covered branches: 10834
+  Total branches: 11139
+  Method coverage: 100% (1866 of 1866)
+  Full method coverage: 96% (1792 of 1866)
+  Covered methods: 1866
+  Fully covered methods: 1792
+  Total methods: 1866
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -249,6 +249,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountTheNumberOfSpecialCharacters1.CountTheNumberOfSpecialCharacters1BitMask                                                       100%
   LeetCode.Algorithms.CountTheNumberOfSpecialCharacters1.CountTheNumberOfSpecialCharacters1HashSet                                                       100%
   LeetCode.Algorithms.CountTheNumberOfSpecialCharacters1.CountTheNumberOfSpecialCharacters1Lookup                                                        100%
+  LeetCode.Algorithms.CountTheNumberOfSubstringsWithDominantOnes.CountTheNumberOfSubstringsWithDominantOnesCounting                                      100%
+  LeetCode.Algorithms.CountTheNumberOfSubstringsWithDominantOnes.CountTheNumberOfSubstringsWithDominantOnesPrefixSum                                     100%
   LeetCode.Algorithms.CountTotalNumberOfColoredCells.CountTotalNumberOfColoredCellsIterative                                                             100%
   LeetCode.Algorithms.CountTotalNumberOfColoredCells.CountTotalNumberOfColoredCellsMath                                                                  100%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                                   100%
