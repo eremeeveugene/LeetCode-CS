@@ -1,25 +1,25 @@
 Summary
-  Generated on: 6/29/2026 - 9:31:40 AM
-  Coverage date: 6/29/2026 - 9:31:13 AM - 6/29/2026 - 9:31:33 AM
+  Generated on: 6/29/2026 - 9:47:32 AM
+  Coverage date: 6/29/2026 - 9:47:02 AM - 6/29/2026 - 9:47:25 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1290
-  Files: 1290
-  Line coverage: 99.4%
-  Covered lines: 28629
-  Uncovered lines: 149
-  Coverable lines: 28778
-  Total lines: 72388
-  Branch coverage: 97.2% (10846 of 11151)
-  Covered branches: 10846
-  Total branches: 11151
-  Method coverage: 100% (1867 of 1867)
-  Full method coverage: 96% (1793 of 1867)
-  Covered methods: 1867
-  Fully covered methods: 1793
-  Total methods: 1867
+  Classes: 1291
+  Files: 1291
+  Line coverage: 99.5%
+  Covered lines: 28648
+  Uncovered lines: 143
+  Coverable lines: 28791
+  Total lines: 72428
+  Branch coverage: 97.3% (10854 of 11155)
+  Covered branches: 10854
+  Total branches: 11155
+  Method coverage: 100% (1868 of 1868)
+  Full method coverage: 96% (1795 of 1868)
+  Covered methods: 1868
+  Fully covered methods: 1795
+  Total methods: 1868
 
-LeetCode                                                                                                                                                99.4%
+LeetCode                                                                                                                                                99.5%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsSorting                     100%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                       100%
@@ -906,6 +906,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfStepsToReduceNumberInBinaryRepresentationToOne.NumberOfStepsToReduceNumberInBinaryRepresentationToOneGreedy                100%
   LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroBitwise                                                         100%
   LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero.NumberOfStepsToReduceNumberToZeroIterative                                                       100%
+  LeetCode.Algorithms.NumberOfStringsThatAppearAsSubstringsInWord.NumberOfStringsThatAppearAsSubstringsInWordIterative                                   100%
   LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch.NumberOfStudentsUnableToEatLunchIterative                                                         100%
   LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch.NumberOfStudentsUnableToEatLunchQueue                                                             100%
   LeetCode.Algorithms.NumberOfSubArraysWithOddSum.NumberOfSubArraysWithOddSumBruteForce                                                                  100%
@@ -1300,7 +1301,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
