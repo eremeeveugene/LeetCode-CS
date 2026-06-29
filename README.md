@@ -529,6 +529,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1957. Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string/description/)
 - [1961. Check If String Is a Prefix of Array](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/description/)
 - [1963. Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/description/)
+- [1967. Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/description/)
 - [1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)
 - [1975. Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum/description/)
 - [1980. Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/description/)
