@@ -1,25 +1,25 @@
 Summary
-  Generated on: 6/29/2026 - 9:47:32 AM
-  Coverage date: 6/29/2026 - 9:47:02 AM - 6/29/2026 - 9:47:25 AM
+  Generated on: 6/29/2026 - 9:11:39 PM
+  Coverage date: 6/29/2026 - 9:11:07 PM - 6/29/2026 - 9:11:31 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1291
-  Files: 1291
-  Line coverage: 99.5%
-  Covered lines: 28648
-  Uncovered lines: 143
-  Coverable lines: 28791
-  Total lines: 72428
-  Branch coverage: 97.3% (10854 of 11155)
-  Covered branches: 10854
-  Total branches: 11155
-  Method coverage: 100% (1868 of 1868)
-  Full method coverage: 96% (1795 of 1868)
-  Covered methods: 1868
-  Fully covered methods: 1795
-  Total methods: 1868
+  Classes: 1293
+  Files: 1293
+  Line coverage: 99.4%
+  Covered lines: 28672
+  Uncovered lines: 149
+  Coverable lines: 28821
+  Total lines: 72515
+  Branch coverage: 97.2% (10858 of 11163)
+  Covered branches: 10858
+  Total branches: 11163
+  Method coverage: 100% (1870 of 1870)
+  Full method coverage: 96% (1796 of 1870)
+  Covered methods: 1870
+  Fully covered methods: 1796
+  Total methods: 1870
 
-LeetCode                                                                                                                                                99.5%
+LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsSorting                     100%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                       100%
@@ -689,6 +689,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumDistanceBetweenPairOfValues.MaximumDistanceBetweenPairOfValuesTwoPointers                                                   100%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysBruteForce                                                                          100%
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysGreedy                                                                              100%
+  LeetCode.Algorithms.MaximumElementAfterDecreasingAndRearranging.MaximumElementAfterDecreasingAndRearrangingCountingSort                                100%
+  LeetCode.Algorithms.MaximumElementAfterDecreasingAndRearranging.MaximumElementAfterDecreasingAndRearrangingSorting                                     100%
   LeetCode.Algorithms.MaximumIceCreamBars.MaximumIceCreamBarsCountingSort                                                                                100%
   LeetCode.Algorithms.MaximumIceCreamBars.MaximumIceCreamBarsSorting                                                                                     100%
   LeetCode.Algorithms.MaximumLevelSumOfBinaryTree.MaximumLevelSumOfBinaryTreeBreadthFirstSearch                                                          100%
@@ -1301,7 +1303,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
