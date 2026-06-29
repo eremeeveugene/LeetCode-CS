@@ -1,23 +1,23 @@
 Summary
-  Generated on: 6/28/2026 - 6:02:43 PM
-  Coverage date: 6/28/2026 - 6:02:11 PM - 6/28/2026 - 6:02:36 PM
+  Generated on: 6/29/2026 - 9:31:40 AM
+  Coverage date: 6/29/2026 - 9:31:13 AM - 6/29/2026 - 9:31:33 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1289
-  Files: 1289
+  Classes: 1290
+  Files: 1290
   Line coverage: 99.4%
-  Covered lines: 28604
+  Covered lines: 28629
   Uncovered lines: 149
-  Coverable lines: 28753
-  Total lines: 72335
-  Branch coverage: 97.2% (10834 of 11139)
-  Covered branches: 10834
-  Total branches: 11139
-  Method coverage: 100% (1866 of 1866)
-  Full method coverage: 96% (1792 of 1866)
-  Covered methods: 1866
-  Fully covered methods: 1792
-  Total methods: 1866
+  Coverable lines: 28778
+  Total lines: 72388
+  Branch coverage: 97.2% (10846 of 11151)
+  Covered branches: 10846
+  Total branches: 11151
+  Method coverage: 100% (1867 of 1867)
+  Full method coverage: 96% (1793 of 1867)
+  Covered methods: 1867
+  Fully covered methods: 1793
+  Total methods: 1867
 
 LeetCode                                                                                                                                                99.4%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -828,6 +828,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumOperationsToMakeUniValueGrid.MinimumOperationsToMakeUniValueGridSorting                                                     100%
   LeetCode.Algorithms.MinimumOperationsToMakeUniValueGrid.MinimumOperationsToMakeUniValueGridSortingSpan                                                 100%
   LeetCode.Algorithms.MinimumPairRemovalToSortArray1.MinimumPairRemovalToSortArray1Simulation                                                            100%
+  LeetCode.Algorithms.MinimumPathSum.MinimumPathSumDynamicProgramming                                                                                    100%
   LeetCode.Algorithms.MinimumPositiveSumSubarray.MinimumPositiveSumSubarrayPrefixSum                                                                     100%
   LeetCode.Algorithms.MinimumRecolorsToGetKConsecutiveBlackBlocks.MinimumRecolorsToGetKConsecutiveBlackBlocksSlidingWindow                               100%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStack                                                       100%
