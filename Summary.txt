@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/3/2026 - 10:10:06 AM
-  Coverage date: 7/3/2026 - 10:09:29 AM - 7/3/2026 - 10:09:54 AM
+  Generated on: 7/3/2026 - 11:36:38 AM
+  Coverage date: 7/3/2026 - 11:36:08 AM - 7/3/2026 - 11:36:30 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1296
-  Files: 1296
+  Classes: 1297
+  Files: 1297
   Line coverage: 99.5%
-  Covered lines: 28767
+  Covered lines: 28781
   Uncovered lines: 143
-  Coverable lines: 28910
-  Total lines: 72712
-  Branch coverage: 97.3% (10894 of 11195)
-  Covered branches: 10894
-  Total branches: 11195
-  Method coverage: 100% (1873 of 1873)
-  Full method coverage: 96.1% (1800 of 1873)
-  Covered methods: 1873
-  Fully covered methods: 1800
-  Total methods: 1873
+  Coverable lines: 28924
+  Total lines: 72753
+  Branch coverage: 97.3% (10898 of 11199)
+  Covered branches: 10898
+  Total branches: 11199
+  Method coverage: 100% (1874 of 1874)
+  Full method coverage: 96.1% (1801 of 1874)
+  Covered methods: 1874
+  Fully covered methods: 1801
+  Total methods: 1874
 
 LeetCode                                                                                                                                                99.5%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -835,6 +835,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumPathSum.MinimumPathSumDynamicProgramming                                                                                    100%
   LeetCode.Algorithms.MinimumPositiveSumSubarray.MinimumPositiveSumSubarrayPrefixSum                                                                     100%
   LeetCode.Algorithms.MinimumRecolorsToGetKConsecutiveBlackBlocks.MinimumRecolorsToGetKConsecutiveBlackBlocksSlidingWindow                               100%
+  LeetCode.Algorithms.MinimumRemovalsToBalanceArray.MinimumRemovalsToBalanceArraySlidingWindow                                                           100%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStack                                                       100%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStringBuilder                                               100%
   LeetCode.Algorithms.MinimumStringLengthAfterRemovingSubstrings.MinimumStringLengthAfterRemovingSubstringsStack                                         100%
