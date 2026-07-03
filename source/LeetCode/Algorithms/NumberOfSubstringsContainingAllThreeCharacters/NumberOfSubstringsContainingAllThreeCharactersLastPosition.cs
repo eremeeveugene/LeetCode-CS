@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NumberOfSubstringsContainingAllThreeCharacters;
 
 /// <inheritdoc />
-public sealed class NumberOfSubstringsContainingAllThreeCharactersSlidingWindow : INumberOfSubstringsContainingAllThreeCharacters
+public sealed class NumberOfSubstringsContainingAllThreeCharactersLastPosition : INumberOfSubstringsContainingAllThreeCharacters
 {
     /// <inheritdoc />
     /// <remarks>
@@ -23,22 +23,28 @@ public sealed class NumberOfSubstringsContainingAllThreeCharactersSlidingWindow 
     {
         var numberOfSubstrings = 0;
 
-        var left = 0;
+        var lastA = -1;
+        var lastB = -1;
+        var lastC = -1;
 
-        var frequency = new int[3];
-
-        for (var right = 0; right < s.Length; right++)
+        for (var i = 0; i < s.Length; i++)
         {
-            frequency[s[right] - 'a']++;
+            var c = s[i];
 
-            while (frequency[0] > 0 && frequency[1] > 0 && frequency[2] > 0)
+            switch (c)
             {
-                numberOfSubstrings += s.Length - right;
-
-                frequency[s[left] - 'a']--;
-
-                left++;
+                case 'a':
+                    lastA = i;
+                    break;
+                case 'b':
+                    lastB = i;
+                    break;
+                default:
+                    lastC = i;
+                    break;
             }
+
+            numberOfSubstrings += 1 + Math.Min(lastA, Math.Min(lastB, lastC));
         }
 
         return numberOfSubstrings;
