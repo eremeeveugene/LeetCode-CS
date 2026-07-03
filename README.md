@@ -864,6 +864,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3606. Coupon Code Validator](https://leetcode.com/problems/coupon-code-validator/description/)
 - [3614. Process String with Special Operations I](https://leetcode.com/problems/process-string-with-special-operations-i/description/)
 - [3622. Check Divisibility by Digit Sum and Product](https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/description/)
+- [3634. Minimum Removals to Balance Array](https://leetcode.com/problems/minimum-removals-to-balance-array/description/)
 - [3637. Trionic Array I](https://leetcode.com/problems/trionic-array-i/description/)
 - [3643. Flip Square Submatrix Vertically](https://leetcode.com/problems/flip-square-submatrix-vertically/description/)
 - [3668. Restore Finishing Order](https://leetcode.com/problems/restore-finishing-order/description/)
