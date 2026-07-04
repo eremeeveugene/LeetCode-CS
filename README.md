@@ -348,6 +348,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1009. Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/description/)
 - [1013. Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/description/)
 - [1014. Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/description/)
+- [1015. Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k/description/)
 - [1018. Binary Prefix Divisible By 5](https://leetcode.com/problems/binary-prefix-divisible-by-5/description/)
 - [1022. Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/description/)
 - [1024. Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/description/)
