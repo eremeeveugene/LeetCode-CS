@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/4/2026 - 7:02:10 PM
-  Coverage date: 7/4/2026 - 7:01:30 PM - 7/4/2026 - 7:01:56 PM
+  Generated on: 7/5/2026 - 2:57:51 PM
+  Coverage date: 7/5/2026 - 2:57:09 PM - 7/5/2026 - 2:57:33 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1299
-  Files: 1299
+  Classes: 1300
+  Files: 1300
   Line coverage: 99.5%
-  Covered lines: 28816
-  Uncovered lines: 144
-  Coverable lines: 28960
-  Total lines: 72850
-  Branch coverage: 97.3% (10911 of 11213)
-  Covered branches: 10911
-  Total branches: 11213
-  Method coverage: 100% (1876 of 1876)
-  Full method coverage: 96% (1802 of 1876)
-  Covered methods: 1876
-  Fully covered methods: 1802
-  Total methods: 1876
+  Covered lines: 28858
+  Uncovered lines: 143
+  Coverable lines: 29001
+  Total lines: 72955
+  Branch coverage: 97.3% (10922 of 11223)
+  Covered branches: 10922
+  Total branches: 11223
+  Method coverage: 100% (1879 of 1879)
+  Full method coverage: 96.1% (1806 of 1879)
+  Covered methods: 1879
+  Fully covered methods: 1806
+  Total methods: 1879
 
 LeetCode                                                                                                                                                99.5%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -839,6 +839,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumRemovalsToBalanceArray.MinimumRemovalsToBalanceArraySlidingWindow                                                           100%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStack                                                       100%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStringBuilder                                               100%
+  LeetCode.Algorithms.MinimumScoreOfAPathBetweenTwoCities.MinimumScoreOfAPathBetweenTwoCitiesUnionFind                                                   100%
   LeetCode.Algorithms.MinimumStringLengthAfterRemovingSubstrings.MinimumStringLengthAfterRemovingSubstringsStack                                         100%
   LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits.MinimumSumOfFourDigitNumberAfterSplittingDigitsChars                               100%
   LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits.MinimumSumOfFourDigitNumberAfterSplittingDigitsNumbers                             100%
@@ -1117,7 +1118,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SlidingPuzzle.SlidingPuzzlePrecomputedDictionary                                                                                   100%
   LeetCode.Algorithms.SmallestEvenMultiple.SmallestEvenMultipleConstant                                                                                  100%
   LeetCode.Algorithms.SmallestIndexWithDigitSumEqualToIndex.SmallestIndexWithDigitSumEqualToIndexBruteForce                                              100%
-  LeetCode.Algorithms.SmallestIntegerDivisibleByK.SmallestIntegerDivisibleByKIterative                                                                  92.8%
+  LeetCode.Algorithms.SmallestIntegerDivisibleByK.SmallestIntegerDivisibleByKIterative                                                                   100%
   LeetCode.Algorithms.SmallestMissingMultipleOfK.SmallestMissingMultipleOfKLookup                                                                        100%
   LeetCode.Algorithms.SmallestNumberWithAllSetBits.SmallestNumberWithAllSetBitsBinarySearch                                                              100%
   LeetCode.Algorithms.SmallestNumberWithAllSetBits.SmallestNumberWithAllSetBitsIterative                                                                 100%
