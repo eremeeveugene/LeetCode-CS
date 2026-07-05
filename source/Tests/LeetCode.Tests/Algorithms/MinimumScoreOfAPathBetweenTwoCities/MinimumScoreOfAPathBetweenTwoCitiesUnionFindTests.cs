@@ -9,33 +9,9 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.SmallestIntegerDivisibleByK;
+using LeetCode.Algorithms.MinimumScoreOfAPathBetweenTwoCities;
 
-/// <inheritdoc />
-public sealed class SmallestIntegerDivisibleByKIterative : ISmallestIntegerDivisibleByK
-{
-    /// <inheritdoc />
-    /// <remarks>
-    ///     Time complexity - O(k)
-    ///     Space complexity - O(1)
-    /// </remarks>
-    public int SmallestRepunitDivByK(int k)
-    {
-        if (k % 2 == 0 || k % 5 == 0)
-        {
-            return -1;
-        }
+namespace LeetCode.Tests.Algorithms.MinimumScoreOfAPathBetweenTwoCities;
 
-        var remainder = 0;
-        var length = 0;
-
-        do
-        {
-            remainder = ((remainder * 10) + 1) % k;
-
-            length++;
-        } while (remainder != 0);
-
-        return length;
-    }
-}
+[TestClass]
+public sealed class MinimumScoreOfAPathBetweenTwoCitiesUnionFindTests : MinimumScoreOfAPathBetweenTwoCitiesTestsBase<MinimumScoreOfAPathBetweenTwoCitiesUnionFind>;
