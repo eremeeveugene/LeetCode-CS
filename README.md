@@ -173,6 +173,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [342. Power of Four](https://leetcode.com/problems/power-of-four/description/)
 - [344. Reverse String](https://leetcode.com/problems/reverse-string/description/)
 - [345. Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/description/)
+- [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/)
 - [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/)
 - [350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/)
 - [355. Design Twitter](https://leetcode.com/problems/design-twitter/description/)
