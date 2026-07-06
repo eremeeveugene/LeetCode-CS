@@ -186,6 +186,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [389. Find the Difference](https://leetcode.com/problems/find-the-difference/description/)
 - [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)
 - [396. Rotate Function](https://leetcode.com/problems/rotate-function/description/)
+- [398. Random Pick Index](https://leetcode.com/problems/random-pick-index/description/)
 - [402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/)
 - [404. Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/description/)
 - [409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/description/)
