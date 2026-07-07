@@ -146,6 +146,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/)
 - [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/)
 - [228. Summary Ranges](https://leetcode.com/problems/summary-ranges/description/)
+- [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/description/)
 - [231. Power of Two](https://leetcode.com/problems/power-of-two/description/)
 - [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/)
 - [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/)
