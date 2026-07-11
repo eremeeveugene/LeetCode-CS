@@ -670,6 +670,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2529. Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/description/)
 - [2530. Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/description/)
 - [2535. Difference Between Element Sum and Digit Sum of an Array](https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/description/)
+- [2536. Increment Submatrices by One](https://leetcode.com/problems/increment-submatrices-by-one/description/)
 - [2537. Count the Number of Good Subarrays](https://leetcode.com/problems/count-the-number-of-good-subarrays/description/)
 - [2540. Minimum Common Value](https://leetcode.com/problems/minimum-common-value/description/)
 - [2553. Separate the Digits in an Array](https://leetcode.com/problems/separate-the-digits-in-an-array/description/)
