@@ -17,7 +17,7 @@ public sealed class IncrementSubmatricesByOnePrefixSum : IIncrementSubmatricesBy
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n^2 + q), where q is the number of queries
-    ///     Space complexity - O(1), excluding the returned matrix
+    ///     Space complexity - O(1)
     /// </remarks>
     public int[][] RangeAddQueries(int n, int[][] queries)
     {
