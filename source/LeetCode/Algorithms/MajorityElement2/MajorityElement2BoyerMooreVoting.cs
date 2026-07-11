@@ -58,8 +58,10 @@ public sealed class MajorityElement2BoyerMooreVoting : IMajorityElement2
         majorityElement1Count = 0;
         majorityElement2Count = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (num == majorityElement1)
             {
                 majorityElement1Count++;
