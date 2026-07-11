@@ -25,10 +25,10 @@ public sealed class ConcatenateNonZeroDigitsAndMultiplyBySum2PrefixSum : IConcat
     {
         var n = s.Length;
 
-        var values = new long[n + 1];
-        var counts = new int[n + 1];
-        var sums = new long[n + 1];
-        var pow10 = new long[n + 1];
+        Span<long> values = stackalloc long[n + 1];
+        Span<int> counts = stackalloc int[n + 1];
+        Span<long> sums = stackalloc long[n + 1];
+        Span<long> pow10 = stackalloc long[n + 1];
 
         pow10[0] = 1;
 
