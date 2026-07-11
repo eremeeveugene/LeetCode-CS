@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.IncrementSubmatricesByOne;
 
 /// <inheritdoc />
-public sealed class IncrementSubmatricesByOneDifferenceArray : IIncrementSubmatricesByOne
+public sealed class IncrementSubmatricesByOnePrefixSum : IIncrementSubmatricesByOne
 {
     /// <inheritdoc />
     /// <remarks>
@@ -61,11 +61,11 @@ public sealed class IncrementSubmatricesByOneDifferenceArray : IIncrementSubmatr
         {
             for (var j = 0; j < n; j++)
             {
-                var x1 = i == 0 ? 0 : result[i - 1][j];
-                var x2 = j == 0 ? 0 : result[i][j - 1];
-                var x3 = i == 0 || j == 0 ? 0 : result[i - 1][j - 1];
+                var top = i == 0 ? 0 : result[i - 1][j];
+                var left = j == 0 ? 0 : result[i][j - 1];
+                var topLeft = i == 0 || j == 0 ? 0 : result[i - 1][j - 1];
 
-                result[i][j] += x1 + x2 - x3;
+                result[i][j] += top + left - topLeft;
             }
         }
 

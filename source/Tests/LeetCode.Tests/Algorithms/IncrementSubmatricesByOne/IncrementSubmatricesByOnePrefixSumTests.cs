@@ -14,4 +14,4 @@ using LeetCode.Algorithms.IncrementSubmatricesByOne;
 namespace LeetCode.Tests.Algorithms.IncrementSubmatricesByOne;
 
 [TestClass]
-public sealed class IncrementSubmatricesByOneDifferenceArrayTests : IncrementSubmatricesByOneTestsBase<IncrementSubmatricesByOneDifferenceArray>;
+public sealed class IncrementSubmatricesByOnePrefixSumTests : IncrementSubmatricesByOneTestsBase<IncrementSubmatricesByOnePrefixSum>;
