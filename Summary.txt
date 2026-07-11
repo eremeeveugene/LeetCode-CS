@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/11/2026 - 8:34:27 PM
-  Coverage date: 7/11/2026 - 8:33:54 PM - 7/11/2026 - 8:34:18 PM
+  Generated on: 7/11/2026 - 9:20:49 PM
+  Coverage date: 7/11/2026 - 9:20:18 PM - 7/11/2026 - 9:20:41 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1309
-  Files: 1309
+  Classes: 1310
+  Files: 1310
   Line coverage: 99.5%
-  Covered lines: 29149
-  Uncovered lines: 143
-  Coverable lines: 29292
-  Total lines: 73570
-  Branch coverage: 97.3% (11018 of 11319)
-  Covered branches: 11018
-  Total branches: 11319
-  Method coverage: 100% (1894 of 1894)
-  Full method coverage: 96.1% (1821 of 1894)
-  Covered methods: 1894
+  Covered lines: 29167
+  Uncovered lines: 145
+  Coverable lines: 29312
+  Total lines: 73618
+  Branch coverage: 97.3% (11029 of 11331)
+  Covered branches: 11029
+  Total branches: 11331
+  Method coverage: 100% (1895 of 1895)
+  Full method coverage: 96% (1821 of 1895)
+  Covered methods: 1895
   Fully covered methods: 1821
-  Total methods: 1894
+  Total methods: 1895
 
 LeetCode                                                                                                                                                99.5%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -240,6 +240,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountSubIslands.CountSubIslandsDepthFirstSearch                                                                                    100%
   LeetCode.Algorithms.CountSubmatricesWithAllOnes.CountSubmatricesWithAllOnesHorizontalWidths                                                            100%
   LeetCode.Algorithms.CountSubmatricesWithAllOnes.CountSubmatricesWithAllOnesVerticalHeights                                                             100%
+  LeetCode.Algorithms.CountSubmatricesWithTopLeftElementAndSumLessThanK.CountSubmatricesWithTopLeftElementAndSumLessThanKPrefixSum                       100%
   LeetCode.Algorithms.CountSymmetricIntegers.CountSymmetricIntegersIterative                                                                             100%
   LeetCode.Algorithms.CountTheDigitsThatDivideNumber.CountTheDigitsThatDivideNumberIterative                                                             100%
   LeetCode.Algorithms.CountTheHiddenSequences.CountTheHiddenSequencesPrefixSum                                                                           100%
@@ -1319,7 +1320,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
