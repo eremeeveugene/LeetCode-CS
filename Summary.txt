@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/11/2026 - 10:39:51 AM
-  Coverage date: 7/11/2026 - 10:39:13 AM - 7/11/2026 - 10:39:43 AM
+  Generated on: 7/11/2026 - 2:37:46 PM
+  Coverage date: 7/11/2026 - 2:37:07 PM - 7/11/2026 - 2:37:36 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1307
-  Files: 1307
+  Classes: 1308
+  Files: 1308
   Line coverage: 99.5%
-  Covered lines: 29066
-  Uncovered lines: 145
-  Coverable lines: 29211
-  Total lines: 73414
-  Branch coverage: 97.3% (10985 of 11287)
-  Covered branches: 10985
-  Total branches: 11287
-  Method coverage: 100% (1892 of 1892)
-  Full method coverage: 96% (1818 of 1892)
-  Covered methods: 1892
-  Fully covered methods: 1818
-  Total methods: 1892
+  Covered lines: 29109
+  Uncovered lines: 143
+  Coverable lines: 29252
+  Total lines: 73496
+  Branch coverage: 97.3% (10994 of 11295)
+  Covered branches: 10994
+  Total branches: 11295
+  Method coverage: 100% (1893 of 1893)
+  Full method coverage: 96.1% (1820 of 1893)
+  Covered methods: 1893
+  Fully covered methods: 1820
+  Total methods: 1893
 
 LeetCode                                                                                                                                                99.5%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -151,6 +151,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ComputeDecimalRepresentation.ComputeDecimalRepresentationIterative                                                                 100%
   LeetCode.Algorithms.ConcatenateArrayWithReverse.ConcatenateArrayWithReverseOnePass                                                                     100%
   LeetCode.Algorithms.ConcatenateNonZeroDigitsAndMultiplyBySum1.ConcatenateNonZeroDigitsAndMultiplyBySum1Iterative                                       100%
+  LeetCode.Algorithms.ConcatenateNonZeroDigitsAndMultiplyBySum2.ConcatenateNonZeroDigitsAndMultiplyBySum2PrefixSum                                       100%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayConcat                                                                                    100%
   LeetCode.Algorithms.ConcatenationOfArray.ConcatenationOfArrayIterative                                                                                 100%
   LeetCode.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTraversal.ConstructBinaryTreeFromPreorderAndPostorderTraversalRecursive                 100%
@@ -1317,7 +1318,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
