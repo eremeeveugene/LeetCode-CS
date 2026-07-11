@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/11/2026 - 2:37:46 PM
-  Coverage date: 7/11/2026 - 2:37:07 PM - 7/11/2026 - 2:37:36 PM
+  Generated on: 7/11/2026 - 8:34:27 PM
+  Coverage date: 7/11/2026 - 8:33:54 PM - 7/11/2026 - 8:34:18 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1308
-  Files: 1308
+  Classes: 1309
+  Files: 1309
   Line coverage: 99.5%
-  Covered lines: 29109
+  Covered lines: 29149
   Uncovered lines: 143
-  Coverable lines: 29252
-  Total lines: 73496
-  Branch coverage: 97.3% (10994 of 11295)
-  Covered branches: 10994
-  Total branches: 11295
-  Method coverage: 100% (1893 of 1893)
-  Full method coverage: 96.1% (1820 of 1893)
-  Covered methods: 1893
-  Fully covered methods: 1820
-  Total methods: 1893
+  Coverable lines: 29292
+  Total lines: 73570
+  Branch coverage: 97.3% (11018 of 11319)
+  Covered branches: 11018
+  Total branches: 11319
+  Method coverage: 100% (1894 of 1894)
+  Full method coverage: 96.1% (1821 of 1894)
+  Covered methods: 1894
+  Fully covered methods: 1821
+  Total methods: 1894
 
 LeetCode                                                                                                                                                99.5%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -536,6 +536,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ImplementTrie.ImplementTrieDictionary                                                                                             94.4%
   LeetCode.Algorithms.IncreasingDecreasingString.IncreasingDecreasingStringCountingSort                                                                  100%
   LeetCode.Algorithms.IncreasingDecreasingString.IncreasingDecreasingStringDictionary                                                                    100%
+  LeetCode.Algorithms.IncrementSubmatricesByOne.IncrementSubmatricesByOnePrefixSum                                                                       100%
   LeetCode.Algorithms.InsertDeleteGetRandom.InsertDeleteGetRandomDictionaryList                                                                          100%
   LeetCode.Algorithms.InsertGreatestCommonDivisorsInLinkedList.InsertGreatestCommonDivisorsInLinkedListSimulation                                        100%
   LeetCode.Algorithms.InsertInterval.InsertIntervalIterative                                                                                             100%
