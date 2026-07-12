@@ -21,7 +21,7 @@ public sealed class DeleteNodesAndReturnForestDepthFirstSearchRecursive : IDelet
     ///     Time complexity - O(n + d)
     ///     Space complexity - O(n + d)
     /// </remarks>
-    public IList<TreeNode> DelNodes(TreeNode? root, int[] to_delete)
+    public IList<TreeNode> DelNodes(TreeNode? root, int[] toDelete)
     {
         if (root == null)
         {
@@ -30,7 +30,7 @@ public sealed class DeleteNodesAndReturnForestDepthFirstSearchRecursive : IDelet
 
         var result = new List<TreeNode>();
 
-        var toDeleteHashSet = new HashSet<int>(to_delete);
+        var toDeleteHashSet = new HashSet<int>(toDelete);
 
         DelNodes(root, true, toDeleteHashSet, result);
 

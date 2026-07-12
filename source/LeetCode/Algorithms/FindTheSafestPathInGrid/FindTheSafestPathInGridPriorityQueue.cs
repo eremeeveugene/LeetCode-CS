@@ -14,6 +14,8 @@ namespace LeetCode.Algorithms.FindTheSafestPathInGrid;
 /// <inheritdoc />
 public sealed class FindTheSafestPathInGridPriorityQueue : IFindTheSafestPathInGrid
 {
+    private static readonly (int Dr, int Dc)[] Directions = [(0, 1), (1, 0), (0, -1), (-1, 0)];
+
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n^2 log n^2)
@@ -23,19 +25,13 @@ public sealed class FindTheSafestPathInGridPriorityQueue : IFindTheSafestPathInG
     {
         var n = grid.Count;
 
-        var thieves = new List<(int, int)>();
+        var distance = ComputeThiefDistances(grid, n);
 
-        for (var r = 0; r < n; r++)
-        {
-            for (var c = 0; c < n; c++)
-            {
-                if (grid[r][c] == 1)
-                {
-                    thieves.Add((r, c));
-                }
-            }
-        }
+        return FindMaximumSafeness(distance, n);
+    }
 
+    private static int[][] ComputeThiefDistances(IList<IList<int>> grid, int n)
+    {
         var distance = new int[n][];
 
         for (var i = 0; i < n; i++)
@@ -47,24 +43,30 @@ public sealed class FindTheSafestPathInGridPriorityQueue : IFindTheSafestPathInG
 
         var queue = new Queue<(int, int)>();
 
-        foreach (var thief in thieves)
+        for (var r = 0; r < n; r++)
         {
-            queue.Enqueue(thief);
+            for (var c = 0; c < n; c++)
+            {
+                if (grid[r][c] != 1)
+                {
+                    continue;
+                }
 
-            distance[thief.Item1][thief.Item2] = 0;
+                queue.Enqueue((r, c));
+
+                distance[r][c] = 0;
+            }
         }
-
-        int[][] directions = [[0, 1], [1, 0], [0, -1], [-1, 0]];
 
         while (queue.Count > 0)
         {
             var (r, c) = queue.Dequeue();
 
-            foreach (var dir in directions)
+            foreach (var (dr, dc) in Directions)
             {
-                int nr = r + dir[0], nc = c + dir[1];
+                int nr = r + dr, nc = c + dc;
 
-                if (nr < 0 || nr >= n || nc < 0 || nc >= n || distance[nr][nc] != int.MaxValue)
+                if (IsOutsideGrid(nr, nc, n) || distance[nr][nc] != int.MaxValue)
                 {
                     continue;
                 }
@@ -75,6 +77,11 @@ public sealed class FindTheSafestPathInGridPriorityQueue : IFindTheSafestPathInG
             }
         }
 
+        return distance;
+    }
+
+    private static int FindMaximumSafeness(int[][] distance, int n)
+    {
         var priorityQueue = new PriorityQueue<(int, int, int), int>(Comparer<int>.Create((a, b) => b - a));
 
         priorityQueue.Enqueue((distance[0][0], 0, 0), distance[0][0]);
@@ -97,21 +104,28 @@ public sealed class FindTheSafestPathInGridPriorityQueue : IFindTheSafestPathInG
                 return minDist;
             }
 
-            foreach (var dir in directions)
+            foreach (var (dr, dc) in Directions)
             {
-                int nr = r + dir[0], nc = c + dir[1];
+                int nr = r + dr, nc = c + dc;
 
-                if (nr < 0 || nr >= n || nc < 0 || nc >= n || visited[nr][nc])
+                if (IsOutsideGrid(nr, nc, n) || visited[nr][nc])
                 {
                     continue;
                 }
 
                 visited[nr][nc] = true;
 
-                priorityQueue.Enqueue((Math.Min(minDist, distance[nr][nc]), nr, nc), Math.Min(minDist, distance[nr][nc]));
+                var safeness = Math.Min(minDist, distance[nr][nc]);
+
+                priorityQueue.Enqueue((safeness, nr, nc), safeness);
             }
         }
 
         return 0;
+    }
+
+    private static bool IsOutsideGrid(int r, int c, int n)
+    {
+        return r < 0 || r >= n || c < 0 || c >= n;
     }
 }

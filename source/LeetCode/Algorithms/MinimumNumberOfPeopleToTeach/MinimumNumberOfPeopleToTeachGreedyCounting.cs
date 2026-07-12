@@ -44,39 +44,13 @@ public sealed class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberO
             var userA = friendship[0] - 1;
             var userB = friendship[1] - 1;
 
-            var isOverlap = false;
-
-            for (var language = 0; language < languagesCount; language++)
-            {
-                if (!userLanguages[GetUserLanguageIndex(userA, language, languagesCount)] ||
-                    !userLanguages[GetUserLanguageIndex(userB, language, languagesCount)])
-                {
-                    continue;
-                }
-
-                isOverlap = true;
-
-                break;
-            }
-
-            if (isOverlap)
+            if (HaveCommonLanguage(userLanguages, userA, userB, languagesCount))
             {
                 continue;
             }
 
-            if (!usersToTeach[userA])
-            {
-                usersToTeach[userA] = true;
-                usersToTeachIndices[usersToTeachCount] = userA;
-                usersToTeachCount++;
-            }
-
-            if (!usersToTeach[userB])
-            {
-                usersToTeach[userB] = true;
-                usersToTeachIndices[usersToTeachCount] = userB;
-                usersToTeachCount++;
-            }
+            AddUserToTeach(userA, usersToTeach, usersToTeachIndices, ref usersToTeachCount);
+            AddUserToTeach(userB, usersToTeach, usersToTeachIndices, ref usersToTeachCount);
         }
 
         if (usersToTeachCount == 0)
@@ -84,6 +58,43 @@ public sealed class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberO
             return 0;
         }
 
+        var mostCommonLanguageCount = GetMostCommonLanguageCount(userLanguages, usersToTeachIndices, usersToTeachCount, languagesCount);
+
+        return usersToTeachCount - mostCommonLanguageCount;
+    }
+
+    private static bool HaveCommonLanguage(ReadOnlySpan<bool> userLanguages, int userA, int userB, int languagesCount)
+    {
+        for (var language = 0; language < languagesCount; language++)
+        {
+            if (userLanguages[GetUserLanguageIndex(userA, language, languagesCount)] &&
+                userLanguages[GetUserLanguageIndex(userB, language, languagesCount)])
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private static void AddUserToTeach(int user, Span<bool> usersToTeach, Span<int> usersToTeachIndices, ref int usersToTeachCount)
+    {
+        if (usersToTeach[user])
+        {
+            return;
+        }
+
+        usersToTeach[user] = true;
+        usersToTeachIndices[usersToTeachCount] = user;
+        usersToTeachCount++;
+    }
+
+    private static int GetMostCommonLanguageCount(
+        ReadOnlySpan<bool> userLanguages,
+        ReadOnlySpan<int> usersToTeachIndices,
+        int usersToTeachCount,
+        int languagesCount)
+    {
         var mostCommonLanguageCount = 0;
 
         for (var language = 0; language < languagesCount; language++)
@@ -103,7 +114,7 @@ public sealed class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberO
             mostCommonLanguageCount = Math.Max(mostCommonLanguageCount, currentLanguageCount);
         }
 
-        return usersToTeachCount - mostCommonLanguageCount;
+        return mostCommonLanguageCount;
     }
 
     private static int GetUserLanguageIndex(int user, int language, int languagesCount)

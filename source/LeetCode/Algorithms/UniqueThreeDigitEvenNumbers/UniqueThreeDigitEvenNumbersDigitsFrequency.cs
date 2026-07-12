@@ -32,66 +32,33 @@ public sealed class UniqueThreeDigitEvenNumbersDigitsFrequency : IUniqueThreeDig
 
         for (var i = 1; i <= 9; i++)
         {
-            if (digitsFrequency[i] == 0)
-            {
-                continue;
-            }
-
             for (var j = 0; j <= 9; j++)
             {
-                if (digitsFrequency[j] == 0)
-                {
-                    continue;
-                }
-
                 for (var k = 0; k <= 9; k += 2)
                 {
-                    if (digitsFrequency[k] == 0)
+                    if (CanFormNumber(digitsFrequency, i, j, k))
                     {
-                        continue;
+                        count++;
                     }
-
-                    if (i == j && j == k)
-                    {
-                        if (digitsFrequency[i] < 3)
-                        {
-                            continue;
-                        }
-                    }
-                    else if (i == j)
-                    {
-                        if (digitsFrequency[i] < 2 || digitsFrequency[k] < 1)
-                        {
-                            continue;
-                        }
-                    }
-                    else if (i == k)
-                    {
-                        if (digitsFrequency[i] < 2 || digitsFrequency[j] < 1)
-                        {
-                            continue;
-                        }
-                    }
-                    else if (j == k)
-                    {
-                        if (digitsFrequency[j] < 2 || digitsFrequency[i] < 1)
-                        {
-                            continue;
-                        }
-                    }
-                    else
-                    {
-                        if (digitsFrequency[i] < 1 || digitsFrequency[j] < 1 || digitsFrequency[k] < 1)
-                        {
-                            continue;
-                        }
-                    }
-
-                    count++;
                 }
             }
         }
 
         return count;
+    }
+
+    private static bool CanFormNumber(int[] digitsFrequency, int hundreds, int tens, int units)
+    {
+        digitsFrequency[hundreds]--;
+        digitsFrequency[tens]--;
+        digitsFrequency[units]--;
+
+        var canForm = digitsFrequency[hundreds] >= 0 && digitsFrequency[tens] >= 0 && digitsFrequency[units] >= 0;
+
+        digitsFrequency[hundreds]++;
+        digitsFrequency[tens]++;
+        digitsFrequency[units]++;
+
+        return canForm;
     }
 }

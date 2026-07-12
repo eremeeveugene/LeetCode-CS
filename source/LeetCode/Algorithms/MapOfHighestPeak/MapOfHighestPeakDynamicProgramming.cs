@@ -26,46 +26,59 @@ public sealed class MapOfHighestPeakDynamicProgramming : IMapOfHighestPeak
 
         var infinity = m + n;
 
+        InitializeHeights(isWater, m, n, infinity);
+        RelaxFromTopLeft(isWater, m, n, infinity);
+        RelaxFromBottomRight(isWater, m, n, infinity);
+
+        return isWater;
+    }
+
+    private static void InitializeHeights(int[][] heights, int m, int n, int infinity)
+    {
         for (var row = 0; row < m; row++)
         {
             for (var col = 0; col < n; col++)
             {
-                isWater[row][col] = isWater[row][col] == 1 ? 0 : infinity;
+                heights[row][col] = heights[row][col] == 1 ? 0 : infinity;
             }
         }
+    }
 
+    private static void RelaxFromTopLeft(int[][] heights, int m, int n, int infinity)
+    {
         for (var row = 0; row < m; row++)
         {
             for (var col = 0; col < n; col++)
             {
-                if (isWater[row][col] == 0)
+                if (heights[row][col] == 0)
                 {
                     continue;
                 }
 
-                var up = row > 0 ? isWater[row - 1][col] : infinity;
-                var left = col > 0 ? isWater[row][col - 1] : infinity;
+                var up = row > 0 ? heights[row - 1][col] : infinity;
+                var left = col > 0 ? heights[row][col - 1] : infinity;
 
-                isWater[row][col] = int.Min(up, left) + 1;
+                heights[row][col] = int.Min(up, left) + 1;
             }
         }
+    }
 
+    private static void RelaxFromBottomRight(int[][] heights, int m, int n, int infinity)
+    {
         for (var row = m - 1; row >= 0; row--)
         {
             for (var col = n - 1; col >= 0; col--)
             {
-                if (isWater[row][col] == 0)
+                if (heights[row][col] == 0)
                 {
                     continue;
                 }
 
-                var down = row < m - 1 ? isWater[row + 1][col] : infinity;
-                var right = col < n - 1 ? isWater[row][col + 1] : infinity;
+                var down = row < m - 1 ? heights[row + 1][col] : infinity;
+                var right = col < n - 1 ? heights[row][col + 1] : infinity;
 
-                isWater[row][col] = int.Min(isWater[row][col], int.Min(down, right) + 1);
+                heights[row][col] = int.Min(heights[row][col], int.Min(down, right) + 1);
             }
         }
-
-        return isWater;
     }
 }

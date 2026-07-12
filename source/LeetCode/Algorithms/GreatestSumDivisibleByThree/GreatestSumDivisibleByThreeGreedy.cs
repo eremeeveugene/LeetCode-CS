@@ -28,69 +28,50 @@ public sealed class GreatestSumDivisibleByThreeGreedy : IGreatestSumDivisibleByT
         var smallestNumberWithRemainderTwo = int.MaxValue;
         var secondSmallestNumberWithRemainderTwo = int.MaxValue;
 
-        for (var i = 0; i < nums.Length; i++)
+        foreach (var num in nums)
         {
-            var num = nums[i];
-
             sum += num;
 
-            var remainder = num % 3;
-
-            switch (remainder)
+            switch (num % 3)
             {
-                case 1 when num < smallestNumberWithRemainderOne:
-                    secondSmallestNumberWithRemainderOne = smallestNumberWithRemainderOne;
-                    smallestNumberWithRemainderOne = num;
-
-                    break;
                 case 1:
-                    {
-                        if (num < secondSmallestNumberWithRemainderOne)
-                        {
-                            secondSmallestNumberWithRemainderOne = num;
-                        }
-
-                        break;
-                    }
-                case 2 when num < smallestNumberWithRemainderTwo:
-                    secondSmallestNumberWithRemainderTwo = smallestNumberWithRemainderTwo;
-                    smallestNumberWithRemainderTwo = num;
+                    TrackTwoSmallest(num, ref smallestNumberWithRemainderOne, ref secondSmallestNumberWithRemainderOne);
 
                     break;
                 case 2:
-                    {
-                        if (num < secondSmallestNumberWithRemainderTwo)
-                        {
-                            secondSmallestNumberWithRemainderTwo = num;
-                        }
+                    TrackTwoSmallest(num, ref smallestNumberWithRemainderTwo, ref secondSmallestNumberWithRemainderTwo);
 
-                        break;
-                    }
+                    break;
             }
         }
 
-        var sumRemainder = sum % 3;
-
-        switch (sumRemainder)
+        return (sum % 3) switch
         {
-            case 0:
-                return sum;
-            case 1:
-                {
-                    var remove2 = smallestNumberWithRemainderTwo != int.MaxValue && secondSmallestNumberWithRemainderTwo != int.MaxValue
-                        ? smallestNumberWithRemainderTwo + secondSmallestNumberWithRemainderTwo
-                        : int.MaxValue;
+            0 => sum,
+            1 => sum - GetMinimumRemoval(smallestNumberWithRemainderOne, smallestNumberWithRemainderTwo, secondSmallestNumberWithRemainderTwo),
+            _ => sum - GetMinimumRemoval(smallestNumberWithRemainderTwo, smallestNumberWithRemainderOne, secondSmallestNumberWithRemainderOne)
+        };
+    }
 
-                    return sum - Math.Min(smallestNumberWithRemainderOne, remove2);
-                }
-            default:
-                {
-                    var remove2 = smallestNumberWithRemainderOne != int.MaxValue && secondSmallestNumberWithRemainderOne != int.MaxValue
-                        ? smallestNumberWithRemainderOne + secondSmallestNumberWithRemainderOne
-                        : int.MaxValue;
-
-                    return sum - Math.Min(smallestNumberWithRemainderTwo, remove2);
-                }
+    private static void TrackTwoSmallest(int num, ref int smallest, ref int secondSmallest)
+    {
+        if (num < smallest)
+        {
+            secondSmallest = smallest;
+            smallest = num;
         }
+        else if (num < secondSmallest)
+        {
+            secondSmallest = num;
+        }
+    }
+
+    private static int GetMinimumRemoval(int smallestSameRemainder, int smallestOtherRemainder, int secondSmallestOtherRemainder)
+    {
+        var removePair = smallestOtherRemainder != int.MaxValue && secondSmallestOtherRemainder != int.MaxValue
+            ? smallestOtherRemainder + secondSmallestOtherRemainder
+            : int.MaxValue;
+
+        return Math.Min(smallestSameRemainder, removePair);
     }
 }
