@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/12/2026 - 3:25:17 PM
-  Coverage date: 7/12/2026 - 3:24:45 PM - 7/12/2026 - 3:25:09 PM
+  Generated on: 7/12/2026 - 5:07:56 PM
+  Coverage date: 7/12/2026 - 5:07:16 PM - 7/12/2026 - 5:07:40 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1311
-  Files: 1311
+  Classes: 1313
+  Files: 1313
   Line coverage: 99.5%
-  Covered lines: 29563
-  Uncovered lines: 147
-  Coverable lines: 29710
-  Total lines: 72615
-  Branch coverage: 97.3% (11036 of 11339)
-  Covered branches: 11036
-  Total branches: 11339
-  Method coverage: 100% (1896 of 1896)
-  Full method coverage: 96% (1821 of 1896)
-  Covered methods: 1896
-  Fully covered methods: 1821
-  Total methods: 1896
+  Covered lines: 29610
+  Uncovered lines: 145
+  Coverable lines: 29755
+  Total lines: 72717
+  Branch coverage: 97.3% (11049 of 11351)
+  Covered branches: 11049
+  Total branches: 11351
+  Method coverage: 100% (1898 of 1898)
+  Full method coverage: 96.1% (1824 of 1898)
+  Covered methods: 1898
+  Fully covered methods: 1824
+  Total methods: 1898
 
 LeetCode                                                                                                                                                99.5%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -721,6 +721,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStringBuilder                                                                         100%
   LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStrings                                                                               100%
   LeetCode.Algorithms.MaximumProductOfSplittedBinaryTree.MaximumProductOfSplittedBinaryTreeDepthFirstSearch                                              100%
+  LeetCode.Algorithms.MaximumProductOfThreeNumbers.MaximumProductOfThreeNumbersLinear                                                                    100%
+  LeetCode.Algorithms.MaximumProductOfThreeNumbers.MaximumProductOfThreeNumbersSorting                                                                   100%
   LeetCode.Algorithms.MaximumProductOfTwoDigits.MaximumProductOfTwoDigitsGreedy                                                                          100%
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArrayBruteForce                                                100%
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArraySecondMax                                                 100%
@@ -1321,7 +1323,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
