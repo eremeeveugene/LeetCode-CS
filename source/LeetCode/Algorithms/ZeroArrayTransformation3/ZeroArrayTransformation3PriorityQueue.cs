@@ -17,7 +17,7 @@ public sealed class ZeroArrayTransformation3PriorityQueue : IZeroArrayTransforma
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O((n + q) log q)
-    ///     sPACE complexity - O(n + q)
+    ///     Space complexity - O(n + q)
     /// </remarks>
     public int MaxRemoval(int[] nums, int[][] queries)
     {

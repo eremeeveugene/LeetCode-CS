@@ -18,10 +18,13 @@ public sealed class RandomPickIndexBruteForce : IRandomPickIndex
     private readonly int[] _nums;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="RandomPickIndexBruteForce" /> class.
+    /// </summary>
+    /// <param name="nums">The array of integers to pick indices from.</param>
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
+    /// </remarks>
     public RandomPickIndexBruteForce(int[] nums)
     {
         _nums = nums;

@@ -22,12 +22,15 @@ public sealed class DesignParkingSystemCounting : IDesignParkingSystem
     private int _smallCount;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="DesignParkingSystemCounting" /> class.
+    /// </summary>
+    /// <param name="bigCapacity">The number of big parking slots.</param>
+    /// <param name="mediumCapacity">The number of medium parking slots.</param>
+    /// <param name="smallCapacity">The number of small parking slots.</param>
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="bigCapacity"></param>
-    /// <param name="mediumCapacity"></param>
-    /// <param name="smallCapacity"></param>
+    /// </remarks>
     public DesignParkingSystemCounting(int bigCapacity, int mediumCapacity, int smallCapacity)
     {
         _bigCapacity = bigCapacity;

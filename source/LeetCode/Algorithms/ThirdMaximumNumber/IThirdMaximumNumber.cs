@@ -17,9 +17,9 @@ namespace LeetCode.Algorithms.ThirdMaximumNumber;
 public interface IThirdMaximumNumber
 {
     /// <summary>
-    ///     Time complexity - O (n log n)
+    ///     Finds the third distinct maximum number in <paramref name="nums" />.
     /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// <param name="nums">The array of integers to examine.</param>
+    /// <returns>The third distinct maximum number, or the maximum number if it does not exist.</returns>
     int ThirdMax(int[] nums);
 }

@@ -17,10 +17,13 @@ public sealed class DesignBrowserHistoryLinkedList : IDesignBrowserHistory
     private Node _current;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="DesignBrowserHistoryLinkedList" /> class.
+    /// </summary>
+    /// <param name="homepage">The homepage of the browser.</param>
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="homepage"></param>
+    /// </remarks>
     public DesignBrowserHistoryLinkedList(string homepage)
     {
         _current = new Node(homepage);

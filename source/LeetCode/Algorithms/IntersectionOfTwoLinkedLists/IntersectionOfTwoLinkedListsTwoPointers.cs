@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.IntersectionOfTwoLinkedLists;
 /// <inheritdoc />
 public sealed class IntersectionOfTwoLinkedListsTwoPointers : IIntersectionOfTwoLinkedLists
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="headA"></param>
-    /// <param name="headB"></param>
-    /// <returns></returns>
+    /// </remarks>
     public ListNode? GetIntersectionNode(ListNode? headA, ListNode? headB)
     {
         var headAPointer = headA;

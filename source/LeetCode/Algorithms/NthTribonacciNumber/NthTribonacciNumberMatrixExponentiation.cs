@@ -17,7 +17,7 @@ public sealed class NthTribonacciNumberMatrixExponentiation : INthTribonacciNumb
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(log n)
-    ///     Time complexity - O(log n)
+    ///     Space complexity - O(1)
     /// </remarks>
     public int Tribonacci(int n)
     {

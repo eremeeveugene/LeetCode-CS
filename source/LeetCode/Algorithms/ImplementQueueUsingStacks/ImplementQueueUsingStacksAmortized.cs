@@ -17,21 +17,21 @@ public sealed class ImplementQueueUsingStacksAmortized : IImplementQueueUsingSta
     private readonly Stack<int> _dequeueStack = new();
     private readonly Stack<int> _enqueueStack = new();
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="x"></param>
+    /// </remarks>
     public void Push(int x)
     {
         _enqueueStack.Push(x);
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - Amortized O(1), worst case - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int Pop()
     {
         if (_dequeueStack.Count != 0)
@@ -47,11 +47,11 @@ public sealed class ImplementQueueUsingStacksAmortized : IImplementQueueUsingSta
         return _dequeueStack.Pop();
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - Amortized O(1), worst case - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int Peek()
     {
         if (_dequeueStack.Count != 0)
@@ -67,11 +67,11 @@ public sealed class ImplementQueueUsingStacksAmortized : IImplementQueueUsingSta
         return _dequeueStack.Peek();
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public bool Empty()
     {
         return _enqueueStack.Count == 0 && _dequeueStack.Count == 0;

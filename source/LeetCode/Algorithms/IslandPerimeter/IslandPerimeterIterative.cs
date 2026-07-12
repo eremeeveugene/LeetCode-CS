@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.IslandPerimeter;
 /// <inheritdoc />
 public sealed class IslandPerimeterIterative : IIslandPerimeter
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int IslandPerimeter(int[][] grid)
     {
         var perimeter = 0;

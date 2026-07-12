@@ -18,10 +18,13 @@ public sealed class RangeSumQueryMutablePrefixSum : IRangeSumQueryMutable
     private readonly int[] _prefixSum;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="RangeSumQueryMutablePrefixSum" /> class.
+    /// </summary>
+    /// <param name="nums">The array of integers to query range sums on.</param>
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
+    /// </remarks>
     public RangeSumQueryMutablePrefixSum(int[] nums)
     {
         _nums = nums;

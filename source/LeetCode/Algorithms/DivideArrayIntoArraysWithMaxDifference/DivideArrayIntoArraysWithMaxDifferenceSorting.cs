@@ -17,7 +17,7 @@ public sealed class DivideArrayIntoArraysWithMaxDifferenceSorting : IDivideArray
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n log n)
-    ///     Time complexity - O(log n)
+    ///     Space complexity - O(log n)
     /// </remarks>
     public int[][] DivideArray(int[] nums, int k)
     {

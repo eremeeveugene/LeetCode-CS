@@ -18,10 +18,13 @@ public sealed class DesignTaskManagerDictionaryWithPriorityQueue : IDesignTaskMa
     private readonly Dictionary<int, UserIdPriority> _taskIdToUserIdPriorityDictionary = [];
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="DesignTaskManagerDictionaryWithPriorityQueue" /> class.
+    /// </summary>
+    /// <param name="tasks">The initial tasks, where each task is [userId, taskId, priority].</param>
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="tasks"></param>
+    /// </remarks>
     public DesignTaskManagerDictionaryWithPriorityQueue(IList<IList<int>> tasks)
     {
         var n = tasks.Count;

@@ -16,8 +16,8 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixHashSetOptimized : IFin
 {
     /// <inheritdoc />
     /// <remarks>
-    ///     Time Complexity - O((n + m) * d), where d is the maximum number of digits.
-    ///     Space Complexity - O(n * d), for storing prefixes from arr1.
+    ///     Time complexity - O((n + m) * d), where d is the maximum number of digits
+    ///     Space complexity - O(n * d), for storing prefixes from arr1
     /// </remarks>
     public int LongestCommonPrefix(int[] arr1, int[] arr2)
     {

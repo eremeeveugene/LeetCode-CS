@@ -18,10 +18,13 @@ public sealed class RangeSumQueryMutableSegmentTree : IRangeSumQueryMutable
     private readonly int[] _tree;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="RangeSumQueryMutableSegmentTree" /> class.
+    /// </summary>
+    /// <param name="nums">The array of integers to query range sums on.</param>
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
+    /// </remarks>
     public RangeSumQueryMutableSegmentTree(int[] nums)
     {
         _n = nums.Length;

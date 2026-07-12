@@ -36,13 +36,12 @@ public sealed class DesignTwitterPriorityQueue : IDesignTwitter
         tweets.Add((_timestamp++, tweetId));
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(t * log(k)) where t is the number of recent tweets examined across the user and their
     ///     followees and k is the news feed size of 10
     ///     Space complexity - O(k)
-    /// </summary>
-    /// <param name="userId"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> GetNewsFeed(int userId)
     {
         var oldestFirst = new PriorityQueue<int, int>();

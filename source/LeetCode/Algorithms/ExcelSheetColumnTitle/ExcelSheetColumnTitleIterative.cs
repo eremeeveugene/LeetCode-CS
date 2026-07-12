@@ -19,7 +19,7 @@ public sealed class ExcelSheetColumnTitleIterative : IExcelSheetColumnTitle
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O((log n) ^ 2)
-    ///     Time complexity - O(log n)
+    ///     Space complexity - O(log n)
     /// </remarks>
     public string ConvertToTitle(int columnNumber)
     {

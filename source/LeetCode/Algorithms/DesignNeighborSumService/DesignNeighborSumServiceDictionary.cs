@@ -18,10 +18,13 @@ public sealed class DesignNeighborSumServiceDictionary : IDesignNeighborSumServi
     private readonly Dictionary<int, (int X, int Y)> _neighborsDictionary = [];
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="DesignNeighborSumServiceDictionary" /> class.
+    /// </summary>
+    /// <param name="grid">The grid of distinct integer values.</param>
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="grid"></param>
+    /// </remarks>
     public DesignNeighborSumServiceDictionary(int[][] grid)
     {
         _grid = grid;

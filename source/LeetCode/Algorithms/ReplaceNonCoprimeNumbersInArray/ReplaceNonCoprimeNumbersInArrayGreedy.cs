@@ -61,23 +61,30 @@ public sealed class ReplaceNonCoprimeNumbersInArrayGreedy : IReplaceNonCoprimeNu
     }
 
     /// <summary>
+    ///     Determines whether the given <paramref name="greatestCommonDivisor" /> indicates two non-coprime numbers.
+    /// </summary>
+    /// <param name="greatestCommonDivisor">The greatest common divisor of two numbers.</param>
+    /// <returns><see langword="true" /> if the numbers are non-coprime; otherwise, <see langword="false" />.</returns>
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="greatestCommonDivisor"></param>
-    /// <returns></returns>
+    /// </remarks>
     private static bool IsNonComprime(int greatestCommonDivisor)
     {
         return greatestCommonDivisor > 1;
     }
 
     /// <summary>
+    ///     Computes the greatest common divisor of <paramref name="x" /> and <paramref name="y" /> using the Euclidean
+    ///     algorithm.
+    /// </summary>
+    /// <param name="x">The first number.</param>
+    /// <param name="y">The second number.</param>
+    /// <returns>The greatest common divisor of the two numbers.</returns>
+    /// <remarks>
     ///     Time complexity - O(log(min(x, y)))
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="x"></param>
-    /// <param name="y"></param>
-    /// <returns></returns>
+    /// </remarks>
     private static int GetGreatestCommonDivisor(int x, int y)
     {
         while (y != 0)
@@ -93,13 +100,17 @@ public sealed class ReplaceNonCoprimeNumbersInArrayGreedy : IReplaceNonCoprimeNu
     }
 
     /// <summary>
+    ///     Computes the least common multiple of <paramref name="x" /> and <paramref name="y" /> using their precomputed
+    ///     <paramref name="greatestCommonDivisor" />.
+    /// </summary>
+    /// <param name="x">The first number.</param>
+    /// <param name="y">The second number.</param>
+    /// <param name="greatestCommonDivisor">The greatest common divisor of the two numbers.</param>
+    /// <returns>The least common multiple of the two numbers.</returns>
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="x"></param>
-    /// <param name="y"></param>
-    /// <param name="greatestCommonDivisor"></param>
-    /// <returns></returns>
+    /// </remarks>
     private static int GetLeastCommonMultiple(int x, int y, int greatestCommonDivisor)
     {
         return int.Abs(x / greatestCommonDivisor * y);

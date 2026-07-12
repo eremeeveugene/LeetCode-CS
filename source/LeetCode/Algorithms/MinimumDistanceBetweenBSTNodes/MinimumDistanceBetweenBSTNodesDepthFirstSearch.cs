@@ -19,7 +19,7 @@ public sealed class MinimumDistanceBetweenBSTNodesDepthFirstSearch : IMinimumDis
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n)
-    ///     Time complexity - O(n) for a skewed tree, O(log n) for a balanced tree
+    ///     Space complexity - O(n) for a skewed tree, O(log n) for a balanced tree
     /// </remarks>
     public int MinDiffInBST(TreeNode root)
     {

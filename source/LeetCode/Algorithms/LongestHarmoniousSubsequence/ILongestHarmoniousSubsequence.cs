@@ -11,6 +11,9 @@
 
 namespace LeetCode.Algorithms.LongestHarmoniousSubsequence;
 
+/// <summary>
+///     https://leetcode.com/problems/longest-harmonious-subsequence/
+/// </summary>
 public interface ILongestHarmoniousSubsequence
 {
     /// <summary>

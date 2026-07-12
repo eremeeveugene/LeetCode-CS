@@ -18,10 +18,13 @@ public sealed class SimpleBankSystemLookup : ISimpleBankSystem
     private readonly int _balanceLength;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="SimpleBankSystemLookup" /> class.
+    /// </summary>
+    /// <param name="balance">The initial balance of each account, where account i has balance[i - 1].</param>
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="balance"></param>
+    /// </remarks>
     public SimpleBankSystemLookup(long[] balance)
     {
         _balance = balance;

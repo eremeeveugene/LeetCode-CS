@@ -16,11 +16,11 @@ public sealed class ImplementTrieDictionary : IImplementTrie
 {
     private readonly Node _root = new();
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m), where m is the length of the word
     ///     Space complexity - O(m), where m is the length of the word
-    /// </summary>
-    /// <param name="word"></param>
+    /// </remarks>
     public void Insert(string word)
     {
         var currentNode = _root;
@@ -42,12 +42,11 @@ public sealed class ImplementTrieDictionary : IImplementTrie
         currentNode.IsWord = true;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m), where m is the length of the word
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="word"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool Search(string word)
     {
         var currentNode = Traverse(word);
@@ -55,12 +54,11 @@ public sealed class ImplementTrieDictionary : IImplementTrie
         return currentNode is { IsWord: true };
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m), where m is the length of the prefix
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="prefix"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool StartsWith(string prefix)
     {
         return Traverse(prefix) != null;

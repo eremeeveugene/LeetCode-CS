@@ -17,7 +17,7 @@ public sealed class FindWordsContainingCharacterIterative : IFindWordsContaining
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n * m)
-    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
     /// </remarks>
     public IList<int> FindWordsContaining(string[] words, char x)
     {

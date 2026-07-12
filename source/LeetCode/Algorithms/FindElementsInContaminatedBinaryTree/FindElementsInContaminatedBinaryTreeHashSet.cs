@@ -19,10 +19,13 @@ public sealed class FindElementsInContaminatedBinaryTreeHashSet : IFindElementsI
     private readonly HashSet<int> _hashSet = [];
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="FindElementsInContaminatedBinaryTreeHashSet" /> class.
+    /// </summary>
+    /// <param name="root">The root of the contaminated binary tree.</param>
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
+    /// </remarks>
     public FindElementsInContaminatedBinaryTreeHashSet(TreeNode root)
     {
         var queue = new Queue<TreeNode>();

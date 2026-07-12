@@ -16,11 +16,11 @@ public sealed class ImplementQueueUsingStacksTwoStacks : IImplementQueueUsingSta
 {
     private readonly Stack<int> _stack = new();
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="x"></param>
+    /// </remarks>
     public void Push(int x)
     {
         var tempStack = new Stack<int>();
@@ -38,31 +38,31 @@ public sealed class ImplementQueueUsingStacksTwoStacks : IImplementQueueUsingSta
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int Pop()
     {
         return _stack.Pop();
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int Peek()
     {
         return _stack.Peek();
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public bool Empty()
     {
         return _stack.Count == 0;

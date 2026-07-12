@@ -20,10 +20,13 @@ public sealed class DesignBrowserHistoryArray : IDesignBrowserHistory
     private int _last;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="DesignBrowserHistoryArray" /> class.
+    /// </summary>
+    /// <param name="homepage">The homepage of the browser.</param>
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="homepage"></param>
+    /// </remarks>
     public DesignBrowserHistoryArray(string homepage)
     {
         _history = new string[Capacity];

@@ -19,11 +19,14 @@ public sealed class FindingPairsWithCertainSumDictionary : IFindingPairsWithCert
     private readonly Dictionary<int, int> _nums2FrequencyDictionary;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="FindingPairsWithCertainSumDictionary" /> class.
+    /// </summary>
+    /// <param name="nums1">The first array of integers.</param>
+    /// <param name="nums2">The second array of integers.</param>
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
+    /// </remarks>
     public FindingPairsWithCertainSumDictionary(int[] nums1, int[] nums2)
     {
         _nums1 = nums1;

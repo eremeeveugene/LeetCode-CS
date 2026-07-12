@@ -20,11 +20,14 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
     private readonly Dictionary<(int Shop, int Movie), int> _shopMovieToPriceDictionary;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="DesignMovieRentalSystemDictionary" /> class.
+    /// </summary>
+    /// <param name="n">The number of shops.</param>
+    /// <param name="entries">The entries, where each entry is [shop, movie, price].</param>
+    /// <remarks>
     ///     Time complexity - O(m log m), where m is the length of entries
     ///     Space complexity - O(m)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="entries"></param>
+    /// </remarks>
     public DesignMovieRentalSystemDictionary(int n, int[][] entries)
     {
         var entriesLength = entries.Length;
@@ -161,12 +164,11 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
 
     public readonly record struct MovieOffer(int Price, int Shop) : IComparable<MovieOffer>
     {
-        /// <summary>
+        /// <inheritdoc />
+        /// <remarks>
         ///     Time complexity - O(1)
         ///     Space complexity - O(1)
-        /// </summary>
-        /// <param name="movieOffer"></param>
-        /// <returns></returns>
+        /// </remarks>
         public int CompareTo(MovieOffer movieOffer)
         {
             var priceComparison = CompareToPrice(movieOffer.Price);
@@ -175,22 +177,28 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
         }
 
         /// <summary>
+        ///     Compares the price of this instance to <paramref name="price" />.
+        /// </summary>
+        /// <param name="price">The price to compare to.</param>
+        /// <returns>A negative number, zero, or a positive number depending on the comparison result.</returns>
+        /// <remarks>
         ///     Time complexity - O(1)
         ///     Space complexity - O(1)
-        /// </summary>
-        /// <param name="price"></param>
-        /// <returns></returns>
+        /// </remarks>
         private int CompareToPrice(int price)
         {
             return Price.CompareTo(price);
         }
 
         /// <summary>
+        ///     Compares the shop of this instance to <paramref name="shop" />.
+        /// </summary>
+        /// <param name="shop">The shop to compare to.</param>
+        /// <returns>A negative number, zero, or a positive number depending on the comparison result.</returns>
+        /// <remarks>
         ///     Time complexity - O(1)
         ///     Space complexity - O(1)
-        /// </summary>
-        /// <param name="shop"></param>
-        /// <returns></returns>
+        /// </remarks>
         private int CompareToShop(int shop)
         {
             return Shop.CompareTo(shop);
@@ -201,12 +209,11 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
     {
         private readonly int[] _report = new int[2];
 
-        /// <summary>
+        /// <inheritdoc />
+        /// <remarks>
         ///     Time complexity - O(1)
         ///     Space complexity - O(1)
-        /// </summary>
-        /// <param name="rentalRecord"></param>
-        /// <returns></returns>
+        /// </remarks>
         public int CompareTo(RentalRecord rentalRecord)
         {
             var priceComparison = CompareToPrice(rentalRecord.Price);
@@ -222,10 +229,13 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
         }
 
         /// <summary>
+        ///     Returns the rental record as a report entry of [shop, movie].
+        /// </summary>
+        /// <returns>An array containing the shop and the movie of the rental record.</returns>
+        /// <remarks>
         ///     Time complexity - O(1)
         ///     Space complexity - O(1)
-        /// </summary>
-        /// <returns></returns>
+        /// </remarks>
         public int[] GetReport()
         {
             _report[0] = Shop;
@@ -235,33 +245,42 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
         }
 
         /// <summary>
+        ///     Compares the price of this instance to <paramref name="price" />.
+        /// </summary>
+        /// <param name="price">The price to compare to.</param>
+        /// <returns>A negative number, zero, or a positive number depending on the comparison result.</returns>
+        /// <remarks>
         ///     Time complexity - O(1)
         ///     Space complexity - O(1)
-        /// </summary>
-        /// <param name="price"></param>
-        /// <returns></returns>
+        /// </remarks>
         private int CompareToPrice(int price)
         {
             return Price.CompareTo(price);
         }
 
         /// <summary>
+        ///     Compares the shop of this instance to <paramref name="shop" />.
+        /// </summary>
+        /// <param name="shop">The shop to compare to.</param>
+        /// <returns>A negative number, zero, or a positive number depending on the comparison result.</returns>
+        /// <remarks>
         ///     Time complexity - O(1)
         ///     Space complexity - O(1)
-        /// </summary>
-        /// <param name="shop"></param>
-        /// <returns></returns>
+        /// </remarks>
         private int CompareToShop(int shop)
         {
             return Shop.CompareTo(shop);
         }
 
         /// <summary>
+        ///     Compares the movie of this instance to <paramref name="movie" />.
+        /// </summary>
+        /// <param name="movie">The movie to compare to.</param>
+        /// <returns>A negative number, zero, or a positive number depending on the comparison result.</returns>
+        /// <remarks>
         ///     Time complexity - O(1)
         ///     Space complexity - O(1)
-        /// </summary>
-        /// <param name="movie"></param>
-        /// <returns></returns>
+        /// </remarks>
         private int CompareToMovie(int movie)
         {
             return Movie.CompareTo(movie);
