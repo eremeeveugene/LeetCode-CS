@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo;
 /// <inheritdoc />
 public sealed class KeepMultiplyingFoundValuesByTwoHashSet : KeepMultiplyingFoundValuesByTwoBase
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="original"></param>
-    /// <returns></returns>
+    /// </remarks>
     public override int FindFinalValue(int[] nums, int original)
     {
         var numsHashSet = new HashSet<int>(nums);

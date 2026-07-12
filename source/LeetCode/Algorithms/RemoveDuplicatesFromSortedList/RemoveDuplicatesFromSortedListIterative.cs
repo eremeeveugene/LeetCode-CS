@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.RemoveDuplicatesFromSortedList;
 /// <inheritdoc />
 public sealed class RemoveDuplicatesFromSortedListIterative : IRemoveDuplicatesFromSortedList
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="head"></param>
-    /// <returns></returns>
+    /// </remarks>
     public ListNode? DeleteDuplicates(ListNode? head)
     {
         var dummyHead = new ListNode(int.MinValue);

@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTravers
 /// <inheritdoc />
 public sealed class ConstructBinaryTreeFromPreorderAndPostorderTraversalRecursive : IConstructBinaryTreeFromPreorderAndPostorderTraversal
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="preorder"></param>
-    /// <param name="postorder"></param>
-    /// <returns></returns>
+    /// </remarks>
     public TreeNode ConstructFromPrePost(int[] preorder, int[] postorder)
     {
         return ConstructFromPrePost(preorder, postorder, 0, preorder.Length - 1, 0)!;

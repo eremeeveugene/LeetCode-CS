@@ -19,14 +19,11 @@ public sealed class CouponCodeValidatorBucketSort : ICouponCodeValidator
     private static readonly Dictionary<string, int> CategoryToIndexDictionary =
         new() { ["electronics"] = 0, ["grocery"] = 1, ["pharmacy"] = 2, ["restaurant"] = 3 };
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(L + n log n), where L is the total characters in all codes
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="code"></param>
-    /// <param name="businessLine"></param>
-    /// <param name="isActive"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<string> ValidateCoupons(string[] code, string[] businessLine, bool[] isActive)
     {
         var buckets = new List<string>[CategoryCount];

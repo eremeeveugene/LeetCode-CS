@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindTheMiddleIndexInArray;
 /// </summary>
 public interface IFindTheMiddleIndexInArray
 {
+    /// <summary>
+    ///     Finds the leftmost middle index of <paramref name="nums" />, i.e. the index where the sum of the elements to its
+    ///     left equals the sum of the elements to its right.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The leftmost middle index, or -1 if no such index exists.</returns>
     int FindMiddleIndex(int[] nums);
 }

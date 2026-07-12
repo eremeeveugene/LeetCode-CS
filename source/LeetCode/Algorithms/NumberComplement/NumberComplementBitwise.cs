@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberComplement;
 /// <inheritdoc />
 public sealed class NumberComplementBitwise : INumberComplement
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindComplement(int num)
     {
         var bitLengthLog = Math.Log(num, 2);

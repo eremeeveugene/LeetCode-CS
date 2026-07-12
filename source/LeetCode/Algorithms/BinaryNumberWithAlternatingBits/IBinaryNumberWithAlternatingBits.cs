@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.BinaryNumberWithAlternatingBits;
 /// </summary>
 public interface IBinaryNumberWithAlternatingBits
 {
+    /// <summary>
+    ///     Determines whether the binary representation of <paramref name="n" /> has alternating bits, i.e. every two
+    ///     adjacent bits differ.
+    /// </summary>
+    /// <param name="n">The positive integer to check.</param>
+    /// <returns><c>true</c> if the binary representation of <paramref name="n" /> has alternating bits; otherwise, <c>false</c>.</returns>
     bool HasAlternatingBits(int n);
 }

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindCenterOfStarGraph;
 /// <inheritdoc />
 public sealed class FindCenterOfStarGraphDictionary : IFindCenterOfStarGraph
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="edges"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindCenter(int[][] edges)
     {
         var dictionary = new Dictionary<int, int>();

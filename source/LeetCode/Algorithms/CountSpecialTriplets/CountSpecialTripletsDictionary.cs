@@ -16,12 +16,11 @@ public sealed class CountSpecialTripletsDictionary : ICountSpecialTriplets
 {
     private const int Modulo = 1_000_000_007;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SpecialTriplets(int[] nums)
     {
         long result = 0;

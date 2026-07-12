@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CombinationSum2;
 /// <inheritdoc />
 public sealed class CombinationSum2Backtracking : ICombinationSum2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(2^n * k)
     ///     Space complexity - O(2^n * k)
-    /// </summary>
-    /// <param name="candidates"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<IList<int>> CombinationSum2(int[] candidates, int target)
     {
         Array.Sort(candidates);

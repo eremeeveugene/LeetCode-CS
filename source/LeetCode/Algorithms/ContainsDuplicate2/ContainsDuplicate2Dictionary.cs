@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.ContainsDuplicate2;
 /// <inheritdoc />
 public sealed class ContainsDuplicate2Dictionary : IContainsDuplicate2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool ContainsNearbyDuplicate(int[] nums, int k)
     {
         var numsDictionary = new Dictionary<int, int>();

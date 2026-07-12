@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.FindBottomLeftTreeValue;
 /// <inheritdoc />
 public sealed class FindBottomLeftTreeValueDepthFirst : IFindBottomLeftTreeValue
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(log n) for a balanced tree, O(n) for a skewed tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindBottomLeftValue(TreeNode? root)
     {
         return root == null ? 0 : FindBottomLeftValue(root, 0).Item1;

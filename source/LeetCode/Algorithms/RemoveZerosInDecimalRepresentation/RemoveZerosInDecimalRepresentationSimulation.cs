@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RemoveZerosInDecimalRepresentation;
 /// <inheritdoc />
 public sealed class RemoveZerosInDecimalRepresentationSimulation : IRemoveZerosInDecimalRepresentation
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long RemoveZeros(long n)
     {
         long result = 0;

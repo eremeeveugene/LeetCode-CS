@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.TakeKOfEachCharacterFromLeftAndRight;
 /// <inheritdoc />
 public sealed class TakeKOfEachCharacterFromLeftAndRightSlidingWindow : ITakeKOfEachCharacterFromLeftAndRight
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int TakeCharacters(string s, int k)
     {
         var count = new int[3];

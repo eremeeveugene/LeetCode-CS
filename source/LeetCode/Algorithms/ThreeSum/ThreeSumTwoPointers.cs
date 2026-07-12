@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ThreeSum;
 /// <inheritdoc />
 public sealed class ThreeSumTwoPointers : IThreeSum
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<IList<int>> ThreeSum(int[] nums)
     {
         if (nums.Length < 3)

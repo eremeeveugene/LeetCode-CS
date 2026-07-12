@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.AssignCookies;
 /// <inheritdoc />
 public sealed class AssignCookiesSorting : IAssignCookies
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n + m log m)
     ///     Space complexity - O(log n + log m)
-    /// </summary>
-    /// <param name="g"></param>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindContentChildren(int[] g, int[] s)
     {
         Array.Sort(g);

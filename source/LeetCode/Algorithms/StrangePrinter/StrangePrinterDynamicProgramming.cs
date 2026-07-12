@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.StrangePrinter;
 /// <inheritdoc />
 public sealed class StrangePrinterDynamicProgramming : IStrangePrinter
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^3)
     ///     Space complexity - O(n^2)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int StrangePrinter(string s)
     {
         if (s.Length == 0)

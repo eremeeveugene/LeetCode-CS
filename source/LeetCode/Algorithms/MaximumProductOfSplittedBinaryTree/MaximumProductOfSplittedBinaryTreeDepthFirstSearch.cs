@@ -18,12 +18,11 @@ public sealed class MaximumProductOfSplittedBinaryTreeDepthFirstSearch : IMaximu
 {
     private const int Modulo = 1_000_000_007;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n), where n is the number of nodes in the binary tree
     ///     Space complexity - O(h), where h is the height of the tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxProduct(TreeNode root)
     {
         long maximumProduct = 0;

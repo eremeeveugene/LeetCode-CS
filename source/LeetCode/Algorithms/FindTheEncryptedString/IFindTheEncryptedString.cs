@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.FindTheEncryptedString;
 /// </summary>
 public interface IFindTheEncryptedString
 {
+    /// <summary>
+    ///     Encrypts <paramref name="s" /> by replacing each character with the character <paramref name="k" /> positions
+    ///     after it in the string, in a cyclic manner.
+    /// </summary>
+    /// <param name="s">The string to encrypt.</param>
+    /// <param name="k">The cyclic shift applied to each character position.</param>
+    /// <returns>The encrypted string.</returns>
     string GetEncryptedString(string s, int k);
 }

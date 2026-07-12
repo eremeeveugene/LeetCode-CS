@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SingleNumber3;
 /// <inheritdoc />
 public sealed class SingleNumber3Bitwise : ISingleNumber3
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] SingleNumber(int[] nums)
     {
         var xor = nums.Aggregate((current, num) => current ^ num);

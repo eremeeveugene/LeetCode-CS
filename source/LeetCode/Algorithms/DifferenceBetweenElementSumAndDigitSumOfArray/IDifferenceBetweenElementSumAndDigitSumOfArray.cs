@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray;
 /// </summary>
 public interface IDifferenceBetweenElementSumAndDigitSumOfArray
 {
+    /// <summary>
+    ///     Computes the absolute difference between the element sum and the digit sum of <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array of positive integers.</param>
+    /// <returns>The absolute difference between the sum of the elements and the sum of all digits of the elements.</returns>
     int DifferenceOfSum(int[] nums);
 }

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumLengthOfStringAfterOperations;
 /// <inheritdoc />
 public sealed class MinimumLengthOfStringAfterOperationsFrequencyArray : IMinimumLengthOfStringAfterOperations
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumLength(string s)
     {
         var result = 0;

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.KthDistinctStringInAnArray;
 /// <inheritdoc />
 public sealed class KthDistinctStringInAnArrayDictionary : IKthDistinctStringInAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string KthDistinct(string[] arr, int k)
     {
         var countDictionary = new Dictionary<string, int>();

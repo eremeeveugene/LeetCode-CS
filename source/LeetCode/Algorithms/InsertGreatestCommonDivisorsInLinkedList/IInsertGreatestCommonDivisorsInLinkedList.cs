@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.InsertGreatestCommonDivisorsInLinkedList;
 /// </summary>
 public interface IInsertGreatestCommonDivisorsInLinkedList
 {
+    /// <summary>
+    ///     Inserts between every pair of adjacent nodes of the linked list starting at <paramref name="head" /> a new node
+    ///     whose value is the greatest common divisor of the two adjacent values.
+    /// </summary>
+    /// <param name="head">The head of the linked list.</param>
+    /// <returns>The head of the linked list after the insertions.</returns>
     ListNode? InsertGreatestCommonDivisors(ListNode head);
 }

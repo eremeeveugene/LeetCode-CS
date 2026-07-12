@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.FindTheMinimumAndMaximumNumberOfNodesBetweenCritic
 /// <inheritdoc />
 public sealed class FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsIterative : IFindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="head"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] NodesBetweenCriticalPoints(ListNode? head)
     {
         if (head?.next?.next == null)

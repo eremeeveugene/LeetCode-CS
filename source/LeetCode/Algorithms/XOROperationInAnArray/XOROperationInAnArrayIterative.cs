@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.XOROperationInAnArray;
 /// <inheritdoc />
 public sealed class XOROperationInAnArrayIterative : IXOROperationInAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="start"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int XorOperation(int n, int start)
     {
         var result = 0;

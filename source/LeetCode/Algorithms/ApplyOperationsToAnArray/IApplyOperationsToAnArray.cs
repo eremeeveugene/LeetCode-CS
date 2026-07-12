@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ApplyOperationsToAnArray;
 /// </summary>
 public interface IApplyOperationsToAnArray
 {
+    /// <summary>
+    ///     Applies the operations to <paramref name="nums" /> by doubling each element equal to its successor and zeroing
+    ///     the successor, then shifts all zeros to the end of the array.
+    /// </summary>
+    /// <param name="nums">The array of non-negative integers.</param>
+    /// <returns>The resulting array after applying the operations and shifting all zeros to the end.</returns>
     int[] ApplyOperations(int[] nums);
 }

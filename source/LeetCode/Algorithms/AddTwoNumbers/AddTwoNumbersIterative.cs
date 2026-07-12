@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.AddTwoNumbers;
 /// <inheritdoc />
 public sealed class AddTwoNumbersIterative : IAddTwoNumbers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m), where n is the length of the list l1 and m is the length of the list l2
     ///     Space complexity - O(max(n, m)), where n is the length of the list l1 and m is the length of the list l2
-    /// </summary>
-    /// <param name="l1"></param>
-    /// <param name="l2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public ListNode? AddTwoNumbers(ListNode? l1, ListNode? l2)
     {
         var dummyHead = new ListNode();

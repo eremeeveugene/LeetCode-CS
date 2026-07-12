@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone;
 /// <inheritdoc />
 public sealed class MinimumNumberOfMovesToSeatEveryoneCountingSort : IMinimumNumberOfMovesToSeatEveryone
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + maxPosition)
     ///     Space complexity - O(maxPosition)
-    /// </summary>
-    /// <param name="seats"></param>
-    /// <param name="students"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinMovesToSeat(int[] seats, int[] students)
     {
         var maxPosition = Math.Max(seats.Max(), students.Max());

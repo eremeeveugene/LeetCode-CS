@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.LargestNumber;
 /// </summary>
 public interface ILargestNumber
 {
+    /// <summary>
+    ///     Arranges the elements of <paramref name="nums" /> so that their concatenation forms the largest possible number.
+    /// </summary>
+    /// <param name="nums">The array of non-negative integers.</param>
+    /// <returns>The largest number that can be formed by concatenating the elements, as a string.</returns>
     string LargestNumber(int[] nums);
 }

@@ -16,11 +16,11 @@ namespace LeetCode.Algorithms.DeleteNodeInLinkedList;
 /// <inheritdoc />
 public sealed class DeleteNodeInLinkedListReassign : IDeleteNodeInLinkedList
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="node"></param>
+    /// </remarks>
     public void DeleteNode(ListNode? node)
     {
         if (node is not { next: not null })

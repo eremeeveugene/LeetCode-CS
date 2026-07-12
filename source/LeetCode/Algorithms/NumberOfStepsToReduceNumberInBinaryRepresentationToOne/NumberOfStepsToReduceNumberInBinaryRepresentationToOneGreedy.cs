@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberOfStepsToReduceNumberInBinaryRepresentationT
 /// <inheritdoc />
 public sealed class NumberOfStepsToReduceNumberInBinaryRepresentationToOneGreedy : INumberOfStepsToReduceNumberInBinaryRepresentationToOne
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumSteps(string s)
     {
         var steps = 0;

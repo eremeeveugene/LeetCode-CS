@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FruitIntoBaskets;
 /// </summary>
 public interface IFruitIntoBaskets
 {
+    /// <summary>
+    ///     Finds the maximum number of fruits that can be picked from a contiguous group of trees in
+    ///     <paramref name="fruits" /> using at most two baskets, each holding only a single fruit type.
+    /// </summary>
+    /// <param name="fruits">The types of fruit produced by each tree in the row.</param>
+    /// <returns>The maximum number of fruits that can be picked.</returns>
     int TotalFruit(int[] fruits);
 }

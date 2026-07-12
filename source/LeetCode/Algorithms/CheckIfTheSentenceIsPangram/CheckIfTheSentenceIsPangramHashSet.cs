@@ -19,12 +19,11 @@ public sealed class CheckIfTheSentenceIsPangramHashSet : ICheckIfTheSentenceIsPa
         'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
     ];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="sentence"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckIfPangram(string sentence)
     {
         if (sentence.Length < 26)

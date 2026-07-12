@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.RemoveAllOccurrencesOfSubstring;
 /// <inheritdoc />
 public sealed class RemoveAllOccurrencesOfSubstringStack : IRemoveAllOccurrencesOfSubstring
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="part"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string RemoveOccurrences(string s, string part)
     {
         var stack = new Stack<char>();

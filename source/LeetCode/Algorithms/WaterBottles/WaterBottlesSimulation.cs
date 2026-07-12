@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.WaterBottles;
 /// <inheritdoc />
 public sealed class WaterBottlesSimulation : IWaterBottles
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log(m)N), where N is the number of initial full bottles and M is equal to numExchange
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="numBottles"></param>
-    /// <param name="numExchange"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumWaterBottles(int numBottles, int numExchange)
     {
         var result = numBottles;

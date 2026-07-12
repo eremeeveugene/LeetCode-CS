@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.Maximum69Number;
 /// <inheritdoc />
 public sealed class Maximum69NumberString : IMaximum69Number
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Maximum69Number(int num)
     {
         var numStr = num.ToString();

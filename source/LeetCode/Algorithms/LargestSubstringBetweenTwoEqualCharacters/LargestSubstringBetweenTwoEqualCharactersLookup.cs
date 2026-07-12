@@ -16,12 +16,11 @@ public sealed class LargestSubstringBetweenTwoEqualCharactersLookup : ILargestSu
 {
     private const byte AlphabetLength = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxLengthBetweenEqualCharacters(string s)
     {
         Span<int> positions = stackalloc int[AlphabetLength];

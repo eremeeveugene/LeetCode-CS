@@ -29,12 +29,11 @@ public sealed class FindElementsInContaminatedBinaryTreeDepthFirstSearch : IFind
         _root.val = 0;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool Find(int target)
     {
         var node = _root;

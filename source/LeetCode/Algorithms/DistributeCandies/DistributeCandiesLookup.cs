@@ -19,12 +19,11 @@ public sealed class DistributeCandiesLookup : IDistributeCandies
     private const int Offset = -MinCandyType;
     private const int LookupSize = MaxCandyType - MinCandyType + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="candyTypes"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int DistributeCandies(int[] candyTypes)
     {
         var maxCount = candyTypes.Length / 2;

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.FindValidMatrixGivenRowAndColumnSums;
 /// </summary>
 public interface IFindValidMatrixGivenRowAndColumnSums
 {
+    /// <summary>
+    ///     Restores a matrix of non-negative integers whose row sums equal <paramref name="rowSum" /> and whose column
+    ///     sums equal <paramref name="colSum" />.
+    /// </summary>
+    /// <param name="rowSum">The required sum of each row of the matrix.</param>
+    /// <param name="colSum">The required sum of each column of the matrix.</param>
+    /// <returns>A matrix of non-negative integers satisfying the given row and column sums.</returns>
     int[][] RestoreMatrix(int[] rowSum, int[] colSum);
 }

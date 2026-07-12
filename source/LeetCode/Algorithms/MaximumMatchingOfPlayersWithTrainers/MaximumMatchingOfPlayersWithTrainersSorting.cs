@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MaximumMatchingOfPlayersWithTrainers;
 /// <inheritdoc />
 public sealed class MaximumMatchingOfPlayersWithTrainersSorting : IMaximumMatchingOfPlayersWithTrainers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n + m log m)
     ///     Space complexity - O(log n + log m)
-    /// </summary>
-    /// <param name="players"></param>
-    /// <param name="trainers"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MatchPlayersAndTrainers(int[] players, int[] trainers)
     {
         Array.Sort(players);

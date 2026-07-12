@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 /// <inheritdoc />
 public sealed class HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce : IHowManyNumbersAreSmallerThanTheCurrentNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] SmallerNumbersThanCurrent(int[] nums)
     {
         var result = new int[nums.Length];

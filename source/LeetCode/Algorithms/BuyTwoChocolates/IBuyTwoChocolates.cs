@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.BuyTwoChocolates;
 /// </summary>
 public interface IBuyTwoChocolates
 {
+    /// <summary>
+    ///     Computes the money left after buying the two cheapest chocolates from <paramref name="prices" /> without going
+    ///     into debt.
+    /// </summary>
+    /// <param name="prices">The prices of the chocolates.</param>
+    /// <param name="money">The initial amount of money.</param>
+    /// <returns>The leftover money after buying two chocolates, or <paramref name="money" /> if no such purchase is possible.</returns>
     int BuyChoco(int[] prices, int money);
 }

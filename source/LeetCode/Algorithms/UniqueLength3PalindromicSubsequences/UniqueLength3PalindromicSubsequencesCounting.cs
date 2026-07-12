@@ -18,12 +18,11 @@ public sealed class UniqueLength3PalindromicSubsequencesCounting : IUniqueLength
 {
     private const int AlphabetLength = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * 26)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountPalindromicSubsequence(string s)
     {
         var firstOccurrence = new int[AlphabetLength];

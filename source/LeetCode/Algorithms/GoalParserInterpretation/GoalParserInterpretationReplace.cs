@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.GoalParserInterpretation;
 /// <inheritdoc />
 public sealed class GoalParserInterpretationReplace : IGoalParserInterpretation
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="command"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string Interpret(string command)
     {
         return command.Replace("()", "o").Replace("(al)", "al");

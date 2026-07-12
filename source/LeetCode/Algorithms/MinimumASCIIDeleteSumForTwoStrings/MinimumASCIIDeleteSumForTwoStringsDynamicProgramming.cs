@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumASCIIDeleteSumForTwoStrings;
 /// <inheritdoc />
 public sealed class MinimumASCIIDeleteSumForTwoStringsDynamicProgramming : IMinimumASCIIDeleteSumForTwoStrings
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(min(n, m))
-    /// </summary>
-    /// <param name="s1"></param>
-    /// <param name="s2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumDeleteSum(string s1, string s2)
     {
         if (s1.Length < s2.Length)

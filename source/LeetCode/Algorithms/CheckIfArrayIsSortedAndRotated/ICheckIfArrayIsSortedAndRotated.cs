@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CheckIfArrayIsSortedAndRotated;
 /// </summary>
 public interface ICheckIfArrayIsSortedAndRotated
 {
+    /// <summary>
+    ///     Determines whether <paramref name="nums" /> could have been obtained by rotating an array sorted in
+    ///     non-decreasing order.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns><c>true</c> if <paramref name="nums" /> is a rotation of a non-decreasingly sorted array; otherwise, <c>false</c>.</returns>
     bool Check(int[] nums);
 }

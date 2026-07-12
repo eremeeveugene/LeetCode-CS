@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.RelativeSortArray;
 /// <inheritdoc />
 public sealed class RelativeSortArrayDictionarySorting : IRelativeSortArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="arr1"></param>
-    /// <param name="arr2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] RelativeSortArray(int[] arr1, int[] arr2)
     {
         var result = new List<int>();

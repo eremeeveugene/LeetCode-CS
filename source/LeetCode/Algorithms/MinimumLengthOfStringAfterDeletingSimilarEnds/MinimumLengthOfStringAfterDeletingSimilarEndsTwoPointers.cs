@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds;
 /// <inheritdoc />
 public sealed class MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers : IMinimumLengthOfStringAfterDeletingSimilarEnds
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumLength(string s)
     {
         var left = 0;

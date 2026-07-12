@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CompareVersionNumbers;
 /// <inheritdoc />
 public sealed class CompareVersionNumbersIterative : ICompareVersionNumbers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(max(n,m)), where n and m are the lengths of version1 and version2 respectively
     ///     Space complexity - O(k+l), where k and l are the numbers of segments in the version strings
-    /// </summary>
-    /// <param name="version1"></param>
-    /// <param name="version2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CompareVersion(string version1, string version2)
     {
         var version1Array = version1.Split('.');

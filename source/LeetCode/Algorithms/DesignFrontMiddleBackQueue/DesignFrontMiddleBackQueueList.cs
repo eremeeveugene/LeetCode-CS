@@ -17,11 +17,11 @@ public sealed class DesignFrontMiddleBackQueueList : IDesignFrontMiddleBackQueue
     private readonly List<int> _items = [];
     private int _count;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="value"></param>
+    /// </remarks>
     public void PushFront(int value)
     {
         _items.Insert(0, value);
@@ -29,11 +29,11 @@ public sealed class DesignFrontMiddleBackQueueList : IDesignFrontMiddleBackQueue
         _count++;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="value"></param>
+    /// </remarks>
     public void PushMiddle(int value)
     {
         _items.Insert(_count / 2, value);
@@ -41,11 +41,11 @@ public sealed class DesignFrontMiddleBackQueueList : IDesignFrontMiddleBackQueue
         _count++;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="value"></param>
+    /// </remarks>
     public void PushBack(int value)
     {
         _items.Add(value);
@@ -53,11 +53,11 @@ public sealed class DesignFrontMiddleBackQueueList : IDesignFrontMiddleBackQueue
         _count++;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int PopFront()
     {
         if (_count == 0)
@@ -74,11 +74,11 @@ public sealed class DesignFrontMiddleBackQueueList : IDesignFrontMiddleBackQueue
         return front;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int PopMiddle()
     {
         if (_count == 0)
@@ -97,11 +97,11 @@ public sealed class DesignFrontMiddleBackQueueList : IDesignFrontMiddleBackQueue
         return middle;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int PopBack()
     {
         if (_count == 0)

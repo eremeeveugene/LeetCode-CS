@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindCenterOfStarGraph;
 /// <inheritdoc />
 public sealed class FindCenterOfStarGraphTwoEdges : IFindCenterOfStarGraph
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="edges"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindCenter(int[][] edges)
     {
         if (edges[0][0] == edges[1][0] || edges[0][0] == edges[1][1])

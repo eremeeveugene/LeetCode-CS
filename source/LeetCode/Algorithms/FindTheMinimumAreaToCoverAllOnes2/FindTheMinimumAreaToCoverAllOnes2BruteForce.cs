@@ -16,12 +16,11 @@ public sealed class FindTheMinimumAreaToCoverAllOnes2BruteForce : IFindTheMinimu
 {
     private const int EmptyArea = int.MaxValue / 3;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m^2 * n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumSum(int[][] grid)
     {
         var rowCount = grid.Length;

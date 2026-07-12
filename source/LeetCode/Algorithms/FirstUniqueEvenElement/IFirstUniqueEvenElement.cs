@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FirstUniqueEvenElement;
 /// </summary>
 public interface IFirstUniqueEvenElement
 {
+    /// <summary>
+    ///     Finds the first even element in <paramref name="nums" /> that appears exactly once.
+    /// </summary>
+    /// <param name="nums">The array of integers to search.</param>
+    /// <returns>The first unique even element, or -1 if no such element exists.</returns>
     int FirstUniqueEven(int[] nums);
 }

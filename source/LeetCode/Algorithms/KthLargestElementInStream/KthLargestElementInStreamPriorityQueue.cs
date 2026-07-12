@@ -27,12 +27,11 @@ public sealed class KthLargestElementInStreamPriorityQueue : IKthLargestElementI
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log k)
     ///     Space complexity - O(k)
-    /// </summary>
-    /// <param name="val"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Add(int val)
     {
         if (_priorityQueue.Count < _k)

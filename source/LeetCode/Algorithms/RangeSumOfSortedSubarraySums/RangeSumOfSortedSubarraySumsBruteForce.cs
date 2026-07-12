@@ -14,15 +14,11 @@ namespace LeetCode.Algorithms.RangeSumOfSortedSubarraySums;
 /// <inheritdoc />
 public sealed class RangeSumOfSortedSubarraySumsBruteForce : IRangeSumOfSortedSubarraySums
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2 log n)
     ///     Space complexity - O(n^2)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="n"></param>
-    /// <param name="left"></param>
-    /// <param name="right"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int RangeSum(int[] nums, int n, int left, int right)
     {
         var sumsList = new List<int>();

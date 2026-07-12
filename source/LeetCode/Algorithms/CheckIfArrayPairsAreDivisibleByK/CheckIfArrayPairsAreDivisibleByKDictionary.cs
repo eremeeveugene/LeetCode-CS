@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK;
 /// <inheritdoc />
 public sealed class CheckIfArrayPairsAreDivisibleByKDictionary : ICheckIfArrayPairsAreDivisibleByK
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanArrange(int[] arr, int k)
     {
         var countDictionary = new Dictionary<int, int>();

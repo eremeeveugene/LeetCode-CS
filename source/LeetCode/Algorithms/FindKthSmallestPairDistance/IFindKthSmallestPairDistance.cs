@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.FindKthSmallestPairDistance;
 /// </summary>
 public interface IFindKthSmallestPairDistance
 {
+    /// <summary>
+    ///     Finds the <paramref name="k" />-th smallest distance among all pairs of elements of <paramref name="nums" />,
+    ///     where the distance of a pair is the absolute difference of its elements.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <param name="k">The one-based rank of the pair distance to find.</param>
+    /// <returns>The <paramref name="k" />-th smallest pair distance.</returns>
     int SmallestDistancePair(int[] nums, int k);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.DeleteColumnsToMakeSorted;
 /// </summary>
 public interface IDeleteColumnsToMakeSorted
 {
+    /// <summary>
+    ///     Counts the columns of the grid formed by <paramref name="strs" /> that are not sorted lexicographically and
+    ///     therefore must be deleted.
+    /// </summary>
+    /// <param name="strs">The array of equal-length strings forming the grid.</param>
+    /// <returns>The number of columns that need to be deleted so every remaining column is sorted.</returns>
     int MinDeletionSize(string[] strs);
 }

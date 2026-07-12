@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FibonacciNumber;
 /// </summary>
 public interface IFibonacciNumber
 {
+    /// <summary>
+    ///     Computes the <paramref name="n" />-th Fibonacci number.
+    /// </summary>
+    /// <param name="n">The zero-based index in the Fibonacci sequence.</param>
+    /// <returns>The <paramref name="n" />-th Fibonacci number.</returns>
     int Fib(int n);
 }

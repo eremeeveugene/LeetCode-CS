@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ConstructProductMatrix;
 /// </summary>
 public interface IConstructProductMatrix
 {
+    /// <summary>
+    ///     Constructs the product matrix of <paramref name="grid" />, where each element is the product of all elements of
+    ///     <paramref name="grid" /> except the one at the same position, taken modulo 12345.
+    /// </summary>
+    /// <param name="grid">The matrix of integers.</param>
+    /// <returns>The product matrix of <paramref name="grid" /> with each element taken modulo 12345.</returns>
     int[][] ConstructProductMatrix(int[][] grid);
 }

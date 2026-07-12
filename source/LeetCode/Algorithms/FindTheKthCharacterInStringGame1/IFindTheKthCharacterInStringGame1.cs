@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindTheKthCharacterInStringGame1;
 /// </summary>
 public interface IFindTheKthCharacterInStringGame1
 {
+    /// <summary>
+    ///     Returns the <paramref name="k" />-th character of the string built by repeatedly appending to "a" a copy of the
+    ///     current string with each character changed to its next character in the alphabet.
+    /// </summary>
+    /// <param name="k">The 1-based position of the character to return.</param>
+    /// <returns>The <paramref name="k" />-th character of the generated string.</returns>
     char KthCharacter(int k);
 }

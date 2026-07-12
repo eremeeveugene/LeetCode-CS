@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.GoalParserInterpretation;
 /// <inheritdoc />
 public sealed class GoalParserInterpretationStringBuilder : IGoalParserInterpretation
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="command"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string Interpret(string command)
     {
         var stringBuilder = new StringBuilder();

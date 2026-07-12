@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumLimitOfBallsInBag;
 /// <inheritdoc />
 public sealed class MinimumLimitOfBallsInBagBinarySearch : IMinimumLimitOfBallsInBag
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="maxOperations"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumSize(int[] nums, int maxOperations)
     {
         var left = 1;

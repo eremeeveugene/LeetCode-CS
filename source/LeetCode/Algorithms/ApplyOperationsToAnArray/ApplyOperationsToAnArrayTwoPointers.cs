@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ApplyOperationsToAnArray;
 /// <inheritdoc />
 public sealed class ApplyOperationsToAnArrayTwoPointers : IApplyOperationsToAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] ApplyOperations(int[] nums)
     {
         for (var i = 0; i < nums.Length - 1; i++)

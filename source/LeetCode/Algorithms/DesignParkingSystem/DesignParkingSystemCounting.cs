@@ -35,12 +35,11 @@ public sealed class DesignParkingSystemCounting : IDesignParkingSystem
         _smallCapacity = smallCapacity;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="carType"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool AddCar(int carType)
     {
         switch (carType)

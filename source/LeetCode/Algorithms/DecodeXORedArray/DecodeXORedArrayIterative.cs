@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.DecodeXORedArray;
 /// <inheritdoc />
 public sealed class DecodeXORedArrayIterative : IDecodeXORedArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="encoded"></param>
-    /// <param name="first"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] Decode(int[] encoded, int first)
     {
         var result = new int[encoded.Length + 1];

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.DividePlayersIntoTeamsOfEqualSkill;
 /// <inheritdoc />
 public sealed class DividePlayersIntoTeamsOfEqualSkillDictionary : IDividePlayersIntoTeamsOfEqualSkill
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="skill"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long DividePlayers(int[] skill)
     {
         var totalSkill = skill.Aggregate<int, long>(0, (current, skillItem) => current + skillItem);

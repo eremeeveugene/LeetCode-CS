@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountingBits;
 /// </summary>
 public interface ICountingBits
 {
+    /// <summary>
+    ///     Computes, for every integer i in the range from 0 to <paramref name="n" />, the number of 1 bits in the binary
+    ///     representation of i.
+    /// </summary>
+    /// <param name="n">The upper bound of the range.</param>
+    /// <returns>An array of length <paramref name="n" /> + 1 where the element at index i is the number of 1 bits in i.</returns>
     int[] CountBits(int n);
 }

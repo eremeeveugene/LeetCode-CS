@@ -16,12 +16,11 @@ public sealed class RegionsCutBySlashesDepthFirstSearch : IRegionsCutBySlashes
 {
     private const int Multiplier = 3;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int RegionsBySlashes(string[] grid)
     {
         var matrix = new int[grid.Length * Multiplier][];

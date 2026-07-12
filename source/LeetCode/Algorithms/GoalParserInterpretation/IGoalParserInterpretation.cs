@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.GoalParserInterpretation;
 /// </summary>
 public interface IGoalParserInterpretation
 {
+    /// <summary>
+    ///     Interprets <paramref name="command" /> by replacing "G" with "G", "()" with "o", and "(al)" with "al", and
+    ///     concatenating the results in order.
+    /// </summary>
+    /// <param name="command">The command string consisting of "G", "()", and "(al)" tokens.</param>
+    /// <returns>The interpreted string.</returns>
     string Interpret(string command);
 }

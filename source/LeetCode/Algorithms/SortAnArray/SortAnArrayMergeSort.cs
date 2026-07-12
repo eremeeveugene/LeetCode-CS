@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SortAnArray;
 /// <inheritdoc />
 public sealed class SortAnArrayMergeSort : ISortAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] SortArray(int[] nums)
     {
         SortArray(nums, 0, nums.Length - 1);

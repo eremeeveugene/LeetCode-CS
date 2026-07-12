@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.PermutationInString;
 /// <inheritdoc />
 public sealed class PermutationInStringSlidingWindowDictionary : IPermutationInString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m), where n is the length of s1 and m is the length of s2
     ///     Space complexity - O(k), where k is the number of unique characters in the input
-    /// </summary>
-    /// <param name="s1"></param>
-    /// <param name="s2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckInclusion(string s1, string s2)
     {
         if (s2.Length < s1.Length)

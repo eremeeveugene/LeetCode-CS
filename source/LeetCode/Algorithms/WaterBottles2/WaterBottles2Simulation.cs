@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.WaterBottles2;
 /// <inheritdoc />
 public sealed class WaterBottles2Simulation : IWaterBottles2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n), where n is the number of initial bottles
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="numBottles"></param>
-    /// <param name="numExchange"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxBottlesDrunk(int numBottles, int numExchange)
     {
         var drunkBottles = 0;

@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.MergeTwoBinaryTrees;
 /// <inheritdoc />
 public sealed class MergeTwoBinaryTreesDepthFirstSearchRecursive : IMergeTwoBinaryTrees
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(n + m) for a skewed trees, O(log n + log m) for a balanced trees
-    /// </summary>
-    /// <param name="root1"></param>
-    /// <param name="root2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public TreeNode? MergeTrees(TreeNode? root1, TreeNode? root2)
     {
         if (root1 == null && root2 == null)

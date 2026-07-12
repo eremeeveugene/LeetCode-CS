@@ -18,5 +18,13 @@ namespace LeetCode.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
 /// </summary>
 public interface IHeightOfBinaryTreeAfterSubtreeRemovalQueries
 {
+    /// <summary>
+    ///     Computes, for each query in <paramref name="queries" />, the height of the binary tree rooted at
+    ///     <paramref name="root" /> after removing the subtree rooted at the node with the queried value. Queries are
+    ///     independent, so the tree returns to its initial state after each query.
+    /// </summary>
+    /// <param name="root">The root of the binary tree.</param>
+    /// <param name="queries">The values of the nodes whose subtrees are removed.</param>
+    /// <returns>The heights of the tree after performing each query.</returns>
     int[] TreeQueries(TreeNode root, int[] queries);
 }

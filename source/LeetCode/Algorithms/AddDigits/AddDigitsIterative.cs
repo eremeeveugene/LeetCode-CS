@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.AddDigits;
 /// <inheritdoc />
 public sealed class AddDigitsIterative : IAddDigits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log(n))
     ///     Space complexity - O(log(n))
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int AddDigits(int num)
     {
         while (num > 9)

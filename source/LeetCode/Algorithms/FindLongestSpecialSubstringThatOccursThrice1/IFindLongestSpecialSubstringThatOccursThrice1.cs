@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindLongestSpecialSubstringThatOccursThrice1;
 /// </summary>
 public interface IFindLongestSpecialSubstringThatOccursThrice1
 {
+    /// <summary>
+    ///     Finds the length of the longest special substring (consisting of a single repeated character) that occurs at
+    ///     least three times in <paramref name="s" />.
+    /// </summary>
+    /// <param name="s">The string to search.</param>
+    /// <returns>The length of the longest special substring occurring at least three times, or -1 if none exists.</returns>
     int MaximumLength(string s);
 }

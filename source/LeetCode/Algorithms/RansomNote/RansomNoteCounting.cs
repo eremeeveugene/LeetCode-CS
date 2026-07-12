@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.RansomNote;
 /// <inheritdoc />
 public sealed class RansomNoteCounting : IRansomNote
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="ransomNote"></param>
-    /// <param name="magazine"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanConstruct(string ransomNote, string magazine)
     {
         var magazineChars = new int['z' - 'a'];

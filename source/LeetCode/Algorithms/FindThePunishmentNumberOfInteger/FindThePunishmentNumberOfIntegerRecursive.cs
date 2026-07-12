@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindThePunishmentNumberOfInteger;
 /// <inheritdoc />
 public sealed class FindThePunishmentNumberOfIntegerRecursive : IFindThePunishmentNumberOfInteger
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * 2^(log10 n))
     ///     Space complexity - O(log10 n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int PunishmentNumber(int n)
     {
         var punishmentNumber = 0;

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumTimeDifference;
 /// <inheritdoc />
 public sealed class MinimumTimeDifferenceSorting : MinimumTimeDifferenceBase
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="timePoints"></param>
-    /// <returns></returns>
+    /// </remarks>
     public override int FindMinDifferenceInternal(IList<string> timePoints)
     {
         var minutes = new int[timePoints.Count];

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CheckIfTheSentenceIsPangram;
 /// </summary>
 public interface ICheckIfTheSentenceIsPangram
 {
+    /// <summary>
+    ///     Determines whether <paramref name="sentence" /> is a pangram, i.e. contains every letter of the English alphabet
+    ///     at least once.
+    /// </summary>
+    /// <param name="sentence">The sentence consisting of lowercase English letters.</param>
+    /// <returns><c>true</c> if <paramref name="sentence" /> is a pangram; otherwise, <c>false</c>.</returns>
     bool CheckIfPangram(string sentence);
 }

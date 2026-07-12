@@ -24,11 +24,11 @@ public sealed class DesignStackWithIncrementOperationLinkedList : IDesignStackWi
         _maxSize = maxSize;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="x"></param>
+    /// </remarks>
     public void Push(int x)
     {
         if (_count >= _maxSize)
@@ -52,11 +52,11 @@ public sealed class DesignStackWithIncrementOperationLinkedList : IDesignStackWi
         _count++;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int Pop()
     {
         if (_headNode == null)
@@ -82,12 +82,11 @@ public sealed class DesignStackWithIncrementOperationLinkedList : IDesignStackWi
         return value;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(min(k,n))
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="k"></param>
-    /// <param name="val"></param>
+    /// </remarks>
     public void Increment(int k, int val)
     {
         var i = 0;

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MakeTwoArraysEqualByReversingSubarrays;
 /// <inheritdoc />
 public sealed class MakeTwoArraysEqualByReversingSubarraysSorting : IMakeTwoArraysEqualByReversingSubarrays
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="target"></param>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanBeEqual(int[] target, int[] arr)
     {
         Array.Sort(target);

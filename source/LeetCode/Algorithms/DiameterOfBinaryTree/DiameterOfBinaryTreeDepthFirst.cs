@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.DiameterOfBinaryTree;
 /// <inheritdoc />
 public sealed class DiameterOfBinaryTreeDepthFirst : IDiameterOfBinaryTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(log n) for a balanced tree, O(n) for a skewed tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int DiameterOfBinaryTree(TreeNode? root)
     {
         if (root == null)

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LemonadeChange;
 /// <inheritdoc />
 public sealed class LemonadeChangeGreedy : ILemonadeChange
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="bills"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool LemonadeChange(int[] bills)
     {
         var fiveBills = 0;

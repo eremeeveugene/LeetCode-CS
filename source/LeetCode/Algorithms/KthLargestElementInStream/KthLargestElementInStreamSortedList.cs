@@ -23,12 +23,11 @@ public sealed class KthLargestElementInStreamSortedList : IKthLargestElementInSt
         _nums = [.. nums.OrderDescending()];
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n + m)
-    /// </summary>
-    /// <param name="val"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Add(int val)
     {
         Insert(val);

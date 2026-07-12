@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SolvingQuestionsWithBrainpower;
 /// <inheritdoc />
 public sealed class SolvingQuestionsWithBrainpowerDynamicProgramming : ISolvingQuestionsWithBrainpower
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="questions"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long MostPoints(int[][] questions)
     {
         var maximumPoints = new long[questions.Length];

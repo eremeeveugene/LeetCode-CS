@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountSquareSubmatricesWithAllOnes;
 /// <inheritdoc />
 public sealed class CountSquareSubmatricesWithAllOnesDynamicProgramming : ICountSquareSubmatricesWithAllOnes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="matrix"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountSquares(int[][] matrix)
     {
         var m = matrix.Length;

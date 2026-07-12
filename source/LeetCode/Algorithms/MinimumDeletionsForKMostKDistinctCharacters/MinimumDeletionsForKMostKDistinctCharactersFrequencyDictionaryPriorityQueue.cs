@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumDeletionsForKMostKDistinctCharacters;
 /// <inheritdoc />
 public sealed class MinimumDeletionsForKMostKDistinctCharactersFrequencyDictionaryPriorityQueue : IMinimumDeletionsForKMostKDistinctCharacters
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinDeletion(string s, int k)
     {
         var frequencyDictionary = new Dictionary<char, int>();

@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.SymmetricTree;
 /// <inheritdoc />
 public sealed class SymmetricTreeIterative : ISymmetricTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(log n) for a balanced tree, O(n) for an unbalanced tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsSymmetric(TreeNode? root)
     {
         if (root == null)

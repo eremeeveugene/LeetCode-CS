@@ -16,12 +16,11 @@ public sealed class ReverseVowelsOfStringTwoPointers : IReverseVowelsOfString
 {
     private readonly HashSet<char> _vowelsHashSet = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string ReverseVowels(string s)
     {
         var sArray = s.ToCharArray();

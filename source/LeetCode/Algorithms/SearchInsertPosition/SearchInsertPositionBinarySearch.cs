@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.SearchInsertPosition;
 /// <inheritdoc />
 public sealed class SearchInsertPositionBinarySearch : ISearchInsertPosition
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SearchInsert(int[] nums, int target)
     {
         var index = Array.BinarySearch(nums, target);

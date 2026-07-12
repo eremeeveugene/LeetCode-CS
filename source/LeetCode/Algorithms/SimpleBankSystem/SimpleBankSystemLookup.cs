@@ -28,14 +28,11 @@ public sealed class SimpleBankSystemLookup : ISimpleBankSystem
         _balanceLength = balance.Length;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="account1"></param>
-    /// <param name="account2"></param>
-    /// <param name="money"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool Transfer(int account1, int account2, long money)
     {
         if (account1 > _balanceLength || account2 > _balanceLength)
@@ -57,13 +54,11 @@ public sealed class SimpleBankSystemLookup : ISimpleBankSystem
         return true;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="account"></param>
-    /// <param name="money"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool Deposit(int account, long money)
     {
         if (account > _balanceLength)
@@ -78,13 +73,11 @@ public sealed class SimpleBankSystemLookup : ISimpleBankSystem
         return true;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="account"></param>
-    /// <param name="money"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool Withdraw(int account, long money)
     {
         if (account > _balanceLength)

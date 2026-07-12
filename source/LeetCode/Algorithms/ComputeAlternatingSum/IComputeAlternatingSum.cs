@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ComputeAlternatingSum;
 /// </summary>
 public interface IComputeAlternatingSum
 {
+    /// <summary>
+    ///     Computes the alternating sum of <paramref name="nums" />, where elements at even indices are added and elements
+    ///     at odd indices are subtracted.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The alternating sum of <paramref name="nums" />.</returns>
     int AlternatingSum(int[] nums);
 }

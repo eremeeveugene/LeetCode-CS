@@ -52,12 +52,11 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="movie"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> Search(int movie)
     {
         if (!_movieToMovieOffersDictionary.TryGetValue(movie, out var movieOffers))
@@ -93,11 +92,11 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
         return searchResults;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public IList<IList<int>> Report()
     {
         var rentalItemsCount = _rentalRecordsSortedSet.Count;
@@ -128,12 +127,11 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
         return reportResults;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log m), where m is the number of offers for the movie
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="shop"></param>
-    /// <param name="movie"></param>
+    /// </remarks>
     public void Rent(int shop, int movie)
     {
         var price = _shopMovieToPriceDictionary[(shop, movie)];
@@ -145,12 +143,11 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
         movieOffers.Remove(new MovieOffer(price, shop));
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log m), where m is the number of offers for the movie
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="shop"></param>
-    /// <param name="movie"></param>
+    /// </remarks>
     public void Drop(int shop, int movie)
     {
         var price = _shopMovieToPriceDictionary[(shop, movie)];

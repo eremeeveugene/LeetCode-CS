@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaxSumOfPairWithEqualSumOfDigits;
 /// <inheritdoc />
 public sealed class MaxSumOfPairWithEqualSumOfDigitsDictionary : IMaxSumOfPairWithEqualSumOfDigits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaximumSum(int[] nums)
     {
         var maximumSum = -1;

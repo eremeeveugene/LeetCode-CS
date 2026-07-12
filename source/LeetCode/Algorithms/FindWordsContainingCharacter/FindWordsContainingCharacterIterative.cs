@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindWordsContainingCharacter;
 /// <inheritdoc />
 public sealed class FindWordsContainingCharacterIterative : IFindWordsContainingCharacter
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Time complexity - O(1)
-    /// </summary>
-    /// <param name="words"></param>
-    /// <param name="x"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> FindWordsContaining(string[] words, char x)
     {
         var result = new List<int>();

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ZigzagGridTraversalWithSkip;
 /// <inheritdoc />
 public sealed class ZigzagGridTraversalWithSkipSimulation : IZigzagGridTraversalWithSkip
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n*m)
     ///     Space complexity - O(k)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> ZigzagTraversal(int[][] grid)
     {
         var result = new List<int>();

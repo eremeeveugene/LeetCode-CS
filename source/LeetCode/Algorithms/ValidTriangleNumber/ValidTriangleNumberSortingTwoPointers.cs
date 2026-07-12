@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ValidTriangleNumber;
 /// <inheritdoc />
 public sealed class ValidTriangleNumberSortingTwoPointers : IValidTriangleNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity -  O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int TriangleNumber(int[] nums)
     {
         var numsLength = nums.Length;

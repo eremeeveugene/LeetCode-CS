@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MajorityElement;
 /// <inheritdoc />
 public sealed class MajorityElementDistinctCount : IMajorityElement
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MajorityElement(int[] nums)
     {
         var result = 0;

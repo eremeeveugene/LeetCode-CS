@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.GridGame;
 /// <inheritdoc />
 public sealed class GridGamePrefixSum : IGridGame
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long GridGame(int[][] grid)
     {
         var n = grid[0].Length;

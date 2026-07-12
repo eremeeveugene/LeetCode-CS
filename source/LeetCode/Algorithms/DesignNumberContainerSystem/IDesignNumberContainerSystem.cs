@@ -16,7 +16,17 @@ namespace LeetCode.Algorithms.DesignNumberContainerSystem;
 /// </summary>
 public interface IDesignNumberContainerSystem
 {
+    /// <summary>
+    ///     Inserts or replaces the number at the given index in the container system.
+    /// </summary>
+    /// <param name="index">The index at which to insert or replace the number.</param>
+    /// <param name="number">The number to store at <paramref name="index" />.</param>
     void Change(int index, int number);
 
+    /// <summary>
+    ///     Finds the smallest index that is filled with <paramref name="number" />.
+    /// </summary>
+    /// <param name="number">The number to search for.</param>
+    /// <returns>The smallest index filled with <paramref name="number" />, or -1 if no such index exists.</returns>
     int Find(int number);
 }

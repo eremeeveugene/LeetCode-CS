@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountGoodNumbers;
 /// </summary>
 public interface ICountGoodNumbers
 {
+    /// <summary>
+    ///     Counts the good digit strings of length <paramref name="n" />, where digits at even indices are even and digits
+    ///     at odd indices are prime, returning the result modulo 10^9 + 7.
+    /// </summary>
+    /// <param name="n">The length of the digit strings.</param>
+    /// <returns>The number of good digit strings of length <paramref name="n" /> modulo 10^9 + 7.</returns>
     int CountGoodNumbers(long n);
 }

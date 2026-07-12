@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.LargestLocalValuesInMatrix;
 /// </summary>
 public interface ILargestLocalValuesInMatrix
 {
+    /// <summary>
+    ///     Generates a matrix where each element is the largest value in the corresponding 3 x 3 submatrix of
+    ///     <paramref name="grid" />.
+    /// </summary>
+    /// <param name="grid">The n x n matrix of integers.</param>
+    /// <returns>The (n - 2) x (n - 2) matrix of the largest local values.</returns>
     int[][] LargestLocal(int[][] grid);
 }

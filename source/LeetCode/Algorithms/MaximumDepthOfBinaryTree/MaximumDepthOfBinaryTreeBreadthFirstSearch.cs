@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.MaximumDepthOfBinaryTree;
 /// <inheritdoc />
 public sealed class MaximumDepthOfBinaryTreeBreadthFirstSearch : IMaximumDepthOfBinaryTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxDepth(TreeNode? root)
     {
         if (root == null)

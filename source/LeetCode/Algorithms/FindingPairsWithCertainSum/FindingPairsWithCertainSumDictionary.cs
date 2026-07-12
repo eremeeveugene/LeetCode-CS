@@ -39,12 +39,11 @@ public sealed class FindingPairsWithCertainSumDictionary : IFindingPairsWithCert
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="index"></param>
-    /// <param name="val"></param>
+    /// </remarks>
     public void Add(int index, int val)
     {
         _nums2FrequencyDictionary[_nums2[index]]--;
@@ -62,12 +61,11 @@ public sealed class FindingPairsWithCertainSumDictionary : IFindingPairsWithCert
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="tot"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Count(int tot)
     {
         var count = 0;

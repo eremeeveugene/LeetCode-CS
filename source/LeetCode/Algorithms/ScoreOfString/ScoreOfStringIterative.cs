@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ScoreOfString;
 /// <inheritdoc />
 public sealed class ScoreOfStringIterative : IScoreOfString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ScoreOfString(string s)
     {
         var score = 0;

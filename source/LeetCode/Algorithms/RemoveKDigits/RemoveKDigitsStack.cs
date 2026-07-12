@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.RemoveKDigits;
 /// <inheritdoc />
 public sealed class RemoveKDigitsStack : IRemoveKDigits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string RemoveKdigits(string num, int k)
     {
         if (k == num.Length)

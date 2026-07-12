@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumDifferenceByRemappingDigit;
 /// <inheritdoc />
 public sealed class MaximumDifferenceByRemappingDigitGreedy : IMaximumDifferenceByRemappingDigit
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log num)
     ///     Space complexity - O(log num)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinMaxDifference(int num)
     {
         var digits = num.ToString();

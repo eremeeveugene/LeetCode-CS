@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.TakeGiftsFromTheRichestPile;
 /// <inheritdoc />
 public sealed class TakeGiftsFromTheRichestPilePriorityQueue : ITakeGiftsFromTheRichestPile
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O((n + k) * log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="gifts"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long PickGifts(int[] gifts, int k)
     {
         var giftsPriorityQueue = new PriorityQueue<int, int>();

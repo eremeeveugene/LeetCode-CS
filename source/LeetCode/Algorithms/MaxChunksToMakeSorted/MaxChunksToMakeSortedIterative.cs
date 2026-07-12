@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaxChunksToMakeSorted;
 /// <inheritdoc />
 public sealed class MaxChunksToMakeSortedIterative : IMaxChunksToMakeSorted
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxChunksToSorted(int[] arr)
     {
         var max = 0;

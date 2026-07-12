@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CheckDivisibilityByDigitSumAndProduct;
 /// <inheritdoc />
 public sealed class CheckDivisibilityByDigitSumAndProductIterative : ICheckDivisibilityByDigitSumAndProduct
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckDivisibility(int n)
     {
         var digitSum = 0;

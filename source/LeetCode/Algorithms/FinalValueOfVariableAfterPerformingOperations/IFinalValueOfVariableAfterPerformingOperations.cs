@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations;
 /// </summary>
 public interface IFinalValueOfVariableAfterPerformingOperations
 {
+    /// <summary>
+    ///     Computes the final value of a variable initialized to zero after performing the increment and decrement
+    ///     operations in <paramref name="operations" />.
+    /// </summary>
+    /// <param name="operations">The array of increment and decrement operations.</param>
+    /// <returns>The final value of the variable after all operations.</returns>
     int FinalValueAfterOperations(string[] operations);
 }

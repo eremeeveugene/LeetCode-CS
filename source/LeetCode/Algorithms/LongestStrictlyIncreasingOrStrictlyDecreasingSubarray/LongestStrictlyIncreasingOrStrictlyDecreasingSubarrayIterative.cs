@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubar
 /// <inheritdoc />
 public sealed class LongestStrictlyIncreasingOrStrictlyDecreasingSubarrayIterative : ILongestStrictlyIncreasingOrStrictlyDecreasingSubarray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LongestMonotonicSubarray(int[] nums)
     {
         var increasingLength = 1;

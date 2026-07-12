@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.IslandPerimeter;
 /// </summary>
 public interface IIslandPerimeter
 {
+    /// <summary>
+    ///     Computes the perimeter of the island formed by the land cells in <paramref name="grid" />.
+    /// </summary>
+    /// <param name="grid">The grid where 1 represents land and 0 represents water.</param>
+    /// <returns>The perimeter of the island.</returns>
     int IslandPerimeter(int[][] grid);
 }

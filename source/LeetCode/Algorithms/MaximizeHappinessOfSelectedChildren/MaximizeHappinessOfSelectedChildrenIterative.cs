@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MaximizeHappinessOfSelectedChildren;
 /// <inheritdoc />
 public sealed class MaximizeHappinessOfSelectedChildrenIterative : IMaximizeHappinessOfSelectedChildren
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="happiness"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long MaximumHappinessSum(int[] happiness, int k)
     {
         long result = 0;

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes;
 /// </summary>
 public interface ICountSubarraysWhereMaxElementAppearsAtLeastKTimes
 {
+    /// <summary>
+    ///     Counts the subarrays of <paramref name="nums" /> in which the maximum element of the array appears at least
+    ///     <paramref name="k" /> times.
+    /// </summary>
+    /// <param name="nums">The array of integers to examine.</param>
+    /// <param name="k">The minimum number of occurrences of the maximum element.</param>
+    /// <returns>The number of subarrays where the maximum element appears at least <paramref name="k" /> times.</returns>
     long CountSubarrays(int[] nums, int k);
 }

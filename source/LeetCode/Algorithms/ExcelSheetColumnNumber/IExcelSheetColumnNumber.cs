@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.ExcelSheetColumnNumber;
 /// </summary>
 public interface IExcelSheetColumnNumber
 {
+    /// <summary>
+    ///     Converts the Excel sheet column title <paramref name="columnTitle" /> to its corresponding column number.
+    /// </summary>
+    /// <param name="columnTitle">The Excel sheet column title.</param>
+    /// <returns>The column number corresponding to <paramref name="columnTitle" />.</returns>
     int TitleToNumber(string columnTitle);
 }

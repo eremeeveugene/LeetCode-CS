@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.CountAndSay;
 /// <inheritdoc />
 public sealed class CountAndSayIterative : ICountAndSay
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(2^n)
     ///     Space complexity - O(2^n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string CountAndSay(int n)
     {
         var result = "1";

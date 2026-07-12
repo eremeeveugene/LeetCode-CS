@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindMostFrequentVowelAndConsonant;
 /// <inheritdoc />
 public sealed class FindMostFrequentVowelAndConsonantFrequencyDictionary : IFindMostFrequentVowelAndConsonant
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxFreqSum(string s)
     {
         var frequencyDictionary = new Dictionary<char, int>();

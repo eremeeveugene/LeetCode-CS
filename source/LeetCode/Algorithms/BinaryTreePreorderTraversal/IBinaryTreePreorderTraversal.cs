@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.BinaryTreePreorderTraversal;
 /// </summary>
 public interface IBinaryTreePreorderTraversal
 {
+    /// <summary>
+    ///     Returns the preorder traversal of the values of the binary tree rooted at <paramref name="root" />.
+    /// </summary>
+    /// <param name="root">The root of the binary tree.</param>
+    /// <returns>The node values in preorder order.</returns>
     IList<int> PreorderTraversal(TreeNode? root);
 }

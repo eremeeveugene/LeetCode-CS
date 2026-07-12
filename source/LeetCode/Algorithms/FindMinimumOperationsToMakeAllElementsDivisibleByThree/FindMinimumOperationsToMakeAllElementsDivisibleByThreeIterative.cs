@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByT
 /// <inheritdoc />
 public sealed class FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterative : IFindMinimumOperationsToMakeAllElementsDivisibleByThree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumOperations(int[] nums)
     {
         return nums.Select(num => num % 3).Count(remainder => remainder != 0);

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SmallestRangeCoveringElementsFromKLists;
 /// <inheritdoc />
 public sealed class SmallestRangeCoveringElementsFromKListsSortingWithSlidingWindow : ISmallestRangeCoveringElementsFromKLists
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] SmallestRange(IList<IList<int>> nums)
     {
         var mergedNums = new List<(int Value, int ListIndex)>();

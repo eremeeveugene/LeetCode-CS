@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.ClosestPrimeNumbersInRange;
 /// <inheritdoc />
 public sealed class ClosestPrimeNumbersInRangeBruteForce : IClosestPrimeNumbersInRange
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O((R−L) * sqrt(R))
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="left"></param>
-    /// <param name="right"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] ClosestPrimes(int left, int right)
     {
         var minNum1 = 0;

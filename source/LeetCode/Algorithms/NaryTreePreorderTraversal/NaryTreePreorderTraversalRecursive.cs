@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.NaryTreePreorderTraversal;
 /// <inheritdoc />
 public sealed class NaryTreePreorderTraversalRecursive : INaryTreePreorderTraversal
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> Preorder(Node? root)
     {
         if (root == null)

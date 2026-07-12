@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.ShortestDistanceToTargetStringInCircularArray;
 /// <inheritdoc />
 public sealed class ShortestDistanceToTargetStringInCircularArrayIterative : IShortestDistanceToTargetStringInCircularArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="words"></param>
-    /// <param name="target"></param>
-    /// <param name="startIndex"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ClosestTarget(string[] words, string target, int startIndex)
     {
         var closestDistance = int.MaxValue;

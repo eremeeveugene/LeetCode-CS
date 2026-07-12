@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumCostToReachEveryPosition;
 /// <inheritdoc />
 public sealed class MinimumCostToReachEveryPositionGreedy : IMinimumCostToReachEveryPosition
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="cost"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] MinCosts(int[] cost)
     {
         var minCost = int.MaxValue;

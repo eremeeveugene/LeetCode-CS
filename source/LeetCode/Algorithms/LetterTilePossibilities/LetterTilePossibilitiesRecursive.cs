@@ -16,12 +16,11 @@ public sealed class LetterTilePossibilitiesRecursive : ILetterTilePossibilities
 {
     private const int Count = 'Z' - 'A' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * n!)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="tiles"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumTilePossibilities(string tiles)
     {
         var charCount = new int[Count];

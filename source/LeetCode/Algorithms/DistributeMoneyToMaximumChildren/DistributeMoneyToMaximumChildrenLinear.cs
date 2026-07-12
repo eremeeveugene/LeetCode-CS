@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.DistributeMoneyToMaximumChildren;
 /// <inheritdoc />
 public sealed class DistributeMoneyToMaximumChildrenLinear : IDistributeMoneyToMaximumChildren
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="money"></param>
-    /// <param name="children"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int DistMoney(int money, int children)
     {
         if (money < children)

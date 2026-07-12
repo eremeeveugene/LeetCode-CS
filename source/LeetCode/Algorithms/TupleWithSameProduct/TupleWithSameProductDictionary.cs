@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.TupleWithSameProduct;
 /// <inheritdoc />
 public sealed class TupleWithSameProductDictionary : ITupleWithSameProduct
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n^2)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int TupleSameProduct(int[] nums)
     {
         var count = 0;

@@ -32,11 +32,11 @@ public sealed class DesignBrowserHistoryArray : IDesignBrowserHistory
         _last = 0;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="url"></param>
+    /// </remarks>
     public void Visit(string url)
     {
         _current++;
@@ -46,12 +46,11 @@ public sealed class DesignBrowserHistoryArray : IDesignBrowserHistory
         _last = _current;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="steps"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string Back(int steps)
     {
         _current = Math.Max(0, _current - steps);
@@ -59,12 +58,11 @@ public sealed class DesignBrowserHistoryArray : IDesignBrowserHistory
         return _history[_current];
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="steps"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string Forward(int steps)
     {
         _current = Math.Min(_last, _current + steps);

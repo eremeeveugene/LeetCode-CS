@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MirrorDistanceOfAnInteger;
 /// <inheritdoc />
 public sealed class MirrorDistanceOfAnIntegerMath : IMirrorDistanceOfAnInteger
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MirrorDistance(int n)
     {
         var reversed = 0;

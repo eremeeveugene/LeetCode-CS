@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.HandOfStraights;
 /// <inheritdoc />
 public sealed class HandOfStraightsSortedDictionary : IHandOfStraights
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="hand"></param>
-    /// <param name="groupSize"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsNStraightHand(int[] hand, int groupSize)
     {
         if (hand.Length % groupSize != 0)

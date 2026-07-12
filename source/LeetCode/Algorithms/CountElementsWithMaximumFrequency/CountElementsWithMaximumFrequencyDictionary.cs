@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountElementsWithMaximumFrequency;
 /// <inheritdoc />
 public sealed class CountElementsWithMaximumFrequencyDictionary : ICountElementsWithMaximumFrequency
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(m), where m is the number of unique elements
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxFrequencyElements(int[] nums)
     {
         var numsDictionary = new Dictionary<int, int>();

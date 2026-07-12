@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.HeightChecker;
 /// <inheritdoc />
 public sealed class HeightCheckerSorting : IHeightChecker
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="heights"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int HeightChecker(int[] heights)
     {
         var sortedHeights = heights.Order().ToArray();

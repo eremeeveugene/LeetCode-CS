@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.IntersectionOfMultipleArrays;
 /// </summary>
 public interface IIntersectionOfMultipleArrays
 {
+    /// <summary>
+    ///     Finds the integers that are present in every array of <paramref name="nums" />, sorted in ascending order.
+    /// </summary>
+    /// <param name="nums">The arrays of distinct positive integers.</param>
+    /// <returns>The sorted list of integers present in each array of <paramref name="nums" />.</returns>
     IList<int> Intersection(int[][] nums);
 }

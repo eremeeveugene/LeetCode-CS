@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FruitIntoBaskets;
 /// <inheritdoc />
 public sealed class FruitIntoBasketsFrequencyDictionary : IFruitIntoBaskets
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="fruits"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int TotalFruit(int[] fruits)
     {
         var maximumNumberOfFruits = 0;

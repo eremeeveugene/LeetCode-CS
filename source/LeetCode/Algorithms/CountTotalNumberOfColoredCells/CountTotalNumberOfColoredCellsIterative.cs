@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountTotalNumberOfColoredCells;
 /// <inheritdoc />
 public sealed class CountTotalNumberOfColoredCellsIterative : ICountTotalNumberOfColoredCells
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long ColoredCells(int n)
     {
         long result = 1;

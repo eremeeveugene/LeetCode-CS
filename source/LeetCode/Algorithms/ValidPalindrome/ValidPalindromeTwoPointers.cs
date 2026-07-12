@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ValidPalindrome;
 /// <inheritdoc />
 public sealed class ValidPalindromeTwoPointers : IValidPalindrome
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsPalindrome(string s)
     {
         var left = 0;

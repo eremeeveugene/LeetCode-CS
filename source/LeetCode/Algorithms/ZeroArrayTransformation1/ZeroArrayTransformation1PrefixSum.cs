@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.ZeroArrayTransformation1;
 /// <inheritdoc />
 public sealed class ZeroArrayTransformation1PrefixSum : IZeroArrayTransformation1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="queries"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsZeroArray(int[] nums, int[][] queries)
     {
         var prefixSum = new int[nums.Length + 1];

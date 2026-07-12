@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.DayOfTheYear;
 /// <inheritdoc />
 public sealed class DayOfTheYearDateParse : IDayOfTheYear
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="date"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int DayOfYear(string date)
     {
         return DateOnly.Parse(date).DayOfYear;

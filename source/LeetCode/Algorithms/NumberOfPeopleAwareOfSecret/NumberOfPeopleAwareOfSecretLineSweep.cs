@@ -16,14 +16,11 @@ public sealed class NumberOfPeopleAwareOfSecretLineSweep : INumberOfPeopleAwareO
 {
     private const int Modulo = 1_000_000_007;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="delay"></param>
-    /// <param name="forget"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int PeopleAwareOfSecret(int n, int delay, int forget)
     {
         var length = n + forget + 2;

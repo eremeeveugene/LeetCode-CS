@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FirstMatchingCharacterFromBothEnds;
 /// </summary>
 public interface IFirstMatchingCharacterFromBothEnds
 {
+    /// <summary>
+    ///     Finds the smallest index of a character in <paramref name="s" /> that also appears elsewhere in the string when
+    ///     scanning from both ends.
+    /// </summary>
+    /// <param name="s">The string to search.</param>
+    /// <returns>The smallest index of the first matching character, or -1 if no such character exists.</returns>
     int FirstMatchingIndex(string s);
 }

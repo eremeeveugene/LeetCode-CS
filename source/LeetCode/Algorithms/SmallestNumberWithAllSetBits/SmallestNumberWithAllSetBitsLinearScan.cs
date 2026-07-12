@@ -16,12 +16,11 @@ public sealed class SmallestNumberWithAllSetBitsLinearScan : ISmallestNumberWith
 {
     private static readonly int[] Numbers = [3, 7, 15, 31, 63, 127, 255, 511, 1023];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SmallestNumber(int n)
     {
         if (n == 1)

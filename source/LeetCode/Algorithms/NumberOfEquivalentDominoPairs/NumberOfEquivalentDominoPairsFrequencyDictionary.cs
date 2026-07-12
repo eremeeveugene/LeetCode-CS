@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberOfEquivalentDominoPairs;
 /// <inheritdoc />
 public sealed class NumberOfEquivalentDominoPairsFrequencyDictionary : INumberOfEquivalentDominoPairs
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="dominoes"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumEquivDominoPairs(int[][] dominoes)
     {
         var result = 0;

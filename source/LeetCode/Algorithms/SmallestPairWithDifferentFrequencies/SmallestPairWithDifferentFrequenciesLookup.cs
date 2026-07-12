@@ -16,12 +16,11 @@ public sealed class SmallestPairWithDifferentFrequenciesLookup : ISmallestPairWi
 {
     private static readonly int[] EmptyPair = [-1, -1];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] MinDistinctFreqPair(int[] nums)
     {
         if (nums.Length < 3)

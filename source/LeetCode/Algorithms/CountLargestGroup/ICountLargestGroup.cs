@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountLargestGroup;
 /// </summary>
 public interface ICountLargestGroup
 {
+    /// <summary>
+    ///     Groups the numbers from 1 to <paramref name="n" /> by the sum of their digits and counts how many groups have
+    ///     the largest size.
+    /// </summary>
+    /// <param name="n">The upper bound of the range of numbers to group.</param>
+    /// <returns>The number of groups with the largest size.</returns>
     int CountLargestGroup(int n);
 }

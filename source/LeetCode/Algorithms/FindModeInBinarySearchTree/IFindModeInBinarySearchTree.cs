@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.FindModeInBinarySearchTree;
 /// </summary>
 public interface IFindModeInBinarySearchTree
 {
+    /// <summary>
+    ///     Finds the mode(s), the most frequently occurring values, in the binary search tree rooted at
+    ///     <paramref name="root" />.
+    /// </summary>
+    /// <param name="root">The root of the binary search tree.</param>
+    /// <returns>The array of the most frequently occurring values in the tree.</returns>
     int[] FindMode(TreeNode? root);
 }

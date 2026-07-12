@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.DayOfTheWeek;
 /// </summary>
 public interface IDayOfTheWeek
 {
+    /// <summary>
+    ///     Returns the name of the day of the week for the date given by <paramref name="day" />,
+    ///     <paramref name="month" /> and <paramref name="year" />.
+    /// </summary>
+    /// <param name="day">The day of the month.</param>
+    /// <param name="month">The month of the year.</param>
+    /// <param name="year">The year.</param>
+    /// <returns>The English name of the corresponding day of the week.</returns>
     string DayOfTheWeek(int day, int month, int year);
 }

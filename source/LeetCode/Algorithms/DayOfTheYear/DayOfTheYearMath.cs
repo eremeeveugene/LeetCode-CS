@@ -16,12 +16,11 @@ public sealed class DayOfTheYearMath : IDayOfTheYear
 {
     private static readonly int[] CumulativeDays = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="date"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int DayOfYear(string date)
     {
         var dateSpan = date.AsSpan();

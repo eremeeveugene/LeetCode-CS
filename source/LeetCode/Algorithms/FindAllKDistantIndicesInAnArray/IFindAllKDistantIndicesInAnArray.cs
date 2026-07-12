@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.FindAllKDistantIndicesInAnArray;
 /// </summary>
 public interface IFindAllKDistantIndicesInAnArray
 {
+    /// <summary>
+    ///     Finds all indices of <paramref name="nums" /> that are within distance <paramref name="k" /> of an index whose
+    ///     value equals <paramref name="key" />.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <param name="key">The value to search for in the array.</param>
+    /// <param name="k">The maximum allowed distance to an index containing <paramref name="key" />.</param>
+    /// <returns>The list of k-distant indices in increasing order.</returns>
     IList<int> FindKDistantIndices(int[] nums, int key, int k);
 }

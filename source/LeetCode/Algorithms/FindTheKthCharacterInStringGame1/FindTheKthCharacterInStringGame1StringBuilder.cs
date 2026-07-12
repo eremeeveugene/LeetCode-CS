@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.FindTheKthCharacterInStringGame1;
 /// <inheritdoc />
 public sealed class FindTheKthCharacterInStringGame1StringBuilder : IFindTheKthCharacterInStringGame1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(k)
     ///     Space complexity - O(k)
-    /// </summary>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public char KthCharacter(int k)
     {
         var stringBuilder = new StringBuilder("a");

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumAddToMakeParenthesesValid;
 /// <inheritdoc />
 public sealed class MinimumAddToMakeParenthesesValidIterative : IMinimumAddToMakeParenthesesValid
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinAddToMakeValid(string s)
     {
         var minAdd = 0;

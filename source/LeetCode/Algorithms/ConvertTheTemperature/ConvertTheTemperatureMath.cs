@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ConvertTheTemperature;
 /// <inheritdoc />
 public sealed class ConvertTheTemperatureMath : IConvertTheTemperature
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="celsius"></param>
-    /// <returns></returns>
+    /// </remarks>
     public double[] ConvertTemperature(double celsius)
     {
         var kelvin = celsius + 273.15;

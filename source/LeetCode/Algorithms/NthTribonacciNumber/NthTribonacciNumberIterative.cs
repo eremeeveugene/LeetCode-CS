@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NthTribonacciNumber;
 /// <inheritdoc />
 public sealed class NthTribonacciNumberIterative : INthTribonacciNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Tribonacci(int n)
     {
         switch (n)

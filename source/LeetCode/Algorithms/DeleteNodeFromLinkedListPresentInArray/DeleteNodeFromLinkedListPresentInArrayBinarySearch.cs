@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.DeleteNodeFromLinkedListPresentInArray;
 /// <inheritdoc />
 public sealed class DeleteNodeFromLinkedListPresentInArrayBinarySearch : IDeleteNodeFromLinkedListPresentInArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n + m log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="head"></param>
-    /// <returns></returns>
+    /// </remarks>
     public ListNode? ModifiedList(int[] nums, ListNode? head)
     {
         if (nums.Length == 0)

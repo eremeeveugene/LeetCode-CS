@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.MergeTwoSortedLists;
 /// <inheritdoc />
 public sealed class MergeTwoSortedListsLinear : IMergeTwoSortedLists
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="list1"></param>
-    /// <param name="list2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public ListNode? MergeTwoLists(ListNode? list1, ListNode? list2)
     {
         if (list1 == null)

@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.ReverseOddLevelsOfBinaryTree;
 /// <inheritdoc />
 public sealed class ReverseOddLevelsOfBinaryTreeBreadthFirstSearch : IReverseOddLevelsOfBinaryTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public TreeNode? ReverseOddLevels(TreeNode? root)
     {
         if (root?.left == null || root.right == null)

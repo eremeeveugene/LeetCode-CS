@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk;
 /// </summary>
 public interface IFindTheStudentThatWillReplaceTheChalk
 {
+    /// <summary>
+    ///     Finds the index of the student who will replace the chalk when the students, taking turns in order and cycling
+    ///     back to the start, consume chalk according to <paramref name="chalk" /> until fewer than the required pieces
+    ///     remain.
+    /// </summary>
+    /// <param name="chalk">The number of chalk pieces each student uses on their turn.</param>
+    /// <param name="k">The initial number of chalk pieces.</param>
+    /// <returns>The index of the student who will replace the chalk.</returns>
     int ChalkReplacer(int[] chalk, int k);
 }

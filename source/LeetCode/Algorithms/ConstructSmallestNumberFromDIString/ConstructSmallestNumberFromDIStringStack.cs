@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.ConstructSmallestNumberFromDIString;
 /// <inheritdoc />
 public sealed class ConstructSmallestNumberFromDIStringStack : IConstructSmallestNumberFromDIString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="pattern"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string SmallestNumber(string pattern)
     {
         var stringBuilder = new StringBuilder();

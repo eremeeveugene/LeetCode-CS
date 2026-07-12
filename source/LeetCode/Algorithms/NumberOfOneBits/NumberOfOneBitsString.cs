@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberOfOneBits;
 /// <inheritdoc />
 public sealed class NumberOfOneBitsString : INumberOfOneBits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int HammingWeight(int n)
     {
         return Convert.ToString(n, 2).Count(c => c == '1');

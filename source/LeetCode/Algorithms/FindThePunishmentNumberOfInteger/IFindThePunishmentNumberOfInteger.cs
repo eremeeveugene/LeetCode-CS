@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.FindThePunishmentNumberOfInteger;
 /// </summary>
 public interface IFindThePunishmentNumberOfInteger
 {
+    /// <summary>
+    ///     Computes the punishment number of <paramref name="n" />, which is the sum of the squares of all integers i in
+    ///     the range [1, <paramref name="n" />] whose squared decimal representation can be partitioned into contiguous
+    ///     substrings summing to i.
+    /// </summary>
+    /// <param name="n">The upper bound of the range of integers to consider.</param>
+    /// <returns>The punishment number of <paramref name="n" />.</returns>
     int PunishmentNumber(int n);
 }

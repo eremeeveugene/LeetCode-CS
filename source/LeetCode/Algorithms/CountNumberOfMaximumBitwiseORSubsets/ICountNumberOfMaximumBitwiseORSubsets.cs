@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountNumberOfMaximumBitwiseORSubsets;
 /// </summary>
 public interface ICountNumberOfMaximumBitwiseORSubsets
 {
+    /// <summary>
+    ///     Counts the non-empty subsets of <paramref name="nums" /> whose bitwise OR equals the maximum possible bitwise OR
+    ///     of any subset of the array.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The number of subsets with the maximum bitwise OR.</returns>
     int CountMaxOrSubsets(int[] nums);
 }

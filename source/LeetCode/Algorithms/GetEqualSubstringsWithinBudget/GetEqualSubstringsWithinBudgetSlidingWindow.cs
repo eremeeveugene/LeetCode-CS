@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.GetEqualSubstringsWithinBudget;
 /// <inheritdoc />
 public sealed class GetEqualSubstringsWithinBudgetSlidingWindow : IGetEqualSubstringsWithinBudget
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="t"></param>
-    /// <param name="maxCost"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int EqualSubstring(string s, string t, int maxCost)
     {
         var maxLength = 0;

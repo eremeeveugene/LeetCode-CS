@@ -16,13 +16,11 @@ public sealed class MaximumIceCreamBarsCountingSort : IMaximumIceCreamBars
 {
     private const int MaxCost = 100_000;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="costs"></param>
-    /// <param name="coins"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxIceCream(int[] costs, int coins)
     {
         var n = costs.Length;

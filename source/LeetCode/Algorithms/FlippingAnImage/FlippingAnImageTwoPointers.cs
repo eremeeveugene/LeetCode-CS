@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FlippingAnImage;
 /// <inheritdoc />
 public sealed class FlippingAnImageTwoPointers : IFlippingAnImage
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="image"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] FlipAndInvertImage(int[][] image)
     {
         foreach (var row in image)

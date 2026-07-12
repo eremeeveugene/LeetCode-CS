@@ -186,12 +186,11 @@ public sealed class PrimeSubtractionOperationIterative : IPrimeSubtractionOperat
         997
     ];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool PrimeSubOperation(int[] nums)
     {
         for (var i = nums.Length - 1; i > 0; i--)

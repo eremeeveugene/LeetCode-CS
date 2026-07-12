@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindTargetIndicesAfterSortingArray;
 /// <inheritdoc />
 public sealed class FindTargetIndicesAfterSortingArrayIterative : IFindTargetIndicesAfterSortingArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(k)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> TargetIndices(int[] nums, int target)
     {
         var smallerCount = 0;

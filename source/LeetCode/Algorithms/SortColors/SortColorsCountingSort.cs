@@ -14,11 +14,11 @@ namespace LeetCode.Algorithms.SortColors;
 /// <inheritdoc />
 public sealed class SortColorsCountingSort : ISortColors
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
+    /// </remarks>
     public void SortColors(int[] nums)
     {
         var zeroesCount = 0;

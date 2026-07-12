@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ArrayPartition;
 /// <inheritdoc />
 public sealed class ArrayPartitionSorting : IArrayPartition
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O (n log n)
     ///     Space complexity - O (log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ArrayPairSum(int[] nums)
     {
         Array.Sort(nums);

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo;
 /// <inheritdoc />
 public sealed class KeepMultiplyingFoundValuesByTwoSpanLookup : KeepMultiplyingFoundValuesByTwoBase
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="original"></param>
-    /// <returns></returns>
+    /// </remarks>
     public override int FindFinalValue(int[] nums, int original)
     {
         Span<bool> numsLookup = stackalloc bool[MaxNum + 1];

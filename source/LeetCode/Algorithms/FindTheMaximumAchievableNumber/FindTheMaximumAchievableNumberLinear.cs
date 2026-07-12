@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindTheMaximumAchievableNumber;
 /// <inheritdoc />
 public sealed class FindTheMaximumAchievableNumberLinear : IFindTheMaximumAchievableNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <param name="t"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int TheMaximumAchievableX(int num, int t)
     {
         return num + (t * 2);

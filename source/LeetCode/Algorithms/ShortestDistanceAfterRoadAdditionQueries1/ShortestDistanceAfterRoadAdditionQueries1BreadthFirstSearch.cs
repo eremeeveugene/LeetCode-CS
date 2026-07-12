@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.ShortestDistanceAfterRoadAdditionQueries1;
 /// <inheritdoc />
 public sealed class ShortestDistanceAfterRoadAdditionQueries1BreadthFirstSearch : IShortestDistanceAfterRoadAdditionQueries1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * q)
     ///     Space complexity - O(n + q)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="queries"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] ShortestDistanceAfterQueries(int n, int[][] queries)
     {
         var adjacencyList = new List<int>[n];

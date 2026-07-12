@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.Permutations;
 /// <inheritdoc />
 public sealed class PermutationsBacktracking : IPermutations
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * n!)
     ///     Space complexity - O(n * n!)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<IList<int>> Permute(int[] nums)
     {
         var result = new List<IList<int>>();

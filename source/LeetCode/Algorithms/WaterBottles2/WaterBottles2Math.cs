@@ -21,13 +21,11 @@ public sealed class WaterBottles2Math : IWaterBottles2
     private const double Two = 2.0;
     private const double Four = 4.0;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="numBottles"></param>
-    /// <param name="numExchange"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxBottlesDrunk(int numBottles, int numExchange)
     {
         var quadraticB = (LinearMultiplier * numExchange) - LinearOffset;

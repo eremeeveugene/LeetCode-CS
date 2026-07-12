@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RelativeRanks;
 /// <inheritdoc />
 public sealed class RelativeRanksBruteForce : IRelativeRanks
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="score"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string[] FindRelativeRanks(int[] score)
     {
         var result = new string[score.Length];

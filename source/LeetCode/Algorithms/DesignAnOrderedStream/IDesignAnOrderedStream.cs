@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.DesignAnOrderedStream;
 /// </summary>
 public interface IDesignAnOrderedStream
 {
+    /// <summary>
+    ///     Inserts the pair (<paramref name="idKey" />, <paramref name="value" />) into the ordered stream and returns
+    ///     the largest possible chunk of currently inserted values that appear next in the order.
+    /// </summary>
+    /// <param name="idKey">The one-based identifier of the value in the stream.</param>
+    /// <param name="value">The value to insert.</param>
+    /// <returns>The chunk of consecutive values that starts at the current pointer, or an empty list if none.</returns>
     IList<string?> Insert(int idKey, string value);
 }

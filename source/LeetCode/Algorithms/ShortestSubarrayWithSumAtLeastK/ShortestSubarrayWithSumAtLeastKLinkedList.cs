@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.ShortestSubarrayWithSumAtLeastK;
 /// <inheritdoc />
 public sealed class ShortestSubarrayWithSumAtLeastKLinkedList : IShortestSubarrayWithSumAtLeastK
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ShortestSubarray(int[] nums, int k)
     {
         var prefixSum = new long[nums.Length + 1];

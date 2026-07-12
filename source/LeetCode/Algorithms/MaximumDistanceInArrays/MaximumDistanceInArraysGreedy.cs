@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumDistanceInArrays;
 /// <inheritdoc />
 public sealed class MaximumDistanceInArraysGreedy : IMaximumDistanceInArrays
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="arrays"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxDistance(IList<IList<int>> arrays)
     {
         var maxDistance = 0;

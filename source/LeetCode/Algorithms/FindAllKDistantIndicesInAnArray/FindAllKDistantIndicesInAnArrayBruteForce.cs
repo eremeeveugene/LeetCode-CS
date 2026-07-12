@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.FindAllKDistantIndicesInAnArray;
 /// <inheritdoc />
 public sealed class FindAllKDistantIndicesInAnArrayBruteForce : IFindAllKDistantIndicesInAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="key"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> FindKDistantIndices(int[] nums, int key, int k)
     {
         var result = new List<int>();

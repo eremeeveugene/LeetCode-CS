@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced;
 /// <inheritdoc />
 public sealed class MinimumNumberOfSwapsToMakeTheStringBalancedIterative : IMinimumNumberOfSwapsToMakeTheStringBalanced
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinSwaps(string s)
     {
         var count = 0;

@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.NaryTreePostorderTraversal;
 /// <inheritdoc />
 public sealed class NaryTreePostorderTraversalTwoStacks : INaryTreePostorderTraversal
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> Postorder(Node? root)
     {
         if (root == null)

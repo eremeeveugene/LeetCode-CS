@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindWordsContainingCharacter;
 /// </summary>
 public interface IFindWordsContainingCharacter
 {
+    /// <summary>
+    ///     Finds the indices of the words in <paramref name="words" /> that contain the character <paramref name="x" />.
+    /// </summary>
+    /// <param name="words">The array of words to search.</param>
+    /// <param name="x">The character to look for.</param>
+    /// <returns>The indices of the words containing <paramref name="x" />, in any order.</returns>
     IList<int> FindWordsContaining(string[] words, char x);
 }

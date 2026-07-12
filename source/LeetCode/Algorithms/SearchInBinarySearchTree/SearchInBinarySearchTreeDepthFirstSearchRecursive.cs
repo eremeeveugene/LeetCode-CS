@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.SearchInBinarySearchTree;
 /// <inheritdoc />
 public sealed class SearchInBinarySearchTreeDepthFirstSearchRecursive : ISearchInBinarySearchTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n) for a skewed tree, O(log n) for a balanced tree
     ///     Space complexity - O(n) for a skewed tree, O(log n) for a balanced tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <param name="val"></param>
-    /// <returns></returns>
+    /// </remarks>
     public TreeNode? SearchBST(TreeNode? root, int val)
     {
         if (root == null)

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CheckIfAllOnesAreAtLeastLengthKPlacesAway;
 /// <inheritdoc />
 public sealed class CheckIfAllOnesAreAtLeastLengthKPlacesAwayDistanceCounting : ICheckIfAllOnesAreAtLeastLengthKPlacesAway
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool KLengthApart(int[] nums, int k)
     {
         var previousIndex = -1;

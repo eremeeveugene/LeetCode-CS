@@ -16,32 +16,31 @@ public sealed class DesignHashSetBoolArray : DesignHashSetBase
 {
     private readonly bool[] _items = new bool[ItemsCount];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="key"></param>
+    /// </remarks>
     public override void Add(int key)
     {
         _items[key] = true;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="key"></param>
+    /// </remarks>
     public override void Remove(int key)
     {
         _items[key] = false;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="key"></param>
-    /// <returns></returns>
+    /// </remarks>
     public override bool Contains(int key)
     {
         return _items[key];

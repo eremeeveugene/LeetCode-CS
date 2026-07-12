@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumCommonValue;
 /// <inheritdoc />
 public sealed class MinimumCommonValueTwoPointers : IMinimumCommonValue
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m), where n is the length of nums2 and m is the length of nums1
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int GetCommon(int[] nums1, int[] nums2)
     {
         var nums1Pointer = 0;

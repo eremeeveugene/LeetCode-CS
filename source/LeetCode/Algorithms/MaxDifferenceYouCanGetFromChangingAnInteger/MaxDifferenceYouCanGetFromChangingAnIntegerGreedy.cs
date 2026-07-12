@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaxDifferenceYouCanGetFromChangingAnInteger;
 /// <inheritdoc />
 public sealed class MaxDifferenceYouCanGetFromChangingAnIntegerGreedy : IMaxDifferenceYouCanGetFromChangingAnInteger
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxDiff(int num)
     {
         var mostSignificantPlace = 1;

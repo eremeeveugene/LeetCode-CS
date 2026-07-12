@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SplitTheArray;
 /// <inheritdoc />
 public sealed class SplitTheArrayFrequencyArray : ISplitTheArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsPossibleToSplit(int[] nums)
     {
         Span<byte> numFrequencies = stackalloc byte[101];

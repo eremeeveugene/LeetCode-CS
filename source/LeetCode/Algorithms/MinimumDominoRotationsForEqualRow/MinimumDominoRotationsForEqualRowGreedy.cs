@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumDominoRotationsForEqualRow;
 /// <inheritdoc />
 public sealed class MinimumDominoRotationsForEqualRowGreedy : IMinimumDominoRotationsForEqualRow
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="tops"></param>
-    /// <param name="bottoms"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinDominoRotations(int[] tops, int[] bottoms)
     {
         var result = TryTarget(tops, bottoms, tops[0]);

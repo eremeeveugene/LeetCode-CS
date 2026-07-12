@@ -39,12 +39,11 @@ public sealed class RandomPickIndexDictionary : IRandomPickIndex
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Pick(int target)
     {
         var indices = _numToIndicesDictionary[target];

@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.CanMakeArithmeticProgressionFromSequence;
 /// </summary>
 public interface ICanMakeArithmeticProgressionFromSequence
 {
+    /// <summary>
+    ///     Determines whether the elements of <paramref name="arr" /> can be rearranged to form an arithmetic progression.
+    /// </summary>
+    /// <param name="arr">The array of numbers to check.</param>
+    /// <returns><c>true</c> if <paramref name="arr" /> can be rearranged into an arithmetic progression; otherwise, <c>false</c>.</returns>
     bool CanMakeArithmeticProgression(int[] arr);
 }

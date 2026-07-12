@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CheckIfStringIsPrefixOfArray;
 /// <inheritdoc />
 public sealed class CheckIfStringIsPrefixOfArrayTwoPointers : ICheckIfStringIsPrefixOfArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="words"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsPrefixString(string s, string[] words)
     {
         var sIndex = 0;

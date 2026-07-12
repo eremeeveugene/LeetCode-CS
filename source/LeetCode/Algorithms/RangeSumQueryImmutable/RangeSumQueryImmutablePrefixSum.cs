@@ -31,13 +31,11 @@ public sealed class RangeSumQueryImmutablePrefixSum : IRangeSumQueryImmutable
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="left"></param>
-    /// <param name="right"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumRange(int left, int right)
     {
         return _prefixSum[right + 1] - _prefixSum[left];

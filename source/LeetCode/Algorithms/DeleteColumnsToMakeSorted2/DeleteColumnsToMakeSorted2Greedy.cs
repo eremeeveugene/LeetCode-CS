@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.DeleteColumnsToMakeSorted2;
 /// <inheritdoc />
 public sealed class DeleteColumnsToMakeSorted2Greedy : IDeleteColumnsToMakeSorted2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="strs"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinDeletionSize(string[] strs)
     {
         var result = 0;

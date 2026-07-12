@@ -34,12 +34,11 @@ public sealed class RangeSumQueryMutablePrefixSum : IRangeSumQueryMutable
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="index"></param>
-    /// <param name="val"></param>
+    /// </remarks>
     public void Update(int index, int val)
     {
         _nums[index] = val;
@@ -50,13 +49,11 @@ public sealed class RangeSumQueryMutablePrefixSum : IRangeSumQueryMutable
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="left"></param>
-    /// <param name="right"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumRange(int left, int right)
     {
         return _prefixSum[right + 1] - _prefixSum[left];

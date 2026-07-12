@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.AddingSpacesToString;
 /// <inheritdoc />
 public sealed class AddingSpacesToStringStringBuilder : IAddingSpacesToString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(n + m)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="spaces"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string AddSpaces(string s, int[] spaces)
     {
         var stringBuilder = new StringBuilder();

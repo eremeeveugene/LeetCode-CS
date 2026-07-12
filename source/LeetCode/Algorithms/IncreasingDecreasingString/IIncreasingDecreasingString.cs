@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.IncreasingDecreasingString;
 /// </summary>
 public interface IIncreasingDecreasingString
 {
+    /// <summary>
+    ///     Reorders the characters of <paramref name="s" /> by repeatedly picking the smallest-to-largest distinct
+    ///     characters followed by the largest-to-smallest distinct characters until all characters are used.
+    /// </summary>
+    /// <param name="s">The string to reorder.</param>
+    /// <returns>The resulting string after the reordering algorithm.</returns>
     string SortString(string s);
 }

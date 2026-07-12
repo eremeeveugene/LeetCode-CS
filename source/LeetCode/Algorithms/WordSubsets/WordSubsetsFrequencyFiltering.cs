@@ -16,13 +16,11 @@ public sealed class WordSubsetsFrequencyFiltering : IWordSubsets
 {
     private const int LettersCount = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(words1.Length + words2.Length)
     ///     Space complexity - O(words1.Length)
-    /// </summary>
-    /// <param name="words1"></param>
-    /// <param name="words2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<string> WordSubsets(string[] words1, string[] words2)
     {
         var maxCharFrequencies = new int[LettersCount];

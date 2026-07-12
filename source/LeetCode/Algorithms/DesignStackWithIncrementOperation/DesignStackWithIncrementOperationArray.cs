@@ -22,11 +22,11 @@ public sealed class DesignStackWithIncrementOperationArray : IDesignStackWithInc
         _stackArray = new int[maxSize];
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="x"></param>
+    /// </remarks>
     public void Push(int x)
     {
         if (_topIndex >= _stackArray.Length - 1)
@@ -39,11 +39,11 @@ public sealed class DesignStackWithIncrementOperationArray : IDesignStackWithInc
         _stackArray[_topIndex] = x;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int Pop()
     {
         if (_topIndex < 0)
@@ -54,12 +54,11 @@ public sealed class DesignStackWithIncrementOperationArray : IDesignStackWithInc
         return _stackArray[_topIndex--];
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(min(k,n))
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="k"></param>
-    /// <param name="val"></param>
+    /// </remarks>
     public void Increment(int k, int val)
     {
         for (var i = 0; i < Math.Min(k, _topIndex + 1); i++)

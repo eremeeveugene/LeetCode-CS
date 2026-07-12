@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SquaresOfSortedArray;
 /// <inheritdoc />
 public sealed class SquaresOfSortedArrayTwoPointers : ISquaresOfSortedArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] SortedSquares(int[] nums)
     {
         var sortedSquares = new int[nums.Length];

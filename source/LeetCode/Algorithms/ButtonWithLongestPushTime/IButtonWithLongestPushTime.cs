@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ButtonWithLongestPushTime;
 /// </summary>
 public interface IButtonWithLongestPushTime
 {
+    /// <summary>
+    ///     Finds the button that took the longest time to push, where the push time of a button is the difference between
+    ///     its press time and the previous press time.
+    /// </summary>
+    /// <param name="events">The press events, where each event is a pair of button index and press time.</param>
+    /// <returns>The index of the button with the longest push time, or the smallest index if there is a tie.</returns>
     int ButtonWithLongestTime(int[][] events);
 }

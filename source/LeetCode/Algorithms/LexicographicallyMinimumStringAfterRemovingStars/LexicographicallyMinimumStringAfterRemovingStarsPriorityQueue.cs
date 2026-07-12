@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LexicographicallyMinimumStringAfterRemovingStars;
 /// <inheritdoc />
 public sealed class LexicographicallyMinimumStringAfterRemovingStarsPriorityQueue : LexicographicallyMinimumStringAfterRemovingStarsBase
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public override string ClearStars(string s)
     {
         var charsPriorityQueue = new PriorityQueue<(char Char, int Index), (char Char, int Index)>();

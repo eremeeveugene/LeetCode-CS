@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.BestTimeToBuyAndSellStock;
 /// <inheritdoc />
 public sealed class BestTimeToBuyAndSellStockDynamicProgramming : IBestTimeToBuyAndSellStock
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="prices"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxProfit(int[] prices)
     {
         var maxProfit = 0;

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MakeStringSubsequenceUsingCyclicIncrements;
 /// <inheritdoc />
 public sealed class MakeStringSubsequenceUsingCyclicIncrementsTwoPointers : IMakeStringSubsequenceUsingCyclicIncrements
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="str1"></param>
-    /// <param name="str2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanMakeSubsequence(string str1, string str2)
     {
         if (str2.Length > str1.Length)

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindEventualSafeStates;
 /// <inheritdoc />
 public sealed class FindEventualSafeStatesDepthFirstSearch : IFindEventualSafeStates
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + E), where n is a number of nodes, E is a number of edges
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="graph"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> EventualSafeNodes(int[][] graph)
     {
         var n = graph.Length;

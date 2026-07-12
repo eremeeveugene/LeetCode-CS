@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.FindLargestValueInEachTreeRow;
 /// </summary>
 public interface IFindLargestValueInEachTreeRow
 {
+    /// <summary>
+    ///     Finds the largest value in each row of the binary tree rooted at <paramref name="root" />.
+    /// </summary>
+    /// <param name="root">The root of the binary tree.</param>
+    /// <returns>The list of the largest values of each row, ordered from the root level down.</returns>
     IList<int> LargestValues(TreeNode? root);
 }

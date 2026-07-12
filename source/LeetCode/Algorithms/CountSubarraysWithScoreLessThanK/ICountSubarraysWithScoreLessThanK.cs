@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CountSubarraysWithScoreLessThanK;
 /// </summary>
 public interface ICountSubarraysWithScoreLessThanK
 {
+    /// <summary>
+    ///     Counts the non-empty subarrays of <paramref name="nums" /> whose score, defined as the subarray sum
+    ///     multiplied by the subarray length, is strictly less than <paramref name="k" />.
+    /// </summary>
+    /// <param name="nums">The array of positive integers to examine.</param>
+    /// <param name="k">The exclusive upper bound for the subarray score.</param>
+    /// <returns>The number of subarrays whose score is strictly less than <paramref name="k" />.</returns>
     long CountSubarrays(int[] nums, long k);
 }

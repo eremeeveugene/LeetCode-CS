@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.TwoBestNonOverlappingEvents;
 /// <inheritdoc />
 public sealed class TwoBestNonOverlappingEventsBinarySearch : ITwoBestNonOverlappingEvents
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="events"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxTwoEvents(int[][] events)
     {
         Array.Sort(events, (a, b) => a[1] - b[1]);

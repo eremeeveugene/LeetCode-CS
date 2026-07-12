@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MaximumAverageSubarray1;
 /// <inheritdoc />
 public sealed class MaximumAverageSubarray1SlidingWindow : IMaximumAverageSubarray1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public double FindMaxAverage(int[] nums, int k)
     {
         var maxAverage = double.MinValue;

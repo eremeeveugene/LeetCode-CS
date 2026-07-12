@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.XORQueriesOfSubarray;
 /// <inheritdoc />
 public sealed class XORQueriesOfSubarrayPrefixArray : IXORQueriesOfSubarray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <param name="queries"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] XorQueries(int[] arr, int[][] queries)
     {
         var prefixArray = new int[arr.Length + 1];

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumUniqueSubarraySumAfterDeletion;
 /// <inheritdoc />
 public sealed class MaximumUniqueSubarraySumAfterDeletionHashSet : IMaximumUniqueSubarraySumAfterDeletion
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxSum(int[] nums)
     {
         var maxSum = 0;

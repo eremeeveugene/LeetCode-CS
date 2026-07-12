@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.JewelsAndStones;
 /// </summary>
 public interface IJewelsAndStones
 {
+    /// <summary>
+    ///     Counts how many characters of <paramref name="stones" /> are also jewels, where each character of
+    ///     <paramref name="jewels" /> denotes a jewel type.
+    /// </summary>
+    /// <param name="jewels">The string whose characters represent the types of stones that are jewels.</param>
+    /// <param name="stones">The string whose characters represent the stones owned.</param>
+    /// <returns>The number of stones that are jewels.</returns>
     int NumJewelsInStones(string jewels, string stones);
 }

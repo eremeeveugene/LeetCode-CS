@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CountCoveredBuildings;
 /// <inheritdoc />
 public sealed class CountCoveredBuildingsSimulation : ICountCoveredBuildings
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="buildings"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountCoveredBuildings(int n, int[][] buildings)
     {
         Span<int> maxRow = stackalloc int[n + 1];

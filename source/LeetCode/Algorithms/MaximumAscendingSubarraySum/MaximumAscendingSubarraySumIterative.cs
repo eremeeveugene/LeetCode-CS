@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumAscendingSubarraySum;
 /// <inheritdoc />
 public sealed class MaximumAscendingSubarraySumIterative : IMaximumAscendingSubarraySum
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxAscendingSum(int[] nums)
     {
         var maxAscendingSum = nums[0];

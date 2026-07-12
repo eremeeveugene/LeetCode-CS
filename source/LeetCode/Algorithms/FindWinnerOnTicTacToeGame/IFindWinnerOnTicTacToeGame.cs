@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindWinnerOnTicTacToeGame;
 /// </summary>
 public interface IFindWinnerOnTicTacToeGame
 {
+    /// <summary>
+    ///     Determines the outcome of a tic-tac-toe game after the sequence of <paramref name="moves" /> played alternately
+    ///     by players A and B.
+    /// </summary>
+    /// <param name="moves">The sequence of moves, where each pair [row, column] is the cell played on that turn.</param>
+    /// <returns>"A" or "B" if the corresponding player wins, "Draw" if the game ends in a draw, or "Pending" otherwise.</returns>
     string Tictactoe(int[][] moves);
 }

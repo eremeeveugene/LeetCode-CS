@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindKthSmallestPairDistance;
 /// <inheritdoc />
 public sealed class FindKthSmallestPairDistanceBinarySearchWithSlidingWindow : IFindKthSmallestPairDistance
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n + n log (max(nums)))
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SmallestDistancePair(int[] nums, int k)
     {
         Array.Sort(nums);

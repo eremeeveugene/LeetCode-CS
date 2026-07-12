@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RepeatedSubstringPattern;
 /// <inheritdoc />
 public sealed class RepeatedSubstringPatternConcat : IRepeatedSubstringPattern
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool RepeatedSubstringPattern(string s)
     {
         var concat = s.Remove(0, 1) + s.Remove(s.Length - 1, 1);

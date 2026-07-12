@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindTheDifferenceOfTwoArrays;
 /// <inheritdoc />
 public sealed class FindTheDifferenceOfTwoArraysHashSet : IFindTheDifferenceOfTwoArrays
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n)
     ///     Space complexity - O(m + n)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<IList<int>> FindDifference(int[] nums1, int[] nums2)
     {
         var set1 = new HashSet<int>(nums1);

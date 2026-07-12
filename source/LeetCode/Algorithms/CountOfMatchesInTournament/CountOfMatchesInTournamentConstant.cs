@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountOfMatchesInTournament;
 /// <inheritdoc />
 public sealed class CountOfMatchesInTournamentConstant : ICountOfMatchesInTournament
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumberOfMatches(int n)
     {
         return n - 1;

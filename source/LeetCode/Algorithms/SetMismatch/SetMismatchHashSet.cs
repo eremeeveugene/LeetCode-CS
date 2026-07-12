@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SetMismatch;
 /// <inheritdoc />
 public sealed class SetMismatchHashSet : ISetMismatch
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] FindErrorNums(int[] nums)
     {
         var duplicate = 0;

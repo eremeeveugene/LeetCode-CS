@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CheckIfTheSentenceIsPangram;
 /// <inheritdoc />
 public sealed class CheckIfTheSentenceIsPangramIterative : ICheckIfTheSentenceIsPangram
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="sentence"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckIfPangram(string sentence)
     {
         if (sentence.Length < 26)

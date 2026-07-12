@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.Subsets;
 /// <inheritdoc />
 public sealed class SubsetsIterative : ISubsets
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * 2^n)
     ///     Space complexity - O(n * 2^n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<IList<int>> Subsets(int[] nums)
     {
         var subsets = new List<IList<int>> { new List<int>() };

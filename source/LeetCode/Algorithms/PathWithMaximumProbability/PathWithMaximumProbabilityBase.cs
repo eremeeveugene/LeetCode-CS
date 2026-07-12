@@ -11,6 +11,7 @@
 
 namespace LeetCode.Algorithms.PathWithMaximumProbability;
 
+/// <inheritdoc />
 public abstract class PathWithMaximumProbabilityBase : IPathWithMaximumProbability
 {
     public abstract double MaxProbability(int n, int[][] edges, double[] successProbability, int startNode, int endNode);

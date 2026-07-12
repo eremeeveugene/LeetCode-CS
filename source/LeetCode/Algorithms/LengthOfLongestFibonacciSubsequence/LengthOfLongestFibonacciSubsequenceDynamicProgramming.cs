@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LengthOfLongestFibonacciSubsequence;
 /// <inheritdoc />
 public sealed class LengthOfLongestFibonacciSubsequenceDynamicProgramming : ILengthOfLongestFibonacciSubsequence
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n^2)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LenLongestFibSubseq(int[] arr)
     {
         var dictionary = new Dictionary<int, int>();

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountPrefixAndSuffixPairs1;
 /// </summary>
 public interface ICountPrefixAndSuffixPairs1
 {
+    /// <summary>
+    ///     Counts the index pairs (i, j) with i &lt; j such that <paramref name="words" />[i] is both a prefix and a
+    ///     suffix of <paramref name="words" />[j].
+    /// </summary>
+    /// <param name="words">The array of words to examine.</param>
+    /// <returns>The number of prefix and suffix pairs.</returns>
     int CountPrefixSuffixPairs(string[] words);
 }

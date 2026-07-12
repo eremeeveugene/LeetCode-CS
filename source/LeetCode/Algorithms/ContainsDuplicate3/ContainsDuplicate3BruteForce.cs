@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.ContainsDuplicate3;
 /// <inheritdoc />
 public sealed class ContainsDuplicate3BruteForce : IContainsDuplicate3
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="indexDiff"></param>
-    /// <param name="valueDiff"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool ContainsNearbyAlmostDuplicate(int[] nums, int indexDiff, int valueDiff)
     {
         for (var i = 0; i < nums.Length - 1; i++)

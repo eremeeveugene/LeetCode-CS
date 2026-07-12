@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.ComplementOfBase10Integer;
 /// </summary>
 public interface IComplementOfBase10Integer
 {
+    /// <summary>
+    ///     Computes the complement of <paramref name="n" /> by flipping every bit in its binary representation.
+    /// </summary>
+    /// <param name="n">The base-10 integer to complement.</param>
+    /// <returns>The complement of <paramref name="n" />.</returns>
     int BitwiseComplement(int n);
 }

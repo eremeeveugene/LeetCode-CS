@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CheckIfNAndItsDoubleExist;
 /// <inheritdoc />
 public sealed class CheckIfNAndItsDoubleExistHashSet : ICheckIfNAndItsDoubleExist
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckIfExist(int[] arr)
     {
         var hashSet = new HashSet<int>();

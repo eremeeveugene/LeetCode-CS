@@ -18,5 +18,12 @@ namespace LeetCode.Algorithms.IntersectionOfTwoLinkedLists;
 /// </summary>
 public interface IIntersectionOfTwoLinkedLists
 {
+    /// <summary>
+    ///     Finds the node at which the linked lists starting at <paramref name="headA" /> and <paramref name="headB" />
+    ///     intersect.
+    /// </summary>
+    /// <param name="headA">The head of the first linked list.</param>
+    /// <param name="headB">The head of the second linked list.</param>
+    /// <returns>The node at which the two linked lists intersect, or <c>null</c> if they do not intersect.</returns>
     ListNode? GetIntersectionNode(ListNode? headA, ListNode? headB);
 }

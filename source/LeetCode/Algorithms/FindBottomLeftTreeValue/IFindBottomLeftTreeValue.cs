@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.FindBottomLeftTreeValue;
 /// </summary>
 public interface IFindBottomLeftTreeValue
 {
+    /// <summary>
+    ///     Finds the value of the leftmost node in the last row of the binary tree rooted at <paramref name="root" />.
+    /// </summary>
+    /// <param name="root">The root node of the binary tree.</param>
+    /// <returns>The value of the leftmost node in the deepest level of the tree.</returns>
     int FindBottomLeftValue(TreeNode? root);
 }

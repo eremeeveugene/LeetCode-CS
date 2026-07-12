@@ -14,15 +14,11 @@ namespace LeetCode.Algorithms.FindIfPathExistsInGraph;
 /// <inheritdoc />
 public sealed class FindIfPathExistsInGraphDepthFirstSearch : IFindIfPathExistsInGraph
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(v + e), where v is the number of vertices and e is the number of edges
     ///     Space complexity - O(v + e), where v is the number of vertices and e is the number of edges
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="edges"></param>
-    /// <param name="source"></param>
-    /// <param name="destination"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool ValidPath(int n, int[][] edges, int source, int destination)
     {
         if (source == destination)

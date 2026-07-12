@@ -17,12 +17,11 @@ public sealed class TwentyFourGameBruteForce : ITwentyFourGame
     private const double TargetValue = 24.0;
     private const double Tolerance = 1e-6;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="cards"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool JudgePoint24(int[] cards)
     {
         Array.Sort(cards);

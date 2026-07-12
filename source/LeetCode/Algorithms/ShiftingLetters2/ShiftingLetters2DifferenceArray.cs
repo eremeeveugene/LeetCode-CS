@@ -18,13 +18,11 @@ public sealed class ShiftingLetters2DifferenceArray : IShiftingLetters2
 {
     private const int LettersCount = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="shifts"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string ShiftingLetters(string s, int[][] shifts)
     {
         var differenceArray = new int[s.Length];

@@ -27,12 +27,11 @@ public sealed class RandomPickIndexBruteForce : IRandomPickIndex
         _nums = nums;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Pick(int target)
     {
         var indices = new List<int>();

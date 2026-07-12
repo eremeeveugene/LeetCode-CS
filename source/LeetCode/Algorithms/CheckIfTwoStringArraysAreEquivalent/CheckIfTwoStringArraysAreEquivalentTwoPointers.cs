@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent;
 /// <inheritdoc />
 public sealed class CheckIfTwoStringArraysAreEquivalentTwoPointers : ICheckIfTwoStringArraysAreEquivalent
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="word1"></param>
-    /// <param name="word2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool ArrayStringsAreEqual(string[] word1, string[] word2)
     {
         var wordIndex1 = 0;

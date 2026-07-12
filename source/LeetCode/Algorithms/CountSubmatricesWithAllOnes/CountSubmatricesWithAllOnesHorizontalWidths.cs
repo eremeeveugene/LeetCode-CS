@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountSubmatricesWithAllOnes;
 /// <inheritdoc />
 public sealed class CountSubmatricesWithAllOnesHorizontalWidths : ICountSubmatricesWithAllOnes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m^2 * n)
     ///     Space complexity - (m * n)
-    /// </summary>
-    /// <param name="mat"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumSubmat(int[][] mat)
     {
         var m = mat.Length;

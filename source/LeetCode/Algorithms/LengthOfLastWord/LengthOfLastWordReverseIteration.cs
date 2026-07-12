@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LengthOfLastWord;
 /// <inheritdoc />
 public sealed class LengthOfLastWordReverseIteration : ILengthOfLastWord
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LengthOfLastWord(string s)
     {
         var length = 0;

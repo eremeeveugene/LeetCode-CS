@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RichestCustomerWealth;
 /// <inheritdoc />
 public sealed class RichestCustomerWealthLinq : IRichestCustomerWealth
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="accounts"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaximumWealth(int[][] accounts)
     {
         return accounts.Select(account => account.Sum()).Max();

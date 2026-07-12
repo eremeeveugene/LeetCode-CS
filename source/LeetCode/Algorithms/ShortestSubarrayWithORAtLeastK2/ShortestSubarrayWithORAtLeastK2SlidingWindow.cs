@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.ShortestSubarrayWithORAtLeastK2;
 /// <inheritdoc />
 public sealed class ShortestSubarrayWithORAtLeastK2SlidingWindow : IShortestSubarrayWithORAtLeastK2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumSubarrayLength(int[] nums, int k)
     {
         var minLength = int.MaxValue;

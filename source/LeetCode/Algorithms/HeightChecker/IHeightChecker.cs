@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.HeightChecker;
 /// </summary>
 public interface IHeightChecker
 {
+    /// <summary>
+    ///     Counts the indices where <paramref name="heights" /> differs from the expected order, i.e. the same values sorted
+    ///     in non-decreasing order.
+    /// </summary>
+    /// <param name="heights">The current heights of the students in line.</param>
+    /// <returns>The number of indices where the current height does not match the expected height.</returns>
     int HeightChecker(int[] heights);
 }

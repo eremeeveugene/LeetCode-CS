@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.DeleteNodesAndReturnForest;
 /// <inheritdoc />
 public sealed class DeleteNodesAndReturnForestBreadthFirstSearch : IDeleteNodesAndReturnForest
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + d)
     ///     Space complexity - O(n + d)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <param name="to_delete"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<TreeNode> DelNodes(TreeNode? root, int[] to_delete)
     {
         if (root == null)

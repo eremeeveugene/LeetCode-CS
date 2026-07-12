@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LargestLocalValuesInMatrix;
 /// <inheritdoc />
 public sealed class LargestLocalValuesInMatrixBruteForce : ILargestLocalValuesInMatrix
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n^2)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] LargestLocal(int[][] grid)
     {
         var result = new int[grid.Length - 2][];

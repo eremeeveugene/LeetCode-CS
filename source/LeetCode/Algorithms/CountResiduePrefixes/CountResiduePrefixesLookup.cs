@@ -16,12 +16,11 @@ public sealed class CountResiduePrefixesLookup : ICountResiduePrefixes
 {
     private const byte AlphabetLength = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ResiduePrefixes(string s)
     {
         var result = 0;

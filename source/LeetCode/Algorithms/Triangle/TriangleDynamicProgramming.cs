@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.Triangle;
 /// <inheritdoc />
 public sealed class TriangleDynamicProgramming : ITriangle
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="triangle"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumTotal(IList<IList<int>> triangle)
     {
         var rowsCount = triangle.Count;

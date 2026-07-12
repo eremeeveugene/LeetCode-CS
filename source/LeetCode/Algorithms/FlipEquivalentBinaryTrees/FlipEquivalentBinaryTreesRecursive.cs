@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.FlipEquivalentBinaryTrees;
 /// <inheritdoc />
 public sealed class FlipEquivalentBinaryTreesRecursive : IFlipEquivalentBinaryTrees
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root1"></param>
-    /// <param name="root2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool FlipEquiv(TreeNode? root1, TreeNode? root2)
     {
         if (root1 == null && root2 == null)

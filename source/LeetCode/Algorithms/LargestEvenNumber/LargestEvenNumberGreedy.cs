@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LargestEvenNumber;
 /// <inheritdoc />
 public sealed class LargestEvenNumberGreedy : ILargestEvenNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string LargestEven(string s)
     {
         var index = s.Length - 1;

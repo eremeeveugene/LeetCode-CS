@@ -51,12 +51,11 @@ public sealed class DesignFoodRatingSystemDictionaryWithPriorityQueue : IDesignF
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log k), where k is the number of foods in the cuisine
     ///     Space complexity - O(n + m), where n is the initial number of foods and m is the number of rating changes
-    /// </summary>
-    /// <param name="food"></param>
-    /// <param name="newRating"></param>
+    /// </remarks>
     public void ChangeRating(string food, int newRating)
     {
         _foodToRatingDictionary[food] = newRating;

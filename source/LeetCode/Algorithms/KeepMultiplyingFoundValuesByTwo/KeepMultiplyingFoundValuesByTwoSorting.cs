@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo;
 /// <inheritdoc />
 public sealed class KeepMultiplyingFoundValuesByTwoSorting : KeepMultiplyingFoundValuesByTwoBase
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="original"></param>
-    /// <returns></returns>
+    /// </remarks>
     public override int FindFinalValue(int[] nums, int original)
     {
         Array.Sort(nums);

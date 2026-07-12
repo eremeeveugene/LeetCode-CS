@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.RecoverTreeFromPreorderTraversal;
 /// <inheritdoc />
 public sealed class RecoverTreeFromPreorderTraversalDepthFirstSearch : IRecoverTreeFromPreorderTraversal
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="traversal"></param>
-    /// <returns></returns>
+    /// </remarks>
     public TreeNode RecoverFromPreorder(string traversal)
     {
         var index = 0;

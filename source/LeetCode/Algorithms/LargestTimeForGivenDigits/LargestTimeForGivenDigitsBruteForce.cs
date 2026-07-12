@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LargestTimeForGivenDigits;
 /// <inheritdoc />
 public sealed class LargestTimeForGivenDigitsBruteForce : ILargestTimeForGivenDigits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string LargestTimeFromDigits(int[] arr)
     {
         var maxMinutes = -1;

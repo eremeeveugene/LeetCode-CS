@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.LargestEvenNumber;
 /// </summary>
 public interface ILargestEvenNumber
 {
+    /// <summary>
+    ///     Finds the largest even number that can be formed by rearranging the digits of <paramref name="s" />.
+    /// </summary>
+    /// <param name="s">The string of digits to rearrange.</param>
+    /// <returns>The largest even number that can be formed, or an empty string if no even number can be formed.</returns>
     string LargestEven(string s);
 }

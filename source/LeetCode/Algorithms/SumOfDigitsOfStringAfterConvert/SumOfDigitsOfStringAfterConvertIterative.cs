@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.SumOfDigitsOfStringAfterConvert;
 /// <inheritdoc />
 public sealed class SumOfDigitsOfStringAfterConvertIterative : ISumOfDigitsOfStringAfterConvert
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int GetLucky(string s, int k)
     {
         var sum = 0;

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindTheLongestSubstringContainingVowelsInEvenCount
 /// <inheritdoc />
 public sealed class FindTheLongestSubstringContainingVowelsInEvenCountsBitmasking : IFindTheLongestSubstringContainingVowelsInEvenCounts
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindTheLongestSubstring(string s)
     {
         var vowelXorValues = new int['z' - 'a' + 1];

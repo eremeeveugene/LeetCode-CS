@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindNumbersWithEvenNumberOfDigits;
 /// <inheritdoc />
 public sealed class FindNumbersWithEvenNumberOfDigitsExtractDigits : IFindNumbersWithEvenNumberOfDigits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log m)
     ///     Space complexity - O(log m)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindNumbers(int[] nums)
     {
         var count = 0;

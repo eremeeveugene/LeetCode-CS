@@ -26,11 +26,11 @@ public sealed class DesignBrowserHistoryLinkedList : IDesignBrowserHistory
         _current = new Node(homepage);
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="url"></param>
+    /// </remarks>
     public void Visit(string url)
     {
         _current.Next = new Node(url) { Previous = _current };
@@ -38,12 +38,11 @@ public sealed class DesignBrowserHistoryLinkedList : IDesignBrowserHistory
         _current = _current.Next;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n), where n is the number of steps
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="steps"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string Back(int steps)
     {
         for (var i = 0; i < steps; i++)
@@ -59,12 +58,11 @@ public sealed class DesignBrowserHistoryLinkedList : IDesignBrowserHistory
         return _current.Value;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n), where n is the number of steps
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="steps"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string Forward(int steps)
     {
         for (var i = 0; i < steps; i++)

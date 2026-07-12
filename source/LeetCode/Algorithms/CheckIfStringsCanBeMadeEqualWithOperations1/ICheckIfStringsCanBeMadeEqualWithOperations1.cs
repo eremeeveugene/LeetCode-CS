@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations1;
 /// </summary>
 public interface ICheckIfStringsCanBeMadeEqualWithOperations1
 {
+    /// <summary>
+    ///     Determines whether <paramref name="s1" /> can be made equal to <paramref name="s2" /> by swapping characters
+    ///     that are two indices apart within either string.
+    /// </summary>
+    /// <param name="s1">The first string of length four.</param>
+    /// <param name="s2">The second string of length four.</param>
+    /// <returns><c>true</c> if the strings can be made equal using the allowed swaps; otherwise, <c>false</c>.</returns>
     bool CanBeEqual(string s1, string s2);
 }

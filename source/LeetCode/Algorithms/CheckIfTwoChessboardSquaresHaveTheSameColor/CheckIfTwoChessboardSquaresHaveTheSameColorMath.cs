@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CheckIfTwoChessboardSquaresHaveTheSameColor;
 /// <inheritdoc />
 public sealed class CheckIfTwoChessboardSquaresHaveTheSameColorMath : CheckIfTwoChessboardSquaresHaveTheSameColorBase
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="coordinate1"></param>
-    /// <param name="coordinate2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public override bool CheckTwoChessboards(string coordinate1, string coordinate2)
     {
         var (x1, y1) = ParseCoordinate(coordinate1);

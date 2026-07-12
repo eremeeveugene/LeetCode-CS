@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.BoatsToSavePeople;
 /// <inheritdoc />
 public sealed class BoatsToSavePeopleTwoPointers : IBoatsToSavePeople
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="people"></param>
-    /// <param name="limit"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumRescueBoats(int[] people, int limit)
     {
         var result = 0;

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindTheMaximumLengthOfValidSubsequence2;
 /// <inheritdoc />
 public sealed class FindTheMaximumLengthOfValidSubsequence2DynamicProgramming : IFindTheMaximumLengthOfValidSubsequence2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(k^2 + n * k)
     ///     Space complexity - O(k^2)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaximumLength(int[] nums, int k)
     {
         var maximumLength = 0;

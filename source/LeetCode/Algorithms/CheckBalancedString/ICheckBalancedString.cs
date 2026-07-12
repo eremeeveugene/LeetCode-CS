@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CheckBalancedString;
 /// </summary>
 public interface ICheckBalancedString
 {
+    /// <summary>
+    ///     Determines whether the digit string <paramref name="num" /> is balanced, i.e. the sum of digits at even indices
+    ///     equals the sum of digits at odd indices.
+    /// </summary>
+    /// <param name="num">The string of digits to check.</param>
+    /// <returns><c>true</c> if <paramref name="num" /> is balanced; otherwise, <c>false</c>.</returns>
     bool IsBalanced(string num);
 }

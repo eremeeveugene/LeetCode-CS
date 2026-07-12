@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimizeTheMaximumDifferenceOfPairs;
 /// <inheritdoc />
 public sealed class MinimizeTheMaximumDifferenceOfPairsBinarySearch : IMinimizeTheMaximumDifferenceOfPairs
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n + n log R), where R = max(nums) - min(nums)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="requiredPairsCount"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimizeMax(int[] nums, int requiredPairsCount)
     {
         if (requiredPairsCount == 0)

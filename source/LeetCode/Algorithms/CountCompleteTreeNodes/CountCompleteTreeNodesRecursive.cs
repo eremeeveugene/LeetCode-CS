@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.CountCompleteTreeNodes;
 /// <inheritdoc />
 public sealed class CountCompleteTreeNodesRecursive : ICountCompleteTreeNodes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(log n) for a balanced tree, O(n) for a skewed tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountNodes(TreeNode? root)
     {
         if (root == null)

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.ConstructKPalindromeStrings;
 /// <inheritdoc />
 public sealed class ConstructKPalindromeStringsFrequencyDictionary : IConstructKPalindromeStrings
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanConstruct(string s, int k)
     {
         if (s.Length < k)

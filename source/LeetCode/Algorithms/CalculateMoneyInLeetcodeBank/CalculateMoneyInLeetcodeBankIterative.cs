@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CalculateMoneyInLeetcodeBank;
 /// <inheritdoc />
 public sealed class CalculateMoneyInLeetcodeBankIterative : ICalculateMoneyInLeetcodeBank
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int TotalMoney(int n)
     {
         var totalMoney = 0;

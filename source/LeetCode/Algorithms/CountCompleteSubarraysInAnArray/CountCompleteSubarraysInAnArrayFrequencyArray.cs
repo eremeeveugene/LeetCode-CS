@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountCompleteSubarraysInAnArray;
 /// <inheritdoc />
 public sealed class CountCompleteSubarraysInAnArrayFrequencyArray : ICountCompleteSubarraysInAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountCompleteSubarrays(int[] nums)
     {
         var distinctCount = 0;

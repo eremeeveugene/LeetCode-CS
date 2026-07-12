@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.MergeStringsAlternately;
 /// <inheritdoc />
 public sealed class MergeStringsAlternatelyOnePointer : IMergeStringsAlternately
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="word1"></param>
-    /// <param name="word2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string MergeAlternately(string word1, string word2)
     {
         var resultStringBuilder = new StringBuilder();

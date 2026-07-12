@@ -14,15 +14,11 @@ namespace LeetCode.Algorithms.FlipSquareSubmatrixVertically;
 /// <inheritdoc />
 public sealed class FlipSquareSubmatrixVerticallySimulation : IFlipSquareSubmatrixVertically
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(k^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <param name="x"></param>
-    /// <param name="y"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] ReverseSubmatrix(int[][] grid, int x, int y, int k)
     {
         var endRow = x + k - 1;

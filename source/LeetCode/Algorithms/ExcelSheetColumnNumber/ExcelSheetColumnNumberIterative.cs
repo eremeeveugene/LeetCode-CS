@@ -46,10 +46,11 @@ public sealed class ExcelSheetColumnNumberIterative : IExcelSheetColumnNumber
         { 'Z', 26 }
     };
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
+    /// </remarks>
     public int TitleToNumber(string columnTitle)
     {
         var number = 0;

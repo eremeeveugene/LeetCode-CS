@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.PartitionArrayAccordingToGivenPivot;
 /// <inheritdoc />
 public sealed class PartitionArrayAccordingToGivenPivotTwoPointers : IPartitionArrayAccordingToGivenPivot
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="pivot"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] PivotArray(int[] nums, int pivot)
     {
         var result = new int[nums.Length];

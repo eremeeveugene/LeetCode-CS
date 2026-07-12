@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ArrangingCoins;
 /// <inheritdoc />
 public sealed class ArrangingCoinsMath : IArrangingCoins
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ArrangeCoins(int n)
     {
         return (int)((-1 + Math.Sqrt(1 + (8 * (long)n))) / 2);

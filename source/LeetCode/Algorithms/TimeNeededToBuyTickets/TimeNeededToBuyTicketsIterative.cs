@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.TimeNeededToBuyTickets;
 /// <inheritdoc />
 public sealed class TimeNeededToBuyTicketsIterative : ITimeNeededToBuyTickets
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="tickets"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int TimeRequiredToBuy(int[] tickets, int k)
     {
         var time = 0;

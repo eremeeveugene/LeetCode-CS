@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.KthLargestSumInBinaryTree;
 /// </summary>
 public interface IKthLargestSumInBinaryTree
 {
+    /// <summary>
+    ///     Finds the <paramref name="k" />-th largest level sum in the binary tree rooted at <paramref name="root" />.
+    /// </summary>
+    /// <param name="root">The root of the binary tree.</param>
+    /// <param name="k">The 1-based rank of the level sum to find.</param>
+    /// <returns>The <paramref name="k" />-th largest level sum, or -1 if the tree has fewer than <paramref name="k" /> levels.</returns>
     long KthLargestLevelSum(TreeNode root, int k);
 }

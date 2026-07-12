@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumWidthRamp;
 /// <inheritdoc />
 public sealed class MaximumWidthRampStack : IMaximumWidthRamp
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxWidthRamp(int[] nums)
     {
         var stack = new Stack<int>();

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MostBeautifulItemForEachQuery;
 /// <inheritdoc />
 public sealed class MostBeautifulItemForEachQueryBinarySearch : IMostBeautifulItemForEachQuery
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O((m + n) log m)
     ///     Space complexity - O(m + n)
-    /// </summary>
-    /// <param name="items"></param>
-    /// <param name="queries"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] MaximumBeauty(int[][] items, int[] queries)
     {
         var result = new int[queries.Length];

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FlipColumnsForMaximumNumberOfEqualRows;
 /// </summary>
 public interface IFlipColumnsForMaximumNumberOfEqualRows
 {
+    /// <summary>
+    ///     Finds the maximum number of rows of <paramref name="matrix" /> that can be made entirely equal (all 0s or all
+    ///     1s) by flipping any subset of columns.
+    /// </summary>
+    /// <param name="matrix">The binary matrix.</param>
+    /// <returns>The maximum number of rows with all values equal after some column flips.</returns>
     int MaxEqualRowsAfterFlips(int[][] matrix);
 }

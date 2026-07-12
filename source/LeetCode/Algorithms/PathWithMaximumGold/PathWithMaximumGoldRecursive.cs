@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PathWithMaximumGold;
 /// <inheritdoc />
 public sealed class PathWithMaximumGoldRecursive : IPathWithMaximumGold
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O((m * n) * 4 ^ (m * n)
     ///     Space complexity - O(m * n)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int GetMaximumGold(int[][] grid)
     {
         var maxGold = 0;

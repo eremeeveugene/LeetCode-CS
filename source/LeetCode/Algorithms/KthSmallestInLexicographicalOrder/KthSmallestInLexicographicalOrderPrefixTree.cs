@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.KthSmallestInLexicographicalOrder;
 /// <inheritdoc />
 public sealed class KthSmallestInLexicographicalOrderPrefixTree : IKthSmallestInLexicographicalOrder
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(k * log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindKthNumber(int n, int k)
     {
         var result = 1;

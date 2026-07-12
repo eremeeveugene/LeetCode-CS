@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.WordPattern;
 /// <inheritdoc />
 public sealed class WordPatternDictionary : IWordPattern
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m^2), where m is the length of pattern
     ///     Space complexity - O(m), where m is the length of pattern
-    /// </summary>
-    /// <param name="pattern"></param>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool WordPattern(string pattern, string s)
     {
         var patternHashSet = new Dictionary<char, string>();

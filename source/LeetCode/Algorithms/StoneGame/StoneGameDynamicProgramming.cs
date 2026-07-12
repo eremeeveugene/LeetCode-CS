@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.StoneGame;
 /// <inheritdoc />
 public sealed class StoneGameDynamicProgramming : IStoneGame
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(piles.Length^2)
     ///     Space complexity - O(piles.Length^2)
-    /// </summary>
-    /// <param name="piles"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool StoneGame(int[] piles)
     {
         var dp = new int[piles.Length, piles.Length];

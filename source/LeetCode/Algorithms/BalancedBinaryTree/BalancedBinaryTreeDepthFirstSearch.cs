@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.BalancedBinaryTree;
 /// <inheritdoc />
 public sealed class BalancedBinaryTreeDepthFirstSearch : IBalancedBinaryTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(log n) for a balanced tree, O(n) for a skewed tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsBalanced(TreeNode? root)
     {
         return root == null || IsBalanced(root, out _);

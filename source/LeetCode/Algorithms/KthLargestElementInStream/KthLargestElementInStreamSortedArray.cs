@@ -42,12 +42,11 @@ public sealed class KthLargestElementInStreamSortedArray : IKthLargestElementInS
         _nums = newNums;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(k)
     ///     Space complexity - O(k)
-    /// </summary>
-    /// <param name="val"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Add(int val)
     {
         for (var i = 0; i < _nums.Length; i++)

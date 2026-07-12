@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumDifferenceBetweenAdjacentElementsInCircular
 /// <inheritdoc />
 public sealed class MaximumDifferenceBetweenAdjacentElementsInCircularArrayIterative : IMaximumDifferenceBetweenAdjacentElementsInCircularArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxAdjacentDistance(int[] nums)
     {
         var maxAdjacentDistance = Math.Abs(nums[0] - nums[^1]);

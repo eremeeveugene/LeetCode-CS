@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindAllNumbersDisappearedInArray;
 /// </summary>
 public interface IFindAllNumbersDisappearedInArray
 {
+    /// <summary>
+    ///     Finds all integers in the range [1, n] that do not appear in <paramref name="nums" />, where n is the length of
+    ///     the array.
+    /// </summary>
+    /// <param name="nums">The array of integers with values in the range [1, n].</param>
+    /// <returns>The list of integers in the range [1, n] that are missing from the array.</returns>
     IList<int> FindDisappearedNumbers(int[] nums);
 }

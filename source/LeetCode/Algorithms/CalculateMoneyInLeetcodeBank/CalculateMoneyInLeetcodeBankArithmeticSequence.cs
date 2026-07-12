@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CalculateMoneyInLeetcodeBank;
 /// <inheritdoc />
 public sealed class CalculateMoneyInLeetcodeBankArithmeticSequence : ICalculateMoneyInLeetcodeBank
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int TotalMoney(int n)
     {
         var fullWeeks = n / 7;

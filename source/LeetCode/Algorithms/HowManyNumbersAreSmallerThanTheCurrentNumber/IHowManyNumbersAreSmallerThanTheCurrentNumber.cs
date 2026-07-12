@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber;
 /// </summary>
 public interface IHowManyNumbersAreSmallerThanTheCurrentNumber
 {
+    /// <summary>
+    ///     Counts, for each element of <paramref name="nums" />, how many other elements of the array are smaller than it.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>An array where each element is the number of other elements smaller than the corresponding element.</returns>
     int[] SmallerNumbersThanCurrent(int[] nums);
 }

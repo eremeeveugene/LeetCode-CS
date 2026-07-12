@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindTheDifference;
 /// <inheritdoc />
 public sealed class FindTheDifferenceBitwise : IFindTheDifference
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="t"></param>
-    /// <returns></returns>
+    /// </remarks>
     public char FindTheDifference(string s, string t)
     {
         var result = s.Aggregate((char)0, (current, c) => (char)(current ^ c));

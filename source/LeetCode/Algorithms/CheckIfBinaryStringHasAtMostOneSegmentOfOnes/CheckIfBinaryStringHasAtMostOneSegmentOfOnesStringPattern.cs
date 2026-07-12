@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CheckIfBinaryStringHasAtMostOneSegmentOfOnes;
 /// <inheritdoc />
 public sealed class CheckIfBinaryStringHasAtMostOneSegmentOfOnesStringPattern : ICheckIfBinaryStringHasAtMostOneSegmentOfOnes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckOnesSegment(string s)
     {
         return !s.Contains("01");

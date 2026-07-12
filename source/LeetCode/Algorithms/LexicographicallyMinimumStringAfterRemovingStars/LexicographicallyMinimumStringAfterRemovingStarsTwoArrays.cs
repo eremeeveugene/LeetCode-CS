@@ -16,12 +16,11 @@ public sealed class LexicographicallyMinimumStringAfterRemovingStarsTwoArrays : 
 {
     private const int Length = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public override string ClearStars(string s)
     {
         var chars = s.ToCharArray();

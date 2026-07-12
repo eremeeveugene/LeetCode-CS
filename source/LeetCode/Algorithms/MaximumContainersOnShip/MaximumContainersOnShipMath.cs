@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.MaximumContainersOnShip;
 /// <inheritdoc />
 public sealed class MaximumContainersOnShipMath : IMaximumContainersOnShip
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="w"></param>
-    /// <param name="maxWeight"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxContainers(int n, int w, int maxWeight)
     {
         return Math.Min(n * n, maxWeight / w);

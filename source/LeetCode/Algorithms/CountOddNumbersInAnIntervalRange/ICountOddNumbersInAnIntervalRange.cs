@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountOddNumbersInAnIntervalRange;
 /// </summary>
 public interface ICountOddNumbersInAnIntervalRange
 {
+    /// <summary>
+    ///     Counts the odd numbers in the inclusive range from <paramref name="low" /> to <paramref name="high" />.
+    /// </summary>
+    /// <param name="low">The lower bound of the range.</param>
+    /// <param name="high">The upper bound of the range.</param>
+    /// <returns>The number of odd numbers between <paramref name="low" /> and <paramref name="high" /> inclusive.</returns>
     int CountOdds(int low, int high);
 }

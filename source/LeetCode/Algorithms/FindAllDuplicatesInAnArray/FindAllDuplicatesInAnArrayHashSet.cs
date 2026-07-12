@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindAllDuplicatesInAnArray;
 /// <inheritdoc />
 public sealed class FindAllDuplicatesInAnArrayHashSet : IFindAllDuplicatesInAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> FindDuplicates(int[] nums)
     {
         var numsHashSet = new HashSet<int>();

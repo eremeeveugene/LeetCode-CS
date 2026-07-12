@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.TwoSum2InputArrayIsSorted;
 /// <inheritdoc />
 public sealed class TwoSum2InputArrayIsSortedTwoPointers : ITwoSum2InputArrayIsSorted
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="numbers"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] TwoSum(int[] numbers, int target)
     {
         var left = 0;

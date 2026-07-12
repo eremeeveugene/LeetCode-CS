@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.FindClosestPerson;
 /// <inheritdoc />
 public sealed class FindClosestPersonMath : IFindClosestPerson
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="x"></param>
-    /// <param name="y"></param>
-    /// <param name="z"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindClosest(int x, int y, int z)
     {
         var distanceFromX = Math.Abs(z - x);

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LongestCommonPrefix;
 /// <inheritdoc />
 public sealed class LongestCommonPrefixDivideAndConquer : ILongestCommonPrefix
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(S), where S is the sum of all characters in all strings
     ///     Space complexity - O(S), where S is the sum of all characters in all strings
-    /// </summary>
-    /// <param name="strs"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string LongestCommonPrefix(string[] strs)
     {
         switch (strs.Length)

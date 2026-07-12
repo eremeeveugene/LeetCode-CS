@@ -16,12 +16,11 @@ public sealed class CountElementsWithMaximumFrequencyArray : ICountElementsWithM
 {
     private const int MaxLength = 100;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxFrequencyElements(int[] nums)
     {
         Span<int> numsFrequencies = stackalloc int[MaxLength];

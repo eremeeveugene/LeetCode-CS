@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumProductOfTwoDigits;
 /// <inheritdoc />
 public sealed class MaximumProductOfTwoDigitsGreedy : IMaximumProductOfTwoDigits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxProduct(int n)
     {
         var max = 0;

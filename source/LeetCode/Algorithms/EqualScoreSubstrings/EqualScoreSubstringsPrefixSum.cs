@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.EqualScoreSubstrings;
 /// <inheritdoc />
 public sealed class EqualScoreSubstringsPrefixSum : IEqualScoreSubstrings
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool ScoreBalance(string s)
     {
         var left = 0;

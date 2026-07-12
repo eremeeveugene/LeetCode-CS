@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.CountTheDigitsThatDivideNumber;
 /// </summary>
 public interface ICountTheDigitsThatDivideNumber
 {
+    /// <summary>
+    ///     Counts the digits of <paramref name="num" /> that evenly divide <paramref name="num" />.
+    /// </summary>
+    /// <param name="num">The number whose digits are examined.</param>
+    /// <returns>The number of digits that divide <paramref name="num" />.</returns>
     int CountDigits(int num);
 }

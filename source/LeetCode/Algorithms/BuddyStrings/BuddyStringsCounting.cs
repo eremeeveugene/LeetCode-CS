@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.BuddyStrings;
 /// <inheritdoc />
 public sealed class BuddyStringsCounting : IBuddyStrings
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="goal"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool BuddyStrings(string s, string goal)
     {
         if (s.Length != goal.Length || s.Length < 2)

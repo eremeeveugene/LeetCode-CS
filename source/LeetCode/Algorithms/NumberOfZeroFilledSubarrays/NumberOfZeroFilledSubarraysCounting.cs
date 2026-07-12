@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberOfZeroFilledSubarrays;
 /// <inheritdoc />
 public sealed class NumberOfZeroFilledSubarraysCounting : INumberOfZeroFilledSubarrays
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long ZeroFilledSubarray(int[] nums)
     {
         long count = 0;

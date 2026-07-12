@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.StringToInteger;
 /// <inheritdoc />
 public sealed class StringToIntegerIterative : IStringToInteger
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MyAtoi(string s)
     {
         var i = 0;

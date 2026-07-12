@@ -16,12 +16,11 @@ public sealed class FindMostFrequentVowelAndConsonantFrequencyArray : IFindMostF
 {
     private const byte AlphabetLength = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxFreqSum(string s)
     {
         Span<byte> frequencyArray = stackalloc byte[AlphabetLength];

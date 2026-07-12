@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.BestSightseeingPair;
 /// </summary>
 public interface IBestSightseeingPair
 {
+    /// <summary>
+    ///     Finds the maximum score of a pair of sightseeing spots, where the score of a pair (i, j) is
+    ///     values[i] + values[j] + i - j.
+    /// </summary>
+    /// <param name="values">The values of the sightseeing spots.</param>
+    /// <returns>The maximum score of a pair of sightseeing spots.</returns>
     int MaxScoreSightseeingPair(int[] values);
 }

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.KthSmallestPrimeFraction;
 /// <inheritdoc />
 public sealed class KthSmallestPrimeFractionBruteForce : IKthSmallestPrimeFraction
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2 log n)
     ///     Space complexity - O(n^2)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] KthSmallestPrimeFraction(int[] arr, int k)
     {
         var fractions = new List<(int i, int j, double fraction)>();

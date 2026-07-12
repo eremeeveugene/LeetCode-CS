@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.Maximum69Number;
 /// <inheritdoc />
 public sealed class Maximum69NumberIterative : IMaximum69Number
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Maximum69Number(int num)
     {
         var multiplier = 1;

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FruitsIntoBaskets2;
 /// <inheritdoc />
 public sealed class FruitsIntoBaskets2BruteForce : IFruitsIntoBaskets2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="fruits"></param>
-    /// <param name="baskets"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumOfUnplacedFruits(int[] fruits, int[] baskets)
     {
         var unplacedFruitsCount = fruits.Length;

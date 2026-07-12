@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumTimeVisitingAllPoints;
 /// <inheritdoc />
 public sealed class MinimumTimeVisitingAllPointsIterative : IMinimumTimeVisitingAllPoints
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="points"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinTimeToVisitAllPoints(int[][] points)
     {
         var result = 0;

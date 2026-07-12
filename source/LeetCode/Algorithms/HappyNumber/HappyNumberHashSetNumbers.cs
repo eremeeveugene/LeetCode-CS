@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.HappyNumber;
 /// <inheritdoc />
 public sealed class HappyNumberHashSetNumbers : IHappyNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsHappy(int n)
     {
         if (n == 1)

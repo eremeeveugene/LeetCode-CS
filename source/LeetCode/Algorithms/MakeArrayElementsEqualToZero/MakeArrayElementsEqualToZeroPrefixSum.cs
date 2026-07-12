@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MakeArrayElementsEqualToZero;
 /// <inheritdoc />
 public sealed class MakeArrayElementsEqualToZeroPrefixSum : IMakeArrayElementsEqualToZero
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountValidSelections(int[] nums)
     {
         var result = 0;

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CapitalizeTheTitle;
 /// </summary>
 public interface ICapitalizeTheTitle
 {
+    /// <summary>
+    ///     Capitalizes the title so that words of one or two letters are fully lowercase and longer words start with an
+    ///     uppercase letter followed by lowercase letters.
+    /// </summary>
+    /// <param name="title">The title consisting of words separated by single spaces.</param>
+    /// <returns>The capitalized title.</returns>
     string CapitalizeTitle(string title);
 }

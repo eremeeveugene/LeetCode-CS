@@ -14,15 +14,11 @@ namespace LeetCode.Algorithms.CountGoodTriplets;
 /// <inheritdoc />
 public sealed class CountGoodTripletsBruteForce : ICountGoodTriplets
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^3)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <param name="a"></param>
-    /// <param name="b"></param>
-    /// <param name="c"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountGoodTriplets(int[] arr, int a, int b, int c)
     {
         var result = 0;

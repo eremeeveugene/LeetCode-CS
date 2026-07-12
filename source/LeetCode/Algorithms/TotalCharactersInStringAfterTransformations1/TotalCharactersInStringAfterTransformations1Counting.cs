@@ -17,13 +17,11 @@ public sealed class TotalCharactersInStringAfterTransformations1Counting : ITota
     private const int Modulo = 1_000_000_007;
     private const byte AlphabetLength = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="input"></param>
-    /// <param name="transformationsCount"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LengthAfterTransformations(string input, int transformationsCount)
     {
         Span<long> frequencies = stackalloc long[AlphabetLength];

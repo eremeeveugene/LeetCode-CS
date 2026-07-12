@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindSmallestLetterGreaterThanTarget;
 /// <inheritdoc />
 public sealed class FindSmallestLetterGreaterThanTargetBinarySearch : IFindSmallestLetterGreaterThanTarget
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="letters"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public char NextGreatestLetter(char[] letters, char target)
     {
         var left = 0;

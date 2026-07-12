@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.DistributeCandiesAmongChildren2;
 /// <inheritdoc />
 public sealed class DistributeCandiesAmongChildren2Math : IDistributeCandiesAmongChildren2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="limit"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long DistributeCandies(int n, int limit)
     {
         return GetCombinationsCount(n + 2) - (GetCombinationsCount(n - limit + 1) * 3) + (GetCombinationsCount(n - (2 * (limit + 1)) + 2) * 3) -

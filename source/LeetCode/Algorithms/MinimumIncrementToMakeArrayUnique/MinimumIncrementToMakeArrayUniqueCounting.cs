@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumIncrementToMakeArrayUnique;
 /// <inheritdoc />
 public sealed class MinimumIncrementToMakeArrayUniqueCounting : IMinimumIncrementToMakeArrayUnique
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + k)
     ///     Space complexity - O(n + k)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinIncrementForUnique(int[] nums)
     {
         var result = 0;

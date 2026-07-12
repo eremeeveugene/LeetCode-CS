@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray;
 /// <inheritdoc />
 public sealed class MaximumProductOfTwoElementsInAnArraySorting : IMaximumProductOfTwoElementsInAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n) or O(log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxProduct(int[] nums)
     {
         Array.Sort(nums);

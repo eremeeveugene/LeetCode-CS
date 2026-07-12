@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CountHillsAndValleysInAnArray;
 /// </summary>
 public interface ICountHillsAndValleysInAnArray
 {
+    /// <summary>
+    ///     Counts the hills and valleys in <paramref name="nums" />, where a hill is an index whose closest non-equal
+    ///     neighbors on both sides are smaller and a valley is an index whose closest non-equal neighbors on both sides are
+    ///     larger.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The total number of hills and valleys in the array.</returns>
     int CountHillValley(int[] nums);
 }

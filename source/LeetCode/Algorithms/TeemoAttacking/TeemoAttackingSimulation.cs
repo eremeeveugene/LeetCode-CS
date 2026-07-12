@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.TeemoAttacking;
 /// <inheritdoc />
 public sealed class TeemoAttackingSimulation : ITeemoAttacking
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="timeSeries"></param>
-    /// <param name="duration"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindPoisonedDuration(int[] timeSeries, int duration)
     {
         var result = duration;

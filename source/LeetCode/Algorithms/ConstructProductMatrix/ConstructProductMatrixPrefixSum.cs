@@ -16,12 +16,11 @@ public sealed class ConstructProductMatrixPrefixSum : IConstructProductMatrix
 {
     private const int Modulo = 12_345;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] ConstructProductMatrix(int[][] grid)
     {
         var m = grid.Length;

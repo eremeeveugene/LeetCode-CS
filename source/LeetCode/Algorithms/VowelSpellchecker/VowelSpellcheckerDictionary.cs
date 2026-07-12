@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.VowelSpellchecker;
 /// <inheritdoc />
 public sealed class VowelSpellcheckerDictionary : IVowelSpellchecker
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * l), where n is the number of words in wordlist and l is the average word length
     ///     Space complexity - O(n * l), where n is the number of words in wordlist and l is the average word length
-    /// </summary>
-    /// <param name="wordlist"></param>
-    /// <param name="queries"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string[] Spellchecker(string[] wordlist, string[] queries)
     {
         var wordsCount = wordlist.Length;

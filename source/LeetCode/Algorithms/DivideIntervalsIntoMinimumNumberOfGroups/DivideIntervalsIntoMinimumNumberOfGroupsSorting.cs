@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.DivideIntervalsIntoMinimumNumberOfGroups;
 /// <inheritdoc />
 public sealed class DivideIntervalsIntoMinimumNumberOfGroupsSorting : IDivideIntervalsIntoMinimumNumberOfGroups
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="intervals"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinGroups(int[][] intervals)
     {
         var events = new List<(int Time, int Type)>();

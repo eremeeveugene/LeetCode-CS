@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.StudentAttendanceRecord1;
 /// <inheritdoc />
 public sealed class StudentAttendanceRecord1Simulation : IStudentAttendanceRecord1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckRecord(string s)
     {
         var lateCount = 0;

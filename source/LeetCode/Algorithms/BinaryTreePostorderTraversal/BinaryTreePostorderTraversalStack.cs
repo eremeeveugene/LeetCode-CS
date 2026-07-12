@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.BinaryTreePostorderTraversal;
 /// <inheritdoc />
 public sealed class BinaryTreePostorderTraversalStack : IBinaryTreePostorderTraversal
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> PostorderTraversal(TreeNode? root)
     {
         if (root == null)

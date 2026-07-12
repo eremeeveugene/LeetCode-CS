@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LongestHarmoniousSubsequence;
 /// <inheritdoc />
 public sealed class LongestHarmoniousSubsequenceDictionary : ILongestHarmoniousSubsequence
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindLHS(int[] nums)
     {
         var frequencyDictionary = new Dictionary<int, int>();

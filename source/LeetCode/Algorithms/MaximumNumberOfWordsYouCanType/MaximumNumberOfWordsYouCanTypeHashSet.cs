@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MaximumNumberOfWordsYouCanType;
 /// <inheritdoc />
 public sealed class MaximumNumberOfWordsYouCanTypeHashSet : IMaximumNumberOfWordsYouCanType
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m), where n is the length of the text and m is the length of brokenLetters
     ///     Space complexity - O(n + m), where n is the length of the text and m is the length of brokenLetters
-    /// </summary>
-    /// <param name="text"></param>
-    /// <param name="brokenLetters"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CanBeTypedWords(string text, string brokenLetters)
     {
         var brokenLettersHashSet = new HashSet<char>(brokenLetters);

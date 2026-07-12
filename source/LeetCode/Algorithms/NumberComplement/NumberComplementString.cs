@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.NumberComplement;
 /// <inheritdoc />
 public sealed class NumberComplementString : INumberComplement
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindComplement(int num)
     {
         var numBinaryString = Convert.ToString(num, 2);

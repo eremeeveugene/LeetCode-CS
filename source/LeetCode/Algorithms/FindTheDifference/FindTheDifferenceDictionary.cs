@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindTheDifference;
 /// <inheritdoc />
 public sealed class FindTheDifferenceDictionary : IFindTheDifference
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="t"></param>
-    /// <returns></returns>
+    /// </remarks>
     public char FindTheDifference(string s, string t)
     {
         var sDictionary = new Dictionary<char, int>();

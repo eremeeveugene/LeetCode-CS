@@ -128,12 +128,11 @@ public sealed class NextGreaterNumericallyBalancedNumberBinarySearch : INextGrea
         1224444
     ];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log m) where m is the number of precomputed balanced numbers
     ///     Space complexity - O(m) for the precomputed table
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NextBeautifulNumber(int n)
     {
         var index = Array.BinarySearch(BalancedNumbers, n + 1);

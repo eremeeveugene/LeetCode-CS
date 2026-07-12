@@ -35,12 +35,11 @@ public sealed class DesignNeighborSumServiceDictionary : IDesignNeighborSumServi
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int AdjacentSum(int value)
     {
         var (x, y) = _neighborsDictionary[value];
@@ -70,12 +69,11 @@ public sealed class DesignNeighborSumServiceDictionary : IDesignNeighborSumServi
         return sum;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int DiagonalSum(int value)
     {
         var (x, y) = _neighborsDictionary[value];

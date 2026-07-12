@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LongestPalindrome;
 /// <inheritdoc />
 public sealed class LongestPalindromeArray : ILongestPalindrome
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LongestPalindrome(string s)
     {
         if (string.IsNullOrEmpty(s))

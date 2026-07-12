@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.MaximumNumberOfIntegersToChooseFromRange1;
 /// <inheritdoc />
 public sealed class MaximumNumberOfIntegersToChooseFromRange1HashSet : IMaximumNumberOfIntegersToChooseFromRange1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n)
     ///     Space complexity - O(m)
-    /// </summary>
-    /// <param name="banned"></param>
-    /// <param name="n"></param>
-    /// <param name="maxSum"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxCount(int[] banned, int n, int maxSum)
     {
         var result = 0;

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.AddTwoIntegers;
 /// </summary>
 public interface IAddTwoIntegers
 {
+    /// <summary>
+    ///     Returns the sum of the two integers <paramref name="num1" /> and <paramref name="num2" />.
+    /// </summary>
+    /// <param name="num1">The first integer.</param>
+    /// <param name="num2">The second integer.</param>
+    /// <returns>The sum of the two integers.</returns>
     int Sum(int num1, int num2);
 }

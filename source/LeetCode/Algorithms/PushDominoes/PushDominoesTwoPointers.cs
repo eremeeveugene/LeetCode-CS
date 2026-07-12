@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PushDominoes;
 /// <inheritdoc />
 public sealed class PushDominoesTwoPointers : IPushDominoes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="dominoes"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string PushDominoes(string dominoes)
     {
         var dominoesCharArray = dominoes.ToCharArray();

@@ -16,12 +16,11 @@ public sealed class NextGreaterNumericallyBalancedNumberIterative : INextGreater
 {
     private const int MaxBalancedNumber = 1224444;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(k * d) where k is the number of candidates scanned past n and d is the number of digits
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NextBeautifulNumber(int n)
     {
         var candidate = n + 1;

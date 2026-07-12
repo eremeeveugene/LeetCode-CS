@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 /// </summary>
 public interface IFindTheIndexOfTheFirstOccurrenceInString
 {
+    /// <summary>
+    ///     Finds the index of the first occurrence of <paramref name="needle" /> in <paramref name="haystack" />.
+    /// </summary>
+    /// <param name="haystack">The string to search in.</param>
+    /// <param name="needle">The string to search for.</param>
+    /// <returns>The index of the first occurrence of <paramref name="needle" /> in <paramref name="haystack" />, or -1 if not found.</returns>
     int StrStr(string haystack, string needle);
 }

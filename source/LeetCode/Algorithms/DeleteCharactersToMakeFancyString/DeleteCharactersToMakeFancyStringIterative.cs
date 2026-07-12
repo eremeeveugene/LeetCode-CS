@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.DeleteCharactersToMakeFancyString;
 /// <inheritdoc />
 public sealed class DeleteCharactersToMakeFancyStringIterative : IDeleteCharactersToMakeFancyString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string MakeFancyString(string s)
     {
         var resultStringBuilder = new StringBuilder();

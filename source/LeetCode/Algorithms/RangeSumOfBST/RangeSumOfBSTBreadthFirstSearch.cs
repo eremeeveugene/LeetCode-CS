@@ -16,14 +16,11 @@ namespace LeetCode.Algorithms.RangeSumOfBST;
 /// <inheritdoc />
 public sealed class RangeSumOfBSTBreadthFirstSearch : IRangeSumOfBST
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <param name="low"></param>
-    /// <param name="high"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int RangeSumBST(TreeNode? root, int low, int high)
     {
         if (root == null)

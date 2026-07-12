@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.MinimumDistanceBetweenBSTNodes;
 /// <inheritdoc />
 public sealed class MinimumDistanceBetweenBSTNodesDepthFirstSearch : IMinimumDistanceBetweenBSTNodes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Time complexity - O(n) for a skewed tree, O(log n) for a balanced tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinDiffInBST(TreeNode root)
     {
         TreeNode? prev = null;

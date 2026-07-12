@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.UncommonWordsFromTwoSentences;
 /// <inheritdoc />
 public sealed class UncommonWordsFromTwoSentencesDictionary : IUncommonWordsFromTwoSentences
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(n + m)
-    /// </summary>
-    /// <param name="s1"></param>
-    /// <param name="s2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string[] UncommonFromSentences(string s1, string s2)
     {
         var wordsDictionary = new Dictionary<string, int>();

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RabbitsInForest;
 /// <inheritdoc />
 public sealed class RabbitsInForestFrequencyDictionary : IRabbitsInForest
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="answers"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumRabbits(int[] answers)
     {
         var frequencyDictionary = new Dictionary<int, int>();

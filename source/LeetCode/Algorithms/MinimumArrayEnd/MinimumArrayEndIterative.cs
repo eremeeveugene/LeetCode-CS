@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumArrayEnd;
 /// <inheritdoc />
 public sealed class MinimumArrayEndIterative : IMinimumArrayEnd
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="x"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long MinEnd(int n, int x)
     {
         long result = x;

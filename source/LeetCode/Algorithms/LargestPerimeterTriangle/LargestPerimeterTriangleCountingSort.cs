@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LargestPerimeterTriangle;
 /// <inheritdoc />
 public sealed class LargestPerimeterTriangleCountingSort : ILargestPerimeterTriangle
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + k), where k is the maximum value in nums
     ///     Space complexity - O(n + k), where k is the maximum value in nums
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LargestPerimeter(int[] nums)
     {
         var maxNum = nums.Max();

@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.DeleteNodeInLinkedList;
 /// </summary>
 public interface IDeleteNodeInLinkedList
 {
+    /// <summary>
+    ///     Deletes <paramref name="node" /> from the linked list it belongs to, given access to that node only and not
+    ///     to the head of the list.
+    /// </summary>
+    /// <param name="node">The non-tail node to delete from the linked list.</param>
     void DeleteNode(ListNode? node);
 }

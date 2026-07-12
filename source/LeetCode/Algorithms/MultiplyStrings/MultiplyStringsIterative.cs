@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.MultiplyStrings;
 /// <inheritdoc />
 public sealed class MultiplyStringsIterative : IMultiplyStrings
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(n + m)
-    /// </summary>
-    /// <param name="num1"></param>
-    /// <param name="num2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string Multiply(string num1, string num2)
     {
         if (num1 == "0" || num2 == "0")

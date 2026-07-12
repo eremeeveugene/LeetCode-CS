@@ -14,11 +14,11 @@ namespace LeetCode.Algorithms.MoveZeroes;
 /// <inheritdoc />
 public sealed class MoveZeroesTwoPointers : IMoveZeroes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
+    /// </remarks>
     public void MoveZeroes(int[] nums)
     {
         var left = 0;

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberOfGoodPairs;
 /// <inheritdoc />
 public sealed class NumberOfGoodPairsDictionary : INumberOfGoodPairs
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumIdenticalPairs(int[] nums)
     {
         var countDictionary = new Dictionary<int, int>();

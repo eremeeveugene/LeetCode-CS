@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumValueOfAnOrderedTriplet1;
 /// <inheritdoc />
 public sealed class MaximumValueOfAnOrderedTriplet1BruteForce : IMaximumValueOfAnOrderedTriplet1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^3)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long MaximumTripletValue(int[] nums)
     {
         long maximumTripletValue = 0;

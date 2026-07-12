@@ -14,11 +14,11 @@ namespace LeetCode.Algorithms.ReverseString;
 /// <inheritdoc />
 public sealed class ReverseStringArrayReverse : IReverseString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
+    /// </remarks>
     public void ReverseString(char[] s)
     {
         Array.Reverse(s);

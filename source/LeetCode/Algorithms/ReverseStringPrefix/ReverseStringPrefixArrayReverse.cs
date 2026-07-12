@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.ReverseStringPrefix;
 /// <inheritdoc />
 public sealed class ReverseStringPrefixArrayReverse : IReverseStringPrefix
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string ReversePrefix(string s, int k)
     {
         if (k == 1)

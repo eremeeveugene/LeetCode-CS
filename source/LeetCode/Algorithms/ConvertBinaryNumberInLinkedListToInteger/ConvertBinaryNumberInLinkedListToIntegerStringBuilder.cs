@@ -17,12 +17,11 @@ namespace LeetCode.Algorithms.ConvertBinaryNumberInLinkedListToInteger;
 /// <inheritdoc />
 public sealed class ConvertBinaryNumberInLinkedListToIntegerStringBuilder : IConvertBinaryNumberInLinkedListToInteger
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="head"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int GetDecimalValue(ListNode head)
     {
         var stringBuilder = new StringBuilder();

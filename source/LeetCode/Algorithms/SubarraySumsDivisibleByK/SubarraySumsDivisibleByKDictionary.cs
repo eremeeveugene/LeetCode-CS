@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.SubarraySumsDivisibleByK;
 /// <inheritdoc />
 public sealed class SubarraySumsDivisibleByKDictionary : ISubarraySumsDivisibleByK
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(k)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SubarraysDivByK(int[] nums, int k)
     {
         var result = 0;

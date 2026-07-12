@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximalRectangle;
 /// <inheritdoc />
 public sealed class MaximalRectangleStack : IMaximalRectangle
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="matrix"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaximalRectangle(char[][] matrix)
     {
         var maxArea = 0;

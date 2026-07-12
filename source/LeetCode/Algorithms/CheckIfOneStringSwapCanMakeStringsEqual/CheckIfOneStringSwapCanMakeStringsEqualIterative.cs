@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CheckIfOneStringSwapCanMakeStringsEqual;
 /// <inheritdoc />
 public sealed class CheckIfOneStringSwapCanMakeStringsEqualIterative : ICheckIfOneStringSwapCanMakeStringsEqual
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s1"></param>
-    /// <param name="s2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool AreAlmostEqual(string s1, string s2)
     {
         if (s1.Equals(s2))

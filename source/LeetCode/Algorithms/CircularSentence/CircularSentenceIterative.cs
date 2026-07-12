@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CircularSentence;
 /// <inheritdoc />
 public sealed class CircularSentenceIterative : ICircularSentence
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(m)
-    /// </summary>
-    /// <param name="sentence"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsCircularSentence(string sentence)
     {
         var words = sentence.Split(' ');

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumAreaOfLongestDiagonalRectangle;
 /// <inheritdoc />
 public sealed class MaximumAreaOfLongestDiagonalRectangleOnePass : IMaximumAreaOfLongestDiagonalRectangle
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="dimensions"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int AreaOfMaxDiagonal(int[][] dimensions)
     {
         var longestDiagonal = 0;

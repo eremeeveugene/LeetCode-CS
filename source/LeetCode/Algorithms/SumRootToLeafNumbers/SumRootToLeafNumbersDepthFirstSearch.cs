@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.SumRootToLeafNumbers;
 /// <inheritdoc />
 public sealed class SumRootToLeafNumbersDepthFirstSearch : ISumRootToLeafNumbers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n) for a skewed tree, O(log n) for a balanced tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumNumbers(TreeNode? root)
     {
         return root == null ? 0 : GetSum(root, 0);

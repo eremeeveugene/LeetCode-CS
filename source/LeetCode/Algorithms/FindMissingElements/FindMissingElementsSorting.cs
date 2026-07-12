@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindMissingElements;
 /// <inheritdoc />
 public sealed class FindMissingElementsSorting : IFindMissingElements
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> FindMissingElements(int[] nums)
     {
         Array.Sort(nums);

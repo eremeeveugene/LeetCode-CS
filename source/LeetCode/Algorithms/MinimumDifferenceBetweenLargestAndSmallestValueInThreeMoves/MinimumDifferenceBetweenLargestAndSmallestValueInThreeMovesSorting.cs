@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInT
 /// <inheritdoc />
 public sealed class MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesSorting : IMinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinDifference(int[] nums)
     {
         if (nums.Length <= 4)

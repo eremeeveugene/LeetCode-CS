@@ -16,12 +16,11 @@ public sealed class CountGoodNumbersFastExponentiation : ICountGoodNumbers
 {
     private const int Mod = 1_000_000_007;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountGoodNumbers(long n)
     {
         var evenPositions = n / 2;

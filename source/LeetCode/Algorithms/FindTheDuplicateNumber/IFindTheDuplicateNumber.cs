@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FindTheDuplicateNumber;
 /// </summary>
 public interface IFindTheDuplicateNumber
 {
+    /// <summary>
+    ///     Finds the single repeated number in <paramref name="nums" />, which contains n + 1 integers in the range [1, n].
+    /// </summary>
+    /// <param name="nums">The array of integers containing exactly one repeated number.</param>
+    /// <returns>The repeated number in <paramref name="nums" />.</returns>
     int FindDuplicate(int[] nums);
 }

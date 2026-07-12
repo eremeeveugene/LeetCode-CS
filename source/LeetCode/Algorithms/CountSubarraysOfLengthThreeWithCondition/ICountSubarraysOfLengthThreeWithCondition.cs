@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountSubarraysOfLengthThreeWithCondition;
 /// </summary>
 public interface ICountSubarraysOfLengthThreeWithCondition
 {
+    /// <summary>
+    ///     Counts the subarrays of <paramref name="nums" /> of length three where the sum of the first and third
+    ///     elements equals exactly half of the second element.
+    /// </summary>
+    /// <param name="nums">The array of integers to examine.</param>
+    /// <returns>The number of subarrays of length three that satisfy the condition.</returns>
     int CountSubarrays(int[] nums);
 }

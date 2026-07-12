@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumOddBinaryNumber;
 /// <inheritdoc />
 public sealed class MaximumOddBinaryNumberStrings : IMaximumOddBinaryNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string MaximumOddBinaryNumber(string s)
     {
         var onesCount = s.Count(c => c == '1');

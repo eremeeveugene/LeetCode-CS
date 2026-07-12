@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits;
 /// <inheritdoc />
 public sealed class MinimumSumOfFourDigitNumberAfterSplittingDigitsChars : IMinimumSumOfFourDigitNumberAfterSplittingDigits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumSum(int num)
     {
         var sortedNums = num.ToString().Order().ToArray();

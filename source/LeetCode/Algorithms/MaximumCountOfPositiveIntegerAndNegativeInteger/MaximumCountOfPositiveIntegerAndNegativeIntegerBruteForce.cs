@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumCountOfPositiveIntegerAndNegativeInteger;
 /// <inheritdoc />
 public sealed class MaximumCountOfPositiveIntegerAndNegativeIntegerBruteForce : IMaximumCountOfPositiveIntegerAndNegativeInteger
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaximumCount(int[] nums)
     {
         var negativeCount = 0;

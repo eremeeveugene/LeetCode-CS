@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.Sqrt;
 /// <inheritdoc />
 public sealed class SqrtNewtonsMethod : ISqrt
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log x)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="x"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MySqrt(int x)
     {
         if (x is 0 or 1)

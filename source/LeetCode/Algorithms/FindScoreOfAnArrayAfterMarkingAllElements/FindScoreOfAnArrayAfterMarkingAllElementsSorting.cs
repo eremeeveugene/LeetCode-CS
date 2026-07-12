@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindScoreOfAnArrayAfterMarkingAllElements;
 /// <inheritdoc />
 public sealed class FindScoreOfAnArrayAfterMarkingAllElementsSorting : IFindScoreOfAnArrayAfterMarkingAllElements
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long FindScore(int[] nums)
     {
         long score = 0;

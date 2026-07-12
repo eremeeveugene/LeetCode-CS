@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PalindromePartitioning;
 /// <inheritdoc />
 public sealed class PalindromePartitioningBackTracking : IPalindromePartitioning
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * 2^n)
     ///     Space complexity - O(n * 2^n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<IList<string>> Partition(string s)
     {
         IList<IList<string>> result = new List<IList<string>>();

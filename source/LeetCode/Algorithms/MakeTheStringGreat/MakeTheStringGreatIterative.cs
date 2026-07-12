@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MakeTheStringGreat;
 /// <inheritdoc />
 public sealed class MakeTheStringGreatIterative : IMakeTheStringGreat
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string MakeGood(string s)
     {
         if (s.Length < 2)

@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.FindTheWinningPlayerInCoinGame;
 /// </summary>
 public interface IFindTheWinningPlayerInCoinGame
 {
+    /// <summary>
+    ///     Determines the winner of the coin game in which Alice and Bob alternately pick coins with a total value of 115
+    ///     (one 75-value coin and four 10-value coins per turn), given <paramref name="x" /> coins of value 75 and
+    ///     <paramref name="y" /> coins of value 10.
+    /// </summary>
+    /// <param name="x">The number of coins with a value of 75.</param>
+    /// <param name="y">The number of coins with a value of 10.</param>
+    /// <returns>The name of the winning player, either "Alice" or "Bob".</returns>
     string WinningPlayer(int x, int y);
 }

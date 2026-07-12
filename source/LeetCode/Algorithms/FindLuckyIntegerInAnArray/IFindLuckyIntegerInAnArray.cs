@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindLuckyIntegerInAnArray;
 /// </summary>
 public interface IFindLuckyIntegerInAnArray
 {
+    /// <summary>
+    ///     Finds the largest lucky integer in <paramref name="arr" />, where a lucky integer is one whose frequency in the
+    ///     array equals its value.
+    /// </summary>
+    /// <param name="arr">The array of integers.</param>
+    /// <returns>The largest lucky integer, or -1 if none exists.</returns>
     int FindLucky(int[] arr);
 }

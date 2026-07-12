@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MergeTwo2DArraysBySummingValues;
 /// <inheritdoc />
 public sealed class MergeTwo2DArraysBySummingValuesTwoPointers : IMergeTwo2DArraysBySummingValues
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(n + m)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] MergeArrays(int[][] nums1, int[][] nums2)
     {
         var result = new List<int[]>();

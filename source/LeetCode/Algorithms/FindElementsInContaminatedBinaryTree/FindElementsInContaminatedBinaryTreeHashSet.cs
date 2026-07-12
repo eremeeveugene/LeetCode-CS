@@ -53,12 +53,11 @@ public sealed class FindElementsInContaminatedBinaryTreeHashSet : IFindElementsI
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool Find(int target)
     {
         return _hashSet.Contains(target);

@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.ConstructStringWithRepeatLimit;
 /// <inheritdoc />
 public sealed class ConstructStringWithRepeatLimitPriorityQueue : IConstructStringWithRepeatLimit
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log k)
     ///     Space complexity - O(k)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="repeatLimit"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string RepeatLimitedString(string s, int repeatLimit)
     {
         var frequencyDictionary = new Dictionary<char, int>();

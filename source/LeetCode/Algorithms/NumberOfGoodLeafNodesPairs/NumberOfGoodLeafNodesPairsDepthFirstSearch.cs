@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.NumberOfGoodLeafNodesPairs;
 /// <inheritdoc />
 public sealed class NumberOfGoodLeafNodesPairsDepthFirstSearch : INumberOfGoodLeafNodesPairs
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * d^2)
     ///     Space complexity - O(n * d)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <param name="distance"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountPairs(TreeNode? root, int distance)
     {
         var result = 0;

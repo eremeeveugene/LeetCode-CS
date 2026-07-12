@@ -16,14 +16,11 @@ namespace LeetCode.Algorithms.MinimumCostToHireKWorkers;
 /// </summary>
 public sealed class MinimumCostToHireKWorkersPriorityQueue : IMinimumCostToHireKWorkers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="quality"></param>
-    /// <param name="wage"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public double MincostToHireWorkers(int[] quality, int[] wage, int k)
     {
         var workers = new (double ratio, int quality)[quality.Length];

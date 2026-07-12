@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LexicographicalNumbers;
 /// <inheritdoc />
 public sealed class LexicographicalNumbersRecursive : ILexicographicalNumbers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> LexicalOrder(int n)
     {
         var result = new List<int>();

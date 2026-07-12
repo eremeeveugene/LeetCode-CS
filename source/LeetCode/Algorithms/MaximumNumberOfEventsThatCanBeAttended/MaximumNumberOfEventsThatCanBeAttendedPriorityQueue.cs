@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumNumberOfEventsThatCanBeAttended;
 /// <inheritdoc />
 public sealed class MaximumNumberOfEventsThatCanBeAttendedPriorityQueue : IMaximumNumberOfEventsThatCanBeAttended
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="events"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxEvents(int[][] events)
     {
         Array.Sort(events, (event1, event2) => event1[0] - event2[0]);

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SmallestIndexWithDigitSumEqualToIndex;
 /// <inheritdoc />
 public sealed class SmallestIndexWithDigitSumEqualToIndexBruteForce : ISmallestIndexWithDigitSumEqualToIndex
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * d)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SmallestIndex(int[] nums)
     {
         for (var i = 0; i < nums.Length; i++)

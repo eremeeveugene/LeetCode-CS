@@ -20,12 +20,11 @@ public sealed class ReverseBitsDivideAndConquer : IReverseBits
     private const int Mask8 = 0x00FF00FF;
     private const int Mask16 = 0x0000FFFF;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ReverseBits(int n)
     {
         n = ((n >> 1) & Mask1) | ((n & Mask1) << 1);

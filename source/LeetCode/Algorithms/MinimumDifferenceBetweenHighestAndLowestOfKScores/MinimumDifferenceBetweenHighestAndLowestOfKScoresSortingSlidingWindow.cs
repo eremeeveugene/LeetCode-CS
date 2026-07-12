@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumDifferenceBetweenHighestAndLowestOfKScores;
 /// <inheritdoc />
 public sealed class MinimumDifferenceBetweenHighestAndLowestOfKScoresSortingSlidingWindow : IMinimumDifferenceBetweenHighestAndLowestOfKScores
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumDifference(int[] nums, int k)
     {
         if (k < 2)

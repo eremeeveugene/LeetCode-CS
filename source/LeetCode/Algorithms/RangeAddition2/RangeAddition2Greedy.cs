@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.RangeAddition2;
 /// <inheritdoc />
 public sealed class RangeAddition2Greedy : IRangeAddition2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n), where n is the length of ops
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="m"></param>
-    /// <param name="n"></param>
-    /// <param name="ops"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxCount(int m, int n, int[][] ops)
     {
         for (var i = 0; i < ops.Length; i++)

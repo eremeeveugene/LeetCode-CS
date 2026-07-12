@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindTheDuplicateNumber;
 /// <inheritdoc />
 public sealed class FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm : IFindTheDuplicateNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindDuplicate(int[] nums)
     {
         if (nums.Length <= 1)

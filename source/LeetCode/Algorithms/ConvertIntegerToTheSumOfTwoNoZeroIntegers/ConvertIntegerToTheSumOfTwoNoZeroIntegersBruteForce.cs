@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ConvertIntegerToTheSumOfTwoNoZeroIntegers;
 /// <inheritdoc />
 public sealed class ConvertIntegerToTheSumOfTwoNoZeroIntegersBruteForce : IConvertIntegerToTheSumOfTwoNoZeroIntegers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] GetNoZeroIntegers(int n)
     {
         var a = 1;

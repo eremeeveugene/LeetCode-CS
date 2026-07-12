@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.KeyboardRow;
 /// </summary>
 public interface IKeyboardRow
 {
+    /// <summary>
+    ///     Finds the words in <paramref name="words" /> that can be typed using letters of only one row of an American
+    ///     keyboard.
+    /// </summary>
+    /// <param name="words">The array of words to check.</param>
+    /// <returns>An array of the words that can be typed using letters of only one keyboard row.</returns>
     string[] FindWords(string[] words);
 }

@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.UniqueLength3PalindromicSubsequences;
 /// <inheritdoc />
 public sealed class UniqueLength3PalindromicSubsequencesBruteForce : IUniqueLength3PalindromicSubsequences
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^3)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountPalindromicSubsequence(string s)
     {
         var palindromesHashSet = new HashSet<string>();

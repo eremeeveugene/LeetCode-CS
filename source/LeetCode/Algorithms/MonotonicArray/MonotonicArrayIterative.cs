@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MonotonicArray;
 /// <inheritdoc />
 public sealed class MonotonicArrayIterative : IMonotonicArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsMonotonic(int[] nums)
     {
         var increasing = true;

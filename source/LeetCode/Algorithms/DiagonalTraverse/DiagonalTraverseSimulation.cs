@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.DiagonalTraverse;
 /// <inheritdoc />
 public sealed class DiagonalTraverseSimulation : IDiagonalTraverse
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="mat"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] FindDiagonalOrder(int[][] mat)
     {
         var m = mat.Length;

@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.CheckIfAnyElementHasPrimeFrequency;
 /// </summary>
 public interface ICheckIfAnyElementHasPrimeFrequency
 {
+    /// <summary>
+    ///     Determines whether any element of <paramref name="nums" /> occurs a prime number of times.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns><c>true</c> if the frequency of any element of <paramref name="nums" /> is a prime number; otherwise, <c>false</c>.</returns>
     bool CheckPrimeFrequency(int[] nums);
 }

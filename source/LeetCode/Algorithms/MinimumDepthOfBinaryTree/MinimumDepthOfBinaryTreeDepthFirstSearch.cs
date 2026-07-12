@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.MinimumDepthOfBinaryTree;
 /// <inheritdoc />
 public sealed class MinimumDepthOfBinaryTreeDepthFirstSearch : IMinimumDepthOfBinaryTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinDepth(TreeNode? root)
     {
         if (root == null)

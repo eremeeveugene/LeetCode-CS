@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SingleNumber;
 /// <inheritdoc />
 public sealed class SingleNumberXor : ISingleNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SingleNumber(int[] nums)
     {
         return nums.Aggregate((current, num) => current ^ num);

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumNumberOfDaysToDisconnectIsland;
 /// <inheritdoc />
 public sealed class MinimumNumberOfDaysToDisconnectIslandBruteForceVisitedArray : IMinimumNumberOfDaysToDisconnectIsland
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2 * m^2)
     ///     Space complexity - O(n * m)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinDays(int[][] grid)
     {
         if (GetIslandsCount(grid) != 1)

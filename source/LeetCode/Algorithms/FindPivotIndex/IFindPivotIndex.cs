@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindPivotIndex;
 /// </summary>
 public interface IFindPivotIndex
 {
+    /// <summary>
+    ///     Finds the leftmost pivot index of <paramref name="nums" />, the index where the sum of the elements to its left
+    ///     equals the sum of the elements to its right.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The leftmost pivot index, or -1 if none exists.</returns>
     int PivotIndex(int[] nums);
 }

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MatrixDiagonalSum;
 /// <inheritdoc />
 public sealed class MatrixDiagonalSumIterative : IMatrixDiagonalSum
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="mat"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int DiagonalSum(int[][] mat)
     {
         var result = 0;

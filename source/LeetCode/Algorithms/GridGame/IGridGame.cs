@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.GridGame;
 /// </summary>
 public interface IGridGame
 {
+    /// <summary>
+    ///     Determines the number of points the second robot can collect in the 2 x n matrix
+    ///     <paramref name="grid" /> when the first robot moves optimally to minimize that amount and both robots play
+    ///     optimally.
+    /// </summary>
+    /// <param name="grid">The 2 x n matrix of points.</param>
+    /// <returns>The number of points collected by the second robot when both robots play optimally.</returns>
     long GridGame(int[][] grid);
 }

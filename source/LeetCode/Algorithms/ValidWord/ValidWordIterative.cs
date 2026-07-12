@@ -16,12 +16,11 @@ public sealed class ValidWordIterative : IValidWord
 {
     private static readonly HashSet<char> Vowels = ['a', 'e', 'i', 'o', 'u'];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="word"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsValid(string word)
     {
         if (word.Length < 3)

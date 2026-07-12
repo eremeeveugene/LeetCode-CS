@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.ReverseLinkedList;
 /// <inheritdoc />
 public sealed class ReverseLinkedListIterative : IReverseLinkedList
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="head"></param>
-    /// <returns></returns>
+    /// </remarks>
     public ListNode? ReverseList(ListNode? head)
     {
         ListNode? reverseHead = null;

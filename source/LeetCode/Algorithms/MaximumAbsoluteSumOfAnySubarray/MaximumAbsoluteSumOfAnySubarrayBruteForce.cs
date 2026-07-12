@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumAbsoluteSumOfAnySubarray;
 /// <inheritdoc />
 public sealed class MaximumAbsoluteSumOfAnySubarrayBruteForce : IMaximumAbsoluteSumOfAnySubarray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxAbsoluteSum(int[] nums)
     {
         var maxAbsoluteSum = 0;

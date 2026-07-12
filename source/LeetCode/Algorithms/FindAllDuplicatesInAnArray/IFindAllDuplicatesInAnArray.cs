@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindAllDuplicatesInAnArray;
 /// </summary>
 public interface IFindAllDuplicatesInAnArray
 {
+    /// <summary>
+    ///     Finds all integers that appear exactly twice in <paramref name="nums" />, where each element is in the range
+    ///     [1, n] and n is the length of the array.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The list of integers that appear exactly twice in the array.</returns>
     IList<int> FindDuplicates(int[] nums);
 }

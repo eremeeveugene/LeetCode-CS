@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.KthSmallestInLexicographicalOrder;
 /// </summary>
 public interface IKthSmallestInLexicographicalOrder
 {
+    /// <summary>
+    ///     Finds the <paramref name="k" />-th smallest integer in lexicographical order in the range from 1 to
+    ///     <paramref name="n" />.
+    /// </summary>
+    /// <param name="n">The upper bound of the range of integers.</param>
+    /// <param name="k">The 1-based position in lexicographical order.</param>
+    /// <returns>The <paramref name="k" />-th lexicographically smallest integer in the range [1, <paramref name="n" />].</returns>
     int FindKthNumber(int n, int k);
 }

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CheckIfOneStringSwapCanMakeStringsEqual;
 /// </summary>
 public interface ICheckIfOneStringSwapCanMakeStringsEqual
 {
+    /// <summary>
+    ///     Determines whether <paramref name="s1" /> and <paramref name="s2" /> can be made equal by performing at most one
+    ///     swap of two characters within exactly one of the strings.
+    /// </summary>
+    /// <param name="s1">The first string.</param>
+    /// <param name="s2">The second string.</param>
+    /// <returns><c>true</c> if the strings can be made equal with at most one swap; otherwise, <c>false</c>.</returns>
     bool AreAlmostEqual(string s1, string s2);
 }

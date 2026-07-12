@@ -16,13 +16,11 @@ public sealed class CheckIfStringsCanBeMadeEqualWithOperations2FrequencyArray : 
 {
     private const byte AlphabetLength = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s1"></param>
-    /// <param name="s2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckStrings(string s1, string s2)
     {
         Span<int> evenFrequencies = stackalloc int[AlphabetLength];

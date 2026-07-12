@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CheckIfTwoChessboardSquaresHaveTheSameColor;
 /// </summary>
 public interface ICheckIfTwoChessboardSquaresHaveTheSameColor
 {
+    /// <summary>
+    ///     Determines whether the chessboard squares <paramref name="coordinate1" /> and <paramref name="coordinate2" />
+    ///     have the same color.
+    /// </summary>
+    /// <param name="coordinate1">The coordinate of the first square.</param>
+    /// <param name="coordinate2">The coordinate of the second square.</param>
+    /// <returns><c>true</c> if both squares have the same color; otherwise, <c>false</c>.</returns>
     bool CheckTwoChessboards(string coordinate1, string coordinate2);
 }

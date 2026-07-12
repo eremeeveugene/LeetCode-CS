@@ -14,15 +14,11 @@ namespace LeetCode.Algorithms.MaximumNumberOfKDivisibleComponents;
 /// <inheritdoc />
 public sealed class MaximumNumberOfKDivisibleComponentsDepthFirstSearch : IMaximumNumberOfKDivisibleComponents
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(n + m)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="edges"></param>
-    /// <param name="values"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxKDivisibleComponents(int n, int[][] edges, int[] values, int k)
     {
         var graph = new List<int>[n];

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RankTransformOfAnArray;
 /// <inheritdoc />
 public sealed class RankTransformOfAnArrayDictionary : IRankTransformOfAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] ArrayRankTransform(int[] nums)
     {
         var sortedNums = nums.Distinct().Order().ToArray();

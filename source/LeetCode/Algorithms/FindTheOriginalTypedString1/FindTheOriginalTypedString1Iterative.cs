@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindTheOriginalTypedString1;
 /// <inheritdoc />
 public sealed class FindTheOriginalTypedString1Iterative : IFindTheOriginalTypedString1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="word"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int PossibleStringCount(string word)
     {
         var result = 1;

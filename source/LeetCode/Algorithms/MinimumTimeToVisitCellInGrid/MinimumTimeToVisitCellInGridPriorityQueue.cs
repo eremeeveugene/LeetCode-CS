@@ -16,12 +16,11 @@ public sealed class MinimumTimeToVisitCellInGridPriorityQueue : IMinimumTimeToVi
 {
     private static readonly IReadOnlyCollection<(int Row, int Column)> Directions = [(-1, 0), (1, 0), (0, -1), (0, 1)];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n log m *n)
     ///     Space complexity - O(m * n)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumTime(int[][] grid)
     {
         if (grid[0][1] > 1 && grid[1][0] > 1)

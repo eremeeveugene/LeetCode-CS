@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountServersThatCommunicate;
 /// <inheritdoc />
 public sealed class CountServersThatCommunicateCounting : ICountServersThatCommunicate
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(m + n)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountServers(int[][] grid)
     {
         var m = grid.Length;

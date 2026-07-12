@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ToggleLightBulbs;
 /// <inheritdoc />
 public sealed class ToggleLightBulbsBitmask : IToggleLightBulbs
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="bulbs"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> ToggleLightBulbs(IList<int> bulbs)
     {
         Int128 state = 0;

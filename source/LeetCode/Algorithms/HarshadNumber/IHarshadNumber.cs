@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.HarshadNumber;
 /// </summary>
 public interface IHarshadNumber
 {
+    /// <summary>
+    ///     Computes the sum of the digits of <paramref name="x" /> if <paramref name="x" /> is a Harshad number, i.e.
+    ///     divisible by the sum of its digits.
+    /// </summary>
+    /// <param name="x">The number to check.</param>
+    /// <returns>The sum of the digits of <paramref name="x" /> if it is a Harshad number; otherwise, -1.</returns>
     int SumOfTheDigitsOfHarshadNumber(int x);
 }

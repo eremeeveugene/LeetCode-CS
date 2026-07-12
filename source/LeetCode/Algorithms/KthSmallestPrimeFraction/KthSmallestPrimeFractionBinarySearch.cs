@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.KthSmallestPrimeFraction;
 /// <inheritdoc />
 public sealed class KthSmallestPrimeFractionBinarySearch : IKthSmallestPrimeFraction
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n * log m)
     ///     Space complexity - O(k)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] KthSmallestPrimeFraction(int[] arr, int k)
     {
         var result = new int[2];

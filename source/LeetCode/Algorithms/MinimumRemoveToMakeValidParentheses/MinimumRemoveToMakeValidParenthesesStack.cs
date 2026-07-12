@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses;
 /// <inheritdoc />
 public sealed class MinimumRemoveToMakeValidParenthesesStack : IMinimumRemoveToMakeValidParentheses
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string MinRemoveToMakeValid(string s)
     {
         var removeIndices = new HashSet<int>();

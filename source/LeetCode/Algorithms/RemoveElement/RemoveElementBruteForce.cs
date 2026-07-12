@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.RemoveElement;
 /// <inheritdoc />
 public sealed class RemoveElementBruteForce : IRemoveElement
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^3)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="val"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int RemoveElement(int[] nums, int val)
     {
         for (var k = 0; k < nums.Length; k++)

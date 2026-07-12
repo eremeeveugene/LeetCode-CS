@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FizzBuzz;
 /// <inheritdoc />
 public sealed class FizzBuzzIterative : IFizzBuzz
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<string> FizzBuzz(int n)
     {
         var values = new string[n];

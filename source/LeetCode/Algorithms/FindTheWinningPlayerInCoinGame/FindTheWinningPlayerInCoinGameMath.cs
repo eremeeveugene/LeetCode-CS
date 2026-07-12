@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindTheWinningPlayerInCoinGame;
 /// <inheritdoc />
 public sealed class FindTheWinningPlayerInCoinGameMath : IFindTheWinningPlayerInCoinGame
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="x"></param>
-    /// <param name="y"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string WinningPlayer(int x, int y)
     {
         var rounds = Math.Min(x, y / 4);

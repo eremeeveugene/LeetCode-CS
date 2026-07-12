@@ -16,14 +16,11 @@ namespace LeetCode.Algorithms.DivideStringIntoGroupsOfSizeK;
 /// <inheritdoc />
 public sealed class DivideStringIntoGroupsOfSizeKSimulation : IDivideStringIntoGroupsOfSizeK
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="k"></param>
-    /// <param name="fill"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string[] DivideString(string s, int k, char fill)
     {
         var groupsCount = (int)Math.Ceiling(s.Length / (double)k);

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX;
 /// <inheritdoc />
 public sealed class SpecialArrayWithXElementsGreaterThanOrEqualXBruteForce : ISpecialArrayWithXElementsGreaterThanOrEqualX
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SpecialArray(int[] nums)
     {
         for (var i = 0; i < nums.Length + 1; i++)

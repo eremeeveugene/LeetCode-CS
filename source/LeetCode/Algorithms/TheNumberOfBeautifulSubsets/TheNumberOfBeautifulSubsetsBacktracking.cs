@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.TheNumberOfBeautifulSubsets;
 /// <inheritdoc />
 public sealed class TheNumberOfBeautifulSubsetsBacktracking : ITheNumberOfBeautifulSubsets
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * 2^n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int BeautifulSubsets(int[] nums, int k)
     {
         if (nums.Length <= 1)

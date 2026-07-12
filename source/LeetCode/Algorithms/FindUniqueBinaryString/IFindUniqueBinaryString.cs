@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindUniqueBinaryString;
 /// </summary>
 public interface IFindUniqueBinaryString
 {
+    /// <summary>
+    ///     Finds a binary string of the same length as the strings in <paramref name="nums" /> that does not appear in
+    ///     <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array of unique binary strings of equal length.</param>
+    /// <returns>A binary string of the same length that is not present in <paramref name="nums" />.</returns>
     string FindDifferentBinaryString(string[] nums);
 }

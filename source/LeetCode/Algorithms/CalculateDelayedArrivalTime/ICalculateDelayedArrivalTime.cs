@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CalculateDelayedArrivalTime;
 /// </summary>
 public interface ICalculateDelayedArrivalTime
 {
+    /// <summary>
+    ///     Computes the arrival time of a train after a delay, on a 24-hour clock.
+    /// </summary>
+    /// <param name="arrivalTime">The scheduled arrival time in hours.</param>
+    /// <param name="delayedTime">The delay in hours.</param>
+    /// <returns>The delayed arrival time in 24-hour format.</returns>
     int FindDelayedArrivalTime(int arrivalTime, int delayedTime);
 }

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NimGame;
 /// <inheritdoc />
 public sealed class NimGameMath : INimGame
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanWinNim(int n)
     {
         return n % 4 != 0;

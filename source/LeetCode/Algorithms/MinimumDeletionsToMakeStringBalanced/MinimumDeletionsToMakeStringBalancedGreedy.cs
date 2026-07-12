@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumDeletionsToMakeStringBalanced;
 /// <inheritdoc />
 public sealed class MinimumDeletionsToMakeStringBalancedGreedy : IMinimumDeletionsToMakeStringBalanced
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumDeletions(string s)
     {
         var result = 0;

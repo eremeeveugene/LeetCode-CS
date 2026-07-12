@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTravers
 /// </summary>
 public interface IConstructBinaryTreeFromPreorderAndPostorderTraversal
 {
+    /// <summary>
+    ///     Constructs a binary tree from its <paramref name="preorder" /> and <paramref name="postorder" /> traversals.
+    /// </summary>
+    /// <param name="preorder">The preorder traversal of the tree.</param>
+    /// <param name="postorder">The postorder traversal of the tree.</param>
+    /// <returns>The root node of the reconstructed binary tree.</returns>
     TreeNode ConstructFromPrePost(int[] preorder, int[] postorder);
 }

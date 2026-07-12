@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindTheTownJudge;
 /// <inheritdoc />
 public sealed class FindTheTownJudgeIterative : IFindTheTownJudge
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2 + t)
     ///     Space complexity - O(n + t)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="trust"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindJudge(int n, int[][] trust)
     {
         if (trust.Length == 0)

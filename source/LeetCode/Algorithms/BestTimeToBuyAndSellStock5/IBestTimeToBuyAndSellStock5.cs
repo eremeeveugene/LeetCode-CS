@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.BestTimeToBuyAndSellStock5;
 /// </summary>
 public interface IBestTimeToBuyAndSellStock5
 {
+    /// <summary>
+    ///     Computes the maximum profit achievable with at most <paramref name="maxTransactions" /> transactions, where each
+    ///     transaction may be a normal one (buy then sell) or a short one (sell then buy back).
+    /// </summary>
+    /// <param name="prices">The stock prices, where prices[i] is the price on the i-th day.</param>
+    /// <param name="maxTransactions">The maximum number of transactions allowed.</param>
+    /// <returns>The maximum achievable profit.</returns>
     long MaximumProfit(int[] prices, int maxTransactions);
 }

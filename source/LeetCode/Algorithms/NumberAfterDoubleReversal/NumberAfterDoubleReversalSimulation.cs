@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberAfterDoubleReversal;
 /// <inheritdoc />
 public sealed class NumberAfterDoubleReversalSimulation : INumberAfterDoubleReversal
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(d), where d is the number of digits in num
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsSameAfterReversals(int num)
     {
         var reversed = ReverseNumber(num);

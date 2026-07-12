@@ -14,11 +14,11 @@ namespace LeetCode.Algorithms.SetMatrixZeroes;
 /// <inheritdoc />
 public sealed class SetMatrixZeroesInPlace : ISetMatrixZeroes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="matrix"></param>
+    /// </remarks>
     public void SetZeroes(int[][] matrix)
     {
         var firstRowZero = false;

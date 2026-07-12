@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ReplaceNonCoprimeNumbersInArray;
 /// <inheritdoc />
 public sealed class ReplaceNonCoprimeNumbersInArrayGreedy : IReplaceNonCoprimeNumbersInArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log M), where n is the length of nums and M is max(nums[i])
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> ReplaceNonCoprimes(int[] nums)
     {
         var top = 0;

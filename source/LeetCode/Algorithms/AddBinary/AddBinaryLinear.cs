@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.AddBinary;
 /// <inheritdoc />
 public sealed class AddBinaryLinear : IAddBinary
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(max(n, m)), where n is the length of string a and is the length of string b
     ///     Space complexity - O(max(n, m)), where n is the length of string a and is the length of string b
-    /// </summary>
-    /// <param name="a"></param>
-    /// <param name="b"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string AddBinary(string a, string b)
     {
         var result = new char[Math.Max(a.Length, b.Length) + 1];

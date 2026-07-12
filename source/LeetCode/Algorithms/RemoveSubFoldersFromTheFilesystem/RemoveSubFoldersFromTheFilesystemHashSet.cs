@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RemoveSubFoldersFromTheFilesystem;
 /// <inheritdoc />
 public sealed class RemoveSubFoldersFromTheFilesystemHashSet : IRemoveSubFoldersFromTheFilesystem
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="folders"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<string> RemoveSubfolders(string[] folders)
     {
         var result = new List<string>();

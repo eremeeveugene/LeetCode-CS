@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumMovesToEqualArrayElements3;
 /// <inheritdoc />
 public sealed class MinimumMovesToEqualArrayElements3TwoPass : IMinimumMovesToEqualArrayElements3
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinMoves(int[] nums)
     {
         var max = 0;

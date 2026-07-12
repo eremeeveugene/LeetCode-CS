@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SumOfAllSubsetXORTotals;
 /// <inheritdoc />
 public sealed class SumOfAllSubsetXORTotalsRecursive : ISumOfAllSubsetXORTotals
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(2^n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SubsetXORSum(int[] nums)
     {
         return CalculateXORSum(nums, 0, 0);

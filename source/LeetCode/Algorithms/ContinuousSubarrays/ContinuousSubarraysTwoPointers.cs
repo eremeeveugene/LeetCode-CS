@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ContinuousSubarrays;
 /// <inheritdoc />
 public sealed class ContinuousSubarraysTwoPointers : IContinuousSubarrays
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long ContinuousSubarrays(int[] nums)
     {
         long result = 0;

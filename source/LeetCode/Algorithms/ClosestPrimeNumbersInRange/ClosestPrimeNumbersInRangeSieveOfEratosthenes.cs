@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.ClosestPrimeNumbersInRange;
 /// <inheritdoc />
 public sealed class ClosestPrimeNumbersInRangeSieveOfEratosthenes : IClosestPrimeNumbersInRange
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(R * log(log R))
     ///     Space complexity - O(R)
-    /// </summary>
-    /// <param name="left"></param>
-    /// <param name="right"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] ClosestPrimes(int left, int right)
     {
         var isPrime = SieveOfEratosthenes(right);

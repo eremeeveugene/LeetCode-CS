@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.MaximumSubstringsWithDistinctStart;
 /// <inheritdoc />
 public sealed class MaximumSubstringsWithDistinctStartBitArray : MaximumSubstringsWithDistinctStartBase
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public override int MaxDistinct(string s)
     {
         var result = 0;

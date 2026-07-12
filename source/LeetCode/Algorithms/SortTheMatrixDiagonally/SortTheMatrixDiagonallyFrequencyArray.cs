@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SortTheMatrixDiagonally;
 /// <inheritdoc />
 public sealed class SortTheMatrixDiagonallyFrequencyArray : ISortTheMatrixDiagonally
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="mat"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] DiagonalSort(int[][] mat)
     {
         var m = mat.Length;

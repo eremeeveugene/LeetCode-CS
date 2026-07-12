@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindIfArrayCanBeSorted;
 /// <inheritdoc />
 public sealed class FindIfArrayCanBeSortedTwoPass : IFindIfArrayCanBeSorted
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log k)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanSortArray(int[] nums)
     {
         for (var i = 0; i < nums.Length - 1; i++)

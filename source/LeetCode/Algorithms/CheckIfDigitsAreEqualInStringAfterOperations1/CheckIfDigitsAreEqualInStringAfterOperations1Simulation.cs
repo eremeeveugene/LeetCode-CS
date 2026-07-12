@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CheckIfDigitsAreEqualInStringAfterOperations1;
 /// <inheritdoc />
 public sealed class CheckIfDigitsAreEqualInStringAfterOperations1Simulation : ICheckIfDigitsAreEqualInStringAfterOperations1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool HasSameDigits(string s)
     {
         while (s.Length > 2)

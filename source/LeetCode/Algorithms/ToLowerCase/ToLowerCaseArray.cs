@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ToLowerCase;
 /// <inheritdoc />
 public sealed class ToLowerCaseArray : IToLowerCase
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string ToLowerCase(string s)
     {
         var result = new char[s.Length];

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindTheMinimumAmountOfTimeToBrewPotions;
 /// <inheritdoc />
 public sealed class FindTheMinimumAmountOfTimeToBrewPotionsDynamicProgramming : IFindTheMinimumAmountOfTimeToBrewPotions
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m), where n is the length of wizardSkills and m is the length of potionMana
     ///     Space complexity - O(n), where n is the length of wizardSkills
-    /// </summary>
-    /// <param name="wizardSkills"></param>
-    /// <param name="potionMana"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long MinTime(int[] wizardSkills, int[] potionMana)
     {
         var wizardCount = wizardSkills.Length;

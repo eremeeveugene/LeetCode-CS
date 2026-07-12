@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.ShortestPalindrome;
 /// <inheritdoc />
 public sealed class ShortestPalindromeTwoPointers : IShortestPalindrome
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string ShortestPalindrome(string s)
     {
         if (s.Length <= 1)

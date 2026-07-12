@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict;
 /// <inheritdoc />
 public sealed class DetermineIfTwoEventsHaveConflictStringComparison : IDetermineIfTwoEventsHaveConflict
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="event1"></param>
-    /// <param name="event2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool HaveConflict(string[] event1, string[] event2)
     {
         return string.CompareOrdinal(event1[0], event2[1]) <= 0 && string.CompareOrdinal(event1[1], event2[0]) >= 0;

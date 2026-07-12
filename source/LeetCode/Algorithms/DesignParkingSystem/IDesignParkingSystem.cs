@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.DesignParkingSystem;
 /// </summary>
 public interface IDesignParkingSystem
 {
+    /// <summary>
+    ///     Attempts to park a car of the given type into a parking space of the matching size.
+    /// </summary>
+    /// <param name="carType">The type of the car: 1 for big, 2 for medium, or 3 for small.</param>
+    /// <returns><c>true</c> if there is an available parking space of the matching type; otherwise, <c>false</c>.</returns>
     bool AddCar(int carType);
 }

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.IntersectionOfTwoArrays;
 /// </summary>
 public interface IIntersectionOfTwoArrays
 {
+    /// <summary>
+    ///     Computes the intersection of <paramref name="nums1" /> and <paramref name="nums2" />, where each element in the
+    ///     result is unique.
+    /// </summary>
+    /// <param name="nums1">The first array of integers.</param>
+    /// <param name="nums2">The second array of integers.</param>
+    /// <returns>An array of the unique elements that appear in both arrays.</returns>
     int[] Intersection(int[] nums1, int[] nums2);
 }

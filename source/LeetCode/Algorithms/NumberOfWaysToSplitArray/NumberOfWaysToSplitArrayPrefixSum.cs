@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberOfWaysToSplitArray;
 /// <inheritdoc />
 public sealed class NumberOfWaysToSplitArrayPrefixSum : INumberOfWaysToSplitArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int WaysToSplitArray(int[] nums)
     {
         long leftSum = nums[0];

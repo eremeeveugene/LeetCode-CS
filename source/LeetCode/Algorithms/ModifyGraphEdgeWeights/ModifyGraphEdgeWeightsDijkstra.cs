@@ -14,16 +14,11 @@ namespace LeetCode.Algorithms.ModifyGraphEdgeWeights;
 /// <inheritdoc />
 public sealed class ModifyGraphEdgeWeightsDijkstra : IModifyGraphEdgeWeights
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O((n + m) log n)
     ///     Space complexity - O(n + m)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="edges"></param>
-    /// <param name="source"></param>
-    /// <param name="destination"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] ModifiedGraphEdges(int n, int[][] edges, int source, int destination, int target)
     {
         var adjacencyEdges = new List<Edge>[n];

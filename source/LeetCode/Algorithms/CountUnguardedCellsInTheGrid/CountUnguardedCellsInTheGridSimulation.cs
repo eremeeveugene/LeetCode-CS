@@ -14,15 +14,11 @@ namespace LeetCode.Algorithms.CountUnguardedCellsInTheGrid;
 /// <inheritdoc />
 public sealed class CountUnguardedCellsInTheGridSimulation : ICountUnguardedCellsInTheGrid
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(m * n)
-    /// </summary>
-    /// <param name="m"></param>
-    /// <param name="n"></param>
-    /// <param name="guards"></param>
-    /// <param name="walls"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountUnguarded(int m, int n, int[][] guards, int[][] walls)
     {
         var result = m * n;

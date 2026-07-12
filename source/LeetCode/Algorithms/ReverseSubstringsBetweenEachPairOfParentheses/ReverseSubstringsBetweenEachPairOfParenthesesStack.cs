@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.ReverseSubstringsBetweenEachPairOfParentheses;
 /// <inheritdoc />
 public sealed class ReverseSubstringsBetweenEachPairOfParenthesesStack : IReverseSubstringsBetweenEachPairOfParentheses
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string ReverseParentheses(string s)
     {
         var leftParenthesesIndexStack = new Stack<int>();

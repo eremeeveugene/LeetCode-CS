@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LongestSubarrayOfOnesAfterDeletingOneElement;
 /// <inheritdoc />
 public sealed class LongestSubarrayOfOnesAfterDeletingOneElementCounting : ILongestSubarrayOf1AfterDeletingOneElement
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LongestSubarray(int[] nums)
     {
         var maxLength = 0;

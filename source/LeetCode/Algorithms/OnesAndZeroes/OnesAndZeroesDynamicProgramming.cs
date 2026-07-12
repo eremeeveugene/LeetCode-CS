@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.OnesAndZeroes;
 /// <inheritdoc />
 public sealed class OnesAndZeroesDynamicProgramming : IOnesAndZeroes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(l * m * n), where l is the length of strs
     ///     Space complexity - O(m * n)
-    /// </summary>
-    /// <param name="strs"></param>
-    /// <param name="m"></param>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindMaxForm(string[] strs, int m, int n)
     {
         Span<int> dp = stackalloc int[(m + 1) * (n + 1)];

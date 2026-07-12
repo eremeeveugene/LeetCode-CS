@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.PathSum2;
 /// <inheritdoc />
 public sealed class PathSum2DepthFirstSearchOptimized : IPathSum2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <param name="targetSum"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<IList<int>> PathSum(TreeNode? root, int targetSum)
     {
         var result = new List<IList<int>>();

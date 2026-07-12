@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.DefuseTheBomb;
 /// <inheritdoc />
 public sealed class DefuseTheBombSlidingWindow : IDefuseTheBomb
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="code"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] Decrypt(int[] code, int k)
     {
         var result = new int[code.Length];

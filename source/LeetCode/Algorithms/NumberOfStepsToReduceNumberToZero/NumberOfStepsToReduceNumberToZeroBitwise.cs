@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero;
 /// <inheritdoc />
 public sealed class NumberOfStepsToReduceNumberToZeroBitwise : INumberOfStepsToReduceNumberToZero
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumberOfSteps(int num)
     {
         return BitOperations.Log2((uint)num) + BitOperations.PopCount((uint)num);

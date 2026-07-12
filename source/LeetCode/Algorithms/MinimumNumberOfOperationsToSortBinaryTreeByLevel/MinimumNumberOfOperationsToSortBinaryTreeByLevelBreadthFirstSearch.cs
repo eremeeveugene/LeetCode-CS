@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel;
 /// <inheritdoc />
 public sealed class MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch : IMinimumNumberOfOperationsToSortBinaryTreeByLevel
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumOperations(TreeNode root)
     {
         var result = 0;

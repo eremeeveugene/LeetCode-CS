@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountSquareSumTriples;
 /// </summary>
 public interface ICountSquareSumTriples
 {
+    /// <summary>
+    ///     Counts the square triples (a, b, c) with all values between one and <paramref name="n" /> such that
+    ///     a^2 + b^2 = c^2.
+    /// </summary>
+    /// <param name="n">The inclusive upper bound for the triple values.</param>
+    /// <returns>The number of square sum triples.</returns>
     int CountTriples(int n);
 }

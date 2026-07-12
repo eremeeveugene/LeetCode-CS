@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindSubsequenceOfLengthKWithTheLargestSum;
 /// <inheritdoc />
 public sealed class FindSubsequenceOfLengthKWithTheLargestSumSorting : IFindSubsequenceOfLengthKWithTheLargestSum
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] MaxSubsequence(int[] nums, int k)
     {
         var indexedNums = new (int Index, int Value)[nums.Length];

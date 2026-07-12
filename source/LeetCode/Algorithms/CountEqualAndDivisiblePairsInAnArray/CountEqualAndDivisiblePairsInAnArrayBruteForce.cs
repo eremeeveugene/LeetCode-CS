@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CountEqualAndDivisiblePairsInAnArray;
 /// <inheritdoc />
 public sealed class CountEqualAndDivisiblePairsInAnArrayBruteForce : ICountEqualAndDivisiblePairsInAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountPairs(int[] nums, int k)
     {
         var pairsCount = 0;

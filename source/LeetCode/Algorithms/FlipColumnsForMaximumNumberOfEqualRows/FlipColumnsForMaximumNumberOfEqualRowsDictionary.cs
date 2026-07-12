@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.FlipColumnsForMaximumNumberOfEqualRows;
 /// <inheritdoc />
 public sealed class FlipColumnsForMaximumNumberOfEqualRowsDictionary : IFlipColumnsForMaximumNumberOfEqualRows
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(n * m)
-    /// </summary>
-    /// <param name="matrix"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxEqualRowsAfterFlips(int[][] matrix)
     {
         var patternDictionary = new Dictionary<string, int>();

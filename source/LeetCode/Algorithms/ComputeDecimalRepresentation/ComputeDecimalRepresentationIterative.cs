@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ComputeDecimalRepresentation;
 /// <inheritdoc />
 public sealed class ComputeDecimalRepresentationIterative : IComputeDecimalRepresentation
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] DecimalRepresentation(int n)
     {
         Span<int> buffer = stackalloc int[10];

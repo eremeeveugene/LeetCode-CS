@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.DifferentWaysToAddParentheses;
 /// </summary>
 public interface IDifferentWaysToAddParentheses
 {
+    /// <summary>
+    ///     Computes all possible results from grouping the numbers and operators in <paramref name="expression" /> in
+    ///     every possible way.
+    /// </summary>
+    /// <param name="expression">The expression of numbers and the operators '+', '-', and '*'.</param>
+    /// <returns>A list of all possible results in any order.</returns>
     IList<int> DiffWaysToCompute(string expression);
 }

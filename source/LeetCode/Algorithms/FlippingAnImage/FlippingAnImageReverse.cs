@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FlippingAnImage;
 /// <inheritdoc />
 public sealed class FlippingAnImageReverse : IFlippingAnImage
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(n * m)
-    /// </summary>
-    /// <param name="image"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] FlipAndInvertImage(int[][] image)
     {
         for (var i = 0; i < image.Length; i++)

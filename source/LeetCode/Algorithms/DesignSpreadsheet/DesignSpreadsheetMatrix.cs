@@ -28,12 +28,11 @@ public sealed class DesignSpreadsheetMatrix : IDesignSpreadsheet
         _spreadsheet = new int[rows, Columns];
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m), where m is the cell length
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="cell"></param>
-    /// <param name="value"></param>
+    /// </remarks>
     public void SetCell(string cell, int value)
     {
         var (row, column) = ParseCell(cell, 0, cell.Length);
@@ -41,22 +40,21 @@ public sealed class DesignSpreadsheetMatrix : IDesignSpreadsheet
         _spreadsheet[row, column] = value;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m), where m is the cell length
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="cell"></param>
+    /// </remarks>
     public void ResetCell(string cell)
     {
         SetCell(cell, 0);
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m), where m is the formula length
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="formula"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int GetValue(string formula)
     {
         var indexOfPlus = formula.IndexOf('+');

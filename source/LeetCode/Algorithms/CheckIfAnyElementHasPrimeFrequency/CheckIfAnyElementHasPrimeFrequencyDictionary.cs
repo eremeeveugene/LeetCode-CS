@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CheckIfAnyElementHasPrimeFrequency;
 /// <inheritdoc />
 public sealed class CheckIfAnyElementHasPrimeFrequencyDictionary : CheckIfAnyElementHasPrimeFrequencyBase
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public override bool CheckPrimeFrequency(int[] nums)
     {
         var frequencyDictionary = new Dictionary<int, int>();

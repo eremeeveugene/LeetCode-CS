@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.Pow;
 /// <inheritdoc />
 public sealed class PowIterative : IPow
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="x"></param>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public double MyPow(double x, int n)
     {
         double result = 1;

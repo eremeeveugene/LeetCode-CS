@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CheckIfWordOccursAsPrefixOfAnyWordInSentence;
 /// <inheritdoc />
 public sealed class CheckIfWordOccursAsPrefixOfAnyWordInSentenceIterative : ICheckIfWordOccursAsPrefixOfAnyWordInSentence
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(m)
-    /// </summary>
-    /// <param name="sentence"></param>
-    /// <param name="searchWord"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int IsPrefixOfWord(string sentence, string searchWord)
     {
         var words = sentence.Split(' ');

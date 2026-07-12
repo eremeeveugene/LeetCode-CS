@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.HandOfStraights;
 /// </summary>
 public interface IHandOfStraights
 {
+    /// <summary>
+    ///     Determines whether the cards in <paramref name="hand" /> can be rearranged into groups of
+    ///     <paramref name="groupSize" /> consecutive cards.
+    /// </summary>
+    /// <param name="hand">The values of the cards in the hand.</param>
+    /// <param name="groupSize">The required size of each group.</param>
+    /// <returns><c>true</c> if the cards can be rearranged into groups of consecutive cards; otherwise, <c>false</c>.</returns>
     bool IsNStraightHand(int[] hand, int groupSize);
 }

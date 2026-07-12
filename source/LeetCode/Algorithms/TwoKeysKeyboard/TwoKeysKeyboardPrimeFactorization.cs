@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.TwoKeysKeyboard;
 /// <inheritdoc />
 public sealed class TwoKeysKeyboardPrimeFactorization : ITwoKeysKeyboard
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinSteps(int n)
     {
         var minSteps = 0;

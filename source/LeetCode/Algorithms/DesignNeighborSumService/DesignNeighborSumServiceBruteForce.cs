@@ -21,12 +21,11 @@ public sealed class DesignNeighborSumServiceBruteForce : IDesignNeighborSumServi
         _grid = grid;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int AdjacentSum(int value)
     {
         var (x, y) = FindPosition(value);
@@ -56,12 +55,11 @@ public sealed class DesignNeighborSumServiceBruteForce : IDesignNeighborSumServi
         return sum;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int DiagonalSum(int value)
     {
         var (x, y) = FindPosition(value);

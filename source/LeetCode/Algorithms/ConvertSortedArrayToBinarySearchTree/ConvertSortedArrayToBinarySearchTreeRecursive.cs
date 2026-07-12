@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.ConvertSortedArrayToBinarySearchTree;
 /// <inheritdoc />
 public sealed class ConvertSortedArrayToBinarySearchTreeRecursive : IConvertSortedArrayToBinarySearchTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public TreeNode? SortedArrayToBST(int[] nums)
     {
         return CreateNode(nums, 0, nums.Length - 1);

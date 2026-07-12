@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.GenerateTagForVideoCaption;
 /// </summary>
 public interface IGenerateTagForVideoCaption
 {
+    /// <summary>
+    ///     Generates a camel-case hashtag from <paramref name="caption" /> by removing spaces, prefixing it with '#', and
+    ///     truncating the result to 100 characters.
+    /// </summary>
+    /// <param name="caption">The video caption to convert.</param>
+    /// <returns>The generated tag for the video caption.</returns>
     string GenerateTag(string caption);
 }

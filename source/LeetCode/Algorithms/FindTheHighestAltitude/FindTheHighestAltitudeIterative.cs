@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindTheHighestAltitude;
 /// <inheritdoc />
 public sealed class FindTheHighestAltitudeIterative : IFindTheHighestAltitude
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="gains"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LargestAltitude(int[] gains)
     {
         var altitude = 0;

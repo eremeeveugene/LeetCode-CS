@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.KthLargestSumInBinaryTree;
 /// <inheritdoc />
 public sealed class KthLargestSumInBinaryTreeBreadthFirstSearch : IKthLargestSumInBinaryTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log k)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long KthLargestLevelSum(TreeNode root, int k)
     {
         var nodesQueue = new Queue<TreeNode>();

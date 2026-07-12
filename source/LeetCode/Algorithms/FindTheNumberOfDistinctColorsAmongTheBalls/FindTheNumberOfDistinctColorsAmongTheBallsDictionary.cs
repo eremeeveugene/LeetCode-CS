@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindTheNumberOfDistinctColorsAmongTheBalls;
 /// <inheritdoc />
 public sealed class FindTheNumberOfDistinctColorsAmongTheBallsDictionary : IFindTheNumberOfDistinctColorsAmongTheBalls
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="limit"></param>
-    /// <param name="queries"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] QueryResults(int limit, int[][] queries)
     {
         var result = new int[queries.Length];

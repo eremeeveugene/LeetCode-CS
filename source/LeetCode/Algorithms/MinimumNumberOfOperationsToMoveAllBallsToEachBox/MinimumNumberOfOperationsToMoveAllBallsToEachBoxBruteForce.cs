@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox;
 /// <inheritdoc />
 public sealed class MinimumNumberOfOperationsToMoveAllBallsToEachBoxBruteForce : IMinimumNumberOfOperationsToMoveAllBallsToEachBox
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="boxes"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] MinOperations(string boxes)
     {
         var result = new int[boxes.Length];

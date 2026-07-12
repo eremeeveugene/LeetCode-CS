@@ -18,12 +18,11 @@ public sealed class SmallestStringStartingFromLeafDepthFirstSearch : ISmallestSt
 {
     private string? _smallestString;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n) for a balanced tree, O(n^2) for a skewed tree
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string? SmallestFromLeaf(TreeNode? root)
     {
         FindSmallest(root, string.Empty);

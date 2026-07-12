@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.GreatestSumDivisibleByThree;
 /// </summary>
 public interface IGreatestSumDivisibleByThree
 {
+    /// <summary>
+    ///     Finds the maximum possible sum of elements of <paramref name="nums" /> such that the sum is divisible by three.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The maximum sum of elements that is divisible by three.</returns>
     int MaxSumDivThree(int[] nums);
 }

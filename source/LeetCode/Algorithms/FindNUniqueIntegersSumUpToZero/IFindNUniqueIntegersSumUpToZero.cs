@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FindNUniqueIntegersSumUpToZero;
 /// </summary>
 public interface IFindNUniqueIntegersSumUpToZero
 {
+    /// <summary>
+    ///     Finds <paramref name="n" /> unique integers that sum up to zero.
+    /// </summary>
+    /// <param name="n">The number of unique integers to produce.</param>
+    /// <returns>An array of <paramref name="n" /> unique integers whose sum is zero.</returns>
     int[] SumZero(int n);
 }

@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.SameTree;
 /// <inheritdoc />
 public sealed class SameTreeRecursive : ISameTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(log n) for a balanced tree, O(n) for an unbalanced tree
-    /// </summary>
-    /// <param name="p"></param>
-    /// <param name="q"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsSameTree(TreeNode? p, TreeNode? q)
     {
         if (p == null && q == null)

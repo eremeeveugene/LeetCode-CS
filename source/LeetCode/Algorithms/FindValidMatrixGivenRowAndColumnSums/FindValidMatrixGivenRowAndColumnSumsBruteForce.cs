@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindValidMatrixGivenRowAndColumnSums;
 /// <inheritdoc />
 public sealed class FindValidMatrixGivenRowAndColumnSumsBruteForce : IFindValidMatrixGivenRowAndColumnSums
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m^2 * n)
     ///     Space complexity - O(m * n)
-    /// </summary>
-    /// <param name="rowSum"></param>
-    /// <param name="colSum"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] RestoreMatrix(int[] rowSum, int[] colSum)
     {
         var result = new int[rowSum.Length][];

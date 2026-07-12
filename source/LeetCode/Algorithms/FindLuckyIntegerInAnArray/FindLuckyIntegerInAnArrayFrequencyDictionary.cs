@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindLuckyIntegerInAnArray;
 /// <inheritdoc />
 public sealed class FindLuckyIntegerInAnArrayFrequencyDictionary : IFindLuckyIntegerInAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindLucky(int[] arr)
     {
         var frequencyDictionary = new Dictionary<int, int>();

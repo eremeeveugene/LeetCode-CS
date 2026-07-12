@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.SumOfLeftLeaves;
 /// <inheritdoc />
 public sealed class SumOfLeftLeavesDepthFirstSearch : ISumOfLeftLeaves
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n) for skewed tree, O(log n) for balanced tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumOfLeftLeaves(TreeNode? root)
     {
         if (root == null)

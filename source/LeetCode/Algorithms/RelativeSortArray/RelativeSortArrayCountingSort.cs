@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.RelativeSortArray;
 /// <inheritdoc />
 public sealed class RelativeSortArrayCountingSort : IRelativeSortArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m + k), where k is the maximum element in arr1
     ///     Space complexity - O(k), where k is the maximum element in arr1
-    /// </summary>
-    /// <param name="arr1"></param>
-    /// <param name="arr2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] RelativeSortArray(int[] arr1, int[] arr2)
     {
         var frequency = new int[1001];

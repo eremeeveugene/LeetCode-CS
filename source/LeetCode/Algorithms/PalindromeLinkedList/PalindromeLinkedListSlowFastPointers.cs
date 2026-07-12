@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.PalindromeLinkedList;
 /// <inheritdoc />
 public sealed class PalindromeLinkedListSlowFastPointers : IPalindromeLinkedList
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="head"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsPalindrome(ListNode? head)
     {
         if (head?.next == null)

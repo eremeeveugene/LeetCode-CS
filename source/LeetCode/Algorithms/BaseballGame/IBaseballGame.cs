@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.BaseballGame;
 /// </summary>
 public interface IBaseballGame
 {
+    /// <summary>
+    ///     Calculates the sum of all record values after applying the given <paramref name="operations" /> to the record.
+    /// </summary>
+    /// <param name="operations">The list of operations, where each entry is an integer score, "+", "D" or "C".</param>
+    /// <returns>The sum of all values remaining on the record.</returns>
     int CalPoints(string[] operations);
 }

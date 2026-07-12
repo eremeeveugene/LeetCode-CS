@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.CheckIfItIsStraightLine;
 /// </summary>
 public interface ICheckIfItIsStraightLine
 {
+    /// <summary>
+    ///     Determines whether all points in <paramref name="coordinates" /> lie on a single straight line.
+    /// </summary>
+    /// <param name="coordinates">The points given as [x, y] coordinates.</param>
+    /// <returns><c>true</c> if all points lie on a single straight line; otherwise, <c>false</c>.</returns>
     bool CheckStraightLine(int[][] coordinates);
 }

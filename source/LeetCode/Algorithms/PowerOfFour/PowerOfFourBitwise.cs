@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PowerOfFour;
 /// <inheritdoc />
 public sealed class PowerOfFourBitwise : IPowerOfFour
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsPowerOfFour(int n)
     {
         if (n <= 0)

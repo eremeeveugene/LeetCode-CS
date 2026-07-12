@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.FindMinimumDiameterAfterMergingTwoTrees;
 /// </summary>
 public interface IFindMinimumDiameterAfterMergingTwoTrees
 {
+    /// <summary>
+    ///     Finds the minimum possible diameter of the tree obtained by connecting one node of the first tree with one node
+    ///     of the second tree by an edge.
+    /// </summary>
+    /// <param name="edges1">The edges of the first tree.</param>
+    /// <param name="edges2">The edges of the second tree.</param>
+    /// <returns>The minimum possible diameter of the merged tree.</returns>
     int MinimumDiameterAfterMerge(int[][] edges1, int[][] edges2);
 }

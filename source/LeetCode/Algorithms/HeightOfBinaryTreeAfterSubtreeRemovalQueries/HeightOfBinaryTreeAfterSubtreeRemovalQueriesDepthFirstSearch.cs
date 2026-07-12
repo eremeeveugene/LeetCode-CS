@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
 /// <inheritdoc />
 public sealed class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch : IHeightOfBinaryTreeAfterSubtreeRemovalQueries
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m), where n is the number of nodes and m is the number of queries
     ///     Space complexity - O(n), where n is the number of nodes
-    /// </summary>
-    /// <param name="root"></param>
-    /// <param name="queries"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] TreeQueries(TreeNode root, int[] queries)
     {
         var nodesCount = GetNodesCount(root);

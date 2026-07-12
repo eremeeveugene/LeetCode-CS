@@ -16,7 +16,17 @@ namespace LeetCode.Algorithms.FindingPairsWithCertainSum;
 /// </summary>
 public interface IFindingPairsWithCertainSum
 {
+    /// <summary>
+    ///     Adds <paramref name="val" /> to the element of the second array at position <paramref name="index" />.
+    /// </summary>
+    /// <param name="index">The index of the element in the second array to modify.</param>
+    /// <param name="val">The value to add to the element.</param>
     void Add(int index, int val);
 
+    /// <summary>
+    ///     Counts the pairs of elements, one from each array, whose sum equals <paramref name="tot" />.
+    /// </summary>
+    /// <param name="tot">The target sum of a pair.</param>
+    /// <returns>The number of pairs whose sum equals <paramref name="tot" />.</returns>
     int Count(int tot);
 }

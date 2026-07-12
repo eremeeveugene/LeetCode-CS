@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList;
 /// <inheritdoc />
 public sealed class RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce : IRemoveZeroSumConsecutiveNodesFromLinkedList
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^3)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="head"></param>
-    /// <returns></returns>
+    /// </remarks>
     public ListNode? RemoveZeroSumSublists(ListNode? head)
     {
         if (head == null)

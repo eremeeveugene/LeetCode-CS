@@ -16,12 +16,11 @@ public sealed class NumberOfSubArraysWithOddSumBruteForce : INumberOfSubArraysWi
 {
     private const int Mod = (int)(1e9 + 7);
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumOfSubarrays(int[] arr)
     {
         var count = 0;

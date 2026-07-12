@@ -16,12 +16,11 @@ public sealed class SwimInRisingWaterPriorityQueue : ISwimInRisingWater
 {
     private static readonly (int X, int Y)[] Directions = [(-1, 0), (1, 0), (0, -1), (0, 1)];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2 log(n))
     ///     Space complexity - O(n^2)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SwimInWater(int[][] grid)
     {
         var n = grid.Length;

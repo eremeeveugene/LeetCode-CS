@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ReverseInteger;
 /// <inheritdoc />
 public sealed class ReverseIntegerIterative : IReverseInteger
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log(n))
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="x"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Reverse(int x)
     {
         long result = 0;

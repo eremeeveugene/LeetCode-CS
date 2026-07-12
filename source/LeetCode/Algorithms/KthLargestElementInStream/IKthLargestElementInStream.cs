@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.KthLargestElementInStream;
 /// </summary>
 public interface IKthLargestElementInStream
 {
+    /// <summary>
+    ///     Appends <paramref name="val" /> to the stream and returns the k-th largest element in the stream.
+    /// </summary>
+    /// <param name="val">The value to add to the stream.</param>
+    /// <returns>The k-th largest element in the stream after the value is added.</returns>
     int Add(int val);
 }

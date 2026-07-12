@@ -16,5 +16,14 @@ namespace LeetCode.Algorithms.CompareVersionNumbers;
 /// </summary>
 public interface ICompareVersionNumbers
 {
+    /// <summary>
+    ///     Compares <paramref name="version1" /> and <paramref name="version2" /> by their dot-separated revision values.
+    /// </summary>
+    /// <param name="version1">The first version string.</param>
+    /// <param name="version2">The second version string.</param>
+    /// <returns>
+    ///     -1 if <paramref name="version1" /> is less than <paramref name="version2" />, 1 if it is greater, and 0 if they
+    ///     are equal.
+    /// </returns>
     int CompareVersion(string version1, string version2);
 }

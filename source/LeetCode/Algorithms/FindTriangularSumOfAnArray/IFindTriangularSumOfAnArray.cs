@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindTriangularSumOfAnArray;
 /// </summary>
 public interface IFindTriangularSumOfAnArray
 {
+    /// <summary>
+    ///     Computes the triangular sum of <paramref name="nums" /> by repeatedly replacing the array with the sums of
+    ///     adjacent elements modulo 10 until a single element remains.
+    /// </summary>
+    /// <param name="nums">The array of digits.</param>
+    /// <returns>The triangular sum of <paramref name="nums" />.</returns>
     int TriangularSum(int[] nums);
 }

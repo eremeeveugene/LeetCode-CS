@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountSquareSumTriples;
 /// <inheritdoc />
 public sealed class CountSquareSumTriplesBruteForce : ICountSquareSumTriples
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountTriples(int n)
     {
         var count = 0;

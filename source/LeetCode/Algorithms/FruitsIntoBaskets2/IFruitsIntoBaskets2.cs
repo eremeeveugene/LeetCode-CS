@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.FruitsIntoBaskets2;
 /// </summary>
 public interface IFruitsIntoBaskets2
 {
+    /// <summary>
+    ///     Counts the fruits from <paramref name="fruits" /> that remain unplaced after placing each fruit, from left to
+    ///     right, into the leftmost available basket in <paramref name="baskets" /> with a capacity of at least the fruit
+    ///     quantity.
+    /// </summary>
+    /// <param name="fruits">The quantities of the fruit types.</param>
+    /// <param name="baskets">The capacities of the baskets.</param>
+    /// <returns>The number of fruit types that remain unplaced.</returns>
     int NumOfUnplacedFruits(int[] fruits, int[] baskets);
 }

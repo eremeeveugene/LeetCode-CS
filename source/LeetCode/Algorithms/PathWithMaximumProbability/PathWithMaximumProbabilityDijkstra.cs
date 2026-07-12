@@ -14,16 +14,11 @@ namespace LeetCode.Algorithms.PathWithMaximumProbability;
 /// <inheritdoc />
 public sealed class PathWithMaximumProbabilityDijkstra : PathWithMaximumProbabilityBase
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O((m + n) log n), where m is the number of edges and n is the number of nodes
     ///     Space complexity - O(m + n), where m is the number of edges and n is the number of nodes
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="edges"></param>
-    /// <param name="successProbability"></param>
-    /// <param name="startNode"></param>
-    /// <param name="endNode"></param>
-    /// <returns></returns>
+    /// </remarks>
     public override double MaxProbability(int n, int[][] edges, double[] successProbability, int startNode, int endNode)
     {
         if (edges.Length == 0 || successProbability.Length == 0 || startNode == endNode)
