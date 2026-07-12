@@ -40,7 +40,9 @@ public abstract class SpiralMatrix4TestsBase<T> where T : ISpiralMatrix4, new()
     {
         yield return
         [
-            3, 5, new[] { 3, 0, 2, 6, 8, 1, 7, 9, 4, 2, 5, 5, 0 },
+            3,
+            5,
+            new[] { 3, 0, 2, 6, 8, 1, 7, 9, 4, 2, 5, 5, 0 },
             new[] { new[] { 3, 0, 2, 6, 8 }, new[] { 5, 0, -1, -1, 1 }, new[] { 5, 2, 4, 9, 7 } }
         ];
 
@@ -48,7 +50,9 @@ public abstract class SpiralMatrix4TestsBase<T> where T : ISpiralMatrix4, new()
 
         yield return
         [
-            4, 4, new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 },
+            4,
+            4,
+            new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 },
             new[] { new[] { 1, 2, 3, 4 }, new[] { 12, 13, 14, 5 }, new[] { 11, 16, 15, 6 }, new[] { 10, 9, 8, 7 } }
         ];
     }

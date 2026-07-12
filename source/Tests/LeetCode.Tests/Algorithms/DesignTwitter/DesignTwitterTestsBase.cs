@@ -48,12 +48,22 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         [
             new Scenario<IDesignTwitter>(
                 [
-                    new PostTweetOperation(1, 5), new GetNewsFeedOperation(1), new FollowOperation(1, 2), new PostTweetOperation(2, 6),
-                    new GetNewsFeedOperation(1), new UnfollowOperation(1, 2), new GetNewsFeedOperation(1)
+                    new PostTweetOperation(1, 5),
+                    new GetNewsFeedOperation(1),
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(2, 6),
+                    new GetNewsFeedOperation(1),
+                    new UnfollowOperation(1, 2),
+                    new GetNewsFeedOperation(1)
                 ],
                 [
-                    VoidOperationResult.Instance, new GetNewsFeedOperation.Result([5]), VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    new GetNewsFeedOperation.Result([6, 5]), VoidOperationResult.Instance, new GetNewsFeedOperation.Result([5])
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([5]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([6, 5]),
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([5])
                 ])
         ];
 
@@ -62,7 +72,9 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
             new Scenario<IDesignTwitter>(
                 [new PostTweetOperation(1, 5), new PostTweetOperation(1, 3), new PostTweetOperation(1, 101), new GetNewsFeedOperation(1)],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
                     new GetNewsFeedOperation.Result([101, 3, 5])
                 ])
         ];
@@ -73,11 +85,17 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         [
             new Scenario<IDesignTwitter>(
                 [
-                    new PostTweetOperation(1, 1), new PostTweetOperation(2, 2), new FollowOperation(1, 2), new GetNewsFeedOperation(1),
+                    new PostTweetOperation(1, 1),
+                    new PostTweetOperation(2, 2),
+                    new FollowOperation(1, 2),
+                    new GetNewsFeedOperation(1),
                     new GetNewsFeedOperation(2)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([2, 1]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([2, 1]),
                     new GetNewsFeedOperation.Result([2])
                 ])
         ];
@@ -86,14 +104,31 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         [
             new Scenario<IDesignTwitter>(
                 [
-                    new PostTweetOperation(1, 1), new PostTweetOperation(1, 2), new PostTweetOperation(1, 3), new PostTweetOperation(1, 4),
-                    new PostTweetOperation(1, 5), new PostTweetOperation(1, 6), new PostTweetOperation(1, 7), new PostTweetOperation(1, 8),
-                    new PostTweetOperation(1, 9), new PostTweetOperation(1, 10), new PostTweetOperation(1, 11), new GetNewsFeedOperation(1)
+                    new PostTweetOperation(1, 1),
+                    new PostTweetOperation(1, 2),
+                    new PostTweetOperation(1, 3),
+                    new PostTweetOperation(1, 4),
+                    new PostTweetOperation(1, 5),
+                    new PostTweetOperation(1, 6),
+                    new PostTweetOperation(1, 7),
+                    new PostTweetOperation(1, 8),
+                    new PostTweetOperation(1, 9),
+                    new PostTweetOperation(1, 10),
+                    new PostTweetOperation(1, 11),
+                    new GetNewsFeedOperation(1)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
                     new GetNewsFeedOperation.Result([11, 10, 9, 8, 7, 6, 5, 4, 3, 2])
                 ])
         ];
@@ -102,12 +137,20 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         [
             new Scenario<IDesignTwitter>(
                 [
-                    new PostTweetOperation(1, 10), new PostTweetOperation(2, 20), new PostTweetOperation(3, 30), new FollowOperation(1, 2),
-                    new FollowOperation(1, 3), new GetNewsFeedOperation(1)
+                    new PostTweetOperation(1, 10),
+                    new PostTweetOperation(2, 20),
+                    new PostTweetOperation(3, 30),
+                    new FollowOperation(1, 2),
+                    new FollowOperation(1, 3),
+                    new GetNewsFeedOperation(1)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, new GetNewsFeedOperation.Result([30, 20, 10])
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([30, 20, 10])
                 ])
         ];
 
@@ -122,16 +165,36 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         [
             new Scenario<IDesignTwitter>(
                 [
-                    new FollowOperation(1, 2), new PostTweetOperation(2, 1), new PostTweetOperation(2, 2), new PostTweetOperation(2, 3),
-                    new PostTweetOperation(2, 4), new PostTweetOperation(2, 5), new PostTweetOperation(2, 6), new PostTweetOperation(2, 7),
-                    new PostTweetOperation(2, 8), new PostTweetOperation(2, 9), new PostTweetOperation(2, 10), new PostTweetOperation(2, 11),
-                    new PostTweetOperation(2, 12), new GetNewsFeedOperation(1)
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(2, 1),
+                    new PostTweetOperation(2, 2),
+                    new PostTweetOperation(2, 3),
+                    new PostTweetOperation(2, 4),
+                    new PostTweetOperation(2, 5),
+                    new PostTweetOperation(2, 6),
+                    new PostTweetOperation(2, 7),
+                    new PostTweetOperation(2, 8),
+                    new PostTweetOperation(2, 9),
+                    new PostTweetOperation(2, 10),
+                    new PostTweetOperation(2, 11),
+                    new PostTweetOperation(2, 12),
+                    new GetNewsFeedOperation(1)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, new GetNewsFeedOperation.Result([12, 11, 10, 9, 8, 7, 6, 5, 4, 3])
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([12, 11, 10, 9, 8, 7, 6, 5, 4, 3])
                 ])
         ];
 
@@ -139,12 +202,20 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         [
             new Scenario<IDesignTwitter>(
                 [
-                    new FollowOperation(1, 2), new PostTweetOperation(1, 1), new PostTweetOperation(2, 2), new PostTweetOperation(1, 3),
-                    new PostTweetOperation(2, 4), new GetNewsFeedOperation(1)
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(1, 1),
+                    new PostTweetOperation(2, 2),
+                    new PostTweetOperation(1, 3),
+                    new PostTweetOperation(2, 4),
+                    new GetNewsFeedOperation(1)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, new GetNewsFeedOperation.Result([4, 3, 2, 1])
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([4, 3, 2, 1])
                 ])
         ];
 
@@ -159,12 +230,20 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         [
             new Scenario<IDesignTwitter>(
                 [
-                    new PostTweetOperation(1, 1), new FollowOperation(1, 2), new PostTweetOperation(2, 2), new GetNewsFeedOperation(1),
-                    new UnfollowOperation(1, 2), new GetNewsFeedOperation(1)
+                    new PostTweetOperation(1, 1),
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(2, 2),
+                    new GetNewsFeedOperation(1),
+                    new UnfollowOperation(1, 2),
+                    new GetNewsFeedOperation(1)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([2, 1]),
-                    VoidOperationResult.Instance, new GetNewsFeedOperation.Result([1])
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([2, 1]),
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([1])
                 ])
         ];
 
@@ -172,12 +251,22 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         [
             new Scenario<IDesignTwitter>(
                 [
-                    new FollowOperation(1, 2), new FollowOperation(1, 3), new PostTweetOperation(2, 2), new PostTweetOperation(3, 3),
-                    new GetNewsFeedOperation(1), new UnfollowOperation(1, 2), new GetNewsFeedOperation(1)
+                    new FollowOperation(1, 2),
+                    new FollowOperation(1, 3),
+                    new PostTweetOperation(2, 2),
+                    new PostTweetOperation(3, 3),
+                    new GetNewsFeedOperation(1),
+                    new UnfollowOperation(1, 2),
+                    new GetNewsFeedOperation(1)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    new GetNewsFeedOperation.Result([3, 2]), VoidOperationResult.Instance, new GetNewsFeedOperation.Result([3])
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([3, 2]),
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([3])
                 ])
         ];
 
@@ -185,12 +274,20 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         [
             new Scenario<IDesignTwitter>(
                 [
-                    new FollowOperation(1, 2), new PostTweetOperation(2, 9), new UnfollowOperation(1, 2), new GetNewsFeedOperation(1),
-                    new FollowOperation(1, 2), new GetNewsFeedOperation(1)
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(2, 9),
+                    new UnfollowOperation(1, 2),
+                    new GetNewsFeedOperation(1),
+                    new FollowOperation(1, 2),
+                    new GetNewsFeedOperation(1)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([]),
-                    VoidOperationResult.Instance, new GetNewsFeedOperation.Result([9])
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([]),
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([9])
                 ])
         ];
 
@@ -199,7 +296,9 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
             new Scenario<IDesignTwitter>(
                 [new PostTweetOperation(1, 1), new GetNewsFeedOperation(1), new PostTweetOperation(1, 2), new GetNewsFeedOperation(1)],
                 [
-                    VoidOperationResult.Instance, new GetNewsFeedOperation.Result([1]), VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([1]),
+                    VoidOperationResult.Instance,
                     new GetNewsFeedOperation.Result([2, 1])
                 ])
         ];
@@ -209,7 +308,9 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
             new Scenario<IDesignTwitter>(
                 [new PostTweetOperation(1, 1), new PostTweetOperation(2, 2), new GetNewsFeedOperation(1), new GetNewsFeedOperation(2)],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([1]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([1]),
                     new GetNewsFeedOperation.Result([2])
                 ])
         ];
@@ -225,16 +326,36 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         [
             new Scenario<IDesignTwitter>(
                 [
-                    new FollowOperation(1, 2), new PostTweetOperation(1, 1), new PostTweetOperation(2, 2), new PostTweetOperation(1, 3),
-                    new PostTweetOperation(2, 4), new PostTweetOperation(1, 5), new PostTweetOperation(2, 6), new PostTweetOperation(1, 7),
-                    new PostTweetOperation(2, 8), new PostTweetOperation(1, 9), new PostTweetOperation(2, 10), new PostTweetOperation(1, 11),
-                    new PostTweetOperation(2, 12), new GetNewsFeedOperation(1)
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(1, 1),
+                    new PostTweetOperation(2, 2),
+                    new PostTweetOperation(1, 3),
+                    new PostTweetOperation(2, 4),
+                    new PostTweetOperation(1, 5),
+                    new PostTweetOperation(2, 6),
+                    new PostTweetOperation(1, 7),
+                    new PostTweetOperation(2, 8),
+                    new PostTweetOperation(1, 9),
+                    new PostTweetOperation(2, 10),
+                    new PostTweetOperation(1, 11),
+                    new PostTweetOperation(2, 12),
+                    new GetNewsFeedOperation(1)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, new GetNewsFeedOperation.Result([12, 11, 10, 9, 8, 7, 6, 5, 4, 3])
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([12, 11, 10, 9, 8, 7, 6, 5, 4, 3])
                 ])
         ];
 
@@ -249,12 +370,20 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         [
             new Scenario<IDesignTwitter>(
                 [
-                    new PostTweetOperation(1, 1), new PostTweetOperation(1, 2), new FollowOperation(1, 2), new PostTweetOperation(2, 3),
-                    new UnfollowOperation(1, 2), new GetNewsFeedOperation(1)
+                    new PostTweetOperation(1, 1),
+                    new PostTweetOperation(1, 2),
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(2, 3),
+                    new UnfollowOperation(1, 2),
+                    new GetNewsFeedOperation(1)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, new GetNewsFeedOperation.Result([2, 1])
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([2, 1])
                 ])
         ];
 
@@ -262,12 +391,20 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         [
             new Scenario<IDesignTwitter>(
                 [
-                    new FollowOperation(1, 3), new FollowOperation(2, 3), new PostTweetOperation(3, 30), new GetNewsFeedOperation(1),
-                    new GetNewsFeedOperation(2), new GetNewsFeedOperation(3)
+                    new FollowOperation(1, 3),
+                    new FollowOperation(2, 3),
+                    new PostTweetOperation(3, 30),
+                    new GetNewsFeedOperation(1),
+                    new GetNewsFeedOperation(2),
+                    new GetNewsFeedOperation(3)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([30]),
-                    new GetNewsFeedOperation.Result([30]), new GetNewsFeedOperation.Result([30])
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([30]),
+                    new GetNewsFeedOperation.Result([30]),
+                    new GetNewsFeedOperation.Result([30])
                 ])
         ];
 
@@ -282,15 +419,33 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         [
             new Scenario<IDesignTwitter>(
                 [
-                    new FollowOperation(1, 2), new PostTweetOperation(2, 100), new PostTweetOperation(1, 1), new PostTweetOperation(1, 2),
-                    new PostTweetOperation(1, 3), new PostTweetOperation(1, 4), new PostTweetOperation(1, 5), new PostTweetOperation(1, 6),
-                    new PostTweetOperation(1, 7), new PostTweetOperation(1, 8), new PostTweetOperation(1, 9), new PostTweetOperation(1, 10),
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(2, 100),
+                    new PostTweetOperation(1, 1),
+                    new PostTweetOperation(1, 2),
+                    new PostTweetOperation(1, 3),
+                    new PostTweetOperation(1, 4),
+                    new PostTweetOperation(1, 5),
+                    new PostTweetOperation(1, 6),
+                    new PostTweetOperation(1, 7),
+                    new PostTweetOperation(1, 8),
+                    new PostTweetOperation(1, 9),
+                    new PostTweetOperation(1, 10),
                     new GetNewsFeedOperation(1)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
                     new GetNewsFeedOperation.Result([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
                 ])
         ];
@@ -306,11 +461,17 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         [
             new Scenario<IDesignTwitter>(
                 [
-                    new FollowOperation(1, 1), new FollowOperation(1, 2), new PostTweetOperation(1, 1), new PostTweetOperation(2, 2),
+                    new FollowOperation(1, 1),
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(1, 1),
+                    new PostTweetOperation(2, 2),
                     new GetNewsFeedOperation(1)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
                     new GetNewsFeedOperation.Result([2, 1])
                 ])
         ];

@@ -51,14 +51,32 @@ public abstract class DesignStackWithIncrementOperationTestsBase
             new StackWithIncrementScenario(
                 3,
                 [
-                    new PushOperation(1), new PushOperation(2), new PopOperation(), new PushOperation(2), new PushOperation(3),
-                    new PushOperation(4), new IncrementOperation(5, 100), new IncrementOperation(2, 100), new PopOperation(), new PopOperation(),
-                    new PopOperation(), new PopOperation()
+                    new PushOperation(1),
+                    new PushOperation(2),
+                    new PopOperation(),
+                    new PushOperation(2),
+                    new PushOperation(3),
+                    new PushOperation(4),
+                    new IncrementOperation(5, 100),
+                    new IncrementOperation(2, 100),
+                    new PopOperation(),
+                    new PopOperation(),
+                    new PopOperation(),
+                    new PopOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, new PopOperation.Result(2), VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    new PopOperation.Result(103), new PopOperation.Result(202), new PopOperation.Result(201), new PopOperation.Result(-1)
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new PopOperation.Result(2),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new PopOperation.Result(103),
+                    new PopOperation.Result(202),
+                    new PopOperation.Result(201),
+                    new PopOperation.Result(-1)
                 ])
         ];
 
@@ -70,8 +88,12 @@ public abstract class DesignStackWithIncrementOperationTestsBase
                 2,
                 [new PushOperation(1), new PushOperation(2), new PushOperation(3), new PopOperation(), new PopOperation(), new PopOperation()],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new PopOperation.Result(2),
-                    new PopOperation.Result(1), new PopOperation.Result(-1)
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new PopOperation.Result(2),
+                    new PopOperation.Result(1),
+                    new PopOperation.Result(-1)
                 ])
         ];
 
@@ -81,7 +103,10 @@ public abstract class DesignStackWithIncrementOperationTestsBase
                 3,
                 [new PushOperation(1), new PushOperation(2), new IncrementOperation(10, 5), new PopOperation(), new PopOperation()],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new PopOperation.Result(7),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new PopOperation.Result(7),
                     new PopOperation.Result(6)
                 ])
         ];
@@ -92,7 +117,10 @@ public abstract class DesignStackWithIncrementOperationTestsBase
                 3,
                 [new PushOperation(5), new PushOperation(10), new IncrementOperation(0, 100), new PopOperation(), new PopOperation()],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new PopOperation.Result(10),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new PopOperation.Result(10),
                     new PopOperation.Result(5)
                 ])
         ];

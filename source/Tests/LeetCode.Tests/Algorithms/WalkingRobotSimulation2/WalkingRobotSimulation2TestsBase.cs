@@ -53,14 +53,24 @@ public abstract class WalkingRobotSimulation2TestsBase
                 6,
                 3,
                 [
-                    new GetPosOperation(), new GetDirOperation(), new StepOperation(2), new GetPosOperation(), new GetDirOperation(),
-                    new StepOperation(2), new GetPosOperation(), new GetDirOperation()
+                    new GetPosOperation(),
+                    new GetDirOperation(),
+                    new StepOperation(2),
+                    new GetPosOperation(),
+                    new GetDirOperation(),
+                    new StepOperation(2),
+                    new GetPosOperation(),
+                    new GetDirOperation()
                 ],
                 [
-                    new GetPosOperation.Result(0, 0), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection),
-                    VoidOperationResult.Instance, new GetPosOperation.Result(2, 0),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection), VoidOperationResult.Instance,
-                    new GetPosOperation.Result(4, 0), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection)
+                    new GetPosOperation.Result(0, 0),
+                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection),
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(2, 0),
+                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection),
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(4, 0),
+                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection)
                 ])
         ];
 
@@ -70,13 +80,20 @@ public abstract class WalkingRobotSimulation2TestsBase
                 6,
                 3,
                 [
-                    new StepOperation(8), new GetPosOperation(), new GetDirOperation(), new StepOperation(1), new GetPosOperation(),
+                    new StepOperation(8),
+                    new GetPosOperation(),
+                    new GetDirOperation(),
+                    new StepOperation(1),
+                    new GetPosOperation(),
                     new GetDirOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, new GetPosOperation.Result(4, 2),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection), VoidOperationResult.Instance,
-                    new GetPosOperation.Result(3, 2), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(4, 2),
+                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection),
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(3, 2),
+                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)
                 ])
         ];
 
@@ -86,13 +103,20 @@ public abstract class WalkingRobotSimulation2TestsBase
                 3,
                 3,
                 [
-                    new StepOperation(4), new GetPosOperation(), new GetDirOperation(), new StepOperation(2), new GetPosOperation(),
+                    new StepOperation(4),
+                    new GetPosOperation(),
+                    new GetDirOperation(),
+                    new StepOperation(2),
+                    new GetPosOperation(),
                     new GetDirOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, new GetPosOperation.Result(2, 2),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.NorthDirection), VoidOperationResult.Instance,
-                    new GetPosOperation.Result(0, 2), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(2, 2),
+                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.NorthDirection),
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(0, 2),
+                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)
                 ])
         ];
 
@@ -102,13 +126,20 @@ public abstract class WalkingRobotSimulation2TestsBase
                 3,
                 2,
                 [
-                    new StepOperation(5), new GetPosOperation(), new GetDirOperation(), new StepOperation(1), new GetPosOperation(),
+                    new StepOperation(5),
+                    new GetPosOperation(),
+                    new GetDirOperation(),
+                    new StepOperation(1),
+                    new GetPosOperation(),
                     new GetDirOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, new GetPosOperation.Result(0, 1),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection), VoidOperationResult.Instance,
-                    new GetPosOperation.Result(0, 0), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.SouthDirection)
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(0, 1),
+                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection),
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(0, 0),
+                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.SouthDirection)
                 ])
         ];
 
@@ -118,13 +149,20 @@ public abstract class WalkingRobotSimulation2TestsBase
                 4,
                 2,
                 [
-                    new StepOperation(6), new GetPosOperation(), new GetDirOperation(), new StepOperation(6), new GetPosOperation(),
+                    new StepOperation(6),
+                    new GetPosOperation(),
+                    new GetDirOperation(),
+                    new StepOperation(6),
+                    new GetPosOperation(),
                     new GetDirOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, new GetPosOperation.Result(1, 1),
-                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection), VoidOperationResult.Instance,
-                    new GetPosOperation.Result(3, 1), new GetDirOperation.Result(WalkingRobotSimulation2Simulation.NorthDirection)
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(1, 1),
+                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection),
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(3, 1),
+                    new GetDirOperation.Result(WalkingRobotSimulation2Simulation.NorthDirection)
                 ])
         ];
 
@@ -135,7 +173,8 @@ public abstract class WalkingRobotSimulation2TestsBase
                 3,
                 [new StepOperation(10), new GetPosOperation(), new GetDirOperation()],
                 [
-                    VoidOperationResult.Instance, new GetPosOperation.Result(0, 0),
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(0, 0),
                     new GetDirOperation.Result(WalkingRobotSimulation2Simulation.SouthDirection)
                 ])
         ];
@@ -147,7 +186,8 @@ public abstract class WalkingRobotSimulation2TestsBase
                 3,
                 [new StepOperation(20), new GetPosOperation(), new GetDirOperation()],
                 [
-                    VoidOperationResult.Instance, new GetPosOperation.Result(0, 0),
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(0, 0),
                     new GetDirOperation.Result(WalkingRobotSimulation2Simulation.SouthDirection)
                 ])
         ];
@@ -159,7 +199,8 @@ public abstract class WalkingRobotSimulation2TestsBase
                 3,
                 [new StepOperation(0), new GetPosOperation(), new GetDirOperation()],
                 [
-                    VoidOperationResult.Instance, new GetPosOperation.Result(0, 0),
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(0, 0),
                     new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection)
                 ])
         ];
@@ -171,7 +212,9 @@ public abstract class WalkingRobotSimulation2TestsBase
                 3,
                 [new StepOperation(3), new StepOperation(0), new GetPosOperation(), new GetDirOperation()],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, new GetPosOperation.Result(3, 0),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(3, 0),
                     new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection)
                 ])
         ];
@@ -183,7 +226,8 @@ public abstract class WalkingRobotSimulation2TestsBase
                 3,
                 [new StepOperation(7), new GetPosOperation(), new GetDirOperation()],
                 [
-                    VoidOperationResult.Instance, new GetPosOperation.Result(1, 2),
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(1, 2),
                     new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)
                 ])
         ];
@@ -195,7 +239,8 @@ public abstract class WalkingRobotSimulation2TestsBase
                 3,
                 [new StepOperation(3), new GetPosOperation(), new GetDirOperation()],
                 [
-                    VoidOperationResult.Instance, new GetPosOperation.Result(3, 0),
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(3, 0),
                     new GetDirOperation.Result(WalkingRobotSimulation2Simulation.EastDirection)
                 ])
         ];
@@ -207,7 +252,8 @@ public abstract class WalkingRobotSimulation2TestsBase
                 3,
                 [new StepOperation(4), new GetPosOperation(), new GetDirOperation()],
                 [
-                    VoidOperationResult.Instance, new GetPosOperation.Result(3, 1),
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(3, 1),
                     new GetDirOperation.Result(WalkingRobotSimulation2Simulation.NorthDirection)
                 ])
         ];
@@ -219,7 +265,8 @@ public abstract class WalkingRobotSimulation2TestsBase
                 3,
                 [new StepOperation(8), new GetPosOperation(), new GetDirOperation()],
                 [
-                    VoidOperationResult.Instance, new GetPosOperation.Result(0, 2),
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(0, 2),
                     new GetDirOperation.Result(WalkingRobotSimulation2Simulation.WestDirection)
                 ])
         ];
@@ -231,7 +278,8 @@ public abstract class WalkingRobotSimulation2TestsBase
                 3,
                 [new StepOperation(9), new GetPosOperation(), new GetDirOperation()],
                 [
-                    VoidOperationResult.Instance, new GetPosOperation.Result(0, 1),
+                    VoidOperationResult.Instance,
+                    new GetPosOperation.Result(0, 1),
                     new GetDirOperation.Result(WalkingRobotSimulation2Simulation.SouthDirection)
                 ])
         ];

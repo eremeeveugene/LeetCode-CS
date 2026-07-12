@@ -49,8 +49,12 @@ public abstract class PathWithMaximumProbabilityTestsBase<T> where T : IPathWith
 
         yield return
         [
-            5, new[] { new[] { 1, 4 }, new[] { 2, 4 }, new[] { 0, 4 }, new[] { 0, 3 }, new[] { 0, 2 }, new[] { 2, 3 } },
-            new[] { 0.37, 0.17, 0.93, 0.23, 0.39, 0.04 }, 3, 4, 0.2139
+            5,
+            new[] { new[] { 1, 4 }, new[] { 2, 4 }, new[] { 0, 4 }, new[] { 0, 3 }, new[] { 0, 2 }, new[] { 2, 3 } },
+            new[] { 0.37, 0.17, 0.93, 0.23, 0.39, 0.04 },
+            3,
+            4,
+            0.2139
         ];
 
         yield return
@@ -69,7 +73,10 @@ public abstract class PathWithMaximumProbabilityTestsBase<T> where T : IPathWith
                 new[] { 6, 8 },
                 new[] { 7, 9 }
             },
-            new[] { 0.1, 0.2, 0.5, 0.6, 0.3, 0.7, 0.8, 0.9, 0.4, 0.5 }, 0, 9, 0.03780
+            new[] { 0.1, 0.2, 0.5, 0.6, 0.3, 0.7, 0.8, 0.9, 0.4, 0.5 },
+            0,
+            9,
+            0.03780
         ];
 
         yield return
@@ -93,7 +100,10 @@ public abstract class PathWithMaximumProbabilityTestsBase<T> where T : IPathWith
                 new[] { 12, 13 },
                 new[] { 13, 14 }
             },
-            new[] { 0.4, 0.5, 0.6, 0.7, 0.3, 0.9, 0.2, 0.1, 0.8, 0.9, 0.7, 0.6, 0.5, 0.4, 0.3 }, 0, 14, 0.00011
+            new[] { 0.4, 0.5, 0.6, 0.7, 0.3, 0.9, 0.2, 0.1, 0.8, 0.9, 0.7, 0.6, 0.5, 0.4, 0.3 },
+            0,
+            14,
+            0.00011
         ];
 
         yield return [2, Array.Empty<int[]>(), Array.Empty<double>(), 0, 0, 1d];

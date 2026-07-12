@@ -51,12 +51,18 @@ public abstract class SimpleBankSystemTestsBase
             new BankSystemScenario(
                 [10, 100, 20, 50, 30],
                 [
-                    new WithdrawOperation(3, 10), new TransferOperation(5, 1, 20), new DepositOperation(5, 20), new TransferOperation(3, 4, 15),
+                    new WithdrawOperation(3, 10),
+                    new TransferOperation(5, 1, 20),
+                    new DepositOperation(5, 20),
+                    new TransferOperation(3, 4, 15),
                     new WithdrawOperation(5, 50)
                 ],
                 [
-                    new WithdrawOperation.Result(true), new TransferOperation.Result(true), new DepositOperation.Result(true),
-                    new TransferOperation.Result(false), new WithdrawOperation.Result(false)
+                    new WithdrawOperation.Result(true),
+                    new TransferOperation.Result(true),
+                    new DepositOperation.Result(true),
+                    new TransferOperation.Result(false),
+                    new WithdrawOperation.Result(false)
                 ])
         ];
 

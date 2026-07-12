@@ -39,8 +39,10 @@ public abstract class MinimumNumberOfPeopleToTeachTestsBase<T> where T : IMinimu
 
         yield return
         [
-            3, new[] { new[] { 2 }, new[] { 1, 3 }, new[] { 1, 2 }, new[] { 3 } },
-            new[] { new[] { 1, 4 }, new[] { 1, 2 }, new[] { 3, 4 }, new[] { 2, 3 } }, 2
+            3,
+            new[] { new[] { 2 }, new[] { 1, 3 }, new[] { 1, 2 }, new[] { 3 } },
+            new[] { new[] { 1, 4 }, new[] { 1, 2 }, new[] { 3, 4 }, new[] { 2, 3 } },
+            2
         ];
     }
 }

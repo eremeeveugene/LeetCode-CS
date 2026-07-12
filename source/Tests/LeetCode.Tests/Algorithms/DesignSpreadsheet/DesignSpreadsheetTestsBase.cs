@@ -51,12 +51,22 @@ public abstract class DesignSpreadsheetTestsBase
             new SpreadsheetScenario(
                 3,
                 [
-                    new GetValueOperation("=5+7"), new SetCellOperation("A1", 10), new GetValueOperation("=A1+6"), new SetCellOperation("B2", 15),
-                    new GetValueOperation("=A1+B2"), new ResetCellOperation("A1"), new GetValueOperation("=A1+B2")
+                    new GetValueOperation("=5+7"),
+                    new SetCellOperation("A1", 10),
+                    new GetValueOperation("=A1+6"),
+                    new SetCellOperation("B2", 15),
+                    new GetValueOperation("=A1+B2"),
+                    new ResetCellOperation("A1"),
+                    new GetValueOperation("=A1+B2")
                 ],
                 [
-                    new GetValueOperation.Result(12), VoidOperationResult.Instance, new GetValueOperation.Result(16),
-                    VoidOperationResult.Instance, new GetValueOperation.Result(25), VoidOperationResult.Instance, new GetValueOperation.Result(15)
+                    new GetValueOperation.Result(12),
+                    VoidOperationResult.Instance,
+                    new GetValueOperation.Result(16),
+                    VoidOperationResult.Instance,
+                    new GetValueOperation.Result(25),
+                    VoidOperationResult.Instance,
+                    new GetValueOperation.Result(15)
                 ])
         ];
 

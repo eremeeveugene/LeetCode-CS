@@ -35,7 +35,8 @@ public abstract class RangeAddition2TestsBase<T> where T : IRangeAddition2, new(
 
         yield return
         [
-            3, 3,
+            3,
+            3,
             new[]
             {
                 new[] { 2, 2 },

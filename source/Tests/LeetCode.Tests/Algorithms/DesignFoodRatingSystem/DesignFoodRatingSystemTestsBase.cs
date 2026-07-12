@@ -53,12 +53,20 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ["korean", "japanese", "japanese", "greek", "japanese", "korean"],
                 [9, 12, 8, 15, 14, 7],
                 [
-                    new HighestRatedOperation("korean"), new HighestRatedOperation("japanese"), new ChangeRatingOperation("sushi", 16),
-                    new HighestRatedOperation("japanese"), new ChangeRatingOperation("ramen", 16), new HighestRatedOperation("japanese")
+                    new HighestRatedOperation("korean"),
+                    new HighestRatedOperation("japanese"),
+                    new ChangeRatingOperation("sushi", 16),
+                    new HighestRatedOperation("japanese"),
+                    new ChangeRatingOperation("ramen", 16),
+                    new HighestRatedOperation("japanese")
                 ],
                 [
-                    new HighestRatedOperation.Result("kimchi"), new HighestRatedOperation.Result("ramen"), VoidOperationResult.Instance,
-                    new HighestRatedOperation.Result("sushi"), VoidOperationResult.Instance, new HighestRatedOperation.Result("ramen")
+                    new HighestRatedOperation.Result("kimchi"),
+                    new HighestRatedOperation.Result("ramen"),
+                    VoidOperationResult.Instance,
+                    new HighestRatedOperation.Result("sushi"),
+                    VoidOperationResult.Instance,
+                    new HighestRatedOperation.Result("ramen")
                 ])
         ];
 
@@ -99,12 +107,19 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ["mexican", "italian", "japanese"],
                 [7, 9, 11],
                 [
-                    new HighestRatedOperation("mexican"), new HighestRatedOperation("italian"), new HighestRatedOperation("japanese"),
-                    new ChangeRatingOperation("tacos", 15), new HighestRatedOperation("mexican"), new HighestRatedOperation("italian")
+                    new HighestRatedOperation("mexican"),
+                    new HighestRatedOperation("italian"),
+                    new HighestRatedOperation("japanese"),
+                    new ChangeRatingOperation("tacos", 15),
+                    new HighestRatedOperation("mexican"),
+                    new HighestRatedOperation("italian")
                 ],
                 [
-                    new HighestRatedOperation.Result("tacos"), new HighestRatedOperation.Result("pasta"),
-                    new HighestRatedOperation.Result("sushi"), VoidOperationResult.Instance, new HighestRatedOperation.Result("tacos"),
+                    new HighestRatedOperation.Result("tacos"),
+                    new HighestRatedOperation.Result("pasta"),
+                    new HighestRatedOperation.Result("sushi"),
+                    VoidOperationResult.Instance,
+                    new HighestRatedOperation.Result("tacos"),
                     new HighestRatedOperation.Result("pasta")
                 ])
         ];
@@ -161,12 +176,18 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ["asian", "asian"],
                 [8, 6],
                 [
-                    new HighestRatedOperation("asian"), new ChangeRatingOperation("pho", 20), new HighestRatedOperation("asian"),
-                    new ChangeRatingOperation("pad thai", 25), new HighestRatedOperation("asian")
+                    new HighestRatedOperation("asian"),
+                    new ChangeRatingOperation("pho", 20),
+                    new HighestRatedOperation("asian"),
+                    new ChangeRatingOperation("pad thai", 25),
+                    new HighestRatedOperation("asian")
                 ],
                 [
-                    new HighestRatedOperation.Result("pad thai"), VoidOperationResult.Instance, new HighestRatedOperation.Result("pho"),
-                    VoidOperationResult.Instance, new HighestRatedOperation.Result("pad thai")
+                    new HighestRatedOperation.Result("pad thai"),
+                    VoidOperationResult.Instance,
+                    new HighestRatedOperation.Result("pho"),
+                    VoidOperationResult.Instance,
+                    new HighestRatedOperation.Result("pad thai")
                 ])
         ];
 
@@ -189,11 +210,15 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ["french", "french", "japanese"],
                 [9, 7, 15],
                 [
-                    new HighestRatedOperation("french"), new HighestRatedOperation("japanese"), new ChangeRatingOperation("baguette", 20),
+                    new HighestRatedOperation("french"),
+                    new HighestRatedOperation("japanese"),
+                    new ChangeRatingOperation("baguette", 20),
                     new HighestRatedOperation("french")
                 ],
                 [
-                    new HighestRatedOperation.Result("croissant"), new HighestRatedOperation.Result("ramen"), VoidOperationResult.Instance,
+                    new HighestRatedOperation.Result("croissant"),
+                    new HighestRatedOperation.Result("ramen"),
+                    VoidOperationResult.Instance,
                     new HighestRatedOperation.Result("baguette")
                 ])
         ];
@@ -239,12 +264,20 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ["american", "salad_bar", "soup_kitchen"],
                 [7, 6, 5],
                 [
-                    new ChangeRatingOperation("steak", 1), new ChangeRatingOperation("salad", 1), new ChangeRatingOperation("soup", 1),
-                    new HighestRatedOperation("american"), new HighestRatedOperation("salad_bar"), new HighestRatedOperation("soup_kitchen")
+                    new ChangeRatingOperation("steak", 1),
+                    new ChangeRatingOperation("salad", 1),
+                    new ChangeRatingOperation("soup", 1),
+                    new HighestRatedOperation("american"),
+                    new HighestRatedOperation("salad_bar"),
+                    new HighestRatedOperation("soup_kitchen")
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    new HighestRatedOperation.Result("steak"), new HighestRatedOperation.Result("salad"), new HighestRatedOperation.Result("soup")
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new HighestRatedOperation.Result("steak"),
+                    new HighestRatedOperation.Result("salad"),
+                    new HighestRatedOperation.Result("soup")
                 ])
         ];
 
@@ -256,11 +289,15 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ["italian", "italian"],
                 [10, 8],
                 [
-                    new ChangeRatingOperation("pizza", 5), new HighestRatedOperation("italian"), new ChangeRatingOperation("pizza", 15),
+                    new ChangeRatingOperation("pizza", 5),
+                    new HighestRatedOperation("italian"),
+                    new ChangeRatingOperation("pizza", 15),
                     new HighestRatedOperation("italian")
                 ],
                 [
-                    VoidOperationResult.Instance, new HighestRatedOperation.Result("pasta"), VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new HighestRatedOperation.Result("pasta"),
+                    VoidOperationResult.Instance,
                     new HighestRatedOperation.Result("pizza")
                 ])
         ];
@@ -273,12 +310,18 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ["x", "x", "x", "x"],
                 [4, 3, 2, 1],
                 [
-                    new HighestRatedOperation("x"), new ChangeRatingOperation("dd", 10), new HighestRatedOperation("x"),
-                    new ChangeRatingOperation("aa", 0), new HighestRatedOperation("x")
+                    new HighestRatedOperation("x"),
+                    new ChangeRatingOperation("dd", 10),
+                    new HighestRatedOperation("x"),
+                    new ChangeRatingOperation("aa", 0),
+                    new HighestRatedOperation("x")
                 ],
                 [
-                    new HighestRatedOperation.Result("aa"), VoidOperationResult.Instance, new HighestRatedOperation.Result("dd"),
-                    VoidOperationResult.Instance, new HighestRatedOperation.Result("dd")
+                    new HighestRatedOperation.Result("aa"),
+                    VoidOperationResult.Instance,
+                    new HighestRatedOperation.Result("dd"),
+                    VoidOperationResult.Instance,
+                    new HighestRatedOperation.Result("dd")
                 ])
         ];
 
@@ -290,11 +333,15 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ["greek", "greek", "greek"],
                 [10, 9, 8],
                 [
-                    new ChangeRatingOperation("beta", 10), new HighestRatedOperation("greek"), new ChangeRatingOperation("gamma", 10),
+                    new ChangeRatingOperation("beta", 10),
+                    new HighestRatedOperation("greek"),
+                    new ChangeRatingOperation("gamma", 10),
                     new HighestRatedOperation("greek")
                 ],
                 [
-                    VoidOperationResult.Instance, new HighestRatedOperation.Result("alpha"), VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new HighestRatedOperation.Result("alpha"),
+                    VoidOperationResult.Instance,
                     new HighestRatedOperation.Result("alpha")
                 ])
         ];
@@ -307,11 +354,15 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ["chinese", "chinese"],
                 [5, 5],
                 [
-                    new ChangeRatingOperation("dim sum", 6), new HighestRatedOperation("chinese"), new ChangeRatingOperation("spring roll", 7),
+                    new ChangeRatingOperation("dim sum", 6),
+                    new HighestRatedOperation("chinese"),
+                    new ChangeRatingOperation("spring roll", 7),
                     new HighestRatedOperation("chinese")
                 ],
                 [
-                    VoidOperationResult.Instance, new HighestRatedOperation.Result("dim sum"), VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new HighestRatedOperation.Result("dim sum"),
+                    VoidOperationResult.Instance,
                     new HighestRatedOperation.Result("spring roll")
                 ])
         ];

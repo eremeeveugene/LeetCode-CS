@@ -48,15 +48,30 @@ public abstract class InsertDeleteGetRandomTestsBase<T> where T : IInsertDeleteG
         [
             new Scenario<IInsertDeleteGetRandom>(
                 [
-                    new InsertOperation(1), new RemoveOperation(2), new InsertOperation(2), new GetRandomOperation(), new RemoveOperation(1),
-                    new InsertOperation(2), new GetRandomOperation(), new RemoveOperation(1), new RemoveOperation(2), new InsertOperation(3),
+                    new InsertOperation(1),
+                    new RemoveOperation(2),
+                    new InsertOperation(2),
+                    new GetRandomOperation(),
+                    new RemoveOperation(1),
+                    new InsertOperation(2),
+                    new GetRandomOperation(),
+                    new RemoveOperation(1),
+                    new RemoveOperation(2),
+                    new InsertOperation(3),
                     new GetRandomOperation()
                 ],
                 [
-                    new InsertOperation.Result(true), new RemoveOperation.Result(false), new InsertOperation.Result(true),
-                    new GetRandomOperation.Result([1, 2]), new RemoveOperation.Result(true), new InsertOperation.Result(false),
-                    new GetRandomOperation.Result([2]), new RemoveOperation.Result(false), new RemoveOperation.Result(true),
-                    new InsertOperation.Result(true), new GetRandomOperation.Result([3])
+                    new InsertOperation.Result(true),
+                    new RemoveOperation.Result(false),
+                    new InsertOperation.Result(true),
+                    new GetRandomOperation.Result([1, 2]),
+                    new RemoveOperation.Result(true),
+                    new InsertOperation.Result(false),
+                    new GetRandomOperation.Result([2]),
+                    new RemoveOperation.Result(false),
+                    new RemoveOperation.Result(true),
+                    new InsertOperation.Result(true),
+                    new GetRandomOperation.Result([3])
                 ])
         ];
 

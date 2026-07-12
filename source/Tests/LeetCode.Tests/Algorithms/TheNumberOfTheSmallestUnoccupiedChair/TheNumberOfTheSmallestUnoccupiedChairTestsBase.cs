@@ -59,7 +59,8 @@ public abstract class TheNumberOfTheSmallestUnoccupiedChairTestsBase<T> where T 
                 new[] { 24, 34 },
                 new[] { 3, 26 }
             },
-            0, 3
+            0,
+            3
         ];
     }
 }

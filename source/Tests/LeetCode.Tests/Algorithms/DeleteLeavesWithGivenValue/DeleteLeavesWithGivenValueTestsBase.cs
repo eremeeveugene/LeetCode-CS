@@ -46,7 +46,8 @@ public abstract class DeleteLeavesWithGivenValueTestsBase<T> where T : IDeleteLe
 
         yield return
         [
-            new int?[] { 1, 2, 2, 3, null, null, 3, 4, null, null, 4, 5, null, null, 5, 5, null, null, 5, 5, null, null, 5, 5, null, null, 5 }, 5,
+            new int?[] { 1, 2, 2, 3, null, null, 3, 4, null, null, 4, 5, null, null, 5, 5, null, null, 5, 5, null, null, 5, 5, null, null, 5 },
+            5,
             new int?[] { 1, 2, 2, 3, null, null, 3, 4, null, null, 4 }
         ];
     }

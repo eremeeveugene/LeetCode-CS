@@ -48,12 +48,21 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         [
             new Scenario<IAllOneDataStructure>(
                 [
-                    new IncOperation("hello"), new IncOperation("hello"), new GetMaxKeyOperation(), new GetMinKeyOperation(),
-                    new IncOperation("leet"), new GetMaxKeyOperation(), new GetMinKeyOperation()
+                    new IncOperation("hello"),
+                    new IncOperation("hello"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation(),
+                    new IncOperation("leet"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, new GetKeyOperation.Result("hello"),
-                    new GetKeyOperation.Result("hello"), VoidOperationResult.Instance, new GetKeyOperation.Result("hello"),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("hello"),
+                    new GetKeyOperation.Result("hello"),
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("hello"),
                     new GetKeyOperation.Result("leet")
                 ])
         ];
@@ -70,7 +79,10 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
             new Scenario<IAllOneDataStructure>(
                 [new IncOperation("a"), new IncOperation("b"), new IncOperation("b"), new GetMaxKeyOperation(), new GetMinKeyOperation()],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetKeyOperation.Result("b"),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("b"),
                     new GetKeyOperation.Result("a")
                 ])
         ];
@@ -79,12 +91,22 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         [
             new Scenario<IAllOneDataStructure>(
                 [
-                    new IncOperation("a"), new IncOperation("a"), new IncOperation("b"), new IncOperation("b"), new DecOperation("a"),
-                    new GetMaxKeyOperation(), new GetMinKeyOperation()
+                    new IncOperation("a"),
+                    new IncOperation("a"),
+                    new IncOperation("b"),
+                    new IncOperation("b"),
+                    new DecOperation("a"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, new GetKeyOperation.Result("b"), new GetKeyOperation.Result("a")
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("b"),
+                    new GetKeyOperation.Result("a")
                 ])
         ];
 
@@ -92,13 +114,28 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         [
             new Scenario<IAllOneDataStructure>(
                 [
-                    new IncOperation("a"), new IncOperation("b"), new IncOperation("b"), new IncOperation("c"), new IncOperation("c"),
-                    new IncOperation("c"), new DecOperation("b"), new DecOperation("b"), new GetMaxKeyOperation(), new GetMinKeyOperation()
+                    new IncOperation("a"),
+                    new IncOperation("b"),
+                    new IncOperation("b"),
+                    new IncOperation("c"),
+                    new IncOperation("c"),
+                    new IncOperation("c"),
+                    new DecOperation("b"),
+                    new DecOperation("b"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    new GetKeyOperation.Result("c"), new GetKeyOperation.Result("a")
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("c"),
+                    new GetKeyOperation.Result("a")
                 ])
         ];
 
@@ -121,7 +158,10 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
             new Scenario<IAllOneDataStructure>(
                 [new IncOperation("a"), new IncOperation("b"), new DecOperation("b"), new GetMaxKeyOperation(), new GetMinKeyOperation()],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetKeyOperation.Result("a"),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("a"),
                     new GetKeyOperation.Result("a")
                 ])
         ];
@@ -130,12 +170,24 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         [
             new Scenario<IAllOneDataStructure>(
                 [
-                    new IncOperation("a"), new IncOperation("a"), new IncOperation("a"), new DecOperation("a"), new DecOperation("a"),
-                    new DecOperation("a"), new GetMaxKeyOperation(), new GetMinKeyOperation()
+                    new IncOperation("a"),
+                    new IncOperation("a"),
+                    new IncOperation("a"),
+                    new DecOperation("a"),
+                    new DecOperation("a"),
+                    new DecOperation("a"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, new GetKeyOperation.Result(""), new GetKeyOperation.Result("")
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result(""),
+                    new GetKeyOperation.Result("")
                 ])
         ];
 
@@ -144,7 +196,10 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
             new Scenario<IAllOneDataStructure>(
                 [new IncOperation("a"), new IncOperation("b"), new IncOperation("c"), new GetMaxKeyOperation(), new GetMinKeyOperation()],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetKeyOperation.Result("a"),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("a"),
                     new GetKeyOperation.Result("a")
                 ])
         ];
@@ -154,7 +209,10 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
             new Scenario<IAllOneDataStructure>(
                 [new IncOperation("z"), new IncOperation("z"), new IncOperation("y"), new GetMaxKeyOperation(), new GetMinKeyOperation()],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetKeyOperation.Result("z"),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("z"),
                     new GetKeyOperation.Result("y")
                 ])
         ];
@@ -163,25 +221,22 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         [
             new Scenario<IAllOneDataStructure>(
                 [
-                    new IncOperation("k"), new IncOperation("k"), new IncOperation("k"), new IncOperation("m"), new IncOperation("m"),
-                    new GetMaxKeyOperation(), new GetMinKeyOperation()
-                ],
-                [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, new GetKeyOperation.Result("k"), new GetKeyOperation.Result("m")
-                ])
-        ];
-
-        yield return
-        [
-            new Scenario<IAllOneDataStructure>(
-                [
-                    new IncOperation("a"), new IncOperation("b"), new IncOperation("a"), new DecOperation("a"), new GetMaxKeyOperation(),
+                    new IncOperation("k"),
+                    new IncOperation("k"),
+                    new IncOperation("k"),
+                    new IncOperation("m"),
+                    new IncOperation("m"),
+                    new GetMaxKeyOperation(),
                     new GetMinKeyOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    new GetKeyOperation.Result("a"), new GetKeyOperation.Result("a")
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("k"),
+                    new GetKeyOperation.Result("m")
                 ])
         ];
 
@@ -189,38 +244,19 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         [
             new Scenario<IAllOneDataStructure>(
                 [
-                    new IncOperation("p"), new IncOperation("q"), new IncOperation("q"), new DecOperation("p"), new GetMaxKeyOperation(),
+                    new IncOperation("a"),
+                    new IncOperation("b"),
+                    new IncOperation("a"),
+                    new DecOperation("a"),
+                    new GetMaxKeyOperation(),
                     new GetMinKeyOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    new GetKeyOperation.Result("q"), new GetKeyOperation.Result("q")
-                ])
-        ];
-
-        yield return
-        [
-            new Scenario<IAllOneDataStructure>(
-                [
-                    new IncOperation("foo"), new IncOperation("bar"), new IncOperation("foo"), new IncOperation("bar"), new IncOperation("foo"),
-                    new GetMaxKeyOperation(), new GetMinKeyOperation()
-                ],
-                [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, new GetKeyOperation.Result("foo"), new GetKeyOperation.Result("bar")
-                ])
-        ];
-
-        yield return
-        [
-            new Scenario<IAllOneDataStructure>(
-                [
-                    new IncOperation("a"), new IncOperation("b"), new IncOperation("b"), new IncOperation("b"), new DecOperation("b"),
-                    new DecOperation("b"), new DecOperation("b"), new GetMaxKeyOperation(), new GetMinKeyOperation()
-                ],
-                [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetKeyOperation.Result("a"),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("a"),
                     new GetKeyOperation.Result("a")
                 ])
         ];
@@ -229,25 +265,20 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         [
             new Scenario<IAllOneDataStructure>(
                 [
-                    new IncOperation("a"), new IncOperation("b"), new IncOperation("c"), new IncOperation("a"), new IncOperation("b"),
-                    new IncOperation("a"), new GetMaxKeyOperation(), new GetMinKeyOperation()
-                ],
-                [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, new GetKeyOperation.Result("a"), new GetKeyOperation.Result("c")
-                ])
-        ];
-
-        yield return
-        [
-            new Scenario<IAllOneDataStructure>(
-                [
-                    new IncOperation("x"), new IncOperation("y"), new DecOperation("x"), new DecOperation("y"), new GetMaxKeyOperation(),
+                    new IncOperation("p"),
+                    new IncOperation("q"),
+                    new IncOperation("q"),
+                    new DecOperation("p"),
+                    new GetMaxKeyOperation(),
                     new GetMinKeyOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    new GetKeyOperation.Result(""), new GetKeyOperation.Result("")
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("q"),
+                    new GetKeyOperation.Result("q")
                 ])
         ];
 
@@ -255,12 +286,121 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         [
             new Scenario<IAllOneDataStructure>(
                 [
-                    new IncOperation("a"), new IncOperation("a"), new IncOperation("b"), new IncOperation("b"), new IncOperation("b"),
-                    new DecOperation("b"), new DecOperation("b"), new GetMaxKeyOperation(), new GetMinKeyOperation()
+                    new IncOperation("foo"),
+                    new IncOperation("bar"),
+                    new IncOperation("foo"),
+                    new IncOperation("bar"),
+                    new IncOperation("foo"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetKeyOperation.Result("a"),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("foo"),
+                    new GetKeyOperation.Result("bar")
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IAllOneDataStructure>(
+                [
+                    new IncOperation("a"),
+                    new IncOperation("b"),
+                    new IncOperation("b"),
+                    new IncOperation("b"),
+                    new DecOperation("b"),
+                    new DecOperation("b"),
+                    new DecOperation("b"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("a"),
+                    new GetKeyOperation.Result("a")
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IAllOneDataStructure>(
+                [
+                    new IncOperation("a"),
+                    new IncOperation("b"),
+                    new IncOperation("c"),
+                    new IncOperation("a"),
+                    new IncOperation("b"),
+                    new IncOperation("a"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("a"),
+                    new GetKeyOperation.Result("c")
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IAllOneDataStructure>(
+                [
+                    new IncOperation("x"),
+                    new IncOperation("y"),
+                    new DecOperation("x"),
+                    new DecOperation("y"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result(""),
+                    new GetKeyOperation.Result("")
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IAllOneDataStructure>(
+                [
+                    new IncOperation("a"),
+                    new IncOperation("a"),
+                    new IncOperation("b"),
+                    new IncOperation("b"),
+                    new IncOperation("b"),
+                    new DecOperation("b"),
+                    new DecOperation("b"),
+                    new GetMaxKeyOperation(),
+                    new GetMinKeyOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("a"),
                     new GetKeyOperation.Result("b")
                 ])
         ];
@@ -269,12 +409,20 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         [
             new Scenario<IAllOneDataStructure>(
                 [
-                    new IncOperation("v"), new IncOperation("v"), new IncOperation("v"), new IncOperation("w"), new GetMaxKeyOperation(),
+                    new IncOperation("v"),
+                    new IncOperation("v"),
+                    new IncOperation("v"),
+                    new IncOperation("w"),
+                    new GetMaxKeyOperation(),
                     new GetMinKeyOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    new GetKeyOperation.Result("v"), new GetKeyOperation.Result("w")
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result("v"),
+                    new GetKeyOperation.Result("w")
                 ])
         ];
     }

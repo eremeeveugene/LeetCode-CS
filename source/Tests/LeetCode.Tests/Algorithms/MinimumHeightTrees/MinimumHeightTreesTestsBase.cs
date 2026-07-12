@@ -49,7 +49,8 @@ public abstract class MinimumHeightTreesTestsBase<T> where T : IMinimumHeightTre
 
         yield return
         [
-            8, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 1, 3 }, new[] { 1, 4 }, new[] { 2, 5 }, new[] { 2, 6 }, new[] { 6, 7 } },
+            8,
+            new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 1, 3 }, new[] { 1, 4 }, new[] { 2, 5 }, new[] { 2, 6 }, new[] { 6, 7 } },
             new[] { 0, 2 }
         ];
 

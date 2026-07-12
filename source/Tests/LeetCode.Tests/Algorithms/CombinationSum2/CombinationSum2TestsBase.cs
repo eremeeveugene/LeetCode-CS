@@ -37,7 +37,8 @@ public abstract class CombinationSum2TestsBase<T> where T : ICombinationSum2, ne
     {
         yield return
         [
-            new[] { 10, 1, 2, 7, 6, 1, 5 }, 8,
+            new[] { 10, 1, 2, 7, 6, 1, 5 },
+            8,
             new List<IList<int>> { new List<int> { 1, 1, 6 }, new List<int> { 1, 2, 5 }, new List<int> { 1, 7 }, new List<int> { 2, 6 } }
         ];
 

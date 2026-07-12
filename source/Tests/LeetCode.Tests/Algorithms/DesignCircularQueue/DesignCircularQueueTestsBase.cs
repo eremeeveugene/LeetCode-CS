@@ -51,13 +51,26 @@ public abstract class DesignCircularQueueTestsBase
             new CircularQueueScenario(
                 3,
                 [
-                    new EnQueueOperation(1), new EnQueueOperation(2), new EnQueueOperation(3), new EnQueueOperation(4), new RearOperation(),
-                    new IsFullOperation(), new DeQueueOperation(), new EnQueueOperation(4), new RearOperation()
+                    new EnQueueOperation(1),
+                    new EnQueueOperation(2),
+                    new EnQueueOperation(3),
+                    new EnQueueOperation(4),
+                    new RearOperation(),
+                    new IsFullOperation(),
+                    new DeQueueOperation(),
+                    new EnQueueOperation(4),
+                    new RearOperation()
                 ],
                 [
-                    new EnQueueOperation.Result(true), new EnQueueOperation.Result(true), new EnQueueOperation.Result(true),
-                    new EnQueueOperation.Result(false), new RearOperation.Result(3), new IsFullOperation.Result(true),
-                    new DeQueueOperation.Result(true), new EnQueueOperation.Result(true), new RearOperation.Result(4)
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(false),
+                    new RearOperation.Result(3),
+                    new IsFullOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new RearOperation.Result(4)
                 ])
         ];
 
@@ -67,8 +80,11 @@ public abstract class DesignCircularQueueTestsBase
                 1,
                 [new EnQueueOperation(1), new EnQueueOperation(2), new FrontOperation(), new DeQueueOperation(), new IsEmptyOperation()],
                 [
-                    new EnQueueOperation.Result(true), new EnQueueOperation.Result(false), new FrontOperation.Result(1),
-                    new DeQueueOperation.Result(true), new IsEmptyOperation.Result(true)
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(false),
+                    new FrontOperation.Result(1),
+                    new DeQueueOperation.Result(true),
+                    new IsEmptyOperation.Result(true)
                 ])
         ];
 
@@ -77,13 +93,24 @@ public abstract class DesignCircularQueueTestsBase
             new CircularQueueScenario(
                 2,
                 [
-                    new IsEmptyOperation(), new EnQueueOperation(5), new EnQueueOperation(6), new IsFullOperation(), new RearOperation(),
-                    new FrontOperation(), new DeQueueOperation(), new RearOperation()
+                    new IsEmptyOperation(),
+                    new EnQueueOperation(5),
+                    new EnQueueOperation(6),
+                    new IsFullOperation(),
+                    new RearOperation(),
+                    new FrontOperation(),
+                    new DeQueueOperation(),
+                    new RearOperation()
                 ],
                 [
-                    new IsEmptyOperation.Result(true), new EnQueueOperation.Result(true), new EnQueueOperation.Result(true),
-                    new IsFullOperation.Result(true), new RearOperation.Result(6), new FrontOperation.Result(5),
-                    new DeQueueOperation.Result(true), new RearOperation.Result(6)
+                    new IsEmptyOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new IsFullOperation.Result(true),
+                    new RearOperation.Result(6),
+                    new FrontOperation.Result(5),
+                    new DeQueueOperation.Result(true),
+                    new RearOperation.Result(6)
                 ])
         ];
 

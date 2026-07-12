@@ -48,37 +48,49 @@ public abstract class AddOneRowToTreeTestsBase<T> where T : IAddOneRowToTree, ne
 
         yield return
         [
-            new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 }, 100, 1,
+            new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 },
+            100,
+            1,
             new int?[] { 100, 1, null, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 }
         ];
 
         yield return
         [
-            new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 }, 100, 2,
+            new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 },
+            100,
+            2,
             new int?[] { 1, 100, 100, 2, null, null, 3, 4, null, null, 4, null, null, 8, null, null, 9 }
         ];
 
         yield return
         [
-            new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 }, 100, 3,
+            new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 },
+            100,
+            3,
             new int?[] { 1, 2, 3, 100, 100, 100, 100, 4, null, null, null, null, null, null, 4, null, null, 8, null, null, 9 }
         ];
 
         yield return
         [
-            new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 }, 100, 4,
+            new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 },
+            100,
+            4,
             new int?[] { 1, 2, 3, 4, null, null, 4, 100, 100, 100, 100, null, null, null, null, 8, null, null, null, null, 9 }
         ];
 
         yield return
         [
-            new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 }, 100, 5,
+            new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 },
+            100,
+            5,
             new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, 100, 100, null, null, null, 9 }
         ];
 
         yield return
         [
-            new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 }, 100, 6,
+            new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9 },
+            100,
+            6,
             new int?[] { 1, 2, 3, 4, null, null, 4, null, null, 8, null, null, 9, 100, 100 }
         ];
 

@@ -51,14 +51,24 @@ public abstract class ImplementRouterTestsBase
             new RouterScenario(
                 3,
                 [
-                    new AddPacketOperation(1, 4, 90), new AddPacketOperation(2, 5, 90), new AddPacketOperation(1, 4, 90),
-                    new AddPacketOperation(3, 5, 95), new AddPacketOperation(4, 5, 105), new ForwardPacketOperation(),
-                    new AddPacketOperation(5, 2, 110), new GetCountOperation(5, 100, 110)
+                    new AddPacketOperation(1, 4, 90),
+                    new AddPacketOperation(2, 5, 90),
+                    new AddPacketOperation(1, 4, 90),
+                    new AddPacketOperation(3, 5, 95),
+                    new AddPacketOperation(4, 5, 105),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(5, 2, 110),
+                    new GetCountOperation(5, 100, 110)
                 ],
                 [
-                    new AddPacketOperation.Result(true), new AddPacketOperation.Result(true), new AddPacketOperation.Result(false),
-                    new AddPacketOperation.Result(true), new AddPacketOperation.Result(true), new ForwardPacketOperation.Result([2, 5, 90]),
-                    new AddPacketOperation.Result(true), new GetCountOperation.Result(1)
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(false),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([2, 5, 90]),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1)
                 ])
         ];
 

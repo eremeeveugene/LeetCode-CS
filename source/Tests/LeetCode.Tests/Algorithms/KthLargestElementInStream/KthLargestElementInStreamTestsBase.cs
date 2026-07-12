@@ -53,7 +53,10 @@ public abstract class KthLargestElementInStreamTestsBase
                 [4, 5, 8, 2],
                 [new AddOperation(3), new AddOperation(5), new AddOperation(10), new AddOperation(9), new AddOperation(4)],
                 [
-                    new AddOperation.Result(4), new AddOperation.Result(5), new AddOperation.Result(5), new AddOperation.Result(8),
+                    new AddOperation.Result(4),
+                    new AddOperation.Result(5),
+                    new AddOperation.Result(5),
+                    new AddOperation.Result(8),
                     new AddOperation.Result(8)
                 ])
         ];

@@ -49,12 +49,24 @@ public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignN
         [
             new Scenario<IDesignNumberContainerSystem>(
                 [
-                    new FindOperation(10), new ChangeOperation(2, 10), new ChangeOperation(1, 10), new ChangeOperation(3, 10),
-                    new ChangeOperation(5, 10), new FindOperation(10), new ChangeOperation(1, 20), new FindOperation(10)
+                    new FindOperation(10),
+                    new ChangeOperation(2, 10),
+                    new ChangeOperation(1, 10),
+                    new ChangeOperation(3, 10),
+                    new ChangeOperation(5, 10),
+                    new FindOperation(10),
+                    new ChangeOperation(1, 20),
+                    new FindOperation(10)
                 ],
                 [
-                    new FindOperation.Result(-1), VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, new FindOperation.Result(1), VoidOperationResult.Instance, new FindOperation.Result(2)
+                    new FindOperation.Result(-1),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(2)
                 ])
         ];
 
@@ -70,7 +82,10 @@ public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignN
             new Scenario<IDesignNumberContainerSystem>(
                 [new ChangeOperation(1, 10), new FindOperation(10), new ChangeOperation(1, 20), new FindOperation(10), new FindOperation(20)],
                 [
-                    VoidOperationResult.Instance, new FindOperation.Result(1), VoidOperationResult.Instance, new FindOperation.Result(-1),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(-1),
                     new FindOperation.Result(1)
                 ])
         ];
@@ -124,7 +139,10 @@ public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignN
             new Scenario<IDesignNumberContainerSystem>(
                 [new ChangeOperation(1, 1), new ChangeOperation(2, 2), new FindOperation(1), new FindOperation(2), new FindOperation(3)],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, new FindOperation.Result(1), new FindOperation.Result(2),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(1),
+                    new FindOperation.Result(2),
                     new FindOperation.Result(-1)
                 ])
         ];
@@ -162,7 +180,10 @@ public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignN
             new Scenario<IDesignNumberContainerSystem>(
                 [new ChangeOperation(1, 1), new ChangeOperation(2, 1), new ChangeOperation(1, 2), new FindOperation(1), new FindOperation(2)],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new FindOperation.Result(2),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(2),
                     new FindOperation.Result(1)
                 ])
         ];
@@ -188,7 +209,10 @@ public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignN
                     new ChangeOperation(1, 10), new ChangeOperation(2, 10), new ChangeOperation(2, 20), new FindOperation(10), new FindOperation(20)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new FindOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(1),
                     new FindOperation.Result(2)
                 ])
         ];

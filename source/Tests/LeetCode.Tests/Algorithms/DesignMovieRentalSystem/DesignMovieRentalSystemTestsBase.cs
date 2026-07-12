@@ -52,12 +52,20 @@ public abstract class DesignMovieRentalSystemTestsBase
                 3,
                 [[0, 1, 5], [0, 2, 6], [0, 3, 7], [1, 1, 4], [1, 2, 7], [2, 1, 5]],
                 [
-                    new SearchOperation(1), new RentOperation(0, 1), new RentOperation(1, 2), new ReportOperation(), new DropOperation(1, 2),
+                    new SearchOperation(1),
+                    new RentOperation(0, 1),
+                    new RentOperation(1, 2),
+                    new ReportOperation(),
+                    new DropOperation(1, 2),
                     new SearchOperation(2)
                 ],
                 [
-                    new SearchOperation.Result([1, 0, 2]), VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    new ReportOperation.Result([[0, 1], [1, 2]]), VoidOperationResult.Instance, new SearchOperation.Result([0, 1])
+                    new SearchOperation.Result([1, 0, 2]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[0, 1], [1, 2]]),
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([0, 1])
                 ])
         ];
 
@@ -77,7 +85,10 @@ public abstract class DesignMovieRentalSystemTestsBase
                 [[0, 1, 5], [0, 2, 3], [1, 1, 8], [1, 3, 2], [2, 2, 6]],
                 [new RentOperation(0, 1), new RentOperation(0, 2), new RentOperation(1, 1), new RentOperation(1, 3), new ReportOperation()],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
                     new ReportOperation.Result([[1, 3], [0, 2], [0, 1], [1, 1]])
                 ])
         ];
@@ -89,7 +100,10 @@ public abstract class DesignMovieRentalSystemTestsBase
                 [[0, 1, 5], [1, 1, 3]],
                 [new RentOperation(0, 1), new RentOperation(1, 1), new SearchOperation(1), new DropOperation(0, 1), new SearchOperation(1)],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, new SearchOperation.Result([]), VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([]),
+                    VoidOperationResult.Instance,
                     new SearchOperation.Result([0])
                 ])
         ];

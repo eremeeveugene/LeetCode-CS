@@ -37,7 +37,10 @@ public abstract class FloodFillTestsBase<T> where T : IFloodFill, new()
 
         yield return
         [
-            new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 0 }, new[] { 1, 0, 1 } }, 1, 1, 2,
+            new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 0 }, new[] { 1, 0, 1 } },
+            1,
+            1,
+            2,
             new[] { new[] { 2, 2, 2 }, new[] { 2, 2, 0 }, new[] { 2, 0, 1 } }
         ];
     }

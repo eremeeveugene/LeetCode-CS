@@ -141,11 +141,15 @@ public abstract class DesignAnATMMachineTestsBase
         [
             new Scenario<IDesignAnATMMachine>(
                 [
-                    new DepositOperation([0, 0, 0, 0, 1]), new WithdrawOperation(500), new DepositOperation([0, 0, 0, 0, 1]),
+                    new DepositOperation([0, 0, 0, 0, 1]),
+                    new WithdrawOperation(500),
+                    new DepositOperation([0, 0, 0, 0, 1]),
                     new WithdrawOperation(500)
                 ],
                 [
-                    VoidOperationResult.Instance, new WithdrawOperation.Result([0, 0, 0, 0, 1]), VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([0, 0, 0, 0, 1]),
+                    VoidOperationResult.Instance,
                     new WithdrawOperation.Result([0, 0, 0, 0, 1])
                 ])
         ];

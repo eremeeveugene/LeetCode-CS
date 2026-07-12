@@ -33,13 +33,15 @@ public abstract class MergeTwo2DArraysBySummingValuesTestsBase<T> where T : IMer
     {
         yield return
         [
-            new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 4, 5 } }, new[] { new[] { 1, 4 }, new[] { 3, 2 }, new[] { 4, 1 } },
+            new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 4, 5 } },
+            new[] { new[] { 1, 4 }, new[] { 3, 2 }, new[] { 4, 1 } },
             new[] { new[] { 1, 6 }, new[] { 2, 3 }, new[] { 3, 2 }, new[] { 4, 6 } }
         ];
 
         yield return
         [
-            new[] { new[] { 2, 4 }, new[] { 3, 6 }, new[] { 5, 5 } }, new[] { new[] { 1, 3 }, new[] { 4, 3 } },
+            new[] { new[] { 2, 4 }, new[] { 3, 6 }, new[] { 5, 5 } },
+            new[] { new[] { 1, 3 }, new[] { 4, 3 } },
             new[] { new[] { 1, 3 }, new[] { 2, 4 }, new[] { 3, 6 }, new[] { 4, 3 }, new[] { 5, 5 } }
         ];
 
@@ -52,14 +54,16 @@ public abstract class MergeTwo2DArraysBySummingValuesTestsBase<T> where T : IMer
         // All keys overlap
         yield return
         [
-            new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 3, 3 } }, new[] { new[] { 1, 4 }, new[] { 2, 5 }, new[] { 3, 6 } },
+            new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 3, 3 } },
+            new[] { new[] { 1, 4 }, new[] { 2, 5 }, new[] { 3, 6 } },
             new[] { new[] { 1, 5 }, new[] { 2, 7 }, new[] { 3, 9 } }
         ];
 
         // nums1 has all keys, nums2 has none
         yield return
         [
-            new[] { new[] { 1, 3 }, new[] { 2, 4 } }, new[] { new[] { 3, 1 }, new[] { 4, 2 } },
+            new[] { new[] { 1, 3 }, new[] { 2, 4 } },
+            new[] { new[] { 3, 1 }, new[] { 4, 2 } },
             new[] { new[] { 1, 3 }, new[] { 2, 4 }, new[] { 3, 1 }, new[] { 4, 2 } }
         ];
 
@@ -75,14 +79,16 @@ public abstract class MergeTwo2DArraysBySummingValuesTestsBase<T> where T : IMer
         // nums2 keys all before nums1 keys
         yield return
         [
-            new[] { new[] { 5, 1 }, new[] { 6, 2 } }, new[] { new[] { 1, 3 }, new[] { 2, 4 } },
+            new[] { new[] { 5, 1 }, new[] { 6, 2 } },
+            new[] { new[] { 1, 3 }, new[] { 2, 4 } },
             new[] { new[] { 1, 3 }, new[] { 2, 4 }, new[] { 5, 1 }, new[] { 6, 2 } }
         ];
 
         // Multiple pairs, mixed overlap
         yield return
         [
-            new[] { new[] { 1, 2 }, new[] { 3, 4 }, new[] { 5, 6 } }, new[] { new[] { 2, 1 }, new[] { 3, 2 }, new[] { 6, 3 } },
+            new[] { new[] { 1, 2 }, new[] { 3, 4 }, new[] { 5, 6 } },
+            new[] { new[] { 2, 1 }, new[] { 3, 2 }, new[] { 6, 3 } },
             new[] { new[] { 1, 2 }, new[] { 2, 1 }, new[] { 3, 6 }, new[] { 5, 6 }, new[] { 6, 3 } }
         ];
 
@@ -98,14 +104,16 @@ public abstract class MergeTwo2DArraysBySummingValuesTestsBase<T> where T : IMer
         // Many keys, partial overlap
         yield return
         [
-            new[] { new[] { 1, 1 }, new[] { 3, 3 }, new[] { 5, 5 } }, new[] { new[] { 2, 2 }, new[] { 3, 3 }, new[] { 4, 4 } },
+            new[] { new[] { 1, 1 }, new[] { 3, 3 }, new[] { 5, 5 } },
+            new[] { new[] { 2, 2 }, new[] { 3, 3 }, new[] { 4, 4 } },
             new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 3, 6 }, new[] { 4, 4 }, new[] { 5, 5 } }
         ];
 
         // nums2 entirely comes after nums1 keys with overlap on first
         yield return
         [
-            new[] { new[] { 1, 100 }, new[] { 2, 200 } }, new[] { new[] { 1, 50 }, new[] { 3, 300 } },
+            new[] { new[] { 1, 100 }, new[] { 2, 200 } },
+            new[] { new[] { 1, 50 }, new[] { 3, 300 } },
             new[] { new[] { 1, 150 }, new[] { 2, 200 }, new[] { 3, 300 } }
         ];
 
@@ -120,21 +128,24 @@ public abstract class MergeTwo2DArraysBySummingValuesTestsBase<T> where T : IMer
         // Three keys, no overlap
         yield return
         [
-            new[] { new[] { 1, 5 }, new[] { 3, 15 }, new[] { 5, 25 } }, new[] { new[] { 2, 10 }, new[] { 4, 20 }, new[] { 6, 30 } },
+            new[] { new[] { 1, 5 }, new[] { 3, 15 }, new[] { 5, 25 } },
+            new[] { new[] { 2, 10 }, new[] { 4, 20 }, new[] { 6, 30 } },
             new[] { new[] { 1, 5 }, new[] { 2, 10 }, new[] { 3, 15 }, new[] { 4, 20 }, new[] { 5, 25 }, new[] { 6, 30 } }
         ];
 
         // First array has one element matching last of second
         yield return
         [
-            new[] { new[] { 5, 9 } }, new[] { new[] { 1, 2 }, new[] { 3, 4 }, new[] { 5, 6 } },
+            new[] { new[] { 5, 9 } },
+            new[] { new[] { 1, 2 }, new[] { 3, 4 }, new[] { 5, 6 } },
             new[] { new[] { 1, 2 }, new[] { 3, 4 }, new[] { 5, 15 } }
         ];
 
         // Both arrays have value 1 for all keys
         yield return
         [
-            new[] { new[] { 1, 1 }, new[] { 2, 1 }, new[] { 3, 1 } }, new[] { new[] { 1, 1 }, new[] { 2, 1 }, new[] { 3, 1 } },
+            new[] { new[] { 1, 1 }, new[] { 2, 1 }, new[] { 3, 1 } },
+            new[] { new[] { 1, 1 }, new[] { 2, 1 }, new[] { 3, 1 } },
             new[] { new[] { 1, 2 }, new[] { 2, 2 }, new[] { 3, 2 } }
         ];
     }

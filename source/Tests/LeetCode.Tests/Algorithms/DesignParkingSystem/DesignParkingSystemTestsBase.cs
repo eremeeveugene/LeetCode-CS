@@ -85,12 +85,21 @@ public abstract class DesignParkingSystemTestsBase
                 2,
                 2,
                 [
-                    new AddCarOperation(1), new AddCarOperation(1), new AddCarOperation(2), new AddCarOperation(2), new AddCarOperation(3),
-                    new AddCarOperation(3), new AddCarOperation(1)
+                    new AddCarOperation(1),
+                    new AddCarOperation(1),
+                    new AddCarOperation(2),
+                    new AddCarOperation(2),
+                    new AddCarOperation(3),
+                    new AddCarOperation(3),
+                    new AddCarOperation(1)
                 ],
                 [
-                    new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true),
-                    new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
                     new AddCarOperation.Result(false)
                 ])
         ];
@@ -113,7 +122,9 @@ public abstract class DesignParkingSystemTestsBase
                 1,
                 [new AddCarOperation(3), new AddCarOperation(2), new AddCarOperation(1), new AddCarOperation(2)],
                 [
-                    new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
                     new AddCarOperation.Result(false)
                 ])
         ];
@@ -126,7 +137,9 @@ public abstract class DesignParkingSystemTestsBase
                 0,
                 [new AddCarOperation(1), new AddCarOperation(1), new AddCarOperation(1), new AddCarOperation(1)],
                 [
-                    new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
                     new AddCarOperation.Result(false)
                 ])
         ];
@@ -139,7 +152,9 @@ public abstract class DesignParkingSystemTestsBase
                 0,
                 [new AddCarOperation(2), new AddCarOperation(2), new AddCarOperation(2), new AddCarOperation(2)],
                 [
-                    new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
                     new AddCarOperation.Result(false)
                 ])
         ];
@@ -152,7 +167,9 @@ public abstract class DesignParkingSystemTestsBase
                 3,
                 [new AddCarOperation(3), new AddCarOperation(3), new AddCarOperation(3), new AddCarOperation(3)],
                 [
-                    new AddCarOperation.Result(true), new AddCarOperation.Result(true), new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
                     new AddCarOperation.Result(false)
                 ])
         ];
@@ -165,7 +182,9 @@ public abstract class DesignParkingSystemTestsBase
                 1,
                 [new AddCarOperation(1), new AddCarOperation(4), new AddCarOperation(2), new AddCarOperation(3)],
                 [
-                    new AddCarOperation.Result(true), new AddCarOperation.Result(false), new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(true),
+                    new AddCarOperation.Result(false),
+                    new AddCarOperation.Result(true),
                     new AddCarOperation.Result(true)
                 ])
         ];

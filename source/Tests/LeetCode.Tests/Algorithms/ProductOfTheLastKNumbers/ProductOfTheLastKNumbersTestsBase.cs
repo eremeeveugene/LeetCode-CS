@@ -49,14 +49,28 @@ public abstract class ProductOfTheLastKNumbersTestsBase<T> where T : IProductOfT
         [
             new Scenario<IProductOfTheLastKNumbers>(
                 [
-                    new AddOperation(3), new AddOperation(0), new AddOperation(2), new AddOperation(5), new AddOperation(4),
-                    new GetProductOperation(2), new GetProductOperation(3), new GetProductOperation(4), new AddOperation(8),
+                    new AddOperation(3),
+                    new AddOperation(0),
+                    new AddOperation(2),
+                    new AddOperation(5),
+                    new AddOperation(4),
+                    new GetProductOperation(2),
+                    new GetProductOperation(3),
+                    new GetProductOperation(4),
+                    new AddOperation(8),
                     new GetProductOperation(2)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, new GetProductOperation.Result(20), new GetProductOperation.Result(40),
-                    new GetProductOperation.Result(0), VoidOperationResult.Instance, new GetProductOperation.Result(32)
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(20),
+                    new GetProductOperation.Result(40),
+                    new GetProductOperation.Result(0),
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(32)
                 ])
         ];
 
@@ -64,12 +78,23 @@ public abstract class ProductOfTheLastKNumbersTestsBase<T> where T : IProductOfT
         [
             new Scenario<IProductOfTheLastKNumbers>(
                 [
-                    new AddOperation(1), new AddOperation(2), new AddOperation(0), new AddOperation(3), new GetProductOperation(1),
-                    new GetProductOperation(2), new GetProductOperation(3), new GetProductOperation(4)
+                    new AddOperation(1),
+                    new AddOperation(2),
+                    new AddOperation(0),
+                    new AddOperation(3),
+                    new GetProductOperation(1),
+                    new GetProductOperation(2),
+                    new GetProductOperation(3),
+                    new GetProductOperation(4)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    new GetProductOperation.Result(3), new GetProductOperation.Result(0), new GetProductOperation.Result(0),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(3),
+                    new GetProductOperation.Result(0),
+                    new GetProductOperation.Result(0),
                     new GetProductOperation.Result(0)
                 ])
         ];
@@ -79,7 +104,9 @@ public abstract class ProductOfTheLastKNumbersTestsBase<T> where T : IProductOfT
             new Scenario<IProductOfTheLastKNumbers>(
                 [new AddOperation(5), new GetProductOperation(1), new AddOperation(7), new GetProductOperation(1)],
                 [
-                    VoidOperationResult.Instance, new GetProductOperation.Result(5), VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(5),
+                    VoidOperationResult.Instance,
                     new GetProductOperation.Result(7)
                 ])
         ];
@@ -88,12 +115,22 @@ public abstract class ProductOfTheLastKNumbersTestsBase<T> where T : IProductOfT
         [
             new Scenario<IProductOfTheLastKNumbers>(
                 [
-                    new AddOperation(0), new AddOperation(0), new AddOperation(4), new AddOperation(5), new GetProductOperation(2),
-                    new GetProductOperation(3), new GetProductOperation(4)
+                    new AddOperation(0),
+                    new AddOperation(0),
+                    new AddOperation(4),
+                    new AddOperation(5),
+                    new GetProductOperation(2),
+                    new GetProductOperation(3),
+                    new GetProductOperation(4)
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance,
-                    new GetProductOperation.Result(20), new GetProductOperation.Result(0), new GetProductOperation.Result(0)
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(20),
+                    new GetProductOperation.Result(0),
+                    new GetProductOperation.Result(0)
                 ])
         ];
     }

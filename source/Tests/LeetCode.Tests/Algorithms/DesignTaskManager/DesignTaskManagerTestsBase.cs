@@ -51,12 +51,20 @@ public abstract class DesignTaskManagerTestsBase
             new TaskManagerScenario(
                 [[1, 101, 10], [2, 102, 20], [3, 103, 15]],
                 [
-                    new AddOperation(4, 104, 5), new EditOperation(102, 8), new ExecTopOperation(), new RmvOperation(101),
-                    new AddOperation(5, 105, 15), new ExecTopOperation()
+                    new AddOperation(4, 104, 5),
+                    new EditOperation(102, 8),
+                    new ExecTopOperation(),
+                    new RmvOperation(101),
+                    new AddOperation(5, 105, 15),
+                    new ExecTopOperation()
                 ],
                 [
-                    VoidOperationResult.Instance, VoidOperationResult.Instance, new ExecTopOperation.Result(3), VoidOperationResult.Instance,
-                    VoidOperationResult.Instance, new ExecTopOperation.Result(5)
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new ExecTopOperation.Result(3),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new ExecTopOperation.Result(5)
                 ])
         ];
 

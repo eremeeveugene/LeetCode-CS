@@ -37,7 +37,8 @@ public abstract class DivideArrayIntoArraysWithMaxDifferenceTestsBase<T> where T
 
         yield return
         [
-            new[] { 4, 2, 9, 8, 2, 12, 7, 12, 10, 5, 8, 5, 5, 7, 9, 2, 5, 11 }, 14,
+            new[] { 4, 2, 9, 8, 2, 12, 7, 12, 10, 5, 8, 5, 5, 7, 9, 2, 5, 11 },
+            14,
             new[] { new[] { 2, 2, 2 }, new[] { 4, 5, 5 }, new[] { 5, 5, 7 }, new[] { 7, 8, 8 }, new[] { 9, 9, 10 }, new[] { 11, 12, 12 } }
         ];
     }

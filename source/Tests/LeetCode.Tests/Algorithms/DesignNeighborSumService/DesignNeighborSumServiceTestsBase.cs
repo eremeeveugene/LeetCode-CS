@@ -52,7 +52,9 @@ public abstract class DesignNeighborSumServiceTestsBase
                 [[0, 1, 2], [3, 4, 5], [6, 7, 8]],
                 [new AdjacentSumOperation(1), new AdjacentSumOperation(4), new DiagonalSumOperation(4), new DiagonalSumOperation(8)],
                 [
-                    new AdjacentSumOperation.Result(6), new AdjacentSumOperation.Result(16), new DiagonalSumOperation.Result(16),
+                    new AdjacentSumOperation.Result(6),
+                    new AdjacentSumOperation.Result(16),
+                    new DiagonalSumOperation.Result(16),
                     new DiagonalSumOperation.Result(4)
                 ])
         ];
@@ -79,7 +81,9 @@ public abstract class DesignNeighborSumServiceTestsBase
                 [[0, 1], [2, 3]],
                 [new AdjacentSumOperation(0), new DiagonalSumOperation(0), new AdjacentSumOperation(3), new DiagonalSumOperation(3)],
                 [
-                    new AdjacentSumOperation.Result(3), new DiagonalSumOperation.Result(3), new AdjacentSumOperation.Result(3),
+                    new AdjacentSumOperation.Result(3),
+                    new DiagonalSumOperation.Result(3),
+                    new AdjacentSumOperation.Result(3),
                     new DiagonalSumOperation.Result(0)
                 ])
         ];

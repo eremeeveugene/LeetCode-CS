@@ -69,7 +69,9 @@ public abstract class FindElementsInContaminatedBinaryTreeTestsBase
                 TreeNode.ToTreeNodeOrThrow([-1, null, -1, -1, null, -1]),
                 [new FindOperation(2), new FindOperation(3), new FindOperation(4), new FindOperation(5)],
                 [
-                    new FindOperation.Result(true), new FindOperation.Result(false), new FindOperation.Result(false),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(false),
                     new FindOperation.Result(true)
                 ])
         ];

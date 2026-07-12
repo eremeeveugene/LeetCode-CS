@@ -51,13 +51,26 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 3,
                 [
-                    new InsertLastOperation(1), new InsertLastOperation(2), new InsertFrontOperation(3), new InsertFrontOperation(4),
-                    new GetRearOperation(), new IsFullOperation(), new DeleteLastOperation(), new InsertFrontOperation(4), new GetFrontOperation()
+                    new InsertLastOperation(1),
+                    new InsertLastOperation(2),
+                    new InsertFrontOperation(3),
+                    new InsertFrontOperation(4),
+                    new GetRearOperation(),
+                    new IsFullOperation(),
+                    new DeleteLastOperation(),
+                    new InsertFrontOperation(4),
+                    new GetFrontOperation()
                 ],
                 [
-                    new InsertLastOperation.Result(true), new InsertLastOperation.Result(true), new InsertFrontOperation.Result(true),
-                    new InsertFrontOperation.Result(false), new GetRearOperation.Result(2), new IsFullOperation.Result(true),
-                    new DeleteLastOperation.Result(true), new InsertFrontOperation.Result(true), new GetFrontOperation.Result(4)
+                    new InsertLastOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new InsertFrontOperation.Result(true),
+                    new InsertFrontOperation.Result(false),
+                    new GetRearOperation.Result(2),
+                    new IsFullOperation.Result(true),
+                    new DeleteLastOperation.Result(true),
+                    new InsertFrontOperation.Result(true),
+                    new GetFrontOperation.Result(4)
                 ])
         ];
 
@@ -66,12 +79,18 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 1,
                 [
-                    new InsertFrontOperation(1), new InsertFrontOperation(2), new GetFrontOperation(), new DeleteFrontOperation(),
+                    new InsertFrontOperation(1),
+                    new InsertFrontOperation(2),
+                    new GetFrontOperation(),
+                    new DeleteFrontOperation(),
                     new IsEmptyOperation()
                 ],
                 [
-                    new InsertFrontOperation.Result(true), new InsertFrontOperation.Result(false), new GetFrontOperation.Result(1),
-                    new DeleteFrontOperation.Result(true), new IsEmptyOperation.Result(true)
+                    new InsertFrontOperation.Result(true),
+                    new InsertFrontOperation.Result(false),
+                    new GetFrontOperation.Result(1),
+                    new DeleteFrontOperation.Result(true),
+                    new IsEmptyOperation.Result(true)
                 ])
         ];
 
@@ -80,13 +99,24 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 2,
                 [
-                    new IsEmptyOperation(), new InsertLastOperation(5), new InsertLastOperation(6), new IsFullOperation(), new GetRearOperation(),
-                    new GetFrontOperation(), new DeleteLastOperation(), new GetRearOperation()
+                    new IsEmptyOperation(),
+                    new InsertLastOperation(5),
+                    new InsertLastOperation(6),
+                    new IsFullOperation(),
+                    new GetRearOperation(),
+                    new GetFrontOperation(),
+                    new DeleteLastOperation(),
+                    new GetRearOperation()
                 ],
                 [
-                    new IsEmptyOperation.Result(true), new InsertLastOperation.Result(true), new InsertLastOperation.Result(true),
-                    new IsFullOperation.Result(true), new GetRearOperation.Result(6), new GetFrontOperation.Result(5),
-                    new DeleteLastOperation.Result(true), new GetRearOperation.Result(5)
+                    new IsEmptyOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new IsFullOperation.Result(true),
+                    new GetRearOperation.Result(6),
+                    new GetFrontOperation.Result(5),
+                    new DeleteLastOperation.Result(true),
+                    new GetRearOperation.Result(5)
                 ])
         ];
 
@@ -96,7 +126,9 @@ public abstract class DesignCircularDequeTestsBase
                 3,
                 [new GetFrontOperation(), new GetRearOperation(), new DeleteFrontOperation(), new DeleteLastOperation()],
                 [
-                    new GetFrontOperation.Result(-1), new GetRearOperation.Result(-1), new DeleteFrontOperation.Result(false),
+                    new GetFrontOperation.Result(-1),
+                    new GetRearOperation.Result(-1),
+                    new DeleteFrontOperation.Result(false),
                     new DeleteLastOperation.Result(false)
                 ])
         ];
@@ -107,8 +139,11 @@ public abstract class DesignCircularDequeTestsBase
                 1,
                 [new InsertLastOperation(1), new GetFrontOperation(), new GetRearOperation(), new DeleteFrontOperation(), new IsEmptyOperation()],
                 [
-                    new InsertLastOperation.Result(true), new GetFrontOperation.Result(1), new GetRearOperation.Result(1),
-                    new DeleteFrontOperation.Result(true), new IsEmptyOperation.Result(true)
+                    new InsertLastOperation.Result(true),
+                    new GetFrontOperation.Result(1),
+                    new GetRearOperation.Result(1),
+                    new DeleteFrontOperation.Result(true),
+                    new IsEmptyOperation.Result(true)
                 ])
         ];
 
@@ -118,7 +153,9 @@ public abstract class DesignCircularDequeTestsBase
                 1,
                 [new InsertFrontOperation(5), new IsFullOperation(), new InsertLastOperation(6), new GetFrontOperation()],
                 [
-                    new InsertFrontOperation.Result(true), new IsFullOperation.Result(true), new InsertLastOperation.Result(false),
+                    new InsertFrontOperation.Result(true),
+                    new IsFullOperation.Result(true),
+                    new InsertLastOperation.Result(false),
                     new GetFrontOperation.Result(5)
                 ])
         ];
@@ -128,12 +165,18 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 3,
                 [
-                    new InsertFrontOperation(1), new InsertFrontOperation(2), new InsertFrontOperation(3), new IsFullOperation(),
+                    new InsertFrontOperation(1),
+                    new InsertFrontOperation(2),
+                    new InsertFrontOperation(3),
+                    new IsFullOperation(),
                     new InsertFrontOperation(4)
                 ],
                 [
-                    new InsertFrontOperation.Result(true), new InsertFrontOperation.Result(true), new InsertFrontOperation.Result(true),
-                    new IsFullOperation.Result(true), new InsertFrontOperation.Result(false)
+                    new InsertFrontOperation.Result(true),
+                    new InsertFrontOperation.Result(true),
+                    new InsertFrontOperation.Result(true),
+                    new IsFullOperation.Result(true),
+                    new InsertFrontOperation.Result(false)
                 ])
         ];
 
@@ -142,12 +185,21 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 3,
                 [
-                    new InsertLastOperation(1), new InsertLastOperation(2), new InsertLastOperation(3), new DeleteLastOperation(),
-                    new DeleteLastOperation(), new DeleteLastOperation(), new IsEmptyOperation()
+                    new InsertLastOperation(1),
+                    new InsertLastOperation(2),
+                    new InsertLastOperation(3),
+                    new DeleteLastOperation(),
+                    new DeleteLastOperation(),
+                    new DeleteLastOperation(),
+                    new IsEmptyOperation()
                 ],
                 [
-                    new InsertLastOperation.Result(true), new InsertLastOperation.Result(true), new InsertLastOperation.Result(true),
-                    new DeleteLastOperation.Result(true), new DeleteLastOperation.Result(true), new DeleteLastOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new DeleteLastOperation.Result(true),
+                    new DeleteLastOperation.Result(true),
+                    new DeleteLastOperation.Result(true),
                     new IsEmptyOperation.Result(true)
                 ])
         ];
@@ -157,12 +209,20 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 2,
                 [
-                    new InsertFrontOperation(1), new InsertLastOperation(2), new GetFrontOperation(), new GetRearOperation(),
-                    new DeleteFrontOperation(), new GetFrontOperation()
+                    new InsertFrontOperation(1),
+                    new InsertLastOperation(2),
+                    new GetFrontOperation(),
+                    new GetRearOperation(),
+                    new DeleteFrontOperation(),
+                    new GetFrontOperation()
                 ],
                 [
-                    new InsertFrontOperation.Result(true), new InsertLastOperation.Result(true), new GetFrontOperation.Result(1),
-                    new GetRearOperation.Result(2), new DeleteFrontOperation.Result(true), new GetFrontOperation.Result(2)
+                    new InsertFrontOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new GetFrontOperation.Result(1),
+                    new GetRearOperation.Result(2),
+                    new DeleteFrontOperation.Result(true),
+                    new GetFrontOperation.Result(2)
                 ])
         ];
 
@@ -171,12 +231,21 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 4,
                 [
-                    new InsertFrontOperation(10), new InsertFrontOperation(20), new InsertLastOperation(30), new InsertLastOperation(40),
-                    new GetFrontOperation(), new GetRearOperation(), new IsFullOperation()
+                    new InsertFrontOperation(10),
+                    new InsertFrontOperation(20),
+                    new InsertLastOperation(30),
+                    new InsertLastOperation(40),
+                    new GetFrontOperation(),
+                    new GetRearOperation(),
+                    new IsFullOperation()
                 ],
                 [
-                    new InsertFrontOperation.Result(true), new InsertFrontOperation.Result(true), new InsertLastOperation.Result(true),
-                    new InsertLastOperation.Result(true), new GetFrontOperation.Result(20), new GetRearOperation.Result(40),
+                    new InsertFrontOperation.Result(true),
+                    new InsertFrontOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new GetFrontOperation.Result(20),
+                    new GetRearOperation.Result(40),
                     new IsFullOperation.Result(true)
                 ])
         ];
@@ -186,12 +255,21 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 3,
                 [
-                    new InsertLastOperation(1), new DeleteFrontOperation(), new InsertLastOperation(2), new InsertLastOperation(3),
-                    new InsertLastOperation(4), new GetFrontOperation(), new GetRearOperation()
+                    new InsertLastOperation(1),
+                    new DeleteFrontOperation(),
+                    new InsertLastOperation(2),
+                    new InsertLastOperation(3),
+                    new InsertLastOperation(4),
+                    new GetFrontOperation(),
+                    new GetRearOperation()
                 ],
                 [
-                    new InsertLastOperation.Result(true), new DeleteFrontOperation.Result(true), new InsertLastOperation.Result(true),
-                    new InsertLastOperation.Result(true), new InsertLastOperation.Result(true), new GetFrontOperation.Result(2),
+                    new InsertLastOperation.Result(true),
+                    new DeleteFrontOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new GetFrontOperation.Result(2),
                     new GetRearOperation.Result(4)
                 ])
         ];
@@ -202,7 +280,9 @@ public abstract class DesignCircularDequeTestsBase
                 5,
                 [new IsEmptyOperation(), new IsFullOperation(), new InsertFrontOperation(7), new IsEmptyOperation()],
                 [
-                    new IsEmptyOperation.Result(true), new IsFullOperation.Result(false), new InsertFrontOperation.Result(true),
+                    new IsEmptyOperation.Result(true),
+                    new IsFullOperation.Result(false),
+                    new InsertFrontOperation.Result(true),
                     new IsEmptyOperation.Result(false)
                 ])
         ];
@@ -212,12 +292,20 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 2,
                 [
-                    new InsertFrontOperation(1), new InsertLastOperation(2), new DeleteLastOperation(), new GetRearOperation(),
-                    new DeleteLastOperation(), new GetFrontOperation()
+                    new InsertFrontOperation(1),
+                    new InsertLastOperation(2),
+                    new DeleteLastOperation(),
+                    new GetRearOperation(),
+                    new DeleteLastOperation(),
+                    new GetFrontOperation()
                 ],
                 [
-                    new InsertFrontOperation.Result(true), new InsertLastOperation.Result(true), new DeleteLastOperation.Result(true),
-                    new GetRearOperation.Result(1), new DeleteLastOperation.Result(true), new GetFrontOperation.Result(-1)
+                    new InsertFrontOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new DeleteLastOperation.Result(true),
+                    new GetRearOperation.Result(1),
+                    new DeleteLastOperation.Result(true),
+                    new GetFrontOperation.Result(-1)
                 ])
         ];
 
@@ -226,12 +314,20 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 3,
                 [
-                    new InsertFrontOperation(1), new InsertFrontOperation(2), new InsertFrontOperation(3), new GetRearOperation(),
-                    new DeleteLastOperation(), new GetRearOperation()
+                    new InsertFrontOperation(1),
+                    new InsertFrontOperation(2),
+                    new InsertFrontOperation(3),
+                    new GetRearOperation(),
+                    new DeleteLastOperation(),
+                    new GetRearOperation()
                 ],
                 [
-                    new InsertFrontOperation.Result(true), new InsertFrontOperation.Result(true), new InsertFrontOperation.Result(true),
-                    new GetRearOperation.Result(1), new DeleteLastOperation.Result(true), new GetRearOperation.Result(2)
+                    new InsertFrontOperation.Result(true),
+                    new InsertFrontOperation.Result(true),
+                    new InsertFrontOperation.Result(true),
+                    new GetRearOperation.Result(1),
+                    new DeleteLastOperation.Result(true),
+                    new GetRearOperation.Result(2)
                 ])
         ];
 
@@ -240,12 +336,20 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 3,
                 [
-                    new InsertLastOperation(5), new InsertLastOperation(10), new InsertLastOperation(15), new GetFrontOperation(),
-                    new DeleteFrontOperation(), new GetFrontOperation()
+                    new InsertLastOperation(5),
+                    new InsertLastOperation(10),
+                    new InsertLastOperation(15),
+                    new GetFrontOperation(),
+                    new DeleteFrontOperation(),
+                    new GetFrontOperation()
                 ],
                 [
-                    new InsertLastOperation.Result(true), new InsertLastOperation.Result(true), new InsertLastOperation.Result(true),
-                    new GetFrontOperation.Result(5), new DeleteFrontOperation.Result(true), new GetFrontOperation.Result(10)
+                    new InsertLastOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new GetFrontOperation.Result(5),
+                    new DeleteFrontOperation.Result(true),
+                    new GetFrontOperation.Result(10)
                 ])
         ];
 
@@ -254,12 +358,21 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 2,
                 [
-                    new InsertFrontOperation(3), new DeleteFrontOperation(), new InsertLastOperation(4), new InsertLastOperation(5),
-                    new IsFullOperation(), new GetFrontOperation(), new GetRearOperation()
+                    new InsertFrontOperation(3),
+                    new DeleteFrontOperation(),
+                    new InsertLastOperation(4),
+                    new InsertLastOperation(5),
+                    new IsFullOperation(),
+                    new GetFrontOperation(),
+                    new GetRearOperation()
                 ],
                 [
-                    new InsertFrontOperation.Result(true), new DeleteFrontOperation.Result(true), new InsertLastOperation.Result(true),
-                    new InsertLastOperation.Result(true), new IsFullOperation.Result(true), new GetFrontOperation.Result(4),
+                    new InsertFrontOperation.Result(true),
+                    new DeleteFrontOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new IsFullOperation.Result(true),
+                    new GetFrontOperation.Result(4),
                     new GetRearOperation.Result(5)
                 ])
         ];
@@ -269,12 +382,20 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 1,
                 [
-                    new IsEmptyOperation(), new IsFullOperation(), new DeleteFrontOperation(), new DeleteLastOperation(), new GetFrontOperation(),
+                    new IsEmptyOperation(),
+                    new IsFullOperation(),
+                    new DeleteFrontOperation(),
+                    new DeleteLastOperation(),
+                    new GetFrontOperation(),
                     new GetRearOperation()
                 ],
                 [
-                    new IsEmptyOperation.Result(true), new IsFullOperation.Result(false), new DeleteFrontOperation.Result(false),
-                    new DeleteLastOperation.Result(false), new GetFrontOperation.Result(-1), new GetRearOperation.Result(-1)
+                    new IsEmptyOperation.Result(true),
+                    new IsFullOperation.Result(false),
+                    new DeleteFrontOperation.Result(false),
+                    new DeleteLastOperation.Result(false),
+                    new GetFrontOperation.Result(-1),
+                    new GetRearOperation.Result(-1)
                 ])
         ];
 
@@ -283,13 +404,24 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 4,
                 [
-                    new InsertFrontOperation(1), new InsertLastOperation(2), new InsertFrontOperation(3), new InsertLastOperation(4),
-                    new DeleteFrontOperation(), new DeleteLastOperation(), new GetFrontOperation(), new GetRearOperation()
+                    new InsertFrontOperation(1),
+                    new InsertLastOperation(2),
+                    new InsertFrontOperation(3),
+                    new InsertLastOperation(4),
+                    new DeleteFrontOperation(),
+                    new DeleteLastOperation(),
+                    new GetFrontOperation(),
+                    new GetRearOperation()
                 ],
                 [
-                    new InsertFrontOperation.Result(true), new InsertLastOperation.Result(true), new InsertFrontOperation.Result(true),
-                    new InsertLastOperation.Result(true), new DeleteFrontOperation.Result(true), new DeleteLastOperation.Result(true),
-                    new GetFrontOperation.Result(1), new GetRearOperation.Result(2)
+                    new InsertFrontOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new InsertFrontOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new DeleteFrontOperation.Result(true),
+                    new DeleteLastOperation.Result(true),
+                    new GetFrontOperation.Result(1),
+                    new GetRearOperation.Result(2)
                 ])
         ];
 
@@ -298,12 +430,18 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 3,
                 [
-                    new InsertLastOperation(1), new InsertFrontOperation(2), new InsertLastOperation(3), new GetFrontOperation(),
+                    new InsertLastOperation(1),
+                    new InsertFrontOperation(2),
+                    new InsertLastOperation(3),
+                    new GetFrontOperation(),
                     new GetRearOperation()
                 ],
                 [
-                    new InsertLastOperation.Result(true), new InsertFrontOperation.Result(true), new InsertLastOperation.Result(true),
-                    new GetFrontOperation.Result(2), new GetRearOperation.Result(3)
+                    new InsertLastOperation.Result(true),
+                    new InsertFrontOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new GetFrontOperation.Result(2),
+                    new GetRearOperation.Result(3)
                 ])
         ];
 
@@ -312,12 +450,20 @@ public abstract class DesignCircularDequeTestsBase
             new CircularDequeScenario(
                 2,
                 [
-                    new InsertLastOperation(1), new InsertLastOperation(2), new DeleteFrontOperation(), new InsertFrontOperation(3),
-                    new GetFrontOperation(), new GetRearOperation()
+                    new InsertLastOperation(1),
+                    new InsertLastOperation(2),
+                    new DeleteFrontOperation(),
+                    new InsertFrontOperation(3),
+                    new GetFrontOperation(),
+                    new GetRearOperation()
                 ],
                 [
-                    new InsertLastOperation.Result(true), new InsertLastOperation.Result(true), new DeleteFrontOperation.Result(true),
-                    new InsertFrontOperation.Result(true), new GetFrontOperation.Result(3), new GetRearOperation.Result(2)
+                    new InsertLastOperation.Result(true),
+                    new InsertLastOperation.Result(true),
+                    new DeleteFrontOperation.Result(true),
+                    new InsertFrontOperation.Result(true),
+                    new GetFrontOperation.Result(3),
+                    new GetRearOperation.Result(2)
                 ])
         ];
     }

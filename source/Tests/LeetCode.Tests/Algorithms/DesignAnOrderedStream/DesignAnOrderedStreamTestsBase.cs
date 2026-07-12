@@ -51,12 +51,17 @@ public abstract class DesignAnOrderedStreamTestsBase
             new OrderedStreamScenario(
                 5,
                 [
-                    new InsertOperation(3, "ccccc"), new InsertOperation(1, "aaaaa"), new InsertOperation(2, "bbbbb"),
-                    new InsertOperation(5, "eeeee"), new InsertOperation(4, "ddddd")
+                    new InsertOperation(3, "ccccc"),
+                    new InsertOperation(1, "aaaaa"),
+                    new InsertOperation(2, "bbbbb"),
+                    new InsertOperation(5, "eeeee"),
+                    new InsertOperation(4, "ddddd")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()), new InsertOperation.Result(new List<string?> { "aaaaa" }),
-                    new InsertOperation.Result(new List<string?> { "bbbbb", "ccccc" }), new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?> { "aaaaa" }),
+                    new InsertOperation.Result(new List<string?> { "bbbbb", "ccccc" }),
+                    new InsertOperation.Result(new List<string?>()),
                     new InsertOperation.Result(new List<string?> { "ddddd", "eeeee" })
                 ])
         ];
@@ -67,7 +72,8 @@ public abstract class DesignAnOrderedStreamTestsBase
                 3,
                 [new InsertOperation(1, "aaaaa"), new InsertOperation(2, "bbbbb"), new InsertOperation(3, "ccccc")],
                 [
-                    new InsertOperation.Result(new List<string?> { "aaaaa" }), new InsertOperation.Result(new List<string?> { "bbbbb" }),
+                    new InsertOperation.Result(new List<string?> { "aaaaa" }),
+                    new InsertOperation.Result(new List<string?> { "bbbbb" }),
                     new InsertOperation.Result(new List<string?> { "ccccc" })
                 ])
         ];
@@ -78,7 +84,8 @@ public abstract class DesignAnOrderedStreamTestsBase
                 3,
                 [new InsertOperation(3, "ccccc"), new InsertOperation(2, "bbbbb"), new InsertOperation(1, "aaaaa")],
                 [
-                    new InsertOperation.Result(new List<string?>()), new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?>()),
                     new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb", "ccccc" })
                 ])
         ];
@@ -98,12 +105,16 @@ public abstract class DesignAnOrderedStreamTestsBase
             new OrderedStreamScenario(
                 4,
                 [
-                    new InsertOperation(2, "bbbbb"), new InsertOperation(1, "aaaaa"), new InsertOperation(4, "ddddd"),
+                    new InsertOperation(2, "bbbbb"),
+                    new InsertOperation(1, "aaaaa"),
+                    new InsertOperation(4, "ddddd"),
                     new InsertOperation(3, "ccccc")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()), new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb" }),
-                    new InsertOperation.Result(new List<string?>()), new InsertOperation.Result(new List<string?> { "ccccc", "ddddd" })
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb" }),
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?> { "ccccc", "ddddd" })
                 ])
         ];
     }

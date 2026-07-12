@@ -40,7 +40,10 @@ public abstract class SpiralMatrix3TestsBase<T> where T : ISpiralMatrix3, new()
 
         yield return
         [
-            5, 6, 1, 4,
+            5,
+            6,
+            1,
+            4,
             new[]
             {
                 new[] { 1, 4 },

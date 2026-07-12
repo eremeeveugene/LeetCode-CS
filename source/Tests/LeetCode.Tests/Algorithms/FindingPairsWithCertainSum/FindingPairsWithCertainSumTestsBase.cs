@@ -57,8 +57,11 @@ public abstract class FindingPairsWithCertainSumTestsBase
     {
         yield return
         [
-            new[] { 1, 1, 2, 2, 2, 3 }, new[] { 1, 4, 5, 2, 5, 4 }, new[] { "count", "add", "count", "count", "add", "add", "count" },
-            new[] { new[] { 7 }, new[] { 3, 2 }, new[] { 8 }, new[] { 4 }, new[] { 0, 1 }, new[] { 1, 1 }, new[] { 7 } }, new[] { 8, 2, 1, 11 }
+            new[] { 1, 1, 2, 2, 2, 3 },
+            new[] { 1, 4, 5, 2, 5, 4 },
+            new[] { "count", "add", "count", "count", "add", "add", "count" },
+            new[] { new[] { 7 }, new[] { 3, 2 }, new[] { 8 }, new[] { 4 }, new[] { 0, 1 }, new[] { 1, 1 }, new[] { 7 } },
+            new[] { 8, 2, 1, 11 }
         ];
     }
 
