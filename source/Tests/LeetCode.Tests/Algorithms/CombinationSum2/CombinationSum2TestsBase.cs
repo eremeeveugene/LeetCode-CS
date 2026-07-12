@@ -18,7 +18,10 @@ public abstract class CombinationSum2TestsBase<T> where T : ICombinationSum2, ne
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void CombinationSum2_WithCandidatesAndTarget_ReturnsAllUniqueCombinationsSummingToTarget(int[] candidates, int target, IList<IList<int>> expectedResult)
+    public void CombinationSum2_WithCandidatesAndTarget_ReturnsAllUniqueCombinationsSummingToTarget(
+        int[] candidates,
+        int target,
+        IList<IList<int>> expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -32,7 +35,11 @@ public abstract class CombinationSum2TestsBase<T> where T : ICombinationSum2, ne
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return [new[] { 10, 1, 2, 7, 6, 1, 5 }, 8, new List<IList<int>> { new List<int> { 1, 1, 6 }, new List<int> { 1, 2, 5 }, new List<int> { 1, 7 }, new List<int> { 2, 6 } }];
+        yield return
+        [
+            new[] { 10, 1, 2, 7, 6, 1, 5 }, 8,
+            new List<IList<int>> { new List<int> { 1, 1, 6 }, new List<int> { 1, 2, 5 }, new List<int> { 1, 7 }, new List<int> { 2, 6 } }
+        ];
 
         yield return [new[] { 2, 5, 2, 1, 2 }, 5, new List<IList<int>> { new List<int> { 1, 2, 2 }, new List<int> { 5 } }];
     }

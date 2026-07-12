@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FindTargetIndicesAfterSortingArray;
 namespace LeetCode.Tests.Algorithms.FindTargetIndicesAfterSortingArray;
 
 [TestClass]
-public sealed class FindTargetIndicesAfterSortingArrayBinarySearchTests : FindTargetIndicesAfterSortingArrayTestsBase<FindTargetIndicesAfterSortingArrayBinarySearch>;
+public sealed class FindTargetIndicesAfterSortingArrayBinarySearchTests
+    : FindTargetIndicesAfterSortingArrayTestsBase<FindTargetIndicesAfterSortingArrayBinarySearch>;

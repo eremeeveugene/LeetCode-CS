@@ -45,7 +45,11 @@ public abstract class ThreeSumTestsBase<T> where T : IThreeSum, new()
 
         yield return [new[] { -2, 0, 0, 2, 2 }, new[] { new[] { -2, 0, 2 } }];
 
-        yield return [new[] { -4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6 }, new[] { new[] { -4, -2, 6 }, new[] { -4, 0, 4 }, new[] { -4, 1, 3 }, new[] { -4, 2, 2 }, new[] { -2, -2, 4 }, new[] { -2, 0, 2 } }];
+        yield return
+        [
+            new[] { -4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6 },
+            new[] { new[] { -4, -2, 6 }, new[] { -4, 0, 4 }, new[] { -4, 1, 3 }, new[] { -4, 2, 2 }, new[] { -2, -2, 4 }, new[] { -2, 0, 2 } }
+        ];
 
         yield return [new[] { 1, 2, 3 }, Array.Empty<int[]>()];
 

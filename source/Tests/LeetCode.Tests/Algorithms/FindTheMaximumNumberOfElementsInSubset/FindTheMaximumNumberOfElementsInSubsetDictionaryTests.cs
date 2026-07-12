@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FindTheMaximumNumberOfElementsInSubset;
 namespace LeetCode.Tests.Algorithms.FindTheMaximumNumberOfElementsInSubset;
 
 [TestClass]
-public sealed class FindTheMaximumNumberOfElementsInSubsetDictionaryTests : FindTheMaximumNumberOfElementsInSubsetTestsBase<FindTheMaximumNumberOfElementsInSubsetDictionary>;
+public sealed class FindTheMaximumNumberOfElementsInSubsetDictionaryTests
+    : FindTheMaximumNumberOfElementsInSubsetTestsBase<FindTheMaximumNumberOfElementsInSubsetDictionary>;

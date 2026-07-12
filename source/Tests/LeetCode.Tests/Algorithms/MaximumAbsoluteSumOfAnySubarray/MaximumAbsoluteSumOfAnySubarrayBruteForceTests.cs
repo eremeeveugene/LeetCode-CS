@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MaximumAbsoluteSumOfAnySubarray;
 namespace LeetCode.Tests.Algorithms.MaximumAbsoluteSumOfAnySubarray;
 
 [TestClass]
-public sealed class MaximumAbsoluteSumOfAnySubarrayBruteForceTests : MaximumAbsoluteSumOfAnySubarrayTestsBase<MaximumAbsoluteSumOfAnySubarrayBruteForce>;
+public sealed class MaximumAbsoluteSumOfAnySubarrayBruteForceTests
+    : MaximumAbsoluteSumOfAnySubarrayTestsBase<MaximumAbsoluteSumOfAnySubarrayBruteForce>;

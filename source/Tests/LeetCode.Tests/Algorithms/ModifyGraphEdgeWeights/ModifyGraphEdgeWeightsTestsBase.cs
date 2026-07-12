@@ -18,7 +18,13 @@ public abstract class ModifyGraphEdgeWeightsTestsBase<T> where T : IModifyGraphE
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void ModifiedGraphEdges_WithGivenParameters_ReturnsModifiedEdges(int n, int[][] edges, int source, int destination, int target, int[][] expectedResult)
+    public void ModifiedGraphEdges_WithGivenParameters_ReturnsModifiedEdges(
+        int n,
+        int[][] edges,
+        int source,
+        int destination,
+        int target,
+        int[][] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -34,8 +40,16 @@ public abstract class ModifyGraphEdgeWeightsTestsBase<T> where T : IModifyGraphE
     {
         yield return [3, new[] { new[] { 0, 1, -1 }, new[] { 0, 2, 5 } }, 0, 2, 6, Array.Empty<int[]>()];
 
-        yield return [4, new[] { new[] { 1, 0, 4 }, new[] { 1, 2, 3 }, new[] { 2, 3, 5 }, new[] { 0, 3, -1 } }, 0, 2, 6, new[] { new[] { 1, 0, 4 }, new[] { 1, 2, 3 }, new[] { 2, 3, 5 }, new[] { 0, 3, 1 } }];
+        yield return
+        [
+            4, new[] { new[] { 1, 0, 4 }, new[] { 1, 2, 3 }, new[] { 2, 3, 5 }, new[] { 0, 3, -1 } }, 0, 2, 6,
+            new[] { new[] { 1, 0, 4 }, new[] { 1, 2, 3 }, new[] { 2, 3, 5 }, new[] { 0, 3, 1 } }
+        ];
 
-        yield return [5, new[] { new[] { 4, 1, -1 }, new[] { 2, 0, -1 }, new[] { 0, 3, -1 }, new[] { 4, 3, -1 } }, 0, 1, 5, new[] { new[] { 4, 1, 1 }, new[] { 2, 0, 3 }, new[] { 0, 3, 3 }, new[] { 4, 3, 1 } }];
+        yield return
+        [
+            5, new[] { new[] { 4, 1, -1 }, new[] { 2, 0, -1 }, new[] { 0, 3, -1 }, new[] { 4, 3, -1 } }, 0, 1, 5,
+            new[] { new[] { 4, 1, 1 }, new[] { 2, 0, 3 }, new[] { 0, 3, 3 }, new[] { 4, 3, 1 } }
+        ];
     }
 }

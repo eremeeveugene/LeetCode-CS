@@ -36,7 +36,10 @@ public abstract class SmallestStableIndex1TestsBase<T> where T : ISmallestStable
     [DataRow(new[] { 4, 1, 2, 3 }, 0, -1)]
     [DataRow(new[] { 7, 0, 5, 6 }, 2, 2)]
     [DataRow(new[] { 2, 0, 2, 0, 2 }, 2, 0)]
-    public void FirstStableIndex_WithGivenArrayAndThreshold_ReturnsSmallestStableIndexOrNegativeOneWhenNoStableIndexExists(int[] nums, int k, int expectedResult)
+    public void FirstStableIndex_WithGivenArrayAndThreshold_ReturnsSmallestStableIndexOrNegativeOneWhenNoStableIndexExists(
+        int[] nums,
+        int k,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();

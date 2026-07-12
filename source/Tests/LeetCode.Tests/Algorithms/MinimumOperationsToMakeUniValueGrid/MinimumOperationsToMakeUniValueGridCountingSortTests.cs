@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MinimumOperationsToMakeUniValueGrid;
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToMakeUniValueGrid;
 
 [TestClass]
-public sealed class MinimumOperationsToMakeUniValueGridCountingSortTests : MinimumOperationsToMakeUniValueGridTestsBase<MinimumOperationsToMakeUniValueGridCountingSort>;
+public sealed class MinimumOperationsToMakeUniValueGridCountingSortTests
+    : MinimumOperationsToMakeUniValueGridTestsBase<MinimumOperationsToMakeUniValueGridCountingSort>;

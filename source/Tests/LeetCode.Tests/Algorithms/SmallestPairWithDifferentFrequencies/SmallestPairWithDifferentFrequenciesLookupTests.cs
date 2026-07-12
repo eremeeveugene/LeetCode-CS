@@ -14,4 +14,5 @@ using LeetCode.Algorithms.SmallestPairWithDifferentFrequencies;
 namespace LeetCode.Tests.Algorithms.SmallestPairWithDifferentFrequencies;
 
 [TestClass]
-public sealed class SmallestPairWithDifferentFrequenciesLookupTests : SmallestPairWithDifferentFrequenciesTestsBase<SmallestPairWithDifferentFrequenciesLookup>;
+public sealed class SmallestPairWithDifferentFrequenciesLookupTests
+    : SmallestPairWithDifferentFrequenciesTestsBase<SmallestPairWithDifferentFrequenciesLookup>;

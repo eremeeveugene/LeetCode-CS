@@ -95,7 +95,8 @@ public sealed class DesignTaskManagerDictionaryWithPriorityQueue : IDesignTaskMa
         {
             var taskIdPriority = _taskIdPriorityQueue.Dequeue();
 
-            if (!_taskIdToUserIdPriorityDictionary.TryGetValue(taskIdPriority.TaskId, out var userIdPriority) || userIdPriority.Priority != taskIdPriority.Priority)
+            if (!_taskIdToUserIdPriorityDictionary.TryGetValue(taskIdPriority.TaskId, out var userIdPriority) ||
+                userIdPriority.Priority != taskIdPriority.Priority)
             {
                 continue;
             }

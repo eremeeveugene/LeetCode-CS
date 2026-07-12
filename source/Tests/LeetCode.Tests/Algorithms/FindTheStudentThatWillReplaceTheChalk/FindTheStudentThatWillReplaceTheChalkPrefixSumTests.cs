@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk;
 namespace LeetCode.Tests.Algorithms.FindTheStudentThatWillReplaceTheChalk;
 
 [TestClass]
-public sealed class FindTheStudentThatWillReplaceTheChalkPrefixSumTests : FindTheStudentThatWillReplaceTheChalkTestsBase<FindTheStudentThatWillReplaceTheChalkPrefixSum>;
+public sealed class FindTheStudentThatWillReplaceTheChalkPrefixSumTests
+    : FindTheStudentThatWillReplaceTheChalkTestsBase<FindTheStudentThatWillReplaceTheChalkPrefixSum>;

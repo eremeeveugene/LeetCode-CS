@@ -14,4 +14,5 @@ using LeetCode.Algorithms.ConcatenateNonZeroDigitsAndMultiplyBySum2;
 namespace LeetCode.Tests.Algorithms.ConcatenateNonZeroDigitsAndMultiplyBySum2;
 
 [TestClass]
-public sealed class ConcatenateNonZeroDigitsAndMultiplyBySum2PrefixSumTests : ConcatenateNonZeroDigitsAndMultiplyBySum2TestsBase<ConcatenateNonZeroDigitsAndMultiplyBySum2PrefixSum>;
+public sealed class ConcatenateNonZeroDigitsAndMultiplyBySum2PrefixSumTests
+    : ConcatenateNonZeroDigitsAndMultiplyBySum2TestsBase<ConcatenateNonZeroDigitsAndMultiplyBySum2PrefixSum>;

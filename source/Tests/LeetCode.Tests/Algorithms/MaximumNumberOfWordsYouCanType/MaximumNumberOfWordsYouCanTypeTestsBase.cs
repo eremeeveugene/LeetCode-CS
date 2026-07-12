@@ -19,7 +19,10 @@ public abstract class MaximumNumberOfWordsYouCanTypeTestsBase<T> where T : IMaxi
     [DataRow("hello world", "ad", 1)]
     [DataRow("leet code", "lt", 1)]
     [DataRow("leet code", "e", 0)]
-    public void CanBeTypedWords_WithTextAndBrokenLetters_ReturnsCountOfWordsWithoutBrokenCharacters(string text, string brokenLetters, int expectedResult)
+    public void CanBeTypedWords_WithTextAndBrokenLetters_ReturnsCountOfWordsWithoutBrokenCharacters(
+        string text,
+        string brokenLetters,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();

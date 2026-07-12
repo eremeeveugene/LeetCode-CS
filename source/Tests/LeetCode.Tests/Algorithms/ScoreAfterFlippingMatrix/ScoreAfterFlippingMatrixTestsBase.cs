@@ -41,6 +41,32 @@ public abstract class ScoreAfterFlippingMatrixTestsBase<T> where T : IScoreAfter
 
         yield return [new[] { new[] { 1, 0, 1, 1, 1, 0, 1, 0, 1, 0 }, new[] { 1, 0, 0, 0, 1, 1, 1, 1, 0, 0 } }, 1832];
 
-        yield return [new[] { new[] { 0 }, new[] { 1 }, new[] { 1 }, new[] { 0 }, new[] { 0 }, new[] { 1 }, new[] { 0 }, new[] { 1 }, new[] { 0 }, new[] { 0 }, new[] { 1 }, new[] { 1 }, new[] { 0 }, new[] { 0 }, new[] { 0 }, new[] { 1 }, new[] { 0 }, new[] { 1 }, new[] { 0 }, new[] { 0 } }, 20];
+        yield return
+        [
+            new[]
+            {
+                new[] { 0 },
+                new[] { 1 },
+                new[] { 1 },
+                new[] { 0 },
+                new[] { 0 },
+                new[] { 1 },
+                new[] { 0 },
+                new[] { 1 },
+                new[] { 0 },
+                new[] { 0 },
+                new[] { 1 },
+                new[] { 1 },
+                new[] { 0 },
+                new[] { 0 },
+                new[] { 0 },
+                new[] { 1 },
+                new[] { 0 },
+                new[] { 1 },
+                new[] { 0 },
+                new[] { 0 }
+            },
+            20
+        ];
     }
 }

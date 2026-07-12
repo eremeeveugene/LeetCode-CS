@@ -17,7 +17,10 @@ public abstract class VowelSpellcheckerTestsBase<T> where T : IVowelSpellchecker
 {
     [TestMethod]
     [DataRow(new[] { "yellow" }, new[] { "YellOw" }, new[] { "yellow" })]
-    [DataRow(new[] { "KiTe", "kite", "hare", "Hare" }, new[] { "kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto" }, new[] { "kite", "KiTe", "KiTe", "Hare", "hare", "", "", "KiTe", "", "KiTe" })]
+    [DataRow(
+        new[] { "KiTe", "kite", "hare", "Hare" },
+        new[] { "kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto" },
+        new[] { "kite", "KiTe", "KiTe", "Hare", "hare", "", "", "KiTe", "", "KiTe" })]
     public void Spellchecker_WithExactMatchCapitalization_ReturnsCorrectWordFromWordlist(string[] wordlist, string[] queries, string[] expectedResult)
     {
         // Arrange

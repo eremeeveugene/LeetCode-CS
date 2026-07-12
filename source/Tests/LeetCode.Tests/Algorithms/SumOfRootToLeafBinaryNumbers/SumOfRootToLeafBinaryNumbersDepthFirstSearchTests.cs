@@ -14,4 +14,5 @@ using LeetCode.Algorithms.SumOfRootToLeafBinaryNumbers;
 namespace LeetCode.Tests.Algorithms.SumOfRootToLeafBinaryNumbers;
 
 [TestClass]
-public sealed class SumOfRootToLeafBinaryNumbersDepthFirstSearchTests : SumOfRootToLeafBinaryNumbersTestsBase<SumOfRootToLeafBinaryNumbersDepthFirstSearch>;
+public sealed class SumOfRootToLeafBinaryNumbersDepthFirstSearchTests
+    : SumOfRootToLeafBinaryNumbersTestsBase<SumOfRootToLeafBinaryNumbersDepthFirstSearch>;

@@ -14,4 +14,5 @@ using LeetCode.Algorithms.CheckIfTwoChessboardSquaresHaveTheSameColor;
 namespace LeetCode.Tests.Algorithms.CheckIfTwoChessboardSquaresHaveTheSameColor;
 
 [TestClass]
-public sealed class CheckIfTwoChessboardSquaresHaveTheSameColorLookupTests : CheckIfTwoChessboardSquaresHaveTheSameColorTestsBase<CheckIfTwoChessboardSquaresHaveTheSameColorLookup>;
+public sealed class CheckIfTwoChessboardSquaresHaveTheSameColorLookupTests
+    : CheckIfTwoChessboardSquaresHaveTheSameColorTestsBase<CheckIfTwoChessboardSquaresHaveTheSameColorLookup>;

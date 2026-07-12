@@ -14,4 +14,5 @@ using LeetCode.Algorithms.ConstructTheMinimumBitwiseArray2;
 namespace LeetCode.Tests.Algorithms.ConstructTheMinimumBitwiseArray2;
 
 [TestClass]
-public sealed class ConstructTheMinimumBitwiseArray2BitManipulationTests : ConstructTheMinimumBitwiseArray2TestsBase<ConstructTheMinimumBitwiseArray2BitManipulation>;
+public sealed class ConstructTheMinimumBitwiseArray2BitManipulationTests
+    : ConstructTheMinimumBitwiseArray2TestsBase<ConstructTheMinimumBitwiseArray2BitManipulation>;

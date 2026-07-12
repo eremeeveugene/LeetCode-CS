@@ -14,4 +14,5 @@ using LeetCode.Algorithms.CountSubarraysWithFixedBounds;
 namespace LeetCode.Tests.Algorithms.CountSubarraysWithFixedBounds;
 
 [TestClass]
-public sealed class CountSubarraysWithFixedBoundsSlidingWindowTests : CountSubarraysWithFixedBoundsTestsBase<CountSubarraysWithFixedBoundsSlidingWindow>;
+public sealed class CountSubarraysWithFixedBoundsSlidingWindowTests
+    : CountSubarraysWithFixedBoundsTestsBase<CountSubarraysWithFixedBoundsSlidingWindow>;

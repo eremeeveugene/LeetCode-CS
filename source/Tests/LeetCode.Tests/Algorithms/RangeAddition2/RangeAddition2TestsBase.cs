@@ -33,7 +33,26 @@ public abstract class RangeAddition2TestsBase<T> where T : IRangeAddition2, new(
     {
         yield return [3, 3, new[] { new[] { 2, 2 }, new[] { 3, 3 } }, 4];
 
-        yield return [3, 3, new[] { new[] { 2, 2 }, new[] { 3, 3 }, new[] { 3, 3 }, new[] { 3, 3 }, new[] { 2, 2 }, new[] { 3, 3 }, new[] { 3, 3 }, new[] { 3, 3 }, new[] { 2, 2 }, new[] { 3, 3 }, new[] { 3, 3 }, new[] { 3, 3 } }, 4];
+        yield return
+        [
+            3, 3,
+            new[]
+            {
+                new[] { 2, 2 },
+                new[] { 3, 3 },
+                new[] { 3, 3 },
+                new[] { 3, 3 },
+                new[] { 2, 2 },
+                new[] { 3, 3 },
+                new[] { 3, 3 },
+                new[] { 3, 3 },
+                new[] { 2, 2 },
+                new[] { 3, 3 },
+                new[] { 3, 3 },
+                new[] { 3, 3 }
+            },
+            4
+        ];
 
         yield return [3, 3, Array.Empty<int[]>(), 9];
     }

@@ -29,7 +29,10 @@ public abstract class CanIWinTestsBase<T> where T : ICanIWin, new()
     [DataRow(20, 19, true)]
     [DataRow(2, 3, false)]
     [DataRow(7, 16, true)]
-    public void CanIWin_WithMaxChoosableIntegerAndDesiredTotal_ReturnsWhetherPlayerCanWin(int maxChoosableInteger, int desiredTotal, bool expectedResult)
+    public void CanIWin_WithMaxChoosableIntegerAndDesiredTotal_ReturnsWhetherPlayerCanWin(
+        int maxChoosableInteger,
+        int desiredTotal,
+        bool expectedResult)
     {
         // Arrange
         var solution = new T();

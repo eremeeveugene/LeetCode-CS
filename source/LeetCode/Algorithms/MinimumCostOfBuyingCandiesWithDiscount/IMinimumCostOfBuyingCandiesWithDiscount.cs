@@ -17,7 +17,8 @@ namespace LeetCode.Algorithms.MinimumCostOfBuyingCandiesWithDiscount;
 public interface IMinimumCostOfBuyingCandiesWithDiscount
 {
     /// <summary>
-    ///     Computes the minimum cost of buying all candies given that, for every two candies bought, a third candy with cost less than or equal to the minimum of the two is free.
+    ///     Computes the minimum cost of buying all candies given that, for every two candies bought, a third candy with cost less than or equal to the
+    ///     minimum of the two is free.
     /// </summary>
     /// <param name="cost">The array of candy costs.</param>
     /// <returns>The minimum total cost to buy all candies in <paramref name="cost" />.</returns>

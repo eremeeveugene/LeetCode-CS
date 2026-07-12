@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MostStonesRemovedWithSameRowOrColumn;
 namespace LeetCode.Tests.Algorithms.MostStonesRemovedWithSameRowOrColumn;
 
 [TestClass]
-public sealed class MostStonesRemovedWithSameRowOrColumnUnionFindTests : MostStonesRemovedWithSameRowOrColumnTestsBase<MostStonesRemovedWithSameRowOrColumnUnionFind>;
+public sealed class MostStonesRemovedWithSameRowOrColumnUnionFindTests
+    : MostStonesRemovedWithSameRowOrColumnTestsBase<MostStonesRemovedWithSameRowOrColumnUnionFind>;

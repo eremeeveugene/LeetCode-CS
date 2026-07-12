@@ -36,6 +36,10 @@ public abstract class PermutationsTestsBase<T> where T : IPermutations, new()
 
         yield return [new[] { 0, 1 }, new[] { new[] { 0, 1 }, new[] { 1, 0 } }];
 
-        yield return [new[] { 0, 1, 2 }, new[] { new[] { 1, 2, 0 }, new[] { 1, 0, 2 }, new[] { 2, 1, 0 }, new[] { 2, 0, 1 }, new[] { 0, 1, 2 }, new[] { 0, 2, 1 } }];
+        yield return
+        [
+            new[] { 0, 1, 2 },
+            new[] { new[] { 1, 2, 0 }, new[] { 1, 0, 2 }, new[] { 2, 1, 0 }, new[] { 2, 0, 1 }, new[] { 0, 1, 2 }, new[] { 0, 2, 1 } }
+        ];
     }
 }

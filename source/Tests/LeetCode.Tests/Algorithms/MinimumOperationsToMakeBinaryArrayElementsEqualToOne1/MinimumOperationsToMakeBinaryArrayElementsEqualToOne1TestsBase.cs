@@ -13,7 +13,8 @@ using LeetCode.Algorithms.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1;
 
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToMakeBinaryArrayElementsEqualToOne1;
 
-public abstract class MinimumOperationsToMakeBinaryArrayElementsEqualToOne1TestsBase<T> where T : IMinimumOperationsToMakeBinaryArrayElementsEqualToOne1, new()
+public abstract class MinimumOperationsToMakeBinaryArrayElementsEqualToOne1TestsBase<T>
+    where T : IMinimumOperationsToMakeBinaryArrayElementsEqualToOne1, new()
 {
     [TestMethod]
     [DataRow(new[] { 0, 1, 1, 1, 0, 0 }, 3)]

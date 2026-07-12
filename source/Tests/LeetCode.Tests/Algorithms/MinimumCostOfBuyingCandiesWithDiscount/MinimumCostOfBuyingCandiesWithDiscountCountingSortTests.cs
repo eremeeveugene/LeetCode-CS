@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MinimumCostOfBuyingCandiesWithDiscount;
 namespace LeetCode.Tests.Algorithms.MinimumCostOfBuyingCandiesWithDiscount;
 
 [TestClass]
-public sealed class MinimumCostOfBuyingCandiesWithDiscountCountingSortTests : MinimumCostOfBuyingCandiesWithDiscountTestsBase<MinimumCostOfBuyingCandiesWithDiscountCountingSort>;
+public sealed class MinimumCostOfBuyingCandiesWithDiscountCountingSortTests
+    : MinimumCostOfBuyingCandiesWithDiscountTestsBase<MinimumCostOfBuyingCandiesWithDiscountCountingSort>;

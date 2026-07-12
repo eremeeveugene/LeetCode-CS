@@ -14,4 +14,5 @@ using LeetCode.Algorithms.DeleteNodesAndReturnForest;
 namespace LeetCode.Tests.Algorithms.DeleteNodesAndReturnForest;
 
 [TestClass]
-public sealed class DeleteNodesAndReturnForestDepthFirstSearchRecursiveTests : DeleteNodesAndReturnForestTestsBase<DeleteNodesAndReturnForestDepthFirstSearchRecursive>;
+public sealed class DeleteNodesAndReturnForestDepthFirstSearchRecursiveTests
+    : DeleteNodesAndReturnForestTestsBase<DeleteNodesAndReturnForestDepthFirstSearchRecursive>;

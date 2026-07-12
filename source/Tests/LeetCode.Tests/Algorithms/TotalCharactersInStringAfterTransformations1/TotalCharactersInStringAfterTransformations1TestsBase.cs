@@ -19,7 +19,10 @@ public abstract class TotalCharactersInStringAfterTransformations1TestsBase<T> w
     [DataRow("abcyy", 2, 7)]
     [DataRow("azbk", 1, 5)]
     [DataRow("z", 100, 16)]
-    public void LengthAfterTransformations_WithStringAndTransformationCount_ReturnsFinalStringLengthAfterTransformations(string input, int transformationsCount, int expectedResult)
+    public void LengthAfterTransformations_WithStringAndTransformationCount_ReturnsFinalStringLengthAfterTransformations(
+        string input,
+        int transformationsCount,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();

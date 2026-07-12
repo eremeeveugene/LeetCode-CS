@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FindResultantArrayAfterRemovingAnagrams;
 namespace LeetCode.Tests.Algorithms.FindResultantArrayAfterRemovingAnagrams;
 
 [TestClass]
-public sealed class FindResultantArrayAfterRemovingAnagramsGreedyCountingTests : FindResultantArrayAfterRemovingAnagramsTestsBase<FindResultantArrayAfterRemovingAnagramsGreedyCounting>;
+public sealed class FindResultantArrayAfterRemovingAnagramsGreedyCountingTests
+    : FindResultantArrayAfterRemovingAnagramsTestsBase<FindResultantArrayAfterRemovingAnagramsGreedyCounting>;

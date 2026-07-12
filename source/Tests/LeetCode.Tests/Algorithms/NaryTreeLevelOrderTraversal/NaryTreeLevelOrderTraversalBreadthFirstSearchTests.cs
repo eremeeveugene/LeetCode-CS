@@ -14,4 +14,5 @@ using LeetCode.Algorithms.NaryTreeLevelOrderTraversal;
 namespace LeetCode.Tests.Algorithms.NaryTreeLevelOrderTraversal;
 
 [TestClass]
-public sealed class NaryTreeLevelOrderTraversalBreadthFirstSearchTests : NaryTreeLevelOrderTraversalTestsBase<NaryTreeLevelOrderTraversalBreadthFirstSearch>;
+public sealed class NaryTreeLevelOrderTraversalBreadthFirstSearchTests
+    : NaryTreeLevelOrderTraversalTestsBase<NaryTreeLevelOrderTraversalBreadthFirstSearch>;

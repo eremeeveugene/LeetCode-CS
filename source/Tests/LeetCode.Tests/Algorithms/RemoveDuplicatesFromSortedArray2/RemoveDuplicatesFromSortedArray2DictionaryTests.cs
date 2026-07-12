@@ -14,4 +14,5 @@ using LeetCode.Algorithms.RemoveDuplicatesFromSortedArray2;
 namespace LeetCode.Tests.Algorithms.RemoveDuplicatesFromSortedArray2;
 
 [TestClass]
-public sealed class RemoveDuplicatesFromSortedArray2DictionaryTests : RemoveDuplicatesFromSortedArray2TestsBase<RemoveDuplicatesFromSortedArray2Dictionary>;
+public sealed class RemoveDuplicatesFromSortedArray2DictionaryTests
+    : RemoveDuplicatesFromSortedArray2TestsBase<RemoveDuplicatesFromSortedArray2Dictionary>;

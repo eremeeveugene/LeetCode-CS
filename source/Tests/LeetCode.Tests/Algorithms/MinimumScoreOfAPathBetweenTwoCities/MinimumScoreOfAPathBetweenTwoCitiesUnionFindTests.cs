@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MinimumScoreOfAPathBetweenTwoCities;
 namespace LeetCode.Tests.Algorithms.MinimumScoreOfAPathBetweenTwoCities;
 
 [TestClass]
-public sealed class MinimumScoreOfAPathBetweenTwoCitiesUnionFindTests : MinimumScoreOfAPathBetweenTwoCitiesTestsBase<MinimumScoreOfAPathBetweenTwoCitiesUnionFind>;
+public sealed class MinimumScoreOfAPathBetweenTwoCitiesUnionFindTests
+    : MinimumScoreOfAPathBetweenTwoCitiesTestsBase<MinimumScoreOfAPathBetweenTwoCitiesUnionFind>;

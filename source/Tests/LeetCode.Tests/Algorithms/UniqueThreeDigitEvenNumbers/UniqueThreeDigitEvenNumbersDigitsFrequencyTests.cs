@@ -14,4 +14,5 @@ using LeetCode.Algorithms.UniqueThreeDigitEvenNumbers;
 namespace LeetCode.Tests.Algorithms.UniqueThreeDigitEvenNumbers;
 
 [TestClass]
-public sealed class UniqueThreeDigitEvenNumbersDigitsFrequencyTests : UniqueThreeDigitEvenNumbersTestsBase<UniqueThreeDigitEvenNumbersDigitsFrequency>;
+public sealed class
+    UniqueThreeDigitEvenNumbersDigitsFrequencyTests : UniqueThreeDigitEvenNumbersTestsBase<UniqueThreeDigitEvenNumbersDigitsFrequency>;

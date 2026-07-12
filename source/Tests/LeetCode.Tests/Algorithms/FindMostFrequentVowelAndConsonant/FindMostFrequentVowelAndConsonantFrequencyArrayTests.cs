@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FindMostFrequentVowelAndConsonant;
 namespace LeetCode.Tests.Algorithms.FindMostFrequentVowelAndConsonant;
 
 [TestClass]
-public sealed class FindMostFrequentVowelAndConsonantFrequencyArrayTests : FindMostFrequentVowelAndConsonantTestsBase<FindMostFrequentVowelAndConsonantFrequencyArray>;
+public sealed class FindMostFrequentVowelAndConsonantFrequencyArrayTests
+    : FindMostFrequentVowelAndConsonantTestsBase<FindMostFrequentVowelAndConsonantFrequencyArray>;

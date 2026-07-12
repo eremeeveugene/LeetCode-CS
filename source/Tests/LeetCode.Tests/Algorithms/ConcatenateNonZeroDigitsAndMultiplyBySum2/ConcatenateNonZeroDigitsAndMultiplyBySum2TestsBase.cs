@@ -17,7 +17,10 @@ public abstract class ConcatenateNonZeroDigitsAndMultiplyBySum2TestsBase<T> wher
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void SumAndMultiply_WithStringAndQueries_ReturnsProductsOfNonZeroDigitConcatenationAndDigitSum(string s, int[][] queries, int[] expectedResult)
+    public void SumAndMultiply_WithStringAndQueries_ReturnsProductsOfNonZeroDigitConcatenationAndDigitSum(
+        string s,
+        int[][] queries,
+        int[] expectedResult)
     {
         // Arrange
         var solution = new T();

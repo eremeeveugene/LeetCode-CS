@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MaximumProductOfSplittedBinaryTree;
 namespace LeetCode.Tests.Algorithms.MaximumProductOfSplittedBinaryTree;
 
 [TestClass]
-public sealed class MaximumProductOfSplittedBinaryTreeDepthFirstSearchTests : MaximumProductOfSplittedBinaryTreeTestsBase<MaximumProductOfSplittedBinaryTreeDepthFirstSearch>;
+public sealed class MaximumProductOfSplittedBinaryTreeDepthFirstSearchTests
+    : MaximumProductOfSplittedBinaryTreeTestsBase<MaximumProductOfSplittedBinaryTreeDepthFirstSearch>;

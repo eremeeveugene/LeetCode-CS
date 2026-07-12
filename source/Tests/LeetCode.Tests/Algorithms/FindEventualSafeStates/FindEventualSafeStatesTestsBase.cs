@@ -31,7 +31,11 @@ public abstract class FindEventualSafeStatesTestsBase<T> where T : IFindEventual
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return [new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 5 }, new[] { 0 }, new[] { 5 }, Array.Empty<int>(), Array.Empty<int>() }, new[] { 2, 4, 5, 6 }];
+        yield return
+        [
+            new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 5 }, new[] { 0 }, new[] { 5 }, Array.Empty<int>(), Array.Empty<int>() },
+            new[] { 2, 4, 5, 6 }
+        ];
 
         yield return [new[] { new[] { 1, 2, 3, 4 }, new[] { 1, 2 }, new[] { 3, 4 }, new[] { 0, 4 }, Array.Empty<int>() }, new[] { 4 }];
     }

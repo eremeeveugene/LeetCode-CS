@@ -18,7 +18,10 @@ public abstract class CountSubarraysWithScoreLessThanKTestsBase<T> where T : ICo
     [TestMethod]
     [DataRow(new[] { 2, 1, 4, 3, 5 }, 10L, 6L)]
     [DataRow(new[] { 1, 1, 1 }, 5L, 5L)]
-    public void CountSubarrays_WithPositiveIntArrayAndScoreThreshold_ReturnsNumberOfSubarraysWithScoreLessThanK(int[] nums, long k, long expectedResult)
+    public void CountSubarrays_WithPositiveIntArrayAndScoreThreshold_ReturnsNumberOfSubarraysWithScoreLessThanK(
+        int[] nums,
+        long k,
+        long expectedResult)
     {
         // Arrange
         var solution = new T();

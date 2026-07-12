@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MostBeautifulItemForEachQuery;
 namespace LeetCode.Tests.Algorithms.MostBeautifulItemForEachQuery;
 
 [TestClass]
-public sealed class MostBeautifulItemForEachQueryBinarySearchTests : MostBeautifulItemForEachQueryTestsBase<MostBeautifulItemForEachQueryBinarySearch>;
+public sealed class
+    MostBeautifulItemForEachQueryBinarySearchTests : MostBeautifulItemForEachQueryTestsBase<MostBeautifulItemForEachQueryBinarySearch>;

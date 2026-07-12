@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MinimumDeletionsToMakeStringKSpecial;
 namespace LeetCode.Tests.Algorithms.MinimumDeletionsToMakeStringKSpecial;
 
 [TestClass]
-public sealed class MinimumDeletionsToMakeStringKSpecialFrequencyArrayTests : MinimumDeletionsToMakeStringKSpecialTestsBase<MinimumDeletionsToMakeStringKSpecialFrequencyArray>;
+public sealed class MinimumDeletionsToMakeStringKSpecialFrequencyArrayTests
+    : MinimumDeletionsToMakeStringKSpecialTestsBase<MinimumDeletionsToMakeStringKSpecialFrequencyArray>;

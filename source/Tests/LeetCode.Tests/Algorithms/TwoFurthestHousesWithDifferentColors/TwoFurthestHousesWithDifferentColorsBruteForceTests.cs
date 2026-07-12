@@ -14,4 +14,5 @@ using LeetCode.Algorithms.TwoFurthestHousesWithDifferentColors;
 namespace LeetCode.Tests.Algorithms.TwoFurthestHousesWithDifferentColors;
 
 [TestClass]
-public sealed class TwoFurthestHousesWithDifferentColorsBruteForceTests : TwoFurthestHousesWithDifferentColorsTestsBase<TwoFurthestHousesWithDifferentColorsBruteForce>;
+public sealed class TwoFurthestHousesWithDifferentColorsBruteForceTests
+    : TwoFurthestHousesWithDifferentColorsTestsBase<TwoFurthestHousesWithDifferentColorsBruteForce>;

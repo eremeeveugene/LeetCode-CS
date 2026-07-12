@@ -48,8 +48,16 @@ public abstract class DeleteNodesAndReturnForestTestsBase<T> where T : IDeleteNo
 
         yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7 }, new[] { 1, 2, 3, 4, 5, 6, 7 }, Array.Empty<int?[]>()];
 
-        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }, new[] { 3, 5, 7, 8, 9, 14 }, new[] { new int?[] { 6, 12, 13 }, new int?[] { 15 }, new int?[] { 10 }, new int?[] { 11 }, new int?[] { 1, 2, null, 4 } }];
+        yield return
+        [
+            new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }, new[] { 3, 5, 7, 8, 9, 14 },
+            new[] { new int?[] { 6, 12, 13 }, new int?[] { 15 }, new int?[] { 10 }, new int?[] { 11 }, new int?[] { 1, 2, null, 4 } }
+        ];
 
-        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, null, null, 9, 10, 11, null, 12 }, new[] { 2, 6, 8, 9, 11 }, new[] { new int?[] { 4 }, new int?[] { 5 }, new int?[] { 10 }, new int?[] { 1, null, 3, null, 7, null, 12 } }];
+        yield return
+        [
+            new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, null, null, 9, 10, 11, null, 12 }, new[] { 2, 6, 8, 9, 11 },
+            new[] { new int?[] { 4 }, new int?[] { 5 }, new int?[] { 10 }, new int?[] { 1, null, 3, null, 7, null, 12 } }
+        ];
     }
 }

@@ -14,4 +14,5 @@ using LeetCode.Algorithms.SeparateTheDigitsInAnArray;
 namespace LeetCode.Tests.Algorithms.SeparateTheDigitsInAnArray;
 
 [TestClass]
-public sealed class SeparateTheDigitsInAnArrayTwoPassWithPreallocatedBufferTests : SeparateTheDigitsInAnArrayTestsBase<SeparateTheDigitsInAnArrayTwoPassWithPreallocatedBuffer>;
+public sealed class SeparateTheDigitsInAnArrayTwoPassWithPreallocatedBufferTests
+    : SeparateTheDigitsInAnArrayTestsBase<SeparateTheDigitsInAnArrayTwoPassWithPreallocatedBuffer>;

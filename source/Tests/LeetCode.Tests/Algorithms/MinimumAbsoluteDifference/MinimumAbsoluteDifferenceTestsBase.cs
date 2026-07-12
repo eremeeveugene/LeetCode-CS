@@ -18,7 +18,9 @@ public abstract class MinimumAbsoluteDifferenceTestsBase<T> where T : IMinimumAb
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MinimumAbsDifference_WithDistinctIntegersArray_ReturnsAllPairsWithMinimumAbsoluteDifference(int[] arr, IList<IList<int>> expectedResult)
+    public void MinimumAbsDifference_WithDistinctIntegersArray_ReturnsAllPairsWithMinimumAbsoluteDifference(
+        int[] arr,
+        IList<IList<int>> expectedResult)
     {
         // Arrange
         var solution = new T();

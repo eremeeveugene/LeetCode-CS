@@ -19,7 +19,11 @@ public abstract class CountOfInterestingSubarraysTestsBase<T> where T : ICountOf
     [DataRow(new[] { 3, 2, 4 }, 2, 1, 3L)]
     [DataRow(new[] { 3, 1, 9, 6 }, 3, 0, 2L)]
     [DataRow(new[] { 11, 12, 21, 31 }, 10, 1, 5L)]
-    public void CountInterestingSubarrays_WithModuloAndTargetRemainder_ReturnsMatchingSubarrayCount(int[] nums, int modulo, int k, long expectedResult)
+    public void CountInterestingSubarrays_WithModuloAndTargetRemainder_ReturnsMatchingSubarrayCount(
+        int[] nums,
+        int modulo,
+        int k,
+        long expectedResult)
     {
         // Arrange
         var solution = new T();

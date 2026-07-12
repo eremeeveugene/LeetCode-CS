@@ -19,7 +19,10 @@ public abstract class SplitStringsBySeparatorTestsBase<T> where T : ISplitString
     [DataRow(new[] { "one.two.three", "four.five", "six" }, '.', new[] { "one", "two", "three", "four", "five", "six" })]
     [DataRow(new[] { "$easy$", "$problem$" }, '$', new[] { "easy", "problem" })]
     [DataRow(new[] { "|||" }, '|', new string[] { })]
-    public void SplitWordsBySeparator_WithStringsContainingSeparator_RemovesSeparatorAndExcludesEmptyStrings(string[] words, char separator, string[] expectedResult)
+    public void SplitWordsBySeparator_WithStringsContainingSeparator_RemovesSeparatorAndExcludesEmptyStrings(
+        string[] words,
+        char separator,
+        string[] expectedResult)
     {
         // Arrange
         var solution = new T();

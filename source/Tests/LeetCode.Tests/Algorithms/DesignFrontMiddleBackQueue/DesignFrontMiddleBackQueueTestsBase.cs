@@ -23,7 +23,10 @@ public abstract class DesignFrontMiddleBackQueueTestsBase<T> where T : IDesignFr
     private const string PopBack = "popBack";
 
     [TestMethod]
-    [DataRow(new[] { "pushFront", "pushBack", "pushMiddle", "pushMiddle", "popFront", "popMiddle", "popMiddle", "popBack", "popFront" }, new[] { 1, 2, 3, 4, 0, 0, 0, 0, 0 }, new[] { 1, 3, 4, 2, -1 })]
+    [DataRow(
+        new[] { "pushFront", "pushBack", "pushMiddle", "pushMiddle", "popFront", "popMiddle", "popMiddle", "popBack", "popFront" },
+        new[] { 1, 2, 3, 4, 0, 0, 0, 0, 0 },
+        new[] { 1, 3, 4, 2, -1 })]
     [DataRow(new[] { "popFront" }, new[] { 0 }, new[] { -1 })]
     [DataRow(new[] { "popMiddle" }, new[] { 0 }, new[] { -1 })]
     [DataRow(new[] { "popBack" }, new[] { 0 }, new[] { -1 })]
@@ -41,9 +44,15 @@ public abstract class DesignFrontMiddleBackQueueTestsBase<T> where T : IDesignFr
     [DataRow(new[] { "pushFront", "pushBack", "pushMiddle", "popFront", "popMiddle", "popBack" }, new[] { 1, 3, 2, 0, 0, 0 }, new[] { 1, 2, 3 })]
     [DataRow(new[] { "pushBack", "pushFront", "popMiddle" }, new[] { 2, 1, 0 }, new[] { 1 })]
     [DataRow(new[] { "pushFront", "pushFront", "pushFront", "pushFront", "popFront", "popBack" }, new[] { 1, 2, 3, 4, 0, 0 }, new[] { 4, 1 })]
-    [DataRow(new[] { "pushMiddle", "pushMiddle", "pushMiddle", "popMiddle", "popMiddle", "popMiddle" }, new[] { 1, 2, 3, 0, 0, 0 }, new[] { 3, 2, 1 })]
+    [DataRow(
+        new[] { "pushMiddle", "pushMiddle", "pushMiddle", "popMiddle", "popMiddle", "popMiddle" },
+        new[] { 1, 2, 3, 0, 0, 0 },
+        new[] { 3, 2, 1 })]
     [DataRow(new[] { "pushFront", "pushBack", "popBack", "popFront" }, new[] { 10, 20, 0, 0 }, new[] { 20, 10 })]
-    public void DesignFrontMiddleBackQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(string[] operations, int[] arguments, int[] expectedResult)
+    public void DesignFrontMiddleBackQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        string[] operations,
+        int[] arguments,
+        int[] expectedResult)
     {
         // Arrange
         var solution = new T();

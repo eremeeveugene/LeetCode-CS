@@ -38,7 +38,9 @@ public abstract class RemoveZeroSumConsecutiveNodesFromLinkedListTestsBase<T> wh
     [DataRow(new int[] { }, new int[] { })]
     [DataRow(new[] { 0 }, new int[] { })]
     [DataRow(new[] { 4, -4 }, new int[] { })]
-    public void RemoveZeroSumSublists_WithListContainingZeroSumSequences_ReturnsListWithZeroSumSublistsRemoved(int[] headArray, int[] expectedResultArray)
+    public void RemoveZeroSumSublists_WithListContainingZeroSumSequences_ReturnsListWithZeroSumSublistsRemoved(
+        int[] headArray,
+        int[] expectedResultArray)
     {
         // Arrange
         var head = ListNode.ToListNode(headArray);

@@ -14,4 +14,5 @@ using LeetCode.Algorithms.NextGreaterNumericallyBalancedNumber;
 namespace LeetCode.Tests.Algorithms.NextGreaterNumericallyBalancedNumber;
 
 [TestClass]
-public sealed class NextGreaterNumericallyBalancedNumberIterativeTests : NextGreaterNumericallyBalancedNumberTestsBase<NextGreaterNumericallyBalancedNumberIterative>;
+public sealed class NextGreaterNumericallyBalancedNumberIterativeTests
+    : NextGreaterNumericallyBalancedNumberTestsBase<NextGreaterNumericallyBalancedNumberIterative>;

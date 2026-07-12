@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MinimumMovesToEqualArrayElements3;
 namespace LeetCode.Tests.Algorithms.MinimumMovesToEqualArrayElements3;
 
 [TestClass]
-public sealed class MinimumMovesToEqualArrayElements3OnePassTests : MinimumMovesToEqualArrayElements3TestsBase<MinimumMovesToEqualArrayElements3OnePass>;
+public sealed class MinimumMovesToEqualArrayElements3OnePassTests
+    : MinimumMovesToEqualArrayElements3TestsBase<MinimumMovesToEqualArrayElements3OnePass>;

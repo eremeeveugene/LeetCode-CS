@@ -20,7 +20,9 @@ public abstract class MinimumLengthOfStringAfterDeletingSimilarEndsTestsBase<T> 
     [DataRow("cabaabac", 0)]
     [DataRow("aabccabba", 3)]
     [DataRow("bbbbbbbbbbbbbbbbbbb", 0)]
-    [DataRow("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbacccabbabccaccbacaaccacacccaccbbbacaabbccbbcbcbcacacccccccbcbbabccaacaabacbbaccccbabbcbccccaccacaccbcbbcbcccabaaaabbbbbbbbbbbbbbb", 109)]
+    [DataRow(
+        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbacccabbabccaccbacaaccacacccaccbbbacaabbccbbcbcbcacacccccccbcbbabccaacaabacbbaccccbabbcbccccaccacaccbcbbcbcccabaaaabbbbbbbbbbbbbbb",
+        109)]
     public void MinimumLength_WithRepeatingPrefixSuffixPattern_ReturnsFinalLengthAfterAllDeletions(string s, int expectedResult)
     {
         // Arrange

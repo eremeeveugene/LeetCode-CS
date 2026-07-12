@@ -37,7 +37,11 @@ public abstract class ZigzagGridTraversalWithSkipTestsBase<T> where T : IZigzagG
         yield return [new[] { new[] { 1, 2, 3, 4 } }, new[] { 1, 3 }];
         yield return [new[] { new[] { 1, 2, 3, 4, 5 } }, new[] { 1, 3, 5 }];
         yield return [new[] { new[] { 1, 2 } }, new[] { 1 }];
-        yield return [new[] { new[] { 1, 2, 3, 4 }, new[] { 5, 6, 7, 8 }, new[] { 9, 10, 11, 12 }, new[] { 13, 14, 15, 16 } }, new[] { 1, 3, 8, 6, 9, 11, 16, 14 }];
+        yield return
+        [
+            new[] { new[] { 1, 2, 3, 4 }, new[] { 5, 6, 7, 8 }, new[] { 9, 10, 11, 12 }, new[] { 13, 14, 15, 16 } },
+            new[] { 1, 3, 8, 6, 9, 11, 16, 14 }
+        ];
         yield return [new[] { new[] { 1, 2, 3, 4, 5 }, new[] { 6, 7, 8, 9, 10 } }, new[] { 1, 3, 5, 9, 7 }];
         yield return [new[] { new[] { 4 }, new[] { 5 }, new[] { 6 } }, new[] { 4, 6 }];
         yield return [new[] { new[] { 0, 0, 0 }, new[] { 0, 0, 0 } }, new[] { 0, 0, 0 }];

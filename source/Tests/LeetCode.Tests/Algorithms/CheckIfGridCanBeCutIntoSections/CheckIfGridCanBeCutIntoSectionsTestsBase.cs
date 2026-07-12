@@ -35,6 +35,9 @@ public abstract class CheckIfGridCanBeCutIntoSectionsTestsBase<T> where T : IChe
 
         yield return [4, new[] { new[] { 0, 0, 1, 1 }, new[] { 2, 0, 3, 4 }, new[] { 0, 2, 2, 3 }, new[] { 3, 0, 4, 3 } }, true];
 
-        yield return [4, new[] { new[] { 0, 2, 2, 4 }, new[] { 1, 0, 3, 2 }, new[] { 2, 2, 3, 4 }, new[] { 3, 0, 4, 2 }, new[] { 3, 2, 4, 4 } }, false];
+        yield return
+        [
+            4, new[] { new[] { 0, 2, 2, 4 }, new[] { 1, 0, 3, 2 }, new[] { 2, 2, 3, 4 }, new[] { 3, 0, 4, 2 }, new[] { 3, 2, 4, 4 } }, false
+        ];
     }
 }

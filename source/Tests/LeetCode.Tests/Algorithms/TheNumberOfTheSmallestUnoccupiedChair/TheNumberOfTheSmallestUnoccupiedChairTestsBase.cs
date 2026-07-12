@@ -37,6 +37,29 @@ public abstract class TheNumberOfTheSmallestUnoccupiedChairTestsBase<T> where T 
 
         yield return [new[] { new[] { 3, 10 }, new[] { 1, 5 }, new[] { 2, 6 } }, 0, 2];
 
-        yield return [new[] { new[] { 33, 35 }, new[] { 26, 29 }, new[] { 9, 28 }, new[] { 4, 31 }, new[] { 8, 10 }, new[] { 32, 34 }, new[] { 15, 24 }, new[] { 27, 39 }, new[] { 14, 36 }, new[] { 1, 14 }, new[] { 25, 39 }, new[] { 5, 27 }, new[] { 6, 15 }, new[] { 2, 38 }, new[] { 19, 36 }, new[] { 24, 34 }, new[] { 3, 26 } }, 0, 3];
+        yield return
+        [
+            new[]
+            {
+                new[] { 33, 35 },
+                new[] { 26, 29 },
+                new[] { 9, 28 },
+                new[] { 4, 31 },
+                new[] { 8, 10 },
+                new[] { 32, 34 },
+                new[] { 15, 24 },
+                new[] { 27, 39 },
+                new[] { 14, 36 },
+                new[] { 1, 14 },
+                new[] { 25, 39 },
+                new[] { 5, 27 },
+                new[] { 6, 15 },
+                new[] { 2, 38 },
+                new[] { 19, 36 },
+                new[] { 24, 34 },
+                new[] { 3, 26 }
+            },
+            0, 3
+        ];
     }
 }

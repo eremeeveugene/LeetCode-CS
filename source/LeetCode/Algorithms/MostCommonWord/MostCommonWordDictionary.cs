@@ -53,7 +53,12 @@ public sealed class MostCommonWordDictionary : IMostCommonWord
         return mostCommonWord;
     }
 
-    private static void ProcessWord(StringBuilder currentWordStringBuilder, HashSet<string> bannedHashSet, Dictionary<string, int> wordsFrequencyDictionary, ref string mostCommonWord, ref int mostFrequency)
+    private static void ProcessWord(
+        StringBuilder currentWordStringBuilder,
+        HashSet<string> bannedHashSet,
+        Dictionary<string, int> wordsFrequencyDictionary,
+        ref string mostCommonWord,
+        ref int mostFrequency)
     {
         var word = currentWordStringBuilder.ToString();
 

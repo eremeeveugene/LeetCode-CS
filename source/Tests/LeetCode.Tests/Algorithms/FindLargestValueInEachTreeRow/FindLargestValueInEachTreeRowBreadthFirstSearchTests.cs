@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FindLargestValueInEachTreeRow;
 namespace LeetCode.Tests.Algorithms.FindLargestValueInEachTreeRow;
 
 [TestClass]
-public sealed class FindLargestValueInEachTreeRowBreadthFirstSearchTests : FindLargestValueInEachTreeRowTestsBase<FindLargestValueInEachTreeRowBreadthFirstSearch>;
+public sealed class FindLargestValueInEachTreeRowBreadthFirstSearchTests
+    : FindLargestValueInEachTreeRowTestsBase<FindLargestValueInEachTreeRowBreadthFirstSearch>;

@@ -13,7 +13,8 @@ using LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes;
 
 namespace LeetCode.Tests.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes;
 
-public abstract class CountSubarraysWhereMaxElementAppearsAtLeastKTimesTestsBase<T> where T : ICountSubarraysWhereMaxElementAppearsAtLeastKTimes, new()
+public abstract class CountSubarraysWhereMaxElementAppearsAtLeastKTimesTestsBase<T>
+    where T : ICountSubarraysWhereMaxElementAppearsAtLeastKTimes, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 3, 2, 3, 3 }, 2, 6)]

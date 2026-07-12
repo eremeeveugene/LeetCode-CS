@@ -14,7 +14,8 @@ using LeetCode.Core.Models;
 
 namespace LeetCode.Tests.Algorithms.FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints;
 
-public abstract class FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsTestsBase<T> where T : IFindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints, new()
+public abstract class FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPointsTestsBase<T>
+    where T : IFindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints, new()
 {
     [TestMethod]
     [DataRow(new[] { 3, 1 }, new[] { -1, -1 })]

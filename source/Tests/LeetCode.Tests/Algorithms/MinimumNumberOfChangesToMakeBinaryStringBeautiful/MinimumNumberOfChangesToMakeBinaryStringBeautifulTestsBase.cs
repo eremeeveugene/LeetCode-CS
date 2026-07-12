@@ -13,7 +13,8 @@ using LeetCode.Algorithms.MinimumNumberOfChangesToMakeBinaryStringBeautiful;
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfChangesToMakeBinaryStringBeautiful;
 
-public abstract class MinimumNumberOfChangesToMakeBinaryStringBeautifulTestsBase<T> where T : IMinimumNumberOfChangesToMakeBinaryStringBeautiful, new()
+public abstract class MinimumNumberOfChangesToMakeBinaryStringBeautifulTestsBase<T>
+    where T : IMinimumNumberOfChangesToMakeBinaryStringBeautiful, new()
 {
     [TestMethod]
     [DataRow("0000", 0)]

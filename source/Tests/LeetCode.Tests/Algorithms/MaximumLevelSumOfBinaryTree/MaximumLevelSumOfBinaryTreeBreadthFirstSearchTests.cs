@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MaximumLevelSumOfBinaryTree;
 namespace LeetCode.Tests.Algorithms.MaximumLevelSumOfBinaryTree;
 
 [TestClass]
-public sealed class MaximumLevelSumOfBinaryTreeBreadthFirstSearchTests : MaximumLevelSumOfBinaryTreeTestsBase<MaximumLevelSumOfBinaryTreeBreadthFirstSearch>;
+public sealed class MaximumLevelSumOfBinaryTreeBreadthFirstSearchTests
+    : MaximumLevelSumOfBinaryTreeTestsBase<MaximumLevelSumOfBinaryTreeBreadthFirstSearch>;

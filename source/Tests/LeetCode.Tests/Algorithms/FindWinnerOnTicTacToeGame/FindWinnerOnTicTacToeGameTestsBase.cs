@@ -35,6 +35,21 @@ public abstract class FindWinnerOnTicTacToeGameTestsBase<T> where T : IFindWinne
 
         yield return [new[] { new[] { 0, 0 }, new[] { 1, 1 }, new[] { 0, 1 }, new[] { 0, 2 }, new[] { 1, 0 }, new[] { 2, 0 } }, "B"];
 
-        yield return [new[] { new[] { 0, 0 }, new[] { 1, 1 }, new[] { 2, 0 }, new[] { 1, 0 }, new[] { 1, 2 }, new[] { 2, 1 }, new[] { 0, 1 }, new[] { 0, 2 }, new[] { 2, 2 } }, "Draw"];
+        yield return
+        [
+            new[]
+            {
+                new[] { 0, 0 },
+                new[] { 1, 1 },
+                new[] { 2, 0 },
+                new[] { 1, 0 },
+                new[] { 1, 2 },
+                new[] { 2, 1 },
+                new[] { 0, 1 },
+                new[] { 0, 2 },
+                new[] { 2, 2 }
+            },
+            "Draw"
+        ];
     }
 }

@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MaximumSubstringsWithDistinctStart;
 namespace LeetCode.Tests.Algorithms.MaximumSubstringsWithDistinctStart;
 
 [TestClass]
-public class MaximumSubstringsWithDistinctStartBitArrayTests : MaximumSumOfDistinctSubarraysWithLengthKTestsBase<MaximumSubstringsWithDistinctStartBitArray>;
+public class MaximumSubstringsWithDistinctStartBitArrayTests
+    : MaximumSumOfDistinctSubarraysWithLengthKTestsBase<MaximumSubstringsWithDistinctStartBitArray>;

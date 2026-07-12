@@ -21,7 +21,12 @@ public abstract class FindingPairsWithCertainSumTestsBase
 
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void DesignNeighborSumService_WithMixedOperations_ProcessesOperationsAccordingToSpecification(int[] nums1, int[] nums2, string[] methods, int[][] arguments, int[] expectedResult)
+    public void DesignNeighborSumService_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        int[] nums1,
+        int[] nums2,
+        string[] methods,
+        int[][] arguments,
+        int[] expectedResult)
     {
         // Arrange
         var solution = GetSolution(nums1, nums2);
@@ -50,7 +55,11 @@ public abstract class FindingPairsWithCertainSumTestsBase
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return [new[] { 1, 1, 2, 2, 2, 3 }, new[] { 1, 4, 5, 2, 5, 4 }, new[] { "count", "add", "count", "count", "add", "add", "count" }, new[] { new[] { 7 }, new[] { 3, 2 }, new[] { 8 }, new[] { 4 }, new[] { 0, 1 }, new[] { 1, 1 }, new[] { 7 } }, new[] { 8, 2, 1, 11 }];
+        yield return
+        [
+            new[] { 1, 1, 2, 2, 2, 3 }, new[] { 1, 4, 5, 2, 5, 4 }, new[] { "count", "add", "count", "count", "add", "add", "count" },
+            new[] { new[] { 7 }, new[] { 3, 2 }, new[] { 8 }, new[] { 4 }, new[] { 0, 1 }, new[] { 1, 1 }, new[] { 7 } }, new[] { 8, 2, 1, 11 }
+        ];
     }
 
     protected abstract IFindingPairsWithCertainSum GetSolution(int[] nums1, int[] nums2);

@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MergeTwo2DArraysBySummingValues;
 namespace LeetCode.Tests.Algorithms.MergeTwo2DArraysBySummingValues;
 
 [TestClass]
-public class MergeTwo2DArraysBySummingValuesSortedDictionaryTests : MergeTwo2DArraysBySummingValuesTestsBase<MergeTwo2DArraysBySummingValuesSortedDictionary>;
+public class MergeTwo2DArraysBySummingValuesSortedDictionaryTests
+    : MergeTwo2DArraysBySummingValuesTestsBase<MergeTwo2DArraysBySummingValuesSortedDictionary>;

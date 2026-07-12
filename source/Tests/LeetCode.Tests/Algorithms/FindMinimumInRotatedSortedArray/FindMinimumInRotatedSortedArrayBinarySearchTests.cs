@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FindMinimumInRotatedSortedArray;
 namespace LeetCode.Tests.Algorithms.FindMinimumInRotatedSortedArray;
 
 [TestClass]
-public sealed class FindMinimumInRotatedSortedArrayBinarySearchTests : FindMinimumInRotatedSortedArrayTestsBase<FindMinimumInRotatedSortedArrayBinarySearch>;
+public sealed class FindMinimumInRotatedSortedArrayBinarySearchTests
+    : FindMinimumInRotatedSortedArrayTestsBase<FindMinimumInRotatedSortedArrayBinarySearch>;

@@ -19,7 +19,10 @@ public abstract class CheckIfWordOccursAsPrefixOfAnyWordInSentenceTestBase<T> wh
     [DataRow("i love eating burger", "burg", 4)]
     [DataRow("this problem is an easy problem", "pro", 2)]
     [DataRow("i am tired", "you", -1)]
-    public void IsPrefixOfWord_WithSentenceAndSearchWord_ReturnsFirstMatchingWordIndexOrMinusOne(string sentence, string searchWord, int expectedResult)
+    public void IsPrefixOfWord_WithSentenceAndSearchWord_ReturnsFirstMatchingWordIndexOrMinusOne(
+        string sentence,
+        string searchWord,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();

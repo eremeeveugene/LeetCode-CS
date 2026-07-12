@@ -17,7 +17,13 @@ public abstract class CheapestFlightsWithinKStopsTestsBase<T> where T : ICheapes
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void FindCheapestPrice_GivenNumberOfCitiesAndFlightDetails_ReturnsMinimumCostWithinStops(int n, int[][] flights, int src, int dst, int k, int expectedResult)
+    public void FindCheapestPrice_GivenNumberOfCitiesAndFlightDetails_ReturnsMinimumCostWithinStops(
+        int n,
+        int[][] flights,
+        int src,
+        int dst,
+        int k,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -31,7 +37,10 @@ public abstract class CheapestFlightsWithinKStopsTestsBase<T> where T : ICheapes
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return [4, new[] { new[] { 0, 1, 100 }, new[] { 1, 2, 100 }, new[] { 2, 0, 100 }, new[] { 1, 3, 600 }, new[] { 2, 3, 200 } }, 0, 3, 1, 700];
+        yield return
+        [
+            4, new[] { new[] { 0, 1, 100 }, new[] { 1, 2, 100 }, new[] { 2, 0, 100 }, new[] { 1, 3, 600 }, new[] { 2, 3, 200 } }, 0, 3, 1, 700
+        ];
 
         yield return [3, new[] { new[] { 0, 1, 100 }, new[] { 1, 2, 100 }, new[] { 0, 2, 500 } }, 0, 2, 1, 200];
 

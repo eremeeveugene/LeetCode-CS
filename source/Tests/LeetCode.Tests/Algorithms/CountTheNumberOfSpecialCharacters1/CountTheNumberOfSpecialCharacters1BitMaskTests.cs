@@ -14,4 +14,5 @@ using LeetCode.Algorithms.CountTheNumberOfSpecialCharacters1;
 namespace LeetCode.Tests.Algorithms.CountTheNumberOfSpecialCharacters1;
 
 [TestClass]
-public sealed class CountTheNumberOfSpecialCharacters1BitMaskTests : CountTheNumberOfSpecialCharacters1TestsBase<CountTheNumberOfSpecialCharacters1BitMask>;
+public sealed class CountTheNumberOfSpecialCharacters1BitMaskTests
+    : CountTheNumberOfSpecialCharacters1TestsBase<CountTheNumberOfSpecialCharacters1BitMask>;

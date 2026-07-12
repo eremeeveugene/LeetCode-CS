@@ -37,7 +37,11 @@ public abstract class FindTheMinimumAreaToCoverAllOnes1TestsBase<T> where T : IF
 
         yield return [new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 1, 0 } }, 1];
 
-        yield return [new[] { new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 1, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 0, 0, 0, 0 } }, 9];
+        yield return
+        [
+            new[] { new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 1, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 0, 0, 0, 0 } },
+            9
+        ];
 
         yield return [new[] { new[] { 0, 0, 0, 1 }, new[] { 0, 0, 0, 0 }, new[] { 0, 1, 0, 0 }, new[] { 0, 0, 0, 1 } }, 12];
 

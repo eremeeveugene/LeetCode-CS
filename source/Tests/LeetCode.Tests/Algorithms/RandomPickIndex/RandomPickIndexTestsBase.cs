@@ -46,15 +46,33 @@ public abstract class RandomPickIndexTestsBase
 
     private static IEnumerable<RandomPickIndexScenario[]> GetScenarios()
     {
-        yield return [new RandomPickIndexScenario([1, 2, 3, 3, 3], [new PickOperation(3), new PickOperation(1)], [new PickOperation.Result([2, 3, 4]), new PickOperation.Result([0])])];
+        yield return
+        [
+            new RandomPickIndexScenario(
+                [1, 2, 3, 3, 3],
+                [new PickOperation(3), new PickOperation(1)],
+                [new PickOperation.Result([2, 3, 4]), new PickOperation.Result([0])])
+        ];
 
-        yield return [new RandomPickIndexScenario([1, 1, 1, 1], [new PickOperation(1), new PickOperation(1)], [new PickOperation.Result([0, 1, 2, 3]), new PickOperation.Result([0, 1, 2, 3])])];
+        yield return
+        [
+            new RandomPickIndexScenario(
+                [1, 1, 1, 1],
+                [new PickOperation(1), new PickOperation(1)],
+                [new PickOperation.Result([0, 1, 2, 3]), new PickOperation.Result([0, 1, 2, 3])])
+        ];
 
         yield return [new RandomPickIndexScenario([-1, -2, -1, -3, -1], [new PickOperation(-1)], [new PickOperation.Result([0, 2, 4])])];
 
         yield return [new RandomPickIndexScenario([5], [new PickOperation(5)], [new PickOperation.Result([0])])];
 
-        yield return [new RandomPickIndexScenario([1, 2, 1, 2, 1], [new PickOperation(1), new PickOperation(2)], [new PickOperation.Result([0, 2, 4]), new PickOperation.Result([1, 3])])];
+        yield return
+        [
+            new RandomPickIndexScenario(
+                [1, 2, 1, 2, 1],
+                [new PickOperation(1), new PickOperation(2)],
+                [new PickOperation.Result([0, 2, 4]), new PickOperation.Result([1, 3])])
+        ];
 
         yield return [new RandomPickIndexScenario([0, 0, 0, 0, 0], [new PickOperation(0)], [new PickOperation.Result([0, 1, 2, 3, 4])])];
 
@@ -62,29 +80,68 @@ public abstract class RandomPickIndexTestsBase
 
         yield return [new RandomPickIndexScenario([100, 200, 100, 300, 100], [new PickOperation(100)], [new PickOperation.Result([0, 2, 4])])];
 
-        yield return [new RandomPickIndexScenario([-5, -5, 5, 5], [new PickOperation(-5), new PickOperation(5)], [new PickOperation.Result([0, 1]), new PickOperation.Result([2, 3])])];
+        yield return
+        [
+            new RandomPickIndexScenario(
+                [-5, -5, 5, 5],
+                [new PickOperation(-5), new PickOperation(5)],
+                [new PickOperation.Result([0, 1]), new PickOperation.Result([2, 3])])
+        ];
 
         yield return [new RandomPickIndexScenario([1, 2, 3, 4, 5], [new PickOperation(3)], [new PickOperation.Result([2])])];
 
         yield return [new RandomPickIndexScenario([2, 2, 2, 2, 2, 2, 2], [new PickOperation(2)], [new PickOperation.Result([0, 1, 2, 3, 4, 5, 6])])];
 
-        yield return [new RandomPickIndexScenario([1, 3, 1, 3, 1, 3, 1], [new PickOperation(1), new PickOperation(3)], [new PickOperation.Result([0, 2, 4, 6]), new PickOperation.Result([1, 3, 5])])];
+        yield return
+        [
+            new RandomPickIndexScenario(
+                [1, 3, 1, 3, 1, 3, 1],
+                [new PickOperation(1), new PickOperation(3)],
+                [new PickOperation.Result([0, 2, 4, 6]), new PickOperation.Result([1, 3, 5])])
+        ];
 
-        yield return [new RandomPickIndexScenario([9, 9, 9], [new PickOperation(9), new PickOperation(9), new PickOperation(9)], [new PickOperation.Result([0, 1, 2]), new PickOperation.Result([0, 1, 2]), new PickOperation.Result([0, 1, 2])])];
+        yield return
+        [
+            new RandomPickIndexScenario(
+                [9, 9, 9],
+                [new PickOperation(9), new PickOperation(9), new PickOperation(9)],
+                [new PickOperation.Result([0, 1, 2]), new PickOperation.Result([0, 1, 2]), new PickOperation.Result([0, 1, 2])])
+        ];
 
         yield return [new RandomPickIndexScenario([-10, 10, -10, 10], [new PickOperation(-10)], [new PickOperation.Result([0, 2])])];
 
-        yield return [new RandomPickIndexScenario([1, 1, 2, 2, 3, 3], [new PickOperation(1), new PickOperation(2), new PickOperation(3)], [new PickOperation.Result([0, 1]), new PickOperation.Result([2, 3]), new PickOperation.Result([4, 5])])];
+        yield return
+        [
+            new RandomPickIndexScenario(
+                [1, 1, 2, 2, 3, 3],
+                [new PickOperation(1), new PickOperation(2), new PickOperation(3)],
+                [new PickOperation.Result([0, 1]), new PickOperation.Result([2, 3]), new PickOperation.Result([4, 5])])
+        ];
 
         yield return [new RandomPickIndexScenario([4], [new PickOperation(4)], [new PickOperation.Result([0])])];
 
-        yield return [new RandomPickIndexScenario([1, 2, 3, 2, 1], [new PickOperation(1), new PickOperation(2), new PickOperation(3)], [new PickOperation.Result([0, 4]), new PickOperation.Result([1, 3]), new PickOperation.Result([2])])];
+        yield return
+        [
+            new RandomPickIndexScenario(
+                [1, 2, 3, 2, 1],
+                [new PickOperation(1), new PickOperation(2), new PickOperation(3)],
+                [new PickOperation.Result([0, 4]), new PickOperation.Result([1, 3]), new PickOperation.Result([2])])
+        ];
 
         yield return [new RandomPickIndexScenario([6, 6, 6, 6], [new PickOperation(6)], [new PickOperation.Result([0, 1, 2, 3])])];
 
-        yield return [new RandomPickIndexScenario([0, 1, 0, 1, 0, 1, 0], [new PickOperation(0), new PickOperation(1)], [new PickOperation.Result([0, 2, 4, 6]), new PickOperation.Result([1, 3, 5])])];
+        yield return
+        [
+            new RandomPickIndexScenario(
+                [0, 1, 0, 1, 0, 1, 0],
+                [new PickOperation(0), new PickOperation(1)],
+                [new PickOperation.Result([0, 2, 4, 6]), new PickOperation.Result([1, 3, 5])])
+        ];
 
-        yield return [new RandomPickIndexScenario([3, 3, 3, 3, 3, 3, 3, 3], [new PickOperation(3)], [new PickOperation.Result([0, 1, 2, 3, 4, 5, 6, 7])])];
+        yield return
+        [
+            new RandomPickIndexScenario([3, 3, 3, 3, 3, 3, 3, 3], [new PickOperation(3)], [new PickOperation.Result([0, 1, 2, 3, 4, 5, 6, 7])])
+        ];
     }
 
     public sealed class RandomPickIndexScenario : IScenario<IRandomPickIndex>

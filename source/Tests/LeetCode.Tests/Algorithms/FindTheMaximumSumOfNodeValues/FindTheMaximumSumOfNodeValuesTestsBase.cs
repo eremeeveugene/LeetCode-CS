@@ -17,7 +17,11 @@ public abstract class FindTheMaximumSumOfNodeValuesTestsBase<T> where T : IFindT
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MaximumValueSum_WithValuesEdgesAndXorKey_ReturnsHighestPossibleSumAfterOperations(int[] nums, int k, int[][] edges, long expectedResult)
+    public void MaximumValueSum_WithValuesEdgesAndXorKey_ReturnsHighestPossibleSumAfterOperations(
+        int[] nums,
+        int k,
+        int[][] edges,
+        long expectedResult)
     {
         // Arrange
         var solution = new T();

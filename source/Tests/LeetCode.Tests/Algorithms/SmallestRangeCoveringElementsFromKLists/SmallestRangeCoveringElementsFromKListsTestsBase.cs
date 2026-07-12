@@ -17,7 +17,9 @@ public abstract class SmallestRangeCoveringElementsFromKListsTestsBase<T> where 
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void SmallestRange_WithMultipleSortedLists_ReturnsMinimumRangeIncludingAtLeastOneElementFromEachList(IList<IList<int>> nums, int[] expectedResult)
+    public void SmallestRange_WithMultipleSortedLists_ReturnsMinimumRangeIncludingAtLeastOneElementFromEachList(
+        IList<IList<int>> nums,
+        int[] expectedResult)
     {
         // Arrange
         var solution = new T();

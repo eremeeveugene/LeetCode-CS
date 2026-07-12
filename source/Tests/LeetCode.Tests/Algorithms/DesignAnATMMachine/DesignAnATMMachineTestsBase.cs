@@ -46,33 +46,109 @@ public abstract class DesignAnATMMachineTestsBase
 
     private static IEnumerable<IScenario<IDesignAnATMMachine>[]> GetScenarios()
     {
-        yield return [new Scenario<IDesignAnATMMachine>([new DepositOperation([0, 0, 0, 0, 1]), new WithdrawOperation(500), new WithdrawOperation(500)], [VoidOperationResult.Instance, new WithdrawOperation.Result([0, 0, 0, 0, 1]), new WithdrawOperation.Result([-1])])];
+        yield return
+        [
+            new Scenario<IDesignAnATMMachine>(
+                [new DepositOperation([0, 0, 0, 0, 1]), new WithdrawOperation(500), new WithdrawOperation(500)],
+                [VoidOperationResult.Instance, new WithdrawOperation.Result([0, 0, 0, 0, 1]), new WithdrawOperation.Result([-1])])
+        ];
 
-        yield return [new Scenario<IDesignAnATMMachine>([new DepositOperation([1, 1, 1, 1, 1]), new WithdrawOperation(870)], [VoidOperationResult.Instance, new WithdrawOperation.Result([1, 1, 1, 1, 1])])];
+        yield return
+        [
+            new Scenario<IDesignAnATMMachine>(
+                [new DepositOperation([1, 1, 1, 1, 1]), new WithdrawOperation(870)],
+                [VoidOperationResult.Instance, new WithdrawOperation.Result([1, 1, 1, 1, 1])])
+        ];
 
-        yield return [new Scenario<IDesignAnATMMachine>([new DepositOperation([10, 0, 0, 0, 0]), new WithdrawOperation(200)], [VoidOperationResult.Instance, new WithdrawOperation.Result([10, 0, 0, 0, 0])])];
+        yield return
+        [
+            new Scenario<IDesignAnATMMachine>(
+                [new DepositOperation([10, 0, 0, 0, 0]), new WithdrawOperation(200)],
+                [VoidOperationResult.Instance, new WithdrawOperation.Result([10, 0, 0, 0, 0])])
+        ];
 
-        yield return [new Scenario<IDesignAnATMMachine>([new DepositOperation([0, 0, 2, 0, 0]), new WithdrawOperation(300)], [VoidOperationResult.Instance, new WithdrawOperation.Result([-1])])];
+        yield return
+        [
+            new Scenario<IDesignAnATMMachine>(
+                [new DepositOperation([0, 0, 2, 0, 0]), new WithdrawOperation(300)],
+                [VoidOperationResult.Instance, new WithdrawOperation.Result([-1])])
+        ];
 
-        yield return [new Scenario<IDesignAnATMMachine>([new DepositOperation([0, 1, 1, 0, 0]), new WithdrawOperation(150)], [VoidOperationResult.Instance, new WithdrawOperation.Result([0, 1, 1, 0, 0])])];
+        yield return
+        [
+            new Scenario<IDesignAnATMMachine>(
+                [new DepositOperation([0, 1, 1, 0, 0]), new WithdrawOperation(150)],
+                [VoidOperationResult.Instance, new WithdrawOperation.Result([0, 1, 1, 0, 0])])
+        ];
 
-        yield return [new Scenario<IDesignAnATMMachine>([new DepositOperation([0, 0, 1, 0, 1]), new WithdrawOperation(700)], [VoidOperationResult.Instance, new WithdrawOperation.Result([-1])])];
+        yield return
+        [
+            new Scenario<IDesignAnATMMachine>(
+                [new DepositOperation([0, 0, 1, 0, 1]), new WithdrawOperation(700)],
+                [VoidOperationResult.Instance, new WithdrawOperation.Result([-1])])
+        ];
 
-        yield return [new Scenario<IDesignAnATMMachine>([new DepositOperation([0, 0, 5, 0, 0]), new WithdrawOperation(500), new WithdrawOperation(100)], [VoidOperationResult.Instance, new WithdrawOperation.Result([0, 0, 5, 0, 0]), new WithdrawOperation.Result([-1])])];
+        yield return
+        [
+            new Scenario<IDesignAnATMMachine>(
+                [new DepositOperation([0, 0, 5, 0, 0]), new WithdrawOperation(500), new WithdrawOperation(100)],
+                [VoidOperationResult.Instance, new WithdrawOperation.Result([0, 0, 5, 0, 0]), new WithdrawOperation.Result([-1])])
+        ];
 
-        yield return [new Scenario<IDesignAnATMMachine>([new DepositOperation([0, 0, 0, 0, 0]), new WithdrawOperation(20)], [VoidOperationResult.Instance, new WithdrawOperation.Result([-1])])];
+        yield return
+        [
+            new Scenario<IDesignAnATMMachine>(
+                [new DepositOperation([0, 0, 0, 0, 0]), new WithdrawOperation(20)],
+                [VoidOperationResult.Instance, new WithdrawOperation.Result([-1])])
+        ];
 
-        yield return [new Scenario<IDesignAnATMMachine>([new DepositOperation([1, 1, 1, 1, 1]), new WithdrawOperation(20 + 50 + 100 + 200 + 500)], [VoidOperationResult.Instance, new WithdrawOperation.Result([1, 1, 1, 1, 1])])];
+        yield return
+        [
+            new Scenario<IDesignAnATMMachine>(
+                [new DepositOperation([1, 1, 1, 1, 1]), new WithdrawOperation(20 + 50 + 100 + 200 + 500)],
+                [VoidOperationResult.Instance, new WithdrawOperation.Result([1, 1, 1, 1, 1])])
+        ];
 
-        yield return [new Scenario<IDesignAnATMMachine>([new DepositOperation([1, 0, 0, 0, 0]), new DepositOperation([1, 0, 0, 0, 0]), new WithdrawOperation(20)], [VoidOperationResult.Instance, VoidOperationResult.Instance, new WithdrawOperation.Result([1, 0, 0, 0, 0])])];
+        yield return
+        [
+            new Scenario<IDesignAnATMMachine>(
+                [new DepositOperation([1, 0, 0, 0, 0]), new DepositOperation([1, 0, 0, 0, 0]), new WithdrawOperation(20)],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, new WithdrawOperation.Result([1, 0, 0, 0, 0])])
+        ];
 
-        yield return [new Scenario<IDesignAnATMMachine>([new DepositOperation([0, 0, 0, 2, 0]), new WithdrawOperation(200), new WithdrawOperation(200)], [VoidOperationResult.Instance, new WithdrawOperation.Result([0, 0, 0, 1, 0]), new WithdrawOperation.Result([0, 0, 0, 1, 0])])];
+        yield return
+        [
+            new Scenario<IDesignAnATMMachine>(
+                [new DepositOperation([0, 0, 0, 2, 0]), new WithdrawOperation(200), new WithdrawOperation(200)],
+                [VoidOperationResult.Instance, new WithdrawOperation.Result([0, 0, 0, 1, 0]), new WithdrawOperation.Result([0, 0, 0, 1, 0])])
+        ];
 
-        yield return [new Scenario<IDesignAnATMMachine>([new DepositOperation([0, 0, 0, 0, 5]), new WithdrawOperation(300)], [VoidOperationResult.Instance, new WithdrawOperation.Result([-1])])];
+        yield return
+        [
+            new Scenario<IDesignAnATMMachine>(
+                [new DepositOperation([0, 0, 0, 0, 5]), new WithdrawOperation(300)],
+                [VoidOperationResult.Instance, new WithdrawOperation.Result([-1])])
+        ];
 
-        yield return [new Scenario<IDesignAnATMMachine>([new DepositOperation([0, 0, 0, 0, 1]), new WithdrawOperation(300), new WithdrawOperation(500)], [VoidOperationResult.Instance, new WithdrawOperation.Result([-1]), new WithdrawOperation.Result([0, 0, 0, 0, 1])])];
+        yield return
+        [
+            new Scenario<IDesignAnATMMachine>(
+                [new DepositOperation([0, 0, 0, 0, 1]), new WithdrawOperation(300), new WithdrawOperation(500)],
+                [VoidOperationResult.Instance, new WithdrawOperation.Result([-1]), new WithdrawOperation.Result([0, 0, 0, 0, 1])])
+        ];
 
-        yield return [new Scenario<IDesignAnATMMachine>([new DepositOperation([0, 0, 0, 0, 1]), new WithdrawOperation(500), new DepositOperation([0, 0, 0, 0, 1]), new WithdrawOperation(500)], [VoidOperationResult.Instance, new WithdrawOperation.Result([0, 0, 0, 0, 1]), VoidOperationResult.Instance, new WithdrawOperation.Result([0, 0, 0, 0, 1])])];
+        yield return
+        [
+            new Scenario<IDesignAnATMMachine>(
+                [
+                    new DepositOperation([0, 0, 0, 0, 1]), new WithdrawOperation(500), new DepositOperation([0, 0, 0, 0, 1]),
+                    new WithdrawOperation(500)
+                ],
+                [
+                    VoidOperationResult.Instance, new WithdrawOperation.Result([0, 0, 0, 0, 1]), VoidOperationResult.Instance,
+                    new WithdrawOperation.Result([0, 0, 0, 0, 1])
+                ])
+        ];
     }
 
     private sealed class DepositOperation : IOperation<IDesignAnATMMachine>

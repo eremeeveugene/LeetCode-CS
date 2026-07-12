@@ -14,4 +14,5 @@ using LeetCode.Algorithms.ProcessStringWithSpecialOperations1;
 namespace LeetCode.Tests.Algorithms.ProcessStringWithSpecialOperations1;
 
 [TestClass]
-public sealed class ProcessStringWithSpecialOperations1SimulationTests : ProcessStringWithSpecialOperations1TestsBase<ProcessStringWithSpecialOperations1Simulation>;
+public sealed class ProcessStringWithSpecialOperations1SimulationTests
+    : ProcessStringWithSpecialOperations1TestsBase<ProcessStringWithSpecialOperations1Simulation>;

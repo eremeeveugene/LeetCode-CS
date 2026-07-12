@@ -31,7 +31,11 @@ public abstract class MostBeautifulItemForEachQueryTestsBase<T> where T : IMostB
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return [new[] { new[] { 1, 2 }, new[] { 3, 2 }, new[] { 2, 4 }, new[] { 5, 6 }, new[] { 3, 5 } }, new[] { 1, 2, 3, 4, 5, 6 }, new[] { 2, 4, 5, 5, 6, 6 }];
+        yield return
+        [
+            new[] { new[] { 1, 2 }, new[] { 3, 2 }, new[] { 2, 4 }, new[] { 5, 6 }, new[] { 3, 5 } }, new[] { 1, 2, 3, 4, 5, 6 },
+            new[] { 2, 4, 5, 5, 6, 6 }
+        ];
 
         yield return [new[] { new[] { 1, 2 }, new[] { 1, 2 }, new[] { 1, 3 }, new[] { 1, 4 } }, new[] { 1 }, new[] { 4 }];
 

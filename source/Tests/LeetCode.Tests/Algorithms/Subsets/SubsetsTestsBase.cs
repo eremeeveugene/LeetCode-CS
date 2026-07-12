@@ -32,7 +32,14 @@ public abstract class SubsetsTestsBase<T> where T : ISubsets, new()
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return [new[] { 1, 2, 3 }, new IList<int>[] { Array.Empty<int>(), new[] { 1 }, new[] { 2 }, new[] { 1, 2 }, new[] { 3 }, new[] { 1, 3 }, new[] { 2, 3 }, new[] { 1, 2, 3 } }];
+        yield return
+        [
+            new[] { 1, 2, 3 },
+            new IList<int>[]
+            {
+                Array.Empty<int>(), new[] { 1 }, new[] { 2 }, new[] { 1, 2 }, new[] { 3 }, new[] { 1, 3 }, new[] { 2, 3 }, new[] { 1, 2, 3 }
+            }
+        ];
 
         yield return [new[] { 0 }, new IList<int>[] { Array.Empty<int>(), new[] { 0 } }];
     }

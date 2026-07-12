@@ -16,9 +16,21 @@ namespace LeetCode.Tests.Algorithms.CouponCodeValidator;
 public abstract class CouponCodeValidatorTestsBase<T> where T : ICouponCodeValidator, new()
 {
     [TestMethod]
-    [DataRow(new[] { "SAVE20", "", "PHARMA5", "SAVE@20" }, new[] { "restaurant", "grocery", "pharmacy", "restaurant" }, new[] { true, true, true, true }, new[] { "PHARMA5", "SAVE20" })]
-    [DataRow(new[] { "GROCERY15", "ELECTRONICS_50", "DISCOUNT10" }, new[] { "grocery", "electronics", "invalid" }, new[] { false, true, true }, new[] { "ELECTRONICS_50" })]
-    public void ValidateCoupons_WithMixedCodesAndActiveFlags_ReturnsOnlyActiveValidCoupons(string[] code, string[] businessLine, bool[] isActive, string[] expectedResult)
+    [DataRow(
+        new[] { "SAVE20", "", "PHARMA5", "SAVE@20" },
+        new[] { "restaurant", "grocery", "pharmacy", "restaurant" },
+        new[] { true, true, true, true },
+        new[] { "PHARMA5", "SAVE20" })]
+    [DataRow(
+        new[] { "GROCERY15", "ELECTRONICS_50", "DISCOUNT10" },
+        new[] { "grocery", "electronics", "invalid" },
+        new[] { false, true, true },
+        new[] { "ELECTRONICS_50" })]
+    public void ValidateCoupons_WithMixedCodesAndActiveFlags_ReturnsOnlyActiveValidCoupons(
+        string[] code,
+        string[] businessLine,
+        bool[] isActive,
+        string[] expectedResult)
     {
         // Arrange
         var solution = new T();

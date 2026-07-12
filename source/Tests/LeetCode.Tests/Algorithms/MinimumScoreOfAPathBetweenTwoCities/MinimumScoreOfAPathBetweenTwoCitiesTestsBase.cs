@@ -47,7 +47,10 @@ public abstract class MinimumScoreOfAPathBetweenTwoCitiesTestsBase<T> where T : 
 
         yield return [3, new[] { new[] { 1, 2, 100 }, new[] { 1, 3, 1 } }, 1];
 
-        yield return [6, new[] { new[] { 1, 2, 5 }, new[] { 1, 3, 3 }, new[] { 2, 4, 2 }, new[] { 3, 4, 1 }, new[] { 4, 5, 6 }, new[] { 5, 6, 7 } }, 1];
+        yield return
+        [
+            6, new[] { new[] { 1, 2, 5 }, new[] { 1, 3, 3 }, new[] { 2, 4, 2 }, new[] { 3, 4, 1 }, new[] { 4, 5, 6 }, new[] { 5, 6, 7 } }, 1
+        ];
 
         yield return [6, new[] { new[] { 1, 2, 5 }, new[] { 2, 4, 3 }, new[] { 1, 4, 10 }, new[] { 5, 6, 1 } }, 3];
 
@@ -59,7 +62,21 @@ public abstract class MinimumScoreOfAPathBetweenTwoCitiesTestsBase<T> where T : 
 
         yield return [5, new[] { new[] { 1, 2, 3 }, new[] { 1, 3, 7 }, new[] { 1, 4, 2 }, new[] { 1, 5, 9 } }, 2];
 
-        yield return [8, new[] { new[] { 1, 2, 8 }, new[] { 2, 3, 7 }, new[] { 3, 4, 6 }, new[] { 4, 5, 5 }, new[] { 5, 6, 4 }, new[] { 6, 7, 3 }, new[] { 7, 8, 2 } }, 2];
+        yield return
+        [
+            8,
+            new[]
+            {
+                new[] { 1, 2, 8 },
+                new[] { 2, 3, 7 },
+                new[] { 3, 4, 6 },
+                new[] { 4, 5, 5 },
+                new[] { 5, 6, 4 },
+                new[] { 6, 7, 3 },
+                new[] { 7, 8, 2 }
+            },
+            2
+        ];
 
         yield return [6, new[] { new[] { 1, 2, 5 }, new[] { 2, 3, 1 }, new[] { 3, 4, 5 }, new[] { 4, 6, 2 } }, 1];
 
@@ -67,7 +84,23 @@ public abstract class MinimumScoreOfAPathBetweenTwoCitiesTestsBase<T> where T : 
 
         yield return [3, new[] { new[] { 1, 3, 50 }, new[] { 1, 2, 4 }, new[] { 2, 3, 6 } }, 4];
 
-        yield return [10, new[] { new[] { 1, 2, 9 }, new[] { 2, 3, 8 }, new[] { 3, 4, 2 }, new[] { 4, 5, 7 }, new[] { 5, 6, 6 }, new[] { 6, 7, 5 }, new[] { 7, 8, 4 }, new[] { 8, 9, 3 }, new[] { 9, 10, 10 } }, 2];
+        yield return
+        [
+            10,
+            new[]
+            {
+                new[] { 1, 2, 9 },
+                new[] { 2, 3, 8 },
+                new[] { 3, 4, 2 },
+                new[] { 4, 5, 7 },
+                new[] { 5, 6, 6 },
+                new[] { 6, 7, 5 },
+                new[] { 7, 8, 4 },
+                new[] { 8, 9, 3 },
+                new[] { 9, 10, 10 }
+            },
+            2
+        ];
 
         yield return [2, new[] { new[] { 2, 1, 3 } }, 3];
 

@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MaximumUniqueSubarraySumAfterDeletion;
 namespace LeetCode.Tests.Algorithms.MaximumUniqueSubarraySumAfterDeletion;
 
 [TestClass]
-public class MaximumUniqueSubarraySumAfterDeletionHashSetTests : MaximumUniqueSubarraySumAfterDeletionTestsBase<MaximumUniqueSubarraySumAfterDeletionHashSet>;
+public class MaximumUniqueSubarraySumAfterDeletionHashSetTests
+    : MaximumUniqueSubarraySumAfterDeletionTestsBase<MaximumUniqueSubarraySumAfterDeletionHashSet>;

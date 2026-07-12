@@ -14,4 +14,5 @@ using LeetCode.Algorithms.SmallestSubtreeWithAllTheDeepestNodes;
 namespace LeetCode.Tests.Algorithms.SmallestSubtreeWithAllTheDeepestNodes;
 
 [TestClass]
-public sealed class SmallestSubtreeWithAllTheDeepestNodesDepthFirstSearchTests : SmallestSubtreeWithAllTheDeepestNodesTestsBase<SmallestSubtreeWithAllTheDeepestNodesDepthFirstSearch>;
+public sealed class SmallestSubtreeWithAllTheDeepestNodesDepthFirstSearchTests
+    : SmallestSubtreeWithAllTheDeepestNodesTestsBase<SmallestSubtreeWithAllTheDeepestNodesDepthFirstSearch>;

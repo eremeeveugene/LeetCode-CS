@@ -13,7 +13,8 @@ using LeetCode.Algorithms.CountOfSubstringsContainingEveryVowelAndKConsonants2;
 
 namespace LeetCode.Tests.Algorithms.CountOfSubstringsContainingEveryVowelAndKConsonants2;
 
-public abstract class CountOfSubstringsContainingEveryVowelAndKConsonants2TestsBase<T> where T : ICountOfSubstringsContainingEveryVowelAndKConsonants2, new()
+public abstract class CountOfSubstringsContainingEveryVowelAndKConsonants2TestsBase<T>
+    where T : ICountOfSubstringsContainingEveryVowelAndKConsonants2, new()
 {
     [TestMethod]
     [DataRow("aeioqq", 1, 0)]

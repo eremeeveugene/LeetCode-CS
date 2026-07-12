@@ -18,7 +18,10 @@ public abstract class MaximumMatchingOfPlayersWithTrainersTestsBase<T> where T :
     [TestMethod]
     [DataRow(new[] { 4, 7, 9 }, new[] { 8, 2, 5, 8 }, 2L)]
     [DataRow(new[] { 1, 1, 1 }, new[] { 10 }, 1L)]
-    public void MatchPlayersAndTrainers_WithPlayerAbilitiesAndTrainerCapacities_ReturnsMaximumMatchingCount(int[] players, int[] trainers, long expectedResult)
+    public void MatchPlayersAndTrainers_WithPlayerAbilitiesAndTrainerCapacities_ReturnsMaximumMatchingCount(
+        int[] players,
+        int[] trainers,
+        long expectedResult)
     {
         // Arrange
         var solution = new T();

@@ -13,7 +13,8 @@ using LeetCode.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInThree
 
 namespace LeetCode.Tests.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves;
 
-public abstract class MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesTestsBase<T> where T : IMinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves, new()
+public abstract class MinimumDifferenceBetweenLargestAndSmallestValueInThreeMovesTestsBase<T>
+    where T : IMinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves, new()
 {
     [TestMethod]
     [DataRow(new[] { 5, 3, 2, 4 }, 0)]

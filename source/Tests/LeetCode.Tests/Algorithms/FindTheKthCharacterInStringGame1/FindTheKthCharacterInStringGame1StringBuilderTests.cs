@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FindTheKthCharacterInStringGame1;
 namespace LeetCode.Tests.Algorithms.FindTheKthCharacterInStringGame1;
 
 [TestClass]
-public sealed class FindTheKthCharacterInStringGame1StringBuilderTests : FindTheKthCharacterInStringGame1TestsBase<FindTheKthCharacterInStringGame1StringBuilder>;
+public sealed class FindTheKthCharacterInStringGame1StringBuilderTests
+    : FindTheKthCharacterInStringGame1TestsBase<FindTheKthCharacterInStringGame1StringBuilder>;

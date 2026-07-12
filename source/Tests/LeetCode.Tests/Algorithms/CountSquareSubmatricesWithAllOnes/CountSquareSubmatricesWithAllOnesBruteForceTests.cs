@@ -14,4 +14,5 @@ using LeetCode.Algorithms.CountSquareSubmatricesWithAllOnes;
 namespace LeetCode.Tests.Algorithms.CountSquareSubmatricesWithAllOnes;
 
 [TestClass]
-public sealed class CountSquareSubmatricesWithAllOnesBruteForceTests : CountSquareSubmatricesWithAllOnesTestsBase<CountSquareSubmatricesWithAllOnesBruteForce>;
+public sealed class CountSquareSubmatricesWithAllOnesBruteForceTests
+    : CountSquareSubmatricesWithAllOnesTestsBase<CountSquareSubmatricesWithAllOnesBruteForce>;

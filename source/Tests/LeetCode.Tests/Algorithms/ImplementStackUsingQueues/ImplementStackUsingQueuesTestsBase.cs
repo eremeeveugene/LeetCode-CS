@@ -19,7 +19,11 @@ public abstract class ImplementStackUsingQueuesTestsBase<T> where T : IImplement
     [DataRow(new[] { 1, 2, 3 }, 3, 3, 2)]
     [DataRow(new[] { 5, 10, 15, 20 }, 20, 20, 15)]
     [DataRow(new[] { 42 }, 42, 42, null)]
-    public void StackOperations_WithPushElements_VerifiesTopPopAndStateAfterPop(int[] pushElements, int topExpected, int popExpected, int? popAfterTopExpected)
+    public void StackOperations_WithPushElements_VerifiesTopPopAndStateAfterPop(
+        int[] pushElements,
+        int topExpected,
+        int popExpected,
+        int? popAfterTopExpected)
     {
         // Arrange
         var solution = new T();

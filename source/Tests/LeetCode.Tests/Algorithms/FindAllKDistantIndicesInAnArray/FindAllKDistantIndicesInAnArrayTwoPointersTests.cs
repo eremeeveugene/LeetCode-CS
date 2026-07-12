@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FindAllKDistantIndicesInAnArray;
 namespace LeetCode.Tests.Algorithms.FindAllKDistantIndicesInAnArray;
 
 [TestClass]
-public sealed class FindAllKDistantIndicesInAnArrayTwoPointersTests : FindAllKDistantIndicesInAnArrayTestsBase<FindAllKDistantIndicesInAnArrayTwoPointers>;
+public sealed class FindAllKDistantIndicesInAnArrayTwoPointersTests
+    : FindAllKDistantIndicesInAnArrayTestsBase<FindAllKDistantIndicesInAnArrayTwoPointers>;

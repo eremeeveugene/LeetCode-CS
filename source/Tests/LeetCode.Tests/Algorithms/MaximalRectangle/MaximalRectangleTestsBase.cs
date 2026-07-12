@@ -35,6 +35,16 @@ public abstract class MaximalRectangleTestsBase<T> where T : IMaximalRectangle, 
 
         yield return [new[] { new[] { '1' } }, 1];
 
-        yield return [new[] { new[] { '1', '0', '1', '0', '0' }, new[] { '1', '0', '1', '1', '1' }, new[] { '1', '1', '1', '1', '1' }, new[] { '1', '0', '0', '1', '0' } }, 6];
+        yield return
+        [
+            new[]
+            {
+                new[] { '1', '0', '1', '0', '0' },
+                new[] { '1', '0', '1', '1', '1' },
+                new[] { '1', '1', '1', '1', '1' },
+                new[] { '1', '0', '0', '1', '0' }
+            },
+            6
+        ];
     }
 }

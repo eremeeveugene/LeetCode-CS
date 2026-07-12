@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MinimumRemovalsToBalanceArray;
 namespace LeetCode.Tests.Algorithms.MinimumRemovalsToBalanceArray;
 
 [TestClass]
-public sealed class MinimumRemovalsToBalanceArraySlidingWindowTests : MinimumRemovalsToBalanceArrayTestsBase<MinimumRemovalsToBalanceArraySlidingWindow>;
+public sealed class MinimumRemovalsToBalanceArraySlidingWindowTests
+    : MinimumRemovalsToBalanceArrayTestsBase<MinimumRemovalsToBalanceArraySlidingWindow>;

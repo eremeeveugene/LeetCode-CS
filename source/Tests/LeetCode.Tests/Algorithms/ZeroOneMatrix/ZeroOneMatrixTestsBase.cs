@@ -31,10 +31,19 @@ public abstract class ZeroOneMatrixTestsBase<T> where T : IZeroOneMatrix, new()
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return [new[] { new[] { 0, 0, 0 }, new[] { 0, 1, 0 }, new[] { 0, 0, 0 } }, new[] { new[] { 0, 0, 0 }, new[] { 0, 1, 0 }, new[] { 0, 0, 0 } }];
-        yield return [new[] { new[] { 0, 0, 0 }, new[] { 0, 1, 0 }, new[] { 1, 1, 1 } }, new[] { new[] { 0, 0, 0 }, new[] { 0, 1, 0 }, new[] { 1, 2, 1 } }];
+        yield return
+        [
+            new[] { new[] { 0, 0, 0 }, new[] { 0, 1, 0 }, new[] { 0, 0, 0 } }, new[] { new[] { 0, 0, 0 }, new[] { 0, 1, 0 }, new[] { 0, 0, 0 } }
+        ];
+        yield return
+        [
+            new[] { new[] { 0, 0, 0 }, new[] { 0, 1, 0 }, new[] { 1, 1, 1 } }, new[] { new[] { 0, 0, 0 }, new[] { 0, 1, 0 }, new[] { 1, 2, 1 } }
+        ];
         yield return [new[] { new[] { 1, 0 }, new[] { 1, 1 } }, new[] { new[] { 1, 0 }, new[] { 2, 1 } }];
-        yield return [new[] { new[] { 1, 1, 0 }, new[] { 0, 1, 1 }, new[] { 1, 1, 1 } }, new[] { new[] { 1, 1, 0 }, new[] { 0, 1, 1 }, new[] { 1, 2, 2 } }];
+        yield return
+        [
+            new[] { new[] { 1, 1, 0 }, new[] { 0, 1, 1 }, new[] { 1, 1, 1 } }, new[] { new[] { 1, 1, 0 }, new[] { 0, 1, 1 }, new[] { 1, 2, 2 } }
+        ];
         yield return [new[] { new[] { 0 } }, new[] { new[] { 0 } }];
         yield return [new[] { new[] { 0, 1 } }, new[] { new[] { 0, 1 } }];
         yield return [new[] { new[] { 1, 0 } }, new[] { new[] { 1, 0 } }];
@@ -47,15 +56,37 @@ public abstract class ZeroOneMatrixTestsBase<T> where T : IZeroOneMatrix, new()
         yield return [new[] { new[] { 1 }, new[] { 0 }, new[] { 1 } }, new[] { new[] { 1 }, new[] { 0 }, new[] { 1 } }];
         yield return [new[] { new[] { 0, 0 }, new[] { 0, 0 } }, new[] { new[] { 0, 0 }, new[] { 0, 0 } }];
         yield return [new[] { new[] { 0, 1, 1, 1, 0 } }, new[] { new[] { 0, 1, 2, 1, 0 } }];
-        yield return [new[] { new[] { 1, 1, 1 }, new[] { 1, 0, 1 }, new[] { 1, 1, 1 } }, new[] { new[] { 2, 1, 2 }, new[] { 1, 0, 1 }, new[] { 2, 1, 2 } }];
-        yield return [new[] { new[] { 0, 1, 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 0 } }, new[] { new[] { 0, 1, 2 }, new[] { 1, 2, 1 }, new[] { 2, 1, 0 } }];
+        yield return
+        [
+            new[] { new[] { 1, 1, 1 }, new[] { 1, 0, 1 }, new[] { 1, 1, 1 } }, new[] { new[] { 2, 1, 2 }, new[] { 1, 0, 1 }, new[] { 2, 1, 2 } }
+        ];
+        yield return
+        [
+            new[] { new[] { 0, 1, 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 0 } }, new[] { new[] { 0, 1, 2 }, new[] { 1, 2, 1 }, new[] { 2, 1, 0 } }
+        ];
         yield return [new[] { new[] { 1, 1 }, new[] { 1, 1 }, new[] { 1, 0 } }, new[] { new[] { 3, 2 }, new[] { 2, 1 }, new[] { 1, 0 } }];
         yield return [new[] { new[] { 0, 1, 1, 1 } }, new[] { new[] { 0, 1, 2, 3 } }];
         yield return [new[] { new[] { 0 }, new[] { 1 }, new[] { 1 }, new[] { 1 } }, new[] { new[] { 0 }, new[] { 1 }, new[] { 2 }, new[] { 3 } }];
-        yield return [new[] { new[] { 1, 0, 1 }, new[] { 1, 1, 1 }, new[] { 1, 0, 1 } }, new[] { new[] { 1, 0, 1 }, new[] { 2, 1, 2 }, new[] { 1, 0, 1 } }];
-        yield return [new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 0 } }, new[] { new[] { 4, 3, 2 }, new[] { 3, 2, 1 }, new[] { 2, 1, 0 } }];
-        yield return [new[] { new[] { 0, 1, 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 1 } }, new[] { new[] { 0, 1, 2 }, new[] { 1, 2, 3 }, new[] { 2, 3, 4 } }];
-        yield return [new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 1, 1, 0 }, new[] { 0, 1, 1, 0 }, new[] { 0, 0, 0, 0 } }, new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 1, 1, 0 }, new[] { 0, 1, 1, 0 }, new[] { 0, 0, 0, 0 } }];
-        yield return [new[] { new[] { 0, 1, 0 }, new[] { 1, 1, 1 }, new[] { 0, 1, 0 } }, new[] { new[] { 0, 1, 0 }, new[] { 1, 2, 1 }, new[] { 0, 1, 0 } }];
+        yield return
+        [
+            new[] { new[] { 1, 0, 1 }, new[] { 1, 1, 1 }, new[] { 1, 0, 1 } }, new[] { new[] { 1, 0, 1 }, new[] { 2, 1, 2 }, new[] { 1, 0, 1 } }
+        ];
+        yield return
+        [
+            new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 0 } }, new[] { new[] { 4, 3, 2 }, new[] { 3, 2, 1 }, new[] { 2, 1, 0 } }
+        ];
+        yield return
+        [
+            new[] { new[] { 0, 1, 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 1 } }, new[] { new[] { 0, 1, 2 }, new[] { 1, 2, 3 }, new[] { 2, 3, 4 } }
+        ];
+        yield return
+        [
+            new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 1, 1, 0 }, new[] { 0, 1, 1, 0 }, new[] { 0, 0, 0, 0 } },
+            new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 1, 1, 0 }, new[] { 0, 1, 1, 0 }, new[] { 0, 0, 0, 0 } }
+        ];
+        yield return
+        [
+            new[] { new[] { 0, 1, 0 }, new[] { 1, 1, 1 }, new[] { 0, 1, 0 } }, new[] { new[] { 0, 1, 0 }, new[] { 1, 2, 1 }, new[] { 0, 1, 0 } }
+        ];
     }
 }

@@ -31,8 +31,28 @@ public abstract class NumberOfIslandsTestsBase<T> where T : INumberOfIslands, ne
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return [new[] { new[] { '1', '1', '1', '1', '0' }, new[] { '1', '1', '0', '1', '0' }, new[] { '1', '1', '0', '0', '0' }, new[] { '0', '0', '0', '0', '0' } }, 1];
+        yield return
+        [
+            new[]
+            {
+                new[] { '1', '1', '1', '1', '0' },
+                new[] { '1', '1', '0', '1', '0' },
+                new[] { '1', '1', '0', '0', '0' },
+                new[] { '0', '0', '0', '0', '0' }
+            },
+            1
+        ];
 
-        yield return [new[] { new[] { '1', '1', '0', '0', '0' }, new[] { '1', '1', '0', '0', '0' }, new[] { '0', '0', '1', '0', '0' }, new[] { '0', '0', '0', '1', '1' } }, 3];
+        yield return
+        [
+            new[]
+            {
+                new[] { '1', '1', '0', '0', '0' },
+                new[] { '1', '1', '0', '0', '0' },
+                new[] { '0', '0', '1', '0', '0' },
+                new[] { '0', '0', '0', '1', '1' }
+            },
+            3
+        ];
     }
 }

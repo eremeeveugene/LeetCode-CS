@@ -17,7 +17,11 @@ public abstract class MinimumNumberOfPeopleToTeachTestsBase<T> where T : IMinimu
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void MinimumTeachings_WithUsersLackingCommonLanguageInFriendships_ReturnsMinimumUsersToTeach(int languagesCount, int[][] languages, int[][] friendships, int expectedResult)
+    public void MinimumTeachings_WithUsersLackingCommonLanguageInFriendships_ReturnsMinimumUsersToTeach(
+        int languagesCount,
+        int[][] languages,
+        int[][] friendships,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -33,6 +37,10 @@ public abstract class MinimumNumberOfPeopleToTeachTestsBase<T> where T : IMinimu
     {
         yield return [2, new[] { new[] { 1 }, new[] { 2 }, new[] { 1, 2 } }, new[] { new[] { 1, 2 }, new[] { 1, 3 }, new[] { 2, 3 } }, 1];
 
-        yield return [3, new[] { new[] { 2 }, new[] { 1, 3 }, new[] { 1, 2 }, new[] { 3 } }, new[] { new[] { 1, 4 }, new[] { 1, 2 }, new[] { 3, 4 }, new[] { 2, 3 } }, 2];
+        yield return
+        [
+            3, new[] { new[] { 2 }, new[] { 1, 3 }, new[] { 1, 2 }, new[] { 3 } },
+            new[] { new[] { 1, 4 }, new[] { 1, 2 }, new[] { 3, 4 }, new[] { 2, 3 } }, 2
+        ];
     }
 }

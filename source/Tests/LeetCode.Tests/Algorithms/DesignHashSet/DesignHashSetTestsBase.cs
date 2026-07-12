@@ -21,7 +21,10 @@ public abstract class DesignHashSetTestsBase<T> where T : IDesignHashSet, new()
 
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void DesignHashSet_WithMixedOperations_ProcessesOperationsAccordingToSpecification(string[] operations, int[][] arguments, bool[] expectedResult)
+    public void DesignHashSet_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        string[] operations,
+        int[][] arguments,
+        bool[] expectedResult)
     {
         // Arrange
         var solution = new T();
@@ -56,6 +59,11 @@ public abstract class DesignHashSetTestsBase<T> where T : IDesignHashSet, new()
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return [new[] { "add", "add", "contains", "contains", "add", "contains", "remove", "contains" }, new[] { new[] { 1 }, new[] { 2 }, new[] { 1 }, new[] { 3 }, new[] { 2 }, new[] { 2 }, new[] { 2 }, new[] { 2 } }, new[] { true, false, true, false }];
+        yield return
+        [
+            new[] { "add", "add", "contains", "contains", "add", "contains", "remove", "contains" },
+            new[] { new[] { 1 }, new[] { 2 }, new[] { 1 }, new[] { 3 }, new[] { 2 }, new[] { 2 }, new[] { 2 }, new[] { 2 } },
+            new[] { true, false, true, false }
+        ];
     }
 }

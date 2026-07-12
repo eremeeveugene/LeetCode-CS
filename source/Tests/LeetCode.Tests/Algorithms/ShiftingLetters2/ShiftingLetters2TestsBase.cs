@@ -35,6 +35,22 @@ public abstract class ShiftingLetters2TestsBase<T> where T : IShiftingLetters2, 
 
         yield return ["dztz", new[] { new[] { 0, 0, 0 }, new[] { 1, 1, 1 } }, "catz"];
 
-        yield return ["xuwdbdqik", new[] { new[] { 4, 8, 0 }, new[] { 4, 4, 0 }, new[] { 2, 4, 0 }, new[] { 2, 4, 0 }, new[] { 6, 7, 1 }, new[] { 2, 2, 1 }, new[] { 0, 2, 1 }, new[] { 8, 8, 0 }, new[] { 1, 3, 1 } }, "ywxcxcqii"];
+        yield return
+        [
+            "xuwdbdqik",
+            new[]
+            {
+                new[] { 4, 8, 0 },
+                new[] { 4, 4, 0 },
+                new[] { 2, 4, 0 },
+                new[] { 2, 4, 0 },
+                new[] { 6, 7, 1 },
+                new[] { 2, 2, 1 },
+                new[] { 0, 2, 1 },
+                new[] { 8, 8, 0 },
+                new[] { 1, 3, 1 }
+            },
+            "ywxcxcqii"
+        ];
     }
 }

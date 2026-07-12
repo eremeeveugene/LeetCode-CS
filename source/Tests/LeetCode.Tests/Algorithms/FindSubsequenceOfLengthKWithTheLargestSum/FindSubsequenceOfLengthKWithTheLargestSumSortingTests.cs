@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FindSubsequenceOfLengthKWithTheLargestSum;
 namespace LeetCode.Tests.Algorithms.FindSubsequenceOfLengthKWithTheLargestSum;
 
 [TestClass]
-public sealed class FindSubsequenceOfLengthKWithTheLargestSumSortingTests : FindSubsequenceOfLengthKWithTheLargestSumTestsBase<FindSubsequenceOfLengthKWithTheLargestSumSorting>;
+public sealed class FindSubsequenceOfLengthKWithTheLargestSumSortingTests
+    : FindSubsequenceOfLengthKWithTheLargestSumTestsBase<FindSubsequenceOfLengthKWithTheLargestSumSorting>;

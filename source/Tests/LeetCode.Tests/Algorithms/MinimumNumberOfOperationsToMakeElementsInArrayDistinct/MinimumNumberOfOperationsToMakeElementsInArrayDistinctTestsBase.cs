@@ -13,7 +13,8 @@ using LeetCode.Algorithms.MinimumNumberOfOperationsToMakeElementsInArrayDistinct
 
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfOperationsToMakeElementsInArrayDistinct;
 
-public abstract class MinimumNumberOfOperationsToMakeElementsInArrayDistinctTestsBase<T> where T : IMinimumNumberOfOperationsToMakeElementsInArrayDistinct, new()
+public abstract class MinimumNumberOfOperationsToMakeElementsInArrayDistinctTestsBase<T>
+    where T : IMinimumNumberOfOperationsToMakeElementsInArrayDistinct, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 3, 4, 2, 3, 3, 5, 7 }, 2)]

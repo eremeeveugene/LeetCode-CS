@@ -33,6 +33,10 @@ public abstract class FindMinimumDiameterAfterMergingTwoTreesTestsBase<T> where 
     {
         yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 } }, new[] { new[] { 0, 1 } }, 3];
 
-        yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 }, new[] { 2, 4 }, new[] { 2, 5 }, new[] { 3, 6 }, new[] { 2, 7 } }, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 }, new[] { 2, 4 }, new[] { 2, 5 }, new[] { 3, 6 }, new[] { 2, 7 } }, 5];
+        yield return
+        [
+            new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 }, new[] { 2, 4 }, new[] { 2, 5 }, new[] { 3, 6 }, new[] { 2, 7 } },
+            new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 }, new[] { 2, 4 }, new[] { 2, 5 }, new[] { 3, 6 }, new[] { 2, 7 } }, 5
+        ];
     }
 }

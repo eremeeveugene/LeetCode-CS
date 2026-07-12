@@ -14,4 +14,5 @@ using LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum;
 namespace LeetCode.Tests.Algorithms.PartitionArrayIntoThreePartsWithEqualSum;
 
 [TestClass]
-public sealed class PartitionArrayIntoThreePartsWithEqualSumIterativeTests : PartitionArrayIntoThreePartsWithEqualSumTestsBase<PartitionArrayIntoThreePartsWithEqualSumIterative>;
+public sealed class PartitionArrayIntoThreePartsWithEqualSumIterativeTests
+    : PartitionArrayIntoThreePartsWithEqualSumTestsBase<PartitionArrayIntoThreePartsWithEqualSumIterative>;
