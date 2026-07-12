@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.FindChampion2;
 /// </summary>
 public interface IFindChampion2
 {
+    /// <summary>
+    ///     Finds the unique team, among <paramref name="n" /> teams connected by the dominance relationships in
+    ///     <paramref name="edges" />, that is stronger than all other teams.
+    /// </summary>
+    /// <param name="n">The number of teams, labeled from 0 to n - 1.</param>
+    /// <param name="edges">The array of directed edges [a, b] indicating team a is stronger than team b.</param>
+    /// <returns>The identifier of the champion team, or -1 if the champion cannot be uniquely determined.</returns>
     int FindChampion(int n, int[][] edges);
 }

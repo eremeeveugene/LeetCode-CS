@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.LetterTilePossibilities;
 /// </summary>
 public interface ILetterTilePossibilities
 {
+    /// <summary>
+    ///     Counts the number of distinct non-empty sequences of letters that can be formed using the letter tiles in <paramref name="tiles" />.
+    /// </summary>
+    /// <param name="tiles">The string of letter tiles available to arrange.</param>
+    /// <returns>The number of distinct non-empty sequences that can be formed.</returns>
     int NumTilePossibilities(string tiles);
 }

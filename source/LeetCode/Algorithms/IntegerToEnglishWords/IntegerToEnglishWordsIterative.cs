@@ -54,12 +54,11 @@ public sealed class IntegerToEnglishWordsIterative : IIntegerToEnglishWords
         { 0, "Zero" }
     };
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log 10 num)
     ///     Space complexity - O(log 10 num)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string NumberToWords(int num)
     {
         if (num == 0)

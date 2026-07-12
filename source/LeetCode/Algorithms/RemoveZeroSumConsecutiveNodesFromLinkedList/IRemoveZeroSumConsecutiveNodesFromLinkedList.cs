@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList;
 /// </summary>
 public interface IRemoveZeroSumConsecutiveNodesFromLinkedList
 {
+    /// <summary>
+    ///     Repeatedly removes consecutive sequences of nodes in the linked list starting at <paramref name="head" /> whose
+    ///     values sum to zero until no such sequence remains.
+    /// </summary>
+    /// <param name="head">The head of the linked list.</param>
+    /// <returns>The head of the linked list after all zero-sum consecutive sequences have been removed.</returns>
     ListNode? RemoveZeroSumSublists(ListNode? head);
 }

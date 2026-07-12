@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.RemoveNodesFromLinkedList;
 /// </summary>
 public interface IRemoveNodesFromLinkedList
 {
+    /// <summary>
+    ///     Removes every node in the linked list starting at <paramref name="head" /> that has a strictly greater node
+    ///     somewhere to its right.
+    /// </summary>
+    /// <param name="head">The head of the linked list.</param>
+    /// <returns>The head of the linked list after the disqualifying nodes have been removed.</returns>
     ListNode? RemoveNodes(ListNode? head);
 }

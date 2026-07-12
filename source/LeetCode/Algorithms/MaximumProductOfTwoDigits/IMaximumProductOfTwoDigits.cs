@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.MaximumProductOfTwoDigits;
 /// </summary>
 public interface IMaximumProductOfTwoDigits
 {
+    /// <summary>
+    ///     Computes the maximum product obtainable by multiplying two digits of <paramref name="n" />.
+    /// </summary>
+    /// <param name="n">The non-negative integer whose digits are used to form the product.</param>
+    /// <returns>The maximum product of any two digits of <paramref name="n" />.</returns>
     int MaxProduct(int n);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoin
 /// </summary>
 public interface IWidestVerticalAreaBetweenTwoPointsContainingNoPoints
 {
+    /// <summary>
+    ///     Finds the widest vertical area between any two points in <paramref name="points" /> that contains no
+    ///     other point.
+    /// </summary>
+    /// <param name="points">The array of 2D points, each given as an x and y coordinate.</param>
+    /// <returns>The width of the widest empty vertical area.</returns>
     int MaxWidthOfVerticalArea(int[][] points);
 }

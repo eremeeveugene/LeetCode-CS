@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ReverseWordsInString3;
 /// </summary>
 public interface IReverseWordsInString3
 {
+    /// <summary>
+    ///     Reverses the characters of each word in <paramref name="s" /> while preserving whitespace and the original
+    ///     word order.
+    /// </summary>
+    /// <param name="s">The string whose words are reversed in place.</param>
+    /// <returns>The resulting string with each word's characters reversed.</returns>
     string ReverseWords(string s);
 }

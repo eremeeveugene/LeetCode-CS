@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimizeXOR;
 /// </summary>
 public interface IMinimizeXOR
 {
+    /// <summary>
+    ///     Finds a positive integer with the same number of set bits as <paramref name="num2" /> that minimizes the
+    ///     XOR with <paramref name="num1" />.
+    /// </summary>
+    /// <param name="num1">The integer to minimize the XOR against.</param>
+    /// <param name="num2">The integer whose set-bit count must be matched.</param>
+    /// <returns>The integer that minimizes the XOR with <paramref name="num1" /> while matching the set-bit count of <paramref name="num2" />.</returns>
     int MinimizeXor(int num1, int num2);
 }

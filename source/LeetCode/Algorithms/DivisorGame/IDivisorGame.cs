@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.DivisorGame;
 /// </summary>
 public interface IDivisorGame
 {
+    /// <summary>
+    ///     Determines whether the first player can guarantee a win in the divisor game starting from <paramref name="n" />,
+    ///     where players alternately replace <paramref name="n" /> with n minus a divisor smaller than n, and the player
+    ///     unable to move loses.
+    /// </summary>
+    /// <param name="n">The starting number for the game.</param>
+    /// <returns><see langword="true" /> if the first player wins with optimal play; otherwise, <see langword="false" />.</returns>
     bool DivisorGame(int n);
 }

@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.TakeKOfEachCharacterFromLeftAndRight;
 /// </summary>
 public interface ITakeKOfEachCharacterFromLeftAndRight
 {
+    /// <summary>
+    ///     Finds the minimum number of characters that must be removed from either end of <paramref name="s" /> so
+    ///     that the removed characters contain at least <paramref name="k" /> occurrences each of <c>'a'</c>,
+    ///     <c>'b'</c>, and <c>'c'</c>.
+    /// </summary>
+    /// <param name="s">The string consisting of the characters <c>'a'</c>, <c>'b'</c>, and <c>'c'</c>.</param>
+    /// <param name="k">The minimum required count of each of the three characters to remove.</param>
+    /// <returns>The minimum number of minutes (removed characters) needed, or -1 if it is not possible.</returns>
     int TakeCharacters(string s, int k);
 }

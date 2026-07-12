@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumDifferenceBetweenLargestAndSmallestValueInT
 /// </summary>
 public interface IMinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves
 {
+    /// <summary>
+    ///     Changes at most three elements of <paramref name="nums" /> to any values, in up to three moves, to
+    ///     minimize the difference between the largest and smallest values in the array.
+    /// </summary>
+    /// <param name="nums">The array of integers to adjust.</param>
+    /// <returns>The minimum possible difference between the largest and smallest values after at most three moves.</returns>
     int MinDifference(int[] nums);
 }

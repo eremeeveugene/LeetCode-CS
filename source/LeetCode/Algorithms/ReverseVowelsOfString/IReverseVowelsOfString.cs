@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ReverseVowelsOfString;
 /// </summary>
 public interface IReverseVowelsOfString
 {
+    /// <summary>
+    ///     Reverses only the vowels within <paramref name="s" />, leaving all other characters in their original
+    ///     positions.
+    /// </summary>
+    /// <param name="s">The string whose vowels are reversed.</param>
+    /// <returns>The resulting string with the vowels reversed.</returns>
     string ReverseVowels(string s);
 }

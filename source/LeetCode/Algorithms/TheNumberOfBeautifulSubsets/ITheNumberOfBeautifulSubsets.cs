@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.TheNumberOfBeautifulSubsets;
 /// </summary>
 public interface ITheNumberOfBeautifulSubsets
 {
+    /// <summary>
+    ///     Counts the number of non-empty subsets of <paramref name="nums" /> that contain no two elements whose
+    ///     absolute difference equals <paramref name="k" />.
+    /// </summary>
+    /// <param name="nums">The array of positive integers to choose subsets from.</param>
+    /// <param name="k">The forbidden absolute difference between any two elements of a valid subset.</param>
+    /// <returns>The number of beautiful subsets of <paramref name="nums" />.</returns>
     int BeautifulSubsets(int[] nums, int k);
 }

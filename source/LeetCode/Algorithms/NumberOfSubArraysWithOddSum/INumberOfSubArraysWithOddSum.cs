@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.NumberOfSubArraysWithOddSum;
 /// </summary>
 public interface INumberOfSubArraysWithOddSum
 {
+    /// <summary>
+    ///     Counts the number of subarrays of <paramref name="arr" /> whose elements sum to an odd number.
+    /// </summary>
+    /// <param name="arr">The array of integers to search for subarrays with an odd sum.</param>
+    /// <returns>The number of subarrays with an odd sum, modulo 10^9 + 7.</returns>
     int NumOfSubarrays(int[] arr);
 }

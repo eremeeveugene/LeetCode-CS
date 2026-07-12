@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.TrionicArray1;
 /// </summary>
 public interface ITrionicArray1
 {
+    /// <summary>
+    ///     Determines whether <paramref name="nums" /> is trionic — strictly increasing, then strictly decreasing,
+    ///     then strictly increasing again, across three consecutive segments.
+    /// </summary>
+    /// <param name="nums">The array of integers to check.</param>
+    /// <returns><see langword="true" /> if <paramref name="nums" /> is a trionic array; otherwise, <see langword="false" />.</returns>
     bool IsTrionic(int[] nums);
 }

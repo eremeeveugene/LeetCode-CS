@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumAddToMakeParenthesesValid;
 /// </summary>
 public interface IMinimumAddToMakeParenthesesValid
 {
+    /// <summary>
+    ///     Finds the minimum number of parentheses that must be inserted into <paramref name="s" /> to make it a
+    ///     valid parentheses string.
+    /// </summary>
+    /// <param name="s">The string of parentheses to validate.</param>
+    /// <returns>The minimum number of insertions required to make <paramref name="s" /> valid.</returns>
     int MinAddToMakeValid(string s);
 }

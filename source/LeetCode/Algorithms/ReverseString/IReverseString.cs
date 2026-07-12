@@ -16,5 +16,9 @@ namespace LeetCode.Algorithms.ReverseString;
 /// </summary>
 public interface IReverseString
 {
+    /// <summary>
+    ///     Reverses the array of characters <paramref name="s" /> in place.
+    /// </summary>
+    /// <param name="s">The character array to reverse in place.</param>
     void ReverseString(char[] s);
 }

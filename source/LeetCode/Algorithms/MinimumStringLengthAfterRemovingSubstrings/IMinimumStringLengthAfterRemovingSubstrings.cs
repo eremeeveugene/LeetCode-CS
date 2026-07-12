@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumStringLengthAfterRemovingSubstrings;
 /// </summary>
 public interface IMinimumStringLengthAfterRemovingSubstrings
 {
+    /// <summary>
+    ///     Repeatedly removes occurrences of the substrings "AB" and "CD" from <paramref name="s" /> and returns the
+    ///     length of the string that remains once no more removals are possible.
+    /// </summary>
+    /// <param name="s">The string to repeatedly remove "AB" and "CD" substrings from.</param>
+    /// <returns>The length of the resulting string after all possible removals.</returns>
     int MinLength(string s);
 }

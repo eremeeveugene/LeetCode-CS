@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.RevealCardsInIncreasingOrder;
 /// </summary>
 public interface IRevealCardsInIncreasingOrder
 {
+    /// <summary>
+    ///     Orders the cards in <paramref name="deck" /> so that revealing them using the reveal-then-move-to-bottom
+    ///     process yields the cards in increasing order.
+    /// </summary>
+    /// <param name="deck">The array of unique card values to reorder.</param>
+    /// <returns>The deck ordering that reveals cards in increasing order.</returns>
     int[] DeckRevealedIncreasing(int[] deck);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SortTheMatrixDiagonally;
 /// </summary>
 public interface ISortTheMatrixDiagonally
 {
+    /// <summary>
+    ///     Sorts each diagonal of <paramref name="mat" /> that runs from top-left to bottom-right in ascending
+    ///     order.
+    /// </summary>
+    /// <param name="mat">The matrix whose diagonals are to be sorted.</param>
+    /// <returns>The matrix <paramref name="mat" /> after each top-left to bottom-right diagonal has been sorted.</returns>
     int[][] DiagonalSort(int[][] mat);
 }

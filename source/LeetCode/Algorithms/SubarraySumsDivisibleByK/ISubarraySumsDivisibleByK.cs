@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.SubarraySumsDivisibleByK;
 /// </summary>
 public interface ISubarraySumsDivisibleByK
 {
+    /// <summary>
+    ///     Counts the contiguous subarrays of <paramref name="nums" /> whose sum of elements is divisible by
+    ///     <paramref name="k" />.
+    /// </summary>
+    /// <param name="nums">The array of integers to search.</param>
+    /// <param name="k">The divisor that a qualifying subarray's sum must be divisible by.</param>
+    /// <returns>The number of contiguous subarrays of <paramref name="nums" /> whose sum is divisible by <paramref name="k" />.</returns>
     int SubarraysDivByK(int[] nums, int k);
 }

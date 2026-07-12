@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MakeSumDivisibleByP;
 /// </summary>
 public interface IMakeSumDivisibleByP
 {
+    /// <summary>
+    ///     Finds the length of the smallest subarray of <paramref name="nums" /> that must be removed so that the sum of
+    ///     the remaining elements is divisible by <paramref name="p" />.
+    /// </summary>
+    /// <param name="nums">The array of non-negative integers to remove a subarray from.</param>
+    /// <param name="p">The divisor that the remaining sum must be divisible by.</param>
+    /// <returns>The length of the smallest subarray to remove, or -1 if it is impossible or the whole array would need removing.</returns>
     int MinSubarray(int[] nums, int p);
 }

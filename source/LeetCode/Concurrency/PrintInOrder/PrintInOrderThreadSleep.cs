@@ -18,6 +18,11 @@ public sealed class PrintInOrderThreadSleep : IPrintInOrder
     private bool _isFirstPrinted;
     private bool _isSecondPrinted;
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void First(Action printFirst)
     {
         printFirst.Invoke();
@@ -25,6 +30,12 @@ public sealed class PrintInOrderThreadSleep : IPrintInOrder
         _isFirstPrinted = true;
     }
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1), excluding the time spent busy-waiting on the polling loop, which depends on thread
+    ///     scheduling rather than input size
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void Second(Action printSecond)
     {
         while (!_isFirstPrinted)
@@ -37,6 +48,12 @@ public sealed class PrintInOrderThreadSleep : IPrintInOrder
         _isSecondPrinted = true;
     }
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1), excluding the time spent busy-waiting on the polling loop, which depends on thread
+    ///     scheduling rather than input size
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void Third(Action printThird)
     {
         while (!_isSecondPrinted)

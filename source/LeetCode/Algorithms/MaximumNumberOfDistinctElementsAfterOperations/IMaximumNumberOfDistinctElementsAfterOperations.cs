@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.MaximumNumberOfDistinctElementsAfterOperations;
 /// </summary>
 public interface IMaximumNumberOfDistinctElementsAfterOperations
 {
+    /// <summary>
+    ///     Adjusts each element of <paramref name="nums" /> by an integer in the range
+    ///     [-<paramref name="k" />, <paramref name="k" />] (at most once per element) to maximize the number of distinct
+    ///     values in the resulting array.
+    /// </summary>
+    /// <param name="nums">The array of integers to adjust.</param>
+    /// <param name="k">The maximum absolute amount by which each element may be adjusted.</param>
+    /// <returns>The maximum possible number of distinct elements achievable after the adjustments.</returns>
     int MaxDistinctElements(int[] nums, int k);
 }

@@ -14,14 +14,12 @@ namespace LeetCode.Algorithms.MaximalScoreAfterApplyingKOperations;
 /// <inheritdoc />
 public sealed class MaximalScoreAfterApplyingKOperationsPriorityQueue : IMaximalScoreAfterApplyingKOperations
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(k log n + n log n), where n is the number of elements in the queue and k is the number of new
     ///     elements
     ///     Space complexity - O(n + k), where n is the number of elements in the queue and k is the number of new elements
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long MaxKelements(int[] nums, int k)
     {
         var priorityQueue = new PriorityQueue<int, int>();

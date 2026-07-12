@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.RemoveZerosInDecimalRepresentation;
 /// </summary>
 public interface IRemoveZerosInDecimalRepresentation
 {
+    /// <summary>
+    ///     Removes every digit '0' from the decimal representation of <paramref name="n" />.
+    /// </summary>
+    /// <param name="n">The non-negative integer whose zero digits are removed.</param>
+    /// <returns>The integer formed by removing all '0' digits from <paramref name="n" />.</returns>
     long RemoveZeros(long n);
 }

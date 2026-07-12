@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimumASCIIDeleteSumForTwoStrings;
 /// </summary>
 public interface IMinimumASCIIDeleteSumForTwoStrings
 {
+    /// <summary>
+    ///     Finds the minimum sum of ASCII values of the characters that must be deleted from <paramref name="s1" />
+    ///     and <paramref name="s2" /> to make the two strings equal.
+    /// </summary>
+    /// <param name="s1">The first string.</param>
+    /// <param name="s2">The second string.</param>
+    /// <returns>The minimum sum of ASCII values of deleted characters required to equalize the two strings.</returns>
     int MinimumDeleteSum(string s1, string s2);
 }

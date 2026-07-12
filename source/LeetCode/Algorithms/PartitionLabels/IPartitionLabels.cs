@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.PartitionLabels;
 /// </summary>
 public interface IPartitionLabels
 {
+    /// <summary>
+    ///     Partitions <paramref name="s" /> into as many parts as possible so that each letter appears in at most one
+    ///     part.
+    /// </summary>
+    /// <param name="s">The string to partition.</param>
+    /// <returns>A list of the sizes of each partition, in order.</returns>
     IList<int> PartitionLabels(string s);
 }

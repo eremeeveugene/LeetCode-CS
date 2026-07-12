@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MatrixDiagonalSum;
 /// </summary>
 public interface IMatrixDiagonalSum
 {
+    /// <summary>
+    ///     Computes the sum of the elements on both diagonals of the square matrix <paramref name="mat" />, counting the
+    ///     middle element only once when the matrix has an odd size.
+    /// </summary>
+    /// <param name="mat">The square matrix whose diagonal elements are summed.</param>
+    /// <returns>The sum of the primary and secondary diagonal elements of <paramref name="mat" />.</returns>
     int DiagonalSum(int[][] mat);
 }

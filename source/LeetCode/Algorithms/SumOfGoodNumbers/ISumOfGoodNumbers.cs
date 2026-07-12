@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.SumOfGoodNumbers;
 /// </summary>
 public interface ISumOfGoodNumbers
 {
+    /// <summary>
+    ///     Sums every "good" element of <paramref name="nums" /> — an element that is strictly greater than the
+    ///     elements exactly <paramref name="k" /> positions before and after it in the array.
+    /// </summary>
+    /// <param name="nums">The array of integers to inspect.</param>
+    /// <param name="k">The offset used to identify the neighbors that must be smaller than a good number.</param>
+    /// <returns>The sum of all good numbers in <paramref name="nums" />.</returns>
     int SumOfGoodNumbers(int[] nums, int k);
 }

@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.TrimTrailingVowels;
 /// </summary>
 public interface ITrimTrailingVowels
 {
+    /// <summary>
+    ///     Removes all trailing vowels from the end of <paramref name="s" />.
+    /// </summary>
+    /// <param name="s">The string to trim.</param>
+    /// <returns>The string with all trailing vowels removed.</returns>
     string TrimTrailingVowels(string s);
 }

@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.WaterBottles2;
 /// </summary>
 public interface IWaterBottles2
 {
+    /// <summary>
+    ///     Computes the maximum number of water bottles that can be drunk starting with
+    ///     <paramref name="numBottles" /> full bottles, where exchanging <paramref name="numExchange" /> empty
+    ///     bottles yields one full bottle and increases the required exchange count by one afterward.
+    /// </summary>
+    /// <param name="numBottles">The initial number of full water bottles.</param>
+    /// <param name="numExchange">The initial number of empty bottles required to exchange for one full bottle.</param>
+    /// <returns>The maximum number of water bottles that can be drunk.</returns>
     int MaxBottlesDrunk(int numBottles, int numExchange);
 }

@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.TransformArrayToAllEqualElements;
 /// </summary>
 public interface ITransformArrayToAllEqualElements
 {
+    /// <summary>
+    ///     Determines whether every element of <paramref name="nums" /> (each either 1 or -1) can be made equal
+    ///     using at most <paramref name="k" /> operations, where each operation swaps two adjacent elements with
+    ///     different values.
+    /// </summary>
+    /// <param name="nums">The array of integers, each equal to 1 or -1, to transform.</param>
+    /// <param name="k">The maximum number of adjacent swap operations allowed.</param>
+    /// <returns><see langword="true" /> if all elements can be made equal within <paramref name="k" /> operations; otherwise, <see langword="false" />.</returns>
     bool CanMakeEqual(int[] nums, int k);
 }

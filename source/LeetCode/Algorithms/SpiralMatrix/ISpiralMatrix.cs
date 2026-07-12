@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.SpiralMatrix;
 /// </summary>
 public interface ISpiralMatrix
 {
+    /// <summary>
+    ///     Returns all elements of <paramref name="matrix" /> in clockwise spiral order.
+    /// </summary>
+    /// <param name="matrix">The matrix whose elements are to be traversed in spiral order.</param>
+    /// <returns>A list of the elements of <paramref name="matrix" /> in clockwise spiral order.</returns>
     IList<int> SpiralOrder(int[][] matrix);
 }

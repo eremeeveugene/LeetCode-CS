@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ConstructTheMinimumBitwiseArray1;
 /// </summary>
 public interface IConstructTheMinimumBitwiseArray1
 {
+    /// <summary>
+    ///     Constructs an array where each element is the smallest non-negative integer whose bitwise OR with itself plus
+    ///     one equals the corresponding prime value in <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The list of prime numbers to construct the minimum bitwise array from.</param>
+    /// <returns>An array of minimum values satisfying the bitwise condition for each element of <paramref name="nums" />.</returns>
     int[] MinBitwiseArray(IList<int> nums);
 }

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimumLengthOfStringAfterOperations;
 /// </summary>
 public interface IMinimumLengthOfStringAfterOperations
 {
+    /// <summary>
+    ///     Repeatedly selects an index whose character has at least one closer occurrence on each side and removes
+    ///     both of those closest occurrences from <paramref name="s" />, and finds the minimum possible length of
+    ///     the string after performing any number of such operations.
+    /// </summary>
+    /// <param name="s">The string to reduce.</param>
+    /// <returns>The minimum length of the string after all possible operations.</returns>
     int MinimumLength(string s);
 }

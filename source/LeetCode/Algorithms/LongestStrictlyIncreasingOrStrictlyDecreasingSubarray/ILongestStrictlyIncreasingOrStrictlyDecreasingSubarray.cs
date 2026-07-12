@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.LongestStrictlyIncreasingOrStrictlyDecreasingSubar
 /// </summary>
 public interface ILongestStrictlyIncreasingOrStrictlyDecreasingSubarray
 {
+    /// <summary>
+    ///     Finds the length of the longest subarray of <paramref name="nums" /> that is either strictly increasing or
+    ///     strictly decreasing.
+    /// </summary>
+    /// <param name="nums">The array of integers to search for a monotonic subarray.</param>
+    /// <returns>The length of the longest strictly increasing or strictly decreasing subarray.</returns>
     int LongestMonotonicSubarray(int[] nums);
 }

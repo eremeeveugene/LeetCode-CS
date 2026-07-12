@@ -11,6 +11,7 @@
 
 namespace LeetCode.Algorithms.GuessNumberHigherOrLower;
 
+/// <inheritdoc />
 public abstract class GuessNumberHigherOrLower : IGuessNumberHigherOrLower
 {
     private readonly int _pickedNumber;

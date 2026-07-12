@@ -14,14 +14,12 @@ namespace LeetCode.Algorithms.ExtraCharactersInString;
 /// <inheritdoc />
 public sealed class ExtraCharactersInStringDynamicProgrammingHashSet : IExtraCharactersInString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^3), n is the length of the longest word in the dictionary
     ///     Space complexity - O(n + m), m is the number of words in the dictionary and n is the length of the longest word in
     ///     the dictionary
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="dictionary"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinExtraChar(string s, string[] dictionary)
     {
         var dp = new int[s.Length + 1];

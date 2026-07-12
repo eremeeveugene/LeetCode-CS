@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MedianOfTwoSortedArrays;
 /// </summary>
 public interface IMedianOfTwoSortedArrays
 {
+    /// <summary>
+    ///     Finds the median of the combined elements of the two sorted arrays <paramref name="nums1" /> and
+    ///     <paramref name="nums2" />.
+    /// </summary>
+    /// <param name="nums1">The first sorted array.</param>
+    /// <param name="nums2">The second sorted array.</param>
+    /// <returns>The median value of the merged sorted arrays.</returns>
     double FindMedianSortedArrays(int[] nums1, int[] nums2);
 }

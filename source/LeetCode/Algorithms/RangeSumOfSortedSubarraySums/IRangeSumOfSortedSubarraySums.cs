@@ -16,5 +16,14 @@ namespace LeetCode.Algorithms.RangeSumOfSortedSubarraySums;
 /// </summary>
 public interface IRangeSumOfSortedSubarraySums
 {
+    /// <summary>
+    ///     Computes the sum of the elements between indices <paramref name="left" /> and <paramref name="right" />
+    ///     (1-indexed) in the sorted list of all subarray sums of <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array of integers whose subarray sums are considered.</param>
+    /// <param name="n">The number of elements in <paramref name="nums" />.</param>
+    /// <param name="left">The 1-indexed lower bound of the range within the sorted subarray sums.</param>
+    /// <param name="right">The 1-indexed upper bound of the range within the sorted subarray sums.</param>
+    /// <returns>The sum of the sorted subarray sums between <paramref name="left" /> and <paramref name="right" />, modulo 10^9 + 7.</returns>
     int RangeSum(int[] nums, int n, int left, int right);
 }

@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.MinimumDepthOfBinaryTree;
 /// </summary>
 public interface IMinimumDepthOfBinaryTree
 {
+    /// <summary>
+    ///     Finds the minimum depth of the binary tree rooted at <paramref name="root" />, defined as the number of
+    ///     nodes along the shortest path from the root to the nearest leaf.
+    /// </summary>
+    /// <param name="root">The root of the binary tree.</param>
+    /// <returns>The minimum depth of the tree.</returns>
     int MinDepth(TreeNode? root);
 }

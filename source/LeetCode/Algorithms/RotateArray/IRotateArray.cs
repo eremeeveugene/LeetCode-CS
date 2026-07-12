@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.RotateArray;
 /// </summary>
 public interface IRotateArray
 {
+    /// <summary>
+    ///     Rotates <paramref name="nums" /> in place to the right by <paramref name="k" /> positions.
+    /// </summary>
+    /// <param name="nums">The array of integers to rotate in place.</param>
+    /// <param name="k">The number of positions to rotate the array to the right.</param>
     void Rotate(int[] nums, int k);
 }

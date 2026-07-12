@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.RabbitsInForest;
 /// </summary>
 public interface IRabbitsInForest
 {
+    /// <summary>
+    ///     Determines the minimum number of rabbits that could be in the forest given the responses in
+    ///     <paramref name="answers" />, where each rabbit reports how many other rabbits share its color.
+    /// </summary>
+    /// <param name="answers">The array of responses collected from asking every rabbit.</param>
+    /// <returns>The minimum possible total number of rabbits in the forest.</returns>
     int NumRabbits(int[] answers);
 }

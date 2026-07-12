@@ -14,14 +14,12 @@ namespace LeetCode.Algorithms.CustomSortString;
 /// <inheritdoc />
 public sealed class CustomSortStringDictionarySorting : ICustomSortString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O (m log m + n), where m is the length of the 's' string and n is the length of the 'order'
     ///     string
     ///     Space complexity -  O (n + n), where m is the length of the 's' string and n is the length of the 'order' string
-    /// </summary>
-    /// <param name="order"></param>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string CustomSortString(string order, string s)
     {
         var orderDictionary = new Dictionary<char, int>();

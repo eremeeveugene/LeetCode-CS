@@ -18,5 +18,14 @@ namespace LeetCode.Algorithms.SpiralMatrix4;
 /// </summary>
 public interface ISpiralMatrix4
 {
+    /// <summary>
+    ///     Fills an <paramref name="m" /> by <paramref name="n" /> matrix in clockwise spiral order with the
+    ///     values from the linked list starting at <paramref name="head" />, filling any remaining cells with
+    ///     -1.
+    /// </summary>
+    /// <param name="m">The number of rows in the matrix.</param>
+    /// <param name="n">The number of columns in the matrix.</param>
+    /// <param name="head">The head of the linked list whose values populate the matrix.</param>
+    /// <returns>The <paramref name="m" /> by <paramref name="n" /> matrix filled in spiral order with the list's values.</returns>
     int[][] SpiralMatrix(int m, int n, ListNode head);
 }

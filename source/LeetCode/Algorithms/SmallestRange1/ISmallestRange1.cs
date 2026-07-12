@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.SmallestRange1;
 /// </summary>
 public interface ISmallestRange1
 {
+    /// <summary>
+    ///     Computes the smallest possible difference between the maximum and minimum values of
+    ///     <paramref name="nums" /> after adding any integer in the range [-k, k] to each element.
+    /// </summary>
+    /// <param name="nums">The array of integers to adjust.</param>
+    /// <param name="k">The maximum magnitude of the adjustment that can be applied to each element.</param>
+    /// <returns>The minimum possible difference between the maximum and minimum values after adjustment.</returns>
     int SmallestRangeI(int[] nums, int k);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumIncrementToMakeArrayUnique;
 /// </summary>
 public interface IMinimumIncrementToMakeArrayUnique
 {
+    /// <summary>
+    ///     Increments elements of <paramref name="nums" /> by 1 any number of times so that all elements become
+    ///     unique, and finds the minimum total number of increments required.
+    /// </summary>
+    /// <param name="nums">The array of integers to make unique.</param>
+    /// <returns>The minimum total number of increment operations required.</returns>
     int MinIncrementForUnique(int[] nums);
 }

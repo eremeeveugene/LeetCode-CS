@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.MajorityFrequencyCharacters;
 /// </summary>
 public interface IMajorityFrequencyCharacters
 {
+    /// <summary>
+    ///     Groups the characters of <paramref name="s" /> that share the highest frequency of occurrence.
+    /// </summary>
+    /// <param name="s">The string whose characters are grouped by frequency.</param>
+    /// <returns>A string containing the characters with the highest frequency in <paramref name="s" />, sorted in decreasing order of frequency.</returns>
     string MajorityFrequencyGroup(string s);
 }

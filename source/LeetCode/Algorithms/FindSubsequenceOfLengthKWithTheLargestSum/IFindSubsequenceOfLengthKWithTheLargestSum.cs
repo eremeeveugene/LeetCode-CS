@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindSubsequenceOfLengthKWithTheLargestSum;
 /// </summary>
 public interface IFindSubsequenceOfLengthKWithTheLargestSum
 {
+    /// <summary>
+    ///     Finds a subsequence of <paramref name="nums" /> of length <paramref name="k" /> that has the largest sum, preserving the original order of elements.
+    /// </summary>
+    /// <param name="nums">The array of integers to select a subsequence from.</param>
+    /// <param name="k">The length of the subsequence to find.</param>
+    /// <returns>The subsequence of length <paramref name="k" /> with the largest sum, in original order.</returns>
     int[] MaxSubsequence(int[] nums, int k);
 }

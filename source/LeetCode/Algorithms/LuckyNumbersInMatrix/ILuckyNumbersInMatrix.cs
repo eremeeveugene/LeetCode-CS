@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.LuckyNumbersInMatrix;
 /// </summary>
 public interface ILuckyNumbersInMatrix
 {
+    /// <summary>
+    ///     Finds all lucky numbers in <paramref name="matrix" />, where a lucky number is the minimum element in its
+    ///     row and the maximum element in its column.
+    /// </summary>
+    /// <param name="matrix">The matrix of distinct integers to search for lucky numbers.</param>
+    /// <returns>A list of all lucky numbers found in <paramref name="matrix" />.</returns>
     IList<int> LuckyNumbers(int[][] matrix);
 }

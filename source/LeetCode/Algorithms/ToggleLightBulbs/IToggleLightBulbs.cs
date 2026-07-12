@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ToggleLightBulbs;
 /// </summary>
 public interface IToggleLightBulbs
 {
+    /// <summary>
+    ///     Determines the final state of each light bulb in <paramref name="bulbs" /> after applying the
+    ///     encoded sequence of toggle operations.
+    /// </summary>
+    /// <param name="bulbs">The initial states of the light bulbs, encoding the toggle operations to apply.</param>
+    /// <returns>A list representing the final state of each light bulb.</returns>
     IList<int> ToggleLightBulbs(IList<int> bulbs);
 }

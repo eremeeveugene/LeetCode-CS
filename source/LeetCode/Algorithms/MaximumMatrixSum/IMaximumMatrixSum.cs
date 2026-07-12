@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumMatrixSum;
 /// </summary>
 public interface IMaximumMatrixSum
 {
+    /// <summary>
+    ///     Computes the maximum possible sum of elements of <paramref name="matrix" /> obtainable by repeatedly negating
+    ///     any two elements (any number of times).
+    /// </summary>
+    /// <param name="matrix">The square matrix of integers to transform via pairwise negations.</param>
+    /// <returns>The maximum possible sum of all elements of <paramref name="matrix" /> after any number of pairwise negations.</returns>
     long MaxMatrixSum(int[][] matrix);
 }

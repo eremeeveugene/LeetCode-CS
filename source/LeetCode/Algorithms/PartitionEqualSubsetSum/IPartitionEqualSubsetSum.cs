@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.PartitionEqualSubsetSum;
 /// </summary>
 public interface IPartitionEqualSubsetSum
 {
+    /// <summary>
+    ///     Determines whether <paramref name="nums" /> can be partitioned into two subsets whose sums are equal.
+    /// </summary>
+    /// <param name="nums">The array of integers to evaluate.</param>
+    /// <returns><see langword="true" /> if such a partition exists; otherwise, <see langword="false" />.</returns>
     bool CanPartition(int[] nums);
 }

@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.LongestPalindromicSubstring;
 /// </summary>
 public interface ILongestPalindromicSubstring
 {
+    /// <summary>
+    ///     Finds the longest contiguous substring of <paramref name="s" /> that reads the same forwards and backwards.
+    /// </summary>
+    /// <param name="s">The string to search for a palindromic substring.</param>
+    /// <returns>The longest palindromic substring of <paramref name="s" />.</returns>
     string LongestPalindrome(string s);
 }

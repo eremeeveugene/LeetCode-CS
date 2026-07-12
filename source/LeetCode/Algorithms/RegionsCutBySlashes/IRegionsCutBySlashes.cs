@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.RegionsCutBySlashes;
 /// </summary>
 public interface IRegionsCutBySlashes
 {
+    /// <summary>
+    ///     Counts the number of regions formed by the slashes, backslashes, and blank spaces described in
+    ///     <paramref name="grid" />.
+    /// </summary>
+    /// <param name="grid">The grid of characters ('/', '\', or ' ') describing how each cell is cut.</param>
+    /// <returns>The number of distinct regions the grid is divided into.</returns>
     int RegionsBySlashes(string[] grid);
 }

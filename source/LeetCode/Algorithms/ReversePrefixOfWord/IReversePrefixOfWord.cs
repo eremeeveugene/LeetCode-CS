@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.ReversePrefixOfWord;
 /// </summary>
 public interface IReversePrefixOfWord
 {
+    /// <summary>
+    ///     Reverses the prefix of <paramref name="word" /> up to and including the first occurrence of
+    ///     <paramref name="ch" />.
+    /// </summary>
+    /// <param name="word">The string whose prefix is reversed.</param>
+    /// <param name="ch">The character marking the end of the prefix to reverse.</param>
+    /// <returns>The resulting string after reversing the prefix, or the original string if <paramref name="ch" /> is not found.</returns>
     string ReversePrefix(string word, char ch);
 }

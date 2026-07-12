@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.XOROperationInAnArray;
 /// </summary>
 public interface IXOROperationInAnArray
 {
+    /// <summary>
+    ///     Computes the bitwise XOR of the array formed by <c>nums[i] = start + 2 * i</c> for
+    ///     <c>i</c> from 0 to <paramref name="n" /> - 1.
+    /// </summary>
+    /// <param name="n">The number of elements in the generated array.</param>
+    /// <param name="start">The starting value used to generate the array.</param>
+    /// <returns>The bitwise XOR of all elements in the generated array.</returns>
     int XorOperation(int n, int start);
 }

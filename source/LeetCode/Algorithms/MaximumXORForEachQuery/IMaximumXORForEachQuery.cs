@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.MaximumXORForEachQuery;
 /// </summary>
 public interface IMaximumXORForEachQuery
 {
+    /// <summary>
+    ///     For each query, removes the last element of the remaining prefix of <paramref name="nums" /> and finds
+    ///     the value <c>k</c> in <c>[0, 2^maximumBit - 1]</c> that maximizes the XOR of <c>k</c> with all remaining
+    ///     elements.
+    /// </summary>
+    /// <param name="nums">The array of integers to process.</param>
+    /// <param name="maximumBit">The number of bits that bound the value of each answer.</param>
+    /// <returns>An array containing the answer to each query, in order.</returns>
     int[] GetMaximumXor(int[] nums, int maximumBit);
 }

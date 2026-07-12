@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.PowerOfThree;
 /// </summary>
 public interface IPowerOfThree
 {
+    /// <summary>
+    ///     Determines whether <paramref name="n" /> is a power of three.
+    /// </summary>
+    /// <param name="n">The integer to evaluate.</param>
+    /// <returns><see langword="true" /> if <paramref name="n" /> is a power of three; otherwise, <see langword="false" />.</returns>
     bool IsPowerOfThree(int n);
 }

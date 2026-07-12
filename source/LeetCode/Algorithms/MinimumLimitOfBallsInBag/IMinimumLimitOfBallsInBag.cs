@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimumLimitOfBallsInBag;
 /// </summary>
 public interface IMinimumLimitOfBallsInBag
 {
+    /// <summary>
+    ///     Splits the bags of balls in <paramref name="nums" /> into smaller bags using at most
+    ///     <paramref name="maxOperations" /> split operations to minimize the maximum number of balls in any bag.
+    /// </summary>
+    /// <param name="nums">The array containing the number of balls in each bag.</param>
+    /// <param name="maxOperations">The maximum number of split operations allowed.</param>
+    /// <returns>The minimum possible value of the maximum number of balls in a bag.</returns>
     int MinimumSize(int[] nums, int maxOperations);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ShortestPalindrome;
 /// </summary>
 public interface IShortestPalindrome
 {
+    /// <summary>
+    ///     Converts <paramref name="s" /> into a palindrome by adding the fewest characters possible in front
+    ///     of it.
+    /// </summary>
+    /// <param name="s">The string to convert into a palindrome.</param>
+    /// <returns>The shortest palindrome that can be formed by prepending characters to <paramref name="s" />.</returns>
     string ShortestPalindrome(string s);
 }

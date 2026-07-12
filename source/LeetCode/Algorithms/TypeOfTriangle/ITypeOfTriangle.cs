@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.TypeOfTriangle;
 /// </summary>
 public interface ITypeOfTriangle
 {
+    /// <summary>
+    ///     Determines the type of triangle (equilateral, isosceles, scalene, or none) that can be formed from the
+    ///     three side lengths in <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array containing the three side lengths of the triangle.</param>
+    /// <returns>A string describing the triangle type, or "none" if the sides cannot form a triangle.</returns>
     string TriangleType(int[] nums);
 }

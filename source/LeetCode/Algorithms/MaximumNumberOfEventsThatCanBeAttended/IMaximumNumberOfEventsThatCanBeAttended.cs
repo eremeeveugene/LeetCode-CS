@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MaximumNumberOfEventsThatCanBeAttended;
 /// </summary>
 public interface IMaximumNumberOfEventsThatCanBeAttended
 {
+    /// <summary>
+    ///     Determines the maximum number of events from <paramref name="events" /> that can be attended, where each
+    ///     event can be attended on any single day within its [startDay, endDay] range and at most one event may be
+    ///     attended per day.
+    /// </summary>
+    /// <param name="events">The array of events, where each element is a [startDay, endDay] pair.</param>
+    /// <returns>The maximum number of events that can be attended.</returns>
     int MaxEvents(int[][] events);
 }

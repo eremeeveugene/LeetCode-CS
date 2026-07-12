@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumNumberOfPointsWithCost;
 /// </summary>
 public interface IMaximumNumberOfPointsWithCost
 {
+    /// <summary>
+    ///     Selects one cell per row of <paramref name="points" /> to maximize the total of the selected cell values
+    ///     minus, for each pair of consecutive rows, the absolute difference in the columns chosen.
+    /// </summary>
+    /// <param name="points">The matrix of point values, where a value is selected from each row.</param>
+    /// <returns>The maximum total score achievable by selecting one cell from each row of <paramref name="points" />.</returns>
     long MaxPoints(int[][] points);
 }

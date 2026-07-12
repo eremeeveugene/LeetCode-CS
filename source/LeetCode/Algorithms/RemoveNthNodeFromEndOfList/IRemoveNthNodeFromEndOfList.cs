@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.RemoveNthNodeFromEndOfList;
 /// </summary>
 public interface IRemoveNthNodeFromEndOfList
 {
+    /// <summary>
+    ///     Removes the <paramref name="n" />-th node from the end of the linked list starting at <paramref name="head" />.
+    /// </summary>
+    /// <param name="head">The head of the linked list.</param>
+    /// <param name="n">The 1-based position from the end of the node to remove.</param>
+    /// <returns>The head of the linked list after the node has been removed.</returns>
     ListNode? RemoveNthFromEnd(ListNode? head, int n);
 }

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CountOperationsToObtainZero;
 /// </summary>
 public interface ICountOperationsToObtainZero
 {
+    /// <summary>
+    ///     Counts the number of operations needed to reduce <paramref name="num1" /> or <paramref name="num2" /> to zero,
+    ///     where each operation subtracts the smaller of the two from the larger.
+    /// </summary>
+    /// <param name="num1">The first non-negative integer.</param>
+    /// <param name="num2">The second non-negative integer.</param>
+    /// <returns>The total number of operations required until one of the values becomes zero.</returns>
     int CountOperations(int num1, int num2);
 }

@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.ArrayPartition;
 /// </summary>
 public interface IArrayPartition
 {
+    /// <summary>
+    ///     Pairs up the elements of <paramref name="nums" /> to maximize the sum of the minimum of each pair.
+    /// </summary>
+    /// <param name="nums">The array of integers to pair up.</param>
+    /// <returns>The maximum possible sum of the minimums of each pair.</returns>
     int ArrayPairSum(int[] nums);
 }

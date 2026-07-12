@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.TeemoAttacking;
 /// </summary>
 public interface ITeemoAttacking
 {
+    /// <summary>
+    ///     Computes the total number of seconds that a target is poisoned, given the attack timestamps in
+    ///     <paramref name="timeSeries" /> and the poison <paramref name="duration" /> applied by each attack.
+    /// </summary>
+    /// <param name="timeSeries">The sorted array of timestamps at which an attack occurs.</param>
+    /// <param name="duration">The number of seconds the target remains poisoned after each attack.</param>
+    /// <returns>The total number of seconds the target is poisoned.</returns>
     int FindPoisonedDuration(int[] timeSeries, int duration);
 }

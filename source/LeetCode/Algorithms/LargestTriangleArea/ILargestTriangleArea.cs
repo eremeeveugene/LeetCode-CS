@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.LargestTriangleArea;
 /// </summary>
 public interface ILargestTriangleArea
 {
+    /// <summary>
+    ///     Finds the largest possible area of a triangle formed by any three of the points in <paramref name="points" />.
+    /// </summary>
+    /// <param name="points">The array of 2D points, each represented as a coordinate pair.</param>
+    /// <returns>The largest triangle area attainable from any three points.</returns>
     double LargestTriangleArea(int[][] points);
 }

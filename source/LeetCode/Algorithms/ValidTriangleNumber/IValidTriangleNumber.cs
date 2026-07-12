@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.ValidTriangleNumber;
 /// </summary>
 public interface IValidTriangleNumber
 {
+    /// <summary>
+    ///     Counts the number of triplets in <paramref name="nums" /> that can form the sides of a valid triangle.
+    /// </summary>
+    /// <param name="nums">The array of non-negative integers representing candidate side lengths.</param>
+    /// <returns>The number of triplets that satisfy the triangle inequality.</returns>
     int TriangleNumber(int[] nums);
 }

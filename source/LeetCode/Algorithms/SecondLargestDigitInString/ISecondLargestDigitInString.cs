@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.SecondLargestDigitInString;
 /// </summary>
 public interface ISecondLargestDigitInString
 {
+    /// <summary>
+    ///     Finds the second largest distinct digit that appears in <paramref name="s" />.
+    /// </summary>
+    /// <param name="s">The alphanumeric string to search for digits.</param>
+    /// <returns>The second largest distinct digit in <paramref name="s" />, or -1 if it does not exist.</returns>
     int SecondHighest(string s);
 }

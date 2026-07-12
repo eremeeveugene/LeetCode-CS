@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimumDeletionsForKMostKDistinctCharacters;
 /// </summary>
 public interface IMinimumDeletionsForKMostKDistinctCharacters
 {
+    /// <summary>
+    ///     Finds the minimum number of characters that must be deleted from <paramref name="s" /> so that it
+    ///     contains at most <paramref name="k" /> distinct characters.
+    /// </summary>
+    /// <param name="s">The string to reduce.</param>
+    /// <param name="k">The maximum number of distinct characters allowed after deletion.</param>
+    /// <returns>The minimum number of character deletions required.</returns>
     int MinDeletion(string s, int k);
 }

@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.TimeNeededToBuyTickets;
 /// </summary>
 public interface ITimeNeededToBuyTickets
 {
+    /// <summary>
+    ///     Simulates people standing in a circular queue, each buying one ticket per turn as described by
+    ///     <paramref name="tickets" />, and computes the time at which the person at index <paramref name="k" />
+    ///     finishes buying all their tickets.
+    /// </summary>
+    /// <param name="tickets">The array where each element is the number of tickets the corresponding person wants to buy.</param>
+    /// <param name="k">The index of the person whose finish time should be computed.</param>
+    /// <returns>The time taken for the person at index <paramref name="k" /> to finish buying tickets.</returns>
     int TimeRequiredToBuy(int[] tickets, int k);
 }

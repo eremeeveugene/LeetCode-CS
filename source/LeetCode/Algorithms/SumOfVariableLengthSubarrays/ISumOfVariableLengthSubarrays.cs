@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SumOfVariableLengthSubarrays;
 /// </summary>
 public interface ISumOfVariableLengthSubarrays
 {
+    /// <summary>
+    ///     Sums the elements of every variable-length subarray of <paramref name="nums" />, where each subarray
+    ///     ending at index <c>i</c> starts at <c>max(0, i - nums[i])</c>.
+    /// </summary>
+    /// <param name="nums">The array of integers defining the subarray boundaries and values.</param>
+    /// <returns>The total sum across all the variable-length subarrays.</returns>
     int SubarraySum(int[] nums);
 }

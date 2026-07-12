@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.RemoveLinkedListElements;
 /// </summary>
 public interface IRemoveLinkedListElements
 {
+    /// <summary>
+    ///     Removes all nodes with value <paramref name="val" /> from the linked list starting at <paramref name="head" />.
+    /// </summary>
+    /// <param name="head">The head of the linked list.</param>
+    /// <param name="val">The value to remove from the linked list.</param>
+    /// <returns>The head of the linked list after nodes with value <paramref name="val" /> have been removed.</returns>
     ListNode? RemoveElements(ListNode? head, int val);
 }

@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.ToLowerCase;
 /// </summary>
 public interface IToLowerCase
 {
+    /// <summary>
+    ///     Converts every uppercase letter in <paramref name="s" /> to its lowercase equivalent.
+    /// </summary>
+    /// <param name="s">The string to convert.</param>
+    /// <returns>The lowercase version of <paramref name="s" />.</returns>
     string ToLowerCase(string s);
 }

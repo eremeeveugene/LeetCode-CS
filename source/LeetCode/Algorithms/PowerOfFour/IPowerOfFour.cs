@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.PowerOfFour;
 /// </summary>
 public interface IPowerOfFour
 {
+    /// <summary>
+    ///     Determines whether <paramref name="n" /> is a power of four.
+    /// </summary>
+    /// <param name="n">The integer to evaluate.</param>
+    /// <returns><see langword="true" /> if <paramref name="n" /> is a power of four; otherwise, <see langword="false" />.</returns>
     bool IsPowerOfFour(int n);
 }

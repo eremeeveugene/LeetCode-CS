@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimizedMaximumOfProductsDistributedToAnyStore;
 /// </summary>
 public interface IMinimizedMaximumOfProductsDistributedToAnyStore
 {
+    /// <summary>
+    ///     Distributes the product quantities in <paramref name="quantities" /> across <paramref name="n" /> stores,
+    ///     where each store sells only one product, to minimize the maximum number of products given to any store.
+    /// </summary>
+    /// <param name="n">The number of stores available.</param>
+    /// <param name="quantities">The quantity of each product that must be distributed.</param>
+    /// <returns>The minimum possible value of the maximum number of products assigned to any store.</returns>
     int MinimizedMaximum(int n, int[] quantities);
 }

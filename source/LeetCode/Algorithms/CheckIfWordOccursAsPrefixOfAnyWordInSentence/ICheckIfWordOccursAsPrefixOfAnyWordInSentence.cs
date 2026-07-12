@@ -16,5 +16,15 @@ namespace LeetCode.Algorithms.CheckIfWordOccursAsPrefixOfAnyWordInSentence;
 /// </summary>
 public interface ICheckIfWordOccursAsPrefixOfAnyWordInSentence
 {
+    /// <summary>
+    ///     Finds the index of the first word in <paramref name="sentence" /> that has <paramref name="searchWord" /> as a
+    ///     prefix.
+    /// </summary>
+    /// <param name="sentence">The sentence consisting of space-separated words.</param>
+    /// <param name="searchWord">The word whose occurrence as a prefix is searched for.</param>
+    /// <returns>
+    ///     The 1-indexed position of the first word in <paramref name="sentence" /> that starts with
+    ///     <paramref name="searchWord" />, or -1 if no such word exists.
+    /// </returns>
     int IsPrefixOfWord(string sentence, string searchWord);
 }

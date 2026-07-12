@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.RepeatedSubstringPattern;
 /// </summary>
 public interface IRepeatedSubstringPattern
 {
+    /// <summary>
+    ///     Determines whether <paramref name="s" /> can be constructed by repeating one of its substrings multiple times.
+    /// </summary>
+    /// <param name="s">The string to evaluate.</param>
+    /// <returns><see langword="true" /> if <paramref name="s" /> is composed of a repeated substring; otherwise, <see langword="false" />.</returns>
     bool RepeatedSubstringPattern(string s);
 }

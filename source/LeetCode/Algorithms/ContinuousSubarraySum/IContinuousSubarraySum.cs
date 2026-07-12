@@ -16,5 +16,14 @@ namespace LeetCode.Algorithms.ContinuousSubarraySum;
 /// </summary>
 public interface IContinuousSubarraySum
 {
+    /// <summary>
+    ///     Determines whether <paramref name="nums" /> contains a continuous subarray of length at least 2 whose sum is
+    ///     a multiple of <paramref name="k" />.
+    /// </summary>
+    /// <param name="nums">The array of integers to examine.</param>
+    /// <param name="k">The divisor that the subarray sum must be a multiple of.</param>
+    /// <returns>
+    ///     <see langword="true" /> if such a subarray exists; otherwise, <see langword="false" />.
+    /// </returns>
     bool CheckSubarraySum(int[] nums, int k);
 }

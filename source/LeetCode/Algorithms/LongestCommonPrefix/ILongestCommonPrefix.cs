@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.LongestCommonPrefix;
 /// </summary>
 public interface ILongestCommonPrefix
 {
+    /// <summary>
+    ///     Finds the longest common prefix string shared by all strings in <paramref name="strs" />.
+    /// </summary>
+    /// <param name="strs">The array of strings to compare.</param>
+    /// <returns>The longest common prefix, or an empty string if there is none.</returns>
     string LongestCommonPrefix(string[] strs);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger;
 /// </summary>
 public interface ISubtractTheProductAndSumOfDigitsOfAnInteger
 {
+    /// <summary>
+    ///     Computes the difference between the product of the digits of <paramref name="n" /> and the sum of
+    ///     its digits.
+    /// </summary>
+    /// <param name="n">The non-negative integer whose digits are processed.</param>
+    /// <returns>The product of the digits of <paramref name="n" /> minus the sum of its digits.</returns>
     int SubtractProductAndSum(int n);
 }

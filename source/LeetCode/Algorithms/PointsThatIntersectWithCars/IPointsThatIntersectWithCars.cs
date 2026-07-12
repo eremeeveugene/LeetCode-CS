@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.PointsThatIntersectWithCars;
 /// </summary>
 public interface IPointsThatIntersectWithCars
 {
+    /// <summary>
+    ///     Counts the number of distinct integer points on the road that are covered by at least one of the car ranges
+    ///     given in <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The list of car ranges, each expressed as a pair of start and end points, inclusive.</param>
+    /// <returns>The number of distinct points covered by at least one car.</returns>
     int NumberOfPoints(IList<IList<int>> nums);
 }

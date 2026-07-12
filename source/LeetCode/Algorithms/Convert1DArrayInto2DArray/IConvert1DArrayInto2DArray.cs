@@ -16,5 +16,16 @@ namespace LeetCode.Algorithms.Convert1DArrayInto2DArray;
 /// </summary>
 public interface IConvert1DArrayInto2DArray
 {
+    /// <summary>
+    ///     Converts the 1-dimensional array <paramref name="original" /> into a 2-dimensional array with
+    ///     <paramref name="m" /> rows and <paramref name="n" /> columns.
+    /// </summary>
+    /// <param name="original">The 1-dimensional array of elements to convert.</param>
+    /// <param name="m">The number of rows in the resulting 2-dimensional array.</param>
+    /// <param name="n">The number of columns in the resulting 2-dimensional array.</param>
+    /// <returns>
+    ///     The resulting <paramref name="m" /> by <paramref name="n" /> 2-dimensional array, or an empty array if the
+    ///     conversion is not possible.
+    /// </returns>
     int[][] Construct2DArray(int[] original, int m, int n);
 }

@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.MaximumSwap;
 /// </summary>
 public interface IMaximumSwap
 {
+    /// <summary>
+    ///     Swaps two digits of <paramref name="num" /> at most once to obtain the largest possible value.
+    /// </summary>
+    /// <param name="num">The non-negative integer whose digits may be swapped.</param>
+    /// <returns>The maximum value obtainable by swapping two digits of <paramref name="num" /> at most once.</returns>
     int MaximumSwap(int num);
 }

@@ -14,15 +14,13 @@ namespace LeetCode.Algorithms.AddToArrayFormOfInteger;
 /// <inheritdoc />
 public sealed class AddToArrayFormOfIntegerDivision : IAddToArrayFormOfInteger
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(max(n, log k)), where n is the length of the array num and log k is the number of digits in the
     ///     integer k
     ///     Space complexity - O(max(n, log k)), where n is the length of the array num and log k is the number of digits in
     ///     the integer k
-    /// </summary>
-    /// <param name="num"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> AddToArrayForm(int[] num, int k)
     {
         var result = new List<int>();

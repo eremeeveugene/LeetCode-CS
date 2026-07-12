@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.RangeSumQueryImmutable;
 /// </summary>
 public interface IRangeSumQueryImmutable
 {
+    /// <summary>
+    ///     Computes the sum of the elements between indices <paramref name="left" /> and <paramref name="right" />,
+    ///     inclusive, of the underlying immutable array.
+    /// </summary>
+    /// <param name="left">The starting index of the range, inclusive.</param>
+    /// <param name="right">The ending index of the range, inclusive.</param>
+    /// <returns>The sum of the elements within the given index range.</returns>
     int SumRange(int left, int right);
 }

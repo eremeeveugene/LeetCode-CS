@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.SumOfLeftLeaves;
 /// </summary>
 public interface ISumOfLeftLeaves
 {
+    /// <summary>
+    ///     Sums the values of all leaf nodes that are left children within the binary tree rooted at
+    ///     <paramref name="root" />.
+    /// </summary>
+    /// <param name="root">The root of the binary tree.</param>
+    /// <returns>The sum of the values of all left leaves in the tree.</returns>
     int SumOfLeftLeaves(TreeNode? root);
 }

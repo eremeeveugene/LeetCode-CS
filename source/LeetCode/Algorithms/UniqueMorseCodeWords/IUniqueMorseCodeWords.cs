@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.UniqueMorseCodeWords;
 /// </summary>
 public interface IUniqueMorseCodeWords
 {
+    /// <summary>
+    ///     Counts the number of distinct Morse code transformations produced by translating each word in
+    ///     <paramref name="words" /> letter by letter.
+    /// </summary>
+    /// <param name="words">The array of lowercase words to translate into Morse code.</param>
+    /// <returns>The number of distinct Morse code representations among the words.</returns>
     int UniqueMorseRepresentations(string[] words);
 }

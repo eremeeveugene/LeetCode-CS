@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.PrimeSubtractionOperation;
 /// </summary>
 public interface IPrimeSubtractionOperation
 {
+    /// <summary>
+    ///     Determines whether <paramref name="nums" /> can be made strictly increasing by optionally subtracting a prime
+    ///     number smaller than each element, at most once per index.
+    /// </summary>
+    /// <param name="nums">The array of integers to evaluate.</param>
+    /// <returns><see langword="true" /> if <paramref name="nums" /> can be made strictly increasing; otherwise, <see langword="false" />.</returns>
     bool PrimeSubOperation(int[] nums);
 }

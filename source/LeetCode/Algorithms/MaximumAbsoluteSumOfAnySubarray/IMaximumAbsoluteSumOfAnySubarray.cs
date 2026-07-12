@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.MaximumAbsoluteSumOfAnySubarray;
 /// </summary>
 public interface IMaximumAbsoluteSumOfAnySubarray
 {
+    /// <summary>
+    ///     Finds the maximum absolute value of the sum of any (possibly empty) subarray of <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array of integers to search for a subarray with maximum absolute sum.</param>
+    /// <returns>The maximum absolute sum achievable by any subarray of <paramref name="nums" />.</returns>
     int MaxAbsoluteSum(int[] nums);
 }

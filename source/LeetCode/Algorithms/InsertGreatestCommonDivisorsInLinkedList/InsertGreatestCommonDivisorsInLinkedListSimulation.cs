@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.InsertGreatestCommonDivisorsInLinkedList;
 /// <inheritdoc />
 public sealed class InsertGreatestCommonDivisorsInLinkedListSimulation : IInsertGreatestCommonDivisorsInLinkedList
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * log min(a,b))
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="head"></param>
-    /// <returns></returns>
+    /// </remarks>
     public ListNode? InsertGreatestCommonDivisors(ListNode head)
     {
         var dummyHead = new ListNode(0, head);

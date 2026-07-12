@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.SumOfDistancesInTree;
 /// </summary>
 public interface ISumOfDistancesInTree
 {
+    /// <summary>
+    ///     Computes, for each node in an undirected tree of <paramref name="n" /> nodes connected by
+    ///     <paramref name="edges" />, the sum of the distances from that node to every other node.
+    /// </summary>
+    /// <param name="n">The number of nodes in the tree, labeled from 0 to <paramref name="n" /> - 1.</param>
+    /// <param name="edges">The edges of the tree, where each entry contains two node labels connected by an edge.</param>
+    /// <returns>An array where the value at each index is the sum of distances from that node to all other nodes.</returns>
     int[] SumOfDistancesInTree(int n, int[][] edges);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumDeletionsToMakeStringBalanced;
 /// </summary>
 public interface IMinimumDeletionsToMakeStringBalanced
 {
+    /// <summary>
+    ///     Finds the minimum number of characters that must be deleted from the binary string <paramref name="s" />
+    ///     (containing only 'a' and 'b') so that no 'b' appears before an 'a'.
+    /// </summary>
+    /// <param name="s">The string consisting of characters 'a' and 'b'.</param>
+    /// <returns>The minimum number of deletions required to balance the string.</returns>
     int MinimumDeletions(string s);
 }

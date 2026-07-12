@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.NumberOfOneBits;
 /// </summary>
 public interface INumberOfOneBits
 {
+    /// <summary>
+    ///     Counts the number of set bits (the Hamming weight) in the binary representation of <paramref name="n" />.
+    /// </summary>
+    /// <param name="n">The integer whose set bits should be counted.</param>
+    /// <returns>The number of '1' bits in the binary representation of <paramref name="n" />.</returns>
     int HammingWeight(int n);
 }

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimumArrayEnd;
 /// </summary>
 public interface IMinimumArrayEnd
 {
+    /// <summary>
+    ///     Finds the minimum possible last element of a strictly increasing array of <paramref name="n" /> positive
+    ///     integers whose bitwise AND, when combined pairwise across the whole array, equals <paramref name="x" />.
+    /// </summary>
+    /// <param name="n">The number of positive integers in the array.</param>
+    /// <param name="x">The value that the bitwise AND of all array elements must equal.</param>
+    /// <returns>The minimum possible value of the last element of the array.</returns>
     long MinEnd(int n, int x);
 }

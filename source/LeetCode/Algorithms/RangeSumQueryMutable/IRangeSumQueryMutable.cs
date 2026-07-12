@@ -16,7 +16,19 @@ namespace LeetCode.Algorithms.RangeSumQueryMutable;
 /// </summary>
 public interface IRangeSumQueryMutable
 {
+    /// <summary>
+    ///     Updates the value at <paramref name="index" /> of the underlying array to <paramref name="val" />.
+    /// </summary>
+    /// <param name="index">The index of the element to update.</param>
+    /// <param name="val">The new value to assign at <paramref name="index" />.</param>
     void Update(int index, int val);
 
+    /// <summary>
+    ///     Computes the sum of the elements between indices <paramref name="left" /> and <paramref name="right" />,
+    ///     inclusive, of the underlying array.
+    /// </summary>
+    /// <param name="left">The starting index of the range, inclusive.</param>
+    /// <param name="right">The ending index of the range, inclusive.</param>
+    /// <returns>The sum of the elements within the given index range.</returns>
     int SumRange(int left, int right);
 }

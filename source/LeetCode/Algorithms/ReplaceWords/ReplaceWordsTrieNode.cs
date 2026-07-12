@@ -14,15 +14,13 @@ namespace LeetCode.Algorithms.ReplaceWords;
 /// <inheritdoc />
 public sealed class ReplaceWordsTrieNode : IReplaceWords
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * L + k * L), where n is the number of words in the dictionary, L is the length of the word,
     ///     k is the number of words in the sentence
     ///     Space complexity - O(n * L + m), where n is the number of words in the dictionary, L is the length of the word, m
     ///     is the length of the sentence
-    /// </summary>
-    /// <param name="dictionary"></param>
-    /// <param name="sentence"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string ReplaceWords(IList<string> dictionary, string sentence)
     {
         var trie = new Trie(dictionary);

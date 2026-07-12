@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MakeArrayElementsEqualToZero;
 /// </summary>
 public interface IMakeArrayElementsEqualToZero
 {
+    /// <summary>
+    ///     Counts the number of valid starting positions and directions from which a simulated pointer, moving through
+    ///     <paramref name="nums" /> and decrementing non-zero values it lands on, ends up making all elements zero.
+    /// </summary>
+    /// <param name="nums">The array of non-negative integers to simulate the pointer traversal over.</param>
+    /// <returns>The number of (position, direction) selections that result in all elements of <paramref name="nums" /> becoming zero.</returns>
     int CountValidSelections(int[] nums);
 }

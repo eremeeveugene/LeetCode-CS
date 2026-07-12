@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindElementsInContaminatedBinaryTree;
 /// </summary>
 public interface IFindElementsInContaminatedBinaryTree
 {
+    /// <summary>
+    ///     Determines whether <paramref name="target" /> exists among the values recovered from the contaminated binary
+    ///     tree.
+    /// </summary>
+    /// <param name="target">The value to search for in the recovered tree.</param>
+    /// <returns><see langword="true" /> if <paramref name="target" /> exists in the tree; otherwise, <see langword="false" />.</returns>
     bool Find(int target);
 }

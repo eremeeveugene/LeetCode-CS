@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.NextGreaterElement1;
 /// </summary>
 public interface INextGreaterElement1
 {
+    /// <summary>
+    ///     For each element of <paramref name="nums1" />, finds the next greater element that appears to its right
+    ///     in <paramref name="nums2" />, where <paramref name="nums1" /> is a subset of <paramref name="nums2" />.
+    /// </summary>
+    /// <param name="nums1">The array of distinct integers to find next greater elements for.</param>
+    /// <param name="nums2">The array of distinct integers in which to search for next greater elements.</param>
+    /// <returns>An array where each element is the next greater element in <paramref name="nums2" />, or -1 if none exists.</returns>
     int[] NextGreaterElement(int[] nums1, int[] nums2);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.StringCompression3;
 /// </summary>
 public interface IStringCompression3
 {
+    /// <summary>
+    ///     Compresses <paramref name="word" /> by repeatedly taking runs of up to 9 identical adjacent
+    ///     characters and appending the run length followed by the character.
+    /// </summary>
+    /// <param name="word">The string to compress.</param>
+    /// <returns>The compressed representation of <paramref name="word" />.</returns>
     string CompressedString(string word);
 }

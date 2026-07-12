@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimumCapacityBox;
 /// </summary>
 public interface IMinimumCapacityBox
 {
+    /// <summary>
+    ///     Finds the index of the box in <paramref name="capacities" /> with the smallest capacity that is still
+    ///     large enough to hold an item of size <paramref name="itemSize" />.
+    /// </summary>
+    /// <param name="capacities">The array of box capacities.</param>
+    /// <param name="itemSize">The size of the item that must fit in the chosen box.</param>
+    /// <returns>The index of the smallest-capacity box that can hold the item, or -1 if none can.</returns>
     int MinimumIndex(int[] capacities, int itemSize);
 }

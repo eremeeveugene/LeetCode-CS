@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ZigzagGridTraversalWithSkip;
 /// </summary>
 public interface IZigzagGridTraversalWithSkip
 {
+    /// <summary>
+    ///     Traverses <paramref name="grid" /> row by row in alternating left-to-right and right-to-left order,
+    ///     collecting every other visited cell.
+    /// </summary>
+    /// <param name="grid">The 2D grid of integers to traverse.</param>
+    /// <returns>A list of the collected values in zigzag traversal order.</returns>
     IList<int> ZigzagTraversal(int[][] grid);
 }

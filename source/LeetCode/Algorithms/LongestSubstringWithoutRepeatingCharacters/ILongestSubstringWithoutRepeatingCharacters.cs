@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters;
 /// </summary>
 public interface ILongestSubstringWithoutRepeatingCharacters
 {
+    /// <summary>
+    ///     Finds the length of the longest substring of <paramref name="s" /> without repeating characters.
+    /// </summary>
+    /// <param name="s">The string to search for the longest substring without repeating characters.</param>
+    /// <returns>The length of the longest substring of <paramref name="s" /> with no repeated characters.</returns>
     int LengthOfLongestSubstring(string s);
 }

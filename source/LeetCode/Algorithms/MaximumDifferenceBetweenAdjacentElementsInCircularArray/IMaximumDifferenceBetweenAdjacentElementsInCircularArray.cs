@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumDifferenceBetweenAdjacentElementsInCircular
 /// </summary>
 public interface IMaximumDifferenceBetweenAdjacentElementsInCircularArray
 {
+    /// <summary>
+    ///     Finds the maximum absolute difference between adjacent elements of <paramref name="nums" />, treating the
+    ///     array as circular so the last and first elements are also considered adjacent.
+    /// </summary>
+    /// <param name="nums">The array of integers, treated as circular, to compute adjacent differences for.</param>
+    /// <returns>The maximum absolute difference between any two circularly adjacent elements of <paramref name="nums" />.</returns>
     int MaxAdjacentDistance(int[] nums);
 }

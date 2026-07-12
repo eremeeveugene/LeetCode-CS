@@ -17,6 +17,11 @@ public sealed class PrintInOrderAutoResetEvent : IPrintInOrder
     private readonly AutoResetEvent _firstPrint = new(false);
     private readonly AutoResetEvent _secondPrint = new(false);
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void First(Action printFirst)
     {
         printFirst.Invoke();
@@ -24,6 +29,11 @@ public sealed class PrintInOrderAutoResetEvent : IPrintInOrder
         _firstPrint.Set();
     }
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void Second(Action printSecond)
     {
         _firstPrint.WaitOne();
@@ -33,6 +43,11 @@ public sealed class PrintInOrderAutoResetEvent : IPrintInOrder
         _secondPrint.Set();
     }
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void Third(Action printThird)
     {
         _secondPrint.WaitOne();

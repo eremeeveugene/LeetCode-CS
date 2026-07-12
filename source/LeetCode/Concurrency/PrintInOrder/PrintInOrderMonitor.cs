@@ -17,6 +17,11 @@ public sealed class PrintInOrderMonitor : IPrintInOrder
     private readonly object _lock = new();
     private int _step = 1;
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void First(Action printFirst)
     {
         lock (_lock)
@@ -29,6 +34,11 @@ public sealed class PrintInOrderMonitor : IPrintInOrder
         }
     }
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void Second(Action printSecond)
     {
         lock (_lock)
@@ -46,6 +56,11 @@ public sealed class PrintInOrderMonitor : IPrintInOrder
         }
     }
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void Third(Action printThird)
     {
         lock (_lock)

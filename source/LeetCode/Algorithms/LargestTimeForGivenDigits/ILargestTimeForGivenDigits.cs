@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.LargestTimeForGivenDigits;
 /// </summary>
 public interface ILargestTimeForGivenDigits
 {
+    /// <summary>
+    ///     Finds the largest 24-hour time that can be formed by using all four digits in <paramref name="arr" /> exactly once.
+    /// </summary>
+    /// <param name="arr">The array of four digits to arrange into a time.</param>
+    /// <returns>The largest valid time in "HH:MM" format, or an empty string if no valid time can be formed.</returns>
     string LargestTimeFromDigits(int[] arr);
 }

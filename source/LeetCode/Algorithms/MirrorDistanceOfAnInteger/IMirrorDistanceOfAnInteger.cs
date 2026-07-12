@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MirrorDistanceOfAnInteger;
 /// </summary>
 public interface IMirrorDistanceOfAnInteger
 {
+    /// <summary>
+    ///     Computes the absolute difference between <paramref name="n" /> and its mirror image, the number formed by
+    ///     reversing the digits of <paramref name="n" />.
+    /// </summary>
+    /// <param name="n">The non-negative integer to compute the mirror distance for.</param>
+    /// <returns>The absolute difference between <paramref name="n" /> and its digit-reversed mirror value.</returns>
     int MirrorDistance(int n);
 }

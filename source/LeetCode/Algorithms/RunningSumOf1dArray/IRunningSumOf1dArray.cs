@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.RunningSumOf1dArray;
 /// </summary>
 public interface IRunningSumOf1dArray
 {
+    /// <summary>
+    ///     Computes the running sum of <paramref name="nums" />, where each element is the sum of itself
+    ///     and all preceding elements.
+    /// </summary>
+    /// <param name="nums">The array of integers to accumulate.</param>
+    /// <returns>An array containing the running sum of <paramref name="nums" />.</returns>
     int[] RunningSum(int[] nums);
 }

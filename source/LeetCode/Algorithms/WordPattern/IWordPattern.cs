@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.WordPattern;
 /// </summary>
 public interface IWordPattern
 {
+    /// <summary>
+    ///     Determines whether <paramref name="s" /> follows the same bijective letter-to-word mapping described by
+    ///     <paramref name="pattern" />.
+    /// </summary>
+    /// <param name="pattern">The pattern string of letters, each representing a distinct word.</param>
+    /// <param name="s">The space-separated string of words to match against <paramref name="pattern" />.</param>
+    /// <returns><see langword="true" /> if <paramref name="s" /> follows the same pattern; otherwise, <see langword="false" />.</returns>
     bool WordPattern(string pattern, string s);
 }

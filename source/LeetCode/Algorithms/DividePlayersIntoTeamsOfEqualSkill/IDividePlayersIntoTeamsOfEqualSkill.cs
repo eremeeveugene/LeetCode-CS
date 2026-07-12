@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.DividePlayersIntoTeamsOfEqualSkill;
 /// </summary>
 public interface IDividePlayersIntoTeamsOfEqualSkill
 {
+    /// <summary>
+    ///     Pairs up the players in <paramref name="skill" /> into teams of two with equal total skill, computing the sum
+    ///     of the skill chemistry (product of skills) of each team.
+    /// </summary>
+    /// <param name="skill">The array of player skill values, with an even number of players.</param>
+    /// <returns>The sum of the skill chemistry values for all teams, or -1 if the players cannot be paired equally.</returns>
     long DividePlayers(int[] skill);
 }

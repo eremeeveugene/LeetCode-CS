@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.WordSearch;
 /// </summary>
 public interface IWordSearch
 {
+    /// <summary>
+    ///     Determines whether <paramref name="word" /> can be constructed from letters of sequentially adjacent
+    ///     cells in <paramref name="board" />, using each cell at most once.
+    /// </summary>
+    /// <param name="board">The grid of characters to search within.</param>
+    /// <param name="word">The word to search for in the grid.</param>
+    /// <returns><see langword="true" /> if <paramref name="word" /> exists in the grid; otherwise, <see langword="false" />.</returns>
     bool Exist(char[][] board, string word);
 }

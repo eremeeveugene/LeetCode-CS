@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.RemoveElement;
 /// </summary>
 public interface IRemoveElement
 {
+    /// <summary>
+    ///     Removes all occurrences of <paramref name="val" /> from <paramref name="nums" /> in place, preserving the
+    ///     relative order of the remaining elements.
+    /// </summary>
+    /// <param name="nums">The array of integers to remove values from in place.</param>
+    /// <param name="val">The value to remove from <paramref name="nums" />.</param>
+    /// <returns>The number of elements remaining at the front of <paramref name="nums" /> after removal.</returns>
     int RemoveElement(int[] nums, int val);
 }

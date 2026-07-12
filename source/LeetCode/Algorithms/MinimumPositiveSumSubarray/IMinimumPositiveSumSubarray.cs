@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.MinimumPositiveSumSubarray;
 /// </summary>
 public interface IMinimumPositiveSumSubarray
 {
+    /// <summary>
+    ///     Finds the minimum positive sum among all subarrays of <paramref name="nums" /> whose length is between
+    ///     <paramref name="l" /> and <paramref name="r" />, inclusive.
+    /// </summary>
+    /// <param name="nums">The list of integers to search for subarrays.</param>
+    /// <param name="l">The minimum allowed length of a subarray.</param>
+    /// <param name="r">The maximum allowed length of a subarray.</param>
+    /// <returns>The minimum positive subarray sum, or -1 if no subarray has a positive sum.</returns>
     int MinimumSumSubarray(IList<int> nums, int l, int r);
 }

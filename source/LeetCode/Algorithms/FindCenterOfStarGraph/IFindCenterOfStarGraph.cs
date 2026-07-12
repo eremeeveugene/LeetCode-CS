@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FindCenterOfStarGraph;
 /// </summary>
 public interface IFindCenterOfStarGraph
 {
+    /// <summary>
+    ///     Finds the center node of the star graph described by <paramref name="edges" />.
+    /// </summary>
+    /// <param name="edges">The array of edges of the star graph.</param>
+    /// <returns>The identifier of the center node of the star graph.</returns>
     int FindCenter(int[][] edges);
 }

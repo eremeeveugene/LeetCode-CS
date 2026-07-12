@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.PathWithMaximumGold;
 /// </summary>
 public interface IPathWithMaximumGold
 {
+    /// <summary>
+    ///     Finds the maximum amount of gold that can be collected by starting at any cell of <paramref name="grid" /> and
+    ///     moving to adjacent cells without revisiting a cell or passing through a cell with no gold.
+    /// </summary>
+    /// <param name="grid">The grid where each cell contains the amount of gold at that position, or 0 if empty.</param>
+    /// <returns>The maximum amount of gold that can be collected along a single path.</returns>
     int GetMaximumGold(int[][] grid);
 }

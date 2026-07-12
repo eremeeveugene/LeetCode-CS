@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero;
 /// </summary>
 public interface INumberOfStepsToReduceNumberToZero
 {
+    /// <summary>
+    ///     Computes the number of steps required to reduce <paramref name="num" /> to zero, where each step halves
+    ///     the number if it is even or subtracts 1 if it is odd.
+    /// </summary>
+    /// <param name="num">The non-negative integer to reduce to zero.</param>
+    /// <returns>The number of steps required to reduce <paramref name="num" /> to zero.</returns>
     int NumberOfSteps(int num);
 }

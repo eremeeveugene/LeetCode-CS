@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.RemoveKDigits;
 /// </summary>
 public interface IRemoveKDigits
 {
+    /// <summary>
+    ///     Removes exactly <paramref name="k" /> digits from the non-negative integer string <paramref name="num" /> to
+    ///     produce the smallest possible resulting number.
+    /// </summary>
+    /// <param name="num">The string representation of a non-negative integer.</param>
+    /// <param name="k">The number of digits to remove.</param>
+    /// <returns>The smallest possible number, as a string, after removing <paramref name="k" /> digits.</returns>
     string RemoveKdigits(string num, int k);
 }

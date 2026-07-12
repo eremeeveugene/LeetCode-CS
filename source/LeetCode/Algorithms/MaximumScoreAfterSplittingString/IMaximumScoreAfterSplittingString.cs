@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumScoreAfterSplittingString;
 /// </summary>
 public interface IMaximumScoreAfterSplittingString
 {
+    /// <summary>
+    ///     Splits <paramref name="s" /> into two non-empty substrings and finds the split that maximizes the sum of
+    ///     zeros in the left substring and ones in the right substring.
+    /// </summary>
+    /// <param name="s">The binary string to split.</param>
+    /// <returns>The maximum achievable score.</returns>
     int MaxScore(string s);
 }

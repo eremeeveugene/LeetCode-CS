@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.LexicographicalNumbers;
 /// </summary>
 public interface ILexicographicalNumbers
 {
+    /// <summary>
+    ///     Lists all integers in the range <c>[1, n]</c> in lexicographical (dictionary string) order.
+    /// </summary>
+    /// <param name="n">The upper bound of the range of integers to list.</param>
+    /// <returns>The list of integers from <c>1</c> to <paramref name="n" /> in lexicographical order.</returns>
     IList<int> LexicalOrder(int n);
 }

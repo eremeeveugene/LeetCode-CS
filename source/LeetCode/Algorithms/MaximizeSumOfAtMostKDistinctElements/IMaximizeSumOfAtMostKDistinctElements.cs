@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximizeSumOfAtMostKDistinctElements;
 /// </summary>
 public interface IMaximizeSumOfAtMostKDistinctElements
 {
+    /// <summary>
+    ///     Selects at most <paramref name="k" /> distinct elements from <paramref name="nums" /> that maximize their sum.
+    /// </summary>
+    /// <param name="nums">The array of integers to select distinct elements from.</param>
+    /// <param name="k">The maximum number of distinct elements to select.</param>
+    /// <returns>The selected distinct elements that maximize the sum, containing at most <paramref name="k" /> elements.</returns>
     int[] MaxKDistinct(int[] nums, int k);
 }

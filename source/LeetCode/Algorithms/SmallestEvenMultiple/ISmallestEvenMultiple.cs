@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.SmallestEvenMultiple;
 /// </summary>
 public interface ISmallestEvenMultiple
 {
+    /// <summary>
+    ///     Computes the smallest positive integer that is a multiple of both 2 and <paramref name="n" />.
+    /// </summary>
+    /// <param name="n">The positive integer to find the smallest even multiple of.</param>
+    /// <returns>The smallest positive integer divisible by both 2 and <paramref name="n" />.</returns>
     int SmallestEvenMultiple(int n);
 }

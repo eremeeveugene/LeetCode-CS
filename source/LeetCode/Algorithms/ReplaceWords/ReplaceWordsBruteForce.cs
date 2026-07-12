@@ -14,14 +14,12 @@ namespace LeetCode.Algorithms.ReplaceWords;
 /// <inheritdoc />
 public sealed class ReplaceWordsBruteForce : IReplaceWords
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n log n + k * n * L), where n is the number of words in the dictionary, m is the length of
     ///     the sentence, k is the number of words in the sentence, and L is the length of the longest word
     ///     Space complexity - O(m + n), where n is the number of words in the dictionary, m is the length of the sentence
-    /// </summary>
-    /// <param name="dictionary"></param>
-    /// <param name="sentence"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string ReplaceWords(IList<string> dictionary, string sentence)
     {
         var words = sentence.Split(' ');

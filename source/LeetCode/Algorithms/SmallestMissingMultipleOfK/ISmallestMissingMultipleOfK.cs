@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.SmallestMissingMultipleOfK;
 /// </summary>
 public interface ISmallestMissingMultipleOfK
 {
+    /// <summary>
+    ///     Finds the smallest positive multiple of <paramref name="k" /> that does not appear in
+    ///     <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array of integers to check against.</param>
+    /// <param name="k">The value whose multiples are considered.</param>
+    /// <returns>The smallest positive multiple of <paramref name="k" /> missing from <paramref name="nums" />.</returns>
     int MissingMultiple(int[] nums, int k);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.UniqueLength3PalindromicSubsequences;
 /// </summary>
 public interface IUniqueLength3PalindromicSubsequences
 {
+    /// <summary>
+    ///     Counts the number of unique palindromic subsequences of length three that can be formed from
+    ///     <paramref name="s" />.
+    /// </summary>
+    /// <param name="s">The string to search for length-three palindromic subsequences in.</param>
+    /// <returns>The number of unique length-three palindromic subsequences.</returns>
     int CountPalindromicSubsequence(string s);
 }

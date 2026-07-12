@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.SortThePeople;
 /// </summary>
 public interface ISortThePeople
 {
+    /// <summary>
+    ///     Sorts <paramref name="names" /> in descending order of the corresponding heights in
+    ///     <paramref name="heights" />.
+    /// </summary>
+    /// <param name="names">The array of people's names.</param>
+    /// <param name="heights">The array of distinct heights, where heights[i] is the height of names[i].</param>
+    /// <returns>The names sorted in descending order of height.</returns>
     string[] SortPeople(string[] names, int[] heights);
 }

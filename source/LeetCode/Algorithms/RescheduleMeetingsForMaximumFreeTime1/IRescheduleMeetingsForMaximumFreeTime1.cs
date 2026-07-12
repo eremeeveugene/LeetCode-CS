@@ -16,5 +16,15 @@ namespace LeetCode.Algorithms.RescheduleMeetingsForMaximumFreeTime1;
 /// </summary>
 public interface IRescheduleMeetingsForMaximumFreeTime1
 {
+    /// <summary>
+    ///     Determines the maximum continuous free time achievable within an event of length <paramref name="eventTime" />
+    ///     by rescheduling at most <paramref name="k" /> of the meetings described by <paramref name="startTime" /> and
+    ///     <paramref name="endTime" />, keeping each meeting's duration and preventing overlaps.
+    /// </summary>
+    /// <param name="eventTime">The total length of the event during which meetings take place.</param>
+    /// <param name="k">The maximum number of meetings that may be rescheduled.</param>
+    /// <param name="startTime">The start time of each meeting.</param>
+    /// <param name="endTime">The end time of each meeting.</param>
+    /// <returns>The maximum length of continuous free time obtainable after rescheduling.</returns>
     int MaxFreeTime(int eventTime, int k, int[] startTime, int[] endTime);
 }

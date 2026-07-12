@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.TransformArrayByParity;
 /// </summary>
 public interface ITransformArrayByParity
 {
+    /// <summary>
+    ///     Replaces each even element of <paramref name="nums" /> with 0 and each odd element with 1, then sorts
+    ///     the resulting array in non-decreasing order.
+    /// </summary>
+    /// <param name="nums">The array of integers to transform.</param>
+    /// <returns>The sorted array of 0s and 1s reflecting the parity of the original elements.</returns>
     int[] TransformArray(int[] nums);
 }

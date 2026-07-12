@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FindTheMinimumAreaToCoverAllOnes1;
 /// </summary>
 public interface IFindTheMinimumAreaToCoverAllOnes1
 {
+    /// <summary>
+    ///     Finds the area of the smallest axis-aligned rectangle that covers every cell containing <c>1</c> in <paramref name="grid" />.
+    /// </summary>
+    /// <param name="grid">The binary grid to examine.</param>
+    /// <returns>The area of the smallest rectangle covering all <c>1</c>s.</returns>
     int MinimumArea(int[][] grid);
 }

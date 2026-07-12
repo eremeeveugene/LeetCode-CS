@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.MergeNodesInBetweenZeros;
 /// </summary>
 public interface IMergeNodesInBetweenZeros
 {
+    /// <summary>
+    ///     Merges every group of nodes lying between two consecutive zero nodes of <paramref name="head" /> into a
+    ///     single node whose value is the sum of the group.
+    /// </summary>
+    /// <param name="head">The head of the linked list, which starts and ends with a node of value 0.</param>
+    /// <returns>The head of the modified linked list containing the merged sums.</returns>
     ListNode? MergeNodes(ListNode? head);
 }

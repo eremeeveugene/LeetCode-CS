@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SmallestPairWithDifferentFrequencies;
 /// </summary>
 public interface ISmallestPairWithDifferentFrequencies
 {
+    /// <summary>
+    ///     Finds the lexicographically smallest pair of adjacent indices in <paramref name="nums" /> whose
+    ///     elements have different frequencies of occurrence within the array.
+    /// </summary>
+    /// <param name="nums">The array of integers to search.</param>
+    /// <returns>An array containing the two indices of the qualifying pair, or an empty array if none exists.</returns>
     int[] MinDistinctFreqPair(int[] nums);
 }

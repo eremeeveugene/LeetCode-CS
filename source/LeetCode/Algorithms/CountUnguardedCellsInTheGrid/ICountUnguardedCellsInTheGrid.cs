@@ -16,5 +16,15 @@ namespace LeetCode.Algorithms.CountUnguardedCellsInTheGrid;
 /// </summary>
 public interface ICountUnguardedCellsInTheGrid
 {
+    /// <summary>
+    ///     Counts the unguarded cells in an <paramref name="m" /> by <paramref name="n" /> grid containing the given
+    ///     <paramref name="guards" /> and <paramref name="walls" />, where a cell is guarded if it is visible to any
+    ///     guard along a row or column not blocked by another guard or a wall.
+    /// </summary>
+    /// <param name="m">The number of rows in the grid.</param>
+    /// <param name="n">The number of columns in the grid.</param>
+    /// <param name="guards">The positions of the guards in the grid.</param>
+    /// <param name="walls">The positions of the walls in the grid.</param>
+    /// <returns>The number of cells that are not occupied by a guard or wall and are not guarded.</returns>
     int CountUnguarded(int m, int n, int[][] guards, int[][] walls);
 }

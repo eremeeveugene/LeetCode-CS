@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.TaskScheduler;
 /// </summary>
 public interface ITaskScheduler
 {
+    /// <summary>
+    ///     Computes the least number of CPU intervals required to complete all the given <paramref name="tasks" />,
+    ///     where identical tasks must be separated by at least <paramref name="n" /> intervals.
+    /// </summary>
+    /// <param name="tasks">The array of characters representing the tasks to be executed.</param>
+    /// <param name="n">The minimum cooldown interval count required between two identical tasks.</param>
+    /// <returns>The minimum number of intervals needed to finish all tasks.</returns>
     int LeastInterval(char[] tasks, int n);
 }

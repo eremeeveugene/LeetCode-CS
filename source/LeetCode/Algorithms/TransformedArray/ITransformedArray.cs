@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.TransformedArray;
 /// </summary>
 public interface ITransformedArray
 {
+    /// <summary>
+    ///     Builds a new array where each element at index <c>i</c> is taken from <paramref name="nums" /> at the
+    ///     circular offset given by the value <c>nums[i]</c>.
+    /// </summary>
+    /// <param name="nums">The array of integers defining the circular offsets to apply.</param>
+    /// <returns>The transformed array built by circularly indexing into <paramref name="nums" />.</returns>
     int[] ConstructTransformedArray(int[] nums);
 }

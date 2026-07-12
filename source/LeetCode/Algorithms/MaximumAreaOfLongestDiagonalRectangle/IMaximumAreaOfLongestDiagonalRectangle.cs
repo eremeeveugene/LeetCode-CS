@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumAreaOfLongestDiagonalRectangle;
 /// </summary>
 public interface IMaximumAreaOfLongestDiagonalRectangle
 {
+    /// <summary>
+    ///     Finds the area of the rectangle in <paramref name="dimensions" /> with the longest diagonal, breaking ties
+    ///     by choosing the rectangle with the largest area.
+    /// </summary>
+    /// <param name="dimensions">The array of rectangle dimensions, where each element is a [length, width] pair.</param>
+    /// <returns>The area of the rectangle with the longest diagonal.</returns>
     int AreaOfMaxDiagonal(int[][] dimensions);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.RankTransformOfAnArray;
 /// </summary>
 public interface IRankTransformOfAnArray
 {
+    /// <summary>
+    ///     Replaces each element of <paramref name="arr" /> with its rank, where equal elements share the same rank and
+    ///     ranks start at 1 in ascending order of value.
+    /// </summary>
+    /// <param name="arr">The array of integers to rank.</param>
+    /// <returns>An array of the same length as <paramref name="arr" /> containing the rank of each element.</returns>
     int[] ArrayRankTransform(int[] arr);
 }

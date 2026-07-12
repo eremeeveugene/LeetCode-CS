@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.LengthOfLastWord;
 /// </summary>
 public interface ILengthOfLastWord
 {
+    /// <summary>
+    ///     Finds the length of the last word in <paramref name="s" />, where a word is a maximal substring of non-space characters.
+    /// </summary>
+    /// <param name="s">The string to examine.</param>
+    /// <returns>The length of the last word in <paramref name="s" />.</returns>
     int LengthOfLastWord(string s);
 }

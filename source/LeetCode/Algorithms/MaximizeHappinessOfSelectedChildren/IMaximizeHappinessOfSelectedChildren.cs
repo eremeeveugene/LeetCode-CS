@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.MaximizeHappinessOfSelectedChildren;
 /// </summary>
 public interface IMaximizeHappinessOfSelectedChildren
 {
+    /// <summary>
+    ///     Selects <paramref name="k" /> children from <paramref name="happiness" /> one at a time, decrementing the
+    ///     happiness value of every remaining child by 1 (not below 0) after each selection, to maximize the sum of the
+    ///     selected children's happiness values.
+    /// </summary>
+    /// <param name="happiness">The array of happiness values of the children.</param>
+    /// <param name="k">The number of children to select.</param>
+    /// <returns>The maximum possible sum of the happiness values of the selected children.</returns>
     long MaximumHappinessSum(int[] happiness, int k);
 }

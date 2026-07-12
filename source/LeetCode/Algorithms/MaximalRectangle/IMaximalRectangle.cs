@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.MaximalRectangle;
 /// </summary>
 public interface IMaximalRectangle
 {
+    /// <summary>
+    ///     Finds the area of the largest rectangle containing only 1s within the binary matrix <paramref name="matrix" />.
+    /// </summary>
+    /// <param name="matrix">The binary matrix, represented as characters '0' and '1', to search for the largest rectangle.</param>
+    /// <returns>The area of the largest rectangle containing only 1s in <paramref name="matrix" />.</returns>
     int MaximalRectangle(char[][] matrix);
 }

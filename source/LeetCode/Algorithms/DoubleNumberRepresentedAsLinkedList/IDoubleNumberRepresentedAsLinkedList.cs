@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList;
 /// </summary>
 public interface IDoubleNumberRepresentedAsLinkedList
 {
+    /// <summary>
+    ///     Doubles the non-negative integer represented by the linked list starting at <paramref name="head" />.
+    /// </summary>
+    /// <param name="head">The head node of the singly linked list representing the number to double.</param>
+    /// <returns>The head node of the linked list representing the doubled number.</returns>
     ListNode? DoubleIt(ListNode? head);
 }

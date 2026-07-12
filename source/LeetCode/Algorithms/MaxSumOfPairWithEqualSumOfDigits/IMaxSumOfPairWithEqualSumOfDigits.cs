@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.MaxSumOfPairWithEqualSumOfDigits;
 /// </summary>
 public interface IMaxSumOfPairWithEqualSumOfDigits
 {
+    /// <summary>
+    ///     Finds the maximum sum of a pair of elements from <paramref name="nums" /> whose digit sums are equal.
+    /// </summary>
+    /// <param name="nums">The array of integers to pair up.</param>
+    /// <returns>The maximum sum of a qualifying pair, or -1 if no such pair exists.</returns>
     int MaximumSum(int[] nums);
 }

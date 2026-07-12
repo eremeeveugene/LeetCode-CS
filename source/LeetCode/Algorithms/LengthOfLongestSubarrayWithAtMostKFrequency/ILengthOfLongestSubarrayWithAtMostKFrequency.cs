@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency;
 /// </summary>
 public interface ILengthOfLongestSubarrayWithAtMostKFrequency
 {
+    /// <summary>
+    ///     Finds the length of the longest contiguous subarray of <paramref name="nums" /> in which no element occurs more than <paramref name="k" /> times.
+    /// </summary>
+    /// <param name="nums">The array of integers to examine.</param>
+    /// <param name="k">The maximum allowed frequency of any element within the subarray.</param>
+    /// <returns>The length of the longest valid subarray.</returns>
     int MaxSubarrayLength(int[] nums, int k);
 }

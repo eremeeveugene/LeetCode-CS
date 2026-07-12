@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MaximumNumberOfWordsYouCanType;
 /// </summary>
 public interface IMaximumNumberOfWordsYouCanType
 {
+    /// <summary>
+    ///     Counts the number of words in <paramref name="text" /> that can be fully typed without using any of the keys
+    ///     listed in <paramref name="brokenLetters" />.
+    /// </summary>
+    /// <param name="text">The space-separated string of words to check.</param>
+    /// <param name="brokenLetters">The string of letters representing broken (unusable) keyboard keys.</param>
+    /// <returns>The count of words in <paramref name="text" /> that contain none of the broken letters.</returns>
     int CanBeTypedWords(string text, string brokenLetters);
 }

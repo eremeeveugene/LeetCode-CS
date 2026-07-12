@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.ZigzagConversion;
 /// </summary>
 public interface IZigzagConversion
 {
+    /// <summary>
+    ///     Arranges the characters of <paramref name="s" /> in a zigzag pattern across
+    ///     <paramref name="numRows" /> rows and reads them back row by row.
+    /// </summary>
+    /// <param name="s">The string to rearrange into the zigzag pattern.</param>
+    /// <param name="numRows">The number of rows in the zigzag pattern.</param>
+    /// <returns>The string read line by line after the zigzag arrangement.</returns>
     string Convert(string s, int numRows);
 }

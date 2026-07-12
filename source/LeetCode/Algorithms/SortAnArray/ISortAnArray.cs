@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.SortAnArray;
 /// </summary>
 public interface ISortAnArray
 {
+    /// <summary>
+    ///     Sorts <paramref name="nums" /> in ascending order.
+    /// </summary>
+    /// <param name="nums">The array of integers to sort.</param>
+    /// <returns>A new array containing the elements of <paramref name="nums" /> sorted in ascending order.</returns>
     int[] SortArray(int[] nums);
 }

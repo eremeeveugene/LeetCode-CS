@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.RowWithMaximumOnes;
 /// </summary>
 public interface IRowWithMaximumOnes
 {
+    /// <summary>
+    ///     Finds the row in <paramref name="mat" /> that contains the maximum number of ones.
+    /// </summary>
+    /// <param name="mat">The binary matrix to search.</param>
+    /// <returns>An array containing the index of the row with the most ones and the count of ones in that row.</returns>
     int[] RowAndMaximumOnes(int[][] mat);
 }

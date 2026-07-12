@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SumOfAllSubsetXORTotals;
 /// </summary>
 public interface ISumOfAllSubsetXORTotals
 {
+    /// <summary>
+    ///     Computes the sum, over every possible subset of <paramref name="nums" />, of the bitwise XOR of all
+    ///     elements in that subset.
+    /// </summary>
+    /// <param name="nums">The array of integers to generate subsets from.</param>
+    /// <returns>The sum of the XOR totals of all subsets of <paramref name="nums" />.</returns>
     int SubsetXORSum(int[] nums);
 }

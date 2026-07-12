@@ -16,5 +16,14 @@ namespace LeetCode.Algorithms.CountOfInterestingSubarrays;
 /// </summary>
 public interface ICountOfInterestingSubarrays
 {
+    /// <summary>
+    ///     Counts the subarrays of <paramref name="nums" /> that are "interesting", meaning the count of elements
+    ///     satisfying <c>nums[i] % modulo == k</c> within the subarray is itself congruent to <paramref name="k" />
+    ///     modulo <paramref name="modulo" />.
+    /// </summary>
+    /// <param name="nums">The list of integers to examine.</param>
+    /// <param name="modulo">The modulus used to evaluate elements and subarray counts.</param>
+    /// <param name="k">The target remainder used to evaluate elements and subarray counts.</param>
+    /// <returns>The total number of interesting subarrays.</returns>
     long CountInterestingSubarrays(IList<int> nums, int modulo, int k);
 }

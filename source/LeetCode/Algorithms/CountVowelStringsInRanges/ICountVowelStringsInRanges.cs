@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CountVowelStringsInRanges;
 /// </summary>
 public interface ICountVowelStringsInRanges
 {
+    /// <summary>
+    ///     For each range in <paramref name="queries" />, counts the words in <paramref name="words" /> within that range
+    ///     that both start and end with a vowel.
+    /// </summary>
+    /// <param name="words">The array of strings to examine.</param>
+    /// <param name="queries">The array of [start, end] inclusive index ranges to query.</param>
+    /// <returns>An array where each element is the count of vowel-bounded words for the corresponding query.</returns>
     int[] VowelStrings(string[] words, int[][] queries);
 }

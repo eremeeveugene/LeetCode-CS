@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.RansomNote;
 /// </summary>
 public interface IRansomNote
 {
+    /// <summary>
+    ///     Determines whether <paramref name="ransomNote" /> can be constructed by using letters exclusively from
+    ///     <paramref name="magazine" />, where each letter in <paramref name="magazine" /> can be used at most once.
+    /// </summary>
+    /// <param name="ransomNote">The string to construct.</param>
+    /// <param name="magazine">The string supplying the available letters.</param>
+    /// <returns><see langword="true" /> if <paramref name="ransomNote" /> can be constructed; otherwise, <see langword="false" />.</returns>
     bool CanConstruct(string ransomNote, string magazine);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ClimbingStairs;
 /// </summary>
 public interface IClimbingStairs
 {
+    /// <summary>
+    ///     Counts the distinct ways to climb a staircase of <paramref name="n" /> steps, taking either 1 or 2 steps at a
+    ///     time.
+    /// </summary>
+    /// <param name="n">The total number of steps in the staircase.</param>
+    /// <returns>The number of distinct ways to reach the top.</returns>
     int ClimbStairs(int n);
 }

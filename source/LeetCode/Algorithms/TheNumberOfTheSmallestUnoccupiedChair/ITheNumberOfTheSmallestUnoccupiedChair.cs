@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.TheNumberOfTheSmallestUnoccupiedChair;
 /// </summary>
 public interface ITheNumberOfTheSmallestUnoccupiedChair
 {
+    /// <summary>
+    ///     Simulates friends arriving and leaving according to the arrival and departure times in
+    ///     <paramref name="times" />, each taking the smallest-numbered unoccupied chair, and returns the chair
+    ///     number occupied by the friend at index <paramref name="targetFriend" />.
+    /// </summary>
+    /// <param name="times">The array of pairs of arrival and departure times for each friend.</param>
+    /// <param name="targetFriend">The index of the friend whose chair number should be returned.</param>
+    /// <returns>The chair number occupied by the friend at index <paramref name="targetFriend" />.</returns>
     int SmallestChair(int[][] times, int targetFriend);
 }

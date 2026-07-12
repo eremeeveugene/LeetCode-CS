@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.SumOfUniqueElements;
 /// </summary>
 public interface ISumOfUniqueElements
 {
+    /// <summary>
+    ///     Sums every element of <paramref name="nums" /> that occurs exactly once in the array.
+    /// </summary>
+    /// <param name="nums">The array of integers to inspect.</param>
+    /// <returns>The sum of all unique elements in <paramref name="nums" />.</returns>
     int SumOfUnique(int[] nums);
 }

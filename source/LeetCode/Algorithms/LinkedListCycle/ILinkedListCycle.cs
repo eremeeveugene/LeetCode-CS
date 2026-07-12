@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.LinkedListCycle;
 /// </summary>
 public interface ILinkedListCycle
 {
+    /// <summary>
+    ///     Determines whether the linked list starting at <paramref name="head" /> contains a cycle.
+    /// </summary>
+    /// <param name="head">The head node of the linked list to examine.</param>
+    /// <returns><see langword="true" /> if the linked list contains a cycle; otherwise, <see langword="false" />.</returns>
     bool HasCycle(ListNode? head);
 }

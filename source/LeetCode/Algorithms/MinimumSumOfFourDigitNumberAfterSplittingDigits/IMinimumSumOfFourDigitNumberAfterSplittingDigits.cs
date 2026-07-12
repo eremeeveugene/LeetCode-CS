@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits;
 /// </summary>
 public interface IMinimumSumOfFourDigitNumberAfterSplittingDigits
 {
+    /// <summary>
+    ///     Splits the four digits of <paramref name="num" /> into two new two-digit numbers so that their sum is as
+    ///     small as possible.
+    /// </summary>
+    /// <param name="num">The four-digit number whose digits should be split into two new numbers.</param>
+    /// <returns>The minimum possible sum of the two new numbers formed from the digits of <paramref name="num" />.</returns>
     int MinimumSum(int num);
 }

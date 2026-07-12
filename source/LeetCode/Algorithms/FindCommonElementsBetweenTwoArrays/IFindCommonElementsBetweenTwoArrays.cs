@@ -16,5 +16,15 @@ namespace LeetCode.Algorithms.FindCommonElementsBetweenTwoArrays;
 /// </summary>
 public interface IFindCommonElementsBetweenTwoArrays
 {
+    /// <summary>
+    ///     Counts, for each array, how many of its elements also appear in the other array.
+    /// </summary>
+    /// <param name="nums1">The first array of integers.</param>
+    /// <param name="nums2">The second array of integers.</param>
+    /// <returns>
+    ///     A two-element array where the first value is the count of elements of <paramref name="nums1" /> that also
+    ///     appear in <paramref name="nums2" />, and the second value is the count of elements of <paramref name="nums2" />
+    ///     that also appear in <paramref name="nums1" />.
+    /// </returns>
     int[] FindIntersectionValues(int[] nums1, int[] nums2);
 }

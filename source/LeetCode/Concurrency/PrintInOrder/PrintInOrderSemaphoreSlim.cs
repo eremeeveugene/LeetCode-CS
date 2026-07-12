@@ -17,6 +17,11 @@ public sealed class PrintInOrderSemaphoreSlim : IPrintInOrder
     private readonly SemaphoreSlim _firstPrint = new(0, 1);
     private readonly SemaphoreSlim _secondPrint = new(0, 1);
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void First(Action printFirst)
     {
         printFirst.Invoke();
@@ -24,6 +29,11 @@ public sealed class PrintInOrderSemaphoreSlim : IPrintInOrder
         _firstPrint.Release();
     }
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void Second(Action printSecond)
     {
         _firstPrint.Wait();
@@ -33,6 +43,11 @@ public sealed class PrintInOrderSemaphoreSlim : IPrintInOrder
         _secondPrint.Release();
     }
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void Third(Action printThird)
     {
         _secondPrint.Wait();

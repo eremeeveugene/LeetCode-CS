@@ -16,6 +16,11 @@ public sealed class CountVowelStringsInRangesPrefixSum : ICountVowelStringsInRan
 {
     private readonly HashSet<char> _vowelsHashSet = ['a', 'e', 'i', 'o', 'u'];
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(n + q), where n is the length of the words array and q is the number of queries
+    ///     Space complexity - O(n), where n is the length of the words array, not counting the output array
+    /// </remarks>
     public int[] VowelStrings(string[] words, int[][] queries)
     {
         var prefixSum = new int[words.Length + 1];

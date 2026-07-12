@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.InsertInterval;
 /// <inheritdoc />
 public sealed class InsertIntervalIterative : IInsertInterval
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="intervals"></param>
-    /// <param name="newInterval"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] Insert(int[][] intervals, int[] newInterval)
     {
         var result = new List<int[]>();

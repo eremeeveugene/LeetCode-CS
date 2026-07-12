@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.LowestCommonAncestorOfDeepestLeaves;
 /// </summary>
 public interface ILowestCommonAncestorOfDeepestLeaves
 {
+    /// <summary>
+    ///     Finds the lowest common ancestor of the deepest leaves of the binary tree rooted at <paramref name="root" />.
+    /// </summary>
+    /// <param name="root">The root node of the binary tree.</param>
+    /// <returns>The node that is the lowest common ancestor of all the deepest leaves of the tree.</returns>
     TreeNode LcaDeepestLeaves(TreeNode root);
 }

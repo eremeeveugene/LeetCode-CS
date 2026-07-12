@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.PlusOne;
 /// </summary>
 public interface IPlusOne
 {
+    /// <summary>
+    ///     Increments by one the large integer represented as the ordered array of digits <paramref name="digits" />.
+    /// </summary>
+    /// <param name="digits">The array of digits representing the integer, most significant digit first.</param>
+    /// <returns>The array of digits representing the incremented integer.</returns>
     int[] PlusOne(int[] digits);
 }

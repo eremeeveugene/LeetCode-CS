@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.DivideArrayIntoEqualPairs;
 /// </summary>
 public interface IDivideArrayIntoEqualPairs
 {
+    /// <summary>
+    ///     Determines whether <paramref name="nums" /> can be divided into pairs such that both elements of each pair
+    ///     are equal.
+    /// </summary>
+    /// <param name="nums">The array of integers to divide into pairs.</param>
+    /// <returns><see langword="true" /> if such a division exists; otherwise, <see langword="false" />.</returns>
     bool DivideArray(int[] nums);
 }

@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.SortColors;
 /// </summary>
 public interface ISortColors
 {
+    /// <summary>
+    ///     Sorts <paramref name="nums" />, which contains only the values 0, 1, and 2 representing red, white,
+    ///     and blue, in place so that objects of the same color are adjacent and in the order red, white, blue.
+    /// </summary>
+    /// <param name="nums">The array of colors, represented as 0, 1, or 2, to sort in place.</param>
     void SortColors(int[] nums);
 }

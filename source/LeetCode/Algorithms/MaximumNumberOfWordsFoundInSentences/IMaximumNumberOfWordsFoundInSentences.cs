@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences;
 /// </summary>
 public interface IMaximumNumberOfWordsFoundInSentences
 {
+    /// <summary>
+    ///     Finds the maximum number of words contained in any single sentence within <paramref name="sentences" />.
+    /// </summary>
+    /// <param name="sentences">The array of sentences, each a string of space-separated words.</param>
+    /// <returns>The maximum word count found in any sentence of <paramref name="sentences" />.</returns>
     int MostWordsFound(string[] sentences);
 }

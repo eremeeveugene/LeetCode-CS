@@ -14,13 +14,12 @@ namespace LeetCode.Algorithms.HeightChecker;
 /// <inheritdoc />
 public sealed class HeightCheckerCountingSort : IHeightChecker
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + k), where n is the number of elements in the input array and k is the range of the input
     ///     values
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="heights"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int HeightChecker(int[] heights)
     {
         var maxHeight = heights.Max();

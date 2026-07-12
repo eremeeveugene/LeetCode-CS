@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumMovesToEqualArrayElements3;
 /// </summary>
 public interface IMinimumMovesToEqualArrayElements3
 {
+    /// <summary>
+    ///     Finds the minimum number of moves, each incrementing or decrementing a single element of
+    ///     <paramref name="nums" /> by 1, required to make all elements equal.
+    /// </summary>
+    /// <param name="nums">The array of integers to equalize.</param>
+    /// <returns>The minimum number of moves required.</returns>
     int MinMoves(int[] nums);
 }

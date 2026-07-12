@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MatrixSimilarityAfterCyclicShifts;
 /// </summary>
 public interface IMatrixSimilarityAfterCyclicShifts
 {
+    /// <summary>
+    ///     Determines whether <paramref name="mat" /> looks the same after cyclically shifting each row right by
+    ///     <paramref name="k" /> positions (odd rows) or left by <paramref name="k" /> positions (even rows).
+    /// </summary>
+    /// <param name="mat">The matrix whose rows are cyclically shifted.</param>
+    /// <param name="k">The number of positions each row is cyclically shifted.</param>
+    /// <returns><see langword="true" /> if <paramref name="mat" /> is unchanged after the shifts; otherwise, <see langword="false" />.</returns>
     bool AreSimilar(int[][] mat, int k);
 }

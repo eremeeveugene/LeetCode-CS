@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SpecialPositionsInBinaryMatrix;
 /// </summary>
 public interface ISpecialPositionsInBinaryMatrix
 {
+    /// <summary>
+    ///     Counts the special positions in <paramref name="mat" />, where a position (i, j) is special if
+    ///     mat[i][j] == 1 and every other element in row i and column j is 0.
+    /// </summary>
+    /// <param name="mat">The binary matrix to search.</param>
+    /// <returns>The number of special positions in <paramref name="mat" />.</returns>
     int NumSpecial(int[][] mat);
 }

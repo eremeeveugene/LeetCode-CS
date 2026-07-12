@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.PowerOfTwo;
 /// </summary>
 public interface IPowerOfTwo
 {
+    /// <summary>
+    ///     Determines whether <paramref name="n" /> is a power of two.
+    /// </summary>
+    /// <param name="n">The integer to evaluate.</param>
+    /// <returns><see langword="true" /> if <paramref name="n" /> is a power of two; otherwise, <see langword="false" />.</returns>
     bool IsPowerOfTwo(int n);
 }

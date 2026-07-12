@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.CousinsInBinaryTree2;
 /// </summary>
 public interface ICousinsInBinaryTree2
 {
+    /// <summary>
+    ///     Replaces the value of every node in the binary tree rooted at <paramref name="root" /> with the sum of the
+    ///     values of its cousins (nodes at the same depth excluding itself and its siblings).
+    /// </summary>
+    /// <param name="root">The root node of the binary tree to transform.</param>
+    /// <returns>The root node of the tree after all values have been replaced.</returns>
     TreeNode ReplaceValueInTree(TreeNode root);
 }

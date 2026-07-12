@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.ReverseBits;
 /// </summary>
 public interface IReverseBits
 {
+    /// <summary>
+    ///     Reverses the bits of the 32-bit integer <paramref name="n" />.
+    /// </summary>
+    /// <param name="n">The 32-bit integer whose bits are reversed.</param>
+    /// <returns>The integer obtained by reversing the bits of <paramref name="n" />.</returns>
     int ReverseBits(int n);
 }

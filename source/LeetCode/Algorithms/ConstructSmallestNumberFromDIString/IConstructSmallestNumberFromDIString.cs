@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ConstructSmallestNumberFromDIString;
 /// </summary>
 public interface IConstructSmallestNumberFromDIString
 {
+    /// <summary>
+    ///     Constructs the lexicographically smallest permutation of digits 1-9 (no repeats) that satisfies the
+    ///     increasing/decreasing constraints encoded in <paramref name="pattern" />.
+    /// </summary>
+    /// <param name="pattern">The string of 'I' and 'D' characters describing the increase/decrease pattern.</param>
+    /// <returns>The smallest numeric string that satisfies <paramref name="pattern" />.</returns>
     string SmallestNumber(string pattern);
 }

@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FindTheOriginalTypedString1;
 /// </summary>
 public interface IFindTheOriginalTypedString1
 {
+    /// <summary>
+    ///     Counts the number of possible original strings that could have produced <paramref name="word" />, given that some characters may have been typed with a long press causing consecutive duplicate characters.
+    /// </summary>
+    /// <param name="word">The final typed string to analyze.</param>
+    /// <returns>The number of possible original strings.</returns>
     int PossibleStringCount(string word);
 }

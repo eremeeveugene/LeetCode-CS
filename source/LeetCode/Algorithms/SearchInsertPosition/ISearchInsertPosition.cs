@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.SearchInsertPosition;
 /// </summary>
 public interface ISearchInsertPosition
 {
+    /// <summary>
+    ///     Finds the index of <paramref name="target" /> in the sorted array <paramref name="nums" />, or the
+    ///     index where it would be inserted to keep the array sorted.
+    /// </summary>
+    /// <param name="nums">The sorted array of distinct integers.</param>
+    /// <param name="target">The value to search for or insert.</param>
+    /// <returns>The index of <paramref name="target" /> in <paramref name="nums" />, or its insertion index.</returns>
     int SearchInsert(int[] nums, int target);
 }

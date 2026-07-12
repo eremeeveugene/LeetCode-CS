@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.DivideIntervalsIntoMinimumNumberOfGroups;
 /// </summary>
 public interface IDivideIntervalsIntoMinimumNumberOfGroups
 {
+    /// <summary>
+    ///     Computes the minimum number of groups needed to divide <paramref name="intervals" /> such that no two
+    ///     intervals in the same group overlap.
+    /// </summary>
+    /// <param name="intervals">The array of [start, end] inclusive intervals to divide into groups.</param>
+    /// <returns>The minimum number of groups required.</returns>
     int MinGroups(int[][] intervals);
 }

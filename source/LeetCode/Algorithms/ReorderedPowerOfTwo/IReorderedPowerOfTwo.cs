@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ReorderedPowerOfTwo;
 /// </summary>
 public interface IReorderedPowerOfTwo
 {
+    /// <summary>
+    ///     Determines whether the digits of <paramref name="n" /> can be rearranged, without leading zeros, to form a
+    ///     power of two.
+    /// </summary>
+    /// <param name="n">The positive integer whose digits are considered.</param>
+    /// <returns><see langword="true" /> if some rearrangement of the digits of <paramref name="n" /> is a power of two; otherwise, <see langword="false" />.</returns>
     bool ReorderedPowerOf2(int n);
 }

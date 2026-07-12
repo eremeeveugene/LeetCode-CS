@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.TupleWithSameProduct;
 /// </summary>
 public interface ITupleWithSameProduct
 {
+    /// <summary>
+    ///     Counts the number of ordered tuples <c>(a, b, c, d)</c> of distinct elements from
+    ///     <paramref name="nums" /> such that <c>a * b == c * d</c>.
+    /// </summary>
+    /// <param name="nums">The array of distinct positive integers to search for equal-product tuples in.</param>
+    /// <returns>The number of valid tuples <c>(a, b, c, d)</c>.</returns>
     int TupleSameProduct(int[] nums);
 }

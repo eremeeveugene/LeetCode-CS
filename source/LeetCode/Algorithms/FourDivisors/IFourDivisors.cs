@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FourDivisors;
 /// </summary>
 public interface IFourDivisors
 {
+    /// <summary>
+    ///     Computes the sum, over all elements of <paramref name="nums" /> that have exactly four divisors, of the sum of those divisors.
+    /// </summary>
+    /// <param name="nums">The array of integers to examine.</param>
+    /// <returns>The total sum of divisors for elements with exactly four divisors.</returns>
     int SumFourDivisors(int[] nums);
 }

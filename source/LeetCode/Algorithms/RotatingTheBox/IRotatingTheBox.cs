@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.RotatingTheBox;
 /// </summary>
 public interface IRotatingTheBox
 {
+    /// <summary>
+    ///     Rotates <paramref name="box" /> 90 degrees clockwise after letting gravity settle the stones ('#')
+    ///     so that they fall to the lowest available position within each row, blocked by obstacles ('*').
+    /// </summary>
+    /// <param name="box">The grid representing the box, where '#' is a stone, '*' is an obstacle, and '.' is empty.</param>
+    /// <returns>The grid after gravity is applied and the box is rotated 90 degrees clockwise.</returns>
     char[][] RotateTheBox(char[][] box);
 }

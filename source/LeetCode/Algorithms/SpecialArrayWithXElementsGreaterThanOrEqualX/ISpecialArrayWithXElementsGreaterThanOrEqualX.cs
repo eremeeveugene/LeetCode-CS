@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX;
 /// </summary>
 public interface ISpecialArrayWithXElementsGreaterThanOrEqualX
 {
+    /// <summary>
+    ///     Finds a unique value x such that exactly x elements of <paramref name="nums" /> are greater than or
+    ///     equal to x.
+    /// </summary>
+    /// <param name="nums">The array of non-negative integers to check.</param>
+    /// <returns>The unique value x satisfying the special array condition, or -1 if no such value exists.</returns>
     int SpecialArray(int[] nums);
 }

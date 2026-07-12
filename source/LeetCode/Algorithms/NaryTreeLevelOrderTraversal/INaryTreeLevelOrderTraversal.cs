@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.NaryTreeLevelOrderTraversal;
 /// </summary>
 public interface INaryTreeLevelOrderTraversal
 {
+    /// <summary>
+    ///     Traverses the N-ary tree rooted at <paramref name="root" /> level by level and returns the node values
+    ///     grouped by level.
+    /// </summary>
+    /// <param name="root">The root node of the N-ary tree, or <see langword="null" /> for an empty tree.</param>
+    /// <returns>A list of levels, each containing the values of the nodes at that level, from top to bottom.</returns>
     IList<IList<int>> LevelOrder(Node? root);
 }

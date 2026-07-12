@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumValueOfAnOrderedTriplet2;
 /// </summary>
 public interface IMaximumValueOfAnOrderedTriplet2
 {
+    /// <summary>
+    ///     Finds indices <c>i &lt; j &lt; k</c> in <paramref name="nums" /> that maximize the value
+    ///     <c>(nums[i] - nums[j]) * nums[k]</c>, using an approach that scales to larger input sizes.
+    /// </summary>
+    /// <param name="nums">The array of integers to search.</param>
+    /// <returns>The maximum triplet value, or 0 if every valid triplet yields a non-positive value.</returns>
     long MaximumTripletValue(int[] nums);
 }

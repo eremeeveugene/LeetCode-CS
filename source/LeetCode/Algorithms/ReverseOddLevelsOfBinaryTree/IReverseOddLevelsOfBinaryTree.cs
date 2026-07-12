@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.ReverseOddLevelsOfBinaryTree;
 /// </summary>
 public interface IReverseOddLevelsOfBinaryTree
 {
+    /// <summary>
+    ///     Reverses the node values at every odd depth level of the perfect binary tree rooted at
+    ///     <paramref name="root" />.
+    /// </summary>
+    /// <param name="root">The root of the perfect binary tree.</param>
+    /// <returns>The root of the binary tree after the odd-level node values have been reversed.</returns>
     TreeNode? ReverseOddLevels(TreeNode? root);
 }

@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.RemoveSubFoldersFromTheFilesystem;
 /// </summary>
 public interface IRemoveSubFoldersFromTheFilesystem
 {
+    /// <summary>
+    ///     Removes every folder in <paramref name="folders" /> that is a sub-folder of another folder in the list.
+    /// </summary>
+    /// <param name="folders">The array of absolute folder paths.</param>
+    /// <returns>The list of folders remaining after all sub-folders have been removed.</returns>
     IList<string> RemoveSubfolders(string[] folders);
 }

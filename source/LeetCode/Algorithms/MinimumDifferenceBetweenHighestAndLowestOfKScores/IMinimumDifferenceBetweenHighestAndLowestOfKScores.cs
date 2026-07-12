@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimumDifferenceBetweenHighestAndLowestOfKScores;
 /// </summary>
 public interface IMinimumDifferenceBetweenHighestAndLowestOfKScores
 {
+    /// <summary>
+    ///     Selects exactly <paramref name="k" /> scores from <paramref name="nums" /> to minimize the difference
+    ///     between the highest and lowest selected score.
+    /// </summary>
+    /// <param name="nums">The array of student scores.</param>
+    /// <param name="k">The number of scores that must be selected.</param>
+    /// <returns>The minimum possible difference between the highest and lowest of the selected scores.</returns>
     int MinimumDifference(int[] nums, int k);
 }

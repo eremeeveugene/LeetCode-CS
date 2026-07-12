@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FractionAdditionAndSubtraction;
 /// </summary>
 public interface IFractionAdditionAndSubtraction
 {
+    /// <summary>
+    ///     Evaluates the mixed addition and subtraction <paramref name="expression" /> of fractions and returns the result as an irreducible fraction.
+    /// </summary>
+    /// <param name="expression">The expression containing fractions separated by '+' or '-' signs.</param>
+    /// <returns>The resulting fraction in irreducible form, expressed as a string.</returns>
     string FractionAddition(string expression);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindEventualSafeStates;
 /// </summary>
 public interface IFindEventualSafeStates
 {
+    /// <summary>
+    ///     Finds all safe nodes of the directed graph <paramref name="graph" />, meaning nodes from which every possible
+    ///     path eventually leads to a terminal node.
+    /// </summary>
+    /// <param name="graph">The adjacency list representation of the directed graph.</param>
+    /// <returns>A sorted list of all safe node identifiers.</returns>
     IList<int> EventualSafeNodes(int[][] graph);
 }

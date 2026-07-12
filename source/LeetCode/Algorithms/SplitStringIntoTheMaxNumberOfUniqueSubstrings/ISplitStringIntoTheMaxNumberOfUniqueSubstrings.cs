@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SplitStringIntoTheMaxNumberOfUniqueSubstrings;
 /// </summary>
 public interface ISplitStringIntoTheMaxNumberOfUniqueSubstrings
 {
+    /// <summary>
+    ///     Splits <paramref name="s" /> into the maximum possible number of non-empty substrings such that all
+    ///     of the substrings are unique.
+    /// </summary>
+    /// <param name="s">The string to split.</param>
+    /// <returns>The maximum number of unique substrings <paramref name="s" /> can be split into.</returns>
     int MaxUniqueSplit(string s);
 }

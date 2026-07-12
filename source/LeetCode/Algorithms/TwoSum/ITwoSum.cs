@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.TwoSum;
 /// </summary>
 public interface ITwoSum
 {
+    /// <summary>
+    ///     Finds the indices of the two elements in <paramref name="nums" /> that add up to
+    ///     <paramref name="target" />.
+    /// </summary>
+    /// <param name="nums">The array of integers to search.</param>
+    /// <param name="target">The target sum to find among two elements.</param>
+    /// <returns>An array containing the indices of the two numbers that add up to <paramref name="target" />.</returns>
     int[] TwoSum(int[] nums, int target);
 }

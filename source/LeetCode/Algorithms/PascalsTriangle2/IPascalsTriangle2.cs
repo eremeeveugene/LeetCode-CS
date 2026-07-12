@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.PascalsTriangle2;
 /// </summary>
 public interface IPascalsTriangle2
 {
+    /// <summary>
+    ///     Returns the <paramref name="rowIndex" />-th row (0-indexed) of Pascal's triangle.
+    /// </summary>
+    /// <param name="rowIndex">The zero-based index of the row to return.</param>
+    /// <returns>The requested row of Pascal's triangle.</returns>
     IList<int> GetRow(int rowIndex);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.LongestSubarrayWithMaximumBitwiseAND;
 /// </summary>
 public interface ILongestSubarrayWithMaximumBitwiseAND
 {
+    /// <summary>
+    ///     Finds the length of the longest subarray of <paramref name="nums" /> whose bitwise AND equals the maximum
+    ///     possible bitwise AND of any subarray (which is the maximum element of <paramref name="nums" />).
+    /// </summary>
+    /// <param name="nums">The array of integers to search.</param>
+    /// <returns>The length of the longest subarray achieving the maximum bitwise AND.</returns>
     int LongestSubarray(int[] nums);
 }

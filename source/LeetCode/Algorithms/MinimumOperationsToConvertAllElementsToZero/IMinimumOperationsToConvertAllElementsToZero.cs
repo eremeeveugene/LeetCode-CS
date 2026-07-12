@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimumOperationsToConvertAllElementsToZero;
 /// </summary>
 public interface IMinimumOperationsToConvertAllElementsToZero
 {
+    /// <summary>
+    ///     Finds the minimum number of operations needed to convert all elements of <paramref name="nums" /> to zero,
+    ///     where each operation selects a subarray and replaces every element in it with the minimum value in that
+    ///     subarray.
+    /// </summary>
+    /// <param name="nums">The array of integers to convert to all zeros.</param>
+    /// <returns>The minimum number of operations required.</returns>
     int MinOperations(int[] nums);
 }

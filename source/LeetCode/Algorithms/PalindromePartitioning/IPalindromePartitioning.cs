@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.PalindromePartitioning;
 /// </summary>
 public interface IPalindromePartitioning
 {
+    /// <summary>
+    ///     Finds every way to partition <paramref name="s" /> into substrings such that each substring is a
+    ///     palindrome.
+    /// </summary>
+    /// <param name="s">The string to partition into palindromic substrings.</param>
+    /// <returns>A list of all possible palindrome partitions of <paramref name="s" />, each represented as a list of substrings.</returns>
     IList<IList<string>> Partition(string s);
 }

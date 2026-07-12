@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.OpenTheLock;
 /// </summary>
 public interface IOpenTheLock
 {
+    /// <summary>
+    ///     Finds the minimum number of single-wheel turns needed to change a 4-wheel combination lock from "0000" to
+    ///     <paramref name="target" />, without ever passing through any of the combinations in
+    ///     <paramref name="deadends" />.
+    /// </summary>
+    /// <param name="deadends">The list of combinations that, if reached, lock the wheels and prevent further turns.</param>
+    /// <param name="target">The combination the lock should reach.</param>
+    /// <returns>The minimum number of turns required to reach <paramref name="target" />, or -1 if it is impossible.</returns>
     int OpenLock(string[] deadends, string target);
 }

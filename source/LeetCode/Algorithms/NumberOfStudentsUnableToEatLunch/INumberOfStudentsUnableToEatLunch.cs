@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch;
 /// </summary>
 public interface INumberOfStudentsUnableToEatLunch
 {
+    /// <summary>
+    ///     Simulates students in a queue repeatedly taking the sandwich at the top of the stack if it matches their
+    ///     preference, and returns the number of students left unable to eat once no more students can take a
+    ///     sandwich.
+    /// </summary>
+    /// <param name="students">The queue of students, each represented by their preferred sandwich type (0 or 1).</param>
+    /// <param name="sandwiches">The stack of available sandwiches, each represented by its type (0 or 1).</param>
+    /// <returns>The number of students who are unable to eat.</returns>
     int CountStudents(int[] students, int[] sandwiches);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountOfMatchesInTournament;
 /// </summary>
 public interface ICountOfMatchesInTournament
 {
+    /// <summary>
+    ///     Computes the total number of matches played in a single-elimination tournament starting with
+    ///     <paramref name="n" /> teams.
+    /// </summary>
+    /// <param name="n">The number of teams entering the tournament.</param>
+    /// <returns>The total number of matches played until a winner is determined.</returns>
     int NumberOfMatches(int n);
 }

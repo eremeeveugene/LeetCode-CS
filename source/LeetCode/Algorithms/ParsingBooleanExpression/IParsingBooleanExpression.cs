@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ParsingBooleanExpression;
 /// </summary>
 public interface IParsingBooleanExpression
 {
+    /// <summary>
+    ///     Evaluates <paramref name="expression" />, a boolean expression composed of the literals 't' and 'f' and
+    ///     the operators <c>!</c> (not), <c>&amp;</c> (and), and <c>|</c> (or).
+    /// </summary>
+    /// <param name="expression">The boolean expression string to parse and evaluate.</param>
+    /// <returns><see langword="true" /> if <paramref name="expression" /> evaluates to true; otherwise, <see langword="false" />.</returns>
     bool ParseBoolExpr(string expression);
 }

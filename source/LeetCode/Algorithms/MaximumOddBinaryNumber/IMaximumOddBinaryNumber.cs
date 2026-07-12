@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumOddBinaryNumber;
 /// </summary>
 public interface IMaximumOddBinaryNumber
 {
+    /// <summary>
+    ///     Rearranges the bits of the binary string <paramref name="s" /> to form the maximum possible odd binary
+    ///     number.
+    /// </summary>
+    /// <param name="s">The binary string, containing at least one '1', to rearrange.</param>
+    /// <returns>The maximum odd binary number obtainable by rearranging the bits of <paramref name="s" />.</returns>
     string MaximumOddBinaryNumber(string s);
 }

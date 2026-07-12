@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.PascalsTriangle;
 /// </summary>
 public interface IPascalsTriangle
 {
+    /// <summary>
+    ///     Generates the first <paramref name="numRows" /> rows of Pascal's triangle.
+    /// </summary>
+    /// <param name="numRows">The number of rows to generate.</param>
+    /// <returns>A list containing the requested rows of Pascal's triangle.</returns>
     IList<IList<int>> Generate(int numRows);
 }

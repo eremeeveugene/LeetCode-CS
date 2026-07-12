@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.RecoverTreeFromPreorderTraversal;
 /// </summary>
 public interface IRecoverTreeFromPreorderTraversal
 {
+    /// <summary>
+    ///     Reconstructs the binary tree encoded by the depth-dash preorder <paramref name="traversal" /> string.
+    /// </summary>
+    /// <param name="traversal">The preorder traversal string, where each node's depth is denoted by leading dashes.</param>
+    /// <returns>The root of the reconstructed binary tree.</returns>
     TreeNode? RecoverFromPreorder(string traversal);
 }
