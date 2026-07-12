@@ -248,6 +248,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [622. Design Circular Queue](https://leetcode.com/problems/design-circular-queue/description/)
 - [623. Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree/description/)
 - [624. Maximum Distance in Arrays](https://leetcode.com/problems/maximum-distance-in-arrays/description/)
+- [628. Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/description/)
 - [632. Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/)
 - [633. Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/)
 - [641. Design Circular Deque](https://leetcode.com/problems/design-circular-deque/description/)
