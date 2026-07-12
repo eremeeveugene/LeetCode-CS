@@ -21,7 +21,7 @@ public sealed class DeleteNodesAndReturnForestBreadthFirstSearch : IDeleteNodesA
     ///     Time complexity - O(n + d)
     ///     Space complexity - O(n + d)
     /// </remarks>
-    public IList<TreeNode> DelNodes(TreeNode? root, int[] to_delete)
+    public IList<TreeNode> DelNodes(TreeNode? root, int[] toDelete)
     {
         if (root == null)
         {
@@ -30,7 +30,7 @@ public sealed class DeleteNodesAndReturnForestBreadthFirstSearch : IDeleteNodesA
 
         var result = new List<TreeNode>();
 
-        var toDeleteHashSet = new HashSet<int>(to_delete);
+        var toDeleteHashSet = new HashSet<int>(toDelete);
         var queue = new Queue<TreeNode>();
 
         var dummyNode = new TreeNode { left = root };
@@ -41,45 +41,8 @@ public sealed class DeleteNodesAndReturnForestBreadthFirstSearch : IDeleteNodesA
         {
             var node = queue.Dequeue();
 
-            if (node.left != null)
-            {
-                queue.Enqueue(node.left);
-
-                if (toDeleteHashSet.Contains(node.left.val))
-                {
-                    if (node.left.left != null && !toDeleteHashSet.Contains(node.left.left.val))
-                    {
-                        result.Add(node.left.left);
-                    }
-
-                    if (node.left.right != null && !toDeleteHashSet.Contains(node.left.right.val))
-                    {
-                        result.Add(node.left.right);
-                    }
-
-                    node.left = null;
-                }
-            }
-
-            if (node.right != null)
-            {
-                queue.Enqueue(node.right);
-
-                if (toDeleteHashSet.Contains(node.right.val))
-                {
-                    if (node.right.left != null && !toDeleteHashSet.Contains(node.right.left.val))
-                    {
-                        result.Add(node.right.left);
-                    }
-
-                    if (node.right.right != null && !toDeleteHashSet.Contains(node.right.right.val))
-                    {
-                        result.Add(node.right.right);
-                    }
-
-                    node.right = null;
-                }
-            }
+            node.left = ProcessChild(node.left, toDeleteHashSet, queue, result);
+            node.right = ProcessChild(node.right, toDeleteHashSet, queue, result);
         }
 
         if (dummyNode.left != null)
@@ -88,5 +51,33 @@ public sealed class DeleteNodesAndReturnForestBreadthFirstSearch : IDeleteNodesA
         }
 
         return result;
+    }
+
+    private static TreeNode? ProcessChild(TreeNode? child, HashSet<int> toDeleteHashSet, Queue<TreeNode> queue, List<TreeNode> result)
+    {
+        if (child == null)
+        {
+            return null;
+        }
+
+        queue.Enqueue(child);
+
+        if (!toDeleteHashSet.Contains(child.val))
+        {
+            return child;
+        }
+
+        AddIfKept(child.left, toDeleteHashSet, result);
+        AddIfKept(child.right, toDeleteHashSet, result);
+
+        return null;
+    }
+
+    private static void AddIfKept(TreeNode? node, HashSet<int> toDeleteHashSet, List<TreeNode> result)
+    {
+        if (node != null && !toDeleteHashSet.Contains(node.val))
+        {
+            result.Add(node);
+        }
     }
 }

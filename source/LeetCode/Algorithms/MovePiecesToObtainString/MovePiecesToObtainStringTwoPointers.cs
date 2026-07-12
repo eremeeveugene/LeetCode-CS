@@ -24,39 +24,17 @@ public sealed class MovePiecesToObtainStringTwoPointers : IMovePiecesToObtainStr
         var startIndex = 0;
         var targetIndex = 0;
 
-        while (startIndex < start.Length && targetIndex < target.Length)
+        while (true)
         {
-            while (startIndex < start.Length && start[startIndex] == '_')
-            {
-                startIndex++;
-            }
-
-            while (targetIndex < target.Length && target[targetIndex] == '_')
-            {
-                targetIndex++;
-            }
-
-            if (startIndex == start.Length && targetIndex == target.Length)
-            {
-                return true;
-            }
+            startIndex = SkipBlanks(start, startIndex);
+            targetIndex = SkipBlanks(target, targetIndex);
 
             if (startIndex == start.Length || targetIndex == target.Length)
             {
-                return false;
+                return startIndex == start.Length && targetIndex == target.Length;
             }
 
-            if (start[startIndex] != target[targetIndex])
-            {
-                return false;
-            }
-
-            if (start[startIndex] == 'L' && targetIndex > startIndex)
-            {
-                return false;
-            }
-
-            if (start[startIndex] == 'R' && targetIndex < startIndex)
+            if (!IsMatchingPiece(start[startIndex], target[targetIndex], startIndex, targetIndex))
             {
                 return false;
             }
@@ -64,17 +42,30 @@ public sealed class MovePiecesToObtainStringTwoPointers : IMovePiecesToObtainStr
             startIndex++;
             targetIndex++;
         }
+    }
 
-        while (startIndex < start.Length && start[startIndex] == '_')
+    private static int SkipBlanks(string value, int index)
+    {
+        while (index < value.Length && value[index] == '_')
         {
-            startIndex++;
+            index++;
         }
 
-        while (targetIndex < target.Length && target[targetIndex] == '_')
+        return index;
+    }
+
+    private static bool IsMatchingPiece(char startPiece, char targetPiece, int startIndex, int targetIndex)
+    {
+        if (startPiece != targetPiece)
         {
-            targetIndex++;
+            return false;
         }
 
-        return startIndex == start.Length && targetIndex == target.Length;
+        if (startPiece == 'L' && targetIndex > startIndex)
+        {
+            return false;
+        }
+
+        return startPiece != 'R' || targetIndex >= startIndex;
     }
 }

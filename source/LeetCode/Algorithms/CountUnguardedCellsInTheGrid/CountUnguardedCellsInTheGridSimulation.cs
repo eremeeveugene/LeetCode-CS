@@ -61,72 +61,29 @@ public sealed class CountUnguardedCellsInTheGridSimulation : ICountUnguardedCell
 
     private static int Mark(int[,] cells, int m, int n, int x, int y)
     {
+        return MarkDirection(cells, m, n, x, y, 1, 0) +
+               MarkDirection(cells, m, n, x, y, -1, 0) +
+               MarkDirection(cells, m, n, x, y, 0, 1) +
+               MarkDirection(cells, m, n, x, y, 0, -1);
+    }
+
+    private static int MarkDirection(int[,] cells, int m, int n, int x, int y, int dx, int dy)
+    {
         var result = 0;
 
-        for (var i = x + 1; i < m; i++)
+        for (int i = x + dx, j = y + dy; i >= 0 && i < m && j >= 0 && j < n; i += dx, j += dy)
         {
-            if (cells[i, y] == 2 || cells[i, y] == 1)
+            if (cells[i, j] == 2 || cells[i, j] == 1)
             {
                 break;
             }
 
-            if (cells[i, y] != 0)
+            if (cells[i, j] != 0)
             {
                 continue;
             }
 
-            cells[i, y] = -1;
-
-            result++;
-        }
-
-        for (var i = x - 1; i >= 0; i--)
-        {
-            if (cells[i, y] == 2 || cells[i, y] == 1)
-            {
-                break;
-            }
-
-            if (cells[i, y] != 0)
-            {
-                continue;
-            }
-
-            cells[i, y] = -1;
-
-            result++;
-        }
-
-        for (var j = y + 1; j < n; j++)
-        {
-            if (cells[x, j] == 2 || cells[x, j] == 1)
-            {
-                break;
-            }
-
-            if (cells[x, j] != 0)
-            {
-                continue;
-            }
-
-            cells[x, j] = -1;
-
-            result++;
-        }
-
-        for (var j = y - 1; j >= 0; j--)
-        {
-            if (cells[x, j] == 2 || cells[x, j] == 1)
-            {
-                break;
-            }
-
-            if (cells[x, j] != 0)
-            {
-                continue;
-            }
-
-            cells[x, j] = -1;
+            cells[i, j] = -1;
 
             result++;
         }
