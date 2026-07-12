@@ -36,6 +36,6 @@ public sealed class NodeTests
 
         // Assert
         Assert.AreEqual(3, result.val);
-        Assert.AreEqual(children, result.children);
+        Assert.AreSame(children, result.children);
     }
 }
