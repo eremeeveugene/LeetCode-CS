@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumDistanceInArrays;
 /// </summary>
 public interface IMaximumDistanceInArrays
 {
+    /// <summary>
+    ///     Finds the maximum absolute difference between an element from one array and an element from a different
+    ///     array within the sorted arrays in <paramref name="arrays" />.
+    /// </summary>
+    /// <param name="arrays">The list of sorted integer arrays to choose two elements from, taken from different arrays.</param>
+    /// <returns>The maximum absolute distance between elements taken from two different arrays in <paramref name="arrays" />.</returns>
     int MaxDistance(IList<IList<int>> arrays);
 }

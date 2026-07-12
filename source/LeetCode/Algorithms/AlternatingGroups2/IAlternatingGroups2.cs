@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.AlternatingGroups2;
 /// </summary>
 public interface IAlternatingGroups2
 {
+    /// <summary>
+    ///     Counts the alternating groups of <paramref name="k" /> contiguous tiles in the circular arrangement of
+    ///     <paramref name="colors" /> where the tile colors alternate.
+    /// </summary>
+    /// <param name="colors">The colors of the tiles arranged in a circle, where 0 is red and 1 is blue.</param>
+    /// <param name="k">The number of contiguous tiles in each group.</param>
+    /// <returns>The number of alternating groups of <paramref name="k" /> contiguous tiles.</returns>
     int NumberOfAlternatingGroups(int[] colors, int k);
 }

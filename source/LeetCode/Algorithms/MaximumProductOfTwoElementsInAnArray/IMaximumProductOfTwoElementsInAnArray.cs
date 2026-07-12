@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray;
 /// </summary>
 public interface IMaximumProductOfTwoElementsInAnArray
 {
+    /// <summary>
+    ///     Computes the maximum value of (nums[i] - 1) * (nums[j] - 1) for two distinct indices i and j in
+    ///     <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array of integers to choose two distinct elements from.</param>
+    /// <returns>The maximum product of (nums[i] - 1) * (nums[j] - 1) over all pairs of distinct indices.</returns>
     int MaxProduct(int[] nums);
 }

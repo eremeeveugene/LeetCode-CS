@@ -14,15 +14,11 @@ namespace LeetCode.Algorithms.SpiralMatrix3;
 /// <inheritdoc />
 public sealed class SpiralMatrix3Simulation : ISpiralMatrix3
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(rows x cols)
     ///     Space complexity - O(rows x cols)
-    /// </summary>
-    /// <param name="rows"></param>
-    /// <param name="cols"></param>
-    /// <param name="rStart"></param>
-    /// <param name="cStart"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] SpiralMatrixIII(int rows, int cols, int rStart, int cStart)
     {
         var result = new int[rows * cols][];

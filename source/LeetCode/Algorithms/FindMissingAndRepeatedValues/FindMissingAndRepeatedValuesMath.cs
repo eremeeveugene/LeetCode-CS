@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindMissingAndRepeatedValues;
 /// <inheritdoc />
 public sealed class FindMissingAndRepeatedValuesMath : IFindMissingAndRepeatedValues
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] FindMissingAndRepeatedValues(int[][] grid)
     {
         var n = grid.Length * grid.Length;

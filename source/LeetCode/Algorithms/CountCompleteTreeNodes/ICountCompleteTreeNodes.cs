@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.CountCompleteTreeNodes;
 /// </summary>
 public interface ICountCompleteTreeNodes
 {
+    /// <summary>
+    ///     Counts the number of nodes in the complete binary tree rooted at <paramref name="root" />.
+    /// </summary>
+    /// <param name="root">The root node of the complete binary tree.</param>
+    /// <returns>The total number of nodes in the tree.</returns>
     int CountNodes(TreeNode? root);
 }

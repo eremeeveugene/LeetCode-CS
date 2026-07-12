@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.UglyNumber;
 /// </summary>
 public interface IUglyNumber
 {
+    /// <summary>
+    ///     Determines whether <paramref name="n" /> is an ugly number — a positive integer whose only prime
+    ///     factors are 2, 3, and 5.
+    /// </summary>
+    /// <param name="n">The integer to check.</param>
+    /// <returns><see langword="true" /> if <paramref name="n" /> is an ugly number; otherwise, <see langword="false" />.</returns>
     bool IsUgly(int n);
 }

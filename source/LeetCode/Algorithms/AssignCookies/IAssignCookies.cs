@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.AssignCookies;
 /// </summary>
 public interface IAssignCookies
 {
+    /// <summary>
+    ///     Assigns cookies in <paramref name="s" /> to children with greed factors in <paramref name="g" />, maximizing
+    ///     the number of content children.
+    /// </summary>
+    /// <param name="g">The greed factor of each child.</param>
+    /// <param name="s">The size of each available cookie.</param>
+    /// <returns>The maximum number of children that can be made content.</returns>
     int FindContentChildren(int[] g, int[] s);
 }

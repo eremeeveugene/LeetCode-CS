@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumDifferenceBetweenEvenAndOddFrequency1;
 /// <inheritdoc />
 public sealed class MaximumDifferenceBetweenEvenAndOddFrequency1FrequencyDictionary : IMaximumDifferenceBetweenEvenAndOddFrequency1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxDifference(string s)
     {
         var frequencyDictionary = new Dictionary<int, int>();

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SummaryRanges;
 /// <inheritdoc />
 public sealed class SummaryRangesIterative : ISummaryRanges
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<string> SummaryRanges(int[] nums)
     {
         if (nums.Length == 0)

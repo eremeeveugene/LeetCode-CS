@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds;
 /// </summary>
 public interface IMinimumLengthOfStringAfterDeletingSimilarEnds
 {
+    /// <summary>
+    ///     Repeatedly removes matching non-empty prefixes and suffixes of equal characters from
+    ///     <paramref name="s" /> and finds the minimum possible length of the remaining string.
+    /// </summary>
+    /// <param name="s">The string to reduce.</param>
+    /// <returns>The minimum length of the string after all possible deletions.</returns>
     int MinimumLength(string s);
 }

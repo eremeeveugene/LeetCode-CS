@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ConcatenateNonZeroDigitsAndMultiplyBySum1;
 /// </summary>
 public interface IConcatenateNonZeroDigitsAndMultiplyBySum1
 {
+    /// <summary>
+    ///     Concatenates the non-zero digits of <paramref name="n" /> into a new number and multiplies it by the sum of
+    ///     those digits.
+    /// </summary>
+    /// <param name="n">The integer whose digits are processed.</param>
+    /// <returns>The concatenated non-zero digits of <paramref name="n" /> multiplied by their sum.</returns>
     long SumAndMultiply(int n);
 }

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumEqualSumOfTwoArraysAfterReplacingZeros;
 /// <inheritdoc />
 public sealed class MinimumEqualSumOfTwoArraysAfterReplacingZerosGreedy : IMinimumEqualSumOfTwoArraysAfterReplacingZeros
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long MinSum(int[] nums1, int[] nums2)
     {
         long nums1Sum = 0;

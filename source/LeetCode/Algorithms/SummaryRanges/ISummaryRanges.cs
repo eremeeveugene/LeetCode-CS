@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SummaryRanges;
 /// </summary>
 public interface ISummaryRanges
 {
+    /// <summary>
+    ///     Groups the sorted, distinct integers in <paramref name="nums" /> into the smallest number of
+    ///     contiguous ranges and formats each range as a string.
+    /// </summary>
+    /// <param name="nums">The sorted array of distinct integers to summarize.</param>
+    /// <returns>A list of formatted range strings covering all values in <paramref name="nums" />.</returns>
     IList<string> SummaryRanges(int[] nums);
 }

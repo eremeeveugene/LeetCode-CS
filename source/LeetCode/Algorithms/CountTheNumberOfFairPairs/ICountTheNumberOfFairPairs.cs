@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.CountTheNumberOfFairPairs;
 /// </summary>
 public interface ICountTheNumberOfFairPairs
 {
+    /// <summary>
+    ///     Counts the fair pairs of indices (i, j) with i &lt; j in <paramref name="nums" /> whose element sum lies within
+    ///     the inclusive range [<paramref name="lower" />, <paramref name="upper" />].
+    /// </summary>
+    /// <param name="nums">The array of integers to examine.</param>
+    /// <param name="lower">The inclusive lower bound of a qualifying pair's sum.</param>
+    /// <param name="upper">The inclusive upper bound of a qualifying pair's sum.</param>
+    /// <returns>The total number of fair pairs.</returns>
     long CountFairPairs(int[] nums, int lower, int upper);
 }

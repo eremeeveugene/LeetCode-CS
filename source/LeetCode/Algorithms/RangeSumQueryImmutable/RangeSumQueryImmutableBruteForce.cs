@@ -21,13 +21,11 @@ public sealed class RangeSumQueryImmutableBruteForce : IRangeSumQueryImmutable
         _nums = nums;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(right − left + 1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="left"></param>
-    /// <param name="right"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumRange(int left, int right)
     {
         var sum = 0;

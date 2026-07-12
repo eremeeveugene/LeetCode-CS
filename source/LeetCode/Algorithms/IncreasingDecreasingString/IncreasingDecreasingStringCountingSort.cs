@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.IncreasingDecreasingString;
 /// <inheritdoc />
 public sealed class IncreasingDecreasingStringCountingSort : IIncreasingDecreasingString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string SortString(string s)
     {
         var count = new int[26];

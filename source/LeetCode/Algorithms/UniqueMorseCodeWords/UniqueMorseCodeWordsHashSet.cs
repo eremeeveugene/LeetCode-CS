@@ -46,12 +46,11 @@ public sealed class UniqueMorseCodeWordsHashSet : IUniqueMorseCodeWords
         { 'z', "--.." }
     };
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(n * m)
-    /// </summary>
-    /// <param name="words"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int UniqueMorseRepresentations(string[] words)
     {
         var morseRepresentationsHashSet = new HashSet<string>();

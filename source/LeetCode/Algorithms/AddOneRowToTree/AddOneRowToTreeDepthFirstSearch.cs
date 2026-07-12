@@ -16,14 +16,11 @@ namespace LeetCode.Algorithms.AddOneRowToTree;
 /// <inheritdoc />
 public sealed class AddOneRowToTreeDepthFirstSearch : IAddOneRowToTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n), where n is the number of nodes in the tree
     ///     Space complexity - O(h), where h is the height of the tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <param name="val"></param>
-    /// <param name="depth"></param>
-    /// <returns></returns>
+    /// </remarks>
     public TreeNode? AddOneRow(TreeNode? root, int val, int depth)
     {
         if (root == null)

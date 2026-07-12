@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses;
 /// </summary>
 public interface IMaximumNestingDepthOfTheParentheses
 {
+    /// <summary>
+    ///     Computes the maximum nesting depth of the parentheses in the valid parentheses string <paramref name="s" />.
+    /// </summary>
+    /// <param name="s">The valid parentheses string (which may also contain digits, '+' and '-') to analyze.</param>
+    /// <returns>The maximum depth of nested parentheses in <paramref name="s" />.</returns>
     int MaxDepth(string s);
 }

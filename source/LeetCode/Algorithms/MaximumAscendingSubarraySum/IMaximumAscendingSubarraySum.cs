@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.MaximumAscendingSubarraySum;
 /// </summary>
 public interface IMaximumAscendingSubarraySum
 {
+    /// <summary>
+    ///     Finds the maximum sum of a strictly ascending contiguous subarray of <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array of positive integers to search for an ascending subarray.</param>
+    /// <returns>The maximum sum achievable by any strictly ascending contiguous subarray of <paramref name="nums" />.</returns>
     int MaxAscendingSum(int[] nums);
 }

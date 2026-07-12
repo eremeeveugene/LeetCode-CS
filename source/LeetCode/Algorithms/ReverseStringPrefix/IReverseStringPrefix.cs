@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.ReverseStringPrefix;
 /// </summary>
 public interface IReverseStringPrefix
 {
+    /// <summary>
+    ///     Reverses the first <paramref name="k" /> characters of <paramref name="s" />, leaving the remainder of the
+    ///     string unchanged.
+    /// </summary>
+    /// <param name="s">The string whose prefix is reversed.</param>
+    /// <param name="k">The number of leading characters to reverse.</param>
+    /// <returns>The resulting string after reversing the first <paramref name="k" /> characters.</returns>
     string ReversePrefix(string s, int k);
 }

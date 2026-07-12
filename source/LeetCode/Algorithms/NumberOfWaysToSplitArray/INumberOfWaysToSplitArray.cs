@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.NumberOfWaysToSplitArray;
 /// </summary>
 public interface INumberOfWaysToSplitArray
 {
+    /// <summary>
+    ///     Counts the number of ways to split <paramref name="nums" /> into two non-empty contiguous parts such that
+    ///     the sum of the left part is greater than or equal to the sum of the right part.
+    /// </summary>
+    /// <param name="nums">The array of integers to split.</param>
+    /// <returns>The number of valid ways to split <paramref name="nums" /> into two parts.</returns>
     int WaysToSplitArray(int[] nums);
 }

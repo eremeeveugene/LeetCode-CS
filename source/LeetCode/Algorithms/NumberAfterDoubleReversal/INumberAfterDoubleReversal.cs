@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.NumberAfterDoubleReversal;
 /// </summary>
 public interface INumberAfterDoubleReversal
 {
+    /// <summary>
+    ///     Determines whether reversing the digits of <paramref name="num" /> and then reversing the digits of the
+    ///     result again yields the original value of <paramref name="num" />.
+    /// </summary>
+    /// <param name="num">The non-negative integer to test.</param>
+    /// <returns><see langword="true" /> if reversing <paramref name="num" /> twice reproduces its original value; otherwise, <see langword="false" />.</returns>
     bool IsSameAfterReversals(int num);
 }

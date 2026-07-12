@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.NaryTreePostorderTraversal;
 /// </summary>
 public interface INaryTreePostorderTraversal
 {
+    /// <summary>
+    ///     Performs a postorder traversal of the N-ary tree rooted at <paramref name="root" /> and returns the node
+    ///     values in visitation order.
+    /// </summary>
+    /// <param name="root">The root node of the N-ary tree, or <see langword="null" /> for an empty tree.</param>
+    /// <returns>The values of the tree's nodes in postorder.</returns>
     IList<int> Postorder(Node? root);
 }

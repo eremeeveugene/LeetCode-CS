@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ContainerWithMostWater;
 /// </summary>
 public interface IContainerWithMostWater
 {
+    /// <summary>
+    ///     Finds two lines from <paramref name="heights" /> that, together with the x-axis, form a container that holds
+    ///     the maximum amount of water.
+    /// </summary>
+    /// <param name="heights">The array of line heights.</param>
+    /// <returns>The maximum amount of water that can be contained.</returns>
     int MaxArea(int[] heights);
 }

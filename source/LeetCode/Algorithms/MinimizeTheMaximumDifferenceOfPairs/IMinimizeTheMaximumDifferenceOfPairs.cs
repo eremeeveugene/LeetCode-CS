@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimizeTheMaximumDifferenceOfPairs;
 /// </summary>
 public interface IMinimizeTheMaximumDifferenceOfPairs
 {
+    /// <summary>
+    ///     Selects <paramref name="requiredPairsCount" /> disjoint pairs of elements from <paramref name="nums" />
+    ///     to minimize the maximum absolute difference among the selected pairs.
+    /// </summary>
+    /// <param name="nums">The array of integers to pair up.</param>
+    /// <param name="requiredPairsCount">The number of disjoint pairs that must be selected.</param>
+    /// <returns>The minimized maximum absolute difference among the selected pairs.</returns>
     int MinimizeMax(int[] nums, int requiredPairsCount);
 }

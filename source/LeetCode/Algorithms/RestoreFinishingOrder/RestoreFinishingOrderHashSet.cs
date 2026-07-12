@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.RestoreFinishingOrder;
 /// <inheritdoc />
 public sealed class RestoreFinishingOrderHashSet : IRestoreFinishingOrder
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="orders"></param>
-    /// <param name="friends"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] RecoverOrder(int[] orders, int[] friends)
     {
         var friendsHashSet = new HashSet<int>(friends);

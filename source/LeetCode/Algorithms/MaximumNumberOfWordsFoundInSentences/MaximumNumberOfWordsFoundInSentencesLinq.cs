@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences;
 /// <inheritdoc />
 public sealed class MaximumNumberOfWordsFoundInSentencesLinq : IMaximumNumberOfWordsFoundInSentences
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="sentences"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MostWordsFound(string[] sentences)
     {
         return sentences.Select(sentence => 1 + sentence.Count(character => character == ' ')).Max();

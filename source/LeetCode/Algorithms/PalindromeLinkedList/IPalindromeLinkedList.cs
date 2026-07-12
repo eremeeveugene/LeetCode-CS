@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.PalindromeLinkedList;
 /// </summary>
 public interface IPalindromeLinkedList
 {
+    /// <summary>
+    ///     Determines whether the singly linked list starting at <paramref name="head" /> reads the same forwards
+    ///     and backwards.
+    /// </summary>
+    /// <param name="head">The head node of the singly linked list to check, or <see langword="null" /> for an empty list.</param>
+    /// <returns><see langword="true" /> if the linked list is a palindrome; otherwise, <see langword="false" />.</returns>
     bool IsPalindrome(ListNode? head);
 }

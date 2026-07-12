@@ -18,5 +18,12 @@ namespace LeetCode.Algorithms.MergeTwoBinaryTrees;
 /// </summary>
 public interface IMergeTwoBinaryTrees
 {
+    /// <summary>
+    ///     Merges the two binary trees rooted at <paramref name="root1" /> and <paramref name="root2" /> by summing
+    ///     overlapping node values, keeping any node that has no overlapping counterpart.
+    /// </summary>
+    /// <param name="root1">The root of the first binary tree.</param>
+    /// <param name="root2">The root of the second binary tree.</param>
+    /// <returns>The root of the merged binary tree.</returns>
     TreeNode? MergeTrees(TreeNode? root1, TreeNode? root2);
 }

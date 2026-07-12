@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumNumberOfPointsWithCost;
 /// <inheritdoc />
 public sealed class MaximumNumberOfPointsWithCostDynamicProgramming : IMaximumNumberOfPointsWithCost
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="points"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long MaxPoints(int[][] points)
     {
         var scores = new long[points[0].Length];

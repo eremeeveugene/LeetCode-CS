@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ValidWord;
 /// </summary>
 public interface IValidWord
 {
+    /// <summary>
+    ///     Determines whether <paramref name="word" /> is valid — at least 3 characters long, consisting only of
+    ///     digits and English letters, and containing at least one vowel and one consonant.
+    /// </summary>
+    /// <param name="word">The string to validate.</param>
+    /// <returns><see langword="true" /> if <paramref name="word" /> is valid; otherwise, <see langword="false" />.</returns>
     bool IsValid(string word);
 }

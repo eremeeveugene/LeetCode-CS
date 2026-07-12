@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ContiguousArray;
 /// <inheritdoc />
 public sealed class ContiguousArrayDictionary : IContiguousArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindMaxLength(int[] nums)
     {
         var maxLength = 0;

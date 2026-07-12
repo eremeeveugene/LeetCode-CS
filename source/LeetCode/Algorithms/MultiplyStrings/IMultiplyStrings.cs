@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MultiplyStrings;
 /// </summary>
 public interface IMultiplyStrings
 {
+    /// <summary>
+    ///     Multiplies the two non-negative integers represented as strings <paramref name="num1" /> and
+    ///     <paramref name="num2" /> and returns the product as a string.
+    /// </summary>
+    /// <param name="num1">The first non-negative integer, represented as a string of digits.</param>
+    /// <param name="num2">The second non-negative integer, represented as a string of digits.</param>
+    /// <returns>The product of <paramref name="num1" /> and <paramref name="num2" />, represented as a string.</returns>
     string Multiply(string num1, string num2);
 }

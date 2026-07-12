@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ComputeDecimalRepresentation;
 /// </summary>
 public interface IComputeDecimalRepresentation
 {
+    /// <summary>
+    ///     Decomposes <paramref name="n" /> into the sum of base-10 components, where each component is a non-zero digit
+    ///     multiplied by its place value, ordered from largest to smallest.
+    /// </summary>
+    /// <param name="n">The positive integer to decompose.</param>
+    /// <returns>The base-10 components of <paramref name="n" /> in descending order.</returns>
     int[] DecimalRepresentation(int n);
 }

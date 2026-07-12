@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.SpecialArray2;
 /// <inheritdoc />
 public sealed class SpecialArray2BruteForce : ISpecialArray2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(m)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="queries"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool[] IsArraySpecial(int[] nums, int[][] queries)
     {
         var result = new bool[queries.Length];

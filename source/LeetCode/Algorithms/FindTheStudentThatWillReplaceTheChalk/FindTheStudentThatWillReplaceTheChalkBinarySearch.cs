@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk;
 /// <inheritdoc />
 public sealed class FindTheStudentThatWillReplaceTheChalkBinarySearch : IFindTheStudentThatWillReplaceTheChalk
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="chalk"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ChalkReplacer(int[] chalk, int k)
     {
         var prefixSum = new long[chalk.Length];

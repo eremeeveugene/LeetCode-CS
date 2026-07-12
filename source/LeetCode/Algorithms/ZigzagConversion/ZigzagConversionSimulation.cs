@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.ZigzagConversion;
 /// <inheritdoc />
 public sealed class ZigzagConversionSimulation : IZigzagConversion
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="numRows"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string Convert(string s, int numRows)
     {
         if (numRows == 1 || s.Length <= numRows)

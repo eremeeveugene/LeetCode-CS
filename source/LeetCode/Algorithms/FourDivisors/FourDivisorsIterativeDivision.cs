@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FourDivisors;
 /// <inheritdoc />
 public sealed class FourDivisorsIterativeDivision : IFourDivisors
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * sqrt(m))
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumFourDivisors(int[] nums)
     {
         var result = 0;

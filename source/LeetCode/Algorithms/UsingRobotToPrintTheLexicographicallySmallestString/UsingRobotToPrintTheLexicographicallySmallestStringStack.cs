@@ -16,12 +16,11 @@ public sealed class UsingRobotToPrintTheLexicographicallySmallestStringStack : I
 {
     private const byte AlphabetLength = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="input"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string RobotWithString(string input)
     {
         var n = input.Length;

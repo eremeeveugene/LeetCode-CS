@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.ConvertSortedArrayToBinarySearchTree;
 /// </summary>
 public interface IConvertSortedArrayToBinarySearchTree
 {
+    /// <summary>
+    ///     Converts the sorted array <paramref name="nums" /> into a height-balanced binary search tree.
+    /// </summary>
+    /// <param name="nums">The array of integers sorted in ascending order.</param>
+    /// <returns>The root node of the height-balanced binary search tree, or <c>null</c> if the array is empty.</returns>
     TreeNode? SortedArrayToBST(int[] nums);
 }

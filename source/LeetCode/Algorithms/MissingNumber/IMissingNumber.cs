@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MissingNumber;
 /// </summary>
 public interface IMissingNumber
 {
+    /// <summary>
+    ///     Finds the one number missing from <paramref name="nums" />, an array containing <c>n</c> distinct numbers
+    ///     taken from the range [0, n].
+    /// </summary>
+    /// <param name="nums">The array of distinct numbers with exactly one number missing from the range [0, n].</param>
+    /// <returns>The missing number in the range [0, n].</returns>
     int MissingNumber(int[] nums);
 }

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ThirdMaximumNumber;
 /// <inheritdoc />
 public sealed class ThirdMaximumNumberLinear : IThirdMaximumNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ThirdMax(int[] nums)
     {
         switch (nums.Length)

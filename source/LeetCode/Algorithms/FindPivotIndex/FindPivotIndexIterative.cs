@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindPivotIndex;
 /// <inheritdoc />
 public sealed class FindPivotIndexIterative : IFindPivotIndex
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int PivotIndex(int[] nums)
     {
         var leftSum = 0;

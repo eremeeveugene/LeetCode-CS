@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.TheTwoSneakyNumbersOfDigitville;
 /// </summary>
 public interface ITheTwoSneakyNumbersOfDigitville
 {
+    /// <summary>
+    ///     Finds the two "sneaky" numbers that each appear twice in <paramref name="nums" />, which should
+    ///     otherwise contain every number from 0 to <c>n</c> - 1 exactly once.
+    /// </summary>
+    /// <param name="nums">The array of length <c>n</c> + 2 containing numbers from 0 to <c>n</c> - 1, with two duplicated.</param>
+    /// <returns>An array containing the two duplicated numbers.</returns>
     int[] GetSneakyNumbers(int[] nums);
 }

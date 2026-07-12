@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountTheDigitsThatDivideNumber;
 /// <inheritdoc />
 public sealed class CountTheDigitsThatDivideNumberIterative : ICountTheDigitsThatDivideNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountDigits(int num)
     {
         var count = 0;

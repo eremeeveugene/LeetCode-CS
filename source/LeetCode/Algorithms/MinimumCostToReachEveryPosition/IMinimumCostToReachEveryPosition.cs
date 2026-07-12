@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumCostToReachEveryPosition;
 /// </summary>
 public interface IMinimumCostToReachEveryPosition
 {
+    /// <summary>
+    ///     Computes, for each position, the minimum cost to reach it, given that moving from position <c>j</c> to
+    ///     position <c>i</c> (where <c>j &lt;= i</c>) costs <c>cost[i]</c>.
+    /// </summary>
+    /// <param name="cost">The cost associated with moving to each position.</param>
+    /// <returns>An array where each entry is the minimum cost to reach the corresponding position.</returns>
     int[] MinCosts(int[] cost);
 }

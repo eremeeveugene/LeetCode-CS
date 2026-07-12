@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.TotalCharactersInStringAfterTransformations1;
 /// </summary>
 public interface ITotalCharactersInStringAfterTransformations1
 {
+    /// <summary>
+    ///     Computes the length of <paramref name="input" /> after applying, <paramref name="transformationsCount" />
+    ///     times, the transformation that replaces each character <c>'z'</c> with <c>"ab"</c> and every other
+    ///     character with the next character in the alphabet.
+    /// </summary>
+    /// <param name="input">The string consisting of lowercase English letters to transform.</param>
+    /// <param name="transformationsCount">The number of times to apply the transformation.</param>
+    /// <returns>The length of the resulting string, modulo 10^9 + 7.</returns>
     int LengthAfterTransformations(string input, int transformationsCount);
 }

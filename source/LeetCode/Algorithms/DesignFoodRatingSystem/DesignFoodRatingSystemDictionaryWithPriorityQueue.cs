@@ -19,12 +19,15 @@ public sealed class DesignFoodRatingSystemDictionaryWithPriorityQueue : IDesignF
     private readonly Dictionary<string, int> _foodToRatingDictionary = [];
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="DesignFoodRatingSystemDictionaryWithPriorityQueue" /> class.
+    /// </summary>
+    /// <param name="foods">The names of the foods.</param>
+    /// <param name="cuisines">The cuisine of each food.</param>
+    /// <param name="ratings">The initial rating of each food.</param>
+    /// <remarks>
     ///     Time complexity - O(n log n), where n is the total number of foods
     ///     Space complexity - O(n), where n is the total number of foods
-    /// </summary>
-    /// <param name="foods"></param>
-    /// <param name="cuisines"></param>
-    /// <param name="ratings"></param>
+    /// </remarks>
     public DesignFoodRatingSystemDictionaryWithPriorityQueue(string[] foods, string[] cuisines, int[] ratings)
     {
         var n = foods.Length;
@@ -51,12 +54,11 @@ public sealed class DesignFoodRatingSystemDictionaryWithPriorityQueue : IDesignF
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log k), where k is the number of foods in the cuisine
     ///     Space complexity - O(n + m), where n is the initial number of foods and m is the number of rating changes
-    /// </summary>
-    /// <param name="food"></param>
-    /// <param name="newRating"></param>
+    /// </remarks>
     public void ChangeRating(string food, int newRating)
     {
         _foodToRatingDictionary[food] = newRating;
@@ -68,13 +70,12 @@ public sealed class DesignFoodRatingSystemDictionaryWithPriorityQueue : IDesignF
         _cuisineToFoodRatingsDictionary[cuisine].Enqueue(foodRating, foodRating);
     }
 
-    /// <summary>
-    ///     Time complexity - O(m log k), where m si the number of stale items dequeued and k is the number of foods in the
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(m log k), where m is the number of stale items dequeued and k is the number of foods in the
     ///     cuisine
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="cuisine"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string HighestRated(string cuisine)
     {
         var queue = _cuisineToFoodRatingsDictionary[cuisine];

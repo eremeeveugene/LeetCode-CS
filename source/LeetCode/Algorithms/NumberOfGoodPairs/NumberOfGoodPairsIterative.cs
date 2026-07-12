@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberOfGoodPairs;
 /// <inheritdoc />
 public sealed class NumberOfGoodPairsIterative : INumberOfGoodPairs
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumIdenticalPairs(int[] nums)
     {
         var pairs = 0;

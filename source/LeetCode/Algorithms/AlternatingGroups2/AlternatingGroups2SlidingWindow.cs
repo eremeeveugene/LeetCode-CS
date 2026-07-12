@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.AlternatingGroups2;
 /// <inheritdoc />
 public sealed class AlternatingGroups2SlidingWindow : IAlternatingGroups2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + k)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="colors"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumberOfAlternatingGroups(int[] colors, int k)
     {
         var count = 1;

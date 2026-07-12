@@ -16,12 +16,11 @@ public sealed class MinimumCostToMakeAtLeastOneValidPathInGridBreadthFirstSearch
 {
     private readonly (int X, int Y)[] _directions = [(0, 1), (0, -1), (1, 0), (-1, 0)];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(n * m)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinCost(int[][] grid)
     {
         var m = grid.Length;

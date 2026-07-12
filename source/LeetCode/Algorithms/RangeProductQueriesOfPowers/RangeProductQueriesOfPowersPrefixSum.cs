@@ -18,13 +18,11 @@ public sealed class RangeProductQueriesOfPowersPrefixSum : IRangeProductQueriesO
 {
     private const int Mod = 1_000_000_007;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(q), where q is queries.Length
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="queries"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] ProductQueries(int n, int[][] queries)
     {
         var exponents = new List<int>(BitOperations.PopCount((uint)n));

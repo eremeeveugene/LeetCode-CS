@@ -14,15 +14,11 @@ namespace LeetCode.Algorithms.FloodFill;
 /// <inheritdoc />
 public sealed class FloodFillIterative : IFloodFill
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="image"></param>
-    /// <param name="sr"></param>
-    /// <param name="sc"></param>
-    /// <param name="newColor"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] FloodFill(int[][] image, int sr, int sc, int newColor)
     {
         if (image[sr][sc] == newColor)

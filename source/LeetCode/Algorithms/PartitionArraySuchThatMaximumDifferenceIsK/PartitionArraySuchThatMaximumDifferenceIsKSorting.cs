@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.PartitionArraySuchThatMaximumDifferenceIsK;
 /// <inheritdoc />
 public sealed class PartitionArraySuchThatMaximumDifferenceIsKSorting : IPartitionArraySuchThatMaximumDifferenceIsK
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int PartitionArray(int[] nums, int k)
     {
         if (nums.Length == 1)

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ScoreOfString;
 /// </summary>
 public interface IScoreOfString
 {
+    /// <summary>
+    ///     Computes the sum of the absolute differences between the ASCII values of adjacent characters in
+    ///     <paramref name="s" />.
+    /// </summary>
+    /// <param name="s">The string whose score is to be computed.</param>
+    /// <returns>The score of <paramref name="s" />.</returns>
     int ScoreOfString(string s);
 }

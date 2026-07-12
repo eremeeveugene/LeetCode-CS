@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.Convert1DArrayInto2DArray;
 /// <inheritdoc />
 public sealed class Convert1DArrayInto2DArraySimulation : IConvert1DArrayInto2DArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="original"></param>
-    /// <param name="m"></param>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] Construct2DArray(int[] original, int m, int n)
     {
         if (original.Length != m * n)

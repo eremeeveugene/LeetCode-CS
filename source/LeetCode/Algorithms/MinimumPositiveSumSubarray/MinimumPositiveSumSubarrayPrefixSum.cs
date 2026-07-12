@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.MinimumPositiveSumSubarray;
 /// <inheritdoc />
 public sealed class MinimumPositiveSumSubarrayPrefixSum : IMinimumPositiveSumSubarray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * (r - l + 1))
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="l"></param>
-    /// <param name="r"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumSumSubarray(IList<int> nums, int l, int r)
     {
         var n = nums.Count;

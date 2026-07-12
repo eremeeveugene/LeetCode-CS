@@ -16,14 +16,11 @@ namespace LeetCode.Algorithms.LongestHappyString;
 /// <inheritdoc />
 public sealed class LongestHappyStringGreedy : ILongestHappyString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(a + b + c)
     ///     Space complexity - O(a + b + c)
-    /// </summary>
-    /// <param name="a"></param>
-    /// <param name="b"></param>
-    /// <param name="c"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string LongestDiverseString(int a, int b, int c)
     {
         var stringBuilder = new StringBuilder();

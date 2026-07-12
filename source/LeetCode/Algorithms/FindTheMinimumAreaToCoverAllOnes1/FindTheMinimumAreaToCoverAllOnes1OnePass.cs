@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindTheMinimumAreaToCoverAllOnes1;
 /// <inheritdoc />
 public sealed class FindTheMinimumAreaToCoverAllOnes1OnePass : IFindTheMinimumAreaToCoverAllOnes1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumArea(int[][] grid)
     {
         var m = grid.Length;

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumRecolorsToGetKConsecutiveBlackBlocks;
 /// <inheritdoc />
 public sealed class MinimumRecolorsToGetKConsecutiveBlackBlocksSlidingWindow : IMinimumRecolorsToGetKConsecutiveBlackBlocks
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="blocks"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumRecolors(string blocks, int k)
     {
         var blackCount = 0;

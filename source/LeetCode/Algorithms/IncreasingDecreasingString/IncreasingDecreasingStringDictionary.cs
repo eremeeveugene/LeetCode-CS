@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.IncreasingDecreasingString;
 /// <inheritdoc />
 public sealed class IncreasingDecreasingStringDictionary : IIncreasingDecreasingString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * k * log k), where n is the length of the string and k is the number of unique characters
     ///     Space complexity - O(n + k), where n is the length of the string and k is the number of unique characters
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string SortString(string s)
     {
         var dictionary = new Dictionary<char, int>();

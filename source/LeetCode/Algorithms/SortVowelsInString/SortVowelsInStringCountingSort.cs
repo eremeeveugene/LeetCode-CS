@@ -16,12 +16,11 @@ public sealed class SortVowelsInStringCountingSort : ISortVowelsInString
 {
     private const string VowelOrder = "AEIOUaeiou";
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string SortVowels(string s)
     {
         Span<int> vowelFrequencies = stackalloc int[VowelOrder.Length];

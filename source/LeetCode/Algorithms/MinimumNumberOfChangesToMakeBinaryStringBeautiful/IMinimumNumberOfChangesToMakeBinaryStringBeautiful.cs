@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumNumberOfChangesToMakeBinaryStringBeautiful;
 /// </summary>
 public interface IMinimumNumberOfChangesToMakeBinaryStringBeautiful
 {
+    /// <summary>
+    ///     Finds the minimum number of character changes needed so that the binary string <paramref name="s" /> can
+    ///     be partitioned into contiguous substrings of even length, each consisting of the same character.
+    /// </summary>
+    /// <param name="s">The binary string, of even length, to make beautiful.</param>
+    /// <returns>The minimum number of changes required.</returns>
     int MinChanges(string s);
 }

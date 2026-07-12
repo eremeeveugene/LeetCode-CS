@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.RomanToInteger;
 /// </summary>
 public interface IRomanToInteger
 {
+    /// <summary>
+    ///     Converts the Roman numeral <paramref name="romanString" /> into its equivalent integer value.
+    /// </summary>
+    /// <param name="romanString">The Roman numeral string to convert.</param>
+    /// <returns>The integer value represented by <paramref name="romanString" />.</returns>
     int RomanToInt(string romanString);
 }

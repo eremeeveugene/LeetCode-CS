@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.EvenOddTree;
 /// </summary>
 public interface IEvenOddTree
 {
+    /// <summary>
+    ///     Determines whether the binary tree rooted at <paramref name="root" /> is an even-odd tree, where even-indexed
+    ///     levels contain strictly increasing odd values and odd-indexed levels contain strictly decreasing even values.
+    /// </summary>
+    /// <param name="root">The root node of the binary tree.</param>
+    /// <returns><c>true</c> if the tree is an even-odd tree; otherwise, <c>false</c>.</returns>
     bool IsEvenOddTree(TreeNode? root);
 }

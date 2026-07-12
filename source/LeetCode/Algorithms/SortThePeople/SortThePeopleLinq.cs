@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.SortThePeople;
 /// <inheritdoc />
 public sealed class SortThePeopleLinq : ISortThePeople
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="names"></param>
-    /// <param name="heights"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string[] SortPeople(string[] names, int[] heights)
     {
         return [.. names.Zip(heights, (name, height) => (name, height)).OrderByDescending(x => x.height).Select(x => x.name)];

@@ -16,6 +16,13 @@ public abstract class MinimumTimeDifferenceBase : IMinimumTimeDifference
 {
     protected const int DayMinutes = 60 * 24;
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1) when the pigeonhole principle guarantees a duplicate (more time points than minutes in a
+    ///     day); otherwise delegates to the overriding <see cref="FindMinDifferenceInternal" /> implementation
+    ///     Space complexity - O(1), excluding the space used by the overriding <see cref="FindMinDifferenceInternal" />
+    ///     implementation
+    /// </remarks>
     public int FindMinDifference(IList<string> timePoints)
     {
         return timePoints.Count > DayMinutes ? 0 : FindMinDifferenceInternal(timePoints);

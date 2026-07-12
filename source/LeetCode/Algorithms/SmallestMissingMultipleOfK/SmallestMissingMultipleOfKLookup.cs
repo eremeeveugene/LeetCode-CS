@@ -16,13 +16,11 @@ public sealed class SmallestMissingMultipleOfKLookup : ISmallestMissingMultipleO
 {
     private const int MaxValue = 100;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MissingMultiple(int[] nums, int k)
     {
         Span<bool> numsLookup = stackalloc bool[MaxValue + 1];

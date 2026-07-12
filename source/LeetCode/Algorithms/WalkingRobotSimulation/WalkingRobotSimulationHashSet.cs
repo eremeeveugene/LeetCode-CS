@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.WalkingRobotSimulation;
 /// <inheritdoc />
 public sealed class WalkingRobotSimulationHashSet : IWalkingRobotSimulation
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="commands"></param>
-    /// <param name="obstacles"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int RobotSim(int[] commands, int[][] obstacles)
     {
         var result = 0;

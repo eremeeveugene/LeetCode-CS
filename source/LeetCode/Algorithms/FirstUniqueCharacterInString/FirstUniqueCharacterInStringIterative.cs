@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FirstUniqueCharacterInString;
 /// <inheritdoc />
 public sealed class FirstUniqueCharacterInStringIterative : IFirstUniqueCharacterInString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FirstUniqChar(string s)
     {
         var charCount = new int[26];

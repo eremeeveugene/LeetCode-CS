@@ -17,12 +17,11 @@ public sealed class MaximizeExpressionOfThreeElementsFrequencyArray : IMaximizeE
     private const int Offset = 100;
     private const int Size = 201;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaximizeExpressionOfThree(int[] nums)
     {
         Span<int> numsFrequencies = stackalloc int[Size];

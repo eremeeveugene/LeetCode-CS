@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.CountResiduePrefixes;
 /// </summary>
 public interface ICountResiduePrefixes
 {
+    /// <summary>
+    ///     Counts the prefixes of <paramref name="s" /> that qualify as residue prefixes.
+    /// </summary>
+    /// <param name="s">The string whose prefixes are examined.</param>
+    /// <returns>The number of residue prefixes of <paramref name="s" />.</returns>
     int ResiduePrefixes(string s);
 }

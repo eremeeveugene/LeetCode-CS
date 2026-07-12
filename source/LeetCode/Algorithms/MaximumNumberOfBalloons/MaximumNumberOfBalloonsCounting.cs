@@ -17,12 +17,11 @@ public sealed class MaximumNumberOfBalloonsCounting : IMaximumNumberOfBalloons
     private const byte AlphabetLength = 'z' - 'a' + 1;
     private const string Balloon = "balloon";
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="text"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxNumberOfBalloons(string text)
     {
         var n = text.Length;

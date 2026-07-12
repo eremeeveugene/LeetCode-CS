@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict;
 /// <inheritdoc />
 public sealed class DetermineIfTwoEventsHaveConflictNumberComparison : IDetermineIfTwoEventsHaveConflict
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="event1"></param>
-    /// <param name="event2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool HaveConflict(string[] event1, string[] event2)
     {
         var event1Start = ConvertToMinutes(event1[0]);

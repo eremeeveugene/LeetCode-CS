@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PerfectSquares;
 /// <inheritdoc />
 public sealed class PerfectSquaresIterative : IPerfectSquares
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n sqrt(n))
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumSquares(int n)
     {
         var dp = new int[n + 1];

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.AliceAndBobPlayingFlowerGame;
 /// </summary>
 public interface IAliceAndBobPlayingFlowerGame
 {
+    /// <summary>
+    ///     Counts the pairs (x, y) with x in the range [1, <paramref name="n" />] and y in the range
+    ///     [1, <paramref name="m" />] such that Alice wins the flower game, i.e. x + y is odd.
+    /// </summary>
+    /// <param name="n">The number of flowers in the clockwise direction.</param>
+    /// <param name="m">The number of flowers in the anti-clockwise direction.</param>
+    /// <returns>The number of pairs (x, y) for which Alice wins the game.</returns>
     long FlowerGame(int n, int m);
 }

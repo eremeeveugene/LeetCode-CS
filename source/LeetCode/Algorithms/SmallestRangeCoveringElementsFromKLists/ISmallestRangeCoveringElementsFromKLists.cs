@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SmallestRangeCoveringElementsFromKLists;
 /// </summary>
 public interface ISmallestRangeCoveringElementsFromKLists
 {
+    /// <summary>
+    ///     Finds the smallest range that includes at least one number from each of the k sorted lists in
+    ///     <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The list of k sorted lists of integers.</param>
+    /// <returns>An array [start, end] representing the smallest range covering an element from every list.</returns>
     int[] SmallestRange(IList<IList<int>> nums);
 }

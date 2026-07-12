@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumNumberOfOperationsToMoveOnesToTheEnd;
 /// <inheritdoc />
 public sealed class MaximumNumberOfOperationsToMoveOnesToTheEndGreedyCounting : IMaximumNumberOfOperationsToMoveOnesToTheEnd
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxOperations(string s)
     {
         var count = 0;

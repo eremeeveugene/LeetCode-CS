@@ -16,12 +16,11 @@ public sealed class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyArray
 {
     private const int Length = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="words"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LongestPalindrome(string[] words)
     {
         var longestPalindrome = 0;

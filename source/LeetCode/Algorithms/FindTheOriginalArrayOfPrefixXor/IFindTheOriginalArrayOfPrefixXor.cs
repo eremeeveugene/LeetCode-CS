@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor;
 /// </summary>
 public interface IFindTheOriginalArrayOfPrefixXor
 {
+    /// <summary>
+    ///     Reconstructs the original array from its prefix XOR array <paramref name="pref" />, where each prefix element is the XOR of all original elements up to that index.
+    /// </summary>
+    /// <param name="pref">The prefix XOR array to reconstruct the original array from.</param>
+    /// <returns>The reconstructed original array.</returns>
     int[] FindArray(int[] pref);
 }

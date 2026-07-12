@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindMissingElements;
 /// </summary>
 public interface IFindMissingElements
 {
+    /// <summary>
+    ///     Finds all numbers between the minimum and maximum values of <paramref name="nums" /> that are missing from the
+    ///     array.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The list of numbers in the range of <paramref name="nums" /> that do not appear in the array.</returns>
     IList<int> FindMissingElements(int[] nums);
 }

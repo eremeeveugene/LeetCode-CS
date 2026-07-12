@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CanIWin;
 /// <inheritdoc />
 public sealed class CanIWinDynamicProgramming : ICanIWin
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * 2^n)
     ///     Space complexity - O(2^n)
-    /// </summary>
-    /// <param name="maxChoosableInteger"></param>
-    /// <param name="desiredTotal"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanIWin(int maxChoosableInteger, int desiredTotal)
     {
         if (desiredTotal == 0)

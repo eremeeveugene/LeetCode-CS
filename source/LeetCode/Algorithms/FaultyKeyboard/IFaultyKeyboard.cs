@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FaultyKeyboard;
 /// </summary>
 public interface IFaultyKeyboard
 {
+    /// <summary>
+    ///     Returns the string that appears on the screen after typing <paramref name="s" /> on a faulty keyboard that
+    ///     reverses the written text whenever the character 'i' is typed.
+    /// </summary>
+    /// <param name="s">The string typed on the faulty keyboard.</param>
+    /// <returns>The final string shown on the screen.</returns>
     string FinalString(string s);
 }

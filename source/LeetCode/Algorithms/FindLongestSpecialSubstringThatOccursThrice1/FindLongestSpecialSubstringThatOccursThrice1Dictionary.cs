@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.FindLongestSpecialSubstringThatOccursThrice1;
 /// <inheritdoc />
 public sealed class FindLongestSpecialSubstringThatOccursThrice1Dictionary : IFindLongestSpecialSubstringThatOccursThrice1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n^2)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaximumLength(string s)
     {
         var dictionary = new Dictionary<string, int>();

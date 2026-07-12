@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FindScoreOfAnArrayAfterMarkingAllElements;
 /// </summary>
 public interface IFindScoreOfAnArrayAfterMarkingAllElements
 {
+    /// <summary>
+    ///     Repeatedly picks the smallest unmarked element (leftmost on ties) in <paramref name="nums" />, adds its value to the score, and marks it along with its adjacent elements, until all elements are marked.
+    /// </summary>
+    /// <param name="nums">The array of integers to process.</param>
+    /// <returns>The total score accumulated after marking all elements.</returns>
     long FindScore(int[] nums);
 }

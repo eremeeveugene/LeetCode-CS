@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.Triangle;
 /// </summary>
 public interface ITriangle
 {
+    /// <summary>
+    ///     Finds the minimum path sum from the top to the bottom of <paramref name="triangle" />, where each step
+    ///     may move to an adjacent number on the row below.
+    /// </summary>
+    /// <param name="triangle">The triangle of numbers represented as a list of rows.</param>
+    /// <returns>The minimum possible sum of a path from the top to the bottom of the triangle.</returns>
     int MinimumTotal(IList<IList<int>> triangle);
 }

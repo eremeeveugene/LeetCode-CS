@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.DayOfTheYear;
 /// </summary>
 public interface IDayOfTheYear
 {
+    /// <summary>
+    ///     Computes the ordinal day number of the year for the calendar date represented by <paramref name="date" />.
+    /// </summary>
+    /// <param name="date">The date in the "YYYY-MM-DD" format.</param>
+    /// <returns>The day number of the year for the given date.</returns>
     int DayOfYear(string date);
 }

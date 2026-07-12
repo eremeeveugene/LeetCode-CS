@@ -18,5 +18,12 @@ namespace LeetCode.Algorithms.DeleteNodeFromLinkedListPresentInArray;
 /// </summary>
 public interface IDeleteNodeFromLinkedListPresentInArray
 {
+    /// <summary>
+    ///     Removes from the linked list starting at <paramref name="head" /> every node whose value is present in
+    ///     <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array of values to remove from the linked list.</param>
+    /// <param name="head">The head of the linked list.</param>
+    /// <returns>The head of the modified linked list, or <c>null</c> if all nodes are removed.</returns>
     ListNode? ModifiedList(int[] nums, ListNode? head);
 }

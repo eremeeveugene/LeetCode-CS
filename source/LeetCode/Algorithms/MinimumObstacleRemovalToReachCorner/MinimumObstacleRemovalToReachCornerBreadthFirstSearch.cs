@@ -16,12 +16,11 @@ public sealed class MinimumObstacleRemovalToReachCornerBreadthFirstSearch : IMin
 {
     private static readonly (int X, int Y)[] Directions = [(-1, 0), (1, 0), (0, -1), (0, 1)];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n), where m is the number of rows and n is the number of columns in the grid
     ///     Space complexity - O(m * n), where m is the number of rows and n is the number of columns in the grid
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumObstacles(int[][] grid)
     {
         var rowsCount = grid.Length;

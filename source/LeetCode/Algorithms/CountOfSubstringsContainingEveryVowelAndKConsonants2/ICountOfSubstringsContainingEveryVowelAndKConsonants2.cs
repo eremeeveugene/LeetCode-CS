@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CountOfSubstringsContainingEveryVowelAndKConsonant
 /// </summary>
 public interface ICountOfSubstringsContainingEveryVowelAndKConsonants2
 {
+    /// <summary>
+    ///     Counts the substrings of <paramref name="word" /> that contain all five vowels at least once and exactly
+    ///     <paramref name="k" /> consonants.
+    /// </summary>
+    /// <param name="word">The string consisting of lowercase English letters.</param>
+    /// <param name="k">The exact number of consonants required in a qualifying substring.</param>
+    /// <returns>The total number of substrings satisfying the vowel and consonant conditions.</returns>
     long CountOfSubstrings(string word, int k);
 }

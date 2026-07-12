@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.RemoveNthNodeFromEndOfList;
 /// <inheritdoc />
 public sealed class RemoveNthNodeFromEndOfListTwoPointers : IRemoveNthNodeFromEndOfList
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n), where n is the  number of nodes in the linked list
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="head"></param>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public ListNode? RemoveNthFromEnd(ListNode? head, int n)
     {
         var dummyHead = new ListNode { next = head };

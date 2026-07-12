@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.DivideArrayIntoEqualPairs;
 /// <inheritdoc />
 public sealed class DivideArrayIntoEqualPairsDictionary : IDivideArrayIntoEqualPairs
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool DivideArray(int[] nums)
     {
         var frequencyDictionary = new Dictionary<int, int>();

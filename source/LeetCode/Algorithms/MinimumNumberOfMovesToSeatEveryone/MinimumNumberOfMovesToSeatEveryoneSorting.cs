@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone;
 /// <inheritdoc />
 public sealed class MinimumNumberOfMovesToSeatEveryoneSorting : IMinimumNumberOfMovesToSeatEveryone
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="seats"></param>
-    /// <param name="students"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinMovesToSeat(int[] seats, int[] students)
     {
         Array.Sort(seats);

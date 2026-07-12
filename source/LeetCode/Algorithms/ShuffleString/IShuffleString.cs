@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.ShuffleString;
 /// </summary>
 public interface IShuffleString
 {
+    /// <summary>
+    ///     Restores the shuffled string <paramref name="s" /> by placing each character at the position
+    ///     specified by the corresponding entry in <paramref name="indices" />.
+    /// </summary>
+    /// <param name="s">The shuffled string to restore.</param>
+    /// <param name="indices">The array specifying the target position of each character in <paramref name="s" />.</param>
+    /// <returns>The restored, unshuffled string.</returns>
     string RestoreString(string s, int[] indices);
 }

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ArrangingCoins;
 /// <inheritdoc />
 public sealed class ArrangingCoinsIterative : IArrangingCoins
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(sqrt n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ArrangeCoins(int n)
     {
         var i = 1;

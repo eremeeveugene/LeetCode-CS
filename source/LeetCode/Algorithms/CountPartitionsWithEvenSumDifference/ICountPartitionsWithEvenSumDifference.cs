@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountPartitionsWithEvenSumDifference;
 /// </summary>
 public interface ICountPartitionsWithEvenSumDifference
 {
+    /// <summary>
+    ///     Counts the ways to partition <paramref name="nums" /> into a non-empty prefix and suffix such that the
+    ///     difference between the sum of the prefix and the sum of the suffix is even.
+    /// </summary>
+    /// <param name="nums">The array of integers to partition.</param>
+    /// <returns>The number of partitions whose sum difference is even.</returns>
     int CountPartitions(int[] nums);
 }

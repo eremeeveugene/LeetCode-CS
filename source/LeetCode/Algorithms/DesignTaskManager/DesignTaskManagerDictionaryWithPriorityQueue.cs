@@ -18,10 +18,13 @@ public sealed class DesignTaskManagerDictionaryWithPriorityQueue : IDesignTaskMa
     private readonly Dictionary<int, UserIdPriority> _taskIdToUserIdPriorityDictionary = [];
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="DesignTaskManagerDictionaryWithPriorityQueue" /> class.
+    /// </summary>
+    /// <param name="tasks">The initial tasks, where each task is [userId, taskId, priority].</param>
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="tasks"></param>
+    /// </remarks>
     public DesignTaskManagerDictionaryWithPriorityQueue(IList<IList<int>> tasks)
     {
         var n = tasks.Count;
@@ -40,13 +43,11 @@ public sealed class DesignTaskManagerDictionaryWithPriorityQueue : IDesignTaskMa
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="userId"></param>
-    /// <param name="taskId"></param>
-    /// <param name="priority"></param>
+    /// </remarks>
     public void Add(int userId, int taskId, int priority)
     {
         _taskIdToUserIdPriorityDictionary[taskId] = new UserIdPriority(userId, priority);
@@ -56,12 +57,11 @@ public sealed class DesignTaskManagerDictionaryWithPriorityQueue : IDesignTaskMa
         _taskIdPriorityQueue.Enqueue(taskIdPriority, taskIdPriority);
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="taskId"></param>
-    /// <param name="newPriority"></param>
+    /// </remarks>
     public void Edit(int taskId, int newPriority)
     {
         var userIdPriority = _taskIdToUserIdPriorityDictionary[taskId];
@@ -74,21 +74,21 @@ public sealed class DesignTaskManagerDictionaryWithPriorityQueue : IDesignTaskMa
         _taskIdPriorityQueue.Enqueue(taskIdPriority, taskIdPriority);
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="taskId"></param>
+    /// </remarks>
     public void Rmv(int taskId)
     {
         _taskIdToUserIdPriorityDictionary.Remove(taskId);
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int ExecTop()
     {
         while (_taskIdPriorityQueue.Count > 0)

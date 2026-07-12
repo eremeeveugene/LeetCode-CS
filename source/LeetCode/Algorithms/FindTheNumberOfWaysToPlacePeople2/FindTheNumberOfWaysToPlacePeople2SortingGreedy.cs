@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindTheNumberOfWaysToPlacePeople2;
 /// <inheritdoc />
 public sealed class FindTheNumberOfWaysToPlacePeople2SortingGreedy : IFindTheNumberOfWaysToPlacePeople2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="points"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumberOfPairs(int[][] points)
     {
         Array.Sort(points, PointsComparison);

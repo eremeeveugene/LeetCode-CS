@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.AverageSalaryExcludingTheMinimumAndMaximumSalary;
 /// </summary>
 public interface IAverageSalaryExcludingTheMinimumAndMaximumSalary
 {
+    /// <summary>
+    ///     Computes the average of the salaries in <paramref name="salary" /> after excluding the minimum and maximum
+    ///     values.
+    /// </summary>
+    /// <param name="salary">The array of unique salary values.</param>
+    /// <returns>The average salary excluding the minimum and maximum salary.</returns>
     double Average(int[] salary);
 }

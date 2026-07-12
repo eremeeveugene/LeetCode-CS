@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.InvertBinaryTree;
 /// </summary>
 public interface IInvertBinaryTree
 {
+    /// <summary>
+    ///     Inverts the binary tree rooted at <paramref name="root" /> by swapping the left and right children of every node.
+    /// </summary>
+    /// <param name="root">The root of the binary tree.</param>
+    /// <returns>The root of the inverted binary tree, or <c>null</c> if the tree is empty.</returns>
     TreeNode? InvertTree(TreeNode? root);
 }

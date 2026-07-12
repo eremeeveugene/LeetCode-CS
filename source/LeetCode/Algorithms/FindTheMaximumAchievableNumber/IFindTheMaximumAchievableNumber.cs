@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.FindTheMaximumAchievableNumber;
 /// </summary>
 public interface IFindTheMaximumAchievableNumber
 {
+    /// <summary>
+    ///     Finds the maximum achievable number that can become equal to <paramref name="num" /> after applying at most
+    ///     <paramref name="t" /> operations, where each operation increases or decreases the number by 1 while
+    ///     simultaneously increasing or decreasing <paramref name="num" /> by 1.
+    /// </summary>
+    /// <param name="num">The target number.</param>
+    /// <param name="t">The maximum number of operations allowed.</param>
+    /// <returns>The maximum achievable number.</returns>
     int TheMaximumAchievableX(int num, int t);
 }

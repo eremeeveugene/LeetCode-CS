@@ -16,14 +16,11 @@ namespace LeetCode.Algorithms.SpiralMatrix4;
 /// <inheritdoc />
 public sealed class SpiralMatrix4Simulation : ISpiralMatrix4
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="m"></param>
-    /// <param name="n"></param>
-    /// <param name="head"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] SpiralMatrix(int m, int n, ListNode head)
     {
         var matrix = new int[m][];

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.SentenceSimilarity3;
 /// </summary>
 public interface ISentenceSimilarity3
 {
+    /// <summary>
+    ///     Determines whether <paramref name="sentence1" /> and <paramref name="sentence2" /> can be made
+    ///     identical by inserting a contiguous block of words into exactly one of them.
+    /// </summary>
+    /// <param name="sentence1">The first sentence.</param>
+    /// <param name="sentence2">The second sentence.</param>
+    /// <returns><see langword="true" /> if the sentences are similar; otherwise, <see langword="false" />.</returns>
     bool AreSentencesSimilar(string sentence1, string sentence2);
 }

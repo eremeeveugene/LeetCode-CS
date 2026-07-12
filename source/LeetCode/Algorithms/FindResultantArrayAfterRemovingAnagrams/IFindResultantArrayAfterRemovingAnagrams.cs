@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FindResultantArrayAfterRemovingAnagrams;
 /// </summary>
 public interface IFindResultantArrayAfterRemovingAnagrams
 {
+    /// <summary>
+    ///     Repeatedly removes any word from <paramref name="words" /> that is an anagram of the word immediately preceding it, until no such words remain.
+    /// </summary>
+    /// <param name="words">The array of words to process.</param>
+    /// <returns>The resultant list of words after all anagram removals.</returns>
     IList<string> RemoveAnagrams(string[] words);
 }

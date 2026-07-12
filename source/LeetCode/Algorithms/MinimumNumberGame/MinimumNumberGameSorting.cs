@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumNumberGame;
 /// <inheritdoc />
 public sealed class MinimumNumberGameSorting : IMinimumNumberGame
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] NumberGame(int[] nums)
     {
         Array.Sort(nums);

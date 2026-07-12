@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ComputeAlternatingSum;
 /// <inheritdoc />
 public sealed class ComputeAlternatingSumSimulation : IComputeAlternatingSum
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int AlternatingSum(int[] nums)
     {
         var sum = 0;

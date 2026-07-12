@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumPairRemovalToSortArray1;
 /// <inheritdoc />
 public sealed class MinimumPairRemovalToSortArray1Simulation : IMinimumPairRemovalToSortArray1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumPairRemoval(int[] nums)
     {
         var list = new List<int>(nums);

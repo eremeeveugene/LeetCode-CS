@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner;
 /// </summary>
 public interface IMinimumObstacleRemovalToReachCorner
 {
+    /// <summary>
+    ///     Determines the minimum number of obstacles that must be removed from <paramref name="grid" /> to travel
+    ///     from the top-left cell to the bottom-right cell.
+    /// </summary>
+    /// <param name="grid">The grid where each cell is either 0 (empty) or 1 (obstacle).</param>
+    /// <returns>The minimum number of obstacles to remove to reach the bottom-right corner.</returns>
     int MinimumObstacles(int[][] grid);
 }

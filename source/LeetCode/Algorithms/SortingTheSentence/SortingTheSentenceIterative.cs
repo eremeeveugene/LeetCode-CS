@@ -14,14 +14,13 @@ namespace LeetCode.Algorithms.SortingTheSentence;
 /// <inheritdoc />
 public sealed class SortingTheSentenceIterative : ISortingTheSentence
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m * l), where n is the length of the input string, m is the number of words, and l is
     ///     the average length of these words. Since n is essentially m * l (each character in the input string is part
     ///     of a word), the time complexity simplifies to O(n)
     ///     Space complexity - O(m), where m is the number of words
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string SortSentence(string s)
     {
         var wordsWithIndexes = s.Split(' ');

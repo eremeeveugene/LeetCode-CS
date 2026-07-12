@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.GenerateTagForVideoCaption;
 /// <inheritdoc />
 public sealed class GenerateTagForVideoCaptionCharArray : IGenerateTagForVideoCaption
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="caption"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string GenerateTag(string caption)
     {
         if (string.IsNullOrWhiteSpace(caption))

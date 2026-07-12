@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountingBits;
 /// <inheritdoc />
 public sealed class CountingBitsDynamicProgramming : ICountingBits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] CountBits(int n)
     {
         var result = new int[n + 1];

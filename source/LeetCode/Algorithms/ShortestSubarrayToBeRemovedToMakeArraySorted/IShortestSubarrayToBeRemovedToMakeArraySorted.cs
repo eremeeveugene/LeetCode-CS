@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ShortestSubarrayToBeRemovedToMakeArraySorted;
 /// </summary>
 public interface IShortestSubarrayToBeRemovedToMakeArraySorted
 {
+    /// <summary>
+    ///     Finds the length of the shortest contiguous subarray of <paramref name="arr" /> that can be removed
+    ///     so that the remaining elements are sorted in non-decreasing order.
+    /// </summary>
+    /// <param name="arr">The array of integers to process.</param>
+    /// <returns>The length of the shortest subarray whose removal leaves <paramref name="arr" /> sorted.</returns>
     int FindLengthOfShortestSubarray(int[] arr);
 }

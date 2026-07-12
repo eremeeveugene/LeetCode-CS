@@ -20,10 +20,13 @@ public sealed class DesignBrowserHistoryArray : IDesignBrowserHistory
     private int _last;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="DesignBrowserHistoryArray" /> class.
+    /// </summary>
+    /// <param name="homepage">The homepage of the browser.</param>
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="homepage"></param>
+    /// </remarks>
     public DesignBrowserHistoryArray(string homepage)
     {
         _history = new string[Capacity];
@@ -32,11 +35,11 @@ public sealed class DesignBrowserHistoryArray : IDesignBrowserHistory
         _last = 0;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="url"></param>
+    /// </remarks>
     public void Visit(string url)
     {
         _current++;
@@ -46,12 +49,11 @@ public sealed class DesignBrowserHistoryArray : IDesignBrowserHistory
         _last = _current;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="steps"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string Back(int steps)
     {
         _current = Math.Max(0, _current - steps);
@@ -59,12 +61,11 @@ public sealed class DesignBrowserHistoryArray : IDesignBrowserHistory
         return _history[_current];
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="steps"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string Forward(int steps)
     {
         _current = Math.Min(_last, _current + steps);

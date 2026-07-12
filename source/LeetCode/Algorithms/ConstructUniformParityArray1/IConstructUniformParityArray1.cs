@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.ConstructUniformParityArray1;
 /// </summary>
 public interface IConstructUniformParityArray1
 {
+    /// <summary>
+    ///     Determines whether <paramref name="nums1" /> can be rearranged so that all its elements have the same parity.
+    /// </summary>
+    /// <param name="nums1">The array of integers to check.</param>
+    /// <returns><see langword="true" /> if all elements share the same parity; otherwise, <see langword="false" />.</returns>
     bool UniformArray(int[] nums1);
 }

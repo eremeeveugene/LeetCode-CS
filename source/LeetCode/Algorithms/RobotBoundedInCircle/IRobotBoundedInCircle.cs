@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.RobotBoundedInCircle;
 /// </summary>
 public interface IRobotBoundedInCircle
 {
+    /// <summary>
+    ///     Determines whether a robot repeatedly executing the movement <paramref name="instructions" /> on an infinite
+    ///     plane stays confined within a bounded circle.
+    /// </summary>
+    /// <param name="instructions">The sequence of movement instructions ('G', 'L', or 'R') executed repeatedly.</param>
+    /// <returns><see langword="true" /> if the robot's path is bounded in a circle; otherwise, <see langword="false" />.</returns>
     bool IsRobotBounded(string instructions);
 }

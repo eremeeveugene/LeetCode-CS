@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SortArrayByIncreasingFrequency;
 /// <inheritdoc />
 public sealed class SortArrayByIncreasingFrequencyLinq : ISortArrayByIncreasingFrequency
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] FrequencySort(int[] nums)
     {
         return nums.GroupBy(v => v).OrderBy(g => g.Count()).ThenByDescending(g => g.Key).SelectMany(g => g).ToArray();

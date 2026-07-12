@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.CheckIfGridCanBeCutIntoSections;
 /// </summary>
 public interface ICheckIfGridCanBeCutIntoSections
 {
+    /// <summary>
+    ///     Determines whether an <paramref name="n" /> x <paramref name="n" /> grid can be cut by two horizontal or two
+    ///     vertical lines into three sections such that each of the <paramref name="rectangles" /> lies entirely within one
+    ///     section and every section contains at least one rectangle.
+    /// </summary>
+    /// <param name="n">The size of the grid.</param>
+    /// <param name="rectangles">The rectangles given as [startX, startY, endX, endY] coordinates.</param>
+    /// <returns><c>true</c> if two such valid cuts can be made; otherwise, <c>false</c>.</returns>
     bool CheckValidCuts(int n, int[][] rectangles);
 }

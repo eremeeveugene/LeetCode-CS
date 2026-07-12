@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountNumberOfMaximumBitwiseORSubsets;
 /// <inheritdoc />
 public sealed class CountNumberOfMaximumBitwiseORSubsetsBacktracking : ICountNumberOfMaximumBitwiseORSubsets
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(2^n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountMaxOrSubsets(int[] nums)
     {
         var maxOr = 0;

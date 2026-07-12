@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.IsomorphicStrings;
 /// <inheritdoc />
 public sealed class IsomorphicStringsTwoDictionaries : IIsomorphicStrings
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="t"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsIsomorphic(string s, string t)
     {
         var sDictionary = new Dictionary<char, char>();

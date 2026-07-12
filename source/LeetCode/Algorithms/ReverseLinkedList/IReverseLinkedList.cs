@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.ReverseLinkedList;
 /// </summary>
 public interface IReverseLinkedList
 {
+    /// <summary>
+    ///     Reverses the linked list starting at <paramref name="head" />.
+    /// </summary>
+    /// <param name="head">The head of the linked list to reverse.</param>
+    /// <returns>The head of the reversed linked list.</returns>
     ListNode? ReverseList(ListNode? head);
 }

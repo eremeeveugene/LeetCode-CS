@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.PassThePillow;
 /// <inheritdoc />
 public sealed class PassThePillowSimulation : IPassThePillow
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="time"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int PassThePillow(int n, int time)
     {
         var currentPerson = 1;

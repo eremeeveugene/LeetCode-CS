@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.SetMatrixZeroes;
 /// </summary>
 public interface ISetMatrixZeroes
 {
+    /// <summary>
+    ///     Sets the entire row and column of <paramref name="matrix" /> to 0 for every cell that originally
+    ///     contains 0, modifying the matrix in place.
+    /// </summary>
+    /// <param name="matrix">The matrix to modify in place.</param>
     void SetZeroes(int[][] matrix);
 }

@@ -16,13 +16,11 @@ public sealed class NumberOfSubsequencesThatSatisfyTheGivenSumConditionSortingTw
 {
     private const int Modulo = 1_000_000_007;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumSubseq(int[] nums, int target)
     {
         Array.Sort(nums);

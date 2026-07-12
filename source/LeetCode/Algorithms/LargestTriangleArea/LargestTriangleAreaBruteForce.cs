@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LargestTriangleArea;
 /// <inheritdoc />
 public sealed class LargestTriangleAreaBruteForce : ILargestTriangleArea
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^3)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="points"></param>
-    /// <returns></returns>
+    /// </remarks>
     public double LargestTriangleArea(int[][] points)
     {
         var maxArea = 0.0;

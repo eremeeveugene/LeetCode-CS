@@ -14,15 +14,11 @@ namespace LeetCode.Algorithms.RescheduleMeetingsForMaximumFreeTime1;
 /// <inheritdoc />
 public sealed class RescheduleMeetingsForMaximumFreeTime1Greedy : IRescheduleMeetingsForMaximumFreeTime1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="eventTime"></param>
-    /// <param name="k"></param>
-    /// <param name="startTime"></param>
-    /// <param name="endTime"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxFreeTime(int eventTime, int k, int[] startTime, int[] endTime)
     {
         var maxFreeTime = 0;

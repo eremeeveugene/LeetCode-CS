@@ -16,12 +16,11 @@ public sealed class FindMinimumTimeToReachLastRoom2PriorityQueue : IFindMinimumT
 {
     private static readonly (int X, int Y)[] Directions = [(1, 0), (-1, 0), (0, 1), (0, -1)];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m * log(n * m))
     ///     Space complexity - O(n * m)
-    /// </summary>
-    /// <param name="moveTime"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinTimeToReach(int[][] moveTime)
     {
         var n = moveTime.Length;

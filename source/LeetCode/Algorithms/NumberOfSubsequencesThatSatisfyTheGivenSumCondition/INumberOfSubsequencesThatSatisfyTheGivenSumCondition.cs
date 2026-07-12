@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.NumberOfSubsequencesThatSatisfyTheGivenSumConditio
 /// </summary>
 public interface INumberOfSubsequencesThatSatisfyTheGivenSumCondition
 {
+    /// <summary>
+    ///     Counts the number of non-empty subsequences of <paramref name="nums" /> in which the sum of the minimum
+    ///     and maximum elements is less than or equal to <paramref name="target" />.
+    /// </summary>
+    /// <param name="nums">The array of integers to search for qualifying subsequences.</param>
+    /// <param name="target">The maximum allowed sum of the minimum and maximum elements of a subsequence.</param>
+    /// <returns>The number of qualifying subsequences, modulo 10^9 + 7.</returns>
     int NumSubseq(int[] nums, int target);
 }

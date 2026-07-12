@@ -31,12 +31,11 @@ public sealed class RomanToIntegerDictionary : IRomanToInteger
         { "M", 1000 }
     };
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="romanString"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int RomanToInt(string romanString)
     {
         var result = 0;

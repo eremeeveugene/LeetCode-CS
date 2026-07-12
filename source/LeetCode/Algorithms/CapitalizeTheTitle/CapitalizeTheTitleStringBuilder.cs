@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.CapitalizeTheTitle;
 /// <inheritdoc />
 public sealed class CapitalizeTheTitleStringBuilder : ICapitalizeTheTitle
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="title"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string CapitalizeTitle(string title)
     {
         var resultStringBuilder = new StringBuilder();

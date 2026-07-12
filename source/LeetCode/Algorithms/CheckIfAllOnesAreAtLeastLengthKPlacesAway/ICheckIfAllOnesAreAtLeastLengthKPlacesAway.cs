@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CheckIfAllOnesAreAtLeastLengthKPlacesAway;
 /// </summary>
 public interface ICheckIfAllOnesAreAtLeastLengthKPlacesAway
 {
+    /// <summary>
+    ///     Determines whether all ones in <paramref name="nums" /> are at least <paramref name="k" /> places away from each
+    ///     other.
+    /// </summary>
+    /// <param name="nums">The binary array of zeros and ones.</param>
+    /// <param name="k">The minimum required distance between any two ones.</param>
+    /// <returns><c>true</c> if all ones are at least <paramref name="k" /> places away from each other; otherwise, <c>false</c>.</returns>
     bool KLengthApart(int[] nums, int k);
 }

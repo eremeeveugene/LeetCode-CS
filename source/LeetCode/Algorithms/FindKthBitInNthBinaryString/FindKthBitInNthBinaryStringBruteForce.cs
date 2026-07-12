@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.FindKthBitInNthBinaryString;
 /// <inheritdoc />
 public sealed class FindKthBitInNthBinaryStringBruteForce : IFindKthBitInNthBinaryString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(2^n)
     ///     Space complexity - O(2^n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public char FindKthBit(int n, int k)
     {
         var s = "0";

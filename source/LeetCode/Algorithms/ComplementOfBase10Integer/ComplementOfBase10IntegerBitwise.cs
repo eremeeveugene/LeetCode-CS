@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ComplementOfBase10Integer;
 /// <inheritdoc />
 public sealed class ComplementOfBase10IntegerBitwise : IComplementOfBase10Integer
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int BitwiseComplement(int n)
     {
         var bitLengthLog = Math.Log(n, 2);

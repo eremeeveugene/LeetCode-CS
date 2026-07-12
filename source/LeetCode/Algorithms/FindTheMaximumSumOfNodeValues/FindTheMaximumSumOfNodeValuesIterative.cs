@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.FindTheMaximumSumOfNodeValues;
 /// <inheritdoc />
 public sealed class FindTheMaximumSumOfNodeValuesIterative : IFindTheMaximumSumOfNodeValues
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <param name="edges"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long MaximumValueSum(int[] nums, int k, int[][] edges)
     {
         long sum = 0;

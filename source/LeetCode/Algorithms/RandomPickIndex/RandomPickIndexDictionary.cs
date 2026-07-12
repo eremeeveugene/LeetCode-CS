@@ -18,10 +18,13 @@ public sealed class RandomPickIndexDictionary : IRandomPickIndex
     private readonly Dictionary<int, List<int>> _numToIndicesDictionary = [];
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="RandomPickIndexDictionary" /> class.
+    /// </summary>
+    /// <param name="nums">The array of integers to pick indices from.</param>
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
+    /// </remarks>
     public RandomPickIndexDictionary(int[] nums)
     {
         for (var i = 0; i < nums.Length; i++)
@@ -39,12 +42,11 @@ public sealed class RandomPickIndexDictionary : IRandomPickIndex
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Pick(int target)
     {
         var indices = _numToIndicesDictionary[target];

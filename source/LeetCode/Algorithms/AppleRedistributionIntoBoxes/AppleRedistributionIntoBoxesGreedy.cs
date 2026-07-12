@@ -16,13 +16,11 @@ public sealed class AppleRedistributionIntoBoxesGreedy : IAppleRedistributionInt
 {
     private const int MaxSize = 50;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="apples"></param>
-    /// <param name="capacities"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumBoxes(int[] apples, int[] capacities)
     {
         var applesCount = 0;

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.StrangePrinter;
 /// </summary>
 public interface IStrangePrinter
 {
+    /// <summary>
+    ///     Computes the minimum number of turns a printer that prints a contiguous sequence of the same
+    ///     character, possibly overlapping previously printed characters, needs to print <paramref name="s" />.
+    /// </summary>
+    /// <param name="s">The string to print.</param>
+    /// <returns>The minimum number of turns needed to print <paramref name="s" />.</returns>
     int StrangePrinter(string s);
 }

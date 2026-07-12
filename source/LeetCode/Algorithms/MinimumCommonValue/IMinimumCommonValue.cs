@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimumCommonValue;
 /// </summary>
 public interface IMinimumCommonValue
 {
+    /// <summary>
+    ///     Finds the minimum integer that is common to both sorted arrays <paramref name="nums1" /> and
+    ///     <paramref name="nums2" />.
+    /// </summary>
+    /// <param name="nums1">The first sorted array.</param>
+    /// <param name="nums2">The second sorted array.</param>
+    /// <returns>The smallest value present in both arrays, or -1 if there is no common value.</returns>
     int GetCommon(int[] nums1, int[] nums2);
 }

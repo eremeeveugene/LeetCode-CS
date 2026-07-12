@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindTheNumberOfDistinctColorsAmongTheBalls;
 /// </summary>
 public interface IFindTheNumberOfDistinctColorsAmongTheBalls
 {
+    /// <summary>
+    ///     Processes <paramref name="queries" /> in order, assigning a color to a ball, and after each query records the number of distinct colors currently used among all colored balls in the range <c>[0, limit]</c>.
+    /// </summary>
+    /// <param name="limit">The maximum ball index, defining the range <c>[0, limit]</c>.</param>
+    /// <param name="queries">The array of queries, each specifying a ball index and the color to assign to it.</param>
+    /// <returns>An array where each element is the number of distinct colors after the corresponding query.</returns>
     int[] QueryResults(int limit, int[][] queries);
 }

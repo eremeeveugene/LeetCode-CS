@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.ReverseWordsInString3;
 /// <inheritdoc />
 public sealed class ReverseWordsInString3WithStringBuilder : IReverseWordsInString3
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string ReverseWords(string s)
     {
         var words = s.Split(' ');

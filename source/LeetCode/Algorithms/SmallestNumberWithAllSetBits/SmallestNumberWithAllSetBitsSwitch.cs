@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SmallestNumberWithAllSetBits;
 /// <inheritdoc />
 public sealed class SmallestNumberWithAllSetBitsSwitch : ISmallestNumberWithAllSetBits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SmallestNumber(int n)
     {
         return n switch

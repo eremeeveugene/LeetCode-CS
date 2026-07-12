@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.AdjacentIncreasingSubarraysDetection1;
 /// </summary>
 public interface IAdjacentIncreasingSubarraysDetection1
 {
+    /// <summary>
+    ///     Determines whether <paramref name="nums" /> contains two adjacent strictly increasing subarrays, each of length
+    ///     <paramref name="k" />.
+    /// </summary>
+    /// <param name="nums">The list of integers.</param>
+    /// <param name="k">The required length of each subarray.</param>
+    /// <returns><c>true</c> if two adjacent strictly increasing subarrays of length <paramref name="k" /> exist; otherwise, <c>false</c>.</returns>
     bool HasIncreasingSubarrays(IList<int> nums, int k);
 }

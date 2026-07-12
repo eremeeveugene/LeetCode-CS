@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.DefangingAnIPAddress;
 /// </summary>
 public interface IDefangingAnIPAddress
 {
+    /// <summary>
+    ///     Returns a defanged version of <paramref name="address" /> in which every period "." is replaced with "[.]".
+    /// </summary>
+    /// <param name="address">The valid IPv4 address to defang.</param>
+    /// <returns>The defanged IP address.</returns>
     string DefangIPaddr(string address);
 }

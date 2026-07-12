@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.MergeNodesInBetweenZeros;
 /// <inheritdoc />
 public sealed class MergeNodesInBetweenZerosRecursive : IMergeNodesInBetweenZeros
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="head"></param>
-    /// <returns></returns>
+    /// </remarks>
     public ListNode? MergeNodes(ListNode? head)
     {
         if (head == null)

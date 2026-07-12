@@ -24,11 +24,11 @@ public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
         _tailNode.PreviousNode = _headNode;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="key"></param>
+    /// </remarks>
     public void Inc(string key)
     {
         if (_keyNodeDictionary.TryGetValue(key, out var currentNode))
@@ -70,11 +70,11 @@ public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="key"></param>
+    /// </remarks>
     public void Dec(string key)
     {
         if (!_keyNodeDictionary.TryGetValue(key, out var currentNode))
@@ -115,11 +115,11 @@ public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public string GetMaxKey()
     {
         if (_tailNode.PreviousNode == null)
@@ -130,11 +130,11 @@ public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
         return _tailNode.PreviousNode == _headNode ? string.Empty : GetFirstKey(_tailNode.PreviousNode);
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public string GetMinKey()
     {
         if (_headNode.NextNode == null)

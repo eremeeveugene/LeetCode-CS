@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.AddTwoIntegers;
 /// <inheritdoc />
 public sealed class AddTwoIntegersMath : IAddTwoIntegers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num1"></param>
-    /// <param name="num2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Sum(int num1, int num2)
     {
         return num1 + num2;

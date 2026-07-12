@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumBitFlipsToConvertNumber;
 /// <inheritdoc />
 public sealed class MinimumBitFlipsToConvertNumberBitwise : IMinimumBitFlipsToConvertNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(b), where b is the number of bits in start and goal
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="start"></param>
-    /// <param name="goal"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinBitFlips(int start, int goal)
     {
         var xor = start ^ goal;

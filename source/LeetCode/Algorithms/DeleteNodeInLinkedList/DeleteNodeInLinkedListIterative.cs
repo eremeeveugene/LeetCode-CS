@@ -16,11 +16,11 @@ namespace LeetCode.Algorithms.DeleteNodeInLinkedList;
 /// <inheritdoc />
 public sealed class DeleteNodeInLinkedListIterative : IDeleteNodeInLinkedList
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="node"></param>
+    /// </remarks>
     public void DeleteNode(ListNode? node)
     {
         while (node is { next: not null })

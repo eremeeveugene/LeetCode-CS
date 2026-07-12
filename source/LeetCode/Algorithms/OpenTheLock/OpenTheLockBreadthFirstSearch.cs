@@ -16,13 +16,11 @@ public sealed class OpenTheLockBreadthFirstSearch : IOpenTheLock
 {
     private const string Start = "0000";
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="deadends"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int OpenLock(string[] deadends, string target)
     {
         var deadendsHashSet = new HashSet<string>(deadends);

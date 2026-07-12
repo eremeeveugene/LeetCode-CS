@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.TheTwoSneakyNumbersOfDigitville;
 /// <inheritdoc />
 public sealed class TheTwoSneakyNumbersOfDigitvilleHashSet : ITheTwoSneakyNumbersOfDigitville
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] GetSneakyNumbers(int[] nums)
     {
         var result = new int[2];

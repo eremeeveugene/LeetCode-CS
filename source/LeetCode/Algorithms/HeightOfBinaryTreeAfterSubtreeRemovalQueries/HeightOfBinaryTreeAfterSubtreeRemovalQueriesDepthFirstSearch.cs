@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries;
 /// <inheritdoc />
 public sealed class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch : IHeightOfBinaryTreeAfterSubtreeRemovalQueries
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m), where n is the number of nodes and m is the number of queries
     ///     Space complexity - O(n), where n is the number of nodes
-    /// </summary>
-    /// <param name="root"></param>
-    /// <param name="queries"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] TreeQueries(TreeNode root, int[] queries)
     {
         var nodesCount = GetNodesCount(root);
@@ -37,11 +35,15 @@ public sealed class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch
     }
 
     /// <summary>
+    ///     Traverses the tree left to right, recording for each node the maximum height of the tree using only nodes
+    ///     visited before it.
+    /// </summary>
+    /// <param name="root">The root of the binary tree.</param>
+    /// <param name="heights">The span, indexed by node value, that accumulates the heights.</param>
+    /// <remarks>
     ///     Time complexity - O(n), where n is the number of nodes
     ///     Space complexity - O(n), where n is the number of nodes
-    /// </summary>
-    /// <param name="root"></param>
-    /// <param name="heights"></param>
+    /// </remarks>
     private static void LeftToRight(TreeNode root, Span<int> heights)
     {
         var maxHeight = 0;
@@ -79,11 +81,15 @@ public sealed class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch
     }
 
     /// <summary>
+    ///     Traverses the tree right to left, recording for each node the maximum height of the tree using only nodes
+    ///     visited before it.
+    /// </summary>
+    /// <param name="root">The root of the binary tree.</param>
+    /// <param name="heights">The span, indexed by node value, that accumulates the heights.</param>
+    /// <remarks>
     ///     Time complexity - O(n), where n is the number of nodes
     ///     Space complexity - O(n), where n is the number of nodes
-    /// </summary>
-    /// <param name="root"></param>
-    /// <param name="heights"></param>
+    /// </remarks>
     private static void RightToLeft(TreeNode root, Span<int> heights)
     {
         var maxHeight = 0;
@@ -121,11 +127,14 @@ public sealed class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch
     }
 
     /// <summary>
+    ///     Counts the nodes of the tree rooted at <paramref name="root" /> using Morris traversal.
+    /// </summary>
+    /// <param name="root">The root of the binary tree.</param>
+    /// <returns>The number of nodes in the tree.</returns>
+    /// <remarks>
     ///     Time complexity - O(n), where n is the number of nodes
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     private static int GetNodesCount(TreeNode? root)
     {
         var nodesCount = 0;
@@ -170,12 +179,15 @@ public sealed class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch
     }
 
     /// <summary>
+    ///     Replaces each query with the precomputed height of the tree after removing the queried subtree.
+    /// </summary>
+    /// <param name="queries">The queried node values, overwritten in place with the answers.</param>
+    /// <param name="heights">The precomputed heights, indexed by node value.</param>
+    /// <returns>The array of answers to the queries.</returns>
+    /// <remarks>
     ///     Time complexity - O(m), where m is the number of queries
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="queries"></param>
-    /// <param name="heights"></param>
-    /// <returns></returns>
+    /// </remarks>
     private static int[] GetAnswer(int[] queries, ReadOnlySpan<int> heights)
     {
         var queriesLength = queries.Length;

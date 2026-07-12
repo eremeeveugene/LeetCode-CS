@@ -11,12 +11,14 @@
 
 namespace LeetCode.Algorithms.TrimTrailingVowels;
 
-/// <summary>
-///     Time complexity - O(n)
-///     Space complexity - O(1)
-/// </summary>
+/// <inheritdoc />
 public sealed class TrimTrailingVowelsIterative : ITrimTrailingVowels
 {
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(1)
+    /// </remarks>
     public string TrimTrailingVowels(string s)
     {
         var length = s.Length;

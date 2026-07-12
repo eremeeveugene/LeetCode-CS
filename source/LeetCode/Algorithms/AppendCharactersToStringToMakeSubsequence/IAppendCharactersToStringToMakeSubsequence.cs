@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.AppendCharactersToStringToMakeSubsequence;
 /// </summary>
 public interface IAppendCharactersToStringToMakeSubsequence
 {
+    /// <summary>
+    ///     Computes the minimum number of characters that must be appended to the end of <paramref name="s" /> so that
+    ///     <paramref name="t" /> becomes a subsequence of <paramref name="s" />.
+    /// </summary>
+    /// <param name="s">The string to append characters to.</param>
+    /// <param name="t">The string that must become a subsequence.</param>
+    /// <returns>The minimum number of characters to append to <paramref name="s" />.</returns>
     int AppendCharacters(string s, string t);
 }

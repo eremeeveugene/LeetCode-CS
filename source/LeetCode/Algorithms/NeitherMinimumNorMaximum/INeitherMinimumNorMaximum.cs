@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.NeitherMinimumNorMaximum;
 /// </summary>
 public interface INeitherMinimumNorMaximum
 {
+    /// <summary>
+    ///     Finds any value in <paramref name="nums" /> that is neither the minimum nor the maximum value in the
+    ///     array.
+    /// </summary>
+    /// <param name="nums">The array of integers to search.</param>
+    /// <returns>A value from <paramref name="nums" /> that is neither the minimum nor the maximum, or -1 if no such value exists.</returns>
     int FindNonMinOrMax(int[] nums);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MonotonicArray;
 /// </summary>
 public interface IMonotonicArray
 {
+    /// <summary>
+    ///     Determines whether <paramref name="nums" /> is monotonic, meaning it is either entirely non-increasing or
+    ///     entirely non-decreasing.
+    /// </summary>
+    /// <param name="nums">The array of integers to check for monotonicity.</param>
+    /// <returns><see langword="true" /> if <paramref name="nums" /> is monotonic; otherwise, <see langword="false" />.</returns>
     bool IsMonotonic(int[] nums);
 }

@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.SumRootToLeafNumbers;
 /// </summary>
 public interface ISumRootToLeafNumbers
 {
+    /// <summary>
+    ///     Interprets each root-to-leaf path in the binary tree rooted at <paramref name="root" /> as a decimal
+    ///     number formed by concatenating the digits along the path and sums all such numbers.
+    /// </summary>
+    /// <param name="root">The root of the binary tree, whose node values are digits from 0 to 9.</param>
+    /// <returns>The sum of all root-to-leaf numbers.</returns>
     int SumNumbers(TreeNode? root);
 }

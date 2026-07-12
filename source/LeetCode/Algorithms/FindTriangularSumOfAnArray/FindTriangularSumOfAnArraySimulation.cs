@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindTriangularSumOfAnArray;
 /// <inheritdoc />
 public sealed class FindTriangularSumOfAnArraySimulation : IFindTriangularSumOfAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int TriangularSum(int[] nums)
     {
         var numsLength = nums.Length;

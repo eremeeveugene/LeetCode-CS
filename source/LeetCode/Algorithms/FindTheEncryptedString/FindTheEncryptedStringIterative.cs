@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.FindTheEncryptedString;
 /// <inheritdoc />
 public sealed class FindTheEncryptedStringIterative : IFindTheEncryptedString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string GetEncryptedString(string s, int k)
     {
         var resultStringBuilder = new StringBuilder(s.Length);

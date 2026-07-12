@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.SumOfRootToLeafBinaryNumbers;
 /// <inheritdoc />
 public sealed class SumOfRootToLeafBinaryNumbersDepthFirstSearch : ISumOfRootToLeafBinaryNumbers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(h), where h is the height of the tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumRootToLeaf(TreeNode root)
     {
         return SumRootToLeaf(root, 0);

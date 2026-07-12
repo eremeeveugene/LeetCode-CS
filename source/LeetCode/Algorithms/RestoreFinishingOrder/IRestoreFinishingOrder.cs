@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.RestoreFinishingOrder;
 /// </summary>
 public interface IRestoreFinishingOrder
 {
+    /// <summary>
+    ///     Recovers the finishing order of the racers identified in <paramref name="friends" />, given the full race
+    ///     finishing order of racer IDs in <paramref name="order" />.
+    /// </summary>
+    /// <param name="order">The IDs of every racer, listed in the order they finished the race.</param>
+    /// <param name="friends">The IDs of the racers whose relative finishing order should be recovered.</param>
+    /// <returns>The IDs from <paramref name="friends" /> arranged in the order they finished the race.</returns>
     int[] RecoverOrder(int[] order, int[] friends);
 }

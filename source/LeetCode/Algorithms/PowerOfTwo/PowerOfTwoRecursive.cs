@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PowerOfTwo;
 /// <inheritdoc />
 public sealed class PowerOfTwoRecursive : IPowerOfTwo
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsPowerOfTwo(int n)
     {
         return n > 0 && GetIsPowerOfTwo(n);

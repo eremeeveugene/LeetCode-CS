@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FibonacciNumber;
 /// <inheritdoc />
 public sealed class FibonacciNumberIterative : IFibonacciNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Fib(int n)
     {
         if (n <= 1)

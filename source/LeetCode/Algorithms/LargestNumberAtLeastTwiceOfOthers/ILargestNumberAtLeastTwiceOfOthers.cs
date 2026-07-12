@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.LargestNumberAtLeastTwiceOfOthers;
 /// </summary>
 public interface ILargestNumberAtLeastTwiceOfOthers
 {
+    /// <summary>
+    ///     Determines whether the largest element of <paramref name="nums" /> is at least twice as large as every other
+    ///     element.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The index of the largest element if it is at least twice as large as every other element; otherwise, -1.</returns>
     int DominantIndex(int[] nums);
 }

@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.DiameterOfBinaryTree;
 /// </summary>
 public interface IDiameterOfBinaryTree
 {
+    /// <summary>
+    ///     Computes the diameter of the binary tree, i.e. the length of the longest path between any two nodes, measured in
+    ///     the number of edges.
+    /// </summary>
+    /// <param name="root">The root node of the binary tree.</param>
+    /// <returns>The length of the longest path between any two nodes in the tree.</returns>
     int DiameterOfBinaryTree(TreeNode? root);
 }

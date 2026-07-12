@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FindThePivotInteger;
 /// </summary>
 public interface IFindThePivotInteger
 {
+    /// <summary>
+    ///     Finds the pivot integer <c>x</c> in the range <c>[1, n]</c> such that the sum of all integers from <c>1</c> to <c>x</c> equals the sum of all integers from <c>x</c> to <paramref name="n" />.
+    /// </summary>
+    /// <param name="n">The upper bound of the range to search.</param>
+    /// <returns>The pivot integer if one exists; otherwise, <c>-1</c>.</returns>
     int PivotInteger(int n);
 }

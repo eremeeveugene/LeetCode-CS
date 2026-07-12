@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.FinalArrayStateAfterKMultiplicationOperations;
 /// <inheritdoc />
 public sealed class FinalArrayStateAfterKMultiplicationOperationsGreedy : IFinalArrayStateAfterKMultiplicationOperations
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * k)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <param name="multiplier"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] GetFinalState(int[] nums, int k, int multiplier)
     {
         for (var i = 0; i < k; i++)

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberAfterDoubleReversal;
 /// <inheritdoc />
 public sealed class NumberAfterDoubleReversalMath : INumberAfterDoubleReversal
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsSameAfterReversals(int num)
     {
         if (num == 0)

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SpiralMatrix;
 /// <inheritdoc />
 public sealed class SpiralMatrixSimulation : ISpiralMatrix
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(n * m)
-    /// </summary>
-    /// <param name="matrix"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> SpiralOrder(int[][] matrix)
     {
         var rows = matrix.Length;

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ConstructTheMinimumBitwiseArray1;
 /// <inheritdoc />
 public sealed class ConstructTheMinimumBitwiseArray1BruteForce : IConstructTheMinimumBitwiseArray1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] MinBitwiseArray(IList<int> nums)
     {
         var n = nums.Count;

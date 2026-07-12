@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumWidthRamp;
 /// </summary>
 public interface IMaximumWidthRamp
 {
+    /// <summary>
+    ///     Finds the maximum width of a ramp in <paramref name="nums" />, defined as a pair of indices
+    ///     <c>i &lt; j</c> such that <c>nums[i] &lt;= nums[j]</c>.
+    /// </summary>
+    /// <param name="nums">The array of integers to search.</param>
+    /// <returns>The maximum width of a ramp, or 0 if no ramp exists.</returns>
     int MaxWidthRamp(int[] nums);
 }

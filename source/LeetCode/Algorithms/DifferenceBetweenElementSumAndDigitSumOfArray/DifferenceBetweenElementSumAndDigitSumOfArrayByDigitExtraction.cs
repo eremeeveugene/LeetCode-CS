@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray;
 /// <inheritdoc />
 public sealed class DifferenceBetweenElementSumAndDigitSumOfArrayByDigitExtraction : IDifferenceBetweenElementSumAndDigitSumOfArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * d)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int DifferenceOfSum(int[] nums)
     {
         var absoluteSum = 0;

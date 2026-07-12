@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.SearchInsertPosition;
 /// <inheritdoc />
 public sealed class SearchInsertPositionIterative : ISearchInsertPosition
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SearchInsert(int[] nums, int target)
     {
         return nums.TakeWhile(t => t < target).Count();

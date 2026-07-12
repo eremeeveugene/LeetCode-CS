@@ -16,5 +16,15 @@ namespace LeetCode.Algorithms.SpiralMatrix3;
 /// </summary>
 public interface ISpiralMatrix3
 {
+    /// <summary>
+    ///     Visits every cell of a <paramref name="rows" /> by <paramref name="cols" /> grid in a clockwise
+    ///     spiral, starting at (<paramref name="rStart" />, <paramref name="cStart" />) and continuing outward
+    ///     even beyond the grid boundaries until all cells within it are visited.
+    /// </summary>
+    /// <param name="rows">The number of rows in the grid.</param>
+    /// <param name="cols">The number of columns in the grid.</param>
+    /// <param name="rStart">The row index at which the spiral begins.</param>
+    /// <param name="cStart">The column index at which the spiral begins.</param>
+    /// <returns>An array of [row, column] coordinates in the order they are visited by the spiral.</returns>
     int[][] SpiralMatrixIII(int rows, int cols, int rStart, int cStart);
 }

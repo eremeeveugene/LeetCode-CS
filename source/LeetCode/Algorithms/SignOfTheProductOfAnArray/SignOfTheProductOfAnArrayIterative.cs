@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SignOfTheProductOfAnArray;
 /// <inheritdoc />
 public sealed class SignOfTheProductOfAnArrayIterative : ISignOfTheProductOfAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ArraySign(int[] nums)
     {
         var sign = 1;

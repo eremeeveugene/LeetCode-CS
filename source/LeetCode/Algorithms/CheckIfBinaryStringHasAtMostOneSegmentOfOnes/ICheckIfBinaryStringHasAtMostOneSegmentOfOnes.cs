@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.CheckIfBinaryStringHasAtMostOneSegmentOfOnes;
 /// </summary>
 public interface ICheckIfBinaryStringHasAtMostOneSegmentOfOnes
 {
+    /// <summary>
+    ///     Determines whether <paramref name="s" /> contains at most one contiguous segment of ones.
+    /// </summary>
+    /// <param name="s">The binary string.</param>
+    /// <returns><c>true</c> if <paramref name="s" /> contains at most one contiguous segment of ones; otherwise, <c>false</c>.</returns>
     bool CheckOnesSegment(string s);
 }

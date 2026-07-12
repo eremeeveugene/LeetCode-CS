@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FinalPricesWithSpecialDiscountInShop;
 /// <inheritdoc />
 public sealed class FinalPricesWithSpecialDiscountInShopStack : IFinalPricesWithSpecialDiscountInShop
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="prices"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] FinalPrices(int[] prices)
     {
         var stack = new Stack<int>();

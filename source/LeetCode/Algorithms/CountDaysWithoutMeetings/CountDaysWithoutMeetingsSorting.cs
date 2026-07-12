@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CountDaysWithoutMeetings;
 /// <inheritdoc />
 public sealed class CountDaysWithoutMeetingsSorting : ICountDaysWithoutMeetings
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="days"></param>
-    /// <param name="meetings"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountDays(int days, int[][] meetings)
     {
         Array.Sort(meetings, (a, b) => a[0].CompareTo(b[0]));

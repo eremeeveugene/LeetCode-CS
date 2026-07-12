@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses;
 /// <inheritdoc />
 public sealed class MaximumNestingDepthOfTheParenthesesIterative : IMaximumNestingDepthOfTheParentheses
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxDepth(string s)
     {
         var maxDepth = 0;

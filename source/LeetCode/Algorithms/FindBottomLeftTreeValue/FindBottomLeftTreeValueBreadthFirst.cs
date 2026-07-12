@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.FindBottomLeftTreeValue;
 /// <inheritdoc />
 public sealed class FindBottomLeftTreeValueBreadthFirst : IFindBottomLeftTreeValue
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(w), where w is the maximum width of the tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindBottomLeftValue(TreeNode? root)
     {
         if (root == null)

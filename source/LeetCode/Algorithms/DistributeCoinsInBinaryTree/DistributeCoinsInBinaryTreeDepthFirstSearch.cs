@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.DistributeCoinsInBinaryTree;
 /// <inheritdoc />
 public sealed class DistributeCoinsInBinaryTreeDepthFirstSearch : IDistributeCoinsInBinaryTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n) for a skewed tree, O(log n) for a balanced tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int DistributeCoins(TreeNode? root)
     {
         if (root == null)

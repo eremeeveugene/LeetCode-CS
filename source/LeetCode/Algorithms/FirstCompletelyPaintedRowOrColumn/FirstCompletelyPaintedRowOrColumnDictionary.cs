@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FirstCompletelyPaintedRowOrColumn;
 /// <inheritdoc />
 public sealed class FirstCompletelyPaintedRowOrColumnDictionary : IFirstCompletelyPaintedRowOrColumn
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(m * n)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <param name="mat"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FirstCompleteIndex(int[] arr, int[][] mat)
     {
         var numsDictionary = new Dictionary<int, int>();

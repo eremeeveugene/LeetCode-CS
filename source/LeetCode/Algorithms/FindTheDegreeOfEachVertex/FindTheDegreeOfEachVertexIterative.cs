@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindTheDegreeOfEachVertex;
 /// <inheritdoc />
 public sealed class FindTheDegreeOfEachVertexIterative : IFindTheDegreeOfEachVertex
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="matrix"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] FindDegrees(int[][] matrix)
     {
         var n = matrix.Length;

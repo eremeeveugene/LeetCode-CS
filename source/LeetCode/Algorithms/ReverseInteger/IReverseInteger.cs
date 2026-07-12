@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.ReverseInteger;
 /// </summary>
 public interface IReverseInteger
 {
+    /// <summary>
+    ///     Reverses the digits of the signed 32-bit integer <paramref name="x" />.
+    /// </summary>
+    /// <param name="x">The signed 32-bit integer whose digits are reversed.</param>
+    /// <returns>The reversed integer, or 0 if reversing <paramref name="x" /> causes a 32-bit overflow.</returns>
     int Reverse(int x);
 }

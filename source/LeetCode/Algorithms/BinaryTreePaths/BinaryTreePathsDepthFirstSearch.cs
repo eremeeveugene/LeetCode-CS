@@ -17,12 +17,11 @@ namespace LeetCode.Algorithms.BinaryTreePaths;
 /// <inheritdoc />
 public sealed class BinaryTreePathsDepthFirstSearch : IBinaryTreePaths
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n * h)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<string> BinaryTreePaths(TreeNode? root)
     {
         var treePaths = new List<string>();

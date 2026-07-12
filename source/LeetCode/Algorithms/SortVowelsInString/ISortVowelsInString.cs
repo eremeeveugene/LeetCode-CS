@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SortVowelsInString;
 /// </summary>
 public interface ISortVowelsInString
 {
+    /// <summary>
+    ///     Rearranges the vowels of <paramref name="s" /> in non-decreasing order of their ASCII values while
+    ///     keeping all consonants in their original positions.
+    /// </summary>
+    /// <param name="s">The string whose vowels are to be sorted.</param>
+    /// <returns>The string <paramref name="s" /> with its vowels sorted in place.</returns>
     string SortVowels(string s);
 }

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.UglyNumber;
 /// <inheritdoc />
 public sealed class UglyNumberMath : IUglyNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsUgly(int n)
     {
         if (n == 0)

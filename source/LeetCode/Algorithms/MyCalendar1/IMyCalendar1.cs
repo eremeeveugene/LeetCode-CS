@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MyCalendar1;
 /// </summary>
 public interface IMyCalendar1
 {
+    /// <summary>
+    ///     Attempts to add a new event spanning the half-open interval [<paramref name="start" />,
+    ///     <paramref name="end" />) to the calendar, succeeding only if it does not overlap any existing event.
+    /// </summary>
+    /// <param name="start">The start time of the event, inclusive.</param>
+    /// <param name="end">The end time of the event, exclusive.</param>
+    /// <returns><see langword="true" /> if the event was added without conflicting with an existing event; otherwise, <see langword="false" />.</returns>
     bool Book(int start, int end);
 }

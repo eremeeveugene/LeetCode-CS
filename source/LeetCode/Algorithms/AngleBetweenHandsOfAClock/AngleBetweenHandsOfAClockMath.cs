@@ -18,13 +18,11 @@ public sealed class AngleBetweenHandsOfAClockMath : IAngleBetweenHandsOfAClock
     private const double MinutesPerHour = 60.0;
     private const double HoursPerCycle = 12.0;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="hour"></param>
-    /// <param name="minutes"></param>
-    /// <returns></returns>
+    /// </remarks>
     public double AngleClock(int hour, int minutes)
     {
         var minuteFraction = minutes / MinutesPerHour;

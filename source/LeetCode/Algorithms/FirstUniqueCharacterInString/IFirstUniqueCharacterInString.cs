@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FirstUniqueCharacterInString;
 /// </summary>
 public interface IFirstUniqueCharacterInString
 {
+    /// <summary>
+    ///     Finds the index of the first non-repeating character in <paramref name="s" />.
+    /// </summary>
+    /// <param name="s">The string to search.</param>
+    /// <returns>The index of the first non-repeating character, or -1 if every character repeats.</returns>
     int FirstUniqChar(string s);
 }

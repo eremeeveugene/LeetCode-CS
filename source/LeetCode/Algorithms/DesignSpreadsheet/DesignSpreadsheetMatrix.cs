@@ -19,21 +19,23 @@ public sealed class DesignSpreadsheetMatrix : IDesignSpreadsheet
     private readonly int[,] _spreadsheet;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="DesignSpreadsheetMatrix" /> class.
+    /// </summary>
+    /// <param name="rows">The number of rows in the spreadsheet.</param>
+    /// <remarks>
     ///     Time complexity - O(n), where n is rows
     ///     Space complexity - O(n), where n is rows
-    /// </summary>
-    /// <param name="rows"></param>
+    /// </remarks>
     public DesignSpreadsheetMatrix(int rows)
     {
         _spreadsheet = new int[rows, Columns];
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m), where m is the cell length
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="cell"></param>
-    /// <param name="value"></param>
+    /// </remarks>
     public void SetCell(string cell, int value)
     {
         var (row, column) = ParseCell(cell, 0, cell.Length);
@@ -41,22 +43,21 @@ public sealed class DesignSpreadsheetMatrix : IDesignSpreadsheet
         _spreadsheet[row, column] = value;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m), where m is the cell length
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="cell"></param>
+    /// </remarks>
     public void ResetCell(string cell)
     {
         SetCell(cell, 0);
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m), where m is the formula length
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="formula"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int GetValue(string formula)
     {
         var indexOfPlus = formula.IndexOf('+');
@@ -69,13 +70,17 @@ public sealed class DesignSpreadsheetMatrix : IDesignSpreadsheet
     }
 
     /// <summary>
+    ///     Parses the token in <paramref name="s" /> between <paramref name="start" /> and <paramref name="end" /> as
+    ///     either a number literal or a cell reference and returns its value.
+    /// </summary>
+    /// <param name="s">The string containing the token.</param>
+    /// <param name="start">The inclusive start index of the token.</param>
+    /// <param name="end">The exclusive end index of the token.</param>
+    /// <returns>The numeric value of the token.</returns>
+    /// <remarks>
     ///     Time complexity - O(m), where m is the s length
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="start"></param>
-    /// <param name="end"></param>
-    /// <returns></returns>
+    /// </remarks>
     private int ParseToken(string s, int start, int end)
     {
         if (char.IsDigit(s[start]))
@@ -89,13 +94,17 @@ public sealed class DesignSpreadsheetMatrix : IDesignSpreadsheet
     }
 
     /// <summary>
+    ///     Parses the cell reference in <paramref name="s" /> between <paramref name="start" /> and
+    ///     <paramref name="end" /> into its row and column indices.
+    /// </summary>
+    /// <param name="s">The string containing the cell reference.</param>
+    /// <param name="start">The inclusive start index of the cell reference.</param>
+    /// <param name="end">The exclusive end index of the cell reference.</param>
+    /// <returns>The zero-based row and column indices of the cell.</returns>
+    /// <remarks>
     ///     Time complexity - O(m), where m is the length of the s string
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="start"></param>
-    /// <param name="end"></param>
-    /// <returns></returns>
+    /// </remarks>
     private static (int Row, int Column) ParseCell(string s, int start, int end)
     {
         var column = s[start] - 'A';
@@ -106,13 +115,17 @@ public sealed class DesignSpreadsheetMatrix : IDesignSpreadsheet
     }
 
     /// <summary>
+    ///     Parses the digits in <paramref name="s" /> between <paramref name="start" /> and <paramref name="end" /> as a
+    ///     non-negative integer.
+    /// </summary>
+    /// <param name="s">The string containing the digits.</param>
+    /// <param name="start">The inclusive start index of the digits.</param>
+    /// <param name="end">The exclusive end index of the digits.</param>
+    /// <returns>The parsed integer value.</returns>
+    /// <remarks>
     ///     Time complexity - O(m), where m is the s length
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="start"></param>
-    /// <param name="end"></param>
-    /// <returns></returns>
+    /// </remarks>
     private static int ParseValue(string s, int start, int end)
     {
         var value = 0;

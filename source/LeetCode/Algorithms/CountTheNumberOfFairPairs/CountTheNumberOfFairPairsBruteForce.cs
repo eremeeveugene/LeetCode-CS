@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.CountTheNumberOfFairPairs;
 /// <inheritdoc />
 public sealed class CountTheNumberOfFairPairsBruteForce : ICountTheNumberOfFairPairs
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="lower"></param>
-    /// <param name="upper"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long CountFairPairs(int[] nums, int lower, int upper)
     {
         var count = 0;

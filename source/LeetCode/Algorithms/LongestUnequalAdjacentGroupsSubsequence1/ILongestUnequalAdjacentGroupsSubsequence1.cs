@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.LongestUnequalAdjacentGroupsSubsequence1;
 /// </summary>
 public interface ILongestUnequalAdjacentGroupsSubsequence1
 {
+    /// <summary>
+    ///     Finds the longest subsequence of <paramref name="words" /> such that no two adjacent chosen words have the
+    ///     same corresponding value in <paramref name="groups" />.
+    /// </summary>
+    /// <param name="words">The array of words to select a subsequence from.</param>
+    /// <param name="groups">The array of group values, where <paramref name="groups" />[i] corresponds to <paramref name="words" />[i].</param>
+    /// <returns>The longest subsequence of <paramref name="words" /> with no two adjacent elements sharing the same group.</returns>
     IList<string> GetLongestSubsequence(string[] words, int[] groups);
 }

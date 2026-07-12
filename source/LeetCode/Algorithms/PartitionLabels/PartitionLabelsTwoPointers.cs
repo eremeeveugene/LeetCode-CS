@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PartitionLabels;
 /// <inheritdoc />
 public sealed class PartitionLabelsTwoPointers : IPartitionLabels
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> PartitionLabels(string s)
     {
         var lastIndex = new int[26];

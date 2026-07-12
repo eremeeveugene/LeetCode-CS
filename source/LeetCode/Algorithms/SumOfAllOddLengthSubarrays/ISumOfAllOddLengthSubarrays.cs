@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SumOfAllOddLengthSubarrays;
 /// </summary>
 public interface ISumOfAllOddLengthSubarrays
 {
+    /// <summary>
+    ///     Computes the sum of all elements across every contiguous subarray of <paramref name="arr" /> that
+    ///     has an odd length.
+    /// </summary>
+    /// <param name="arr">The array of positive integers to process.</param>
+    /// <returns>The sum of all elements in every odd-length subarray of <paramref name="arr" />.</returns>
     int SumOddLengthSubarrays(int[] arr);
 }

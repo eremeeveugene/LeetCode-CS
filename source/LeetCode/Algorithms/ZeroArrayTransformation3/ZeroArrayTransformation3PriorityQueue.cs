@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.ZeroArrayTransformation3;
 /// <inheritdoc />
 public sealed class ZeroArrayTransformation3PriorityQueue : IZeroArrayTransformation3
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O((n + q) log q)
-    ///     sPACE complexity - O(n + q)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="queries"></param>
-    /// <returns></returns>
+    ///     Space complexity - O(n + q)
+    /// </remarks>
     public int MaxRemoval(int[] nums, int[][] queries)
     {
         Array.Sort(queries, (a, b) => a[0] - b[0]);

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes;
 /// <inheritdoc />
 public sealed class CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursive : ICountSubarraysWhereMaxElementAppearsAtLeastKTimes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n^2)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long CountSubarrays(int[] nums, int k)
     {
         var actualDuplicates = new List<List<int>>();

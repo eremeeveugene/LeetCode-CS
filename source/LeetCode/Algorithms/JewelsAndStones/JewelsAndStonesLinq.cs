@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.JewelsAndStones;
 /// <inheritdoc />
 public sealed class JewelsAndStonesLinq : IJewelsAndStones
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="jewels"></param>
-    /// <param name="stones"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumJewelsInStones(string jewels, string stones)
     {
         return stones.Count(jewels.Contains);

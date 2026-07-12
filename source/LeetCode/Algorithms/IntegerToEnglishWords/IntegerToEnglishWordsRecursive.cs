@@ -45,12 +45,11 @@ public sealed class IntegerToEnglishWordsRecursive : IIntegerToEnglishWords
 
     private static readonly string[] Thousands = ["", "Thousand", "Million", "Billion"];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log 10 num)
     ///     Space complexity - O(log 10 num)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string NumberToWords(int num)
     {
         if (num == 0)

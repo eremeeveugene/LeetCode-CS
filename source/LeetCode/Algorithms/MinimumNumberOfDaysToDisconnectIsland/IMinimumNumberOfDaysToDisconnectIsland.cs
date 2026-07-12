@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimumNumberOfDaysToDisconnectIsland;
 /// </summary>
 public interface IMinimumNumberOfDaysToDisconnectIsland
 {
+    /// <summary>
+    ///     Finds the minimum number of days needed, converting one land cell to water per day, to disconnect the
+    ///     island represented by <paramref name="grid" /> into two or more islands, or to make it disappear
+    ///     entirely.
+    /// </summary>
+    /// <param name="grid">The binary grid where 1 represents land and 0 represents water.</param>
+    /// <returns>The minimum number of days required to disconnect the island.</returns>
     int MinDays(int[][] grid);
 }

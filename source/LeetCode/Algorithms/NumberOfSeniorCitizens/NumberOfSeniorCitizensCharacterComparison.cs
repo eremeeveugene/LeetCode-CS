@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberOfSeniorCitizens;
 /// <inheritdoc />
 public sealed class NumberOfSeniorCitizensCharacterComparison : INumberOfSeniorCitizens
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="details"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountSeniors(string[] details)
     {
         return details.Count(x => x[^4] > '6' || (x[^4] == '6' && x[^3] > '0'));

@@ -18,5 +18,13 @@ namespace LeetCode.Algorithms.RangeSumOfBST;
 /// </summary>
 public interface IRangeSumOfBST
 {
+    /// <summary>
+    ///     Sums the values of all nodes in the binary search tree rooted at <paramref name="root" /> whose values fall
+    ///     between <paramref name="low" /> and <paramref name="high" />, inclusive.
+    /// </summary>
+    /// <param name="root">The root of the binary search tree.</param>
+    /// <param name="low">The lower bound of the value range, inclusive.</param>
+    /// <param name="high">The upper bound of the value range, inclusive.</param>
+    /// <returns>The sum of node values within the given range.</returns>
     int RangeSumBST(TreeNode? root, int low, int high);
 }

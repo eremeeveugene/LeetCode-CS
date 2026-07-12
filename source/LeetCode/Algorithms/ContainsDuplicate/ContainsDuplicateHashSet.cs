@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ContainsDuplicate;
 /// <inheritdoc />
 public sealed class ContainsDuplicateHashSet : IContainsDuplicate
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool ContainsDuplicate(int[] nums)
     {
         var numsHashSet = new HashSet<int>();

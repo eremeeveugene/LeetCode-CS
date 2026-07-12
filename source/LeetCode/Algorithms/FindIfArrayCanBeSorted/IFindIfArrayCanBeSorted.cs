@@ -16,5 +16,14 @@ namespace LeetCode.Algorithms.FindIfArrayCanBeSorted;
 /// </summary>
 public interface IFindIfArrayCanBeSorted
 {
+    /// <summary>
+    ///     Determines whether <paramref name="nums" /> can be sorted in non-decreasing order using any number of swaps
+    ///     of adjacent elements that have the same number of set bits.
+    /// </summary>
+    /// <param name="nums">The array of non-negative integers to check.</param>
+    /// <returns>
+    ///     <see langword="true" /> if <paramref name="nums" /> can be sorted under the given constraint; otherwise,
+    ///     <see langword="false" />.
+    /// </returns>
     bool CanSortArray(int[] nums);
 }

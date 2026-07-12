@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ButtonWithLongestPushTime;
 /// <inheritdoc />
 public sealed class ButtonWithLongestPushTimeIterative : IButtonWithLongestPushTime
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="events"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ButtonWithLongestTime(int[][] events)
     {
         var resultIndex = events[0][0];

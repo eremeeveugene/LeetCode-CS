@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindTheLexicographicallyLargestStringFromTheBox1;
 /// <inheritdoc />
 public sealed class FindTheLexicographicallyLargestStringFromTheBox1TwoPointers : IFindTheLexicographicallyLargestStringFromTheBox1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="word"></param>
-    /// <param name="numFriends"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string AnswerString(string word, int numFriends)
     {
         if (numFriends == 1)

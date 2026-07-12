@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.MinimumDominoRotationsForEqualRow;
 /// </summary>
 public interface IMinimumDominoRotationsForEqualRow
 {
+    /// <summary>
+    ///     Finds the minimum number of domino rotations, swapping the top and bottom value of a domino, needed to
+    ///     make every value in <paramref name="tops" /> the same or every value in <paramref name="bottoms" /> the
+    ///     same.
+    /// </summary>
+    /// <param name="tops">The array of top values of each domino.</param>
+    /// <param name="bottoms">The array of bottom values of each domino.</param>
+    /// <returns>The minimum number of rotations required, or -1 if it is impossible.</returns>
     int MinDominoRotations(int[] tops, int[] bottoms);
 }

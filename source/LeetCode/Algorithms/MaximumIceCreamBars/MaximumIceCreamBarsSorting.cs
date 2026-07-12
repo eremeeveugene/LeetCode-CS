@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MaximumIceCreamBars;
 /// <inheritdoc />
 public sealed class MaximumIceCreamBarsSorting : IMaximumIceCreamBars
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="costs"></param>
-    /// <param name="coins"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxIceCream(int[] costs, int coins)
     {
         var n = costs.Length;

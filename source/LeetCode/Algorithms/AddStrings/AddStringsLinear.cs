@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.AddStrings;
 /// <inheritdoc />
 public sealed class AddStringsLinear : IAddStrings
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(max(n, m))
     ///     Space complexity - O(max(n, m))
-    /// </summary>
-    /// <param name="num1"></param>
-    /// <param name="num2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string AddStrings(string num1, string num2)
     {
         var result = new char[Math.Max(num1.Length, num2.Length) + 1];

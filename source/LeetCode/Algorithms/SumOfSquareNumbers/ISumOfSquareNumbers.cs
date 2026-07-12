@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SumOfSquareNumbers;
 /// </summary>
 public interface ISumOfSquareNumbers
 {
+    /// <summary>
+    ///     Determines whether <paramref name="c" /> can be expressed as the sum of the squares of two non-negative
+    ///     integers.
+    /// </summary>
+    /// <param name="c">The target integer to test.</param>
+    /// <returns><see langword="true" /> if such a pair of integers exists; otherwise, <see langword="false" />.</returns>
     bool JudgeSquareSum(int c);
 }

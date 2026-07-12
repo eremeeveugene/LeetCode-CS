@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ConcatenationOfArray;
 /// </summary>
 public interface IConcatenationOfArray
 {
+    /// <summary>
+    ///     Builds an array of twice the length of <paramref name="nums" /> formed by concatenating <paramref name="nums" />
+    ///     with itself.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The concatenation of <paramref name="nums" /> with itself.</returns>
     int[] GetConcatenation(int[] nums);
 }

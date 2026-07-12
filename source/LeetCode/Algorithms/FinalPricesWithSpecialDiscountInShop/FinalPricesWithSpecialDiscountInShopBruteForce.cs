@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FinalPricesWithSpecialDiscountInShop;
 /// <inheritdoc />
 public sealed class FinalPricesWithSpecialDiscountInShopBruteForce : IFinalPricesWithSpecialDiscountInShop
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="prices"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] FinalPrices(int[] prices)
     {
         for (var i = 0; i < prices.Length - 1; i++)

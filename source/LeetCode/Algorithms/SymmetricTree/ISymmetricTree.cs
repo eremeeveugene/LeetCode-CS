@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.SymmetricTree;
 /// </summary>
 public interface ISymmetricTree
 {
+    /// <summary>
+    ///     Determines whether the binary tree rooted at <paramref name="root" /> is a mirror of itself around its
+    ///     center.
+    /// </summary>
+    /// <param name="root">The root of the binary tree to check.</param>
+    /// <returns><see langword="true" /> if the tree is symmetric; otherwise, <see langword="false" />.</returns>
     bool IsSymmetric(TreeNode? root);
 }

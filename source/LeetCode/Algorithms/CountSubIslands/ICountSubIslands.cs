@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CountSubIslands;
 /// </summary>
 public interface ICountSubIslands
 {
+    /// <summary>
+    ///     Counts the islands in <paramref name="grid2" /> that are sub-islands, meaning every cell of the island is
+    ///     also part of an island in <paramref name="grid1" />.
+    /// </summary>
+    /// <param name="grid1">The first binary matrix.</param>
+    /// <param name="grid2">The second binary matrix whose islands are checked.</param>
+    /// <returns>The number of islands in <paramref name="grid2" /> that are sub-islands of <paramref name="grid1" />.</returns>
     int CountSubIslands(int[][] grid1, int[][] grid2);
 }

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.BestTimeToBuyAndSellStock5;
 /// <inheritdoc />
 public sealed class BestTimeToBuyAndSellStock5DynamicProgramming : IBestTimeToBuyAndSellStock5
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * k)
     ///     Space complexity - O(k)
-    /// </summary>
-    /// <param name="prices"></param>
-    /// <param name="maxTransactions"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long MaximumProfit(int[] prices, int maxTransactions)
     {
         var days = prices.Length;

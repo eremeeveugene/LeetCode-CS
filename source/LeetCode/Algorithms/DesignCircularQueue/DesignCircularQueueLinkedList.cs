@@ -18,12 +18,11 @@ public sealed class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
     private Node? _front;
     private Node? _rear;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool EnQueue(int value)
     {
         if (IsFull())
@@ -50,11 +49,11 @@ public sealed class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
         return true;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public bool DeQueue()
     {
         if (IsEmpty())
@@ -79,11 +78,11 @@ public sealed class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
         return true;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int Front()
     {
         if (_front == null)
@@ -94,11 +93,11 @@ public sealed class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
         return _front.Value;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int Rear()
     {
         if (_rear == null)
@@ -109,21 +108,21 @@ public sealed class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
         return _rear.Value;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsEmpty()
     {
         return _count == 0;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsFull()
     {
         return _count == k;

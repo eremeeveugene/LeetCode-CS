@@ -16,11 +16,11 @@ public sealed class ImplementStackUsingQueuesOneQueue : IImplementStackUsingQueu
 {
     private readonly Queue<int> _queue = new();
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="x"></param>
+    /// </remarks>
     public void Push(int x)
     {
         var size = _queue.Count;
@@ -33,31 +33,31 @@ public sealed class ImplementStackUsingQueuesOneQueue : IImplementStackUsingQueu
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int Pop()
     {
         return _queue.Dequeue();
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int Top()
     {
         return _queue.Peek();
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public bool Empty()
     {
         return _queue.Count == 0;

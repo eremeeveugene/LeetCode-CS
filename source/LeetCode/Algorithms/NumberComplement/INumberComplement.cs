@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.NumberComplement;
 /// </summary>
 public interface INumberComplement
 {
+    /// <summary>
+    ///     Computes the complement of <paramref name="num" /> by flipping all the bits in its binary representation,
+    ///     excluding any leading zero bits.
+    /// </summary>
+    /// <param name="num">The positive integer whose complement should be computed.</param>
+    /// <returns>The complement of <paramref name="num" />.</returns>
     int FindComplement(int num);
 }

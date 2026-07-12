@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.TransformArrayToAllEqualElements;
 /// <inheritdoc />
 public sealed class TransformArrayToAllEqualElementsGreedy : ITransformArrayToAllEqualElements
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanMakeEqual(int[] nums, int k)
     {
         if (nums.Length <= 1)

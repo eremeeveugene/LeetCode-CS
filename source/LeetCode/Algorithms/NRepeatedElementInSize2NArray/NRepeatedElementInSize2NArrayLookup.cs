@@ -16,12 +16,11 @@ public sealed class NRepeatedElementInSize2NArrayLookup : INRepeatedElementInSiz
 {
     private const int MaxValue = 10_000;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int RepeatedNTimes(int[] nums)
     {
         Span<bool> numsLookup = stackalloc bool[MaxValue + 1];

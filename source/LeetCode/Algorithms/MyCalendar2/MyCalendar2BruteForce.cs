@@ -17,13 +17,11 @@ public sealed class MyCalendar2BruteForce : IMyCalendar2
     private readonly List<Item> _items = [];
     private readonly List<Item> _overlapItems = [];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="start"></param>
-    /// <param name="end"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool Book(int start, int end)
     {
         var newItem = new Item(start, end);

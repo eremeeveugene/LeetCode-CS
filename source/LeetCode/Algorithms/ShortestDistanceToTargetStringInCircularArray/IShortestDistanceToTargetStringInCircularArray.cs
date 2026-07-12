@@ -16,5 +16,14 @@ namespace LeetCode.Algorithms.ShortestDistanceToTargetStringInCircularArray;
 /// </summary>
 public interface IShortestDistanceToTargetStringInCircularArray
 {
+    /// <summary>
+    ///     Finds the shortest distance, moving in either direction around the circular array
+    ///     <paramref name="words" /> starting from <paramref name="startIndex" />, to reach any occurrence of
+    ///     <paramref name="target" />.
+    /// </summary>
+    /// <param name="words">The circular array of strings to search.</param>
+    /// <param name="target">The string to find.</param>
+    /// <param name="startIndex">The index at which to begin searching.</param>
+    /// <returns>The shortest distance to reach <paramref name="target" />, or -1 if it does not occur in <paramref name="words" />.</returns>
     int ClosestTarget(string[] words, string target, int startIndex);
 }

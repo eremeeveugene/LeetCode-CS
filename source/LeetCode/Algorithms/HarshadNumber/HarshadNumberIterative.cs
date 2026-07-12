@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.HarshadNumber;
 /// <inheritdoc />
 public sealed class HarshadNumberIterative : IHarshadNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="x"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumOfTheDigitsOfHarshadNumber(int x)
     {
         var sum = 0;

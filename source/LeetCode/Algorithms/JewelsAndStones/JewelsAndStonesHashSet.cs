@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.JewelsAndStones;
 /// <inheritdoc />
 public sealed class JewelsAndStonesHashSet : IJewelsAndStones
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m), where m is the length of the jewels string and n is the length of the stones string
     ///     Space complexity - O(m), where m is the length of the jewels string
-    /// </summary>
-    /// <param name="jewels"></param>
-    /// <param name="stones"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumJewelsInStones(string jewels, string stones)
     {
         var jewelsSet = new HashSet<char>(jewels);

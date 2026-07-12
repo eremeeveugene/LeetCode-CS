@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FractionAdditionAndSubtraction;
 /// <inheritdoc />
 public sealed class FractionAdditionAndSubtractionSimulation : IFractionAdditionAndSubtraction
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="expression"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string FractionAddition(string expression)
     {
         var numerator = 0;

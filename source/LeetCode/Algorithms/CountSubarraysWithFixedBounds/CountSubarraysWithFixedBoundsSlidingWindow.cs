@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.CountSubarraysWithFixedBounds;
 /// <inheritdoc />
 public sealed class CountSubarraysWithFixedBoundsSlidingWindow : ICountSubarraysWithFixedBounds
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="minK"></param>
-    /// <param name="maxK"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long CountSubarrays(int[] nums, int minK, int maxK)
     {
         long count = 0;

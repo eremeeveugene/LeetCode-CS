@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ValidPalindrome2;
 /// </summary>
 public interface IValidPalindrome2
 {
+    /// <summary>
+    ///     Determines whether <paramref name="s" /> can be made into a palindrome by removing at most one
+    ///     character.
+    /// </summary>
+    /// <param name="s">The string to check.</param>
+    /// <returns><see langword="true" /> if <paramref name="s" /> can become a palindrome after removing at most one character; otherwise, <see langword="false" />.</returns>
     bool ValidPalindrome(string s);
 }

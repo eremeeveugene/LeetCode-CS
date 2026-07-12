@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.ReverseString2;
 /// </summary>
 public interface IReverseString2
 {
+    /// <summary>
+    ///     Reverses the first <paramref name="k" /> characters of every consecutive block of 2 * <paramref name="k" />
+    ///     characters in <paramref name="s" />, counting from the start of the string.
+    /// </summary>
+    /// <param name="s">The string to process.</param>
+    /// <param name="k">The number of characters to reverse in each block.</param>
+    /// <returns>The resulting string after the block-wise reversal.</returns>
     string ReverseStr(string s, int k);
 }

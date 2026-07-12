@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountServersThatCommunicate;
 /// </summary>
 public interface ICountServersThatCommunicate
 {
+    /// <summary>
+    ///     Counts the servers in <paramref name="grid" /> that communicate with at least one other server on the same
+    ///     row or column.
+    /// </summary>
+    /// <param name="grid">The matrix where a value of one marks a cell containing a server.</param>
+    /// <returns>The number of servers that communicate with at least one other server.</returns>
     int CountServers(int[][] grid);
 }

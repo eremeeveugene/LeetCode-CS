@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LuckyNumbersInMatrix;
 /// <inheritdoc />
 public sealed class LuckyNumbersInMatrixBruteForce : ILuckyNumbersInMatrix
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(m * n)
-    /// </summary>
-    /// <param name="matrix"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> LuckyNumbers(int[][] matrix)
     {
         var minRowItems = matrix.Select(row => row.Min());

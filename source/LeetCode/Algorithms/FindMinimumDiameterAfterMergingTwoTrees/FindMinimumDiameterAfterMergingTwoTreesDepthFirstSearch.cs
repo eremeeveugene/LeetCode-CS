@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindMinimumDiameterAfterMergingTwoTrees;
 /// <inheritdoc />
 public sealed class FindMinimumDiameterAfterMergingTwoTreesDepthFirstSearch : IFindMinimumDiameterAfterMergingTwoTrees
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(n + m)
-    /// </summary>
-    /// <param name="edges1"></param>
-    /// <param name="edges2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumDiameterAfterMerge(int[][] edges1, int[][] edges2)
     {
         var adjList1 = BuildAdjList(edges1.Length + 1, edges1);

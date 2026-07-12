@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountCompleteSubarraysInAnArray;
 /// </summary>
 public interface ICountCompleteSubarraysInAnArray
 {
+    /// <summary>
+    ///     Counts the contiguous subarrays of <paramref name="nums" /> whose number of distinct elements equals the number
+    ///     of distinct elements in the whole array.
+    /// </summary>
+    /// <param name="nums">The array of positive integers.</param>
+    /// <returns>The number of complete subarrays.</returns>
     int CountCompleteSubarrays(int[] nums);
 }

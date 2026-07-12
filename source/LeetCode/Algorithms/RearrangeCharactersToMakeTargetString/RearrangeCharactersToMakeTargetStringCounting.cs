@@ -16,13 +16,11 @@ public sealed class RearrangeCharactersToMakeTargetStringCounting : IRearrangeCh
 {
     private const byte AlphabetLength = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int RearrangeCharacters(string s, string target)
     {
         var n = s.Length;

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.TwoSum;
 /// <inheritdoc />
 public sealed class TwoSumBruteForce : ITwoSum
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] TwoSum(int[] nums, int target)
     {
         for (var i = 0; i < nums.Length; i++)

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.TwoSum;
 /// <inheritdoc />
 public sealed class TwoSumDictionary : ITwoSum
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] TwoSum(int[] nums, int target)
     {
         var dictionary = new Dictionary<int, int>();

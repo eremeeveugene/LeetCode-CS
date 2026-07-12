@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.UglyNumber2;
 /// <inheritdoc />
 public sealed class UglyNumber2DynamicProgramming : IUglyNumber2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NthUglyNumber(int n)
     {
         var uglyNumbers = new int[n];

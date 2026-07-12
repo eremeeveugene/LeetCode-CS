@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximizeExpressionOfThreeElements;
 /// <inheritdoc />
 public sealed class MaximizeExpressionOfThreeElementsSorting : IMaximizeExpressionOfThreeElements
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaximizeExpressionOfThree(int[] nums)
     {
         Array.Sort(nums);

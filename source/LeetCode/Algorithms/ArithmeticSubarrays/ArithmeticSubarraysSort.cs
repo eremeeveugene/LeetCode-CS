@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.ArithmeticSubarrays;
 /// <inheritdoc />
 public sealed class ArithmeticSubarraysSort : IArithmeticSubarrays
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="l"></param>
-    /// <param name="r"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<bool> CheckArithmeticSubarrays(int[] nums, int[] l, int[] r)
     {
         var result = new bool[l.Length];

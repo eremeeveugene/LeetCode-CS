@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.CountSymmetricIntegers;
 /// </summary>
 public interface ICountSymmetricIntegers
 {
+    /// <summary>
+    ///     Counts the symmetric integers in the range from <paramref name="low" /> to <paramref name="high" />, where
+    ///     an integer with an even number of digits is symmetric if the sum of its first half of digits equals the sum
+    ///     of its second half.
+    /// </summary>
+    /// <param name="low">The inclusive lower bound of the range.</param>
+    /// <param name="high">The inclusive upper bound of the range.</param>
+    /// <returns>The number of symmetric integers in the range.</returns>
     int CountSymmetricIntegers(int low, int high);
 }

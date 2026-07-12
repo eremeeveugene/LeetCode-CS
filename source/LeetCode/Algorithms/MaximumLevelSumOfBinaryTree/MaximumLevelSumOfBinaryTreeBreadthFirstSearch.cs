@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.MaximumLevelSumOfBinaryTree;
 /// <inheritdoc />
 public sealed class MaximumLevelSumOfBinaryTreeBreadthFirstSearch : IMaximumLevelSumOfBinaryTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n), where n is the number of nodes in the binary tree
     ///     Space complexity - O(w), where w is the maximum width of the tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxLevelSum(TreeNode root)
     {
         var maxSum = int.MinValue;

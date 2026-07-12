@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ThreeConsecutiveOdds;
 /// <inheritdoc />
 public sealed class ThreeConsecutiveOddsCounting : IThreeConsecutiveOdds
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool ThreeConsecutiveOdds(int[] arr)
     {
         var count = 0;

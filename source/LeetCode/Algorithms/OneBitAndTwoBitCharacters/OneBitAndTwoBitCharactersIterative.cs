@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.OneBitAndTwoBitCharacters;
 /// <inheritdoc />
 public sealed class OneBitAndTwoBitCharactersIterative : IOneBitAndTwoBitCharacters
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="bits"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsOneBitCharacter(int[] bits)
     {
         var i = 0;

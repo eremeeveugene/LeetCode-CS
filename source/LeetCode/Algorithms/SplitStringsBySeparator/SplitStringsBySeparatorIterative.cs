@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.SplitStringsBySeparator;
 /// <inheritdoc />
 public sealed class SplitStringsBySeparatorIterative : ISplitStringsBySeparator
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="words"></param>
-    /// <param name="separator"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<string> SplitWordsBySeparator(IList<string> words, char separator)
     {
         var result = new List<string>();

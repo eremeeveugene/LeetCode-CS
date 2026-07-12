@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ValidParenthesisString;
 /// <inheritdoc />
 public sealed class ValidParenthesisStringIterative : IValidParenthesisString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckValidString(string s)
     {
         var minLeftCount = 0;

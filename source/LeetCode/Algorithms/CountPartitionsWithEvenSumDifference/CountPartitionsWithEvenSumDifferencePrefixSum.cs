@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountPartitionsWithEvenSumDifference;
 /// <inheritdoc />
 public sealed class CountPartitionsWithEvenSumDifferencePrefixSum : ICountPartitionsWithEvenSumDifference
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountPartitions(int[] nums)
     {
         var left = nums[0];

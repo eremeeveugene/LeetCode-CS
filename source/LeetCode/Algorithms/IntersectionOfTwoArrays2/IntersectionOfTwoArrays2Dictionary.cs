@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.IntersectionOfTwoArrays2;
 /// <inheritdoc />
 public sealed class IntersectionOfTwoArrays2Dictionary : IIntersectionOfTwoArrays2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] Intersect(int[] nums1, int[] nums2)
     {
         var nums1Dictionary = new Dictionary<int, int>();

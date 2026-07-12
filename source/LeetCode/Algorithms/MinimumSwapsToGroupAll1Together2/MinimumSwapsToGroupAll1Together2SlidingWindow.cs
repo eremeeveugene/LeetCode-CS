@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumSwapsToGroupAll1Together2;
 /// <inheritdoc />
 public sealed class MinimumSwapsToGroupAll1Together2SlidingWindow : IMinimumSwapsToGroupAll1Together2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinSwaps(int[] nums)
     {
         var totalOnes = nums.Count(num => num == 1);

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoin
 /// <inheritdoc />
 public sealed class WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescending : IWidestVerticalAreaBetweenTwoPointsContainingNoPoints
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="points"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxWidthOfVerticalArea(int[][] points)
     {
         var xValues = points.Select(p => p[0]).OrderDescending().ToArray();

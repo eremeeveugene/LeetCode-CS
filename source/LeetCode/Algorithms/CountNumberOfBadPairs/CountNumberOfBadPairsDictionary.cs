@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountNumberOfBadPairs;
 /// <inheritdoc />
 public sealed class CountNumberOfBadPairsDictionary : ICountNumberOfBadPairs
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long CountBadPairs(int[] nums)
     {
         long badPairsCount = 0;

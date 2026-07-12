@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximizeExpressionOfThreeElements;
 /// </summary>
 public interface IMaximizeExpressionOfThreeElements
 {
+    /// <summary>
+    ///     Finds three distinct indices in <paramref name="nums" /> that maximize the expression
+    ///     (nums[i] - nums[j]) + (nums[j] - nums[k]) + (nums[k] - nums[i]).
+    /// </summary>
+    /// <param name="nums">The array of integers to choose three indices from.</param>
+    /// <returns>The maximum possible value of the expression over all triples of distinct indices.</returns>
     int MaximizeExpressionOfThree(int[] nums);
 }

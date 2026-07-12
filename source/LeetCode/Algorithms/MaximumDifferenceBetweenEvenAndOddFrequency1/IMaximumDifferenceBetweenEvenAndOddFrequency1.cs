@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumDifferenceBetweenEvenAndOddFrequency1;
 /// </summary>
 public interface IMaximumDifferenceBetweenEvenAndOddFrequency1
 {
+    /// <summary>
+    ///     Computes the maximum difference between the frequency of a character with an odd count and the frequency of
+    ///     a (possibly different) character with an even count in <paramref name="s" />.
+    /// </summary>
+    /// <param name="s">The string whose character frequencies are analyzed.</param>
+    /// <returns>The maximum difference between an odd-frequency character count and an even-frequency character count.</returns>
     int MaxDifference(string s);
 }

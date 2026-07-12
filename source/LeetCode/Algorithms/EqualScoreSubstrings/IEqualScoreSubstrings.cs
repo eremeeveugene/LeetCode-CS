@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.EqualScoreSubstrings;
 /// </summary>
 public interface IEqualScoreSubstrings
 {
+    /// <summary>
+    ///     Determines whether <paramref name="s" /> can be split into two non-empty substrings whose character value
+    ///     sums (a=1, b=2, ..., z=26) are equal.
+    /// </summary>
+    /// <param name="s">The string of lowercase letters to split.</param>
+    /// <returns>
+    ///     <see langword="true" /> if such a split exists; otherwise, <see langword="false" />.
+    /// </returns>
     bool ScoreBalance(string s);
 }

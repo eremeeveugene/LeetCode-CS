@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CountEqualAndDivisiblePairsInAnArray;
 /// </summary>
 public interface ICountEqualAndDivisiblePairsInAnArray
 {
+    /// <summary>
+    ///     Counts the index pairs (i, j) with i &lt; j such that <paramref name="nums" />[i] equals
+    ///     <paramref name="nums" />[j] and the product i * j is divisible by <paramref name="k" />.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <param name="k">The divisor for the product of the indices.</param>
+    /// <returns>The number of pairs satisfying both conditions.</returns>
     int CountPairs(int[] nums, int k);
 }

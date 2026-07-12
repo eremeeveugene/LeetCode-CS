@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.PathSum;
 /// <inheritdoc />
 public sealed class PathSumBreadthFirstSearch : IPathSum
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <param name="targetSum"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool HasPathSum(TreeNode? root, int targetSum)
     {
         if (root == null)

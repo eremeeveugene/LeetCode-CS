@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.AddBinary;
 /// </summary>
 public interface IAddBinary
 {
+    /// <summary>
+    ///     Adds the two binary strings <paramref name="a" /> and <paramref name="b" /> and returns their sum as a binary
+    ///     string.
+    /// </summary>
+    /// <param name="a">The first binary string.</param>
+    /// <param name="b">The second binary string.</param>
+    /// <returns>The sum of the two binary strings as a binary string.</returns>
     string AddBinary(string a, string b);
 }

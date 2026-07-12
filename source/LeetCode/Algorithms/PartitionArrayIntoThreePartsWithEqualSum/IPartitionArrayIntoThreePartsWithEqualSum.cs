@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum;
 /// </summary>
 public interface IPartitionArrayIntoThreePartsWithEqualSum
 {
+    /// <summary>
+    ///     Determines whether <paramref name="arr" /> can be split into three contiguous, non-empty parts that each have
+    ///     the same sum.
+    /// </summary>
+    /// <param name="arr">The array of integers to evaluate.</param>
+    /// <returns><see langword="true" /> if such a partition exists; otherwise, <see langword="false" />.</returns>
     bool CanThreePartsEqualSum(int[] arr);
 }

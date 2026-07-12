@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.UniqueNumberOfOccurrences;
 /// <inheritdoc />
 public sealed class UniqueNumberOfOccurrencesDictionary : IUniqueNumberOfOccurrences
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool UniqueOccurrences(int[] arr)
     {
         var occurenceDictionary = new Dictionary<int, int>();

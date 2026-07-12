@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.Pow;
 /// <inheritdoc />
 public sealed class PowMath : IPow
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="x"></param>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public double MyPow(double x, int n)
     {
         return Math.Pow(x, n);

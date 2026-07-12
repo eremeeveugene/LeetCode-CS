@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SumOfAllOddLengthSubarrays;
 /// <inheritdoc />
 public sealed class SumOfAllOddLengthSubarraysBruteForce : ISumOfAllOddLengthSubarrays
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^3)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumOddLengthSubarrays(int[] arr)
     {
         var sum = 0;

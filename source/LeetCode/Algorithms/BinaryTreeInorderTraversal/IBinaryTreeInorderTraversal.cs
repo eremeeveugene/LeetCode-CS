@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.BinaryTreeInorderTraversal;
 /// </summary>
 public interface IBinaryTreeInorderTraversal
 {
+    /// <summary>
+    ///     Returns the inorder traversal of the values of the binary tree rooted at <paramref name="treeNode" />.
+    /// </summary>
+    /// <param name="treeNode">The root of the binary tree.</param>
+    /// <returns>The node values in inorder order.</returns>
     IList<int> InorderTraversal(TreeNode? treeNode);
 }

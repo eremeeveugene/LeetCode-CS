@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.UglyNumber2;
 /// </summary>
 public interface IUglyNumber2
 {
+    /// <summary>
+    ///     Finds the <paramref name="n" />th ugly number — a positive integer whose only prime factors are 2, 3,
+    ///     and 5.
+    /// </summary>
+    /// <param name="n">The 1-based position of the ugly number to find.</param>
+    /// <returns>The <paramref name="n" />th ugly number.</returns>
     int NthUglyNumber(int n);
 }

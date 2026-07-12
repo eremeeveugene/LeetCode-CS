@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.LargestPerimeterTriangle;
 /// </summary>
 public interface ILargestPerimeterTriangle
 {
+    /// <summary>
+    ///     Finds the largest perimeter of a triangle with a non-zero area whose side lengths are taken from
+    ///     <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array of side lengths.</param>
+    /// <returns>The largest possible perimeter of such a triangle, or 0 if no triangle can be formed.</returns>
     int LargestPerimeter(int[] nums);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FlippingAnImage;
 /// </summary>
 public interface IFlippingAnImage
 {
+    /// <summary>
+    ///     Flips <paramref name="image" /> horizontally by reversing each row and then inverts it by replacing each 0 with
+    ///     1 and each 1 with 0.
+    /// </summary>
+    /// <param name="image">The binary matrix representing the image.</param>
+    /// <returns>The resulting image after flipping horizontally and inverting.</returns>
     int[][] FlipAndInvertImage(int[][] image);
 }

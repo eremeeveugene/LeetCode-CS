@@ -16,12 +16,11 @@ public sealed class KeyboardRowLookup : IKeyboardRow
 {
     private static readonly byte[] CharIndexToRow = [1, 2, 2, 1, 0, 1, 1, 1, 0, 1, 1, 1, 2, 2, 0, 0, 0, 0, 1, 0, 0, 2, 0, 2, 0, 2];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="words"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string[] FindWords(string[] words)
     {
         var result = new List<string>(words.Length);

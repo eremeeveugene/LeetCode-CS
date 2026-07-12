@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumSubstringsWithDistinctStart;
 /// </summary>
 public interface IMaximumSubstringsWithDistinctStart
 {
+    /// <summary>
+    ///     Finds the maximum number of non-overlapping substrings that can be chosen from <paramref name="s" /> such
+    ///     that each substring starts with a character that appears only once in that substring.
+    /// </summary>
+    /// <param name="s">The string to split into substrings.</param>
+    /// <returns>The maximum number of qualifying non-overlapping substrings.</returns>
     int MaxDistinct(string s);
 }

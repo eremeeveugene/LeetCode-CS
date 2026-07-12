@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.UniqueThreeDigitEvenNumbers;
 /// </summary>
 public interface IUniqueThreeDigitEvenNumbers
 {
+    /// <summary>
+    ///     Counts the number of distinct three-digit even numbers that can be formed by picking three digits from
+    ///     <paramref name="digits" /> without reusing a digit's position more than once.
+    /// </summary>
+    /// <param name="digits">The array of digits, each from 0 to 9, available to form the numbers.</param>
+    /// <returns>The count of distinct three-digit even numbers that can be formed.</returns>
     int TotalNumbers(int[] digits);
 }

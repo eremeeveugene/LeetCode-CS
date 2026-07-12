@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.CountTheHiddenSequences;
 /// <inheritdoc />
 public sealed class CountTheHiddenSequencesPrefixSum : ICountTheHiddenSequences
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="differences"></param>
-    /// <param name="lower"></param>
-    /// <param name="upper"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumberOfArrays(int[] differences, int lower, int upper)
     {
         var minPrefix = 0;

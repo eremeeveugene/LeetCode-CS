@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CountSymmetricIntegers;
 /// <inheritdoc />
 public sealed class CountSymmetricIntegersIterative : ICountSymmetricIntegers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(N log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="low"></param>
-    /// <param name="high"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountSymmetricIntegers(int low, int high)
     {
         var count = 0;

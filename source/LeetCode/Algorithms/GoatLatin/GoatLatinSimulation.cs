@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.GoatLatin;
 /// <inheritdoc />
 public sealed class GoatLatinSimulation : IGoatLatin
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="sentence"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string ToGoatLatin(string sentence)
     {
         var resultStringBuilder = new StringBuilder(sentence.Length * 2);

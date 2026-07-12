@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FinalValueOfVariableAfterPerformingOperations;
 /// <inheritdoc />
 public sealed class FinalValueOfVariableAfterPerformingOperationsSwitch : IFinalValueOfVariableAfterPerformingOperations
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="operations"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FinalValueAfterOperations(string[] operations)
     {
         var finalValue = 0;

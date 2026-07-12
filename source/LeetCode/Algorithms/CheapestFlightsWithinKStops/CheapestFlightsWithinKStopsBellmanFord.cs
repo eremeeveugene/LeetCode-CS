@@ -14,16 +14,11 @@ namespace LeetCode.Algorithms.CheapestFlightsWithinKStops;
 /// <inheritdoc />
 public sealed class CheapestFlightsWithinKStopsBellmanFord : ICheapestFlightsWithinKStops
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O (k * E), where k is the number of stops allowed and E is the number of edges(flights).
     ///     Space complexity - O (n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="flights"></param>
-    /// <param name="src"></param>
-    /// <param name="dst"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindCheapestPrice(int n, int[][] flights, int src, int dst, int k)
     {
         var cost = new int[n];

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PascalsTriangle;
 /// <inheritdoc />
 public sealed class PascalsTriangleDynamicProgramming : IPascalsTriangle
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n^2)
-    /// </summary>
-    /// <param name="numRows"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<IList<int>> Generate(int numRows)
     {
         var result = new List<IList<int>> { new List<int> { 1 } };

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CountSubarraysWithScoreLessThanK;
 /// <inheritdoc />
 public sealed class CountSubarraysWithScoreLessThanKBruteForce : ICountSubarraysWithScoreLessThanK
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long CountSubarrays(int[] nums, long k)
     {
         long result = 0;

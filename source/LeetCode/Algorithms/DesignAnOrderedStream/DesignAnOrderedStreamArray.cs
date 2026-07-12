@@ -22,13 +22,11 @@ public sealed class DesignAnOrderedStreamArray : IDesignAnOrderedStream
         _stream = new string[n];
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="idKey"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<string?> Insert(int idKey, string value)
     {
         var result = new List<string?>();

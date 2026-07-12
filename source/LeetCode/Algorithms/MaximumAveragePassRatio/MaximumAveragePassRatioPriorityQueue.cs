@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MaximumAveragePassRatio;
 /// <inheritdoc />
 public sealed class MaximumAveragePassRatioPriorityQueue : IMaximumAveragePassRatio
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="classes"></param>
-    /// <param name="extraStudents"></param>
-    /// <returns></returns>
+    /// </remarks>
     public double MaxAverageRatio(int[][] classes, int extraStudents)
     {
         var ratiosPriorityQueue = new PriorityQueue<(int Pass, int Total), double>();

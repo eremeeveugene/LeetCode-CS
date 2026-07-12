@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FindTheMinimumAreaToCoverAllOnes2;
 /// </summary>
 public interface IFindTheMinimumAreaToCoverAllOnes2
 {
+    /// <summary>
+    ///     Finds the minimum total area of up to three non-overlapping, axis-aligned rectangles needed to cover every cell containing <c>1</c> in <paramref name="grid" />.
+    /// </summary>
+    /// <param name="grid">The binary grid to examine.</param>
+    /// <returns>The minimum total area of the rectangles covering all <c>1</c>s.</returns>
     int MinimumSum(int[][] grid);
 }

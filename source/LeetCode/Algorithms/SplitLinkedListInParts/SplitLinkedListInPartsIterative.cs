@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.SplitLinkedListInParts;
 /// <inheritdoc />
 public sealed class SplitLinkedListInPartsIterative : ISplitLinkedListInParts
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="head"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public ListNode?[] SplitListToParts(ListNode? head, int k)
     {
         if (head == null)

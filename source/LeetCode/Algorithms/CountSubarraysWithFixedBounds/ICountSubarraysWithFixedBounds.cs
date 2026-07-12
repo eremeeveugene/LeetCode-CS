@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.CountSubarraysWithFixedBounds;
 /// </summary>
 public interface ICountSubarraysWithFixedBounds
 {
+    /// <summary>
+    ///     Counts the fixed-bound subarrays of <paramref name="nums" /> whose minimum value equals
+    ///     <paramref name="minK" /> and whose maximum value equals <paramref name="maxK" />.
+    /// </summary>
+    /// <param name="nums">The array of integers to examine.</param>
+    /// <param name="minK">The required minimum value of a subarray.</param>
+    /// <param name="maxK">The required maximum value of a subarray.</param>
+    /// <returns>The number of fixed-bound subarrays.</returns>
     long CountSubarrays(int[] nums, int minK, int maxK);
 }

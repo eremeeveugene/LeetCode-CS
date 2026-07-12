@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.IntersectionOfMultipleArrays;
 /// <inheritdoc />
 public sealed class IntersectionOfMultipleArraysCounting : IIntersectionOfMultipleArrays
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m), where n is the number of arrays in nums and m is the length of arrays in nums
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> Intersection(int[][] nums)
     {
         Span<int> numsFrequencies = stackalloc int[1001];

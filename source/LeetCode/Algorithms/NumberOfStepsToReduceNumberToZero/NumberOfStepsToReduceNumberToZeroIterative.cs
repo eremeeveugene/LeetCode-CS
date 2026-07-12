@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberOfStepsToReduceNumberToZero;
 /// <inheritdoc />
 public sealed class NumberOfStepsToReduceNumberToZeroIterative : INumberOfStepsToReduceNumberToZero
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumberOfSteps(int num)
     {
         var steps = 0;

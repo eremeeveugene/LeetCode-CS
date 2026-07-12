@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumOperationsToMakeBinaryArrayElementsEqualToO
 /// </summary>
 public interface IMinimumOperationsToMakeBinaryArrayElementsEqualToOne1
 {
+    /// <summary>
+    ///     Finds the minimum number of operations needed to make every element of the binary array
+    ///     <paramref name="nums" /> equal to 1, where each operation flips any three consecutive elements.
+    /// </summary>
+    /// <param name="nums">The binary array of 0s and 1s to convert to all ones.</param>
+    /// <returns>The minimum number of operations required, or -1 if it is not possible.</returns>
     int MinOperations(int[] nums);
 }

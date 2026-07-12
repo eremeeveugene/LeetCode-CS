@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindAllNumbersDisappearedInArray;
 /// <inheritdoc />
 public sealed class FindAllNumbersDisappearedInArraySignFlipping : IFindAllNumbersDisappearedInArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> FindDisappearedNumbers(int[] nums)
     {
         for (var i = 0; i < nums.Length; i++)

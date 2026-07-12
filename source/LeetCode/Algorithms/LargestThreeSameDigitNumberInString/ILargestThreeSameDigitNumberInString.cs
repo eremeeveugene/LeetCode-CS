@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.LargestThreeSameDigitNumberInString;
 /// </summary>
 public interface ILargestThreeSameDigitNumberInString
 {
+    /// <summary>
+    ///     Finds the largest good integer in <paramref name="num" />, where a good integer is a substring of length three
+    ///     consisting of a single repeated digit.
+    /// </summary>
+    /// <param name="num">The string of digits to search.</param>
+    /// <returns>The largest good integer as a string, or an empty string if no good integer exists.</returns>
     string LargestGoodInteger(string num);
 }

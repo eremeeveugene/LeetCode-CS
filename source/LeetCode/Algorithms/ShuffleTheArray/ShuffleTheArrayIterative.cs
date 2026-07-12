@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.ShuffleTheArray;
 /// <inheritdoc />
 public sealed class ShuffleTheArrayIterative : IShuffleTheArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] Shuffle(int[] nums, int n)
     {
         var result = new int[n * 2];

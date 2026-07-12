@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ConvertIntegerToTheSumOfTwoNoZeroIntegers;
 /// </summary>
 public interface IConvertIntegerToTheSumOfTwoNoZeroIntegers
 {
+    /// <summary>
+    ///     Finds two positive integers whose sum equals <paramref name="n" /> and whose decimal representations contain
+    ///     no digit 0.
+    /// </summary>
+    /// <param name="n">The target integer to split into two no-zero integers.</param>
+    /// <returns>An array containing the two no-zero integers that sum to <paramref name="n" />.</returns>
     int[] GetNoZeroIntegers(int n);
 }

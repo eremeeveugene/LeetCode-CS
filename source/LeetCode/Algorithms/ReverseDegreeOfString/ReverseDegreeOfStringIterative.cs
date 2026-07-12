@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ReverseDegreeOfString;
 /// <inheritdoc />
 public sealed class ReverseDegreeOfStringIterative : IReverseDegreeOfString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ReverseDegree(string s)
     {
         var result = 0;

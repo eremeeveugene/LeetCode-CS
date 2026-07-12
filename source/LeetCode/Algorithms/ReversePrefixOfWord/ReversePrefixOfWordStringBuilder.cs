@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.ReversePrefixOfWord;
 /// <inheritdoc />
 public sealed class ReversePrefixOfWordStringBuilder : IReversePrefixOfWord
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="word"></param>
-    /// <param name="ch"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string ReversePrefix(string word, char ch)
     {
         var chIndex = word.IndexOf(ch);

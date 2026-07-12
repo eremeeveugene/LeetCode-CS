@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SortArrayByIncreasingFrequency;
 /// <inheritdoc />
 public sealed class SortArrayByIncreasingFrequencyDictionary : ISortArrayByIncreasingFrequency
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] FrequencySort(int[] nums)
     {
         var frequencyDictionary = new Dictionary<int, int>();

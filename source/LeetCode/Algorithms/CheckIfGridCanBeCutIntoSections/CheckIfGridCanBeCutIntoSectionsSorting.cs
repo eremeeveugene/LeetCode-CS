@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CheckIfGridCanBeCutIntoSections;
 /// <inheritdoc />
 public sealed class CheckIfGridCanBeCutIntoSectionsSorting : ICheckIfGridCanBeCutIntoSections
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="rectangles"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckValidCuts(int n, int[][] rectangles)
     {
         return CheckCuts(rectangles, 0) || CheckCuts(rectangles, 1);

@@ -18,5 +18,12 @@ namespace LeetCode.Algorithms.SearchInBinarySearchTree;
 /// </summary>
 public interface ISearchInBinarySearchTree
 {
+    /// <summary>
+    ///     Searches the binary search tree rooted at <paramref name="root" /> for the node whose value equals
+    ///     <paramref name="val" />.
+    /// </summary>
+    /// <param name="root">The root of the binary search tree.</param>
+    /// <param name="val">The value to search for.</param>
+    /// <returns>The subtree rooted at the node with value <paramref name="val" />, or <see langword="null" /> if not found.</returns>
     TreeNode? SearchBST(TreeNode? root, int val);
 }

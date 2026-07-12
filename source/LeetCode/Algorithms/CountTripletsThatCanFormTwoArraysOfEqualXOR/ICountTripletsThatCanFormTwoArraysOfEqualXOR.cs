@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR;
 /// </summary>
 public interface ICountTripletsThatCanFormTwoArraysOfEqualXOR
 {
+    /// <summary>
+    ///     Counts the triplets of indices (i, j, k) in <paramref name="arr" /> such that the XOR of the elements from
+    ///     i to j-1 equals the XOR of the elements from j to k.
+    /// </summary>
+    /// <param name="arr">The array of integers to examine.</param>
+    /// <returns>The total number of qualifying triplets.</returns>
     int CountTriplets(int[] arr);
 }

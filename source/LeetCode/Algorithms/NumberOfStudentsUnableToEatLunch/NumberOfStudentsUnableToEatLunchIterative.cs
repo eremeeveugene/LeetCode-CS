@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.NumberOfStudentsUnableToEatLunch;
 /// <inheritdoc />
 public sealed class NumberOfStudentsUnableToEatLunchIterative : INumberOfStudentsUnableToEatLunch
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="students"></param>
-    /// <param name="sandwiches"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountStudents(int[] students, int[] sandwiches)
     {
         var countZero = 0;

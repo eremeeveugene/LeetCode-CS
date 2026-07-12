@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SortMatrixByDiagonals;
 /// <inheritdoc />
 public sealed class SortMatrixByDiagonalsSimulation : ISortMatrixByDiagonals
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2 log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] SortMatrix(int[][] grid)
     {
         var n = grid.Length;

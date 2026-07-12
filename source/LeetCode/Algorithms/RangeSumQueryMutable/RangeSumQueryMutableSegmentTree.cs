@@ -18,10 +18,13 @@ public sealed class RangeSumQueryMutableSegmentTree : IRangeSumQueryMutable
     private readonly int[] _tree;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="RangeSumQueryMutableSegmentTree" /> class.
+    /// </summary>
+    /// <param name="nums">The array of integers to query range sums on.</param>
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
+    /// </remarks>
     public RangeSumQueryMutableSegmentTree(int[] nums)
     {
         _n = nums.Length;
@@ -42,12 +45,11 @@ public sealed class RangeSumQueryMutableSegmentTree : IRangeSumQueryMutable
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="index"></param>
-    /// <param name="val"></param>
+    /// </remarks>
     public void Update(int index, int val)
     {
         var i = index + _n;
@@ -65,13 +67,11 @@ public sealed class RangeSumQueryMutableSegmentTree : IRangeSumQueryMutable
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="left"></param>
-    /// <param name="right"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumRange(int left, int right)
     {
         var sum = 0;

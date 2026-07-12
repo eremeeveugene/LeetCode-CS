@@ -14,11 +14,11 @@ namespace LeetCode.Algorithms.SetMatrixZeroes;
 /// <inheritdoc />
 public sealed class SetMatrixZeroesArrayMarkers : ISetMatrixZeroes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(m + n)
-    /// </summary>
-    /// <param name="matrix"></param>
+    /// </remarks>
     public void SetZeroes(int[][] matrix)
     {
         var rows = new bool[matrix.Length];

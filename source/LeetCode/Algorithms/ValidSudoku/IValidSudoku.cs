@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ValidSudoku;
 /// </summary>
 public interface IValidSudoku
 {
+    /// <summary>
+    ///     Determines whether the partially filled 9x9 Sudoku <paramref name="board" /> is valid — no repeated
+    ///     digit within any row, column, or 3x3 sub-box.
+    /// </summary>
+    /// <param name="board">The 9x9 Sudoku board, with empty cells represented by <c>'.'</c>.</param>
+    /// <returns><see langword="true" /> if the board is valid; otherwise, <see langword="false" />.</returns>
     bool IsValidSudoku(char[][] board);
 }

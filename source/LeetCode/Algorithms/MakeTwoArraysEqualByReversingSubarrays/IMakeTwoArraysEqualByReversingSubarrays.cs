@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MakeTwoArraysEqualByReversingSubarrays;
 /// </summary>
 public interface IMakeTwoArraysEqualByReversingSubarrays
 {
+    /// <summary>
+    ///     Determines whether <paramref name="arr" /> can be made equal to <paramref name="target" /> by reversing any
+    ///     number of its subarrays.
+    /// </summary>
+    /// <param name="target">The array that <paramref name="arr" /> should be transformed into.</param>
+    /// <param name="arr">The array to transform via subarray reversals.</param>
+    /// <returns><see langword="true" /> if <paramref name="arr" /> can be made equal to <paramref name="target" />; otherwise, <see langword="false" />.</returns>
     bool CanBeEqual(int[] target, int[] arr);
 }

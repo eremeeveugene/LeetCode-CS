@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FindNumbersWithEvenNumberOfDigits;
 /// </summary>
 public interface IFindNumbersWithEvenNumberOfDigits
 {
+    /// <summary>
+    ///     Counts the elements of <paramref name="nums" /> that contain an even number of digits.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The number of elements containing an even number of digits.</returns>
     int FindNumbers(int[] nums);
 }

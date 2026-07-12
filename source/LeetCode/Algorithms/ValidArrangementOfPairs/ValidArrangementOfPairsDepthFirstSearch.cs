@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ValidArrangementOfPairs;
 /// <inheritdoc />
 public sealed class ValidArrangementOfPairsDepthFirstSearch : IValidArrangementOfPairs
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(E + V), where E is the number of edges (pairs) and V is the number of vertices (unique nodes)
     ///     Space complexity - O(E + V), where E is the number of edges (pairs) and V is the number of vertices (unique nodes)
-    /// </summary>
-    /// <param name="pairs"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] ValidArrangement(int[][] pairs)
     {
         var startToEndsDictionary = new Dictionary<int, Stack<int>>();

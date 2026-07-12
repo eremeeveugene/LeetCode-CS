@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.EvaluateBooleanBinaryTree;
 /// </summary>
 public interface IEvaluateBooleanBinaryTree
 {
+    /// <summary>
+    ///     Evaluates the full binary tree rooted at <paramref name="root" />, where leaves hold boolean values and inner
+    ///     nodes represent OR and AND operations.
+    /// </summary>
+    /// <param name="root">The root node of the boolean binary tree.</param>
+    /// <returns><c>true</c> if the tree evaluates to true; otherwise, <c>false</c>.</returns>
     bool EvaluateTree(TreeNode? root);
 }

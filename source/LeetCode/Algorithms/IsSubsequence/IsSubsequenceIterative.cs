@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.IsSubsequence;
 /// <inheritdoc />
 public sealed class IsSubsequenceIterative : IIsSubsequence
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="t"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsSubsequence(string s, string t)
     {
         if (s.Length == 0)

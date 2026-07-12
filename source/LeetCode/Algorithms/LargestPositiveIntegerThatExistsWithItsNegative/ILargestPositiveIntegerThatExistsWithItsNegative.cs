@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative;
 /// </summary>
 public interface ILargestPositiveIntegerThatExistsWithItsNegative
 {
+    /// <summary>
+    ///     Finds the largest positive integer k such that both k and -k exist in <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array of integers that does not contain zeros.</param>
+    /// <returns>The largest positive integer that exists along with its negative, or -1 if there is no such integer.</returns>
     int FindMaxK(int[] nums);
 }

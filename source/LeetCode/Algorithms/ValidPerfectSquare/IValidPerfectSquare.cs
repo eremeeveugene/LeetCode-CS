@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.ValidPerfectSquare;
 /// </summary>
 public interface IValidPerfectSquare
 {
+    /// <summary>
+    ///     Determines whether <paramref name="num" /> is a perfect square.
+    /// </summary>
+    /// <param name="num">The positive integer to check.</param>
+    /// <returns><see langword="true" /> if <paramref name="num" /> is a perfect square; otherwise, <see langword="false" />.</returns>
     bool IsPerfectSquare(int num);
 }

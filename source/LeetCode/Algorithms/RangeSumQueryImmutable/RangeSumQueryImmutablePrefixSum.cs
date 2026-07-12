@@ -17,10 +17,13 @@ public sealed class RangeSumQueryImmutablePrefixSum : IRangeSumQueryImmutable
     private readonly int[] _prefixSum;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="RangeSumQueryImmutablePrefixSum" /> class.
+    /// </summary>
+    /// <param name="nums">The array of integers to query range sums on.</param>
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
+    /// </remarks>
     public RangeSumQueryImmutablePrefixSum(int[] nums)
     {
         _prefixSum = new int[nums.Length + 1];
@@ -31,13 +34,11 @@ public sealed class RangeSumQueryImmutablePrefixSum : IRangeSumQueryImmutable
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="left"></param>
-    /// <param name="right"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumRange(int left, int right)
     {
         return _prefixSum[right + 1] - _prefixSum[left];

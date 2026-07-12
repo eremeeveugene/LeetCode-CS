@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.ValidAnagram;
 /// <inheritdoc />
 public sealed class ValidAnagramDictionary : IValidAnagram
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="t"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsAnagram(string s, string t)
     {
         if (s.Length != t.Length)

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.SpecialArray2;
 /// </summary>
 public interface ISpecialArray2
 {
+    /// <summary>
+    ///     For each query range in <paramref name="queries" />, determines whether every pair of adjacent
+    ///     elements within that subarray of <paramref name="nums" /> has different parity.
+    /// </summary>
+    /// <param name="nums">The array of integers to check.</param>
+    /// <param name="queries">The array of queries, each specifying a start and end index of a subarray of <paramref name="nums" />.</param>
+    /// <returns>An array of booleans indicating, for each query, whether the corresponding subarray is special.</returns>
     bool[] IsArraySpecial(int[] nums, int[][] queries);
 }

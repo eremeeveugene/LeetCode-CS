@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindingThreeDigitEvenNumbers;
 /// <inheritdoc />
 public sealed class FindingThreeDigitEvenNumbersFrequency : IFindingThreeDigitEvenNumbers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="digits"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] FindEvenNumbers(int[] digits)
     {
         var digitsFrequency = new int[10];

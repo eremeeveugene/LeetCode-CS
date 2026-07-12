@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.SumOfGoodNumbers;
 /// <inheritdoc />
 public sealed class SumOfGoodNumbersIterative : ISumOfGoodNumbers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumOfGoodNumbers(int[] nums, int k)
     {
         var sum = 0;

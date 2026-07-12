@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountNegativeNumbersInSortedMatrix;
 /// <inheritdoc />
 public sealed class CountNegativeNumbersInSortedMatrixBruteForceBottomRight : ICountNegativeNumbersInSortedMatrix
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountNegatives(int[][] grid)
     {
         var count = 0;

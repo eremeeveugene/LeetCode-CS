@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.BinaryNumberWithAlternatingBits;
 /// <inheritdoc />
 public sealed class BinaryNumberWithAlternatingBitsBitwise : IBinaryNumberWithAlternatingBits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool HasAlternatingBits(int n)
     {
         var x = n ^ (n >> 1);

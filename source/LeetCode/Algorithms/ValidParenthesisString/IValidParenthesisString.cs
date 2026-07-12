@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ValidParenthesisString;
 /// </summary>
 public interface IValidParenthesisString
 {
+    /// <summary>
+    ///     Determines whether <paramref name="s" />, which may contain <c>'('</c>, <c>')'</c>, and <c>'*'</c>
+    ///     (treated as <c>'('</c>, <c>')'</c>, or an empty string), can represent a valid parenthesis sequence.
+    /// </summary>
+    /// <param name="s">The string consisting of <c>'('</c>, <c>')'</c>, and <c>'*'</c> characters to validate.</param>
+    /// <returns><see langword="true" /> if <paramref name="s" /> can be a valid parenthesis string; otherwise, <see langword="false" />.</returns>
     bool CheckValidString(string s);
 }

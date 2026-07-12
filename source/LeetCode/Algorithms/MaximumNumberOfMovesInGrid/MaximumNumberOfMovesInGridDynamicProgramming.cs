@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumNumberOfMovesInGrid;
 /// <inheritdoc />
 public sealed class MaximumNumberOfMovesInGridDynamicProgramming : IMaximumNumberOfMovesInGrid
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m), where n is number of rows and m is the number of columns
     ///     Space complexity - O(n), where n is number of rows
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxMoves(int[][] grid)
     {
         var memoGrid = new int[grid.Length][];

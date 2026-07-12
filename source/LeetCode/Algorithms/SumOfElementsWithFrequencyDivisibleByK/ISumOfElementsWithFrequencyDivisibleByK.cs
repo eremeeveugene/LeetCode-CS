@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.SumOfElementsWithFrequencyDivisibleByK;
 /// </summary>
 public interface ISumOfElementsWithFrequencyDivisibleByK
 {
+    /// <summary>
+    ///     Sums every element of <paramref name="nums" /> whose frequency in the array is divisible by
+    ///     <paramref name="k" />.
+    /// </summary>
+    /// <param name="nums">The array of integers to inspect.</param>
+    /// <param name="k">The divisor that a value's frequency must be divisible by for it to be included.</param>
+    /// <returns>The sum of all elements whose frequency is divisible by <paramref name="k" />.</returns>
     int SumDivisibleByK(int[] nums, int k);
 }

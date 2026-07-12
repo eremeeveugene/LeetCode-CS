@@ -16,12 +16,11 @@ public sealed class FindResultantArrayAfterRemovingAnagramsGreedyCounting : IFin
 {
     private const byte AlphabetLength = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * L), where n is the number of words and L is the average length of a word
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="words"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<string> RemoveAnagrams(string[] words)
     {
         var result = new List<string>(words.Length) { words[0] };

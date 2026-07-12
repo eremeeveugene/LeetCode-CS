@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.SelfDividingNumbers;
 /// <inheritdoc />
 public sealed class SelfDividingNumbersMath : ISelfDividingNumbers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * d), where n is range size and d is digit count
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="left"></param>
-    /// <param name="right"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> SelfDividingNumbers(int left, int right)
     {
         var result = new List<int>();

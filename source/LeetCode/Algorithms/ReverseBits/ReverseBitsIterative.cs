@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ReverseBits;
 /// <inheritdoc />
 public sealed class ReverseBitsIterative : IReverseBits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ReverseBits(int n)
     {
         var result = 0;

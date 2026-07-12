@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MaximalScoreAfterApplyingKOperations;
 /// </summary>
 public interface IMaximalScoreAfterApplyingKOperations
 {
+    /// <summary>
+    ///     Performs <paramref name="k" /> operations on <paramref name="nums" />, each time adding the current maximum
+    ///     element to a running score and replacing it with its ceiling divided by 3, to maximize the total score.
+    /// </summary>
+    /// <param name="nums">The array of positive integers to operate on.</param>
+    /// <param name="k">The number of operations to perform.</param>
+    /// <returns>The maximum possible score achievable after performing <paramref name="k" /> operations.</returns>
     long MaxKelements(int[] nums, int k);
 }

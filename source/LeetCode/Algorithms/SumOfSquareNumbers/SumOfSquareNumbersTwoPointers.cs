@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SumOfSquareNumbers;
 /// <inheritdoc />
 public sealed class SumOfSquareNumbersTwoPointers : ISumOfSquareNumbers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(Sqrt(c))
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="c"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool JudgeSquareSum(int c)
     {
         long left = 0;

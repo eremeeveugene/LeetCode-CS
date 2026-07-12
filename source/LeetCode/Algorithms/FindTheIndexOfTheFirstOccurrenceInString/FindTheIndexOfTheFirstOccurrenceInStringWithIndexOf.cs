@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString;
 /// <inheritdoc />
 public sealed class FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf : IFindTheIndexOfTheFirstOccurrenceInString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="haystack"></param>
-    /// <param name="needle"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int StrStr(string haystack, string needle)
     {
         return haystack.IndexOf(needle, StringComparison.OrdinalIgnoreCase);

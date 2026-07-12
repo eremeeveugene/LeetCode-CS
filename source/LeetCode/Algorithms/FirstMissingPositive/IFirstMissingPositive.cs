@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FirstMissingPositive;
 /// </summary>
 public interface IFirstMissingPositive
 {
+    /// <summary>
+    ///     Finds the smallest positive integer that is not present in <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array of integers to search.</param>
+    /// <returns>The smallest missing positive integer.</returns>
     int FirstMissingPositive(int[] nums);
 }

@@ -16,12 +16,11 @@ public sealed class LargestThreeSameDigitNumberInStringGreedyOptimized : ILarges
 {
     private static readonly string[] Triples = ["000", "111", "222", "333", "444", "555", "666", "777", "888", "999"];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string LargestGoodInteger(string num)
     {
         var maxChar = '\0';

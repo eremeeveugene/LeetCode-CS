@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ValidArrangementOfPairs;
 /// </summary>
 public interface IValidArrangementOfPairs
 {
+    /// <summary>
+    ///     Reorders <paramref name="pairs" /> so that the second element of each pair equals the first element of
+    ///     the next pair, forming a valid Eulerian path.
+    /// </summary>
+    /// <param name="pairs">The array of pairs, each given as a start value and an end value, to arrange.</param>
+    /// <returns>The pairs reordered so that consecutive pairs connect end to start.</returns>
     int[][] ValidArrangement(int[][] pairs);
 }

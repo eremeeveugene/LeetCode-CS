@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.DiagonalTraverse;
 /// </summary>
 public interface IDiagonalTraverse
 {
+    /// <summary>
+    ///     Returns all elements of <paramref name="mat" /> in diagonal order, alternating the traversal direction on each
+    ///     diagonal.
+    /// </summary>
+    /// <param name="mat">The matrix of integers.</param>
+    /// <returns>An array containing all elements of the matrix in diagonal order.</returns>
     int[] FindDiagonalOrder(int[][] mat);
 }

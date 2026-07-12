@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberOfSmoothDescentPeriodsOfStock;
 /// <inheritdoc />
 public sealed class NumberOfSmoothDescentPeriodsOfStockTwoPointers : INumberOfSmoothDescentPeriodsOfStock
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="prices"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long GetDescentPeriods(int[] prices)
     {
         long result = 1;

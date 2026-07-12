@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.ProcessStringWithSpecialOperations1;
 /// <inheritdoc />
 public sealed class ProcessStringWithSpecialOperations1Simulation : IProcessStringWithSpecialOperations1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(2^n), where n is the length of <c>s</c>, since each <c>'#'</c> can double the result
     ///     Space complexity - O(2^n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string ProcessStr(string s)
     {
         var result = new StringBuilder();

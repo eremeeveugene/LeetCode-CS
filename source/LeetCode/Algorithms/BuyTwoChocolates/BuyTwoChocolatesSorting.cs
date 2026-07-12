@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.BuyTwoChocolates;
 /// <inheritdoc />
 public sealed class BuyTwoChocolatesSorting : IBuyTwoChocolates
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="prices"></param>
-    /// <param name="money"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int BuyChoco(int[] prices, int money)
     {
         Array.Sort(prices);

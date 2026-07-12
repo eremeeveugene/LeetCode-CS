@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.RangeProductQueriesOfPowers;
 /// </summary>
 public interface IRangeProductQueriesOfPowers
 {
+    /// <summary>
+    ///     Computes, for each query in <paramref name="queries" />, the product of the powers of two in the minimal
+    ///     representation of <paramref name="n" /> between the given index range, modulo 10^9 + 7.
+    /// </summary>
+    /// <param name="n">The integer whose minimal set of powers of two is used to answer the queries.</param>
+    /// <param name="queries">The list of queries, each expressed as an inclusive index range into the powers array.</param>
+    /// <returns>An array containing the answer to each query, modulo 10^9 + 7.</returns>
     int[] ProductQueries(int n, int[][] queries);
 }

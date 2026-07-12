@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.SubarraysWithKDifferentIntegers;
 /// <inheritdoc />
 public sealed class SubarraysWithKDifferentIntegersSlidingWindow : ISubarraysWithKDifferentIntegers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SubarraysWithKDistinct(int[] nums, int k)
     {
         return AtMostKDistinct(nums, k) - AtMostKDistinct(nums, k - 1);

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.DeleteCharactersToMakeFancyString;
 /// </summary>
 public interface IDeleteCharactersToMakeFancyString
 {
+    /// <summary>
+    ///     Deletes the minimum number of characters from <paramref name="s" /> so that no three consecutive characters
+    ///     are equal, producing a fancy string.
+    /// </summary>
+    /// <param name="s">The string to make fancy.</param>
+    /// <returns>The resulting fancy string after the deletions.</returns>
     string MakeFancyString(string s);
 }

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.BagOfTokens;
 /// <inheritdoc />
 public sealed class BagOfTokensTwoPointers : IBagOfTokens
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="tokens"></param>
-    /// <param name="power"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int BagOfTokensScore(int[] tokens, int power)
     {
         var score = 0;

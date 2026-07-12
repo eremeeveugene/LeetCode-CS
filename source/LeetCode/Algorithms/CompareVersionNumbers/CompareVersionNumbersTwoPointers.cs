@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CompareVersionNumbers;
 /// <inheritdoc />
 public sealed class CompareVersionNumbersTwoPointers : ICompareVersionNumbers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(max(n,m)), where n and m are the lengths of version1 and version2 respectively
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="version1"></param>
-    /// <param name="version2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CompareVersion(string version1, string version2)
     {
         var version1Index = 0;

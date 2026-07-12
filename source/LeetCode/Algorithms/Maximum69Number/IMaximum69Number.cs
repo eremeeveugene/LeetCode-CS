@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.Maximum69Number;
 /// </summary>
 public interface IMaximum69Number
 {
+    /// <summary>
+    ///     Changes at most one digit of <paramref name="num" /> (which consists only of digits 6 and 9) from 6 to 9 to
+    ///     maximize its value.
+    /// </summary>
+    /// <param name="num">The integer, composed only of the digits 6 and 9, to maximize.</param>
+    /// <returns>The maximum possible value obtainable by changing at most one digit of <paramref name="num" />.</returns>
     int Maximum69Number(int num);
 }

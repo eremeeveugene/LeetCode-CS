@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.InsertInterval;
 /// </summary>
 public interface IInsertInterval
 {
+    /// <summary>
+    ///     Inserts <paramref name="newInterval" /> into the sorted, non-overlapping <paramref name="intervals" />, merging
+    ///     overlapping intervals so the result remains sorted and non-overlapping.
+    /// </summary>
+    /// <param name="intervals">The non-overlapping intervals sorted in ascending order by start.</param>
+    /// <param name="newInterval">The interval to insert.</param>
+    /// <returns>The intervals after inserting and merging <paramref name="newInterval" />.</returns>
     int[][] Insert(int[][] intervals, int[] newInterval);
 }

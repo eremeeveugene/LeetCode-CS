@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.MergeSortedArray;
 /// <inheritdoc />
 public sealed class MergeSortedArrayThreePointers : IMergeSortedArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="m"></param>
-    /// <param name="nums2"></param>
-    /// <param name="n"></param>
+    /// </remarks>
     public void Merge(int[] nums1, int m, int[] nums2, int n)
     {
         var nums1Index = m - 1;

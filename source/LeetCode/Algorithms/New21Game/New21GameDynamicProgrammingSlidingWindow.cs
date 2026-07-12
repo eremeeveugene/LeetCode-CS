@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.New21Game;
 /// <inheritdoc />
 public sealed class New21GameDynamicProgrammingSlidingWindow : INew21Game
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="k"></param>
-    /// <param name="maxPts"></param>
-    /// <returns></returns>
+    /// </remarks>
     public double New21Game(int n, int k, int maxPts)
     {
         if (k == 0 || n >= k - 1 + maxPts)

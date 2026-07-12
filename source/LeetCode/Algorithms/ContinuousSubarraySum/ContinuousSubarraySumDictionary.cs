@@ -14,14 +14,12 @@ namespace LeetCode.Algorithms.ContinuousSubarraySum;
 /// <inheritdoc />
 public sealed class ContinuousSubarraySumDictionary : IContinuousSubarraySum
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n), where n is the length of the input array nums
     ///     Space complexity - O(min(n,k)), where n is the length of the input array nums and k is the number of possible
     ///     remainders when taking modulo k
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckSubarraySum(int[] nums, int k)
     {
         var remainderDictionary = new Dictionary<int, int> { [0] = -1 };

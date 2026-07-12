@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.UniqueNumberOfOccurrences;
 /// </summary>
 public interface IUniqueNumberOfOccurrences
 {
+    /// <summary>
+    ///     Determines whether the number of occurrences of each distinct value in <paramref name="arr" /> is
+    ///     unique.
+    /// </summary>
+    /// <param name="arr">The array of integers to inspect.</param>
+    /// <returns><see langword="true" /> if all occurrence counts are unique; otherwise, <see langword="false" />.</returns>
     bool UniqueOccurrences(int[] arr);
 }

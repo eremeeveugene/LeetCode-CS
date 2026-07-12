@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaxChunksToMakeSorted;
 /// </summary>
 public interface IMaxChunksToMakeSorted
 {
+    /// <summary>
+    ///     Finds the maximum number of chunks that <paramref name="arr" />, a permutation of 0 to n - 1, can be split
+    ///     into so that sorting each chunk individually and concatenating them yields a fully sorted array.
+    /// </summary>
+    /// <param name="arr">The permutation of integers from 0 to n - 1 to split into chunks.</param>
+    /// <returns>The maximum number of chunks <paramref name="arr" /> can be split into.</returns>
     int MaxChunksToSorted(int[] arr);
 }

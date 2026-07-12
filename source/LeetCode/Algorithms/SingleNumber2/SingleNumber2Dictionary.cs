@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SingleNumber2;
 /// <inheritdoc />
 public sealed class SingleNumber2Dictionary : ISingleNumber2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SingleNumber(int[] nums)
     {
         var numsDictionary = new Dictionary<int, int>();

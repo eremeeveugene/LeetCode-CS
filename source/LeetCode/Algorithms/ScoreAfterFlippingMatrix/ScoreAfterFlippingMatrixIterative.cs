@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ScoreAfterFlippingMatrix;
 /// <inheritdoc />
 public sealed class ScoreAfterFlippingMatrixIterative : IScoreAfterFlippingMatrix
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MatrixScore(int[][] grid)
     {
         foreach (var row in grid)

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements
 /// </summary>
 public interface ICountElementsWithStrictlySmallerAndGreaterElements
 {
+    /// <summary>
+    ///     Counts the elements of <paramref name="nums" /> that have both a strictly smaller and a strictly greater element
+    ///     in the array.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The number of elements with both a strictly smaller and a strictly greater element.</returns>
     int CountElements(int[] nums);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.LargestSubstringBetweenTwoEqualCharacters;
 /// </summary>
 public interface ILargestSubstringBetweenTwoEqualCharacters
 {
+    /// <summary>
+    ///     Finds the length of the longest substring of <paramref name="s" /> between two equal characters, excluding the
+    ///     two characters.
+    /// </summary>
+    /// <param name="s">The string to search.</param>
+    /// <returns>The length of the longest substring between two equal characters, or -1 if no such substring exists.</returns>
     int MaxLengthBetweenEqualCharacters(string s);
 }

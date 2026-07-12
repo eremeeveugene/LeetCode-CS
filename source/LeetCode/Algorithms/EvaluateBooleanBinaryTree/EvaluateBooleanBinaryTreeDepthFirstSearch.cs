@@ -19,12 +19,11 @@ public sealed class EvaluateBooleanBinaryTreeDepthFirstSearch : IEvaluateBoolean
     private const int OrOperation = 2;
     private const int AndOperation = 3;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n) for a skewed tree, O(n log n) for a balanced tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool EvaluateTree(TreeNode? root)
     {
         return root != null && GetTreeEvaluation(root);

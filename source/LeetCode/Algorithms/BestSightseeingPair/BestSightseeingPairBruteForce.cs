@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.BestSightseeingPair;
 /// <inheritdoc />
 public sealed class BestSightseeingPairBruteForce : IBestSightseeingPair
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="values"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxScoreSightseeingPair(int[] values)
     {
         var maxScore = 0;

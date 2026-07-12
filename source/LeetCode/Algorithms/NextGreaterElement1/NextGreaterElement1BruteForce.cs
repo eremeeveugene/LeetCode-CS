@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.NextGreaterElement1;
 /// <inheritdoc />
 public sealed class NextGreaterElement1BruteForce : INextGreaterElement1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] NextGreaterElement(int[] nums1, int[] nums2)
     {
         var result = new int[nums1.Length];

@@ -19,12 +19,11 @@ public sealed class TypeOfTriangleMath : ITypeOfTriangle
     private const string Isosceles = "isosceles";
     private const string None = "none";
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string TriangleType(int[] nums)
     {
         if (nums[0] + nums[1] <= nums[2] || nums[1] + nums[2] <= nums[0] || nums[2] + nums[0] <= nums[1])

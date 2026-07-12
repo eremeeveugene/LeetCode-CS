@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK;
 /// </summary>
 public interface IMinimumOperationsToMakeArrayValuesEqualToK
 {
+    /// <summary>
+    ///     Finds the minimum number of operations needed to make every element of <paramref name="nums" /> equal to
+    ///     <paramref name="k" />, where each operation decreases every element greater than the current minimum down
+    ///     to that minimum.
+    /// </summary>
+    /// <param name="nums">The array of integers to equalize.</param>
+    /// <param name="k">The target value that every element should be reduced to.</param>
+    /// <returns>The minimum number of operations required, or -1 if it is not possible.</returns>
     int MinOperations(int[] nums, int k);
 }

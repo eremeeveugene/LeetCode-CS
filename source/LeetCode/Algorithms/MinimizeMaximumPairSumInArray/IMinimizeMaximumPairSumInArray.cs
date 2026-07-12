@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.MinimizeMaximumPairSumInArray;
 /// </summary>
 public interface IMinimizeMaximumPairSumInArray
 {
+    /// <summary>
+    ///     Pairs up the elements of <paramref name="nums" /> to minimize the maximum sum among all the pairs.
+    /// </summary>
+    /// <param name="nums">The array of integers to pair up.</param>
+    /// <returns>The minimized maximum pair sum.</returns>
     int MinPairSum(int[] nums);
 }

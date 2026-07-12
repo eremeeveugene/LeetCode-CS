@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumOperationsToConvertAllElementsToZero;
 /// <inheritdoc />
 public sealed class MinimumOperationsToConvertAllElementsToZeroStackAsSpan : IMinimumOperationsToConvertAllElementsToZero
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinOperations(int[] nums)
     {
         Span<int> numsSpan = stackalloc int[nums.Length];

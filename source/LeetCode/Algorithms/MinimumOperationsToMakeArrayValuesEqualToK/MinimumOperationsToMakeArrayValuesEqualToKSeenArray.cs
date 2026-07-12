@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK;
 /// <inheritdoc />
 public sealed class MinimumOperationsToMakeArrayValuesEqualToKSeenArray : IMinimumOperationsToMakeArrayValuesEqualToK
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinOperations(int[] nums, int k)
     {
         var minOperations = 0;

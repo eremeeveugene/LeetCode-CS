@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RemoveDuplicatesFromSortedArray2;
 /// <inheritdoc />
 public sealed class RemoveDuplicatesFromSortedArray2Dictionary : IRemoveDuplicatesFromSortedArray2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int RemoveDuplicates(int[] nums)
     {
         var numsDictionary = new Dictionary<int, int>();

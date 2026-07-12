@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.WordSubsets;
 /// </summary>
 public interface IWordSubsets
 {
+    /// <summary>
+    ///     Finds every word in <paramref name="words1" /> that is universal — containing, for each word in
+    ///     <paramref name="words2" />, at least as many occurrences of every letter as that word requires.
+    /// </summary>
+    /// <param name="words1">The array of candidate words to filter.</param>
+    /// <param name="words2">The array of words whose letter requirements each candidate must satisfy.</param>
+    /// <returns>A list of the universal words from <paramref name="words1" />.</returns>
     IList<string> WordSubsets(string[] words1, string[] words2);
 }

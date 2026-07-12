@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CrawlerLogFolder;
 /// </summary>
 public interface ICrawlerLogFolder
 {
+    /// <summary>
+    ///     Computes the minimum number of operations needed to go back to the main folder after performing the change
+    ///     folder operations described in <paramref name="logs" />.
+    /// </summary>
+    /// <param name="logs">The list of change folder operations performed by the file system.</param>
+    /// <returns>The minimum number of operations needed to return to the main folder.</returns>
     int MinOperations(string[] logs);
 }

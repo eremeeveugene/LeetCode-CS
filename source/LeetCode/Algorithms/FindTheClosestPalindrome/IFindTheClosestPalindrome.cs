@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindTheClosestPalindrome;
 /// </summary>
 public interface IFindTheClosestPalindrome
 {
+    /// <summary>
+    ///     Finds the closest palindrome to <paramref name="n" />, excluding <paramref name="n" /> itself; if there is a tie,
+    ///     returns the smaller one.
+    /// </summary>
+    /// <param name="n">The string representation of an integer.</param>
+    /// <returns>The string representation of the closest palindrome that is not equal to <paramref name="n" />.</returns>
     string NearestPalindromic(string n);
 }

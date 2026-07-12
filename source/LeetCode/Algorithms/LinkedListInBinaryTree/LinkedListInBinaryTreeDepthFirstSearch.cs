@@ -16,14 +16,12 @@ namespace LeetCode.Algorithms.LinkedListInBinaryTree;
 /// <inheritdoc />
 public sealed class LinkedListInBinaryTreeDepthFirstSearch : ILinkedListInBinaryTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * l), where n is the length of the tree and l is the length of the linked list
     ///     Space complexity - O(n + l) for an unbalanced tree, O(log n + l) for a balanced tree, where n is the length of the
     ///     tree and l is the length of the linked list
-    /// </summary>
-    /// <param name="head"></param>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsSubPath(ListNode head, TreeNode root)
     {
         var treeNodeStack = new Stack<TreeNode>();

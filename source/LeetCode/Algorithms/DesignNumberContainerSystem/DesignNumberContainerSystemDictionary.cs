@@ -17,12 +17,11 @@ public sealed class DesignNumberContainerSystemDictionary : IDesignNumberContain
     private readonly Dictionary<int, int> _indexToNumber = [];
     private readonly Dictionary<int, SortedSet<int>> _numberToIndices = [];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="index"></param>
-    /// <param name="number"></param>
+    /// </remarks>
     public void Change(int index, int number)
     {
         if (_indexToNumber.TryGetValue(index, out var existingNumber))
@@ -55,12 +54,11 @@ public sealed class DesignNumberContainerSystemDictionary : IDesignNumberContain
         numberIndices.Add(index);
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="number"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Find(int number)
     {
         if (_numberToIndices.TryGetValue(number, out var numberIndices) && numberIndices.Count > 0)

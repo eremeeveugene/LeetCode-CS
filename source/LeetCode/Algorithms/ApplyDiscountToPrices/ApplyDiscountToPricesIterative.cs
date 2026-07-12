@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.ApplyDiscountToPrices;
 /// <inheritdoc />
 public sealed class ApplyDiscountToPricesIterative : IApplyDiscountToPrices
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="sentence"></param>
-    /// <param name="discount"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string DiscountPrices(string sentence, int discount)
     {
         var resultStringBuilder = new StringBuilder(sentence.Length);

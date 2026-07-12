@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.MagicSquaresInGrid;
 /// </summary>
 public interface IMagicSquaresInGrid
 {
+    /// <summary>
+    ///     Counts the number of 3 x 3 magic square subgrids contained within <paramref name="grid" />.
+    /// </summary>
+    /// <param name="grid">The grid of integers to search for magic squares.</param>
+    /// <returns>The number of 3 x 3 magic squares found inside <paramref name="grid" />.</returns>
     int NumMagicSquaresInside(int[][] grid);
 }

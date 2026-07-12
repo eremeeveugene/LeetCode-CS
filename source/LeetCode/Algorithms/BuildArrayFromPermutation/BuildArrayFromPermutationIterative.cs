@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.BuildArrayFromPermutation;
 /// <inheritdoc />
 public sealed class BuildArrayFromPermutationIterative : IBuildArrayFromPermutation
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] BuildArray(int[] nums)
     {
         var result = new int[nums.Length];

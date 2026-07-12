@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.CousinsInBinaryTree2;
 /// <inheritdoc />
 public sealed class CousinsInBinaryTree2BreadthFirstSearch : ICousinsInBinaryTree2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n), where n is the number of nodes in the binary tree
     ///     Space complexity - O(h), where h is the height of the tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public TreeNode ReplaceValueInTree(TreeNode root)
     {
         var queue = new Queue<TreeNode>();

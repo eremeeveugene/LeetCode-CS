@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CheckIfArrayIsSortedAndRotated;
 /// <inheritdoc />
 public sealed class CheckIfArrayIsSortedAndRotatedIterative : ICheckIfArrayIsSortedAndRotated
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool Check(int[] nums)
     {
         var isRotated = false;

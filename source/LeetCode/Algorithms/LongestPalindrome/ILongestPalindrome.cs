@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.LongestPalindrome;
 /// </summary>
 public interface ILongestPalindrome
 {
+    /// <summary>
+    ///     Computes the length of the longest palindrome that can be built using the characters of <paramref name="s" />, using each character at most as many times as it occurs.
+    /// </summary>
+    /// <param name="s">The string whose characters are used to build a palindrome.</param>
+    /// <returns>The length of the longest palindrome that can be built.</returns>
     int LongestPalindrome(string s);
 }

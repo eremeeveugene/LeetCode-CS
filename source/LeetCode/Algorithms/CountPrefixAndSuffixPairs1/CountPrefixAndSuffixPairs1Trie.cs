@@ -17,12 +17,11 @@ public sealed class CountPrefixAndSuffixPairs1Trie : ICountPrefixAndSuffixPairs1
     private readonly Node _prefixRoot = new();
     private readonly Node _suffixRoot = new();
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2 * L), where L is the average word length
     ///     Space complexity - O(n * L), where L is the average word length
-    /// </summary>
-    /// <param name="words"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountPrefixSuffixPairs(string[] words)
     {
         foreach (var word in words)

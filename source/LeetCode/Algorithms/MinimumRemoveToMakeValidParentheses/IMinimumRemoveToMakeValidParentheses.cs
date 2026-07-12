@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses;
 /// </summary>
 public interface IMinimumRemoveToMakeValidParentheses
 {
+    /// <summary>
+    ///     Removes the minimum number of parentheses from <paramref name="s" /> so that the resulting string is a
+    ///     valid parentheses sequence.
+    /// </summary>
+    /// <param name="s">The string containing lowercase letters and parentheses characters.</param>
+    /// <returns>A valid parentheses string obtained by removing the minimum number of characters from <paramref name="s" />.</returns>
     string MinRemoveToMakeValid(string s);
 }

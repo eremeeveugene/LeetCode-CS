@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MaxDifferenceYouCanGetFromChangingAnInteger;
 /// </summary>
 public interface IMaxDifferenceYouCanGetFromChangingAnInteger
 {
+    /// <summary>
+    ///     Computes the maximum difference obtainable by replacing one digit value with another (each occurrence) in
+    ///     <paramref name="num" /> to form the largest possible value, and separately doing so to form the smallest
+    ///     possible value.
+    /// </summary>
+    /// <param name="num">The positive integer whose digits may be replaced.</param>
+    /// <returns>The difference between the largest and smallest values obtainable from <paramref name="num" /> by a single digit-replacement rule.</returns>
     int MaxDiff(int num);
 }

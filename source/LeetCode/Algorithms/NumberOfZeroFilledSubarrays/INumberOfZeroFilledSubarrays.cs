@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.NumberOfZeroFilledSubarrays;
 /// </summary>
 public interface INumberOfZeroFilledSubarrays
 {
+    /// <summary>
+    ///     Counts the number of subarrays of <paramref name="nums" /> that consist entirely of zeroes.
+    /// </summary>
+    /// <param name="nums">The array of integers to search for zero-filled subarrays.</param>
+    /// <returns>The total number of subarrays that contain only zeroes.</returns>
     long ZeroFilledSubarray(int[] nums);
 }

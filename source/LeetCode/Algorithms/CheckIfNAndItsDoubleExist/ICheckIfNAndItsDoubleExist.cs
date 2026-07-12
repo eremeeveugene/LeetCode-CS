@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CheckIfNAndItsDoubleExist;
 /// </summary>
 public interface ICheckIfNAndItsDoubleExist
 {
+    /// <summary>
+    ///     Determines whether <paramref name="arr" /> contains two distinct indices i and j such that arr[i] is twice
+    ///     arr[j].
+    /// </summary>
+    /// <param name="arr">The array of integers.</param>
+    /// <returns><c>true</c> if an element and its double exist at distinct indices; otherwise, <c>false</c>.</returns>
     bool CheckIfExist(int[] arr);
 }

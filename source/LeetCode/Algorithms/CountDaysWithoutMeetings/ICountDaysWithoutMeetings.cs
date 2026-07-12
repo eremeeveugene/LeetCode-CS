@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CountDaysWithoutMeetings;
 /// </summary>
 public interface ICountDaysWithoutMeetings
 {
+    /// <summary>
+    ///     Counts the days in the range from 1 to <paramref name="days" /> on which no meeting from
+    ///     <paramref name="meetings" /> is scheduled.
+    /// </summary>
+    /// <param name="days">The total number of days an employee is available for work.</param>
+    /// <param name="meetings">The meetings, where each element is an inclusive interval [start, end] of days.</param>
+    /// <returns>The number of days without any scheduled meeting.</returns>
     int CountDays(int days, int[][] meetings);
 }

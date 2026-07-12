@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SmallestNumberWithAllSetBits;
 /// </summary>
 public interface ISmallestNumberWithAllSetBits
 {
+    /// <summary>
+    ///     Finds the smallest number greater than or equal to <paramref name="n" /> whose binary representation
+    ///     consists of only set bits (i.e., of the form 2^x - 1).
+    /// </summary>
+    /// <param name="n">The lower bound integer.</param>
+    /// <returns>The smallest number with all set bits that is at least <paramref name="n" />.</returns>
     int SmallestNumber(int n);
 }

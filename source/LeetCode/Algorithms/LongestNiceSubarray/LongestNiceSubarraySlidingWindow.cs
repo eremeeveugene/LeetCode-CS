@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LongestNiceSubarray;
 /// <inheritdoc />
 public sealed class LongestNiceSubarraySlidingWindow : ILongestNiceSubarray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LongestNiceSubarray(int[] nums)
     {
         var maxLength = 0;

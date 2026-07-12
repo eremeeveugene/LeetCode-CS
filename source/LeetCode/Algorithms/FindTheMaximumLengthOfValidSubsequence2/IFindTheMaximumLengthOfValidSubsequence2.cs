@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.FindTheMaximumLengthOfValidSubsequence2;
 /// </summary>
 public interface IFindTheMaximumLengthOfValidSubsequence2
 {
+    /// <summary>
+    ///     Finds the length of the longest valid subsequence of <paramref name="nums" />, where a subsequence is valid if
+    ///     the sum of every pair of consecutive elements has the same remainder modulo <paramref name="k" />.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <param name="k">The modulus applied to the sums of consecutive subsequence elements.</param>
+    /// <returns>The length of the longest valid subsequence.</returns>
     int MaximumLength(int[] nums, int k);
 }

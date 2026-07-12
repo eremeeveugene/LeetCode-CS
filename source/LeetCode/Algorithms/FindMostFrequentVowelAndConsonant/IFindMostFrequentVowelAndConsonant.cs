@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FindMostFrequentVowelAndConsonant;
 /// </summary>
 public interface IFindMostFrequentVowelAndConsonant
 {
+    /// <summary>
+    ///     Computes the sum of the maximum vowel frequency and the maximum consonant frequency in <paramref name="s" />.
+    /// </summary>
+    /// <param name="s">The string of lowercase English letters.</param>
+    /// <returns>The sum of the frequencies of the most frequent vowel and the most frequent consonant.</returns>
     int MaxFreqSum(string s);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.NumberOfSmoothDescentPeriodsOfStock;
 /// </summary>
 public interface INumberOfSmoothDescentPeriodsOfStock
 {
+    /// <summary>
+    ///     Counts the number of smooth descent periods in <paramref name="prices" />, where each period is a
+    ///     contiguous subarray in which each price is exactly one less than the price before it.
+    /// </summary>
+    /// <param name="prices">The array of daily stock prices.</param>
+    /// <returns>The total number of smooth descent periods in <paramref name="prices" />.</returns>
     long GetDescentPeriods(int[] prices);
 }

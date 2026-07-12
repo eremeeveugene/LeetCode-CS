@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.RemoveDuplicatesFromSortedArray2;
 /// </summary>
 public interface IRemoveDuplicatesFromSortedArray2
 {
+    /// <summary>
+    ///     Removes duplicate values in place from the sorted array <paramref name="nums" /> so that each unique element
+    ///     appears at most twice, preserving order.
+    /// </summary>
+    /// <param name="nums">The sorted array of integers to deduplicate in place.</param>
+    /// <returns>The number of elements remaining at the front of <paramref name="nums" /> after deduplication.</returns>
     int RemoveDuplicates(int[] nums);
 }

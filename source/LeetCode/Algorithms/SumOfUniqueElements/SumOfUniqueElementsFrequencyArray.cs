@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SumOfUniqueElements;
 /// <inheritdoc />
 public sealed class SumOfUniqueElementsFrequencyArray : ISumOfUniqueElements
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumOfUnique(int[] nums)
     {
         var frequencyArray = new int[100];

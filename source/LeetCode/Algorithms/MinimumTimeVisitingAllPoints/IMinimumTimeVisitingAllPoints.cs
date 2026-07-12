@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumTimeVisitingAllPoints;
 /// </summary>
 public interface IMinimumTimeVisitingAllPoints
 {
+    /// <summary>
+    ///     Finds the minimum time, in seconds, needed to visit all the points in <paramref name="points" /> in the
+    ///     given order, moving one unit per second in any of the eight compass directions.
+    /// </summary>
+    /// <param name="points">The ordered list of 2D points, each represented as a two-element coordinate array.</param>
+    /// <returns>The minimum number of seconds required to visit all points in order.</returns>
     int MinTimeToVisitAllPoints(int[][] points);
 }

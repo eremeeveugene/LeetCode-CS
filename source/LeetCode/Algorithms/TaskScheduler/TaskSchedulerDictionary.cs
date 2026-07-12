@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.TaskScheduler;
 /// <inheritdoc />
 public sealed class TaskSchedulerDictionary : ITaskScheduler
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="tasks"></param>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LeastInterval(char[] tasks, int n)
     {
         var taskCounts = new Dictionary<char, int>();

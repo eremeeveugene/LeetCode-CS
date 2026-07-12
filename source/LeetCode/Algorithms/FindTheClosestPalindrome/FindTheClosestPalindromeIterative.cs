@@ -17,12 +17,11 @@ namespace LeetCode.Algorithms.FindTheClosestPalindrome;
 /// <inheritdoc />
 public sealed class FindTheClosestPalindromeIterative : IFindTheClosestPalindrome
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(L), where L is the length of the string
     ///     Space complexity - O(L), where L is the length of the string
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string NearestPalindromic(string n)
     {
         var num = BigInteger.Parse(n);

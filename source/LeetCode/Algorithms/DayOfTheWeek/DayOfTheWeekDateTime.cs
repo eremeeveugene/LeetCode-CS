@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.DayOfTheWeek;
 /// <inheritdoc />
 public sealed class DayOfTheWeekDateTime : IDayOfTheWeek
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="day"></param>
-    /// <param name="month"></param>
-    /// <param name="year"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string DayOfTheWeek(int day, int month, int year)
     {
         var date = new DateTime(year, month, day);

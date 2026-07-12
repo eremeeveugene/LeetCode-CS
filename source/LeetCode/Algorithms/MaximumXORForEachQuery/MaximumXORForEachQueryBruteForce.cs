@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MaximumXORForEachQuery;
 /// <inheritdoc />
 public sealed class MaximumXORForEachQueryBruteForce : IMaximumXORForEachQuery
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2 + n * m)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="maximumBit"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] GetMaximumXor(int[] nums, int maximumBit)
     {
         var result = new int[nums.Length];

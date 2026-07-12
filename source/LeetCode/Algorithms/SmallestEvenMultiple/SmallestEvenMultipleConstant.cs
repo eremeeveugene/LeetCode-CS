@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SmallestEvenMultiple;
 /// <inheritdoc />
 public sealed class SmallestEvenMultipleConstant : ISmallestEvenMultiple
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SmallestEvenMultiple(int n)
     {
         if (n % 2 == 0)

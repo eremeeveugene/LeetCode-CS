@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimizeMaximumPairSumInArray;
 /// <inheritdoc />
 public sealed class MinimizeMaximumPairSumInArraySortingTwoPointers : IMinimizeMaximumPairSumInArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinPairSum(int[] nums)
     {
         Array.Sort(nums);

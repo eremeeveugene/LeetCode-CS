@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountElementsWithMaximumFrequency;
 /// </summary>
 public interface ICountElementsWithMaximumFrequency
 {
+    /// <summary>
+    ///     Counts the total number of elements in <paramref name="nums" /> whose frequency equals the maximum frequency of
+    ///     any element in the array.
+    /// </summary>
+    /// <param name="nums">The array of positive integers.</param>
+    /// <returns>The total count of elements that have the maximum frequency.</returns>
     int MaxFrequencyElements(int[] nums);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.StoneGame;
 /// </summary>
 public interface IStoneGame
 {
+    /// <summary>
+    ///     Determines whether Alice, who moves first and alternates turns with Bob taking stones from either
+    ///     end of <paramref name="piles" /> with both playing optimally, wins the game.
+    /// </summary>
+    /// <param name="piles">The array of stone piles, with an even total number of piles.</param>
+    /// <returns><see langword="true" /> if Alice wins; otherwise, <see langword="false" />.</returns>
     bool StoneGame(int[] piles);
 }

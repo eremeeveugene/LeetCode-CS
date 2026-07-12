@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.BinaryTreePostorderTraversal;
 /// </summary>
 public interface IBinaryTreePostorderTraversal
 {
+    /// <summary>
+    ///     Returns the postorder traversal of the values of the binary tree rooted at <paramref name="root" />.
+    /// </summary>
+    /// <param name="root">The root of the binary tree.</param>
+    /// <returns>The node values in postorder order.</returns>
     IList<int> PostorderTraversal(TreeNode? root);
 }

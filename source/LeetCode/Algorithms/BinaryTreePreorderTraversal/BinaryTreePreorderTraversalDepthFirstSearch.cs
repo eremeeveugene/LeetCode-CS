@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.BinaryTreePreorderTraversal;
 /// <inheritdoc />
 public sealed class BinaryTreePreorderTraversalDepthFirstSearch : IBinaryTreePreorderTraversal
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> PreorderTraversal(TreeNode? root)
     {
         if (root == null)

@@ -19,11 +19,11 @@ public sealed class DesignAnATMMachineGreedy : IDesignAnATMMachine
     private readonly int[] _banknotes = [20, 50, 100, 200, 500];
     private readonly long[] _banknotesCounts = new long[BanknotesCount];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="banknotesCounts"></param>
+    /// </remarks>
     public void Deposit(int[] banknotesCounts)
     {
         for (var i = 0; i < 5; i++)
@@ -32,12 +32,11 @@ public sealed class DesignAnATMMachineGreedy : IDesignAnATMMachine
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="amount"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] Withdraw(int amount)
     {
         var used = new int[BanknotesCount];

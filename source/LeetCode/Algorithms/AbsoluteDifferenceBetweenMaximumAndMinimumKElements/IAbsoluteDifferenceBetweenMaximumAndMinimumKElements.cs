@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElement
 /// </summary>
 public interface IAbsoluteDifferenceBetweenMaximumAndMinimumKElements
 {
+    /// <summary>
+    ///     Computes the absolute difference between the sum of the <paramref name="k" /> largest elements and the sum of
+    ///     the <paramref name="k" /> smallest elements of <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <param name="k">The number of maximum and minimum elements to sum.</param>
+    /// <returns>The absolute difference between the sum of the <paramref name="k" /> largest and <paramref name="k" /> smallest elements.</returns>
     int AbsDifference(int[] nums, int k);
 }

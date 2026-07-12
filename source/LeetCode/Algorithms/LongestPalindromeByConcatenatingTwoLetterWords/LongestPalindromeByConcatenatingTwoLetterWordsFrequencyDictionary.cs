@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LongestPalindromeByConcatenatingTwoLetterWords;
 /// <inheritdoc />
 public sealed class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyDictionary : ILongestPalindromeByConcatenatingTwoLetterWords
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="words"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LongestPalindrome(string[] words)
     {
         var longestPalindrome = 0;

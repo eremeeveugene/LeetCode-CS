@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberOfSeniorCitizens;
 /// <inheritdoc />
 public sealed class NumberOfSeniorCitizensStringParsing : INumberOfSeniorCitizens
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="details"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountSeniors(string[] details)
     {
         return details.Count(detail => int.Parse(detail.Substring(11, 2)) > 60);

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MovePiecesToObtainString;
 /// <inheritdoc />
 public sealed class MovePiecesToObtainStringTwoPointers : IMovePiecesToObtainString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="start"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanChange(string start, string target)
     {
         var startIndex = 0;

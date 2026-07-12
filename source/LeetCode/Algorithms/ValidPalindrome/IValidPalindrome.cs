@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ValidPalindrome;
 /// </summary>
 public interface IValidPalindrome
 {
+    /// <summary>
+    ///     Determines whether <paramref name="s" /> is a palindrome after converting all uppercase letters to
+    ///     lowercase and removing all non-alphanumeric characters.
+    /// </summary>
+    /// <param name="s">The string to check.</param>
+    /// <returns><see langword="true" /> if the cleaned string is a palindrome; otherwise, <see langword="false" />.</returns>
     bool IsPalindrome(string s);
 }

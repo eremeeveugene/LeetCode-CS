@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.LargestDivisibleSubset;
 /// </summary>
 public interface ILargestDivisibleSubset
 {
+    /// <summary>
+    ///     Finds the largest subset of <paramref name="nums" /> in which every pair of elements satisfies that one divides
+    ///     the other.
+    /// </summary>
+    /// <param name="nums">The array of distinct positive integers.</param>
+    /// <returns>The largest divisible subset of <paramref name="nums" />.</returns>
     IList<int> LargestDivisibleSubset(int[] nums);
 }

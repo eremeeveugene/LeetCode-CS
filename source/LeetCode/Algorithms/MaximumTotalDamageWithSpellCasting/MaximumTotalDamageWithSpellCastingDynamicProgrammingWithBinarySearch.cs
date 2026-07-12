@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumTotalDamageWithSpellCasting;
 /// <inheritdoc />
 public sealed class MaximumTotalDamageWithSpellCastingDynamicProgrammingWithBinarySearch : IMaximumTotalDamageWithSpellCasting
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n), where n is the length of power
     ///     Space complexity - O(m), where m is the number of unique spell damages
-    /// </summary>
-    /// <param name="power"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long MaximumTotalDamage(int[] power)
     {
         Array.Sort(power);

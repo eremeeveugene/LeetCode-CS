@@ -16,12 +16,11 @@ public sealed class MinimizeMaximumPairSumInArrayCounting : IMinimizeMaximumPair
 {
     private const int MaxValue = 100_000;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O()
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinPairSum(int[] nums)
     {
         Span<int> frequencies = stackalloc int[MaxValue + 1];

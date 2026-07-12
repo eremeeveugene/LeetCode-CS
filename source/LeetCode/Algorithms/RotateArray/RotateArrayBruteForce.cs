@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RotateArray;
 /// <inheritdoc />
 public sealed class RotateArrayBruteForce : IRotateArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * k)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
+    /// </remarks>
     public void Rotate(int[] nums, int k)
     {
         var n = nums.Length;

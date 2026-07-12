@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.PassThePillow;
 /// </summary>
 public interface IPassThePillow
 {
+    /// <summary>
+    ///     Determines which of the <paramref name="n" /> people numbered 1 to <paramref name="n" /> is holding the pillow
+    ///     after <paramref name="time" /> seconds, given that the pillow is passed each second and reverses direction upon
+    ///     reaching either end.
+    /// </summary>
+    /// <param name="n">The number of people passing the pillow.</param>
+    /// <param name="time">The number of seconds that elapse.</param>
+    /// <returns>The number of the person holding the pillow after <paramref name="time" /> seconds.</returns>
     int PassThePillow(int n, int time);
 }

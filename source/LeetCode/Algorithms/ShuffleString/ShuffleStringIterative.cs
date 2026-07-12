@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.ShuffleString;
 /// <inheritdoc />
 public sealed class ShuffleStringIterative : IShuffleString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="indices"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string RestoreString(string s, int[] indices)
     {
         var sIndex = 0;

@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.DistributeCoinsInBinaryTree;
 /// </summary>
 public interface IDistributeCoinsInBinaryTree
 {
+    /// <summary>
+    ///     Computes the minimum number of coin moves needed so that every node in the binary tree rooted at
+    ///     <paramref name="root" /> has exactly one coin.
+    /// </summary>
+    /// <param name="root">The root node of the binary tree whose nodes collectively hold as many coins as nodes.</param>
+    /// <returns>The minimum number of moves required to distribute the coins evenly.</returns>
     int DistributeCoins(TreeNode? root);
 }

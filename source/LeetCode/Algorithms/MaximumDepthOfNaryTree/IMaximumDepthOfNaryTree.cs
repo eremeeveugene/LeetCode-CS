@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.MaximumDepthOfNaryTree;
 /// </summary>
 public interface IMaximumDepthOfNaryTree
 {
+    /// <summary>
+    ///     Computes the maximum depth of the N-ary tree rooted at <paramref name="root" />.
+    /// </summary>
+    /// <param name="root">The root node of the N-ary tree, or <see langword="null" /> for an empty tree.</param>
+    /// <returns>The number of nodes along the longest path from <paramref name="root" /> down to the farthest leaf node.</returns>
     int MaxDepth(Node? root);
 }

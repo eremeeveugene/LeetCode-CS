@@ -16,13 +16,12 @@ namespace LeetCode.Algorithms.EvenOddTree;
 /// <inheritdoc />
 public sealed class EvenOddTreeBreadthFirst : IEvenOddTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n), where n is the number of nodes in the binary tree
     ///     Space complexity - O(n) for a skewed tree, where n is the number of nodes in the binary tree. O(w) for a balanced
     ///     tree, where w is the maximum width of the tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsEvenOddTree(TreeNode? root)
     {
         if (root == null)

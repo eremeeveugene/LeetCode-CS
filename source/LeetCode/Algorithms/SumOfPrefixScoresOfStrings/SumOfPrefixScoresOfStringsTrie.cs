@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SumOfPrefixScoresOfStrings;
 /// <inheritdoc />
 public sealed class SumOfPrefixScoresOfStringsTrie : ISumOfPrefixScoresOfStrings
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(N * L), where N is the number of words and L is the average length of the words
     ///     Space complexity - O(N * L), where N is the number of words and L is the average length of the words
-    /// </summary>
-    /// <param name="words"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] SumPrefixScores(string[] words)
     {
         var trie = new Trie(words);

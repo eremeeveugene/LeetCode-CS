@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumSwap;
 /// <inheritdoc />
 public sealed class MaximumSwapGreedy : IMaximumSwap
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaximumSwap(int num)
     {
         var digits = num.ToString().ToCharArray();

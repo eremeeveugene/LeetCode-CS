@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RowWithMaximumOnes;
 /// <inheritdoc />
 public sealed class RowWithMaximumOnesBruteForce : IRowWithMaximumOnes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="mat"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] RowAndMaximumOnes(int[][] mat)
     {
         var index = 0;

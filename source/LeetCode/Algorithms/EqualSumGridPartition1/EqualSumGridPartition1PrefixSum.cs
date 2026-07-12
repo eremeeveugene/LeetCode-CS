@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.EqualSumGridPartition1;
 /// <inheritdoc />
 public sealed class EqualSumGridPartition1PrefixSum : IEqualSumGridPartition1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanPartitionGrid(int[][] grid)
     {
         var m = grid.Length;

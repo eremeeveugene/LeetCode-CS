@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.SortTheJumbledNumbers;
 /// <inheritdoc />
 public sealed class SortTheJumbledNumbersSortingArray : ISortTheJumbledNumbers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="mapping"></param>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] SortJumbled(int[] mapping, int[] nums)
     {
         var mappedNums = new (int mapped, int original)[nums.Length];

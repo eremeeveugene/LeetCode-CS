@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumMatrixSum;
 /// <inheritdoc />
 public sealed class MaximumMatrixSumBruteForce : IMaximumMatrixSum
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="matrix"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long MaxMatrixSum(int[][] matrix)
     {
         long sum = 0;

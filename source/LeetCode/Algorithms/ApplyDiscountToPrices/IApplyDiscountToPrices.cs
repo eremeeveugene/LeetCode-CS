@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.ApplyDiscountToPrices;
 /// </summary>
 public interface IApplyDiscountToPrices
 {
+    /// <summary>
+    ///     Applies a <paramref name="discount" /> percentage to every price in <paramref name="sentence" /> and formats the
+    ///     updated prices with exactly two decimal places.
+    /// </summary>
+    /// <param name="sentence">The sentence containing words and prices, where a price is a dollar sign followed by digits.</param>
+    /// <param name="discount">The discount percentage to apply to each price.</param>
+    /// <returns>The modified sentence with all prices updated to reflect the discount.</returns>
     string DiscountPrices(string sentence, int discount);
 }

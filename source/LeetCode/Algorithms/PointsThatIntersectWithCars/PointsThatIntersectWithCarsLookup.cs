@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PointsThatIntersectWithCars;
 /// <inheritdoc />
 public sealed class PointsThatIntersectWithCarsLookup : IPointsThatIntersectWithCars
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * R), where n is the length of nums and R = max(end) - min(start) + 1
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumberOfPoints(IList<IList<int>> nums)
     {
         Span<bool> lookup = stackalloc bool[100];

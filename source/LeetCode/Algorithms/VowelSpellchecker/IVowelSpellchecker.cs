@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.VowelSpellchecker;
 /// </summary>
 public interface IVowelSpellchecker
 {
+    /// <summary>
+    ///     Resolves each query in <paramref name="queries" /> to a matching entry in <paramref name="wordlist" />,
+    ///     first by exact match, then case-insensitive match, then match after treating all vowels as
+    ///     interchangeable.
+    /// </summary>
+    /// <param name="wordlist">The list of correctly spelled words used as the dictionary.</param>
+    /// <param name="queries">The list of words to spellcheck against <paramref name="wordlist" />.</param>
+    /// <returns>An array of correction results, one per query, or an empty string if no match is found.</returns>
     string[] Spellchecker(string[] wordlist, string[] queries);
 }

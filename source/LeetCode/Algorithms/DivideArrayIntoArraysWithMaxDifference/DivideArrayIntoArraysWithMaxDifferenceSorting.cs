@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.DivideArrayIntoArraysWithMaxDifference;
 /// <inheritdoc />
 public sealed class DivideArrayIntoArraysWithMaxDifferenceSorting : IDivideArrayIntoArraysWithMaxDifference
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
-    ///     Time complexity - O(log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    ///     Space complexity - O(log n)
+    /// </remarks>
     public int[][] DivideArray(int[] nums, int k)
     {
         Array.Sort(nums);

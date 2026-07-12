@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ReplaceNonCoprimeNumbersInArray;
 /// </summary>
 public interface IReplaceNonCoprimeNumbersInArray
 {
+    /// <summary>
+    ///     Repeatedly merges adjacent elements of <paramref name="nums" /> that are not coprime by replacing them with
+    ///     their least common multiple, until every pair of adjacent elements is coprime.
+    /// </summary>
+    /// <param name="nums">The array of integers to process.</param>
+    /// <returns>The resulting array after all non-coprime adjacent elements have been merged.</returns>
     IList<int> ReplaceNonCoprimes(int[] nums);
 }

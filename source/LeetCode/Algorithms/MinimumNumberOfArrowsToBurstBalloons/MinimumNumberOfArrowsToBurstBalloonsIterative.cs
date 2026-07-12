@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons;
 /// <inheritdoc />
 public sealed class MinimumNumberOfArrowsToBurstBalloonsIterative : IMinimumNumberOfArrowsToBurstBalloons
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="points"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindMinArrowShots(int[][] points)
     {
         var arrowShotsCount = 1;

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MatrixSimilarityAfterCyclicShifts;
 /// <inheritdoc />
 public sealed class MatrixSimilarityAfterCyclicShiftsMath : IMatrixSimilarityAfterCyclicShifts
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="mat"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool AreSimilar(int[][] mat, int k)
     {
         var m = mat.Length;

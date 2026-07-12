@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.LowestCommonAncestorOfDeepestLeaves;
 /// <inheritdoc />
 public sealed class LowestCommonAncestorOfDeepestLeavesDepthFirstSearch : ILowestCommonAncestorOfDeepestLeaves
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public TreeNode LcaDeepestLeaves(TreeNode root)
     {
         return FindLcaDeepestLeaves(root).TreeNode!;

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.NumberOfEmployeesWhoMetTheTarget;
 /// </summary>
 public interface INumberOfEmployeesWhoMetTheTarget
 {
+    /// <summary>
+    ///     Counts how many employees worked at least <paramref name="target" /> hours, given each employee's hours
+    ///     worked in <paramref name="hours" />.
+    /// </summary>
+    /// <param name="hours">The array where each element is the number of hours a specific employee worked.</param>
+    /// <param name="target">The minimum number of hours required to meet the target.</param>
+    /// <returns>The number of employees who worked at least <paramref name="target" /> hours.</returns>
     int NumberOfEmployeesWhoMetTarget(int[] hours, int target);
 }

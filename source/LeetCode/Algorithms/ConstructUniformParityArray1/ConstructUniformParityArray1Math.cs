@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ConstructUniformParityArray1;
 /// <inheritdoc />
 public sealed class ConstructUniformParityArray1Math : IConstructUniformParityArray1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool UniformArray(int[] nums1)
     {
         return true;

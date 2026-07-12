@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CheckIfParenthesesStringCanBeValid;
 /// <inheritdoc />
 public sealed class CheckIfParenthesesStringCanBeValidGreedy : ICheckIfParenthesesStringCanBeValid
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="locked"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanBeValid(string s, string locked)
     {
         if (s.Length % 2 == 1)

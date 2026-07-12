@@ -16,13 +16,11 @@ public sealed class WaysToExpressAnIntegerAsSumOfPowersDynamicProgramming : IWay
 {
     private const int Mod = 1_000_000_007;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^(1 + 1/x))
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="x"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumberOfWays(int n, int x)
     {
         var dp = new long[n + 1];

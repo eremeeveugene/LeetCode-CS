@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SignOfTheProductOfAnArray;
 /// </summary>
 public interface ISignOfTheProductOfAnArray
 {
+    /// <summary>
+    ///     Determines the sign of the product of all elements in <paramref name="nums" /> without computing the
+    ///     product directly.
+    /// </summary>
+    /// <param name="nums">The array of integers whose product sign is to be determined.</param>
+    /// <returns>1 if the product is positive, -1 if negative, or 0 if the product is zero.</returns>
     int ArraySign(int[] nums);
 }

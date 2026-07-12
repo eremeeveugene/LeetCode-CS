@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PlusOne;
 /// <inheritdoc />
 public sealed class PlusOneIncrementDigitArrayV2 : IPlusOne
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="digits"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] PlusOne(int[] digits)
     {
         for (var i = digits.Length - 1; i >= 0; i--)

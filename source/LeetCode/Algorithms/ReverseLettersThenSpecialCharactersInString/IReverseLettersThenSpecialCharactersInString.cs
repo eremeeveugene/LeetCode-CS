@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ReverseLettersThenSpecialCharactersInString;
 /// </summary>
 public interface IReverseLettersThenSpecialCharactersInString
 {
+    /// <summary>
+    ///     Reverses the order of the letters in <paramref name="s" /> while keeping every non-letter character fixed in
+    ///     its original position.
+    /// </summary>
+    /// <param name="s">The string containing letters and special characters to process.</param>
+    /// <returns>The resulting string with letters reversed and special characters left in place.</returns>
     string ReverseByType(string s);
 }

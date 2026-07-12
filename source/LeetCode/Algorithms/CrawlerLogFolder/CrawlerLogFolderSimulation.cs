@@ -17,12 +17,11 @@ public sealed class CrawlerLogFolderSimulation : ICrawlerLogFolder
     private const string MoveToParent = "../";
     private const string Remain = "./";
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="logs"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinOperations(string[] logs)
     {
         var depth = 0;

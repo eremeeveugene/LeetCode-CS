@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.PartitionArraySuchThatMaximumDifferenceIsK;
 /// </summary>
 public interface IPartitionArraySuchThatMaximumDifferenceIsK
 {
+    /// <summary>
+    ///     Finds the minimum number of subsequences needed to partition <paramref name="nums" /> so that the difference
+    ///     between the maximum and minimum values in each subsequence does not exceed <paramref name="k" />.
+    /// </summary>
+    /// <param name="nums">The array of integers to partition.</param>
+    /// <param name="k">The maximum allowed difference between the largest and smallest values in a subsequence.</param>
+    /// <returns>The minimum number of subsequences required.</returns>
     int PartitionArray(int[] nums, int k);
 }

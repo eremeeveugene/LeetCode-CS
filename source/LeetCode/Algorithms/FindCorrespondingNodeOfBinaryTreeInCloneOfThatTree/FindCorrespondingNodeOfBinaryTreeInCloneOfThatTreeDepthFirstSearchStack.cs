@@ -16,14 +16,11 @@ namespace LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree
 /// <inheritdoc />
 public sealed class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStack : IFindCorrespondingNodeOfBinaryTreeInCloneOfThatTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n) for a skewed tree, O(log n) for balanced tree
-    /// </summary>
-    /// <param name="original"></param>
-    /// <param name="cloned"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public TreeNode? GetTargetCopy(TreeNode? original, TreeNode? cloned, TreeNode? target)
     {
         if (original == null || cloned == null || target == null)

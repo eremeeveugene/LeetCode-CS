@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.SmallestSubtreeWithAllTheDeepestNodes;
 /// </summary>
 public interface ISmallestSubtreeWithAllTheDeepestNodes
 {
+    /// <summary>
+    ///     Finds the smallest subtree of the binary tree rooted at <paramref name="root" /> that contains all
+    ///     of the deepest nodes.
+    /// </summary>
+    /// <param name="root">The root of the binary tree.</param>
+    /// <returns>The root of the smallest subtree containing all the deepest nodes.</returns>
     TreeNode SubtreeWithAllDeepest(TreeNode root);
 }

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MaximumAverageSubarray1;
 /// </summary>
 public interface IMaximumAverageSubarray1
 {
+    /// <summary>
+    ///     Finds the maximum average value of any contiguous subarray of <paramref name="nums" /> with length
+    ///     <paramref name="k" />.
+    /// </summary>
+    /// <param name="nums">The array of integers to search.</param>
+    /// <param name="k">The length of the subarray to average.</param>
+    /// <returns>The maximum average value achievable by a contiguous subarray of length <paramref name="k" />.</returns>
     double FindMaxAverage(int[] nums, int k);
 }

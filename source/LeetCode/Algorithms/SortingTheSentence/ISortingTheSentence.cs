@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SortingTheSentence;
 /// </summary>
 public interface ISortingTheSentence
 {
+    /// <summary>
+    ///     Reconstructs the original sentence from <paramref name="s" />, in which each word is suffixed with
+    ///     its 1-indexed position in the sentence.
+    /// </summary>
+    /// <param name="s">The shuffled sentence with position-suffixed words.</param>
+    /// <returns>The original sentence with words restored to their correct order.</returns>
     string SortSentence(string s);
 }

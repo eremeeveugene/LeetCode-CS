@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumCountOfPositiveIntegerAndNegativeInteger;
 /// </summary>
 public interface IMaximumCountOfPositiveIntegerAndNegativeInteger
 {
+    /// <summary>
+    ///     Computes the larger of the count of positive integers and the count of negative integers in the sorted array
+    ///     <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The sorted array of integers to count positive and negative values in.</param>
+    /// <returns>The maximum between the number of positive integers and the number of negative integers in <paramref name="nums" />.</returns>
     int MaximumCount(int[] nums);
 }

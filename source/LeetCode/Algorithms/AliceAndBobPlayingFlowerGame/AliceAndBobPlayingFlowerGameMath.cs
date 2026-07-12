@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.AliceAndBobPlayingFlowerGame;
 /// <inheritdoc />
 public sealed class AliceAndBobPlayingFlowerGameMath : IAliceAndBobPlayingFlowerGame
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="m"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long FlowerGame(int n, int m)
     {
         return (long)n * m / 2;

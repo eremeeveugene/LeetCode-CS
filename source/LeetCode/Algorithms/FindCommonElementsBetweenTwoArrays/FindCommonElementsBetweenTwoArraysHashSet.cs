@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindCommonElementsBetweenTwoArrays;
 /// <inheritdoc />
 public sealed class FindCommonElementsBetweenTwoArraysHashSet : IFindCommonElementsBetweenTwoArrays
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(n + m)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] FindIntersectionValues(int[] nums1, int[] nums2)
     {
         var nums1HashSet = new HashSet<int>(nums1);

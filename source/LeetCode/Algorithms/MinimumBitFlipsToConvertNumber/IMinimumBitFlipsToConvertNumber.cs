@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimumBitFlipsToConvertNumber;
 /// </summary>
 public interface IMinimumBitFlipsToConvertNumber
 {
+    /// <summary>
+    ///     Finds the minimum number of bit flips required to convert <paramref name="start" /> into
+    ///     <paramref name="goal" />.
+    /// </summary>
+    /// <param name="start">The starting integer.</param>
+    /// <param name="goal">The target integer.</param>
+    /// <returns>The minimum number of bit flips needed to convert <paramref name="start" /> to <paramref name="goal" />.</returns>
     int MinBitFlips(int start, int goal);
 }

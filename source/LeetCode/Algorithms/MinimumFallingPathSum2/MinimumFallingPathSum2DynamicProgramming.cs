@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumFallingPathSum2;
 /// <inheritdoc />
 public sealed class MinimumFallingPathSum2DynamicProgramming : IMinimumFallingPathSum2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinFallingPathSum(int[][] grid)
     {
         var n = grid.Length;

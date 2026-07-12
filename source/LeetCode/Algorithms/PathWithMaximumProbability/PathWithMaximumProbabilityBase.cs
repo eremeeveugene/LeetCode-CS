@@ -11,17 +11,22 @@
 
 namespace LeetCode.Algorithms.PathWithMaximumProbability;
 
+/// <inheritdoc />
 public abstract class PathWithMaximumProbabilityBase : IPathWithMaximumProbability
 {
     public abstract double MaxProbability(int n, int[][] edges, double[] successProbability, int startNode, int endNode);
 
     /// <summary>
-    ///     Time Complexity - O(n), where n is the number of edges
-    ///     Time Complexity - O(n + m), where n is the number of edges and m is the number of edges
+    ///     Builds an adjacency dictionary mapping each node to its neighbors and the success probability of the connecting
+    ///     edge.
     /// </summary>
-    /// <param name="edges"></param>
-    /// <param name="successProbability"></param>
-    /// <returns></returns>
+    /// <param name="edges">The undirected edges of the graph.</param>
+    /// <param name="successProbability">The success probability of each edge.</param>
+    /// <returns>A dictionary mapping each node to its list of (neighbor, probability) pairs.</returns>
+    /// <remarks>
+    ///     Time complexity - O(n), where n is the number of edges
+    ///     Space complexity - O(n + m), where n is the number of edges and m is the number of nodes
+    /// </remarks>
     protected static Dictionary<int, List<(int Node, double Probability)>> GetEdgesDictionary(int[][] edges, double[] successProbability)
     {
         var edgesDictionary = new Dictionary<int, List<(int Node, double Probability)>>();

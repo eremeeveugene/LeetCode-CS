@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ShortestSubarrayToBeRemovedToMakeArraySorted;
 /// <inheritdoc />
 public sealed class ShortestSubarrayToBeRemovedToMakeArraySortedTwoPointers : IShortestSubarrayToBeRemovedToMakeArraySorted
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindLengthOfShortestSubarray(int[] arr)
     {
         var left = 0;

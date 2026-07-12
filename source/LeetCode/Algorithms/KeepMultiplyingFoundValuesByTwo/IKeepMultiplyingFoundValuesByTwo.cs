@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo;
 /// </summary>
 public interface IKeepMultiplyingFoundValuesByTwo
 {
+    /// <summary>
+    ///     Repeatedly doubles <paramref name="original" /> while its current value is found in <paramref name="nums" /> and
+    ///     returns the final value.
+    /// </summary>
+    /// <param name="nums">The array of integers to search.</param>
+    /// <param name="original">The starting value to search for and multiply.</param>
+    /// <returns>The final value of <paramref name="original" /> once it is no longer found in <paramref name="nums" />.</returns>
     int FindFinalValue(int[] nums, int original);
 }

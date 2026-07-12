@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CheckIfAllAsAppearsBeforeAllBs;
 /// <inheritdoc />
 public sealed class CheckIfAllAsAppearsBeforeAllBsIterative : ICheckIfAllAsAppearsBeforeAllBs
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckString(string s)
     {
         for (var i = 0; i < s.Length - 1; i++)

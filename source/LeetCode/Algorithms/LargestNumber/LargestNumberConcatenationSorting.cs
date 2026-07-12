@@ -14,13 +14,12 @@ namespace LeetCode.Algorithms.LargestNumber;
 /// <inheritdoc />
 public sealed class LargestNumberConcatenationSorting : ILargestNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n * k), where n is the number of numbers and k is the number of digits in the largest
     ///     number
     ///     Space complexity - O(n * k), where n is the number of numbers and k is the number of digits in the largest number
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string LargestNumber(int[] nums)
     {
         var numsStrings = nums.Select(n => n.ToString()).ToArray();

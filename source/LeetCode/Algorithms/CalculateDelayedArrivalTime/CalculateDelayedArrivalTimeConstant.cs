@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CalculateDelayedArrivalTime;
 /// <inheritdoc />
 public sealed class CalculateDelayedArrivalTimeConstant : ICalculateDelayedArrivalTime
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="arrivalTime"></param>
-    /// <param name="delayedTime"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindDelayedArrivalTime(int arrivalTime, int delayedTime)
     {
         return (arrivalTime + delayedTime) % 24;

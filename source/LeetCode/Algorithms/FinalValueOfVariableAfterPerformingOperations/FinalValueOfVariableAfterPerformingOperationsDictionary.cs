@@ -16,12 +16,11 @@ public sealed class FinalValueOfVariableAfterPerformingOperationsDictionary : IF
 {
     private static readonly Dictionary<string, int> OperationsDictionary = new() { { "++X", 1 }, { "X++", 1 }, { "--X", -1 }, { "X--", -1 } };
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="operations"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FinalValueAfterOperations(string[] operations)
     {
         var finalValue = 0;

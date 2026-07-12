@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MaximumSumOfDistinctSubarraysWithLengthK;
 /// <inheritdoc />
 public sealed class MaximumSumOfDistinctSubarraysWithLengthKSlidingWindow : IMaximumSumOfDistinctSubarraysWithLengthK
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long MaximumSubarraySum(int[] nums, int k)
     {
         long maxSum = 0;

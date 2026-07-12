@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.CheckDivisibilityByDigitSumAndProduct;
 /// </summary>
 public interface ICheckDivisibilityByDigitSumAndProduct
 {
+    /// <summary>
+    ///     Determines whether <paramref name="n" /> is divisible by the sum of its digit sum and digit product.
+    /// </summary>
+    /// <param name="n">The number to check.</param>
+    /// <returns>
+    ///     <c>true</c> if <paramref name="n" /> is divisible by the sum of its digit sum and digit product; otherwise,
+    ///     <c>false</c>.
+    /// </returns>
     bool CheckDivisibility(int n);
 }

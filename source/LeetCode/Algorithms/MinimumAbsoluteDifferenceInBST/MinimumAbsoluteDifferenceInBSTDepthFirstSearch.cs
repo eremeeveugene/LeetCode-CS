@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.MinimumAbsoluteDifferenceInBST;
 /// <inheritdoc />
 public sealed class MinimumAbsoluteDifferenceInBSTDepthFirstSearch : IMinimumAbsoluteDifferenceInBST
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
-    ///     Time complexity - O(n) for a skewed tree, O(log n) for a balanced tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    ///     Space complexity - O(n) for a skewed tree, O(log n) for a balanced tree
+    /// </remarks>
     public int GetMinimumDifference(TreeNode root)
     {
         TreeNode? prev = null;

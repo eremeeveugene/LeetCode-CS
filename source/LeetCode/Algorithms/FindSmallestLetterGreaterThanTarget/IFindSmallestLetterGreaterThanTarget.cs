@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindSmallestLetterGreaterThanTarget;
 /// </summary>
 public interface IFindSmallestLetterGreaterThanTarget
 {
+    /// <summary>
+    ///     Finds the smallest character in the sorted array <paramref name="letters" /> that is lexicographically greater than <paramref name="target" />, wrapping around to the first letter if none is greater.
+    /// </summary>
+    /// <param name="letters">The sorted array of characters to search.</param>
+    /// <param name="target">The character to compare against.</param>
+    /// <returns>The smallest character greater than <paramref name="target" />.</returns>
     char NextGreatestLetter(char[] letters, char target);
 }

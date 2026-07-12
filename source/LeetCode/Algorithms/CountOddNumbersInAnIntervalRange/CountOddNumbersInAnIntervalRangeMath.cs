@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CountOddNumbersInAnIntervalRange;
 /// <inheritdoc />
 public sealed class CountOddNumbersInAnIntervalRangeMath : ICountOddNumbersInAnIntervalRange
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="low"></param>
-    /// <param name="high"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountOdds(int low, int high)
     {
         return ((high + 1) / 2) - (low / 2);

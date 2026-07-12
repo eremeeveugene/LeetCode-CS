@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.BagOfTokens;
 /// </summary>
 public interface IBagOfTokens
 {
+    /// <summary>
+    ///     Plays the <paramref name="tokens" /> face up or down, starting with the given <paramref name="power" />, to
+    ///     maximize the final score.
+    /// </summary>
+    /// <param name="tokens">The values of the tokens available to play.</param>
+    /// <param name="power">The starting power available to spend on playing tokens face up.</param>
+    /// <returns>The maximum score achievable by playing the tokens optimally.</returns>
     int BagOfTokensScore(int[] tokens, int power);
 }

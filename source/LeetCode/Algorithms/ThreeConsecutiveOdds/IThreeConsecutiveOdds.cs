@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.ThreeConsecutiveOdds;
 /// </summary>
 public interface IThreeConsecutiveOdds
 {
+    /// <summary>
+    ///     Determines whether <paramref name="arr" /> contains three consecutive odd numbers.
+    /// </summary>
+    /// <param name="arr">The array of integers to inspect.</param>
+    /// <returns><see langword="true" /> if three consecutive odd numbers exist; otherwise, <see langword="false" />.</returns>
     bool ThreeConsecutiveOdds(int[] arr);
 }

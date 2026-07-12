@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.LongestBinarySubsequenceLessThanOrEqualToK;
 /// <inheritdoc />
 public sealed class LongestBinarySubsequenceLessThanOrEqualToKGreedy : ILongestBinarySubsequenceLessThanOrEqualToK
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LongestSubsequence(string s, int k)
     {
         var count = 0;

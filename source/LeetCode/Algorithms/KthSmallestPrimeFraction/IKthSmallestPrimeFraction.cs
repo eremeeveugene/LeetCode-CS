@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.KthSmallestPrimeFraction;
 /// </summary>
 public interface IKthSmallestPrimeFraction
 {
+    /// <summary>
+    ///     Finds the <paramref name="k" />-th smallest fraction formed by dividing pairs of elements of
+    ///     <paramref name="arr" />.
+    /// </summary>
+    /// <param name="arr">The sorted array of 1 and prime numbers.</param>
+    /// <param name="k">The 1-based rank of the fraction to find.</param>
+    /// <returns>An array of two integers where the first element is the numerator and the second is the denominator of the <paramref name="k" />-th smallest fraction.</returns>
     int[] KthSmallestPrimeFraction(int[] arr, int k);
 }

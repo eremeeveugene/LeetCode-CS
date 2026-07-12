@@ -19,22 +19,24 @@ public sealed class FindElementsInContaminatedBinaryTreeDepthFirstSearch : IFind
     private readonly TreeNode _root;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="FindElementsInContaminatedBinaryTreeDepthFirstSearch" /> class.
+    /// </summary>
+    /// <param name="root">The root of the contaminated binary tree.</param>
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="root"></param>
+    /// </remarks>
     public FindElementsInContaminatedBinaryTreeDepthFirstSearch(TreeNode root)
     {
         _root = root;
         _root.val = 0;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool Find(int target)
     {
         var node = _root;

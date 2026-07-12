@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindTheLongestSubstringContainingVowelsInEvenCount
 /// </summary>
 public interface IFindTheLongestSubstringContainingVowelsInEvenCounts
 {
+    /// <summary>
+    ///     Finds the size of the longest substring of <paramref name="s" /> in which each vowel appears an even number of
+    ///     times.
+    /// </summary>
+    /// <param name="s">The string to search.</param>
+    /// <returns>The length of the longest substring containing each vowel an even number of times.</returns>
     int FindTheLongestSubstring(string s);
 }

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumPairRemovalToSortArray1;
 /// </summary>
 public interface IMinimumPairRemovalToSortArray1
 {
+    /// <summary>
+    ///     Finds the minimum number of operations needed to make <paramref name="nums" /> non-decreasing, where each
+    ///     operation replaces the adjacent pair with the smallest sum by that sum.
+    /// </summary>
+    /// <param name="nums">The array of integers to sort into non-decreasing order.</param>
+    /// <returns>The minimum number of pair-removal operations required.</returns>
     int MinimumPairRemoval(int[] nums);
 }

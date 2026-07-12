@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.TwoOutOfThree;
 /// </summary>
 public interface ITwoOutOfThree
 {
+    /// <summary>
+    ///     Finds every value that appears in at least two of the arrays <paramref name="nums1" />,
+    ///     <paramref name="nums2" />, and <paramref name="nums3" />.
+    /// </summary>
+    /// <param name="nums1">The first array of distinct integers.</param>
+    /// <param name="nums2">The second array of distinct integers.</param>
+    /// <param name="nums3">The third array of distinct integers.</param>
+    /// <returns>A list of the distinct values present in at least two of the three arrays.</returns>
     IList<int> TwoOutOfThree(int[] nums1, int[] nums2, int[] nums3);
 }

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.TwoSum2InputArrayIsSorted;
 /// </summary>
 public interface ITwoSum2InputArrayIsSorted
 {
+    /// <summary>
+    ///     Finds the 1-based indices of the two elements in the sorted array <paramref name="numbers" /> that add
+    ///     up to <paramref name="target" />.
+    /// </summary>
+    /// <param name="numbers">The array of integers sorted in non-decreasing order to search.</param>
+    /// <param name="target">The target sum to find among two elements.</param>
+    /// <returns>An array containing the 1-based indices of the two numbers that add up to <paramref name="target" />.</returns>
     int[] TwoSum(int[] numbers, int target);
 }

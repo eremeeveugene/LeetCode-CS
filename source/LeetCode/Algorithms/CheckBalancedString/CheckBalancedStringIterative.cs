@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CheckBalancedString;
 /// <inheritdoc />
 public sealed class CheckBalancedStringIterative : ICheckBalancedString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsBalanced(string num)
     {
         var sum = 0;

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ParsingBooleanExpression;
 /// <inheritdoc />
 public sealed class ParsingBooleanExpressionRecursive : IParsingBooleanExpression
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="expression"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool ParseBoolExpr(string expression)
     {
         if (expression.Length == 1)

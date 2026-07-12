@@ -18,14 +18,11 @@ public sealed class LexicographicallySmallestEquivalentStringAdjacencyUnionFind 
 {
     private const int Length = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n), where m is the length of s1 and n is the length of baseStr
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s1"></param>
-    /// <param name="s2"></param>
-    /// <param name="baseStr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string SmallestEquivalentString(string s1, string s2, string baseStr)
     {
         var parent = new int[Length];

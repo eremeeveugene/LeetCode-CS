@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations1;
 /// <inheritdoc />
 public sealed class CheckIfStringsCanBeMadeEqualWithOperationsPairMatching : ICheckIfStringsCanBeMadeEqualWithOperations1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s1"></param>
-    /// <param name="s2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanBeEqual(string s1, string s2)
     {
         return ((s1[0] == s2[0] && s1[2] == s2[2]) || (s1[0] == s2[2] && s1[2] == s2[0])) &&

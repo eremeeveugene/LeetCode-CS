@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SpecialArray;
 /// <inheritdoc />
 public sealed class SpecialArrayIterative : ISpecialArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsArraySpecial(int[] nums)
     {
         if (nums.Length == 1)

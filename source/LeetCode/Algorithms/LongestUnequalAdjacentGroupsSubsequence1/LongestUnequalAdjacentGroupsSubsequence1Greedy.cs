@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.LongestUnequalAdjacentGroupsSubsequence1;
 /// <inheritdoc />
 public sealed class LongestUnequalAdjacentGroupsSubsequence1Greedy : ILongestUnequalAdjacentGroupsSubsequence1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="words"></param>
-    /// <param name="groups"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<string> GetLongestSubsequence(string[] words, int[] groups)
     {
         var result = new List<string> { words[0] };

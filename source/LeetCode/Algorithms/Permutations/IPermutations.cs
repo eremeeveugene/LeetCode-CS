@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.Permutations;
 /// </summary>
 public interface IPermutations
 {
+    /// <summary>
+    ///     Generates all possible permutations of the distinct integers in <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array of distinct integers to permute.</param>
+    /// <returns>A list containing all permutations of <paramref name="nums" />.</returns>
     IList<IList<int>> Permute(int[] nums);
 }

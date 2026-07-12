@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NRepeatedElementInSize2NArray;
 /// <inheritdoc />
 public sealed class NRepeatedElementInSize2NArrayHashSet : INRepeatedElementInSize2NArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int RepeatedNTimes(int[] nums)
     {
         var numsHashSet = new HashSet<int>();

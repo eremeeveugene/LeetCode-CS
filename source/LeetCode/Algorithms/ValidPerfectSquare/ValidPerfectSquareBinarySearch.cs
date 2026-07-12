@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ValidPerfectSquare;
 /// <inheritdoc />
 public sealed class ValidPerfectSquareBinarySearch : IValidPerfectSquare
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsPerfectSquare(int num)
     {
         long left = 1;

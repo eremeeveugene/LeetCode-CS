@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindThePowerOfKSizeSubarrays1;
 /// <inheritdoc />
 public sealed class FindThePowerOfKSizeSubarrays1ConsecutiveCount : IFindThePowerOfKSizeSubarrays1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] ResultsArray(int[] nums, int k)
     {
         if (k == 1)

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindAllNumbersDisappearedInArray;
 /// <inheritdoc />
 public sealed class FindAllNumbersDisappearedInArrayHashSet : IFindAllNumbersDisappearedInArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> FindDisappearedNumbers(int[] nums)
     {
         var hashSet = new HashSet<int>(nums);

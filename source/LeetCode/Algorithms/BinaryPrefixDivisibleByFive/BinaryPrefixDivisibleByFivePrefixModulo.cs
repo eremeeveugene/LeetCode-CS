@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.BinaryPrefixDivisibleByFive;
 /// <inheritdoc />
 public sealed class BinaryPrefixDivisibleByFivePrefixModulo : IBinaryPrefixDivisibleByFive
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<bool> PrefixesDivBy5(int[] nums)
     {
         var result = new bool[nums.Length];

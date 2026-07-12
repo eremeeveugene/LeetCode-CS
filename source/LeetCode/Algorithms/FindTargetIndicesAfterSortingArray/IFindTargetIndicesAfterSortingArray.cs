@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindTargetIndicesAfterSortingArray;
 /// </summary>
 public interface IFindTargetIndicesAfterSortingArray
 {
+    /// <summary>
+    ///     Sorts <paramref name="nums" /> in non-decreasing order and finds all indices at which <paramref name="target" /> occurs.
+    /// </summary>
+    /// <param name="nums">The array of integers to sort and search.</param>
+    /// <param name="target">The value whose indices are sought after sorting.</param>
+    /// <returns>The list of indices in the sorted array where <paramref name="target" /> occurs.</returns>
     IList<int> TargetIndices(int[] nums, int target);
 }

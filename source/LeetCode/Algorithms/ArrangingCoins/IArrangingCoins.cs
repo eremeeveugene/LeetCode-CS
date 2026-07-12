@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ArrangingCoins;
 /// </summary>
 public interface IArrangingCoins
 {
+    /// <summary>
+    ///     Computes the number of complete rows of a staircase that can be built with <paramref name="n" /> coins, where
+    ///     the i-th row contains exactly i coins.
+    /// </summary>
+    /// <param name="n">The number of coins available.</param>
+    /// <returns>The number of complete staircase rows that can be built.</returns>
     int ArrangeCoins(int n);
 }

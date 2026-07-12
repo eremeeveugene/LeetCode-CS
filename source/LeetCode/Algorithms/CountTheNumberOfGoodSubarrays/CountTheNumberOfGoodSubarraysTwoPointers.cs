@@ -14,6 +14,11 @@ namespace LeetCode.Algorithms.CountTheNumberOfGoodSubarrays;
 /// <inheritdoc />
 public sealed class CountTheNumberOfGoodSubarraysTwoPointers : ICountTheNumberOfGoodSubarrays
 {
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(n), where n is the length of the input array nums
+    ///     Space complexity - O(n), where n is the length of the input array nums
+    /// </remarks>
     public long CountGood(int[] nums, int k)
     {
         long result = 0;

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.AverageSalaryExcludingTheMinimumAndMaximumSalary;
 /// <inheritdoc />
 public sealed class AverageSalaryExcludingTheMinimumAndMaximumSalaryIterative : IAverageSalaryExcludingTheMinimumAndMaximumSalary
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="salary"></param>
-    /// <returns></returns>
+    /// </remarks>
     public double Average(int[] salary)
     {
         var min = salary[0];

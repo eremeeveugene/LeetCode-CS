@@ -19,12 +19,11 @@ public sealed class DesignTwitterPriorityQueue : IDesignTwitter
     private readonly Dictionary<int, List<(int Timestamp, int TweetId)>> _userToTweetsDictionary = new();
     private int _timestamp;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="userId"></param>
-    /// <param name="tweetId"></param>
+    /// </remarks>
     public void PostTweet(int userId, int tweetId)
     {
         if (!_userToTweetsDictionary.TryGetValue(userId, out var tweets))
@@ -37,13 +36,12 @@ public sealed class DesignTwitterPriorityQueue : IDesignTwitter
         tweets.Add((_timestamp++, tweetId));
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(t * log(k)) where t is the number of recent tweets examined across the user and their
     ///     followees and k is the news feed size of 10
     ///     Space complexity - O(k)
-    /// </summary>
-    /// <param name="userId"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> GetNewsFeed(int userId)
     {
         var oldestFirst = new PriorityQueue<int, int>();
@@ -73,12 +71,11 @@ public sealed class DesignTwitterPriorityQueue : IDesignTwitter
         return newsFeed;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="followerId"></param>
-    /// <param name="followeeId"></param>
+    /// </remarks>
     public void Follow(int followerId, int followeeId)
     {
         if (!_userToFolloweesDictionary.TryGetValue(followerId, out var followees))
@@ -91,12 +88,11 @@ public sealed class DesignTwitterPriorityQueue : IDesignTwitter
         followees.Add(followeeId);
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="followerId"></param>
-    /// <param name="followeeId"></param>
+    /// </remarks>
     public void Unfollow(int followerId, int followeeId)
     {
         if (_userToFolloweesDictionary.TryGetValue(followerId, out var followees))

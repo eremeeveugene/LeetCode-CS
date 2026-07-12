@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.EqualSumGridPartition1;
 /// </summary>
 public interface IEqualSumGridPartition1
 {
+    /// <summary>
+    ///     Determines whether <paramref name="grid" /> can be partitioned into two parts, by removing a single cell if
+    ///     necessary, using one horizontal or vertical cut such that the sum of each part is equal.
+    /// </summary>
+    /// <param name="grid">The 2-dimensional array of integers to partition.</param>
+    /// <returns><see langword="true" /> if such a partition exists; otherwise, <see langword="false" />.</returns>
     bool CanPartitionGrid(int[][] grid);
 }

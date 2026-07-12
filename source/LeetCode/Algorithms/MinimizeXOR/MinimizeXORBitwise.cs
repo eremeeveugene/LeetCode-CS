@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimizeXOR;
 /// <inheritdoc />
 public sealed class MinimizeXORBitwise : IMinimizeXOR
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num1"></param>
-    /// <param name="num2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimizeXor(int num1, int num2)
     {
         var result = 0;

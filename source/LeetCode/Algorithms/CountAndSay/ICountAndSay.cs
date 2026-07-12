@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountAndSay;
 /// </summary>
 public interface ICountAndSay
 {
+    /// <summary>
+    ///     Returns the <paramref name="n" />-th element of the count-and-say sequence, where each element is the run-length
+    ///     encoding of the previous element.
+    /// </summary>
+    /// <param name="n">The 1-based index of the count-and-say sequence element.</param>
+    /// <returns>The <paramref name="n" />-th element of the count-and-say sequence.</returns>
     string CountAndSay(int n);
 }

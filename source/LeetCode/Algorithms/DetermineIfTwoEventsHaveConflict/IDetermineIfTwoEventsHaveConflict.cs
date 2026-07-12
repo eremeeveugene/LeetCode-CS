@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict;
 /// </summary>
 public interface IDetermineIfTwoEventsHaveConflict
 {
+    /// <summary>
+    ///     Determines whether the two events have a time conflict, i.e. whether their time intervals intersect.
+    /// </summary>
+    /// <param name="event1">The first event as a pair of start and end times in "HH:MM" format.</param>
+    /// <param name="event2">The second event as a pair of start and end times in "HH:MM" format.</param>
+    /// <returns><c>true</c> if the two events overlap in time; otherwise, <c>false</c>.</returns>
     bool HaveConflict(string[] event1, string[] event2);
 }

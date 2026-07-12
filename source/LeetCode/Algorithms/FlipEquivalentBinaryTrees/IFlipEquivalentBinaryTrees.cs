@@ -18,5 +18,12 @@ namespace LeetCode.Algorithms.FlipEquivalentBinaryTrees;
 /// </summary>
 public interface IFlipEquivalentBinaryTrees
 {
+    /// <summary>
+    ///     Determines whether the binary trees rooted at <paramref name="root1" /> and <paramref name="root2" /> are flip
+    ///     equivalent, i.e. one can be obtained from the other by swapping the left and right children of some nodes.
+    /// </summary>
+    /// <param name="root1">The root of the first binary tree.</param>
+    /// <param name="root2">The root of the second binary tree.</param>
+    /// <returns><see langword="true" /> if the two trees are flip equivalent; otherwise, <see langword="false" />.</returns>
     bool FlipEquiv(TreeNode? root1, TreeNode? root2);
 }

@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.NaryTreeLevelOrderTraversal;
 /// <inheritdoc />
 public sealed class NaryTreeLevelOrderTraversalBreadthFirstSearch : INaryTreeLevelOrderTraversal
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<IList<int>> LevelOrder(Node? root)
     {
         if (root == null)

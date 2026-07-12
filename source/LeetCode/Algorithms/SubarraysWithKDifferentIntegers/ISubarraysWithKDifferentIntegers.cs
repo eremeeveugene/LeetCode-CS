@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.SubarraysWithKDifferentIntegers;
 /// </summary>
 public interface ISubarraysWithKDifferentIntegers
 {
+    /// <summary>
+    ///     Counts the contiguous subarrays of <paramref name="nums" /> that contain exactly
+    ///     <paramref name="k" /> different integers.
+    /// </summary>
+    /// <param name="nums">The array of positive integers to search.</param>
+    /// <param name="k">The exact number of distinct integers a qualifying subarray must contain.</param>
+    /// <returns>The number of contiguous subarrays of <paramref name="nums" /> with exactly <paramref name="k" /> distinct integers.</returns>
     int SubarraysWithKDistinct(int[] nums, int k);
 }

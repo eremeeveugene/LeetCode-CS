@@ -16,12 +16,11 @@ public sealed class NumberOfSubstringsWithOnlyOnesCounting : INumberOfSubstrings
 {
     private const int Modulo = 1_000_000_007;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumSub(string s)
     {
         var result = 0;

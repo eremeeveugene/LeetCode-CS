@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.CheckIfAllAsAppearsBeforeAllBs;
 /// </summary>
 public interface ICheckIfAllAsAppearsBeforeAllBs
 {
+    /// <summary>
+    ///     Determines whether every 'a' in <paramref name="s" /> appears before every 'b'.
+    /// </summary>
+    /// <param name="s">The string consisting only of the characters 'a' and 'b'.</param>
+    /// <returns><c>true</c> if every 'a' appears before every 'b'; otherwise, <c>false</c>.</returns>
     bool CheckString(string s);
 }

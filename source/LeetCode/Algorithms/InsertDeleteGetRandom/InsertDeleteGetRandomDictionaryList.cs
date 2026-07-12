@@ -18,12 +18,11 @@ public sealed class InsertDeleteGetRandomDictionaryList : IInsertDeleteGetRandom
     private readonly List<int> _values = [];
     private readonly Dictionary<int, int> _valueToIndexDictionary = [];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool Insert(int value)
     {
         if (_valueToIndexDictionary.ContainsKey(value))
@@ -37,12 +36,11 @@ public sealed class InsertDeleteGetRandomDictionaryList : IInsertDeleteGetRandom
         return true;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool Remove(int value)
     {
         if (!_valueToIndexDictionary.TryGetValue(value, out var index))
@@ -62,11 +60,11 @@ public sealed class InsertDeleteGetRandomDictionaryList : IInsertDeleteGetRandom
         return true;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int GetRandom()
     {
         var randomIndex = Random.Next(_values.Count);

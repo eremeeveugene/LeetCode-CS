@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumNumberOfOperationsToMoveOnesToTheEnd;
 /// </summary>
 public interface IMaximumNumberOfOperationsToMoveOnesToTheEnd
 {
+    /// <summary>
+    ///     Computes the maximum number of operations, each swapping an adjacent "10" substring to "01", achievable while
+    ///     moving all the 1s of the binary string <paramref name="s" /> to the end.
+    /// </summary>
+    /// <param name="s">The binary string whose 1s are moved to the end.</param>
+    /// <returns>The maximum number of adjacent swap operations achievable while moving all 1s in <paramref name="s" /> to the end.</returns>
     int MaxOperations(string s);
 }

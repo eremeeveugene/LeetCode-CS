@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.NumberOfEquivalentDominoPairs;
 /// </summary>
 public interface INumberOfEquivalentDominoPairs
 {
+    /// <summary>
+    ///     Counts the number of pairs of equivalent dominoes in <paramref name="dominoes" />, where two dominoes are
+    ///     equivalent if their values are equal or are reverses of each other.
+    /// </summary>
+    /// <param name="dominoes">The list of dominoes, each represented as a two-element array [a, b].</param>
+    /// <returns>The number of equivalent domino pairs found in <paramref name="dominoes" />.</returns>
     int NumEquivDominoPairs(int[][] dominoes);
 }

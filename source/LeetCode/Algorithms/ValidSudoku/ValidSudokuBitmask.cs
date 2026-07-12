@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ValidSudoku;
 /// <inheritdoc />
 public sealed class ValidSudokuBitmask : ValidSudokuBase
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="board"></param>
-    /// <returns></returns>
+    /// </remarks>
     public override bool IsValidSudoku(char[][] board)
     {
         Span<int> rows = stackalloc int[N];

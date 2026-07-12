@@ -14,10 +14,11 @@ namespace LeetCode.Algorithms.SeparateBlackAndWhiteBalls;
 /// <inheritdoc />
 public sealed class SeparateBlackAndWhiteBallsTwoPointers : ISeparateBlackAndWhiteBalls
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
+    /// </remarks>
     public long MinimumSteps(string s)
     {
         long minimumSteps = 0;

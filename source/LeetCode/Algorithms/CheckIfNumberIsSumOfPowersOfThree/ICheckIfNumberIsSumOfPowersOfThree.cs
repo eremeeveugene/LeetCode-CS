@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.CheckIfNumberIsSumOfPowersOfThree;
 /// </summary>
 public interface ICheckIfNumberIsSumOfPowersOfThree
 {
+    /// <summary>
+    ///     Determines whether <paramref name="n" /> can be represented as a sum of distinct powers of three.
+    /// </summary>
+    /// <param name="n">The number to check.</param>
+    /// <returns><c>true</c> if <paramref name="n" /> is a sum of distinct powers of three; otherwise, <c>false</c>.</returns>
     bool CheckPowersOfThree(int n);
 }

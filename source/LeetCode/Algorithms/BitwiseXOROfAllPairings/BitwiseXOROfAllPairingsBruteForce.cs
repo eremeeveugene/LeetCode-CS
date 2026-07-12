@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.BitwiseXOROfAllPairings;
 /// <inheritdoc />
 public sealed class BitwiseXOROfAllPairingsBruteForce : IBitwiseXOROfAllPairings
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int XorAllNums(int[] nums1, int[] nums2)
     {
         var result = 0;

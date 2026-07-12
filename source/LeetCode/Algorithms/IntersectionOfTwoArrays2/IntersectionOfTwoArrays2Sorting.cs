@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.IntersectionOfTwoArrays2;
 /// <inheritdoc />
 public sealed class IntersectionOfTwoArrays2Sorting : IIntersectionOfTwoArrays2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n + m log m)
     ///     Space complexity - O(n + m)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] Intersect(int[] nums1, int[] nums2)
     {
         Array.Sort(nums1);

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaxConsecutiveOnes;
 /// <inheritdoc />
 public sealed class MaxConsecutiveOnesGreedy : IMaxConsecutiveOnes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindMaxConsecutiveOnes(int[] nums)
     {
         var maxLength = 0;

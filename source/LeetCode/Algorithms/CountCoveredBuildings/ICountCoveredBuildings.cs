@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CountCoveredBuildings;
 /// </summary>
 public interface ICountCoveredBuildings
 {
+    /// <summary>
+    ///     Counts the buildings that are covered, i.e. have at least one other building in each of the four directions
+    ///     (left, right, above and below) on the <paramref name="n" /> x <paramref name="n" /> grid.
+    /// </summary>
+    /// <param name="n">The size of the grid.</param>
+    /// <param name="buildings">The coordinates of the buildings, where each element is a pair [x, y].</param>
+    /// <returns>The number of covered buildings.</returns>
     int CountCoveredBuildings(int n, int[][] buildings);
 }

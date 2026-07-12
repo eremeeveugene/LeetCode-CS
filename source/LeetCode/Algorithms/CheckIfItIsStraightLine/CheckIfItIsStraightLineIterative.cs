@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CheckIfItIsStraightLine;
 /// <inheritdoc />
 public sealed class CheckIfItIsStraightLineIterative : ICheckIfItIsStraightLine
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="coordinates"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckStraightLine(int[][] coordinates)
     {
         var a = coordinates[0];

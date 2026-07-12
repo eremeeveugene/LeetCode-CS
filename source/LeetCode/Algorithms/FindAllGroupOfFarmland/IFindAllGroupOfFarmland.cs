@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindAllGroupOfFarmland;
 /// </summary>
 public interface IFindAllGroupOfFarmland
 {
+    /// <summary>
+    ///     Finds all rectangular groups of farmland in the binary matrix <paramref name="land" /> and returns the
+    ///     coordinates of the top-left and bottom-right corners of each group.
+    /// </summary>
+    /// <param name="land">The binary matrix where 1 represents farmland and 0 represents forested land.</param>
+    /// <returns>An array of coordinates [r1, c1, r2, c2] describing each group of farmland.</returns>
     int[][] FindFarmland(int[][] land);
 }

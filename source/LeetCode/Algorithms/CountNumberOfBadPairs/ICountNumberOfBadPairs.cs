@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountNumberOfBadPairs;
 /// </summary>
 public interface ICountNumberOfBadPairs
 {
+    /// <summary>
+    ///     Counts the bad pairs in <paramref name="nums" />, i.e. the index pairs (i, j) with i &lt; j such that j - i is
+    ///     not equal to <paramref name="nums" />[j] - <paramref name="nums" />[i].
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The number of bad pairs in the array.</returns>
     long CountBadPairs(int[] nums);
 }

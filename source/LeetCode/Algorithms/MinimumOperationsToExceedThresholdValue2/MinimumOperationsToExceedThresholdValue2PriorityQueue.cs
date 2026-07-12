@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumOperationsToExceedThresholdValue2;
 /// <inheritdoc />
 public sealed class MinimumOperationsToExceedThresholdValue2PriorityQueue : IMinimumOperationsToExceedThresholdValue2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinOperations(int[] nums, int k)
     {
         var minOperations = 0;

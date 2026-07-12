@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimumIndexOfValidSplit;
 /// </summary>
 public interface IMinimumIndexOfValidSplit
 {
+    /// <summary>
+    ///     Finds the minimum index at which <paramref name="nums" /> can be split into two non-empty parts, each
+    ///     having the same dominant element (an element occurring more than half the length of that part) as the
+    ///     whole array.
+    /// </summary>
+    /// <param name="nums">The array of integers to split.</param>
+    /// <returns>The minimum valid split index, or -1 if no such split exists.</returns>
     int MinimumIndex(IList<int> nums);
 }

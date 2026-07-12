@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.ExcelSheetColumnTitle;
 /// <inheritdoc />
 public sealed class ExcelSheetColumnTitleIterative : IExcelSheetColumnTitle
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O((log n) ^ 2)
-    ///     Time complexity - O(log n)
-    /// </summary>
-    /// <param name="columnNumber"></param>
-    /// <returns></returns>
+    ///     Space complexity - O(log n)
+    /// </remarks>
     public string ConvertToTitle(int columnNumber)
     {
         var stringBuilder = new StringBuilder();

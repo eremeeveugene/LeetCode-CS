@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.SubarrayProductLessThanK;
 /// </summary>
 public interface ISubarrayProductLessThanK
 {
+    /// <summary>
+    ///     Counts the contiguous subarrays of <paramref name="nums" /> whose product of all elements is
+    ///     strictly less than <paramref name="k" />.
+    /// </summary>
+    /// <param name="nums">The array of positive integers to search.</param>
+    /// <param name="k">The exclusive upper bound on the subarray product.</param>
+    /// <returns>The number of contiguous subarrays whose product is less than <paramref name="k" />.</returns>
     int NumSubarrayProductLessThanK(int[] nums, int k);
 }

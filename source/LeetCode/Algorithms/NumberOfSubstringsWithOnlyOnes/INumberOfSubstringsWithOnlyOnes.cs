@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.NumberOfSubstringsWithOnlyOnes;
 /// </summary>
 public interface INumberOfSubstringsWithOnlyOnes
 {
+    /// <summary>
+    ///     Counts the number of substrings of the binary string <paramref name="s" /> that consist only of the
+    ///     character '1'.
+    /// </summary>
+    /// <param name="s">The binary string of '0' and '1' characters to search.</param>
+    /// <returns>The number of substrings of <paramref name="s" /> that contain only '1' characters, modulo 10^9 + 7.</returns>
     int NumSub(string s);
 }

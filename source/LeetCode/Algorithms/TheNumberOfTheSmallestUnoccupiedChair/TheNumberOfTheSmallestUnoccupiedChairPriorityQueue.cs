@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.TheNumberOfTheSmallestUnoccupiedChair;
 /// <inheritdoc />
 public sealed class TheNumberOfTheSmallestUnoccupiedChairPriorityQueue : ITheNumberOfTheSmallestUnoccupiedChair
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="times"></param>
-    /// <param name="targetFriend"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SmallestChair(int[][] times, int targetFriend)
     {
         var targetFriendArrival = times[targetFriend][0];

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByT
 /// </summary>
 public interface IFindMinimumOperationsToMakeAllElementsDivisibleByThree
 {
+    /// <summary>
+    ///     Computes the minimum number of operations needed to make all elements of <paramref name="nums" /> divisible by
+    ///     three, where each operation adds or subtracts one from any element.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The minimum number of operations required.</returns>
     int MinimumOperations(int[] nums);
 }

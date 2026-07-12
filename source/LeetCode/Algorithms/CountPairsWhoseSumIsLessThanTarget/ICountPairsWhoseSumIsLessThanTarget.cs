@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget;
 /// </summary>
 public interface ICountPairsWhoseSumIsLessThanTarget
 {
+    /// <summary>
+    ///     Counts the pairs of indices (i, j) with i &lt; j in <paramref name="nums" /> whose element sum is strictly
+    ///     less than <paramref name="target" />.
+    /// </summary>
+    /// <param name="nums">The list of integers to examine.</param>
+    /// <param name="target">The value that a qualifying pair's sum must be less than.</param>
+    /// <returns>The total number of pairs whose sum is less than <paramref name="target" />.</returns>
     int CountPairs(IList<int> nums, int target);
 }

@@ -16,13 +16,11 @@ public sealed class MinimumDeletionsToMakeStringKSpecialFrequencyArray : IMinimu
 {
     private const int AlphabetLength = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="word"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumDeletions(string word, int k)
     {
         var wordLength = word.Length;

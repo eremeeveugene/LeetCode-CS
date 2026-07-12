@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.SpecialArray;
 /// </summary>
 public interface ISpecialArray
 {
+    /// <summary>
+    ///     Determines whether every pair of adjacent elements in <paramref name="nums" /> has different parity.
+    /// </summary>
+    /// <param name="nums">The array of integers to check.</param>
+    /// <returns><see langword="true" /> if <paramref name="nums" /> is special; otherwise, <see langword="false" />.</returns>
     bool IsArraySpecial(int[] nums);
 }

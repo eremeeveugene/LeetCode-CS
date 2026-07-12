@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.BinaryTreePaths;
 /// </summary>
 public interface IBinaryTreePaths
 {
+    /// <summary>
+    ///     Returns all root-to-leaf paths of the binary tree rooted at <paramref name="root" /> in the format
+    ///     "value1-&gt;value2-&gt;...".
+    /// </summary>
+    /// <param name="root">The root of the binary tree.</param>
+    /// <returns>All root-to-leaf paths in any order.</returns>
     IList<string> BinaryTreePaths(TreeNode? root);
 }

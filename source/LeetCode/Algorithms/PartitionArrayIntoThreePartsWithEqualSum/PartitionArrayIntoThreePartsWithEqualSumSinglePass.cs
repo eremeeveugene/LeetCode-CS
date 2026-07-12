@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PartitionArrayIntoThreePartsWithEqualSum;
 /// <inheritdoc />
 public sealed class PartitionArrayIntoThreePartsWithEqualSumSinglePass : IPartitionArrayIntoThreePartsWithEqualSum
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanThreePartsEqualSum(int[] arr)
     {
         var totalSum = arr.Sum();

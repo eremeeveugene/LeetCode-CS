@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.MaxConsecutiveOnes;
 /// </summary>
 public interface IMaxConsecutiveOnes
 {
+    /// <summary>
+    ///     Finds the maximum number of consecutive 1s in the binary array <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The binary array to scan for consecutive 1s.</param>
+    /// <returns>The maximum count of consecutive 1s found in <paramref name="nums" />.</returns>
     int FindMaxConsecutiveOnes(int[] nums);
 }

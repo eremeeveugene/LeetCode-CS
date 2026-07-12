@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PowerOfFour;
 /// <inheritdoc />
 public sealed class PowerOfFourRecursive : IPowerOfFour
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsPowerOfFour(int n)
     {
         return n > 0 && GetIsPowerOfFour(n);

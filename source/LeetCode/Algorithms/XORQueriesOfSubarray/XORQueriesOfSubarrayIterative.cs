@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.XORQueriesOfSubarray;
 /// <inheritdoc />
 public sealed class XORQueriesOfSubarrayIterative : IXORQueriesOfSubarray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <param name="queries"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] XorQueries(int[] arr, int[][] queries)
     {
         var result = new int[queries.Length];

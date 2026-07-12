@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.Sqrt;
 /// </summary>
 public interface ISqrt
 {
+    /// <summary>
+    ///     Computes the integer square root of <paramref name="x" />, truncating any fractional part.
+    /// </summary>
+    /// <param name="x">The non-negative integer to compute the square root of.</param>
+    /// <returns>The largest integer whose square is less than or equal to <paramref name="x" />.</returns>
     int MySqrt(int x);
 }

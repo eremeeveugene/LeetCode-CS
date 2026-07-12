@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ConcatenateNonZeroDigitsAndMultiplyBySum1;
 /// <inheritdoc />
 public sealed class ConcatenateNonZeroDigitsAndMultiplyBySum1Iterative : IConcatenateNonZeroDigitsAndMultiplyBySum1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long SumAndMultiply(int n)
     {
         long value = 0;

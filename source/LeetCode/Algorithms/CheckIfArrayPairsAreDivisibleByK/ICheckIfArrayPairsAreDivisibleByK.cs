@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK;
 /// </summary>
 public interface ICheckIfArrayPairsAreDivisibleByK
 {
+    /// <summary>
+    ///     Determines whether <paramref name="arr" /> can be divided into pairs such that the sum of each pair is divisible
+    ///     by <paramref name="k" />.
+    /// </summary>
+    /// <param name="arr">The array of integers with an even length.</param>
+    /// <param name="k">The divisor for each pair sum.</param>
+    /// <returns><c>true</c> if <paramref name="arr" /> can be arranged into such pairs; otherwise, <c>false</c>.</returns>
     bool CanArrange(int[] arr, int k);
 }

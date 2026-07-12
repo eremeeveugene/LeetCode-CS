@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CheckIfArrayPairsAreDivisibleByK;
 /// <inheritdoc />
 public sealed class CheckIfArrayPairsAreDivisibleByKArray : ICheckIfArrayPairsAreDivisibleByK
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(k)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanArrange(int[] arr, int k)
     {
         var remainderCount = new int[k];

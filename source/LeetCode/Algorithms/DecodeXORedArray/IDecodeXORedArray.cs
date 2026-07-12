@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.DecodeXORedArray;
 /// </summary>
 public interface IDecodeXORedArray
 {
+    /// <summary>
+    ///     Decodes the original array from <paramref name="encoded" />, where each encoded element is the XOR of two
+    ///     consecutive original elements and the first original element is <paramref name="first" />.
+    /// </summary>
+    /// <param name="encoded">The XOR-encoded array.</param>
+    /// <param name="first">The first element of the original array.</param>
+    /// <returns>The decoded original array.</returns>
     int[] Decode(int[] encoded, int first);
 }

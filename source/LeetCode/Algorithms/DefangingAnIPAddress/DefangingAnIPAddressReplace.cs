@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.DefangingAnIPAddress;
 /// <inheritdoc />
 public sealed class DefangingAnIPAddressReplace : IDefangingAnIPAddress
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="address"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string DefangIPaddr(string address)
     {
         return address.Replace(".", "[.]");

@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.AddDigits;
 /// </summary>
 public interface IAddDigits
 {
+    /// <summary>
+    ///     Repeatedly adds the digits of <paramref name="num" /> until the result has only one digit.
+    /// </summary>
+    /// <param name="num">The non-negative integer whose digits are added.</param>
+    /// <returns>The single-digit result of repeatedly adding the digits of <paramref name="num" />.</returns>
     int AddDigits(int num);
 }

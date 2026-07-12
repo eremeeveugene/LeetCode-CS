@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.AddDigits;
 /// <inheritdoc />
 public sealed class AddDigitsDigitalRoot : IAddDigits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int AddDigits(int num)
     {
         if (num == 0)

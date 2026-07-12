@@ -19,25 +19,21 @@ public sealed class DesignUndergroundSystemDictionary : IDesignUndergroundSystem
     private readonly Dictionary<int, (string StartStation, int Time)> _checkInsDictionary = new();
     private readonly Dictionary<(string StartStation, string EndStation), (int Sum, int Count)> _travelDurationsDictionary = new();
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="id"></param>
-    /// <param name="stationName"></param>
-    /// <param name="t"></param>
+    /// </remarks>
     public void CheckIn(int id, string stationName, int t)
     {
         _checkInsDictionary[id] = (stationName, t);
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="id"></param>
-    /// <param name="stationName"></param>
-    /// <param name="t"></param>
+    /// </remarks>
     public void CheckOut(int id, string stationName, int t)
     {
         var (startStation, startTime) = _checkInsDictionary[id];
@@ -48,13 +44,11 @@ public sealed class DesignUndergroundSystemDictionary : IDesignUndergroundSystem
         travelDuration.Count++;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="startStation"></param>
-    /// <param name="endStation"></param>
-    /// <returns></returns>
+    /// </remarks>
     public double GetAverageTime(string startStation, string endStation)
     {
         var (sum, count) = _travelDurationsDictionary[(startStation, endStation)];

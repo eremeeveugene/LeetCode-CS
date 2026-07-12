@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumHeightTrees;
 /// <inheritdoc />
 public sealed class MinimumHeightTreesBreadthFirstSearch : IMinimumHeightTrees
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(V * (V + E)), where V is the number of vertices(nodes) and E is the number of edges.
     ///     Space complexity - O(V + E), where V is the number of vertices(nodes) and E is the number of edges.
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="edges"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> FindMinHeightTrees(int n, int[][] edges)
     {
         if (n == 1)

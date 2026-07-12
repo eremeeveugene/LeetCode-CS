@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.DefangingAnIPAddress;
 /// <inheritdoc />
 public sealed class DefangingAnIPAddressStringBuilder : IDefangingAnIPAddress
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="address"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string DefangIPaddr(string address)
     {
         var stringBuilder = new StringBuilder();

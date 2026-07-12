@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MaximizeSumOfAtMostKDistinctElements;
 /// <inheritdoc />
 public sealed class MaximizeSumOfAtMostKDistinctElementsSorting : IMaximizeSumOfAtMostKDistinctElements
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n), where n is the length of nums array
     ///     Space complexity - O(k)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] MaxKDistinct(int[] nums, int k)
     {
         Array.Sort(nums, (a, b) => b.CompareTo(a));

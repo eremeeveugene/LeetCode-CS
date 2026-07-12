@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MergeStringsAlternately;
 /// </summary>
 public interface IMergeStringsAlternately
 {
+    /// <summary>
+    ///     Merges <paramref name="word1" /> and <paramref name="word2" /> by alternating characters from each,
+    ///     appending any remaining characters from the longer string at the end.
+    /// </summary>
+    /// <param name="word1">The first string to merge.</param>
+    /// <param name="word2">The second string to merge.</param>
+    /// <returns>The merged string.</returns>
     string MergeAlternately(string word1, string word2);
 }

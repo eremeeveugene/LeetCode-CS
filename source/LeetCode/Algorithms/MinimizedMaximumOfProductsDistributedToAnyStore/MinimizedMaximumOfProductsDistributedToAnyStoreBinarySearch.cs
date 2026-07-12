@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimizedMaximumOfProductsDistributedToAnyStore;
 /// <inheritdoc />
 public sealed class MinimizedMaximumOfProductsDistributedToAnyStoreBinarySearch : IMinimizedMaximumOfProductsDistributedToAnyStore
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * log Q)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="quantities"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimizedMaximum(int n, int[] quantities)
     {
         var left = 1;

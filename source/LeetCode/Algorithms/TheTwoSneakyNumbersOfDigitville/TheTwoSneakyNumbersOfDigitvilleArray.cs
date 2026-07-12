@@ -17,12 +17,11 @@ public sealed class TheTwoSneakyNumbersOfDigitvilleArray : ITheTwoSneakyNumbersO
     private const int MaxNumber = 100;
     private const int ResultLength = 2;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] GetSneakyNumbers(int[] nums)
     {
         var result = new int[ResultLength];

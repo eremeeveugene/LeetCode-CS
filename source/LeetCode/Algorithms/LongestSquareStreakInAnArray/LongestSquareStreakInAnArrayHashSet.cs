@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LongestSquareStreakInAnArray;
 /// <inheritdoc />
 public sealed class LongestSquareStreakInAnArrayHashSet : ILongestSquareStreakInAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int LongestSquareStreak(int[] nums)
     {
         var longestSquareStreak = -1;

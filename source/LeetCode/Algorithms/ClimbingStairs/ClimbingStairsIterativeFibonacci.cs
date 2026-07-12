@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ClimbingStairs;
 /// <inheritdoc />
 public sealed class ClimbingStairsIterativeFibonacci : IClimbingStairs
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ClimbStairs(int n)
     {
         switch (n)

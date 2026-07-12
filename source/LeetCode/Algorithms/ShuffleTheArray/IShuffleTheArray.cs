@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.ShuffleTheArray;
 /// </summary>
 public interface IShuffleTheArray
 {
+    /// <summary>
+    ///     Unshuffles <paramref name="nums" />, which is formatted as [x1, x2, ..., xn, y1, y2, ..., yn], into
+    ///     the interleaved sequence [x1, y1, x2, y2, ..., xn, yn].
+    /// </summary>
+    /// <param name="nums">The concatenated array of x and y values to interleave.</param>
+    /// <param name="n">The number of x values (and y values) in <paramref name="nums" />.</param>
+    /// <returns>The interleaved array [x1, y1, x2, y2, ..., xn, yn].</returns>
     int[] Shuffle(int[] nums, int n);
 }

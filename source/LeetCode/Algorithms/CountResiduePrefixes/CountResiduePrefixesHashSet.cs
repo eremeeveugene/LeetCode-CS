@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountResiduePrefixes;
 /// <inheritdoc />
 public sealed class CountResiduePrefixesHashSet : ICountResiduePrefixes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ResiduePrefixes(string s)
     {
         var result = 0;

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ReverseDegreeOfString;
 /// </summary>
 public interface IReverseDegreeOfString
 {
+    /// <summary>
+    ///     Computes the reverse degree of <paramref name="s" /> by summing, for each character, the product of its
+    ///     1-indexed position and its value from 26 (for 'a') down to 1 (for 'z').
+    /// </summary>
+    /// <param name="s">The string of lowercase letters to evaluate.</param>
+    /// <returns>The reverse degree of <paramref name="s" />.</returns>
     int ReverseDegree(string s);
 }

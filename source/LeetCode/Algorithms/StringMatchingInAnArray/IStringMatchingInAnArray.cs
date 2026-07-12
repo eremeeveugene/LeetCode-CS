@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.StringMatchingInAnArray;
 /// </summary>
 public interface IStringMatchingInAnArray
 {
+    /// <summary>
+    ///     Finds all strings in <paramref name="words" /> that are a substring of another string in the array.
+    /// </summary>
+    /// <param name="words">The array of distinct strings to search.</param>
+    /// <returns>A list of the strings in <paramref name="words" /> that are substrings of another word in the array.</returns>
     IList<string> StringMatching(string[] words);
 }

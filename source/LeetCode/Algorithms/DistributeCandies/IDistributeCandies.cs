@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.DistributeCandies;
 /// </summary>
 public interface IDistributeCandies
 {
+    /// <summary>
+    ///     Computes the maximum number of different candy types Alice can eat while eating only half of the candies.
+    /// </summary>
+    /// <param name="candyTypes">The array where each element is the type of a candy.</param>
+    /// <returns>The maximum number of different candy types Alice can eat when eating half of the candies.</returns>
     int DistributeCandies(int[] candyTypes);
 }

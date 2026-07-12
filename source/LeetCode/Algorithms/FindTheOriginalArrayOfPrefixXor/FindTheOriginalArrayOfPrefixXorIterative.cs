@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindTheOriginalArrayOfPrefixXor;
 /// <inheritdoc />
 public sealed class FindTheOriginalArrayOfPrefixXorIterative : IFindTheOriginalArrayOfPrefixXor
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="pref"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] FindArray(int[] pref)
     {
         if (pref.Length <= 1)

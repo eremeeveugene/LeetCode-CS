@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumAbsoluteDifference;
 /// </summary>
 public interface IMinimumAbsoluteDifference
 {
+    /// <summary>
+    ///     Finds all pairs of elements from <paramref name="arr" /> whose absolute difference equals the minimum
+    ///     absolute difference between any two elements of the array.
+    /// </summary>
+    /// <param name="arr">The array of distinct integers to scan.</param>
+    /// <returns>A list of pairs, each in ascending order, that achieve the minimum absolute difference.</returns>
     IList<IList<int>> MinimumAbsDifference(int[] arr);
 }

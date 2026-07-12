@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MedianOfTwoSortedArrays;
 /// <inheritdoc />
 public sealed class MedianOfTwoSortedArraysIterative : IMedianOfTwoSortedArrays
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(n + m)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public double FindMedianSortedArrays(int[] nums1, int[] nums2)
     {
         var concat = new int[nums1.Length + nums2.Length];

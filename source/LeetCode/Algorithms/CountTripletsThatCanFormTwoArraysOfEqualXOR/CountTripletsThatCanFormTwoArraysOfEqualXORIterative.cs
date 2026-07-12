@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR;
 /// <inheritdoc />
 public sealed class CountTripletsThatCanFormTwoArraysOfEqualXORIterative : ICountTripletsThatCanFormTwoArraysOfEqualXOR
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountTriplets(int[] arr)
     {
         var count = 0;

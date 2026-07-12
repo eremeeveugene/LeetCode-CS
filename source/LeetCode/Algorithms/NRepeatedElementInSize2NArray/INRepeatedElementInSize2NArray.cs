@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.NRepeatedElementInSize2NArray;
 /// </summary>
 public interface INRepeatedElementInSize2NArray
 {
+    /// <summary>
+    ///     Finds the element that is repeated exactly <c>n</c> times in the size-<c>2n</c> array
+    ///     <paramref name="nums" />, which otherwise contains distinct values.
+    /// </summary>
+    /// <param name="nums">The array of size 2n containing n distinct values and one value repeated n times.</param>
+    /// <returns>The value that appears n times in <paramref name="nums" />.</returns>
     int RepeatedNTimes(int[] nums);
 }

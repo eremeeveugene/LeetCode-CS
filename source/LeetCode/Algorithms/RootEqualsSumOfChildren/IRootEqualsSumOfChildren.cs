@@ -18,5 +18,10 @@ namespace LeetCode.Algorithms.RootEqualsSumOfChildren;
 /// </summary>
 public interface IRootEqualsSumOfChildren
 {
+    /// <summary>
+    ///     Determines whether the value of <paramref name="root" /> equals the sum of the values of its two children.
+    /// </summary>
+    /// <param name="root">The root of a binary tree with exactly two children.</param>
+    /// <returns><see langword="true" /> if the root's value equals the sum of its children's values; otherwise, <see langword="false" />.</returns>
     bool CheckTree(TreeNode root);
 }

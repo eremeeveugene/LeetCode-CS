@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.BuyTwoChocolates;
 /// <inheritdoc />
 public sealed class BuyTwoChocolatesBruteForce : IBuyTwoChocolates
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="prices"></param>
-    /// <param name="money"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int BuyChoco(int[] prices, int money)
     {
         int? result = null;

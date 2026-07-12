@@ -16,12 +16,11 @@ public sealed class FindWinnerOnTicTacToeGameSimulation : IFindWinnerOnTicTacToe
 {
     private const int GridSize = 3;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="moves"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string Tictactoe(int[][] moves)
     {
         var rowSum = new int[GridSize];

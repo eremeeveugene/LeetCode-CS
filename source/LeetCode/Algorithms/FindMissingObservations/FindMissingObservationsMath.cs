@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.FindMissingObservations;
 /// <inheritdoc />
 public sealed class FindMissingObservationsMath : IFindMissingObservations
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="rolls"></param>
-    /// <param name="mean"></param>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] MissingRolls(int[] rolls, int mean, int n)
     {
         var missingSum = (mean * (rolls.Length + n)) - rolls.Sum();

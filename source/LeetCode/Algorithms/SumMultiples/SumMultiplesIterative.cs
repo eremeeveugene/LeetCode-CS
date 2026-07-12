@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SumMultiples;
 /// <inheritdoc />
 public sealed class SumMultiplesIterative : ISumMultiples
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumOfMultiples(int n)
     {
         var sum = 0;

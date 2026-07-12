@@ -17,13 +17,11 @@ public sealed class MyCalendar3FrequencyDictionary : IMyCalendar3
     private readonly SortedDictionary<int, int> _frequencyDictionary = new();
     private int _maxFrequency;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="startTime"></param>
-    /// <param name="endTime"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Book(int startTime, int endTime)
     {
         if (!_frequencyDictionary.TryAdd(startTime, 1))

@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.ClearDigits;
 /// <inheritdoc />
 public sealed class ClearDigitsStringBuilder : IClearDigits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string ClearDigits(string s)
     {
         var stringBuilder = new StringBuilder();

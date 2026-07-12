@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.RemoveLinkedListElements;
 /// <inheritdoc />
 public sealed class RemoveLinkedListElementsIterative : IRemoveLinkedListElements
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="head"></param>
-    /// <param name="val"></param>
-    /// <returns></returns>
+    /// </remarks>
     public ListNode? RemoveElements(ListNode? head, int val)
     {
         if (head == null)

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.StringToInteger;
 /// </summary>
 public interface IStringToInteger
 {
+    /// <summary>
+    ///     Converts <paramref name="s" /> to a 32-bit signed integer following the same rules as the C
+    ///     atoi function, including skipping leading whitespace, reading an optional sign, and clamping to the
+    ///     32-bit signed integer range.
+    /// </summary>
+    /// <param name="s">The string to convert to an integer.</param>
+    /// <returns>The parsed 32-bit signed integer, clamped to the valid range.</returns>
     int MyAtoi(string s);
 }

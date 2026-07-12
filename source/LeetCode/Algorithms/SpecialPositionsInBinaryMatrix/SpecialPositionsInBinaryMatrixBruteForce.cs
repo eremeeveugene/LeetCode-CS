@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SpecialPositionsInBinaryMatrix;
 /// <inheritdoc />
 public sealed class SpecialPositionsInBinaryMatrixBruteForce : ISpecialPositionsInBinaryMatrix
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n * (m + n))
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="mat"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumSpecial(int[][] mat)
     {
         var result = 0;

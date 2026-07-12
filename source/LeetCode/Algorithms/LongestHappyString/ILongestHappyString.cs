@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.LongestHappyString;
 /// </summary>
 public interface ILongestHappyString
 {
+    /// <summary>
+    ///     Constructs the longest possible "happy" string using at most <paramref name="a" /> occurrences of 'a', <paramref name="b" /> occurrences of 'b', and <paramref name="c" /> occurrences of 'c', where no three consecutive characters are the same.
+    /// </summary>
+    /// <param name="a">The maximum number of 'a' characters allowed.</param>
+    /// <param name="b">The maximum number of 'b' characters allowed.</param>
+    /// <param name="c">The maximum number of 'c' characters allowed.</param>
+    /// <returns>The longest happy string obtainable, or an empty string if none can be formed.</returns>
     string LongestDiverseString(int a, int b, int c);
 }

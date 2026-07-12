@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.TransformedArray;
 /// <inheritdoc />
 public sealed class TransformedArrayIterative : ITransformedArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] ConstructTransformedArray(int[] nums)
     {
         var result = new int[nums.Length];

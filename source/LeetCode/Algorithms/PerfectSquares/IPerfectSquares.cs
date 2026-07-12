@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.PerfectSquares;
 /// </summary>
 public interface IPerfectSquares
 {
+    /// <summary>
+    ///     Finds the least number of perfect square numbers that sum to <paramref name="n" />.
+    /// </summary>
+    /// <param name="n">The target integer to sum to using perfect squares.</param>
+    /// <returns>The minimum count of perfect squares that sum to <paramref name="n" />.</returns>
     int NumSquares(int n);
 }

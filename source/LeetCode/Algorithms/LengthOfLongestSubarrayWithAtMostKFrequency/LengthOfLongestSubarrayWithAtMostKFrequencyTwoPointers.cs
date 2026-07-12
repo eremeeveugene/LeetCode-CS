@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.LengthOfLongestSubarrayWithAtMostKFrequency;
 /// <inheritdoc />
 public sealed class LengthOfLongestSubarrayWithAtMostKFrequencyTwoPointers : ILengthOfLongestSubarrayWithAtMostKFrequency
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxSubarrayLength(int[] nums, int k)
     {
         var maxLength = 0;

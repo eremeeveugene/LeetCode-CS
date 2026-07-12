@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.AppendCharactersToStringToMakeSubsequence;
 /// <inheritdoc />
 public sealed class AppendCharactersToStringToMakeSubsequenceTwoPointers : IAppendCharactersToStringToMakeSubsequence
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="t"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int AppendCharacters(string s, string t)
     {
         var sPointer = 0;

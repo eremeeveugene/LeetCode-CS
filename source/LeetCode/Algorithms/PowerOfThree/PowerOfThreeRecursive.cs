@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PowerOfThree;
 /// <inheritdoc />
 public sealed class PowerOfThreeRecursive : IPowerOfThree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsPowerOfThree(int n)
     {
         return n > 0 && GetIsPowerOfThree(n);

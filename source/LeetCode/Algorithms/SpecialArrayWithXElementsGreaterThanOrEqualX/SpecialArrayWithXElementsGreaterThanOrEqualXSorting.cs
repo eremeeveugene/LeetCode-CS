@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SpecialArrayWithXElementsGreaterThanOrEqualX;
 /// <inheritdoc />
 public sealed class SpecialArrayWithXElementsGreaterThanOrEqualXSorting : ISpecialArrayWithXElementsGreaterThanOrEqualX
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SpecialArray(int[] nums)
     {
         Array.Sort(nums);

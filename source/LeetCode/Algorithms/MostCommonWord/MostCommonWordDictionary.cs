@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.MostCommonWord;
 /// <inheritdoc />
 public sealed class MostCommonWordDictionary : IMostCommonWord
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="paragraph"></param>
-    /// <param name="banned"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string MostCommonWord(string paragraph, string[] banned)
     {
         var mostCommonWord = string.Empty;

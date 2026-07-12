@@ -23,6 +23,12 @@ public sealed class FizzBuzzMultithreadedMonitorLock : IFizzBuzzMultithreaded
         _n = n;
     }
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(n), where n is the target number, since the thread iterates once per number, waiting on the
+    ///     ones it does not own
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void Fizz(Action printFizz)
     {
         lock (_lock)
@@ -46,6 +52,12 @@ public sealed class FizzBuzzMultithreadedMonitorLock : IFizzBuzzMultithreaded
         }
     }
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(n), where n is the target number, since the thread iterates once per number, waiting on the
+    ///     ones it does not own
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void Buzz(Action printBuzz)
     {
         lock (_lock)
@@ -69,6 +81,12 @@ public sealed class FizzBuzzMultithreadedMonitorLock : IFizzBuzzMultithreaded
         }
     }
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(n), where n is the target number, since the thread iterates once per number, waiting on the
+    ///     ones it does not own
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void Fizzbuzz(Action printFizzBuzz)
     {
         lock (_lock)
@@ -92,6 +110,12 @@ public sealed class FizzBuzzMultithreadedMonitorLock : IFizzBuzzMultithreaded
         }
     }
 
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(n), where n is the target number, since the thread iterates once per number, waiting on the
+    ///     ones it does not own
+    ///     Space complexity - O(1)
+    /// </remarks>
     public void Number(Action<int> printNumber)
     {
         lock (_lock)

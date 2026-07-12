@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.RansomNote;
 /// <inheritdoc />
 public sealed class RansomNoteDictionary : IRansomNote
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m + n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="ransomNote"></param>
-    /// <param name="magazine"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanConstruct(string ransomNote, string magazine)
     {
         var magazineDictionary = new Dictionary<char, int>();

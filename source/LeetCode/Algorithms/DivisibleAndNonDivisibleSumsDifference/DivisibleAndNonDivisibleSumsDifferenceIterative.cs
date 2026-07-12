@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.DivisibleAndNonDivisibleSumsDifference;
 /// <inheritdoc />
 public sealed class DivisibleAndNonDivisibleSumsDifferenceIterative : IDivisibleAndNonDivisibleSumsDifference
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="m"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int DifferenceOfSums(int n, int m)
     {
         var difference = 0;

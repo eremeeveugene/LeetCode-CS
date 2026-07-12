@@ -11,15 +11,14 @@
 
 namespace LeetCode.Algorithms.NumberOfEmployeesWhoMetTheTarget;
 
+/// <inheritdoc />
 public sealed class NumberOfEmployeesWhoMetTheTargetCounting : INumberOfEmployeesWhoMetTheTarget
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="hours"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumberOfEmployeesWhoMetTarget(int[] hours, int target)
     {
         var result = 0;

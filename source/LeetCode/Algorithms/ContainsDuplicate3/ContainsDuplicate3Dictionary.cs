@@ -14,15 +14,12 @@ namespace LeetCode.Algorithms.ContainsDuplicate3;
 /// <inheritdoc />
 public sealed class ContainsDuplicate3Dictionary : IContainsDuplicate3
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(min(n, k)),where k is the maximum number of elements the dictionary can hold at any one time
     ///     based on the indexDiff
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="indexDiff"></param>
-    /// <param name="valueDiff"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool ContainsNearbyAlmostDuplicate(int[] nums, int indexDiff, int valueDiff)
     {
         if (indexDiff <= 0 || valueDiff < 0)

@@ -16,12 +16,11 @@ public sealed class MagicSquaresInGridBruteForce : IMagicSquaresInGrid
 {
     private const int MagicSquareSum = 15;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumMagicSquaresInside(int[][] grid)
     {
         var result = 0;

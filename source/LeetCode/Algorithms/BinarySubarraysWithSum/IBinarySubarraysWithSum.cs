@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.BinarySubarraysWithSum;
 /// </summary>
 public interface IBinarySubarraysWithSum
 {
+    /// <summary>
+    ///     Counts the non-empty subarrays of the binary array <paramref name="nums" /> whose sum equals
+    ///     <paramref name="goal" />.
+    /// </summary>
+    /// <param name="nums">The binary array.</param>
+    /// <param name="goal">The target subarray sum.</param>
+    /// <returns>The number of non-empty subarrays with a sum equal to <paramref name="goal" />.</returns>
     int NumSubarraysWithSum(int[] nums, int goal);
 }

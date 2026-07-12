@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MinimumNumberOfArrowsToBurstBalloons;
 /// </summary>
 public interface IMinimumNumberOfArrowsToBurstBalloons
 {
+    /// <summary>
+    ///     Finds the minimum number of arrows, each fired straight up and bursting every balloon whose horizontal
+    ///     diameter interval in <paramref name="points" /> it passes through, needed to burst all balloons.
+    /// </summary>
+    /// <param name="points">The array of [start, end] horizontal diameter intervals of the balloons.</param>
+    /// <returns>The minimum number of arrows required to burst all balloons.</returns>
     int FindMinArrowShots(int[][] points);
 }

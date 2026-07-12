@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.InvertBinaryTree;
 /// <inheritdoc />
 public sealed class InvertBinaryTreeBreadthFirstSearch : IInvertBinaryTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public TreeNode? InvertTree(TreeNode? root)
     {
         if (root == null)

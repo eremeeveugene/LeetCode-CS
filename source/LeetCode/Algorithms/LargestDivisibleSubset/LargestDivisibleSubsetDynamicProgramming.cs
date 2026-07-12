@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LargestDivisibleSubset;
 /// <inheritdoc />
 public sealed class LargestDivisibleSubsetDynamicProgramming : ILargestDivisibleSubset
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> LargestDivisibleSubset(int[] nums)
     {
         Array.Sort(nums);

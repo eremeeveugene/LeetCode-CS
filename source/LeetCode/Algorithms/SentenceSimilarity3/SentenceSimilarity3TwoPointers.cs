@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.SentenceSimilarity3;
 /// <inheritdoc />
 public sealed class SentenceSimilarity3TwoPointers : ISentenceSimilarity3
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(min(n, m))
     ///     Space complexity - O(n + m)
-    /// </summary>
-    /// <param name="sentence1"></param>
-    /// <param name="sentence2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool AreSentencesSimilar(string sentence1, string sentence2)
     {
         var sentence1Words = sentence1.Split(' ');

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.IntersectionOfTwoArrays;
 /// <inheritdoc />
 public sealed class IntersectionOfTwoArraysHashSetIntersectWith : IIntersectionOfTwoArrays
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n1 + n2 + min(n1, n2) + m)
     ///     Space complexity - O(n1 + n2 + min(n1, n2))
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] Intersection(int[] nums1, int[] nums2)
     {
         var nums1HashSet = new HashSet<int>(nums1);

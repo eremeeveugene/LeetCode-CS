@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.ConstructStringWithRepeatLimit;
 /// <inheritdoc />
 public sealed class ConstructStringWithRepeatLimitGreedy : IConstructStringWithRepeatLimit
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="repeatLimit"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string RepeatLimitedString(string s, int repeatLimit)
     {
         var countArray = new int['z' - 'a' + 1];

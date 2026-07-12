@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ArrangingCoins;
 /// <inheritdoc />
 public sealed class ArrangingCoinsBinarySearch : IArrangingCoins
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int ArrangeCoins(int n)
     {
         long left = 0;

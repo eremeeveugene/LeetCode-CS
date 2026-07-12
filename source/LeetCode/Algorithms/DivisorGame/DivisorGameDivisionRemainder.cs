@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.DivisorGame;
 /// <inheritdoc />
 public sealed class DivisorGameDivisionRemainder : IDivisorGame
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool DivisorGame(int n)
     {
         return n % 2 == 0;

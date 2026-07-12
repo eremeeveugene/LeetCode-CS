@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.LargestCombinationWithBitwiseANDGreaterThanZero;
 /// </summary>
 public interface ILargestCombinationWithBitwiseANDGreaterThanZero
 {
+    /// <summary>
+    ///     Finds the size of the largest combination of elements of <paramref name="candidates" /> whose bitwise AND is
+    ///     greater than zero.
+    /// </summary>
+    /// <param name="candidates">The array of positive integers.</param>
+    /// <returns>The size of the largest combination with a bitwise AND greater than zero.</returns>
     int LargestCombination(int[] candidates);
 }

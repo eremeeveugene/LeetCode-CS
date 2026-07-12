@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ContinuousSubarrays;
 /// </summary>
 public interface IContinuousSubarrays
 {
+    /// <summary>
+    ///     Counts the total number of continuous subarrays of <paramref name="nums" /> in which the absolute difference
+    ///     between any two elements is at most 2.
+    /// </summary>
+    /// <param name="nums">The array of integers to examine.</param>
+    /// <returns>The total number of qualifying continuous subarrays.</returns>
     long ContinuousSubarrays(int[] nums);
 }

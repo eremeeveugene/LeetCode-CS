@@ -378,12 +378,11 @@ public sealed class SlidingPuzzlePrecomputedDictionary : ISlidingPuzzle
         { 450123, 21 }
     };
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="board"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SlidingPuzzle(int[][] board)
     {
         var id = 0;

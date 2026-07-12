@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.AppleRedistributionIntoBoxes;
 /// </summary>
 public interface IAppleRedistributionIntoBoxes
 {
+    /// <summary>
+    ///     Computes the minimum number of boxes needed to redistribute all apples from the packs in
+    ///     <paramref name="apples" /> into boxes with the given <paramref name="capacities" />.
+    /// </summary>
+    /// <param name="apples">The number of apples in each pack.</param>
+    /// <param name="capacities">The capacity of each box.</param>
+    /// <returns>The minimum number of boxes required to hold all the apples.</returns>
     int MinimumBoxes(int[] apples, int[] capacities);
 }

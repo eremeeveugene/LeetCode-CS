@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.CanIWin;
 /// </summary>
 public interface ICanIWin
 {
+    /// <summary>
+    ///     Determines whether the first player can force a win in the 100 game, where players alternately pick distinct
+    ///     integers from 1 to <paramref name="maxChoosableInteger" /> and the player who first reaches or exceeds
+    ///     <paramref name="desiredTotal" /> wins.
+    /// </summary>
+    /// <param name="maxChoosableInteger">The largest integer that can be chosen.</param>
+    /// <param name="desiredTotal">The running total to reach or exceed.</param>
+    /// <returns><c>true</c> if the first player can force a win with optimal play; otherwise, <c>false</c>.</returns>
     bool CanIWin(int maxChoosableInteger, int desiredTotal);
 }

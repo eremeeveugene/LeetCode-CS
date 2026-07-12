@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.WordSearch;
 /// <inheritdoc />
 public sealed class WordSearchRecursive : IWordSearch
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n * 3^L), where m and n are the dimensions of the board and L is the length of the word
     ///     Space complexity - O(m * n), where m and n are the dimensions of the board
-    /// </summary>
-    /// <param name="board"></param>
-    /// <param name="word"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool Exist(char[][] board, string word)
     {
         var visited = new bool[board.Length, board[0].Length];

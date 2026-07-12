@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.CountingWordsWithGivenPrefix;
 /// </summary>
 public interface ICountingWordsWithGivenPrefix
 {
+    /// <summary>
+    ///     Counts the strings in <paramref name="words" /> that contain <paramref name="pref" /> as a prefix.
+    /// </summary>
+    /// <param name="words">The array of words.</param>
+    /// <param name="pref">The prefix to search for.</param>
+    /// <returns>The number of words that start with <paramref name="pref" />.</returns>
     int PrefixCount(string[] words, string pref);
 }

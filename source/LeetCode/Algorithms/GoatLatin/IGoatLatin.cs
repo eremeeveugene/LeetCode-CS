@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.GoatLatin;
 /// </summary>
 public interface IGoatLatin
 {
+    /// <summary>
+    ///     Converts <paramref name="sentence" /> to Goat Latin by appending "ma" to vowel-starting words, moving the first
+    ///     letter of consonant-starting words to the end before appending "ma", and adding one letter 'a' per word index.
+    /// </summary>
+    /// <param name="sentence">The sentence of words separated by single spaces.</param>
+    /// <returns>The sentence converted to Goat Latin.</returns>
     string ToGoatLatin(string sentence);
 }

@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.MinimumNumberOfPeopleToTeach;
 /// <inheritdoc />
 public sealed class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberOfPeopleToTeach
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n), where m is the number of users and n is the number of languages
     ///     Space complexity - O(m * n), where m is the number of users and n is the number of languages
-    /// </summary>
-    /// <param name="languagesCount"></param>
-    /// <param name="languages"></param>
-    /// <param name="friendships"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumTeachings(int languagesCount, int[][] languages, int[][] friendships)
     {
         var usersCount = languages.Length;

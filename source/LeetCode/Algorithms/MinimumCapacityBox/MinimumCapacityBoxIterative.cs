@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MinimumCapacityBox;
 /// <inheritdoc />
 public sealed class MinimumCapacityBoxIterative : IMinimumCapacityBox
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="capacities"></param>
-    /// <param name="itemSize"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinimumIndex(int[] capacities, int itemSize)
     {
         var minCapacity = int.MaxValue;

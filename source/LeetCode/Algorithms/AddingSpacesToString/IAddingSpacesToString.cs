@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.AddingSpacesToString;
 /// </summary>
 public interface IAddingSpacesToString
 {
+    /// <summary>
+    ///     Inserts a space into <paramref name="s" /> before each index specified in <paramref name="spaces" />.
+    /// </summary>
+    /// <param name="s">The original string.</param>
+    /// <param name="spaces">The indices in the original string before which spaces are inserted.</param>
+    /// <returns>The modified string with spaces inserted at the specified indices.</returns>
     string AddSpaces(string s, int[] spaces);
 }

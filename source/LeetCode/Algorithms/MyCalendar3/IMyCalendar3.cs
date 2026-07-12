@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.MyCalendar3;
 /// </summary>
 public interface IMyCalendar3
 {
+    /// <summary>
+    ///     Adds a new event spanning the half-open interval [<paramref name="startTime" />,
+    ///     <paramref name="endTime" />) to the calendar and returns the maximum k-booking achieved so far, where a
+    ///     k-booking is a time point covered by k or more overlapping events.
+    /// </summary>
+    /// <param name="startTime">The start time of the event, inclusive.</param>
+    /// <param name="endTime">The end time of the event, exclusive.</param>
+    /// <returns>The maximum number of overlapping events at any single point in time after adding the new event.</returns>
     int Book(int startTime, int endTime);
 }

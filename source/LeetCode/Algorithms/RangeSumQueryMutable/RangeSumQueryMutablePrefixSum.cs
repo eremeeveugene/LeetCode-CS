@@ -18,10 +18,13 @@ public sealed class RangeSumQueryMutablePrefixSum : IRangeSumQueryMutable
     private readonly int[] _prefixSum;
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="RangeSumQueryMutablePrefixSum" /> class.
+    /// </summary>
+    /// <param name="nums">The array of integers to query range sums on.</param>
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
+    /// </remarks>
     public RangeSumQueryMutablePrefixSum(int[] nums)
     {
         _nums = nums;
@@ -34,12 +37,11 @@ public sealed class RangeSumQueryMutablePrefixSum : IRangeSumQueryMutable
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="index"></param>
-    /// <param name="val"></param>
+    /// </remarks>
     public void Update(int index, int val)
     {
         _nums[index] = val;
@@ -50,13 +52,11 @@ public sealed class RangeSumQueryMutablePrefixSum : IRangeSumQueryMutable
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="left"></param>
-    /// <param name="right"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SumRange(int left, int right)
     {
         return _prefixSum[right + 1] - _prefixSum[left];

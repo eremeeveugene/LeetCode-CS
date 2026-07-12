@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.MaximumUniqueSubarraySumAfterDeletion;
 /// </summary>
 public interface IMaximumUniqueSubarraySumAfterDeletion
 {
+    /// <summary>
+    ///     Finds the maximum sum of a subarray of <paramref name="nums" /> after removing duplicate values so that
+    ///     the remaining elements considered are all unique.
+    /// </summary>
+    /// <param name="nums">The array of integers to evaluate.</param>
+    /// <returns>The maximum possible sum of a subarray with unique elements.</returns>
     int MaxSum(int[] nums);
 }

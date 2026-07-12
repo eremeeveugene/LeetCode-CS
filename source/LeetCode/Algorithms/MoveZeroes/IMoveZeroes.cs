@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.MoveZeroes;
 /// </summary>
 public interface IMoveZeroes
 {
+    /// <summary>
+    ///     Moves all zeroes in <paramref name="nums" /> to the end of the array in place while maintaining the
+    ///     relative order of the non-zero elements.
+    /// </summary>
+    /// <param name="nums">The array of integers to rearrange in place.</param>
     void MoveZeroes(int[] nums);
 }

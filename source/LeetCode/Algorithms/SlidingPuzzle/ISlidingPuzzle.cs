@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SlidingPuzzle;
 /// </summary>
 public interface ISlidingPuzzle
 {
+    /// <summary>
+    ///     Computes the minimum number of moves needed to transform the 2x3 <paramref name="board" /> into the
+    ///     solved state [[1,2,3],[4,5,0]] by repeatedly swapping the empty cell (0) with an adjacent tile.
+    /// </summary>
+    /// <param name="board">The 2x3 board representing the current tile arrangement, where 0 is the empty cell.</param>
+    /// <returns>The minimum number of moves to solve the puzzle, or -1 if it cannot be solved.</returns>
     int SlidingPuzzle(int[][] board);
 }

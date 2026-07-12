@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SingleNumber;
 /// </summary>
 public interface ISingleNumber
 {
+    /// <summary>
+    ///     Finds the element in <paramref name="nums" /> that appears exactly once, given that every other
+    ///     element appears exactly twice.
+    /// </summary>
+    /// <param name="nums">The array of integers to search.</param>
+    /// <returns>The single element that appears only once in <paramref name="nums" />.</returns>
     int SingleNumber(int[] nums);
 }

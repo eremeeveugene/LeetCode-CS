@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SplitTheArray;
 /// </summary>
 public interface ISplitTheArray
 {
+    /// <summary>
+    ///     Determines whether the even-length array <paramref name="nums" /> can be split into two arrays of
+    ///     equal length, each containing only distinct elements.
+    /// </summary>
+    /// <param name="nums">The array of integers to split.</param>
+    /// <returns><see langword="true" /> if the split is possible; otherwise, <see langword="false" />.</returns>
     bool IsPossibleToSplit(int[] nums);
 }

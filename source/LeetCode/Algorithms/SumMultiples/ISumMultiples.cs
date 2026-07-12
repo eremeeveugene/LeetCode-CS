@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SumMultiples;
 /// </summary>
 public interface ISumMultiples
 {
+    /// <summary>
+    ///     Computes the sum of all integers from 1 to <paramref name="n" />, inclusive, that are divisible by
+    ///     3, 5, or 7.
+    /// </summary>
+    /// <param name="n">The inclusive upper bound of the range to sum.</param>
+    /// <returns>The sum of all qualifying multiples from 1 to <paramref name="n" />.</returns>
     int SumOfMultiples(int n);
 }

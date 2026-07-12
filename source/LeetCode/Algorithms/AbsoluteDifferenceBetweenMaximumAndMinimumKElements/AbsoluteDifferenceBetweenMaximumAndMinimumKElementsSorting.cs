@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElement
 /// <inheritdoc />
 public sealed class AbsoluteDifferenceBetweenMaximumAndMinimumKElementsSorting : IAbsoluteDifferenceBetweenMaximumAndMinimumKElements
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int AbsDifference(int[] nums, int k)
     {
         Array.Sort(nums);

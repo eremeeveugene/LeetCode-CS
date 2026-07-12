@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LargestThreeSameDigitNumberInString;
 /// <inheritdoc />
 public sealed class LargestThreeSameDigitNumberInStringGreedy : ILargestThreeSameDigitNumberInString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string LargestGoodInteger(string num)
     {
         var maxChar = '\0';

@@ -14,14 +14,12 @@ namespace LeetCode.Algorithms.CountTheNumberOfConsistentStrings;
 /// <inheritdoc />
 public sealed class CountTheNumberOfConsistentStringsArray : ICountTheNumberOfConsistentStrings
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m + k), where k is the length of allowed string, n is the number of words, m is the length
     ///     of words
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="allowed"></param>
-    /// <param name="words"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountConsistentStrings(string allowed, string[] words)
     {
         var count = words.Length;

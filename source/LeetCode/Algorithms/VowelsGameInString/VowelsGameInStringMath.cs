@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.VowelsGameInString;
 /// <inheritdoc />
 public sealed class VowelsGameInStringMath : IVowelsGameInString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool DoesAliceWin(string s)
     {
         foreach (var c in s)

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumNumberOfChangesToMakeBinaryStringBeautiful;
 /// <inheritdoc />
 public sealed class MinimumNumberOfChangesToMakeBinaryStringBeautifulGreedy : IMinimumNumberOfChangesToMakeBinaryStringBeautiful
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinChanges(string s)
     {
         var result = 0;

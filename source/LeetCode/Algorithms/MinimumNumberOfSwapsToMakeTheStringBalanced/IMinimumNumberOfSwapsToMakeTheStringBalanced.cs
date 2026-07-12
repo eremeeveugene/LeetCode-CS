@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced;
 /// </summary>
 public interface IMinimumNumberOfSwapsToMakeTheStringBalanced
 {
+    /// <summary>
+    ///     Finds the minimum number of swaps required to make the bracket sequence <paramref name="s" /> balanced.
+    /// </summary>
+    /// <param name="s">The string consisting of an equal number of '[' and ']' brackets.</param>
+    /// <returns>The minimum number of swaps needed to balance <paramref name="s" />.</returns>
     int MinSwaps(string s);
 }

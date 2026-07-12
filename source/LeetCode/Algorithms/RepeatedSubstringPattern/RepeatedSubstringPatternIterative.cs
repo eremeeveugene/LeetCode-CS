@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RepeatedSubstringPattern;
 /// <inheritdoc />
 public sealed class RepeatedSubstringPatternIterative : IRepeatedSubstringPattern
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool RepeatedSubstringPattern(string s)
     {
         for (var i = 1; i < s.Length; i++)

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ProductOfArrayExceptSelf;
 /// </summary>
 public interface IProductOfArrayExceptSelf
 {
+    /// <summary>
+    ///     Computes, for each index of <paramref name="nums" />, the product of all elements except the one at that
+    ///     index.
+    /// </summary>
+    /// <param name="nums">The array of integers to process.</param>
+    /// <returns>An array where each element is the product of all elements of <paramref name="nums" /> except itself.</returns>
     int[] ProductExceptSelf(int[] nums);
 }

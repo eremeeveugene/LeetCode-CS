@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.NumberOfWonderfulSubstrings;
 /// </summary>
 public interface INumberOfWonderfulSubstrings
 {
+    /// <summary>
+    ///     Counts the number of wonderful substrings of <paramref name="word" />, where a substring is wonderful if
+    ///     at most one of its characters appears an odd number of times.
+    /// </summary>
+    /// <param name="word">The string consisting of the first ten lowercase English letters ('a' through 'j').</param>
+    /// <returns>The number of wonderful substrings of <paramref name="word" />.</returns>
     long WonderfulSubstrings(string word);
 }

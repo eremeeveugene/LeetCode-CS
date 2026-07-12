@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CountTheNumberOfConsistentStrings;
 /// </summary>
 public interface ICountTheNumberOfConsistentStrings
 {
+    /// <summary>
+    ///     Counts the strings in <paramref name="words" /> that consist only of characters found in
+    ///     <paramref name="allowed" />.
+    /// </summary>
+    /// <param name="allowed">The string of distinct characters permitted in a consistent word.</param>
+    /// <param name="words">The array of words to check for consistency.</param>
+    /// <returns>The number of consistent strings in <paramref name="words" />.</returns>
     int CountConsistentStrings(string allowed, string[] words);
 }

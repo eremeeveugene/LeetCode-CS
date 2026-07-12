@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SortAnArray;
 /// <inheritdoc />
 public sealed class SortAnArrayBubbleSort : ISortAnArray
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] SortArray(int[] nums)
     {
         for (var i = 0; i < nums.Length; i++)

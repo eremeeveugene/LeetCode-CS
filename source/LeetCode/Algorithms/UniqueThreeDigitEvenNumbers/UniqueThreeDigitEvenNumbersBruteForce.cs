@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.UniqueThreeDigitEvenNumbers;
 /// <inheritdoc />
 public sealed class UniqueThreeDigitEvenNumbersBruteForce : IUniqueThreeDigitEvenNumbers
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^3)
     ///     Space complexity - O(n^3)
-    /// </summary>
-    /// <param name="digits"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int TotalNumbers(int[] digits)
     {
         var numbersHashSet = new HashSet<int>();

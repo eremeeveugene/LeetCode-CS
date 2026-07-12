@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PartitionEqualSubsetSum;
 /// <inheritdoc />
 public sealed class PartitionEqualSubsetSumDynamicProgramming : IPartitionEqualSubsetSum
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * target)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanPartition(int[] nums)
     {
         var total = nums.Sum();

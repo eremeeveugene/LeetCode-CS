@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.StringCompression3;
 /// <inheritdoc />
 public sealed class StringCompression3StringBuilder : IStringCompression3
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="word"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string CompressedString(string word)
     {
         var stringBuilder = new StringBuilder();

@@ -16,11 +16,11 @@ namespace LeetCode.Algorithms.ReorderList;
 /// <inheritdoc />
 public sealed class ReorderListTwoPointers : IReorderList
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="head"></param>
+    /// </remarks>
     public void ReorderList(ListNode? head)
     {
         if (head?.next == null)

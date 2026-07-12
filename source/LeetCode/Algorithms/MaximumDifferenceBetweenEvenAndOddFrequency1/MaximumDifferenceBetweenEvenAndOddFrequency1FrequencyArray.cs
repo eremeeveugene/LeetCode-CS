@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MaximumDifferenceBetweenEvenAndOddFrequency1;
 /// <inheritdoc />
 public sealed class MaximumDifferenceBetweenEvenAndOddFrequency1FrequencyArray : IMaximumDifferenceBetweenEvenAndOddFrequency1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxDifference(string s)
     {
         var frequencyArray = new int['z' - 'a' + 1];

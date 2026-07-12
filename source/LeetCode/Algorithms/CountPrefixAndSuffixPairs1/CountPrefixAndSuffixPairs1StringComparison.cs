@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountPrefixAndSuffixPairs1;
 /// <inheritdoc />
 public sealed class CountPrefixAndSuffixPairs1StringComparison : ICountPrefixAndSuffixPairs1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2 * m), where m is the maximum word length
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="words"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountPrefixSuffixPairs(string[] words)
     {
         var count = 0;

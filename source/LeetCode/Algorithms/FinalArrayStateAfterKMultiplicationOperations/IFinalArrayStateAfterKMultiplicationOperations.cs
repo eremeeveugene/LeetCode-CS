@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.FinalArrayStateAfterKMultiplicationOperations;
 /// </summary>
 public interface IFinalArrayStateAfterKMultiplicationOperations
 {
+    /// <summary>
+    ///     Returns the final state of <paramref name="nums" /> after performing <paramref name="k" /> operations, each
+    ///     multiplying the first occurrence of the minimum value by <paramref name="multiplier" />.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <param name="k">The number of multiplication operations to perform.</param>
+    /// <param name="multiplier">The multiplier applied to the minimum value in each operation.</param>
+    /// <returns>The final state of the array after all operations.</returns>
     int[] GetFinalState(int[] nums, int k, int multiplier);
 }

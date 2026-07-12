@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.DistributeCandies;
 /// <inheritdoc />
 public sealed class DistributeCandiesDictionary : IDistributeCandies
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="candyTypes"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int DistributeCandies(int[] candyTypes)
     {
         var maxCount = candyTypes.Length / 2;

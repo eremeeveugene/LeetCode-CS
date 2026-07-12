@@ -17,11 +17,11 @@ public sealed class ImplementStackUsingQueuesTwoQueues : IImplementStackUsingQue
     private readonly Queue<int> _queue1 = new();
     private readonly Queue<int> _queue2 = new();
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="x"></param>
+    /// </remarks>
     public void Push(int x)
     {
         if (_queue1.Count > 0)
@@ -44,31 +44,31 @@ public sealed class ImplementStackUsingQueuesTwoQueues : IImplementStackUsingQue
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int Pop()
     {
         return _queue1.Count > 0 ? _queue1.Dequeue() : _queue2.Dequeue();
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int Top()
     {
         return _queue1.Count > 0 ? _queue1.Peek() : _queue2.Peek();
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public bool Empty()
     {
         return _queue1.Count == 0 && _queue2.Count == 0;

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindChampion2;
 /// <inheritdoc />
 public sealed class FindChampion2HashSet : IFindChampion2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(e + n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="edges"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindChampion(int n, int[][] edges)
     {
         var hashSet = new HashSet<int>();

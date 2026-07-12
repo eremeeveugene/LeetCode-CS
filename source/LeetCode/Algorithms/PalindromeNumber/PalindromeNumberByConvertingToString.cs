@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.PalindromeNumber;
 /// <inheritdoc />
 public sealed class PalindromeNumberByConvertingToString : IPalindromeNumber
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(d), where d is the number of digits in the integer x
     ///     Space complexity - O(d), where d is the number of digits in the integer x
-    /// </summary>
-    /// <param name="x"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsPalindrome(int x)
     {
         switch (x)

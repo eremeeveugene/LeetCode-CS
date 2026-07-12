@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CountSubarraysWhereMaxElementAppearsAtLeastKTimes;
 /// <inheritdoc />
 public sealed class CountSubarraysWhereMaxElementAppearsAtLeastKTimesSlidingWindow : ICountSubarraysWhereMaxElementAppearsAtLeastKTimes
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long CountSubarrays(int[] nums, int k)
     {
         var maxElement = nums.Max();

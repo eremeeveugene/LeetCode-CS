@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.CountOfInterestingSubarrays;
 /// <inheritdoc />
 public sealed class CountOfInterestingSubarraysPrefixSum : ICountOfInterestingSubarrays
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(modulo)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="modulo"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long CountInterestingSubarrays(IList<int> nums, int modulo, int k)
     {
         long result = 0;

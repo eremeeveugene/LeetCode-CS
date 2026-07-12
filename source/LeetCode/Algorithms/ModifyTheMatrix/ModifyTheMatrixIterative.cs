@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ModifyTheMatrix;
 /// <inheritdoc />
 public sealed class ModifyTheMatrixIterative : IModifyTheMatrix
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(m * n)
-    /// </summary>
-    /// <param name="matrix"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] ModifiedMatrix(int[][] matrix)
     {
         var m = matrix.Length;

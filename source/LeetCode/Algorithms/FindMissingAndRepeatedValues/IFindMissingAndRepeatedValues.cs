@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindMissingAndRepeatedValues;
 /// </summary>
 public interface IFindMissingAndRepeatedValues
 {
+    /// <summary>
+    ///     Finds the repeated and the missing values in <paramref name="grid" />, which contains all numbers from 1 to
+    ///     n * n except that one value appears twice and one value is absent.
+    /// </summary>
+    /// <param name="grid">The n x n matrix of integers.</param>
+    /// <returns>An array of two elements where the first is the repeated value and the second is the missing value.</returns>
     int[] FindMissingAndRepeatedValues(int[][] grid);
 }

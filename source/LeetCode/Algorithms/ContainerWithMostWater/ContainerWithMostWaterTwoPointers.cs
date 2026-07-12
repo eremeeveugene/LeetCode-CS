@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ContainerWithMostWater;
 /// <inheritdoc />
 public sealed class ContainerWithMostWaterTwoPointers : IContainerWithMostWater
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="heights"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxArea(int[] heights)
     {
         var left = 0;

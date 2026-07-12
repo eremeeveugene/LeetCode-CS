@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.BoatsToSavePeople;
 /// </summary>
 public interface IBoatsToSavePeople
 {
+    /// <summary>
+    ///     Computes the minimum number of boats required to carry every person, where each boat carries at most two people
+    ///     and their combined weight must not exceed <paramref name="limit" />.
+    /// </summary>
+    /// <param name="people">The weights of the people to rescue.</param>
+    /// <param name="limit">The maximum weight a single boat can carry.</param>
+    /// <returns>The minimum number of boats needed to carry every person.</returns>
     int NumRescueBoats(int[] people, int limit);
 }

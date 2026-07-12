@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CountOperationsToObtainZero;
 /// <inheritdoc />
 public sealed class CountOperationsToObtainZeroSubtraction : ICountOperationsToObtainZero
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(max(num1, num2))
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="num1"></param>
-    /// <param name="num2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountOperations(int num1, int num2)
     {
         if (num1 == 0 || num2 == 0)

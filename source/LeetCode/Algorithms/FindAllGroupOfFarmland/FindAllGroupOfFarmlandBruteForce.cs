@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindAllGroupOfFarmland;
 /// <inheritdoc />
 public sealed class FindAllGroupOfFarmlandBruteForce : IFindAllGroupOfFarmland
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(k), where k is the number of distinct rectangles found
-    /// </summary>
-    /// <param name="land"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] FindFarmland(int[][] land)
     {
         var result = new List<int[]>();

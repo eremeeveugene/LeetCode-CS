@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SmallestNumberWithAllSetBits;
 /// <inheritdoc />
 public sealed class SmallestNumberWithAllSetBitsIterative : ISmallestNumberWithAllSetBits
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SmallestNumber(int n)
     {
         if (n == 1)

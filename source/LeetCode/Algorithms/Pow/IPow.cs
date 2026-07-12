@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.Pow;
 /// </summary>
 public interface IPow
 {
+    /// <summary>
+    ///     Calculates <paramref name="x" /> raised to the power <paramref name="n" />.
+    /// </summary>
+    /// <param name="x">The base value.</param>
+    /// <param name="n">The exponent, which may be negative.</param>
+    /// <returns>The value of <paramref name="x" /> raised to the power <paramref name="n" />.</returns>
     double MyPow(double x, int n);
 }

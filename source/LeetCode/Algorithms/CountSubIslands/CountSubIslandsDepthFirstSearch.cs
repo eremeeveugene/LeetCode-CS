@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CountSubIslands;
 /// <inheritdoc />
 public sealed class CountSubIslandsDepthFirstSearch : ICountSubIslands
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(m * n)
-    /// </summary>
-    /// <param name="grid1"></param>
-    /// <param name="grid2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountSubIslands(int[][] grid1, int[][] grid2)
     {
         var count = 0;

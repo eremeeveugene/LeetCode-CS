@@ -22,13 +22,11 @@ public sealed class FractionToRecurringDecimalDictionary : IFractionToRecurringD
     private const char OpeningParenthesis = '(';
     private const char ClosingParenthesis = ')';
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n), where n is the number of digits in the resulting decimal representation
     ///     Space complexity - O(n), where n is the number of digits in the resulting decimal representation
-    /// </summary>
-    /// <param name="numerator"></param>
-    /// <param name="denominator"></param>
-    /// <returns></returns>
+    /// </remarks>
     public string FractionToDecimal(int numerator, int denominator)
     {
         if (numerator == 0)

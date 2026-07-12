@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.FindKthBitInNthBinaryString;
 /// <inheritdoc />
 public sealed class FindKthBitInNthBinaryStringRecursive : IFindKthBitInNthBinaryString
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public char FindKthBit(int n, int k)
     {
         if (n == 1)

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumAbsoluteDifference;
 /// <inheritdoc />
 public sealed class MinimumAbsoluteDifferenceSorting : IMinimumAbsoluteDifference
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<IList<int>> MinimumAbsDifference(int[] arr)
     {
         Array.Sort(arr);

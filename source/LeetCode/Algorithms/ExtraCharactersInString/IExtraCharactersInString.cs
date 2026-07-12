@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.ExtraCharactersInString;
 /// </summary>
 public interface IExtraCharactersInString
 {
+    /// <summary>
+    ///     Computes the minimum number of extra characters left over when <paramref name="s" /> is optimally broken into
+    ///     non-overlapping substrings present in <paramref name="dictionary" />.
+    /// </summary>
+    /// <param name="s">The string to break into substrings.</param>
+    /// <param name="dictionary">The array of dictionary words.</param>
+    /// <returns>The minimum number of extra characters left over.</returns>
     int MinExtraChar(string s, string[] dictionary);
 }

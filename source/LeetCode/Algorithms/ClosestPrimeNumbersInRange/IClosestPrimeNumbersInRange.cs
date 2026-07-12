@@ -16,5 +16,15 @@ namespace LeetCode.Algorithms.ClosestPrimeNumbersInRange;
 /// </summary>
 public interface IClosestPrimeNumbersInRange
 {
+    /// <summary>
+    ///     Finds the pair of prime numbers within the inclusive range [<paramref name="left" />, <paramref name="right" />]
+    ///     that have the smallest absolute difference between them.
+    /// </summary>
+    /// <param name="left">The inclusive lower bound of the range.</param>
+    /// <param name="right">The inclusive upper bound of the range.</param>
+    /// <returns>
+    ///     An array containing the two closest primes in ascending order, or [-1, -1] if fewer than two primes exist in
+    ///     the range.
+    /// </returns>
     int[] ClosestPrimes(int left, int right);
 }

@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.FindCommonCharacters;
 /// </summary>
 public interface IFindCommonCharacters
 {
+    /// <summary>
+    ///     Finds all characters that appear in every string of <paramref name="words" />, including duplicates.
+    /// </summary>
+    /// <param name="words">The array of lowercase words to intersect.</param>
+    /// <returns>A list of characters, with duplicates, common to all strings in <paramref name="words" />.</returns>
     IList<string> CommonChars(string[] words);
 }

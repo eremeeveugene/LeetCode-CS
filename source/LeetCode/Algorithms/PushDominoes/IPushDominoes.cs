@@ -16,5 +16,14 @@ namespace LeetCode.Algorithms.PushDominoes;
 /// </summary>
 public interface IPushDominoes
 {
+    /// <summary>
+    ///     Simulates the falling of dominoes described by <paramref name="dominoes" /> until they reach a stable
+    ///     configuration.
+    /// </summary>
+    /// <param name="dominoes">
+    ///     The string describing the initial state of each domino, where 'L' means falling left, 'R' means falling
+    ///     right, and '.' means standing.
+    /// </param>
+    /// <returns>The final, stable state of the dominoes.</returns>
     string PushDominoes(string dominoes);
 }

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RabbitsInForest;
 /// <inheritdoc />
 public sealed class RabbitsInForestFrequencyArray : IRabbitsInForest
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="answers"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumRabbits(int[] answers)
     {
         var frequencyArray = new int[1000];

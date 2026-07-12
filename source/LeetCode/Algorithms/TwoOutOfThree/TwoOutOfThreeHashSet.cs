@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.TwoOutOfThree;
 /// <inheritdoc />
 public sealed class TwoOutOfThreeHashSet : ITwoOutOfThree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <param name="nums3"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> TwoOutOfThree(int[] nums1, int[] nums2, int[] nums3)
     {
         var result = new List<int>();

@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimumCostToMakeAtLeastOneValidPathInGrid;
 /// </summary>
 public interface IMinimumCostToMakeAtLeastOneValidPathInGrid
 {
+    /// <summary>
+    ///     Finds the minimum cost to modify directions in <paramref name="grid" />, where changing the direction of
+    ///     a cell costs 1, so that there is a valid path from the top-left cell to the bottom-right cell following
+    ///     the cell directions.
+    /// </summary>
+    /// <param name="grid">The grid where each cell points to an adjacent cell (right, left, down, or up).</param>
+    /// <returns>The minimum cost to make at least one valid path from the top-left to the bottom-right cell.</returns>
     int MinCost(int[][] grid);
 }

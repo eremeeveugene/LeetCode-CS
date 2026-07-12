@@ -11,18 +11,18 @@
 
 namespace LeetCode.Algorithms.GuessNumberHigherOrLower;
 
+/// <inheritdoc />
 public sealed class GuessNumberHigherOrLowerBinarySearch : GuessNumberHigherOrLower
 {
     public GuessNumberHigherOrLowerBinarySearch(int pickedNumber) : base(pickedNumber)
     {
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public override int GuessNumber(int n)
     {
         var left = 1;

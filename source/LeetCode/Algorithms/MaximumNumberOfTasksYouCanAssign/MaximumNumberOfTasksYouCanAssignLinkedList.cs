@@ -14,15 +14,11 @@ namespace LeetCode.Algorithms.MaximumNumberOfTasksYouCanAssign;
 /// <inheritdoc />
 public sealed class MaximumNumberOfTasksYouCanAssignLinkedList : IMaximumNumberOfTasksYouCanAssign
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n + m log m + min(n, m) × log(min(n, m)))
     ///     Space complexity - O(min(n, m))
-    /// </summary>
-    /// <param name="tasks"></param>
-    /// <param name="workers"></param>
-    /// <param name="pills"></param>
-    /// <param name="strength"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxTaskAssign(int[] tasks, int[] workers, int pills, int strength)
     {
         Array.Sort(tasks);

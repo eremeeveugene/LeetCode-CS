@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements
 /// <inheritdoc />
 public sealed class CountElementsWithStrictlySmallerAndGreaterElementsIterative : ICountElementsWithStrictlySmallerAndGreaterElements
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountElements(int[] nums)
     {
         if (nums.Length < 3)

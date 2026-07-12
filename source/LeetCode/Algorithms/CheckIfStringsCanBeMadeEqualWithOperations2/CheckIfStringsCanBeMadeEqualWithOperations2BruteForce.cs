@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations2;
 /// <inheritdoc />
 public sealed class CheckIfStringsCanBeMadeEqualWithOperations2BruteForce : ICheckIfStringsCanBeMadeEqualWithOperations2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s1"></param>
-    /// <param name="s2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckStrings(string s1, string s2)
     {
         var n = s1.Length;

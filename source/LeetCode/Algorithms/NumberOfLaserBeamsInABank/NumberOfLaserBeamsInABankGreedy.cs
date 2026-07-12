@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberOfLaserBeamsInABank;
 /// <inheritdoc />
 public sealed class NumberOfLaserBeamsInABankGreedy : INumberOfLaserBeamsInABank
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="bank"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumberOfBeams(string[] bank)
     {
         var m = bank.Length;

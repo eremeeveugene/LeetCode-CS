@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.ReplaceWords;
 /// </summary>
 public interface IReplaceWords
 {
+    /// <summary>
+    ///     Replaces each word in <paramref name="sentence" /> with the shortest root from <paramref name="dictionary" />
+    ///     that forms it, leaving words without a matching root unchanged.
+    /// </summary>
+    /// <param name="dictionary">The list of root words used for replacement.</param>
+    /// <param name="sentence">The sentence whose words are replaced by their shortest matching root.</param>
+    /// <returns>The resulting sentence after all applicable words have been replaced by their roots.</returns>
     string ReplaceWords(IList<string> dictionary, string sentence);
 }

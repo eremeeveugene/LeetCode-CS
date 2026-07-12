@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CanMakeArithmeticProgressionFromSequence;
 /// <inheritdoc />
 public sealed class CanMakeArithmeticProgressionFromSequenceSorting : ICanMakeArithmeticProgressionFromSequence
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CanMakeArithmeticProgression(int[] arr)
     {
         if (arr.Length < 3)

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.LargestPositiveIntegerThatExistsWithItsNegative;
 /// <inheritdoc />
 public sealed class LargestPositiveIntegerThatExistsWithItsNegativeHashSet : ILargestPositiveIntegerThatExistsWithItsNegative
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindMaxK(int[] nums)
     {
         var maxK = -1;

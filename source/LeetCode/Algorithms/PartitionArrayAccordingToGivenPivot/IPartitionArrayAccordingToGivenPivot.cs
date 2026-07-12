@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.PartitionArrayAccordingToGivenPivot;
 /// </summary>
 public interface IPartitionArrayAccordingToGivenPivot
 {
+    /// <summary>
+    ///     Rearranges <paramref name="nums" /> so that elements less than <paramref name="pivot" /> come first, elements
+    ///     equal to <paramref name="pivot" /> come next, and elements greater than <paramref name="pivot" /> come last,
+    ///     preserving the relative order within each group.
+    /// </summary>
+    /// <param name="nums">The array of integers to rearrange.</param>
+    /// <param name="pivot">The pivot value used to partition the array.</param>
+    /// <returns>The rearranged array partitioned around <paramref name="pivot" />.</returns>
     int[] PivotArray(int[] nums, int pivot);
 }

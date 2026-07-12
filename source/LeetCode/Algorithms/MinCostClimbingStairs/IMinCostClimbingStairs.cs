@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinCostClimbingStairs;
 /// </summary>
 public interface IMinCostClimbingStairs
 {
+    /// <summary>
+    ///     Finds the minimum total cost to reach the top of a staircase where <paramref name="cost" /> gives the
+    ///     cost of stepping on each stair, starting from either step 0 or step 1 and moving one or two steps at a
+    ///     time.
+    /// </summary>
+    /// <param name="cost">The cost of stepping on each stair.</param>
+    /// <returns>The minimum total cost to reach the top of the staircase.</returns>
     int MinCostClimbingStairs(int[] cost);
 }

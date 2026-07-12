@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.MergeTwo2DArraysBySummingValues;
 /// <inheritdoc />
 public sealed class MergeTwo2DArraysBySummingValuesSortedDictionary : IMergeTwo2DArraysBySummingValues
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n + m log m)
     ///     Space complexity - O((n + m) * log (n + m))
-    /// </summary>
-    /// <param name="nums1"></param>
-    /// <param name="nums2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[][] MergeArrays(int[][] nums1, int[][] nums2)
     {
         var dictionary = new SortedDictionary<int, int>();

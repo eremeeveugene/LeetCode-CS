@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.MinimumStringLengthAfterRemovingSubstrings;
 /// <inheritdoc />
 public sealed class MinimumStringLengthAfterRemovingSubstringsStack : IMinimumStringLengthAfterRemovingSubstrings
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MinLength(string s)
     {
         var minLength = s.Length;

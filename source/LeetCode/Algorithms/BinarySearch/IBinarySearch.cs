@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.BinarySearch;
 /// </summary>
 public interface IBinarySearch
 {
+    /// <summary>
+    ///     Searches the sorted array <paramref name="nums" /> for <paramref name="target" /> using binary search.
+    /// </summary>
+    /// <param name="nums">The sorted array of integers to search.</param>
+    /// <param name="target">The value to search for.</param>
+    /// <returns>The index of <paramref name="target" /> in <paramref name="nums" />, or -1 if it is not present.</returns>
     int Search(int[] nums, int target);
 }

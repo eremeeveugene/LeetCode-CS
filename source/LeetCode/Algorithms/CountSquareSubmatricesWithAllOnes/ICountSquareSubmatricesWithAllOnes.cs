@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.CountSquareSubmatricesWithAllOnes;
 /// </summary>
 public interface ICountSquareSubmatricesWithAllOnes
 {
+    /// <summary>
+    ///     Counts the square submatrices of <paramref name="matrix" /> that consist entirely of ones.
+    /// </summary>
+    /// <param name="matrix">The binary matrix to examine.</param>
+    /// <returns>The number of square submatrices with all ones.</returns>
     int CountSquares(int[][] matrix);
 }

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger;
 /// <inheritdoc />
 public sealed class SubtractTheProductAndSumOfDigitsOfAnIntegerDivision : ISubtractTheProductAndSumOfDigitsOfAnInteger
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(d), where d is the number of digits in the integer n
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SubtractProductAndSum(int n)
     {
         var productOfDigits = 1;

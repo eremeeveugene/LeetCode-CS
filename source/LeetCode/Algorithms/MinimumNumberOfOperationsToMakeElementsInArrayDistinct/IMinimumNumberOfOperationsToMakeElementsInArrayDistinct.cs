@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.MinimumNumberOfOperationsToMakeElementsInArrayDist
 /// </summary>
 public interface IMinimumNumberOfOperationsToMakeElementsInArrayDistinct
 {
+    /// <summary>
+    ///     Repeatedly removes the first three elements of <paramref name="nums" /> (or all remaining elements if
+    ///     fewer than three are left) and finds the minimum number of such operations required until all remaining
+    ///     elements are distinct.
+    /// </summary>
+    /// <param name="nums">The array of integers to make distinct.</param>
+    /// <returns>The minimum number of operations required.</returns>
     int MinimumOperations(int[] nums);
 }

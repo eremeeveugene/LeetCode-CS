@@ -18,10 +18,13 @@ public sealed class DesignNeighborSumServiceDictionary : IDesignNeighborSumServi
     private readonly Dictionary<int, (int X, int Y)> _neighborsDictionary = [];
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="DesignNeighborSumServiceDictionary" /> class.
+    /// </summary>
+    /// <param name="grid">The grid of distinct integer values.</param>
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="grid"></param>
+    /// </remarks>
     public DesignNeighborSumServiceDictionary(int[][] grid)
     {
         _grid = grid;
@@ -35,12 +38,11 @@ public sealed class DesignNeighborSumServiceDictionary : IDesignNeighborSumServi
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int AdjacentSum(int value)
     {
         var (x, y) = _neighborsDictionary[value];
@@ -70,12 +72,11 @@ public sealed class DesignNeighborSumServiceDictionary : IDesignNeighborSumServi
         return sum;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int DiagonalSum(int value)
     {
         var (x, y) = _neighborsDictionary[value];

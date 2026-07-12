@@ -24,12 +24,11 @@ public sealed class DesignCircularDequeLinkedList : IDesignCircularDeque
         _k = k;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool InsertFront(int value)
     {
         if (IsFull())
@@ -55,12 +54,11 @@ public sealed class DesignCircularDequeLinkedList : IDesignCircularDeque
         return true;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool InsertLast(int value)
     {
         if (IsFull())
@@ -86,11 +84,11 @@ public sealed class DesignCircularDequeLinkedList : IDesignCircularDeque
         return true;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public bool DeleteFront()
     {
         if (IsEmpty())
@@ -118,11 +116,11 @@ public sealed class DesignCircularDequeLinkedList : IDesignCircularDeque
         return true;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public bool DeleteLast()
     {
         if (IsEmpty())
@@ -150,11 +148,11 @@ public sealed class DesignCircularDequeLinkedList : IDesignCircularDeque
         return true;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int GetFront()
     {
         if (_frontNode == null)
@@ -165,11 +163,11 @@ public sealed class DesignCircularDequeLinkedList : IDesignCircularDeque
         return _frontNode.Value;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int GetRear()
     {
         if (_rearNode == null)
@@ -180,21 +178,21 @@ public sealed class DesignCircularDequeLinkedList : IDesignCircularDeque
         return _rearNode.Value;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsEmpty()
     {
         return _count == 0;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsFull()
     {
         return _count == _k;

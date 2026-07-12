@@ -18,5 +18,12 @@ namespace LeetCode.Algorithms.SameTree;
 /// </summary>
 public interface ISameTree
 {
+    /// <summary>
+    ///     Determines whether binary trees <paramref name="p" /> and <paramref name="q" /> are structurally
+    ///     identical and have the same node values.
+    /// </summary>
+    /// <param name="p">The root of the first binary tree.</param>
+    /// <param name="q">The root of the second binary tree.</param>
+    /// <returns><see langword="true" /> if the trees are the same; otherwise, <see langword="false" />.</returns>
     bool IsSameTree(TreeNode? p, TreeNode? q);
 }

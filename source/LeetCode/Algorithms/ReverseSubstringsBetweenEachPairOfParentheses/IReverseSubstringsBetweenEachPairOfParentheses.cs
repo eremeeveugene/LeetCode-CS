@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ReverseSubstringsBetweenEachPairOfParentheses;
 /// </summary>
 public interface IReverseSubstringsBetweenEachPairOfParentheses
 {
+    /// <summary>
+    ///     Reverses the substring enclosed by every matching pair of parentheses in <paramref name="s" />, from the
+    ///     innermost pair outward, and removes all parentheses from the result.
+    /// </summary>
+    /// <param name="s">The string containing lowercase letters and matched parentheses.</param>
+    /// <returns>The resulting string with all parenthesized substrings reversed and parentheses removed.</returns>
     string ReverseParentheses(string s);
 }

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CheckIfNumberIsSumOfPowersOfThree;
 /// <inheritdoc />
 public sealed class CheckIfNumberIsSumOfPowersOfThreeIterative : ICheckIfNumberIsSumOfPowersOfThree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckPowersOfThree(int n)
     {
         for (var i = 14; i >= 0; i--)

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.NumberOfGoodPairs;
 /// </summary>
 public interface INumberOfGoodPairs
 {
+    /// <summary>
+    ///     Counts the number of good pairs in <paramref name="nums" />, where a pair (i, j) is good if
+    ///     <c>nums[i] == nums[j]</c> and <c>i &lt; j</c>.
+    /// </summary>
+    /// <param name="nums">The array of integers to search for good pairs.</param>
+    /// <returns>The number of good pairs found in <paramref name="nums" />.</returns>
     int NumIdenticalPairs(int[] nums);
 }

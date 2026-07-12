@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.FindTheDifferenceOfTwoArrays;
 /// </summary>
 public interface IFindTheDifferenceOfTwoArrays
 {
+    /// <summary>
+    ///     Finds the distinct integers of <paramref name="nums1" /> that are not present in <paramref name="nums2" /> and the
+    ///     distinct integers of <paramref name="nums2" /> that are not present in <paramref name="nums1" />.
+    /// </summary>
+    /// <param name="nums1">The first array of integers.</param>
+    /// <param name="nums2">The second array of integers.</param>
+    /// <returns>A list of two lists containing the distinct integers unique to each array.</returns>
     IList<IList<int>> FindDifference(int[] nums1, int[] nums2);
 }

@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.DoubleNumberRepresentedAsLinkedList;
 /// <inheritdoc />
 public sealed class DoubleNumberRepresentedAsLinkedListStack : IDoubleNumberRepresentedAsLinkedList
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="head"></param>
-    /// <returns></returns>
+    /// </remarks>
     public ListNode? DoubleIt(ListNode? head)
     {
         var stack = new Stack<ListNode>();

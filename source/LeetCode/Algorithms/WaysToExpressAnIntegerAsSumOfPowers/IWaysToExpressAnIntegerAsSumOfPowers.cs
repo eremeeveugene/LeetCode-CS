@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.WaysToExpressAnIntegerAsSumOfPowers;
 /// </summary>
 public interface IWaysToExpressAnIntegerAsSumOfPowers
 {
+    /// <summary>
+    ///     Counts the number of ways to express <paramref name="n" /> as the sum of the <paramref name="x" />th
+    ///     power of unique positive integers.
+    /// </summary>
+    /// <param name="n">The target integer to express as a sum of powers.</param>
+    /// <param name="x">The exponent applied to each unique positive integer in the sum.</param>
+    /// <returns>The number of ways to express <paramref name="n" /> as such a sum, modulo 10^9 + 7.</returns>
     int NumberOfWays(int n, int x);
 }

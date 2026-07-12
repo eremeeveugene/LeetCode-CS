@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.LinkedListCycle;
 /// <inheritdoc />
 public sealed class LinkedListCycleHashSet : ILinkedListCycle
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="head"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool HasCycle(ListNode? head)
     {
         if (head?.next == null)

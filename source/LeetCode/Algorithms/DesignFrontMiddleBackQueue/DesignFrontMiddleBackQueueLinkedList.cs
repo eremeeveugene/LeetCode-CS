@@ -18,11 +18,11 @@ public sealed class DesignFrontMiddleBackQueueLinkedList : IDesignFrontMiddleBac
     private Node? _head;
     private Node? _tail;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="value"></param>
+    /// </remarks>
     public void PushFront(int value)
     {
         if (_head == null)
@@ -43,11 +43,11 @@ public sealed class DesignFrontMiddleBackQueueLinkedList : IDesignFrontMiddleBac
         _count++;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="value"></param>
+    /// </remarks>
     public void PushMiddle(int value)
     {
         if (_count == 0)
@@ -90,11 +90,11 @@ public sealed class DesignFrontMiddleBackQueueLinkedList : IDesignFrontMiddleBac
         _count++;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="value"></param>
+    /// </remarks>
     public void PushBack(int value)
     {
         if (_tail == null)
@@ -115,11 +115,11 @@ public sealed class DesignFrontMiddleBackQueueLinkedList : IDesignFrontMiddleBac
         _count++;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int PopFront()
     {
         if (_head == null)
@@ -145,11 +145,11 @@ public sealed class DesignFrontMiddleBackQueueLinkedList : IDesignFrontMiddleBac
         return head.Value;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int PopMiddle()
     {
         if (_head == null)
@@ -195,11 +195,11 @@ public sealed class DesignFrontMiddleBackQueueLinkedList : IDesignFrontMiddleBac
         return middle.Value;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int PopBack()
     {
         if (_tail == null)

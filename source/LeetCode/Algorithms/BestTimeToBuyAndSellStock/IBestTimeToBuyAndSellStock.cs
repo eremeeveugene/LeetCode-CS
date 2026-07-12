@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.BestTimeToBuyAndSellStock;
 /// </summary>
 public interface IBestTimeToBuyAndSellStock
 {
+    /// <summary>
+    ///     Computes the maximum profit achievable by buying the stock on one day and selling it on a later day.
+    /// </summary>
+    /// <param name="prices">The stock prices, where prices[i] is the price on the i-th day.</param>
+    /// <returns>The maximum achievable profit, or 0 if no profit is possible.</returns>
     int MaxProfit(int[] prices);
 }

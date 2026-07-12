@@ -18,5 +18,11 @@ namespace LeetCode.Algorithms.RemoveDuplicatesFromSortedList;
 /// </summary>
 public interface IRemoveDuplicatesFromSortedList
 {
+    /// <summary>
+    ///     Removes duplicate values from the sorted linked list starting at <paramref name="head" /> so that each value
+    ///     appears only once.
+    /// </summary>
+    /// <param name="head">The head of the sorted linked list.</param>
+    /// <returns>The head of the linked list after duplicate values have been removed.</returns>
     ListNode? DeleteDuplicates(ListNode? head);
 }

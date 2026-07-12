@@ -11,7 +11,15 @@
 
 namespace LeetCode.Algorithms.LongestHarmoniousSubsequence;
 
+/// <summary>
+///     https://leetcode.com/problems/longest-harmonious-subsequence/
+/// </summary>
 public interface ILongestHarmoniousSubsequence
 {
+    /// <summary>
+    ///     Finds the length of the longest subsequence of <paramref name="nums" /> in which the maximum and minimum values differ by exactly <c>1</c>.
+    /// </summary>
+    /// <param name="nums">The array of integers to examine.</param>
+    /// <returns>The length of the longest harmonious subsequence, or <c>0</c> if none exists.</returns>
     int FindLHS(int[] nums);
 }

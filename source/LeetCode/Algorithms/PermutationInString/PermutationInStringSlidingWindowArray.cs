@@ -16,13 +16,11 @@ public sealed class PermutationInStringSlidingWindowArray : IPermutationInString
 {
     private const int ArrayLength = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m), where n is the length of s1 and m is the length of s2
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="s1"></param>
-    /// <param name="s2"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool CheckInclusion(string s1, string s2)
     {
         if (s1.Length > s2.Length)

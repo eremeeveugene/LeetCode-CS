@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FirstUniqueEvenElement;
 /// <inheritdoc />
 public sealed class FirstUniqueEvenElementFrequencyArray : IFirstUniqueEvenElement
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FirstUniqueEven(int[] nums)
     {
         Span<int> frequencies = stackalloc int[101];

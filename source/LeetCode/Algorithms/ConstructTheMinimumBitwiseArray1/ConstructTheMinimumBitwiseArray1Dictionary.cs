@@ -186,12 +186,11 @@ public sealed class ConstructTheMinimumBitwiseArray1Dictionary : IConstructTheMi
         { 997, 996 }
     };
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] MinBitwiseArray(IList<int> nums)
     {
         var n = nums.Count;

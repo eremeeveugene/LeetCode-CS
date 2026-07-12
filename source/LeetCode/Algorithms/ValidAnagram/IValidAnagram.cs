@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ValidAnagram;
 /// </summary>
 public interface IValidAnagram
 {
+    /// <summary>
+    ///     Determines whether <paramref name="t" /> is an anagram of <paramref name="s" />.
+    /// </summary>
+    /// <param name="s">The first string.</param>
+    /// <param name="t">The second string to compare against <paramref name="s" />.</param>
+    /// <returns><see langword="true" /> if <paramref name="t" /> is an anagram of <paramref name="s" />; otherwise, <see langword="false" />.</returns>
     bool IsAnagram(string s, string t);
 }

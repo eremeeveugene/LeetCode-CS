@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.ContainsDuplicate;
 /// </summary>
 public interface IContainsDuplicate
 {
+    /// <summary>
+    ///     Determines whether any value in <paramref name="nums" /> appears at least twice.
+    /// </summary>
+    /// <param name="nums">The array of integers to check.</param>
+    /// <returns><see langword="true" /> if any value appears more than once; otherwise, <see langword="false" />.</returns>
     bool ContainsDuplicate(int[] nums);
 }

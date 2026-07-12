@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.TwoKeysKeyboard;
 /// </summary>
 public interface ITwoKeysKeyboard
 {
+    /// <summary>
+    ///     Computes the minimum number of "Copy All" and "Paste" operations, starting from a single character,
+    ///     needed to produce exactly <paramref name="n" /> characters.
+    /// </summary>
+    /// <param name="n">The target number of characters to produce.</param>
+    /// <returns>The minimum number of operations required to reach <paramref name="n" /> characters.</returns>
     int MinSteps(int n);
 }

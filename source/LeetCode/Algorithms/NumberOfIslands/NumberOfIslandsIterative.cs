@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NumberOfIslands;
 /// <inheritdoc />
 public sealed class NumberOfIslandsIterative : INumberOfIslands
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(n * m)
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumIslands(char[][] grid)
     {
         var num = 0;

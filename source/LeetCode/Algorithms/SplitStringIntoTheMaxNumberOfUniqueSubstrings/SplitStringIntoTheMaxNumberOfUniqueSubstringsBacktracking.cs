@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SplitStringIntoTheMaxNumberOfUniqueSubstrings;
 /// <inheritdoc />
 public sealed class SplitStringIntoTheMaxNumberOfUniqueSubstringsBacktracking : ISplitStringIntoTheMaxNumberOfUniqueSubstrings
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * 2^n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxUniqueSplit(string s)
     {
         return MaxUniqueSplit(s, [], 0);

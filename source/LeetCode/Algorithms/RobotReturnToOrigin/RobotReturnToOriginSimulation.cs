@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RobotReturnToOrigin;
 /// <inheritdoc />
 public sealed class RobotReturnToOriginSimulation : IRobotReturnToOrigin
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="moves"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool JudgeCircle(string moves)
     {
         var x = 0;

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.DifferentWaysToAddParentheses;
 /// <inheritdoc />
 public sealed class DifferentWaysToAddParenthesesRecursive : IDifferentWaysToAddParentheses
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(3^n)
     ///     Space complexity - O(3^n)
-    /// </summary>
-    /// <param name="expression"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<int> DiffWaysToCompute(string expression)
     {
         var results = new List<int>();

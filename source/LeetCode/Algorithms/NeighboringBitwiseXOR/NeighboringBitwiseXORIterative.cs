@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.NeighboringBitwiseXOR;
 /// <inheritdoc />
 public sealed class NeighboringBitwiseXORIterative : INeighboringBitwiseXOR
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="derived"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool DoesValidArrayExist(int[] derived)
     {
         var xorResult = 0;

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.BuildArrayFromPermutation;
 /// </summary>
 public interface IBuildArrayFromPermutation
 {
+    /// <summary>
+    ///     Builds an array where the i-th element is nums[nums[i]] for the zero-based permutation
+    ///     <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The zero-based permutation.</param>
+    /// <returns>The array where the i-th element equals nums[nums[i]].</returns>
     int[] BuildArray(int[] nums);
 }

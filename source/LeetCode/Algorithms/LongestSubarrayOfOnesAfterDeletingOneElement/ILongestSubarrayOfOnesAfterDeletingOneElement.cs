@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.LongestSubarrayOfOnesAfterDeletingOneElement;
 /// </summary>
 public interface ILongestSubarrayOf1AfterDeletingOneElement
 {
+    /// <summary>
+    ///     Finds the length of the longest subarray of 1s in the binary array <paramref name="nums" /> after deleting
+    ///     exactly one element.
+    /// </summary>
+    /// <param name="nums">The binary array from which exactly one element must be deleted.</param>
+    /// <returns>The length of the longest subarray containing only 1s after deleting one element.</returns>
     int LongestSubarray(int[] nums);
 }

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.SubarrayProductLessThanK;
 /// <inheritdoc />
 public sealed class SubarrayProductLessThanKTwoPointers : ISubarrayProductLessThanK
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int NumSubarrayProductLessThanK(int[] nums, int k)
     {
         if (k <= 1)

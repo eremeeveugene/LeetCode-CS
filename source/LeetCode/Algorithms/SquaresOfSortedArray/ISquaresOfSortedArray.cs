@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SquaresOfSortedArray;
 /// </summary>
 public interface ISquaresOfSortedArray
 {
+    /// <summary>
+    ///     Squares each element of the non-decreasing sorted array <paramref name="nums" /> and returns the
+    ///     squares sorted in non-decreasing order.
+    /// </summary>
+    /// <param name="nums">The sorted array of integers to square.</param>
+    /// <returns>A new array containing the squares of <paramref name="nums" />, sorted in non-decreasing order.</returns>
     int[] SortedSquares(int[] nums);
 }

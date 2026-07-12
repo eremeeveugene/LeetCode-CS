@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.FindingThreeDigitEvenNumbers;
 /// </summary>
 public interface IFindingThreeDigitEvenNumbers
 {
+    /// <summary>
+    ///     Finds all unique three-digit even numbers that can be formed by concatenating three elements of
+    ///     <paramref name="digits" /> without leading zeros.
+    /// </summary>
+    /// <param name="digits">The array of digits.</param>
+    /// <returns>The sorted array of unique three-digit even numbers that can be formed.</returns>
     int[] FindEvenNumbers(int[] digits);
 }

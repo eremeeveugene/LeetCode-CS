@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.CountSubmatricesWithAllOnes;
 /// </summary>
 public interface ICountSubmatricesWithAllOnes
 {
+    /// <summary>
+    ///     Counts the submatrices of <paramref name="mat" /> that consist entirely of ones.
+    /// </summary>
+    /// <param name="mat">The binary matrix to examine.</param>
+    /// <returns>The number of submatrices with all ones.</returns>
     int NumSubmat(int[][] mat);
 }

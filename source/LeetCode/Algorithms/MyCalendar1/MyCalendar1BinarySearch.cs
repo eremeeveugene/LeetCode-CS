@@ -16,13 +16,11 @@ public sealed class MyCalendar1BinarySearch : IMyCalendar1
 {
     private readonly List<Item> _items = [];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="start"></param>
-    /// <param name="end"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool Book(int start, int end)
     {
         var item = new Item(start, end);

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.CountLargestGroup;
 /// <inheritdoc />
 public sealed class CountLargestGroupFrequencyArray : ICountLargestGroup
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountLargestGroup(int n)
     {
         var count = 0;

@@ -16,11 +16,27 @@ namespace LeetCode.Algorithms.ImplementQueueUsingStacks;
 /// </summary>
 public interface IImplementQueueUsingStacks
 {
+    /// <summary>
+    ///     Pushes <paramref name="x" /> to the back of the queue.
+    /// </summary>
+    /// <param name="x">The element to push.</param>
     void Push(int x);
 
+    /// <summary>
+    ///     Removes the element from the front of the queue and returns it.
+    /// </summary>
+    /// <returns>The element removed from the front of the queue.</returns>
     int Pop();
 
+    /// <summary>
+    ///     Returns the element at the front of the queue without removing it.
+    /// </summary>
+    /// <returns>The element at the front of the queue.</returns>
     int Peek();
 
+    /// <summary>
+    ///     Determines whether the queue is empty.
+    /// </summary>
+    /// <returns><c>true</c> if the queue is empty; otherwise, <c>false</c>.</returns>
     bool Empty();
 }

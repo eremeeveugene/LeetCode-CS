@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.HappyNumber;
 /// </summary>
 public interface IHappyNumber
 {
+    /// <summary>
+    ///     Determines whether <paramref name="n" /> is a happy number, i.e. repeatedly replacing the number with the sum of
+    ///     the squares of its digits eventually reaches 1.
+    /// </summary>
+    /// <param name="n">The number to check.</param>
+    /// <returns><c>true</c> if <paramref name="n" /> is a happy number; otherwise, <c>false</c>.</returns>
     bool IsHappy(int n);
 }

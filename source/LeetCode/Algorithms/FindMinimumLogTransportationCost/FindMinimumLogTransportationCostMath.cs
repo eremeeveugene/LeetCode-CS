@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.FindMinimumLogTransportationCost;
 /// <inheritdoc />
 public sealed class FindMinimumLogTransportationCostMath : IFindMinimumLogTransportationCost
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="m"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long MinCuttingCost(int n, int m, int k)
     {
         long cutN = Math.Max(0, n - k);

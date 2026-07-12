@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget;
 /// <inheritdoc />
 public sealed class CountPairsWhoseSumIsLessThanTargetIterative : ICountPairsWhoseSumIsLessThanTarget
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CountPairs(IList<int> nums, int target)
     {
         var count = 0;

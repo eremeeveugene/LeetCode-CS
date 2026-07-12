@@ -19,10 +19,13 @@ public sealed class FindElementsInContaminatedBinaryTreeHashSet : IFindElementsI
     private readonly HashSet<int> _hashSet = [];
 
     /// <summary>
+    ///     Initializes a new instance of the <see cref="FindElementsInContaminatedBinaryTreeHashSet" /> class.
+    /// </summary>
+    /// <param name="root">The root of the contaminated binary tree.</param>
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="root"></param>
+    /// </remarks>
     public FindElementsInContaminatedBinaryTreeHashSet(TreeNode root)
     {
         var queue = new Queue<TreeNode>();
@@ -53,12 +56,11 @@ public sealed class FindElementsInContaminatedBinaryTreeHashSet : IFindElementsI
         }
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool Find(int target)
     {
         return _hashSet.Contains(target);

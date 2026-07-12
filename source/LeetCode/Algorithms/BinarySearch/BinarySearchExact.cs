@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.BinarySearch;
 /// <inheritdoc />
 public sealed class BinarySearchExact : IBinarySearch
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Search(int[] nums, int target)
     {
         var left = 0;

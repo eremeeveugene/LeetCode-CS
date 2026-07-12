@@ -16,13 +16,11 @@ namespace LeetCode.Algorithms.DeleteLeavesWithGivenValue;
 /// <inheritdoc />
 public sealed class DeleteLeavesWithGivenValueDepthFirstSearch : IDeleteLeavesWithGivenValue
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n) for the skewed tree, O(log n) for a balanced tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public TreeNode? RemoveLeafNodes(TreeNode? root, int target)
     {
         if (root == null)

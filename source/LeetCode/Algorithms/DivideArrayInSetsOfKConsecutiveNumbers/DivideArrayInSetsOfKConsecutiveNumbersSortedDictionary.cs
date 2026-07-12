@@ -14,6 +14,12 @@ namespace LeetCode.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers;
 /// <inheritdoc />
 public sealed class DivideArrayInSetsOfKConsecutiveNumbersSortedDictionary : IDivideArrayInSetsOfKConsecutiveNumbers
 {
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(n log n), where n is the length of the input array nums, due to the sorted dictionary
+    ///     insertions and lookups
+    ///     Space complexity - O(n), where n is the length of the input array nums
+    /// </remarks>
     public bool IsPossibleDivide(int[] nums, int k)
     {
         if (nums.Length % k != 0)

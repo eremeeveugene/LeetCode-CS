@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RemoveDuplicatesFromSortedArray2;
 /// <inheritdoc />
 public sealed class RemoveDuplicatesFromSortedArray2TwoPointers : IRemoveDuplicatesFromSortedArray2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int RemoveDuplicates(int[] nums)
     {
         if (nums.Length <= 2)

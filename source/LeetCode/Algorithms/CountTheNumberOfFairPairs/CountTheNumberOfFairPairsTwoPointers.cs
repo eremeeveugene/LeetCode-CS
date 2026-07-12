@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.CountTheNumberOfFairPairs;
 /// <inheritdoc />
 public sealed class CountTheNumberOfFairPairsTwoPointers : ICountTheNumberOfFairPairs
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="lower"></param>
-    /// <param name="upper"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long CountFairPairs(int[] nums, int lower, int upper)
     {
         Array.Sort(nums);

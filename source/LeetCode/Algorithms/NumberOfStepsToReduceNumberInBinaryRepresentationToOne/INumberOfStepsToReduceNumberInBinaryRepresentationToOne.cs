@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.NumberOfStepsToReduceNumberInBinaryRepresentationT
 /// </summary>
 public interface INumberOfStepsToReduceNumberInBinaryRepresentationToOne
 {
+    /// <summary>
+    ///     Computes the number of steps required to reduce the binary number represented by <paramref name="s" /> to
+    ///     the value 1, where each step halves the number if it is even or subtracts 1 if it is odd.
+    /// </summary>
+    /// <param name="s">The binary representation of a positive integer, as a string of '0' and '1' characters.</param>
+    /// <returns>The number of steps required to reduce the number represented by <paramref name="s" /> to 1.</returns>
     int NumSteps(string s);
 }

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RobotBoundedInCircle;
 /// <inheritdoc />
 public sealed class RobotBoundedInCircleSimulation : IRobotBoundedInCircle
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="instructions"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool IsRobotBounded(string instructions)
     {
         var direction = 0;

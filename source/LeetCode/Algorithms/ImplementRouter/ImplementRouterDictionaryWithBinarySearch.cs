@@ -20,11 +20,11 @@ public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
     private readonly HashSet<(int Source, int Destination, int Timestamp)> _packetsHashSet;
     private readonly Queue<(int Source, int Destination, int Timestamp)> _packetsQueue;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="memoryLimit"></param>
+    /// </remarks>
     public ImplementRouterDictionaryWithBinarySearch(int memoryLimit)
     {
         _memoryLimit = memoryLimit;
@@ -33,14 +33,11 @@ public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
         _destinationToTimestampBufferDictionary = new Dictionary<int, TimestampBuffer>(memoryLimit);
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="source"></param>
-    /// <param name="destination"></param>
-    /// <param name="timestamp"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool AddPacket(int source, int destination, int timestamp)
     {
         var packet = (source, destination, timestamp);
@@ -69,11 +66,11 @@ public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
         return true;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <returns></returns>
+    /// </remarks>
     public int[] ForwardPacket()
     {
         if (_packetsQueue.Count == 0)
@@ -90,14 +87,11 @@ public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
         return GetForwardBuffer(packet.Source, packet.Destination, packet.Timestamp);
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(log m), where m is the number of timestamps for this destination
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="destination"></param>
-    /// <param name="startTime"></param>
-    /// <param name="endTime"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int GetCount(int destination, int startTime, int endTime)
     {
         return _destinationToTimestampBufferDictionary.TryGetValue(destination, out var packetBuffer)
@@ -105,14 +99,11 @@ public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
             : 0;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="source"></param>
-    /// <param name="destination"></param>
-    /// <param name="timestamp"></param>
-    /// <returns></returns>
+    /// </remarks>
     private static int[] GetForwardBuffer(int source, int destination, int timestamp)
     {
         ForwardBuffer[0] = source;
@@ -127,32 +118,31 @@ public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
         private readonly List<int> _timestamps = [];
         private int _head;
 
-        /// <summary>
+        /// <inheritdoc />
+        /// <remarks>
         ///     Time complexity - O(1), O(n) in worst-case on resize
         ///     Space complexity - O(1)
-        /// </summary>
-        /// <param name="packet"></param>
+        /// </remarks>
         public void Add(int packet)
         {
             _timestamps.Add(packet);
         }
 
-        /// <summary>
+        /// <inheritdoc />
+        /// <remarks>
         ///     Time complexity - O(1)
         ///     Space complexity - O(1)
-        /// </summary>
+        /// </remarks>
         public void RemoveHead()
         {
             _head++;
         }
 
-        /// <summary>
+        /// <inheritdoc />
+        /// <remarks>
         ///     Time complexity - O(log m), where m is the number of timestamps currently stored
         ///     Space complexity - O(1)
-        /// </summary>
-        /// <param name="startTime"></param>
-        /// <param name="endTime"></param>
-        /// <returns></returns>
+        /// </remarks>
         public int GetCountInRange(int startTime, int endTime)
         {
             if (_timestamps.Count - _head == 0)
@@ -173,12 +163,11 @@ public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
             return right - left;
         }
 
-        /// <summary>
+        /// <inheritdoc />
+        /// <remarks>
         ///     Time complexity - O(log m), where m is the number of timestamps currently stored
         ///     Space complexity - O(1)
-        /// </summary>
-        /// <param name="target"></param>
-        /// <returns></returns>
+        /// </remarks>
         private int FindLowerBound(int target)
         {
             var low = _head;

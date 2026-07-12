@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.CountOfSubstringsContainingEveryVowelAndKConsonant
 /// <inheritdoc />
 public sealed class CountOfSubstringsContainingEveryVowelAndKConsonants2SlidingWindow : ICountOfSubstringsContainingEveryVowelAndKConsonants2
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="word"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long CountOfSubstrings(string word, int k)
     {
         return AtLeastK(word, k) - AtLeastK(word, k + 1);

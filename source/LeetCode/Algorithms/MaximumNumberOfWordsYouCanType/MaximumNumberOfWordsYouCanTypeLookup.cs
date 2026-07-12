@@ -16,13 +16,11 @@ public sealed class MaximumNumberOfWordsYouCanTypeLookup : IMaximumNumberOfWords
 {
     private const byte AlphabetLength = 'z' - 'a' + 1;
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n + m), where n is the length of the text and m is the length of brokenLetters
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="text"></param>
-    /// <param name="brokenLetters"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int CanBeTypedWords(string text, string brokenLetters)
     {
         Span<bool> brokenLettersLookup = stackalloc bool[AlphabetLength];

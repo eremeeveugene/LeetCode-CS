@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.TrappingRainWater;
 /// </summary>
 public interface ITrappingRainWater
 {
+    /// <summary>
+    ///     Computes the total volume of rainwater trapped between bars whose heights are given by
+    ///     <paramref name="height" />.
+    /// </summary>
+    /// <param name="height">The array of non-negative integers representing the elevation map's bar heights.</param>
+    /// <returns>The total amount of water that can be trapped after raining.</returns>
     int Trap(int[] height);
 }

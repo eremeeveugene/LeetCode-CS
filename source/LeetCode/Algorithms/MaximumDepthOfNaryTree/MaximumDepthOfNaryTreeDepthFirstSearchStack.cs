@@ -16,12 +16,11 @@ namespace LeetCode.Algorithms.MaximumDepthOfNaryTree;
 /// <inheritdoc />
 public sealed class MaximumDepthOfNaryTreeDepthFirstSearchStack : IMaximumDepthOfNaryTree
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(h), where h is the height of the tree
-    /// </summary>
-    /// <param name="root"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxDepth(Node? root)
     {
         if (root == null)

@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.IntegerToEnglishWords;
 /// </summary>
 public interface IIntegerToEnglishWords
 {
+    /// <summary>
+    ///     Converts <paramref name="num" /> to its English words representation.
+    /// </summary>
+    /// <param name="num">The non-negative integer to convert.</param>
+    /// <returns>The English words representation of <paramref name="num" />.</returns>
     string NumberToWords(int num);
 }

@@ -16,33 +16,31 @@ public sealed class DesignHashMapIntArray : IDesignHashMap
 {
     private readonly int[] _items = new int[1_000_001];
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="key"></param>
-    /// <param name="value"></param>
+    /// </remarks>
     public void Put(int key, int value)
     {
         _items[key] = value + 1;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="key"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int Get(int key)
     {
         return _items[key] - 1;
     }
 
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="key"></param>
+    /// </remarks>
     public void Remove(int key)
     {
         _items[key] = 0;

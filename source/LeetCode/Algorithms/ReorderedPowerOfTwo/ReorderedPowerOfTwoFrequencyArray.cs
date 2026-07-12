@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.ReorderedPowerOfTwo;
 /// <inheritdoc />
 public sealed class ReorderedPowerOfTwoFrequencyArray : IReorderedPowerOfTwo
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="n"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool ReorderedPowerOf2(int n)
     {
         var targetDigitsFrequency = GetDigitsFrequency(n);

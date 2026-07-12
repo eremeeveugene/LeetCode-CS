@@ -18,5 +18,12 @@ namespace LeetCode.Algorithms.PathSum2;
 /// </summary>
 public interface IPathSum2
 {
+    /// <summary>
+    ///     Finds all root-to-leaf paths in the binary tree rooted at <paramref name="root" /> whose node values sum to
+    ///     <paramref name="targetSum" />.
+    /// </summary>
+    /// <param name="root">The root of the binary tree.</param>
+    /// <param name="targetSum">The target sum to match along a root-to-leaf path.</param>
+    /// <returns>A list of all root-to-leaf paths whose values sum to <paramref name="targetSum" />.</returns>
     IList<IList<int>> PathSum(TreeNode? root, int targetSum);
 }

@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.FindCommonCharacters;
 /// <inheritdoc />
 public sealed class FindCommonCharactersArray : IFindCommonCharacters
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m), where n is the number of words and m is the maximum length of the words
     ///     Space complexity - O(n * m), where n is the number of words and m is the maximum length of the words
-    /// </summary>
-    /// <param name="words"></param>
-    /// <returns></returns>
+    /// </remarks>
     public IList<string> CommonChars(string[] words)
     {
         var minFrequency = new int[26];

@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.LongestIdealSubsequence;
 /// </summary>
 public interface ILongestIdealSubsequence
 {
+    /// <summary>
+    ///     Finds the length of the longest ideal subsequence of <paramref name="s" />, where consecutive letters in the subsequence differ in alphabet position by at most <paramref name="k" />.
+    /// </summary>
+    /// <param name="s">The string of lowercase letters to select a subsequence from.</param>
+    /// <param name="k">The maximum allowed absolute difference between the alphabet positions of consecutive letters.</param>
+    /// <returns>The length of the longest ideal subsequence.</returns>
     int LongestIdealString(string s, int k);
 }

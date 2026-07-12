@@ -16,5 +16,13 @@ namespace LeetCode.Algorithms.CountTheHiddenSequences;
 /// </summary>
 public interface ICountTheHiddenSequences
 {
+    /// <summary>
+    ///     Counts the number of hidden integer arrays whose consecutive differences match <paramref name="differences" />
+    ///     and whose every element lies within the inclusive range [<paramref name="lower" />, <paramref name="upper" />].
+    /// </summary>
+    /// <param name="differences">The array of consecutive differences of the hidden sequence.</param>
+    /// <param name="lower">The inclusive lower bound for every element of the hidden sequence.</param>
+    /// <param name="upper">The inclusive upper bound for every element of the hidden sequence.</param>
+    /// <returns>The number of possible hidden sequences satisfying the given constraints.</returns>
     int NumberOfArrays(int[] differences, int lower, int upper);
 }

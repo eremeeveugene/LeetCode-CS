@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.ContiguousArray;
 /// </summary>
 public interface IContiguousArray
 {
+    /// <summary>
+    ///     Finds the maximum length of a contiguous subarray of <paramref name="nums" /> containing an equal number of
+    ///     0s and 1s.
+    /// </summary>
+    /// <param name="nums">The binary array of 0s and 1s.</param>
+    /// <returns>The length of the longest contiguous subarray with an equal number of 0s and 1s.</returns>
     int FindMaxLength(int[] nums);
 }

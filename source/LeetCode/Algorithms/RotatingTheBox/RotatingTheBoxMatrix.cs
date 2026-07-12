@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.RotatingTheBox;
 /// <inheritdoc />
 public sealed class RotatingTheBoxMatrix : IRotatingTheBox
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(n * m)
-    /// </summary>
-    /// <param name="box"></param>
-    /// <returns></returns>
+    /// </remarks>
     public char[][] RotateTheBox(char[][] box)
     {
         var m = box.Length;

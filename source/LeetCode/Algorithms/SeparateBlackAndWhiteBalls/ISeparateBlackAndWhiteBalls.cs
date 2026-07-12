@@ -16,5 +16,11 @@ namespace LeetCode.Algorithms.SeparateBlackAndWhiteBalls;
 /// </summary>
 public interface ISeparateBlackAndWhiteBalls
 {
+    /// <summary>
+    ///     Computes the minimum number of adjacent swaps required to group all black balls ('1') to the right
+    ///     and all white balls ('0') to the left in <paramref name="s" />.
+    /// </summary>
+    /// <param name="s">The binary string representing the arrangement of balls.</param>
+    /// <returns>The minimum number of adjacent swaps needed to separate the balls.</returns>
     long MinimumSteps(string s);
 }

@@ -14,13 +14,11 @@ namespace LeetCode.Algorithms.TargetSum;
 /// <inheritdoc />
 public sealed class TargetSumRecursion : ITargetSum
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n * totalSum)
     ///     Space complexity - O(n * totalSum)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int FindTargetSumWays(int[] nums, int target)
     {
         var totalSum = nums.Sum();

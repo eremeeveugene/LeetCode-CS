@@ -16,5 +16,10 @@ namespace LeetCode.Algorithms.Subsets;
 /// </summary>
 public interface ISubsets
 {
+    /// <summary>
+    ///     Generates all possible subsets (the power set) of the distinct integers in <paramref name="nums" />.
+    /// </summary>
+    /// <param name="nums">The array of distinct integers to generate subsets from.</param>
+    /// <returns>A list of all possible subsets of <paramref name="nums" />.</returns>
     IList<IList<int>> Subsets(int[] nums);
 }

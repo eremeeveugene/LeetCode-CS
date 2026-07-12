@@ -14,14 +14,11 @@ namespace LeetCode.Algorithms.MaximizeTheNumberOfTargetNodesAfterConnectingTrees
 /// <inheritdoc />
 public sealed class MaximizeTheNumberOfTargetNodesAfterConnectingTrees1DepthFirstSearch : IMaximizeTheNumberOfTargetNodesAfterConnectingTrees1
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n^2 + m^2)
     ///     Space complexity - O(n + m)
-    /// </summary>
-    /// <param name="edges1"></param>
-    /// <param name="edges2"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int[] MaxTargetNodes(int[][] edges1, int[][] edges2, int k)
     {
         var n = edges1.Length + 1;

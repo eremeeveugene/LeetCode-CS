@@ -11,15 +11,14 @@
 
 namespace LeetCode.Algorithms.MaximumNumberOfDistinctElementsAfterOperations;
 
+/// <inheritdoc />
 public sealed class MaximumNumberOfDistinctElementsAfterOperationsSortingGreedy : IMaximumNumberOfDistinctElementsAfterOperations
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="k"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int MaxDistinctElements(int[] nums, int k)
     {
         var numsLength = nums.Length;

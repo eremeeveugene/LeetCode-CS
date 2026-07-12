@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.SumOfVariableLengthSubarrays;
 /// <inheritdoc />
 public sealed class SumOfVariableLengthSubarraysPrefixSum : ISumOfVariableLengthSubarrays
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <returns></returns>
+    /// </remarks>
     public int SubarraySum(int[] nums)
     {
         var prefix = new int[nums.Length];

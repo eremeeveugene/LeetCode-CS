@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.FindMinimumTimeToReachLastRoom1;
 /// </summary>
 public interface IFindMinimumTimeToReachLastRoom1
 {
+    /// <summary>
+    ///     Finds the minimum time to reach the bottom-right room of the dungeon starting from the top-left room, where
+    ///     <paramref name="moveTime" />[i][j] is the earliest time the room (i, j) can be entered and each move takes one
+    ///     second.
+    /// </summary>
+    /// <param name="moveTime">The matrix of the earliest times at which each room can be entered.</param>
+    /// <returns>The minimum time in seconds required to reach the last room.</returns>
     int MinTimeToReach(int[][] moveTime);
 }

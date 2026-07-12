@@ -18,5 +18,12 @@ namespace LeetCode.Algorithms.MergeTwoSortedLists;
 /// </summary>
 public interface IMergeTwoSortedLists
 {
+    /// <summary>
+    ///     Merges the two sorted linked lists <paramref name="list1" /> and <paramref name="list2" /> into a single
+    ///     sorted linked list.
+    /// </summary>
+    /// <param name="list1">The head of the first sorted linked list.</param>
+    /// <param name="list2">The head of the second sorted linked list.</param>
+    /// <returns>The head of the merged sorted linked list.</returns>
     ListNode? MergeTwoLists(ListNode? list1, ListNode? list2);
 }

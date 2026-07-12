@@ -16,5 +16,12 @@ namespace LeetCode.Algorithms.CountTheNumberOfGoodSubarrays;
 /// </summary>
 public interface ICountTheNumberOfGoodSubarrays
 {
+    /// <summary>
+    ///     Counts the good subarrays of <paramref name="nums" />, defined as subarrays containing at least
+    ///     <paramref name="k" /> pairs of equal elements (i, j) with i &lt; j.
+    /// </summary>
+    /// <param name="nums">The array of integers to examine.</param>
+    /// <param name="k">The minimum number of equal-value pairs required for a subarray to be good.</param>
+    /// <returns>The total number of good subarrays.</returns>
     long CountGood(int[] nums, int k);
 }

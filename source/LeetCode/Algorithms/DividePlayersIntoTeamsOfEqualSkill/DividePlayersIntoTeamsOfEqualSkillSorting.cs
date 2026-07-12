@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.DividePlayersIntoTeamsOfEqualSkill;
 /// <inheritdoc />
 public sealed class DividePlayersIntoTeamsOfEqualSkillSorting : IDividePlayersIntoTeamsOfEqualSkill
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="skill"></param>
-    /// <returns></returns>
+    /// </remarks>
     public long DividePlayers(int[] skill)
     {
         Array.Sort(skill);

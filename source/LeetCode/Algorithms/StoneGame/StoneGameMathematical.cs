@@ -14,12 +14,11 @@ namespace LeetCode.Algorithms.StoneGame;
 /// <inheritdoc />
 public sealed class StoneGameMathematical : IStoneGame
 {
-    /// <summary>
+    /// <inheritdoc />
+    /// <remarks>
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
-    /// </summary>
-    /// <param name="piles"></param>
-    /// <returns></returns>
+    /// </remarks>
     public bool StoneGame(int[] piles)
     {
         return true;
