@@ -14,4 +14,5 @@ using LeetCode.Algorithms.RearrangeCharactersToMakeTargetString;
 namespace LeetCode.Tests.Algorithms.RearrangeCharactersToMakeTargetString;
 
 [TestClass]
-public sealed class RearrangeCharactersToMakeTargetStringCountingTests : RearrangeCharactersToMakeTargetStringTestsBase<RearrangeCharactersToMakeTargetStringCounting>;
+public sealed class RearrangeCharactersToMakeTargetStringCountingTests
+    : RearrangeCharactersToMakeTargetStringTestsBase<RearrangeCharactersToMakeTargetStringCounting>;

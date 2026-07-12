@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MinimumAddToMakeParenthesesValid;
 namespace LeetCode.Tests.Algorithms.MinimumAddToMakeParenthesesValid;
 
 [TestClass]
-public sealed class MinimumAddToMakeParenthesesValidIterativeTests : MinimumAddToMakeParenthesesValidTestsBase<MinimumAddToMakeParenthesesValidIterative>;
+public sealed class MinimumAddToMakeParenthesesValidIterativeTests
+    : MinimumAddToMakeParenthesesValidTestsBase<MinimumAddToMakeParenthesesValidIterative>;

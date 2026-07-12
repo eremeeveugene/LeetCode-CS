@@ -18,7 +18,9 @@ public abstract class SmallestStringStartingFromLeafTestsBase<T> where T : ISmal
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void SmallestFromLeaf_WithDifferentTreeConfigurations_ReturnsSmallestLexicographicalStringFromLeaf(int?[] rootArray, string? expectedResult)
+    public void SmallestFromLeaf_WithDifferentTreeConfigurations_ReturnsSmallestLexicographicalStringFromLeaf(
+        int?[] rootArray,
+        string? expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);

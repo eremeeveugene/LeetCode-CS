@@ -14,4 +14,5 @@ using LeetCode.Algorithms.SmallestStringStartingFromLeaf;
 namespace LeetCode.Tests.Algorithms.SmallestStringStartingFromLeaf;
 
 [TestClass]
-public sealed class SmallestStringStartingFromLeafDepthFirstSearchTests : SmallestStringStartingFromLeafTestsBase<SmallestStringStartingFromLeafDepthFirstSearch>;
+public sealed class SmallestStringStartingFromLeafDepthFirstSearchTests
+    : SmallestStringStartingFromLeafTestsBase<SmallestStringStartingFromLeafDepthFirstSearch>;

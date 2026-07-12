@@ -34,7 +34,10 @@ public abstract class MinimizeTheMaximumDifferenceOfPairsTestsBase<T> where T : 
     [DataRow(new[] { 3, 3 }, 1, 0)]
     [DataRow(new[] { 2, 4, 6, 8 }, 1, 2)]
     [DataRow(new[] { 1, 2, 4, 8 }, 1, 1)]
-    public void MinimizeMax_WithNumsAndPairCount_ReturnsMinimumPossibleMaximumDifferenceAmongPairs(int[] nums, int requiredPairsCount, int expectedResult)
+    public void MinimizeMax_WithNumsAndPairCount_ReturnsMinimumPossibleMaximumDifferenceAmongPairs(
+        int[] nums,
+        int requiredPairsCount,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();

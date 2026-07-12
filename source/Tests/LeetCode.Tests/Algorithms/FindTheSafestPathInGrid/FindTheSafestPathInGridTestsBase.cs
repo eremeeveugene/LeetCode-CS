@@ -50,13 +50,34 @@ public abstract class FindTheSafestPathInGridTestsBase<T> where T : IFindTheSafe
         yield return [new IList<int>[] { new[] { 0, 1 }, new[] { 0, 0 } }, 1];
 
         // 5x5 grid with thief at center
-        yield return [new IList<int>[] { new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 1, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 } }, 2];
+        yield return
+        [
+            new IList<int>[]
+            {
+                new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 1, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 }
+            },
+            2
+        ];
 
         // 5x5 grid with thief at top-right corner
-        yield return [new IList<int>[] { new[] { 0, 0, 0, 0, 1 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 } }, 4];
+        yield return
+        [
+            new IList<int>[]
+            {
+                new[] { 0, 0, 0, 0, 1 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 }
+            },
+            4
+        ];
 
         // 5x5 grid with thief at bottom-left corner
-        yield return [new IList<int>[] { new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 1, 0, 0, 0, 0 } }, 4];
+        yield return
+        [
+            new IList<int>[]
+            {
+                new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 1, 0, 0, 0, 0 }
+            },
+            4
+        ];
 
         // 4x4 grid with thief at top-right
         yield return [new IList<int>[] { new[] { 0, 0, 0, 1 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 } }, 3];
@@ -86,6 +107,13 @@ public abstract class FindTheSafestPathInGridTestsBase<T> where T : IFindTheSafe
         yield return [new IList<int>[] { new[] { 1, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 } }, 0];
 
         // 5x5 grid with multiple thieves
-        yield return [new IList<int>[] { new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 0, 0, 0, 0 } }, 1];
+        yield return
+        [
+            new IList<int>[]
+            {
+                new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 0, 0, 0, 0 }
+            },
+            1
+        ];
     }
 }

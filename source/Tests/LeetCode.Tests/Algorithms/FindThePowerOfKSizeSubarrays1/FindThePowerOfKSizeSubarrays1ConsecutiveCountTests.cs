@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FindThePowerOfKSizeSubarrays1;
 namespace LeetCode.Tests.Algorithms.FindThePowerOfKSizeSubarrays1;
 
 [TestClass]
-public sealed class FindThePowerOfKSizeSubarrays1ConsecutiveCountTests : FindThePowerOfKSizeSubarrays1TestsBase<FindThePowerOfKSizeSubarrays1ConsecutiveCount>;
+public sealed class FindThePowerOfKSizeSubarrays1ConsecutiveCountTests
+    : FindThePowerOfKSizeSubarrays1TestsBase<FindThePowerOfKSizeSubarrays1ConsecutiveCount>;

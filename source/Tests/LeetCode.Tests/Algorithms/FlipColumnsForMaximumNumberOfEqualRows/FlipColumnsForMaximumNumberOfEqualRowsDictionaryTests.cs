@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FlipColumnsForMaximumNumberOfEqualRows;
 namespace LeetCode.Tests.Algorithms.FlipColumnsForMaximumNumberOfEqualRows;
 
 [TestClass]
-public sealed class FlipColumnsForMaximumNumberOfEqualRowsDictionaryTests : FlipColumnsForMaximumNumberOfEqualRowsTestsBase<FlipColumnsForMaximumNumberOfEqualRowsDictionary>;
+public sealed class FlipColumnsForMaximumNumberOfEqualRowsDictionaryTests
+    : FlipColumnsForMaximumNumberOfEqualRowsTestsBase<FlipColumnsForMaximumNumberOfEqualRowsDictionary>;

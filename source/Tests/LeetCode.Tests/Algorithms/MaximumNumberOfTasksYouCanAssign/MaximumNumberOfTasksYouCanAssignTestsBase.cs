@@ -36,7 +36,12 @@ public abstract class MaximumNumberOfTasksYouCanAssignTestsBase<T> where T : IMa
     [DataRow(new[] { 2, 2 }, new[] { 1, 1 }, 2, 1, 2)]
     [DataRow(new[] { 1, 3, 5 }, new[] { 2, 4, 6 }, 0, 0, 3)]
     [DataRow(new[] { 5, 5 }, new[] { 4, 4 }, 0, 0, 0)]
-    public void MaxTaskAssign_WithGivenTasksWorkersPillsAndStrength_ReturnsMaxAssignableTasks(int[] tasks, int[] workers, int pills, int strength, int expectedResult)
+    public void MaxTaskAssign_WithGivenTasksWorkersPillsAndStrength_ReturnsMaxAssignableTasks(
+        int[] tasks,
+        int[] workers,
+        int pills,
+        int strength,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();

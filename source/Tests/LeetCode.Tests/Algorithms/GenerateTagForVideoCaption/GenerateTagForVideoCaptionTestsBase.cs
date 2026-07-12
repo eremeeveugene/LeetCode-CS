@@ -18,7 +18,9 @@ public abstract class GenerateTagForVideoCaptionTestsBase<T> where T : IGenerate
     [TestMethod]
     [DataRow("Leetcode daily streak achieved", "#leetcodeDailyStreakAchieved")]
     [DataRow("can I Go There", "#canIGoThere")]
-    [DataRow("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh", "#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")]
+    [DataRow(
+        "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+        "#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")]
     [DataRow("hello", "#hello")]
     [DataRow("Hello World", "#helloWorld")]
     [DataRow("a b c", "#aBC")]

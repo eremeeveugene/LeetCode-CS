@@ -13,7 +13,8 @@ using LeetCode.Algorithms.MinimumDifferenceBetweenHighestAndLowestOfKScores;
 
 namespace LeetCode.Tests.Algorithms.MinimumDifferenceBetweenHighestAndLowestOfKScores;
 
-public abstract class MinimumDifferenceBetweenHighestAndLowestOfKScoresTestsBase<T> where T : IMinimumDifferenceBetweenHighestAndLowestOfKScores, new()
+public abstract class MinimumDifferenceBetweenHighestAndLowestOfKScoresTestsBase<T>
+    where T : IMinimumDifferenceBetweenHighestAndLowestOfKScores, new()
 {
     [TestMethod]
     [DataRow(new[] { 90 }, 1, 0)]

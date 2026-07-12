@@ -61,7 +61,12 @@ public abstract class IncrementSubmatricesByOneTestsBase<T> where T : IIncrement
 
         yield return [3, new[] { new[] { 0, 2, 2, 2 } }, new[] { new[] { 0, 0, 1 }, new[] { 0, 0, 1 }, new[] { 0, 0, 1 } }];
 
-        yield return [3, new[] { new[] { 0, 0, 2, 2 }, new[] { 0, 0, 2, 2 }, new[] { 0, 0, 2, 2 } }, new[] { new[] { 3, 3, 3 }, new[] { 3, 3, 3 }, new[] { 3, 3, 3 } }];
+        yield return
+        [
+            3,
+            new[] { new[] { 0, 0, 2, 2 }, new[] { 0, 0, 2, 2 }, new[] { 0, 0, 2, 2 } },
+            new[] { new[] { 3, 3, 3 }, new[] { 3, 3, 3 }, new[] { 3, 3, 3 } }
+        ];
 
         yield return [3, new[] { new[] { 0, 0, 0, 0 }, new[] { 2, 2, 2, 2 } }, new[] { new[] { 1, 0, 0 }, new[] { 0, 0, 0 }, new[] { 0, 0, 1 } }];
 
@@ -69,14 +74,32 @@ public abstract class IncrementSubmatricesByOneTestsBase<T> where T : IIncrement
 
         yield return [3, new[] { new[] { 0, 1, 1, 2 }, new[] { 1, 0, 2, 1 } }, new[] { new[] { 0, 1, 1 }, new[] { 1, 2, 1 }, new[] { 1, 1, 0 } }];
 
-        yield return [3, new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 } }, new[] { new[] { 3, 0, 0 }, new[] { 0, 0, 0 }, new[] { 0, 0, 0 } }];
+        yield return
+        [
+            3,
+            new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 } },
+            new[] { new[] { 3, 0, 0 }, new[] { 0, 0, 0 }, new[] { 0, 0, 0 } }
+        ];
 
         yield return [2, new[] { new[] { 0, 0, 1, 1 }, new[] { 0, 0, 1, 1 }, new[] { 1, 1, 1, 1 } }, new[] { new[] { 2, 2 }, new[] { 2, 3 } }];
 
-        yield return [4, new[] { new[] { 1, 1, 2, 2 } }, new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 1, 1, 0 }, new[] { 0, 1, 1, 0 }, new[] { 0, 0, 0, 0 } }];
+        yield return
+        [
+            4, new[] { new[] { 1, 1, 2, 2 } }, new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 1, 1, 0 }, new[] { 0, 1, 1, 0 }, new[] { 0, 0, 0, 0 } }
+        ];
 
-        yield return [4, new[] { new[] { 0, 0, 3, 3 }, new[] { 1, 1, 2, 2 } }, new[] { new[] { 1, 1, 1, 1 }, new[] { 1, 2, 2, 1 }, new[] { 1, 2, 2, 1 }, new[] { 1, 1, 1, 1 } }];
+        yield return
+        [
+            4,
+            new[] { new[] { 0, 0, 3, 3 }, new[] { 1, 1, 2, 2 } },
+            new[] { new[] { 1, 1, 1, 1 }, new[] { 1, 2, 2, 1 }, new[] { 1, 2, 2, 1 }, new[] { 1, 1, 1, 1 } }
+        ];
 
-        yield return [4, new[] { new[] { 0, 0, 0, 3 }, new[] { 3, 0, 3, 3 }, new[] { 0, 0, 3, 0 }, new[] { 0, 3, 3, 3 } }, new[] { new[] { 2, 1, 1, 2 }, new[] { 1, 0, 0, 1 }, new[] { 1, 0, 0, 1 }, new[] { 2, 1, 1, 2 } }];
+        yield return
+        [
+            4,
+            new[] { new[] { 0, 0, 0, 3 }, new[] { 3, 0, 3, 3 }, new[] { 0, 0, 3, 0 }, new[] { 0, 3, 3, 3 } },
+            new[] { new[] { 2, 1, 1, 2 }, new[] { 1, 0, 0, 1 }, new[] { 1, 0, 0, 1 }, new[] { 2, 1, 1, 2 } }
+        ];
     }
 }

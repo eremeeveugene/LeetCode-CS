@@ -44,53 +44,437 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
 
     private static IEnumerable<IScenario<IDesignTwitter>[]> GetScenarios()
     {
-        yield return [new Scenario<IDesignTwitter>([new PostTweetOperation(1, 5), new GetNewsFeedOperation(1), new FollowOperation(1, 2), new PostTweetOperation(2, 6), new GetNewsFeedOperation(1), new UnfollowOperation(1, 2), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, new GetNewsFeedOperation.Result([5]), VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([6, 5]), VoidOperationResult.Instance, new GetNewsFeedOperation.Result([5])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [
+                    new PostTweetOperation(1, 5),
+                    new GetNewsFeedOperation(1),
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(2, 6),
+                    new GetNewsFeedOperation(1),
+                    new UnfollowOperation(1, 2),
+                    new GetNewsFeedOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([5]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([6, 5]),
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([5])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new PostTweetOperation(1, 5), new PostTweetOperation(1, 3), new PostTweetOperation(1, 101), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([101, 3, 5])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [new PostTweetOperation(1, 5), new PostTweetOperation(1, 3), new PostTweetOperation(1, 101), new GetNewsFeedOperation(1)],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([101, 3, 5])
+                ])
+        ];
 
         yield return [new Scenario<IDesignTwitter>([new GetNewsFeedOperation(1)], [new GetNewsFeedOperation.Result([])])];
 
-        yield return [new Scenario<IDesignTwitter>([new PostTweetOperation(1, 1), new PostTweetOperation(2, 2), new FollowOperation(1, 2), new GetNewsFeedOperation(1), new GetNewsFeedOperation(2)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([2, 1]), new GetNewsFeedOperation.Result([2])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [
+                    new PostTweetOperation(1, 1),
+                    new PostTweetOperation(2, 2),
+                    new FollowOperation(1, 2),
+                    new GetNewsFeedOperation(1),
+                    new GetNewsFeedOperation(2)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([2, 1]),
+                    new GetNewsFeedOperation.Result([2])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new PostTweetOperation(1, 1), new PostTweetOperation(1, 2), new PostTweetOperation(1, 3), new PostTweetOperation(1, 4), new PostTweetOperation(1, 5), new PostTweetOperation(1, 6), new PostTweetOperation(1, 7), new PostTweetOperation(1, 8), new PostTweetOperation(1, 9), new PostTweetOperation(1, 10), new PostTweetOperation(1, 11), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([11, 10, 9, 8, 7, 6, 5, 4, 3, 2])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [
+                    new PostTweetOperation(1, 1),
+                    new PostTweetOperation(1, 2),
+                    new PostTweetOperation(1, 3),
+                    new PostTweetOperation(1, 4),
+                    new PostTweetOperation(1, 5),
+                    new PostTweetOperation(1, 6),
+                    new PostTweetOperation(1, 7),
+                    new PostTweetOperation(1, 8),
+                    new PostTweetOperation(1, 9),
+                    new PostTweetOperation(1, 10),
+                    new PostTweetOperation(1, 11),
+                    new GetNewsFeedOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([11, 10, 9, 8, 7, 6, 5, 4, 3, 2])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new PostTweetOperation(1, 10), new PostTweetOperation(2, 20), new PostTweetOperation(3, 30), new FollowOperation(1, 2), new FollowOperation(1, 3), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([30, 20, 10])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [
+                    new PostTweetOperation(1, 10),
+                    new PostTweetOperation(2, 20),
+                    new PostTweetOperation(3, 30),
+                    new FollowOperation(1, 2),
+                    new FollowOperation(1, 3),
+                    new GetNewsFeedOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([30, 20, 10])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new PostTweetOperation(1, 5), new UnfollowOperation(1, 2), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([5])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [new PostTweetOperation(1, 5), new UnfollowOperation(1, 2), new GetNewsFeedOperation(1)],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([5])])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new FollowOperation(1, 2), new PostTweetOperation(2, 1), new PostTweetOperation(2, 2), new PostTweetOperation(2, 3), new PostTweetOperation(2, 4), new PostTweetOperation(2, 5), new PostTweetOperation(2, 6), new PostTweetOperation(2, 7), new PostTweetOperation(2, 8), new PostTweetOperation(2, 9), new PostTweetOperation(2, 10), new PostTweetOperation(2, 11), new PostTweetOperation(2, 12), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([12, 11, 10, 9, 8, 7, 6, 5, 4, 3])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(2, 1),
+                    new PostTweetOperation(2, 2),
+                    new PostTweetOperation(2, 3),
+                    new PostTweetOperation(2, 4),
+                    new PostTweetOperation(2, 5),
+                    new PostTweetOperation(2, 6),
+                    new PostTweetOperation(2, 7),
+                    new PostTweetOperation(2, 8),
+                    new PostTweetOperation(2, 9),
+                    new PostTweetOperation(2, 10),
+                    new PostTweetOperation(2, 11),
+                    new PostTweetOperation(2, 12),
+                    new GetNewsFeedOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([12, 11, 10, 9, 8, 7, 6, 5, 4, 3])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new FollowOperation(1, 2), new PostTweetOperation(1, 1), new PostTweetOperation(2, 2), new PostTweetOperation(1, 3), new PostTweetOperation(2, 4), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([4, 3, 2, 1])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(1, 1),
+                    new PostTweetOperation(2, 2),
+                    new PostTweetOperation(1, 3),
+                    new PostTweetOperation(2, 4),
+                    new GetNewsFeedOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([4, 3, 2, 1])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new FollowOperation(1, 2), new PostTweetOperation(2, 7), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([7])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [new FollowOperation(1, 2), new PostTweetOperation(2, 7), new GetNewsFeedOperation(1)],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([7])])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new PostTweetOperation(1, 1), new FollowOperation(1, 2), new PostTweetOperation(2, 2), new GetNewsFeedOperation(1), new UnfollowOperation(1, 2), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([2, 1]), VoidOperationResult.Instance, new GetNewsFeedOperation.Result([1])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [
+                    new PostTweetOperation(1, 1),
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(2, 2),
+                    new GetNewsFeedOperation(1),
+                    new UnfollowOperation(1, 2),
+                    new GetNewsFeedOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([2, 1]),
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([1])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new FollowOperation(1, 2), new FollowOperation(1, 3), new PostTweetOperation(2, 2), new PostTweetOperation(3, 3), new GetNewsFeedOperation(1), new UnfollowOperation(1, 2), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([3, 2]), VoidOperationResult.Instance, new GetNewsFeedOperation.Result([3])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [
+                    new FollowOperation(1, 2),
+                    new FollowOperation(1, 3),
+                    new PostTweetOperation(2, 2),
+                    new PostTweetOperation(3, 3),
+                    new GetNewsFeedOperation(1),
+                    new UnfollowOperation(1, 2),
+                    new GetNewsFeedOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([3, 2]),
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([3])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new FollowOperation(1, 2), new PostTweetOperation(2, 9), new UnfollowOperation(1, 2), new GetNewsFeedOperation(1), new FollowOperation(1, 2), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([]), VoidOperationResult.Instance, new GetNewsFeedOperation.Result([9])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(2, 9),
+                    new UnfollowOperation(1, 2),
+                    new GetNewsFeedOperation(1),
+                    new FollowOperation(1, 2),
+                    new GetNewsFeedOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([]),
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([9])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new PostTweetOperation(1, 1), new GetNewsFeedOperation(1), new PostTweetOperation(1, 2), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, new GetNewsFeedOperation.Result([1]), VoidOperationResult.Instance, new GetNewsFeedOperation.Result([2, 1])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [new PostTweetOperation(1, 1), new GetNewsFeedOperation(1), new PostTweetOperation(1, 2), new GetNewsFeedOperation(1)],
+                [
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([1]),
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([2, 1])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new PostTweetOperation(1, 1), new PostTweetOperation(2, 2), new GetNewsFeedOperation(1), new GetNewsFeedOperation(2)], [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([1]), new GetNewsFeedOperation.Result([2])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [new PostTweetOperation(1, 1), new PostTweetOperation(2, 2), new GetNewsFeedOperation(1), new GetNewsFeedOperation(2)],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([1]),
+                    new GetNewsFeedOperation.Result([2])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new FollowOperation(1, 2), new FollowOperation(2, 3), new PostTweetOperation(3, 3), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [new FollowOperation(1, 2), new FollowOperation(2, 3), new PostTweetOperation(3, 3), new GetNewsFeedOperation(1)],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([])])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new FollowOperation(1, 2), new PostTweetOperation(1, 1), new PostTweetOperation(2, 2), new PostTweetOperation(1, 3), new PostTweetOperation(2, 4), new PostTweetOperation(1, 5), new PostTweetOperation(2, 6), new PostTweetOperation(1, 7), new PostTweetOperation(2, 8), new PostTweetOperation(1, 9), new PostTweetOperation(2, 10), new PostTweetOperation(1, 11), new PostTweetOperation(2, 12), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([12, 11, 10, 9, 8, 7, 6, 5, 4, 3])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(1, 1),
+                    new PostTweetOperation(2, 2),
+                    new PostTweetOperation(1, 3),
+                    new PostTweetOperation(2, 4),
+                    new PostTweetOperation(1, 5),
+                    new PostTweetOperation(2, 6),
+                    new PostTweetOperation(1, 7),
+                    new PostTweetOperation(2, 8),
+                    new PostTweetOperation(1, 9),
+                    new PostTweetOperation(2, 10),
+                    new PostTweetOperation(1, 11),
+                    new PostTweetOperation(2, 12),
+                    new GetNewsFeedOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([12, 11, 10, 9, 8, 7, 6, 5, 4, 3])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new PostTweetOperation(5, 50), new PostTweetOperation(5, 51), new GetNewsFeedOperation(5)], [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([51, 50])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [new PostTweetOperation(5, 50), new PostTweetOperation(5, 51), new GetNewsFeedOperation(5)],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([51, 50])])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new PostTweetOperation(1, 1), new PostTweetOperation(1, 2), new FollowOperation(1, 2), new PostTweetOperation(2, 3), new UnfollowOperation(1, 2), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([2, 1])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [
+                    new PostTweetOperation(1, 1),
+                    new PostTweetOperation(1, 2),
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(2, 3),
+                    new UnfollowOperation(1, 2),
+                    new GetNewsFeedOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([2, 1])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new FollowOperation(1, 3), new FollowOperation(2, 3), new PostTweetOperation(3, 30), new GetNewsFeedOperation(1), new GetNewsFeedOperation(2), new GetNewsFeedOperation(3)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([30]), new GetNewsFeedOperation.Result([30]), new GetNewsFeedOperation.Result([30])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [
+                    new FollowOperation(1, 3),
+                    new FollowOperation(2, 3),
+                    new PostTweetOperation(3, 30),
+                    new GetNewsFeedOperation(1),
+                    new GetNewsFeedOperation(2),
+                    new GetNewsFeedOperation(3)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([30]),
+                    new GetNewsFeedOperation.Result([30]),
+                    new GetNewsFeedOperation.Result([30])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new FollowOperation(1, 2), new FollowOperation(1, 3), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [new FollowOperation(1, 2), new FollowOperation(1, 3), new GetNewsFeedOperation(1)],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([])])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new FollowOperation(1, 2), new PostTweetOperation(2, 100), new PostTweetOperation(1, 1), new PostTweetOperation(1, 2), new PostTweetOperation(1, 3), new PostTweetOperation(1, 4), new PostTweetOperation(1, 5), new PostTweetOperation(1, 6), new PostTweetOperation(1, 7), new PostTweetOperation(1, 8), new PostTweetOperation(1, 9), new PostTweetOperation(1, 10), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(2, 100),
+                    new PostTweetOperation(1, 1),
+                    new PostTweetOperation(1, 2),
+                    new PostTweetOperation(1, 3),
+                    new PostTweetOperation(1, 4),
+                    new PostTweetOperation(1, 5),
+                    new PostTweetOperation(1, 6),
+                    new PostTweetOperation(1, 7),
+                    new PostTweetOperation(1, 8),
+                    new PostTweetOperation(1, 9),
+                    new PostTweetOperation(1, 10),
+                    new GetNewsFeedOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
+                ])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new PostTweetOperation(1, 5), new FollowOperation(1, 1), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([5])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [new PostTweetOperation(1, 5), new FollowOperation(1, 1), new GetNewsFeedOperation(1)],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([5])])
+        ];
 
-        yield return [new Scenario<IDesignTwitter>([new FollowOperation(1, 1), new FollowOperation(1, 2), new PostTweetOperation(1, 1), new PostTweetOperation(2, 2), new GetNewsFeedOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetNewsFeedOperation.Result([2, 1])])];
+        yield return
+        [
+            new Scenario<IDesignTwitter>(
+                [
+                    new FollowOperation(1, 1),
+                    new FollowOperation(1, 2),
+                    new PostTweetOperation(1, 1),
+                    new PostTweetOperation(2, 2),
+                    new GetNewsFeedOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetNewsFeedOperation.Result([2, 1])
+                ])
+        ];
     }
 
     private sealed class PostTweetOperation : IOperation<IDesignTwitter>

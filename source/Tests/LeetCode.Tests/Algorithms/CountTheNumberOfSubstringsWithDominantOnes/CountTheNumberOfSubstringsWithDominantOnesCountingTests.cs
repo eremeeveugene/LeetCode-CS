@@ -14,4 +14,5 @@ using LeetCode.Algorithms.CountTheNumberOfSubstringsWithDominantOnes;
 namespace LeetCode.Tests.Algorithms.CountTheNumberOfSubstringsWithDominantOnes;
 
 [TestClass]
-public sealed class CountTheNumberOfSubstringsWithDominantOnesCountingTests : CountTheNumberOfSubstringsWithDominantOnesTestsBase<CountTheNumberOfSubstringsWithDominantOnesCounting>;
+public sealed class CountTheNumberOfSubstringsWithDominantOnesCountingTests
+    : CountTheNumberOfSubstringsWithDominantOnesTestsBase<CountTheNumberOfSubstringsWithDominantOnesCounting>;

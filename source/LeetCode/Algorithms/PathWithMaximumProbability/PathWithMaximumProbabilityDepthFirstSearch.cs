@@ -41,7 +41,12 @@ public sealed class PathWithMaximumProbabilityDepthFirstSearch : PathWithMaximum
         return GetMaxProbability(edgesDictionary, [startNode], startNode, endNode, 0);
     }
 
-    private static double GetMaxProbability(Dictionary<int, List<(int Node, double Probability)>> edgesDictionary, HashSet<int> visitedEdges, int currentNode, int endNode, double probability)
+    private static double GetMaxProbability(
+        Dictionary<int, List<(int Node, double Probability)>> edgesDictionary,
+        HashSet<int> visitedEdges,
+        int currentNode,
+        int endNode,
+        double probability)
     {
         if (currentNode == endNode)
         {

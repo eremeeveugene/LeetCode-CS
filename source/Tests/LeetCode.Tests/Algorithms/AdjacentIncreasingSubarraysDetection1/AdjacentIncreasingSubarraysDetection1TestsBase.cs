@@ -18,7 +18,10 @@ public abstract class AdjacentIncreasingSubarraysDetection1TestsBase<T> where T 
     [TestMethod]
     [DataRow(new[] { 2, 5, 7, 8, 9, 2, 3, 4, 3, 1 }, 3, true)]
     [DataRow(new[] { 1, 2, 3, 4, 4, 4, 4, 5, 6, 7 }, 5, false)]
-    public void HasIncreasingSubarrays_WithGivenNumsAndK_ReturnsTrueIfTwoAdjacentStrictlyIncreasingSubarraysExist(int[] nums, int k, bool expectedResult)
+    public void HasIncreasingSubarrays_WithGivenNumsAndK_ReturnsTrueIfTwoAdjacentStrictlyIncreasingSubarraysExist(
+        int[] nums,
+        int k,
+        bool expectedResult)
     {
         // Arrange
         var solution = new T();

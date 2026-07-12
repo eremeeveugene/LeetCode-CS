@@ -45,7 +45,17 @@ public abstract class FindMinimumTimeToReachLastRoom1TestsBase<T> where T : IFin
 
         yield return [new[] { new[] { 94, 79, 62, 27, 69, 84 }, new[] { 6, 32, 11, 82, 42, 30 } }, 72];
 
-        yield return [new[] { new[] { 63, 102, 19, 11, 110, 26, 89, 101, 19 }, new[] { 7, 17, 119, 94, 44, 3, 30, 111, 54 }, new[] { 20, 66, 72, 19, 76, 6, 16, 0, 97 }, new[] { 7, 48, 113, 22, 14, 100, 99, 91, 60 } }, 93];
+        yield return
+        [
+            new[]
+            {
+                new[] { 63, 102, 19, 11, 110, 26, 89, 101, 19 },
+                new[] { 7, 17, 119, 94, 44, 3, 30, 111, 54 },
+                new[] { 20, 66, 72, 19, 76, 6, 16, 0, 97 },
+                new[] { 7, 48, 113, 22, 14, 100, 99, 91, 60 }
+            },
+            93
+        ];
 
         yield return [new[] { new[] { 0 } }, 0];
 

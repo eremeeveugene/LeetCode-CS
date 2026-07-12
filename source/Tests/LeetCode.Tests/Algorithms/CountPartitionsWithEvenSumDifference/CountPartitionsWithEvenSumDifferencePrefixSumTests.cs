@@ -14,4 +14,5 @@ using LeetCode.Algorithms.CountPartitionsWithEvenSumDifference;
 namespace LeetCode.Tests.Algorithms.CountPartitionsWithEvenSumDifference;
 
 [TestClass]
-public sealed class CountPartitionsWithEvenSumDifferencePrefixSumTests : CountPartitionsWithEvenSumDifferenceTestsBase<CountPartitionsWithEvenSumDifferencePrefixSum>;
+public sealed class CountPartitionsWithEvenSumDifferencePrefixSumTests
+    : CountPartitionsWithEvenSumDifferenceTestsBase<CountPartitionsWithEvenSumDifferencePrefixSum>;

@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FindScoreOfAnArrayAfterMarkingAllElements;
 namespace LeetCode.Tests.Algorithms.FindScoreOfAnArrayAfterMarkingAllElements;
 
 [TestClass]
-public sealed class FindScoreOfAnArrayAfterMarkingAllElementsSortingTests : FindScoreOfAnArrayAfterMarkingAllElements1<FindScoreOfAnArrayAfterMarkingAllElementsSorting>;
+public sealed class FindScoreOfAnArrayAfterMarkingAllElementsSortingTests
+    : FindScoreOfAnArrayAfterMarkingAllElements1<FindScoreOfAnArrayAfterMarkingAllElementsSorting>;

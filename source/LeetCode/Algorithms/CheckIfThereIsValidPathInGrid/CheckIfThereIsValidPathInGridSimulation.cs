@@ -36,7 +36,16 @@ public sealed class CheckIfThereIsValidPathInGridSimulation : ICheckIfThereIsVal
         return HasValidPath(grid, visited, 1, rowCount, columnCount, 0, 0, 0, 1) || HasValidPath(grid, visited, 2, rowCount, columnCount, 0, 0, 1, 0);
     }
 
-    private static bool HasValidPath(int[][] grid, Span<int> visited, int stamp, int rowCount, int columnCount, int row, int column, int rowOffset, int columnOffset)
+    private static bool HasValidPath(
+        int[][] grid,
+        Span<int> visited,
+        int stamp,
+        int rowCount,
+        int columnCount,
+        int row,
+        int column,
+        int rowOffset,
+        int columnOffset)
     {
         var maxSteps = rowCount * columnCount;
 

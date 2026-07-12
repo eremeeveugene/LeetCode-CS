@@ -37,6 +37,22 @@ public abstract class MinimumNumberOfArrowsToBurstBalloonsTestsBase<T> where T :
 
         yield return [new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 }, new[] { 4, 5 } }, 2];
 
-        yield return [new[] { new[] { 3, 9 }, new[] { 7, 12 }, new[] { 3, 8 }, new[] { 6, 8 }, new[] { 9, 10 }, new[] { 2, 9 }, new[] { 0, 9 }, new[] { 3, 9 }, new[] { 0, 6 }, new[] { 2, 8 } }, 2];
+        yield return
+        [
+            new[]
+            {
+                new[] { 3, 9 },
+                new[] { 7, 12 },
+                new[] { 3, 8 },
+                new[] { 6, 8 },
+                new[] { 9, 10 },
+                new[] { 2, 9 },
+                new[] { 0, 9 },
+                new[] { 3, 9 },
+                new[] { 0, 6 },
+                new[] { 2, 8 }
+            },
+            2
+        ];
     }
 }

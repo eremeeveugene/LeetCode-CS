@@ -13,7 +13,8 @@ using LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements;
 
 namespace LeetCode.Tests.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements;
 
-public abstract class AbsoluteDifferenceBetweenMaximumAndMinimumKElementsTestsBase<T> where T : IAbsoluteDifferenceBetweenMaximumAndMinimumKElements, new()
+public abstract class AbsoluteDifferenceBetweenMaximumAndMinimumKElementsTestsBase<T>
+    where T : IAbsoluteDifferenceBetweenMaximumAndMinimumKElements, new()
 {
     [TestMethod]
     [DataRow(new[] { 5, 2, 2, 4 }, 2, 5)]

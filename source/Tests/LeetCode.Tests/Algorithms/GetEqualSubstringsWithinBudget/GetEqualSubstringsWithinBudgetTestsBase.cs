@@ -22,7 +22,11 @@ public abstract class GetEqualSubstringsWithinBudgetTestsBase<T> where T : IGetE
     [DataRow("krrgw", "zjxss", 19, 2)]
     [DataRow("pxezla", "loewbi", 25, 4)]
     [DataRow("ujteygggjwxnfl", "nstsenrzttikoy", 43, 5)]
-    public void EqualSubstring_WithSourceTargetAndMaxCost_ReturnsMaxLengthOfTransformableSubstringWithinBudget(string s, string t, int maxCost, int expectedResult)
+    public void EqualSubstring_WithSourceTargetAndMaxCost_ReturnsMaxLengthOfTransformableSubstringWithinBudget(
+        string s,
+        string t,
+        int maxCost,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();

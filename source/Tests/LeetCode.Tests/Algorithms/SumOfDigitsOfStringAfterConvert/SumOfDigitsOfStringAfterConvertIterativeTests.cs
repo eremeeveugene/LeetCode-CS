@@ -14,4 +14,5 @@ using LeetCode.Algorithms.SumOfDigitsOfStringAfterConvert;
 namespace LeetCode.Tests.Algorithms.SumOfDigitsOfStringAfterConvert;
 
 [TestClass]
-public sealed class SumOfDigitsOfStringAfterConvertIterativeTests : SumOfDigitsOfStringAfterConvertTestsBase<SumOfDigitsOfStringAfterConvertIterative>;
+public sealed class
+    SumOfDigitsOfStringAfterConvertIterativeTests : SumOfDigitsOfStringAfterConvertTestsBase<SumOfDigitsOfStringAfterConvertIterative>;

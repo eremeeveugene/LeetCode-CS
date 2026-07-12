@@ -14,4 +14,5 @@ using LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict;
 namespace LeetCode.Tests.Algorithms.DetermineIfTwoEventsHaveConflict;
 
 [TestClass]
-public sealed class DetermineIfTwoEventsHaveConflictNumberComparisonTests : DetermineIfTwoEventsHaveConflictTestsBase<DetermineIfTwoEventsHaveConflictNumberComparison>;
+public sealed class DetermineIfTwoEventsHaveConflictNumberComparisonTests
+    : DetermineIfTwoEventsHaveConflictTestsBase<DetermineIfTwoEventsHaveConflictNumberComparison>;

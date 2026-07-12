@@ -14,4 +14,5 @@ using LeetCode.Algorithms.WordsWithinTwoEditsOfDictionary;
 namespace LeetCode.Tests.Algorithms.WordsWithinTwoEditsOfDictionary;
 
 [TestClass]
-public sealed class WordsWithinTwoEditsOfDictionaryBruteForceTests : WordsWithinTwoEditsOfDictionaryTestsBase<WordsWithinTwoEditsOfDictionaryBruteForce>;
+public sealed class WordsWithinTwoEditsOfDictionaryBruteForceTests
+    : WordsWithinTwoEditsOfDictionaryTestsBase<WordsWithinTwoEditsOfDictionaryBruteForce>;

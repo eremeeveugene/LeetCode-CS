@@ -41,7 +41,10 @@ public abstract class MinimumTimeToMakeRopeColorfulTestsBase<T> where T : IMinim
     [DataRow("aabb", new[] { 10000, 1, 1, 10000 }, 2)]
     [DataRow("z", new[] { 10000 }, 0)]
     [DataRow("aabbaa", new[] { 1, 2, 3, 4, 5, 6 }, 9)]
-    public void MinCost_WithColorsAndNeededTime_ReturnsMinimumRemovalTimeToAvoidConsecutiveSameColors(string colors, int[] neededTime, int expectedResult)
+    public void MinCost_WithColorsAndNeededTime_ReturnsMinimumRemovalTimeToAvoidConsecutiveSameColors(
+        string colors,
+        int[] neededTime,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();

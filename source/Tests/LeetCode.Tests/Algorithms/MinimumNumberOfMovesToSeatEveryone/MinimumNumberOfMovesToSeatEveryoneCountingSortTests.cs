@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone;
 namespace LeetCode.Tests.Algorithms.MinimumNumberOfMovesToSeatEveryone;
 
 [TestClass]
-public sealed class MinimumNumberOfMovesToSeatEveryoneCountingSortTests : MinimumNumberOfMovesToSeatEveryoneTestsBase<MinimumNumberOfMovesToSeatEveryoneCountingSort>;
+public sealed class MinimumNumberOfMovesToSeatEveryoneCountingSortTests
+    : MinimumNumberOfMovesToSeatEveryoneTestsBase<MinimumNumberOfMovesToSeatEveryoneCountingSort>;

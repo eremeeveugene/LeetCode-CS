@@ -21,7 +21,10 @@ public abstract class ImplementTrieTestsBase<T> where T : IImplementTrie, new()
     private const string StartsWith = "startsWith";
 
     [TestMethod]
-    [DataRow(new[] { "insert", "search", "search", "startsWith", "insert", "search" }, new[] { "apple", "apple", "app", "app", "app", "app" }, new[] { true, false, true, true })]
+    [DataRow(
+        new[] { "insert", "search", "search", "startsWith", "insert", "search" },
+        new[] { "apple", "apple", "app", "app", "app", "app" },
+        new[] { true, false, true, true })]
     public void TrieOperations_WithMultipleCommands_ReturnsActionResults(string[] methods, string[] args, bool[] expectedResult)
     {
         // Arrange

@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses;
 namespace LeetCode.Tests.Algorithms.MaximumNestingDepthOfTheParentheses;
 
 [TestClass]
-public class MaximumNestingDepthOfTheParenthesesIterativeTests : MaximumNestingDepthOfTheParenthesesTestsBase<MaximumNestingDepthOfTheParenthesesIterative>;
+public class MaximumNestingDepthOfTheParenthesesIterativeTests
+    : MaximumNestingDepthOfTheParenthesesTestsBase<MaximumNestingDepthOfTheParenthesesIterative>;

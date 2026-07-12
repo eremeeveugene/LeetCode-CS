@@ -14,4 +14,5 @@ using LeetCode.Algorithms.NumberOfEquivalentDominoPairs;
 namespace LeetCode.Tests.Algorithms.NumberOfEquivalentDominoPairs;
 
 [TestClass]
-public sealed class NumberOfEquivalentDominoPairsFrequencyArrayTests : NumberOfEquivalentDominoPairsTestsBase<NumberOfEquivalentDominoPairsFrequencyArray>;
+public sealed class NumberOfEquivalentDominoPairsFrequencyArrayTests
+    : NumberOfEquivalentDominoPairsTestsBase<NumberOfEquivalentDominoPairsFrequencyArray>;

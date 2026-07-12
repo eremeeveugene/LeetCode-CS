@@ -48,7 +48,10 @@ public abstract class ReverseOddLevelsOfBinaryTreeTestsBase<T> where T : IRevers
 
         yield return [new int?[] { 1, null, 2 }, new int?[] { 1, null, 2 }];
 
-        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }, new int?[] { 1, 3, 2, 4, 5, 6, 7, 15, 14, 13, 12, 11, 10, 9, 8 }];
+        yield return
+        [
+            new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }, new int?[] { 1, 3, 2, 4, 5, 6, 7, 15, 14, 13, 12, 11, 10, 9, 8 }
+        ];
 
         yield return [new int?[] { 1, 2, null, 3, null, 4, null, 5 }, new int?[] { 1, 2, null, 3, null, 4, null, 5 }];
 

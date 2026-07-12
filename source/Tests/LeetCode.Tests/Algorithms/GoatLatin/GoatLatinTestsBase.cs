@@ -17,7 +17,9 @@ public abstract class GoatLatinTestsBase<T> where T : IGoatLatin, new()
 {
     [TestMethod]
     [DataRow("I speak Goat Latin", "Imaa peaksmaaa oatGmaaaa atinLmaaaaa")]
-    [DataRow("The quick brown fox jumped over the lazy dog", "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa")]
+    [DataRow(
+        "The quick brown fox jumped over the lazy dog",
+        "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa")]
     public void ToGoatLatin_WithSentenceContainingWords_ReturnsConvertedGoatLatinSentence(string sentence, string expectedResult)
     {
         // Arrange

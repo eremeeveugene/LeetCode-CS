@@ -14,4 +14,5 @@ using LeetCode.Algorithms.CalculateMoneyInLeetcodeBank;
 namespace LeetCode.Tests.Algorithms.CalculateMoneyInLeetcodeBank;
 
 [TestClass]
-public sealed class CalculateMoneyInLeetcodeBankArithmeticSequenceTests : CalculateMoneyInLeetcodeBankTestsBase<CalculateMoneyInLeetcodeBankArithmeticSequence>;
+public sealed class CalculateMoneyInLeetcodeBankArithmeticSequenceTests
+    : CalculateMoneyInLeetcodeBankTestsBase<CalculateMoneyInLeetcodeBankArithmeticSequence>;

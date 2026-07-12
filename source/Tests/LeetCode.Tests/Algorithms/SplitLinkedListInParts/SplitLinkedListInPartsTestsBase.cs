@@ -42,7 +42,10 @@ public abstract class SplitLinkedListInPartsTestsBase<T> where T : ISplitLinkedL
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return [Array.Empty<int>(), 5, new[] { Array.Empty<int>(), Array.Empty<int>(), Array.Empty<int>(), Array.Empty<int>(), Array.Empty<int>() }];
+        yield return
+        [
+            Array.Empty<int>(), 5, new[] { Array.Empty<int>(), Array.Empty<int>(), Array.Empty<int>(), Array.Empty<int>(), Array.Empty<int>() }
+        ];
 
         yield return [new[] { 1, 2, 3 }, 5, new[] { new[] { 1 }, new[] { 2 }, new[] { 3 }, Array.Empty<int>(), Array.Empty<int>() }];
 

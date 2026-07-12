@@ -18,7 +18,8 @@ public abstract class ProductOfTheLastKNumbersTestsBase<T> where T : IProductOfT
 {
     [TestMethod]
     [DynamicData(nameof(GetScenarios))]
-    public void ProductOfTheLastKNumbers_WithMixedOperations_ProcessesOperationsAccordingToSpecification(IScenario<IProductOfTheLastKNumbers> scenario)
+    public void ProductOfTheLastKNumbers_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
+        IScenario<IProductOfTheLastKNumbers> scenario)
     {
         // Arrange
         var expectedResult = scenario.OperationResults;
@@ -44,13 +45,94 @@ public abstract class ProductOfTheLastKNumbersTestsBase<T> where T : IProductOfT
 
     private static IEnumerable<IScenario<IProductOfTheLastKNumbers>[]> GetScenarios()
     {
-        yield return [new Scenario<IProductOfTheLastKNumbers>([new AddOperation(3), new AddOperation(0), new AddOperation(2), new AddOperation(5), new AddOperation(4), new GetProductOperation(2), new GetProductOperation(3), new GetProductOperation(4), new AddOperation(8), new GetProductOperation(2)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetProductOperation.Result(20), new GetProductOperation.Result(40), new GetProductOperation.Result(0), VoidOperationResult.Instance, new GetProductOperation.Result(32)])];
+        yield return
+        [
+            new Scenario<IProductOfTheLastKNumbers>(
+                [
+                    new AddOperation(3),
+                    new AddOperation(0),
+                    new AddOperation(2),
+                    new AddOperation(5),
+                    new AddOperation(4),
+                    new GetProductOperation(2),
+                    new GetProductOperation(3),
+                    new GetProductOperation(4),
+                    new AddOperation(8),
+                    new GetProductOperation(2)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(20),
+                    new GetProductOperation.Result(40),
+                    new GetProductOperation.Result(0),
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(32)
+                ])
+        ];
 
-        yield return [new Scenario<IProductOfTheLastKNumbers>([new AddOperation(1), new AddOperation(2), new AddOperation(0), new AddOperation(3), new GetProductOperation(1), new GetProductOperation(2), new GetProductOperation(3), new GetProductOperation(4)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetProductOperation.Result(3), new GetProductOperation.Result(0), new GetProductOperation.Result(0), new GetProductOperation.Result(0)])];
+        yield return
+        [
+            new Scenario<IProductOfTheLastKNumbers>(
+                [
+                    new AddOperation(1),
+                    new AddOperation(2),
+                    new AddOperation(0),
+                    new AddOperation(3),
+                    new GetProductOperation(1),
+                    new GetProductOperation(2),
+                    new GetProductOperation(3),
+                    new GetProductOperation(4)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(3),
+                    new GetProductOperation.Result(0),
+                    new GetProductOperation.Result(0),
+                    new GetProductOperation.Result(0)
+                ])
+        ];
 
-        yield return [new Scenario<IProductOfTheLastKNumbers>([new AddOperation(5), new GetProductOperation(1), new AddOperation(7), new GetProductOperation(1)], [VoidOperationResult.Instance, new GetProductOperation.Result(5), VoidOperationResult.Instance, new GetProductOperation.Result(7)])];
+        yield return
+        [
+            new Scenario<IProductOfTheLastKNumbers>(
+                [new AddOperation(5), new GetProductOperation(1), new AddOperation(7), new GetProductOperation(1)],
+                [
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(5),
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(7)
+                ])
+        ];
 
-        yield return [new Scenario<IProductOfTheLastKNumbers>([new AddOperation(0), new AddOperation(0), new AddOperation(4), new AddOperation(5), new GetProductOperation(2), new GetProductOperation(3), new GetProductOperation(4)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new GetProductOperation.Result(20), new GetProductOperation.Result(0), new GetProductOperation.Result(0)])];
+        yield return
+        [
+            new Scenario<IProductOfTheLastKNumbers>(
+                [
+                    new AddOperation(0),
+                    new AddOperation(0),
+                    new AddOperation(4),
+                    new AddOperation(5),
+                    new GetProductOperation(2),
+                    new GetProductOperation(3),
+                    new GetProductOperation(4)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetProductOperation.Result(20),
+                    new GetProductOperation.Result(0),
+                    new GetProductOperation.Result(0)
+                ])
+        ];
     }
 
     private sealed class AddOperation : IOperation<IProductOfTheLastKNumbers>

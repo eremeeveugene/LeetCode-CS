@@ -46,15 +46,56 @@ public abstract class KthLargestElementInStreamTestsBase
 
     private static IEnumerable<KthLargestScenario[]> GetScenarios()
     {
-        yield return [new KthLargestScenario(3, [4, 5, 8, 2], [new AddOperation(3), new AddOperation(5), new AddOperation(10), new AddOperation(9), new AddOperation(4)], [new AddOperation.Result(4), new AddOperation.Result(5), new AddOperation.Result(5), new AddOperation.Result(8), new AddOperation.Result(8)])];
+        yield return
+        [
+            new KthLargestScenario(
+                3,
+                [4, 5, 8, 2],
+                [new AddOperation(3), new AddOperation(5), new AddOperation(10), new AddOperation(9), new AddOperation(4)],
+                [
+                    new AddOperation.Result(4),
+                    new AddOperation.Result(5),
+                    new AddOperation.Result(5),
+                    new AddOperation.Result(8),
+                    new AddOperation.Result(8)
+                ])
+        ];
 
-        yield return [new KthLargestScenario(4, [7, 7, 7, 7, 8, 3], [new AddOperation(2), new AddOperation(10), new AddOperation(9), new AddOperation(9)], [new AddOperation.Result(7), new AddOperation.Result(7), new AddOperation.Result(7), new AddOperation.Result(8)])];
+        yield return
+        [
+            new KthLargestScenario(
+                4,
+                [7, 7, 7, 7, 8, 3],
+                [new AddOperation(2), new AddOperation(10), new AddOperation(9), new AddOperation(9)],
+                [new AddOperation.Result(7), new AddOperation.Result(7), new AddOperation.Result(7), new AddOperation.Result(8)])
+        ];
 
-        yield return [new KthLargestScenario(1, [1], [new AddOperation(2), new AddOperation(3), new AddOperation(1)], [new AddOperation.Result(2), new AddOperation.Result(3), new AddOperation.Result(3)])];
+        yield return
+        [
+            new KthLargestScenario(
+                1,
+                [1],
+                [new AddOperation(2), new AddOperation(3), new AddOperation(1)],
+                [new AddOperation.Result(2), new AddOperation.Result(3), new AddOperation.Result(3)])
+        ];
 
-        yield return [new KthLargestScenario(2, [5, 10], [new AddOperation(1), new AddOperation(2), new AddOperation(20)], [new AddOperation.Result(5), new AddOperation.Result(5), new AddOperation.Result(10)])];
+        yield return
+        [
+            new KthLargestScenario(
+                2,
+                [5, 10],
+                [new AddOperation(1), new AddOperation(2), new AddOperation(20)],
+                [new AddOperation.Result(5), new AddOperation.Result(5), new AddOperation.Result(10)])
+        ];
 
-        yield return [new KthLargestScenario(1, [], [new AddOperation(3), new AddOperation(5), new AddOperation(2)], [new AddOperation.Result(3), new AddOperation.Result(5), new AddOperation.Result(5)])];
+        yield return
+        [
+            new KthLargestScenario(
+                1,
+                [],
+                [new AddOperation(3), new AddOperation(5), new AddOperation(2)],
+                [new AddOperation.Result(3), new AddOperation.Result(5), new AddOperation.Result(5)])
+        ];
     }
 
     public sealed class KthLargestScenario : IScenario<IKthLargestElementInStream>

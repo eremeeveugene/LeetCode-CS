@@ -14,4 +14,5 @@ using LeetCode.Algorithms.RecoverTreeFromPreorderTraversal;
 namespace LeetCode.Tests.Algorithms.RecoverTreeFromPreorderTraversal;
 
 [TestClass]
-public sealed class RecoverTreeFromPreorderTraversalDepthFirstSearchTests : RecoverTreeFromPreorderTraversalTestsBase<RecoverTreeFromPreorderTraversalDepthFirstSearch>;
+public sealed class RecoverTreeFromPreorderTraversalDepthFirstSearchTests
+    : RecoverTreeFromPreorderTraversalTestsBase<RecoverTreeFromPreorderTraversalDepthFirstSearch>;

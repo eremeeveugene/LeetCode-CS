@@ -13,7 +13,8 @@ using LeetCode.Algorithms.FindTheLongestSubstringContainingVowelsInEvenCounts;
 
 namespace LeetCode.Tests.Algorithms.FindTheLongestSubstringContainingVowelsInEvenCounts;
 
-public abstract class FindTheLongestSubstringContainingVowelsInEvenCountsTestsBase<T> where T : IFindTheLongestSubstringContainingVowelsInEvenCounts, new()
+public abstract class FindTheLongestSubstringContainingVowelsInEvenCountsTestsBase<T>
+    where T : IFindTheLongestSubstringContainingVowelsInEvenCounts, new()
 {
     [TestMethod]
     [DataRow("bcbcbc", 6)]

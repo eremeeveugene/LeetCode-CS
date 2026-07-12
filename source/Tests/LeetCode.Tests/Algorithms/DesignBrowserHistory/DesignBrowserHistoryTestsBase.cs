@@ -46,15 +46,86 @@ public abstract class DesignBrowserHistoryTestsBase
 
     private static IEnumerable<BrowserHistoryScenario[]> GetScenarios()
     {
-        yield return [new BrowserHistoryScenario("leetcode.com", [new VisitOperation("google.com"), new VisitOperation("facebook.com"), new VisitOperation("youtube.com"), new BackOperation(1), new BackOperation(1), new ForwardOperation(1), new VisitOperation("linkedin.com"), new ForwardOperation(2), new BackOperation(2), new BackOperation(7)], [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new NavigateOperation.Result("facebook.com"), new NavigateOperation.Result("google.com"), new NavigateOperation.Result("facebook.com"), VoidOperationResult.Instance, new NavigateOperation.Result("linkedin.com"), new NavigateOperation.Result("google.com"), new NavigateOperation.Result("leetcode.com")])];
+        yield return
+        [
+            new BrowserHistoryScenario(
+                "leetcode.com",
+                [
+                    new VisitOperation("google.com"),
+                    new VisitOperation("facebook.com"),
+                    new VisitOperation("youtube.com"),
+                    new BackOperation(1),
+                    new BackOperation(1),
+                    new ForwardOperation(1),
+                    new VisitOperation("linkedin.com"),
+                    new ForwardOperation(2),
+                    new BackOperation(2),
+                    new BackOperation(7)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new NavigateOperation.Result("facebook.com"),
+                    new NavigateOperation.Result("google.com"),
+                    new NavigateOperation.Result("facebook.com"),
+                    VoidOperationResult.Instance,
+                    new NavigateOperation.Result("linkedin.com"),
+                    new NavigateOperation.Result("google.com"),
+                    new NavigateOperation.Result("leetcode.com")
+                ])
+        ];
 
-        yield return [new BrowserHistoryScenario("home.com", [new BackOperation(1), new ForwardOperation(1)], [new NavigateOperation.Result("home.com"), new NavigateOperation.Result("home.com")])];
+        yield return
+        [
+            new BrowserHistoryScenario(
+                "home.com",
+                [new BackOperation(1), new ForwardOperation(1)],
+                [new NavigateOperation.Result("home.com"), new NavigateOperation.Result("home.com")])
+        ];
 
-        yield return [new BrowserHistoryScenario("home.com", [new VisitOperation("a.com"), new VisitOperation("b.com"), new BackOperation(1), new VisitOperation("c.com"), new ForwardOperation(1), new BackOperation(1)], [VoidOperationResult.Instance, VoidOperationResult.Instance, new NavigateOperation.Result("a.com"), VoidOperationResult.Instance, new NavigateOperation.Result("c.com"), new NavigateOperation.Result("a.com")])];
+        yield return
+        [
+            new BrowserHistoryScenario(
+                "home.com",
+                [
+                    new VisitOperation("a.com"),
+                    new VisitOperation("b.com"),
+                    new BackOperation(1),
+                    new VisitOperation("c.com"),
+                    new ForwardOperation(1),
+                    new BackOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new NavigateOperation.Result("a.com"),
+                    VoidOperationResult.Instance,
+                    new NavigateOperation.Result("c.com"),
+                    new NavigateOperation.Result("a.com")
+                ])
+        ];
 
-        yield return [new BrowserHistoryScenario("home.com", [new VisitOperation("a.com"), new VisitOperation("b.com"), new BackOperation(2), new ForwardOperation(10)], [VoidOperationResult.Instance, VoidOperationResult.Instance, new NavigateOperation.Result("home.com"), new NavigateOperation.Result("b.com")])];
+        yield return
+        [
+            new BrowserHistoryScenario(
+                "home.com",
+                [new VisitOperation("a.com"), new VisitOperation("b.com"), new BackOperation(2), new ForwardOperation(10)],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new NavigateOperation.Result("home.com"),
+                    new NavigateOperation.Result("b.com")
+                ])
+        ];
 
-        yield return [new BrowserHistoryScenario("home.com", [new VisitOperation("a.com"), new BackOperation(1)], [VoidOperationResult.Instance, new NavigateOperation.Result("home.com")])];
+        yield return
+        [
+            new BrowserHistoryScenario(
+                "home.com",
+                [new VisitOperation("a.com"), new BackOperation(1)],
+                [VoidOperationResult.Instance, new NavigateOperation.Result("home.com")])
+        ];
     }
 
     public sealed class BrowserHistoryScenario : IScenario<IDesignBrowserHistory>

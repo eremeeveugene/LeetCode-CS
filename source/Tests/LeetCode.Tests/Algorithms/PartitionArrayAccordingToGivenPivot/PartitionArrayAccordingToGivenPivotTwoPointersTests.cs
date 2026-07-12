@@ -14,4 +14,5 @@ using LeetCode.Algorithms.PartitionArrayAccordingToGivenPivot;
 namespace LeetCode.Tests.Algorithms.PartitionArrayAccordingToGivenPivot;
 
 [TestClass]
-public sealed class PartitionArrayAccordingToGivenPivotTwoPointersTests : PartitionArrayAccordingToGivenPivotTestsBase<PartitionArrayAccordingToGivenPivotTwoPointers>;
+public sealed class PartitionArrayAccordingToGivenPivotTwoPointersTests
+    : PartitionArrayAccordingToGivenPivotTestsBase<PartitionArrayAccordingToGivenPivotTwoPointers>;

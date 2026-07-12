@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MaximumNumberOfPointsWithCost;
 namespace LeetCode.Tests.Algorithms.MaximumNumberOfPointsWithCost;
 
 [TestClass]
-public class MaximumNumberOfPointsWithCostDynamicProgrammingTests : MaximumNumberOfPointsWithCostTestsBase<MaximumNumberOfPointsWithCostDynamicProgramming>;
+public class MaximumNumberOfPointsWithCostDynamicProgrammingTests
+    : MaximumNumberOfPointsWithCostTestsBase<MaximumNumberOfPointsWithCostDynamicProgramming>;

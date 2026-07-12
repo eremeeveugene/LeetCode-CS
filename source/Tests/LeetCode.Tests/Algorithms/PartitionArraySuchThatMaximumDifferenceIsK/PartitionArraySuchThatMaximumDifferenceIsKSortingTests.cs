@@ -14,4 +14,5 @@ using LeetCode.Algorithms.PartitionArraySuchThatMaximumDifferenceIsK;
 namespace LeetCode.Tests.Algorithms.PartitionArraySuchThatMaximumDifferenceIsK;
 
 [TestClass]
-public sealed class PartitionArraySuchThatMaximumDifferenceIsKSortingTests : PartitionArraySuchThatMaximumDifferenceIsKTestsBase<PartitionArraySuchThatMaximumDifferenceIsKSorting>;
+public sealed class PartitionArraySuchThatMaximumDifferenceIsKSortingTests
+    : PartitionArraySuchThatMaximumDifferenceIsKTestsBase<PartitionArraySuchThatMaximumDifferenceIsKSorting>;

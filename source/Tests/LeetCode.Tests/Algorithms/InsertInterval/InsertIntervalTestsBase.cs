@@ -35,7 +35,12 @@ public abstract class InsertIntervalTestsBase<T> where T : IInsertInterval, new(
 
         yield return [new[] { new[] { 1, 3 }, new[] { 6, 9 } }, new[] { 2, 5 }, new[] { new[] { 1, 5 }, new[] { 6, 9 } }];
 
-        yield return [new[] { new[] { 1, 2 }, new[] { 3, 5 }, new[] { 6, 7 }, new[] { 8, 10 }, new[] { 12, 16 } }, new[] { 4, 8 }, new[] { new[] { 1, 2 }, new[] { 3, 10 }, new[] { 12, 16 } }];
+        yield return
+        [
+            new[] { new[] { 1, 2 }, new[] { 3, 5 }, new[] { 6, 7 }, new[] { 8, 10 }, new[] { 12, 16 } },
+            new[] { 4, 8 },
+            new[] { new[] { 1, 2 }, new[] { 3, 10 }, new[] { 12, 16 } }
+        ];
 
         yield return [new[] { new[] { 1, 5 } }, new[] { 6, 8 }, new[] { new[] { 1, 5 }, new[] { 6, 8 } }];
 

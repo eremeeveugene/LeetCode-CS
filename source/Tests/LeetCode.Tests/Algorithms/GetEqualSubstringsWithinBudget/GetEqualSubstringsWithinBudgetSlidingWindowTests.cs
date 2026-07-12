@@ -14,4 +14,5 @@ using LeetCode.Algorithms.GetEqualSubstringsWithinBudget;
 namespace LeetCode.Tests.Algorithms.GetEqualSubstringsWithinBudget;
 
 [TestClass]
-public sealed class GetEqualSubstringsWithinBudgetSlidingWindowTests : GetEqualSubstringsWithinBudgetTestsBase<GetEqualSubstringsWithinBudgetSlidingWindow>;
+public sealed class GetEqualSubstringsWithinBudgetSlidingWindowTests
+    : GetEqualSubstringsWithinBudgetTestsBase<GetEqualSubstringsWithinBudgetSlidingWindow>;

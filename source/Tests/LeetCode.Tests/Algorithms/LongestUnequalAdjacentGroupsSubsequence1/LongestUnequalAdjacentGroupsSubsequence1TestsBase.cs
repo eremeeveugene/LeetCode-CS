@@ -18,7 +18,10 @@ public abstract class LongestUnequalAdjacentGroupsSubsequence1TestsBase<T> where
     [TestMethod]
     [DataRow(new[] { "e", "a", "b" }, new[] { 0, 0, 1 }, new[] { "e", "b" })]
     [DataRow(new[] { "a", "b", "c", "d" }, new[] { 1, 0, 1, 1 }, new[] { "a", "b", "c" })]
-    public void GetLongestSubsequence_WithWordsAndGroupLabels_ReturnsLongestSubsequenceByGroupOrder(string[] words, int[] groups, string[] expectedResult)
+    public void GetLongestSubsequence_WithWordsAndGroupLabels_ReturnsLongestSubsequenceByGroupOrder(
+        string[] words,
+        int[] groups,
+        string[] expectedResult)
     {
         // Arrange
         var solution = new T();

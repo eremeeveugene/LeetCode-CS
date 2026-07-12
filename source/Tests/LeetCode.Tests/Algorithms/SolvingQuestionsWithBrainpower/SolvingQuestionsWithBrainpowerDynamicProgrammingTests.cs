@@ -14,4 +14,5 @@ using LeetCode.Algorithms.SolvingQuestionsWithBrainpower;
 namespace LeetCode.Tests.Algorithms.SolvingQuestionsWithBrainpower;
 
 [TestClass]
-public sealed class SolvingQuestionsWithBrainpowerDynamicProgrammingTests : SolvingQuestionsWithBrainpowerTestsBase<SolvingQuestionsWithBrainpowerDynamicProgramming>;
+public sealed class SolvingQuestionsWithBrainpowerDynamicProgrammingTests
+    : SolvingQuestionsWithBrainpowerTestsBase<SolvingQuestionsWithBrainpowerDynamicProgramming>;

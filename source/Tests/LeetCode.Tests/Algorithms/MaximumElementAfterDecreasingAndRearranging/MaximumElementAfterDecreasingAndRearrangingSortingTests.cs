@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MaximumElementAfterDecreasingAndRearranging;
 namespace LeetCode.Tests.Algorithms.MaximumElementAfterDecreasingAndRearranging;
 
 [TestClass]
-public sealed class MaximumElementAfterDecreasingAndRearrangingSortingTests : MaximumElementAfterDecreasingAndRearrangingTestsBase<MaximumElementAfterDecreasingAndRearrangingSorting>;
+public sealed class MaximumElementAfterDecreasingAndRearrangingSortingTests
+    : MaximumElementAfterDecreasingAndRearrangingTestsBase<MaximumElementAfterDecreasingAndRearrangingSorting>;

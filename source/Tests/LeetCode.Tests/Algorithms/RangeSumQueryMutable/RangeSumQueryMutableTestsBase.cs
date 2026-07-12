@@ -46,15 +46,45 @@ public abstract class RangeSumQueryMutableTestsBase
 
     private static IEnumerable<RangeSumQueryMutableScenario[]> GetScenarios()
     {
-        yield return [new RangeSumQueryMutableScenario([1, 3, 5], [new SumRangeOperation(0, 2), new UpdateOperation(1, 2), new SumRangeOperation(0, 2)], [new SumRangeOperation.Result(9), VoidOperationResult.Instance, new SumRangeOperation.Result(8)])];
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [1, 3, 5],
+                [new SumRangeOperation(0, 2), new UpdateOperation(1, 2), new SumRangeOperation(0, 2)],
+                [new SumRangeOperation.Result(9), VoidOperationResult.Instance, new SumRangeOperation.Result(8)])
+        ];
 
-        yield return [new RangeSumQueryMutableScenario([1, 2, 3], [new UpdateOperation(1, 10), new UpdateOperation(1, 5), new SumRangeOperation(0, 2)], [VoidOperationResult.Instance, VoidOperationResult.Instance, new SumRangeOperation.Result(9)])];
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [1, 2, 3],
+                [new UpdateOperation(1, 10), new UpdateOperation(1, 5), new SumRangeOperation(0, 2)],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, new SumRangeOperation.Result(9)])
+        ];
 
-        yield return [new RangeSumQueryMutableScenario([1, 2, 3, 4, 5], [new SumRangeOperation(0, 4), new UpdateOperation(0, 10), new UpdateOperation(4, 10), new SumRangeOperation(0, 4)], [new SumRangeOperation.Result(15), VoidOperationResult.Instance, VoidOperationResult.Instance, new SumRangeOperation.Result(29)])];
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [1, 2, 3, 4, 5],
+                [new SumRangeOperation(0, 4), new UpdateOperation(0, 10), new UpdateOperation(4, 10), new SumRangeOperation(0, 4)],
+                [new SumRangeOperation.Result(15), VoidOperationResult.Instance, VoidOperationResult.Instance, new SumRangeOperation.Result(29)])
+        ];
 
-        yield return [new RangeSumQueryMutableScenario([7], [new SumRangeOperation(0, 0), new UpdateOperation(0, 3), new SumRangeOperation(0, 0)], [new SumRangeOperation.Result(7), VoidOperationResult.Instance, new SumRangeOperation.Result(3)])];
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [7],
+                [new SumRangeOperation(0, 0), new UpdateOperation(0, 3), new SumRangeOperation(0, 0)],
+                [new SumRangeOperation.Result(7), VoidOperationResult.Instance, new SumRangeOperation.Result(3)])
+        ];
 
-        yield return [new RangeSumQueryMutableScenario([1, 2, 3], [new SumRangeOperation(1, 1), new UpdateOperation(0, 100), new SumRangeOperation(1, 1)], [new SumRangeOperation.Result(2), VoidOperationResult.Instance, new SumRangeOperation.Result(2)])];
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [1, 2, 3],
+                [new SumRangeOperation(1, 1), new UpdateOperation(0, 100), new SumRangeOperation(1, 1)],
+                [new SumRangeOperation.Result(2), VoidOperationResult.Instance, new SumRangeOperation.Result(2)])
+        ];
     }
 
     public sealed class RangeSumQueryMutableScenario : IScenario<IRangeSumQueryMutable>

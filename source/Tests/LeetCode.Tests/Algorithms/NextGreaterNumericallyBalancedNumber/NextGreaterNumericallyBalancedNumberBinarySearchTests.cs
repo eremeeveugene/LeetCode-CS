@@ -14,4 +14,5 @@ using LeetCode.Algorithms.NextGreaterNumericallyBalancedNumber;
 namespace LeetCode.Tests.Algorithms.NextGreaterNumericallyBalancedNumber;
 
 [TestClass]
-public sealed class NextGreaterNumericallyBalancedNumberBinarySearchTests : NextGreaterNumericallyBalancedNumberTestsBase<NextGreaterNumericallyBalancedNumberBinarySearch>;
+public sealed class NextGreaterNumericallyBalancedNumberBinarySearchTests
+    : NextGreaterNumericallyBalancedNumberTestsBase<NextGreaterNumericallyBalancedNumberBinarySearch>;

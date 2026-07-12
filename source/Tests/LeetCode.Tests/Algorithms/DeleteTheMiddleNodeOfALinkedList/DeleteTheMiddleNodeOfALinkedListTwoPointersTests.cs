@@ -14,4 +14,5 @@ using LeetCode.Algorithms.DeleteTheMiddleNodeOfALinkedList;
 namespace LeetCode.Tests.Algorithms.DeleteTheMiddleNodeOfALinkedList;
 
 [TestClass]
-public sealed class DeleteTheMiddleNodeOfALinkedListTwoPointersTests : DeleteTheMiddleNodeOfALinkedListTestsBase<DeleteTheMiddleNodeOfALinkedListTwoPointers>;
+public sealed class DeleteTheMiddleNodeOfALinkedListTwoPointersTests
+    : DeleteTheMiddleNodeOfALinkedListTestsBase<DeleteTheMiddleNodeOfALinkedListTwoPointers>;

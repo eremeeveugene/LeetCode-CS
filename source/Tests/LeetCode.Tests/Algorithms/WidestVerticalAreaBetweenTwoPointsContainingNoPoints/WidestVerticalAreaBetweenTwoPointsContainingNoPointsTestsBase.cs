@@ -13,7 +13,8 @@ using LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints;
 
 namespace LeetCode.Tests.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints;
 
-public abstract class WidestVerticalAreaBetweenTwoPointsContainingNoPointsTestsBase<T> where T : IWidestVerticalAreaBetweenTwoPointsContainingNoPoints, new()
+public abstract class WidestVerticalAreaBetweenTwoPointsContainingNoPointsTestsBase<T>
+    where T : IWidestVerticalAreaBetweenTwoPointsContainingNoPoints, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]

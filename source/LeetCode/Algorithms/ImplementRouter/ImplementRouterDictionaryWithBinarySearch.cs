@@ -100,7 +100,9 @@ public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
     /// <returns></returns>
     public int GetCount(int destination, int startTime, int endTime)
     {
-        return _destinationToTimestampBufferDictionary.TryGetValue(destination, out var packetBuffer) ? packetBuffer.GetCountInRange(startTime, endTime) : 0;
+        return _destinationToTimestampBufferDictionary.TryGetValue(destination, out var packetBuffer)
+            ? packetBuffer.GetCountInRange(startTime, endTime)
+            : 0;
     }
 
     /// <summary>

@@ -46,61 +46,158 @@ public abstract class DesignNeighborSumServiceTestsBase
 
     private static IEnumerable<NeighborSumServiceScenario[]> GetScenarios()
     {
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(1), new AdjacentSumOperation(4), new DiagonalSumOperation(4), new DiagonalSumOperation(8)], [new AdjacentSumOperation.Result(6), new AdjacentSumOperation.Result(16), new DiagonalSumOperation.Result(16), new DiagonalSumOperation.Result(4)])];
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[0, 1, 2], [3, 4, 5], [6, 7, 8]],
+                [new AdjacentSumOperation(1), new AdjacentSumOperation(4), new DiagonalSumOperation(4), new DiagonalSumOperation(8)],
+                [
+                    new AdjacentSumOperation.Result(6),
+                    new AdjacentSumOperation.Result(16),
+                    new DiagonalSumOperation.Result(16),
+                    new DiagonalSumOperation.Result(4)
+                ])
+        ];
 
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(0), new DiagonalSumOperation(0)], [new AdjacentSumOperation.Result(4), new DiagonalSumOperation.Result(4)])];
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[0, 1, 2], [3, 4, 5], [6, 7, 8]],
+                [new AdjacentSumOperation(0), new DiagonalSumOperation(0)],
+                [new AdjacentSumOperation.Result(4), new DiagonalSumOperation.Result(4)])
+        ];
 
-        yield return [new NeighborSumServiceScenario([[5]], [new AdjacentSumOperation(5), new DiagonalSumOperation(5)], [new AdjacentSumOperation.Result(0), new DiagonalSumOperation.Result(0)])];
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[5]],
+                [new AdjacentSumOperation(5), new DiagonalSumOperation(5)],
+                [new AdjacentSumOperation.Result(0), new DiagonalSumOperation.Result(0)])
+        ];
 
-        yield return [new NeighborSumServiceScenario([[0, 1], [2, 3]], [new AdjacentSumOperation(0), new DiagonalSumOperation(0), new AdjacentSumOperation(3), new DiagonalSumOperation(3)], [new AdjacentSumOperation.Result(3), new DiagonalSumOperation.Result(3), new AdjacentSumOperation.Result(3), new DiagonalSumOperation.Result(0)])];
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[0, 1], [2, 3]],
+                [new AdjacentSumOperation(0), new DiagonalSumOperation(0), new AdjacentSumOperation(3), new DiagonalSumOperation(3)],
+                [
+                    new AdjacentSumOperation.Result(3),
+                    new DiagonalSumOperation.Result(3),
+                    new AdjacentSumOperation.Result(3),
+                    new DiagonalSumOperation.Result(0)
+                ])
+        ];
 
         // 3x3 grid - adjacent sum of corner (top-left)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(0)], [new AdjacentSumOperation.Result(4)])];
+        yield return
+        [
+            new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(0)], [new AdjacentSumOperation.Result(4)])
+        ];
 
         // 3x3 grid - adjacent sum of corner (top-right)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(2)], [new AdjacentSumOperation.Result(6)])];
+        yield return
+        [
+            new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(2)], [new AdjacentSumOperation.Result(6)])
+        ];
 
         // 3x3 grid - adjacent sum of corner (bottom-left)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(6)], [new AdjacentSumOperation.Result(10)])];
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[0, 1, 2], [3, 4, 5], [6, 7, 8]],
+                [new AdjacentSumOperation(6)],
+                [new AdjacentSumOperation.Result(10)])
+        ];
 
         // 3x3 grid - adjacent sum of corner (bottom-right)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(8)], [new AdjacentSumOperation.Result(12)])];
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[0, 1, 2], [3, 4, 5], [6, 7, 8]],
+                [new AdjacentSumOperation(8)],
+                [new AdjacentSumOperation.Result(12)])
+        ];
 
         // 3x3 grid - diagonal sum of corner (top-left)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(0)], [new DiagonalSumOperation.Result(4)])];
+        yield return
+        [
+            new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(0)], [new DiagonalSumOperation.Result(4)])
+        ];
 
         // 3x3 grid - diagonal sum of corner (top-right)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(2)], [new DiagonalSumOperation.Result(4)])];
+        yield return
+        [
+            new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(2)], [new DiagonalSumOperation.Result(4)])
+        ];
 
         // 3x3 grid - diagonal sum of corner (bottom-left)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(6)], [new DiagonalSumOperation.Result(4)])];
+        yield return
+        [
+            new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(6)], [new DiagonalSumOperation.Result(4)])
+        ];
 
         // 3x3 grid - diagonal sum of corner (bottom-right)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(8)], [new DiagonalSumOperation.Result(4)])];
+        yield return
+        [
+            new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(8)], [new DiagonalSumOperation.Result(4)])
+        ];
 
         // 3x3 grid - adjacent sum of edge (top-middle)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(1)], [new AdjacentSumOperation.Result(6)])];
+        yield return
+        [
+            new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(1)], [new AdjacentSumOperation.Result(6)])
+        ];
 
         // 3x3 grid - adjacent sum of edge (left-middle)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(3)], [new AdjacentSumOperation.Result(10)])];
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[0, 1, 2], [3, 4, 5], [6, 7, 8]],
+                [new AdjacentSumOperation(3)],
+                [new AdjacentSumOperation.Result(10)])
+        ];
 
         // 3x3 grid - adjacent sum of edge (right-middle)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(5)], [new AdjacentSumOperation.Result(14)])];
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[0, 1, 2], [3, 4, 5], [6, 7, 8]],
+                [new AdjacentSumOperation(5)],
+                [new AdjacentSumOperation.Result(14)])
+        ];
 
         // 3x3 grid - adjacent sum of edge (bottom-middle)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(7)], [new AdjacentSumOperation.Result(18)])];
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[0, 1, 2], [3, 4, 5], [6, 7, 8]],
+                [new AdjacentSumOperation(7)],
+                [new AdjacentSumOperation.Result(18)])
+        ];
 
         // 3x3 grid - diagonal sum of edge (top-middle)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(1)], [new DiagonalSumOperation.Result(8)])];
+        yield return
+        [
+            new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(1)], [new DiagonalSumOperation.Result(8)])
+        ];
 
         // 3x3 grid - diagonal sum of edge (left-middle)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(3)], [new DiagonalSumOperation.Result(8)])];
+        yield return
+        [
+            new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(3)], [new DiagonalSumOperation.Result(8)])
+        ];
 
         // 3x3 grid - diagonal sum of edge (right-middle)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(5)], [new DiagonalSumOperation.Result(8)])];
+        yield return
+        [
+            new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(5)], [new DiagonalSumOperation.Result(8)])
+        ];
 
         // 3x3 grid - diagonal sum of edge (bottom-middle)
-        yield return [new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(7)], [new DiagonalSumOperation.Result(8)])];
+        yield return
+        [
+            new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(7)], [new DiagonalSumOperation.Result(8)])
+        ];
     }
 
     public sealed class NeighborSumServiceScenario : IScenario<IDesignNeighborSumService>

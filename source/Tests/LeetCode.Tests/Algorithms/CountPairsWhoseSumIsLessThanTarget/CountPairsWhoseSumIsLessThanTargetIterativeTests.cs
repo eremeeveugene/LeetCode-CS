@@ -14,4 +14,5 @@ using LeetCode.Algorithms.CountPairsWhoseSumIsLessThanTarget;
 namespace LeetCode.Tests.Algorithms.CountPairsWhoseSumIsLessThanTarget;
 
 [TestClass]
-public sealed class CountPairsWhoseSumIsLessThanTargetIterativeTests : CountPairsWhoseSumIsLessThanTargetTestsBase<CountPairsWhoseSumIsLessThanTargetIterative>;
+public sealed class CountPairsWhoseSumIsLessThanTargetIterativeTests
+    : CountPairsWhoseSumIsLessThanTargetTestsBase<CountPairsWhoseSumIsLessThanTargetIterative>;

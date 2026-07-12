@@ -37,13 +37,35 @@ public abstract class WalkingRobotSimulationTestsBase<T> where T : IWalkingRobot
 
         yield return [new[] { 6, -1, -1, 6 }, Array.Empty<int[]>(), 36];
 
-        yield return [new[] { -2, 8, 3, 7, -1 }, new[] { new[] { -4, -1 }, new[] { 1, -1 }, new[] { 1, 4 }, new[] { 5, 0 }, new[] { 4, 5 }, new[] { -2, -1 }, new[] { 2, -5 }, new[] { 5, 1 }, new[] { -3, -1 }, new[] { 5, -3 } }, 324];
+        yield return
+        [
+            new[] { -2, 8, 3, 7, -1 },
+            new[]
+            {
+                new[] { -4, -1 },
+                new[] { 1, -1 },
+                new[] { 1, 4 },
+                new[] { 5, 0 },
+                new[] { 4, 5 },
+                new[] { -2, -1 },
+                new[] { 2, -5 },
+                new[] { 5, 1 },
+                new[] { -3, -1 },
+                new[] { 5, -3 }
+            },
+            324
+        ];
 
         yield return [new[] { 9, -1, 9, -2, 3 }, new[] { new[] { 4, 8 }, new[] { 5, 6 }, new[] { 7, 7 }, new[] { 8, 4 } }, 225];
 
         yield return [new[] { 1 }, new[] { new[] { 2, 2 }, new[] { 3, 3 } }, 1];
 
-        yield return [new[] { 9, -1, 9, 9, -2, 9, 9, -1, 9, 9, -2, 9, 9, 9, -1, 9, 9, -2, 9, 9, -1, -1, 9, 9 }, new[] { new[] { 10, 10 }, new[] { 5, 5 }, new[] { 8, 8 }, new[] { 15, 15 }, new[] { 20, 20 } }, 8100];
+        yield return
+        [
+            new[] { 9, -1, 9, 9, -2, 9, 9, -1, 9, 9, -2, 9, 9, 9, -1, 9, 9, -2, 9, 9, -1, -1, 9, 9 },
+            new[] { new[] { 10, 10 }, new[] { 5, 5 }, new[] { 8, 8 }, new[] { 15, 15 }, new[] { 20, 20 } },
+            8100
+        ];
 
         yield return [new[] { 1 }, Array.Empty<int[]>(), 1];
 

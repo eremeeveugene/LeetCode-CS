@@ -19,7 +19,12 @@ public abstract class RescheduleMeetingsForMaximumFreeTime1TestsBase<T> where T 
     [DataRow(5, 1, new[] { 1, 3 }, new[] { 2, 5 }, 2)]
     [DataRow(10, 1, new[] { 0, 2, 9 }, new[] { 1, 4, 10 }, 6)]
     [DataRow(5, 2, new[] { 0, 1, 2, 3, 4 }, new[] { 1, 2, 3, 4, 5 }, 0)]
-    public void MaxFreeTime_WithVariousMeetingSchedulesAndRescheduleLimit_ReturnsMaximumContinuousFreeTime(int eventTime, int k, int[] startTime, int[] endTime, int expectedResult)
+    public void MaxFreeTime_WithVariousMeetingSchedulesAndRescheduleLimit_ReturnsMaximumContinuousFreeTime(
+        int eventTime,
+        int k,
+        int[] startTime,
+        int[] endTime,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();

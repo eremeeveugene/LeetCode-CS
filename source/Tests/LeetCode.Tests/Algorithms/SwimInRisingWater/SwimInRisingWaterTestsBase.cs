@@ -33,6 +33,17 @@ public abstract class SwimInRisingWaterTestsBase<T> where T : ISwimInRisingWater
     {
         yield return [new[] { new[] { 0, 2 }, new[] { 1, 3 } }, 3];
 
-        yield return [new[] { new[] { 0, 1, 2, 3, 4 }, new[] { 24, 23, 22, 21, 5 }, new[] { 12, 13, 14, 15, 16 }, new[] { 11, 17, 18, 19, 20 }, new[] { 10, 9, 8, 7, 6 } }, 16];
+        yield return
+        [
+            new[]
+            {
+                new[] { 0, 1, 2, 3, 4 },
+                new[] { 24, 23, 22, 21, 5 },
+                new[] { 12, 13, 14, 15, 16 },
+                new[] { 11, 17, 18, 19, 20 },
+                new[] { 10, 9, 8, 7, 6 }
+            },
+            16
+        ];
     }
 }

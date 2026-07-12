@@ -46,17 +46,77 @@ public abstract class DesignAnOrderedStreamTestsBase
 
     private static IEnumerable<OrderedStreamScenario[]> GetScenarios()
     {
-        yield return [new OrderedStreamScenario(5, [new InsertOperation(3, "ccccc"), new InsertOperation(1, "aaaaa"), new InsertOperation(2, "bbbbb"), new InsertOperation(5, "eeeee"), new InsertOperation(4, "ddddd")], [new InsertOperation.Result(new List<string?>()), new InsertOperation.Result(new List<string?> { "aaaaa" }), new InsertOperation.Result(new List<string?> { "bbbbb", "ccccc" }), new InsertOperation.Result(new List<string?>()), new InsertOperation.Result(new List<string?> { "ddddd", "eeeee" })])];
+        yield return
+        [
+            new OrderedStreamScenario(
+                5,
+                [
+                    new InsertOperation(3, "ccccc"),
+                    new InsertOperation(1, "aaaaa"),
+                    new InsertOperation(2, "bbbbb"),
+                    new InsertOperation(5, "eeeee"),
+                    new InsertOperation(4, "ddddd")
+                ],
+                [
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?> { "aaaaa" }),
+                    new InsertOperation.Result(new List<string?> { "bbbbb", "ccccc" }),
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?> { "ddddd", "eeeee" })
+                ])
+        ];
 
-        yield return [new OrderedStreamScenario(3, [new InsertOperation(1, "aaaaa"), new InsertOperation(2, "bbbbb"), new InsertOperation(3, "ccccc")], [new InsertOperation.Result(new List<string?> { "aaaaa" }), new InsertOperation.Result(new List<string?> { "bbbbb" }), new InsertOperation.Result(new List<string?> { "ccccc" })])];
+        yield return
+        [
+            new OrderedStreamScenario(
+                3,
+                [new InsertOperation(1, "aaaaa"), new InsertOperation(2, "bbbbb"), new InsertOperation(3, "ccccc")],
+                [
+                    new InsertOperation.Result(new List<string?> { "aaaaa" }),
+                    new InsertOperation.Result(new List<string?> { "bbbbb" }),
+                    new InsertOperation.Result(new List<string?> { "ccccc" })
+                ])
+        ];
 
-        yield return [new OrderedStreamScenario(3, [new InsertOperation(3, "ccccc"), new InsertOperation(2, "bbbbb"), new InsertOperation(1, "aaaaa")], [new InsertOperation.Result(new List<string?>()), new InsertOperation.Result(new List<string?>()), new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb", "ccccc" })])];
+        yield return
+        [
+            new OrderedStreamScenario(
+                3,
+                [new InsertOperation(3, "ccccc"), new InsertOperation(2, "bbbbb"), new InsertOperation(1, "aaaaa")],
+                [
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb", "ccccc" })
+                ])
+        ];
 
         yield return [new OrderedStreamScenario(1, [new InsertOperation(1, "aaaaa")], [new InsertOperation.Result(new List<string?> { "aaaaa" })])];
 
-        yield return [new OrderedStreamScenario(2, [new InsertOperation(2, "bbbbb"), new InsertOperation(1, "aaaaa")], [new InsertOperation.Result(new List<string?>()), new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb" })])];
+        yield return
+        [
+            new OrderedStreamScenario(
+                2,
+                [new InsertOperation(2, "bbbbb"), new InsertOperation(1, "aaaaa")],
+                [new InsertOperation.Result(new List<string?>()), new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb" })])
+        ];
 
-        yield return [new OrderedStreamScenario(4, [new InsertOperation(2, "bbbbb"), new InsertOperation(1, "aaaaa"), new InsertOperation(4, "ddddd"), new InsertOperation(3, "ccccc")], [new InsertOperation.Result(new List<string?>()), new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb" }), new InsertOperation.Result(new List<string?>()), new InsertOperation.Result(new List<string?> { "ccccc", "ddddd" })])];
+        yield return
+        [
+            new OrderedStreamScenario(
+                4,
+                [
+                    new InsertOperation(2, "bbbbb"),
+                    new InsertOperation(1, "aaaaa"),
+                    new InsertOperation(4, "ddddd"),
+                    new InsertOperation(3, "ccccc")
+                ],
+                [
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb" }),
+                    new InsertOperation.Result(new List<string?>()),
+                    new InsertOperation.Result(new List<string?> { "ccccc", "ddddd" })
+                ])
+        ];
     }
 
     public sealed class OrderedStreamScenario : IScenario<IDesignAnOrderedStream>

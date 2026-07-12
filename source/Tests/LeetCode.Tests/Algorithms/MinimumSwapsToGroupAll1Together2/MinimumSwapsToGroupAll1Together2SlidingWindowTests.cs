@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MinimumSwapsToGroupAll1Together2;
 namespace LeetCode.Tests.Algorithms.MinimumSwapsToGroupAll1Together2;
 
 [TestClass]
-public sealed class MinimumSwapsToGroupAll1Together2SlidingWindowTests : MinimumSwapsToGroupAll1Together2TestBase<MinimumSwapsToGroupAll1Together2SlidingWindow>;
+public sealed class MinimumSwapsToGroupAll1Together2SlidingWindowTests
+    : MinimumSwapsToGroupAll1Together2TestBase<MinimumSwapsToGroupAll1Together2SlidingWindow>;

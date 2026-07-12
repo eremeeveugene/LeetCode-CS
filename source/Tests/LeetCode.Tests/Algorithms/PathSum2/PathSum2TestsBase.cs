@@ -19,7 +19,10 @@ public abstract class PathSum2TestsBase<T> where T : IPathSum2, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void PathSum_WithBinaryTreeAndTargetSum_ReturnsAllRootToLeafPathsThatSumToTarget(int?[] rootArray, int targetSum, IList<IList<int>> expectedResult)
+    public void PathSum_WithBinaryTreeAndTargetSum_ReturnsAllRootToLeafPathsThatSumToTarget(
+        int?[] rootArray,
+        int targetSum,
+        IList<IList<int>> expectedResult)
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);
@@ -35,7 +38,10 @@ public abstract class PathSum2TestsBase<T> where T : IPathSum2, new()
 
     private static IEnumerable<object[]> GetTestData()
     {
-        yield return [new int?[] { 5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1 }, 22, new IList<int>[] { new[] { 5, 4, 11, 2 }, new[] { 5, 8, 4, 5 } }];
+        yield return
+        [
+            new int?[] { 5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1 }, 22, new IList<int>[] { new[] { 5, 4, 11, 2 }, new[] { 5, 8, 4, 5 } }
+        ];
 
         yield return [new int?[] { 1, 2, 3 }, 5, Array.Empty<IList<int>>()];
 

@@ -13,7 +13,8 @@ using LeetCode.Algorithms.CountSubmatricesWithTopLeftElementAndSumLessThanK;
 
 namespace LeetCode.Tests.Algorithms.CountSubmatricesWithTopLeftElementAndSumLessThanK;
 
-public abstract class CountSubmatricesWithTopLeftElementAndSumLessThanKTestsBase<T> where T : ICountSubmatricesWithTopLeftElementAndSumLessThanK, new()
+public abstract class CountSubmatricesWithTopLeftElementAndSumLessThanKTestsBase<T>
+    where T : ICountSubmatricesWithTopLeftElementAndSumLessThanK, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]

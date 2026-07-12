@@ -78,13 +78,17 @@ public sealed class GreatestSumDivisibleByThreeGreedy : IGreatestSumDivisibleByT
                 return sum;
             case 1:
                 {
-                    var remove2 = smallestNumberWithRemainderTwo != int.MaxValue && secondSmallestNumberWithRemainderTwo != int.MaxValue ? smallestNumberWithRemainderTwo + secondSmallestNumberWithRemainderTwo : int.MaxValue;
+                    var remove2 = smallestNumberWithRemainderTwo != int.MaxValue && secondSmallestNumberWithRemainderTwo != int.MaxValue
+                        ? smallestNumberWithRemainderTwo + secondSmallestNumberWithRemainderTwo
+                        : int.MaxValue;
 
                     return sum - Math.Min(smallestNumberWithRemainderOne, remove2);
                 }
             default:
                 {
-                    var remove2 = smallestNumberWithRemainderOne != int.MaxValue && secondSmallestNumberWithRemainderOne != int.MaxValue ? smallestNumberWithRemainderOne + secondSmallestNumberWithRemainderOne : int.MaxValue;
+                    var remove2 = smallestNumberWithRemainderOne != int.MaxValue && secondSmallestNumberWithRemainderOne != int.MaxValue
+                        ? smallestNumberWithRemainderOne + secondSmallestNumberWithRemainderOne
+                        : int.MaxValue;
 
                     return sum - Math.Min(smallestNumberWithRemainderTwo, remove2);
                 }

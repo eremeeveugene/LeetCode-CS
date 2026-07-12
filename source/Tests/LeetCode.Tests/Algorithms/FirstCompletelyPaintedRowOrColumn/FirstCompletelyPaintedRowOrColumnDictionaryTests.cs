@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FirstCompletelyPaintedRowOrColumn;
 namespace LeetCode.Tests.Algorithms.FirstCompletelyPaintedRowOrColumn;
 
 [TestClass]
-public sealed class FirstCompletelyPaintedRowOrColumnDictionaryTests : FirstCompletelyPaintedRowOrColumnTestsBase<FirstCompletelyPaintedRowOrColumnDictionary>;
+public sealed class FirstCompletelyPaintedRowOrColumnDictionaryTests
+    : FirstCompletelyPaintedRowOrColumnTestsBase<FirstCompletelyPaintedRowOrColumnDictionary>;

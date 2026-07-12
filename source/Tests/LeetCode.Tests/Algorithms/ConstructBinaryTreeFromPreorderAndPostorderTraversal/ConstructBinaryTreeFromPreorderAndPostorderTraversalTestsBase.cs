@@ -15,7 +15,8 @@ using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ConstructBinaryTreeFromPreorderAndPostorderTraversal;
 
-public abstract class ConstructBinaryTreeFromPreorderAndPostorderTraversalTestsBase<T> where T : IConstructBinaryTreeFromPreorderAndPostorderTraversal, new()
+public abstract class ConstructBinaryTreeFromPreorderAndPostorderTraversalTestsBase<T>
+    where T : IConstructBinaryTreeFromPreorderAndPostorderTraversal, new()
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]

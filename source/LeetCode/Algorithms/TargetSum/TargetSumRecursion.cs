@@ -55,7 +55,8 @@ public sealed class TargetSumRecursion : ITargetSum
             return memo[currentIndex, currentSum + totalSum];
         }
 
-        memo[currentIndex, currentSum + totalSum] = CalculateWays(nums, currentIndex + 1, currentSum + nums[currentIndex], target, totalSum, memo) + CalculateWays(nums, currentIndex + 1, currentSum - nums[currentIndex], target, totalSum, memo);
+        memo[currentIndex, currentSum + totalSum] = CalculateWays(nums, currentIndex + 1, currentSum + nums[currentIndex], target, totalSum, memo) +
+                                                    CalculateWays(nums, currentIndex + 1, currentSum - nums[currentIndex], target, totalSum, memo);
 
         return memo[currentIndex, currentSum + totalSum];
     }

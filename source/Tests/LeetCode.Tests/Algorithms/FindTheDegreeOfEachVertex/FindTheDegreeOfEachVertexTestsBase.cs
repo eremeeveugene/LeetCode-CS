@@ -57,21 +57,45 @@ public abstract class FindTheDegreeOfEachVertexTestsBase<T> where T : IFindTheDe
 
         yield return [new[] { new[] { 0, 0, 0, 1 }, new[] { 0, 0, 0, 1 }, new[] { 0, 0, 0, 1 }, new[] { 1, 1, 1, 0 } }, new[] { 1, 1, 1, 3 }];
 
-        yield return [new[] { new[] { 0, 1, 1, 0, 0 }, new[] { 1, 0, 0, 0, 0 }, new[] { 1, 0, 0, 1, 0 }, new[] { 0, 0, 1, 0, 1 }, new[] { 0, 0, 0, 1, 0 } }, new[] { 2, 1, 2, 2, 1 }];
+        yield return
+        [
+            new[] { new[] { 0, 1, 1, 0, 0 }, new[] { 1, 0, 0, 0, 0 }, new[] { 1, 0, 0, 1, 0 }, new[] { 0, 0, 1, 0, 1 }, new[] { 0, 0, 0, 1, 0 } },
+            new[] { 2, 1, 2, 2, 1 }
+        ];
 
         yield return [new[] { new[] { 0, 0 }, new[] { 0, 0 } }, new[] { 0, 0 }];
 
         yield return [new[] { new[] { 0, 1, 0 }, new[] { 1, 0, 1 }, new[] { 0, 1, 0 } }, new[] { 1, 2, 1 }];
 
-        yield return [new[] { new[] { 0, 1, 1, 1, 1 }, new[] { 1, 0, 0, 0, 0 }, new[] { 1, 0, 0, 0, 0 }, new[] { 1, 0, 0, 0, 0 }, new[] { 1, 0, 0, 0, 0 } }, new[] { 4, 1, 1, 1, 1 }];
+        yield return
+        [
+            new[] { new[] { 0, 1, 1, 1, 1 }, new[] { 1, 0, 0, 0, 0 }, new[] { 1, 0, 0, 0, 0 }, new[] { 1, 0, 0, 0, 0 }, new[] { 1, 0, 0, 0, 0 } },
+            new[] { 4, 1, 1, 1, 1 }
+        ];
 
-        yield return [new[] { new[] { 0, 1, 0, 0, 0 }, new[] { 1, 0, 1, 0, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 0, 1, 0, 1 }, new[] { 0, 0, 0, 1, 0 } }, new[] { 1, 2, 2, 2, 1 }];
+        yield return
+        [
+            new[] { new[] { 0, 1, 0, 0, 0 }, new[] { 1, 0, 1, 0, 0 }, new[] { 0, 1, 0, 1, 0 }, new[] { 0, 0, 1, 0, 1 }, new[] { 0, 0, 0, 1, 0 } },
+            new[] { 1, 2, 2, 2, 1 }
+        ];
 
         yield return [new[] { new[] { 0, 1, 0, 1 }, new[] { 1, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 1, 0, 0, 0 } }, new[] { 2, 1, 0, 1 }];
 
         yield return [new[] { new[] { 0, 1, 1, 0 }, new[] { 1, 0, 1, 0 }, new[] { 1, 1, 0, 0 }, new[] { 0, 0, 0, 0 } }, new[] { 2, 2, 2, 0 }];
 
-        yield return [new[] { new[] { 0, 0, 1, 0, 1, 0 }, new[] { 0, 0, 0, 1, 0, 1 }, new[] { 1, 0, 0, 0, 1, 0 }, new[] { 0, 1, 0, 0, 0, 1 }, new[] { 1, 0, 1, 0, 0, 0 }, new[] { 0, 1, 0, 1, 0, 0 } }, new[] { 2, 2, 2, 2, 2, 2 }];
+        yield return
+        [
+            new[]
+            {
+                new[] { 0, 0, 1, 0, 1, 0 },
+                new[] { 0, 0, 0, 1, 0, 1 },
+                new[] { 1, 0, 0, 0, 1, 0 },
+                new[] { 0, 1, 0, 0, 0, 1 },
+                new[] { 1, 0, 1, 0, 0, 0 },
+                new[] { 0, 1, 0, 1, 0, 0 }
+            },
+            new[] { 2, 2, 2, 2, 2, 2 }
+        ];
 
         yield return [new[] { new[] { 0, 1 }, new[] { 1, 0 } }, new[] { 1, 1 }];
 

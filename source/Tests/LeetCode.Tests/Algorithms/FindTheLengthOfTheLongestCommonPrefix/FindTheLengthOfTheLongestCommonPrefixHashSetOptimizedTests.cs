@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix;
 namespace LeetCode.Tests.Algorithms.FindTheLengthOfTheLongestCommonPrefix;
 
 [TestClass]
-public sealed class FindTheLengthOfTheLongestCommonPrefixHashSetOptimizedTests : FindTheLengthOfTheLongestCommonPrefixTestsBase<FindTheLengthOfTheLongestCommonPrefixHashSetOptimized>;
+public sealed class FindTheLengthOfTheLongestCommonPrefixHashSetOptimizedTests
+    : FindTheLengthOfTheLongestCommonPrefixTestsBase<FindTheLengthOfTheLongestCommonPrefixHashSetOptimized>;

@@ -18,7 +18,10 @@ public abstract class AppleRedistributionIntoBoxesTestsBase<T> where T : IAppleR
     [TestMethod]
     [DataRow(new[] { 1, 3, 2 }, new[] { 4, 3, 1, 5, 2 }, 2)]
     [DataRow(new[] { 5, 5, 5 }, new[] { 2, 4, 2, 7 }, 4)]
-    public void MinimumBoxes_WithApplePacksAndBoxCapacities_ReturnsMinimumNumberOfBoxesNeededToStoreAllApples(int[] apples, int[] capacities, int expectedResult)
+    public void MinimumBoxes_WithApplePacksAndBoxCapacities_ReturnsMinimumNumberOfBoxesNeededToStoreAllApples(
+        int[] apples,
+        int[] capacities,
+        int expectedResult)
     {
         // Arrange
         var solution = new T();

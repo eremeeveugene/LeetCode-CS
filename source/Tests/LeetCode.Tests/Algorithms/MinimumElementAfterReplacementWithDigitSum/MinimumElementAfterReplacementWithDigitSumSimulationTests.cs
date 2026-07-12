@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MinimumElementAfterReplacementWithDigitSum;
 namespace LeetCode.Tests.Algorithms.MinimumElementAfterReplacementWithDigitSum;
 
 [TestClass]
-public sealed class MinimumElementAfterReplacementWithDigitSumSimulationTests : MinimumElementAfterReplacementWithDigitSumTestsBase<MinimumElementAfterReplacementWithDigitSumSimulation>;
+public sealed class MinimumElementAfterReplacementWithDigitSumSimulationTests
+    : MinimumElementAfterReplacementWithDigitSumTestsBase<MinimumElementAfterReplacementWithDigitSumSimulation>;

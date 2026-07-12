@@ -13,7 +13,8 @@ using LeetCode.Algorithms.MaximumDifferenceBetweenAdjacentElementsInCircularArra
 
 namespace LeetCode.Tests.Algorithms.MaximumDifferenceBetweenAdjacentElementsInCircularArray;
 
-public abstract class MaximumDifferenceBetweenAdjacentElementsInCircularArrayTestsBase<T> where T : IMaximumDifferenceBetweenAdjacentElementsInCircularArray, new()
+public abstract class MaximumDifferenceBetweenAdjacentElementsInCircularArrayTestsBase<T>
+    where T : IMaximumDifferenceBetweenAdjacentElementsInCircularArray, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 4 }, 3)]

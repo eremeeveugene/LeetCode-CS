@@ -34,7 +34,10 @@ public abstract class WordsWithinTwoEditsOfDictionaryTestsBase<T> where T : IWor
     [DataRow(new[] { "abcdef" }, new[] { "abcxyz", "xycdef" }, new[] { "abcdef" })]
     [DataRow(new[] { "abcdef" }, new[] { "xyzdef", "abcxyz" }, new string[] { })]
     [DataRow(new[] { "first", "secnd", "third" }, new[] { "first", "xxxxx", "third" }, new[] { "first", "third" })]
-    public void TwoEditWords_WithQueriesAndDictionary_ReturnsQueriesMatchingDictionaryWithinTwoEdits(string[] queries, string[] words, string[] expectedResult)
+    public void TwoEditWords_WithQueriesAndDictionary_ReturnsQueriesMatchingDictionaryWithinTwoEdits(
+        string[] queries,
+        string[] words,
+        string[] expectedResult)
     {
         // Arrange
         var solution = new T();

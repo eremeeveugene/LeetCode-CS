@@ -14,4 +14,5 @@ using LeetCode.Algorithms.CountSubarraysWithScoreLessThanK;
 namespace LeetCode.Tests.Algorithms.CountSubarraysWithScoreLessThanK;
 
 [TestClass]
-public sealed class CountSubarraysWithScoreLessThanKSlidingWindowTests : CountSubarraysWithScoreLessThanKTestsBase<CountSubarraysWithScoreLessThanKSlidingWindow>;
+public sealed class CountSubarraysWithScoreLessThanKSlidingWindowTests
+    : CountSubarraysWithScoreLessThanKTestsBase<CountSubarraysWithScoreLessThanKSlidingWindow>;

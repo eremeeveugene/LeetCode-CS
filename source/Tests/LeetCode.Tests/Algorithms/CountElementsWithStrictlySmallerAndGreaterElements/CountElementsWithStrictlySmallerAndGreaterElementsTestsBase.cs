@@ -13,7 +13,8 @@ using LeetCode.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements;
 
 namespace LeetCode.Tests.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements;
 
-public abstract class CountElementsWithStrictlySmallerAndGreaterElementsTestsBase<T> where T : ICountElementsWithStrictlySmallerAndGreaterElements, new()
+public abstract class CountElementsWithStrictlySmallerAndGreaterElementsTestsBase<T>
+    where T : ICountElementsWithStrictlySmallerAndGreaterElements, new()
 {
     [TestMethod]
     [DataRow(new[] { 11, 7, 2, 15 }, 2)]

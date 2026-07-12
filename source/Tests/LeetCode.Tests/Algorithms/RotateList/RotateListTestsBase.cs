@@ -38,7 +38,10 @@ public abstract class RotateListTestsBase<T> where T : IRotateList, new()
     [DataRow(new[] { 1, 2, 3, 4, 5 }, 7, new[] { 4, 5, 1, 2, 3 })]
     [DataRow(new[] { -100, -1, 0, 1, 100 }, 3, new[] { 0, 1, 100, -100, -1 })]
     [DataRow(new[] { 1, 1, 2, 2, 3 }, 2, new[] { 2, 3, 1, 1, 2 })]
-    public void RotateRight_WithGivenLinkedListAndRotationCount_ReturnsListRotatedRightBySpecifiedPlaces(int[] headArray, int k, int[] expectedResultArray)
+    public void RotateRight_WithGivenLinkedListAndRotationCount_ReturnsListRotatedRightBySpecifiedPlaces(
+        int[] headArray,
+        int k,
+        int[] expectedResultArray)
     {
         // Arrange
         var head = ListNode.ToListNode(headArray);

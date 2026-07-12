@@ -27,7 +27,13 @@ public abstract class FizzBuzzMultithreadedTestsBase
         // Act
         List<string> actualResult = [];
 
-        List<Task> tasks = [Task.Run(() => solution.Fizz(() => actualResult.Add("fizz")), TestContext.CancellationToken), Task.Run(() => solution.Buzz(() => actualResult.Add("buzz")), TestContext.CancellationToken), Task.Run(() => solution.Fizzbuzz(() => actualResult.Add("fizzbuzz")), TestContext.CancellationToken), Task.Run(() => solution.Number(n => actualResult.Add(n.ToString())), TestContext.CancellationToken)];
+        List<Task> tasks =
+        [
+            Task.Run(() => solution.Fizz(() => actualResult.Add("fizz")), TestContext.CancellationToken),
+            Task.Run(() => solution.Buzz(() => actualResult.Add("buzz")), TestContext.CancellationToken),
+            Task.Run(() => solution.Fizzbuzz(() => actualResult.Add("fizzbuzz")), TestContext.CancellationToken),
+            Task.Run(() => solution.Number(n => actualResult.Add(n.ToString())), TestContext.CancellationToken)
+        ];
 
         await Task.WhenAll(tasks);
 

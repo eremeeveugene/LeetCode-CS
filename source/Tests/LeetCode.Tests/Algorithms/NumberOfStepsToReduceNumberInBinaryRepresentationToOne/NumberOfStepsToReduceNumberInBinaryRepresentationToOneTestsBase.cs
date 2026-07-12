@@ -13,7 +13,8 @@ using LeetCode.Algorithms.NumberOfStepsToReduceNumberInBinaryRepresentationToOne
 
 namespace LeetCode.Tests.Algorithms.NumberOfStepsToReduceNumberInBinaryRepresentationToOne;
 
-public abstract class NumberOfStepsToReduceNumberInBinaryRepresentationToOneTestsBase<T> where T : INumberOfStepsToReduceNumberInBinaryRepresentationToOne, new()
+public abstract class NumberOfStepsToReduceNumberInBinaryRepresentationToOneTestsBase<T>
+    where T : INumberOfStepsToReduceNumberInBinaryRepresentationToOne, new()
 {
     [TestMethod]
     [DataRow("1101", 6)]

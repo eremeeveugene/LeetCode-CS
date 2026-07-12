@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MinimumOperationsToExceedThresholdValue2;
 namespace LeetCode.Tests.Algorithms.MinimumOperationsToExceedThresholdValue2;
 
 [TestClass]
-public sealed class MinimumOperationsToExceedThresholdValue2PriorityQueueTests : MinimumOperationsToExceedThresholdValue2TestsBase<MinimumOperationsToExceedThresholdValue2PriorityQueue>;
+public sealed class MinimumOperationsToExceedThresholdValue2PriorityQueueTests
+    : MinimumOperationsToExceedThresholdValue2TestsBase<MinimumOperationsToExceedThresholdValue2PriorityQueue>;

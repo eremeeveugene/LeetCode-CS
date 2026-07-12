@@ -32,6 +32,9 @@ public sealed class SortArrayByIncreasingFrequencyDictionary : ISortArrayByIncre
             }
         }
 
-        return frequencyDictionary.OrderBy(f => f.Value).ThenByDescending(f => f.Key).SelectMany(pair => Enumerable.Repeat(pair.Key, pair.Value)).ToArray();
+        return frequencyDictionary.OrderBy(f => f.Value)
+            .ThenByDescending(f => f.Key)
+            .SelectMany(pair => Enumerable.Repeat(pair.Key, pair.Value))
+            .ToArray();
     }
 }

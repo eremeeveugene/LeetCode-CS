@@ -33,6 +33,13 @@ public abstract class MaximumNumberOfKDivisibleComponentsTestsBase<T> where T : 
     {
         yield return [5, new[] { new[] { 0, 2 }, new[] { 1, 2 }, new[] { 1, 3 }, new[] { 2, 4 } }, new[] { 1, 8, 1, 4, 4 }, 6, 2];
 
-        yield return [7, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 1, 3 }, new[] { 1, 4 }, new[] { 2, 5 }, new[] { 2, 6 } }, new[] { 3, 0, 6, 1, 5, 2, 1 }, 3, 3];
+        yield return
+        [
+            7,
+            new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 1, 3 }, new[] { 1, 4 }, new[] { 2, 5 }, new[] { 2, 6 } },
+            new[] { 3, 0, 6, 1, 5, 2, 1 },
+            3,
+            3
+        ];
     }
 }

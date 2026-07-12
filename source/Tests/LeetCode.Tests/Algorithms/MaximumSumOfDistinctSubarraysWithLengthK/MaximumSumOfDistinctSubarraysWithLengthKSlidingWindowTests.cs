@@ -14,4 +14,5 @@ using LeetCode.Algorithms.MaximumSumOfDistinctSubarraysWithLengthK;
 namespace LeetCode.Tests.Algorithms.MaximumSumOfDistinctSubarraysWithLengthK;
 
 [TestClass]
-public class MaximumSumOfDistinctSubarraysWithLengthKSlidingWindowTests : MaximumSumOfDistinctSubarraysWithLengthKTestsBase<MaximumSumOfDistinctSubarraysWithLengthKSlidingWindow>;
+public class MaximumSumOfDistinctSubarraysWithLengthKSlidingWindowTests
+    : MaximumSumOfDistinctSubarraysWithLengthKTestsBase<MaximumSumOfDistinctSubarraysWithLengthKSlidingWindow>;

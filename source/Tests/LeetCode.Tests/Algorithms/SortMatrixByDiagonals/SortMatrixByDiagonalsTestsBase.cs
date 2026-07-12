@@ -35,8 +35,15 @@ public abstract class SortMatrixByDiagonalsTestsBase<T> where T : ISortMatrixByD
 
         yield return [new[] { new[] { 0, 1 }, new[] { 1, 2 } }, new[] { new[] { 2, 1 }, new[] { 1, 0 } }];
 
-        yield return [new[] { new[] { 1, 7, 3 }, new[] { 9, 8, 2 }, new[] { 4, 5, 6 } }, new[] { new[] { 8, 2, 3 }, new[] { 9, 6, 7 }, new[] { 4, 5, 1 } }];
+        yield return
+        [
+            new[] { new[] { 1, 7, 3 }, new[] { 9, 8, 2 }, new[] { 4, 5, 6 } }, new[] { new[] { 8, 2, 3 }, new[] { 9, 6, 7 }, new[] { 4, 5, 1 } }
+        ];
 
-        yield return [new[] { new[] { 2, -4, 0 }, new[] { 2, 0, -4 }, new[] { -4, 2, 0 } }, new[] { new[] { 2, -4, 0 }, new[] { 2, 0, -4 }, new[] { -4, 2, 0 } }];
+        yield return
+        [
+            new[] { new[] { 2, -4, 0 }, new[] { 2, 0, -4 }, new[] { -4, 2, 0 } },
+            new[] { new[] { 2, -4, 0 }, new[] { 2, 0, -4 }, new[] { -4, 2, 0 } }
+        ];
     }
 }
