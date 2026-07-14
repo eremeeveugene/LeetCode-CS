@@ -11,7 +11,6 @@
 
 using LeetCode.Algorithms.NaryTreeLevelOrderTraversal;
 using LeetCode.Core.Models;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.NaryTreeLevelOrderTraversal;
 
@@ -30,7 +29,7 @@ public abstract class NaryTreeLevelOrderTraversalTestsBase<T> where T : INaryTre
         var actualResult = solution.LevelOrder(root);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent<IEnumerable<IEnumerable<int>>>(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

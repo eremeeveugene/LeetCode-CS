@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FloodFill;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.FloodFill;
 
@@ -27,7 +26,7 @@ public abstract class FloodFillTestsBase<T> where T : IFloodFill, new()
         var actualResult = solution.FloodFill(image, sr, sc, color);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

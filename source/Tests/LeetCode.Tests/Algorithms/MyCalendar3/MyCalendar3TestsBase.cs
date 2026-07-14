@@ -10,47 +10,131 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MyCalendar3;
-using LeetCode.Tests.Base.Exceptions;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.MyCalendar3;
 
 public abstract class MyCalendar3TestsBase<T> where T : IMyCalendar3, new()
 {
-    private const string Book = "book";
-
     [TestMethod]
-    [DynamicData(nameof(GetTestData))]
-    public void Book_WithOverlappingEvents_ReturnsMaxConcurrentBookingsAfterEachEvent(string[] methods, int[][] arguments, int[] expectedResult)
+    [DynamicData(nameof(GetScenarios))]
+    public void MyCalendar3_WithMixedOperations_ProcessesOperationsAccordingToSpecification(IScenario<IMyCalendar3> scenario)
     {
         // Arrange
+        var expectedResult = scenario.OperationResults;
+
         var solution = new T();
 
         // Act
-        var actualResult = new List<int>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < methods.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (methods[i])
-            {
-                case Book:
-                    actualResult.Add(solution.Book(arguments[i][0], arguments[i][1]));
-                    break;
-                default:
-                    throw new UnexpectedMethodException(methods[i]);
-            }
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
-    private static IEnumerable<object[]> GetTestData()
+    private static IEnumerable<IScenario<IMyCalendar3>[]> GetScenarios()
     {
         yield return
         [
-            new[] { "book", "book", "book", "book", "book", "book" },
-            new[] { new[] { 10, 20 }, new[] { 50, 60 }, new[] { 10, 40 }, new[] { 5, 15 }, new[] { 5, 10 }, new[] { 25, 55 } },
-            new[] { 1, 1, 2, 3, 3, 3 }
+            new Scenario<IMyCalendar3>(
+                [
+                    new BookOperation(10, 20),
+                    new BookOperation(50, 60),
+                    new BookOperation(10, 40),
+                    new BookOperation(5, 15),
+                    new BookOperation(5, 10),
+                    new BookOperation(25, 55)
+                ],
+                [
+                    new BookOperation.Result(1),
+                    new BookOperation.Result(1),
+                    new BookOperation.Result(2),
+                    new BookOperation.Result(3),
+                    new BookOperation.Result(3),
+                    new BookOperation.Result(3)
+                ])
         ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar3>([new BookOperation(1, 2)], [new BookOperation.Result(1)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar3>(
+                [new BookOperation(1, 2), new BookOperation(2, 3), new BookOperation(3, 4)],
+                [new BookOperation.Result(1), new BookOperation.Result(1), new BookOperation.Result(1)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar3>(
+                [new BookOperation(5, 10), new BookOperation(5, 10), new BookOperation(5, 10)],
+                [new BookOperation.Result(1), new BookOperation.Result(2), new BookOperation.Result(3)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar3>(
+                [new BookOperation(1, 10), new BookOperation(2, 9), new BookOperation(3, 8)],
+                [new BookOperation.Result(1), new BookOperation.Result(2), new BookOperation.Result(3)])
+        ];
+    }
+
+    private sealed class BookOperation : IOperation<IMyCalendar3>
+    {
+        private readonly int _endTime;
+        private readonly int _startTime;
+
+        public BookOperation(int startTime, int endTime)
+        {
+            _startTime = startTime;
+            _endTime = endTime;
+        }
+
+        public IOperationResult Execute(IMyCalendar3 myCalendar3)
+        {
+            var maxBooking = myCalendar3.Book(_startTime, _endTime);
+
+            return new Result(maxBooking);
+        }
+
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
+        {
+            private readonly int _maxBooking;
+
+            public Result(int maxBooking)
+            {
+                _maxBooking = maxBooking;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _maxBooking == other._maxBooking;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_maxBooking);
+            }
+        }
     }
 }

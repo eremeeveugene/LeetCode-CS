@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DivideArrayIntoArraysWithMaxDifference;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.DivideArrayIntoArraysWithMaxDifference;
 
@@ -27,7 +26,7 @@ public abstract class DivideArrayIntoArraysWithMaxDifferenceTestsBase<T> where T
         var actualResult = solution.DivideArray(nums, k);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

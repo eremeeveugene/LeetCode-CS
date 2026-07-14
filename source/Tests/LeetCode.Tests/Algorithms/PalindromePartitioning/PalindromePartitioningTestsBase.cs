@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.PalindromePartitioning;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.PalindromePartitioning;
 
@@ -27,7 +26,7 @@ public abstract class PalindromePartitioningTestsBase<T> where T : IPalindromePa
         var actualResult = solution.Partition(s);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.Subsets;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.Subsets;
 
@@ -27,7 +26,7 @@ public abstract class SubsetsTestsBase<T> where T : ISubsets, new()
         var actualResult = solution.Subsets(nums);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

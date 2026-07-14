@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ModifyTheMatrix;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ModifyTheMatrix;
 
@@ -27,7 +26,7 @@ public abstract class ModifyTheMatrixTestsBase<T> where T : IModifyTheMatrix, ne
         var actualResult = solution.ModifiedMatrix(matrix);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

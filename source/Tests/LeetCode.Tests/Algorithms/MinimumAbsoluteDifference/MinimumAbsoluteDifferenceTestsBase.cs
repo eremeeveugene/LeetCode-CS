@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MinimumAbsoluteDifference;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.MinimumAbsoluteDifference;
 
@@ -29,7 +28,7 @@ public abstract class MinimumAbsoluteDifferenceTestsBase<T> where T : IMinimumAb
         var actualResult = solution.MinimumAbsDifference(arr);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

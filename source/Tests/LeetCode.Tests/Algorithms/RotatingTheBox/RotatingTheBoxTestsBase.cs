@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RotatingTheBox;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.RotatingTheBox;
 
@@ -27,7 +26,7 @@ public abstract class RotatingTheBoxTestsBase<T> where T : IRotatingTheBox, new(
         var actualResult = solution.RotateTheBox(box);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

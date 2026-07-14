@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ModifyGraphEdgeWeights;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ModifyGraphEdgeWeights;
 
@@ -33,7 +32,7 @@ public abstract class ModifyGraphEdgeWeightsTestsBase<T> where T : IModifyGraphE
         var actualResult = solution.ModifiedGraphEdges(n, edges, source, destination, target);
 
         // Assert
-        NestedCollectionAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()
