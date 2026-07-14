@@ -28,6 +28,6 @@ public abstract class TheTwoSneakyNumbersOfDigitvilleTestsBase<T> where T : IThe
         var actualResult = solution.GetSneakyNumbers(nums);
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 }

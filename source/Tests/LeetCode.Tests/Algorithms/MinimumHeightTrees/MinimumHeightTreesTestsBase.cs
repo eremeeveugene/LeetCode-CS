@@ -26,7 +26,7 @@ public abstract class MinimumHeightTreesTestsBase<T> where T : IMinimumHeightTre
         var actualResult = solution.FindMinHeightTrees(n, edges).ToArray();
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 
     private static IEnumerable<object[]> GetTestData()

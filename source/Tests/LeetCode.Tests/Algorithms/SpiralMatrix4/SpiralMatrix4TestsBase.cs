@@ -11,6 +11,7 @@
 
 using LeetCode.Algorithms.SpiralMatrix4;
 using LeetCode.Core.Models;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.SpiralMatrix4;
 
@@ -33,7 +34,7 @@ public abstract class SpiralMatrix4TestsBase<T> where T : ISpiralMatrix4, new()
         var actualResult = solution.SpiralMatrix(m, n, head);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

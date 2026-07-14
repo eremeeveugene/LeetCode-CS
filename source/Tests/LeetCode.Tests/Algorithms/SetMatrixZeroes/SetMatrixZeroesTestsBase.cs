@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SetMatrixZeroes;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.SetMatrixZeroes;
 
@@ -26,7 +27,7 @@ public abstract class SetMatrixZeroesTestsBase<T> where T : ISetMatrixZeroes, ne
         solution.SetZeroes(matrix);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, matrix);
+        NestedCollectionAssert.AreEqual(expectedResult, matrix);
     }
 
     private static IEnumerable<object[]> GetTestData()

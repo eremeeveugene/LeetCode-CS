@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ValidArrangementOfPairs;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ValidArrangementOfPairs;
 
@@ -26,7 +27,7 @@ public abstract class ValidArrangementOfPairsTestsBase<T> where T : IValidArrang
         var actualResult = solution.ValidArrangement(pairs);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

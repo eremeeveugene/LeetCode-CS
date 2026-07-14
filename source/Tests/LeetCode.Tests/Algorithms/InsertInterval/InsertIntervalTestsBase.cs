@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.InsertInterval;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.InsertInterval;
 
@@ -26,7 +27,7 @@ public abstract class InsertIntervalTestsBase<T> where T : IInsertInterval, new(
         var actualResult = solution.Insert(intervals, newInterval);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

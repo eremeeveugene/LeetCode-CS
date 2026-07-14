@@ -27,6 +27,6 @@ public abstract class IntersectionOfTwoArrays2TestsBase<T> where T : IIntersecti
         var actualResult = solution.Intersect(nums1, nums2);
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 }

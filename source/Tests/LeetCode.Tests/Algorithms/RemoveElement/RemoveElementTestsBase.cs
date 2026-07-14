@@ -28,6 +28,6 @@ public abstract class RemoveElementTestsBase<T> where T : IRemoveElement, new()
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
-        CollectionAssert.AreEquivalent(expectedNums, nums.Take(actualResult).ToArray());
+        Assert.AreSequenceEqual(expectedNums, nums.Take(actualResult), SequenceOrder.InAnyOrder);
     }
 }

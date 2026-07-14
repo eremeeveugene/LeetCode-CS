@@ -43,6 +43,6 @@ public abstract class MajorityFrequencyCharactersTestsBase<T> where T : IMajorit
         var actualResult = solution.MajorityFrequencyGroup(s);
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult.ToCharArray(), actualResult.ToCharArray());
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 }

@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindAllGroupOfFarmland;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.FindAllGroupOfFarmland;
 
@@ -26,7 +27,7 @@ public abstract class FindAllGroupOfFarmlandTestsBase<T> where T : IFindAllGroup
         var actualResult = solution.FindFarmland(land);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

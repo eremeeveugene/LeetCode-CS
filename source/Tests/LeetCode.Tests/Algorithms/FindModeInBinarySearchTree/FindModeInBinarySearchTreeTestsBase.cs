@@ -29,7 +29,7 @@ public abstract class FindModeInBinarySearchTreeTestsBase<T> where T : IFindMode
         var actualResult = solution.FindMode(root);
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 
     private static IEnumerable<object[]> GetTestData()
