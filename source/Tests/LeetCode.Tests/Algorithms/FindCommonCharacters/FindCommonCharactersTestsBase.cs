@@ -34,6 +34,6 @@ public abstract class FindCommonCharactersTestsBase<T> where T : IFindCommonChar
         var actualResult = solution.CommonChars(words);
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult.ToList(), actualResult.ToList());
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 }

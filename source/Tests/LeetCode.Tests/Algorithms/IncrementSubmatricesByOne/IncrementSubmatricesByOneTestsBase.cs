@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.IncrementSubmatricesByOne;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.IncrementSubmatricesByOne;
 
@@ -26,7 +27,7 @@ public abstract class IncrementSubmatricesByOneTestsBase<T> where T : IIncrement
         var actualResult = solution.RangeAddQueries(n, queries);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

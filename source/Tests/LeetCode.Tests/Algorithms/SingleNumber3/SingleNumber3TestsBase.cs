@@ -28,6 +28,6 @@ public abstract class SingleNumber3TestsBase<T> where T : ISingleNumber3, new()
         var actualResult = solution.SingleNumber(nums);
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 }

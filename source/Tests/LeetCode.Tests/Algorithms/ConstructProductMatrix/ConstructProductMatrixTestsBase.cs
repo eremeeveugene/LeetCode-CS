@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ConstructProductMatrix;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ConstructProductMatrix;
 
@@ -26,7 +27,7 @@ public abstract class ConstructProductMatrixTestsBase<T> where T : IConstructPro
         var actualResult = solution.ConstructProductMatrix(grid);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

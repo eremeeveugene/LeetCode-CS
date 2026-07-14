@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FlipSquareSubmatrixVertically;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.FlipSquareSubmatrixVertically;
 
@@ -31,7 +32,7 @@ public abstract class FlipSquareSubmatrixVerticallyTestsBase<T> where T : IFlipS
         var actualResult = solution.ReverseSubmatrix(grid, x, y, k);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

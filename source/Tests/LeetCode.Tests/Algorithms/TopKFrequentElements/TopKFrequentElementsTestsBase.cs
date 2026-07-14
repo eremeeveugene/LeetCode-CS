@@ -49,6 +49,6 @@ public abstract class TopKFrequentElementsTestsBase<T> where T : ITopKFrequentEl
         var actualResult = solution.TopKFrequent(nums, k);
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 }

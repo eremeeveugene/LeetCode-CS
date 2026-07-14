@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ZeroOneMatrix;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ZeroOneMatrix;
 
@@ -26,7 +27,7 @@ public abstract class ZeroOneMatrixTestsBase<T> where T : IZeroOneMatrix, new()
         var actualResult = solution.UpdateMatrix(mat);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

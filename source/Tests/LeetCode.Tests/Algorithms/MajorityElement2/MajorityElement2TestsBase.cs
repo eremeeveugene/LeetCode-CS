@@ -49,6 +49,6 @@ public abstract class MajorityElement2TestsBase<T> where T : IMajorityElement2, 
         var actualResult = solution.MajorityElement(nums);
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult.ToArray());
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 }

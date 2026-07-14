@@ -26,7 +26,7 @@ public abstract class LuckyNumbersInMatrixTestsBase<T> where T : ILuckyNumbersIn
         var actualResult = solution.LuckyNumbers(matrix).ToArray();
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 
     private static IEnumerable<object[]> GetTestData()

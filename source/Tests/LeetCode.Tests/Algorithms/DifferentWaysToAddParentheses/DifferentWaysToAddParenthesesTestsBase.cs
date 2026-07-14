@@ -76,6 +76,6 @@ public abstract class DifferentWaysToAddParenthesesTestsBase<T> where T : IDiffe
         var actualResult = solution.DiffWaysToCompute(expression).ToArray();
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 }

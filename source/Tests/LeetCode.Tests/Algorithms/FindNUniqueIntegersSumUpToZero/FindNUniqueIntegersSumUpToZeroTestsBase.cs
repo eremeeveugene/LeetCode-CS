@@ -30,6 +30,6 @@ public abstract class FindNUniqueIntegersSumUpToZeroTestsBase<T> where T : IFind
         var actualResult = solution.SumZero(n);
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 }

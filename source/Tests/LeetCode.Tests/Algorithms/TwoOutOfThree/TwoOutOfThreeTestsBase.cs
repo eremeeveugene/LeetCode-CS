@@ -46,6 +46,6 @@ public abstract class TwoOutOfThreeTestsBase<T> where T : ITwoOutOfThree, new()
         var actualResult = solution.TwoOutOfThree(nums1, nums2, nums3);
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult.ToList());
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 }

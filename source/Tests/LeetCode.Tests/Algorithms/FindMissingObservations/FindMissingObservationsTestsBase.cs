@@ -34,6 +34,6 @@ public abstract class FindMissingObservationsTestsBase<T> where T : IFindMissing
         var actualResult = solution.MissingRolls(rolls, mean, n);
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 }

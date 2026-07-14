@@ -26,7 +26,7 @@ public abstract class FindMissingAndRepeatedValuesTestsBase<T> where T : IFindMi
         var actualResult = solution.FindMissingAndRepeatedValues(grid);
 
         // Assert
-        CollectionAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);
     }
 
     private static IEnumerable<object[]> GetTestData()

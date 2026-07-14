@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SortTheMatrixDiagonally;
+using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.SortTheMatrixDiagonally;
 
@@ -26,7 +27,7 @@ public abstract class SortTheMatrixDiagonallyTestsBase<T> where T : ISortTheMatr
         var actualResult = solution.DiagonalSort(mat);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()
