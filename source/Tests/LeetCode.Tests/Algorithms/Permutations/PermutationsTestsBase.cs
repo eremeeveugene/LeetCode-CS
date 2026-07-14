@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.Permutations;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.Permutations;
 
@@ -27,7 +26,7 @@ public abstract class PermutationsTestsBase<T> where T : IPermutations, new()
         var actualResult = solution.Permute(nums);
 
         // Assert
-        NestedCollectionAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreEquivalent<IEnumerable<IEnumerable<int>>>(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()
@@ -39,7 +38,7 @@ public abstract class PermutationsTestsBase<T> where T : IPermutations, new()
         yield return
         [
             new[] { 0, 1, 2 },
-            new[] { new[] { 1, 2, 0 }, new[] { 1, 0, 2 }, new[] { 2, 1, 0 }, new[] { 2, 0, 1 }, new[] { 0, 1, 2 }, new[] { 0, 2, 1 } }
+            new[] { new[] { 0, 1, 2 }, new[] { 0, 2, 1 }, new[] { 1, 0, 2 }, new[] { 1, 2, 0 }, new[] { 2, 1, 0 }, new[] { 2, 0, 1 } }
         ];
     }
 }

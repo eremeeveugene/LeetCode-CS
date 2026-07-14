@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.CombinationSum2;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.CombinationSum2;
 
@@ -30,7 +29,7 @@ public abstract class CombinationSum2TestsBase<T> where T : ICombinationSum2, ne
         var actualResult = solution.CombinationSum2(candidates, target);
 
         // Assert
-        NestedCollectionAssert.AreEquivalent(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()
