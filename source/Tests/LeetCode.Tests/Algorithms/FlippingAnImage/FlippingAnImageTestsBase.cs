@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FlippingAnImage;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.FlippingAnImage;
 
@@ -27,7 +26,7 @@ public abstract class FlippingAnImageTestsBase<T> where T : IFlippingAnImage, ne
         var actualResult = solution.FlipAndInvertImage(image);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

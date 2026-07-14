@@ -11,7 +11,6 @@
 
 using LeetCode.Algorithms.PathSum2;
 using LeetCode.Core.Models;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.PathSum2;
 
@@ -33,7 +32,7 @@ public abstract class PathSum2TestsBase<T> where T : IPathSum2, new()
         var actualResult = solution.PathSum(root, targetSum);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

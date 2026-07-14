@@ -13,22 +13,6 @@ namespace LeetCode.Tests.Base.Extensions;
 
 public static class NestedCollectionAssert
 {
-    public static void AreEqual<T>(IEnumerable<IEnumerable<T>> expectedResult, IEnumerable<IEnumerable<T>> actualResult)
-    {
-        ArgumentNullException.ThrowIfNull(expectedResult);
-        ArgumentNullException.ThrowIfNull(actualResult);
-
-        var expectedList = expectedResult.ToList();
-        var actualList = actualResult.ToList();
-
-        Assert.HasCount(expectedList.Count, actualList, "The number of sublists is different.");
-
-        for (var i = 0; i < expectedList.Count; i++)
-        {
-            CollectionAssert.AreEqual(expectedList[i].ToArray(), actualList[i].ToArray(), $"Sublist at index {i} is different.");
-        }
-    }
-
     public static void AreEquivalent<T>(IEnumerable<IEnumerable<T>> expectedResult, IEnumerable<IEnumerable<T>> actualResult)
     {
         ArgumentNullException.ThrowIfNull(expectedResult);

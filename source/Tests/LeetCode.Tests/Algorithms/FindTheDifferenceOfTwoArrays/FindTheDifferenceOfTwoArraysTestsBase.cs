@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.FindTheDifferenceOfTwoArrays;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.FindTheDifferenceOfTwoArrays;
 
@@ -27,7 +26,7 @@ public abstract class FindTheDifferenceOfTwoArraysTestsBase<T> where T : IFindTh
         var actualResult = solution.FindDifference(nums1, nums2);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent<IEnumerable<IEnumerable<int>>>(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

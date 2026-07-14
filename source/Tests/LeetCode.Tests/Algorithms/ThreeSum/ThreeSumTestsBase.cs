@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.ThreeSum;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.ThreeSum;
 
@@ -26,7 +25,7 @@ public abstract class ThreeSumTestsBase<T> where T : IThreeSum, new()
         // Act
         var actualResult = solution.ThreeSum(nums);
 
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent<IEnumerable<IEnumerable<int>>>(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

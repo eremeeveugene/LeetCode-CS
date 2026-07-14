@@ -10,7 +10,6 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.SpiralMatrix3;
-using LeetCode.Tests.Base.Extensions;
 
 namespace LeetCode.Tests.Algorithms.SpiralMatrix3;
 
@@ -32,7 +31,7 @@ public abstract class SpiralMatrix3TestsBase<T> where T : ISpiralMatrix3, new()
         var actualResult = solution.SpiralMatrixIII(rows, cols, rStart, cStart);
 
         // Assert
-        NestedCollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()
