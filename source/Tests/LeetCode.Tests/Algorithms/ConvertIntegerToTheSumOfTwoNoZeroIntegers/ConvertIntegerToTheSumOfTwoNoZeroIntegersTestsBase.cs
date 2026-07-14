@@ -32,6 +32,6 @@ public abstract class ConvertIntegerToTheSumOfTwoNoZeroIntegersTestsBase<T> wher
         var actualResult = solution.GetNoZeroIntegers(n);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

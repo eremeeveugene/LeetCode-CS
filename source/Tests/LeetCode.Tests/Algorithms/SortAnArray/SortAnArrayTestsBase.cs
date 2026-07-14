@@ -43,6 +43,6 @@ public abstract class SortAnArrayTestsBase<T> where T : ISortAnArray, new()
         solution.SortArray(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, nums);
+        Assert.AreSequenceEqual(expectedResult, nums);
     }
 }

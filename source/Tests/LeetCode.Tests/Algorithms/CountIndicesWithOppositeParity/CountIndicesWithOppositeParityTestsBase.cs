@@ -44,6 +44,6 @@ public abstract class CountIndicesWithOppositeParityTestsBase<T> where T : ICoun
         var actualResult = solution.CountOppositeParity(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

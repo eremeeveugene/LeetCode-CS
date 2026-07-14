@@ -28,6 +28,6 @@ public abstract class FindSubsequenceOfLengthKWithTheLargestSumTestsBase<T> wher
         var actualResult = solution.MaxSubsequence(nums, k);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

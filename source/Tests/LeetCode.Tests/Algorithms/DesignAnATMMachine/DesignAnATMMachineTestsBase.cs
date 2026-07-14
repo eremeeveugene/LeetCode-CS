@@ -39,7 +39,7 @@ public abstract class DesignAnATMMachineTestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IDesignAnATMMachine GetSolution();

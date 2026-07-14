@@ -45,6 +45,6 @@ public abstract class SeparateTheDigitsInAnArrayTestsBase<T> where T : ISeparate
         var actualResult = solution.SeparateDigits(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

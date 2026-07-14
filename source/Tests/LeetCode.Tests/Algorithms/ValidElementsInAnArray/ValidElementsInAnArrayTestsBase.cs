@@ -45,6 +45,6 @@ public abstract class ValidElementsInAnArrayTestsBase<T> where T : IValidElement
         var actualResult = solution.FindValidElements(nums).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

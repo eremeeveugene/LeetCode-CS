@@ -27,6 +27,6 @@ public abstract class WordSubsetsTestsBase<T> where T : IWordSubsets, new()
         var actualResult = solution.WordSubsets(words1, words2).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

@@ -28,6 +28,6 @@ public abstract class SortTheJumbledNumbersTestsBase<T> where T : ISortTheJumble
         var actualResult = solution.SortJumbled(mapping, nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

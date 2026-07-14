@@ -27,6 +27,6 @@ public abstract class BinaryPrefixDivisibleByFiveTestsBase<T> where T : IBinaryP
         var actualResult = solution.PrefixesDivBy5(nums).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

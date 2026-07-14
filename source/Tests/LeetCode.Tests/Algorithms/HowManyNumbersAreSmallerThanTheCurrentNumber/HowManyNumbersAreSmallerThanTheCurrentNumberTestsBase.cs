@@ -28,6 +28,6 @@ public abstract class HowManyNumbersAreSmallerThanTheCurrentNumberTestsBase<T> w
         var actualResult = solution.SmallerNumbersThanCurrent(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

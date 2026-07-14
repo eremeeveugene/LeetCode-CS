@@ -43,6 +43,6 @@ public abstract class SummaryRangesTestsBase<T> where T : ISummaryRanges, new()
         var actualResult = solution.SummaryRanges(nums).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

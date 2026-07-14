@@ -27,6 +27,6 @@ public abstract class LargestDivisibleSubsetTestsBase<T> where T : ILargestDivis
         var actualResult = solution.LargestDivisibleSubset(nums).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

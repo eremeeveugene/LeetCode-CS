@@ -27,6 +27,6 @@ public abstract class FindTheOriginalArrayOfPrefixXorTestsBase<T> where T : IFin
         var actualResult = solution.FindArray(pref);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

@@ -29,7 +29,7 @@ public abstract class ConcatenateNonZeroDigitsAndMultiplyBySum2TestsBase<T> wher
         var actualResult = solution.SumAndMultiply(s, queries);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

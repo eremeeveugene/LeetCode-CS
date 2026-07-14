@@ -39,7 +39,7 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<IScenario<IDesignTwitter>[]> GetScenarios()

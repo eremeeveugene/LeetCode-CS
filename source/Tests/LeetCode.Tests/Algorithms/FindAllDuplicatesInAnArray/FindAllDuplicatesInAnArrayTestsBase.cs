@@ -28,6 +28,6 @@ public abstract class FindAllDuplicatesInAnArrayTestsBase<T> where T : IFindAllD
         var actualResult = solution.FindDuplicates(nums).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

@@ -26,7 +26,7 @@ public abstract class SpiralMatrixTestsBase<T> where T : ISpiralMatrix, new()
         var actualResult = solution.SpiralOrder(matrix).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

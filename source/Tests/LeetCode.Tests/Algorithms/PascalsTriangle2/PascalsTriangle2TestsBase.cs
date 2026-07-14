@@ -28,6 +28,6 @@ public abstract class PascalsTriangle2TestsBase<T> where T : IPascalsTriangle2, 
         var actualResult = solution.GetRow(rowIndex).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

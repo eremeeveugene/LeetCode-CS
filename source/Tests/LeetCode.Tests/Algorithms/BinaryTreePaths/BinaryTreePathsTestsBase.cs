@@ -29,7 +29,7 @@ public abstract class BinaryTreePathsTestsBase<T> where T : IBinaryTreePaths, ne
         var actualResult = solution.BinaryTreePaths(root).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

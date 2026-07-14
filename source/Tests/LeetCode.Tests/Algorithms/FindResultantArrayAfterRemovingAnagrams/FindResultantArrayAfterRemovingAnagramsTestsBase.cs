@@ -27,6 +27,6 @@ public abstract class FindResultantArrayAfterRemovingAnagramsTestsBase<T> where 
         var actualResult = solution.RemoveAnagrams(words).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

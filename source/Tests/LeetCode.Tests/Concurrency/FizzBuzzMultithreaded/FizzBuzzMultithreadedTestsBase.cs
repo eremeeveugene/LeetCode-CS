@@ -38,7 +38,7 @@ public abstract class FizzBuzzMultithreadedTestsBase
         await Task.WhenAll(tasks);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IFizzBuzzMultithreaded GetSolution(int n);

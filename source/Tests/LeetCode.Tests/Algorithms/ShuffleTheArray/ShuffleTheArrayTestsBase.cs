@@ -28,6 +28,6 @@ public abstract class ShuffleTheArrayTestsBase<T> where T : IShuffleTheArray, ne
         var actualResult = solution.Shuffle(nums, n);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

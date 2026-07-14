@@ -39,7 +39,7 @@ public abstract class RandomPickIndexTestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IRandomPickIndex GetSolution(int[] nums);

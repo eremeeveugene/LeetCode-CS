@@ -27,6 +27,6 @@ public abstract class BuildArrayFromPermutationTestsBase<T> where T : IBuildArra
         var actualResult = solution.BuildArray(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

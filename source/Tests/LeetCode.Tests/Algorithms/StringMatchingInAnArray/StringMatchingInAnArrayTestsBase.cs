@@ -28,6 +28,6 @@ public abstract class StringMatchingInAnArrayTestsBase<T> where T : IStringMatch
         var actualResult = solution.StringMatching(words).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

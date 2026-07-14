@@ -27,6 +27,6 @@ public abstract class ConvertTheTemperatureTestsBase<T> where T : IConvertTheTem
         var actualResult = solution.ConvertTemperature(celsius);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

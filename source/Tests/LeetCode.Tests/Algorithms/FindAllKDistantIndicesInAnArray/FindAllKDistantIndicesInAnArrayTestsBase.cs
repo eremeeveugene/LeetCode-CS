@@ -27,6 +27,6 @@ public abstract class FindAllKDistantIndicesInAnArrayTestsBase<T> where T : IFin
         var actualResult = solution.FindKDistantIndices(nums, key, k).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

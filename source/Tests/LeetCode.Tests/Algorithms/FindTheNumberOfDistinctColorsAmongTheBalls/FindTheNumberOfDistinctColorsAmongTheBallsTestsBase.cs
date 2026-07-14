@@ -26,7 +26,7 @@ public abstract class FindTheNumberOfDistinctColorsAmongTheBallsTestsBase<T> whe
         var actualResult = solution.QueryResults(limit, queries);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

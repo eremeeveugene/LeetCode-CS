@@ -27,7 +27,7 @@ public abstract class MaximizeTheNumberOfTargetNodesAfterConnectingTrees1TestsBa
         var actualResult = solution.MaxTargetNodes(edges1, edges2, k);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

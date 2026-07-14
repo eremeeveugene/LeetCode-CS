@@ -26,7 +26,7 @@ public abstract class ShortestDistanceAfterRoadAdditionQueries1TestsBase<T> wher
         var actualResult = solution.ShortestDistanceAfterQueries(n, queries);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

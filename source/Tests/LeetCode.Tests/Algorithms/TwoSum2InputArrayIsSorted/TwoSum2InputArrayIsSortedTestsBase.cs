@@ -45,6 +45,6 @@ public abstract class TwoSum2InputArrayIsSortedTestsBase<T> where T : ITwoSum2In
         var actualResult = solution.TwoSum(numbers, target);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

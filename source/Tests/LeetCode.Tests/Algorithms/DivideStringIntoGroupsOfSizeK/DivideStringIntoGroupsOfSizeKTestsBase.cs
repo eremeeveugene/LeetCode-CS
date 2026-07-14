@@ -27,6 +27,6 @@ public abstract class DivideStringIntoGroupsOfSizeKTestsBase<T> where T : IDivid
         var actualResult = solution.DivideString(s, k, fill);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

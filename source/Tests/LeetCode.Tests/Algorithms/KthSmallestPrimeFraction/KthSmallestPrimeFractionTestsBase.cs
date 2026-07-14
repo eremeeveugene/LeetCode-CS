@@ -48,6 +48,6 @@ public abstract class KthSmallestPrimeFractionTestsBase<T> where T : IKthSmalles
         var actualResult = solution.KthSmallestPrimeFraction(arr, k);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

@@ -26,7 +26,7 @@ public abstract class SumOfDistancesInTreeTestsBase<T> where T : ISumOfDistances
         var actualResult = solution.SumOfDistancesInTree(n, edges);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

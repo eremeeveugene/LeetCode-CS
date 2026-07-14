@@ -45,6 +45,6 @@ public abstract class ClosestPrimeNumbersInRangeTestsBase<T> where T : IClosestP
         var actualResult = solution.ClosestPrimes(left, right);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

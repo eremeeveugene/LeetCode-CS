@@ -45,6 +45,6 @@ public abstract class AddToArrayFormOfIntegerTestsBase<T> where T : IAddToArrayF
         var actualResult = solution.AddToArrayForm(num, k).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

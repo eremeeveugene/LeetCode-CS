@@ -26,7 +26,7 @@ public abstract class DiagonalTraverseTestsBase<T> where T : IDiagonalTraverse, 
         var actualResult = solution.FindDiagonalOrder(mat);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

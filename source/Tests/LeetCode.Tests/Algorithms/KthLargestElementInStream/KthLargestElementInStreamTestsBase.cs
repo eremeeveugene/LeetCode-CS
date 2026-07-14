@@ -39,7 +39,7 @@ public abstract class KthLargestElementInStreamTestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IKthLargestElementInStream GetSolution(int k, int[] nums);

@@ -37,6 +37,6 @@ public abstract class ClosestEqualElementQueriesTestsBase<T> where T : IClosestE
         var actualResult = solution.SolveQueries(nums, queries).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

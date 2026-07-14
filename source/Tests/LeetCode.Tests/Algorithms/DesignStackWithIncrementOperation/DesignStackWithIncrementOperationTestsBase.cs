@@ -39,7 +39,7 @@ public abstract class DesignStackWithIncrementOperationTestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IDesignStackWithIncrementOperation GetSolution(int maxSize);

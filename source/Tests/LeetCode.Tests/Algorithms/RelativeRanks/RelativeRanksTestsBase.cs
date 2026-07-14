@@ -27,6 +27,6 @@ public abstract class RelativeRanksTestsBase<T> where T : IRelativeRanks, new()
         var actualResult = solution.FindRelativeRanks(score);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

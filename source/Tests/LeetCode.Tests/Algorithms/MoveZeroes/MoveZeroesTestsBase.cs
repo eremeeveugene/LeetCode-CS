@@ -28,6 +28,6 @@ public abstract class MoveZeroesTestsBase<T> where T : IMoveZeroes, new()
         solution.MoveZeroes(nums);
 
         // Assert
-        CollectionAssert.AreEqual(nums, expectedResult);
+        Assert.AreSequenceEqual(nums, expectedResult);
     }
 }

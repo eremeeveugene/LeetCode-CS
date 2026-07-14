@@ -28,6 +28,6 @@ public abstract class FizzBuzzTestsBase<T> where T : IFizzBuzz, new()
         var actualResult = solution.FizzBuzz(n).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

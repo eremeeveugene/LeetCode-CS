@@ -30,6 +30,6 @@ public abstract class LongestUnequalAdjacentGroupsSubsequence1TestsBase<T> where
         var actualResult = solution.GetLongestSubsequence(words, groups).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

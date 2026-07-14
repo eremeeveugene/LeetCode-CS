@@ -39,7 +39,7 @@ public abstract class DesignNeighborSumServiceTestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IDesignNeighborSumService GetSolution(int[][] grid);

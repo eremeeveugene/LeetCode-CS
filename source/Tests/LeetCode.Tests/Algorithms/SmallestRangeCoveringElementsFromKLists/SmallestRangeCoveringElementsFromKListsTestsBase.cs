@@ -28,7 +28,7 @@ public abstract class SmallestRangeCoveringElementsFromKListsTestsBase<T> where 
         var actualResult = solution.SmallestRange(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

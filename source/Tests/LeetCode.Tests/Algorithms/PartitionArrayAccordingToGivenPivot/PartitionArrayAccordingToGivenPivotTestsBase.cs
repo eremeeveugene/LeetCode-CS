@@ -27,6 +27,6 @@ public abstract class PartitionArrayAccordingToGivenPivotTestsBase<T> where T : 
         var actualResult = solution.PivotArray(nums, pivot);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

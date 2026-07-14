@@ -27,6 +27,6 @@ public abstract class TransformArrayByParityTestsBase<T> where T : ITransformArr
         var actualResult = solution.TransformArray(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

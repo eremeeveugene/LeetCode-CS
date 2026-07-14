@@ -39,7 +39,7 @@ public abstract class DesignFoodRatingSystemTestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IDesignFoodRatingSystem GetSolution(string[] foods, string[] cuisines, int[] ratings);

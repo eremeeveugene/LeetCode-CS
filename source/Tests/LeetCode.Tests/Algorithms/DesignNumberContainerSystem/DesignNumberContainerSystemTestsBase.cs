@@ -40,7 +40,7 @@ public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignN
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<IScenario<IDesignNumberContainerSystem>[]> GetScenarios()

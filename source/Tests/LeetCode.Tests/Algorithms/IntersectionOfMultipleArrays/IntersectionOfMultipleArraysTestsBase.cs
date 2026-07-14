@@ -26,7 +26,7 @@ public abstract class IntersectionOfMultipleArraysTestsBase<T> where T : IInters
         var actualResult = solution.Intersection(nums).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

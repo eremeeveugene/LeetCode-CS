@@ -49,6 +49,6 @@ public abstract class FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints
         var actualResult = solution.NodesBetweenCriticalPoints(head);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

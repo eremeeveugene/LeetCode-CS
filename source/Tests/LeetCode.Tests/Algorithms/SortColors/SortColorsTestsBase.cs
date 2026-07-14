@@ -27,6 +27,6 @@ public abstract class SortColorsTestsBase<T> where T : ISortColors, new()
         solution.SortColors(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, nums);
+        Assert.AreSequenceEqual(expectedResult, nums);
     }
 }

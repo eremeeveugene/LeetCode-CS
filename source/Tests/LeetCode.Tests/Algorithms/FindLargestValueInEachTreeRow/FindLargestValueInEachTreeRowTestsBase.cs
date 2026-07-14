@@ -29,7 +29,7 @@ public abstract class FindLargestValueInEachTreeRowTestsBase<T> where T : IFindL
         var actualResult = solution.LargestValues(root).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

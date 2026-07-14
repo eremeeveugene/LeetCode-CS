@@ -30,7 +30,7 @@ public abstract class BinaryTreeInorderTraversalTestsBase<T> where T : IBinaryTr
 
         // Assert
         Assert.IsNotNull(actualResult);
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

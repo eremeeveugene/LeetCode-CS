@@ -28,6 +28,6 @@ public abstract class MaximizeSumOfAtMostKDistinctElementsTestsBase<T> where T :
         var actualResult = solution.MaxKDistinct(nums, k);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

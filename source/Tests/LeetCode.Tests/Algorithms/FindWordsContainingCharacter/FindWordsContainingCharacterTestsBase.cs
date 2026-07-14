@@ -28,6 +28,6 @@ public abstract class FindWordsContainingCharacterTestsBase<T> where T : IFindWo
         var actualResult = solution.FindWordsContaining(words, x).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

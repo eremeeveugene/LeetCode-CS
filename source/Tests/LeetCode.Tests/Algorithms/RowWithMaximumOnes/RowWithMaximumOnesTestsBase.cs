@@ -26,7 +26,7 @@ public abstract class RowWithMaximumOnesTestsBase<T> where T : IRowWithMaximumOn
         var actualResult = solution.RowAndMaximumOnes(mat);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

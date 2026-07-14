@@ -27,6 +27,6 @@ public abstract class NextGreaterElement1TestsBase<T> where T : INextGreaterElem
         var actualResult = solution.NextGreaterElement(nums1, nums2);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

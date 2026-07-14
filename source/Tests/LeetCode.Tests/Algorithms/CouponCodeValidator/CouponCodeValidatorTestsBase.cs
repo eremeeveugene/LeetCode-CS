@@ -39,6 +39,6 @@ public abstract class CouponCodeValidatorTestsBase<T> where T : ICouponCodeValid
         var actualResult = solution.ValidateCoupons(code, businessLine, isActive).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

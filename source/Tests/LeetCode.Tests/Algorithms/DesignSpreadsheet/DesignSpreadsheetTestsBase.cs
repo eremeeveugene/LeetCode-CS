@@ -39,7 +39,7 @@ public abstract class DesignSpreadsheetTestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IDesignSpreadsheet GetSolution(int rows);

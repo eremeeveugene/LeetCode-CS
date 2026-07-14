@@ -26,7 +26,7 @@ public abstract class NaryTreePreorderTraversalTestsBase<T> where T : INaryTreeP
 
         var actualResult = solution.Preorder(root).ToArray();
 
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

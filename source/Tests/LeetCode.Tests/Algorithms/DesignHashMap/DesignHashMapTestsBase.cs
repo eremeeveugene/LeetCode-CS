@@ -54,7 +54,7 @@ public abstract class DesignHashMapTestsBase<T> where T : IDesignHashMap, new()
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()
