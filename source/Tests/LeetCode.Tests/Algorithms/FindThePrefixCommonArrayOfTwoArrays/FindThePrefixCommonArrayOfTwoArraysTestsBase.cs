@@ -45,6 +45,6 @@ public abstract class FindThePrefixCommonArrayOfTwoArraysTestsBase<T> where T : 
         var actualResult = solution.FindThePrefixCommonArray(a, b);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

@@ -27,6 +27,6 @@ public abstract class SortThePeopleTestsBase<T> where T : ISortThePeople, new()
         var actualResult = solution.SortPeople(names, heights);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

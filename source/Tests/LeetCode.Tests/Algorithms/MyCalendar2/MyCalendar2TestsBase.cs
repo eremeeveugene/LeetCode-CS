@@ -31,6 +31,6 @@ public abstract class MyCalendar2TestsBase<T> where T : IMyCalendar2, new()
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

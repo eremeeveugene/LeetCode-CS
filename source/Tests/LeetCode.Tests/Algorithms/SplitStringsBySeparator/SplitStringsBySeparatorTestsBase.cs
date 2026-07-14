@@ -31,6 +31,6 @@ public abstract class SplitStringsBySeparatorTestsBase<T> where T : ISplitString
         var actualResult = solution.SplitWordsBySeparator(words, separator).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

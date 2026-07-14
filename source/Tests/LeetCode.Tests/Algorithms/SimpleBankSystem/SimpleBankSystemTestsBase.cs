@@ -39,7 +39,7 @@ public abstract class SimpleBankSystemTestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract ISimpleBankSystem GetSolution(long[] balance);

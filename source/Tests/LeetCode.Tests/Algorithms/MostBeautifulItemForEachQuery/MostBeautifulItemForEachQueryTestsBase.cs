@@ -26,7 +26,7 @@ public abstract class MostBeautifulItemForEachQueryTestsBase<T> where T : IMostB
         var actualResult = solution.MaximumBeauty(items, queries);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

@@ -27,6 +27,6 @@ public abstract class CountingBitsTestsBase<T> where T : ICountingBits, new()
         var actualResult = solution.CountBits(n);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

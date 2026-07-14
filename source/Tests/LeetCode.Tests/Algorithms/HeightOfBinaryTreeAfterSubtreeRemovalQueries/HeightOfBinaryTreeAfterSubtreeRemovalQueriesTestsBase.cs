@@ -29,7 +29,7 @@ public abstract class HeightOfBinaryTreeAfterSubtreeRemovalQueriesTestsBase<T> w
         var actualResult = solution.TreeQueries(root, queries);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

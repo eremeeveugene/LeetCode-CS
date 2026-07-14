@@ -85,6 +85,6 @@ public abstract class LexicographicalNumbersTestsBase<T> where T : ILexicographi
         var actualResult = solution.LexicalOrder(n).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

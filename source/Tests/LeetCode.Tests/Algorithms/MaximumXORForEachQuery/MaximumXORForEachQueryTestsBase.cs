@@ -28,6 +28,6 @@ public abstract class MaximumXORForEachQueryTestsBase<T> where T : IMaximumXORFo
         var actualResult = solution.GetMaximumXor(nums, maximumBit);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

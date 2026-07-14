@@ -27,6 +27,6 @@ public abstract class SetMismatchTestsBase<T> where T : ISetMismatch, new()
         var actualResult = solution.FindErrorNums(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

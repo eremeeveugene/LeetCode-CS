@@ -34,6 +34,6 @@ public abstract class PlusOneTestsBase<T> where T : IPlusOne, new()
         var actualResult = solution.PlusOne(digits);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

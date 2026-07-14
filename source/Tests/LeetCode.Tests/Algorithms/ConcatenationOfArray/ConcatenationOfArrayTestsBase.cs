@@ -27,6 +27,6 @@ public abstract class ConcatenationOfArrayTestsBase<T> where T : IConcatenationO
         var actualResult = solution.GetConcatenation(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

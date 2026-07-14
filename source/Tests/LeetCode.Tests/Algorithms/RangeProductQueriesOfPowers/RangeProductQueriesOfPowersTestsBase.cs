@@ -26,7 +26,7 @@ public abstract class RangeProductQueriesOfPowersTestsBase<T> where T : IRangePr
         var actualResult = solution.ProductQueries(n, queries);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

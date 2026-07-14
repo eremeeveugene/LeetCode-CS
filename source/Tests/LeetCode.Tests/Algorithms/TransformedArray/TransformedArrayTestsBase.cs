@@ -28,6 +28,6 @@ public abstract class TransformedArrayTestsBase<T> where T : ITransformedArray, 
         var actualResult = solution.ConstructTransformedArray(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

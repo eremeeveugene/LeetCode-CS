@@ -45,6 +45,6 @@ public abstract class SumOfPrefixScoresOfStringsTestsBase<T> where T : ISumOfPre
         var actualResult = solution.SumPrefixScores(words);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

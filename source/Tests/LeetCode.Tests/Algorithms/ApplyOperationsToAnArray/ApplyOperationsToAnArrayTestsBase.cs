@@ -27,6 +27,6 @@ public abstract class ApplyOperationsToAnArrayTestsBase<T> where T : IApplyOpera
         var actualResult = solution.ApplyOperations(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

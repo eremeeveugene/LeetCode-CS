@@ -26,7 +26,7 @@ public abstract class CountVowelStringsInRangesTestsBase<T> where T : ICountVowe
         var actualResult = solution.VowelStrings(words, queries);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

@@ -94,6 +94,6 @@ public abstract class DesignFrontMiddleBackQueueTestsBase<T> where T : IDesignFr
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

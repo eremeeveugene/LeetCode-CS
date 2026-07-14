@@ -39,7 +39,7 @@ public abstract class RangeSumQueryMutableTestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IRangeSumQueryMutable GetSolution(int[] nums);

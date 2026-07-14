@@ -30,6 +30,6 @@ public abstract class RelativeSortArrayTestsBase<T> where T : IRelativeSortArray
         var actualResult = solution.RelativeSortArray(arr1, arr2);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

@@ -44,6 +44,6 @@ public abstract class RemoveDuplicatesFromSortedArray2TestsBase<T> where T : IRe
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
-        CollectionAssert.AreEqual(expectedNums, nums.Take(expectedResult).ToArray());
+        Assert.AreSequenceEqual(expectedNums, nums.Take(expectedResult).ToArray());
     }
 }

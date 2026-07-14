@@ -40,7 +40,7 @@ public abstract class ProductOfTheLastKNumbersTestsBase<T> where T : IProductOfT
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<IScenario<IProductOfTheLastKNumbers>[]> GetScenarios()

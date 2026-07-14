@@ -52,6 +52,6 @@ public abstract class ImplementTrieTestsBase<T> where T : IImplementTrie, new()
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

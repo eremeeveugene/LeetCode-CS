@@ -27,6 +27,6 @@ public abstract class MinimumNumberOfOperationsToMoveAllBallsToEachBoxTestsBase<
         var actualResult = solution.MinOperations(s);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

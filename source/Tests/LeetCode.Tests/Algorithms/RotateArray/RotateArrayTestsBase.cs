@@ -32,6 +32,6 @@ public abstract class RotateArrayTestsBase<T> where T : IRotateArray, new()
         var actualResult = nums;
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

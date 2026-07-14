@@ -30,6 +30,6 @@ public abstract class VowelSpellcheckerTestsBase<T> where T : IVowelSpellchecker
         var actualResult = solution.Spellchecker(wordlist, queries);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

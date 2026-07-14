@@ -28,6 +28,6 @@ public abstract class FindingThreeDigitEvenNumbersTestsBase<T> where T : IFindin
         var actualResult = solution.FindEvenNumbers(digits);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

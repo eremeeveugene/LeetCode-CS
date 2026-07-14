@@ -26,7 +26,7 @@ public abstract class SpecialArray2TestsBase<T> where T : ISpecialArray2, new()
         var actualResult = solution.IsArraySpecial(nums, queries);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

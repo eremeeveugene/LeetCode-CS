@@ -39,7 +39,7 @@ public abstract class DesignAnOrderedStreamTestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IDesignAnOrderedStream GetSolution(int size);

@@ -39,7 +39,7 @@ public abstract class DesignParkingSystemTestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IDesignParkingSystem GetSolution(int bigCapacity, int mediumCapacity, int smallCapacity);

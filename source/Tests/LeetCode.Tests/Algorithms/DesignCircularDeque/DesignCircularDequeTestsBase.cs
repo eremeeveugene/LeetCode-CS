@@ -39,7 +39,7 @@ public abstract class DesignCircularDequeTestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IDesignCircularDeque GetSolution(int k);

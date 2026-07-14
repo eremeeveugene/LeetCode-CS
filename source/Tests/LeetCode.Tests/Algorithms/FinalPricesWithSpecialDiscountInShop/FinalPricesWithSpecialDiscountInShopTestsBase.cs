@@ -28,6 +28,6 @@ public abstract class FinalPricesWithSpecialDiscountInShopTestsBase<T> where T :
         var actualResult = solution.FinalPrices(prices);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

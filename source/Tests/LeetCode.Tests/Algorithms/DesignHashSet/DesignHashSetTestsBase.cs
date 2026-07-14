@@ -54,7 +54,7 @@ public abstract class DesignHashSetTestsBase<T> where T : IDesignHashSet, new()
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

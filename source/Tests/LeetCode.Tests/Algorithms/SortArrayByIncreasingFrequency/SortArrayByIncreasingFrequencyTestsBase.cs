@@ -28,6 +28,6 @@ public abstract class SortArrayByIncreasingFrequencyTestsBase<T> where T : ISort
         var actualResult = solution.FrequencySort(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

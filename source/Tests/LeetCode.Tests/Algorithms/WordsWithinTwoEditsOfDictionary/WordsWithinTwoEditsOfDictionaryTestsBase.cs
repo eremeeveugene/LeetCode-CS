@@ -46,6 +46,6 @@ public abstract class WordsWithinTwoEditsOfDictionaryTestsBase<T> where T : IWor
         var actualResult = solution.TwoEditWords(queries, words).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

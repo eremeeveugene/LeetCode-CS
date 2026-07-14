@@ -29,6 +29,6 @@ public abstract class MergeSortedArrayTestsBase<T> where T : IMergeSortedArray, 
         solution.Merge(nums1, m, nums2, n);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, nums1);
+        Assert.AreSequenceEqual(expectedResult, nums1);
     }
 }

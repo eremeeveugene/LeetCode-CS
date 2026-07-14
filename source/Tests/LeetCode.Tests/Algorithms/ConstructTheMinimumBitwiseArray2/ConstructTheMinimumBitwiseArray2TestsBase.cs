@@ -27,6 +27,6 @@ public abstract class ConstructTheMinimumBitwiseArray2TestsBase<T> where T : ICo
         var actualResult = solution.MinBitwiseArray(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

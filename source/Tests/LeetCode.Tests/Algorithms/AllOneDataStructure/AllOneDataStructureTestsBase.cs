@@ -39,7 +39,7 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<IScenario<IAllOneDataStructure>[]> GetScenarios()

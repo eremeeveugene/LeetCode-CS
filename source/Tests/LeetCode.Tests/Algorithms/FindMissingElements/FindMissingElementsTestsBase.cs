@@ -28,6 +28,6 @@ public abstract class FindMissingElementsTestsBase<T> where T : IFindMissingElem
         var actualResult = solution.FindMissingElements(nums).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

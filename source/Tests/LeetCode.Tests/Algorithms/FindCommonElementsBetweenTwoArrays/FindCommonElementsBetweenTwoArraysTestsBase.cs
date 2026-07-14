@@ -28,6 +28,6 @@ public abstract class FindCommonElementsBetweenTwoArraysTestsBase<T> where T : I
         var actualResult = solution.FindIntersectionValues(nums1, nums2);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

@@ -26,7 +26,7 @@ public abstract class FindEventualSafeStatesTestsBase<T> where T : IFindEventual
         var actualResult = solution.EventualSafeNodes(graph).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

@@ -28,6 +28,6 @@ public abstract class RankTransformOfAnArrayTestsBase<T> where T : IRankTransfor
         var actualResult = solution.ArrayRankTransform(arr);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

@@ -11,7 +11,6 @@
 
 using LeetCode.Algorithms.WalkingRobotSimulation2;
 using LeetCode.Tests.Base.Scenarios;
-using System.Collections;
 
 namespace LeetCode.Tests.Algorithms.WalkingRobotSimulation2;
 
@@ -40,7 +39,7 @@ public abstract class WalkingRobotSimulation2TestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult, OperationResultComparer.Instance);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IWalkingRobotSimulation2 CreateSolution(int width, int height);
@@ -304,16 +303,6 @@ public abstract class WalkingRobotSimulation2TestsBase
 
         public IOperation<IWalkingRobotSimulation2>[] Operations { get; }
         public IOperationResult[] OperationResults { get; }
-    }
-
-    private sealed class OperationResultComparer : IComparer
-    {
-        public static readonly OperationResultComparer Instance = new();
-
-        public int Compare(object? x, object? y)
-        {
-            return Equals(x, y) ? 0 : -1;
-        }
     }
 
     private sealed class StepOperation : IOperation<IWalkingRobotSimulation2>

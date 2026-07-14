@@ -45,6 +45,6 @@ public abstract class ConcatenateArrayWithReverseTestsBase<T> where T : IConcate
         var actualResult = solution.ConcatWithReverse(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

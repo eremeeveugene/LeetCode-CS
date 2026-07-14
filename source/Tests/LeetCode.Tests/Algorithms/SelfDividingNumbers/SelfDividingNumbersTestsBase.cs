@@ -27,6 +27,6 @@ public abstract class SelfDividingNumbersTestsBase<T> where T : ISelfDividingNum
         var actualResult = solution.SelfDividingNumbers(left, right).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

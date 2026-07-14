@@ -26,7 +26,7 @@ public abstract class FindTheDegreeOfEachVertexTestsBase<T> where T : IFindTheDe
         var actualResult = solution.FindDegrees(matrix);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

@@ -27,6 +27,6 @@ public abstract class ProductOfArrayExceptSelfTestsBase<T> where T : IProductOfA
         var actualResult = solution.ProductExceptSelf(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

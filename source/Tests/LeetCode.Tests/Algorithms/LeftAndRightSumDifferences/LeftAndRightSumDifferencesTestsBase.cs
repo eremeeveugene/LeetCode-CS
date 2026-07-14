@@ -48,6 +48,6 @@ public abstract class LeftAndRightSumDifferencesTestsBase<T> where T : ILeftAndR
         var actualResult = solution.LeftRightDifference(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

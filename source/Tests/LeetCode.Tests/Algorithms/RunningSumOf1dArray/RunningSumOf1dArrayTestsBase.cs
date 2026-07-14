@@ -42,6 +42,6 @@ public abstract class RunningSumOf1dArrayTestsBase<T> where T : IRunningSumOf1dA
         var actualResult = solution.RunningSum(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

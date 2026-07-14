@@ -45,6 +45,6 @@ public abstract class FindTargetIndicesAfterSortingArrayTestsBase<T> where T : I
         var actualResult = solution.TargetIndices(nums, target).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

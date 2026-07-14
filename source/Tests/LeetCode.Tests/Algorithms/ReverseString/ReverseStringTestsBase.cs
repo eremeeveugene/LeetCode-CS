@@ -27,6 +27,6 @@ public abstract class ReverseStringTestsBase<T> where T : IReverseString, new()
         solution.ReverseString(s);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, s);
+        Assert.AreSequenceEqual(expectedResult, s);
     }
 }

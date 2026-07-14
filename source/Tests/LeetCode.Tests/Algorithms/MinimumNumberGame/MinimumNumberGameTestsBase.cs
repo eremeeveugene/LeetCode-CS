@@ -27,6 +27,6 @@ public abstract class MinimumNumberGameTestsBase<T> where T : IMinimumNumberGame
         var actualResult = solution.NumberGame(cost);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

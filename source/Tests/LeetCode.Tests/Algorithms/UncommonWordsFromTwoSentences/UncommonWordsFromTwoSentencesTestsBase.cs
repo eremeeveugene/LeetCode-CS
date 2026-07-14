@@ -29,6 +29,6 @@ public abstract class UncommonWordsFromTwoSentencesTestsBase<T> where T : IUncom
         var actualResult = solution.UncommonFromSentences(s1, s2);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

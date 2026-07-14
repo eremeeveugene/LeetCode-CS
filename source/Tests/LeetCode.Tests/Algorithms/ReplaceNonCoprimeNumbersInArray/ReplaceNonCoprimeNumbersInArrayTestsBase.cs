@@ -27,6 +27,6 @@ public abstract class ReplaceNonCoprimeNumbersInArrayTestsBase<T> where T : IRep
         var actualResult = solution.ReplaceNonCoprimes(nums).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

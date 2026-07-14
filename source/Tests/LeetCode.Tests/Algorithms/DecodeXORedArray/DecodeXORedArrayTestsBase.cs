@@ -27,6 +27,6 @@ public abstract class DecodeXORedArrayTestsBase<T> where T : IDecodeXORedArray, 
         var actualResult = solution.Decode(encoded, first);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

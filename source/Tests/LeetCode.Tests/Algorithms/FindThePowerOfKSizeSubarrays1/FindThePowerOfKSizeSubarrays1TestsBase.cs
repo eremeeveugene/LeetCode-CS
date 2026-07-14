@@ -42,6 +42,6 @@ public abstract class FindThePowerOfKSizeSubarrays1TestsBase<T> where T : IFindT
         var actualResult = solution.ResultsArray(nums, k);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

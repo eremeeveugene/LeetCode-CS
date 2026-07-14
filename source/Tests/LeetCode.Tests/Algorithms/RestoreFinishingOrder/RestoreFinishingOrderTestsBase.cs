@@ -27,6 +27,6 @@ public abstract class RestoreFinishingOrderTestsBase<T> where T : IRestoreFinish
         var actualResult = solution.RecoverOrder(orders, friends);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

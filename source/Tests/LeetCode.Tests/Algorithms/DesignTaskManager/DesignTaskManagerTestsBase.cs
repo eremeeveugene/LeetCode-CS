@@ -39,7 +39,7 @@ public abstract class DesignTaskManagerTestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IDesignTaskManager GetSolution(IList<IList<int>> tasks);

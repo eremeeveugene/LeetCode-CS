@@ -40,7 +40,7 @@ public abstract class FindElementsInContaminatedBinaryTreeTestsBase
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     protected abstract IFindElementsInContaminatedBinaryTree GetSolution(TreeNode root);

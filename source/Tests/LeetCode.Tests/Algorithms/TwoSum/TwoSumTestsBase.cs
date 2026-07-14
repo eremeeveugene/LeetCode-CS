@@ -41,6 +41,6 @@ public abstract class TwoSumTestsBase<T> where T : ITwoSum, new()
         var actualResult = solution.TwoSum(nums, target);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

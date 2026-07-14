@@ -31,6 +31,6 @@ public abstract class RevealCardsInIncreasingOrderTestsBase<T> where T : IReveal
         var actualResult = solution.DeckRevealedIncreasing(deck);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

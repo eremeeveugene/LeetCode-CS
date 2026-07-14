@@ -26,7 +26,7 @@ public abstract class ToggleLightBulbsTestsBase<T> where T : IToggleLightBulbs, 
         var actualResult = solution.ToggleLightBulbs(bulbs).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

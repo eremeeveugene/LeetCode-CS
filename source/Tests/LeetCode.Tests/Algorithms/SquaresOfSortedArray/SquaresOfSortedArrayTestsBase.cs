@@ -27,6 +27,6 @@ public abstract class SquaresOfSortedArrayTestsBase<T> where T : ISquaresOfSorte
         var actualResult = solution.SortedSquares(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

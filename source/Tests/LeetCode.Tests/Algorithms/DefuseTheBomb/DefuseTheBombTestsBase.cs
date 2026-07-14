@@ -28,6 +28,6 @@ public abstract class DefuseTheBombTestsBase<T> where T : IDefuseTheBomb, new()
         var actualResult = solution.Decrypt(code, k);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

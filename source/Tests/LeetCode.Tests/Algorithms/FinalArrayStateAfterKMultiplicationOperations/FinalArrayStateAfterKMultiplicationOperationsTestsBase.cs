@@ -27,6 +27,6 @@ public abstract class FinalArrayStateAfterKMultiplicationOperationsTestsBase<T> 
         var actualResult = solution.GetFinalState(nums, k, multiplier);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

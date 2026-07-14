@@ -47,6 +47,6 @@ public abstract class IntervalsBetweenIdenticalElementsTestsBase<T> where T : II
         var actualResult = solution.GetDistances(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

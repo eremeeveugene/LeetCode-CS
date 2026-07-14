@@ -36,6 +36,6 @@ public abstract class SumOfDistancesTestsBase<T> where T : ISumOfDistances, new(
         var actualResult = solution.Distance(nums);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

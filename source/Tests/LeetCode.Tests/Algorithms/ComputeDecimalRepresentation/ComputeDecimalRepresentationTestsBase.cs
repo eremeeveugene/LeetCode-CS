@@ -28,6 +28,6 @@ public abstract class ComputeDecimalRepresentationTestsBase<T> where T : IComput
         var actualResult = solution.DecimalRepresentation(n);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

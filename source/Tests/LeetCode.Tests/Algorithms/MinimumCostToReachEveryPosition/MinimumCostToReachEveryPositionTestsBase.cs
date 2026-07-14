@@ -27,6 +27,6 @@ public abstract class MinimumCostToReachEveryPositionTestsBase<T> where T : IMin
         var actualResult = solution.MinCosts(cost);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 }

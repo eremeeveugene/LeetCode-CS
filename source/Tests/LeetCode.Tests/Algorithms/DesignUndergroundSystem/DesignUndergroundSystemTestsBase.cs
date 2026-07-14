@@ -39,7 +39,7 @@ public abstract class DesignUndergroundSystemTestsBase<T> where T : IDesignUnder
         }
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
     private static IEnumerable<IScenario<IDesignUndergroundSystem>[]> GetScenarios()
