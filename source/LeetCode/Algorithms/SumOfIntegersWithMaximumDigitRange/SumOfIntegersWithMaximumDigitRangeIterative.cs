@@ -16,7 +16,7 @@ public sealed class SumOfIntegersWithMaximumDigitRangeIterative : ISumOfIntegers
 {
     /// <inheritdoc />
     /// <remarks>
-    ///     Time complexity - O(n * log n)
+    ///     Time complexity - O(n * log m)
     ///     Space complexity - O(1)
     /// </remarks>
     public int MaxDigitRange(int[] nums)
