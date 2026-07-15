@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/14/2026 - 5:00:33 PM
-  Coverage date: 7/14/2026 - 5:00:01 PM - 7/14/2026 - 5:00:24 PM
+  Generated on: 7/15/2026 - 5:43:14 PM
+  Coverage date: 7/15/2026 - 5:42:42 PM - 7/15/2026 - 5:43:06 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1315
-  Files: 1315
+  Classes: 1316
+  Files: 1316
   Line coverage: 99.5%
-  Covered lines: 29614
+  Covered lines: 29633
   Uncovered lines: 133
-  Coverable lines: 29747
-  Total lines: 72818
-  Branch coverage: 97.4% (10958 of 11247)
-  Covered branches: 10958
-  Total branches: 11247
-  Method coverage: 100% (1929 of 1929)
-  Full method coverage: 96.4% (1861 of 1929)
-  Covered methods: 1929
-  Fully covered methods: 1861
-  Total methods: 1929
+  Coverable lines: 29766
+  Total lines: 72868
+  Branch coverage: 97.4% (10964 of 11253)
+  Covered branches: 10964
+  Total branches: 11253
+  Method coverage: 100% (1930 of 1930)
+  Full method coverage: 96.4% (1862 of 1930)
+  Covered methods: 1930
+  Fully covered methods: 1862
+  Total methods: 1930
 
 LeetCode                                                                                                                                                99.5%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1277,6 +1277,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.UncommonWordsFromTwoSentences.UncommonWordsFromTwoSentencesHashSet                                                                 100%
   LeetCode.Algorithms.UniqueLength3PalindromicSubsequences.UniqueLength3PalindromicSubsequencesBruteForce                                                100%
   LeetCode.Algorithms.UniqueLength3PalindromicSubsequences.UniqueLength3PalindromicSubsequencesCounting                                                  100%
+  LeetCode.Algorithms.UniqueMiddleElement.UniqueMiddleElementCounting                                                                                    100%
   LeetCode.Algorithms.UniqueMorseCodeWords.UniqueMorseCodeWordsHashSet                                                                                   100%
   LeetCode.Algorithms.UniqueNumberOfOccurrences.UniqueNumberOfOccurrencesDictionary                                                                      100%
   LeetCode.Algorithms.UniqueThreeDigitEvenNumbers.UniqueThreeDigitEvenNumbersBruteForce                                                                  100%
