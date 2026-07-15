@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/15/2026 - 5:43:14 PM
-  Coverage date: 7/15/2026 - 5:42:42 PM - 7/15/2026 - 5:43:06 PM
+  Generated on: 7/15/2026 - 6:00:13 PM
+  Coverage date: 7/15/2026 - 5:59:42 PM - 7/15/2026 - 6:00:05 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1316
-  Files: 1316
+  Classes: 1317
+  Files: 1317
   Line coverage: 99.5%
-  Covered lines: 29633
+  Covered lines: 29636
   Uncovered lines: 133
-  Coverable lines: 29766
-  Total lines: 72868
+  Coverable lines: 29769
+  Total lines: 72894
   Branch coverage: 97.4% (10964 of 11253)
   Covered branches: 10964
   Total branches: 11253
-  Method coverage: 100% (1930 of 1930)
-  Full method coverage: 96.4% (1862 of 1930)
-  Covered methods: 1930
-  Fully covered methods: 1862
-  Total methods: 1930
+  Method coverage: 100% (1931 of 1931)
+  Full method coverage: 96.4% (1863 of 1931)
+  Covered methods: 1931
+  Fully covered methods: 1863
+  Total methods: 1931
 
 LeetCode                                                                                                                                                99.5%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -509,6 +509,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FruitIntoBaskets.FruitIntoBasketsFrequencyDictionary                                                                               100%
   LeetCode.Algorithms.FruitsIntoBaskets2.FruitsIntoBaskets2BruteForce                                                                                    100%
   LeetCode.Algorithms.FurthestPointFromOrigin.FurthestPointFromOriginGreedy                                                                              100%
+  LeetCode.Algorithms.GcdOfOddAndEvenSums.GcdOfOddAndEvenSumsMath                                                                                        100%
   LeetCode.Algorithms.GenerateTagForVideoCaption.GenerateTagForVideoCaptionCharArray                                                                    94.7%
   LeetCode.Algorithms.GenerateTagForVideoCaption.GenerateTagForVideoCaptionStringBuilder                                                                80.6%
   LeetCode.Algorithms.GetEqualSubstringsWithinBudget.GetEqualSubstringsWithinBudgetSlidingWindow                                                         100%
