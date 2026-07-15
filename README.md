@@ -917,6 +917,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3945. Digit Frequency Score](https://leetcode.com/problems/digit-frequency-score/description/)
 - [3959. Check Good Integer](https://leetcode.com/problems/check-good-integer/description/)
 - [3963. Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/description/)
+- [3978. Unique Middle Element](https://leetcode.com/problems/unique-middle-element/description/)
 
   </p>
 </details>
