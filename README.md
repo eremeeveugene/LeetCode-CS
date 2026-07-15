@@ -877,6 +877,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3634. Minimum Removals to Balance Array](https://leetcode.com/problems/minimum-removals-to-balance-array/description/)
 - [3637. Trionic Array I](https://leetcode.com/problems/trionic-array-i/description/)
 - [3643. Flip Square Submatrix Vertically](https://leetcode.com/problems/flip-square-submatrix-vertically/description/)
+- [3658. GCD of Odd and Even Sums](https://leetcode.com/problems/gcd-of-odd-and-even-sums/description/)
 - [3668. Restore Finishing Order](https://leetcode.com/problems/restore-finishing-order/description/)
 - [3684. Maximize Sum of At Most K Distinct Elements](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/description/)
 - [3689. Maximum Total Subarray Value I](https://leetcode.com/problems/maximum-total-subarray-value-i/description/)
