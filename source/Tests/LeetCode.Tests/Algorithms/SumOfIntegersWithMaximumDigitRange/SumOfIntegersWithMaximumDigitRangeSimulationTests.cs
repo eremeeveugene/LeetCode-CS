@@ -14,5 +14,5 @@ using LeetCode.Algorithms.SumOfIntegersWithMaximumDigitRange;
 namespace LeetCode.Tests.Algorithms.SumOfIntegersWithMaximumDigitRange;
 
 [TestClass]
-public sealed class SumOfIntegersWithMaximumDigitRangeIterativeTests
-    : SumOfIntegersWithMaximumDigitRangeTestsBase<SumOfIntegersWithMaximumDigitRangeIterative>;
+public sealed class SumOfIntegersWithMaximumDigitRangeSimulationTests
+    : SumOfIntegersWithMaximumDigitRangeTestsBase<SumOfIntegersWithMaximumDigitRangeSimulation>;

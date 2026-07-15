@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SumOfIntegersWithMaximumDigitRange;
 
 /// <inheritdoc />
-public sealed class SumOfIntegersWithMaximumDigitRangeIterative : ISumOfIntegersWithMaximumDigitRange
+public sealed class SumOfIntegersWithMaximumDigitRangeSimulation : ISumOfIntegersWithMaximumDigitRange
 {
     /// <inheritdoc />
     /// <remarks>
