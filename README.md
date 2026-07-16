@@ -905,6 +905,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3856. Trim Trailing Vowels](https://leetcode.com/problems/trim-trailing-vowels/description/)
 - [3861. Minimum Capacity Box](https://leetcode.com/problems/minimum-capacity-box/description/)
 - [3866. First Unique Even Element](https://leetcode.com/problems/first-unique-even-element/description/)
+- [3867. Sum of GCD of Formed Pairs](https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/description/)
 - [3875. Construct Uniform Parity Array I](https://leetcode.com/problems/construct-uniform-parity-array-i/description/)
 - [3876. Construct Uniform Parity Array II](https://leetcode.com/problems/construct-uniform-parity-array-ii/description/)
 - [3884. First Matching Character From Both Ends](https://leetcode.com/problems/first-matching-character-from-both-ends/)
