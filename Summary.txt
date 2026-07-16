@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/15/2026 - 6:00:13 PM
-  Coverage date: 7/15/2026 - 5:59:42 PM - 7/15/2026 - 6:00:05 PM
+  Generated on: 7/16/2026 - 7:27:42 PM
+  Coverage date: 7/16/2026 - 7:27:07 PM - 7/16/2026 - 7:27:33 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1317
-  Files: 1317
+  Classes: 1318
+  Files: 1318
   Line coverage: 99.5%
-  Covered lines: 29636
-  Uncovered lines: 133
-  Coverable lines: 29769
-  Total lines: 72894
-  Branch coverage: 97.4% (10964 of 11253)
-  Covered branches: 10964
-  Total branches: 11253
-  Method coverage: 100% (1931 of 1931)
-  Full method coverage: 96.4% (1863 of 1931)
-  Covered methods: 1931
+  Covered lines: 29659
+  Uncovered lines: 139
+  Coverable lines: 29798
+  Total lines: 72956
+  Branch coverage: 97.3% (10968 of 11261)
+  Covered branches: 10968
+  Total branches: 11261
+  Method coverage: 100% (1932 of 1932)
+  Full method coverage: 96.4% (1863 of 1932)
+  Covered methods: 1932
   Fully covered methods: 1863
-  Total methods: 1931
+  Total methods: 1932
 
 LeetCode                                                                                                                                                99.5%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1210,6 +1210,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SumOfDistancesInTree.SumOfDistancesInTreeDepthFirstSearch                                                                          100%
   LeetCode.Algorithms.SumOfElementsWithFrequencyDivisibleByK.SumOfElementsWithFrequencyDivisibleByKFrequencyArray                                        100%
   LeetCode.Algorithms.SumOfGoodNumbers.SumOfGoodNumbersIterative                                                                                         100%
+  LeetCode.Algorithms.SumOfIntegersWithMaximumDigitRange.SumOfIntegersWithMaximumDigitRangeSimulation                                                    100%
   LeetCode.Algorithms.SumOfLeftLeaves.SumOfLeftLeavesBreadthFirstSearch                                                                                  100%
   LeetCode.Algorithms.SumOfLeftLeaves.SumOfLeftLeavesDepthFirstSearch                                                                                    100%
   LeetCode.Algorithms.SumOfPrefixScoresOfStrings.SumOfPrefixScoresOfStringsTrie                                                                         96.1%
@@ -1327,7 +1328,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
