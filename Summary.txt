@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/16/2026 - 7:27:42 PM
-  Coverage date: 7/16/2026 - 7:27:07 PM - 7/16/2026 - 7:27:33 PM
+  Generated on: 7/16/2026 - 8:27:48 PM
+  Coverage date: 7/16/2026 - 8:27:14 PM - 7/16/2026 - 8:27:41 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1318
-  Files: 1318
+  Classes: 1319
+  Files: 1319
   Line coverage: 99.5%
-  Covered lines: 29659
-  Uncovered lines: 139
-  Coverable lines: 29798
-  Total lines: 72956
-  Branch coverage: 97.3% (10968 of 11261)
-  Covered branches: 10968
-  Total branches: 11261
-  Method coverage: 100% (1932 of 1932)
-  Full method coverage: 96.4% (1863 of 1932)
-  Covered methods: 1932
-  Fully covered methods: 1863
-  Total methods: 1932
+  Covered lines: 29691
+  Uncovered lines: 135
+  Coverable lines: 29826
+  Total lines: 73020
+  Branch coverage: 97.4% (10977 of 11267)
+  Covered branches: 10977
+  Total branches: 11267
+  Method coverage: 100% (1934 of 1934)
+  Full method coverage: 96.4% (1865 of 1934)
+  Covered methods: 1934
+  Fully covered methods: 1865
+  Total methods: 1934
 
 LeetCode                                                                                                                                                99.5%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1209,6 +1209,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SumOfDistances.SumOfDistancesGroupedPrefixSuffix                                                                                   100%
   LeetCode.Algorithms.SumOfDistancesInTree.SumOfDistancesInTreeDepthFirstSearch                                                                          100%
   LeetCode.Algorithms.SumOfElementsWithFrequencyDivisibleByK.SumOfElementsWithFrequencyDivisibleByKFrequencyArray                                        100%
+  LeetCode.Algorithms.SumOfGcdOfFormedPairs.SumOfGcdOfFormedPairsSimulation                                                                              100%
   LeetCode.Algorithms.SumOfGoodNumbers.SumOfGoodNumbersIterative                                                                                         100%
   LeetCode.Algorithms.SumOfIntegersWithMaximumDigitRange.SumOfIntegersWithMaximumDigitRangeSimulation                                                    100%
   LeetCode.Algorithms.SumOfLeftLeaves.SumOfLeftLeavesBreadthFirstSearch                                                                                  100%
@@ -1328,7 +1329,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
