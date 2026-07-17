@@ -425,6 +425,26 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
                     new GetKeyOperation.Result("w")
                 ])
         ];
+
+        yield return
+        [
+            new Scenario<IAllOneDataStructure>(
+                [new DecOperation("ghost"), new GetMaxKeyOperation(), new GetMinKeyOperation()],
+                [VoidOperationResult.Instance, new GetKeyOperation.Result(""), new GetKeyOperation.Result("")])
+        ];
+
+        yield return
+        [
+            new Scenario<IAllOneDataStructure>(
+                [new IncOperation("a"), new DecOperation("a"), new DecOperation("a"), new GetMaxKeyOperation(), new GetMinKeyOperation()],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetKeyOperation.Result(""),
+                    new GetKeyOperation.Result("")
+                ])
+        ];
     }
 
     private sealed class IncOperation : IOperation<IAllOneDataStructure>
