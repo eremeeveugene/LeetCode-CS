@@ -32,6 +32,12 @@ public abstract class TwoSumTestsBase<T> where T : ITwoSum, new()
     [DataRow(new[] { -5, 5, -10, 10 }, 0, new[] { 0, 1 })]
     [DataRow(new[] { 100, 200, 300 }, 500, new[] { 1, 2 })]
     [DataRow(new[] { 4, 4, 4 }, 8, new[] { 0, 1 })]
+    [DataRow(new[] { 3, 3, 4, 3 }, 7, new[] { 0, 2 })]
+    [DataRow(new[] { 5, 5, 5, 8 }, 13, new[] { 0, 3 })]
+    [DataRow(new[] { 1, 2, 3 }, 100, new int[0])]
+    [DataRow(new[] { -1, -2, -3 }, 0, new int[0])]
+    [DataRow(new int[0], 5, new int[0])]
+    [DataRow(new[] { 42 }, 42, new int[0])]
     public void TwoSum_WithIntArrayAndTarget_ReturnsIndicesOfNumbersAddingToTarget(int[] nums, int target, int[] expectedResult)
     {
         // Arrange

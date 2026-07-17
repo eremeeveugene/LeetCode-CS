@@ -35,6 +35,12 @@ public abstract class MergeNodesInBetweenZerosTestsBase<T> where T : IMergeNodes
     [DataRow(new[] { 0, 1, 0, 1, 0, 1, 0 }, new[] { 1, 1, 1 })]
     [DataRow(new[] { 0, 50, 50, 0, 100, 0 }, new[] { 100, 100 })]
     [DataRow(new[] { 0, 2, 4, 6, 0, 1, 3, 5, 0 }, new[] { 12, 9 })]
+    [DataRow(new int[] { }, new int[] { })]
+    [DataRow(new[] { 0, 5, 0 }, new[] { 5 })]
+    [DataRow(new[] { 0, 1, 2, 3, 4, 5, 0 }, new[] { 15 })]
+    [DataRow(new[] { 0, 10, 0, 20, 0, 30, 0 }, new[] { 10, 20, 30 })]
+    [DataRow(new[] { 0, 42, 0 }, new[] { 42 })]
+    [DataRow(new[] { 0, 1, 2, 0, 3, 4, 0, 5, 6, 0 }, new[] { 3, 7, 11 })]
     public void MergeNodes_WithZeroDelimitedValues_ReturnsListWithSegmentSums(int[] headArray, int[] expectedResultArray)
     {
         // Arrange

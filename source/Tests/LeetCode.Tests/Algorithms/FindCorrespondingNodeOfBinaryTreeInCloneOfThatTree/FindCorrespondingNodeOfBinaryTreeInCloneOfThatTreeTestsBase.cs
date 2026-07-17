@@ -99,52 +99,40 @@ public abstract class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeTestsBas
 
         yield return [new int?[] { 8, null, 6, null, 5, null, 4, null, 3, null, 2, null, 1 }, 4, 4];
 
-        // Target is the root
         yield return [new int?[] { 5, 3, 8 }, 5, 5];
 
-        // Target is left child
         yield return [new int?[] { 1, 2, 3 }, 2, 2];
 
-        // Target is right child
         yield return [new int?[] { 1, 2, 3 }, 3, 3];
 
-        // Target is deepest left leaf
         yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7 }, 4, 4];
 
-        // Target is deepest right leaf
         yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7 }, 7, 7];
 
-        // Target is inner node (right subtree root)
         yield return [new int?[] { 10, 5, 20, 3, 7, 15, 25 }, 20, 20];
 
-        // Target is inner node (left subtree root)
         yield return [new int?[] { 10, 5, 20, 3, 7, 15, 25 }, 5, 5];
 
-        // Target is left grandchild
         yield return [new int?[] { 10, 5, 20, 3, 7, 15, 25 }, 3, 3];
 
-        // Target is right grandchild
         yield return [new int?[] { 10, 5, 20, 3, 7, 15, 25 }, 25, 25];
 
-        // Skewed right tree, target at end
         yield return [new int?[] { 1, null, 2, null, 3, null, 4 }, 4, 4];
 
-        // Skewed left tree, target at end
         yield return [new int?[] { 4, 3, null, 2, null, 1 }, 1, 1];
 
-        // Target is middle node in skewed tree
         yield return [new int?[] { 1, null, 2, null, 3, null, 4, null, 5 }, 3, 3];
 
-        // Large tree, target is root
         yield return [new int?[] { 100, 50, 150, 25, 75, 125, 175 }, 100, 100];
 
-        // Large tree, target is leaf 125
         yield return [new int?[] { 100, 50, 150, 25, 75, 125, 175 }, 125, 125];
 
-        // Three-level tree, target is level-2 left
         yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7 }, 6, 6];
 
-        // Four-level tree, target is node 8
         yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8 }, 8, 8];
+
+        yield return [new int?[] { 2, 1, 3 }, 1, 1];
+
+        yield return [new int?[] { 50, 25, 75 }, 75, 75];
     }
 }

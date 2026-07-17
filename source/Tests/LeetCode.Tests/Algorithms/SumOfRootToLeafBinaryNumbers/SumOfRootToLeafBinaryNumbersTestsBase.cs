@@ -37,5 +37,41 @@ public abstract class SumOfRootToLeafBinaryNumbersTestsBase<T> where T : ISumOfR
         yield return [new int?[] { 0 }, 0];
 
         yield return [new int?[] { 1, 0, 1, 0, 1, 0, 1 }, 22];
+
+        yield return [new int?[] { 1 }, 1];
+
+        yield return [new int?[] { 1, null, 0 }, 2];
+
+        yield return [new int?[] { 1, 0 }, 2];
+
+        yield return [new int?[] { 1, 1 }, 3];
+
+        yield return [new int?[] { 1, null, 1 }, 3];
+
+        yield return [new int?[] { 0, 0, 0 }, 0];
+
+        yield return [new int?[] { 1, 1, 1 }, 6];
+
+        yield return [new int?[] { 1, 0, 1 }, 5];
+
+        yield return [new int?[] { 0, 0, 1 }, 1];
+
+        yield return [new int?[] { 0, 1 }, 1];
+
+        yield return [new int?[] { 0, null, 1 }, 1];
+
+        yield return [new int?[] { 1, null, 1, null, 1 }, 7];
+
+        yield return [new int?[] { 1, 1, null, 1 }, 7];
+
+        yield return [new int?[] { 1, 1, 0, 1, 1, 0, 1 }, 23];
+
+        yield return [new int?[] { 1, 1, 1, 0, 1, 0, 1 }, 26];
+
+        yield return [new int?[] { 1, 0, 0, 1, 1, 1, 1 }, 20];
+
+        yield return [new int?[] { 1, 0, 1, null, null, 0, 1 }, 15];
+
+        yield return [new int?[] { 1, 0, 1, 0, 1 }, 12];
     }
 }
