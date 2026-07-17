@@ -30,6 +30,16 @@ public abstract class PalindromeLinkedListTestsBase<T> where T : IPalindromeLink
     [DataRow(new[] { -1, -2, -2, -1 }, true)]
     [DataRow(new[] { 0, 0, 0, 0 }, true)]
     [DataRow(new[] { 1, 2, 1, 2 }, false)]
+    [DataRow(new int[] { }, true)]
+    [DataRow(new[] { 7, 7, 7 }, true)]
+    [DataRow(new[] { 2, 1, 2 }, true)]
+    [DataRow(new[] { 9, 8, 7, 8, 9 }, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 4, 3, 2, 1 }, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 4, 3, 2, 1 }, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6 }, false)]
+    [DataRow(new[] { 5, 4, 3, 2, 1 }, false)]
+    [DataRow(new[] { 1, 2, 2, 1, 1 }, false)]
+    [DataRow(new[] { 3, 3, 3, 4 }, false)]
     public void IsPalindrome_LinkedList_ReturnsTrueIfPalindromeFalseOtherwise(int[] headArray, bool expectedResult)
     {
         // Arrange
