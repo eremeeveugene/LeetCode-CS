@@ -43,7 +43,7 @@ public sealed class NodeTests
     public void Node_ParameterizedConstructorWithNullValue_SetsValToZero()
     {
         // Act
-        var result = new Node(val: null);
+        var result = new Node(null);
 
         // Assert
         Assert.AreEqual(0, result.val);
