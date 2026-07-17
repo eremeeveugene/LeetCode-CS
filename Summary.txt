@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/16/2026 - 8:27:48 PM
-  Coverage date: 7/16/2026 - 8:27:14 PM - 7/16/2026 - 8:27:41 PM
+  Generated on: 7/17/2026 - 12:27:00 PM
+  Coverage date: 7/17/2026 - 12:26:26 PM - 7/17/2026 - 12:26:53 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1319
-  Files: 1319
+  Classes: 1320
+  Files: 1320
   Line coverage: 99.5%
-  Covered lines: 29691
+  Covered lines: 29703
   Uncovered lines: 135
-  Coverable lines: 29826
-  Total lines: 73020
+  Coverable lines: 29838
+  Total lines: 73082
   Branch coverage: 97.4% (10977 of 11267)
   Covered branches: 10977
   Total branches: 11267
-  Method coverage: 100% (1934 of 1934)
-  Full method coverage: 96.4% (1865 of 1934)
-  Covered methods: 1934
-  Fully covered methods: 1865
-  Total methods: 1934
+  Method coverage: 100% (1937 of 1937)
+  Full method coverage: 96.4% (1868 of 1937)
+  Covered methods: 1937
+  Fully covered methods: 1868
+  Total methods: 1937
 
 LeetCode                                                                                                                                                99.5%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -901,6 +901,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberAfterDoubleReversal.NumberAfterDoubleReversalSimulation                                                                      100%
   LeetCode.Algorithms.NumberComplement.NumberComplementBitwise                                                                                           100%
   LeetCode.Algorithms.NumberComplement.NumberComplementString                                                                                            100%
+  LeetCode.Algorithms.NumberOfElapsedSecondsBetweenTwoTimes.NumberOfElapsedSecondsBetweenTwoTimesMath                                                    100%
   LeetCode.Algorithms.NumberOfEmployeesWhoMetTheTarget.NumberOfEmployeesWhoMetTheTargetCounting                                                          100%
   LeetCode.Algorithms.NumberOfEquivalentDominoPairs.NumberOfEquivalentDominoPairsFrequencyArray                                                          100%
   LeetCode.Algorithms.NumberOfEquivalentDominoPairs.NumberOfEquivalentDominoPairsFrequencyDictionary                                                     100%
