@@ -921,6 +921,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3963. Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/description/)
 - [3978. Unique Middle Element](https://leetcode.com/problems/unique-middle-element/description/)
 - [3982. Sum of Integers with Maximum Digit Range](https://leetcode.com/problems/sum-of-integers-with-maximum-digit-range/description/)
+- [3986. Number of Elapsed Seconds Between Two Times](https://leetcode.com/problems/number-of-elapsed-seconds-between-two-times/description/)
 
   </p>
 </details>
