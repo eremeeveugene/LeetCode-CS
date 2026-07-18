@@ -541,6 +541,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1967. Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/description/)
 - [1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)
 - [1975. Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum/description/)
+- [1979. Find Greatest Common Divisor of Array](https://leetcode.com/problems/find-greatest-common-divisor-of-array/description/)
 - [1980. Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/description/)
 - [1984. Minimum Difference Between Highest and Lowest of K Scores](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/description/)
 - [1991. Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array/description/)
