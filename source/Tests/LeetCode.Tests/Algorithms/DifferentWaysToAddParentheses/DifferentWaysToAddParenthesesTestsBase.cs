@@ -67,6 +67,22 @@ public abstract class DifferentWaysToAddParenthesesTestsBase<T> where T : IDiffe
             -11,
             3
         })]
+    [DataRow("1+1", new[] { 2 })]
+    [DataRow("1-1", new[] { 0 })]
+    [DataRow("1*1", new[] { 1 })]
+    [DataRow("1+2+3", new[] { 6, 6 })]
+    [DataRow("1*2-3*4", new[] { -10, -4, -10, -4, -4 })]
+    [DataRow("2*3*4", new[] { 24, 24 })]
+    [DataRow("100", new[] { 100 })]
+    [DataRow("0+1", new[] { 1 })]
+    [DataRow("5-2+1", new[] { 2, 4 })]
+    [DataRow("1*2*3*4", new[] { 24, 24, 24, 24, 24 })]
+    [DataRow("10-5+3", new[] { 2, 8 })]
+    [DataRow("1+2-3+4", new[] { -4, 4, -4, 4, 4 })]
+    [DataRow("3*4", new[] { 12 })]
+    [DataRow("3+4*2", new[] { 14, 11 })]
+    [DataRow("2*3+4*5", new[] { 46, 70, 26, 70, 50 })]
+    [DataRow("8-3", new[] { 5 })]
     public void DiffWaysToCompute_WithExpression_ReturnsAllPossibleResults(string expression, int[] expectedResult)
     {
         // Arrange

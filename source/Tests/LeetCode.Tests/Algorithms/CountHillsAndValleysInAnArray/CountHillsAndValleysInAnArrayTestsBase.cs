@@ -34,6 +34,18 @@ public abstract class CountHillsAndValleysInAnArrayTestsBase<T> where T : ICount
     [DataRow(new[] { 4, 4, 4, 4 }, 0)]
     [DataRow(new[] { 1, 3, 2, 3, 1 }, 3)]
     [DataRow(new[] { 1, 2, 1, 1, 2, 1 }, 3)]
+    [DataRow(new[] { 1, 1, 3, 2, 2 }, 1)]
+    [DataRow(new[] { 2, 3, 2, 2, 1 }, 1)]
+    [DataRow(new[] { 1, 4, 3, 3, 2 }, 1)]
+    [DataRow(new[] { 5, 4, 5, 5, 6 }, 1)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 0)]
+    [DataRow(new[] { 5, 4, 3, 2, 1 }, 0)]
+    [DataRow(new[] { 2, 3, 1, 4, 2, 4 }, 4)]
+    [DataRow(new[] { 1, 1, 1, 2, 2, 1, 1 }, 1)]
+    [DataRow(new[] { 3, 2, 1, 2, 3 }, 1)]
+    [DataRow(new[] { 1, 3, 2, 3, 2, 3, 1 }, 5)]
+    [DataRow(new[] { 2, 1, 3 }, 1)]
+    [DataRow(new[] { 3, 1, 2 }, 1)]
     public void CountHillValley_WithArrayContainingHillsAndValleys_ReturnsTotalHillValleyCount(int[] nums, int expectedResult)
     {
         // Arrange

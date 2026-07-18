@@ -88,19 +88,16 @@ public abstract class DesignNeighborSumServiceTestsBase
                 ])
         ];
 
-        // 3x3 grid - adjacent sum of corner (top-left)
         yield return
         [
             new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(0)], [new AdjacentSumOperation.Result(4)])
         ];
 
-        // 3x3 grid - adjacent sum of corner (top-right)
         yield return
         [
             new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(2)], [new AdjacentSumOperation.Result(6)])
         ];
 
-        // 3x3 grid - adjacent sum of corner (bottom-left)
         yield return
         [
             new NeighborSumServiceScenario(
@@ -109,7 +106,6 @@ public abstract class DesignNeighborSumServiceTestsBase
                 [new AdjacentSumOperation.Result(10)])
         ];
 
-        // 3x3 grid - adjacent sum of corner (bottom-right)
         yield return
         [
             new NeighborSumServiceScenario(
@@ -118,37 +114,31 @@ public abstract class DesignNeighborSumServiceTestsBase
                 [new AdjacentSumOperation.Result(12)])
         ];
 
-        // 3x3 grid - diagonal sum of corner (top-left)
         yield return
         [
             new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(0)], [new DiagonalSumOperation.Result(4)])
         ];
 
-        // 3x3 grid - diagonal sum of corner (top-right)
         yield return
         [
             new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(2)], [new DiagonalSumOperation.Result(4)])
         ];
 
-        // 3x3 grid - diagonal sum of corner (bottom-left)
         yield return
         [
             new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(6)], [new DiagonalSumOperation.Result(4)])
         ];
 
-        // 3x3 grid - diagonal sum of corner (bottom-right)
         yield return
         [
             new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(8)], [new DiagonalSumOperation.Result(4)])
         ];
 
-        // 3x3 grid - adjacent sum of edge (top-middle)
         yield return
         [
             new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new AdjacentSumOperation(1)], [new AdjacentSumOperation.Result(6)])
         ];
 
-        // 3x3 grid - adjacent sum of edge (left-middle)
         yield return
         [
             new NeighborSumServiceScenario(
@@ -157,7 +147,6 @@ public abstract class DesignNeighborSumServiceTestsBase
                 [new AdjacentSumOperation.Result(10)])
         ];
 
-        // 3x3 grid - adjacent sum of edge (right-middle)
         yield return
         [
             new NeighborSumServiceScenario(
@@ -166,7 +155,6 @@ public abstract class DesignNeighborSumServiceTestsBase
                 [new AdjacentSumOperation.Result(14)])
         ];
 
-        // 3x3 grid - adjacent sum of edge (bottom-middle)
         yield return
         [
             new NeighborSumServiceScenario(
@@ -175,28 +163,71 @@ public abstract class DesignNeighborSumServiceTestsBase
                 [new AdjacentSumOperation.Result(18)])
         ];
 
-        // 3x3 grid - diagonal sum of edge (top-middle)
         yield return
         [
             new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(1)], [new DiagonalSumOperation.Result(8)])
         ];
 
-        // 3x3 grid - diagonal sum of edge (left-middle)
         yield return
         [
             new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(3)], [new DiagonalSumOperation.Result(8)])
         ];
 
-        // 3x3 grid - diagonal sum of edge (right-middle)
         yield return
         [
             new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(5)], [new DiagonalSumOperation.Result(8)])
         ];
 
-        // 3x3 grid - diagonal sum of edge (bottom-middle)
         yield return
         [
             new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(7)], [new DiagonalSumOperation.Result(8)])
+        ];
+
+        yield return
+        [
+            new NeighborSumServiceScenario([[10, 20], [30, 40]], [new AdjacentSumOperation(10)], [new AdjacentSumOperation.Result(50)])
+        ];
+
+        yield return
+        [
+            new NeighborSumServiceScenario([[10, 20], [30, 40]], [new DiagonalSumOperation(10)], [new DiagonalSumOperation.Result(40)])
+        ];
+
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]],
+                [new AdjacentSumOperation(6)],
+                [new AdjacentSumOperation.Result(24)])
+        ];
+
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]],
+                [new DiagonalSumOperation(6)],
+                [new DiagonalSumOperation.Result(24)])
+        ];
+
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[1000, 2000, 3000], [4000, 5000, 6000], [7000, 8000, 9000]],
+                [new AdjacentSumOperation(5000), new DiagonalSumOperation(5000)],
+                [new AdjacentSumOperation.Result(20000), new DiagonalSumOperation.Result(20000)])
+        ];
+
+        yield return
+        [
+            new NeighborSumServiceScenario([[100]], [new AdjacentSumOperation(100), new DiagonalSumOperation(100)], [new AdjacentSumOperation.Result(0), new DiagonalSumOperation.Result(0)])
+        ];
+
+        yield return
+        [
+            new NeighborSumServiceScenario(
+                [[100, 200], [300, 400]],
+                [new AdjacentSumOperation(400), new DiagonalSumOperation(400)],
+                [new AdjacentSumOperation.Result(500), new DiagonalSumOperation.Result(100)])
         ];
     }
 

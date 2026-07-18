@@ -33,6 +33,12 @@ public abstract class NRepeatedElementInSize2NArrayTestsBase<T> where T : INRepe
     [DataRow(new[] { 100, 200, 100, 300 }, 100)]
     [DataRow(new[] { 5, 5, 1, 2 }, 5)]
     [DataRow(new[] { 1, 3, 2, 3 }, 3)]
+    [DataRow(new[] { 11, 12, 11, 13 }, 11)]
+    [DataRow(new[] { 99, 1, 2, 99 }, 99)]
+    [DataRow(new[] { 50, 50, 1, 2 }, 50)]
+    [DataRow(new[] { 7, 8, 7, 9 }, 7)]
+    [DataRow(new[] { 999, 999, 1, 2, 3, 4 }, 999)]
+    [DataRow(new[] { 42, 1, 2, 42, 3, 42, 4, 42 }, 42)]
     public void RepeatedNTimes_WithArrayContainingOneElementRepeatedNTimes_ReturnsRepeatedElement(int[] nums, int expectedResult)
     {
         // Arrange

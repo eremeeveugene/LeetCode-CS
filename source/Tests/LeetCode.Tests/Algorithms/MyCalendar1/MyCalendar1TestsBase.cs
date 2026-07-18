@@ -35,6 +35,10 @@ public abstract class MyCalendar1TestsBase<T> where T : IMyCalendar1, new()
     [DataRow(new[] { 0, 0 }, new[] { 1000000000, 1 }, new[] { true, false })]
     [DataRow(new[] { 5, 6 }, new[] { 7, 8 }, new[] { true, false })]
     [DataRow(new[] { 1, 1, 1, 1, 1 }, new[] { 2, 2, 2, 2, 2 }, new[] { true, false, false, false, false })]
+    [DataRow(new[] { 0, 999999999 }, new[] { 1000000000, 1000000000 }, new[] { true, false })]
+    [DataRow(new[] { 5, 10, 15 }, new[] { 8, 12, 18 }, new[] { true, true, true })]
+    [DataRow(new[] { 1, 2, 3 }, new[] { 2, 3, 4 }, new[] { true, true, true })]
+    [DataRow(new[] { 11, 15, 9 }, new[] { 13, 20, 14 }, new[] { true, true, false })]
     public void Book_WithStartAndEndTimes_ReturnsBookingResults(int[] start, int[] end, bool[] expectedResult)
     {
         // Arrange

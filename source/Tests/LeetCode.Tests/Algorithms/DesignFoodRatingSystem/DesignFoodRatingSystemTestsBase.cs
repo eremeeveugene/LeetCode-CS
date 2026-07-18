@@ -124,7 +124,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ])
         ];
 
-        // Single food item
         yield return
         [
             new FoodRatingSystemScenario(
@@ -135,7 +134,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 [new HighestRatedOperation.Result("burger")])
         ];
 
-        // Change rating then check
         yield return
         [
             new FoodRatingSystemScenario(
@@ -146,7 +144,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 [new HighestRatedOperation.Result("y"), VoidOperationResult.Instance, new HighestRatedOperation.Result("x")])
         ];
 
-        // Three foods same cuisine, all same rating - lexicographic winner
         yield return
         [
             new FoodRatingSystemScenario(
@@ -157,7 +154,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 [new HighestRatedOperation.Result("apple")])
         ];
 
-        // Multiple changes to same food
         yield return
         [
             new FoodRatingSystemScenario(
@@ -168,7 +164,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 [VoidOperationResult.Instance, new HighestRatedOperation.Result("noodle")])
         ];
 
-        // Two foods, one cuisine, multiple changes
         yield return
         [
             new FoodRatingSystemScenario(
@@ -191,7 +186,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ])
         ];
 
-        // Foods with same rating after change - lexicographic order
         yield return
         [
             new FoodRatingSystemScenario(
@@ -202,7 +196,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 [VoidOperationResult.Instance, new HighestRatedOperation.Result("avocado toast")])
         ];
 
-        // Different cuisines no interference
         yield return
         [
             new FoodRatingSystemScenario(
@@ -223,7 +216,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ])
         ];
 
-        // Rating goes down to zero - still highest in cuisine
         yield return
         [
             new FoodRatingSystemScenario(
@@ -234,7 +226,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 [VoidOperationResult.Instance, new HighestRatedOperation.Result("b")])
         ];
 
-        // Multiple foods single cuisine check order stability
         yield return
         [
             new FoodRatingSystemScenario(
@@ -245,7 +236,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 [new HighestRatedOperation.Result("p"), VoidOperationResult.Instance, new HighestRatedOperation.Result("o")])
         ];
 
-        // Decrease highest-rated food rating below second highest
         yield return
         [
             new FoodRatingSystemScenario(
@@ -256,7 +246,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 [VoidOperationResult.Instance, new HighestRatedOperation.Result("burrito")])
         ];
 
-        // Many changes across cuisines
         yield return
         [
             new FoodRatingSystemScenario(
@@ -281,7 +270,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ])
         ];
 
-        // Same food rated multiple times
         yield return
         [
             new FoodRatingSystemScenario(
@@ -302,7 +290,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ])
         ];
 
-        // All foods in one cuisine, select highest changes frequently
         yield return
         [
             new FoodRatingSystemScenario(
@@ -325,7 +312,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ])
         ];
 
-        // Tie breaking with identical names after rating changes
         yield return
         [
             new FoodRatingSystemScenario(
@@ -346,7 +332,6 @@ public abstract class DesignFoodRatingSystemTestsBase
                 ])
         ];
 
-        // Sequential changes lead to single winner
         yield return
         [
             new FoodRatingSystemScenario(
@@ -365,6 +350,46 @@ public abstract class DesignFoodRatingSystemTestsBase
                     VoidOperationResult.Instance,
                     new HighestRatedOperation.Result("spring roll")
                 ])
+        ];
+
+        yield return
+        [
+            new FoodRatingSystemScenario(
+                ["a", "b", "c", "d"],
+                ["x", "x", "x", "x"],
+                [1, 1, 1, 1],
+                [new HighestRatedOperation("x"), new ChangeRatingOperation("c", 2), new HighestRatedOperation("x")],
+                [new HighestRatedOperation.Result("a"), VoidOperationResult.Instance, new HighestRatedOperation.Result("c")])
+        ];
+
+        yield return
+        [
+            new FoodRatingSystemScenario(
+                ["food1", "food2", "food3", "food4"],
+                ["c1", "c1", "c2", "c2"],
+                [10, 8, 9, 7],
+                [
+                    new HighestRatedOperation("c1"),
+                    new HighestRatedOperation("c2"),
+                    new ChangeRatingOperation("food2", 11),
+                    new HighestRatedOperation("c1")
+                ],
+                [
+                    new HighestRatedOperation.Result("food1"),
+                    new HighestRatedOperation.Result("food3"),
+                    VoidOperationResult.Instance,
+                    new HighestRatedOperation.Result("food2")
+                ])
+        ];
+
+        yield return
+        [
+            new FoodRatingSystemScenario(
+                ["x", "y"],
+                ["cat", "cat"],
+                [50, 25],
+                [new ChangeRatingOperation("x", 0), new HighestRatedOperation("cat")],
+                [VoidOperationResult.Instance, new HighestRatedOperation.Result("y")])
         ];
     }
 

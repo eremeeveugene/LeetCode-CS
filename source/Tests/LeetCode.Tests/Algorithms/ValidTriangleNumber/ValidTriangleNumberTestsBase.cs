@@ -36,6 +36,9 @@ public abstract class ValidTriangleNumberTestsBase<T> where T : IValidTriangleNu
     [DataRow(new[] { 0, 1, 1 }, 0)]
     [DataRow(new[] { 5, 5, 10 }, 0)]
     [DataRow(new[] { 1, 2, 2 }, 1)]
+    [DataRow(new[] { 4, 5, 6, 7 }, 4)]
+    [DataRow(new[] { 2, 3, 4 }, 1)]
+    [DataRow(new[] { 6, 6, 6, 6, 6 }, 10)]
     public void TriangleNumber_WithSideLengths_ReturnsCountOfValidTriangles(int[] nums, int expectedResult)
     {
         // Arrange
