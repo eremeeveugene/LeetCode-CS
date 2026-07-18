@@ -78,7 +78,7 @@ public abstract class InvertBinaryTreeTestsBase<T> where T : IInvertBinaryTree, 
 
         yield return [new int?[] { 8, 4, 12, 2, 6, 10, 14 }, new int?[] { 8, 12, 4, 14, 10, 6, 2 }];
 
-        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8 }, new int?[] { 1, 3, 2, 7, 6, 5, 4, null, null, null, null, null, null, 8 }];
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8 }, new int?[] { 1, 3, 2, 7, 6, 5, 4, null, null, null, null, null, null, null, 8 }];
 
         yield return [new int?[] { 7 }, new int?[] { 7 }];
 

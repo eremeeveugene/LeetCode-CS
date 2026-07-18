@@ -496,7 +496,7 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
                     new IncOperation("y"),
                     new IncOperation("z"),
                     new IncOperation("x"),
-                    new IncOperation("y"),
+                    new IncOperation("x"),
                     new DecOperation("z"),
                     new GetMaxKeyOperation(),
                     new GetMinKeyOperation()

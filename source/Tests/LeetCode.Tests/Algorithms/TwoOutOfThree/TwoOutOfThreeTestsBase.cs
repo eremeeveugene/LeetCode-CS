@@ -34,7 +34,7 @@ public abstract class TwoOutOfThreeTestsBase<T> where T : ITwoOutOfThree, new()
     [DataRow(new[] { 4, 4, 4 }, new[] { 4 }, new[] { 5 }, new[] { 4 })]
     [DataRow(new[] { 1, 2, 3 }, new[] { 2, 3, 4 }, new[] { 5, 6, 7 }, new[] { 2, 3 })]
     [DataRow(new[] { 6, 7 }, new[] { 6, 8 }, new[] { 7, 8 }, new[] { 6, 7, 8 })]
-    [DataRow(new[] { 100 }, new[] { 100, 200 }, new[] { 300 }, new[] { 100 })]
+    [DataRow(new[] { 100 }, new[] { 100, 99 }, new[] { 98 }, new[] { 100 })]
     [DataRow(new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 }, new[] { 2, 3 })]
     public void TwoOutOfThree_WithThreeIntegerArrays_ReturnsValuesPresentInAtLeastTwoArrays(
         int[] nums1,

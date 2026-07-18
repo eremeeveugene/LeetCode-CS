@@ -39,7 +39,7 @@ public abstract class CheckIfStringsCanBeMadeEqualWithOperations2TestsBase<T> wh
     [DataRow("a", "a", true)]
     [DataRow("aabb", "bbaa", true)]
     [DataRow("aaaa", "aaaa", true)]
-    [DataRow("abab", "baba", true)]
+    [DataRow("abab", "baba", false)]
     [DataRow("xxyy", "yyxx", true)]
     public void CheckStrings_WithGivenStrings_ReturnsTrueIfStringsCanBeMadeEqual(string s1, string s2, bool expectedResult)
     {

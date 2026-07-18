@@ -37,9 +37,9 @@ public abstract class SumOfPrefixScoresOfStringsTestsBase<T> where T : ISumOfPre
     [DataRow(new[] { "hello", "help", "world" }, new[] { 8, 7, 5 })]
     [DataRow(new[] { "a", "b", "c" }, new[] { 1, 1, 1 })]
     [DataRow(new[] { "abc", "abd", "abc" }, new[] { 8, 7, 8 })]
-    [DataRow(new[] { "word", "wor", "wo", "w" }, new[] { 4, 3, 2, 1 })]
-    [DataRow(new[] { "test", "testing" }, new[] { 6, 10 })]
-    [DataRow(new[] { "xyz", "xya", "xy" }, new[] { 6, 5, 3 })]
+    [DataRow(new[] { "word", "wor", "wo", "w" }, new[] { 10, 9, 7, 4 })]
+    [DataRow(new[] { "test", "testing" }, new[] { 8, 11 })]
+    [DataRow(new[] { "xyz", "xya", "xy" }, new[] { 7, 7, 6 })]
     [DataRow(new[] { "a", "a", "a", "a" }, new[] { 4, 4, 4, 4 })]
     public void SumPrefixScores_WithListOfWords_ReturnsSumOfScoresForAllPrefixesOfEachWord(string[] words, int[] expectedResult)
     {

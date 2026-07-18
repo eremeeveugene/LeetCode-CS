@@ -35,7 +35,7 @@ public abstract class FindTheDifferenceTestsBase<T> where T : IFindTheDifference
     [DataRow("cd", "cde", 'e')]
     [DataRow("test", "testg", 'g')]
     [DataRow("x", "xy", 'y')]
-    [DataRow("abc", "bac", 'b')]
+    [DataRow("abc", "bacd", 'd')]
     [DataRow("str", "strg", 'g')]
     public void FindTheDifference_WithTwoStrings_ReturnsExtraCharacter(string s, string t, char expectedResult)
     {
