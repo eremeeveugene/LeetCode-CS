@@ -40,6 +40,7 @@ public abstract class MaximumTwinSumOfALinkedListTestsBase<T> where T : IMaximum
     [DataRow(new[] { 99999, 1 }, 100000)]
     [DataRow(new[] { 2, 2, 2, 2, 2, 2 }, 4)]
     [DataRow(new[] { 40, 30, 20, 10 }, 50)]
+    [DataRow(new[] { 1 }, 0)]
     public void PairSum_GivenHeadArray_ReturnsMaximumTwinSum(int[] headArray, int expectedResult)
     {
         // Arrange
