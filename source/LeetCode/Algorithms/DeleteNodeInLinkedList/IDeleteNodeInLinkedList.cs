@@ -23,5 +23,5 @@ public interface IDeleteNodeInLinkedList
     ///     to the head of the list.
     /// </summary>
     /// <param name="node">The non-tail node to delete from the linked list.</param>
-    void DeleteNode(ListNode? node);
+    void DeleteNode(ListNode node);
 }
