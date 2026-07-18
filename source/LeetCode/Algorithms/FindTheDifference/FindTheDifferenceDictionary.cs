@@ -21,25 +21,32 @@ public sealed class FindTheDifferenceDictionary : IFindTheDifference
     /// </remarks>
     public char FindTheDifference(string s, string t)
     {
-        var sDictionary = new Dictionary<char, int>();
+        var characterToCountDictionary = new Dictionary<char, int>();
 
-        foreach (var sItem in s.Where(sItem => !sDictionary.TryAdd(sItem, 1)))
+        for (var i = 0; i < s.Length; i++)
         {
-            sDictionary[sItem]++;
+            var c = s[i];
+
+            if (!characterToCountDictionary.TryAdd(c, 1))
+            {
+                characterToCountDictionary[c]++;
+            }
         }
 
-        foreach (var tItem in t)
+        for (var i = 0; i < t.Length - 1; i++)
         {
-            if (sDictionary.TryGetValue(tItem, out var tItemValue) && tItemValue > 0)
+            var c = t[i];
+
+            if (characterToCountDictionary.TryGetValue(c, out var count) && count > 0)
             {
-                sDictionary[tItem]--;
+                characterToCountDictionary[c]--;
             }
             else
             {
-                return tItem;
+                return c;
             }
         }
 
-        return (char)0;
+        return t[^1];
     }
 }
