@@ -34,6 +34,9 @@ public abstract class NumberOfPeopleAwareOfSecretTestsBase<T> where T : INumberO
     [DataRow(4, 3, 4, 2)]
     [DataRow(3, 3, 4, 1)]
     [DataRow(2, 3, 4, 1)]
+    [DataRow(51, 1, 25, 992991676)]
+    [DataRow(5, 10, 1, 0)]
+    [DataRow(-1, 1, 1, 1)]
     public void PeopleAwareOfSecret_WithDelayAndForgetPeriods_ReturnsTotalPeopleKnowingSecretAtEndOfDay(
         int n,
         int delay,
