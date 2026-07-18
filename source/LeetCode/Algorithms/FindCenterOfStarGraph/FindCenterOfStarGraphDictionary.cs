@@ -36,11 +36,6 @@ public sealed class FindCenterOfStarGraphDictionary : IFindCenterOfStarGraph
             }
         }
 
-        foreach (var item in dictionary.Where(item => item.Value == edges.Length))
-        {
-            return item.Key;
-        }
-
-        return -1;
+        return dictionary.First(item => item.Value == edges.Length).Key;
     }
 }
