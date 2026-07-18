@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/18/2026 - 2:36:31 PM
-  Coverage date: 7/18/2026 - 2:35:58 PM - 7/18/2026 - 2:36:23 PM
+  Generated on: 7/18/2026 - 3:09:07 PM
+  Coverage date: 7/18/2026 - 3:08:36 PM - 7/18/2026 - 3:09:00 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1323
-  Files: 1323
+  Classes: 1324
+  Files: 1324
   Line coverage: 99.5%
-  Covered lines: 29767
+  Covered lines: 29791
   Uncovered lines: 133
-  Coverable lines: 29900
-  Total lines: 73237
-  Branch coverage: 97.5% (11007 of 11285)
-  Covered branches: 11007
-  Total branches: 11285
-  Method coverage: 100% (1941 of 1941)
-  Full method coverage: 96.5% (1875 of 1941)
-  Covered methods: 1941
-  Fully covered methods: 1875
-  Total methods: 1941
+  Coverable lines: 29924
+  Total lines: 73295
+  Branch coverage: 97.5% (11013 of 11291)
+  Covered branches: 11013
+  Total branches: 11291
+  Method coverage: 100% (1942 of 1942)
+  Full method coverage: 96.6% (1876 of 1942)
+  Covered methods: 1942
+  Fully covered methods: 1876
+  Total methods: 1942
 
 LeetCode                                                                                                                                                99.5%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1324,6 +1324,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.WordSearch.WordSearchRecursive                                                                                                     100%
   LeetCode.Algorithms.WordSubsets.WordSubsetsFrequencyFiltering                                                                                          100%
   LeetCode.Algorithms.WordsWithinTwoEditsOfDictionary.WordsWithinTwoEditsOfDictionaryBruteForce                                                          100%
+  LeetCode.Algorithms.XorAfterRangeMultiplicationQueries1.XorAfterRangeMultiplicationQueries1Simulation                                                  100%
   LeetCode.Algorithms.XOROperationInAnArray.XOROperationInAnArrayIterative                                                                               100%
   LeetCode.Algorithms.XORQueriesOfSubarray.XORQueriesOfSubarrayIterative                                                                                 100%
   LeetCode.Algorithms.XORQueriesOfSubarray.XORQueriesOfSubarrayPrefixArray                                                                               100%
