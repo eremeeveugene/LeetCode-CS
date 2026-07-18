@@ -33,7 +33,7 @@ public sealed class InvertBinaryTreeDepthFirstSearchRecursive : IInvertBinaryTre
         return root;
     }
 
-    private void Invert(TreeNode? root)
+    private static void Invert(TreeNode? root)
     {
         if (root == null)
         {
@@ -42,7 +42,7 @@ public sealed class InvertBinaryTreeDepthFirstSearchRecursive : IInvertBinaryTre
 
         (root.left, root.right) = (root.right, root.left);
 
-        InvertTree(root.left);
-        InvertTree(root.right);
+        Invert(root.left);
+        Invert(root.right);
     }
 }
