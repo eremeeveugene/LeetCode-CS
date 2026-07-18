@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/18/2026 - 9:49:54 AM
-  Coverage date: 7/18/2026 - 9:49:23 AM - 7/18/2026 - 9:49:47 AM
+  Generated on: 7/18/2026 - 10:22:14 AM
+  Coverage date: 7/18/2026 - 10:21:41 AM - 7/18/2026 - 10:22:06 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1322
-  Files: 1322
+  Classes: 1323
+  Files: 1323
   Line coverage: 99.5%
-  Covered lines: 29748
-  Uncovered lines: 133
-  Coverable lines: 29881
-  Total lines: 73188
-  Branch coverage: 97.5% (11003 of 11281)
-  Covered branches: 11003
-  Total branches: 11281
-  Method coverage: 100% (1939 of 1939)
-  Full method coverage: 96.5% (1873 of 1939)
-  Covered methods: 1939
-  Fully covered methods: 1873
-  Total methods: 1939
+  Covered lines: 29773
+  Uncovered lines: 127
+  Coverable lines: 29900
+  Total lines: 73237
+  Branch coverage: 97.5% (11011 of 11285)
+  Covered branches: 11011
+  Total branches: 11285
+  Method coverage: 100% (1941 of 1941)
+  Full method coverage: 96.6% (1876 of 1941)
+  Covered methods: 1941
+  Fully covered methods: 1876
+  Total methods: 1941
 
 LeetCode                                                                                                                                                99.5%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -391,6 +391,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindElementsInContaminatedBinaryTree.FindElementsInContaminatedBinaryTreeDepthFirstSearch                                          100%
   LeetCode.Algorithms.FindElementsInContaminatedBinaryTree.FindElementsInContaminatedBinaryTreeHashSet                                                   100%
   LeetCode.Algorithms.FindEventualSafeStates.FindEventualSafeStatesDepthFirstSearch                                                                      100%
+  LeetCode.Algorithms.FindGreatestCommonDivisorOfArray.FindGreatestCommonDivisorOfArrayEuclidean                                                         100%
   LeetCode.Algorithms.FindIfArrayCanBeSorted.FindIfArrayCanBeSortedBubbleSort                                                                            100%
   LeetCode.Algorithms.FindIfArrayCanBeSorted.FindIfArrayCanBeSortedTwoPass                                                                               100%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphBreadthFirstSearch                                                                  100%
@@ -1332,7 +1333,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                            100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
