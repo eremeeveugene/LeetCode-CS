@@ -21,14 +21,9 @@ public sealed class DeleteNodeInLinkedListReassign : IDeleteNodeInLinkedList
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
     /// </remarks>
-    public void DeleteNode(ListNode? node)
+    public void DeleteNode(ListNode node)
     {
-        if (node is not { next: not null })
-        {
-            return;
-        }
-
-        node.val = node.next.val;
+        node.val = node.next!.val;
         node.next = node.next.next;
     }
 }
