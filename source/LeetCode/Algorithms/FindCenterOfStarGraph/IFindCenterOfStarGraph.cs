@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindCenterOfStarGraph;
 
 /// <summary>
-///     https://leetcode.com/problems/find-center-of-star-graph/
+///     https://leetcode.com/problems/find-center-of-star-graph/description
 /// </summary>
 public interface IFindCenterOfStarGraph
 {

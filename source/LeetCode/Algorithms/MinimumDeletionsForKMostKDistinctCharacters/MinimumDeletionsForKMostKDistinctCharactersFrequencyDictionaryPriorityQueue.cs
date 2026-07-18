@@ -21,14 +21,19 @@ public sealed class MinimumDeletionsForKMostKDistinctCharactersFrequencyDictiona
     /// </remarks>
     public int MinDeletion(string s, int k)
     {
-        var frequencyDictionary = new Dictionary<char, int>();
+        var characterToFrequencyDictionary = new Dictionary<char, int>();
 
-        foreach (var c in s.Where(c => !frequencyDictionary.TryAdd(c, 1)))
+        for (var i = 0; i < s.Length; i++)
         {
-            frequencyDictionary[c]++;
+            var c = s[i];
+
+            if (!characterToFrequencyDictionary.TryAdd(c, 1))
+            {
+                characterToFrequencyDictionary[c]++;
+            }
         }
 
-        var countToRemove = frequencyDictionary.Values.Count - k;
+        var countToRemove = characterToFrequencyDictionary.Count - k;
 
         if (countToRemove <= 0)
         {
@@ -37,7 +42,7 @@ public sealed class MinimumDeletionsForKMostKDistinctCharactersFrequencyDictiona
 
         var priorityQueue = new PriorityQueue<int, int>();
 
-        foreach (var frequency in frequencyDictionary.Values)
+        foreach (var frequency in characterToFrequencyDictionary.Values)
         {
             priorityQueue.Enqueue(frequency, frequency);
         }

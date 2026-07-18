@@ -23,10 +23,17 @@ public sealed class SortVowelsInStringCountingSort : ISortVowelsInString
     /// </remarks>
     public string SortVowels(string s)
     {
-        Span<int> vowelFrequencies = stackalloc int[VowelOrder.Length];
+        var n = s.Length;
 
-        foreach (var c in s)
+        Span<int> vowelFrequencies = stackalloc int[VowelOrder.Length];
+        Span<char> sCharArray = stackalloc char[s.Length];
+
+        for (var i = 0; i < n; i++)
         {
+            var c = s[i];
+
+            sCharArray[i] = c;
+
             var vowelIndex = GetVowelIndex(c);
 
             if (vowelIndex < 0)
@@ -37,11 +44,9 @@ public sealed class SortVowelsInStringCountingSort : ISortVowelsInString
             vowelFrequencies[vowelIndex]++;
         }
 
-        var sCharArray = s.ToCharArray();
-
         var nextVowelIndex = 0;
 
-        for (var i = 0; i < sCharArray.Length; i++)
+        for (var i = 0; i < n; i++)
         {
             var vowelIndex = GetVowelIndex(sCharArray[i]);
 
@@ -50,7 +55,7 @@ public sealed class SortVowelsInStringCountingSort : ISortVowelsInString
                 continue;
             }
 
-            while (nextVowelIndex < vowelFrequencies.Length && vowelFrequencies[nextVowelIndex] == 0)
+            while (vowelFrequencies[nextVowelIndex] == 0)
             {
                 nextVowelIndex++;
             }
