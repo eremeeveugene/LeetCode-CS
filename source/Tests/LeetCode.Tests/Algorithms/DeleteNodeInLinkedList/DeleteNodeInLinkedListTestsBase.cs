@@ -71,11 +71,11 @@ public abstract class DeleteNodeInLinkedListTestsBase<T> where T : IDeleteNodeIn
 
         yield return [new ListNode(1, new ListNode(2, new ListNode(3, node9))), node9, new[] { 1, 2, 3, 5 }];
 
-        var head10 = new ListNode(0, new ListNode(0, new ListNode(0)));
+        var head10 = new ListNode(0, new ListNode(0, new ListNode()));
 
         yield return [head10, head10, new[] { 0, 0 }];
 
-        var node11 = new ListNode(0, new ListNode(0));
+        var node11 = new ListNode(0, new ListNode());
 
         yield return [new ListNode(0, node11), node11, new[] { 0, 0 }];
 
