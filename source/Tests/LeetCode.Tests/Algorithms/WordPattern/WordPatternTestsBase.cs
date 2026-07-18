@@ -36,6 +36,8 @@ public abstract class WordPatternTestsBase<T> where T : IWordPattern, new()
     [DataRow("abcd", "dog cat fish dog", false)]
     [DataRow("ab", "cat cat", false)]
     [DataRow("ba", "cat dog", true)]
+    [DataRow("aaaa", "a a a a", true)]
+    [DataRow("abcabc", "x y z x y z", true)]
     public void WordPattern_GivenPatternAndString_MatchesExpectedResult(string pattern, string s, bool expectedResult)
     {
         // Arrange

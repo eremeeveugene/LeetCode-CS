@@ -49,6 +49,11 @@ public abstract class DesignFrontMiddleBackQueueTestsBase<T> where T : IDesignFr
         new[] { 1, 2, 3, 0, 0, 0 },
         new[] { 3, 2, 1 })]
     [DataRow(new[] { "pushFront", "pushBack", "popBack", "popFront" }, new[] { 10, 20, 0, 0 }, new[] { 20, 10 })]
+    [DataRow(new[] { "pushMiddle", "pushFront", "pushBack", "popMiddle" }, new[] { 1, 2, 3, 0 }, new[] { 1 })]
+    [DataRow(new[] { "pushFront", "pushFront", "pushBack", "popMiddle", "popBack" }, new[] { 1, 2, 3, 0, 0 }, new[] { 2, 3 })]
+    [DataRow(new[] { "pushBack", "pushMiddle", "pushFront", "popFront", "popBack" }, new[] { 5, 10, 15, 0, 0 }, new[] { 15, 5 })]
+    [DataRow(new[] { "popFront", "popBack", "popMiddle" }, new[] { 0, 0, 0 }, new[] { -1, -1, -1 })]
+    [DataRow(new[] { "pushFront", "pushBack", "pushMiddle", "popFront" }, new[] { 1, 2, 3, 0 }, new[] { 1 })]
     public void DesignFrontMiddleBackQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
         string[] operations,
         int[] arguments,

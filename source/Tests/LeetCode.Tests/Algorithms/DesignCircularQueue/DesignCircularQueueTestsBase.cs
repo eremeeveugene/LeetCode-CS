@@ -121,6 +121,382 @@ public abstract class DesignCircularQueueTestsBase
                 [new FrontOperation(), new RearOperation(), new DeQueueOperation()],
                 [new FrontOperation.Result(-1), new RearOperation.Result(-1), new DeQueueOperation.Result(false)])
         ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                2,
+                [
+                    new EnQueueOperation(10),
+                    new EnQueueOperation(20),
+                    new EnQueueOperation(30),
+                    new FrontOperation(),
+                    new RearOperation(),
+                    new IsFullOperation()
+                ],
+                [
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(false),
+                    new FrontOperation.Result(10),
+                    new RearOperation.Result(20),
+                    new IsFullOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                5,
+                [
+                    new EnQueueOperation(1),
+                    new EnQueueOperation(2),
+                    new EnQueueOperation(3),
+                    new DeQueueOperation(),
+                    new DeQueueOperation(),
+                    new DeQueueOperation(),
+                    new IsEmptyOperation(),
+                    new FrontOperation(),
+                    new RearOperation()
+                ],
+                [
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new IsEmptyOperation.Result(true),
+                    new FrontOperation.Result(-1),
+                    new RearOperation.Result(-1)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                4,
+                [
+                    new EnQueueOperation(100),
+                    new EnQueueOperation(200),
+                    new RearOperation(),
+                    new EnQueueOperation(300),
+                    new EnQueueOperation(400),
+                    new FrontOperation(),
+                    new DeQueueOperation(),
+                    new FrontOperation(),
+                    new DeQueueOperation(),
+                    new DeQueueOperation(),
+                    new IsEmptyOperation()
+                ],
+                [
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new RearOperation.Result(200),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new FrontOperation.Result(100),
+                    new DeQueueOperation.Result(true),
+                    new FrontOperation.Result(200),
+                    new DeQueueOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new IsEmptyOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                1,
+                [
+                    new EnQueueOperation(7),
+                    new IsFullOperation(),
+                    new RearOperation(),
+                    new FrontOperation(),
+                    new DeQueueOperation(),
+                    new IsEmptyOperation()
+                ],
+                [
+                    new EnQueueOperation.Result(true),
+                    new IsFullOperation.Result(true),
+                    new RearOperation.Result(7),
+                    new FrontOperation.Result(7),
+                    new DeQueueOperation.Result(true),
+                    new IsEmptyOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                3,
+                [
+                    new EnQueueOperation(5),
+                    new EnQueueOperation(10),
+                    new EnQueueOperation(15),
+                    new EnQueueOperation(20),
+                    new DeQueueOperation(),
+                    new EnQueueOperation(25),
+                    new IsFullOperation(),
+                    new RearOperation()
+                ],
+                [
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(false),
+                    new DeQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new IsFullOperation.Result(true),
+                    new RearOperation.Result(25)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                6,
+                [
+                    new EnQueueOperation(1),
+                    new EnQueueOperation(2),
+                    new EnQueueOperation(3),
+                    new EnQueueOperation(4),
+                    new EnQueueOperation(5),
+                    new EnQueueOperation(6),
+                    new IsFullOperation(),
+                    new FrontOperation(),
+                    new RearOperation()
+                ],
+                [
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new IsFullOperation.Result(true),
+                    new FrontOperation.Result(1),
+                    new RearOperation.Result(6)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                4,
+                [new EnQueueOperation(1), new DeQueueOperation(), new IsEmptyOperation(), new IsFullOperation()],
+                [
+                    new EnQueueOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new IsEmptyOperation.Result(true),
+                    new IsFullOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                2,
+                [new EnQueueOperation(1), new EnQueueOperation(2), new DeQueueOperation(), new DeQueueOperation(), new DeQueueOperation()],
+                [
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new DeQueueOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                3,
+                [
+                    new EnQueueOperation(10),
+                    new EnQueueOperation(20),
+                    new EnQueueOperation(30),
+                    new DeQueueOperation(),
+                    new EnQueueOperation(40),
+                    new RearOperation(),
+                    new FrontOperation()
+                ],
+                [
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new RearOperation.Result(40),
+                    new FrontOperation.Result(20)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                5,
+                [
+                    new IsEmptyOperation(),
+                    new IsFullOperation(),
+                    new FrontOperation(),
+                    new RearOperation(),
+                    new EnQueueOperation(99)
+                ],
+                [
+                    new IsEmptyOperation.Result(true),
+                    new IsFullOperation.Result(false),
+                    new FrontOperation.Result(-1),
+                    new RearOperation.Result(-1),
+                    new EnQueueOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                2,
+                [
+                    new EnQueueOperation(5),
+                    new EnQueueOperation(10),
+                    new FrontOperation(),
+                    new DeQueueOperation(),
+                    new RearOperation(),
+                    new DeQueueOperation(),
+                    new FrontOperation()
+                ],
+                [
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new FrontOperation.Result(5),
+                    new DeQueueOperation.Result(true),
+                    new RearOperation.Result(10),
+                    new DeQueueOperation.Result(true),
+                    new FrontOperation.Result(-1)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                7,
+                [
+                    new EnQueueOperation(1),
+                    new EnQueueOperation(2),
+                    new EnQueueOperation(3),
+                    new EnQueueOperation(4),
+                    new EnQueueOperation(5),
+                    new DeQueueOperation(),
+                    new DeQueueOperation(),
+                    new FrontOperation(),
+                    new RearOperation()
+                ],
+                [
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new FrontOperation.Result(3),
+                    new RearOperation.Result(5)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                3,
+                [
+                    new EnQueueOperation(1),
+                    new EnQueueOperation(2),
+                    new EnQueueOperation(3),
+                    new IsFullOperation(),
+                    new DeQueueOperation(),
+                    new IsFullOperation(),
+                    new EnQueueOperation(4),
+                    new IsFullOperation()
+                ],
+                [
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new IsFullOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new IsFullOperation.Result(false),
+                    new EnQueueOperation.Result(true),
+                    new IsFullOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                4,
+                [
+                    new EnQueueOperation(11),
+                    new EnQueueOperation(22),
+                    new EnQueueOperation(33),
+                    new EnQueueOperation(44),
+                    new DeQueueOperation(),
+                    new FrontOperation(),
+                    new DeQueueOperation(),
+                    new FrontOperation()
+                ],
+                [
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new FrontOperation.Result(22),
+                    new DeQueueOperation.Result(true),
+                    new FrontOperation.Result(33)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                1,
+                [new EnQueueOperation(5), new IsFullOperation(), new DeQueueOperation(), new IsEmptyOperation()],
+                [
+                    new EnQueueOperation.Result(true),
+                    new IsFullOperation.Result(true),
+                    new DeQueueOperation.Result(true),
+                    new IsEmptyOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new CircularQueueScenario(
+                10,
+                [
+                    new EnQueueOperation(1),
+                    new EnQueueOperation(2),
+                    new EnQueueOperation(3),
+                    new EnQueueOperation(4),
+                    new EnQueueOperation(5),
+                    new IsFullOperation(),
+                    new IsEmptyOperation(),
+                    new FrontOperation(),
+                    new RearOperation(),
+                    new DeQueueOperation()
+                ],
+                [
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new EnQueueOperation.Result(true),
+                    new IsFullOperation.Result(false),
+                    new IsEmptyOperation.Result(false),
+                    new FrontOperation.Result(1),
+                    new RearOperation.Result(5),
+                    new DeQueueOperation.Result(true)
+                ])
+        ];
     }
 
     public sealed class CircularQueueScenario : IScenario<IDesignCircularQueue>
