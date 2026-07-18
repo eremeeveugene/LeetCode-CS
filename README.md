@@ -690,6 +690,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2591. Distribute Money to Maximum Children](https://leetcode.com/problems/distribute-money-to-maximum-children/description/)
 - [2593. Find Score of an Array After Marking All Elements](https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/description/)
 - [2597. The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/description/)
+- [2598. Smallest Missing Non-negative Integer After Operations](https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/description/)
 - [2601. Prime Subtraction Operation](https://leetcode.com/problems/prime-subtraction-operation/description/)
 - [2615. Sum of Distances](https://leetcode.com/problems/sum-of-distances/description/)
 - [2616. Minimize the Maximum Difference of Pairs](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/description/)
