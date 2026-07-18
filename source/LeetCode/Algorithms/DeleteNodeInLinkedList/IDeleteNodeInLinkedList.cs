@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.DeleteNodeInLinkedList;
 
 /// <summary>
-///     https://leetcode.com/problems/delete-node-in-a-linked-list/
+///     https://leetcode.com/problems/delete-node-in-a-linked-list/description
 /// </summary>
 public interface IDeleteNodeInLinkedList
 {
