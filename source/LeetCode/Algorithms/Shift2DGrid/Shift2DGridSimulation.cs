@@ -32,17 +32,19 @@ public sealed class Shift2DGridSimulation : IShift2DGrid
 
         for (var i = 0; i < m; i++)
         {
-            result[i] = new List<int>(n);
+            var row = new List<int>(n);
 
             for (var j = 0; j < n; j++)
             {
                 var source = ((i * n) + j - shift + total) % total;
 
-                var sourceI = source / m;
+                var sourceI = source / n;
                 var sourceJ = source % n;
 
-                result[i][j] = grid[sourceI][sourceJ];
+                row.Add(grid[sourceI][sourceJ]);
             }
+
+            result.Add(row);
         }
 
         return result;
