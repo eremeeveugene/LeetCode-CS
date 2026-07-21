@@ -65,6 +65,8 @@ public abstract class MinimumCostPathWithEdgeReversalsTestsBase<T> where T : IMi
 
         yield return [4, new[] { new[] { 0, 0, 1 }, new[] { 0, 1, 2 }, new[] { 1, 1, 3 }, new[] { 1, 3, 4 } }, 6];
 
+        yield return [4, new[] { new[] { 0, 1, 10 }, new[] { 0, 2, 1 }, new[] { 2, 1, 1 }, new[] { 0, 3, 50 } }, 50];
+
         yield return [5, new[] { new[] { 0, 1, 1 }, new[] { 1, 2, 1 }, new[] { 2, 3, 1 }, new[] { 3, 4, 1 } }, 4];
 
         yield return [5, new[] { new[] { 0, 1, 4 }, new[] { 1, 4, 9 }, new[] { 0, 2, 1 }, new[] { 2, 3, 1 }, new[] { 3, 4, 1 } }, 3];
