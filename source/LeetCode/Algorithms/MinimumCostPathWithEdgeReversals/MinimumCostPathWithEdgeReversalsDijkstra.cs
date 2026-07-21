@@ -31,11 +31,11 @@ public sealed class MinimumCostPathWithEdgeReversalsDijkstra : IMinimumCostPathW
         {
             var edge = edges[i];
 
-            var u = edge[0] + 1;
-            var v = edge[1] + 1;
+            var source = edge[0] + 1;
+            var target = edge[1] + 1;
 
-            start[u]++;
-            start[v]++;
+            start[source]++;
+            start[target]++;
         }
 
         for (var i = 1; i < startLength; i++)
