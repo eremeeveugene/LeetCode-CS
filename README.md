@@ -880,6 +880,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3634. Minimum Removals to Balance Array](https://leetcode.com/problems/minimum-removals-to-balance-array/description/)
 - [3637. Trionic Array I](https://leetcode.com/problems/trionic-array-i/description/)
 - [3643. Flip Square Submatrix Vertically](https://leetcode.com/problems/flip-square-submatrix-vertically/description/)
+- [3650. Minimum Cost Path with Edge Reversals](https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/description/)
 - [3653. XOR After Range Multiplication Queries I](https://leetcode.com/problems/xor-after-range-multiplication-queries-i/description/)
 - [3658. GCD of Odd and Even Sums](https://leetcode.com/problems/gcd-of-odd-and-even-sums/description/)
 - [3668. Restore Finishing Order](https://leetcode.com/problems/restore-finishing-order/description/)
