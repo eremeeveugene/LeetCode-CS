@@ -37,6 +37,7 @@ public abstract class FindXSumOfAllKLongSubarrays1TestsBase<T> where T : IFindXS
     [DataRow(new[] { 10, 20, 10, 20, 10 }, 4, 2, new[] { 60, 60 })]
     [DataRow(new[] { 6, 1, 6, 1, 6, 1, 6 }, 3, 1, new[] { 12, 2, 12, 2, 12 })]
     [DataRow(new[] { 5, 3, 5, 3, 5, 3, 5 }, 5, 1, new[] { 15, 9, 15 })]
+    [DataRow(new[] { 1, 2, 3, 2 }, 3, 3, new[] { 6, 7 })]
     public void FindXSum_WithNumsKAndX_ReturnsXSumOfEachSubarray(int[] nums, int k, int x, int[] expectedResult)
     {
         // Arrange
