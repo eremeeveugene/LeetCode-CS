@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/21/2026 - 8:46:30 PM
-  Coverage date: 7/21/2026 - 8:45:58 PM - 7/21/2026 - 8:46:22 PM
+  Generated on: 7/22/2026 - 8:51:28 AM
+  Coverage date: 7/22/2026 - 8:50:57 AM - 7/22/2026 - 8:51:20 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1325
-  Files: 1325
+  Classes: 1327
+  Files: 1327
   Line coverage: 99.6%
-  Covered lines: 29885
+  Covered lines: 30045
   Uncovered lines: 118
-  Coverable lines: 30003
-  Total lines: 73433
-  Branch coverage: 97.7% (11041 of 11295)
-  Covered branches: 11041
-  Total branches: 11295
-  Method coverage: 100% (1943 of 1943)
-  Full method coverage: 96.9% (1883 of 1943)
-  Covered methods: 1943
-  Fully covered methods: 1883
-  Total methods: 1943
+  Coverable lines: 30163
+  Total lines: 73760
+  Branch coverage: 97.7% (11085 of 11339)
+  Covered branches: 11085
+  Total branches: 11339
+  Method coverage: 100% (1952 of 1952)
+  Full method coverage: 96.9% (1892 of 1952)
+  Covered methods: 1952
+  Fully covered methods: 1892
+  Total methods: 1952
 
 LeetCode                                                                                                                                                99.6%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -488,6 +488,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindWinnerOnTicTacToeGame.FindWinnerOnTicTacToeGameSimulation                                                                      100%
   LeetCode.Algorithms.FindWordsContainingCharacter.FindWordsContainingCharacterDictionary                                                                100%
   LeetCode.Algorithms.FindWordsContainingCharacter.FindWordsContainingCharacterIterative                                                                 100%
+  LeetCode.Algorithms.FindXSumOfAllKLongSubarrays1.FindXSumOfAllKLongSubarrays1SortingSlidingWindow                                                      100%
+  LeetCode.Algorithms.FindXSumOfAllKLongSubarrays1.FindXSumOfAllKLongSubarrays1TwoSortedSetsSlidingWindow                                                100%
   LeetCode.Algorithms.FirstCompletelyPaintedRowOrColumn.FirstCompletelyPaintedRowOrColumnDictionary                                                      100%
   LeetCode.Algorithms.FirstMatchingCharacterFromBothEnds.FirstMatchingCharacterFromBothEndsIterative                                                     100%
   LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveHashSet                                                                                   100%
