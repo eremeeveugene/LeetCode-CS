@@ -73,13 +73,18 @@ public sealed class FindXSumOfAllKLongSubarrays1SortingSlidingWindow : IFindXSum
                 keyIndex++;
             }
 
-            distinctNums[..distinctCount].Sort(
-                (first, second) =>
+            distinctNums[..distinctCount]
+                .Sort((first, second) =>
                 {
                     var firstFrequency = numToFrequencyDictionary[first];
                     var secondFrequency = numToFrequencyDictionary[second];
 
-                    return firstFrequency != secondFrequency ? secondFrequency - firstFrequency : second - first;
+                    if (firstFrequency != secondFrequency)
+                    {
+                        return secondFrequency - firstFrequency;
+                    }
+
+                    return second - first;
                 });
 
             var take = Math.Min(x, distinctCount);
