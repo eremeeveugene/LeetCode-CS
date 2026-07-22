@@ -818,6 +818,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3306. Count of Substrings Containing Every Vowel and K Consonants II](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/description/)
 - [3314. Construct the Minimum Bitwise Array I](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/description/)
 - [3315. Construct the Minimum Bitwise Array II](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/description/)
+- [3318. Find X-Sum of All K-Long Subarrays I](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/description/)
 - [3330. Find the Original Typed String I](https://leetcode.com/problems/find-the-original-typed-string-i/description/)
 - [3335. Total Characters in String After Transformations I](https://leetcode.com/problems/total-characters-in-string-after-transformations-i/description/)
 - [3340. Check Balanced String](https://leetcode.com/problems/check-balanced-string/description/)
