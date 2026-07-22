@@ -152,17 +152,6 @@ public sealed class FindXSumOfAllKLongSubarrays1TwoSortedSetsSlidingWindow : IFi
             topSum += promoted.Num * promoted.Frequency;
         }
 
-        while (top.Count > targetSize)
-        {
-            var demoted = top.Max;
-
-            top.Remove(demoted);
-            rest.Add(demoted);
-
-            numToIsInTopDictionary[demoted.Num] = false;
-            topSum -= demoted.Num * demoted.Frequency;
-        }
-
         while (top.Count > 0 && rest.Count > 0 && rest.Min.CompareTo(top.Max) < 0)
         {
             var promoted = rest.Min;
