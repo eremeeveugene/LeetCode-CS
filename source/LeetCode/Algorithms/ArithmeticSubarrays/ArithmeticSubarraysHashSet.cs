@@ -38,7 +38,7 @@ public sealed class ArithmeticSubarraysHashSet : IArithmeticSubarrays
 
             var subArrayLength = end - start + 1;
 
-            if (subArrayLength < 2 || (maxVal - minVal) % (subArrayLength - 1) != 0)
+            if ((maxVal - minVal) % (subArrayLength - 1) != 0)
             {
                 result[i] = false;
 
