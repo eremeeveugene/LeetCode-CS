@@ -35,11 +35,6 @@ public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
         {
             var nextNode = currentNode.NextNode;
 
-            if (nextNode == null)
-            {
-                return;
-            }
-
             if (nextNode.Count != currentNode.Count + 1)
             {
                 var newNode = new Node(currentNode.Count + 1);
@@ -53,11 +48,6 @@ public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
         }
         else
         {
-            if (_headNode.NextNode == null)
-            {
-                return;
-            }
-
             if (_headNode.NextNode.Count != 1)
             {
                 var newNode = new Node(1);
@@ -97,11 +87,6 @@ public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
         {
             var prevNode = currentNode.PreviousNode;
 
-            if (prevNode == null)
-            {
-                return;
-            }
-
             if (prevNode.Count != currentNode.Count - 1)
             {
                 var newNode = new Node(currentNode.Count - 1);
@@ -122,12 +107,14 @@ public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
     /// </remarks>
     public string GetMaxKey()
     {
-        if (_tailNode.PreviousNode == null)
+        if (_tailNode.PreviousNode == _headNode)
         {
             return string.Empty;
         }
-
-        return _tailNode.PreviousNode == _headNode ? string.Empty : GetFirstKey(_tailNode.PreviousNode);
+        else
+        {
+            return _tailNode.PreviousNode.KeysHashSet.First();
+        }
     }
 
     /// <inheritdoc />
@@ -137,12 +124,12 @@ public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
     /// </remarks>
     public string GetMinKey()
     {
-        if (_headNode.NextNode == null)
+        if (_headNode.NextNode == _tailNode)
         {
             return string.Empty;
         }
 
-        return _headNode.NextNode == _tailNode ? string.Empty : GetFirstKey(_headNode.NextNode);
+        return _headNode.NextNode.KeysHashSet.First();
     }
 
     private void MoveKey(string key, Node fromNode, Node toNode)
@@ -164,40 +151,31 @@ public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
         newNode.PreviousNode = prevNode;
         newNode.NextNode = prevNode.NextNode;
 
-        if (prevNode.NextNode != null)
-        {
-            prevNode.NextNode.PreviousNode = newNode;
-        }
-
+        prevNode.NextNode.PreviousNode = newNode;
         prevNode.NextNode = newNode;
     }
 
     private static void RemoveNode(Node node)
     {
-        if (node.PreviousNode != null)
-        {
-            node.PreviousNode.NextNode = node.NextNode;
-        }
-
-        if (node.NextNode != null)
-        {
-            node.NextNode.PreviousNode = node.PreviousNode;
-        }
+        node.PreviousNode.NextNode = node.NextNode;
+        node.NextNode.PreviousNode = node.PreviousNode;
     }
 
-    private static string GetFirstKey(Node node)
+    private class Node
     {
-        return node.KeysHashSet.Count > 0 ? node.KeysHashSet.First() : string.Empty;
-    }
+        public Node(int count)
+        {
+            Count = count;
+            PreviousNode = this;
+            NextNode = this;
+        }
 
-    private class Node(int count)
-    {
-        public int Count { get; } = count;
+        public int Count { get; }
 
         public HashSet<string> KeysHashSet { get; } = [];
 
-        public Node? PreviousNode { get; set; }
+        public Node PreviousNode { get; set; }
 
-        public Node? NextNode { get; set; }
+        public Node NextNode { get; set; }
     }
 }
