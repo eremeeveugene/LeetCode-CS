@@ -61,12 +61,7 @@ public sealed class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
             return false;
         }
 
-        if (_front == null)
-        {
-            return false;
-        }
-
-        _front = _front.Next;
+        _front = _front!.Next;
 
         _count--;
 
