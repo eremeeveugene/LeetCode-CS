@@ -37,6 +37,18 @@ public abstract class FindNumbersWithEvenNumberOfDigitsTestsBase<T> where T : IF
     [DataRow(new[] { 50, 500, 5000, 50000 }, 2)]
     [DataRow(new[] { 1234, 5678, 9012 }, 3)]
     [DataRow(new[] { 7 }, 0)]
+    [DataRow(new[] { 999999 }, 1)]
+    [DataRow(new[] { 1000000 }, 0)]
+    [DataRow(new[] { 1234567 }, 0)]
+    [DataRow(new[] { 10000000 }, 1)]
+    [DataRow(new[] { 12345678 }, 1)]
+    [DataRow(new[] { 99999999 }, 1)]
+    [DataRow(new[] { 100000000 }, 0)]
+    [DataRow(new[] { 123456789 }, 0)]
+    [DataRow(new[] { 1000000000 }, 1)]
+    [DataRow(new[] { 1234567890 }, 1)]
+    [DataRow(new[] { 2147483647 }, 1)]
+    [DataRow(new[] { 12345678, 1234567890, 1234567, 123456789 }, 2)]
     public void FindNumbers_WithArrayOfIntegers_ReturnsCountOfNumbersWithEvenNumberOfDigits(int[] nums, int expectedResult)
     {
         // Arrange
