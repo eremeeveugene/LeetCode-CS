@@ -21,9 +21,14 @@ public sealed class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirst
     ///     Time complexity - O(n)
     ///     Space complexity - O(n) for a skewed tree, O(log n) for balanced tree
     /// </remarks>
-    public TreeNode? GetTargetCopy(TreeNode? original, TreeNode? cloned, TreeNode? target)
+    public TreeNode GetTargetCopy(TreeNode original, TreeNode cloned, TreeNode target)
     {
-        if (original == null || cloned == null || target == null)
+        return FindTargetCopy(original, cloned, target)!;
+    }
+
+    private static TreeNode? FindTargetCopy(TreeNode? original, TreeNode? cloned, TreeNode target)
+    {
+        if (original == null)
         {
             return null;
         }
@@ -33,8 +38,6 @@ public sealed class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirst
             return cloned;
         }
 
-        var node = GetTargetCopy(original.left, cloned.left, target);
-
-        return node ?? GetTargetCopy(original.right, cloned.right, target);
+        return FindTargetCopy(original.left, cloned!.left, target) ?? FindTargetCopy(original.right, cloned!.right, target);
     }
 }
