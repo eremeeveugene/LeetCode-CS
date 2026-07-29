@@ -102,5 +102,9 @@ public abstract class WalkingRobotSimulationTestsBase<T> where T : IWalkingRobot
         yield return [new[] { 3, 3, 3 }, Array.Empty<int[]>(), 81];
 
         yield return [new[] { 1, 1, 1, 1 }, new[] { new[] { 1, 1 } }, 16];
+
+        yield return [new[] { -1, -1, 5 }, new[] { new[] { 0, -1 } }, 0];
+
+        yield return [new[] { -2, 5 }, new[] { new[] { -1, 0 } }, 0];
     }
 }
