@@ -33,11 +33,11 @@ public sealed class DeleteTheMiddleNodeOfALinkedListTwoPointers : IDeleteTheMidd
 
         while (fast?.next != null)
         {
-            slow = slow?.next;
+            slow = slow!.next;
             fast = fast.next.next;
         }
 
-        slow?.next = slow.next?.next;
+        slow!.next = slow.next!.next;
 
         return head;
     }
