@@ -47,22 +47,13 @@ public sealed class CheckIfThereIsValidPathInGridSimulation : ICheckIfThereIsVal
         int rowOffset,
         int columnOffset)
     {
-        var maxSteps = rowCount * columnCount;
-
-        for (var step = 0; step < maxSteps; step++)
+        if (!CanMove(grid[row][column], rowOffset, columnOffset))
         {
-            var street = grid[row][column];
+            return false;
+        }
 
-            if (!CanMove(street, rowOffset, columnOffset))
-            {
-                return false;
-            }
-
-            if (row == rowCount - 1 && column == columnCount - 1)
-            {
-                return true;
-            }
-
+        while (row != rowCount - 1 || column != columnCount - 1)
+        {
             visited[(row * columnCount) + column] = stamp;
 
             var incomingRowOffset = -rowOffset;
@@ -76,19 +67,17 @@ public sealed class CheckIfThereIsValidPathInGridSimulation : ICheckIfThereIsVal
                 return false;
             }
 
-            street = grid[row][column];
+            var street = grid[row][column];
 
-            if (CanMove(street, incomingRowOffset, incomingColumnOffset))
-            {
-                GetNextOffset(street, incomingRowOffset, incomingColumnOffset, out rowOffset, out columnOffset);
-            }
-            else
+            if (!CanMove(street, incomingRowOffset, incomingColumnOffset))
             {
                 return false;
             }
+
+            GetNextOffset(street, incomingRowOffset, incomingColumnOffset, out rowOffset, out columnOffset);
         }
 
-        return false;
+        return true;
     }
 
     private static bool CanMove(int street, int rowOffset, int columnOffset)
