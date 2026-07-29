@@ -37,18 +37,17 @@ public sealed class KthLargestElementInAnArrayCountingSort : IKthLargestElementI
             numsFrequencies[num + NumOffset]++;
         }
 
-        for (var i = NumsFrequenciesLength - 1; i >= 0; i--)
+        var index = NumsFrequenciesLength - 1;
+
+        k -= numsFrequencies[index];
+
+        while (k > 0)
         {
-            k -= numsFrequencies[i];
+            index--;
 
-            if (k > 0)
-            {
-                continue;
-            }
-
-            return i - NumOffset;
+            k -= numsFrequencies[index];
         }
 
-        return -1;
+        return index - NumOffset;
     }
 }
