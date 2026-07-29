@@ -863,6 +863,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3508. Implement Router](https://leetcode.com/problems/implement-router/description/)
 - [3512. Minimum Operations to Make Array Sum Divisible by K](https://leetcode.com/problems/minimum-operations-to-make-array-sum-divisible-by-k/description/)
 - [3516. Find Closest Person](https://leetcode.com/problems/find-closest-person/description/)
+- [3517. Smallest Palindromic Rearrangement I](https://leetcode.com/problems/smallest-palindromic-rearrangement-i/description/)
 - [3531. Count Covered Buildings](https://leetcode.com/problems/count-covered-buildings/description/)
 - [3536. Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/description/)
 - [3539. Reschedule Meetings for Maximum Free Time I](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/description/)
