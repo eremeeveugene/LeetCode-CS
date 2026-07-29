@@ -21,29 +21,19 @@ public sealed class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirst
     ///     Time complexity - O(n)
     ///     Space complexity - O(n) for a skewed tree, O(log n) for balanced tree
     /// </remarks>
-    public TreeNode? GetTargetCopy(TreeNode? original, TreeNode? cloned, TreeNode? target)
+    public TreeNode GetTargetCopy(TreeNode original, TreeNode cloned, TreeNode target)
     {
-        if (original == null || cloned == null || target == null)
-        {
-            return null;
-        }
-
         var originalStack = new Stack<TreeNode>();
         var clonedStack = new Stack<TreeNode>();
 
         originalStack.Push(original);
         clonedStack.Push(cloned);
 
-        while (originalStack.Count > 0)
+        var originalNode = originalStack.Pop();
+        var clonedNode = clonedStack.Pop();
+
+        while (!originalNode.Equals(target))
         {
-            var originalNode = originalStack.Pop();
-            var clonedNode = clonedStack.Pop();
-
-            if (originalNode.Equals(target))
-            {
-                return clonedNode;
-            }
-
             if (originalNode.left != null)
             {
                 originalStack.Push(originalNode.left);
@@ -63,8 +53,11 @@ public sealed class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirst
             {
                 clonedStack.Push(clonedNode.right);
             }
+
+            originalNode = originalStack.Pop();
+            clonedNode = clonedStack.Pop();
         }
 
-        return null;
+        return clonedNode;
     }
 }
