@@ -33,7 +33,7 @@ public sealed class NRepeatedElementInSize2NArrayLookup : INRepeatedElementInSiz
         {
             var num = nums[i];
 
-            if (!numsLookup[num])
+            if (numsLookup[num])
             {
                 break;
             }
