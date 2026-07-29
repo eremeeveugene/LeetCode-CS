@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/29/2026 - 12:24:36 PM
-  Coverage date: 7/29/2026 - 12:24:02 PM - 7/29/2026 - 12:24:27 PM
+  Generated on: 7/29/2026 - 1:03:20 PM
+  Coverage date: 7/29/2026 - 1:02:48 PM - 7/29/2026 - 1:03:12 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1329
-  Files: 1329
+  Classes: 1330
+  Files: 1330
   Line coverage: 99.6%
-  Covered lines: 30073
+  Covered lines: 30115
   Uncovered lines: 114
-  Coverable lines: 30187
-  Total lines: 73846
-  Branch coverage: 97.8% (11089 of 11327)
-  Covered branches: 11089
-  Total branches: 11327
-  Method coverage: 100% (1953 of 1953)
-  Full method coverage: 97% (1896 of 1953)
-  Covered methods: 1953
-  Fully covered methods: 1896
-  Total methods: 1953
+  Coverable lines: 30229
+  Total lines: 73939
+  Branch coverage: 97.9% (11099 of 11337)
+  Covered branches: 11099
+  Total branches: 11337
+  Method coverage: 100% (1956 of 1956)
+  Full method coverage: 97% (1899 of 1956)
+  Covered methods: 1956
+  Fully covered methods: 1899
+  Total methods: 1956
 
 LeetCode                                                                                                                                                99.6%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1148,6 +1148,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SmallestNumberWithAllSetBits.SmallestNumberWithAllSetBitsMath                                                                      100%
   LeetCode.Algorithms.SmallestNumberWithAllSetBits.SmallestNumberWithAllSetBitsSwitch                                                                    100%
   LeetCode.Algorithms.SmallestPairWithDifferentFrequencies.SmallestPairWithDifferentFrequenciesLookup                                                    100%
+  LeetCode.Algorithms.SmallestPalindromicRearrangement1.SmallestPalindromicRearrangement1Counting                                                        100%
   LeetCode.Algorithms.SmallestRange1.SmallestRange1Greedy                                                                                                100%
   LeetCode.Algorithms.SmallestRangeCoveringElementsFromKLists.SmallestRangeCoveringElementsFromKListsSortingWithSlidingWindow                            100%
   LeetCode.Algorithms.SmallestStableIndex1.SmallestStableIndex1BruteForce                                                                                100%
