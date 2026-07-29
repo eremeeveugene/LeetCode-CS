@@ -47,8 +47,7 @@ public sealed class DifferentWaysToAddParenthesesRecursive : IDifferentWaysToAdd
                     {
                         '+' => leftResult + rightResult,
                         '-' => leftResult - rightResult,
-                        '*' => leftResult * rightResult,
-                        _ => 0
+                        _ => leftResult * rightResult
                     }));
             }
         }
