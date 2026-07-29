@@ -95,6 +95,30 @@ public abstract class ImplementRouterTestsBase
                 [new AddPacketOperation(1, 2, 10), new ForwardPacketOperation(), new ForwardPacketOperation()],
                 [new AddPacketOperation.Result(true), new ForwardPacketOperation.Result([1, 2, 10]), new ForwardPacketOperation.Result([])])
         ];
+
+        yield return
+        [
+            new RouterScenario(
+                5,
+                [new AddPacketOperation(1, 2, 10), new GetCountOperation(99, 0, 100)],
+                [new AddPacketOperation.Result(true), new GetCountOperation.Result(0)])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                5,
+                [new AddPacketOperation(1, 2, 10), new ForwardPacketOperation(), new GetCountOperation(2, 0, 100)],
+                [new AddPacketOperation.Result(true), new ForwardPacketOperation.Result([1, 2, 10]), new GetCountOperation.Result(0)])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                5,
+                [new AddPacketOperation(1, 2, 10), new GetCountOperation(2, 20, 30)],
+                [new AddPacketOperation.Result(true), new GetCountOperation.Result(0)])
+        ];
     }
 
     public sealed class RouterScenario : IScenario<IImplementRouter>
