@@ -21,7 +21,7 @@ public abstract class EvaluateBooleanBinaryTreeTestsBase<T> where T : IEvaluateB
     public void EvaluateTree_GivenJsonTreeStructure_ReturnsBooleanEvaluationResult(int?[] rootArray, bool expectedResult)
     {
         // Arrange
-        var root = TreeNode.ToTreeNode(rootArray);
+        var root = TreeNode.ToTreeNodeOrThrow(rootArray);
 
         var solution = new T();
 
