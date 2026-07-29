@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Runtime.InteropServices;
+
 namespace LeetCode.Algorithms.TwoOutOfThree;
 
 /// <inheritdoc />
@@ -21,35 +23,34 @@ public sealed class TwoOutOfThreeFrequencyDictionary : ITwoOutOfThree
     /// </remarks>
     public IList<int> TwoOutOfThree(int[] nums1, int[] nums2, int[] nums3)
     {
-        var frequencyDictionary = new Dictionary<int, int>();
+        var numToMaskDictionary = new Dictionary<int, int>();
 
-        foreach (var num1 in new HashSet<int>(nums1).Where(num1 => !frequencyDictionary.TryAdd(num1, 1)))
-        {
-            frequencyDictionary[num1]++;
-        }
-
-        foreach (var num2 in new HashSet<int>(nums2).Where(num2 => !frequencyDictionary.TryAdd(num2, 1)))
-        {
-            frequencyDictionary[num2]++;
-        }
-
-        foreach (var num3 in new HashSet<int>(nums3).Where(num3 => !frequencyDictionary.TryAdd(num3, 1)))
-        {
-            frequencyDictionary[num3]++;
-        }
+        AddPresence(nums1, 1, numToMaskDictionary);
+        AddPresence(nums2, 2, numToMaskDictionary);
+        AddPresence(nums3, 4, numToMaskDictionary);
 
         var result = new List<int>();
 
-        foreach (var frequency in frequencyDictionary)
+        foreach (var pair in numToMaskDictionary)
         {
-            if (frequency.Value < 2)
+            if ((pair.Value & (pair.Value - 1)) != 0)
             {
-                continue;
+                result.Add(pair.Key);
             }
-
-            result.Add(frequency.Key);
         }
 
         return result;
+    }
+
+    private static void AddPresence(int[] nums, int arrayBit, Dictionary<int, int> numToMaskDictionary)
+    {
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            ref var mask = ref CollectionsMarshal.GetValueRefOrAddDefault(numToMaskDictionary, num, out _);
+
+            mask |= arrayBit;
+        }
     }
 }
