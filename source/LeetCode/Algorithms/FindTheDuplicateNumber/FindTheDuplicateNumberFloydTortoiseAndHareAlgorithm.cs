@@ -21,11 +21,6 @@ public sealed class FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm : IFindT
     /// </remarks>
     public int FindDuplicate(int[] nums)
     {
-        if (nums.Length <= 1)
-        {
-            return -1;
-        }
-
         var slow = nums[0];
         var fast = nums[slow];
 

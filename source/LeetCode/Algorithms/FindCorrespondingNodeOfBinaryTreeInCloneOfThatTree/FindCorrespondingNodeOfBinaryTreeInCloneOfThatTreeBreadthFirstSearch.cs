@@ -21,29 +21,19 @@ public sealed class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeBreadthFir
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
     /// </remarks>
-    public TreeNode? GetTargetCopy(TreeNode? original, TreeNode? cloned, TreeNode? target)
+    public TreeNode GetTargetCopy(TreeNode original, TreeNode cloned, TreeNode target)
     {
-        if (original == null || cloned == null || target == null)
-        {
-            return null;
-        }
-
         var originalQueue = new Queue<TreeNode>();
         var clonedQueue = new Queue<TreeNode>();
 
         originalQueue.Enqueue(original);
         clonedQueue.Enqueue(cloned);
 
-        while (originalQueue.Count > 0)
+        var originalNode = originalQueue.Dequeue();
+        var clonedNode = clonedQueue.Dequeue();
+
+        while (!originalNode.Equals(target))
         {
-            var originalNode = originalQueue.Dequeue();
-            var clonedNode = clonedQueue.Dequeue();
-
-            if (originalNode.Equals(target))
-            {
-                return clonedNode;
-            }
-
             if (originalNode.left != null)
             {
                 originalQueue.Enqueue(originalNode.left);
@@ -63,8 +53,11 @@ public sealed class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeBreadthFir
             {
                 clonedQueue.Enqueue(clonedNode.right);
             }
+
+            originalNode = originalQueue.Dequeue();
+            clonedNode = clonedQueue.Dequeue();
         }
 
-        return null;
+        return clonedNode;
     }
 }

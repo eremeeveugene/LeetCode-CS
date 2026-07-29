@@ -56,15 +56,9 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixTrie : IFindTheLengthOf
 
             foreach (var idx in numStr.Select(digit => digit - '0'))
             {
-                if (node?.Children[idx] == null)
-                {
-                    if (node != null)
-                    {
-                        node.Children[idx] = new TrieNode();
-                    }
-                }
+                node.Children[idx] ??= new TrieNode();
 
-                node = node?.Children[idx];
+                node = node.Children[idx]!;
             }
         }
 
@@ -76,11 +70,11 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixTrie : IFindTheLengthOf
 
             foreach (var idx in numStr.Select(digit => digit - '0'))
             {
-                if (node?.Children[idx] != null)
+                if (node.Children[idx] != null)
                 {
                     longestPrefix++;
 
-                    node = node.Children[idx];
+                    node = node.Children[idx]!;
                 }
                 else
                 {

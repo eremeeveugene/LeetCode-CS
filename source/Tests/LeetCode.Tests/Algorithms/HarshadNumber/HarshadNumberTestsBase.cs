@@ -18,6 +18,7 @@ public abstract class HarshadNumberTestsBase<T> where T : IHarshadNumber, new()
     [TestMethod]
     [DataRow(18, 9)]
     [DataRow(23, -1)]
+    [DataRow(0, -1)]
     public void SumOfTheDigitsOfHarshadNumber_GivenInputNumber_ReturnsSumOrMinusOne(int x, int expectedResult)
     {
         // Arrange

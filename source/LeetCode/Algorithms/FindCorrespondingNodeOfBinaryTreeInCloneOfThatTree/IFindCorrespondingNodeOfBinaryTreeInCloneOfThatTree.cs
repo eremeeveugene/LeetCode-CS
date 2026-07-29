@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree;
 
 /// <summary>
-///     https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/
+///     https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/description
 /// </summary>
 public interface IFindCorrespondingNodeOfBinaryTreeInCloneOfThatTree
 {
@@ -27,5 +27,5 @@ public interface IFindCorrespondingNodeOfBinaryTreeInCloneOfThatTree
     /// <param name="cloned">The root node of the cloned binary tree.</param>
     /// <param name="target">The node in <paramref name="original" /> whose counterpart is being searched for.</param>
     /// <returns>The node in <paramref name="cloned" /> corresponding to <paramref name="target" />.</returns>
-    TreeNode? GetTargetCopy(TreeNode? original, TreeNode? cloned, TreeNode? target);
+    TreeNode GetTargetCopy(TreeNode original, TreeNode cloned, TreeNode target);
 }

@@ -34,7 +34,7 @@ public sealed class DeleteNodeFromLinkedListPresentInArrayBinarySearch : IDelete
 
         var node = dummyHead;
 
-        while (node?.next != null)
+        while (node.next != null)
         {
             if (BinarySearch(nums, node.next.val))
             {

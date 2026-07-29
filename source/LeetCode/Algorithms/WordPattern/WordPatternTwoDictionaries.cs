@@ -43,12 +43,9 @@ public sealed class WordPatternTwoDictionaries : IWordPattern
             }
             else
             {
-                if (sHashSet.TryGetValue(sArray[i], out var sValue))
+                if (sHashSet.ContainsKey(sArray[i]))
                 {
-                    if (sValue != pattern[i])
-                    {
-                        return false;
-                    }
+                    return false;
                 }
 
                 sHashSet.Add(sArray[i], pattern[i]);

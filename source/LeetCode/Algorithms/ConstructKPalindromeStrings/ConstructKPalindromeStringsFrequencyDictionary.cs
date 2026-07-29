@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Runtime.InteropServices;
+
 namespace LeetCode.Algorithms.ConstructKPalindromeStrings;
 
 /// <inheritdoc />
@@ -26,13 +28,27 @@ public sealed class ConstructKPalindromeStringsFrequencyDictionary : IConstructK
             return false;
         }
 
-        var frequencyDictionary = new Dictionary<char, int>();
+        var charToCountDictionary = new Dictionary<char, int>();
 
-        foreach (var c in s.Where(c => !frequencyDictionary.TryAdd(c, 1)))
+        for (var i = 0; i < s.Length; i++)
         {
-            frequencyDictionary[c]++;
+            var c = s[i];
+
+            ref var count = ref CollectionsMarshal.GetValueRefOrAddDefault(charToCountDictionary, c, out _);
+
+            count++;
         }
 
-        return frequencyDictionary.Count(frequency => frequency.Value % 2 == 1) <= k;
+        var oddCount = 0;
+
+        foreach (var count in charToCountDictionary.Values)
+        {
+            if (count % 2 == 1)
+            {
+                oddCount++;
+            }
+        }
+
+        return oddCount <= k;
     }
 }

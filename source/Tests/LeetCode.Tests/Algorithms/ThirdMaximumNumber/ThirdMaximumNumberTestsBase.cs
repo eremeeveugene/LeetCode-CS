@@ -23,6 +23,18 @@ public abstract class ThirdMaximumNumberTestsBase<T> where T : IThirdMaximumNumb
     [DataRow(new[] { 14 }, 14)]
     [DataRow(new[] { 1, 2, -2147483648 }, int.MinValue)]
     [DataRow(new[] { 1, -2147483648, 2 }, int.MinValue)]
+    [DataRow(new[] { 5, 4, 3, 2 }, 3)]
+    [DataRow(new[] { 5, 4, 1, 3 }, 3)]
+    [DataRow(new[] { 4, 3, 2, 1 }, 2)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 3)]
+    [DataRow(new[] { 10, 5, 7, 3 }, 5)]
+    [DataRow(new[] { 3, 3, 3 }, 3)]
+    [DataRow(new[] { 1, 2, 2, 3 }, 1)]
+    [DataRow(new[] { 2, 3, 1 }, 1)]
+    [DataRow(new[] { 5, 5, 4, 3 }, 3)]
+    [DataRow(new[] { 100, 90, 80, 70 }, 80)]
+    [DataRow(new[] { -1, -2, -3 }, -3)]
+    [DataRow(new[] { 0, -1, -2 }, -2)]
     public void ThirdMax_WithIntArray_ReturnsThirdMaximumOrMaximum(int[] nums, int expectedResult)
     {
         // Arrange
