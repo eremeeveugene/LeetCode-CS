@@ -38,6 +38,8 @@ public abstract class GenerateTagForVideoCaptionTestsBase<T> where T : IGenerate
     [DataRow("Hello Claude Code", "#helloClaudeCode")]
     [DataRow("open source project", "#openSourceProject")]
     [DataRow("UPPER CASE INPUT", "#upperCaseInput")]
+    [DataRow(" ", "#")]
+    [DataRow("   ", "#")]
     public void GenerateTag_WithCaptionContainingMultipleWords_ReturnsCamelCaseHashTag(string caption, string expectedResult)
     {
         // Arrange
