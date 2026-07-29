@@ -27,5 +27,5 @@ public interface IFindCorrespondingNodeOfBinaryTreeInCloneOfThatTree
     /// <param name="cloned">The root node of the cloned binary tree.</param>
     /// <param name="target">The node in <paramref name="original" /> whose counterpart is being searched for.</param>
     /// <returns>The node in <paramref name="cloned" /> corresponding to <paramref name="target" />.</returns>
-    TreeNode? GetTargetCopy(TreeNode? original, TreeNode? cloned, TreeNode? target);
+    TreeNode GetTargetCopy(TreeNode original, TreeNode cloned, TreeNode target);
 }
