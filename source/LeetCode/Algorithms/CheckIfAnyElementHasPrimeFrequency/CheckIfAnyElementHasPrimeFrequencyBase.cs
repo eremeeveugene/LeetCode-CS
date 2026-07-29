@@ -29,10 +29,7 @@ public abstract class CheckIfAnyElementHasPrimeFrequencyBase : ICheckIfAnyElemen
     {
         var isPrime = new bool[max + 1];
 
-        if (max >= 2)
-        {
-            isPrime[2] = true;
-        }
+        isPrime[2] = true;
 
         for (var i = 3; i <= max; i += 2)
         {
@@ -50,26 +47,6 @@ public abstract class CheckIfAnyElementHasPrimeFrequencyBase : ICheckIfAnyElemen
             {
                 isPrime[multiple] = false;
             }
-        }
-
-        if (max >= 2)
-        {
-            isPrime[2] = true;
-        }
-
-        if (max >= 3)
-        {
-            isPrime[3] = true;
-        }
-
-        if (max >= 0)
-        {
-            isPrime[0] = false;
-        }
-
-        if (max >= 1)
-        {
-            isPrime[1] = false;
         }
 
         return isPrime;
