@@ -91,17 +91,19 @@ public sealed class DesignNeighborSumServiceBruteForce : IDesignNeighborSumServi
 
     private (int X, int Y) FindPosition(int value)
     {
+        (int X, int Y) position = (0, 0);
+
         for (var i = 0; i < _grid.Length; i++)
         {
             for (var j = 0; j < _grid[i].Length; j++)
             {
                 if (_grid[i][j] == value)
                 {
-                    return (i, j);
+                    position = (i, j);
                 }
             }
         }
 
-        return (-1, -1);
+        return position;
     }
 }
