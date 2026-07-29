@@ -25,18 +25,24 @@ public sealed class NRepeatedElementInSize2NArrayLookup : INRepeatedElementInSiz
     {
         Span<bool> numsLookup = stackalloc bool[MaxValue + 1];
 
-        for (var i = 0; i < nums.Length; i++)
+        var n = nums.Length;
+
+        var i = 0;
+
+        while (i < n)
         {
             var num = nums[i];
 
-            if (numsLookup[num])
+            if (!numsLookup[num])
             {
-                return num;
+                break;
             }
 
             numsLookup[num] = true;
+
+            i++;
         }
 
-        return 0;
+        return nums[i];
     }
 }

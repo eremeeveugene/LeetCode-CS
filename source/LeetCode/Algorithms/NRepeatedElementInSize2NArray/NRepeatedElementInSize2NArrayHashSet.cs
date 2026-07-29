@@ -23,18 +23,22 @@ public sealed class NRepeatedElementInSize2NArrayHashSet : INRepeatedElementInSi
     {
         var numsHashSet = new HashSet<int>();
 
-        for (var i = 0; i < nums.Length; i++)
+        var n = nums.Length;
+
+        var i = 0;
+
+        while (i < n)
         {
             var num = nums[i];
 
-            if (numsHashSet.Add(num))
+            if (!numsHashSet.Add(num))
             {
-                continue;
+                break;
             }
 
-            return num;
+            i++;
         }
 
-        return 0;
+        return nums[i];
     }
 }
