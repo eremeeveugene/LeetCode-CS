@@ -21,17 +21,45 @@ public sealed class FindTheDuplicateNumberBruteForce : IFindTheDuplicateNumber
     /// </remarks>
     public int FindDuplicate(int[] nums)
     {
+        var duplicate = nums[0];
+
         for (var i = 0; i < nums.Length; i++)
         {
-            for (var j = i + 1; j < nums.Length; j++)
+            var num = nums[i];
+
+            if (!HasDuplicate(nums, num, i))
             {
-                if (nums[i] == nums[j])
-                {
-                    return nums[i];
-                }
+                continue;
+            }
+
+            duplicate = nums[i];
+
+            break;
+        }
+
+        return duplicate;
+    }
+
+    /// <summary>
+    ///     Determines whether <paramref name="value" /> appears again in <paramref name="nums" /> at any index after
+    ///     <paramref name="i" />.
+    /// </summary>
+    /// <param name="nums">The array to scan.</param>
+    /// <param name="value">The value to search for a later occurrence of.</param>
+    /// <param name="i">The index whose value is being checked; scanning starts at the next index.</param>
+    /// <returns><c>true</c> if a later element equals <paramref name="value" />; otherwise, <c>false</c>.</returns>
+    private static bool HasDuplicate(int[] nums, int value, int i)
+    {
+        for (var j = i + 1; j < nums.Length; j++)
+        {
+            var num = nums[j];
+
+            if (num == value)
+            {
+                return true;
             }
         }
 
-        return -1;
+        return false;
     }
 }
