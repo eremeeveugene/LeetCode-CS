@@ -1,25 +1,25 @@
 Summary
-  Generated on: 7/29/2026 - 4:52:02 PM
-  Coverage date: 7/29/2026 - 4:51:30 PM - 7/29/2026 - 4:51:54 PM
+  Generated on: 7/29/2026 - 6:36:36 PM
+  Coverage date: 7/29/2026 - 6:36:03 PM - 7/29/2026 - 6:36:28 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
   Classes: 1330
   Files: 1330
-  Line coverage: 99.6%
-  Covered lines: 30113
-  Uncovered lines: 100
-  Coverable lines: 30213
-  Total lines: 73917
-  Branch coverage: 98% (11099 of 11315)
-  Covered branches: 11099
-  Total branches: 11315
-  Method coverage: 100% (1956 of 1956)
-  Full method coverage: 97.5% (1908 of 1956)
-  Covered methods: 1956
-  Fully covered methods: 1908
-  Total methods: 1956
+  Line coverage: 99.7%
+  Covered lines: 30139
+  Uncovered lines: 68
+  Coverable lines: 30207
+  Total lines: 73926
+  Branch coverage: 98.5% (11083 of 11249)
+  Covered branches: 11083
+  Total branches: 11249
+  Method coverage: 100% (1959 of 1959)
+  Full method coverage: 98.1% (1923 of 1959)
+  Covered methods: 1959
+  Fully covered methods: 1923
+  Total methods: 1959
 
-LeetCode                                                                                                                                                99.6%
+LeetCode                                                                                                                                                99.7%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsSorting                     100%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                       100%
@@ -292,7 +292,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignBrowserHistory.DesignBrowserHistoryArray                                                                                     100%
   LeetCode.Algorithms.DesignBrowserHistory.DesignBrowserHistoryLinkedList                                                                                100%
   LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedList                                                                                  100%
-  LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedList                                                                                 96.2%
+  LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedList                                                                                  100%
   LeetCode.Algorithms.DesignFoodRatingSystem.DesignFoodRatingSystemDictionaryWithPriorityQueue                                                          98.3%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueLinkedList                                                                   98.4%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueList                                                                          100%
@@ -384,9 +384,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindCommonCharacters.FindCommonCharactersDictionary                                                                                100%
   LeetCode.Algorithms.FindCommonElementsBetweenTwoArrays.FindCommonElementsBetweenTwoArraysBruteForce                                                    100%
   LeetCode.Algorithms.FindCommonElementsBetweenTwoArrays.FindCommonElementsBetweenTwoArraysHashSet                                                       100%
-  LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeBreadthFirstSearch           91.1%
+  LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeBreadthFirstSearch            100%
   LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchRecursive     100%
-  LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStack        91.1%
+  LeetCode.Algorithms.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirstSearchStack         100%
   LeetCode.Algorithms.FindElementsInContaminatedBinaryTree.FindElementsInContaminatedBinaryTreeDepthFirstSearch                                          100%
   LeetCode.Algorithms.FindElementsInContaminatedBinaryTree.FindElementsInContaminatedBinaryTreeHashSet                                                   100%
   LeetCode.Algorithms.FindEventualSafeStates.FindEventualSafeStatesDepthFirstSearch                                                                      100%
@@ -438,8 +438,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheDifference.FindTheDifferenceBitwise                                                                                         100%
   LeetCode.Algorithms.FindTheDifference.FindTheDifferenceDictionary                                                                                      100%
   LeetCode.Algorithms.FindTheDifferenceOfTwoArrays.FindTheDifferenceOfTwoArraysHashSet                                                                   100%
-  LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberBruteForce                                                                           91.6%
-  LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm                                                        89.4%
+  LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberBruteForce                                                                            100%
+  LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm                                                         100%
   LeetCode.Algorithms.FindTheEncryptedString.FindTheEncryptedStringIterative                                                                             100%
   LeetCode.Algorithms.FindTheHighestAltitude.FindTheHighestAltitudeIterative                                                                             100%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                                       100%
@@ -512,8 +512,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FruitsIntoBaskets2.FruitsIntoBaskets2BruteForce                                                                                    100%
   LeetCode.Algorithms.FurthestPointFromOrigin.FurthestPointFromOriginGreedy                                                                              100%
   LeetCode.Algorithms.GcdOfOddAndEvenSums.GcdOfOddAndEvenSumsMath                                                                                        100%
-  LeetCode.Algorithms.GenerateTagForVideoCaption.GenerateTagForVideoCaptionCharArray                                                                    94.7%
-  LeetCode.Algorithms.GenerateTagForVideoCaption.GenerateTagForVideoCaptionStringBuilder                                                                80.6%
+  LeetCode.Algorithms.GenerateTagForVideoCaption.GenerateTagForVideoCaptionCharArray                                                                     100%
+  LeetCode.Algorithms.GenerateTagForVideoCaption.GenerateTagForVideoCaptionStringBuilder                                                                 100%
   LeetCode.Algorithms.GetEqualSubstringsWithinBudget.GetEqualSubstringsWithinBudgetSlidingWindow                                                         100%
   LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationReplace                                                                           100%
   LeetCode.Algorithms.GoalParserInterpretation.GoalParserInterpretationStringBuilder                                                                     100%
@@ -534,7 +534,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing                    100%
   LeetCode.Algorithms.ImplementQueueUsingStacks.ImplementQueueUsingStacksAmortized                                                                      92.8%
   LeetCode.Algorithms.ImplementQueueUsingStacks.ImplementQueueUsingStacksTwoStacks                                                                       100%
-  LeetCode.Algorithms.ImplementRouter.ImplementRouterDictionaryWithBinarySearch                                                                           95%
+  LeetCode.Algorithms.ImplementRouter.ImplementRouterDictionaryWithBinarySearch                                                                          100%
   LeetCode.Algorithms.ImplementStackUsingQueues.ImplementStackUsingQueuesOneQueue                                                                        100%
   LeetCode.Algorithms.ImplementStackUsingQueues.ImplementStackUsingQueuesTwoQueues                                                                       100%
   LeetCode.Algorithms.ImplementTrie.ImplementTrieArray                                                                                                   100%
@@ -573,7 +573,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo.KeepMultiplyingFoundValuesByTwoSpanLookup                                                          100%
   LeetCode.Algorithms.KeyboardRow.KeyboardRowLookup                                                                                                      100%
   LeetCode.Algorithms.KthDistinctStringInAnArray.KthDistinctStringInAnArrayDictionary                                                                    100%
-  LeetCode.Algorithms.KthLargestElementInAnArray.KthLargestElementInAnArrayCountingSort                                                                 94.1%
+  LeetCode.Algorithms.KthLargestElementInAnArray.KthLargestElementInAnArrayCountingSort                                                                  100%
   LeetCode.Algorithms.KthLargestElementInAnArray.KthLargestElementInAnArrayPriorityQueue                                                                 100%
   LeetCode.Algorithms.KthLargestElementInAnArray.KthLargestElementInAnArrayQuickSelect                                                                    97%
   LeetCode.Algorithms.KthLargestElementInAnArray.KthLargestElementInAnArraySorting                                                                       100%
@@ -1277,7 +1277,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.TwoKeysKeyboard.TwoKeysKeyboardPrimeFactorization                                                                                  100%
   LeetCode.Algorithms.TwoKeysKeyboard.TwoKeysKeyboardSimulation                                                                                          100%
   LeetCode.Algorithms.TwoOutOfThree.TwoOutOfThreeFrequencyArray                                                                                          100%
-  LeetCode.Algorithms.TwoOutOfThree.TwoOutOfThreeFrequencyDictionary                                                                                    87.5%
+  LeetCode.Algorithms.TwoOutOfThree.TwoOutOfThreeFrequencyDictionary                                                                                     100%
   LeetCode.Algorithms.TwoOutOfThree.TwoOutOfThreeHashSet                                                                                                 100%
   LeetCode.Algorithms.TwoSum.TwoSumBruteForce                                                                                                            100%
   LeetCode.Algorithms.TwoSum.TwoSumDictionary                                                                                                            100%
@@ -1315,7 +1315,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ValidWord.ValidWordIterative                                                                                                       100%
   LeetCode.Algorithms.VowelsGameInString.VowelsGameInStringMath                                                                                          100%
   LeetCode.Algorithms.VowelSpellchecker.VowelSpellcheckerDictionary                                                                                      100%
-  LeetCode.Algorithms.WalkingRobotSimulation.WalkingRobotSimulationHashSet                                                                              93.3%
+  LeetCode.Algorithms.WalkingRobotSimulation.WalkingRobotSimulationHashSet                                                                               100%
   LeetCode.Algorithms.WalkingRobotSimulation2.WalkingRobotSimulation2Simulation                                                                          100%
   LeetCode.Algorithms.WaterBottles.WaterBottlesSimulation                                                                                                100%
   LeetCode.Algorithms.WaterBottles2.WaterBottles2Math                                                                                                    100%
@@ -1326,7 +1326,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsAscending                 100%
   LeetCode.Algorithms.WidestVerticalAreaBetweenTwoPointsContainingNoPoints.WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescending                100%
   LeetCode.Algorithms.WordPattern.WordPatternDictionary                                                                                                  100%
-  LeetCode.Algorithms.WordPattern.WordPatternTwoDictionaries                                                                                            96.4%
+  LeetCode.Algorithms.WordPattern.WordPatternTwoDictionaries                                                                                             100%
   LeetCode.Algorithms.WordSearch.WordSearchRecursive                                                                                                     100%
   LeetCode.Algorithms.WordSubsets.WordSubsetsFrequencyFiltering                                                                                          100%
   LeetCode.Algorithms.WordsWithinTwoEditsOfDictionary.WordsWithinTwoEditsOfDictionaryBruteForce                                                          100%
