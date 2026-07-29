@@ -42,6 +42,6 @@ public sealed class FindTheKthCharacterInStringGame1StringBuilder : IFindTheKthC
 
     private static char NextChar(char c)
     {
-        return c == 'z' ? 'a' : (char)(c + 1);
+        return (char)(c + 1);
     }
 }
