@@ -95,15 +95,10 @@ public sealed class FindTheSafestPathInGridPriorityQueue : IFindTheSafestPathInG
 
         visited[0][0] = true;
 
-        while (priorityQueue.Count > 0)
+        var (minDist, r, c) = priorityQueue.Dequeue();
+
+        while (r != n - 1 || c != n - 1)
         {
-            var (minDist, r, c) = priorityQueue.Dequeue();
-
-            if (r == n - 1 && c == n - 1)
-            {
-                return minDist;
-            }
-
             foreach (var (dr, dc) in Directions)
             {
                 int nr = r + dr, nc = c + dc;
@@ -119,9 +114,11 @@ public sealed class FindTheSafestPathInGridPriorityQueue : IFindTheSafestPathInG
 
                 priorityQueue.Enqueue((safeness, nr, nc), safeness);
             }
+
+            (minDist, r, c) = priorityQueue.Dequeue();
         }
 
-        return 0;
+        return minDist;
     }
 
     private static bool IsOutsideGrid(int r, int c, int n)

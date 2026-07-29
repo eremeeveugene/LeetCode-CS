@@ -96,8 +96,7 @@ public sealed class WalkingRobotSimulation2Simulation : IWalkingRobotSimulation2
             Direction.East => EastDirection,
             Direction.North => NorthDirection,
             Direction.West => WestDirection,
-            Direction.South => SouthDirection,
-            _ => EastDirection
+            _ => SouthDirection
         };
     }
 

@@ -53,11 +53,6 @@ public sealed class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberO
             AddUserToTeach(userB, usersToTeach, usersToTeachIndices, ref usersToTeachCount);
         }
 
-        if (usersToTeachCount == 0)
-        {
-            return 0;
-        }
-
         var mostCommonLanguageCount = GetMostCommonLanguageCount(userLanguages, usersToTeachIndices, usersToTeachCount, languagesCount);
 
         return usersToTeachCount - mostCommonLanguageCount;

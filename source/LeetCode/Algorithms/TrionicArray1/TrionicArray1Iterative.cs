@@ -69,6 +69,6 @@ public sealed class TrionicArray1Iterative : ITrionicArray1
             q++;
         }
 
-        return q == n && q > p;
+        return q == n;
     }
 }
