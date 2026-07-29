@@ -24,39 +24,29 @@ public sealed class EvaluateBooleanBinaryTreeDepthFirstSearch : IEvaluateBoolean
     ///     Time complexity - O(n)
     ///     Space complexity - O(n) for a skewed tree, O(n log n) for a balanced tree
     /// </remarks>
-    public bool EvaluateTree(TreeNode? root)
+    public bool EvaluateTree(TreeNode root)
     {
-        return root != null && GetTreeEvaluation(root);
+        return GetTreeEvaluation(root);
     }
 
     private static bool GetTreeEvaluation(TreeNode root)
     {
-        if (root.left == null && root.right == null)
+        if (root.left == null)
         {
             return root.val == 1;
         }
 
-        var left = false;
+        var left = GetTreeEvaluation(root.left);
 
-        if (root.left != null)
+        switch (root.val)
         {
-            left = GetTreeEvaluation(root.left);
-
-            switch (root.val)
-            {
-                case OrOperation when left:
-                    return true;
-                case AndOperation when !left:
-                    return false;
-            }
+            case OrOperation when left:
+                return true;
+            case AndOperation when !left:
+                return false;
         }
 
-        var right = false;
-
-        if (root.right != null)
-        {
-            right = GetTreeEvaluation(root.right);
-        }
+        var right = GetTreeEvaluation(root.right!);
 
         if (root.val == OrOperation)
         {
