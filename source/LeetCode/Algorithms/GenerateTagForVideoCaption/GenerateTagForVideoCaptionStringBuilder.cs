@@ -48,20 +48,10 @@ public sealed class GenerateTagForVideoCaptionStringBuilder : IGenerateTagForVid
 
         for (var i = 1; i < words.Length; i++)
         {
-            if (tagStringBuilder.Length == 100)
-            {
-                break;
-            }
-
             tagStringBuilder.Append(char.ToUpperInvariant(words[i][0]));
 
             for (var j = 1; j < words[i].Length; j++)
             {
-                if (tagStringBuilder.Length == 100)
-                {
-                    break;
-                }
-
                 tagStringBuilder.Append(char.ToLowerInvariant(words[i][j]));
             }
         }
