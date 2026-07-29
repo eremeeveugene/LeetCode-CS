@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Runtime.InteropServices;
+
 namespace LeetCode.Algorithms.ValidAnagram;
 
 /// <inheritdoc />
@@ -28,9 +30,13 @@ public sealed class ValidAnagramDictionary : IValidAnagram
 
         var dictionary = new Dictionary<char, int>();
 
-        foreach (var c in s.Where(c => !dictionary.TryAdd(c, 1)))
+        for (var i = 0; i < s.Length; i++)
         {
-            dictionary[c]++;
+            var c = s[i];
+
+            ref var count = ref CollectionsMarshal.GetValueRefOrAddDefault(dictionary, c, out _);
+
+            count++;
         }
 
         foreach (var c in t)
