@@ -45,7 +45,7 @@ public sealed class SpiralMatrix3Simulation : ISpiralMatrix3
 
                 direction++;
 
-                if (direction > 0 && direction % 2 == 0)
+                if (direction % 2 == 0)
                 {
                     directionCounter++;
                 }
