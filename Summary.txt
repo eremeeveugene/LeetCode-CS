@@ -1,22 +1,22 @@
 Summary
-  Generated on: 7/29/2026 - 1:03:20 PM
-  Coverage date: 7/29/2026 - 1:02:48 PM - 7/29/2026 - 1:03:12 PM
+  Generated on: 7/29/2026 - 4:52:02 PM
+  Coverage date: 7/29/2026 - 4:51:30 PM - 7/29/2026 - 4:51:54 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
   Classes: 1330
   Files: 1330
   Line coverage: 99.6%
-  Covered lines: 30115
-  Uncovered lines: 114
-  Coverable lines: 30229
-  Total lines: 73939
-  Branch coverage: 97.9% (11099 of 11337)
+  Covered lines: 30113
+  Uncovered lines: 100
+  Coverable lines: 30213
+  Total lines: 73917
+  Branch coverage: 98% (11099 of 11315)
   Covered branches: 11099
-  Total branches: 11337
+  Total branches: 11315
   Method coverage: 100% (1956 of 1956)
-  Full method coverage: 97% (1899 of 1956)
+  Full method coverage: 97.5% (1908 of 1956)
   Covered methods: 1956
-  Fully covered methods: 1899
+  Fully covered methods: 1908
   Total methods: 1956
 
 LeetCode                                                                                                                                                99.6%
@@ -125,7 +125,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations1.CheckIfStringsCanBeMadeEqualWithOperationsPairMatching                                 100%
   LeetCode.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations2.CheckIfStringsCanBeMadeEqualWithOperations2BruteForce                                 92.3%
   LeetCode.Algorithms.CheckIfStringsCanBeMadeEqualWithOperations2.CheckIfStringsCanBeMadeEqualWithOperations2FrequencyArray                              100%
-  LeetCode.Algorithms.CheckIfThereIsValidPathInGrid.CheckIfThereIsValidPathInGridSimulation                                                             98.6%
+  LeetCode.Algorithms.CheckIfThereIsValidPathInGrid.CheckIfThereIsValidPathInGridSimulation                                                              100%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramHashSet                                                                     100%
   LeetCode.Algorithms.CheckIfTheSentenceIsPangram.CheckIfTheSentenceIsPangramIterative                                                                   100%
   LeetCode.Algorithms.CheckIfTwoChessboardSquaresHaveTheSameColor.CheckIfTwoChessboardSquaresHaveTheSameColorBase                                        100%
@@ -300,7 +300,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignHashSet.DesignHashSetBitArray                                                                                                100%
   LeetCode.Algorithms.DesignHashSet.DesignHashSetBoolArray                                                                                               100%
   LeetCode.Algorithms.DesignMovieRentalSystem.DesignMovieRentalSystemDictionary                                                                          100%
-  LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceBruteForce                                                                       98.2%
+  LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceBruteForce                                                                        100%
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceDictionary                                                                        100%
   LeetCode.Algorithms.DesignNumberContainerSystem.DesignNumberContainerSystemDictionary                                                                  100%
   LeetCode.Algorithms.DesignParkingSystem.DesignParkingSystemCounting                                                                                    100%
@@ -319,7 +319,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayByDigitExtraction                       100%
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayIterative                               100%
   LeetCode.Algorithms.DifferentWaysToAddParentheses.DifferentWaysToAddParenthesesDictionary                                                             97.1%
-  LeetCode.Algorithms.DifferentWaysToAddParentheses.DifferentWaysToAddParenthesesRecursive                                                              96.2%
+  LeetCode.Algorithms.DifferentWaysToAddParentheses.DifferentWaysToAddParenthesesRecursive                                                               100%
   LeetCode.Algorithms.DigitFrequencyScore.DigitFrequencyScoreCounting                                                                                    100%
   LeetCode.Algorithms.DistributeCandies.DistributeCandiesDictionary                                                                                      100%
   LeetCode.Algorithms.DistributeCandies.DistributeCandiesHashSet                                                                                         100%
@@ -412,7 +412,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree.FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterative             100%
   LeetCode.Algorithms.FindMinimumOperationsToMakeAllElementsDivisibleByThree.FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterativeOptimized    100%
   LeetCode.Algorithms.FindMinimumTimeToReachLastRoom1.FindMinimumTimeToReachLastRoom1PriorityQueue                                                      97.3%
-  LeetCode.Algorithms.FindMinimumTimeToReachLastRoom2.FindMinimumTimeToReachLastRoom2PriorityQueue                                                      97.3%
+  LeetCode.Algorithms.FindMinimumTimeToReachLastRoom2.FindMinimumTimeToReachLastRoom2PriorityQueue                                                       100%
   LeetCode.Algorithms.FindMissingAndRepeatedValues.FindMissingAndRepeatedValuesHashSet                                                                   100%
   LeetCode.Algorithms.FindMissingAndRepeatedValues.FindMissingAndRepeatedValuesMath                                                                      100%
   LeetCode.Algorithms.FindMissingElements.FindMissingElementsSorting                                                                                     100%
@@ -474,7 +474,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindThePrefixCommonArrayOfTwoArrays.FindThePrefixCommonArrayOfTwoArraysFrequencyArraySpan                                          100%
   LeetCode.Algorithms.FindThePrefixCommonArrayOfTwoArrays.FindThePrefixCommonArrayOfTwoArraysHashSet                                                     100%
   LeetCode.Algorithms.FindThePunishmentNumberOfInteger.FindThePunishmentNumberOfIntegerRecursive                                                         100%
-  LeetCode.Algorithms.FindTheSafestPathInGrid.FindTheSafestPathInGridPriorityQueue                                                                      98.5%
+  LeetCode.Algorithms.FindTheSafestPathInGrid.FindTheSafestPathInGridPriorityQueue                                                                       100%
   LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk.FindTheStudentThatWillReplaceTheChalkBinarySearch                                            100%
   LeetCode.Algorithms.FindTheStudentThatWillReplaceTheChalk.FindTheStudentThatWillReplaceTheChalkPrefixSum                                               100%
   LeetCode.Algorithms.FindTheTownJudge.FindTheTownJudgeDictionary                                                                                        100%
@@ -827,7 +827,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox.MinimumNumberOfOperationsToMoveAllBallsToEachBoxBruteForce                        100%
   LeetCode.Algorithms.MinimumNumberOfOperationsToMoveAllBallsToEachBox.MinimumNumberOfOperationsToMoveAllBallsToEachBoxTwoPass                           100%
   LeetCode.Algorithms.MinimumNumberOfOperationsToSortBinaryTreeByLevel.MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirstSearch                100%
-  LeetCode.Algorithms.MinimumNumberOfPeopleToTeach.MinimumNumberOfPeopleToTeachGreedyCounting                                                             97%
+  LeetCode.Algorithms.MinimumNumberOfPeopleToTeach.MinimumNumberOfPeopleToTeachGreedyCounting                                                            100%
   LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced.MinimumNumberOfSwapsToMakeTheStringBalancedIterative                                   100%
   LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner.MinimumObstacleRemovalToReachCornerBreadthFirstSearch                                          100%
   LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner.MinimumObstacleRemovalToReachCornerPriorityQueue                                               100%
@@ -896,8 +896,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.NextGreaterNumericallyBalancedNumber.NextGreaterNumericallyBalancedNumberBinarySearch                                              100%
   LeetCode.Algorithms.NextGreaterNumericallyBalancedNumber.NextGreaterNumericallyBalancedNumberIterative                                                 100%
   LeetCode.Algorithms.NimGame.NimGameMath                                                                                                                100%
-  LeetCode.Algorithms.NRepeatedElementInSize2NArray.NRepeatedElementInSize2NArrayHashSet                                                                90.9%
-  LeetCode.Algorithms.NRepeatedElementInSize2NArray.NRepeatedElementInSize2NArrayLookup                                                                 91.6%
+  LeetCode.Algorithms.NRepeatedElementInSize2NArray.NRepeatedElementInSize2NArrayHashSet                                                                 100%
+  LeetCode.Algorithms.NRepeatedElementInSize2NArray.NRepeatedElementInSize2NArrayLookup                                                                  100%
   LeetCode.Algorithms.NthTribonacciNumber.NthTribonacciNumberIterative                                                                                   100%
   LeetCode.Algorithms.NthTribonacciNumber.NthTribonacciNumberMatrixExponentiation                                                                        100%
   LeetCode.Algorithms.NumberAfterDoubleReversal.NumberAfterDoubleReversalMath                                                                            100%
@@ -1316,7 +1316,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.VowelsGameInString.VowelsGameInStringMath                                                                                          100%
   LeetCode.Algorithms.VowelSpellchecker.VowelSpellcheckerDictionary                                                                                      100%
   LeetCode.Algorithms.WalkingRobotSimulation.WalkingRobotSimulationHashSet                                                                              93.3%
-  LeetCode.Algorithms.WalkingRobotSimulation2.WalkingRobotSimulation2Simulation                                                                         98.2%
+  LeetCode.Algorithms.WalkingRobotSimulation2.WalkingRobotSimulation2Simulation                                                                          100%
   LeetCode.Algorithms.WaterBottles.WaterBottlesSimulation                                                                                                100%
   LeetCode.Algorithms.WaterBottles2.WaterBottles2Math                                                                                                    100%
   LeetCode.Algorithms.WaterBottles2.WaterBottles2Simulation                                                                                              100%
@@ -1340,7 +1340,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
