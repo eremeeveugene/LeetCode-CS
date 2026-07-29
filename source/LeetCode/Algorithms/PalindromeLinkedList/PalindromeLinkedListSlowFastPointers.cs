@@ -33,23 +33,22 @@ public sealed class PalindromeLinkedListSlowFastPointers : IPalindromeLinkedList
 
         while (fast.next is { next: not null })
         {
-            slow = slow?.next;
+            slow = slow!.next;
             fast = fast.next.next;
         }
 
-
-        var secondHalfStart = ReverseList(slow?.next);
+        var secondHalfStart = ReverseList(slow!.next);
 
         var firstHalfStart = head;
 
         while (secondHalfStart != null)
         {
-            if (firstHalfStart != null && firstHalfStart.val != secondHalfStart.val)
+            if (firstHalfStart!.val != secondHalfStart.val)
             {
                 return false;
             }
 
-            firstHalfStart = firstHalfStart?.next;
+            firstHalfStart = firstHalfStart!.next;
             secondHalfStart = secondHalfStart.next;
         }
 
