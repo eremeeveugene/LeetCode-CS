@@ -54,6 +54,11 @@ public abstract class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeTestsBas
             }
         }
 
+        if (target == null)
+        {
+            throw new InvalidOperationException($"Target value {targetValue} was not found in the tree.");
+        }
+
         TreeNode? expectedResult = null;
 
         var expectedResultStack = new Stack<TreeNode>();
