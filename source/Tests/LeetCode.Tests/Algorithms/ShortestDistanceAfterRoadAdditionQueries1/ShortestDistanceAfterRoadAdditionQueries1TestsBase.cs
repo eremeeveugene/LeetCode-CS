@@ -34,5 +34,7 @@ public abstract class ShortestDistanceAfterRoadAdditionQueries1TestsBase<T> wher
         yield return [5, new[] { new[] { 2, 4 }, new[] { 0, 2 }, new[] { 0, 4 } }, new[] { 3, 2, 1 }];
 
         yield return [4, new[] { new[] { 0, 3 }, new[] { 0, 2 } }, new[] { 1, 1 }];
+
+        yield return [5, new[] { new[] { 2, 4 }, new[] { 2, 4 } }, new[] { 3, 3 }];
     }
 }
