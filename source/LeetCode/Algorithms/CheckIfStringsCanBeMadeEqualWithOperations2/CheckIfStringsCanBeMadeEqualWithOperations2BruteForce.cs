@@ -36,11 +36,6 @@ public sealed class CheckIfStringsCanBeMadeEqualWithOperations2BruteForce : IChe
 
             for (var j = i + 2; j < n; j += 2)
             {
-                if ((j - i) % 2 != 0)
-                {
-                    continue;
-                }
-
                 if (s1CharArray[j] != s2[i])
                 {
                     continue;
