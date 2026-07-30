@@ -30,15 +30,17 @@ public sealed class TheNumberOfTheSmallestUnoccupiedChairSortedSet : ITheNumberO
 
         var chairAssigned = new int[times.Length];
 
-        var events = new List<Event>();
+        var events = new List<(int Time, int FriendId, bool IsArrival)>();
 
         for (var i = 0; i < times.Length; i++)
         {
-            events.Add(new Event(times[i][0], i, true));
-            events.Add(new Event(times[i][1], i, false));
+            events.Add((times[i][0], i, true));
+            events.Add((times[i][1], i, false));
         }
 
-        events.Sort();
+        events.Sort((left, right) => left.Time != right.Time ? left.Time.CompareTo(right.Time) : left.IsArrival.CompareTo(right.IsArrival));
+
+        var result = -1;
 
         foreach (var @event in events)
         {
@@ -50,36 +52,19 @@ public sealed class TheNumberOfTheSmallestUnoccupiedChairSortedSet : ITheNumberO
 
                 chairAssigned[@event.FriendId] = assignedChair;
 
-                if (@event.FriendId == targetFriend)
+                if (@event.FriendId != targetFriend)
                 {
-                    return assignedChair;
+                    continue;
                 }
+
+                result = assignedChair;
+
+                break;
             }
-            else
-            {
-                freeChairs.Add(chairAssigned[@event.FriendId]);
-            }
+
+            freeChairs.Add(chairAssigned[@event.FriendId]);
         }
 
-        return -1;
-    }
-
-    private class Event(int time, int friendId, bool isArrival) : IComparable<Event>
-    {
-        private readonly int _time = time;
-        public int FriendId { get; } = friendId;
-        public bool IsArrival { get; } = isArrival;
-
-        public int CompareTo(Event? other)
-        {
-            if (other == null)
-            {
-                return -1;
-            }
-
-            var timeComparison = _time.CompareTo(other._time);
-
-            return timeComparison == 0 ? IsArrival.CompareTo(other.IsArrival) : timeComparison;
-        }
+        return result;
     }
 }
