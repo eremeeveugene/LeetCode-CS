@@ -762,6 +762,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3000. Maximum Area of Longest Diagonal Rectangle](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/description/)
 - [3005. Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/)
 - [3011. Find if Array Can Be Sorted](https://leetcode.com/problems/find-if-array-can-be-sorted/description/)
+- [3014. Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/description/)
 - [3020. Find the Maximum Number of Elements in Subset](https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/description/)
 - [3021. Alice and Bob Playing Flower Game](https://leetcode.com/problems/alice-and-bob-playing-flower-game/description/)
 - [3024. Type of Triangle](https://leetcode.com/problems/type-of-triangle/description/)
