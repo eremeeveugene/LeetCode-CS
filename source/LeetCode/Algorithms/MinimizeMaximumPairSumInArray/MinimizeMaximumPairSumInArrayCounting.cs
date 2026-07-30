@@ -39,12 +39,12 @@ public sealed class MinimizeMaximumPairSumInArrayCounting : IMinimizeMaximumPair
 
         while (remaining > 0)
         {
-            while (left <= right && frequencies[left] == 0)
+            while (frequencies[left] == 0)
             {
                 left++;
             }
 
-            while (left <= right && frequencies[right] == 0)
+            while (frequencies[right] == 0)
             {
                 right--;
             }
