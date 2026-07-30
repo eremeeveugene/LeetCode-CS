@@ -66,5 +66,7 @@ public abstract class EqualSumGridPartition1TestsBase<T> where T : IEqualSumGrid
         yield return [new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 1 } }, true];
 
         yield return [new[] { new[] { 9, 1 }, new[] { 1, 9 } }, true];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 3, 3 } }, true];
     }
 }
