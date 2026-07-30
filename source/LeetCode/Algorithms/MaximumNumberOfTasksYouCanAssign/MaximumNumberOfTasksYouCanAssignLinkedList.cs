@@ -54,11 +54,6 @@ public sealed class MaximumNumberOfTasksYouCanAssignLinkedList : IMaximumNumberO
             return true;
         }
 
-        if (k > workers.Length)
-        {
-            return false;
-        }
-
         var linkedList = new LinkedList<int>();
         var workerIndex = workers.Length - 1;
         var usedPills = 0;
@@ -72,12 +67,12 @@ public sealed class MaximumNumberOfTasksYouCanAssignLinkedList : IMaximumNumberO
                 workerIndex--;
             }
 
-            if (linkedList.Count == 0)
+            if (linkedList.First is not { } firstNode)
             {
                 return false;
             }
 
-            if (linkedList.First != null && linkedList.First.Value >= tasks[i])
+            if (firstNode.Value >= tasks[i])
             {
                 linkedList.RemoveFirst();
             }
