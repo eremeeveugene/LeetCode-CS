@@ -50,17 +50,23 @@ public sealed class MaximizeExpressionOfThreeElementsFrequencyArray : IMaximizeE
         }
 
         var firstFound = false;
+        var found = false;
         var largest = 0;
+        var result = 0;
 
-        for (var i = numsFrequencies.Length - 1; i >= 0; i--)
+        for (var i = numsFrequencies.Length - 1; i >= 0 && !found; i--)
         {
-            while (numsFrequencies[i] > 0)
+            while (!found && numsFrequencies[i] > 0)
             {
                 var value = GetValue(i);
 
                 if (firstFound)
                 {
-                    return largest + value - smallest;
+                    result = largest + value - smallest;
+
+                    found = true;
+
+                    break;
                 }
 
                 largest = value;
@@ -71,7 +77,7 @@ public sealed class MaximizeExpressionOfThreeElementsFrequencyArray : IMaximizeE
             }
         }
 
-        return 0;
+        return result;
     }
 
     private static int GetValue(int index)
