@@ -63,7 +63,6 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixHashSetOptimized : IFin
     {
         return value switch
         {
-            > 999999999 => 10,
             > 99999999 => 9,
             > 9999999 => 8,
             > 999999 => 7,
