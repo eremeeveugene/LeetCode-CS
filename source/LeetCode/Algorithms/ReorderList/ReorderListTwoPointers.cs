@@ -23,7 +23,7 @@ public sealed class ReorderListTwoPointers : IReorderList
     /// </remarks>
     public void ReorderList(ListNode? head)
     {
-        if (head?.next == null)
+        if (head!.next == null)
         {
             return;
         }
@@ -33,36 +33,33 @@ public sealed class ReorderListTwoPointers : IReorderList
 
         while (fast.next is { next: not null })
         {
-            slow = slow?.next;
+            slow = slow!.next;
             fast = fast.next.next;
         }
 
         var stack = new Stack<ListNode>();
 
-        if (slow != null)
+        var current = slow!.next;
+
+        while (current != null)
         {
-            var current = slow.next;
+            stack.Push(current);
 
-            while (current != null)
-            {
-                stack.Push(current);
-
-                current = current.next;
-            }
-
-            slow.next = null;
+            current = current.next;
         }
+
+        slow.next = null;
 
         var left = head;
 
         while (left != null && stack.Count > 0)
         {
-            var current = stack.Pop();
+            var poppedNode = stack.Pop();
 
             var temp = left.next;
 
-            left.next = current;
-            current.next = temp;
+            left.next = poppedNode;
+            poppedNode.next = temp;
 
             left = temp;
         }
