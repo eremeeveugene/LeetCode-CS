@@ -45,5 +45,43 @@ public abstract class FlipEquivalentBinaryTreesTestsBase<T> where T : IFlipEquiv
         ];
 
         yield return [new int?[] { 1, 2, 3 }, new int?[] { 1, 2, 4 }, false];
+
+        yield return [new int?[] { 1, 2, 3 }, new int?[] { 1, 3, 2 }, true];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5 }, new int?[] { 1, 3, 2, null, null, 5, 4 }, true];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5 }, new int?[] { 1, 3, 2, 5, 4 }, false];
+
+        yield return [new int?[] { 1, 2, null, 3 }, new int?[] { 1, null, 2, null, null, 3 }, false];
+
+        yield return [new int?[] { 2, 1, 3 }, new int?[] { 2, 3, 1 }, true];
+
+        yield return [new int?[] { 1 }, new int?[] { 2 }, false];
+
+        yield return [new int?[] { 1, 2 }, new int?[] { 1, null, 2 }, true];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7 }, new int?[] { 1, 3, 2, 7, 6, 5, 4 }, true];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7 }, new int?[] { 1, 2, 3, 4, 5, 6, 8 }, false];
+
+        yield return [new int?[] { 5, 3, 8, 1, 4, 7, 9 }, new int?[] { 5, 8, 3, 9, 7, 4, 1 }, true];
+
+        yield return [new int?[] { 5, 3, 8, 1, 4, 7, 9 }, new int?[] { 5, 8, 3, 9, 7, 1, 4 }, true];
+
+        yield return [new int?[] { 3, 1, 4, null, null, 2 }, new int?[] { 3, 4, 1, 2 }, true];
+
+        yield return [new int?[] { 3, 1, 4, null, null, 2 }, new int?[] { 3, 4, 1, null, 2 }, true];
+
+        yield return [new int?[] { 1, 2, 3, null, 4 }, new int?[] { 1, 3, 2, 4 }, false];
+
+        yield return [new int?[] { 1, 2, 3, null, 4 }, new int?[] { 1, 3, 2, null, null, 4 }, true];
+
+        yield return [new int?[] { 10, 20, 30, 40, 50, 60, 70 }, new int?[] { 10, 30, 20, 70, 60, 50, 40 }, true];
+
+        yield return [new int?[] { 10, 20, 30, 40, 50, 60, 70 }, new int?[] { 10, 30, 20, 70, 60, 40, 50 }, true];
+
+        yield return [new int?[] { 7, 3, 5 }, new int?[] { 7, 5, 3 }, true];
+
+        yield return [new int?[] { 7, 3, 5 }, new int?[] { 7, 5, 4 }, false];
     }
 }
