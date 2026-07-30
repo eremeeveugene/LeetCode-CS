@@ -46,32 +46,10 @@ public sealed class CountPrefixAndSuffixPairs1Trie : ICountPrefixAndSuffixPairs1
         return count;
     }
 
-    private bool IsPrefixAndSuffix(string prefixSuffix, string word)
-    {
-        return IsPrefix(prefixSuffix, word) && IsSuffix(prefixSuffix, word);
-    }
-
-    private bool IsPrefix(string prefix, string word)
-    {
-        var currentNode = _prefixRoot;
-
-        return word.All(c => currentNode.Nodes.TryGetValue(c, out currentNode)) && word.StartsWith(prefix);
-    }
-
-    private bool IsSuffix(string suffix, string word)
-    {
-        var currentNode = _suffixRoot;
-        for (var i = word.Length - 1; i >= 0; i--)
-        {
-            if (!currentNode.Nodes.TryGetValue(word[i], out currentNode))
-            {
-                return false;
-            }
-        }
-
-        return word.EndsWith(suffix);
-    }
-
+    /// <summary>
+    ///     Inserts <paramref name="word" /> into the prefix trie, one character at a time from the start.
+    /// </summary>
+    /// <param name="word">The word to insert.</param>
     private void InsertPrefix(string word)
     {
         var currentNode = _prefixRoot;
@@ -91,6 +69,10 @@ public sealed class CountPrefixAndSuffixPairs1Trie : ICountPrefixAndSuffixPairs1
         }
     }
 
+    /// <summary>
+    ///     Inserts <paramref name="word" /> into the suffix trie, one character at a time from the end.
+    /// </summary>
+    /// <param name="word">The word to insert.</param>
     private void InsertSuffix(string word)
     {
         var currentNode = _suffixRoot;
@@ -108,6 +90,42 @@ public sealed class CountPrefixAndSuffixPairs1Trie : ICountPrefixAndSuffixPairs1
                 currentNode = currentNode.Nodes[word[i]];
             }
         }
+    }
+
+    /// <summary>
+    ///     Determines whether <paramref name="prefixSuffix" /> is both a prefix and a suffix of <paramref name="word" />.
+    /// </summary>
+    /// <param name="prefixSuffix">The candidate prefix and suffix.</param>
+    /// <param name="word">The word to check against.</param>
+    /// <returns>
+    ///     <see langword="true" /> if <paramref name="prefixSuffix" /> is both a prefix and a suffix of <paramref name="word" />; otherwise,
+    ///     <see langword="false" />.
+    /// </returns>
+    private static bool IsPrefixAndSuffix(string prefixSuffix, string word)
+    {
+        return IsPrefix(prefixSuffix, word) && IsSuffix(prefixSuffix, word);
+    }
+
+    /// <summary>
+    ///     Determines whether <paramref name="word" /> starts with <paramref name="prefix" />.
+    /// </summary>
+    /// <param name="prefix">The candidate prefix.</param>
+    /// <param name="word">The word to check against.</param>
+    /// <returns><see langword="true" /> if <paramref name="word" /> starts with <paramref name="prefix" />; otherwise, <see langword="false" />.</returns>
+    private static bool IsPrefix(string prefix, string word)
+    {
+        return word.StartsWith(prefix);
+    }
+
+    /// <summary>
+    ///     Determines whether <paramref name="word" /> ends with <paramref name="suffix" />.
+    /// </summary>
+    /// <param name="suffix">The candidate suffix.</param>
+    /// <param name="word">The word to check against.</param>
+    /// <returns><see langword="true" /> if <paramref name="word" /> ends with <paramref name="suffix" />; otherwise, <see langword="false" />.</returns>
+    private static bool IsSuffix(string suffix, string word)
+    {
+        return word.EndsWith(suffix);
     }
 
     private class Node

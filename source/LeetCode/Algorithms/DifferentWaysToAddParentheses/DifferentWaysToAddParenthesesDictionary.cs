@@ -59,8 +59,7 @@ public sealed class DifferentWaysToAddParenthesesDictionary : IDifferentWaysToAd
                     {
                         '+' => leftResult + rightResult,
                         '-' => leftResult - rightResult,
-                        '*' => leftResult * rightResult,
-                        _ => 0
+                        _ => leftResult * rightResult
                     }));
             }
         }

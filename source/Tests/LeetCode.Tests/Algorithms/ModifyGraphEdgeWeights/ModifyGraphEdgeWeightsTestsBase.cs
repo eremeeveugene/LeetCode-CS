@@ -58,5 +58,17 @@ public abstract class ModifyGraphEdgeWeightsTestsBase<T> where T : IModifyGraphE
             5,
             new[] { new[] { 4, 1, 1 }, new[] { 2, 0, 3 }, new[] { 0, 3, 3 }, new[] { 4, 3, 1 } }
         ];
+
+        yield return [2, new[] { new[] { 0, 1, 5 } }, 0, 1, 3, Array.Empty<int[]>()];
+
+        yield return
+        [
+            4,
+            new[] { new[] { 0, 1, 1 }, new[] { 0, 2, 5 }, new[] { 1, 2, 1 }, new[] { 2, 3, 1 }, new[] { 1, 3, 10 } },
+            0,
+            3,
+            3,
+            new[] { new[] { 0, 1, 1 }, new[] { 0, 2, 5 }, new[] { 1, 2, 1 }, new[] { 2, 3, 1 }, new[] { 1, 3, 10 } }
+        ];
     }
 }

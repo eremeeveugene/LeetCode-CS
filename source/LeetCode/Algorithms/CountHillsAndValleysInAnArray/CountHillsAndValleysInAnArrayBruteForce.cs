@@ -30,26 +30,7 @@ public sealed class CountHillsAndValleysInAnArrayBruteForce : ICountHillsAndVall
                 continue;
             }
 
-            var left = 0;
-
-            for (var j = i - 1; j >= 0; --j)
-            {
-                if (nums[j] > nums[i])
-                {
-                    left = 1;
-
-                    break;
-                }
-
-                if (nums[j] >= nums[i])
-                {
-                    continue;
-                }
-
-                left = -1;
-
-                break;
-            }
+            var left = nums[i - 1] > nums[i] ? 1 : -1;
 
             var right = 0;
 

@@ -43,7 +43,8 @@ public sealed class MagicSquaresInGridBruteForce : IMagicSquaresInGrid
 
     private static bool IsMagicSquare(int[][] grid, int row, int column)
     {
-        if (grid[row + 1][column + 1] != 5 || grid[row + 1][column + 1] == grid[row][column + 1] ||
+        if (grid[row + 1][column + 1] != 5 ||
+            grid[row + 1][column + 1] == grid[row][column + 1] ||
             grid[row + 1][column + 1] == grid[row + 1][column])
         {
             return false;
@@ -75,16 +76,6 @@ public sealed class MagicSquaresInGridBruteForce : IMagicSquaresInGrid
             {
                 return false;
             }
-        }
-
-        if (grid[row][column] + grid[row + 1][column + 1] + grid[row + 2][column + 2] != MagicSquareSum)
-        {
-            return false;
-        }
-
-        if (grid[row][column + 2] + grid[row + 1][column + 1] + grid[row + 2][column] != MagicSquareSum)
-        {
-            return false;
         }
 
         return true;

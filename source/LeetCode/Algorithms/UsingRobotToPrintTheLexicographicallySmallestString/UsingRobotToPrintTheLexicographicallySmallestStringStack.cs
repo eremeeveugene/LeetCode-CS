@@ -57,11 +57,6 @@ public sealed class UsingRobotToPrintTheLexicographicallySmallestStringStack : I
             }
         }
 
-        while (bufferStackLastIndex > 0)
-        {
-            result[resultLength++] = bufferStack[--bufferStackLastIndex];
-        }
-
         return new string(result);
     }
 

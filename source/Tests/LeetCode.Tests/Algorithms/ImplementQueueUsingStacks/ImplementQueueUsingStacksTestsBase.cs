@@ -16,19 +16,6 @@ namespace LeetCode.Tests.Algorithms.ImplementQueueUsingStacks;
 public abstract class ImplementQueueUsingStacksTestsBase<T> where T : IImplementQueueUsingStacks, new()
 {
     [TestMethod]
-    public void Push_AddsElementToQueue_MakesQueueNonEmpty()
-    {
-        // Arrange
-        var solution = new T();
-
-        // Act
-        solution.Push(0);
-
-        // Assert
-        Assert.IsFalse(solution.Empty());
-    }
-
-    [TestMethod]
     [DataRow(new[] { 1, 2, 3 }, new[] { 1, 2, 3 })]
     [DataRow(new[] { 5, 10, 15 }, new[] { 5, 10, 15 })]
     [DataRow(new int[] { }, new int[] { })]
@@ -83,6 +70,24 @@ public abstract class ImplementQueueUsingStacksTestsBase<T> where T : IImplement
     }
 
     [TestMethod]
+    public void Peek_CalledTwiceInARow_ReturnsSameFirstElement()
+    {
+        // Arrange
+        var solution = new T();
+
+        solution.Push(1);
+        solution.Push(2);
+
+        // Act
+        var firstPeek = solution.Peek();
+        var secondPeek = solution.Peek();
+
+        // Assert
+        Assert.AreEqual(1, firstPeek);
+        Assert.AreEqual(1, secondPeek);
+    }
+
+    [TestMethod]
     public void Empty_WhenQueueIsEmpty_ReturnsTrue()
     {
         // Arrange
@@ -116,5 +121,18 @@ public abstract class ImplementQueueUsingStacksTestsBase<T> where T : IImplement
 
         // Act & Assert
         Assert.ThrowsExactly<InvalidOperationException>(() => solution.Peek());
+    }
+
+    [TestMethod]
+    public void Push_AddsElementToQueue_MakesQueueNonEmpty()
+    {
+        // Arrange
+        var solution = new T();
+
+        // Act
+        solution.Push(0);
+
+        // Assert
+        Assert.IsFalse(solution.Empty());
     }
 }

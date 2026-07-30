@@ -36,6 +36,10 @@ public abstract class FindTheIndexOfTheFirstOccurrenceInStringTestsBase<T> where
     [DataRow("abcdef", "f", 5)]
     [DataRow("aababab", "ababab", 1)]
     [DataRow("abababab", "ababab", 0)]
+    [DataRow("abc", "", 0)]
+    [DataRow("", "", 0)]
+    [DataRow("", "abc", -1)]
+    [DataRow("ab", "abc", -1)]
     public void StrStr_WithHaystackAndNeedle_ReturnsIndexOfFirstOccurrenceOrMinusOne(string haystack, string needle, int expectedResult)
     {
         // Arrange

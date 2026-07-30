@@ -42,13 +42,17 @@ public sealed class FindMinimumTimeToReachLastRoom1PriorityQueue : IFindMinimumT
 
         priorityQueue.Enqueue((0, 0, 0), 0);
 
+        var result = 0;
+
         while (priorityQueue.Count > 0)
         {
             var item = priorityQueue.Dequeue();
 
             if (item.X == n - 1 && item.Y == m - 1)
             {
-                return item.Time;
+                result = item.Time;
+
+                break;
             }
 
             foreach (var direction in Directions)
@@ -74,6 +78,6 @@ public sealed class FindMinimumTimeToReachLastRoom1PriorityQueue : IFindMinimumT
             }
         }
 
-        return -1;
+        return result;
     }
 }

@@ -26,13 +26,17 @@ public sealed class KthLargestElementInAnArrayQuickSelect : IKthLargestElementIn
         var left = 0;
         var right = nums.Length - 1;
 
+        var result = 0;
+
         while (left <= right)
         {
             var pivotIndex = Partition(nums, left, right);
 
             if (pivotIndex == targetIndex)
             {
-                return nums[pivotIndex];
+                result = nums[pivotIndex];
+
+                break;
             }
 
             if (pivotIndex < targetIndex)
@@ -45,7 +49,7 @@ public sealed class KthLargestElementInAnArrayQuickSelect : IKthLargestElementIn
             }
         }
 
-        return -1;
+        return result;
     }
 
     private static int Partition(int[] nums, int left, int right)

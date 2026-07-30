@@ -36,6 +36,7 @@ public abstract class RankTransformOfAnArrayTestsBase<T> where T : IRankTransfor
     [DataRow(new[] { 0, 0, 0 }, new[] { 1, 1, 1 })]
     [DataRow(new[] { 10, 10, 5, 5, 15, 15 }, new[] { 2, 2, 1, 1, 3, 3 })]
     [DataRow(new[] { 2, 1, 3, 4, 5, 6, 7, 8, 9, 10 }, new[] { 2, 1, 3, 4, 5, 6, 7, 8, 9, 10 })]
+    [DataRow(new int[] { }, new int[] { })]
     public void ArrayRankTransform_WithUnsortedArray_ReturnsRankedArray(int[] arr, int[] expectedResult)
     {
         // Arrange

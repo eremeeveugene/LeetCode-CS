@@ -31,16 +31,11 @@ public sealed class SumOfPrefixScoresOfStringsTrie : ISumOfPrefixScoresOfStrings
 
             var currentTrieNode = trie.Root;
 
-            foreach (var character in words[i])
+            for (var j = 0; j < words[i].Length; j++)
             {
+                var character = words[i][j];
                 var characterTrieNodeIndex = character - 'a';
-
-                var characterTrieNode = currentTrieNode.Children[characterTrieNodeIndex];
-
-                if (characterTrieNode == null)
-                {
-                    break;
-                }
+                var characterTrieNode = currentTrieNode.Children[characterTrieNodeIndex]!;
 
                 sum += characterTrieNode.Count;
 

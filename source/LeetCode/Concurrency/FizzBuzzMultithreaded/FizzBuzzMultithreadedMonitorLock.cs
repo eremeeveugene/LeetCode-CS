@@ -35,7 +35,7 @@ public sealed class FizzBuzzMultithreadedMonitorLock : IFizzBuzzMultithreaded
         {
             while (_number <= _n)
             {
-                while (_number <= _n && (_number % 3 != 0 || _number % 5 == 0))
+                while (_number % 3 != 0 || _number % 5 == 0)
                 {
                     Monitor.Wait(_lock);
 

@@ -59,11 +59,6 @@ public sealed class MajorityFrequencyCharactersFrequencySpan : IMajorityFrequenc
                 continue;
             }
 
-            if (size == maxSize && frequency <= maxFrequency)
-            {
-                continue;
-            }
-
             maxFrequency = frequency;
             maxSize = size;
         }
