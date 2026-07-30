@@ -50,7 +50,7 @@ public sealed class DesignFrontMiddleBackQueueLinkedList : IDesignFrontMiddleBac
     /// </remarks>
     public void PushMiddle(int value)
     {
-        if (_count == 0)
+        if (_head is not { } current)
         {
             var node = new Node(value);
 
@@ -62,29 +62,25 @@ public sealed class DesignFrontMiddleBackQueueLinkedList : IDesignFrontMiddleBac
             var node = new Node(value);
 
             var middleIndex = _count / 2;
-            var current = _head;
 
-            for (var i = 0; i < middleIndex; i++)
+            for (var i = 0; i < middleIndex && current.Next is { } next; i++)
             {
-                current = current?.Next;
+                current = next;
             }
 
-            if (current != null)
+            node.Next = current;
+            node.Previous = current.Previous;
+
+            if (current.Previous != null)
             {
-                node.Next = current;
-                node.Previous = current.Previous;
-
-                if (current.Previous != null)
-                {
-                    current.Previous.Next = node;
-                }
-                else
-                {
-                    _head = node;
-                }
-
-                current.Previous = node;
+                current.Previous.Next = node;
             }
+            else
+            {
+                _head = node;
+            }
+
+            current.Previous = node;
         }
 
         _count++;
@@ -152,22 +148,16 @@ public sealed class DesignFrontMiddleBackQueueLinkedList : IDesignFrontMiddleBac
     /// </remarks>
     public int PopMiddle()
     {
-        if (_head == null)
+        if (_head is not { } current)
         {
             return -1;
         }
 
         var middleIndex = (_count - 1) / 2;
-        var current = _head;
 
-        for (var i = 0; i < middleIndex; i++)
+        for (var i = 0; i < middleIndex && current.Next is { } next; i++)
         {
-            current = current?.Next;
-        }
-
-        if (current == null)
-        {
-            return -1;
+            current = next;
         }
 
         var middle = current;
