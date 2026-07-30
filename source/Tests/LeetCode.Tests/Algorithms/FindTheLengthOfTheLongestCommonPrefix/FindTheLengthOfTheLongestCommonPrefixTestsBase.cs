@@ -36,6 +36,7 @@ public abstract class FindTheLengthOfTheLongestCommonPrefixTestsBase<T> where T 
     [DataRow(new[] { 7, 70, 700, 7000 }, new[] { 8, 80, 8000 }, 0)]
     [DataRow(new[] { 123, 456, 789 }, new[] { 1239, 4567, 78901 }, 3)]
     [DataRow(new[] { 100, 200, 300 }, new[] { 199, 299, 399 }, 1)]
+    [DataRow(new[] { 12345 }, new[] { 12345678 }, 5)]
     public void LongestCommonPrefix_GivenTwoIntegerArrays_ReturnsLongestCommonPrefix(int[] arr1, int[] arr2, int expectedResult)
     {
         // Arrange
