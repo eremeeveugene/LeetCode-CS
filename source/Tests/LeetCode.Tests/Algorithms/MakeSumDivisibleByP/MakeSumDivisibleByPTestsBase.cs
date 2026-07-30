@@ -19,6 +19,7 @@ public abstract class MakeSumDivisibleByPTestsBase<T> where T : IMakeSumDivisibl
     [DataRow(new[] { 3, 1, 4, 2 }, 6, 1)]
     [DataRow(new[] { 6, 3, 5, 2 }, 9, 2)]
     [DataRow(new[] { 1, 2, 3 }, 3, 0)]
+    [DataRow(new[] { 1, 2, 3 }, 7, -1)]
     public void MinSubarray_WithArrayAndDivisor_ReturnsMinSubarrayToRemove(int[] nums, int p, int expectedResult)
     {
         // Arrange
