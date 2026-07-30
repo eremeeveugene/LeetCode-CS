@@ -39,7 +39,9 @@ public sealed class MinimumTimeToVisitCellInGridPriorityQueue : IMinimumTimeToVi
 
         seen[0, 0] = true;
 
-        while (priorityQueue.Count > 0)
+        var result = -1;
+
+        while (priorityQueue.Count > 0 && result < 0)
         {
             var (row, column, time) = priorityQueue.Dequeue();
 
@@ -69,7 +71,9 @@ public sealed class MinimumTimeToVisitCellInGridPriorityQueue : IMinimumTimeToVi
 
                 if (targetRow == rowsCount - 1 && targetColumn == columnsCount - 1)
                 {
-                    return targetTime;
+                    result = targetTime;
+
+                    break;
                 }
 
                 seen[targetRow, targetColumn] = true;
@@ -78,6 +82,6 @@ public sealed class MinimumTimeToVisitCellInGridPriorityQueue : IMinimumTimeToVi
             }
         }
 
-        return -1;
+        return result;
     }
 }
