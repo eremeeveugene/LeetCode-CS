@@ -32,14 +32,10 @@ public sealed class LongestCommonPrefixDivideAndConquer : ILongestCommonPrefix
                     return GetLongestPrefix(LongestCommonPrefix(leftPart), LongestCommonPrefix(rightPart));
                 }
             case 2:
-                {
-                    return GetLongestPrefix(strs[0], strs[1]);
-                }
-            case 1:
+                return GetLongestPrefix(strs[0], strs[1]);
+            default:
                 return strs[0];
         }
-
-        return string.Empty;
     }
 
     private static string GetLongestPrefix(string str1, string str2)
