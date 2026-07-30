@@ -41,10 +41,7 @@ public sealed class RemoveZeroSumConsecutiveNodesFromLinkedListDictionary : IRem
         {
             prefixSum += current.val;
 
-            if (prefixSumDictionary.TryGetValue(prefixSum, out var value))
-            {
-                current.next = value.next;
-            }
+            current.next = prefixSumDictionary[prefixSum].next;
         }
 
         return dummyHead.next;
