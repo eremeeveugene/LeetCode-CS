@@ -18,6 +18,7 @@ public abstract class CountSubarraysWithFixedBoundsTestsBase<T> where T : ICount
     [TestMethod]
     [DataRow(new[] { 1, 3, 5, 2, 7, 5 }, 1, 5, 2L)]
     [DataRow(new[] { 1, 1, 1, 1 }, 1, 1, 10L)]
+    [DataRow(new[] { 0, 4, 1, 5 }, 1, 5, 2L)]
     public void CountSubarrays_WithMinAndMaxBounds_ReturnsNumberOfSubarraysWithFixedBounds(int[] nums, int minK, int maxK, long expectedResult)
     {
         // Arrange
