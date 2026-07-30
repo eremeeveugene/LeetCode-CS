@@ -19,6 +19,7 @@ public abstract class FindTheMaximumLengthOfValidSubsequence1TestsBase<T> where 
     [DataRow(new[] { 1, 2, 3, 4 }, 4)]
     [DataRow(new[] { 1, 3 }, 2)]
     [DataRow(new[] { 1, 2, 1, 1, 2, 1, 2 }, 6)]
+    [DataRow(new[] { 2, 3 }, 2)]
     public void MaximumLength_WithInputArray_ReturnsLengthOfLongestValidSubsequence(int[] nums, int expectedResult)
     {
         // Arrange
