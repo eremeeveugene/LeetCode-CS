@@ -23,9 +23,14 @@ public sealed class MaximumDifferenceBetweenEvenAndOddFrequency1FrequencyDiction
     {
         var frequencyDictionary = new Dictionary<int, int>();
 
-        foreach (var c in s.Where(c => !frequencyDictionary.TryAdd(c, 1)))
+        for (var i = 0; i < s.Length; i++)
         {
-            frequencyDictionary[c]++;
+            var c = s[i];
+
+            if (!frequencyDictionary.TryAdd(c, 1))
+            {
+                frequencyDictionary[c]++;
+            }
         }
 
         var oddFrequency = int.MinValue;
