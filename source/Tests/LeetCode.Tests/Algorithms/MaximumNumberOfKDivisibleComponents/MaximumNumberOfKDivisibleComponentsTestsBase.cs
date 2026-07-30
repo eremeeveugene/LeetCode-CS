@@ -41,5 +41,7 @@ public abstract class MaximumNumberOfKDivisibleComponentsTestsBase<T> where T : 
             3,
             3
         ];
+
+        yield return [1, Array.Empty<int[]>(), new[] { 5 }, 3, 0];
     }
 }
