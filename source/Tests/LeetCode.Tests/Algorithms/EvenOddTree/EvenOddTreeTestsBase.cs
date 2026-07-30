@@ -57,5 +57,7 @@ public abstract class EvenOddTreeTestsBase<T> where T : IEvenOddTree, new()
         yield return [new int?[] { 5, 10, 4, 3, null, 7, 9, 12, 8, 6, 2, 0 }, true];
 
         yield return [new int?[] { 1, 3, 2, 6, 4, 6, 4, 12, 8, 6, null, null, 2, 1 }, false];
+
+        yield return [new int?[] { 1, 4, 4 }, false];
     }
 }
