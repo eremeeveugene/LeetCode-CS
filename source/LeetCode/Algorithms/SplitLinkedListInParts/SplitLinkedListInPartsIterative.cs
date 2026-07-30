@@ -58,17 +58,14 @@ public sealed class SplitLinkedListInPartsIterative : ISplitLinkedListInParts
                 extraNodesCount--;
             }
 
-            for (var j = 0; j < currentPartSize - 1; j++)
+            for (var j = 0; j < currentPartSize - 1 && currentNode.next is { } next; j++)
             {
-                currentNode = currentNode?.next;
+                currentNode = next;
             }
 
-            var nextPart = currentNode?.next;
+            var nextPart = currentNode.next;
 
-            if (currentNode != null)
-            {
-                currentNode.next = null;
-            }
+            currentNode.next = null;
 
             currentNode = nextPart;
         }
