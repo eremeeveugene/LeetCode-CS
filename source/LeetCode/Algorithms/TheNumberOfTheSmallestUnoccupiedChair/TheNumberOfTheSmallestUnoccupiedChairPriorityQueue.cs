@@ -30,6 +30,8 @@ public sealed class TheNumberOfTheSmallestUnoccupiedChairPriorityQueue : ITheNum
 
         var currentChair = 0;
 
+        var result = -1;
+
         foreach (var time in times)
         {
             var arrival = time[0];
@@ -46,12 +48,14 @@ public sealed class TheNumberOfTheSmallestUnoccupiedChairPriorityQueue : ITheNum
 
             if (arrival == targetFriendArrival)
             {
-                return nextChair;
+                result = nextChair;
+
+                break;
             }
 
             occupiedPriorityQueue.Enqueue((nextChair, leaving), leaving);
         }
 
-        return -1;
+        return result;
     }
 }
