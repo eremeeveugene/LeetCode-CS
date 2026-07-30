@@ -35,14 +35,11 @@ public sealed class RemoveNthNodeFromEndOfListTwoPointers : IRemoveNthNodeFromEn
 
         while (fastPointer != null)
         {
-            slowPointer = slowPointer?.next;
+            slowPointer = slowPointer!.next;
             fastPointer = fastPointer.next;
         }
 
-        if (slowPointer != null)
-        {
-            slowPointer.next = slowPointer.next?.next;
-        }
+        slowPointer!.next = slowPointer.next?.next;
 
         return dummyHead.next;
     }
