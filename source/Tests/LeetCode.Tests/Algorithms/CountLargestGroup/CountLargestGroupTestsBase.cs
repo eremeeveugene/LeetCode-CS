@@ -18,6 +18,7 @@ public abstract class CountLargestGroupTestsBase<T> where T : ICountLargestGroup
     [TestMethod]
     [DataRow(2, 2)]
     [DataRow(13, 4)]
+    [DataRow(20, 1)]
     public void CountLargestGroup_WithGivenInteger_ReturnsNumberOfGroupsThatHaveLargestSize(int n, int expectedResult)
     {
         // Arrange
