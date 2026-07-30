@@ -43,5 +43,7 @@ public abstract class FlipEquivalentBinaryTreesTestsBase<T> where T : IFlipEquiv
         [
             new int?[] { 1, 2, 3, 4, 5, 6, null, null, null, 7, 8 }, new int?[] { 1, 3, 2, null, 6, 4, 5, null, null, null, null, 8, 7 }, true
         ];
+
+        yield return [new int?[] { 1, 2, 3 }, new int?[] { 1, 2, 4 }, false];
     }
 }
