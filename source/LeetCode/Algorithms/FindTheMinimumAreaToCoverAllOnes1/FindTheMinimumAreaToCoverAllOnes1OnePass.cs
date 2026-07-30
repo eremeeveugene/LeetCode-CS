@@ -60,11 +60,6 @@ public sealed class FindTheMinimumAreaToCoverAllOnes1OnePass : IFindTheMinimumAr
             }
         }
 
-        if (bottom < 0)
-        {
-            return 0;
-        }
-
         return (right - left + 1) * (bottom - top + 1);
     }
 }
