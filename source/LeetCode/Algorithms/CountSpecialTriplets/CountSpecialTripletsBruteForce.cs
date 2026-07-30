@@ -49,12 +49,7 @@ public sealed class CountSpecialTripletsBruteForce : ICountSpecialTriplets
                         continue;
                     }
 
-                    result++;
-
-                    if (result == Modulo)
-                    {
-                        result = 0;
-                    }
+                    result = (result + 1) % Modulo;
                 }
             }
         }
