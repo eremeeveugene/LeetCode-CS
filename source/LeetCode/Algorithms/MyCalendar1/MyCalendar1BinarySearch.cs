@@ -14,7 +14,10 @@ namespace LeetCode.Algorithms.MyCalendar1;
 /// <inheritdoc />
 public sealed class MyCalendar1BinarySearch : IMyCalendar1
 {
-    private readonly List<Item> _items = [];
+    private static readonly Comparer<(int Start, int End)> BookingStartComparer =
+        Comparer<(int Start, int End)>.Create((left, right) => left.Start.CompareTo(right.Start));
+
+    private readonly List<(int Start, int End)> _items = [];
 
     /// <inheritdoc />
     /// <remarks>
@@ -23,9 +26,9 @@ public sealed class MyCalendar1BinarySearch : IMyCalendar1
     /// </remarks>
     public bool Book(int start, int end)
     {
-        var item = new Item(start, end);
+        var item = (start, end);
 
-        var index = _items.BinarySearch(item);
+        var index = _items.BinarySearch(item, BookingStartComparer);
 
         if (index < 0)
         {
@@ -40,21 +43,5 @@ public sealed class MyCalendar1BinarySearch : IMyCalendar1
         _items.Insert(index, item);
 
         return true;
-    }
-
-    private class Item(int start, int end) : IComparable<Item>
-    {
-        public int Start { get; } = start;
-        public int End { get; } = end;
-
-        public int CompareTo(Item? other)
-        {
-            if (other == null)
-            {
-                return -1;
-            }
-
-            return Start.CompareTo(other.Start);
-        }
     }
 }
