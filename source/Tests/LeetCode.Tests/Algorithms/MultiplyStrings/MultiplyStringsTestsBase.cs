@@ -36,6 +36,7 @@ public abstract class MultiplyStringsTestsBase<T> where T : IMultiplyStrings, ne
     [DataRow("1000", "1000", "1000000")]
     [DataRow("11", "11", "121")]
     [DataRow("999999999", "1", "999999999")]
+    [DataRow("11", "99", "1089")]
     public void Multiply_WithTwoStringNumbers_ReturnsProduct(string num1, string num2, string expectedResult)
     {
         // Arrange
