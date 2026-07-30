@@ -29,11 +29,7 @@ public sealed class ContinuousSubarraySumDictionary : IContinuousSubarraySum
         for (var i = 0; i < nums.Length; i++)
         {
             sum += nums[i];
-
-            if (k != 0)
-            {
-                sum %= k;
-            }
+            sum %= k;
 
             if (remainderDictionary.TryAdd(sum, i))
             {
