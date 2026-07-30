@@ -56,7 +56,7 @@ public sealed class ShortestDistanceAfterRoadAdditionQueries1BreadthFirstSearch 
                 UpdateDistancesFrom(adjacencyList, distances, toNode);
             }
 
-            result[i] = distances[n - 1] == int.MaxValue ? -1 : distances[n - 1];
+            result[i] = distances[n - 1];
         }
 
         return result;
@@ -72,8 +72,17 @@ public sealed class ShortestDistanceAfterRoadAdditionQueries1BreadthFirstSearch 
         {
             var currentNode = queue.Dequeue();
 
-            foreach (var neighbor in adjacencyList[currentNode].Where(neighbor => distances[currentNode] + 1 < distances[neighbor]))
+            var neighbors = adjacencyList[currentNode];
+
+            for (var i = 0; i < neighbors.Count; i++)
             {
+                var neighbor = neighbors[i];
+
+                if (distances[currentNode] + 1 >= distances[neighbor])
+                {
+                    continue;
+                }
+
                 distances[neighbor] = distances[currentNode] + 1;
 
                 queue.Enqueue(neighbor);
