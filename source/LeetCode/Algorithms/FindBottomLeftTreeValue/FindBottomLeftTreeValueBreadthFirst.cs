@@ -32,7 +32,7 @@ public sealed class FindBottomLeftTreeValueBreadthFirst : IFindBottomLeftTreeVal
 
         queue.Enqueue(root);
 
-        TreeNode? current = null;
+        var current = root;
 
         while (queue.Count > 0)
         {
@@ -49,6 +49,6 @@ public sealed class FindBottomLeftTreeValueBreadthFirst : IFindBottomLeftTreeVal
             }
         }
 
-        return current?.val ?? 0;
+        return current.val;
     }
 }
