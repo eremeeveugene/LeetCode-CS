@@ -17,6 +17,7 @@ public abstract class MaxSumOfPairWithEqualSumOfDigitsTestsBase<T> where T : IMa
 {
     [TestMethod]
     [DataRow(new[] { 18, 43, 36, 13, 7 }, 54)]
+    [DataRow(new[] { 18, 43, 36, 13, 7, 9 }, 54)]
     [DataRow(new[] { 10, 12, 19, 14 }, -1)]
     public void MaximumSum_GivenArrayOfNumbers_ReturnsLargestSumOfDigitPairs(int[] nums, int expectedResult)
     {
