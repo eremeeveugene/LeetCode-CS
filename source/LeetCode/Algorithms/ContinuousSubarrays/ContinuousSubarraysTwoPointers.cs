@@ -47,7 +47,7 @@ public sealed class ContinuousSubarraysTwoPointers : IContinuousSubarrays
             left = right;
             currentMin = currentMax = nums[right];
 
-            while (left > 0 && Math.Abs(nums[right] - nums[left - 1]) <= 2)
+            while (Math.Abs(nums[right] - nums[left - 1]) <= 2)
             {
                 left--;
 
