@@ -19,6 +19,7 @@ public abstract class SmallestPairWithDifferentFrequenciesTestsBase<T> where T :
     [DataRow(new[] { 1, 1, 2, 2, 3, 4 }, new[] { 1, 3 })]
     [DataRow(new[] { 1, 5 }, new[] { -1, -1 })]
     [DataRow(new[] { 7 }, new[] { -1, -1 })]
+    [DataRow(new[] { 1, 2, 3 }, new[] { -1, -1 })]
     public void MinDistinctFreqPair_WithInputNums_ReturnsSmallestPairWithDifferentFrequencies(int[] nums, int[] expectedResult)
     {
         // Arrange
