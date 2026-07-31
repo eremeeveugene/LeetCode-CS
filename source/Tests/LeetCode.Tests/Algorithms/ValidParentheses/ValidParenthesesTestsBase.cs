@@ -19,6 +19,7 @@ public abstract class ValidParenthesesTestsBase<T> where T : IValidParentheses, 
     [DataRow("()", true)]
     [DataRow("()[]{}", true)]
     [DataRow("(]", false)]
+    [DataRow(")", false)]
     [DataRow("{[]}", true)]
     [DataRow("[[[[]]]]", true)]
     public void IsValid_WithBracketString_ReturnsTrueIfBracketsAreProperlyClosedAndNested(string s, bool expectedResult)
