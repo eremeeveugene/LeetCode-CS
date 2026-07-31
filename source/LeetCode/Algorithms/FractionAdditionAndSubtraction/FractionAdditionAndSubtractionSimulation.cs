@@ -43,7 +43,7 @@ public sealed class FractionAdditionAndSubtractionSimulation : IFractionAddition
 
             var currentNumerator = 0;
 
-            while (i < expression.Length && char.IsDigit(expression[i]))
+            while (char.IsDigit(expression[i]))
             {
                 currentNumerator = (currentNumerator * 10) + (int)char.GetNumericValue(expression[i]);
 
