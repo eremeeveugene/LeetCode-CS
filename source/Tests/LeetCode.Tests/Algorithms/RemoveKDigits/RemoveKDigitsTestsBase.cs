@@ -18,6 +18,7 @@ public abstract class RemoveKDigitsTestsBase<T> where T : IRemoveKDigits, new()
     [TestMethod]
     [DataRow("10", 2, "0")]
     [DataRow("500", 3, "0")]
+    [DataRow("100", 1, "0")]
     [DataRow("10200", 1, "200")]
     [DataRow("1432219", 3, "1219")]
     [DataRow("1234567", 1, "123456")]
