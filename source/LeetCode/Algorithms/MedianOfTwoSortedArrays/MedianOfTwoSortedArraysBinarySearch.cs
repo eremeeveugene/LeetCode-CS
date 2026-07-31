@@ -34,6 +34,8 @@ public sealed class MedianOfTwoSortedArraysBinarySearch : IMedianOfTwoSortedArra
             var high = nums1.Length;
             var halfLen = (nums1.Length + nums2.Length + 1) / 2;
 
+            var result = 0.0;
+
             while (low <= high)
             {
                 var i = (low + high) / 2;
@@ -66,7 +68,9 @@ public sealed class MedianOfTwoSortedArraysBinarySearch : IMedianOfTwoSortedArra
 
                     if ((nums1.Length + nums2.Length) % 2 == 1)
                     {
-                        return maxLeft;
+                        result = maxLeft;
+
+                        break;
                     }
 
                     int minRight;
@@ -84,11 +88,13 @@ public sealed class MedianOfTwoSortedArraysBinarySearch : IMedianOfTwoSortedArra
                         minRight = Math.Min(nums1[i], nums2[j]);
                     }
 
-                    return (maxLeft + minRight) / 2.0;
+                    result = (maxLeft + minRight) / 2.0;
+
+                    break;
                 }
             }
 
-            return 0;
+            return result;
         }
     }
 }

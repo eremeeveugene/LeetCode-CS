@@ -23,6 +23,8 @@ public abstract class StringToIntegerTestsBase<T> where T : IStringToInteger, ne
     [DataRow("words and 987", 0)]
     [DataRow("-91283472332", -2147483648)]
     [DataRow("9223372036854775808", 2147483647)]
+    [DataRow(" ", 0)]
+    [DataRow("+123", 123)]
     public void MyAtoi_WithStringInput_ReturnsParsedIntegerOrZero(string s, int expectedResult)
     {
         // Arrange

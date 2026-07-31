@@ -103,12 +103,9 @@ public sealed class DesignCircularDequeLinkedList : IDesignCircularDeque
         }
         else
         {
-            _frontNode = _frontNode?.Next;
+            _frontNode = _frontNode!.Next;
 
-            if (_frontNode != null)
-            {
-                _frontNode.Previous = null;
-            }
+            _frontNode!.Previous = null;
         }
 
         _count--;
@@ -135,12 +132,9 @@ public sealed class DesignCircularDequeLinkedList : IDesignCircularDeque
         }
         else
         {
-            _rearNode = _rearNode?.Previous;
+            _rearNode = _rearNode!.Previous;
 
-            if (_rearNode != null)
-            {
-                _rearNode.Next = null;
-            }
+            _rearNode!.Next = null;
         }
 
         _count--;

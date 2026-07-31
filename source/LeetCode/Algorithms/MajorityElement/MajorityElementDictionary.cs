@@ -34,8 +34,13 @@ public sealed class MajorityElementDictionary : IMajorityElement
         var result = 0;
         var maxFrequency = 0;
 
-        foreach (var frequency in frequencyDictionary.Where(pair => pair.Value > maxFrequency))
+        foreach (var frequency in frequencyDictionary)
         {
+            if (frequency.Value <= maxFrequency)
+            {
+                continue;
+            }
+
             maxFrequency = frequency.Value;
             result = frequency.Key;
         }

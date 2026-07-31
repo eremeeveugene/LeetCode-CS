@@ -38,14 +38,7 @@ public sealed class KthSmallestPrimeFractionBinarySearch : IKthSmallestPrimeFrac
                 {
                     var comparerResult = a.value.CompareTo(b.value);
 
-                    if (comparerResult != 0)
-                    {
-                        return comparerResult;
-                    }
-
-                    comparerResult = a.i.CompareTo(b.i);
-
-                    return comparerResult == 0 ? a.j.CompareTo(b.j) : comparerResult;
+                    return comparerResult == 0 ? a.i.CompareTo(b.i) : comparerResult;
                 }));
 
             for (var i = 0; i < arr.Length - 1; i++)
@@ -92,11 +85,13 @@ public sealed class KthSmallestPrimeFractionBinarySearch : IKthSmallestPrimeFrac
             {
                 right = mid;
 
-                if (heap.Count == k)
+                if (heap.Count != k)
                 {
-                    result[0] = arr[heap.Max.i];
-                    result[1] = arr[heap.Max.j];
+                    continue;
                 }
+
+                result[0] = arr[heap.Max.i];
+                result[1] = arr[heap.Max.j];
             }
         }
 

@@ -19,6 +19,7 @@ public abstract class New21GameTestsBase<T> where T : INew21Game, new()
     [DataRow(10, 1, 10, 1)]
     [DataRow(6, 1, 10, 0.6)]
     [DataRow(21, 17, 10, 0.73278)]
+    [DataRow(5, 0, 10, 1)]
     public void New21Game_WithPointsThresholdAndMaxPoints_ReturnsProbabilityOfPointsNotExceedingLimit(int n, int k, int maxPts, double expectedResult)
     {
         // Arrange

@@ -112,10 +112,11 @@ public sealed class TwentyFourGameBruteForce : ITwentyFourGame
         Operation secondOperator,
         Operation thirdOperator)
     {
-        return TryApplyOperator(a, b, firstOperator, out var t) &&
-               TryApplyOperator(t, c, secondOperator, out var u) &&
-               TryApplyOperator(u, d, thirdOperator, out var v) &&
-               IsTargetValue(v);
+        TryApplyOperator(a, b, firstOperator, out var t);
+        TryApplyOperator(t, c, secondOperator, out var u);
+        TryApplyOperator(u, d, thirdOperator, out var v);
+
+        return IsTargetValue(v);
     }
 
     private static bool EvaluatesToTargetInnerFirst(
@@ -200,6 +201,7 @@ public sealed class TwentyFourGameBruteForce : ITwentyFourGame
 
                 return true;
             case Operation.Division:
+            default:
                 if (Math.Abs(right) < Tolerance)
                 {
                     result = 0;
@@ -210,8 +212,6 @@ public sealed class TwentyFourGameBruteForce : ITwentyFourGame
                 result = left / right;
 
                 return true;
-            default:
-                throw new ArgumentOutOfRangeException(nameof(operation), operation, null);
         }
     }
 

@@ -37,6 +37,6 @@ public sealed class SmallestNumberWithAllSetBitsBinarySearch : ISmallestNumberWi
 
         index = ~index;
 
-        return index < Numbers.Length ? Numbers[index] : Numbers[^1];
+        return Numbers[index];
     }
 }

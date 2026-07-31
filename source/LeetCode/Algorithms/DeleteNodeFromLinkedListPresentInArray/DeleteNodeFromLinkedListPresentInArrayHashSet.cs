@@ -34,7 +34,7 @@ public sealed class DeleteNodeFromLinkedListPresentInArrayHashSet : IDeleteNodeF
 
         var node = dummyHead;
 
-        while (node?.next != null)
+        while (node.next != null)
         {
             if (numsHashSet.Contains(node.next.val))
             {

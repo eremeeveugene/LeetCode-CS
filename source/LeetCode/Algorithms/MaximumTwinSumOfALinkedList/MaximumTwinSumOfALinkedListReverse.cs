@@ -28,7 +28,7 @@ public sealed class MaximumTwinSumOfALinkedListReverse : IMaximumTwinSumOfALinke
 
         while (fast != null)
         {
-            slow = slow?.next;
+            slow = slow!.next;
             fast = fast.next?.next;
         }
 
@@ -48,9 +48,9 @@ public sealed class MaximumTwinSumOfALinkedListReverse : IMaximumTwinSumOfALinke
         var secondHalf = previous;
         var maxSum = 0;
 
-        while (firstHalf != null && secondHalf != null)
+        while (secondHalf != null)
         {
-            var sum = firstHalf.val + secondHalf.val;
+            var sum = firstHalf!.val + secondHalf.val;
 
             maxSum = Math.Max(maxSum, sum);
 

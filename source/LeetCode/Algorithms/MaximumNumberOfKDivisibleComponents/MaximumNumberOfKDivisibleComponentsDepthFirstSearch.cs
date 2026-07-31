@@ -53,8 +53,17 @@ public sealed class MaximumNumberOfKDivisibleComponentsDepthFirstSearch : IMaxim
 
         var subtreeSumMod = values[node] % k;
 
-        foreach (var neighbor in graph[node].Where(neighbor => !visited[neighbor]))
+        var neighbors = graph[node];
+
+        for (var i = 0; i < neighbors.Count; i++)
         {
+            var neighbor = neighbors[i];
+
+            if (visited[neighbor])
+            {
+                continue;
+            }
+
             var childSumMod = MaxKDivisibleComponents(neighbor, graph, visited, values, k, ref components);
 
             if (childSumMod == 0)

@@ -105,7 +105,7 @@ public sealed class MultiplyStringsStack : IMultiplyStrings
 
         while (num1Index >= 0 || num2Index >= 0)
         {
-            var num1Value = num1Index >= 0 ? (int)char.GetNumericValue(num1[num1Index--]) : 0;
+            var num1Value = (int)char.GetNumericValue(num1[num1Index--]);
             var num2Value = num2Index >= 0 ? (int)char.GetNumericValue(num2[num2Index--]) : 0;
 
             var sum = num1Value + num2Value + remainder;

@@ -50,8 +50,17 @@ public sealed class SumOfDistancesInTreeDepthFirstSearch : ISumOfDistancesInTree
     {
         count[node] = 1;
 
-        foreach (var child in graph[node].Where(child => child != parent))
+        var neighbors = graph[node];
+
+        for (var i = 0; i < neighbors.Count; i++)
         {
+            var child = neighbors[i];
+
+            if (child == parent)
+            {
+                continue;
+            }
+
             Dfs(child, node, graph, count, ans);
 
             count[node] += count[child];
@@ -61,8 +70,17 @@ public sealed class SumOfDistancesInTreeDepthFirstSearch : ISumOfDistancesInTree
 
     private static void Dfs2(int node, int parent, List<int>[] graph, int[] count, int[] ans)
     {
-        foreach (var child in graph[node].Where(child => child != parent))
+        var neighbors = graph[node];
+
+        for (var i = 0; i < neighbors.Count; i++)
         {
+            var child = neighbors[i];
+
+            if (child == parent)
+            {
+                continue;
+            }
+
             ans[child] = ans[node] - count[child] + count.Length - count[child];
 
             Dfs2(child, node, graph, count, ans);

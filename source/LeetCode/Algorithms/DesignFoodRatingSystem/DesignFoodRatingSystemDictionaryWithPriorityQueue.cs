@@ -80,6 +80,8 @@ public sealed class DesignFoodRatingSystemDictionaryWithPriorityQueue : IDesignF
     {
         var queue = _cuisineToFoodRatingsDictionary[cuisine];
 
+        var result = string.Empty;
+
         while (queue.Count > 0)
         {
             var foodRating = queue.Peek();
@@ -88,13 +90,15 @@ public sealed class DesignFoodRatingSystemDictionaryWithPriorityQueue : IDesignF
 
             if (foodRating.Rating == actualRating)
             {
-                return foodRating.Food;
+                result = foodRating.Food;
+
+                break;
             }
 
             queue.Dequeue();
         }
 
-        return string.Empty;
+        return result;
     }
 
     private readonly struct FoodRating : IComparable<FoodRating>
