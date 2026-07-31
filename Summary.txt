@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/30/2026 - 5:21:39 PM
-  Coverage date: 7/30/2026 - 5:21:01 PM - 7/30/2026 - 5:21:29 PM
+  Generated on: 7/31/2026 - 8:45:25 AM
+  Coverage date: 7/31/2026 - 8:44:54 AM - 7/31/2026 - 8:45:17 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1333
-  Files: 1333
+  Classes: 1334
+  Files: 1334
   Line coverage: 99.9%
-  Covered lines: 30173
-  Uncovered lines: 12
-  Coverable lines: 30185
-  Total lines: 73994
-  Branch coverage: 98.8% (11084 of 11214)
-  Covered branches: 11084
-  Total branches: 11214
-  Method coverage: 100% (1955 of 1955)
-  Full method coverage: 99.6% (1949 of 1955)
-  Covered methods: 1955
-  Fully covered methods: 1949
-  Total methods: 1955
+  Covered lines: 30201
+  Uncovered lines: 8
+  Coverable lines: 30209
+  Total lines: 74056
+  Branch coverage: 98.8% (11093 of 11220)
+  Covered branches: 11093
+  Total branches: 11220
+  Method coverage: 100% (1956 of 1956)
+  Full method coverage: 99.6% (1950 of 1956)
+  Covered methods: 1956
+  Fully covered methods: 1950
+  Total methods: 1956
 
 LeetCode                                                                                                                                                99.9%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -831,6 +831,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfPushesToTypeWord1.MinimumNumberOfPushesToTypeWord1Counting                                                          100%
   LeetCode.Algorithms.MinimumNumberOfPushesToTypeWord1.MinimumNumberOfPushesToTypeWord1Iterative                                                         100%
   LeetCode.Algorithms.MinimumNumberOfPushesToTypeWord1.MinimumNumberOfPushesToTypeWord1Math                                                              100%
+  LeetCode.Algorithms.MinimumNumberOfPushesToTypeWord2.MinimumNumberOfPushesToTypeWord2Counting                                                          100%
   LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced.MinimumNumberOfSwapsToMakeTheStringBalancedIterative                                   100%
   LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner.MinimumObstacleRemovalToReachCornerBreadthFirstSearch                                          100%
   LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner.MinimumObstacleRemovalToReachCornerPriorityQueue                                               100%
@@ -1343,7 +1344,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
