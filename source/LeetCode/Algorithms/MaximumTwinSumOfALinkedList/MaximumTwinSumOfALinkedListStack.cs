@@ -30,12 +30,9 @@ public sealed class MaximumTwinSumOfALinkedListStack : IMaximumTwinSumOfALinkedL
 
         while (fast is { next: not null })
         {
-            if (slow != null)
-            {
-                firstHalfValues.Push(slow.val);
+            firstHalfValues.Push(slow!.val);
 
-                slow = slow.next;
-            }
+            slow = slow.next;
 
             fast = fast.next.next;
         }
