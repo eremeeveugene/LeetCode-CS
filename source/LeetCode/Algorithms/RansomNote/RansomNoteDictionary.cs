@@ -21,15 +21,26 @@ public sealed class RansomNoteDictionary : IRansomNote
     /// </remarks>
     public bool CanConstruct(string ransomNote, string magazine)
     {
+        var m = magazine.Length;
+
         var magazineDictionary = new Dictionary<char, int>();
 
-        foreach (var magazineChar in magazine.Where(magazineChar => !magazineDictionary.TryAdd(magazineChar, 1)))
+        for (var i = 0; i < m; i++)
         {
-            magazineDictionary[magazineChar]++;
+            var magazineChar = magazine[i];
+
+            if (!magazineDictionary.TryAdd(magazineChar, 1))
+            {
+                magazineDictionary[magazineChar]++;
+            }
         }
 
-        foreach (var ransomNoteChar in ransomNote)
+        var n = ransomNote.Length;
+
+        for (var i = 0; i < n; i++)
         {
+            var ransomNoteChar = ransomNote[i];
+
             if (magazineDictionary.TryGetValue(ransomNoteChar, out var magazineCharValue))
             {
                 if (magazineCharValue > 0)
