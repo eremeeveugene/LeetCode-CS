@@ -19,6 +19,7 @@ public abstract class ShortestSubarrayToBeRemovedToMakeArraySortedTestsBase<T> w
     [DataRow(new[] { 1, 2, 3, 10, 4, 2, 3, 5 }, 3)]
     [DataRow(new[] { 5, 4, 3, 2, 1 }, 4)]
     [DataRow(new[] { 1, 2, 3 }, 0)]
+    [DataRow(new[] { 1, 2, 3, 100, 4, 5, 150 }, 1)]
     public void FindLengthOfShortestSubarray_GivenArray_ReturnsLengthOfShortestToBeRemoved(int[] arr, int expectedResult)
     {
         // Arrange
