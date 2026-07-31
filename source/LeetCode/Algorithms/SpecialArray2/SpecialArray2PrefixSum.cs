@@ -39,12 +39,7 @@ public sealed class SpecialArray2PrefixSum : ISpecialArray2
 
         for (var i = 1; i < nums.Length; i++)
         {
-            prefixSum[i] = prefixSum[i - 1];
-
-            if (i - 1 < sameParity.Length)
-            {
-                prefixSum[i] += sameParity[i - 1];
-            }
+            prefixSum[i] = prefixSum[i - 1] + sameParity[i - 1];
         }
 
         var result = new bool[queries.Length];
