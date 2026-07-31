@@ -787,6 +787,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3120. Count the Number of Special Characters I](https://leetcode.com/problems/count-the-number-of-special-characters-i/description/)
 - [3133. Minimum Array End](https://leetcode.com/problems/minimum-array-end/description/)
 - [3136. Valid Word](https://leetcode.com/problems/valid-word/description/)
+- [3147. Taking Maximum Energy From The Mystic Dungeon](https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/description/)
 - [3151. Special Array I](https://leetcode.com/problems/special-array-i/description/)
 - [3152. Special Array II](https://leetcode.com/problems/special-array-ii/description/)
 - [3160. Find the Number of Distinct Colors Among the Balls](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/description/)
