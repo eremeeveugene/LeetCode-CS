@@ -36,6 +36,8 @@ public abstract class MovePiecesToObtainStringTestsBase<T> where T : IMovePieces
     [DataRow("RR_", "_RR", true)]
     [DataRow("L_R", "L_R", true)]
     [DataRow("LR__", "_LR_", false)]
+    [DataRow("L___", "L__L", false)]
+    [DataRow("L__L", "L___", false)]
     public void CanChange_WithStartAndTargetStrings_ReturnsIfTransformationIsPossible(string start, string target, bool expectedResult)
     {
         // Arrange
