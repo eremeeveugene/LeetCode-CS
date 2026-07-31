@@ -39,5 +39,7 @@ public abstract class MinimumDepthOfBinaryTreeTestsBase<T> where T : IMinimumDep
         yield return [new int?[] { 3, 9, 20, null, null, 15, 7 }, 2];
 
         yield return [new int?[] { 2, null, 3, null, 4, null, 5, null, 6 }, 5];
+
+        yield return [new int?[] { 1, 2 }, 2];
     }
 }
