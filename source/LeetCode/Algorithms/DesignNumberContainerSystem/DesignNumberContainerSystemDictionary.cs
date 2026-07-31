@@ -31,14 +31,13 @@ public sealed class DesignNumberContainerSystemDictionary : IDesignNumberContain
                 return;
             }
 
-            if (_numberToIndices.TryGetValue(existingNumber, out var existingNumberIndices))
-            {
-                existingNumberIndices.Remove(index);
+            var existingNumberIndices = _numberToIndices[existingNumber];
 
-                if (existingNumberIndices.Count == 0)
-                {
-                    _numberToIndices.Remove(existingNumber);
-                }
+            existingNumberIndices.Remove(index);
+
+            if (existingNumberIndices.Count == 0)
+            {
+                _numberToIndices.Remove(existingNumber);
             }
         }
 
