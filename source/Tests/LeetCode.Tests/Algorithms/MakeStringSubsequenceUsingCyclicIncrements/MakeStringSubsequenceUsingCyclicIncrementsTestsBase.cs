@@ -33,6 +33,7 @@ public abstract class MakeStringSubsequenceUsingCyclicIncrementsTestsBase<T> whe
     [DataRow("zzz", "aaa", true)]
     [DataRow("ba", "b", true)]
     [DataRow("ba", "a", true)]
+    [DataRow("z", "b", false)]
     [DataRow("abcd", "abcde", false)]
     public void CanMakeSubsequence_WithGivenStrings_ReturnsTrueIfPossible(string str1, string str2, bool expectedResult)
     {
