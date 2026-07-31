@@ -17,6 +17,7 @@ public abstract class FindTheDifferenceTestsBase<T> where T : IFindTheDifference
 {
     [TestMethod]
     [DataRow("abcd", "abcde", 'e')]
+    [DataRow("abc", "dabc", 'd')]
     [DataRow("", "y", 'y')]
     [DataRow("a", "aa", 'a')]
     [DataRow("ae", "aea", 'a')]
