@@ -19,6 +19,7 @@ public abstract class CompareVersionNumbersTestsBase<T> where T : ICompareVersio
     [DataRow("0", "0", 0)]
     [DataRow("1.01", "1.001", 0)]
     [DataRow("1.0", "1.0.0", 0)]
+    [DataRow("1.0.0", "1.0", 0)]
     [DataRow("0.1", "1.1", -1)]
     [DataRow("6", "003479002", -1)]
     [DataRow("4", "4.969.3.863.960.99661.8.085.769.0.735662509.75003", -1)]
