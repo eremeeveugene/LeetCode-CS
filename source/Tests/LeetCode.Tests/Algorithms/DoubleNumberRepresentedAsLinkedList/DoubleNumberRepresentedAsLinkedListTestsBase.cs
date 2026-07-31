@@ -18,6 +18,7 @@ namespace LeetCode.Tests.Algorithms.DoubleNumberRepresentedAsLinkedList;
 public abstract class DoubleNumberRepresentedAsLinkedListTestsBase<T> where T : IDoubleNumberRepresentedAsLinkedList, new()
 {
     [TestMethod]
+    [DataRow(new int[] { }, new int[] { })]
     [DataRow(new[] { 1, 8, 9 }, new[] { 3, 7, 8 })]
     [DataRow(new[] { 9, 9, 9 }, new[] { 1, 9, 9, 8 })]
     public void ListNode_DoubleIt_GivenListNode_ReturnsDoubledValuesListNode(int[] headArray, int[] expectedResultArray)
