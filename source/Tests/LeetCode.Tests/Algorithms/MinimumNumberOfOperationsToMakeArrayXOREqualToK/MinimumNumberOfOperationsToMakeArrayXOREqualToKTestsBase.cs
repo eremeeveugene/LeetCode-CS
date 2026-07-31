@@ -18,6 +18,7 @@ public abstract class MinimumNumberOfOperationsToMakeArrayXOREqualToKTestsBase<T
     [TestMethod]
     [DataRow(new[] { 2, 1, 3, 4 }, 1, 2)]
     [DataRow(new[] { 2, 0, 2, 0 }, 0, 0)]
+    [DataRow(new[] { 1 }, 4, 2)]
     public void MinOperations_WithNumsArrayAndK_ReturnsMinOperationsCount(int[] nums, int k, int expectedResult)
     {
         // Arrange
