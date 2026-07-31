@@ -31,6 +31,8 @@ public abstract class FindWinnerOnTicTacToeGameTestsBase<T> where T : IFindWinne
 
     private static IEnumerable<object[]> GetTestData()
     {
+        yield return [new[] { new[] { 0, 0 }, new[] { 1, 1 } }, "Pending"];
+
         yield return [new[] { new[] { 0, 0 }, new[] { 2, 0 }, new[] { 1, 1 }, new[] { 2, 1 }, new[] { 2, 2 } }, "A"];
 
         yield return [new[] { new[] { 0, 0 }, new[] { 1, 1 }, new[] { 0, 1 }, new[] { 0, 2 }, new[] { 1, 0 }, new[] { 2, 0 } }, "B"];
