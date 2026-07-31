@@ -19,6 +19,7 @@ public abstract class MaximumUniqueSubarraySumAfterDeletionTestsBase<T> where T 
     [DataRow(new[] { 1, 2, 3, 4, 5 }, 15)]
     [DataRow(new[] { 1, 1, 0, 1, 1 }, 1)]
     [DataRow(new[] { 1, 2, -1, -2, 1, 0, -1 }, 3)]
+    [DataRow(new[] { -5, -1, -3 }, -1)]
     public void MaxSum_WithIntegerArray_ReturnsMaximumSubarraySum(int[] nums, int expectedResult)
     {
         // Arrange
