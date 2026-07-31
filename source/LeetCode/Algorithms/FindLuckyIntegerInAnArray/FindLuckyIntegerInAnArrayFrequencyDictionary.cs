@@ -21,21 +21,26 @@ public sealed class FindLuckyIntegerInAnArrayFrequencyDictionary : IFindLuckyInt
     /// </remarks>
     public int FindLucky(int[] arr)
     {
-        var frequencyDictionary = new Dictionary<int, int>();
+        var numToFrequencyDictionary = new Dictionary<int, int>();
 
-        foreach (var number in arr)
+        for (var i = 0; i < arr.Length; i++)
         {
-            if (!frequencyDictionary.TryAdd(number, 1))
+            var num = arr[i];
+
+            if (!numToFrequencyDictionary.TryAdd(num, 1))
             {
-                frequencyDictionary[number]++;
+                numToFrequencyDictionary[num]++;
             }
         }
 
         var result = -1;
 
-        foreach (var frequency in frequencyDictionary.Where(frequency => frequency.Key == frequency.Value && frequency.Key > result))
+        foreach (var numToFrequency in numToFrequencyDictionary)
         {
-            result = frequency.Key;
+            if (numToFrequency.Key == numToFrequency.Value && numToFrequency.Key > result)
+            {
+                result = numToFrequency.Key;
+            }
         }
 
         return result;
