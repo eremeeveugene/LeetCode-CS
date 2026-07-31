@@ -19,6 +19,7 @@ public abstract class ParsingBooleanExpressionTestsBase<T> where T : IParsingBoo
     [DataRow("&(|(f))", false)]
     [DataRow("|(f,f,f,t)", true)]
     [DataRow("!(&(f,t))", true)]
+    [DataRow("&(|(f,t),t)", true)]
     public void ParseBoolExpr_GivenBooleanExpression_EvaluatesToCorrectResult(string expression, bool expectedResult)
     {
         // Arrange
