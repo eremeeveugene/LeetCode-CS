@@ -40,5 +40,7 @@ public abstract class SameTreeTestsBase<T> where T : ISameTree, new()
         yield return [new int?[] { 1, 2 }, new int?[] { 1, null, 2 }, false];
 
         yield return [new int?[] { 1, 2, 1 }, new int?[] { 1, 1, 2 }, false];
+
+        yield return [new int?[] { 1 }, new int?[] { 1, 2 }, false];
     }
 }
