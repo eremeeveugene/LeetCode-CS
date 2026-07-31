@@ -37,6 +37,8 @@ public abstract class PathSum2TestsBase<T> where T : IPathSum2, new()
 
     private static IEnumerable<object[]> GetTestData()
     {
+        yield return [Array.Empty<int?>(), 0, Array.Empty<IList<int>>()];
+
         yield return
         [
             new int?[] { 5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1 }, 22, new IList<int>[] { new[] { 5, 4, 11, 2 }, new[] { 5, 8, 4, 5 } }
