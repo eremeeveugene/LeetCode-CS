@@ -1,23 +1,23 @@
 Summary
-  Generated on: 7/31/2026 - 4:27:29 PM
-  Coverage date: 7/31/2026 - 4:26:58 PM - 7/31/2026 - 4:27:21 PM
+  Generated on: 7/31/2026 - 4:54:31 PM
+  Coverage date: 7/31/2026 - 4:53:48 PM - 7/31/2026 - 4:54:14 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1334
-  Files: 1334
+  Classes: 1336
+  Files: 1336
   Line coverage: 99.9%
-  Covered lines: 30203
-  Uncovered lines: 6
-  Coverable lines: 30209
-  Total lines: 74082
-  Branch coverage: 99.3% (11100 of 11172)
-  Covered branches: 11100
-  Total branches: 11172
-  Method coverage: 100% (1956 of 1956)
-  Full method coverage: 99.9% (1955 of 1956)
-  Covered methods: 1956
-  Fully covered methods: 1955
-  Total methods: 1956
+  Covered lines: 30237
+  Uncovered lines: 2
+  Coverable lines: 30239
+  Total lines: 74171
+  Branch coverage: 99.3% (11111 of 11180)
+  Covered branches: 11111
+  Total branches: 11180
+  Method coverage: 100% (1958 of 1958)
+  Full method coverage: 99.9% (1957 of 1958)
+  Covered methods: 1958
+  Fully covered methods: 1957
+  Total methods: 1958
 
 LeetCode                                                                                                                                                99.9%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1244,6 +1244,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.SymmetricTree.SymmetricTreeRecursive                                                                                               100%
   LeetCode.Algorithms.TakeGiftsFromTheRichestPile.TakeGiftsFromTheRichestPilePriorityQueue                                                               100%
   LeetCode.Algorithms.TakeKOfEachCharacterFromLeftAndRight.TakeKOfEachCharacterFromLeftAndRightSlidingWindow                                             100%
+  LeetCode.Algorithms.TakingMaximumEnergyFromTheMysticDungeon.TakingMaximumEnergyFromTheMysticDungeonBruteForce                                          100%
+  LeetCode.Algorithms.TakingMaximumEnergyFromTheMysticDungeon.TakingMaximumEnergyFromTheMysticDungeonDynamicProgramming                                  100%
   LeetCode.Algorithms.TargetSum.TargetSumRecursion                                                                                                       100%
   LeetCode.Algorithms.TaskScheduler.TaskSchedulerDictionary                                                                                              100%
   LeetCode.Algorithms.TeemoAttacking.TeemoAttackingSimulation                                                                                            100%
@@ -1344,7 +1346,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
