@@ -41,5 +41,45 @@ public abstract class MinimumNumberOfOperationsToSortBinaryTreeByLevelTestsBase<
         yield return [new int?[] { 1, 3, 2, 7, 6, 5, 4 }, 3];
 
         yield return [new int?[] { 1, 4, 3, 7, 6, 8, 5, null, null, null, null, 9, null, 10 }, 3];
+
+        yield return [new int?[] { 1, 2, 3 }, 0];
+
+        yield return [new int?[] { 1, 3, 2 }, 1];
+
+        yield return [new int?[] { 10, 20, 30 }, 0];
+
+        yield return [new int?[] { 10, 30, 20 }, 1];
+
+        yield return [new int?[] { 100, 1, 2 }, 0];
+
+        yield return [new int?[] { 5, 50, 10 }, 1];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 7, 6 }, 1];
+
+        yield return [new int?[] { 1, 3, 2, 5, 4, 7, 6 }, 3];
+
+        yield return [new int?[] { 1, 2, 3, 7, 6, 5, 4 }, 2];
+
+        yield return [new int?[] { 1, 2, 3, 5, 6, 7, 4 }, 3];
+
+        yield return [new int?[] { 1, 3, 2, 4, 5, 6, 7 }, 1];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }, 0];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 15, 14, 13, 12, 11, 10, 9, 8 }, 4];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 8 }, 7];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 14 }, 1];
+
+        yield return [new int?[] { 1, 3, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }, 1];
+
+        yield return [new int?[] { 1, 2, 3, 7, 6, 5, 4, 8, 9, 10, 11, 12, 13, 14, 15 }, 2];
+
+        yield return [new int?[] { 1, 3, 2, 7, 6, 5, 4, 15, 14, 13, 12, 11, 10, 9, 8 }, 7];
+
+        yield return [new int?[] { 1, 2, 3, 5, 6, 7, 4, 8, 9, 10, 11, 12, 13, 14, 15 }, 3];
+
+        yield return [new int?[] { 1, 3, 2, 5, 6, 7, 4, 9, 10, 11, 12, 13, 14, 15, 8 }, 11];
     }
 }
