@@ -19,6 +19,7 @@ public abstract class MinimumEqualSumOfTwoArraysAfterReplacingZerosTestsBase<T> 
     [DataRow(new[] { 1, 2, 3, 2 }, new[] { 1, 4, 3 }, 8L)]
     [DataRow(new[] { 3, 2, 0, 1, 0 }, new[] { 6, 5, 0 }, 12L)]
     [DataRow(new[] { 2, 0, 2, 0 }, new[] { 1, 4 }, -1L)]
+    [DataRow(new[] { 5 }, new[] { 10 }, -1L)]
     [DataRow(new[] { 2, 0, 2, 0 }, new[] { 2, 0, 2, 0 }, 6L)]
     [DataRow(
         new[] { 20, 0, 18, 11, 0, 0, 0, 0, 0, 0, 17, 28, 0, 11, 10, 0, 0, 15, 29 },
