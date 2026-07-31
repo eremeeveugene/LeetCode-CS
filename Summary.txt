@@ -1,17 +1,17 @@
 Summary
-  Generated on: 7/31/2026 - 4:54:31 PM
-  Coverage date: 7/31/2026 - 4:53:48 PM - 7/31/2026 - 4:54:14 PM
+  Generated on: 7/31/2026 - 5:03:21 PM
+  Coverage date: 7/31/2026 - 5:02:48 PM - 7/31/2026 - 5:03:13 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
   Classes: 1336
   Files: 1336
   Line coverage: 99.9%
-  Covered lines: 30237
-  Uncovered lines: 2
+  Covered lines: 30233
+  Uncovered lines: 6
   Coverable lines: 30239
   Total lines: 74171
-  Branch coverage: 99.3% (11111 of 11180)
-  Covered branches: 11111
+  Branch coverage: 99.3% (11108 of 11180)
+  Covered branches: 11108
   Total branches: 11180
   Method coverage: 100% (1958 of 1958)
   Full method coverage: 99.9% (1957 of 1958)
@@ -1346,7 +1346,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ZeroOneMatrix.ZeroOneMatrixDynamicProgramming                                                                                      100%
   LeetCode.Algorithms.ZigzagConversion.ZigzagConversionSimulation                                                                                        100%
   LeetCode.Algorithms.ZigzagGridTraversalWithSkip.ZigzagGridTraversalWithSkipSimulation                                                                  100%
-  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           97.4%
+  LeetCode.Concurrency.FizzBuzzMultithreaded.FizzBuzzMultithreadedMonitorLock                                                                           92.3%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderAutoResetEvent                                                                                           100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderManualResetEvent                                                                                         100%
   LeetCode.Concurrency.PrintInOrder.PrintInOrderMonitor                                                                                                  100%
