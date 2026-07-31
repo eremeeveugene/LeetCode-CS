@@ -18,6 +18,7 @@ public abstract class MaximumNumberOfOperationsToMoveOnesToTheEndTestsBase<T> wh
     [TestMethod]
     [DataRow("1001101", 4)]
     [DataRow("00111", 0)]
+    [DataRow("1100", 2)]
     public void MaxOperations_WithBinaryStringContainingZerosAndOnes_ReturnsTotalNumberOfValidMoves(string s, int expectedResult)
     {
         // Arrange
