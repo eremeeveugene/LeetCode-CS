@@ -12,8 +12,8 @@ The primary goal of this repository is to improve my own skills and demonstrate 
 
 ## Technologies
 
-- **[.NET 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)**: The latest version of the .NET platform for building and running applications.
-- **[C# 13](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13)**: The programming language used to implement the solutions.
+- **[.NET 10](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)**: The latest version of the .NET platform for building and running applications.
+- **[C# 14](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-14)**: The programming language used to implement the solutions.
 - **[MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)**: A testing framework for .NET to write and run tests.
 - **[Coverlet](https://github.com/coverlet-coverage/coverlet)**: A code coverage library for .NET that collects coverage data and integrates with build tasks.
 - **[ReportGenerator](https://reportgenerator.io/)**: A tool to generate reports from the test coverage data.
@@ -22,7 +22,7 @@ The primary goal of this repository is to improve my own skills and demonstrate 
 
 For developing and testing the solutions in this repository, I use the following tools:
 
-- **[Visual Studio 2026 Insiders](https://visualstudio.microsoft.com/insiders/)**: The integrated development environment (IDE) where I write, debug, and run my C# code. It provides a comprehensive set of features for efficient coding and debugging, making it my go-to tool for .NET development.
+- **[Visual Studio 2026](https://visualstudio.microsoft.com/)**: The integrated development environment (IDE) where I write, debug, and run my C# code. It provides a comprehensive set of features for efficient coding and debugging, making it my go-to tool for .NET development.
 - **[ReSharper](https://www.jetbrains.com/resharper/)**: A Visual Studio extension that enhances the development experience with advanced code analysis, refactoring tools, and productivity features. ReSharper helps me ensure my code is clean, optimized, and follows best practices.
 
 ## Time and Space Complexity
