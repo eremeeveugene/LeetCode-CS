@@ -14,6 +14,9 @@ namespace LeetCode.Algorithms.CheckIfTheSentenceIsPangram;
 /// <inheritdoc />
 public sealed class CheckIfTheSentenceIsPangramIterative : ICheckIfTheSentenceIsPangram
 {
+    private const int AlphabetLength = 26;
+    private const int AllLettersSeenMask = (1 << AlphabetLength) - 1;
+
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n)
@@ -21,21 +24,20 @@ public sealed class CheckIfTheSentenceIsPangramIterative : ICheckIfTheSentenceIs
     /// </remarks>
     public bool CheckIfPangram(string sentence)
     {
-        if (sentence.Length < 26)
+        if (sentence.Length < AlphabetLength)
         {
             return false;
         }
 
         var seen = 0;
 
-        foreach (var index in sentence.Select(c => c - 'a'))
+        for (var i = 0; i < sentence.Length; i++)
         {
-            if (index is >= 0 and < 26)
-            {
-                seen |= 1 << index;
-            }
+            var index = sentence[i] - 'a';
 
-            if (seen == 0x3FFFFFF)
+            seen |= 1 << index;
+
+            if (seen == AllLettersSeenMask)
             {
                 return true;
             }
