@@ -77,10 +77,7 @@ public sealed class NumberOfPeopleAwareOfSecretLineSweep : INumberOfPeopleAwareO
                 sharingDelta[shareStartDay] = (sharingDelta[shareStartDay] + peopleWhoLearnOnDay[day]) % Modulo;
             }
 
-            if (shareEndDay < length)
-            {
-                sharingDelta[shareEndDay] = (sharingDelta[shareEndDay] - peopleWhoLearnOnDay[day] + Modulo) % Modulo;
-            }
+            sharingDelta[shareEndDay] = (sharingDelta[shareEndDay] - peopleWhoLearnOnDay[day] + Modulo) % Modulo;
         }
 
         return (int)(currentKnowCount % Modulo);
