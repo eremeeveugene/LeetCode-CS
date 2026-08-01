@@ -77,13 +77,7 @@ public abstract class FindingPairsWithCertainSumTestsBase
             new FindingPairsWithCertainSumScenario(
                 [1],
                 [1],
-                [
-                    new CountOperation(2),
-                    new CountOperation(3),
-                    new AddOperation(0, 1),
-                    new CountOperation(3),
-                    new CountOperation(2)
-                ],
+                [new CountOperation(2), new CountOperation(3), new AddOperation(0, 1), new CountOperation(3), new CountOperation(2)],
                 [
                     new CountOperation.Result(1),
                     new CountOperation.Result(0),

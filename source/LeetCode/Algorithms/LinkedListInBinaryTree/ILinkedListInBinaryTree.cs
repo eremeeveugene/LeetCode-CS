@@ -19,7 +19,8 @@ namespace LeetCode.Algorithms.LinkedListInBinaryTree;
 public interface ILinkedListInBinaryTree
 {
     /// <summary>
-    ///     Determines whether the linked list starting at <paramref name="head" /> matches a downward root-to-leaf-or-partial path in the binary tree rooted at <paramref name="root" />.
+    ///     Determines whether the linked list starting at <paramref name="head" /> matches a downward root-to-leaf-or-partial path in the binary tree rooted
+    ///     at <paramref name="root" />.
     /// </summary>
     /// <param name="head">The head node of the linked list to match against a path.</param>
     /// <param name="root">The root node of the binary tree to search.</param>

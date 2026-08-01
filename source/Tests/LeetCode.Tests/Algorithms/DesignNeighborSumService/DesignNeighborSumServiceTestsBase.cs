@@ -183,15 +183,9 @@ public abstract class DesignNeighborSumServiceTestsBase
             new NeighborSumServiceScenario([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [new DiagonalSumOperation(7)], [new DiagonalSumOperation.Result(8)])
         ];
 
-        yield return
-        [
-            new NeighborSumServiceScenario([[10, 20], [30, 40]], [new AdjacentSumOperation(10)], [new AdjacentSumOperation.Result(50)])
-        ];
+        yield return [new NeighborSumServiceScenario([[10, 20], [30, 40]], [new AdjacentSumOperation(10)], [new AdjacentSumOperation.Result(50)])];
 
-        yield return
-        [
-            new NeighborSumServiceScenario([[10, 20], [30, 40]], [new DiagonalSumOperation(10)], [new DiagonalSumOperation.Result(40)])
-        ];
+        yield return [new NeighborSumServiceScenario([[10, 20], [30, 40]], [new DiagonalSumOperation(10)], [new DiagonalSumOperation.Result(40)])];
 
         yield return
         [
@@ -219,7 +213,10 @@ public abstract class DesignNeighborSumServiceTestsBase
 
         yield return
         [
-            new NeighborSumServiceScenario([[100]], [new AdjacentSumOperation(100), new DiagonalSumOperation(100)], [new AdjacentSumOperation.Result(0), new DiagonalSumOperation.Result(0)])
+            new NeighborSumServiceScenario(
+                [[100]],
+                [new AdjacentSumOperation(100), new DiagonalSumOperation(100)],
+                [new AdjacentSumOperation.Result(0), new DiagonalSumOperation.Result(0)])
         ];
 
         yield return

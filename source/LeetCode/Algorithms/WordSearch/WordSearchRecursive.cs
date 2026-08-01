@@ -61,8 +61,10 @@ public sealed class WordSearchRecursive : IWordSearch
 
         visited[i, j] = true;
 
-        if (Search(board, word, i + 1, j, index + 1, visited) || Search(board, word, i - 1, j, index + 1, visited) ||
-            Search(board, word, i, j + 1, index + 1, visited) || Search(board, word, i, j - 1, index + 1, visited))
+        if (Search(board, word, i + 1, j, index + 1, visited) ||
+            Search(board, word, i - 1, j, index + 1, visited) ||
+            Search(board, word, i, j + 1, index + 1, visited) ||
+            Search(board, word, i, j - 1, index + 1, visited))
         {
             return true;
         }

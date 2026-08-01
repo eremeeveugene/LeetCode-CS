@@ -17,7 +17,8 @@ namespace LeetCode.Algorithms.FractionToRecurringDecimal;
 public interface IFractionToRecurringDecimal
 {
     /// <summary>
-    ///     Converts the fraction represented by <paramref name="numerator" /> and <paramref name="denominator" /> into its string decimal representation, enclosing any repeating part in parentheses.
+    ///     Converts the fraction represented by <paramref name="numerator" /> and <paramref name="denominator" /> into its string decimal representation,
+    ///     enclosing any repeating part in parentheses.
     /// </summary>
     /// <param name="numerator">The numerator of the fraction.</param>
     /// <param name="denominator">The denominator of the fraction.</param>

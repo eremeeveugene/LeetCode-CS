@@ -17,7 +17,8 @@ namespace LeetCode.Algorithms.FloodFill;
 public interface IFloodFill
 {
     /// <summary>
-    ///     Performs a flood fill on <paramref name="image" /> starting at pixel (<paramref name="sr" />, <paramref name="sc" />), replacing the connected region of pixels with the starting pixel's original color with <paramref name="color" />.
+    ///     Performs a flood fill on <paramref name="image" /> starting at pixel (<paramref name="sr" />, <paramref name="sc" />), replacing the connected
+    ///     region of pixels with the starting pixel's original color with <paramref name="color" />.
     /// </summary>
     /// <param name="image">The image represented as a grid of pixel color values.</param>
     /// <param name="sr">The starting pixel's row.</param>

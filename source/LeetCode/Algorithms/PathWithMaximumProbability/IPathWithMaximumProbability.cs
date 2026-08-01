@@ -26,6 +26,9 @@ public interface IPathWithMaximumProbability
     /// <param name="successProbability">The success probability associated with each edge in <paramref name="edges" />.</param>
     /// <param name="startNode">The node to start the path from.</param>
     /// <param name="endNode">The node to end the path at.</param>
-    /// <returns>The greatest probability of success along any path from <paramref name="startNode" /> to <paramref name="endNode" />, or 0 if no path exists.</returns>
+    /// <returns>
+    ///     The greatest probability of success along any path from <paramref name="startNode" /> to <paramref name="endNode" />, or 0 if no path
+    ///     exists.
+    /// </returns>
     double MaxProbability(int n, int[][] edges, double[] successProbability, int startNode, int endNode);
 }

@@ -17,7 +17,8 @@ namespace LeetCode.Algorithms.FreedomTrail;
 public interface IFreedomTrail
 {
     /// <summary>
-    ///     Computes the minimum number of steps to spell out <paramref name="key" /> by rotating <paramref name="ring" /> so each required character aligns with the pointer, then pressing the button to confirm it.
+    ///     Computes the minimum number of steps to spell out <paramref name="key" /> by rotating <paramref name="ring" /> so each required character aligns
+    ///     with the pointer, then pressing the button to confirm it.
     /// </summary>
     /// <param name="ring">The rotatable ring of characters.</param>
     /// <param name="key">The string that must be spelled out using the ring.</param>

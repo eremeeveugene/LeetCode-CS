@@ -335,13 +335,7 @@ public abstract class DesignCircularQueueTestsBase
         [
             new CircularQueueScenario(
                 5,
-                [
-                    new IsEmptyOperation(),
-                    new IsFullOperation(),
-                    new FrontOperation(),
-                    new RearOperation(),
-                    new EnQueueOperation(99)
-                ],
+                [new IsEmptyOperation(), new IsFullOperation(), new FrontOperation(), new RearOperation(), new EnQueueOperation(99)],
                 [
                     new IsEmptyOperation.Result(true),
                     new IsFullOperation.Result(false),

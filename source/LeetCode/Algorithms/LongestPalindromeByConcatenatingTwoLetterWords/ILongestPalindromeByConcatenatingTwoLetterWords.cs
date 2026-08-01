@@ -17,7 +17,8 @@ namespace LeetCode.Algorithms.LongestPalindromeByConcatenatingTwoLetterWords;
 public interface ILongestPalindromeByConcatenatingTwoLetterWords
 {
     /// <summary>
-    ///     Finds the length of the longest palindrome that can be built by concatenating a selection of the two-letter words in <paramref name="words" />, using each word at most once.
+    ///     Finds the length of the longest palindrome that can be built by concatenating a selection of the two-letter words in <paramref name="words" />,
+    ///     using each word at most once.
     /// </summary>
     /// <param name="words">The array of two-letter words available for concatenation.</param>
     /// <returns>The length of the longest palindrome obtainable, or <c>0</c> if none can be formed.</returns>

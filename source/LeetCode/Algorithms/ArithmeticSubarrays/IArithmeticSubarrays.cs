@@ -23,6 +23,9 @@ public interface IArithmeticSubarrays
     /// <param name="nums">The array of integers.</param>
     /// <param name="l">The left boundaries of the range queries.</param>
     /// <param name="r">The right boundaries of the range queries.</param>
-    /// <returns>A list where each element is <c>true</c> if the corresponding subarray can be rearranged into an arithmetic sequence; otherwise, <c>false</c>.</returns>
+    /// <returns>
+    ///     A list where each element is <c>true</c> if the corresponding subarray can be rearranged into an arithmetic sequence; otherwise,
+    ///     <c>false</c>.
+    /// </returns>
     IList<bool> CheckArithmeticSubarrays(int[] nums, int[] l, int[] r);
 }

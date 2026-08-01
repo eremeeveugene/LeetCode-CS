@@ -35,7 +35,8 @@ public sealed class ContainsDuplicate3Dictionary : IContainsDuplicate3
         {
             var m = GetId(nums[i], w);
 
-            if (numsDictionary.ContainsKey(m) || (numsDictionary.ContainsKey(m - 1) && Math.Abs(nums[i] - numsDictionary[m - 1]) < w) ||
+            if (numsDictionary.ContainsKey(m) ||
+                (numsDictionary.ContainsKey(m - 1) && Math.Abs(nums[i] - numsDictionary[m - 1]) < w) ||
                 (numsDictionary.ContainsKey(m + 1) && Math.Abs(nums[i] - numsDictionary[m + 1]) < w))
             {
                 return true;

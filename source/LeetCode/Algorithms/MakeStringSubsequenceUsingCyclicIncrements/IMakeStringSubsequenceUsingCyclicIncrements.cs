@@ -22,6 +22,9 @@ public interface IMakeStringSubsequenceUsingCyclicIncrements
     /// </summary>
     /// <param name="str1">The source string whose characters may be cyclically incremented.</param>
     /// <param name="str2">The target string to check as a possible subsequence of the modified <paramref name="str1" />.</param>
-    /// <returns><see langword="true" /> if <paramref name="str2" /> can become a subsequence of <paramref name="str1" /> after the allowed increments; otherwise, <see langword="false" />.</returns>
+    /// <returns>
+    ///     <see langword="true" /> if <paramref name="str2" /> can become a subsequence of <paramref name="str1" /> after the allowed increments;
+    ///     otherwise, <see langword="false" />.
+    /// </returns>
     bool CanMakeSubsequence(string str1, string str2);
 }

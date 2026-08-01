@@ -23,6 +23,9 @@ public interface IMovePiecesToObtainString
     /// </summary>
     /// <param name="start">The initial string of 'L', 'R', and '_' characters.</param>
     /// <param name="target">The target string of 'L', 'R', and '_' characters to reach.</param>
-    /// <returns><see langword="true" /> if <paramref name="start" /> can be transformed into <paramref name="target" />; otherwise, <see langword="false" />.</returns>
+    /// <returns>
+    ///     <see langword="true" /> if <paramref name="start" /> can be transformed into <paramref name="target" />; otherwise, <see langword="false" />
+    ///     .
+    /// </returns>
     bool CanChange(string start, string target);
 }

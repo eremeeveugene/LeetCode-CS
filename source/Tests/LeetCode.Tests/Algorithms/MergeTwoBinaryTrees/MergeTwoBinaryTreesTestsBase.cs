@@ -77,10 +77,7 @@ public abstract class MergeTwoBinaryTreesTestsBase<T> where T : IMergeTwoBinaryT
 
         yield return [new int?[] { 10, 20, 30 }, new int?[] { 1 }, new int?[] { 11, 20, 30 }];
 
-        yield return
-        [
-            new int?[] { 100 }, new int?[] { 1, 2, 3, 4, 5, 6, 7 }, new int?[] { 101, 2, 3, 4, 5, 6, 7 }
-        ];
+        yield return [new int?[] { 100 }, new int?[] { 1, 2, 3, 4, 5, 6, 7 }, new int?[] { 101, 2, 3, 4, 5, 6, 7 }];
 
         yield return [new int?[] { 1, 2, 3 }, new int?[] { 4, 5 }, new int?[] { 5, 7, 3 }];
 
