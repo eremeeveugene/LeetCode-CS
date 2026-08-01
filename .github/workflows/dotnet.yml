@@ -70,6 +70,10 @@ jobs:
         id: restore
         run: dotnet restore
 
+      - name: Format check
+        id: format
+        run: dotnet format --verify-no-changes --verbosity diagnostic
+
       - name: Sonar begin
         id: sonar-begin
         if: success() && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository)
@@ -81,10 +85,6 @@ jobs:
           /o:"eremeeveugene"
           /d:sonar.cs.cobertura.reportsPaths="Tests/**/TestResults/**/*.cobertura.xml"
           /d:sonar.qualitygate.wait=true
-
-      - name: Format check
-        id: format
-        run: dotnet format --verify-no-changes --verbosity diagnostic
 
       - name: Build
         id: build
