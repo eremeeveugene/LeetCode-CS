@@ -44,7 +44,7 @@ public abstract class LargestIntegerWithGivenDigitSumTestsBase<T> where T : ILar
         var solution = new T();
 
         // Act
-        var actualResult = solution.LargestNumber(n, s);
+        var actualResult = solution.LargestInteger(n, s);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

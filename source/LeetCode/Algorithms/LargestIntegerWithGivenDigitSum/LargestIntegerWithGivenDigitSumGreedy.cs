@@ -19,7 +19,7 @@ public sealed class LargestIntegerWithGivenDigitSumGreedy : ILargestIntegerWithG
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
     /// </remarks>
-    public int LargestNumber(int n, int s)
+    public int LargestInteger(int n, int s)
     {
         if (s > n * 9)
         {

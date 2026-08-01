@@ -26,5 +26,5 @@ public interface ILargestIntegerWithGivenDigitSum
     ///     The largest integer with at most <paramref name="n" /> digits whose digit sum is <paramref name="s" />, or
     ///     <c>-1</c> if no such integer exists.
     /// </returns>
-    int LargestNumber(int n, int s);
+    int LargestInteger(int n, int s);
 }

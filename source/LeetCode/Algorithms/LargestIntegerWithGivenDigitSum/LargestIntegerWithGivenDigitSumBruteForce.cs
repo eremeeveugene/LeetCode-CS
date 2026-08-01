@@ -19,7 +19,7 @@ public sealed class LargestIntegerWithGivenDigitSumBruteForce : ILargestIntegerW
     ///     Time complexity - O(10^n * n)
     ///     Space complexity - O(1)
     /// </remarks>
-    public int LargestNumber(int n, int s)
+    public int LargestInteger(int n, int s)
     {
         var largestCandidate = (int)Math.Pow(10, n) - 1;
 
