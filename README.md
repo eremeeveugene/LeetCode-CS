@@ -1,15 +1,15 @@
 # LeetCode C# Solutions
 
-[![.NET](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml/badge.svg)](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=bugs)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)
-[![Security Hotspots](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=security_hotspots)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)
+[![.NET](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml/badge.svg)](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml)<br>
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=bugs)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
+[![Security Hotspots](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=security_hotspots)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)
 
 ## Overview
@@ -947,6 +947,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3978. Unique Middle Element](https://leetcode.com/problems/unique-middle-element/description/)
 - [3982. Sum of Integers with Maximum Digit Range](https://leetcode.com/problems/sum-of-integers-with-maximum-digit-range/description/)
 - [3986. Number of Elapsed Seconds Between Two Times](https://leetcode.com/problems/number-of-elapsed-seconds-between-two-times/description/)
+- [4000. Largest Integer With Given Digit Sum](https://leetcode.com/problems/largest-integer-with-given-digit-sum/description/)
 
   </p>
 </details>
