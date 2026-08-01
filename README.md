@@ -1,6 +1,7 @@
 # LeetCode C# Solutions
 
 [![.NET](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml/badge.svg)](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)
 
 ## Overview
 
@@ -31,11 +32,15 @@ I analyze the time and space complexity using Big O notation for every algorithm
 
 ## Automation Jobs
 
-I've created automation jobs for this repository to streamline the development process. These jobs are defined in the `dotnet.yml` file and include steps for building the project, running tests with coverage, checking code style, and generating and uploading coverage reports. The jobs run on every push and pull request to the `develop` branch.
+I've created automation jobs for this repository to streamline the development process. These jobs are defined in the `dotnet.yml` file and include steps for building the project, running tests with coverage, checking code style, analyzing code quality with SonarCloud, and generating and uploading coverage reports. The jobs run on every push and pull request to the `develop` branch.
 
 ## Code Coverage Report
 
 You can view the code coverage report [here](https://eremeeveugene.github.io/LeetCode-CS/).
+
+## Code Quality
+
+I use [SonarCloud](https://sonarcloud.io/) to analyze code quality on every push and pull request, including cyclomatic/cognitive complexity, maintainability, and reliability. You can view the full analysis [here](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS).
 
 ## LeetCode Profile
 
