@@ -84,6 +84,7 @@ jobs:
           /k:"eremeeveugene_LeetCode-CS"
           /o:"eremeeveugene"
           /d:sonar.cs.cobertura.reportsPaths="Tests/**/TestResults/**/*.cobertura.xml"
+          /d:sonar.exclusions="coverage/**"
           /d:sonar.qualitygate.wait=true
 
       - name: Build
