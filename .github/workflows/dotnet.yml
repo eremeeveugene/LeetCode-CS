@@ -26,6 +26,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: 17
+          distribution: 'zulu'
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
@@ -39,6 +45,27 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuget-
 
+      - name: Cache SonarCloud packages
+        uses: actions/cache@v4
+        with:
+          path: ~\sonar\cache
+          key: ${{ runner.os }}-sonar
+          restore-keys: ${{ runner.os }}-sonar
+
+      - name: Cache SonarCloud scanner
+        id: cache-sonar-scanner
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}\scanner
+          key: ${{ runner.os }}-sonar-scanner
+          restore-keys: ${{ runner.os }}-sonar-scanner
+
+      - name: Install SonarCloud scanner
+        if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
+        run: |
+          New-Item -Path ${{ runner.temp }}\scanner -ItemType Directory
+          dotnet tool update dotnet-sonarscanner --tool-path ${{ runner.temp }}\scanner
+
       - name: Restore
         id: restore
         run: dotnet restore
@@ -46,6 +73,19 @@ jobs:
       - name: Format check
         id: format
         run: dotnet format --verify-no-changes --verbosity diagnostic
+
+      - name: Sonar begin
+        id: sonar-begin
+        if: success() && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository)
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: >
+          ${{ runner.temp }}\scanner\dotnet-sonarscanner begin
+          /k:"eremeeveugene_LeetCode-CS"
+          /o:"eremeeveugene"
+          /d:sonar.cs.cobertura.reportsPaths="Tests/**/TestResults/**/*.cobertura.xml"
+          /d:sonar.exclusions="coverage/**"
+          /d:sonar.qualitygate.wait=true
 
       - name: Build
         id: build
@@ -86,6 +126,13 @@ jobs:
           } else {
             "report=false" >> $env:GITHUB_OUTPUT
           }
+
+      - name: Sonar end
+        id: sonar-end
+        if: always() && steps.build.outcome == 'success' && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository)
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: ${{ runner.temp }}\scanner\dotnet-sonarscanner end
 
       - name: Changed files
         id: changed
@@ -164,6 +211,30 @@ jobs:
             "status=✅ Passed" >> $env:GITHUB_OUTPUT
           }
 
+      - name: Format results
+        id: summary
+        if: always()
+        env:
+          IS_FORK_PR: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository }}
+        run: |
+          function Format-Status($outcome, $reason) {
+            switch ($outcome) {
+              "success"   { "✅ Success" }
+              "failure"   { "❌ Failure" }
+              "skipped"   { "⏭️ Skipped — $reason" }
+              "cancelled" { "⚠️ Cancelled — run cancelled, likely superseded by a newer push" }
+              default     { $outcome }
+            }
+          }
+
+          $sonarSkipReason = if ($env:IS_FORK_PR -eq 'true') { "fork PR — SONAR_TOKEN unavailable" } else { "a previous step failed" }
+
+          "restore=$(Format-Status '${{ steps.restore.outcome }}' 'a previous step failed')" >> $env:GITHUB_OUTPUT
+          "format=$(Format-Status '${{ steps.format.outcome }}' 'a previous step failed')" >> $env:GITHUB_OUTPUT
+          "build=$(Format-Status '${{ steps.build.outcome }}' 'a previous step failed')" >> $env:GITHUB_OUTPUT
+          "test=$(Format-Status '${{ steps.test.outcome }}' 'a previous step failed')" >> $env:GITHUB_OUTPUT
+          "sonar=$(Format-Status '${{ steps.sonar-end.outcome }}' $sonarSkipReason)" >> $env:GITHUB_OUTPUT
+
       - name: PR comment
         if: github.event_name == 'pull_request' && always()
         uses: marocchino/sticky-pull-request-comment@v2
@@ -174,12 +245,15 @@ jobs:
 
             | Step | Result |
             |------|--------|
-            | Restore | ${{ steps.restore.outcome }} |
-            | Format | ${{ steps.format.outcome }} |
-            | Build | ${{ steps.build.outcome }} |
-            | Tests | ${{ steps.test.outcome }} |
+            | Restore | ${{ steps.summary.outputs.restore }} |
+            | Format | ${{ steps.summary.outputs.format }} |
+            | Build | ${{ steps.summary.outputs.build }} |
+            | Tests | ${{ steps.summary.outputs.test }} |
             | Coverage | ${{ steps.coverage-check.outputs.pct }}% |
             | Status | ${{ steps.coverage-check.outputs.status }} |
+            | Sonar quality gate | ${{ steps.summary.outputs.sonar }} |
+
+            [View on SonarCloud](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS&pullRequest=${{ github.event.pull_request.number }})
 
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/develop' && steps.coverage.outputs.report == 'true'
@@ -198,3 +272,4 @@ jobs:
           if ("${{ steps.build.outcome }}" -ne "success") { exit 1 }
           if ("${{ steps.test.outcome }}" -ne "success") { exit 1 }
           if ("${{ steps.coverage-check.outputs.status }}" -eq "❌ Failed") { exit 1 }
+          if ("${{ steps.sonar-end.outcome }}" -eq "failure") { exit 1 }

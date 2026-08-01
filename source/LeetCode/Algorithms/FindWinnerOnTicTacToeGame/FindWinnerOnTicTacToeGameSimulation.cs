@@ -48,7 +48,9 @@ public sealed class FindWinnerOnTicTacToeGameSimulation : IFindWinnerOnTicTacToe
                 rightDiagonalSum += value;
             }
 
-            if (Math.Abs(rowSum[row]) == GridSize || Math.Abs(columnSum[col]) == GridSize || Math.Abs(leftDiagonalSum) == GridSize ||
+            if (Math.Abs(rowSum[row]) == GridSize ||
+                Math.Abs(columnSum[col]) == GridSize ||
+                Math.Abs(leftDiagonalSum) == GridSize ||
                 Math.Abs(rightDiagonalSum) == GridSize)
             {
                 return value == 1 ? "A" : "B";

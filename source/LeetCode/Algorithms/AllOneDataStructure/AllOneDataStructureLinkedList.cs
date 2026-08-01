@@ -111,10 +111,8 @@ public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
         {
             return string.Empty;
         }
-        else
-        {
-            return _tailNode.PreviousNode.KeysHashSet.First();
-        }
+
+        return _tailNode.PreviousNode.KeysHashSet.First();
     }
 
     /// <inheritdoc />

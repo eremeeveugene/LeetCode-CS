@@ -65,10 +65,7 @@ public abstract class MyCalendar3TestsBase<T> where T : IMyCalendar3, new()
                 ])
         ];
 
-        yield return
-        [
-            new Scenario<IMyCalendar3>([new BookOperation(1, 2)], [new BookOperation.Result(1)])
-        ];
+        yield return [new Scenario<IMyCalendar3>([new BookOperation(1, 2)], [new BookOperation.Result(1)])];
 
         yield return
         [

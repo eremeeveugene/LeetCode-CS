@@ -449,13 +449,7 @@ public abstract class AllOneDataStructureTestsBase<T> where T : IAllOneDataStruc
         yield return
         [
             new Scenario<IAllOneDataStructure>(
-                [
-                    new IncOperation("abc"),
-                    new IncOperation("def"),
-                    new IncOperation("ghi"),
-                    new GetMaxKeyOperation(),
-                    new GetMinKeyOperation()
-                ],
+                [new IncOperation("abc"), new IncOperation("def"), new IncOperation("ghi"), new GetMaxKeyOperation(), new GetMinKeyOperation()],
                 [
                     VoidOperationResult.Instance,
                     VoidOperationResult.Instance,

@@ -17,7 +17,8 @@ namespace LeetCode.Algorithms.LexicographicallySmallestEquivalentString;
 public interface ILexicographicallySmallestEquivalentString
 {
     /// <summary>
-    ///     Using the character equivalences defined by corresponding positions in <paramref name="s1" /> and <paramref name="s2" />, transforms <paramref name="baseStr" /> by replacing each character with the lexicographically smallest character in its equivalence group.
+    ///     Using the character equivalences defined by corresponding positions in <paramref name="s1" /> and <paramref name="s2" />, transforms
+    ///     <paramref name="baseStr" /> by replacing each character with the lexicographically smallest character in its equivalence group.
     /// </summary>
     /// <param name="s1">The first string defining character equivalences.</param>
     /// <param name="s2">The second string defining character equivalences, paired position-wise with <paramref name="s1" />.</param>

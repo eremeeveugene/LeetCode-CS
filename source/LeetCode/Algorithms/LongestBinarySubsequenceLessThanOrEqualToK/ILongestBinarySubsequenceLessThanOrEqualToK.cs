@@ -17,7 +17,8 @@ namespace LeetCode.Algorithms.LongestBinarySubsequenceLessThanOrEqualToK;
 public interface ILongestBinarySubsequenceLessThanOrEqualToK
 {
     /// <summary>
-    ///     Finds the length of the longest subsequence of the binary string <paramref name="s" /> that, when interpreted as a binary number, has a value less than or equal to <paramref name="k" />.
+    ///     Finds the length of the longest subsequence of the binary string <paramref name="s" /> that, when interpreted as a binary number, has a value
+    ///     less than or equal to <paramref name="k" />.
     /// </summary>
     /// <param name="s">The binary string to select a subsequence from.</param>
     /// <param name="k">The maximum allowed numeric value of the subsequence.</param>

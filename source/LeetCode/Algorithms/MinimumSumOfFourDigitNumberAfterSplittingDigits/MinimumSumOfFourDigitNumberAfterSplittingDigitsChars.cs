@@ -23,7 +23,9 @@ public sealed class MinimumSumOfFourDigitNumberAfterSplittingDigitsChars : IMini
     {
         var sortedNums = num.ToString().Order().ToArray();
 
-        return ((int)char.GetNumericValue(sortedNums[0]) * 10) + ((int)char.GetNumericValue(sortedNums[1]) * 10) +
-               (int)char.GetNumericValue(sortedNums[2]) + (int)char.GetNumericValue(sortedNums[3]);
+        return ((int)char.GetNumericValue(sortedNums[0]) * 10) +
+               ((int)char.GetNumericValue(sortedNums[1]) * 10) +
+               (int)char.GetNumericValue(sortedNums[2]) +
+               (int)char.GetNumericValue(sortedNums[3]);
     }
 }

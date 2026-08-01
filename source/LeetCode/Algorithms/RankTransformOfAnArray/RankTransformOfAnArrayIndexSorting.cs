@@ -18,7 +18,8 @@ public sealed class RankTransformOfAnArrayIndexSorting : IRankTransformOfAnArray
     /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
-    /// </remarks>i
+    /// </remarks>
+    /// i
     public int[] ArrayRankTransform(int[] nums)
     {
         var n = nums.Length;

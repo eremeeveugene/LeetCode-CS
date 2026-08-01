@@ -14,4 +14,5 @@ using LeetCode.Algorithms.FindXSumOfAllKLongSubarrays1;
 namespace LeetCode.Tests.Algorithms.FindXSumOfAllKLongSubarrays1;
 
 [TestClass]
-public sealed class FindXSumOfAllKLongSubarrays1SortingSlidingWindowTests : FindXSumOfAllKLongSubarrays1TestsBase<FindXSumOfAllKLongSubarrays1SortingSlidingWindow>;
+public sealed class FindXSumOfAllKLongSubarrays1SortingSlidingWindowTests
+    : FindXSumOfAllKLongSubarrays1TestsBase<FindXSumOfAllKLongSubarrays1SortingSlidingWindow>;

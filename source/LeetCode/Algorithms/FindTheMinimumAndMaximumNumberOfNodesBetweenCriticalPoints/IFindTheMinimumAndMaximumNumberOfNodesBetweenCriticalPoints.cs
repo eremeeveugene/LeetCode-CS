@@ -19,7 +19,8 @@ namespace LeetCode.Algorithms.FindTheMinimumAndMaximumNumberOfNodesBetweenCritic
 public interface IFindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints
 {
     /// <summary>
-    ///     Finds the minimum and maximum distances between consecutive critical points (local minima or maxima) in the linked list starting at <paramref name="head" />.
+    ///     Finds the minimum and maximum distances between consecutive critical points (local minima or maxima) in the linked list starting at
+    ///     <paramref name="head" />.
     /// </summary>
     /// <param name="head">The head node of the linked list to examine.</param>
     /// <returns>An array containing the minimum and maximum distances between critical points, or <c>[-1, -1]</c> if fewer than two critical points exist.</returns>
