@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/1/2026 - 5:02:55 PM
-  Coverage date: 8/1/2026 - 5:02:18 PM - 8/1/2026 - 5:02:46 PM
+  Generated on: 8/1/2026 - 6:09:28 PM
+  Coverage date: 8/1/2026 - 6:08:52 PM - 8/1/2026 - 6:09:18 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1338
-  Files: 1338
+  Classes: 1340
+  Files: 1340
   Line coverage: 100%
-  Covered lines: 30294
+  Covered lines: 30340
   Uncovered lines: 0
-  Coverable lines: 30294
-  Total lines: 74316
-  Branch coverage: 100% (11122 of 11122)
-  Covered branches: 11122
-  Total branches: 11122
-  Method coverage: 100% (1957 of 1957)
-  Full method coverage: 100% (1957 of 1957)
-  Covered methods: 1957
-  Fully covered methods: 1957
-  Total methods: 1957
+  Coverable lines: 30340
+  Total lines: 74431
+  Branch coverage: 100% (11134 of 11134)
+  Covered branches: 11134
+  Total branches: 11134
+  Method coverage: 100% (1961 of 1961)
+  Full method coverage: 100% (1961 of 1961)
+  Covered methods: 1961
+  Fully covered methods: 1961
+  Total methods: 1961
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -995,6 +995,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoIterative                                                                                                     100%
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoLogarithms                                                                                                    100%
   LeetCode.Algorithms.PowerOfTwo.PowerOfTwoRecursive                                                                                                     100%
+  LeetCode.Algorithms.PredictTheWinner.PredictTheWinnerDynamicProgramming                                                                                100%
+  LeetCode.Algorithms.PredictTheWinner.PredictTheWinnerRecursive                                                                                         100%
   LeetCode.Algorithms.PrimeSubtractionOperation.PrimeSubtractionOperationIterative                                                                       100%
   LeetCode.Algorithms.ProcessStringWithSpecialOperations1.ProcessStringWithSpecialOperations1Simulation                                                  100%
   LeetCode.Algorithms.ProductOfArrayExceptSelf.ProductOfArrayExceptSelfPrefixSum                                                                         100%
