@@ -17,29 +17,31 @@ public sealed class PredictTheWinnerDynamicProgramming : IPredictTheWinner
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n^2)
-    ///     Space complexity - O(n^2)
+    ///     Space complexity - O(n)
     /// </remarks>
     public bool PredictTheWinner(int[] nums)
     {
         var n = nums.Length;
 
-        var scoreDifference = new int[n, n];
+        Span<int> scoreDifference = stackalloc int[n];
 
-        for (var i = 0; i < n; i++)
+        for (var j = 0; j < n; j++)
         {
-            scoreDifference[i, i] = nums[i];
-        }
+            var rightNum = nums[j];
 
-        for (var length = 2; length <= n; length++)
-        {
-            for (var i = 0; i <= n - length; i++)
+            scoreDifference[j] = rightNum;
+
+            for (var i = j - 1; i >= 0; i--)
             {
-                var j = i + length - 1;
+                var leftNum = nums[i];
 
-                scoreDifference[i, j] = Math.Max(nums[i] - scoreDifference[i + 1, j], nums[j] - scoreDifference[i, j - 1]);
+                var pickLeft = leftNum - scoreDifference[i + 1];
+                var pickRight = rightNum - scoreDifference[i];
+
+                scoreDifference[i] = Math.Max(pickLeft, pickRight);
             }
         }
 
-        return scoreDifference[0, n - 1] >= 0;
+        return scoreDifference[0] >= 0;
     }
 }
