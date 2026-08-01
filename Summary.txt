@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/1/2026 - 4:31:24 PM
-  Coverage date: 8/1/2026 - 4:30:49 PM - 8/1/2026 - 4:31:16 PM
+  Generated on: 8/1/2026 - 5:02:55 PM
+  Coverage date: 8/1/2026 - 5:02:18 PM - 8/1/2026 - 5:02:46 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1336
-  Files: 1336
+  Classes: 1338
+  Files: 1338
   Line coverage: 100%
-  Covered lines: 30262
+  Covered lines: 30294
   Uncovered lines: 0
-  Coverable lines: 30262
-  Total lines: 74223
-  Branch coverage: 100% (11112 of 11112)
-  Covered branches: 11112
-  Total branches: 11112
-  Method coverage: 100% (1955 of 1955)
-  Full method coverage: 100% (1955 of 1955)
-  Covered methods: 1955
-  Fully covered methods: 1955
-  Total methods: 1955
+  Coverable lines: 30294
+  Total lines: 74316
+  Branch coverage: 100% (11122 of 11122)
+  Covered branches: 11122
+  Total branches: 11122
+  Method coverage: 100% (1957 of 1957)
+  Full method coverage: 100% (1957 of 1957)
+  Covered methods: 1957
+  Fully covered methods: 1957
+  Total methods: 1957
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -587,6 +587,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.LargestCombinationWithBitwiseANDGreaterThanZero.LargestCombinationWithBitwiseANDGreaterThanZeroIterative                           100%
   LeetCode.Algorithms.LargestDivisibleSubset.LargestDivisibleSubsetDynamicProgramming                                                                    100%
   LeetCode.Algorithms.LargestEvenNumber.LargestEvenNumberGreedy                                                                                          100%
+  LeetCode.Algorithms.LargestIntegerWithGivenDigitSum.LargestIntegerWithGivenDigitSumBruteForce                                                          100%
+  LeetCode.Algorithms.LargestIntegerWithGivenDigitSum.LargestIntegerWithGivenDigitSumGreedy                                                              100%
   LeetCode.Algorithms.LargestLocalValuesInMatrix.LargestLocalValuesInMatrixBruteForce                                                                    100%
   LeetCode.Algorithms.LargestNumber.LargestNumberConcatenationSorting                                                                                    100%
   LeetCode.Algorithms.LargestNumberAtLeastTwiceOfOthers.LargestNumberAtLeastTwiceOfOthersIterative                                                       100%
