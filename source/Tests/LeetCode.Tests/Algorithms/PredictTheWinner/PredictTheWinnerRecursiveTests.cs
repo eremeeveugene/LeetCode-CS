@@ -14,4 +14,4 @@ using LeetCode.Algorithms.PredictTheWinner;
 namespace LeetCode.Tests.Algorithms.PredictTheWinner;
 
 [TestClass]
-public sealed class PredictTheWinnerRecursionTests : PredictTheWinnerTestsBase<PredictTheWinnerRecursion>;
+public sealed class PredictTheWinnerRecursiveTests : PredictTheWinnerTestsBase<PredictTheWinnerRecursive>;

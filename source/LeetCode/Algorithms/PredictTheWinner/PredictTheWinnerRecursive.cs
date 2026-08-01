@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.PredictTheWinner;
 
 /// <inheritdoc />
-public sealed class PredictTheWinnerRecursion : IPredictTheWinner
+public sealed class PredictTheWinnerRecursive : IPredictTheWinner
 {
     /// <inheritdoc />
     /// <remarks>
