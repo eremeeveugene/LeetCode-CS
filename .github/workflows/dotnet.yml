@@ -79,7 +79,6 @@ jobs:
           ${{ runner.temp }}\scanner\dotnet-sonarscanner begin
           /k:"eremeeveugene_LeetCode-CS"
           /o:"eremeeveugene"
-          /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
           /d:sonar.cs.cobertura.reportsPaths="Tests/**/TestResults/**/*.cobertura.xml"
           /d:sonar.qualitygate.wait=true
 
@@ -132,7 +131,7 @@ jobs:
         if: always() && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository)
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: ${{ runner.temp }}\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
+        run: ${{ runner.temp }}\scanner\dotnet-sonarscanner end
 
       - name: Changed files
         id: changed
