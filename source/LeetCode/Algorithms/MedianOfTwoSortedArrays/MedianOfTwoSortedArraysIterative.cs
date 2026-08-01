@@ -25,50 +25,40 @@ public sealed class MedianOfTwoSortedArraysIterative : IMedianOfTwoSortedArrays
 
         var nums1Index = 0;
         var nums2Index = 0;
+        var mergedIndex = 0;
 
-        while (nums1Index < nums1.Length || nums2Index < nums2.Length)
+        while (nums1Index < nums1.Length && nums2Index < nums2.Length)
         {
-            int? num1 = null;
-
-            if (nums1Index < nums1.Length)
+            if (nums1[nums1Index] <= nums2[nums2Index])
             {
-                num1 = nums1[nums1Index];
-            }
-
-            int? num2 = null;
-
-            if (nums2Index < nums2.Length)
-            {
-                num2 = nums2[nums2Index];
-            }
-
-            if (num1.HasValue && num2.HasValue)
-            {
-                if (num1 < num2)
-                {
-                    concat[nums1Index + nums2Index] = num1.Value;
-
-                    nums1Index++;
-                }
-                else
-                {
-                    concat[nums1Index + nums2Index] = num2.Value;
-
-                    nums2Index++;
-                }
-            }
-            else if (num1.HasValue)
-            {
-                concat[nums1Index + nums2Index] = num1.Value;
+                concat[mergedIndex] = nums1[nums1Index];
 
                 nums1Index++;
             }
-            else if (num2.HasValue)
+            else
             {
-                concat[nums1Index + nums2Index] = num2.Value;
+                concat[mergedIndex] = nums2[nums2Index];
 
                 nums2Index++;
             }
+
+            mergedIndex++;
+        }
+
+        while (nums1Index < nums1.Length)
+        {
+            concat[mergedIndex] = nums1[nums1Index];
+
+            nums1Index++;
+            mergedIndex++;
+        }
+
+        while (nums2Index < nums2.Length)
+        {
+            concat[mergedIndex] = nums2[nums2Index];
+
+            nums2Index++;
+            mergedIndex++;
         }
 
         var index = concat.Length / 2;

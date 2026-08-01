@@ -41,19 +41,16 @@ public sealed class NextGreaterElement1BruteForce : INextGreaterElement1
 
             var next = -1;
 
-            if (nextIndex >= 0)
+            for (var j = nextIndex; j < nums2.Length; j++)
             {
-                for (var j = nextIndex; j < nums2.Length; j++)
+                if (nums2[j] <= nums1[i])
                 {
-                    if (nums2[j] <= nums1[i])
-                    {
-                        continue;
-                    }
-
-                    next = nums2[j];
-
-                    break;
+                    continue;
                 }
+
+                next = nums2[j];
+
+                break;
             }
 
             result[i] = next;

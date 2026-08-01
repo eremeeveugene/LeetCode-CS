@@ -34,7 +34,7 @@ public sealed class FindTargetIndicesAfterSortingArrayBinarySearch : IFindTarget
             {
                 right = mid;
             }
-            else if (nums[mid] < target)
+            else
             {
                 left = mid + 1;
             }

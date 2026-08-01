@@ -25,9 +25,12 @@ public sealed class ConstructStringWithRepeatLimitPriorityQueue : IConstructStri
     {
         var frequencyDictionary = new Dictionary<char, int>();
 
-        foreach (var character in s.Where(character => !frequencyDictionary.TryAdd(character, 1)))
+        foreach (var character in s)
         {
-            frequencyDictionary[character]++;
+            if (!frequencyDictionary.TryAdd(character, 1))
+            {
+                frequencyDictionary[character]++;
+            }
         }
 
         var frequencyPriorityQueue = new PriorityQueue<char, char>();

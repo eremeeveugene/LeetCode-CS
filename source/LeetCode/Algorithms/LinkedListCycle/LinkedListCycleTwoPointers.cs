@@ -38,7 +38,7 @@ public sealed class LinkedListCycleTwoPointers : ILinkedListCycle
                 return true;
             }
 
-            slow = slow?.next;
+            slow = slow!.next;
             fast = fast.next.next;
         }
 

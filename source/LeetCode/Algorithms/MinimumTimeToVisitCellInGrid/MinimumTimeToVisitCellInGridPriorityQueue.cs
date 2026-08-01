@@ -41,7 +41,7 @@ public sealed class MinimumTimeToVisitCellInGridPriorityQueue : IMinimumTimeToVi
 
         var result = -1;
 
-        while (priorityQueue.Count > 0 && result < 0)
+        while (result < 0)
         {
             var (row, column, time) = priorityQueue.Dequeue();
 

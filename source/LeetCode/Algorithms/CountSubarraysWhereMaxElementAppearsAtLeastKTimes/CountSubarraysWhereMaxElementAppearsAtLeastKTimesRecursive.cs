@@ -48,7 +48,26 @@ public sealed class CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursive :
 
             positionsDictionary[nums[i]]++;
 
-            if (positionsDictionary[nums[i]] != k || actualDuplicates.Any(l => l.SequenceEqual(currentSubarray)))
+            if (positionsDictionary[nums[i]] != k)
+            {
+                continue;
+            }
+
+            var isDuplicate = false;
+
+            foreach (var duplicate in actualDuplicates)
+            {
+                if (!duplicate.SequenceEqual(currentSubarray))
+                {
+                    continue;
+                }
+
+                isDuplicate = true;
+
+                break;
+            }
+
+            if (isDuplicate)
             {
                 continue;
             }

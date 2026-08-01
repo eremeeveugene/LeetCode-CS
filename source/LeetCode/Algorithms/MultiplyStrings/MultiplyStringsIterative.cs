@@ -54,6 +54,6 @@ public sealed class MultiplyStringsIterative : IMultiplyStrings
             }
         }
 
-        return resultStringBuilder.Length == 0 ? "0" : resultStringBuilder.ToString();
+        return resultStringBuilder.ToString();
     }
 }

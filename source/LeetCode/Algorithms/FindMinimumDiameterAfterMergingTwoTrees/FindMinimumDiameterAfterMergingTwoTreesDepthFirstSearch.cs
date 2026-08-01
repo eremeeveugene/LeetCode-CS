@@ -56,8 +56,13 @@ public sealed class FindMinimumDiameterAfterMergingTwoTreesDepthFirstSearch : IF
         var maxDepth2 = 0;
         var diameter = 0;
 
-        foreach (var neighbor in adjList[node].Where(neighbor => neighbor != parent))
+        foreach (var neighbor in adjList[node])
         {
+            if (neighbor == parent)
+            {
+                continue;
+            }
+
             var (childDiameter, childDepth) = FindDiameter(adjList, neighbor, node);
 
             var depth = childDepth + 1;

@@ -50,10 +50,7 @@ public sealed class RomanToIntegerDictionary : IRomanToInteger
             }
             else
             {
-                if (_romanIntegersDictionary.TryGetValue(romanString.Substring(i, 1), out var value1))
-                {
-                    result += value1;
-                }
+                result += _romanIntegersDictionary[romanString.Substring(i, 1)];
 
                 i++;
             }

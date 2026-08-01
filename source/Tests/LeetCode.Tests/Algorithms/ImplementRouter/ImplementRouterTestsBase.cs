@@ -119,6 +119,14 @@ public abstract class ImplementRouterTestsBase
                 [new AddPacketOperation(1, 2, 10), new GetCountOperation(2, 20, 30)],
                 [new AddPacketOperation.Result(true), new GetCountOperation.Result(0)])
         ];
+
+        yield return
+        [
+            new RouterScenario(
+                5,
+                [new AddPacketOperation(1, 2, 7), new GetCountOperation(2, 10, 5)],
+                [new AddPacketOperation.Result(true), new GetCountOperation.Result(0)])
+        ];
     }
 
     public sealed class RouterScenario : IScenario<IImplementRouter>

@@ -37,7 +37,7 @@ public sealed class MinimizeXORBitwise : IMinimizeXOR
             num2SetBits--;
         }
 
-        for (var i = 0; i < 32 && num2SetBits > 0; i++)
+        for (var i = 0; num2SetBits > 0; i++)
         {
             if ((result & (1 << i)) != 0)
             {

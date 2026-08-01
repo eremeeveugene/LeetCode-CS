@@ -35,7 +35,7 @@ public sealed class ShortestSubarrayToBeRemovedToMakeArraySortedTwoPointers : IS
 
         var right = arr.Length - 1;
 
-        while (right > 0 && arr[right - 1] <= arr[right])
+        while (arr[right - 1] <= arr[right])
         {
             right--;
         }

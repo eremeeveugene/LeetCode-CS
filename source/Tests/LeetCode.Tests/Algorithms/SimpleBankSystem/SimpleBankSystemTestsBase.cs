@@ -120,6 +120,8 @@ public abstract class SimpleBankSystemTestsBase
 
         yield return [new BankSystemScenario([100, 200, 300], [new WithdrawOperation(4, 10)], [new WithdrawOperation.Result(false)])];
 
+        yield return [new BankSystemScenario([100, 200, 300], [new TransferOperation(4, 1, 10)], [new TransferOperation.Result(false)])];
+
         yield return [new BankSystemScenario([100, 200, 300], [new DepositOperation(4, 10)], [new DepositOperation.Result(false)])];
 
         yield return [new BankSystemScenario([100, 200, 300], [new TransferOperation(1, 1, 10)], [new TransferOperation.Result(true)])];

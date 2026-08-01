@@ -19,6 +19,7 @@ public abstract class CompareVersionNumbersTestsBase<T> where T : ICompareVersio
     [DataRow("0", "0", 0)]
     [DataRow("1.01", "1.001", 0)]
     [DataRow("1.0", "1.0.0", 0)]
+    [DataRow("1.0.0", "1.0", 0)]
     [DataRow("0.1", "1.1", -1)]
     [DataRow("6", "003479002", -1)]
     [DataRow("4", "4.969.3.863.960.99661.8.085.769.0.735662509.75003", -1)]
@@ -27,6 +28,29 @@ public abstract class CompareVersionNumbersTestsBase<T> where T : ICompareVersio
         "30307.038",
         "30307.038.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0",
         0)]
+    [DataRow("1.2", "1.2", 0)]
+    [DataRow("1.2", "1.3", -1)]
+    [DataRow("1.3", "1.2", 1)]
+    [DataRow("1", "2", -1)]
+    [DataRow("2", "1", 1)]
+    [DataRow("1.0.1", "1", 1)]
+    [DataRow("1", "1.0.1", -1)]
+    [DataRow("1.1.1", "1.1.1", 0)]
+    [DataRow("2.0", "1.9", 1)]
+    [DataRow("1.9", "2.0", -1)]
+    [DataRow("1.10", "1.9", 1)]
+    [DataRow("1.9", "1.10", -1)]
+    [DataRow("0", "0.0.0", 0)]
+    [DataRow("0.0.0", "0", 0)]
+    [DataRow("1.0.0.0.1", "1.0.0.0", 1)]
+    [DataRow("1.0.0.0", "1.0.0.0.1", -1)]
+    [DataRow("5.5.5", "5.5.5", 0)]
+    [DataRow("10", "9", 1)]
+    [DataRow("9", "10", -1)]
+    [DataRow("1.2.3", "1.2.3.0", 0)]
+    [DataRow("1.2.3.0", "1.2.3", 0)]
+    [DataRow("100.100", "100.100", 0)]
+    [DataRow("100.100", "100.99", 1)]
     public void CompareVersion_WithVersionStrings_ReturnsRelativeOrderIndicator(string version1, string version2, int expectedResult)
     {
         // Arrange

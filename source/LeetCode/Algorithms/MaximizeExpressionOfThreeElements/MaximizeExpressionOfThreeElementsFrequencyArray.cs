@@ -54,9 +54,9 @@ public sealed class MaximizeExpressionOfThreeElementsFrequencyArray : IMaximizeE
         var largest = 0;
         var result = 0;
 
-        for (var i = numsFrequencies.Length - 1; i >= 0 && !found; i--)
+        for (var i = numsFrequencies.Length - 1; !found; i--)
         {
-            while (!found && numsFrequencies[i] > 0)
+            while (numsFrequencies[i] > 0)
             {
                 var value = GetValue(i);
 

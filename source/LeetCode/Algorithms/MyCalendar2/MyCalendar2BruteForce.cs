@@ -14,8 +14,8 @@ namespace LeetCode.Algorithms.MyCalendar2;
 /// <inheritdoc />
 public sealed class MyCalendar2BruteForce : IMyCalendar2
 {
-    private readonly List<Item> _items = [];
-    private readonly List<Item> _overlapItems = [];
+    private readonly List<(int Start, int End)> _items = [];
+    private readonly List<(int Start, int End)> _overlapItems = [];
 
     /// <inheritdoc />
     /// <remarks>
@@ -24,26 +24,25 @@ public sealed class MyCalendar2BruteForce : IMyCalendar2
     /// </remarks>
     public bool Book(int start, int end)
     {
-        var newItem = new Item(start, end);
-
         if (_overlapItems.Any(overlapItem => start < overlapItem.End && end > overlapItem.Start))
         {
             return false;
         }
 
-        foreach (var item in _items.Where(item => start < item.End && end > item.Start))
+        for (var i = 0; i < _items.Count; i++)
         {
-            _overlapItems.Add(new Item(Math.Max(start, item.Start), Math.Min(end, item.End)));
+            var item = _items[i];
+
+            if (start >= item.End || end <= item.Start)
+            {
+                continue;
+            }
+
+            _overlapItems.Add((Math.Max(start, item.Start), Math.Min(end, item.End)));
         }
 
-        _items.Add(newItem);
+        _items.Add((start, end));
 
         return true;
-    }
-
-    private class Item(int start, int end)
-    {
-        public int Start { get; } = start;
-        public int End { get; } = end;
     }
 }

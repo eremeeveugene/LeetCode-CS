@@ -18,6 +18,7 @@ public abstract class FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints
     where T : IFindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints, new()
 {
     [TestMethod]
+    [DataRow(new int[] { }, new[] { -1, -1 })]
     [DataRow(new[] { 3, 1 }, new[] { -1, -1 })]
     [DataRow(new[] { 5, 3, 1, 2, 5, 1, 2 }, new[] { 1, 3 })]
     [DataRow(new[] { 1, 3, 2, 2, 3, 2, 2, 2, 7 }, new[] { 3, 3 })]

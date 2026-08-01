@@ -32,22 +32,19 @@ public sealed class MergeNodesInBetweenZerosIterative : IMergeNodesInBetweenZero
 
         while (listNode != null)
         {
-            if (listNode.val == 0)
+            var sum = 0;
+
+            var zeroNode = listNode.next;
+
+            while (zeroNode!.val != 0)
             {
-                var sum = 0;
+                sum += zeroNode.val;
 
-                var zeroNode = listNode.next;
-
-                while (zeroNode != null && zeroNode.val != 0)
-                {
-                    sum += zeroNode.val;
-
-                    zeroNode = zeroNode.next;
-                }
-
-                listNode.val = sum;
-                listNode.next = zeroNode is null or { val: 0, next: null } ? null : zeroNode;
+                zeroNode = zeroNode.next;
             }
+
+            listNode.val = sum;
+            listNode.next = zeroNode.next is null ? null : zeroNode;
 
             listNode = listNode.next;
         }

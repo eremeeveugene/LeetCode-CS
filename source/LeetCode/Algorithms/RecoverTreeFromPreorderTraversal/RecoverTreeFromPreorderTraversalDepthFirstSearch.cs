@@ -70,7 +70,7 @@ public sealed class RecoverTreeFromPreorderTraversalDepthFirstSearch : IRecoverT
     {
         var depth = 0;
 
-        while (index < traversal.Length && traversal[index] == '-')
+        while (traversal[index] == '-')
         {
             depth++;
             index++;
