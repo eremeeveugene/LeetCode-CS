@@ -225,6 +225,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [474. Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/description/)
 - [476. Number Complement](https://leetcode.com/problems/number-complement/description/)
 - [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/description/)
+- [486. Predict the Winner](https://leetcode.com/problems/predict-the-winner/description/)
 - [494. Target Sum](https://leetcode.com/problems/target-sum/description/)
 - [495. Teemo Attacking](https://leetcode.com/problems/teemo-attacking/description/)
 - [496. Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/)
