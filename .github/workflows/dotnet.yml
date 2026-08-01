@@ -128,7 +128,7 @@ jobs:
 
       - name: Sonar end
         id: sonar-end
-        if: always() && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository)
+        if: always() && steps.build.outcome == 'success' && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository)
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: ${{ runner.temp }}\scanner\dotnet-sonarscanner end
