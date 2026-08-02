@@ -29,7 +29,7 @@ public abstract class DesignCircularDequeTestsBase
         var operations = scenario.Operations;
         var operationsLength = operations.Length;
 
-        var actualResult = new IOperationResult?[operationsLength];
+        var actualResult = new IOperationResult[operationsLength];
 
         for (var i = 0; i < operationsLength; i++)
         {
