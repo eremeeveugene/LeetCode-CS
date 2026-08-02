@@ -2,15 +2,15 @@
 
 [![.NET](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml/badge.svg)](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml)<br>
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=bugs)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Security Hotspots](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=security_hotspots)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=sqale_rating)](https://sonarcloud.io/component_measures?id=eremeeveugene_LeetCode-CS&metric=sqale_rating)<br>
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=reliability_rating)](https://sonarcloud.io/component_measures?id=eremeeveugene_LeetCode-CS&metric=reliability_rating)<br>
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=security_rating)](https://sonarcloud.io/component_measures?id=eremeeveugene_LeetCode-CS&metric=security_rating)<br>
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=bugs)](https://sonarcloud.io/project/issues?id=eremeeveugene_LeetCode-CS&resolved=false&types=BUG)<br>
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=vulnerabilities)](https://sonarcloud.io/project/issues?id=eremeeveugene_LeetCode-CS&resolved=false&types=VULNERABILITY)<br>
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=code_smells)](https://sonarcloud.io/project/issues?id=eremeeveugene_LeetCode-CS&resolved=false&types=CODE_SMELL)<br>
+[![Security Review Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=security_review_rating)](https://sonarcloud.io/project/security_hotspots?id=eremeeveugene_LeetCode-CS)<br>
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=duplicated_lines_density)](https://sonarcloud.io/component_measures?id=eremeeveugene_LeetCode-CS&metric=duplicated_lines_density)<br>
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=ncloc)](https://sonarcloud.io/component_measures?id=eremeeveugene_LeetCode-CS&metric=ncloc)
 
 ## Overview
 
