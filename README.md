@@ -8,7 +8,6 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=bugs)](https://sonarcloud.io/project/issues?id=eremeeveugene_LeetCode-CS&resolved=false&types=BUG)<br>
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=vulnerabilities)](https://sonarcloud.io/project/issues?id=eremeeveugene_LeetCode-CS&resolved=false&types=VULNERABILITY)<br>
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=code_smells)](https://sonarcloud.io/project/issues?id=eremeeveugene_LeetCode-CS&resolved=false&types=CODE_SMELL)<br>
-[![Security Review Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=security_review_rating)](https://sonarcloud.io/project/security_hotspots?id=eremeeveugene_LeetCode-CS)<br>
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=duplicated_lines_density)](https://sonarcloud.io/component_measures?id=eremeeveugene_LeetCode-CS&metric=duplicated_lines_density)<br>
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=ncloc)](https://sonarcloud.io/component_measures?id=eremeeveugene_LeetCode-CS&metric=ncloc)
 
