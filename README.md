@@ -2,15 +2,14 @@
 
 [![.NET](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml/badge.svg)](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml)<br>
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=bugs)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Security Hotspots](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=security_hotspots)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=sqale_rating)](https://sonarcloud.io/component_measures?id=eremeeveugene_LeetCode-CS&metric=sqale_rating)<br>
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=reliability_rating)](https://sonarcloud.io/component_measures?id=eremeeveugene_LeetCode-CS&metric=reliability_rating)<br>
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=security_rating)](https://sonarcloud.io/component_measures?id=eremeeveugene_LeetCode-CS&metric=security_rating)<br>
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=bugs)](https://sonarcloud.io/project/issues?id=eremeeveugene_LeetCode-CS&resolved=false&types=BUG)<br>
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=vulnerabilities)](https://sonarcloud.io/project/issues?id=eremeeveugene_LeetCode-CS&resolved=false&types=VULNERABILITY)<br>
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=code_smells)](https://sonarcloud.io/project/issues?id=eremeeveugene_LeetCode-CS&resolved=false&types=CODE_SMELL)<br>
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=duplicated_lines_density)](https://sonarcloud.io/component_measures?id=eremeeveugene_LeetCode-CS&metric=duplicated_lines_density)<br>
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=ncloc)](https://sonarcloud.io/component_measures?id=eremeeveugene_LeetCode-CS&metric=ncloc)
 
 ## Overview
 
@@ -132,6 +131,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [143. Reorder List](https://leetcode.com/problems/reorder-list/description/)
 - [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/)
 - [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)
+- [146. LRU Cache](https://leetcode.com/problems/lru-cache/description/)
 - [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)
 - [154. Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/)
 - [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)
