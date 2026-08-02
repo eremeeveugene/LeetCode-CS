@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/1/2026 - 6:09:28 PM
-  Coverage date: 8/1/2026 - 6:08:52 PM - 8/1/2026 - 6:09:18 PM
+  Generated on: 8/2/2026 - 6:29:15 PM
+  Coverage date: 8/2/2026 - 6:28:42 PM - 8/2/2026 - 6:29:07 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1340
-  Files: 1340
+  Classes: 1341
+  Files: 1341
   Line coverage: 100%
-  Covered lines: 30340
+  Covered lines: 30405
   Uncovered lines: 0
-  Coverable lines: 30340
-  Total lines: 74431
-  Branch coverage: 100% (11134 of 11134)
-  Covered branches: 11134
-  Total branches: 11134
-  Method coverage: 100% (1961 of 1961)
-  Full method coverage: 100% (1961 of 1961)
-  Covered methods: 1961
-  Fully covered methods: 1961
-  Total methods: 1961
+  Coverable lines: 30405
+  Total lines: 74647
+  Branch coverage: 100% (11140 of 11140)
+  Covered branches: 11140
+  Total branches: 11140
+  Method coverage: 100% (1969 of 1969)
+  Full method coverage: 100% (1969 of 1969)
+  Covered methods: 1969
+  Fully covered methods: 1969
+  Total methods: 1969
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -644,6 +644,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters.LongestSubstringWithoutRepeatingCharactersSlidingWindow                                 100%
   LeetCode.Algorithms.LongestUnequalAdjacentGroupsSubsequence1.LongestUnequalAdjacentGroupsSubsequence1Greedy                                            100%
   LeetCode.Algorithms.LowestCommonAncestorOfDeepestLeaves.LowestCommonAncestorOfDeepestLeavesDepthFirstSearch                                            100%
+  LeetCode.Algorithms.LRUCache.LRUCacheLinkedList                                                                                                        100%
   LeetCode.Algorithms.LuckyNumbersInMatrix.LuckyNumbersInMatrixBruteForce                                                                                100%
   LeetCode.Algorithms.MagicSquaresInGrid.MagicSquaresInGridBruteForce                                                                                    100%
   LeetCode.Algorithms.MajorityElement.MajorityElementBoyerMooreVoting                                                                                    100%
