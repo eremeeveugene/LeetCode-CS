@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/2/2026 - 6:29:15 PM
-  Coverage date: 8/2/2026 - 6:28:42 PM - 8/2/2026 - 6:29:07 PM
+  Generated on: 8/4/2026 - 4:02:34 PM
+  Coverage date: 8/4/2026 - 4:02:01 PM - 8/4/2026 - 4:02:26 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1341
-  Files: 1341
+  Classes: 1343
+  Files: 1343
   Line coverage: 100%
-  Covered lines: 30405
+  Covered lines: 30463
   Uncovered lines: 0
-  Coverable lines: 30405
-  Total lines: 74647
-  Branch coverage: 100% (11140 of 11140)
-  Covered branches: 11140
-  Total branches: 11140
-  Method coverage: 100% (1969 of 1969)
-  Full method coverage: 100% (1969 of 1969)
-  Covered methods: 1969
-  Fully covered methods: 1969
-  Total methods: 1969
+  Coverable lines: 30463
+  Total lines: 74779
+  Branch coverage: 100% (11156 of 11156)
+  Covered branches: 11156
+  Total branches: 11156
+  Method coverage: 100% (1971 of 1971)
+  Full method coverage: 100% (1971 of 1971)
+  Covered methods: 1971
+  Fully covered methods: 1971
+  Total methods: 1971
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -415,6 +415,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindMinimumTimeToReachLastRoom2.FindMinimumTimeToReachLastRoom2PriorityQueue                                                       100%
   LeetCode.Algorithms.FindMissingAndRepeatedValues.FindMissingAndRepeatedValuesHashSet                                                                   100%
   LeetCode.Algorithms.FindMissingAndRepeatedValues.FindMissingAndRepeatedValuesMath                                                                      100%
+  LeetCode.Algorithms.FindMissingElements.FindMissingElementsBitmask                                                                                     100%
+  LeetCode.Algorithms.FindMissingElements.FindMissingElementsLookup                                                                                      100%
   LeetCode.Algorithms.FindMissingElements.FindMissingElementsSorting                                                                                     100%
   LeetCode.Algorithms.FindMissingObservations.FindMissingObservationsMath                                                                                100%
   LeetCode.Algorithms.FindModeInBinarySearchTree.FindModeInBinarySearchTreeBreadthFirstSearch                                                            100%
