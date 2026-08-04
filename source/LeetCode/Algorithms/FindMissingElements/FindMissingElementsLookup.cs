@@ -27,8 +27,8 @@ public sealed class FindMissingElementsLookup : IFindMissingElements
 
         Span<bool> seen = stackalloc bool[MaxValue + 1];
 
-        var min = int.MaxValue;
-        var max = int.MinValue;
+        var min = MaxValue + 1;
+        var max = 0;
 
         for (var i = 0; i < n; i++)
         {

@@ -15,6 +15,7 @@ namespace LeetCode.Algorithms.FindMissingElements;
 public sealed class FindMissingElementsBitmask : IFindMissingElements
 {
     private const int BitsPerWord = 64;
+    private const int MaxValue = 100;
 
     /// <inheritdoc />
     /// <remarks>
@@ -28,8 +29,8 @@ public sealed class FindMissingElementsBitmask : IFindMissingElements
         var lowSeenBits = 0UL;
         var highSeenBits = 0UL;
 
-        var min = int.MaxValue;
-        var max = int.MinValue;
+        var min = MaxValue + 1;
+        var max = 0;
 
         for (var i = 0; i < n; i++)
         {
