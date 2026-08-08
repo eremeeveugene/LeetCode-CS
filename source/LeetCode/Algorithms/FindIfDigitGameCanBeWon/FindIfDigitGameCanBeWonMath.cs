@@ -29,7 +29,7 @@ public sealed class FindIfDigitGameCanBeWonMath : IFindIfDigitGameCanBeWon
         {
             var num = nums[i];
 
-            if (num <= 9)
+            if (num < 10)
             {
                 sum += num;
             }
