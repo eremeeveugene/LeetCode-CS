@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/4/2026 - 4:02:34 PM
-  Coverage date: 8/4/2026 - 4:02:01 PM - 8/4/2026 - 4:02:26 PM
+  Generated on: 8/8/2026 - 4:21:19 PM
+  Coverage date: 8/8/2026 - 4:20:42 PM - 8/8/2026 - 4:21:09 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1343
-  Files: 1343
+  Classes: 1344
+  Files: 1344
   Line coverage: 100%
-  Covered lines: 30463
+  Covered lines: 30505
   Uncovered lines: 0
-  Coverable lines: 30463
-  Total lines: 74779
-  Branch coverage: 100% (11156 of 11156)
-  Covered branches: 11156
-  Total branches: 11156
-  Method coverage: 100% (1971 of 1971)
-  Full method coverage: 100% (1971 of 1971)
-  Covered methods: 1971
-  Fully covered methods: 1971
-  Total methods: 1971
+  Coverable lines: 30505
+  Total lines: 74893
+  Branch coverage: 100% (11174 of 11174)
+  Covered branches: 11174
+  Total branches: 11174
+  Method coverage: 100% (1974 of 1974)
+  Full method coverage: 100% (1974 of 1974)
+  Covered methods: 1974
+  Fully covered methods: 1974
+  Total methods: 1974
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -452,6 +452,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix.FindTheLengthOfTheLongestCommonPrefixHashSetOptimized                                        100%
   LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix.FindTheLengthOfTheLongestCommonPrefixTrie                                                    100%
   LeetCode.Algorithms.FindTheLexicographicallyLargestStringFromTheBox1.FindTheLexicographicallyLargestStringFromTheBox1TwoPointers                       100%
+  LeetCode.Algorithms.FindTheLexicographicallySmallestValidSequence.FindTheLexicographicallySmallestValidSequenceGreedy                                  100%
   LeetCode.Algorithms.FindTheLongestSubstringContainingVowelsInEvenCounts.FindTheLongestSubstringContainingVowelsInEvenCountsBitmasking                  100%
   LeetCode.Algorithms.FindTheMaximumAchievableNumber.FindTheMaximumAchievableNumberLinear                                                                100%
   LeetCode.Algorithms.FindTheMaximumLengthOfValidSubsequence1.FindTheMaximumLengthOfValidSubsequence1Greedy                                              100%
