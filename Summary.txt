@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/8/2026 - 8:16:02 PM
-  Coverage date: 8/8/2026 - 8:15:25 PM - 8/8/2026 - 8:15:53 PM
+  Generated on: 8/8/2026 - 8:47:05 PM
+  Coverage date: 8/8/2026 - 8:46:32 PM - 8/8/2026 - 8:46:56 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1347
-  Files: 1347
+  Classes: 1348
+  Files: 1348
   Line coverage: 100%
-  Covered lines: 30639
+  Covered lines: 30655
   Uncovered lines: 0
-  Coverable lines: 30639
-  Total lines: 75122
-  Branch coverage: 100% (11186 of 11186)
-  Covered branches: 11186
-  Total branches: 11186
-  Method coverage: 100% (1979 of 1979)
-  Full method coverage: 100% (1979 of 1979)
-  Covered methods: 1979
-  Fully covered methods: 1979
-  Total methods: 1979
+  Coverable lines: 30655
+  Total lines: 75166
+  Branch coverage: 100% (11190 of 11190)
+  Covered branches: 11190
+  Total branches: 11190
+  Method coverage: 100% (1980 of 1980)
+  Full method coverage: 100% (1980 of 1980)
+  Covered methods: 1980
+  Fully covered methods: 1980
+  Total methods: 1980
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -393,6 +393,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindGreatestCommonDivisorOfArray.FindGreatestCommonDivisorOfArrayEuclidean                                                         100%
   LeetCode.Algorithms.FindIfArrayCanBeSorted.FindIfArrayCanBeSortedBubbleSort                                                                            100%
   LeetCode.Algorithms.FindIfArrayCanBeSorted.FindIfArrayCanBeSortedTwoPass                                                                               100%
+  LeetCode.Algorithms.FindIfDigitGameCanBeWon.FindIfDigitGameCanBeWonMath                                                                                100%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphBreadthFirstSearch                                                                  100%
   LeetCode.Algorithms.FindIfPathExistsInGraph.FindIfPathExistsInGraphDepthFirstSearch                                                                    100%
   LeetCode.Algorithms.FindingPairsWithCertainSum.FindingPairsWithCertainSumDictionary                                                                    100%
