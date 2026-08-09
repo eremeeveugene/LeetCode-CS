@@ -23,8 +23,10 @@ public sealed class NumberOfGoodPairsDictionary : INumberOfGoodPairs
     {
         var countDictionary = new Dictionary<int, int>();
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (!countDictionary.TryAdd(num, 1))
             {
                 countDictionary[num]++;
