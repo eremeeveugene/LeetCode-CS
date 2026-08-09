@@ -23,8 +23,10 @@ public sealed class RabbitsInForestFrequencyDictionary : IRabbitsInForest
     {
         var frequencyDictionary = new Dictionary<int, int>();
 
-        foreach (var answer in answers)
+        for (var i = 0; i < answers.Length; i++)
         {
+            var answer = answers[i];
+
             if (!frequencyDictionary.TryAdd(answer, 1))
             {
                 frequencyDictionary[answer]++;
