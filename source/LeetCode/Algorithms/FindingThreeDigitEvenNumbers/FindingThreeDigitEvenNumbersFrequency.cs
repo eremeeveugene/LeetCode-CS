@@ -23,8 +23,10 @@ public sealed class FindingThreeDigitEvenNumbersFrequency : IFindingThreeDigitEv
     {
         var digitsFrequency = new int[10];
 
-        foreach (var digit in digits)
+        for (var i = 0; i < digits.Length; i++)
         {
+            var digit = digits[i];
+
             digitsFrequency[digit]++;
         }
 
@@ -48,13 +50,7 @@ public sealed class FindingThreeDigitEvenNumbersFrequency : IFindingThreeDigitEv
 
                 digitsFrequency[j]--;
 
-                for (var k = 0; k < 10; k += 2)
-                {
-                    if (digitsFrequency[k] > 0)
-                    {
-                        result.Add((i * 100) + (j * 10) + k);
-                    }
-                }
+                AddEvenNumbers(digitsFrequency, result, i, j);
 
                 digitsFrequency[j]++;
             }
@@ -63,5 +59,16 @@ public sealed class FindingThreeDigitEvenNumbersFrequency : IFindingThreeDigitEv
         }
 
         return result.ToArray();
+    }
+
+    private static void AddEvenNumbers(int[] digitsFrequency, List<int> result, int i, int j)
+    {
+        for (var k = 0; k < 10; k += 2)
+        {
+            if (digitsFrequency[k] > 0)
+            {
+                result.Add((i * 100) + (j * 10) + k);
+            }
+        }
     }
 }
