@@ -25,8 +25,10 @@ public sealed class IncreasingDecreasingStringDictionary : IIncreasingDecreasing
     {
         var dictionary = new Dictionary<char, int>();
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             if (!dictionary.TryAdd(c, 1))
             {
                 dictionary[c]++;
