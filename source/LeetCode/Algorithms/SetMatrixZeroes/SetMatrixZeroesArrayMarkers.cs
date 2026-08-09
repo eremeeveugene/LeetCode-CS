@@ -21,12 +21,49 @@ public sealed class SetMatrixZeroesArrayMarkers : ISetMatrixZeroes
     /// </remarks>
     public void SetZeroes(int[][] matrix)
     {
-        var rows = new bool[matrix.Length];
-        var columns = new bool[matrix[0].Length];
+        var m = matrix.Length;
+        var n = matrix[0].Length;
 
-        for (var i = 0; i < matrix.Length; i++)
+        var rows = new bool[m];
+        var columns = new bool[n];
+
+        MarkZeroes(matrix, rows, columns);
+
+        for (var i = 0; i < m; i++)
         {
-            for (var j = 0; j < matrix[i].Length; j++)
+            if (!rows[i])
+            {
+                continue;
+            }
+
+            for (var j = 0; j < n; j++)
+            {
+                matrix[i][j] = 0;
+            }
+        }
+
+        for (var i = 0; i < n; i++)
+        {
+            if (!columns[i])
+            {
+                continue;
+            }
+
+            for (var j = 0; j < m; j++)
+            {
+                matrix[j][i] = 0;
+            }
+        }
+    }
+
+    private static void MarkZeroes(int[][] matrix, bool[] rows, bool[] columns)
+    {
+        var m = matrix.Length;
+        var n = matrix[0].Length;
+
+        for (var i = 0; i < m; i++)
+        {
+            for (var j = 0; j < n; j++)
             {
                 if (matrix[i][j] != 0)
                 {
@@ -35,32 +72,6 @@ public sealed class SetMatrixZeroesArrayMarkers : ISetMatrixZeroes
 
                 rows[i] = true;
                 columns[j] = true;
-            }
-        }
-
-        for (var i = 0; i < rows.Length; i++)
-        {
-            if (!rows[i])
-            {
-                continue;
-            }
-
-            for (var j = 0; j < columns.Length; j++)
-            {
-                matrix[i][j] = 0;
-            }
-        }
-
-        for (var i = 0; i < columns.Length; i++)
-        {
-            if (!columns[i])
-            {
-                continue;
-            }
-
-            for (var j = 0; j < rows.Length; j++)
-            {
-                matrix[j][i] = 0;
             }
         }
     }
