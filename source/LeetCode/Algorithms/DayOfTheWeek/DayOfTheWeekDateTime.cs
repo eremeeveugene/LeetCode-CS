@@ -21,7 +21,7 @@ public sealed class DayOfTheWeekDateTime : IDayOfTheWeek
     /// </remarks>
     public string DayOfTheWeek(int day, int month, int year)
     {
-        var date = new DateTime(year, month, day);
+        var date = new DateTime(year, month, day, 0, 0, 0, DateTimeKind.Utc);
 
         return date.DayOfWeek.ToString();
     }
