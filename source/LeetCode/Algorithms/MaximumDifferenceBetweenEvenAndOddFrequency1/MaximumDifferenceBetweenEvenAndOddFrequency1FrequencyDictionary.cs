@@ -33,18 +33,24 @@ public sealed class MaximumDifferenceBetweenEvenAndOddFrequency1FrequencyDiction
             }
         }
 
-        var oddFrequency = int.MinValue;
-        var evenFrequency = int.MaxValue;
+        var oddFrequency = 0;
+        var evenFrequency = s.Length;
 
-        foreach (var frequency in frequencyDictionary)
+        var frequencies = new int[frequencyDictionary.Count];
+
+        frequencyDictionary.Values.CopyTo(frequencies, 0);
+
+        for (var i = 0; i < frequencies.Length; i++)
         {
-            if (frequency.Value % 2 == 0)
+            var frequency = frequencies[i];
+
+            if (frequency % 2 == 0)
             {
-                evenFrequency = Math.Min(evenFrequency, frequency.Value);
+                evenFrequency = Math.Min(evenFrequency, frequency);
             }
             else
             {
-                oddFrequency = Math.Max(oddFrequency, frequency.Value);
+                oddFrequency = Math.Max(oddFrequency, frequency);
             }
         }
 
