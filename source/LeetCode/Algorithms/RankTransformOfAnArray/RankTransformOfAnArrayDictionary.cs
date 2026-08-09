@@ -19,9 +19,9 @@ public sealed class RankTransformOfAnArrayDictionary : IRankTransformOfAnArray
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
     /// </remarks>
-    public int[] ArrayRankTransform(int[] nums)
+    public int[] ArrayRankTransform(int[] arr)
     {
-        var sortedNums = nums.Distinct().Order().ToArray();
+        var sortedNums = arr.Distinct().Order().ToArray();
 
         var rankDictionary = new Dictionary<int, int>();
 
@@ -30,11 +30,11 @@ public sealed class RankTransformOfAnArrayDictionary : IRankTransformOfAnArray
             rankDictionary.Add(sortedNums[rank], rank + 1);
         }
 
-        for (var i = 0; i < nums.Length; i++)
+        for (var i = 0; i < arr.Length; i++)
         {
-            nums[i] = rankDictionary[nums[i]];
+            arr[i] = rankDictionary[arr[i]];
         }
 
-        return nums;
+        return arr;
     }
 }
