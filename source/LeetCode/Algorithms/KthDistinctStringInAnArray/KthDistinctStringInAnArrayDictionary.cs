@@ -21,19 +21,25 @@ public sealed class KthDistinctStringInAnArrayDictionary : IKthDistinctStringInA
     /// </remarks>
     public string KthDistinct(string[] arr, int k)
     {
+        var n = arr.Length;
+
         var countDictionary = new Dictionary<string, int>();
 
-        foreach (var item in arr)
+        for (var i = 0; i < n; i++)
         {
-            if (!countDictionary.TryAdd(item, 1))
+            var num = arr[i];
+
+            if (!countDictionary.TryAdd(num, 1))
             {
-                countDictionary[item]++;
+                countDictionary[num]++;
             }
         }
 
-        foreach (var item in arr)
+        for (var i = 0; i < n; i++)
         {
-            if (countDictionary[item] != 1)
+            var num = arr[i];
+
+            if (countDictionary[num] != 1)
             {
                 continue;
             }
@@ -42,7 +48,7 @@ public sealed class KthDistinctStringInAnArrayDictionary : IKthDistinctStringInA
 
             if (k == 0)
             {
-                return item;
+                return num;
             }
         }
 
