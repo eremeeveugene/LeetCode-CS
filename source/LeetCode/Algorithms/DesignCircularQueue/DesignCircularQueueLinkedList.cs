@@ -123,7 +123,7 @@ public sealed class DesignCircularQueueLinkedList(int k) : IDesignCircularQueue
         return _count == k;
     }
 
-    private class Node(int value)
+    private sealed class Node(int value)
     {
         public Node? Next { get; set; }
 
