@@ -21,7 +21,9 @@ public sealed class ApplyOperationsToAnArrayTwoPointers : IApplyOperationsToAnAr
     /// </remarks>
     public int[] ApplyOperations(int[] nums)
     {
-        for (var i = 0; i < nums.Length - 1; i++)
+        var n = nums.Length;
+
+        for (var i = 0; i < n - 1; i++)
         {
             if (nums[i] != nums[i + 1])
             {
@@ -30,14 +32,14 @@ public sealed class ApplyOperationsToAnArrayTwoPointers : IApplyOperationsToAnAr
 
             nums[i] *= 2;
             nums[i + 1] = 0;
-
-            i++;
         }
 
         var index = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < n; i++)
         {
+            var num = nums[i];
+
             if (num == 0)
             {
                 continue;
@@ -48,7 +50,7 @@ public sealed class ApplyOperationsToAnArrayTwoPointers : IApplyOperationsToAnAr
             index++;
         }
 
-        while (index < nums.Length)
+        while (index < n)
         {
             nums[index] = 0;
 
