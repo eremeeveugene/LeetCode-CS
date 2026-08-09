@@ -31,7 +31,7 @@ public sealed class RepeatedSubstringPatternKMP : IRepeatedSubstringPattern
         return len > 0 && n % (n - len) == 0;
     }
 
-    private static void ComputeLPSArray(string s, int n, IList<int> lps)
+    private static void ComputeLPSArray(string s, int n, int[] lps)
     {
         var len = 0;
         lps[0] = 0;
