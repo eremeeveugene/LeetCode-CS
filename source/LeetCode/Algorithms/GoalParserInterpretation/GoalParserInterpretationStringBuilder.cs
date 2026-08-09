@@ -25,7 +25,9 @@ public sealed class GoalParserInterpretationStringBuilder : IGoalParserInterpret
     {
         var stringBuilder = new StringBuilder();
 
-        for (var i = 0; i < command.Length; i++)
+        var i = 0;
+
+        while (i < command.Length)
         {
             if (i < command.Length - 1)
             {
@@ -33,20 +35,23 @@ public sealed class GoalParserInterpretationStringBuilder : IGoalParserInterpret
                 {
                     case '(' when command[i + 1] == ')':
                         stringBuilder.Append('o');
-                        i++;
+                        i += 2;
                         break;
                     case '(':
                         stringBuilder.Append("al");
-                        i += 3;
+                        i += 4;
                         break;
                     default:
                         stringBuilder.Append(command[i]);
+                        i++;
                         break;
                 }
             }
             else
             {
                 stringBuilder.Append(command[i]);
+
+                i++;
             }
         }
 
