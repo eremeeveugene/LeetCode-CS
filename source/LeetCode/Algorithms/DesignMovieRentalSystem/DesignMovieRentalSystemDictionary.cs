@@ -177,6 +177,50 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
         }
 
         /// <summary>
+        ///     Determines whether <paramref name="left" /> sorts before <paramref name="right" />.
+        /// </summary>
+        /// <param name="left">The first movie offer to compare.</param>
+        /// <param name="right">The second movie offer to compare.</param>
+        /// <returns><see langword="true" /> when <paramref name="left" /> sorts before <paramref name="right" />.</returns>
+        public static bool operator <(MovieOffer left, MovieOffer right)
+        {
+            return left.CompareTo(right) < 0;
+        }
+
+        /// <summary>
+        ///     Determines whether <paramref name="left" /> sorts before or equal to <paramref name="right" />.
+        /// </summary>
+        /// <param name="left">The first movie offer to compare.</param>
+        /// <param name="right">The second movie offer to compare.</param>
+        /// <returns><see langword="true" /> when <paramref name="left" /> does not sort after <paramref name="right" />.</returns>
+        public static bool operator <=(MovieOffer left, MovieOffer right)
+        {
+            return left.CompareTo(right) <= 0;
+        }
+
+        /// <summary>
+        ///     Determines whether <paramref name="left" /> sorts after <paramref name="right" />.
+        /// </summary>
+        /// <param name="left">The first movie offer to compare.</param>
+        /// <param name="right">The second movie offer to compare.</param>
+        /// <returns><see langword="true" /> when <paramref name="left" /> sorts after <paramref name="right" />.</returns>
+        public static bool operator >(MovieOffer left, MovieOffer right)
+        {
+            return left.CompareTo(right) > 0;
+        }
+
+        /// <summary>
+        ///     Determines whether <paramref name="left" /> sorts after or equal to <paramref name="right" />.
+        /// </summary>
+        /// <param name="left">The first movie offer to compare.</param>
+        /// <param name="right">The second movie offer to compare.</param>
+        /// <returns><see langword="true" /> when <paramref name="left" /> does not sort before <paramref name="right" />.</returns>
+        public static bool operator >=(MovieOffer left, MovieOffer right)
+        {
+            return left.CompareTo(right) >= 0;
+        }
+
+        /// <summary>
         ///     Compares the price of this instance to <paramref name="price" />.
         /// </summary>
         /// <param name="price">The price to compare to.</param>
