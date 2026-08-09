@@ -21,28 +21,36 @@ public sealed class PartitionArrayAccordingToGivenPivotThreePass : IPartitionArr
     /// </remarks>
     public int[] PivotArray(int[] nums, int pivot)
     {
-        var result = new int[nums.Length];
+        var n = nums.Length;
+
+        var result = new int[n];
 
         var resultIndex = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < n; i++)
         {
+            var num = nums[i];
+
             if (num < pivot)
             {
                 result[resultIndex++] = num;
             }
         }
 
-        foreach (var num in nums)
+        for (var i = 0; i < n; i++)
         {
+            var num = nums[i];
+
             if (num == pivot)
             {
                 result[resultIndex++] = num;
             }
         }
 
-        foreach (var num in nums)
+        for (var i = 0; i < n; i++)
         {
+            var num = nums[i];
+
             if (num > pivot)
             {
                 result[resultIndex++] = num;
