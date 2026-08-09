@@ -23,14 +23,12 @@ public sealed class MergeTwoBinaryTreesDepthFirstSearchStack : IMergeTwoBinaryTr
     /// </remarks>
     public TreeNode? MergeTrees(TreeNode? root1, TreeNode? root2)
     {
-        if (root1 == null && root2 == null)
+        switch (root1)
         {
-            return null;
-        }
-
-        if (root1 == null)
-        {
-            return root2;
+            case null when root2 == null:
+                return null;
+            case null:
+                return root2;
         }
 
         if (root2 == null)
@@ -55,26 +53,20 @@ public sealed class MergeTwoBinaryTreesDepthFirstSearchStack : IMergeTwoBinaryTr
             {
                 root1Node.left = root2Node.left;
             }
-            else
+            else if (root2Node.left != null)
             {
-                if (root2Node.left != null)
-                {
-                    root1Stack.Push(root1Node.left);
-                    root2Stack.Push(root2Node.left);
-                }
+                root1Stack.Push(root1Node.left);
+                root2Stack.Push(root2Node.left);
             }
 
             if (root1Node.right == null)
             {
                 root1Node.right = root2Node.right;
             }
-            else
+            else if (root2Node.right != null)
             {
-                if (root2Node.right != null)
-                {
-                    root1Stack.Push(root1Node.right);
-                    root2Stack.Push(root2Node.right);
-                }
+                root1Stack.Push(root1Node.right);
+                root2Stack.Push(root2Node.right);
             }
         }
 
