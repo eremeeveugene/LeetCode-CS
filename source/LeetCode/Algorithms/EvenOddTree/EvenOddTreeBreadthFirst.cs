@@ -46,29 +46,9 @@ public sealed class EvenOddTreeBreadthFirst : IEvenOddTree
                 currentLevel = nodeLevel;
             }
 
-            if (nodeLevel % 2 == 0)
+            if (!IsValidNode(nodeLevel, node.val, previousVal))
             {
-                if (node.val % 2 == 0)
-                {
-                    return false;
-                }
-
-                if (previousVal != 0 && node.val >= previousVal)
-                {
-                    return false;
-                }
-            }
-            else
-            {
-                if (node.val % 2 != 0)
-                {
-                    return false;
-                }
-
-                if (previousVal != 0 && node.val <= previousVal)
-                {
-                    return false;
-                }
+                return false;
             }
 
             previousVal = node.val;
@@ -85,5 +65,15 @@ public sealed class EvenOddTreeBreadthFirst : IEvenOddTree
         }
 
         return true;
+    }
+
+    private static bool IsValidNode(int nodeLevel, int val, int previousVal)
+    {
+        if (nodeLevel % 2 == 0)
+        {
+            return val % 2 != 0 && (previousVal == 0 || val < previousVal);
+        }
+
+        return val % 2 == 0 && (previousVal == 0 || val > previousVal);
     }
 }
