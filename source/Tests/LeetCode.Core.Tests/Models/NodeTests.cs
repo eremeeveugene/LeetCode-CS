@@ -92,7 +92,7 @@ public sealed class NodeTests
         Assert.IsNotNull(result);
         Assert.AreEqual(1, result.val);
         Assert.IsNotNull(result.children);
-        Assert.AreEqual(3, result.children.Count);
+        Assert.HasCount(3, result.children);
         Assert.AreEqual(3, result.children[0].val);
         Assert.AreEqual(2, result.children[1].val);
         Assert.AreEqual(4, result.children[2].val);
@@ -100,7 +100,7 @@ public sealed class NodeTests
         var firstChild = result.children[0];
 
         Assert.IsNotNull(firstChild.children);
-        Assert.AreEqual(2, firstChild.children.Count);
+        Assert.HasCount(2, firstChild.children);
         Assert.AreEqual(5, firstChild.children[0].val);
         Assert.AreEqual(6, firstChild.children[1].val);
     }
@@ -114,7 +114,7 @@ public sealed class NodeTests
         // Assert
         Assert.IsNotNull(result);
         Assert.IsNotNull(result.children);
-        Assert.AreEqual(0, result.children.Count);
+        Assert.IsEmpty(result.children);
     }
 
     [TestMethod]
@@ -126,7 +126,7 @@ public sealed class NodeTests
         // Assert
         Assert.IsNotNull(result);
         Assert.IsNotNull(result.children);
-        Assert.AreEqual(2, result.children.Count);
+        Assert.HasCount(2, result.children);
         Assert.AreEqual(2, result.children[0].val);
         Assert.AreEqual(3, result.children[1].val);
     }
