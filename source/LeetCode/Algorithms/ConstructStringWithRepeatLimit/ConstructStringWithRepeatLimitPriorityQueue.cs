@@ -25,39 +25,41 @@ public sealed class ConstructStringWithRepeatLimitPriorityQueue : IConstructStri
     {
         var frequencyDictionary = new Dictionary<char, int>();
 
-        foreach (var character in s)
+        for (var i = 0; i < s.Length; i++)
         {
-            if (!frequencyDictionary.TryAdd(character, 1))
+            var c = s[i];
+
+            if (!frequencyDictionary.TryAdd(c, 1))
             {
-                frequencyDictionary[character]++;
+                frequencyDictionary[c]++;
             }
         }
 
         var frequencyPriorityQueue = new PriorityQueue<char, char>();
 
-        foreach (var character in frequencyDictionary.Keys)
+        foreach (var c in frequencyDictionary.Keys)
         {
-            frequencyPriorityQueue.Enqueue(character, (char)('z' - character));
+            frequencyPriorityQueue.Enqueue(c, (char)('z' - c));
         }
 
         var resultStringBuilder = new StringBuilder();
 
         while (frequencyPriorityQueue.Count > 0)
         {
-            var character = frequencyPriorityQueue.Dequeue();
+            var c = frequencyPriorityQueue.Dequeue();
 
-            var count = frequencyDictionary[character];
+            var count = frequencyDictionary[c];
 
             var charactersCount = Math.Min(count, repeatLimit);
 
             for (var i = 0; i < charactersCount; i++)
             {
-                resultStringBuilder.Append(character);
+                resultStringBuilder.Append(c);
             }
 
-            frequencyDictionary[character] -= charactersCount;
+            frequencyDictionary[c] -= charactersCount;
 
-            if (frequencyDictionary[character] <= 0 || frequencyPriorityQueue.Count <= 0)
+            if (frequencyDictionary[c] <= 0 || frequencyPriorityQueue.Count <= 0)
             {
                 continue;
             }
@@ -73,7 +75,7 @@ public sealed class ConstructStringWithRepeatLimitPriorityQueue : IConstructStri
                 frequencyPriorityQueue.Enqueue(nextCharacter, (char)('z' - nextCharacter));
             }
 
-            frequencyPriorityQueue.Enqueue(character, (char)('z' - character));
+            frequencyPriorityQueue.Enqueue(c, (char)('z' - c));
         }
 
         return resultStringBuilder.ToString();
