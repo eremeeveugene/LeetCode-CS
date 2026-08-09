@@ -23,8 +23,10 @@ public sealed class MinimumCommonValueHashSet : IMinimumCommonValue
     {
         var nums2HashSet = new HashSet<int>(nums2);
 
-        foreach (var num1 in nums1)
+        for (var i = 0; i < nums1.Length; i++)
         {
+            var num1 = nums1[i];
+
             if (nums2HashSet.Contains(num1))
             {
                 return num1;
