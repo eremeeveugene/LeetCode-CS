@@ -32,10 +32,15 @@ public sealed class RotateArrayCycleReplacement : IRotateArray
 
         var count = 0;
 
-        for (var index = 0; count < n; index++)
+        for (var i = 0; i < n; i++)
         {
-            var currentIndex = index;
-            var previousValue = nums[index];
+            if (count >= n)
+            {
+                break;
+            }
+
+            var currentIndex = i;
+            var previousValue = nums[i];
 
             do
             {
@@ -46,7 +51,7 @@ public sealed class RotateArrayCycleReplacement : IRotateArray
                 currentIndex = nextIndex;
 
                 count++;
-            } while (currentIndex != index);
+            } while (currentIndex != i);
         }
     }
 }
