@@ -44,12 +44,12 @@ public sealed class FindKthSmallestPairDistanceBinarySearchWithSlidingWindow : I
         return left;
     }
 
-    private static int CountPairsWithDistanceLessOrEqual(IReadOnlyList<int> nums, int target)
+    private static int CountPairsWithDistanceLessOrEqual(int[] nums, int target)
     {
         var count = 0;
         var left = 0;
 
-        for (var right = 1; right < nums.Count; right++)
+        for (var right = 1; right < nums.Length; right++)
         {
             while (nums[right] - nums[left] > target)
             {
