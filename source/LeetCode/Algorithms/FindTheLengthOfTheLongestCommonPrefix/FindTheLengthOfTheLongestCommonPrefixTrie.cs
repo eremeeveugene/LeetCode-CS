@@ -27,12 +27,12 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixTrie : IFindTheLengthOf
         return arr2.Select(trie.FindLongestPrefix).Prepend(0).Max();
     }
 
-    private class TrieNode
+    private sealed class TrieNode
     {
         public TrieNode?[] Children { get; } = new TrieNode[10];
     }
 
-    private class Trie
+    private sealed class Trie
     {
         private readonly TrieNode _root = new();
 
