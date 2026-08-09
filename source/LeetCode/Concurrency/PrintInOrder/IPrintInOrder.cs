@@ -24,16 +24,16 @@ public interface IPrintInOrder
     void First(Action printFirst);
 
     /// <summary>
-    ///     Invokes <paramref name="printFirst" /> after <see cref="First" /> has completed, and ensures it
+    ///     Invokes <paramref name="printSecond" /> after <see cref="First" /> has completed, and ensures it
     ///     completes before <see cref="Third" /> is allowed to run.
     /// </summary>
-    /// <param name="printFirst">The callback that prints "second".</param>
-    void Second(Action printFirst);
+    /// <param name="printSecond">The callback that prints "second".</param>
+    void Second(Action printSecond);
 
     /// <summary>
-    ///     Invokes <paramref name="printFirst" /> after both <see cref="First" /> and <see cref="Second" /> have
+    ///     Invokes <paramref name="printThird" /> after both <see cref="First" /> and <see cref="Second" /> have
     ///     completed.
     /// </summary>
-    /// <param name="printFirst">The callback that prints "third".</param>
-    void Third(Action printFirst);
+    /// <param name="printThird">The callback that prints "third".</param>
+    void Third(Action printThird);
 }
