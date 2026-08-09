@@ -26,7 +26,7 @@ public abstract class FindValidMatrixGivenRowAndColumnSumsTestsBase<T> where T :
         var actualResult = solution.RestoreMatrix(rowSum, colSum);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()
