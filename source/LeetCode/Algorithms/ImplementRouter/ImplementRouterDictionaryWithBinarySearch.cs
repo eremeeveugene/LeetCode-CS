@@ -113,7 +113,7 @@ public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
         return ForwardBuffer;
     }
 
-    private class TimestampBuffer
+    private sealed class TimestampBuffer
     {
         private readonly List<int> _timestamps = [];
         private int _head;
