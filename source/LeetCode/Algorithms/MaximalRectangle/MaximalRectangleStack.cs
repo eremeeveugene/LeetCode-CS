@@ -30,22 +30,13 @@ public sealed class MaximalRectangleStack : IMaximalRectangle
 
             for (var col = 0; col <= matrix[0].Length; col++)
             {
-                if (col < matrix[0].Length)
-                {
-                    if (item[col] == '1')
-                    {
-                        height[col] += 1;
-                    }
-                    else
-                    {
-                        height[col] = 0;
-                    }
-                }
+                UpdateHeight(height, item, col);
 
                 while (stack.Count > 0 && height[col] < height[stack.Peek()])
                 {
                     var h = height[stack.Pop()];
                     var w = stack.Count == 0 ? col : col - stack.Peek() - 1;
+
                     maxArea = Math.Max(maxArea, h * w);
                 }
 
@@ -54,5 +45,15 @@ public sealed class MaximalRectangleStack : IMaximalRectangle
         }
 
         return maxArea;
+    }
+
+    private static void UpdateHeight(int[] height, char[] row, int column)
+    {
+        if (column >= row.Length)
+        {
+            return;
+        }
+
+        height[column] = row[column] == '1' ? height[column] + 1 : 0;
     }
 }
