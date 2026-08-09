@@ -23,6 +23,17 @@ public sealed class CousinsInBinaryTree2BreadthFirstSearch : ICousinsInBinaryTre
     /// </remarks>
     public TreeNode ReplaceValueInTree(TreeNode root)
     {
+        var levelSums = GetLevelSums(root);
+
+        root.val = 0;
+
+        ReplaceWithCousinSums(root, levelSums);
+
+        return root;
+    }
+
+    private static List<int> GetLevelSums(TreeNode root)
+    {
         var queue = new Queue<TreeNode>();
 
         queue.Enqueue(root);
@@ -54,11 +65,16 @@ public sealed class CousinsInBinaryTree2BreadthFirstSearch : ICousinsInBinaryTre
             levelSums.Add(levelSum);
         }
 
+        return levelSums;
+    }
+
+    private static void ReplaceWithCousinSums(TreeNode root, List<int> levelSums)
+    {
+        var queue = new Queue<TreeNode>();
+
         queue.Enqueue(root);
 
         var levelIndex = 1;
-
-        root.val = 0;
 
         while (queue.Count > 0)
         {
@@ -87,7 +103,5 @@ public sealed class CousinsInBinaryTree2BreadthFirstSearch : ICousinsInBinaryTre
 
             levelIndex++;
         }
-
-        return root;
     }
 }
