@@ -24,7 +24,7 @@ public sealed class SubarraysWithKDifferentIntegersSlidingWindow : ISubarraysWit
         return AtMostKDistinct(nums, k) - AtMostKDistinct(nums, k - 1);
     }
 
-    private static int AtMostKDistinct(IReadOnlyList<int> nums, int k)
+    private static int AtMostKDistinct(int[] nums, int k)
     {
         var result = 0;
 
@@ -32,7 +32,7 @@ public sealed class SubarraysWithKDifferentIntegersSlidingWindow : ISubarraysWit
 
         var numDictionary = new Dictionary<int, int>();
 
-        for (var right = 0; right < nums.Count; right++)
+        for (var right = 0; right < nums.Length; right++)
         {
             if (!numDictionary.TryAdd(nums[right], 1))
             {
