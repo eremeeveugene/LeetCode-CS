@@ -23,16 +23,20 @@ public sealed class MakeTwoArraysEqualByReversingSubarraysDictionary : IMakeTwoA
     {
         var targetDictionary = new Dictionary<int, int>();
 
-        foreach (var targetKey in target)
+        for (var i = 0; i < target.Length; i++)
         {
+            var targetKey = target[i];
+
             if (!targetDictionary.TryAdd(targetKey, 1))
             {
                 targetDictionary[targetKey]++;
             }
         }
 
-        foreach (var arrKey in arr)
+        for (var i = 0; i < arr.Length; i++)
         {
+            var arrKey = arr[i];
+
             if (targetDictionary.TryGetValue(arrKey, out var targetValue))
             {
                 if (targetValue == 0)
