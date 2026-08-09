@@ -19,25 +19,31 @@ public sealed class RestoreFinishingOrderHashSet : IRestoreFinishingOrder
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
     /// </remarks>
-    public int[] RecoverOrder(int[] orders, int[] friends)
+    public int[] RecoverOrder(int[] order, int[] friends)
     {
-        var friendsHashSet = new HashSet<int>(friends);
+        var n = order.Length;
+        var m = friends.Length;
 
         var friendsIndex = 0;
+        var friendsHashSet = new HashSet<int>(friends);
 
-        foreach (var order in orders)
+        for (var i = 0; i < n; i++)
         {
-            if (!friendsHashSet.Contains(order))
+            if (friendsIndex >= m)
+            {
+                break;
+            }
+
+            var racer = order[i];
+
+            if (!friendsHashSet.Contains(racer))
             {
                 continue;
             }
 
-            friends[friendsIndex++] = order;
+            friends[friendsIndex] = racer;
 
-            if (friendsIndex == friends.Length)
-            {
-                break;
-            }
+            friendsIndex++;
         }
 
         return friends;
