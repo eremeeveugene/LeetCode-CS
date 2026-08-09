@@ -21,24 +21,24 @@ public sealed class MinimumCostOfBuyingCandiesWithDiscountCountingSort : IMinimu
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
     /// </remarks>
-    public int MinimumCost(int[] costs)
+    public int MinimumCost(int[] cost)
     {
         Span<byte> costFrequencies = stackalloc byte[MaxCost + 1];
 
-        for (var i = 0; i < costs.Length; i++)
+        for (var i = 0; i < cost.Length; i++)
         {
-            var cost = costs[i];
+            var candyCost = cost[i];
 
-            costFrequencies[cost]++;
+            costFrequencies[candyCost]++;
         }
 
         var minimumCost = 0;
 
         var j = 0;
 
-        for (var cost = MaxCost; cost >= 1; cost--)
+        for (var candyCost = MaxCost; candyCost >= 1; candyCost--)
         {
-            var frequency = costFrequencies[cost];
+            var frequency = costFrequencies[candyCost];
 
             for (var k = 0; k < frequency; k++)
             {
@@ -48,7 +48,7 @@ public sealed class MinimumCostOfBuyingCandiesWithDiscountCountingSort : IMinimu
                 }
                 else
                 {
-                    minimumCost += cost;
+                    minimumCost += candyCost;
 
                     j++;
                 }
