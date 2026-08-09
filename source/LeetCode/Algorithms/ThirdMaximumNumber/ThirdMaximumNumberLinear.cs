@@ -21,40 +21,31 @@ public sealed class ThirdMaximumNumberLinear : IThirdMaximumNumber
     /// </remarks>
     public int ThirdMax(int[] nums)
     {
-        switch (nums.Length)
+        var firstMax = long.MinValue;
+        var secondMax = long.MinValue;
+        var thirdMax = long.MinValue;
+
+        for (var i = 0; i < nums.Length; i++)
         {
-            case 1:
-                return nums[0];
-            case 2:
-                return Math.Max(nums[0], nums[1]);
-        }
+            var num = nums[i];
 
-        int? firstMax = null, secondMax = null, thirdMax = null;
-
-        foreach (var num in nums)
-        {
-            if (num == firstMax || num == secondMax || num == thirdMax)
-            {
-                continue;
-            }
-
-            if (!firstMax.HasValue || num > firstMax)
+            if (num > firstMax)
             {
                 thirdMax = secondMax;
                 secondMax = firstMax;
                 firstMax = num;
             }
-            else if (!secondMax.HasValue || num > secondMax)
+            else if (num < firstMax && num > secondMax)
             {
                 thirdMax = secondMax;
                 secondMax = num;
             }
-            else if (!thirdMax.HasValue || num > thirdMax)
+            else if (num < secondMax)
             {
-                thirdMax = num;
+                thirdMax = Math.Max(thirdMax, num);
             }
         }
 
-        return thirdMax ?? firstMax.GetValueOrDefault();
+        return (int)(thirdMax == long.MinValue ? firstMax : thirdMax);
     }
 }
