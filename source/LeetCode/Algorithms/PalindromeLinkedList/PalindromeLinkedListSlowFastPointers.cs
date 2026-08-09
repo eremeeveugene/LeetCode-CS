@@ -48,7 +48,7 @@ public sealed class PalindromeLinkedListSlowFastPointers : IPalindromeLinkedList
                 return false;
             }
 
-            firstHalfStart = firstHalfStart!.next;
+            firstHalfStart = firstHalfStart.next;
             secondHalfStart = secondHalfStart.next;
         }
 
