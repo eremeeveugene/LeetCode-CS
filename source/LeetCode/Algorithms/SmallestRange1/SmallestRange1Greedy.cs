@@ -21,11 +21,13 @@ public sealed class SmallestRange1Greedy : ISmallestRange1
     /// </remarks>
     public int SmallestRangeI(int[] nums, int k)
     {
-        var min = int.MaxValue;
-        var max = int.MinValue;
+        var min = nums[0];
+        var max = nums[0];
 
-        foreach (var num in nums)
+        for (var i = 1; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             min = Math.Min(min, num);
             max = Math.Max(max, num);
         }
