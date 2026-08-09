@@ -34,32 +34,38 @@ public sealed class DiagonalTraverseSimulation : IDiagonalTraverse
         {
             result[i] = mat[row][column];
 
-            switch (direction)
+            if (direction == Direction.UpRight)
             {
-                case Direction.UpRight when column == n - 1:
+                if (column == n - 1)
+                {
                     row++;
                     direction = Direction.DownLeft;
-                    break;
-                case Direction.UpRight when row == 0:
+                }
+                else if (row == 0)
+                {
                     column++;
                     direction = Direction.DownLeft;
-                    break;
-                case Direction.UpRight:
+                }
+                else
+                {
                     row--;
                     column++;
-                    break;
-                case Direction.DownLeft when row == m - 1:
-                    column++;
-                    direction = Direction.UpRight;
-                    break;
-                case Direction.DownLeft when column == 0:
-                    row++;
-                    direction = Direction.UpRight;
-                    break;
-                case Direction.DownLeft:
-                    row++;
-                    column--;
-                    break;
+                }
+            }
+            else if (row == m - 1)
+            {
+                column++;
+                direction = Direction.UpRight;
+            }
+            else if (column == 0)
+            {
+                row++;
+                direction = Direction.UpRight;
+            }
+            else
+            {
+                row++;
+                column--;
             }
         }
 
