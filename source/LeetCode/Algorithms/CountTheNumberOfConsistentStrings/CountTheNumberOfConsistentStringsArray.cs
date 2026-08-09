@@ -31,8 +31,10 @@ public sealed class CountTheNumberOfConsistentStringsArray : ICountTheNumberOfCo
             allowedArray[allowedChar - 'a'] = true;
         }
 
-        foreach (var word in words)
+        for (var i = 0; i < words.Length; i++)
         {
+            var word = words[i];
+
             if (word.Any(wordChar => !allowedArray[wordChar - 'a']))
             {
                 count--;
