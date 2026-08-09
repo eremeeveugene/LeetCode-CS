@@ -27,7 +27,7 @@ public sealed class MinimizeXORBitwise : IMinimizeXOR
 
         for (var i = 31; i >= 0; i--)
         {
-            if (num2SetBits > 0)
+            if (num2SetBits == 0)
             {
                 break;
             }
@@ -44,7 +44,7 @@ public sealed class MinimizeXORBitwise : IMinimizeXOR
 
         for (var i = 0; i < 32; i++)
         {
-            if (num2SetBits > 0)
+            if (num2SetBits == 0)
             {
                 break;
             }
