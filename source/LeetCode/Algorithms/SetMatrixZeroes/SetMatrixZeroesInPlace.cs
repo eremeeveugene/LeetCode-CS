@@ -21,9 +21,57 @@ public sealed class SetMatrixZeroesInPlace : ISetMatrixZeroes
     /// </remarks>
     public void SetZeroes(int[][] matrix)
     {
-        var firstRowZero = false;
-        var firstColZero = false;
+        var firstRowHasZero = HasZeroInFirstRow(matrix);
+        var firstColumnHasZero = HasZeroInFirstColumn(matrix);
 
+        MarkZeroes(matrix);
+        ApplyMarkers(matrix);
+
+        if (firstColumnHasZero)
+        {
+            for (var i = 0; i < matrix.Length; i++)
+            {
+                matrix[i][0] = 0;
+            }
+        }
+
+        if (firstRowHasZero)
+        {
+            for (var j = 0; j < matrix[0].Length; j++)
+            {
+                matrix[0][j] = 0;
+            }
+        }
+    }
+
+    private static bool HasZeroInFirstRow(int[][] matrix)
+    {
+        for (var j = 0; j < matrix[0].Length; j++)
+        {
+            if (matrix[0][j] == 0)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private static bool HasZeroInFirstColumn(int[][] matrix)
+    {
+        for (var i = 0; i < matrix.Length; i++)
+        {
+            if (matrix[i][0] == 0)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private static void MarkZeroes(int[][] matrix)
+    {
         for (var i = 0; i < matrix.Length; i++)
         {
             for (var j = 0; j < matrix[i].Length; j++)
@@ -33,21 +81,14 @@ public sealed class SetMatrixZeroesInPlace : ISetMatrixZeroes
                     continue;
                 }
 
-                if (i == 0)
-                {
-                    firstRowZero = true;
-                }
-
-                if (j == 0)
-                {
-                    firstColZero = true;
-                }
-
                 matrix[i][0] = 0;
                 matrix[0][j] = 0;
             }
         }
+    }
 
+    private static void ApplyMarkers(int[][] matrix)
+    {
         for (var i = 1; i < matrix.Length; i++)
         {
             for (var j = 1; j < matrix[i].Length; j++)
@@ -56,22 +97,6 @@ public sealed class SetMatrixZeroesInPlace : ISetMatrixZeroes
                 {
                     matrix[i][j] = 0;
                 }
-            }
-        }
-
-        if (firstColZero)
-        {
-            foreach (var row in matrix)
-            {
-                row[0] = 0;
-            }
-        }
-
-        if (firstRowZero)
-        {
-            for (var j = 0; j < matrix[0].Length; j++)
-            {
-                matrix[0][j] = 0;
             }
         }
     }
