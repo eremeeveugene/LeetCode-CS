@@ -21,7 +21,8 @@ public sealed class FreedomTrailDynamicProgramming : IFreedomTrail
     /// </remarks>
     public int FindRotateSteps(string ring, string key)
     {
-        int n = ring.Length, m = key.Length;
+        var n = ring.Length;
+        var m = key.Length;
 
         var dp = new int[m + 1, n];
 
@@ -44,16 +45,7 @@ public sealed class FreedomTrailDynamicProgramming : IFreedomTrail
                     continue;
                 }
 
-                for (var k = 0; k < n; k++)
-                {
-                    if (dp[i - 1, k] == int.MaxValue)
-                    {
-                        continue;
-                    }
-
-                    var steps = Math.Min((j - k + n) % n, (k - j + n) % n);
-                    dp[i, j] = Math.Min(dp[i, j], dp[i - 1, k] + steps + 1);
-                }
+                dp[i, j] = GetMinRotateSteps(dp, n, i, j);
             }
         }
 
@@ -68,5 +60,24 @@ public sealed class FreedomTrailDynamicProgramming : IFreedomTrail
         }
 
         return minSteps;
+    }
+
+    private static int GetMinRotateSteps(int[,] dp, int n, int i, int j)
+    {
+        var result = int.MaxValue;
+
+        for (var k = 0; k < n; k++)
+        {
+            if (dp[i - 1, k] == int.MaxValue)
+            {
+                continue;
+            }
+
+            var steps = Math.Min((j - k + n) % n, (k - j + n) % n);
+
+            result = Math.Min(result, dp[i - 1, k] + steps + 1);
+        }
+
+        return result;
     }
 }
