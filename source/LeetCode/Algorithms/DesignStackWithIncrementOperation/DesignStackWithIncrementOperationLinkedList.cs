@@ -102,7 +102,7 @@ public sealed class DesignStackWithIncrementOperationLinkedList : IDesignStackWi
         }
     }
 
-    private class Node(int value, Node? next = null, Node? previous = null)
+    private sealed class Node(int value, Node? next = null, Node? previous = null)
     {
         public int Value { get; set; } = value;
         public Node? Next { get; } = next;
