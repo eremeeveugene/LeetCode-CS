@@ -37,12 +37,12 @@ public sealed class FindAllGroupOfFarmlandIterative : IFindAllGroupOfFarmland
         return [.. result];
     }
 
-    private static int[] FindFarmlandCorner(IReadOnlyList<int[]> land, int x, int y)
+    private static int[] FindFarmlandCorner(int[][] land, int x, int y)
     {
         var dx = x;
         var dy = y;
 
-        while (dx < land.Count - 1 && land[dx + 1][dy] == 1)
+        while (dx < land.Length - 1 && land[dx + 1][dy] == 1)
         {
             dx++;
         }
