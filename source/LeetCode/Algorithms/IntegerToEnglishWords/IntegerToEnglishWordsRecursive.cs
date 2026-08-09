@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Text;
+
 namespace LeetCode.Algorithms.IntegerToEnglishWords;
 
 /// <inheritdoc />
@@ -58,13 +60,14 @@ public sealed class IntegerToEnglishWordsRecursive : IIntegerToEnglishWords
         }
 
         var i = 0;
-        var words = string.Empty;
+
+        var wordsStringBuilder = new StringBuilder();
 
         while (num > 0)
         {
             if (num % 1000 != 0)
             {
-                words = Helper(num % 1000) + Thousands[i] + Space + words;
+                wordsStringBuilder.Insert(0, ConvertBelowThousand(num % 1000) + Thousands[i] + Space);
             }
 
             num /= 1000;
@@ -72,17 +75,17 @@ public sealed class IntegerToEnglishWordsRecursive : IIntegerToEnglishWords
             i++;
         }
 
-        return words.Trim();
+        return wordsStringBuilder.ToString().Trim();
     }
 
-    private static string Helper(int num)
+    private static string ConvertBelowThousand(int num)
     {
         return num switch
         {
             0 => string.Empty,
             < 20 => BelowTwenty[num] + Space,
-            < 100 => Tens[num / 10] + Space + Helper(num % 10),
-            _ => BelowTwenty[num / 100] + Space + Hundred + Space + Helper(num % 100)
+            < 100 => Tens[num / 10] + Space + ConvertBelowThousand(num % 10),
+            _ => BelowTwenty[num / 100] + Space + Hundred + Space + ConvertBelowThousand(num % 100)
         };
     }
 }
