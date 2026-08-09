@@ -39,11 +39,11 @@ public sealed class FindAllGroupOfFarmlandBruteForce : IFindAllGroupOfFarmland
         return [.. result];
     }
 
-    private static void FindFarmland(IReadOnlyList<int[]> land, ICollection<int[]> result, int r1, int c1, int r2, int c2)
+    private static void FindFarmland(int[][] land, List<int[]> result, int r1, int c1, int r2, int c2)
     {
         while (true)
         {
-            if (r2 + 1 < land.Count && land[r2 + 1][c2] == 1 && c2 + 1 < land[r2].Length && land[r2][c2 + 1] == 1)
+            if (r2 + 1 < land.Length && land[r2 + 1][c2] == 1 && c2 + 1 < land[r2].Length && land[r2][c2 + 1] == 1)
             {
                 MarkAsVisited(land, r1, c1, r2 + 1, c2 + 1);
 
@@ -53,7 +53,7 @@ public sealed class FindAllGroupOfFarmlandBruteForce : IFindAllGroupOfFarmland
                 continue;
             }
 
-            if (r2 + 1 < land.Count && land[r2 + 1][c2] == 1)
+            if (r2 + 1 < land.Length && land[r2 + 1][c2] == 1)
             {
                 MarkAsVisited(land, r1, c1, r2 + 1, c2);
 
@@ -77,7 +77,7 @@ public sealed class FindAllGroupOfFarmlandBruteForce : IFindAllGroupOfFarmland
         }
     }
 
-    private static void MarkAsVisited(IReadOnlyList<int[]> land, int r1, int c1, int r2, int c2)
+    private static void MarkAsVisited(int[][] land, int r1, int c1, int r2, int c2)
     {
         for (var i = r1; i <= r2; i++)
         {
