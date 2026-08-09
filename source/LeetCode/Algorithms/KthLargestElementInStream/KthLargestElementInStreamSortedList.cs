@@ -32,7 +32,7 @@ public sealed class KthLargestElementInStreamSortedList : IKthLargestElementInSt
     {
         Insert(val);
 
-        return _nums.ElementAt(_k - 1);
+        return _nums[_k - 1];
     }
 
     private void Insert(int val)
