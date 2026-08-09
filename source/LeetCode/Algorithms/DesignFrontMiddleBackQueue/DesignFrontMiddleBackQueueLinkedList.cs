@@ -215,7 +215,7 @@ public sealed class DesignFrontMiddleBackQueueLinkedList : IDesignFrontMiddleBac
         return tail.Value;
     }
 
-    private class Node(int value)
+    private sealed class Node(int value)
     {
         public Node? Next { get; set; }
         public Node? Previous { get; set; }
