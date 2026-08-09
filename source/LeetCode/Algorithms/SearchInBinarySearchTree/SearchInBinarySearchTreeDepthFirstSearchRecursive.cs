@@ -28,6 +28,13 @@ public sealed class SearchInBinarySearchTreeDepthFirstSearchRecursive : ISearchI
             return null;
         }
 
-        return root.val == val ? root : SearchBST(root.val < val ? root.right : root.left, val);
+        if (root.val == val)
+        {
+            return root;
+        }
+
+        var next = root.val < val ? root.right : root.left;
+
+        return SearchBST(next, val);
     }
 }
