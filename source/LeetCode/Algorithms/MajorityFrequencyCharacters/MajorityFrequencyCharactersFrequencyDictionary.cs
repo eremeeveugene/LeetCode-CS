@@ -25,8 +25,10 @@ public sealed class MajorityFrequencyCharactersFrequencyDictionary : IMajorityFr
     {
         var characterToFrequencyDictionary = new Dictionary<char, int>();
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             if (!characterToFrequencyDictionary.TryAdd(c, 1))
             {
                 characterToFrequencyDictionary[c]++;
