@@ -21,10 +21,10 @@ public sealed class MinimumAbsoluteDifferenceLookup : IMinimumAbsoluteDifference
     /// </remarks>
     public IList<IList<int>> MinimumAbsDifference(int[] arr)
     {
-        var minValue = int.MaxValue;
-        var maxValue = int.MinValue;
+        var minValue = arr[0];
+        var maxValue = arr[0];
 
-        for (var i = 0; i < arr.Length; i++)
+        for (var i = 1; i < arr.Length; i++)
         {
             var num = arr[i];
 
