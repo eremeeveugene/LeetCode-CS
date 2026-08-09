@@ -23,10 +23,10 @@ public sealed class MaximumTotalSubarrayValueEnumeration : IMaximumTotalSubarray
     {
         var n = nums.Length;
 
-        var min = int.MaxValue;
-        var max = int.MinValue;
+        var min = nums[0];
+        var max = nums[0];
 
-        for (var i = 0; i < n; i++)
+        for (var i = 1; i < n; i++)
         {
             var num = nums[i];
 
@@ -34,7 +34,7 @@ public sealed class MaximumTotalSubarrayValueEnumeration : IMaximumTotalSubarray
             max = Math.Max(max, num);
         }
 
-        long diff = max - min;
+        var diff = max - min;
 
         return diff * k;
     }
