@@ -33,24 +33,18 @@ public sealed class CheckIfThereIsValidPathInGridSimulation : ICheckIfThereIsVal
 
         Span<int> visited = stackalloc int[length];
 
-        return HasValidPath(grid, visited, 1, rowCount, columnCount, 0, 0, 0, 1) || HasValidPath(grid, visited, 2, rowCount, columnCount, 0, 0, 1, 0);
+        return HasValidPath(grid, visited, 1, 0, 0, 0, 1) || HasValidPath(grid, visited, 2, 0, 0, 1, 0);
     }
 
-    private static bool HasValidPath(
-        int[][] grid,
-        Span<int> visited,
-        int stamp,
-        int rowCount,
-        int columnCount,
-        int row,
-        int column,
-        int rowOffset,
-        int columnOffset)
+    private static bool HasValidPath(int[][] grid, Span<int> visited, int stamp, int row, int column, int rowOffset, int columnOffset)
     {
         if (!CanMove(grid[row][column], rowOffset, columnOffset))
         {
             return false;
         }
+
+        var rowCount = grid.Length;
+        var columnCount = grid[0].Length;
 
         while (row != rowCount - 1 || column != columnCount - 1)
         {
@@ -109,24 +103,29 @@ public sealed class CheckIfThereIsValidPathInGridSimulation : ICheckIfThereIsVal
                 break;
 
             case 3:
-                rowOffset = incomingColumnOffset == -1 ? 1 : 0;
-                columnOffset = incomingColumnOffset == -1 ? 0 : -1;
+                (rowOffset, columnOffset) = GetCurveOffset(incomingColumnOffset, -1, 1, -1);
                 break;
 
             case 4:
-                rowOffset = incomingColumnOffset == 1 ? 1 : 0;
-                columnOffset = incomingColumnOffset == 1 ? 0 : 1;
+                (rowOffset, columnOffset) = GetCurveOffset(incomingColumnOffset, 1, 1, 1);
                 break;
 
             case 5:
-                rowOffset = incomingColumnOffset == -1 ? -1 : 0;
-                columnOffset = incomingColumnOffset == -1 ? 0 : -1;
+                (rowOffset, columnOffset) = GetCurveOffset(incomingColumnOffset, -1, -1, -1);
                 break;
 
             default:
-                rowOffset = incomingColumnOffset == 1 ? -1 : 0;
-                columnOffset = incomingColumnOffset == 1 ? 0 : 1;
+                (rowOffset, columnOffset) = GetCurveOffset(incomingColumnOffset, 1, -1, 1);
                 break;
         }
+    }
+
+    private static (int RowOffset, int ColumnOffset) GetCurveOffset(
+        int incomingColumnOffset,
+        int matchingColumnOffset,
+        int turnRowOffset,
+        int fallbackColumnOffset)
+    {
+        return incomingColumnOffset == matchingColumnOffset ? (turnRowOffset, 0) : (0, fallbackColumnOffset);
     }
 }
