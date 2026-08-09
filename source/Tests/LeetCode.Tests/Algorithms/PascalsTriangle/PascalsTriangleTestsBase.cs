@@ -26,7 +26,7 @@ public abstract class PascalsTriangleTestsBase<T> where T : IPascalsTriangle, ne
         var actualResult = solution.Generate(numRows).ToArray();
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()
