@@ -30,11 +30,6 @@ public sealed class MinimumStringLengthAfterRemovingSubstringsStack : IMinimumSt
             switch (c)
             {
                 case 'B' when stack.Count > 0 && stack.Peek() == 'A':
-                    stack.Pop();
-
-                    minLength -= 2;
-
-                    break;
                 case 'D' when stack.Count > 0 && stack.Peek() == 'C':
                     stack.Pop();
 
