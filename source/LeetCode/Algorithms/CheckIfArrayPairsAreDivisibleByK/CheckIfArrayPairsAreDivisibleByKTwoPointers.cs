@@ -21,7 +21,7 @@ public sealed class CheckIfArrayPairsAreDivisibleByKTwoPointers : ICheckIfArrayP
     /// </remarks>
     public bool CanArrange(int[] arr, int k)
     {
-        Array.Sort(arr, new Comparator(k));
+        Array.Sort(arr, (i, j) => ((k + (i % k)) % k) - ((k + (j % k)) % k));
 
         var left = 0;
         var right = arr.Length - 1;
@@ -53,13 +53,5 @@ public sealed class CheckIfArrayPairsAreDivisibleByKTwoPointers : ICheckIfArrayP
         }
 
         return true;
-    }
-
-    private class Comparator(int k) : IComparer<int>
-    {
-        public int Compare(int i, int j)
-        {
-            return ((k + (i % k)) % k) - ((k + (j % k)) % k);
-        }
     }
 }
