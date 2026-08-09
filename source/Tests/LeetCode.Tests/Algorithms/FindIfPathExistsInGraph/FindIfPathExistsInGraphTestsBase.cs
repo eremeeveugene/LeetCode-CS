@@ -40,13 +40,13 @@ public abstract class FindIfPathExistsInGraphTestsBase<T> where T : IFindIfPathE
 
         yield return [6, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 3, 5 }, new[] { 5, 4 }, new[] { 4, 3 } }, 0, 5, false];
 
-        yield return [1, new int[][] { }, 0, 0, true];
+        yield return [1, Array.Empty<int[]>(), 0, 0, true];
 
         yield return [2, new[] { new[] { 0, 1 } }, 0, 1, true];
 
         yield return [2, new[] { new[] { 0, 1 } }, 1, 0, true];
 
-        yield return [2, new int[][] { }, 0, 1, false];
+        yield return [2, Array.Empty<int[]>(), 0, 1, false];
 
         yield return [4, new[] { new[] { 0, 1 }, new[] { 2, 3 } }, 0, 3, false];
 
