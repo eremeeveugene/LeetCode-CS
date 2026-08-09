@@ -51,7 +51,7 @@ public sealed class ExtraCharactersInStringDynamicProgrammingTrie : IExtraCharac
         return dp[0];
     }
 
-    private class Trie
+    private sealed class Trie
     {
         public Trie(IEnumerable<string> words)
         {
@@ -88,7 +88,7 @@ public sealed class ExtraCharactersInStringDynamicProgrammingTrie : IExtraCharac
         }
     }
 
-    private class TrieNode
+    private sealed class TrieNode
     {
         public Dictionary<char, TrieNode> Children { get; } = [];
 
