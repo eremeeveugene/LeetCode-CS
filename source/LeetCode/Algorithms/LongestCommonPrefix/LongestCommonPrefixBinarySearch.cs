@@ -44,10 +44,10 @@ public sealed class LongestCommonPrefixBinarySearch : ILongestCommonPrefix
         return strs[0][..longestPrefixIndex];
     }
 
-    private static bool IsCommonPrefix(IReadOnlyList<string> strs, int length)
+    private static bool IsCommonPrefix(string[] strs, int length)
     {
         var str1 = strs[0][..length];
-        for (var i = 1; i < strs.Count; i++)
+        for (var i = 1; i < strs.Length; i++)
         {
             if (!strs[i].StartsWith(str1))
             {
