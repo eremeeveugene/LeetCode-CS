@@ -198,25 +198,10 @@ public sealed class FindTheMinimumAreaToCoverAllOnes2BruteForce : IFindTheMinimu
                     continue;
                 }
 
-                if (row < minRow)
-                {
-                    minRow = row;
-                }
-
-                if (row > maxRow)
-                {
-                    maxRow = row;
-                }
-
-                if (column < minColumn)
-                {
-                    minColumn = column;
-                }
-
-                if (column > maxColumn)
-                {
-                    maxColumn = column;
-                }
+                minRow = Math.Min(minRow, row);
+                maxRow = Math.Max(maxRow, row);
+                minColumn = Math.Min(minColumn, column);
+                maxColumn = Math.Max(maxColumn, column);
             }
         }
 
