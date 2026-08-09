@@ -23,8 +23,10 @@ public sealed class UniqueNumberOfOccurrencesDictionary : IUniqueNumberOfOccurre
     {
         var occurenceDictionary = new Dictionary<int, int>();
 
-        foreach (var number in arr)
+        for (var i = 0; i < arr.Length; i++)
         {
+            var number = arr[i];
+
             if (!occurenceDictionary.TryAdd(number, 1))
             {
                 occurenceDictionary[number]++;
