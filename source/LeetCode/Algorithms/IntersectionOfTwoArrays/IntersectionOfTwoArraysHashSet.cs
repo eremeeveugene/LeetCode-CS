@@ -24,11 +24,13 @@ public sealed class IntersectionOfTwoArraysHashSet : IIntersectionOfTwoArrays
         var nums1HashSet = new HashSet<int>(nums1);
         var intersectionHashSet = new HashSet<int>();
 
-        foreach (var num in nums2)
+        for (var i = 0; i < nums2.Length; i++)
         {
-            if (nums1HashSet.Contains(num))
+            var num2 = nums2[i];
+
+            if (nums1HashSet.Contains(num2))
             {
-                intersectionHashSet.Add(num);
+                intersectionHashSet.Add(num2);
             }
         }
 
