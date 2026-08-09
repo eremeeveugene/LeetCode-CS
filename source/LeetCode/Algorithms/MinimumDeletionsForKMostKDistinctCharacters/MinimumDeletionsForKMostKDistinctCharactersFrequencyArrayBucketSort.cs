@@ -37,8 +37,10 @@ public sealed class MinimumDeletionsForKMostKDistinctCharactersFrequencyArrayBuc
 
         var buckets = new int[s.Length];
 
-        foreach (var frequency in frequencyArray)
+        for (var i = 0; i < frequencyArray.Length; i++)
         {
+            var frequency = frequencyArray[i];
+
             if (frequency > 0)
             {
                 buckets[frequency - 1]++;
