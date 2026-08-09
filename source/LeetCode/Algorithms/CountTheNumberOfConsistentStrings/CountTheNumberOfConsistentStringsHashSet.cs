@@ -26,8 +26,10 @@ public sealed class CountTheNumberOfConsistentStringsHashSet : ICountTheNumberOf
 
         var allowedHashSet = new HashSet<char>(allowed);
 
-        foreach (var word in words)
+        for (var i = 0; i < words.Length; i++)
         {
+            var word = words[i];
+
             if (word.Any(wordChar => !allowedHashSet.Contains(wordChar)))
             {
                 count--;
