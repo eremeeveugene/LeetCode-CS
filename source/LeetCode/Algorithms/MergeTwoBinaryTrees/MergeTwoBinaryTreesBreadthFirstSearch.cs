@@ -55,26 +55,20 @@ public sealed class MergeTwoBinaryTreesBreadthFirstSearch : IMergeTwoBinaryTrees
             {
                 root1Node.left = root2Node.left;
             }
-            else
+            else if (root2Node.left != null)
             {
-                if (root2Node.left != null)
-                {
-                    root1Queue.Enqueue(root1Node.left);
-                    root2Queue.Enqueue(root2Node.left);
-                }
+                root1Queue.Enqueue(root1Node.left);
+                root2Queue.Enqueue(root2Node.left);
             }
 
             if (root1Node.right == null)
             {
                 root1Node.right = root2Node.right;
             }
-            else
+            else if (root2Node.right != null)
             {
-                if (root2Node.right != null)
-                {
-                    root1Queue.Enqueue(root1Node.right);
-                    root2Queue.Enqueue(root2Node.right);
-                }
+                root1Queue.Enqueue(root1Node.right);
+                root2Queue.Enqueue(root2Node.right);
             }
         }
 
