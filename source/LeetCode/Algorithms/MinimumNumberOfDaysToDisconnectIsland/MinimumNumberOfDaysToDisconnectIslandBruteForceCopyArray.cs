@@ -49,11 +49,11 @@ public sealed class MinimumNumberOfDaysToDisconnectIslandBruteForceCopyArray : I
         return 2;
     }
 
-    private static int[][] GetArrayCopy(IReadOnlyList<int[]> array)
+    private static int[][] GetArrayCopy(int[][] array)
     {
-        var newArray = new int[array.Count][];
+        var newArray = new int[array.Length][];
 
-        for (var i = 0; i < array.Count; i++)
+        for (var i = 0; i < array.Length; i++)
         {
             newArray[i] = new int[array[i].Length];
 
@@ -66,11 +66,11 @@ public sealed class MinimumNumberOfDaysToDisconnectIslandBruteForceCopyArray : I
         return newArray;
     }
 
-    private static int GetIslandsCount(IReadOnlyList<int[]> grid)
+    private static int GetIslandsCount(int[][] grid)
     {
         var islandsCount = 0;
 
-        for (var i = 0; i < grid.Count; i++)
+        for (var i = 0; i < grid.Length; i++)
         {
             for (var j = 0; j < grid[i].Length; j++)
             {
@@ -88,7 +88,7 @@ public sealed class MinimumNumberOfDaysToDisconnectIslandBruteForceCopyArray : I
         return islandsCount;
     }
 
-    private static void MarkAsVisited(IReadOnlyList<int[]> grid, int i, int j)
+    private static void MarkAsVisited(int[][] grid, int i, int j)
     {
         if (grid[i][j] != 1)
         {
@@ -102,7 +102,7 @@ public sealed class MinimumNumberOfDaysToDisconnectIslandBruteForceCopyArray : I
             MarkAsVisited(grid, i - 1, j);
         }
 
-        if (i + 1 < grid.Count)
+        if (i + 1 < grid.Length)
         {
             MarkAsVisited(grid, i + 1, j);
         }
