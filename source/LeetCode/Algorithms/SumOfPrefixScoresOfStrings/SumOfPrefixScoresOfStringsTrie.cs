@@ -48,7 +48,7 @@ public sealed class SumOfPrefixScoresOfStringsTrie : ISumOfPrefixScoresOfStrings
         return result;
     }
 
-    private class Trie
+    private sealed class Trie
     {
         public Trie(IEnumerable<string> words)
         {
@@ -93,7 +93,7 @@ public sealed class SumOfPrefixScoresOfStringsTrie : ISumOfPrefixScoresOfStrings
         }
     }
 
-    private class TrieNode
+    private sealed class TrieNode
     {
         private const int ChildrenCount = 'z' - 'a' + 1;
 
