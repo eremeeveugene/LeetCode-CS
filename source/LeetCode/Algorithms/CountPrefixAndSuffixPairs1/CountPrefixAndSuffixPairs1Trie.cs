@@ -128,7 +128,7 @@ public sealed class CountPrefixAndSuffixPairs1Trie : ICountPrefixAndSuffixPairs1
         return word.EndsWith(suffix);
     }
 
-    private class Node
+    private sealed class Node
     {
         public Dictionary<char, Node> Nodes { get; } = new();
     }
