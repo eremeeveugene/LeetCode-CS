@@ -159,7 +159,7 @@ public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
         node.NextNode.PreviousNode = node.PreviousNode;
     }
 
-    private class Node
+    private sealed class Node
     {
         public Node(int count)
         {
