@@ -23,16 +23,24 @@ public sealed class UncommonWordsFromTwoSentencesDictionary : IUncommonWordsFrom
     {
         var wordsDictionary = new Dictionary<string, int>();
 
-        foreach (var word in s1.Split(' '))
+        var s1Words = s1.Split(' ');
+
+        for (var i = 0; i < s1Words.Length; i++)
         {
+            var word = s1Words[i];
+
             if (!wordsDictionary.TryAdd(word, 1))
             {
                 wordsDictionary[word]++;
             }
         }
 
-        foreach (var word in s2.Split(' '))
+        var s2Words = s2.Split(' ');
+
+        for (var i = 0; i < s2Words.Length; i++)
         {
+            var word = s2Words[i];
+
             if (!wordsDictionary.TryAdd(word, 1))
             {
                 wordsDictionary[word]++;
