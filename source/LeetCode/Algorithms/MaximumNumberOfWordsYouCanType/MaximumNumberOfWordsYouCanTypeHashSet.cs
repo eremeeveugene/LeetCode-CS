@@ -25,8 +25,10 @@ public sealed class MaximumNumberOfWordsYouCanTypeHashSet : IMaximumNumberOfWord
         var words = text.Split(' ');
         var count = words.Length;
 
-        foreach (var word in words)
+        for (var i = 0; i < words.Length; i++)
         {
+            var word = words[i];
+
             if (word.Any(brokenLettersHashSet.Contains))
             {
                 count--;
