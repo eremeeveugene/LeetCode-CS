@@ -28,8 +28,10 @@ public sealed class LongestPalindromeDictionary : ILongestPalindrome
 
         var charCount = new Dictionary<char, int>();
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             if (!charCount.TryAdd(c, 1))
             {
                 charCount[c]++;
