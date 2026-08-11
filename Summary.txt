@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/8/2026 - 8:47:05 PM
-  Coverage date: 8/8/2026 - 8:46:32 PM - 8/8/2026 - 8:46:56 PM
+  Generated on: 8/11/2026 - 8:05:39 PM
+  Coverage date: 8/11/2026 - 8:05:06 PM - 8/11/2026 - 8:05:31 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1348
-  Files: 1348
+  Classes: 1350
+  Files: 1350
   Line coverage: 100%
-  Covered lines: 30655
+  Covered lines: 30705
   Uncovered lines: 0
-  Coverable lines: 30655
-  Total lines: 75166
-  Branch coverage: 100% (11190 of 11190)
-  Covered branches: 11190
-  Total branches: 11190
-  Method coverage: 100% (1980 of 1980)
-  Full method coverage: 100% (1980 of 1980)
-  Covered methods: 1980
-  Fully covered methods: 1980
-  Total methods: 1980
+  Coverable lines: 30705
+  Total lines: 75289
+  Branch coverage: 100% (11204 of 11204)
+  Covered branches: 11204
+  Total branches: 11204
+  Method coverage: 100% (1982 of 1982)
+  Full method coverage: 100% (1982 of 1982)
+  Covered methods: 1982
+  Fully covered methods: 1982
+  Total methods: 1982
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1154,6 +1154,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.SmallestEvenMultiple.SmallestEvenMultipleConstant                                                                                  100%
   LeetCode.Algorithms.SmallestIndexWithDigitSumEqualToIndex.SmallestIndexWithDigitSumEqualToIndexBruteForce                                              100%
   LeetCode.Algorithms.SmallestIntegerDivisibleByK.SmallestIntegerDivisibleByKIterative                                                                   100%
+  LeetCode.Algorithms.SmallestMissingIntegerGreaterThanSequentialPrefixSum.SmallestMissingIntegerGreaterThanSequentialPrefixSumHashSet                   100%
+  LeetCode.Algorithms.SmallestMissingIntegerGreaterThanSequentialPrefixSum.SmallestMissingIntegerGreaterThanSequentialPrefixSumLookup                    100%
   LeetCode.Algorithms.SmallestMissingMultipleOfK.SmallestMissingMultipleOfKLookup                                                                        100%
   LeetCode.Algorithms.SmallestMissingNonNegativeIntegerAfterOperations.SmallestMissingNonNegativeIntegerAfterOperationsCounting                          100%
   LeetCode.Algorithms.SmallestMissingNonNegativeIntegerAfterOperations.SmallestMissingNonNegativeIntegerAfterOperationsFrequencyArray                    100%
