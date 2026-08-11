@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.SmallestMissingIntegerGreaterThanSequentialPrefixSum;
 
 /// <inheritdoc />
-public sealed class SmallestMissingIntegerGreaterThanSequentialPrefixSumBucket : ISmallestMissingIntegerGreaterThanSequentialPrefixSum
+public sealed class SmallestMissingIntegerGreaterThanSequentialPrefixSumLookup : ISmallestMissingIntegerGreaterThanSequentialPrefixSum
 {
     private const int MaxValue = 50;
 
