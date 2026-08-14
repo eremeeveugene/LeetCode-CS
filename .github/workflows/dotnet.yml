@@ -217,7 +217,7 @@ jobs:
               $covered += $cvr
 
               $pct = [math]::Round(($cvr/$t)*100,1)
-              if ($pct -lt 90) {
+              if ($pct -lt 100) {
                 $bad += "$norm — $pct% ($cvr/$t)"
               }
             }
