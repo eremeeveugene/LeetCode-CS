@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/14/2026 - 1:08:27 PM
-  Coverage date: 8/14/2026 - 1:07:53 PM - 8/14/2026 - 1:08:19 PM
+  Generated on: 8/14/2026 - 4:51:54 PM
+  Coverage date: 8/14/2026 - 4:51:19 PM - 8/14/2026 - 4:51:46 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1352
-  Files: 1352
+  Classes: 1355
+  Files: 1355
   Line coverage: 100%
-  Covered lines: 30745
+  Covered lines: 30816
   Uncovered lines: 0
-  Coverable lines: 30745
-  Total lines: 75401
-  Branch coverage: 100% (11214 of 11214)
-  Covered branches: 11214
-  Total branches: 11214
-  Method coverage: 100% (1984 of 1984)
-  Full method coverage: 100% (1984 of 1984)
-  Covered methods: 1984
-  Fully covered methods: 1984
-  Total methods: 1984
+  Coverable lines: 30816
+  Total lines: 75575
+  Branch coverage: 100% (11238 of 11238)
+  Covered branches: 11238
+  Total branches: 11238
+  Method coverage: 100% (1987 of 1987)
+  Full method coverage: 100% (1987 of 1987)
+  Covered methods: 1987
+  Fully covered methods: 1987
+  Total methods: 1987
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1030,6 +1030,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.RansomNote.RansomNoteCounting                                                                                                      100%
   LeetCode.Algorithms.RansomNote.RansomNoteDictionary                                                                                                    100%
   LeetCode.Algorithms.RearrangeCharactersToMakeTargetString.RearrangeCharactersToMakeTargetStringCounting                                                100%
+  LeetCode.Algorithms.RearrangeStringToAvoidCharacterPair.RearrangeStringToAvoidCharacterPairPartition                                                   100%
+  LeetCode.Algorithms.RearrangeStringToAvoidCharacterPair.RearrangeStringToAvoidCharacterPairSorting                                                     100%
+  LeetCode.Algorithms.RearrangeStringToAvoidCharacterPair.RearrangeStringToAvoidCharacterPairSwap                                                        100%
   LeetCode.Algorithms.RecoverTreeFromPreorderTraversal.RecoverTreeFromPreorderTraversalDepthFirstSearch                                                  100%
   LeetCode.Algorithms.RegionsCutBySlashes.RegionsCutBySlashesDepthFirstSearch                                                                            100%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksBruteForce                                                                                              100%
