@@ -70,6 +70,6 @@ public abstract class RearrangeStringToAvoidCharacterPairTestsBase<T> where T : 
             return;
         }
 
-        Assert.IsLessThan(lastIndexOfY, firstIndexOfX);
+        Assert.IsLessThan(firstIndexOfX, lastIndexOfY);
     }
 }
