@@ -232,7 +232,7 @@ jobs:
           $pct = [math]::Round(($covered/$total)*100,2)
           "pct=$pct" >> $env:GITHUB_OUTPUT
 
-          if ($pct -lt 90) {
+          if ($pct -lt 100) {
             "status=❌ Failed" >> $env:GITHUB_OUTPUT
             $bad -join "`n" > coverage_failed.txt
           } else {
