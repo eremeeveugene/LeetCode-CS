@@ -954,6 +954,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3978. Unique Middle Element](https://leetcode.com/problems/unique-middle-element/description/)
 - [3982. Sum of Integers with Maximum Digit Range](https://leetcode.com/problems/sum-of-integers-with-maximum-digit-range/description/)
 - [3986. Number of Elapsed Seconds Between Two Times](https://leetcode.com/problems/number-of-elapsed-seconds-between-two-times/description/)
+- [3992. Rearrange String to Avoid Character Pair](https://leetcode.com/problems/rearrange-string-to-avoid-character-pair/description/)
 - [4000. Largest Integer With Given Digit Sum](https://leetcode.com/problems/largest-integer-with-given-digit-sum/description/)
 
   </p>
