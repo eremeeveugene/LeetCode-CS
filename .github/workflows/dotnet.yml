@@ -134,6 +134,34 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: ${{ runner.temp }}\scanner\dotnet-sonarscanner end
 
+      - name: Check for new issues
+        id: new-issues
+        if: always() && steps.sonar-end.outcome == 'success'
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: |
+          $scope = if ("${{ github.event_name }}" -eq "pull_request") {
+            "pullRequest=${{ github.event.pull_request.number }}"
+          } else {
+            "branch=develop"
+          }
+
+          $uri = "https://sonarcloud.io/api/issues/search?componentKeys=eremeeveugene_LeetCode-CS&resolved=false&inNewCodePeriod=true&$scope"
+
+          $headers = @{ Authorization = "Bearer $env:SONAR_TOKEN" }
+
+          $response = Invoke-RestMethod -Uri $uri -Headers $headers -Method Get
+
+          $count = $response.total
+
+          "count=$count" >> $env:GITHUB_OUTPUT
+
+          if ($count -gt 0) {
+            "status=❌ $count new issue(s)" >> $env:GITHUB_OUTPUT
+          } else {
+            "status=✅ No new issues" >> $env:GITHUB_OUTPUT
+          }
+
       - name: Changed files
         id: changed
         if: always()
@@ -234,6 +262,7 @@ jobs:
           "build=$(Format-Status '${{ steps.build.outcome }}' 'a previous step failed')" >> $env:GITHUB_OUTPUT
           "test=$(Format-Status '${{ steps.test.outcome }}' 'a previous step failed')" >> $env:GITHUB_OUTPUT
           "sonar=$(Format-Status '${{ steps.sonar-end.outcome }}' $sonarSkipReason)" >> $env:GITHUB_OUTPUT
+          "newissues=$(if ('${{ steps.new-issues.outputs.status }}') { '${{ steps.new-issues.outputs.status }}' } else { "⏭️ Skipped — $sonarSkipReason" })" >> $env:GITHUB_OUTPUT
 
       - name: PR comment
         if: github.event_name == 'pull_request' && always()
@@ -252,6 +281,7 @@ jobs:
             | Coverage | ${{ steps.coverage-check.outputs.pct }}% |
             | Status | ${{ steps.coverage-check.outputs.status }} |
             | Sonar quality gate | ${{ steps.summary.outputs.sonar }} |
+            | New issues | ${{ steps.summary.outputs.newissues }} |
 
             [View on SonarCloud](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS&pullRequest=${{ github.event.pull_request.number }})
 
@@ -273,3 +303,4 @@ jobs:
           if ("${{ steps.test.outcome }}" -ne "success") { exit 1 }
           if ("${{ steps.coverage-check.outputs.status }}" -eq "❌ Failed") { exit 1 }
           if ("${{ steps.sonar-end.outcome }}" -eq "failure") { exit 1 }
+          if ("${{ steps.new-issues.outputs.count }}" -gt 0) { exit 1 }
