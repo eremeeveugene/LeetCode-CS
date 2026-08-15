@@ -94,19 +94,17 @@ public sealed class IntegerToEnglishWordsIterative : IIntegerToEnglishWords
         return resultStringBuilder.ToString().TrimEnd();
     }
 
+
     private static int GetLargestWordKey(int num)
     {
-        for (var i = 0; i < DescendingWordKeys.Length; i++)
-        {
-            var key = DescendingWordKeys[i];
+        var i = 0;
 
-            if (key <= num)
-            {
-                return key;
-            }
+        while (DescendingWordKeys[i] > num)
+        {
+            i++;
         }
 
-        return 0;
+        return DescendingWordKeys[i];
     }
 
     private static void AppendBelowThousand(StringBuilder resultStringBuilder, int count)
