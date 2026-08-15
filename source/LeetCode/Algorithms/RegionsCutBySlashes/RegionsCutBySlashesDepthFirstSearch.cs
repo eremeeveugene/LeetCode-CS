@@ -23,41 +23,7 @@ public sealed class RegionsCutBySlashesDepthFirstSearch : IRegionsCutBySlashes
     /// </remarks>
     public int RegionsBySlashes(string[] grid)
     {
-        var matrix = new int[grid.Length * Multiplier][];
-
-        for (var i = 0; i < grid.Length; i++)
-        {
-            var m = i * Multiplier;
-
-            for (var j = 0; j < Multiplier; j++)
-            {
-                matrix[m + j] = new int[grid[i].Length * Multiplier];
-            }
-
-            for (var j = 0; j < grid[i].Length; j++)
-            {
-                var n = j * Multiplier;
-
-                switch (grid[i][j])
-                {
-                    case '/':
-
-                        for (var k = 0; k < Multiplier; k++)
-                        {
-                            matrix[m + k][n + (Multiplier - 1) - k] = 1;
-                        }
-
-                        break;
-                    case '\\':
-                        for (var k = 0; k < Multiplier; k++)
-                        {
-                            matrix[m + k][n + k] = 1;
-                        }
-
-                        break;
-                }
-            }
-        }
+        var matrix = BuildMatrix(grid);
 
         var regionCount = 0;
 
@@ -77,6 +43,49 @@ public sealed class RegionsCutBySlashesDepthFirstSearch : IRegionsCutBySlashes
         }
 
         return regionCount;
+    }
+
+    private static int[][] BuildMatrix(string[] grid)
+    {
+        var matrix = new int[grid.Length * Multiplier][];
+
+        for (var i = 0; i < grid.Length; i++)
+        {
+            var m = i * Multiplier;
+
+            for (var j = 0; j < Multiplier; j++)
+            {
+                matrix[m + j] = new int[grid[i].Length * Multiplier];
+            }
+
+            for (var j = 0; j < grid[i].Length; j++)
+            {
+                MarkCell(matrix, grid[i][j], m, j * Multiplier);
+            }
+        }
+
+        return matrix;
+    }
+
+    private static void MarkCell(int[][] matrix, char slash, int m, int n)
+    {
+        switch (slash)
+        {
+            case '/':
+                for (var k = 0; k < Multiplier; k++)
+                {
+                    matrix[m + k][n + (Multiplier - 1) - k] = 1;
+                }
+
+                break;
+            case '\\':
+                for (var k = 0; k < Multiplier; k++)
+                {
+                    matrix[m + k][n + k] = 1;
+                }
+
+                break;
+        }
     }
 
     private static void FindRegions(IReadOnlyList<int[]> matrix, int i, int j)
