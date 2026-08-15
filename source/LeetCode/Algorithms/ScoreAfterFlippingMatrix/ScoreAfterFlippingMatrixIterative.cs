@@ -21,8 +21,18 @@ public sealed class ScoreAfterFlippingMatrixIterative : IScoreAfterFlippingMatri
     /// </remarks>
     public int MatrixScore(int[][] grid)
     {
-        foreach (var row in grid)
+        FlipRowsStartingWithZero(grid);
+        FlipColumnsWithFewerOnes(grid);
+
+        return GetScore(grid);
+    }
+
+    private static void FlipRowsStartingWithZero(int[][] grid)
+    {
+        for (var i = 0; i < grid.Length; i++)
         {
+            var row = grid[i];
+
             if (row[0] != 0)
             {
                 continue;
@@ -30,17 +40,13 @@ public sealed class ScoreAfterFlippingMatrixIterative : IScoreAfterFlippingMatri
 
             for (var j = 0; j < row.Length; j++)
             {
-                if (row[j] == 0)
-                {
-                    row[j] = 1;
-                }
-                else
-                {
-                    row[j] = 0;
-                }
+                row[j] = row[j] == 0 ? 1 : 0;
             }
         }
+    }
 
+    private static void FlipColumnsWithFewerOnes(int[][] grid)
+    {
         for (var j = 1; j < grid[0].Length; j++)
         {
             var countOfOnes = grid.Count(row => row[j] == 1);
@@ -50,23 +56,23 @@ public sealed class ScoreAfterFlippingMatrixIterative : IScoreAfterFlippingMatri
                 continue;
             }
 
-            foreach (var row in grid)
+            for (var i = 0; i < grid.Length; i++)
             {
-                if (row[j] == 0)
-                {
-                    row[j] = 1;
-                }
-                else
-                {
-                    row[j] = 0;
-                }
+                var row = grid[i];
+
+                row[j] = row[j] == 0 ? 1 : 0;
             }
         }
+    }
 
+    private static int GetScore(int[][] grid)
+    {
         var score = 0;
 
-        foreach (var row in grid)
+        for (var i = 0; i < grid.Length; i++)
         {
+            var row = grid[i];
+
             for (var k = 0; k < row.Length; k++)
             {
                 if (row[k] == 1)
