@@ -19,12 +19,12 @@ public sealed class RestoreFinishingOrderLookup : IRestoreFinishingOrder
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
     /// </remarks>
-    public int[] RecoverOrder(int[] orders, int[] friends)
+    public int[] RecoverOrder(int[] order, int[] friends)
     {
-        var ordersLength = orders.Length;
+        var orderLength = order.Length;
         var friendsLength = friends.Length;
 
-        Span<bool> friendsLookup = stackalloc bool[ordersLength];
+        Span<bool> friendsLookup = stackalloc bool[orderLength];
 
         for (var i = 0; i < friendsLength; i++)
         {
@@ -33,18 +33,13 @@ public sealed class RestoreFinishingOrderLookup : IRestoreFinishingOrder
 
         var friendsIndex = 0;
 
-        foreach (var order in orders)
+        for (var i = 0; i < orderLength && friendsIndex < friendsLength; i++)
         {
-            if (!friendsLookup[order - 1])
-            {
-                continue;
-            }
+            var racer = order[i];
 
-            friends[friendsIndex++] = order;
-
-            if (friendsIndex == friendsLength)
+            if (friendsLookup[racer - 1])
             {
-                break;
+                friends[friendsIndex++] = racer;
             }
         }
 
