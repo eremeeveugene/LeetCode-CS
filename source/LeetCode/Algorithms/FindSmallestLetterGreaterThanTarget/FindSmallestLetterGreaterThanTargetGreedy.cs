@@ -21,8 +21,10 @@ public sealed class FindSmallestLetterGreaterThanTargetGreedy : IFindSmallestLet
     /// </remarks>
     public char NextGreatestLetter(char[] letters, char target)
     {
-        foreach (var letter in letters)
+        for (var i = 0; i < letters.Length; i++)
         {
+            var letter = letters[i];
+
             if (letter > target)
             {
                 return letter;

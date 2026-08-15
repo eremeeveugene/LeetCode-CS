@@ -38,25 +38,10 @@ public sealed class FindTheMinimumAreaToCoverAllOnes1OnePass : IFindTheMinimumAr
                     continue;
                 }
 
-                if (i < top)
-                {
-                    top = i;
-                }
-
-                if (i > bottom)
-                {
-                    bottom = i;
-                }
-
-                if (j < left)
-                {
-                    left = j;
-                }
-
-                if (j > right)
-                {
-                    right = j;
-                }
+                top = Math.Min(top, i);
+                bottom = Math.Max(bottom, i);
+                left = Math.Min(left, j);
+                right = Math.Max(right, j);
             }
         }
 

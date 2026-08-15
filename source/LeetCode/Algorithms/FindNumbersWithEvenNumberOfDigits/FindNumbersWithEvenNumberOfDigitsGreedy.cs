@@ -23,8 +23,10 @@ public sealed class FindNumbersWithEvenNumberOfDigitsGreedy : IFindNumbersWithEv
     {
         var count = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (num is >= 10 and < 100 or >= 1000 and < 10000 or >= 100000 and < 1000000 or >= 10000000 and < 100000000 or >= 1000000000)
             {
                 count++;

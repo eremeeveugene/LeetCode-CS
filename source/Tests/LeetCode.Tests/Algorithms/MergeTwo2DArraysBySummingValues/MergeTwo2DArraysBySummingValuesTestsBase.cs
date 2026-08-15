@@ -26,7 +26,7 @@ public abstract class MergeTwo2DArraysBySummingValuesTestsBase<T> where T : IMer
         var actualResult = solution.MergeArrays(nums1, nums2);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

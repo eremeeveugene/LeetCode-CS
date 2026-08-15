@@ -70,12 +70,20 @@ public sealed class TwentyFourGameBruteForce : ITwentyFourGame
 
     private static bool TryEvaluateAllExpressions(double a, double b, double c, double d)
     {
-        foreach (var firstOperator in Enum.GetValues<Operation>())
+        var operations = Enum.GetValues<Operation>();
+
+        for (var i = 0; i < operations.Length; i++)
         {
-            foreach (var secondOperator in Enum.GetValues<Operation>())
+            var firstOperator = operations[i];
+
+            for (var j = 0; j < operations.Length; j++)
             {
-                foreach (var thirdOperator in Enum.GetValues<Operation>())
+                var secondOperator = operations[j];
+
+                for (var k = 0; k < operations.Length; k++)
                 {
+                    var thirdOperator = operations[k];
+
                     if (TryEvaluateAllExpressionTrees(a, b, c, d, firstOperator, secondOperator, thirdOperator))
                     {
                         return true;

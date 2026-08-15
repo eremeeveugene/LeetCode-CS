@@ -16,9 +16,9 @@ namespace LeetCode.Algorithms.IntegerToEnglishWords;
 /// <inheritdoc />
 public sealed class IntegerToEnglishWordsIterative : IIntegerToEnglishWords
 {
-    private const string Space = " ";
+    private const char Space = ' ';
 
-    private readonly Dictionary<int, string> _wordsDictionary = new()
+    private static readonly Dictionary<int, string> WordsDictionary = new()
     {
         { 1000000000, "Billion" },
         { 1000000, "Million" },
@@ -54,6 +54,8 @@ public sealed class IntegerToEnglishWordsIterative : IIntegerToEnglishWords
         { 0, "Zero" }
     };
 
+    private static readonly int[] DescendingWordKeys = [.. WordsDictionary.Keys.OrderDescending()];
+
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(log 10 num)
@@ -63,69 +65,85 @@ public sealed class IntegerToEnglishWordsIterative : IIntegerToEnglishWords
     {
         if (num == 0)
         {
-            return _wordsDictionary[0];
+            return WordsDictionary[0];
         }
 
         var resultStringBuilder = new StringBuilder();
 
         while (num > 0)
         {
-            foreach (var word in _wordsDictionary.Where(word => num - word.Key >= 0))
+            var wordKey = GetLargestWordKey(num);
+
+            if (wordKey >= 100)
             {
-                if (word.Key >= 100)
-                {
-                    var count = num / word.Key;
+                var count = num / wordKey;
 
-                    num -= count * word.Key;
+                num -= count * wordKey;
 
-                    if (count >= 100)
-                    {
-                        var hundredsCount = count / 100;
-
-                        count -= hundredsCount * 100;
-
-                        resultStringBuilder.Append(_wordsDictionary[hundredsCount]);
-                        resultStringBuilder.Append(Space);
-                        resultStringBuilder.Append(_wordsDictionary[100]);
-                        resultStringBuilder.Append(Space);
-                    }
-
-                    if (count >= 20)
-                    {
-                        var tensCount = count / 10;
-
-                        count -= tensCount * 10;
-
-                        resultStringBuilder.Append(_wordsDictionary[tensCount * 10]);
-                        resultStringBuilder.Append(Space);
-                    }
-
-                    if (count >= 10)
-                    {
-                        resultStringBuilder.Append(_wordsDictionary[count]);
-                        resultStringBuilder.Append(Space);
-
-                        count = 0;
-                    }
-
-                    if (count >= 1)
-                    {
-                        resultStringBuilder.Append(_wordsDictionary[count]);
-                        resultStringBuilder.Append(Space);
-                    }
-                }
-                else
-                {
-                    num -= word.Key;
-                }
-
-                resultStringBuilder.Append(word.Value);
-                resultStringBuilder.Append(Space);
-
-                break;
+                AppendBelowThousand(resultStringBuilder, count);
             }
+            else
+            {
+                num -= wordKey;
+            }
+
+            resultStringBuilder.Append(WordsDictionary[wordKey]);
+            resultStringBuilder.Append(Space);
         }
 
         return resultStringBuilder.ToString().TrimEnd();
+    }
+
+    private static int GetLargestWordKey(int num)
+    {
+        var i = 0;
+
+        while (DescendingWordKeys[i] > num)
+        {
+            i++;
+        }
+
+        return DescendingWordKeys[i];
+    }
+
+    private static void AppendBelowThousand(StringBuilder resultStringBuilder, int count)
+    {
+        if (count >= 100)
+        {
+            var hundredsCount = count / 100;
+
+            count -= hundredsCount * 100;
+
+            resultStringBuilder.Append(WordsDictionary[hundredsCount]);
+            resultStringBuilder.Append(Space);
+            resultStringBuilder.Append(WordsDictionary[100]);
+            resultStringBuilder.Append(Space);
+        }
+
+        if (count >= 20)
+        {
+            var tensCount = count / 10;
+
+            count -= tensCount * 10;
+
+            resultStringBuilder.Append(WordsDictionary[tensCount * 10]);
+            resultStringBuilder.Append(Space);
+        }
+
+        if (count >= 10)
+        {
+            resultStringBuilder.Append(WordsDictionary[count]);
+            resultStringBuilder.Append(Space);
+
+            count = 0;
+        }
+
+        if (count == 0)
+        {
+            return;
+        }
+
+        resultStringBuilder.Append(WordsDictionary[count]);
+        resultStringBuilder.Append(Space);
     }
 }

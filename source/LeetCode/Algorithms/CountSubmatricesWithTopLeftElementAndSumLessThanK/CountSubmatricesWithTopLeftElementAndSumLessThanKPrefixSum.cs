@@ -30,11 +30,7 @@ public sealed class CountSubmatricesWithTopLeftElementAndSumLessThanKPrefixSum :
         {
             for (var j = 0; j < m; j++)
             {
-                var top = i > 0 ? grid[i - 1][j] : 0;
-                var left = j > 0 ? grid[i][j - 1] : 0;
-                var topLeft = i > 0 && j > 0 ? grid[i - 1][j - 1] : 0;
-
-                grid[i][j] += top + left - topLeft;
+                grid[i][j] += GetPrefixSumOffset(grid, i, j);
 
                 if (grid[i][j] <= k)
                 {
@@ -44,5 +40,14 @@ public sealed class CountSubmatricesWithTopLeftElementAndSumLessThanKPrefixSum :
         }
 
         return result;
+    }
+
+    private static int GetPrefixSumOffset(int[][] grid, int i, int j)
+    {
+        var top = i > 0 ? grid[i - 1][j] : 0;
+        var left = j > 0 ? grid[i][j - 1] : 0;
+        var topLeft = i > 0 && j > 0 ? grid[i - 1][j - 1] : 0;
+
+        return top + left - topLeft;
     }
 }

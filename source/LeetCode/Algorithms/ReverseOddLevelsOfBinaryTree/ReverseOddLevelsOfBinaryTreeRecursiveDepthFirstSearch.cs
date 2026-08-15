@@ -33,21 +33,21 @@ public sealed class ReverseOddLevelsOfBinaryTreeRecursiveDepthFirstSearch : IRev
         return root;
     }
 
-    private static void Reverse(TreeNode? left, TreeNode? right, int level)
+    private static void Reverse(TreeNode? leftNode, TreeNode? rightNode, int level)
     {
-        if (left == null || right == null)
+        if (leftNode == null || rightNode == null)
         {
             return;
         }
 
         if (level % 2 == 1)
         {
-            (left.val, right.val) = (right.val, left.val);
+            (leftNode.val, rightNode.val) = (rightNode.val, leftNode.val);
         }
 
         level++;
 
-        Reverse(left.left, right.right, level);
-        Reverse(left.right, right.left, level);
+        Reverse(leftNode.left, rightNode.right, level);
+        Reverse(leftNode.right, rightNode.left, level);
     }
 }

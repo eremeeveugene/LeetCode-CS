@@ -35,6 +35,6 @@ public sealed class ThirdMaximumNumberDistinctOrder : IThirdMaximumNumber
 
         var distinctLength = distinct.Length;
 
-        return distinctLength < 3 ? distinct.Last() : distinct[distinctLength - 3];
+        return distinctLength < 3 ? distinct[^1] : distinct[distinctLength - 3];
     }
 }

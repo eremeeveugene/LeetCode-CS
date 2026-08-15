@@ -24,11 +24,13 @@ public sealed class NumberOfOneBitsLookup : INumberOfOneBits
         {
             var x = i;
 
-            int count;
+            var count = 0;
 
-            for (count = 0; x > 0; count++)
+            while (x > 0)
             {
                 x &= x - 1;
+
+                count++;
             }
 
             WordBits[i] = count;

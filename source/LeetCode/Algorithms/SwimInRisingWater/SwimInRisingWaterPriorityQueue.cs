@@ -52,29 +52,38 @@ public sealed class SwimInRisingWaterPriorityQueue : ISwimInRisingWater
                 break;
             }
 
-            foreach (var direction in Directions)
-            {
-                var nextX = x + direction.X;
-                var nextY = y + direction.Y;
-
-                if (nextX < 0 || nextY < 0 || nextX >= n || nextY >= n)
-                {
-                    continue;
-                }
-
-                var nextTime = Math.Max(minTimes[x, y], grid[nextX][nextY]);
-
-                if (nextTime >= minTimes[nextX, nextY])
-                {
-                    continue;
-                }
-
-                minTimes[nextX, nextY] = nextTime;
-
-                minTimePriorityQueue.Enqueue((nextX, nextY), nextTime);
-            }
+            EnqueueNeighbours(grid, minTimes, minTimePriorityQueue, x, y);
         }
 
         return minTimes[n - 1, n - 1];
+    }
+
+    private static void EnqueueNeighbours(int[][] grid, int[,] minTimes, PriorityQueue<(int X, int Y), int> minTimePriorityQueue, int x, int y)
+    {
+        var n = grid.Length;
+
+        for (var i = 0; i < Directions.Length; i++)
+        {
+            var direction = Directions[i];
+
+            var nextX = x + direction.X;
+            var nextY = y + direction.Y;
+
+            if (nextX < 0 || nextY < 0 || nextX >= n || nextY >= n)
+            {
+                continue;
+            }
+
+            var nextTime = Math.Max(minTimes[x, y], grid[nextX][nextY]);
+
+            if (nextTime >= minTimes[nextX, nextY])
+            {
+                continue;
+            }
+
+            minTimes[nextX, nextY] = nextTime;
+
+            minTimePriorityQueue.Enqueue((nextX, nextY), nextTime);
+        }
     }
 }

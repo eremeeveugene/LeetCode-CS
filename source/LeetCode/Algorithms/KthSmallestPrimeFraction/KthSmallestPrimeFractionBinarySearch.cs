@@ -28,46 +28,10 @@ public sealed class KthSmallestPrimeFractionBinarySearch : IKthSmallestPrimeFrac
         while (left < right)
         {
             var mid = (left + right) / 2;
-            var total = 0;
-            var p = 0;
-            var q = 1;
-            var j = 1;
 
-            var heap = new SortedSet<(double value, int i, int j)>(
-                Comparer<(double value, int i, int j)>.Create((a, b) =>
-                {
-                    var comparerResult = a.value.CompareTo(b.value);
+            var heap = CreateHeap();
 
-                    return comparerResult == 0 ? a.i.CompareTo(b.i) : comparerResult;
-                }));
-
-            for (var i = 0; i < arr.Length - 1; i++)
-            {
-                while (j < arr.Length && arr[i] > mid * arr[j])
-                {
-                    j++;
-                }
-
-                total += arr.Length - j;
-
-                if (j == arr.Length)
-                {
-                    break;
-                }
-
-                if (arr[i] * q > arr[j] * p)
-                {
-                    p = arr[i];
-                    q = arr[j];
-                }
-
-                heap.Add((arr[i] / (double)arr[j], i, j));
-
-                if (heap.Count > k)
-                {
-                    heap.Remove(heap.Max);
-                }
-            }
+            var (total, p, q) = CountFractionsBelow(arr, k, mid, heap);
 
             if (total == k)
             {
@@ -80,21 +44,70 @@ public sealed class KthSmallestPrimeFractionBinarySearch : IKthSmallestPrimeFrac
             if (total < k)
             {
                 left = mid;
+
+                continue;
             }
-            else
+
+            right = mid;
+
+            if (heap.Count != k)
             {
-                right = mid;
-
-                if (heap.Count != k)
-                {
-                    continue;
-                }
-
-                result[0] = arr[heap.Max.i];
-                result[1] = arr[heap.Max.j];
+                continue;
             }
+
+            result[0] = arr[heap.Max.i];
+            result[1] = arr[heap.Max.j];
         }
 
         return result;
+    }
+
+    private static SortedSet<(double value, int i, int j)> CreateHeap()
+    {
+        return new SortedSet<(double value, int i, int j)>(
+            Comparer<(double value, int i, int j)>.Create((a, b) =>
+            {
+                var comparerResult = a.value.CompareTo(b.value);
+
+                return comparerResult == 0 ? a.i.CompareTo(b.i) : comparerResult;
+            }));
+    }
+
+    private static (int Total, int P, int Q) CountFractionsBelow(int[] arr, int k, double mid, SortedSet<(double value, int i, int j)> heap)
+    {
+        var total = 0;
+        var p = 0;
+        var q = 1;
+        var j = 1;
+
+        for (var i = 0; i < arr.Length - 1; i++)
+        {
+            while (j < arr.Length && arr[i] > mid * arr[j])
+            {
+                j++;
+            }
+
+            total += arr.Length - j;
+
+            if (j == arr.Length)
+            {
+                break;
+            }
+
+            if (arr[i] * q > arr[j] * p)
+            {
+                p = arr[i];
+                q = arr[j];
+            }
+
+            heap.Add((arr[i] / (double)arr[j], i, j));
+
+            if (heap.Count > k)
+            {
+                heap.Remove(heap.Max);
+            }
+        }
+
+        return (total, p, q);
     }
 }

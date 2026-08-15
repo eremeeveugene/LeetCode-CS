@@ -40,78 +40,75 @@ public sealed class SpiralMatrix4Simulation : ISpiralMatrix4
 
         while (count < m * n)
         {
-            if (listNode == null)
-            {
-                matrix[x][y] = -1;
-            }
-            else
-            {
-                matrix[x][y] = listNode.val;
-            }
+            matrix[x][y] = listNode?.val ?? -1;
 
-            switch (direction)
-            {
-                case 0:
-
-                    if (y + 1 < n - round)
-                    {
-                        y++;
-                    }
-                    else
-                    {
-                        direction = 1;
-
-                        x++;
-                    }
-
-                    break;
-                case 1:
-                    if (x + 1 < m - round)
-                    {
-                        x++;
-                    }
-                    else
-                    {
-                        direction = 2;
-
-                        y--;
-                    }
-
-                    break;
-                case 2:
-                    if (y - 1 < round)
-                    {
-                        direction = 3;
-
-                        round++;
-
-                        x--;
-                    }
-                    else
-                    {
-                        y--;
-                    }
-
-                    break;
-                case 3:
-                    if (x - 1 < round)
-                    {
-                        direction = 0;
-
-                        y++;
-                    }
-                    else
-                    {
-                        x--;
-                    }
-
-                    break;
-            }
+            Advance(m, n, ref x, ref y, ref round, ref direction);
 
             listNode = listNode?.next;
             count++;
         }
 
         return matrix;
+    }
+
+    private static void Advance(int m, int n, ref int x, ref int y, ref int round, ref int direction)
+    {
+        switch (direction)
+        {
+            case 0:
+                if (y + 1 < n - round)
+                {
+                    y++;
+                }
+                else
+                {
+                    direction = 1;
+
+                    x++;
+                }
+
+                break;
+            case 1:
+                if (x + 1 < m - round)
+                {
+                    x++;
+                }
+                else
+                {
+                    direction = 2;
+
+                    y--;
+                }
+
+                break;
+            case 2:
+                if (y - 1 < round)
+                {
+                    direction = 3;
+
+                    round++;
+
+                    x--;
+                }
+                else
+                {
+                    y--;
+                }
+
+                break;
+            case 3:
+                if (x - 1 < round)
+                {
+                    direction = 0;
+
+                    y++;
+                }
+                else
+                {
+                    x--;
+                }
+
+                break;
+        }
     }
 }

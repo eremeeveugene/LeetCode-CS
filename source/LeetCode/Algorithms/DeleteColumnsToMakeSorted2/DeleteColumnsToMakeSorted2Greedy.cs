@@ -30,41 +30,47 @@ public sealed class DeleteColumnsToMakeSorted2Greedy : IDeleteColumnsToMakeSorte
 
         for (var i = 0; i < m; i++)
         {
-            var needDelete = false;
-
-            for (var j = 0; j < n - 1; j++)
-            {
-                if (skipped[j] || strs[j][i] <= strs[j + 1][i])
-                {
-                    continue;
-                }
-
-                needDelete = true;
-
-                break;
-            }
-
-            if (needDelete)
+            if (NeedsDeletion(strs, skipped, i))
             {
                 result++;
 
                 continue;
             }
 
-            for (var j = 0; j < n - 1; j++)
-            {
-                if (skipped[j])
-                {
-                    continue;
-                }
-
-                if (strs[j][i] < strs[j + 1][i])
-                {
-                    skipped[j] = true;
-                }
-            }
+            MarkStrictlyIncreasing(strs, skipped, i);
         }
 
         return result;
+    }
+
+    private static bool NeedsDeletion(string[] strs, ReadOnlySpan<bool> skipped, int column)
+    {
+        for (var j = 0; j < skipped.Length; j++)
+        {
+            if (skipped[j] || strs[j][column] <= strs[j + 1][column])
+            {
+                continue;
+            }
+
+            return true;
+        }
+
+        return false;
+    }
+
+    private static void MarkStrictlyIncreasing(string[] strs, Span<bool> skipped, int column)
+    {
+        for (var j = 0; j < skipped.Length; j++)
+        {
+            if (skipped[j])
+            {
+                continue;
+            }
+
+            if (strs[j][column] < strs[j + 1][column])
+            {
+                skipped[j] = true;
+            }
+        }
     }
 }

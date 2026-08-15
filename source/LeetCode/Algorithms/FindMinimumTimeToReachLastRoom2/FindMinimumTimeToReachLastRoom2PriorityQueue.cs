@@ -46,31 +46,45 @@ public sealed class FindMinimumTimeToReachLastRoom2PriorityQueue : IFindMinimumT
 
         while (item.X != n - 1 || item.Y != m - 1)
         {
-            foreach (var direction in Directions)
-            {
-                var targetX = item.X + direction.X;
-                var targetY = item.Y + direction.Y;
-
-                if (targetX < 0 || targetX >= n || targetY < 0 || targetY >= m)
-                {
-                    continue;
-                }
-
-                var targetTime = Math.Max(item.Time, moveTime[targetX][targetY]) + (item.Step % 2 == 0 ? 1 : 2);
-
-                if (targetTime >= visited[targetX, targetY])
-                {
-                    continue;
-                }
-
-                visited[targetX, targetY] = targetTime;
-
-                priorityQueue.Enqueue((targetX, targetY, item.Step + 1, targetTime), targetTime);
-            }
+            EnqueueNeighbours(moveTime, visited, priorityQueue, item);
 
             item = priorityQueue.Dequeue();
         }
 
         return item.Time;
+    }
+
+    private static void EnqueueNeighbours(
+        int[][] moveTime,
+        int[,] visited,
+        PriorityQueue<(int X, int Y, int Step, int Time), int> priorityQueue,
+        (int X, int Y, int Step, int Time) item)
+    {
+        var n = moveTime.Length;
+        var m = moveTime[0].Length;
+
+        for (var i = 0; i < Directions.Length; i++)
+        {
+            var direction = Directions[i];
+
+            var targetX = item.X + direction.X;
+            var targetY = item.Y + direction.Y;
+
+            if (targetX < 0 || targetX >= n || targetY < 0 || targetY >= m)
+            {
+                continue;
+            }
+
+            var targetTime = Math.Max(item.Time, moveTime[targetX][targetY]) + (item.Step % 2 == 0 ? 1 : 2);
+
+            if (targetTime >= visited[targetX, targetY])
+            {
+                continue;
+            }
+
+            visited[targetX, targetY] = targetTime;
+
+            priorityQueue.Enqueue((targetX, targetY, item.Step + 1, targetTime), targetTime);
+        }
     }
 }

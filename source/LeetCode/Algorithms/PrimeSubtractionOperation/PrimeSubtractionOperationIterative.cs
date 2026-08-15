@@ -202,8 +202,15 @@ public sealed class PrimeSubtractionOperationIterative : IPrimeSubtractionOperat
 
             var found = false;
 
-            foreach (var prime in Primes.Where(p => p < nums[i - 1] && nums[i - 1] - p < nums[i]))
+            for (var j = 0; j < Primes.Count; j++)
             {
+                var prime = Primes[j];
+
+                if (prime >= nums[i - 1] || nums[i - 1] - prime >= nums[i])
+                {
+                    continue;
+                }
+
                 nums[i - 1] -= prime;
 
                 found = true;

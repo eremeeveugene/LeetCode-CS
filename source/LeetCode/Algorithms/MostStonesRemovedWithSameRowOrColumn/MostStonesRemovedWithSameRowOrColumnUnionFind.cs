@@ -31,7 +31,7 @@ public sealed class MostStonesRemovedWithSameRowOrColumnUnionFind : IMostStonesR
         return stones.Length - unionFind.ComponentCount;
     }
 
-    private class UnionFind
+    private sealed class UnionFind
     {
         private readonly int[] _parent;
         private readonly HashSet<int> _uniqueNodes = [];

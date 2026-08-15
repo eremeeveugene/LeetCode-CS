@@ -47,7 +47,7 @@ public sealed class ReplaceWordsTrieNode : IReplaceWords
         return string.Join(' ', words);
     }
 
-    private class Trie
+    private sealed class Trie
     {
         public Trie(IEnumerable<string> words)
         {
@@ -84,7 +84,7 @@ public sealed class ReplaceWordsTrieNode : IReplaceWords
         }
     }
 
-    private class TrieNode
+    private sealed class TrieNode
     {
         public Dictionary<char, TrieNode> Children { get; } = [];
 

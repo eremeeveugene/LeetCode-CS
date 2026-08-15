@@ -28,8 +28,8 @@ public sealed class MaximumDifferenceBetweenEvenAndOddFrequency1FrequencyArray :
             frequencyArray['z' - c]++;
         }
 
-        var oddFrequency = int.MinValue;
-        var evenFrequency = int.MaxValue;
+        var oddFrequency = 0;
+        var evenFrequency = s.Length;
 
         foreach (var frequency in frequencyArray)
         {

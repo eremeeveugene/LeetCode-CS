@@ -33,8 +33,10 @@ public sealed class FindingPairsWithCertainSumDictionary : IFindingPairsWithCert
         _nums2 = nums2;
         _nums2FrequencyDictionary = new Dictionary<int, int>();
 
-        foreach (var num2 in nums2)
+        for (var i = 0; i < nums2.Length; i++)
         {
+            var num2 = nums2[i];
+
             if (!_nums2FrequencyDictionary.TryAdd(num2, 1))
             {
                 _nums2FrequencyDictionary[num2]++;
@@ -73,8 +75,10 @@ public sealed class FindingPairsWithCertainSumDictionary : IFindingPairsWithCert
     {
         var count = 0;
 
-        foreach (var num1 in _nums1)
+        for (var i = 0; i < _nums1.Length; i++)
         {
+            var num1 = _nums1[i];
+
             if (_nums2FrequencyDictionary.TryGetValue(tot - num1, out var value))
             {
                 count += value;

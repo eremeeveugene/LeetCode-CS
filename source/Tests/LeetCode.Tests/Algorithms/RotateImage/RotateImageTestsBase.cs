@@ -26,7 +26,7 @@ public abstract class RotateImageTestsBase<T> where T : IRotateImage, new()
         solution.Rotate(matrix);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, matrix);
+        Assert.AreEquivalent(expectedResult, matrix);
     }
 
     public static IEnumerable<object[]> GetTestData()

@@ -21,27 +21,22 @@ public sealed class MaximumNumberOfOperationsToMoveOnesToTheEndGreedyCounting : 
     /// </remarks>
     public int MaxOperations(string s)
     {
-        var count = 0;
-
+        var n = s.Length;
+        var maxOperations = 0;
         var ones = 0;
 
-        for (var i = 0; i < s.Length; i++)
+        for (var i = 0; i < n; i++)
         {
-            if (s[i] == '0')
-            {
-                while (i + 1 < s.Length && s[i + 1] == '0')
-                {
-                    i++;
-                }
-
-                count += ones;
-            }
-            else
+            if (s[i] == '1')
             {
                 ones++;
             }
+            else if (i == 0 || s[i - 1] == '1')
+            {
+                maxOperations += ones;
+            }
         }
 
-        return count;
+        return maxOperations;
     }
 }

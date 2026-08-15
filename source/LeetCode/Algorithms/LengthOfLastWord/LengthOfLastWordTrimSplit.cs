@@ -21,6 +21,8 @@ public sealed class LengthOfLastWordTrimSplit : ILengthOfLastWord
     /// </remarks>
     public int LengthOfLastWord(string s)
     {
-        return s.TrimEnd().Split(' ').Last().Length;
+        var words = s.TrimEnd().Split(' ');
+
+        return words[^1].Length;
     }
 }

@@ -21,10 +21,14 @@ public sealed class DivideArrayIntoEqualPairsHashSet : IDivideArrayIntoEqualPair
     /// </remarks>
     public bool DivideArray(int[] nums)
     {
+        var n = nums.Length;
+
         var frequencyHashSet = new HashSet<int>();
 
-        foreach (var num in nums)
+        for (var i = 0; i < n; i++)
         {
+            var num = nums[i];
+
             if (!frequencyHashSet.Add(num))
             {
                 frequencyHashSet.Remove(num);

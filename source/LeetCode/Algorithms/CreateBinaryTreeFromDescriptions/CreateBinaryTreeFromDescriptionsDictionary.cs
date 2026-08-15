@@ -59,11 +59,13 @@ public sealed class CreateBinaryTreeFromDescriptionsDictionary : ICreateBinaryTr
             children.Add(childValue);
         }
 
-        foreach (var key in nodeMap.Keys)
+        for (var i = 0; i < descriptions.Length; i++)
         {
-            if (!children.Contains(key))
+            var parentValue = descriptions[i][0];
+
+            if (!children.Contains(parentValue))
             {
-                return nodeMap[key];
+                return nodeMap[parentValue];
             }
         }
 

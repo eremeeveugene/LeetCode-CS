@@ -23,8 +23,10 @@ public sealed class TaskSchedulerDictionary : ITaskScheduler
     {
         var taskCounts = new Dictionary<char, int>();
 
-        foreach (var task in tasks)
+        for (var i = 0; i < tasks.Length; i++)
         {
+            var task = tasks[i];
+
             if (!taskCounts.TryAdd(task, 1))
             {
                 taskCounts[task]++;

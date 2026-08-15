@@ -25,8 +25,10 @@ public sealed class KeyboardRowLookup : IKeyboardRow
     {
         var result = new List<string>(words.Length);
 
-        foreach (var word in words)
+        for (var i = 0; i < words.Length; i++)
         {
+            var word = words[i];
+
             if (IsSingleRow(word))
             {
                 result.Add(word);

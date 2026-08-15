@@ -54,8 +54,10 @@ public sealed class ReverseSubstringsBetweenEachPairOfParenthesesStack : IRevers
 
         var stringBuilder = new StringBuilder();
 
-        foreach (var c in sArray)
+        for (var i = 0; i < sArray.Length; i++)
         {
+            var c = sArray[i];
+
             if (c != '(' && c != ')')
             {
                 stringBuilder.Append(c);

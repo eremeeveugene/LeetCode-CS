@@ -67,7 +67,7 @@ public sealed class ImplementTrieArray : IImplementTrie
         return currentNode;
     }
 
-    private class Node
+    private sealed class Node
     {
         public Node?[] Nodes { get; } = new Node['z' - 'a' + 1];
 

@@ -43,10 +43,7 @@ public sealed class ConstructKPalindromeStringsFrequencyDictionary : IConstructK
 
         foreach (var count in charToCountDictionary.Values)
         {
-            if (count % 2 == 1)
-            {
-                oddCount++;
-            }
+            oddCount += count % 2;
         }
 
         return oddCount <= k;

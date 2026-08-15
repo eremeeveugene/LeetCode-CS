@@ -26,7 +26,7 @@ public abstract class LargestLocalValuesInMatrixTestsBase<T> where T : ILargestL
         var actualResult = solution.LargestLocal(grid);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

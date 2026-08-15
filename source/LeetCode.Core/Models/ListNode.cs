@@ -51,7 +51,9 @@ public sealed class ListNode
 
         ListNode? lastNode = head, cycleNode = null;
 
-        for (var index = 0; lastNode.next != null; index++)
+        var index = 0;
+
+        while (lastNode.next != null)
         {
             if (index == cyclePosition)
             {
@@ -59,6 +61,8 @@ public sealed class ListNode
             }
 
             lastNode = lastNode.next;
+
+            index++;
         }
 
         if (cyclePosition == array.Length - 1)

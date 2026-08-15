@@ -19,14 +19,14 @@ public sealed class FloodFillIterative : IFloodFill
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(n)
     /// </remarks>
-    public int[][] FloodFill(int[][] image, int sr, int sc, int newColor)
+    public int[][] FloodFill(int[][] image, int sr, int sc, int color)
     {
-        if (image[sr][sc] == newColor)
+        if (image[sr][sc] == color)
         {
             return image;
         }
 
-        ReplacePixels(image, sr, sc, image[sr][sc], newColor);
+        ReplacePixels(image, sr, sc, image[sr][sc], color);
 
         return image;
     }

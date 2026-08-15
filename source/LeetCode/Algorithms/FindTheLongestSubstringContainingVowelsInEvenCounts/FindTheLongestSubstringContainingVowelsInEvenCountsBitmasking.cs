@@ -14,6 +14,9 @@ namespace LeetCode.Algorithms.FindTheLongestSubstringContainingVowelsInEvenCount
 /// <inheritdoc />
 public sealed class FindTheLongestSubstringContainingVowelsInEvenCountsBitmasking : IFindTheLongestSubstringContainingVowelsInEvenCounts
 {
+    private const char FirstLetter = 'a';
+    private const int XorStateCount = 32;
+
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n)
@@ -21,17 +24,17 @@ public sealed class FindTheLongestSubstringContainingVowelsInEvenCountsBitmaskin
     /// </remarks>
     public int FindTheLongestSubstring(string s)
     {
-        var vowelXorValues = new int['z' - 'a' + 1];
+        var vowelXorValues = new int['z' - FirstLetter + 1];
 
-        vowelXorValues['a' - 'a'] = 1;
-        vowelXorValues['e' - 'a'] = 2;
-        vowelXorValues['i' - 'a'] = 4;
-        vowelXorValues['o' - 'a'] = 8;
-        vowelXorValues['u' - 'a'] = 16;
+        vowelXorValues['a' - FirstLetter] = 1;
+        vowelXorValues['e' - FirstLetter] = 2;
+        vowelXorValues['i' - FirstLetter] = 4;
+        vowelXorValues['o' - FirstLetter] = 8;
+        vowelXorValues['u' - FirstLetter] = 16;
 
-        var xorStateFirstIndex = new int[32];
+        var xorStateFirstIndex = new int[XorStateCount];
 
-        for (var i = 0; i < 32; i++)
+        for (var i = 0; i < XorStateCount; i++)
         {
             xorStateFirstIndex[i] = -1;
         }
@@ -41,7 +44,7 @@ public sealed class FindTheLongestSubstringContainingVowelsInEvenCountsBitmaskin
 
         for (var i = 0; i < s.Length; i++)
         {
-            currentXorState ^= vowelXorValues[s[i] - 'a'];
+            currentXorState ^= vowelXorValues[s[i] - FirstLetter];
 
             if (xorStateFirstIndex[currentXorState] == -1 && currentXorState != 0)
             {

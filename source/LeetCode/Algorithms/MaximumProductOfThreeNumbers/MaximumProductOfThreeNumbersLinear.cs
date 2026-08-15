@@ -14,6 +14,9 @@ namespace LeetCode.Algorithms.MaximumProductOfThreeNumbers;
 /// <inheritdoc />
 public sealed class MaximumProductOfThreeNumbersLinear : IMaximumProductOfThreeNumbers
 {
+    private const int BelowMinNumValue = -1001;
+    private const int AboveMaxNumValue = 1001;
+
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n)
@@ -21,12 +24,12 @@ public sealed class MaximumProductOfThreeNumbersLinear : IMaximumProductOfThreeN
     /// </remarks>
     public int MaximumProduct(int[] nums)
     {
-        var firstMaximum = int.MinValue;
-        var secondMaximum = int.MinValue;
-        var thirdMaximum = int.MinValue;
+        var firstMaximum = BelowMinNumValue;
+        var secondMaximum = BelowMinNumValue;
+        var thirdMaximum = BelowMinNumValue;
 
-        var firstMinimum = int.MaxValue;
-        var secondMinimum = int.MaxValue;
+        var firstMinimum = AboveMaxNumValue;
+        var secondMinimum = AboveMaxNumValue;
 
         for (var i = 0; i < nums.Length; i++)
         {

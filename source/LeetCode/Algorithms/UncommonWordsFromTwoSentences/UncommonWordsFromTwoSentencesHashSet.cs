@@ -24,16 +24,24 @@ public sealed class UncommonWordsFromTwoSentencesHashSet : IUncommonWordsFromTwo
         var once = new HashSet<string>();
         var moreThanOnce = new HashSet<string>();
 
-        foreach (var word in s1.Split(' '))
+        var s1Words = s1.Split(' ');
+
+        for (var i = 0; i < s1Words.Length; i++)
         {
+            var word = s1Words[i];
+
             if (!once.Add(word))
             {
                 moreThanOnce.Add(word);
             }
         }
 
-        foreach (var word in s2.Split(' '))
+        var s2Words = s2.Split(' ');
+
+        for (var i = 0; i < s2Words.Length; i++)
         {
+            var word = s2Words[i];
+
             if (!once.Add(word))
             {
                 moreThanOnce.Add(word);

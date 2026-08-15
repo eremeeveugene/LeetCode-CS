@@ -34,49 +34,79 @@ public sealed class SpiralMatrixSimulation : ISpiralMatrix
 
         while (top <= bottom && left <= right)
         {
-            for (var j = left; j <= right; j++)
-            {
-                spiralMatrix[spiralMatrixIndex] = matrix[top][j];
-
-                spiralMatrixIndex++;
-            }
+            spiralMatrixIndex = AppendTopRow(matrix, spiralMatrix, spiralMatrixIndex, top, left, right);
 
             top++;
 
-            for (var i = top; i <= bottom; i++)
-            {
-                spiralMatrix[spiralMatrixIndex] = matrix[i][right];
-
-                spiralMatrixIndex++;
-            }
+            spiralMatrixIndex = AppendRightColumn(matrix, spiralMatrix, spiralMatrixIndex, right, top, bottom);
 
             right--;
 
             if (top <= bottom)
             {
-                for (var j = right; j >= left; j--)
-                {
-                    spiralMatrix[spiralMatrixIndex] = matrix[bottom][j];
-
-                    spiralMatrixIndex++;
-                }
+                spiralMatrixIndex = AppendBottomRow(matrix, spiralMatrix, spiralMatrixIndex, bottom, right, left);
 
                 bottom--;
             }
 
-            if (left <= right)
+            if (left > right)
             {
-                for (var i = bottom; i >= top; i--)
-                {
-                    spiralMatrix[spiralMatrixIndex] = matrix[i][left];
-
-                    spiralMatrixIndex++;
-                }
-
-                left++;
+                continue;
             }
+
+            spiralMatrixIndex = AppendLeftColumn(matrix, spiralMatrix, spiralMatrixIndex, left, bottom, top);
+
+            left++;
         }
 
         return spiralMatrix;
+    }
+
+    private static int AppendTopRow(int[][] matrix, int[] spiralMatrix, int spiralMatrixIndex, int row, int left, int right)
+    {
+        for (var j = left; j <= right; j++)
+        {
+            spiralMatrix[spiralMatrixIndex] = matrix[row][j];
+
+            spiralMatrixIndex++;
+        }
+
+        return spiralMatrixIndex;
+    }
+
+    private static int AppendRightColumn(int[][] matrix, int[] spiralMatrix, int spiralMatrixIndex, int column, int top, int bottom)
+    {
+        for (var i = top; i <= bottom; i++)
+        {
+            spiralMatrix[spiralMatrixIndex] = matrix[i][column];
+
+            spiralMatrixIndex++;
+        }
+
+        return spiralMatrixIndex;
+    }
+
+    private static int AppendBottomRow(int[][] matrix, int[] spiralMatrix, int spiralMatrixIndex, int row, int right, int left)
+    {
+        for (var j = right; j >= left; j--)
+        {
+            spiralMatrix[spiralMatrixIndex] = matrix[row][j];
+
+            spiralMatrixIndex++;
+        }
+
+        return spiralMatrixIndex;
+    }
+
+    private static int AppendLeftColumn(int[][] matrix, int[] spiralMatrix, int spiralMatrixIndex, int column, int bottom, int top)
+    {
+        for (var i = bottom; i >= top; i--)
+        {
+            spiralMatrix[spiralMatrixIndex] = matrix[i][column];
+
+            spiralMatrixIndex++;
+        }
+
+        return spiralMatrixIndex;
     }
 }

@@ -24,9 +24,11 @@ public sealed class MaximizeExpressionOfThreeElementsFrequencyArray : IMaximizeE
     /// </remarks>
     public int MaximizeExpressionOfThree(int[] nums)
     {
+        var n = nums.Length;
+
         Span<int> numsFrequencies = stackalloc int[Size];
 
-        for (var i = 0; i < nums.Length; i++)
+        for (var i = 0; i < n; i++)
         {
             var num = nums[i];
 
@@ -37,7 +39,7 @@ public sealed class MaximizeExpressionOfThreeElementsFrequencyArray : IMaximizeE
 
         var smallest = 0;
 
-        for (var i = 0; i < numsFrequencies.Length; i++)
+        for (var i = 0; i < Size; i++)
         {
             if (numsFrequencies[i] <= 0)
             {
@@ -54,8 +56,13 @@ public sealed class MaximizeExpressionOfThreeElementsFrequencyArray : IMaximizeE
         var largest = 0;
         var result = 0;
 
-        for (var i = numsFrequencies.Length - 1; !found; i--)
+        for (var i = Size - 1; i >= 0; i--)
         {
+            if (found)
+            {
+                break;
+            }
+
             while (numsFrequencies[i] > 0)
             {
                 var value = GetValue(i);

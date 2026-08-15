@@ -23,17 +23,25 @@ public sealed class ReverseLettersThenSpecialCharactersInStringTwoPointers : IRe
     {
         var charArray = s.ToCharArray();
 
+        ReverseMatching(charArray, true);
+        ReverseMatching(charArray, false);
+
+        return new string(charArray);
+    }
+
+    private static void ReverseMatching(char[] charArray, bool reverseLetters)
+    {
         var left = 0;
         var right = charArray.Length - 1;
 
         while (left < right)
         {
-            while (left < right && !char.IsLetter(charArray[left]))
+            while (left < right && char.IsLetter(charArray[left]) != reverseLetters)
             {
                 left++;
             }
 
-            while (left < right && !char.IsLetter(charArray[right]))
+            while (left < right && char.IsLetter(charArray[right]) != reverseLetters)
             {
                 right--;
             }
@@ -48,33 +56,5 @@ public sealed class ReverseLettersThenSpecialCharactersInStringTwoPointers : IRe
             left++;
             right--;
         }
-
-        left = 0;
-        right = charArray.Length - 1;
-
-        while (left < right)
-        {
-            while (left < right && char.IsLetter(charArray[left]))
-            {
-                left++;
-            }
-
-            while (left < right && char.IsLetter(charArray[right]))
-            {
-                right--;
-            }
-
-            if (left >= right)
-            {
-                continue;
-            }
-
-            (charArray[left], charArray[right]) = (charArray[right], charArray[left]);
-
-            left++;
-            right--;
-        }
-
-        return new string(charArray);
     }
 }

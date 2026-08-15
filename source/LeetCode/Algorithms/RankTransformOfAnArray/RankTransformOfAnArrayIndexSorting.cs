@@ -20,13 +20,13 @@ public sealed class RankTransformOfAnArrayIndexSorting : IRankTransformOfAnArray
     ///     Space complexity - O(n)
     /// </remarks>
     /// i
-    public int[] ArrayRankTransform(int[] nums)
+    public int[] ArrayRankTransform(int[] arr)
     {
-        var n = nums.Length;
+        var n = arr.Length;
 
         if (n == 0)
         {
-            return nums;
+            return arr;
         }
 
         Span<int> indexes = stackalloc int[n];
@@ -36,7 +36,7 @@ public sealed class RankTransformOfAnArrayIndexSorting : IRankTransformOfAnArray
             indexes[i] = i;
         }
 
-        indexes.Sort((a, b) => nums[a].CompareTo(nums[b]));
+        indexes.Sort((a, b) => arr[a].CompareTo(arr[b]));
 
         var firstIndex = indexes[0];
 
@@ -44,7 +44,7 @@ public sealed class RankTransformOfAnArrayIndexSorting : IRankTransformOfAnArray
 
         result[firstIndex] = 1;
 
-        var previousNum = nums[firstIndex];
+        var previousNum = arr[firstIndex];
 
         var rank = 1;
 
@@ -52,11 +52,11 @@ public sealed class RankTransformOfAnArrayIndexSorting : IRankTransformOfAnArray
         {
             var index = indexes[i];
 
-            var num = nums[index];
+            var num = arr[index];
 
             if (num != previousNum)
             {
-                previousNum = nums[index];
+                previousNum = arr[index];
 
                 rank++;
             }

@@ -21,8 +21,10 @@ public sealed class VowelsGameInStringMath : IVowelsGameInString
     /// </remarks>
     public bool DoesAliceWin(string s)
     {
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             if (IsVowel(c))
             {
                 return true;

@@ -25,8 +25,13 @@ public sealed class MinimizeXORBitwise : IMinimizeXOR
 
         var num2SetBits = CountSetBits(num2);
 
-        for (var i = 31; i >= 0 && num2SetBits > 0; i--)
+        for (var i = 31; i >= 0; i--)
         {
+            if (num2SetBits == 0)
+            {
+                break;
+            }
+
             if ((num1 & (1 << i)) == 0)
             {
                 continue;
@@ -37,8 +42,13 @@ public sealed class MinimizeXORBitwise : IMinimizeXOR
             num2SetBits--;
         }
 
-        for (var i = 0; num2SetBits > 0; i++)
+        for (var i = 0; i < 32; i++)
         {
+            if (num2SetBits == 0)
+            {
+                break;
+            }
+
             if ((result & (1 << i)) != 0)
             {
                 continue;

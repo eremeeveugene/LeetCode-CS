@@ -29,8 +29,10 @@ public sealed class DivideArrayInSetsOfKConsecutiveNumbersSortedDictionary : IDi
 
         var numsDictionary = new SortedDictionary<int, int>();
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (!numsDictionary.TryAdd(num, 1))
             {
                 numsDictionary[num]++;
@@ -41,25 +43,33 @@ public sealed class DivideArrayInSetsOfKConsecutiveNumbersSortedDictionary : IDi
         {
             var firstNum = numsDictionary.First().Key;
 
-            for (var i = 0; i < k; i++)
+            if (!TryRemoveGroup(numsDictionary, firstNum, k))
             {
-                var currentNum = firstNum + i;
+                return false;
+            }
+        }
 
-                if (numsDictionary.TryGetValue(currentNum, out var value))
-                {
-                    if (value == 1)
-                    {
-                        numsDictionary.Remove(currentNum);
-                    }
-                    else
-                    {
-                        numsDictionary[currentNum] = value - 1;
-                    }
-                }
-                else
-                {
-                    return false;
-                }
+        return true;
+    }
+
+    private static bool TryRemoveGroup(SortedDictionary<int, int> numsDictionary, int firstNum, int k)
+    {
+        for (var i = 0; i < k; i++)
+        {
+            var currentNum = firstNum + i;
+
+            if (!numsDictionary.TryGetValue(currentNum, out var value))
+            {
+                return false;
+            }
+
+            if (value == 1)
+            {
+                numsDictionary.Remove(currentNum);
+            }
+            else
+            {
+                numsDictionary[currentNum] = value - 1;
             }
         }
 

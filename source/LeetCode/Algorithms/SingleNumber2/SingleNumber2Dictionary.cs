@@ -23,12 +23,11 @@ public sealed class SingleNumber2Dictionary : ISingleNumber2
     {
         var numsDictionary = new Dictionary<int, int>();
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
-            if (numsDictionary.TryAdd(num, 1))
-            {
-            }
-            else
+            var num = nums[i];
+
+            if (!numsDictionary.TryAdd(num, 1))
             {
                 numsDictionary[num]++;
             }

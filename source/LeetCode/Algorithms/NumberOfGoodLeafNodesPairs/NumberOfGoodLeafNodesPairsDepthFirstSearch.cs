@@ -49,16 +49,20 @@ public sealed class NumberOfGoodLeafNodesPairsDepthFirstSearch : INumberOfGoodLe
 
         var currentDistances = new List<int>();
 
-        foreach (var leftDistance in leftDistances)
+        for (var i = 0; i < leftDistances.Count; i++)
         {
+            var leftDistance = leftDistances[i];
+
             if (leftDistance + 1 <= distance)
             {
                 currentDistances.Add(leftDistance + 1);
             }
         }
 
-        foreach (var rightDistance in rightDistances)
+        for (var i = 0; i < rightDistances.Count; i++)
         {
+            var rightDistance = rightDistances[i];
+
             if (rightDistance + 1 <= distance)
             {
                 currentDistances.Add(rightDistance + 1);

@@ -50,7 +50,7 @@ public sealed class MaxDifferenceYouCanGetFromChangingAnIntegerGreedy : IMaxDiff
                 targetForMax = digit;
             }
 
-            if (targetForMin == -1 && firstDigit <= 1 && place < mostSignificantPlace && digit > 1)
+            if (targetForMin == -1 && place < mostSignificantPlace && digit > 1)
             {
                 targetForMin = digit;
 

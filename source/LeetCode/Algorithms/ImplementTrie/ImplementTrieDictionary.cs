@@ -81,7 +81,7 @@ public sealed class ImplementTrieDictionary : IImplementTrie
         return currentNode;
     }
 
-    private class Node
+    private sealed class Node
     {
         public Dictionary<char, Node> Nodes { get; } = new();
 

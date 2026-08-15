@@ -50,9 +50,9 @@ public sealed class EvaluateBooleanBinaryTreeDepthFirstSearch : IEvaluateBoolean
 
         if (root.val == OrOperation)
         {
-            return left | right;
+            return left || right;
         }
 
-        return left & right;
+        return left && right;
     }
 }

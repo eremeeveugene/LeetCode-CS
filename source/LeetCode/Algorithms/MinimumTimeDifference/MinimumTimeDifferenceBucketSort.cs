@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.MinimumTimeDifference;
 
 /// <inheritdoc />
@@ -25,7 +27,7 @@ public sealed class MinimumTimeDifferenceBucketSort : MinimumTimeDifferenceBase
 
         foreach (var timePoint in timePoints)
         {
-            var totalMinutes = (int)TimeSpan.Parse(timePoint).TotalMinutes;
+            var totalMinutes = (int)TimeSpan.Parse(timePoint, CultureInfo.InvariantCulture).TotalMinutes;
 
             if (minutes[totalMinutes])
             {

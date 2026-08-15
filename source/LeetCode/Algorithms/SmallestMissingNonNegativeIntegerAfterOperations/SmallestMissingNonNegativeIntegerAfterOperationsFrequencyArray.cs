@@ -33,10 +33,10 @@ public sealed class SmallestMissingNonNegativeIntegerAfterOperationsFrequencyArr
             remainderCounts[remainder]++;
         }
 
-        var resultCount = int.MaxValue;
+        var resultCount = remainderCounts[0];
         var resultRemainder = 0;
 
-        for (var remainder = 0; remainder < value; remainder++)
+        for (var remainder = 1; remainder < value; remainder++)
         {
             var count = remainderCounts[remainder];
 
@@ -45,7 +45,7 @@ public sealed class SmallestMissingNonNegativeIntegerAfterOperationsFrequencyArr
                 continue;
             }
 
-            resultCount = remainderCounts[remainder];
+            resultCount = count;
             resultRemainder = remainder;
         }
 

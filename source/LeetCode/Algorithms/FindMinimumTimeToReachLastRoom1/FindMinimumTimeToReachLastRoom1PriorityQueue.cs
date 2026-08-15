@@ -55,29 +55,43 @@ public sealed class FindMinimumTimeToReachLastRoom1PriorityQueue : IFindMinimumT
                 break;
             }
 
-            foreach (var direction in Directions)
-            {
-                var targetX = item.X + direction.X;
-                var targetY = item.Y + direction.Y;
-
-                if (targetX < 0 || targetX >= n || targetY < 0 || targetY >= m)
-                {
-                    continue;
-                }
-
-                var targetTime = Math.Max(item.Time, moveTime[targetX][targetY]) + 1;
-
-                if (targetTime >= visited[targetX, targetY])
-                {
-                    continue;
-                }
-
-                visited[targetX, targetY] = targetTime;
-
-                priorityQueue.Enqueue((targetX, targetY, targetTime), targetTime);
-            }
+            EnqueueNeighbours(moveTime, visited, priorityQueue, item);
         }
 
         return result;
+    }
+
+    private static void EnqueueNeighbours(
+        int[][] moveTime,
+        int[,] visited,
+        PriorityQueue<(int X, int Y, int Time), int> priorityQueue,
+        (int X, int Y, int Time) item)
+    {
+        var n = moveTime.Length;
+        var m = moveTime[0].Length;
+
+        for (var i = 0; i < Directions.Length; i++)
+        {
+            var direction = Directions[i];
+
+            var targetX = item.X + direction.X;
+            var targetY = item.Y + direction.Y;
+
+            if (targetX < 0 || targetX >= n || targetY < 0 || targetY >= m)
+            {
+                continue;
+            }
+
+            var targetTime = Math.Max(item.Time, moveTime[targetX][targetY]) + 1;
+
+            if (targetTime >= visited[targetX, targetY])
+            {
+                continue;
+            }
+
+            visited[targetX, targetY] = targetTime;
+
+            priorityQueue.Enqueue((targetX, targetY, targetTime), targetTime);
+        }
     }
 }

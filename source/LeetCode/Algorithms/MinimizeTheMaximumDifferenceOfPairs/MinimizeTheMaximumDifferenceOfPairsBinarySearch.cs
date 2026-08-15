@@ -54,18 +54,20 @@ public sealed class MinimizeTheMaximumDifferenceOfPairsBinarySearch : IMinimizeT
 
         var pairsCount = 0;
 
-        for (var i = 0; i < numsLength - 1; i++)
+        var i = 0;
+
+        while (i < numsLength - 1)
         {
-            if (nums[i + 1] - nums[i] > x)
+            if (nums[i + 1] - nums[i] <= x)
             {
-                continue;
-            }
+                pairsCount++;
 
-            pairsCount++;
+                if (pairsCount == requiredPairsCount)
+                {
+                    return true;
+                }
 
-            if (pairsCount == requiredPairsCount)
-            {
-                return true;
+                i++;
             }
 
             i++;

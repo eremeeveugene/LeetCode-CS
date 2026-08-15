@@ -37,8 +37,10 @@ public sealed class MinimumDeletionsForKMostKDistinctCharactersFrequencyArrayPri
 
         var priorityQueue = new PriorityQueue<int, int>();
 
-        foreach (var frequency in frequencyArray)
+        for (var i = 0; i < frequencyArray.Length; i++)
         {
+            var frequency = frequencyArray[i];
+
             if (frequency > 0)
             {
                 priorityQueue.Enqueue(frequency, frequency);

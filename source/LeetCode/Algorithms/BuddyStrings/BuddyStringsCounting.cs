@@ -28,19 +28,7 @@ public sealed class BuddyStringsCounting : IBuddyStrings
 
         if (s == goal)
         {
-            var duplicates = new bool[26];
-
-            foreach (var index in s.Select(c => c - 'a'))
-            {
-                if (duplicates[index])
-                {
-                    return true;
-                }
-
-                duplicates[index] = true;
-            }
-
-            return false;
+            return HasDuplicateCharacter(s);
         }
 
         var firstIndex = -1;
@@ -73,5 +61,25 @@ public sealed class BuddyStringsCounting : IBuddyStrings
         }
 
         return s[firstIndex] == goal[secondIndex] && s[secondIndex] == goal[firstIndex];
+    }
+
+    private static bool HasDuplicateCharacter(string s)
+    {
+        Span<bool> duplicates = stackalloc bool['z' - 'a' + 1];
+
+        for (var i = 0; i < s.Length; i++)
+        {
+            var character = s[i];
+            var characterIndex = character - 'a';
+
+            if (duplicates[characterIndex])
+            {
+                return true;
+            }
+
+            duplicates[characterIndex] = true;
+        }
+
+        return false;
     }
 }

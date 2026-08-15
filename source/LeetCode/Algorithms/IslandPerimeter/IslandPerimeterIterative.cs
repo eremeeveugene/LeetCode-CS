@@ -27,33 +27,42 @@ public sealed class IslandPerimeterIterative : IIslandPerimeter
         {
             for (var j = 0; j < grid[i].Length; j++)
             {
-                if (grid[i][j] != 1)
+                if (grid[i][j] == 0)
                 {
                     continue;
                 }
 
-                if (i - 1 < 0 || grid[i - 1][j] == 0)
-                {
-                    perimeter++;
-                }
-
-                if (i + 1 >= grid.Length || grid[i + 1][j] == 0)
-                {
-                    perimeter++;
-                }
-
-                if (j - 1 < 0 || grid[i][j - 1] == 0)
-                {
-                    perimeter++;
-                }
-
-                if (j + 1 >= grid[i].Length || grid[i][j + 1] == 0)
-                {
-                    perimeter++;
-                }
+                perimeter += GetExposedEdges(grid, i, j);
             }
         }
 
         return perimeter;
+    }
+
+    private static int GetExposedEdges(int[][] grid, int i, int j)
+    {
+        var edges = 0;
+
+        if (i - 1 < 0 || grid[i - 1][j] == 0)
+        {
+            edges++;
+        }
+
+        if (i + 1 >= grid.Length || grid[i + 1][j] == 0)
+        {
+            edges++;
+        }
+
+        if (j - 1 < 0 || grid[i][j - 1] == 0)
+        {
+            edges++;
+        }
+
+        if (j + 1 >= grid[i].Length || grid[i][j + 1] == 0)
+        {
+            edges++;
+        }
+
+        return edges;
     }
 }

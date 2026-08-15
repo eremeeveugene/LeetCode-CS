@@ -37,15 +37,7 @@ public sealed class FindingThreeDigitEvenNumbersBruteForce : IFindingThreeDigitE
                     continue;
                 }
 
-                for (var k = 0; k < digits.Length; k++)
-                {
-                    if (k == i || k == j || digits[k] % 2 == 1)
-                    {
-                        continue;
-                    }
-
-                    numbersHashSet.Add((digits[i] * 100) + (digits[j] * 10) + digits[k]);
-                }
+                AddEvenNumbers(digits, numbersHashSet, i, j);
             }
         }
 
@@ -54,5 +46,18 @@ public sealed class FindingThreeDigitEvenNumbersBruteForce : IFindingThreeDigitE
         Array.Sort(result);
 
         return result;
+    }
+
+    private static void AddEvenNumbers(int[] digits, HashSet<int> numbersHashSet, int i, int j)
+    {
+        for (var k = 0; k < digits.Length; k++)
+        {
+            if (k == i || k == j || digits[k] % 2 == 1)
+            {
+                continue;
+            }
+
+            numbersHashSet.Add((digits[i] * 100) + (digits[j] * 10) + digits[k]);
+        }
     }
 }

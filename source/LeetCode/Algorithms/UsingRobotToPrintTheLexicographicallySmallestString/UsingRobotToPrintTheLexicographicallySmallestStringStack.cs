@@ -21,15 +21,18 @@ public sealed class UsingRobotToPrintTheLexicographicallySmallestStringStack : I
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
     /// </remarks>
-    public string RobotWithString(string input)
+    public string RobotWithString(string s)
     {
-        var n = input.Length;
+        var n = s.Length;
 
         Span<int> charactersFrequency = stackalloc int[AlphabetLength];
 
-        foreach (var character in input)
+        for (var i = 0; i < s.Length; i++)
         {
-            charactersFrequency[CharToIndex(character)]++;
+            var character = s[i];
+            var characterIndex = CharacterToIndex(character);
+
+            charactersFrequency[characterIndex]++;
         }
 
         var minIndex = 0;
@@ -40,18 +43,20 @@ public sealed class UsingRobotToPrintTheLexicographicallySmallestStringStack : I
         var result = new char[n];
         var resultLength = 0;
 
-        foreach (var character in input)
+        for (var i = 0; i < s.Length; i++)
         {
+            var character = s[i];
+
             bufferStack[bufferStackLastIndex++] = character;
 
-            charactersFrequency[CharToIndex(character)]--;
+            charactersFrequency[CharacterToIndex(character)]--;
 
             while (minIndex < charactersFrequency.Length && charactersFrequency[minIndex] == 0)
             {
                 minIndex++;
             }
 
-            while (bufferStackLastIndex > 0 && (minIndex == AlphabetLength || bufferStack[bufferStackLastIndex - 1] <= IndexToChar(minIndex)))
+            while (bufferStackLastIndex > 0 && (minIndex == AlphabetLength || bufferStack[bufferStackLastIndex - 1] <= IndexToCharacter(minIndex)))
             {
                 result[resultLength++] = bufferStack[--bufferStackLastIndex];
             }
@@ -60,12 +65,12 @@ public sealed class UsingRobotToPrintTheLexicographicallySmallestStringStack : I
         return new string(result);
     }
 
-    private static int CharToIndex(char c)
+    private static int CharacterToIndex(char c)
     {
         return c - 'a';
     }
 
-    private static char IndexToChar(int index)
+    private static char IndexToCharacter(int index)
     {
         return (char)(index + 'a');
     }

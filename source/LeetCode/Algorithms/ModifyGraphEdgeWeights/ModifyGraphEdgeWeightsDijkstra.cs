@@ -86,22 +86,7 @@ public sealed class ModifyGraphEdgeWeightsDijkstra : IModifyGraphEdgeWeights
 
             foreach (var edge in adjacencyEdges[current.Edge.Node])
             {
-                var weight = edges[edge.Index][2];
-
-                if (weight == -1)
-                {
-                    weight = 1;
-                }
-
-                if (run == 1 && edges[edge.Index][2] == -1)
-                {
-                    var newWeight = difference + distances[edge.Node, 0] - distances[current.Edge.Node, 1];
-
-                    if (newWeight > weight)
-                    {
-                        edges[edge.Index][2] = weight = newWeight;
-                    }
-                }
+                var weight = GetWeight(edges, distances, edge, current, difference, run);
 
                 var newDistance = distances[current.Edge.Node, run] + weight;
 
@@ -116,7 +101,31 @@ public sealed class ModifyGraphEdgeWeightsDijkstra : IModifyGraphEdgeWeights
         }
     }
 
-    private record Edge(int Node, int Index);
+    private static int GetWeight(int[][] edges, int[,] distances, Edge edge, EdgeDistance current, int difference, int run)
+    {
+        var weight = edges[edge.Index][2];
 
-    private record EdgeDistance(Edge Edge, int Distance);
+        if (weight == -1)
+        {
+            weight = 1;
+        }
+
+        if (run != 1 || edges[edge.Index][2] != -1)
+        {
+            return weight;
+        }
+
+        var newWeight = difference + distances[edge.Node, 0] - distances[current.Edge.Node, 1];
+
+        if (newWeight > weight)
+        {
+            edges[edge.Index][2] = weight = newWeight;
+        }
+
+        return weight;
+    }
+
+    private sealed record Edge(int Node, int Index);
+
+    private sealed record EdgeDistance(Edge Edge, int Distance);
 }

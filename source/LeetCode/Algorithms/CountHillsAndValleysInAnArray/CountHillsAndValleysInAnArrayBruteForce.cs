@@ -21,9 +21,11 @@ public sealed class CountHillsAndValleysInAnArrayBruteForce : ICountHillsAndVall
     /// </remarks>
     public int CountHillValley(int[] nums)
     {
+        var n = nums.Length;
+
         var count = 0;
 
-        for (var i = 1; i < nums.Length - 1; i++)
+        for (var i = 1; i < n - 1; i++)
         {
             if (nums[i] == nums[i - 1])
             {
@@ -32,33 +34,32 @@ public sealed class CountHillsAndValleysInAnArrayBruteForce : ICountHillsAndVall
 
             var left = nums[i - 1] > nums[i] ? 1 : -1;
 
-            var right = 0;
-
-            for (var j = i + 1; j < nums.Length; ++j)
-            {
-                if (nums[j] > nums[i])
-                {
-                    right = 1;
-
-                    break;
-                }
-
-                if (nums[j] >= nums[i])
-                {
-                    continue;
-                }
-
-                right = -1;
-
-                break;
-            }
-
-            if (left == right && left != 0)
+            if (left == GetRightDirection(nums, i))
             {
                 count++;
             }
         }
 
         return count;
+    }
+
+    private static int GetRightDirection(int[] nums, int i)
+    {
+        var n = nums.Length;
+
+        for (var j = i + 1; j < n; j++)
+        {
+            if (nums[j] > nums[i])
+            {
+                return 1;
+            }
+
+            if (nums[j] < nums[i])
+            {
+                return -1;
+            }
+        }
+
+        return 0;
     }
 }

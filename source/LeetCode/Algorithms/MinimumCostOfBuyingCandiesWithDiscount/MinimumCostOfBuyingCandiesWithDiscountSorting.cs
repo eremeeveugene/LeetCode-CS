@@ -19,11 +19,11 @@ public sealed class MinimumCostOfBuyingCandiesWithDiscountSorting : IMinimumCost
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(log n)
     /// </remarks>
-    public int MinimumCost(int[] costs)
+    public int MinimumCost(int[] cost)
     {
-        Array.Sort(costs);
+        Array.Sort(cost);
 
-        var n = costs.Length;
+        var n = cost.Length;
 
         var minimumCost = 0;
 
@@ -31,7 +31,7 @@ public sealed class MinimumCostOfBuyingCandiesWithDiscountSorting : IMinimumCost
 
         for (var i = n - 1; i >= 0; i--)
         {
-            var cost = costs[i];
+            var candyCost = cost[i];
 
             if (j > 1)
             {
@@ -39,7 +39,7 @@ public sealed class MinimumCostOfBuyingCandiesWithDiscountSorting : IMinimumCost
             }
             else
             {
-                minimumCost += cost;
+                minimumCost += candyCost;
 
                 j++;
             }

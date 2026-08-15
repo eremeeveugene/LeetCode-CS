@@ -192,7 +192,7 @@ public sealed class DesignCircularDequeLinkedList : IDesignCircularDeque
         return _count == _k;
     }
 
-    private class DequeNode(int value)
+    private sealed class DequeNode(int value)
     {
         public DequeNode? Previous { get; set; }
 

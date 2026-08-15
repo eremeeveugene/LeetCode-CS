@@ -23,8 +23,10 @@ public sealed class IntersectionOfTwoArrays2Dictionary : IIntersectionOfTwoArray
     {
         var nums1Dictionary = new Dictionary<int, int>();
 
-        foreach (var num1 in nums1)
+        for (var i = 0; i < nums1.Length; i++)
         {
+            var num1 = nums1[i];
+
             if (!nums1Dictionary.TryAdd(num1, 1))
             {
                 nums1Dictionary[num1]++;

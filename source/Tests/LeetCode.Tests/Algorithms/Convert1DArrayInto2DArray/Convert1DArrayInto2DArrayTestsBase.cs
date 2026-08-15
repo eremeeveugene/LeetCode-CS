@@ -30,7 +30,7 @@ public abstract class Convert1DArrayInto2DArrayTestsBase<T> where T : IConvert1D
         var actualResult = solution.Construct2DArray(original, m, n);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

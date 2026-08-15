@@ -26,7 +26,7 @@ public abstract class MapOfHighestPeakTestsBase<T> where T : IMapOfHighestPeak, 
         var actualResult = solution.HighestPeak(isWater);
 
         // Assert
-        CollectionAssert.AreEqual(expectedResult, actualResult);
+        Assert.AreEquivalent(expectedResult, actualResult);
     }
 
     private static IEnumerable<object[]> GetTestData()

@@ -32,12 +32,9 @@ public sealed class LinkedListInBinaryTreeDepthFirstSearch : ILinkedListInBinary
         {
             var currentTreeNode = treeNodeStack.Pop();
 
-            if (currentTreeNode.val == head.val)
+            if (currentTreeNode.val == head.val && IsLocalSubPath(head, currentTreeNode))
             {
-                if (IsLocalSubPath(head, currentTreeNode))
-                {
-                    return true;
-                }
+                return true;
             }
 
             if (currentTreeNode.left != null)

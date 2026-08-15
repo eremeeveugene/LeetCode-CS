@@ -38,6 +38,6 @@ public sealed class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeDepthFirst
             return cloned;
         }
 
-        return FindTargetCopy(original.left, cloned!.left, target) ?? FindTargetCopy(original.right, cloned!.right, target);
+        return FindTargetCopy(original.left, cloned!.left, target) ?? FindTargetCopy(original.right, cloned.right, target);
     }
 }

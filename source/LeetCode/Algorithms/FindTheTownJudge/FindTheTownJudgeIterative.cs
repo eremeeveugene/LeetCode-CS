@@ -35,8 +35,10 @@ public sealed class FindTheTownJudgeIterative : IFindTheTownJudge
 
         var judges = new Dictionary<int, HashSet<int>>();
 
-        foreach (var t in trust)
+        for (var i = 0; i < trust.Length; i++)
         {
+            var t = trust[i];
+
             if (!judges.TryAdd(t[1], [t[0]]))
             {
                 judges[t[1]].Add(t[0]);
@@ -50,21 +52,7 @@ public sealed class FindTheTownJudgeIterative : IFindTheTownJudge
                 continue;
             }
 
-            var trustsSomeoneElse = false;
-
-            foreach (var otherJudge in judges)
-            {
-                if (!otherJudge.Value.Contains(judge.Key))
-                {
-                    continue;
-                }
-
-                trustsSomeoneElse = true;
-
-                break;
-            }
-
-            if (trustsSomeoneElse)
+            if (TrustsSomeoneElse(judges, judge.Key))
             {
                 continue;
             }
@@ -73,5 +61,20 @@ public sealed class FindTheTownJudgeIterative : IFindTheTownJudge
         }
 
         return -1;
+    }
+
+    private static bool TrustsSomeoneElse(Dictionary<int, HashSet<int>> judges, int candidate)
+    {
+        foreach (var otherJudge in judges)
+        {
+            if (!otherJudge.Value.Contains(candidate))
+            {
+                continue;
+            }
+
+            return true;
+        }
+
+        return false;
     }
 }

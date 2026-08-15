@@ -26,6 +26,14 @@ public sealed class ZeroOneMatrixDynamicProgramming : IZeroOneMatrix
 
         var infinity = m + n;
 
+        SweepFromTopLeft(mat, m, n, infinity);
+        SweepFromBottomRight(mat, m, n, infinity);
+
+        return mat;
+    }
+
+    private static void SweepFromTopLeft(int[][] mat, int m, int n, int infinity)
+    {
         for (var row = 0; row < m; row++)
         {
             for (var col = 0; col < n; col++)
@@ -41,7 +49,10 @@ public sealed class ZeroOneMatrixDynamicProgramming : IZeroOneMatrix
                 mat[row][col] = int.Min(up, left) + 1;
             }
         }
+    }
 
+    private static void SweepFromBottomRight(int[][] mat, int m, int n, int infinity)
+    {
         for (var row = m - 1; row >= 0; row--)
         {
             for (var col = n - 1; col >= 0; col--)
@@ -57,7 +68,5 @@ public sealed class ZeroOneMatrixDynamicProgramming : IZeroOneMatrix
                 mat[row][col] = int.Min(mat[row][col], int.Min(down, right) + 1);
             }
         }
-
-        return mat;
     }
 }

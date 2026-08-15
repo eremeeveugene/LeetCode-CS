@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.DayOfTheYear;
 
 /// <inheritdoc />
@@ -21,6 +23,6 @@ public sealed class DayOfTheYearDateParse : IDayOfTheYear
     /// </remarks>
     public int DayOfYear(string date)
     {
-        return DateOnly.Parse(date).DayOfYear;
+        return DateOnly.Parse(date, CultureInfo.InvariantCulture).DayOfYear;
     }
 }

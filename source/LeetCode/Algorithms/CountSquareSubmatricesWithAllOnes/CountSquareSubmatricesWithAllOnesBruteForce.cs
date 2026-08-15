@@ -36,17 +36,9 @@ public sealed class CountSquareSubmatricesWithAllOnesBruteForce : ICountSquareSu
             {
                 for (var j = 0; j <= n - k; j++)
                 {
-                    var sum = 0;
+                    var squareSum = GetSquareSum(matrix, i, j, k);
 
-                    for (var l = i; l < i + k; l++)
-                    {
-                        for (var o = j; o < j + k; o++)
-                        {
-                            sum += matrix[l][o];
-                        }
-                    }
-
-                    if (sum == targetSum)
+                    if (squareSum == targetSum)
                     {
                         count++;
                     }
@@ -55,5 +47,20 @@ public sealed class CountSquareSubmatricesWithAllOnesBruteForce : ICountSquareSu
         }
 
         return count;
+    }
+
+    private static int GetSquareSum(int[][] matrix, int row, int column, int sideLength)
+    {
+        var squareSum = 0;
+
+        for (var i = row; i < row + sideLength; i++)
+        {
+            for (var j = column; j < column + sideLength; j++)
+            {
+                squareSum += matrix[i][j];
+            }
+        }
+
+        return squareSum;
     }
 }

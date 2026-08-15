@@ -40,12 +40,11 @@ public sealed class SmallestStringStartingFromLeafDepthFirstSearch : ISmallestSt
         var currentChar = (char)('a' + node.val);
         var newPath = currentChar + currentPath;
 
-        if (node.left == null && node.right == null)
+        if (node.left == null
+            && node.right == null
+            && (_smallestString == null || string.CompareOrdinal(newPath, _smallestString) < 0))
         {
-            if (_smallestString == null || string.CompareOrdinal(newPath, _smallestString) < 0)
-            {
-                _smallestString = newPath;
-            }
+            _smallestString = newPath;
         }
 
         FindSmallest(node.left, newPath);
