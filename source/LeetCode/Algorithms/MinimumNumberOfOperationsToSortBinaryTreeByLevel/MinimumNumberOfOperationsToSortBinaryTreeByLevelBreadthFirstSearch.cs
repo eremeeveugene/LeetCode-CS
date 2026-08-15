@@ -39,53 +39,69 @@ public sealed class MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirst
 
         while (treeNodesQueue.Count > 0)
         {
-            var values = new int[treeNodesQueue.Count];
+            var values = DequeueLevel(treeNodesQueue);
 
-            for (var i = 0; i < values.Length; i++)
-            {
-                var node = treeNodesQueue.Dequeue();
-
-                values[i] = node.val;
-
-                if (node.left != null)
-                {
-                    treeNodesQueue.Enqueue(node.left);
-                }
-
-                if (node.right != null)
-                {
-                    treeNodesQueue.Enqueue(node.right);
-                }
-            }
-
-            var indexDictionary = values.Select((value, index) => new { Value = value, Index = index })
-                .OrderBy(x => x.Value)
-                .Select((x, sortedIndex) => new { x.Index, SortedIndex = sortedIndex })
-                .ToDictionary(x => x.Index, x => x.SortedIndex);
-
-            var visited = new bool[values.Length];
-
-            for (var i = 0; i < values.Length; i++)
-            {
-                if (visited[i] || indexDictionary[i] == i)
-                {
-                    continue;
-                }
-
-                var cycleLength = 0;
-                var current = i;
-
-                while (!visited[current])
-                {
-                    visited[current] = true;
-                    current = indexDictionary[current];
-                    cycleLength++;
-                }
-
-                result += cycleLength - 1;
-            }
+            result += GetSwapCount(values);
         }
 
         return result;
+    }
+
+    private static int[] DequeueLevel(Queue<TreeNode> treeNodesQueue)
+    {
+        var values = new int[treeNodesQueue.Count];
+
+        for (var i = 0; i < values.Length; i++)
+        {
+            var node = treeNodesQueue.Dequeue();
+
+            values[i] = node.val;
+
+            if (node.left != null)
+            {
+                treeNodesQueue.Enqueue(node.left);
+            }
+
+            if (node.right != null)
+            {
+                treeNodesQueue.Enqueue(node.right);
+            }
+        }
+
+        return values;
+    }
+
+    private static int GetSwapCount(int[] values)
+    {
+        var indexDictionary = values.Select((value, index) => new { Value = value, Index = index })
+            .OrderBy(x => x.Value)
+            .Select((x, sortedIndex) => new { x.Index, SortedIndex = sortedIndex })
+            .ToDictionary(x => x.Index, x => x.SortedIndex);
+
+        var visited = new bool[values.Length];
+
+        var swapCount = 0;
+
+        for (var i = 0; i < values.Length; i++)
+        {
+            if (visited[i] || indexDictionary[i] == i)
+            {
+                continue;
+            }
+
+            var cycleLength = 0;
+            var current = i;
+
+            while (!visited[current])
+            {
+                visited[current] = true;
+                current = indexDictionary[current];
+                cycleLength++;
+            }
+
+            swapCount += cycleLength - 1;
+        }
+
+        return swapCount;
     }
 }
