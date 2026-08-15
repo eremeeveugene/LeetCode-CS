@@ -32,31 +32,41 @@ public sealed class IncrementSubmatricesByOnePrefixSum : IIncrementSubmatricesBy
 
         for (var i = 0; i < q; i++)
         {
-            var query = queries[i];
-
-            var row1 = query[0];
-            var col1 = query[1];
-            var row2 = query[2];
-            var col2 = query[3];
-
-            result[row1][col1] += 1;
-
-            if (row2 + 1 < n)
-            {
-                result[row2 + 1][col1] -= 1;
-            }
-
-            if (col2 + 1 < n)
-            {
-                result[row1][col2 + 1] -= 1;
-            }
-
-            if (row2 + 1 < n && col2 + 1 < n)
-            {
-                result[row2 + 1][col2 + 1] += 1;
-            }
+            ApplyQuery(result, n, queries[i]);
         }
 
+        AccumulatePrefixSums(result, n);
+
+        return result;
+    }
+
+    private static void ApplyQuery(int[][] result, int n, int[] query)
+    {
+        var row1 = query[0];
+        var col1 = query[1];
+        var row2 = query[2];
+        var col2 = query[3];
+
+        result[row1][col1] += 1;
+
+        if (row2 + 1 < n)
+        {
+            result[row2 + 1][col1] -= 1;
+        }
+
+        if (col2 + 1 < n)
+        {
+            result[row1][col2 + 1] -= 1;
+        }
+
+        if (row2 + 1 < n && col2 + 1 < n)
+        {
+            result[row2 + 1][col2 + 1] += 1;
+        }
+    }
+
+    private static void AccumulatePrefixSums(int[][] result, int n)
+    {
         for (var i = 0; i < n; i++)
         {
             for (var j = 0; j < n; j++)
@@ -68,7 +78,5 @@ public sealed class IncrementSubmatricesByOnePrefixSum : IIncrementSubmatricesBy
                 result[i][j] += top + left - topLeft;
             }
         }
-
-        return result;
     }
 }
