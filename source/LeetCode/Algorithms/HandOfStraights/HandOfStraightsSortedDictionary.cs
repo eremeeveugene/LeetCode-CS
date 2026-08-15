@@ -28,8 +28,10 @@ public sealed class HandOfStraightsSortedDictionary : IHandOfStraights
 
         var cardsDictionary = new SortedDictionary<int, int>();
 
-        foreach (var card in hand)
+        for (var i = 0; i < hand.Length; i++)
         {
+            var card = hand[i];
+
             if (!cardsDictionary.TryAdd(card, 1))
             {
                 cardsDictionary[card]++;
@@ -40,25 +42,33 @@ public sealed class HandOfStraightsSortedDictionary : IHandOfStraights
         {
             var firstCard = cardsDictionary.First().Key;
 
-            for (var i = 0; i < groupSize; i++)
+            if (!TryRemoveGroup(cardsDictionary, firstCard, groupSize))
             {
-                var currentCard = firstCard + i;
+                return false;
+            }
+        }
 
-                if (cardsDictionary.TryGetValue(currentCard, out var value))
-                {
-                    if (value == 1)
-                    {
-                        cardsDictionary.Remove(currentCard);
-                    }
-                    else
-                    {
-                        cardsDictionary[currentCard] = value - 1;
-                    }
-                }
-                else
-                {
-                    return false;
-                }
+        return true;
+    }
+
+    private static bool TryRemoveGroup(SortedDictionary<int, int> cardsDictionary, int firstCard, int groupSize)
+    {
+        for (var i = 0; i < groupSize; i++)
+        {
+            var currentCard = firstCard + i;
+
+            if (!cardsDictionary.TryGetValue(currentCard, out var value))
+            {
+                return false;
+            }
+
+            if (value == 1)
+            {
+                cardsDictionary.Remove(currentCard);
+            }
+            else
+            {
+                cardsDictionary[currentCard] = value - 1;
             }
         }
 
