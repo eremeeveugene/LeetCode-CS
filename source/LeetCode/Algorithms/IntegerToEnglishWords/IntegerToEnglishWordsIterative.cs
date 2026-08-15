@@ -94,7 +94,6 @@ public sealed class IntegerToEnglishWordsIterative : IIntegerToEnglishWords
         return resultStringBuilder.ToString().TrimEnd();
     }
 
-
     private static int GetLargestWordKey(int num)
     {
         var i = 0;
