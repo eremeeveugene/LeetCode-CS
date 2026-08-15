@@ -37,42 +37,47 @@ public sealed class ThreeSumTwoPointers : IThreeSum
                 continue;
             }
 
-            var left = i + 1;
-            var right = nums.Length - 1;
-
-            while (left < right)
-            {
-                var sum = nums[i] + nums[left] + nums[right];
-
-                switch (sum)
-                {
-                    case 0:
-                        result.Add(new List<int> { nums[i], nums[left], nums[right] });
-
-                        while (left < right && nums[left] == nums[left + 1])
-                        {
-                            left++;
-                        }
-
-                        while (left < right && nums[right] == nums[right - 1])
-                        {
-                            right--;
-                        }
-
-                        left++;
-                        right--;
-
-                        break;
-                    case < 0:
-                        left++;
-                        break;
-                    default:
-                        right--;
-                        break;
-                }
-            }
+            CollectTriplets(nums, i, result);
         }
 
         return result;
+    }
+
+    private static void CollectTriplets(int[] nums, int i, List<IList<int>> result)
+    {
+        var left = i + 1;
+        var right = nums.Length - 1;
+
+        while (left < right)
+        {
+            var sum = nums[i] + nums[left] + nums[right];
+
+            switch (sum)
+            {
+                case 0:
+                    result.Add([nums[i], nums[left], nums[right]]);
+
+                    while (left < right && nums[left] == nums[left + 1])
+                    {
+                        left++;
+                    }
+
+                    while (left < right && nums[right] == nums[right - 1])
+                    {
+                        right--;
+                    }
+
+                    left++;
+                    right--;
+
+                    break;
+                case < 0:
+                    left++;
+                    break;
+                default:
+                    right--;
+                    break;
+            }
+        }
     }
 }
