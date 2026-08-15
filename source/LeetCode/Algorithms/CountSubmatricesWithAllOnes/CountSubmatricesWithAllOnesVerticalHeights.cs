@@ -30,41 +30,45 @@ public sealed class CountSubmatricesWithAllOnesVerticalHeights : ICountSubmatric
 
         for (var i = 0; i < m; i++)
         {
-            for (var j = 0; j < n; j++)
+            UpdateHeights(mat[i], heights);
+
+            result += CountSubmatricesEndingAtRow(heights);
+        }
+
+        return result;
+    }
+
+    private static void UpdateHeights(int[] row, int[] heights)
+    {
+        for (var j = 0; j < heights.Length; j++)
+        {
+            heights[j] = row[j] == 0 ? 0 : heights[j] + 1;
+        }
+    }
+
+    private static int CountSubmatricesEndingAtRow(int[] heights)
+    {
+        var result = 0;
+
+        for (var j = 0; j < heights.Length; j++)
+        {
+            if (heights[j] == 0)
             {
-                if (mat[i][j] == 0)
-                {
-                    heights[j] = 0;
-                }
-                else
-                {
-                    heights[j]++;
-                }
+                continue;
             }
 
-            for (var j = 0; j < n; j++)
+            var minHeight = heights[j];
+
+            for (var k = j; k >= 0 && minHeight > 0; k--)
             {
-                if (heights[j] == 0)
+                minHeight = Math.Min(minHeight, heights[k]);
+
+                if (minHeight == 0)
                 {
-                    continue;
+                    break;
                 }
 
-                var minHeight = heights[j];
-
-                for (var k = j; k >= 0 && minHeight > 0; k--)
-                {
-                    if (heights[k] < minHeight)
-                    {
-                        minHeight = heights[k];
-                    }
-
-                    if (minHeight == 0)
-                    {
-                        break;
-                    }
-
-                    result += minHeight;
-                }
+                result += minHeight;
             }
         }
 
