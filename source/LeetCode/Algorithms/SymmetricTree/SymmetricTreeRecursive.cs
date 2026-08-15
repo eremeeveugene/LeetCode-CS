@@ -26,23 +26,23 @@ public sealed class SymmetricTreeRecursive : ISymmetricTree
         return IsSymmetric(root?.left, root?.right);
     }
 
-    private static bool IsSymmetric(TreeNode? left, TreeNode? right)
+    private static bool IsSymmetric(TreeNode? leftNode, TreeNode? rightNode)
     {
-        if (left == null && right == null)
+        if (leftNode == null && rightNode == null)
         {
             return true;
         }
 
-        if (left == null || right == null)
+        if (leftNode == null || rightNode == null)
         {
             return false;
         }
 
-        if (left.val != right.val)
+        if (leftNode.val != rightNode.val)
         {
             return false;
         }
 
-        return IsSymmetric(left.left, right.right) && IsSymmetric(left.right, right.left);
+        return IsSymmetric(leftNode.left, rightNode.right) && IsSymmetric(leftNode.right, rightNode.left);
     }
 }
