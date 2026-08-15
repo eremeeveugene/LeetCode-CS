@@ -46,40 +46,61 @@ public sealed class CountTheNumberOfSubstringsWithDominantOnesCounting : ICountT
                 zeroIndex++;
             }
 
-            for (var zeros = 0; zeros * zeros <= n; zeros++)
+            count += CountFromLeft(n, zeroPositions, zeroIndex, left);
+        }
+
+        return count;
+    }
+
+    private static int CountFromLeft(int n, List<int> zeroPositions, int zeroIndex, int left)
+    {
+        var count = 0;
+
+        for (var zeros = 0; zeros * zeros <= n; zeros++)
+        {
+            if (!TryGetRange(n, zeroPositions, zeroIndex, left, zeros, out var rangeStart, out var rangeEnd))
             {
-                int rangeStart;
-                int rangeEnd;
+                break;
+            }
 
-                if (zeros == 0)
-                {
-                    rangeStart = left;
-                    rangeEnd = zeroIndex < totalZeros ? zeroPositions[zeroIndex] - 1 : n - 1;
-                }
-                else
-                {
-                    var lastZeroIndex = zeroIndex + zeros - 1;
+            var minimumRight = left + (zeros * zeros) + zeros - 1;
 
-                    if (lastZeroIndex >= totalZeros)
-                    {
-                        break;
-                    }
+            var validStart = Math.Max(rangeStart, minimumRight);
 
-                    rangeStart = zeroPositions[lastZeroIndex];
-                    rangeEnd = zeroIndex + zeros < totalZeros ? zeroPositions[zeroIndex + zeros] - 1 : n - 1;
-                }
-
-                var minimumRight = left + (zeros * zeros) + zeros - 1;
-
-                var validStart = Math.Max(rangeStart, minimumRight);
-
-                if (validStart <= rangeEnd)
-                {
-                    count += rangeEnd - validStart + 1;
-                }
+            if (validStart <= rangeEnd)
+            {
+                count += rangeEnd - validStart + 1;
             }
         }
 
         return count;
+    }
+
+    private static bool TryGetRange(int n, List<int> zeroPositions, int zeroIndex, int left, int zeros, out int rangeStart, out int rangeEnd)
+    {
+        var totalZeros = zeroPositions.Count;
+
+        if (zeros == 0)
+        {
+            rangeStart = left;
+            rangeEnd = zeroIndex < totalZeros ? zeroPositions[zeroIndex] - 1 : n - 1;
+
+            return true;
+        }
+
+        var lastZeroIndex = zeroIndex + zeros - 1;
+
+        if (lastZeroIndex >= totalZeros)
+        {
+            rangeStart = 0;
+            rangeEnd = 0;
+
+            return false;
+        }
+
+        rangeStart = zeroPositions[lastZeroIndex];
+        rangeEnd = zeroIndex + zeros < totalZeros ? zeroPositions[zeroIndex + zeros] - 1 : n - 1;
+
+        return true;
     }
 }
