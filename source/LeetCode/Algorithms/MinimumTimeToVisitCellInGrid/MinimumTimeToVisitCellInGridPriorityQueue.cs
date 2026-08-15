@@ -45,43 +45,57 @@ public sealed class MinimumTimeToVisitCellInGridPriorityQueue : IMinimumTimeToVi
         {
             var (row, column, time) = priorityQueue.Dequeue();
 
-            foreach (var direction in Directions)
-            {
-                var targetRow = row + direction.Row;
-                var targetColumn = column + direction.Column;
-
-                if (targetRow < 0 || targetRow >= rowsCount || targetColumn < 0 || targetColumn >= columnsCount || seen[targetRow, targetColumn])
-                {
-                    continue;
-                }
-
-                var targetTime = time + 1;
-
-                if (grid[targetRow][targetColumn] > targetTime)
-                {
-                    var waitTime = 0;
-
-                    if ((grid[targetRow][targetColumn] - targetTime) % 2 != 0)
-                    {
-                        waitTime = 1;
-                    }
-
-                    targetTime = grid[targetRow][targetColumn] + waitTime;
-                }
-
-                if (targetRow == rowsCount - 1 && targetColumn == columnsCount - 1)
-                {
-                    result = targetTime;
-
-                    break;
-                }
-
-                seen[targetRow, targetColumn] = true;
-
-                priorityQueue.Enqueue((targetRow, targetColumn, targetTime), targetTime);
-            }
+            result = VisitNeighbours(grid, seen, priorityQueue, row, column, time);
         }
 
         return result;
+    }
+
+    private static int VisitNeighbours(
+        int[][] grid,
+        bool[,] seen,
+        PriorityQueue<(int Row, int Column, int Time), int> priorityQueue,
+        int row,
+        int column,
+        int time)
+    {
+        var rowsCount = grid.Length;
+        var columnsCount = grid[0].Length;
+
+        foreach (var direction in Directions)
+        {
+            var targetRow = row + direction.Row;
+            var targetColumn = column + direction.Column;
+
+            if (targetRow < 0 || targetRow >= rowsCount || targetColumn < 0 || targetColumn >= columnsCount || seen[targetRow, targetColumn])
+            {
+                continue;
+            }
+
+            var targetTime = GetTargetTime(grid[targetRow][targetColumn], time + 1);
+
+            if (targetRow == rowsCount - 1 && targetColumn == columnsCount - 1)
+            {
+                return targetTime;
+            }
+
+            seen[targetRow, targetColumn] = true;
+
+            priorityQueue.Enqueue((targetRow, targetColumn, targetTime), targetTime);
+        }
+
+        return -1;
+    }
+
+    private static int GetTargetTime(int cellValue, int arrivalTime)
+    {
+        if (cellValue <= arrivalTime)
+        {
+            return arrivalTime;
+        }
+
+        var waitTime = (cellValue - arrivalTime) % 2 != 0 ? 1 : 0;
+
+        return cellValue + waitTime;
     }
 }
