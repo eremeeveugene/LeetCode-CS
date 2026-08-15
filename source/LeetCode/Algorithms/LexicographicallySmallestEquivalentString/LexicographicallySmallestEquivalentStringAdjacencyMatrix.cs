@@ -41,44 +41,59 @@ public sealed class LexicographicallySmallestEquivalentStringAdjacencyMatrix : I
             adjacencyMatrix[c2, c1] = true;
         }
 
+        PropagateEquivalences(adjacencyMatrix);
+
+        var resultStringBuilder = new StringBuilder(baseStr.Length);
+
+        for (var i = 0; i < baseStr.Length; i++)
+        {
+            resultStringBuilder.Append(GetSmallestEquivalent(adjacencyMatrix, baseStr[i] - 'a'));
+        }
+
+        return resultStringBuilder.ToString();
+    }
+
+    private static void PropagateEquivalences(bool[,] adjacencyMatrix)
+    {
         for (var i = 0; i < Length; i++)
         {
             for (var j = 0; j < Length; j++)
             {
-                if (!adjacencyMatrix[i, j])
+                if (adjacencyMatrix[i, j])
                 {
-                    continue;
-                }
-
-                for (var k = 0; k < Length; k++)
-                {
-                    if (adjacencyMatrix[i, k])
-                    {
-                        adjacencyMatrix[j, k] = true;
-                    }
+                    CopyEquivalences(adjacencyMatrix, i, j);
                 }
             }
         }
+    }
 
-        var resultStringBuilder = new StringBuilder(baseStr.Length);
-
-        foreach (var c in baseStr)
+    private static void CopyEquivalences(bool[,] adjacencyMatrix, int i, int j)
+    {
+        for (var k = 0; k < Length; k++)
         {
-            var i = c - 'a';
-
-            for (var j = 0; j < Length; j++)
+            if (adjacencyMatrix[i, k])
             {
-                if (!adjacencyMatrix[i, j])
-                {
-                    continue;
-                }
-
-                resultStringBuilder.Append((char)(j + 'a'));
-
-                break;
+                adjacencyMatrix[j, k] = true;
             }
         }
+    }
 
-        return resultStringBuilder.ToString();
+    private static char GetSmallestEquivalent(bool[,] adjacencyMatrix, int i)
+    {
+        var smallest = i;
+
+        for (var j = 0; j < i; j++)
+        {
+            if (!adjacencyMatrix[i, j])
+            {
+                continue;
+            }
+
+            smallest = j;
+
+            break;
+        }
+
+        return (char)(smallest + 'a');
     }
 }
