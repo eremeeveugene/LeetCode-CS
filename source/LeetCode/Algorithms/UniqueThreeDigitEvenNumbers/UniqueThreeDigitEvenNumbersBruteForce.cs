@@ -25,25 +25,35 @@ public sealed class UniqueThreeDigitEvenNumbersBruteForce : IUniqueThreeDigitEve
 
         for (var i = 0; i < digits.Length; i++)
         {
+            if (digits[i] == 0)
+            {
+                continue;
+            }
+
             for (var j = 0; j < digits.Length; j++)
             {
-                for (var k = 0; k < digits.Length; k++)
+                if (j == i)
                 {
-                    if (i == j || i == k || j == k)
-                    {
-                        continue;
-                    }
-
-                    if (digits[i] == 0 || digits[k] % 2 != 0)
-                    {
-                        continue;
-                    }
-
-                    numbersHashSet.Add((digits[i] * 100) + (digits[j] * 10) + digits[k]);
+                    continue;
                 }
+
+                AddEvenNumbers(digits, numbersHashSet, i, j);
             }
         }
 
         return numbersHashSet.Count;
+    }
+
+    private static void AddEvenNumbers(int[] digits, HashSet<int> numbersHashSet, int i, int j)
+    {
+        for (var k = 0; k < digits.Length; k++)
+        {
+            if (k == i || k == j || digits[k] % 2 != 0)
+            {
+                continue;
+            }
+
+            numbersHashSet.Add((digits[i] * 100) + (digits[j] * 10) + digits[k]);
+        }
     }
 }
