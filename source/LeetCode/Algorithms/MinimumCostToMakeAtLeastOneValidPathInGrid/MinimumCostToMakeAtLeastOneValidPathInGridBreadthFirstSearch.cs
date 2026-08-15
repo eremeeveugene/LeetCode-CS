@@ -53,36 +53,44 @@ public sealed class MinimumCostToMakeAtLeastOneValidPathInGridBreadthFirstSearch
                 continue;
             }
 
-            for (var d = 0; d < _directions.Length; d++)
-            {
-                var nx = x + _directions[d].X;
-                var ny = y + _directions[d].Y;
-
-                var newCost = currentCost;
-
-                if (grid[x][y] != d + 1)
-                {
-                    newCost++;
-                }
-
-                if (nx < 0 || ny < 0 || nx >= m || ny >= n || newCost >= cost[nx, ny])
-                {
-                    continue;
-                }
-
-                cost[nx, ny] = newCost;
-
-                if (grid[x][y] == d + 1)
-                {
-                    linkedList.AddFirst((nx, ny, newCost));
-                }
-                else
-                {
-                    linkedList.AddLast((nx, ny, newCost));
-                }
-            }
+            Relax(grid, cost, linkedList, x, y, currentCost);
         }
 
         return cost[m - 1, n - 1];
+    }
+
+    private void Relax(int[][] grid, int[,] cost, LinkedList<(int X, int Y, int CurrentCost)> linkedList, int x, int y, int currentCost)
+    {
+        var m = grid.Length;
+        var n = grid[0].Length;
+
+        for (var d = 0; d < _directions.Length; d++)
+        {
+            var nx = x + _directions[d].X;
+            var ny = y + _directions[d].Y;
+
+            var newCost = currentCost;
+
+            if (grid[x][y] != d + 1)
+            {
+                newCost++;
+            }
+
+            if (nx < 0 || ny < 0 || nx >= m || ny >= n || newCost >= cost[nx, ny])
+            {
+                continue;
+            }
+
+            cost[nx, ny] = newCost;
+
+            if (grid[x][y] == d + 1)
+            {
+                linkedList.AddFirst((nx, ny, newCost));
+            }
+            else
+            {
+                linkedList.AddLast((nx, ny, newCost));
+            }
+        }
     }
 }
