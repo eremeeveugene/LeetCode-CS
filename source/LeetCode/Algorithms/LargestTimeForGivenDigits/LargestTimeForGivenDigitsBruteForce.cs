@@ -46,36 +46,39 @@ public sealed class LargestTimeForGivenDigitsBruteForce : ILargestTimeForGivenDi
                     continue;
                 }
 
-                for (var k = 0; k < 4; k++)
-                {
-                    if (i == k || j == k)
-                    {
-                        continue;
-                    }
-
-                    var m1 = arr[k];
-
-                    if (m1 > 5)
-                    {
-                        continue;
-                    }
-
-                    var l = 6 - i - j - k;
-
-                    var hours = (h1 * 10) + h2;
-                    var minutes = (m1 * 10) + arr[l];
-
-                    var totalMinutes = (hours * 60) + minutes;
-
-                    if (totalMinutes > maxMinutes)
-                    {
-                        maxMinutes = totalMinutes;
-                    }
-                }
+                maxMinutes = Math.Max(maxMinutes, GetMaxTotalMinutes(arr, i, j, (h1 * 10) + h2));
             }
         }
 
         return maxMinutes < 0 ? string.Empty : BuildTimeString(maxMinutes);
+    }
+
+    private static int GetMaxTotalMinutes(int[] arr, int i, int j, int hours)
+    {
+        var maxTotalMinutes = -1;
+
+        for (var k = 0; k < 4; k++)
+        {
+            if (i == k || j == k)
+            {
+                continue;
+            }
+
+            var m1 = arr[k];
+
+            if (m1 > 5)
+            {
+                continue;
+            }
+
+            var l = 6 - i - j - k;
+
+            var minutes = (m1 * 10) + arr[l];
+
+            maxTotalMinutes = Math.Max(maxTotalMinutes, (hours * 60) + minutes);
+        }
+
+        return maxTotalMinutes;
     }
 
     private static string BuildTimeString(int totalMinutes)
