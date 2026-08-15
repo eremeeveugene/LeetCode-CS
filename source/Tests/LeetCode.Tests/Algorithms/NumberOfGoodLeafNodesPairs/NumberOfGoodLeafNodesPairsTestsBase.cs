@@ -39,5 +39,7 @@ public abstract class NumberOfGoodLeafNodesPairsTestsBase<T> where T : INumberOf
         yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7 }, 3, 2];
 
         yield return [new int?[] { 7, 1, 4, 6, null, 5, 3, null, null, null, null, null, 2 }, 3, 1];
+
+        yield return [new int?[] { 1, 2, 3, 4, null, null, null, 5, null }, 3, 0];
     }
 }
