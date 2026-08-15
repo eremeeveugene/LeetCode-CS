@@ -43,40 +43,45 @@ public sealed class MinimumDeletionsToMakeStringKSpecialFrequencyArray : IMinimu
                 continue;
             }
 
-            var deletions = 0;
-
-            for (var j = 0; j < AlphabetLength; j++)
-            {
-                if (i == j)
-                {
-                    continue;
-                }
-
-                var frequency = frequencyArray[j];
-
-                if (frequency == 0)
-                {
-                    continue;
-                }
-
-                if (targetFrequency > frequency)
-                {
-                    deletions += frequency;
-
-                    continue;
-                }
-
-                var upperBound = targetFrequency + k;
-
-                if (frequency > upperBound)
-                {
-                    deletions += frequency - upperBound;
-                }
-            }
-
-            minimumDeletions = int.Min(minimumDeletions, deletions);
+            minimumDeletions = int.Min(minimumDeletions, GetDeletions(frequencyArray, i, targetFrequency, k));
         }
 
         return minimumDeletions;
+    }
+
+    private static int GetDeletions(ReadOnlySpan<int> frequencyArray, int target, int targetFrequency, int k)
+    {
+        var deletions = 0;
+
+        for (var j = 0; j < AlphabetLength; j++)
+        {
+            if (j == target)
+            {
+                continue;
+            }
+
+            var frequency = frequencyArray[j];
+
+            if (frequency == 0)
+            {
+                continue;
+            }
+
+            if (targetFrequency > frequency)
+            {
+                deletions += frequency;
+
+                continue;
+            }
+
+            var upperBound = targetFrequency + k;
+
+            if (frequency > upperBound)
+            {
+                deletions += frequency - upperBound;
+            }
+        }
+
+        return deletions;
     }
 }
