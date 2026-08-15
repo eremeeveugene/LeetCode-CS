@@ -34,7 +34,7 @@ public sealed class MaximumTotalSubarrayValueEnumeration : IMaximumTotalSubarray
             max = Math.Max(max, num);
         }
 
-        var diff = max - min;
+        long diff = max - min;
 
         return diff * k;
     }
