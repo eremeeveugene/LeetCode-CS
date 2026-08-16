@@ -33,8 +33,7 @@ public sealed class IntervalsBetweenIdenticalElementsDictionary : IntervalsBetwe
 
             ref var state = ref CollectionsMarshal.GetValueRefOrAddDefault(numToStateDictionary, num, out _);
 
-            state.RightCount++;
-            state.RightSum += i;
+            AddToRight(ref state, i);
         }
 
         var result = new long[n];
@@ -45,13 +44,7 @@ public sealed class IntervalsBetweenIdenticalElementsDictionary : IntervalsBetwe
 
             ref var state = ref CollectionsMarshal.GetValueRefOrAddDefault(numToStateDictionary, num, out _);
 
-            state.RightCount--;
-            state.RightSum -= i;
-
-            result[i] = (state.LeftCount * i) - state.LeftSum + state.RightSum - (state.RightCount * i);
-
-            state.LeftCount++;
-            state.LeftSum += i;
+            result[i] = MoveToLeftAndGetDistance(ref state, i);
         }
 
         return result;

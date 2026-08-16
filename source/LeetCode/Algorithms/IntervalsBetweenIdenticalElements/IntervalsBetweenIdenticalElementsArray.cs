@@ -31,10 +31,7 @@ public sealed class IntervalsBetweenIdenticalElementsArray : IntervalsBetweenIde
         {
             var num = nums[i];
 
-            ref var state = ref states[num];
-
-            state.RightCount++;
-            state.RightSum += i;
+            AddToRight(ref states[num], i);
         }
 
         var result = new long[n];
@@ -43,15 +40,7 @@ public sealed class IntervalsBetweenIdenticalElementsArray : IntervalsBetweenIde
         {
             var num = nums[i];
 
-            ref var state = ref states[num];
-
-            state.RightCount--;
-            state.RightSum -= i;
-
-            result[i] = (state.LeftCount * i) - state.LeftSum + state.RightSum - (state.RightCount * i);
-
-            state.LeftCount++;
-            state.LeftSum += i;
+            result[i] = MoveToLeftAndGetDistance(ref states[num], i);
         }
 
         return result;
