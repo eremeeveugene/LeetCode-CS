@@ -15,8 +15,30 @@ namespace LeetCode.Algorithms.DesignMovieRentalSystem;
 public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
 {
     private const int ResultsCount = 5;
+
+    private static readonly IComparer<MovieOffer> MovieOfferComparer = Comparer<MovieOffer>.Create((left, right) =>
+    {
+        var priceComparison = left.Price.CompareTo(right.Price);
+
+        return priceComparison != 0 ? priceComparison : left.Shop.CompareTo(right.Shop);
+    });
+
+    private static readonly IComparer<RentalRecord> RentalRecordComparer = Comparer<RentalRecord>.Create((left, right) =>
+    {
+        var priceComparison = left.Price.CompareTo(right.Price);
+
+        if (priceComparison != 0)
+        {
+            return priceComparison;
+        }
+
+        var shopComparison = left.Shop.CompareTo(right.Shop);
+
+        return shopComparison != 0 ? shopComparison : left.Movie.CompareTo(right.Movie);
+    });
+
     private readonly Dictionary<int, SortedSet<MovieOffer>> _movieToMovieOffersDictionary;
-    private readonly SortedSet<RentalRecord> _rentalRecordsSortedSet = [];
+    private readonly SortedSet<RentalRecord> _rentalRecordsSortedSet;
     private readonly Dictionary<(int Shop, int Movie), int> _shopMovieToPriceDictionary;
 
     /// <summary>
@@ -33,6 +55,7 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
         var entriesLength = entries.Length;
 
         _movieToMovieOffersDictionary = new Dictionary<int, SortedSet<MovieOffer>>(entriesLength);
+        _rentalRecordsSortedSet = new SortedSet<RentalRecord>(RentalRecordComparer);
         _shopMovieToPriceDictionary = new Dictionary<(int Shop, int Movie), int>(entriesLength);
 
         for (var i = 0; i < entriesLength; i++)
@@ -46,7 +69,7 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
 
             if (!_movieToMovieOffersDictionary.TryGetValue(movie, out var movieOffers))
             {
-                movieOffers = [];
+                movieOffers = new SortedSet<MovieOffer>(MovieOfferComparer);
 
                 _movieToMovieOffersDictionary[movie] = movieOffers;
             }
@@ -162,71 +185,11 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
         movieOffers.Add(new MovieOffer(price, shop));
     }
 
-    public readonly record struct MovieOffer(int Price, int Shop) : IComparable<MovieOffer>
-    {
-        /// <inheritdoc />
-        /// <remarks>
-        ///     Time complexity - O(1)
-        ///     Space complexity - O(1)
-        /// </remarks>
-        public int CompareTo(MovieOffer movieOffer)
-        {
-            var priceComparison = CompareToPrice(movieOffer.Price);
+    public readonly record struct MovieOffer(int Price, int Shop);
 
-            return priceComparison != 0 ? priceComparison : CompareToShop(movieOffer.Shop);
-        }
-
-        /// <summary>
-        ///     Compares the price of this instance to <paramref name="price" />.
-        /// </summary>
-        /// <param name="price">The price to compare to.</param>
-        /// <returns>A negative number, zero, or a positive number depending on the comparison result.</returns>
-        /// <remarks>
-        ///     Time complexity - O(1)
-        ///     Space complexity - O(1)
-        /// </remarks>
-        private int CompareToPrice(int price)
-        {
-            return Price.CompareTo(price);
-        }
-
-        /// <summary>
-        ///     Compares the shop of this instance to <paramref name="shop" />.
-        /// </summary>
-        /// <param name="shop">The shop to compare to.</param>
-        /// <returns>A negative number, zero, or a positive number depending on the comparison result.</returns>
-        /// <remarks>
-        ///     Time complexity - O(1)
-        ///     Space complexity - O(1)
-        /// </remarks>
-        private int CompareToShop(int shop)
-        {
-            return Shop.CompareTo(shop);
-        }
-    }
-
-    private readonly record struct RentalRecord(int Shop, int Movie, int Price) : IComparable<RentalRecord>
+    private readonly record struct RentalRecord(int Shop, int Movie, int Price)
     {
         private readonly int[] _report = new int[2];
-
-        /// <inheritdoc />
-        /// <remarks>
-        ///     Time complexity - O(1)
-        ///     Space complexity - O(1)
-        /// </remarks>
-        public int CompareTo(RentalRecord rentalRecord)
-        {
-            var priceComparison = CompareToPrice(rentalRecord.Price);
-
-            if (priceComparison != 0)
-            {
-                return priceComparison;
-            }
-
-            var shopComparison = CompareToShop(rentalRecord.Shop);
-
-            return shopComparison != 0 ? shopComparison : CompareToMovie(rentalRecord.Movie);
-        }
 
         /// <summary>
         ///     Returns the rental record as a report entry of [shop, movie].
@@ -242,48 +205,6 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
             _report[1] = Movie;
 
             return _report;
-        }
-
-        /// <summary>
-        ///     Compares the price of this instance to <paramref name="price" />.
-        /// </summary>
-        /// <param name="price">The price to compare to.</param>
-        /// <returns>A negative number, zero, or a positive number depending on the comparison result.</returns>
-        /// <remarks>
-        ///     Time complexity - O(1)
-        ///     Space complexity - O(1)
-        /// </remarks>
-        private int CompareToPrice(int price)
-        {
-            return Price.CompareTo(price);
-        }
-
-        /// <summary>
-        ///     Compares the shop of this instance to <paramref name="shop" />.
-        /// </summary>
-        /// <param name="shop">The shop to compare to.</param>
-        /// <returns>A negative number, zero, or a positive number depending on the comparison result.</returns>
-        /// <remarks>
-        ///     Time complexity - O(1)
-        ///     Space complexity - O(1)
-        /// </remarks>
-        private int CompareToShop(int shop)
-        {
-            return Shop.CompareTo(shop);
-        }
-
-        /// <summary>
-        ///     Compares the movie of this instance to <paramref name="movie" />.
-        /// </summary>
-        /// <param name="movie">The movie to compare to.</param>
-        /// <returns>A negative number, zero, or a positive number depending on the comparison result.</returns>
-        /// <remarks>
-        ///     Time complexity - O(1)
-        ///     Space complexity - O(1)
-        /// </remarks>
-        private int CompareToMovie(int movie)
-        {
-            return Movie.CompareTo(movie);
         }
     }
 }
