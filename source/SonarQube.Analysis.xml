@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SonarQubeAnalysisProperties xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                              xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                              xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+
+  <Property Name="sonar.cs.cobertura.reportsPaths">Tests/**/TestResults/**/*.cobertura.xml</Property>
+  <Property Name="sonar.exclusions">coverage/**</Property>
+
+  <!-- csharpsquid:S2368 - Public methods with jagged-array parameters are unavoidable here: -->
+  <!-- LeetCode's official C# signatures for matrix/grid problems require char[][]/int[][] parameters. -->
+  <Property Name="sonar.issue.ignore.multicriteria">s2368,s101</Property>
+  <Property Name="sonar.issue.ignore.multicriteria.s2368.ruleKey">csharpsquid:S2368</Property>
+  <Property Name="sonar.issue.ignore.multicriteria.s2368.resourceKey">**/Algorithms/**/*.cs</Property>
+  <Property Name="sonar.issue.ignore.multicriteria.s101.ruleKey">csharpsquid:S101</Property>
+  <Property Name="sonar.issue.ignore.multicriteria.s101.resourceKey">**/*.cs</Property>
+
+  <Property Name="sonar.qualitygate.wait">true</Property>
+
+</SonarQubeAnalysisProperties>

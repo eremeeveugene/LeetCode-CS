@@ -208,7 +208,6 @@ public sealed class TwentyFourGameBruteForce : ITwentyFourGame
                 result = left * right;
 
                 return true;
-            case Operation.Division:
             default:
                 if (Math.Abs(right) < Tolerance)
                 {

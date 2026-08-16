@@ -83,12 +83,7 @@ jobs:
           ${{ runner.temp }}\scanner\dotnet-sonarscanner begin
           /k:"eremeeveugene_LeetCode-CS"
           /o:"eremeeveugene"
-          /d:sonar.cs.cobertura.reportsPaths="Tests/**/TestResults/**/*.cobertura.xml"
-          /d:sonar.exclusions="coverage/**"
-          /d:sonar.issue.ignore.multicriteria=s2368
-          /d:sonar.issue.ignore.multicriteria.s2368.ruleKey=csharpsquid:S2368
-          /d:sonar.issue.ignore.multicriteria.s2368.resourceKey=**/Algorithms/**/*.cs
-          /d:sonar.qualitygate.wait=true
+          /s:${{ github.workspace }}\source\SonarQube.Analysis.xml
 
       - name: Build
         id: build
