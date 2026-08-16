@@ -226,6 +226,7 @@ public sealed class TwentyFourGameBruteForce : ITwentyFourGame
     {
         Addition,
         Subtraction,
-        Multiplication
+        Multiplication,
+        Division
     }
 }
