@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/16/2026 - 12:51:26 PM
-  Coverage date: 8/16/2026 - 12:50:45 PM - 8/16/2026 - 12:51:11 PM
+  Generated on: 8/16/2026 - 2:36:15 PM
+  Coverage date: 8/16/2026 - 2:35:41 PM - 8/16/2026 - 2:36:06 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1356
-  Files: 1356
+  Classes: 1357
+  Files: 1357
   Line coverage: 100%
-  Covered lines: 31074
+  Covered lines: 31067
   Uncovered lines: 0
-  Coverable lines: 31074
-  Total lines: 76146
+  Coverable lines: 31067
+  Total lines: 76116
   Branch coverage: 100% (11199 of 11199)
   Covered branches: 11199
   Total branches: 11199
-  Method coverage: 100% (2055 of 2055)
-  Full method coverage: 100% (2055 of 2055)
-  Covered methods: 2055
-  Fully covered methods: 2055
-  Total methods: 2055
+  Method coverage: 100% (2052 of 2052)
+  Full method coverage: 100% (2052 of 2052)
+  Covered methods: 2052
+  Fully covered methods: 2052
+  Total methods: 2052
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -560,6 +560,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.IntersectionOfTwoLinkedLists.IntersectionOfTwoLinkedListsBruteForce                                                                100%
   LeetCode.Algorithms.IntersectionOfTwoLinkedLists.IntersectionOfTwoLinkedListsTwoPointers                                                               100%
   LeetCode.Algorithms.IntervalsBetweenIdenticalElements.IntervalsBetweenIdenticalElementsArray                                                           100%
+  LeetCode.Algorithms.IntervalsBetweenIdenticalElements.IntervalsBetweenIdenticalElementsBase                                                            100%
   LeetCode.Algorithms.IntervalsBetweenIdenticalElements.IntervalsBetweenIdenticalElementsDictionary                                                      100%
   LeetCode.Algorithms.InvertBinaryTree.InvertBinaryTreeBreadthFirstSearch                                                                                100%
   LeetCode.Algorithms.InvertBinaryTree.InvertBinaryTreeDepthFirstSearchRecursive                                                                         100%
