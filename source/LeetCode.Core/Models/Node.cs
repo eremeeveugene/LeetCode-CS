@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 // ReSharper disable InconsistentNaming
+#pragma warning disable S101
 
 namespace LeetCode.Core.Models;
 
