@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/16/2026 - 2:36:15 PM
-  Coverage date: 8/16/2026 - 2:35:41 PM - 8/16/2026 - 2:36:06 PM
+  Generated on: 8/18/2026 - 5:02:41 PM
+  Coverage date: 8/18/2026 - 5:02:06 PM - 8/18/2026 - 5:02:33 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1357
-  Files: 1357
+  Classes: 1359
+  Files: 1359
   Line coverage: 100%
-  Covered lines: 31067
+  Covered lines: 31128
   Uncovered lines: 0
-  Coverable lines: 31067
-  Total lines: 76116
-  Branch coverage: 100% (11199 of 11199)
-  Covered branches: 11199
-  Total branches: 11199
-  Method coverage: 100% (2052 of 2052)
-  Full method coverage: 100% (2052 of 2052)
-  Covered methods: 2052
-  Fully covered methods: 2052
-  Total methods: 2052
+  Coverable lines: 31128
+  Total lines: 76253
+  Branch coverage: 100% (11229 of 11229)
+  Covered branches: 11229
+  Total branches: 11229
+  Method coverage: 100% (2054 of 2054)
+  Full method coverage: 100% (2054 of 2054)
+  Covered methods: 2054
+  Fully covered methods: 2054
+  Total methods: 2054
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -449,6 +449,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithIndexOf                                       100%
   LeetCode.Algorithms.FindTheIndexOfTheFirstOccurrenceInString.FindTheIndexOfTheFirstOccurrenceInStringWithKMP                                           100%
   LeetCode.Algorithms.FindTheKthCharacterInStringGame1.FindTheKthCharacterInStringGame1StringBuilder                                                     100%
+  LeetCode.Algorithms.FindTheLargestAlmostMissingInteger.FindTheLargestAlmostMissingIntegerFrequencyArray                                                100%
+  LeetCode.Algorithms.FindTheLargestAlmostMissingInteger.FindTheLargestAlmostMissingIntegerFrequencyDictionary                                           100%
   LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix.FindTheLengthOfTheLongestCommonPrefixBruteForce                                              100%
   LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix.FindTheLengthOfTheLongestCommonPrefixHashSet                                                 100%
   LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix.FindTheLengthOfTheLongestCommonPrefixHashSetOptimized                                        100%
