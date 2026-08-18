@@ -14,5 +14,5 @@ using LeetCode.Algorithms.FindTheLargestAlmostMissingInteger;
 namespace LeetCode.Tests.Algorithms.FindTheLargestAlmostMissingInteger;
 
 [TestClass]
-public sealed class FindTheLargestAlmostMissingIntegerDictionaryTests
-    : FindTheLargestAlmostMissingIntegerTestsBase<FindTheLargestAlmostMissingIntegerDictionary>;
+public sealed class FindTheLargestAlmostMissingIntegerFrequencyDictionaryTests
+    : FindTheLargestAlmostMissingIntegerTestsBase<FindTheLargestAlmostMissingIntegerFrequencyDictionary>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheLargestAlmostMissingInteger;
 
 /// <inheritdoc />
-public sealed class FindTheLargestAlmostMissingIntegerDictionary : IFindTheLargestAlmostMissingInteger
+public sealed class FindTheLargestAlmostMissingIntegerFrequencyDictionary : IFindTheLargestAlmostMissingInteger
 {
     /// <inheritdoc />
     /// <remarks>
