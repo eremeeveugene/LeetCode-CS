@@ -23,7 +23,7 @@ public sealed class StoneGame9Counting : IStoneGame9
     {
         var n = stones.Length;
 
-        var remainderCounts = new int[3];
+        Span<int> remainderCounts = stackalloc int[3];
 
         for (var i = 0; i < n; i++)
         {
