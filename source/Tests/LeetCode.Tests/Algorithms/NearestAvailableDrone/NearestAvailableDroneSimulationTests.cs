@@ -14,4 +14,4 @@ using LeetCode.Algorithms.NearestAvailableDrone;
 namespace LeetCode.Tests.Algorithms.NearestAvailableDrone;
 
 [TestClass]
-public sealed class NearestAvailableDroneIterativeTests : NearestAvailableDroneTestsBase<NearestAvailableDroneIterative>;
+public sealed class NearestAvailableDroneSimulationTests : NearestAvailableDroneTestsBase<NearestAvailableDroneSimulation>;

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.NearestAvailableDrone;
 
 /// <inheritdoc />
-public sealed class NearestAvailableDroneIterative : INearestAvailableDrone
+public sealed class NearestAvailableDroneSimulation : INearestAvailableDrone
 {
     /// <inheritdoc />
     /// <remarks>
