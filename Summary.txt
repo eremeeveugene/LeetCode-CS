@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/18/2026 - 5:02:41 PM
-  Coverage date: 8/18/2026 - 5:02:06 PM - 8/18/2026 - 5:02:33 PM
+  Generated on: 8/19/2026 - 3:07:23 PM
+  Coverage date: 8/19/2026 - 3:06:46 PM - 8/19/2026 - 3:07:12 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1359
-  Files: 1359
+  Classes: 1360
+  Files: 1360
   Line coverage: 100%
-  Covered lines: 31128
+  Covered lines: 31149
   Uncovered lines: 0
-  Coverable lines: 31128
-  Total lines: 76253
-  Branch coverage: 100% (11229 of 11229)
-  Covered branches: 11229
-  Total branches: 11229
-  Method coverage: 100% (2054 of 2054)
-  Full method coverage: 100% (2054 of 2054)
-  Covered methods: 2054
-  Fully covered methods: 2054
-  Total methods: 2054
+  Coverable lines: 31149
+  Total lines: 76307
+  Branch coverage: 100% (11235 of 11235)
+  Covered branches: 11235
+  Total branches: 11235
+  Method coverage: 100% (2055 of 2055)
+  Full method coverage: 100% (2055 of 2055)
+  Covered methods: 2055
+  Fully covered methods: 2055
+  Total methods: 2055
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -903,6 +903,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NaryTreePostorderTraversal.NaryTreePostorderTraversalTwoStacks                                                                     100%
   LeetCode.Algorithms.NaryTreePreorderTraversal.NaryTreePreorderTraversalRecursive                                                                       100%
   LeetCode.Algorithms.NaryTreePreorderTraversal.NaryTreePreorderTraversalStack                                                                           100%
+  LeetCode.Algorithms.NearestAvailableDrone.NearestAvailableDroneSimulation                                                                              100%
   LeetCode.Algorithms.NeighboringBitwiseXOR.NeighboringBitwiseXORIterative                                                                               100%
   LeetCode.Algorithms.NeitherMinimumNorMaximum.NeitherMinimumNorMaximumUsingMinMaxComparison                                                             100%
   LeetCode.Algorithms.NeitherMinimumNorMaximum.NeitherMinimumNorMaximumUsingSorting                                                                      100%
