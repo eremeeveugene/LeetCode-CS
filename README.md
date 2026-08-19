@@ -958,6 +958,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3986. Number of Elapsed Seconds Between Two Times](https://leetcode.com/problems/number-of-elapsed-seconds-between-two-times/description/)
 - [3992. Rearrange String to Avoid Character Pair](https://leetcode.com/problems/rearrange-string-to-avoid-character-pair/description/)
 - [4000. Largest Integer With Given Digit Sum](https://leetcode.com/problems/largest-integer-with-given-digit-sum/description/)
+- [4024. Nearest Available Drone](https://leetcode.com/problems/nearest-available-drone/description/)
 
   </p>
 </details>
