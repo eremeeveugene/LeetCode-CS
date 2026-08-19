@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/19/2026 - 3:07:23 PM
-  Coverage date: 8/19/2026 - 3:06:46 PM - 8/19/2026 - 3:07:12 PM
+  Generated on: 8/19/2026 - 3:25:29 PM
+  Coverage date: 8/19/2026 - 3:24:54 PM - 8/19/2026 - 3:25:19 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1360
-  Files: 1360
+  Classes: 1361
+  Files: 1361
   Line coverage: 100%
-  Covered lines: 31149
+  Covered lines: 31162
   Uncovered lines: 0
-  Coverable lines: 31149
-  Total lines: 76307
-  Branch coverage: 100% (11235 of 11235)
-  Covered branches: 11235
-  Total branches: 11235
-  Method coverage: 100% (2055 of 2055)
-  Full method coverage: 100% (2055 of 2055)
-  Covered methods: 2055
-  Fully covered methods: 2055
-  Total methods: 2055
+  Coverable lines: 31162
+  Total lines: 76349
+  Branch coverage: 100% (11241 of 11241)
+  Covered branches: 11241
+  Total branches: 11241
+  Method coverage: 100% (2056 of 2056)
+  Full method coverage: 100% (2056 of 2056)
+  Covered methods: 2056
+  Fully covered methods: 2056
+  Total methods: 2056
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1222,6 +1222,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.StoneGame.StoneGameDynamicProgramming                                                                                              100%
   LeetCode.Algorithms.StoneGame.StoneGameMathematical                                                                                                    100%
   LeetCode.Algorithms.StoneGame2.StoneGame2DynamicProgramming                                                                                            100%
+  LeetCode.Algorithms.StoneGame9.StoneGame9Counting                                                                                                      100%
   LeetCode.Algorithms.StrangePrinter.StrangePrinterDynamicProgramming                                                                                    100%
   LeetCode.Algorithms.StringCompression3.StringCompression3StringBuilder                                                                                 100%
   LeetCode.Algorithms.StringMatchingInAnArray.StringMatchingInAnArrayBruteForce                                                                          100%
