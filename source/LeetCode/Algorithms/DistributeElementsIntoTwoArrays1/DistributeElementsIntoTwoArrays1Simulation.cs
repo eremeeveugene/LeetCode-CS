@@ -35,7 +35,7 @@ public sealed class DistributeElementsIntoTwoArrays1Simulation : IDistributeElem
 
         var numsIndex = 0;
 
-        for (var i = 0; i < n; i++)
+        for (var i = 0; i < array1.Count; i++)
         {
             nums[numsIndex] = array1[i];
 
@@ -43,7 +43,7 @@ public sealed class DistributeElementsIntoTwoArrays1Simulation : IDistributeElem
         }
 
 
-        for (var i = 0; i < n; i++)
+        for (var i = 0; i < array2.Count; i++)
         {
             nums[numsIndex] = array2[i];
 
