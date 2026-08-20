@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/19/2026 - 3:25:29 PM
-  Coverage date: 8/19/2026 - 3:24:54 PM - 8/19/2026 - 3:25:19 PM
+  Generated on: 8/20/2026 - 10:00:53 AM
+  Coverage date: 8/20/2026 - 10:00:19 AM - 8/20/2026 - 10:00:45 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1361
-  Files: 1361
+  Classes: 1363
+  Files: 1363
   Line coverage: 100%
-  Covered lines: 31162
+  Covered lines: 31223
   Uncovered lines: 0
-  Coverable lines: 31162
-  Total lines: 76349
-  Branch coverage: 100% (11241 of 11241)
-  Covered branches: 11241
-  Total branches: 11241
-  Method coverage: 100% (2056 of 2056)
-  Full method coverage: 100% (2056 of 2056)
-  Covered methods: 2056
-  Fully covered methods: 2056
-  Total methods: 2056
+  Coverable lines: 31223
+  Total lines: 76481
+  Branch coverage: 100% (11257 of 11257)
+  Covered branches: 11257
+  Total branches: 11257
+  Method coverage: 100% (2058 of 2058)
+  Full method coverage: 100% (2058 of 2058)
+  Covered methods: 2058
+  Fully covered methods: 2058
+  Total methods: 2058
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -328,6 +328,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.DistributeCandies.DistributeCandiesLookupSpan                                                                                      100%
   LeetCode.Algorithms.DistributeCandiesAmongChildren2.DistributeCandiesAmongChildren2Math                                                                100%
   LeetCode.Algorithms.DistributeCoinsInBinaryTree.DistributeCoinsInBinaryTreeDepthFirstSearch                                                            100%
+  LeetCode.Algorithms.DistributeElementsIntoTwoArrays1.DistributeElementsIntoTwoArrays1Simulation                                                        100%
+  LeetCode.Algorithms.DistributeElementsIntoTwoArrays1.DistributeElementsIntoTwoArrays1SimulationBuffer                                                  100%
   LeetCode.Algorithms.DistributeMoneyToMaximumChildren.DistributeMoneyToMaximumChildrenLinear                                                            100%
   LeetCode.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers.DivideArrayInSetsOfKConsecutiveNumbersDictionary                                            100%
   LeetCode.Algorithms.DivideArrayInSetsOfKConsecutiveNumbers.DivideArrayInSetsOfKConsecutiveNumbersSortedDictionary                                      100%
