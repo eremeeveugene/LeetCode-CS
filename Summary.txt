@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/22/2026 - 3:55:25 PM
-  Coverage date: 8/22/2026 - 3:54:56 PM - 8/22/2026 - 3:55:18 PM
+  Generated on: 8/22/2026 - 4:13:18 PM
+  Coverage date: 8/22/2026 - 4:12:47 PM - 8/22/2026 - 4:13:08 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1363
-  Files: 1363
+  Classes: 1364
+  Files: 1364
   Line coverage: 100%
-  Covered lines: 31223
+  Covered lines: 31244
   Uncovered lines: 0
-  Coverable lines: 31223
-  Total lines: 76481
-  Branch coverage: 100% (11257 of 11257)
-  Covered branches: 11257
-  Total branches: 11257
-  Method coverage: 100% (2058 of 2058)
-  Full method coverage: 100% (2058 of 2058)
-  Covered methods: 2058
-  Fully covered methods: 2058
-  Total methods: 2058
+  Coverable lines: 31244
+  Total lines: 76534
+  Branch coverage: 100% (11267 of 11267)
+  Covered branches: 11267
+  Total branches: 11267
+  Method coverage: 100% (2059 of 2059)
+  Full method coverage: 100% (2059 of 2059)
+  Covered methods: 2059
+  Fully covered methods: 2059
+  Total methods: 2059
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -260,6 +260,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountTotalNumberOfColoredCells.CountTotalNumberOfColoredCellsMath                                                                  100%
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                                   100%
   LeetCode.Algorithms.CountUnguardedCellsInTheGrid.CountUnguardedCellsInTheGridSimulation                                                                100%
+  LeetCode.Algorithms.CountValidPrefixes.CountValidPrefixesCounting                                                                                      100%
   LeetCode.Algorithms.CountVowelStringsInRanges.CountVowelStringsInRangesPrefixSum                                                                       100%
   LeetCode.Algorithms.CouponCodeValidator.CouponCodeValidatorBucketSort                                                                                  100%
   LeetCode.Algorithms.CousinsInBinaryTree2.CousinsInBinaryTree2BreadthFirstSearch                                                                        100%
