@@ -16,7 +16,7 @@ public sealed class CheckDivisibilityByDigitSumAndProductIterative : ICheckDivis
 {
     /// <inheritdoc />
     /// <remarks>
-    ///     Time complexity - O(n)
+    ///     Time complexity - O(log n)
     ///     Space complexity - O(1)
     /// </remarks>
     public bool CheckDivisibility(int n)
