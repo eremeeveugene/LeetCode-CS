@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/22/2026 - 4:29:18 PM
-  Coverage date: 8/22/2026 - 4:28:36 PM - 8/22/2026 - 4:29:00 PM
+  Generated on: 8/28/2026 - 11:50:20 AM
+  Coverage date: 8/28/2026 - 11:49:48 AM - 8/28/2026 - 11:50:12 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1365
-  Files: 1365
+  Classes: 1366
+  Files: 1366
   Line coverage: 100%
-  Covered lines: 31256
+  Covered lines: 31267
   Uncovered lines: 0
-  Coverable lines: 31256
-  Total lines: 76574
-  Branch coverage: 100% (11269 of 11269)
-  Covered branches: 11269
-  Total branches: 11269
-  Method coverage: 100% (2060 of 2060)
-  Full method coverage: 100% (2060 of 2060)
-  Covered methods: 2060
-  Fully covered methods: 2060
-  Total methods: 2060
+  Coverable lines: 31267
+  Total lines: 76610
+  Branch coverage: 100% (11275 of 11275)
+  Covered branches: 11275
+  Total branches: 11275
+  Method coverage: 100% (2061 of 2061)
+  Full method coverage: 100% (2061 of 2061)
+  Covered methods: 2061
+  Fully covered methods: 2061
+  Total methods: 2061
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1043,6 +1043,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RearrangeStringToAvoidCharacterPair.RearrangeStringToAvoidCharacterPairSorting                                                     100%
   LeetCode.Algorithms.RearrangeStringToAvoidCharacterPair.RearrangeStringToAvoidCharacterPairSwap                                                        100%
   LeetCode.Algorithms.RecoverTreeFromPreorderTraversal.RecoverTreeFromPreorderTraversalDepthFirstSearch                                                  100%
+  LeetCode.Algorithms.RectangleOverlap.RectangleOverlapMath                                                                                              100%
   LeetCode.Algorithms.RegionsCutBySlashes.RegionsCutBySlashesDepthFirstSearch                                                                            100%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksBruteForce                                                                                              100%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksTuple                                                                                                   100%
