@@ -319,6 +319,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [824. Goat Latin](https://leetcode.com/problems/goat-latin/description/)
 - [832. Flipping an Image](https://leetcode.com/problems/flipping-an-image/description/)
 - [834. Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/description/)
+- [836. Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/description/)
 - [837. New 21 Game](https://leetcode.com/problems/new-21-game/description/)
 - [838. Push Dominoes](https://leetcode.com/problems/push-dominoes/description/)
 - [840. Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid/description/)
