@@ -9,9 +9,28 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.RectangleOverlap;
+namespace LeetCode.Algorithms.RectangleOverlap;
 
-namespace LeetCode.Tests.Algorithms.RectangleOverlap;
+/// <inheritdoc />
+public sealed class RectangleOverlapMath : IRectangleOverlap
+{
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    public bool IsRectangleOverlap(int[] rec1, int[] rec2)
+    {
+        var rec1X1 = rec1[0];
+        var rec1Y1 = rec1[1];
+        var rec1X2 = rec1[2];
+        var rec1Y2 = rec1[3];
 
-[TestClass]
-public sealed class RectangleOverlapBoundaryComparisonTests : RectangleOverlapTestsBase<RectangleOverlapBoundaryComparison>;
+        var rec2X1 = rec2[0];
+        var rec2Y1 = rec2[1];
+        var rec2X2 = rec2[2];
+        var rec2Y2 = rec2[3];
+
+        return rec2X1 < rec1X2 && rec2Y1 < rec1Y2 && rec1X1 < rec2X2 && rec1Y1 < rec2Y2;
+    }
+}
