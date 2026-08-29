@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MakeLexicographicallySmallestArrayBySwappingElements;
 
 /// <inheritdoc />
-public sealed class MakeLexicographicallySmallestArrayBySwappingElementsSorting : IMakeLexicographicallySmallestArrayBySwappingElements
+public sealed class MakeLexicographicallySmallestArrayBySwappingElementsSortingTwoPointers : IMakeLexicographicallySmallestArrayBySwappingElements
 {
     /// <inheritdoc />
     /// <remarks>
