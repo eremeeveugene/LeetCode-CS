@@ -14,5 +14,5 @@ using LeetCode.Algorithms.RemovingMinimumAndMaximumFromArray;
 namespace LeetCode.Tests.Algorithms.RemovingMinimumAndMaximumFromArray;
 
 [TestClass]
-public sealed class RemovingMinimumAndMaximumFromArrayGreedyTests
-    : RemovingMinimumAndMaximumFromArrayTestsBase<RemovingMinimumAndMaximumFromArrayGreedy>;
+public sealed class RemovingMinimumAndMaximumFromArraySimulationTests
+    : RemovingMinimumAndMaximumFromArrayTestsBase<RemovingMinimumAndMaximumFromArraySimulation>;

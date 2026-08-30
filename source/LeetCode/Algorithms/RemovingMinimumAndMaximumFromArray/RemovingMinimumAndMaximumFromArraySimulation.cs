@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.RemovingMinimumAndMaximumFromArray;
 
 /// <inheritdoc />
-public sealed class RemovingMinimumAndMaximumFromArrayGreedy : IRemovingMinimumAndMaximumFromArray
+public sealed class RemovingMinimumAndMaximumFromArraySimulation : IRemovingMinimumAndMaximumFromArray
 {
     /// <inheritdoc />
     /// <remarks>
