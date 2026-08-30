@@ -769,6 +769,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2938. Separate Black and White Balls](https://leetcode.com/problems/separate-black-and-white-balls/description/)
 - [2942. Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/description/)
 - [2946. Matrix Similarity After Cyclic Shifts](https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/description/)
+- [2948. Make Lexicographically Smallest Array by Swapping Elements](https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/description/)
 - [2956. Find Common Elements Between Two Arrays](https://leetcode.com/problems/find-common-elements-between-two-arrays/description/)
 - [2958. Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/description/)
 - [2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/description/)
