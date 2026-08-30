@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/30/2026 - 12:46:19 PM
-  Coverage date: 8/30/2026 - 12:45:45 PM - 8/30/2026 - 12:46:10 PM
+  Generated on: 8/30/2026 - 4:27:41 PM
+  Coverage date: 8/30/2026 - 4:27:12 PM - 8/30/2026 - 4:27:33 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1369
-  Files: 1369
+  Classes: 1370
+  Files: 1370
   Line coverage: 100%
-  Covered lines: 31395
+  Covered lines: 31421
   Uncovered lines: 0
-  Coverable lines: 31395
-  Total lines: 76902
-  Branch coverage: 100% (11321 of 11321)
-  Covered branches: 11321
-  Total branches: 11321
-  Method coverage: 100% (2067 of 2067)
-  Full method coverage: 100% (2067 of 2067)
-  Covered methods: 2067
-  Fully covered methods: 2067
-  Total methods: 2067
+  Coverable lines: 31421
+  Total lines: 76973
+  Branch coverage: 100% (11325 of 11325)
+  Covered branches: 11325
+  Total branches: 11325
+  Method coverage: 100% (2069 of 2069)
+  Full method coverage: 100% (2069 of 2069)
+  Covered methods: 2069
+  Fully covered methods: 2069
+  Total methods: 2069
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -857,6 +857,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumOperationsToConvertAllElementsToZero.MinimumOperationsToConvertAllElementsToZeroStackAsList                                 100%
   LeetCode.Algorithms.MinimumOperationsToConvertAllElementsToZero.MinimumOperationsToConvertAllElementsToZeroStackAsSpan                                 100%
   LeetCode.Algorithms.MinimumOperationsToExceedThresholdValue2.MinimumOperationsToExceedThresholdValue2PriorityQueue                                     100%
+  LeetCode.Algorithms.MinimumOperationsToMakeArrayElementsZero.MinimumOperationsToMakeArrayElementsZeroPrefixSum                                         100%
   LeetCode.Algorithms.MinimumOperationsToMakeArraySumDivisibleByK.MinimumOperationsToMakeArraySumDivisibleByKGreedy                                      100%
   LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK.MinimumOperationsToMakeArrayValuesEqualToKHashSet                                       100%
   LeetCode.Algorithms.MinimumOperationsToMakeArrayValuesEqualToK.MinimumOperationsToMakeArrayValuesEqualToKSeenArray                                     100%
