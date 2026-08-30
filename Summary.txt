@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/28/2026 - 11:50:20 AM
-  Coverage date: 8/28/2026 - 11:49:48 AM - 8/28/2026 - 11:50:12 AM
+  Generated on: 8/30/2026 - 10:06:25 AM
+  Coverage date: 8/30/2026 - 10:05:53 AM - 8/30/2026 - 10:06:17 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1366
-  Files: 1366
+  Classes: 1367
+  Files: 1367
   Line coverage: 100%
-  Covered lines: 31267
+  Covered lines: 31309
   Uncovered lines: 0
-  Coverable lines: 31267
-  Total lines: 76610
-  Branch coverage: 100% (11275 of 11275)
-  Covered branches: 11275
-  Total branches: 11275
-  Method coverage: 100% (2061 of 2061)
-  Full method coverage: 100% (2061 of 2061)
-  Covered methods: 2061
-  Fully covered methods: 2061
-  Total methods: 2061
+  Coverable lines: 31309
+  Total lines: 76707
+  Branch coverage: 100% (11285 of 11285)
+  Covered branches: 11285
+  Total branches: 11285
+  Method coverage: 100% (2063 of 2063)
+  Full method coverage: 100% (2063 of 2063)
+  Covered methods: 2063
+  Fully covered methods: 2063
+  Total methods: 2063
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -666,6 +666,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MajorityFrequencyCharacters.MajorityFrequencyCharactersFrequencyDictionary                                                         100%
   LeetCode.Algorithms.MajorityFrequencyCharacters.MajorityFrequencyCharactersFrequencySpan                                                               100%
   LeetCode.Algorithms.MakeArrayElementsEqualToZero.MakeArrayElementsEqualToZeroPrefixSum                                                                 100%
+  LeetCode.Algorithms.MakeLexicographicallySmallestArrayBySwappingElements.MakeLexicographicallySmallestArrayBySwappingElementsSortingTwoPointers        100%
   LeetCode.Algorithms.MakeStringSubsequenceUsingCyclicIncrements.MakeStringSubsequenceUsingCyclicIncrementsTwoPointers                                   100%
   LeetCode.Algorithms.MakeSumDivisibleByP.MakeSumDivisibleByPPrefixSum                                                                                   100%
   LeetCode.Algorithms.MakeTheStringGreat.MakeTheStringGreatIterative                                                                                     100%
