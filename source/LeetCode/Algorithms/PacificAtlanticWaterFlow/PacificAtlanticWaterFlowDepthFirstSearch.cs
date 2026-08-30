@@ -14,7 +14,9 @@ namespace LeetCode.Algorithms.PacificAtlanticWaterFlow;
 /// <inheritdoc />
 public sealed class PacificAtlanticWaterFlowDepthFirstSearch : IPacificAtlanticWaterFlow
 {
-    private static readonly (int Row, int Column)[] Directions = [(1, 0), (-1, 0), (0, 1), (0, -1)];
+    private const byte PacificOcean = 1;
+    private const byte AtlanticOcean = 2;
+    private const byte BothOceans = PacificOcean + AtlanticOcean;
 
     /// <inheritdoc />
     /// <remarks>
@@ -28,22 +30,21 @@ public sealed class PacificAtlanticWaterFlowDepthFirstSearch : IPacificAtlanticW
 
         var cellCount = m * n;
 
-        Span<bool> isPacificReachable = stackalloc bool[cellCount];
-        Span<bool> isAtlanticReachable = stackalloc bool[cellCount];
+        Span<byte> reachability = stackalloc byte[cellCount];
 
         for (var row = 0; row < m; row++)
         {
-            MarkReachableCells(heights, isPacificReachable, row, 0, m, n);
-            MarkReachableCells(heights, isAtlanticReachable, row, n - 1, m, n);
+            MarkReachableCells(heights, reachability, row, 0, PacificOcean, m, n);
+            MarkReachableCells(heights, reachability, row, n - 1, AtlanticOcean, m, n);
         }
 
         for (var column = 0; column < n; column++)
         {
-            MarkReachableCells(heights, isPacificReachable, 0, column, m, n);
-            MarkReachableCells(heights, isAtlanticReachable, m - 1, column, m, n);
+            MarkReachableCells(heights, reachability, 0, column, PacificOcean, m, n);
+            MarkReachableCells(heights, reachability, m - 1, column, AtlanticOcean, m, n);
         }
 
-        var result = new List<IList<int>>();
+        var result = new List<IList<int>>(cellCount);
 
         for (var row = 0; row < m; row++)
         {
@@ -51,15 +52,12 @@ public sealed class PacificAtlanticWaterFlowDepthFirstSearch : IPacificAtlanticW
             {
                 var cellIndex = GetCellIndex(row, column, n);
 
-                var canReachPacific = isPacificReachable[cellIndex];
-                var canReachAtlantic = isAtlanticReachable[cellIndex];
-
-                if (!canReachPacific || !canReachAtlantic)
+                if (reachability[cellIndex] != BothOceans)
                 {
                     continue;
                 }
 
-                result.Add([row, column]);
+                result.Add(new[] { row, column });
             }
         }
 
@@ -67,43 +65,51 @@ public sealed class PacificAtlanticWaterFlowDepthFirstSearch : IPacificAtlanticW
     }
 
     /// <summary>
-    ///     Marks every cell reachable from the specified ocean by traversing from the current cell to adjacent cells of equal or greater height.
+    ///     Marks every cell reachable from the specified ocean by recursively traversing to adjacent cells of equal or greater height.
     /// </summary>
     /// <remarks>
-    ///     Across all calls that share <paramref name="isReachable" />, each cell is processed at most once.
+    ///     Each cell is processed at most once for the specified ocean.
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(m * n) in the worst case for the recursion stack
     /// </remarks>
     /// <param name="heights">The matrix of cell heights.</param>
-    /// <param name="isReachable">The row-major buffer recording cells that can reach the current ocean.</param>
-    /// <param name="row">The current row.</param>
-    /// <param name="column">The current column.</param>
+    /// <param name="reachability">The row-major buffer recording ocean reachability flags.</param>
+    /// <param name="row">The current cell row.</param>
+    /// <param name="column">The current cell column.</param>
+    /// <param name="ocean">The flag identifying the ocean being traversed.</param>
     /// <param name="m">The number of rows in <paramref name="heights" />.</param>
     /// <param name="n">The number of columns in <paramref name="heights" />.</param>
-    private static void MarkReachableCells(int[][] heights, Span<bool> isReachable, int row, int column, int m, int n)
+    private static void MarkReachableCells(int[][] heights, Span<byte> reachability, int row, int column, byte ocean, int m, int n)
     {
         var cellIndex = GetCellIndex(row, column, n);
 
-        if (isReachable[cellIndex])
+        if ((reachability[cellIndex] & ocean) == ocean)
         {
             return;
         }
 
-        isReachable[cellIndex] = true;
+        reachability[cellIndex] += ocean;
 
-        for (var i = 0; i < Directions.Length; i++)
+        var height = heights[row][column];
+
+        if (row > 0 && heights[row - 1][column] >= height)
         {
-            var direction = Directions[i];
+            MarkReachableCells(heights, reachability, row - 1, column, ocean, m, n);
+        }
 
-            var nextRow = row + direction.Row;
-            var nextColumn = column + direction.Column;
+        if (row < m - 1 && heights[row + 1][column] >= height)
+        {
+            MarkReachableCells(heights, reachability, row + 1, column, ocean, m, n);
+        }
 
-            if (nextRow < 0 || nextColumn < 0 || nextRow >= m || nextColumn >= n || heights[nextRow][nextColumn] < heights[row][column])
-            {
-                continue;
-            }
+        if (column > 0 && heights[row][column - 1] >= height)
+        {
+            MarkReachableCells(heights, reachability, row, column - 1, ocean, m, n);
+        }
 
-            MarkReachableCells(heights, isReachable, nextRow, nextColumn, m, n);
+        if (column < n - 1 && heights[row][column + 1] >= height)
+        {
+            MarkReachableCells(heights, reachability, row, column + 1, ocean, m, n);
         }
     }
 
