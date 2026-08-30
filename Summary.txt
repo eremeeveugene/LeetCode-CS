@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/30/2026 - 10:06:25 AM
-  Coverage date: 8/30/2026 - 10:05:53 AM - 8/30/2026 - 10:06:17 AM
+  Generated on: 8/30/2026 - 11:00:54 AM
+  Coverage date: 8/30/2026 - 11:00:11 AM - 8/30/2026 - 11:00:37 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1367
-  Files: 1367
+  Classes: 1368
+  Files: 1368
   Line coverage: 100%
-  Covered lines: 31309
+  Covered lines: 31339
   Uncovered lines: 0
-  Coverable lines: 31309
-  Total lines: 76707
-  Branch coverage: 100% (11285 of 11285)
-  Covered branches: 11285
-  Total branches: 11285
-  Method coverage: 100% (2063 of 2063)
-  Full method coverage: 100% (2063 of 2063)
-  Covered methods: 2063
-  Fully covered methods: 2063
-  Total methods: 2063
+  Coverable lines: 31339
+  Total lines: 76771
+  Branch coverage: 100% (11293 of 11293)
+  Covered branches: 11293
+  Total branches: 11293
+  Method coverage: 100% (2064 of 2064)
+  Full method coverage: 100% (2064 of 2064)
+  Covered methods: 2064
+  Fully covered methods: 2064
+  Total methods: 2064
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1069,6 +1069,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RemoveZerosInDecimalRepresentation.RemoveZerosInDecimalRepresentationSimulation                                                    100%
   LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce                                  100%
   LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListDictionary                                  100%
+  LeetCode.Algorithms.RemovingMinimumAndMaximumFromArray.RemovingMinimumAndMaximumFromArraySimulation                                                    100%
   LeetCode.Algorithms.ReorderedPowerOfTwo.ReorderedPowerOfTwoFrequencyArray                                                                              100%
   LeetCode.Algorithms.ReorderList.ReorderListTwoPointers                                                                                                 100%
   LeetCode.Algorithms.RepeatedSubstringPattern.RepeatedSubstringPatternConcat                                                                            100%
