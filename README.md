@@ -856,6 +856,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3342. Find Minimum Time to Reach Last Room II](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/description/)
 - [3345. Smallest Divisible Digit Product I](https://leetcode.com/problems/smallest-divisible-digit-product-i/description/)
 - [3349. Adjacent Increasing Subarrays Detection I](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/description/)
+- [3350. Adjacent Increasing Subarrays Detection II](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/description/)
 - [3354. Make Array Elements Equal to Zero](https://leetcode.com/problems/make-array-elements-equal-to-zero/description/)
 - [3355. Zero Array Transformation I](https://leetcode.com/problems/zero-array-transformation-i/description/)
 - [3362. Zero Array Transformation III](https://leetcode.com/problems/zero-array-transformation-iii/description/)
