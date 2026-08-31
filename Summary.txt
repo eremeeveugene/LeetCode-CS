@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/30/2026 - 4:27:41 PM
-  Coverage date: 8/30/2026 - 4:27:12 PM - 8/30/2026 - 4:27:33 PM
+  Generated on: 8/31/2026 - 9:38:28 AM
+  Coverage date: 8/31/2026 - 9:37:54 AM - 8/31/2026 - 9:38:20 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1370
-  Files: 1370
+  Classes: 1371
+  Files: 1371
   Line coverage: 100%
-  Covered lines: 31421
+  Covered lines: 31444
   Uncovered lines: 0
-  Coverable lines: 31421
-  Total lines: 76973
-  Branch coverage: 100% (11325 of 11325)
-  Covered branches: 11325
-  Total branches: 11325
-  Method coverage: 100% (2069 of 2069)
-  Full method coverage: 100% (2069 of 2069)
-  Covered methods: 2069
-  Fully covered methods: 2069
-  Total methods: 2069
+  Coverable lines: 31444
+  Total lines: 77028
+  Branch coverage: 100% (11329 of 11329)
+  Covered branches: 11329
+  Total branches: 11329
+  Method coverage: 100% (2070 of 2070)
+  Full method coverage: 100% (2070 of 2070)
+  Covered methods: 2070
+  Fully covered methods: 2070
+  Total methods: 2070
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -39,6 +39,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.AddTwoNumbers2.AddTwoNumbers2Reverse                                                                                               100%
   LeetCode.Algorithms.AddTwoNumbers2.AddTwoNumbers2Stack                                                                                                 100%
   LeetCode.Algorithms.AdjacentIncreasingSubarraysDetection1.AdjacentIncreasingSubarraysDetection1Greedy                                                  100%
+  LeetCode.Algorithms.AdjacentIncreasingSubarraysDetection2.AdjacentIncreasingSubarraysDetection2SlidingWindow                                           100%
   LeetCode.Algorithms.AliceAndBobPlayingFlowerGame.AliceAndBobPlayingFlowerGameMath                                                                      100%
   LeetCode.Algorithms.AllOneDataStructure.AllOneDataStructureLinkedList                                                                                  100%
   LeetCode.Algorithms.AlternatingGroups2.AlternatingGroups2BruteForce                                                                                    100%
