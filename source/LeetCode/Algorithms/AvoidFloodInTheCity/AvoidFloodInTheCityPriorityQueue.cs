@@ -25,26 +25,7 @@ public sealed class AvoidFloodInTheCityPriorityQueue : IAvoidFloodInTheCity
 
         Span<int> nextRainDays = stackalloc int[n];
 
-        nextRainDays.Fill(n);
-
-        var lakeToNextRainDayDictionary = new Dictionary<int, int>();
-
-        for (var day = n - 1; day >= 0; day--)
-        {
-            var lake = rains[day];
-
-            if (lake == 0)
-            {
-                continue;
-            }
-
-            if (lakeToNextRainDayDictionary.TryGetValue(lake, out var nextRainDay))
-            {
-                nextRainDays[day] = nextRainDay;
-            }
-
-            lakeToNextRainDayDictionary[lake] = day;
-        }
+        FillNextRainDays(rains, nextRainDays);
 
         var fullLakesHashSet = new HashSet<int>();
         var lakesToDryPriorityQueue = new PriorityQueue<int, int>();
@@ -55,16 +36,7 @@ public sealed class AvoidFloodInTheCityPriorityQueue : IAvoidFloodInTheCity
 
             if (lake == 0)
             {
-                if (lakesToDryPriorityQueue.Count > 0)
-                {
-                    var lakeToDry = lakesToDryPriorityQueue.Dequeue();
-
-                    rains[day] = lakeToDry;
-                }
-                else
-                {
-                    rains[day] = 1;
-                }
+                rains[day] = lakesToDryPriorityQueue.Count > 0 ? lakesToDryPriorityQueue.Dequeue() : 1;
 
                 fullLakesHashSet.Remove(rains[day]);
 
@@ -87,5 +59,40 @@ public sealed class AvoidFloodInTheCityPriorityQueue : IAvoidFloodInTheCity
         }
 
         return rains;
+    }
+
+    /// <summary>
+    ///     Fills each rainy day's next rainfall day for the same lake.
+    /// </summary>
+    /// <remarks>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(n)
+    /// </remarks>
+    /// <param name="rains">The rainfall schedule.</param>
+    /// <param name="nextRainDays">The destination for the next rainfall days.</param>
+    private static void FillNextRainDays(int[] rains, Span<int> nextRainDays)
+    {
+        var n = rains.Length;
+
+        nextRainDays.Fill(n);
+
+        var lakeToNextRainDayDictionary = new Dictionary<int, int>();
+
+        for (var day = n - 1; day >= 0; day--)
+        {
+            var lake = rains[day];
+
+            if (lake == 0)
+            {
+                continue;
+            }
+
+            if (lakeToNextRainDayDictionary.TryGetValue(lake, out var nextRainDay))
+            {
+                nextRainDays[day] = nextRainDay;
+            }
+
+            lakeToNextRainDayDictionary[lake] = day;
+        }
     }
 }
