@@ -14,5 +14,4 @@ using LeetCode.Algorithms.AvoidFloodInTheCity;
 namespace LeetCode.Tests.Algorithms.AvoidFloodInTheCity;
 
 [TestClass]
-public class AvoidFloodInTheCityPriorityQueueTests
-    : AvoidFloodInTheCityTestsBase<AvoidFloodInTheCityPriorityQueue>;
+public class AvoidFloodInTheCityPriorityQueueTests : AvoidFloodInTheCityTestsBase<AvoidFloodInTheCityPriorityQueue>;
