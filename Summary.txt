@@ -1,23 +1,23 @@
 Summary
-  Generated on: 8/31/2026 - 9:38:28 AM
-  Coverage date: 8/31/2026 - 9:37:54 AM - 8/31/2026 - 9:38:20 AM
+  Generated on: 9/5/2026 - 1:21:42 PM
+  Coverage date: 9/5/2026 - 1:21:08 PM - 9/5/2026 - 1:21:33 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1371
-  Files: 1371
+  Classes: 1372
+  Files: 1372
   Line coverage: 100%
-  Covered lines: 31444
+  Covered lines: 31487
   Uncovered lines: 0
-  Coverable lines: 31444
-  Total lines: 77028
-  Branch coverage: 100% (11329 of 11329)
-  Covered branches: 11329
-  Total branches: 11329
-  Method coverage: 100% (2070 of 2070)
-  Full method coverage: 100% (2070 of 2070)
-  Covered methods: 2070
-  Fully covered methods: 2070
-  Total methods: 2070
+  Coverable lines: 31487
+  Total lines: 77126
+  Branch coverage: 100% (11345 of 11345)
+  Covered branches: 11345
+  Total branches: 11345
+  Method coverage: 100% (2072 of 2072)
+  Full method coverage: 100% (2072 of 2072)
+  Covered methods: 2072
+  Fully covered methods: 2072
+  Total methods: 2072
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -58,6 +58,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.AssignCookies.AssignCookiesSorting                                                                                                 100%
   LeetCode.Algorithms.AvailableCapturesForRook.AvailableCapturesForRookSimulation                                                                        100%
   LeetCode.Algorithms.AverageSalaryExcludingTheMinimumAndMaximumSalary.AverageSalaryExcludingTheMinimumAndMaximumSalaryIterative                         100%
+  LeetCode.Algorithms.AvoidFloodInTheCity.AvoidFloodInTheCityPriorityQueue                                                                               100%
   LeetCode.Algorithms.BagOfTokens.BagOfTokensTwoPointers                                                                                                 100%
   LeetCode.Algorithms.BalancedBinaryTree.BalancedBinaryTreeDepthFirstSearch                                                                              100%
   LeetCode.Algorithms.BaseballGame.BaseballGameIterative                                                                                                 100%
