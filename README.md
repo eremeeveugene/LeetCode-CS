@@ -954,6 +954,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3894. Traffic Signal Color](https://leetcode.com/problems/traffic-signal-color/description/)
 - [3898. Find the Degree of Each Vertex](https://leetcode.com/problems/find-the-degree-of-each-vertex/description/)
 - [3903. Smallest Stable Index I](https://leetcode.com/problems/smallest-stable-index-i/description/)
+- [3904. Smallest Stable Index II](https://leetcode.com/problems/smallest-stable-index-ii/description/)
 - [3908. Valid Digit Number](https://leetcode.com/problems/valid-digit-number/description/)
 - [3912. Valid Elements in an Array](https://leetcode.com/problems/valid-elements-in-an-array/description/)
 - [3917. Count Indices With Opposite Parity](https://leetcode.com/problems/count-indices-with-opposite-parity/description/)
