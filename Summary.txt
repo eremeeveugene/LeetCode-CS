@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/6/2026 - 9:04:29 AM
-  Coverage date: 9/6/2026 - 9:03:44 AM - 9/6/2026 - 9:04:17 AM
+  Generated on: 9/6/2026 - 2:35:55 PM
+  Coverage date: 9/6/2026 - 2:35:20 PM - 9/6/2026 - 2:35:47 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1374
-  Files: 1374
+  Classes: 1376
+  Files: 1376
   Line coverage: 100%
-  Covered lines: 31532
+  Covered lines: 31574
   Uncovered lines: 0
-  Coverable lines: 31532
-  Total lines: 77238
-  Branch coverage: 100% (11359 of 11359)
-  Covered branches: 11359
-  Total branches: 11359
-  Method coverage: 100% (2074 of 2074)
-  Full method coverage: 100% (2074 of 2074)
-  Covered methods: 2074
-  Fully covered methods: 2074
-  Total methods: 2074
+  Coverable lines: 31574
+  Total lines: 77350
+  Branch coverage: 100% (11379 of 11379)
+  Covered branches: 11379
+  Total branches: 11379
+  Method coverage: 100% (2076 of 2076)
+  Full method coverage: 100% (2076 of 2076)
+  Covered methods: 2076
+  Fully covered methods: 2076
+  Total methods: 2076
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -207,6 +207,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountingBits.CountingBitsDynamicProgramming                                                                                        100%
   LeetCode.Algorithms.CountingBits.CountingBitsIterative                                                                                                 100%
   LeetCode.Algorithms.CountingWordsWithGivenPrefix.CountingWordsWithGivenPrefixIterative                                                                 100%
+  LeetCode.Algorithms.CountIntegersAppearingInASingleBlock.CountIntegersAppearingInASingleBlockHashSet                                                   100%
+  LeetCode.Algorithms.CountIntegersAppearingInASingleBlock.CountIntegersAppearingInASingleBlockLookup                                                    100%
   LeetCode.Algorithms.CountLargestGroup.CountLargestGroupFrequencyArray                                                                                  100%
   LeetCode.Algorithms.CountLargestGroup.CountLargestGroupFrequencyDictionary                                                                             100%
   LeetCode.Algorithms.CountNegativeNumbersInSortedMatrix.CountNegativeNumbersInSortedMatrixBruteForceBottomRight                                         100%
