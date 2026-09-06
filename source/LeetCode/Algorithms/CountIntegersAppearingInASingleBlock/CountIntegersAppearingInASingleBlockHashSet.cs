@@ -31,9 +31,8 @@ public sealed class CountIntegersAppearingInASingleBlockHashSet : ICountIntegers
         for (var i = 0; i < n; i++)
         {
             var num = nums[i];
-            var previousNum = nums[i - 1];
 
-            if (i > 0 && num == previousNum)
+            if (i > 0 && num == nums[i - 1])
             {
                 continue;
             }
