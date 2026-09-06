@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/5/2026 - 1:21:42 PM
-  Coverage date: 9/5/2026 - 1:21:08 PM - 9/5/2026 - 1:21:33 PM
+  Generated on: 9/6/2026 - 9:04:29 AM
+  Coverage date: 9/6/2026 - 9:03:44 AM - 9/6/2026 - 9:04:17 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1372
-  Files: 1372
+  Classes: 1374
+  Files: 1374
   Line coverage: 100%
-  Covered lines: 31487
+  Covered lines: 31532
   Uncovered lines: 0
-  Coverable lines: 31487
-  Total lines: 77126
-  Branch coverage: 100% (11345 of 11345)
-  Covered branches: 11345
-  Total branches: 11345
-  Method coverage: 100% (2072 of 2072)
-  Full method coverage: 100% (2072 of 2072)
-  Covered methods: 2072
-  Fully covered methods: 2072
-  Total methods: 2072
+  Coverable lines: 31532
+  Total lines: 77238
+  Branch coverage: 100% (11359 of 11359)
+  Covered branches: 11359
+  Total branches: 11359
+  Method coverage: 100% (2074 of 2074)
+  Full method coverage: 100% (2074 of 2074)
+  Covered methods: 2074
+  Fully covered methods: 2074
+  Total methods: 2074
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1191,6 +1191,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.SmallestRangeCoveringElementsFromKLists.SmallestRangeCoveringElementsFromKListsSortingWithSlidingWindow                            100%
   LeetCode.Algorithms.SmallestStableIndex1.SmallestStableIndex1BruteForce                                                                                100%
   LeetCode.Algorithms.SmallestStableIndex1.SmallestStableIndex1PrefixSum                                                                                 100%
+  LeetCode.Algorithms.SmallestStableIndex2.SmallestStableIndex2BruteForce                                                                                100%
+  LeetCode.Algorithms.SmallestStableIndex2.SmallestStableIndex2PrefixSum                                                                                 100%
   LeetCode.Algorithms.SmallestStringStartingFromLeaf.SmallestStringStartingFromLeafDepthFirstSearch                                                      100%
   LeetCode.Algorithms.SmallestSubtreeWithAllTheDeepestNodes.SmallestSubtreeWithAllTheDeepestNodesDepthFirstSearch                                        100%
   LeetCode.Algorithms.SolvingQuestionsWithBrainpower.SolvingQuestionsWithBrainpowerDynamicProgramming                                                    100%
