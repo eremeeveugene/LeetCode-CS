@@ -971,6 +971,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [4006. Count Valid Prefixes](https://leetcode.com/problems/count-valid-prefixes/description/)
 - [4020. Elevator Requests I](https://leetcode.com/problems/elevator-requests-i/description/)
 - [4024. Nearest Available Drone](https://leetcode.com/problems/nearest-available-drone/description/)
+- [4038. Count Integers Appearing in a Single Block](https://leetcode.com/problems/count-integers-appearing-in-a-single-block/description/)
 
   </p>
 </details>
