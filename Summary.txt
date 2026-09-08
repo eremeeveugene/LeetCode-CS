@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/6/2026 - 2:35:55 PM
-  Coverage date: 9/6/2026 - 2:35:20 PM - 9/6/2026 - 2:35:47 PM
+  Generated on: 9/8/2026 - 8:46:23 AM
+  Coverage date: 9/8/2026 - 8:45:49 AM - 9/8/2026 - 8:46:15 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1376
-  Files: 1376
+  Classes: 1377
+  Files: 1377
   Line coverage: 100%
-  Covered lines: 31574
+  Covered lines: 31577
   Uncovered lines: 0
-  Coverable lines: 31574
-  Total lines: 77350
+  Coverable lines: 31577
+  Total lines: 77376
   Branch coverage: 100% (11379 of 11379)
   Covered branches: 11379
   Total branches: 11379
-  Method coverage: 100% (2076 of 2076)
-  Full method coverage: 100% (2076 of 2076)
-  Covered methods: 2076
-  Fully covered methods: 2076
-  Total methods: 2076
+  Method coverage: 100% (2077 of 2077)
+  Full method coverage: 100% (2077 of 2077)
+  Covered methods: 2077
+  Fully covered methods: 2077
+  Total methods: 2077
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -188,6 +188,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountAndSay.CountAndSayIterative                                                                                                   100%
   LeetCode.Algorithms.CountAndSay.CountAndSayPrecomputed                                                                                                 100%
   LeetCode.Algorithms.CountCollisionsOnRoad.CountCollisionsOnRoadTwoPointers                                                                             100%
+  LeetCode.Algorithms.CountCommasInRange.CountCommasInRangeMath                                                                                          100%
   LeetCode.Algorithms.CountCompleteSubarraysInAnArray.CountCompleteSubarraysInAnArrayFrequencyArray                                                      100%
   LeetCode.Algorithms.CountCompleteSubarraysInAnArray.CountCompleteSubarraysInAnArrayFrequencyDictionary                                                 100%
   LeetCode.Algorithms.CountCompleteTreeNodes.CountCompleteTreeNodesDepthRecursive                                                                        100%
