@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/8/2026 - 8:46:23 AM
-  Coverage date: 9/8/2026 - 8:45:49 AM - 9/8/2026 - 8:46:15 AM
+  Generated on: 9/11/2026 - 1:14:13 PM
+  Coverage date: 9/11/2026 - 1:13:37 PM - 9/11/2026 - 1:14:04 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1377
-  Files: 1377
+  Classes: 1379
+  Files: 1379
   Line coverage: 100%
-  Covered lines: 31577
+  Covered lines: 31624
   Uncovered lines: 0
-  Coverable lines: 31577
-  Total lines: 77376
-  Branch coverage: 100% (11379 of 11379)
-  Covered branches: 11379
-  Total branches: 11379
-  Method coverage: 100% (2077 of 2077)
-  Full method coverage: 100% (2077 of 2077)
-  Covered methods: 2077
-  Fully covered methods: 2077
-  Total methods: 2077
+  Coverable lines: 31624
+  Total lines: 77492
+  Branch coverage: 100% (11389 of 11389)
+  Covered branches: 11389
+  Total branches: 11389
+  Method coverage: 100% (2079 of 2079)
+  Full method coverage: 100% (2079 of 2079)
+  Covered methods: 2079
+  Fully covered methods: 2079
+  Total methods: 2079
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -800,6 +800,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumAddToMakeParenthesesValid.MinimumAddToMakeParenthesesValidIterative                                                         100%
   LeetCode.Algorithms.MinimumArrayEnd.MinimumArrayEndIterative                                                                                           100%
   LeetCode.Algorithms.MinimumASCIIDeleteSumForTwoStrings.MinimumASCIIDeleteSumForTwoStringsDynamicProgramming                                            100%
+  LeetCode.Algorithms.MinimumAverageOfSmallestAndLargestElements.MinimumAverageOfSmallestAndLargestElementsCountingSort                                  100%
+  LeetCode.Algorithms.MinimumAverageOfSmallestAndLargestElements.MinimumAverageOfSmallestAndLargestElementsSorting                                       100%
   LeetCode.Algorithms.MinimumBitFlipsToConvertNumber.MinimumBitFlipsToConvertNumberBitwise                                                               100%
   LeetCode.Algorithms.MinimumBitFlipsToConvertNumber.MinimumBitFlipsToConvertNumberPopCount                                                              100%
   LeetCode.Algorithms.MinimumCapacityBox.MinimumCapacityBoxIterative                                                                                     100%
