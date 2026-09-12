@@ -275,6 +275,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [657. Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/description/)
 - [664. Strange Printer](https://leetcode.com/problems/strange-printer/description/)
 - [670. Maximum Swap](https://leetcode.com/problems/maximum-swap/description/)
+- [674. Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/)
 - [678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/)
 - [679. 24 Game](https://leetcode.com/problems/24-game/description/)
 - [680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/description/)
