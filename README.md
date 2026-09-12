@@ -637,6 +637,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2248. Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/description/)
 - [2257. Count Unguarded Cells in the Grid](https://leetcode.com/problems/count-unguarded-cells-in-the-grid/description/)
 - [2264. Largest 3-Same-Digit Number in String](https://leetcode.com/problems/largest-3-same-digit-number-in-string/description/)
+- [2265. Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/)
 - [2270. Number of Ways to Split Array](https://leetcode.com/problems/number-of-ways-to-split-array/description/)
 - [2273. Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/description/)
 - [2275. Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/description/)
