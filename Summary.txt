@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/11/2026 - 1:14:13 PM
-  Coverage date: 9/11/2026 - 1:13:37 PM - 9/11/2026 - 1:14:04 PM
+  Generated on: 9/12/2026 - 10:51:43 AM
+  Coverage date: 9/12/2026 - 10:51:02 AM - 9/12/2026 - 10:51:34 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1379
-  Files: 1379
+  Classes: 1380
+  Files: 1380
   Line coverage: 100%
-  Covered lines: 31624
+  Covered lines: 31641
   Uncovered lines: 0
-  Coverable lines: 31624
-  Total lines: 77492
-  Branch coverage: 100% (11389 of 11389)
-  Covered branches: 11389
-  Total branches: 11389
-  Method coverage: 100% (2079 of 2079)
-  Full method coverage: 100% (2079 of 2079)
-  Covered methods: 2079
-  Fully covered methods: 2079
-  Total methods: 2079
+  Coverable lines: 31641
+  Total lines: 77537
+  Branch coverage: 100% (11393 of 11393)
+  Covered branches: 11393
+  Total branches: 11393
+  Method coverage: 100% (2080 of 2080)
+  Full method coverage: 100% (2080 of 2080)
+  Covered methods: 2080
+  Fully covered methods: 2080
+  Total methods: 2080
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -644,6 +644,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixBinarySearch                                                                                100%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixDivideAndConquer                                                                            100%
   LeetCode.Algorithms.LongestCommonPrefix.LongestCommonPrefixHorizontalScanning                                                                          100%
+  LeetCode.Algorithms.LongestContinuousIncreasingSubsequence.LongestContinuousIncreasingSubsequenceIterative                                             100%
   LeetCode.Algorithms.LongestHappyString.LongestHappyStringGreedy                                                                                        100%
   LeetCode.Algorithms.LongestHarmoniousSubsequence.LongestHarmoniousSubsequenceDictionary                                                                100%
   LeetCode.Algorithms.LongestIdealSubsequence.LongestIdealSubsequenceDynamicProgramming                                                                  100%
