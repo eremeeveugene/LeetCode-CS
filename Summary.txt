@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/12/2026 - 10:51:43 AM
-  Coverage date: 9/12/2026 - 10:51:02 AM - 9/12/2026 - 10:51:34 AM
+  Generated on: 9/12/2026 - 12:36:46 PM
+  Coverage date: 9/12/2026 - 12:36:10 PM - 9/12/2026 - 12:36:29 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1380
-  Files: 1380
+  Classes: 1381
+  Files: 1381
   Line coverage: 100%
-  Covered lines: 31641
+  Covered lines: 31670
   Uncovered lines: 0
-  Coverable lines: 31641
-  Total lines: 77537
-  Branch coverage: 100% (11393 of 11393)
-  Covered branches: 11393
-  Total branches: 11393
-  Method coverage: 100% (2080 of 2080)
-  Full method coverage: 100% (2080 of 2080)
-  Covered methods: 2080
-  Fully covered methods: 2080
-  Total methods: 2080
+  Coverable lines: 31670
+  Total lines: 77610
+  Branch coverage: 100% (11399 of 11399)
+  Covered branches: 11399
+  Total branches: 11399
+  Method coverage: 100% (2082 of 2082)
+  Full method coverage: 100% (2082 of 2082)
+  Covered methods: 2082
+  Fully covered methods: 2082
+  Total methods: 2082
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -215,6 +215,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountNegativeNumbersInSortedMatrix.CountNegativeNumbersInSortedMatrixBruteForceBottomRight                                         100%
   LeetCode.Algorithms.CountNegativeNumbersInSortedMatrix.CountNegativeNumbersInSortedMatrixBruteForceTopLeft                                             100%
   LeetCode.Algorithms.CountNegativeNumbersInSortedMatrix.CountNegativeNumbersInSortedMatrixStaircase                                                     100%
+  LeetCode.Algorithms.CountNodesEqualToAverageOfSubtree.CountNodesEqualToAverageOfSubtreeDepthFirstSearch                                                100%
   LeetCode.Algorithms.CountNumberOfBadPairs.CountNumberOfBadPairsBruteForce                                                                              100%
   LeetCode.Algorithms.CountNumberOfBadPairs.CountNumberOfBadPairsDictionary                                                                              100%
   LeetCode.Algorithms.CountNumberOfMaximumBitwiseORSubsets.CountNumberOfMaximumBitwiseORSubsetsBacktracking                                              100%
