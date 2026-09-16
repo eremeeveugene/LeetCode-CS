@@ -33,8 +33,8 @@ public sealed class LinkedListCycle2TwoPointers : ILinkedListCycle2
 
         while (slow != fast)
         {
-            slow = slow?.next;
-            fast = fast?.next?.next;
+            slow = slow!.next;
+            fast = fast!.next?.next;
         }
 
         if (fast?.next == null)
@@ -46,8 +46,8 @@ public sealed class LinkedListCycle2TwoPointers : ILinkedListCycle2
 
         while (slow != fast)
         {
-            slow = slow?.next;
-            fast = fast?.next;
+            slow = slow!.next;
+            fast = fast!.next;
         }
 
         return fast;
