@@ -31,10 +31,10 @@ public sealed class LinkedListCycle2TwoPointers : ILinkedListCycle2
         var slow = head.next;
         var fast = head.next?.next;
 
-        while (fast is { next: not null } && slow != fast)
+        while (slow != fast)
         {
             slow = slow!.next;
-            fast = fast.next.next;
+            fast = fast?.next?.next;
         }
 
         if (fast?.next == null)
