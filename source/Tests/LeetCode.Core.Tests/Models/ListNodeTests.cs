@@ -203,6 +203,47 @@ public sealed class ListNodeTests
     }
 
     [TestMethod]
+    [DataRow(new int[] { }, -1, 0)]
+    [DataRow(new int[] { }, -1, 1)]
+    [DataRow(new[] { 1, 2 }, 0, -1)]
+    [DataRow(new[] { 1, 2 }, -1, 2)]
+    [DataRow(new[] { 1, 2 }, -1, 3)]
+    public void ToCycledListNode_WithUnavailableDistance_ReturnsNullNode(int[] array, int cyclePosition, int distance)
+    {
+        // Act
+        ListNode.ToCycledListNode(array, cyclePosition, distance, out var node);
+
+        // Assert
+        Assert.IsNull(node);
+    }
+
+    [TestMethod]
+    public void ToCycledListNode_WithZeroDistance_ReturnsHeadAsNode()
+    {
+        // Act
+        var head = ListNode.ToCycledListNode([1, 2, 3], 1, 0, out var node);
+
+        // Assert
+        Assert.IsNotNull(head);
+        Assert.AreSame(head, node);
+    }
+
+    [TestMethod]
+    [DataRow(1)]
+    [DataRow(3)]
+    [DataRow(5)]
+    public void ToCycledListNode_WithDistanceIntoCycle_ReturnsExistingNode(int distance)
+    {
+        // Act
+        var head = ListNode.ToCycledListNode([5, 5, 5], 1, distance, out var node);
+
+        // Assert
+        Assert.IsNotNull(head);
+        Assert.IsNotNull(head.next);
+        Assert.AreSame(head.next, node);
+    }
+
+    [TestMethod]
     public void ToCycledListNode_WithSingleElementAndCycleAtZero_LinksHeadToItself()
     {
         // Act

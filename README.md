@@ -128,6 +128,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [136. Single Number](https://leetcode.com/problems/single-number/description/)
 - [137. Single Number II](https://leetcode.com/problems/single-number-ii/description/)
 - [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)
+- [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/)
 - [143. Reorder List](https://leetcode.com/problems/reorder-list/description/)
 - [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/)
 - [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)

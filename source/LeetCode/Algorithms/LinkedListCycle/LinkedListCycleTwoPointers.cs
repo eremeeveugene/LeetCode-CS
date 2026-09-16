@@ -31,7 +31,7 @@ public sealed class LinkedListCycleTwoPointers : ILinkedListCycle
         var slow = head;
         var fast = head.next;
 
-        while (fast is { next: not null })
+        while (fast?.next != null)
         {
             if (slow == fast)
             {
