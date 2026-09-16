@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/12/2026 - 12:49:22 PM
-  Coverage date: 9/12/2026 - 12:48:48 PM - 9/12/2026 - 12:49:14 PM
+  Generated on: 9/16/2026 - 11:02:25 AM
+  Coverage date: 9/16/2026 - 11:01:45 AM - 9/16/2026 - 11:02:14 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1382
-  Files: 1382
+  Classes: 1384
+  Files: 1384
   Line coverage: 100%
-  Covered lines: 31680
+  Covered lines: 31713
   Uncovered lines: 0
-  Coverable lines: 31680
-  Total lines: 77647
-  Branch coverage: 100% (11401 of 11401)
-  Covered branches: 11401
-  Total branches: 11401
-  Method coverage: 100% (2083 of 2083)
-  Full method coverage: 100% (2083 of 2083)
-  Covered methods: 2083
-  Fully covered methods: 2083
-  Total methods: 2083
+  Coverable lines: 31713
+  Total lines: 77737
+  Branch coverage: 100% (11409 of 11409)
+  Covered branches: 11409
+  Total branches: 11409
+  Method coverage: 100% (2085 of 2085)
+  Full method coverage: 100% (2085 of 2085)
+  Covered methods: 2085
+  Fully covered methods: 2085
+  Total methods: 2085
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -276,6 +276,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CreateBinaryTreeFromDescriptions.CreateBinaryTreeFromDescriptionsLookup                                                            100%
   LeetCode.Algorithms.CreateGridWithExactlyOnePath.CreateGridWithExactlyOnePathSimulation                                                                100%
   LeetCode.Algorithms.CustomSortString.CustomSortStringDictionarySorting                                                                                 100%
+  LeetCode.Algorithms.CyclicallyShiftRowsAndColumns.CyclicallyShiftRowsAndColumnsSimulation                                                              100%
+  LeetCode.Algorithms.CyclicallyShiftRowsAndColumns.CyclicallyShiftRowsAndColumnsSimulationInPlace                                                       100%
   LeetCode.Algorithms.DayOfTheWeek.DayOfTheWeekDateTime                                                                                                  100%
   LeetCode.Algorithms.DayOfTheWeek.DayOfTheWeekMath                                                                                                      100%
   LeetCode.Algorithms.DayOfTheYear.DayOfTheYearDateParse                                                                                                 100%
