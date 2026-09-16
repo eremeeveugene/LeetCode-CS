@@ -977,6 +977,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [4020. Elevator Requests I](https://leetcode.com/problems/elevator-requests-i/description/)
 - [4024. Nearest Available Drone](https://leetcode.com/problems/nearest-available-drone/description/)
 - [4038. Count Integers Appearing in a Single Block](https://leetcode.com/problems/count-integers-appearing-in-a-single-block/description/)
+- [4052. Cyclically Shift Rows and Columns](https://leetcode.com/problems/cyclically-shift-rows-and-columns/description/)
 
   </p>
 </details>
