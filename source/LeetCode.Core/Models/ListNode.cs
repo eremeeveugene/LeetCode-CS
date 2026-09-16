@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 // ReSharper disable InconsistentNaming
+
 #pragma warning disable S1104
 
 using LeetCode.Core.Exceptions;
