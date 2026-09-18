@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -11,35 +11,45 @@
 
 using LeetCode.Core.Models;
 
-namespace LeetCode.Algorithms.LinkedListCycle;
+namespace LeetCode.Algorithms.LinkedListCycle2;
 
 /// <inheritdoc />
-public sealed class LinkedListCycleHashSet : ILinkedListCycle
+public sealed class LinkedListCycle2TwoPointers : ILinkedListCycle2
 {
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n)
-    ///     Space complexity - O(n)
+    ///     Space complexity - O(1)
     /// </remarks>
-    public bool HasCycle(ListNode? head)
+    public ListNode? DetectCycle(ListNode? head)
     {
-        if (head?.next == null)
+        if (head == null)
         {
-            return false;
+            return null;
         }
 
-        var hashSet = new HashSet<ListNode>();
+        var slow = head.next;
+        var fast = head.next?.next;
 
-        while (head != null)
+        while (slow != fast)
         {
-            if (!hashSet.Add(head))
-            {
-                return true;
-            }
-
-            head = head.next;
+            slow = slow!.next;
+            fast = fast?.next?.next;
         }
 
-        return false;
+        if (fast?.next == null)
+        {
+            return null;
+        }
+
+        slow = head;
+
+        while (slow != fast)
+        {
+            slow = slow!.next;
+            fast = fast!.next;
+        }
+
+        return fast;
     }
 }

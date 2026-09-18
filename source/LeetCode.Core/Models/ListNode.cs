@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 // ReSharper disable InconsistentNaming
+
 #pragma warning disable S1104
 
 using LeetCode.Core.Exceptions;
@@ -39,6 +40,32 @@ public sealed class ListNode
     public static ListNode? ToListNode(int[] array)
     {
         return array.Reverse().Aggregate<int, ListNode?>(null, (next, val) => new ListNode(val, next));
+    }
+
+    /// <summary>
+    ///     Builds a linked list with an optional cycle and returns the node at the specified distance from its head.
+    /// </summary>
+    /// <remarks>
+    ///     The returned node belongs to the same list as the returned head.
+    ///     Traversal follows the cycle when the distance extends beyond the original array.
+    /// </remarks>
+    /// <param name="array">The node values in list order.</param>
+    /// <param name="cyclePosition">The index connected to the tail, or a negative value for no cycle.</param>
+    /// <param name="distance">The number of next links to follow from the head, or a negative value for null.</param>
+    /// <param name="node">The node at the requested distance, or null if the distance is negative or the list ends.</param>
+    /// <returns>The head of the constructed list, or null for an empty array.</returns>
+    public static ListNode? ToCycledListNode(int[] array, int cyclePosition, int distance, out ListNode? node)
+    {
+        var head = ToCycledListNode(array, cyclePosition);
+
+        node = distance < 0 ? null : head;
+
+        for (var i = 0; i < distance; i++)
+        {
+            node = node?.next;
+        }
+
+        return head;
     }
 
     public static ListNode? ToCycledListNode(int[] array, int cyclePosition)
