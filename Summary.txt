@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/16/2026 - 11:02:25 AM
-  Coverage date: 9/16/2026 - 11:01:45 AM - 9/16/2026 - 11:02:14 AM
+  Generated on: 9/18/2026 - 9:37:19 AM
+  Coverage date: 9/18/2026 - 9:36:52 AM - 9/18/2026 - 9:37:12 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1384
-  Files: 1384
+  Classes: 1385
+  Files: 1385
   Line coverage: 100%
-  Covered lines: 31713
+  Covered lines: 31744
   Uncovered lines: 0
-  Coverable lines: 31713
-  Total lines: 77737
-  Branch coverage: 100% (11409 of 11409)
-  Covered branches: 11409
-  Total branches: 11409
-  Method coverage: 100% (2085 of 2085)
-  Full method coverage: 100% (2085 of 2085)
-  Covered methods: 2085
-  Fully covered methods: 2085
-  Total methods: 2085
+  Coverable lines: 31744
+  Total lines: 77819
+  Branch coverage: 100% (11431 of 11431)
+  Covered branches: 11431
+  Total branches: 11431
+  Method coverage: 100% (2087 of 2087)
+  Full method coverage: 100% (2087 of 2087)
+  Covered methods: 2087
+  Fully covered methods: 2087
+  Total methods: 2087
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -642,6 +642,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LexicographicalNumbers.LexicographicalNumbersRecursive                                                                             100%
   LeetCode.Algorithms.LinkedListCycle.LinkedListCycleHashSet                                                                                             100%
   LeetCode.Algorithms.LinkedListCycle.LinkedListCycleTwoPointers                                                                                         100%
+  LeetCode.Algorithms.LinkedListCycle2.LinkedListCycle2TwoPointers                                                                                       100%
   LeetCode.Algorithms.LinkedListInBinaryTree.LinkedListInBinaryTreeDepthFirstSearch                                                                      100%
   LeetCode.Algorithms.LinkedListInBinaryTree.LinkedListInBinaryTreeKnuthMorrisPratt                                                                      100%
   LeetCode.Algorithms.LongestBinarySubsequenceLessThanOrEqualToK.LongestBinarySubsequenceLessThanOrEqualToKGreedy                                        100%
