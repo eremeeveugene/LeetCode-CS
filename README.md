@@ -974,6 +974,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3982. Sum of Integers with Maximum Digit Range](https://leetcode.com/problems/sum-of-integers-with-maximum-digit-range/description/)
 - [3986. Number of Elapsed Seconds Between Two Times](https://leetcode.com/problems/number-of-elapsed-seconds-between-two-times/description/)
 - [3992. Rearrange String to Avoid Character Pair](https://leetcode.com/problems/rearrange-string-to-avoid-character-pair/description/)
+- [3996. Even Number of Knight Moves](https://leetcode.com/problems/even-number-of-knight-moves/description/)
 - [4000. Largest Integer With Given Digit Sum](https://leetcode.com/problems/largest-integer-with-given-digit-sum/description/)
 - [4006. Count Valid Prefixes](https://leetcode.com/problems/count-valid-prefixes/description/)
 - [4020. Elevator Requests I](https://leetcode.com/problems/elevator-requests-i/description/)
