@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/19/2026 - 2:41:34 PM
-  Coverage date: 9/19/2026 - 2:40:55 PM - 9/19/2026 - 2:41:20 PM
+  Generated on: 9/19/2026 - 3:25:19 PM
+  Coverage date: 9/19/2026 - 3:24:43 PM - 9/19/2026 - 3:25:10 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1387
-  Files: 1387
+  Classes: 1388
+  Files: 1388
   Line coverage: 100%
-  Covered lines: 31778
+  Covered lines: 31786
   Uncovered lines: 0
-  Coverable lines: 31778
-  Total lines: 77921
+  Coverable lines: 31786
+  Total lines: 77955
   Branch coverage: 100% (11453 of 11453)
   Covered branches: 11453
   Total branches: 11453
-  Method coverage: 100% (2092 of 2092)
-  Full method coverage: 100% (2092 of 2092)
-  Covered methods: 2092
-  Fully covered methods: 2092
-  Total methods: 2092
+  Method coverage: 100% (2093 of 2093)
+  Full method coverage: 100% (2093 of 2093)
+  Covered methods: 2093
+  Fully covered methods: 2093
+  Total methods: 2093
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -364,6 +364,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.EqualSumGridPartition1.EqualSumGridPartition1PrecomputedPrefixSum                                                                  100%
   LeetCode.Algorithms.EqualSumGridPartition1.EqualSumGridPartition1PrefixSum                                                                             100%
   LeetCode.Algorithms.EvaluateBooleanBinaryTree.EvaluateBooleanBinaryTreeDepthFirstSearch                                                                100%
+  LeetCode.Algorithms.EvenNumberOfKnightMoves.EvenNumberOfKnightMovesMath                                                                                100%
   LeetCode.Algorithms.EvenOddTree.EvenOddTreeBreadthFirst                                                                                                100%
   LeetCode.Algorithms.ExcelSheetColumnNumber.ExcelSheetColumnNumberIterative                                                                             100%
   LeetCode.Algorithms.ExcelSheetColumnTitle.ExcelSheetColumnTitleIterative                                                                               100%
