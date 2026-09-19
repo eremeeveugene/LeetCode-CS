@@ -56,7 +56,9 @@ public sealed class CountValuesWithEquallySpacedOccurrences1SpanIndexing : ICoun
 
         var result = 0;
 
-        for (var i = 0; i < occurrences.Length; i++)
+        var m = occurrences.Length;
+
+        for (var i = 0; i < m; i++)
         {
             var occurrence = occurrences[i];
 

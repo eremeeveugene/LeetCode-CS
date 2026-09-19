@@ -14,7 +14,7 @@ namespace LeetCode.Algorithms.CountValuesWithEquallySpacedOccurrences1;
 /// <inheritdoc />
 public sealed class CountValuesWithEquallySpacedOccurrences1SpanCounting : ICountValuesWithEquallySpacedOccurrences1
 {
-    private const int LookupSize = 128;
+    private const int MaxValue = 100;
     private const int InvalidFrequency = int.MinValue;
 
     /// <inheritdoc />
@@ -27,13 +27,15 @@ public sealed class CountValuesWithEquallySpacedOccurrences1SpanCounting : ICoun
     /// </remarks>
     public int CountSpecialIntegers(int[] nums)
     {
-        Span<(int LastIndex, int Spacing, int Frequency)> occurrences = stackalloc (int, int, int)[LookupSize];
+        var n = nums.Length;
+
+        Span<(int LastIndex, int Spacing, int Frequency)> occurrences = stackalloc (int, int, int)[MaxValue + 1];
 
         var result = 0;
 
-        for (var i = 0; i < nums.Length; i++)
+        for (var i = 0; i < n; i++)
         {
-            var num = nums[i] & (LookupSize - 1);
+            var num = nums[i];
 
             ref var occurrence = ref occurrences[num];
 
