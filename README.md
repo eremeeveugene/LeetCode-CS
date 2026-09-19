@@ -447,6 +447,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1396. Design Underground System](https://leetcode.com/problems/design-underground-system/description/)
 - [1399. Count Largest Group](https://leetcode.com/problems/count-largest-group/description/)
 - [1400. Construct K Palindrome Strings](https://leetcode.com/problems/construct-k-palindrome-strings/description/)
+- [1401. Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping/description/)
 - [1404. Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/description/)
 - [1405. Longest Happy String](https://leetcode.com/problems/longest-happy-string/description/)
 - [1408. String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)
