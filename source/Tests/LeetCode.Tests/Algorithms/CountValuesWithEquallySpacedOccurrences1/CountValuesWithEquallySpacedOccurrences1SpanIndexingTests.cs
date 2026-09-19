@@ -14,5 +14,5 @@ using LeetCode.Algorithms.CountValuesWithEquallySpacedOccurrences1;
 namespace LeetCode.Tests.Algorithms.CountValuesWithEquallySpacedOccurrences1;
 
 [TestClass]
-public sealed class CountValuesWithEquallySpacedOccurrences1SpanTests
-    : CountValuesWithEquallySpacedOccurrences1TestsBase<CountValuesWithEquallySpacedOccurrences1Span>;
+public sealed class CountValuesWithEquallySpacedOccurrences1SpanIndexingTests
+    : CountValuesWithEquallySpacedOccurrences1TestsBase<CountValuesWithEquallySpacedOccurrences1SpanIndexing>;

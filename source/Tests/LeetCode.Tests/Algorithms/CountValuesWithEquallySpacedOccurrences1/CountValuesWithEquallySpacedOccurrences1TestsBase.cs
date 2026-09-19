@@ -48,6 +48,10 @@ public abstract class CountValuesWithEquallySpacedOccurrences1TestsBase<T> where
     [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 0)]
     [DataRow(new[] { 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4 }, 4)]
     [DataRow(new[] { 100, 99, 98, 100, 99, 98, 100, 99, 98 }, 3)]
+    [DataRow(new[] { 1, 1, 2, 1, 1 }, 0)]
+    [DataRow(new[] { 1, 2, 1, 1, 1, 1, 1 }, 0)]
+    [DataRow(new[] { 1, 1, 2, 1, 2, 1, 2 }, 1)]
+    [DataRow(new[] { 100, 100, 1, 100, 100, 100 }, 0)]
     public void CountSpecialIntegers_WithGivenNumbers_ReturnsCountOfValuesWithThreeEquallySpacedOccurrences(int[] nums, int expectedResult)
     {
         // Arrange

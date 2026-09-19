@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountValuesWithEquallySpacedOccurrences1;
 
 /// <inheritdoc />
-public sealed class CountValuesWithEquallySpacedOccurrences1Span : ICountValuesWithEquallySpacedOccurrences1
+public sealed class CountValuesWithEquallySpacedOccurrences1SpanIndexing : ICountValuesWithEquallySpacedOccurrences1
 {
     private const int MaxValue = 100;
 
