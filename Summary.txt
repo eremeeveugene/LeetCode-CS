@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/18/2026 - 9:37:19 AM
-  Coverage date: 9/18/2026 - 9:36:52 AM - 9/18/2026 - 9:37:12 AM
+  Generated on: 9/19/2026 - 2:41:34 PM
+  Coverage date: 9/19/2026 - 2:40:55 PM - 9/19/2026 - 2:41:20 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1385
-  Files: 1385
+  Classes: 1387
+  Files: 1387
   Line coverage: 100%
-  Covered lines: 31744
+  Covered lines: 31778
   Uncovered lines: 0
-  Coverable lines: 31744
-  Total lines: 77819
-  Branch coverage: 100% (11431 of 11431)
-  Covered branches: 11431
-  Total branches: 11431
-  Method coverage: 100% (2087 of 2087)
-  Full method coverage: 100% (2087 of 2087)
-  Covered methods: 2087
-  Fully covered methods: 2087
-  Total methods: 2087
+  Coverable lines: 31778
+  Total lines: 77921
+  Branch coverage: 100% (11453 of 11453)
+  Covered branches: 11453
+  Total branches: 11453
+  Method coverage: 100% (2092 of 2092)
+  Full method coverage: 100% (2092 of 2092)
+  Covered methods: 2092
+  Fully covered methods: 2092
+  Total methods: 2092
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -138,6 +138,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentIterative                                                   100%
   LeetCode.Algorithms.CheckIfTwoStringArraysAreEquivalent.CheckIfTwoStringArraysAreEquivalentTwoPointers                                                 100%
   LeetCode.Algorithms.CheckIfWordOccursAsPrefixOfAnyWordInSentence.CheckIfWordOccursAsPrefixOfAnyWordInSentenceIterative                                 100%
+  LeetCode.Algorithms.CircleAndRectangleOverlapping.CircleAndRectangleOverlappingClosestPoint                                                            100%
+  LeetCode.Algorithms.CircleAndRectangleOverlapping.CircleAndRectangleOverlappingDiametersAndCorners                                                     100%
   LeetCode.Algorithms.CircularSentence.CircularSentenceIterative                                                                                         100%
   LeetCode.Algorithms.ClearDigits.ClearDigitsStringBuilder                                                                                               100%
   LeetCode.Algorithms.ClimbingStairs.ClimbingStairsDynamicProgramming                                                                                    100%
