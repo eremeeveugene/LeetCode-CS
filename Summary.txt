@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/20/2026 - 9:50:47 AM
-  Coverage date: 9/20/2026 - 9:50:14 AM - 9/20/2026 - 9:50:38 AM
+  Generated on: 9/20/2026 - 6:31:46 PM
+  Coverage date: 9/20/2026 - 6:31:08 PM - 9/20/2026 - 6:31:35 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1392
-  Files: 1392
+  Classes: 1393
+  Files: 1393
   Line coverage: 100%
-  Covered lines: 31903
+  Covered lines: 31948
   Uncovered lines: 0
-  Coverable lines: 31903
-  Total lines: 78237
-  Branch coverage: 100% (11490 of 11490)
-  Covered branches: 11490
-  Total branches: 11490
-  Method coverage: 100% (2097 of 2097)
-  Full method coverage: 100% (2097 of 2097)
-  Covered methods: 2097
-  Fully covered methods: 2097
-  Total methods: 2097
+  Coverable lines: 31948
+  Total lines: 78333
+  Branch coverage: 100% (11502 of 11502)
+  Covered branches: 11502
+  Total branches: 11502
+  Method coverage: 100% (2099 of 2099)
+  Full method coverage: 100% (2099 of 2099)
+  Covered methods: 2099
+  Fully covered methods: 2099
+  Total methods: 2099
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -558,6 +558,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.HeightOfBinaryTreeAfterSubtreeRemovalQueries.HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch                          100%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberBruteForce                                100%
   LeetCode.Algorithms.HowManyNumbersAreSmallerThanTheCurrentNumber.HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndHashing                    100%
+  LeetCode.Algorithms.ImageOverlap.ImageOverlapBitmask                                                                                                   100%
   LeetCode.Algorithms.ImplementQueueUsingStacks.ImplementQueueUsingStacksAmortized                                                                       100%
   LeetCode.Algorithms.ImplementQueueUsingStacks.ImplementQueueUsingStacksTwoStacks                                                                       100%
   LeetCode.Algorithms.ImplementRouter.ImplementRouterDictionaryWithBinarySearch                                                                          100%
