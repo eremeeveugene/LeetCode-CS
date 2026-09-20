@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/19/2026 - 3:25:19 PM
-  Coverage date: 9/19/2026 - 3:24:43 PM - 9/19/2026 - 3:25:10 PM
+  Generated on: 9/20/2026 - 8:43:28 AM
+  Coverage date: 9/20/2026 - 8:42:56 AM - 9/20/2026 - 8:43:20 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1388
-  Files: 1388
+  Classes: 1391
+  Files: 1391
   Line coverage: 100%
-  Covered lines: 31786
+  Covered lines: 31878
   Uncovered lines: 0
-  Coverable lines: 31786
-  Total lines: 77955
-  Branch coverage: 100% (11453 of 11453)
-  Covered branches: 11453
-  Total branches: 11453
-  Method coverage: 100% (2093 of 2093)
-  Full method coverage: 100% (2093 of 2093)
-  Covered methods: 2093
-  Fully covered methods: 2093
-  Total methods: 2093
+  Coverable lines: 31878
+  Total lines: 78179
+  Branch coverage: 100% (11484 of 11484)
+  Covered branches: 11484
+  Total branches: 11484
+  Method coverage: 100% (2096 of 2096)
+  Full method coverage: 100% (2096 of 2096)
+  Covered methods: 2096
+  Fully covered methods: 2096
+  Total methods: 2096
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -270,6 +270,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                                   100%
   LeetCode.Algorithms.CountUnguardedCellsInTheGrid.CountUnguardedCellsInTheGridSimulation                                                                100%
   LeetCode.Algorithms.CountValidPrefixes.CountValidPrefixesCounting                                                                                      100%
+  LeetCode.Algorithms.CountValuesWithEquallySpacedOccurrences1.CountValuesWithEquallySpacedOccurrences1Dictionary                                        100%
+  LeetCode.Algorithms.CountValuesWithEquallySpacedOccurrences1.CountValuesWithEquallySpacedOccurrences1SpanCounting                                      100%
+  LeetCode.Algorithms.CountValuesWithEquallySpacedOccurrences1.CountValuesWithEquallySpacedOccurrences1SpanIndexing                                      100%
   LeetCode.Algorithms.CountVowelStringsInRanges.CountVowelStringsInRangesPrefixSum                                                                       100%
   LeetCode.Algorithms.CouponCodeValidator.CouponCodeValidatorBucketSort                                                                                  100%
   LeetCode.Algorithms.CousinsInBinaryTree2.CousinsInBinaryTree2BreadthFirstSearch                                                                        100%
