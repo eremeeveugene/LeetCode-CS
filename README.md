@@ -379,6 +379,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1024. Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/description/)
 - [1025. Divisor Game](https://leetcode.com/problems/divisor-game/description/)
 - [1028. Recover a Tree From Preorder Traversal](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/description/)
+- [1039. Minimum Score Triangulation of Polygon](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/description/)
 - [1041. Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/description/)
 - [1051. Height Checker](https://leetcode.com/problems/height-checker/description/)
 - [1061. Lexicographically Smallest Equivalent String](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/description/)
