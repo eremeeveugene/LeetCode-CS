@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/20/2026 - 6:31:46 PM
-  Coverage date: 9/20/2026 - 6:31:08 PM - 9/20/2026 - 6:31:35 PM
+  Generated on: 9/20/2026 - 7:06:42 PM
+  Coverage date: 9/20/2026 - 7:05:59 PM - 9/20/2026 - 7:06:33 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1393
-  Files: 1393
+  Classes: 1394
+  Files: 1394
   Line coverage: 100%
-  Covered lines: 31948
+  Covered lines: 31974
   Uncovered lines: 0
-  Coverable lines: 31948
-  Total lines: 78333
-  Branch coverage: 100% (11502 of 11502)
-  Covered branches: 11502
-  Total branches: 11502
-  Method coverage: 100% (2099 of 2099)
-  Full method coverage: 100% (2099 of 2099)
-  Covered methods: 2099
-  Fully covered methods: 2099
-  Total methods: 2099
+  Coverable lines: 31974
+  Total lines: 78396
+  Branch coverage: 100% (11510 of 11510)
+  Covered branches: 11510
+  Total branches: 11510
+  Method coverage: 100% (2100 of 2100)
+  Full method coverage: 100% (2100 of 2100)
+  Covered methods: 2100
+  Fully covered methods: 2100
+  Total methods: 2100
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -741,6 +741,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumLengthSubstringWithTwoOccurrences.MaximumLengthSubstringWithTwoOccurrencesBruteForce                                        100%
   LeetCode.Algorithms.MaximumLengthSubstringWithTwoOccurrences.MaximumLengthSubstringWithTwoOccurrencesSlidingWindow                                     100%
   LeetCode.Algorithms.MaximumLevelSumOfBinaryTree.MaximumLevelSumOfBinaryTreeBreadthFirstSearch                                                          100%
+  LeetCode.Algorithms.MaximumManhattanDistanceAfterKChanges.MaximumManhattanDistanceAfterKChangesGreedy                                                  100%
   LeetCode.Algorithms.MaximumMatchingOfPlayersWithTrainers.MaximumMatchingOfPlayersWithTrainersSorting                                                   100%
   LeetCode.Algorithms.MaximumMatrixSum.MaximumMatrixSumBruteForce                                                                                        100%
   LeetCode.Algorithms.MaximumNestingDepthOfTheParentheses.MaximumNestingDepthOfTheParenthesesIterative                                                   100%
