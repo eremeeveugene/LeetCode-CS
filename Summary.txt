@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/20/2026 - 7:06:42 PM
-  Coverage date: 9/20/2026 - 7:05:59 PM - 9/20/2026 - 7:06:33 PM
+  Generated on: 9/21/2026 - 11:27:32 AM
+  Coverage date: 9/21/2026 - 11:26:57 AM - 9/21/2026 - 11:27:23 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1394
-  Files: 1394
+  Classes: 1395
+  Files: 1395
   Line coverage: 100%
-  Covered lines: 31974
+  Covered lines: 32004
   Uncovered lines: 0
-  Coverable lines: 31974
-  Total lines: 78396
-  Branch coverage: 100% (11510 of 11510)
-  Covered branches: 11510
-  Total branches: 11510
-  Method coverage: 100% (2100 of 2100)
-  Full method coverage: 100% (2100 of 2100)
-  Covered methods: 2100
-  Fully covered methods: 2100
-  Total methods: 2100
+  Coverable lines: 32004
+  Total lines: 78480
+  Branch coverage: 100% (11520 of 11520)
+  Covered branches: 11520
+  Total branches: 11520
+  Method coverage: 100% (2103 of 2103)
+  Full method coverage: 100% (2103 of 2103)
+  Covered methods: 2103
+  Fully covered methods: 2103
+  Total methods: 2103
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -60,6 +60,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.AverageSalaryExcludingTheMinimumAndMaximumSalary.AverageSalaryExcludingTheMinimumAndMaximumSalaryIterative                         100%
   LeetCode.Algorithms.AvoidFloodInTheCity.AvoidFloodInTheCityPriorityQueue                                                                               100%
   LeetCode.Algorithms.BagOfTokens.BagOfTokensTwoPointers                                                                                                 100%
+  LeetCode.Algorithms.BalanceABinarySearchTree.BalanceABinarySearchTreeInorderTraversal                                                                  100%
   LeetCode.Algorithms.BalancedBinaryTree.BalancedBinaryTreeDepthFirstSearch                                                                              100%
   LeetCode.Algorithms.BaseballGame.BaseballGameIterative                                                                                                 100%
   LeetCode.Algorithms.BestSightseeingPair.BestSightseeingPairBruteForce                                                                                  100%
