@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/21/2026 - 11:27:32 AM
-  Coverage date: 9/21/2026 - 11:26:57 AM - 9/21/2026 - 11:27:23 AM
+  Generated on: 9/25/2026 - 9:04:17 AM
+  Coverage date: 9/25/2026 - 9:03:44 AM - 9/25/2026 - 9:04:08 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1395
-  Files: 1395
+  Classes: 1397
+  Files: 1397
   Line coverage: 100%
-  Covered lines: 32004
+  Covered lines: 32175
   Uncovered lines: 0
-  Coverable lines: 32004
-  Total lines: 78480
-  Branch coverage: 100% (11520 of 11520)
-  Covered branches: 11520
-  Total branches: 11520
-  Method coverage: 100% (2103 of 2103)
-  Full method coverage: 100% (2103 of 2103)
-  Covered methods: 2103
-  Fully covered methods: 2103
-  Total methods: 2103
+  Coverable lines: 32175
+  Total lines: 78853
+  Branch coverage: 100% (11564 of 11564)
+  Covered branches: 11564
+  Total branches: 11564
+  Method coverage: 100% (2122 of 2122)
+  Full method coverage: 100% (2122 of 2122)
+  Covered methods: 2122
+  Fully covered methods: 2122
+  Total methods: 2122
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -316,6 +316,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignHashMap.DesignHashMapIntArray                                                                                                100%
   LeetCode.Algorithms.DesignHashSet.DesignHashSetBitArray                                                                                                100%
   LeetCode.Algorithms.DesignHashSet.DesignHashSetBoolArray                                                                                               100%
+  LeetCode.Algorithms.DesignLinkedList.DesignLinkedListDoublyLinkedList                                                                                  100%
+  LeetCode.Algorithms.DesignLinkedList.DesignLinkedListSinglyLinkedList                                                                                  100%
   LeetCode.Algorithms.DesignMovieRentalSystem.DesignMovieRentalSystemDictionary                                                                          100%
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceBruteForce                                                                        100%
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceDictionary                                                                        100%
