@@ -10,60 +10,143 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignHashMap;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.DesignHashMap;
 
 public abstract class DesignHashMapTestsBase<T> where T : IDesignHashMap, new()
 {
-    private const string Put = "put";
-    private const string Get = "get";
-    private const string Remove = "remove";
-
     [TestMethod]
-    [DynamicData(nameof(GetTestData))]
-    public void DesignHashMap_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        string[] operations,
-        int[][] arguments,
-        int[] expectedResult)
+    [DynamicData(nameof(GetScenarios))]
+    public void DesignHashMap_WithMixedOperations_ProcessesOperationsAccordingToSpecification(IScenario<IDesignHashMap> scenario)
     {
         // Arrange
+        var expectedResult = scenario.OperationResults;
+
         var solution = new T();
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < operations.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (operations[i])
-            {
-                case Put:
-                    solution.Put(arguments[i][0], arguments[i][1]);
+            var operation = operations[i];
 
-                    break;
-                case Get:
-                    actualResult.Add(solution.Get(arguments[i][0]));
-
-                    break;
-                case Remove:
-                    solution.Remove(arguments[i][0]);
-
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException($"Unexpected operation '{operations[i]}' at index {i}.");
-            }
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
-    private static IEnumerable<object[]> GetTestData()
+    private static IEnumerable<IScenario<IDesignHashMap>[]> GetScenarios()
     {
         yield return
         [
-            new[] { "put", "put", "get", "get", "put", "get", "remove", "get" },
-            new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 1 }, new[] { 3 }, new[] { 2, 1 }, new[] { 2 }, new[] { 2 }, new[] { 2 } },
-            new[] { 1, -1, 1, -1 }
+            new Scenario<IDesignHashMap>(
+                [
+                    new PutOperation(1, 1),
+                    new PutOperation(2, 2),
+                    new GetOperation(1),
+                    new GetOperation(3),
+                    new PutOperation(2, 1),
+                    new GetOperation(2),
+                    new RemoveOperation(2),
+                    new GetOperation(2)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetOperation.Result(1),
+                    new GetOperation.Result(-1),
+                    VoidOperationResult.Instance,
+                    new GetOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new GetOperation.Result(-1)
+                ])
         ];
+    }
+
+    private sealed class PutOperation : IOperation<IDesignHashMap>
+    {
+        private readonly int _key;
+        private readonly int _value;
+
+        public PutOperation(int key, int value)
+        {
+            _key = key;
+            _value = value;
+        }
+
+        public IOperationResult Execute(IDesignHashMap solution)
+        {
+            solution.Put(_key, _value);
+
+            return VoidOperationResult.Instance;
+        }
+    }
+
+    private sealed class GetOperation : IOperation<IDesignHashMap>
+    {
+        private readonly int _key;
+
+        public GetOperation(int key)
+        {
+            _key = key;
+        }
+
+        public IOperationResult Execute(IDesignHashMap solution)
+        {
+            var result = solution.Get(_key);
+
+            return new Result(result);
+        }
+
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
+        {
+            private readonly int _value;
+
+            public Result(int value)
+            {
+                _value = value;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _value == other._value;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_value);
+            }
+        }
+    }
+
+    private sealed class RemoveOperation : IOperation<IDesignHashMap>
+    {
+        private readonly int _key;
+
+        public RemoveOperation(int key)
+        {
+            _key = key;
+        }
+
+        public IOperationResult Execute(IDesignHashMap solution)
+        {
+            solution.Remove(_key);
+
+            return VoidOperationResult.Instance;
+        }
     }
 }

@@ -10,60 +10,141 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignHashSet;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.DesignHashSet;
 
 public abstract class DesignHashSetTestsBase<T> where T : IDesignHashSet, new()
 {
-    private const string Add = "add";
-    private const string Remove = "remove";
-    private const string Contains = "contains";
-
     [TestMethod]
-    [DynamicData(nameof(GetTestData))]
-    public void DesignHashSet_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        string[] operations,
-        int[][] arguments,
-        bool[] expectedResult)
+    [DynamicData(nameof(GetScenarios))]
+    public void DesignHashSet_WithMixedOperations_ProcessesOperationsAccordingToSpecification(IScenario<IDesignHashSet> scenario)
     {
         // Arrange
+        var expectedResult = scenario.OperationResults;
+
         var solution = new T();
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < operations.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (operations[i])
-            {
-                case Add:
-                    solution.Add(arguments[i][0]);
+            var operation = operations[i];
 
-                    break;
-                case Remove:
-                    solution.Remove(arguments[i][0]);
-
-                    break;
-                case Contains:
-                    actualResult.Add(solution.Contains(arguments[i][0]));
-
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException($"Unexpected operation '{operations[i]}' at index {i}.");
-            }
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult);
     }
 
-    private static IEnumerable<object[]> GetTestData()
+    private static IEnumerable<IScenario<IDesignHashSet>[]> GetScenarios()
     {
         yield return
         [
-            new[] { "add", "add", "contains", "contains", "add", "contains", "remove", "contains" },
-            new[] { new[] { 1 }, new[] { 2 }, new[] { 1 }, new[] { 3 }, new[] { 2 }, new[] { 2 }, new[] { 2 }, new[] { 2 } },
-            new[] { true, false, true, false }
+            new Scenario<IDesignHashSet>(
+                [
+                    new AddOperation(1),
+                    new AddOperation(2),
+                    new ContainsOperation(1),
+                    new ContainsOperation(3),
+                    new AddOperation(2),
+                    new ContainsOperation(2),
+                    new RemoveOperation(2),
+                    new ContainsOperation(2)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new ContainsOperation.Result(true),
+                    new ContainsOperation.Result(false),
+                    VoidOperationResult.Instance,
+                    new ContainsOperation.Result(true),
+                    VoidOperationResult.Instance,
+                    new ContainsOperation.Result(false)
+                ])
         ];
+    }
+
+    private sealed class AddOperation : IOperation<IDesignHashSet>
+    {
+        private readonly int _key;
+
+        public AddOperation(int key)
+        {
+            _key = key;
+        }
+
+        public IOperationResult Execute(IDesignHashSet solution)
+        {
+            solution.Add(_key);
+
+            return VoidOperationResult.Instance;
+        }
+    }
+
+    private sealed class RemoveOperation : IOperation<IDesignHashSet>
+    {
+        private readonly int _key;
+
+        public RemoveOperation(int key)
+        {
+            _key = key;
+        }
+
+        public IOperationResult Execute(IDesignHashSet solution)
+        {
+            solution.Remove(_key);
+
+            return VoidOperationResult.Instance;
+        }
+    }
+
+    private sealed class ContainsOperation : IOperation<IDesignHashSet>
+    {
+        private readonly int _key;
+
+        public ContainsOperation(int key)
+        {
+            _key = key;
+        }
+
+        public IOperationResult Execute(IDesignHashSet solution)
+        {
+            var result = solution.Contains(_key);
+
+            return new Result(result);
+        }
+
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
+        {
+            private readonly bool _value;
+
+            public Result(bool value)
+            {
+                _value = value;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _value == other._value;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_value);
+            }
+        }
     }
 }

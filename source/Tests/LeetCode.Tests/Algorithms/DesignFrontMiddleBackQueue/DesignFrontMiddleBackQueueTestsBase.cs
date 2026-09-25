@@ -10,95 +10,459 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.DesignFrontMiddleBackQueue;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.DesignFrontMiddleBackQueue;
 
 public abstract class DesignFrontMiddleBackQueueTestsBase<T> where T : IDesignFrontMiddleBackQueue, new()
 {
-    private const string PushFront = "pushFront";
-    private const string PushMiddle = "pushMiddle";
-    private const string PushBack = "pushBack";
-    private const string PopFront = "popFront";
-    private const string PopMiddle = "popMiddle";
-    private const string PopBack = "popBack";
-
     [TestMethod]
-    [DataRow(
-        new[] { "pushFront", "pushBack", "pushMiddle", "pushMiddle", "popFront", "popMiddle", "popMiddle", "popBack", "popFront" },
-        new[] { 1, 2, 3, 4, 0, 0, 0, 0, 0 },
-        new[] { 1, 3, 4, 2, -1 })]
-    [DataRow(new[] { "popFront" }, new[] { 0 }, new[] { -1 })]
-    [DataRow(new[] { "popMiddle" }, new[] { 0 }, new[] { -1 })]
-    [DataRow(new[] { "popBack" }, new[] { 0 }, new[] { -1 })]
-    [DataRow(new[] { "pushFront", "popFront" }, new[] { 5, 0 }, new[] { 5 })]
-    [DataRow(new[] { "pushBack", "popBack" }, new[] { 7, 0 }, new[] { 7 })]
-    [DataRow(new[] { "pushMiddle", "popMiddle" }, new[] { 3, 0 }, new[] { 3 })]
-    [DataRow(new[] { "pushFront", "pushFront", "popFront", "popFront" }, new[] { 1, 2, 0, 0 }, new[] { 2, 1 })]
-    [DataRow(new[] { "pushBack", "pushBack", "popBack", "popBack" }, new[] { 1, 2, 0, 0 }, new[] { 2, 1 })]
-    [DataRow(new[] { "pushFront", "pushBack", "popMiddle" }, new[] { 1, 2, 0 }, new[] { 1 })]
-    [DataRow(new[] { "pushFront", "pushBack", "pushFront", "popMiddle" }, new[] { 1, 2, 3, 0 }, new[] { 1 })]
-    [DataRow(new[] { "pushMiddle", "pushMiddle", "popFront", "popFront" }, new[] { 1, 2, 0, 0 }, new[] { 2, 1 })]
-    [DataRow(new[] { "pushFront", "pushFront", "pushFront", "popMiddle", "popMiddle" }, new[] { 1, 2, 3, 0, 0 }, new[] { 2, 3 })]
-    [DataRow(new[] { "pushBack", "pushBack", "pushBack", "popMiddle", "popMiddle" }, new[] { 1, 2, 3, 0, 0 }, new[] { 2, 1 })]
-    [DataRow(new[] { "pushFront", "pushMiddle", "popFront", "popFront" }, new[] { 5, 10, 0, 0 }, new[] { 10, 5 })]
-    [DataRow(new[] { "pushFront", "pushBack", "pushMiddle", "popFront", "popMiddle", "popBack" }, new[] { 1, 3, 2, 0, 0, 0 }, new[] { 1, 2, 3 })]
-    [DataRow(new[] { "pushBack", "pushFront", "popMiddle" }, new[] { 2, 1, 0 }, new[] { 1 })]
-    [DataRow(new[] { "pushFront", "pushFront", "pushFront", "pushFront", "popFront", "popBack" }, new[] { 1, 2, 3, 4, 0, 0 }, new[] { 4, 1 })]
-    [DataRow(
-        new[] { "pushMiddle", "pushMiddle", "pushMiddle", "popMiddle", "popMiddle", "popMiddle" },
-        new[] { 1, 2, 3, 0, 0, 0 },
-        new[] { 3, 2, 1 })]
-    [DataRow(new[] { "pushFront", "pushBack", "popBack", "popFront" }, new[] { 10, 20, 0, 0 }, new[] { 20, 10 })]
-    [DataRow(new[] { "pushMiddle", "pushFront", "pushBack", "popMiddle" }, new[] { 1, 2, 3, 0 }, new[] { 1 })]
-    [DataRow(new[] { "pushFront", "pushFront", "pushBack", "popMiddle", "popBack" }, new[] { 1, 2, 3, 0, 0 }, new[] { 1, 3 })]
-    [DataRow(new[] { "pushBack", "pushMiddle", "pushFront", "popFront", "popBack" }, new[] { 5, 10, 15, 0, 0 }, new[] { 15, 5 })]
-    [DataRow(new[] { "popFront", "popBack", "popMiddle" }, new[] { 0, 0, 0 }, new[] { -1, -1, -1 })]
-    [DataRow(new[] { "pushFront", "pushBack", "pushMiddle", "popFront" }, new[] { 1, 2, 3, 0 }, new[] { 1 })]
+    [DynamicData(nameof(GetScenarios))]
     public void DesignFrontMiddleBackQueue_WithMixedOperations_ProcessesOperationsAccordingToSpecification(
-        string[] operations,
-        int[] arguments,
-        int[] expectedResult)
+        IScenario<IDesignFrontMiddleBackQueue> scenario)
     {
         // Arrange
+        var expectedResult = scenario.OperationResults;
+
         var solution = new T();
 
         // Act
-        var actualResult = new List<object>();
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < operations.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            switch (operations[i])
-            {
-                case PushFront:
-                    solution.PushFront(arguments[i]);
+            var operation = operations[i];
 
-                    break;
-                case PushMiddle:
-                    solution.PushMiddle(arguments[i]);
-
-                    break;
-                case PushBack:
-                    solution.PushBack(arguments[i]);
-
-                    break;
-                case PopFront:
-                    actualResult.Add(solution.PopFront());
-
-                    break;
-                case PopMiddle:
-                    actualResult.Add(solution.PopMiddle());
-
-                    break;
-                case PopBack:
-                    actualResult.Add(solution.PopBack());
-
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException($"Unexpected operation '{operations[i]}' at index {i}.");
-            }
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<IScenario<IDesignFrontMiddleBackQueue>[]> GetScenarios()
+    {
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [
+                    new PushFrontOperation(1),
+                    new PushBackOperation(2),
+                    new PushMiddleOperation(3),
+                    new PushMiddleOperation(4),
+                    new PopFrontOperation(),
+                    new PopMiddleOperation(),
+                    new PopMiddleOperation(),
+                    new PopBackOperation(),
+                    new PopFrontOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new PopFrontOperation.Result(1),
+                    new PopMiddleOperation.Result(3),
+                    new PopMiddleOperation.Result(4),
+                    new PopBackOperation.Result(2),
+                    new PopFrontOperation.Result(-1)
+                ])
+        ];
+
+        yield return [new Scenario<IDesignFrontMiddleBackQueue>([new PopFrontOperation()], [new PopFrontOperation.Result(-1)])];
+
+        yield return [new Scenario<IDesignFrontMiddleBackQueue>([new PopMiddleOperation()], [new PopMiddleOperation.Result(-1)])];
+
+        yield return [new Scenario<IDesignFrontMiddleBackQueue>([new PopBackOperation()], [new PopBackOperation.Result(-1)])];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [new PushFrontOperation(5), new PopFrontOperation()],
+                [VoidOperationResult.Instance, new PopFrontOperation.Result(5)])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [new PushBackOperation(7), new PopBackOperation()],
+                [VoidOperationResult.Instance, new PopBackOperation.Result(7)])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [new PushMiddleOperation(3), new PopMiddleOperation()],
+                [VoidOperationResult.Instance, new PopMiddleOperation.Result(3)])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [new PushFrontOperation(1), new PushFrontOperation(2), new PopFrontOperation(), new PopFrontOperation()],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, new PopFrontOperation.Result(2), new PopFrontOperation.Result(1)])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [new PushBackOperation(1), new PushBackOperation(2), new PopBackOperation(), new PopBackOperation()],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, new PopBackOperation.Result(2), new PopBackOperation.Result(1)])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [new PushFrontOperation(1), new PushBackOperation(2), new PopMiddleOperation()],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, new PopMiddleOperation.Result(1)])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [new PushFrontOperation(1), new PushBackOperation(2), new PushFrontOperation(3), new PopMiddleOperation()],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new PopMiddleOperation.Result(1)])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [new PushMiddleOperation(1), new PushMiddleOperation(2), new PopFrontOperation(), new PopFrontOperation()],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, new PopFrontOperation.Result(2), new PopFrontOperation.Result(1)])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [
+                    new PushFrontOperation(1),
+                    new PushFrontOperation(2),
+                    new PushFrontOperation(3),
+                    new PopMiddleOperation(),
+                    new PopMiddleOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new PopMiddleOperation.Result(2),
+                    new PopMiddleOperation.Result(3)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [
+                    new PushBackOperation(1), new PushBackOperation(2), new PushBackOperation(3), new PopMiddleOperation(), new PopMiddleOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new PopMiddleOperation.Result(2),
+                    new PopMiddleOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [new PushFrontOperation(5), new PushMiddleOperation(10), new PopFrontOperation(), new PopFrontOperation()],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, new PopFrontOperation.Result(10), new PopFrontOperation.Result(5)])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [
+                    new PushFrontOperation(1),
+                    new PushBackOperation(3),
+                    new PushMiddleOperation(2),
+                    new PopFrontOperation(),
+                    new PopMiddleOperation(),
+                    new PopBackOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new PopFrontOperation.Result(1),
+                    new PopMiddleOperation.Result(2),
+                    new PopBackOperation.Result(3)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [new PushBackOperation(2), new PushFrontOperation(1), new PopMiddleOperation()],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, new PopMiddleOperation.Result(1)])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [
+                    new PushFrontOperation(1),
+                    new PushFrontOperation(2),
+                    new PushFrontOperation(3),
+                    new PushFrontOperation(4),
+                    new PopFrontOperation(),
+                    new PopBackOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new PopFrontOperation.Result(4),
+                    new PopBackOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [
+                    new PushMiddleOperation(1),
+                    new PushMiddleOperation(2),
+                    new PushMiddleOperation(3),
+                    new PopMiddleOperation(),
+                    new PopMiddleOperation(),
+                    new PopMiddleOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new PopMiddleOperation.Result(3),
+                    new PopMiddleOperation.Result(2),
+                    new PopMiddleOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [new PushFrontOperation(10), new PushBackOperation(20), new PopBackOperation(), new PopFrontOperation()],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, new PopBackOperation.Result(20), new PopFrontOperation.Result(10)])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [new PushMiddleOperation(1), new PushFrontOperation(2), new PushBackOperation(3), new PopMiddleOperation()],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new PopMiddleOperation.Result(1)])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [
+                    new PushFrontOperation(1), new PushFrontOperation(2), new PushBackOperation(3), new PopMiddleOperation(), new PopBackOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new PopMiddleOperation.Result(1),
+                    new PopBackOperation.Result(3)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [
+                    new PushBackOperation(5), new PushMiddleOperation(10), new PushFrontOperation(15), new PopFrontOperation(), new PopBackOperation()
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new PopFrontOperation.Result(15),
+                    new PopBackOperation.Result(5)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [new PopFrontOperation(), new PopBackOperation(), new PopMiddleOperation()],
+                [new PopFrontOperation.Result(-1), new PopBackOperation.Result(-1), new PopMiddleOperation.Result(-1)])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignFrontMiddleBackQueue>(
+                [new PushFrontOperation(1), new PushBackOperation(2), new PushMiddleOperation(3), new PopFrontOperation()],
+                [VoidOperationResult.Instance, VoidOperationResult.Instance, VoidOperationResult.Instance, new PopFrontOperation.Result(1)])
+        ];
+    }
+
+    private sealed class PushFrontOperation : IOperation<IDesignFrontMiddleBackQueue>
+    {
+        private readonly int _value;
+
+        public PushFrontOperation(int value)
+        {
+            _value = value;
+        }
+
+        public IOperationResult Execute(IDesignFrontMiddleBackQueue solution)
+        {
+            solution.PushFront(_value);
+
+            return VoidOperationResult.Instance;
+        }
+    }
+
+    private sealed class PushMiddleOperation : IOperation<IDesignFrontMiddleBackQueue>
+    {
+        private readonly int _value;
+
+        public PushMiddleOperation(int value)
+        {
+            _value = value;
+        }
+
+        public IOperationResult Execute(IDesignFrontMiddleBackQueue solution)
+        {
+            solution.PushMiddle(_value);
+
+            return VoidOperationResult.Instance;
+        }
+    }
+
+    private sealed class PushBackOperation : IOperation<IDesignFrontMiddleBackQueue>
+    {
+        private readonly int _value;
+
+        public PushBackOperation(int value)
+        {
+            _value = value;
+        }
+
+        public IOperationResult Execute(IDesignFrontMiddleBackQueue solution)
+        {
+            solution.PushBack(_value);
+
+            return VoidOperationResult.Instance;
+        }
+    }
+
+    private sealed class PopFrontOperation : IOperation<IDesignFrontMiddleBackQueue>
+    {
+        public IOperationResult Execute(IDesignFrontMiddleBackQueue solution)
+        {
+            var result = solution.PopFront();
+
+            return new Result(result);
+        }
+
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
+        {
+            private readonly int _value;
+
+            public Result(int value)
+            {
+                _value = value;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _value == other._value;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_value);
+            }
+        }
+    }
+
+    private sealed class PopMiddleOperation : IOperation<IDesignFrontMiddleBackQueue>
+    {
+        public IOperationResult Execute(IDesignFrontMiddleBackQueue solution)
+        {
+            var result = solution.PopMiddle();
+
+            return new Result(result);
+        }
+
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
+        {
+            private readonly int _value;
+
+            public Result(int value)
+            {
+                _value = value;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _value == other._value;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_value);
+            }
+        }
+    }
+
+    private sealed class PopBackOperation : IOperation<IDesignFrontMiddleBackQueue>
+    {
+        public IOperationResult Execute(IDesignFrontMiddleBackQueue solution)
+        {
+            var result = solution.PopBack();
+
+            return new Result(result);
+        }
+
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
+        {
+            private readonly int _value;
+
+            public Result(int value)
+            {
+                _value = value;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _value == other._value;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_value);
+            }
+        }
     }
 }

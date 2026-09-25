@@ -10,49 +10,263 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MyCalendar1;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.MyCalendar1;
 
 public abstract class MyCalendar1TestsBase<T> where T : IMyCalendar1, new()
 {
     [TestMethod]
-    [DataRow(new[] { 10, 15, 20 }, new[] { 20, 25, 30 }, new[] { true, false, true })]
-    [DataRow(new[] { 10 }, new[] { 20 }, new[] { true })]
-    [DataRow(new[] { 10, 10 }, new[] { 20, 20 }, new[] { true, false })]
-    [DataRow(new[] { 10, 20, 30 }, new[] { 20, 30, 40 }, new[] { true, true, true })]
-    [DataRow(new[] { 10, 15 }, new[] { 20, 25 }, new[] { true, false })]
-    [DataRow(new[] { 10, 12 }, new[] { 20, 15 }, new[] { true, false })]
-    [DataRow(new[] { 0, 5, 10 }, new[] { 5, 10, 15 }, new[] { true, true, true })]
-    [DataRow(new[] { 5, 0 }, new[] { 10, 6 }, new[] { true, false })]
-    [DataRow(new[] { 1, 2, 3, 4 }, new[] { 5, 6, 7, 8 }, new[] { true, false, false, false })]
-    [DataRow(new[] { 1, 5, 9, 13 }, new[] { 5, 9, 13, 17 }, new[] { true, true, true, true })]
-    [DataRow(new[] { 1, 3, 5, 7 }, new[] { 3, 5, 7, 9 }, new[] { true, true, true, true })]
-    [DataRow(new[] { 1, 2 }, new[] { 10, 3 }, new[] { true, false })]
-    [DataRow(new[] { 47, 33, 39, 15 }, new[] { 50, 48, 44, 20 }, new[] { true, false, true, true })]
-    [DataRow(new[] { 20, 50, 35, 5, 25 }, new[] { 30, 60, 45, 15, 55 }, new[] { true, true, true, true, false })]
-    [DataRow(new[] { 100, 200, 300 }, new[] { 200, 300, 400 }, new[] { true, true, true })]
-    [DataRow(new[] { 100, 150 }, new[] { 200, 160 }, new[] { true, false })]
-    [DataRow(new[] { 0, 0 }, new[] { 1000000000, 1 }, new[] { true, false })]
-    [DataRow(new[] { 5, 6 }, new[] { 7, 8 }, new[] { true, false })]
-    [DataRow(new[] { 1, 1, 1, 1, 1 }, new[] { 2, 2, 2, 2, 2 }, new[] { true, false, false, false, false })]
-    [DataRow(new[] { 0, 999999999 }, new[] { 1000000000, 1000000000 }, new[] { true, false })]
-    [DataRow(new[] { 5, 10, 15 }, new[] { 8, 12, 18 }, new[] { true, true, true })]
-    [DataRow(new[] { 1, 2, 3 }, new[] { 2, 3, 4 }, new[] { true, true, true })]
-    [DataRow(new[] { 11, 15, 9 }, new[] { 13, 20, 14 }, new[] { true, true, false })]
-    public void Book_WithStartAndEndTimes_ReturnsBookingResults(int[] start, int[] end, bool[] expectedResult)
+    [DynamicData(nameof(GetScenarios))]
+    public void MyCalendar1_WithMixedOperations_ProcessesOperationsAccordingToSpecification(IScenario<IMyCalendar1> scenario)
     {
         // Arrange
+        var expectedResult = scenario.OperationResults;
+
         var solution = new T();
 
         // Act
-        var actualResult = new bool[expectedResult.Length];
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < expectedResult.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            actualResult[i] = solution.Book(start[i], end[i]);
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<IScenario<IMyCalendar1>[]> GetScenarios()
+    {
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(10, 20), new BookOperation(15, 25), new BookOperation(20, 30)],
+                [new BookOperation.Result(true), new BookOperation.Result(false), new BookOperation.Result(true)])
+        ];
+
+        yield return [new Scenario<IMyCalendar1>([new BookOperation(10, 20)], [new BookOperation.Result(true)])];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(10, 20), new BookOperation(10, 20)],
+                [new BookOperation.Result(true), new BookOperation.Result(false)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(10, 20), new BookOperation(20, 30), new BookOperation(30, 40)],
+                [new BookOperation.Result(true), new BookOperation.Result(true), new BookOperation.Result(true)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(10, 20), new BookOperation(15, 25)],
+                [new BookOperation.Result(true), new BookOperation.Result(false)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(10, 20), new BookOperation(12, 15)],
+                [new BookOperation.Result(true), new BookOperation.Result(false)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(0, 5), new BookOperation(5, 10), new BookOperation(10, 15)],
+                [new BookOperation.Result(true), new BookOperation.Result(true), new BookOperation.Result(true)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(5, 10), new BookOperation(0, 6)],
+                [new BookOperation.Result(true), new BookOperation.Result(false)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(1, 5), new BookOperation(2, 6), new BookOperation(3, 7), new BookOperation(4, 8)],
+                [
+                    new BookOperation.Result(true),
+                    new BookOperation.Result(false),
+                    new BookOperation.Result(false),
+                    new BookOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(1, 5), new BookOperation(5, 9), new BookOperation(9, 13), new BookOperation(13, 17)],
+                [new BookOperation.Result(true), new BookOperation.Result(true), new BookOperation.Result(true), new BookOperation.Result(true)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(1, 3), new BookOperation(3, 5), new BookOperation(5, 7), new BookOperation(7, 9)],
+                [new BookOperation.Result(true), new BookOperation.Result(true), new BookOperation.Result(true), new BookOperation.Result(true)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(1, 10), new BookOperation(2, 3)],
+                [new BookOperation.Result(true), new BookOperation.Result(false)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(47, 50), new BookOperation(33, 48), new BookOperation(39, 44), new BookOperation(15, 20)],
+                [new BookOperation.Result(true), new BookOperation.Result(false), new BookOperation.Result(true), new BookOperation.Result(true)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [
+                    new BookOperation(20, 30),
+                    new BookOperation(50, 60),
+                    new BookOperation(35, 45),
+                    new BookOperation(5, 15),
+                    new BookOperation(25, 55)
+                ],
+                [
+                    new BookOperation.Result(true),
+                    new BookOperation.Result(true),
+                    new BookOperation.Result(true),
+                    new BookOperation.Result(true),
+                    new BookOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(100, 200), new BookOperation(200, 300), new BookOperation(300, 400)],
+                [new BookOperation.Result(true), new BookOperation.Result(true), new BookOperation.Result(true)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(100, 200), new BookOperation(150, 160)],
+                [new BookOperation.Result(true), new BookOperation.Result(false)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(0, 1000000000), new BookOperation(0, 1)],
+                [new BookOperation.Result(true), new BookOperation.Result(false)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(5, 7), new BookOperation(6, 8)],
+                [new BookOperation.Result(true), new BookOperation.Result(false)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(1, 2), new BookOperation(1, 2), new BookOperation(1, 2), new BookOperation(1, 2), new BookOperation(1, 2)],
+                [
+                    new BookOperation.Result(true),
+                    new BookOperation.Result(false),
+                    new BookOperation.Result(false),
+                    new BookOperation.Result(false),
+                    new BookOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(0, 1000000000), new BookOperation(999999999, 1000000000)],
+                [new BookOperation.Result(true), new BookOperation.Result(false)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(5, 8), new BookOperation(10, 12), new BookOperation(15, 18)],
+                [new BookOperation.Result(true), new BookOperation.Result(true), new BookOperation.Result(true)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(1, 2), new BookOperation(2, 3), new BookOperation(3, 4)],
+                [new BookOperation.Result(true), new BookOperation.Result(true), new BookOperation.Result(true)])
+        ];
+
+        yield return
+        [
+            new Scenario<IMyCalendar1>(
+                [new BookOperation(11, 13), new BookOperation(15, 20), new BookOperation(9, 14)],
+                [new BookOperation.Result(true), new BookOperation.Result(true), new BookOperation.Result(false)])
+        ];
+    }
+
+    private sealed class BookOperation : IOperation<IMyCalendar1>
+    {
+        private readonly int _end;
+        private readonly int _start;
+
+        public BookOperation(int start, int end)
+        {
+            _start = start;
+            _end = end;
+        }
+
+        public IOperationResult Execute(IMyCalendar1 solution)
+        {
+            var result = solution.Book(_start, _end);
+
+            return new Result(result);
+        }
+
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
+        {
+            private readonly bool _value;
+
+            public Result(bool value)
+            {
+                _value = value;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _value == other._value;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_value);
+            }
+        }
     }
 }
