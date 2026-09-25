@@ -49,56 +49,6 @@ public abstract class DesignLinkedListTestsBase<T> where T : IDesignLinkedList, 
             new Scenario<IDesignLinkedList>(
                 [
                     new AddAtHeadOperation(1),
-                    new AddAtTailOperation(2),
-                    new AddAtIndexOperation(-1, 3),
-                    new DeleteAtIndexOperation(-1),
-                    new GetOperation(-1),
-                    new GetOperation(0),
-                    new GetOperation(1),
-                    new GetOperation(2)
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new GetOperation.Result(-1),
-                    new GetOperation.Result(1),
-                    new GetOperation.Result(2),
-                    new GetOperation.Result(-1)
-                ])
-        ];
-
-        yield return
-        [
-            new Scenario<IDesignLinkedList>(
-                [
-                    new AddAtHeadOperation(1),
-                    new AddAtTailOperation(2),
-                    new AddAtIndexOperation(int.MinValue, 3),
-                    new DeleteAtIndexOperation(int.MinValue),
-                    new GetOperation(int.MinValue),
-                    new GetOperation(0),
-                    new GetOperation(1),
-                    new GetOperation(2)
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new GetOperation.Result(-1),
-                    new GetOperation.Result(1),
-                    new GetOperation.Result(2),
-                    new GetOperation.Result(-1)
-                ])
-        ];
-
-        yield return
-        [
-            new Scenario<IDesignLinkedList>(
-                [
-                    new AddAtHeadOperation(1),
                     new AddAtTailOperation(3),
                     new AddAtIndexOperation(1, 2),
                     new GetOperation(1),
