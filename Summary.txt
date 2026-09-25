@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/25/2026 - 12:45:11 PM
-  Coverage date: 9/25/2026 - 12:44:32 PM - 9/25/2026 - 12:45:03 PM
+  Generated on: 9/25/2026 - 1:27:20 PM
+  Coverage date: 9/25/2026 - 1:26:52 PM - 9/25/2026 - 1:27:11 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1397
-  Files: 1397
+  Classes: 1398
+  Files: 1398
   Line coverage: 100%
-  Covered lines: 32175
+  Covered lines: 32201
   Uncovered lines: 0
-  Coverable lines: 32175
-  Total lines: 78853
-  Branch coverage: 100% (11564 of 11564)
-  Covered branches: 11564
-  Total branches: 11564
-  Method coverage: 100% (2122 of 2122)
-  Full method coverage: 100% (2122 of 2122)
-  Covered methods: 2122
-  Fully covered methods: 2122
-  Total methods: 2122
+  Coverable lines: 32201
+  Total lines: 78938
+  Branch coverage: 100% (11574 of 11574)
+  Covered branches: 11574
+  Total branches: 11574
+  Method coverage: 100% (2127 of 2127)
+  Full method coverage: 100% (2127 of 2127)
+  Covered methods: 2127
+  Fully covered methods: 2127
+  Total methods: 2127
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -310,6 +310,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignBrowserHistory.DesignBrowserHistoryLinkedList                                                                                100%
   LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedList                                                                                  100%
   LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedList                                                                                  100%
+  LeetCode.Algorithms.DesignExamScoresTracker.DesignExamScoresTrackerPrefixSumWithBinarySearch                                                           100%
   LeetCode.Algorithms.DesignFoodRatingSystem.DesignFoodRatingSystemDictionaryWithPriorityQueue                                                           100%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueLinkedList                                                                    100%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueList                                                                          100%
