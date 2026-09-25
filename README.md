@@ -287,6 +287,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [704. Binary Search](https://leetcode.com/problems/binary-search/description/)
 - [705. Design HashSet](https://leetcode.com/problems/design-hashset/description/)
 - [706. Design HashMap](https://leetcode.com/problems/design-hashmap/description/)
+- [707. Design Linked List](https://leetcode.com/problems/design-linked-list/description/)
 - [709. To Lower Case](https://leetcode.com/problems/to-lower-case/description/)
 - [712. Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/description/)
 - [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/description/)
