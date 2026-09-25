@@ -48,6 +48,227 @@ public abstract class DesignLinkedListTestsBase<T> where T : IDesignLinkedList, 
         [
             new Scenario<IDesignLinkedList>(
                 [
+                    new AddAtTailOperation(10),
+                    new AddAtTailOperation(20),
+                    new AddAtTailOperation(30),
+                    new AddAtTailOperation(40),
+                    new AddAtTailOperation(50),
+                    new AddAtTailOperation(60),
+                    new AddAtIndexOperation(3, 35),
+                    new DeleteAtIndexOperation(5),
+                    new AddAtIndexOperation(5, 50),
+                    new GetOperation(5),
+                    new GetOperation(1),
+                    new GetOperation(4),
+                    new GetOperation(2),
+                    new GetOperation(6),
+                    new GetOperation(0),
+                    new GetOperation(3)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetOperation.Result(50),
+                    new GetOperation.Result(20),
+                    new GetOperation.Result(40),
+                    new GetOperation.Result(30),
+                    new GetOperation.Result(60),
+                    new GetOperation.Result(10),
+                    new GetOperation.Result(35)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignLinkedList>(
+                [
+                    new AddAtIndexOperation(0, 0),
+                    new DeleteAtIndexOperation(0),
+                    new AddAtIndexOperation(0, 1000),
+                    new DeleteAtIndexOperation(0),
+                    new AddAtTailOperation(7),
+                    new DeleteAtIndexOperation(0),
+                    new AddAtHeadOperation(8),
+                    new AddAtTailOperation(9),
+                    new GetOperation(0),
+                    new GetOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetOperation.Result(8),
+                    new GetOperation.Result(9)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignLinkedList>(
+                [
+                    new AddAtHeadOperation(0),
+                    new AddAtTailOperation(1000),
+                    new AddAtIndexOperation(1, 0),
+                    new AddAtIndexOperation(2, 1000),
+                    new DeleteAtIndexOperation(1),
+                    new DeleteAtIndexOperation(2),
+                    new GetOperation(0),
+                    new GetOperation(1),
+                    new GetOperation(2)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetOperation.Result(0),
+                    new GetOperation.Result(1000),
+                    new GetOperation.Result(-1)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignLinkedList>(
+                [
+                    new AddAtTailOperation(50),
+                    new AddAtIndexOperation(0, 40),
+                    new AddAtIndexOperation(0, 30),
+                    new AddAtIndexOperation(0, 20),
+                    new AddAtIndexOperation(0, 10),
+                    new DeleteAtIndexOperation(2),
+                    new AddAtIndexOperation(2, 25),
+                    new GetOperation(4),
+                    new GetOperation(3),
+                    new GetOperation(2),
+                    new GetOperation(1),
+                    new GetOperation(0)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetOperation.Result(50),
+                    new GetOperation.Result(40),
+                    new GetOperation.Result(25),
+                    new GetOperation.Result(20),
+                    new GetOperation.Result(10)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignLinkedList>(
+                [
+                    new AddAtTailOperation(0),
+                    new AddAtTailOperation(1),
+                    new AddAtTailOperation(2),
+                    new AddAtTailOperation(3),
+                    new AddAtTailOperation(4),
+                    new AddAtTailOperation(5),
+                    new AddAtTailOperation(6),
+                    new AddAtTailOperation(7),
+                    new DeleteAtIndexOperation(6),
+                    new DeleteAtIndexOperation(4),
+                    new DeleteAtIndexOperation(2),
+                    new DeleteAtIndexOperation(0),
+                    new AddAtIndexOperation(2, 4),
+                    new GetOperation(0),
+                    new GetOperation(1),
+                    new GetOperation(2),
+                    new GetOperation(3),
+                    new GetOperation(4)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetOperation.Result(1),
+                    new GetOperation.Result(3),
+                    new GetOperation.Result(4),
+                    new GetOperation.Result(5),
+                    new GetOperation.Result(7)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignLinkedList>(
+                [
+                    .. Enumerable.Range(0, 1000).Select(value => new AddAtTailOperation(value)),
+                    .. Enumerable.Range(0, 1000).Select(index => new GetOperation(index))
+                ],
+                [
+                    .. Enumerable.Repeat(VoidOperationResult.Instance, 1000),
+                    .. Enumerable.Range(0, 1000).Select(value => new GetOperation.Result(value))
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignLinkedList>(
+                [
+                    .. Enumerable.Range(0, 1000).Select(value => new AddAtHeadOperation(value)),
+                    .. Enumerable.Range(0, 1000).Select(index => new GetOperation(index))
+                ],
+                [
+                    .. Enumerable.Repeat(VoidOperationResult.Instance, 1000),
+                    .. Enumerable.Range(0, 1000).Select(index => new GetOperation.Result(999 - index))
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignLinkedList>(
+                [
+                    .. Enumerable.Range(0, 1000).Select(value => new AddAtTailOperation(value)),
+                    new AddAtIndexOperation(1000, 1000),
+                    new GetOperation(1000),
+                    new DeleteAtIndexOperation(1000),
+                    new AddAtTailOperation(999),
+                    new GetOperation(1000)
+                ],
+                [
+                    .. Enumerable.Repeat(VoidOperationResult.Instance, 1001),
+                    new GetOperation.Result(1000),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new GetOperation.Result(999)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignLinkedList>(
+                [
                     new AddAtHeadOperation(1),
                     new AddAtTailOperation(3),
                     new AddAtIndexOperation(1, 2),
@@ -105,20 +326,6 @@ public abstract class DesignLinkedListTestsBase<T> where T : IDesignLinkedList, 
             new Scenario<IDesignLinkedList>(
                 [new AddAtIndexOperation(0, 5), new GetOperation(0)],
                 [VoidOperationResult.Instance, new GetOperation.Result(5)])
-        ];
-
-        yield return
-        [
-            new Scenario<IDesignLinkedList>(
-                [new AddAtIndexOperation(1, 5), new GetOperation(0)],
-                [VoidOperationResult.Instance, new GetOperation.Result(-1)])
-        ];
-
-        yield return
-        [
-            new Scenario<IDesignLinkedList>(
-                [new AddAtIndexOperation(1000, 5), new GetOperation(0)],
-                [VoidOperationResult.Instance, new GetOperation.Result(-1)])
         ];
 
         yield return
@@ -214,13 +421,6 @@ public abstract class DesignLinkedListTestsBase<T> where T : IDesignLinkedList, 
                     new GetOperation.Result(2),
                     new GetOperation.Result(3)
                 ])
-        ];
-
-        yield return
-        [
-            new Scenario<IDesignLinkedList>(
-                [new AddAtHeadOperation(1), new AddAtIndexOperation(2, 2), new GetOperation(0), new GetOperation(1)],
-                [VoidOperationResult.Instance, VoidOperationResult.Instance, new GetOperation.Result(1), new GetOperation.Result(-1)])
         ];
 
         yield return
@@ -543,27 +743,6 @@ public abstract class DesignLinkedListTestsBase<T> where T : IDesignLinkedList, 
                     new GetOperation.Result(1),
                     new GetOperation.Result(3),
                     new GetOperation.Result(4)
-                ])
-        ];
-
-        yield return
-        [
-            new Scenario<IDesignLinkedList>(
-                [
-                    new AddAtTailOperation(1),
-                    new DeleteAtIndexOperation(0),
-                    new AddAtIndexOperation(1, 8),
-                    new GetOperation(0),
-                    new AddAtTailOperation(9),
-                    new GetOperation(0)
-                ],
-                [
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    VoidOperationResult.Instance,
-                    new GetOperation.Result(-1),
-                    VoidOperationResult.Instance,
-                    new GetOperation.Result(9)
                 ])
         ];
 
