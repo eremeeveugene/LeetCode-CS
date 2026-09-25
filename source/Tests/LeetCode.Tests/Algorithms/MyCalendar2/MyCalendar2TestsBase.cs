@@ -10,27 +10,105 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.MyCalendar2;
+using LeetCode.Tests.Base.Scenarios;
 
 namespace LeetCode.Tests.Algorithms.MyCalendar2;
 
 public abstract class MyCalendar2TestsBase<T> where T : IMyCalendar2, new()
 {
     [TestMethod]
-    [DataRow(new[] { 10, 50, 10, 5, 5, 25 }, new[] { 20, 60, 40, 15, 10, 55 }, new[] { true, true, true, false, true, true })]
-    public void Book_WithMultipleBookings_ReturnsOverlapResults(int[] start, int[] end, bool[] expectedResult)
+    [DynamicData(nameof(GetScenarios))]
+    public void MyCalendar2_WithMixedOperations_ProcessesOperationsAccordingToSpecification(IScenario<IMyCalendar2> scenario)
     {
         // Arrange
+        var expectedResult = scenario.OperationResults;
+
         var solution = new T();
 
         // Act
-        var actualResult = new bool[expectedResult.Length];
+        var operations = scenario.Operations;
+        var operationsLength = operations.Length;
 
-        for (var i = 0; i < expectedResult.Length; i++)
+        var actualResult = new IOperationResult[operationsLength];
+
+        for (var i = 0; i < operationsLength; i++)
         {
-            actualResult[i] = solution.Book(start[i], end[i]);
+            var operation = operations[i];
+
+            actualResult[i] = operation.Execute(solution);
         }
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<IScenario<IMyCalendar2>[]> GetScenarios()
+    {
+        yield return
+        [
+            new Scenario<IMyCalendar2>(
+                [
+                    new BookOperation(10, 20),
+                    new BookOperation(50, 60),
+                    new BookOperation(10, 40),
+                    new BookOperation(5, 15),
+                    new BookOperation(5, 10),
+                    new BookOperation(25, 55)
+                ],
+                [
+                    new BookOperation.Result(true),
+                    new BookOperation.Result(true),
+                    new BookOperation.Result(true),
+                    new BookOperation.Result(false),
+                    new BookOperation.Result(true),
+                    new BookOperation.Result(true)
+                ])
+        ];
+    }
+
+    private sealed class BookOperation : IOperation<IMyCalendar2>
+    {
+        private readonly int _end;
+        private readonly int _start;
+
+        public BookOperation(int start, int end)
+        {
+            _start = start;
+            _end = end;
+        }
+
+        public IOperationResult Execute(IMyCalendar2 solution)
+        {
+            var result = solution.Book(_start, _end);
+
+            return new Result(result);
+        }
+
+        public sealed class Result
+            : IOperationResult,
+                IEquatable<Result>
+        {
+            private readonly bool _value;
+
+            public Result(bool value)
+            {
+                _value = value;
+            }
+
+            public bool Equals(Result? other)
+            {
+                return other is not null && _value == other._value;
+            }
+
+            public override bool Equals(object? obj)
+            {
+                return obj is Result other && Equals(other);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(_value);
+            }
+        }
     }
 }
