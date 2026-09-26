@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/25/2026 - 1:27:20 PM
-  Coverage date: 9/25/2026 - 1:26:52 PM - 9/25/2026 - 1:27:11 PM
+  Generated on: 9/26/2026 - 11:06:58 AM
+  Coverage date: 9/26/2026 - 11:06:18 AM - 9/26/2026 - 11:06:41 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1398
-  Files: 1398
+  Classes: 1400
+  Files: 1400
   Line coverage: 100%
-  Covered lines: 32201
+  Covered lines: 32277
   Uncovered lines: 0
-  Coverable lines: 32201
-  Total lines: 78938
-  Branch coverage: 100% (11574 of 11574)
-  Covered branches: 11574
-  Total branches: 11574
-  Method coverage: 100% (2127 of 2127)
-  Full method coverage: 100% (2127 of 2127)
-  Covered methods: 2127
-  Fully covered methods: 2127
-  Total methods: 2127
+  Coverable lines: 32277
+  Total lines: 79114
+  Branch coverage: 100% (11594 of 11594)
+  Covered branches: 11594
+  Total branches: 11594
+  Method coverage: 100% (2129 of 2129)
+  Full method coverage: 100% (2129 of 2129)
+  Covered methods: 2129
+  Fully covered methods: 2129
+  Total methods: 2129
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -371,6 +371,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.EqualSumGridPartition1.EqualSumGridPartition1PrecomputedPrefixSum                                                                  100%
   LeetCode.Algorithms.EqualSumGridPartition1.EqualSumGridPartition1PrefixSum                                                                             100%
   LeetCode.Algorithms.EvaluateBooleanBinaryTree.EvaluateBooleanBinaryTreeDepthFirstSearch                                                                100%
+  LeetCode.Algorithms.EvaluateTheBracketPairsOfString.EvaluateTheBracketPairsOfStringDictionaryWithSpan                                                  100%
+  LeetCode.Algorithms.EvaluateTheBracketPairsOfString.EvaluateTheBracketPairsOfStringDictionaryWithStringBuilder                                         100%
   LeetCode.Algorithms.EvenNumberOfKnightMoves.EvenNumberOfKnightMovesMath                                                                                100%
   LeetCode.Algorithms.EvenOddTree.EvenOddTreeBreadthFirst                                                                                                100%
   LeetCode.Algorithms.ExcelSheetColumnNumber.ExcelSheetColumnNumberIterative                                                                             100%
