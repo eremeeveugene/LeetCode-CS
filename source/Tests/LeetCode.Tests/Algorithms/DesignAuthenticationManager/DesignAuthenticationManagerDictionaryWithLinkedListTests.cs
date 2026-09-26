@@ -14,10 +14,10 @@ using LeetCode.Algorithms.DesignAuthenticationManager;
 namespace LeetCode.Tests.Algorithms.DesignAuthenticationManager;
 
 [TestClass]
-public sealed class DesignAuthenticationManagerDictionaryTests : DesignAuthenticationManagerTestsBase
+public sealed class DesignAuthenticationManagerDictionaryWithLinkedListTests : DesignAuthenticationManagerTestsBase
 {
     protected override IDesignAuthenticationManager GetSolution(int timeToLive)
     {
-        return new DesignAuthenticationManagerDictionary(timeToLive);
+        return new DesignAuthenticationManagerDictionaryWithLinkedList(timeToLive);
     }
 }

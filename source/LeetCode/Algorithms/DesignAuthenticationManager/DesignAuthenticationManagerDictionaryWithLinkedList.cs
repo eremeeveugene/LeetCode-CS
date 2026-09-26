@@ -16,13 +16,13 @@ namespace LeetCode.Algorithms.DesignAuthenticationManager;
 ///     Keeps expiration times ordered in a linked list, moving renewed tokens to the end.
 ///     Space complexity - O(n), where n is the number of generated tokens
 /// </remarks>
-public sealed class DesignAuthenticationManagerDictionary : IDesignAuthenticationManager
+public sealed class DesignAuthenticationManagerDictionaryWithLinkedList : IDesignAuthenticationManager
 {
     private readonly LinkedList<int> _expirationTimes = [];
     private readonly int _timeToLive;
     private readonly Dictionary<string, LinkedListNode<int>> _tokenIdToNodeDictionary = [];
 
-    public DesignAuthenticationManagerDictionary(int timeToLive)
+    public DesignAuthenticationManagerDictionaryWithLinkedList(int timeToLive)
     {
         _timeToLive = timeToLive;
     }
