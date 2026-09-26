@@ -14,13 +14,14 @@ namespace LeetCode.Algorithms.DesignAuthenticationManager;
 /// <inheritdoc />
 /// <remarks>
 ///     Keeps expiration times ordered in a linked list, moving renewed tokens to the end.
-///     Space complexity - O(n), where n is the number of generated tokens
+///     Removes expired tokens before each operation. Each generated token is removed at most once.
+///     Space complexity - O(n), where n is the maximum number of simultaneously stored tokens
 /// </remarks>
 public sealed class DesignAuthenticationManagerDictionaryWithLinkedList : IDesignAuthenticationManager
 {
-    private readonly LinkedList<int> _expirationTimes = [];
     private readonly int _timeToLive;
-    private readonly Dictionary<string, LinkedListNode<int>> _tokenIdToNodeDictionary = [];
+    private readonly Dictionary<string, LinkedListNode<(string TokenId, int ExpirationTime)>> _tokenIdToNodeDictionary = [];
+    private readonly LinkedList<(string TokenId, int ExpirationTime)> _tokensByExpirationTime = [];
 
     public DesignAuthenticationManagerDictionaryWithLinkedList(int timeToLive)
     {
@@ -29,52 +30,68 @@ public sealed class DesignAuthenticationManagerDictionaryWithLinkedList : IDesig
 
     /// <inheritdoc />
     /// <remarks>
-    ///     Time complexity - O(1)
+    ///     Time complexity - O(1) amortized
     ///     Space complexity - O(1)
     /// </remarks>
     public void Generate(string tokenId, int currentTime)
     {
+        DeleteExpiredTokens(currentTime);
+
         var expirationTime = currentTime + _timeToLive;
-        var node = _expirationTimes.AddLast(expirationTime);
+        var node = _tokensByExpirationTime.AddLast((tokenId, expirationTime));
 
         _tokenIdToNodeDictionary.Add(tokenId, node);
     }
 
     /// <inheritdoc />
     /// <remarks>
-    ///     Time complexity - O(1)
+    ///     Time complexity - O(1) amortized
     ///     Space complexity - O(1)
     /// </remarks>
     public void Renew(string tokenId, int currentTime)
     {
-        if (!_tokenIdToNodeDictionary.TryGetValue(tokenId, out var node) || node.Value <= currentTime)
+        DeleteExpiredTokens(currentTime);
+
+        if (!_tokenIdToNodeDictionary.TryGetValue(tokenId, out var node))
         {
             return;
         }
 
-        node.Value = currentTime + _timeToLive;
+        node.Value = (tokenId, currentTime + _timeToLive);
 
-        _expirationTimes.Remove(node);
-        _expirationTimes.AddLast(node);
+        _tokensByExpirationTime.Remove(node);
+        _tokensByExpirationTime.AddLast(node);
     }
 
     /// <inheritdoc />
     /// <remarks>
-    ///     Time complexity - O(u + 1), where u is the number of unexpired tokens
+    ///     Time complexity - O(1) amortized
     ///     Space complexity - O(1)
     /// </remarks>
     public int CountUnexpiredTokens(int currentTime)
     {
-        var count = 0;
-        var node = _expirationTimes.Last;
+        DeleteExpiredTokens(currentTime);
 
-        while (node is not null && node.Value > currentTime)
+        return _tokenIdToNodeDictionary.Count;
+    }
+
+    /// <summary>
+    ///     Removes expired tokens from the front of the ordered list and from the dictionary.
+    /// </summary>
+    /// <remarks>
+    ///     Time complexity - O(e + 1), where e is the number of tokens removed
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private void DeleteExpiredTokens(int currentTime)
+    {
+        var node = _tokensByExpirationTime.First;
+
+        while (node is not null && node.Value.ExpirationTime <= currentTime)
         {
-            count++;
+            _tokenIdToNodeDictionary.Remove(node.Value.TokenId);
+            _tokensByExpirationTime.RemoveFirst();
 
-            node = node.Previous;
+            node = _tokensByExpirationTime.First;
         }
-
-        return count;
     }
 }
