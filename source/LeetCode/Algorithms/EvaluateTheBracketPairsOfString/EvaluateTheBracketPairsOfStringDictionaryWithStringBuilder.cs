@@ -47,18 +47,20 @@ public sealed class EvaluateTheBracketPairsOfStringDictionaryWithStringBuilder :
 
         var resultStringBuilder = new StringBuilder(n);
 
-        for (var i = 0; i < n; i++)
+        var characterIndex = 0;
+
+        while (characterIndex < n)
         {
-            if (s[i] == OpeningBracket)
+            if (s[characterIndex] == OpeningBracket)
             {
-                var keyStartIndex = i + 1;
+                var keyStartIndex = characterIndex + 1;
 
                 do
                 {
-                    i++;
-                } while (s[i] != ClosingBracket);
+                    characterIndex++;
+                } while (s[characterIndex] != ClosingBracket);
 
-                var keyLength = i - keyStartIndex;
+                var keyLength = characterIndex - keyStartIndex;
 
                 var key = s.AsSpan(keyStartIndex, keyLength);
 
@@ -68,8 +70,10 @@ public sealed class EvaluateTheBracketPairsOfStringDictionaryWithStringBuilder :
             }
             else
             {
-                resultStringBuilder.Append(s[i]);
+                resultStringBuilder.Append(s[characterIndex]);
             }
+
+            characterIndex++;
         }
 
         return resultStringBuilder.ToString();
