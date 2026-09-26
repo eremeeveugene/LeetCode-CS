@@ -13,12 +13,14 @@ namespace LeetCode.Algorithms.DesignAuthenticationManager;
 
 /// <inheritdoc />
 /// <remarks>
+///     Keeps expiration times ordered in a linked list, moving renewed tokens to the end.
 ///     Space complexity - O(n), where n is the number of generated tokens
 /// </remarks>
 public sealed class DesignAuthenticationManagerDictionary : IDesignAuthenticationManager
 {
+    private readonly LinkedList<int> _expirationTimes = new();
     private readonly int _timeToLive;
-    private readonly Dictionary<string, int> _tokenIdToExpirationTimeDictionary = [];
+    private readonly Dictionary<string, LinkedListNode<int>> _tokenIdToNodeDictionary = [];
 
     public DesignAuthenticationManagerDictionary(int timeToLive)
     {
@@ -33,8 +35,9 @@ public sealed class DesignAuthenticationManagerDictionary : IDesignAuthenticatio
     public void Generate(string tokenId, int currentTime)
     {
         var expirationTime = currentTime + _timeToLive;
+        var node = _expirationTimes.AddLast(expirationTime);
 
-        _tokenIdToExpirationTimeDictionary.Add(tokenId, expirationTime);
+        _tokenIdToNodeDictionary.Add(tokenId, node);
     }
 
     /// <inheritdoc />
@@ -44,31 +47,32 @@ public sealed class DesignAuthenticationManagerDictionary : IDesignAuthenticatio
     /// </remarks>
     public void Renew(string tokenId, int currentTime)
     {
-        if (!_tokenIdToExpirationTimeDictionary.TryGetValue(tokenId, out var expirationTime) || expirationTime <= currentTime)
+        if (!_tokenIdToNodeDictionary.TryGetValue(tokenId, out var node) || node.Value <= currentTime)
         {
             return;
         }
 
-        expirationTime = currentTime + _timeToLive;
+        node.Value = currentTime + _timeToLive;
 
-        _tokenIdToExpirationTimeDictionary[tokenId] = expirationTime;
+        _expirationTimes.Remove(node);
+        _expirationTimes.AddLast(node);
     }
 
     /// <inheritdoc />
     /// <remarks>
-    ///     Time complexity - O(n), where n is the number of generated tokens
+    ///     Time complexity - O(u + 1), where u is the number of unexpired tokens
     ///     Space complexity - O(1)
     /// </remarks>
     public int CountUnexpiredTokens(int currentTime)
     {
         var count = 0;
+        var node = _expirationTimes.Last;
 
-        foreach (var expirationTime in _tokenIdToExpirationTimeDictionary.Values)
+        while (node is not null && node.Value > currentTime)
         {
-            if (expirationTime > currentTime)
-            {
-                count++;
-            }
+            count++;
+
+            node = node.Previous;
         }
 
         return count;

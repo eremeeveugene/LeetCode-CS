@@ -49,6 +49,26 @@ public abstract class DesignAuthenticationManagerTestsBase
         yield return
         [
             new AuthenticationManagerScenario(
+                10,
+                [
+                    new GenerateOperation("a", 1),
+                    new GenerateOperation("b", 2),
+                    new RenewOperation("a", 3),
+                    new CountUnexpiredTokensOperation(12),
+                    new CountUnexpiredTokensOperation(13)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new CountUnexpiredTokensOperation.Result(1),
+                    new CountUnexpiredTokensOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new AuthenticationManagerScenario(
                 5,
                 [
                     new RenewOperation("aaa", 1),
