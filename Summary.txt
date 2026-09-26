@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/26/2026 - 11:06:58 AM
-  Coverage date: 9/26/2026 - 11:06:18 AM - 9/26/2026 - 11:06:41 AM
+  Generated on: 9/26/2026 - 1:21:18 PM
+  Coverage date: 9/26/2026 - 1:20:42 PM - 9/26/2026 - 1:21:09 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1400
-  Files: 1400
+  Classes: 1401
+  Files: 1401
   Line coverage: 100%
-  Covered lines: 32277
+  Covered lines: 32311
   Uncovered lines: 0
-  Coverable lines: 32277
-  Total lines: 79114
-  Branch coverage: 100% (11594 of 11594)
-  Covered branches: 11594
-  Total branches: 11594
-  Method coverage: 100% (2129 of 2129)
-  Full method coverage: 100% (2129 of 2129)
-  Covered methods: 2129
-  Fully covered methods: 2129
-  Total methods: 2129
+  Coverable lines: 32311
+  Total lines: 79211
+  Branch coverage: 100% (11600 of 11600)
+  Covered branches: 11600
+  Total branches: 11600
+  Method coverage: 100% (2134 of 2134)
+  Full method coverage: 100% (2134 of 2134)
+  Covered methods: 2134
+  Fully covered methods: 2134
+  Total methods: 2134
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -306,6 +306,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DeleteTheMiddleNodeOfALinkedList.DeleteTheMiddleNodeOfALinkedListTwoPointers                                                       100%
   LeetCode.Algorithms.DesignAnATMMachine.DesignAnATMMachineGreedy                                                                                        100%
   LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArray                                                                                   100%
+  LeetCode.Algorithms.DesignAuthenticationManager.DesignAuthenticationManagerDictionaryWithLinkedList                                                    100%
   LeetCode.Algorithms.DesignBrowserHistory.DesignBrowserHistoryArray                                                                                     100%
   LeetCode.Algorithms.DesignBrowserHistory.DesignBrowserHistoryLinkedList                                                                                100%
   LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedList                                                                                  100%
