@@ -18,7 +18,7 @@ namespace LeetCode.Algorithms.DesignAuthenticationManager;
 /// </remarks>
 public sealed class DesignAuthenticationManagerDictionary : IDesignAuthenticationManager
 {
-    private readonly LinkedList<int> _expirationTimes = new();
+    private readonly LinkedList<int> _expirationTimes = [];
     private readonly int _timeToLive;
     private readonly Dictionary<string, LinkedListNode<int>> _tokenIdToNodeDictionary = [];
 
