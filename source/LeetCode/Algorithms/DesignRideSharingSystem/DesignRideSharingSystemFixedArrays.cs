@@ -36,7 +36,9 @@ public sealed class DesignRideSharingSystemFixedArrays : IDesignRideSharingSyste
     /// </remarks>
     public void AddRider(int riderId)
     {
-        _riders[_riderTail++] = riderId;
+        _riders[_riderTail] = riderId;
+
+        _riderTail++;
 
         _isRiderWaiting[riderId] = true;
     }
@@ -48,7 +50,9 @@ public sealed class DesignRideSharingSystemFixedArrays : IDesignRideSharingSyste
     /// </remarks>
     public void AddDriver(int driverId)
     {
-        _drivers[_driverTail++] = driverId;
+        _drivers[_driverTail] = driverId;
+
+        _driverTail++;
     }
 
     /// <inheritdoc />
@@ -66,7 +70,9 @@ public sealed class DesignRideSharingSystemFixedArrays : IDesignRideSharingSyste
 
         while (_riderHead < _riderTail)
         {
-            var riderId = _riders[_riderHead++];
+            var riderId = _riders[_riderHead];
+
+            _riderHead++;
 
             if (!_isRiderWaiting[riderId])
             {
@@ -75,7 +81,9 @@ public sealed class DesignRideSharingSystemFixedArrays : IDesignRideSharingSyste
 
             _isRiderWaiting[riderId] = false;
 
-            var driverId = _drivers[_driverHead++];
+            var driverId = _drivers[_driverHead];
+
+            _driverHead++;
 
             return [driverId, riderId];
         }
