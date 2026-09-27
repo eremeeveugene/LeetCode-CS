@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/26/2026 - 1:21:18 PM
-  Coverage date: 9/26/2026 - 1:20:42 PM - 9/26/2026 - 1:21:09 PM
+  Generated on: 9/27/2026 - 1:47:06 PM
+  Coverage date: 9/27/2026 - 1:46:28 PM - 9/27/2026 - 1:46:54 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1401
-  Files: 1401
+  Classes: 1403
+  Files: 1403
   Line coverage: 100%
-  Covered lines: 32311
+  Covered lines: 32371
   Uncovered lines: 0
-  Coverable lines: 32311
-  Total lines: 79211
-  Branch coverage: 100% (11600 of 11600)
-  Covered branches: 11600
-  Total branches: 11600
-  Method coverage: 100% (2134 of 2134)
-  Full method coverage: 100% (2134 of 2134)
-  Covered methods: 2134
-  Fully covered methods: 2134
-  Total methods: 2134
+  Coverable lines: 32371
+  Total lines: 79399
+  Branch coverage: 100% (11612 of 11612)
+  Covered branches: 11612
+  Total branches: 11612
+  Method coverage: 100% (2146 of 2146)
+  Full method coverage: 100% (2146 of 2146)
+  Covered methods: 2146
+  Fully covered methods: 2146
+  Total methods: 2146
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -325,6 +325,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignNeighborSumService.DesignNeighborSumServiceDictionary                                                                        100%
   LeetCode.Algorithms.DesignNumberContainerSystem.DesignNumberContainerSystemDictionary                                                                  100%
   LeetCode.Algorithms.DesignParkingSystem.DesignParkingSystemCounting                                                                                    100%
+  LeetCode.Algorithms.DesignRideSharingSystem.DesignRideSharingSystemFixedArrays                                                                         100%
+  LeetCode.Algorithms.DesignRideSharingSystem.DesignRideSharingSystemQueueWithHashSet                                                                    100%
   LeetCode.Algorithms.DesignSpreadsheet.DesignSpreadsheetMatrix                                                                                          100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationArray                                                           100%
   LeetCode.Algorithms.DesignStackWithIncrementOperation.DesignStackWithIncrementOperationLinkedList                                                      100%
