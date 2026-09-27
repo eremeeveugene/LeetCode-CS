@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/27/2026 - 1:47:06 PM
-  Coverage date: 9/27/2026 - 1:46:28 PM - 9/27/2026 - 1:46:54 PM
+  Generated on: 9/27/2026 - 2:25:29 PM
+  Coverage date: 9/27/2026 - 2:24:55 PM - 9/27/2026 - 2:25:21 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1403
-  Files: 1403
+  Classes: 1404
+  Files: 1404
   Line coverage: 100%
-  Covered lines: 32371
+  Covered lines: 32416
   Uncovered lines: 0
-  Coverable lines: 32371
-  Total lines: 79399
-  Branch coverage: 100% (11612 of 11612)
-  Covered branches: 11612
-  Total branches: 11612
-  Method coverage: 100% (2146 of 2146)
-  Full method coverage: 100% (2146 of 2146)
-  Covered methods: 2146
-  Fully covered methods: 2146
-  Total methods: 2146
+  Coverable lines: 32416
+  Total lines: 79528
+  Branch coverage: 100% (11628 of 11628)
+  Covered branches: 11628
+  Total branches: 11628
+  Method coverage: 100% (2154 of 2154)
+  Full method coverage: 100% (2154 of 2154)
+  Covered methods: 2154
+  Fully covered methods: 2154
+  Total methods: 2154
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -304,6 +304,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DeleteNodesAndReturnForest.DeleteNodesAndReturnForestDepthFirstSearchRecursive                                                     100%
   LeetCode.Algorithms.DeleteNodesAndReturnForest.DeleteNodesAndReturnForestDepthFirstSearchStack                                                         100%
   LeetCode.Algorithms.DeleteTheMiddleNodeOfALinkedList.DeleteTheMiddleNodeOfALinkedListTwoPointers                                                       100%
+  LeetCode.Algorithms.DesignAddAndSearchWordsDataStructure.DesignAddAndSearchWordsDataStructureTrie                                                      100%
   LeetCode.Algorithms.DesignAnATMMachine.DesignAnATMMachineGreedy                                                                                        100%
   LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArray                                                                                   100%
   LeetCode.Algorithms.DesignAuthenticationManager.DesignAuthenticationManagerDictionaryWithLinkedList                                                    100%
