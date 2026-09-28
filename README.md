@@ -484,6 +484,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1518. Water Bottles](https://leetcode.com/problems/water-bottles/description/)
 - [1523. Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/description/)
 - [1524. Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/description/)
+- [1526. Minimum Number of Increments on Subarrays to Form a Target Array](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/description/)
 - [1528. Shuffle String](https://leetcode.com/problems/shuffle-string/description/)
 - [1530. Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/description/)
 - [1534. Count Good Triplets](https://leetcode.com/problems/count-good-triplets/description/)
