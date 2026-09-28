@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/27/2026 - 2:25:29 PM
-  Coverage date: 9/27/2026 - 2:24:55 PM - 9/27/2026 - 2:25:21 PM
+  Generated on: 9/28/2026 - 9:21:39 AM
+  Coverage date: 9/28/2026 - 9:21:02 AM - 9/28/2026 - 9:21:31 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1404
-  Files: 1404
+  Classes: 1405
+  Files: 1405
   Line coverage: 100%
-  Covered lines: 32416
+  Covered lines: 32432
   Uncovered lines: 0
-  Coverable lines: 32416
-  Total lines: 79528
-  Branch coverage: 100% (11628 of 11628)
-  Covered branches: 11628
-  Total branches: 11628
-  Method coverage: 100% (2154 of 2154)
-  Full method coverage: 100% (2154 of 2154)
-  Covered methods: 2154
-  Fully covered methods: 2154
-  Total methods: 2154
+  Coverable lines: 32432
+  Total lines: 79573
+  Branch coverage: 100% (11632 of 11632)
+  Covered branches: 11632
+  Total branches: 11632
+  Method coverage: 100% (2155 of 2155)
+  Full method coverage: 100% (2155 of 2155)
+  Covered methods: 2155
+  Fully covered methods: 2155
+  Total methods: 2155
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -868,6 +868,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfChangesToMakeBinaryStringBeautiful.MinimumNumberOfChangesToMakeBinaryStringBeautifulGreedy                          100%
   LeetCode.Algorithms.MinimumNumberOfDaysToDisconnectIsland.MinimumNumberOfDaysToDisconnectIslandBruteForceCopyArray                                     100%
   LeetCode.Algorithms.MinimumNumberOfDaysToDisconnectIsland.MinimumNumberOfDaysToDisconnectIslandBruteForceVisitedArray                                  100%
+  LeetCode.Algorithms.MinimumNumberOfIncrementsOnSubarraysToFormTargetArray.MinimumNumberOfIncrementsOnSubarraysToFormTargetArrayGreedy                  100%
   LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone.MinimumNumberOfMovesToSeatEveryoneCountingSort                                                  100%
   LeetCode.Algorithms.MinimumNumberOfMovesToSeatEveryone.MinimumNumberOfMovesToSeatEveryoneSorting                                                       100%
   LeetCode.Algorithms.MinimumNumberOfOperationsToMakeArrayXOREqualToK.MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeBits                       100%
