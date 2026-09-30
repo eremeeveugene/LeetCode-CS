@@ -955,6 +955,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3794. Reverse String Prefix](https://leetcode.com/problems/reverse-string-prefix/description/)
 - [3798. Largest Even Number](https://leetcode.com/problems/largest-even-number/description/)
 - [3803. Count Residue Prefixes](https://leetcode.com/problems/count-residue-prefixes/description/)
+- [3815. Design Auction System](https://leetcode.com/problems/design-auction-system/description/)
 - [3823. Reverse Letters Then Special Characters in a String](https://leetcode.com/problems/reverse-letters-then-special-characters-in-a-string/description/)
 - [3829. Design Ride Sharing System](https://leetcode.com/problems/design-ride-sharing-system/description/)
 - [3838. Weighted Word Mapping](https://leetcode.com/problems/weighted-word-mapping/description/)
