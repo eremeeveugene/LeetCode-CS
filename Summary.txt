@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/1/2026 - 7:44:52 AM
-  Coverage date: 10/1/2026 - 7:44:16 AM - 10/1/2026 - 7:44:44 AM
+  Generated on: 10/1/2026 - 5:56:07 PM
+  Coverage date: 10/1/2026 - 5:55:26 PM - 10/1/2026 - 5:55:53 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1406
-  Files: 1406
+  Classes: 1407
+  Files: 1407
   Line coverage: 100%
-  Covered lines: 32466
+  Covered lines: 32503
   Uncovered lines: 0
-  Coverable lines: 32466
-  Total lines: 79670
-  Branch coverage: 100% (11642 of 11642)
-  Covered branches: 11642
-  Total branches: 11642
-  Method coverage: 100% (2161 of 2161)
-  Full method coverage: 100% (2161 of 2161)
-  Covered methods: 2161
-  Fully covered methods: 2161
-  Total methods: 2161
+  Coverable lines: 32503
+  Total lines: 79748
+  Branch coverage: 100% (11648 of 11648)
+  Covered branches: 11648
+  Total branches: 11648
+  Method coverage: 100% (2162 of 2162)
+  Full method coverage: 100% (2162 of 2162)
+  Covered methods: 2162
+  Fully covered methods: 2162
+  Total methods: 2162
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -747,6 +747,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumDistanceInArrays.MaximumDistanceInArraysGreedy                                                                              100%
   LeetCode.Algorithms.MaximumElementAfterDecreasingAndRearranging.MaximumElementAfterDecreasingAndRearrangingCountingSort                                100%
   LeetCode.Algorithms.MaximumElementAfterDecreasingAndRearranging.MaximumElementAfterDecreasingAndRearrangingSorting                                     100%
+  LeetCode.Algorithms.MaximumFrequencyOfAnElementAfterPerformingOperations1.MaximumFrequencyOfAnElementAfterPerformingOperations1DifferenceArray         100%
   LeetCode.Algorithms.MaximumIceCreamBars.MaximumIceCreamBarsCountingSort                                                                                100%
   LeetCode.Algorithms.MaximumIceCreamBars.MaximumIceCreamBarsSorting                                                                                     100%
   LeetCode.Algorithms.MaximumLengthSubstringWithTwoOccurrences.MaximumLengthSubstringWithTwoOccurrencesBruteForce                                        100%
