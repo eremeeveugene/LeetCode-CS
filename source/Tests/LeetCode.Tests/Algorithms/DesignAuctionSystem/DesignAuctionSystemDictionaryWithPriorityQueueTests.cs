@@ -14,5 +14,5 @@ using LeetCode.Algorithms.DesignAuctionSystem;
 namespace LeetCode.Tests.Algorithms.DesignAuctionSystem;
 
 [TestClass]
-public sealed class DesignAuctionSystemDictionaryWithPriorityQueueTests 
+public sealed class DesignAuctionSystemDictionaryWithPriorityQueueTests
     : DesignAuctionSystemTestsBase<DesignAuctionSystemDictionaryWithPriorityQueue>;
