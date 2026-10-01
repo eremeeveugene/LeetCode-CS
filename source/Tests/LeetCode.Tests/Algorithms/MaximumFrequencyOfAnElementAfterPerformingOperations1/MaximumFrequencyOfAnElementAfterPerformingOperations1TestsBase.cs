@@ -1,0 +1,88 @@
+// --------------------------------------------------------------------------------
+// Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
+// All Rights Reserved.
+// --------------------------------------------------------------------------------
+// This software is the confidential and proprietary information of Eugene Eremeev
+// (also known as Yevhenii Yeriemeieiv) ("Confidential Information"). You shall not
+// disclose such Confidential Information and shall use it only in accordance with
+// the terms of the license agreement you entered into with Eugene Eremeev (also
+// known as Yevhenii Yeriemeieiv).
+// --------------------------------------------------------------------------------
+
+using LeetCode.Algorithms.MaximumFrequencyOfAnElementAfterPerformingOperations1;
+
+namespace LeetCode.Tests.Algorithms.MaximumFrequencyOfAnElementAfterPerformingOperations1;
+
+public abstract class MaximumFrequencyOfAnElementAfterPerformingOperations1TestsBase<T>
+    where T : IMaximumFrequencyOfAnElementAfterPerformingOperations1, new()
+{
+    [TestMethod]
+    [DataRow(new[] { 1, 4, 5 }, 1, 2, 2)]
+    [DataRow(new[] { 5, 11, 20, 20 }, 5, 1, 2)]
+    [DataRow(new[] { 1 }, 0, 0, 1)]
+    [DataRow(new[] { 1 }, 0, 1, 1)]
+    [DataRow(new[] { 100000 }, 100000, 1, 1)]
+    [DataRow(new[] { 7, 7, 7, 7 }, 0, 0, 4)]
+    [DataRow(new[] { 7, 7, 7, 7 }, 100000, 4, 4)]
+    [DataRow(new[] { 1, 3 }, 1, 2, 2)]
+    [DataRow(new[] { 1, 3 }, 1, 1, 1)]
+    [DataRow(new[] { 1, 4 }, 1, 2, 1)]
+    [DataRow(new[] { 1, 3 }, 2, 1, 2)]
+    [DataRow(new[] { 1, 2, 3 }, 1, 1, 2)]
+    [DataRow(new[] { 1, 2, 3 }, 1, 2, 3)]
+    [DataRow(new[] { 1, 2, 3 }, 1, 0, 1)]
+    [DataRow(new[] { 1, 1, 3, 3 }, 1, 4, 4)]
+    [DataRow(new[] { 1, 1, 3, 3 }, 1, 2, 2)]
+    [DataRow(new[] { 1, 1, 3, 3 }, 2, 1, 3)]
+    [DataRow(new[] { 2, 2, 2, 4, 4 }, 2, 1, 4)]
+    [DataRow(new[] { 2, 2, 2, 4, 4 }, 0, 5, 3)]
+    [DataRow(new[] { 10, 2, 6, 6, 8 }, 2, 2, 3)]
+    [DataRow(new[] { 10, 2, 6, 6, 8 }, 4, 2, 4)]
+    [DataRow(new[] { 9, 7, 5, 3, 1 }, 2, 5, 3)]
+    [DataRow(new[] { 1, 3, 5, 7, 9 }, 2, 5, 3)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 100000, 0, 1)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 100000, 2, 3)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 100000, 5, 5)]
+    [DataRow(new[] { 1, 100000 }, 0, 2, 1)]
+    [DataRow(new[] { 1, 100000 }, 49999, 2, 1)]
+    [DataRow(new[] { 1, 100000 }, 50000, 2, 2)]
+    [DataRow(new[] { 1, 100000 }, 50000, 1, 1)]
+    [DataRow(new[] { 1, 100000 }, 99999, 1, 2)]
+    [DataRow(new[] { 99998, 99999, 100000 }, 1, 2, 3)]
+    [DataRow(new[] { 100000, 99999, 99998 }, 1, 2, 3)]
+    [DataRow(new[] { 1, 1, 1, 10, 10 }, 0, 0, 3)]
+    [DataRow(new[] { 1, 1, 1, 10, 10 }, 9, 2, 5)]
+    [DataRow(new[] { 1, 1, 1, 10, 10 }, 4, 5, 3)]
+    [DataRow(new[] { 1, 1, 1, 10, 10 }, 5, 5, 5)]
+    [DataRow(new[] { 2, 6, 10 }, 4, 2, 3)]
+    [DataRow(new[] { 2, 6, 10 }, 3, 3, 2)]
+    [DataRow(new[] { 4, 4, 5, 6, 6 }, 1, 2, 3)]
+    [DataRow(new[] { 1, 10, 20, 20, 20 }, 1, 1, 3)]
+    [DataRow(new[] { 1, 1, 5, 5, 9, 9 }, 4, 6, 6)]
+    [DataRow(new[] { 1, 1, 5, 5, 9, 9 }, 2, 6, 4)]
+    [DataRow(new[] { 2, 4, 4, 6, 8, 8 }, 2, 3, 4)]
+    [DynamicData(nameof(GetLargeTestData))]
+    public void MaxFrequency_WithGivenNumbersAndOperations_ReturnsMaximumAchievableFrequency(int[] nums, int k, int numOperations, int expectedResult)
+    {
+        // Arrange
+        var solution = new T();
+
+        // Act
+        var actualResult = solution.MaxFrequency(nums, k, numOperations);
+
+        // Assert
+        Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetLargeTestData()
+    {
+        yield return [Enumerable.Repeat(1, 100000).ToArray(), 0, 0, 100000];
+        yield return [Enumerable.Repeat(100000, 100000).ToArray(), 100000, 100000, 100000];
+        yield return [Enumerable.Range(1, 100000).ToArray(), 0, 100000, 1];
+        yield return [Enumerable.Range(1, 100000).ToArray(), 1, 100000, 3];
+        yield return [Enumerable.Range(1, 100000).ToArray(), 100000, 50000, 50001];
+        yield return [Enumerable.Range(1, 100000).Reverse().ToArray(), 100000, 100000, 100000];
+        yield return [Enumerable.Repeat(1, 50000).Concat(Enumerable.Repeat(100000, 50000)).ToArray(), 50000, 100000, 100000];
+        yield return [Enumerable.Repeat(1, 50000).Concat(Enumerable.Repeat(100000, 50000)).ToArray(), 99999, 25000, 75000];
+    }
+}
