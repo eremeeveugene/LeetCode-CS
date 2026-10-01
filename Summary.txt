@@ -1,23 +1,23 @@
 Summary
-  Generated on: 9/28/2026 - 9:21:39 AM
-  Coverage date: 9/28/2026 - 9:21:02 AM - 9/28/2026 - 9:21:31 AM
+  Generated on: 10/1/2026 - 7:44:52 AM
+  Coverage date: 10/1/2026 - 7:44:16 AM - 10/1/2026 - 7:44:44 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1405
-  Files: 1405
+  Classes: 1406
+  Files: 1406
   Line coverage: 100%
-  Covered lines: 32432
+  Covered lines: 32466
   Uncovered lines: 0
-  Coverable lines: 32432
-  Total lines: 79573
-  Branch coverage: 100% (11632 of 11632)
-  Covered branches: 11632
-  Total branches: 11632
-  Method coverage: 100% (2155 of 2155)
-  Full method coverage: 100% (2155 of 2155)
-  Covered methods: 2155
-  Fully covered methods: 2155
-  Total methods: 2155
+  Coverable lines: 32466
+  Total lines: 79670
+  Branch coverage: 100% (11642 of 11642)
+  Covered branches: 11642
+  Total branches: 11642
+  Method coverage: 100% (2161 of 2161)
+  Full method coverage: 100% (2161 of 2161)
+  Covered methods: 2161
+  Fully covered methods: 2161
+  Total methods: 2161
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -307,6 +307,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignAddAndSearchWordsDataStructure.DesignAddAndSearchWordsDataStructureTrie                                                      100%
   LeetCode.Algorithms.DesignAnATMMachine.DesignAnATMMachineGreedy                                                                                        100%
   LeetCode.Algorithms.DesignAnOrderedStream.DesignAnOrderedStreamArray                                                                                   100%
+  LeetCode.Algorithms.DesignAuctionSystem.DesignAuctionSystemDictionaryWithPriorityQueue                                                                 100%
   LeetCode.Algorithms.DesignAuthenticationManager.DesignAuthenticationManagerDictionaryWithLinkedList                                                    100%
   LeetCode.Algorithms.DesignBrowserHistory.DesignBrowserHistoryArray                                                                                     100%
   LeetCode.Algorithms.DesignBrowserHistory.DesignBrowserHistoryLinkedList                                                                                100%
