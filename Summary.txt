@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/1/2026 - 5:56:07 PM
-  Coverage date: 10/1/2026 - 5:55:26 PM - 10/1/2026 - 5:55:53 PM
+  Generated on: 10/3/2026 - 10:39:21 AM
+  Coverage date: 10/3/2026 - 10:38:52 AM - 10/3/2026 - 10:39:13 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1407
-  Files: 1407
+  Classes: 1409
+  Files: 1409
   Line coverage: 100%
-  Covered lines: 32503
+  Covered lines: 32578
   Uncovered lines: 0
-  Coverable lines: 32503
-  Total lines: 79748
-  Branch coverage: 100% (11648 of 11648)
-  Covered branches: 11648
-  Total branches: 11648
-  Method coverage: 100% (2162 of 2162)
-  Full method coverage: 100% (2162 of 2162)
-  Covered methods: 2162
-  Fully covered methods: 2162
-  Total methods: 2162
+  Coverable lines: 32578
+  Total lines: 79906
+  Branch coverage: 100% (11668 of 11668)
+  Covered branches: 11668
+  Total branches: 11668
+  Method coverage: 100% (2164 of 2164)
+  Full method coverage: 100% (2164 of 2164)
+  Covered methods: 2164
+  Fully covered methods: 2164
+  Total methods: 2164
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -748,6 +748,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumElementAfterDecreasingAndRearranging.MaximumElementAfterDecreasingAndRearrangingCountingSort                                100%
   LeetCode.Algorithms.MaximumElementAfterDecreasingAndRearranging.MaximumElementAfterDecreasingAndRearrangingSorting                                     100%
   LeetCode.Algorithms.MaximumFrequencyOfAnElementAfterPerformingOperations1.MaximumFrequencyOfAnElementAfterPerformingOperations1DifferenceArray         100%
+  LeetCode.Algorithms.MaximumFrequencyOfAnElementAfterPerformingOperations2.MaximumFrequencyOfAnElementAfterPerformingOperations2LineSweep               100%
+  LeetCode.Algorithms.MaximumFrequencyOfAnElementAfterPerformingOperations2.MaximumFrequencyOfAnElementAfterPerformingOperations2SlidingWindow           100%
   LeetCode.Algorithms.MaximumIceCreamBars.MaximumIceCreamBarsCountingSort                                                                                100%
   LeetCode.Algorithms.MaximumIceCreamBars.MaximumIceCreamBarsSorting                                                                                     100%
   LeetCode.Algorithms.MaximumLengthSubstringWithTwoOccurrences.MaximumLengthSubstringWithTwoOccurrencesBruteForce                                        100%
