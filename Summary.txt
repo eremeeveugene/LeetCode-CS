@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/3/2026 - 11:57:05 AM
-  Coverage date: 10/3/2026 - 11:56:31 AM - 10/3/2026 - 11:56:56 AM
+  Generated on: 10/3/2026 - 3:52:30 PM
+  Coverage date: 10/3/2026 - 3:51:49 PM - 10/3/2026 - 3:52:23 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1410
-  Files: 1410
+  Classes: 1412
+  Files: 1412
   Line coverage: 100%
-  Covered lines: 32628
+  Covered lines: 32789
   Uncovered lines: 0
-  Coverable lines: 32628
-  Total lines: 80002
-  Branch coverage: 100% (11686 of 11686)
-  Covered branches: 11686
-  Total branches: 11686
-  Method coverage: 100% (2165 of 2165)
-  Full method coverage: 100% (2165 of 2165)
-  Covered methods: 2165
-  Fully covered methods: 2165
-  Total methods: 2165
+  Coverable lines: 32789
+  Total lines: 80269
+  Branch coverage: 100% (11720 of 11720)
+  Covered branches: 11720
+  Total branches: 11720
+  Method coverage: 100% (2172 of 2172)
+  Full method coverage: 100% (2172 of 2172)
+  Covered methods: 2172
+  Fully covered methods: 2172
+  Total methods: 2172
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -527,6 +527,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindWordsContainingCharacter.FindWordsContainingCharacterIterative                                                                 100%
   LeetCode.Algorithms.FindXSumOfAllKLongSubarrays1.FindXSumOfAllKLongSubarrays1SortingSlidingWindow                                                      100%
   LeetCode.Algorithms.FindXSumOfAllKLongSubarrays1.FindXSumOfAllKLongSubarrays1TwoSortedSetsSlidingWindow                                                100%
+  LeetCode.Algorithms.FindXValueOfArray1.FindXValueOfArray1DynamicProgramming                                                                            100%
+  LeetCode.Algorithms.FindXValueOfArray1.FindXValueOfArray1DynamicProgrammingMath                                                                        100%
   LeetCode.Algorithms.FirstCompletelyPaintedRowOrColumn.FirstCompletelyPaintedRowOrColumnDictionary                                                      100%
   LeetCode.Algorithms.FirstMatchingCharacterFromBothEnds.FirstMatchingCharacterFromBothEndsIterative                                                     100%
   LeetCode.Algorithms.FirstMissingPositive.FirstMissingPositiveHashSet                                                                                   100%
