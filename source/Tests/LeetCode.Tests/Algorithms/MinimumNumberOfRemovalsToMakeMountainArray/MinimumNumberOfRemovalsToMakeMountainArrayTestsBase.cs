@@ -70,6 +70,6 @@ public abstract class MinimumNumberOfRemovalsToMakeMountainArrayTestsBase<T> whe
         yield return [Enumerable.Range(0, 1000).Select(i => i % 2 == 0 ? 1 : 2).ToArray(), 997];
         yield return [Enumerable.Repeat(1, 499).Append(1000000000).Concat(Enumerable.Repeat(1, 500)).ToArray(), 997];
         yield return [Enumerable.Range(1, 999).Append(1).ToArray(), 0];
-        yield return [new[] { 1 }.Concat(Enumerable.Range(1, 999).Reverse()).ToArray(), 0];
+        yield return [Enumerable.Repeat(1, 1).Concat(Enumerable.Range(1, 999).Reverse()).ToArray(), 0];
     }
 }
