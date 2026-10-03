@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/3/2026 - 10:39:21 AM
-  Coverage date: 10/3/2026 - 10:38:52 AM - 10/3/2026 - 10:39:13 AM
+  Generated on: 10/3/2026 - 11:57:05 AM
+  Coverage date: 10/3/2026 - 11:56:31 AM - 10/3/2026 - 11:56:56 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1409
-  Files: 1409
+  Classes: 1410
+  Files: 1410
   Line coverage: 100%
-  Covered lines: 32578
+  Covered lines: 32628
   Uncovered lines: 0
-  Coverable lines: 32578
-  Total lines: 79906
-  Branch coverage: 100% (11668 of 11668)
-  Covered branches: 11668
-  Total branches: 11668
-  Method coverage: 100% (2164 of 2164)
-  Full method coverage: 100% (2164 of 2164)
-  Covered methods: 2164
-  Fully covered methods: 2164
-  Total methods: 2164
+  Coverable lines: 32628
+  Total lines: 80002
+  Branch coverage: 100% (11686 of 11686)
+  Covered branches: 11686
+  Total branches: 11686
+  Method coverage: 100% (2165 of 2165)
+  Full method coverage: 100% (2165 of 2165)
+  Covered methods: 2165
+  Fully covered methods: 2165
+  Total methods: 2165
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -886,6 +886,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumNumberOfPushesToTypeWord1.MinimumNumberOfPushesToTypeWord1Iterative                                                         100%
   LeetCode.Algorithms.MinimumNumberOfPushesToTypeWord1.MinimumNumberOfPushesToTypeWord1Math                                                              100%
   LeetCode.Algorithms.MinimumNumberOfPushesToTypeWord2.MinimumNumberOfPushesToTypeWord2Counting                                                          100%
+  LeetCode.Algorithms.MinimumNumberOfRemovalsToMakeMountainArray.MinimumNumberOfRemovalsToMakeMountainArrayDynamicProgrammingWithBinarySearch            100%
   LeetCode.Algorithms.MinimumNumberOfSwapsToMakeTheStringBalanced.MinimumNumberOfSwapsToMakeTheStringBalancedIterative                                   100%
   LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner.MinimumObstacleRemovalToReachCornerBreadthFirstSearch                                          100%
   LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner.MinimumObstacleRemovalToReachCornerPriorityQueue                                               100%
