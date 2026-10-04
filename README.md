@@ -223,6 +223,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/)
 - [455. Assign Cookies](https://leetcode.com/problems/assign-cookies/description/)
 - [459. Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/description/)
+- [460. LFU Cache](https://leetcode.com/problems/lfu-cache/description/)
 - [463. Island Perimeter](https://leetcode.com/problems/island-perimeter/description/)
 - [464. Can I Win](https://leetcode.com/problems/can-i-win/description/)
 - [474. Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/description/)
