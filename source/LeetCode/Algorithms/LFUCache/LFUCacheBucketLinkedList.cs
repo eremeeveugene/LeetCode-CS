@@ -12,10 +12,9 @@
 namespace LeetCode.Algorithms.LFUCache;
 
 /// <inheritdoc />
-public sealed class LFUCacheBucketLinkedList : ILFUCache
+public sealed class LFUCacheBucketLinkedList : LFUCacheBase
 {
     private const int MaxKey = 100_000;
-    private readonly int _capacity;
     private readonly Node?[] _keyToNode = new Node?[MaxKey + 1];
     private int _count;
     private Bucket? _firstBucket;
@@ -30,9 +29,8 @@ public sealed class LFUCacheBucketLinkedList : ILFUCache
     ///     Time complexity - O(k), where k is the key range
     ///     Space complexity - O(k), where k is the key range
     /// </remarks>
-    public LFUCacheBucketLinkedList(int capacity)
+    public LFUCacheBucketLinkedList(int capacity) : base(capacity)
     {
-        _capacity = capacity;
     }
 
     /// <inheritdoc />
@@ -40,18 +38,22 @@ public sealed class LFUCacheBucketLinkedList : ILFUCache
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
     /// </remarks>
-    public int Get(int key)
+    protected override bool TryGetAndCountUse(int key, out int value)
     {
         var node = _keyToNode[key];
 
         if (node is null)
         {
-            return -1;
+            value = 0;
+
+            return false;
         }
 
         IncrementFrequency(node);
 
-        return node.Value;
+        value = node.Value;
+
+        return true;
     }
 
     /// <inheritdoc />
@@ -59,20 +61,20 @@ public sealed class LFUCacheBucketLinkedList : ILFUCache
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
     /// </remarks>
-    public void Put(int key, int value)
+    protected override bool TryUpdateAndCountUse(int key, int value)
     {
         var node = _keyToNode[key];
 
-        if (node is not null)
+        if (node is null)
         {
-            node.Value = value;
-
-            IncrementFrequency(node);
-
-            return;
+            return false;
         }
 
-        Add(key, value);
+        node.Value = value;
+
+        IncrementFrequency(node);
+
+        return true;
     }
 
     /// <summary>
@@ -86,11 +88,11 @@ public sealed class LFUCacheBucketLinkedList : ILFUCache
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
     /// </remarks>
-    private void Add(int key, int value)
+    protected override void Add(int key, int value)
     {
         Node? evictedNode = null;
 
-        if (_count == _capacity)
+        if (_count == Capacity)
         {
             evictedNode = EvictLeastFrequentlyUsed();
         }
@@ -289,37 +291,24 @@ public sealed class LFUCacheBucketLinkedList : ILFUCache
     }
 
     /// <summary>
-    ///     A cache entry together with the bucket of its use counter and its links within that bucket.
+    ///     A cache entry together with the bucket holding its use counter.
     /// </summary>
-    private sealed class Node
+    private sealed class Node : NodeBase<Node>
     {
-        public Node(int key, int value, Bucket bucket)
+        public Node(int key, int value, Bucket bucket) : base(key, value)
         {
-            Key = key;
-            Value = value;
             Bucket = bucket;
         }
 
-        public int Key { get; set; }
-
-        public int Value { get; set; }
-
         public Bucket Bucket { get; set; }
-
-        public Node? PreviousNode { get; set; }
-
-        public Node? NextNode { get; set; }
     }
 
     /// <summary>
-    ///     A doubly linked list of nodes sharing the same frequency, ordered from the most recently used head to the
-    ///     least recently used tail, which is itself linked into a list of buckets ordered by frequency.
+    ///     The nodes sharing the same frequency, ordered from the most to the least recently used, which is itself
+    ///     linked into a list of buckets ordered by frequency.
     /// </summary>
-    private sealed class Bucket
+    private sealed class Bucket : NodeList<Node>
     {
-        private Node? _head;
-        private Node? _tail;
-
         public Bucket(int frequency)
         {
             Frequency = frequency;
@@ -330,57 +319,5 @@ public sealed class LFUCacheBucketLinkedList : ILFUCache
         public Bucket? PreviousBucket { get; set; }
 
         public Bucket? NextBucket { get; set; }
-
-        public bool IsEmpty => _head is null;
-
-        public void AddFirst(Node node)
-        {
-            node.PreviousNode = null;
-            node.NextNode = _head;
-
-            if (_head is null)
-            {
-                _tail = node;
-            }
-            else
-            {
-                _head.PreviousNode = node;
-            }
-
-            _head = node;
-        }
-
-        public void Remove(Node node)
-        {
-            var previousNode = node.PreviousNode;
-            var nextNode = node.NextNode;
-
-            if (previousNode is null)
-            {
-                _head = nextNode;
-            }
-            else
-            {
-                previousNode.NextNode = nextNode;
-            }
-
-            if (nextNode is null)
-            {
-                _tail = previousNode;
-            }
-            else
-            {
-                nextNode.PreviousNode = previousNode;
-            }
-        }
-
-        public Node RemoveLast()
-        {
-            var lastNode = _tail!;
-
-            Remove(lastNode);
-
-            return lastNode;
-        }
     }
 }

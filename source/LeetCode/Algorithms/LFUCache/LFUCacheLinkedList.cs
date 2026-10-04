@@ -12,10 +12,9 @@
 namespace LeetCode.Algorithms.LFUCache;
 
 /// <inheritdoc />
-public sealed class LFUCacheLinkedList : ILFUCache
+public sealed class LFUCacheLinkedList : LFUCacheBase
 {
-    private readonly int _capacity;
-    private readonly Dictionary<int, FrequencyList> _frequencyToFrequencyListDictionary = [];
+    private readonly Dictionary<int, NodeList<Node>> _frequencyToFrequencyListDictionary = [];
     private readonly Dictionary<int, Node> _keyToNodeDictionary = [];
     private int _minimumFrequency;
 
@@ -27,9 +26,8 @@ public sealed class LFUCacheLinkedList : ILFUCache
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
     /// </remarks>
-    public LFUCacheLinkedList(int capacity)
+    public LFUCacheLinkedList(int capacity) : base(capacity)
     {
-        _capacity = capacity;
     }
 
     /// <inheritdoc />
@@ -37,16 +35,22 @@ public sealed class LFUCacheLinkedList : ILFUCache
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
     /// </remarks>
-    public int Get(int key)
+    protected override bool TryGetAndCountUse(int key, out int value)
     {
-        if (!_keyToNodeDictionary.TryGetValue(key, out var node))
+        var node = _keyToNodeDictionary.GetValueOrDefault(key);
+
+        if (node is null)
         {
-            return -1;
+            value = 0;
+
+            return false;
         }
 
         IncrementFrequency(node);
 
-        return node.Value;
+        value = node.Value;
+
+        return true;
     }
 
     /// <inheritdoc />
@@ -54,28 +58,40 @@ public sealed class LFUCacheLinkedList : ILFUCache
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
     /// </remarks>
-    public void Put(int key, int value)
+    protected override bool TryUpdateAndCountUse(int key, int value)
     {
-        if (_keyToNodeDictionary.TryGetValue(key, out var node))
+        var node = _keyToNodeDictionary.GetValueOrDefault(key);
+
+        if (node is null)
         {
-            node.Value = value;
-
-            IncrementFrequency(node);
-
-            return;
+            return false;
         }
 
-        if (_keyToNodeDictionary.Count == _capacity)
+        node.Value = value;
+
+        IncrementFrequency(node);
+
+        return true;
+    }
+
+    /// <inheritdoc />
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    protected override void Add(int key, int value)
+    {
+        if (_keyToNodeDictionary.Count == Capacity)
         {
             EvictLeastFrequentlyUsed();
         }
 
-        var newNode = new Node(key, value);
+        var node = new Node(key, value);
 
-        _keyToNodeDictionary[key] = newNode;
-        _minimumFrequency = newNode.Frequency;
+        _keyToNodeDictionary[key] = node;
+        _minimumFrequency = node.Frequency;
 
-        AddToFrequencyList(newNode);
+        AddToFrequencyList(node);
     }
 
     /// <summary>
@@ -121,7 +137,7 @@ public sealed class LFUCacheLinkedList : ILFUCache
     {
         if (!_frequencyToFrequencyListDictionary.TryGetValue(node.Frequency, out var frequencyList))
         {
-            frequencyList = new FrequencyList();
+            frequencyList = new NodeList<Node>();
 
             _frequencyToFrequencyListDictionary[node.Frequency] = frequencyList;
         }
@@ -151,87 +167,15 @@ public sealed class LFUCacheLinkedList : ILFUCache
     }
 
     /// <summary>
-    ///     A cache entry together with its use counter and its links within the frequency list.
+    ///     A cache entry together with its use counter.
     /// </summary>
-    private sealed class Node
+    private sealed class Node : NodeBase<Node>
     {
-        public Node(int key, int value)
+        public Node(int key, int value) : base(key, value)
         {
-            Key = key;
-            Value = value;
             Frequency = 1;
         }
 
-        public int Key { get; }
-
-        public int Value { get; set; }
-
         public int Frequency { get; set; }
-
-        public Node? PreviousNode { get; set; }
-
-        public Node? NextNode { get; set; }
-    }
-
-    /// <summary>
-    ///     A doubly linked list of nodes sharing the same frequency, ordered from the most recently used head to the
-    ///     least recently used tail.
-    /// </summary>
-    private sealed class FrequencyList
-    {
-        private Node? _head;
-        private Node? _tail;
-
-        public bool IsEmpty => _head is null;
-
-        public void AddFirst(Node node)
-        {
-            node.PreviousNode = null;
-            node.NextNode = _head;
-
-            if (_head is null)
-            {
-                _tail = node;
-            }
-            else
-            {
-                _head.PreviousNode = node;
-            }
-
-            _head = node;
-        }
-
-        public void Remove(Node node)
-        {
-            var previousNode = node.PreviousNode;
-            var nextNode = node.NextNode;
-
-            if (previousNode is null)
-            {
-                _head = nextNode;
-            }
-            else
-            {
-                previousNode.NextNode = nextNode;
-            }
-
-            if (nextNode is null)
-            {
-                _tail = previousNode;
-            }
-            else
-            {
-                nextNode.PreviousNode = previousNode;
-            }
-        }
-
-        public Node RemoveLast()
-        {
-            var lastNode = _tail!;
-
-            Remove(lastNode);
-
-            return lastNode;
-        }
     }
 }
