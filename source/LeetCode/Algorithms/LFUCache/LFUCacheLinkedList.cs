@@ -234,4 +234,4 @@ public sealed class LFUCacheLinkedList : ILFUCache
             return lastNode;
         }
     }
-}
+}

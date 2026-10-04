@@ -9,7 +9,6 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-
 using LeetCode.Algorithms.LFUCache;
 using LeetCode.Tests.Base.Scenarios;
 
@@ -117,13 +116,7 @@ public abstract class LFUCacheTestsBase
         [
             new LFUCacheScenario(
                 2,
-                [
-                    new PutOperation(1, 10),
-                    new PutOperation(2, 20),
-                    new PutOperation(1, 100),
-                    new GetOperation(1),
-                    new GetOperation(2)
-                ],
+                [new PutOperation(1, 10), new PutOperation(2, 20), new PutOperation(1, 100), new GetOperation(1), new GetOperation(2)],
                 [
                     VoidOperationResult.Instance,
                     VoidOperationResult.Instance,
@@ -137,13 +130,7 @@ public abstract class LFUCacheTestsBase
         [
             new LFUCacheScenario(
                 1,
-                [
-                    new PutOperation(5, 50),
-                    new PutOperation(5, 60),
-                    new GetOperation(5),
-                    new PutOperation(5, 70),
-                    new GetOperation(5)
-                ],
+                [new PutOperation(5, 50), new PutOperation(5, 60), new GetOperation(5), new PutOperation(5, 70), new GetOperation(5)],
                 [
                     VoidOperationResult.Instance,
                     VoidOperationResult.Instance,
