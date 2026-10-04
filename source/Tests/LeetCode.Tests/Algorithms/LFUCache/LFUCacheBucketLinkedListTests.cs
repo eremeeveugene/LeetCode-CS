@@ -14,10 +14,10 @@ using LeetCode.Algorithms.LFUCache;
 namespace LeetCode.Tests.Algorithms.LFUCache;
 
 [TestClass]
-public sealed class LFUCacheNestedLinkedListTests : LFUCacheTestsBase
+public sealed class LFUCacheBucketLinkedListTests : LFUCacheTestsBase
 {
     protected override ILFUCache GetSolution(int capacity)
     {
-        return new LFUCacheNestedLinkedList(capacity);
+        return new LFUCacheBucketLinkedList(capacity);
     }
 }

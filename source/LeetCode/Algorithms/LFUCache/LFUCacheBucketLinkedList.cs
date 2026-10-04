@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.LFUCache;
 
 /// <inheritdoc />
-public sealed class LFUCacheNestedLinkedList : ILFUCache
+public sealed class LFUCacheBucketLinkedList : ILFUCache
 {
     private const int MaxKey = 100_000;
     private readonly int _capacity;
@@ -30,7 +30,7 @@ public sealed class LFUCacheNestedLinkedList : ILFUCache
     ///     Time complexity - O(k), where k is the key range
     ///     Space complexity - O(k), where k is the key range
     /// </remarks>
-    public LFUCacheNestedLinkedList(int capacity)
+    public LFUCacheBucketLinkedList(int capacity)
     {
         _capacity = capacity;
     }
