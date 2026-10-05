@@ -16,8 +16,8 @@ public sealed class SetIntersectionSizeAtLeastTwoGreedy : ISetIntersectionSizeAt
 {
     /// <inheritdoc />
     /// <remarks>
-    ///     Time complexity - O(n * log(n))
-    ///     Space complexity - O(log(n))
+    ///     Time complexity - O(n log n)
+    ///     Space complexity - O(log n)
     /// </remarks>
     public int IntersectionSizeTwo(int[][] intervals)
     {
@@ -27,8 +27,8 @@ public sealed class SetIntersectionSizeAtLeastTwoGreedy : ISetIntersectionSizeAt
 
         var result = 0;
 
-        var secondLast = -1;
         var last = -1;
+        var secondLast = -1;
 
         for (var i = 0; i < n; i++)
         {
