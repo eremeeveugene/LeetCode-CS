@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/6/2026 - 3:06:04 PM
-  Coverage date: 10/6/2026 - 3:05:26 PM - 10/6/2026 - 3:05:56 PM
+  Generated on: 10/6/2026 - 7:33:21 PM
+  Coverage date: 10/6/2026 - 7:32:45 PM - 10/6/2026 - 7:33:12 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1416
-  Files: 1416
+  Classes: 1417
+  Files: 1417
   Line coverage: 100%
-  Covered lines: 33075
+  Covered lines: 33101
   Uncovered lines: 0
-  Coverable lines: 33075
-  Total lines: 81025
-  Branch coverage: 100% (11784 of 11784)
-  Covered branches: 11784
-  Total branches: 11784
-  Method coverage: 100% (2211 of 2211)
-  Full method coverage: 100% (2211 of 2211)
-  Covered methods: 2211
-  Fully covered methods: 2211
-  Total methods: 2211
+  Coverable lines: 33101
+  Total lines: 81120
+  Branch coverage: 100% (11790 of 11790)
+  Covered branches: 11790
+  Total branches: 11790
+  Method coverage: 100% (2215 of 2215)
+  Full method coverage: 100% (2215 of 2215)
+  Covered methods: 2215
+  Fully covered methods: 2215
+  Total methods: 2215
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -911,6 +911,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumPairRemovalToSortArray1.MinimumPairRemovalToSortArray1Simulation                                                            100%
   LeetCode.Algorithms.MinimumPathSum.MinimumPathSumDynamicProgramming                                                                                    100%
   LeetCode.Algorithms.MinimumPositiveSumSubarray.MinimumPositiveSumSubarrayPrefixSum                                                                     100%
+  LeetCode.Algorithms.MinimumQueenMovesToReachTarget.MinimumQueenMovesToReachTargetMath                                                                  100%
   LeetCode.Algorithms.MinimumRecolorsToGetKConsecutiveBlackBlocks.MinimumRecolorsToGetKConsecutiveBlackBlocksSlidingWindow                               100%
   LeetCode.Algorithms.MinimumRemovalsToBalanceArray.MinimumRemovalsToBalanceArraySlidingWindow                                                           100%
   LeetCode.Algorithms.MinimumRemoveToMakeValidParentheses.MinimumRemoveToMakeValidParenthesesStack                                                       100%
