@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/4/2026 - 3:20:05 PM
-  Coverage date: 10/4/2026 - 3:19:19 PM - 10/4/2026 - 3:19:50 PM
+  Generated on: 10/6/2026 - 3:06:04 PM
+  Coverage date: 10/6/2026 - 3:05:26 PM - 10/6/2026 - 3:05:56 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1415
-  Files: 1415
+  Classes: 1416
+  Files: 1416
   Line coverage: 100%
-  Covered lines: 33048
+  Covered lines: 33075
   Uncovered lines: 0
-  Coverable lines: 33048
-  Total lines: 80963
-  Branch coverage: 100% (11776 of 11776)
-  Covered branches: 11776
-  Total branches: 11776
-  Method coverage: 100% (2210 of 2210)
-  Full method coverage: 100% (2210 of 2210)
-  Covered methods: 2210
-  Fully covered methods: 2210
-  Total methods: 2210
+  Coverable lines: 33075
+  Total lines: 81025
+  Branch coverage: 100% (11784 of 11784)
+  Covered branches: 11784
+  Total branches: 11784
+  Method coverage: 100% (2211 of 2211)
+  Full method coverage: 100% (2211 of 2211)
+  Covered methods: 2211
+  Fully covered methods: 2211
+  Total methods: 2211
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1188,6 +1188,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SeparateTheDigitsInAnArray.SeparateTheDigitsInAnArraySimulation                                                                    100%
   LeetCode.Algorithms.SeparateTheDigitsInAnArray.SeparateTheDigitsInAnArrayTwoPassWithPreallocatedBuffer                                                 100%
   LeetCode.Algorithms.SequentialDigits.SequentialDigitsEnumeration                                                                                       100%
+  LeetCode.Algorithms.SetIntersectionSizeAtLeastTwo.SetIntersectionSizeAtLeastTwoGreedy                                                                  100%
   LeetCode.Algorithms.SetMatrixZeroes.SetMatrixZeroesArrayMarkers                                                                                        100%
   LeetCode.Algorithms.SetMatrixZeroes.SetMatrixZeroesInPlace                                                                                             100%
   LeetCode.Algorithms.SetMismatch.SetMismatchCounting                                                                                                    100%
