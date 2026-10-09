@@ -380,6 +380,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1014. Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/description/)
 - [1015. Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k/description/)
 - [1018. Binary Prefix Divisible By 5](https://leetcode.com/problems/binary-prefix-divisible-by-5/description/)
+- [1021. Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/description/)
 - [1022. Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/description/)
 - [1024. Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/description/)
 - [1025. Divisor Game](https://leetcode.com/problems/divisor-game/description/)
