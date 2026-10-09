@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/6/2026 - 7:33:21 PM
-  Coverage date: 10/6/2026 - 7:32:45 PM - 10/6/2026 - 7:33:12 PM
+  Generated on: 10/9/2026 - 2:39:55 PM
+  Coverage date: 10/9/2026 - 2:39:16 PM - 10/9/2026 - 2:39:40 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1417
-  Files: 1417
+  Classes: 1420
+  Files: 1420
   Line coverage: 100%
-  Covered lines: 33101
+  Covered lines: 33178
   Uncovered lines: 0
-  Coverable lines: 33101
-  Total lines: 81120
-  Branch coverage: 100% (11790 of 11790)
-  Covered branches: 11790
-  Total branches: 11790
-  Method coverage: 100% (2215 of 2215)
-  Full method coverage: 100% (2215 of 2215)
-  Covered methods: 2215
-  Fully covered methods: 2215
-  Total methods: 2215
+  Coverable lines: 33178
+  Total lines: 81297
+  Branch coverage: 100% (11814 of 11814)
+  Covered branches: 11814
+  Total branches: 11814
+  Method coverage: 100% (2218 of 2218)
+  Full method coverage: 100% (2218 of 2218)
+  Covered methods: 2218
+  Fully covered methods: 2218
+  Total methods: 2218
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1111,6 +1111,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.RemoveLinkedListElements.RemoveLinkedListElementsRecursive                                                                         100%
   LeetCode.Algorithms.RemoveNodesFromLinkedList.RemoveNodesFromLinkedListIterative                                                                       100%
   LeetCode.Algorithms.RemoveNthNodeFromEndOfList.RemoveNthNodeFromEndOfListTwoPointers                                                                   100%
+  LeetCode.Algorithms.RemoveOutermostParentheses.RemoveOutermostParenthesesSpanBuffer                                                                    100%
+  LeetCode.Algorithms.RemoveOutermostParentheses.RemoveOutermostParenthesesStack                                                                         100%
+  LeetCode.Algorithms.RemoveOutermostParentheses.RemoveOutermostParenthesesStringBuilder                                                                 100%
   LeetCode.Algorithms.RemoveSubFoldersFromTheFilesystem.RemoveSubFoldersFromTheFilesystemHashSet                                                         100%
   LeetCode.Algorithms.RemoveZerosInDecimalRepresentation.RemoveZerosInDecimalRepresentationSimulation                                                    100%
   LeetCode.Algorithms.RemoveZeroSumConsecutiveNodesFromLinkedList.RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce                                  100%
