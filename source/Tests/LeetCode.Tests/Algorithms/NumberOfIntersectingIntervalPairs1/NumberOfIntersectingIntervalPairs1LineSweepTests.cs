@@ -9,17 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.NumberOfIntersectingIntervalPairs1;
+using LeetCode.Algorithms.NumberOfIntersectingIntervalPairs1;
 
-/// <summary>
-///     https://leetcode.com/problems/number-of-intersecting-interval-pairs-i/description/
-/// </summary>
-public interface INumberOfIntersectingIntervalPairs1
-{
-    /// <summary>
-    ///     Counts the pairs of indices whose closed intervals share at least one point.
-    /// </summary>
-    /// <param name="intervals">The array of closed intervals, each given as a start and an end.</param>
-    /// <returns>The number of intersecting interval pairs.</returns>
-    int CountIntersectingIntervals(int[][] intervals);
-}
+namespace LeetCode.Tests.Algorithms.NumberOfIntersectingIntervalPairs1;
+
+[TestClass]
+public sealed class NumberOfIntersectingIntervalPairs1LineSweepTests
+    : NumberOfIntersectingIntervalPairs1TestsBase<NumberOfIntersectingIntervalPairs1LineSweep>;

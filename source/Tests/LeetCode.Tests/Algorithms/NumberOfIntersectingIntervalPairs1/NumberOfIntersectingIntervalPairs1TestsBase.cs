@@ -17,13 +17,13 @@ public abstract class NumberOfIntersectingIntervalPairs1TestsBase<T> where T : I
 {
     [TestMethod]
     [DynamicData(nameof(GetTestData))]
-    public void CountIntersectingPairs_GivenIntervals_ReturnsNumberOfPairsSharingAtLeastOnePoint(int[][] intervals, int expectedResult)
+    public void CountIntersectingIntervals_GivenIntervals_ReturnsNumberOfPairsSharingAtLeastOnePoint(int[][] intervals, int expectedResult)
     {
         // Arrange
         var solution = new T();
 
         // Act
-        var actualResult = solution.CountIntersectingPairs(intervals);
+        var actualResult = solution.CountIntersectingIntervals(intervals);
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);

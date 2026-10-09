@@ -12,38 +12,45 @@
 namespace LeetCode.Algorithms.NumberOfIntersectingIntervalPairs1;
 
 /// <inheritdoc />
-public sealed class NumberOfIntersectingIntervalPairs1BruteForce : INumberOfIntersectingIntervalPairs1
+public sealed class NumberOfIntersectingIntervalPairs1LineSweep : INumberOfIntersectingIntervalPairs1
 {
+    private const int MaxCoordinate = 100;
+
     /// <inheritdoc />
     /// <remarks>
-    ///     Time complexity - O(n^2)
-    ///     Space complexity - O(1)
+    ///     Time complexity - O(n + m), where m is the maximum coordinate
+    ///     Space complexity - O(m)
     /// </remarks>
     public int CountIntersectingIntervals(int[][] intervals)
     {
         var n = intervals.Length;
 
+        Span<int> startCounts = stackalloc int[MaxCoordinate + 1];
+        Span<int> endCounts = stackalloc int[MaxCoordinate + 1];
+
+        for (var i = 0; i < n; i++)
+        {
+            var interval = intervals[i];
+            var start = interval[0];
+            var end = interval[1];
+
+            startCounts[start]++;
+            endCounts[end]++;
+        }
+
         var count = 0;
 
-        for (var i = 0; i < n - 1; i++)
+        var activeCount = 0;
+
+        for (var point = 0; point <= MaxCoordinate; point++)
         {
-            var firstInterval = intervals[i];
-            var firstIntervalStart = firstInterval[0];
-            var firstIntervalEnd = firstInterval[1];
+            var startCount = startCounts[point];
 
-            for (var j = i + 1; j < n; j++)
-            {
-                var secondInterval = intervals[j];
-                var secondIntervalStart = secondInterval[0];
-                var secondIntervalEnd = secondInterval[1];
+            count += (startCount * activeCount) + (startCount * (startCount - 1) / 2);
 
-                if (firstIntervalEnd < secondIntervalStart || firstIntervalStart > secondIntervalEnd)
-                {
-                    continue;
-                }
+            activeCount += startCount;
 
-                count++;
-            }
+            activeCount -= endCounts[point];
         }
 
         return count;
