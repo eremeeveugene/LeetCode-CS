@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/9/2026 - 2:39:55 PM
-  Coverage date: 10/9/2026 - 2:39:16 PM - 10/9/2026 - 2:39:40 PM
+  Generated on: 10/9/2026 - 3:52:55 PM
+  Coverage date: 10/9/2026 - 3:52:26 PM - 10/9/2026 - 3:52:47 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1420
-  Files: 1420
+  Classes: 1422
+  Files: 1422
   Line coverage: 100%
-  Covered lines: 33178
+  Covered lines: 33222
   Uncovered lines: 0
-  Coverable lines: 33178
-  Total lines: 81297
-  Branch coverage: 100% (11814 of 11814)
-  Covered branches: 11814
-  Total branches: 11814
-  Method coverage: 100% (2218 of 2218)
-  Full method coverage: 100% (2218 of 2218)
-  Covered methods: 2218
-  Fully covered methods: 2218
-  Total methods: 2218
+  Coverable lines: 33222
+  Total lines: 81406
+  Branch coverage: 100% (11826 of 11826)
+  Covered branches: 11826
+  Total branches: 11826
+  Method coverage: 100% (2220 of 2220)
+  Full method coverage: 100% (2220 of 2220)
+  Covered methods: 2220
+  Fully covered methods: 2220
+  Total methods: 2220
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -980,6 +980,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsDictionary                                                                                      100%
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsGroupBy                                                                                         100%
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsIterative                                                                                       100%
+  LeetCode.Algorithms.NumberOfIntersectingIntervalPairs1.NumberOfIntersectingIntervalPairs1BruteForce                                                    100%
+  LeetCode.Algorithms.NumberOfIntersectingIntervalPairs1.NumberOfIntersectingIntervalPairs1LineSweep                                                     100%
   LeetCode.Algorithms.NumberOfIslands.NumberOfIslandsIterative                                                                                           100%
   LeetCode.Algorithms.NumberOfLaserBeamsInABank.NumberOfLaserBeamsInABankGreedy                                                                          100%
   LeetCode.Algorithms.NumberOfOneBits.NumberOfOneBitsBitwise                                                                                             100%
