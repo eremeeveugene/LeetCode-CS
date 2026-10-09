@@ -45,12 +45,11 @@ public sealed class NumberOfIntersectingIntervalPairs1LineSweep : INumberOfInter
         for (var point = 0; point <= MaxCoordinate; point++)
         {
             var startCount = startCounts[point];
+            var endCount = endCounts[point];
 
             count += (startCount * activeCount) + (startCount * (startCount - 1) / 2);
 
-            activeCount += startCount;
-
-            activeCount -= endCounts[point];
+            activeCount += startCount - endCount;
         }
 
         return count;
