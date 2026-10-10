@@ -29,6 +29,13 @@ public abstract class CheckIfTwoChessboardSquaresHaveTheSameColorTestsBase<T> wh
     [DataRow("c7", "h2", true)]
     [DataRow("g5", "e3", true)]
     [DataRow("g5", "e4", false)]
+    [DataRow("a8", "h1", true)]
+    [DataRow("b1", "c2", true)]
+    [DataRow("b1", "a1", false)]
+    [DataRow("h7", "g8", true)]
+    [DataRow("c3", "c4", false)]
+    [DataRow("a2", "a3", false)]
+    [DataRow("b3", "d5", true)]
     public void CheckTwoChessboards_WithTwoValidCoordinates_ReturnsTrueIfSameColor(string coordinate1, string coordinate2, bool expectedResult)
     {
         // Arrange

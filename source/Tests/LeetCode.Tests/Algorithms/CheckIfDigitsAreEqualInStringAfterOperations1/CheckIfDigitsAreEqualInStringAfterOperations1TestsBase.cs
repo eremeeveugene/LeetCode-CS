@@ -19,6 +19,23 @@ public abstract class CheckIfDigitsAreEqualInStringAfterOperations1TestsBase<T> 
     [DataRow("323", true)]
     [DataRow("3902", true)]
     [DataRow("34789", false)]
+    [DataRow("000", true)]
+    [DataRow("111", true)]
+    [DataRow("123", false)]
+    [DataRow("100", false)]
+    [DataRow("999", true)]
+    [DataRow("555", true)]
+    [DataRow("0000", true)]
+    [DataRow("1234", false)]
+    [DataRow("1111", true)]
+    [DataRow("9876", false)]
+    [DataRow("5555", true)]
+    [DataRow("1000", false)]
+    [DataRow("12345", false)]
+    [DataRow("00000", true)]
+    [DataRow("11111", true)]
+    [DataRow("10101", true)]
+    [DataRow("13579", false)]
     public void HasSameDigits_WithStringInput_ReturnsWhetherAllDigitsAreTheSame(string s, bool expectedResult)
     {
         // Arrange

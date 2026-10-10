@@ -21,6 +21,21 @@ public abstract class ReverseIntegerTestsBase<T> where T : IReverseInteger, new(
     [DataRow(120, 21)]
     [DataRow(1534236469, 0)]
     [DataRow(int.MinValue, 0)]
+    [DataRow(0, 0)]
+    [DataRow(1, 1)]
+    [DataRow(-1, -1)]
+    [DataRow(10, 1)]
+    [DataRow(-10, -1)]
+    [DataRow(100, 1)]
+    [DataRow(1000000000, 1)]
+    [DataRow(-1000000000, -1)]
+    [DataRow(int.MaxValue, 0)]
+    [DataRow(1463847412, 2147483641)]
+    [DataRow(1463847413, 0)]
+    [DataRow(-1463847412, -2147483641)]
+    [DataRow(-1563847412, 0)]
+    [DataRow(901000, 109)]
+    [DataRow(-901000, -109)]
     public void Reverse_WithSigned32BitInteger_ReturnsReversedIntegerOrZeroIfOverflow(int x, int expectedResult)
     {
         // Arrange

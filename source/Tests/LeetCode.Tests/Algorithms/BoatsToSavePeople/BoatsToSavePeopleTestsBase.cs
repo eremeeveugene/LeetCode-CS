@@ -22,6 +22,20 @@ public abstract class BoatsToSavePeopleTestsBase<T> where T : IBoatsToSavePeople
     [DataRow(new[] { 11, 2, 8, 1 }, 11, 3)]
     [DataRow(new[] { 11, 2, 2, 8, 8 }, 11, 3)]
     [DataRow(new[] { 3, 2, 3, 2, 2 }, 6, 3)]
+    [DataRow(new[] { 1 }, 1, 1)]
+    [DataRow(new[] { 1, 1 }, 2, 1)]
+    [DataRow(new[] { 1, 1 }, 1, 2)]
+    [DataRow(new[] { 2, 2 }, 3, 2)]
+    [DataRow(new[] { 1, 2, 3 }, 3, 2)]
+    [DataRow(new[] { 5, 5, 5, 5 }, 10, 2)]
+    [DataRow(new[] { 5, 5, 5, 5 }, 9, 4)]
+    [DataRow(new[] { 1, 1, 1, 1, 1 }, 2, 3)]
+    [DataRow(new[] { 3, 3, 3 }, 6, 2)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 5, 3)]
+    [DataRow(new[] { 10, 20, 30, 40 }, 50, 2)]
+    [DataRow(new[] { 10, 20, 30, 40 }, 49, 3)]
+    [DataRow(new[] { 1, 2, 2, 3 }, 3, 3)]
+    [DataRow(new[] { 2, 2, 2, 2, 2, 2 }, 4, 3)]
     public void NumRescueBoats_WithPeopleWeightsAndBoatLimit_ReturnsMinimumNumberOfBoats(int[] people, int limit, int expectedResult)
     {
         // Arrange

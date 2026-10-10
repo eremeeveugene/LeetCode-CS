@@ -34,6 +34,8 @@ public abstract class ValidAnagramTestsBase<T> where T : IValidAnagram, new()
     [DataRow("abcd", "dcba", true)]
     [DataRow("abcde", "abced", true)]
     [DataRow("abcde", "abcdf", false)]
+    [DataRow("aacc", "ccac", false)]
+    [DataRow("zxcvbnm", "mnbvcxz", true)]
     public void IsAnagram_WithGivenStrings_ReturnsIfStringsAreAnagrams(string s, string t, bool expectedResult)
     {
         // Arrange

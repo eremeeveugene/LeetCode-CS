@@ -34,6 +34,8 @@ public abstract class LargestPerimeterTriangleTestsBase<T> where T : ILargestPer
     [DataRow(new[] { 1, 1 }, 0)]
     [DataRow(new[] { 5 }, 0)]
     [DataRow(new[] { 1, 1, 1, 100 }, 3)]
+    [DataRow(new[] { 1000000, 1000000, 1000000 }, 3000000)]
+    [DataRow(new[] { 1000000, 999999, 2, 1 }, 2000001)]
     public void LargestPerimeter_WithSideLengths_ReturnsMaximumTrianglePerimeterOrZero(int[] nums, int expectedResult)
     {
         // Arrange

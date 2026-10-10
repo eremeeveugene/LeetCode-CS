@@ -34,6 +34,8 @@ public abstract class WordsWithinTwoEditsOfDictionaryTestsBase<T> where T : IWor
     [DataRow(new[] { "abcdef" }, new[] { "abcxyz", "xycdef" }, new[] { "abcdef" })]
     [DataRow(new[] { "abcdef" }, new[] { "xyzdef", "abcxyz" }, new string[] { })]
     [DataRow(new[] { "first", "secnd", "third" }, new[] { "first", "xxxxx", "third" }, new[] { "first", "third" })]
+    [DataRow(new[] { "ab", "ba", "cc" }, new[] { "aa" }, new[] { "ab", "ba", "cc" })]
+    [DataRow(new[] { "abxye", "abcde" }, new[] { "abcdz" }, new[] { "abcde" })]
     public void TwoEditWords_WithQueriesAndDictionary_ReturnsQueriesMatchingDictionaryWithinTwoEdits(
         string[] queries,
         string[] words,
@@ -43,7 +45,7 @@ public abstract class WordsWithinTwoEditsOfDictionaryTestsBase<T> where T : IWor
         var solution = new T();
 
         // Act
-        var actualResult = solution.TwoEditWords(queries, words).ToArray();
+        var actualResult = solution.TwoEditWords(queries, words);
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult);

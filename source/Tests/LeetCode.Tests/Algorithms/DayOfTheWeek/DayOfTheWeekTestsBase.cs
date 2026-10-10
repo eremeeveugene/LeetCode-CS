@@ -28,6 +28,17 @@ public abstract class DayOfTheWeekTestsBase<T> where T : IDayOfTheWeek, new()
     [DataRow(25, 12, 2021, "Saturday")]
     [DataRow(4, 7, 1776, "Thursday")]
     [DataRow(1, 1, 2100, "Friday")]
+    [DataRow(1, 1, 1971, "Friday")]
+    [DataRow(31, 12, 2100, "Friday")]
+    [DataRow(29, 2, 2016, "Monday")]
+    [DataRow(28, 2, 2100, "Sunday")]
+    [DataRow(1, 3, 2100, "Monday")]
+    [DataRow(31, 1, 1990, "Wednesday")]
+    [DataRow(15, 6, 2005, "Wednesday")]
+    [DataRow(4, 7, 1976, "Sunday")]
+    [DataRow(31, 10, 2023, "Tuesday")]
+    [DataRow(1, 1, 2024, "Monday")]
+    [DataRow(29, 2, 2096, "Wednesday")]
     public void DayOfTheWeek_WithDateInputs_ReturnsDayNameForGivenDate(int day, int month, int year, string expectedResult)
     {
         // Arrange

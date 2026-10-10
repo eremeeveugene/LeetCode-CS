@@ -23,6 +23,24 @@ public abstract class MinimumLengthOfStringAfterDeletingSimilarEndsTestsBase<T> 
     [DataRow(
         "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbacccabbabccaccbacaaccacacccaccbbbacaabbccbbcbcbcacacccccccbcbbabccaacaabacbbaccccbabbcbccccaccacaccbcbbcbcccabaaaabbbbbbbbbbbbbbb",
         109)]
+    [DataRow("a", 1)]
+    [DataRow("b", 1)]
+    [DataRow("aa", 0)]
+    [DataRow("ab", 2)]
+    [DataRow("aba", 1)]
+    [DataRow("abc", 3)]
+    [DataRow("abca", 2)]
+    [DataRow("aabaa", 1)]
+    [DataRow("abcba", 1)]
+    [DataRow("abcabc", 6)]
+    [DataRow("cbbbbbbc", 0)]
+    [DataRow("aabbaa", 0)]
+    [DataRow("abababab", 8)]
+    [DataRow("aaabbbaaa", 0)]
+    [DataRow("bcb", 1)]
+    [DataRow("ccbbaabbcc", 0)]
+    [DataRow("aabccabbaaa", 3)]
+    [DataRow("acbbca", 0)]
     public void MinimumLength_WithRepeatingPrefixSuffixPattern_ReturnsFinalLengthAfterAllDeletions(string s, int expectedResult)
     {
         // Arrange

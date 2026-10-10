@@ -325,5 +325,31 @@ public abstract class DistributeCoinsInBinaryTreeTestsBase<T> where T : IDistrib
             },
             930
         ];
+
+        yield return [new int?[] { 1, 0, 2 }, 2];
+
+        yield return [new int?[] { 0, 3, 0, null, null, null, null }, 3];
+
+        yield return [new int?[] { 1, 1, 1, 1 }, 0];
+
+        yield return [new int?[] { 0, 1, 0, null, 3 }, 5];
+
+        yield return [new int?[] { 2, null, 0, null, 1 }, 1];
+
+        yield return [new int?[] { 0, null, 0, null, 3 }, 3];
+
+        yield return [new int?[] { 1, null, 3, null, 0, null, 0 }, 3];
+
+        yield return [new int?[] { 0, 0, 3 }, 3];
+
+        yield return [new int?[] { 2, 1, 0 }, 1];
+
+        yield return [new int?[] { 0, 2, 1 }, 1];
+
+        yield return [new int?[] { 0, 4, 0, 0 }, 4];
+
+        yield return [new int?[] { 4, 0, 0, 0 }, 4];
+
+        yield return [new int?[] { 0, 0, 0, 4 }, 6];
     }
 }

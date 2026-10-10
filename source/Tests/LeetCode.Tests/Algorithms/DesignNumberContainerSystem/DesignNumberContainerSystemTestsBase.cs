@@ -216,6 +216,226 @@ public abstract class DesignNumberContainerSystemTestsBase<T> where T : IDesignN
                     new FindOperation.Result(2)
                 ])
         ];
+
+        yield return
+        [
+            new Scenario<IDesignNumberContainerSystem>(
+                [
+                    new FindOperation(1000000000),
+                    new ChangeOperation(1000000000, 1000000000),
+                    new FindOperation(1000000000),
+                    new ChangeOperation(1000000000, 1),
+                    new FindOperation(1000000000),
+                    new FindOperation(1)
+                ],
+                [
+                    new FindOperation.Result(-1),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(1000000000),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(-1),
+                    new FindOperation.Result(1000000000)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignNumberContainerSystem>(
+                [
+                    new ChangeOperation(3, 7),
+                    new ChangeOperation(1, 7),
+                    new ChangeOperation(2, 7),
+                    new FindOperation(7),
+                    new ChangeOperation(1, 8),
+                    new FindOperation(7),
+                    new ChangeOperation(3, 8),
+                    new FindOperation(7),
+                    new FindOperation(8)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(2),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(2),
+                    new FindOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignNumberContainerSystem>(
+                [
+                    new ChangeOperation(9, 4),
+                    new ChangeOperation(9, 5),
+                    new ChangeOperation(9, 4),
+                    new FindOperation(4),
+                    new FindOperation(5)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(9),
+                    new FindOperation.Result(-1)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignNumberContainerSystem>(
+                [
+                    new ChangeOperation(5, 1),
+                    new ChangeOperation(4, 1),
+                    new ChangeOperation(3, 1),
+                    new ChangeOperation(2, 1),
+                    new ChangeOperation(1, 1),
+                    new FindOperation(1),
+                    new ChangeOperation(1, 2),
+                    new FindOperation(1),
+                    new ChangeOperation(2, 2),
+                    new FindOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(2),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(3)
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignNumberContainerSystem>(
+                [
+                    new ChangeOperation(5, 3),
+                    new ChangeOperation(1, 3),
+                    new ChangeOperation(6, 4),
+                    new FindOperation(2),
+                    new FindOperation(2),
+                    new FindOperation(3),
+                    new ChangeOperation(2, 1),
+                    new FindOperation(2),
+                    new ChangeOperation(6, 3),
+                    new FindOperation(1),
+                    new ChangeOperation(1, 2)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(-1),
+                    new FindOperation.Result(-1),
+                    new FindOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(-1),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(2),
+                    VoidOperationResult.Instance
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignNumberContainerSystem>(
+                [
+                    new FindOperation(4),
+                    new FindOperation(1),
+                    new FindOperation(2),
+                    new ChangeOperation(5, 2),
+                    new FindOperation(1),
+                    new FindOperation(1),
+                    new ChangeOperation(4, 4),
+                    new ChangeOperation(4, 1)
+                ],
+                [
+                    new FindOperation.Result(-1),
+                    new FindOperation.Result(-1),
+                    new FindOperation.Result(-1),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(-1),
+                    new FindOperation.Result(-1),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignNumberContainerSystem>(
+                [
+                    new FindOperation(2),
+                    new FindOperation(3),
+                    new ChangeOperation(3, 4),
+                    new FindOperation(1),
+                    new ChangeOperation(3, 3),
+                    new ChangeOperation(5, 2),
+                    new ChangeOperation(4, 1),
+                    new ChangeOperation(2, 4),
+                    new ChangeOperation(2, 1),
+                    new FindOperation(2),
+                    new ChangeOperation(6, 3),
+                    new ChangeOperation(3, 4),
+                    new ChangeOperation(6, 1)
+                ],
+                [
+                    new FindOperation.Result(-1),
+                    new FindOperation.Result(-1),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(-1),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(5),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance
+                ])
+        ];
+
+        yield return
+        [
+            new Scenario<IDesignNumberContainerSystem>(
+                [
+                    new ChangeOperation(2, 3),
+                    new ChangeOperation(4, 4),
+                    new ChangeOperation(2, 4),
+                    new FindOperation(3),
+                    new ChangeOperation(6, 2),
+                    new FindOperation(1),
+                    new FindOperation(3),
+                    new ChangeOperation(1, 1),
+                    new ChangeOperation(1, 3),
+                    new FindOperation(2),
+                    new ChangeOperation(3, 3),
+                    new FindOperation(2)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(-1),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(-1),
+                    new FindOperation.Result(-1),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(6),
+                    VoidOperationResult.Instance,
+                    new FindOperation.Result(6)
+                ])
+        ];
     }
 
     private sealed class ChangeOperation : IOperation<IDesignNumberContainerSystem>

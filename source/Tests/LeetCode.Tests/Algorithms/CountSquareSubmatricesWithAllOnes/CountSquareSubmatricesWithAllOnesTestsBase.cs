@@ -34,5 +34,41 @@ public abstract class CountSquareSubmatricesWithAllOnesTestsBase<T> where T : IC
         yield return [new[] { new[] { 0, 1, 1, 1 }, new[] { 1, 1, 1, 1 }, new[] { 0, 1, 1, 1 } }, 15];
 
         yield return [new[] { new[] { 1, 0, 1 }, new[] { 1, 1, 0 }, new[] { 1, 1, 0 } }, 7];
+
+        yield return [new[] { new[] { 1 } }, 1];
+
+        yield return [new[] { new[] { 0 } }, 0];
+
+        yield return [new[] { new[] { 1, 1 } }, 2];
+
+        yield return [new[] { new[] { 1 }, new[] { 1 } }, 2];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 1, 1 } }, 5];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 1, 0 } }, 3];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 0, 0 } }, 0];
+
+        yield return [new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 1 } }, 14];
+
+        yield return [new[] { new[] { 1, 0, 1 }, new[] { 0, 1, 0 }, new[] { 1, 0, 1 } }, 5];
+
+        yield return [new[] { new[] { 1, 1, 1, 1 } }, 4];
+
+        yield return [new[] { new[] { 1, 1, 0 }, new[] { 1, 1, 1 }, new[] { 0, 1, 1 } }, 9];
+
+        yield return [new[] { new[] { 1, 1, 1, 1 }, new[] { 1, 1, 1, 1 }, new[] { 1, 1, 1, 1 }, new[] { 1, 1, 1, 1 } }, 30];
+
+        yield return [new[] { new[] { 0, 1, 1, 1 }, new[] { 1, 1, 1, 1 }, new[] { 0, 1, 1, 1 } }, 15];
+
+        yield return [new[] { new[] { 1, 1, 1, 1, 0 }, new[] { 1, 0, 0, 1, 0 }, new[] { 1, 0, 1, 1, 1 }, new[] { 1, 1, 1, 1, 1 }, new[] { 1, 1, 1, 1, 1 } }, 27];
+
+        yield return [new[] { new[] { 1, 1, 1, 1, 1, 1 }, new[] { 0, 1, 1, 1, 1, 1 }, new[] { 1, 1, 0, 1, 0, 1 }, new[] { 1, 1, 1, 0, 0, 1 } }, 24];
+
+        yield return [new[] { new[] { 1, 0, 0 }, new[] { 0, 1, 1 }, new[] { 1, 1, 1 }, new[] { 0, 1, 1 }, new[] { 1, 1, 0 }, new[] { 1, 0, 1 } }, 14];
+
+        yield return [new[] { new[] { 0, 1, 1, 1, 0, 1, 1 }, new[] { 0, 1, 1, 1, 1, 1, 1 }, new[] { 1, 1, 0, 1, 1, 0, 1 }, new[] { 1, 1, 1, 1, 1, 0, 1 }, new[] { 1, 1, 1, 1, 1, 0, 1 } }, 38];
+
+        yield return [new[] { new[] { 1, 0, 1, 0, 1 }, new[] { 0, 1, 1, 1, 1 } }, 7];
     }
 }

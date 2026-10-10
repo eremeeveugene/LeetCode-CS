@@ -35,6 +35,8 @@ public abstract class CountElementsWithStrictlySmallerAndGreaterElementsTestsBas
     [DataRow(new[] { 10, 20, 30, 40 }, 2)]
     [DataRow(new[] { 2, 2, 3, 4 }, 1)]
     [DataRow(new[] { 1, 3, 4, 4 }, 1)]
+    [DataRow(new[] { 100000, -100000, 0 }, 1)]
+    [DataRow(new[] { 7, 7, 7, 1, 9, 9 }, 3)]
     public void CountElements_GivenArray_ReturnsCountOfElementsMatchingCriteria(int[] nums, int expectedResult)
     {
         // Arrange

@@ -29,6 +29,14 @@ public abstract class CanIWinTestsBase<T> where T : ICanIWin, new()
     [DataRow(20, 19, true)]
     [DataRow(2, 3, false)]
     [DataRow(7, 16, true)]
+    [DataRow(5, 5, true)]
+    [DataRow(5, 16, false)]
+    [DataRow(5, 15, true)]
+    [DataRow(4, 10, false)]
+    [DataRow(3, 6, true)]
+    [DataRow(6, 21, false)]
+    [DataRow(7, 28, true)]
+    [DataRow(2, 2, true)]
     public void CanIWin_WithMaxChoosableIntegerAndDesiredTotal_ReturnsWhetherPlayerCanWin(
         int maxChoosableInteger,
         int desiredTotal,

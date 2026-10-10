@@ -20,6 +20,22 @@ public abstract class FindThePivotIntegerTestsBase<T> where T : IFindThePivotInt
     [DataRow(1, 1)]
     [DataRow(4, -1)]
     [DataRow(12, -1)]
+    [DataRow(2, -1)]
+    [DataRow(3, -1)]
+    [DataRow(5, -1)]
+    [DataRow(6, -1)]
+    [DataRow(9, -1)]
+    [DataRow(10, -1)]
+    [DataRow(35, -1)]
+    [DataRow(49, 35)]
+    [DataRow(50, -1)]
+    [DataRow(288, 204)]
+    [DataRow(289, -1)]
+    [DataRow(1000, -1)]
+    [DataRow(999, -1)]
+    [DataRow(100, -1)]
+    [DataRow(7, -1)]
+    [DataRow(120, -1)]
     public void PivotInteger_WithRangeUpperBound_ReturnsPivotWhereLeftAndRightSumsAreEqualOrMinusOne(int n, int expectedResult)
     {
         // Arrange

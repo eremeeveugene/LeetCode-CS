@@ -28,13 +28,25 @@ public abstract class ClosestEqualElementQueriesTestsBase<T> where T : IClosestE
     [DataRow(new[] { 2, 2, 2, 2 }, new[] { 0, 1, 2, 3 }, new[] { 1, 1, 1, 1 })]
     [DataRow(new[] { 1, 2, 3, 2, 1 }, new[] { 0, 1, 2, 3, 4 }, new[] { 1, 2, -1, 2, 1 })]
     [DataRow(new[] { 3, 1, 3, 1, 3, 1, 3 }, new[] { 0, 1, 6 }, new[] { 1, 2, 1 })]
+    [DataRow(new[] { 1, 1, 1 }, new[] { 0, 1, 2 }, new[] { 1, 1, 1 })]
+    [DataRow(new[] { 1, 2, 3, 1 }, new[] { 0, 3 }, new[] { 1, 1 })]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 1 }, new[] { 0, 5, 2 }, new[] { 1, 1, -1 })]
+    [DataRow(new[] { 6 }, new[] { 0 }, new[] { -1 })]
+    [DataRow(new[] { 1, 2, 1, 2 }, new[] { 0, 1, 2, 3 }, new[] { 2, 2, 2, 2 })]
+    [DataRow(new[] { 1, 1, 2, 2, 3 }, new[] { 0, 1, 2, 3, 4 }, new[] { 1, 1, 1, 1, -1 })]
+    [DataRow(new[] { 5, 1, 5, 1, 5, 1, 5, 1 }, new[] { 0, 1, 7 }, new[] { 2, 2, 2 })]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 1 }, new[] { 0, 7, 3 }, new[] { 1, 1, -1 })]
+    [DataRow(new[] { 4, 4, 1, 4 }, new[] { 0, 1, 3, 2 }, new[] { 1, 1, 1, -1 })]
+    [DataRow(new[] { 1, 2, 1, 3, 1 }, new[] { 0, 2, 4, 1 }, new[] { 1, 2, 1, -1 })]
+    [DataRow(new[] { 1000000, 1, 1000000 }, new[] { 0, 1, 2 }, new[] { 1, -1, 1 })]
+    [DataRow(new[] { 3, 3 }, new[] { 1 }, new[] { 1 })]
     public void SolveQueries_WithCircularArrayAndQueryIndices_ReturnsMinimumDistance(int[] nums, int[] queries, int[] expectedResult)
     {
         // Arrange
         var solution = new T();
 
         // Act
-        var actualResult = solution.SolveQueries(nums, queries).ToArray();
+        var actualResult = solution.SolveQueries(nums, queries);
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult);

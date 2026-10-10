@@ -28,6 +28,14 @@ public abstract class ExcelSheetColumnNumberTestsBase<T> where T : IExcelSheetCo
     [DataRow("ZZZZZ", 12356630)]
     [DataRow("AB", 28)]
     [DataRow("ZY", 701)]
+    [DataRow("B", 2)]
+    [DataRow("Y", 25)]
+    [DataRow("AZ", 52)]
+    [DataRow("BA", 53)]
+    [DataRow("ZA", 677)]
+    [DataRow("AAB", 704)]
+    [DataRow("CBA", 2081)]
+    [DataRow("FXSHRXW", 2147483647)]
     public void TitleToNumber_WithExcelColumnTitle_ReturnsCorrespondingColumnNumber(string columnTitle, int expectedResult)
     {
         // Arrange

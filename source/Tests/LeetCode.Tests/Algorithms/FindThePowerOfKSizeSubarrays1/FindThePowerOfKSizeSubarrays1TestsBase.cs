@@ -33,6 +33,22 @@ public abstract class FindThePowerOfKSizeSubarrays1TestsBase<T> where T : IFindT
     [DataRow(new[] { 1, 2, 3, 4 }, 2, new[] { 2, 3, 4 })]
     [DataRow(new[] { 1, 2, 4, 5 }, 2, new[] { 2, -1, 5 })]
     [DataRow(new[] { 10, 11, 12 }, 3, new[] { 12 })]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6 }, 4, new[] { 4, 5, 6 })]
+    [DataRow(new[] { 1, 3, 2, 3 }, 3, new[] { -1, -1 })]
+    [DataRow(new[] { 100000, 99999 }, 2, new[] { -1 })]
+    [DataRow(new[] { 99999, 100000 }, 2, new[] { 100000 })]
+    [DataRow(new[] { 4, 5, 6, 7, 1, 2, 3 }, 3, new[] { 6, 7, -1, -1, 3 })]
+    [DataRow(new[] { 1, 2, 1, 2, 3 }, 3, new[] { -1, -1, 3 })]
+    [DataRow(new[] { 7, 8, 9, 10 }, 4, new[] { 10 })]
+    [DataRow(new[] { 9, 8, 7, 6 }, 2, new[] { -1, -1, -1 })]
+    [DataRow(new[] { 1, 2, 3, 2, 3, 4 }, 3, new[] { 3, -1, -1, 4 })]
+    [DataRow(new[] { 1, 1, 2, 3 }, 3, new[] { -1, 3 })]
+    [DataRow(new[] { 10, 11, 13, 14, 15 }, 3, new[] { -1, -1, 15 })]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8 }, 8, new[] { 8 })]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8 }, 5, new[] { 5, 6, 7, 8 })]
+    [DataRow(new[] { 2, 3, 4, 6, 7, 8, 9 }, 4, new[] { -1, -1, -1, 9 })]
+    [DataRow(new[] { 50, 51, 52, 53 }, 1, new[] { 50, 51, 52, 53 })]
+    [DataRow(new[] { 1, 2, 2, 3 }, 2, new[] { 2, -1, 3 })]
     public void ResultsArray_WithInputArrayAndK_ReturnsTransformedArray(int[] nums, int k, int[] expectedResult)
     {
         // Arrange

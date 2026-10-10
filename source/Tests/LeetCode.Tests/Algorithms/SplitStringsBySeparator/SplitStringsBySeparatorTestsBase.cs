@@ -19,6 +19,24 @@ public abstract class SplitStringsBySeparatorTestsBase<T> where T : ISplitString
     [DataRow(new[] { "one.two.three", "four.five", "six" }, '.', new[] { "one", "two", "three", "four", "five", "six" })]
     [DataRow(new[] { "$easy$", "$problem$" }, '$', new[] { "easy", "problem" })]
     [DataRow(new[] { "|||" }, '|', new string[] { })]
+    [DataRow(new[] { "a.b" }, '.', new[] { "a", "b" })]
+    [DataRow(new[] { "." }, '.', new string[] { })]
+    [DataRow(new[] { "" }, '.', new string[] { })]
+    [DataRow(new[] { "abc" }, '|', new[] { "abc" })]
+    [DataRow(new[] { "a,b,c,d" }, ',', new[] { "a", "b", "c", "d" })]
+    [DataRow(new[] { ",a,", ",,b,," }, ',', new[] { "a", "b" })]
+    [DataRow(new[] { "#x#y", "z#", "#" }, '#', new[] { "x", "y", "z" })]
+    [DataRow(new[] { "one@two", "three" }, '@', new[] { "one", "two", "three" })]
+    [DataRow(new[] { "a$b$c", "d$e", "f$" }, '$', new[] { "a", "b", "c", "d", "e", "f" })]
+    [DataRow(new[] { "no separators here" }, '.', new[] { "no separators here" })]
+    [DataRow(new[] { "...a...b..." }, '.', new[] { "a", "b" })]
+    [DataRow(new[] { "||a||", "b|c" }, '|', new[] { "a", "b", "c" })]
+    [DataRow(new[] { "x" }, 'x', new string[] { })]
+    [DataRow(new[] { "xx", "xyx", "yxy" }, 'x', new[] { "y", "y", "y" })]
+    [DataRow(new[] { "a.b.c.d.e.f.g.h.i.j.k.l.m.n.o.p.q.r.s.t" }, '.', new[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t" })]
+    [DataRow(new[] { "a.b.", ".c" }, '.', new[] { "a", "b", "c" })]
+    [DataRow(new[] { "q", "w" }, 'e', new[] { "q", "w" })]
+    [DataRow(new[] { "e.e" }, '.', new[] { "e", "e" })]
     public void SplitWordsBySeparator_WithStringsContainingSeparator_RemovesSeparatorAndExcludesEmptyStrings(
         string[] words,
         char separator,
@@ -28,7 +46,7 @@ public abstract class SplitStringsBySeparatorTestsBase<T> where T : ISplitString
         var solution = new T();
 
         // Act
-        var actualResult = solution.SplitWordsBySeparator(words, separator).ToArray();
+        var actualResult = solution.SplitWordsBySeparator(words, separator);
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult);

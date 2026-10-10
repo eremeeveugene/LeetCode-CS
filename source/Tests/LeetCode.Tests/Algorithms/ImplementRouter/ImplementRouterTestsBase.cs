@@ -127,6 +127,656 @@ public abstract class ImplementRouterTestsBase
                 [new AddPacketOperation(1, 2, 7), new GetCountOperation(2, 10, 5)],
                 [new AddPacketOperation.Result(true), new GetCountOperation.Result(0)])
         ];
+
+        yield return
+        [
+            new RouterScenario(
+                1,
+                [
+                    new AddPacketOperation(1, 1, 1),
+                    new AddPacketOperation(2, 1, 2),
+                    new GetCountOperation(1, 1, 2),
+                    new ForwardPacketOperation(),
+                    new ForwardPacketOperation()
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1),
+                    new ForwardPacketOperation.Result([2, 1, 2]),
+                    new ForwardPacketOperation.Result([])
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                2,
+                [
+                    new AddPacketOperation(1, 2, 5),
+                    new AddPacketOperation(1, 3, 5),
+                    new AddPacketOperation(1, 4, 6),
+                    new GetCountOperation(2, 5, 6),
+                    new GetCountOperation(3, 5, 6),
+                    new GetCountOperation(4, 6, 6)
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new GetCountOperation.Result(1),
+                    new GetCountOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                3,
+                [
+                    new ForwardPacketOperation(),
+                    new GetCountOperation(1, 0, 10),
+                    new AddPacketOperation(9, 9, 9),
+                    new GetCountOperation(9, 9, 9),
+                    new GetCountOperation(9, 10, 20)
+                ],
+                [
+                    new ForwardPacketOperation.Result([]),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1),
+                    new GetCountOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                2,
+                [
+                    new AddPacketOperation(1, 1, 1),
+                    new AddPacketOperation(1, 1, 1),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(1, 1, 1),
+                    new GetCountOperation(1, 1, 1)
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(false),
+                    new ForwardPacketOperation.Result([1, 1, 1]),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                1,
+                [
+                    new AddPacketOperation(1, 1, 10),
+                    new AddPacketOperation(1, 1, 10),
+                    new AddPacketOperation(2, 1, 10),
+                    new GetCountOperation(1, 10, 10)
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(false),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                2,
+                [
+                    new AddPacketOperation(2, 2, 1),
+                    new GetCountOperation(1, 1, 3),
+                    new AddPacketOperation(1, 2, 1),
+                    new GetCountOperation(1, 1, 1),
+                    new GetCountOperation(1, 1, 1),
+                    new AddPacketOperation(2, 2, 1),
+                    new AddPacketOperation(1, 2, 4),
+                    new AddPacketOperation(1, 1, 4),
+                    new GetCountOperation(1, 1, 4),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(1, 2, 5),
+                    new GetCountOperation(1, 2, 2)
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(false),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1),
+                    new ForwardPacketOperation.Result([1, 2, 4]),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                3,
+                [
+                    new AddPacketOperation(3, 3, 1),
+                    new GetCountOperation(3, 1, 1),
+                    new AddPacketOperation(1, 2, 1),
+                    new GetCountOperation(2, 1, 2),
+                    new GetCountOperation(2, 1, 2),
+                    new AddPacketOperation(1, 3, 1),
+                    new GetCountOperation(2, 1, 1),
+                    new AddPacketOperation(3, 1, 1),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(1, 1, 1),
+                    new ForwardPacketOperation(),
+                    new ForwardPacketOperation(),
+                    new GetCountOperation(3, 1, 2),
+                    new GetCountOperation(1, 1, 1),
+                    new AddPacketOperation(2, 2, 1)
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1),
+                    new GetCountOperation.Result(1),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([1, 2, 1]),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([1, 3, 1]),
+                    new ForwardPacketOperation.Result([3, 1, 1]),
+                    new GetCountOperation.Result(0),
+                    new GetCountOperation.Result(1),
+                    new AddPacketOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                3,
+                [
+                    new AddPacketOperation(4, 1, 2),
+                    new GetCountOperation(2, 1, 3),
+                    new AddPacketOperation(2, 1, 2),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(1, 2, 5),
+                    new AddPacketOperation(1, 2, 7),
+                    new AddPacketOperation(2, 1, 9),
+                    new GetCountOperation(2, 8, 8),
+                    new AddPacketOperation(4, 1, 9),
+                    new GetCountOperation(2, 6, 7),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(4, 2, 9),
+                    new AddPacketOperation(2, 1, 9),
+                    new AddPacketOperation(3, 2, 9),
+                    new ForwardPacketOperation(),
+                    new GetCountOperation(2, 7, 9),
+                    new GetCountOperation(1, 3, 5),
+                    new AddPacketOperation(4, 1, 9),
+                    new AddPacketOperation(2, 2, 11),
+                    new AddPacketOperation(2, 1, 14)
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([4, 1, 2]),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1),
+                    new ForwardPacketOperation.Result([1, 2, 7]),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(false),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([4, 1, 9]),
+                    new GetCountOperation.Result(2),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                4,
+                [
+                    new AddPacketOperation(1, 3, 1),
+                    new GetCountOperation(3, 1, 3),
+                    new AddPacketOperation(1, 1, 1),
+                    new AddPacketOperation(2, 3, 1),
+                    new AddPacketOperation(2, 3, 1),
+                    new ForwardPacketOperation(),
+                    new GetCountOperation(1, 1, 2),
+                    new AddPacketOperation(2, 3, 1),
+                    new GetCountOperation(1, 1, 3),
+                    new AddPacketOperation(3, 2, 3),
+                    new AddPacketOperation(3, 1, 3),
+                    new AddPacketOperation(1, 2, 3),
+                    new AddPacketOperation(2, 1, 3),
+                    new GetCountOperation(3, 3, 3),
+                    new GetCountOperation(3, 2, 2),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(2, 2, 3),
+                    new AddPacketOperation(1, 1, 6),
+                    new AddPacketOperation(2, 3, 6),
+                    new AddPacketOperation(2, 2, 6)
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(false),
+                    new ForwardPacketOperation.Result([1, 3, 1]),
+                    new GetCountOperation.Result(1),
+                    new AddPacketOperation.Result(false),
+                    new GetCountOperation.Result(1),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new GetCountOperation.Result(0),
+                    new ForwardPacketOperation.Result([3, 2, 3]),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                5,
+                [
+                    new AddPacketOperation(1, 4, 1),
+                    new AddPacketOperation(4, 3, 2),
+                    new AddPacketOperation(4, 3, 2),
+                    new ForwardPacketOperation(),
+                    new GetCountOperation(3, 1, 2),
+                    new AddPacketOperation(2, 1, 2),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(4, 1, 5),
+                    new GetCountOperation(4, 2, 7),
+                    new AddPacketOperation(3, 1, 6),
+                    new GetCountOperation(3, 3, 7),
+                    new GetCountOperation(2, 2, 7),
+                    new AddPacketOperation(4, 2, 6),
+                    new GetCountOperation(4, 4, 7),
+                    new AddPacketOperation(2, 4, 6),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(2, 1, 6),
+                    new AddPacketOperation(3, 1, 6),
+                    new AddPacketOperation(4, 4, 6),
+                    new GetCountOperation(2, 2, 2),
+                    new AddPacketOperation(3, 1, 9),
+                    new AddPacketOperation(1, 3, 12),
+                    new AddPacketOperation(2, 4, 13),
+                    new GetCountOperation(1, 1, 11),
+                    new AddPacketOperation(2, 2, 13)
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(false),
+                    new ForwardPacketOperation.Result([1, 4, 1]),
+                    new GetCountOperation.Result(1),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([4, 3, 2]),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([2, 1, 2]),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(false),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(2),
+                    new AddPacketOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                2,
+                [
+                    new AddPacketOperation(2, 2, 1),
+                    new ForwardPacketOperation(),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(2, 1, 3),
+                    new GetCountOperation(1, 1, 1),
+                    new AddPacketOperation(1, 2, 3),
+                    new AddPacketOperation(2, 2, 3),
+                    new ForwardPacketOperation(),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(2, 2, 5),
+                    new AddPacketOperation(1, 2, 8),
+                    new GetCountOperation(1, 4, 8),
+                    new GetCountOperation(2, 3, 3),
+                    new AddPacketOperation(1, 2, 11),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(1, 2, 11),
+                    new AddPacketOperation(2, 1, 11),
+                    new GetCountOperation(2, 3, 12),
+                    new ForwardPacketOperation(),
+                    new GetCountOperation(1, 11, 13),
+                    new AddPacketOperation(2, 1, 11),
+                    new AddPacketOperation(2, 2, 11),
+                    new GetCountOperation(1, 6, 7),
+                    new AddPacketOperation(1, 1, 13),
+                    new GetCountOperation(1, 10, 10)
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([2, 2, 1]),
+                    new ForwardPacketOperation.Result([]),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([1, 2, 3]),
+                    new ForwardPacketOperation.Result([2, 2, 3]),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([1, 2, 8]),
+                    new AddPacketOperation.Result(false),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1),
+                    new ForwardPacketOperation.Result([1, 2, 11]),
+                    new GetCountOperation.Result(1),
+                    new AddPacketOperation.Result(false),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                6,
+                [
+                    new GetCountOperation(5, 1, 3),
+                    new AddPacketOperation(3, 1, 1),
+                    new AddPacketOperation(5, 4, 1),
+                    new GetCountOperation(2, 1, 3),
+                    new AddPacketOperation(2, 4, 4),
+                    new AddPacketOperation(2, 1, 7),
+                    new GetCountOperation(4, 3, 7),
+                    new GetCountOperation(2, 6, 7),
+                    new GetCountOperation(4, 4, 5),
+                    new AddPacketOperation(5, 3, 7),
+                    new ForwardPacketOperation(),
+                    new GetCountOperation(2, 2, 9),
+                    new GetCountOperation(1, 5, 8),
+                    new AddPacketOperation(2, 4, 7),
+                    new AddPacketOperation(5, 1, 10),
+                    new GetCountOperation(3, 2, 7),
+                    new GetCountOperation(2, 8, 8),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(3, 2, 10),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(3, 1, 10),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(2, 4, 11),
+                    new GetCountOperation(1, 8, 9),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(3, 1, 11),
+                    new AddPacketOperation(3, 4, 11),
+                    new AddPacketOperation(5, 5, 11),
+                    new AddPacketOperation(5, 4, 11),
+                    new AddPacketOperation(5, 3, 11)
+                ],
+                [
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1),
+                    new GetCountOperation.Result(0),
+                    new GetCountOperation.Result(1),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([3, 1, 1]),
+                    new GetCountOperation.Result(0),
+                    new GetCountOperation.Result(1),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1),
+                    new GetCountOperation.Result(0),
+                    new ForwardPacketOperation.Result([5, 4, 1]),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([2, 4, 4]),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([2, 1, 7]),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new ForwardPacketOperation.Result([5, 3, 7]),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                1,
+                [
+                    new AddPacketOperation(1, 2, 3),
+                    new AddPacketOperation(3, 3, 6),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(1, 3, 9),
+                    new GetCountOperation(2, 2, 7),
+                    new AddPacketOperation(2, 3, 11),
+                    new AddPacketOperation(2, 1, 11),
+                    new AddPacketOperation(1, 1, 12),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(3, 2, 12),
+                    new AddPacketOperation(3, 1, 13),
+                    new AddPacketOperation(1, 1, 13),
+                    new AddPacketOperation(3, 3, 13),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(3, 2, 15)
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([3, 3, 6]),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([1, 1, 12]),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([3, 3, 13]),
+                    new AddPacketOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                10,
+                [
+                    new GetCountOperation(5, 1, 1),
+                    new AddPacketOperation(5, 4, 1),
+                    new AddPacketOperation(1, 3, 1),
+                    new GetCountOperation(2, 1, 3),
+                    new AddPacketOperation(6, 3, 4),
+                    new AddPacketOperation(1, 1, 4),
+                    new AddPacketOperation(2, 6, 6),
+                    new AddPacketOperation(3, 6, 6),
+                    new ForwardPacketOperation(),
+                    new GetCountOperation(6, 1, 6),
+                    new GetCountOperation(6, 4, 8),
+                    new AddPacketOperation(2, 5, 6),
+                    new GetCountOperation(1, 6, 6),
+                    new AddPacketOperation(4, 2, 8),
+                    new GetCountOperation(5, 1, 7),
+                    new AddPacketOperation(2, 3, 9),
+                    new AddPacketOperation(6, 4, 9),
+                    new AddPacketOperation(2, 3, 12),
+                    new GetCountOperation(3, 3, 14),
+                    new AddPacketOperation(3, 6, 13),
+                    new GetCountOperation(1, 12, 12),
+                    new AddPacketOperation(3, 5, 13),
+                    new AddPacketOperation(2, 6, 13),
+                    new AddPacketOperation(3, 3, 13),
+                    new AddPacketOperation(6, 2, 13),
+                    new GetCountOperation(2, 1, 15),
+                    new GetCountOperation(6, 4, 11),
+                    new GetCountOperation(2, 9, 10),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(3, 2, 13),
+                    new AddPacketOperation(1, 2, 13),
+                    new AddPacketOperation(1, 1, 13),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(3, 6, 13),
+                    new AddPacketOperation(4, 4, 13),
+                    new GetCountOperation(3, 9, 9),
+                    new AddPacketOperation(3, 4, 13),
+                    new ForwardPacketOperation(),
+                    new AddPacketOperation(3, 2, 13),
+                    new AddPacketOperation(6, 3, 13)
+                ],
+                [
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([5, 4, 1]),
+                    new GetCountOperation.Result(2),
+                    new GetCountOperation.Result(2),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(1),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(3),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(2),
+                    new GetCountOperation.Result(0),
+                    new GetCountOperation.Result(0),
+                    new ForwardPacketOperation.Result([2, 5, 6]),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([6, 4, 9]),
+                    new AddPacketOperation.Result(false),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(0),
+                    new AddPacketOperation.Result(true),
+                    new ForwardPacketOperation.Result([3, 6, 13]),
+                    new AddPacketOperation.Result(false),
+                    new AddPacketOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new RouterScenario(
+                10,
+                [
+                    new AddPacketOperation(1, 2, 1),
+                    new AddPacketOperation(1, 2, 2),
+                    new AddPacketOperation(1, 2, 3),
+                    new AddPacketOperation(1, 2, 4),
+                    new AddPacketOperation(1, 2, 5),
+                    new AddPacketOperation(1, 2, 6),
+                    new AddPacketOperation(1, 2, 7),
+                    new AddPacketOperation(1, 2, 8),
+                    new AddPacketOperation(1, 2, 9),
+                    new AddPacketOperation(1, 2, 10),
+                    new AddPacketOperation(1, 2, 11),
+                    new AddPacketOperation(1, 2, 12),
+                    new AddPacketOperation(1, 2, 13),
+                    new AddPacketOperation(1, 2, 14),
+                    new AddPacketOperation(1, 2, 15),
+                    new AddPacketOperation(1, 2, 16),
+                    new AddPacketOperation(1, 2, 17),
+                    new AddPacketOperation(1, 2, 18),
+                    new AddPacketOperation(1, 2, 19),
+                    new AddPacketOperation(1, 2, 20),
+                    new GetCountOperation(2, 5, 15),
+                    new ForwardPacketOperation(),
+                    new GetCountOperation(2, 1, 20)
+                ],
+                [
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new AddPacketOperation.Result(true),
+                    new GetCountOperation.Result(5),
+                    new ForwardPacketOperation.Result([1, 2, 11]),
+                    new GetCountOperation.Result(9)
+                ])
+        ];
     }
 
     public sealed class RouterScenario : IScenario<IImplementRouter>
@@ -210,12 +860,27 @@ public abstract class ImplementRouterTestsBase
 
             public Result(int[] packet)
             {
-                _packet = packet;
+                _packet = new int[packet.Length];
+
+                Array.Copy(packet, _packet, packet.Length);
             }
 
             public bool Equals(Result? other)
             {
-                return other is not null && _packet.SequenceEqual(other._packet);
+                if (other is null || _packet.Length != other._packet.Length)
+                {
+                    return false;
+                }
+
+                for (var i = 0; i < _packet.Length; i++)
+                {
+                    if (_packet[i] != other._packet[i])
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
             }
 
             public override bool Equals(object? obj)
@@ -227,8 +892,10 @@ public abstract class ImplementRouterTestsBase
             {
                 var hashCode = new HashCode();
 
-                foreach (var value in _packet)
+                for (var i = 0; i < _packet.Length; i++)
                 {
+                    var value = _packet[i];
+
                     hashCode.Add(value);
                 }
 

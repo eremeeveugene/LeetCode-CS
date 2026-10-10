@@ -36,5 +36,41 @@ public abstract class RowWithMaximumOnesTestsBase<T> where T : IRowWithMaximumOn
         yield return [new[] { new[] { 0, 0, 0 }, new[] { 0, 1, 1 } }, new[] { 1, 2 }];
 
         yield return [new[] { new[] { 0, 0 }, new[] { 1, 1 }, new[] { 0, 0 } }, new[] { 1, 2 }];
+
+        yield return [new[] { new[] { 0 } }, new[] { 0, 0 }];
+
+        yield return [new[] { new[] { 1 } }, new[] { 0, 1 }];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 1, 1 } }, new[] { 0, 2 }];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 0, 0 } }, new[] { 0, 0 }];
+
+        yield return [new[] { new[] { 0, 1, 0 }, new[] { 1, 0, 0 }, new[] { 0, 0, 1 } }, new[] { 0, 1 }];
+
+        yield return [new[] { new[] { 1, 0, 1 }, new[] { 0, 1, 1 }, new[] { 1, 1, 1 } }, new[] { 2, 3 }];
+
+        yield return [new[] { new[] { 1, 1, 1, 1 } }, new[] { 0, 4 }];
+
+        yield return [new[] { new[] { 0 }, new[] { 1 }, new[] { 1 } }, new[] { 1, 1 }];
+
+        yield return [new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 1 }, new[] { 0, 0, 1, 1 }, new[] { 0, 1, 1, 1 } }, new[] { 3, 3 }];
+
+        yield return [new[] { new[] { 1, 1, 1, 0 }, new[] { 1, 1, 0, 0 }, new[] { 1, 0, 0, 0 }, new[] { 0, 0, 0, 0 } }, new[] { 0, 3 }];
+
+        yield return [new[] { new[] { 1, 1, 0, 1, 1 }, new[] { 0, 1, 1, 1, 0 } }, new[] { 0, 4 }];
+
+        yield return [new[] { new[] { 1, 1, 1, 0 }, new[] { 0, 0, 1, 0 } }, new[] { 0, 3 }];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 0, 0 }, new[] { 1, 1 }, new[] { 1, 0 }, new[] { 1, 1 } }, new[] { 2, 2 }];
+
+        yield return [new[] { new[] { 1, 0, 0, 1, 0, 1 }, new[] { 1, 0, 0, 0, 1, 0 }, new[] { 1, 0, 1, 1, 0, 0 }, new[] { 0, 0, 0, 0, 1, 0 } }, new[] { 0, 3 }];
+
+        yield return [new[] { new[] { 1, 1, 0, 1, 1, 0 }, new[] { 1, 1, 1, 1, 1, 0 }, new[] { 0, 1, 1, 0, 1, 0 }, new[] { 0, 1, 1, 0, 0, 0 }, new[] { 1, 0, 1, 0, 1, 1 }, new[] { 1, 0, 0, 0, 0, 0 } }, new[] { 1, 5 }];
+
+        yield return [new[] { new[] { 0, 0, 1, 0, 1, 0 }, new[] { 0, 0, 1, 0, 1, 1 }, new[] { 0, 0, 0, 0, 1, 1 }, new[] { 0, 1, 0, 0, 1, 1 }, new[] { 0, 1, 0, 0, 1, 0 }, new[] { 1, 1, 0, 0, 0, 0 } }, new[] { 1, 3 }];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 0, 0 }, new[] { 0, 1 }, new[] { 1, 0 } }, new[] { 0, 2 }];
+
+        yield return [new[] { new[] { 1, 0, 0, 0, 1 }, new[] { 0, 1, 1, 0, 1 }, new[] { 1, 1, 0, 0, 0 }, new[] { 1, 0, 0, 1, 0 }, new[] { 1, 1, 0, 0, 0 } }, new[] { 1, 3 }];
     }
 }

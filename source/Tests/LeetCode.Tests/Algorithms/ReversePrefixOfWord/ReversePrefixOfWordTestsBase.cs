@@ -19,6 +19,23 @@ public abstract class ReverseStringTestsBase<T> where T : IReversePrefixOfWord, 
     [DataRow("abcdefd", 'd', "dcbaefd")]
     [DataRow("xyxzxe", 'z', "zxyxxe")]
     [DataRow("abcd", 'z', "abcd")]
+    [DataRow("a", 'a', "a")]
+    [DataRow("a", 'b', "a")]
+    [DataRow("ab", 'a', "ab")]
+    [DataRow("ab", 'b', "ba")]
+    [DataRow("abab", 'b', "baab")]
+    [DataRow("aaaa", 'a', "aaaa")]
+    [DataRow("abcdef", 'f', "fedcba")]
+    [DataRow("abcdef", 'a', "abcdef")]
+    [DataRow("abcdef", 'c', "cbadef")]
+    [DataRow("zyxwv", 'x', "xyzwv")]
+    [DataRow("hello", 'l', "lehlo")]
+    [DataRow("hello", 'o', "olleh")]
+    [DataRow("hello", 'z', "hello")]
+    [DataRow("racecar", 'e', "ecarcar")]
+    [DataRow("mississippi", 's', "simsissippi")]
+    [DataRow("abcabcabc", 'c', "cbaabcabc")]
+    [DataRow("pqhxmckayglwqzadveinetromvtixnqpyacmpcmyofikvpogplcufhcfqsgzewqwlnscbzfryquplieorfuzfzekicwpkktnzsgxcuarmjaocwegpbntumootrdzsnfmkrnfmupswvnbccqhbhrczxhwsycrjpnfotxibwebickebthawvxokhpmrmyhjzwqqoghlmykeofgjquvluoppyrkzptuykfrfzqwslczgogpvgircnvdjauned", 'm', "mxhqpckayglwqzadveinetromvtixnqpyacmpcmyofikvpogplcufhcfqsgzewqwlnscbzfryquplieorfuzfzekicwpkktnzsgxcuarmjaocwegpbntumootrdzsnfmkrnfmupswvnbccqhbhrczxhwsycrjpnfotxibwebickebthawvxokhpmrmyhjzwqqoghlmykeofgjquvluoppyrkzptuykfrfzqwslczgogpvgircnvdjauned")]
     public void ReversePrefix_GivenWordAndChar_ReturnsModifiedString(string word, char ch, string expectedResult)
     {
         // Arrange

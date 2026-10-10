@@ -23,6 +23,19 @@ public abstract class PassThePillowTestsBase<T> where T : IPassThePillow, new()
     [DataRow(10, 999, 10)]
     [DataRow(18, 38, 5)]
     [DataRow(2, 1000, 1)]
+    [DataRow(2, 1, 2)]
+    [DataRow(2, 2, 1)]
+    [DataRow(3, 1, 2)]
+    [DataRow(4, 6, 1)]
+    [DataRow(5, 8, 1)]
+    [DataRow(1000, 1, 2)]
+    [DataRow(1000, 999, 1000)]
+    [DataRow(1000, 1000, 999)]
+    [DataRow(1000, 1998, 1)]
+    [DataRow(1000, 1999, 2)]
+    [DataRow(7, 1000, 5)]
+    [DataRow(2, 3, 2)]
+    [DataRow(3, 4, 1)]
     public void PassThePillow_WithPeopleCountAndElapsedTime_ReturnsPersonIndexHoldingPillow(int n, int time, int expectedResult)
     {
         // Arrange

@@ -38,5 +38,22 @@ public abstract class MinimumAbsoluteDifferenceTestsBase<T> where T : IMinimumAb
         yield return [new[] { 1, 3, 6, 10, 15 }, new IList<int>[] { new[] { 1, 3 } }];
 
         yield return [new[] { 3, 8, -10, 23, 19, -4, -14, 27 }, new IList<int>[] { new[] { -14, -10 }, new[] { 19, 23 }, new[] { 23, 27 } }];
+        yield return [new[] { 1, 2 }, new IList<int>[] { new[] { 1, 2 } }];
+        yield return [new[] { 2, 1 }, new IList<int>[] { new[] { 1, 2 } }];
+        yield return [new[] { -1000000, 1000000 }, new IList<int>[] { new[] { -1000000, 1000000 } }];
+        yield return [new[] { 1, 3, 5, 7 }, new IList<int>[] { new[] { 1, 3 }, new[] { 3, 5 }, new[] { 5, 7 } }];
+        yield return [new[] { 5, 1, 3 }, new IList<int>[] { new[] { 1, 3 }, new[] { 3, 5 } }];
+        yield return [new[] { 10, 20, 30 }, new IList<int>[] { new[] { 10, 20 }, new[] { 20, 30 } }];
+        yield return [new[] { 0, 1, 2, 3, 4 }, new IList<int>[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 } }];
+        yield return [new[] { -5, -4, -3 }, new IList<int>[] { new[] { -5, -4 }, new[] { -4, -3 } }];
+        yield return [new[] { 100, 1, 50, 2 }, new IList<int>[] { new[] { 1, 2 } }];
+        yield return [new[] { -10, 0, 10, 20 }, new IList<int>[] { new[] { -10, 0 }, new[] { 0, 10 }, new[] { 10, 20 } }];
+        yield return [new[] { 7, 3, 11, 15 }, new IList<int>[] { new[] { 3, 7 }, new[] { 7, 11 }, new[] { 11, 15 } }];
+        yield return [new[] { 1, 10, 100, 1000 }, new IList<int>[] { new[] { 1, 10 } }];
+        yield return [new[] { -1, 1, 3, -3 }, new IList<int>[] { new[] { -3, -1 }, new[] { -1, 1 }, new[] { 1, 3 } }];
+        yield return [new[] { 8, 4, 12, 16, 0 }, new IList<int>[] { new[] { 0, 4 }, new[] { 4, 8 }, new[] { 8, 12 }, new[] { 12, 16 } }];
+        yield return [new[] { 1000000, -1000000, 0 }, new IList<int>[] { new[] { -1000000, 0 }, new[] { 0, 1000000 } }];
+        yield return [new[] { 9, 7, 5, 3, 1 }, new IList<int>[] { new[] { 1, 3 }, new[] { 3, 5 }, new[] { 5, 7 }, new[] { 7, 9 } }];
+        yield return [new[] { 15, 11, 8, 4 }, new IList<int>[] { new[] { 8, 11 } }];
     }
 }

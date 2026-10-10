@@ -34,6 +34,23 @@ public abstract class MajorityFrequencyCharactersTestsBase<T> where T : IMajorit
     [DataRow("aaabbbcccc", "ab")]
     [DataRow("mmmnnnoooo", "mn")]
     [DataRow("qqrrrsssst", "s")]
+    [DataRow("abcabcabc", "abc")]
+    [DataRow("aabbbcccdddd", "bc")]
+    [DataRow("xyzzy", "yz")]
+    [DataRow("aaaaaaaaaa", "a")]
+    [DataRow("abcdefghijklmnopqrstuvwxyz", "abcdefghijklmnopqrstuvwxyz")]
+    [DataRow("aabbccddeeffg", "abcdef")]
+    [DataRow("zzyyxxwwv", "wxyz")]
+    [DataRow("qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm", "abcdefghijklmnopqrstuvwxyz")]
+    [DataRow("aaabbbcccdddeee", "abcde")]
+    [DataRow("abbcccdddd", "d")]
+    [DataRow("mississippi", "is")]
+    [DataRow("bookkeeper", "bpr")]
+    [DataRow("dadbfaba", "bd")]
+    [DataRow("bfbbfafabbefdedb", "ade")]
+    [DataRow("aaadcbbcdcebbfbde", "acd")]
+    [DataRow("eaabcbbbdaafedfbbd", "ef")]
+    [DataRow("xlgkuhpbikjksmpuukgxdzyjfrtrvjcfgaztlwdvmjjugdogzkomzbrwdidudggkfwepbptzqiltpusbdpezxtwpyaipyzplhadm", "bilmw")]
     public void MajorityFrequencyGroup_WithInputString_ReturnsCharactersFromTheLargestDistinctCharactersGroup(string s, string expectedResult)
     {
         // Arrange

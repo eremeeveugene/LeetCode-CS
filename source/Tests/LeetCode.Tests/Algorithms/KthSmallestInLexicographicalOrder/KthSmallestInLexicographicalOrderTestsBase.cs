@@ -24,6 +24,18 @@ public abstract class KthSmallestInLexicographicalOrderTestsBase<T> where T : IK
     [DataRow(1000000000, 999945398, 999950855)]
     [DataRow(1000000000, 1000000000, 999999999)]
     [DataRow(1000000000, 1, 1)]
+    [DataRow(2, 2, 2)]
+    [DataRow(9, 9, 9)]
+    [DataRow(10, 1, 1)]
+    [DataRow(10, 2, 10)]
+    [DataRow(10, 10, 9)]
+    [DataRow(100, 10, 17)]
+    [DataRow(100, 100, 99)]
+    [DataRow(99, 50, 54)]
+    [DataRow(1000, 1000, 999)]
+    [DataRow(1000, 2, 10)]
+    [DataRow(1000000000, 2, 10)]
+    [DataRow(1000000000, 100000000, 189999998)]
     public void FindKthNumber_WithNAndK_ReturnsKthLexicographicalNumber(int n, int k, int expectedResult)
     {
         // Arrange

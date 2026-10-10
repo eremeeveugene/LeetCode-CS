@@ -24,6 +24,20 @@ public abstract class NimGameTestsBase<T> where T : INimGame, new()
     [DataRow(6, true)]
     [DataRow(7, true)]
     [DataRow(8, false)]
+    [DataRow(9, true)]
+    [DataRow(10, true)]
+    [DataRow(11, true)]
+    [DataRow(12, false)]
+    [DataRow(13, true)]
+    [DataRow(16, false)]
+    [DataRow(20, false)]
+    [DataRow(21, true)]
+    [DataRow(100, false)]
+    [DataRow(101, true)]
+    [DataRow(1000, false)]
+    [DataRow(1001, true)]
+    [DataRow(2147483647, true)]
+    [DataRow(2147483644, false)]
     public void CanWinNim_WithStoneCount_ReturnsIfPlayerCanWin(int n, bool expectedResult)
     {
         // Arrange

@@ -36,5 +36,39 @@ public abstract class WordSearchTestsBase<T> where T : IWordSearch, new()
         yield return [new[] { new[] { 'A', 'B', 'C', 'E' }, new[] { 'S', 'F', 'C', 'S' }, new[] { 'A', 'D', 'E', 'E' } }, "SEE", true];
 
         yield return [new[] { new[] { 'A', 'B', 'C', 'E' }, new[] { 'S', 'F', 'C', 'S' }, new[] { 'A', 'D', 'E', 'E' } }, "ABCB", false];
+
+        yield return [new[] { new[] { 'A' } }, "A", true];
+
+        yield return [new[] { new[] { 'A' } }, "B", false];
+
+        yield return [new[] { new[] { 'A' } }, "AA", false];
+
+        yield return [new[] { new[] { 'A', 'B' } }, "AB", true];
+
+        yield return [new[] { new[] { 'A', 'B' } }, "BA", true];
+
+        yield return [new[] { new[] { 'A', 'B' } }, "ABA", false];
+
+        yield return [new[] { new[] { 'A' }, new[] { 'B' } }, "BA", true];
+
+        yield return [new[] { new[] { 'A', 'A', 'A', 'A' } }, "AAAA", true];
+
+        yield return [new[] { new[] { 'A', 'A', 'A', 'A' } }, "AAAAA", false];
+
+        yield return [new[] { new[] { 'A', 'A' }, new[] { 'A', 'A' } }, "AAAA", true];
+
+        yield return [new[] { new[] { 'A', 'A' }, new[] { 'A', 'A' } }, "AAAAA", false];
+
+        yield return [new[] { new[] { 'A', 'B', 'C', 'E' }, new[] { 'S', 'F', 'C', 'S' }, new[] { 'A', 'D', 'E', 'E' } }, "ABCESEEEFS", false];
+
+        yield return [new[] { new[] { 'A', 'B', 'C', 'E' }, new[] { 'S', 'F', 'C', 'S' }, new[] { 'A', 'D', 'E', 'E' } }, "ABCEFSADEESE", false];
+
+        yield return [new[] { new[] { 'A', 'B', 'C', 'E' }, new[] { 'S', 'F', 'C', 'S' }, new[] { 'A', 'D', 'E', 'E' } }, "SEE", true];
+
+        yield return [new[] { new[] { 'A', 'B', 'C', 'E' }, new[] { 'S', 'F', 'C', 'S' }, new[] { 'A', 'D', 'E', 'E' } }, "ABFSAD", true];
+
+        yield return [new[] { new[] { 'A', 'B', 'C', 'E' }, new[] { 'S', 'F', 'C', 'S' }, new[] { 'A', 'D', 'E', 'E' } }, "ABCCEDX", false];
+
+        yield return [new[] { new[] { 'A', 'B', 'C' }, new[] { 'D', 'E', 'F' }, new[] { 'G', 'H', 'I' } }, "AEI", false];
     }
 }

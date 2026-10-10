@@ -19,6 +19,23 @@ public abstract class CheckIfNumberIsSumOfPowersOfThreeTestsBase<T> where T : IC
     [DataRow(12, true)]
     [DataRow(21, false)]
     [DataRow(91, true)]
+    [DataRow(1, true)]
+    [DataRow(3, true)]
+    [DataRow(4, true)]
+    [DataRow(9, true)]
+    [DataRow(10, true)]
+    [DataRow(13, true)]
+    [DataRow(27, true)]
+    [DataRow(40, true)]
+    [DataRow(81, true)]
+    [DataRow(243, true)]
+    [DataRow(4782969, true)]
+    [DataRow(2, false)]
+    [DataRow(5, false)]
+    [DataRow(6, false)]
+    [DataRow(8, false)]
+    [DataRow(14, false)]
+    [DataRow(15, false)]
     public void CheckPowersOfThree_WithGivenNumber_ReturnsWhetherItCanBeExpressedAsPowersOfThree(int n, bool expectedResult)
     {
         // Arrange

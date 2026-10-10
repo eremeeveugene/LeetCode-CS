@@ -36,5 +36,39 @@ public abstract class CheckIfItIsStraightLineTestsBase<T> where T : ICheckIfItIs
         yield return [new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 }, new[] { 4, 5 }, new[] { 5, 6 }, new[] { 6, 7 } }, true];
 
         yield return [new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 3, 4 }, new[] { 4, 5 }, new[] { 5, 6 }, new[] { 7, 7 } }, false];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 1, 1 } }, true];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 0, 1 }, new[] { 0, 2 } }, true];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 1, 0 }, new[] { 2, 0 }, new[] { 3, 0 } }, true];
+
+        yield return [new[] { new[] { -1, -1 }, new[] { 0, 0 }, new[] { 1, 1 } }, true];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 2, 1 }, new[] { 4, 2 }, new[] { 6, 3 } }, true];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 1, 2 }, new[] { 2, 4 } }, true];
+
+        yield return [new[] { new[] { -10000, -10000 }, new[] { 0, 0 }, new[] { 10000, 10000 } }, true];
+
+        yield return [new[] { new[] { 3, 0 }, new[] { 2, 1 }, new[] { 1, 2 }, new[] { 0, 3 } }, true];
+
+        yield return [new[] { new[] { 5, 5 }, new[] { 5, 6 } }, true];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 1, 1 }, new[] { 3, 3 }, new[] { 2, 2 } }, true];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 2, 2 }, new[] { 3, 3 } }, true];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 1, 1 }, new[] { 2, 3 } }, false];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 1, 0 }, new[] { 2, 1 } }, false];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 0, 1 }, new[] { 1, 2 } }, false];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 1, 2 }, new[] { 2, 3 } }, false];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 1, 1 }, new[] { 2, 2 }, new[] { 3, 4 } }, false];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 3, 1 }, new[] { 6, 3 } }, false];
     }
 }

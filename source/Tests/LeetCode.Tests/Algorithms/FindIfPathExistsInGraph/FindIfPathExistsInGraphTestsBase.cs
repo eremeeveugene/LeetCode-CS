@@ -73,5 +73,9 @@ public abstract class FindIfPathExistsInGraphTestsBase<T> where T : IFindIfPathE
         yield return [3, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 1, 2 } }, 1, 2, true];
 
         yield return [10, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 3, 4 }, new[] { 5, 6 }, new[] { 7, 8 }, new[] { 8, 9 } }, 0, 9, false];
+
+        yield return [7, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 }, new[] { 4, 5 }, new[] { 5, 6 } }, 0, 6, true];
+
+        yield return [7, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 0 }, new[] { 3, 4 }, new[] { 4, 5 }, new[] { 5, 6 } }, 2, 5, false];
     }
 }

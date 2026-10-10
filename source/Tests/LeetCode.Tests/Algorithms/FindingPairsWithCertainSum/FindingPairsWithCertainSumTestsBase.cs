@@ -109,6 +109,385 @@ public abstract class FindingPairsWithCertainSumTestsBase
                     new CountOperation.Result(1)
                 ])
         ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [1],
+                [1],
+                [
+                    new CountOperation(2)
+                ],
+                [
+                    new CountOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [5],
+                [5],
+                [
+                    new CountOperation(10),
+                    new AddOperation(0, 5),
+                    new CountOperation(10),
+                    new CountOperation(15)
+                ],
+                [
+                    new CountOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(0),
+                    new CountOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [1, 2, 3],
+                [1, 2, 3],
+                [
+                    new CountOperation(4),
+                    new CountOperation(2),
+                    new CountOperation(6),
+                    new CountOperation(7)
+                ],
+                [
+                    new CountOperation.Result(3),
+                    new CountOperation.Result(1),
+                    new CountOperation.Result(1),
+                    new CountOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [2, 2, 2],
+                [3, 3],
+                [
+                    new CountOperation(5),
+                    new AddOperation(0, 1),
+                    new CountOperation(5),
+                    new CountOperation(6),
+                    new AddOperation(1, 1),
+                    new CountOperation(6)
+                ],
+                [
+                    new CountOperation.Result(6),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(3),
+                    new CountOperation.Result(3),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(6)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [999900000],
+                [100000],
+                [
+                    new CountOperation(1000000000),
+                    new CountOperation(999900000),
+                    new AddOperation(0, 100000),
+                    new CountOperation(1000000000)
+                ],
+                [
+                    new CountOperation.Result(1),
+                    new CountOperation.Result(0),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [1, 1, 1, 1],
+                [1, 1, 1, 1],
+                [
+                    new CountOperation(2),
+                    new AddOperation(0, 1),
+                    new CountOperation(2),
+                    new CountOperation(3),
+                    new AddOperation(1, 1),
+                    new AddOperation(2, 1),
+                    new AddOperation(3, 1),
+                    new CountOperation(3),
+                    new CountOperation(2)
+                ],
+                [
+                    new CountOperation.Result(16),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(12),
+                    new CountOperation.Result(4),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(16),
+                    new CountOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [10, 20, 30],
+                [5, 15, 25, 35],
+                [
+                    new CountOperation(25),
+                    new CountOperation(35),
+                    new CountOperation(45),
+                    new AddOperation(0, 10),
+                    new CountOperation(25),
+                    new CountOperation(45),
+                    new CountOperation(65)
+                ],
+                [
+                    new CountOperation.Result(2),
+                    new CountOperation.Result(3),
+                    new CountOperation.Result(3),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(2),
+                    new CountOperation.Result(4),
+                    new CountOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [4, 4, 4, 4, 4],
+                [1],
+                [
+                    new CountOperation(5),
+                    new AddOperation(0, 3),
+                    new CountOperation(5),
+                    new CountOperation(8)
+                ],
+                [
+                    new CountOperation.Result(5),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(0),
+                    new CountOperation.Result(5)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [1],
+                [1, 1, 1, 1, 1],
+                [
+                    new CountOperation(2),
+                    new AddOperation(0, 1),
+                    new AddOperation(1, 1),
+                    new CountOperation(2),
+                    new CountOperation(3),
+                    new AddOperation(2, 100000),
+                    new CountOperation(100001)
+                ],
+                [
+                    new CountOperation.Result(5),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(3),
+                    new CountOperation.Result(2),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [7, 8, 9],
+                [1, 2, 3, 4, 5, 6],
+                [
+                    new CountOperation(10),
+                    new CountOperation(12),
+                    new CountOperation(14),
+                    new CountOperation(15),
+                    new AddOperation(5, 100),
+                    new CountOperation(106),
+                    new CountOperation(14)
+                ],
+                [
+                    new CountOperation.Result(3),
+                    new CountOperation.Result(3),
+                    new CountOperation.Result(2),
+                    new CountOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(0),
+                    new CountOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [3, 6, 9, 12],
+                [3, 6, 9, 12],
+                [
+                    new CountOperation(12),
+                    new CountOperation(18),
+                    new CountOperation(24),
+                    new AddOperation(0, 3),
+                    new CountOperation(12),
+                    new AddOperation(3, 3),
+                    new CountOperation(15)
+                ],
+                [
+                    new CountOperation.Result(3),
+                    new CountOperation.Result(3),
+                    new CountOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(3),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(3)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [100, 200],
+                [100000, 100000],
+                [
+                    new CountOperation(100100),
+                    new CountOperation(100200),
+                    new CountOperation(100300),
+                    new AddOperation(0, 1),
+                    new AddOperation(1, 1),
+                    new CountOperation(100101),
+                    new CountOperation(100201)
+                ],
+                [
+                    new CountOperation.Result(2),
+                    new CountOperation.Result(2),
+                    new CountOperation.Result(0),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(2),
+                    new CountOperation.Result(2)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [5, 5, 5],
+                [5, 5, 5],
+                [
+                    new CountOperation(10),
+                    new AddOperation(0, 1),
+                    new CountOperation(10)
+                ],
+                [
+                    new CountOperation.Result(9),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(6)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [1, 2],
+                [2, 1],
+                [
+                    new CountOperation(3),
+                    new AddOperation(0, 2),
+                    new AddOperation(1, 2),
+                    new CountOperation(3),
+                    new CountOperation(4),
+                    new CountOperation(5)
+                ],
+                [
+                    new CountOperation.Result(2),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(0),
+                    new CountOperation.Result(1),
+                    new CountOperation.Result(2)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [999999999, 1],
+                [1, 100000],
+                [
+                    new CountOperation(1000000000),
+                    new CountOperation(100001),
+                    new CountOperation(2),
+                    new AddOperation(0, 99999),
+                    new CountOperation(100000),
+                    new CountOperation(1000000000)
+                ],
+                [
+                    new CountOperation.Result(1),
+                    new CountOperation.Result(1),
+                    new CountOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(0),
+                    new CountOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [9, 9, 9, 1],
+                [1, 9, 9],
+                [
+                    new CountOperation(10),
+                    new CountOperation(18),
+                    new CountOperation(2),
+                    new AddOperation(1, 1),
+                    new CountOperation(19),
+                    new CountOperation(10)
+                ],
+                [
+                    new CountOperation.Result(5),
+                    new CountOperation.Result(6),
+                    new CountOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(3),
+                    new CountOperation.Result(4)
+                ])
+        ];
+
+        yield return
+        [
+            new FindingPairsWithCertainSumScenario(
+                [2, 4, 6, 8, 10],
+                [1, 3, 5, 7, 9],
+                [
+                    new CountOperation(11),
+                    new CountOperation(7),
+                    new CountOperation(19),
+                    new AddOperation(4, 1),
+                    new CountOperation(11),
+                    new CountOperation(20),
+                    new AddOperation(0, 10),
+                    new CountOperation(12)
+                ],
+                [
+                    new CountOperation.Result(5),
+                    new CountOperation.Result(3),
+                    new CountOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(4),
+                    new CountOperation.Result(1),
+                    VoidOperationResult.Instance,
+                    new CountOperation.Result(1)
+                ])
+        ];
     }
 
     public sealed class FindingPairsWithCertainSumScenario : IScenario<IFindingPairsWithCertainSum>

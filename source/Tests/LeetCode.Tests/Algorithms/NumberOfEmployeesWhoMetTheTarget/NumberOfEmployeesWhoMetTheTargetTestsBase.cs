@@ -27,6 +27,17 @@ public abstract class NumberOfEmployeesWhoMetTheTargetTestsBase<T> where T : INu
     [DataRow(new[] { 2, 2, 2, 2 }, 2, 4)]
     [DataRow(new[] { 100 }, 50, 1)]
     [DataRow(new[] { 49 }, 50, 0)]
+    [DataRow(new[] { 0 }, 0, 1)]
+    [DataRow(new[] { 0 }, 1, 0)]
+    [DataRow(new[] { 100000 }, 100000, 1)]
+    [DataRow(new[] { 100000 }, 0, 1)]
+    [DataRow(new[] { 99999, 100000 }, 100000, 1)]
+    [DataRow(new[] { 5, 5, 5, 5, 5 }, 5, 5)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 5, 6)]
+    [DataRow(new[] { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 }, 11, 0)]
+    [DataRow(new[] { 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5 }, 4, 6)]
+    [DataRow(new[] { 0, 0, 0, 0 }, 100000, 0)]
+    [DataRow(new[] { 100000, 100000, 100000, 100000, 100000 }, 1, 5)]
     public void NumberOfEmployeesWhoMetTarget_WithEmployeeHoursAndTarget_ReturnsCountOfEmployeesMeetingTarget(
         int[] hours,
         int target,

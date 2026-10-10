@@ -22,6 +22,20 @@ public abstract class ReplaceWordsTestsBase<T> where T : IReplaceWords, new()
     [DataRow(new[] { "a", "ab", "abc" }, "abc ab a abcde", "a a a a")]
     [DataRow(new[] { "prefix", "pre", "suff", "suffi" }, "prefixes and suffixes", "pre and suff")]
     [DataRow(new[] { "longest", "longer", "long" }, "this is a long long word", "this is a long long word")]
+    [DataRow(new[] { "a" }, "a", "a")]
+    [DataRow(new[] { "a" }, "b", "b")]
+    [DataRow(new[] { "ab" }, "ab", "ab")]
+    [DataRow(new[] { "abc" }, "ab", "ab")]
+    [DataRow(new[] { "a", "aa", "aaa" }, "aaaa aaa aa a b", "a a a a b")]
+    [DataRow(new[] { "cat" }, "cat cat cat", "cat cat cat")]
+    [DataRow(new[] { "x", "y", "z" }, "x y z w", "x y z w")]
+    [DataRow(new[] { "ab", "abc", "abcd" }, "abcd abc ab a", "ab ab ab a")]
+    [DataRow(new[] { "b", "ba" }, "bab ba bb", "b b b")]
+    [DataRow(new[] { "zz" }, "zzzz zzz zz z", "zz zz zz z")]
+    [DataRow(new[] { "the", "he", "t" }, "the then there other", "t t t other")]
+    [DataRow(new[] { "rat", "ra" }, "rated rattle rap rb", "ra ra ra rb")]
+    [DataRow(new[] { "hello" }, "hello hell hello world", "hello hell hello world")]
+    [DataRow(new[] { "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq" }, "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq", "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq")]
     public void ReplaceWords_WithRootDictionaryAndSentence_ReplacesWordsWithShortestMatchingRoots(
         string[] dictionaryArray,
         string sentence,

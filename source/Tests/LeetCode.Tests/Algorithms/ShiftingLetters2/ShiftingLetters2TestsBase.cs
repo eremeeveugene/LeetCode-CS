@@ -52,5 +52,39 @@ public abstract class ShiftingLetters2TestsBase<T> where T : IShiftingLetters2, 
             },
             "ywxcxcqii"
         ];
+
+        yield return ["a", new[] { new[] { 0, 0, 0 } }, "z"];
+
+        yield return ["a", new[] { new[] { 0, 0, 1 } }, "b"];
+
+        yield return ["z", new[] { new[] { 0, 0, 1 } }, "a"];
+
+        yield return ["z", new[] { new[] { 0, 0, 0 } }, "y"];
+
+        yield return ["abc", new[] { new[] { 0, 2, 1 } }, "bcd"];
+
+        yield return ["abc", new[] { new[] { 0, 2, 0 } }, "zab"];
+
+        yield return ["zzz", new[] { new[] { 0, 2, 1 }, new[] { 1, 1, 1 } }, "aba"];
+
+        yield return ["aaa", new[] { new[] { 0, 2, 0 }, new[] { 0, 0, 0 } }, "yzz"];
+
+        yield return ["hello", new[] { new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 }, new[] { 0, 4, 1 } }, "hello"];
+
+        yield return ["hello", new[] { new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 }, new[] { 0, 4, 0 } }, "gdkkn"];
+
+        yield return ["abcdef", new[] { new[] { 1, 3, 1 }, new[] { 2, 4, 0 }, new[] { 0, 5, 1 } }, "bddeeg"];
+
+        yield return ["abcdef", new[] { new[] { 5, 5, 1 }, new[] { 0, 0, 0 } }, "zbcdeg"];
+
+        yield return ["xyz", new[] { new[] { 0, 0, 1 }, new[] { 1, 1, 1 }, new[] { 2, 2, 1 }, new[] { 0, 2, 1 } }, "zab"];
+
+        yield return ["leetcode", new[] { new[] { 0, 7, 1 }, new[] { 2, 5, 0 }, new[] { 3, 3, 1 }, new[] { 7, 7, 0 } }, "mfeucoee"];
+
+        yield return ["mnop", new[] { new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 2, 3, 1 }, new[] { 2, 3, 1 }, new[] { 2, 3, 1 }, new[] { 2, 3, 1 }, new[] { 2, 3, 1 }, new[] { 2, 3, 1 }, new[] { 2, 3, 1 }, new[] { 2, 3, 1 }, new[] { 2, 3, 1 }, new[] { 2, 3, 1 }, new[] { 2, 3, 1 }, new[] { 2, 3, 1 }, new[] { 2, 3, 1 } }, "zabc"];
+
+        yield return ["ab", new[] { new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 1, 1 } }, "yz"];
+
+        yield return ["zy", new[] { new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 0, 1, 0 }, new[] { 1, 1, 1 } }, "bb"];
     }
 }

@@ -29,6 +29,19 @@ public abstract class PowerOfThreeTestsBase<T> where T : IPowerOfThree, new()
     [DataRow(27, true)]
     [DataRow(81, true)]
     [DataRow(243, true)]
+    [DataRow(2, false)]
+    [DataRow(6, false)]
+    [DataRow(18, false)]
+    [DataRow(-3, false)]
+    [DataRow(-27, false)]
+    [DataRow(729, true)]
+    [DataRow(2187, true)]
+    [DataRow(59049, true)]
+    [DataRow(387420489, true)]
+    [DataRow(1162261467, true)]
+    [DataRow(1162261466, false)]
+    [DataRow(2147483647, false)]
+    [DataRow(int.MinValue, false)]
     public void IsPowerOfThree_GivenInteger_ReturnsWhetherIntegerIsPowerOfThree(int n, bool expectedResult)
     {
         // Arrange

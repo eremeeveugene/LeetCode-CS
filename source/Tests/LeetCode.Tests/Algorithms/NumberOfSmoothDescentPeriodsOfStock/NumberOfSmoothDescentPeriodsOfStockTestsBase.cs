@@ -31,6 +31,18 @@ public abstract class NumberOfSmoothDescentPeriodsOfStockTestsBase<T> where T : 
     [DataRow(new[] { 100 }, 1)]
     [DataRow(new[] { 2, 1 }, 3)]
     [DataRow(new[] { 2, 2 }, 2)]
+    [DataRow(new[] { 7 }, 1)]
+    [DataRow(new[] { 3, 3, 3, 3 }, 4)]
+    [DataRow(new[] { 10, 9, 8, 9, 8, 7, 6 }, 16)]
+    [DataRow(new[] { 100000, 99999, 99998 }, 6)]
+    [DataRow(new[] { 1, 100000 }, 2)]
+    [DataRow(new[] { 5, 4, 3, 5, 4, 3, 2, 1 }, 21)]
+    [DataRow(new[] { 2, 1, 3, 2, 1, 0 }, 13)]
+    [DataRow(new[] { 9, 8, 7, 7, 6, 5 }, 12)]
+    [DataRow(new[] { 1, 2, 1, 2, 1 }, 7)]
+    [DataRow(new[] { 6, 5, 4, 3, 2, 1, 2, 1 }, 24)]
+    [DataRow(new[] { 3, 5, 5, 2, 2, 2, 2, 5, 5 }, 9)]
+    [DataRow(new[] { 3, 4, 6, 4, 3, 4, 4, 3 }, 10)]
     public void GetDescentPeriods_WithGivenPrices_ReturnsCountOfSmoothDescentPeriods(int[] prices, long expectedResult)
     {
         // Arrange

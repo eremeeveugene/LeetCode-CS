@@ -26,6 +26,16 @@ public abstract class FractionAdditionAndSubtractionTestsBase<T> where T : IFrac
     [DataRow("9/4-5/3+7/2-9/5+10/6-1/7+1/8-2/9+2/10", "9853/2520")]
     [DataRow("-1/1-1/1-1/1-1/1-1/1-1/1-1/1-1/1-1/1-1/1", "-10/1")]
     [DataRow("-1/3-1/4-1/5-1/6-1/7-1/8-1/9-1/10-1/10-6/10", "-1073/504")]
+    [DataRow("1/2+1/3", "5/6")]
+    [DataRow("1/2-1/3", "1/6")]
+    [DataRow("-1/2-1/3", "-5/6")]
+    [DataRow("1/1", "1/1")]
+    [DataRow("-1/1", "-1/1")]
+    [DataRow("5/10", "1/2")]
+    [DataRow("10/10", "1/1")]
+    [DataRow("7/3+2/3", "3/1")]
+    [DataRow("1/7+1/7+1/7+1/7+1/7+1/7+1/7", "1/1")]
+    [DataRow("3/4-1/4", "1/2")]
     public void FractionAddition_GivenExpression_ReturnsSimplifiedResult(string expression, string expectedResult)
     {
         // Arrange

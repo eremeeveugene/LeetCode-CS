@@ -20,6 +20,22 @@ public abstract class FindTheOriginalTypedString1TestsBase<T> where T : IFindThe
     [DataRow("abcd", 1)]
     [DataRow("aaaa", 4)]
     [DataRow("ere", 1)]
+    [DataRow("a", 1)]
+    [DataRow("aa", 2)]
+    [DataRow("ab", 1)]
+    [DataRow("aab", 2)]
+    [DataRow("abb", 2)]
+    [DataRow("aabb", 3)]
+    [DataRow("aaabbbccc", 7)]
+    [DataRow("abcabc", 1)]
+    [DataRow("zzzzzzzzzz", 10)]
+    [DataRow("abababab", 1)]
+    [DataRow("aabaa", 3)]
+    [DataRow("xyyz", 2)]
+    [DataRow("qqqwqq", 4)]
+    [DataRow("mississippi", 4)]
+    [DataRow("aaaaaaaaaaaaaaaaaaaa", 20)]
+    [DataRow("baab", 2)]
     public void PossibleStringCount_WithGivenTypedString_ReturnsPossibleOriginalStringCount(string word, int expectedResult)
     {
         // Arrange

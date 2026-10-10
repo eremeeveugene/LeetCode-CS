@@ -49,5 +49,29 @@ public abstract class EvaluateBooleanBinaryTreeTestsBase<T> where T : IEvaluateB
         yield return [new int?[] { 3, 3, 2, 0, 1, 0, 0 }, false];
 
         yield return [new int?[] { 3, 3, 2, 2, 3, 3, 3, 0, 1, 0, 0, 1, 0, 0, 0 }, false];
+
+        yield return [new int?[] { 1 }, true];
+
+        yield return [new int?[] { 2, 1, 1 }, true];
+
+        yield return [new int?[] { 2, 0, 0 }, false];
+
+        yield return [new int?[] { 3, 1, 1 }, true];
+
+        yield return [new int?[] { 3, 1, 0 }, false];
+
+        yield return [new int?[] { 3, 0, 1 }, false];
+
+        yield return [new int?[] { 2, 0, 1 }, true];
+
+        yield return [new int?[] { 3, 2, 2, 1, 0, 0, 0 }, false];
+
+        yield return [new int?[] { 2, 3, 3, 1, 0, 1, 1 }, true];
+
+        yield return [new int?[] { 3, 2, 3, 1, 1, 1, 0 }, false];
+
+        yield return [new int?[] { 2, 3, 3, 0, 1, 0, 1 }, false];
+
+        yield return [new int?[] { 2, 2, 3, 0, 0, 1, 1 }, true];
     }
 }

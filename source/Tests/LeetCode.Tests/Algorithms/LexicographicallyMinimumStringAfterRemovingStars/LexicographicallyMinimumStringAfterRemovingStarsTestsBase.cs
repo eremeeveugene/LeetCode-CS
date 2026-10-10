@@ -34,6 +34,8 @@ public abstract class LexicographicallyMinimumStringAfterRemovingStarsTestsBase<
     [DataRow("b*a", "a")]
     [DataRow("aa*b", "ab")]
     [DataRow("cb*", "c")]
+    [DataRow("a*b*", "")]
+    [DataRow("bab*a*", "bb")]
     public void ClearStars_WithAsteriskAndCharactersString_ReturnLexicographicallySmallestString(string s, string expectedResult)
     {
         // Arrange

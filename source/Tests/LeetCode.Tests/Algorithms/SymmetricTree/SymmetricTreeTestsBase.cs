@@ -71,5 +71,7 @@ public abstract class SymmetricTreeTestsBase<T> where T : ISymmetricTree, new()
         yield return [new int?[] { 0, -1, -1, null, null, null, null }, true];
 
         yield return [new int?[] { 0, -1, 1 }, false];
+
+        yield return [new int?[] { 1, 2, 2, 3, null, null, 3 }, true];
     }
 }

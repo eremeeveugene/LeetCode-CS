@@ -34,6 +34,9 @@ public abstract class RotateFunctionTestsBase<T> where T : IRotateFunction, new(
     [DataRow(new[] { 3, 3, 3 }, 9)]
     [DataRow(new[] { 6, 7, 8, 9 }, 50)]
     [DataRow(new[] { -2, -1, 0, 1, 2 }, 10)]
+    [DataRow(new[] { -100, -100 }, -100)]
+    [DataRow(new[] { 100, 100, 100, 100, 100 }, 1000)]
+    [DataRow(new[] { 100, -100, 100, -100 }, 200)]
     public void MaxRotateFunction_WithGivenNums_ReturnsMaximumRotationFunctionValue(int[] nums, int expectedResult)
     {
         // Arrange

@@ -20,6 +20,23 @@ public abstract class NumberOfZeroFilledSubarraysTestsBase<T> where T : INumberO
     [DataRow(new[] { 0, 0, 0, 2, 0, 0 }, 9L)]
     [DataRow(new[] { 2, 10, 2019 }, 0L)]
     [DataRow(new[] { 0, 0, 0, 0, 0 }, 15L)]
+    [DataRow(new[] { 0 }, 1L)]
+    [DataRow(new[] { 1 }, 0L)]
+    [DataRow(new[] { -1 }, 0L)]
+    [DataRow(new[] { 0, 0 }, 3L)]
+    [DataRow(new[] { 0, 1, 0 }, 2L)]
+    [DataRow(new[] { 1, 0, 1 }, 1L)]
+    [DataRow(new[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, 55L)]
+    [DataRow(new[] { -1000000000, 0, 1000000000 }, 1L)]
+    [DataRow(new[] { 0, 0, 1, 0, 0, 0 }, 9L)]
+    [DataRow(new[] { 1, 1, 1, 1 }, 0L)]
+    [DataRow(new[] { 0, 1, 0, 1, 0, 1 }, 3L)]
+    [DataRow(new[] { 0, 0, 0, 5, 0, 0, 0, 0 }, 16L)]
+    [DataRow(new[] { 1000000000, 1000000000 }, 0L)]
+    [DataRow(new[] { 1, 0, 1, 0, -1, 0, 0, -1, 0, -1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0 }, 30L)]
+    [DataRow(new[] { 0, -1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0 }, 39L)]
+    [DataRow(new[] { 0, 0, 0, 0, 0, -1, -1, 0, 0, 1, -1, -1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0 }, 28L)]
+    [DataRow(new[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, 5050L)]
     public void ZeroFilledSubarray_WithNumsArray_ReturnsCountOfZeroFilledSubarrays(int[] nums, long expectedResult)
     {
         // Arrange

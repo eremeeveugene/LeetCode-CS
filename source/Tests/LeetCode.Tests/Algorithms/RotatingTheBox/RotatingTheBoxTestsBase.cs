@@ -52,5 +52,43 @@ public abstract class RotatingTheBoxTestsBase<T> where T : IRotatingTheBox, new(
                 new[] { '#', '.', '.' }
             }
         ];
+
+        yield return [new[] { new[] { '#' } }, new[] { new[] { '#' } }];
+
+        yield return [new[] { new[] { '.' } }, new[] { new[] { '.' } }];
+
+        yield return [new[] { new[] { '*' } }, new[] { new[] { '*' } }];
+
+        yield return [new[] { new[] { '#', '.', '#', '*', '#' } }, new[] { new[] { '.' }, new[] { '#' }, new[] { '#' }, new[] { '*' }, new[] { '#' } }];
+
+        yield return [new[] { new[] { '#', '#', '#' } }, new[] { new[] { '#' }, new[] { '#' }, new[] { '#' } }];
+
+        yield return [new[] { new[] { '.', '.', '.' } }, new[] { new[] { '.' }, new[] { '.' }, new[] { '.' } }];
+
+        yield return [new[] { new[] { '*', '*', '*' } }, new[] { new[] { '*' }, new[] { '*' }, new[] { '*' } }];
+
+        yield return [new[] { new[] { '#', '.', '*', '#', '.' } }, new[] { new[] { '.' }, new[] { '#' }, new[] { '*' }, new[] { '.' }, new[] { '#' } }];
+
+        yield return [new[] { new[] { '#' }, new[] { '#' }, new[] { '.' } }, new[] { new[] { '.', '#', '#' } }];
+
+        yield return [new[] { new[] { '.' }, new[] { '#' }, new[] { '*' } }, new[] { new[] { '*', '#', '.' } }];
+
+        yield return [new[] { new[] { '#', '#' }, new[] { '#', '#' } }, new[] { new[] { '#', '#' }, new[] { '#', '#' } }];
+
+        yield return [new[] { new[] { '*', '#' }, new[] { '#', '.' } }, new[] { new[] { '.', '*' }, new[] { '#', '#' } }];
+
+        yield return [new[] { new[] { '*' }, new[] { '#' } }, new[] { new[] { '#', '*' } }];
+
+        yield return [new[] { new[] { '.', '#', '#' } }, new[] { new[] { '.' }, new[] { '#' }, new[] { '#' } }];
+
+        yield return [new[] { new[] { '#', '*' } }, new[] { new[] { '#' }, new[] { '*' } }];
+
+        yield return [new[] { new[] { '#', '#' } }, new[] { new[] { '#' }, new[] { '#' } }];
+
+        yield return [new[] { new[] { '*', '*', '.', '#', '#' }, new[] { '*', '#', '*', '#', '.' }, new[] { '#', '*', '.', '*', '#' }, new[] { '#', '*', '#', '*', '#' }, new[] { '.', '#', '#', '#', '*' } }, new[] { new[] { '.', '#', '#', '*', '*' }, new[] { '#', '*', '*', '#', '*' }, new[] { '#', '#', '.', '*', '.' }, new[] { '#', '*', '*', '.', '#' }, new[] { '*', '#', '#', '#', '#' } }];
+
+        yield return [new[] { new[] { '.', '#', '.', '.', '*', '*' }, new[] { '#', '.', '#', '#', '#', '#' }, new[] { '*', '*', '#', '#', '.', '#' } }, new[] { new[] { '*', '.', '.' }, new[] { '*', '#', '.' }, new[] { '.', '#', '.' }, new[] { '#', '#', '#' }, new[] { '#', '#', '*' }, new[] { '#', '#', '*' } }];
+
+        yield return [new[] { new[] { '*' }, new[] { '#' }, new[] { '#' } }, new[] { new[] { '#', '#', '*' } }];
     }
 }

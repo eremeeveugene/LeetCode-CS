@@ -33,6 +33,9 @@ public abstract class CheckIfArrayIsSortedAndRotatedTestsBase<T> where T : IChec
     [DataRow(new[] { 2, 3, 4, 5, 1 }, true)]
     [DataRow(new[] { 1, 3, 2 }, false)]
     [DataRow(new[] { 4, 5, 1, 2, 3 }, true)]
+    [DataRow(new[] { 6, 7, 1, 2, 3, 4, 5 }, true)]
+    [DataRow(new[] { 1, 2, 1, 2 }, false)]
+    [DataRow(new[] { 10, 1, 10 }, true)]
     public void Check_GivenNums_ReturnsIfSortedOrRotated(int[] nums, bool expectedResult)
     {
         // Arrange

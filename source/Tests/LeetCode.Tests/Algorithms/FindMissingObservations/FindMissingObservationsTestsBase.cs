@@ -25,6 +25,21 @@ public abstract class FindMissingObservationsTestsBase<T> where T : IFindMissing
         2,
         53,
         new int[] { })]
+    [DataRow(new[] { 5, 5 }, 6, 3, new int[0])]
+    [DataRow(new[] { 2, 6, 4 }, 4, 4, new[] { 4, 4, 4, 4 })]
+    [DataRow(new[] { 2, 4, 2, 2 }, 5, 4, new int[0])]
+    [DataRow(new[] { 1, 4, 2, 1 }, 1, 4, new int[0])]
+    [DataRow(new[] { 6, 2, 2, 5, 5, 6, 6 }, 6, 6, new int[0])]
+    [DataRow(new[] { 6, 4, 2, 2, 1 }, 3, 4, new[] { 3, 3, 3, 3 })]
+    [DataRow(new[] { 5, 5, 3, 6, 1 }, 5, 2, new int[0])]
+    [DataRow(new[] { 2, 3, 1, 1, 4, 4, 3 }, 2, 3, new int[0])]
+    [DataRow(new[] { 4, 5, 6, 6, 2, 2, 2 }, 3, 5, new[] { 2, 2, 2, 2, 1 })]
+    [DataRow(new[] { 1, 2, 2, 1 }, 3, 7, new[] { 4, 4, 4, 4, 4, 4, 3 })]
+    [DataRow(new[] { 1, 4, 2, 6, 4, 5 }, 2, 7, new int[0])]
+    [DataRow(new[] { 4 }, 4, 1, new[] { 4 })]
+    [DataRow(new[] { 6, 6, 3 }, 5, 2, new[] { 5, 5 })]
+    [DataRow(new[] { 3, 1, 6, 4, 3, 4 }, 4, 2, new[] { 6, 5 })]
+    [DataRow(new[] { 4, 2, 1 }, 2, 2, new[] { 2, 1 })]
     public void MissingRolls_WithRollsMeanAndN_ReturnsMissingRolls(int[] rolls, int mean, int n, int[] expectedResult)
     {
         // Arrange

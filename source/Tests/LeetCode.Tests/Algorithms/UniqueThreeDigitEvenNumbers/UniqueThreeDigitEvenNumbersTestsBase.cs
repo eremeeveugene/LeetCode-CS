@@ -32,6 +32,12 @@ public abstract class UniqueThreeDigitEvenNumbersTestsBase<T> where T : IUniqueT
     [DataRow(new[] { 5, 5, 5 }, 0)]
     [DataRow(new[] { 3, 1, 4, 1, 5, 9, 2, 6 }, 93)]
     [DataRow(new[] { 0, 2, 4 }, 4)]
+    [DataRow(new[] { 0, 0, 2 }, 1)]
+    [DataRow(new[] { 2, 0, 0 }, 1)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, 224)]
+    [DataRow(new[] { 9, 9, 9, 9, 9, 9, 9, 9, 8 }, 1)]
+    [DataRow(new[] { 0, 0, 0, 0, 0, 0, 0, 0, 2 }, 1)]
+    [DataRow(new[] { 2, 2, 4, 4, 6, 6, 8, 8, 0 }, 92)]
     public void TotalNumbers_WithGivenDigitsArray_ReturnsUniqueThreeDigitEvenNumbers(int[] digits, int expectedResult)
     {
         // Arrange

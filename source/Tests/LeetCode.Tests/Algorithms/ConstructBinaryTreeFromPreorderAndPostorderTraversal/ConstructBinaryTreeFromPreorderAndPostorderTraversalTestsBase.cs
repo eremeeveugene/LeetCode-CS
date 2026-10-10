@@ -89,5 +89,17 @@ public abstract class ConstructBinaryTreeFromPreorderAndPostorderTraversalTestsB
 
         // Repeated-style with right-heavy subtrees
         yield return [new[] { 8, 4, 2, 6, 12, 10, 14 }, new[] { 2, 6, 4, 10, 14, 12, 8 }, new int?[] { 8, 4, 12, 2, 6, 10, 14 }];
+
+        // Left-skewed chain of three nodes
+        yield return [new[] { 1, 2, 3 }, new[] { 3, 2, 1 }, new int?[] { 1, 2, null, 3 }];
+
+        // Left-skewed chain of four nodes
+        yield return [new[] { 1, 2, 3, 4 }, new[] { 4, 3, 2, 1 }, new int?[] { 1, 2, null, 3, null, 4 }];
+
+        // Full 3-level tree with distinct values
+        yield return [new[] { 6, 3, 1, 4, 9, 7, 10 }, new[] { 1, 4, 3, 7, 10, 9, 6 }, new int?[] { 6, 3, 9, 1, 4, 7, 10 }];
+
+        // Root with two leaves, small values
+        yield return [new[] { 2, 1, 3 }, new[] { 1, 3, 2 }, new int?[] { 2, 1, 3 }];
     }
 }

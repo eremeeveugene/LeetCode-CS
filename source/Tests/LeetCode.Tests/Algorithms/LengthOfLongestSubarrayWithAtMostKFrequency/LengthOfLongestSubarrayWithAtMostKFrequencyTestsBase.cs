@@ -31,6 +31,11 @@ public abstract class LengthOfLongestSubarrayWithAtMostKFrequencyTestsBase<T> wh
     [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 2, 10)]
     [DataRow(new[] { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 }, 1, 2)]
     [DataRow(new[] { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 }, 2, 10)]
+    [DataRow(new[] { 1000000000, 1000000000, 1 }, 1, 2)]
+    [DataRow(new[] { 3, 3, 3, 1, 1, 2, 2, 2 }, 2, 6)]
+    [DataRow(new[] { 1, 2, 1, 3, 1, 2, 3, 3 }, 1, 3)]
+    [DataRow(new[] { 7, 7, 7, 7 }, 4, 4)]
+    [DataRow(new[] { 4, 5, 4, 5, 4, 5 }, 2, 4)]
     public void MaxSubarrayLength_GivenArrayAndK_ReturnsMaxSubarrayLength(int[] nums, int k, int expectedResult)
     {
         // Arrange

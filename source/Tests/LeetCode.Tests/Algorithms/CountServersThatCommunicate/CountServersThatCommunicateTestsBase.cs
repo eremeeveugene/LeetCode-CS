@@ -36,5 +36,39 @@ public abstract class CountServersThatCommunicateTestsBase<T> where T : ICountSe
         yield return [new[] { new[] { 1, 0 }, new[] { 1, 1 } }, 3];
 
         yield return [new[] { new[] { 1, 1, 0, 0 }, new[] { 0, 0, 1, 0 }, new[] { 0, 0, 1, 0 }, new[] { 0, 0, 0, 1 } }, 4];
+
+        yield return [new[] { new[] { 1 } }, 0];
+
+        yield return [new[] { new[] { 0 } }, 0];
+
+        yield return [new[] { new[] { 1, 1 } }, 2];
+
+        yield return [new[] { new[] { 1 }, new[] { 1 } }, 2];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 0, 0 } }, 0];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 1, 1 } }, 4];
+
+        yield return [new[] { new[] { 1, 0, 0 }, new[] { 0, 1, 0 }, new[] { 0, 0, 1 } }, 0];
+
+        yield return [new[] { new[] { 1, 0, 1 }, new[] { 0, 0, 0 }, new[] { 1, 0, 0 } }, 3];
+
+        yield return [new[] { new[] { 1, 1, 1, 1 } }, 4];
+
+        yield return [new[] { new[] { 1 }, new[] { 0 }, new[] { 1 }, new[] { 1 } }, 3];
+
+        yield return [new[] { new[] { 1, 0, 0, 1 }, new[] { 0, 1, 1, 0 }, new[] { 0, 1, 0, 0 } }, 5];
+
+        yield return [new[] { new[] { 0, 0, 0 }, new[] { 1, 1, 1 }, new[] { 1, 1, 1 } }, 6];
+
+        yield return [new[] { new[] { 0, 0, 0, 0, 0 }, new[] { 0, 1, 1, 0, 0 }, new[] { 1, 1, 1, 0, 1 }, new[] { 0, 0, 1, 0, 0 } }, 7];
+
+        yield return [new[] { new[] { 0, 1, 1, 1 }, new[] { 1, 0, 0, 0 }, new[] { 1, 0, 0, 0 }, new[] { 1, 0, 0, 0 }, new[] { 0, 1, 0, 0 } }, 7];
+
+        yield return [new[] { new[] { 0, 1, 0, 0, 1, 1 }, new[] { 1, 1, 0, 0, 0, 0 }, new[] { 0, 1, 1, 1, 0, 0 }, new[] { 1, 0, 1, 0, 1, 1 }, new[] { 0, 0, 0, 1, 0, 1 }, new[] { 1, 1, 0, 0, 1, 0 } }, 17];
+
+        yield return [new[] { new[] { 0, 1, 0, 1, 1, 0, 0 }, new[] { 0, 0, 0, 1, 1, 0, 0 } }, 5];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 1, 0 }, new[] { 0, 1 }, new[] { 0, 0 }, new[] { 0, 1 }, new[] { 0, 0 }, new[] { 1, 0 } }, 5];
     }
 }

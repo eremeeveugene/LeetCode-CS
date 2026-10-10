@@ -34,6 +34,9 @@ public abstract class CountOperationsToObtainZeroTestsBase<T> where T : ICountOp
     [DataRow(50, 25, 2)]
     [DataRow(12, 8, 3)]
     [DataRow(1000, 999, 1000)]
+    [DataRow(0, 0, 0)]
+    [DataRow(8, 12, 3)]
+    [DataRow(21, 13, 7)]
     public void CountOperations_WithTwoNonNegativeIntegers_ReturnsCountOfSubtractionOperations(int num1, int num2, int expectedResult)
     {
         // Arrange

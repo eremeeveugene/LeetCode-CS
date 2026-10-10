@@ -39,5 +39,39 @@ public abstract class DiameterOfBinaryTreeTestsBase<T> where T : IDiameterOfBina
         yield return [new int?[] { 1, 2, 3, 4, 5 }, 3];
 
         yield return [new int?[] { 1, 2 }, 1];
+
+        yield return [new int?[] { 3, 9, 20, null, null, 15, 7, null, null, null, 16 }, 4];
+
+        yield return [new int?[] { 1 }, 0];
+
+        yield return [new int?[] { 1, 2, 3 }, 2];
+
+        yield return [new int?[] { 1, 2, null, 3 }, 2];
+
+        yield return [new int?[] { 1, null, 2, null, 3 }, 2];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7 }, 4];
+
+        yield return [new int?[] { 1, 2, 3, 4, null, null, 5 }, 4];
+
+        yield return [new int?[] { 1, 2, null, 3, null, 4 }, 3];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, null, null, 6, null, null, 7 }, 4];
+
+        yield return [new int?[] { 1, null, 2, null, 3, null, 4, null, 5 }, 4];
+
+        yield return [new int?[] { 1, 2, 2, 3, 3, null, null, 4, 4 }, 4];
+
+        yield return [new int?[] { 1, 2, 3, null, 4, 5, null, null, 6 }, 5];
+
+        yield return [new int?[] { 5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1 }, 6];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }, 6];
+
+        yield return [new int?[] { 1, 2, null, 3, 4, null, null, 5, null, null, 6 }, 4];
+
+        yield return [new int?[] { -1, -2, -3 }, 2];
+
+        yield return [new int?[] { 0, 0, 0, 0, null, null, 0, 0 }, 5];
     }
 }

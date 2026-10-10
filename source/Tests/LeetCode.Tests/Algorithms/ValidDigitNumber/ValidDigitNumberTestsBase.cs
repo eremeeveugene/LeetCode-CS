@@ -31,6 +31,11 @@ public abstract class ValidDigitNumberTestsBase<T> where T : IValidDigitNumber, 
     [DataRow(90909, 0, true)]
     [DataRow(12345, 3, true)]
     [DataRow(12345, 6, false)]
+    [DataRow(10, 0, true)]
+    [DataRow(1000000, 0, true)]
+    [DataRow(1000000, 1, false)]
+    [DataRow(2147483647, 7, true)]
+    [DataRow(2147483647, 2, false)]
     public void ValidDigit_WithGivenNumber_ReturnsTrueWhenContainsDigitAndDoesNotStartWithDigit(int n, int x, bool expectedResult)
     {
         // Arrange

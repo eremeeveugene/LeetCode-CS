@@ -21,6 +21,21 @@ public abstract class ReverseLettersThenSpecialCharactersInStringTestsBase<T> wh
     [DataRow("!", "!")]
     [DataRow(")ebc#da@f(", "(fad@cb#e)")]
     [DataRow("!@#$%^&*()", ")(*&^%$#@!")]
+    [DataRow("ab", "ba")]
+    [DataRow("a!", "a!")]
+    [DataRow("!a", "!a")]
+    [DataRow("ab!", "ba!")]
+    [DataRow("!ab", "!ba")]
+    [DataRow("a!b", "b!a")]
+    [DataRow("!a!", "!a!")]
+    [DataRow("abc", "cba")]
+    [DataRow("!@#", "#@!")]
+    [DataRow("a!b@c#d", "d#c@b!a")]
+    [DataRow("ab!!cd", "dc!!ba")]
+    [DataRow("!!ab!!", "!!ba!!")]
+    [DataRow("abcdefghij", "jihgfedcba")]
+    [DataRow("bko%k&xv(b)ginriv)dz&u(!(havng", "gnv(a!hu(z&dvirni)gb)v(&%xkokb")]
+    [DataRow("wm@ydgqe#ipb^&@(ddddh%fmr@^mxtz%(kxbio*m#soyy$*(a*kriwh#morqlj&@*ul@()cyspx@ew)bwrg*i*drwqwt)hq$)kg$", "gk$qhtwq)wrd$)**igrwb)wex@)psyc(@lujlq*r@omhw&#*i(rkayy*osmoib$#*xk(%^ztxmr@mf%hddd(d@bpieqg&dy^#mw@")]
     public void ReverseByType_WithInputString_ReturnsStringWithReversedLetterAndSpecialCharacters(string s, string expectedResult)
     {
         // Arrange

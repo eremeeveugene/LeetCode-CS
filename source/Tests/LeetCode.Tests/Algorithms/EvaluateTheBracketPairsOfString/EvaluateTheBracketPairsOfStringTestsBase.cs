@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.EvaluateTheBracketPairsOfString;
+using System.Text;
 
 namespace LeetCode.Tests.Algorithms.EvaluateTheBracketPairsOfString;
 
@@ -65,12 +66,12 @@ public abstract class EvaluateTheBracketPairsOfStringTestsBase<T> where T : IEva
         yield return [new string('a', 1023), Array.Empty<string[]>(), new string('a', 1023)];
         yield return [new string('a', 1024), Array.Empty<string[]>(), new string('a', 1024)];
         yield return [new string('a', 1025), Array.Empty<string[]>(), new string('a', 1025)];
-        yield return [string.Concat(Enumerable.Repeat("(a)", 256)), new[] { new[] { "a", "zzzz" } }, new string('z', 1024)];
-        yield return [string.Concat(Enumerable.Repeat("(a)", 256)) + "a", new[] { new[] { "a", "zzzz" } }, new string('z', 1024) + "a"];
+        yield return [new StringBuilder().Insert(0, "(a)", 256).ToString(), new[] { new[] { "a", "zzzz" } }, new string('z', 1024)];
+        yield return [new StringBuilder().Insert(0, "(a)", 256).ToString() + "a", new[] { new[] { "a", "zzzz" } }, new string('z', 1024) + "a"];
         yield return [new string('a', 100000), Array.Empty<string[]>(), new string('a', 100000)];
         yield return ["(" + new string('a', 99998) + ")", new[] { new[] { "a", "value" } }, "?"];
 
-        yield return [string.Concat(Enumerable.Repeat("(a)", 33333)) + "a", new[] { new[] { "a", "zzzzzzzzzz" } }, new string('z', 333330) + "a"];
+        yield return [new StringBuilder().Insert(0, "(a)", 33333).ToString() + "a", new[] { new[] { "a", "zzzzzzzzzz" } }, new string('z', 333330) + "a"];
 
         var knowledge = new string[100000][];
 

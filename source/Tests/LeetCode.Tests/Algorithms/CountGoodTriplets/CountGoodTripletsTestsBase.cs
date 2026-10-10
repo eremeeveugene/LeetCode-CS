@@ -34,6 +34,9 @@ public abstract class CountGoodTripletsTestsBase<T> where T : ICountGoodTriplets
     [DataRow(new[] { 1, 2, 3, 4, 5 }, 0, 0, 0, 0)]
     [DataRow(new[] { 1, 2, 3 }, 1, 1, 2, 1)]
     [DataRow(new[] { 1, 3, 5, 7 }, 2, 2, 4, 2)]
+    [DataRow(new[] { 1000, 0, 1000 }, 1000, 1000, 1000, 1)]
+    [DataRow(new[] { 1, 5, 9, 13, 17, 21 }, 4, 4, 8, 4)]
+    [DataRow(new[] { 2, 2, 2, 2, 2, 2 }, 0, 0, 0, 20)]
     public void CountGoodTriplets_WithGivenArrayAndConstraints_ReturnsNumberOfValidTriplets(int[] arr, int a, int b, int c, int expectedResult)
     {
         // Arrange

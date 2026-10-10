@@ -25,6 +25,22 @@ public abstract class SumOfDigitsOfStringAfterConvertTestsBase<T> where T : ISum
     [DataRow("ijsbiushfjhsbfhaxvgrgvrjbxhrgghgujdjdkjaaqiuiwueubcbcnzkozizoiwowekdkdjkddjdji", 2, 19)]
     [DataRow("sssssswwsssssrrrrrrrrrttttttttttttttttttttttttttttttttttttttttttttttrrrrrrrrrrrrrrrrrrssssssssssssss", 10, 1)]
     [DataRow("ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss", 1, 1000)]
+    [DataRow("a", 1, 1)]
+    [DataRow("z", 1, 8)]
+    [DataRow("z", 10, 8)]
+    [DataRow("zz", 2, 7)]
+    [DataRow("abc", 1, 6)]
+    [DataRow("abc", 3, 6)]
+    [DataRow("jjjjjjjjjj", 1, 10)]
+    [DataRow("jjjjjjjjjj", 2, 1)]
+    [DataRow("hello", 5, 7)]
+    [DataRow("zyxwvutsrqponmlkjihgfedcba", 1, 135)]
+    [DataRow("zyxwvutsrqponmlkjihgfedcba", 2, 9)]
+    [DataRow("zyxwvutsrqponmlkjihgfedcba", 10, 9)]
+    [DataRow("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 1, 100)]
+    [DataRow("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz", 1, 800)]
+    [DataRow("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz", 4, 8)]
+    [DataRow("qwertyuiop", 2, 7)]
     public void GetLucky_WithStringAndIterations_ReturnsTransformedSum(string s, int k, int expectedResult)
     {
         // Arrange

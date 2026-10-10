@@ -19,6 +19,23 @@ public abstract class LargestEvenNumberTestsBase<T> where T : ILargestEvenNumber
     [DataRow("1", "")]
     [DataRow("221", "22")]
     [DataRow("1112", "1112")]
+    [DataRow("2", "2")]
+    [DataRow("11", "")]
+    [DataRow("12", "12")]
+    [DataRow("21", "2")]
+    [DataRow("22", "22")]
+    [DataRow("111", "")]
+    [DataRow("112", "112")]
+    [DataRow("121", "12")]
+    [DataRow("211", "2")]
+    [DataRow("2111", "2")]
+    [DataRow("1211", "12")]
+    [DataRow("2121", "212")]
+    [DataRow("1212", "1212")]
+    [DataRow("12121", "1212")]
+    [DataRow("22222", "22222")]
+    [DataRow("11111", "")]
+    [DataRow("21212", "21212")]
     public void LargestEven_WithOnlyOnesAndTwos_ReturnsLongestEvenIntegerStringByRemovingCharacters(string s, string expectedResult)
     {
         // Arrange

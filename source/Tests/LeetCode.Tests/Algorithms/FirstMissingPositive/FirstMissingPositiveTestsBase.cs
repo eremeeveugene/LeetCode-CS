@@ -28,6 +28,16 @@ public abstract class FirstMissingPositiveTestsBase<T> where T : IFirstMissingPo
     [DataRow(new[] { 5, 3, 2, 1, 4 }, 6)]
     [DataRow(new[] { 0, 2, 2, 1, 1 }, 3)]
     [DataRow(new[] { 1, 1, 0, -1, -2 }, 2)]
+    [DataRow(new[] { int.MaxValue }, 1)]
+    [DataRow(new[] { int.MinValue }, 1)]
+    [DataRow(new[] { 2, 1 }, 3)]
+    [DataRow(new[] { 1000000000, -1000000000 }, 1)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 11)]
+    [DataRow(new[] { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 12 }, 11)]
+    [DataRow(new[] { 2, 2, 2 }, 1)]
+    [DataRow(new[] { 1, 1, 1 }, 2)]
+    [DataRow(new[] { 4, 3, 2, 7, 8, 2, 3, 1 }, 5)]
+    [DataRow(new[] { int.MinValue, int.MaxValue, 1, 2 }, 3)]
     public void FirstMissingPositive_GivenArray_ReturnsFirstMissingPositiveInteger(int[] nums, int expectedResult)
     {
         // Arrange

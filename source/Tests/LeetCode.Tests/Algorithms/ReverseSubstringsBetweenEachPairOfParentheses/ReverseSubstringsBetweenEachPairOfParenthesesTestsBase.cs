@@ -19,6 +19,23 @@ public abstract class ReverseSubstringsBetweenEachPairOfParenthesesTestsBase<T> 
     [DataRow("(abcd)", "dcba")]
     [DataRow("(u(love)i)", "iloveu")]
     [DataRow("(ed(et(oc))el)", "leetcode")]
+    [DataRow("a", "a")]
+    [DataRow("()", "")]
+    [DataRow("(a)", "a")]
+    [DataRow("a(b)c", "abc")]
+    [DataRow("(ab)(cd)", "badc")]
+    [DataRow("((a))", "a")]
+    [DataRow("(a(b)c)", "cba")]
+    [DataRow("((ab)c)", "cab")]
+    [DataRow("(a(bc))", "bca")]
+    [DataRow("(((abc)))", "cba")]
+    [DataRow("ab(cd)ef", "abdcef")]
+    [DataRow("(ab)cd(ef)", "bacdfe")]
+    [DataRow("a(b(c(d)e)f)g", "afcdebg")]
+    [DataRow("(abc)(def)(ghi)", "cbafedihg")]
+    [DataRow("((ab)(cd))", "cdab")]
+    [DataRow("(ed(et(oc))el)x", "leetcodex")]
+    [DataRow("(kq(s((ohcs)(kroi)dx(kom)cw)u)d)l", "dswckomxdkroiohcsuqkl")]
     public void ReverseParentheses_WithNestedParentheses_ReturnsReversedString(string s, string expectedResult)
     {
         // Arrange

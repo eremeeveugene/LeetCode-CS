@@ -24,6 +24,18 @@ public abstract class FindTheStudentThatWillReplaceTheChalkTestsBase<T> where T 
     [DataRow(new[] { 100000, 1, 100000, 1, 100000, 1, 100000, 1, 100000, 1 }, 500000, 8)]
     [DataRow(new[] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, 10, 10)]
     [DataRow(new[] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, 1000000000, 0)]
+    [DataRow(new[] { 1 }, 1, 0)]
+    [DataRow(new[] { 1, 1 }, 1, 1)]
+    [DataRow(new[] { 2, 2 }, 1, 0)]
+    [DataRow(new[] { 5, 1, 5 }, 11, 0)]
+    [DataRow(new[] { 1, 2, 3 }, 6, 0)]
+    [DataRow(new[] { 10, 20, 30 }, 1000000000, 2)]
+    [DataRow(new[] { 100000, 100000 }, 1000000000, 0)]
+    [DataRow(new[] { 1, 100000 }, 99999, 1)]
+    [DataRow(new[] { 100000, 1 }, 100000, 1)]
+    [DataRow(new[] { 3, 3, 3, 3 }, 12, 0)]
+    [DataRow(new[] { 3, 3, 3, 3 }, 11, 3)]
+    [DataRow(new[] { 2, 3, 4, 5 }, 13, 3)]
     public void ChalkReplacer_WithChalkArrayAndK_ReturnsIndexOfStudentReplacingChalk(int[] chalk, int k, int expectedResult)
     {
         // Arrange

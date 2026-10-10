@@ -29,6 +29,13 @@ public abstract class ReorderedPowerOfTwoTestsBase<T> where T : IReorderedPowerO
     [DataRow(27131072, false)]
     [DataRow(368712509, true)]
     [DataRow(842717231, true)]
+    [DataRow(46, true)]
+    [DataRow(1024, true)]
+    [DataRow(1042, true)]
+    [DataRow(10240, false)]
+    [DataRow(1000000000, false)]
+    [DataRow(536870912, true)]
+    [DataRow(123456789, false)]
     public void ReorderedPowerOf2_WithGivenInteger_ReturnsTrueIfPermutationIsPowerOfTwo(int n, bool expectedResult)
     {
         // Arrange

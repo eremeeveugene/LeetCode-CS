@@ -22,6 +22,23 @@ public abstract class GetEqualSubstringsWithinBudgetTestsBase<T> where T : IGetE
     [DataRow("krrgw", "zjxss", 19, 2)]
     [DataRow("pxezla", "loewbi", 25, 4)]
     [DataRow("ujteygggjwxnfl", "nstsenrzttikoy", 43, 5)]
+    [DataRow("a", "a", 0, 1)]
+    [DataRow("a", "z", 0, 0)]
+    [DataRow("a", "z", 25, 1)]
+    [DataRow("a", "z", 24, 0)]
+    [DataRow("abc", "abc", 0, 3)]
+    [DataRow("abc", "xyz", 1000000, 3)]
+    [DataRow("abc", "bcd", 2, 2)]
+    [DataRow("abcd", "bcde", 4, 4)]
+    [DataRow("aaaa", "zzzz", 50, 2)]
+    [DataRow("aaaa", "zzzz", 75, 3)]
+    [DataRow("zzzz", "aaaa", 100, 4)]
+    [DataRow("abcdef", "abcdeg", 0, 5)]
+    [DataRow("abcdef", "fedcba", 6, 3)]
+    [DataRow("mmmmmm", "nnnnnn", 3, 3)]
+    [DataRow("hello", "world", 10, 2)]
+    [DataRow("abababab", "babababa", 3, 3)]
+    [DataRow("aaaaabbbbb", "bbbbbaaaaa", 5, 5)]
     public void EqualSubstring_WithSourceTargetAndMaxCost_ReturnsMaxLengthOfTransformableSubstringWithinBudget(
         string s,
         string t,

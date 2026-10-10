@@ -20,6 +20,22 @@ public abstract class ValidWordTestsBase<T> where T : IValidWord, new()
     [DataRow("b3", false)]
     [DataRow("a3$e", false)]
     [DataRow("AhI", true)]
+    [DataRow("abc", true)]
+    [DataRow("a1b", true)]
+    [DataRow("aaa", false)]
+    [DataRow("bcd", false)]
+    [DataRow("123", false)]
+    [DataRow("a12", false)]
+    [DataRow("1a2b", true)]
+    [DataRow("AEIOU", false)]
+    [DataRow("BCDFG", false)]
+    [DataRow("Ab1", true)]
+    [DataRow("a@b", false)]
+    [DataRow("a b", false)]
+    [DataRow("ab#", false)]
+    [DataRow("x1y", false)]
+    [DataRow("e1e", false)]
+    [DataRow("abcdefghijklmnopqrstuvwxyz0123456789", true)]
     public void IsValid_WithGivenWord_ReturnsWhetherItMeetsCriteria(string word, bool expectedResult)
     {
         // Arrange

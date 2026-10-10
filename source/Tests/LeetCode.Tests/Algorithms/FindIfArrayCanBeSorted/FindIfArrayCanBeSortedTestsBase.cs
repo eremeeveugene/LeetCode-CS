@@ -33,6 +33,12 @@ public abstract class FindIfArrayCanBeSortedTestsBase<T> where T : IFindIfArrayC
     [DataRow(new[] { 2, 3 }, true)]
     [DataRow(new[] { 14, 7, 3 }, false)]
     [DataRow(new[] { 5, 7, 11 }, true)]
+    [DataRow(new[] { 4, 16, 16, 34 }, true)]
+    [DataRow(new[] { 6, 22, 28, 11, 40 }, true)]
+    [DataRow(new[] { 2, 26, 26, 22, 28, 26, 19 }, true)]
+    [DataRow(new[] { 19, 12, 15, 10, 15 }, false)]
+    [DataRow(new[] { 19, 2, 28, 9 }, false)]
+    [DataRow(new[] { 9, 17, 23, 15, 32, 36, 37 }, false)]
     public void CanSortArray_WithUnsortedOrSortedArray_ReturnsIfArrayCanBeSorted(int[] nums, bool expectedResult)
     {
         // Arrange

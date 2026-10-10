@@ -22,6 +22,23 @@ public abstract class CustomSortStringTestsBase<T> where T : ICustomSortString, 
     [DataRow("xyz", "xyzab", "xyzab")]
     [DataRow("pqrs", "pqrstuvwx", "pqrstuvwx")]
     [DataRow("aeiou", "hello", "eohll")]
+    [DataRow("a", "a", "a")]
+    [DataRow("a", "aaa", "aaa")]
+    [DataRow("b", "aaa", "aaa")]
+    [DataRow("ba", "ab", "ba")]
+    [DataRow("ba", "aabb", "bbaa")]
+    [DataRow("zyx", "xyzxyz", "zzyyxx")]
+    [DataRow("abc", "cba", "abc")]
+    [DataRow("cba", "abc", "cba")]
+    [DataRow("cba", "aabbcc", "ccbbaa")]
+    [DataRow("bca", "abcabcddd", "bbccaaddd")]
+    [DataRow("mn", "nmnmmz", "mmmnnz")]
+    [DataRow("qwerty", "tyrewq", "qwerty")]
+    [DataRow("dcba", "abcdd", "ddcba")]
+    [DataRow("hgfedcba", "abcdefgh", "hgfedcba")]
+    [DataRow("kl", "lklkllk", "kkkllll")]
+    [DataRow("edcba", "aaaaabbbbb", "bbbbbaaaaa")]
+    [DataRow("yx", "xxxyyyy", "yyyyxxx")]
     public void CustomSortString_GivenOrderAndString_ReturnsCustomSortedString(string order, string s, string expectedResult)
     {
         // Arrange

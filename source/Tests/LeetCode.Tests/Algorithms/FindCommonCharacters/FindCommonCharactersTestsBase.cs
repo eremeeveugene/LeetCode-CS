@@ -25,6 +25,18 @@ public abstract class FindCommonCharactersTestsBase<T> where T : IFindCommonChar
     [DataRow(new[] { "a" }, new[] { "a" })]
     [DataRow(new[] { "abc", "abc", "abc" }, new[] { "a", "b", "c" })]
     [DataRow(new[] { "daaccccd", "adacbdda", "abddbaba", "bacbcbcb", "bdaaaddc", "cdadacba", "bacbdcda", "bacdaacd" }, new[] { "a" })]
+    [DataRow(new[] { "abc" }, new[] { "a", "b", "c" })]
+    [DataRow(new[] { "aa", "a" }, new[] { "a" })]
+    [DataRow(new[] { "ab", "ba" }, new[] { "a", "b" })]
+    [DataRow(new[] { "zzz", "zz", "z" }, new[] { "z" })]
+    [DataRow(new[] { "hello", "world" }, new[] { "l", "o" })]
+    [DataRow(new[] { "aab", "aba", "baa" }, new[] { "a", "a", "b" })]
+    [DataRow(new[] { "xyz", "abc" }, new string[] { })]
+    [DataRow(new[] { "daa", "ca", "aadd", "ba" }, new[] { "a" })]
+    [DataRow(new[] { "a", "adab", "b", "dbacb", "bc" }, new string[] { })]
+    [DataRow(new[] { "ab", "dcddccbb" }, new[] { "b" })]
+    [DataRow(new[] { "cd", "dcaadb", "bddaac" }, new[] { "c", "d" })]
+    [DataRow(new[] { "ddaacd", "ac", "cdcadcba", "abcbbddd" }, new[] { "a", "c" })]
     public void CommonChars_WithGivenWordsArray_ReturnsCommonCharacters(string[] words, string[] expectedResult)
     {
         // Arrange

@@ -47,5 +47,31 @@ public abstract class PathSumTestsBase<T> where T : IPathSum, new()
         yield return [new int?[] { 1, 2, null, 3, null, 4, null, 5 }, 6, false];
 
         yield return [new int?[] { 1, -2, -3, 1, 3, -2, null, -1 }, -1, true];
+
+        yield return [new int?[] { 0, 6, -9, 9, -9, 1, -6, null, null, -2, -4 }, -8, true];
+
+        yield return [new int?[] { 2, 0, 0, null, -5, -5, null, null, -8, null, -1, -6, -4, null, null, null, null, -3, -3 }, 14, false];
+
+        yield return [new int?[] { 4, 7, -5, null, 3, -4, null, null, -7, null, null, -7, 0 }, 0, true];
+
+        yield return [new int?[] { -4 }, -15, false];
+
+        yield return [new int?[] { 5, -9, -4, -4, null, null, 6 }, 7, true];
+
+        yield return [new int?[] { 4, -9, -6, 9, null, null, null, null, -9 }, 18, false];
+
+        yield return [new int?[] { 5, 4, -1, -9, -9, -6, null, null, null, 3, null, -1, 3, null, null, -1, -9, 9 }, 3, true];
+
+        yield return [new int?[] { 3, null, -5, 7, 9, 6, -9, null, 7, null, 0, null, null, -3, 8 }, 16, false];
+
+        yield return [new int?[] { 7, -1, 6, 3, 0, 1, null, null, null, -4, 8, null, -5, 3, null, -5, null, null, null, -7 }, 9, true];
+
+        yield return [new int?[] { 6, 8 }, 17, false];
+
+        yield return [new int?[] { 1, 2, -8, null, 6, null, 3, 4, 0, null, null, null, null, null, -7, null, 1 }, 3, true];
+
+        yield return [new int?[] { 5, -4, null, -4, null, 4 }, -2, false];
+
+        yield return [new int?[] { -3, 6, -8, 2, null, null, null, -8, 6, null, null, null, -3 }, -3, true];
     }
 }

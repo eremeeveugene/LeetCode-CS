@@ -66,5 +66,27 @@ public abstract class SpecialPositionsInBinaryMatrixTestsBase<T> where T : ISpec
         yield return [new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 1 } }, 0];
 
         yield return [new[] { new[] { 0, 0, 0 }, new[] { 0, 0, 0 }, new[] { 0, 0, 0 } }, 0];
+        yield return [new[] { new[] { 0, 1, 0, 0 } }, 1];
+        yield return [new[] { new[] { 1, 0, 1 } }, 0];
+        yield return [new[] { new[] { 0 }, new[] { 1 }, new[] { 1 } }, 0];
+        yield return [BuildMatrix(100, true), 100];
+        yield return [BuildMatrix(100, false), 0];
+    }
+
+    private static int[][] BuildMatrix(int size, bool isIdentity)
+    {
+        var mat = new int[size][];
+
+        for (var i = 0; i < size; i++)
+        {
+            mat[i] = new int[size];
+
+            for (var j = 0; j < size; j++)
+            {
+                mat[i][j] = isIdentity ? (i == j ? 1 : 0) : 1;
+            }
+        }
+
+        return mat;
     }
 }

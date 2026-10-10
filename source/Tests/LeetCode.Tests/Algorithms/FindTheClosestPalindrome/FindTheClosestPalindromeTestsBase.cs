@@ -29,6 +29,16 @@ public abstract class FindTheClosestPalindromeTestsBase<T> where T : IFindTheClo
     [DataRow("1000000000000000", "999999999999999")]
     [DataRow("807045053224792883", "807045053350540708")]
     [DataRow("999999999999999999", "1000000000000000001")]
+    [DataRow("2", "1")]
+    [DataRow("9", "8")]
+    [DataRow("10", "9")]
+    [DataRow("12", "11")]
+    [DataRow("88", "77")]
+    [DataRow("99", "101")]
+    [DataRow("100", "99")]
+    [DataRow("999", "1001")]
+    [DataRow("1000", "999")]
+    [DataRow("1001", "999")]
     public void NearestPalindromic_WithVariousNumbers_ReturnsClosestPalindrome(string n, string expectedResult)
     {
         // Arrange

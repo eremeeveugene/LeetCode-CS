@@ -34,6 +34,9 @@ public abstract class FindMinimumInRotatedSortedArrayTestsBase<T> where T : IFin
     [DataRow(new[] { 3, 4, 5, 6, -2, -1, 0, 1, 2 }, -2)]
     [DataRow(new[] { 4998, 4999, 5000, -5000, -4999 }, -5000)]
     [DataRow(new[] { -4999, 0, 4999, 5000, -5000 }, -5000)]
+    [DataRow(new[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 1 }, 1)]
+    [DataRow(new[] { 10, 20, 30, 40, 50, 60, 5 }, 5)]
+    [DataRow(new[] { -3, -2, -1, -10, -9 }, -10)]
     public void FindMin_WithRotatedSortedArray_ReturnsMinimumElement(int[] nums, int expectedResult)
     {
         // Arrange

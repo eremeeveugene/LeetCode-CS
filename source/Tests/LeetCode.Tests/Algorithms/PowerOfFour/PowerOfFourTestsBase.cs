@@ -26,6 +26,22 @@ public abstract class PowerOfFourTestsBase<T> where T : IPowerOfFour, new()
     [DataRow(16, true)]
     [DataRow(32, false)]
     [DataRow(64, true)]
+    [DataRow(2, false)]
+    [DataRow(6, false)]
+    [DataRow(12, false)]
+    [DataRow(15, false)]
+    [DataRow(17, false)]
+    [DataRow(256, true)]
+    [DataRow(1024, true)]
+    [DataRow(4096, true)]
+    [DataRow(65536, true)]
+    [DataRow(1048576, true)]
+    [DataRow(1073741824, true)]
+    [DataRow(536870912, false)]
+    [DataRow(2147483647, false)]
+    [DataRow(int.MinValue, false)]
+    [DataRow(-4, false)]
+    [DataRow(-16, false)]
     public void IsPowerOfFour_WithIntegerInput_ReturnsTrueIfInputIsPowerOfFour(int n, bool expectedResult)
     {
         // Arrange

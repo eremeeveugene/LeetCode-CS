@@ -105,5 +105,17 @@ public abstract class AddOneRowToTreeTestsBase<T> where T : IAddOneRowToTree, ne
         yield return [new int?[] { 5, 3, null, 4, null, 8, null, 9 }, 100, 5, new int?[] { 5, 3, null, 4, null, 8, null, 100, 100, 9 }];
 
         yield return [new int?[] { 5, 3, null, 4, null, 8, null, 9 }, 100, 6, new int?[] { 5, 3, null, 4, null, 8, null, 9, null, 100, 100 }];
+
+        yield return [new int?[] { 1 }, 5, 1, new int?[] { 5, 1 }];
+
+        yield return [new int?[] { 1 }, 5, 2, new int?[] { 1, 5, 5 }];
+
+        yield return [new int?[] { 1, 2 }, 7, 2, new int?[] { 1, 7, 7, 2 }];
+
+        yield return [new int?[] { 1, 2, 3 }, 0, 2, new int?[] { 1, 0, 0, 2, null, null, 3 }];
+
+        yield return [new int?[] { 1, 2, 3 }, 0, 3, new int?[] { 1, 2, 3, 0, 0, 0, 0 }];
+
+        yield return [new int?[] { 1, null, 2 }, 9, 2, new int?[] { 1, 9, 9, null, null, null, 2 }];
     }
 }

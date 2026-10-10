@@ -148,5 +148,7 @@ public abstract class MergeTwo2DArraysBySummingValuesTestsBase<T> where T : IMer
             new[] { new[] { 1, 1 }, new[] { 2, 1 }, new[] { 3, 1 } },
             new[] { new[] { 1, 2 }, new[] { 2, 2 }, new[] { 3, 2 } }
         ];
+        yield return [new[] { new[] { 1, 1000 }, new[] { 1000, 1000 } }, new[] { new[] { 1, 1000 }, new[] { 500, 1 }, new[] { 1000, 999 } }, new[] { new[] { 1, 2000 }, new[] { 500, 1 }, new[] { 1000, 1999 } }];
+        yield return [new[] { new[] { 7, 3 }, new[] { 8, 4 }, new[] { 9, 5 }, new[] { 10, 6 } }, new[] { new[] { 1, 1 }, new[] { 7, 2 } }, new[] { new[] { 1, 1 }, new[] { 7, 5 }, new[] { 8, 4 }, new[] { 9, 5 }, new[] { 10, 6 } }];
     }
 }
