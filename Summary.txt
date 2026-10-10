@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/10/2026 - 9:56:55 AM
-  Coverage date: 10/10/2026 - 9:56:27 AM - 10/10/2026 - 9:56:49 AM
+  Generated on: 10/10/2026 - 11:19:18 AM
+  Coverage date: 10/10/2026 - 11:18:43 AM - 10/10/2026 - 11:19:09 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1423
-  Files: 1423
+  Classes: 1425
+  Files: 1425
   Line coverage: 100%
-  Covered lines: 33251
+  Covered lines: 33324
   Uncovered lines: 0
-  Coverable lines: 33251
-  Total lines: 81477
-  Branch coverage: 100% (11832 of 11832)
-  Covered branches: 11832
-  Total branches: 11832
-  Method coverage: 100% (2222 of 2222)
-  Full method coverage: 100% (2222 of 2222)
-  Covered methods: 2222
-  Fully covered methods: 2222
-  Total methods: 2222
+  Coverable lines: 33324
+  Total lines: 81645
+  Branch coverage: 100% (11852 of 11852)
+  Covered branches: 11852
+  Total branches: 11852
+  Method coverage: 100% (2226 of 2226)
+  Full method coverage: 100% (2226 of 2226)
+  Covered methods: 2226
+  Fully covered methods: 2226
+  Total methods: 2226
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -658,6 +658,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LexicographicallyMinimumStringAfterRemovingStars.LexicographicallyMinimumStringAfterRemovingStarsTwoArrays                         100%
   LeetCode.Algorithms.LexicographicallySmallestEquivalentString.LexicographicallySmallestEquivalentStringAdjacencyMatrix                                 100%
   LeetCode.Algorithms.LexicographicallySmallestEquivalentString.LexicographicallySmallestEquivalentStringAdjacencyUnionFind                              100%
+  LeetCode.Algorithms.LexicographicallySmallestStringAfterApplyingOperations.LexicographicallySmallestStringAfterApplyingOperationsEnumeration           100%
   LeetCode.Algorithms.LexicographicalNumbers.LexicographicalNumbersIterative                                                                             100%
   LeetCode.Algorithms.LexicographicalNumbers.LexicographicalNumbersRecursive                                                                             100%
   LeetCode.Algorithms.LFUCache.LFUCacheBase                                                                                                              100%
@@ -921,6 +922,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumStringLengthAfterRemovingSubstrings.MinimumStringLengthAfterRemovingSubstringsStack                                         100%
   LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits.MinimumSumOfFourDigitNumberAfterSplittingDigitsChars                               100%
   LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits.MinimumSumOfFourDigitNumberAfterSplittingDigitsNumbers                             100%
+  LeetCode.Algorithms.MinimumSumOfSquaredDifference.MinimumSumOfSquaredDifferenceCounting                                                                100%
   LeetCode.Algorithms.MinimumSwapsToGroupAll1Together2.MinimumSwapsToGroupAll1Together2SlidingWindow                                                     100%
   LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceBase                                                                                    100%
   LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceBucketSort                                                                              100%
