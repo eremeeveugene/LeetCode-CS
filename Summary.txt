@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/9/2026 - 3:52:55 PM
-  Coverage date: 10/9/2026 - 3:52:26 PM - 10/9/2026 - 3:52:47 PM
+  Generated on: 10/10/2026 - 9:56:55 AM
+  Coverage date: 10/10/2026 - 9:56:27 AM - 10/10/2026 - 9:56:49 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1422
-  Files: 1422
+  Classes: 1423
+  Files: 1423
   Line coverage: 100%
-  Covered lines: 33222
+  Covered lines: 33251
   Uncovered lines: 0
-  Coverable lines: 33222
-  Total lines: 81406
-  Branch coverage: 100% (11826 of 11826)
-  Covered branches: 11826
-  Total branches: 11826
-  Method coverage: 100% (2220 of 2220)
-  Full method coverage: 100% (2220 of 2220)
-  Covered methods: 2220
-  Fully covered methods: 2220
-  Total methods: 2220
+  Coverable lines: 33251
+  Total lines: 81477
+  Branch coverage: 100% (11832 of 11832)
+  Covered branches: 11832
+  Total branches: 11832
+  Method coverage: 100% (2222 of 2222)
+  Full method coverage: 100% (2222 of 2222)
+  Covered methods: 2222
+  Fully covered methods: 2222
+  Total methods: 2222
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -982,6 +982,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberOfGoodPairs.NumberOfGoodPairsIterative                                                                                       100%
   LeetCode.Algorithms.NumberOfIntersectingIntervalPairs1.NumberOfIntersectingIntervalPairs1BruteForce                                                    100%
   LeetCode.Algorithms.NumberOfIntersectingIntervalPairs1.NumberOfIntersectingIntervalPairs1LineSweep                                                     100%
+  LeetCode.Algorithms.NumberOfIntersectingIntervalPairs2.NumberOfIntersectingIntervalPairs2BinarySearch                                                  100%
   LeetCode.Algorithms.NumberOfIslands.NumberOfIslandsIterative                                                                                           100%
   LeetCode.Algorithms.NumberOfLaserBeamsInABank.NumberOfLaserBeamsInABankGreedy                                                                          100%
   LeetCode.Algorithms.NumberOfOneBits.NumberOfOneBitsBitwise                                                                                             100%
