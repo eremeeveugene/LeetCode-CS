@@ -508,6 +508,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [1609. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/description/)
 - [1614. Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/description/)
 - [1624. Largest Substring Between Two Equal Characters](https://leetcode.com/problems/largest-substring-between-two-equal-characters/description/)
+- [1625. Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/description/)
 - [1630. Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/description/)
 - [1636. Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/description/)
 - [1637. Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description/)
