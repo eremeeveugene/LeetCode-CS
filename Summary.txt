@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/10/2026 - 11:19:18 AM
-  Coverage date: 10/10/2026 - 11:18:43 AM - 10/10/2026 - 11:19:09 AM
+  Generated on: 10/12/2026 - 5:12:20 PM
+  Coverage date: 10/12/2026 - 5:11:28 PM - 10/12/2026 - 5:12:02 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1425
-  Files: 1425
+  Classes: 1426
+  Files: 1426
   Line coverage: 100%
-  Covered lines: 33324
+  Covered lines: 33337
   Uncovered lines: 0
-  Coverable lines: 33324
-  Total lines: 81645
-  Branch coverage: 100% (11852 of 11852)
-  Covered branches: 11852
-  Total branches: 11852
-  Method coverage: 100% (2226 of 2226)
-  Full method coverage: 100% (2226 of 2226)
-  Covered methods: 2226
-  Fully covered methods: 2226
-  Total methods: 2226
+  Coverable lines: 33337
+  Total lines: 81687
+  Branch coverage: 100% (11856 of 11856)
+  Covered branches: 11856
+  Total branches: 11856
+  Method coverage: 100% (2227 of 2227)
+  Full method coverage: 100% (2227 of 2227)
+  Covered methods: 2227
+  Fully covered methods: 2227
+  Total methods: 2227
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1321,6 +1321,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.SumOfSquareNumbers.SumOfSquareNumbersBinarySearch                                                                                  100%
   LeetCode.Algorithms.SumOfSquareNumbers.SumOfSquareNumbersBruteForce                                                                                    100%
   LeetCode.Algorithms.SumOfSquareNumbers.SumOfSquareNumbersTwoPointers                                                                                   100%
+  LeetCode.Algorithms.SumOfSquaresOfSpecialElements.SumOfSquaresOfSpecialElementsIterative                                                               100%
   LeetCode.Algorithms.SumOfUniqueElements.SumOfUniqueElementsFrequencyArray                                                                              100%
   LeetCode.Algorithms.SumOfUniqueElements.SumOfUniqueElementsFrequencyDictionary                                                                         100%
   LeetCode.Algorithms.SumOfVariableLengthSubarrays.SumOfVariableLengthSubarraysBruteForce                                                                100%
