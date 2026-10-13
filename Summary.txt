@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/12/2026 - 5:12:20 PM
-  Coverage date: 10/12/2026 - 5:11:28 PM - 10/12/2026 - 5:12:02 PM
+  Generated on: 10/13/2026 - 2:10:49 PM
+  Coverage date: 10/13/2026 - 2:10:14 PM - 10/13/2026 - 2:10:40 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1426
-  Files: 1426
+  Classes: 1427
+  Files: 1427
   Line coverage: 100%
-  Covered lines: 33337
+  Covered lines: 33363
   Uncovered lines: 0
-  Coverable lines: 33337
-  Total lines: 81687
-  Branch coverage: 100% (11856 of 11856)
-  Covered branches: 11856
-  Total branches: 11856
-  Method coverage: 100% (2227 of 2227)
-  Full method coverage: 100% (2227 of 2227)
-  Covered methods: 2227
-  Fully covered methods: 2227
-  Total methods: 2227
+  Coverable lines: 33363
+  Total lines: 81744
+  Branch coverage: 100% (11864 of 11864)
+  Covered branches: 11864
+  Total branches: 11864
+  Method coverage: 100% (2228 of 2228)
+  Full method coverage: 100% (2228 of 2228)
+  Covered methods: 2228
+  Fully covered methods: 2228
+  Total methods: 2228
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -867,6 +867,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumIncrementToMakeArrayUnique.MinimumIncrementToMakeArrayUniqueCounting                                                        100%
   LeetCode.Algorithms.MinimumIncrementToMakeArrayUnique.MinimumIncrementToMakeArrayUniqueSorting                                                         100%
   LeetCode.Algorithms.MinimumIndexOfValidSplit.MinimumIndexOfValidSplitDictionary                                                                        100%
+  LeetCode.Algorithms.MinimumInsertionsToBalanceAParenthesesString.MinimumInsertionsToBalanceAParenthesesStringGreedy                                    100%
   LeetCode.Algorithms.MinimumLengthOfStringAfterDeletingSimilarEnds.MinimumLengthOfStringAfterDeletingSimilarEndsTwoPointers                             100%
   LeetCode.Algorithms.MinimumLengthOfStringAfterOperations.MinimumLengthOfStringAfterOperationsFrequencyArray                                            100%
   LeetCode.Algorithms.MinimumLengthOfStringAfterOperations.MinimumLengthOfStringAfterOperationsFrequencyDictionary                                       100%
