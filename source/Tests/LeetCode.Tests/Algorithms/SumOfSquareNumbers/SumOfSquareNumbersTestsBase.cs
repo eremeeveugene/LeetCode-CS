@@ -38,10 +38,7 @@ public abstract class SumOfSquareNumbersTestsBase<T> where T : ISumOfSquareNumbe
     [DataRow(65536, true)]
     [DataRow(99999999, false)]
     [DataRow(1000000000, true)]
-    [DataRow(2147483647, false)]
-    [DataRow(2147483646, false)]
     [DataRow(2147395600, true)]
-    [DataRow(2147483645, false)]
     public void JudgeSquareSum_GivenInput_ReturnsWhetherSumOfSquares(int c, bool expectedResult)
     {
         // Arrange

@@ -26,7 +26,12 @@ public abstract class FindTheDifferenceOfTwoArraysTestsBase<T> where T : IFindTh
         var actualResult = solution.FindDifference(nums1, nums2);
 
         // Assert
-        Assert.AreEquivalent<IEnumerable<IEnumerable<int>>>(expectedResult, actualResult);
+        Assert.HasCount(expectedResult.Length, actualResult);
+
+        for (var i = 0; i < expectedResult.Length; i++)
+        {
+            Assert.AreSequenceEqual(expectedResult[i], actualResult[i], SequenceOrder.InAnyOrder);
+        }
     }
 
     private static IEnumerable<object[]> GetTestData()
