@@ -53,8 +53,8 @@ public static class TreeNodeAssert
             Assert.Fail("One of the tree collections is null while the other is not.");
         }
 
-        var expectedList = expectedTrees.ToList();
-        var actualList = actualTrees.ToList();
+        var expectedList = new List<TreeNode?>(expectedTrees);
+        var actualList = new List<TreeNode?>(actualTrees);
 
         Assert.HasCount(expectedList.Count, actualList, "Tree collections should have the same number of elements.");
 
@@ -76,15 +76,17 @@ public static class TreeNodeAssert
             Assert.Fail("One of the tree collections is null while the other is not.");
         }
 
-        var expectedList = expectedTrees.ToList();
-        var actualList = actualTrees.ToList();
+        var expectedList = new List<TreeNode?>(expectedTrees);
+        var actualList = new List<TreeNode?>(actualTrees);
 
         Assert.HasCount(expectedList.Count, actualList, "Tree collections should have the same number of elements.");
 
         var remaining = new List<TreeNode?>(actualList);
 
-        foreach (var expectedTree in expectedList)
+        for (var e = 0; e < expectedList.Count; e++)
         {
+            var expectedTree = expectedList[e];
+
             var matchFound = false;
 
             for (var i = 0; i < remaining.Count; i++)

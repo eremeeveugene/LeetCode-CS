@@ -27,8 +27,10 @@ public sealed class CountDaysWithoutMeetingsSorting : ICountDaysWithoutMeetings
 
         var previous = 1;
 
-        foreach (var meeting in meetings)
+        for (var i = 0; i < meetings.Length; i++)
         {
+            var meeting = meetings[i];
+
             var start = meeting[0];
             var end = meeting[1];
 

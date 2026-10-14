@@ -21,7 +21,13 @@ public sealed class MakeSumDivisibleByPPrefixSum : IMakeSumDivisibleByP
     /// </remarks>
     public int MinSubarray(int[] nums, int p)
     {
-        var sum = nums.Aggregate<int, long>(0, (current, num) => current + num);
+        long sum = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            sum += nums[i];
+        }
+
 
         var target = (int)(sum % p);
 

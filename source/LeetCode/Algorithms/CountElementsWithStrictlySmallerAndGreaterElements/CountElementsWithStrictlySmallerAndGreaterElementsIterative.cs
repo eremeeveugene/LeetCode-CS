@@ -29,12 +29,26 @@ public sealed class CountElementsWithStrictlySmallerAndGreaterElementsIterative 
         var min = int.MaxValue;
         var max = int.MinValue;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             min = Math.Min(min, num);
             max = Math.Max(max, num);
         }
 
-        return nums.Count(num => num > min && num < max);
+        var count = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            if (num > min && num < max)
+            {
+                count++;
+            }
+        }
+
+        return count;
     }
 }

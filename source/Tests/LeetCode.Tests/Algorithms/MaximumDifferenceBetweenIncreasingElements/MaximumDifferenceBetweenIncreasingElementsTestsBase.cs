@@ -124,6 +124,23 @@ public abstract class MaximumDifferenceBetweenIncreasingElementsTestsBase<T> whe
             15
         },
         -1)]
+    [DataRow(new[] { 1, 2 }, 1)]
+    [DataRow(new[] { 2, 1 }, -1)]
+    [DataRow(new[] { 5, 5 }, -1)]
+    [DataRow(new[] { 1, 1000000000 }, 999999999)]
+    [DataRow(new[] { 1000000000, 1 }, -1)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, 4)]
+    [DataRow(new[] { 5, 4, 3, 2, 1 }, -1)]
+    [DataRow(new[] { 3, 3, 3, 3 }, -1)]
+    [DataRow(new[] { 10, 1, 2, 3, 100, 1 }, 99)]
+    [DataRow(new[] { 8, 2, 4, 1, 9, 3 }, 8)]
+    [DataRow(new[] { 1, 5, 1, 5, 1, 5 }, 4)]
+    [DataRow(new[] { 100, 90, 80, 85 }, 5)]
+    [DataRow(new[] { 4, 9, 2, 7, 1, 8 }, 7)]
+    [DataRow(new[] { 1000000000, 999999999, 1000000000 }, 1)]
+    [DataRow(new[] { 7, 1, 5, 3, 6, 4 }, 5)]
+    [DataRow(new[] { 2, 2, 1, 1, 3, 3 }, 2)]
+    [DataRow(new[] { 6, 1, 6, 1, 7, 2, 8 }, 7)]
     public void MaximumDifference_WithValidIncreasingPairs_ReturnsMaximumDifference(int[] nums, int expectedResult)
     {
         // Arrange

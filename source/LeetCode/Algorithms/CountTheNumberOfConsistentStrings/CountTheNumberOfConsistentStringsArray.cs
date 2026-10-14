@@ -26,8 +26,10 @@ public sealed class CountTheNumberOfConsistentStringsArray : ICountTheNumberOfCo
 
         var allowedArray = new bool['z' - 'a' + 1];
 
-        foreach (var allowedChar in allowed)
+        for (var i = 0; i < allowed.Length; i++)
         {
+            var allowedChar = allowed[i];
+
             allowedArray[allowedChar - 'a'] = true;
         }
 
@@ -35,9 +37,16 @@ public sealed class CountTheNumberOfConsistentStringsArray : ICountTheNumberOfCo
         {
             var word = words[i];
 
-            if (word.Any(wordChar => !allowedArray[wordChar - 'a']))
+            for (var j = 0; j < word.Length; j++)
             {
+                if (allowedArray[word[j] - 'a'])
+                {
+                    continue;
+                }
+
                 count--;
+
+                break;
             }
         }
 

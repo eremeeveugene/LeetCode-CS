@@ -23,8 +23,10 @@ public sealed class CheckIfNAndItsDoubleExistDictionary : ICheckIfNAndItsDoubleE
     {
         var dictionary = new Dictionary<int, int>();
 
-        foreach (var item in arr)
+        for (var i = 0; i < arr.Length; i++)
         {
+            var item = arr[i];
+
             if (dictionary.TryGetValue(item, out var value))
             {
                 dictionary[item] = value + 1;
@@ -35,8 +37,10 @@ public sealed class CheckIfNAndItsDoubleExistDictionary : ICheckIfNAndItsDoubleE
             }
         }
 
-        foreach (var item in arr)
+        for (var i = 0; i < arr.Length; i++)
         {
+            var item = arr[i];
+
             if (item != 0)
             {
                 if (dictionary.ContainsKey(item * 2))

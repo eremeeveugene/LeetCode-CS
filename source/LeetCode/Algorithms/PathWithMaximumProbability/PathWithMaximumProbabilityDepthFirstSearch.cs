@@ -50,8 +50,12 @@ public sealed class PathWithMaximumProbabilityDepthFirstSearch : PathWithMaximum
 
         double maxProbability = 0;
 
-        foreach (var edge in edgesDictionary[currentNode])
+        var edges = edgesDictionary[currentNode];
+
+        for (var i = 0; i < edges.Count; i++)
         {
+            var edge = edges[i];
+
             if (!visitedEdges.Add(edge.Node))
             {
                 continue;

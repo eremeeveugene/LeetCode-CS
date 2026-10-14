@@ -23,8 +23,10 @@ public sealed class RemoveAllOccurrencesOfSubstringStack : IRemoveAllOccurrences
     {
         var stack = new Stack<char>();
 
-        foreach (var c in s)
+        for (var j = 0; j < s.Length; j++)
         {
+            var c = s[j];
+
             stack.Push(c);
 
             if (stack.Count < part.Length)

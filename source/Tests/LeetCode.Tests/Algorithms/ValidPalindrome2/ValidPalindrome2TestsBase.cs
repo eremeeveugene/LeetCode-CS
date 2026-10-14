@@ -20,6 +20,22 @@ public abstract class ValidPalindrome2TestsBase<T> where T : IValidPalindrome2, 
     [DataRow("abca", true)]
     [DataRow("abc", false)]
     [DataRow("aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga", true)]
+    [DataRow("a", true)]
+    [DataRow("aa", true)]
+    [DataRow("ab", true)]
+    [DataRow("aab", true)]
+    [DataRow("abb", true)]
+    [DataRow("abcba", true)]
+    [DataRow("abcca", true)]
+    [DataRow("abcdba", true)]
+    [DataRow("abcdefdba", false)]
+    [DataRow("acbca", true)]
+    [DataRow("abcdcbea", true)]
+    [DataRow("aabaa", true)]
+    [DataRow("abbbbbba", true)]
+    [DataRow("deeee", true)]
+    [DataRow("eeeed", true)]
+    [DataRow("ebcbbececabbacecbbcbe", true)]
     public void ValidPalindrome_WithStringInput_ReturnsBoolean(string s, bool expectedResult)
     {
         // Arrange

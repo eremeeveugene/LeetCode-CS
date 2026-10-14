@@ -21,12 +21,23 @@ public sealed class RowWithMaximumOnesBruteForce : IRowWithMaximumOnes
     /// </remarks>
     public int[] RowAndMaximumOnes(int[][] mat)
     {
+        var n = mat.Length;
+
         var index = 0;
         var maxCount = 0;
 
-        for (var i = 0; i < mat.Length; i++)
+        for (var i = 0; i < n; i++)
         {
-            var count = mat[i].Sum();
+            var row = mat[i];
+
+            var count = 0;
+
+            var m = row.Length;
+
+            for (var j = 0; j < m; j++)
+            {
+                count += row[j];
+            }
 
             if (count <= maxCount)
             {
@@ -34,6 +45,7 @@ public sealed class RowWithMaximumOnesBruteForce : IRowWithMaximumOnes
             }
 
             maxCount = count;
+
             index = i;
         }
 

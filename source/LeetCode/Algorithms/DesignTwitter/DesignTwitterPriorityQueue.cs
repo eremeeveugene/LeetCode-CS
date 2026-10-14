@@ -40,7 +40,7 @@ public sealed class DesignTwitterPriorityQueue : IDesignTwitter
     /// <remarks>
     ///     Time complexity - O(t * log(k)) where t is the number of recent tweets examined across the user and their
     ///     followees and k is the news feed size of 10
-    ///     Space complexity - O(k)
+    ///     Space complexity - O(f + k) where f is the number of followees
     /// </remarks>
     public IList<int> GetNewsFeed(int userId)
     {
@@ -50,8 +50,16 @@ public sealed class DesignTwitterPriorityQueue : IDesignTwitter
 
         if (_userToFolloweesDictionary.TryGetValue(userId, out var followees))
         {
-            foreach (var followeeId in followees)
+            var followeesCount = followees.Count;
+
+            var followeeIds = new int[followeesCount];
+
+            followees.CopyTo(followeeIds);
+
+            for (var i = 0; i < followeesCount; i++)
             {
+                var followeeId = followeeIds[i];
+
                 if (followeeId == userId)
                 {
                     continue;

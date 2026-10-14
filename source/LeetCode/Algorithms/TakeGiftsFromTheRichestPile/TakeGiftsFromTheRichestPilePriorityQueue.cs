@@ -23,8 +23,10 @@ public sealed class TakeGiftsFromTheRichestPilePriorityQueue : ITakeGiftsFromThe
     {
         var giftsPriorityQueue = new PriorityQueue<int, int>();
 
-        foreach (var gift in gifts)
+        for (var i = 0; i < gifts.Length; i++)
         {
+            var gift = gifts[i];
+
             giftsPriorityQueue.Enqueue(gift, -gift);
         }
 

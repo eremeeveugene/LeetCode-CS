@@ -26,6 +26,22 @@ public abstract class SentenceSimilarity3TestsBase<T> where T : ISentenceSimilar
     [DataRow("hello racecar", "hello racecar acecar", true)]
     [DataRow("hello", "hr uyello", false)]
     [DataRow("DN PD", "D", false)]
+    [DataRow("a", "a", true)]
+    [DataRow("a", "b", false)]
+    [DataRow("a b", "a", true)]
+    [DataRow("a b", "b", true)]
+    [DataRow("a b c", "a c", true)]
+    [DataRow("a b c", "b", false)]
+    [DataRow("a b c d e", "a e", true)]
+    [DataRow("a b c d e", "a c e", false)]
+    [DataRow("x y z", "x y z", true)]
+    [DataRow("x y z", "z y x", false)]
+    [DataRow("hello world", "world", true)]
+    [DataRow("one two three", "one three", true)]
+    [DataRow("a a b", "a b", true)]
+    [DataRow("a b a", "a a", true)]
+    [DataRow("Hello", "hello", false)]
+    [DataRow("a b", "c d", false)]
     public void AreSentencesSimilar_GivenTwoSentences_ReturnsWhetherTheyAreSimilar(string sentence1, string sentence2, bool expectedResult)
     {
         // Arrange

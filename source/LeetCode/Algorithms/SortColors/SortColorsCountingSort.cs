@@ -24,8 +24,10 @@ public sealed class SortColorsCountingSort : ISortColors
         var zeroesCount = 0;
         var onesCount = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             switch (num)
             {
                 case 0:

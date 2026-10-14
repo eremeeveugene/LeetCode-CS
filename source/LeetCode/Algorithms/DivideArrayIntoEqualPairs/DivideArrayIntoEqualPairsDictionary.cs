@@ -33,6 +33,18 @@ public sealed class DivideArrayIntoEqualPairsDictionary : IDivideArrayIntoEqualP
             }
         }
 
-        return frequencyDictionary.Values.All(frequency => frequency % 2 == 0);
+        var frequencies = new int[frequencyDictionary.Count];
+
+        frequencyDictionary.Values.CopyTo(frequencies, 0);
+
+        for (var i = 0; i < frequencies.Length; i++)
+        {
+            if (frequencies[i] % 2 != 0)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }

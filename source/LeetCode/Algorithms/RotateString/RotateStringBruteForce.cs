@@ -26,11 +26,27 @@ public sealed class RotateStringBruteForce : IRotateString
             return false;
         }
 
-        return s.Where((t, i) => CanRotateString(s, goal, i)).Any();
+        for (var i = 0; i < s.Length; i++)
+        {
+            if (CanRotateString(s, goal, i))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private static bool CanRotateString(string s, string goal, int i)
     {
-        return !goal.Where((t, j) => s[(i + j) % s.Length] != t).Any();
+        for (var j = 0; j < goal.Length; j++)
+        {
+            if (s[(i + j) % s.Length] != goal[j])
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }

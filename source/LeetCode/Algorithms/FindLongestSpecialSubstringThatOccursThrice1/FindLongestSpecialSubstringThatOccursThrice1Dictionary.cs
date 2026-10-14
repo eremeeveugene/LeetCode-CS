@@ -23,7 +23,7 @@ public sealed class FindLongestSpecialSubstringThatOccursThrice1Dictionary : IFi
     /// </remarks>
     public int MaximumLength(string s)
     {
-        var dictionary = new Dictionary<string, int>();
+        var substringToCountDictionary = new Dictionary<string, int>();
 
         for (var i = 0; i < s.Length; i++)
         {
@@ -35,13 +35,29 @@ public sealed class FindLongestSpecialSubstringThatOccursThrice1Dictionary : IFi
 
                 var key = substring.ToString();
 
-                if (!dictionary.TryAdd(key, 1))
+                if (!substringToCountDictionary.TryAdd(key, 1))
                 {
-                    dictionary[key]++;
+                    substringToCountDictionary[key]++;
                 }
             }
         }
 
-        return dictionary.Where(keyValuePair => keyValuePair.Value >= 3).Select(keyValuePair => keyValuePair.Key.Length).DefaultIfEmpty(-1).Max();
+        var substrings = new string[substringToCountDictionary.Count];
+
+        substringToCountDictionary.Keys.CopyTo(substrings, 0);
+
+        var result = -1;
+
+        for (var i = 0; i < substrings.Length; i++)
+        {
+            var substring = substrings[i];
+
+            if (substringToCountDictionary[substring] >= 3)
+            {
+                result = Math.Max(result, substring.Length);
+            }
+        }
+
+        return result;
     }
 }

@@ -20,6 +20,23 @@ public abstract class FindTheLongestSubstringContainingVowelsInEvenCountsTestsBa
     [DataRow("bcbcbc", 6)]
     [DataRow("leetcodeisgreat", 5)]
     [DataRow("eleetminicoworoep", 13)]
+    [DataRow("a", 0)]
+    [DataRow("b", 1)]
+    [DataRow("aa", 2)]
+    [DataRow("ab", 1)]
+    [DataRow("aeiou", 0)]
+    [DataRow("aeiouaeiou", 10)]
+    [DataRow("xyz", 3)]
+    [DataRow("abcabc", 6)]
+    [DataRow("aabbee", 6)]
+    [DataRow("uuuuu", 4)]
+    [DataRow("bbbab", 3)]
+    [DataRow("leetcode", 5)]
+    [DataRow("aeiouxyzuoiea", 13)]
+    [DataRow("baaab", 3)]
+    [DataRow("ioioioioi", 8)]
+    [DataRow("qwrtypsdfghjklzxcvbnm", 21)]
+    [DataRow("abacadaeaf", 7)]
     public void FindTheLongestSubstring_GivenString_ReturnsLongestSubstringLength(string s, int expectedResult)
     {
         // Arrange

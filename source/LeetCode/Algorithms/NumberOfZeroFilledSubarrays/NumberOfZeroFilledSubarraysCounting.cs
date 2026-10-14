@@ -24,8 +24,10 @@ public sealed class NumberOfZeroFilledSubarraysCounting : INumberOfZeroFilledSub
         long count = 0;
         var zeros = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (num == 0)
             {
                 zeros++;

@@ -14,7 +14,7 @@ namespace LeetCode.Algorithms.MinimumTimeToVisitCellInGrid;
 /// <inheritdoc />
 public sealed class MinimumTimeToVisitCellInGridPriorityQueue : IMinimumTimeToVisitCellInGrid
 {
-    private static readonly IReadOnlyCollection<(int Row, int Column)> Directions = [(-1, 0), (1, 0), (0, -1), (0, 1)];
+    private static readonly (int Row, int Column)[] Directions = [(-1, 0), (1, 0), (0, -1), (0, 1)];
 
     /// <inheritdoc />
     /// <remarks>
@@ -62,8 +62,10 @@ public sealed class MinimumTimeToVisitCellInGridPriorityQueue : IMinimumTimeToVi
         var rowsCount = grid.Length;
         var columnsCount = grid[0].Length;
 
-        foreach (var direction in Directions)
+        for (var i = 0; i < Directions.Length; i++)
         {
+            var direction = Directions[i];
+
             var targetRow = row + direction.Row;
             var targetColumn = column + direction.Column;
 

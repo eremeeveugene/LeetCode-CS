@@ -42,8 +42,14 @@ public sealed class MinimumDeletionsForKMostKDistinctCharactersFrequencyDictiona
 
         var priorityQueue = new PriorityQueue<int, int>();
 
-        foreach (var frequency in characterToFrequencyDictionary.Values)
+        var frequencies = new int[characterToFrequencyDictionary.Count];
+
+        characterToFrequencyDictionary.Values.CopyTo(frequencies, 0);
+
+        for (var i = 0; i < frequencies.Length; i++)
         {
+            var frequency = frequencies[i];
+
             priorityQueue.Enqueue(frequency, frequency);
         }
 

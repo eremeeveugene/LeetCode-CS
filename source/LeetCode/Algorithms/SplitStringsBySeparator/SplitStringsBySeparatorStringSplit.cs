@@ -23,8 +23,10 @@ public sealed class SplitStringsBySeparatorStringSplit : ISplitStringsBySeparato
     {
         var result = new List<string>();
 
-        foreach (var word in words)
+        for (var i = 0; i < words.Count; i++)
         {
+            var word = words[i];
+
             result.AddRange(word.Split(separator, StringSplitOptions.RemoveEmptyEntries));
         }
 

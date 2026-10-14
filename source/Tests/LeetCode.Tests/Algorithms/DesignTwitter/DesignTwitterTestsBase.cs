@@ -547,7 +547,11 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
         {
             var newsFeed = designTwitter.GetNewsFeed(_userId);
 
-            return new Result(newsFeed.ToArray());
+            var newsFeedArray = new int[newsFeed.Count];
+
+            newsFeed.CopyTo(newsFeedArray, 0);
+
+            return new Result(newsFeedArray);
         }
 
         public sealed class Result
@@ -563,7 +567,20 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
 
             public bool Equals(Result? other)
             {
-                return other is not null && _newsFeed.SequenceEqual(other._newsFeed);
+                if (other is null || _newsFeed.Length != other._newsFeed.Length)
+                {
+                    return false;
+                }
+
+                for (var i = 0; i < _newsFeed.Length; i++)
+                {
+                    if (_newsFeed[i] != other._newsFeed[i])
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
             }
 
             public override bool Equals(object? obj)
@@ -575,8 +592,10 @@ public abstract class DesignTwitterTestsBase<T> where T : IDesignTwitter, new()
             {
                 var hashCode = new HashCode();
 
-                foreach (var tweetId in _newsFeed)
+                for (var i = 0; i < _newsFeed.Length; i++)
                 {
+                    var tweetId = _newsFeed[i];
+
                     hashCode.Add(tweetId);
                 }
 

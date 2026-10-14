@@ -25,12 +25,16 @@ public sealed class WordSubsetsFrequencyFiltering : IWordSubsets
     {
         var maxCharFrequencies = new int[LettersCount];
 
-        foreach (var word in words2)
+        for (var i = 0; i < words2.Length; i++)
         {
+            var word = words2[i];
+
             var tempFrequency = new int[maxCharFrequencies.Length];
 
-            foreach (var c in word)
+            for (var j = 0; j < word.Length; j++)
             {
+                var c = word[j];
+
                 tempFrequency[c - 'a']++;
 
                 maxCharFrequencies[c - 'a'] = Math.Max(maxCharFrequencies[c - 'a'], tempFrequency[c - 'a']);
@@ -39,21 +43,37 @@ public sealed class WordSubsetsFrequencyFiltering : IWordSubsets
 
         var result = new List<string>();
 
-        foreach (var word in words1)
+        for (var i = 0; i < words1.Length; i++)
         {
+            var word = words1[i];
+
             var wordFrequency = new int[maxCharFrequencies.Length];
 
-            foreach (var c in word)
+            for (var j = 0; j < word.Length; j++)
             {
+                var c = word[j];
+
                 wordFrequency[c - 'a']++;
             }
 
-            if (wordFrequency.Where((t, i) => t < maxCharFrequencies[i]).Any())
+            var isUniversal = true;
+
+            for (var j = 0; j < wordFrequency.Length; j++)
             {
-                continue;
+                if (wordFrequency[j] >= maxCharFrequencies[j])
+                {
+                    continue;
+                }
+
+                isUniversal = false;
+
+                break;
             }
 
-            result.Add(word);
+            if (isUniversal)
+            {
+                result.Add(word);
+            }
         }
 
         return result;

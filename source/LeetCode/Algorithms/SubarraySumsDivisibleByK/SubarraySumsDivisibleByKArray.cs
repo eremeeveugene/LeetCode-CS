@@ -29,8 +29,10 @@ public sealed class SubarraySumsDivisibleByKArray : ISubarraySumsDivisibleByK
 
         modGroups[0] = 1;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             prefixMod = (prefixMod + (num % k) + k) % k;
 
             result += modGroups[prefixMod];

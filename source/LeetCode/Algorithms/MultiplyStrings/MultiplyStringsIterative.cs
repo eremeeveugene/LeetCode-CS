@@ -46,8 +46,10 @@ public sealed class MultiplyStringsIterative : IMultiplyStrings
 
         var resultStringBuilder = new StringBuilder();
 
-        foreach (var num in result)
+        for (var i = 0; i < result.Length; i++)
         {
+            var num = result[i];
+
             if (!(resultStringBuilder.Length == 0 && num == 0))
             {
                 resultStringBuilder.Append(num);

@@ -24,10 +24,19 @@ public sealed class RelativeSortArrayDictionarySorting : IRelativeSortArray
         var result = new List<int>();
         var remainingItems = new List<int>();
 
-        var countDictionary = arr2.ToDictionary(arr2Item => arr2Item, _ => 0);
+        var countDictionary = new Dictionary<int, int>();
 
-        foreach (var arr1Item in arr1)
+        for (var i = 0; i < arr2.Length; i++)
         {
+            var arr2Item = arr2[i];
+
+            countDictionary[arr2Item] = 0;
+        }
+
+        for (var i = 0; i < arr1.Length; i++)
+        {
+            var arr1Item = arr1[i];
+
             if (countDictionary.TryGetValue(arr1Item, out var value))
             {
                 countDictionary[arr1Item] = ++value;
@@ -38,9 +47,15 @@ public sealed class RelativeSortArrayDictionarySorting : IRelativeSortArray
             }
         }
 
-        foreach (var arr2Item in arr2)
+        for (var i = 0; i < arr2.Length; i++)
         {
-            result.AddRange(Enumerable.Repeat(arr2Item, countDictionary[arr2Item]));
+            var arr2Item = arr2[i];
+            var count = countDictionary[arr2Item];
+
+            for (var j = 0; j < count; j++)
+            {
+                result.Add(arr2Item);
+            }
         }
 
         remainingItems.Sort();

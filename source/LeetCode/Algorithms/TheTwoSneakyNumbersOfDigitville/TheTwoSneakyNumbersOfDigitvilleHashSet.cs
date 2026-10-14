@@ -26,8 +26,10 @@ public sealed class TheTwoSneakyNumbersOfDigitvilleHashSet : ITheTwoSneakyNumber
 
         var numbersHashSet = new HashSet<int>();
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (numbersHashSet.Add(num))
             {
                 continue;

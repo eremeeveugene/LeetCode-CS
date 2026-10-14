@@ -25,7 +25,15 @@ public sealed class CountingBitsIterative : ICountingBits
 
         for (var i = 0; i < n + 1; i++)
         {
-            result[i] = Convert.ToString(i, 2).Count(b => b.Equals('1'));
+            var binaryString = Convert.ToString(i, 2);
+
+            for (var j = 0; j < binaryString.Length; j++)
+            {
+                if (binaryString[j] == '1')
+                {
+                    result[i]++;
+                }
+            }
         }
 
         return result;

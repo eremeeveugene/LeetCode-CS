@@ -25,8 +25,10 @@ public sealed class MinimumOperationsToExceedThresholdValue2PriorityQueue : IMin
 
         var priorityQueue = new PriorityQueue<long, long>();
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             priorityQueue.Enqueue(num, num);
         }
 

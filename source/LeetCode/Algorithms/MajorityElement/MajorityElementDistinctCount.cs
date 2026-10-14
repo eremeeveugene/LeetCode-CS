@@ -24,9 +24,29 @@ public sealed class MajorityElementDistinctCount : IMajorityElement
         var result = 0;
         var resultFrequency = 0;
 
-        foreach (var distinctNum in nums.Distinct())
+        var distinctNumsHashSet = new HashSet<int>();
+
+        for (var i = 0; i < nums.Length; i++)
         {
-            var frequency = nums.Count(num => num.Equals(distinctNum));
+            distinctNumsHashSet.Add(nums[i]);
+        }
+
+        var distinctNums = new int[distinctNumsHashSet.Count];
+
+        distinctNumsHashSet.CopyTo(distinctNums);
+
+        for (var i = 0; i < distinctNums.Length; i++)
+        {
+            var distinctNum = distinctNums[i];
+            var frequency = 0;
+
+            for (var j = 0; j < nums.Length; j++)
+            {
+                if (nums[j] == distinctNum)
+                {
+                    frequency++;
+                }
+            }
 
             if (frequency <= resultFrequency)
             {

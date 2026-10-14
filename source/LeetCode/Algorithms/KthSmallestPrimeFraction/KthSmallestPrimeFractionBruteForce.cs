@@ -31,8 +31,8 @@ public sealed class KthSmallestPrimeFractionBruteForce : IKthSmallestPrimeFracti
             }
         }
 
-        var orderedFractions = fractions.OrderBy(f => f.fraction).ToArray();
+        fractions.Sort((a, b) => a.fraction.CompareTo(b.fraction));
 
-        return [orderedFractions[k - 1].i, orderedFractions[k - 1].j];
+        return [fractions[k - 1].i, fractions[k - 1].j];
     }
 }

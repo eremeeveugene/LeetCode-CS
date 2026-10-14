@@ -21,6 +21,21 @@ public abstract class ValidPalindromeTestsBase<T> where T : IValidPalindrome, ne
     [DataRow(" ", true)]
     [DataRow(".,", true)]
     [DataRow("0P", false)]
+    [DataRow("a", true)]
+    [DataRow("ab", false)]
+    [DataRow("aa", true)]
+    [DataRow("Aa", true)]
+    [DataRow("ab_a", true)]
+    [DataRow("0P0", true)]
+    [DataRow("1b1", true)]
+    [DataRow("12321", true)]
+    [DataRow("12345", false)]
+    [DataRow("Was it a car or a cat I saw?", true)]
+    [DataRow("No 'x' in Nixon", true)]
+    [DataRow("abba", true)]
+    [DataRow("abcba", true)]
+    [DataRow("ab@#ba", true)]
+    [DataRow(",.;:!", true)]
     public void IsPalindrome_WithStringInput_ReturnsBoolean(string s, bool expectedResult)
     {
         // Arrange

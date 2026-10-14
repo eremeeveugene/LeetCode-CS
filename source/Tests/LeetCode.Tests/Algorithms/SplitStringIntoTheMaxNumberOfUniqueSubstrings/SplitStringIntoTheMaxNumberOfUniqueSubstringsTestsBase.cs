@@ -19,6 +19,23 @@ public abstract class SplitStringIntoTheMaxNumberOfUniqueSubstringsTestsBase<T> 
     [DataRow("ababccc", 5)]
     [DataRow("aba", 2)]
     [DataRow("aa", 1)]
+    [DataRow("a", 1)]
+    [DataRow("ab", 2)]
+    [DataRow("abc", 3)]
+    [DataRow("aaa", 2)]
+    [DataRow("abab", 3)]
+    [DataRow("abcabc", 4)]
+    [DataRow("aaaaaaaaaaaaaaaa", 5)]
+    [DataRow("abcdefghijklmnop", 16)]
+    [DataRow("zzzzzzzzyyyyyyyy", 7)]
+    [DataRow("abacabadabacaba", 8)]
+    [DataRow("wwwzfvedwfvhsww", 11)]
+    [DataRow("bbbbbbbbbbbbbbb", 5)]
+    [DataRow("aabbaabbaabbaabb", 8)]
+    [DataRow("qwertyuiopasdfgh", 16)]
+    [DataRow("ababababababab", 6)]
+    [DataRow("ababc", 4)]
+    [DataRow("abcabcabcabcabca", 8)]
     public void MaxUniqueSplit_GivenString_ReturnsMaxNumberOfUniqueSplits(string s, int expectedResult)
     {
         // Arrange

@@ -69,9 +69,18 @@ public abstract class FindXValueOfArray1TestsBase<T> where T : IFindXValueOfArra
         yield return [new[] { 1000000000, 999999999, 999999998, 999999997 }, 3, new long[] { 6, 2, 2 }];
         yield return [new[] { 1000000000, 999999999, 999999998, 999999997 }, 4, new long[] { 4, 1, 4, 1 }];
         yield return [new[] { 1000000000, 999999999, 999999998, 999999997 }, 5, new long[] { 4, 1, 2, 1, 2 }];
-        yield return [Enumerable.Repeat(1, 100000).ToArray(), 1, new[] { 5000050000L }];
-        yield return [Enumerable.Repeat(1, 100000).ToArray(), 5, new[] { 0, 5000050000L, 0, 0, 0 }];
-        yield return [Enumerable.Repeat(1000000000, 100000).ToArray(), 5, new[] { 5000050000L, 0, 0, 0, 0 }];
-        yield return [Enumerable.Repeat(4, 100000).ToArray(), 5, new[] { 0, 2500000000L, 0, 0, 2500050000L }];
+        yield return [CreateFilledArray(1, 100000), 1, new[] { 5000050000L }];
+        yield return [CreateFilledArray(1, 100000), 5, new[] { 0, 5000050000L, 0, 0, 0 }];
+        yield return [CreateFilledArray(1000000000, 100000), 5, new[] { 5000050000L, 0, 0, 0, 0 }];
+        yield return [CreateFilledArray(4, 100000), 5, new[] { 0, 2500000000L, 0, 0, 2500050000L }];
+    }
+
+    private static int[] CreateFilledArray(int value, int length)
+    {
+        var result = new int[length];
+
+        Array.Fill(result, value);
+
+        return result;
     }
 }

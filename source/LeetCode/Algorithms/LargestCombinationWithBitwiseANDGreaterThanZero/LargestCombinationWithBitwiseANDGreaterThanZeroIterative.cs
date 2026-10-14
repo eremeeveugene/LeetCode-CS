@@ -25,7 +25,17 @@ public sealed class LargestCombinationWithBitwiseANDGreaterThanZeroIterative : I
 
         for (var i = 0; i < 24; i++)
         {
-            var count = candidates.Count(candidate => (candidate & (1 << i)) != 0);
+            var count = 0;
+
+            for (var j = 0; j < candidates.Length; j++)
+            {
+                var candidate = candidates[j];
+
+                if ((candidate & (1 << i)) != 0)
+                {
+                    count++;
+                }
+            }
 
             maxCount = Math.Max(maxCount, count);
         }

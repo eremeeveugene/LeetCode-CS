@@ -24,8 +24,10 @@ public sealed class ValidParenthesisStringIterative : IValidParenthesisString
         var minLeftCount = 0;
         var maxLeftCount = 0;
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             switch (c)
             {
                 case '(':

@@ -21,7 +21,12 @@ public sealed class MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeBits
     /// </remarks>
     public int MinOperations(int[] nums, int k)
     {
-        var xor = nums.Aggregate(0, (current, num) => current ^ num);
+        var xor = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            xor ^= nums[i];
+        }
 
         if (xor == k)
         {

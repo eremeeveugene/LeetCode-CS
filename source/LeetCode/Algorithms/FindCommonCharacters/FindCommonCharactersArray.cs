@@ -25,18 +25,22 @@ public sealed class FindCommonCharactersArray : IFindCommonCharacters
 
         Array.Fill(minFrequency, int.MaxValue);
 
-        foreach (var word in words)
+        for (var i = 0; i < words.Length; i++)
         {
+            var word = words[i];
+
             var charCount = new int[26];
 
-            foreach (var c in word)
+            for (var j = 0; j < word.Length; j++)
             {
+                var c = word[j];
+
                 charCount[c - 'a']++;
             }
 
-            for (var i = 0; i < 26; i++)
+            for (var j = 0; j < 26; j++)
             {
-                minFrequency[i] = Math.Min(minFrequency[i], charCount[i]);
+                minFrequency[j] = Math.Min(minFrequency[j], charCount[j]);
             }
         }
 

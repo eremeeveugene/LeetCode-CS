@@ -21,13 +21,17 @@ public sealed class AverageSalaryExcludingTheMinimumAndMaximumSalaryIterative : 
     /// </remarks>
     public double Average(int[] salary)
     {
+        var n = salary.Length;
+
         var min = salary[0];
         var max = salary[0];
 
         double sum = 0;
 
-        foreach (var item in salary)
+        for (var i = 0; i < n; i++)
         {
+            var item = salary[i];
+
             sum += item;
 
             min = Math.Min(min, item);

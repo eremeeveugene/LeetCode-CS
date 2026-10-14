@@ -20,6 +20,22 @@ public abstract class ReverseVowelsOfStringTestsBase<T> where T : IReverseVowels
     [DataRow("leetcode", "leotcede")]
     [DataRow("aA", "Aa")]
     [DataRow("Euston saw I was not Sue.", "euston saw I was not SuE.")]
+    [DataRow("a", "a")]
+    [DataRow("b", "b")]
+    [DataRow("ab", "ab")]
+    [DataRow("ae", "ea")]
+    [DataRow("ba", "ba")]
+    [DataRow("xyz", "xyz")]
+    [DataRow("aeiou", "uoiea")]
+    [DataRow("AEIOU", "UOIEA")]
+    [DataRow("aAeEiIoOuU", "UuOoIiEeAa")]
+    [DataRow("bcd", "bcd")]
+    [DataRow("abecidofug", "ubocidefag")]
+    [DataRow("A man, a plan, a canal: Panama", "a man, a plan, a canal: PanamA")]
+    [DataRow("race car", "race car")]
+    [DataRow("Hello World!", "Hollo Werld!")]
+    [DataRow("rhythm", "rhythm")]
+    [DataRow("queue", "qeueu")]
     public void ReverseVowels_GivenStringWithVowels_ReturnsStringWithVowelsReversed(string s, string expectedResult)
     {
         // Arrange

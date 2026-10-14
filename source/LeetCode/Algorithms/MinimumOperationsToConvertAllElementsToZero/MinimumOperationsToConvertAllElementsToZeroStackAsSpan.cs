@@ -27,8 +27,10 @@ public sealed class MinimumOperationsToConvertAllElementsToZeroStackAsSpan : IMi
 
         var minOperations = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             while (numsSpanCount > 0 && numsSpan[numsSpanCount - 1] > num)
             {
                 numsSpan[numsSpanCount--] = 0;

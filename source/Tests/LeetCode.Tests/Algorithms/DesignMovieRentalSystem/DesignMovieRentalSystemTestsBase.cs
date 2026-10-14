@@ -129,6 +129,456 @@ public abstract class DesignMovieRentalSystemTestsBase
                 [new RentOperation(0, 1), new RentOperation(1, 1), new ReportOperation()],
                 [VoidOperationResult.Instance, VoidOperationResult.Instance, new ReportOperation.Result([[0, 1], [1, 1]])])
         ];
+
+        yield return
+        [
+            new MovieRentalSystemScenario(
+                1,
+                [[0, 1, 6]],
+                [
+                    new RentOperation(0, 1),
+                    new SearchOperation(1),
+                    new ReportOperation(),
+                    new DropOperation(0, 1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([]),
+                    new ReportOperation.Result([[0, 1]]),
+                    VoidOperationResult.Instance
+                ])
+        ];
+
+        yield return
+        [
+            new MovieRentalSystemScenario(
+                2,
+                [[0, 1, 1], [1, 2, 1], [0, 2, 1], [1, 1, 4]],
+                [
+                    new SearchOperation(2),
+                    new ReportOperation(),
+                    new SearchOperation(2),
+                    new SearchOperation(2),
+                    new ReportOperation(),
+                    new RentOperation(1, 2),
+                    new SearchOperation(1),
+                    new RentOperation(0, 2),
+                    new SearchOperation(1),
+                    new SearchOperation(2)
+                ],
+                [
+                    new SearchOperation.Result([0, 1]),
+                    new ReportOperation.Result([]),
+                    new SearchOperation.Result([0, 1]),
+                    new SearchOperation.Result([0, 1]),
+                    new ReportOperation.Result([]),
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([0, 1]),
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([0, 1]),
+                    new SearchOperation.Result([])
+                ])
+        ];
+
+        yield return
+        [
+            new MovieRentalSystemScenario(
+                8,
+                [[0, 1, 3], [1, 1, 4], [2, 1, 3], [3, 1, 2], [4, 1, 3], [5, 1, 3], [6, 1, 2], [7, 1, 3]],
+                [
+                    new SearchOperation(1),
+                    new RentOperation(0, 1),
+                    new RentOperation(1, 1),
+                    new RentOperation(2, 1),
+                    new RentOperation(3, 1),
+                    new RentOperation(4, 1),
+                    new RentOperation(5, 1),
+                    new RentOperation(6, 1),
+                    new ReportOperation(),
+                    new SearchOperation(1),
+                    new DropOperation(3, 1),
+                    new ReportOperation(),
+                    new SearchOperation(1)
+                ],
+                [
+                    new SearchOperation.Result([3, 6, 0, 2, 4]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[3, 1], [6, 1], [0, 1], [2, 1], [4, 1]]),
+                    new SearchOperation.Result([7]),
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[6, 1], [0, 1], [2, 1], [4, 1], [5, 1]]),
+                    new SearchOperation.Result([3, 7])
+                ])
+        ];
+
+        yield return
+        [
+            new MovieRentalSystemScenario(
+                4,
+                [[0, 1, 5], [1, 1, 5], [2, 1, 5], [3, 1, 5]],
+                [
+                    new SearchOperation(1),
+                    new RentOperation(3, 1),
+                    new RentOperation(0, 1),
+                    new ReportOperation(),
+                    new SearchOperation(1),
+                    new DropOperation(3, 1),
+                    new ReportOperation()
+                ],
+                [
+                    new SearchOperation.Result([0, 1, 2, 3]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[0, 1], [3, 1]]),
+                    new SearchOperation.Result([1, 2]),
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[0, 1]])
+                ])
+        ];
+
+        yield return
+        [
+            new MovieRentalSystemScenario(
+                2,
+                [[1, 1, 4], [0, 2, 4], [0, 1, 6], [1, 2, 6]],
+                [
+                    new RentOperation(0, 2),
+                    new ReportOperation(),
+                    new ReportOperation(),
+                    new RentOperation(1, 2),
+                    new ReportOperation(),
+                    new DropOperation(1, 2),
+                    new RentOperation(1, 1),
+                    new RentOperation(1, 2),
+                    new SearchOperation(1),
+                    new SearchOperation(1),
+                    new RentOperation(0, 1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[0, 2]]),
+                    new ReportOperation.Result([[0, 2]]),
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[0, 2], [1, 2]]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([0]),
+                    new SearchOperation.Result([0]),
+                    VoidOperationResult.Instance
+                ])
+        ];
+
+        yield return
+        [
+            new MovieRentalSystemScenario(
+                6,
+                [[2, 1, 5], [5, 1, 6], [4, 1, 1], [1, 1, 2], [0, 1, 1], [3, 1, 1]],
+                [
+                    new ReportOperation(),
+                    new RentOperation(4, 1),
+                    new ReportOperation(),
+                    new ReportOperation(),
+                    new DropOperation(4, 1),
+                    new ReportOperation(),
+                    new RentOperation(3, 1),
+                    new RentOperation(1, 1),
+                    new RentOperation(0, 1),
+                    new ReportOperation(),
+                    new DropOperation(0, 1),
+                    new RentOperation(5, 1),
+                    new SearchOperation(1),
+                    new SearchOperation(1)
+                ],
+                [
+                    new ReportOperation.Result([]),
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[4, 1]]),
+                    new ReportOperation.Result([[4, 1]]),
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[0, 1], [3, 1], [1, 1]]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([0, 4, 2]),
+                    new SearchOperation.Result([0, 4, 2])
+                ])
+        ];
+
+        yield return
+        [
+            new MovieRentalSystemScenario(
+                6,
+                [[0, 2, 1], [5, 1, 2], [1, 1, 5]],
+                [
+                    new RentOperation(1, 1),
+                    new RentOperation(5, 1),
+                    new RentOperation(0, 2),
+                    new DropOperation(0, 2),
+                    new SearchOperation(1),
+                    new DropOperation(5, 1),
+                    new DropOperation(1, 1),
+                    new SearchOperation(1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([5, 1])
+                ])
+        ];
+
+        yield return
+        [
+            new MovieRentalSystemScenario(
+                2,
+                [[1, 2, 3], [1, 3, 4], [0, 2, 6], [1, 4, 2], [0, 1, 2], [0, 3, 6], [0, 4, 3], [1, 1, 2]],
+                [
+                    new SearchOperation(2),
+                    new ReportOperation(),
+                    new RentOperation(0, 2),
+                    new RentOperation(1, 2),
+                    new RentOperation(0, 1),
+                    new RentOperation(1, 4),
+                    new DropOperation(1, 2),
+                    new ReportOperation(),
+                    new ReportOperation()
+                ],
+                [
+                    new SearchOperation.Result([1, 0]),
+                    new ReportOperation.Result([]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[0, 1], [1, 4], [0, 2]]),
+                    new ReportOperation.Result([[0, 1], [1, 4], [0, 2]])
+                ])
+        ];
+
+        yield return
+        [
+            new MovieRentalSystemScenario(
+                2,
+                [[0, 2, 2], [0, 3, 6], [1, 3, 2], [1, 1, 3]],
+                [
+                    new RentOperation(0, 2),
+                    new SearchOperation(3),
+                    new DropOperation(0, 2),
+                    new SearchOperation(1),
+                    new RentOperation(0, 3),
+                    new RentOperation(0, 2),
+                    new DropOperation(0, 3),
+                    new ReportOperation(),
+                    new SearchOperation(1),
+                    new SearchOperation(3)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([1, 0]),
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([1]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[0, 2]]),
+                    new SearchOperation.Result([1]),
+                    new SearchOperation.Result([1, 0])
+                ])
+        ];
+
+        yield return
+        [
+            new MovieRentalSystemScenario(
+                3,
+                [[1, 1, 5], [0, 1, 3], [2, 1, 4]],
+                [
+                    new RentOperation(1, 1),
+                    new RentOperation(2, 1),
+                    new SearchOperation(1),
+                    new RentOperation(0, 1),
+                    new SearchOperation(1),
+                    new SearchOperation(1),
+                    new DropOperation(1, 1),
+                    new RentOperation(1, 1),
+                    new SearchOperation(1),
+                    new DropOperation(1, 1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([0]),
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([]),
+                    new SearchOperation.Result([]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([]),
+                    VoidOperationResult.Instance
+                ])
+        ];
+
+        yield return
+        [
+            new MovieRentalSystemScenario(
+                4,
+                [[1, 1, 1], [0, 1, 4], [3, 1, 3], [2, 1, 6]],
+                [
+                    new RentOperation(3, 1),
+                    new DropOperation(3, 1),
+                    new RentOperation(0, 1),
+                    new RentOperation(3, 1),
+                    new DropOperation(0, 1),
+                    new ReportOperation(),
+                    new ReportOperation(),
+                    new RentOperation(0, 1),
+                    new ReportOperation(),
+                    new SearchOperation(1),
+                    new RentOperation(1, 1),
+                    new DropOperation(3, 1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[3, 1]]),
+                    new ReportOperation.Result([[3, 1]]),
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[3, 1], [0, 1]]),
+                    new SearchOperation.Result([1, 2]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance
+                ])
+        ];
+
+        yield return
+        [
+            new MovieRentalSystemScenario(
+                6,
+                [[4, 3, 4], [1, 3, 2], [2, 1, 6], [0, 2, 4], [5, 3, 4], [4, 1, 4], [3, 3, 6], [0, 1, 4], [1, 1, 6], [1, 2, 5]],
+                [
+                    new SearchOperation(3),
+                    new RentOperation(1, 3),
+                    new DropOperation(1, 3),
+                    new ReportOperation(),
+                    new ReportOperation(),
+                    new ReportOperation(),
+                    new RentOperation(0, 1),
+                    new ReportOperation(),
+                    new ReportOperation(),
+                    new DropOperation(0, 1),
+                    new RentOperation(0, 1),
+                    new DropOperation(0, 1),
+                    new RentOperation(5, 3),
+                    new ReportOperation()
+                ],
+                [
+                    new SearchOperation.Result([1, 4, 5, 3]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([]),
+                    new ReportOperation.Result([]),
+                    new ReportOperation.Result([]),
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[0, 1]]),
+                    new ReportOperation.Result([[0, 1]]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[5, 3]])
+                ])
+        ];
+
+        yield return
+        [
+            new MovieRentalSystemScenario(
+                5,
+                [[1, 2, 2], [1, 1, 1], [4, 2, 6], [4, 1, 5], [2, 2, 4], [3, 2, 4], [0, 2, 4]],
+                [
+                    new RentOperation(0, 2),
+                    new DropOperation(0, 2),
+                    new ReportOperation(),
+                    new ReportOperation(),
+                    new ReportOperation(),
+                    new RentOperation(4, 1),
+                    new RentOperation(4, 2),
+                    new DropOperation(4, 2),
+                    new SearchOperation(2),
+                    new RentOperation(0, 2),
+                    new DropOperation(0, 2),
+                    new DropOperation(4, 1),
+                    new ReportOperation(),
+                    new ReportOperation(),
+                    new SearchOperation(2)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([]),
+                    new ReportOperation.Result([]),
+                    new ReportOperation.Result([]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([1, 0, 2, 3, 4]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([]),
+                    new ReportOperation.Result([]),
+                    new SearchOperation.Result([1, 0, 2, 3, 4])
+                ])
+        ];
+
+        yield return
+        [
+            new MovieRentalSystemScenario(
+                6,
+                [[2, 1, 2], [3, 1, 6], [5, 1, 1], [1, 1, 3]],
+                [
+                    new RentOperation(2, 1),
+                    new ReportOperation(),
+                    new RentOperation(3, 1),
+                    new RentOperation(1, 1),
+                    new SearchOperation(1),
+                    new DropOperation(3, 1),
+                    new RentOperation(5, 1),
+                    new RentOperation(3, 1),
+                    new SearchOperation(1),
+                    new ReportOperation(),
+                    new DropOperation(5, 1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    new ReportOperation.Result([[2, 1]]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([5]),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SearchOperation.Result([]),
+                    new ReportOperation.Result([[5, 1], [2, 1], [1, 1], [3, 1]]),
+                    VoidOperationResult.Instance
+                ])
+        ];
     }
 
     public sealed class MovieRentalSystemScenario : IScenario<IDesignMovieRentalSystem>
@@ -182,7 +632,20 @@ public abstract class DesignMovieRentalSystemTestsBase
 
             public bool Equals(Result? other)
             {
-                return other is not null && _shops.SequenceEqual(other._shops);
+                if (other is null || _shops.Count != other._shops.Count)
+                {
+                    return false;
+                }
+
+                for (var i = 0; i < _shops.Count; i++)
+                {
+                    if (_shops[i] != other._shops[i])
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
             }
 
             public override bool Equals(object? obj)
@@ -194,8 +657,10 @@ public abstract class DesignMovieRentalSystemTestsBase
             {
                 var hashCode = new HashCode();
 
-                foreach (var shop in _shops)
+                for (var i = 0; i < _shops.Count; i++)
                 {
+                    var shop = _shops[i];
+
                     hashCode.Add(shop);
                 }
 
@@ -226,9 +691,31 @@ public abstract class DesignMovieRentalSystemTestsBase
 
             public bool Equals(Result? other)
             {
-                return other is not null &&
-                       _entries.Count == other._entries.Count &&
-                       _entries.Zip(other._entries, (a, b) => a.SequenceEqual(b)).All(x => x);
+                if (other is null || _entries.Count != other._entries.Count)
+                {
+                    return false;
+                }
+
+                for (var i = 0; i < _entries.Count; i++)
+                {
+                    var entry = _entries[i];
+                    var otherEntry = other._entries[i];
+
+                    if (entry.Count != otherEntry.Count)
+                    {
+                        return false;
+                    }
+
+                    for (var j = 0; j < entry.Count; j++)
+                    {
+                        if (entry[j] != otherEntry[j])
+                        {
+                            return false;
+                        }
+                    }
+                }
+
+                return true;
             }
 
             public override bool Equals(object? obj)
@@ -240,10 +727,14 @@ public abstract class DesignMovieRentalSystemTestsBase
             {
                 var hashCode = new HashCode();
 
-                foreach (var entry in _entries)
+                for (var i = 0; i < _entries.Count; i++)
                 {
-                    foreach (var value in entry)
+                    var entry = _entries[i];
+
+                    for (var j = 0; j < entry.Count; j++)
                     {
+                        var value = entry[j];
+
                         hashCode.Add(value);
                     }
                 }

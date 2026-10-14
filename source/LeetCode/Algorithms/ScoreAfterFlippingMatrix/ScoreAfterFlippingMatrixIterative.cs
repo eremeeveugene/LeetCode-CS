@@ -49,7 +49,15 @@ public sealed class ScoreAfterFlippingMatrixIterative : IScoreAfterFlippingMatri
     {
         for (var j = 1; j < grid[0].Length; j++)
         {
-            var countOfOnes = grid.Count(row => row[j] == 1);
+            var countOfOnes = 0;
+
+            for (var i = 0; i < grid.Length; i++)
+            {
+                if (grid[i][j] == 1)
+                {
+                    countOfOnes++;
+                }
+            }
 
             if (countOfOnes >= grid.Length / 2.0)
             {

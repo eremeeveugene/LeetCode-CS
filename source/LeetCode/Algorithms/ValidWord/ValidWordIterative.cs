@@ -31,8 +31,10 @@ public sealed class ValidWordIterative : IValidWord
         var hasVowel = false;
         var hasConsonant = false;
 
-        foreach (var character in word)
+        for (var i = 0; i < word.Length; i++)
         {
+            var character = word[i];
+
             if (!char.IsLetterOrDigit(character))
             {
                 return false;

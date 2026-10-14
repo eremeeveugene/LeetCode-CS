@@ -28,6 +28,13 @@ public sealed class MissingNumberCumulativeSum : IMissingNumber
             sum += i;
         }
 
-        return sum - nums.Sum();
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            sum -= num;
+        }
+
+        return sum;
     }
 }

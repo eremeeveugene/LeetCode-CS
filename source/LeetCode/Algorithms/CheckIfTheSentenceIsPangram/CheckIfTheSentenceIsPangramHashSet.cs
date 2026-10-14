@@ -14,7 +14,7 @@ namespace LeetCode.Algorithms.CheckIfTheSentenceIsPangram;
 /// <inheritdoc />
 public sealed class CheckIfTheSentenceIsPangramHashSet : ICheckIfTheSentenceIsPangram
 {
-    private readonly HashSet<char> _alphabetHashSet =
+    private readonly char[] _alphabet =
     [
         'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
     ];
@@ -33,6 +33,16 @@ public sealed class CheckIfTheSentenceIsPangramHashSet : ICheckIfTheSentenceIsPa
 
         var sentenceHashSet = new HashSet<char>(sentence);
 
-        return _alphabetHashSet.All(sentenceHashSet.Contains);
+        for (var i = 0; i < _alphabet.Length; i++)
+        {
+            var letter = _alphabet[i];
+
+            if (!sentenceHashSet.Contains(letter))
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }

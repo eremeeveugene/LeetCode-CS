@@ -22,6 +22,20 @@ public abstract class FreedomTrailTestsBase<T> where T : IFreedomTrail, new()
     [DataRow("fgtng", "tnggf", 10)]
     [DataRow("godding", "godding", 13)]
     [DataRow("caotmcaataijjxi", "oatjiioicitatajtijciocjcaaxaaatmctxamacaamjjx", 137)]
+    [DataRow("a", "a", 1)]
+    [DataRow("ab", "b", 2)]
+    [DataRow("ab", "ba", 4)]
+    [DataRow("abc", "cba", 6)]
+    [DataRow("aaa", "aaaa", 4)]
+    [DataRow("abcabc", "cab", 6)]
+    [DataRow("zzzz", "zz", 2)]
+    [DataRow("abcdefghij", "jihgfedcba", 20)]
+    [DataRow("abcdefghij", "acegi", 13)]
+    [DataRow("xyxyxy", "yxyxyx", 12)]
+    [DataRow("godding", "dig", 9)]
+    [DataRow("qwertyuiop", "poiuytrewq", 20)]
+    [DataRow("aabbcc", "cbaabc", 14)]
+    [DataRow("abcdefghijklmnopqrstuvwxyz", "zyxabc", 14)]
     public void FindRotateSteps_WithRingAndKey_ReturnsMinimumStepsToSpellKeyUsingRotationsAndPresses(string ring, string key, int expectedResult)
     {
         // Arrange

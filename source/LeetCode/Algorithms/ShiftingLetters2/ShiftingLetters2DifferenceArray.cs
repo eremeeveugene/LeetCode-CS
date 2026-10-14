@@ -27,8 +27,10 @@ public sealed class ShiftingLetters2DifferenceArray : IShiftingLetters2
     {
         var differenceArray = new int[s.Length];
 
-        foreach (var shift in shifts)
+        for (var i = 0; i < shifts.Length; i++)
         {
+            var shift = shifts[i];
+
             var start = shift[0];
             var end = shift[1];
             var direction = shift[2];

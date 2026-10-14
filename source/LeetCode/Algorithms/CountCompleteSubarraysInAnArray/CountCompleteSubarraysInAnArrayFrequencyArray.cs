@@ -24,8 +24,10 @@ public sealed class CountCompleteSubarraysInAnArrayFrequencyArray : ICountComple
         var distinctCount = 0;
         var distinctArray = new bool[2000];
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (distinctArray[num - 1])
             {
                 continue;

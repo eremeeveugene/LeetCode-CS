@@ -24,8 +24,10 @@ public sealed class RobotReturnToOriginSimulation : IRobotReturnToOrigin
         var x = 0;
         var y = 0;
 
-        foreach (var move in moves)
+        for (var i = 0; i < moves.Length; i++)
         {
+            var move = moves[i];
+
             switch (move)
             {
                 case 'R':

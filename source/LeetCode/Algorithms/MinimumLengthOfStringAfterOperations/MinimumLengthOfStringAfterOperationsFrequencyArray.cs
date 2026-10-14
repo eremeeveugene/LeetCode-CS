@@ -25,8 +25,10 @@ public sealed class MinimumLengthOfStringAfterOperationsFrequencyArray : IMinimu
 
         var frequencyArray = new int['z' - 'a' + 1];
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             if (frequencyArray[c - 'a'] == 2)
             {
                 frequencyArray[c - 'a']--;

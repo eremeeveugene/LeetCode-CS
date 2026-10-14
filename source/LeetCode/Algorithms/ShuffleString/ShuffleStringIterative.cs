@@ -21,15 +21,13 @@ public sealed class ShuffleStringIterative : IShuffleString
     /// </remarks>
     public string RestoreString(string s, int[] indices)
     {
-        var sIndex = 0;
-
         var chars = new char[indices.Length];
 
-        foreach (var index in indices)
+        for (var i = 0; i < indices.Length; i++)
         {
-            chars[index] = s[sIndex];
+            var index = indices[i];
 
-            sIndex++;
+            chars[index] = s[i];
         }
 
         return new string(chars);

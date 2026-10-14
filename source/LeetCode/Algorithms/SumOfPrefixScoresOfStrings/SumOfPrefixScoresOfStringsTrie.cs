@@ -50,17 +50,19 @@ public sealed class SumOfPrefixScoresOfStringsTrie : ISumOfPrefixScoresOfStrings
 
     private sealed class Trie
     {
-        public Trie(IEnumerable<string> words)
+        public Trie(string[] words)
         {
             AddRange(words);
         }
 
         public TrieNode Root { get; } = new();
 
-        private void AddRange(IEnumerable<string> words)
+        private void AddRange(string[] words)
         {
-            foreach (var word in words)
+            for (var i = 0; i < words.Length; i++)
             {
+                var word = words[i];
+
                 Add(word);
             }
         }
@@ -69,8 +71,10 @@ public sealed class SumOfPrefixScoresOfStringsTrie : ISumOfPrefixScoresOfStrings
         {
             var currentTrieNode = Root;
 
-            foreach (var character in word)
+            for (var i = 0; i < word.Length; i++)
             {
+                var character = word[i];
+
                 var characterTrieNodeIndex = character - 'a';
 
                 var characterTrieNode = currentTrieNode.Children[characterTrieNodeIndex];

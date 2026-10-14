@@ -23,8 +23,10 @@ public sealed class ValidParenthesesStackSwitch : IValidParentheses
     {
         var parenthesesStack = new Stack<char>();
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             if (parenthesesStack.Count == 0)
             {
                 parenthesesStack.Push(c);

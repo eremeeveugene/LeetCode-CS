@@ -23,15 +23,17 @@ public sealed class SubsetsIterative : ISubsets
     {
         var subsets = new List<IList<int>> { new List<int>() };
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             var size = subsets.Count;
 
-            for (var i = 0; i < size; i++)
+            for (var j = 0; j < size; j++)
             {
                 var newSubset = new List<int>();
 
-                newSubset.AddRange(subsets[i]);
+                newSubset.AddRange(subsets[j]);
                 newSubset.Add(num);
 
                 subsets.Add(newSubset);

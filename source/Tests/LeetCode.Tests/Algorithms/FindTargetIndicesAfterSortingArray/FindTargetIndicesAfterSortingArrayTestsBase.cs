@@ -42,7 +42,7 @@ public abstract class FindTargetIndicesAfterSortingArrayTestsBase<T> where T : I
         var solution = new T();
 
         // Act
-        var actualResult = solution.TargetIndices(nums, target).ToArray();
+        var actualResult = solution.TargetIndices(nums, target);
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult);

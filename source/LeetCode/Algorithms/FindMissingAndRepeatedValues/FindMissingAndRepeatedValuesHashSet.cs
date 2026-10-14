@@ -28,10 +28,14 @@ public sealed class FindMissingAndRepeatedValuesHashSet : IFindMissingAndRepeate
 
         var hashSet = new HashSet<int>();
 
-        foreach (var row in grid)
+        for (var i = 0; i < grid.Length; i++)
         {
-            foreach (var cell in row)
+            var row = grid[i];
+
+            for (var j = 0; j < row.Length; j++)
             {
+                var cell = row[j];
+
                 if (hashSet.Add(cell))
                 {
                     missingNumber -= cell;

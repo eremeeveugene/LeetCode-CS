@@ -85,6 +85,382 @@ public abstract class RangeSumQueryMutableTestsBase
                 [new SumRangeOperation(1, 1), new UpdateOperation(0, 100), new SumRangeOperation(1, 1)],
                 [new SumRangeOperation.Result(2), VoidOperationResult.Instance, new SumRangeOperation.Result(2)])
         ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [0],
+                [
+                    new SumRangeOperation(0, 0),
+                    new UpdateOperation(0, 100),
+                    new SumRangeOperation(0, 0)
+                ],
+                [
+                    new SumRangeOperation.Result(0),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(100)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [-100],
+                [
+                    new SumRangeOperation(0, 0),
+                    new UpdateOperation(0, -50),
+                    new SumRangeOperation(0, 0)
+                ],
+                [
+                    new SumRangeOperation.Result(-100),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(-50)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [1, 1],
+                [
+                    new SumRangeOperation(0, 1),
+                    new UpdateOperation(1, 100),
+                    new SumRangeOperation(0, 1),
+                    new UpdateOperation(0, -100),
+                    new SumRangeOperation(0, 1)
+                ],
+                [
+                    new SumRangeOperation.Result(2),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(101),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [1, 2, 3, 4],
+                [
+                    new UpdateOperation(0, 0),
+                    new UpdateOperation(1, 0),
+                    new UpdateOperation(2, 0),
+                    new UpdateOperation(3, 0),
+                    new SumRangeOperation(0, 3)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [5, 5, 5, 5, 5, 5],
+                [
+                    new SumRangeOperation(1, 4),
+                    new UpdateOperation(2, 0),
+                    new SumRangeOperation(1, 4),
+                    new UpdateOperation(3, 10),
+                    new SumRangeOperation(1, 4),
+                    new SumRangeOperation(0, 5)
+                ],
+                [
+                    new SumRangeOperation.Result(20),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(15),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(20),
+                    new SumRangeOperation.Result(30)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [-1, -2, -3, -4, -5],
+                [
+                    new SumRangeOperation(0, 4),
+                    new UpdateOperation(4, 5),
+                    new SumRangeOperation(0, 4),
+                    new UpdateOperation(0, 5),
+                    new SumRangeOperation(0, 4),
+                    new SumRangeOperation(1, 3)
+                ],
+                [
+                    new SumRangeOperation.Result(-15),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(-5),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(1),
+                    new SumRangeOperation.Result(-9)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [10, 20, 30],
+                [
+                    new UpdateOperation(1, 20),
+                    new SumRangeOperation(0, 2),
+                    new SumRangeOperation(1, 1)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(60),
+                    new SumRangeOperation.Result(20)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [1, 2, 3, 4, 5, 6, 7],
+                [
+                    new SumRangeOperation(0, 6),
+                    new UpdateOperation(3, -4),
+                    new SumRangeOperation(0, 6),
+                    new SumRangeOperation(3, 3),
+                    new SumRangeOperation(2, 4),
+                    new UpdateOperation(6, 7),
+                    new SumRangeOperation(5, 6)
+                ],
+                [
+                    new SumRangeOperation.Result(28),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(20),
+                    new SumRangeOperation.Result(-4),
+                    new SumRangeOperation.Result(4),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(13)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [100, -100, 100, -100],
+                [
+                    new SumRangeOperation(0, 3),
+                    new UpdateOperation(1, 100),
+                    new SumRangeOperation(0, 3),
+                    new UpdateOperation(3, 100),
+                    new SumRangeOperation(0, 3),
+                    new SumRangeOperation(1, 2)
+                ],
+                [
+                    new SumRangeOperation.Result(0),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(200),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(400),
+                    new SumRangeOperation.Result(200)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [0, 0, 0, 0, 0],
+                [
+                    new UpdateOperation(2, 7),
+                    new SumRangeOperation(0, 4),
+                    new SumRangeOperation(0, 1),
+                    new SumRangeOperation(2, 2),
+                    new SumRangeOperation(3, 4)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(7),
+                    new SumRangeOperation.Result(0),
+                    new SumRangeOperation.Result(7),
+                    new SumRangeOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [4, 3, 2, 1],
+                [
+                    new SumRangeOperation(0, 0),
+                    new UpdateOperation(0, 1),
+                    new UpdateOperation(1, 2),
+                    new UpdateOperation(2, 3),
+                    new UpdateOperation(3, 4),
+                    new SumRangeOperation(0, 3),
+                    new SumRangeOperation(0, 0),
+                    new SumRangeOperation(3, 3)
+                ],
+                [
+                    new SumRangeOperation.Result(4),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(10),
+                    new SumRangeOperation.Result(1),
+                    new SumRangeOperation.Result(4)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [9, 9, 9, 9, 9, 9, 9, 9],
+                [
+                    new SumRangeOperation(0, 7),
+                    new UpdateOperation(4, -9),
+                    new SumRangeOperation(0, 7),
+                    new SumRangeOperation(4, 4),
+                    new SumRangeOperation(0, 3),
+                    new SumRangeOperation(5, 7),
+                    new UpdateOperation(7, 100),
+                    new SumRangeOperation(4, 7)
+                ],
+                [
+                    new SumRangeOperation.Result(72),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(54),
+                    new SumRangeOperation.Result(-9),
+                    new SumRangeOperation.Result(36),
+                    new SumRangeOperation.Result(27),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(109)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [1, 2, 3],
+                [
+                    new UpdateOperation(0, 3),
+                    new UpdateOperation(1, 2),
+                    new UpdateOperation(2, 1),
+                    new SumRangeOperation(0, 2),
+                    new SumRangeOperation(0, 0),
+                    new SumRangeOperation(2, 2)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(6),
+                    new SumRangeOperation.Result(3),
+                    new SumRangeOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [-100, 100],
+                [
+                    new SumRangeOperation(0, 1),
+                    new UpdateOperation(0, 100),
+                    new SumRangeOperation(0, 1),
+                    new UpdateOperation(1, -100),
+                    new SumRangeOperation(0, 1)
+                ],
+                [
+                    new SumRangeOperation.Result(0),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(200),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [6, 5, 4, 3, 2, 1],
+                [
+                    new UpdateOperation(5, 6),
+                    new UpdateOperation(4, 5),
+                    new UpdateOperation(3, 4),
+                    new SumRangeOperation(3, 5),
+                    new SumRangeOperation(0, 5),
+                    new UpdateOperation(0, 1),
+                    new SumRangeOperation(0, 5)
+                ],
+                [
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(15),
+                    new SumRangeOperation.Result(30),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(25)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryMutableScenario(
+                [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+                [
+                    new SumRangeOperation(0, 9),
+                    new UpdateOperation(9, -2),
+                    new UpdateOperation(0, -2),
+                    new SumRangeOperation(0, 9),
+                    new SumRangeOperation(1, 8),
+                    new UpdateOperation(5, 20),
+                    new SumRangeOperation(4, 6)
+                ],
+                [
+                    new SumRangeOperation.Result(20),
+                    VoidOperationResult.Instance,
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(12),
+                    new SumRangeOperation.Result(16),
+                    VoidOperationResult.Instance,
+                    new SumRangeOperation.Result(24)
+                ])
+        ];
+
+        yield return [CreateMaxLengthScenario()];
+    }
+
+    private static RangeSumQueryMutableScenario CreateMaxLengthScenario()
+    {
+        const int Length = 30000;
+
+        var nums = new int[Length];
+
+        for (var i = 0; i < Length; i++)
+        {
+            nums[i] = 1;
+        }
+
+        IOperation<IRangeSumQueryMutable>[] operations =
+        [
+            new SumRangeOperation(0, Length - 1),
+            new UpdateOperation(Length / 2, 100),
+            new SumRangeOperation(0, Length - 1),
+            new SumRangeOperation(Length / 2, Length / 2),
+            new UpdateOperation(Length - 1, -100),
+            new SumRangeOperation(Length / 2, Length - 1)
+        ];
+
+        IOperationResult[] operationResults =
+        [
+            new SumRangeOperation.Result(30000),
+            VoidOperationResult.Instance,
+            new SumRangeOperation.Result(30099),
+            new SumRangeOperation.Result(100),
+            VoidOperationResult.Instance,
+            new SumRangeOperation.Result(14998)
+        ];
+
+        return new RangeSumQueryMutableScenario(nums, operations, operationResults);
     }
 
     public sealed class RangeSumQueryMutableScenario : IScenario<IRangeSumQueryMutable>

@@ -21,6 +21,18 @@ public sealed class NumberOfSeniorCitizensStringParsing : INumberOfSeniorCitizen
     /// </remarks>
     public int CountSeniors(string[] details)
     {
-        return details.Count(detail => int.Parse(detail.Substring(11, 2)) > 60);
+        var count = 0;
+
+        for (var i = 0; i < details.Length; i++)
+        {
+            var detail = details[i];
+
+            if (int.Parse(detail.Substring(11, 2)) > 60)
+            {
+                count++;
+            }
+        }
+
+        return count;
     }
 }

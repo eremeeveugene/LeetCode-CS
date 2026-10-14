@@ -24,8 +24,10 @@ public sealed class SingleNumber2Bitwise : ISingleNumber2
         var seenOnce = 0;
         var seenTwice = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             seenOnce = ~seenTwice & (seenOnce ^ num);
             seenTwice = ~seenOnce & (seenTwice ^ num);
         }

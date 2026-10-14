@@ -24,8 +24,10 @@ public sealed class MaxSumOfPairWithEqualSumOfDigits1 : IMaxSumOfPairWithEqualSu
         var maximumSum = -1;
         var dictionary = new Dictionary<int, (int Num1, int Num2)>();
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             var digitSum = GetDigitSum(num);
 
             if (dictionary.TryGetValue(digitSum, out var digits))

@@ -28,8 +28,10 @@ public sealed class RemoveKDigitsStack : IRemoveKDigits
 
         var stack = new Stack<char>();
 
-        foreach (var digit in num)
+        for (var i = 0; i < num.Length; i++)
         {
+            var digit = num[i];
+
             while (k > 0 && stack.Count > 0 && stack.Peek() > digit)
             {
                 stack.Pop();

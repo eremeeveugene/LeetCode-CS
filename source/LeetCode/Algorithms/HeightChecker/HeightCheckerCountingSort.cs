@@ -22,20 +22,29 @@ public sealed class HeightCheckerCountingSort : IHeightChecker
     /// </remarks>
     public int HeightChecker(int[] heights)
     {
-        var maxHeight = heights.Max();
+        var maxHeight = 0;
+
+        for (var i = 0; i < heights.Length; i++)
+        {
+            maxHeight = Math.Max(maxHeight, heights[i]);
+        }
 
         var count = new int[maxHeight + 1];
 
-        foreach (var height in heights)
+        for (var i = 0; i < heights.Length; i++)
         {
+            var height = heights[i];
+
             count[height]++;
         }
 
         var result = 0;
         var currentHeight = 0;
 
-        foreach (var height in heights)
+        for (var i = 0; i < heights.Length; i++)
         {
+            var height = heights[i];
+
             while (count[currentHeight] == 0)
             {
                 currentHeight++;

@@ -21,6 +21,18 @@ public sealed class NumberOfSeniorCitizensCharacterComparison : INumberOfSeniorC
     /// </remarks>
     public int CountSeniors(string[] details)
     {
-        return details.Count(x => x[^4] > '6' || (x[^4] == '6' && x[^3] > '0'));
+        var count = 0;
+
+        for (var i = 0; i < details.Length; i++)
+        {
+            var detail = details[i];
+
+            if (detail[^4] > '6' || (detail[^4] == '6' && detail[^3] > '0'))
+            {
+                count++;
+            }
+        }
+
+        return count;
     }
 }

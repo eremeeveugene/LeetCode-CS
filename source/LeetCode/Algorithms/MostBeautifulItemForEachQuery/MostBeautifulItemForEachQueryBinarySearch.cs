@@ -28,16 +28,27 @@ public sealed class MostBeautifulItemForEachQueryBinarySearch : IMostBeautifulIt
         var maxBeautyUpToPrice = new List<int[]>();
         var maxBeauty = 0;
 
-        foreach (var item in items)
+        for (var i = 0; i < items.Length; i++)
         {
+            var item = items[i];
+
             maxBeauty = Math.Max(maxBeauty, item[1]);
             maxBeautyUpToPrice.Add([item[0], maxBeauty]);
         }
 
-        foreach (var queryWithIndex in queries.Select((query, index) => new[] { query, index }).OrderBy(q => q[0]))
+        var sortedQueryIndexes = new int[queries.Length];
+
+        for (var i = 0; i < sortedQueryIndexes.Length; i++)
         {
-            var query = queryWithIndex[0];
-            var originalIndex = queryWithIndex[1];
+            sortedQueryIndexes[i] = i;
+        }
+
+        Array.Sort(sortedQueryIndexes, (a, b) => queries[a].CompareTo(queries[b]));
+
+        for (var i = 0; i < sortedQueryIndexes.Length; i++)
+        {
+            var originalIndex = sortedQueryIndexes[i];
+            var query = queries[originalIndex];
 
             var low = 0;
             var high = maxBeautyUpToPrice.Count - 1;

@@ -25,8 +25,10 @@ public sealed class NumberOfEquivalentDominoPairsFrequencyArray : INumberOfEquiv
 
         var frequencyArray = new int[100];
 
-        foreach (var domino in dominoes)
+        for (var i = 0; i < dominoes.Length; i++)
         {
+            var domino = dominoes[i];
+
             var a = Math.Min(domino[0], domino[1]);
             var b = Math.Max(domino[0], domino[1]);
             var key = (a * 10) + b;

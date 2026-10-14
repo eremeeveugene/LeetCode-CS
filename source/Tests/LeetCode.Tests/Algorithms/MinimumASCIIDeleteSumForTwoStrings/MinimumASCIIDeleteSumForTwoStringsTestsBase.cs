@@ -35,6 +35,7 @@ public abstract class MinimumASCIIDeleteSumForTwoStringsTestsBase<T> where T : I
     [DataRow("abc", "cba", 390)]
     [DataRow("b", "ab", 97)]
     [DataRow("zz", "z", 122)]
+    [DataRow("thequickbrownfox", "jumpsoverthelazydog", 2969)]
     public void MinimumDeleteSum_WithInputStrings_ReturnsMinimumAsciiDeletionSumToMakeStringsEqual(string s1, string s2, int expectedResult)
     {
         // Arrange

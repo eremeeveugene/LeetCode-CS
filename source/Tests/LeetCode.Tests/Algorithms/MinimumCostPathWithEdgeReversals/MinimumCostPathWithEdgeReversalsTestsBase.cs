@@ -101,5 +101,32 @@ public abstract class MinimumCostPathWithEdgeReversalsTestsBase<T> where T : IMi
             },
             2
         ];
+
+        yield return [5, new[] { new[] { 1, 0, 9 }, new[] { 0, 1, 4 }, new[] { 0, 0, 3 }, new[] { 2, 1, 2 }, new[] { 2, 3, 6 }, new[] { 2, 3, 5 } }, -1];
+
+        yield return [6, new[] { new[] { 2, 1, 4 }, new[] { 2, 2, 4 }, new[] { 2, 5, 9 }, new[] { 3, 1, 8 }, new[] { 3, 3, 2 }, new[] { 3, 4, 6 }, new[] { 3, 4, 6 }, new[] { 5, 5, 8 } }, -1];
+
+        yield return [8, new[] { new[] { 6, 1, 8 }, new[] { 0, 3, 3 }, new[] { 2, 0, 5 }, new[] { 7, 2, 2 }, new[] { 1, 6, 1 }, new[] { 1, 7, 9 }, new[] { 4, 6, 9 }, new[] { 3, 2, 9 }, new[] { 5, 1, 4 }, new[] { 4, 4, 3 } }, 14];
+
+        yield return [50000, CreateChainEdges(50000, false, 50001), 49999];
+
+        yield return [50000, CreateChainEdges(50000, true, 50001), 99998];
+    }
+
+    private static int[][] CreateChainEdges(int nodes, bool reversed, int extraEdges)
+    {
+        var edges = new int[nodes - 1 + extraEdges][];
+
+        for (var i = 0; i < nodes - 1; i++)
+        {
+            edges[i] = reversed ? [i + 1, i, 1] : [i, i + 1, 1];
+        }
+
+        for (var i = nodes - 1; i < edges.Length; i++)
+        {
+            edges[i] = reversed ? [1, 0, 1000] : [0, 1, 1000];
+        }
+
+        return edges;
     }
 }

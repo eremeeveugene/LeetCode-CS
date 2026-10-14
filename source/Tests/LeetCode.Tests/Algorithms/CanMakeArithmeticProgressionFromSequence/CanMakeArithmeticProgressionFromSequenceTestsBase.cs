@@ -34,6 +34,9 @@ public abstract class CanMakeArithmeticProgressionFromSequenceTestsBase<T> where
     [DataRow(new[] { 1, 2, 3, 4, 6 }, false)]
     [DataRow(new[] { 0, 1, 2 }, true)]
     [DataRow(new[] { 3, 3, 3 }, true)]
+    [DataRow(new[] { 7, 1, 4, 10 }, true)]
+    [DataRow(new[] { 1, 5, 9, 3 }, false)]
+    [DataRow(new[] { -1000000, 1000000 }, true)]
     public void CanMakeArithmeticProgression_GivenArray_ReturnsWhetherArithmeticProgressionIsPossible(int[] arr, bool expectedResult)
     {
         // Arrange

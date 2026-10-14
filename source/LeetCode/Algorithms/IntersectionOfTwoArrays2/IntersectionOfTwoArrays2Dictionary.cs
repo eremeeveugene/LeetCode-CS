@@ -35,8 +35,10 @@ public sealed class IntersectionOfTwoArrays2Dictionary : IIntersectionOfTwoArray
 
         var result = new List<int>();
 
-        foreach (var num2 in nums2)
+        for (var i = 0; i < nums2.Length; i++)
         {
+            var num2 = nums2[i];
+
             if (!nums1Dictionary.ContainsKey(num2))
             {
                 continue;

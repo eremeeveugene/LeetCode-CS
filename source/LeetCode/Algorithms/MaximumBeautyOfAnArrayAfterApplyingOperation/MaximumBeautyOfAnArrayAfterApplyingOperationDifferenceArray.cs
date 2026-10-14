@@ -27,21 +27,28 @@ public sealed class MaximumBeautyOfAnArrayAfterApplyingOperationDifferenceArray 
         }
 
         var maxBeauty = 0;
-        var maxValue = nums.Max();
+        var maxValue = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            maxValue = Math.Max(maxValue, nums[i]);
+        }
 
         var count = new int[maxValue + 2];
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             count[Math.Max(num - k, 0)]++;
             count[Math.Min(num + k + 1, maxValue + 1)]--;
         }
 
         var currentSum = 0;
 
-        foreach (var val in count)
+        for (var i = 0; i < count.Length; i++)
         {
-            currentSum += val;
+            currentSum += count[i];
             maxBeauty = Math.Max(maxBeauty, currentSum);
         }
 

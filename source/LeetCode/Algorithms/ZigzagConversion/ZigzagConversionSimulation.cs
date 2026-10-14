@@ -39,8 +39,10 @@ public sealed class ZigzagConversionSimulation : IZigzagConversion
 
         var goingDown = false;
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             stringBuilders[index].Append(c);
 
             if (index == 0 || index == numRows - 1)
@@ -53,8 +55,10 @@ public sealed class ZigzagConversionSimulation : IZigzagConversion
 
         var resultStringBuilder = new StringBuilder();
 
-        foreach (var stringBuilder in stringBuilders)
+        for (var i = 0; i < stringBuilders.Length; i++)
         {
+            var stringBuilder = stringBuilders[i];
+
             resultStringBuilder.Append(stringBuilder);
         }
 

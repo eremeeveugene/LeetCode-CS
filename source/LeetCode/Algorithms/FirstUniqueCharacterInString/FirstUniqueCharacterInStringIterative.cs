@@ -23,8 +23,10 @@ public sealed class FirstUniqueCharacterInStringIterative : IFirstUniqueCharacte
     {
         var charCount = new int[26];
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             charCount[c - 'a']++;
         }
 

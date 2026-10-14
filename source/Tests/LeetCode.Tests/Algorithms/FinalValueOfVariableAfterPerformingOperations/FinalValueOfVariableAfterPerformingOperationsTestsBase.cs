@@ -19,6 +19,23 @@ public abstract class FinalValueOfVariableAfterPerformingOperationsTestsBase<T> 
     [DataRow(new[] { "--X", "X++", "X++" }, 1)]
     [DataRow(new[] { "++X", "++X", "X++" }, 3)]
     [DataRow(new[] { "X++", "++X", "--X", "X--" }, 0)]
+    [DataRow(new[] { "++X" }, 1)]
+    [DataRow(new[] { "X++" }, 1)]
+    [DataRow(new[] { "--X" }, -1)]
+    [DataRow(new[] { "X--" }, -1)]
+    [DataRow(new[] { "++X", "--X" }, 0)]
+    [DataRow(new[] { "X++", "X--" }, 0)]
+    [DataRow(new[] { "++X", "X++", "++X", "X++" }, 4)]
+    [DataRow(new[] { "--X", "--X", "X--", "X--", "--X" }, -5)]
+    [DataRow(new[] { "X++", "--X", "X++", "--X", "X++" }, 1)]
+    [DataRow(new[] { "++X", "++X", "++X", "++X", "++X" }, 5)]
+    [DataRow(new[] { "--X", "--X", "--X", "--X", "--X", "--X", "--X" }, -7)]
+    [DataRow(new[] { "X++", "X++", "X--" }, 1)]
+    [DataRow(new[] { "--X", "X++", "X++", "X--", "--X", "++X" }, 0)]
+    [DataRow(new[] { "++X", "X--", "++X", "X--", "++X", "X--", "++X" }, 1)]
+    [DataRow(new[] { "--X", "--X", "++X" }, -1)]
+    [DataRow(new[] { "X--", "X++", "X--", "X++", "X--", "X++", "X--", "X++", "X--", "X++" }, 0)]
+    [DataRow(new[] { "++X", "++X", "--X", "++X", "X--", "X++" }, 2)]
     public void FinalValueAfterOperations_WithOperationStrings_ReturnsFinalValueOfVariable(string[] sentences, int expectedResult)
     {
         // Arrange

@@ -42,6 +42,14 @@ public sealed class LongestBinarySubsequenceLessThanOrEqualToKGreedy : ILongestB
             power <<= 1;
         }
 
-        return count + s.Count(c => c == '0');
+        for (var i = 0; i < s.Length; i++)
+        {
+            if (s[i] == '0')
+            {
+                count++;
+            }
+        }
+
+        return count;
     }
 }

@@ -22,7 +22,14 @@ public sealed class LargestNumberConcatenationSorting : ILargestNumber
     /// </remarks>
     public string LargestNumber(int[] nums)
     {
-        var numsStrings = nums.Select(n => n.ToString()).ToArray();
+        var numsStrings = new string[nums.Length];
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            numsStrings[i] = num.ToString();
+        }
 
         Array.Sort(numsStrings, (a, b) => string.Compare(b + a, a + b, StringComparison.Ordinal));
 

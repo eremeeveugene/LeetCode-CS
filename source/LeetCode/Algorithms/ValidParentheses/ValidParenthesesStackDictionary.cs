@@ -25,8 +25,10 @@ public sealed class ValidParenthesesStackDictionary : IValidParentheses
     {
         var parenthesesStack = new Stack<char>();
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             if (_parenthesesDictionary.TryGetValue(c, out var value))
             {
                 if (parenthesesStack.Count == 0 || parenthesesStack.Pop() != value)

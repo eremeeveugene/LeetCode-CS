@@ -21,13 +21,21 @@ public sealed class LongestCommonPrefixBinarySearch : ILongestCommonPrefix
     /// </remarks>
     public string LongestCommonPrefix(string[] strs)
     {
-        var minLength = strs.Min(s => s.Length);
+        var minLength = strs[0].Length;
+
+        for (var i = 1; i < strs.Length; i++)
+        {
+            var str = strs[i];
+
+            minLength = Math.Min(minLength, str.Length);
+        }
+
         var low = 1;
         var high = minLength;
 
         while (low <= high)
         {
-            var middle = (low + high) / 2;
+            var middle = low + ((high - low) / 2);
 
             if (IsCommonPrefix(strs, middle))
             {
@@ -39,9 +47,7 @@ public sealed class LongestCommonPrefixBinarySearch : ILongestCommonPrefix
             }
         }
 
-        var longestPrefixIndex = (low + high) / 2;
-
-        return strs[0][..longestPrefixIndex];
+        return strs[0][..high];
     }
 
     private static bool IsCommonPrefix(string[] strs, int length)

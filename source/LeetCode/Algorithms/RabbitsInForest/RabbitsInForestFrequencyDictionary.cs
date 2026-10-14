@@ -35,10 +35,16 @@ public sealed class RabbitsInForestFrequencyDictionary : IRabbitsInForest
 
         var rabbits = 0;
 
-        foreach (var frequency in frequencyDictionary)
+        var answerKeys = new int[frequencyDictionary.Count];
+        var frequencies = new int[frequencyDictionary.Count];
+
+        frequencyDictionary.Keys.CopyTo(answerKeys, 0);
+        frequencyDictionary.Values.CopyTo(frequencies, 0);
+
+        for (var i = 0; i < answerKeys.Length; i++)
         {
-            var groupSize = frequency.Key + 1;
-            var groups = (frequency.Value + groupSize - 1) / groupSize;
+            var groupSize = answerKeys[i] + 1;
+            var groups = (frequencies[i] + groupSize - 1) / groupSize;
 
             rabbits += groups * groupSize;
         }

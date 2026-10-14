@@ -55,8 +55,12 @@ public sealed class PathWithMaximumProbabilityDijkstra : PathWithMaximumProbabil
                 return probabilityNode.Probability;
             }
 
-            foreach (var edge in edgesDictionary[probabilityNode.Node])
+            var edges = edgesDictionary[probabilityNode.Node];
+
+            for (var i = 0; i < edges.Count; i++)
             {
+                var edge = edges[i];
+
                 var probability = probabilityNode.Probability * edge.Probability;
 
                 if (probability <= maxProbability[edge.Node])

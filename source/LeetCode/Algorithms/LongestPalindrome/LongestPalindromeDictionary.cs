@@ -41,8 +41,14 @@ public sealed class LongestPalindromeDictionary : ILongestPalindrome
         var length = 0;
         var oddCountFound = false;
 
-        foreach (var count in charCount.Values)
+        var counts = new int[charCount.Count];
+
+        charCount.Values.CopyTo(counts, 0);
+
+        for (var i = 0; i < counts.Length; i++)
         {
+            var count = counts[i];
+
             if (count % 2 == 0)
             {
                 length += count;

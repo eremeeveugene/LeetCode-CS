@@ -34,6 +34,16 @@ public abstract class MirrorDistanceOfAnIntegerTestsBase<T> where T : IMirrorDis
     [DataRow(2222, 0)]
     [DataRow(4567, 3087)]
     [DataRow(1000000000, 999999999)]
+    [DataRow(12, 9)]
+    [DataRow(99, 0)]
+    [DataRow(120, 99)]
+    [DataRow(999999999, 0)]
+    [DataRow(123456789, 864197532)]
+    [DataRow(100000, 99999)]
+    [DataRow(1010, 909)]
+    [DataRow(90, 81)]
+    [DataRow(5005, 0)]
+    [DataRow(987654321, 864197532)]
     public void MirrorDistance_WithGivenInteger_ReturnsAbsoluteDifferenceBetweenNumberAndReversedDigits(int n, int expectedResult)
     {
         // Arrange

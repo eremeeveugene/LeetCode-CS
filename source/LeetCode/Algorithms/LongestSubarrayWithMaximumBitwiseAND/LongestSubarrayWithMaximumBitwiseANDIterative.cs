@@ -25,8 +25,10 @@ public sealed class LongestSubarrayWithMaximumBitwiseANDIterative : ILongestSuba
         var maxLength = 0;
         var currentLength = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (num == maxNum)
             {
                 currentLength++;

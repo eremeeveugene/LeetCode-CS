@@ -51,14 +51,14 @@ public sealed class MinimumASCIIDeleteSumForTwoStringsDynamicProgramming : IMini
 
         var totalAscii = 0;
 
-        foreach (var c in s1)
+        for (var i = 0; i < s1.Length; i++)
         {
-            totalAscii += c;
+            totalAscii += s1[i];
         }
 
-        foreach (var c in s2)
+        for (var i = 0; i < s2.Length; i++)
         {
-            totalAscii += c;
+            totalAscii += s2[i];
         }
 
         return totalAscii - (2 * dp[^1]);

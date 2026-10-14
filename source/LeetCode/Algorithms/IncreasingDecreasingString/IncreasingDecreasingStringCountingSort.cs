@@ -25,8 +25,10 @@ public sealed class IncreasingDecreasingStringCountingSort : IIncreasingDecreasi
     {
         var count = new int[26];
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             count[c - 'a']++;
         }
 

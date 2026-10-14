@@ -23,8 +23,10 @@ public sealed class FindAllNumbersDisappearedInArrayMarking : IFindAllNumbersDis
     {
         var markedNums = new bool[nums.Length];
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             markedNums[num - 1] = true;
         }
 

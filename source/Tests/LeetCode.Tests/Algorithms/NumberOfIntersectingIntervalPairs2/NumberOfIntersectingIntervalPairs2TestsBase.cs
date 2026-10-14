@@ -81,6 +81,18 @@ public abstract class NumberOfIntersectingIntervalPairs2TestsBase<T> where T : I
 
         yield return [new[] { new[] { 999999999, 1000000000 }, new[] { 0, 1 }, new[] { 1, 999999999 } }, 2L];
 
-        yield return [Enumerable.Repeat<int[]>([0, 1000000000], 100000).ToArray(), 4999950000L];
+        yield return [CreateRepeatedIntervals(100000, 0, 1000000000), 4999950000L];
+    }
+
+    private static int[][] CreateRepeatedIntervals(int count, int start, int end)
+    {
+        var intervals = new int[count][];
+
+        for (var i = 0; i < count; i++)
+        {
+            intervals[i] = [start, end];
+        }
+
+        return intervals;
     }
 }

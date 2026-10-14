@@ -26,8 +26,10 @@ public sealed class NumberComplementString : INumberComplement
         var numBinaryString = Convert.ToString(num, 2);
         var stringBuilder = new StringBuilder(numBinaryString.Length);
 
-        foreach (var bit in numBinaryString)
+        for (var i = 0; i < numBinaryString.Length; i++)
         {
+            var bit = numBinaryString[i];
+
             stringBuilder.Append(bit == '0' ? '1' : '0');
         }
 

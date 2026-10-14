@@ -28,8 +28,10 @@ public sealed class TwoBestNonOverlappingEventsPriorityQueue : ITwoBestNonOverla
         var maxValueBeforeCurrent = 0;
         var maxSum = 0;
 
-        foreach (var @event in events)
+        for (var i = 0; i < events.Length; i++)
         {
+            var @event = events[i];
+
             var startTime = @event[0];
             var endTime = @event[1];
             var value = @event[2];

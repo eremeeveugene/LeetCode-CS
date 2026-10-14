@@ -35,15 +35,8 @@ public sealed class TheNumberOfBeautifulSubsetsBacktracking : ITheNumberOfBeauti
 
     private static void Backtrack(IReadOnlyList<int> nums, int k, int index, IList<int> subset, ref int count)
     {
-        while (true)
+        while (index < nums.Count)
         {
-            if (index >= nums.Count)
-            {
-                count++;
-
-                return;
-            }
-
             if (!subset.Contains(nums[index] - k) && !subset.Contains(k + nums[index]))
             {
                 subset.Add(nums[index]);
@@ -55,5 +48,7 @@ public sealed class TheNumberOfBeautifulSubsetsBacktracking : ITheNumberOfBeauti
 
             index += 1;
         }
+
+        count++;
     }
 }

@@ -23,8 +23,10 @@ public sealed class CheckIfArrayPairsAreDivisibleByKDictionary : ICheckIfArrayPa
     {
         var countDictionary = new Dictionary<int, int>();
 
-        foreach (var item in arr)
+        for (var i = 0; i < arr.Length; i++)
         {
+            var item = arr[i];
+
             var remainder = ((item % k) + k) % k;
 
             if (!countDictionary.TryAdd(remainder, 1))
@@ -33,18 +35,25 @@ public sealed class CheckIfArrayPairsAreDivisibleByKDictionary : ICheckIfArrayPa
             }
         }
 
-        foreach (var keyValuePair in countDictionary)
+        var remainders = new int[countDictionary.Count];
+
+        countDictionary.Keys.CopyTo(remainders, 0);
+
+        for (var i = 0; i < remainders.Length; i++)
         {
-            if (keyValuePair.Key == 0)
+            var remainder = remainders[i];
+            var remainderCount = countDictionary[remainder];
+
+            if (remainder == 0)
             {
-                if (keyValuePair.Value % 2 != 0)
+                if (remainderCount % 2 != 0)
                 {
                     return false;
                 }
             }
             else
             {
-                if (countDictionary.TryGetValue(k - keyValuePair.Key, out var count) && count == keyValuePair.Value)
+                if (countDictionary.TryGetValue(k - remainder, out var count) && count == remainderCount)
                 {
                     continue;
                 }

@@ -23,7 +23,11 @@ public sealed class CountPairsWhoseSumIsLessThanTargetSortTwoPointers : ICountPa
     {
         var count = 0;
 
-        var orderedNums = nums.Order().ToArray();
+        var orderedNums = new int[nums.Count];
+
+        nums.CopyTo(orderedNums, 0);
+
+        Array.Sort(orderedNums);
 
         var left = 0;
         var right = orderedNums.Length - 1;

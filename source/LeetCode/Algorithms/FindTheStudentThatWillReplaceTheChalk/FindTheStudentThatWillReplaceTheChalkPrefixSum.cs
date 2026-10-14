@@ -23,9 +23,9 @@ public sealed class FindTheStudentThatWillReplaceTheChalkPrefixSum : IFindTheStu
     {
         var sum = 0;
 
-        foreach (var value in chalk)
+        for (var j = 0; j < chalk.Length; j++)
         {
-            sum += value;
+            sum += chalk[j];
 
             if (sum > k)
             {

@@ -105,5 +105,16 @@ public abstract class MinimumScoreOfAPathBetweenTwoCitiesTestsBase<T> where T : 
         yield return [2, new[] { new[] { 2, 1, 3 } }, 3];
 
         yield return [4, new[] { new[] { 1, 3, 6 }, new[] { 1, 2, 5 }, new[] { 2, 4, 1 } }, 1];
+
+        var largeRoads = new int[99999][];
+
+        for (var i = 0; i < 99999; i++)
+        {
+            largeRoads[i] = [i + 1, i + 2, 10000];
+        }
+
+        largeRoads[50000][2] = 7;
+
+        yield return [100000, largeRoads, 7];
     }
 }

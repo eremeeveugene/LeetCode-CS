@@ -70,7 +70,7 @@ public sealed class MinimumScoreOfAPathBetweenTwoCitiesUnionFind : IMinimumScore
     /// <param name="y">The second node to union.</param>
     /// <remarks>
     ///     Time complexity - O(log(n)), where n is the number of cities
-    ///     Space complexity - O(log(n)), where n is the number of cities, for the recursive call stack
+    ///     Space complexity - O(1)
     /// </remarks>
     private static void Union(Span<int> parent, int x, int y)
     {
@@ -93,15 +93,25 @@ public sealed class MinimumScoreOfAPathBetweenTwoCitiesUnionFind : IMinimumScore
     /// <returns>The root node of the set containing <paramref name="node" />.</returns>
     /// <remarks>
     ///     Time complexity - O(log(n)), where n is the number of cities
-    ///     Space complexity - O(log(n)), where n is the number of cities, for the recursive call stack
+    ///     Space complexity - O(1)
     /// </remarks>
     private static int Find(Span<int> parent, int node)
     {
-        if (parent[node] == node)
+        var root = node;
+
+        while (parent[root] != root)
         {
-            return node;
+            root = parent[root];
         }
 
-        return parent[node] = Find(parent, parent[node]);
+        while (parent[node] != root)
+        {
+            var next = parent[node];
+
+            parent[node] = root;
+            node = next;
+        }
+
+        return root;
     }
 }

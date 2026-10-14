@@ -26,8 +26,10 @@ public sealed class MaximumValueOfAnOrderedTriplet2Greedy : IMaximumValueOfAnOrd
         var maxI = 0;
         long maxDifference = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             maximumTripletValue = Math.Max(maximumTripletValue, maxDifference * num);
 
             maxDifference = Math.Max(maxDifference, maxI - num);

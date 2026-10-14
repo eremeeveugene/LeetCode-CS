@@ -37,17 +37,7 @@ public sealed class New21GameDictionaryPriorityQueue : INew21Game
 
         var scoresPriorityQueue = new PriorityQueue<int, int>();
 
-        foreach (var (score, probability) in probabilityByScoreDictionary)
-        {
-            if (score < k)
-            {
-                scoresPriorityQueue.Enqueue(score, score);
-            }
-            else if (score <= n)
-            {
-                result += probability;
-            }
-        }
+        result += SeedScores(n, k, maxPts, probabilityByScoreDictionary, scoresPriorityQueue);
 
         while (scoresPriorityQueue.Count > 0)
         {
@@ -79,6 +69,32 @@ public sealed class New21GameDictionaryPriorityQueue : INew21Game
                 {
                     result += probabilityPerDraw;
                 }
+            }
+        }
+
+        return result;
+    }
+
+    private static double SeedScores(
+        int n,
+        int k,
+        int maxPts,
+        Dictionary<int, double> probabilityByScoreDictionary,
+        PriorityQueue<int, int> scoresPriorityQueue)
+    {
+        var result = 0.0;
+
+        for (var score = 1; score <= maxPts; score++)
+        {
+            var probability = probabilityByScoreDictionary[score];
+
+            if (score < k)
+            {
+                scoresPriorityQueue.Enqueue(score, score);
+            }
+            else if (score <= n)
+            {
+                result += probability;
             }
         }
 

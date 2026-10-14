@@ -33,6 +33,19 @@ public sealed class NumberOfGoodPairsDictionary : INumberOfGoodPairs
             }
         }
 
-        return countDictionary.Select(pair => pair.Value).Select(count => count * (count - 1) / 2).Sum();
+        var counts = new int[countDictionary.Count];
+
+        countDictionary.Values.CopyTo(counts, 0);
+
+        var result = 0;
+
+        for (var i = 0; i < counts.Length; i++)
+        {
+            var count = counts[i];
+
+            result += count * (count - 1) / 2;
+        }
+
+        return result;
     }
 }

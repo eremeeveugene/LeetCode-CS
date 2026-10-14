@@ -25,6 +25,22 @@ public abstract class ClimbingStairsTestsBase<T> where T : IClimbingStairs, new(
     [DataRow(7, 21)]
     [DataRow(8, 34)]
     [DataRow(9, 55)]
+    [DataRow(10, 89)]
+    [DataRow(11, 144)]
+    [DataRow(12, 233)]
+    [DataRow(13, 377)]
+    [DataRow(14, 610)]
+    [DataRow(15, 987)]
+    [DataRow(16, 1597)]
+    [DataRow(17, 2584)]
+    [DataRow(18, 4181)]
+    [DataRow(19, 6765)]
+    [DataRow(20, 10946)]
+    [DataRow(25, 121393)]
+    [DataRow(30, 1346269)]
+    [DataRow(35, 14930352)]
+    [DataRow(40, 165580141)]
+    [DataRow(45, 1836311903)]
     public void ClimbStairs_WithNumberOfSteps_ReturnsTotalDistinctWaysToReachTop(int n, int expectedResult)
     {
         // Arrange

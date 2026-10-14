@@ -23,8 +23,10 @@ public sealed class TwoOutOfThreeFrequencyArray : ITwoOutOfThree
     {
         var frequencyArray = new int[100];
 
-        foreach (var num1 in nums1)
+        for (var i = 0; i < nums1.Length; i++)
         {
+            var num1 = nums1[i];
+
             var num1Index = num1 - 1;
 
             if (frequencyArray[num1Index] != 0)
@@ -37,8 +39,10 @@ public sealed class TwoOutOfThreeFrequencyArray : ITwoOutOfThree
 
         var result = new List<int>();
 
-        foreach (var num2 in nums2)
+        for (var i = 0; i < nums2.Length; i++)
         {
+            var num2 = nums2[i];
+
             var num2Index = num2 - 1;
 
             switch (frequencyArray[num2Index])
@@ -54,8 +58,10 @@ public sealed class TwoOutOfThreeFrequencyArray : ITwoOutOfThree
             }
         }
 
-        foreach (var num3 in nums3)
+        for (var i = 0; i < nums3.Length; i++)
         {
+            var num3 = nums3[i];
+
             var num3Index = num3 - 1;
 
             if (frequencyArray[num3Index] != 1 && frequencyArray[num3Index] != 2)

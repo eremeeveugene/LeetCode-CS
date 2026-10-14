@@ -47,7 +47,7 @@ public sealed class OpenTheLockBreadthFirstSearch : IOpenTheLock
             {
                 var digit = char.GetNumericValue(state[i]);
 
-                foreach (var move in new[] { -1, 1 })
+                for (var move = -1; move <= 1; move += 2)
                 {
                     var newDigit = (digit + move + 10) % 10;
                     var newState = state[..i] + newDigit + state[(i + 1)..];

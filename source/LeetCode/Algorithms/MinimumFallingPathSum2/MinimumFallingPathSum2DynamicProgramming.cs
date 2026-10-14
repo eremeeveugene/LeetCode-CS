@@ -72,6 +72,13 @@ public sealed class MinimumFallingPathSum2DynamicProgramming : IMinimumFallingPa
             dp = newDp;
         }
 
-        return dp.Prepend(int.MaxValue).Min();
+        var result = int.MaxValue;
+
+        for (var i = 0; i < n; i++)
+        {
+            result = Math.Min(result, dp[i]);
+        }
+
+        return result;
     }
 }

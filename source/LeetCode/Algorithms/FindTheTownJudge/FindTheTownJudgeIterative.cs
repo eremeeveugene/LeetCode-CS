@@ -45,19 +45,25 @@ public sealed class FindTheTownJudgeIterative : IFindTheTownJudge
             }
         }
 
-        foreach (var judge in judges)
+        var candidates = new int[judges.Count];
+
+        judges.Keys.CopyTo(candidates, 0);
+
+        for (var i = 0; i < candidates.Length; i++)
         {
-            if (judge.Value.Sum() != sum - judge.Key)
+            var candidate = candidates[i];
+
+            if (SumOf(judges[candidate]) != sum - candidate)
             {
                 continue;
             }
 
-            if (TrustsSomeoneElse(judges, judge.Key))
+            if (TrustsSomeoneElse(judges, candidate))
             {
                 continue;
             }
 
-            return judge.Key;
+            return candidate;
         }
 
         return -1;
@@ -65,9 +71,13 @@ public sealed class FindTheTownJudgeIterative : IFindTheTownJudge
 
     private static bool TrustsSomeoneElse(Dictionary<int, HashSet<int>> judges, int candidate)
     {
-        foreach (var otherJudge in judges)
+        var supporterSets = new HashSet<int>[judges.Count];
+
+        judges.Values.CopyTo(supporterSets, 0);
+
+        for (var i = 0; i < supporterSets.Length; i++)
         {
-            if (!otherJudge.Value.Contains(candidate))
+            if (!supporterSets[i].Contains(candidate))
             {
                 continue;
             }
@@ -76,5 +86,21 @@ public sealed class FindTheTownJudgeIterative : IFindTheTownJudge
         }
 
         return false;
+    }
+
+    private static int SumOf(HashSet<int> values)
+    {
+        var items = new int[values.Count];
+
+        values.CopyTo(items);
+
+        var sum = 0;
+
+        for (var i = 0; i < items.Length; i++)
+        {
+            sum += items[i];
+        }
+
+        return sum;
     }
 }

@@ -25,8 +25,10 @@ public sealed class FaultyKeyboardStringBuilder : IFaultyKeyboard
     {
         var stringBuilder = new StringBuilder();
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             if (c == 'i')
             {
                 var left = 0;

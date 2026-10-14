@@ -21,7 +21,13 @@ public sealed class TargetSumRecursion : ITargetSum
     /// </remarks>
     public int FindTargetSumWays(int[] nums, int target)
     {
-        var totalSum = nums.Sum();
+        var totalSum = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            totalSum += nums[i];
+        }
+
 
         return CalculateWays(nums, 0, 0, target, totalSum, InitializeMemo(nums.Length, (2 * totalSum) + 1));
     }

@@ -30,9 +30,16 @@ public sealed class CountTheNumberOfConsistentStringsHashSet : ICountTheNumberOf
         {
             var word = words[i];
 
-            if (word.Any(wordChar => !allowedHashSet.Contains(wordChar)))
+            for (var j = 0; j < word.Length; j++)
             {
+                if (allowedHashSet.Contains(word[j]))
+                {
+                    continue;
+                }
+
                 count--;
+
+                break;
             }
         }
 

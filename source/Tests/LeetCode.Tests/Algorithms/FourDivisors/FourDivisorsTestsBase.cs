@@ -34,6 +34,11 @@ public abstract class FourDivisorsTestsBase<T> where T : IFourDivisors, new()
     [DataRow(new[] { 100 }, 0)]
     [DataRow(new[] { 2, 3, 5, 7 }, 0)]
     [DataRow(new[] { 33 }, 48)]
+    [DataRow(new[] { 8 }, 15)]
+    [DataRow(new[] { 27 }, 40)]
+    [DataRow(new[] { 99991, 94 }, 144)]
+    [DataRow(new[] { 100000, 99999, 65536 }, 0)]
+    [DataRow(new[] { 30, 42, 66, 70 }, 0)]
     public void SumFourDivisors_WithInputNumsArray_ReturnsSumOfNumbersThatHaveFourDivisors(int[] nums, int expectedResult)
     {
         // Arrange

@@ -25,8 +25,10 @@ public sealed class RemoveSubFoldersFromTheFilesystemHashSet : IRemoveSubFolders
 
         var foldersHashSet = new HashSet<string>(folders);
 
-        foreach (var folder in folders)
+        for (var folderIndex = 0; folderIndex < folders.Length; folderIndex++)
         {
+            var folder = folders[folderIndex];
+
             var i = 1;
             var add = true;
 

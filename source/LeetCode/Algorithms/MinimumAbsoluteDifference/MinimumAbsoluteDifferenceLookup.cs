@@ -14,6 +14,8 @@ namespace LeetCode.Algorithms.MinimumAbsoluteDifference;
 /// <inheritdoc />
 public sealed class MinimumAbsoluteDifferenceLookup : IMinimumAbsoluteDifference
 {
+    private const int MaxStackAllocLength = 1024;
+
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n + R), where R = maxValue - MinValue + 1
@@ -32,7 +34,9 @@ public sealed class MinimumAbsoluteDifferenceLookup : IMinimumAbsoluteDifference
             maxValue = Math.Max(maxValue, num);
         }
 
-        Span<bool> numsLookup = stackalloc bool[maxValue - minValue + 1];
+        var lookupLength = maxValue - minValue + 1;
+
+        Span<bool> numsLookup = lookupLength <= MaxStackAllocLength ? stackalloc bool[lookupLength] : new bool[lookupLength];
 
         for (var i = 0; i < arr.Length; i++)
         {

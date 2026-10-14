@@ -29,9 +29,16 @@ public sealed class MaximumNumberOfWordsYouCanTypeHashSet : IMaximumNumberOfWord
         {
             var word = words[i];
 
-            if (word.Any(brokenLettersHashSet.Contains))
+            for (var j = 0; j < word.Length; j++)
             {
+                if (!brokenLettersHashSet.Contains(word[j]))
+                {
+                    continue;
+                }
+
                 count--;
+
+                break;
             }
         }
 

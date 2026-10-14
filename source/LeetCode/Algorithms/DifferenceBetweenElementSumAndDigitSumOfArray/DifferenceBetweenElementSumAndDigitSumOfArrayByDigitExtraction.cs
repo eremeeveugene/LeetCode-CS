@@ -23,8 +23,10 @@ public sealed class DifferenceBetweenElementSumAndDigitSumOfArrayByDigitExtracti
     {
         var absoluteSum = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             absoluteSum += num;
 
             var currentNum = num;

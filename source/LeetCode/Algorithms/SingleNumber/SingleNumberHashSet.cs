@@ -33,6 +33,10 @@ public sealed class SingleNumberHashSet : ISingleNumber
             }
         }
 
-        return numsHashSet.Single();
+        var result = new int[1];
+
+        numsHashSet.CopyTo(result, 0, 1);
+
+        return result[0];
     }
 }

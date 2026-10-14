@@ -39,10 +39,16 @@ public sealed class ConstructKPalindromeStringsFrequencyDictionary : IConstructK
             count++;
         }
 
+        var counts = new int[charToCountDictionary.Count];
+
+        charToCountDictionary.Values.CopyTo(counts, 0);
+
         var oddCount = 0;
 
-        foreach (var count in charToCountDictionary.Values)
+        for (var i = 0; i < counts.Length; i++)
         {
+            var count = counts[i];
+
             oddCount += count % 2;
         }
 

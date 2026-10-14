@@ -32,8 +32,10 @@ public sealed class TheNumberOfTheSmallestUnoccupiedChairPriorityQueue : ITheNum
 
         var result = -1;
 
-        foreach (var time in times)
+        for (var i = 0; i < times.Length; i++)
         {
+            var time = times[i];
+
             var arrival = time[0];
             var leaving = time[1];
 

@@ -41,40 +41,39 @@ public sealed class FindAllGroupOfFarmlandBruteForce : IFindAllGroupOfFarmland
 
     private static void FindFarmland(int[][] land, List<int[]> result, int r1, int c1, int r2, int c2)
     {
-        while (true)
+        var extended = true;
+
+        while (extended)
         {
-            if (r2 + 1 < land.Length && land[r2 + 1][c2] == 1 && c2 + 1 < land[r2].Length && land[r2][c2 + 1] == 1)
+            var canGoDown = r2 + 1 < land.Length && land[r2 + 1][c2] == 1;
+            var canGoRight = c2 + 1 < land[r2].Length && land[r2][c2 + 1] == 1;
+
+            if (canGoDown && canGoRight)
             {
                 MarkAsVisited(land, r1, c1, r2 + 1, c2 + 1);
 
                 r2 += 1;
                 c2 += 1;
-
-                continue;
             }
-
-            if (r2 + 1 < land.Length && land[r2 + 1][c2] == 1)
+            else if (canGoDown)
             {
                 MarkAsVisited(land, r1, c1, r2 + 1, c2);
 
                 r2 += 1;
-
-                continue;
             }
-
-            if (c2 + 1 < land[r2].Length && land[r2][c2 + 1] == 1)
+            else if (canGoRight)
             {
                 MarkAsVisited(land, r1, c1, r2, c2 + 1);
 
                 c2 += 1;
-
-                continue;
             }
-
-            result.Add([r1, c1, r2, c2]);
-
-            break;
+            else
+            {
+                extended = false;
+            }
         }
+
+        result.Add([r1, c1, r2, c2]);
     }
 
     private static void MarkAsVisited(int[][] land, int r1, int c1, int r2, int c2)

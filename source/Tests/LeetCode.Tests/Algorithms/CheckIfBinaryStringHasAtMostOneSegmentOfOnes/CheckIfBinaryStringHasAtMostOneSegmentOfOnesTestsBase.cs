@@ -30,6 +30,13 @@ public abstract class CheckIfBinaryStringHasAtMostOneSegmentOfOnesTestsBase<T> w
     [DataRow("1110111", false)]
     [DataRow("1001000", false)]
     [DataRow("1100001", false)]
+    [DataRow("1100", true)]
+    [DataRow("11110000", true)]
+    [DataRow("10000", true)]
+    [DataRow("1101", false)]
+    [DataRow("100001", false)]
+    [DataRow("1010", false)]
+    [DataRow("1111111", true)]
     public void CheckOnesSegment_WithBinaryString_ReturnsTrueIfAtMostOneContiguousSegmentOfOnes(string s, bool expectedResult)
     {
         // Arrange

@@ -1,0 +1,17 @@
+<Dictionary>
+  <Acronyms>
+    <CasingExceptions>
+      <Acronym>AND</Acronym>
+      <Acronym>ASCII</Acronym>
+      <Acronym>ATM</Acronym>
+      <Acronym>BST</Acronym>
+      <Acronym>DI</Acronym>
+      <Acronym>IP</Acronym>
+      <Acronym>KMP</Acronym>
+      <Acronym>LFU</Acronym>
+      <Acronym>LRU</Acronym>
+      <Acronym>OR</Acronym>
+      <Acronym>XOR</Acronym>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>

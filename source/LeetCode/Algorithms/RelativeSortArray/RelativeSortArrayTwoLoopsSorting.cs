@@ -23,8 +23,10 @@ public sealed class RelativeSortArrayTwoLoopsSorting : IRelativeSortArray
     {
         var result = new List<int>();
 
-        foreach (var arr2Item in arr2)
+        for (var i = 0; i < arr2.Length; i++)
         {
+            var arr2Item = arr2[i];
+
             for (var j = 0; j < arr1.Length; j++)
             {
                 if (arr1[j] != arr2Item)
@@ -40,7 +42,15 @@ public sealed class RelativeSortArrayTwoLoopsSorting : IRelativeSortArray
 
         Array.Sort(arr1);
 
-        result.AddRange(arr1.Where(a => a >= 0));
+        for (var i = 0; i < arr1.Length; i++)
+        {
+            var num = arr1[i];
+
+            if (num >= 0)
+            {
+                result.Add(num);
+            }
+        }
 
         return [.. result];
     }

@@ -21,6 +21,15 @@ public sealed class SingleNumberXor : ISingleNumber
     /// </remarks>
     public int SingleNumber(int[] nums)
     {
-        return nums.Aggregate((current, num) => current ^ num);
+        var result = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            result ^= num;
+        }
+
+        return result;
     }
 }

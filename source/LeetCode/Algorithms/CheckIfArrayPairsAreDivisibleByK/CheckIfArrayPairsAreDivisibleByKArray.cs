@@ -23,8 +23,10 @@ public sealed class CheckIfArrayPairsAreDivisibleByKArray : ICheckIfArrayPairsAr
     {
         var remainderCount = new int[k];
 
-        foreach (var item in arr)
+        for (var i = 0; i < arr.Length; i++)
         {
+            var item = arr[i];
+
             var remainder = ((item % k) + k) % k;
 
             remainderCount[remainder]++;

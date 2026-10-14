@@ -34,6 +34,9 @@ public abstract class MaximumBeautyOfAnArrayAfterApplyingOperationTestsBase<T> w
     [DataRow(new[] { 3, 6, 9, 12, 15 }, 3, 3)]
     [DataRow(new[] { 1, 2 }, 1, 2)]
     [DataRow(new[] { 1, 100 }, 50, 2)]
+    [DataRow(new[] { 0, 100000 }, 50000, 2)]
+    [DataRow(new[] { 3, 3, 9, 15 }, 6, 4)]
+    [DataRow(new[] { 0, 5, 10, 15, 20 }, 5, 3)]
     public void MaximumBeauty_WithArrayAndK_ReturnsMaximizedBeauty(int[] nums, int k, int expectedResult)
     {
         // Arrange

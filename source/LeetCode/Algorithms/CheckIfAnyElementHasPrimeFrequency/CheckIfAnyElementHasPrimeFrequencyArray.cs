@@ -23,11 +23,23 @@ public sealed class CheckIfAnyElementHasPrimeFrequencyArray : CheckIfAnyElementH
     {
         var frequencyArray = new int[Count];
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             frequencyArray[num]++;
         }
 
-        return frequencyArray.Any(IsPrime);
+        for (var i = 0; i < frequencyArray.Length; i++)
+        {
+            var frequency = frequencyArray[i];
+
+            if (IsPrime(frequency))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

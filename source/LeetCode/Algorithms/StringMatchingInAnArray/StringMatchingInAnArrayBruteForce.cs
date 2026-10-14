@@ -21,6 +21,25 @@ public sealed class StringMatchingInAnArrayBruteForce : IStringMatchingInAnArray
     /// </remarks>
     public IList<string> StringMatching(string[] words)
     {
-        return words.Where((t1, i) => words.Where((t, j) => i != j && t.Contains(t1)).Any()).ToArray();
+        var result = new List<string>();
+
+        for (var i = 0; i < words.Length; i++)
+        {
+            var word = words[i];
+
+            for (var j = 0; j < words.Length; j++)
+            {
+                if (i == j || !words[j].Contains(word))
+                {
+                    continue;
+                }
+
+                result.Add(word);
+
+                break;
+            }
+        }
+
+        return result;
     }
 }

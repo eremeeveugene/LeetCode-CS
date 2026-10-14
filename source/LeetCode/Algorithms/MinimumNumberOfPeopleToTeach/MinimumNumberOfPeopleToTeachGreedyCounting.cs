@@ -27,8 +27,12 @@ public sealed class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberO
 
         for (var i = 0; i < usersCount; i++)
         {
-            foreach (var language in languages[i])
+            var userLanguagesList = languages[i];
+
+            for (var j = 0; j < userLanguagesList.Length; j++)
             {
+                var language = userLanguagesList[j];
+
                 userLanguages[GetUserLanguageIndex(i, language - 1, languagesCount)] = true;
             }
         }
@@ -39,8 +43,10 @@ public sealed class MinimumNumberOfPeopleToTeachGreedyCounting : IMinimumNumberO
 
         var usersToTeachCount = 0;
 
-        foreach (var friendship in friendships)
+        for (var i = 0; i < friendships.Length; i++)
         {
+            var friendship = friendships[i];
+
             var userA = friendship[0] - 1;
             var userB = friendship[1] - 1;
 

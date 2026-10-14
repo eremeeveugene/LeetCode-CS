@@ -21,7 +21,12 @@ public sealed class PartitionArrayIntoThreePartsWithEqualSumSinglePass : IPartit
     /// </remarks>
     public bool CanThreePartsEqualSum(int[] arr)
     {
-        var totalSum = arr.Sum();
+        var totalSum = 0;
+
+        for (var i = 0; i < arr.Length; i++)
+        {
+            totalSum += arr[i];
+        }
 
         if (totalSum % 3 != 0)
         {

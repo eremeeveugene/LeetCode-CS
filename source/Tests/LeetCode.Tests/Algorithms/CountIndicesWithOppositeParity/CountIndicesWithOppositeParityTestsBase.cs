@@ -35,6 +35,9 @@ public abstract class CountIndicesWithOppositeParityTestsBase<T> where T : ICoun
     [DataRow(new[] { 100, 99, 98, 97 }, new[] { 2, 1, 1, 0 })]
     [DataRow(new[] { 1, 2, 3, 4, 5 }, new[] { 2, 2, 1, 1, 0 })]
     [DataRow(new[] { 2, 1, 4, 3, 6 }, new[] { 2, 2, 1, 1, 0 })]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6 }, new[] { 3, 2, 2, 1, 1, 0 })]
+    [DataRow(new[] { 2, 3, 2, 3, 2, 3, 2 }, new[] { 3, 3, 2, 2, 1, 1, 0 })]
+    [DataRow(new[] { 1, 1, 1, 2, 2, 2, 1 }, new[] { 3, 3, 3, 1, 1, 1, 0 })]
     public void CountOppositeParity_WithGivenNums_ReturnsCountOfSubsequentOppositeParityIndices(int[] nums, int[] expectedResult)
     {
         // Arrange

@@ -15,4 +15,4 @@ namespace LeetCode.Tests.Algorithms.CheckIfWordOccursAsPrefixOfAnyWordInSentence
 
 [TestClass]
 public sealed class CheckIfWordOccursAsPrefixOfAnyWordInSentenceIterativeTests
-    : CheckIfWordOccursAsPrefixOfAnyWordInSentenceTestBase<CheckIfWordOccursAsPrefixOfAnyWordInSentenceIterative>;
+    : CheckIfWordOccursAsPrefixOfAnyWordInSentenceTestsBase<CheckIfWordOccursAsPrefixOfAnyWordInSentenceIterative>;

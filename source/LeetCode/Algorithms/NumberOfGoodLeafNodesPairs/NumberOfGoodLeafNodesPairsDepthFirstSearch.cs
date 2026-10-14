@@ -45,30 +45,48 @@ public sealed class NumberOfGoodLeafNodesPairsDepthFirstSearch : INumberOfGoodLe
         var leftDistances = CountPairs(node.left, distance, ref result);
         var rightDistances = CountPairs(node.right, distance, ref result);
 
-        result += leftDistances.Sum(leftDistance => rightDistances.Count(rightDistance => leftDistance + rightDistance <= distance));
+        result += CountGoodPairs(leftDistances, rightDistances, distance);
 
         var currentDistances = new List<int>();
+
+        AddIncrementedDistances(leftDistances, distance, currentDistances);
+        AddIncrementedDistances(rightDistances, distance, currentDistances);
+
+        return currentDistances;
+    }
+
+    private static int CountGoodPairs(List<int> leftDistances, List<int> rightDistances, int distance)
+    {
+        var count = 0;
 
         for (var i = 0; i < leftDistances.Count; i++)
         {
             var leftDistance = leftDistances[i];
 
-            if (leftDistance + 1 <= distance)
+            for (var j = 0; j < rightDistances.Count; j++)
             {
-                currentDistances.Add(leftDistance + 1);
+                var rightDistance = rightDistances[j];
+
+                if (leftDistance + rightDistance <= distance)
+                {
+                    count++;
+                }
             }
         }
 
-        for (var i = 0; i < rightDistances.Count; i++)
+        return count;
+    }
+
+    private static void AddIncrementedDistances(List<int> childDistances, int distance, List<int> currentDistances)
+    {
+        for (var i = 0; i < childDistances.Count; i++)
         {
-            var rightDistance = rightDistances[i];
+            var childDistance = childDistances[i];
 
-            if (rightDistance + 1 <= distance)
+            if (childDistance + 1 <= distance)
             {
-                currentDistances.Add(rightDistance + 1);
+                currentDistances.Add(childDistance + 1);
             }
         }
-
-        return currentDistances;
     }
 }

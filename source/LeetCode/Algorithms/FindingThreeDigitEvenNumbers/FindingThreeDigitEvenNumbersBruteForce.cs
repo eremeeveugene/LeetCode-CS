@@ -41,7 +41,9 @@ public sealed class FindingThreeDigitEvenNumbersBruteForce : IFindingThreeDigitE
             }
         }
 
-        var result = numbersHashSet.ToArray();
+        var result = new int[numbersHashSet.Count];
+
+        numbersHashSet.CopyTo(result);
 
         Array.Sort(result);
 

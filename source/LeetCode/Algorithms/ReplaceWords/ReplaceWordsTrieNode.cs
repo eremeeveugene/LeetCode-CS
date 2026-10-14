@@ -33,9 +33,14 @@ public sealed class ReplaceWordsTrieNode : IReplaceWords
 
             var current = trie.Root;
 
-            foreach (var c in word.TakeWhile(c => current.Children.ContainsKey(c) && current.Word == null))
+            for (var j = 0; j < word.Length; j++)
             {
-                current = current.Children[c];
+                if (current.Word != null || !current.Children.TryGetValue(word[j], out var child))
+                {
+                    break;
+                }
+
+                current = child;
             }
 
             if (current.Word != null)
@@ -49,7 +54,7 @@ public sealed class ReplaceWordsTrieNode : IReplaceWords
 
     private sealed class Trie
     {
-        public Trie(IEnumerable<string> words)
+        public Trie(IList<string> words)
         {
             AddRange(words);
         }
@@ -60,8 +65,10 @@ public sealed class ReplaceWordsTrieNode : IReplaceWords
         {
             var node = Root;
 
-            foreach (var c in word)
+            for (var i = 0; i < word.Length; i++)
             {
+                var c = word[i];
+
                 if (!node.Children.TryGetValue(c, out var value))
                 {
                     value = new TrieNode();
@@ -75,10 +82,12 @@ public sealed class ReplaceWordsTrieNode : IReplaceWords
             node.Word = word;
         }
 
-        private void AddRange(IEnumerable<string> words)
+        private void AddRange(IList<string> words)
         {
-            foreach (var word in words)
+            for (var i = 0; i < words.Count; i++)
             {
+                var word = words[i];
+
                 Add(word);
             }
         }

@@ -24,7 +24,12 @@ public sealed class CountNumberOfMaximumBitwiseORSubsetsBacktracking : ICountNum
         var maxOr = 0;
         var count = 0;
 
-        maxOr = nums.Aggregate(maxOr, (current, num) => current | num);
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            maxOr |= num;
+        }
 
         CountMaxOrSubsetsHelper(nums, 0, 0, ref maxOr, ref count);
 

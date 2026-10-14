@@ -26,8 +26,10 @@ public sealed class NextGreaterElement1StackDictionary : INextGreaterElement1
         var stack = new Stack<int>();
         var dictionary = new Dictionary<int, int>();
 
-        foreach (var num in nums2)
+        for (var i = 0; i < nums2.Length; i++)
         {
+            var num = nums2[i];
+
             while (stack.Count > 0 && stack.Peek() < num)
             {
                 dictionary[stack.Pop()] = num;

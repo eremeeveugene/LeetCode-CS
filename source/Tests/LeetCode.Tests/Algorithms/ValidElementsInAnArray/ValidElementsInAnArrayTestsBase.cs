@@ -42,7 +42,7 @@ public abstract class ValidElementsInAnArrayTestsBase<T> where T : IValidElement
         var solution = new T();
 
         // Act
-        var actualResult = solution.FindValidElements(nums).ToArray();
+        var actualResult = solution.FindValidElements(nums);
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult);

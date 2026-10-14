@@ -23,13 +23,17 @@ public sealed class MergeTwo2DArraysBySummingValuesSortedDictionary : IMergeTwo2
     {
         var dictionary = new SortedDictionary<int, int>();
 
-        foreach (var num in nums1)
+        for (var i = 0; i < nums1.Length; i++)
         {
+            var num = nums1[i];
+
             dictionary[num[0]] = num[1];
         }
 
-        foreach (var num in nums2)
+        for (var i = 0; i < nums2.Length; i++)
         {
+            var num = nums2[i];
+
             if (dictionary.ContainsKey(num[0]))
             {
                 dictionary[num[0]] += num[1];
@@ -40,15 +44,17 @@ public sealed class MergeTwo2DArraysBySummingValuesSortedDictionary : IMergeTwo2
             }
         }
 
+        var keys = new int[dictionary.Count];
+        var values = new int[dictionary.Count];
+
+        dictionary.Keys.CopyTo(keys, 0);
+        dictionary.Values.CopyTo(values, 0);
+
         var result = new int[dictionary.Count][];
 
-        var i = 0;
-
-        foreach (var keyValuePair in dictionary)
+        for (var i = 0; i < keys.Length; i++)
         {
-            result[i] = [keyValuePair.Key, keyValuePair.Value];
-
-            i++;
+            result[i] = [keys[i], values[i]];
         }
 
         return result;

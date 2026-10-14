@@ -189,7 +189,25 @@ public abstract class RandomPickIndexTestsBase
 
             public bool Equals(Result? other)
             {
-                return other is not null && other._validOptions.Any(o => _validOptions.Contains(o));
+                if (other is null)
+                {
+                    return false;
+                }
+
+                for (var i = 0; i < other._validOptions.Length; i++)
+                {
+                    var option = other._validOptions[i];
+
+                    for (var j = 0; j < _validOptions.Length; j++)
+                    {
+                        if (_validOptions[j] == option)
+                        {
+                            return true;
+                        }
+                    }
+                }
+
+                return false;
             }
 
             public override bool Equals(object? obj)

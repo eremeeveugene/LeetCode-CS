@@ -136,10 +136,10 @@ public abstract class ImageOverlapTestsBase<T> where T : IImageOverlap, new()
             4
         ];
 
-        var fullImage = Enumerable.Range(0, 30).Select(_ => Enumerable.Repeat(1, 30).ToArray()).ToArray();
-        var emptyImage = Enumerable.Range(0, 30).Select(_ => new int[30]).ToArray();
-        var leftEdgeImage = Enumerable.Range(0, 30).Select(_ => new int[30]).ToArray();
-        var rightEdgeImage = Enumerable.Range(0, 30).Select(_ => new int[30]).ToArray();
+        var fullImage = CreateImage(30, 1);
+        var emptyImage = CreateImage(30, 0);
+        var leftEdgeImage = CreateImage(30, 0);
+        var rightEdgeImage = CreateImage(30, 0);
 
         for (var row = 0; row < 30; row++)
         {
@@ -151,5 +151,19 @@ public abstract class ImageOverlapTestsBase<T> where T : IImageOverlap, new()
         yield return [emptyImage, fullImage, 0];
         yield return [leftEdgeImage, rightEdgeImage, 30];
         yield return [rightEdgeImage, leftEdgeImage, 30];
+    }
+
+    private static int[][] CreateImage(int size, int value)
+    {
+        var image = new int[size][];
+
+        for (var i = 0; i < size; i++)
+        {
+            image[i] = new int[size];
+
+            Array.Fill(image[i], value);
+        }
+
+        return image;
     }
 }

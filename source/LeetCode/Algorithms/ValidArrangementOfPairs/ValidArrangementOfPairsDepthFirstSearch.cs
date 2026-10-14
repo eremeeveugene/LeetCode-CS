@@ -59,8 +59,14 @@ public sealed class ValidArrangementOfPairsDepthFirstSearch : IValidArrangementO
     {
         var startNode = pairs[0][0];
 
-        foreach (var (start, startCount) in startToCountDictionary)
+        var starts = new int[startToCountDictionary.Count];
+
+        startToCountDictionary.Keys.CopyTo(starts, 0);
+
+        for (var i = 0; i < starts.Length; i++)
         {
+            var start = starts[i];
+            var startCount = startToCountDictionary[start];
             var endCount = endToCountDictionary.GetValueOrDefault(start);
 
             if (startCount > endCount)

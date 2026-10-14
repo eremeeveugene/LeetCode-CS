@@ -21,13 +21,23 @@ public sealed class SingleNumber3Bitwise : ISingleNumber3
     /// </remarks>
     public int[] SingleNumber(int[] nums)
     {
-        var xor = nums.Aggregate((current, num) => current ^ num);
+        var xor = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            xor ^= num;
+        }
+
 
         var rightmostSetBit = xor & ~(xor - 1);
         var result = new int[2];
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if ((num & rightmostSetBit) != 0)
             {
                 result[0] ^= num;

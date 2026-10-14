@@ -21,8 +21,10 @@ public sealed class KthLargestElementInStreamPriorityQueue : IKthLargestElementI
     {
         _k = k;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             Add(num);
         }
     }

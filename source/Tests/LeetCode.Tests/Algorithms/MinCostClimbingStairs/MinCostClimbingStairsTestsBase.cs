@@ -22,6 +22,20 @@ public abstract class MinCostClimbingStairsTestsBase<T> where T : IMinCostClimbi
     [DataRow(new[] { 0, 0, 1, 2 }, 1)]
     [DataRow(new[] { 0, 0, 2, 3 }, 2)]
     [DataRow(new[] { 0, 1, 2, 2 }, 2)]
+    [DataRow(new[] { 0, 0 }, 0)]
+    [DataRow(new[] { 1, 1 }, 1)]
+    [DataRow(new[] { 999, 999 }, 999)]
+    [DataRow(new[] { 5, 3 }, 3)]
+    [DataRow(new[] { 0, 1, 0 }, 0)]
+    [DataRow(new[] { 1, 2, 3 }, 2)]
+    [DataRow(new[] { 3, 2, 1 }, 2)]
+    [DataRow(new[] { 10, 1, 10, 1, 10 }, 2)]
+    [DataRow(new[] { 999, 0, 999, 0, 999, 0 }, 0)]
+    [DataRow(new[] { 0, 0, 0, 0 }, 0)]
+    [DataRow(new[] { 1, 100, 1, 100, 1, 100 }, 3)]
+    [DataRow(new[] { 5, 5, 5, 5, 5 }, 10)]
+    [DataRow(new[] { 2, 7, 9, 3, 1 }, 10)]
+    [DataRow(new[] { 100, 1, 1, 100, 1, 1, 100 }, 4)]
     public void MinCostClimbingStairs_GivenCostArray_ReturnsMinimumCostToClimb(int[] cost, int expectedResult)
     {
         // Arrange

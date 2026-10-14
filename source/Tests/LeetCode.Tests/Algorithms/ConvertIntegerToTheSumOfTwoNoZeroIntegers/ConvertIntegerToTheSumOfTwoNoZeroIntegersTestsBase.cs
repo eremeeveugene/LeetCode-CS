@@ -23,6 +23,23 @@ public abstract class ConvertIntegerToTheSumOfTwoNoZeroIntegersTestsBase<T> wher
     [DataRow(700, new[] { 1, 699 })]
     [DataRow(701, new[] { 2, 699 })]
     [DataRow(1010, new[] { 11, 999 })]
+    [DataRow(3, new[] { 1, 2 })]
+    [DataRow(4, new[] { 1, 3 })]
+    [DataRow(5, new[] { 1, 4 })]
+    [DataRow(9, new[] { 1, 8 })]
+    [DataRow(10, new[] { 1, 9 })]
+    [DataRow(12, new[] { 1, 11 })]
+    [DataRow(20, new[] { 1, 19 })]
+    [DataRow(100, new[] { 1, 99 })]
+    [DataRow(101, new[] { 2, 99 })]
+    [DataRow(102, new[] { 3, 99 })]
+    [DataRow(1000, new[] { 1, 999 })]
+    [DataRow(10000, new[] { 1, 9999 })]
+    [DataRow(1001, new[] { 2, 999 })]
+    [DataRow(9999, new[] { 1, 9998 })]
+    [DataRow(5000, new[] { 1, 4999 })]
+    [DataRow(1111, new[] { 112, 999 })]
+    [DataRow(2020, new[] { 21, 1999 })]
     public void GetNoZeroIntegers_WithPositiveIntegerN_ReturnsTwoNoZeroIntegersThatSumToN(int n, int[] expectedResult)
     {
         // Arrange

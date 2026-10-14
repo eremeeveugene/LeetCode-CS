@@ -25,8 +25,10 @@ public sealed class FindTheMaximumLengthOfValidSubsequence2DynamicProgramming : 
 
         var dp = new int[k, k];
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             var mod = num % k;
 
             for (var prev = 0; prev < k; prev++)

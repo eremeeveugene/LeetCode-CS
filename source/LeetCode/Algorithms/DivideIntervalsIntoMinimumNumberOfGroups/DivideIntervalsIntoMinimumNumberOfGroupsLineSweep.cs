@@ -24,16 +24,20 @@ public sealed class DivideIntervalsIntoMinimumNumberOfGroupsLineSweep : IDivideI
         var rangeStart = int.MaxValue;
         var rangeEnd = int.MinValue;
 
-        foreach (var interval in intervals)
+        for (var i = 0; i < intervals.Length; i++)
         {
+            var interval = intervals[i];
+
             rangeStart = Math.Min(rangeStart, interval[0]);
             rangeEnd = Math.Max(rangeEnd, interval[1]);
         }
 
         var pointToCount = new int[rangeEnd + 2];
 
-        foreach (var interval in intervals)
+        for (var i = 0; i < intervals.Length; i++)
         {
+            var interval = intervals[i];
+
             pointToCount[interval[0]]++;
             pointToCount[interval[1] + 1]--;
         }
@@ -41,9 +45,9 @@ public sealed class DivideIntervalsIntoMinimumNumberOfGroupsLineSweep : IDivideI
         var concurrentIntervals = 0;
         var maxConcurrentIntervals = 0;
 
-        for (var i = rangeStart; i <= rangeEnd; i++)
+        for (var point = rangeStart; point <= rangeEnd; point++)
         {
-            concurrentIntervals += pointToCount[i];
+            concurrentIntervals += pointToCount[point];
 
             maxConcurrentIntervals = Math.Max(maxConcurrentIntervals, concurrentIntervals);
         }

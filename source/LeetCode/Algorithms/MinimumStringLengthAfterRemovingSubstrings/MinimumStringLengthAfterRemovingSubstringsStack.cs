@@ -25,8 +25,10 @@ public sealed class MinimumStringLengthAfterRemovingSubstringsStack : IMinimumSt
 
         var stack = new Stack<char>();
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             switch (c)
             {
                 case 'B' when stack.Count > 0 && stack.Peek() == 'A':

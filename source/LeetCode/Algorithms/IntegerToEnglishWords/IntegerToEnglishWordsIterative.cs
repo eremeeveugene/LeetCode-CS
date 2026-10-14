@@ -54,7 +54,7 @@ public sealed class IntegerToEnglishWordsIterative : IIntegerToEnglishWords
         { 0, "Zero" }
     };
 
-    private static readonly int[] DescendingWordKeys = [.. WordsDictionary.Keys.OrderDescending()];
+    private static readonly int[] DescendingWordKeys = CreateDescendingWordKeys();
 
     /// <inheritdoc />
     /// <remarks>
@@ -92,6 +92,18 @@ public sealed class IntegerToEnglishWordsIterative : IIntegerToEnglishWords
         }
 
         return resultStringBuilder.ToString().TrimEnd();
+    }
+
+    private static int[] CreateDescendingWordKeys()
+    {
+        var keys = new int[WordsDictionary.Count];
+
+        WordsDictionary.Keys.CopyTo(keys, 0);
+
+        Array.Sort(keys);
+        Array.Reverse(keys);
+
+        return keys;
     }
 
     private static int GetLargestWordKey(int num)

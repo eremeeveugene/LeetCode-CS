@@ -21,12 +21,19 @@ public sealed class BitwiseXOROfAllPairingsBruteForce : IBitwiseXOROfAllPairings
     /// </remarks>
     public int XorAllNums(int[] nums1, int[] nums2)
     {
+        var n = nums1.Length;
+        var m = nums2.Length;
+
         var result = 0;
 
-        foreach (var num1 in nums1)
+        for (var i = 0; i < n; i++)
         {
-            foreach (var num2 in nums2)
+            var num1 = nums1[i];
+
+            for (var j = 0; j < m; j++)
             {
+                var num2 = nums2[j];
+
                 result ^= num1 ^ num2;
             }
         }

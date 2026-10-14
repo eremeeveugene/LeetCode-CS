@@ -24,6 +24,18 @@ public abstract class WaterBottlesTestsBase<T> where T : IWaterBottles, new()
     [DataRow(15, 4, 19)]
     [DataRow(100, 99, 101)]
     [DataRow(100, 2, 199)]
+    [DataRow(3, 3, 4)]
+    [DataRow(4, 2, 7)]
+    [DataRow(1, 100, 1)]
+    [DataRow(100, 3, 149)]
+    [DataRow(6, 4, 7)]
+    [DataRow(10, 3, 14)]
+    [DataRow(20, 5, 24)]
+    [DataRow(50, 7, 58)]
+    [DataRow(99, 2, 197)]
+    [DataRow(100, 100, 101)]
+    [DataRow(7, 2, 13)]
+    [DataRow(64, 4, 85)]
     public void NumWaterBottles_WithBottlesAndExchangeRate_ReturnsNumOfWaterBottles(int numBottles, int numExchange, int expectedResult)
     {
         // Arrange

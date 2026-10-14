@@ -25,6 +25,18 @@ public abstract class SqrtTestsBase<T> where T : ISqrt, new()
     [DataRow(10, 3)]
     [DataRow(17, 4)]
     [DataRow(2147395599, 46339)]
+    [DataRow(5, 2)]
+    [DataRow(9, 3)]
+    [DataRow(15, 3)]
+    [DataRow(16, 4)]
+    [DataRow(24, 4)]
+    [DataRow(25, 5)]
+    [DataRow(100, 10)]
+    [DataRow(99, 9)]
+    [DataRow(2147483647, 46340)]
+    [DataRow(2147395600, 46340)]
+    [DataRow(1000000, 1000)]
+    [DataRow(65535, 255)]
     public void MySqrt_WithInteger_CalculatesSquareRoot(int x, int expectedResult)
     {
         // Arrange

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.FindTheKthCharacterInStringGame1;
 
 /// <summary>
-///     Find the K-th Character in String Game I
+///     https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/description/
 /// </summary>
 public interface IFindTheKthCharacterInStringGame1
 {

@@ -48,6 +48,22 @@ public sealed class UncommonWordsFromTwoSentencesHashSet : IUncommonWordsFromTwo
             }
         }
 
-        return once.Except(moreThanOnce).ToArray();
+        var onceWords = new string[once.Count];
+
+        once.CopyTo(onceWords);
+
+        var uncommonWords = new List<string>();
+
+        for (var i = 0; i < onceWords.Length; i++)
+        {
+            var word = onceWords[i];
+
+            if (!moreThanOnce.Contains(word))
+            {
+                uncommonWords.Add(word);
+            }
+        }
+
+        return uncommonWords.ToArray();
     }
 }

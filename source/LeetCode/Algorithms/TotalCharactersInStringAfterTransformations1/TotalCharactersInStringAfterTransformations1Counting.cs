@@ -26,8 +26,10 @@ public sealed class TotalCharactersInStringAfterTransformations1Counting : ITota
     {
         Span<long> frequencies = stackalloc long[AlphabetLength];
 
-        foreach (var c in input)
+        for (var i = 0; i < input.Length; i++)
         {
+            var c = input[i];
+
             frequencies[c - 'a']++;
         }
 
@@ -53,8 +55,10 @@ public sealed class TotalCharactersInStringAfterTransformations1Counting : ITota
 
         long result = 0;
 
-        foreach (var frequency in frequencies)
+        for (var i = 0; i < frequencies.Length; i++)
         {
+            var frequency = frequencies[i];
+
             result = (result + frequency) % Modulo;
         }
 

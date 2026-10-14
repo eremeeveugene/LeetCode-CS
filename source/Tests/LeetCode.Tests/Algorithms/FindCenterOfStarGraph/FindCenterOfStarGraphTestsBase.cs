@@ -66,5 +66,9 @@ public abstract class FindCenterOfStarGraphTestsBase<T> where T : IFindCenterOfS
         yield return [new[] { new[] { 7, 1 }, new[] { 7, 2 }, new[] { 7, 3 }, new[] { 7, 4 } }, 7];
 
         yield return [new[] { new[] { 99, 1 }, new[] { 99, 2 } }, 99];
+
+        yield return [new[] { new[] { 12, 2 }, new[] { 12, 3 }, new[] { 12, 1 } }, 12];
+
+        yield return [new[] { new[] { 30, 9 }, new[] { 7, 30 }, new[] { 8, 30 }, new[] { 10, 30 }, new[] { 30, 4 }, new[] { 30, 5 }, new[] { 6, 30 } }, 30];
     }
 }

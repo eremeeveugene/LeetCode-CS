@@ -22,7 +22,12 @@ public sealed class MinimizedMaximumOfProductsDistributedToAnyStoreBinarySearch 
     public int MinimizedMaximum(int n, int[] quantities)
     {
         var left = 1;
-        var right = quantities.Max();
+        var right = 0;
+
+        for (var i = 0; i < quantities.Length; i++)
+        {
+            right = Math.Max(right, quantities[i]);
+        }
 
         var answer = right;
 
@@ -47,7 +52,14 @@ public sealed class MinimizedMaximumOfProductsDistributedToAnyStoreBinarySearch 
 
     private static bool CanDistribute(int[] quantities, int n, int maxPerStore)
     {
-        var storesNeeded = quantities.Sum(quantity => (quantity + maxPerStore - 1) / maxPerStore);
+        var storesNeeded = 0L;
+
+        for (var i = 0; i < quantities.Length; i++)
+        {
+            var quantity = quantities[i];
+
+            storesNeeded += (quantity + maxPerStore - 1) / maxPerStore;
+        }
 
         return storesNeeded <= n;
     }

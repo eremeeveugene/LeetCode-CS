@@ -35,13 +35,19 @@ public sealed class MajorityFrequencyCharactersFrequencyDictionary : IMajorityFr
             }
         }
 
+        var characters = new char[characterToFrequencyDictionary.Count];
+
+        characterToFrequencyDictionary.Keys.CopyTo(characters, 0);
+
         var maxFrequency = 0;
         var maxSize = 0;
 
         var frequencyToSizeDictionary = new Dictionary<int, int>();
 
-        foreach (var (_, frequency) in characterToFrequencyDictionary)
+        for (var i = 0; i < characters.Length; i++)
         {
+            var frequency = characterToFrequencyDictionary[characters[i]];
+
             if (!frequencyToSizeDictionary.TryAdd(frequency, 1))
             {
                 frequencyToSizeDictionary[frequency]++;
@@ -65,9 +71,11 @@ public sealed class MajorityFrequencyCharactersFrequencyDictionary : IMajorityFr
 
         var resultStringBuilder = new StringBuilder();
 
-        foreach (var (character, frequency) in characterToFrequencyDictionary)
+        for (var i = 0; i < characters.Length; i++)
         {
-            if (frequency == maxFrequency)
+            var character = characters[i];
+
+            if (characterToFrequencyDictionary[character] == maxFrequency)
             {
                 resultStringBuilder.Append(character);
             }

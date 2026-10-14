@@ -21,14 +21,7 @@ public sealed class SmallestRangeCoveringElementsFromKListsSortingWithSlidingWin
     /// </remarks>
     public int[] SmallestRange(IList<IList<int>> nums)
     {
-        var mergedNums = new List<(int Value, int ListIndex)>();
-
-        for (var i = 0; i < nums.Count; i++)
-        {
-            mergedNums.AddRange(nums[i].Select(num => (num, i)));
-        }
-
-        var sortedNums = mergedNums.OrderBy(x => x.Value).ToArray();
+        var sortedNums = BuildSortedNums(nums);
 
         var countMap = new Dictionary<int, int>();
         var min = 0;
@@ -73,5 +66,43 @@ public sealed class SmallestRangeCoveringElementsFromKListsSortingWithSlidingWin
         }
 
         return [min, max];
+    }
+
+    private static (int Value, int ListIndex)[] BuildSortedNums(IList<IList<int>> nums)
+    {
+        var totalCount = 0;
+
+        for (var i = 0; i < nums.Count; i++)
+        {
+            totalCount += nums[i].Count;
+        }
+
+        var sortedNums = new (int Value, int ListIndex)[totalCount];
+        var sortedIndex = 0;
+
+        for (var i = 0; i < nums.Count; i++)
+        {
+            var list = nums[i];
+
+            for (var j = 0; j < list.Count; j++)
+            {
+                var num = list[j];
+
+                sortedNums[sortedIndex] = (num, i);
+
+                sortedIndex++;
+            }
+        }
+
+        Array.Sort(
+            sortedNums,
+            (first, second) =>
+            {
+                var valueComparison = first.Value.CompareTo(second.Value);
+
+                return valueComparison != 0 ? valueComparison : first.ListIndex.CompareTo(second.ListIndex);
+            });
+
+        return sortedNums;
     }
 }

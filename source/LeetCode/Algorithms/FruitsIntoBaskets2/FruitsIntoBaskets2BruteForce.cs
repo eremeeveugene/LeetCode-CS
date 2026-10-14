@@ -23,8 +23,10 @@ public sealed class FruitsIntoBaskets2BruteForce : IFruitsIntoBaskets2
     {
         var unplacedFruitsCount = fruits.Length;
 
-        foreach (var fruit in fruits)
+        for (var i = 0; i < fruits.Length; i++)
         {
+            var fruit = fruits[i];
+
             for (var j = 0; j < baskets.Length; j++)
             {
                 if (fruit > baskets[j])

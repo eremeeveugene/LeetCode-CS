@@ -17,7 +17,7 @@ public sealed class RepeatedSubstringPatternIterative : IRepeatedSubstringPatter
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n^2)
-    ///     Space complexity - O(n)
+    ///     Space complexity - O(1)
     /// </remarks>
     public bool RepeatedSubstringPattern(string s)
     {
@@ -28,12 +28,24 @@ public sealed class RepeatedSubstringPatternIterative : IRepeatedSubstringPatter
                 continue;
             }
 
-            if (s.Where((t, j) => t != s[..i][j % i]).Any())
+            var isRepeated = true;
+
+            for (var j = i; j < s.Length; j++)
             {
-                continue;
+                if (s[j] == s[j - i])
+                {
+                    continue;
+                }
+
+                isRepeated = false;
+
+                break;
             }
 
-            return true;
+            if (isRepeated)
+            {
+                return true;
+            }
         }
 
         return false;

@@ -33,6 +33,17 @@ public sealed class SingleNumber2Dictionary : ISingleNumber2
             }
         }
 
-        return numsDictionary.First(num => num.Value < 3).Key;
+        var keys = new int[numsDictionary.Count];
+
+        numsDictionary.Keys.CopyTo(keys, 0);
+
+        var keyIndex = 0;
+
+        while (numsDictionary[keys[keyIndex]] >= 3)
+        {
+            keyIndex++;
+        }
+
+        return keys[keyIndex];
     }
 }

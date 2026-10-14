@@ -26,6 +26,16 @@ public abstract class ValidParenthesisStringTestsBase<T> where T : IValidParenth
     [DataRow(")(*()(**(*)())*))())())*)()()*(((*)()))(**()*)**(*", false)]
     [DataRow(")))(*)**)))*)))))*)*(((()(((*())(***)**(**((()))()((*((()(((", false)]
     [DataRow("(((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(())", false)]
+    [DataRow("*(", false)]
+    [DataRow("(*", true)]
+    [DataRow("*)", true)]
+    [DataRow("))", false)]
+    [DataRow("()*", true)]
+    [DataRow("((*)", true)]
+    [DataRow("(*)(", false)]
+    [DataRow("*(*", true)]
+    [DataRow("**", true)]
+    [DataRow("*)(", false)]
     public void CheckValidString_WithParenthesisAndWildcardCharacters_ReturnsTrueIfInterpretableAsValidExpression(string s, bool expectedResult)
     {
         // Arrange

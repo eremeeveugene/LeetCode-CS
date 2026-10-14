@@ -24,10 +24,19 @@ public sealed class FindScoreOfAnArrayAfterMarkingAllElementsSorting : IFindScor
         long score = 0;
         var markedElements = new bool[nums.Length];
 
-        var elements = nums.Select((value, index) => (Value: value, Index: index)).OrderBy(e => e.Value).ThenBy(e => e.Index);
+        var elements = new (int Value, int Index)[nums.Length];
 
-        foreach (var (value, index) in elements)
+        for (var i = 0; i < nums.Length; i++)
         {
+            elements[i] = (nums[i], i);
+        }
+
+        Array.Sort(elements, (a, b) => a.Value != b.Value ? a.Value.CompareTo(b.Value) : a.Index.CompareTo(b.Index));
+
+        for (var i = 0; i < elements.Length; i++)
+        {
+            var (value, index) = elements[i];
+
             if (markedElements[index])
             {
                 continue;

@@ -21,7 +21,12 @@ public sealed class PartitionEqualSubsetSumDynamicProgramming : IPartitionEqualS
     /// </remarks>
     public bool CanPartition(int[] nums)
     {
-        var total = nums.Sum();
+        var total = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            total += nums[i];
+        }
 
         if (total % 2 != 0)
         {
@@ -34,11 +39,13 @@ public sealed class PartitionEqualSubsetSumDynamicProgramming : IPartitionEqualS
 
         dp[0] = true;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
-            for (var i = target; i >= num; i--)
+            var num = nums[i];
+
+            for (var j = target; j >= num; j--)
             {
-                dp[i] = dp[i] || dp[i - num];
+                dp[j] = dp[j] || dp[j - num];
             }
         }
 

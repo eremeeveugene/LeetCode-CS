@@ -34,5 +34,43 @@ public abstract class CountSubmatricesWithAllOnesTestsBase<T> where T : ICountSu
         yield return [new[] { new[] { 1, 0, 1 }, new[] { 1, 1, 0 }, new[] { 1, 1, 0 } }, 13];
 
         yield return [new[] { new[] { 0, 1, 1, 0 }, new[] { 0, 1, 1, 1 }, new[] { 1, 1, 1, 0 } }, 24];
+
+        yield return [new[] { new[] { 1 } }, 1];
+
+        yield return [new[] { new[] { 0 } }, 0];
+
+        yield return [new[] { new[] { 1, 1, 1 } }, 6];
+
+        yield return [new[] { new[] { 1 }, new[] { 1 }, new[] { 1 } }, 6];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 0, 0 } }, 0];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 1, 1 } }, 9];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 0, 1 } }, 2];
+
+        yield return [new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 1 } }, 36];
+
+        yield return [new[] { new[] { 1, 0, 1, 1 } }, 4];
+
+        yield return [new[] { new[] { 1 }, new[] { 0 }, new[] { 1 }, new[] { 1 } }, 4];
+
+        yield return [new[] { new[] { 1, 1, 0 }, new[] { 1, 1, 0 }, new[] { 0, 0, 1 } }, 10];
+
+        yield return [new[] { new[] { 0, 1, 0 }, new[] { 1, 1, 1 }, new[] { 0, 1, 0 } }, 11];
+
+        yield return [new[] { new[] { 1, 1, 1, 1 }, new[] { 1, 1, 1, 1 } }, 30];
+
+        yield return [new[] { new[] { 1, 0, 1 }, new[] { 0, 1, 0 }, new[] { 1, 0, 1 } }, 5];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 1, 0 }, new[] { 1, 1 } }, 10];
+
+        yield return [new[] { new[] { 1, 1, 1, 0, 1 }, new[] { 1, 1, 1, 1, 1 } }, 29];
+
+        yield return [new[] { new[] { 0, 0, 0 }, new[] { 1, 1, 1 }, new[] { 0, 1, 1 }, new[] { 0, 0, 0 } }, 12];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 1, 0 }, new[] { 1, 0 } }, 8];
+
+        yield return [new[] { new[] { 1, 0, 1 }, new[] { 1, 1, 0 }, new[] { 1, 0, 1 }, new[] { 0, 1, 1 } }, 14];
     }
 }

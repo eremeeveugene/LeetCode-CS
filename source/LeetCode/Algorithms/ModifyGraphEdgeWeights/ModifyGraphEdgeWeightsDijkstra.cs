@@ -57,8 +57,10 @@ public sealed class ModifyGraphEdgeWeightsDijkstra : IModifyGraphEdgeWeights
             return [];
         }
 
-        foreach (var edge in edges)
+        for (var i = 0; i < edges.Length; i++)
         {
+            var edge = edges[i];
+
             if (edge[2] == -1)
             {
                 edge[2] = 1;
@@ -84,8 +86,12 @@ public sealed class ModifyGraphEdgeWeightsDijkstra : IModifyGraphEdgeWeights
                 continue;
             }
 
-            foreach (var edge in adjacencyEdges[current.Edge.Node])
+            var currentEdges = adjacencyEdges[current.Edge.Node];
+
+            for (var i = 0; i < currentEdges.Count; i++)
             {
+                var edge = currentEdges[i];
+
                 var weight = GetWeight(edges, distances, edge, current, difference, run);
 
                 var newDistance = distances[current.Edge.Node, run] + weight;

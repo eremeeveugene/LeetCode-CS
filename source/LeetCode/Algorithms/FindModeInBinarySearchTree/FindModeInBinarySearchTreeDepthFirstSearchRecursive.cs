@@ -32,9 +32,32 @@ public sealed class FindModeInBinarySearchTreeDepthFirstSearchRecursive : IFindM
 
         FindMode(root, dictionary);
 
-        var maxValue = dictionary.Values.Max();
+        var nums = new int[dictionary.Count];
 
-        return dictionary.Where(i => i.Value == maxValue).Select(i => i.Key).ToArray();
+        dictionary.Keys.CopyTo(nums, 0);
+
+        var maxValue = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            maxValue = Math.Max(maxValue, dictionary[num]);
+        }
+
+        var modes = new List<int>();
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            if (dictionary[num] == maxValue)
+            {
+                modes.Add(num);
+            }
+        }
+
+        return modes.ToArray();
     }
 
     private static void FindMode(TreeNode treeNode, Dictionary<int, int> dictionary)

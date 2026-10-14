@@ -40,6 +40,22 @@ public sealed class PlusOneIncrementDigitArray : IPlusOne
             }
         }
 
-        return carryDigit > 0 ? digits.Prepend(carryDigit).ToArray() : digits;
+        if (carryDigit == 0)
+        {
+            return digits;
+        }
+
+        var newDigits = new int[digits.Length + 1];
+
+        newDigits[0] = carryDigit;
+
+        for (var i = 0; i < digits.Length; i++)
+        {
+            var digit = digits[i];
+
+            newDigits[i + 1] = digit;
+        }
+
+        return newDigits;
     }
 }

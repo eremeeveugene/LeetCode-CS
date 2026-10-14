@@ -23,8 +23,10 @@ public sealed class RabbitsInForestFrequencyArray : IRabbitsInForest
     {
         var frequencyArray = new int[1000];
 
-        foreach (var answer in answers)
+        for (var i = 0; i < answers.Length; i++)
         {
+            var answer = answers[i];
+
             frequencyArray[answer]++;
         }
 

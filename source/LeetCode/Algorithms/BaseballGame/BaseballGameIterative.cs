@@ -21,10 +21,14 @@ public sealed class BaseballGameIterative : IBaseballGame
     /// </remarks>
     public int CalPoints(string[] operations)
     {
+        var n = operations.Length;
+
         var scores = new List<int>();
 
-        foreach (var operation in operations)
+        for (var i = 0; i < n; i++)
         {
+            var operation = operations[i];
+
             switch (operation)
             {
                 case "D":
@@ -42,6 +46,15 @@ public sealed class BaseballGameIterative : IBaseballGame
             }
         }
 
-        return scores.Sum();
+        var m = scores.Count;
+
+        var totalScore = 0;
+
+        for (var i = 0; i < m; i++)
+        {
+            totalScore += scores[i];
+        }
+
+        return totalScore;
     }
 }

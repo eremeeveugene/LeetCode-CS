@@ -28,8 +28,10 @@ public sealed class GoatLatinSimulation : IGoatLatin
         var firstLetter = '\0';
         var wordIndex = 0;
 
-        foreach (var character in sentence)
+        for (var i = 0; i < sentence.Length; i++)
         {
+            var character = sentence[i];
+
             if (isFirstLetter)
             {
                 firstLetter = character;

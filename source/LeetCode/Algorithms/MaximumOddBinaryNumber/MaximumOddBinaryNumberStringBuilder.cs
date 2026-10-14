@@ -23,7 +23,15 @@ public sealed class MaximumOddBinaryNumberStringBuilder : IMaximumOddBinaryNumbe
     /// </remarks>
     public string MaximumOddBinaryNumber(string s)
     {
-        var onesCount = s.Count(c => c == '1');
+        var onesCount = 0;
+
+        for (var i = 0; i < s.Length; i++)
+        {
+            if (s[i] == '1')
+            {
+                onesCount++;
+            }
+        }
 
         var stringBuilder = new StringBuilder();
 

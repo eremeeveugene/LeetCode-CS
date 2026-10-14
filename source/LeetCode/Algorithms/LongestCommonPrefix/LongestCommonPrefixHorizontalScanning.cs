@@ -28,12 +28,34 @@ public sealed class LongestCommonPrefixHorizontalScanning : ILongestCommonPrefix
             return string.Empty;
         }
 
-        var minLength = strs.Min(str => str.Length);
+        var minLength = int.MaxValue;
+
+        for (var i = 0; i < strs.Length; i++)
+        {
+            var str = strs[i];
+
+            minLength = Math.Min(minLength, str.Length);
+        }
+
         var prefixLength = 0;
 
         for (var i = 0; i < minLength; i++)
         {
-            if (strs.All(str => str[i] == firstString[i]))
+            var allMatch = true;
+
+            for (var j = 0; j < strs.Length; j++)
+            {
+                var str = strs[j];
+
+                if (str[i] != firstString[i])
+                {
+                    allMatch = false;
+
+                    break;
+                }
+            }
+
+            if (allMatch)
             {
                 prefixLength++;
             }

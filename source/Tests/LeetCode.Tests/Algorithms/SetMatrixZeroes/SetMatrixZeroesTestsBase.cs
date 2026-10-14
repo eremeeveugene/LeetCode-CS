@@ -41,5 +41,45 @@ public abstract class SetMatrixZeroesTestsBase<T> where T : ISetMatrixZeroes, ne
             new[] { new[] { 0, 1, 2, 0 }, new[] { 3, 4, 5, 2 }, new[] { 1, 3, 1, 5 } },
             new[] { new[] { 0, 0, 0, 0 }, new[] { 0, 4, 5, 0 }, new[] { 0, 3, 1, 0 } }
         ];
+
+        yield return [new[] { new[] { 0 } }, new[] { new[] { 0 } }];
+
+        yield return [new[] { new[] { 1 } }, new[] { new[] { 1 } }];
+
+        yield return [new[] { new[] { 1, 2, 3 } }, new[] { new[] { 1, 2, 3 } }];
+
+        yield return [new[] { new[] { 1 }, new[] { 2 }, new[] { 3 } }, new[] { new[] { 1 }, new[] { 2 }, new[] { 3 } }];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 0, 0 } }, new[] { new[] { 0, 0 }, new[] { 0, 0 } }];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 1, 1 } }, new[] { new[] { 1, 1 }, new[] { 1, 1 } }];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 1, 1 } }, new[] { new[] { 0, 0 }, new[] { 1, 0 } }];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 1, 0 } }, new[] { new[] { 1, 0 }, new[] { 0, 0 } }];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 1, 1 } }, new[] { new[] { 0, 0 }, new[] { 0, 1 } }];
+
+        yield return [new[] { new[] { -1, 2147483647, 0 }, new[] { -2147483648, 5, 6 } }, new[] { new[] { 0, 0, 0 }, new[] { -2147483648, 5, 0 } }];
+
+        yield return [new[] { new[] { 1, 2, 3, 4 }, new[] { 5, 0, 7, 8 }, new[] { 0, 10, 11, 12 }, new[] { 13, 14, 15, 0 } }, new[] { new[] { 0, 0, 3, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 }, new[] { 0, 0, 0, 0 } }];
+
+        yield return [new[] { new[] { 0, 1, 1, 1, 1 } }, new[] { new[] { 0, 0, 0, 0, 0 } }];
+
+        yield return [new[] { new[] { 1 }, new[] { 0 }, new[] { 1 }, new[] { 1 } }, new[] { new[] { 0 }, new[] { 0 }, new[] { 0 }, new[] { 0 } }];
+
+        yield return [new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 0 } }, new[] { new[] { 1, 1, 0 }, new[] { 1, 1, 0 }, new[] { 0, 0, 0 } }];
+
+        yield return [new[] { new[] { -4 }, new[] { 3 }, new[] { 1 }, new[] { 0 }, new[] { 9 } }, new[] { new[] { 0 }, new[] { 0 }, new[] { 0 }, new[] { 0 }, new[] { 0 } }];
+
+        yield return [new[] { new[] { 9 }, new[] { 9 }, new[] { 0 }, new[] { 9 }, new[] { 1 } }, new[] { new[] { 0 }, new[] { 0 }, new[] { 0 }, new[] { 0 }, new[] { 0 } }];
+
+        yield return [new[] { new[] { 9, 9, 0, 1, 3 }, new[] { 9, -4, 1, 2, 9 } }, new[] { new[] { 0, 0, 0, 0, 0 }, new[] { 9, -4, 0, 2, 9 } }];
+
+        yield return [new[] { new[] { 1, 9, 9 }, new[] { 9, 0, 9 }, new[] { -4, 0, 9 }, new[] { 0, 0, 1 }, new[] { 2, -4, 1 } }, new[] { new[] { 0, 0, 9 }, new[] { 0, 0, 0 }, new[] { 0, 0, 0 }, new[] { 0, 0, 0 }, new[] { 0, 0, 1 } }];
+
+        yield return [new[] { new[] { -4, 9, 0 }, new[] { 9, 2, 0 } }, new[] { new[] { 0, 0, 0 }, new[] { 0, 0, 0 } }];
+
+        yield return [new[] { new[] { 0, 0, 1 }, new[] { 9, 3, 3 }, new[] { 2, 3, 9 }, new[] { 9, 3, -4 }, new[] { -4, 9, 3 } }, new[] { new[] { 0, 0, 0 }, new[] { 0, 0, 3 }, new[] { 0, 0, 9 }, new[] { 0, 0, -4 }, new[] { 0, 0, 3 } }];
     }
 }

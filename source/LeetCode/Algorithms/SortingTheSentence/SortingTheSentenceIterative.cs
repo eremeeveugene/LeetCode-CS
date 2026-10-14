@@ -27,9 +27,11 @@ public sealed class SortingTheSentenceIterative : ISortingTheSentence
 
         var words = new string[wordsWithIndexes.Length];
 
-        foreach (var wordsWithIndex in wordsWithIndexes)
+        for (var i = 0; i < wordsWithIndexes.Length; i++)
         {
-            var index = (int)char.GetNumericValue(wordsWithIndex.Last()) - 1;
+            var wordsWithIndex = wordsWithIndexes[i];
+
+            var index = (int)char.GetNumericValue(wordsWithIndex[^1]) - 1;
 
             words[index] = wordsWithIndex[..^1];
         }

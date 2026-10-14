@@ -25,8 +25,10 @@ public sealed class MinimumOperationsToConvertAllElementsToZeroStack : IMinimumO
 
         var minOperations = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             while (numsStack.Count > 0 && numsStack.Peek() > num)
             {
                 numsStack.Pop();

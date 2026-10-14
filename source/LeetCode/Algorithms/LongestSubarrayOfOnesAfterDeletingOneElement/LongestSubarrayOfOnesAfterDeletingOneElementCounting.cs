@@ -26,8 +26,10 @@ public sealed class LongestSubarrayOfOnesAfterDeletingOneElementCounting : ILong
         var currentLength = 0;
         var previousLength = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (num == 0)
             {
                 maxLength = Math.Max(maxLength, previousLength + currentLength);

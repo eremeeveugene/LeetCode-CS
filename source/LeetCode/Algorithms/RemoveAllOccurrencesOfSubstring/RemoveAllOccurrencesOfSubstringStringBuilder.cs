@@ -25,8 +25,10 @@ public sealed class RemoveAllOccurrencesOfSubstringStringBuilder : IRemoveAllOcc
     {
         var stringBuilder = new StringBuilder();
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             stringBuilder.Append(c);
 
             if (stringBuilder.Length >= part.Length && stringBuilder.ToString(stringBuilder.Length - part.Length, part.Length) == part)

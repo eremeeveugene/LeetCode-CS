@@ -21,14 +21,25 @@ public sealed class MinimumSwapsToGroupAll1Together2SlidingWindow : IMinimumSwap
     /// </remarks>
     public int MinSwaps(int[] nums)
     {
-        var totalOnes = nums.Count(num => num == 1);
+        var totalOnes = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            if (nums[i] == 1)
+            {
+                totalOnes++;
+            }
+        }
 
         if (totalOnes == 0)
         {
             return 0;
         }
 
-        var windowedArray = nums.Concat(nums.Take(totalOnes)).ToArray();
+        var windowedArray = new int[nums.Length + totalOnes];
+
+        Array.Copy(nums, windowedArray, nums.Length);
+        Array.Copy(nums, 0, windowedArray, nums.Length, totalOnes);
 
         var currentZeroCount = 0;
 

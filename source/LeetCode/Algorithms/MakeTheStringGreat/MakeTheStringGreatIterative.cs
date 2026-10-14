@@ -26,7 +26,13 @@ public sealed class MakeTheStringGreatIterative : IMakeTheStringGreat
             return s;
         }
 
-        var sList = s.ToList();
+        var sList = new List<char>(s.Length);
+
+        for (var j = 0; j < s.Length; j++)
+        {
+            sList.Add(s[j]);
+        }
+
 
         var i = 0;
 

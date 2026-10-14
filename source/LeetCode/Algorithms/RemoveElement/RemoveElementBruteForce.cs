@@ -37,6 +37,18 @@ public sealed class RemoveElementBruteForce : IRemoveElement
             }
         }
 
-        return nums.Count(num => !num.Equals(val));
+        var count = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            if (num != val)
+            {
+                count++;
+            }
+        }
+
+        return count;
     }
 }

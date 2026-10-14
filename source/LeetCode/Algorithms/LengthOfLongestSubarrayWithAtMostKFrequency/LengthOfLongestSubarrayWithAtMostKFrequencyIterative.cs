@@ -26,11 +26,14 @@ public sealed class LengthOfLongestSubarrayWithAtMostKFrequencyIterative : ILeng
         for (var i = 0; i < nums.Length; i++)
         {
             var dictionary = new Dictionary<int, int>();
+            var currentLength = 0;
 
             for (var j = i; j < nums.Length; j++)
             {
                 if (dictionary.TryAdd(nums[j], 1))
                 {
+                    currentLength++;
+
                     continue;
                 }
 
@@ -42,9 +45,11 @@ public sealed class LengthOfLongestSubarrayWithAtMostKFrequencyIterative : ILeng
                 }
 
                 dictionary[nums[j]]++;
+
+                currentLength++;
             }
 
-            maxLength = Math.Max(maxLength, dictionary.Select(d => d.Value).Sum());
+            maxLength = Math.Max(maxLength, currentLength);
         }
 
         return maxLength;

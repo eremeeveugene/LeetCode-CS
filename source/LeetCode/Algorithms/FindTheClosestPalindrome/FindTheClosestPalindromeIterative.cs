@@ -40,8 +40,10 @@ public sealed class FindTheClosestPalindromeIterative : IFindTheClosestPalindrom
         var minDiff = BigInteger.Abs(candidates[0] - num);
         var result = candidates[0];
 
-        foreach (var candidate in candidates)
+        for (var i = 0; i < candidates.Count; i++)
         {
+            var candidate = candidates[i];
+
             if (candidate == num)
             {
                 continue;
@@ -69,8 +71,12 @@ public sealed class FindTheClosestPalindromeIterative : IFindTheClosestPalindrom
 
         stringBuilder.Append(prefixString);
 
-        foreach (var c in prefixString[..^(isEven ? 0 : 1)].Reverse())
+        var mirroredLength = prefixString.Length - (isEven ? 0 : 1);
+
+        for (var i = mirroredLength - 1; i >= 0; i--)
         {
+            var c = prefixString[i];
+
             stringBuilder.Append(c);
         }
 

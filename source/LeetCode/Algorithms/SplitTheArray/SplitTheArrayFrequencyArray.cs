@@ -23,13 +23,17 @@ public sealed class SplitTheArrayFrequencyArray : ISplitTheArray
     {
         Span<byte> numFrequencies = stackalloc byte[101];
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             numFrequencies[num]++;
         }
 
-        foreach (var numFrequency in numFrequencies)
+        for (var i = 0; i < numFrequencies.Length; i++)
         {
+            var numFrequency = numFrequencies[i];
+
             if (numFrequency <= 2)
             {
                 continue;

@@ -21,14 +21,22 @@ public sealed class CountSubarraysWhereMaxElementAppearsAtLeastKTimesSlidingWind
     /// </remarks>
     public long CountSubarrays(int[] nums, int k)
     {
-        var maxElement = nums.Max();
+        var maxElement = nums[0];
+
+        for (var i = 1; i < nums.Length; i++)
+        {
+            maxElement = Math.Max(maxElement, nums[i]);
+        }
+
 
         var count = 0;
         var start = 0;
         var maxElementsInWindow = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (num == maxElement)
             {
                 maxElementsInWindow++;

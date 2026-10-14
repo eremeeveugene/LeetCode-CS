@@ -19,6 +19,23 @@ public abstract class UniqueLength3PalindromicSubsequencesTestsBase<T> where T :
     [DataRow("adc", 0)]
     [DataRow("aabca", 3)]
     [DataRow("bbcbaba", 4)]
+    [DataRow("aaa", 1)]
+    [DataRow("aaaa", 1)]
+    [DataRow("abc", 0)]
+    [DataRow("aba", 1)]
+    [DataRow("abcba", 3)]
+    [DataRow("aabbcc", 0)]
+    [DataRow("abcabc", 6)]
+    [DataRow("zzzzzzzzzz", 1)]
+    [DataRow("abacaba", 5)]
+    [DataRow("xyzzyx", 3)]
+    [DataRow("aaabaaa", 2)]
+    [DataRow("qwertyuiopasdfghjklzxcvbnmmnbvcxzlkjhgfdsapoiuytrewq", 325)]
+    [DataRow("aaaaaaaaaabbbbbbbbbb", 2)]
+    [DataRow("abcabcabcabcabcabc", 9)]
+    [DataRow("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", 676)]
+    [DataRow("ababababab", 4)]
+    [DataRow("aabaa", 2)]
     public void CountPalindromicSubsequence_WithStringInput_ReturnsNumberOfUniquePalindromes(string s, int expectedResult)
     {
         // Arrange

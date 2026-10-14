@@ -33,8 +33,10 @@ public sealed class MinimumHeightTreesLeafPruning : IMinimumHeightTrees
             graph.Add([]);
         }
 
-        foreach (var edge in edges)
+        for (var i = 0; i < edges.Length; i++)
         {
+            var edge = edges[i];
+
             graph[edge[0]].Add(edge[1]);
             graph[edge[1]].Add(edge[0]);
         }
@@ -51,15 +53,21 @@ public sealed class MinimumHeightTreesLeafPruning : IMinimumHeightTrees
 
         var remainingNodes = n;
 
+        var neighborBuffer = new int[1];
+
         while (remainingNodes > 2)
         {
             remainingNodes -= leaves.Count;
 
             var newLeaves = new List<int>();
 
-            foreach (var leaf in leaves)
+            for (var i = 0; i < leaves.Count; i++)
             {
-                var neighbor = graph[leaf].First();
+                var leaf = leaves[i];
+
+                graph[leaf].CopyTo(neighborBuffer, 0, 1);
+
+                var neighbor = neighborBuffer[0];
 
                 graph[neighbor].Remove(leaf);
 

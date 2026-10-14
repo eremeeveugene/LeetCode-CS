@@ -36,5 +36,51 @@ public abstract class MatrixSimilarityAfterCyclicShiftsTestsBase<T> where T : IM
         yield return [new[] { new[] { 1, 2, 1, 2 }, new[] { 5, 5, 5, 5 }, new[] { 6, 3, 6, 3 } }, 2, true];
 
         yield return [new[] { new[] { 2, 2 }, new[] { 2, 2 } }, 3, true];
+
+        yield return [new[] { new[] { 1 } }, 1, true];
+
+        yield return [new[] { new[] { 1 } }, 100, true];
+
+        yield return [new[] { new[] { 1, 2 } }, 1, false];
+
+        yield return [new[] { new[] { 1, 2 } }, 2, true];
+
+        yield return [new[] { new[] { 1, 2 } }, 3, false];
+
+        yield return [new[] { new[] { 1, 1 } }, 1, true];
+
+        yield return [new[] { new[] { 1, 2, 3 } }, 3, true];
+
+        yield return [new[] { new[] { 1, 2, 3 } }, 6, true];
+
+        yield return [new[] { new[] { 1, 2, 1, 2 } }, 2, true];
+
+        yield return [new[] { new[] { 1, 2, 1, 2 } }, 1, false];
+
+        yield return [new[] { new[] { 1, 2, 1, 2 }, new[] { 3, 4, 3, 4 } }, 4, true];
+
+        yield return [new[] { new[] { 5, 5, 5 }, new[] { 5, 5, 5 } }, 7, true];
+
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { 1, 2, 3 } }, 1, false];
+
+        yield return [new[] { new[] { 1, 2, 3, 1, 2, 3 }, new[] { 4, 5, 6, 4, 5, 6 } }, 3, true];
+
+        yield return [new[] { new[] { 1, 2, 3, 1, 2, 3 }, new[] { 4, 5, 6, 4, 5, 6 } }, 2, false];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 2, 1 } }, 1, false];
+
+        yield return [new[] { new[] { 1, 2 }, new[] { 2, 1 } }, 2, true];
+
+        yield return [new[] { new[] { 7, 8, 7, 8, 7, 8 }, new[] { 1, 1, 1, 1, 1, 1 }, new[] { 3, 4, 3, 4, 3, 4 } }, 100, true];
+
+        yield return [new[] { new[] { 7, 8, 7, 8, 7, 8 }, new[] { 1, 1, 1, 1, 1, 1 }, new[] { 3, 4, 3, 4, 3, 4 } }, 99, false];
+
+        yield return [new[] { new[] { 3, 1, 3, 3 } }, 2, false];
+
+        yield return [new[] { new[] { 2, 2, 3, 1 }, new[] { 2, 1, 1, 3 }, new[] { 3, 1, 3, 2 } }, 7, false];
+
+        yield return [new[] { new[] { 1, 1, 2, 3 } }, 12, true];
+
+        yield return [new[] { new[] { 2, 3, 2 } }, 7, false];
     }
 }

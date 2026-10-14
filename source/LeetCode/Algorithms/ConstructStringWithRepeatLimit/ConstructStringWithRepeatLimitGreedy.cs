@@ -25,8 +25,10 @@ public sealed class ConstructStringWithRepeatLimitGreedy : IConstructStringWithR
     {
         var countArray = new int['z' - 'a' + 1];
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             countArray[c - 'a']++;
         }
 

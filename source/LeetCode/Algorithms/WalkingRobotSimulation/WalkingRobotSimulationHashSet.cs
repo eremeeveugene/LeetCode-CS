@@ -30,13 +30,17 @@ public sealed class WalkingRobotSimulationHashSet : IWalkingRobotSimulation
 
         var obstaclesHashSet = new HashSet<(int, int)>();
 
-        foreach (var obstacle in obstacles)
+        for (var i = 0; i < obstacles.Length; i++)
         {
+            var obstacle = obstacles[i];
+
             obstaclesHashSet.Add((obstacle[0], obstacle[1]));
         }
 
-        foreach (var command in commands)
+        for (var i = 0; i < commands.Length; i++)
         {
+            var command = commands[i];
+
             switch (command)
             {
                 case -1:

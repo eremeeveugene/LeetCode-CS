@@ -28,8 +28,10 @@ public sealed class StringCompression3StringBuilder : IStringCompression3
         var currentCharacter = '0';
         var count = 0;
 
-        foreach (var character in word)
+        for (var i = 0; i < word.Length; i++)
         {
+            var character = word[i];
+
             if (currentCharacter == character && count < 9)
             {
                 count++;

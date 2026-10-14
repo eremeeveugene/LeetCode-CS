@@ -25,8 +25,10 @@ public sealed class MinimumTimeDifferenceBucketSort : MinimumTimeDifferenceBase
     {
         var minutes = new bool[DayMinutes];
 
-        foreach (var timePoint in timePoints)
+        for (var i = 0; i < timePoints.Count; i++)
         {
+            var timePoint = timePoints[i];
+
             var totalMinutes = (int)TimeSpan.Parse(timePoint, CultureInfo.InvariantCulture).TotalMinutes;
 
             if (minutes[totalMinutes])

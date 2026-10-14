@@ -79,6 +79,296 @@ public abstract class RangeSumQueryImmutableTestsBase
                 [new SumRangeOperation(0, 0), new SumRangeOperation(1, 1), new SumRangeOperation(2, 2)],
                 [new SumRangeOperation.Result(10), new SumRangeOperation.Result(20), new SumRangeOperation.Result(30)])
         ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [0],
+                [
+                    new SumRangeOperation(0, 0)
+                ],
+                [
+                    new SumRangeOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [-100000],
+                [
+                    new SumRangeOperation(0, 0)
+                ],
+                [
+                    new SumRangeOperation.Result(-100000)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [100000, 100000],
+                [
+                    new SumRangeOperation(0, 1),
+                    new SumRangeOperation(1, 1)
+                ],
+                [
+                    new SumRangeOperation.Result(200000),
+                    new SumRangeOperation.Result(100000)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [1, -1, 1, -1],
+                [
+                    new SumRangeOperation(0, 3),
+                    new SumRangeOperation(0, 1),
+                    new SumRangeOperation(1, 2),
+                    new SumRangeOperation(2, 3)
+                ],
+                [
+                    new SumRangeOperation.Result(0),
+                    new SumRangeOperation.Result(0),
+                    new SumRangeOperation.Result(0),
+                    new SumRangeOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [5, 5, 5, 5, 5, 5],
+                [
+                    new SumRangeOperation(0, 5),
+                    new SumRangeOperation(2, 4),
+                    new SumRangeOperation(3, 3),
+                    new SumRangeOperation(0, 0),
+                    new SumRangeOperation(5, 5)
+                ],
+                [
+                    new SumRangeOperation.Result(30),
+                    new SumRangeOperation.Result(15),
+                    new SumRangeOperation.Result(5),
+                    new SumRangeOperation.Result(5),
+                    new SumRangeOperation.Result(5)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [-1, -2, -3, -4, -5],
+                [
+                    new SumRangeOperation(0, 4),
+                    new SumRangeOperation(1, 3),
+                    new SumRangeOperation(4, 4)
+                ],
+                [
+                    new SumRangeOperation.Result(-15),
+                    new SumRangeOperation.Result(-9),
+                    new SumRangeOperation.Result(-5)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [0, 0, 0, 0],
+                [
+                    new SumRangeOperation(0, 3),
+                    new SumRangeOperation(1, 2)
+                ],
+                [
+                    new SumRangeOperation.Result(0),
+                    new SumRangeOperation.Result(0)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [3, -3, 3, -3, 3, -3, 3],
+                [
+                    new SumRangeOperation(0, 6),
+                    new SumRangeOperation(0, 5),
+                    new SumRangeOperation(1, 6),
+                    new SumRangeOperation(2, 4)
+                ],
+                [
+                    new SumRangeOperation.Result(3),
+                    new SumRangeOperation.Result(0),
+                    new SumRangeOperation.Result(0),
+                    new SumRangeOperation.Result(3)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [100000, -100000, 100000, -100000],
+                [
+                    new SumRangeOperation(0, 3),
+                    new SumRangeOperation(0, 0),
+                    new SumRangeOperation(1, 1),
+                    new SumRangeOperation(0, 2)
+                ],
+                [
+                    new SumRangeOperation.Result(0),
+                    new SumRangeOperation.Result(100000),
+                    new SumRangeOperation.Result(-100000),
+                    new SumRangeOperation.Result(100000)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [1, 2],
+                [
+                    new SumRangeOperation(0, 0),
+                    new SumRangeOperation(1, 1),
+                    new SumRangeOperation(0, 1)
+                ],
+                [
+                    new SumRangeOperation.Result(1),
+                    new SumRangeOperation.Result(2),
+                    new SumRangeOperation.Result(3)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+                [
+                    new SumRangeOperation(0, 9),
+                    new SumRangeOperation(3, 6),
+                    new SumRangeOperation(9, 9),
+                    new SumRangeOperation(0, 0),
+                    new SumRangeOperation(4, 5)
+                ],
+                [
+                    new SumRangeOperation.Result(45),
+                    new SumRangeOperation.Result(18),
+                    new SumRangeOperation.Result(0),
+                    new SumRangeOperation.Result(9),
+                    new SumRangeOperation.Result(9)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [10, -5, 20, -15, 30, -25],
+                [
+                    new SumRangeOperation(0, 5),
+                    new SumRangeOperation(1, 4),
+                    new SumRangeOperation(2, 3),
+                    new SumRangeOperation(0, 2),
+                    new SumRangeOperation(3, 5)
+                ],
+                [
+                    new SumRangeOperation.Result(15),
+                    new SumRangeOperation.Result(30),
+                    new SumRangeOperation.Result(5),
+                    new SumRangeOperation.Result(25),
+                    new SumRangeOperation.Result(-10)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [2, 4, 6, 8, 10, 12, 14, 16],
+                [
+                    new SumRangeOperation(0, 7),
+                    new SumRangeOperation(0, 3),
+                    new SumRangeOperation(4, 7),
+                    new SumRangeOperation(2, 5),
+                    new SumRangeOperation(7, 7)
+                ],
+                [
+                    new SumRangeOperation.Result(72),
+                    new SumRangeOperation.Result(20),
+                    new SumRangeOperation.Result(52),
+                    new SumRangeOperation.Result(36),
+                    new SumRangeOperation.Result(16)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [-7, 7],
+                [
+                    new SumRangeOperation(0, 1),
+                    new SumRangeOperation(0, 0),
+                    new SumRangeOperation(1, 1)
+                ],
+                [
+                    new SumRangeOperation.Result(0),
+                    new SumRangeOperation.Result(-7),
+                    new SumRangeOperation.Result(7)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                [
+                    new SumRangeOperation(0, 9),
+                    new SumRangeOperation(0, 0),
+                    new SumRangeOperation(9, 9),
+                    new SumRangeOperation(2, 7),
+                    new SumRangeOperation(5, 5)
+                ],
+                [
+                    new SumRangeOperation.Result(10),
+                    new SumRangeOperation.Result(1),
+                    new SumRangeOperation.Result(1),
+                    new SumRangeOperation.Result(6),
+                    new SumRangeOperation.Result(1)
+                ])
+        ];
+
+        yield return
+        [
+            new RangeSumQueryScenario(
+                [42, -42, 42],
+                [
+                    new SumRangeOperation(0, 2),
+                    new SumRangeOperation(0, 1),
+                    new SumRangeOperation(1, 2)
+                ],
+                [
+                    new SumRangeOperation.Result(42),
+                    new SumRangeOperation.Result(0),
+                    new SumRangeOperation.Result(0)
+                ])
+        ];
+
+        yield return [CreateMaxLengthScenario()];
+    }
+
+    private static RangeSumQueryScenario CreateMaxLengthScenario()
+    {
+        const int Length = 10000;
+
+        var nums = new int[Length];
+        var operations = new IOperation<IRangeSumQueryImmutable>[Length];
+        var operationResults = new IOperationResult[Length];
+
+        for (var i = 0; i < Length; i++)
+        {
+            nums[i] = 100000;
+            operations[i] = new SumRangeOperation(0, i);
+            operationResults[i] = new SumRangeOperation.Result(100000 * (i + 1));
+        }
+
+        return new RangeSumQueryScenario(nums, operations, operationResults);
     }
 
     public sealed class RangeSumQueryScenario : IScenario<IRangeSumQueryImmutable>

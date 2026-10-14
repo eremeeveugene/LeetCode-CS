@@ -31,6 +31,13 @@ public sealed class FlippingAnImageReverse : IFlippingAnImage
 
     private static int[] ReverseRow(int[] row)
     {
-        return row.Reverse().Select(cell => cell ^ 1).ToArray();
+        var result = new int[row.Length];
+
+        for (var i = 0; i < row.Length; i++)
+        {
+            result[i] = row[row.Length - 1 - i] ^ 1;
+        }
+
+        return result;
     }
 }

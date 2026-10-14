@@ -25,8 +25,10 @@ public sealed class ClearDigitsStringBuilder : IClearDigits
     {
         var stringBuilder = new StringBuilder();
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             if (char.IsDigit(c))
             {
                 stringBuilder.Length--;

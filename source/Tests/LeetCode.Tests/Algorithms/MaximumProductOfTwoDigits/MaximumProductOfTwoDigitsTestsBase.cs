@@ -19,6 +19,23 @@ public abstract class MaximumProductOfTwoDigitsTestsBase<T> where T : IMaximumPr
     [DataRow(31, 3)]
     [DataRow(22, 4)]
     [DataRow(124, 8)]
+    [DataRow(10, 0)]
+    [DataRow(11, 1)]
+    [DataRow(99, 81)]
+    [DataRow(100, 0)]
+    [DataRow(909, 81)]
+    [DataRow(1000, 0)]
+    [DataRow(9876, 72)]
+    [DataRow(5555, 25)]
+    [DataRow(1234567, 42)]
+    [DataRow(999999999, 81)]
+    [DataRow(1000000000, 0)]
+    [DataRow(90, 0)]
+    [DataRow(19, 9)]
+    [DataRow(505, 25)]
+    [DataRow(73219, 63)]
+    [DataRow(2468, 48)]
+    [DataRow(100000, 0)]
     public void MaxProduct_WithGivenInteger_ReturnsMaximumDigitProduct(int n, int expectedResult)
     {
         // Arrange

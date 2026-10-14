@@ -23,8 +23,10 @@ public sealed class LongestHarmoniousSubsequenceDictionary : ILongestHarmoniousS
     {
         var frequencyDictionary = new Dictionary<int, int>();
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (frequencyDictionary.TryAdd(num, 1))
             {
                 continue;
@@ -35,14 +37,20 @@ public sealed class LongestHarmoniousSubsequenceDictionary : ILongestHarmoniousS
 
         var maxLength = 0;
 
-        foreach (var frequency in frequencyDictionary)
+        var keys = new int[frequencyDictionary.Count];
+
+        frequencyDictionary.Keys.CopyTo(keys, 0);
+
+        for (var i = 0; i < keys.Length; i++)
         {
-            if (!frequencyDictionary.ContainsKey(frequency.Key + 1))
+            var key = keys[i];
+
+            if (!frequencyDictionary.TryGetValue(key + 1, out var nextFrequency))
             {
                 continue;
             }
 
-            var length = frequency.Value + frequencyDictionary[frequency.Key + 1];
+            var length = frequencyDictionary[key] + nextFrequency;
 
             if (length > maxLength)
             {

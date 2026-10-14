@@ -47,8 +47,10 @@ public sealed class ZeroOneMatrixBreadthFirstSearch : IZeroOneMatrix
         {
             var (row, col) = queue.Dequeue();
 
-            foreach (var direction in Directions)
+            for (var i = 0; i < Directions.Length; i++)
             {
+                var direction = Directions[i];
+
                 var nextRow = row + direction.Row;
                 var nextCol = col + direction.Col;
 

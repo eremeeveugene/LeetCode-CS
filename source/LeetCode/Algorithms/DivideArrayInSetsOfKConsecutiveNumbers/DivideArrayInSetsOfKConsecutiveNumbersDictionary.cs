@@ -42,7 +42,7 @@ public sealed class DivideArrayInSetsOfKConsecutiveNumbersDictionary : IDivideAr
 
         while (numsDictionary.Count > 0)
         {
-            var firstNum = numsDictionary.First().Key;
+            var firstNum = GetFirstKey(numsDictionary);
 
             if (!TryRemoveGroup(numsDictionary, firstNum, k))
             {
@@ -51,6 +51,15 @@ public sealed class DivideArrayInSetsOfKConsecutiveNumbersDictionary : IDivideAr
         }
 
         return true;
+    }
+
+    private static int GetFirstKey(Dictionary<int, int> numsDictionary)
+    {
+        using var enumerator = numsDictionary.GetEnumerator();
+
+        enumerator.MoveNext();
+
+        return enumerator.Current.Key;
     }
 
     private static bool TryRemoveGroup(Dictionary<int, int> numsDictionary, int firstNum, int k)

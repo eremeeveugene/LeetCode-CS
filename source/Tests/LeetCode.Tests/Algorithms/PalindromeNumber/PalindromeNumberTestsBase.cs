@@ -33,6 +33,10 @@ public abstract class PalindromeNumberTestsBase<T> where T : IPalindromeNumber, 
     [DataRow(9, true)]
     [DataRow(11, true)]
     [DataRow(22, true)]
+    [DataRow(2147483647, false)]
+    [DataRow(-2147483648, false)]
+    [DataRow(2147447412, true)]
+    [DataRow(1000000001, true)]
     public void IsPalindrome_WithNumber_ChecksIfNumberIsPalindrome(int x, bool expectedResult)
     {
         // Arrange

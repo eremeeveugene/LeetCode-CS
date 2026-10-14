@@ -19,6 +19,23 @@ public abstract class CountNumberOfMaximumBitwiseORSubsetsTestsBase<T> where T :
     [DataRow(new[] { 3, 1 }, 2)]
     [DataRow(new[] { 2, 2, 2 }, 7)]
     [DataRow(new[] { 3, 2, 1, 5 }, 6)]
+    [DataRow(new[] { 1 }, 1)]
+    [DataRow(new[] { 100000 }, 1)]
+    [DataRow(new[] { 1, 1 }, 3)]
+    [DataRow(new[] { 1, 2 }, 1)]
+    [DataRow(new[] { 1, 2, 4 }, 1)]
+    [DataRow(new[] { 1, 2, 4, 8 }, 1)]
+    [DataRow(new[] { 5, 5, 5, 5 }, 15)]
+    [DataRow(new[] { 1, 3, 7 }, 4)]
+    [DataRow(new[] { 7, 3, 1 }, 4)]
+    [DataRow(new[] { 6, 2, 4, 1 }, 5)]
+    [DataRow(new[] { 8, 8, 8, 1 }, 7)]
+    [DataRow(new[] { 1, 1, 1, 1, 1, 1 }, 63)]
+    [DataRow(new[] { 9, 6, 3, 12 }, 7)]
+    [DataRow(new[] { 16, 8, 4, 2, 1 }, 1)]
+    [DataRow(new[] { 3, 5, 6 }, 4)]
+    [DataRow(new[] { 100000, 1, 2, 3 }, 5)]
+    [DataRow(new[] { 2, 3, 2, 3, 2, 3, 2 }, 112)]
     public void CountMaxOrSubsets_GivenArrayOfIntegers_ReturnsNumberOfMaxOrSubsets(int[] nums, int expectedResult)
     {
         // Arrange

@@ -23,7 +23,14 @@ public sealed class ImplementTrieArray : IImplementTrie
     /// </remarks>
     public void Insert(string word)
     {
-        var currentNode = word.Select(c => c - 'a').Aggregate(_root, (current, index) => current.Nodes[index] ??= new Node());
+        var currentNode = _root;
+
+        for (var i = 0; i < word.Length; i++)
+        {
+            var index = word[i] - 'a';
+
+            currentNode = currentNode.Nodes[index] ??= new Node();
+        }
 
         currentNode.IsWord = true;
     }
@@ -54,8 +61,10 @@ public sealed class ImplementTrieArray : IImplementTrie
     {
         var currentNode = _root;
 
-        foreach (var index in str.Select(c => c - 'a'))
+        for (var i = 0; i < str.Length; i++)
         {
+            var index = str[i] - 'a';
+
             currentNode = currentNode.Nodes[index];
 
             if (currentNode == null)

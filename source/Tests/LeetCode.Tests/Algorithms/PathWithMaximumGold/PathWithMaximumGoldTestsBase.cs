@@ -82,5 +82,31 @@ public abstract class PathWithMaximumGoldTestsBase<T> where T : IPathWithMaximum
             },
             135
         ];
+
+        yield return [new[] { new[] { 1 } }, 1];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 0, 0 } }, 0];
+
+        yield return [new[] { new[] { 5, 0 }, new[] { 0, 7 } }, 7];
+
+        yield return [new[] { new[] { 1, 2 } }, 3];
+
+        yield return [new[] { new[] { 3 }, new[] { 4 }, new[] { 5 } }, 12];
+
+        yield return [new[] { new[] { 10, 20 }, new[] { 30, 40 } }, 100];
+
+        yield return [new[] { new[] { 100, 100 }, new[] { 100, 100 } }, 400];
+
+        yield return [new[] { new[] { 1, 0, 1 }, new[] { 0, 1, 0 }, new[] { 1, 0, 1 } }, 1];
+
+        yield return [new[] { new[] { 1, 2, 3 }, new[] { 4, 5, 6 }, new[] { 7, 8, 9 } }, 45];
+
+        yield return [new[] { new[] { 84, 39, 0 }, new[] { 45, 72, 0 }, new[] { 95, 66, 0 }, new[] { 60, 15, 52 }, new[] { 6, 89, 0 } }, 623];
+
+        yield return [new[] { new[] { 0, 0, 0, 0, 0 }, new[] { 12, 76, 0, 90, 0 }, new[] { 70, 0, 0, 0, 55 }, new[] { 9, 0, 0, 70, 0 } }, 167];
+
+        yield return [new[] { new[] { 60, 94, 0 }, new[] { 80, 0, 56 }, new[] { 97, 0, 0 }, new[] { 28, 0, 84 } }, 359];
+
+        yield return [new[] { new[] { 100, 100, 100, 100, 100 }, new[] { 100, 100, 100, 100, 100 }, new[] { 100, 100, 100, 100, 100 }, new[] { 100, 100, 100, 100, 100 }, new[] { 100, 100, 100, 100, 100 } }, 2500];
     }
 }

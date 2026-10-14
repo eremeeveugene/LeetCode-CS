@@ -25,8 +25,10 @@ public sealed class LetterTilePossibilitiesRecursive : ILetterTilePossibilities
     {
         var charCount = new int[Count];
 
-        foreach (var tile in tiles)
+        for (var i = 0; i < tiles.Length; i++)
         {
+            var tile = tiles[i];
+
             charCount[tile - 'A']++;
         }
 

@@ -25,8 +25,10 @@ public sealed class MaximumNestingDepthOfTheParenthesesIterative : IMaximumNesti
 
         var curDepth = 0;
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             switch (c)
             {
                 case '(':

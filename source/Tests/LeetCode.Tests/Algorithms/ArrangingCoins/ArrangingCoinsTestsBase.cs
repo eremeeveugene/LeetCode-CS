@@ -26,6 +26,16 @@ public abstract class ArrangingCoinsTestsBase<T> where T : IArrangingCoins, new(
     [DataRow(8, 3)]
     [DataRow(9, 3)]
     [DataRow(10, 4)]
+    [DataRow(11, 4)]
+    [DataRow(15, 5)]
+    [DataRow(16, 5)]
+    [DataRow(21, 6)]
+    [DataRow(28, 7)]
+    [DataRow(100, 13)]
+    [DataRow(1000, 44)]
+    [DataRow(5049, 99)]
+    [DataRow(5050, 100)]
+    [DataRow(2147483647, 65535)]
     public void ArrangeCoins_WithCoinCount_ReturnsNumberOfCompleteStaircaseRows(int n, int expectedResult)
     {
         // Arrange

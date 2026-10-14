@@ -23,8 +23,10 @@ public sealed class DivideIntervalsIntoMinimumNumberOfGroupsSorting : IDivideInt
     {
         var events = new List<(int Time, int Type)>();
 
-        foreach (var interval in intervals)
+        for (var i = 0; i < intervals.Length; i++)
         {
+            var interval = intervals[i];
+
             events.Add((interval[0], 1));
             events.Add((interval[1], -1));
         }

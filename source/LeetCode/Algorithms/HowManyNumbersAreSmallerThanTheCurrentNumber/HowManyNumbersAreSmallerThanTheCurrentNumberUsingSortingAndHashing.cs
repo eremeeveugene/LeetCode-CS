@@ -21,7 +21,11 @@ public sealed class HowManyNumbersAreSmallerThanTheCurrentNumberUsingSortingAndH
     /// </remarks>
     public int[] SmallerNumbersThanCurrent(int[] nums)
     {
-        var sortedNums = nums.Order().ToArray();
+        var sortedNums = new int[nums.Length];
+
+        Array.Copy(nums, sortedNums, nums.Length);
+
+        Array.Sort(sortedNums);
 
         var ranks = new Dictionary<int, int>();
 

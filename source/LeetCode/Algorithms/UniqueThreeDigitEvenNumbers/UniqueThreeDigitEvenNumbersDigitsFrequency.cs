@@ -23,8 +23,10 @@ public sealed class UniqueThreeDigitEvenNumbersDigitsFrequency : IUniqueThreeDig
     {
         var digitsFrequency = new int[10];
 
-        foreach (var digit in digits)
+        for (var i = 0; i < digits.Length; i++)
         {
+            var digit = digits[i];
+
             digitsFrequency[digit]++;
         }
 

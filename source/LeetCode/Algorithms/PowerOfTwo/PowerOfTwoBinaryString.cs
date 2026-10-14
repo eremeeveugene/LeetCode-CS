@@ -26,6 +26,19 @@ public sealed class PowerOfTwoBinaryString : IPowerOfTwo
             return false;
         }
 
-        return Convert.ToString(n, 2).Count(c => c == '1') == 1;
+        var binary = Convert.ToString(n, 2);
+        var onesCount = 0;
+
+        for (var i = 0; i < binary.Length; i++)
+        {
+            var bit = binary[i];
+
+            if (bit == '1')
+            {
+                onesCount++;
+            }
+        }
+
+        return onesCount == 1;
     }
 }

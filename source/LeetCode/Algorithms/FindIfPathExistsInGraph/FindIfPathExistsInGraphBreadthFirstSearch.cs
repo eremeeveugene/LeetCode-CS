@@ -33,8 +33,10 @@ public sealed class FindIfPathExistsInGraphBreadthFirstSearch : IFindIfPathExist
             graph[i] = [];
         }
 
-        foreach (var edge in edges)
+        for (var i = 0; i < edges.Length; i++)
         {
+            var edge = edges[i];
+
             graph[edge[0]].Add(edge[1]);
             graph[edge[1]].Add(edge[0]);
         }
@@ -49,8 +51,12 @@ public sealed class FindIfPathExistsInGraphBreadthFirstSearch : IFindIfPathExist
         {
             var current = queue.Dequeue();
 
-            foreach (var neighbor in graph[current])
+            var neighbors = graph[current];
+
+            for (var i = 0; i < neighbors.Count; i++)
             {
+                var neighbor = neighbors[i];
+
                 if (neighbor == destination)
                 {
                     return true;

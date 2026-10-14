@@ -62,5 +62,232 @@ public abstract class TheNumberOfTheSmallestUnoccupiedChairTestsBase<T> where T 
             0,
             3
         ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 1, 2 },
+                new[] { 2, 3 }
+            },
+            1,
+            0
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 1, 2 },
+                new[] { 2, 3 }
+            },
+            0,
+            0
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 1, 5 },
+                new[] { 2, 3 }
+            },
+            1,
+            1
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 1, 5 },
+                new[] { 2, 6 }
+            },
+            1,
+            1
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 1, 3 },
+                new[] { 2, 4 },
+                new[] { 3, 5 },
+                new[] { 4, 6 }
+            },
+            3,
+            1
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 1, 100 },
+                new[] { 2, 100 },
+                new[] { 3, 100 },
+                new[] { 4, 100 }
+            },
+            3,
+            3
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 4, 5 },
+                new[] { 1, 2 },
+                new[] { 2, 3 },
+                new[] { 3, 4 }
+            },
+            0,
+            0
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 5, 6 },
+                new[] { 1, 10 },
+                new[] { 2, 3 },
+                new[] { 3, 8 }
+            },
+            0,
+            2
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 1, 2 },
+                new[] { 3, 4 },
+                new[] { 5, 6 }
+            },
+            2,
+            0
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 10, 20 },
+                new[] { 1, 50 },
+                new[] { 5, 15 },
+                new[] { 12, 13 }
+            },
+            3,
+            3
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 1, 4 },
+                new[] { 2, 3 },
+                new[] { 4, 6 }
+            },
+            0,
+            0
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 2, 10 },
+                new[] { 1, 3 },
+                new[] { 3, 4 }
+            },
+            0,
+            1
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 1, 1000 },
+                new[] { 2, 3 },
+                new[] { 4, 5 },
+                new[] { 6, 7 }
+            },
+            3,
+            1
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 100000, 100001 },
+                new[] { 1, 99999 }
+            },
+            0,
+            0
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 29, 43 },
+                new[] { 15, 17 },
+                new[] { 20, 22 },
+                new[] { 23, 33 },
+                new[] { 18, 26 },
+                new[] { 3, 17 },
+                new[] { 4, 6 },
+                new[] { 7, 22 },
+                new[] { 11, 24 }
+            },
+            8,
+            2
+        ];
+
+        yield return
+        [
+            new[]
+            {
+                new[] { 4, 5 },
+                new[] { 9, 23 },
+                new[] { 15, 29 },
+                new[] { 21, 34 },
+                new[] { 25, 32 },
+                new[] { 18, 31 },
+                new[] { 29, 39 },
+                new[] { 12, 22 },
+                new[] { 17, 26 }
+            },
+            3,
+            5
+        ];
+
+        yield return [BuildTimes(10000, 1), 0, 0];
+
+        yield return [BuildTimes(10000, 10000), 0, 9999];
+
+        yield return [BuildTimes(10000, 5000), 5000, 4999];
+
+        yield return [BuildTimes(10000, 10000), 9999, 0];
+
+        yield return [BuildTimes(10000, 2), 7777, 0];
+    }
+
+    private static int[][] BuildTimes(int count, int stay)
+    {
+        var times = new int[count][];
+
+        for (var i = 0; i < count; i++)
+        {
+            times[i] = [count - i, count - i + stay];
+        }
+
+        return times;
     }
 }

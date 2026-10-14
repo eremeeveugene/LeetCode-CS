@@ -23,8 +23,10 @@ public sealed class SumOfDigitsOfStringAfterConvertIterative : ISumOfDigitsOfStr
     {
         var sum = 0;
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             var number = c - 'a' + 1;
 
             while (number > 0)

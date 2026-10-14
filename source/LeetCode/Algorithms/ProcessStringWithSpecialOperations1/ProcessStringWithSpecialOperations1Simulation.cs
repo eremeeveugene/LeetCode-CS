@@ -25,8 +25,10 @@ public sealed class ProcessStringWithSpecialOperations1Simulation : IProcessStri
     {
         var result = new StringBuilder();
 
-        foreach (var character in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var character = s[i];
+
             switch (character)
             {
                 case '*':

@@ -75,6 +75,241 @@ public abstract class FindElementsInContaminatedBinaryTreeTestsBase
                     new FindOperation.Result(true)
                 ])
         ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1]),
+                [new FindOperation(2), new FindOperation(0), new FindOperation(1)],
+                [
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1]),
+                [new FindOperation(3), new FindOperation(2), new FindOperation(0), new FindOperation(1)],
+                [
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, -1]),
+                [new FindOperation(1), new FindOperation(5), new FindOperation(0), new FindOperation(2), new FindOperation(3)],
+                [
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, -1, null, -1]),
+                [new FindOperation(1), new FindOperation(6), new FindOperation(0), new FindOperation(2), new FindOperation(5)],
+                [
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, -1, null, null, -1, null, -1]),
+                [new FindOperation(7), new FindOperation(2), new FindOperation(0), new FindOperation(11), new FindOperation(14)],
+                [
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, -1, -1, null, -1, -1]),
+                [new FindOperation(4), new FindOperation(2), new FindOperation(1), new FindOperation(9), new FindOperation(3)],
+                [
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, -1, -1, -1, -1, null, null, null, -1]),
+                [new FindOperation(2), new FindOperation(12), new FindOperation(3), new FindOperation(6), new FindOperation(9)],
+                [
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, -1, -1, -1, -1, null, null, -1, null, null, null, null, null, -1]),
+                [new FindOperation(16), new FindOperation(14), new FindOperation(2), new FindOperation(18), new FindOperation(8)],
+                [
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, null, -1, -1, null, -1, null, -1, -1, null, -1, -1]),
+                [new FindOperation(10), new FindOperation(3), new FindOperation(13), new FindOperation(18), new FindOperation(8)],
+                [
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, -1, null, null, -1, -1, -1, null, null, -1, null, -1, null, null, null, -1, null, -1]),
+                [new FindOperation(33), new FindOperation(102), new FindOperation(53), new FindOperation(6), new FindOperation(14)],
+                [
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, null, -1, -1, null, -1, -1, null, -1, -1, null, null, null, -1, -1, null, null, -1, null, -1]),
+                [new FindOperation(0), new FindOperation(23), new FindOperation(9), new FindOperation(18), new FindOperation(68)],
+                [
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, -1, null, -1, -1, -1, -1, null, null, null, -1, null, null, null, null, -1, -1, -1, -1, null, -1, null, -1]),
+                [new FindOperation(231), new FindOperation(28), new FindOperation(0), new FindOperation(189), new FindOperation(187)],
+                [
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, -1, -1, null, -1, -1, null, -1, -1, -1, -1, -1, null, null, -1, -1, -1, null, null, null, null, null, null, null, null, -1, null, null, -1]),
+                [new FindOperation(5), new FindOperation(73), new FindOperation(2), new FindOperation(50), new FindOperation(22)],
+                [
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, -1, null, null, -1, -1, null, -1, -1, -1, -1, null, -1, -1, -1, -1, -1, -1, null, null, null, -1, -1, -1]),
+                [new FindOperation(61), new FindOperation(52), new FindOperation(0), new FindOperation(45), new FindOperation(12)],
+                [
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, -1, -1, -1, -1, -1, null, -1, -1, -1, null, -1, -1, -1, null, null, null, -1, -1, -1, null, null, -1, -1, -1, null, null, null, null, null, -1]),
+                [new FindOperation(12), new FindOperation(45), new FindOperation(33), new FindOperation(44), new FindOperation(0)],
+                [
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, -1, -1, null, -1, null, -1, null, -1, null, null, -1]),
+                [new FindOperation(0), new FindOperation(21), new FindOperation(4), new FindOperation(15), new FindOperation(17)],
+                [
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(false)
+                ])
+        ];
+
+        yield return
+        [
+            new ContaminatedBinaryTreeScenario(
+                TreeNode.ToTreeNodeOrThrow([-1, null, -1, -1, -1, -1, -1, -1, -1, null, -1, -1, null, -1]),
+                [new FindOperation(12), new FindOperation(27), new FindOperation(3), new FindOperation(15), new FindOperation(6)],
+                [
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(true),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(false),
+                    new FindOperation.Result(true)
+                ])
+        ];
     }
 
     public sealed class ContaminatedBinaryTreeScenario : IScenario<IFindElementsInContaminatedBinaryTree>

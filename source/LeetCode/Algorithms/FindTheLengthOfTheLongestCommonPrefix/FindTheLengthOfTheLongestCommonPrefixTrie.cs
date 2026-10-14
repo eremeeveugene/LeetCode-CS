@@ -24,7 +24,16 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixTrie : IFindTheLengthOf
     {
         var trie = new Trie(arr1);
 
-        return arr2.Select(trie.FindLongestPrefix).Prepend(0).Max();
+        var longestPrefix = 0;
+
+        for (var i = 0; i < arr2.Length; i++)
+        {
+            var num = arr2[i];
+
+            longestPrefix = Math.Max(longestPrefix, trie.FindLongestPrefix(num));
+        }
+
+        return longestPrefix;
     }
 
     private sealed class TrieNode
@@ -36,15 +45,17 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixTrie : IFindTheLengthOf
     {
         private readonly TrieNode _root = new();
 
-        public Trie(IEnumerable<int> nums)
+        public Trie(int[] nums)
         {
             AddRange(nums);
         }
 
-        private void AddRange(IEnumerable<int> nums)
+        private void AddRange(int[] nums)
         {
-            foreach (var num in nums)
+            for (var i = 0; i < nums.Length; i++)
             {
+                var num = nums[i];
+
                 Add(num);
             }
         }
@@ -54,8 +65,10 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixTrie : IFindTheLengthOf
             var node = _root;
             var numStr = num.ToString();
 
-            foreach (var idx in numStr.Select(digit => digit - '0'))
+            for (var i = 0; i < numStr.Length; i++)
             {
+                var idx = numStr[i] - '0';
+
                 node.Children[idx] ??= new TrieNode();
 
                 node = node.Children[idx]!;
@@ -68,8 +81,10 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixTrie : IFindTheLengthOf
             var numStr = num.ToString();
             var longestPrefix = 0;
 
-            foreach (var idx in numStr.Select(digit => digit - '0'))
+            for (var i = 0; i < numStr.Length; i++)
             {
+                var idx = numStr[i] - '0';
+
                 if (node.Children[idx] != null)
                 {
                     longestPrefix++;

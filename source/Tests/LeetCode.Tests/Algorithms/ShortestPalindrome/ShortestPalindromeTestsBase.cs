@@ -24,6 +24,22 @@ public abstract class ShortestPalindromeTestsBase<T> where T : IShortestPalindro
     [DataRow("aabba", "abbaabba")]
     [DataRow("aacecaa", "aacecaa")]
     [DataRow("aaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaa")]
+    [DataRow("b", "b")]
+    [DataRow("ab", "bab")]
+    [DataRow("ba", "aba")]
+    [DataRow("aa", "aa")]
+    [DataRow("aba", "aba")]
+    [DataRow("abc", "cbabc")]
+    [DataRow("abca", "acbabca")]
+    [DataRow("aabc", "cbaabc")]
+    [DataRow("abab", "babab")]
+    [DataRow("babab", "babab")]
+    [DataRow("zzzy", "yzzzy")]
+    [DataRow("xyzzy", "yzzyxyzzy")]
+    [DataRow("abcba", "abcba")]
+    [DataRow("abbacd", "dcabbacd")]
+    [DataRow("aaabaaa", "aaabaaa")]
+    [DataRow("abcdefg", "gfedcbabcdefg")]
     public void ShortestPalindrome_WithInputString_ReturnsShortestPalindromeForm(string s, string expectedResult)
     {
         // Arrange

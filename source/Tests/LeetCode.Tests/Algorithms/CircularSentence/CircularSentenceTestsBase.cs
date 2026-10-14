@@ -34,6 +34,9 @@ public abstract class CircularSentenceTestsBase<T> where T : ICircularSentence, 
     [DataRow("abc def", false)]
     [DataRow("zz zz", true)]
     [DataRow("a b c ca", false)]
+    [DataRow("b", true)]
+    [DataRow("ab", false)]
+    [DataRow("aba", true)]
     public void IsCircularSentence_GivenSentence_ReturnsIfSentenceIsCircular(string sentence, bool expectedResult)
     {
         // Arrange

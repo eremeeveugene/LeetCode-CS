@@ -29,10 +29,14 @@ public sealed class FindMissingAndRepeatedValuesMath : IFindMissingAndRepeatedVa
         long actualSum = 0;
         long actualSumSquares = 0;
 
-        foreach (var row in grid)
+        for (var i = 0; i < grid.Length; i++)
         {
-            foreach (var num in row)
+            var row = grid[i];
+
+            for (var j = 0; j < row.Length; j++)
             {
+                var num = row[j];
+
                 actualSum += num;
                 actualSumSquares += (long)num * num;
             }

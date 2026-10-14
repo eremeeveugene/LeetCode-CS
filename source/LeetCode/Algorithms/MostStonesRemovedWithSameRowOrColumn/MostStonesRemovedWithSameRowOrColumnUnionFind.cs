@@ -23,8 +23,10 @@ public sealed class MostStonesRemovedWithSameRowOrColumnUnionFind : IMostStonesR
     {
         var unionFind = new UnionFind(20002);
 
-        foreach (var stone in stones)
+        for (var i = 0; i < stones.Length; i++)
         {
+            var stone = stones[i];
+
             unionFind.Union(stone[0], stone[1] + 10001);
         }
 

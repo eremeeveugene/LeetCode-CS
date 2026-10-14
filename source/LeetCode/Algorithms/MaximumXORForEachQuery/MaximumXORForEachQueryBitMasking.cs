@@ -23,7 +23,12 @@ public sealed class MaximumXORForEachQueryBitMasking : IMaximumXORForEachQuery
     {
         var result = new int[nums.Length];
 
-        var xor = nums.Aggregate(0, (current, num) => current ^ num);
+        var xor = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            xor ^= nums[i];
+        }
 
         var mask = (1 << maximumBit) - 1;
 

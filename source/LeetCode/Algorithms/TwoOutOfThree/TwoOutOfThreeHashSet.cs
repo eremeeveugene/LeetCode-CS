@@ -28,8 +28,14 @@ public sealed class TwoOutOfThreeHashSet : ITwoOutOfThree
         var set2 = new HashSet<int>(nums2);
         var set3 = new HashSet<int>(nums3);
 
-        foreach (var num in set1)
+        var uniqueNums1 = new int[set1.Count];
+
+        set1.CopyTo(uniqueNums1);
+
+        for (var i = 0; i < uniqueNums1.Length; i++)
         {
+            var num = uniqueNums1[i];
+
             if (!set2.Contains(num) && !set3.Contains(num))
             {
                 continue;
@@ -41,8 +47,14 @@ public sealed class TwoOutOfThreeHashSet : ITwoOutOfThree
             }
         }
 
-        foreach (var num in set2)
+        var uniqueNums2 = new int[set2.Count];
+
+        set2.CopyTo(uniqueNums2);
+
+        for (var i = 0; i < uniqueNums2.Length; i++)
         {
+            var num = uniqueNums2[i];
+
             if (!set3.Contains(num) || set1.Contains(num))
             {
                 continue;

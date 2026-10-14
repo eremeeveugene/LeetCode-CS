@@ -39,7 +39,14 @@ public sealed class ListNode
 
     public static ListNode? ToListNode(int[] array)
     {
-        return array.Reverse().Aggregate<int, ListNode?>(null, (next, val) => new ListNode(val, next));
+        ListNode? head = null;
+
+        for (var i = array.Length - 1; i >= 0; i--)
+        {
+            head = new ListNode(array[i], head);
+        }
+
+        return head;
     }
 
     /// <summary>

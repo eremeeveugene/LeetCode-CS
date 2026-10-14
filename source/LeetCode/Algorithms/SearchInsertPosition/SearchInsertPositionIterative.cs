@@ -21,6 +21,20 @@ public sealed class SearchInsertPositionIterative : ISearchInsertPosition
     /// </remarks>
     public int SearchInsert(int[] nums, int target)
     {
-        return nums.TakeWhile(t => t < target).Count();
+        var count = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            if (num >= target)
+            {
+                break;
+            }
+
+            count++;
+        }
+
+        return count;
     }
 }

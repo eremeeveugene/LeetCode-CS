@@ -96,5 +96,58 @@ public abstract class MinimumNumberOfDaysToDisconnectIslandTestsBase<T> where T 
             },
             1
         ];
+
+        yield return [new[] { new[] { 0 } }, 0];
+
+        yield return [new[] { new[] { 1 } }, 1];
+
+        yield return [new[] { new[] { 1, 1, 1, 1, 1 } }, 1];
+
+        yield return [new[] { new[] { 1 }, new[] { 1 }, new[] { 1 } }, 1];
+
+        yield return [new[] { new[] { 1, 1 }, new[] { 1, 1 } }, 2];
+
+        yield return [new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 1 } }, 2];
+
+        yield return [new[] { new[] { 0, 0, 0 }, new[] { 0, 0, 0 }, new[] { 0, 0, 0 } }, 0];
+
+        yield return [new[] { new[] { 1, 1, 1 }, new[] { 1, 0, 1 }, new[] { 1, 1, 1 } }, 2];
+
+        yield return [new[] { new[] { 0, 1, 0 }, new[] { 1, 1, 1 }, new[] { 0, 1, 0 } }, 1];
+
+        yield return [new[] { new[] { 1, 0, 1 }, new[] { 0, 1, 0 }, new[] { 1, 0, 1 } }, 0];
+
+        yield return [new[] { new[] { 1, 1, 0, 0 }, new[] { 0, 1, 1, 0 }, new[] { 0, 0, 1, 1 } }, 1];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 1, 1 } }, 1];
+
+        yield return [new[] { new[] { 1, 1, 1, 1 }, new[] { 1, 0, 1, 1 }, new[] { 1, 1, 1, 0 }, new[] { 1, 1, 1, 1 } }, 1];
+
+        yield return [new[] { new[] { 1, 1, 1, 0, 1, 1 }, new[] { 1, 1, 0, 1, 1, 1 }, new[] { 0, 0, 0, 0, 1, 0 }, new[] { 1, 1, 1, 1, 1, 0 }, new[] { 0, 0, 1, 1, 1, 1 } }, 0];
+
+        yield return [new[] { new[] { 0, 1, 1, 1, 1 }, new[] { 1, 1, 1, 1, 1 }, new[] { 1, 0, 0, 1, 1 }, new[] { 1, 1, 1, 1, 1 }, new[] { 1, 1, 1, 1, 0 }, new[] { 1, 1, 1, 1, 1 } }, 1];
+
+        yield return [new[] { new[] { 0, 0, 0, 1, 1, 1, 1, 1 }, new[] { 0, 1, 1, 0, 0, 1, 1, 0 }, new[] { 1, 1, 1, 1, 1, 0, 1, 0 }, new[] { 1, 0, 1, 1, 1, 1, 1, 1 }, new[] { 1, 0, 1, 1, 0, 1, 0, 1 }, new[] { 1, 1, 0, 1, 0, 1, 0, 1 }, new[] { 0, 1, 0, 0, 1, 1, 1, 0 }, new[] { 1, 0, 0, 1, 1, 1, 1, 0 } }, 0];
+
+        yield return [CreateGrid(30, 30, 1), 2];
+
+        yield return [CreateGrid(30, 30, 0), 0];
+    }
+
+    private static int[][] CreateGrid(int rows, int columns, int value)
+    {
+        var grid = new int[rows][];
+
+        for (var i = 0; i < rows; i++)
+        {
+            grid[i] = new int[columns];
+
+            for (var j = 0; j < columns; j++)
+            {
+                grid[i][j] = value;
+            }
+        }
+
+        return grid;
     }
 }

@@ -42,11 +42,12 @@ public sealed class LexicographicallySmallestEquivalentStringAdjacencyUnionFind 
 
         var resultStringBuilder = new StringBuilder(baseStr.Length);
 
-        foreach (var c in baseStr)
+        for (var i = 0; i < baseStr.Length; i++)
         {
-            var i = Find(c - 'a', parent);
+            var c = baseStr[i];
+            var root = Find(c - 'a', parent);
 
-            resultStringBuilder.Append((char)(i + 'a'));
+            resultStringBuilder.Append((char)(root + 'a'));
         }
 
         return resultStringBuilder.ToString();

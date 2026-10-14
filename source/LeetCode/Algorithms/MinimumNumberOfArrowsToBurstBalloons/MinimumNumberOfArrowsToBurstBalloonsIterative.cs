@@ -23,12 +23,18 @@ public sealed class MinimumNumberOfArrowsToBurstBalloonsIterative : IMinimumNumb
     {
         var arrowShotsCount = 1;
 
-        var orderedPoints = points.OrderBy(p => p[1]).ToArray();
+        var orderedPoints = new int[points.Length][];
+
+        Array.Copy(points, orderedPoints, points.Length);
+
+        Array.Sort(orderedPoints, (a, b) => a[1].CompareTo(b[1]));
 
         var previousPoint = orderedPoints[0];
 
-        foreach (var point in orderedPoints)
+        for (var i = 0; i < orderedPoints.Length; i++)
         {
+            var point = orderedPoints[i];
+
             if (point[0] <= previousPoint[1])
             {
                 continue;

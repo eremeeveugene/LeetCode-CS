@@ -24,8 +24,10 @@ public sealed class MaximumCountOfPositiveIntegerAndNegativeIntegerBruteForce : 
         var negativeCount = 0;
         var positiveCount = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             switch (num)
             {
                 case < 0:
