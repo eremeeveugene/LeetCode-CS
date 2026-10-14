@@ -23,8 +23,10 @@ public sealed class ZeroArrayTransformation1PrefixSum : IZeroArrayTransformation
     {
         var prefixSum = new int[nums.Length + 1];
 
-        foreach (var query in queries)
+        for (var i = 0; i < queries.Length; i++)
         {
+            var query = queries[i];
+
             prefixSum[query[0]]++;
             prefixSum[query[1] + 1]--;
         }

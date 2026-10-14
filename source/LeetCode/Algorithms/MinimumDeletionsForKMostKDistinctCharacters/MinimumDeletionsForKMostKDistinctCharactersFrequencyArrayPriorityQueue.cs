@@ -23,12 +23,24 @@ public sealed class MinimumDeletionsForKMostKDistinctCharactersFrequencyArrayPri
     {
         var frequencyArray = new int['z' - 'a' + 1];
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             frequencyArray[c - 'a']++;
         }
 
-        var countToRemove = frequencyArray.Count(frequency => frequency > 0) - k;
+        var distinctCount = 0;
+
+        for (var i = 0; i < frequencyArray.Length; i++)
+        {
+            if (frequencyArray[i] > 0)
+            {
+                distinctCount++;
+            }
+        }
+
+        var countToRemove = distinctCount - k;
 
         if (countToRemove <= 0)
         {

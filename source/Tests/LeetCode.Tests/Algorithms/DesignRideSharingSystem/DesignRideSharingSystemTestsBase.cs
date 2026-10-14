@@ -788,7 +788,20 @@ public abstract class DesignRideSharingSystemTestsBase<T> where T : IDesignRideS
 
             public bool Equals(Result? other)
             {
-                return other is not null && _match.SequenceEqual(other._match);
+                if (other is null || _match.Length != other._match.Length)
+                {
+                    return false;
+                }
+
+                for (var i = 0; i < _match.Length; i++)
+                {
+                    if (_match[i] != other._match[i])
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
             }
 
             public override bool Equals(object? obj)
@@ -800,8 +813,10 @@ public abstract class DesignRideSharingSystemTestsBase<T> where T : IDesignRideS
             {
                 var hashCode = new HashCode();
 
-                foreach (var value in _match)
+                for (var i = 0; i < _match.Length; i++)
                 {
+                    var value = _match[i];
+
                     hashCode.Add(value);
                 }
 

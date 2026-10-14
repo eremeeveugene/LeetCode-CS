@@ -19,6 +19,23 @@ public abstract class UniqueNumberOfOccurrencesTestsBase<T> where T : IUniqueNum
     [DataRow(new[] { 1, 2 }, false)]
     [DataRow(new[] { 1, 2, 2, 1, 1, 3 }, true)]
     [DataRow(new[] { -3, 0, 1, -3, 1, 1, 1, -3, 10, 0 }, true)]
+    [DataRow(new[] { 1 }, true)]
+    [DataRow(new[] { 1, 1 }, true)]
+    [DataRow(new[] { 1, 1, 2, 2 }, false)]
+    [DataRow(new[] { 1, 2, 2 }, true)]
+    [DataRow(new[] { 1, 1, 2, 2, 3, 3, 3 }, false)]
+    [DataRow(new[] { 0 }, true)]
+    [DataRow(new[] { -1000, 1000 }, false)]
+    [DataRow(new[] { -1000, -1000, 1000 }, true)]
+    [DataRow(new[] { 1000, 1000, 1000, -1000, -1000, 0 }, true)]
+    [DataRow(new[] { 5, 5, 5, 5, 3, 3, 3, 7, 7, 9 }, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, false)]
+    [DataRow(new[] { 1, 1, 1, 2, 2, 3 }, true)]
+    [DataRow(new[] { 1, 1, 1, 2, 2, 3, 3 }, false)]
+    [DataRow(new[] { 0, 0, 0, 0, 0, 0 }, true)]
+    [DataRow(new[] { 7, -7, 7, -7 }, false)]
+    [DataRow(new[] { 1, 2, 2, 3, 3, 3, 4, 4, 4, 4 }, true)]
+    [DataRow(new[] { 1, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 5 }, false)]
     public void UniqueOccurrences_WithIntegerArray_ReturnsIfOccurrencesAreUnique(int[] arr, bool expectedResult)
     {
         // Arrange

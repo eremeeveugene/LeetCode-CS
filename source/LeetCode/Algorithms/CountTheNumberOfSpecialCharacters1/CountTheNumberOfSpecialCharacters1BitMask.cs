@@ -24,8 +24,10 @@ public sealed class CountTheNumberOfSpecialCharacters1BitMask : ICountTheNumberO
         var lower = 0;
         var upper = 0;
 
-        foreach (var c in word)
+        for (var i = 0; i < word.Length; i++)
         {
+            var c = word[i];
+
             if (char.IsLower(c))
             {
                 lower |= 1 << (c - 'a');

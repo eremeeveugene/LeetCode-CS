@@ -25,8 +25,10 @@ public sealed class DistributeCandiesDictionary : IDistributeCandies
 
         var candyTypesDictionary = new Dictionary<int, int>();
 
-        foreach (var candyType in candyTypes)
+        for (var i = 0; i < candyTypes.Length; i++)
         {
+            var candyType = candyTypes[i];
+
             if (!candyTypesDictionary.TryAdd(candyType, 1))
             {
                 candyTypesDictionary[candyType]++;

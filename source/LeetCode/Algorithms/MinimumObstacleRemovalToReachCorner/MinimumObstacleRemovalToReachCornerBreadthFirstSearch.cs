@@ -38,8 +38,10 @@ public sealed class MinimumObstacleRemovalToReachCornerBreadthFirstSearch : IMin
 
             cellStatesLinkedList.RemoveFirst();
 
-            foreach (var direction in Directions)
+            for (var i = 0; i < Directions.Length; i++)
             {
+                var direction = Directions[i];
+
                 var nextRow = row + direction.X;
                 var nextColumn = column + direction.Y;
 

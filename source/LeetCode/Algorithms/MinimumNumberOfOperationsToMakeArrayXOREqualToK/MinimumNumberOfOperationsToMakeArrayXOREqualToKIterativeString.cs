@@ -21,7 +21,12 @@ public sealed class MinimumNumberOfOperationsToMakeArrayXOREqualToKIterativeStri
     /// </remarks>
     public int MinOperations(int[] nums, int k)
     {
-        var xor = nums.Aggregate(0, (current, num) => current ^ num);
+        var xor = 0;
+
+        for (var j = 0; j < nums.Length; j++)
+        {
+            xor ^= nums[j];
+        }
 
         if (xor == k)
         {

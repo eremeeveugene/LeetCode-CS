@@ -33,9 +33,35 @@ public sealed class SortArrayByIncreasingFrequencyDictionary : ISortArrayByIncre
             }
         }
 
-        return frequencyDictionary.OrderBy(f => f.Value)
-            .ThenByDescending(f => f.Key)
-            .SelectMany(pair => Enumerable.Repeat(pair.Key, pair.Value))
-            .ToArray();
+        var keys = new int[frequencyDictionary.Count];
+
+        frequencyDictionary.Keys.CopyTo(keys, 0);
+
+        Array.Sort(
+            keys,
+            (first, second) =>
+            {
+                var frequencyComparison = frequencyDictionary[first].CompareTo(frequencyDictionary[second]);
+
+                return frequencyComparison != 0 ? frequencyComparison : second.CompareTo(first);
+            });
+
+        var result = new int[nums.Length];
+        var resultIndex = 0;
+
+        for (var i = 0; i < keys.Length; i++)
+        {
+            var key = keys[i];
+            var frequency = frequencyDictionary[key];
+
+            for (var j = 0; j < frequency; j++)
+            {
+                result[resultIndex] = key;
+
+                resultIndex++;
+            }
+        }
+
+        return result;
     }
 }

@@ -24,9 +24,14 @@ public sealed class MyCalendar2BruteForce : IMyCalendar2
     /// </remarks>
     public bool Book(int start, int end)
     {
-        if (_overlapItems.Any(overlapItem => start < overlapItem.End && end > overlapItem.Start))
+        for (var i = 0; i < _overlapItems.Count; i++)
         {
-            return false;
+            var overlapItem = _overlapItems[i];
+
+            if (start < overlapItem.End && end > overlapItem.Start)
+            {
+                return false;
+            }
         }
 
         for (var i = 0; i < _items.Count; i++)

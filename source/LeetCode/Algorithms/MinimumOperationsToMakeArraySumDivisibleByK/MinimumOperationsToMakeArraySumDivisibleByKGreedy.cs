@@ -23,9 +23,11 @@ public sealed class MinimumOperationsToMakeArraySumDivisibleByKGreedy : IMinimum
     {
         var sum = 0;
 
-        foreach (var i in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
-            sum += i;
+            var num = nums[i];
+
+            sum += num;
         }
 
         return sum % k;

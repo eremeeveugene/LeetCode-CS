@@ -21,20 +21,27 @@ public sealed class BitwiseXOROfAllPairingsIterative : IBitwiseXOROfAllPairings
     /// </remarks>
     public int XorAllNums(int[] nums1, int[] nums2)
     {
+        var n = nums1.Length;
+        var m = nums2.Length;
+
         var result = 0;
 
-        if (nums2.Length % 2 == 1)
+        if (m % 2 == 1)
         {
-            foreach (var num1 in nums1)
+            for (var i = 0; i < n; i++)
             {
+                var num1 = nums1[i];
+
                 result ^= num1;
             }
         }
 
-        if (nums1.Length % 2 == 1)
+        if (n % 2 == 1)
         {
-            foreach (var num2 in nums2)
+            for (var i = 0; i < m; i++)
             {
+                var num2 = nums2[i];
+
                 result ^= num2;
             }
         }

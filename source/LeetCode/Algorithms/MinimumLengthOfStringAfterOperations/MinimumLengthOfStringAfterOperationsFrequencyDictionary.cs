@@ -25,8 +25,10 @@ public sealed class MinimumLengthOfStringAfterOperationsFrequencyDictionary : IM
 
         var frequencyDictionary = new Dictionary<char, int>();
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             if (frequencyDictionary.TryAdd(c, 1))
             {
                 result++;

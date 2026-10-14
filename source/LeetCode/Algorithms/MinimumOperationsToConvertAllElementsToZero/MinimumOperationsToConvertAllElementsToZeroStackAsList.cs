@@ -25,8 +25,10 @@ public sealed class MinimumOperationsToConvertAllElementsToZeroStackAsList : IMi
 
         var minOperations = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             while (numsList.Count > 0 && numsList[^1] > num)
             {
                 numsList.RemoveAt(numsList.Count - 1);

@@ -45,8 +45,10 @@ public sealed class MaximumDepthOfNaryTreeBreadthFirstSearch : IMaximumDepthOfNa
                 continue;
             }
 
-            foreach (var child in node.children)
+            for (var i = 0; i < node.children.Count; i++)
             {
+                var child = node.children[i];
+
                 queue.Enqueue((child, depth + 1));
             }
         }

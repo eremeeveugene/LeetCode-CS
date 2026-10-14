@@ -42,7 +42,7 @@ public abstract class FindMissingElementsTestsBase<T> where T : IFindMissingElem
         var solution = new T();
 
         // Act
-        var actualResult = solution.FindMissingElements(nums).ToArray();
+        var actualResult = solution.FindMissingElements(nums);
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult);

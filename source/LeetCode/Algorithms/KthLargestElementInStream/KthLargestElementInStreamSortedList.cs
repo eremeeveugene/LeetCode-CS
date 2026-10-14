@@ -20,7 +20,9 @@ public sealed class KthLargestElementInStreamSortedList : IKthLargestElementInSt
     public KthLargestElementInStreamSortedList(int k, int[] nums)
     {
         _k = k;
-        _nums = [.. nums.OrderDescending()];
+        _nums = new List<int>(nums);
+
+        _nums.Sort((a, b) => b.CompareTo(a));
     }
 
     /// <inheritdoc />

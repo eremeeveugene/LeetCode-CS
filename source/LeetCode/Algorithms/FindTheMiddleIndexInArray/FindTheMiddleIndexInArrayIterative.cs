@@ -22,18 +22,27 @@ public sealed class FindTheMiddleIndexInArrayIterative : IFindTheMiddleIndexInAr
     public int FindMiddleIndex(int[] nums)
     {
         var leftSum = 0;
-        var rightSum = nums.Sum();
+        var rightSum = 0;
 
         for (var i = 0; i < nums.Length; i++)
         {
-            rightSum -= nums[i];
+            var num = nums[i];
+
+            rightSum += num;
+        }
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            rightSum -= num;
 
             if (leftSum == rightSum)
             {
                 return i;
             }
 
-            leftSum += nums[i];
+            leftSum += num;
         }
 
         return -1;

@@ -31,11 +31,18 @@ public sealed class TwoOutOfThreeFrequencyDictionary : ITwoOutOfThree
 
         var result = new List<int>();
 
-        foreach (var pair in numToMaskDictionary)
+        var nums = new int[numToMaskDictionary.Count];
+
+        numToMaskDictionary.Keys.CopyTo(nums, 0);
+
+        for (var i = 0; i < nums.Length; i++)
         {
-            if ((pair.Value & (pair.Value - 1)) != 0)
+            var num = nums[i];
+            var mask = numToMaskDictionary[num];
+
+            if ((mask & (mask - 1)) != 0)
             {
-                result.Add(pair.Key);
+                result.Add(num);
             }
         }
 

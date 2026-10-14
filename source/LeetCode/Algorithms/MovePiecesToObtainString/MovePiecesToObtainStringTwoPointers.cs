@@ -21,27 +21,21 @@ public sealed class MovePiecesToObtainStringTwoPointers : IMovePiecesToObtainStr
     /// </remarks>
     public bool CanChange(string start, string target)
     {
-        var startIndex = 0;
-        var targetIndex = 0;
+        var startIndex = SkipBlanks(start, 0);
+        var targetIndex = SkipBlanks(target, 0);
 
-        while (true)
+        while (startIndex < start.Length && targetIndex < target.Length)
         {
-            startIndex = SkipBlanks(start, startIndex);
-            targetIndex = SkipBlanks(target, targetIndex);
-
-            if (startIndex == start.Length || targetIndex == target.Length)
-            {
-                return startIndex == start.Length && targetIndex == target.Length;
-            }
-
             if (!IsMatchingPiece(start[startIndex], target[targetIndex], startIndex, targetIndex))
             {
                 return false;
             }
 
-            startIndex++;
-            targetIndex++;
+            startIndex = SkipBlanks(start, startIndex + 1);
+            targetIndex = SkipBlanks(target, targetIndex + 1);
         }
+
+        return startIndex == start.Length && targetIndex == target.Length;
     }
 
     private static int SkipBlanks(string value, int index)

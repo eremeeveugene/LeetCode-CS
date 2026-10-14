@@ -23,16 +23,18 @@ public sealed class FindChampion2Array : IFindChampion2
     {
         var hasIncomingEdge = new bool[n];
 
-        foreach (var edge in edges)
+        for (var i = 0; i < edges.Length; i++)
         {
+            var edge = edges[i];
+
             hasIncomingEdge[edge[1]] = true;
         }
 
         var champion = -1;
 
-        for (var i = 0; i < n; i++)
+        for (var j = 0; j < n; j++)
         {
-            if (hasIncomingEdge[i])
+            if (hasIncomingEdge[j])
             {
                 continue;
             }
@@ -42,7 +44,7 @@ public sealed class FindChampion2Array : IFindChampion2
                 return -1;
             }
 
-            champion = i;
+            champion = j;
         }
 
         return champion;

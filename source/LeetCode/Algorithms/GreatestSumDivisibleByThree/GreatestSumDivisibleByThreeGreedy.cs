@@ -28,8 +28,10 @@ public sealed class GreatestSumDivisibleByThreeGreedy : IGreatestSumDivisibleByT
         var smallestNumberWithRemainderTwo = int.MaxValue;
         var secondSmallestNumberWithRemainderTwo = int.MaxValue;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             sum += num;
 
             switch (num % 3)

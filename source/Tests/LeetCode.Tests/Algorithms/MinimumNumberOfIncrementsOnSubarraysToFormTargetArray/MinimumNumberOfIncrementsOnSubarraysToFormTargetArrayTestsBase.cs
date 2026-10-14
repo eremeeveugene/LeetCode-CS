@@ -64,11 +64,52 @@ public abstract class MinimumNumberOfIncrementsOnSubarraysToFormTargetArrayTests
 
     private static IEnumerable<object[]> GetLargeTestData()
     {
-        yield return [Enumerable.Repeat(1, 100000).ToArray(), 1];
-        yield return [Enumerable.Repeat(100000, 100000).ToArray(), 100000];
-        yield return [Enumerable.Range(1, 100000).ToArray(), 100000];
-        yield return [Enumerable.Range(1, 100000).Reverse().ToArray(), 100000];
-        yield return [Enumerable.Range(0, 100000).Select(i => i % 2 == 0 ? 1 : 40000).ToArray(), 1999950001];
-        yield return [Enumerable.Range(0, 42950).Select(i => i % 2 == 0 ? 1 : 100000).Concat([1, 5122]).ToArray(), int.MaxValue];
+        yield return [CreateAlternating(100000, 1, 1), 1];
+        yield return [CreateAlternating(100000, 100000, 100000), 100000];
+        yield return [CreateAscending(100000), 100000];
+        yield return [CreateDescending(100000), 100000];
+        yield return [CreateAlternating(100000, 1, 40000), 1999950001];
+        yield return [CreateAlternating(42950, 1, 100000, 1, 5122), int.MaxValue];
+    }
+
+    private static int[] CreateAlternating(int length, int evenValue, int oddValue, params int[] suffix)
+    {
+        var result = new int[length + suffix.Length];
+
+        for (var i = 0; i < length; i++)
+        {
+            result[i] = i % 2 == 0 ? evenValue : oddValue;
+        }
+
+        for (var i = 0; i < suffix.Length; i++)
+        {
+            result[length + i] = suffix[i];
+        }
+
+        return result;
+    }
+
+    private static int[] CreateAscending(int length)
+    {
+        var result = new int[length];
+
+        for (var i = 0; i < length; i++)
+        {
+            result[i] = i + 1;
+        }
+
+        return result;
+    }
+
+    private static int[] CreateDescending(int length)
+    {
+        var result = new int[length];
+
+        for (var i = 0; i < length; i++)
+        {
+            result[i] = length - i;
+        }
+
+        return result;
     }
 }

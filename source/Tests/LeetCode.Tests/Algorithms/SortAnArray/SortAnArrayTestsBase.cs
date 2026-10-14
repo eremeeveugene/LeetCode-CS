@@ -34,6 +34,10 @@ public abstract class SortAnArrayTestsBase<T> where T : ISortAnArray, new()
     [DataRow(new[] { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 }, new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 })]
     [DataRow(new[] { -1, 0, 1 }, new[] { -1, 0, 1 })]
     [DataRow(new[] { 3, 1, 2, 3, 1 }, new[] { 1, 1, 2, 3, 3 })]
+    [DataRow(new[] { 50000, -50000, 0, 50000, -50000 }, new[] { -50000, -50000, 0, 50000, 50000 })]
+    [DataRow(new[] { 4, 4, 4, 1, 1, 4 }, new[] { 1, 1, 4, 4, 4, 4 })]
+    [DataRow(new[] { -50000 }, new[] { -50000 })]
+    [DataRow(new[] { 7, -7, 7, -7, 7, -7, 7 }, new[] { -7, -7, -7, 7, 7, 7, 7 })]
     public void SortArray_WithUnsortedArray_ReturnsSortedArray(int[] nums, int[] expectedResult)
     {
         // Arrange

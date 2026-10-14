@@ -41,8 +41,10 @@ public sealed class FindMinimumDiameterAfterMergingTwoTreesDepthFirstSearch : IF
             adjList.Add([]);
         }
 
-        foreach (var edge in edges)
+        for (var i = 0; i < edges.Length; i++)
         {
+            var edge = edges[i];
+
             adjList[edge[0]].Add(edge[1]);
             adjList[edge[1]].Add(edge[0]);
         }
@@ -56,8 +58,12 @@ public sealed class FindMinimumDiameterAfterMergingTwoTreesDepthFirstSearch : IF
         var maxDepth2 = 0;
         var diameter = 0;
 
-        foreach (var neighbor in adjList[node])
+        var neighbors = adjList[node];
+
+        for (var i = 0; i < neighbors.Count; i++)
         {
+            var neighbor = neighbors[i];
+
             if (neighbor == parent)
             {
                 continue;

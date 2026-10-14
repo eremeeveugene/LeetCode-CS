@@ -31,9 +31,24 @@ public sealed class HappyNumberHashSetChars : IHappyNumber
         while (n > 1 && !hashSet.Contains(n))
         {
             hashSet.Add(n);
-            n = n.ToString().Sum(c => (int)Math.Pow(char.GetNumericValue(c), 2));
+            n = GetNext(n);
         }
 
         return n == 1;
+    }
+
+    private static int GetNext(int n)
+    {
+        var digits = n.ToString();
+        var sum = 0;
+
+        for (var i = 0; i < digits.Length; i++)
+        {
+            var digit = digits[i] - '0';
+
+            sum += digit * digit;
+        }
+
+        return sum;
     }
 }

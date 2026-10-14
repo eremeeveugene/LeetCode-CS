@@ -50,8 +50,10 @@ public abstract class CreateGridWithExactlyOnePathTestsBase<T> where T : ICreate
         // Assert
         Assert.HasCount(m, actualResult);
 
-        foreach (var row in actualResult)
+        for (var i = 0; i < actualResult.Length; i++)
         {
+            var row = actualResult[i];
+
             Assert.AreEqual(n, row.Length);
         }
 

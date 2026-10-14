@@ -23,7 +23,18 @@ public sealed class SpecialArrayWithXElementsGreaterThanOrEqualXBruteForce : ISp
     {
         for (var i = 0; i < nums.Length + 1; i++)
         {
-            var count = nums.Count(num => num >= i);
+            var count = 0;
+
+            for (var j = 0; j < nums.Length; j++)
+            {
+                var num = nums[j];
+
+                if (num >= i)
+                {
+                    count++;
+                }
+            }
+
 
             if (count == i)
             {

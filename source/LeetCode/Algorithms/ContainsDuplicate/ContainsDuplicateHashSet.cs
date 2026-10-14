@@ -23,8 +23,10 @@ public sealed class ContainsDuplicateHashSet : IContainsDuplicate
     {
         var numsHashSet = new HashSet<int>();
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (numsHashSet.Add(num))
             {
                 continue;

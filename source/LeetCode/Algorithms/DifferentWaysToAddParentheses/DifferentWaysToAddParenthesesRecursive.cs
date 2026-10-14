@@ -40,15 +40,22 @@ public sealed class DifferentWaysToAddParenthesesRecursive : IDifferentWaysToAdd
             var leftResults = DiffWaysToCompute(expression[..i]);
             var rightResults = DiffWaysToCompute(expression[(i + 1)..]);
 
-            foreach (var leftResult in leftResults)
+            for (var j = 0; j < leftResults.Count; j++)
             {
-                results.AddRange(
-                    rightResults.Select(rightResult => expression[i] switch
-                    {
-                        '+' => leftResult + rightResult,
-                        '-' => leftResult - rightResult,
-                        _ => leftResult * rightResult
-                    }));
+                var leftResult = leftResults[j];
+
+                for (var k = 0; k < rightResults.Count; k++)
+                {
+                    var rightResult = rightResults[k];
+
+                    results.Add(
+                        expression[i] switch
+                        {
+                            '+' => leftResult + rightResult,
+                            '-' => leftResult - rightResult,
+                            _ => leftResult * rightResult
+                        });
+                }
             }
         }
 

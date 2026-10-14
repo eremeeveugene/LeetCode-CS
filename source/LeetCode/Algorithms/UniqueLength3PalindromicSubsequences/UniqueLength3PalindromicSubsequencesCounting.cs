@@ -62,8 +62,14 @@ public sealed class UniqueLength3PalindromicSubsequencesCounting : IUniqueLength
                 middleCharsHashSet.Add(s[j]);
             }
 
-            foreach (var middleChar in middleCharsHashSet)
+            var middleChars = new char[middleCharsHashSet.Count];
+
+            middleCharsHashSet.CopyTo(middleChars);
+
+            for (var j = 0; j < middleChars.Length; j++)
             {
+                var middleChar = middleChars[j];
+
                 var palindromeStringBuilder = new StringBuilder();
 
                 palindromeStringBuilder.Append(i + 'a');

@@ -23,8 +23,10 @@ public sealed class SignOfTheProductOfAnArrayIterative : ISignOfTheProductOfAnAr
     {
         var sign = 1;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (num == 0)
             {
                 return 0;

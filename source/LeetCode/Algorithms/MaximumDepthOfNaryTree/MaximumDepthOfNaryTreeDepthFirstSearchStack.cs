@@ -45,8 +45,10 @@ public sealed class MaximumDepthOfNaryTreeDepthFirstSearchStack : IMaximumDepthO
                 continue;
             }
 
-            foreach (var childNode in node.children)
+            for (var i = 0; i < node.children.Count; i++)
             {
+                var childNode = node.children[i];
+
                 stack.Push((childNode, depth + 1));
             }
         }

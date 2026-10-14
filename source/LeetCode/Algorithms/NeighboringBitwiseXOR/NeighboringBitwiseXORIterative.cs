@@ -23,8 +23,10 @@ public sealed class NeighboringBitwiseXORIterative : INeighboringBitwiseXOR
     {
         var xorResult = 0;
 
-        foreach (var num in derived)
+        for (var i = 0; i < derived.Length; i++)
         {
+            var num = derived[i];
+
             xorResult ^= num;
         }
 

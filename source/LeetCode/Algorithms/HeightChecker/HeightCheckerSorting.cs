@@ -21,8 +21,22 @@ public sealed class HeightCheckerSorting : IHeightChecker
     /// </remarks>
     public int HeightChecker(int[] heights)
     {
-        var sortedHeights = heights.Order().ToArray();
+        var sortedHeights = new int[heights.Length];
 
-        return heights.Where((t, i) => sortedHeights[i] != t).Count();
+        Array.Copy(heights, sortedHeights, heights.Length);
+
+        Array.Sort(sortedHeights);
+
+        var result = 0;
+
+        for (var i = 0; i < heights.Length; i++)
+        {
+            if (sortedHeights[i] != heights[i])
+            {
+                result++;
+            }
+        }
+
+        return result;
     }
 }

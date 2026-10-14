@@ -24,7 +24,7 @@ public abstract class NaryTreePreorderTraversalTestsBase<T> where T : INaryTreeP
 
         var solution = new T();
 
-        var actualResult = solution.Preorder(root).ToArray();
+        var actualResult = solution.Preorder(root);
 
         Assert.AreSequenceEqual(expectedResult, actualResult);
     }
@@ -60,5 +60,25 @@ public abstract class NaryTreePreorderTraversalTestsBase<T> where T : INaryTreeP
         yield return [new int?[] { 7, null, 8, 9, null, 10 }, new[] { 7, 8, 10, 9 }];
 
         yield return [new int?[] { 1, null, 2, 3, 4, 5 }, new[] { 1, 2, 3, 4, 5 }];
+
+        yield return [new int?[] { 1 }, new[] { 1 }];
+
+        yield return [new int?[] { 1, null, 2 }, new[] { 1, 2 }];
+
+        yield return [new int?[] { 3, null, 1, null, 2 }, new[] { 3, 1, 2 }];
+
+        yield return [new int?[] { 2, null, 3, 1 }, new[] { 2, 3, 1 }];
+
+        yield return [new int?[] { 2, null, 4, null, 5, null, 1, null, 3 }, new[] { 2, 4, 5, 1, 3 }];
+
+        yield return [new int?[] { 3, null, 5, 2, 4, 6, 1 }, new[] { 3, 5, 2, 4, 6, 1 }];
+
+        yield return [new int?[] { 7, null, 3, 6, 1, null, 2, null, 4, null, null, null, 5 }, new[] { 7, 3, 2, 6, 4, 5, 1 }];
+
+        yield return [new int?[] { 6, null, 5, 7, 8, null, 2, 1, null, 9, 4, null, null, 3 }, new[] { 6, 5, 2, 3, 1, 7, 9, 4, 8 }];
+
+        yield return [new int?[] { 9, null, 3, null, 2, 7, 5, 6, null, null, 1, null, 10, null, 8, null, null, null, 4 }, new[] { 9, 3, 2, 7, 1, 5, 10, 6, 8, 4 }];
+
+        yield return [new int?[] { 3, null, 2, 10, 1, null, 7, 4, null, 12, 5, null, 11, 6, 8, null, null, null, null, null, null, 9 }, new[] { 3, 2, 7, 4, 10, 12, 5, 1, 11, 6, 9, 8 }];
     }
 }

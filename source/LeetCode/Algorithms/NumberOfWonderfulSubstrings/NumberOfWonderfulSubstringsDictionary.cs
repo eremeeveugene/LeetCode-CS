@@ -26,30 +26,32 @@ public sealed class NumberOfWonderfulSubstringsDictionary : INumberOfWonderfulSu
 
         var bitmask = 0;
 
-        var maskCount = new Dictionary<int, int> { [0] = 1 };
+        var maskToCountDictionary = new Dictionary<int, int> { [0] = 1 };
 
-        foreach (var c in word)
+        for (var i = 0; i < word.Length; i++)
         {
+            var c = word[i];
+
             bitmask ^= 1 << (c - 'a');
 
-            if (maskCount.TryGetValue(bitmask, out var bitmaskCount))
+            if (maskToCountDictionary.TryGetValue(bitmask, out var bitmaskCount))
             {
                 count += bitmaskCount;
             }
 
-            for (var i = 0; i < 10; i++)
+            for (var j = 0; j < 10; j++)
             {
-                var tempMask = bitmask ^ (1 << i);
+                var tempMask = bitmask ^ (1 << j);
 
-                if (maskCount.TryGetValue(tempMask, out var tempMaskCount))
+                if (maskToCountDictionary.TryGetValue(tempMask, out var tempMaskCount))
                 {
                     count += tempMaskCount;
                 }
             }
 
-            if (!maskCount.TryAdd(bitmask, 1))
+            if (!maskToCountDictionary.TryAdd(bitmask, 1))
             {
-                maskCount[bitmask]++;
+                maskToCountDictionary[bitmask]++;
             }
         }
 

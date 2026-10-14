@@ -26,7 +26,7 @@ public sealed class LargestPositiveIntegerThatExistsWithItsNegativeSortingTwoPoi
         var left = 0;
         var right = nums.Length - 1;
 
-        while (left < right)
+        while (left < right && nums[left] < 0)
         {
             var absLeft = Math.Abs(nums[left]);
 

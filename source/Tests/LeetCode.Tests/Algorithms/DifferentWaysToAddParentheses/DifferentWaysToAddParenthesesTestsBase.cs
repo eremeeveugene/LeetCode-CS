@@ -89,7 +89,11 @@ public abstract class DifferentWaysToAddParenthesesTestsBase<T> where T : IDiffe
         var solution = new T();
 
         // Act
-        var actualResult = solution.DiffWaysToCompute(expression).ToArray();
+        var actualList = solution.DiffWaysToCompute(expression);
+
+        var actualResult = new int[actualList.Count];
+
+        actualList.CopyTo(actualResult, 0);
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult, SequenceOrder.InAnyOrder);

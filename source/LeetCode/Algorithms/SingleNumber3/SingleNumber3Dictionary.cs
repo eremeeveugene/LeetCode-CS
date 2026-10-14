@@ -33,6 +33,25 @@ public sealed class SingleNumber3Dictionary : ISingleNumber3
             }
         }
 
-        return numsDictionary.Where(num => num.Value < 2).Select(num => num.Key).ToArray();
+        var keys = new int[numsDictionary.Count];
+
+        numsDictionary.Keys.CopyTo(keys, 0);
+
+        var result = new int[2];
+        var resultIndex = 0;
+
+        for (var i = 0; i < keys.Length; i++)
+        {
+            var key = keys[i];
+
+            if (numsDictionary[key] < 2)
+            {
+                result[resultIndex] = key;
+
+                resultIndex++;
+            }
+        }
+
+        return result;
     }
 }

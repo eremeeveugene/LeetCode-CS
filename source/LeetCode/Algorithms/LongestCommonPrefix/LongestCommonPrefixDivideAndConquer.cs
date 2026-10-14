@@ -26,8 +26,11 @@ public sealed class LongestCommonPrefixDivideAndConquer : ILongestCommonPrefix
             case > 2:
                 {
                     var partLength = strs.Length / 2;
-                    var leftPart = strs.Take(partLength).ToArray();
-                    var rightPart = strs.Skip(partLength).Take(strs.Length - partLength).ToArray();
+                    var leftPart = new string[partLength];
+                    var rightPart = new string[strs.Length - partLength];
+
+                    Array.Copy(strs, 0, leftPart, 0, partLength);
+                    Array.Copy(strs, partLength, rightPart, 0, rightPart.Length);
 
                     return GetLongestPrefix(LongestCommonPrefix(leftPart), LongestCommonPrefix(rightPart));
                 }

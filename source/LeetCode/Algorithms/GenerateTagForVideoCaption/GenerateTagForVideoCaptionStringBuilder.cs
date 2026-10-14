@@ -36,8 +36,10 @@ public sealed class GenerateTagForVideoCaptionStringBuilder : IGenerateTagForVid
 
         var firstWord = words[0].ToLowerInvariant();
 
-        foreach (var c in firstWord)
+        for (var i = 0; i < firstWord.Length; i++)
         {
+            var c = firstWord[i];
+
             if (tagStringBuilder.Length == 100)
             {
                 return tagStringBuilder.ToString();
@@ -48,10 +50,20 @@ public sealed class GenerateTagForVideoCaptionStringBuilder : IGenerateTagForVid
 
         for (var i = 1; i < words.Length; i++)
         {
+            if (tagStringBuilder.Length == 100)
+            {
+                return tagStringBuilder.ToString();
+            }
+
             tagStringBuilder.Append(char.ToUpperInvariant(words[i][0]));
 
             for (var j = 1; j < words[i].Length; j++)
             {
+                if (tagStringBuilder.Length == 100)
+                {
+                    return tagStringBuilder.ToString();
+                }
+
                 tagStringBuilder.Append(char.ToLowerInvariant(words[i][j]));
             }
         }

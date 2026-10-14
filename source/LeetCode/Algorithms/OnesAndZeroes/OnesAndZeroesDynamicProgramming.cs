@@ -23,13 +23,17 @@ public sealed class OnesAndZeroesDynamicProgramming : IOnesAndZeroes
     {
         Span<int> dp = stackalloc int[(m + 1) * (n + 1)];
 
-        foreach (var str in strs)
+        for (var k = 0; k < strs.Length; k++)
         {
+            var str = strs[k];
+
             var zeros = 0;
             var ones = 0;
 
-            foreach (var c in str)
+            for (var j = 0; j < str.Length; j++)
             {
+                var c = str[j];
+
                 if (c == '0')
                 {
                     zeros++;

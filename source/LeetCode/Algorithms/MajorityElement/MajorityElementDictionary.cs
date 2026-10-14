@@ -36,15 +36,24 @@ public sealed class MajorityElementDictionary : IMajorityElement
         var result = 0;
         var maxFrequency = 0;
 
-        foreach (var frequency in frequencyDictionary)
+        var keys = new int[frequencyDictionary.Count];
+        var values = new int[frequencyDictionary.Count];
+
+        frequencyDictionary.Keys.CopyTo(keys, 0);
+        frequencyDictionary.Values.CopyTo(values, 0);
+
+        for (var i = 0; i < keys.Length; i++)
         {
-            if (frequency.Value <= maxFrequency)
+            var key = keys[i];
+            var value = values[i];
+
+            if (value <= maxFrequency)
             {
                 continue;
             }
 
-            maxFrequency = frequency.Value;
-            result = frequency.Key;
+            maxFrequency = value;
+            result = key;
         }
 
         return result;

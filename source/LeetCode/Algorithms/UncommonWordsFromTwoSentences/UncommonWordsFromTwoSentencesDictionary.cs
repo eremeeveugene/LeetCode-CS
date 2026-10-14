@@ -47,6 +47,22 @@ public sealed class UncommonWordsFromTwoSentencesDictionary : IUncommonWordsFrom
             }
         }
 
-        return wordsDictionary.Where(w => w.Value == 1).Select(w => w.Key).ToArray();
+        var words = new string[wordsDictionary.Count];
+
+        wordsDictionary.Keys.CopyTo(words, 0);
+
+        var uncommonWords = new List<string>();
+
+        for (var i = 0; i < words.Length; i++)
+        {
+            var word = words[i];
+
+            if (wordsDictionary[word] == 1)
+            {
+                uncommonWords.Add(word);
+            }
+        }
+
+        return uncommonWords.ToArray();
     }
 }

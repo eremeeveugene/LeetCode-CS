@@ -25,8 +25,10 @@ public sealed class DefangingAnIPAddressStringBuilder : IDefangingAnIPAddress
     {
         var stringBuilder = new StringBuilder();
 
-        foreach (var @char in address)
+        for (var i = 0; i < address.Length; i++)
         {
+            var @char = address[i];
+
             if (@char == '.')
             {
                 stringBuilder.Append("[.]");

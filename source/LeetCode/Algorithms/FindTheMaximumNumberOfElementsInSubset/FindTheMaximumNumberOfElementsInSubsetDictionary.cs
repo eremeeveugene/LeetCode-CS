@@ -52,8 +52,14 @@ public sealed class FindTheMaximumNumberOfElementsInSubsetDictionary : IFindTheM
             maximumLength = 0;
         }
 
-        foreach (var key in numToCountsDictionary.Keys)
+        var keys = new long[numToCountsDictionary.Count];
+
+        numToCountsDictionary.Keys.CopyTo(keys, 0);
+
+        for (var i = 0; i < keys.Length; i++)
         {
+            var key = keys[i];
+
             if (key == 1)
             {
                 continue;

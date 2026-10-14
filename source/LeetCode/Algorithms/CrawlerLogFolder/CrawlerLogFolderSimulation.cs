@@ -26,8 +26,10 @@ public sealed class CrawlerLogFolderSimulation : ICrawlerLogFolder
     {
         var depth = 0;
 
-        foreach (var log in logs)
+        for (var i = 0; i < logs.Length; i++)
         {
+            var log = logs[i];
+
             switch (log)
             {
                 case MoveToParent:

@@ -101,18 +101,13 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
 
         var searchResults = new int[searchResultsCount];
 
-        var searchResultsIndex = 0;
+        var movieOffersEnumerator = movieOffers.GetEnumerator();
 
-        foreach (var movieOffer in movieOffers)
+        for (var i = 0; i < searchResultsCount && movieOffersEnumerator.MoveNext(); i++)
         {
-            searchResults[searchResultsIndex] = movieOffer.Shop;
+            var movieOffer = movieOffersEnumerator.Current;
 
-            searchResultsIndex++;
-
-            if (searchResultsIndex == searchResultsCount)
-            {
-                break;
-            }
+            searchResults[i] = movieOffer.Shop;
         }
 
         return searchResults;
@@ -136,18 +131,13 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
 
         var reportResults = new IList<int>[reportResultsCount];
 
-        var reportResultsIndex = 0;
+        var rentalRecordsEnumerator = _rentalRecordsSortedSet.GetEnumerator();
 
-        foreach (var rentalItem in _rentalRecordsSortedSet)
+        for (var i = 0; i < reportResultsCount && rentalRecordsEnumerator.MoveNext(); i++)
         {
-            reportResults[reportResultsIndex] = rentalItem.GetReport();
+            var rentalRecord = rentalRecordsEnumerator.Current;
 
-            reportResultsIndex++;
-
-            if (reportResultsIndex == reportResultsCount)
-            {
-                break;
-            }
+            reportResults[i] = rentalRecord.GetReport();
         }
 
         return reportResults;

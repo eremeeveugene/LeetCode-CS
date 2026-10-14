@@ -27,6 +27,20 @@ public abstract class IntersectionOfTwoLinkedListsTestsBase<T> where T : IInters
     [DataRow(new[] { 1, 2, 3 }, new int[] { }, new int[] { }, new int[] { })]
     [DataRow(new int[] { }, new int[] { }, new int[] { }, new int[] { })]
     [DataRow(new[] { 1, 2 }, new[] { 3, 4 }, new[] { 5, 6, 7 }, new[] { 5, 6, 7 })]
+    [DataRow(new[] { 1 }, new[] { 2 }, new[] { 3 }, new[] { 3 })]
+    [DataRow(new[] { 1, 2, 3, 4 }, new[] { 5 }, new[] { 6, 7 }, new[] { 6, 7 })]
+    [DataRow(new[] { 1 }, new[] { 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 1 })]
+    [DataRow(new[] { 5, 6, 7, 8, 9 }, new[] { 1 }, new[] { 2, 3, 4 }, new[] { 2, 3, 4 })]
+    [DataRow(new[] { 1, 2 }, new[] { 3, 4, 5, 6 }, new[] { 7 }, new[] { 7 })]
+    [DataRow(new[] { 9 }, new[] { 8 }, new int[] { }, new int[] { })]
+    [DataRow(new[] { 1, 2, 3 }, new[] { 4, 5, 6 }, new int[] { }, new int[] { })]
+    [DataRow(new[] { 1 }, new[] { 2, 3 }, new int[] { }, new int[] { })]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, new[] { 6, 7, 8, 9, 10 }, new[] { 11, 12, 13, 14, 15 }, new[] { 11, 12, 13, 14, 15 })]
+    [DataRow(new[] { 100000 }, new[] { 100000 }, new[] { 100000 }, new[] { 100000 })]
+    [DataRow(new[] { 1, 2 }, new[] { 3 }, new[] { 4, 5, 6, 7, 8, 9, 10, 11, 12 }, new[] { 4, 5, 6, 7, 8, 9, 10, 11, 12 })]
+    [DataRow(new[] { 1, 3, 5 }, new[] { 2, 4, 6 }, new[] { 7, 8 }, new[] { 7, 8 })]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8 }, new[] { 1 }, new[] { 2 }, new[] { 2 })]
+    [DataRow(new[] { 10, 20 }, new[] { 30, 40 }, new[] { 50 }, new[] { 50 })]
     public void GetIntersectionNode_WithTwoLinkedLists_ReturnsIntersectionNode(
         int[] headAArray,
         int[] headBArray,

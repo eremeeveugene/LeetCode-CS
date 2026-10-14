@@ -14,6 +14,8 @@ namespace LeetCode.Algorithms.CountCoveredBuildings;
 /// <inheritdoc />
 public sealed class CountCoveredBuildingsSimulation : ICountCoveredBuildings
 {
+    private const int MaxStackAllocLength = 1024;
+
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(m + n)
@@ -21,10 +23,12 @@ public sealed class CountCoveredBuildingsSimulation : ICountCoveredBuildings
     /// </remarks>
     public int CountCoveredBuildings(int n, int[][] buildings)
     {
-        Span<int> maxRow = stackalloc int[n + 1];
-        Span<int> minRow = stackalloc int[n + 1];
-        Span<int> maxCol = stackalloc int[n + 1];
-        Span<int> minCol = stackalloc int[n + 1];
+        var length = n + 1;
+
+        Span<int> maxRow = length <= MaxStackAllocLength ? stackalloc int[length] : new int[length];
+        Span<int> minRow = length <= MaxStackAllocLength ? stackalloc int[length] : new int[length];
+        Span<int> maxCol = length <= MaxStackAllocLength ? stackalloc int[length] : new int[length];
+        Span<int> minCol = length <= MaxStackAllocLength ? stackalloc int[length] : new int[length];
 
         minRow.Fill(n + 1);
         minCol.Fill(n + 1);

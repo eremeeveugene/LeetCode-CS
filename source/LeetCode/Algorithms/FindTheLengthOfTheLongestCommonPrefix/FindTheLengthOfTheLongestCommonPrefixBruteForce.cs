@@ -22,7 +22,21 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixBruteForce : IFindTheLe
     /// </remarks>
     public int LongestCommonPrefix(int[] arr1, int[] arr2)
     {
-        return arr1.Aggregate(0, (current, num1) => arr2.Select(num2 => GetCommonPrefixLength(num1, num2)).Prepend(current).Max());
+        var longestPrefix = 0;
+
+        for (var i = 0; i < arr1.Length; i++)
+        {
+            var num1 = arr1[i];
+
+            for (var j = 0; j < arr2.Length; j++)
+            {
+                var num2 = arr2[j];
+
+                longestPrefix = Math.Max(longestPrefix, GetCommonPrefixLength(num1, num2));
+            }
+        }
+
+        return longestPrefix;
     }
 
     private static int GetCommonPrefixLength(int num1, int num2)

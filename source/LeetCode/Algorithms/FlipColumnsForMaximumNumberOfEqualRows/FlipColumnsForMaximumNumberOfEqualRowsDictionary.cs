@@ -25,12 +25,15 @@ public sealed class FlipColumnsForMaximumNumberOfEqualRowsDictionary : IFlipColu
     {
         var patternDictionary = new Dictionary<string, int>();
 
-        foreach (var currentRow in matrix)
+        for (var i = 0; i < matrix.Length; i++)
         {
+            var currentRow = matrix[i];
             var patternStringBuilder = new StringBuilder();
 
-            foreach (var cell in currentRow)
+            for (var j = 0; j < currentRow.Length; j++)
             {
+                var cell = currentRow[j];
+
                 patternStringBuilder.Append(currentRow[0] == cell ? 'T' : 'F');
             }
 
@@ -42,6 +45,17 @@ public sealed class FlipColumnsForMaximumNumberOfEqualRowsDictionary : IFlipColu
             }
         }
 
-        return patternDictionary.Values.Max();
+        var counts = new int[patternDictionary.Count];
+
+        patternDictionary.Values.CopyTo(counts, 0);
+
+        var maxCount = 0;
+
+        for (var i = 0; i < counts.Length; i++)
+        {
+            maxCount = Math.Max(maxCount, counts[i]);
+        }
+
+        return maxCount;
     }
 }

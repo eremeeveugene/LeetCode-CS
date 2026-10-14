@@ -163,7 +163,7 @@ jobs:
       - name: Changed files
         id: changed
         if: always()
-        uses: tj-actions/changed-files@v46
+        uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96 # v47.0.6
         with:
           files: source/**/*.cs
           files_ignore: source/Tests/**
@@ -285,7 +285,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/develop' && steps.coverage.outputs.report == 'true'
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ github.workspace }}/source/coverage

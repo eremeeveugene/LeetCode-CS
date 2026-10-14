@@ -24,8 +24,10 @@ public sealed class NumberOfStudentsUnableToEatLunchIterative : INumberOfStudent
         var countZero = 0;
         var countOne = 0;
 
-        foreach (var student in students)
+        for (var i = 0; i < students.Length; i++)
         {
+            var student = students[i];
+
             if (student == 0)
             {
                 countZero++;
@@ -37,8 +39,10 @@ public sealed class NumberOfStudentsUnableToEatLunchIterative : INumberOfStudent
             }
         }
 
-        foreach (var sandwich in sandwiches)
+        for (var i = 0; i < sandwiches.Length; i++)
         {
+            var sandwich = sandwiches[i];
+
             if (sandwich == 0 && countZero > 0)
             {
                 countZero--;

@@ -62,9 +62,18 @@ public sealed class PermutationInStringSlidingWindowDictionary : IPermutationInS
 
     private static bool AreDictionariesEqual(Dictionary<char, int> dictionary1, Dictionary<char, int> dictionary2)
     {
-        foreach (var dictionary1Item in dictionary1)
+        var keys = new char[dictionary1.Count];
+        var values = new int[dictionary1.Count];
+
+        dictionary1.Keys.CopyTo(keys, 0);
+        dictionary1.Values.CopyTo(values, 0);
+
+        for (var i = 0; i < keys.Length; i++)
         {
-            if (!dictionary2.TryGetValue(dictionary1Item.Key, out var dictionary2ItemValue) || dictionary2ItemValue != dictionary1Item.Value)
+            var key = keys[i];
+            var value = values[i];
+
+            if (!dictionary2.TryGetValue(key, out var dictionary2Value) || dictionary2Value != value)
             {
                 return false;
             }

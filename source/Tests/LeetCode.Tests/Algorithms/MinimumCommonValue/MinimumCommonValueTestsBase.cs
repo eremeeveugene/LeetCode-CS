@@ -28,6 +28,16 @@ public abstract class MinimumCommonValueTestsBase<T> where T : IMinimumCommonVal
     [DataRow(new int[0], new[] { 1, 2, 3 }, -1)]
     [DataRow(new[] { 1, 2, 3 }, new int[0], -1)]
     [DataRow(new int[0], new int[0], -1)]
+    [DataRow(new[] { 1, 1, 2, 2 }, new[] { 2, 2, 3 }, 2)]
+    [DataRow(new[] { 1000000000 }, new[] { 1000000000 }, 1000000000)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, new[] { 10 }, 10)]
+    [DataRow(new[] { 10 }, new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 10)]
+    [DataRow(new[] { 1, 5, 9 }, new[] { 2, 5, 9 }, 5)]
+    [DataRow(new[] { 2, 2, 2 }, new[] { 1, 2, 3 }, 2)]
+    [DataRow(new[] { 1, 3, 5, 7, 9 }, new[] { 2, 4, 6, 8, 10 }, -1)]
+    [DataRow(new[] { 1, 2, 3 }, new[] { 3, 4, 5 }, 3)]
+    [DataRow(new[] { 1, 1000000000 }, new[] { 2, 999999999, 1000000000 }, 1000000000)]
+    [DataRow(new[] { 4, 4, 4, 4 }, new[] { 4 }, 4)]
     public void GetCommon_WithTwoArrays_ReturnsCountOfCommonElements(int[] nums1, int[] nums2, int expectedResult)
     {
         // Arrange

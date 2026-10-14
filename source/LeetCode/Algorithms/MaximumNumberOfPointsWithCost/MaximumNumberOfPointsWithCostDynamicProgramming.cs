@@ -53,6 +53,13 @@ public sealed class MaximumNumberOfPointsWithCostDynamicProgramming : IMaximumNu
             }
         }
 
-        return scores.Max();
+        var maxScore = scores[0];
+
+        for (var j = 1; j < scores.Length; j++)
+        {
+            maxScore = Math.Max(maxScore, scores[j]);
+        }
+
+        return maxScore;
     }
 }

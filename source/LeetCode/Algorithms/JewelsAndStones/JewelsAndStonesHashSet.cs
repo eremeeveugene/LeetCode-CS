@@ -23,6 +23,18 @@ public sealed class JewelsAndStonesHashSet : IJewelsAndStones
     {
         var jewelsSet = new HashSet<char>(jewels);
 
-        return stones.Count(jewelsSet.Contains);
+        var count = 0;
+
+        for (var i = 0; i < stones.Length; i++)
+        {
+            var stone = stones[i];
+
+            if (jewelsSet.Contains(stone))
+            {
+                count++;
+            }
+        }
+
+        return count;
     }
 }

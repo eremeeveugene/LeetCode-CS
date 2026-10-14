@@ -42,9 +42,15 @@ public sealed class MinimumDeletionsForKMostKDistinctCharactersFrequencyDictiona
 
         var buckets = new int[s.Length];
 
-        foreach (var frequency in characterToFrequencyDictionary)
+        var frequencies = new int[characterToFrequencyDictionary.Count];
+
+        characterToFrequencyDictionary.Values.CopyTo(frequencies, 0);
+
+        for (var i = 0; i < frequencies.Length; i++)
         {
-            buckets[frequency.Value - 1]++;
+            var frequency = frequencies[i];
+
+            buckets[frequency - 1]++;
         }
 
         var result = 0;

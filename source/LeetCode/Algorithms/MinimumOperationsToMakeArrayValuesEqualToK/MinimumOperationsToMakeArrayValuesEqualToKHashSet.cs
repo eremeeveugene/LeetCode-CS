@@ -23,8 +23,10 @@ public sealed class MinimumOperationsToMakeArrayValuesEqualToKHashSet : IMinimum
     {
         var numsHashSet = new HashSet<int>();
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (num < k)
             {
                 return -1;

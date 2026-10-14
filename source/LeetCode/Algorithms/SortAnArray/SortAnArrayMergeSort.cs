@@ -45,8 +45,18 @@ public sealed class SortAnArrayMergeSort : ISortAnArray
         var leftSize = middle - left + 1;
         var rightSize = right - middle;
 
-        var leftArray = array.Skip(left).Take(leftSize).ToArray();
-        var rightArray = array.Skip(middle + 1).Take(rightSize).ToArray();
+        var leftArray = new int[leftSize];
+        var rightArray = new int[rightSize];
+
+        for (var leftIndex = 0; leftIndex < leftSize; leftIndex++)
+        {
+            leftArray[leftIndex] = array[left + leftIndex];
+        }
+
+        for (var rightIndex = 0; rightIndex < rightSize; rightIndex++)
+        {
+            rightArray[rightIndex] = array[middle + 1 + rightIndex];
+        }
 
         var i = 0;
         var j = 0;

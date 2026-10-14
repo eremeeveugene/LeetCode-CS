@@ -21,7 +21,14 @@ public sealed class MissingNumberIterativeSumAndSubtract : IMissingNumber
     /// </remarks>
     public int MissingNumber(int[] nums)
     {
-        var sum = nums.Sum();
+        var sum = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            sum += num;
+        }
 
         for (var i = 0; i < nums.Length + 1; i++)
         {

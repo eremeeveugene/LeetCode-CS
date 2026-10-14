@@ -25,8 +25,9 @@ public sealed class LongestSquareStreakInAnArrayHashSet : ILongestSquareStreakIn
 
         var numsHashSet = new HashSet<int>(nums);
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
             var currentLongestSquareStreak = 1;
 
             long square = num;

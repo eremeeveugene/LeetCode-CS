@@ -35,6 +35,8 @@ public abstract class ThirdMaximumNumberTestsBase<T> where T : IThirdMaximumNumb
     [DataRow(new[] { 100, 90, 80, 70 }, 80)]
     [DataRow(new[] { -1, -2, -3 }, -3)]
     [DataRow(new[] { 0, -1, -2 }, -2)]
+    [DataRow(new[] { 2147483647, 0, -2147483648, 2147483647 }, int.MinValue)]
+    [DynamicData(nameof(GetLargeTestData))]
     public void ThirdMax_WithIntArray_ReturnsThirdMaximumOrMaximum(int[] nums, int expectedResult)
     {
         // Arrange
@@ -45,5 +47,26 @@ public abstract class ThirdMaximumNumberTestsBase<T> where T : IThirdMaximumNumb
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetLargeTestData()
+    {
+        yield return [BuildRepeating(10000, 5), 2];
+
+        yield return [BuildRepeating(10000, 10000), 9997];
+
+        yield return [BuildRepeating(10000, 2), 1];
+    }
+
+    private static int[] BuildRepeating(int length, int modulus)
+    {
+        var nums = new int[length];
+
+        for (var i = 0; i < length; i++)
+        {
+            nums[i] = i % modulus;
+        }
+
+        return nums;
     }
 }

@@ -29,8 +29,14 @@ public sealed class FindWordsContainingCharacterDictionary : IFindWordsContainin
         {
             var uniqueChars = new HashSet<char>(words[i]);
 
-            foreach (var ch in uniqueChars)
+            var chars = new char[uniqueChars.Count];
+
+            uniqueChars.CopyTo(chars);
+
+            for (var j = 0; j < chars.Length; j++)
             {
+                var ch = chars[j];
+
                 if (!charToWordIndexDictionary.TryGetValue(ch, out var value))
                 {
                     value = [];

@@ -23,7 +23,14 @@ public abstract class DeleteNodesAndReturnForestTestsBase<T> where T : IDeleteNo
     {
         // Arrange
         var root = TreeNode.ToTreeNode(rootArray);
-        var expectedResult = expectedResultArray.Select(TreeNode.ToTreeNode);
+        var expectedResult = new TreeNode?[expectedResultArray.Length];
+
+        for (var i = 0; i < expectedResultArray.Length; i++)
+        {
+            var treeArray = expectedResultArray[i];
+
+            expectedResult[i] = TreeNode.ToTreeNode(treeArray);
+        }
 
         var solution = new T();
 
@@ -61,5 +68,33 @@ public abstract class DeleteNodesAndReturnForestTestsBase<T> where T : IDeleteNo
             new[] { 2, 6, 8, 9, 11 },
             new[] { new int?[] { 4 }, new int?[] { 5 }, new int?[] { 10 }, new int?[] { 1, null, 3, null, 7, null, 12 } }
         ];
+
+        yield return [new int?[] { 2, 5, 6, 7, 8, 4, 9, null, 10, null, null, null, null, 11, null, null, null, null, 3, null, 1 }, new[] { 5, 1, 6 }, new[] { new int?[] { 2 }, new int?[] { 7, null, 10 }, new int?[] { 8 }, new int?[] { 4 }, new int?[] { 9, 11, null, null, 3 } }];
+
+        yield return [new int?[] { 2, null, 5, 3, 1, null, 4 }, new[] { 3, 2, 5 }, new[] { new int?[] { 4 }, new int?[] { 1 } }];
+
+        yield return [new int?[] { 7, 2, 6, 5, null, 1, 4, 3 }, Array.Empty<int>(), new[] { new int?[] { 7, 2, 6, 5, null, 1, 4, 3 } }];
+
+        yield return [new int?[] { 2, 1, null, 5, null, null, 3, null, 4 }, new[] { 3, 4, 2 }, new[] { new int?[] { 1, 5 } }];
+
+        yield return [new int?[] { 1, 2 }, new[] { 2, 1 }, Array.Empty<int?[]>()];
+
+        yield return [new int?[] { 5, 3, 1, null, 2, 4 }, new[] { 2 }, new[] { new int?[] { 5, 3, 1, null, null, 4 } }];
+
+        yield return [new int?[] { 1 }, new[] { 1 }, Array.Empty<int?[]>()];
+
+        yield return [new int?[] { 9, 6, 2, null, 4, 10, 11, 8, 7, null, null, null, 3, 1, null, null, null, null, 5 }, new[] { 7, 3, 8 }, new[] { new int?[] { 9, 6, 2, null, 4, 10, 11 }, new int?[] { 1 }, new int?[] { 5 } }];
+
+        yield return [new int?[] { 4, 6, 8, null, 1, 7, null, 3, 2, null, null, 5 }, new[] { 6, 3 }, new[] { new int?[] { 4, null, 8, 7 }, new int?[] { 1, null, 2 }, new int?[] { 5 } }];
+
+        yield return [new int?[] { 1, 6, 9, 12, null, 4, 2, 11, 3, null, 5, null, 7, null, null, null, null, null, 10, null, null, 8 }, new[] { 11, 8, 12, 2 }, new[] { new int?[] { 1, 6, 9, null, null, 4, null, null, 5, null, 10 }, new int?[] { 3 }, new int?[] { 7 } }];
+
+        yield return [new int?[] { 4, null, 3, 2, null, null, 1 }, new[] { 2, 4, 1, 3 }, Array.Empty<int?[]>()];
+
+        yield return [new int?[] { 8, 4, 6, null, 7, null, 3, 2, 5, null, null, null, null, null, 1, 10, 9 }, Array.Empty<int>(), new[] { new int?[] { 8, 4, 6, null, 7, null, 3, 2, 5, null, null, null, null, null, 1, 10, 9 } }];
+
+        yield return [new int?[] { 8, 6, 7, null, 1, 9, null, null, null, 2, 4, null, null, null, 3, null, 5 }, new[] { 1, 5, 2, 6 }, new[] { new int?[] { 8, null, 7, 9, null, null, 4, null, 3 } }];
+
+        yield return [new int?[] { 1 }, Array.Empty<int>(), new[] { new int?[] { 1 } }];
     }
 }

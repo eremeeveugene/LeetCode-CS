@@ -21,12 +21,15 @@ public sealed class DifferenceBetweenElementSumAndDigitSumOfArrayIterative : IDi
     /// </remarks>
     public int DifferenceOfSum(int[] nums)
     {
-        var elementSum = nums.Sum();
-
+        var elementSum = 0;
         var digitSum = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
+            elementSum += num;
+
             var currentNum = num;
 
             while (currentNum > 0)

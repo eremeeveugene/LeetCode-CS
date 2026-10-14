@@ -42,8 +42,10 @@ public sealed class TheNumberOfTheSmallestUnoccupiedChairSortedSet : ITheNumberO
 
         var result = -1;
 
-        foreach (var @event in events)
+        for (var i = 0; i < events.Count; i++)
         {
+            var @event = events[i];
+
             if (@event.IsArrival)
             {
                 var assignedChair = freeChairs.Min;

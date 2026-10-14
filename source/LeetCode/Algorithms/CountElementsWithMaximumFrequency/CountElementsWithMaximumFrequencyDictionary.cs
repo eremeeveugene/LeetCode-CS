@@ -25,8 +25,10 @@ public sealed class CountElementsWithMaximumFrequencyDictionary : ICountElements
         var maxFrequency = 0;
         var maxFrequencySum = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (!numsDictionary.TryAdd(num, 1))
             {
                 numsDictionary[num]++;

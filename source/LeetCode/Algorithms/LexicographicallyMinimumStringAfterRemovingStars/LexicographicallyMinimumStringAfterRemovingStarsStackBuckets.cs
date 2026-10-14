@@ -38,8 +38,10 @@ public sealed class LexicographicallyMinimumStringAfterRemovingStarsStackBuckets
 
             if (c == '*')
             {
-                foreach (var indexesStack in indexesStacks)
+                for (var j = 0; j < indexesStacks.Length; j++)
                 {
+                    var indexesStack = indexesStacks[j];
+
                     if (indexesStack.Count == 0)
                     {
                         continue;

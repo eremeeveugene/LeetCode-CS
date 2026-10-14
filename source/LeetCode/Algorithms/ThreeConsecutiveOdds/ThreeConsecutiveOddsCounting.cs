@@ -23,8 +23,10 @@ public sealed class ThreeConsecutiveOddsCounting : IThreeConsecutiveOdds
     {
         var count = 0;
 
-        foreach (var item in arr)
+        for (var i = 0; i < arr.Length; i++)
         {
+            var item = arr[i];
+
             if (item % 2 == 0)
             {
                 count = 0;

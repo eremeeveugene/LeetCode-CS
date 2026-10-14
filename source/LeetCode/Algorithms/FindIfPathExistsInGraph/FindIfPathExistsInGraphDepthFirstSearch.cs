@@ -33,8 +33,10 @@ public sealed class FindIfPathExistsInGraphDepthFirstSearch : IFindIfPathExistsI
             graph[i] = [];
         }
 
-        foreach (var edge in edges)
+        for (var i = 0; i < edges.Length; i++)
         {
+            var edge = edges[i];
+
             graph[edge[0]].Add(edge[1]);
             graph[edge[1]].Add(edge[0]);
         }
@@ -51,6 +53,18 @@ public sealed class FindIfPathExistsInGraphDepthFirstSearch : IFindIfPathExistsI
 
         visited.Add(current);
 
-        return graph[current].Any(neighbor => !visited.Contains(neighbor) && ValidPath(visited, graph, neighbor, target));
+        var neighbors = graph[current];
+
+        for (var i = 0; i < neighbors.Count; i++)
+        {
+            var neighbor = neighbors[i];
+
+            if (!visited.Contains(neighbor) && ValidPath(visited, graph, neighbor, target))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

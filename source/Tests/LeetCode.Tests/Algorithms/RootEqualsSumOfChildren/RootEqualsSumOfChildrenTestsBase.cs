@@ -37,5 +37,41 @@ public abstract class RootEqualsSumOfChildrenTestsBase<T> where T : IRootEqualsS
         yield return [new int?[] { 10, 4, 6 }, true];
 
         yield return [new int?[] { 5, 3, 1 }, false];
+
+        yield return [new int?[] { 0, 0, 0 }, true];
+
+        yield return [new int?[] { -5, -2, -3 }, true];
+
+        yield return [new int?[] { 100, 50, 50 }, true];
+
+        yield return [new int?[] { -100, -50, -50 }, true];
+
+        yield return [new int?[] { 1, 0, 1 }, true];
+
+        yield return [new int?[] { 1, 1, 0 }, true];
+
+        yield return [new int?[] { 0, -1, 1 }, true];
+
+        yield return [new int?[] { 0, 1, 1 }, false];
+
+        yield return [new int?[] { 100, 100, 100 }, false];
+
+        yield return [new int?[] { -100, -100, -100 }, false];
+
+        yield return [new int?[] { 7, 3, 5 }, false];
+
+        yield return [new int?[] { -7, -3, -4 }, true];
+
+        yield return [new int?[] { 100, -100, 100 }, false];
+
+        yield return [new int?[] { 0, 100, -100 }, true];
+
+        yield return [new int?[] { 50, 25, 25 }, true];
+
+        yield return [new int?[] { 2, 1, 0 }, false];
+
+        yield return [new int?[] { -1, 0, -1 }, true];
+
+        yield return [new int?[] { 99, 49, 50 }, true];
     }
 }

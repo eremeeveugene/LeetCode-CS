@@ -36,15 +36,15 @@ public sealed class TopKFrequentElementsPriorityQueue : ITopKFrequentElements
 
         var result = new int[k];
 
-        if (numToFrequencyDictionary.Count == k)
+        var uniqueNums = new int[numToFrequencyDictionary.Count];
+
+        numToFrequencyDictionary.Keys.CopyTo(uniqueNums, 0);
+
+        if (uniqueNums.Length == k)
         {
-            var index = 0;
-
-            foreach (var num in numToFrequencyDictionary.Keys)
+            for (var i = 0; i < uniqueNums.Length; i++)
             {
-                result[index] = num;
-
-                index++;
+                result[i] = uniqueNums[i];
             }
 
             return result;
@@ -52,8 +52,11 @@ public sealed class TopKFrequentElementsPriorityQueue : ITopKFrequentElements
 
         var numsPriorityQueue = new PriorityQueue<int, int>();
 
-        foreach (var (num, frequency) in numToFrequencyDictionary)
+        for (var i = 0; i < uniqueNums.Length; i++)
         {
+            var num = uniqueNums[i];
+            var frequency = numToFrequencyDictionary[num];
+
             if (numsPriorityQueue.Count < k)
             {
                 numsPriorityQueue.Enqueue(num, frequency);

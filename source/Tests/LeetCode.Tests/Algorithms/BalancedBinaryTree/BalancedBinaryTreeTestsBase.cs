@@ -47,5 +47,35 @@ public abstract class BalancedBinaryTreeTestsBase<T> where T : IBalancedBinaryTr
         yield return [new int?[] { 1, 2, 2, null, null, 3, 3, 4, 4 }, false];
 
         yield return [new int?[] { 1, 2, 2, 3, 3, 3, 3 }, true];
+
+        yield return [new int?[] { 1, 2 }, true];
+
+        yield return [new int?[] { 1, 2, null, 3 }, false];
+
+        yield return [new int?[] { 1, null, 2, null, 3 }, false];
+
+        yield return [new int?[] { 1, 2, 3 }, true];
+
+        yield return [new int?[] { 1, 2, 3, 4 }, true];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7 }, true];
+
+        yield return [new int?[] { 1, 2, 3, 4, null, null, null, 5 }, false];
+
+        yield return [new int?[] { 1, 2, 2, 3, null, null, 3 }, true];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, null, null, 6 }, false];
+
+        yield return [new int?[] { 1, 2, 3, 4, 5, null, 6, 7 }, true];
+
+        yield return [new int?[] { 0 }, true];
+
+        yield return [new int?[] { 10000, -10000 }, true];
+
+        yield return [new int?[] { 1, 2, 2, 3, 3, null, null, 4, null, null, 4 }, false];
+
+        yield return [new int?[] { 1, 2, 3, null, 4, null, 5 }, true];
+
+        yield return [new int?[] { 1, null, 2, 3 }, false];
     }
 }

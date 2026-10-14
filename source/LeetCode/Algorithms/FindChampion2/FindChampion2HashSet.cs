@@ -28,14 +28,20 @@ public sealed class FindChampion2HashSet : IFindChampion2
             hashSet.Add(i);
         }
 
-        foreach (var edge in edges)
+        for (var i = 0; i < edges.Length; i++)
         {
+            var edge = edges[i];
+
             hashSet.Remove(edge[1]);
         }
 
         if (hashSet.Count == 1)
         {
-            return hashSet.First();
+            var candidates = new int[1];
+
+            hashSet.CopyTo(candidates);
+
+            return candidates[0];
         }
 
         return -1;

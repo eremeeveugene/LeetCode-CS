@@ -24,8 +24,10 @@ public sealed class MaximalScoreAfterApplyingKOperationsPriorityQueue : IMaximal
     {
         var priorityQueue = new PriorityQueue<int, int>();
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             priorityQueue.Enqueue(num, -num);
         }
 

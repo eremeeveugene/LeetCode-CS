@@ -28,8 +28,10 @@ public sealed class MaximumNumberOfKDivisibleComponentsDepthFirstSearch : IMaxim
             graph[i] = [];
         }
 
-        foreach (var edge in edges)
+        for (var i = 0; i < edges.Length; i++)
         {
+            var edge = edges[i];
+
             graph[edge[0]].Add(edge[1]);
             graph[edge[1]].Add(edge[0]);
         }

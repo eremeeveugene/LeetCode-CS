@@ -23,11 +23,21 @@ public sealed class DivideArrayIntoEqualPairsArray : IDivideArrayIntoEqualPairs
     {
         var frequencies = new int[501];
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             frequencies[num]++;
         }
 
-        return frequencies.All(frequency => frequency % 2 == 0);
+        for (var i = 0; i < frequencies.Length; i++)
+        {
+            if (frequencies[i] % 2 != 0)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }

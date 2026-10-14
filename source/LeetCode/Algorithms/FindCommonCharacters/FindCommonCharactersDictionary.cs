@@ -21,21 +21,20 @@ public sealed class FindCommonCharactersDictionary : IFindCommonCharacters
     /// </remarks>
     public IList<string> CommonChars(string[] words)
     {
-        var commonChars = words[0].ToList();
+        var commonChars = new List<char>(words[0]);
 
-        foreach (var word in words.Skip(1))
+        for (var i = 1; i < words.Length; i++)
         {
-            var wordDictionary = new Dictionary<char, int>();
+            var word = words[i];
 
-            foreach (var c in word.Where(c => !wordDictionary.TryAdd(c, 1)))
-            {
-                wordDictionary[c]++;
-            }
+            var wordDictionary = CountChars(word);
 
             var charsToRemove = new List<char>();
 
-            foreach (var c in commonChars)
+            for (var j = 0; j < commonChars.Count; j++)
             {
+                var c = commonChars[j];
+
                 if (wordDictionary.TryGetValue(c, out var count) && count > 0)
                 {
                     wordDictionary[c]--;
@@ -46,12 +45,40 @@ public sealed class FindCommonCharactersDictionary : IFindCommonCharacters
                 }
             }
 
-            foreach (var charToRemove in charsToRemove)
+            for (var j = 0; j < charsToRemove.Count; j++)
             {
+                var charToRemove = charsToRemove[j];
+
                 commonChars.Remove(charToRemove);
             }
         }
 
-        return commonChars.Select(c => c.ToString()).ToList();
+        var result = new List<string>(commonChars.Count);
+
+        for (var i = 0; i < commonChars.Count; i++)
+        {
+            var c = commonChars[i];
+
+            result.Add(c.ToString());
+        }
+
+        return result;
+    }
+
+    private static Dictionary<char, int> CountChars(string word)
+    {
+        var charToCountDictionary = new Dictionary<char, int>();
+
+        for (var i = 0; i < word.Length; i++)
+        {
+            var c = word[i];
+
+            if (!charToCountDictionary.TryAdd(c, 1))
+            {
+                charToCountDictionary[c]++;
+            }
+        }
+
+        return charToCountDictionary;
     }
 }

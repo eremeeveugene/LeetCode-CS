@@ -29,9 +29,9 @@ public sealed class CustomSortStringDictionarySorting : ICustomSortString
             orderDictionary[order[i]] = i;
         }
 
-        var sortedChars = s.ToList();
+        var sortedChars = s.ToCharArray();
 
-        sortedChars.Sort((x, y) =>
+        Array.Sort(sortedChars, (x, y) =>
         {
             var orderX = orderDictionary.GetValueOrDefault(x, int.MaxValue);
             var orderY = orderDictionary.GetValueOrDefault(y, int.MaxValue);
@@ -39,6 +39,6 @@ public sealed class CustomSortStringDictionarySorting : ICustomSortString
             return orderX.CompareTo(orderY);
         });
 
-        return new string(sortedChars.ToArray());
+        return new string(sortedChars);
     }
 }

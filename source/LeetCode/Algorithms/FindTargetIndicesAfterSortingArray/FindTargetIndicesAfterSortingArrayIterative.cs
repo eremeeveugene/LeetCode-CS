@@ -24,8 +24,10 @@ public sealed class FindTargetIndicesAfterSortingArrayIterative : IFindTargetInd
         var smallerCount = 0;
         var equalCount = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (num < target)
             {
                 smallerCount++;

@@ -24,8 +24,10 @@ public sealed class LemonadeChangeGreedy : ILemonadeChange
         var fiveBills = 0;
         var tenBills = 0;
 
-        foreach (var bill in bills)
+        for (var i = 0; i < bills.Length; i++)
         {
+            var bill = bills[i];
+
             switch (bill)
             {
                 case 5:

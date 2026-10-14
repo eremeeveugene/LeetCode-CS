@@ -39,5 +39,41 @@ public abstract class FindMinimumDiameterAfterMergingTwoTreesTestsBase<T> where 
             new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 }, new[] { 2, 4 }, new[] { 2, 5 }, new[] { 3, 6 }, new[] { 2, 7 } },
             5
         ];
+
+        yield return [Array.Empty<int[]>(), Array.Empty<int[]>(), 1];
+
+        yield return [Array.Empty<int[]>(), new[] { new[] { 1, 0 } }, 2];
+
+        yield return [new[] { new[] { 0, 1 } }, Array.Empty<int[]>(), 2];
+
+        yield return [new[] { new[] { 0, 1 } }, new[] { new[] { 1, 0 } }, 3];
+
+        yield return [Array.Empty<int[]>(), new[] { new[] { 1, 0 }, new[] { 2, 1 }, new[] { 0, 3 }, new[] { 0, 4 } }, 3];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 2, 1 } }, new[] { new[] { 1, 0 }, new[] { 2, 0 } }, 3];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 2, 0 }, new[] { 1, 3 } }, new[] { new[] { 1, 0 } }, 4];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 1, 2 }, new[] { 2, 3 }, new[] { 0, 4 } }, new[] { new[] { 1, 0 }, new[] { 2, 1 }, new[] { 3, 1 }, new[] { 4, 2 } }, 5];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 2, 0 }, new[] { 1, 3 }, new[] { 1, 4 }, new[] { 5, 2 } }, new[] { new[] { 1, 0 }, new[] { 0, 2 } }, 4];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 0, 2 } }, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 1, 3 }, new[] { 4, 1 }, new[] { 3, 5 }, new[] { 6, 1 } }, 4];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 2, 1 }, new[] { 1, 3 }, new[] { 0, 4 }, new[] { 5, 2 }, new[] { 6, 3 } }, new[] { new[] { 1, 0 }, new[] { 0, 2 }, new[] { 1, 3 }, new[] { 4, 2 }, new[] { 5, 0 }, new[] { 6, 5 } }, 5];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 2, 0 }, new[] { 1, 3 }, new[] { 4, 3 }, new[] { 2, 5 }, new[] { 6, 5 }, new[] { 7, 2 } }, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 0, 3 } }, 6];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 2, 0 }, new[] { 0, 3 } }, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 3, 0 } }, 3];
+
+        yield return [new[] { new[] { 0, 1 }, new[] { 2, 1 }, new[] { 3, 0 }, new[] { 0, 4 }, new[] { 5, 4 } }, new[] { new[] { 1, 0 }, new[] { 1, 2 }, new[] { 3, 2 }, new[] { 4, 3 }, new[] { 5, 3 } }, 5];
+
+        yield return [new[] { new[] { 0, 1 } }, new[] { new[] { 1, 0 }, new[] { 0, 2 }, new[] { 1, 3 }, new[] { 4, 1 }, new[] { 1, 5 }, new[] { 6, 2 }, new[] { 7, 5 } }, 5];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 1, 2 }, new[] { 0, 3 }, new[] { 4, 3 } }, new[] { new[] { 1, 0 }, new[] { 2, 0 }, new[] { 0, 3 }, new[] { 4, 1 }, new[] { 1, 5 }, new[] { 2, 6 }, new[] { 7, 5 } }, 6];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 1, 2 }, new[] { 3, 1 }, new[] { 0, 4 }, new[] { 5, 4 }, new[] { 1, 6 }, new[] { 7, 1 } }, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 1, 3 }, new[] { 3, 4 }, new[] { 3, 5 }, new[] { 0, 6 }, new[] { 7, 0 } }, 5];
+
+        yield return [new[] { new[] { 1, 0 }, new[] { 2, 0 }, new[] { 3, 1 }, new[] { 1, 4 }, new[] { 5, 0 }, new[] { 6, 4 } }, new[] { new[] { 1, 0 } }, 4];
     }
 }

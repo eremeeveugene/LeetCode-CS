@@ -21,9 +21,36 @@ public sealed class NumberOfGoodPairsGroupBy : INumberOfGoodPairs
     /// </remarks>
     public int NumIdenticalPairs(int[] nums)
     {
-        var groups = nums.GroupBy(n => n);
+        var numToGroupDictionary = new Dictionary<int, List<int>>();
 
-        return groups.Sum(group => GetPairsCount(group.Count()));
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            if (!numToGroupDictionary.TryGetValue(num, out var group))
+            {
+                group = [];
+
+                numToGroupDictionary.Add(num, group);
+            }
+
+            group.Add(num);
+        }
+
+        var groups = new List<int>[numToGroupDictionary.Count];
+
+        numToGroupDictionary.Values.CopyTo(groups, 0);
+
+        var result = 0;
+
+        for (var i = 0; i < groups.Length; i++)
+        {
+            var group = groups[i];
+
+            result += GetPairsCount(group.Count);
+        }
+
+        return result;
     }
 
     private static int GetPairsCount(int count)

@@ -21,25 +21,36 @@ public sealed class MinimumNumberOfMovesToSeatEveryoneCountingSort : IMinimumNum
     /// </remarks>
     public int MinMovesToSeat(int[] seats, int[] students)
     {
-        var maxPosition = Math.Max(seats.Max(), students.Max());
+        var maxPosition = 0;
+
+        for (var i = 0; i < seats.Length; i++)
+        {
+            maxPosition = Math.Max(maxPosition, Math.Max(seats[i], students[i]));
+        }
 
         var differences = new int[maxPosition];
 
-        foreach (var seat in seats)
+        for (var i = 0; i < seats.Length; i++)
         {
+            var seat = seats[i];
+
             differences[seat - 1]++;
         }
 
-        foreach (var student in students)
+        for (var i = 0; i < students.Length; i++)
         {
+            var student = students[i];
+
             differences[student - 1]--;
         }
 
         var moves = 0;
         var unmatched = 0;
 
-        foreach (var difference in differences)
+        for (var i = 0; i < differences.Length; i++)
         {
+            var difference = differences[i];
+
             moves += Math.Abs(unmatched);
 
             unmatched += difference;

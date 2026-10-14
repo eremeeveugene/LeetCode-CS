@@ -53,8 +53,10 @@ public sealed class MaximizeTheNumberOfTargetNodesAfterConnectingTrees1DepthFirs
             graph[i] = [];
         }
 
-        foreach (var edge in edges)
+        for (var i = 0; i < edges.Length; i++)
         {
+            var edge = edges[i];
+
             graph[edge[0]].Add(edge[1]);
             graph[edge[1]].Add(edge[0]);
         }
@@ -90,11 +92,20 @@ public sealed class MaximizeTheNumberOfTargetNodesAfterConnectingTrees1DepthFirs
                 continue;
             }
 
-            foreach (var graph in graphs[node.Index].Where(graph => !visited[graph]))
-            {
-                visited[graph] = true;
+            var neighbors = graphs[node.Index];
 
-                nodesQueue.Enqueue((graph, node.Depth + 1));
+            for (var i = 0; i < neighbors.Count; i++)
+            {
+                var neighbor = neighbors[i];
+
+                if (visited[neighbor])
+                {
+                    continue;
+                }
+
+                visited[neighbor] = true;
+
+                nodesQueue.Enqueue((neighbor, node.Depth + 1));
             }
         }
 

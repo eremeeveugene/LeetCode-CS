@@ -27,8 +27,10 @@ public sealed class FindTheMaximumSumOfNodeValuesIterative : IFindTheMaximumSumO
 
         var count = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if ((num ^ k) > num)
             {
                 sum += num ^ k;

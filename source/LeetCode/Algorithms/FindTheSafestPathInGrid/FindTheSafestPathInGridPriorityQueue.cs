@@ -62,8 +62,9 @@ public sealed class FindTheSafestPathInGridPriorityQueue : IFindTheSafestPathInG
         {
             var (r, c) = queue.Dequeue();
 
-            foreach (var (dr, dc) in Directions)
+            for (var i = 0; i < Directions.Length; i++)
             {
+                var (dr, dc) = Directions[i];
                 int nr = r + dr, nc = c + dc;
 
                 if (IsOutsideGrid(nr, nc, n) || distance[nr][nc] != int.MaxValue)
@@ -99,8 +100,9 @@ public sealed class FindTheSafestPathInGridPriorityQueue : IFindTheSafestPathInG
 
         while (r != n - 1 || c != n - 1)
         {
-            foreach (var (dr, dc) in Directions)
+            for (var i = 0; i < Directions.Length; i++)
             {
+                var (dr, dc) = Directions[i];
                 int nr = r + dr, nc = c + dc;
 
                 if (IsOutsideGrid(nr, nc, n) || visited[nr][nc])

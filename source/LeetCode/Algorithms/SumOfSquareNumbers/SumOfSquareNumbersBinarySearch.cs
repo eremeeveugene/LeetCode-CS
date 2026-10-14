@@ -36,13 +36,8 @@ public sealed class SumOfSquareNumbersBinarySearch : ISumOfSquareNumbers
 
     private static bool BinarySearch(long s, long e, int n)
     {
-        while (true)
+        while (s <= e)
         {
-            if (s > e)
-            {
-                return false;
-            }
-
             var mid = s + ((e - s) / 2);
 
             if (mid * mid == n)
@@ -53,11 +48,13 @@ public sealed class SumOfSquareNumbersBinarySearch : ISumOfSquareNumbers
             if (mid * mid > n)
             {
                 e = mid - 1;
-
-                continue;
             }
-
-            s = mid + 1;
+            else
+            {
+                s = mid + 1;
+            }
         }
+
+        return false;
     }
 }

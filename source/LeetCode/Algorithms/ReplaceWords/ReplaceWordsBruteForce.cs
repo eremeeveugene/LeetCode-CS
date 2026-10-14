@@ -24,12 +24,18 @@ public sealed class ReplaceWordsBruteForce : IReplaceWords
     {
         var words = sentence.Split(' ');
 
+        var sortedDictionary = new string[dictionary.Count];
+        dictionary.CopyTo(sortedDictionary, 0);
+        Array.Sort(sortedDictionary);
+
         for (var i = 0; i < words.Length; i++)
         {
             var word = words[i];
 
-            foreach (var dictionaryWord in dictionary.Order())
+            for (var j = 0; j < sortedDictionary.Length; j++)
             {
+                var dictionaryWord = sortedDictionary[j];
+
                 if (!word.StartsWith(dictionaryWord))
                 {
                     continue;

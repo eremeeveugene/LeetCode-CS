@@ -27,8 +27,10 @@ public sealed class VowelSpellcheckerDictionary : IVowelSpellchecker
         var lowercaseWordsDictionary = new Dictionary<string, string>(wordsCount);
         var maskedWordsDictionary = new Dictionary<string, string>(wordsCount);
 
-        foreach (var word in wordlist)
+        for (var i = 0; i < wordlist.Length; i++)
         {
+            var word = wordlist[i];
+
             wordsHashSet.Add(word);
 
             var lowercaseWord = GetLowercaseWord(word);

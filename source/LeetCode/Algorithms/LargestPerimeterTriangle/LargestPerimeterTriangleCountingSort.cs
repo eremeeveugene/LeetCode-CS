@@ -21,12 +21,21 @@ public sealed class LargestPerimeterTriangleCountingSort : ILargestPerimeterTria
     /// </remarks>
     public int LargestPerimeter(int[] nums)
     {
-        var maxNum = nums.Max();
+        var maxNum = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            maxNum = Math.Max(maxNum, num);
+        }
 
         var count = new int[maxNum + 1];
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             count[num]++;
         }
 

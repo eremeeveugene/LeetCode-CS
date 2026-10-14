@@ -23,15 +23,19 @@ public sealed class RelativeSortArrayCountingSort : IRelativeSortArray
     {
         var frequency = new int[1001];
 
-        foreach (var arr1Item in arr1)
+        for (var i = 0; i < arr1.Length; i++)
         {
+            var arr1Item = arr1[i];
+
             frequency[arr1Item]++;
         }
 
         var index = 0;
 
-        foreach (var num in arr2)
+        for (var i = 0; i < arr2.Length; i++)
         {
+            var num = arr2[i];
+
             while (frequency[num] > 0)
             {
                 arr1[index++] = num;

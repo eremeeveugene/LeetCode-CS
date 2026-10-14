@@ -32,7 +32,10 @@ public sealed class MaximumDepthOfNaryTreeDepthFirstSearchRecursive : IMaximumDe
 
         if (root.children != null)
         {
-            maxChildDepth = root.children.Select(MaxDepth).Prepend(maxChildDepth).Max();
+            for (var i = 0; i < root.children.Count; i++)
+            {
+                maxChildDepth = Math.Max(maxChildDepth, MaxDepth(root.children[i]));
+            }
         }
 
         return maxChildDepth + 1;

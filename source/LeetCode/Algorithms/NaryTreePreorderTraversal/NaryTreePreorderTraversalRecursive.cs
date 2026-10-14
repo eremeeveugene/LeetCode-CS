@@ -44,8 +44,10 @@ public sealed class NaryTreePreorderTraversalRecursive : INaryTreePreorderTraver
             return;
         }
 
-        foreach (var child in root.children)
+        for (var i = 0; i < root.children.Count; i++)
         {
+            var child = root.children[i];
+
             Preorder(child, result);
         }
     }

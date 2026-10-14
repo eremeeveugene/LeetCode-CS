@@ -21,6 +21,18 @@ public sealed class FindMinimumOperationsToMakeAllElementsDivisibleByThreeIterat
     /// </remarks>
     public int MinimumOperations(int[] nums)
     {
-        return nums.Select(num => num % 3).Count(remainder => remainder != 0);
+        var count = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            if (num % 3 != 0)
+            {
+                count++;
+            }
+        }
+
+        return count;
     }
 }

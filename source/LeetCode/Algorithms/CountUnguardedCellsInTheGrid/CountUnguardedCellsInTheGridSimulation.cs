@@ -25,8 +25,9 @@ public sealed class CountUnguardedCellsInTheGridSimulation : ICountUnguardedCell
 
         var cells = new int[m, n];
 
-        foreach (var guard in guards)
+        for (var i = 0; i < guards.Length; i++)
         {
+            var guard = guards[i];
             var row = guard[0];
             var col = guard[1];
 
@@ -35,8 +36,9 @@ public sealed class CountUnguardedCellsInTheGridSimulation : ICountUnguardedCell
             result--;
         }
 
-        foreach (var wall in walls)
+        for (var i = 0; i < walls.Length; i++)
         {
+            var wall = walls[i];
             var row = wall[0];
             var col = wall[1];
 

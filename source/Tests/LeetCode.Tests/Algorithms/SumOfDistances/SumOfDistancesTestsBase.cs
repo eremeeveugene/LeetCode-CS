@@ -27,6 +27,17 @@ public abstract class SumOfDistancesTestsBase<T> where T : ISumOfDistances, new(
     [DataRow(new[] { -1, -2, -1 }, new long[] { 2, 0, 2 })]
     [DataRow(new[] { 5, 1, 5, 2, 5 }, new long[] { 6, 0, 4, 0, 6 })]
     [DataRow(new[] { 9, 1, 2, 3, 9 }, new long[] { 4, 0, 0, 0, 4 })]
+    [DataRow(new[] { 0 }, new long[] { 0 })]
+    [DataRow(new[] { 1000000000 }, new long[] { 0 })]
+    [DataRow(new[] { 3, 3, 3 }, new long[] { 3, 2, 3 })]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, new long[] { 0, 0, 0, 0, 0 })]
+    [DataRow(new[] { 5, 5, 5, 5, 5, 5, 5 }, new long[] { 21, 16, 13, 12, 13, 16, 21 })]
+    [DataRow(new[] { 1, 2, 2, 1, 1, 2 }, new long[] { 7, 5, 4, 4, 5, 7 })]
+    [DataRow(new[] { 0, 0, 0, 1, 1, 1, 0 }, new long[] { 9, 7, 7, 3, 2, 3, 15 })]
+    [DataRow(new[] { 1000000000, 1, 1000000000, 1 }, new long[] { 2, 2, 2, 2 })]
+    [DataRow(new[] { -5, -5, 5, 5, -5 }, new long[] { 5, 4, 1, 1, 7 })]
+    [DataRow(new[] { 8, 9, 8, 9, 8, 9, 8, 9, 8 }, new long[] { 20, 12, 14, 8, 12, 8, 14, 12, 20 })]
+    [DataRow(new[] { 1, 1, 2, 2, 3, 3, 1, 1 }, new long[] { 14, 12, 1, 1, 1, 1, 12, 14 })]
     public void Distance_WithGivenNums_ReturnsSumOfIndexDistancesForEqualElements(int[] nums, long[] expectedResult)
     {
         // Arrange

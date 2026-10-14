@@ -21,21 +21,37 @@ public sealed class FindCenterOfStarGraphDictionary : IFindCenterOfStarGraph
     /// </remarks>
     public int FindCenter(int[][] edges)
     {
-        var dictionary = new Dictionary<int, int>();
+        var nodeToDegreeDictionary = new Dictionary<int, int>();
 
-        foreach (var edge in edges)
+        var center = 0;
+
+        for (var i = 0; i < edges.Length; i++)
         {
-            if (!dictionary.TryAdd(edge[0], 1))
+            var edge = edges[i];
+            var firstNode = edge[0];
+            var secondNode = edge[1];
+
+            if (!nodeToDegreeDictionary.TryAdd(firstNode, 1))
             {
-                dictionary[edge[0]]++;
+                nodeToDegreeDictionary[firstNode]++;
             }
 
-            if (!dictionary.TryAdd(edge[1], 1))
+            if (!nodeToDegreeDictionary.TryAdd(secondNode, 1))
             {
-                dictionary[edge[1]]++;
+                nodeToDegreeDictionary[secondNode]++;
+            }
+
+            if (nodeToDegreeDictionary[firstNode] == edges.Length)
+            {
+                center = firstNode;
+            }
+
+            if (nodeToDegreeDictionary[secondNode] == edges.Length)
+            {
+                center = secondNode;
             }
         }
 
-        return dictionary.First(item => item.Value == edges.Length).Key;
+        return center;
     }
 }

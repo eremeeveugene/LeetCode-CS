@@ -24,8 +24,10 @@ public sealed class MaximalRectangleStack : IMaximalRectangle
         var maxArea = 0;
         var height = new int[matrix[0].Length + 1];
 
-        foreach (var item in matrix)
+        for (var i = 0; i < matrix.Length; i++)
         {
+            var item = matrix[i];
+
             var stack = new Stack<int>();
 
             for (var col = 0; col <= matrix[0].Length; col++)

@@ -25,8 +25,9 @@ public sealed class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyDicti
 
         var frequencyDictionary = new Dictionary<string, int>();
 
-        foreach (var word in words)
+        for (var i = 0; i < words.Length; i++)
         {
+            var word = words[i];
             var reversedWord = new string([word[1], word[0]]);
 
             if (frequencyDictionary.TryGetValue(reversedWord, out var count) && count > 0)
@@ -44,9 +45,18 @@ public sealed class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyDicti
             }
         }
 
-        if (frequencyDictionary.Any(frequency => frequency.Value > 0 && frequency.Key[0] == frequency.Key[1]))
+        var keys = new string[frequencyDictionary.Count];
+
+        frequencyDictionary.Keys.CopyTo(keys, 0);
+
+        for (var i = 0; i < keys.Length; i++)
         {
-            return longestPalindrome + 2;
+            var key = keys[i];
+
+            if (frequencyDictionary[key] > 0 && key[0] == key[1])
+            {
+                return longestPalindrome + 2;
+            }
         }
 
         return longestPalindrome;

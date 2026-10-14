@@ -9,18 +9,9 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.SortThePeople;
+using LeetCode.Algorithms.RichestCustomerWealth;
 
-/// <inheritdoc />
-public sealed class SortThePeopleLinq : ISortThePeople
-{
-    /// <inheritdoc />
-    /// <remarks>
-    ///     Time complexity - O(n log n)
-    ///     Space complexity - O(n)
-    /// </remarks>
-    public string[] SortPeople(string[] names, int[] heights)
-    {
-        return [.. names.Zip(heights, (name, height) => (name, height)).OrderByDescending(x => x.height).Select(x => x.name)];
-    }
-}
+namespace LeetCode.Tests.Algorithms.RichestCustomerWealth;
+
+[TestClass]
+public sealed class RichestCustomerWealthIterativeTests : RichestCustomerWealthTestsBase<RichestCustomerWealthIterative>;

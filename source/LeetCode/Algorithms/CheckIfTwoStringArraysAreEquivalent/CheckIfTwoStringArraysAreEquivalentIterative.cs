@@ -21,8 +21,23 @@ public sealed class CheckIfTwoStringArraysAreEquivalentIterative : ICheckIfTwoSt
     /// </remarks>
     public bool ArrayStringsAreEqual(string[] word1, string[] word2)
     {
-        var word1CharsLength = word1.Select(w => w.Length).Sum();
-        var word2CharsLength = word2.Select(w => w.Length).Sum();
+        var word1CharsLength = 0;
+
+        for (var i = 0; i < word1.Length; i++)
+        {
+            var word = word1[i];
+
+            word1CharsLength += word.Length;
+        }
+
+        var word2CharsLength = 0;
+
+        for (var i = 0; i < word2.Length; i++)
+        {
+            var word = word2[i];
+
+            word2CharsLength += word.Length;
+        }
 
         if (word1CharsLength != word2CharsLength)
         {

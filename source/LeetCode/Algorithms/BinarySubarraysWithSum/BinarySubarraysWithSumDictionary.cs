@@ -21,12 +21,16 @@ public sealed class BinarySubarraysWithSumDictionary : IBinarySubarraysWithSum
     /// </remarks>
     public int NumSubarraysWithSum(int[] nums, int goal)
     {
-        var sumDictionary = new Dictionary<int, int> { [0] = 1 };
+        var n = nums.Length;
+
+        var sumDictionary = new Dictionary<int, int> { { 0, 1 } };
 
         int currentSum = 0, count = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < n; i++)
         {
+            var num = nums[i];
+
             currentSum += num;
 
             if (sumDictionary.ContainsKey(currentSum - goal))

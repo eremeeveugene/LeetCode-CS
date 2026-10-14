@@ -32,6 +32,13 @@ public abstract class TwoKeysKeyboardTestsBase<T> where T : ITwoKeysKeyboard, ne
     [DataRow(677, 677)]
     [DataRow(821, 821)]
     [DataRow(1000, 21)]
+    [DataRow(11, 11)]
+    [DataRow(12, 7)]
+    [DataRow(16, 8)]
+    [DataRow(512, 18)]
+    [DataRow(729, 18)]
+    [DataRow(997, 997)]
+    [DataRow(999, 46)]
     public void MinSteps_WithInputN_ReturnsMinimumSteps(int n, int expectedResult)
     {
         // Arrange

@@ -37,6 +37,7 @@ public abstract class RankTransformOfAnArrayTestsBase<T> where T : IRankTransfor
     [DataRow(new[] { 10, 10, 5, 5, 15, 15 }, new[] { 2, 2, 1, 1, 3, 3 })]
     [DataRow(new[] { 2, 1, 3, 4, 5, 6, 7, 8, 9, 10 }, new[] { 2, 1, 3, 4, 5, 6, 7, 8, 9, 10 })]
     [DataRow(new int[] { }, new int[] { })]
+    [DynamicData(nameof(GetLargeTestData))]
     public void ArrayRankTransform_WithUnsortedArray_ReturnsRankedArray(int[] arr, int[] expectedResult)
     {
         // Arrange
@@ -47,5 +48,21 @@ public abstract class RankTransformOfAnArrayTestsBase<T> where T : IRankTransfor
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetLargeTestData()
+    {
+        const int length = 100000;
+
+        var arr = new int[length];
+        var expectedResult = new int[length];
+
+        for (var i = 0; i < length; i++)
+        {
+            arr[i] = (i % 1000) - 500;
+            expectedResult[i] = (i % 1000) + 1;
+        }
+
+        yield return [arr, expectedResult];
     }
 }

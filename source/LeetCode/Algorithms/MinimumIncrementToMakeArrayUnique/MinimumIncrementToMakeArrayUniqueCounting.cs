@@ -23,10 +23,19 @@ public sealed class MinimumIncrementToMakeArrayUniqueCounting : IMinimumIncremen
     {
         var result = 0;
 
-        var frequency = new int[nums.Length + nums.Max()];
+        var max = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            max = Math.Max(max, nums[i]);
+        }
+
+        var frequency = new int[nums.Length + max];
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
             frequency[num]++;
         }
 

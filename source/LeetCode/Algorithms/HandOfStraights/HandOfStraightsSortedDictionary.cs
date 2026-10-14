@@ -40,7 +40,7 @@ public sealed class HandOfStraightsSortedDictionary : IHandOfStraights
 
         while (cardsDictionary.Count > 0)
         {
-            var firstCard = cardsDictionary.First().Key;
+            var firstCard = GetFirstCard(cardsDictionary);
 
             if (!TryRemoveGroup(cardsDictionary, firstCard, groupSize))
             {
@@ -49,6 +49,15 @@ public sealed class HandOfStraightsSortedDictionary : IHandOfStraights
         }
 
         return true;
+    }
+
+    private static int GetFirstCard(SortedDictionary<int, int> cardsDictionary)
+    {
+        using var enumerator = cardsDictionary.GetEnumerator();
+
+        enumerator.MoveNext();
+
+        return enumerator.Current.Key;
     }
 
     private static bool TryRemoveGroup(SortedDictionary<int, int> cardsDictionary, int firstCard, int groupSize)

@@ -23,8 +23,10 @@ public sealed class FinalValueOfVariableAfterPerformingOperationsSwitch : IFinal
     {
         var finalValue = 0;
 
-        foreach (var operation in operations)
+        for (var i = 0; i < operations.Length; i++)
         {
+            var operation = operations[i];
+
             switch (operation)
             {
                 case "++X" or "X++":

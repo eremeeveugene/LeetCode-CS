@@ -51,8 +51,10 @@ public sealed class NaryTreeLevelOrderTraversalBreadthFirstSearch : INaryTreeLev
                     continue;
                 }
 
-                foreach (var child in currentNode.children)
+                for (var i = 0; i < currentNode.children.Count; i++)
                 {
+                    var child = currentNode.children[i];
+
                     nextLevelNodes.Enqueue(child);
                 }
             }

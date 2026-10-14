@@ -24,8 +24,10 @@ public sealed class SecondLargestDigitInStringIterative : ISecondLargestDigitInS
         var highest = -1;
         var secondHighest = -1;
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             if (!char.IsDigit(c))
             {
                 continue;

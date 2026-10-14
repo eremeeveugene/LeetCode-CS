@@ -37,8 +37,14 @@ public sealed class ConstructStringWithRepeatLimitPriorityQueue : IConstructStri
 
         var frequencyPriorityQueue = new PriorityQueue<char, char>();
 
-        foreach (var c in frequencyDictionary.Keys)
+        var characters = new char[frequencyDictionary.Count];
+
+        frequencyDictionary.Keys.CopyTo(characters, 0);
+
+        for (var i = 0; i < characters.Length; i++)
         {
+            var c = characters[i];
+
             frequencyPriorityQueue.Enqueue(c, (char)('z' - c));
         }
 

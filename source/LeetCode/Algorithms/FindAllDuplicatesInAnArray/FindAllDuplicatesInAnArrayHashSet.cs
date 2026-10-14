@@ -23,6 +23,18 @@ public sealed class FindAllDuplicatesInAnArrayHashSet : IFindAllDuplicatesInAnAr
     {
         var numsHashSet = new HashSet<int>();
 
-        return nums.Where(num => !numsHashSet.Add(num)).ToArray();
+        var duplicates = new List<int>();
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            var num = nums[i];
+
+            if (!numsHashSet.Add(num))
+            {
+                duplicates.Add(num);
+            }
+        }
+
+        return duplicates;
     }
 }

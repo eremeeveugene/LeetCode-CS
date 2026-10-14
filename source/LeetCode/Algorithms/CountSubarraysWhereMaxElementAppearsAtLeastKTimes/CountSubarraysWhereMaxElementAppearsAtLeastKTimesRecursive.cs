@@ -21,71 +21,45 @@ public sealed class CountSubarraysWhereMaxElementAppearsAtLeastKTimesRecursive :
     /// </remarks>
     public long CountSubarrays(int[] nums, int k)
     {
-        var actualDuplicates = new List<List<int>>();
+        var n = nums.Length;
+        var maxElement = nums[0];
 
-        return CountSubarrays(nums, k, 0, nums.Length, actualDuplicates) + CountSubarrays(nums, k, 0, nums.Length, actualDuplicates);
+        for (var i = 1; i < n; i++)
+        {
+            maxElement = Math.Max(maxElement, nums[i]);
+        }
+
+        var maxElementCount = 0;
+
+        for (var i = 0; i < n; i++)
+        {
+            if (nums[i] == maxElement)
+            {
+                maxElementCount++;
+            }
+        }
+
+        var visited = new bool[n + 1, n + 1];
+
+        return CountSubarrays(nums, k, maxElement, 0, n, maxElementCount, visited);
     }
 
-    private static long CountSubarrays(IReadOnlyList<int> nums, int k, int left, int right, ICollection<List<int>> actualDuplicates)
+    private static long CountSubarrays(int[] nums, int k, int maxElement, int left, int right, int maxElementCount, bool[,] visited)
     {
-        if (left > right)
+        if (left >= right || visited[left, right])
         {
             return 0;
         }
 
-        var positionsDictionary = new Dictionary<int, int>();
+        visited[left, right] = true;
 
-        var isSubarray = false;
+        var result = maxElementCount >= k ? 1L : 0L;
 
-        var currentSubarray = nums.Skip(left).Take(right - left).ToList();
+        var withoutLeftCount = nums[left] == maxElement ? maxElementCount - 1 : maxElementCount;
+        var withoutRightCount = nums[right - 1] == maxElement ? maxElementCount - 1 : maxElementCount;
 
-        for (var i = left; i < right; i++)
-        {
-            if (positionsDictionary.TryAdd(nums[i], 1))
-            {
-                continue;
-            }
-
-            positionsDictionary[nums[i]]++;
-
-            if (positionsDictionary[nums[i]] != k)
-            {
-                continue;
-            }
-
-            var isDuplicate = false;
-
-            foreach (var duplicate in actualDuplicates)
-            {
-                if (!duplicate.SequenceEqual(currentSubarray))
-                {
-                    continue;
-                }
-
-                isDuplicate = true;
-
-                break;
-            }
-
-            if (isDuplicate)
-            {
-                continue;
-            }
-
-            actualDuplicates.Add(currentSubarray);
-
-            isSubarray = true;
-
-            break;
-        }
-
-        var count = CountSubarrays(nums, k, left + 1, right, actualDuplicates) + CountSubarrays(nums, k, left, right - 1, actualDuplicates);
-
-        if (isSubarray)
-        {
-            count++;
-        }
-
-        return count;
+        return result +
+               CountSubarrays(nums, k, maxElement, left + 1, right, withoutLeftCount, visited) +
+               CountSubarrays(nums, k, maxElement, left, right - 1, withoutRightCount, visited);
     }
 }

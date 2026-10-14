@@ -41,5 +41,22 @@ public abstract class SmallestStringStartingFromLeafTestsBase<T> where T : ISmal
         yield return [new int?[] { 25, 1, 3, 1, 3, 0, 2 }, "adz"];
 
         yield return [new int?[] { 2, 2, 1, null, 1, 0, null, 0 }, "abc"];
+        yield return [new int?[] { 0 }, "a"];
+        yield return [new int?[] { 25 }, "z"];
+        yield return [new int?[] { 0, 0 }, "aa"];
+        yield return [new int?[] { 1, 0, 2 }, "ab"];
+        yield return [new int?[] { 3, 1 }, "bd"];
+        yield return [new int?[] { 2, null, 1 }, "bc"];
+        yield return [new int?[] { 0, 1, null, 2 }, "cba"];
+        yield return [new int?[] { 25, 25, 25, 25 }, "zz"];
+        yield return [new int?[] { 1, 2, 3, 4, 5, 6, 7, 8 }, "fcb"];
+        yield return [new int?[] { 0, 0, 0, 0, 0, 0, 0 }, "aaa"];
+        yield return [new int?[] { 4, 2, null, 1, null, 0 }, "abce"];
+        yield return [new int?[] { 23, 22, 20, 12, null, 8, 11, 7, 14, null, 12, null, null, 18, null, null, null, null, null, null, 6, 7, 7 }, "hgshmwx"];
+        yield return [new int?[] { 1, 1, 1, 1, 0, null, null, null, null, 1, null, 1, 1, 1, 0, 1, null, null, 2, null, 0, 1, null, 0, 0, null, null, 1, 0, 1, null, null, null, null, null, null, null, null, 1 }, "aabbabb"];
+        yield return [new int?[] { 5, 24, null, 11, null, 20, 3, null, null, 19, 16 }, "qdlyf"];
+        yield return [new int?[] { 2, 1, 2, null, 0, 1, null, null, null, 2, null, 1 }, "abc"];
+        yield return [new int?[] { 5, 14, 4, 5, 11, 17, null, 21, 4, null, null, null, null, 2, 7, 5, 18, null, null, 14, 14, 11, null, null, 24, null, null, null, null, null, null, 10, 10, 3, null, null, null, 19 }, "cvfof"];
+        yield return [new int?[] { 0, 0, 1, 1, 2, 1, 2, null, null, 0, null, 0, 2, null, 0, null, null, null, null, 1, 0, null, 0, 1, null, null, 1, null, null, null, 1, 0 }, "aacba"];
     }
 }

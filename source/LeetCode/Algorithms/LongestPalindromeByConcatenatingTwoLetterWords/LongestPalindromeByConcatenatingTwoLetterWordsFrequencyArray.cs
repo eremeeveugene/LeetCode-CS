@@ -27,8 +27,9 @@ public sealed class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyArray
 
         var frequencyArray = new int[Length, Length];
 
-        foreach (var word in words)
+        for (var i = 0; i < words.Length; i++)
         {
+            var word = words[i];
             var a = word[0] - 'a';
             var b = word[1] - 'a';
 
@@ -44,9 +45,9 @@ public sealed class LongestPalindromeByConcatenatingTwoLetterWordsFrequencyArray
             }
         }
 
-        for (var i = 0; i < Length; i++)
+        for (var j = 0; j < Length; j++)
         {
-            if (frequencyArray[i, i] > 0)
+            if (frequencyArray[j, j] > 0)
             {
                 return longestPalindrome + 2;
             }

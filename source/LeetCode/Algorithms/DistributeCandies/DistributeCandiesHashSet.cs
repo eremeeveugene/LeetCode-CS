@@ -25,8 +25,10 @@ public sealed class DistributeCandiesHashSet : IDistributeCandies
 
         var candyTypesHashSet = new HashSet<int>();
 
-        foreach (var candyType in candyTypes)
+        for (var i = 0; i < candyTypes.Length; i++)
         {
+            var candyType = candyTypes[i];
+
             if (!candyTypesHashSet.Add(candyType))
             {
                 continue;

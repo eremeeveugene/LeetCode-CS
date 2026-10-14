@@ -21,8 +21,22 @@ public sealed class FindTheDifferenceBitwise : IFindTheDifference
     /// </remarks>
     public char FindTheDifference(string s, string t)
     {
-        var result = s.Aggregate((char)0, (current, c) => (char)(current ^ c));
+        var result = (char)0;
 
-        return t.Aggregate(result, (current, c) => (char)(current ^ c));
+        for (var i = 0; i < s.Length; i++)
+        {
+            var c = s[i];
+
+            result = (char)(result ^ c);
+        }
+
+        for (var i = 0; i < t.Length; i++)
+        {
+            var c = t[i];
+
+            result = (char)(result ^ c);
+        }
+
+        return result;
     }
 }

@@ -27,8 +27,10 @@ public sealed class CountOfInterestingSubarraysPrefixSum : ICountOfInterestingSu
 
         var prefix = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Count; i++)
         {
+            var num = nums[i];
+
             if (num % modulo == k)
             {
                 prefix++;

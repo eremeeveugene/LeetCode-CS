@@ -34,6 +34,8 @@ public abstract class MaximumWidthRampTestsBase<T> where T : IMaximumWidthRamp, 
     [DataRow(new[] { 100000, 0 }, 0)]
     [DataRow(new[] { 0, 100000 }, 1)]
     [DataRow(new[] { 10, 1, 11, 5, 20 }, 4)]
+    [DataRow(new[] { 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5 }, 10)]
+    [DataRow(new[] { 7, 6, 5, 6, 7, 8, 1, 9 }, 7)]
     public void MaxWidthRamp_WithArrayOfIntegers_ReturnsMaxWidth(int[] nums, int expectedResult)
     {
         // Arrange

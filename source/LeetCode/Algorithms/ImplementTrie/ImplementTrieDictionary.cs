@@ -25,8 +25,10 @@ public sealed class ImplementTrieDictionary : IImplementTrie
     {
         var currentNode = _root;
 
-        foreach (var c in word)
+        for (var i = 0; i < word.Length; i++)
         {
+            var c = word[i];
+
             if (currentNode.Nodes.TryGetValue(c, out var node))
             {
                 currentNode = node;
@@ -68,8 +70,10 @@ public sealed class ImplementTrieDictionary : IImplementTrie
     {
         var currentNode = _root;
 
-        foreach (var c in str)
+        for (var i = 0; i < str.Length; i++)
         {
+            var c = str[i];
+
             if (!currentNode.Nodes.TryGetValue(c, out var node))
             {
                 return null;

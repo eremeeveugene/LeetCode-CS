@@ -21,18 +21,22 @@ public sealed class RansomNoteCounting : IRansomNote
     /// </remarks>
     public bool CanConstruct(string ransomNote, string magazine)
     {
-        var magazineChars = new int['z' - 'a'];
+        var magazineChars = new int['z' - 'a' + 1];
 
-        foreach (var magazineChar in magazine)
+        for (var i = 0; i < magazine.Length; i++)
         {
-            magazineChars[magazineChar - 'a']++;
+            var magazineChar = magazine[i] - 'a';
+
+            magazineChars[magazineChar]++;
         }
 
-        foreach (var magazineChar in ransomNote.Select(ransomNoteChar => ransomNoteChar - 'a'))
+        for (var i = 0; i < ransomNote.Length; i++)
         {
-            if (magazineChars[magazineChar] > 0)
+            var ransomNoteChar = ransomNote[i] - 'a';
+
+            if (magazineChars[ransomNoteChar] > 0)
             {
-                magazineChars[magazineChar]--;
+                magazineChars[ransomNoteChar]--;
             }
             else
             {

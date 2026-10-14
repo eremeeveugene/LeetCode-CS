@@ -31,6 +31,17 @@ public abstract class ComplementOfBase10IntegerTestsBase<T> where T : IComplemen
     [DataRow(1073741824, 1073741823)]
     [DataRow(2100003647, 47480000)]
     [DataRow(int.MaxValue, 0)]
+    [DataRow(10, 5)]
+    [DataRow(11, 4)]
+    [DataRow(12, 3)]
+    [DataRow(13, 2)]
+    [DataRow(14, 1)]
+    [DataRow(15, 0)]
+    [DataRow(32, 31)]
+    [DataRow(100, 27)]
+    [DataRow(255, 0)]
+    [DataRow(256, 255)]
+    [DataRow(1000, 23)]
     public void BitwiseComplement_WithNumber_ReturnsComplement(int num, int expectedResult)
     {
         // Arrange

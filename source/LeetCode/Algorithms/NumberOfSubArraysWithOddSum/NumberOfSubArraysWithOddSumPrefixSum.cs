@@ -28,8 +28,10 @@ public sealed class NumberOfSubArraysWithOddSumPrefixSum : INumberOfSubArraysWit
         var evenCount = 1;
         var prefixSum = 0;
 
-        foreach (var num in arr)
+        for (var i = 0; i < arr.Length; i++)
         {
+            var num = arr[i];
+
             prefixSum += num;
 
             if (prefixSum % 2 == 0)

@@ -26,8 +26,10 @@ public sealed class RobotBoundedInCircleSimulation : IRobotBoundedInCircle
         var x = 0;
         var y = 0;
 
-        foreach (var instruction in instructions)
+        for (var i = 0; i < instructions.Length; i++)
         {
+            var instruction = instructions[i];
+
             switch (instruction)
             {
                 case 'G':

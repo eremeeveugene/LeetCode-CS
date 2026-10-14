@@ -31,10 +31,29 @@ public sealed class ThirdMaximumNumberDistinctOrder : IThirdMaximumNumber
                 return Math.Max(nums[0], nums[1]);
         }
 
-        var distinct = nums.Distinct().Order().ToArray();
+        var sortedNums = new int[numsLength];
 
-        var distinctLength = distinct.Length;
+        Array.Copy(nums, sortedNums, numsLength);
 
-        return distinctLength < 3 ? distinct[^1] : distinct[distinctLength - 3];
+        Array.Sort(sortedNums);
+
+        var distinctCount = 1;
+
+        for (var i = numsLength - 2; i >= 0; i--)
+        {
+            if (sortedNums[i] == sortedNums[i + 1])
+            {
+                continue;
+            }
+
+            distinctCount++;
+
+            if (distinctCount == 3)
+            {
+                return sortedNums[i];
+            }
+        }
+
+        return sortedNums[^1];
     }
 }

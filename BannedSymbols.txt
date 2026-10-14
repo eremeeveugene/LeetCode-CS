@@ -1,0 +1,1 @@
+N:System.Linq;LINQ is prohibited in this repository. Use indexed for loops.

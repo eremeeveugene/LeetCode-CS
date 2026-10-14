@@ -40,8 +40,10 @@ public abstract class PrintInOrderTestsBase<T> where T : IPrintInOrder, new()
         // Act
         List<Task> tasks = [];
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             switch (num)
             {
                 case 1:

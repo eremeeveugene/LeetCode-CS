@@ -35,8 +35,10 @@ public sealed class CheapestFlightsWithinKStopsBellmanFord : ICheapestFlightsWit
         {
             Array.Copy(cost, temp, n);
 
-            foreach (var flight in flights)
+            for (var j = 0; j < flights.Length; j++)
             {
+                var flight = flights[j];
+
                 int u = flight[0], v = flight[1], w = flight[2];
 
                 if (cost[u] == int.MaxValue)

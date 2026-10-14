@@ -23,8 +23,10 @@ public sealed class FindNumbersWithEvenNumberOfDigitsExtractDigits : IFindNumber
     {
         var count = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             var number = num;
 
             var digits = 0;

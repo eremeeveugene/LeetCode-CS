@@ -35,6 +35,20 @@ public sealed class UniqueNumberOfOccurrencesDictionary : IUniqueNumberOfOccurre
 
         var occurenceHashSet = new HashSet<int>();
 
-        return occurenceDictionary.All(occurence => occurenceHashSet.Add(occurence.Value));
+        var occurrences = new int[occurenceDictionary.Count];
+
+        occurenceDictionary.Values.CopyTo(occurrences, 0);
+
+        for (var i = 0; i < occurrences.Length; i++)
+        {
+            var occurrence = occurrences[i];
+
+            if (!occurenceHashSet.Add(occurrence))
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }

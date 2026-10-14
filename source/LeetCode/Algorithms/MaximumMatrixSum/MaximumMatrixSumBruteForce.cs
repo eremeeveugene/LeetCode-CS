@@ -25,10 +25,14 @@ public sealed class MaximumMatrixSumBruteForce : IMaximumMatrixSum
         var minAbsValue = int.MaxValue;
         var negativeCount = 0;
 
-        foreach (var row in matrix)
+        for (var i = 0; i < matrix.Length; i++)
         {
-            foreach (var cell in row)
+            var row = matrix[i];
+
+            for (var j = 0; j < row.Length; j++)
             {
+                var cell = row[j];
+
                 sum += Math.Abs(cell);
 
                 if (cell < 0)

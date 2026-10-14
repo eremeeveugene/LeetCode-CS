@@ -9,18 +9,9 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences;
+using LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences;
 
-/// <inheritdoc />
-public sealed class MaximumNumberOfWordsFoundInSentencesLinqSplit : IMaximumNumberOfWordsFoundInSentences
-{
-    /// <inheritdoc />
-    /// <remarks>
-    ///     Time complexity - O(n * m)
-    ///     Space complexity - O(n * m)
-    /// </remarks>
-    public int MostWordsFound(string[] sentences)
-    {
-        return sentences.Select(sentence => sentence.Split(' ')).Select(words => words.Length).Max();
-    }
-}
+namespace LeetCode.Tests.Algorithms.MaximumNumberOfWordsFoundInSentences;
+
+[TestClass]
+public class MaximumNumberOfWordsFoundInSentencesIterativeTests : MaximumNumberOfWordsFoundInSentencesTestsBase<MaximumNumberOfWordsFoundInSentencesIterative>;

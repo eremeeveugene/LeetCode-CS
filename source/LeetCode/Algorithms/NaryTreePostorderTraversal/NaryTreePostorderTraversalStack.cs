@@ -45,8 +45,10 @@ public sealed class NaryTreePostorderTraversalStack : INaryTreePostorderTraversa
                 continue;
             }
 
-            foreach (var child in node.children)
+            for (var i = 0; i < node.children.Count; i++)
             {
+                var child = node.children[i];
+
                 traverseStack.Push(child);
             }
         }

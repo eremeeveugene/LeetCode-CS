@@ -40,8 +40,14 @@ public sealed class MyCalendar3FrequencyDictionary : IMyCalendar3
 
         var currentFrequency = 0;
 
-        foreach (var frequency in _frequencyDictionary.Values)
+        var frequencies = new int[_frequencyDictionary.Count];
+
+        _frequencyDictionary.Values.CopyTo(frequencies, 0);
+
+        for (var i = 0; i < frequencies.Length; i++)
         {
+            var frequency = frequencies[i];
+
             currentFrequency += frequency;
 
             _maxFrequency = Math.Max(_maxFrequency, currentFrequency);

@@ -19,6 +19,23 @@ public abstract class MergeStringsAlternatelyTestsBase<T> where T : IMergeString
     [DataRow("abc", "pqr", "apbqcr")]
     [DataRow("ab", "pqrs", "apbqrs")]
     [DataRow("abcd", "pq", "apbqcd")]
+    [DataRow("a", "b", "ab")]
+    [DataRow("a", "bcdef", "abcdef")]
+    [DataRow("abcdef", "z", "azbcdef")]
+    [DataRow("x", "x", "xx")]
+    [DataRow("ab", "ab", "aabb")]
+    [DataRow("abc", "d", "adbc")]
+    [DataRow("a", "bc", "abc")]
+    [DataRow("hello", "world", "hweolrllod")]
+    [DataRow("zzzz", "aaaa", "zazazaza")]
+    [DataRow("ace", "bdfhij", "abcdefhij")]
+    [DataRow("abcdefghij", "kl", "akblcdefghij")]
+    [DataRow("q", "wertyuiop", "qwertyuiop")]
+    [DataRow("lm", "nopqr", "lnmopqr")]
+    [DataRow("aaa", "bbb", "ababab")]
+    [DataRow("ab", "cdefgh", "acbdefgh")]
+    [DataRow("short", "averyveryverylongword", "sahvoerrtyveryverylongword")]
+    [DataRow("xyz", "x", "xxyz")]
     public void MergeAlternately_WithTwoStrings_ReturnsMergedString(string word1, string word2, string expectedResult)
     {
         // Arrange

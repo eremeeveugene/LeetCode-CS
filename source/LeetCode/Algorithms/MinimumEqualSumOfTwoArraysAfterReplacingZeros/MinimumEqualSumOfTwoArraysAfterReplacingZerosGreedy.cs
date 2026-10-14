@@ -24,8 +24,10 @@ public sealed class MinimumEqualSumOfTwoArraysAfterReplacingZerosGreedy : IMinim
         long nums1Sum = 0;
         var nums1ZeroCount = 0;
 
-        foreach (var num in nums1)
+        for (var i = 0; i < nums1.Length; i++)
         {
+            var num = nums1[i];
+
             if (num == 0)
             {
                 nums1Sum++;
@@ -40,8 +42,10 @@ public sealed class MinimumEqualSumOfTwoArraysAfterReplacingZerosGreedy : IMinim
         long nums2Sum = 0;
         var nums2ZeroCount = 0;
 
-        foreach (var num in nums2)
+        for (var i = 0; i < nums2.Length; i++)
         {
+            var num = nums2[i];
+
             if (num == 0)
             {
                 nums2ZeroCount++;

@@ -112,7 +112,7 @@ public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
             return string.Empty;
         }
 
-        return _tailNode.PreviousNode.KeysHashSet.First();
+        return GetAnyKey(_tailNode.PreviousNode.KeysHashSet);
     }
 
     /// <inheritdoc />
@@ -127,7 +127,16 @@ public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
             return string.Empty;
         }
 
-        return _headNode.NextNode.KeysHashSet.First();
+        return GetAnyKey(_headNode.NextNode.KeysHashSet);
+    }
+
+    private static string GetAnyKey(HashSet<string> keysHashSet)
+    {
+        using var enumerator = keysHashSet.GetEnumerator();
+
+        enumerator.MoveNext();
+
+        return enumerator.Current;
     }
 
     private void MoveKey(string key, Node fromNode, Node toNode)

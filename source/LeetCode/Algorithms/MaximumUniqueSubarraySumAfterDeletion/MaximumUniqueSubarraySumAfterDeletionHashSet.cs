@@ -26,8 +26,10 @@ public sealed class MaximumUniqueSubarraySumAfterDeletionHashSet : IMaximumUniqu
 
         var numsHashSet = new HashSet<int>();
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             maxElement = Math.Max(maxElement, num);
 
             if (num > 0 && numsHashSet.Add(num))

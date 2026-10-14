@@ -127,5 +127,17 @@ public abstract class PathWithMaximumProbabilityTestsBase<T> where T : IPathWith
         yield return [4, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 3 } }, new[] { 0.5, 0.5, 0.5 }, 0, 3, 0.125];
 
         yield return [3, new[] { new[] { 0, 1 }, new[] { 1, 2 } }, new[] { 0.0, 0.0 }, 0, 2, 0d];
+
+        yield return [4, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 3 } }, new[] { 0.5, 0.4, 0.3 }, 0, 3, 0.06];
+
+        yield return [4, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 1, 3 }, new[] { 2, 3 } }, new[] { 0.9, 0.5, 0.2, 0.9 }, 0, 3, 0.45];
+
+        yield return [4, new[] { new[] { 0, 1 }, new[] { 0, 2 }, new[] { 1, 3 }, new[] { 2, 3 } }, new[] { 0.1, 0.9, 0.9, 0.5 }, 0, 3, 0.45];
+
+        yield return [5, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 }, new[] { 0, 4 } }, new[] { 0.9, 0.9, 0.9, 0.9, 0.5 }, 0, 4, 0.6561];
+
+        yield return [3, new[] { new[] { 0, 1 }, new[] { 1, 2 } }, new[] { 0.25, 0.4 }, 2, 0, 0.1];
+
+        yield return [6, new[] { new[] { 0, 1 }, new[] { 1, 2 }, new[] { 3, 4 }, new[] { 4, 5 } }, new[] { 0.5, 0.5, 0.5, 0.5 }, 0, 5, 0d];
     }
 }

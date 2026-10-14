@@ -23,14 +23,19 @@ public sealed class TakeKOfEachCharacterFromLeftAndRightSlidingWindow : ITakeKOf
     {
         var count = new int[3];
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             count[c - 'a']++;
         }
 
-        if (count.Any(c => c < k))
+        for (var i = 0; i < count.Length; i++)
         {
-            return -1;
+            if (count[i] < k)
+            {
+                return -1;
+            }
         }
 
         var window = new int[3];

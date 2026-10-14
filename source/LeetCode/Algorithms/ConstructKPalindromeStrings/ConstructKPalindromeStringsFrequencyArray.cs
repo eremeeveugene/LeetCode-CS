@@ -28,11 +28,22 @@ public sealed class ConstructKPalindromeStringsFrequencyArray : IConstructKPalin
 
         var frequencyArray = new int['z' - 'a' + 1];
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             frequencyArray[c - 'a']++;
         }
 
-        return frequencyArray.Count(frequency => frequency % 2 == 1) <= k;
+        var oddCount = 0;
+
+        for (var i = 0; i < frequencyArray.Length; i++)
+        {
+            var frequency = frequencyArray[i];
+
+            oddCount += frequency % 2;
+        }
+
+        return oddCount <= k;
     }
 }

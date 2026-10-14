@@ -9,18 +9,34 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.SortArrayByIncreasingFrequency;
+namespace LeetCode.Algorithms.RichestCustomerWealth;
 
 /// <inheritdoc />
-public sealed class SortArrayByIncreasingFrequencyLinq : ISortArrayByIncreasingFrequency
+public sealed class RichestCustomerWealthIterative : IRichestCustomerWealth
 {
     /// <inheritdoc />
     /// <remarks>
-    ///     Time complexity - O(n log n)
-    ///     Space complexity - O(n)
+    ///     Time complexity - O(n * m)
+    ///     Space complexity - O(1)
     /// </remarks>
-    public int[] FrequencySort(int[] nums)
+    public int MaximumWealth(int[][] accounts)
     {
-        return nums.GroupBy(v => v).OrderBy(g => g.Count()).ThenByDescending(g => g.Key).SelectMany(g => g).ToArray();
+        var maxWealth = 0;
+
+        for (var i = 0; i < accounts.Length; i++)
+        {
+            var account = accounts[i];
+
+            var wealth = 0;
+
+            for (var j = 0; j < account.Length; j++)
+            {
+                wealth += account[j];
+            }
+
+            maxWealth = Math.Max(maxWealth, wealth);
+        }
+
+        return maxWealth;
     }
 }

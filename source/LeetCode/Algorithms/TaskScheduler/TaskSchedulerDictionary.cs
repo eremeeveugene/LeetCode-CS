@@ -36,8 +36,14 @@ public sealed class TaskSchedulerDictionary : ITaskScheduler
         var maxFrequency = 0;
         var tasksWithMaxFrequency = 0;
 
-        foreach (var count in taskCounts.Values)
+        var counts = new int[taskCounts.Count];
+
+        taskCounts.Values.CopyTo(counts, 0);
+
+        for (var i = 0; i < counts.Length; i++)
         {
+            var count = counts[i];
+
             if (count > maxFrequency)
             {
                 maxFrequency = count;

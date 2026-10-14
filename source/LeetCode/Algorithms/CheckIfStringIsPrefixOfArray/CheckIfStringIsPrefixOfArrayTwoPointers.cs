@@ -23,10 +23,14 @@ public sealed class CheckIfStringIsPrefixOfArrayTwoPointers : ICheckIfStringIsPr
     {
         var sIndex = 0;
 
-        foreach (var word in words)
+        for (var i = 0; i < words.Length; i++)
         {
-            foreach (var letter in word)
+            var word = words[i];
+
+            for (var j = 0; j < word.Length; j++)
             {
+                var letter = word[j];
+
                 if (sIndex == s.Length)
                 {
                     return false;

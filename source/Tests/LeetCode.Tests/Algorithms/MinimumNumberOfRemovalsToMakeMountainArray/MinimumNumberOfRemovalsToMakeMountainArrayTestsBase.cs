@@ -65,11 +65,85 @@ public abstract class MinimumNumberOfRemovalsToMakeMountainArrayTestsBase<T> whe
         yield return [new[] { 1, 2, 3, 4, 5, 4, 3, 2, 1 }, 0];
         yield return [new[] { 8, 1, 2, 1 }, 1];
         yield return [new[] { 1, 2, 1, 8 }, 1];
-        yield return [Enumerable.Range(1, 501).Concat(Enumerable.Range(2, 499).Reverse()).ToArray(), 0];
-        yield return [Enumerable.Range(1, 500).Concat(Enumerable.Range(1, 500).Reverse()).ToArray(), 1];
-        yield return [Enumerable.Range(0, 1000).Select(i => i % 2 == 0 ? 1 : 2).ToArray(), 997];
-        yield return [Enumerable.Repeat(1, 499).Append(1000000000).Concat(Enumerable.Repeat(1, 500)).ToArray(), 997];
-        yield return [Enumerable.Range(1, 999).Append(1).ToArray(), 0];
-        yield return [Enumerable.Repeat(1, 1).Concat(Enumerable.Range(1, 999).Reverse()).ToArray(), 0];
+        yield return [Concatenate(CreateRange(1, 501), CreateDescendingRange(500, 499)), 0];
+        yield return [Concatenate(CreateRange(1, 500), CreateDescendingRange(500, 500)), 1];
+        yield return [CreateAlternating(1000), 997];
+        yield return [Concatenate(CreateFilled(1, 499), [1000000000], CreateFilled(1, 500)), 997];
+        yield return [Concatenate(CreateRange(1, 999), [1]), 0];
+        yield return [Concatenate([1], CreateDescendingRange(999, 999)), 0];
+    }
+
+    private static int[] CreateRange(int start, int count)
+    {
+        var result = new int[count];
+
+        for (var i = 0; i < count; i++)
+        {
+            result[i] = start + i;
+        }
+
+        return result;
+    }
+
+    private static int[] CreateDescendingRange(int start, int count)
+    {
+        var result = new int[count];
+
+        for (var i = 0; i < count; i++)
+        {
+            result[i] = start - i;
+        }
+
+        return result;
+    }
+
+    private static int[] CreateFilled(int value, int count)
+    {
+        var result = new int[count];
+
+        for (var i = 0; i < count; i++)
+        {
+            result[i] = value;
+        }
+
+        return result;
+    }
+
+    private static int[] CreateAlternating(int count)
+    {
+        var result = new int[count];
+
+        for (var i = 0; i < count; i++)
+        {
+            result[i] = i % 2 == 0 ? 1 : 2;
+        }
+
+        return result;
+    }
+
+    private static int[] Concatenate(params int[][] parts)
+    {
+        var totalLength = 0;
+
+        for (var i = 0; i < parts.Length; i++)
+        {
+            var part = parts[i];
+
+            totalLength += part.Length;
+        }
+
+        var result = new int[totalLength];
+        var offset = 0;
+
+        for (var i = 0; i < parts.Length; i++)
+        {
+            var part = parts[i];
+
+            Array.Copy(part, 0, result, offset, part.Length);
+
+            offset += part.Length;
+        }
+
+        return result;
     }
 }

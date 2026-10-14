@@ -38,8 +38,10 @@ public sealed class MinimumCostToHireKWorkersPriorityQueue : IMinimumCostToHireK
 
         double sum = 0;
 
-        foreach (var worker in workers)
+        for (var i = 0; i < workers.Length; i++)
         {
+            var worker = workers[i];
+
             sum += worker.quality;
 
             priorityQueue.Enqueue(-worker.quality, -worker.quality);

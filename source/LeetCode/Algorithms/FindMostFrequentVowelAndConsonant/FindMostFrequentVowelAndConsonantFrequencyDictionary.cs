@@ -26,8 +26,10 @@ public sealed class FindMostFrequentVowelAndConsonantFrequencyDictionary : IFind
         var maxVowel = 0;
         var maxConsonant = 0;
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             if (!frequencyDictionary.TryAdd(c, 1))
             {
                 frequencyDictionary[c]++;

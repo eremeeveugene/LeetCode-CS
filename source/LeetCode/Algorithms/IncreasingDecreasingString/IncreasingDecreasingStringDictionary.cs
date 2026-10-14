@@ -39,15 +39,35 @@ public sealed class IncreasingDecreasingStringDictionary : IIncreasingDecreasing
 
         while (stringBuilder.Length < s.Length)
         {
-            foreach (var key in dictionary.Keys.Where(key => dictionary[key] > 0).OrderBy(c => c))
+            var keys = new char[dictionary.Count];
+
+            dictionary.Keys.CopyTo(keys, 0);
+
+            Array.Sort(keys);
+
+            for (var i = 0; i < keys.Length; i++)
             {
+                var key = keys[i];
+
+                if (dictionary[key] <= 0)
+                {
+                    continue;
+                }
+
                 stringBuilder.Append(key);
 
                 dictionary[key]--;
             }
 
-            foreach (var key in dictionary.Keys.Where(key => dictionary[key] > 0).OrderByDescending(c => c))
+            for (var i = keys.Length - 1; i >= 0; i--)
             {
+                var key = keys[i];
+
+                if (dictionary[key] <= 0)
+                {
+                    continue;
+                }
+
                 stringBuilder.Append(key);
 
                 dictionary[key]--;

@@ -21,13 +21,27 @@ public sealed class RankTransformOfAnArrayDictionary : IRankTransformOfAnArray
     /// </remarks>
     public int[] ArrayRankTransform(int[] arr)
     {
-        var sortedNums = arr.Distinct().Order().ToArray();
+        var sortedNums = new int[arr.Length];
+
+        Array.Copy(arr, sortedNums, arr.Length);
+        Array.Sort(sortedNums);
 
         var rankDictionary = new Dictionary<int, int>();
 
-        for (var rank = 0; rank < sortedNums.Length; rank++)
+        var rank = 0;
+
+        for (var i = 0; i < sortedNums.Length; i++)
         {
-            rankDictionary.Add(sortedNums[rank], rank + 1);
+            var num = sortedNums[i];
+
+            if (i > 0 && num == sortedNums[i - 1])
+            {
+                continue;
+            }
+
+            rank++;
+
+            rankDictionary.Add(num, rank);
         }
 
         for (var i = 0; i < arr.Length; i++)

@@ -28,16 +28,20 @@ public sealed class LongestPalindromeArray : ILongestPalindrome
 
         var charCount = new int[128];
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             charCount[c]++;
         }
 
         var length = 0;
         var oddCountFound = false;
 
-        foreach (var count in charCount)
+        for (var i = 0; i < charCount.Length; i++)
         {
+            var count = charCount[i];
+
             if (count % 2 == 0)
             {
                 length += count;

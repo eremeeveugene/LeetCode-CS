@@ -24,8 +24,10 @@ public sealed class FindTheTownJudgeDictionary : IFindTheTownJudge
         var trustCounts = new int[n + 1];
         var trustsSomeone = new bool[n + 1];
 
-        foreach (var t in trust)
+        for (var i = 0; i < trust.Length; i++)
         {
+            var t = trust[i];
+
             trustCounts[t[0]]--;
             trustCounts[t[1]]++;
             trustsSomeone[t[0]] = true;

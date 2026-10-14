@@ -9,18 +9,39 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.RichestCustomerWealth;
+namespace LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences;
 
 /// <inheritdoc />
-public sealed class RichestCustomerWealthLinq : IRichestCustomerWealth
+public sealed class MaximumNumberOfWordsFoundInSentencesIterative : IMaximumNumberOfWordsFoundInSentences
 {
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n * m)
     ///     Space complexity - O(1)
     /// </remarks>
-    public int MaximumWealth(int[][] accounts)
+    public int MostWordsFound(string[] sentences)
     {
-        return accounts.Select(account => account.Sum()).Max();
+        var maxWordsCount = 0;
+
+        for (var i = 0; i < sentences.Length; i++)
+        {
+            var sentence = sentences[i];
+
+            var wordsCount = 1;
+
+            for (var j = 0; j < sentence.Length; j++)
+            {
+                var character = sentence[j];
+
+                if (character == ' ')
+                {
+                    wordsCount++;
+                }
+            }
+
+            maxWordsCount = Math.Max(maxWordsCount, wordsCount);
+        }
+
+        return maxWordsCount;
     }
 }

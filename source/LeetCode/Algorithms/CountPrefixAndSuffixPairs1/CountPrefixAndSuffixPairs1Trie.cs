@@ -24,8 +24,10 @@ public sealed class CountPrefixAndSuffixPairs1Trie : ICountPrefixAndSuffixPairs1
     /// </remarks>
     public int CountPrefixSuffixPairs(string[] words)
     {
-        foreach (var word in words)
+        for (var i = 0; i < words.Length; i++)
         {
+            var word = words[i];
+
             InsertPrefix(word);
             InsertSuffix(word);
         }
@@ -54,8 +56,10 @@ public sealed class CountPrefixAndSuffixPairs1Trie : ICountPrefixAndSuffixPairs1
     {
         var currentNode = _prefixRoot;
 
-        foreach (var c in word)
+        for (var i = 0; i < word.Length; i++)
         {
+            var c = word[i];
+
             if (currentNode.Nodes.TryGetValue(c, out var node))
             {
                 currentNode = node;

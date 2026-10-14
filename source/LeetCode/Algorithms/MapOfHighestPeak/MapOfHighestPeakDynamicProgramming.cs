@@ -58,7 +58,7 @@ public sealed class MapOfHighestPeakDynamicProgramming : IMapOfHighestPeak
                 var up = row > 0 ? heights[row - 1][col] : infinity;
                 var left = col > 0 ? heights[row][col - 1] : infinity;
 
-                heights[row][col] = int.Min(up, left) + 1;
+                heights[row][col] = Math.Min(up, left) + 1;
             }
         }
     }
@@ -77,7 +77,7 @@ public sealed class MapOfHighestPeakDynamicProgramming : IMapOfHighestPeak
                 var down = row < m - 1 ? heights[row + 1][col] : infinity;
                 var right = col < n - 1 ? heights[row][col + 1] : infinity;
 
-                heights[row][col] = int.Min(heights[row][col], int.Min(down, right) + 1);
+                heights[row][col] = Math.Min(heights[row][col], Math.Min(down, right) + 1);
             }
         }
     }

@@ -33,6 +33,20 @@ public sealed class CheckIfAnyElementHasPrimeFrequencyDictionary : CheckIfAnyEle
             }
         }
 
-        return frequencyDictionary.Values.Any(IsPrime);
+        var frequencies = new int[frequencyDictionary.Count];
+
+        frequencyDictionary.Values.CopyTo(frequencies, 0);
+
+        for (var i = 0; i < frequencies.Length; i++)
+        {
+            var frequency = frequencies[i];
+
+            if (IsPrime(frequency))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

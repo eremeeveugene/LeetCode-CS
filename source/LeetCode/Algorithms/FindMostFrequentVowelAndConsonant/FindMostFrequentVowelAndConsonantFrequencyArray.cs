@@ -28,8 +28,10 @@ public sealed class FindMostFrequentVowelAndConsonantFrequencyArray : IFindMostF
         var maxVowel = 0;
         var maxConsonant = 0;
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             var index = c - 'a';
 
             frequencyArray[index]++;

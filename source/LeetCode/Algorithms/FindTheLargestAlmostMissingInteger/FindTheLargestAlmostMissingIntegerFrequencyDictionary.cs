@@ -48,9 +48,15 @@ public sealed class FindTheLargestAlmostMissingIntegerFrequencyDictionary : IFin
         {
             var result = -1;
 
-            foreach (var (num, frequency) in numToFrequencyDictionary)
+            var distinctNums = new int[numToFrequencyDictionary.Count];
+
+            numToFrequencyDictionary.Keys.CopyTo(distinctNums, 0);
+
+            for (var i = 0; i < distinctNums.Length; i++)
             {
-                if (frequency == 1)
+                var num = distinctNums[i];
+
+                if (numToFrequencyDictionary[num] == 1)
                 {
                     result = Math.Max(result, num);
                 }

@@ -24,8 +24,12 @@ public sealed class SubtractTheProductAndSumOfDigitsOfAnIntegerString : ISubtrac
         var productOfDigits = 1;
         var sumOfDigits = 0;
 
-        foreach (var numericValue in n.ToString().Select(c => (int)char.GetNumericValue(c)))
+        var digits = n.ToString();
+
+        for (var i = 0; i < digits.Length; i++)
         {
+            var numericValue = (int)char.GetNumericValue(digits[i]);
+
             productOfDigits *= numericValue;
             sumOfDigits += numericValue;
         }

@@ -46,5 +46,19 @@ public abstract class LinkedListInBinaryTreeTestsBase<T> where T : ILinkedListIn
         yield return [new[] { 1, 10 }, new int?[] { 1, null, 1, 10, 1, 9 }, true];
 
         yield return [new[] { 2, 2, 1 }, new int?[] { 2, null, 2, null, 2, null, 1 }, true];
+        yield return [new[] { 1 }, new int?[] { 2 }, false];
+        yield return [new[] { 1, 2 }, new int?[] { 1, 2 }, true];
+        yield return [new[] { 1, 2 }, new int?[] { 1, null, 2 }, true];
+        yield return [new[] { 1, 3 }, new int?[] { 1, 2, 3 }, true];
+        yield return [new[] { 2 }, new int?[] { 1, 2, 3 }, true];
+        yield return [new[] { 1, 2, 3 }, new int?[] { 1, 2, 3, 4, 5, 6, 7 }, false];
+        yield return [new[] { 1, 2, 4 }, new int?[] { 1, 2, 3, 4, 5, 6, 7 }, true];
+        yield return [new[] { 1, 3, 7 }, new int?[] { 1, 2, 3, 4, 5, 6, 7 }, true];
+        yield return [new[] { 1, 3, 6 }, new int?[] { 1, 2, 3, 4, 5, 6, 7 }, true];
+        yield return [new[] { 2, 5 }, new int?[] { 1, 2, 3, 4, 5, 6, 7 }, true];
+        yield return [new[] { 3, 6, 7 }, new int?[] { 1, 2, 3, 4, 5, 6, 7 }, false];
+        yield return [new[] { 7 }, new int?[] { 1, 2, 3, 4, 5, 6, 7 }, true];
+        yield return [new[] { 1, 2, 3 }, new int?[] { 1, 2, 3, 4, 5, 6, 7 }, false];
+        yield return [new[] { 5, 5, 5 }, new int?[] { 5, 5, 5, 5, 5, 5, 5 }, true];
     }
 }

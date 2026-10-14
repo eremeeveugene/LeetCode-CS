@@ -20,6 +20,22 @@ public abstract class LargestPositiveIntegerThatExistsWithItsNegativeTestsBase<T
     [DataRow(new[] { -1, 2, -3, 3 }, 3)]
     [DataRow(new[] { -1, 10, 6, 7, -7, 1 }, 7)]
     [DataRow(new[] { -10, 8, 6, 7, -2, -3 }, -1)]
+    [DataRow(new[] { -1 }, -1)]
+    [DataRow(new[] { 1, -1 }, 1)]
+    [DataRow(new[] { -1, 1 }, 1)]
+    [DataRow(new[] { 5, 5 }, -1)]
+    [DataRow(new[] { -5, -5 }, -1)]
+    [DataRow(new[] { 1000, -1000 }, 1000)]
+    [DataRow(new[] { -1000, 1000, 999 }, 1000)]
+    [DataRow(new[] { 3, -3, 3, -3 }, 3)]
+    [DataRow(new[] { 1, 2, 3, -4 }, -1)]
+    [DataRow(new[] { -1, -2, -3, 1, 2, 3 }, 3)]
+    [DataRow(new[] { 7, -7, 8, -9 }, 7)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, -1)]
+    [DataRow(new[] { -1, -2, -3, -4 }, -1)]
+    [DataRow(new[] { 10, -10, 20, -20, 5 }, 20)]
+    [DataRow(new[] { -6, 6, 6, -6, 2 }, 6)]
+    [DataRow(new[] { 100, 2, -2, 3, -100, 50 }, 100)]
     public void FindMaxK_WithIntegerArray_ReturnsLargestKWhereBothKAndNegativeKExist(int[] nums, int expectedResult)
     {
         // Arrange

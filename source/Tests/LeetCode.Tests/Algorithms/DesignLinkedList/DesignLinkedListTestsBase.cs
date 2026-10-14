@@ -223,12 +223,12 @@ public abstract class DesignLinkedListTestsBase<T> where T : IDesignLinkedList, 
         [
             new Scenario<IDesignLinkedList>(
                 [
-                    .. Enumerable.Range(0, 1000).Select(value => new AddAtTailOperation(value)),
-                    .. Enumerable.Range(0, 1000).Select(index => new GetOperation(index))
+                    .. CreateAddAtTailOperations(1000),
+                    .. CreateGetOperations(1000)
                 ],
                 [
-                    .. Enumerable.Repeat(VoidOperationResult.Instance, 1000),
-                    .. Enumerable.Range(0, 1000).Select(value => new GetOperation.Result(value))
+                    .. CreateVoidResults(1000),
+                    .. CreateAscendingGetResults(1000)
                 ])
         ];
 
@@ -236,12 +236,12 @@ public abstract class DesignLinkedListTestsBase<T> where T : IDesignLinkedList, 
         [
             new Scenario<IDesignLinkedList>(
                 [
-                    .. Enumerable.Range(0, 1000).Select(value => new AddAtHeadOperation(value)),
-                    .. Enumerable.Range(0, 1000).Select(index => new GetOperation(index))
+                    .. CreateAddAtHeadOperations(1000),
+                    .. CreateGetOperations(1000)
                 ],
                 [
-                    .. Enumerable.Repeat(VoidOperationResult.Instance, 1000),
-                    .. Enumerable.Range(0, 1000).Select(index => new GetOperation.Result(999 - index))
+                    .. CreateVoidResults(1000),
+                    .. CreateDescendingGetResults(1000)
                 ])
         ];
 
@@ -249,7 +249,7 @@ public abstract class DesignLinkedListTestsBase<T> where T : IDesignLinkedList, 
         [
             new Scenario<IDesignLinkedList>(
                 [
-                    .. Enumerable.Range(0, 1000).Select(value => new AddAtTailOperation(value)),
+                    .. CreateAddAtTailOperations(1000),
                     new AddAtIndexOperation(1000, 1000),
                     new GetOperation(1000),
                     new DeleteAtIndexOperation(1000),
@@ -257,7 +257,7 @@ public abstract class DesignLinkedListTestsBase<T> where T : IDesignLinkedList, 
                     new GetOperation(1000)
                 ],
                 [
-                    .. Enumerable.Repeat(VoidOperationResult.Instance, 1001),
+                    .. CreateVoidResults(1001),
                     new GetOperation.Result(1000),
                     VoidOperationResult.Instance,
                     VoidOperationResult.Instance,
@@ -828,6 +828,78 @@ public abstract class DesignLinkedListTestsBase<T> where T : IDesignLinkedList, 
                     new GetOperation.Result(999)
                 ])
         ];
+    }
+
+    private static IOperation<IDesignLinkedList>[] CreateAddAtTailOperations(int count)
+    {
+        var operations = new IOperation<IDesignLinkedList>[count];
+
+        for (var i = 0; i < count; i++)
+        {
+            operations[i] = new AddAtTailOperation(i);
+        }
+
+        return operations;
+    }
+
+    private static IOperation<IDesignLinkedList>[] CreateAddAtHeadOperations(int count)
+    {
+        var operations = new IOperation<IDesignLinkedList>[count];
+
+        for (var i = 0; i < count; i++)
+        {
+            operations[i] = new AddAtHeadOperation(i);
+        }
+
+        return operations;
+    }
+
+    private static IOperation<IDesignLinkedList>[] CreateGetOperations(int count)
+    {
+        var operations = new IOperation<IDesignLinkedList>[count];
+
+        for (var i = 0; i < count; i++)
+        {
+            operations[i] = new GetOperation(i);
+        }
+
+        return operations;
+    }
+
+    private static IOperationResult[] CreateVoidResults(int count)
+    {
+        var results = new IOperationResult[count];
+
+        for (var i = 0; i < count; i++)
+        {
+            results[i] = VoidOperationResult.Instance;
+        }
+
+        return results;
+    }
+
+    private static IOperationResult[] CreateAscendingGetResults(int count)
+    {
+        var results = new IOperationResult[count];
+
+        for (var i = 0; i < count; i++)
+        {
+            results[i] = new GetOperation.Result(i);
+        }
+
+        return results;
+    }
+
+    private static IOperationResult[] CreateDescendingGetResults(int count)
+    {
+        var results = new IOperationResult[count];
+
+        for (var i = 0; i < count; i++)
+        {
+            results[i] = new GetOperation.Result(count - 1 - i);
+        }
+
+        return results;
     }
 
     private sealed class GetOperation : IOperation<IDesignLinkedList>

@@ -21,9 +21,33 @@ public sealed class FindCommonElementsBetweenTwoArraysBruteForce : IFindCommonEl
     /// </remarks>
     public int[] FindIntersectionValues(int[] nums1, int[] nums2)
     {
-        var answer1 = nums1.Count(nums2.Contains);
-        var answer2 = nums2.Count(nums1.Contains);
+        var answer1 = CountCommonElements(nums1, nums2);
+        var answer2 = CountCommonElements(nums2, nums1);
 
         return [answer1, answer2];
+    }
+
+    private static int CountCommonElements(int[] source, int[] target)
+    {
+        var count = 0;
+
+        for (var i = 0; i < source.Length; i++)
+        {
+            var num = source[i];
+
+            for (var j = 0; j < target.Length; j++)
+            {
+                if (target[j] != num)
+                {
+                    continue;
+                }
+
+                count++;
+
+                break;
+            }
+        }
+
+        return count;
     }
 }

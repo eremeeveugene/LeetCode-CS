@@ -28,6 +28,15 @@ public sealed class MissingNumberSumFormula : IMissingNumber
 
         var numsLength = nums.Length;
 
-        return (numsLength * (numsLength + 1) / 2) - nums.Sum();
+        var sum = 0;
+
+        for (var i = 0; i < numsLength; i++)
+        {
+            var num = nums[i];
+
+            sum += num;
+        }
+
+        return (numsLength * (numsLength + 1) / 2) - sum;
     }
 }

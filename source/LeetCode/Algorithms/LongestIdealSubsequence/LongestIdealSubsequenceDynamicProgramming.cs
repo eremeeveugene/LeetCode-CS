@@ -24,13 +24,14 @@ public sealed class LongestIdealSubsequenceDynamicProgramming : ILongestIdealSub
         var dp = new int[26];
         var maxLength = 0;
 
-        foreach (var ch in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var ch = s[i];
             var currentMaxLength = 1;
 
-            for (var i = Math.Max('a', ch - k); i <= Math.Min('z', ch + k); i++)
+            for (var j = Math.Max('a', ch - k); j <= Math.Min('z', ch + k); j++)
             {
-                var idx = i - 'a';
+                var idx = j - 'a';
 
                 currentMaxLength = Math.Max(currentMaxLength, dp[idx] + 1);
             }

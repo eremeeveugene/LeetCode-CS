@@ -24,6 +24,13 @@ public sealed class MinimumNumberOfMovesToSeatEveryoneSorting : IMinimumNumberOf
         Array.Sort(seats);
         Array.Sort(students);
 
-        return seats.Select((t, i) => Math.Abs(t - students[i])).Sum();
+        var moves = 0;
+
+        for (var i = 0; i < seats.Length; i++)
+        {
+            moves += Math.Abs(seats[i] - students[i]);
+        }
+
+        return moves;
     }
 }

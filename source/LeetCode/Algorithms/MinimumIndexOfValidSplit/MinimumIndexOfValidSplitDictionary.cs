@@ -25,8 +25,10 @@ public sealed class MinimumIndexOfValidSplitDictionary : IMinimumIndexOfValidSpl
         var dominant = nums[0];
         var dominantFreq = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Count; i++)
         {
+            var num = nums[i];
+
             frequencyDictionary[num] = frequencyDictionary.GetValueOrDefault(num) + 1;
 
             if (frequencyDictionary[num] <= dominantFreq)

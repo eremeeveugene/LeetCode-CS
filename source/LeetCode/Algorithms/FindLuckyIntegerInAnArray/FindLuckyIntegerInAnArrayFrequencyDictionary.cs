@@ -35,11 +35,17 @@ public sealed class FindLuckyIntegerInAnArrayFrequencyDictionary : IFindLuckyInt
 
         var result = -1;
 
-        foreach (var numToFrequency in numToFrequencyDictionary)
+        var nums = new int[numToFrequencyDictionary.Count];
+
+        numToFrequencyDictionary.Keys.CopyTo(nums, 0);
+
+        for (var i = 0; i < nums.Length; i++)
         {
-            if (numToFrequency.Key == numToFrequency.Value && numToFrequency.Key > result)
+            var num = nums[i];
+
+            if (num == numToFrequencyDictionary[num] && num > result)
             {
-                result = numToFrequency.Key;
+                result = num;
             }
         }
 

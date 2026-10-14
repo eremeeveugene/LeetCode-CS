@@ -13,7 +13,7 @@ using LeetCode.Algorithms.MinimumSwapsToGroupAll1Together2;
 
 namespace LeetCode.Tests.Algorithms.MinimumSwapsToGroupAll1Together2;
 
-public abstract class MinimumSwapsToGroupAll1Together2TestBase<T> where T : IMinimumSwapsToGroupAll1Together2, new()
+public abstract class MinimumSwapsToGroupAll1Together2TestsBase<T> where T : IMinimumSwapsToGroupAll1Together2, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 1, 0, 0, 1 }, 0)]
@@ -33,6 +33,10 @@ public abstract class MinimumSwapsToGroupAll1Together2TestBase<T> where T : IMin
     [DataRow(new[] { 0, 0, 1, 1, 0 }, 0)]
     [DataRow(new[] { 1, 0, 0, 0, 1 }, 0)]
     [DataRow(new[] { 0, 0, 0, 1, 0 }, 0)]
+    [DataRow(new[] { 1, 0, 1, 0, 1 }, 1)]
+    [DataRow(new[] { 1, 0, 0, 1, 0, 0, 1 }, 1)]
+    [DataRow(new[] { 1, 1, 0, 1 }, 0)]
+    [DataRow(new[] { 1, 0, 1, 0, 1, 0, 1, 0 }, 2)]
     public void MinSwaps_WithBinaryArray_ReturnsMinimumSwapsToGroupOnes(int[] nums, int expectedResult)
     {
         // Arrange

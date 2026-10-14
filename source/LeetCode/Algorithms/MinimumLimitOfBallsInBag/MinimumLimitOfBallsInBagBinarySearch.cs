@@ -22,12 +22,24 @@ public sealed class MinimumLimitOfBallsInBagBinarySearch : IMinimumLimitOfBallsI
     public int MinimumSize(int[] nums, int maxOperations)
     {
         var left = 1;
-        var right = nums.Max();
+        var right = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            right = Math.Max(right, nums[i]);
+        }
 
         while (left < right)
         {
             var mid = left + ((right - left) / 2);
-            var count = nums.Sum(num => (num - 1) / mid);
+            long count = 0;
+
+            for (var i = 0; i < nums.Length; i++)
+            {
+                var num = nums[i];
+
+                count += (num - 1) / mid;
+            }
 
             if (count > maxOperations)
             {

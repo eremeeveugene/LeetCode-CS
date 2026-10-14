@@ -21,6 +21,18 @@ public sealed class CountingWordsWithGivenPrefixIterative : ICountingWordsWithGi
     /// </remarks>
     public int PrefixCount(string[] words, string pref)
     {
-        return words.Count(word => word.StartsWith(pref));
+        var count = 0;
+
+        for (var i = 0; i < words.Length; i++)
+        {
+            var word = words[i];
+
+            if (word.StartsWith(pref))
+            {
+                count++;
+            }
+        }
+
+        return count;
     }
 }

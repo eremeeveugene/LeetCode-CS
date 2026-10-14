@@ -23,8 +23,10 @@ public sealed class MinimumNumberOfSwapsToMakeTheStringBalancedIterative : IMini
     {
         var count = 0;
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             if (c == '[')
             {
                 count++;

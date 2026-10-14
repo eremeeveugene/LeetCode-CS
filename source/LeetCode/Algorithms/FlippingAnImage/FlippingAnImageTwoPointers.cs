@@ -21,8 +21,9 @@ public sealed class FlippingAnImageTwoPointers : IFlippingAnImage
     /// </remarks>
     public int[][] FlipAndInvertImage(int[][] image)
     {
-        foreach (var row in image)
+        for (var i = 0; i < image.Length; i++)
         {
+            var row = image[i];
             var left = 0;
             var right = row.Length - 1;
 

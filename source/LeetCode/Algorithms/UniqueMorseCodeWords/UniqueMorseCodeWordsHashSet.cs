@@ -55,13 +55,17 @@ public sealed class UniqueMorseCodeWordsHashSet : IUniqueMorseCodeWords
     {
         var morseRepresentationsHashSet = new HashSet<string>();
 
-        foreach (var word in words)
+        for (var i = 0; i < words.Length; i++)
         {
+            var word = words[i];
+
             var morseCodeWordStringBuilder = new StringBuilder();
 
-            foreach (var morseCode in word.Select(@char => _morseCodeDictionary[@char]))
+            for (var j = 0; j < word.Length; j++)
             {
-                morseCodeWordStringBuilder.Append(morseCode);
+                var letter = word[j];
+
+                morseCodeWordStringBuilder.Append(_morseCodeDictionary[letter]);
             }
 
             morseRepresentationsHashSet.Add(morseCodeWordStringBuilder.ToString());

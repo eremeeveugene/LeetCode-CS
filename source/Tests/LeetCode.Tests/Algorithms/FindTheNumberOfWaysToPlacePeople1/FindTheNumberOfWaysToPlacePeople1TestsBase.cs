@@ -42,5 +42,33 @@ public abstract class FindTheNumberOfWaysToPlacePeople1TestsBase<T> where T : IF
         yield return [new[] { new[] { 6, 2 }, new[] { 4, 4 }, new[] { 2, 6 }, new[] { 4, 8 }, new[] { 1, 4 } }, 4];
 
         yield return [new[] { new[] { 6, 2 }, new[] { 4, 4 }, new[] { 2, 6 }, new[] { 4, 8 }, new[] { 1, 4 }, new[] { 2, 2 } }, 7];
+
+        yield return [new[] { new[] { 4, 6 }, new[] { 3, 6 } }, 1];
+
+        yield return [new[] { new[] { 3, 4 }, new[] { 6, 4 } }, 1];
+
+        yield return [new[] { new[] { 5, 4 }, new[] { 4, 3 }, new[] { 1, 6 } }, 2];
+
+        yield return [new[] { new[] { 3, 2 }, new[] { 1, 0 }, new[] { 4, 6 } }, 0];
+
+        yield return [new[] { new[] { 5, 1 }, new[] { 4, 3 }, new[] { 3, 5 }, new[] { 5, 4 } }, 4];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 6, 3 }, new[] { 1, 1 }, new[] { 4, 0 } }, 2];
+
+        yield return [new[] { new[] { 5, 0 }, new[] { 3, 0 }, new[] { 5, 2 }, new[] { 3, 5 }, new[] { 4, 1 } }, 6];
+
+        yield return [new[] { new[] { 1, 4 }, new[] { 2, 0 }, new[] { 5, 2 }, new[] { 2, 6 }, new[] { 0, 4 } }, 5];
+
+        yield return [new[] { new[] { 0, 3 }, new[] { 5, 0 }, new[] { 0, 6 }, new[] { 1, 1 }, new[] { 3, 5 }, new[] { 3, 0 } }, 6];
+
+        yield return [new[] { new[] { 6, 5 }, new[] { 3, 6 }, new[] { 2, 0 }, new[] { 0, 2 }, new[] { 0, 1 }, new[] { 2, 2 } }, 5];
+
+        yield return [new[] { new[] { 4, 1 }, new[] { 6, 1 }, new[] { 6, 3 }, new[] { 3, 4 }, new[] { 1, 5 }, new[] { 3, 5 }, new[] { 3, 0 } }, 7];
+
+        yield return [new[] { new[] { 0, 0 }, new[] { 1, 3 }, new[] { 6, 4 }, new[] { 0, 1 }, new[] { 1, 1 }, new[] { 5, 4 }, new[] { 3, 2 }, new[] { 0, 6 } }, 8];
+
+        yield return [new[] { new[] { 1, 4 }, new[] { 0, 4 }, new[] { 3, 6 }, new[] { 6, 3 }, new[] { 4, 1 }, new[] { 4, 3 }, new[] { 2, 2 }, new[] { 5, 1 } }, 8];
+
+        yield return [new[] { new[] { 0, 4 }, new[] { 4, 0 }, new[] { 5, 4 }, new[] { 2, 1 }, new[] { 3, 3 }, new[] { 3, 0 }, new[] { 1, 5 }, new[] { 0, 0 }, new[] { 5, 1 } }, 14];
     }
 }

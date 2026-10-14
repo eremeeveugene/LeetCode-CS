@@ -21,7 +21,14 @@ public sealed class FindMissingObservationsMath : IFindMissingObservations
     /// </remarks>
     public int[] MissingRolls(int[] rolls, int mean, int n)
     {
-        var missingSum = (mean * (rolls.Length + n)) - rolls.Sum();
+        var rollsSum = 0;
+
+        for (var i = 0; i < rolls.Length; i++)
+        {
+            rollsSum += rolls[i];
+        }
+
+        var missingSum = (mean * (rolls.Length + n)) - rollsSum;
 
         if (missingSum < n || missingSum > n * 6)
         {

@@ -43,8 +43,14 @@ public sealed class ClosestEqualElementQueriesDictionaryPreprocessing : ClosestE
 
         Span<int> minDistances = stackalloc int[n];
 
-        foreach (var indexes in numToIndexesDictionary.Values)
+        var indexesArray = new List<int>[numToIndexesDictionary.Count];
+
+        numToIndexesDictionary.Values.CopyTo(indexesArray, 0);
+
+        for (var j = 0; j < indexesArray.Length; j++)
         {
+            var indexes = indexesArray[j];
+
             if (indexes.Count == 1)
             {
                 var firstIndex = indexes[0];

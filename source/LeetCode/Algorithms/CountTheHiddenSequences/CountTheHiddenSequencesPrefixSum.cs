@@ -26,8 +26,10 @@ public sealed class CountTheHiddenSequencesPrefixSum : ICountTheHiddenSequences
         var prefixSum = 0;
         var bound = upper - lower;
 
-        foreach (var difference in differences)
+        for (var i = 0; i < differences.Length; i++)
         {
+            var difference = differences[i];
+
             prefixSum += difference;
 
             minPrefix = Math.Min(minPrefix, prefixSum);

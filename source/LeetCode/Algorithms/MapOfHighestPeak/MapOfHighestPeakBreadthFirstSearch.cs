@@ -49,8 +49,10 @@ public sealed class MapOfHighestPeakBreadthFirstSearch : IMapOfHighestPeak
         {
             var (row, col) = queue.Dequeue();
 
-            foreach (var direction in Directions)
+            for (var i = 0; i < Directions.Length; i++)
             {
+                var direction = Directions[i];
+
                 var nextRow = row + direction.Row;
                 var nextCol = col + direction.Col;
 

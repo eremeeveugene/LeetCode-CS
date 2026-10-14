@@ -23,16 +23,18 @@ public sealed class FindLuckyIntegerInAnArrayFrequencyArray : IFindLuckyIntegerI
     {
         var frequencyArray = new int[500];
 
-        foreach (var number in arr)
+        for (var i = 0; i < arr.Length; i++)
         {
+            var number = arr[i];
+
             frequencyArray[number - 1]++;
         }
 
-        for (var i = frequencyArray.Length - 1; i >= 0; i--)
+        for (var j = frequencyArray.Length - 1; j >= 0; j--)
         {
-            if (i + 1 == frequencyArray[i])
+            if (j + 1 == frequencyArray[j])
             {
-                return i + 1;
+                return j + 1;
             }
         }
 

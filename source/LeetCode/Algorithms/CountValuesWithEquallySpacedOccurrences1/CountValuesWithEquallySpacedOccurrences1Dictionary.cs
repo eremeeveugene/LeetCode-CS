@@ -43,8 +43,13 @@ public sealed class CountValuesWithEquallySpacedOccurrences1Dictionary : ICountV
 
         var result = 0;
 
-        foreach (var occurrenceIndices in numberToOccurrenceIndices.Values)
+        var occurrenceIndicesLists = new List<int>[numberToOccurrenceIndices.Count];
+        numberToOccurrenceIndices.Values.CopyTo(occurrenceIndicesLists, 0);
+
+        for (var i = 0; i < occurrenceIndicesLists.Length; i++)
         {
+            var occurrenceIndices = occurrenceIndicesLists[i];
+
             if (occurrenceIndices.Count != 3)
             {
                 continue;

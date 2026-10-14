@@ -35,13 +35,13 @@ public sealed class RangeSumOfSortedSubarraySumsBruteForce : IRangeSumOfSortedSu
             }
         }
 
-        var sortedSums = sumsList.Order().ToArray();
+        sumsList.Sort();
 
         var rangeSum = 0;
 
         for (var i = left - 1; i < right; i++)
         {
-            rangeSum += sortedSums[i];
+            rangeSum += sumsList[i];
             rangeSum %= 1000000007;
         }
 

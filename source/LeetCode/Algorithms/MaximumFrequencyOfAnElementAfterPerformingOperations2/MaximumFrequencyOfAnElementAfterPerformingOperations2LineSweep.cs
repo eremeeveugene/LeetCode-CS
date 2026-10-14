@@ -45,7 +45,9 @@ public sealed class MaximumFrequencyOfAnElementAfterPerformingOperations2LineSwe
             valueToReachabilityDifferenceDictionary.TryAdd(num, 0);
         }
 
-        var targetValues = valueToReachabilityDifferenceDictionary.Keys.ToArray();
+        var targetValues = new int[valueToReachabilityDifferenceDictionary.Count];
+
+        valueToReachabilityDifferenceDictionary.Keys.CopyTo(targetValues, 0);
 
         Array.Sort(targetValues);
 

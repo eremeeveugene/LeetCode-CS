@@ -24,9 +24,30 @@ public sealed class FindTheDifferenceOfTwoArraysHashSet : IFindTheDifferenceOfTw
         var set1 = new HashSet<int>(nums1);
         var set2 = new HashSet<int>(nums2);
 
-        var result1 = set1.Where(num => !set2.Contains(num)).ToList();
-        var result2 = set2.Where(num => !set1.Contains(num)).ToList();
+        var result1 = GetMissingElements(set1, set2);
+        var result2 = GetMissingElements(set2, set1);
 
         return new List<IList<int>> { result1, result2 };
+    }
+
+    private static List<int> GetMissingElements(HashSet<int> source, HashSet<int> other)
+    {
+        var elements = new int[source.Count];
+
+        source.CopyTo(elements);
+
+        var result = new List<int>();
+
+        for (var i = 0; i < elements.Length; i++)
+        {
+            var element = elements[i];
+
+            if (!other.Contains(element))
+            {
+                result.Add(element);
+            }
+        }
+
+        return result;
     }
 }

@@ -23,12 +23,26 @@ public sealed class MaximumDifferenceByRemappingDigitGreedy : IMaximumDifference
     {
         var digits = num.ToString();
 
-        var targetMax = digits.FirstOrDefault(digit => digit != '9');
+        var targetMax = '\0';
+
+        for (var i = 0; i < digits.Length; i++)
+        {
+            if (digits[i] == '9')
+            {
+                continue;
+            }
+
+            targetMax = digits[i];
+
+            break;
+        }
 
         var max = 0;
 
-        foreach (var digit in digits)
+        for (var i = 0; i < digits.Length; i++)
         {
+            var digit = digits[i];
+
             max *= 10;
 
             if (digit == targetMax)
@@ -45,8 +59,10 @@ public sealed class MaximumDifferenceByRemappingDigitGreedy : IMaximumDifference
 
         var min = 0;
 
-        foreach (var digit in digits)
+        for (var i = 0; i < digits.Length; i++)
         {
+            var digit = digits[i];
+
             min *= 10;
 
             if (digit == targetMin)

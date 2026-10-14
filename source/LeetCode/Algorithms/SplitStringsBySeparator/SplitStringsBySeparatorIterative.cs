@@ -23,8 +23,10 @@ public sealed class SplitStringsBySeparatorIterative : ISplitStringsBySeparator
     {
         var result = new List<string>();
 
-        foreach (var word in words)
+        for (var w = 0; w < words.Count; w++)
         {
+            var word = words[w];
+
             var span = word.AsSpan();
 
             var wordStart = 0;

@@ -21,7 +21,20 @@ public sealed class LuckyNumbersInMatrixBruteForce : ILuckyNumbersInMatrix
     /// </remarks>
     public IList<int> LuckyNumbers(int[][] matrix)
     {
-        var minRowItems = matrix.Select(row => row.Min());
+        var minRowItems = new int[matrix.Length];
+
+        for (var i = 0; i < matrix.Length; i++)
+        {
+            var row = matrix[i];
+            var minRowItem = row[0];
+
+            for (var j = 1; j < row.Length; j++)
+            {
+                minRowItem = Math.Min(minRowItem, row[j]);
+            }
+
+            minRowItems[i] = minRowItem;
+        }
 
         var transposedMatrix = new int[matrix[0].Length][];
 
@@ -38,9 +51,33 @@ public sealed class LuckyNumbersInMatrixBruteForce : ILuckyNumbersInMatrix
             }
         }
 
-        var maxColumnItems = transposedMatrix.Select(column => column.Max());
-        var maxColumnItemsHashSet = new HashSet<int>(maxColumnItems);
+        var maxColumnItemsHashSet = new HashSet<int>();
 
-        return minRowItems.Where(maxColumnItemsHashSet.Contains).ToArray();
+        for (var i = 0; i < transposedMatrix.Length; i++)
+        {
+            var column = transposedMatrix[i];
+            var maxColumnItem = column[0];
+
+            for (var j = 1; j < column.Length; j++)
+            {
+                maxColumnItem = Math.Max(maxColumnItem, column[j]);
+            }
+
+            maxColumnItemsHashSet.Add(maxColumnItem);
+        }
+
+        var luckyNumbers = new List<int>();
+
+        for (var i = 0; i < minRowItems.Length; i++)
+        {
+            var minRowItem = minRowItems[i];
+
+            if (maxColumnItemsHashSet.Contains(minRowItem))
+            {
+                luckyNumbers.Add(minRowItem);
+            }
+        }
+
+        return luckyNumbers;
     }
 }

@@ -24,8 +24,10 @@ public sealed class MaximumAreaOfLongestDiagonalRectangleOnePass : IMaximumAreaO
         var longestDiagonal = 0;
         var maximumArea = 0;
 
-        foreach (var dimension in dimensions)
+        for (var i = 0; i < dimensions.Length; i++)
         {
+            var dimension = dimensions[i];
+
             var length = dimension[0];
             var width = dimension[1];
 

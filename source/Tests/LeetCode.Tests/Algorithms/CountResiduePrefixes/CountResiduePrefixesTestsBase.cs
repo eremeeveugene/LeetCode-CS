@@ -19,6 +19,23 @@ public abstract class CountResiduePrefixesTestsBase<T> where T : ICountResiduePr
     [DataRow("abc", 2)]
     [DataRow("dd", 1)]
     [DataRow("bob", 2)]
+    [DataRow("a", 1)]
+    [DataRow("aa", 1)]
+    [DataRow("ab", 2)]
+    [DataRow("abcd", 2)]
+    [DataRow("aaa", 1)]
+    [DataRow("aab", 1)]
+    [DataRow("abab", 2)]
+    [DataRow("abcabc", 2)]
+    [DataRow("zzzzzz", 2)]
+    [DataRow("abacaba", 2)]
+    [DataRow("abcdefghij", 2)]
+    [DataRow("aabbcc", 1)]
+    [DataRow("xyzxyzxyz", 2)]
+    [DataRow("qqwwee", 1)]
+    [DataRow("mississippi", 2)]
+    [DataRow("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 34)]
+    [DataRow("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", 2)]
     public void ResiduePrefixes_WithInputString_ReturnsResiduePrefixesCount(string s, int expectedResult)
     {
         // Arrange

@@ -39,8 +39,10 @@ public sealed class ValidAnagramDictionary : IValidAnagram
             count++;
         }
 
-        foreach (var c in t)
+        for (var i = 0; i < t.Length; i++)
         {
+            var c = t[i];
+
             if (!dictionary.TryGetValue(c, out var value))
             {
                 return false;

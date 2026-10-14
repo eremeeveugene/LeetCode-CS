@@ -19,6 +19,24 @@ public abstract class RangeSumOfSortedSubarraySumsTestsBase<T> where T : IRangeS
     [DataRow(new[] { 1, 2, 3, 4 }, 4, 1, 5, 13)]
     [DataRow(new[] { 1, 2, 3, 4 }, 4, 3, 4, 6)]
     [DataRow(new[] { 1, 2, 3, 4 }, 4, 1, 10, 50)]
+    [DataRow(new[] { 1 }, 1, 1, 1, 1)]
+    [DataRow(new[] { 5 }, 1, 1, 1, 5)]
+    [DataRow(new[] { 100 }, 1, 1, 1, 100)]
+    [DataRow(new[] { 1, 1 }, 2, 1, 3, 4)]
+    [DataRow(new[] { 1, 1 }, 2, 2, 2, 1)]
+    [DataRow(new[] { 2, 1 }, 2, 1, 3, 6)]
+    [DataRow(new[] { 3, 1, 2 }, 3, 1, 6, 19)]
+    [DataRow(new[] { 3, 1, 2 }, 3, 2, 4, 8)]
+    [DataRow(new[] { 3, 1, 2 }, 3, 6, 6, 6)]
+    [DataRow(new[] { 100, 100, 100, 100, 100 }, 5, 1, 15, 3500)]
+    [DataRow(new[] { 100, 1, 100, 1, 100 }, 5, 3, 9, 704)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6 }, 6, 1, 21, 196)]
+    [DataRow(new[] { 6, 5, 4, 3, 2, 1 }, 6, 10, 15, 58)]
+    [DataRow(new[] { 7, 7, 7 }, 3, 2, 5, 42)]
+    [DataRow(new[] { 10, 20, 30, 40 }, 4, 5, 5, 40)]
+    [DataRow(new[] { 1, 100, 1, 100 }, 4, 1, 4, 202)]
+    [DataRow(new[] { 4, 3, 2, 1 }, 4, 1, 10, 50)]
+    [DynamicData(nameof(GetLargeTestData))]
     public void RangeSum_WithSubarraySumRange_ReturnsSumOfSortedSubarraySumsBetweenIndices(int[] nums, int n, int left, int right, int expectedResult)
     {
         // Arrange
@@ -29,5 +47,19 @@ public abstract class RangeSumOfSortedSubarraySumsTestsBase<T> where T : IRangeS
 
         // Assert
         Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    private static IEnumerable<object[]> GetLargeTestData()
+    {
+        var nums = new int[1000];
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            nums[i] = 100;
+        }
+
+        yield return [nums, 1000, 1, 500500, 716699888];
+
+        yield return [nums, 1000, 500491, 500500, 998000];
     }
 }

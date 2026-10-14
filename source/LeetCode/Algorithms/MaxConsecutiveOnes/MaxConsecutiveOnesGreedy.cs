@@ -25,8 +25,10 @@ public sealed class MaxConsecutiveOnesGreedy : IMaxConsecutiveOnes
 
         var length = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (num == 1)
             {
                 length++;

@@ -30,26 +30,24 @@ public sealed class ReverseString2WithStringBuilder : IReverseString2
 
         while (sIndex < s.Length)
         {
-            IEnumerable<char> charArray;
+            var blockEnd = Math.Min(sIndex + k, s.Length);
 
             if (reverse)
             {
-                charArray = s.Skip(sIndex).Take(k).Reverse();
-
-                reverse = false;
+                for (var i = blockEnd - 1; i >= sIndex; i--)
+                {
+                    reverseStringBuilder.Append(s[i]);
+                }
             }
             else
             {
-                charArray = s.Skip(sIndex).Take(k);
-
-                reverse = true;
+                for (var i = sIndex; i < blockEnd; i++)
+                {
+                    reverseStringBuilder.Append(s[i]);
+                }
             }
 
-            foreach (var c in charArray)
-            {
-                reverseStringBuilder.Append(c);
-            }
-
+            reverse = !reverse;
             sIndex += k;
         }
 

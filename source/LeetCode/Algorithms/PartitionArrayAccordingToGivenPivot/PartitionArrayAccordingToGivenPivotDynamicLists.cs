@@ -25,8 +25,10 @@ public sealed class PartitionArrayAccordingToGivenPivotDynamicLists : IPartition
         var equalToPivotList = new List<int>();
         var greaterThanPivotList = new List<int>();
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (num < pivot)
             {
                 lessThanPivotList.Add(num);

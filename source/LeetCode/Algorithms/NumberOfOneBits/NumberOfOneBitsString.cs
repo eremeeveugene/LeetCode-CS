@@ -21,6 +21,20 @@ public sealed class NumberOfOneBitsString : INumberOfOneBits
     /// </remarks>
     public int HammingWeight(int n)
     {
-        return Convert.ToString(n, 2).Count(c => c == '1');
+        var binaryString = Convert.ToString(n, 2);
+
+        var count = 0;
+
+        for (var i = 0; i < binaryString.Length; i++)
+        {
+            var bit = binaryString[i];
+
+            if (bit == '1')
+            {
+                count++;
+            }
+        }
+
+        return count;
     }
 }

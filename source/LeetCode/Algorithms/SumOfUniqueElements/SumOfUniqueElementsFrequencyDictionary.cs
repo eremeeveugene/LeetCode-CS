@@ -33,6 +33,22 @@ public sealed class SumOfUniqueElementsFrequencyDictionary : ISumOfUniqueElement
             }
         }
 
-        return frequencyDictionary.Where(frequency => frequency.Value == 1).Sum(numsKeyValuePair => numsKeyValuePair.Key);
+        var uniqueNums = new int[frequencyDictionary.Count];
+
+        frequencyDictionary.Keys.CopyTo(uniqueNums, 0);
+
+        var sum = 0;
+
+        for (var i = 0; i < uniqueNums.Length; i++)
+        {
+            var num = uniqueNums[i];
+
+            if (frequencyDictionary[num] == 1)
+            {
+                sum += num;
+            }
+        }
+
+        return sum;
     }
 }

@@ -73,10 +73,25 @@ public sealed class MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirst
 
     private static int GetSwapCount(int[] values)
     {
-        var indexDictionary = values.Select((value, index) => new { Value = value, Index = index })
-            .OrderBy(x => x.Value)
-            .Select((x, sortedIndex) => new { x.Index, SortedIndex = sortedIndex })
-            .ToDictionary(x => x.Index, x => x.SortedIndex);
+        var sortedValues = new int[values.Length];
+        var originalIndices = new int[values.Length];
+
+        for (var i = 0; i < values.Length; i++)
+        {
+            sortedValues[i] = values[i];
+            originalIndices[i] = i;
+        }
+
+        Array.Sort(sortedValues, originalIndices);
+
+        var sortedIndices = new int[values.Length];
+
+        for (var i = 0; i < originalIndices.Length; i++)
+        {
+            var originalIndex = originalIndices[i];
+
+            sortedIndices[originalIndex] = i;
+        }
 
         var visited = new bool[values.Length];
 
@@ -84,7 +99,7 @@ public sealed class MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirst
 
         for (var i = 0; i < values.Length; i++)
         {
-            if (visited[i] || indexDictionary[i] == i)
+            if (visited[i] || sortedIndices[i] == i)
             {
                 continue;
             }
@@ -95,7 +110,7 @@ public sealed class MinimumNumberOfOperationsToSortBinaryTreeByLevelBreadthFirst
             while (!visited[current])
             {
                 visited[current] = true;
-                current = indexDictionary[current];
+                current = sortedIndices[current];
                 cycleLength++;
             }
 

@@ -26,8 +26,10 @@ public sealed class MaximumAbsoluteSumOfAnySubarrayKadaneAlgorithm : IMaximumAbs
         var currentMax = 0;
         var currentMin = 0;
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             currentMax = Math.Max(0, currentMax + num);
             currentMin = Math.Min(0, currentMin + num);
             maxSum = Math.Max(maxSum, currentMax);

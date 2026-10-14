@@ -21,7 +21,15 @@ public sealed class WidestVerticalAreaBetweenTwoPointsContainingNoPointsDescendi
     /// </remarks>
     public int MaxWidthOfVerticalArea(int[][] points)
     {
-        var xValues = points.Select(p => p[0]).OrderDescending().ToArray();
+        var xValues = new int[points.Length];
+
+        for (var i = 0; i < points.Length; i++)
+        {
+            xValues[i] = points[i][0];
+        }
+
+        Array.Sort(xValues);
+        Array.Reverse(xValues);
 
         var maxWidth = 0;
 

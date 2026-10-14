@@ -19,6 +19,23 @@ public abstract class ContainsDuplicateTestsBase<T> where T : IContainsDuplicate
     [DataRow(new[] { 1, 2, 3, 1 }, true)]
     [DataRow(new[] { 1, 2, 3, 4 }, false)]
     [DataRow(new[] { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 }, true)]
+    [DataRow(new[] { 1 }, false)]
+    [DataRow(new[] { 1, 1 }, true)]
+    [DataRow(new[] { 1, 2 }, false)]
+    [DataRow(new[] { 2, 2, 2 }, true)]
+    [DataRow(new[] { 1, 2, 3, 4, 5 }, false)]
+    [DataRow(new[] { 5, 4, 3, 2, 1, 5 }, true)]
+    [DataRow(new[] { 0, 0 }, true)]
+    [DataRow(new[] { -1, -2, -3, -1 }, true)]
+    [DataRow(new[] { 1000000000, -1000000000 }, false)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, false)]
+    [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1 }, true)]
+    [DataRow(new[] { 0 }, false)]
+    [DataRow(new[] { -1, 0, 1, 0, -1 }, true)]
+    [DataRow(new[] { 9, 9, 9, 9, 9 }, true)]
+    [DataRow(new[] { 10, 20, 30, 40, 50, 60 }, false)]
+    [DataRow(new[] { 3, 1, 2, 3 }, true)]
+    [DataRow(new[] { 4, 3, 2, 1, 0, -1, -2 }, false)]
     public void ContainsDuplicate_GivenArray_ReturnsTrueIfDuplicatesExist(int[] nums, bool expectedResult)
     {
         // Arrange

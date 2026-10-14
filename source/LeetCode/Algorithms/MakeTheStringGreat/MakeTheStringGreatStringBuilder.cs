@@ -25,8 +25,10 @@ public sealed class MakeTheStringGreatStringBuilder : IMakeTheStringGreat
     {
         var stringBuilder = new StringBuilder();
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             if (stringBuilder.Length > 0 && char.ToLower(stringBuilder[^1]) == char.ToLower(c) && stringBuilder[^1] != c)
             {
                 stringBuilder.Remove(stringBuilder.Length - 1, 1);

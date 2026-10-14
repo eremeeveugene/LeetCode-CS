@@ -25,8 +25,10 @@ public sealed class ToLowerCaseStringBuilder : IToLowerCase
     {
         var resultStringBuilder = new StringBuilder();
 
-        foreach (var c in s)
+        for (var i = 0; i < s.Length; i++)
         {
+            var c = s[i];
+
             resultStringBuilder.Append(char.ToLower(c));
         }
 

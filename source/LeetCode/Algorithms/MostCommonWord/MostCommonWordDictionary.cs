@@ -31,8 +31,10 @@ public sealed class MostCommonWordDictionary : IMostCommonWord
 
         var currentWordStringBuilder = new StringBuilder();
 
-        foreach (var character in paragraph)
+        for (var i = 0; i < paragraph.Length; i++)
         {
+            var character = paragraph[i];
+
             if (char.IsLetter(character))
             {
                 currentWordStringBuilder.Append(char.ToLowerInvariant(character));

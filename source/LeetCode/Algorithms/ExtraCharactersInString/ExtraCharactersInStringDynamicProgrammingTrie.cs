@@ -53,7 +53,7 @@ public sealed class ExtraCharactersInStringDynamicProgrammingTrie : IExtraCharac
 
     private sealed class Trie
     {
-        public Trie(IEnumerable<string> words)
+        public Trie(string[] words)
         {
             AddRange(words);
         }
@@ -64,8 +64,10 @@ public sealed class ExtraCharactersInStringDynamicProgrammingTrie : IExtraCharac
         {
             var node = Root;
 
-            foreach (var c in word)
+            for (var i = 0; i < word.Length; i++)
             {
+                var c = word[i];
+
                 if (!node.Children.TryGetValue(c, out var value))
                 {
                     value = new TrieNode();
@@ -79,10 +81,12 @@ public sealed class ExtraCharactersInStringDynamicProgrammingTrie : IExtraCharac
             node.Word = word;
         }
 
-        private void AddRange(IEnumerable<string> words)
+        private void AddRange(string[] words)
         {
-            foreach (var word in words)
+            for (var i = 0; i < words.Length; i++)
             {
+                var word = words[i];
+
                 Add(word);
             }
         }

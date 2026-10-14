@@ -19,6 +19,23 @@ public abstract class CapitalizeTheTitleTestsBase<T> where T : ICapitalizeTheTit
     [DataRow("capiTalIze tHe titLe", "Capitalize The Title")]
     [DataRow("First leTTeR of EACH Word", "First Letter of Each Word")]
     [DataRow("i lOve leetcode", "i Love Leetcode")]
+    [DataRow("a", "a")]
+    [DataRow("ab", "ab")]
+    [DataRow("AB", "ab")]
+    [DataRow("abc", "Abc")]
+    [DataRow("ABC", "Abc")]
+    [DataRow("aBC dEF", "Abc Def")]
+    [DataRow("a b c", "a b c")]
+    [DataRow("ab cd ef", "ab cd ef")]
+    [DataRow("hello world", "Hello World")]
+    [DataRow("HELLO", "Hello")]
+    [DataRow("a bcd", "a Bcd")]
+    [DataRow("abc de", "Abc de")]
+    [DataRow("The Quick Brown Fox", "The Quick Brown Fox")]
+    [DataRow("of the people", "of The People")]
+    [DataRow("I AM A GOOD BOY", "i am a Good Boy")]
+    [DataRow("xYz", "Xyz")]
+    [DataRow("zz zzz zzzz", "zz Zzz Zzzz")]
     public void CapitalizeTitle_WithMixedCaseTitle_ReturnsProperlyFormattedTitle(string title, string expectedResult)
     {
         // Arrange

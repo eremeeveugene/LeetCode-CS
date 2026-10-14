@@ -23,8 +23,10 @@ public sealed class MaximumAveragePassRatioPriorityQueue : IMaximumAveragePassRa
     {
         var ratiosPriorityQueue = new PriorityQueue<(int Pass, int Total), double>();
 
-        foreach (var @class in classes)
+        for (var i = 0; i < classes.Length; i++)
         {
+            var @class = classes[i];
+
             var pass = @class[0];
             var total = @class[1];
 

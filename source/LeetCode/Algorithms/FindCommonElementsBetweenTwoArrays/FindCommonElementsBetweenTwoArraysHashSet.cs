@@ -24,9 +24,26 @@ public sealed class FindCommonElementsBetweenTwoArraysHashSet : IFindCommonEleme
         var nums1HashSet = new HashSet<int>(nums1);
         var nums2HashSet = new HashSet<int>(nums2);
 
-        var answer1 = nums1.Count(nums2HashSet.Contains);
-        var answer2 = nums2.Count(nums1HashSet.Contains);
+        var answer1 = CountCommonElements(nums1, nums2HashSet);
+        var answer2 = CountCommonElements(nums2, nums1HashSet);
 
         return [answer1, answer2];
+    }
+
+    private static int CountCommonElements(int[] source, HashSet<int> targetHashSet)
+    {
+        var count = 0;
+
+        for (var i = 0; i < source.Length; i++)
+        {
+            var num = source[i];
+
+            if (targetHashSet.Contains(num))
+            {
+                count++;
+            }
+        }
+
+        return count;
     }
 }

@@ -32,8 +32,10 @@ public sealed class DistributeCandiesLookupSpan : IDistributeCandies
 
         var uniqueCount = 0;
 
-        foreach (var candyType in candyTypes)
+        for (var i = 0; i < candyTypes.Length; i++)
         {
+            var candyType = candyTypes[i];
+
             var index = GetIndex(candyType);
 
             if (candyTypesLookup[index])

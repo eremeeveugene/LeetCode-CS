@@ -30,17 +30,36 @@ public sealed class MinimumHeightTreesBreadthFirstSearch : IMinimumHeightTrees
 
         var maxNodeDepths = GetMaxNodeDepth(nodesDictionary);
 
-        var minDepth = maxNodeDepths.Select(v => v.maxDepth).Min();
+        var minDepth = int.MaxValue;
 
-        return maxNodeDepths.Where(v => v.maxDepth.Equals(minDepth)).Select(v => v.node).ToList();
+        for (var i = 0; i < maxNodeDepths.Count; i++)
+        {
+            minDepth = Math.Min(minDepth, maxNodeDepths[i].maxDepth);
+        }
+
+        var result = new List<int>();
+
+        for (var i = 0; i < maxNodeDepths.Count; i++)
+        {
+            var (node, maxDepth) = maxNodeDepths[i];
+
+            if (maxDepth == minDepth)
+            {
+                result.Add(node);
+            }
+        }
+
+        return result;
     }
 
-    private static Dictionary<int, List<int>> GetNodesDictionary(IEnumerable<int[]> edges)
+    private static Dictionary<int, List<int>> GetNodesDictionary(int[][] edges)
     {
         var nodesDictionary = new Dictionary<int, List<int>>();
 
-        foreach (var edge in edges)
+        for (var i = 0; i < edges.Length; i++)
         {
+            var edge = edges[i];
+
             var root = edge[0];
             var leaf = edge[1];
 
@@ -70,17 +89,24 @@ public sealed class MinimumHeightTreesBreadthFirstSearch : IMinimumHeightTrees
     {
         var maxNodeDepths = new List<(int node, int maxDepth)>();
 
-        foreach (var node in nodesDictionary)
+        var nodes = new int[nodesDictionary.Count];
+
+        nodesDictionary.Keys.CopyTo(nodes, 0);
+
+        for (var i = 0; i < nodes.Length; i++)
         {
+            var node = nodes[i];
+            var neighbors = nodesDictionary[node];
+
             var maxNodeDepth = 0;
 
             var nodesQueue = new Queue<(int, int)>();
 
-            var visitedNodes = new HashSet<int> { node.Key };
+            var visitedNodes = new HashSet<int> { node };
 
-            foreach (var value in node.Value)
+            for (var j = 0; j < neighbors.Count; j++)
             {
-                nodesQueue.Enqueue((value, 1));
+                nodesQueue.Enqueue((neighbors[j], 1));
             }
 
             while (nodesQueue.Count > 0)
@@ -89,8 +115,12 @@ public sealed class MinimumHeightTreesBreadthFirstSearch : IMinimumHeightTrees
 
                 visitedNodes.Add(currentNode);
 
-                foreach (var edgesDictionaryItemCur in nodesDictionary[currentNode])
+                var currentNeighbors = nodesDictionary[currentNode];
+
+                for (var j = 0; j < currentNeighbors.Count; j++)
                 {
+                    var edgesDictionaryItemCur = currentNeighbors[j];
+
                     if (visitedNodes.Contains(edgesDictionaryItemCur))
                     {
                         maxNodeDepth = Math.Max(maxNodeDepth, currentNodeDepth);
@@ -102,7 +132,7 @@ public sealed class MinimumHeightTreesBreadthFirstSearch : IMinimumHeightTrees
                 }
             }
 
-            maxNodeDepths.Add((node.Key, maxNodeDepth));
+            maxNodeDepths.Add((node, maxNodeDepth));
         }
 
         return maxNodeDepths;

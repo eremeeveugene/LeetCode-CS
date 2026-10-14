@@ -23,7 +23,11 @@ public sealed class RelativeRanksBruteForce : IRelativeRanks
     {
         var result = new string[score.Length];
 
-        var orderedScores = score.OrderByDescending(s => s).ToArray();
+        var orderedScores = new int[score.Length];
+
+        Array.Copy(score, orderedScores, score.Length);
+        Array.Sort(orderedScores);
+        Array.Reverse(orderedScores);
 
         for (var i = 0; i < orderedScores.Length; i++)
         {

@@ -74,8 +74,10 @@ public sealed class RemoveZeroSumConsecutiveNodesFromLinkedListBruteForce : IRem
 
         var current = dummyHead;
 
-        foreach (var value in values)
+        for (var index = 0; index < values.Count; index++)
         {
+            var value = values[index];
+
             current.next = new ListNode(value);
             current = current.next;
         }

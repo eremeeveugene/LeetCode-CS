@@ -35,8 +35,10 @@ public sealed class GenerateTagForVideoCaptionCharArray : IGenerateTagForVideoCa
 
         var length = 1;
 
-        foreach (var @char in caption)
+        for (var i = 0; i < caption.Length; i++)
         {
+            var @char = caption[i];
+
             if (@char == ' ')
             {
                 isWord = false;

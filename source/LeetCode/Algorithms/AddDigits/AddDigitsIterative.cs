@@ -17,13 +17,22 @@ public sealed class AddDigitsIterative : IAddDigits
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(log(n))
-    ///     Space complexity - O(log(n))
+    ///     Space complexity - O(1)
     /// </remarks>
     public int AddDigits(int num)
     {
         while (num > 9)
         {
-            num = num.ToString().Sum(c => (int)char.GetNumericValue(c));
+            var sum = 0;
+
+            while (num > 0)
+            {
+                sum += num % 10;
+
+                num /= 10;
+            }
+
+            num = sum;
         }
 
         return num;

@@ -21,6 +21,25 @@ public sealed class ValidAnagramSorting : IValidAnagram
     /// </remarks>
     public bool IsAnagram(string s, string t)
     {
-        return s.Length == t.Length && s.OrderBy(c => c).SequenceEqual(t.OrderBy(c => c));
+        if (s.Length != t.Length)
+        {
+            return false;
+        }
+
+        var sChars = s.ToCharArray();
+        var tChars = t.ToCharArray();
+
+        Array.Sort(sChars);
+        Array.Sort(tChars);
+
+        for (var i = 0; i < sChars.Length; i++)
+        {
+            if (sChars[i] != tChars[i])
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }

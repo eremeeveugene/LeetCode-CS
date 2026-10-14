@@ -31,6 +31,17 @@ public abstract class DivideArrayInSetsOfKConsecutiveNumbersTestsBase<T> where T
     [DataRow(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 4, false)]
     [DataRow(new[] { 3, 3, 2, 2, 1, 1 }, 3, true)]
     [DataRow(new[] { 1, 2, 3, 5, 6, 7, 9, 10, 11 }, 3, true)]
+    [DataRow(new[] { 1, 2, 3, 4 }, 2, true)]
+    [DataRow(new[] { 1, 2, 3, 4 }, 4, true)]
+    [DataRow(new[] { 1, 3, 5, 7 }, 2, false)]
+    [DataRow(new[] { 1, 2, 2, 3, 3, 4 }, 3, true)]
+    [DataRow(new[] { 1, 2, 2, 3 }, 2, true)]
+    [DataRow(new[] { 99999, 100000 }, 2, true)]
+    [DataRow(new[] { 5, 5, 5, 6, 6, 6 }, 2, true)]
+    [DataRow(new[] { 1, 2, 4, 5 }, 2, true)]
+    [DataRow(new[] { 1, 1, 2, 3 }, 2, false)]
+    [DataRow(new[] { 2, 2, 2 }, 1, true)]
+    [DataRow(new[] { 1, 2, 3, 3, 4, 5 }, 3, true)]
     public void IsPossibleDivide_WithArrayAndK_ReturnsIfPossibleToDivideIntoConsecutiveSets(int[] nums, int k, bool expectedResult)
     {
         // Arrange

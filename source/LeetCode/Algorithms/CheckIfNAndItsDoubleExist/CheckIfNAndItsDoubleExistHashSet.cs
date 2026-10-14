@@ -23,8 +23,10 @@ public sealed class CheckIfNAndItsDoubleExistHashSet : ICheckIfNAndItsDoubleExis
     {
         var hashSet = new HashSet<int>();
 
-        foreach (var item in arr)
+        for (var i = 0; i < arr.Length; i++)
         {
+            var item = arr[i];
+
             if (hashSet.Contains(item * 2) || (item % 2 == 0 && hashSet.Contains(item / 2)))
             {
                 return true;

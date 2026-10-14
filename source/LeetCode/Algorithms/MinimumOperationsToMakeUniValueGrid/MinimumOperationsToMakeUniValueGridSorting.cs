@@ -27,10 +27,14 @@ public sealed class MinimumOperationsToMakeUniValueGridSorting : IMinimumOperati
 
         var items = new List<int>(rows * cols);
 
-        foreach (var row in grid)
+        for (var i = 0; i < grid.Length; i++)
         {
-            foreach (var cell in row)
+            var row = grid[i];
+
+            for (var j = 0; j < row.Length; j++)
             {
+                var cell = row[j];
+
                 if (cell % x != remainder)
                 {
                     return -1;
@@ -44,6 +48,15 @@ public sealed class MinimumOperationsToMakeUniValueGridSorting : IMinimumOperati
 
         var median = items[items.Count / 2];
 
-        return items.Sum(item => Math.Abs(item - median) / x);
+        var operations = 0;
+
+        for (var i = 0; i < items.Count; i++)
+        {
+            var item = items[i];
+
+            operations += Math.Abs(item - median) / x;
+        }
+
+        return operations;
     }
 }

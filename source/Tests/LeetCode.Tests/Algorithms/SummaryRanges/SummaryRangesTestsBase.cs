@@ -34,13 +34,19 @@ public abstract class SummaryRangesTestsBase<T> where T : ISummaryRanges, new()
     [DataRow(new[] { 0, 1, 2, 3, 4, 5 }, new[] { "0->5" })]
     [DataRow(new[] { 10, 11, 12, 14 }, new[] { "10->12", "14" })]
     [DataRow(new[] { 5 }, new[] { "5" })]
+    [DataRow(new[] { 1, 2, 4, 5, 6, 8 }, new[] { "1->2", "4->6", "8" })]
+    [DataRow(new[] { -1, 0, 2147483646, 2147483647 }, new[] { "-1->0", "2147483646->2147483647" })]
     public void SummaryRanges_WithSortedUniqueArray_ReturnsListOfMinimalConsecutiveRanges(int[] nums, string[] expectedResult)
     {
         // Arrange
         var solution = new T();
 
         // Act
-        var actualResult = solution.SummaryRanges(nums).ToArray();
+        var ranges = solution.SummaryRanges(nums);
+
+        var actualResult = new string[ranges.Count];
+
+        ranges.CopyTo(actualResult, 0);
 
         // Assert
         Assert.AreSequenceEqual(expectedResult, actualResult);

@@ -27,17 +27,14 @@ public sealed class SqrtNewtonsMethod : ISqrt
         }
 
         var xOld = x / 2.0;
+        var xNew = (xOld + (x / xOld)) / 2;
 
-        while (true)
+        while (Math.Abs(xNew - xOld) >= 1)
         {
-            var xNew = (xOld + (x / xOld)) / 2;
-
-            if (Math.Abs(xNew - xOld) < 1)
-            {
-                return (int)xNew;
-            }
-
             xOld = xNew;
+            xNew = (xOld + (x / xOld)) / 2;
         }
+
+        return (int)xNew;
     }
 }

@@ -35,6 +35,10 @@ public sealed class RevealCardsInIncreasingOrderQueue : IRevealCardsInIncreasing
             queue.Enqueue(deck[i]);
         }
 
-        return queue.Reverse().ToArray();
+        var result = new int[queue.Count];
+        queue.CopyTo(result, 0);
+        Array.Reverse(result);
+
+        return result;
     }
 }

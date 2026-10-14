@@ -25,8 +25,10 @@ public sealed class MinimumOperationsToMakeArrayValuesEqualToKSeenArray : IMinim
 
         var seenNums = new bool[100];
 
-        foreach (var num in nums)
+        for (var i = 0; i < nums.Length; i++)
         {
+            var num = nums[i];
+
             if (num < k)
             {
                 return -1;
