@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/13/2026 - 2:43:42 PM
-  Coverage date: 10/13/2026 - 2:43:07 PM - 10/13/2026 - 2:43:35 PM
+  Generated on: 10/14/2026 - 9:44:35 AM
+  Coverage date: 10/14/2026 - 9:43:38 AM - 10/14/2026 - 9:44:25 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1429
-  Files: 1429
+  Classes: 1424
+  Files: 1424
   Line coverage: 100%
-  Covered lines: 33411
+  Covered lines: 34928
   Uncovered lines: 0
-  Coverable lines: 33411
-  Total lines: 81863
-  Branch coverage: 100% (11876 of 11876)
-  Covered branches: 11876
-  Total branches: 11876
-  Method coverage: 100% (2230 of 2230)
-  Full method coverage: 100% (2230 of 2230)
-  Covered methods: 2230
-  Fully covered methods: 2230
-  Total methods: 2230
+  Coverable lines: 34928
+  Total lines: 84113
+  Branch coverage: 99.9% (12316 of 12318)
+  Covered branches: 12316
+  Total branches: 12318
+  Method coverage: 100% (2239 of 2239)
+  Full method coverage: 100% (2239 of 2239)
+  Covered methods: 2239
+  Fully covered methods: 2239
+  Total methods: 2239
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -201,7 +201,6 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountDaysWithoutMeetings.CountDaysWithoutMeetingsSorting                                                                           100%
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyArray                                                           100%
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionary                                                      100%
-  LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionaryLinq                                                  100%
   LeetCode.Algorithms.CountElementsWithStrictlySmallerAndGreaterElements.CountElementsWithStrictlySmallerAndGreaterElementsIterative                     100%
   LeetCode.Algorithms.CountEqualAndDivisiblePairsInAnArray.CountEqualAndDivisiblePairsInAnArrayBruteForce                                                100%
   LeetCode.Algorithms.CountGoodNumbers.CountGoodNumbersFastExponentiation                                                                                100%
@@ -606,7 +605,6 @@ LeetCode                                                                        
   LeetCode.Algorithms.IsSubsequence.IsSubsequenceIterative                                                                                               100%
   LeetCode.Algorithms.IsSubsequence.IsSubsequenceTwoPointers                                                                                             100%
   LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesHashSet                                                                                             100%
-  LeetCode.Algorithms.JewelsAndStones.JewelsAndStonesLinq                                                                                                100%
   LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo.KeepMultiplyingFoundValuesByTwoArrayLookup                                                         100%
   LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo.KeepMultiplyingFoundValuesByTwoBitArrayLookup                                                      100%
   LeetCode.Algorithms.KeepMultiplyingFoundValuesByTwo.KeepMultiplyingFoundValuesByTwoHashSet                                                             100%
@@ -777,8 +775,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumNumberOfOperationsToMoveOnesToTheEnd.MaximumNumberOfOperationsToMoveOnesToTheEndGreedyCounting                              100%
   LeetCode.Algorithms.MaximumNumberOfPointsWithCost.MaximumNumberOfPointsWithCostDynamicProgramming                                                      100%
   LeetCode.Algorithms.MaximumNumberOfTasksYouCanAssign.MaximumNumberOfTasksYouCanAssignLinkedList                                                        100%
-  LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinq                                                      100%
-  LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesLinqSplit                                                 100%
+  LeetCode.Algorithms.MaximumNumberOfWordsFoundInSentences.MaximumNumberOfWordsFoundInSentencesIterative                                                 100%
   LeetCode.Algorithms.MaximumNumberOfWordsYouCanType.MaximumNumberOfWordsYouCanTypeHashSet                                                               100%
   LeetCode.Algorithms.MaximumNumberOfWordsYouCanType.MaximumNumberOfWordsYouCanTypeLookup                                                                100%
   LeetCode.Algorithms.MaximumOddBinaryNumber.MaximumOddBinaryNumberStringBuilder                                                                         100%
@@ -1161,7 +1158,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ReverseVowelsOfString.ReverseVowelsOfStringTwoPointers                                                                             100%
   LeetCode.Algorithms.ReverseWordsInString3.ReverseWordsInString3WithCharArray                                                                           100%
   LeetCode.Algorithms.ReverseWordsInString3.ReverseWordsInString3WithStringBuilder                                                                       100%
-  LeetCode.Algorithms.RichestCustomerWealth.RichestCustomerWealthLinq                                                                                    100%
+  LeetCode.Algorithms.RichestCustomerWealth.RichestCustomerWealthIterative                                                                               100%
   LeetCode.Algorithms.RobotBoundedInCircle.RobotBoundedInCircleSimulation                                                                                100%
   LeetCode.Algorithms.RobotReturnToOrigin.RobotReturnToOriginSimulation                                                                                  100%
   LeetCode.Algorithms.RomanToInteger.RomanToIntegerDictionary                                                                                            100%
@@ -1254,7 +1251,6 @@ LeetCode                                                                        
   LeetCode.Algorithms.SortAnArray.SortAnArrayMergeSort                                                                                                   100%
   LeetCode.Algorithms.SortAnArray.SortAnArrayQuickSort                                                                                                   100%
   LeetCode.Algorithms.SortArrayByIncreasingFrequency.SortArrayByIncreasingFrequencyDictionary                                                            100%
-  LeetCode.Algorithms.SortArrayByIncreasingFrequency.SortArrayByIncreasingFrequencyLinq                                                                  100%
   LeetCode.Algorithms.SortColors.SortColorsCountingSort                                                                                                  100%
   LeetCode.Algorithms.SortColors.SortColorsSorting                                                                                                       100%
   LeetCode.Algorithms.SortColors.SortColorsThreePointers                                                                                                 100%
@@ -1263,7 +1259,6 @@ LeetCode                                                                        
   LeetCode.Algorithms.SortTheJumbledNumbers.SortTheJumbledNumbersSortingArray                                                                            100%
   LeetCode.Algorithms.SortTheJumbledNumbers.SortTheJumbledNumbersSortingDictionary                                                                       100%
   LeetCode.Algorithms.SortTheMatrixDiagonally.SortTheMatrixDiagonallyFrequencyArray                                                                      100%
-  LeetCode.Algorithms.SortThePeople.SortThePeopleLinq                                                                                                    100%
   LeetCode.Algorithms.SortThePeople.SortThePeopleSorting                                                                                                 100%
   LeetCode.Algorithms.SortVowelsInString.SortVowelsInStringCountingSort                                                                                  100%
   LeetCode.Algorithms.SpecialArray.SpecialArrayIterative                                                                                                 100%
