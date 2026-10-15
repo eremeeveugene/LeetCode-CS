@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/15/2026 - 7:58:54 AM
-  Coverage date: 10/15/2026 - 7:57:56 AM - 10/15/2026 - 7:58:46 AM
+  Generated on: 10/15/2026 - 8:27:26 AM
+  Coverage date: 10/15/2026 - 8:26:14 AM - 10/15/2026 - 8:27:18 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1426
-  Files: 1426
+  Classes: 1429
+  Files: 1429
   Line coverage: 100%
-  Covered lines: 34987
+  Covered lines: 35048
   Uncovered lines: 0
-  Coverable lines: 34987
-  Total lines: 84252
-  Branch coverage: 99.9% (12340 of 12342)
-  Covered branches: 12340
-  Total branches: 12342
-  Method coverage: 100% (2242 of 2242)
-  Full method coverage: 100% (2242 of 2242)
-  Covered methods: 2242
-  Fully covered methods: 2242
-  Total methods: 2242
+  Coverable lines: 35048
+  Total lines: 84413
+  Branch coverage: 99.9% (12358 of 12360)
+  Covered branches: 12358
+  Total branches: 12360
+  Method coverage: 100% (2245 of 2245)
+  Full method coverage: 100% (2245 of 2245)
+  Covered methods: 2245
+  Fully covered methods: 2245
+  Total methods: 2245
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1293,6 +1293,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.StringToInteger.StringToIntegerIterative                                                                                           100%
   LeetCode.Algorithms.StudentAttendanceRecord1.StudentAttendanceRecord1Simulation                                                                        100%
   LeetCode.Algorithms.SubarrayProductLessThanK.SubarrayProductLessThanKTwoPointers                                                                       100%
+  LeetCode.Algorithms.SubarraysDistinctElementSumOfSquares1.SubarraysDistinctElementSumOfSquares1BruteForce                                              100%
+  LeetCode.Algorithms.SubarraysDistinctElementSumOfSquares1.SubarraysDistinctElementSumOfSquares1HashSet                                                 100%
+  LeetCode.Algorithms.SubarraysDistinctElementSumOfSquares1.SubarraysDistinctElementSumOfSquares1Lookup                                                  100%
   LeetCode.Algorithms.SubarraySumsDivisibleByK.SubarraySumsDivisibleByKArray                                                                             100%
   LeetCode.Algorithms.SubarraySumsDivisibleByK.SubarraySumsDivisibleByKDictionary                                                                        100%
   LeetCode.Algorithms.SubarraysWithKDifferentIntegers.SubarraysWithKDifferentIntegersSlidingWindow                                                       100%
