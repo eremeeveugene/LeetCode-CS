@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/14/2026 - 9:44:35 AM
-  Coverage date: 10/14/2026 - 9:43:38 AM - 10/14/2026 - 9:44:25 AM
+  Generated on: 10/15/2026 - 7:58:54 AM
+  Coverage date: 10/15/2026 - 7:57:56 AM - 10/15/2026 - 7:58:46 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1424
-  Files: 1424
+  Classes: 1426
+  Files: 1426
   Line coverage: 100%
-  Covered lines: 34928
+  Covered lines: 34987
   Uncovered lines: 0
-  Coverable lines: 34928
-  Total lines: 84113
-  Branch coverage: 99.9% (12316 of 12318)
-  Covered branches: 12316
-  Total branches: 12318
-  Method coverage: 100% (2239 of 2239)
-  Full method coverage: 100% (2239 of 2239)
-  Covered methods: 2239
-  Fully covered methods: 2239
-  Total methods: 2239
+  Coverable lines: 34987
+  Total lines: 84252
+  Branch coverage: 99.9% (12340 of 12342)
+  Covered branches: 12340
+  Total branches: 12342
+  Method coverage: 100% (2242 of 2242)
+  Full method coverage: 100% (2242 of 2242)
+  Covered methods: 2242
+  Fully covered methods: 2242
+  Total methods: 2242
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -787,6 +787,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArrayBruteForce                                                100%
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArraySecondMax                                                 100%
   LeetCode.Algorithms.MaximumProductOfTwoElementsInAnArray.MaximumProductOfTwoElementsInAnArraySorting                                                   100%
+  LeetCode.Algorithms.MaximumProductPairWithTargetSum.MaximumProductPairWithTargetSumBruteForce                                                          100%
+  LeetCode.Algorithms.MaximumProductPairWithTargetSum.MaximumProductPairWithTargetSumLookup                                                              100%
   LeetCode.Algorithms.MaximumScoreAfterSplittingString.MaximumScoreAfterSplittingStringIterative                                                         100%
   LeetCode.Algorithms.MaximumSubstringsWithDistinctStart.MaximumSubstringsWithDistinctStartBase                                                          100%
   LeetCode.Algorithms.MaximumSubstringsWithDistinctStart.MaximumSubstringsWithDistinctStartBitArray                                                      100%
