@@ -38,27 +38,43 @@ public sealed class MaximumProductPairWithTargetSumLookup : IMaximumProductPairW
         {
             var num = nums[i];
             var complement = target - num;
-
-            if (complement != num && complement is >= MinValue and <= MaxValue)
-            {
-                var complementIndex = indicesLookup[complement - MinValue];
-                var product = num * complement;
-
-                if (complementIndex != -1 && product > maxProduct)
-                {
-                    maxProduct = product;
-
-                    result[0] = num > complement ? i : complementIndex;
-                    result[1] = num > complement ? complementIndex : i;
-                }
-            }
+            var complementIndex = GetIndex(indicesLookup, complement);
 
             if (indicesLookup[num - MinValue] == -1)
             {
                 indicesLookup[num - MinValue] = i;
             }
+
+            if (complement == num || complementIndex == -1)
+            {
+                continue;
+            }
+
+            var product = num * complement;
+
+            if (product <= maxProduct)
+            {
+                continue;
+            }
+
+            maxProduct = product;
+
+            var isLarger = num > complement;
+
+            result[0] = isLarger ? i : complementIndex;
+            result[1] = isLarger ? complementIndex : i;
         }
 
         return result;
+    }
+
+    private static int GetIndex(ReadOnlySpan<int> indicesLookup, int value)
+    {
+        if (value is < MinValue or > MaxValue)
+        {
+            return -1;
+        }
+
+        return indicesLookup[value - MinValue];
     }
 }
