@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/15/2026 - 8:27:26 AM
-  Coverage date: 10/15/2026 - 8:26:14 AM - 10/15/2026 - 8:27:18 AM
+  Generated on: 10/16/2026 - 7:42:54 AM
+  Coverage date: 10/16/2026 - 7:42:08 AM - 10/16/2026 - 7:42:46 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1429
-  Files: 1429
+  Classes: 1430
+  Files: 1430
   Line coverage: 100%
-  Covered lines: 35048
+  Covered lines: 35099
   Uncovered lines: 0
-  Coverable lines: 35048
-  Total lines: 84413
-  Branch coverage: 99.9% (12358 of 12360)
-  Covered branches: 12358
-  Total branches: 12360
-  Method coverage: 100% (2245 of 2245)
-  Full method coverage: 100% (2245 of 2245)
-  Covered methods: 2245
-  Fully covered methods: 2245
-  Total methods: 2245
+  Coverable lines: 35099
+  Total lines: 84521
+  Branch coverage: 99.9% (12380 of 12382)
+  Covered branches: 12380
+  Total branches: 12382
+  Method coverage: 100% (2247 of 2247)
+  Full method coverage: 100% (2247 of 2247)
+  Covered methods: 2247
+  Fully covered methods: 2247
+  Total methods: 2247
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -688,6 +688,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.LongestSubarrayWithMaximumBitwiseAND.LongestSubarrayWithMaximumBitwiseANDIterative                                                 100%
   LeetCode.Algorithms.LongestSubstringWithoutRepeatingCharacters.LongestSubstringWithoutRepeatingCharactersSlidingWindow                                 100%
   LeetCode.Algorithms.LongestUnequalAdjacentGroupsSubsequence1.LongestUnequalAdjacentGroupsSubsequence1Greedy                                            100%
+  LeetCode.Algorithms.LongestUnequalAdjacentGroupsSubsequence2.LongestUnequalAdjacentGroupsSubsequence2DynamicProgramming                                100%
   LeetCode.Algorithms.LowestCommonAncestorOfDeepestLeaves.LowestCommonAncestorOfDeepestLeavesDepthFirstSearch                                            100%
   LeetCode.Algorithms.LRUCache.LRUCacheLinkedList                                                                                                        100%
   LeetCode.Algorithms.LuckyNumbersInMatrix.LuckyNumbersInMatrixBruteForce                                                                                100%
