@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/16/2026 - 7:42:54 AM
-  Coverage date: 10/16/2026 - 7:42:08 AM - 10/16/2026 - 7:42:46 AM
+  Generated on: 10/16/2026 - 3:23:26 PM
+  Coverage date: 10/16/2026 - 3:22:46 PM - 10/16/2026 - 3:23:20 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1430
-  Files: 1430
+  Classes: 1431
+  Files: 1431
   Line coverage: 100%
-  Covered lines: 35099
+  Covered lines: 35141
   Uncovered lines: 0
-  Coverable lines: 35099
-  Total lines: 84521
-  Branch coverage: 99.9% (12380 of 12382)
-  Covered branches: 12380
-  Total branches: 12382
-  Method coverage: 100% (2247 of 2247)
-  Full method coverage: 100% (2247 of 2247)
-  Covered methods: 2247
-  Fully covered methods: 2247
-  Total methods: 2247
+  Coverable lines: 35141
+  Total lines: 84604
+  Branch coverage: 99.9% (12402 of 12404)
+  Covered branches: 12402
+  Total branches: 12404
+  Method coverage: 100% (2249 of 2249)
+  Full method coverage: 100% (2249 of 2249)
+  Covered methods: 2249
+  Fully covered methods: 2249
+  Total methods: 2249
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1365,6 +1365,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.TransformArrayToAllEqualElements.TransformArrayToAllEqualElementsGreedy                                                            100%
   LeetCode.Algorithms.TransformedArray.TransformedArrayIterative                                                                                         100%
   LeetCode.Algorithms.TrappingRainWater.TrappingRainWaterIterative                                                                                       100%
+  LeetCode.Algorithms.TrappingRainWater2.TrappingRainWater2PriorityQueue                                                                                 100%
   LeetCode.Algorithms.Triangle.TriangleDynamicProgramming                                                                                                100%
   LeetCode.Algorithms.TrimTrailingVowels.TrimTrailingVowelsIterative                                                                                     100%
   LeetCode.Algorithms.TrionicArray1.TrionicArray1Iterative                                                                                               100%
