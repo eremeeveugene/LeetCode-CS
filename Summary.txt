@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/16/2026 - 3:23:26 PM
-  Coverage date: 10/16/2026 - 3:22:46 PM - 10/16/2026 - 3:23:20 PM
+  Generated on: 10/17/2026 - 11:20:49 AM
+  Coverage date: 10/17/2026 - 11:19:49 AM - 10/17/2026 - 11:20:41 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1431
-  Files: 1431
+  Classes: 1432
+  Files: 1432
   Line coverage: 100%
-  Covered lines: 35141
+  Covered lines: 35177
   Uncovered lines: 0
-  Coverable lines: 35141
-  Total lines: 84604
-  Branch coverage: 99.9% (12402 of 12404)
-  Covered branches: 12402
-  Total branches: 12404
-  Method coverage: 100% (2249 of 2249)
-  Full method coverage: 100% (2249 of 2249)
-  Covered methods: 2249
-  Fully covered methods: 2249
-  Total methods: 2249
+  Coverable lines: 35177
+  Total lines: 84699
+  Branch coverage: 99.9% (12410 of 12412)
+  Covered branches: 12410
+  Total branches: 12412
+  Method coverage: 100% (2252 of 2252)
+  Full method coverage: 100% (2252 of 2252)
+  Covered methods: 2252
+  Fully covered methods: 2252
+  Total methods: 2252
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -927,6 +927,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumSumOfFourDigitNumberAfterSplittingDigits.MinimumSumOfFourDigitNumberAfterSplittingDigitsNumbers                             100%
   LeetCode.Algorithms.MinimumSumOfSquaredDifference.MinimumSumOfSquaredDifferenceCounting                                                                100%
   LeetCode.Algorithms.MinimumSwapsToGroupAll1Together2.MinimumSwapsToGroupAll1Together2SlidingWindow                                                     100%
+  LeetCode.Algorithms.MinimumSwapsToSortByDigitSum.MinimumSwapsToSortByDigitSumSorting                                                                   100%
   LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceBase                                                                                    100%
   LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceBucketSort                                                                              100%
   LeetCode.Algorithms.MinimumTimeDifference.MinimumTimeDifferenceSorting                                                                                 100%
