@@ -934,6 +934,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3545. Minimum Deletions for At Most K Distinct Characters](https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/description/)
 - [3546. Equal Sum Grid Partition I](https://leetcode.com/problems/equal-sum-grid-partition-i/description/)
 - [3550. Smallest Index With Digit Sum Equal to Index](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/description/)
+- [3551. Minimum Swaps to Sort by Digit Sum](https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/description/)
 - [3560. Find Minimum Log Transportation Cost](https://leetcode.com/problems/find-minimum-log-transportation-cost/description/)
 - [3576. Transform Array to All Equal Elements](https://leetcode.com/problems/transform-array-to-all-equal-elements/description/)
 - [3582. Generate Tag for Video Caption](https://leetcode.com/problems/generate-tag-for-video-caption/description/)
