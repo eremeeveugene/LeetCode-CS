@@ -25,13 +25,19 @@ public sealed class MinimumDeletionsToMakeArraySharpIterative : IMinimumDeletion
 
         var result = 0;
 
+        var previousNum = nums[0];
+
         for (var i = 1; i < n; i++)
         {
             var num = nums[i];
 
-            if (num == nums[i - 1])
+            if (num == previousNum)
             {
                 result++;
+            }
+            else
+            {
+                previousNum = num;
             }
         }
 
