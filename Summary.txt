@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/21/2026 - 8:40:02 AM
-  Coverage date: 10/21/2026 - 8:39:01 AM - 10/21/2026 - 8:39:49 AM
+  Generated on: 10/22/2026 - 8:31:55 PM
+  Coverage date: 10/22/2026 - 8:30:32 PM - 10/22/2026 - 8:31:38 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1433
-  Files: 1433
+  Classes: 1434
+  Files: 1434
   Line coverage: 100%
-  Covered lines: 35194
+  Covered lines: 35238
   Uncovered lines: 0
-  Coverable lines: 35194
-  Total lines: 84745
-  Branch coverage: 99.9% (12414 of 12416)
-  Covered branches: 12414
-  Total branches: 12416
-  Method coverage: 100% (2253 of 2253)
-  Full method coverage: 100% (2253 of 2253)
-  Covered methods: 2253
-  Fully covered methods: 2253
-  Total methods: 2253
+  Coverable lines: 35238
+  Total lines: 84834
+  Branch coverage: 99.9% (12438 of 12440)
+  Covered branches: 12438
+  Total branches: 12440
+  Method coverage: 100% (2254 of 2254)
+  Full method coverage: 100% (2254 of 2254)
+  Covered methods: 2254
+  Fully covered methods: 2254
+  Total methods: 2254
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -913,6 +913,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumOperationsToMakeUniValueGrid.MinimumOperationsToMakeUniValueGridCountingSort                                                100%
   LeetCode.Algorithms.MinimumOperationsToMakeUniValueGrid.MinimumOperationsToMakeUniValueGridSorting                                                     100%
   LeetCode.Algorithms.MinimumOperationsToMakeUniValueGrid.MinimumOperationsToMakeUniValueGridSortingSpan                                                 100%
+  LeetCode.Algorithms.MinimumOperationsToSortAString.MinimumOperationsToSortAStringIterative                                                             100%
   LeetCode.Algorithms.MinimumPairRemovalToSortArray1.MinimumPairRemovalToSortArray1Simulation                                                            100%
   LeetCode.Algorithms.MinimumPathSum.MinimumPathSumDynamicProgramming                                                                                    100%
   LeetCode.Algorithms.MinimumPositiveSumSubarray.MinimumPositiveSumSubarrayPrefixSum                                                                     100%
