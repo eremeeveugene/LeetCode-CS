@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/22/2026 - 8:31:55 PM
-  Coverage date: 10/22/2026 - 8:30:32 PM - 10/22/2026 - 8:31:38 PM
+  Generated on: 10/23/2026 - 12:09:31 PM
+  Coverage date: 10/23/2026 - 12:08:34 PM - 10/23/2026 - 12:09:23 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1434
-  Files: 1434
+  Classes: 1437
+  Files: 1437
   Line coverage: 100%
-  Covered lines: 35238
+  Covered lines: 35327
   Uncovered lines: 0
-  Coverable lines: 35238
-  Total lines: 84834
-  Branch coverage: 99.9% (12438 of 12440)
-  Covered branches: 12438
-  Total branches: 12440
-  Method coverage: 100% (2254 of 2254)
-  Full method coverage: 100% (2254 of 2254)
-  Covered methods: 2254
-  Fully covered methods: 2254
-  Total methods: 2254
+  Coverable lines: 35327
+  Total lines: 85040
+  Branch coverage: 99.9% (12466 of 12468)
+  Covered branches: 12466
+  Total branches: 12468
+  Method coverage: 100% (2257 of 2257)
+  Full method coverage: 100% (2257 of 2257)
+  Covered methods: 2257
+  Fully covered methods: 2257
+  Total methods: 2257
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1096,6 +1096,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.RankTransformOfAnArray.RankTransformOfAnArrayIndexSorting                                                                          100%
   LeetCode.Algorithms.RansomNote.RansomNoteCounting                                                                                                      100%
   LeetCode.Algorithms.RansomNote.RansomNoteDictionary                                                                                                    100%
+  LeetCode.Algorithms.RearrangeArrayByRemovingDistinctValues.RearrangeArrayByRemovingDistinctValuesBruteForce                                            100%
+  LeetCode.Algorithms.RearrangeArrayByRemovingDistinctValues.RearrangeArrayByRemovingDistinctValuesCounting                                              100%
+  LeetCode.Algorithms.RearrangeArrayByRemovingDistinctValues.RearrangeArrayByRemovingDistinctValuesFrequencyArray                                        100%
   LeetCode.Algorithms.RearrangeCharactersToMakeTargetString.RearrangeCharactersToMakeTargetStringCounting                                                100%
   LeetCode.Algorithms.RearrangeStringToAvoidCharacterPair.RearrangeStringToAvoidCharacterPairPartition                                                   100%
   LeetCode.Algorithms.RearrangeStringToAvoidCharacterPair.RearrangeStringToAvoidCharacterPairSorting                                                     100%
