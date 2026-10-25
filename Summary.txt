@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/25/2026 - 4:33:00 PM
-  Coverage date: 10/25/2026 - 4:32:04 PM - 10/25/2026 - 4:32:51 PM
+  Generated on: 10/25/2026 - 5:00:55 PM
+  Coverage date: 10/25/2026 - 4:59:54 PM - 10/25/2026 - 5:00:46 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1441
-  Files: 1441
+  Classes: 1442
+  Files: 1442
   Line coverage: 100%
-  Covered lines: 35407
+  Covered lines: 35423
   Uncovered lines: 0
-  Coverable lines: 35407
-  Total lines: 85316
-  Branch coverage: 99.9% (12478 of 12480)
-  Covered branches: 12478
-  Total branches: 12480
-  Method coverage: 100% (2269 of 2269)
-  Full method coverage: 100% (2269 of 2269)
-  Covered methods: 2269
-  Fully covered methods: 2269
-  Total methods: 2269
+  Coverable lines: 35423
+  Total lines: 85365
+  Branch coverage: 99.9% (12486 of 12488)
+  Covered branches: 12486
+  Total branches: 12488
+  Method coverage: 100% (2270 of 2270)
+  Full method coverage: 100% (2270 of 2270)
+  Covered methods: 2270
+  Fully covered methods: 2270
+  Total methods: 2270
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -761,6 +761,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumFrequencyOfAnElementAfterPerformingOperations2.MaximumFrequencyOfAnElementAfterPerformingOperations2SlidingWindow           100%
   LeetCode.Algorithms.MaximumIceCreamBars.MaximumIceCreamBarsCountingSort                                                                                100%
   LeetCode.Algorithms.MaximumIceCreamBars.MaximumIceCreamBarsSorting                                                                                     100%
+  LeetCode.Algorithms.MaximumKToSortAPermutation.MaximumKToSortAPermutationBitManipulation                                                               100%
   LeetCode.Algorithms.MaximumLengthSubstringWithTwoOccurrences.MaximumLengthSubstringWithTwoOccurrencesBruteForce                                        100%
   LeetCode.Algorithms.MaximumLengthSubstringWithTwoOccurrences.MaximumLengthSubstringWithTwoOccurrencesSlidingWindow                                     100%
   LeetCode.Algorithms.MaximumLevelSumOfBinaryTree.MaximumLevelSumOfBinaryTreeBreadthFirstSearch                                                          100%
