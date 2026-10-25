@@ -14,4 +14,4 @@ using LeetCode.Algorithms.CountDaysSpentTogether;
 namespace LeetCode.Tests.Algorithms.CountDaysSpentTogether;
 
 [TestClass]
-public sealed class CountDaysSpentTogetherDayOfYearTests : CountDaysSpentTogetherTestsBase<CountDaysSpentTogetherDayOfYear>;
+public sealed class CountDaysSpentTogetherMathTests : CountDaysSpentTogetherTestsBase<CountDaysSpentTogetherMath>;

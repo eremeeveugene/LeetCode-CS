@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.CountDaysSpentTogether;
 
 /// <inheritdoc />
-public sealed class CountDaysSpentTogetherDayOfYear : ICountDaysSpentTogether
+public sealed class CountDaysSpentTogetherMath : ICountDaysSpentTogether
 {
     private const char FirstDigit = '0';
 
