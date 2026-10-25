@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/25/2026 - 7:49:18 PM
-  Coverage date: 10/25/2026 - 7:48:30 PM - 10/25/2026 - 7:49:11 PM
+  Generated on: 10/25/2026 - 8:32:58 PM
+  Coverage date: 10/25/2026 - 8:31:51 PM - 10/25/2026 - 8:32:49 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1443
-  Files: 1443
+  Classes: 1445
+  Files: 1445
   Line coverage: 100%
-  Covered lines: 35456
+  Covered lines: 35537
   Uncovered lines: 0
-  Coverable lines: 35456
-  Total lines: 85437
-  Branch coverage: 99.9% (12496 of 12498)
-  Covered branches: 12496
-  Total branches: 12498
-  Method coverage: 100% (2271 of 2271)
-  Full method coverage: 100% (2271 of 2271)
-  Covered methods: 2271
-  Fully covered methods: 2271
-  Total methods: 2271
+  Coverable lines: 35537
+  Total lines: 85640
+  Branch coverage: 99.9% (12544 of 12546)
+  Covered branches: 12544
+  Total branches: 12546
+  Method coverage: 100% (2276 of 2276)
+  Full method coverage: 100% (2276 of 2276)
+  Covered methods: 2276
+  Fully covered methods: 2276
+  Total methods: 2276
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -984,6 +984,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.NumberAfterDoubleReversal.NumberAfterDoubleReversalSimulation                                                                      100%
   LeetCode.Algorithms.NumberComplement.NumberComplementBitwise                                                                                           100%
   LeetCode.Algorithms.NumberComplement.NumberComplementString                                                                                            100%
+  LeetCode.Algorithms.NumberOfClosedIslands.NumberOfClosedIslandsBreadthFirstSearch                                                                      100%
+  LeetCode.Algorithms.NumberOfClosedIslands.NumberOfClosedIslandsDepthFirstSearch                                                                        100%
   LeetCode.Algorithms.NumberOfElapsedSecondsBetweenTwoTimes.NumberOfElapsedSecondsBetweenTwoTimesMath                                                    100%
   LeetCode.Algorithms.NumberOfEmployeesWhoMetTheTarget.NumberOfEmployeesWhoMetTheTargetCounting                                                          100%
   LeetCode.Algorithms.NumberOfEquivalentDominoPairs.NumberOfEquivalentDominoPairsFrequencyArray                                                          100%
