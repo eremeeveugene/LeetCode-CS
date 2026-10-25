@@ -84,5 +84,9 @@ public abstract class MinimumTotalDistanceTraveledTestsBase<T> where T : IMinimu
         yield return [new[] { 1000000000, -1000000000 }, new[] { new[] { 0, 2 } }, 2000000000L];
 
         yield return [new[] { 0, 1000000000 }, new[] { new[] { -1000000000, 1 }, new[] { 1000000000, 1 } }, 1000000000L];
+
+        yield return [new[] { 5, 6 }, new[] { new[] { 0, 1 }, new[] { 6, 1 } }, 5L];
+
+        yield return [new[] { 6, 16, 20 }, new[] { new[] { 0, 1 }, new[] { 10, 1 }, new[] { 20, 1 } }, 12L];
     }
 }
