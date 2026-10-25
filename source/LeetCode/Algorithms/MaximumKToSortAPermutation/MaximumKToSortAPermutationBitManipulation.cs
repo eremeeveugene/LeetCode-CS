@@ -37,6 +37,11 @@ public sealed class MaximumKToSortAPermutationBitManipulation : IMaximumKToSortA
             }
 
             misplacedAnd &= num;
+
+            if (misplacedAnd == 0)
+            {
+                return 0;
+            }
         }
 
         return misplacedAnd == AllBitsSet ? 0 : misplacedAnd;
