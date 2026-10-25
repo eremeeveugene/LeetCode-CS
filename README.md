@@ -702,6 +702,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [2458. Height of Binary Tree After Subtree Removal Queries](https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/description/)
 - [2460. Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/description/)
 - [2461. Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/)
+- [2463. Minimum Total Distance Traveled](https://leetcode.com/problems/minimum-total-distance-traveled/description/)
 - [2469. Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/description/)
 - [2471. Minimum Number of Operations to Sort a Binary Tree by Level](https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/description/)
 - [2485. Find the Pivot Integer](https://leetcode.com/problems/find-the-pivot-integer/description/)
