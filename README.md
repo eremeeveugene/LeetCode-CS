@@ -1017,6 +1017,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [4061. Minimum Queen Moves to Reach Target](https://leetcode.com/problems/minimum-queen-moves-to-reach-target/description/)
 - [4065. Rearrange Array by Removing Distinct Values](https://leetcode.com/problems/rearrange-array-by-removing-distinct-values/description/)
 - [4074. Maximum Product Pair With Target Sum](https://leetcode.com/problems/maximum-product-pair-with-target-sum/description/)
+- [4078. Three Fibonacci Sum](https://leetcode.com/problems/three-fibonacci-sum/description/)
 - [4083. Minimum Deletions to Make Array Sharp](https://leetcode.com/problems/minimum-deletions-to-make-array-sharp/description/)
 
   </p>
