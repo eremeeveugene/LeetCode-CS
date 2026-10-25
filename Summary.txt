@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/25/2026 - 4:03:43 PM
-  Coverage date: 10/25/2026 - 4:02:53 PM - 10/25/2026 - 4:03:36 PM
+  Generated on: 10/25/2026 - 4:33:00 PM
+  Coverage date: 10/25/2026 - 4:32:04 PM - 10/25/2026 - 4:32:51 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1439
-  Files: 1439
+  Classes: 1441
+  Files: 1441
   Line coverage: 100%
-  Covered lines: 35376
+  Covered lines: 35407
   Uncovered lines: 0
-  Coverable lines: 35376
-  Total lines: 85198
-  Branch coverage: 99.9% (12474 of 12476)
-  Covered branches: 12474
-  Total branches: 12476
-  Method coverage: 100% (2265 of 2265)
-  Full method coverage: 100% (2265 of 2265)
-  Covered methods: 2265
-  Fully covered methods: 2265
-  Total methods: 2265
+  Coverable lines: 35407
+  Total lines: 85316
+  Branch coverage: 99.9% (12478 of 12480)
+  Covered branches: 12478
+  Total branches: 12480
+  Method coverage: 100% (2269 of 2269)
+  Full method coverage: 100% (2269 of 2269)
+  Covered methods: 2269
+  Fully covered methods: 2269
+  Total methods: 2269
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1358,6 +1358,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ThirdMaximumNumber.ThirdMaximumNumberDistinctOrder                                                                                 100%
   LeetCode.Algorithms.ThirdMaximumNumber.ThirdMaximumNumberLinear                                                                                        100%
   LeetCode.Algorithms.ThreeConsecutiveOdds.ThreeConsecutiveOddsCounting                                                                                  100%
+  LeetCode.Algorithms.ThreeFibonacciSum.ThreeFibonacciSumMath                                                                                            100%
+  LeetCode.Algorithms.ThreeFibonacciSum.ThreeFibonacciSumSimulation                                                                                      100%
   LeetCode.Algorithms.ThreeSum.ThreeSumTwoPointers                                                                                                       100%
   LeetCode.Algorithms.TimeNeededToBuyTickets.TimeNeededToBuyTicketsIterative                                                                             100%
   LeetCode.Algorithms.ToggleLightBulbs.ToggleLightBulbsBitmask                                                                                           100%
