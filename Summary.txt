@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/23/2026 - 12:09:31 PM
-  Coverage date: 10/23/2026 - 12:08:34 PM - 10/23/2026 - 12:09:23 PM
+  Generated on: 10/25/2026 - 4:03:43 PM
+  Coverage date: 10/25/2026 - 4:02:53 PM - 10/25/2026 - 4:03:36 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1437
-  Files: 1437
+  Classes: 1439
+  Files: 1439
   Line coverage: 100%
-  Covered lines: 35327
+  Covered lines: 35376
   Uncovered lines: 0
-  Coverable lines: 35327
-  Total lines: 85040
-  Branch coverage: 99.9% (12466 of 12468)
-  Covered branches: 12466
-  Total branches: 12468
-  Method coverage: 100% (2257 of 2257)
-  Full method coverage: 100% (2257 of 2257)
-  Covered methods: 2257
-  Fully covered methods: 2257
-  Total methods: 2257
+  Coverable lines: 35376
+  Total lines: 85198
+  Branch coverage: 99.9% (12474 of 12476)
+  Covered branches: 12474
+  Total branches: 12476
+  Method coverage: 100% (2265 of 2265)
+  Full method coverage: 100% (2265 of 2265)
+  Covered methods: 2265
+  Fully covered methods: 2265
+  Total methods: 2265
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -198,6 +198,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountCompleteTreeNodes.CountCompleteTreeNodesDepthRecursive                                                                        100%
   LeetCode.Algorithms.CountCompleteTreeNodes.CountCompleteTreeNodesRecursive                                                                             100%
   LeetCode.Algorithms.CountCoveredBuildings.CountCoveredBuildingsSimulation                                                                              100%
+  LeetCode.Algorithms.CountDaysSpentTogether.CountDaysSpentTogetherMath                                                                                  100%
+  LeetCode.Algorithms.CountDaysSpentTogether.CountDaysSpentTogetherSimulation                                                                            100%
   LeetCode.Algorithms.CountDaysWithoutMeetings.CountDaysWithoutMeetingsSorting                                                                           100%
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyArray                                                           100%
   LeetCode.Algorithms.CountElementsWithMaximumFrequency.CountElementsWithMaximumFrequencyDictionary                                                      100%
