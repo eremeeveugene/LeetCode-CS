@@ -12,36 +12,24 @@
 namespace LeetCode.Algorithms.MinimumTotalDistanceTraveled;
 
 /// <inheritdoc />
-public sealed class MinimumTotalDistanceTraveledDynamicProgramming : IMinimumTotalDistanceTraveled
+public sealed class MinimumTotalDistanceTraveledDynamicProgramming : MinimumTotalDistanceTraveledBase
 {
-    private const long Unreachable = long.MaxValue;
-
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(m log m + n * s)
     ///     Space complexity - O(n + log m)
     /// </remarks>
-    public long MinimumTotalDistance(IList<int> robot, int[][] factory)
+    public override long MinimumTotalDistance(IList<int> robot, int[][] factory)
     {
         var n = robot.Count;
         var m = factory.Length;
 
         Span<int> robots = stackalloc int[n];
-
-        for (var i = 0; i < n; i++)
-        {
-            robots[i] = robot[i];
-        }
-
-        robots.Sort();
-
-        Array.Sort(factory, (a, b) => a[0].CompareTo(b[0]));
-
         Span<long> dp = stackalloc long[n + 1];
 
-        dp.Fill(Unreachable);
-
-        dp[0] = 0;
+        SortRobots(robot, robots);
+        SortFactories(factory);
+        InitializeDistances(dp);
 
         for (var j = 0; j < m; j++)
         {
