@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/25/2026 - 8:32:58 PM
-  Coverage date: 10/25/2026 - 8:31:51 PM - 10/25/2026 - 8:32:49 PM
+  Generated on: 10/26/2026 - 9:48:21 AM
+  Coverage date: 10/26/2026 - 9:47:25 AM - 10/26/2026 - 9:48:12 AM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1445
-  Files: 1445
+  Classes: 1447
+  Files: 1447
   Line coverage: 100%
-  Covered lines: 35537
+  Covered lines: 35621
   Uncovered lines: 0
-  Coverable lines: 35537
-  Total lines: 85640
-  Branch coverage: 99.9% (12544 of 12546)
-  Covered branches: 12544
-  Total branches: 12546
-  Method coverage: 100% (2276 of 2276)
-  Full method coverage: 100% (2276 of 2276)
-  Covered methods: 2276
-  Fully covered methods: 2276
-  Total methods: 2276
+  Coverable lines: 35621
+  Total lines: 85887
+  Branch coverage: 99.9% (12562 of 12564)
+  Covered branches: 12562
+  Total branches: 12564
+  Method coverage: 100% (2284 of 2284)
+  Full method coverage: 100% (2284 of 2284)
+  Covered methods: 2284
+  Fully covered methods: 2284
+  Total methods: 2284
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -939,7 +939,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumTimeToMakeRopeColorful.MinimumTimeToMakeRopeColorfulGreedy                                                                  100%
   LeetCode.Algorithms.MinimumTimeToVisitCellInGrid.MinimumTimeToVisitCellInGridPriorityQueue                                                             100%
   LeetCode.Algorithms.MinimumTimeVisitingAllPoints.MinimumTimeVisitingAllPointsIterative                                                                 100%
+  LeetCode.Algorithms.MinimumTotalDistanceTraveled.MinimumTotalDistanceTraveledBase                                                                      100%
   LeetCode.Algorithms.MinimumTotalDistanceTraveled.MinimumTotalDistanceTraveledDynamicProgramming                                                        100%
+  LeetCode.Algorithms.MinimumTotalDistanceTraveled.MinimumTotalDistanceTraveledMonotonicQueue                                                            100%
   LeetCode.Algorithms.MirrorDistanceOfAnInteger.MirrorDistanceOfAnIntegerMath                                                                            100%
   LeetCode.Algorithms.MissingNumber.MissingNumberCumulativeSum                                                                                           100%
   LeetCode.Algorithms.MissingNumber.MissingNumberIterativeSumAndSubtract                                                                                 100%
