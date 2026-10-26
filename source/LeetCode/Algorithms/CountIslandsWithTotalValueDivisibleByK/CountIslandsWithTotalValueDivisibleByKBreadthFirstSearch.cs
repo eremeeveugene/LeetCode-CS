@@ -9,14 +9,14 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Runtime.CompilerServices;
+
 namespace LeetCode.Algorithms.CountIslandsWithTotalValueDivisibleByK;
 
 /// <inheritdoc />
 public sealed class CountIslandsWithTotalValueDivisibleByKBreadthFirstSearch : ICountIslandsWithTotalValueDivisibleByK
 {
     private const int Water = 0;
-
-    private static readonly (int Row, int Column)[] Directions = [(1, 0), (-1, 0), (0, 1), (0, -1)];
 
     /// <inheritdoc />
     /// <remarks>
@@ -28,7 +28,8 @@ public sealed class CountIslandsWithTotalValueDivisibleByKBreadthFirstSearch : I
         var m = grid.Length;
         var n = grid[0].Length;
 
-        var queue = new Queue<(int Row, int Column)>();
+        var queueRows = new int[m * n];
+        var queueColumns = new int[m * n];
 
         var count = 0;
 
@@ -45,9 +46,9 @@ public sealed class CountIslandsWithTotalValueDivisibleByKBreadthFirstSearch : I
                     continue;
                 }
 
-                var totalValueRemainder = GetTotalValueRemainder(grid, m, n, k, queue, i, j);
+                var totalValue = GetTotalValue(grid, m, n, queueRows, queueColumns, i, j);
 
-                if (totalValueRemainder == 0)
+                if (totalValue % k == 0)
                 {
                     count++;
                 }
@@ -58,60 +59,98 @@ public sealed class CountIslandsWithTotalValueDivisibleByKBreadthFirstSearch : I
     }
 
     /// <summary>
-    ///     Floods the island containing the given land cell with water and computes its total value modulo
-    ///     <paramref name="k" />.
+    ///     Floods the island containing the given land cell with water and computes its total value.
     /// </summary>
     /// <param name="grid">The matrix where positive values are land and 0 is water.</param>
     /// <param name="m">The number of rows in <paramref name="grid" />.</param>
     /// <param name="n">The number of columns in <paramref name="grid" />.</param>
-    /// <param name="k">The positive divisor.</param>
-    /// <param name="queue">The empty queue reused for the traversal.</param>
+    /// <param name="queueRows">The buffer reused for the row indices of the queued cells.</param>
+    /// <param name="queueColumns">The buffer reused for the column indices of the queued cells.</param>
     /// <param name="startRow">The row of the land cell to start from.</param>
     /// <param name="startColumn">The column of the land cell to start from.</param>
-    /// <returns>The total value of the island modulo <paramref name="k" />.</returns>
+    /// <returns>The total value of the island.</returns>
     /// <remarks>
     ///     Time complexity - O(m * n)
-    ///     Space complexity - O(m * n)
+    ///     Space complexity - O(1)
     /// </remarks>
-    private static int GetTotalValueRemainder(int[][] grid, int m, int n, int k, Queue<(int Row, int Column)> queue, int startRow, int startColumn)
+    private static long GetTotalValue(int[][] grid, int m, int n, int[] queueRows, int[] queueColumns, int startRow, int startColumn)
     {
-        var totalValueRemainder = grid[startRow][startColumn] % k;
+        var totalValue = 0L;
 
-        grid[startRow][startColumn] = Water;
+        var startGridRow = grid[startRow];
 
-        queue.Enqueue((startRow, startColumn));
+        var queueHead = 0;
+        var queueTail = EnqueueIfLand(startGridRow, startRow, startColumn, queueRows, queueColumns, 0, ref totalValue);
 
-        while (queue.Count > 0)
+        while (queueHead < queueTail)
         {
-            var (row, column) = queue.Dequeue();
+            var row = queueRows[queueHead];
+            var column = queueColumns[queueHead];
 
-            for (var i = 0; i < Directions.Length; i++)
+            queueHead++;
+
+            var gridRow = grid[row];
+
+            if (column > 0)
             {
-                var direction = Directions[i];
+                queueTail = EnqueueIfLand(gridRow, row, column - 1, queueRows, queueColumns, queueTail, ref totalValue);
+            }
 
-                var nextRow = row + direction.Row;
-                var nextColumn = column + direction.Column;
+            if (column < n - 1)
+            {
+                queueTail = EnqueueIfLand(gridRow, row, column + 1, queueRows, queueColumns, queueTail, ref totalValue);
+            }
 
-                if (nextRow < 0 || nextColumn < 0 || nextRow >= m || nextColumn >= n)
-                {
-                    continue;
-                }
+            if (row > 0)
+            {
+                var upGridRow = grid[row - 1];
 
-                var value = grid[nextRow][nextColumn];
+                queueTail = EnqueueIfLand(upGridRow, row - 1, column, queueRows, queueColumns, queueTail, ref totalValue);
+            }
 
-                if (value == Water)
-                {
-                    continue;
-                }
+            if (row < m - 1)
+            {
+                var downGridRow = grid[row + 1];
 
-                totalValueRemainder = (totalValueRemainder + value) % k;
-
-                grid[nextRow][nextColumn] = Water;
-
-                queue.Enqueue((nextRow, nextColumn));
+                queueTail = EnqueueIfLand(downGridRow, row + 1, column, queueRows, queueColumns, queueTail, ref totalValue);
             }
         }
 
-        return totalValueRemainder;
+        return totalValue;
+    }
+
+    /// <summary>
+    ///     Adds the given cell to the island total, floods it with water and enqueues it if it is land.
+    /// </summary>
+    /// <param name="gridRow">The row of the grid that contains the cell.</param>
+    /// <param name="row">The row of the cell.</param>
+    /// <param name="column">The column of the cell.</param>
+    /// <param name="queueRows">The row indices of the queued cells.</param>
+    /// <param name="queueColumns">The column indices of the queued cells.</param>
+    /// <param name="queueTail">The index one past the last queued cell.</param>
+    /// <param name="totalValue">The running total value of the island.</param>
+    /// <returns>The index one past the last queued cell after the cell is processed.</returns>
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    private static int EnqueueIfLand(int[] gridRow, int row, int column, int[] queueRows, int[] queueColumns, int queueTail, ref long totalValue)
+    {
+        var value = gridRow[column];
+
+        if (value == Water)
+        {
+            return queueTail;
+        }
+
+        totalValue += value;
+
+        gridRow[column] = Water;
+
+        queueRows[queueTail] = row;
+        queueColumns[queueTail] = column;
+
+        return queueTail + 1;
     }
 }

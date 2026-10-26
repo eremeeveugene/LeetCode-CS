@@ -61,34 +61,34 @@ public sealed class CountIslandsWithTotalValueDivisibleByKDepthFirstSearch : ICo
     /// <param name="m">The number of rows in <paramref name="grid" />.</param>
     /// <param name="n">The number of columns in <paramref name="grid" />.</param>
     /// <param name="k">The positive divisor.</param>
-    /// <param name="row">The row of the cell to visit.</param>
-    /// <param name="column">The column of the cell to visit.</param>
+    /// <param name="i">The row of the cell to visit.</param>
+    /// <param name="j">The column of the cell to visit.</param>
     /// <returns>The total value of the land reachable from the given cell modulo <paramref name="k" />.</returns>
     /// <remarks>
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(m * n)
     /// </remarks>
-    private static int GetTotalValueRemainder(int[][] grid, int m, int n, int k, int row, int column)
+    private static int GetTotalValueRemainder(int[][] grid, int m, int n, int k, int i, int j)
     {
-        if (row < 0 || column < 0 || row >= m || column >= n)
+        if (i < 0 || j < 0 || i >= m || j >= n)
         {
             return 0;
         }
 
-        var value = grid[row][column];
+        var value = grid[i][j];
 
         if (value == Water)
         {
             return 0;
         }
 
-        grid[row][column] = Water;
+        grid[i][j] = Water;
 
         var valueRemainder = value % k;
-        var downRemainder = GetTotalValueRemainder(grid, m, n, k, row + 1, column);
-        var upRemainder = GetTotalValueRemainder(grid, m, n, k, row - 1, column);
-        var rightRemainder = GetTotalValueRemainder(grid, m, n, k, row, column + 1);
-        var leftRemainder = GetTotalValueRemainder(grid, m, n, k, row, column - 1);
+        var downRemainder = GetTotalValueRemainder(grid, m, n, k, i + 1, j);
+        var upRemainder = GetTotalValueRemainder(grid, m, n, k, i - 1, j);
+        var rightRemainder = GetTotalValueRemainder(grid, m, n, k, i, j + 1);
+        var leftRemainder = GetTotalValueRemainder(grid, m, n, k, i, j - 1);
 
         var totalValue = valueRemainder + downRemainder + upRemainder + rightRemainder + leftRemainder;
 
