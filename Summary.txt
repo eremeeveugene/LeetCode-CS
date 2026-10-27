@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/26/2026 - 9:48:21 AM
-  Coverage date: 10/26/2026 - 9:47:25 AM - 10/26/2026 - 9:48:12 AM
+  Generated on: 10/27/2026 - 8:12:15 PM
+  Coverage date: 10/27/2026 - 8:11:30 PM - 10/27/2026 - 8:12:09 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1447
-  Files: 1447
+  Classes: 1450
+  Files: 1450
   Line coverage: 100%
-  Covered lines: 35621
+  Covered lines: 35794
   Uncovered lines: 0
-  Coverable lines: 35621
-  Total lines: 85887
-  Branch coverage: 99.9% (12562 of 12564)
-  Covered branches: 12562
-  Total branches: 12564
-  Method coverage: 100% (2284 of 2284)
-  Full method coverage: 100% (2284 of 2284)
-  Covered methods: 2284
-  Fully covered methods: 2284
-  Total methods: 2284
+  Coverable lines: 35794
+  Total lines: 86294
+  Branch coverage: 99.9% (12620 of 12622)
+  Covered branches: 12620
+  Total branches: 12622
+  Method coverage: 100% (2292 of 2292)
+  Full method coverage: 100% (2292 of 2292)
+  Covered methods: 2292
+  Fully covered methods: 2292
+  Total methods: 2292
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -215,6 +215,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountingWordsWithGivenPrefix.CountingWordsWithGivenPrefixIterative                                                                 100%
   LeetCode.Algorithms.CountIntegersAppearingInASingleBlock.CountIntegersAppearingInASingleBlockHashSet                                                   100%
   LeetCode.Algorithms.CountIntegersAppearingInASingleBlock.CountIntegersAppearingInASingleBlockLookup                                                    100%
+  LeetCode.Algorithms.CountIslandsWithTotalValueDivisibleByK.CountIslandsWithTotalValueDivisibleByKBreadthFirstSearch                                    100%
+  LeetCode.Algorithms.CountIslandsWithTotalValueDivisibleByK.CountIslandsWithTotalValueDivisibleByKDepthFirstSearch                                      100%
+  LeetCode.Algorithms.CountIslandsWithTotalValueDivisibleByK.CountIslandsWithTotalValueDivisibleByKDepthFirstSearchStack                                 100%
   LeetCode.Algorithms.CountLargestGroup.CountLargestGroupFrequencyArray                                                                                  100%
   LeetCode.Algorithms.CountLargestGroup.CountLargestGroupFrequencyDictionary                                                                             100%
   LeetCode.Algorithms.CountNegativeNumbersInSortedMatrix.CountNegativeNumbersInSortedMatrixBruteForceBottomRight                                         100%
