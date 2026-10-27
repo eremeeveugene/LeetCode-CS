@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/27/2026 - 8:12:15 PM
-  Coverage date: 10/27/2026 - 8:11:30 PM - 10/27/2026 - 8:12:09 PM
+  Generated on: 10/27/2026 - 9:11:36 PM
+  Coverage date: 10/27/2026 - 9:10:26 PM - 10/27/2026 - 9:11:27 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1450
-  Files: 1450
+  Classes: 1451
+  Files: 1451
   Line coverage: 100%
-  Covered lines: 35794
+  Covered lines: 35813
   Uncovered lines: 0
-  Coverable lines: 35794
-  Total lines: 86294
-  Branch coverage: 99.9% (12620 of 12622)
-  Covered branches: 12620
-  Total branches: 12622
-  Method coverage: 100% (2292 of 2292)
-  Full method coverage: 100% (2292 of 2292)
-  Covered methods: 2292
-  Fully covered methods: 2292
-  Total methods: 2292
+  Coverable lines: 35813
+  Total lines: 86340
+  Branch coverage: 99.9% (12630 of 12632)
+  Covered branches: 12630
+  Total branches: 12632
+  Method coverage: 100% (2293 of 2293)
+  Full method coverage: 100% (2293 of 2293)
+  Covered methods: 2293
+  Fully covered methods: 2293
+  Total methods: 2293
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -347,6 +347,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DiameterOfBinaryTree.DiameterOfBinaryTreeDepthFirst                                                                                100%
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayByDigitExtraction                       100%
   LeetCode.Algorithms.DifferenceBetweenElementSumAndDigitSumOfArray.DifferenceBetweenElementSumAndDigitSumOfArrayIterative                               100%
+  LeetCode.Algorithms.DifferenceBetweenPeaksAndValleys.DifferenceBetweenPeaksAndValleysIterative                                                         100%
   LeetCode.Algorithms.DifferentWaysToAddParentheses.DifferentWaysToAddParenthesesDictionary                                                              100%
   LeetCode.Algorithms.DifferentWaysToAddParentheses.DifferentWaysToAddParenthesesRecursive                                                               100%
   LeetCode.Algorithms.DigitFrequencyScore.DigitFrequencyScoreCounting                                                                                    100%
