@@ -12,33 +12,18 @@
 namespace LeetCode.Algorithms.MinimumDeletionsForKMostKDistinctCharacters;
 
 /// <inheritdoc />
-public sealed class MinimumDeletionsForKMostKDistinctCharactersFrequencyArrayPriorityQueue : IMinimumDeletionsForKMostKDistinctCharacters
+public sealed class MinimumDeletionsForKMostKDistinctCharactersFrequencyArrayPriorityQueue : MinimumDeletionsForKMostKDistinctCharactersBase
 {
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(1)
     /// </remarks>
-    public int MinDeletion(string s, int k)
+    public override int MinDeletion(string s, int k)
     {
-        var frequencyArray = new int['z' - 'a' + 1];
+        var frequencyArray = GetFrequencyArray(s);
 
-        for (var i = 0; i < s.Length; i++)
-        {
-            var c = s[i];
-
-            frequencyArray[c - 'a']++;
-        }
-
-        var distinctCount = 0;
-
-        for (var i = 0; i < frequencyArray.Length; i++)
-        {
-            if (frequencyArray[i] > 0)
-            {
-                distinctCount++;
-            }
-        }
+        var distinctCount = GetDistinctCount(frequencyArray);
 
         var countToRemove = distinctCount - k;
 
