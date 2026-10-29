@@ -33,21 +33,9 @@ public sealed class ReplaceWordsTrie : IReplaceWords
         {
             var word = words[i];
 
-            var current = trie.Root;
-
-            for (var j = 0; j < word.Length; j++)
+            if (trie.TryFindShortestPrefix(word, out var prefixLength))
             {
-                if (current.Word != null || !current.Children.TryGetValue(word[j], out var child))
-                {
-                    break;
-                }
-
-                current = child;
-            }
-
-            if (current.Word != null)
-            {
-                words[i] = current.Word;
+                words[i] = word[..prefixLength];
             }
         }
 

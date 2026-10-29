@@ -26,27 +26,23 @@ public sealed class ExtraCharactersInStringDynamicProgrammingTrie : IExtraCharac
     {
         var trie = new Trie(dictionary);
 
-        var dp = new int[s.Length + 1];
+        var n = s.Length;
 
-        for (var start = s.Length - 1; start >= 0; start--)
+        var dp = new int[n + 1];
+
+        for (var start = n - 1; start >= 0; start--)
         {
             dp[start] = dp[start + 1] + 1;
 
-            var node = trie.Root;
+            var prefixLengths = trie.FindPrefixLengths(s.AsSpan(start));
 
-            for (var end = start; end < s.Length; end++)
+            var prefixLengthsCount = prefixLengths.Count;
+
+            for (var i = 0; i < prefixLengthsCount; i++)
             {
-                if (!node.Children.ContainsKey(s[end]))
-                {
-                    break;
-                }
+                var prefixLength = prefixLengths[i];
 
-                node = node.Children[s[end]];
-
-                if (node.Word != null)
-                {
-                    dp[start] = Math.Min(dp[start], dp[end + 1]);
-                }
+                dp[start] = Math.Min(dp[start], dp[start + prefixLength]);
             }
         }
 
