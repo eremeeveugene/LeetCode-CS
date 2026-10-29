@@ -9,9 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.MaximumValueOfAnOrderedTriplet1;
+using LeetCode.Algorithms.FindTheNumberOfWaysToPlacePeople1;
 
-namespace LeetCode.Tests.Algorithms.MaximumValueOfAnOrderedTriplet1;
+namespace LeetCode.Tests.Algorithms.FindTheNumberOfWaysToPlacePeople1;
 
 [TestClass]
-public class MaximumValueOfAnOrderedTriplet1GreedyTests : MaximumValueOfAnOrderedTriplet1TestsBase<MaximumValueOfAnOrderedTriplet1Greedy>;
+public sealed class FindTheNumberOfWaysToPlacePeople1BruteForceTests
+    : FindTheNumberOfWaysToPlacePeople1TestsBase<FindTheNumberOfWaysToPlacePeople1BruteForce>;

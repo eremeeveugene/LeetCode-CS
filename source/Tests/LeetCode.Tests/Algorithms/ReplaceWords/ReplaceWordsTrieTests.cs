@@ -1,4 +1,4 @@
-// --------------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------------
 // Copyright (C) 2026 Eugene Eremeev (also known as Yevhenii Yeriemeieiv).
 // All Rights Reserved.
 // --------------------------------------------------------------------------------
@@ -9,10 +9,9 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.MinimumNumberOfPushesToTypeWord1;
+using LeetCode.Algorithms.ReplaceWords;
 
-namespace LeetCode.Tests.Algorithms.MinimumNumberOfPushesToTypeWord1;
+namespace LeetCode.Tests.Algorithms.ReplaceWords;
 
 [TestClass]
-public sealed class MinimumNumberOfPushesToTypeWord1CountingTests
-    : MinimumNumberOfPushesToTypeWord1TestsBase<MinimumNumberOfPushesToTypeWord1Counting>;
+public sealed class ReplaceWordsTrieTests : ReplaceWordsTestsBase<ReplaceWordsTrie>;

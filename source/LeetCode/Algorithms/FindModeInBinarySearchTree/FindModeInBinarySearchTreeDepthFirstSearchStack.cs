@@ -14,21 +14,21 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.FindModeInBinarySearchTree;
 
 /// <inheritdoc />
-public sealed class FindModeInBinarySearchTreeDepthFirstSearchStack : IFindModeInBinarySearchTree
+public sealed class FindModeInBinarySearchTreeDepthFirstSearchStack : FindModeInBinarySearchTreeBase
 {
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
     /// </remarks>
-    public int[] FindMode(TreeNode? root)
+    public override int[] FindMode(TreeNode? root)
     {
         if (root == null)
         {
             return [];
         }
 
-        var dictionary = new Dictionary<int, int>();
+        var valToCountDictionary = new Dictionary<int, int>();
 
         var stack = new Stack<TreeNode>();
 
@@ -38,10 +38,7 @@ public sealed class FindModeInBinarySearchTreeDepthFirstSearchStack : IFindModeI
         {
             var treeNode = stack.Pop();
 
-            if (!dictionary.TryAdd(treeNode.val, 1))
-            {
-                dictionary[treeNode.val]++;
-            }
+            IncrementCount(valToCountDictionary, treeNode.val);
 
             if (treeNode.left != null)
             {
@@ -54,31 +51,6 @@ public sealed class FindModeInBinarySearchTreeDepthFirstSearchStack : IFindModeI
             }
         }
 
-        var nums = new int[dictionary.Count];
-
-        dictionary.Keys.CopyTo(nums, 0);
-
-        var maxValue = 0;
-
-        for (var i = 0; i < nums.Length; i++)
-        {
-            var num = nums[i];
-
-            maxValue = Math.Max(maxValue, dictionary[num]);
-        }
-
-        var modes = new List<int>();
-
-        for (var i = 0; i < nums.Length; i++)
-        {
-            var num = nums[i];
-
-            if (dictionary[num] == maxValue)
-            {
-                modes.Add(num);
-            }
-        }
-
-        return modes.ToArray();
+        return GetModes(valToCountDictionary);
     }
 }

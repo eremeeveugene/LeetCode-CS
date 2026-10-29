@@ -9,10 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using LeetCode.Core.Models;
+
 namespace LeetCode.Algorithms.ReplaceWords;
 
 /// <inheritdoc />
-public sealed class ReplaceWordsTrieNode : IReplaceWords
+public sealed class ReplaceWordsTrie : IReplaceWords
 {
     /// <inheritdoc />
     /// <remarks>
@@ -31,72 +33,12 @@ public sealed class ReplaceWordsTrieNode : IReplaceWords
         {
             var word = words[i];
 
-            var current = trie.Root;
-
-            for (var j = 0; j < word.Length; j++)
+            if (trie.TryFindShortestPrefix(word, out var prefixLength))
             {
-                if (current.Word != null || !current.Children.TryGetValue(word[j], out var child))
-                {
-                    break;
-                }
-
-                current = child;
-            }
-
-            if (current.Word != null)
-            {
-                words[i] = current.Word;
+                words[i] = word[..prefixLength];
             }
         }
 
         return string.Join(' ', words);
-    }
-
-    private sealed class Trie
-    {
-        public Trie(IList<string> words)
-        {
-            AddRange(words);
-        }
-
-        public TrieNode Root { get; } = new();
-
-        private void Add(string word)
-        {
-            var node = Root;
-
-            for (var i = 0; i < word.Length; i++)
-            {
-                var c = word[i];
-
-                if (!node.Children.TryGetValue(c, out var value))
-                {
-                    value = new TrieNode();
-
-                    node.Children[c] = value;
-                }
-
-                node = value;
-            }
-
-            node.Word = word;
-        }
-
-        private void AddRange(IList<string> words)
-        {
-            for (var i = 0; i < words.Count; i++)
-            {
-                var word = words[i];
-
-                Add(word);
-            }
-        }
-    }
-
-    private sealed class TrieNode
-    {
-        public Dictionary<char, TrieNode> Children { get; } = [];
-
-        public string? Word { get; set; }
     }
 }

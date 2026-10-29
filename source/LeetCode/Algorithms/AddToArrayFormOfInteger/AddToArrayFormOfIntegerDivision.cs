@@ -25,40 +25,25 @@ public sealed class AddToArrayFormOfIntegerDivision : IAddToArrayFormOfInteger
     {
         var result = new List<int>();
 
-        var kString = k.ToString();
-        var kIndex = kString.Length - 1;
-        var numIndex = num.Length - 1;
+        var n = num.Length;
 
-        var carry = 0;
+        var carry = k;
 
-        while (numIndex >= 0 || kIndex >= 0)
+        for (var i = n - 1; i >= 0; i--)
         {
-            var val1 = 0;
+            var digit = num[i];
+            var sum = digit + carry;
 
-            if (numIndex >= 0)
-            {
-                val1 = num[numIndex];
-                numIndex--;
-            }
+            result.Add(sum % 10);
 
-            var val2 = 0;
-
-            if (kIndex >= 0)
-            {
-                val2 = (int)char.GetNumericValue(kString[kIndex]);
-                kIndex--;
-            }
-
-            var sum = val1 + val2 + carry;
             carry = sum / 10;
-            sum %= 10;
-
-            result.Add(sum);
         }
 
-        if (carry > 0)
+        while (carry > 0)
         {
-            result.Add(carry);
+            result.Add(carry % 10);
+
+            carry /= 10;
         }
 
         result.Reverse();

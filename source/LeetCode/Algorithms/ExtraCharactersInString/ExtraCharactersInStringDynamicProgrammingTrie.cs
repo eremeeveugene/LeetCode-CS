@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using LeetCode.Core.Models;
+
 namespace LeetCode.Algorithms.ExtraCharactersInString;
 
 /// <inheritdoc />
@@ -24,78 +26,26 @@ public sealed class ExtraCharactersInStringDynamicProgrammingTrie : IExtraCharac
     {
         var trie = new Trie(dictionary);
 
-        var dp = new int[s.Length + 1];
+        var n = s.Length;
 
-        for (var start = s.Length - 1; start >= 0; start--)
+        var dp = new int[n + 1];
+
+        for (var start = n - 1; start >= 0; start--)
         {
             dp[start] = dp[start + 1] + 1;
 
-            var node = trie.Root;
+            var prefixLengths = trie.FindPrefixLengths(s.AsSpan(start));
 
-            for (var end = start; end < s.Length; end++)
+            var prefixLengthsCount = prefixLengths.Count;
+
+            for (var i = 0; i < prefixLengthsCount; i++)
             {
-                if (!node.Children.ContainsKey(s[end]))
-                {
-                    break;
-                }
+                var prefixLength = prefixLengths[i];
 
-                node = node.Children[s[end]];
-
-                if (node.Word != null)
-                {
-                    dp[start] = Math.Min(dp[start], dp[end + 1]);
-                }
+                dp[start] = Math.Min(dp[start], dp[start + prefixLength]);
             }
         }
 
         return dp[0];
-    }
-
-    private sealed class Trie
-    {
-        public Trie(string[] words)
-        {
-            AddRange(words);
-        }
-
-        public TrieNode Root { get; } = new();
-
-        private void Add(string word)
-        {
-            var node = Root;
-
-            for (var i = 0; i < word.Length; i++)
-            {
-                var c = word[i];
-
-                if (!node.Children.TryGetValue(c, out var value))
-                {
-                    value = new TrieNode();
-
-                    node.Children[c] = value;
-                }
-
-                node = value;
-            }
-
-            node.Word = word;
-        }
-
-        private void AddRange(string[] words)
-        {
-            for (var i = 0; i < words.Length; i++)
-            {
-                var word = words[i];
-
-                Add(word);
-            }
-        }
-    }
-
-    private sealed class TrieNode
-    {
-        public Dictionary<char, TrieNode> Children { get; } = [];
-
-        public string? Word { get; set; }
     }
 }

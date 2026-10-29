@@ -23,21 +23,7 @@ public sealed class ClosestEqualElementQueriesDictionaryBinarySearch : ClosestEq
     /// </remarks>
     public override IList<int> SolveQueries(int[] nums, int[] queries)
     {
-        var numToIndexesDictionary = new Dictionary<int, List<int>>();
-
-        for (var i = 0; i < nums.Length; i++)
-        {
-            var num = nums[i];
-
-            if (!numToIndexesDictionary.TryGetValue(num, out var indexes))
-            {
-                indexes = [];
-
-                numToIndexesDictionary[num] = indexes;
-            }
-
-            indexes.Add(i);
-        }
+        var numToIndexesDictionary = GetNumToIndexesDictionary(nums);
 
         var n = nums.Length;
 

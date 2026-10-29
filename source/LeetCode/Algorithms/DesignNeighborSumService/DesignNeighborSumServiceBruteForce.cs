@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignNeighborSumService;
 
 /// <inheritdoc />
-public sealed class DesignNeighborSumServiceBruteForce : IDesignNeighborSumService
+public sealed class DesignNeighborSumServiceBruteForce : DesignNeighborSumServiceBase
 {
     private readonly int[][] _grid;
 
@@ -26,33 +26,11 @@ public sealed class DesignNeighborSumServiceBruteForce : IDesignNeighborSumServi
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
     /// </remarks>
-    public int AdjacentSum(int value)
+    public override int AdjacentSum(int value)
     {
         var (x, y) = FindPosition(value);
 
-        var sum = 0;
-
-        if (x > 0)
-        {
-            sum += _grid[x - 1][y];
-        }
-
-        if (x < _grid.Length - 1)
-        {
-            sum += _grid[x + 1][y];
-        }
-
-        if (y > 0)
-        {
-            sum += _grid[x][y - 1];
-        }
-
-        if (y < _grid[x].Length - 1)
-        {
-            sum += _grid[x][y + 1];
-        }
-
-        return sum;
+        return GetAdjacentSum(_grid, x, y);
     }
 
     /// <inheritdoc />
@@ -60,33 +38,11 @@ public sealed class DesignNeighborSumServiceBruteForce : IDesignNeighborSumServi
     ///     Time complexity - O(m * n)
     ///     Space complexity - O(1)
     /// </remarks>
-    public int DiagonalSum(int value)
+    public override int DiagonalSum(int value)
     {
         var (x, y) = FindPosition(value);
 
-        var sum = 0;
-
-        if (x > 0 && y > 0)
-        {
-            sum += _grid[x - 1][y - 1];
-        }
-
-        if (x > 0 && y < _grid[x].Length - 1)
-        {
-            sum += _grid[x - 1][y + 1];
-        }
-
-        if (x < _grid.Length - 1 && y > 0)
-        {
-            sum += _grid[x + 1][y - 1];
-        }
-
-        if (x < _grid.Length - 1 && y < _grid.Length - 1)
-        {
-            sum += _grid[x + 1][y + 1];
-        }
-
-        return sum;
+        return GetDiagonalSum(_grid, x, y);
     }
 
     private (int X, int Y) FindPosition(int value)

@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.DesignNeighborSumService;
 
 /// <inheritdoc />
-public sealed class DesignNeighborSumServiceDictionary : IDesignNeighborSumService
+public sealed class DesignNeighborSumServiceDictionary : DesignNeighborSumServiceBase
 {
     private readonly int[][] _grid;
     private readonly Dictionary<int, (int X, int Y)> _neighborsDictionary = [];
@@ -43,33 +43,11 @@ public sealed class DesignNeighborSumServiceDictionary : IDesignNeighborSumServi
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
     /// </remarks>
-    public int AdjacentSum(int value)
+    public override int AdjacentSum(int value)
     {
         var (x, y) = _neighborsDictionary[value];
 
-        var sum = 0;
-
-        if (x > 0)
-        {
-            sum += _grid[x - 1][y];
-        }
-
-        if (x < _grid.Length - 1)
-        {
-            sum += _grid[x + 1][y];
-        }
-
-        if (y > 0)
-        {
-            sum += _grid[x][y - 1];
-        }
-
-        if (y < _grid[x].Length - 1)
-        {
-            sum += _grid[x][y + 1];
-        }
-
-        return sum;
+        return GetAdjacentSum(_grid, x, y);
     }
 
     /// <inheritdoc />
@@ -77,32 +55,10 @@ public sealed class DesignNeighborSumServiceDictionary : IDesignNeighborSumServi
     ///     Time complexity - O(1)
     ///     Space complexity - O(1)
     /// </remarks>
-    public int DiagonalSum(int value)
+    public override int DiagonalSum(int value)
     {
         var (x, y) = _neighborsDictionary[value];
 
-        var sum = 0;
-
-        if (x > 0 && y > 0)
-        {
-            sum += _grid[x - 1][y - 1];
-        }
-
-        if (x > 0 && y < _grid[x].Length - 1)
-        {
-            sum += _grid[x - 1][y + 1];
-        }
-
-        if (x < _grid.Length - 1 && y > 0)
-        {
-            sum += _grid[x + 1][y - 1];
-        }
-
-        if (x < _grid.Length - 1 && y < _grid.Length - 1)
-        {
-            sum += _grid[x + 1][y + 1];
-        }
-
-        return sum;
+        return GetDiagonalSum(_grid, x, y);
     }
 }

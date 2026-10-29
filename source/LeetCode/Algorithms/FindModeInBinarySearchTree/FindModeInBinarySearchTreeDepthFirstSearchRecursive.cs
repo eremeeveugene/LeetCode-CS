@@ -14,67 +14,48 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.FindModeInBinarySearchTree;
 
 /// <inheritdoc />
-public sealed class FindModeInBinarySearchTreeDepthFirstSearchRecursive : IFindModeInBinarySearchTree
+public sealed class FindModeInBinarySearchTreeDepthFirstSearchRecursive : FindModeInBinarySearchTreeBase
 {
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n)
     ///     Space complexity - O(n)
     /// </remarks>
-    public int[] FindMode(TreeNode? root)
+    public override int[] FindMode(TreeNode? root)
     {
         if (root == null)
         {
             return [];
         }
 
-        var dictionary = new Dictionary<int, int>();
+        var valToCountDictionary = new Dictionary<int, int>();
 
-        FindMode(root, dictionary);
+        CountVals(root, valToCountDictionary);
 
-        var nums = new int[dictionary.Count];
-
-        dictionary.Keys.CopyTo(nums, 0);
-
-        var maxValue = 0;
-
-        for (var i = 0; i < nums.Length; i++)
-        {
-            var num = nums[i];
-
-            maxValue = Math.Max(maxValue, dictionary[num]);
-        }
-
-        var modes = new List<int>();
-
-        for (var i = 0; i < nums.Length; i++)
-        {
-            var num = nums[i];
-
-            if (dictionary[num] == maxValue)
-            {
-                modes.Add(num);
-            }
-        }
-
-        return modes.ToArray();
+        return GetModes(valToCountDictionary);
     }
 
-    private static void FindMode(TreeNode treeNode, Dictionary<int, int> dictionary)
+    /// <summary>
+    ///     Counts the occurrences of every value in the subtree rooted at <paramref name="treeNode" />.
+    /// </summary>
+    /// <param name="treeNode">The root of the subtree.</param>
+    /// <param name="valToCountDictionary">The occurrence counts, updated in place.</param>
+    /// <remarks>
+    ///     Time complexity - O(n)
+    ///     Space complexity - O(h), where h is the height of the tree
+    /// </remarks>
+    private static void CountVals(TreeNode treeNode, Dictionary<int, int> valToCountDictionary)
     {
-        if (!dictionary.TryAdd(treeNode.val, 1))
-        {
-            dictionary[treeNode.val]++;
-        }
+        IncrementCount(valToCountDictionary, treeNode.val);
 
         if (treeNode.left != null)
         {
-            FindMode(treeNode.left, dictionary);
+            CountVals(treeNode.left, valToCountDictionary);
         }
 
         if (treeNode.right != null)
         {
-            FindMode(treeNode.right, dictionary);
+            CountVals(treeNode.right, valToCountDictionary);
         }
     }
 }

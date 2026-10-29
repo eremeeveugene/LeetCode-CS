@@ -12,40 +12,27 @@
 namespace LeetCode.Algorithms.FindIfPathExistsInGraph;
 
 /// <inheritdoc />
-public sealed class FindIfPathExistsInGraphBreadthFirstSearch : IFindIfPathExistsInGraph
+public sealed class FindIfPathExistsInGraphBreadthFirstSearch : FindIfPathExistsInGraphBase
 {
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(v + e), where v is the number of vertices and e is the number of edges
     ///     Space complexity - O(v + e), where v is the number of vertices and e is the number of edges
     /// </remarks>
-    public bool ValidPath(int n, int[][] edges, int source, int destination)
+    public override bool ValidPath(int n, int[][] edges, int source, int destination)
     {
         if (source == destination)
         {
             return true;
         }
 
-        var graph = new Dictionary<int, List<int>>();
-
-        for (var i = 0; i < n; i++)
-        {
-            graph[i] = [];
-        }
-
-        for (var i = 0; i < edges.Length; i++)
-        {
-            var edge = edges[i];
-
-            graph[edge[0]].Add(edge[1]);
-            graph[edge[1]].Add(edge[0]);
-        }
+        var graph = BuildGraph(n, edges);
 
         var queue = new Queue<int>();
 
         queue.Enqueue(source);
 
-        var visited = new HashSet<int>(source);
+        var visited = new HashSet<int> { source };
 
         while (queue.Count > 0)
         {
@@ -53,7 +40,9 @@ public sealed class FindIfPathExistsInGraphBreadthFirstSearch : IFindIfPathExist
 
             var neighbors = graph[current];
 
-            for (var i = 0; i < neighbors.Count; i++)
+            var m = neighbors.Count;
+
+            for (var i = 0; i < m; i++)
             {
                 var neighbor = neighbors[i];
 
