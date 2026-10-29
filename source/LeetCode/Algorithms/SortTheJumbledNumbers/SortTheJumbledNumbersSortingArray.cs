@@ -12,40 +12,38 @@
 namespace LeetCode.Algorithms.SortTheJumbledNumbers;
 
 /// <inheritdoc />
-public sealed class SortTheJumbledNumbersSortingArray : ISortTheJumbledNumbers
+public sealed class SortTheJumbledNumbersSortingArray : SortTheJumbledNumbersBase
 {
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
     /// </remarks>
-    public int[] SortJumbled(int[] mapping, int[] nums)
+    public override int[] SortJumbled(int[] mapping, int[] nums)
     {
-        var mappedNums = new (int mapped, int original)[nums.Length];
+        var n = nums.Length;
 
-        for (var i = 0; i < nums.Length; i++)
+        var mappedNums = new (int MappedNum, int Index)[n];
+
+        for (var i = 0; i < n; i++)
         {
-            var originalNum = nums[i];
-            var mappedNum = 0;
-            var multiplier = 1;
+            var num = nums[i];
+            var mappedNum = GetMappedNum(mapping, num);
 
-            do
-            {
-                mappedNum += mapping[originalNum % 10] * multiplier;
-                originalNum /= 10;
-                multiplier *= 10;
-            } while (originalNum > 0);
-
-            mappedNums[i] = (mappedNum, nums[i]);
+            mappedNums[i] = (mappedNum, i);
         }
 
-        Array.Sort(mappedNums, (a, b) => a.mapped.CompareTo(b.mapped));
+        Array.Sort(mappedNums);
 
-        for (var i = 0; i < nums.Length; i++)
+        var result = new int[n];
+
+        for (var i = 0; i < n; i++)
         {
-            nums[i] = mappedNums[i].original;
+            var index = mappedNums[i].Index;
+
+            result[i] = nums[index];
         }
 
-        return nums;
+        return result;
     }
 }

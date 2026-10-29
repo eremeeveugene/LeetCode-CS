@@ -12,38 +12,53 @@
 namespace LeetCode.Algorithms.SortTheJumbledNumbers;
 
 /// <inheritdoc />
-public sealed class SortTheJumbledNumbersSortingDictionary : ISortTheJumbledNumbers
+public sealed class SortTheJumbledNumbersSortingDictionary : SortTheJumbledNumbersBase
 {
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(n log n)
     ///     Space complexity - O(n)
     /// </remarks>
-    public int[] SortJumbled(int[] mapping, int[] nums)
+    public override int[] SortJumbled(int[] mapping, int[] nums)
     {
-        var mappedNums = new (int mapped, int original)[nums.Length];
+        var mappedNumToNumsDictionary = new Dictionary<int, List<int>>();
 
-        for (var i = 0; i < nums.Length; i++)
+        var n = nums.Length;
+
+        for (var i = 0; i < n; i++)
         {
-            var originalNum = nums[i];
-            var mappedNum = 0;
-            var multiplier = 1;
+            var num = nums[i];
+            var mappedNum = GetMappedNum(mapping, num);
 
-            do
+            if (!mappedNumToNumsDictionary.TryGetValue(mappedNum, out var groupNums))
             {
-                mappedNum += mapping[originalNum % 10] * multiplier;
-                originalNum /= 10;
-                multiplier *= 10;
-            } while (originalNum > 0);
+                groupNums = [];
 
-            mappedNums[i] = (mappedNum, nums[i]);
+                mappedNumToNumsDictionary[mappedNum] = groupNums;
+            }
+
+            groupNums.Add(num);
         }
 
-        Array.Sort(mappedNums, (a, b) => a.mapped.CompareTo(b.mapped));
+        var sortedMappedNums = new int[mappedNumToNumsDictionary.Count];
 
-        for (var i = 0; i < nums.Length; i++)
+        mappedNumToNumsDictionary.Keys.CopyTo(sortedMappedNums, 0);
+
+        Array.Sort(sortedMappedNums);
+
+        var resultIndex = 0;
+
+        for (var i = 0; i < sortedMappedNums.Length; i++)
         {
-            nums[i] = mappedNums[i].original;
+            var mappedNum = sortedMappedNums[i];
+            var groupNums = mappedNumToNumsDictionary[mappedNum];
+
+            for (var j = 0; j < groupNums.Count; j++)
+            {
+                nums[resultIndex] = groupNums[j];
+
+                resultIndex++;
+            }
         }
 
         return nums;
