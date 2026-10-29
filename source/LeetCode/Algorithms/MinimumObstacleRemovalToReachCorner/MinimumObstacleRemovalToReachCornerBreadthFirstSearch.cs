@@ -12,7 +12,7 @@
 namespace LeetCode.Algorithms.MinimumObstacleRemovalToReachCorner;
 
 /// <inheritdoc />
-public sealed class MinimumObstacleRemovalToReachCornerBreadthFirstSearch : IMinimumObstacleRemovalToReachCorner
+public sealed class MinimumObstacleRemovalToReachCornerBreadthFirstSearch : MinimumObstacleRemovalToReachCornerBase
 {
     private static readonly (int X, int Y)[] Directions = [(-1, 0), (1, 0), (0, -1), (0, 1)];
 
@@ -21,7 +21,7 @@ public sealed class MinimumObstacleRemovalToReachCornerBreadthFirstSearch : IMin
     ///     Time complexity - O(m * n), where m is the number of rows and n is the number of columns in the grid
     ///     Space complexity - O(m * n), where m is the number of rows and n is the number of columns in the grid
     /// </remarks>
-    public int MinimumObstacles(int[][] grid)
+    public override int MinimumObstacles(int[][] grid)
     {
         var rowsCount = grid.Length;
         var columnsCount = grid[0].Length;
@@ -45,19 +45,10 @@ public sealed class MinimumObstacleRemovalToReachCornerBreadthFirstSearch : IMin
                 var nextRow = row + direction.X;
                 var nextColumn = column + direction.Y;
 
-                if (nextRow < 0 || nextRow >= rowsCount || nextColumn < 0 || nextColumn >= columnsCount)
+                if (!TryRelax(grid, minimumObstacles, row, column, nextRow, nextColumn))
                 {
                     continue;
                 }
-
-                var nextObstaclesCount = minimumObstacles[row, column] + grid[nextRow][nextColumn];
-
-                if (nextObstaclesCount >= minimumObstacles[nextRow, nextColumn])
-                {
-                    continue;
-                }
-
-                minimumObstacles[nextRow, nextColumn] = nextObstaclesCount;
 
                 if (grid[nextRow][nextColumn] == 1)
                 {
@@ -71,22 +62,5 @@ public sealed class MinimumObstacleRemovalToReachCornerBreadthFirstSearch : IMin
         }
 
         return minimumObstacles[rowsCount - 1, columnsCount - 1];
-    }
-
-    private static int[,] InitializeMinimumObstacles(int rowsCount, int columnsCount)
-    {
-        var minimumObstacles = new int[rowsCount, columnsCount];
-
-        for (var row = 0; row < rowsCount; row++)
-        {
-            for (var column = 0; column < columnsCount; column++)
-            {
-                minimumObstacles[row, column] = int.MaxValue;
-            }
-        }
-
-        minimumObstacles[0, 0] = 0;
-
-        return minimumObstacles;
     }
 }
