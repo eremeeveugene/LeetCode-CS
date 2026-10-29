@@ -27,24 +27,28 @@ public sealed class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch
 
         Span<int> heights = stackalloc int[nodesCount + 1];
 
-        LeftToRight(root, heights);
+        Traverse(root, heights, true);
 
-        RightToLeft(root, heights);
+        Traverse(root, heights, false);
 
         return GetAnswer(queries, heights);
     }
 
     /// <summary>
-    ///     Traverses the tree left to right, recording for each node the maximum height of the tree using only nodes
-    ///     visited before it.
+    ///     Traverses the tree left to right or right to left, recording for each node the maximum height of the tree
+    ///     using only nodes visited before it.
     /// </summary>
     /// <param name="root">The root of the binary tree.</param>
     /// <param name="heights">The span, indexed by node value, that accumulates the heights.</param>
+    /// <param name="isLeftToRight">
+    ///     <see langword="true" /> to visit left children before right children; <see langword="false" /> to visit right
+    ///     children before left children.
+    /// </param>
     /// <remarks>
     ///     Time complexity - O(n), where n is the number of nodes
     ///     Space complexity - O(n), where n is the number of nodes
     /// </remarks>
-    private static void LeftToRight(TreeNode root, Span<int> heights)
+    private static void Traverse(TreeNode root, Span<int> heights, bool isLeftToRight)
     {
         var maxHeight = 0;
 
@@ -64,64 +68,17 @@ public sealed class HeightOfBinaryTreeAfterSubtreeRemovalQueriesDepthFirstSearch
 
             maxHeight = Math.Max(maxHeight, nextHeight);
 
-            var rightNode = node.right;
+            var firstVisitedChild = isLeftToRight ? node.left : node.right;
+            var secondVisitedChild = isLeftToRight ? node.right : node.left;
 
-            if (rightNode != null)
+            if (secondVisitedChild != null)
             {
-                nodesStack.Push((rightNode, nextHeight));
+                nodesStack.Push((secondVisitedChild, nextHeight));
             }
 
-            var leftNode = node.left;
-
-            if (leftNode != null)
+            if (firstVisitedChild != null)
             {
-                nodesStack.Push((leftNode, nextHeight));
-            }
-        }
-    }
-
-    /// <summary>
-    ///     Traverses the tree right to left, recording for each node the maximum height of the tree using only nodes
-    ///     visited before it.
-    /// </summary>
-    /// <param name="root">The root of the binary tree.</param>
-    /// <param name="heights">The span, indexed by node value, that accumulates the heights.</param>
-    /// <remarks>
-    ///     Time complexity - O(n), where n is the number of nodes
-    ///     Space complexity - O(n), where n is the number of nodes
-    /// </remarks>
-    private static void RightToLeft(TreeNode root, Span<int> heights)
-    {
-        var maxHeight = 0;
-
-        var nodesStack = new Stack<(TreeNode Node, int CurrentHeight)>();
-
-        nodesStack.Push((root, -1));
-
-        while (nodesStack.Count > 0)
-        {
-            var (node, currentHeight) = nodesStack.Pop();
-
-            var nodeValue = node.val;
-
-            heights[nodeValue] = Math.Max(Math.Max(maxHeight, currentHeight), heights[nodeValue]);
-
-            var nextHeight = currentHeight + 1;
-
-            maxHeight = Math.Max(maxHeight, nextHeight);
-
-            var leftNode = node.left;
-
-            if (leftNode != null)
-            {
-                nodesStack.Push((leftNode, nextHeight));
-            }
-
-            var rightNode = node.right;
-
-            if (rightNode != null)
-            {
-                nodesStack.Push((rightNode, nextHeight));
+                nodesStack.Push((firstVisitedChild, nextHeight));
             }
         }
     }
