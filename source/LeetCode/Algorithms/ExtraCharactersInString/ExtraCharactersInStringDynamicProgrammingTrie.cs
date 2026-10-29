@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using LeetCode.Core.Models;
+
 namespace LeetCode.Algorithms.ExtraCharactersInString;
 
 /// <inheritdoc />
@@ -49,53 +51,5 @@ public sealed class ExtraCharactersInStringDynamicProgrammingTrie : IExtraCharac
         }
 
         return dp[0];
-    }
-
-    private sealed class Trie
-    {
-        public Trie(string[] words)
-        {
-            AddRange(words);
-        }
-
-        public TrieNode Root { get; } = new();
-
-        private void Add(string word)
-        {
-            var node = Root;
-
-            for (var i = 0; i < word.Length; i++)
-            {
-                var c = word[i];
-
-                if (!node.Children.TryGetValue(c, out var value))
-                {
-                    value = new TrieNode();
-
-                    node.Children[c] = value;
-                }
-
-                node = value;
-            }
-
-            node.Word = word;
-        }
-
-        private void AddRange(string[] words)
-        {
-            for (var i = 0; i < words.Length; i++)
-            {
-                var word = words[i];
-
-                Add(word);
-            }
-        }
-    }
-
-    private sealed class TrieNode
-    {
-        public Dictionary<char, TrieNode> Children { get; } = [];
-
-        public string? Word { get; set; }
     }
 }
