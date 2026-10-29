@@ -13,7 +13,7 @@ using LeetCode.Algorithms.SumOfElementsWithFrequencyDivisibleByK;
 
 namespace LeetCode.Tests.Algorithms.SumOfElementsWithFrequencyDivisibleByK;
 
-public abstract class SumOfElementsWithFrequencyDivisibleByKTestsBAse<T> where T : ISumOfElementsWithFrequencyDivisibleByK, new()
+public abstract class SumOfElementsWithFrequencyDivisibleByKTestsBase<T> where T : ISumOfElementsWithFrequencyDivisibleByK, new()
 {
     [TestMethod]
     [DataRow(new[] { 1, 2, 2, 3, 3, 3, 3, 4 }, 2, 16)]

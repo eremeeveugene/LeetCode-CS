@@ -15,4 +15,4 @@ namespace LeetCode.Tests.Algorithms.SumOfElementsWithFrequencyDivisibleByK;
 
 [TestClass]
 public sealed class SumOfElementsWithFrequencyDivisibleByKFrequencyArrayTests
-    : SumOfElementsWithFrequencyDivisibleByKTestsBAse<SumOfElementsWithFrequencyDivisibleByKFrequencyArray>;
+    : SumOfElementsWithFrequencyDivisibleByKTestsBase<SumOfElementsWithFrequencyDivisibleByKFrequencyArray>;
