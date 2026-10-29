@@ -31,4 +31,36 @@ public abstract class ClosestEqualElementQueriesBase : IClosestEqualElementQueri
 
         return Math.Min(directDistance, n - directDistance);
     }
+
+    /// <summary>
+    ///     Groups the indexes of <paramref name="nums" /> by value, each group in ascending order.
+    /// </summary>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The dictionary mapping each distinct value to the ascending list of its indexes.</returns>
+    /// <remarks>
+    ///     Time complexity - O(n), where n is the length of <paramref name="nums" />.
+    ///     Space complexity - O(n), where n is the length of <paramref name="nums" />.
+    /// </remarks>
+    protected static Dictionary<int, List<int>> GetNumToIndexesDictionary(int[] nums)
+    {
+        var numToIndexesDictionary = new Dictionary<int, List<int>>();
+
+        var n = nums.Length;
+
+        for (var i = 0; i < n; i++)
+        {
+            var num = nums[i];
+
+            if (!numToIndexesDictionary.TryGetValue(num, out var indexes))
+            {
+                indexes = [];
+
+                numToIndexesDictionary[num] = indexes;
+            }
+
+            indexes.Add(i);
+        }
+
+        return numToIndexesDictionary;
+    }
 }
