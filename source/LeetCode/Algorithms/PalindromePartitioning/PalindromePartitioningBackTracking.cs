@@ -32,7 +32,7 @@ public sealed class PalindromePartitioningBackTracking : IPalindromePartitioning
     {
         if (start >= s.Length)
         {
-            result.Add(new List<string>(currentPartition));
+            result.Add([.. currentPartition]);
 
             return;
         }

@@ -35,7 +35,7 @@ public sealed class CombinationSum2Backtracking : ICombinationSum2
         switch (remain)
         {
             case 0:
-                result.Add(new List<int>(tempList));
+                result.Add([.. tempList]);
 
                 break;
             case > 0:
