@@ -71,6 +71,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/)
 - [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/)
 - [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
+- [10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/)
 - [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)
 - [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/)
 - [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/)
