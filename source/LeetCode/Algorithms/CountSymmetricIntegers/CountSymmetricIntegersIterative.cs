@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.CountSymmetricIntegers;
 
 /// <inheritdoc />
@@ -25,7 +27,7 @@ public sealed class CountSymmetricIntegersIterative : ICountSymmetricIntegers
 
         for (var i = low; i <= high; i++)
         {
-            var numString = i.ToString();
+            var numString = i.ToString(CultureInfo.InvariantCulture);
             var length = numString.Length;
 
             if (length % 2 != 0)

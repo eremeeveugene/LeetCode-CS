@@ -9,6 +9,7 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
 using System.Numerics;
 using System.Text;
 
@@ -24,17 +25,17 @@ public sealed class FindTheClosestPalindromeIterative : IFindTheClosestPalindrom
     /// </remarks>
     public string NearestPalindromic(string n)
     {
-        var num = BigInteger.Parse(n);
+        var num = BigInteger.Parse(n, CultureInfo.InvariantCulture);
 
         var candidates = new List<BigInteger> { BigInteger.Pow(10, n.Length - 1) - 1, BigInteger.Pow(10, n.Length) + 1 };
 
-        var prefix = BigInteger.Parse(n[..((n.Length + 1) / 2)]);
+        var prefix = BigInteger.Parse(n[..((n.Length + 1) / 2)], CultureInfo.InvariantCulture);
 
         for (var i = prefix - 1; i <= prefix + 1; i++)
         {
             var candidate = BuildPalindrome(i, n.Length % 2 == 0);
 
-            candidates.Add(BigInteger.Parse(candidate));
+            candidates.Add(BigInteger.Parse(candidate, CultureInfo.InvariantCulture));
         }
 
         var minDiff = BigInteger.Abs(candidates[0] - num);
@@ -60,14 +61,14 @@ public sealed class FindTheClosestPalindromeIterative : IFindTheClosestPalindrom
             result = candidate;
         }
 
-        return result.ToString();
+        return result.ToString(CultureInfo.InvariantCulture);
     }
 
     private static string BuildPalindrome(BigInteger prefix, bool isEven)
     {
         var stringBuilder = new StringBuilder();
 
-        var prefixString = prefix.ToString();
+        var prefixString = prefix.ToString(CultureInfo.InvariantCulture);
 
         stringBuilder.Append(prefixString);
 

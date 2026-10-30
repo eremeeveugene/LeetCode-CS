@@ -38,7 +38,7 @@ public sealed class MultiplyStringsStack : IMultiplyStrings
         {
             var multiplyValuesStack = new Stack<int>();
 
-            var num2Value = (int)char.GetNumericValue(num2[num2Index]);
+            var num2Value = GetDigit(num2[num2Index]);
 
             num2Index--;
 
@@ -48,7 +48,7 @@ public sealed class MultiplyStringsStack : IMultiplyStrings
 
             while (num1Index >= 0)
             {
-                var num1Value = (int)char.GetNumericValue(num1[num1Index]);
+                var num1Value = GetDigit(num1[num1Index]);
 
                 num1Index--;
 
@@ -105,8 +105,8 @@ public sealed class MultiplyStringsStack : IMultiplyStrings
 
         while (num1Index >= 0 || num2Index >= 0)
         {
-            var num1Value = (int)char.GetNumericValue(num1[num1Index--]);
-            var num2Value = num2Index >= 0 ? (int)char.GetNumericValue(num2[num2Index--]) : 0;
+            var num1Value = GetDigit(num1[num1Index--]);
+            var num2Value = num2Index >= 0 ? GetDigit(num2[num2Index--]) : 0;
 
             var sum = num1Value + num2Value + remainder;
 
@@ -130,5 +130,19 @@ public sealed class MultiplyStringsStack : IMultiplyStrings
         }
 
         return resultStringBuilder.ToString();
+    }
+
+    /// <summary>
+    ///     Converts a digit character to its numeric value.
+    /// </summary>
+    /// <param name="c">The digit character.</param>
+    /// <returns>The numeric value of the digit.</returns>
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static int GetDigit(char c)
+    {
+        return c - '0';
     }
 }

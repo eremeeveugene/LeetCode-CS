@@ -45,7 +45,7 @@ public sealed class OpenTheLockBreadthFirstSearch : IOpenTheLock
 
             for (var i = 0; i < state.Length; i++)
             {
-                var digit = char.GetNumericValue(state[i]);
+                var digit = GetDigit(state[i]);
 
                 for (var move = -1; move <= 1; move += 2)
                 {
@@ -64,5 +64,19 @@ public sealed class OpenTheLockBreadthFirstSearch : IOpenTheLock
         }
 
         return -1;
+    }
+
+    /// <summary>
+    ///     Converts a digit character to its numeric value.
+    /// </summary>
+    /// <param name="c">The digit character.</param>
+    /// <returns>The numeric value of the digit.</returns>
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static int GetDigit(char c)
+    {
+        return c - '0';
     }
 }

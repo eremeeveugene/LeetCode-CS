@@ -42,7 +42,7 @@ public sealed class CountTheNumberOfSpecialCharacters1HashSet : ICountTheNumberO
             }
             else
             {
-                var lowerCaseChar = char.ToLower(c);
+                var lowerCaseChar = char.ToLowerInvariant(c);
 
                 upperCaseHashSet.Add(lowerCaseChar);
 

@@ -9,6 +9,7 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
 using System.Text;
 
 namespace LeetCode.Algorithms.ApplyDiscountToPrices;
@@ -41,7 +42,7 @@ public sealed class ApplyDiscountToPricesIterative : IApplyDiscountToPrices
                 {
                     var discountedPrice = number - (number * discount / 100);
 
-                    resultStringBuilder.Append($"${discountedPrice:F2}");
+                    resultStringBuilder.Append(CultureInfo.InvariantCulture, $"${discountedPrice:F2}");
                 }
             }
             else

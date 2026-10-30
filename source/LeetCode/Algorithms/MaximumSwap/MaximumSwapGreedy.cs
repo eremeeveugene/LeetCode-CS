@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.MaximumSwap;
 
 /// <inheritdoc />
@@ -21,7 +23,7 @@ public sealed class MaximumSwapGreedy : IMaximumSwap
     /// </remarks>
     public int MaximumSwap(int num)
     {
-        var digits = num.ToString().ToCharArray();
+        var digits = num.ToString(CultureInfo.InvariantCulture).ToCharArray();
 
         var last = new int[10];
 
@@ -41,7 +43,7 @@ public sealed class MaximumSwapGreedy : IMaximumSwap
 
                 (digits[i], digits[last[d]]) = (digits[last[d]], digits[i]);
 
-                return int.Parse(new string(digits));
+                return int.Parse(new string(digits), CultureInfo.InvariantCulture);
             }
         }
 

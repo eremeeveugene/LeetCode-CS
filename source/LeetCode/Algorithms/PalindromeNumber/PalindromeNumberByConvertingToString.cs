@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.PalindromeNumber;
 
 /// <inheritdoc />
@@ -34,7 +36,7 @@ public sealed class PalindromeNumberByConvertingToString : IPalindromeNumber
             return false;
         }
 
-        var xString = x.ToString();
+        var xString = x.ToString(CultureInfo.InvariantCulture);
         var i = 0;
         var j = xString.Length - 1;
 

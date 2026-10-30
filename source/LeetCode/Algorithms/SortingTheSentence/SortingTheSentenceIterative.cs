@@ -31,11 +31,25 @@ public sealed class SortingTheSentenceIterative : ISortingTheSentence
         {
             var wordsWithIndex = wordsWithIndexes[i];
 
-            var index = (int)char.GetNumericValue(wordsWithIndex[^1]) - 1;
+            var index = GetDigit(wordsWithIndex[^1]) - 1;
 
             words[index] = wordsWithIndex[..^1];
         }
 
         return string.Join(' ', words);
+    }
+
+    /// <summary>
+    ///     Converts a digit character to its numeric value.
+    /// </summary>
+    /// <param name="c">The digit character.</param>
+    /// <returns>The numeric value of the digit.</returns>
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static int GetDigit(char c)
+    {
+        return c - '0';
     }
 }

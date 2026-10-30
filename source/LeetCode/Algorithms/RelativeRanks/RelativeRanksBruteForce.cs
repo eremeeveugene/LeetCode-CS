@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.RelativeRanks;
 
 /// <inheritdoc />
@@ -38,7 +40,7 @@ public sealed class RelativeRanksBruteForce : IRelativeRanks
                 0 => "Gold Medal",
                 1 => "Silver Medal",
                 2 => "Bronze Medal",
-                _ => (i + 1).ToString()
+                _ => (i + 1).ToString(CultureInfo.InvariantCulture)
             };
         }
 

@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.BaseballGame;
 
 /// <inheritdoc />
@@ -41,7 +43,7 @@ public sealed class BaseballGameIterative : IBaseballGame
                     scores.Add(scores[^1] + scores[^2]);
                     break;
                 default:
-                    scores.Add(int.Parse(operation));
+                    scores.Add(int.Parse(operation, CultureInfo.InvariantCulture));
                     break;
             }
         }

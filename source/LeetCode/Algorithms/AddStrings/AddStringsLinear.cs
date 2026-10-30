@@ -35,13 +35,13 @@ public sealed class AddStringsLinear : IAddStrings
 
             if (num1Index >= 0)
             {
-                sum += (int)char.GetNumericValue(num1[num1Index]);
+                sum += GetDigit(num1[num1Index]);
                 num1Index--;
             }
 
             if (num2Index >= 0)
             {
-                sum += (int)char.GetNumericValue(num2[num2Index]);
+                sum += GetDigit(num2[num2Index]);
                 num2Index--;
             }
 
@@ -57,5 +57,19 @@ public sealed class AddStringsLinear : IAddStrings
         result[resultIndex] = (char)(carry + '0');
 
         return new string(result).TrimStart('0');
+    }
+
+    /// <summary>
+    ///     Converts a digit character to its numeric value.
+    /// </summary>
+    /// <param name="c">The digit character.</param>
+    /// <returns>The numeric value of the digit.</returns>
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static int GetDigit(char c)
+    {
+        return c - '0';
     }
 }

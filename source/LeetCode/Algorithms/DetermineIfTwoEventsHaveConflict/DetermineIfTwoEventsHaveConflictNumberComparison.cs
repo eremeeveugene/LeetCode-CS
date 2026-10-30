@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.DetermineIfTwoEventsHaveConflict;
 
 /// <inheritdoc />
@@ -33,6 +35,6 @@ public sealed class DetermineIfTwoEventsHaveConflictNumberComparison : IDetermin
     {
         var parts = time.Split(':');
 
-        return (int.Parse(parts[0]) * 60) + int.Parse(parts[1]);
+        return (int.Parse(parts[0], CultureInfo.InvariantCulture) * 60) + int.Parse(parts[1], CultureInfo.InvariantCulture);
     }
 }

@@ -34,7 +34,7 @@ public sealed class MultiplyStringsIterative : IMultiplyStrings
         {
             for (var j = num2.Length - 1; j >= 0; j--)
             {
-                var product = (int)char.GetNumericValue(num1[i]) * (int)char.GetNumericValue(num2[j]);
+                var product = GetDigit(num1[i]) * GetDigit(num2[j]);
                 var p1 = i + j;
                 var p2 = i + j + 1;
                 var sum = product + result[p2];
@@ -57,5 +57,19 @@ public sealed class MultiplyStringsIterative : IMultiplyStrings
         }
 
         return resultStringBuilder.ToString();
+    }
+
+    /// <summary>
+    ///     Converts a digit character to its numeric value.
+    /// </summary>
+    /// <param name="c">The digit character.</param>
+    /// <returns>The numeric value of the digit.</returns>
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static int GetDigit(char c)
+    {
+        return c - '0';
     }
 }

@@ -55,7 +55,7 @@ public sealed class LongestCommonPrefixBinarySearch : ILongestCommonPrefix
         var str1 = strs[0][..length];
         for (var i = 1; i < strs.Length; i++)
         {
-            if (!strs[i].StartsWith(str1))
+            if (!strs[i].StartsWith(str1, StringComparison.Ordinal))
             {
                 return false;
             }

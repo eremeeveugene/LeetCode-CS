@@ -39,6 +39,6 @@ public sealed class CountPrefixAndSuffixPairs1StringComparison : ICountPrefixAnd
 
     private static bool IsPrefixAndSuffix(string prefixSuffix, string word)
     {
-        return word.StartsWith(prefixSuffix) && word.EndsWith(prefixSuffix);
+        return word.StartsWith(prefixSuffix, StringComparison.Ordinal) && word.EndsWith(prefixSuffix, StringComparison.Ordinal);
     }
 }

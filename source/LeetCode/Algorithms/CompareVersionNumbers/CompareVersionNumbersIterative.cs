@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.CompareVersionNumbers;
 
 /// <inheritdoc />
@@ -32,14 +34,14 @@ public sealed class CompareVersionNumbersIterative : ICompareVersionNumbers
 
             if (i < version1Array.Length)
             {
-                version1Number = int.Parse(version1Array[i]);
+                version1Number = int.Parse(version1Array[i], CultureInfo.InvariantCulture);
             }
 
             var version2Number = 0;
 
             if (i < version2Array.Length)
             {
-                version2Number = int.Parse(version2Array[i]);
+                version2Number = int.Parse(version2Array[i], CultureInfo.InvariantCulture);
             }
 
             if (version1Number > version2Number)

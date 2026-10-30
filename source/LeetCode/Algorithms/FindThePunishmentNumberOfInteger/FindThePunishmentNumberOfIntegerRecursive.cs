@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.FindThePunishmentNumberOfInteger;
 
 /// <inheritdoc />
@@ -26,7 +28,7 @@ public sealed class FindThePunishmentNumberOfIntegerRecursive : IFindThePunishme
         for (var i = 1; i <= n; i++)
         {
             var square = i * i;
-            var squareStr = square.ToString();
+            var squareStr = square.ToString(CultureInfo.InvariantCulture);
 
             if (CanPartitionToSum(squareStr, 0, i, 0))
             {

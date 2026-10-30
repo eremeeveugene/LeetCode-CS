@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.LargestNumber;
 
 /// <inheritdoc />
@@ -28,7 +30,7 @@ public sealed class LargestNumberConcatenationSorting : ILargestNumber
         {
             var num = nums[i];
 
-            numsStrings[i] = num.ToString();
+            numsStrings[i] = num.ToString(CultureInfo.InvariantCulture);
         }
 
         Array.Sort(numsStrings, (a, b) => string.Compare(b + a, a + b, StringComparison.Ordinal));

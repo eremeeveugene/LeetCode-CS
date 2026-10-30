@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.Maximum69Number;
 
 /// <inheritdoc />
@@ -21,7 +23,7 @@ public sealed class Maximum69NumberString : IMaximum69Number
     /// </remarks>
     public int Maximum69Number(int num)
     {
-        var numStr = num.ToString();
+        var numStr = num.ToString(CultureInfo.InvariantCulture);
 
         var index = numStr.IndexOf('6');
 
@@ -30,6 +32,6 @@ public sealed class Maximum69NumberString : IMaximum69Number
             numStr = numStr[..index] + '9' + numStr[(index + 1)..];
         }
 
-        return int.Parse(numStr);
+        return int.Parse(numStr, CultureInfo.InvariantCulture);
     }
 }
