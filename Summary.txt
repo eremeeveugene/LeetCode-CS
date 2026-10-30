@@ -1,23 +1,23 @@
 Summary
-  Generated on: 10/30/2026 - 1:10:50 PM
-  Coverage date: 10/30/2026 - 1:09:35 PM - 10/30/2026 - 1:10:40 PM
+  Generated on: 10/30/2026 - 1:26:49 PM
+  Coverage date: 10/30/2026 - 1:25:23 PM - 10/30/2026 - 1:26:30 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1456
-  Files: 1456
+  Classes: 1457
+  Files: 1457
   Line coverage: 100%
-  Covered lines: 35756
+  Covered lines: 35793
   Uncovered lines: 0
-  Coverable lines: 35756
-  Total lines: 86774
-  Branch coverage: 99.9% (12586 of 12588)
-  Covered branches: 12586
-  Total branches: 12588
-  Method coverage: 100% (2310 of 2310)
-  Full method coverage: 100% (2310 of 2310)
-  Covered methods: 2310
-  Fully covered methods: 2310
-  Total methods: 2310
+  Coverable lines: 35793
+  Total lines: 86900
+  Branch coverage: 99.9% (12606 of 12608)
+  Covered branches: 12606
+  Total branches: 12608
+  Method coverage: 100% (2313 of 2313)
+  Full method coverage: 100% (2313 of 2313)
+  Covered methods: 2313
+  Fully covered methods: 2313
+  Total methods: 2313
 
 LeetCode                                                                                                                                                 100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray              100%
@@ -1121,6 +1121,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.RecoverTreeFromPreorderTraversal.RecoverTreeFromPreorderTraversalDepthFirstSearch                                                  100%
   LeetCode.Algorithms.RectangleOverlap.RectangleOverlapMath                                                                                              100%
   LeetCode.Algorithms.RegionsCutBySlashes.RegionsCutBySlashesDepthFirstSearch                                                                            100%
+  LeetCode.Algorithms.RegularExpressionMatching.RegularExpressionMatchingRecursive                                                                       100%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksBruteForce                                                                                              100%
   LeetCode.Algorithms.RelativeRanks.RelativeRanksTuple                                                                                                   100%
   LeetCode.Algorithms.RelativeSortArray.RelativeSortArrayCountingSort                                                                                    100%
