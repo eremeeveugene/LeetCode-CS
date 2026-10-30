@@ -1,6 +1,6 @@
 # LeetCode C# Solutions
 
-[![.NET](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml/badge.svg)](https://github.com/eremeeveugene/leetcode/actions/workflows/dotnet.yml)<br>
+[![.NET](https://github.com/eremeeveugene/LeetCode-CS/actions/workflows/dotnet.yml/badge.svg)](https://github.com/eremeeveugene/LeetCode-CS/actions/workflows/dotnet.yml)<br>
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=eremeeveugene_LeetCode-CS)<br>
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=sqale_rating)](https://sonarcloud.io/component_measures?id=eremeeveugene_LeetCode-CS&metric=sqale_rating)<br>
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=eremeeveugene_LeetCode-CS&metric=reliability_rating)](https://sonarcloud.io/component_measures?id=eremeeveugene_LeetCode-CS&metric=reliability_rating)<br>
