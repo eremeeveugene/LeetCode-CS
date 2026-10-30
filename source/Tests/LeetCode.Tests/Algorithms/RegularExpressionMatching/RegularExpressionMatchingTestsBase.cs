@@ -37,6 +37,8 @@ public abstract class RegularExpressionMatchingTestsBase<T> where T : IRegularEx
     [DataRow("aaa", "aaaa", false)]
     [DataRow("aaa", "ab*a*c*a", true)]
     [DataRow("aaa", "a.a", true)]
+    [DataRow("aaa", "a*a*b", false)]
+    [DataRow("aaaaaaaaaaaaab", "a*a*a*a*a*a*a*a*a*c", false)]
     [DataRow("aaab", "a*b", true)]
     [DataRow("b", "a*b", true)]
     [DataRow("ac", "ab*c", true)]
