@@ -25,7 +25,7 @@ public sealed class SummaryRangesIterative : ISummaryRanges
     {
         if (nums.Length == 0)
         {
-            return new List<string>();
+            return [];
         }
 
         var ranges = new List<string>();

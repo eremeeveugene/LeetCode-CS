@@ -134,6 +134,6 @@ public sealed class CountPrefixAndSuffixPairs1Trie : ICountPrefixAndSuffixPairs1
 
     private sealed class Node
     {
-        public Dictionary<char, Node> Nodes { get; } = new();
+        public Dictionary<char, Node> Nodes { get; } = [];
     }
 }
