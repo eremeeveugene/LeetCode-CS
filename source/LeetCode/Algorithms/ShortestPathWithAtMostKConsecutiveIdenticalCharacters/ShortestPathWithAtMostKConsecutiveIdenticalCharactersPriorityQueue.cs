@@ -32,7 +32,8 @@ public sealed class ShortestPathWithAtMostKConsecutiveIdenticalCharactersPriorit
 
         var distances = new int[n * k];
 
-        distances.AsSpan().Fill(int.MaxValue);
+        Array.Fill(distances, int.MaxValue);
+
         distances[0] = 0;
 
         var statesPriorityQueue = new PriorityQueue<int, int>();
