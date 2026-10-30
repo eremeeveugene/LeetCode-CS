@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.AddToArrayFormOfInteger;
 
 /// <inheritdoc />
@@ -25,7 +27,7 @@ public sealed class AddToArrayFormOfIntegerSummation : IAddToArrayFormOfInteger
     {
         var result = new List<int>();
 
-        var kString = k.ToString();
+        var kString = k.ToString(CultureInfo.InvariantCulture);
         var kIndex = kString.Length - 1;
         var numIndex = num.Length - 1;
 
@@ -45,7 +47,7 @@ public sealed class AddToArrayFormOfIntegerSummation : IAddToArrayFormOfInteger
 
             if (kIndex >= 0)
             {
-                val2 = (int)char.GetNumericValue(kString[kIndex]);
+                val2 = GetDigit(kString[kIndex]);
                 kIndex--;
             }
 
@@ -72,5 +74,19 @@ public sealed class AddToArrayFormOfIntegerSummation : IAddToArrayFormOfInteger
         result.Reverse();
 
         return result;
+    }
+
+    /// <summary>
+    ///     Converts a digit character to its numeric value.
+    /// </summary>
+    /// <param name="c">The digit character.</param>
+    /// <returns>The numeric value of the digit.</returns>
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static int GetDigit(char c)
+    {
+        return c - '0';
     }
 }

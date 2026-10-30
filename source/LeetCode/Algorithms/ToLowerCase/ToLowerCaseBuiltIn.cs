@@ -21,6 +21,6 @@ public sealed class ToLowerCaseBuiltIn : IToLowerCase
     /// </remarks>
     public string ToLowerCase(string s)
     {
-        return s.ToLower();
+        return s.ToLowerInvariant();
     }
 }

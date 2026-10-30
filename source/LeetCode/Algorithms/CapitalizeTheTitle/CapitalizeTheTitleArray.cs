@@ -27,11 +27,11 @@ public sealed class CapitalizeTheTitleArray : ICapitalizeTheTitle
         {
             if (words[i].Length <= 2)
             {
-                words[i] = words[i].ToLower();
+                words[i] = words[i].ToLowerInvariant();
             }
             else
             {
-                words[i] = char.ToUpper(words[i][0]) + words[i][1..].ToLower();
+                words[i] = char.ToUpperInvariant(words[i][0]) + words[i][1..].ToLowerInvariant();
             }
         }
 

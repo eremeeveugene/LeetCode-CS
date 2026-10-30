@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Concurrency.FizzBuzzMultithreaded;
+using System.Globalization;
 
 namespace LeetCode.Tests.Concurrency.FizzBuzzMultithreaded;
 
@@ -32,7 +33,7 @@ public abstract class FizzBuzzMultithreadedTestsBase
             Task.Run(() => solution.Fizz(() => actualResult.Add("fizz")), TestContext.CancellationToken),
             Task.Run(() => solution.Buzz(() => actualResult.Add("buzz")), TestContext.CancellationToken),
             Task.Run(() => solution.Fizzbuzz(() => actualResult.Add("fizzbuzz")), TestContext.CancellationToken),
-            Task.Run(() => solution.Number(n => actualResult.Add(n.ToString())), TestContext.CancellationToken)
+            Task.Run(() => solution.Number(n => actualResult.Add(n.ToString(CultureInfo.InvariantCulture))), TestContext.CancellationToken)
         ];
 
         await Task.WhenAll(tasks);

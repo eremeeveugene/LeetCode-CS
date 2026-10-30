@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.FizzBuzz;
 
 /// <inheritdoc />
@@ -43,6 +45,6 @@ public sealed class FizzBuzzIterative : IFizzBuzz
             return "Fizz";
         }
 
-        return i % 5 == 0 ? "Buzz" : i.ToString();
+        return i % 5 == 0 ? "Buzz" : i.ToString(CultureInfo.InvariantCulture);
     }
 }

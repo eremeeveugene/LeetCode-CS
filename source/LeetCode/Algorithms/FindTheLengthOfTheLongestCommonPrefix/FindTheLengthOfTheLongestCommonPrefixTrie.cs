@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix;
 
 /// <inheritdoc />
@@ -63,7 +65,7 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixTrie : IFindTheLengthOf
         private void Add(int num)
         {
             var node = _root;
-            var numStr = num.ToString();
+            var numStr = num.ToString(CultureInfo.InvariantCulture);
 
             for (var i = 0; i < numStr.Length; i++)
             {
@@ -78,7 +80,7 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixTrie : IFindTheLengthOf
         public int FindLongestPrefix(int num)
         {
             var node = _root;
-            var numStr = num.ToString();
+            var numStr = num.ToString(CultureInfo.InvariantCulture);
             var longestPrefix = 0;
 
             for (var i = 0; i < numStr.Length; i++)

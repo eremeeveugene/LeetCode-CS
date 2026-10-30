@@ -36,7 +36,7 @@ public sealed class ReplaceWordsBruteForce : IReplaceWords
             {
                 var dictionaryWord = sortedDictionary[j];
 
-                if (!word.StartsWith(dictionaryWord))
+                if (!word.StartsWith(dictionaryWord, StringComparison.Ordinal))
                 {
                     continue;
                 }

@@ -45,7 +45,7 @@ public sealed class ValidWordIterative : IValidWord
                 continue;
             }
 
-            if (Vowels.Contains(char.ToLower(character)))
+            if (Vowels.Contains(char.ToLowerInvariant(character)))
             {
                 hasVowel = true;
             }

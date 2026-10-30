@@ -9,6 +9,7 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
 using System.Numerics;
 
 namespace LeetCode.Algorithms.MultiplyStrings;
@@ -23,11 +24,11 @@ public sealed class MultiplyStringsBigInteger : IMultiplyStrings
     /// </remarks>
     public string Multiply(string num1, string num2)
     {
-        var n1 = BigInteger.Parse(num1);
-        var n2 = BigInteger.Parse(num2);
+        var n1 = BigInteger.Parse(num1, CultureInfo.InvariantCulture);
+        var n2 = BigInteger.Parse(num2, CultureInfo.InvariantCulture);
 
         var result = n1 * n2;
 
-        return result.ToString();
+        return result.ToString(CultureInfo.InvariantCulture);
     }
 }

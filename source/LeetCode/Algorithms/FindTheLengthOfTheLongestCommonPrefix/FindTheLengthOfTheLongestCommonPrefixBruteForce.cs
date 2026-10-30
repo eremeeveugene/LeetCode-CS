@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.FindTheLengthOfTheLongestCommonPrefix;
 
 /// <inheritdoc />
@@ -41,8 +43,8 @@ public sealed class FindTheLengthOfTheLongestCommonPrefixBruteForce : IFindTheLe
 
     private static int GetCommonPrefixLength(int num1, int num2)
     {
-        var str1 = num1.ToString();
-        var str2 = num2.ToString();
+        var str1 = num1.ToString(CultureInfo.InvariantCulture);
+        var str2 = num2.ToString(CultureInfo.InvariantCulture);
 
         var minLength = Math.Min(str1.Length, str2.Length);
 

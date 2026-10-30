@@ -27,7 +27,7 @@ public sealed class CountingWordsWithGivenPrefixIterative : ICountingWordsWithGi
         {
             var word = words[i];
 
-            if (word.StartsWith(pref))
+            if (word.StartsWith(pref, StringComparison.Ordinal))
             {
                 count++;
             }

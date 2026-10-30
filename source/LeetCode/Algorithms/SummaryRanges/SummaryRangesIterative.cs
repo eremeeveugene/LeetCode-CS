@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.SummaryRanges;
 
 /// <inheritdoc />
@@ -23,7 +25,7 @@ public sealed class SummaryRangesIterative : ISummaryRanges
     {
         if (nums.Length == 0)
         {
-            return new List<string>();
+            return [];
         }
 
         var ranges = new List<string>();
@@ -53,6 +55,6 @@ public sealed class SummaryRangesIterative : ISummaryRanges
 
     private static string GetRangeString(int start, int end)
     {
-        return start == end ? start.ToString() : $"{start}->{end}";
+        return start == end ? start.ToString(CultureInfo.InvariantCulture) : $"{start}->{end}";
     }
 }

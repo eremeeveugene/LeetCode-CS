@@ -30,14 +30,14 @@ public sealed class CompareVersionNumbersTwoPointers : ICompareVersionNumbers
 
             while (version1Index < version1.Length && version1[version1Index] != '.')
             {
-                num1 = (num1 * 10) + (int)char.GetNumericValue(version1[version1Index]);
+                num1 = (num1 * 10) + GetDigit(version1[version1Index]);
 
                 version1Index++;
             }
 
             while (version2Index < version2.Length && version2[version2Index] != '.')
             {
-                num2 = (num2 * 10) + (int)char.GetNumericValue(version2[version2Index]);
+                num2 = (num2 * 10) + GetDigit(version2[version2Index]);
 
                 version2Index++;
             }
@@ -57,5 +57,19 @@ public sealed class CompareVersionNumbersTwoPointers : ICompareVersionNumbers
         }
 
         return 0;
+    }
+
+    /// <summary>
+    ///     Converts a digit character to its numeric value.
+    /// </summary>
+    /// <param name="c">The digit character.</param>
+    /// <returns>The numeric value of the digit.</returns>
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static int GetDigit(char c)
+    {
+        return c - '0';
     }
 }

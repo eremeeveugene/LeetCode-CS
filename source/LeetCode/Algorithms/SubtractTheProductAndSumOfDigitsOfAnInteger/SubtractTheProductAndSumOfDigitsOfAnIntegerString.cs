@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.SubtractTheProductAndSumOfDigitsOfAnInteger;
 
 /// <inheritdoc />
@@ -24,16 +26,30 @@ public sealed class SubtractTheProductAndSumOfDigitsOfAnIntegerString : ISubtrac
         var productOfDigits = 1;
         var sumOfDigits = 0;
 
-        var digits = n.ToString();
+        var digits = n.ToString(CultureInfo.InvariantCulture);
 
         for (var i = 0; i < digits.Length; i++)
         {
-            var numericValue = (int)char.GetNumericValue(digits[i]);
+            var numericValue = GetDigit(digits[i]);
 
             productOfDigits *= numericValue;
             sumOfDigits += numericValue;
         }
 
         return productOfDigits - sumOfDigits;
+    }
+
+    /// <summary>
+    ///     Converts a digit character to its numeric value.
+    /// </summary>
+    /// <param name="c">The digit character.</param>
+    /// <returns>The numeric value of the digit.</returns>
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static int GetDigit(char c)
+    {
+        return c - '0';
     }
 }

@@ -118,7 +118,7 @@ public sealed class CountPrefixAndSuffixPairs1Trie : ICountPrefixAndSuffixPairs1
     /// <returns><see langword="true" /> if <paramref name="word" /> starts with <paramref name="prefix" />; otherwise, <see langword="false" />.</returns>
     private static bool IsPrefix(string prefix, string word)
     {
-        return word.StartsWith(prefix);
+        return word.StartsWith(prefix, StringComparison.Ordinal);
     }
 
     /// <summary>
@@ -129,11 +129,11 @@ public sealed class CountPrefixAndSuffixPairs1Trie : ICountPrefixAndSuffixPairs1
     /// <returns><see langword="true" /> if <paramref name="word" /> ends with <paramref name="suffix" />; otherwise, <see langword="false" />.</returns>
     private static bool IsSuffix(string suffix, string word)
     {
-        return word.EndsWith(suffix);
+        return word.EndsWith(suffix, StringComparison.Ordinal);
     }
 
     private sealed class Node
     {
-        public Dictionary<char, Node> Nodes { get; } = new();
+        public Dictionary<char, Node> Nodes { get; } = [];
     }
 }

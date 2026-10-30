@@ -1,1 +1,6 @@
 N:System.Linq;LINQ is prohibited in this repository. Use indexed for loops.
+M:System.Int32.Parse(System.String);Culture-sensitive. Use a GetDigit(char) helper for single digits, or pass CultureInfo.InvariantCulture.
+M:System.Char.GetNumericValue(System.Char);Returns double. Use a GetDigit(char) helper (c - '0') instead.
+M:System.Char.GetNumericValue(System.String,System.Int32);Returns double. Use a GetDigit(char) helper (c - '0') instead.
+M:System.Convert.ToInt32(System.Char);Returns the UTF-16 code, not the digit value. Use a GetDigit(char) helper (c - '0') instead.
+T:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert;Use Assert.AreSequenceEqual for flat collections or Assert.AreEquivalent for nested ones.

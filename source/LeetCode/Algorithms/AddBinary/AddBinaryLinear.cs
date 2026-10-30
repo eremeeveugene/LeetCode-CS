@@ -35,13 +35,13 @@ public sealed class AddBinaryLinear : IAddBinary
 
             if (aIndex >= 0)
             {
-                sum += (int)char.GetNumericValue(a[aIndex]);
+                sum += GetDigit(a[aIndex]);
                 aIndex--;
             }
 
             if (bIndex >= 0)
             {
-                sum += (int)char.GetNumericValue(b[bIndex]);
+                sum += GetDigit(b[bIndex]);
                 bIndex--;
             }
 
@@ -57,5 +57,19 @@ public sealed class AddBinaryLinear : IAddBinary
         result[resultIndex] = (char)(carry + '0');
 
         return new string(result).TrimStart('0');
+    }
+
+    /// <summary>
+    ///     Converts a digit character to its numeric value.
+    /// </summary>
+    /// <param name="c">The digit character.</param>
+    /// <returns>The numeric value of the digit.</returns>
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static int GetDigit(char c)
+    {
+        return c - '0';
     }
 }

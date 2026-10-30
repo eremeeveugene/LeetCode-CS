@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.HappyNumber;
 
 /// <inheritdoc />
@@ -39,7 +41,7 @@ public sealed class HappyNumberHashSetChars : IHappyNumber
 
     private static int GetNext(int n)
     {
-        var digits = n.ToString();
+        var digits = n.ToString(CultureInfo.InvariantCulture);
         var sum = 0;
 
         for (var i = 0; i < digits.Length; i++)

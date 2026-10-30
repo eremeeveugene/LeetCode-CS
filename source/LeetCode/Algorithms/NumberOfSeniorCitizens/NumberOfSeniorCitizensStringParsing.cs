@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.NumberOfSeniorCitizens;
 
 /// <inheritdoc />
@@ -27,7 +29,7 @@ public sealed class NumberOfSeniorCitizensStringParsing : INumberOfSeniorCitizen
         {
             var detail = details[i];
 
-            if (int.Parse(detail.Substring(11, 2)) > 60)
+            if (int.Parse(detail.AsSpan(11, 2), CultureInfo.InvariantCulture) > 60)
             {
                 count++;
             }

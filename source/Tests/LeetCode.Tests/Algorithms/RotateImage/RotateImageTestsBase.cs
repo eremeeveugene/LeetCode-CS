@@ -29,7 +29,7 @@ public abstract class RotateImageTestsBase<T> where T : IRotateImage, new()
         Assert.AreEquivalent(expectedResult, matrix);
     }
 
-    public static IEnumerable<object[]> GetTestData()
+    private static IEnumerable<object[]> GetTestData()
     {
         yield return
         [

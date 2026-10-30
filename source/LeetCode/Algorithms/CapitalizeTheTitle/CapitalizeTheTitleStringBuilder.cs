@@ -44,11 +44,11 @@ public sealed class CapitalizeTheTitleStringBuilder : ICapitalizeTheTitle
         {
             var resultWord = new char[word.Length];
 
-            resultWord[0] = char.ToUpper(word[0]);
+            resultWord[0] = char.ToUpperInvariant(word[0]);
 
             for (var i = 1; i < word.Length; i++)
             {
-                resultWord[i] = char.ToLower(word[i]);
+                resultWord[i] = char.ToLowerInvariant(word[i]);
             }
 
             return resultWord;
@@ -59,7 +59,7 @@ public sealed class CapitalizeTheTitleStringBuilder : ICapitalizeTheTitle
 
             for (var i = 0; i < word.Length; i++)
             {
-                resultWord[i] = char.ToLower(word[i]);
+                resultWord[i] = char.ToLowerInvariant(word[i]);
             }
 
             return resultWord;

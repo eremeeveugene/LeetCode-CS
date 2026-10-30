@@ -29,7 +29,7 @@ public sealed class MakeTheStringGreatStringBuilder : IMakeTheStringGreat
         {
             var c = s[i];
 
-            if (stringBuilder.Length > 0 && char.ToLower(stringBuilder[^1]) == char.ToLower(c) && stringBuilder[^1] != c)
+            if (stringBuilder.Length > 0 && char.ToLowerInvariant(stringBuilder[^1]) == char.ToLowerInvariant(c) && stringBuilder[^1] != c)
             {
                 stringBuilder.Remove(stringBuilder.Length - 1, 1);
             }

@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.DayOfTheYear;
 
 /// <inheritdoc />
@@ -25,9 +27,9 @@ public sealed class DayOfTheYearMath : IDayOfTheYear
     {
         var dateSpan = date.AsSpan();
 
-        var year = int.Parse(dateSpan[..4]);
-        var month = int.Parse(dateSpan.Slice(5, 2));
-        var day = int.Parse(dateSpan.Slice(8, 2));
+        var year = int.Parse(dateSpan[..4], CultureInfo.InvariantCulture);
+        var month = int.Parse(dateSpan.Slice(5, 2), CultureInfo.InvariantCulture);
+        var day = int.Parse(dateSpan.Slice(8, 2), CultureInfo.InvariantCulture);
 
         var dayOfYear = CumulativeDays[month - 1] + day;
 

@@ -10,6 +10,7 @@
 // --------------------------------------------------------------------------------
 
 using LeetCode.Algorithms.RelativeRanks;
+using System.Globalization;
 
 namespace LeetCode.Tests.Algorithms.RelativeRanks;
 
@@ -58,7 +59,7 @@ public abstract class RelativeRanksTestsBase<T> where T : IRelativeRanks, new()
         for (var i = 0; i < score.Length; i++)
         {
             score[i] = i;
-            expectedResult[i] = (10000 - i).ToString();
+            expectedResult[i] = (10000 - i).ToString(CultureInfo.InvariantCulture);
         }
 
         expectedResult[9999] = "Gold Medal";

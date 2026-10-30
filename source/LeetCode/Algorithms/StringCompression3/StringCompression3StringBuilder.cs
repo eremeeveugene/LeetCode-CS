@@ -9,6 +9,7 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
 using System.Text;
 
 namespace LeetCode.Algorithms.StringCompression3;
@@ -40,7 +41,7 @@ public sealed class StringCompression3StringBuilder : IStringCompression3
             {
                 if (count > 0)
                 {
-                    stringBuilder.Append($"{count}{currentCharacter}");
+                    stringBuilder.Append(CultureInfo.InvariantCulture, $"{count}{currentCharacter}");
                 }
 
                 count = 1;
@@ -48,7 +49,7 @@ public sealed class StringCompression3StringBuilder : IStringCompression3
             }
         }
 
-        stringBuilder.Append($"{count}{currentCharacter}");
+        stringBuilder.Append(CultureInfo.InvariantCulture, $"{count}{currentCharacter}");
 
         return stringBuilder.ToString();
     }

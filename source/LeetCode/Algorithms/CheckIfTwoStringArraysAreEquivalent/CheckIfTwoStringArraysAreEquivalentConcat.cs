@@ -21,6 +21,6 @@ public sealed class CheckIfTwoStringArraysAreEquivalentConcat : ICheckIfTwoStrin
     /// </remarks>
     public bool ArrayStringsAreEqual(string[] word1, string[] word2)
     {
-        return string.Concat(word1).Equals(string.Concat(word2));
+        return string.Concat(word1).Equals(string.Concat(word2), StringComparison.Ordinal);
     }
 }

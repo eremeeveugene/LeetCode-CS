@@ -37,13 +37,13 @@ public sealed class AddBinaryIterative : IAddBinary
 
             if (num1Index >= 0)
             {
-                val1 = (int)char.GetNumericValue(a[num1Index]);
+                val1 = GetDigit(a[num1Index]);
                 num1Index--;
             }
 
             if (num2Index >= 0)
             {
-                val2 = (int)char.GetNumericValue(b[num2Index]);
+                val2 = GetDigit(b[num2Index]);
                 num2Index--;
             }
 
@@ -68,5 +68,19 @@ public sealed class AddBinaryIterative : IAddBinary
         }
 
         return resultBuilder.ToString();
+    }
+
+    /// <summary>
+    ///     Converts a digit character to its numeric value.
+    /// </summary>
+    /// <param name="c">The digit character.</param>
+    /// <returns>The numeric value of the digit.</returns>
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static int GetDigit(char c)
+    {
+        return c - '0';
     }
 }

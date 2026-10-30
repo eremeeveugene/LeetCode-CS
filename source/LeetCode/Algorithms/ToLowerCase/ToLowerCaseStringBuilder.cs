@@ -29,7 +29,7 @@ public sealed class ToLowerCaseStringBuilder : IToLowerCase
         {
             var c = s[i];
 
-            resultStringBuilder.Append(char.ToLower(c));
+            resultStringBuilder.Append(char.ToLowerInvariant(c));
         }
 
         return resultStringBuilder.ToString();

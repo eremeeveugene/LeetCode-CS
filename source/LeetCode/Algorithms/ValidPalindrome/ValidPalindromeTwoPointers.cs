@@ -36,7 +36,7 @@ public sealed class ValidPalindromeTwoPointers : IValidPalindrome
                 right--;
             }
 
-            if (char.ToLower(s[left]) != char.ToLower(s[right]))
+            if (char.ToLowerInvariant(s[left]) != char.ToLowerInvariant(s[right]))
             {
                 return false;
             }

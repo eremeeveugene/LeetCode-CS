@@ -45,7 +45,7 @@ public sealed class FractionAdditionAndSubtractionSimulation : IFractionAddition
 
             while (char.IsDigit(expression[i]))
             {
-                currentNumerator = (currentNumerator * 10) + (int)char.GetNumericValue(expression[i]);
+                currentNumerator = (currentNumerator * 10) + GetDigit(expression[i]);
 
                 i++;
             }
@@ -58,7 +58,7 @@ public sealed class FractionAdditionAndSubtractionSimulation : IFractionAddition
 
             while (i < expression.Length && char.IsDigit(expression[i]))
             {
-                currentDenominator = (currentDenominator * 10) + (int)char.GetNumericValue(expression[i]);
+                currentDenominator = (currentDenominator * 10) + GetDigit(expression[i]);
                 i++;
             }
 
@@ -90,5 +90,19 @@ public sealed class FractionAdditionAndSubtractionSimulation : IFractionAddition
         }
 
         return numerator;
+    }
+
+    /// <summary>
+    ///     Converts a digit character to its numeric value.
+    /// </summary>
+    /// <param name="c">The digit character.</param>
+    /// <returns>The numeric value of the digit.</returns>
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static int GetDigit(char c)
+    {
+        return c - '0';
     }
 }

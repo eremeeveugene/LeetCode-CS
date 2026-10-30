@@ -9,6 +9,8 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
+using System.Globalization;
+
 namespace LeetCode.Algorithms.MaximumDifferenceByRemappingDigit;
 
 /// <inheritdoc />
@@ -21,7 +23,7 @@ public sealed class MaximumDifferenceByRemappingDigitGreedy : IMaximumDifference
     /// </remarks>
     public int MinMaxDifference(int num)
     {
-        var digits = num.ToString();
+        var digits = num.ToString(CultureInfo.InvariantCulture);
 
         var targetMax = '\0';
 

@@ -38,7 +38,7 @@ public sealed class MakeTheStringGreatIterative : IMakeTheStringGreat
 
         while (i < sList.Count - 1)
         {
-            if (char.ToLower(sList[i]) == char.ToLower(sList[i + 1]) &&
+            if (char.ToLowerInvariant(sList[i]) == char.ToLowerInvariant(sList[i + 1]) &&
                 ((char.IsLower(sList[i]) && char.IsUpper(sList[i + 1])) || (char.IsUpper(sList[i]) && char.IsLower(sList[i + 1]))))
             {
                 sList.RemoveAt(i + 1);
