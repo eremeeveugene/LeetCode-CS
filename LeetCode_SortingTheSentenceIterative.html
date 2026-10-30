@@ -693,7 +693,7 @@ a.percentagebar {
 <table>
 <tr>
 <th>Covered lines:</th>
-<td class="limit-width right" title="11">11</td>
+<td class="limit-width right" title="14">14</td>
 </tr>
 <tr>
 <th>Uncovered lines:</th>
@@ -701,15 +701,15 @@ a.percentagebar {
 </tr>
 <tr>
 <th>Coverable lines:</th>
-<td class="limit-width right" title="11">11</td>
+<td class="limit-width right" title="14">14</td>
 </tr>
 <tr>
 <th>Total lines:</th>
-<td class="limit-width right" title="41">41</td>
+<td class="limit-width right" title="55">55</td>
 </tr>
 <tr>
 <th>Line coverage:</th>
-<td class="limit-width right" title="11 of 11">100%</td>
+<td class="limit-width right" title="14 of 14">100%</td>
 </tr>
 </table>
 </div>
@@ -760,6 +760,7 @@ a.percentagebar {
 <thead><tr><th>Method</th><th>Branch coverage <a href="https://en.wikipedia.org/wiki/Code_coverage" target="_blank"><i class="icon-info-circled"></i></a></th><th>Crap Score <a href="https://googletesting.blogspot.de/2011/02/this-code-is-crap.html" target="_blank"><i class="icon-info-circled"></i></a></th><th>Cyclomatic complexity <a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity" target="_blank"><i class="icon-info-circled"></i></a></th><th>Line coverage <a href="https://en.wikipedia.org/wiki/Code_coverage" target="_blank"><i class="icon-info-circled"></i></a></th></tr></thead>
 <tbody>
 <tr><td title="SortSentence(System.String)"><a href="#file0_line25" class="navigatetohash">SortSentence(...)</a></td><td>100%</td><td>2</td><td>2</td><td>100%</td></tr>
+<tr><td title="GetDigit(System.Char)"><a href="#file0_line52" class="navigatetohash">GetDigit(...)</a></td><td>100%</td><td>1</td><td>1</td><td>100%</td></tr>
 </tbody>
 </table>
 </div>
@@ -802,22 +803,37 @@ a.percentagebar {
 <tr class="coverableline" title="Covered (84 visits)" data-coverage="{'AllTestMethods': {'VC': '84', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">84</td><td class="rightmargin right"><a id="file0_line31"></a><code>31</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</code></td></tr>
 <tr class="coverableline" title="Covered (84 visits)" data-coverage="{'AllTestMethods': {'VC': '84', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">84</td><td class="rightmargin right"><a id="file0_line32"></a><code>32</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;wordsWithIndex&nbsp;=&nbsp;wordsWithIndexes[i];</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line33"></a><code>33</code></td><td></td><td class="lightgray"><code></code></td></tr>
-<tr class="coverableline" title="Covered (84 visits)" data-coverage="{'AllTestMethods': {'VC': '84', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">84</td><td class="rightmargin right"><a id="file0_line34"></a><code>34</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;index&nbsp;=&nbsp;(int)char.GetNumericValue(wordsWithIndex[^1])&nbsp;-&nbsp;1;</code></td></tr>
+<tr class="coverableline" title="Covered (84 visits)" data-coverage="{'AllTestMethods': {'VC': '84', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">84</td><td class="rightmargin right"><a id="file0_line34"></a><code>34</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;index&nbsp;=&nbsp;GetDigit(wordsWithIndex[^1])&nbsp;-&nbsp;1;</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line35"></a><code>35</code></td><td></td><td class="lightgray"><code></code></td></tr>
 <tr class="coverableline" title="Covered (84 visits)" data-coverage="{'AllTestMethods': {'VC': '84', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">84</td><td class="rightmargin right"><a id="file0_line36"></a><code>36</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;words[index]&nbsp;=&nbsp;wordsWithIndex[..^1];</code></td></tr>
 <tr class="coverableline" title="Covered (84 visits)" data-coverage="{'AllTestMethods': {'VC': '84', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">84</td><td class="rightmargin right"><a id="file0_line37"></a><code>37</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></td></tr>
 <tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line38"></a><code>38</code></td><td></td><td class="lightgray"><code></code></td></tr>
 <tr class="coverableline" title="Covered (20 visits)" data-coverage="{'AllTestMethods': {'VC': '20', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">20</td><td class="rightmargin right"><a id="file0_line39"></a><code>39</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;string.Join(&#39;&nbsp;&#39;,&nbsp;words);</code></td></tr>
 <tr class="coverableline" title="Covered (20 visits)" data-coverage="{'AllTestMethods': {'VC': '20', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">20</td><td class="rightmargin right"><a id="file0_line40"></a><code>40</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></td></tr>
-<tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line41"></a><code>41</code></td><td></td><td class="lightgray"><code>}</code></td></tr>
+<tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line41"></a><code>41</code></td><td></td><td class="lightgray"><code></code></td></tr>
+<tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line42"></a><code>42</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;&lt;summary&gt;</code></td></tr>
+<tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line43"></a><code>43</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Converts&nbsp;a&nbsp;digit&nbsp;character&nbsp;to&nbsp;its&nbsp;numeric&nbsp;value.</code></td></tr>
+<tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line44"></a><code>44</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;&lt;/summary&gt;</code></td></tr>
+<tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line45"></a><code>45</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;&lt;param&nbsp;name=&quot;c&quot;&gt;The&nbsp;digit&nbsp;character.&lt;/param&gt;</code></td></tr>
+<tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line46"></a><code>46</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;&lt;returns&gt;The&nbsp;numeric&nbsp;value&nbsp;of&nbsp;the&nbsp;digit.&lt;/returns&gt;</code></td></tr>
+<tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line47"></a><code>47</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;&lt;remarks&gt;</code></td></tr>
+<tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line48"></a><code>48</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time&nbsp;complexity&nbsp;-&nbsp;O(1)</code></td></tr>
+<tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line49"></a><code>49</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Space&nbsp;complexity&nbsp;-&nbsp;O(1)</code></td></tr>
+<tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line50"></a><code>50</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;///&nbsp;&lt;/remarks&gt;</code></td></tr>
+<tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line51"></a><code>51</code></td><td></td><td class="lightgray"><code>&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;static&nbsp;int&nbsp;GetDigit(char&nbsp;c)</code></td></tr>
+<tr class="coverableline" title="Covered (84 visits)" data-coverage="{'AllTestMethods': {'VC': '84', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">84</td><td class="rightmargin right"><a id="file0_line52"></a><code>52</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;{</code></td></tr>
+<tr class="coverableline" title="Covered (84 visits)" data-coverage="{'AllTestMethods': {'VC': '84', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">84</td><td class="rightmargin right"><a id="file0_line53"></a><code>53</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;c&nbsp;-&nbsp;&#39;0&#39;;</code></td></tr>
+<tr class="coverableline" title="Covered (84 visits)" data-coverage="{'AllTestMethods': {'VC': '84', 'LVS': 'green'}}"><td class="green">&nbsp;</td><td class="leftmargin rightmargin right">84</td><td class="rightmargin right"><a id="file0_line54"></a><code>54</code></td><td></td><td class="lightgreen"><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></td></tr>
+<tr class="" title="Not coverable" data-coverage="{'AllTestMethods': {'VC': '', 'LVS': 'gray'}}"><td class="gray">&nbsp;</td><td class="leftmargin rightmargin right"></td><td class="rightmargin right"><a id="file0_line55"></a><code>55</code></td><td></td><td class="lightgray"><code>}</code></td></tr>
 </tbody>
 </table>
 </div>
-<div class="footer">Generated by: ReportGenerator 5.5.12.0<br />10/30/2026 - 10:48:08 AM<br /><a href="https://github.com/danielpalme/ReportGenerator">GitHub</a> | <a href="https://reportgenerator.io">reportgenerator.io</a></div></div>
+<div class="footer">Generated by: ReportGenerator 5.5.12.0<br />10/30/2026 - 11:27:07 AM<br /><a href="https://github.com/danielpalme/ReportGenerator">GitHub</a> | <a href="https://reportgenerator.io">reportgenerator.io</a></div></div>
 <div class="containerright">
 <div class="containerrightfixed">
 <h1>Methods/Properties</h1>
 <a href="#file0_line25" class="navigatetohash percentagebar percentagebar100" title="Line coverage: 100% - SortSentence(System.String)"><i class="icon-cube"></i>SortSentence(System.String)</a><br />
+<a href="#file0_line52" class="navigatetohash percentagebar percentagebar100" title="Line coverage: 100% - GetDigit(System.Char)"><i class="icon-cube"></i>GetDigit(System.Char)</a><br />
 <br/></div>
 </div></div>
 <script type="text/javascript">/* <![CDATA[ */ /* Chartist.js 0.11.4
