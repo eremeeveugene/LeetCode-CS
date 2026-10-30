@@ -84,6 +84,8 @@ public abstract class ShortestPathWithAtMostKConsecutiveIdenticalCharactersTests
 
         yield return [5, new[] { new[] { 0, 1, 1 }, new[] { 1, 2, 1 }, new[] { 2, 3, 1 }, new[] { 3, 4, 1 } }, "aabba", 2, 4];
 
+        yield return [4, new[] { new[] { 0, 1, 5 }, new[] { 0, 2, 1 }, new[] { 2, 1, 1 }, new[] { 1, 3, 10 } }, "abcd", 1, 12];
+
         yield return
         [
             5,
