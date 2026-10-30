@@ -13,7 +13,7 @@ using LeetCode.Algorithms.BitwiseXOROfAllPairings;
 
 namespace LeetCode.Tests.Algorithms.BitwiseXOROfAllPairings;
 
-public abstract class BitwiseXOROfAllPairingsTestsBAse<T> where T : IBitwiseXOROfAllPairings, new()
+public abstract class BitwiseXOROfAllPairingsTestsBase<T> where T : IBitwiseXOROfAllPairings, new()
 {
     [TestMethod]
     [DataRow(new[] { 2, 1, 3 }, new[] { 10, 2, 5, 0 }, 13)]
