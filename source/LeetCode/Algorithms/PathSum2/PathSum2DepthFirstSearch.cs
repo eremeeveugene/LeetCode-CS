@@ -38,7 +38,7 @@ public sealed class PathSum2DepthFirstSearch : IPathSum2
         {
             if (root.left != null)
             {
-                result.AddRange(PathSum(new List<int>(list) { root.left.val }, root.left, targetSum, currentSum + root.left.val));
+                result.AddRange(PathSum([.. list, root.left.val], root.left, targetSum, currentSum + root.left.val));
             }
 
             if (root.right == null)
@@ -46,7 +46,7 @@ public sealed class PathSum2DepthFirstSearch : IPathSum2
                 return result;
             }
 
-            result.AddRange(PathSum(new List<int>(list) { root.right.val }, root.right, targetSum, currentSum + root.right.val));
+            result.AddRange(PathSum([.. list, root.right.val], root.right, targetSum, currentSum + root.right.val));
         }
 
         return result;
