@@ -31,7 +31,7 @@ public sealed class FindingPairsWithCertainSumDictionary : IFindingPairsWithCert
     {
         _nums1 = nums1;
         _nums2 = nums2;
-        _nums2FrequencyDictionary = new Dictionary<int, int>();
+        _nums2FrequencyDictionary = [];
 
         for (var i = 0; i < nums2.Length; i++)
         {

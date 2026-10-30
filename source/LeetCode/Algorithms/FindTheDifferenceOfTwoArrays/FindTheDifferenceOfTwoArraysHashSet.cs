@@ -27,7 +27,7 @@ public sealed class FindTheDifferenceOfTwoArraysHashSet : IFindTheDifferenceOfTw
         var result1 = GetMissingElements(set1, set2);
         var result2 = GetMissingElements(set2, set1);
 
-        return new List<IList<int>> { result1, result2 };
+        return [result1, result2];
     }
 
     private static List<int> GetMissingElements(HashSet<int> source, HashSet<int> other)

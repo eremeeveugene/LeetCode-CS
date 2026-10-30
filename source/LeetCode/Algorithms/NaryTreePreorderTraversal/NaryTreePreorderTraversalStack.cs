@@ -25,7 +25,7 @@ public sealed class NaryTreePreorderTraversalStack : INaryTreePreorderTraversal
     {
         if (root == null)
         {
-            return new List<int>();
+            return [];
         }
 
         var result = new List<int>();

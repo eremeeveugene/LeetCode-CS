@@ -25,7 +25,7 @@ public sealed class DeleteNodesAndReturnForestDepthFirstSearchStack : IDeleteNod
     {
         if (root == null)
         {
-            return new List<TreeNode>();
+            return [];
         }
 
         var result = new List<TreeNode>();

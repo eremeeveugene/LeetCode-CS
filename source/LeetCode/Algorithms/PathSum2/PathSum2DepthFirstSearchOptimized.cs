@@ -42,7 +42,7 @@ public sealed class PathSum2DepthFirstSearchOptimized : IPathSum2
 
         if (root.left == null && root.right == null && targetSum == root.val)
         {
-            result.Add(new List<int>(currentPath));
+            result.Add([.. currentPath]);
         }
         else
         {

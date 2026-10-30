@@ -23,7 +23,7 @@ public sealed class MinimumHeightTreesBreadthFirstSearch : IMinimumHeightTrees
     {
         if (n == 1)
         {
-            return new List<int> { 0 };
+            return [0];
         }
 
         var nodesDictionary = GetNodesDictionary(edges);

@@ -23,7 +23,7 @@ public sealed class ThreeSumTwoPointers : IThreeSum
     {
         if (nums.Length < 3)
         {
-            return new List<IList<int>>();
+            return [];
         }
 
         Array.Sort(nums);

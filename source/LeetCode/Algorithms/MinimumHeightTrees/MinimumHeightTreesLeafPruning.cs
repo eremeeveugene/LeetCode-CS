@@ -23,7 +23,7 @@ public sealed class MinimumHeightTreesLeafPruning : IMinimumHeightTrees
     {
         if (n == 1)
         {
-            return new List<int> { 0 };
+            return [0];
         }
 
         var graph = new List<HashSet<int>>();

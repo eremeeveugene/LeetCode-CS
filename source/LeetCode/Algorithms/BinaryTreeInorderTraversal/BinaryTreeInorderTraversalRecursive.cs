@@ -25,7 +25,7 @@ public sealed class BinaryTreeInorderTraversalRecursive : IBinaryTreeInorderTrav
     {
         if (treeNode == null)
         {
-            return new List<int> { 0 };
+            return [0];
         }
 
         List<int> result = [];

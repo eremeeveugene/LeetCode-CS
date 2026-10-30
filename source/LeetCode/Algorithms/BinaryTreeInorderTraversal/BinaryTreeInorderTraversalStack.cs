@@ -25,7 +25,7 @@ public sealed class BinaryTreeInorderTraversalStack : IBinaryTreeInorderTraversa
     {
         if (treeNode == null)
         {
-            return new List<int> { 0 };
+            return [0];
         }
 
         var result = new List<int>();

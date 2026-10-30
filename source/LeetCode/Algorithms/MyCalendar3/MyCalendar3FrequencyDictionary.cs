@@ -14,7 +14,7 @@ namespace LeetCode.Algorithms.MyCalendar3;
 /// <inheritdoc />
 public sealed class MyCalendar3FrequencyDictionary : IMyCalendar3
 {
-    private readonly SortedDictionary<int, int> _frequencyDictionary = new();
+    private readonly SortedDictionary<int, int> _frequencyDictionary = [];
     private int _maxFrequency;
 
     /// <inheritdoc />
