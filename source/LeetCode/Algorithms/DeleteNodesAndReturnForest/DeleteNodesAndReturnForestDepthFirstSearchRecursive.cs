@@ -25,7 +25,7 @@ public sealed class DeleteNodesAndReturnForestDepthFirstSearchRecursive : IDelet
     {
         if (root == null)
         {
-            return new List<TreeNode>();
+            return [];
         }
 
         var result = new List<TreeNode>();

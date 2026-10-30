@@ -25,7 +25,7 @@ public sealed class NaryTreePostorderTraversalStack : INaryTreePostorderTraversa
     {
         if (root == null)
         {
-            return new List<int>();
+            return [];
         }
 
         var result = new List<int>();

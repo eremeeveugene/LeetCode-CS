@@ -15,8 +15,8 @@ namespace LeetCode.Algorithms.DesignTwitter;
 public sealed class DesignTwitterPriorityQueue : IDesignTwitter
 {
     private const int NewsFeedSize = 10;
-    private readonly Dictionary<int, HashSet<int>> _userToFolloweesDictionary = new();
-    private readonly Dictionary<int, List<(int Timestamp, int TweetId)>> _userToTweetsDictionary = new();
+    private readonly Dictionary<int, HashSet<int>> _userToFolloweesDictionary = [];
+    private readonly Dictionary<int, List<(int Timestamp, int TweetId)>> _userToTweetsDictionary = [];
     private int _timestamp;
 
     /// <inheritdoc />

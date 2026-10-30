@@ -58,11 +58,11 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(4, "ddddd")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "aaaaa" }),
-                    new InsertOperation.Result(new List<string?> { "bbbbb", "ccccc" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "ddddd", "eeeee" })
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["aaaaa"]),
+                    new InsertOperation.Result(["bbbbb", "ccccc"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["ddddd", "eeeee"])
                 ])
         ];
 
@@ -72,9 +72,9 @@ public abstract class DesignAnOrderedStreamTestsBase
                 3,
                 [new InsertOperation(1, "aaaaa"), new InsertOperation(2, "bbbbb"), new InsertOperation(3, "ccccc")],
                 [
-                    new InsertOperation.Result(new List<string?> { "aaaaa" }),
-                    new InsertOperation.Result(new List<string?> { "bbbbb" }),
-                    new InsertOperation.Result(new List<string?> { "ccccc" })
+                    new InsertOperation.Result(["aaaaa"]),
+                    new InsertOperation.Result(["bbbbb"]),
+                    new InsertOperation.Result(["ccccc"])
                 ])
         ];
 
@@ -84,20 +84,20 @@ public abstract class DesignAnOrderedStreamTestsBase
                 3,
                 [new InsertOperation(3, "ccccc"), new InsertOperation(2, "bbbbb"), new InsertOperation(1, "aaaaa")],
                 [
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb", "ccccc" })
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["aaaaa", "bbbbb", "ccccc"])
                 ])
         ];
 
-        yield return [new OrderedStreamScenario(1, [new InsertOperation(1, "aaaaa")], [new InsertOperation.Result(new List<string?> { "aaaaa" })])];
+        yield return [new OrderedStreamScenario(1, [new InsertOperation(1, "aaaaa")], [new InsertOperation.Result(["aaaaa"])])];
 
         yield return
         [
             new OrderedStreamScenario(
                 2,
                 [new InsertOperation(2, "bbbbb"), new InsertOperation(1, "aaaaa")],
-                [new InsertOperation.Result(new List<string?>()), new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb" })])
+                [new InsertOperation.Result([]), new InsertOperation.Result(["aaaaa", "bbbbb"])])
         ];
 
         yield return
@@ -111,10 +111,10 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(3, "ccccc")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "aaaaa", "bbbbb" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "ccccc", "ddddd" })
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["aaaaa", "bbbbb"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["ccccc", "ddddd"])
                 ])
         ];
 
@@ -127,8 +127,8 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(2, "efhig")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?> { "dfcig" }),
-                    new InsertOperation.Result(new List<string?> { "efhig" })
+                    new InsertOperation.Result(["dfcig"]),
+                    new InsertOperation.Result(["efhig"])
                 ])
         ];
 
@@ -145,12 +145,12 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(6, "fjedb")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?> { "fhgea" }),
-                    new InsertOperation.Result(new List<string?> { "bchah" }),
-                    new InsertOperation.Result(new List<string?> { "bijid" }),
-                    new InsertOperation.Result(new List<string?> { "jjfij" }),
-                    new InsertOperation.Result(new List<string?> { "bccff" }),
-                    new InsertOperation.Result(new List<string?> { "fjedb" })
+                    new InsertOperation.Result(["fhgea"]),
+                    new InsertOperation.Result(["bchah"]),
+                    new InsertOperation.Result(["bijid"]),
+                    new InsertOperation.Result(["jjfij"]),
+                    new InsertOperation.Result(["bccff"]),
+                    new InsertOperation.Result(["fjedb"])
                 ])
         ];
 
@@ -167,12 +167,12 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(1, "cbcgf")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "cbcgf", "caidg", "cjafh", "igddc", "ibhgh", "aeaee" })
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["cbcgf", "caidg", "cjafh", "igddc", "ibhgh", "aeaee"])
                 ])
         ];
 
@@ -190,13 +190,13 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(5, "jghjh")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "agdcg" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "bfcch" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "aecih", "adfcf" }),
-                    new InsertOperation.Result(new List<string?> { "jghjh", "ecije", "cagca" })
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["agdcg"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["bfcch"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["aecih", "adfcf"]),
+                    new InsertOperation.Result(["jghjh", "ecije", "cagca"])
                 ])
         ];
 
@@ -215,14 +215,14 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(7, "ccgdi")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "ejfdj", "gegcc" }),
-                    new InsertOperation.Result(new List<string?> { "cbgbc", "ahcbb" }),
-                    new InsertOperation.Result(new List<string?> { "eceif", "ghdjc" }),
-                    new InsertOperation.Result(new List<string?> { "ccgdi", "ajiaa" })
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["ejfdj", "gegcc"]),
+                    new InsertOperation.Result(["cbgbc", "ahcbb"]),
+                    new InsertOperation.Result(["eceif", "ghdjc"]),
+                    new InsertOperation.Result(["ccgdi", "ajiaa"])
                 ])
         ];
 
@@ -241,14 +241,14 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(4, "eiihj")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "ghbgj" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "cdejf" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "adgce" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "eiihj", "bijai", "jfiee", "jiidb", "jfdfb" })
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["ghbgj"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["cdejf"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["adgce"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["eiihj", "bijai", "jfiee", "jiidb", "jfdfb"])
                 ])
         ];
 
@@ -269,16 +269,16 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(1, "fgbbb")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "fgbbb", "hijah", "hiigg", "bdaag", "adejg", "ghdgg", "fhdba", "hchfj", "dhjje", "dhhge" })
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["fgbbb", "hijah", "hiigg", "bdaag", "adejg", "ghdgg", "fhdba", "hchfj", "dhjje", "dhhge"])
                 ])
         ];
 
@@ -299,16 +299,16 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(10, "hjecg")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?> { "jgiac" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "fdegc", "bicbi" }),
-                    new InsertOperation.Result(new List<string?> { "ejghb", "cgdff" }),
-                    new InsertOperation.Result(new List<string?> { "jdeba", "fieci" }),
-                    new InsertOperation.Result(new List<string?> { "ddjeg", "cghgg" }),
-                    new InsertOperation.Result(new List<string?> { "hjecg" })
+                    new InsertOperation.Result(["jgiac"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["fdegc", "bicbi"]),
+                    new InsertOperation.Result(["ejghb", "cgdff"]),
+                    new InsertOperation.Result(["jdeba", "fieci"]),
+                    new InsertOperation.Result(["ddjeg", "cghgg"]),
+                    new InsertOperation.Result(["hjecg"])
                 ])
         ];
 
@@ -322,9 +322,9 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(1, "jebdd")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "jebdd", "affab", "ijagj" })
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["jebdd", "affab", "ijagj"])
                 ])
         ];
 
@@ -339,10 +339,10 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(4, "jgiae")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?> { "hhdai" }),
-                    new InsertOperation.Result(new List<string?> { "cbedh" }),
-                    new InsertOperation.Result(new List<string?> { "fafcc" }),
-                    new InsertOperation.Result(new List<string?> { "jgiae" })
+                    new InsertOperation.Result(["hhdai"]),
+                    new InsertOperation.Result(["cbedh"]),
+                    new InsertOperation.Result(["fafcc"]),
+                    new InsertOperation.Result(["jgiae"])
                 ])
         ];
 
@@ -358,11 +358,11 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(4, "cahij")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "dggid" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "djjha", "jbbgd" }),
-                    new InsertOperation.Result(new List<string?> { "cahij", "ijhhf" })
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["dggid"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["djjha", "jbbgd"]),
+                    new InsertOperation.Result(["cahij", "ijhhf"])
                 ])
         ];
 
@@ -382,15 +382,15 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(9, "afjic")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "cecfe", "eabbc", "ibdfe" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "facaj", "hegca", "bdfie", "gddig", "bfddi" }),
-                    new InsertOperation.Result(new List<string?> { "afjic" })
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["cecfe", "eabbc", "ibdfe"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["facaj", "hegca", "bdfie", "gddig", "bfddi"]),
+                    new InsertOperation.Result(["afjic"])
                 ])
         ];
 
@@ -413,18 +413,18 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(2, "haead")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "afhhc" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "haead", "jijbe", "gdhfa", "fcjej", "agcci", "igddi", "iehfb", "dgjcf", "ifjca", "gjadb", "diifi" })
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["afhhc"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["haead", "jijbe", "gdhfa", "fcjej", "agcci", "igddi", "iehfb", "dgjcf", "ifjca", "gjadb", "diifi"])
                 ])
         ];
 
@@ -450,21 +450,21 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(9, "hdiha")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "ebcdg" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "jhhdd", "ecggd", "hheai", "hdafj", "hecdc", "gcgaa" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "jejhd" }),
-                    new InsertOperation.Result(new List<string?> { "hdiha", "afchf", "hfgjh", "jbebf", "ehbdj", "fbedc", "cebje" })
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["ebcdg"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["jhhdd", "ecggd", "hheai", "hdafj", "hecdc", "gcgaa"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["jejhd"]),
+                    new InsertOperation.Result(["hdiha", "afchf", "hfgjh", "jbebf", "ehbdj", "fbedc", "cebje"])
                 ])
         ];
 
@@ -495,26 +495,26 @@ public abstract class DesignAnOrderedStreamTestsBase
                     new InsertOperation(15, "ibcib")
                 ],
                 [
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "didch" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "hdafi", "fadce", "aegab", "jiadj" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "hhiii" }),
-                    new InsertOperation.Result(new List<string?> { "fgafc", "fghhi", "jdhda" }),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?>()),
-                    new InsertOperation.Result(new List<string?> { "hdjjb", "fhcca", "effed", "ahcdc", "ajccd" }),
-                    new InsertOperation.Result(new List<string?> { "ibcib", "gbbdd", "iabdd", "jjbdd", "gjiag", "effga" })
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["didch"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["hdafi", "fadce", "aegab", "jiadj"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["hhiii"]),
+                    new InsertOperation.Result(["fgafc", "fghhi", "jdhda"]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result([]),
+                    new InsertOperation.Result(["hdjjb", "fhcca", "effed", "ahcdc", "ajccd"]),
+                    new InsertOperation.Result(["ibcib", "gbbdd", "iabdd", "jjbdd", "gjiag", "effga"])
                 ])
         ];
     }

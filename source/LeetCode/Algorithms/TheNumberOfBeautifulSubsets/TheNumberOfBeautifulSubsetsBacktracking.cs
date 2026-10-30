@@ -28,7 +28,7 @@ public sealed class TheNumberOfBeautifulSubsetsBacktracking : ITheNumberOfBeauti
 
         var count = 0;
 
-        Backtrack(nums, k, 0, new List<int>(), ref count);
+        Backtrack(nums, k, 0, [], ref count);
 
         return count - 1;
     }

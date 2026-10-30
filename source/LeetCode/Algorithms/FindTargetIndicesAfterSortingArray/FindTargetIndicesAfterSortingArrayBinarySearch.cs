@@ -42,7 +42,7 @@ public sealed class FindTargetIndicesAfterSortingArrayBinarySearch : IFindTarget
 
         if (nums[left] != target)
         {
-            return new List<int>();
+            return [];
         }
 
         var result = new List<int>();

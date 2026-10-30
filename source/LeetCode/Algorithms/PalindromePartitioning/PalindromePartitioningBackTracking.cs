@@ -21,9 +21,9 @@ public sealed class PalindromePartitioningBackTracking : IPalindromePartitioning
     /// </remarks>
     public IList<IList<string>> Partition(string s)
     {
-        IList<IList<string>> result = new List<IList<string>>();
+        IList<IList<string>> result = [];
 
-        Backtrack(s, 0, new List<string>(), result);
+        Backtrack(s, 0, [], result);
 
         return result;
     }

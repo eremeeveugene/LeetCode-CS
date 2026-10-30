@@ -16,8 +16,8 @@ namespace LeetCode.Algorithms.DesignUndergroundSystem;
 /// <inheritdoc />
 public sealed class DesignUndergroundSystemDictionary : IDesignUndergroundSystem
 {
-    private readonly Dictionary<int, (string StartStation, int Time)> _checkInsDictionary = new();
-    private readonly Dictionary<(string StartStation, string EndStation), (int Sum, int Count)> _travelDurationsDictionary = new();
+    private readonly Dictionary<int, (string StartStation, int Time)> _checkInsDictionary = [];
+    private readonly Dictionary<(string StartStation, string EndStation), (int Sum, int Count)> _travelDurationsDictionary = [];
 
     /// <inheritdoc />
     /// <remarks>

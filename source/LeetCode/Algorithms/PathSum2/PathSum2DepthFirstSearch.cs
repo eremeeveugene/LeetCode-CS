@@ -23,7 +23,7 @@ public sealed class PathSum2DepthFirstSearch : IPathSum2
     /// </remarks>
     public IList<IList<int>> PathSum(TreeNode? root, int targetSum)
     {
-        return root == null ? [] : PathSum(new List<int> { root.val }, root, targetSum, root.val);
+        return root == null ? [] : PathSum([root.val], root, targetSum, root.val);
     }
 
     private static List<IList<int>> PathSum(IList<int> list, TreeNode root, int targetSum, int currentSum)

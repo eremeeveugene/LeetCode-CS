@@ -15,7 +15,7 @@ namespace LeetCode.Algorithms.AllOneDataStructure;
 public sealed class AllOneDataStructureLinkedList : IAllOneDataStructure
 {
     private readonly Node _headNode = new(int.MinValue);
-    private readonly Dictionary<string, Node> _keyNodeDictionary = new();
+    private readonly Dictionary<string, Node> _keyNodeDictionary = [];
     private readonly Node _tailNode = new(int.MaxValue);
 
     public AllOneDataStructureLinkedList()

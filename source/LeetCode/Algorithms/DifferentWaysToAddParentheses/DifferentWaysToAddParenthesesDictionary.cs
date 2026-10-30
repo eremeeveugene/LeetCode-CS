@@ -21,7 +21,7 @@ public sealed class DifferentWaysToAddParenthesesDictionary : IDifferentWaysToAd
     /// </remarks>
     public IList<int> DiffWaysToCompute(string expression)
     {
-        return DiffWaysToCompute(expression, new Dictionary<string, IList<int>>());
+        return DiffWaysToCompute(expression, []);
     }
 
     private static IList<int> DiffWaysToCompute(string expression, Dictionary<string, IList<int>> expressionsDictionary)

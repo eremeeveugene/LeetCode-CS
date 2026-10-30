@@ -25,7 +25,7 @@ public sealed class CombinationSum2Backtracking : ICombinationSum2
 
         var result = new List<IList<int>>();
 
-        Backtrack(result, new List<int>(), candidates, target, 0);
+        Backtrack(result, [], candidates, target, 0);
 
         return result;
     }

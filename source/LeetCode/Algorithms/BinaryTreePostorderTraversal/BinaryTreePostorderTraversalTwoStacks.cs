@@ -25,7 +25,7 @@ public sealed class BinaryTreePostorderTraversalTwoStacks : IBinaryTreePostorder
     {
         if (root == null)
         {
-            return new List<int>();
+            return [];
         }
 
         var result = new List<int>();

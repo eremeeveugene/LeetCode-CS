@@ -32,7 +32,7 @@ public sealed class PermutationsBacktracking : IPermutations
     {
         if (start == end)
         {
-            result.Add(new List<int>(nums));
+            result.Add([.. nums]);
         }
         else
         {
