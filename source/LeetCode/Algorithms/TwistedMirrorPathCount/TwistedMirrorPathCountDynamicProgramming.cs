@@ -19,42 +19,45 @@ public sealed class TwistedMirrorPathCountDynamicProgramming : ITwistedMirrorPat
     /// <inheritdoc />
     /// <remarks>
     ///     Time complexity - O(m * n)
-    ///     Space complexity - O(n)
+    ///     Space complexity - O(m * n)
     /// </remarks>
     public int UniquePaths(int[][] grid)
     {
         var m = grid.Length;
         var n = grid[0].Length;
 
-        Span<int> downCounts = stackalloc int[n];
+        var dp = new int[m, n, 2];
+
+        dp[0, 0, 0] = 1;
 
         for (var i = 0; i < m; i++)
         {
             var row = grid[i];
 
-            var rightCount = i == 0 ? 1 : 0;
-
             for (var j = 0; j < n; j++)
             {
-                var cell = row[j];
+                var fromLeft = dp[i, j, 0];
+                var fromTop = dp[i, j, 1];
 
-                var downCount = downCounts[j];
+                var isMirror = row[j] == 1;
 
-                if (cell == 1)
+                var count = (fromLeft + fromTop) % Modulo;
+
+                var goRight = isMirror ? fromTop : count;
+                var goDown = isMirror ? fromLeft : count;
+
+                if (j + 1 < n)
                 {
-                    downCounts[j] = rightCount;
-                    rightCount = downCount;
-
-                    continue;
+                    dp[i, j + 1, 0] = goRight;
                 }
 
-                var count = (rightCount + downCount) % Modulo;
-
-                downCounts[j] = count;
-                rightCount = count;
+                if (i + 1 < m)
+                {
+                    dp[i + 1, j, 1] = goDown;
+                }
             }
         }
 
-        return downCounts[n - 1];
+        return (dp[m - 1, n - 1, 0] + dp[m - 1, n - 1, 1]) % Modulo;
     }
 }
