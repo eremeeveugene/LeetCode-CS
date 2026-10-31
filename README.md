@@ -955,6 +955,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3650. Minimum Cost Path with Edge Reversals](https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/description/)
 - [3653. XOR After Range Multiplication Queries I](https://leetcode.com/problems/xor-after-range-multiplication-queries-i/description/)
 - [3658. GCD of Odd and Even Sums](https://leetcode.com/problems/gcd-of-odd-and-even-sums/description/)
+- [3665. Twisted Mirror Path Count](https://leetcode.com/problems/twisted-mirror-path-count/description/)
 - [3668. Restore Finishing Order](https://leetcode.com/problems/restore-finishing-order/description/)
 - [3684. Maximize Sum of At Most K Distinct Elements](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/description/)
 - [3689. Maximum Total Subarray Value I](https://leetcode.com/problems/maximum-total-subarray-value-i/description/)
