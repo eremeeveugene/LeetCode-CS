@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/1/2026 - 11:13:54 AM
-  Coverage date: 11/1/2026 - 11:13:11 AM - 11/1/2026 - 11:13:48 AM
+  Generated on: 11/2/2026 - 7:04:16 PM
+  Coverage date: 11/2/2026 - 7:03:22 PM - 11/2/2026 - 7:04:07 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1463
-  Files: 1463
+  Classes: 1464
+  Files: 1464
   Line coverage: 100%
-  Covered lines: 36012
+  Covered lines: 36026
   Uncovered lines: 0
-  Coverable lines: 36012
-  Total lines: 87437
-  Branch coverage: 99.9% (12676 of 12678)
-  Covered branches: 12676
-  Total branches: 12678
-  Method coverage: 100% (2324 of 2324)
-  Full method coverage: 100% (2324 of 2324)
-  Covered methods: 2324
-  Fully covered methods: 2324
-  Total methods: 2324
+  Coverable lines: 36026
+  Total lines: 87480
+  Branch coverage: 99.9% (12678 of 12680)
+  Covered branches: 12678
+  Total branches: 12680
+  Method coverage: 100% (2325 of 2325)
+  Full method coverage: 100% (2325 of 2325)
+  Covered methods: 2325
+  Fully covered methods: 2325
+  Total methods: 2325
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -887,6 +887,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumLimitOfBallsInBag.MinimumLimitOfBallsInBagBinarySearch                                                                            100%
   LeetCode.Algorithms.MinimumMovesToEqualArrayElements.MinimumMovesToEqualArrayElementsOnePass                                                                 100%
   LeetCode.Algorithms.MinimumMovesToEqualArrayElements.MinimumMovesToEqualArrayElementsTwoPass                                                                 100%
+  LeetCode.Algorithms.MinimumMovesToEqualArrayElements2.MinimumMovesToEqualArrayElements2Sorting                                                               100%
   LeetCode.Algorithms.MinimumMovesToEqualArrayElements3.MinimumMovesToEqualArrayElements3OnePass                                                               100%
   LeetCode.Algorithms.MinimumMovesToEqualArrayElements3.MinimumMovesToEqualArrayElements3TwoPass                                                               100%
   LeetCode.Algorithms.MinimumNumberGame.MinimumNumberGameSorting                                                                                               100%
