@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/2/2026 - 7:04:16 PM
-  Coverage date: 11/2/2026 - 7:03:22 PM - 11/2/2026 - 7:04:07 PM
+  Generated on: 11/5/2026 - 9:27:10 PM
+  Coverage date: 11/5/2026 - 9:26:11 PM - 11/5/2026 - 9:26:52 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1464
-  Files: 1464
+  Classes: 1468
+  Files: 1468
   Line coverage: 100%
-  Covered lines: 36026
+  Covered lines: 36136
   Uncovered lines: 0
-  Coverable lines: 36026
-  Total lines: 87480
-  Branch coverage: 99.9% (12678 of 12680)
-  Covered branches: 12678
-  Total branches: 12680
-  Method coverage: 100% (2325 of 2325)
-  Full method coverage: 100% (2325 of 2325)
-  Covered methods: 2325
-  Fully covered methods: 2325
-  Total methods: 2325
+  Coverable lines: 36136
+  Total lines: 87771
+  Branch coverage: 99.9% (12720 of 12722)
+  Covered branches: 12720
+  Total branches: 12722
+  Method coverage: 100% (2332 of 2332)
+  Full method coverage: 100% (2332 of 2332)
+  Covered methods: 2332
+  Fully covered methods: 2332
+  Total methods: 2332
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -480,6 +480,10 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindTheDifference.FindTheDifferenceBitwise                                                                                               100%
   LeetCode.Algorithms.FindTheDifference.FindTheDifferenceDictionary                                                                                            100%
   LeetCode.Algorithms.FindTheDifferenceOfTwoArrays.FindTheDifferenceOfTwoArraysHashSet                                                                         100%
+  LeetCode.Algorithms.FindTheDistanceValueBetweenTwoArrays.FindTheDistanceValueBetweenTwoArraysBinarySearch                                                    100%
+  LeetCode.Algorithms.FindTheDistanceValueBetweenTwoArrays.FindTheDistanceValueBetweenTwoArraysBruteForce                                                      100%
+  LeetCode.Algorithms.FindTheDistanceValueBetweenTwoArrays.FindTheDistanceValueBetweenTwoArraysLookup                                                          100%
+  LeetCode.Algorithms.FindTheDistanceValueBetweenTwoArrays.FindTheDistanceValueBetweenTwoArraysTwoPointers                                                     100%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberBruteForce                                                                                  100%
   LeetCode.Algorithms.FindTheDuplicateNumber.FindTheDuplicateNumberFloydTortoiseAndHareAlgorithm                                                               100%
   LeetCode.Algorithms.FindTheEncryptedString.FindTheEncryptedStringIterative                                                                                   100%
