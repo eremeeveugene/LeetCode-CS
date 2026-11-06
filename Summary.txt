@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/5/2026 - 9:27:10 PM
-  Coverage date: 11/5/2026 - 9:26:11 PM - 11/5/2026 - 9:26:52 PM
+  Generated on: 11/6/2026 - 1:25:49 PM
+  Coverage date: 11/6/2026 - 1:24:41 PM - 11/6/2026 - 1:25:41 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1468
-  Files: 1468
+  Classes: 1469
+  Files: 1469
   Line coverage: 100%
-  Covered lines: 36136
+  Covered lines: 36158
   Uncovered lines: 0
-  Coverable lines: 36136
-  Total lines: 87771
-  Branch coverage: 99.9% (12720 of 12722)
-  Covered branches: 12720
-  Total branches: 12722
-  Method coverage: 100% (2332 of 2332)
-  Full method coverage: 100% (2332 of 2332)
-  Covered methods: 2332
-  Fully covered methods: 2332
-  Total methods: 2332
+  Coverable lines: 36158
+  Total lines: 87837
+  Branch coverage: 99.9% (12724 of 12726)
+  Covered branches: 12724
+  Total branches: 12726
+  Method coverage: 100% (2334 of 2334)
+  Full method coverage: 100% (2334 of 2334)
+  Covered methods: 2334
+  Fully covered methods: 2334
+  Total methods: 2334
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -956,6 +956,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumTotalDistanceTraveled.MinimumTotalDistanceTraveledBase                                                                            100%
   LeetCode.Algorithms.MinimumTotalDistanceTraveled.MinimumTotalDistanceTraveledDynamicProgramming                                                              100%
   LeetCode.Algorithms.MinimumTotalDistanceTraveled.MinimumTotalDistanceTraveledMonotonicQueue                                                                  100%
+  LeetCode.Algorithms.MinimumValueOfMergedIntegers.MinimumValueOfMergedIntegersMath                                                                            100%
   LeetCode.Algorithms.MirrorDistanceOfAnInteger.MirrorDistanceOfAnIntegerMath                                                                                  100%
   LeetCode.Algorithms.MissingNumber.MissingNumberCumulativeSum                                                                                                 100%
   LeetCode.Algorithms.MissingNumber.MissingNumberIterativeSumAndSubtract                                                                                       100%
