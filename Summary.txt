@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/6/2026 - 1:25:49 PM
-  Coverage date: 11/6/2026 - 1:24:41 PM - 11/6/2026 - 1:25:41 PM
+  Generated on: 11/6/2026 - 1:41:22 PM
+  Coverage date: 11/6/2026 - 1:40:28 PM - 11/6/2026 - 1:41:13 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1469
-  Files: 1469
+  Classes: 1470
+  Files: 1470
   Line coverage: 100%
-  Covered lines: 36158
+  Covered lines: 36203
   Uncovered lines: 0
-  Coverable lines: 36158
-  Total lines: 87837
-  Branch coverage: 99.9% (12724 of 12726)
-  Covered branches: 12724
-  Total branches: 12726
-  Method coverage: 100% (2334 of 2334)
-  Full method coverage: 100% (2334 of 2334)
-  Covered methods: 2334
-  Fully covered methods: 2334
-  Total methods: 2334
+  Coverable lines: 36203
+  Total lines: 87926
+  Branch coverage: 99.9% (12740 of 12742)
+  Covered branches: 12740
+  Total branches: 12742
+  Method coverage: 100% (2335 of 2335)
+  Full method coverage: 100% (2335 of 2335)
+  Covered methods: 2335
+  Fully covered methods: 2335
+  Total methods: 2335
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -279,6 +279,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountValuesWithEquallySpacedOccurrences1.CountValuesWithEquallySpacedOccurrences1SpanCounting                                            100%
   LeetCode.Algorithms.CountValuesWithEquallySpacedOccurrences1.CountValuesWithEquallySpacedOccurrences1SpanIndexing                                            100%
   LeetCode.Algorithms.CountVowelStringsInRanges.CountVowelStringsInRangesPrefixSum                                                                             100%
+  LeetCode.Algorithms.CountZeroRequestServers.CountZeroRequestServersSlidingWindow                                                                             100%
   LeetCode.Algorithms.CouponCodeValidator.CouponCodeValidatorBucketSort                                                                                        100%
   LeetCode.Algorithms.CousinsInBinaryTree2.CousinsInBinaryTree2BreadthFirstSearch                                                                              100%
   LeetCode.Algorithms.CrawlerLogFolder.CrawlerLogFolderSimulation                                                                                              100%
