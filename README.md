@@ -1033,6 +1033,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [4078. Three Fibonacci Sum](https://leetcode.com/problems/three-fibonacci-sum/description/)
 - [4083. Minimum Deletions to Make Array Sharp](https://leetcode.com/problems/minimum-deletions-to-make-array-sharp/description/)
 - [4088. Difference Between Peaks and Valleys](https://leetcode.com/problems/difference-between-peaks-and-valleys/description/)
+- [4092. Binary Digit Score](https://leetcode.com/problems/binary-digit-score/description/)
 - [4097. Minimum Value of Merged Integers](https://leetcode.com/problems/minimum-value-of-merged-integers/description/)
 
   </p>
