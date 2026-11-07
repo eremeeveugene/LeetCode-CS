@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/6/2026 - 1:41:22 PM
-  Coverage date: 11/6/2026 - 1:40:28 PM - 11/6/2026 - 1:41:13 PM
+  Generated on: 11/7/2026 - 1:01:40 PM
+  Coverage date: 11/7/2026 - 1:00:55 PM - 11/7/2026 - 1:01:34 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1470
-  Files: 1470
+  Classes: 1471
+  Files: 1471
   Line coverage: 100%
-  Covered lines: 36203
+  Covered lines: 36234
   Uncovered lines: 0
-  Coverable lines: 36203
-  Total lines: 87926
-  Branch coverage: 99.9% (12740 of 12742)
-  Covered branches: 12740
-  Total branches: 12742
-  Method coverage: 100% (2335 of 2335)
-  Full method coverage: 100% (2335 of 2335)
-  Covered methods: 2335
-  Fully covered methods: 2335
-  Total methods: 2335
+  Coverable lines: 36234
+  Total lines: 87996
+  Branch coverage: 99.9% (12750 of 12752)
+  Covered branches: 12750
+  Total branches: 12752
+  Method coverage: 100% (2336 of 2336)
+  Full method coverage: 100% (2336 of 2336)
+  Covered methods: 2336
+  Fully covered methods: 2336
+  Total methods: 2336
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -1097,6 +1097,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.PredictTheWinner.PredictTheWinnerRecursive                                                                                               100%
   LeetCode.Algorithms.PrimeSubtractionOperation.PrimeSubtractionOperationIterative                                                                             100%
   LeetCode.Algorithms.ProcessStringWithSpecialOperations1.ProcessStringWithSpecialOperations1Simulation                                                        100%
+  LeetCode.Algorithms.ProcessTasksUsingServers.ProcessTasksUsingServersPriorityQueue                                                                           100%
   LeetCode.Algorithms.ProductOfArrayExceptSelf.ProductOfArrayExceptSelfPrefixSum                                                                               100%
   LeetCode.Algorithms.ProductOfTheLastKNumbers.ProductOfTheLastKNumbersPrefixSum                                                                               100%
   LeetCode.Algorithms.PushDominoes.PushDominoesForceArray                                                                                                      100%
