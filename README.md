@@ -999,6 +999,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3871. Count Commas in Range II](https://leetcode.com/problems/count-commas-in-range-ii/description/)
 - [3875. Construct Uniform Parity Array I](https://leetcode.com/problems/construct-uniform-parity-array-i/description/)
 - [3876. Construct Uniform Parity Array II](https://leetcode.com/problems/construct-uniform-parity-array-ii/description/)
+- [3880. Minimum Absolute Difference Between Two Values](https://leetcode.com/problems/minimum-absolute-difference-between-two-values/description/)
 - [3884. First Matching Character From Both Ends](https://leetcode.com/problems/first-matching-character-from-both-ends/)
 - [3894. Traffic Signal Color](https://leetcode.com/problems/traffic-signal-color/description/)
 - [3898. Find the Degree of Each Vertex](https://leetcode.com/problems/find-the-degree-of-each-vertex/description/)
