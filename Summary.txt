@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/7/2026 - 1:49:46 PM
-  Coverage date: 11/7/2026 - 1:48:48 PM - 11/7/2026 - 1:49:37 PM
+  Generated on: 11/8/2026 - 8:29:06 PM
+  Coverage date: 11/8/2026 - 8:28:03 PM - 11/8/2026 - 8:28:57 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1474
-  Files: 1474
+  Classes: 1476
+  Files: 1476
   Line coverage: 100%
-  Covered lines: 36320
+  Covered lines: 36373
   Uncovered lines: 0
-  Coverable lines: 36320
-  Total lines: 88222
-  Branch coverage: 99.9% (12774 of 12776)
-  Covered branches: 12774
-  Total branches: 12776
-  Method coverage: 100% (2341 of 2341)
-  Full method coverage: 100% (2341 of 2341)
-  Covered methods: 2341
-  Fully covered methods: 2341
-  Total methods: 2341
+  Coverable lines: 36373
+  Total lines: 88347
+  Branch coverage: 99.9% (12796 of 12798)
+  Covered branches: 12796
+  Total branches: 12798
+  Method coverage: 100% (2343 of 2343)
+  Full method coverage: 100% (2343 of 2343)
+  Covered methods: 2343
+  Fully covered methods: 2343
+  Total methods: 2343
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -849,6 +849,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimizeXOR.MinimizeXORBitwise                                                                                                           100%
   LeetCode.Algorithms.MinimumAbsoluteDifference.MinimumAbsoluteDifferenceLookup                                                                                100%
   LeetCode.Algorithms.MinimumAbsoluteDifference.MinimumAbsoluteDifferenceSorting                                                                               100%
+  LeetCode.Algorithms.MinimumAbsoluteDifferenceBetweenTwoValues.MinimumAbsoluteDifferenceBetweenTwoValuesBruteForce                                            100%
+  LeetCode.Algorithms.MinimumAbsoluteDifferenceBetweenTwoValues.MinimumAbsoluteDifferenceBetweenTwoValuesTwoPointers                                           100%
   LeetCode.Algorithms.MinimumAbsoluteDifferenceInBST.MinimumAbsoluteDifferenceInBSTDepthFirstSearch                                                            100%
   LeetCode.Algorithms.MinimumAddToMakeParenthesesValid.MinimumAddToMakeParenthesesValidIterative                                                               100%
   LeetCode.Algorithms.MinimumArrayEnd.MinimumArrayEndIterative                                                                                                 100%
