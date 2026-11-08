@@ -1008,6 +1008,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3908. Valid Digit Number](https://leetcode.com/problems/valid-digit-number/description/)
 - [3912. Valid Elements in an Array](https://leetcode.com/problems/valid-elements-in-an-array/description/)
 - [3917. Count Indices With Opposite Parity](https://leetcode.com/problems/count-indices-with-opposite-parity/description/)
+- [3921. Score Validator](https://leetcode.com/problems/score-validator/description/)
 - [3925. Concatenate Array With Reverse](https://leetcode.com/problems/concatenate-array-with-reverse/description/)
 - [3931. Check Adjacent Digit Differences](https://leetcode.com/problems/check-adjacent-digit-differences/description/)
 - [3945. Digit Frequency Score](https://leetcode.com/problems/digit-frequency-score/description/)
