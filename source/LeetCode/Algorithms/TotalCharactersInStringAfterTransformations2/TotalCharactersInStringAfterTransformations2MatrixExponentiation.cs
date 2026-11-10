@@ -52,9 +52,7 @@ public sealed class TotalCharactersInStringAfterTransformations2MatrixExponentia
             }
         }
 
-        for (var remainingTransformations = transformationsCount;
-             remainingTransformations > 0;
-             remainingTransformations /= 2)
+        for (var remainingTransformations = transformationsCount; remainingTransformations > 0; remainingTransformations /= 2)
         {
             if (remainingTransformations % 2 == 1)
             {
