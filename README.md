@@ -966,6 +966,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3684. Maximize Sum of At Most K Distinct Elements](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/description/)
 - [3689. Maximum Total Subarray Value I](https://leetcode.com/problems/maximum-total-subarray-value-i/description/)
 - [3692. Majority Frequency Characters](https://leetcode.com/problems/majority-frequency-characters/description/)
+- [3693. Climbing Stairs II](https://leetcode.com/problems/climbing-stairs-ii/description/)
 - [3697. Compute Decimal Representation](https://leetcode.com/problems/compute-decimal-representation/description/)
 - [3701. Compute Alternating Sum](https://leetcode.com/problems/compute-alternating-sum/description/)
 - [3707. Equal Score Substrings](https://leetcode.com/problems/equal-score-substrings/description/)
