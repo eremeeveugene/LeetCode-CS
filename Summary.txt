@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/10/2026 - 8:44:09 PM
-  Coverage date: 11/10/2026 - 8:43:18 PM - 11/10/2026 - 8:44:02 PM
+  Generated on: 11/10/2026 - 9:26:41 PM
+  Coverage date: 11/10/2026 - 9:25:33 PM - 11/10/2026 - 9:26:32 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1478
-  Files: 1478
+  Classes: 1479
+  Files: 1479
   Line coverage: 100%
-  Covered lines: 36412
+  Covered lines: 36488
   Uncovered lines: 0
-  Coverable lines: 36412
-  Total lines: 88463
-  Branch coverage: 99.9% (12806 of 12808)
-  Covered branches: 12806
-  Total branches: 12808
-  Method coverage: 100% (2346 of 2346)
-  Full method coverage: 100% (2346 of 2346)
-  Covered methods: 2346
-  Fully covered methods: 2346
-  Total methods: 2346
+  Coverable lines: 36488
+  Total lines: 88613
+  Branch coverage: 99.9% (12830 of 12832)
+  Covered branches: 12830
+  Total branches: 12832
+  Method coverage: 100% (2349 of 2349)
+  Full method coverage: 100% (2349 of 2349)
+  Covered methods: 2349
+  Fully covered methods: 2349
+  Total methods: 2349
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -1403,6 +1403,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ToLowerCase.ToLowerCaseStringBuilder                                                                                                     100%
   LeetCode.Algorithms.TopKFrequentElements.TopKFrequentElementsPriorityQueue                                                                                   100%
   LeetCode.Algorithms.TotalCharactersInStringAfterTransformations1.TotalCharactersInStringAfterTransformations1Counting                                        100%
+  LeetCode.Algorithms.TotalCharactersInStringAfterTransformations2.TotalCharactersInStringAfterTransformations2MatrixExponentiation                            100%
   LeetCode.Algorithms.TrafficSignalColor.TrafficSignalColorSimulation                                                                                          100%
   LeetCode.Algorithms.TransformArrayByParity.TransformArrayByParityTwoPass                                                                                     100%
   LeetCode.Algorithms.TransformArrayByParity.TransformArrayByParityTwoPointers                                                                                 100%
