@@ -95,18 +95,19 @@ jobs:
         run: >
           dotnet test
           --no-build
+          --blame-hang-timeout 3m
           --collect:"XPlat Code Coverage"
           --results-directory ./Tests/TestResults
 
       - name: Install reportgenerator
-        if: always()
+        if: ${{ !cancelled() }}
         run: |
           dotnet tool update --global dotnet-reportgenerator-globaltool `
           || dotnet tool install --global dotnet-reportgenerator-globaltool
 
       - name: Generate coverage
         id: coverage
-        if: always()
+        if: ${{ !cancelled() }}
         run: |
           $files = Get-ChildItem ./Tests/TestResults -Recurse -Filter *.cobertura.xml -ErrorAction SilentlyContinue
           if (-not $files) {
@@ -127,14 +128,14 @@ jobs:
 
       - name: Sonar end
         id: sonar-end
-        if: always() && steps.build.outcome == 'success' && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository)
+        if: ${{ !cancelled() && steps.build.outcome == 'success' && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository) }}
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: ${{ runner.temp }}\scanner\dotnet-sonarscanner end
 
       - name: Check for new issues
         id: new-issues
-        if: always() && steps.sonar-end.outcome == 'success'
+        if: ${{ !cancelled() && steps.sonar-end.outcome == 'success' }}
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
@@ -162,7 +163,7 @@ jobs:
 
       - name: Changed files
         id: changed
-        if: always()
+        if: ${{ !cancelled() }}
         uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96 # v47.0.6
         with:
           files: source/**/*.cs
@@ -170,7 +171,7 @@ jobs:
 
       - name: Coverage check (changed files)
         id: coverage-check
-        if: always()
+        if: ${{ !cancelled() }}
         run: |
           if ("${{ steps.test.outcome }}" -ne "success") {
             "pct=N/A" >> $env:GITHUB_OUTPUT
@@ -239,7 +240,7 @@ jobs:
 
       - name: Format results
         id: summary
-        if: always()
+        if: ${{ !cancelled() }}
         env:
           IS_FORK_PR: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository }}
         run: |
@@ -263,7 +264,7 @@ jobs:
           "newissues=$(if ('${{ steps.new-issues.outputs.status }}') { '${{ steps.new-issues.outputs.status }}' } else { "⏭️ Skipped — $sonarSkipReason" })" >> $env:GITHUB_OUTPUT
 
       - name: PR comment
-        if: github.event_name == 'pull_request' && always()
+        if: github.event_name == 'pull_request' && !cancelled()
         uses: marocchino/sticky-pull-request-comment@v3
         with:
           header: coverage
@@ -293,7 +294,7 @@ jobs:
           keep_files: true
 
       - name: Fail pipeline
-        if: always()
+        if: ${{ !cancelled() }}
         run: |
           if ("${{ steps.restore.outcome }}" -ne "success") { exit 1 }
           if ("${{ steps.format.outcome }}" -ne "success") { exit 1 }
