@@ -151,6 +151,8 @@ dotnet_diagnostic.IDE0290.severity = none
 dotnet_diagnostic.IDE0300.severity = none
 dotnet_diagnostic.RS0030.severity = error
 dotnet_diagnostic.S101.severity = none
+# Jagged-array parameters (int[][], char[][]) are dictated by LeetCode signatures
+dotnet_diagnostic.S2368.severity = none
 # Approach suffixes (Stack, Queue, Dictionary, Stream) are part of the solution naming convention
 dotnet_diagnostic.CA1711.severity = none
 # Member and parameter names (Get, date, ...) are dictated by LeetCode signatures

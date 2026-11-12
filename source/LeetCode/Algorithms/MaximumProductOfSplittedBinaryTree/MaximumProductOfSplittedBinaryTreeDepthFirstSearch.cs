@@ -33,7 +33,7 @@ public sealed class MaximumProductOfSplittedBinaryTreeDepthFirstSearch : IMaximu
 
         return (int)(maximumProduct % Modulo);
 
-        long GetTotalSum(TreeNode treeNode)
+        static long GetTotalSum(TreeNode treeNode)
         {
             long sum = treeNode.val;
 

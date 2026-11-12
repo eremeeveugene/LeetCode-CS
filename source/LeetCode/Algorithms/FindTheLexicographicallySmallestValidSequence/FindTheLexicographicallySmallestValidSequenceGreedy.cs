@@ -79,7 +79,7 @@ public sealed class FindTheLexicographicallySmallestValidSequenceGreedy : IFindT
     ///     Time complexity - O(n), where n is the length of word1
     ///     Space complexity - O(m), where m is the length of word2
     /// </remarks>
-    private static int[] BuildSequence(string word1, string word2, Span<int> matchableSuffixLength)
+    private static int[] BuildSequence(string word1, string word2, ReadOnlySpan<int> matchableSuffixLength)
     {
         var n = word1.Length;
         var m = word2.Length;
