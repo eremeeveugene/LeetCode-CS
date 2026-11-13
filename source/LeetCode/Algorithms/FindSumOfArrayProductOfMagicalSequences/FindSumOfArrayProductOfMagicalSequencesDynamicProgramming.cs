@@ -79,8 +79,7 @@ public sealed class FindSumOfArrayProductOfMagicalSequencesDynamicProgramming : 
                             var power = powers[count];
                             var contribution = currentWays * binomialCoefficient % Modulo * power % Modulo;
 
-                            nextWays[nextUsed, nextCarry, nextSetBits] =
-                                (nextWays[nextUsed, nextCarry, nextSetBits] + contribution) % Modulo;
+                            nextWays[nextUsed, nextCarry, nextSetBits] = (nextWays[nextUsed, nextCarry, nextSetBits] + contribution) % Modulo;
                         }
                     }
                 }
@@ -129,11 +128,10 @@ public sealed class FindSumOfArrayProductOfMagicalSequencesDynamicProgramming : 
 
             for (var column = 1; column <= row; column++)
             {
-                binomialCoefficients[row, column] =
-                    binomialCoefficients[row - 1, column - 1] + binomialCoefficients[row - 1, column];
+                binomialCoefficients[row, column] = binomialCoefficients[row - 1, column - 1] + binomialCoefficients[row - 1, column];
             }
         }
 
         return binomialCoefficients;
     }
-}
+}
