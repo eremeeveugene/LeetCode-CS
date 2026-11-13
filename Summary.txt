@@ -1,27 +1,28 @@
 Summary
-  Generated on: 11/10/2026 - 9:26:41 PM
-  Coverage date: 11/10/2026 - 9:25:33 PM - 11/10/2026 - 9:26:32 PM
+  Generated on: 11/13/2026 - 1:09:19 PM
+  Coverage date: 11/13/2026 - 1:08:09 PM - 11/13/2026 - 1:09:09 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1479
-  Files: 1479
+  Classes: 1481
+  Files: 1481
   Line coverage: 100%
-  Covered lines: 36488
+  Covered lines: 36584
   Uncovered lines: 0
-  Coverable lines: 36488
-  Total lines: 88613
-  Branch coverage: 99.9% (12830 of 12832)
-  Covered branches: 12830
-  Total branches: 12832
-  Method coverage: 100% (2349 of 2349)
-  Full method coverage: 100% (2349 of 2349)
-  Covered methods: 2349
-  Fully covered methods: 2349
-  Total methods: 2349
+  Coverable lines: 36584
+  Total lines: 88822
+  Branch coverage: 99.9% (12854 of 12856)
+  Covered branches: 12854
+  Total branches: 12856
+  Method coverage: 100% (2353 of 2353)
+  Full method coverage: 100% (2353 of 2353)
+  Covered methods: 2353
+  Fully covered methods: 2353
+  Total methods: 2353
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsSorting                           100%
+  LeetCode.Algorithms.AccountsMerge.AccountsMergeUnionFind                                                                                                     100%
   LeetCode.Algorithms.AddBinary.AddBinaryIterative                                                                                                             100%
   LeetCode.Algorithms.AddBinary.AddBinaryLinear                                                                                                                100%
   LeetCode.Algorithms.AddDigits.AddDigitsDigitalRoot                                                                                                           100%
@@ -866,6 +867,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.MinimumCostOfBuyingCandiesWithDiscount.MinimumCostOfBuyingCandiesWithDiscountCountingSort                                                100%
   LeetCode.Algorithms.MinimumCostOfBuyingCandiesWithDiscount.MinimumCostOfBuyingCandiesWithDiscountSorting                                                     100%
   LeetCode.Algorithms.MinimumCostPathWithEdgeReversals.MinimumCostPathWithEdgeReversalsDijkstra                                                                100%
+  LeetCode.Algorithms.MinimumCostToAcquireRequiredItems.MinimumCostToAcquireRequiredItemsGreedy                                                                100%
   LeetCode.Algorithms.MinimumCostToHireKWorkers.MinimumCostToHireKWorkersPriorityQueue                                                                         100%
   LeetCode.Algorithms.MinimumCostToMakeAtLeastOneValidPathInGrid.MinimumCostToMakeAtLeastOneValidPathInGridBreadthFirstSearch                                  100%
   LeetCode.Algorithms.MinimumCostToReachEveryPosition.MinimumCostToReachEveryPositionGreedy                                                                    100%
