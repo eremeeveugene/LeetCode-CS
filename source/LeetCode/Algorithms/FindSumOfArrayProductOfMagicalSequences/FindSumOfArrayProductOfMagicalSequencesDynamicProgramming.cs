@@ -39,54 +39,139 @@ public sealed class FindSumOfArrayProductOfMagicalSequencesDynamicProgramming : 
         {
             var num = nums[i];
 
-            powers[0] = 1;
-
-            for (var count = 1; count <= m; count++)
-            {
-                powers[count] = powers[count - 1] * num % Modulo;
-            }
+            FillPowers(powers, num);
 
             Array.Clear(nextWays);
 
-            for (var used = 0; used <= m; used++)
-            {
-                var remaining = m - used;
-
-                for (var carry = 0; carry <= maxCarry; carry++)
-                {
-                    for (var setBits = 0; setBits <= k; setBits++)
-                    {
-                        var currentWays = ways[used, carry, setBits];
-
-                        if (currentWays == 0)
-                        {
-                            continue;
-                        }
-
-                        for (var count = 0; count <= remaining; count++)
-                        {
-                            var total = carry + count;
-                            var nextSetBits = setBits + (total & 1);
-
-                            if (nextSetBits > k)
-                            {
-                                continue;
-                            }
-
-                            var nextUsed = used + count;
-                            var nextCarry = total >> 1;
-                            var binomialCoefficient = binomialCoefficients[remaining, count];
-                            var power = powers[count];
-                            var contribution = currentWays * binomialCoefficient % Modulo * power % Modulo;
-
-                            nextWays[nextUsed, nextCarry, nextSetBits] = (nextWays[nextUsed, nextCarry, nextSetBits] + contribution) % Modulo;
-                        }
-                    }
-                }
-            }
+            Transition(ways, nextWays, binomialCoefficients, powers);
 
             (ways, nextWays) = (nextWays, ways);
         }
+
+        return SumMagicalWays(ways);
+    }
+
+    /// <summary>
+    ///     Fills <paramref name="powers" /> so that the cell [count] holds num^count modulo <see cref="Modulo" />.
+    /// </summary>
+    /// <param name="powers">The buffer to fill; its length defines the largest exponent plus one.</param>
+    /// <param name="num">The base of the powers.</param>
+    /// <remarks>
+    ///     Time complexity - O(m)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static void FillPowers(Span<long> powers, int num)
+    {
+        var m = powers.Length - 1;
+
+        powers[0] = 1;
+
+        for (var count = 1; count <= m; count++)
+        {
+            powers[count] = powers[count - 1] * num % Modulo;
+        }
+    }
+
+    /// <summary>
+    ///     Advances every reachable state in <paramref name="ways" /> by choosing how many times the current
+    ///     number is used, accumulating the results into <paramref name="nextWays" />.
+    /// </summary>
+    /// <param name="ways">The state table [used, carry, setBits] before the current number.</param>
+    /// <param name="nextWays">The cleared state table to accumulate the states after the current number.</param>
+    /// <param name="binomialCoefficients">The table where the cell [row, column] holds C(row, column).</param>
+    /// <param name="powers">The powers of the current number modulo <see cref="Modulo" />.</param>
+    /// <remarks>
+    ///     Time complexity - O(m^3 * k)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static void Transition(long[,,] ways, long[,,] nextWays, long[,] binomialCoefficients, ReadOnlySpan<long> powers)
+    {
+        var m = ways.GetLength(0) - 1;
+        var maxCarry = ways.GetLength(1) - 1;
+        var k = ways.GetLength(2) - 1;
+
+        for (var used = 0; used <= m; used++)
+        {
+            for (var carry = 0; carry <= maxCarry; carry++)
+            {
+                for (var setBits = 0; setBits <= k; setBits++)
+                {
+                    var currentWays = ways[used, carry, setBits];
+
+                    if (currentWays == 0)
+                    {
+                        continue;
+                    }
+
+                    AddContributions(nextWays, binomialCoefficients, powers, currentWays, used, carry, setBits);
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    ///     Adds the contribution of a single state to every state reachable by using the current number
+    ///     0 to the remaining number of times.
+    /// </summary>
+    /// <param name="nextWays">The state table [used, carry, setBits] after the current number.</param>
+    /// <param name="binomialCoefficients">The table where the cell [row, column] holds C(row, column).</param>
+    /// <param name="powers">The powers of the current number modulo <see cref="Modulo" />.</param>
+    /// <param name="currentWays">The weighted number of ways to reach the source state.</param>
+    /// <param name="used">The number of sequence positions already filled in the source state.</param>
+    /// <param name="carry">The carry into the current bit in the source state.</param>
+    /// <param name="setBits">The number of set bits already fixed in the source state.</param>
+    /// <remarks>
+    ///     Time complexity - O(m)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static void AddContributions(
+        long[,,] nextWays,
+        long[,] binomialCoefficients,
+        ReadOnlySpan<long> powers,
+        long currentWays,
+        int used,
+        int carry,
+        int setBits)
+    {
+        var m = nextWays.GetLength(0) - 1;
+        var k = nextWays.GetLength(2) - 1;
+        var remaining = m - used;
+
+        for (var count = 0; count <= remaining; count++)
+        {
+            var total = carry + count;
+            var nextSetBits = setBits + (total & 1);
+
+            if (nextSetBits > k)
+            {
+                continue;
+            }
+
+            var nextUsed = used + count;
+            var nextCarry = total >> 1;
+            var binomialCoefficient = binomialCoefficients[remaining, count];
+            var power = powers[count];
+            var contribution = currentWays * binomialCoefficient % Modulo * power % Modulo;
+
+            nextWays[nextUsed, nextCarry, nextSetBits] = (nextWays[nextUsed, nextCarry, nextSetBits] + contribution) % Modulo;
+        }
+    }
+
+    /// <summary>
+    ///     Sums the ways of all final states whose set bits, together with the set bits of the leftover carry,
+    ///     equal k.
+    /// </summary>
+    /// <param name="ways">The state table [used, carry, setBits] after all numbers are processed.</param>
+    /// <returns>The sum of array products of all magical sequences modulo <see cref="Modulo" />.</returns>
+    /// <remarks>
+    ///     Time complexity - O(m)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static int SumMagicalWays(long[,,] ways)
+    {
+        var m = ways.GetLength(0) - 1;
+        var maxCarry = ways.GetLength(1) - 1;
+        var k = ways.GetLength(2) - 1;
 
         long result = 0;
 
