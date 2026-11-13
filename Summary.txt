@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/13/2026 - 1:31:44 PM
-  Coverage date: 11/13/2026 - 1:30:34 PM - 11/13/2026 - 1:31:35 PM
+  Generated on: 11/13/2026 - 5:32:55 PM
+  Coverage date: 11/13/2026 - 5:32:00 PM - 11/13/2026 - 5:32:47 PM
   Parser: MultiReport (3x Cobertura)
   Assemblies: 2
-  Classes: 1482
-  Files: 1482
+  Classes: 1483
+  Files: 1483
   Line coverage: 100%
-  Covered lines: 36599
+  Covered lines: 36692
   Uncovered lines: 0
-  Coverable lines: 36599
-  Total lines: 88866
-  Branch coverage: 99.9% (12864 of 12866)
-  Covered branches: 12864
-  Total branches: 12866
-  Method coverage: 100% (2354 of 2354)
-  Full method coverage: 100% (2354 of 2354)
-  Covered methods: 2354
-  Fully covered methods: 2354
-  Total methods: 2354
+  Coverable lines: 36692
+  Total lines: 89088
+  Branch coverage: 99.9% (12888 of 12890)
+  Covered branches: 12888
+  Total branches: 12890
+  Method coverage: 100% (2360 of 2360)
+  Full method coverage: 100% (2360 of 2360)
+  Covered methods: 2360
+  Fully covered methods: 2360
+  Total methods: 2360
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -479,6 +479,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.FindSmallestLetterGreaterThanTarget.FindSmallestLetterGreaterThanTargetBinarySearch                                                      100%
   LeetCode.Algorithms.FindSmallestLetterGreaterThanTarget.FindSmallestLetterGreaterThanTargetGreedy                                                            100%
   LeetCode.Algorithms.FindSubsequenceOfLengthKWithTheLargestSum.FindSubsequenceOfLengthKWithTheLargestSumSorting                                               100%
+  LeetCode.Algorithms.FindSumOfArrayProductOfMagicalSequences.FindSumOfArrayProductOfMagicalSequencesDynamicProgramming                                        100%
   LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayBinarySearch                                                        100%
   LeetCode.Algorithms.FindTargetIndicesAfterSortingArray.FindTargetIndicesAfterSortingArrayIterative                                                           100%
   LeetCode.Algorithms.FindTheClosestPalindrome.FindTheClosestPalindromeIterative                                                                               100%
