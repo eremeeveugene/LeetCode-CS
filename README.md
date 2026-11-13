@@ -299,6 +299,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/description/)
 - [717. 1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters/description/)
 - [719. Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/)
+- [721. Accounts Merge](https://leetcode.com/problems/accounts-merge/description/)
 - [724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/)
 - [725. Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/)
 - [728. Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/description/)

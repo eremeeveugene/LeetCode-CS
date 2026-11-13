@@ -300,7 +300,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ github.workspace }}/source/coverage
           publish_branch: gh-pages
-          force_orphan: true
 
       - name: Fail pipeline
         if: ${{ !cancelled() }}
