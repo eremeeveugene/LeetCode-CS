@@ -1041,6 +1041,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [4088. Difference Between Peaks and Valleys](https://leetcode.com/problems/difference-between-peaks-and-valleys/description/)
 - [4092. Binary Digit Score](https://leetcode.com/problems/binary-digit-score/description/)
 - [4097. Minimum Value of Merged Integers](https://leetcode.com/problems/minimum-value-of-merged-integers/description/)
+- [4102. Count Valid Substrings I](https://leetcode.com/problems/count-valid-substrings-i/description/)
 
   </p>
 </details>
