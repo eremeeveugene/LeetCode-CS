@@ -27,4 +27,4 @@ public interface IFindSumOfArrayProductOfMagicalSequences
     /// <param name="nums">The values whose indices form the sequences.</param>
     /// <returns>The sum of the array products of all magical sequences, modulo 10^9 + 7.</returns>
     int MagicalSum(int m, int k, int[] nums);
-}
+}

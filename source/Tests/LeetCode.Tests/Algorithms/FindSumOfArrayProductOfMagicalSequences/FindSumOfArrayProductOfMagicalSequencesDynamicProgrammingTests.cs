@@ -15,4 +15,4 @@ namespace LeetCode.Tests.Algorithms.FindSumOfArrayProductOfMagicalSequences;
 
 [TestClass]
 public sealed class FindSumOfArrayProductOfMagicalSequencesDynamicProgrammingTests
-    : FindSumOfArrayProductOfMagicalSequencesTestsBase<FindSumOfArrayProductOfMagicalSequencesDynamicProgramming>;
+    : FindSumOfArrayProductOfMagicalSequencesTestsBase<FindSumOfArrayProductOfMagicalSequencesDynamicProgramming>;
