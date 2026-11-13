@@ -112,14 +112,16 @@ public sealed class AccountsMergeUnionFind : IAccountsMerge
     private static int Find(Span<int> parents, int node)
     {
         var currentNode = node;
+        var parent = parents[currentNode];
 
-        for (var parent = parents[currentNode]; parent != currentNode; parent = parents[currentNode])
+        while (parent != currentNode)
         {
             var grandparent = parents[parent];
 
             parents[currentNode] = grandparent;
 
             currentNode = grandparent;
+            parent = parents[currentNode];
         }
 
         return currentNode;
