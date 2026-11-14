@@ -95,9 +95,11 @@ jobs:
         run: >
           dotnet test
           --no-build
-          --blame-hang-timeout 3m
-          --collect:"XPlat Code Coverage"
           --results-directory ./Tests/TestResults
+          --coverlet
+          --coverlet-output-format cobertura
+          --hangdump
+          --hangdump-timeout 3m
 
       - name: Install reportgenerator
         if: ${{ !cancelled() }}
