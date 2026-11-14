@@ -1,6 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <IsTestProject>true</IsTestProject>
+        <OutputType>Exe</OutputType>
+        <EnableMSTestRunner>true</EnableMSTestRunner>
     </PropertyGroup>
     <ItemGroup>
         <ProjectReference Include="..\..\LeetCode.Core\LeetCode.Core.csproj" />

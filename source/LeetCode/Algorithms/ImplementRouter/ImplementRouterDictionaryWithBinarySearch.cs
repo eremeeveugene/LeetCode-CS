@@ -14,7 +14,6 @@ namespace LeetCode.Algorithms.ImplementRouter;
 /// <inheritdoc />
 public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
 {
-    private static readonly int[] ForwardBuffer = new int[3];
     private readonly Dictionary<int, TimestampBuffer> _destinationToTimestampBufferDictionary;
     private readonly int _memoryLimit;
     private readonly HashSet<(int Source, int Destination, int Timestamp)> _packetsHashSet;
@@ -28,9 +27,9 @@ public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
     public ImplementRouterDictionaryWithBinarySearch(int memoryLimit)
     {
         _memoryLimit = memoryLimit;
-        _packetsHashSet = new HashSet<(int Source, int Destination, int Timestamp)>(memoryLimit);
+        _packetsHashSet = [with(memoryLimit)];
         _packetsQueue = new Queue<(int Source, int Destination, int Timestamp)>(memoryLimit);
-        _destinationToTimestampBufferDictionary = new Dictionary<int, TimestampBuffer>(memoryLimit);
+        _destinationToTimestampBufferDictionary = [with(memoryLimit)];
     }
 
     /// <inheritdoc />
@@ -84,7 +83,7 @@ public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
 
         _destinationToTimestampBufferDictionary[packet.Destination].RemoveHead();
 
-        return GetForwardBuffer(packet.Source, packet.Destination, packet.Timestamp);
+        return [packet.Source, packet.Destination, packet.Timestamp];
     }
 
     /// <inheritdoc />
@@ -97,20 +96,6 @@ public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
         return _destinationToTimestampBufferDictionary.TryGetValue(destination, out var packetBuffer)
             ? packetBuffer.GetCountInRange(startTime, endTime)
             : 0;
-    }
-
-    /// <inheritdoc />
-    /// <remarks>
-    ///     Time complexity - O(1)
-    ///     Space complexity - O(1)
-    /// </remarks>
-    private static int[] GetForwardBuffer(int source, int destination, int timestamp)
-    {
-        ForwardBuffer[0] = source;
-        ForwardBuffer[1] = destination;
-        ForwardBuffer[2] = timestamp;
-
-        return ForwardBuffer;
     }
 
     private sealed class TimestampBuffer
