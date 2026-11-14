@@ -24,7 +24,8 @@ The primary goal of this repository is to improve my own skills and demonstrate 
 - **[.NET 11](https://dotnet.microsoft.com/en-us/download/dotnet/11.0)**: The latest version of the .NET platform for building and running applications.
 - **[C# 15](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-15)**: The programming language used to implement the solutions.
 - **[MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)**: A testing framework for .NET to write and run tests.
-- **[Coverlet](https://github.com/coverlet-coverage/coverlet)**: A code coverage library for .NET that collects coverage data and integrates with build tasks.
+- **[Microsoft.Testing.Platform](https://learn.microsoft.com/en-us/dotnet/core/testing/microsoft-testing-platform-intro)**: The test runner used by `dotnet test` to execute the tests.
+- **[Coverlet](https://github.com/coverlet-coverage/coverlet)**: A code coverage library for .NET that collects coverage data as a Microsoft.Testing.Platform extension.
 - **[ReportGenerator](https://reportgenerator.io/)**: A tool to generate reports from the test coverage data.
 
 ## Tools
