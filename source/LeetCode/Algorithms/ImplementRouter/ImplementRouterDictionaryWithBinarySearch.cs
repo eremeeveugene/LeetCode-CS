@@ -27,9 +27,9 @@ public sealed class ImplementRouterDictionaryWithBinarySearch : IImplementRouter
     public ImplementRouterDictionaryWithBinarySearch(int memoryLimit)
     {
         _memoryLimit = memoryLimit;
-        _packetsHashSet = new HashSet<(int Source, int Destination, int Timestamp)>(memoryLimit);
+        _packetsHashSet = [with(memoryLimit)];
         _packetsQueue = new Queue<(int Source, int Destination, int Timestamp)>(memoryLimit);
-        _destinationToTimestampBufferDictionary = new Dictionary<int, TimestampBuffer>(memoryLimit);
+        _destinationToTimestampBufferDictionary = [with(memoryLimit)];
     }
 
     /// <inheritdoc />
