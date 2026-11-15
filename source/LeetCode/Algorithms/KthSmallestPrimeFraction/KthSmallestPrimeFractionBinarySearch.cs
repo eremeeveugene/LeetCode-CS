@@ -64,13 +64,15 @@ public sealed class KthSmallestPrimeFractionBinarySearch : IKthSmallestPrimeFrac
 
     private static SortedSet<(double value, int i, int j)> CreateHeap()
     {
-        return new SortedSet<(double value, int i, int j)>(
-            Comparer<(double value, int i, int j)>.Create((a, b) =>
+        return
+        [
+            with(Comparer<(double value, int i, int j)>.Create((a, b) =>
             {
                 var comparerResult = a.value.CompareTo(b.value);
 
                 return comparerResult == 0 ? a.i.CompareTo(b.i) : comparerResult;
-            }));
+            }))
+        ];
     }
 
     private static (int Total, int P, int Q) CountFractionsBelow(int[] arr, int k, double mid, SortedSet<(double value, int i, int j)> heap)

@@ -111,14 +111,14 @@ jobs:
         id: coverage
         if: ${{ !cancelled() }}
         run: |
-          $files = Get-ChildItem ./Tests/TestResults -Recurse -Filter *.cobertura.xml -ErrorAction SilentlyContinue
+          $files = Get-ChildItem ./Tests/TestResults -Recurse -Filter *.cobertura*.xml -ErrorAction SilentlyContinue
           if (-not $files) {
             "report=false" >> $env:GITHUB_OUTPUT
             exit 0
           }
 
           reportgenerator `
-            -reports:"./Tests/**/TestResults/**/*.cobertura.xml" `
+            -reports:"./Tests/**/TestResults/**/*.cobertura*.xml" `
             -targetdir:coverage `
             -reporttypes:"HtmlInline_AzurePipelines;Cobertura;TextSummary"
 

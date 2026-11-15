@@ -3,7 +3,7 @@
                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                               xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
 
-  <Property Name="sonar.cs.cobertura.reportsPaths">Tests/**/TestResults/**/*.cobertura.xml</Property>
+  <Property Name="sonar.cs.cobertura.reportsPaths">Tests/**/TestResults/**/*.cobertura*.xml</Property>
   <Property Name="sonar.exclusions">coverage/**</Property>
 
   <!-- csharpsquid:S2368 - Public methods with jagged-array parameters are unavoidable here: -->
