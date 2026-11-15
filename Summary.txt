@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/13/2026 - 5:32:55 PM
-  Coverage date: 11/13/2026 - 5:32:00 PM - 11/13/2026 - 5:32:47 PM
-  Parser: MultiReport (3x Cobertura)
+  Generated on: 11/15/2026 - 10:40:45 AM
+  Coverage date: 11/15/2026 - 10:39:34 AM - 11/15/2026 - 10:40:28 AM
+  Parser: MultiReport (2x Cobertura)
   Assemblies: 2
   Classes: 1483
   Files: 1483
   Line coverage: 100%
-  Covered lines: 36692
+  Covered lines: 36604
   Uncovered lines: 0
-  Coverable lines: 36692
-  Total lines: 89088
-  Branch coverage: 99.9% (12888 of 12890)
-  Covered branches: 12888
-  Total branches: 12890
-  Method coverage: 100% (2360 of 2360)
-  Full method coverage: 100% (2360 of 2360)
-  Covered methods: 2360
-  Fully covered methods: 2360
-  Total methods: 2360
+  Coverable lines: 36604
+  Total lines: 89075
+  Branch coverage: 99.9% (12844 of 12846)
+  Covered branches: 12844
+  Total branches: 12846
+  Method coverage: 100% (2299 of 2299)
+  Full method coverage: 100% (2299 of 2299)
+  Covered methods: 2299
+  Fully covered methods: 2299
+  Total methods: 2299
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
