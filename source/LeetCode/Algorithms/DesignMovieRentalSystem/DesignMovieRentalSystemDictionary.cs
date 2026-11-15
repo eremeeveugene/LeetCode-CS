@@ -54,9 +54,9 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
     {
         var entriesLength = entries.Length;
 
-        _movieToMovieOffersDictionary = new Dictionary<int, SortedSet<MovieOffer>>(entriesLength);
-        _rentalRecordsSortedSet = new SortedSet<RentalRecord>(RentalRecordComparer);
-        _shopMovieToPriceDictionary = new Dictionary<(int Shop, int Movie), int>(entriesLength);
+        _movieToMovieOffersDictionary = [with(entriesLength)];
+        _rentalRecordsSortedSet = [with(RentalRecordComparer)];
+        _shopMovieToPriceDictionary = [with(entriesLength)];
 
         for (var i = 0; i < entriesLength; i++)
         {
@@ -69,7 +69,7 @@ public sealed class DesignMovieRentalSystemDictionary : IDesignMovieRentalSystem
 
             if (!_movieToMovieOffersDictionary.TryGetValue(movie, out var movieOffers))
             {
-                movieOffers = new SortedSet<MovieOffer>(MovieOfferComparer);
+                movieOffers = [with(MovieOfferComparer)];
 
                 _movieToMovieOffersDictionary[movie] = movieOffers;
             }
