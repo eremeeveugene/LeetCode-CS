@@ -845,6 +845,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3105. Longest Strictly Increasing or Strictly Decreasing Subarray](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/description/)
 - [3110. Score of a String](https://leetcode.com/problems/score-of-a-string/description/)
 - [3120. Count the Number of Special Characters I](https://leetcode.com/problems/count-the-number-of-special-characters-i/description/)
+- [3127. Make a Square with the Same Color](https://leetcode.com/problems/make-a-square-with-the-same-color/description/)
 - [3133. Minimum Array End](https://leetcode.com/problems/minimum-array-end/description/)
 - [3136. Valid Word](https://leetcode.com/problems/valid-word/description/)
 - [3147. Taking Maximum Energy From The Mystic Dungeon](https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/description/)
