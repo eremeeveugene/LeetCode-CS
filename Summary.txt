@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/15/2026 - 10:40:45 AM
-  Coverage date: 11/15/2026 - 10:39:34 AM - 11/15/2026 - 10:40:28 AM
+  Generated on: 11/16/2026 - 9:47:29 AM
+  Coverage date: 11/16/2026 - 9:46:36 AM - 11/16/2026 - 9:47:22 AM
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 1483
-  Files: 1483
+  Classes: 1485
+  Files: 1485
   Line coverage: 100%
-  Covered lines: 36604
+  Covered lines: 36688
   Uncovered lines: 0
-  Coverable lines: 36604
-  Total lines: 89075
-  Branch coverage: 99.9% (12844 of 12846)
-  Covered branches: 12844
-  Total branches: 12846
-  Method coverage: 100% (2299 of 2299)
-  Full method coverage: 100% (2299 of 2299)
-  Covered methods: 2299
-  Fully covered methods: 2299
-  Total methods: 2299
+  Coverable lines: 36688
+  Total lines: 89291
+  Branch coverage: 99.9% (12878 of 12880)
+  Covered branches: 12878
+  Total branches: 12880
+  Method coverage: 100% (2305 of 2305)
+  Full method coverage: 100% (2305 of 2305)
+  Covered methods: 2305
+  Fully covered methods: 2305
+  Total methods: 2305
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -720,6 +720,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.MajorityFrequencyCharacters.MajorityFrequencyCharactersFrequencyDictionary                                                               100%
   LeetCode.Algorithms.MajorityFrequencyCharacters.MajorityFrequencyCharactersFrequencySpan                                                                     100%
   LeetCode.Algorithms.MakeArrayElementsEqualToZero.MakeArrayElementsEqualToZeroPrefixSum                                                                       100%
+  LeetCode.Algorithms.MakeASquareWithTheSameColor.MakeASquareWithTheSameColorBruteForce                                                                        100%
+  LeetCode.Algorithms.MakeASquareWithTheSameColor.MakeASquareWithTheSameColorCounting                                                                          100%
   LeetCode.Algorithms.MakeLexicographicallySmallestArrayBySwappingElements.MakeLexicographicallySmallestArrayBySwappingElementsSortingTwoPointers              100%
   LeetCode.Algorithms.MakeStringSubsequenceUsingCyclicIncrements.MakeStringSubsequenceUsingCyclicIncrementsTwoPointers                                         100%
   LeetCode.Algorithms.MakeSumDivisibleByP.MakeSumDivisibleByPPrefixSum                                                                                         100%
