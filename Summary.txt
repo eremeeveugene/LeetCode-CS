@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/16/2026 - 9:47:29 AM
-  Coverage date: 11/16/2026 - 9:46:36 AM - 11/16/2026 - 9:47:22 AM
+  Generated on: 11/16/2026 - 10:39:33 AM
+  Coverage date: 11/16/2026 - 10:38:36 AM - 11/16/2026 - 10:39:24 AM
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 1485
-  Files: 1485
+  Classes: 1487
+  Files: 1487
   Line coverage: 100%
-  Covered lines: 36688
+  Covered lines: 36742
   Uncovered lines: 0
-  Coverable lines: 36688
-  Total lines: 89291
-  Branch coverage: 99.9% (12878 of 12880)
-  Covered branches: 12878
-  Total branches: 12880
-  Method coverage: 100% (2305 of 2305)
-  Full method coverage: 100% (2305 of 2305)
-  Covered methods: 2305
-  Fully covered methods: 2305
-  Total methods: 2305
+  Coverable lines: 36742
+  Total lines: 89453
+  Branch coverage: 99.9% (12890 of 12892)
+  Covered branches: 12890
+  Total branches: 12892
+  Method coverage: 100% (2310 of 2310)
+  Full method coverage: 100% (2310 of 2310)
+  Covered methods: 2310
+  Fully covered methods: 2310
+  Total methods: 2310
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -92,6 +92,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesMinimumTwoPrices                                                                                        100%
   LeetCode.Algorithms.BuyTwoChocolates.BuyTwoChocolatesSorting                                                                                                 100%
   LeetCode.Algorithms.CalculateDelayedArrivalTime.CalculateDelayedArrivalTimeConstant                                                                          100%
+  LeetCode.Algorithms.CalculateDigitSumOfAString.CalculateDigitSumOfAStringSimulation                                                                          100%
+  LeetCode.Algorithms.CalculateDigitSumOfAString.CalculateDigitSumOfAStringStringBuilder                                                                       100%
   LeetCode.Algorithms.CalculateMoneyInLeetcodeBank.CalculateMoneyInLeetcodeBankArithmeticSequence                                                              100%
   LeetCode.Algorithms.CalculateMoneyInLeetcodeBank.CalculateMoneyInLeetcodeBankIterative                                                                       100%
   LeetCode.Algorithms.CanIWin.CanIWinDynamicProgramming                                                                                                        100%
