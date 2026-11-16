@@ -40,13 +40,11 @@ public sealed class MakeASquareWithTheSameColorBruteForce : IMakeASquareWithTheS
 
             for (var column = 0; column < n; column++)
             {
-                var cell = cells[column];
-
-                cells[column] = cell == Black ? White : Black;
+                FlipCell(cells, column);
 
                 var hasSameColorSquareAfterChange = HasSameColorSquare(grid);
 
-                cells[column] = cell;
+                FlipCell(cells, column);
 
                 if (hasSameColorSquareAfterChange)
                 {
@@ -56,6 +54,23 @@ public sealed class MakeASquareWithTheSameColorBruteForce : IMakeASquareWithTheS
         }
 
         return false;
+    }
+
+    /// <summary>
+    ///     Flips the color of the cell at <paramref name="column" /> in <paramref name="cells" /> from 'B' (black) to
+    ///     'W' (white) or vice versa.
+    /// </summary>
+    /// <param name="cells">The row of the grid containing the cell to flip.</param>
+    /// <param name="column">The column index of the cell to flip.</param>
+    /// <remarks>
+    ///     Time complexity - O(1)
+    ///     Space complexity - O(1)
+    /// </remarks>
+    private static void FlipCell(char[] cells, int column)
+    {
+        var cell = cells[column];
+
+        cells[column] = cell == Black ? White : Black;
     }
 
     /// <summary>
