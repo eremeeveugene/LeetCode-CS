@@ -1046,6 +1046,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [4092. Binary Digit Score](https://leetcode.com/problems/binary-digit-score/description/)
 - [4097. Minimum Value of Merged Integers](https://leetcode.com/problems/minimum-value-of-merged-integers/description/)
 - [4102. Count Valid Substrings I](https://leetcode.com/problems/count-valid-substrings-i/description/)
+- [4111. Count Consistent Subarrays I](https://leetcode.com/problems/count-consistent-subarrays-i/description/)
 
   </p>
 </details>
