@@ -9,12 +9,12 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.CountValidSubstringsI;
+namespace LeetCode.Algorithms.CountValidSubstrings1;
 
 /// <summary>
 ///     https://leetcode.com/problems/count-valid-substrings-i/description/
 /// </summary>
-public interface ICountValidSubstringsI
+public interface ICountValidSubstrings1
 {
     /// <summary>
     ///     Counts the substrings of <paramref name="s" /> that do not contain "abc" as a substring.

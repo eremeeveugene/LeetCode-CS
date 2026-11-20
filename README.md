@@ -275,6 +275,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [628. Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/description/)
 - [632. Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/)
 - [633. Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/)
+- [637. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/description/)
 - [641. Design Circular Deque](https://leetcode.com/problems/design-circular-deque/description/)
 - [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/description/)
 - [645. Set Mismatch](https://leetcode.com/problems/set-mismatch/description/)

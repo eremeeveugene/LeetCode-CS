@@ -9,11 +9,11 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-using LeetCode.Algorithms.CountValidSubstringsI;
+using LeetCode.Algorithms.CountValidSubstrings1;
 
-namespace LeetCode.Tests.Algorithms.CountValidSubstringsI;
+namespace LeetCode.Tests.Algorithms.CountValidSubstrings1;
 
-public abstract class CountValidSubstringsITestsBase<T> where T : ICountValidSubstringsI, new()
+public abstract class CountValidSubstrings1TestsBase<T> where T : ICountValidSubstrings1, new()
 {
     [TestMethod]
     [DataRow("abac", 10L)]

@@ -9,10 +9,10 @@
 // known as Yevhenii Yeriemeieiv).
 // --------------------------------------------------------------------------------
 
-namespace LeetCode.Algorithms.CountValidSubstringsI;
+namespace LeetCode.Algorithms.CountValidSubstrings1;
 
 /// <inheritdoc />
-public sealed class CountValidSubstringsISlidingWindow : ICountValidSubstringsI
+public sealed class CountValidSubstrings1SlidingWindow : ICountValidSubstrings1
 {
     /// <inheritdoc />
     /// <remarks>
