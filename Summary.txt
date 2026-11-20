@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/20/2026 - 10:14:51 AM
-  Coverage date: 11/20/2026 - 10:13:58 AM - 11/20/2026 - 10:14:42 AM
+  Generated on: 11/20/2026 - 3:27:57 PM
+  Coverage date: 11/20/2026 - 3:27:08 PM - 11/20/2026 - 3:27:48 PM
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 1488
-  Files: 1488
+  Classes: 1489
+  Files: 1489
   Line coverage: 100%
-  Covered lines: 36762
+  Covered lines: 36788
   Uncovered lines: 0
-  Coverable lines: 36762
-  Total lines: 89504
-  Branch coverage: 99.9% (12896 of 12898)
-  Covered branches: 12896
-  Total branches: 12898
-  Method coverage: 100% (2311 of 2311)
-  Full method coverage: 100% (2311 of 2311)
-  Covered methods: 2311
-  Fully covered methods: 2311
-  Total methods: 2311
+  Coverable lines: 36788
+  Total lines: 89566
+  Branch coverage: 99.9% (12904 of 12906)
+  Covered branches: 12904
+  Total branches: 12906
+  Method coverage: 100% (2312 of 2312)
+  Full method coverage: 100% (2312 of 2312)
+  Covered methods: 2312
+  Fully covered methods: 2312
+  Total methods: 2312
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -58,6 +58,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.ArrayPartition.ArrayPartitionSorting                                                                                                     100%
   LeetCode.Algorithms.AssignCookies.AssignCookiesSorting                                                                                                       100%
   LeetCode.Algorithms.AvailableCapturesForRook.AvailableCapturesForRookSimulation                                                                              100%
+  LeetCode.Algorithms.AverageOfLevelsInBinaryTree.AverageOfLevelsInBinaryTreeBreadthFirstSearch                                                                100%
   LeetCode.Algorithms.AverageSalaryExcludingTheMinimumAndMaximumSalary.AverageSalaryExcludingTheMinimumAndMaximumSalaryIterative                               100%
   LeetCode.Algorithms.AvoidFloodInTheCity.AvoidFloodInTheCityPriorityQueue                                                                                     100%
   LeetCode.Algorithms.BagOfTokens.BagOfTokensTwoPointers                                                                                                       100%
@@ -282,7 +283,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountTripletsThatCanFormTwoArraysOfEqualXOR.CountTripletsThatCanFormTwoArraysOfEqualXORIterative                                         100%
   LeetCode.Algorithms.CountUnguardedCellsInTheGrid.CountUnguardedCellsInTheGridSimulation                                                                      100%
   LeetCode.Algorithms.CountValidPrefixes.CountValidPrefixesCounting                                                                                            100%
-  LeetCode.Algorithms.CountValidSubstringsI.CountValidSubstringsISlidingWindow                                                                                 100%
+  LeetCode.Algorithms.CountValidSubstrings1.CountValidSubstrings1SlidingWindow                                                                                 100%
   LeetCode.Algorithms.CountValuesWithEquallySpacedOccurrences1.CountValuesWithEquallySpacedOccurrences1Dictionary                                              100%
   LeetCode.Algorithms.CountValuesWithEquallySpacedOccurrences1.CountValuesWithEquallySpacedOccurrences1SpanCounting                                            100%
   LeetCode.Algorithms.CountValuesWithEquallySpacedOccurrences1.CountValuesWithEquallySpacedOccurrences1SpanIndexing                                            100%
