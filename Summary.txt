@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/16/2026 - 10:39:33 AM
-  Coverage date: 11/16/2026 - 10:38:36 AM - 11/16/2026 - 10:39:24 AM
+  Generated on: 11/20/2026 - 10:14:51 AM
+  Coverage date: 11/20/2026 - 10:13:58 AM - 11/20/2026 - 10:14:42 AM
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 1487
-  Files: 1487
+  Classes: 1488
+  Files: 1488
   Line coverage: 100%
-  Covered lines: 36742
+  Covered lines: 36762
   Uncovered lines: 0
-  Coverable lines: 36742
-  Total lines: 89453
-  Branch coverage: 99.9% (12890 of 12892)
-  Covered branches: 12890
-  Total branches: 12892
-  Method coverage: 100% (2310 of 2310)
-  Full method coverage: 100% (2310 of 2310)
-  Covered methods: 2310
-  Fully covered methods: 2310
-  Total methods: 2310
+  Coverable lines: 36762
+  Total lines: 89504
+  Branch coverage: 99.9% (12896 of 12898)
+  Covered branches: 12896
+  Total branches: 12898
+  Method coverage: 100% (2311 of 2311)
+  Full method coverage: 100% (2311 of 2311)
+  Covered methods: 2311
+  Fully covered methods: 2311
+  Total methods: 2311
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -203,6 +203,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.CountCompleteSubarraysInAnArray.CountCompleteSubarraysInAnArrayFrequencyDictionary                                                       100%
   LeetCode.Algorithms.CountCompleteTreeNodes.CountCompleteTreeNodesDepthRecursive                                                                              100%
   LeetCode.Algorithms.CountCompleteTreeNodes.CountCompleteTreeNodesRecursive                                                                                   100%
+  LeetCode.Algorithms.CountConsistentSubarrays1.CountConsistentSubarrays1BruteForce                                                                            100%
   LeetCode.Algorithms.CountCoveredBuildings.CountCoveredBuildingsSimulation                                                                                    100%
   LeetCode.Algorithms.CountDaysSpentTogether.CountDaysSpentTogetherMath                                                                                        100%
   LeetCode.Algorithms.CountDaysSpentTogether.CountDaysSpentTogetherSimulation                                                                                  100%
