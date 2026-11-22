@@ -41,7 +41,7 @@ public sealed class DesignEventManagerDictionaryWithPriorityQueue : IDesignEvent
     {
         var n = events.Length;
 
-        _eventIdToPriorityDictionary = new Dictionary<int, int>(n);
+        _eventIdToPriorityDictionary = [with(n)];
 
         var queuedEvents = new (int EventId, (int Priority, int EventId) EventPriority)[n];
 
