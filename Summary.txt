@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/22/2026 - 11:30:34 AM
-  Coverage date: 11/22/2026 - 11:29:29 AM - 11/22/2026 - 11:30:22 AM
+  Generated on: 11/22/2026 - 9:24:23 PM
+  Coverage date: 11/22/2026 - 9:23:11 PM - 11/22/2026 - 9:24:04 PM
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 1490
-  Files: 1490
+  Classes: 1491
+  Files: 1491
   Line coverage: 100%
-  Covered lines: 36833
+  Covered lines: 36868
   Uncovered lines: 0
-  Coverable lines: 36833
-  Total lines: 89691
-  Branch coverage: 99.9% (12916 of 12918)
-  Covered branches: 12916
-  Total branches: 12918
-  Method coverage: 100% (2315 of 2315)
-  Full method coverage: 100% (2315 of 2315)
-  Covered methods: 2315
-  Fully covered methods: 2315
-  Total methods: 2315
+  Coverable lines: 36868
+  Total lines: 89785
+  Branch coverage: 99.9% (12924 of 12926)
+  Covered branches: 12924
+  Total branches: 12926
+  Method coverage: 100% (2319 of 2319)
+  Full method coverage: 100% (2319 of 2319)
+  Covered methods: 2319
+  Fully covered methods: 2319
+  Total methods: 2319
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -327,6 +327,7 @@ LeetCode                                                                        
   LeetCode.Algorithms.DesignBrowserHistory.DesignBrowserHistoryLinkedList                                                                                      100%
   LeetCode.Algorithms.DesignCircularDeque.DesignCircularDequeLinkedList                                                                                        100%
   LeetCode.Algorithms.DesignCircularQueue.DesignCircularQueueLinkedList                                                                                        100%
+  LeetCode.Algorithms.DesignEventManager.DesignEventManagerDictionaryWithPriorityQueue                                                                         100%
   LeetCode.Algorithms.DesignExamScoresTracker.DesignExamScoresTrackerPrefixSumWithBinarySearch                                                                 100%
   LeetCode.Algorithms.DesignFoodRatingSystem.DesignFoodRatingSystemDictionaryWithPriorityQueue                                                                 100%
   LeetCode.Algorithms.DesignFrontMiddleBackQueue.DesignFrontMiddleBackQueueLinkedList                                                                          100%
