@@ -93,6 +93,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [46. Permutations](https://leetcode.com/problems/permutations/description/)
 - [48. Rotate Image](https://leetcode.com/problems/rotate-image/description/)
 - [50. Pow(x, n)](https://leetcode.com/problems/powx-n/description/)
+- [51. N-Queens](https://leetcode.com/problems/n-queens/description/)
 - [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
 - [57. Insert Interval](https://leetcode.com/problems/insert-interval/description/)
 - [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/description/)
