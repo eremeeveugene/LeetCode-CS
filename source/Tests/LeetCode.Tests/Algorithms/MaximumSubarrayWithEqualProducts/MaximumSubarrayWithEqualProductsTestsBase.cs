@@ -40,6 +40,7 @@ public abstract class MaximumSubarrayWithEqualProductsTestsBase<T> where T : IMa
     [DataRow(new[] { 1, 1, 2, 1, 1 }, 5)]
     [DataRow(new[] { 6, 1, 1, 5, 7, 4, 9 }, 6)]
     [DataRow(new[] { 8, 8, 8, 9, 9, 9, 7, 7 }, 2)]
+    [DataRow(new[] { 6, 10, 3, 5, 7 }, 3)]
     public void MaxLength_WithInputNums_ReturnsLongestProductEquivalentSubarrayLength(int[] nums, int expectedResult)
     {
         // Arrange

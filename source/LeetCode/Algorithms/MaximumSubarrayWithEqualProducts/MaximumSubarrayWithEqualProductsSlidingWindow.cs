@@ -15,7 +15,8 @@ namespace LeetCode.Algorithms.MaximumSubarrayWithEqualProducts;
 /// <remarks>
 ///     Any two-element subarray is product equivalent (a * b = lcm(a, b) * gcd(a, b)). A subarray of three or more
 ///     elements is product equivalent exactly when its elements are pairwise coprime, so the answer is the longest
-///     window whose elements share no prime factor, but at least two.
+///     window in which no prime divides two elements, but at least two. The window starts right after the last
+///     occurrence of any prime dividing the current element.
 /// </remarks>
 public sealed class MaximumSubarrayWithEqualProductsSlidingWindow : IMaximumSubarrayWithEqualProducts
 {
@@ -30,29 +31,31 @@ public sealed class MaximumSubarrayWithEqualProductsSlidingWindow : IMaximumSuba
     {
         var n = nums.Length;
 
+        Span<int> lastPrimeIndexes = stackalloc int[Primes.Length];
+
+        lastPrimeIndexes.Fill(-1);
+
         var maximumLength = 2;
 
-        var windowPrimesMask = 0;
         var left = 0;
 
         for (var right = 0; right < n; right++)
         {
             var num = nums[right];
 
-            var numPrimesMask = GetPrimesMask(num);
-
-            while ((windowPrimesMask & numPrimesMask) != 0)
+            for (var i = 0; i < Primes.Length; i++)
             {
-                var leftNum = nums[left];
+                var prime = Primes[i];
 
-                var leftNumPrimesMask = GetPrimesMask(leftNum);
+                if (num % prime != 0)
+                {
+                    continue;
+                }
 
-                windowPrimesMask &= ~leftNumPrimesMask;
+                left = Math.Max(left, lastPrimeIndexes[i] + 1);
 
-                left++;
+                lastPrimeIndexes[i] = right;
             }
-
-            windowPrimesMask |= numPrimesMask;
 
             var length = right - left + 1;
 
@@ -60,33 +63,5 @@ public sealed class MaximumSubarrayWithEqualProductsSlidingWindow : IMaximumSuba
         }
 
         return maximumLength;
-    }
-
-    /// <summary>
-    ///     Builds a bitmask of the prime factors of <paramref name="num" />, one bit per prime up to 7.
-    /// </summary>
-    /// <param name="num">The integer in the range [1, 10].</param>
-    /// <returns>The bitmask whose i-th bit is set when the i-th prime divides <paramref name="num" />.</returns>
-    /// <remarks>
-    ///     Time complexity - O(1)
-    ///     Space complexity - O(1)
-    /// </remarks>
-    private static int GetPrimesMask(int num)
-    {
-        var primesMask = 0;
-
-        for (var i = 0; i < Primes.Length; i++)
-        {
-            var prime = Primes[i];
-
-            if (num % prime != 0)
-            {
-                continue;
-            }
-
-            primesMask |= 1 << i;
-        }
-
-        return primesMask;
     }
 }
