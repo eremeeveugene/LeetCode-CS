@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/22/2026 - 9:24:23 PM
-  Coverage date: 11/22/2026 - 9:23:11 PM - 11/22/2026 - 9:24:04 PM
+  Generated on: 11/24/2026 - 9:46:46 AM
+  Coverage date: 11/24/2026 - 9:45:51 AM - 11/24/2026 - 9:46:39 AM
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 1491
-  Files: 1491
+  Classes: 1494
+  Files: 1494
   Line coverage: 100%
-  Covered lines: 36868
+  Covered lines: 36964
   Uncovered lines: 0
-  Coverable lines: 36868
-  Total lines: 89785
-  Branch coverage: 99.9% (12924 of 12926)
-  Covered branches: 12924
-  Total branches: 12926
-  Method coverage: 100% (2319 of 2319)
-  Full method coverage: 100% (2319 of 2319)
-  Covered methods: 2319
-  Fully covered methods: 2319
-  Total methods: 2319
+  Coverable lines: 36964
+  Total lines: 90047
+  Branch coverage: 99.9% (12948 of 12950)
+  Covered branches: 12948
+  Total branches: 12950
+  Method coverage: 100% (2327 of 2327)
+  Full method coverage: 100% (2327 of 2327)
+  Covered methods: 2327
+  Fully covered methods: 2327
+  Total methods: 2327
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -820,6 +820,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.MaximumProductPairWithTargetSum.MaximumProductPairWithTargetSumBruteForce                                                                100%
   LeetCode.Algorithms.MaximumProductPairWithTargetSum.MaximumProductPairWithTargetSumLookup                                                                    100%
   LeetCode.Algorithms.MaximumScoreAfterSplittingString.MaximumScoreAfterSplittingStringIterative                                                               100%
+  LeetCode.Algorithms.MaximumSubarrayWithEqualProducts.MaximumSubarrayWithEqualProductsBitmask                                                                 100%
+  LeetCode.Algorithms.MaximumSubarrayWithEqualProducts.MaximumSubarrayWithEqualProductsBruteForce                                                              100%
+  LeetCode.Algorithms.MaximumSubarrayWithEqualProducts.MaximumSubarrayWithEqualProductsSlidingWindow                                                           100%
   LeetCode.Algorithms.MaximumSubstringsWithDistinctStart.MaximumSubstringsWithDistinctStartBase                                                                100%
   LeetCode.Algorithms.MaximumSubstringsWithDistinctStart.MaximumSubstringsWithDistinctStartBitArray                                                            100%
   LeetCode.Algorithms.MaximumSubstringsWithDistinctStart.MaximumSubstringsWithDistinctStartBitMask                                                             100%
