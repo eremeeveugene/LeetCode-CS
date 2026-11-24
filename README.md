@@ -113,6 +113,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [85. Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/description/)
 - [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/)
 - [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)
+- [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/)
 - [100. Same Tree](https://leetcode.com/problems/same-tree/description/)
 - [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/)
 - [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
