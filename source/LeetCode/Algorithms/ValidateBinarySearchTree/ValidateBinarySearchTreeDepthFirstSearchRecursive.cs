@@ -14,7 +14,7 @@ using LeetCode.Core.Models;
 namespace LeetCode.Algorithms.ValidateBinarySearchTree;
 
 /// <inheritdoc />
-public sealed class ValidateBinarySearchTreeRecursive : IValidateBinarySearchTree
+public sealed class ValidateBinarySearchTreeDepthFirstSearchRecursive : IValidateBinarySearchTree
 {
     /// <inheritdoc />
     /// <remarks>

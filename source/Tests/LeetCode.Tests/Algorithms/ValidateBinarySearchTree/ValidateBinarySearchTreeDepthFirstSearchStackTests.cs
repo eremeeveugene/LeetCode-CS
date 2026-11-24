@@ -14,4 +14,4 @@ using LeetCode.Algorithms.ValidateBinarySearchTree;
 namespace LeetCode.Tests.Algorithms.ValidateBinarySearchTree;
 
 [TestClass]
-public sealed class ValidateBinarySearchTreeRecursiveTests : ValidateBinarySearchTreeTestsBase<ValidateBinarySearchTreeRecursive>;
+public sealed class ValidateBinarySearchTreeDepthFirstSearchStackTests : ValidateBinarySearchTreeTestsBase<ValidateBinarySearchTreeDepthFirstSearchStack>;
