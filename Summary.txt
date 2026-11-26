@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/26/2026 - 8:15:02 AM
-  Coverage date: 11/26/2026 - 8:14:02 AM - 11/26/2026 - 8:14:52 AM
+  Generated on: 11/26/2026 - 1:34:07 PM
+  Coverage date: 11/26/2026 - 1:33:10 PM - 11/26/2026 - 1:33:58 PM
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 1496
-  Files: 1496
+  Classes: 1499
+  Files: 1499
   Line coverage: 100%
-  Covered lines: 36996
+  Covered lines: 37027
   Uncovered lines: 0
-  Coverable lines: 36996
-  Total lines: 90157
-  Branch coverage: 99.9% (12964 of 12966)
-  Covered branches: 12964
-  Total branches: 12966
-  Method coverage: 100% (2330 of 2330)
-  Full method coverage: 100% (2330 of 2330)
-  Covered methods: 2330
-  Fully covered methods: 2330
-  Total methods: 2330
+  Coverable lines: 37027
+  Total lines: 90275
+  Branch coverage: 99.9% (12980 of 12982)
+  Covered branches: 12980
+  Total branches: 12982
+  Method coverage: 100% (2333 of 2333)
+  Full method coverage: 100% (2333 of 2333)
+  Covered methods: 2333
+  Fully covered methods: 2333
+  Total methods: 2333
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -1345,6 +1345,9 @@ LeetCode                                                                        
   LeetCode.Algorithms.StoneGame.StoneGameMathematical                                                                                                          100%
   LeetCode.Algorithms.StoneGame2.StoneGame2DynamicProgramming                                                                                                  100%
   LeetCode.Algorithms.StoneGame9.StoneGame9Counting                                                                                                            100%
+  LeetCode.Algorithms.StoneRemovalGame.StoneRemovalGameMath                                                                                                    100%
+  LeetCode.Algorithms.StoneRemovalGame.StoneRemovalGameSimulation                                                                                              100%
+  LeetCode.Algorithms.StoneRemovalGame.StoneRemovalGameSwitch                                                                                                  100%
   LeetCode.Algorithms.StrangePrinter.StrangePrinterDynamicProgramming                                                                                          100%
   LeetCode.Algorithms.StringCompression3.StringCompression3StringBuilder                                                                                       100%
   LeetCode.Algorithms.StringMatchingInAnArray.StringMatchingInAnArrayBruteForce                                                                                100%
