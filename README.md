@@ -904,6 +904,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [3350. Adjacent Increasing Subarrays Detection II](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/description/)
 - [3354. Make Array Elements Equal to Zero](https://leetcode.com/problems/make-array-elements-equal-to-zero/description/)
 - [3355. Zero Array Transformation I](https://leetcode.com/problems/zero-array-transformation-i/description/)
+- [3360. Stone Removal Game](https://leetcode.com/problems/stone-removal-game/description/)
 - [3362. Zero Array Transformation III](https://leetcode.com/problems/zero-array-transformation-iii/description/)
 - [3364. Minimum Positive Sum Subarray](https://leetcode.com/problems/minimum-positive-sum-subarray/description/)
 - [3370. Smallest Number With All Set Bits](https://leetcode.com/problems/smallest-number-with-all-set-bits/description/)
