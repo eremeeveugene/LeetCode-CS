@@ -1,23 +1,23 @@
 Summary
-  Generated on: 11/24/2026 - 9:46:46 AM
-  Coverage date: 11/24/2026 - 9:45:51 AM - 11/24/2026 - 9:46:39 AM
+  Generated on: 11/26/2026 - 8:15:02 AM
+  Coverage date: 11/26/2026 - 8:14:02 AM - 11/26/2026 - 8:14:52 AM
   Parser: MultiReport (2x Cobertura)
   Assemblies: 2
-  Classes: 1494
-  Files: 1494
+  Classes: 1496
+  Files: 1496
   Line coverage: 100%
-  Covered lines: 36964
+  Covered lines: 36996
   Uncovered lines: 0
-  Coverable lines: 36964
-  Total lines: 90047
-  Branch coverage: 99.9% (12948 of 12950)
-  Covered branches: 12948
-  Total branches: 12950
-  Method coverage: 100% (2327 of 2327)
-  Full method coverage: 100% (2327 of 2327)
-  Covered methods: 2327
-  Fully covered methods: 2327
-  Total methods: 2327
+  Coverable lines: 36996
+  Total lines: 90157
+  Branch coverage: 99.9% (12964 of 12966)
+  Covered branches: 12964
+  Total branches: 12966
+  Method coverage: 100% (2330 of 2330)
+  Full method coverage: 100% (2330 of 2330)
+  Covered methods: 2330
+  Fully covered methods: 2330
+  Total methods: 2330
 
 LeetCode                                                                                                                                                       100%
   LeetCode.Algorithms.AbsoluteDifferenceBetweenMaximumAndMinimumKElements.AbsoluteDifferenceBetweenMaximumAndMinimumKElementsFrequencyArray                    100%
@@ -1462,6 +1462,8 @@ LeetCode                                                                        
   LeetCode.Algorithms.ValidAnagram.ValidAnagramDictionary                                                                                                      100%
   LeetCode.Algorithms.ValidAnagram.ValidAnagramSorting                                                                                                         100%
   LeetCode.Algorithms.ValidArrangementOfPairs.ValidArrangementOfPairsDepthFirstSearch                                                                          100%
+  LeetCode.Algorithms.ValidateBinarySearchTree.ValidateBinarySearchTreeDepthFirstSearchRecursive                                                               100%
+  LeetCode.Algorithms.ValidateBinarySearchTree.ValidateBinarySearchTreeDepthFirstSearchStack                                                                   100%
   LeetCode.Algorithms.ValidDigitNumber.ValidDigitNumberMath                                                                                                    100%
   LeetCode.Algorithms.ValidElementsInAnArray.ValidElementsInAnArrayPrefixSum                                                                                   100%
   LeetCode.Algorithms.ValidPalindrome.ValidPalindromeTwoPointers                                                                                               100%
