@@ -1053,6 +1053,7 @@ Below are the LeetCode problems sorted by category. Click on the category names 
 - [4097. Minimum Value of Merged Integers](https://leetcode.com/problems/minimum-value-of-merged-integers/description/)
 - [4102. Count Valid Substrings I](https://leetcode.com/problems/count-valid-substrings-i/description/)
 - [4111. Count Consistent Subarrays I](https://leetcode.com/problems/count-consistent-subarrays-i/description/)
+- [4120. Count Dominant Elements](https://leetcode.com/problems/count-dominant-elements/description/)
 
   </p>
 </details>
